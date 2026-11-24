@@ -1,7 +1,7 @@
 {
   "version": "2026-11-24",
   "status": "QA_NOT_PUBLISHED",
-  "policy": "Additive RPH variant. V1 unchanged. No new calendar slots, no automatic substitution. V2 does not certify in-water performance. All source IDs immutable. KP2027 and KSSR remain separate.",
+  "policy": "Additive RPH variant. V1 unchanged. No new calendar slots, no automatic substitution. V2 does not certify in-water performance. All source IDs immutable. KP2027 and KSSR remain separate. Only offer V2 for original source activities requiring water. Do not create a new RPT slot or offer V2 for an existing dry-land activity. All non-numbered reference material is held outside menu eligibility.",
   "records": [
     {
       "year": 1,
@@ -76,7 +76,9 @@
         "affective": [
           "A3.1.8 Melakukan aktiviti secara berpasangan dan berkumpulan dengan aktif dan seronok."
         ]
-      }
+      },
+      "menu_eligibility": "QA_WATER_REQUIRED_EXISTING_PDP",
+      "water_requirement_evidence": "KP2027 P3.1.6: kemahiran keyakinan dalam air, original catalog A051/B050."
     },
     {
       "year": 1,
@@ -151,7 +153,9 @@
         "affective": [
           "A3.1.8 Melakukan aktiviti secara berpasangan dan berkumpulan dengan aktif dan seronok."
         ]
-      }
+      },
+      "menu_eligibility": "QA_WATER_REQUIRED_EXISTING_PDP",
+      "water_requirement_evidence": "KP2027 P3.1.6: kemahiran keyakinan dalam air, original catalog A051/B050."
     },
     {
       "year": 2,
@@ -225,7 +229,9 @@
           "5.1.1 Menyatakan persediaan diri dan kesesuaian pakaian mengikut jenis aktiviti yang dijalankan.",
           "5.1.5 Mematuhi peraturan keselamatan di tempat aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_DRY_LAND_COMPATIBLE",
+      "water_requirement_evidence": "Safety rules can be taught from land; original supplemental source not scheduled and actual in-water requirement not established."
     },
     {
       "year": 2,
@@ -291,7 +297,9 @@
           "2.8.2 Membahaskan postur badan semasa melakukan apungan lentang."
         ],
         "affective": []
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 2,
@@ -357,7 +365,9 @@
           "2.8.3 Mengenal pasti teknik dirian selepas apungan lentang."
         ],
         "affective": []
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 2,
@@ -429,7 +439,9 @@
         "affective": [
           "5.1.3 Mengenal pasti alatan yang selamat digunakan."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 3,
@@ -501,7 +513,9 @@
         "affective": [
           "5.1.1 Menyatakan persediaan diri dan kesesuaian pakaian mengikut jenis aktiviti yang dijalankan."
         ]
-      }
+      },
+      "menu_eligibility": "QA_WATER_REQUIRED_EXISTING_PDP",
+      "water_requirement_evidence": "Original numbered RPH explicitly requires in-water practice and approved pool."
     },
     {
       "year": 3,
@@ -577,7 +591,9 @@
         "affective": [
           "5.2.2 Menerima cabaran dan seronok semasa melakukan aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "QA_WATER_REQUIRED_EXISTING_PDP",
+      "water_requirement_evidence": "Original numbered RPH explicitly requires in-water practice and approved pool."
     },
     {
       "year": 4,
@@ -651,7 +667,9 @@
         "affective": [
           "5.2.2 Melakukan pelbagai pergerakan berkemahiran dengan yakin."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_DRY_LAND_COMPATIBLE",
+      "water_requirement_evidence": "Original lesson activities use kon, penanda, kad teknik, partner observes without touching, no specified in-water pupil practice; reaching rescue may be demonstrated from land. Preserve V1 and do not offer V2."
     },
     {
       "year": 4,
@@ -725,7 +743,9 @@
         "affective": [
           "5.2.4 Menerima cabaran dan berasa seronok semasa melakukan aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "QA_WATER_REQUIRED_EXISTING_PDP",
+      "water_requirement_evidence": "Original SP 1.13.2 requires performing kuak rangkak; actual swimming needs water."
     },
     {
       "year": 5,
@@ -797,7 +817,9 @@
         "affective": [
           "5.1.3 Mematuhi peraturan keselamatan di tempat melakukan aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 5,
@@ -869,7 +891,9 @@
         "affective": [
           "5.1.4 Mengenal pasti ruang selamat untuk melakukan aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 5,
@@ -941,7 +965,9 @@
         "affective": [
           "5.2.1 Mempamerkan keyakinan untuk melakukan pelbagai kemahiran pergerakan."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 5,
@@ -1013,7 +1039,9 @@
         "affective": [
           "5.2.3 Menerima cabaran dan berasa seronok semasa melakukan aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 5,
@@ -1087,7 +1115,9 @@
         "affective": [
           "5.2.3 Menerima cabaran dan berasa seronok semasa melakukan aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 6,
@@ -1159,7 +1189,9 @@
         "affective": [
           "5.1.3 Menyenaraikan kebaikan mematuhi peraturan keselamatan."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 6,
@@ -1231,7 +1263,9 @@
         "affective": [
           "5.1.4 Menentukan ruang yang selamat untuk melakukan aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     },
     {
       "year": 6,
@@ -1303,7 +1337,16 @@
         "affective": [
           "5.2.4 Menerima cabaran dan berasa seronok semasa melakukan aktiviti."
         ]
-      }
+      },
+      "menu_eligibility": "HOLD_NO_EXISTING_RPT_PDP",
+      "water_requirement_evidence": "Supplemental source only; no approved existing RPT PdP identity. Keep as private reference, no new calendar or menu entry."
     }
-  ]
+  ],
+  "menu_policy": {
+    "enabled": false,
+    "eligible_existing_pdp_count": 5,
+    "excluded_dry_land_compatible_count": 2,
+    "held_unscheduled_count": 11,
+    "rule": "Explicit water-required original numbered PdP only. No new PdP, no RPT edit, no automatic V1 replacement. Source candidates remain QA only."
+  }
 }
