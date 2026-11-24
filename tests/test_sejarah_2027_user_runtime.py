@@ -56,7 +56,11 @@ class SejarahUserRuntimeTest(unittest.TestCase):
                 self.assertIn(r["textbook_reference"]["checked_focus_pages"]["printed_page_range"],
                               outcome["BAHAN BANTU MENGAJAR"])
                 self.assertIn("DRAF", outcome["TAJUK"])
-                self.assertTrue(outcome["REFLEKSI"] == r["reflection"])
+                from web.rph_source_reflection_rbt_sejarah import source_reflection
+                self.assertEqual(outcome["REFLEKSI"], source_reflection(state, r["reflection"], r["success_criteria"]))
+                self.assertNotEqual(outcome["REFLEKSI"], r["reflection"])
+                self.assertNotIn(f"PdP {n:03d}", outcome["TAJUK"])
+                self.assertEqual(adapt_rows(dict(state, rph_teacher_reflection="Catatan guru"), original)["REFLEKSI"], "Catatan guru")
                 self.assertEqual(original["REFLEKSI"], "Original generic")
 
     def test_stale_source_selection_does_not_replace_another_subject(self):

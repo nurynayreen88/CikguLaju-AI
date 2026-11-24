@@ -13,6 +13,7 @@ import json
 import os
 from pathlib import Path
 import re
+from web.rph_source_reflection_rbt_sejarah import source_reflection
 
 ROOT = Path(__file__).resolve().parents[1]
 FLAG = "CIKGULAJU_SEJARAH_2027_USER_ENABLED"
@@ -121,7 +122,7 @@ def adapt_rows(state, rows, *, root=ROOT):
     result.update({
         "MATA PELAJARAN": SUBJECT,
         "TAHUN/TINGKATAN": f"Tahun {row['year']}",
-        "TAJUK": f"{row['unit_title']} — PdP {row['pdp']:03d} (DRAF)",
+        "TAJUK": f"{row['unit_title']} (DRAF)",
         "STANDARD KANDUNGAN": f"{r['sk']} — {r['sk_title']}",
         "STANDARD PEMBELAJARAN": row["sp_text"],
         "OBJEKTIF PEMBELAJARAN": "; ".join(r["objective"]),
@@ -139,7 +140,7 @@ def adapt_rows(state, rows, *, root=ROOT):
         "PENTAKSIRAN": r["pengukuhan_pbd"]["activity"],
         "PENUTUP": r["penutup"]["activity"],
         "PEMULIHAN / PENGAYAAN": "Bimbing murid yang masih memerlukan sokongan.",
-        "REFLEKSI": r["reflection"],
+        "REFLEKSI": source_reflection(state, r["reflection"], r["success_criteria"]),
     })
     return result
 
