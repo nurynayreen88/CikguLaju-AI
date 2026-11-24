@@ -116,7 +116,35 @@ def reflow_verified_pi_header(state, story):
     # ReportLab's native PI RTL Table wrapper has ALREADY reversed each
     # physical row to [Jawi value, Jawi label]. Do not reverse it again.
     # PI RTL master: wide subject/year/topic RIGHT; narrow teacher details LEFT.
-    wide = _inner(rows, (0, 1, 7), (82, 26))
+    # Remove exactly the two redundant display labels. Keep the original
+    # year and topic. Use the already trusted bold Jawi label shaper for
+    # the subject value, not a Latin font or a PDF overlay.
+    from copy import copy
+    from reportlab.platypus import Paragraph
+    subject_text = _flow_text(rows[0][0])
+    year_text = _flow_text(rows[1][0])
+    if subject_text == "ڤنديديقن اسلام" and year_text.startswith("تاهون "):
+        label = rows[0][1]
+        if isinstance(label, Paragraph):
+            subject = Paragraph("<b>"+subject_text+"</b>", label.style)
+        else:
+            subject = copy(label)
+            subject.text = subject_text
+            if hasattr(subject, "_img"):
+                subject._img = None
+        wide = Table([[subject, ""], [rows[1][0], ""],
+                      [rows[7][0], rows[7][1]]],
+                     colWidths=[82*mm,26*mm], hAlign="CENTER")
+        wide.setStyle(TableStyle([
+            ("SPAN",(0,0),(1,0)),("SPAN",(0,1),(1,1)),
+            ("VALIGN",(0,0),(-1,-1),"TOP"),
+            ("LEFTPADDING",(0,0),(-1,-1),1),
+            ("RIGHTPADDING",(0,0),(-1,-1),1),
+            ("TOPPADDING",(0,0),(-1,-1),1),
+            ("BOTTOMPADDING",(0,0),(-1,-1),1),
+        ]))
+    else:
+        wide = _inner(rows, (0, 1, 7), (82, 26))
     teacher = _inner(rows, (5, 2, 3, 4, 6), (36, 20))
     banner = Table([[teacher, wide]], colWidths=[60 * mm, 112 * mm],
                    hAlign="CENTER")
