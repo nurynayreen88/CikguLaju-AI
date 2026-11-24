@@ -25,7 +25,7 @@ class PJPKDraftRuntimeTests(unittest.TestCase):
                     self.assertNotEqual(out["REFLEKSI"], original["REFLEKSI"])
                     self.assertEqual(out["OBJEKTIF PEMBELAJARAN"], row["objective"])
                     self.assertTrue(all(a in out["AKTIVITI UTAMA"] for a in row["activities"]))
-                    self.assertEqual(out["STANDARD PEMBELAJARAN"], row["standard_descriptions"]["sp"])
+                    self.assertEqual(out["STANDARD PEMBELAJARAN"], row["standard_descriptions"]["sp"].replace(" · ", "\n"))
                     self.assertEqual(preview.adapt_rows({**state, "rph_teacher_reflection": "Catatan guru."}, original)["REFLEKSI"], "Catatan guru.")
                     self.assertEqual(preview.adapt_rows({**state, "rph_reflection_mode": "manual"}, original)["REFLEKSI"], "")
                     self.assertEqual(out["KELAS"], "")
