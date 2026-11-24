@@ -64,7 +64,7 @@ def render(year, source_id, fmt, teacher=None, *, qa_reference=False):
         else:
             activities.append(("Aktiviti %d – %s"%(i,a["title"]),"Membimbing dan memerhati evidens murid.",a["body"]))
     activities.append(("Penutup","Merumuskan objektif dan evidens.",r["closure"]))
-    reflection=[("Refleksi",r["reflection"])]
+    reflection=[("Refleksi", (str(teacher.get("reflection") or "").strip()+"\nKemahiran dalam air belum ditaksir.") if teacher.get("reflection") else r["reflection"])]
     return render_structured_rph(source="akuatik_v2",fmt=fmt,heading=heading,
         details=details,activities=activities,footer=reflection,compact=True,
         label_fill="F3F2E8")
