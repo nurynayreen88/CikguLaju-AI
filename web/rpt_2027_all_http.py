@@ -604,29 +604,34 @@ def create_all_rpt_blueprint(*,root=ROOT):
         if path is None:
             return jsonify({"error":"PDF RPT ini belum dipasang pada pelayan. Cuba lagi kemudian."}),503
         paid_cover=_has_paid_access(account)
-        # The staged 56-source set differs from the Telegram local originals;
-        # do not call its SHA-locked personalization API with an unknown hash.
-        # Download the exact validated DRAF; teacher identity stays private.
-        if staged is not None or not paid_cover:
-            # Free and expired users receive the validated source PDF, never
-            # any server-side school identity. Profile data remains stored.
-            document=path
-        else:
-            from web.rpt_school_cover import for_download
-            from web.teacher_profile_store import ProfileUnavailable
+        # Always return the immutable source bytes and their exact digest.
+        # The legacy Telegram cover service PREPENDS a page; that is incompatible
+        # with the approved single existing cover and the browser's SHA guard.
+        content=path.read_bytes()
+        if not 8_000<=len(content)<=25*1024*1024 or not content.startswith(b"%PDF-"):
+            return jsonify({"error":"Fail RPT asal tidak sah."}),503
+        digest=hashlib.sha256(content).hexdigest()
+        if staged is not None and digest!=_release_manifest(root)[f"{subject}:{year}"]["sha256"]:
+            return jsonify({"error":"Versi RPT tidak sepadan."}),503
+        if paid_cover and staged is None:
+            # Compatibility downloads may be personalized only when their exact
+            # bytes match an existing reviewed original-cover layout.
             try:
-                document=for_download(account,path,subject,year)
-            except ProfileUnavailable:
-                return jsonify({"error":"RPT dengan identiti sekolah belum dapat disediakan."}),503
-        response=send_file(document,mimetype="application/pdf",as_attachment=True,
+                layout=json.loads((Path(root)/V2/"original_cover_layout_verified.json").read_text("utf8"))
+                key=f"{subject}:{year}"
+                candidates=[layout,layout.get("english_integrated",{}),
+                            layout.get("aligned_rpt_covers",{}).get(key,{}),
+                            layout.get("science_year6_covers",{}).get(key,{})]
+                reviewed=any(x.get("source_sha256_by_subject_year",{}).get(key)==digest
+                             for x in candidates)
+            except (OSError,ValueError,TypeError,AttributeError):
+                reviewed=False
+            if not reviewed:
+                return jsonify({"error":"Muka depan asal RPT belum sepadan dengan versi PDF. Identiti sekolah tidak diubah."}),503
+        response=send_file(BytesIO(content),mimetype="application/pdf",as_attachment=True,
                            download_name=f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_DRAF.pdf",
                            conditional=False)
         response.headers["X-RPT-Personalization-Allowed"]="1" if paid_cover else "0"
-        if staged is not None:
-            # Exact PDF hash is from the prevalidated 56-source manifest.
-            # Browser must match it to the audited original-cover layout;
-            # a future PDF with a changed template cannot be stamped blindly.
-            response.headers["X-RPT-Source-SHA256"]=(
-                _release_manifest(root)[f"{subject}:{year}"]["sha256"])
+        response.headers["X-RPT-Source-SHA256"]=digest
         return response
     return bp
