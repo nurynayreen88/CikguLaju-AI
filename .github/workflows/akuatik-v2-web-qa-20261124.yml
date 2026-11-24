@@ -1,0 +1,22 @@
+name: Akuatik V2 Web selection QA
+on:
+  pull_request:
+    paths:
+      - 'web/akuatik_v2_web_client.py'
+      - 'web/unified_rph_web.py'
+      - 'web/kp2027_pj_private_web.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_akuatik_v2_web_20261124.py'
+      - '.github/workflows/akuatik-v2-web-qa-20261124.yml'
+permissions:
+  contents: read
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -p test_akuatik_v2_web_20261124.py
