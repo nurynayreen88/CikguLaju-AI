@@ -1,0 +1,785 @@
+{
+  "status": "HOLD",
+  "year": 4,
+  "subject": "数学（华小）",
+  "unit": "整数与运算",
+  "source": "DSKP Matematik SJK(C) Tahun 4, printed pages 31–34",
+  "note": "Original candidate teaching activities, not approved RPT allocation or textbook page mapping. Candidate IDs are not printable PdP numbers.",
+  "records": [
+    {
+      "candidate_id": "T4-U1-C01",
+      "sk": "1.1",
+      "sp": "1.1.1",
+      "topic": "认读文字数目",
+      "objective": "正确读出五个十万以内以文字呈现的数目。",
+      "criterion": "五题中至少四题读音及数值正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师展示文字数卡，示范按数位读出数目。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生两人一组轮流抽卡认读，伙伴核对数位。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立读出五张新数卡，教师记录易错数位。"
+        }
+      ],
+      "bbm": "文字数卡、数位表",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "使用数位表逐位提示。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C02",
+      "sk": "1.1",
+      "sp": "1.1.1",
+      "topic": "认读数字",
+      "objective": "正确说出五个十万以内的数字。",
+      "criterion": "至少四个数字的读法正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范读出含零的五位数。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生把数字卡放入数位表，按数位说出数目。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立读出五个新数，解释其中一个零的读法。"
+        }
+      ],
+      "bbm": "数字卡、数位表",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先练习四位数，再加入含零的五位数。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C03",
+      "sk": "1.1",
+      "sp": "1.1.1",
+      "topic": "数字与文字互换",
+      "objective": "把五个十万以内的数目写成数字或文字。",
+      "criterion": "至少四题转换正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范数字和文字的双向转换。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生配对数字卡和文字卡，并互相核对。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生完成五道独立转换题，订正错误。"
+        }
+      ],
+      "bbm": "数字卡、文字卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "用数位表辅助书写。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C04",
+      "sk": "1.1",
+      "sp": "1.1.2",
+      "topic": "数位与数值",
+      "objective": "指出给定数目中五个指定数字的数位及数值。",
+      "criterion": "至少四组数位与数值均正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用数位表示范区分数位与数值。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生移动数卡，比较同一数字在不同位置的值。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生完成五组数位及数值题。"
+        }
+      ],
+      "bbm": "数位表、数字卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "使用颜色标记不同数位。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C05",
+      "sk": "1.1",
+      "sp": "1.1.2",
+      "topic": "分解数目",
+      "objective": "按数位或数值分解五个十万以内的数目。",
+      "criterion": "至少四题分解正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范用数位和数值两种方式分解数目。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用数卡和数位表组合及分解数目。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成五道分解题并验算。"
+        }
+      ],
+      "bbm": "数卡、数位表",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "从三位数开始逐步增加数位。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C06",
+      "sk": "1.1",
+      "sp": "1.1.2",
+      "topic": "比较数目",
+      "objective": "正确比较五组十万以内的数目。",
+      "criterion": "至少四组比较符号正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范从最高数位开始比较。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生两人抽取数卡，逐位说明比较结果。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立比较五组数目并说明一组理由。"
+        }
+      ],
+      "bbm": "数卡、比较符号卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "把两个数对齐在数位表上比较。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C07",
+      "sk": "1.1",
+      "sp": "1.1.2",
+      "topic": "排列数目",
+      "objective": "将四组数目按指定的顺序或逆序排列。",
+      "criterion": "至少三组排序完全正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范通过逐位比较找出最大和最小数。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生小组排列数卡并解释排序依据。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四组升序或降序排列题。"
+        }
+      ],
+      "bbm": "数卡、数轴",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "减少数卡数量后逐步增加。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C08",
+      "sk": "1.1",
+      "sp": "1.1.2",
+      "topic": "完成数列",
+      "objective": "完成四组十万以内顺序或逆序数列。",
+      "criterion": "至少三组数列的空格填写正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师展示数列，示范观察相邻数的变化。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用数轴找出变化规律并填入缺少的数。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四组数列并说明一个规律。"
+        }
+      ],
+      "bbm": "数轴、数列卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先使用简单连续数列，再增加难度。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C09",
+      "sk": "1.2",
+      "sp": "1.2.1",
+      "topic": "偶数与奇数的特征",
+      "objective": "说明偶数和奇数的特征并判断五个数。",
+      "criterion": "至少四个判断正确，并说明判断依据。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用成对计数物示范有无余下一个的情况。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生把不同数量的计数物两两配对，观察个位。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生判断五个数的奇偶性并解释一个判断。"
+        }
+      ],
+      "bbm": "计数物、数字卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "用小数量实物重新配对。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C10",
+      "sk": "1.2",
+      "sp": "1.2.2",
+      "topic": "偶数与奇数分类",
+      "objective": "把十个给定数目按奇偶分类。",
+      "criterion": "至少八个分类正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师复习个位数字与奇偶判断。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生小组把数卡放入两个分类区。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立分类十个数并检查遗漏。"
+        }
+      ],
+      "bbm": "数字卡、分类表",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先分类个位数，再扩展至五位数。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C11",
+      "sk": "1.3",
+      "sp": "1.3.1",
+      "topic": "估算数量",
+      "objective": "依据参照物估算三组数量并判断合理性。",
+      "criterion": "至少两组估算有合理依据。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师展示已知数量的参照组，示范估算方法。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用参照组估算较大集合，并交流依据。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立估算三组数量，与实际数量比较。"
+        }
+      ],
+      "bbm": "图片、计数物",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "提供清晰的参照组和分组图。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C12",
+      "sk": "1.4",
+      "sp": "1.4.1",
+      "topic": "整数近似值",
+      "objective": "按指定数位求五个整数的近似值。",
+      "criterion": "至少四题正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用数轴示范舍入到指定数位。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生在数轴标出相邻整十、整百、整千或整万。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成五题，说明一个舍入判断。"
+        }
+      ],
+      "bbm": "数轴、数卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先在数轴标出两个端点再判断。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C13",
+      "sk": "1.5",
+      "sp": "1.5.1",
+      "topic": "发现数列规律",
+      "objective": "找出四组给定数列的递增或递减规律。",
+      "criterion": "至少三组规律表述正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范比较相邻数的差。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生分组讨论不同步长数列。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立写出四组数列的变化规律。"
+        }
+      ],
+      "bbm": "数列卡、数轴",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "用箭头标记相邻数的变化。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C14",
+      "sk": "1.5",
+      "sp": "1.5.2",
+      "topic": "延续数列",
+      "objective": "按给定规律完成四组数列。",
+      "criterion": "至少三组完全正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范根据相邻数的差填补空格。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用数轴或计算验证顺序和逆序规律。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四组数列并验算。"
+        }
+      ],
+      "bbm": "数轴、数列卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先提供一个完整示例。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C15",
+      "sk": "1.6",
+      "sp": "1.6.1",
+      "topic": "整数加法",
+      "objective": "完成四道和不超过十万的加法算式。",
+      "criterion": "至少三题计算及数位排列正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范多项加法的数位对齐。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生使用数位表分步计算并检查进位。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并验算。"
+        }
+      ],
+      "bbm": "数位表、练习卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先练两项加法再增加项数。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C16",
+      "sk": "1.6",
+      "sp": "1.6.2",
+      "topic": "整数减法",
+      "objective": "完成四道十万以内两数相减的算式。",
+      "criterion": "至少三题答案正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范借位减法和逆运算检验。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生分步计算，伙伴核对借位过程。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并选一题验算。"
+        }
+      ],
+      "bbm": "数位表、练习卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "从不借位的减法开始。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C17",
+      "sk": "1.6",
+      "sp": "1.6.3",
+      "topic": "连续减法",
+      "objective": "完成四道十万以内三数连续减法。",
+      "criterion": "至少三题运算顺序及结果正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范从左至右依次计算。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用分步算式记录两个减法过程。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并复核中间结果。"
+        }
+      ],
+      "bbm": "练习卡、白板",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "把连续减法拆成两个算式。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C18",
+      "sk": "1.6",
+      "sp": "1.6.4",
+      "topic": "整数乘法",
+      "objective": "完成四道乘积不超过十万的乘法题。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范按位分解乘数并计算。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生练习一位数、两位数及整百整千乘数的算式。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并用估算检查合理性。"
+        }
+      ],
+      "bbm": "数位表、练习卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "由一位数乘法逐步过渡。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C19",
+      "sk": "1.6",
+      "sp": "1.6.5",
+      "topic": "整数除法",
+      "objective": "完成四道符合十万以内范围的除法题。",
+      "criterion": "至少三题商及所需余数正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范分步试商和检验方法。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生练习不同允许除数的算式并互相核对。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并用乘法验算。"
+        }
+      ],
+      "bbm": "练习卡、白板",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先练除数为一位数的算式。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C20",
+      "sk": "1.7",
+      "sp": "1.7.1",
+      "topic": "加减混合运算",
+      "objective": "完成四道十万以内的加减混合算式。",
+      "criterion": "至少三题步骤与答案正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师从不进位、不借位的示例开始。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生按运算顺序写出中间结果并讨论。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题及验算。"
+        }
+      ],
+      "bbm": "算式卡、白板",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "把混合算式分为两个步骤。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C21",
+      "sk": "1.7",
+      "sp": "1.7.2",
+      "topic": "乘除混合运算",
+      "objective": "完成四道十万以内乘除混合算式。",
+      "criterion": "至少三题步骤与答案正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范同级运算依序进行。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生通过算式卡练习并说明每一步。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题及检查。"
+        }
+      ],
+      "bbm": "算式卡、练习卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先用较小整数练习。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C22",
+      "sk": "1.8",
+      "sp": "1.8.1",
+      "topic": "加法未知数",
+      "objective": "求出四道两位数以内加法算式的一个未知数。",
+      "criterion": "至少三题正确且能检验。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用方框和字母示范未知数的位置。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用实物或逆运算找出未知数。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并代入检验。"
+        }
+      ],
+      "bbm": "数卡、未知数卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "使用较小数目和实物。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C23",
+      "sk": "1.8",
+      "sp": "1.8.2",
+      "topic": "减法未知数",
+      "objective": "求出四道两位数以内减法算式的一个未知数。",
+      "criterion": "至少三题正确且能检验。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师比较未知数出现在不同位置的减法算式。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生利用条形图和逆运算求值。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并代入检验。"
+        }
+      ],
+      "bbm": "条形图卡、练习卡",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "先用较小整数和实物示范。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C24",
+      "sk": "1.9",
+      "sp": "1.9.1",
+      "topic": "整数应用题",
+      "objective": "解决三道涉及整数及混合运算的日常应用题。",
+      "criterion": "至少两题策略与答案正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范找出已知条件与问题。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生小组选择图示或算式，说明运算策略。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立解决三题并检查答案合理性。"
+        }
+      ],
+      "bbm": "情境题卡、白板",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "用图示标记已知量及所求量。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    },
+    {
+      "candidate_id": "T4-U1-C25",
+      "sk": "1.9",
+      "sp": "1.9.2",
+      "topic": "未知数应用题",
+      "objective": "解决三道涉及单一未知数的加减应用题。",
+      "criterion": "至少两题列式与答案正确。",
+      "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用日常情境示范把未知量用字母表示。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生画图、列式并解释未知数的含义。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立解三题并代入检查。"
+        }
+      ],
+      "bbm": "情境卡、条形图",
+      "assessment": "教师根据成功标准记录个人练习结果，并给予针对性反馈。",
+      "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
+      "remedial": "提供句式和图示帮助列式。",
+      "extension": "学生自拟一道同类题目，并说明解题方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+    }
+  ]
+}
