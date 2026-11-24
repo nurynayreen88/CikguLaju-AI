@@ -12,7 +12,7 @@
     "2.3": "对刺激的反应",
     "3.1": "动物呼吸",
     "3.2": "脊椎动物",
-    "4.1": "植物对刺激的反应",
+    "4.1": "植物对外来刺激的反应",
     "4.2": "光合作用",
     "5.1": "光的直线传播",
     "5.2": "光的反射",
@@ -22,7 +22,7 @@
     "7.2": "可更新与不可更新能源",
     "8.1": "材料的来源",
     "8.2": "材料的性质",
-    "9.1": "地心引力",
+    "9.1": "地球引力",
     "9.2": "地球自转与公转",
     "10.1": "杠杆",
     "10.2": "简单机械与复杂机械"
@@ -152,7 +152,7 @@
       "description": "原料及条件"
     },
     "4.2.3": {
-      "description": "产物"
+      "description": "辨认淀粉及氧气是光合作用的产物"
     },
     "4.2.4": {
       "description": "光合作用重要性"
@@ -170,16 +170,16 @@
       "description": "影子大小及形状的因素"
     },
     "5.1.4": {
-      "description": "表达影子观察"
+      "description": "用适当媒介表达光直线传播的观察"
     },
     "5.2.1": {
       "description": "观察反射"
     },
     "5.2.2": {
-      "description": "反射生活应用"
+      "description": "概括日常生活应用光反射的原理"
     },
     "5.2.3": {
-      "description": "镜面反射光路"
+      "description": "绘出镜面反射的光线路径"
     },
     "5.2.4": {
       "description": "表达反射观察"
@@ -251,10 +251,10 @@
       "description": "研究材料性质"
     },
     "8.2.2": {
-      "description": "依据性质选材"
+      "description": "运用材料性质知识制作物品"
     },
     "8.2.3": {
-      "description": "制作适合用途的物品"
+      "description": "推断制作物品时选择材料的依据"
     },
     "8.2.4": {
       "description": "表达材料性质观察"
@@ -263,10 +263,10 @@
       "description": "观察重力"
     },
     "9.1.2": {
-      "description": "重力方向"
+      "description": "根据观察概括重力让地面物体保持位置"
     },
     "9.1.3": {
-      "description": "重力的重要性"
+      "description": "借助图示或口述表达重力观察"
     },
     "9.2.1": {
       "description": "说明两种运动"
@@ -296,10 +296,45 @@
       "description": "设计机械模型"
     },
     "10.2.3": {
-      "description": "辨认复杂机械组成"
+      "description": "归纳复杂机械由多种简单机械组成"
     },
     "10.2.4": {
       "description": "表达机械观察"
     }
+  },
+  "targeted_source_review": {
+    "source": "https://anyflip.com/zkumo/wfmr/basic/51-74",
+    "printed_pages": "39–54",
+    "corrected_sp": [
+      "4.2.3",
+      "5.1.4",
+      "5.2.2",
+      "5.2.3",
+      "8.2.2",
+      "8.2.3",
+      "9.1.2",
+      "9.1.3",
+      "10.2.3"
+    ],
+    "corrected_sk": [
+      "4.1",
+      "5.1",
+      "9.1"
+    ],
+    "activity_review": [
+      {
+        "pdp": 31,
+        "reason": "RPT uses 糖; DSKP expects starch and oxygen. Clarify sugar made by photosynthesis can be converted to starch; include both starch and oxygen in assessment."
+      },
+      {
+        "pdp": 53,
+        "reason": "8.2.2 requires actually applying properties to create an object; add safe construction and testing."
+      },
+      {
+        "pdp": 56,
+        "reason": "9.1.2 requires objects remaining on Earth, not only direction; add explicit explanation."
+      }
+    ],
+    "scope": "Targeted source cross-check only; independent full semantic review still pending. Labels remain editorial paraphrases."
   }
 }
