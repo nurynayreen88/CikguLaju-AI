@@ -1,0 +1,109 @@
+{
+  "status": "HOLD_SOURCE_MAPPING",
+  "curriculum": "KSSR Semakan 2017",
+  "subject": "Matematik SJKC",
+  "language": "zh-Hans",
+  "source_review_date": "2026-11-24",
+  "source_index": "https://sites.google.com/moe-dl.edu.my/dskpstemsr/home",
+  "years": [
+    {
+      "year": 4,
+      "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-4-SJKC.pdf",
+      "textbook_index": "https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-4",
+      "verified": "DSKP extracted text for topic 1, printed pages 31–34; screenshot fetch failed. Textbook index located, exact page mapping pending."
+    },
+    {
+      "year": 5,
+      "dskp": "https://cikgulim.com/wp-content/uploads/2020/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-5-SJKC.pdf",
+      "textbook_index": "https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-5",
+      "verified": "Source links identified; detailed document and page mapping pending."
+    },
+    {
+      "year": 6,
+      "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-6-SJKC.pdf",
+      "textbook_index": "https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-6",
+      "verified": "Source links identified; detailed document and page mapping pending."
+    }
+  ],
+  "publication_rules": {
+    "rpt": "One RPT with A/B calendar date columns, no duplicate PdP. Verify calendar and total annual hours before numbering.",
+    "rph": "Use approved canonical subject layout, Chinese instructional language, blank teacher fields and mastery counts, no printed internal PdP number.",
+    "gate": "Do not mark READY or expose menus until DSKP and textbook references, RPT schedule and generated documents are checked."
+  },
+  "year4_topic1": {
+    "title": "整数与运算",
+    "annual_min_hours": 96,
+    "source_printed_pages": [
+      31,
+      32,
+      33,
+      34
+    ],
+    "sk_sp_index": [
+      [
+        "1.1",
+        [
+          "1.1.1",
+          "1.1.2"
+        ]
+      ],
+      [
+        "1.2",
+        [
+          "1.2.1",
+          "1.2.2"
+        ]
+      ],
+      [
+        "1.3",
+        [
+          "1.3.1"
+        ]
+      ],
+      [
+        "1.4",
+        [
+          "1.4.1"
+        ]
+      ],
+      [
+        "1.5",
+        [
+          "1.5.1",
+          "1.5.2"
+        ]
+      ],
+      [
+        "1.6",
+        [
+          "1.6.1",
+          "1.6.2",
+          "1.6.3",
+          "1.6.4",
+          "1.6.5"
+        ]
+      ],
+      [
+        "1.7",
+        [
+          "1.7.1",
+          "1.7.2"
+        ]
+      ],
+      [
+        "1.8",
+        [
+          "1.8.1",
+          "1.8.2"
+        ]
+      ],
+      [
+        "1.9",
+        [
+          "1.9.1",
+          "1.9.2"
+        ]
+      ]
+    ]
+  }
+}
