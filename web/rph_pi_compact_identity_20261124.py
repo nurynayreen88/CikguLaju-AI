@@ -104,6 +104,21 @@ def compact_pi_identity(data):
                         el.set(W+"val","20")
                 for node in label.iter(W+"t"):
                     if node.text:node.text=PAK21.sub("PAK 21",node.text)
+        # Keep 1.5x line spacing; reclaim only decorative paragraph gaps
+        # in the header and empty inter-table spacer to fit numbered objectives.
+        for cell in cells:
+            for p in cell.findall(W+"p"):
+                spacing=p.find(W+"pPr/"+W+"spacing")
+                if spacing is not None:spacing.set(W+"after","0")
+        for p in body.findall(W+"p"):
+            if not text(p).strip() and not any(n.tag in (W+"drawing",W+"object",W+"br",W+"sectPr") for n in p.iter()):
+                pr=p.find(W+"pPr")
+                if pr is None:
+                    pr=etree.Element(W+"pPr");p.insert(0,pr)
+                sp=pr.find(W+"spacing")
+                if sp is None:sp=etree.SubElement(pr,W+"spacing")
+                for k,v in (("before","0"),("after","0"),("line","40"),("lineRule","exact")):
+                    sp.set(W+k,v)
         out=BytesIO()
         with ZipFile(out,"w") as dest:
             for item in z.infolist():
