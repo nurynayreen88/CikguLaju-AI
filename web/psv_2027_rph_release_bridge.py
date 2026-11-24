@@ -250,6 +250,25 @@ def load_candidate(year, pdp, *, preview=False, root=ROOT):
     }
 
 
+def _reflection(state, plan, previous):
+    """Use the existing assessment or objective; preserve teacher-authored text."""
+    manual = state.get("rph_teacher_reflection")
+    if isinstance(manual, str) and manual.strip():
+        return manual
+    if str(state.get("rph_reflection_mode") or "").casefold() == "manual":
+        return ""
+    old = str(previous or "").strip()
+    if old and not re.search(r"murid (?:mencapai|menguasai) (?:objektif|kriteria kejayaan)", old, re.I):
+        return old
+    for value in (plan["evidence"], plan["objective"], plan["standard_descriptions"]["sp"]):
+        text = " ".join(value.split()).rstrip(". ")
+        for candidate in [text] + re.split(r"\s+·\s+|\s*\|\s*|;\s+|(?<=\.)\s+(?=[A-Z])", text):
+            target = re.sub(r"^\d+(?:\.\d+)+\s*[—–:-]?\s*", "", candidate).rstrip(". ")
+            if 18 <= len(target) <= 145 and not re.search(r"mengikut SP|fokus pembelajaran|mencapai objektif", target, re.I):
+                return "____ / ____ murid mencapai sasaran: " + target + ". Baki dibimbing."
+    return old
+
+
 def adapt_rows(state, rows, *, preview=False, root=ROOT):
     if not isinstance(state, dict) or not isinstance(rows, dict):
         return rows
@@ -277,7 +296,8 @@ def adapt_rows(state, rows, *, preview=False, root=ROOT):
         "OBJEKTIF PEMBELAJARAN": plan["objective"],
         "KRITERIA KEJAYAAN": plan["evidence"],
         "SET INDUKSI": s["set induksi"],
-        "AKTIVITI UTAMA": "Aktiviti 1 — " + s["aktiviti 1"] + "\n\nAktiviti 2 — " + s["aktiviti 2"],
+        "AKTIVITI UTAMA": "Aktiviti 1\n" + s["aktiviti 1"] + "\n\nAktiviti 2\n" + s["aktiviti 2"],
+        "REFLEKSI": _reflection(state, plan, rows.get("REFLEKSI")),
         "PENTAKSIRAN": s["pbd"],
         "PENUTUP": s["penutup"],
         "BAHAN BANTU MENGAJAR": plan["materials"],
