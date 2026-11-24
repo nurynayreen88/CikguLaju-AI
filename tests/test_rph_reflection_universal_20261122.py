@@ -70,6 +70,23 @@ class TestUniversalReflection(unittest.TestCase):
         self.assertIn(ENGLISH_CRITERION,text)
         self.assertIn("guided reading",text)
 
+    def test_dlp_reflection_uses_subject_not_english_language_practice(self):
+        for subject,criterion,action in (
+            ("MATH_DLP","Pupils write numbers in numerals and words.","number cards"),
+            ("MATH_DLP","Pupils read the time on a clock.","clock models"),
+            ("DLP_MATH","Pupils interpret data from a pictograph.","stated data"),
+            ("SCIENCE_DLP","Pupils read the temperature using a thermometer.","measurement"),
+            ("DLP_SCIENCE","Pupils classify animals according to their habitats.","observation and classification"),
+        ):
+            with self.subTest(subject=subject,criterion=criterion):
+                for reflection in candidates(criterion,subject):
+                    self.assertEqual(reflection.count("____"),2)
+                    self.assertIn(criterion,reflection)
+                    self.assertIn(action,reflection)
+                    self.assertNotIn("guided reading",reflection)
+                    self.assertNotIn("sentence writing",reflection)
+                    self.assertNotIn("vocabulary recall",reflection)
+
     def test_verified_kssr_layout_automatic_and_manual(self):
         layout={
             "style":"telegram-native-rph-v1",
