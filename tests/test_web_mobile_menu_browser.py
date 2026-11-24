@@ -214,12 +214,28 @@ class PhoneMenuLayoutTests(unittest.TestCase):
 
     def test_desktop_sidebar_remains_vertical(self):
         page=self.browser.new_page(viewport={"width":1200,"height":900})
+        def mock(route):
+            path=urlsplit(route.request.url).path
+            if path=="/":
+                return route.fulfill(content_type="text/html",path=WEB/"index.html")
+            if path=="/api/auth/telegram/session":
+                return route.fulfill(json={"rph_access_mode":"trial","rph_trial_remaining":10})
+            if path=="/api/auth/capabilities":
+                return route.fulfill(json={"telegram_widget_enabled":False})
+            if path=="/api/web/admin/usage":
+                return route.fulfill(json={"registered_users":1})
+            if path=="/api/web/admin/notifications":
+                return route.fulfill(json={"items":[],"counts":{},"total":0,"more":False})
+            if path.startswith("/assets/"):
+                asset=WEB/path.rsplit("/",1)[-1]
+                if asset.is_file():
+                    return route.fulfill(path=asset)
+            return route.fulfill(status=404,json={})
+        page.route("**/*",lambda route:route.abort())
+        page.route(HOST+"/**",mock)
         try:
-            page.goto(PAGE,wait_until="domcontentloaded")
-            page.evaluate("""() => {
-              document.querySelector('main.panel').hidden = true;
-              document.querySelector('#workspace').hidden = false;
-            }""")
+            page.goto(HOST+"/",wait_until="load")
+            expect(page.locator("#workspace")).to_be_visible()
             m=page.evaluate("""() => {
               const menu=document.querySelector('.sidebar-menu');
               return {display:getComputedStyle(menu).display,
@@ -227,22 +243,19 @@ class PhoneMenuLayoutTests(unittest.TestCase):
             }""")
             self.assertEqual(m,{"display":"flex","direction":"column"})
             self.assertFalse(page.locator("#sidebar-more").evaluate("(node)=>node.open"))
-            # The admin sidebar button is deliberately hidden: admin now
-            # resides above the workspace in Pusat Admin. Simulate the same
-            # authorized UI state without creating a live account.
-            page.evaluate("""() => {
-              const admin=document.getElementById("web-admin-tab");
-              const top=document.getElementById("web-admin-top");
-              admin.hidden=false;
-              top.hidden=false;
-              top.open=true;
-              admin.click();
-            }""")
-            expect(page.locator("#web-admin-top")).to_be_visible()
-            expect(page.locator("#web-admin-top > summary")).to_contain_text("Pusat Admin")
-            expect(page.locator("#web-admin-tab")).to_be_hidden()
-            self.assertTrue(page.locator("#web-admin-top").evaluate("(node)=>node.open"))
+            # Use actual loaded admin JS and mocked authorized server responses.
+            # The file:// fixture cannot load absolute /assets/ paths.
+            page.evaluate("() => window.cikgulajuAdminInit()")
+            top=page.locator("#web-admin-top")
+            expect(top).to_be_visible()
+            summary=top.locator(":scope > summary")
+            expect(summary).to_contain_text("Pusat Admin")
+            if not top.evaluate("(node)=>node.open"):
+                summary.click()
             expect(page.locator("#web-admin-heading")).to_be_visible()
+            expect(page.locator("#web-admin-tab")).to_be_hidden()
+            summary.click()
+            expect(page.locator("#web-admin-heading")).to_be_hidden()
         finally:
             page.close()
 
