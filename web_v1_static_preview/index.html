@@ -1857,6 +1857,10 @@ const plannedKssrLanguages=subjectVariants.filter(item=>item.curriculum==="kssr"
 const rphVariantRpt=document.getElementById("rph-variant-rpt");
 function kssrSchoolLabel(label,school){
  const raw=String(label||"").replace(/\s*\(SJK\)\s*$/i,"").trim();
+ if(/^Matematik(?:\s|$)/i.test(raw)){
+  if(/\(DPK Edisi 3\)$/i.test(raw))return "Matematik SK (DPK Edisi 3)";
+  return "Matematik "+school;
+ }
  return /\((?:SK|SJKC|SJKT)\)$/i.test(raw)
   ?raw.replace(/\((?:SK|SJKC|SJKT)\)$/i,"("+school+")")
   :raw+" ("+school+")";
