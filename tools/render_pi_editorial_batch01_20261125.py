@@ -20,6 +20,10 @@ def main():
     root.mkdir(parents=True,exist_ok=True)
     payload=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch01_20261125.json").read_text(encoding="utf8"))
     assert payload["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
+    batch02=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch02_20261125.json").read_text(encoding="utf8"))
+    assert batch02["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
+    payload["records"]+=batch02["records"]
+    assert len({item["id"] for item in payload["records"]})==16
     original=runtime._rph_rows
     original_document=getattr(runtime,"_rph_document_rows",None)
     try:
@@ -109,7 +113,7 @@ def main():
                 if callable(original_document): runtime._rph_document_rows=original_document
                 if isinstance(native_globals,dict): native_globals.update(prior_globals)
         (root/"report.json").write_text(json.dumps(reports,indent=2),encoding="utf8")
-        assert len(reports)==8
+        assert len(reports)==16
     finally:
         runtime._rph_rows=original
         if callable(original_document): runtime._rph_document_rows=original_document
