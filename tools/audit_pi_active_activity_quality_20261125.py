@@ -13,6 +13,7 @@ from tools.bm_native_v26_navigation_audit import database
 from web.pi_jawi_english_terms_20261122 import normalize_english_terms
 from web.rph_pi_jawi_numerals_20261124 import jawi_display_digits
 from web.pi_navigation import is_pi_recitation_session
+from tools.pi_quran_reference_audit_20261125 import inspect_verse_ranges, self_test
 
 MARKER = re.compile(r"(?<!\S)([1-9])\.\s*(?=[\u0600-\u08ff])")
 DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹", "01234567890123456789")
@@ -81,6 +82,8 @@ def main():
     candidate_bank=[]
     residual_review=[]
     source_specific_recitation=[]
+    verse_review=[]
+    self_test()
     registry=json.loads(Path("staging/pendidikan_islam/active_activity_source_registry_20261125.json").read_text(encoding="utf8"))
     source_registry={entry["year"]:entry for entry in registry["years"]}
     page_evidence=json.loads(Path("staging/pendidikan_islam/active_dskp_text_page_evidence_20261125.json").read_text(encoding="utf8"))
@@ -126,6 +129,8 @@ def main():
                     "topic":row.get("topic"),**m,"candidate_available":proposed is not None}
                 identity={"year":year,"pdp":row["sequence_no"],"id":row["id"],"unit":unit}
                 objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
+                if unit=="Al-Quran":
+                    verse_review.append({**identity,"objective":objective,**inspect_verse_ranges(objective),"ready":False})
                 main_text=normalized(rows.get("AKTIVITI UTAMA"))
                 shared_main[sha256(main_text.encode()).hexdigest()].append({**identity,"objective":objective})
                 # Compare complete activity instruction lines, not shared headings
@@ -206,9 +211,14 @@ def main():
             for item in staged["records"]:
                 assert item["id"] not in staged_ids, ("duplicate editorial ID",item["id"])
                 staged_ids.add(item["id"])
+        hold_file=Path("staging/pendidikan_islam/active_activity_source_holds_20261125.json")
+        manual_holds=json.loads(hold_file.read_text(encoding="utf8"))["records"] if hold_file.exists() else []
+        blocked_ids={item["id"] for item in manual_holds}|{item["id"] for item in verse_review if item["status"] in ("INVALID_RANGE","UNPARSED_REFERENCE")}
+        (out/"quran_reference_review.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":verse_review},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        print("PI_QURAN_REFERENCE_REVIEW",json.dumps({"total":len(verse_review),"by_status":dict(Counter(x["status"] for x in verse_review)),"invalid":[x for x in verse_review if x["status"]=="INVALID_RANGE"],"staged_blocked_ids":sorted(staged_ids & blocked_ids),"ready":0},ensure_ascii=False),flush=True)
         next_queue=[]
         for year in range(2,7):
-            eligible=[x for x in candidate_bank+residual_review if x["year"]==year and x["id"] not in staged_ids]
+            eligible=[x for x in candidate_bank+residual_review if x["year"]==year and x["id"] not in staged_ids and x["id"] not in blocked_ids]
             # Prioritize identical candidate activity blocks, then missing references;
             # use round-robin by field rather than selecting only one field.
             grouped=defaultdict(list)
@@ -229,7 +239,7 @@ def main():
         # source notes and existing candidates for comparison; never invent verses.
         from tools.pi_active_recitation_candidate_20261125 import specialize_recitation
         for item in candidate_bank:
-            if item["unit"]!="Al-Quran": continue
+            if item["unit"]!="Al-Quran" or item["id"] in blocked_ids: continue
             special=specialize_recitation(item)
             if special: source_specific_recitation.append(special)
         (out/"recitation_specific_candidates.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":source_specific_recitation},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
