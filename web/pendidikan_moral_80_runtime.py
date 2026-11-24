@@ -113,9 +113,16 @@ def _activity_display(value):
     return "\n".join(lines)
 
 
+def _standard_lines(value):
+    """Each already identified source SP starts its own line in the same cell."""
+    return re.sub(r"[ \t]*[|;,][ \t]*(?=\d+\.\d+(?![\d.])(?:\s|$))", "\n", value)
+
+
 def _document_rows(state, result, source_sp=None):
     """Presentation only; retain canonical session ID and source fields."""
     result = dict(result)
+    original_sp = result["STANDARD PEMBELAJARAN"]
+    result["STANDARD PEMBELAJARAN"] = _standard_lines(original_sp)
     result["AKTIVITI UTAMA"] = _activity_display(result["AKTIVITI UTAMA"])
     result["TAJUK"] = re.sub(r"^PdP\s+\d+\s*[—–:-]\s*", "", result["TAJUK"], flags=re.I)
     manual = state.get("rph_teacher_reflection")
@@ -134,7 +141,7 @@ def _document_rows(state, result, source_sp=None):
         return result
     # Select a complete criterion or source statement, never truncate words.
     for field in ("KRITERIA KEJAYAAN", "OBJEKTIF PEMBELAJARAN", "STANDARD PEMBELAJARAN"):
-        raw = str((source_sp if field == "STANDARD PEMBELAJARAN" and source_sp else result.get(field)) or "").strip()
+        raw = str(((source_sp or original_sp) if field == "STANDARD PEMBELAJARAN" else result.get(field)) or "").strip()
         text = " ".join(raw.split()).rstrip(". ")
         candidates = [text] + re.split(r"\s*\|\s*|;\s+|(?<=\.)\s+(?=[A-Z])", text)
         if field == "STANDARD PEMBELAJARAN":
