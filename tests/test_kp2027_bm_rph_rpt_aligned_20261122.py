@@ -155,18 +155,27 @@ class TestBmKp2027Rph(TestCase):
         head,body=d.tables
         self.assertEqual(sum(c.width for c in head.rows[0].cells),
                          sum(c.width for c in body.rows[0].cells))
-        self.assertIn("BAHASA MELAYU SK",head.cell(0,0).text)
+        self.assertEqual(head.cell(0,0).text.splitlines(),[
+            "BAHASA MELAYU SK","Tahun 1","Tajuk: "+rec["title"],"Kandungan: "+rec["unit"]])
+        self.assertNotIn("Kumpulan",head.cell(0,0).text)
+        self.assertNotRegex(head.cell(0,0).text,r"PdP\s+\d+")
+        self.assertIn("Maklumat PdP",head.cell(0,1).text)
         self.assertIn("Bil. Murid:",head.cell(0,1).text)
+        self.assertEqual(d.styles["Normal"].font.name,"Times New Roman")
         self.assertIn("DBE8F5",head.cell(0,0)._tc.xml)
         self.assertIn("EDF3FA",body.cell(0,0)._tc.xml)
         with fitz.open(stream=bm.render("B",16,"pdf",{}),filetype="pdf") as pdf:
             self.assertEqual(pdf.page_count,1)
             page=pdf[0]
             subject=page.search_for("BAHASA MELAYU SK")[0]
-            teacher=page.search_for("Kelas:")[0]
+            teacher=page.search_for("Maklumat PdP")[0]
             self.assertLess(subject.x0,teacher.x0)
             self.assertLess(abs(subject.y0-teacher.y0),15)
             text=" ".join(page.get_text().split())
+            self.assertNotRegex(text,r"PdP\s+\d+")
+            self.assertNotIn("Kumpulan B",text)
+            self.assertIn("Tajuk: "+rec["title"],text)
+            self.assertIn("Kandungan: "+rec["unit"],text)
             self.assertIn(rec["sp_code"],text)
             self.assertIn(rec["criteria"],text)
             for activity in rec["activities"]:
