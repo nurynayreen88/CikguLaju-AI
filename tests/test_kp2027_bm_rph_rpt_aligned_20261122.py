@@ -36,6 +36,40 @@ class TestBmKp2027Rph(TestCase):
                 self.assertTrue(rec["remedial"] and rec["extension"])
         self.assertEqual(sum(bm.COUNTS.values()),353)
 
+    def test_published_dk_sk_labels_preserve_all_353_original_records(self):
+        raw=json.loads(bm.SOURCE.read_text("utf-8"))
+        counts={"3.2":0,"4.1":0}
+        updated={"3.2":"Membaca dan memahami pelbagai maklumat penting secara jelas dan tepat.",
+                 "4.1":"Menulis ayat secara mekanis dengan betulnya dan kemasnya."}
+        codes=set()
+        for group,count in bm.COUNTS.items():
+            for n in range(1,count+1):
+                original=raw["records"][group][str(n)]
+                actual=bm.lesson(group,n)
+                codes.add(actual["sp_code"])
+                if original["sk_code"] in updated:
+                    counts[original["sk_code"]]+=1
+                    self.assertEqual(actual,{**original,"sk":updated[original["sk_code"]]})
+                else:
+                    self.assertEqual(actual,original)
+        self.assertEqual(counts,{"3.2":69,"4.1":41})
+        self.assertEqual(len(codes),26)
+        self.assertEqual(bm.approved_source(),raw["records"])
+
+    def test_corrected_sk_appears_in_word_and_pdf(self):
+        import fitz
+        from docx import Document
+        for code in ("3.2","4.1"):
+            n=next(n for n in range(1,bm.COUNTS["A"]+1)
+                   if bm.lesson("A",n)["sk_code"]==code)
+            expected=bm.lesson("A",n)["sk"]
+            word=Document(BytesIO(bm.render("A",n,"word",{})))
+            self.assertTrue(any(expected in cell.text for t in word.tables
+                               for row in t.rows for cell in row.cells))
+            with fitz.open(stream=bm.render("A",n,"pdf",{}),filetype="pdf") as pdf:
+                text=" ".join(" ".join(p.get_text().split()) for p in pdf)
+                self.assertIn(expected,text)
+
     def test_rph_word_pdf_and_teacher_metadata(self):
         import fitz
         from docx import Document
