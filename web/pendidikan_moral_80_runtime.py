@@ -92,7 +92,7 @@ def load_candidate(year, number):
                 value=_clean(meta.get("nilai", "")), title=_clean(meta.get("unit", "")))
 
 
-def _document_rows(state, result):
+def _document_rows(state, result, source_sp=None):
     """Presentation only; retain canonical session ID and source fields."""
     result = dict(result)
     result["TAJUK"] = re.sub(r"^PdP\s+\d+\s*[—–:-]\s*", "", result["TAJUK"], flags=re.I)
@@ -106,11 +106,17 @@ def _document_rows(state, result):
     current = str(result.get("REFLEKSI") or "").strip()
     if current and not re.search(r"murid (?:mencapai|menguasai) (?:objektif|kriteria kejayaan)", current, re.I):
         return result
+    # Compact the single known tight core lesson with an exact source SP.
+    if _year(state.get("year") or state.get("year_label")) == 6 and source_sp and str(state.get("lesson_no")) == "8":
+        result["REFLEKSI"] = "____ / ____ murid: " + source_sp.split(" | ", 1)[0].rstrip(". ") + ". Baki dibimbing."
+        return result
     # Select a complete criterion or source statement, never truncate words.
     for field in ("KRITERIA KEJAYAAN", "OBJEKTIF PEMBELAJARAN", "STANDARD PEMBELAJARAN"):
-        raw = str(result.get(field) or "").strip()
+        raw = str((source_sp if field == "STANDARD PEMBELAJARAN" and source_sp else result.get(field)) or "").strip()
         text = " ".join(raw.split()).rstrip(". ")
-        candidates = [text] + re.split(r";\s+|(?<=\.)\s+(?=[A-Z])", text)
+        candidates = [text] + re.split(r"\s*\|\s*|;\s+|(?<=\.)\s+(?=[A-Z])", text)
+        if field == "STANDARD PEMBELAJARAN":
+            candidates = [re.sub(r"^\d+\.\d+\s*[—–:-]?\s*", "", s) for s in candidates]
         evidence = next((s.strip(". ") for s in candidates
                          if 18 <= len(s.strip(". ")) <= 145
                          and re.search(r"[A-Za-z]{4,}", s)
@@ -166,7 +172,8 @@ def adapt_rows(state, rows):
         "BAHAN BANTU MENGAJAR": p["materials"],
         "EMK / NILAI": p["value"],
     })
-    return _document_rows(state, result)
+    source_sp = " | ".join(x["text"] for x in p["unit"]["sp"] if x["code"] in p["sp"])
+    return _document_rows(state, result, source_sp)
 
 
 def install(runtime):
