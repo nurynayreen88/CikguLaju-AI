@@ -1,0 +1,1181 @@
+{
+  "status": "QA_CANDIDATES_NOT_READY_DO_NOT_PUBLISH",
+  "source_isbn": "978-967-420-807-3",
+  "source_map": "audits/kp2027_pj_t1_rpt_127_pdp_source_map_20261124.json",
+  "policy": "DK only; no textbook pages or invented textbook tasks. These are alternative proposed teaching plans; original RPH must be read and compared before any replacement. Keep all 167 SP covered in each group; no loss of standards allowed.",
+  "profiles": {
+    "P1.1.5": {
+      "sp": [
+        "P1.1.5",
+        "K1.1.9",
+        "A1.1.3"
+      ],
+      "tajuk": "Lampu isyarat kelajuan",
+      "bbm": "Kad warna, kon",
+      "aktiviti": [
+        "Guru menunjukkan berjalan perlahan dan berjalan pantas di laluan bertanda serta cara berhenti terkawal.",
+        "Murid berjalan mengikut kad hijau, kuning dan merah dalam ruang sendiri.",
+        "Murid menukar kelajuan mengikut tiga isyarat rawak dan menyatakan beza gerakan laju dengan perlahan."
+      ],
+      "kriteria_pbd": "Murid mengawal kelajuan dan berhenti tepat pada tiga daripada empat isyarat, menyatakan satu perbezaan kelajuan dan kekal di laluan sendiri.",
+      "keselamatan": "Tiada larian pecut atau berlumba dalam ruang sempit.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.1.7": {
+      "sp": [
+        "P1.1.7",
+        "K1.1.11",
+        "A1.1.7"
+      ],
+      "tajuk": "Rakan dan gelung",
+      "bbm": "Gelung rata, kon, pundi kacang",
+      "aktiviti": [
+        "Guru menunjukkan cara bergerak di sisi rakan, mengelilingi kon dan mencapai objek pada aras rendah.",
+        "Murid bergerak berpasangan pada jarak selamat mengikut arahan arah, aras dan ruang.",
+        "Murid memilih dua pergerakan menggunakan rakan dan alatan lalu menyatakan hubungannya."
+      ],
+      "kriteria_pbd": "Murid melakukan dua pola arah atau aras bersama rakan, menyatakan satu contoh hubungan dengan alatan dan bekerjasama secara bergilir.",
+      "keselamatan": "Gunakan alatan lembut di lantai rata; tiada sentuhan paksa atau perlanggaran.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.2.1": {
+      "sp": [
+        "P1.2.1",
+        "K1.2.1",
+        "A1.2.3"
+      ],
+      "tajuk": "Stesen langkah lokomotor",
+      "bbm": "Kon, tanda lantai",
+      "aktiviti": [
+        "Guru menunjukkan cara berjalan, berlari terkawal dan dua pola langkah mudah mengikut kebolehan.",
+        "Murid berlatih pola langkah di lorong berasingan dengan bimbingan guru.",
+        "Murid memilih tiga pola yang telah dipelajari, melakukan setiap pola dan menerangkan satu cara pergerakan."
+      ],
+      "kriteria_pbd": "Murid melakukan tiga pola yang diajar dengan kawalan, menerangkan satu teknik dan menyertai latihan mengikut kemampuan.",
+      "keselamatan": "Bahagikan semua jenis pergerakan dalam SP merentas sesi; jangan paksa lompatan yang belum dikuasai.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.2.2": {
+      "sp": [
+        "P1.2.2",
+        "K1.2.3",
+        "A1.2.2"
+      ],
+      "tajuk": "Lompat tali bergilir",
+      "bbm": "Tali lembut, tanda menunggu",
+      "aktiviti": [
+        "Guru menunjukkan masa yang sesuai untuk mula melompat tali dan menetapkan ruang menunggu.",
+        "Murid berlatih melangkah atau melompat tali rendah yang digerakkan perlahan dengan pengawasan guru.",
+        "Apabila bersedia, murid mencuba lompatan tali yang diayun berulang oleh dua rakan dan menyatakan isyarat pemasaan."
+      ],
+      "kriteria_pbd": "Murid melakukan dua lompatan terkawal mengikut kebolehan, mengenal pasti masa melompat dan menunggu di ruang selamat.",
+      "keselamatan": "Jika belum bersedia, kekal pada latihan prasyarat dan catat belum menguasai; jangan paksa.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.2.3": {
+      "sp": [
+        "P1.2.3",
+        "K1.2.4",
+        "A1.2.1"
+      ],
+      "tajuk": "Langkah ikut rentak",
+      "bbm": "Tepukan guru, tanda lantai",
+      "aktiviti": [
+        "Guru memodelkan langkah pada tempo perlahan dan sederhana.",
+        "Murid bergerak pada tempo tepukan dalam lorong masing-masing.",
+        "Murid menukar tempo apabila mendengar isyarat dan menyatakan tempo yang berubah."
+      ],
+      "kriteria_pbd": "Murid mengekalkan langkah pada dua tempo, membezakan rentak perlahan dan sederhana serta berhenti apabila diarahkan.",
+      "keselamatan": "Elakkan perubahan tempo mendadak dan ruang sesak.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.3.1": {
+      "sp": [
+        "P1.3.1",
+        "K1.3.1",
+        "A1.3.1"
+      ],
+      "tajuk": "Cermin muzik",
+      "bbm": "Muzik sesuai kanak-kanak, tanda ruang",
+      "aktiviti": [
+        "Guru menunjukkan pergerakan cermin mudah ke kiri dan kanan mengikut muzik.",
+        "Murid meniru gerak guru dalam ruang individu sambil mengenal arah.",
+        "Murid meniru dua rangkaian pendek dan menyebut arah yang digunakan."
+      ],
+      "kriteria_pbd": "Murid meniru dua gerak cermin, mengenal pasti arah kanan dan kiri dan kekal di ruang sendiri.",
+      "keselamatan": "Tiada putaran pantas; perlahankan muzik jika perlu.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.3.2": {
+      "sp": [
+        "P1.3.2",
+        "K1.3.2",
+        "A1.3.2"
+      ],
+      "tajuk": "Watak bergerak",
+      "bbm": "Lagu berunsur nilai murni, kad watak",
+      "aktiviti": [
+        "Guru menunjukkan gerak dua watak mengikut lirik dan rentak lagu.",
+        "Murid meniru watak yang disebut dalam lagu secara berpandu.",
+        "Murid memilih watak ketiga, menunjukkan geraknya mengikut rentak dan menamakan watak."
+      ],
+      "kriteria_pbd": "Murid meniru dua watak mengikut muzik, menamakan watak dan mengambil bahagian secara aktif.",
+      "keselamatan": "Pilih gerak watak mudah tanpa melompat tinggi atau bertembung.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.3.3": {
+      "sp": [
+        "P1.3.3",
+        "K1.3.3",
+        "A1.3.3"
+      ],
+      "tajuk": "Empat kiraan ceria",
+      "bbm": "Tepukan, muzik, kon",
+      "aktiviti": [
+        "Guru menunjukkan empat kiraan menggunakan langkah berjalan dan langkah sisi.",
+        "Murid mengulang dua pola lokomotor mengikut empat kiraan.",
+        "Murid melakukan rangkaian empat kiraan yang mudah dan menamakan pola pergerakan."
+      ],
+      "kriteria_pbd": "Murid melakukan dua rangkaian empat kiraan mengikut tempo, menamakan satu gerak dan mencuba dengan yakin.",
+      "keselamatan": "Beri ruang individu dan pilihan gerak berimpak rendah.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.3.4": {
+      "sp": [
+        "P1.3.4",
+        "K1.3.3",
+        "A1.3.4"
+      ],
+      "tajuk": "Gerak empat kiraan digital",
+      "bbm": "Peranti guru, klip gerak sesuai umur, tanda ruang",
+      "aktiviti": [
+        "Guru memandu carian contoh gerak empat kiraan daripada bahan digital yang sesuai umur.",
+        "Murid meniru pola langkah mudah mengikut tempo sambil menyebut nama pergerakan.",
+        "Guru merakam persembahan pendek dengan kebenaran sekolah; murid berbincang cara memperbaiki rentak."
+      ],
+      "kriteria_pbd": "Murid meniru dua pola empat kiraan daripada contoh digital, menamakan satu gerak dan memberi maklum balas sopan.",
+      "keselamatan": "Gunakan peranti guru, patuhi privasi dan izin rakaman; tanpa peranti, jadualkan komponen digital kemudian.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.4.1": {
+      "sp": [
+        "P1.4.1",
+        "K1.4.1",
+        "A1.4.3"
+      ],
+      "tajuk": "Jejak haiwan",
+      "bbm": "Kad haiwan, tikar senaman sesuai",
+      "aktiviti": [
+        "Guru menunjukkan contoh aksi haiwan rendah dan menyatakan bahagian badan yang menyokong pergerakan.",
+        "Murid meneroka aksi dua, tiga dan empat bahagian badan secara terkawal mengikut kesediaan.",
+        "Murid memilih dua aksi dan menunjukkan bahagian badan yang digunakan."
+      ],
+      "kriteria_pbd": "Murid melakukan dua aksi yang dipelajari, mengenal pasti bilangan bahagian badan yang menyokong gerak dan kekal di ruang selamat.",
+      "keselamatan": "Tiada beban pada kepala atau leher; hentikan aksi jika sakit atau tidak stabil.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.4.2": {
+      "sp": [
+        "P1.4.2",
+        "K1.4.3",
+        "A1.4.3"
+      ],
+      "tajuk": "Imbangan burung",
+      "bbm": "Tanda lantai rata",
+      "aktiviti": [
+        "Guru menunjukkan imbangan satu kaki pada kedudukan sisi, depan dan belakang yang rendah.",
+        "Murid mencuba kedudukan kaki berbeza dengan sokongan guru jika perlu.",
+        "Murid memilih dua kedudukan dan menyatakan bahagian badan yang membantu kestabilan."
+      ],
+      "kriteria_pbd": "Murid mengekalkan imbangan pendek pada dua kedudukan yang dipelajari, mengenal pasti peranan tangan atau kaki dan menjaga ruang sendiri.",
+      "keselamatan": "Tiada permukaan tinggi; sediakan bantuan dan jangan paksa tempoh imbangan.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.4.3": {
+      "sp": [
+        "P1.4.3",
+        "K1.4.4",
+        "A1.4.3"
+      ],
+      "tajuk": "Tapak sokongan",
+      "bbm": "Tikar senaman, kad nombor",
+      "aktiviti": [
+        "Guru menunjukkan beberapa imbangan rendah dengan bilangan tapak sokongan berbeza.",
+        "Murid mencuba kedudukan stabil mengikut tahap kemampuan, bermula dengan lebih banyak tapak sokongan.",
+        "Murid membandingkan dua posisi dan menyatakan bilangan tapak yang membantu kestabilan."
+      ],
+      "kriteria_pbd": "Murid melakukan dua imbangan yang sesuai, membandingkan kestabilan dan mengekalkan ruang selamat.",
+      "keselamatan": "Gunakan tikar, pengawasan guru dan tiada imbangan yang membebankan kepala atau leher.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P1.4.8": {
+      "sp": [
+        "P1.4.8",
+        "K1.4.6",
+        "A1.4.2"
+      ],
+      "tajuk": "Persediaan guling depan",
+      "bbm": "Tikar gimnastik sesuai, klip demonstrasi guru",
+      "aktiviti": [
+        "Guru bertauliah atau berkemahiran memeriksa tikar dan menunjukkan contoh guling depan melalui demonstrasi atau klip terkawal.",
+        "Murid mengenal pasti pergerakan dan menjalani latihan prasyarat secara individu dengan pengawasan.",
+        "Murid yang bersedia mencuba guling depan dengan bimbingan guru yang kompeten; murid lain meneruskan prasyarat."
+      ],
+      "kriteria_pbd": "Murid yang bersedia melakukan guling depan secara terkawal, menerangkan satu perkara yang diperhatikan pada demonstrasi dan menggunakan alatan yang selamat.",
+      "keselamatan": "Jangan lakukan guling penuh tanpa tikar dan guru kompeten; catat belum menguasai dan jadual semula jika kemudahan tidak sesuai.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P2.1.2": {
+      "sp": [
+        "P2.1.2",
+        "K2.1.2",
+        "A2.1.3"
+      ],
+      "tajuk": "Lambung dan tangkap sendiri",
+      "bbm": "Pundi kacang, bola lembut",
+      "aktiviti": [
+        "Guru menunjukkan cara melambung rendah dan menyediakan tangan untuk menangkap.",
+        "Murid berlatih melambung pundi kacang atau bola lembut sendiri dalam ruang masing-masing.",
+        "Murid mencuba empat tangkapan sendiri dan menyatakan kedudukan tangan."
+      ],
+      "kriteria_pbd": "Murid menangkap tiga daripada empat lambungan sendiri, menunjukkan kedudukan tangan dan menggunakan alatan selamat.",
+      "keselamatan": "Gunakan objek ringan; lambungan rendah tanpa membaling ke arah muka.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P2.1.3": {
+      "sp": [
+        "P2.1.3",
+        "K2.1.2",
+        "A2.1.4"
+      ],
+      "tajuk": "Tangkap bola besar",
+      "bbm": "Bola besar lembut, kon",
+      "aktiviti": [
+        "Guru menunjukkan kedudukan tangan untuk menerima bola besar pada jarak dekat.",
+        "Murid berlatih menerima bola daripada guru atau pasangan secara terkawal.",
+        "Murid mencuba empat tangkapan bergilir dan menyatakan kedudukan tangan."
+      ],
+      "kriteria_pbd": "Murid menangkap tiga daripada empat hantaran mudah, menyatakan kedudukan tangan dan mematuhi giliran serta arahan keselamatan.",
+      "keselamatan": "Hantaran perlahan, tidak ke muka; sesuaikan jarak dan saiz bola.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P2.1.4": {
+      "sp": [
+        "P2.1.4",
+        "K2.1.3",
+        "A2.1.5"
+      ],
+      "tajuk": "Lantun dan jalan",
+      "bbm": "Bola lembut sesuai saiz, kon",
+      "aktiviti": [
+        "Guru memodelkan lantunan setempat sebelah tangan dan cara mengawal bola.",
+        "Murid berlatih lantunan setempat sebelum bergerak perlahan dalam lorong.",
+        "Murid melantun sambil berjalan melalui laluan pendek dan menerangkan satu cara mengawal lantunan."
+      ],
+      "kriteria_pbd": "Murid melakukan tiga lantunan setempat dan laluan pendek dengan kawalan, menyatakan satu cara lantunan dan mengambil bahagian.",
+      "keselamatan": "Jarakkan murid, hentikan bola sebelum keluar lorong; tiada perlumbaan.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P2.1.5": {
+      "sp": [
+        "P2.1.5",
+        "K2.1.4",
+        "A2.1.2"
+      ],
+      "tajuk": "Mengelecek perlahan",
+      "bbm": "Bola lembut, kon",
+      "aktiviti": [
+        "Guru menunjukkan sentuhan bahagian dalam kaki ketika berjalan dengan bola.",
+        "Murid menolak bola perlahan melalui lorong kon yang luas.",
+        "Murid mengawal bola melalui tiga penanda dan menyatakan cara memastikan bola dekat dengan kaki."
+      ],
+      "kriteria_pbd": "Murid mengelecek melalui tiga penanda dengan kawalan, menerangkan satu cara kawalan dan menjaga ruang selamat.",
+      "keselamatan": "Tiada persaingan merebut bola atau pecut.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P2.1.6": {
+      "sp": [
+        "P2.1.6",
+        "K2.1.5",
+        "A2.1.4"
+      ],
+      "tajuk": "Tendang bola pegun",
+      "bbm": "Bola lembut, sasaran kon",
+      "aktiviti": [
+        "Guru menunjukkan cara mendekati bola pegun dan menendang secara terkawal.",
+        "Murid berlatih menendang bola ke sasaran dekat menggunakan bahagian kaki yang sesuai.",
+        "Murid mencuba tiga tendangan bergilir dan menerangkan satu cara menendang."
+      ],
+      "kriteria_pbd": "Murid menendang dua daripada tiga bola ke arah sasaran dekat, menyatakan satu teknik dan mematuhi peraturan giliran.",
+      "keselamatan": "Pastikan zon sasaran kosong; tidak menendang ke arah murid.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P2.1.7": {
+      "sp": [
+        "P2.1.7",
+        "K2.1.7",
+        "A2.1.2"
+      ],
+      "tajuk": "Pukul bola lembut",
+      "bbm": "Belon jika sesuai atau bola span, raket pendek ringan",
+      "aktiviti": [
+        "Guru menunjukkan pukulan perlahan menggunakan tangan dan raket pendek.",
+        "Murid mencuba pukulan terkawal dalam ruang individu mengikut arah dan aras mudah.",
+        "Murid melakukan dua pukulan dengan anggota badan atau raket dan menerangkan cara pukulan."
+      ],
+      "kriteria_pbd": "Murid menunjukkan dua jenis pukulan terkawal, menyatakan satu cara pukulan dan kekal dalam zon sendiri.",
+      "keselamatan": "Guna bola lembut; jarak ayunan selamat, tiada murid di zon pukulan.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    },
+    "P2.1.9": {
+      "sp": [
+        "P2.1.9",
+        "K2.1.8",
+        "A2.1.4"
+      ],
+      "tajuk": "Bola di atas tee",
+      "bbm": "Tee stabil, bola span, bet silinder ringan, klip guru",
+      "aktiviti": [
+        "Guru menunjukkan klip atau demonstrasi digital pukulan bola di tee serta zon selamat.",
+        "Murid berlatih ayunan tanpa bola di stesen berasingan sebelum memukul bola span.",
+        "Murid melakukan pukulan bergilir dengan pengawasan dan menerangkan satu perkara daripada contoh digital."
+      ],
+      "kriteria_pbd": "Murid melakukan dua pukulan terkawal, mengenal pasti cara pukulan melalui contoh digital dan mematuhi zon keselamatan.",
+      "keselamatan": "Guru mengawal bet dan giliran; tiada murid di hadapan atau dalam jejari ayunan. Tanpa alatan sesuai, tangguhkan pukulan penuh.",
+      "pemulihan": "Guru memecahkan tugasan kepada satu langkah prasyarat, membimbing percubaan dan merekod tahap sebenar murid.",
+      "pengayaan": "Murid yang bersedia mengulang tugasan dengan satu variasi terkawal tanpa meningkatkan risiko.",
+      "refleksi": "Rekod bilangan murid yang mencapai kriteria P/K/A dan tentukan latihan susulan berdasarkan komponen belum dikuasai."
+    }
+  },
+  "rows": {
+    "A": [
+      {
+        "pdp": 7,
+        "original_sp": [
+          "P1.1.5",
+          "K1.1.7"
+        ],
+        "candidate_profile": "P1.1.5",
+        "candidate_sp": [
+          "P1.1.5",
+          "K1.1.9",
+          "A1.1.3"
+        ],
+        "dk_pages": [
+          24,
+          25,
+          26
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 9,
+        "original_sp": [
+          "P1.1.7",
+          "K1.1.9",
+          "A1.2.1"
+        ],
+        "candidate_profile": "P1.1.7",
+        "candidate_sp": [
+          "P1.1.7",
+          "K1.1.11",
+          "A1.1.7"
+        ],
+        "dk_pages": [
+          25,
+          26
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 10,
+        "original_sp": [
+          "P1.1.7",
+          "K1.1.10",
+          "A1.2.2"
+        ],
+        "candidate_profile": "P1.1.7",
+        "candidate_sp": [
+          "P1.1.7",
+          "K1.1.11",
+          "A1.1.7"
+        ],
+        "dk_pages": [
+          25,
+          26
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 11,
+        "original_sp": [
+          "P1.2.1",
+          "A1.2.3"
+        ],
+        "candidate_profile": "P1.2.1",
+        "candidate_sp": [
+          "P1.2.1",
+          "K1.2.1",
+          "A1.2.3"
+        ],
+        "dk_pages": [
+          29
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 12,
+        "original_sp": [
+          "P1.2.2",
+          "K1.1.11",
+          "A1.2.4"
+        ],
+        "candidate_profile": "P1.2.2",
+        "candidate_sp": [
+          "P1.2.2",
+          "K1.2.3",
+          "A1.2.2"
+        ],
+        "dk_pages": [
+          29
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 13,
+        "original_sp": [
+          "P1.2.3",
+          "K1.2.1"
+        ],
+        "candidate_profile": "P1.2.3",
+        "candidate_sp": [
+          "P1.2.3",
+          "K1.2.4",
+          "A1.2.1"
+        ],
+        "dk_pages": [
+          29,
+          30
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 17,
+        "original_sp": [
+          "P1.3.1",
+          "K1.2.5",
+          "A1.3.1"
+        ],
+        "candidate_profile": "P1.3.1",
+        "candidate_sp": [
+          "P1.3.1",
+          "K1.3.1",
+          "A1.3.1"
+        ],
+        "dk_pages": [
+          33
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 18,
+        "original_sp": [
+          "P1.3.2",
+          "K1.2.6",
+          "A1.3.2"
+        ],
+        "candidate_profile": "P1.3.2",
+        "candidate_sp": [
+          "P1.3.2",
+          "K1.3.2",
+          "A1.3.2"
+        ],
+        "dk_pages": [
+          33
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 19,
+        "original_sp": [
+          "P1.3.2",
+          "K1.2.7"
+        ],
+        "candidate_profile": "P1.3.2",
+        "candidate_sp": [
+          "P1.3.2",
+          "K1.3.2",
+          "A1.3.2"
+        ],
+        "dk_pages": [
+          33
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 20,
+        "original_sp": [
+          "P1.3.3",
+          "K1.2.8",
+          "A1.3.3"
+        ],
+        "candidate_profile": "P1.3.3",
+        "candidate_sp": [
+          "P1.3.3",
+          "K1.3.3",
+          "A1.3.3"
+        ],
+        "dk_pages": [
+          33
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 21,
+        "original_sp": [
+          "P1.3.4",
+          "A1.3.4"
+        ],
+        "candidate_profile": "P1.3.4",
+        "candidate_sp": [
+          "P1.3.4",
+          "K1.3.3",
+          "A1.3.4"
+        ],
+        "dk_pages": [
+          33,
+          34
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 22,
+        "original_sp": [
+          "P1.4.1",
+          "K1.3.1",
+          "A1.3.5"
+        ],
+        "candidate_profile": "P1.4.1",
+        "candidate_sp": [
+          "P1.4.1",
+          "K1.4.1",
+          "A1.4.3"
+        ],
+        "dk_pages": [
+          36
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 23,
+        "original_sp": [
+          "P1.4.2",
+          "K1.3.2",
+          "A1.4.1"
+        ],
+        "candidate_profile": "P1.4.2",
+        "candidate_sp": [
+          "P1.4.2",
+          "K1.4.3",
+          "A1.4.3"
+        ],
+        "dk_pages": [
+          36
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 24,
+        "original_sp": [
+          "P1.4.2",
+          "K1.3.3",
+          "A1.4.2"
+        ],
+        "candidate_profile": "P1.4.2",
+        "candidate_sp": [
+          "P1.4.2",
+          "K1.4.3",
+          "A1.4.3"
+        ],
+        "dk_pages": [
+          36
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 25,
+        "original_sp": [
+          "P1.4.3",
+          "K1.4.1"
+        ],
+        "candidate_profile": "P1.4.3",
+        "candidate_sp": [
+          "P1.4.3",
+          "K1.4.4",
+          "A1.4.3"
+        ],
+        "dk_pages": [
+          36,
+          37
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 31,
+        "original_sp": [
+          "P1.4.8"
+        ],
+        "candidate_profile": "P1.4.8",
+        "candidate_sp": [
+          "P1.4.8",
+          "K1.4.6",
+          "A1.4.2"
+        ],
+        "dk_pages": [
+          36,
+          38
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 34,
+        "original_sp": [
+          "P2.1.2",
+          "A2.1.3"
+        ],
+        "candidate_profile": "P2.1.2",
+        "candidate_sp": [
+          "P2.1.2",
+          "K2.1.2",
+          "A2.1.3"
+        ],
+        "dk_pages": [
+          44
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 35,
+        "original_sp": [
+          "P2.1.3",
+          "K2.1.3"
+        ],
+        "candidate_profile": "P2.1.3",
+        "candidate_sp": [
+          "P2.1.3",
+          "K2.1.2",
+          "A2.1.4"
+        ],
+        "dk_pages": [
+          44
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 37,
+        "original_sp": [
+          "P2.1.4",
+          "A2.1.5"
+        ],
+        "candidate_profile": "P2.1.4",
+        "candidate_sp": [
+          "P2.1.4",
+          "K2.1.3",
+          "A2.1.5"
+        ],
+        "dk_pages": [
+          44,
+          45
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 39,
+        "original_sp": [
+          "P2.1.6",
+          "K2.1.6"
+        ],
+        "candidate_profile": "P2.1.6",
+        "candidate_sp": [
+          "P2.1.6",
+          "K2.1.5",
+          "A2.1.4"
+        ],
+        "dk_pages": [
+          44,
+          45
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 40,
+        "original_sp": [
+          "P2.1.7",
+          "A2.1.7"
+        ],
+        "candidate_profile": "P2.1.7",
+        "candidate_sp": [
+          "P2.1.7",
+          "K2.1.7",
+          "A2.1.2"
+        ],
+        "dk_pages": [
+          44,
+          45
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 43,
+        "original_sp": [
+          "P2.1.9"
+        ],
+        "candidate_profile": "P2.1.9",
+        "candidate_sp": [
+          "P2.1.9",
+          "K2.1.8",
+          "A2.1.4"
+        ],
+        "dk_pages": [
+          44,
+          45,
+          46
+        ],
+        "original_retained": true
+      }
+    ],
+    "B": [
+      {
+        "pdp": 7,
+        "original_sp": [
+          "P1.1.5",
+          "K1.1.7"
+        ],
+        "candidate_profile": "P1.1.5",
+        "candidate_sp": [
+          "P1.1.5",
+          "K1.1.9",
+          "A1.1.3"
+        ],
+        "dk_pages": [
+          24,
+          25,
+          26
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 9,
+        "original_sp": [
+          "P1.1.7",
+          "K1.1.9",
+          "A1.2.1"
+        ],
+        "candidate_profile": "P1.1.7",
+        "candidate_sp": [
+          "P1.1.7",
+          "K1.1.11",
+          "A1.1.7"
+        ],
+        "dk_pages": [
+          25,
+          26
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 10,
+        "original_sp": [
+          "P1.1.7",
+          "K1.1.10",
+          "A1.2.2"
+        ],
+        "candidate_profile": "P1.1.7",
+        "candidate_sp": [
+          "P1.1.7",
+          "K1.1.11",
+          "A1.1.7"
+        ],
+        "dk_pages": [
+          25,
+          26
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 11,
+        "original_sp": [
+          "P1.2.1",
+          "A1.2.3"
+        ],
+        "candidate_profile": "P1.2.1",
+        "candidate_sp": [
+          "P1.2.1",
+          "K1.2.1",
+          "A1.2.3"
+        ],
+        "dk_pages": [
+          29
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 12,
+        "original_sp": [
+          "P1.2.2",
+          "K1.1.11",
+          "A1.2.4"
+        ],
+        "candidate_profile": "P1.2.2",
+        "candidate_sp": [
+          "P1.2.2",
+          "K1.2.3",
+          "A1.2.2"
+        ],
+        "dk_pages": [
+          29
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 13,
+        "original_sp": [
+          "P1.2.3",
+          "K1.2.1"
+        ],
+        "candidate_profile": "P1.2.3",
+        "candidate_sp": [
+          "P1.2.3",
+          "K1.2.4",
+          "A1.2.1"
+        ],
+        "dk_pages": [
+          29,
+          30
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 17,
+        "original_sp": [
+          "P1.3.1",
+          "K1.2.5",
+          "A1.3.1"
+        ],
+        "candidate_profile": "P1.3.1",
+        "candidate_sp": [
+          "P1.3.1",
+          "K1.3.1",
+          "A1.3.1"
+        ],
+        "dk_pages": [
+          33
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 18,
+        "original_sp": [
+          "P1.3.2",
+          "K1.2.6",
+          "A1.3.2"
+        ],
+        "candidate_profile": "P1.3.2",
+        "candidate_sp": [
+          "P1.3.2",
+          "K1.3.2",
+          "A1.3.2"
+        ],
+        "dk_pages": [
+          33
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 19,
+        "original_sp": [
+          "P1.3.2",
+          "K1.2.7"
+        ],
+        "candidate_profile": "P1.3.2",
+        "candidate_sp": [
+          "P1.3.2",
+          "K1.3.2",
+          "A1.3.2"
+        ],
+        "dk_pages": [
+          33
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 20,
+        "original_sp": [
+          "P1.3.3",
+          "K1.2.8",
+          "A1.3.3"
+        ],
+        "candidate_profile": "P1.3.3",
+        "candidate_sp": [
+          "P1.3.3",
+          "K1.3.3",
+          "A1.3.3"
+        ],
+        "dk_pages": [
+          33
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 21,
+        "original_sp": [
+          "P1.3.4",
+          "A1.3.4"
+        ],
+        "candidate_profile": "P1.3.4",
+        "candidate_sp": [
+          "P1.3.4",
+          "K1.3.3",
+          "A1.3.4"
+        ],
+        "dk_pages": [
+          33,
+          34
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 22,
+        "original_sp": [
+          "P1.4.1",
+          "K1.3.1",
+          "A1.3.5"
+        ],
+        "candidate_profile": "P1.4.1",
+        "candidate_sp": [
+          "P1.4.1",
+          "K1.4.1",
+          "A1.4.3"
+        ],
+        "dk_pages": [
+          36
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 23,
+        "original_sp": [
+          "P1.4.2",
+          "K1.3.2",
+          "A1.4.1"
+        ],
+        "candidate_profile": "P1.4.2",
+        "candidate_sp": [
+          "P1.4.2",
+          "K1.4.3",
+          "A1.4.3"
+        ],
+        "dk_pages": [
+          36
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 24,
+        "original_sp": [
+          "P1.4.2",
+          "K1.3.3",
+          "A1.4.2"
+        ],
+        "candidate_profile": "P1.4.2",
+        "candidate_sp": [
+          "P1.4.2",
+          "K1.4.3",
+          "A1.4.3"
+        ],
+        "dk_pages": [
+          36
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 25,
+        "original_sp": [
+          "P1.4.3",
+          "K1.4.1"
+        ],
+        "candidate_profile": "P1.4.3",
+        "candidate_sp": [
+          "P1.4.3",
+          "K1.4.4",
+          "A1.4.3"
+        ],
+        "dk_pages": [
+          36,
+          37
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 31,
+        "original_sp": [
+          "P1.4.8"
+        ],
+        "candidate_profile": "P1.4.8",
+        "candidate_sp": [
+          "P1.4.8",
+          "K1.4.6",
+          "A1.4.2"
+        ],
+        "dk_pages": [
+          36,
+          38
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 35,
+        "original_sp": [
+          "P2.1.3",
+          "A2.1.4"
+        ],
+        "candidate_profile": "P2.1.3",
+        "candidate_sp": [
+          "P2.1.3",
+          "K2.1.2",
+          "A2.1.4"
+        ],
+        "dk_pages": [
+          44
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 37,
+        "original_sp": [
+          "P2.1.5",
+          "K2.1.5"
+        ],
+        "candidate_profile": "P2.1.5",
+        "candidate_sp": [
+          "P2.1.5",
+          "K2.1.4",
+          "A2.1.2"
+        ],
+        "dk_pages": [
+          44
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 39,
+        "original_sp": [
+          "P2.1.6",
+          "A2.1.7"
+        ],
+        "candidate_profile": "P2.1.6",
+        "candidate_sp": [
+          "P2.1.6",
+          "K2.1.5",
+          "A2.1.4"
+        ],
+        "dk_pages": [
+          44,
+          45
+        ],
+        "original_retained": true
+      },
+      {
+        "pdp": 42,
+        "original_sp": [
+          "P2.1.9"
+        ],
+        "candidate_profile": "P2.1.9",
+        "candidate_sp": [
+          "P2.1.9",
+          "K2.1.8",
+          "A2.1.4"
+        ],
+        "dk_pages": [
+          44,
+          45,
+          46
+        ],
+        "original_retained": true
+      }
+    ]
+  },
+  "coverage_if_substituted": {
+    "A": {
+      "original_count": 167,
+      "proposed_count": 156,
+      "needs_reallocation": [
+        "A1.2.4",
+        "A1.3.5",
+        "A1.4.1",
+        "A2.1.7",
+        "K1.1.10",
+        "K1.1.7",
+        "K1.2.5",
+        "K1.2.6",
+        "K1.2.7",
+        "K1.2.8",
+        "K2.1.6"
+      ]
+    },
+    "B": {
+      "original_count": 167,
+      "proposed_count": 157,
+      "needs_reallocation": [
+        "A1.2.4",
+        "A1.3.5",
+        "A1.4.1",
+        "A2.1.7",
+        "K1.1.10",
+        "K1.1.7",
+        "K1.2.5",
+        "K1.2.6",
+        "K1.2.7",
+        "K1.2.8"
+      ]
+    }
+  }
+}
