@@ -1,0 +1,1016 @@
+{
+  "version": "2026-11-24",
+  "status": "QA_NOT_PUBLISHED",
+  "policy": "Additive RPH variant. V1 unchanged. No new calendar slots, no automatic substitution. V2 does not certify in-water performance. All source IDs immutable. KP2027 and KSSR remain separate.",
+  "records": [
+    {
+      "year": 1,
+      "source_id": "KP2027-A-051",
+      "variant": "V2_DARAT",
+      "status": "QA_EXISTING_PDP_ALTERNATIVE",
+      "source_drive_id": "1I-N29W5syivfvsThQplu2-SottmhXPQj",
+      "source_standard_reference": {
+        "psychomotor": [
+          "P3.1.6"
+        ],
+        "cognitive": [
+          "K3.1.7",
+          "K3.1.8",
+          "K3.1.9",
+          "K3.1.10"
+        ],
+        "affective": [
+          "A3.1.8"
+        ],
+        "sk": [
+          "3.1"
+        ],
+        "notes": "P3.1.6, K3.1.10, A3.1.8 original catalog; K3.1.7–9 supplemental proposed per DK pages 54, subject to PJ map review."
+      },
+      "title": "Keyakinan dalam air — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Mengenal pasti cara selamat memulakan aktiviti akuatik serta mengenal empat bentuk pergerakan asas.",
+      "criteria": "Murid memadankan tiga daripada empat gambar kemahiran dan menyatakan satu peraturan keselamatan serta bekerjasama.",
+      "induction": "Guru menunjukkan gambar kemudahan kolam dan meminta murid mengenal pasti orang dewasa yang mengawasi.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid menyusun gambar masuk ke air, berdiri, berjalan dan pergerakan keyakinan air mengikut penerangan guru."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid memadankan gambar bobbing, apungan tiarap dan luncuran dengan nama kemahiran menggunakan patung di atas meja."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid berpasangan menerangkan satu peraturan keselamatan dan menunjukkan urutan pada kad gambar."
+        }
+      ],
+      "bbm": "Kad gambar, pita lantai, patung mainan",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid memadankan tiga daripada empat gambar kemahiran dan menyatakan satu peraturan keselamatan serta bekerjasama. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Ulang padanan dua gambar dengan bimbingan.",
+      "extension": "Murid menerangkan perbezaan apungan dan luncuran menggunakan gambar.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 1,
+      "source_id": "KP2027-B-050",
+      "variant": "V2_DARAT",
+      "status": "QA_EXISTING_PDP_ALTERNATIVE",
+      "source_drive_id": "1I-N29W5syivfvsThQplu2-SottmhXPQj",
+      "source_standard_reference": {
+        "psychomotor": [
+          "P3.1.6"
+        ],
+        "cognitive": [
+          "K3.1.7",
+          "K3.1.8",
+          "K3.1.9",
+          "K3.1.10"
+        ],
+        "affective": [
+          "A3.1.8"
+        ],
+        "sk": [
+          "3.1"
+        ],
+        "notes": "P3.1.6, K3.1.10, A3.1.8 original catalog; K3.1.7–9 supplemental proposed per DK pages 54, subject to PJ map review."
+      },
+      "title": "Keyakinan dalam air — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Mengenal pasti cara selamat memulakan aktiviti akuatik serta mengenal empat bentuk pergerakan asas.",
+      "criteria": "Murid memadankan tiga daripada empat gambar kemahiran dan menyatakan satu peraturan keselamatan serta bekerjasama.",
+      "induction": "Guru menunjukkan gambar kemudahan kolam dan meminta murid mengenal pasti orang dewasa yang mengawasi.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid menyusun gambar masuk ke air, berdiri, berjalan dan pergerakan keyakinan air mengikut penerangan guru."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid memadankan gambar bobbing, apungan tiarap dan luncuran dengan nama kemahiran menggunakan patung di atas meja."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid berpasangan menerangkan satu peraturan keselamatan dan menunjukkan urutan pada kad gambar."
+        }
+      ],
+      "bbm": "Kad gambar, pita lantai, patung mainan",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid memadankan tiga daripada empat gambar kemahiran dan menyatakan satu peraturan keselamatan serta bekerjasama. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Ulang padanan dua gambar dengan bimbingan.",
+      "extension": "Murid menerangkan perbezaan apungan dan luncuran menggunakan gambar.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 2,
+      "source_id": "U5-01",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.9.1"
+        ],
+        "cognitive": [
+          "2.8.1"
+        ],
+        "affective": [
+          "5.1.1",
+          "5.1.5"
+        ],
+        "sk": [
+          "1.9",
+          "2.8",
+          "5.1"
+        ],
+        "notes": "Original U5 identifier retained; no numbered RPT slot."
+      },
+      "title": "Keselamatan di kolam — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Menyatakan peraturan di kolam dan memilih tindakan selamat daripada situasi bergambar.",
+      "criteria": "Murid memilih tiga daripada empat tindakan selamat dan menerangkan satu sebab.",
+      "induction": "Guru memaparkan dua gambar perlakuan selamat dan tidak selamat.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid mengelaskan kad peraturan seperti berjalan, menunggu arahan dan mendapatkan pengawasan orang dewasa."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menjalankan lakonan di kawasan lantai bertanda sebagai pintu masuk kolam tanpa menggunakan air."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid memilih tindakan selamat dalam empat situasi dan menerangkan sebabnya."
+        }
+      ],
+      "bbm": "Kad tanda keselamatan, gambar kolam, pita lantai",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid memilih tiga daripada empat tindakan selamat dan menerangkan satu sebab. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Gunakan dua kad situasi dengan pilihan jawapan.",
+      "extension": "Murid menghasilkan satu tanda keselamatan kolam.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 2,
+      "source_id": "U5-02",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.9.2"
+        ],
+        "cognitive": [
+          "2.8.2"
+        ],
+        "affective": [],
+        "sk": [
+          "1.9",
+          "2.8"
+        ],
+        "notes": "Original U5 identifier retained; no numbered RPT slot."
+      },
+      "title": "Apungan lentang — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Mengenal pasti postur asas apungan lentang berdasarkan gambar dan menerangkan ciri postur.",
+      "criteria": "Murid memilih gambar yang betul dalam tiga daripada empat contoh serta menyatakan satu ciri postur.",
+      "induction": "Guru menunjukkan gambar kedudukan badan semasa apungan lentang.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid memadankan kad anggota badan dengan gambar postur menggunakan patung."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid membandingkan dua gambar posisi dan menerangkan perbezaannya secara berpasangan."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid memilih gambar postur yang sesuai dan memberikan satu sebab; simulasi hanya jika selesa di atas tikar."
+        }
+      ],
+      "bbm": "Kad postur, tikar bersih, patung",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid memilih gambar yang betul dalam tiga daripada empat contoh serta menyatakan satu ciri postur. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Bimbing murid menamakan anggota badan pada gambar.",
+      "extension": "Murid melakar postur pada rajah ringkas.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 2,
+      "source_id": "U5-03",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.9.3"
+        ],
+        "cognitive": [
+          "2.8.3"
+        ],
+        "affective": [],
+        "sk": [
+          "1.9",
+          "2.8"
+        ],
+        "notes": "Original U5 identifier retained; no numbered RPT slot."
+      },
+      "title": "Berdiri selepas apungan lentang — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Menyusun urutan konsep peralihan daripada apungan lentang kepada dirian berdasarkan bahan visual.",
+      "criteria": "Murid menyusun sekurang-kurangnya tiga kad mengikut urutan yang diterangkan dan mengenal pasti kedudukan akhir.",
+      "induction": "Guru menunjukkan gambar apungan lentang dan dirian.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid memerhati penerangan guru menggunakan kad urutan yang disediakan."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menyusun kad peralihan dan menjelaskan gambar dengan bantuan patung."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid membentangkan urutan kepada pasangan tanpa melakukan latihan di air."
+        }
+      ],
+      "bbm": "Kad urutan, rajah, patung",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid menyusun sekurang-kurangnya tiga kad mengikut urutan yang diterangkan dan mengenal pasti kedudukan akhir. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Kurangkan bilangan kad kepada dua.",
+      "extension": "Murid menerangkan mengapa bantuan guru diperlukan semasa latihan sebenar.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 2,
+      "source_id": "U5-04",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.10.1"
+        ],
+        "cognitive": [
+          "2.9.1"
+        ],
+        "affective": [
+          "5.1.3"
+        ],
+        "sk": [
+          "1.10",
+          "2.9",
+          "5.1"
+        ],
+        "notes": "Original U5 identifier retained; no numbered RPT slot."
+      },
+      "title": "Tendangan keribas — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Mengenal pasti turutan postur dan gerakan kaki bagi tendangan keribas serta mematuhi arahan ruang selamat.",
+      "criteria": "Murid memadankan tiga daripada empat gambar gerak dengan betul dan mematuhi arahan keselamatan.",
+      "induction": "Guru menunjukkan dua ilustrasi gerak kaki.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid melihat contoh terkawal dan membezakan pergerakan kaki bergilir daripada pergerakan serentak."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid meniru gerakan kaki kecil sambil duduk di kerusi stabil dengan kaki bebas, tanpa memaksa atau menahan nafas."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid memilih kad urutan dan menerangkan pergerakan kepada pasangan."
+        }
+      ],
+      "bbm": "Kad gerak, kerusi stabil, rajah",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid memadankan tiga daripada empat gambar gerak dengan betul dan mematuhi arahan keselamatan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Gunakan patung atau tunjuk pada gambar sahaja.",
+      "extension": "Murid membandingkan dua contoh gerakan kaki.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 3,
+      "source_id": "022",
+      "variant": "V2_DARAT",
+      "status": "QA_EXISTING_PDP_ALTERNATIVE",
+      "source_drive_id": "1UXxweap916Y2yAmaPol1_HQSZH8ApFEn",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.11.1"
+        ],
+        "cognitive": [
+          "2.11.1"
+        ],
+        "affective": [
+          "5.1.1"
+        ],
+        "sk": [
+          "1.11",
+          "2.11",
+          "5.1"
+        ],
+        "notes": "Original numbered PdP and codes retained."
+      },
+      "title": "Selam dan Kawal — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Menerangkan konsep kawalan pernafasan ketika akuatik dan menyatakan persediaan diri.",
+      "criteria": "Murid menjawab tiga daripada empat soalan konsep dan menyatakan satu persediaan keselamatan.",
+      "induction": "Guru memaparkan situasi penyelaman dan menyoal tentang pengawasan.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid memerhati rajah pernafasan serta mendengar penerangan guru tanpa latihan menahan nafas."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menyusun kad situasi persediaan diri dan tindakan mendapatkan bantuan jika tidak selesa."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid menjawab soalan situasi dan menerangkan mengapa latihan sebenar memerlukan pengawasan."
+        }
+      ],
+      "bbm": "Kad situasi, gambar, rajah",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid menjawab tiga daripada empat soalan konsep dan menyatakan satu persediaan keselamatan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Bimbing dengan dua pilihan gambar.",
+      "extension": "Murid menerangkan perbezaan latihan konsep dan latihan sebenar.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 3,
+      "source_id": "023",
+      "variant": "V2_DARAT",
+      "status": "QA_EXISTING_PDP_ALTERNATIVE",
+      "source_drive_id": "1UXxweap916Y2yAmaPol1_HQSZH8ApFEn",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.12.1",
+          "1.12.2"
+        ],
+        "cognitive": [
+          "2.12.1"
+        ],
+        "affective": [
+          "5.2.2"
+        ],
+        "sk": [
+          "1.12",
+          "2.12",
+          "5.2"
+        ],
+        "notes": "Original numbered PdP and codes retained."
+      },
+      "title": "Keribas Bertenaga — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Membezakan tendangan keribas pada posisi tiarap dan telentang berdasarkan ilustrasi serta mencuba koordinasi ringan.",
+      "criteria": "Murid membezakan kedua-dua posisi dan menjawab tiga daripada empat soalan konsep.",
+      "induction": "Guru menunjukkan dua gambar postur renang.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid membezakan orientasi tiarap dan telentang menggunakan rajah."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid mencuba gerak kaki kecil bergilir sambil duduk atau menggunakan patung mengikut kesediaan."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid memadankan kad perbandingan dan menerangkan perbezaan dua posisi secara berpasangan."
+        }
+      ],
+      "bbm": "Gambar postur, kad gerak, kerusi stabil",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid membezakan kedua-dua posisi dan menjawab tiga daripada empat soalan konsep. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Bimbing dengan satu pasangan gambar.",
+      "extension": "Murid menghasilkan carta perbandingan dua posisi.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 4,
+      "source_id": "025",
+      "variant": "V2_DARAT",
+      "status": "QA_EXISTING_PDP_ALTERNATIVE",
+      "source_drive_id": "1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.12.1"
+        ],
+        "cognitive": [
+          "2.12.1",
+          "2.12.2"
+        ],
+        "affective": [
+          "5.2.2"
+        ],
+        "sk": [
+          "1.12",
+          "2.12",
+          "5.2"
+        ],
+        "notes": "Original numbered PdP and codes retained."
+      },
+      "title": "Bijak Bertindak — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Memilih alat bantuan yang sesuai dan menjelaskan kedudukan selamat untuk mendapatkan bantuan dari darat.",
+      "criteria": "Murid memilih alat yang sesuai bagi dua situasi dan menyatakan dua langkah keselamatan.",
+      "induction": "Guru menunjukkan gambar situasi kecemasan air dan menegaskan murid tidak boleh masuk ke air untuk menyelamat.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid mengelaskan gambar alat bantuan dan mengenal pasti tindakan memanggil orang dewasa atau penyelamat."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Guru menunjukkan simulasi tanpa air menggunakan sasaran kadbod, tanpa menarik murid atau membawa murid ke tepi air."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid memilih alat bagi dua situasi serta menerangkan kedudukan selamat menggunakan rajah."
+        }
+      ],
+      "bbm": "Gambar alat bantuan, pita lantai, sasaran kadbod",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid memilih alat yang sesuai bagi dua situasi dan menyatakan dua langkah keselamatan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Gunakan pilihan gambar terhad dan soal jawab berpandu.",
+      "extension": "Murid melakar aliran tindakan mendapatkan bantuan.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 4,
+      "source_id": "026",
+      "variant": "V2_DARAT",
+      "status": "QA_EXISTING_PDP_ALTERNATIVE",
+      "source_drive_id": "1MecTJLs3dqG2tkUNNX5VORHzVyP5Hu9K",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.13.1",
+          "1.13.2"
+        ],
+        "cognitive": [
+          "2.13.1"
+        ],
+        "affective": [
+          "5.2.4"
+        ],
+        "sk": [
+          "1.13",
+          "2.13",
+          "5.2"
+        ],
+        "notes": "Original numbered PdP and codes retained."
+      },
+      "title": "Bakat Terpendam — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Menerangkan perkaitan gerakan tangan, kaki dan pernafasan dalam kuak rangkak secara konsep.",
+      "criteria": "Murid menyusun tiga komponen dengan betul dan menyatakan satu perkaitan gerakan.",
+      "induction": "Guru menunjukkan ilustrasi urutan kuak rangkak.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid menyusun kad gerak tangan, kaki dan pernafasan berdasarkan penerangan guru."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid meniru gerakan tangan perlahan sambil berdiri atau duduk dalam ruang sendiri; bernafas seperti biasa."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid menerangkan hubungan ketiga-tiga komponen menggunakan kad urutan."
+        }
+      ],
+      "bbm": "Kad koordinasi, rajah, kerusi stabil",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid menyusun tiga komponen dengan betul dan menyatakan satu perkaitan gerakan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Gunakan dua kad gerak terlebih dahulu.",
+      "extension": "Murid membandingkan dua urutan gambar.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 5,
+      "source_id": "DK-AKU-01",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.12.1"
+        ],
+        "cognitive": [
+          "2.12.1"
+        ],
+        "affective": [
+          "5.1.3"
+        ],
+        "sk": [
+          "1.12",
+          "2.12",
+          "5.1"
+        ],
+        "notes": "New DK-backed supplemental proposal only; no active RPT number. Affective codes proposed."
+      },
+      "title": "Bantuan dari darat — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Membezakan alat bantuan untuk dihulur atau dibaling dan memilih tindakan selamat.",
+      "criteria": "Murid memilih alat sesuai bagi tiga daripada empat situasi dan menyatakan dua peraturan.",
+      "induction": "Guru menunjukkan gambar alat bantuan dan situasi kecemasan.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid mengelaskan alat bantuan hulur dan baling serta menjelaskan pilihan."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menjalankan simulasi memilih dan membaling objek lembut ke sasaran lantai di zon kosong."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid membincangkan dua situasi dan menerangkan mengapa perlu memanggil orang dewasa serta tidak masuk air."
+        }
+      ],
+      "bbm": "Kad alat, sasaran kadbod, objek lembut",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid memilih alat sesuai bagi tiga daripada empat situasi dan menyatakan dua peraturan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Gunakan dua gambar alat dengan bimbingan.",
+      "extension": "Murid bina kad keputusan selamat.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 5,
+      "source_id": "DK-AKU-02",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.12.2"
+        ],
+        "cognitive": [
+          "2.12.2"
+        ],
+        "affective": [
+          "5.1.4"
+        ],
+        "sk": [
+          "1.12",
+          "2.12",
+          "5.1"
+        ],
+        "notes": "New DK-backed supplemental proposal only; no active RPT number. Affective codes proposed."
+      },
+      "title": "Kenali bobbing — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Mengenal pasti pergerakan tapak tangan semasa bobbing berdasarkan gambar, serta mengenal zon selamat.",
+      "criteria": "Murid mengenal pasti tiga daripada empat gambar gerakan tangan serta menyatakan satu peraturan.",
+      "induction": "Guru menunjukkan gambar bobbing dalam air dengan penjelasan bahawa latihan sebenar tidak dilakukan.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid mengenal arah gerakan tapak tangan melalui rajah."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid memadankan kad arah gerakan dan menunjukkan gerakan tangan kecil dalam ruang sendiri."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid menerangkan peranan tangan berdasarkan gambar dan memilih zon latihan selamat."
+        }
+      ],
+      "bbm": "Rajah tangan, kad urutan, patung",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid mengenal pasti tiga daripada empat gambar gerakan tangan serta menyatakan satu peraturan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Ulang padanan dua gambar.",
+      "extension": "Murid menerangkan mengapa aktiviti air dalam memerlukan pengawasan kompeten.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 5,
+      "source_id": "DK-AKU-03",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.13.1"
+        ],
+        "cognitive": [
+          "2.13.1"
+        ],
+        "affective": [
+          "5.2.1"
+        ],
+        "sk": [
+          "1.13",
+          "2.13",
+          "5.2"
+        ],
+        "notes": "New DK-backed supplemental proposal only; no active RPT number. Affective codes proposed."
+      },
+      "title": "Gerak tangan kuak dada — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Mengenal pasti urutan gerak tangan dan kaitannya dengan pernafasan dalam kuak dada.",
+      "criteria": "Murid menyusun tiga kad dan menyatakan satu perkaitan gerak dengan pernafasan.",
+      "induction": "Guru memperkenalkan gambar kuak dada.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid menyusun kad gerak tangan mengikut penerangan guru."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid mencuba gerakan tangan perlahan dalam ruang sendiri sambil bernafas biasa."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid menerangkan hubungan gerak tangan dengan pernafasan melalui rajah."
+        }
+      ],
+      "bbm": "Kad urutan, rajah",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid menyusun tiga kad dan menyatakan satu perkaitan gerak dengan pernafasan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Bimbing gerak menggunakan rajah sahaja.",
+      "extension": "Murid menerangkan perkaitan pada contoh gambar baharu.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 5,
+      "source_id": "DK-AKU-04",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.13.2"
+        ],
+        "cognitive": [
+          "2.13.2"
+        ],
+        "affective": [
+          "5.2.3"
+        ],
+        "sk": [
+          "1.13",
+          "2.13",
+          "5.2"
+        ],
+        "notes": "New DK-backed supplemental proposal only; no active RPT number. Affective codes proposed."
+      },
+      "title": "Gerak kaki kuak dada — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Mengenal pasti koordinasi kaki dan tangan melalui model dan rajah.",
+      "criteria": "Murid menyusun tiga daripada empat kad dan menjelaskan satu hubungan koordinasi.",
+      "induction": "Guru menunjukkan ilustrasi urutan kaki kuak dada.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid memilih gambar arah dan urutan pergerakan."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menggerakkan anggota patung untuk menunjukkan urutan secara berpasangan tanpa memaksa pergerakan sendi."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid menjelaskan hubungan kaki dan tangan berdasarkan model."
+        }
+      ],
+      "bbm": "Kad gerak, patung, rajah",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid menyusun tiga daripada empat kad dan menjelaskan satu hubungan koordinasi. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Gunakan dua kad awal dan akhir.",
+      "extension": "Murid melakar urutan menggunakan anak panah.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 5,
+      "source_id": "DK-AKU-05",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1gjoKsy8ZHl0XEaXFZOrS2W-UHdRY5Q1l",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.13.3"
+        ],
+        "cognitive": [
+          "2.13.1",
+          "2.13.2"
+        ],
+        "affective": [
+          "5.2.3"
+        ],
+        "sk": [
+          "1.13",
+          "2.13",
+          "5.2"
+        ],
+        "notes": "New DK-backed supplemental proposal only; no active RPT number. Affective codes proposed."
+      },
+      "title": "Koordinasi kuak dada — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Menerangkan urutan koordinasi tangan, kaki dan pernafasan melalui aktiviti darat.",
+      "criteria": "Murid menyusun empat kad mengikut urutan yang diajar dan menyatakan hubungan tiga komponen.",
+      "induction": "Guru menunjukkan carta tiga komponen kuak dada.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid menyusun kad urutan secara berkumpulan."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menggunakan model untuk menerangkan gabungan gerakan tanpa latihan menahan nafas."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid membentangkan urutan individu dan menjawab soalan guru."
+        }
+      ],
+      "bbm": "Kad koordinasi, carta",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid menyusun empat kad mengikut urutan yang diajar dan menyatakan hubungan tiga komponen. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Bimbing dengan tiga kad bergambar.",
+      "extension": "Murid mengenal pasti kesilapan dalam rajah urutan.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 6,
+      "source_id": "DK-AKU-01",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.12.1"
+        ],
+        "cognitive": [
+          "2.12.1"
+        ],
+        "affective": [
+          "5.1.3"
+        ],
+        "sk": [
+          "1.12",
+          "2.12",
+          "5.1"
+        ],
+        "notes": "New DK-backed supplemental proposal only; no active RPT number. Affective codes proposed."
+      },
+      "title": "Tindakan selamat ketika kecemasan air — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Menjelaskan tindakan segera yang wajar serta memilih alat bantuan tanpa membahayakan diri.",
+      "criteria": "Murid memilih tindakan selamat bagi tiga situasi dan menjelaskan dua sebab.",
+      "induction": "Guru menunjukkan situasi kecemasan kolam dan memperkenalkan keutamaan meminta bantuan orang dewasa.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid menyusun kad tindakan memanggil bantuan, menjaga jarak dan memilih alat yang sesuai."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menjalankan lakonan keputusan di darat dengan sasaran kadbod sahaja, bukan menggunakan manusia sebagai mangsa."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid menerangkan pilihan tindakan bagi tiga situasi dan mengapa tidak memasuki air."
+        }
+      ],
+      "bbm": "Kad situasi, carta alir, sasaran kadbod",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid memilih tindakan selamat bagi tiga situasi dan menjelaskan dua sebab. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Gunakan carta alir dua pilihan.",
+      "extension": "Murid membina carta keputusan untuk situasi baharu.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 6,
+      "source_id": "DK-AKU-02",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.12.2"
+        ],
+        "cognitive": [
+          "2.12.2"
+        ],
+        "affective": [
+          "5.1.4"
+        ],
+        "sk": [
+          "1.12",
+          "2.12",
+          "5.1"
+        ],
+        "notes": "New DK-backed supplemental proposal only; no active RPT number. Affective codes proposed."
+      },
+      "title": "Konsep menjejak air — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Mengenal pasti gerak tangan dan kaki yang membantu mengekalkan kepala di permukaan air secara konsep.",
+      "criteria": "Murid mengenal pasti kedua-dua peranan anggota badan dan menjawab tiga daripada empat soalan.",
+      "induction": "Guru memperkenalkan rajah menjejak air.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid memadankan gambar gerak tangan dan kaki dengan penerangan guru."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menggunakan model atau gerak tangan ringan untuk menerangkan koordinasi tanpa menguji apungan."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid menjelaskan peranan dua anggota badan serta memilih situasi latihan selamat."
+        }
+      ],
+      "bbm": "Rajah tangan dan kaki, model",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid mengenal pasti kedua-dua peranan anggota badan dan menjawab tiga daripada empat soalan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Bimbing dengan dua rajah berlabel.",
+      "extension": "Murid membandingkan konsep menjejak air dengan apungan.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    },
+    {
+      "year": 6,
+      "source_id": "DK-AKU-03",
+      "variant": "V2_DARAT",
+      "status": "QA_SUPPLEMENT_NO_RPT_SLOT",
+      "source_drive_id": "1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv",
+      "source_standard_reference": {
+        "psychomotor": [
+          "1.13.1"
+        ],
+        "cognitive": [
+          "2.13.1"
+        ],
+        "affective": [
+          "5.2.4"
+        ],
+        "sk": [
+          "1.13",
+          "2.13",
+          "5.2"
+        ],
+        "notes": "New DK-backed supplemental proposal only; no active RPT number. Affective codes proposed."
+      },
+      "title": "Teknik pernafasan kuak dada atau rangkak — Akuatik V2 (Aktiviti Darat)",
+      "objective": "Menjelaskan teknik pernafasan dalam kuak dada atau rangkak berdasarkan bahan visual.",
+      "criteria": "Murid menyusun urutan satu gaya dengan betul dan menerangkan dua ciri konsep pernafasan.",
+      "induction": "Guru menunjukkan dua carta teknik renang.",
+      "activities": [
+        {
+          "title": "Penerokaan konsep",
+          "body": "Murid mengenal pasti perbezaan masa pernafasan pada gambar."
+        },
+        {
+          "title": "Latihan berpandu",
+          "body": "Murid menyusun kad koordinasi untuk satu gaya pilihan tanpa menahan nafas atau menguji kemampuan dalam air."
+        },
+        {
+          "title": "Aplikasi dan perkongsian",
+          "body": "Murid menerangkan teknik melalui model dan membandingkan dengan gaya kedua."
+        }
+      ],
+      "bbm": "Carta perbandingan, kad urutan",
+      "safety": "Aktiviti di darat sahaja, di bilik darjah/dewan/padang kering. Tiada kolam, rendaman, tahan nafas, hiperventilasi, ujian jarak renang atau simulasi menyelamat menggunakan manusia. Guru mengawal ruang, peralatan dan kesediaan murid. Jika sakit atau tidak selesa, hentikan.",
+      "pbd": "Murid menyusun urutan satu gaya dengan betul dan menerangkan dua ciri konsep pernafasan. Pentaksiran hanya berdasarkan pengetahuan, respons dan simulasi darat. Kemahiran psikomotor di air belum ditaksir.",
+      "closure": "Murid menyatakan satu perkara yang dipelajari dan satu langkah keselamatan. Guru merumus dan mengaitkan semula dengan objektif.",
+      "remedial": "Gunakan satu gaya dan kad berpandu.",
+      "extension": "Murid menghasilkan carta perbandingan dua gaya.",
+      "reflection": "Bilangan murid mencapai kriteria aktiviti darat:    Bilangan belum mencapai:    Tindakan susulan berdasarkan kriteria:    Kemahiran dalam air belum ditaksir.",
+      "metadata": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "ready": false
+    }
+  ]
+}
