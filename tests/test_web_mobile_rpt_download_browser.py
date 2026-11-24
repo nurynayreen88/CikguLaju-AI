@@ -55,10 +55,10 @@ class MobileRptDownloadTests(unittest.TestCase):
             page.evaluate("""async () => {
                 document.querySelector('main.panel').hidden=true;
                 document.querySelector('#workspace').hidden=false;
-                const row={code:"matematik_sjkc",label:"Matematik (SJKC)",curriculum:"sjkc"};
+                const row={code:"matematik_sjkc",label:"Matematik SJKC",curriculum:"sjkc"};
                 sjkcSubjectOptions.push({...row,value:row.code,rpt_years:[2]});
                 sjktSubjectOptions.splice(0,sjktSubjectOptions.length,
-                    {code:"matematik_sjkt",value:"matematik_sjkt",label:"Matematik (SJKT)",curriculum:"sjkt"});
+                    {code:"matematik_sjkt",value:"matematik_sjkt",label:"Matematik SJKT",curriculum:"sjkt"});
                 const realFetch=window.fetch;
                 window.fetch=async (url,options)=>url==='/api/rpt/2027/catalog'
                   ?new Response(JSON.stringify({subjects:[{...row,years:[
@@ -105,7 +105,7 @@ class MobileRptDownloadTests(unittest.TestCase):
                 document.querySelector('main.panel').hidden = true;
                 document.querySelector('#workspace').hidden = false;
                 if (!sjkcSubjectOptions.some(row => row.value === 'matematik_sjkc')) {
-                    sjkcSubjectOptions.push({value:'matematik_sjkc',label:'Matematik (SJKC)',rpt_years:[2]});
+                    sjkcSubjectOptions.push({value:'matematik_sjkc',label:'Matematik SJKC',rpt_years:[2]});
                 }
                 const previousFetch = window.fetch;
                 window.fetch = (url, options) => {
@@ -166,7 +166,7 @@ class MobileRptDownloadTests(unittest.TestCase):
                     {code:"sains_sjkc",label:"Sains (SJKC)",years:[
                         {year:6,pdf_ready:true,download_enabled:true,docx_ready:true,
                          docx_url:"/api/rpt/2027/sjkc/sains/6.docx"}]},
-                    {code:"matematik_sjkc",label:"Matematik (SJKC)",years:[
+                    {code:"matematik_sjkc",label:"Matematik SJKC",years:[
                         {year:2,pdf_ready:true,download_enabled:true,docx_ready:true,
                          docx_url:"/api/rpt/2027/sjkc/matematik/2.docx"},
                         {year:3,pdf_ready:true,download_enabled:true,docx_ready:true,
@@ -200,7 +200,7 @@ class MobileRptDownloadTests(unittest.TestCase):
             curriculum.select_option("kssr")
             self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Tahun 2","Tahun 3","Tahun 4","Tahun 5","Tahun 6"])
             year.select_option("2")
-            self.assertEqual(subject.locator("option").all_text_contents(),["Pilih atau cari subjek","Bahasa Cina (SJKC)","Bahasa Melayu (SJKC)","English (SK)","Matematik (SJKC)"])
+            self.assertEqual(subject.locator("option").all_text_contents(),["Pilih atau cari subjek","Bahasa Cina (SJKC)","Bahasa Melayu (SJKC)","English (SK)","Matematik SJKC"])
             choose_subject("English (SK)")
             self.assertTrue(pdf.is_visible())
             self.assertFalse(word.is_visible())
@@ -209,7 +209,7 @@ class MobileRptDownloadTests(unittest.TestCase):
             subject_search.tap()
             self.assertEqual(subject_options.all_text_contents(),
                              ["Bahasa Cina (SJKC)","Bahasa Melayu (SJKC)",
-                              "English (SK)","Matematik (SJKC)"])
+                              "English (SK)","Matematik SJKC"])
             subject_search.fill("melayu")
             self.assertEqual(subject_options.all_text_contents(),["Bahasa Melayu (SJKC)"])
             subject_search.fill("tiada padanan")
@@ -224,7 +224,7 @@ class MobileRptDownloadTests(unittest.TestCase):
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/2.docx")
             self.assertIn("W.P. Kuala Lumpur",page.locator("#rpt-status").inner_text())
-            choose_subject("Matematik (SJKC)")
+            choose_subject("Matematik SJKC")
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/matematik/2.docx")
             year.select_option("3")
@@ -237,7 +237,7 @@ class MobileRptDownloadTests(unittest.TestCase):
             choose_subject("Bahasa Melayu (SJKC)")
             self.assertTrue(pdf.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/3.docx")
-            choose_subject("Matematik (SJKC)")
+            choose_subject("Matematik SJKC")
             self.assertTrue(pdf.is_visible())
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/matematik/3.docx")
