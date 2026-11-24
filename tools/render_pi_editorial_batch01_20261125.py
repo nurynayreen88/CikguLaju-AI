@@ -47,26 +47,42 @@ def main():
             assert all("موريد" in body for title,body in item["activities"])
             assert "ݢورو" in activity
             assert len(activity)<=len(rows["AKTIVITI UTAMA"])+100, "Avoid unchecked long output"
+            # Isolated single-record test. Render wrappers can copy or normalize
+            # state, so validate the source via the exact original objective and
+            # standard rather than requiring an internal ID field to survive.
             row_hits=[]
+            expected_objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN"))
+            expected_sp=normalized(rows.get("STANDARD PEMBELAJARAN"))
+            def replace_activity(s,current,boundary):
+                if not isinstance(current,dict):
+                    return current
+                same_objective=normalized(current.get("OBJEKTIF PEMBELAJARAN"))==expected_objective
+                same_sp=normalized(current.get("STANDARD PEMBELAJARAN"))==expected_sp
+                row_hits.append({"boundary":boundary,"subject":s.get("subject"),"id":s.get("rpt_entry_id"),"objective_match":same_objective,"sp_match":same_sp})
+                if not same_objective or not same_sp:
+                    return current
+                updated=dict(current)
+                updated["AKTIVITI UTAMA"]=activity
+                assert {k:v for k,v in updated.items() if k!="AKTIVITI UTAMA"}=={k:v for k,v in current.items() if k!="AKTIVITI UTAMA"}
+                return updated
             def qa_rows(s,t):
-                current=original(s,t)
-                if s.get("subject")=="Pendidikan Islam" and int(s.get("rpt_entry_id") or 0)==item["id"]:
-                    row_hits.append("rows")
-                    updated=dict(current)
-                    updated["AKTIVITI UTAMA"]=activity
-                    assert {k:v for k,v in updated.items() if k!="AKTIVITI UTAMA"}=={k:v for k,v in current.items() if k!="AKTIVITI UTAMA"}
-                    return updated
-                return current
+                return replace_activity(s,original(s,t),"rows")
             runtime._rph_rows=qa_rows
             if callable(original_document):
                 def qa_document(s,current):
-                    result=original_document(s,current)
-                    if isinstance(result,dict) and s.get("subject")=="Pendidikan Islam" and str(s.get("rpt_entry_id"))==str(item["id"]):
-                        row_hits.append("document_rows")
-                        result=dict(result)
-                        result["AKTIVITI UTAMA"]=activity
-                    return result
+                    return replace_activity(s,original_document(s,current),"document_rows")
                 runtime._rph_document_rows=qa_document
+            # The actual app native _create_rph_word resolves _rph_rows and
+            # _rph_document_rows from its defining global namespace. Verify
+            # this even if a runtime shim has wrapped/re-exported the engine.
+            renderer=getattr(runtime,"_create_rph_word",None)
+            native_globals=getattr(renderer,"__globals__",None)
+            prior_globals={}
+            if isinstance(native_globals,dict) and native_globals is not vars(runtime):
+                for name,fn in (("_rph_rows",qa_rows),("_rph_document_rows",getattr(runtime,"_rph_document_rows",None))):
+                    if name in native_globals and callable(fn):
+                        prior_globals[name]=native_globals[name]
+                        native_globals[name]=fn
             tag=f"PI_T{item['year']}_PDP{item['pdp']:03d}"
             unique="pi_editorial_"+uuid.uuid4().hex[:16]
             try:
@@ -91,6 +107,7 @@ def main():
             finally:
                 runtime._rph_rows=original
                 if callable(original_document): runtime._rph_document_rows=original_document
+                if isinstance(native_globals,dict): native_globals.update(prior_globals)
         (root/"report.json").write_text(json.dumps(reports,indent=2),encoding="utf8")
         assert len(reports)==8
     finally:
