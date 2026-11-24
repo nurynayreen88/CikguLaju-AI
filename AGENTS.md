@@ -27,6 +27,17 @@
 - **Pintu pelepasan:** PR bagi setiap penjana/keluarga subjek baharu mesti ada contoh output sebenar, semakan A4 dan tepi luar semua jadual, padanan teks Word/PDF/SK/SP, ujian format khas dan bukti deploy serta muat turun sebelum status `LIVE DISAHKAN`. Jangan guna kuota guru untuk ujian tanpa izin. Periksa laluan `selected.source` Web/Telegram secara individu; deploy penjana umum tidak membuktikan setiap sumber telah siap.
 - Perubahan kepada palet/subjek native wajib mendaftar alias dalam kontrak dan lulus ujian `tests/test_rph_premium_contract_20261121.py`. Jika gagal, kekalkan `HOLD` dan rekod di isu #1182, **jangan** longgarkan ujian untuk membenarkan kerosakan format.
 
+## Syarat tetap RPT 2027 — WAJIB mulai 24 November 2026
+
+**Keputusan pemilik: SATU muka depan rasmi RPT untuk semua mata pelajaran dan tahun. Jangan hasilkan reka bentuk berlainan.** Rujukan visual ialah muka depan RPT Bahasa Melayu KSSR yang telah dipersetujui pemilik; bagi KP2027 gunakan salinan BM SK dalam arkib gabungan A/B yang telah diluluskan di PR #1269. Jangan lukis semula muka depan berdasarkan anggaran.
+
+- Guna semula dokumen templat sebenar: saiz kertas A4 landskap, margin, tajuk, fon, saiz, penjajaran, jarak perenggan, kedudukan logo, nama sekolah, nama guru, negeri, kelas/tahun, kumpulan dan ruang disediakan/disemak oleh. Hanya nilai medan, kandungan dan warna tema subjek yang boleh berubah. Tiada muka depan alternatif berkotak atau reka bentuk khusus bagi sesuatu subjek.
+- Jadual kandungan lima lajur dengan garisan luar dan pemisah dalaman lengkap. Kekalkan grid dan gaya jadual daripada templat BM yang diluluskan. Satu RPT setiap subjek/tahun dengan Kumpulan A dan B bersama-sama; tarikh, turutan dan agihan PdP wajib ikut sumber/takwim yang disahkan. Jangan cipta tarikh yang belum diluluskan.
+- Kekalkan SK/SP lengkap, aktiviti PdP, PBD, rujukan, dan agihan tahunan. Pembetulan format tidak boleh mengubah kandungan yang telah sah.
+- Word dan PDF wajib setara. Gunakan penjana asli, bukan overlay untuk membaiki reka bentuk. Uji rupa muka depan serta grid jadual terhadap templat sebenar, garisan, pemenggalan halaman, teks lengkap dan muat turun. Kekalkan akses profil/identiti sedia ada: logo sekolah, nama guru dan sekolah pengguna berbayar sahaja; jangan ubah hak akses untuk penyelarasan format.
+- Terpakai kepada KP2027, KSSR, DLP, PPKI, SJKC dan SJKT. **Fokus pembangunan bahan baharu sekarang ialah SK (KP2027 Tahun 1 dan KSSR Tahun 2–6); tangguhkan penambahan SJKC/SJKT.** Penyelarasan bahan SJKC sedia ada boleh diselesaikan tanpa membuka skop baharu.
+- Kelulusan teknikal tidak menggantikan semakan akademik dan takwim. RPT PJ KP2027 di #1361 ialah salinan QA dengan 127 PdP dan 107 perubahan padanan SP masih memerlukan semakan; jangan terbitkan sebagai final. RPT yang telah tersedia tidak perlu dibina semula jika sudah mematuhi templat.
+
 ## Templat laporan akhir setiap kerja
 - Bahan/komponen yang diperbaiki
 - Pautan PR + commit
