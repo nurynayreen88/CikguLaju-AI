@@ -4,7 +4,10 @@ on:
     paths:
       - "tools/audit_pi_active_activity_quality_20261125.py"
       - "tools/render_pi_editorial_batch01_20261125.py"
-      - "staging/pendidikan_islam/active_activity_editorial_batch01_20261125.json"
+      - "staging/pendidikan_islam/active_activity_editorial_batch*_20261125.json"
+      - "staging/pendidikan_islam/active_activity_source_registry_20261125.json"
+      - "staging/pendidikan_islam/active_dskp_text_page_evidence_20261125.json"
+      - "tools/pi_active_recitation_candidate_20261125.py"
       - ".github/workflows/pi-active-activity-quality-20261125.yml"
   workflow_dispatch:
 permissions:
@@ -32,7 +35,7 @@ jobs:
           path: qa/pi-activity-quality/*.json
           if-no-files-found: warn
           retention-days: 7
-      - name: Render eight curated source-specific activities with original Word and PDF generator
+      - name: Render all staged source-specific activities with original Word and PDF generator
         env:
           PYTHONUNBUFFERED: "1"
           CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
@@ -40,7 +43,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: pi-editorial-batch01-native-word-pdf
+          name: pi-editorial-native-word-pdf
           path: qa/pi-editorial-batch01/*
           if-no-files-found: warn
           retention-days: 7
