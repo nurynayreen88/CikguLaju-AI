@@ -56,6 +56,9 @@ class SejarahUserRuntimeTest(unittest.TestCase):
                 self.assertIn(r["textbook_reference"]["checked_focus_pages"]["printed_page_range"],
                               outcome["BAHAN BANTU MENGAJAR"])
                 self.assertIn("DRAF", outcome["TAJUK"])
+                self.assertIn(r["bbm"].partition(";")[2].strip(), outcome["BAHAN BANTU MENGAJAR"])
+                self.assertNotIn("bahan seperti dalam RPH", outcome["BAHAN BANTU MENGAJAR"])
+                self.assertEqual(outcome["BAHAN BANTU MENGAJAR"].count("Buku Teks Sejarah"), 1)
                 self.assertIn(r["success_criteria"].rstrip(". "), outcome["REFLEKSI"])
                 self.assertNotIn("PdP ", outcome["TAJUK"])
                 self.assertEqual(adapt_rows({**state, "rph_teacher_reflection": "Catatan guru."}, original)["REFLEKSI"], "Catatan guru.")
