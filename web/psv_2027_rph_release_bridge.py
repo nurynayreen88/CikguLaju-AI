@@ -240,11 +240,20 @@ def load_candidate(year, pdp, *, preview=False, root=ROOT):
         title += " — " + extra
     if len(title) < 5:
         return None
+    materials = _clean(meta.get("bbm"))
+    # The individual visual-review ledger records these four project anchors,
+    # even though the RPT page field describes them only as "Projek penggal".
+    # Do not use the project scheduling position as a textbook page.
+    project_pages = {20: "4–5", 21: "4–5", 41: "46–49", 42: "46–49"}
+    page = project_pages.get(pdp) if year == 5 else None
+    if page and sk == ["5.1"] and f"BT ms {page}" in meta.get("buku teks", ""):
+        if not re.search(r"\b(?:BT|Buku Teks)\s+ms\s*\d", materials, re.I):
+            materials = materials.rstrip(" .;") + f"; Buku Teks Tahun 5 ms {page}."
     return {
         "year": year, "pdp": pdp, "title": title, "sk": row["SK"],
         "sp": row["SP"], "objective": objective, "evidence": evidence,
         "standard_descriptions": descriptions,
-        "stages": stages, "materials": _clean(meta.get("bbm")),
+        "stages": stages, "materials": materials,
         "differentiation": _clean(meta.get("pembezaan")),
         "safety": _clean(meta.get("keselamatan")),
     }
