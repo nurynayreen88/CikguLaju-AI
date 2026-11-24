@@ -10,13 +10,18 @@ from web.kp2027_pj_private_web import personalize_pj
 
 def make_word(criterion):
     doc=Document()
+    from docx.shared import Pt
+    doc.add_paragraph('PENDIDIKAN JASMANI TAHUN 1').runs[0].bold=False
     table=doc.add_table(rows=15, cols=2)
     table.cell(0, 0).text="Maklumat PdP"
     table.cell(0, 1).text="Kelas:    Tarikh:    Masa:    Bil. Murid:"
     table.cell(4, 0).text="Kriteria Kejayaan"
     table.cell(4, 1).text=criterion
+    table.cell(13, 1).text="Latihan tambahan secara berpandu."
+    table.cell(13, 1).paragraphs[0].runs[0].font.size=Pt(9)
     table.cell(14, 0).text="Refleksi (Auto / Manual)"
     table.cell(14, 1).text="Arahan lama: rekod pemerhatian."
+    table.rows[14].height=Pt(100)
     output=BytesIO()
     doc.save(output)
     return output.getvalue()
@@ -31,7 +36,11 @@ def make_pdf(criterion):
     page.insert_text((38,309),"Kriteria Kejayaan",fontsize=8.2)
     page.insert_text((155.6,304),criterion,fontsize=8.1)
     page.insert_text((38,335),"EMK / Nilai",fontsize=8.2)
-    page.insert_text((38,706),"Refleksi (Auto / Manual)",fontsize=8.2)
+    page.draw_line((35,670),(560,670),width=.6)
+    page.draw_line((35,732),(560,732),width=.6)
+    page.insert_text((155.6,680),"Catatan awal yang mesti dibuang.",fontsize=8.1)
+    page.insert_text((38,700),"Refleksi (Auto /",fontsize=8.2)
+    page.insert_text((38,711),"Manual)",fontsize=8.2)
     page.insert_text((155.6,707),"Arahan lama: rekod pencapaian.",fontsize=8.1)
     page.insert_text((38,740),"Rujukan DK rasmi",fontsize=8.1)
     result=doc.tobytes()
@@ -52,6 +61,10 @@ class PJReflectionTest(unittest.TestCase):
         self.assertIn("tindakan",text.lower() if "tindakan" in text.lower() else text.lower().replace("akan mengikuti","tindakan"))
         self.assertNotIn("Arahan lama",text)
         self.assertEqual(doc.tables[0].cell(4,1).text,self.criterion)
+        self.assertTrue(doc.paragraphs[0].runs[0].bold)
+        self.assertEqual(doc.tables[0].cell(14,0).text,"Refleksi")
+        self.assertAlmostEqual(doc.tables[0].cell(14,1).paragraphs[0].runs[0].font.size.pt,9)
+        self.assertIsNone(doc.tables[0].rows[14].height)
 
     def test_manual_word_is_used_verbatim(self):
         note="12 murid telah menguasai; 3 murid diberi bimbingan pergerakan."
@@ -67,6 +80,18 @@ class PJReflectionTest(unittest.TestCase):
             self.assertIn("melakukan dua percubaan",text)
             self.assertIn("____",text)
             self.assertNotIn("Arahan lama",text)
+            self.assertNotIn("Catatan awal",text)
+            self.assertNotIn("Auto /",text)
+            self.assertNotIn("Manual)",text)
+            spans=[s for b in d[0].get_text("dict")["blocks"] for l in b.get("lines",[]) for s in l["spans"]]
+            title=next(s for s in spans if s["text"].startswith("PENDIDIKAN JASMANI"))
+            self.assertTrue(title["flags"]&16 or "Bold" in title["font"])
+            label=next(s for s in spans if s["text"]=="Refleksi")
+            self.assertTrue(label["flags"]&16 or "Bold" in label["font"])
+            for s in spans:
+                if "orang murid" in s["text"]:
+                    self.assertGreaterEqual(s["bbox"][1],670)
+                    self.assertLessEqual(s["bbox"][3],732)
 
     def test_manual_pdf_is_used_verbatim(self):
         text="10 murid menguasai, 5 perlu bimbingan. Latihan imbangan secara berpandu."
