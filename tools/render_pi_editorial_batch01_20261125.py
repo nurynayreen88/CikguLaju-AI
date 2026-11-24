@@ -53,7 +53,10 @@ def main():
     batch06=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch06_20261125.json").read_text(encoding="utf8"))
     assert batch06["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
     payload["records"]+=batch06["records"]
-    assert len({item["id"] for item in payload["records"]})==87
+    batch07=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch07_20261125.json").read_text(encoding="utf8"))
+    assert batch07["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
+    payload["records"]+=batch07["records"]
+    assert len({item["id"] for item in payload["records"]})==111
     original=runtime._rph_rows
     original_document=getattr(runtime,"_rph_document_rows",None)
     try:
@@ -148,7 +151,7 @@ def main():
                 if callable(original_document): runtime._rph_document_rows=original_document
                 if isinstance(native_globals,dict): native_globals.update(prior_globals)
         (root/"report.json").write_text(json.dumps(reports,indent=2),encoding="utf8")
-        assert len(reports)==87
+        assert len(reports)==111
     finally:
         runtime._rph_rows=original
         if callable(original_document): runtime._rph_document_rows=original_document
