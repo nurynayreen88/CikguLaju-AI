@@ -1,0 +1,28 @@
+name: BM SJK 704 RPH Word PDF batch QA
+on:
+  pull_request:
+    paths:
+      - 'tools/bm_sjk_t2_t6_rph_batch_qa.py'
+      - '.github/workflows/bm-sjk-t2-t6-batch-qa-20261124.yml'
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [2,3,4,5,6]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install python-docx reportlab pymupdf
+      - run: python -m tools.bm_sjk_t2_t6_rph_batch_qa --year ${{ matrix.year }} --out /tmp/bmsjk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bm-sjk-t${{ matrix.year }}-qa
+          path: /tmp/bmsjk
+          retention-days: 14
