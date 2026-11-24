@@ -157,7 +157,7 @@ class PSV84SourceContentTests(unittest.TestCase):
                     row = adapt_rows(state, original, preview=True)
                     self.assertIsNot(row, original)
                     self.assertEqual(row["STANDARD KANDUNGAN"], candidate["standard_descriptions"]["sk"])
-                    self.assertEqual(row["STANDARD PEMBELAJARAN"], candidate["standard_descriptions"]["sp"])
+                    self.assertEqual(row["STANDARD PEMBELAJARAN"], candidate["standard_descriptions"]["sp"].replace(" · ", "\n"))
                     self.assertEqual(row["OBJEKTIF PEMBELAJARAN"], candidate["objective"])
                     self.assertEqual(row["KRITERIA KEJAYAAN"], candidate["evidence"])
                     self.assertIn("Aktiviti 1", row["AKTIVITI UTAMA"])
