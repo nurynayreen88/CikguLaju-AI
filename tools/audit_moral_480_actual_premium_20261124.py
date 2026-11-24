@@ -27,7 +27,10 @@ def native_input(year, number):
     labels=("STANDARD KANDUNGAN","STANDARD PEMBELAJARAN",
             "OBJEKTIF PEMBELAJARAN","KRITERIA KEJAYAAN",
             "BAHAN BANTU MENGAJAR","EMK / NILAI","PENTAKSIRAN")
-    header=[{"label":"Tajuk","value":plan["title"]}]
+    header=[{"label":label,"value":value} for label,value in (
+        ("Mata Pelajaran","Pendidikan Moral"),("Tahun/Tingkatan",f"Tahun {year}"),
+        ("Tarikh",""),("Hari",""),("Masa",""),("Kelas",""),("Bilangan Murid",""),
+        ("Tajuk",plan["title"]),("PENGETAHUAN SEDIA ADA",""),("KBAT / PAK21",""))]
     header += [{"label":key,"value":get(key)} for key in labels]
     phases=[{"label":label,"activity":get(key),"notes":""} for label,key in (
         ("Set Induksi","SET INDUKSI"),("Aktiviti Utama","AKTIVITI UTAMA"),("Penutup","PENUTUP"))]
