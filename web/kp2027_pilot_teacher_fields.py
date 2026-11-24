@@ -351,14 +351,23 @@ def _pdf_personalize(original, fields):
                 document, page, safe_candidates, row_top, row_bottom,
             )
         except ValueError as exc:
-            raise TeacherFieldError(str(exc)) from exc
+            if not str(exc).startswith("Refleksi tidak muat pada fon asal 9 pt."):
+                raise TeacherFieldError(str(exc)) from exc
+            # A fixed source PDF may have too little room or a subset font
+            # without all characters. Keep the original font where possible,
+            # otherwise use a full 9-pt serif face and, if needed, continuation.
+            native_stream = None
+            native_overflow = True
+        else:
+            native_overflow = False
 
         chosen, size = None, 0.0
+        continuation = None
         if native_stream is None:
             # Older PDF templates without embedded Noto Serif still use the
             # verified safe fallback; never replace their label only halfway.
             for sentence in safe_candidates:
-                for font_size in (9.0, 8.7, 8.3, 8.0, 7.6, 7.0):
+                for font_size in ((9.0,) if native_overflow else (9.0, 8.7, 8.3, 8.0, 7.6, 7.0)):
                     scratch = fitz.open()
                     scratch_page = scratch.new_page(
                         width=page.rect.width, height=page.rect.height,
@@ -374,9 +383,18 @@ def _pdf_personalize(original, fields):
                 if chosen is not None:
                     break
             if chosen is None:
-                raise TeacherFieldError(
-                    "Refleksi terlalu panjang untuk kotak PDF. Gunakan Word atau ringkaskan."
-                )
+                # Preserve the complete manual reflection or full linked auto
+                # reflection, never truncate or invent mastery counts.
+                continuation = safe_candidates[0]
+                chosen, size = "Refleksi bersambung pada halaman seterusnya.", 9.0
+                scratch = fitz.open()
+                try:
+                    check = scratch.new_page(width=page.rect.width, height=page.rect.height)
+                    if check.insert_textbox(region, chosen, fontname="tiro", fontsize=size,
+                                            lineheight=1.05) < 0:
+                        raise TeacherFieldError("Sempadan kotak refleksi PDF tidak sah.")
+                finally:
+                    scratch.close()
         page.add_redact_annot(label_region, fill=None, cross_out=False)
         page.add_redact_annot(region, fill=None, cross_out=False)
         # Remove only the redundant KP2027 subtitle and footer (where present).
@@ -405,6 +423,16 @@ def _pdf_personalize(original, fields):
                 region, chosen, fontname="tiro",
                 fontsize=size, lineheight=1.05,
             ) < 0:
+                raise TeacherFieldError("Refleksi PDF tidak dapat dimuatkan dengan selamat.")
+        if continuation is not None:
+            # Source content and its original A4 page remain intact.
+            extra = document.new_page(width=595.28, height=841.89)
+            extra.insert_text((37, 48), "RANCANGAN PENGAJARAN HARIAN", fontname="tibo", fontsize=12)
+            extra.draw_rect(fitz.Rect(37, 64, 558, 88), color=(.48,.54,.6), fill=(.93,.95,.97), width=.6)
+            extra.insert_text((44, 80), "Refleksi (sambungan)", fontname="tibo", fontsize=9)
+            # Full-size text, with a generous A4 area for the validated limit.
+            if extra.insert_textbox(fitz.Rect(44, 96, 551, 795), continuation,
+                                    fontname="tiro", fontsize=9, lineheight=1.2) < 0:
                 raise TeacherFieldError("Refleksi PDF tidak dapat dimuatkan dengan selamat.")
         data = document.tobytes(garbage=4, deflate=True)
         if not data.startswith(b"%PDF-"):
