@@ -94,7 +94,7 @@ def _extract_year2(source, lesson, ps):
     # Exact structure of staging/matematik_sjkc/tahun_2/build_word.py.
     # Rows without a header: standards/references, objective, induction,
     # two main activities, PBD activity, closure and materials (7 total).
-    if (len(ps) != 5 or not re.match(r"^PdP\\s+%03d\\b" % lesson["pdp"], ps[0])
+    if (len(ps) != 5 or not ps[0].startswith("PdP %03d  ·  " % lesson["pdp"])
             or ps[1] != lesson["topic"]
             or not ps[2].startswith("Unit " + str(lesson["unit_number"]) + " ")
             or not ps[3].startswith("日期 Tarikh ")
