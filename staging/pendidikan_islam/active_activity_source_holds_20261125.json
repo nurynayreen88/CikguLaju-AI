@@ -1,0 +1,19 @@
+{
+  "status": "QA_HOLD_NOT_FOR_RUNTIME",
+  "records": [
+    {
+      "id": 1473,
+      "year": 3,
+      "pdp": 87,
+      "reason": "RPT activity note mentions adab tidur but objective concerns adab menuntut ilmu; verify textbook and DSKP before drafting",
+      "source_run": 45496052502
+    },
+    {
+      "id": 1836,
+      "year": 6,
+      "pdp": 6,
+      "reason": "Objective cites Al-Shura verses 33–77; surah has 53 verses. Verify correct intended range and any following surah against source, do not guess.",
+      "source_run": 45496052502
+    }
+  ]
+}
