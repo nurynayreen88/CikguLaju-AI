@@ -292,7 +292,7 @@ def adapt_rows(state, rows, *, preview=False, root=ROOT):
         "TAHUN/TINGKATAN": f"Tahun {year}",
         "TAJUK": plan["title"],
         "STANDARD KANDUNGAN": plan["standard_descriptions"]["sk"],
-        "STANDARD PEMBELAJARAN": plan["standard_descriptions"]["sp"],
+        "STANDARD PEMBELAJARAN": plan["standard_descriptions"]["sp"].replace(" · ", "\n"),
         "OBJEKTIF PEMBELAJARAN": plan["objective"],
         "KRITERIA KEJAYAAN": plan["evidence"],
         "SET INDUKSI": s["set induksi"],

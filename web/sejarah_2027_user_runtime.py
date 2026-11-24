@@ -118,6 +118,13 @@ def adapt_rows(state, rows, *, root=ROOT):
         return rows
     r = row["rph"]
     focus = r["textbook_reference"]["checked_focus_pages"]["printed_page_range"]
+    # The source BBM first clause is only the broad unit page range;
+    # use the checked lesson focus instead and retain every source teaching aid.
+    first, separator, aids = r["bbm"].partition(";")
+    if not separator or not first.startswith("Buku Teks Sejarah"):
+        aids = r["bbm"]
+    aids = aids.strip()
+    bbm = f"Buku Teks Sejarah Tahun {row['year']}, hlm. {focus}; {aids}"
     values = "; ".join(v.get("text", "") for v in r.get("values_sp", ()))
     result = dict(rows)
     result.update({
@@ -125,12 +132,11 @@ def adapt_rows(state, rows, *, root=ROOT):
         "TAHUN/TINGKATAN": f"Tahun {row['year']}",
         "TAJUK": f"{row['unit_title']} (DRAF)",
         "STANDARD KANDUNGAN": f"{r['sk']} — {r['sk_title']}",
-        "STANDARD PEMBELAJARAN": row["sp_text"],
+        "STANDARD PEMBELAJARAN": row["sp_text"].replace(" · ", "\n"),
         "OBJEKTIF PEMBELAJARAN": "; ".join(r["objective"]),
         "KRITERIA KEJAYAAN": r["success_criteria"],
         "PENGETAHUAN SEDIA ADA": "Pengetahuan murid tentang " + row["unit_title"],
-        "BAHAN BANTU MENGAJAR": (f"Buku Teks Sejarah Tahun {row['year']}, "
-                                f"rujukan isi PdP hlm. {focus}; bahan seperti dalam RPH"),
+        "BAHAN BANTU MENGAJAR": bbm,
         "EMK / NILAI": values or "Patriotisme; hormat dan kerjasama",
         "KBAT / PAK21": "Kemahiran Pemikiran Sejarah: menilai bukti, membuat inferens",
         "SET INDUKSI": r["set_induksi"]["activity"],

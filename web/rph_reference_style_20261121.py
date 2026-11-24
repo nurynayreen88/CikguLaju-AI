@@ -33,6 +33,7 @@ PALETTES = {
     "muzik": "EAF5EA",
     "pendidikan jasmani dan pendidikan kesihatan": "E7F4EE",
     "pendidikan jasmani": "E7F4EE",
+    "pendidikan kesihatan": "E7F4EE",
     "pjpk": "E7F4EE",
     "pendidikan moral": "F8EAF2",
     "moral": "F8EAF2",

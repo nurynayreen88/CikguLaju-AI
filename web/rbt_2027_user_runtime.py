@@ -100,7 +100,7 @@ def adapt_rows(state, previous, *, root=ROOT):
         "TAHUN/TINGKATAN": f'Tahun {row["tahun"]}',
         "TAJUK": f'{row["unit_label"]} — {title} (DRAF UNTUK SEMAKAN)',
         "STANDARD KANDUNGAN": row["sk_description"],
-        "STANDARD PEMBELAJARAN": row["sp_description"],
+        "STANDARD PEMBELAJARAN": row["sp_description"].replace(" · ", "\n"),
         "OBJEKTIF PEMBELAJARAN": row["objektif"],
         "KRITERIA KEJAYAAN": row["kriteria_kejayaan"],
         "PENGETAHUAN SEDIA ADA": f'Pengalaman murid berkaitan {row["unit_label"]}.',

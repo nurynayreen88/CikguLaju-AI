@@ -61,7 +61,7 @@ class TestProvisionalPSV(unittest.TestCase):
                     self.assertIsNotNone(source)
                     rows = ns["_rph_rows"](chosen, "irrelevant AI text")
                     self.assertEqual(rows["STANDARD KANDUNGAN"], source["standard_descriptions"]["sk"])
-                    self.assertEqual(rows["STANDARD PEMBELAJARAN"], source["standard_descriptions"]["sp"])
+                    self.assertEqual(rows["STANDARD PEMBELAJARAN"], source["standard_descriptions"]["sp"].replace(" · ", "\n"))
                     self.assertEqual(rows["OBJEKTIF PEMBELAJARAN"], source["objective"])
                     self.assertEqual(rows["KRITERIA KEJAYAAN"], source["evidence"])
                     self.assertIn("Aktiviti 1", rows["AKTIVITI UTAMA"])
@@ -84,7 +84,7 @@ class TestProvisionalPSV(unittest.TestCase):
                 out = bridge.adapt_rows(state, base)
                 self.assertTrue(out["REFLEKSI"].startswith("____ / ____ murid mencapai sasaran:"), (year, number, out["REFLEKSI"]))
                 self.assertEqual(out["AKTIVITI UTAMA"], "Aktiviti 1\n" + plan["stages"]["aktiviti 1"] + "\n\nAktiviti 2\n" + plan["stages"]["aktiviti 2"])
-                self.assertEqual(out["STANDARD PEMBELAJARAN"], plan["standard_descriptions"]["sp"])
+                self.assertEqual(out["STANDARD PEMBELAJARAN"], plan["standard_descriptions"]["sp"].replace(" · ", "\n"))
                 self.assertEqual(bridge.adapt_rows({**state, "rph_teacher_reflection": "Catatan guru."}, base)["REFLEKSI"], "Catatan guru.")
                 self.assertEqual(bridge.adapt_rows({**state, "rph_reflection_mode": "manual"}, base)["REFLEKSI"], "")
                 self.assertEqual(base["REFLEKSI"], "____ / ____ murid mencapai objektif.")
@@ -129,7 +129,7 @@ class TestProvisionalPSV(unittest.TestCase):
                     cid, "psv27pick|%d|001" % year), ("class", cid))
                 plan = strict.load_candidate(year, 1, preview=True)
                 rows = ns["_rph_rows"](ns["state"][cid], "rph")
-                self.assertEqual(rows["STANDARD PEMBELAJARAN"], plan["standard_descriptions"]["sp"])
+                self.assertEqual(rows["STANDARD PEMBELAJARAN"], plan["standard_descriptions"]["sp"].replace(" · ", "\n"))
         # KP2027 Year1 and secondary remain on their previous routes.
         self.assertEqual(ns["subjects"](301, "Tahun 1"),
                          ("original_subjects", "Tahun 1"))
