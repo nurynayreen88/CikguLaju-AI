@@ -87,13 +87,15 @@ def payload(year,r,alternative=False):
             r[k]=r["alternative"].get(k)
     name,model,practice,assessment,bbm=profile(r)
     focus=r["focus"]
-    # The current Year 6 DSKP does not independently assess seni bahasa.
-    # Observe the supporting language skills only; no standalone arts TP.
-    if year==6 and any(k.startswith("4.") for k in r["sk"]):
+    # DSKP arts language supports learning and assessment of the corresponding
+    # language skills. It must not receive an independent proficiency level.
+    if any(k.startswith("4.") for k in r["sk"]):
         if all(k.startswith("4.") for k in r["sk"]):
             assessment="Berikan maklum balas pembelajaran terhadap hasil bahasa murid. Aspek seni bahasa menyokong kemahiran bahasa dan tidak diberikan TP tersendiri."
         else:
             assessment+=" Rekod PBD hanya bagi kemahiran bahasa yang berkaitan, bukan TP tersendiri bagi seni bahasa."
+    if any(k.startswith("5.") for k in r["sk"]):
+        assessment+=" Rekod penguasaan tatabahasa melalui kemahiran bahasa berkaitan mengikut kesesuaian tugasan."
     page=r.get("textbook_page")
     wb=workbook_text(r.get("workbook"))
     references=[]
