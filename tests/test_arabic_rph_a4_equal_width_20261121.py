@@ -66,7 +66,7 @@ def test_approved_arabic_word_renders_physical_equal_width_a4(tmp_path):
     assert all(abs(x-187)<1 for x in widths)
     assert document.tables[0].rows[1].cells[2].text == ""
     identity = document.tables[0].rows[0].cells[0].text
-    for token in ("المدرسة", "الفصل", "الصف والحصّة"):
+    for token in ("المدرسة", "الفصل", "الصف"):
         assert token in identity
 
     isolated_profile = (tmp_path / "lo-profile").as_uri()

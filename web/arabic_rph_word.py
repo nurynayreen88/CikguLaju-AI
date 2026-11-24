@@ -92,7 +92,6 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     title.paragraph_format.space_after = Pt(4)
     numerals = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
     year = str(plan["year"]).translate(numerals)
-    lesson = f"{plan['lesson']:03d}".translate(numerals)
     pages = plan["pages"].replace(" & ", " و").translate(numerals)
     # A4 printable width is 18.70 cm (21 cm minus two 1.15 cm margins).
     # Restore the owner-approved example: 9.95 cm identity on the RIGHT,
@@ -100,7 +99,7 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     # Keep the single full-width 18.7 cm outer border; do not change SK/SP
     # and do not duplicate curriculum identity in the details table.
     identity_rows = (
-        ("الصف والحصّة", f"الصفّ {year} • الحصّة {lesson}"),
+        ("الصف", year),
         ("الوحدة", plan["topic"]),
         ("موضوع الدرس", plan["focus"]),
     )

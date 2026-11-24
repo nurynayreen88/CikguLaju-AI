@@ -264,7 +264,10 @@ def main():
                for row in doc.tables[1].rows},
         }
         number_ar = f"{pdp:03d}".translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩"))
-        assert number_ar in doc.tables[0].rows[0].cells[0].text
+        identity = doc.tables[0].rows[0].cells[0].text
+        assert number_ar not in identity
+        assert "الحصّة" not in identity and "الحصة" not in identity
+        assert "الصف:\t٢" in identity
         assert sp in fields["معيار التعلّم"]
         assert "DRAF" not in "".join(cell.text for table in doc.tables
                                      for row in table.rows for cell in row.cells)
