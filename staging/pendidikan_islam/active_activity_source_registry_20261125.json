@@ -48,8 +48,10 @@
   ],
   "previous_evidence": "PR #443 provides prior source review records only; no automatic academic approval or activation of legacy 696.",
   "current_batch": {
-    "count": 8,
+    "count": 128,
     "academic_source_page_approval": 0,
-    "render_check": "FAILED run 45491922229: candidate title absent in Word for T2 PdP002; hold until corrected."
+    "render_check": "PASS run 45497371776: 128 native Word/PDF outputs; Word non-activity cells and table layout unchanged; PDF A4 single page. Visual academic review remains outstanding.",
+    "render_run": 45497371776,
+    "manual_source_holds": 3
   }
 }
