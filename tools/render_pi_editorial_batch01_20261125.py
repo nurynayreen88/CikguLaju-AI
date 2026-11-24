@@ -36,27 +36,13 @@ def main():
     tmp,db=database()
     root=Path("qa/pi-editorial-batch01")
     root.mkdir(parents=True,exist_ok=True)
-    payload=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch01_20261125.json").read_text(encoding="utf8"))
-    assert payload["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
-    batch02=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch02_20261125.json").read_text(encoding="utf8"))
-    assert batch02["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
-    payload["records"]+=batch02["records"]
-    batch03=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch03_20261125.json").read_text(encoding="utf8"))
-    assert batch03["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
-    payload["records"]+=batch03["records"]
-    batch04=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch04_20261125.json").read_text(encoding="utf8"))
-    assert batch04["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
-    payload["records"]+=batch04["records"]
-    batch05=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch05_20261125.json").read_text(encoding="utf8"))
-    assert batch05["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
-    payload["records"]+=batch05["records"]
-    batch06=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch06_20261125.json").read_text(encoding="utf8"))
-    assert batch06["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
-    payload["records"]+=batch06["records"]
-    batch07=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch07_20261125.json").read_text(encoding="utf8"))
-    assert batch07["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
-    payload["records"]+=batch07["records"]
-    assert len({item["id"] for item in payload["records"]})==111
+    records=[]
+    for batch_file in sorted(Path("staging/pendidikan_islam").glob("active_activity_editorial_batch*_20261125.json")):
+        batch=json.loads(batch_file.read_text(encoding="utf8"))
+        assert batch["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
+        records.extend(batch["records"])
+    assert len(records)>=128 and len({item["id"] for item in records})==len(records)
+    payload={"records":records}
     original=runtime._rph_rows
     original_document=getattr(runtime,"_rph_document_rows",None)
     try:
@@ -151,7 +137,7 @@ def main():
                 if callable(original_document): runtime._rph_document_rows=original_document
                 if isinstance(native_globals,dict): native_globals.update(prior_globals)
         (root/"report.json").write_text(json.dumps(reports,indent=2),encoding="utf8")
-        assert len(reports)==111
+        assert len(reports)==len(records)
     finally:
         runtime._rph_rows=original
         if callable(original_document): runtime._rph_document_rows=original_document
