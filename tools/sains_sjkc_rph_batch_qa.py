@@ -33,6 +33,13 @@ def records(year):
         return
     bank=load(DATA/f"year{year}_activity_bank_20261124.json")
     assert bank["status"]=="QA_NOT_PUBLISHED" and bank["year"]==year
+    descriptions=load(DATA/f"year{year}_standards_20261124.json")
+    assert descriptions["status"]=="EDITORIAL_LABELS_QA_ONLY" and descriptions["year"]==year
+    assert descriptions["source_git_blob"]==bank["source_git_blob"]
+    assert set(descriptions["sk"])=={k for r in originals for k in r["sk"]}
+    assert set(descriptions["sp"])=={k for r in originals for k in r["sp"]}
+    assert all(v.strip() for v in descriptions["sk"].values())
+    assert all(v["description"].strip() for v in descriptions["sp"].values())
     for original,b in zip(originals,bank["records"],strict=True):
         assert all(b[k]==original[k] for k in ("pdp","unit_number","topic"))
         assert b["source_focus"]==original["focus"] and not b["ready"]
@@ -52,7 +59,9 @@ def records(year):
           extension="学生运用本课方法处理另一项教师选定的安全实例，并说明理由。",
           closure="学生分享本课发现，教师依据学习重点总结并给予反馈。",
           reflection="达到学习标准的学生人数：　尚未达到的学生人数：　后续教学按实际表现安排。",
-          sk_display=r["sk"],sp_display=r["sp"],standard_status="PENDING_OFFICIAL_DSKP_TEXT")
+          sk_display=[k+" "+descriptions["sk"][k] for k in r["sk"]],
+          sp_display=[k+" "+descriptions["sp"][k]["description"] for k in r["sp"]],
+          standard_status="EDITORIAL_LABELS_PENDING_INDEPENDENT_DSKP_CHECK")
         yield r
 
 def rows(r):
@@ -128,7 +137,7 @@ def export(out,year):
         doc=Document(BytesIO(payload))
         assert len(doc.tables)==2
         text=" ".join(c.text for t in doc.tables for row in t.rows for c in row.cells)
-        assert all(k in text for k in r["sp"])
+        assert all(k in text for k in r["sk_display"]+r["sp_display"])
         assert all(a["body"] in text for a in r["activities"])
         assert all(any(run.bold and run.text.startswith(a["title"]) for t in doc.tables for row in t.rows for c in row.cells for p in c.paragraphs for run in p.runs) for a in r["activities"])
         name=f"CIKGULAJU_SAINS_SJKC_T{year}_PDP{r['pdp']:03d}_QA.docx"
