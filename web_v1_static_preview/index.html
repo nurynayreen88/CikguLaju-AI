@@ -1031,7 +1031,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  </div>
 </div>
 <button type="button" id="rph-variant-rpt" hidden>Buka RPT 2027</button>
-<label for="kp2027-pilot-group" id="kp2027-pilot-group-label" hidden>Kumpulan</label><select id="kp2027-pilot-group" hidden disabled><option value="A">Kumpulan A</option><option value="B">Kumpulan B</option></select>
+<label for="kp2027-pilot-group" id="kp2027-pilot-group-label" hidden>Kumpulan</label><select id="kp2027-pilot-group" hidden disabled><option value="" disabled selected>Pilih Kumpulan A / B</option><option value="A">Kumpulan A</option><option value="B">Kumpulan B</option></select>
 <label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select>
 <div id="akuatik-v2-choice" hidden><label for="akuatik-v2-version">Versi RPH Akuatik</label><select id="akuatik-v2-version"><option value="V1">Versi 1 — Aktiviti asal</option><option value="V2_DARAT">Versi 2 — Aktiviti darat (tanpa kolam)</option></select></div>
 <p id="catalog-status" class="notice" role="status"></p>
@@ -1518,7 +1518,7 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
   if(curriculum.value==="kp2027"&&["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(subject.value)){
    let savedGroup="";
    try{if(teacherProfileState.loaded)savedGroup=kp2027GroupForState(JSON.parse(teacherProfileState.savedProfile||"{}").state_name);}catch(_error){}
-   if(!kp2027PilotInventory||(teacherProfileState.loaded&&savedGroup!==kp2027PilotGroup.value))
+   if(!kp2027PilotInventory||(teacherProfileState.loaded&&(savedGroup?(!kp2027PilotGroup.hidden||savedGroup!==kp2027PilotGroup.value):kp2027PilotGroup.hidden)))
     subject.dispatchEvent(new Event("change"));
   }
  }
@@ -1747,10 +1747,20 @@ function kp2027GroupForState(value){
  return "";
 }
 async function kp2027SavedSchoolGroup(){
- const response=await fetch("/api/web/teacher/profile",{credentials:"same-origin",cache:"no-store",headers:{Accept:"application/json"}});
- if(!response.ok)throw Error("Negeri sekolah belum dapat disemak. Sila cuba semula.");
- const data=await response.json();
- return kp2027GroupForState(data.profile?.state_name);
+ try{
+  const response=await fetch("/api/web/teacher/profile",{credentials:"same-origin",cache:"no-store",headers:{Accept:"application/json"}});
+  if(!response.ok)return "";
+  const data=await response.json();
+  return kp2027GroupForState(data.profile?.state_name);
+ }catch(_error){return "";}
+}
+function kp2027ApplySchoolGroup(group){
+ const automatic=group==="A"||group==="B";
+ kp2027PilotGroup.value=automatic?group:"";
+ kp2027PilotGroup.hidden=automatic;
+ kp2027PilotGroup.disabled=automatic;
+ document.getElementById("kp2027-pilot-group-label").hidden=automatic;
+ return automatic;
 }
 function resetKp2027Pilot(){
  kp2027PilotEpoch++;
@@ -2194,12 +2204,12 @@ subject.addEventListener("change",async()=>{
    if(["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(code)){
     const group=await kp2027SavedSchoolGroup();
     if(revision!==kp2027PilotEpoch||curriculum.value!=="kp2027"||subject.value!==code||year.value!=="1")return;
-    if(!group){
-     catalogStatus.textContent="Negeri sekolah belum ditetapkan.";
-     updateSelectionHelp("Sila pilih negeri sekolah dan simpan di Profil & Akses. Kumpulan RPH akan dipilih secara automatik.");
+    if(!kp2027ApplySchoolGroup(group)){
+     kp2027PilotInventory=inventory;
+     catalogStatus.textContent="Pilih Kumpulan A atau B.";
+     updateSelectionHelp("Pilih kumpulan sekolah untuk melihat Unit dan PdP. Jika negeri sekolah disimpan dalam Profil & Akses, kumpulan dipilih secara automatik.");
      return;
     }
-    kp2027PilotGroup.value=group;
    }
    kp2027PilotInventory=inventory;
    kp2027DisplayUnits();
@@ -2316,7 +2326,8 @@ topic.addEventListener("change",async()=>{
  }catch(error){if(topic.value===selected)catalogStatus.textContent=error.message;}
 });
 kp2027PilotGroup.addEventListener("change",()=>{
- if(curriculum.value==="kp2027"&&["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(subject.value)&&kp2027PilotInventory)
+ if(curriculum.value==="kp2027"&&["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(subject.value)&&kp2027PilotInventory&&
+    !kp2027PilotGroup.hidden&&["A","B"].includes(kp2027PilotGroup.value))
   kp2027DisplayUnits();
 });
 function kp2027TeacherPayload(){
