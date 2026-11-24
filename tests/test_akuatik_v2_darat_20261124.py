@@ -52,7 +52,7 @@ class AquaticV2Source(unittest.TestCase):
         for r in self.records:
             with self.subTest(year=r["year"],source_id=r["source_id"]):
                 args=(r["year"],r["source_id"])
-                word=renderer.render(*args,"word")
+                word=renderer.render(*args,"word",qa_reference=True)
                 doc=Document(BytesIO(word))
                 self.assertEqual(len(doc.tables),4)
                 text=" ".join(c.text for table in doc.tables for row in table.rows for c in row.cells)
@@ -65,7 +65,7 @@ class AquaticV2Source(unittest.TestCase):
                 self.assertIn("Kemahiran dalam air belum ditaksir",text)
                 for i in range(1,4):
                     self.assertTrue(any(run.bold and run.text.startswith(f"Aktiviti {i}") for table in doc.tables for row in table.rows for cell in row.cells for p in cell.paragraphs for run in p.runs))
-                pdf=renderer.render(*args,"pdf")
+                pdf=renderer.render(*args,"pdf",qa_reference=True)
                 with fitz.open(stream=pdf,filetype="pdf") as pages:
                     self.assertEqual(len(pages),1,"RPH must fit a single A4 without removing content")
                     self.assertAlmostEqual(pages[0].rect.width,595.28,delta=1)
@@ -77,6 +77,23 @@ class AquaticV2Source(unittest.TestCase):
         for args in [(2,"999"),(5,"025"),(1,"051")]:
             with self.assertRaises(ValueError):
                 renderer.resolve(*args)
+
+    def test_only_actual_water_required_existing_pdp_has_v2(self):
+        from web import akuatik_v2_rph as renderer
+        expected={(1,"KP2027-A-051"),(1,"KP2027-B-050"),(3,"022"),(3,"023"),(4,"026")}
+        found={(r["year"],r["source_id"]) for r in self.records if renderer.eligible_existing_pdp(r["year"],r["source_id"])}
+        self.assertEqual(found,expected)
+        self.assertFalse(self.root["menu_policy"]["enabled"])
+        for r in self.records:
+            key=(r["year"],r["source_id"])
+            if key in expected:
+                self.assertEqual(renderer.options(*key),("V1","V2_DARAT"))
+            else:
+                self.assertEqual(renderer.options(*key),("V1",))
+                with self.assertRaises(ValueError):
+                    renderer.render(*key,"pdf")
+        for key in [(4,"001"),(2,"028"),(5,"009"),(6,"026"),(1,"KP2027-A-050")]:
+            self.assertEqual(renderer.options(*key),("V1",))
 
 if __name__=="__main__":
     unittest.main()
