@@ -35,6 +35,16 @@ jobs:
           path: qa/pi-activity-quality/*.json
           if-no-files-found: warn
           retention-days: 7
+  native-editorial-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install existing Jawi runtime requirements
+        run: bash build_jawi.sh
       - name: Render all staged source-specific activities with original Word and PDF generator
         env:
           PYTHONUNBUFFERED: "1"
