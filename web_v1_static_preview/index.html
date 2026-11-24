@@ -2960,7 +2960,6 @@ rptCurriculum.addEventListener("change",()=>{
 rptYear.addEventListener("change",()=>{
  rptKp2027Group.value="";
  const rows=rptEntries(Number(rptYear.value))
-  .sort((a,b)=>subjectCollator.compare(a.item.label,b.item.label))
   .map(({item,year,curriculum:kind})=>{
    const status=year.coming_soon?" — Dalam Penyediaan":
     !year.pdf_ready?" — Belum tersedia":!year.download_enabled?" — Akses berbayar":"";
@@ -2969,7 +2968,8 @@ rptYear.addEventListener("change",()=>{
    const display=kind==="kssr"
     ?kssrSchoolLabel(item.label,school):item.label;
    return {label:display,value:item.code,option:new Option(display+status,item.code)};
-  });
+  })
+  .sort((a,b)=>subjectCollator.compare(a.label,b.label));
  resetRptSubjects(rptYear.value?"Pilih atau cari subjek":"Pilih tahun dahulu",rows);
  refreshRptDownload();
 });
