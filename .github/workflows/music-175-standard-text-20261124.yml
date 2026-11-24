@@ -29,6 +29,15 @@ jobs:
                   assert all(code+' ' in header['Standard Kandungan'] for code in row['sk'])
                   assert all(code+' ' in header['Standard Pembelajaran'] for code in row['sp'])
                   assert preview['approved_for_live'] is False
+                  assert 'PdP' not in header
+                  assert preview['layout']['activity_header'][0] == 'Fasa'
+                  assert [p['label'] for p in preview['layout']['phases']] == ['Set Induksi','Aktiviti Utama dan Pengukuhan','Penutup']
+                  import re
+                  for line in preview['layout']['phases'][1]['activity'].splitlines():
+                      if re.match(r'^(Aktiviti [12]|Pengukuhan)', line, re.I):
+                          assert not re.search(r'\(\d+\s*minit\)\s*$',line,re.I), (year,pdp,line)
+                  for key in ('act1','act2','assessment'):
+                      assert preview['phase_text'][key] in preview['layout']['phases'][1]['activity']
                   for key in ('objective','induction','act1','act2','assessment','closure','materials'):
                       assert preview['phase_text'][key].strip(), (year,pdp,key)
                   total += 1
