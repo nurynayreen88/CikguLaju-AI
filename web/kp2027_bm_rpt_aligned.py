@@ -105,28 +105,27 @@ def _reflection(r,fields):
     mode=fields.get('_reflection_mode','auto')
     if mode=='manual':return fields.get('_reflection','')
     # Do not infer mastery counts from the teacher's class size or RPT.
-    return ('PdP dijalankan berdasarkan kriteria kejayaan: '+r['criteria']+' '
-            'Bilangan murid menguasai:    Bilangan murid belum menguasai:    '
+    return (r['criteria']+'\n'
+            'Bilangan murid menguasai:        Bilangan murid belum menguasai:        \n'
             'Tindakan susulan: '+r['remedial'])
 
 def _activity_titles(r):return [f'Aktiviti 1 – {r["title"]}','Aktiviti 2 – Bimbingan dan Kerjasama','Aktiviti 3 – Aplikasi Individu']
 
 def _docx(r,fields):
     from docx import Document
-    from docx.shared import Cm, Pt, RGBColor
+    from docx.shared import Cm, Pt, Twips
     from docx.enum.table import WD_TABLE_ALIGNMENT
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
     d=Document();sec=d.sections[0]
     sec.page_width=Cm(21);sec.page_height=Cm(29.7)
     sec.left_margin=Cm(1.25);sec.right_margin=Cm(1.25);sec.top_margin=Cm(1.05);sec.bottom_margin=Cm(1.0)
-    d.styles['Normal'].font.name='Aptos';d.styles['Normal'].font.size=Pt(8.3)
+    d.styles['Normal'].font.name='Arial';d.styles['Normal'].font.size=Pt(9)
+    d.styles['Normal'].paragraph_format.space_after=Pt(0)
     def para(text,size=9,bold=False):
         p=d.add_paragraph();p.alignment=1;p.paragraph_format.space_after=Pt(3)
-        q=p.add_run(text);q.bold=bold;q.font.size=Pt(size);q.font.name='Aptos'
-    para('BAHASA MELAYU SK  •  TAHUN 1',9,True)
+        q=p.add_run(text);q.bold=bold;q.font.size=Pt(size);q.font.name='Arial'
     para('RANCANGAN PENGAJARAN HARIAN',14,True)
-    para(f'KUMPULAN {r["group"]}  •  PdP {r["lesson"]:03d}  •  {r["title"]}',9,True)
     def sh(cell,fill):
         tc=cell._tc.get_or_add_tcPr();node=OxmlElement('w:shd');node.set(qn('w:fill'),fill);tc.append(node)
     def grid(cell):
@@ -134,14 +133,24 @@ def _docx(r,fields):
         for side in ('top','left','bottom','right'):
             item=OxmlElement('w:'+side);item.set(qn('w:val'),'single');item.set(qn('w:sz'),'5');item.set(qn('w:color'),'BAC7D0');bd.append(item)
         tc.append(bd)
-    head=d.add_table(rows=2,cols=4);head.autofit=False;head.alignment=WD_TABLE_ALIGNMENT.CENTER
-    for col,w in zip(head.columns,[2.1,7.2,2.1,7.1]):col.width=Cm(w)
-    pairs=[(('Kelas',_safe_value(fields,'Kelas:')),('Tarikh',_safe_value(fields,'Tarikh:'))),
-           (('Masa',_safe_value(fields,'Masa:')),('Bil. Murid',_safe_value(fields,'Bil. Murid:')))]
-    for j,pair in enumerate(pairs):
-        for k,(label,value) in enumerate(pair):
-            hc=head.cell(j,2*k);hc.text=label;sh(hc,'F2F5F7');grid(hc)
-            vc=head.cell(j,2*k+1);vc.text=value;grid(vc)
+    head=d.add_table(rows=1,cols=2);head.autofit=False;head.alignment=WD_TABLE_ALIGNMENT.CENTER
+    # Use the exact same total twip width as the main grid.
+    left=Cm(11.5).twips;right=Cm(4.45).twips+Cm(14.05).twips-left
+    for col,w in zip(head.columns,[left,right]):col.width=Twips(w)
+    hero,info=head.rows[0].cells
+    hero.width=Twips(left);info.width=Twips(right)
+    sh(hero,'DBE8F5');sh(info,'EDF3FA');grid(hero);grid(info)
+    for j,(value,bold,size) in enumerate((
+        ('BAHASA MELAYU SK • TAHUN 1',True,11),
+        (f'PdP {r["lesson"]:03d} • Kumpulan {r["group"]}',True,9),
+        (r['title'],False,9),
+    )):
+        p=hero.paragraphs[0] if j==0 else hero.add_paragraph()
+        q=p.add_run(value);q.bold=bold;q.font.size=Pt(size)
+    for j,label in enumerate(('Kelas:','Tarikh:','Masa:','Bil. Murid:')):
+        p=info.paragraphs[0] if j==0 else info.add_paragraph()
+        p.add_run(label+' ').bold=True
+        p.add_run(_safe_value(fields,label))
     d.add_paragraph().paragraph_format.space_after=Pt(0)
     rows=[('Kandungan / Tajuk',r['unit']+' • '+r['title']),
       ('Standard Kandungan (SK)',r['sk_code']+' '+r['sk']),
@@ -157,7 +166,7 @@ def _docx(r,fields):
     t.columns[0].width=Cm(4.45);t.columns[1].width=Cm(14.05)
     for j,(label,value) in enumerate(rows):
         c0,c1=t.rows[j].cells;c0.width=Cm(4.45);c1.width=Cm(14.05)
-        c0.text=label;sh(c0,'F4EDE6');grid(c0);grid(c1)
+        c0.text=label;sh(c0,'EDF3FA');grid(c0);grid(c1)
         for p in c0.paragraphs:
             for run in p.runs:run.bold=True
         if value is not None:c1.text=value
@@ -171,13 +180,46 @@ def _docx(r,fields):
     return buffer.getvalue()
 
 def _pdf(r,fields):
-    import fitz
-    raw=lambda s:escape(str(s),quote=True)
-    header_rows=[[('Kelas',_safe_value(fields,'Kelas:')),('Tarikh',_safe_value(fields,'Tarikh:'))],
-                 [('Masa',_safe_value(fields,'Masa:')),('Bil. Murid',_safe_value(fields,'Bil. Murid:'))]]
-    head='<table class="head" width="100%">'+''.join('<tr>'+''.join('<th width="12%" bgcolor="#F2F5F7">'+raw(a)+'</th><td width="38%">'+raw(b)+'</td>' for a,b in row)+'</tr>' for row in header_rows)+'</table>'
-    steps=''.join('<p><b>'+raw(t)+'</b><br/>'+raw(body)+'</p>' for t,body in zip(_activity_titles(r),r['activities']))
-    steps+='<p>'+raw(r['hint'])+'</p>'
+    # Explicit physical widths and fills; no HTML table auto-sizing.
+    from reportlab import __file__ as reportlab_file
+    from reportlab.lib import colors
+    from reportlab.lib.enums import TA_CENTER
+    from reportlab.lib.styles import ParagraphStyle
+    from reportlab.pdfbase import pdfmetrics
+    from reportlab.pdfbase.ttfonts import TTFont
+    from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, Spacer
+    fonts=Path(reportlab_file).parent/'fonts'
+    for name,filename in (('CikguBmRegular','Vera.ttf'),('CikguBmBold','VeraBd.ttf')):
+        if name not in pdfmetrics.getRegisteredFontNames():
+            pdfmetrics.registerFont(TTFont(name,str(fonts/filename)))
+    pdfmetrics.registerFontFamily('CikguBmRegular',normal='CikguBmRegular',bold='CikguBmBold')
+    ink=colors.HexColor('#253748')
+    tone=colors.HexColor('#EDF3FA');strong=colors.HexColor('#DBE8F5')
+    border=colors.HexColor('#BAC7D0')
+    normal=ParagraphStyle('BmText',fontName='CikguBmRegular',fontSize=8.5,leading=10.8,textColor=ink)
+    label=ParagraphStyle('BmLabel',parent=normal,fontName='CikguBmBold')
+    title=ParagraphStyle('BmTitle',parent=label,fontSize=14,leading=17,alignment=TA_CENTER)
+    hero=ParagraphStyle('BmHero',parent=normal,fontSize=10,leading=13)
+    def raw(value):return escape(str(value),quote=False).replace('\n','<br/>')
+    def para(value,style=normal):return Paragraph(raw(value),style)
+    def table(rows,widths):
+        t=Table(rows,colWidths=widths,hAlign='CENTER',splitByRow=1)
+        t.setStyle(TableStyle([('GRID',(0,0),(-1,-1),.55,border),
+            ('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),7),
+            ('RIGHTPADDING',(0,0),(-1,-1),7),('TOPPADDING',(0,0),(-1,-1),4),
+            ('BOTTOMPADDING',(0,0),(-1,-1),4)]))
+        return t
+    identity=Paragraph('<b>BAHASA MELAYU SK • TAHUN 1</b><br/>'
+        +raw(f'PdP {r["lesson"]:03d} • Kumpulan {r["group"]}')+'<br/>'+raw(r['title']),hero)
+    info=Paragraph('<br/>'.join('<b>'+raw(k)+'</b> '+raw(_safe_value(fields,k))
+        for k in ('Kelas:','Tarikh:','Masa:','Bil. Murid:')),normal)
+    header=table([[identity,info]],[324,197])
+    header.setStyle(TableStyle([('BACKGROUND',(0,0),(0,0),strong),('BACKGROUND',(1,0),(1,0),tone)]))
+    steps=[]
+    for heading,body in zip(_activity_titles(r),r['activities']):
+        steps.append(Paragraph('<b>'+raw(heading)+'</b><br/>'+raw(body),normal))
+        steps.append(Spacer(1,2))
+    steps.append(para(r['hint']))
     rows=[('Kandungan / Tajuk',r['unit']+' • '+r['title']),
       ('Standard Kandungan (SK)',r['sk_code']+' '+r['sk']),
       ('Standard Pembelajaran (SP)',r['sp_code']+' '+r['sp']),
@@ -188,25 +230,11 @@ def _pdf(r,fields):
       ('Aktiviti Utama',None),('Pengukuhan / PBD',r['pbd']),('Penutup',r['closure']),
       ('Pemulihan',r['remedial']),('Pengayaan',r['extension']),
       ('Refleksi',_reflection(r,fields))]
-    body=''.join('<tr><th width="24%" bgcolor="#F4EDE6">'+raw(k)+'</th><td width="76%">'+(steps if v is None else raw(v))+'</td></tr>' for k,v in rows)
-    html=f'''<html><head><style>body{{font-family:Arial,sans-serif;font-size:9pt;color:#253748;}}
-    .top{{text-align:center;font-size:8pt;font-weight:bold;margin:0;}}
-    h1{{font-size:14pt;text-align:center;margin:4px 0;}}
-    h2{{font-size:9pt;text-align:center;margin:3px 0 10px 0;}}
-    table{{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:8px;}}
-    th,td{{font-size:8pt;text-align:left;vertical-align:top;padding:4px 6px;border:0.5pt solid #b7c7d2;}}
-    .head th{{background:#f2f5f7;width:11%;}}.head td{{width:39%;}}
-    .main th{{background:#f4ede6;width:24%;}}.main td{{width:76%;}}
-    .main p{{margin:0 0 4px 0;}}.foot{{font-size:7pt;color:#4a5b6d;margin:6px 0;}}
-    </style></head><body><p class="top">BAHASA MELAYU SK • TAHUN 1</p>
-    <h1>RANCANGAN PENGAJARAN HARIAN</h1><h2>KUMPULAN {raw(r['group'])} • PdP {r['lesson']:03d} • {raw(r['title'])}</h2>
-    {head}<table width="100%" class="main">{body}</table>
-    </body></html>'''
-    out=BytesIO();w=fitz.DocumentWriter(out)
-    story=fitz.Story(html)
-    def page_rect(page,filled):return fitz.Rect(0,0,595.28,841.89),fitz.Rect(31,30,564,810),None
-    try:story.write(w,page_rect)
-    finally:w.close()
+    body=table([[para(k,label),steps if v is None else para(v)] for k,v in rows],[125,396])
+    body.setStyle(TableStyle([('BACKGROUND',(0,0),(0,-1),tone)]))
+    out=BytesIO()
+    doc=SimpleDocTemplate(out,pagesize=(595.28,841.89),leftMargin=31,rightMargin=31,topMargin=23,bottomMargin=23)
+    doc.build([para('RANCANGAN PENGAJARAN HARIAN',title),Spacer(1,5),header,Spacer(1,6),body])
     result=out.getvalue()
     if not result.startswith(b'%PDF-'):raise Unavailable('PDF RPH tidak dapat disahkan')
     return result

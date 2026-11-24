@@ -147,6 +147,31 @@ class TestBmKp2027Rph(TestCase):
                                  "Pengayaan", "Refleksi"):
                     self.assertIn(required,text)
 
+    def test_reported_b16_uses_canonical_header_and_equal_table_widths(self):
+        from docx import Document
+        import fitz
+        rec=bm.lesson("B",16)
+        d=Document(BytesIO(bm.render("B",16,"word",{})))
+        head,body=d.tables
+        self.assertEqual(sum(c.width for c in head.rows[0].cells),
+                         sum(c.width for c in body.rows[0].cells))
+        self.assertIn("BAHASA MELAYU SK",head.cell(0,0).text)
+        self.assertIn("Bil. Murid:",head.cell(0,1).text)
+        self.assertIn("DBE8F5",head.cell(0,0)._tc.xml)
+        self.assertIn("EDF3FA",body.cell(0,0)._tc.xml)
+        with fitz.open(stream=bm.render("B",16,"pdf",{}),filetype="pdf") as pdf:
+            self.assertEqual(pdf.page_count,1)
+            page=pdf[0]
+            subject=page.search_for("BAHASA MELAYU SK")[0]
+            teacher=page.search_for("Kelas:")[0]
+            self.assertLess(subject.x0,teacher.x0)
+            self.assertLess(abs(subject.y0-teacher.y0),15)
+            text=" ".join(page.get_text().split())
+            self.assertIn(rec["sp_code"],text)
+            self.assertIn(rec["criteria"],text)
+            for activity in rec["activities"]:
+                self.assertIn(activity,text)
+
     def test_invalid_group_lesson_format_and_teacher_payload_rejected(self):
         for group,n in (("C",1),("A",179),("B",176),("B",0),("A","1")):
             with self.subTest(group=group,n=n),self.assertRaises(bm.Unavailable):
