@@ -178,6 +178,19 @@ class TeacherFields(unittest.TestCase):
                     self.assertIn(criterion.removeprefix("Murid "), reflection)
                 self.assertIn(expected, _reflection_candidates(criterion)[0])
 
+    def test_alam_song_rangkap_is_not_a_number_lesson(self):
+        from web.kp2027_pilot_teacher_fields import _reflection_candidates, _proposed_support_action
+        criterion = "Murid menyanyikan satu rangkap dengan sebutan yang jelas dan tempo yang konsisten."
+        for reflection in _reflection_candidates(criterion):
+            self.assertIn("nyanyian berpandu", reflection)
+            self.assertNotIn("kad nombor", reflection)
+            self.assertNotIn("pembilang", reflection)
+            self.assertEqual(reflection.count("____"), 2)
+            self.assertIn(criterion.removeprefix("Murid "), reflection)
+        self.assertNotIn("pembilang", _proposed_support_action("Murid membaca satu rangkap pantun.")[0])
+        self.assertNotIn("wang replika", _proposed_support_action("Murid menyatakan sentuhan yang selamat.")[0])
+        self.assertIn("pembilang", _proposed_support_action("Murid menulis angka dengan betul.")[0])
+
     def test_manual_reflection_overrides_criterion_based_auto_text(self):
         for fmt, original in (("word", word_fixture()), ("pdf", pdf_fixture())):
             with self.subTest(fmt=fmt):
