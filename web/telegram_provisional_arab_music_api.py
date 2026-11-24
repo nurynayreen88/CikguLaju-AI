@@ -281,6 +281,11 @@ def _arab_word(selected,teacher,dest):
         from web.arabic_rph_word import render_arabic_word
         render_arabic_word(selected["arabic"], metadata, reflection, dest)
         return dest
+    if selected["year"] in (4, 5, 6):
+        from tools.arabic_178_draft_shared_layout_20261124 import render
+        row = _arab_index()[(selected["year"], selected["lesson"])]
+        render(row, {}, dest, teacher=metadata, manual_reflection=reflection, include_candidate=False)
+        return dest
     cls,dt,tm,pupils,day = metadata
     generated=render_one(selected["source"],dest)
     if not generated["valid_struct"] or not generated["arabic"]:

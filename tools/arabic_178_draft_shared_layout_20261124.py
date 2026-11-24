@@ -25,13 +25,16 @@ BANK = ROOT / "audits/arabic_draft_y4_y6_sp_candidate_bank_20261124.json"
 INDEX = ROOT / "rpt_2027/bahasa_arab/rpt_2027_KUMPULAN_A_INDEKS_PDP_DRAF.csv"
 COUNTS = {4: 58, 5: 60, 6: 60}
 
-def render(row, bank, dest):
+def render(row, bank, dest, *, teacher=None, manual_reflection='', include_candidate=True):
     year, pdp = int(row["tahun"]), int(row["pdp"])
     path = SOURCE / f"year{year}/lesson_{pdp:03d}.md"
     raw = path.read_text(encoding="utf-8")
     _, f = fields(raw)
     assert display_sk_sp(first(f, "DSKP SK/SP", "Kod SK/SP", "SK/SP cadangan")) == f"{row['sk']} / {row['sp']}"
-    statement = bank[str(year)]["entries"][row["sp"]]["text"]
+    statement = bank[str(year)]["entries"][row["sp"]]["text"] if include_candidate else ""
+    cls, dt, tm, pupils, _ = teacher or ("", "", "", "", "")
+    from datetime import date
+    lesson_date = date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else ""
     doc = Document()
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Cm(21), Cm(29.7)
@@ -41,7 +44,7 @@ def render(row, bank, dest):
     _paragraph(title, "خطة التدريس اليومية لمادة اللغة العربية", bold=True, size=17, centered=True)
     title.paragraph_format.space_after = Pt(4)
     header = _table(doc, (9.95, 3.25, 5.5), [
-        ("", "الفصل", ""), ("", "التاريخ", ""), ("", "الوقت", ""), ("", "عدد التلاميذ", "")
+        ("", "الفصل", cls or ""), ("", "التاريخ", lesson_date), ("", "الوقت", tm or ""), ("", "عدد التلاميذ", pupils or "")
     ], align_right=True, teacher_left=True)
     cell = header.cell(0, 0).merge(header.cell(3, 0))
     for p in list(cell.paragraphs)[1:]:
@@ -60,7 +63,7 @@ def render(row, bank, dest):
         _paragraph(p, f"{label}:\t{value}", bold=i == 0, size=11)
     details = [
         ("معيار المحتوى", row["sk"]),
-        ("معيار التعلّم", row["sp"] + " " + statement),
+        ("معيار التعلّم", (row["sp"] + " " + statement).strip()),
         ("هدف التعلّم", first(f, "Objektif PdP", "Objektif pembelajaran", "Objektif")),
         ("معيار النجاح", first(f, "Kriteria kejayaan")),
     ]
@@ -97,6 +100,8 @@ def render(row, bank, dest):
         evidence = objective if generic else criterion
         if evidence:
             reflection = "____ / ____ murid mencapai sasaran: " + evidence.rstrip(".") + ". Baki dibimbing semula."
+    if manual_reflection:
+        reflection = manual_reflection
     footer = [
         ("الوسائل التعليمية", first(f, "BBM")),
         ("المرجع", row["halaman_buku"]),
@@ -115,7 +120,7 @@ def render(row, bank, dest):
                         sz = rpr.find(qn("w:szCs"))
                         if sz is not None:
                             sz.set(qn("w:val"), "18")
-    doc.core_properties.comments = "QA ONLY; SP transcription candidate; SK statement and academic approval pending."
+    doc.core_properties.comments = ("QA ONLY; SP transcription candidate; SK statement and academic approval pending." if include_candidate else "Existing provisional source; no academic status change.")
     doc.save(dest)
     check = Document(dest)
     displayed = "\n".join(c.text for t in check.tables for r in t.rows for c in r.cells)
@@ -129,9 +134,9 @@ def render(row, bank, dest):
         paras = check.tables[2].cell(idx, 1).paragraphs
         if len(paras) > 1:
             assert any(run.bold for run in paras[0].runs)
-    if reflection != original_reflection:
+    if reflection != original_reflection and not manual_reflection:
         assert evidence.rstrip(".") in reflection
-    assert all(not r.cells[2].text for r in check.tables[0].rows)
+    assert [r.cells[2].text for r in check.tables[0].rows] == [cls or "", lesson_date, tm or "", pupils or ""]
     return {"year":year, "pdp":pdp, "sk":row["sk"], "sp":row["sp"], "source_sha256":hashlib.sha256(raw.encode()).hexdigest(), "sp_candidate":True, "sk_description_pending":True, "activity_titles":activity_titles, "reflection_linked":reflection != original_reflection, "ready":False}
 
 def main():
