@@ -28,7 +28,7 @@ def request_document(year,source_id,fmt,teacher,*,opener=None):
         or parts.query or parts.fragment or len(token)<32):
         raise NativeRPHUnavailable("Aquatics source not configured")
     payload={"year":year,"source_id":source_id,"format":fmt,
-             "teacher":{k:str(teacher.get(k) or "") for k in ("class","date","time","students")}}
+             "teacher":{k:str(teacher.get(k) or "") for k in ("class","date","time","students","reflection")}}
     req=Request(base.rstrip("/")+"/internal/rph/v1/akuatik-v2/render",
         data=json.dumps(payload).encode(),method="POST",headers={
             "Authorization":"Bearer "+token,"Content-Type":"application/json","Accept":MIMES[fmt]})
