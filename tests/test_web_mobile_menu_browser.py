@@ -227,13 +227,22 @@ class PhoneMenuLayoutTests(unittest.TestCase):
             }""")
             self.assertEqual(m,{"display":"flex","direction":"column"})
             self.assertFalse(page.locator("#sidebar-more").evaluate("(node)=>node.open"))
+            # The admin sidebar button is deliberately hidden: admin now
+            # resides above the workspace in Pusat Admin. Simulate the same
+            # authorized UI state without creating a live account.
             page.evaluate("""() => {
               const admin=document.getElementById("web-admin-tab");
+              const top=document.getElementById("web-admin-top");
               admin.hidden=false;
+              top.hidden=false;
+              top.open=true;
               admin.click();
             }""")
-            expect(page.get_by_role("button",name="Analisis Admin")).to_have_attribute("aria-current","page")
-            expect(page.locator("#web-admin-heading")).to_be_focused()
+            expect(page.locator("#web-admin-top")).to_be_visible()
+            expect(page.locator("#web-admin-top summary")).to_contain_text("Pusat Admin")
+            expect(page.locator("#web-admin-tab")).to_be_hidden()
+            expect(page.locator("#web-admin-tab")).to_have_attribute("aria-current","page")
+            expect(page.locator("#web-admin-heading")).to_be_visible()
         finally:
             page.close()
 
