@@ -117,13 +117,18 @@ def build_staging_preview(root, year, pdp):
     learning = [bank["sp"][code] for code in sp]
     standards = list(dict.fromkeys(entry["sk"] for entry in learning))
     sk_text = "; ".join(f"{code} {bank['sk'][code]}" for code in standards)
-    sp_text = "; ".join(f"{code} {entry['description']}" for code, entry in zip(sp, learning, strict=True))
+    sp_text = "\n".join(f"{code} {entry['description']}" for code, entry in zip(sp, learning, strict=True))
     # The combined blank writing lines in the source are not teaching content.
     footer_values = {
         label.casefold(): value
         for label, value in items
         if value.strip(" _-—\n\t")
     }
+    # Keep source-specific success evidence in the automatic reflection.
+    # Prefer a complete criterion; use the source objective if no criterion exists.
+    target = criteria if criteria.strip(" —_") else labels["objective"][1]
+    target = re.sub(r"^Murid\s+(?:dapat\s+)?", "", target.strip(), flags=re.I).rstrip(". ")
+    reflection = footer_values.get("refleksi", "") or "____ / ____ murid: " + target + ". Baki dibimbing."
     metadata = [
         ("Nama Guru", ""), ("Nama Sekolah", ""), ("Tarikh", ""), ("Hari", ""),
         ("Masa", ""), ("Kelas", ""), ("Bilangan Murid", ""), ("Tahun", str(year)),
@@ -147,7 +152,7 @@ def build_staging_preview(root, year, pdp):
         ],
         "footer": [
             {"label": "Pemulihan / Pengayaan", "value": footer_values.get("pemulihan / pengayaan", "")},
-            {"label": "Refleksi", "value": footer_values.get("refleksi", "")},
+            {"label": "Refleksi", "value": reflection},
         ],
     }
     # This asserts only pedagogical phase fidelity, NOT full document conversion.
