@@ -1177,5 +1177,53 @@
         "K1.2.8"
       ]
     }
-  }
+  },
+  "coverage_reallocation_candidates": {
+    "A1.2.4": {
+      "primary": "P1.2.1",
+      "evidence": "Murid memilih pola langkah yang mampu dilakukan dan mencuba dengan yakin; guru memerhati keyakinan tanpa paksaan."
+    },
+    "A1.3.5": {
+      "primary": "P1.3.3",
+      "evidence": "Murid melakukan satu rangkaian empat kiraan bersama pasangan dalam zon selamat."
+    },
+    "A1.4.1": {
+      "primary": "P1.4.2",
+      "evidence": "Murid mengenal pasti dan memakai pakaian yang sesuai sebelum latihan imbangan."
+    },
+    "A2.1.7": {
+      "primary": "P2.1.1",
+      "evidence": "Dalam permainan sasaran berpasangan, murid memberi ucapan galakan tanpa mengejek keputusan."
+    },
+    "K1.1.10": {
+      "primary": "P1.1.6",
+      "evidence": "Murid memberi contoh gerak ringan, berat, kuat, lemah, kasar dan lembut secara terkawal."
+    },
+    "K1.1.7": {
+      "primary": "P1.1.3",
+      "evidence": "Murid menunjukkan arah dan aras pergerakan berdasarkan dua kad isyarat."
+    },
+    "K1.2.5": {
+      "primary": "P1.2.4",
+      "evidence": "Murid menyatakan cara membongkok atau mengayun sambil kekal di tempat."
+    },
+    "K1.2.6": {
+      "primary": "P1.2.4",
+      "evidence": "Murid menerangkan cara mengekalkan imbangan semasa melakukan gerak bukan lokomotor."
+    },
+    "K1.2.7": {
+      "primary": "P1.2.5",
+      "evidence": "Murid membezakan dua tempo ketika mengayun atau meregang setempat."
+    },
+    "K1.2.8": {
+      "primary": "P1.2.4",
+      "evidence": "Dengan contoh digital pilihan guru, murid menyatakan satu kegunaan gerak bukan lokomotor dalam kehidupan harian."
+    },
+    "K2.1.6": {
+      "primary": "P2.1.7",
+      "evidence": "Murid menunjukkan dan menyatakan tempat sentuhan pada bola ketika melakukan pukulan terkawal."
+    }
+  },
+  "coverage_note": "Do not automatically add codes to active lessons. These evidence prompts indicate possible relevant primary SP targets, but all 127 actual RPH, time allocation and exact domain pairings must be compared, including same-subdomain mismatches. Neither group may lose any of the original 167 standards. No dates or textbook pages assigned.",
+  "review_row_count": 42
 }
