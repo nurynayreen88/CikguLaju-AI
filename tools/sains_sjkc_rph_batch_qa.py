@@ -11,6 +11,23 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"rph_standalone/sjkc/sains"
 COUNTS={2:48,3:48,4:64,5:64,6:64}
 SOURCE_KEYS=("pdp","theme","unit_number","unit","topic","sk","sp","textbook_pages","focus")
+# Supplemental evidence targets from the targeted DSKP review (24 Nov).
+# Original RPT focus stays intact in every record.
+TARGETED_ADDENDA={
+    (3,40):"根据教材描述比较味觉和触觉特征，并以试纸证据判断；不品尝、不触摸未知样品，不记录未进行的感官测试。",
+    (4,31):"指出光合作用产生的氧气及储存的淀粉，并解释植物制造的糖可转化为淀粉。",
+    (4,53):"以安全材料制作一个简单物品并测试其用途，说明所选材料的性质及理由。",
+    (4,56):"解释地心引力使地面物体保持在其位置，并用示意图表示其方向。",
+    (5,43):"依据教师示范资料说明受热及散热时温度升降和材料膨胀收缩的变化。",
+    (5,45):"辨认生锈物品的表面特征，并根据资料归纳铁制品会生锈。",
+    (5,57):"根据农历资料排列完整月相周期，并用图示或口述表达观察结果。",
+    (6,14):"根据教师提供的显微影片或观察记录辨认微生物的移动等生命活动；不培养未知微生物。",
+    (6,26):"评价保护与复育措施对指定濒危物种的作用，并说明依据。",
+    (6,30):"在同一表面用安全轻质模型比较不同质量的影响，并在另一组测试中保持质量相同以比较表面。",
+    (6,42):"在教师监督下开展同一种食物的多种保存方法小课题，根据真实记录作总结；不食用实验样品。",
+    (6,53):"预测日食及月食期间地球上的可观察情况，并以模型解释；禁止肉眼直视太阳。",
+}
+
 def load(path):return json.loads(path.read_text(encoding="utf-8"))
 def source(year):
     r=load(ROOT/f"rpt_2027/sjkc/sains/year_{year}_kuala_lumpur.json")
@@ -45,6 +62,8 @@ def records(year):
         assert b["source_focus"]==original["focus"] and not b["ready"]
         r={k:original[k] for k in SOURCE_KEYS}
         focus=r["focus"]
+        extra=TARGETED_ADDENDA.get((year,r["pdp"]),"")
+        focus=focus+(" "+extra if extra else "")
         # Retain the exact topic-specific source focus; only add scaffolding.
         r.update(year=year,ready=False,bbm=b["materials"],
           objective="完成以下学习任务："+focus,
