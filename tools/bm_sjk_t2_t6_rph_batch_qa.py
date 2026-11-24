@@ -87,6 +87,13 @@ def payload(year,r,alternative=False):
             r[k]=r["alternative"].get(k)
     name,model,practice,assessment,bbm=profile(r)
     focus=r["focus"]
+    # The current Year 6 DSKP does not independently assess seni bahasa.
+    # Observe the supporting language skills only; no standalone arts TP.
+    if year==6 and any(k.startswith("4.") for k in r["sk"]):
+        if all(k.startswith("4.") for k in r["sk"]):
+            assessment="Berikan maklum balas pembelajaran terhadap hasil bahasa murid. Aspek seni bahasa menyokong kemahiran bahasa dan tidak diberikan TP tersendiri."
+        else:
+            assessment+=" Rekod PBD hanya bagi kemahiran bahasa yang berkaitan, bukan TP tersendiri bagi seni bahasa."
     page=r.get("textbook_page")
     wb=workbook_text(r.get("workbook"))
     references=[]
@@ -115,6 +122,17 @@ def payload(year,r,alternative=False):
       ("Aktiviti 2 – Pelaksanaan Tugasan","Membimbing pelaksanaan tugasan daripada sumber dan memberikan bantuan mengikut tahap murid.",practice+" "+focus),
       ("Aktiviti 3 – Pengukuhan dan Pentaksiran",assessment,"Menunjukkan hasil kerja dan membetulkan kesalahan berdasarkan maklum balas."+(" Melengkapkan "+wb+" mengikut arahan yang sepadan." if wb else "")),
       ("Penutup","Merumuskan fokus pembelajaran dan mengenal pasti tindakan susulan.","Menyatakan satu perkara yang dikuasai dan membuat pembetulan jika perlu.")]
+    # Integrate the source-backed cross-curricular task into the existing
+    # activity, rather than just printing its reference. No extra PdP or time.
+    if r.get("pkjr"):
+        pk=r["pkjr"]
+        task=pk.get("focus") or pk.get("topic")
+        if task:
+            phase,guru,murid=activities[3]
+            activities[3]=(phase,guru+" Bimbing aktiviti PKJR yang direkodkan dalam RPT.",murid+" PKJR: "+str(task))
+    if r.get("sivik") and r["sivik"].get("focus"):
+        phase,guru,murid=activities[4]
+        activities[4]=(phase,guru+" Hubungkan nilai sivik dengan tugasan asal.",murid+" Sivik: "+str(r["sivik"]["focus"]))
     # Retain embedded PKJR/Sivik in existing slot. Do not add duration or new PdP.
     heading=("Rancangan Pengajaran Harian",f"Bahasa Melayu (SJK) · Tahun {year}",r["topic"])
     footer=[("Refleksi","    orang murid mencapai kriteria kejayaan;     orang murid belum mencapai. Tindakan susulan berdasarkan hasil tugasan: "+focus)]
