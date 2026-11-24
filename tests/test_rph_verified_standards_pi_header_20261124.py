@@ -250,3 +250,52 @@ def test_word_pi_palette_matches_pdf_and_keeps_original_rtl_panels():
     title = next(x for x in root.find(W+"body").findall(W+"p")
                  if "رنچڠن ڤڠاجرن هارين" in "".join(n.text or "" for n in x.iter(W+"t")))
     assert title.find(W+"pPr/"+W+"jc").get(W+"val") == "center"
+
+
+def test_all_native_math_science_years_use_exact_selected_source_labels_only():
+    for subject in ("Matematik", "Sains"):
+        for year in range(2, 7):
+            state = _state(subject, year)
+            state["_rph_verified_display_standard_pairs"] = [
+                {"sk_code": "9.2", "sk_text": "9.2 Huraian sumber sebenar",
+                 "sp_code": "9.2.1", "sp_text": "Menjelaskan konsep sumber"},
+                {"sk_code": "9.2", "sk_text": "9.2 Huraian sumber sebenar",
+                 "sp_code": "9.2.2", "sp_text": "Menerangkan contoh sumber"},
+            ]
+            original = {"STANDARD KANDUNGAN": "9.2",
+                        "STANDARD PEMBELAJARAN": "9.2.1;9.2.2",
+                        "AKTIVITI UTAMA": "Original activities",
+                        "REFLEKSI": "Original reflection"}
+            revised = display_verified_standards(state, original)
+            assert revised["STANDARD KANDUNGAN"] == "9.2 Huraian sumber sebenar"
+            assert revised["STANDARD PEMBELAJARAN"] == (
+                "9.2.1 Menjelaskan konsep sumber; 9.2.2 Menerangkan contoh sumber")
+            assert revised["AKTIVITI UTAMA"] == original["AKTIVITI UTAMA"]
+            assert revised["REFLEKSI"] == original["REFLEKSI"]
+            assert original["STANDARD PEMBELAJARAN"] == "9.2.1;9.2.2"
+            assert display_verified_standards(state, revised) is revised
+            assert display_verified_standards({**state, "programme": "DLP"}, original) is original
+
+
+def test_missing_or_conflicting_source_labels_never_invent_or_partially_expand():
+    state = _state("Sains", 3)
+    source = [{"sk_code": "9.2", "sk_text": "First description",
+               "sp_code": "9.2.1", "sp_text": "9.2.1"},
+              {"sk_code": "9.2", "sk_text": "Conflicting description",
+               "sp_code": "9.2.2", "sp_text": "Actual description"}]
+    state["_rph_verified_display_standard_pairs"] = source
+    rows = {"STANDARD KANDUNGAN": "9.2", "STANDARD PEMBELAJARAN": "9.2.1;9.2.2"}
+    assert display_verified_standards(state, rows) is rows
+    assert source[0]["sp_text"] == "9.2.1"
+
+
+def test_previously_audited_official_label_has_priority_over_source_variant():
+    state = _state("Matematik", 6)
+    state["_rph_verified_display_standard_pairs"] = [
+        {"sk_code": "1.1", "sk_text": "Source variant",
+         "sp_code": "1.1.1", "sp_text": "Source variant"}
+    ]
+    rows = {"STANDARD KANDUNGAN": "1.1", "STANDARD PEMBELAJARAN": "1.1.1"}
+    out = display_verified_standards(state, rows)
+    assert out["STANDARD KANDUNGAN"] == "1.1 Nombor bulat hingga 10 000 000"
+    assert out["STANDARD PEMBELAJARAN"].startswith("1.1.1 Membaca, menyebut dan menulis")
