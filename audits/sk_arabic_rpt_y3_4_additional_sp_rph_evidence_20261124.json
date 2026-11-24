@@ -1,0 +1,46 @@
+{
+  "status": "QA_RPH_CODE_MATCH_NOT_FULL_DSKP",
+  "source_delta_sha": "749109123b8552d636077bddbb41756cc60d3003",
+  "records": [
+    {
+      "year": 3,
+      "pdp": "048",
+      "code": "2.2.4",
+      "source": "rph_standalone/bahasa_arab/year3/lesson_048.md",
+      "sha": "1c6ffdee9196f62e5e6e159f6208b64116e44e31",
+      "actual": "2.2.4",
+      "short_statement": null,
+      "match": true
+    },
+    {
+      "year": 3,
+      "pdp": "041",
+      "code": "1.4.5",
+      "source": "rph_standalone/bahasa_arab/year3/lesson_041.md",
+      "sha": "7e2d28ce95259f047b6d3090335aac46166f0d16",
+      "actual": "1.4.5",
+      "short_statement": null,
+      "match": true
+    },
+    {
+      "year": 3,
+      "pdp": "057",
+      "code": "2.4.4",
+      "source": "rph_standalone/bahasa_arab/year3/lesson_057.md",
+      "sha": "d43375f190536393672bfcc4506547fa58c8284a",
+      "actual": "2.4.4",
+      "short_statement": null,
+      "match": true
+    },
+    {
+      "year": 3,
+      "pdp": "060",
+      "code": "3.4.1",
+      "source": "rph_standalone/bahasa_arab/year3/lesson_060.md",
+      "sha": "4f1e72e8d569f8d43e368b32544584f5393d0473",
+      "actual": "3.4.1",
+      "short_statement": null,
+      "match": true
+    }
+  ]
+}
