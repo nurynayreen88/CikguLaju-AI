@@ -1,0 +1,28 @@
+name: PI native RPH Tahun 2-6 (Jawi & A4, no credits)
+on:
+  pull_request:
+    paths:
+      - "tools/audit_pi_five_years_jawi_native_20261124.py"
+      - ".github/workflows/pi-rph-five-years-native-20261124.yml"
+permissions:
+  contents: read
+jobs:
+  five-verified-native-year-samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install actual Telegram Jawi native renderer
+        run: bash build_jawi.sh
+      - name: Five-year authenticated-source-equivalent native generator audit
+        run: python -m tools.audit_pi_five_years_jawi_native_20261124
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: CIKGULAJU_PI_TAHUN_2_HINGGA_6_WORD_PDF_ASLI_20261124
+          path: qa/pi-five-years-real/*
+          if-no-files-found: error
+          retention-days: 7
