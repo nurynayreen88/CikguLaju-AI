@@ -12,7 +12,10 @@ from io import BytesIO
 import re
 from zipfile import BadZipFile, ZipFile
 
-from lxml import etree
+try:
+    from lxml import etree
+except ImportError:
+    etree = None
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 DOCUMENT = "word/document.xml"
@@ -98,7 +101,7 @@ def boxed_word_bytes(original, field_pairs):
     paragraphs and every original field paragraph survive untouched except
     optional bold typography for existing Activity 1/2/3 headings.
     """
-    if not isinstance(original, bytes) or not original.startswith(b"PK\x03\x04"):
+    if etree is None or not isinstance(original, bytes) or not original.startswith(b"PK\x03\x04"):
         return original
     try:
         with ZipFile(BytesIO(original), "r") as source:
