@@ -14,7 +14,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
-from docx.shared import Mm, Pt
+from docx.shared import Mm, Pt, Twips
 
 FONT = "Noto Sans CJK SC"
 TONE = "EDF0FB"
@@ -52,8 +52,8 @@ def _table(doc, left, right):
     t = doc.add_table(rows=0, cols=2)
     t.alignment = WD_TABLE_ALIGNMENT.CENTER
     t.autofit = False
-    for col, width in zip(t.columns, (left, right)):
-        col.width = Mm(width)
+    for col, width in zip(t.columns, (Mm(left).twips, Mm(WIDTH).twips-Mm(left).twips)):
+        col.width = Twips(width)
     pr = t._tbl.tblPr
     tw = pr.find(qn("w:tblW"))
     tw.set(qn("w:type"), "dxa")
@@ -69,8 +69,8 @@ def _table(doc, left, right):
 
 def _row(t, left, right):
     row = t.add_row()
-    for i, w in enumerate((left, right)):
-        row.cells[i].width = Mm(w)
+    for i, w in enumerate((Mm(left).twips, Mm(WIDTH).twips-Mm(left).twips)):
+        row.cells[i].width = Twips(w)
         row.cells[i].vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
     return row.cells
 
@@ -85,12 +85,56 @@ def _value(t, label, value):
     a, b = _row(t, LABEL_WIDTH, WIDTH-LABEL_WIDTH)
     _fill(a, TONE)
     _line(a, label, True, True)
-    _line(b, value, first=True)
+    if value:
+        _line(b, value, first=True)
     return b
 
 
-def _extract(source, lesson):
+def _extract_year2(source, lesson, ps):
+    # Exact structure of staging/matematik_sjkc/tahun_2/build_word.py.
+    # Rows without a header: standards/references, objective, induction,
+    # two main activities, PBD activity, closure and materials (7 total).
+    if (len(ps) != 5 or not re.match(r"^PdP\\s+%03d\\b" % lesson["pdp"], ps[0])
+            or ps[1] != lesson["topic"]
+            or not ps[2].startswith("Unit " + str(lesson["unit_number"]) + " ")
+            or not ps[3].startswith("日期 Tarikh ")
+            or ps[4] != "教学反思  Refleksi"):
+        raise ValueError("Unexpected Year 2 source header")
+    if len(source.tables) != 1:
+        raise ValueError("Unexpected Year 2 table count")
+    table = source.tables[0]
+    if (len(table.rows), len(table.columns)) != (7, 2):
+        raise ValueError("Unexpected Year 2 source table")
+    labels = [MINUTES.sub("", r.cells[0].text).strip() for r in table.rows]
+    expected = ["课程标准及参考", "学习目标", "导入", "主要教学活动",
+                "巩固与课堂评估", "总结", "教具"]
+    if labels != expected:
+        raise ValueError("Unexpected Year 2 row labels: " + repr(labels))
+    refs = [p.text for p in table.cell(0,1).paragraphs]
+    if len(refs) != 2 or not refs[0].startswith("SK ") or not refs[1].startswith("课本 "):
+        raise ValueError("Unexpected Year 2 standards/references")
+    details = [refs[0], table.cell(1,1).text, table.cell(6,1).text, refs[1]]
+    activity_paras = list(table.cell(3,1).paragraphs) + list(table.cell(4,1).paragraphs)
+    if len(activity_paras) != 3:
+        raise ValueError("Unexpected Year 2 activity count")
+    activities = []
+    for i, p in enumerate(activity_paras, 1):
+        if not p.runs or not p.runs[0].bold:
+            raise ValueError("Missing Year 2 source role label")
+        label = p.runs[0].text.strip()
+        body = p.text[len(p.runs[0].text):]
+        if not label.startswith("活动 " + str(i)) or not body.strip():
+            raise ValueError("Unexpected Year 2 activity")
+        activities.append((label, body))
+    phases = [("导入", table.cell(2,1).text), *activities, ("总结", table.cell(5,1).text)]
+    # Validate the original educational text, excluding only source timing labels.
+    return details, phases, ""
+
+
+def _extract(source, lesson, year):
     ps = [p.text.strip() for p in source.paragraphs if p.text.strip()]
+    if year == 2:
+        return _extract_year2(source, lesson, ps)
     if len(ps) != 9 or not re.match(r"^PdP\s+%03d\b" % lesson["pdp"], ps[1]):
         raise ValueError("Unexpected source header/paragraphs")
     if ps[2] != lesson["topic"] or not ps[3].startswith("日期 Tarikh "):
@@ -120,7 +164,7 @@ def convert(source, lesson, year, teacher=None):
     if year not in (2, 3):
         raise ValueError("Unsupported year")
     teacher = teacher or {}
-    details, phases, original_reflection = _extract(source, lesson)
+    details, phases, original_reflection = _extract(source, lesson, year)
     doc = Document()
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Mm(210), Mm(297)
