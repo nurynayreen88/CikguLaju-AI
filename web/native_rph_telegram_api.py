@@ -508,10 +508,12 @@ def create_native_rph_blueprint(runtime):
             if not valid_teacher_fields(teacher):
                 raise ValueError("Invalid teacher fields")
             limits = {"class": 40, "date": 10, "time": 13, "students": 3}
+            reflection = clean_reflection(teacher.get("reflection", ""))
             teacher = {key: _require_text(teacher[key], limit, allow_empty=True)
                        for key, limit in limits.items()}
             if any(not value.isprintable() for value in teacher.values() if value):
                 raise ValueError("Invalid teacher fields")
+            teacher["reflection"] = reflection
         except (ValueError, KeyError, TypeError):
             return jsonify({"error": "Invalid Aquatics V2 selection"}), 400
         try:
