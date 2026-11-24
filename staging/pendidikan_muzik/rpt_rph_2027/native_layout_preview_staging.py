@@ -110,18 +110,12 @@ def build_staging_preview(root, year, pdp):
     notes = labels["act1"][0] + "\n" + labels["act1"][1] + \
             "\n\n" + labels["act2"][0] + "\n" + labels["act2"][1] + \
             "\n\n" + labels["assessment"][0] + "\n" + labels["assessment"][1]
-    # The standalone 2019 Music Year 4 DSKP prints SK 3.1 with SP 3.2.x,
-    # and SK 4.1 with SP 4.2.1. Deriving SK from the SP prefix is WRONG.
-    # Keep this explicit source anomaly instead of silently normalizing SP.
-    standards = []
-    for code in sp:
-        parent = code.rsplit(".", 1)[0]
-        if year == 4 and parent == "3.2":
-            parent = "3.1"
-        elif year == 4 and code == "4.2.1":
-            parent = "4.1"
-        if parent not in standards:
-            standards.append(parent)
+    # Use the previously reviewed printed DSKP mappings, not inferred SP prefixes.
+    bank = json.loads((base / "dskp_standard_descriptions.json").read_text(encoding="utf-8"))[str(year)]
+    learning = [bank["sp"][code] for code in sp]
+    standards = list(dict.fromkeys(entry["sk"] for entry in learning))
+    sk_text = "; ".join(f"{code} {bank['sk'][code]}" for code in standards)
+    sp_text = "; ".join(f"{code} {entry['description']}" for code, entry in zip(sp, learning, strict=True))
     # The combined blank writing lines in the source are not teaching content.
     footer_values = {
         label.casefold(): value
@@ -132,8 +126,8 @@ def build_staging_preview(root, year, pdp):
         ("Nama Guru", ""), ("Nama Sekolah", ""), ("Tarikh", ""), ("Hari", ""),
         ("Masa", ""), ("Kelas", ""), ("Bilangan Murid", ""), ("Tahun", str(year)),
         ("Subjek", "Pendidikan Muzik"), ("Tajuk", row["unit"]),
-        ("PdP", str(pdp)), ("Standard Kandungan", "; ".join(standards)),
-        ("Standard Pembelajaran", "; ".join(sp)),
+        ("PdP", str(pdp)), ("Standard Kandungan", sk_text),
+        ("Standard Pembelajaran", sp_text),
         ("OBJEKTIF PEMBELAJARAN", labels["objective"][1]),
         ("KRITERIA KEJAYAAN", criteria or "—"), ("PENGETAHUAN SEDIA ADA", "—"),
         ("BAHAN BANTU MENGAJAR", labels["materials"][1]),
@@ -174,7 +168,7 @@ def build_staging_preview(root, year, pdp):
         warnings.append("TEXTBOOK_NOT_FULLY_CROSSCHECKED_OR_NONOFFICIAL")
     return {
         "subject": "MUZIK", "year": year, "pdp": pdp,
-        "source_pdp_id": row["pdp_id"], "layout": layout,
+        "source_pdp_id": row["pdp_id"], "layout": layout, "sk_codes": standards,
         "phase_text": {key: value for key, (_, value) in labels.items()},
         "warnings": warnings, "approved_for_live": False,
         "source_sp_code_conflict": print_code_conflict,
