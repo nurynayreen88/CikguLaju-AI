@@ -1,0 +1,452 @@
+{
+  "status": "QA_ONLY_NOT_FOR_RUNTIME",
+  "scope": "175 editorial drafts in batches 01–11",
+  "source_commit": "c2e0d48027075ec7f9ea51cf64ed704350297872",
+  "render_workflow": {
+    "run": 45499386114,
+    "conclusion": "success",
+    "native_editorial_render": "success",
+    "actual_activity_audit": "success",
+    "note": "Structural CI only; not visual or academic approval."
+  },
+  "draft_count": 175,
+  "unique_ids": 175,
+  "year_counts": {
+    "2": 44,
+    "3": 38,
+    "4": 33,
+    "5": 28,
+    "6": 32
+  },
+  "source_hold_count": 5,
+  "held_drafts": [
+    {
+      "id": 1387,
+      "year": 3,
+      "pdp": 1,
+      "reason": "Native objective has Al-Kafirun range 3–1 in logical text order; may be bidi ordering, not necessarily a wrong intended range. Verify exact original RPT/mushaf and native Word/PDF display; no automatic reversal."
+    }
+  ],
+  "release_eligible": 0,
+  "normalized_exact_repeated_activity_bodies": [
+    {
+      "normalized": "موريد ممڤردڠركن باچاءن اية ساسرن ݢورو مريكود ڤنچاڤاين باچاءن دان تجويد موريد",
+      "lessons": [
+        {
+          "id": 1388,
+          "year": 3,
+          "pdp": 2
+        },
+        {
+          "id": 1832,
+          "year": 6,
+          "pdp": 2
+        }
+      ]
+    }
+  ],
+  "normalized_exact_repeated_titles": [
+    {
+      "normalized": "سيتواسي تياد اءير",
+      "lessons": [
+        {
+          "id": 1285,
+          "year": 2,
+          "pdp": 11
+        },
+        {
+          "id": 1697,
+          "year": 5,
+          "pdp": 11
+        }
+      ]
+    },
+    {
+      "normalized": "باچاءن ڤتيقن جاوي",
+      "lessons": [
+        {
+          "id": 1390,
+          "year": 3,
+          "pdp": 4
+        },
+        {
+          "id": 1402,
+          "year": 3,
+          "pdp": 16
+        },
+        {
+          "id": 1410,
+          "year": 3,
+          "pdp": 24
+        },
+        {
+          "id": 1846,
+          "year": 6,
+          "pdp": 16
+        }
+      ]
+    },
+    {
+      "normalized": "باچاءن دليل نقلي",
+      "lessons": [
+        {
+          "id": 1301,
+          "year": 2,
+          "pdp": 27
+        },
+        {
+          "id": 1361,
+          "year": 2,
+          "pdp": 87
+        }
+      ]
+    },
+    {
+      "normalized": "كڤنتيڠن مڠعملكن ادب",
+      "lessons": [
+        {
+          "id": 1304,
+          "year": 2,
+          "pdp": 30
+        },
+        {
+          "id": 1429,
+          "year": 3,
+          "pdp": 43
+        }
+      ]
+    },
+    {
+      "normalized": "امڤت ادب ڤرݢاءولن",
+      "lessons": [
+        {
+          "id": 1865,
+          "year": 6,
+          "pdp": 35
+        },
+        {
+          "id": 1869,
+          "year": 6,
+          "pdp": 39
+        }
+      ]
+    },
+    {
+      "normalized": "كڤنتيڠن ڤنورونن وحي",
+      "lessons": [
+        {
+          "id": 1417,
+          "year": 3,
+          "pdp": 31
+        },
+        {
+          "id": 1421,
+          "year": 3,
+          "pdp": 35
+        }
+      ]
+    },
+    {
+      "normalized": "باچاءن متن حديث",
+      "lessons": [
+        {
+          "id": 1465,
+          "year": 3,
+          "pdp": 79
+        },
+        {
+          "id": 1617,
+          "year": 4,
+          "pdp": 83
+        }
+      ]
+    },
+    {
+      "normalized": "توليسن ايات جاوي",
+      "lessons": [
+        {
+          "id": 1694,
+          "year": 5,
+          "pdp": 8
+        },
+        {
+          "id": 1698,
+          "year": 5,
+          "pdp": 12
+        }
+      ]
+    },
+    {
+      "normalized": "امڤت كڤنتيڠن برايمان",
+      "lessons": [
+        {
+          "id": 1541,
+          "year": 4,
+          "pdp": 7
+        },
+        {
+          "id": 1837,
+          "year": 6,
+          "pdp": 7
+        }
+      ]
+    },
+    {
+      "normalized": "كسن برايمان",
+      "lessons": [
+        {
+          "id": 1397,
+          "year": 3,
+          "pdp": 11
+        },
+        {
+          "id": 1282,
+          "year": 2,
+          "pdp": 8
+        }
+      ]
+    },
+    {
+      "normalized": "باچاءن ڤتيقن برايمبوهن",
+      "lessons": [
+        {
+          "id": 1398,
+          "year": 3,
+          "pdp": 12
+        },
+        {
+          "id": 1406,
+          "year": 3,
+          "pdp": 20
+        }
+      ]
+    },
+    {
+      "normalized": "سناراي تيݢ اعتبار",
+      "lessons": [
+        {
+          "id": 1421,
+          "year": 3,
+          "pdp": 35
+        },
+        {
+          "id": 1896,
+          "year": 6,
+          "pdp": 66
+        }
+      ]
+    },
+    {
+      "normalized": "دليل كواجيڤن برايمان",
+      "lessons": [
+        {
+          "id": 1577,
+          "year": 4,
+          "pdp": 43
+        },
+        {
+          "id": 1873,
+          "year": 6,
+          "pdp": 43
+        }
+      ]
+    },
+    {
+      "normalized": "تيݢ كڤنتيڠن برايمان",
+      "lessons": [
+        {
+          "id": 1581,
+          "year": 4,
+          "pdp": 47
+        },
+        {
+          "id": 1877,
+          "year": 6,
+          "pdp": 47
+        }
+      ]
+    },
+    {
+      "normalized": "تيݢ كڤنتيڠن ادب",
+      "lessons": [
+        {
+          "id": 1955,
+          "year": 6,
+          "pdp": 125
+        },
+        {
+          "id": 1481,
+          "year": 3,
+          "pdp": 95
+        }
+      ]
+    }
+  ],
+  "normalized_exact_repeated_objectives": [
+    {
+      "normalized": "موريد داڤت ١ مثنارايكن صيفت٢ الله ٢ مثاتاكن مقصود صيفت٢ الله",
+      "lessons": [
+        {
+          "id": 1276,
+          "year": 2,
+          "pdp": 2
+        },
+        {
+          "id": 1279,
+          "year": 2,
+          "pdp": 5
+        }
+      ]
+    },
+    {
+      "normalized": "موريد داڤت ١ ممباچ ڤركاتاءن يڠ ترديري درڤد تيݢ سوكو كات ٢ ممبينا ڤركاتاءن يڠ ترديري درڤد تيݢ سوكو كات",
+      "lessons": [
+        {
+          "id": 1277,
+          "year": 2,
+          "pdp": 3
+        },
+        {
+          "id": 1280,
+          "year": 2,
+          "pdp": 6
+        }
+      ]
+    },
+    {
+      "normalized": "موريد داڤت ١ ممباچ تيك س جاوي دڠن بتول ٢ مثبوت ڤركاتاءن ڤيليهن دڠن بتول ٣ منوليس سمولا ڤركاتاءن ڤيليهن دڠن بتول",
+      "lessons": [
+        {
+          "id": 1690,
+          "year": 5,
+          "pdp": 4
+        },
+        {
+          "id": 1834,
+          "year": 6,
+          "pdp": 4
+        },
+        {
+          "id": 1838,
+          "year": 6,
+          "pdp": 8
+        }
+      ]
+    },
+    {
+      "normalized": "موريد داڤت ١ منرڠكن ڤڠرتين حديث دان كڤنتيڠنث دڠن تڤت ٢ ممباچ تيك س حديث دڠن بتول ٣ مثاتاكن ترجمهن حديث دڠن بتول",
+      "lessons": [
+        {
+          "id": 1465,
+          "year": 3,
+          "pdp": 79
+        },
+        {
+          "id": 1461,
+          "year": 3,
+          "pdp": 75
+        }
+      ]
+    },
+    {
+      "normalized": "موريد داڤت ١ ممباچ تيك س جاوي دڠن بتول ٢ ممبينا ايات ڤينديق درڤد ڤركاتاءن ڤيليهن دڠن بتول ٣ منوليس سمولا ايات ڤينديق دڠن بتول",
+      "lessons": [
+        {
+          "id": 1694,
+          "year": 5,
+          "pdp": 8
+        },
+        {
+          "id": 1842,
+          "year": 6,
+          "pdp": 12
+        },
+        {
+          "id": 1846,
+          "year": 6,
+          "pdp": 16
+        }
+      ]
+    },
+    {
+      "normalized": "موريد داڤت ١ ممڤردڠركن باچاءن واجب دالم صلاة دڠن سمڤورنا ٢ مڠاڤليكاسيكن باچاءن واجب دالم صلاة دڠن سمڤورنا",
+      "lessons": [
+        {
+          "id": 1352,
+          "year": 2,
+          "pdp": 78
+        },
+        {
+          "id": 1385,
+          "year": 2,
+          "pdp": 111
+        }
+      ]
+    },
+    {
+      "normalized": "موريد داڤت ١ ممباچ ڤركاتاءن يڠ ترديري درڤد ليم سوكوكات ٢ ممبينا ڤركاتاءن يڠ ترديري درڤد ليم سوكوكات",
+      "lessons": [
+        {
+          "id": 1295,
+          "year": 2,
+          "pdp": 21
+        },
+        {
+          "id": 1299,
+          "year": 2,
+          "pdp": 25
+        }
+      ]
+    },
+    {
+      "normalized": "موريد داڤت ١ ممباچ ڤركاتاءن يڠ ترديري درڤد انم سوكوكات ٢ ممبينا ڤركاتاءن يڠ ترديري درڤد انم سوكوكات",
+      "lessons": [
+        {
+          "id": 1305,
+          "year": 2,
+          "pdp": 31
+        },
+        {
+          "id": 1308,
+          "year": 2,
+          "pdp": 34
+        }
+      ]
+    },
+    {
+      "normalized": "١ موريد داڤت مثاتاكن مقصود صيفت فطانه نبي سچارا بركومڤولن دڠن تڤت ٢ موريد داڤت منجلسكن سكورڠ كورڠث ٣ چونتوه كأوڠݢولن نبي محمد ملالوءي قصه كهيدوڤن بݢيندا سچارا بركومڤولن دڠن بتول بربنتوكن ݢورو",
+      "lessons": [
+        {
+          "id": 1597,
+          "year": 4,
+          "pdp": 63
+        },
+        {
+          "id": 1601,
+          "year": 4,
+          "pdp": 67
+        }
+      ]
+    },
+    {
+      "normalized": "موريد داڤت ١ ممباچ رڠكاي كات دڠن بتول ٢ ممبينا رڠكاي كات دڠن بتول ٣ منوليس رڠكاي كات دڠن بتول",
+      "lessons": [
+        {
+          "id": 1332,
+          "year": 2,
+          "pdp": 58
+        },
+        {
+          "id": 1335,
+          "year": 2,
+          "pdp": 61
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Normalization strips Arabic diacritics and directional marks and normalizes kaf/ya variants; repetition is a flag, not automatic rejection.",
+    "Held drafts must not be promoted even if render passes. Similar but not identical activities still require manual comparison.",
+    "No textbook page approval or visual Jawi approval inferred."
+  ]
+}
