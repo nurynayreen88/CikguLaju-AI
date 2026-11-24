@@ -23,6 +23,8 @@ def test_all_204():
                 assert evidence in out["REFLEKSI"], (module.SUBJECT,year,pdp)
                 assert out["REFLEKSI"].startswith("____ / ____")
                 assert out["KRITERIA KEJAYAAN"] == criterion
+                expected_sp = row["sp_description"] if module is rbt else row["sp_text"]
+                assert out["STANDARD PEMBELAJARAN"].splitlines() == expected_sp.split(" · "), (module.SUBJECT,year,pdp)
                 assert out["KELAS"] == original["KELAS"] and out["TARIKH"] == ""
                 assert "DRAF" in out["TAJUK"]
                 assert not re.search(r"PdP\s+\d{3}\b",out["TAJUK"],re.I)
