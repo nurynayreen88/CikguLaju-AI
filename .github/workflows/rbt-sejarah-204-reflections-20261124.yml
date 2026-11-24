@@ -1,0 +1,22 @@
+name: RBT Sejarah SK 204 source reflection QA
+on:
+  pull_request:
+    paths:
+      - 'web/rph_source_reflection_rbt_sejarah.py'
+      - 'web/rbt_2027_user_runtime.py'
+      - 'web/sejarah_2027_user_runtime.py'
+      - 'tests/test_rbt_sejarah_204_reflections_20261124.py'
+      - '.github/workflows/rbt-sejarah-204-reflections-20261124.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pytest
+      - run: python -m pytest -q tests/test_rbt_sejarah_204_reflections_20261124.py tests/test_sejarah_2027_user_runtime.py
