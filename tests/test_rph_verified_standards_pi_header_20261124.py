@@ -299,3 +299,90 @@ def test_previously_audited_official_label_has_priority_over_source_variant():
     out = display_verified_standards(state, rows)
     assert out["STANDARD KANDUNGAN"] == "1.1 Nombor bulat hingga 10 000 000"
     assert out["STANDARD PEMBELAJARAN"].startswith("1.1.1 Membaca, menyebut dan menulis")
+
+
+def test_pi_compact_identity_word_removes_only_labels_and_bolds_jawi():
+    from test_pi_active_jawi_content_right_20261123 import formatted_original
+    from web.rph_pi_compact_identity_20261124 import compact_pi_identity
+    from docx import Document
+    from io import BytesIO
+    from lxml import etree
+    from zipfile import ZipFile
+    _, source = formatted_original()
+    result = compact_pi_identity(source)
+    assert result != source
+    assert compact_pi_identity(result) == result
+    doc = Document(BytesIO(result))
+    before = Document(BytesIO(source))
+    p = doc.tables[0].cell(0,0).paragraphs
+    assert p[0].text == "ڤنديديقن اسلام"
+    assert p[1].text == "تاهون ٣"
+    assert p[0].runs[0].bold
+    from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
+    assert doc.tables[0].cell(0,0).vertical_alignment == WD_CELL_VERTICAL_ALIGNMENT.CENTER
+    assert p[2].text == before.tables[0].cell(0,0).paragraphs[2].text
+    assert doc.tables[0].cell(0,1).text == before.tables[0].cell(0,1).text
+    for a,b in zip(doc.tables[1:],before.tables[1:]):
+        assert [[c.text for c in r.cells] for r in a.rows] == [[c.text for c in r.cells] for r in b.rows]
+    with ZipFile(BytesIO(result)) as z:
+        root=etree.fromstring(z.read("word/document.xml"))
+        W="{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+        first=root.find(W+"body").find(W+"tbl").find(W+"tr").find(W+"tc").find(W+"p")
+        assert all(r.find(W+"rPr/"+W+"bCs").get(W+"val")=="1" for r in first.findall(W+"r"))
+
+def test_pi_pdf_compact_identity_removes_only_two_labels():
+    original=_pi_story()
+    style=getSampleStyleSheet()["Normal"]
+    original[2]._cellvalues[0][0]=Paragraph("ڤنديديقن اسلام",style)
+    original[2]._cellvalues[1][0]=Paragraph("تاهون ٢",style)
+    result=reflow_verified_pi_header({"task":"rph","subject":"Pendidikan Islam","year":"Tahun 2"},original)
+    teacher, identity = result[2]._cellvalues[0]
+    assert identity._cellvalues[0][0].getPlainText()=="ڤنديديقن اسلام"
+    assert "<b>" in identity._cellvalues[0][0].text
+    assert identity._cellvalues[1][0].text=="تاهون ٢"
+    assert identity._cellvalues[0][1]==identity._cellvalues[1][1]==""
+    assert identity._cellvalues[2]==original[2]._cellvalues[7]
+    assert result[-3] is original[4] and result[-1] is original[6]
+
+def test_pi_topic_duration_display_only():
+    from web.rph_pi_topic_display_20261124 import clean_pi_topic
+    samples = {
+        "عقيدة ١ جم": "عقيدة",
+        "القرءان ٣٠ مينيت": "القرءان",
+        "القرءان ١ جم ٣٠ مينيت": "القرءان",
+        "القرءان (تجويد) ٣٠ مينيت (اولڠن حكوم إظهار شفوي)": "القرءان (تجويد) (اولڠن حكوم إظهار شفوي)",
+        "Jawi 1 jam setengah": "Jawi",
+        "Jawi setengah jam": "Jawi",
+        "Jawi 1 jam": "Jawi",
+        "Surah ١": "Surah ١",
+    }
+    for source, expected in samples.items():
+        assert clean_pi_topic(source)==expected
+        assert clean_pi_topic(expected)==expected
+
+def test_pi_pdf_topic_duration_and_vertical_center():
+    original=_pi_story()
+    style=getSampleStyleSheet()["Normal"]
+    original[2]._cellvalues[0][0]=Paragraph("ڤنديديقن اسلام",style)
+    original[2]._cellvalues[1][0]=Paragraph("تاهون ٢",style)
+    original[2]._cellvalues[7][0]=Paragraph("القرءان ١ جم ٣٠ مينيت (اولڠن)",style)
+    result=reflow_verified_pi_header({"task":"rph","subject":"Pendidikan Islam","year":"Tahun 2"},original)
+    banner=result[2]
+    identity=banner._cellvalues[0][1]
+    assert identity._cellvalues[2][0].getPlainText()=="القرءان (اولڠن)"
+    assert banner._cellStyles[0][1].valign=="MIDDLE"
+    assert original[2]._cellvalues[7][0].getPlainText()=="القرءان ١ جم ٣٠ مينيت (اولڠن)"
+    assert result[-3] is original[4] and result[-1] is original[6]
+
+def test_pi_pdf_latin_acronyms_keep_bold_and_pak_21():
+    original=_pi_story()
+    style=getSampleStyleSheet()["Normal"]
+    original[2]._cellvalues[8][1]=Paragraph("EMK / نيلاي",style)
+    original[2]._cellvalues[9][1]=Paragraph("KBAT / PAK٢١",style)
+    revised=reflow_verified_pi_header({"task":"rph","subject":"Pendidikan Islam","year":"Tahun 2"},original)
+    body=revised[4]
+    assert "<b>" in body._cellvalues[0][1].text
+    assert body._cellvalues[1][1].getPlainText()=="KBAT / PAK 21"
+    assert "<b>" in body._cellvalues[1][1].text
+    assert body._cellvalues[0][0] is original[2]._cellvalues[8][0]
+    assert body._cellvalues[1][0] is original[2]._cellvalues[9][0]

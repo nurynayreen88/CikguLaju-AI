@@ -338,6 +338,18 @@ def install(runtime):
                 style_word_path(path, fill,
                                 premium_header=subject != "bahasa arab",
                                 rtl_jawi=subject == "pendidikan islam")
+                if subject == "pendidikan islam":
+                    from web.rph_pi_compact_identity_20261124 import compact_pi_identity
+                    target=Path(path)
+                    original=target.read_bytes()
+                    compact=compact_pi_identity(original)
+                    if compact != original:
+                        temp=target.with_name(target.name+".pi-identity.tmp")
+                        try:
+                            temp.write_bytes(compact)
+                            os.replace(temp,target)
+                        finally:
+                            temp.unlink(missing_ok=True)
             except (OSError, ValueError, etree.XMLSyntaxError) as exc:
                 # Fail open to the unchanged original document, never block a
                 # teacher's download because of a decorative formatting pass.

@@ -89,7 +89,7 @@ def check_one(runtime, path, row, code, output_dir):
         assert "٣. ممبيمبيڠ راكن سباي" in text
         assert "٤. ݢورو مريكوت ڤنچاڤاين" in text
         # Render-only change: Unicode Arabic-Indic digits in every visible Word cell.
-        assert not any("0" <= char <= "9" for char in text)
+        assert not any("0" <= char <= "9" for char in text.replace("PAK 21", ""))
     # Rendering an authentic active source to PDF from the *Word* validates
     # 1.5 paragraph spacing and real page boundaries (not theoretical height).
     if shutil.which("libreoffice"):
@@ -152,7 +152,11 @@ def check_pi_all_years(runtime, db_path, output_dir):
                     assert jawi_display_digits(text) == text, "European numerals in Word"
                     header = doc.tables[0]
                     assert header._tbl.tblPr.find(qn("w:bidiVisual")) is not None
-                    assert "ڤنديديقن اسلام" in header.cell(0,0).text
+                    assert header.cell(0,0).paragraphs[0].text.strip()=="ڤنديديقن اسلام"
+                    assert header.cell(0,0).paragraphs[1].text.strip().startswith("تاهون ")
+                    assert all(r.bold for r in header.cell(0,0).paragraphs[0].runs if r.text.strip())
+                    assert "مات ڤلاجرن" not in header.cell(0,0).text
+                    assert "تاهون / تيڠکتن" not in header.cell(0,0).text
                     assert "کلس" in header.cell(0,1).text
                     titles = [p for p in doc.paragraphs if p.text.strip() == "رنچڠن ڤڠاجرن هارين"]
                     assert len(titles) == 1 and titles[0].alignment == 1, "title not centred"

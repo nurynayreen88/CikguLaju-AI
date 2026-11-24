@@ -1,0 +1,126 @@
+"""Presentation-only PI Word identity. Preserve all lesson and teacher text."""
+from collections import Counter
+from io import BytesIO
+from zipfile import ZipFile
+from lxml import etree
+W="{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+DOC="word/document.xml"
+LABELS=("مات ڤلاجرن","تاهون / تيڠکتن")
+def text(node):
+    return "".join(n.text or "" for n in node.iter(W+"t"))
+def compact_pi_identity(data):
+    with ZipFile(BytesIO(data)) as z:
+        root=etree.fromstring(z.read(DOC))
+        body=root.find(W+"body")
+        tables=body.findall(W+"tbl")
+        if len(tables)!=4 or not any(text(p).strip()=="رنچڠن ڤڠاجرن هارين" for p in body.findall(W+"p")):
+            return data
+        table=tables[0]
+        if table.find(W+"tblPr/"+W+"bidiVisual") is None:
+            return data
+        rows=table.findall(W+"tr")
+        if len(rows)!=1:return data
+        cells=rows[0].findall(W+"tc")
+        if len(cells)!=2:return data
+        lines=cells[0].findall(W+"p")
+        if len(lines)!=3 or "کلس" not in text(cells[1]):return data
+        if not text(lines[0]).startswith(LABELS[0]+"ڤنديديقن اسلام"):return data
+        if not text(lines[1]).startswith(LABELS[1]+"تاهون "):return data
+        removed=[]
+        before=Counter(n.text or "" for n in root.iter(W+"t"))
+        for i,label in enumerate(LABELS):
+            p=lines[i]
+            runs=p.findall(W+"r")
+            split=next((j for j,r in enumerate(runs) if r.find(W+"tab") is not None),None)
+            if split is None or "".join(text(r) for r in runs[:split])!=label:return data
+            for r in runs[:split+1]:
+                removed.extend(n.text or "" for n in r.iter(W+"t"))
+                p.remove(r)
+            for r in p.findall(W+"r"):
+                pr=r.find(W+"rPr")
+                if pr is None:
+                    pr=etree.Element(W+"rPr");r.insert(0,pr)
+                for tag in ("b","bCs"):
+                    e=pr.find(W+tag)
+                    if e is None:e=etree.SubElement(pr,W+tag)
+                    e.set(W+"val","1" if i==0 else "0")
+        # Only the two known labels were removed at this stage.
+        after=Counter(n.text or "" for n in root.iter(W+"t"))
+        assert before-after==Counter(removed) and not after-before
+        # Centre the complete three-line identity vertically within the
+        # existing right-hand panel. Preserve right-to-left alignment.
+        props=cells[0].find(W+"tcPr")
+        align=props.find(W+"vAlign")
+        if align is None:align=etree.SubElement(props,W+"vAlign")
+        align.set(W+"val","center")
+        # Remove just the matched character span in the topic value runs.
+        from web.rph_pi_topic_display_20261124 import duration_span
+        topic=lines[2]
+        nodes=list(topic.iter(W+"t"))
+        full="".join(n.text or "" for n in nodes)
+        span=duration_span(full)
+        if span is not None:
+            start,end=span
+            offset=0
+            for n in nodes:
+                value=n.text or ""
+                a=max(0,start-offset)
+                b=min(len(value),end-offset)
+                if a<b:n.text=value[:a]+value[b:]
+                offset+=len(value)
+            assert text(topic)==full[:start]+full[end:]
+        # Explicit complex-script AND Latin bold for matching labels only.
+        from web.rph_pi_jawi_numerals_20261124 import PAK21
+        def bold(run):
+            pr=run.find(W+"rPr")
+            if pr is None:
+                pr=etree.Element(W+"rPr");run.insert(0,pr)
+            for tag in ("b","bCs"):
+                e=pr.find(W+tag)
+                if e is None:e=etree.SubElement(pr,W+tag)
+                e.set(W+"val","1")
+        for p in [lines[2], *cells[1].findall(W+"p")]:
+            for r in p.findall(W+"r"):
+                if r.find(W+"tab") is not None:break
+                if text(r).strip():bold(r)
+        for row in tables[1].findall(W+"tr"):
+            label=row.find(W+"tc")
+            label_text=text(label).strip()
+            if "EMK" in label_text or "KBAT" in label_text or PAK21.search(label_text):
+                for run in label.iter(W+"r"):
+                    if not text(run).strip():continue
+                    bold(run)
+                    pr=run.find(W+"rPr")
+                    fonts=pr.find(W+"rFonts")
+                    if fonts is None:
+                        fonts=etree.Element(W+"rFonts");pr.insert(0,fonts)
+                    for attr in list(fonts.attrib):
+                        if attr.rsplit("}",1)[-1].casefold().endswith("theme"):del fonts.attrib[attr]
+                    for name in ("ascii","hAnsi","eastAsia","cs"):
+                        fonts.set(W+name,"DejaVu Sans")
+                    for tag in ("sz","szCs"):
+                        el=pr.find(W+tag)
+                        if el is None:el=etree.SubElement(pr,W+tag)
+                        el.set(W+"val","20")
+                for node in label.iter(W+"t"):
+                    if node.text:node.text=PAK21.sub("PAK 21",node.text)
+        # Keep 1.5x line spacing; reclaim only decorative paragraph gaps
+        # in the header and empty inter-table spacer to fit numbered objectives.
+        for cell in cells:
+            for p in cell.findall(W+"p"):
+                spacing=p.find(W+"pPr/"+W+"spacing")
+                if spacing is not None:spacing.set(W+"after","0")
+        for p in body.findall(W+"p"):
+            if not text(p).strip() and not any(n.tag in (W+"drawing",W+"object",W+"br",W+"sectPr") for n in p.iter()):
+                pr=p.find(W+"pPr")
+                if pr is None:
+                    pr=etree.Element(W+"pPr");p.insert(0,pr)
+                sp=pr.find(W+"spacing")
+                if sp is None:sp=etree.SubElement(pr,W+"spacing")
+                for k,v in (("before","0"),("after","0"),("line","40"),("lineRule","exact")):
+                    sp.set(W+k,v)
+        out=BytesIO()
+        with ZipFile(out,"w") as dest:
+            for item in z.infolist():
+                dest.writestr(item,etree.tostring(root,encoding="UTF-8",xml_declaration=True,standalone=True) if item.filename==DOC else z.read(item.filename))
+        return out.getvalue()

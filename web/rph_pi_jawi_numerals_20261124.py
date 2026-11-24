@@ -23,6 +23,17 @@ DIGITS = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
 # Only visible decimal glyphs are converted.
 LINK = re.compile(r"<[^>]+>|&(?:#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);|https?://[^\s<>]+|www\.[^\s<>]+|[A-Za-z0-9_.+%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", re.I)
 SPECIAL = ("ppki", "dlp", "sjkc", "sjkt", "kp2027")
+PAK21 = re.compile(r"\bPAK[ \t]*[2٢۲][1١۱](?![0-9٠-٩۰-۹])", re.I)
+
+def _digits_except_pak(value):
+    pieces = []
+    start = 0
+    for match in PAK21.finditer(value):
+        pieces.extend((value[start:match.start()].translate(DIGITS), "PAK 21"))
+        start = match.end()
+    pieces.append(value[start:].translate(DIGITS))
+    return "".join(pieces)
+
 
 
 def is_active_pi_rph(state):
@@ -40,15 +51,15 @@ def is_active_pi_rph(state):
 
 def jawi_display_digits(text):
     """Convert only printed decimal glyphs; preserve URL/email substrings."""
-    if not isinstance(text, str) or not any("0" <= x <= "9" for x in text):
+    if not isinstance(text, str):
         return text
     pieces = []
     previous = 0
     for found in LINK.finditer(text):
-        pieces.append(text[previous:found.start()].translate(DIGITS))
+        pieces.append(_digits_except_pak(text[previous:found.start()]))
         pieces.append(found.group(0))
         previous = found.end()
-    pieces.append(text[previous:].translate(DIGITS))
+    pieces.append(_digits_except_pak(text[previous:]))
     return "".join(pieces)
 
 
@@ -60,6 +71,9 @@ def display_pi_rows(state, rows):
         name: jawi_display_digits(value) if isinstance(value, str) else value
         for name, value in rows.items()
     }
+    from web.rph_pi_objective_lines_20261124 import objective_lines
+    if "OBJEKTIF PEMBELAJARAN" in rendered:
+        rendered["OBJEKTIF PEMBELAJARAN"] = objective_lines(rendered["OBJEKTIF PEMBELAJARAN"])
     return rendered if rendered != rows else rows
 
 

@@ -142,3 +142,26 @@ def test_runtime_guard_converts_pi_rows_and_word_but_not_bm(tmp_path):
     assert "اکتيۏيتي ٢" in doc.tables[2].cell(2, 1).text
     runtime.create_word_file({"task":"rph","subject":"Bahasa Melayu"}, "", "user")
     assert word.read_bytes() == source
+
+def test_pak_21_is_canonical_and_other_digits_remain_jawi():
+    for variant in ("PAK21", "PAK 21", "PAK٢١", "PAK ٢١", "PAK۲۱"):
+        value = "KBAT / "+variant+" • Tahun 2 • 1.1.1"
+        expected = "KBAT / PAK 21 • Tahun ٢ • ١.١.١"
+        assert jawi_display_digits(value) == expected
+        assert jawi_display_digits(expected) == expected
+    assert jawi_display_digits("https://example.com/PAK21") == "https://example.com/PAK21"
+
+def test_pi_objectives_numbered_lines_without_reversing_standard_codes():
+    from web.rph_pi_objective_lines_20261124 import objective_lines
+    source = {"OBJEKTIF PEMBELAJARAN": "موريد داڤت: 1. مثنارايكن صيفت٢ الله. 2. مثاتاكن مقصود صيفت٢ الله.",
+              "STANDARD KANDUNGAN": "2.1 مڠايماني صيفت٢ الله",
+              "STANDARD PEMBELAJARAN": "2.1.1 مثنارايكن صيفت٢ الله.\n2.1.2 مثاتاكن مقصود صيفت٢ الله."}
+    out = display_pi_rows(_state(), source)
+    assert out["OBJEKTIF PEMBELAJARAN"] == "موريد داڤت:\n١. مثنارايكن صيفت٢ الله.\n٢. مثاتاكن مقصود صيفت٢ الله."
+    assert out["STANDARD KANDUNGAN"].startswith("٢.١ ")
+    assert out["STANDARD PEMBELAJARAN"].startswith("٢.١.١ ")
+    assert "\n٢.١.٢ " in out["STANDARD PEMBELAJARAN"]
+    assert objective_lines(out["OBJEKTIF PEMBELAJARAN"]) == out["OBJEKTIF PEMBELAJARAN"]
+    assert objective_lines("Murid membaca 2.1 dan 2.2.") == "Murid membaca 2.1 dan 2.2."
+    assert objective_lines("Murid membaca 1. ayat sahaja.") == "Murid membaca 1. ayat sahaja."
+    assert source["OBJEKTIF PEMBELAJARAN"].count("\n")==0
