@@ -241,7 +241,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
             expect(page.locator("#web-admin-top")).to_be_visible()
             expect(page.locator("#web-admin-top > summary")).to_contain_text("Pusat Admin")
             expect(page.locator("#web-admin-tab")).to_be_hidden()
-            expect(page.locator("#web-admin-tab")).to_have_attribute("aria-current","page")
+            self.assertTrue(page.locator("#web-admin-top").evaluate("(node)=>node.open"))
             expect(page.locator("#web-admin-heading")).to_be_visible()
         finally:
             page.close()
