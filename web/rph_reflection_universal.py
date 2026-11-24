@@ -22,26 +22,63 @@ def _clean(value):
     return _clean_success_criterion(value)
 
 
-def _english_action(criterion):
+def _english_action(criterion, subject="ENGLISH"):
     v=criterion.casefold()
-    if any(x in v for x in ("read", "reading", "comprehension", "text")):
+    def has(*terms):
+        return any(re.search(r"\b"+re.escape(term)+r"\b",v) for term in terms)
+
+    # DLP criteria are written in English, but are not English-language
+    # lessons. Keep the follow-up within the subject and actual criterion.
+    if subject in ("MATH_DLP","DLP_MATH"):
+        if has("fraction","fractions","decimal","decimals","percentage","percentages"):
+            return "guided practice with fraction or decimal representations and a reassessment"
+        if has("add","addition","subtract","subtraction","multiply","multiplication","divide","division"):
+            return "step-by-step practice of the stated operation using worked examples"
+        if has("money","coin","coins","banknotes","ringgit","sen"):
+            return "guided practice using replica money and the stated values"
+        if has("time","clock","duration","calendar"):
+            return "guided practice using clock models and time sequences"
+        if has("measure","measurement","length","mass","volume","capacity"):
+            return "guided measurement practice using appropriate concrete materials"
+        if has("shape","shapes","angle","angles","geometry","perimeter","area"):
+            return "guided practice with diagrams and concrete geometric models"
+        if has("data","graph","graphs","pictograph","pictographs","chart","charts"):
+            return "guided interpretation of the stated data using visual representations"
+        if has("number","numbers","count","counting","numeral","numerals","place value"):
+            return "guided number practice using number cards and counters"
+        return "guided practice of the stated mathematical skill using worked examples and reassessment"
+    if subject in ("SCIENCE_DLP","DLP_SCIENCE"):
+        if has("senses","sense","sensory"):
+            return "guided observation using safe objects and the relevant senses"
+        if has("electricity","circuit","circuits","conductor","conductors"):
+            return "guided work with a safe classroom circuit model and observation"
+        if has("plant","plants","animal","animals","living things","habitat","habitats"):
+            return "guided observation and classification using relevant specimens or pictures"
+        if has("measure","measurement","measuring","temperature","mass","volume"):
+            return "guided measurement with suitable instruments and a review of observations"
+        if has("experiment","experiments","investigation","investigations","hypothesis","variables"):
+            return "a guided investigation with a review of the stated science process skill"
+        if has("force","forces","magnet","magnets","light","shadow","shadows","sound","heat"):
+            return "guided observation of the stated phenomenon using safe classroom materials"
+        return "guided science practice on the stated criterion using relevant observations and reassessment"
+    if has("read","reads","reading","comprehension","text","texts"):
         return "guided reading and comprehension practice using a short text"
-    if any(x in v for x in ("write", "writing", "sentence", "spell")):
+    if has("write","writes","writing","sentence","sentences","spell","spelling"):
         return "guided sentence writing and spelling correction"
-    if any(x in v for x in ("listen", "listening", "audio")):
+    if has("listen","listens","listening","audio"):
         return "targeted listening and repeated audio practice"
-    if any(x in v for x in ("speak", "speaking", "pronounc", "oral")):
+    if has("speak","speaks","speaking","pronounce","pronunciation","oral"):
         return "guided oral practice with modelling and partner feedback"
-    if any(x in v for x in ("vocabulary", "words", "word")):
+    if has("vocabulary","words","word"):
         return "picture-and-word matching and vocabulary recall practice"
     return "targeted small-group practice followed by a reassessment"
 
 
 def candidates(criterion, subject=""):
     criterion=_clean(criterion)
-    if subject in ("ENGLISH", "MATH_DLP", "SCIENCE_DLP"):
+    if subject in ("ENGLISH", "MATH_DLP", "SCIENCE_DLP", "DLP_MATH", "DLP_SCIENCE"):
         clause=criterion.strip(" .")
-        action=_english_action(clause)
+        action=_english_action(clause, subject)
         return (
             "The lesson was conducted as planned. ____ pupils met the success criterion: "
             + clause + ". ____ pupils have not yet met it and will complete " + action + ".",
