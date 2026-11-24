@@ -42,6 +42,15 @@ def main():
         unit=_unit_rows(y,"MUZIK")
         lessons=sum(len(_lesson_rows(y,"MUZIK",u["value"])) for u in unit)
         assert lessons==35,(y,lessons)
+        for u in unit:
+            for option in _lesson_rows(y,"MUZIK",u["value"]):
+                src = _selected(y,"MUZIK",u["value"],option["value"])
+                layout = src["music"]["preview"]["layout"]
+                fields = {x["label"]: x["value"] for x in layout["header"]}
+                assert len(fields["Standard Pembelajaran"].splitlines()) == len(src["music"]["sp"])
+                for line, code in zip(fields["Standard Pembelajaran"].splitlines(), src["music"]["sp"]):
+                    assert line.startswith(code + " "), (y, option)
+                assert layout["footer"][1]["value"].strip(" _—"), (y, option)
         print("MUZIK DRAF catalog",y,"unit",len(unit),"pdp",lessons,flush=True)
     assert len(_arab_index()) == 298 and _music_index(2)
     os.environ["BOT_TOKEN"]=""
@@ -74,7 +83,7 @@ def main():
                        "time": "08:00 - 09:00", "students": "30"}
             if manual:
                 teacher["reflection"] = reflection
-            expected = reflection if manual else "murid mencapai objektif"
+            expected = reflection if manual else "murid:"
             for fmt in ("word", "pdf"):
                 result = c.post("/internal/rph/v1/other-drafts/render", headers=auth,
                                 json={"selection": selection, "teacher": teacher, "format": fmt})
