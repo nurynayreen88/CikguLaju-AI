@@ -61,6 +61,25 @@ def main():
                         excluded["missing_verified_standard"] += 1
                         continue
                     usable.append(row)
+                # Inspect only source metadata near the disputed end of each sequence.
+                # A number match alone is not academic identity.
+                pi_tail = []
+                for row in pi:
+                    seq = row.get("sequence_no")
+                    if not str(seq or "").isdigit() or int(seq) < EXPECTED["PI"][year-2]-2:
+                        continue
+                    std = [dict(r) for r in con.execute("""
+                        SELECT standard_type,standard_code FROM rpt_entry_standards
+                        WHERE rpt_entry_id=? AND verified=1 ORDER BY standard_type,sequence_no,id
+                        """, (row["id"],))]
+                    pi_tail.append({"sequence_no":seq,"id":row["id"],
+                                    "unit":pi_navigation_unit(row),
+                                    "topic":row.get("topic"),"subtopic":row.get("subtopic"),
+                                    "activity_note":row.get("activity_note"),
+                                    "recitation":is_pi_recitation_session(row),
+                                    "standards":std})
+                report.setdefault("pi_tail", {})[target] = pi_tail
+                print("PI_TAIL", year, json.dumps(pi_tail, ensure_ascii=False), flush=True)
                 bm = _bm_verified_structured_rows(path, year)
                 groups = defaultdict(list)
                 for row in bm:
@@ -72,6 +91,24 @@ def main():
                     if not seqs: unnumbered += 1
                     elif len(seqs) != 1: ambiguous += 1
                     else: seq_groups[next(iter(seqs))] += 1
+                # The native BM structured groups have no numeric PdP labels.
+                # Report source fields and alternative verified RPT rows; never
+                # infer a number from the group position.
+                sample_fields = ("theme","unit_code","unit_title","topic","source_sequence_no",
+                                 "week_no","sk_code","sp_code")
+                bm_sample = [{k:r.get(k) for k in sample_fields} for r in bm[:4]]
+                bm_master = [dict(r) for r in con.execute("""
+                    SELECT id,sequence_no,unit_title,topic FROM rpt_entries
+                    WHERE subject='Bahasa Melayu' AND year_label=? AND verified=1
+                    AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%'
+                    ORDER BY sequence_no,id""", (target,))]
+                bm_nums = numbers(bm_master, "sequence_no")
+                report.setdefault("bm_alternative_source", {})[target] = {
+                    "structured_sample":bm_sample,"master_rows":len(bm_master),
+                    "master_number_count":len(bm_nums),"master_number_min":min(bm_nums,default=None),
+                    "master_number_max":max(bm_nums,default=None),
+                    "master_sample":bm_master[:4]}
+                print("BM_SOURCE",year,json.dumps(report["bm_alternative_source"][target],ensure_ascii=False),flush=True)
                 for code, actual, extra in (
                     ("PI", Counter(int(r["sequence_no"]) for r in usable
                                    if str(r.get("sequence_no") or "").isdigit()),
