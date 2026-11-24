@@ -169,7 +169,23 @@ def reflow_verified_pi_header(state, story):
         ("TOPPADDING", (0, 0), (-1, -1), 3),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
     ]))
-    body = Table([list(row) for row in rows[8:]],
+    from web.rph_pi_jawi_numerals_20261124 import PAK21
+    body_rows=[list(row) for row in rows[8:]]
+    for row in body_rows:
+        label=row[1]
+        label_text=_flow_text(label)
+        if "EMK" in label_text or "KBAT" in label_text or PAK21.search(label_text):
+            revised=PAK21.sub("PAK 21",label_text)
+            if isinstance(label,Paragraph):
+                from html import escape
+                row[1]=Paragraph("<b>"+escape(revised)+"</b>",label.style)
+            else:
+                # Keep the native bold label shaper and its existing font.
+                label=copy(label)
+                label.text=revised
+                if hasattr(label,"_img"):label._img=None
+                row[1]=label
+    body = Table(body_rows,
                  colWidths=[124 * mm, 48 * mm], hAlign="CENTER")
     body.setStyle(TableStyle([
         ("GRID", (0, 0), (-1, -1), 0.5, colors.black),
