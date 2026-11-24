@@ -82,6 +82,8 @@ def main():
     source_specific_recitation=[]
     registry=json.loads(Path("staging/pendidikan_islam/active_activity_source_registry_20261125.json").read_text(encoding="utf8"))
     source_registry={entry["year"]:entry for entry in registry["years"]}
+    page_evidence=json.loads(Path("staging/pendidikan_islam/active_dskp_text_page_evidence_20261125.json").read_text(encoding="utf8"))
+    dskp_pages={entry["year"]:entry.get("code_page_candidates",{}) for entry in page_evidence["years"]}
     try:
         runtime.DB_PATH=str(db)
         runtime.CIKGULAJU_DB_V2600_ACTIVE=True
@@ -177,6 +179,12 @@ def main():
         repeated={x["text"] for x in report["identical_candidate_clusters"]}
         for item in candidate_bank:
             item["same_candidate_as_another_pdp"]=normalized(item["candidate_main"]) in repeated
+            codes=[str(code).translate(DIGITS) for code in item["sp_codes"]]
+            item["dskp_text_layer_pages_by_sp"]={code:dskp_pages[item["year"]].get(code,[]) for code in codes}
+            item["dskp_code_page_candidates_complete"]=bool(codes) and all(item["dskp_text_layer_pages_by_sp"].values())
+            item["reference_review_type"]=("MUSHAF_TASMIK" if item["source_recitation_only"] and not item["textbook_pages_claim"] else
+                "TEXTBOOK_PAGE_CLAIM_REVIEW" if item["textbook_pages_claim"] else "TEXTBOOK_PAGE_MISSING_REVIEW")
+            item["dskp_visual_check_required"]=True
             assert not item["candidate_missing_source_steps"], item["id"]
             assert not item["ready"]
         assert len({x["id"] for x in candidate_bank})==len(candidate_bank)
@@ -195,6 +203,8 @@ def main():
         print("PI_FULL_CANDIDATE_BANK",json.dumps({"total":len(candidate_bank),"years":dict(Counter(x["year"] for x in candidate_bank)),
             "same_candidate_review":sum(x["same_candidate_as_another_pdp"] for x in candidate_bank),
             "textbook_reference_claim_available":sum(bool(x["textbook_pages_claim"]) for x in candidate_bank),
+            "reference_review_types":dict(Counter(x["reference_review_type"] for x in candidate_bank)),
+            "dskp_text_page_candidate_complete":sum(x["dskp_code_page_candidates_complete"] for x in candidate_bank),
             "ready":0}),flush=True)
         print("PI_ACTIVITY_QUALITY",json.dumps(report["years"],ensure_ascii=False),flush=True)
         for e in report["examples"][:20]:
