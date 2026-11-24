@@ -272,8 +272,8 @@ def options():
                         ]
                         if year in (2, 3) and request.args.get("curriculum", "kssr") == "kssr":
                             # Preserve the original verified SK subject and offer DPK separately.
-                            items = [{**row, "label": "Matematik (SK)"} if row.get("value") == "MATH" else row for row in items if row.get("value") != "MATH_DPK3"]
-                            items.append({"value": "MATH_DPK3", "label": "Matematik (DPK Edisi 3)"})
+                            items = [{**row, "label": "Matematik SK"} if row.get("value") == "MATH" else row for row in items if row.get("value") != "MATH_DPK3"]
+                            items.append({"value": "MATH_DPK3", "label": "Matematik SK (DPK Edisi 3)"})
                         if year in range(2, 7):
                             from web.unified_rph_web import source_records
                             for code, label in (("MORAL", "Pendidikan Moral"),
