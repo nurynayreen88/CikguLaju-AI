@@ -10,8 +10,8 @@ permissions:
   contents: read
 jobs:
   batch:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,7 +22,7 @@ jobs:
       - name: Install native PDF converter and Arabic font
         run: |
           timeout 240 sudo apt-get update
-          timeout 420 sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri
+          timeout 1200 sudo apt-get -o Acquire::Retries=3 install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri
       - name: Convert all 178 Word candidates and check A4
         run: |
           python - <<'PY'
