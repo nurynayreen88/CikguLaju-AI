@@ -190,6 +190,35 @@ def _selection(state, *, root=ROOT):
     return lesson
 
 
+def _source_reflection(state, source, previous):
+    """Blank achievement counts, real target, no change to original activity/PBD.
+    
+    Preserve manual and already specific reflections; aquatic V2 uses its
+    independent renderer. Do not suggest water skill achievement on land.
+    """
+    manual = state.get("rph_teacher_reflection")
+    if isinstance(manual, str) and manual.strip():
+        return manual
+    if str(state.get("rph_reflection_mode") or "").casefold() == "manual":
+        return ""
+    old = str(previous or "").strip()
+    if old and not re.search(r"murid (?:mencapai|menguasai) (?:objektif|kriteria kejayaan)", old, re.I):
+        return old
+    labels = source["fields"]
+    pbd = labels.get("pengukuhan/pbd") or labels.get("pengukuhan dan penilaian (pbd)") or labels.get("pentaksiran/pbd", "")
+    if source["subject"] == "pj" and re.search(r"BELUM DITAKSIR|amali.{0,40}air|pengawasan kompeten", pbd, re.I):
+        return "____ / ____ murid mencapai sasaran PdP: " + source["title"] + ". Amali air hanya direkod jika benar-benar ditaksir."
+    criterion = labels.get("kriteria kejayaan") or source["objective"]
+    # First complete numbered objective (if any); no shortening mid-clause.
+    target = re.split(r"\s+\(2\)\s+", criterion, maxsplit=1)[0].strip()
+    target = re.sub(r"^\(1\)\s*", "", target).rstrip(". ")
+    if len(target) > 145 or re.search(r"menunjukkan hasil pembelajaran bagi SP|melaksanakan kemahiran SP", target, re.I):
+        # Prefer exact year/component-specific skill text over generic scaffold.
+        standard = source["standard_descriptions"]["sp"].split(" · ", 1)[0]
+        target = re.sub(r"^\d+\.\d+\.\d+\s+", "", standard).rstrip(". ")
+    return "____ / ____ murid mencapai sasaran: " + target + ". Baki dibimbing."
+
+
 def adapt_rows(state, rows, *, root=ROOT):
     source = _selection(state, root=root)
     if source is None or not isinstance(rows, dict):
@@ -215,6 +244,7 @@ def adapt_rows(state, rows, *, root=ROOT):
         "BAHAN BANTU MENGAJAR": labels.get("bbm") or labels.get("bahan")
             or "Kad situasi, alat bantu mengajar selamat mengikut tajuk.",
         "EMK / NILAI": "Keselamatan, kerjasama dan bertanggungjawab.",
+        "REFLEKSI": _source_reflection(state, source, rows.get("REFLEKSI")),
     })
     return result
 

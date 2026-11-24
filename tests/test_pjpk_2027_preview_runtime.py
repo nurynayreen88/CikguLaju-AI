@@ -11,6 +11,29 @@ from web import pjpk_2027_preview_runtime as preview
 
 
 class PJPKDraftRuntimeTests(unittest.TestCase):
+    def test_all_339_source_linked_reflections_preserve_activities(self):
+        count = 0
+        for subject, short in preview.SUBJECTS.items():
+            for year in range(2, 7):
+                for row in preview.list_lessons(year, subject):
+                    state = {"year": f"Tahun {year}", "subject": subject,
+                             "lesson_no": str(row["lesson"]), "sp_code": row["sp"][0],
+                             "_pjpk_2027_preview_selection": {"year": year, "subject": short, "lesson": row["lesson"]}}
+                    original = {"REFLEKSI": "____ / ____ murid mencapai objektif.", "KELAS": ""}
+                    out = preview.adapt_rows(state, original)
+                    self.assertTrue(out["REFLEKSI"].startswith("____ / ____ murid mencapai sasaran"))
+                    self.assertNotEqual(out["REFLEKSI"], original["REFLEKSI"])
+                    self.assertEqual(out["OBJEKTIF PEMBELAJARAN"], row["objective"])
+                    self.assertTrue(all(a in out["AKTIVITI UTAMA"] for a in row["activities"]))
+                    self.assertEqual(out["STANDARD PEMBELAJARAN"], row["standard_descriptions"]["sp"])
+                    self.assertEqual(preview.adapt_rows({**state, "rph_teacher_reflection": "Catatan guru."}, original)["REFLEKSI"], "Catatan guru.")
+                    self.assertEqual(preview.adapt_rows({**state, "rph_reflection_mode": "manual"}, original)["REFLEKSI"], "")
+                    self.assertEqual(out["KELAS"], "")
+                    if short == "pj" and year == 3 and row["lesson"] == 22:
+                        self.assertIn("Amali air hanya direkod jika benar-benar ditaksir", out["REFLEKSI"])
+                    count += 1
+        self.assertEqual(count, 339)
+
     def test_all_339_numbered_rph_match_current_rpt_manifest(self):
         indexed = preview._manifest(str(preview.ROOT))
         self.assertEqual(len(indexed), 339)
