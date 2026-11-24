@@ -44,8 +44,31 @@ def compact_pi_identity(data):
                     e=pr.find(W+tag)
                     if e is None:e=etree.SubElement(pr,W+tag)
                     e.set(W+"val","1" if i==0 else "0")
+        # Only the two known labels were removed at this stage.
         after=Counter(n.text or "" for n in root.iter(W+"t"))
         assert before-after==Counter(removed) and not after-before
+        # Centre the complete three-line identity vertically within the
+        # existing right-hand panel. Preserve right-to-left alignment.
+        props=cells[0].find(W+"tcPr")
+        align=props.find(W+"vAlign")
+        if align is None:align=etree.SubElement(props,W+"vAlign")
+        align.set(W+"val","center")
+        # Remove just the matched character span in the topic value runs.
+        from web.rph_pi_topic_display_20261124 import duration_span
+        topic=lines[2]
+        nodes=list(topic.iter(W+"t"))
+        full="".join(n.text or "" for n in nodes)
+        span=duration_span(full)
+        if span is not None:
+            start,end=span
+            offset=0
+            for n in nodes:
+                value=n.text or ""
+                a=max(0,start-offset)
+                b=min(len(value),end-offset)
+                if a<b:n.text=value[:a]+value[b:]
+                offset+=len(value)
+            assert text(topic)==full[:start]+full[end:]
         out=BytesIO()
         with ZipFile(out,"w") as dest:
             for item in z.infolist():
