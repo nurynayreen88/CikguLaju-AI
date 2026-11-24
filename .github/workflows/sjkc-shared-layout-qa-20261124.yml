@@ -1,0 +1,18 @@
+name: SJKC shared layout QA
+on:
+  pull_request:
+    paths:
+      - 'tools/sjkc_math_shared_layout_qa_20261124.py'
+      - 'tests/test_sjkc_math_shared_layout_20261124.py'
+      - '.github/workflows/sjkc-shared-layout-qa-20261124.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice-writer fonts-noto-cjk
+      - run: pip install python-docx pymupdf pypdf
+      - run: python -m unittest discover -s tests -p test_sjkc_math_shared_layout_20261124.py -v
