@@ -1,0 +1,525 @@
+{
+  "status": "HOLD",
+  "year": 4,
+  "subject": "数学（华小）",
+  "unit": "分数、小数与百分比",
+  "dskp_source": "https://fliphtml5.com/dsymy/mozv",
+  "dskp_printed_pages": [
+    37,
+    38
+  ],
+  "textbook_source": "https://fliphtml5.com/fpdbc/cfnl/",
+  "note": "Original teaching candidates with textbook section page ranges. Detailed verification and RPT scheduling pending; no menu publication.",
+  "records": [
+    {
+      "candidate_id": "T4-U2-C01",
+      "sk": "2.1",
+      "sp": "2.1.1",
+      "topic": "假分数化为带分数",
+      "objective": "把五个假分数转换为带分数或整数。",
+      "criterion": "至少四题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "用分数条展示超过一个整体的分数。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生分组利用分数条或除法找出整数部分与余下的分数。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立转换五个新分数，并解释其中一题。"
+        }
+      ],
+      "bbm": "分数条、数轴",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "用图形分组找出完整的单位。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        46,
+        46
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C02",
+      "sk": "2.1",
+      "sp": "2.1.1",
+      "topic": "带分数化为假分数",
+      "objective": "把五个带分数转换为假分数。",
+      "criterion": "至少四题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用两个完整圆形和一部分圆形示范。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生把整数部分转换为同分母分数后再合并。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成五题并反向转换验证。"
+        }
+      ],
+      "bbm": "分数圆、数卡",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "先使用分母较小的分数条。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        47,
+        47
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C03",
+      "sk": "2.1",
+      "sp": "2.1.2",
+      "topic": "分数加法",
+      "objective": "完成四道至三个数的分数加法题，涉及真分数、整数及带分数。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师利用分数条说明通分的必要。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生先找公分母，再计算并化简。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并检查数值合理性。"
+        }
+      ],
+      "bbm": "分数条、练习卡",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "提供公分母提示表。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        48,
+        49
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C04",
+      "sk": "2.1",
+      "sp": "2.1.3",
+      "topic": "两个数的分数减法",
+      "objective": "完成四道涉及整数、真分数和带分数的两数减法。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师通过图示说明借一个整数单位的过程。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生练习通分及借位，并说明运算步骤。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题，选择一题以加法验算。"
+        }
+      ],
+      "bbm": "分数图、白板",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "先练同分母再过渡到异分母。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        50,
+        51
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C05",
+      "sk": "2.1",
+      "sp": "2.1.3",
+      "topic": "三个数的分数连减",
+      "objective": "完成四道涉及三个整数、真分数或带分数的连减题。",
+      "criterion": "至少三题步骤和答案正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师展示依次减去两部分数量的情境。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生按顺序记录中间结果，并比较不同解法。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立计算四题及验算。"
+        }
+      ],
+      "bbm": "分数条、算式卡",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "将连减算式拆成两个步骤。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        50,
+        51
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C06",
+      "sk": "2.1",
+      "sp": "2.1.4",
+      "topic": "分数加减混合运算",
+      "objective": "完成四道涉及整数、真分数和带分数的加减混合算式。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范同级运算按顺序进行。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生利用公分母表完成混合算式，并互相解释。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并复核结果。"
+        }
+      ],
+      "bbm": "分数条、算式卡",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "先用同分母算式分步练习。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        52,
+        53
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C07",
+      "sk": "2.1",
+      "sp": "2.1.5",
+      "topic": "分数与数量",
+      "objective": "求出四道真分数或带分数所表示的数量。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师将实物平均分组，说明一个分数单位的数量。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生运用条形图找出若干分数单位的数量。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立解决四道数量题并用图示验证一题。"
+        }
+      ],
+      "bbm": "计数物、条形图",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "先以可整除的小数量练习。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        54,
+        55
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C08",
+      "sk": "2.2",
+      "sp": "2.2.1",
+      "topic": "小数加法",
+      "objective": "完成四道至三个数、至三位小数的加法题。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师利用数位表说明小数点对齐。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生在数位表中补零并进行加法。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题，估算后核对答案。"
+        }
+      ],
+      "bbm": "小数数位表、算式卡",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "使用两位小数逐步扩展。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        58,
+        59
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C09",
+      "sk": "2.2",
+      "sp": "2.2.2",
+      "topic": "小数减法",
+      "objective": "完成四道至三个数、至三位小数的减法题。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用数位表示范小数减法的借位。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生完成两数与三数减法，并解释补零方法。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并以加法检查。"
+        }
+      ],
+      "bbm": "数位表、练习卡",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "先使用无需借位的题目。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        60,
+        61
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C10",
+      "sk": "2.2",
+      "sp": "2.2.3",
+      "topic": "小数乘法",
+      "objective": "完成四道小数与一位数或10、100、1000相乘的算式，积至三位小数。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用数位表展示乘法前后的数位变化。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生比较逐位计算与乘十的倍数的策略。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并判断积的合理性。"
+        }
+      ],
+      "bbm": "数位表、数轴",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "先以一位小数和较小乘数示范。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        62,
+        63
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C11",
+      "sk": "2.2",
+      "sp": "2.2.4",
+      "topic": "小数除法",
+      "objective": "完成四道小数除以一位数或10、100、1000的算式，商至三位小数。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师以平均分配情境引出小数除法。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生练习分步试商及数位移动，用乘法验证。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题及验算。"
+        }
+      ],
+      "bbm": "数位表、算式卡",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "从能够整除的简单小数题开始。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        64,
+        65
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C12",
+      "sk": "2.3",
+      "sp": "2.3.1",
+      "topic": "分数与百分比互换",
+      "objective": "完成五道分数和百分比互相转换的题目。",
+      "criterion": "至少四题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用百格图展示整体的百分之一。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生把分数转换为百分数，并用图示核对。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成五道双向转换题。"
+        }
+      ],
+      "bbm": "百格图、分数卡",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "先使用分母为100的分数。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        68,
+        69
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C13",
+      "sk": "2.3",
+      "sp": "2.3.2",
+      "topic": "数量的百分比",
+      "objective": "求出四个指定数量的百分比。",
+      "criterion": "至少三题正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师通过分组图说明百分比表示的部分数量。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用分数转换或单位量法计算指定百分比。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并解释一题。"
+        }
+      ],
+      "bbm": "百格图、计数物",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "先练习10%和50%的计算。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        70,
+        71
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C14",
+      "sk": "2.4",
+      "sp": "2.4.1",
+      "topic": "分数应用题",
+      "objective": "解决三道涉及分数运算或数量的生活应用题。",
+      "criterion": "至少两题列式与答案正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师引导学生找出题目的整体与部分。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生绘制条形图并选择正确运算。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成三道题及检验答案。"
+        }
+      ],
+      "bbm": "情境卡、条形图",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "标记已知条件，提供图示。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        74,
+        76
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    },
+    {
+      "candidate_id": "T4-U2-C15",
+      "sk": "2.4",
+      "sp": "2.4.1",
+      "topic": "小数与百分比应用题",
+      "objective": "解决三道涉及小数或百分比的生活应用题。",
+      "criterion": "至少两题策略与答案正确。",
+      "induction": "教师提出与本课主题相关的生活情境，引导学生复习已学知识。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师展示购买物品或测量数量的简单情境。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生辨认所求数量，选择小数运算或百分比计算。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立解决三题，解释答案是否合理。"
+        }
+      ],
+      "bbm": "情境题卡、百格图",
+      "assessment": "教师依据成功标准检查个人作答，记录错误并给予反馈。",
+      "closure": "学生说明运算或解题方法，教师总结本课重点。",
+      "remedial": "将问题拆分成一个计算步骤。",
+      "extension": "学生设计一道同类问题，交换作答并解释解法。",
+      "textbook_pages": [
+        77,
+        82
+      ],
+      "rpt_pdp": null,
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
+    }
+  ]
+}
