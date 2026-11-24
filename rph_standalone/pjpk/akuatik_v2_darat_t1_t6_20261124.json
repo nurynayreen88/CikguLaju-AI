@@ -58,7 +58,25 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "3.0 Bidang pembelajaran: Rekreasi dan aktiviti luar",
+          "3.1 Subbidang pembelajaran: Rekreasi dan aktiviti luar"
+        ],
+        "psychomotor": [
+          "P3.1.6 Melakukan kemahiran keyakinan dalam air (water confident) seperti masuk ke dalam air, berdiri, berjalan, bobbing, mengapung tiarap, berdiri dalam air dari posisi apungan tiarap dan meluncur (gliding) dengan bantuan alat apungan."
+        ],
+        "cognitive": [
+          "K3.1.7 Mengenal pasti kemahiran bobbing yang betul.",
+          "K3.1.8 Mengenal pasti kemahiran apungan tiarap yang betul.",
+          "K3.1.9 Mengenal pasti kemahiran luncur yang betul.",
+          "K3.1.10 Menyatakan kemahiran keyakinan dalam air."
+        ],
+        "affective": [
+          "A3.1.8 Melakukan aktiviti secara berpasangan dan berkumpulan dengan aktif dan seronok."
+        ]
+      }
     },
     {
       "year": 1,
@@ -115,7 +133,25 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "3.0 Bidang pembelajaran: Rekreasi dan aktiviti luar",
+          "3.1 Subbidang pembelajaran: Rekreasi dan aktiviti luar"
+        ],
+        "psychomotor": [
+          "P3.1.6 Melakukan kemahiran keyakinan dalam air (water confident) seperti masuk ke dalam air, berdiri, berjalan, bobbing, mengapung tiarap, berdiri dalam air dari posisi apungan tiarap dan meluncur (gliding) dengan bantuan alat apungan."
+        ],
+        "cognitive": [
+          "K3.1.7 Mengenal pasti kemahiran bobbing yang betul.",
+          "K3.1.8 Mengenal pasti kemahiran apungan tiarap yang betul.",
+          "K3.1.9 Mengenal pasti kemahiran luncur yang betul.",
+          "K3.1.10 Menyatakan kemahiran keyakinan dalam air."
+        ],
+        "affective": [
+          "A3.1.8 Melakukan aktiviti secara berpasangan dan berkumpulan dengan aktif dan seronok."
+        ]
+      }
     },
     {
       "year": 2,
@@ -172,7 +208,24 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.9 Melakukan kemahiran keyakinan dan keselamatan di air.",
+          "2.8 Mengaplikasikan konsep pergerakan dan prinsip mekanik bagi keyakinan dan keselamatan dalam air.",
+          "5.1 Mematuhi dan mengamalkan elemen pengurusan dan keselamatan."
+        ],
+        "psychomotor": [
+          "1.9.1 Mematuhi peraturan sekitar kolam dan di dalam kolam."
+        ],
+        "cognitive": [
+          "2.8.1 Menjelaskan dengan contoh peraturan di kolam renang."
+        ],
+        "affective": [
+          "5.1.1 Menyatakan persediaan diri dan kesesuaian pakaian mengikut jenis aktiviti yang dijalankan.",
+          "5.1.5 Mematuhi peraturan keselamatan di tempat aktiviti."
+        ]
+      }
     },
     {
       "year": 2,
@@ -225,7 +278,20 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.9 Melakukan kemahiran keyakinan dan keselamatan di air.",
+          "2.8 Mengaplikasikan konsep pergerakan dan prinsip mekanik bagi keyakinan dan keselamatan dalam air."
+        ],
+        "psychomotor": [
+          "1.9.2 Melakukan kemahiran apungan lentang."
+        ],
+        "cognitive": [
+          "2.8.2 Membahaskan postur badan semasa melakukan apungan lentang."
+        ],
+        "affective": []
+      }
     },
     {
       "year": 2,
@@ -278,7 +344,20 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.9 Melakukan kemahiran keyakinan dan keselamatan di air.",
+          "2.8 Mengaplikasikan konsep pergerakan dan prinsip mekanik bagi keyakinan dan keselamatan dalam air."
+        ],
+        "psychomotor": [
+          "1.9.3 Melakukan kemahiran berdiri dalam air dari posisi apungan lentang."
+        ],
+        "cognitive": [
+          "2.8.3 Mengenal pasti teknik dirian selepas apungan lentang."
+        ],
+        "affective": []
+      }
     },
     {
       "year": 2,
@@ -334,7 +413,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.10 Melakukan kemahiran asas renang dengan lakuan yang betul.",
+          "2.9 Mengaplikasikan konsep pergerakan dan prinsip mekanik bagi kemahiran asas renang.",
+          "5.1 Mematuhi dan mengamalkan elemen pengurusan dan keselamatan."
+        ],
+        "psychomotor": [
+          "1.10.1 Melakukan tendangan keribas (flutter kick) dengan postur badan yang betul."
+        ],
+        "cognitive": [
+          "2.9.1 Menjelaskan turutan postur badan semasa melakukan tendangan keribas (flutter kick)."
+        ],
+        "affective": [
+          "5.1.3 Mengenal pasti alatan yang selamat digunakan."
+        ]
+      }
     },
     {
       "year": 3,
@@ -390,7 +485,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.11 Melakukan kemahiran keyakinan dan keselamatan dalam air.",
+          "2.11 Mengaplikasi konsep keyakinan dan keselamatan dalam air.",
+          "5.1 Mematuhi dan mengamalkan elemen pengurusan dan keselamatan."
+        ],
+        "psychomotor": [
+          "1.11.1 Mengawal pernafasan untuk satu jangka masa semasa di bawah permukaan air."
+        ],
+        "cognitive": [
+          "2.11.1 Menjelaskan cara mengawal pernafasan di bawah permukaan air."
+        ],
+        "affective": [
+          "5.1.1 Menyatakan persediaan diri dan kesesuaian pakaian mengikut jenis aktiviti yang dijalankan."
+        ]
+      }
     },
     {
       "year": 3,
@@ -448,7 +559,25 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.12 Melakukan kemahiran renang dengan lakuan yang betul.",
+          "2.12 Mengaplikasikan konsep pergerakan dan prinsip mekanik dalam kemahiran renang.",
+          "5.1 Mematuhi dan mengamalkan elemen pengurusan dan keselamatan.",
+          "5.2 Menunjukkan keyakinan dan tanggungjawab kendiri semasa melakukan aktiviti fizikal."
+        ],
+        "psychomotor": [
+          "1.12.1 Melakukan tendangan keribas (flutter kick) dalam posisi meniarap untuk satu jarak dengan bantuan alat apungan.",
+          "1.12.2 Melakukan tendangan keribas dalam posisi telentang untuk satu jarak dengan bantuan alat apungan."
+        ],
+        "cognitive": [
+          "2.12.1 Membezakan lakuan tendangan keribas (flutter kick) antara posisi tiarap dengan telentang."
+        ],
+        "affective": [
+          "5.2.2 Menerima cabaran dan seronok semasa melakukan aktiviti."
+        ]
+      }
     },
     {
       "year": 4,
@@ -505,7 +634,24 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.12 Melakukan kemahiran keyakinan air dan keselamatan dalam air.",
+          "2.12 Mengaplikasikan konsep keyakinan dan keselamatan dalam air.",
+          "5.2 Menunjukkan keyakinan dan tanggungjawab kendiri semasa melakukan aktiviti fizikal."
+        ],
+        "psychomotor": [
+          "1.12.1 Melakukan reaching rescue dengan menggunakan alatan yang terdapat di persekitaran kolam."
+        ],
+        "cognitive": [
+          "2.12.1 Menerangkan kesesuaian peralatan yang boleh digunakan untuk reaching rescue.",
+          "2.12.2 Menerangkan posisi badan yang selamat semasa melakukan reaching rescue."
+        ],
+        "affective": [
+          "5.2.2 Melakukan pelbagai pergerakan berkemahiran dengan yakin."
+        ]
+      }
     },
     {
       "year": 4,
@@ -562,7 +708,24 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.13 Melakukan kemahiran renang dengan lakuan yang betul.",
+          "2.13 Mengaplikasikan konsep pergerakan dan prinsip mekanik dalam kemahiran renang.",
+          "5.2 Menunjukkan keyakinan dan tanggungjawab kendiri semasa melakukan aktiviti fizikal."
+        ],
+        "psychomotor": [
+          "1.13.1 Melakukan aksi tangan kuak rangkak dengan bantuan dan bernafas.",
+          "1.13.2 Melakukan kuak rangkak."
+        ],
+        "cognitive": [
+          "2.13.1 Menyatakan perkaitan antara pergerakan kaki dan tangan dengan pernafasan dalam kuak rangkak."
+        ],
+        "affective": [
+          "5.2.4 Menerima cabaran dan berasa seronok semasa melakukan aktiviti."
+        ]
+      }
     },
     {
       "year": 5,
@@ -618,7 +781,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.12 Melakukan kemahiran keyakinan dan keselamatan dalam air.",
+          "2.12 Mengaplikasikan konsep keyakinan dan keselamatan dalam air.",
+          "5.1 Mematuhi dan mengamalkan elemen pengurusan dan keselamatan."
+        ],
+        "psychomotor": [
+          "1.12.1 Membaling alat bantuan (throwing rescue) kepada sasaran di dalam air."
+        ],
+        "cognitive": [
+          "2.12.1 Membezakan alat bantuan yang sesuai untuk dihulur atau dibaling semasa memberi bantuan menyelamat."
+        ],
+        "affective": [
+          "5.1.3 Mematuhi peraturan keselamatan di tempat melakukan aktiviti."
+        ]
+      }
     },
     {
       "year": 5,
@@ -674,7 +853,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.12 Melakukan kemahiran keyakinan dan keselamatan dalam air.",
+          "2.12 Mengaplikasikan konsep keyakinan dan keselamatan dalam air.",
+          "5.1 Mematuhi dan mengamalkan elemen pengurusan dan keselamatan."
+        ],
+        "psychomotor": [
+          "1.12.2 Melakukan bobbing di air dalam (deep water bobbing) sambil bergerak ke hadapan."
+        ],
+        "cognitive": [
+          "2.12.2 Mengenal pasti pergerakan tapak tangan semasa melakukan bobbing di air dalam."
+        ],
+        "affective": [
+          "5.1.4 Mengenal pasti ruang selamat untuk melakukan aktiviti."
+        ]
+      }
     },
     {
       "year": 5,
@@ -730,7 +925,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.13 Melakukan kemahiran renang dengan lakuan yang betul.",
+          "2.13 Mengaplikasikan konsep pergerakan dan prinsip mekanik dalam kemahiran renang.",
+          "5.2 Menunjukkan keyakinan dan tanggungjawab kendiri semasa melakukan aktiviti fizikal."
+        ],
+        "psychomotor": [
+          "1.13.1 Melakukan aksi tangan kuak dada dengan bantuan serta bernafas."
+        ],
+        "cognitive": [
+          "2.13.1 Menjelaskan perkaitan antara pergerakan kaki, tangan dan pernafasan dalam kuak dada."
+        ],
+        "affective": [
+          "5.2.1 Mempamerkan keyakinan untuk melakukan pelbagai kemahiran pergerakan."
+        ]
+      }
     },
     {
       "year": 5,
@@ -786,7 +997,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.13 Melakukan kemahiran renang dengan lakuan yang betul.",
+          "2.13 Mengaplikasikan konsep pergerakan dan prinsip mekanik dalam kemahiran renang.",
+          "5.2 Menunjukkan keyakinan dan tanggungjawab kendiri semasa melakukan aktiviti fizikal."
+        ],
+        "psychomotor": [
+          "1.13.2 Melakukan aksi kaki kuak dada dengan bantuan."
+        ],
+        "cognitive": [
+          "2.13.2 Menjelaskan koordinasi kaki dan tangan dalam lakuan kuak dada."
+        ],
+        "affective": [
+          "5.2.3 Menerima cabaran dan berasa seronok semasa melakukan aktiviti."
+        ]
+      }
     },
     {
       "year": 5,
@@ -843,7 +1070,24 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.13 Melakukan kemahiran renang dengan lakuan yang betul.",
+          "2.13 Mengaplikasikan konsep pergerakan dan prinsip mekanik dalam kemahiran renang.",
+          "5.2 Menunjukkan keyakinan dan tanggungjawab kendiri semasa melakukan aktiviti fizikal."
+        ],
+        "psychomotor": [
+          "1.13.3 Melakukan kuak dada."
+        ],
+        "cognitive": [
+          "2.13.1 Menjelaskan perkaitan antara pergerakan kaki, tangan dan pernafasan dalam kuak dada.",
+          "2.13.2 Menjelaskan koordinasi kaki dan tangan dalam lakuan kuak dada."
+        ],
+        "affective": [
+          "5.2.3 Menerima cabaran dan berasa seronok semasa melakukan aktiviti."
+        ]
+      }
     },
     {
       "year": 6,
@@ -899,7 +1143,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.12 Melakukan kemahiran keyakinan dan keselamatan di air.",
+          "2.12 Mengaplikasikan konsep keyakinan dan keselamatan di air.",
+          "5.1 Mematuhi dan mengamalkan elemen pengurusan dan keselamatan."
+        ],
+        "psychomotor": [
+          "1.12.1 Melakukan tindakan menyelamat serta merta dengan menghulur atau membaling alat bantuan menyelamat mengikut situasi kelemasan di dalam kolam."
+        ],
+        "cognitive": [
+          "2.12.1 Menjelaskan tindakan menyelamat serta merta yang wajar dilakukan bagi menangani situasi kelemasan di dalam kolam."
+        ],
+        "affective": [
+          "5.1.3 Menyenaraikan kebaikan mematuhi peraturan keselamatan."
+        ]
+      }
     },
     {
       "year": 6,
@@ -955,7 +1215,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.12 Melakukan kemahiran keyakinan dan keselamatan di air.",
+          "2.12 Mengaplikasikan konsep keyakinan dan keselamatan di air.",
+          "5.1 Mematuhi dan mengamalkan elemen pengurusan dan keselamatan."
+        ],
+        "psychomotor": [
+          "1.12.2 Melakukan kemahiran menjejak air (water treading) dengan bantuan."
+        ],
+        "cognitive": [
+          "2.12.2 Mengenal pasti pergerakan tangan dan kaki yang boleh membantu mengekalkan kepala di permukaan air semasa menjejak air."
+        ],
+        "affective": [
+          "5.1.4 Menentukan ruang yang selamat untuk melakukan aktiviti."
+        ]
+      }
     },
     {
       "year": 6,
@@ -1011,7 +1287,23 @@
         "time": "",
         "students": ""
       },
-      "ready": false
+      "ready": false,
+      "standard_descriptions": {
+        "sk": [
+          "1.13 Melakukan kemahiran renang dengan lakuan yang betul.",
+          "2.13 Mengaplikasikan konsep pergerakan dan prinsip mekanik dalam kemahiran renang.",
+          "5.2 Menunjukkan keyakinan dan tanggungjawab kendiri semasa melakukan aktiviti fizikal."
+        ],
+        "psychomotor": [
+          "1.13.1 Melakukan kuak dada atau kuak rangkak pada satu jarak."
+        ],
+        "cognitive": [
+          "2.13.1 Menjelaskan teknik pernafasan semasa melakukan kuak dada atau kuak rangkak pada satu jarak."
+        ],
+        "affective": [
+          "5.2.4 Menerima cabaran dan berasa seronok semasa melakukan aktiviti."
+        ]
+      }
     }
   ]
 }
