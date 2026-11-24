@@ -49,9 +49,9 @@ class TestBmKp2027Rph(TestCase):
                 codes.add(actual["sp_code"])
                 if original["sk_code"] in updated:
                     counts[original["sk_code"]]+=1
-                    self.assertEqual(actual,{**original,"sk":updated[original["sk_code"]]})
+                    self.assertEqual({**actual,"activities":original["activities"]},{**original,"sk":updated[original["sk_code"]]})
                 else:
-                    self.assertEqual(actual,original)
+                    self.assertEqual({**actual,"activities":original["activities"]},original)
         self.assertEqual(counts,{"3.2":69,"4.1":41})
         self.assertEqual(len(codes),26)
         self.assertEqual(bm.approved_source(),raw["records"])
@@ -69,6 +69,29 @@ class TestBmKp2027Rph(TestCase):
             with fitz.open(stream=bm.render("A",n,"pdf",{}),filetype="pdf") as pdf:
                 text=" ".join(" ".join(p.get_text().split()) for p in pdf)
                 self.assertIn(expected,text)
+
+    def test_reviewed_activity_order_all_353_and_no_unavailable_textbook(self):
+        raw=json.loads(bm.SOURCE.read_text("utf-8"))["records"]
+        changed={"A":0,"B":0}
+        for group,count in bm.COUNTS.items():
+            for n in range(1,count+1):
+                original=raw[group][str(n)]
+                actual=bm.lesson(group,n)
+                preferred=raw["A"][str(bm._ACTIVITY_ORDER_ANCHORS[actual["sp_code"]])]["activities"]
+                self.assertEqual(actual["activities"],preferred)
+                self.assertCountEqual(actual["activities"],original["activities"])
+                changed[group]+=int(actual["activities"]!=original["activities"])
+                for key in ("activities","induction","criteria","material","pbd","closure","remedial","extension"):
+                    value=actual[key]
+                    text=" ".join(value) if isinstance(value,list) else value
+                    self.assertNotRegex(text.lower(),r"buku teks|buku aktiviti|halaman|muka surat|textbook|workbook|page\\s+\\d")
+        self.assertEqual(changed,{"A":111,"B":109})
+        self.assertEqual(bm.approved_source(),raw)
+
+    def test_unmatched_activity_source_is_never_replaced(self):
+        raw=bm.approved_source()
+        original={**raw["A"]["8"],"activities":["A new teacher-led activity","Different guided practice","New independent exercise"]}
+        self.assertIs(bm._ordered_activities(original,raw),original)
 
     def test_rph_word_pdf_and_teacher_metadata(self):
         import fitz
