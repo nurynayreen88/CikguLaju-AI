@@ -1,0 +1,356 @@
+{
+  "status": "HOLD",
+  "year": 4,
+  "subject": "数学（华小）",
+  "unit": "时间与时刻",
+  "dskp_source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-4-SJKC.pdf",
+  "dskp_printed_pages": [
+    48,
+    49
+  ],
+  "textbook_source": "https://anyflip.com/zehqn/akxt/basic/51-100",
+  "note": "All 8 SP codes and topic scope visually checked on printed pages 48–49. Eleven original lesson candidates, with broad standards split by unit combination. Textbook page references, calendar, final PdP allocation, pedagogical review and native Word/PDF validation pending. Not READY.",
+  "records": [
+    {
+      "candidate_id": "T4-U4-C01",
+      "sk": "4.1",
+      "sp": "4.1.1",
+      "topic": "十二时与二十四时制",
+      "objective": "转换六个十二时制与二十四时制的时刻，包括正午和午夜。",
+      "criterion": "六题至少五题正确。",
+      "induction": "比较车票和家中时钟的显示。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师利用双时制时钟说明下午、正午和午夜。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生配对两种时制的时刻卡，并解释转换方法。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立转换六个时刻并检查正午与午夜。"
+        }
+      ],
+      "bbm": "时钟模型、时刻卡",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "先用整点转换。",
+      "extension": "根据二十四时制编写一日行程。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C02",
+      "sk": "4.2",
+      "sp": "4.2.1",
+      "topic": "计算相隔时间",
+      "objective": "计算四段不超过24小时的相隔时间，以小时和分钟表示。",
+      "criterion": "四题至少三题正确。",
+      "induction": "展示两班巴士的出发与到达时间。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师在时间轴标出起点、整点与终点。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用跳跃法求跨整点和跨午夜的时长。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四道时长题并用时间轴验证。"
+        }
+      ],
+      "bbm": "时间轴、时钟模型",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "先练不跨整点的题目。",
+      "extension": "已知时长与结束时刻，求开始时刻。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C03",
+      "sk": "4.3",
+      "sp": "4.3.1",
+      "topic": "估算活动时间",
+      "objective": "参照一分钟及一小时估计三项日常活动的时长，并与实测或真实记录比较。",
+      "criterion": "完成三项估计及比较，至少两项能解释差异。",
+      "induction": "请学生估计整理书桌需要多久。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师利用计时器建立一分钟的参照。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生估计短活动的时长后实际计时，并参考真实记录估计较长活动。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生记录三组估计值和实测或真实值，说明误差。"
+        }
+      ],
+      "bbm": "计时器、活动记录表",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "提供一分钟参照及两个估计选项。",
+      "extension": "为一项新活动选择合适的时间参照。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C04",
+      "sk": "4.4",
+      "sp": "4.4.1",
+      "topic": "年与年代、世纪、千禧",
+      "objective": "说明年、年代、世纪和千禧之间的数量关系。",
+      "criterion": "三组关系全部正确。",
+      "induction": "观察历史时间线上的年份。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用十年格、百年格和千年图示解释数量关系。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生排列时间单位卡并用图表示相互关系。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立填写三组数量关系并口头说明一组。"
+        }
+      ],
+      "bbm": "时间线、单位卡",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "先以十年和百年的关系示范。",
+      "extension": "比较两个虚构历史事件相隔的年数。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C05",
+      "sk": "4.4",
+      "sp": "4.4.2",
+      "topic": "小时与天、天与星期",
+      "objective": "完成六道小时与天及天与星期的双向换算。",
+      "criterion": "六题至少五题正确。",
+      "induction": "观察一周作息表。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用日历及24小时图说明换算因数。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生练习乘法和除法换算并说明单位。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成六题，包括余数以复合单位表示的题目。"
+        }
+      ],
+      "bbm": "日历、单位换算表",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "先练整数倍换算。",
+      "extension": "编写一道包含天和小时的换算题。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C06",
+      "sk": "4.4",
+      "sp": "4.4.2",
+      "topic": "月与年、年与年代和世纪",
+      "objective": "完成六道月与年及年与年代、世纪的换算。",
+      "criterion": "六题至少五题正确。",
+      "induction": "展示跨年度的模拟项目计划。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用12个月日历和年代图说明换算关系。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生分类选择乘或除，处理整倍与剩余单位。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成六道新题并标明单位。"
+        }
+      ],
+      "bbm": "日历、年代图",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "提供单位关系卡。",
+      "extension": "比较两种单位表示的同一时间段。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C07",
+      "sk": "4.5",
+      "sp": "4.5.1",
+      "topic": "小时与天、天与星期的加减",
+      "objective": "完成四道涉及至三个时长的加减算式。",
+      "criterion": "四题至少三题正确。",
+      "induction": "比较连续几天活动的总时长。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范以24小时或7天进行进位和退位。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生利用日历和竖式处理不同单位的加减。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并检查换算后的单位。"
+        }
+      ],
+      "bbm": "日历、算式卡",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "先用不进位、不退位的算式。",
+      "extension": "解释一道需要退位的题目。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C08",
+      "sk": "4.5",
+      "sp": "4.5.1",
+      "topic": "月与年、年与年代和世纪的加减",
+      "objective": "完成四道涉及至三个时长的加减算式，涵盖月年及年、年代、世纪。",
+      "criterion": "四题至少三题正确。",
+      "induction": "比较不同长度的虚构建设计划。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师展示以12个月或10年、100年换算的方法。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生按单位列式，进行必要的进位或退位。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并以逆运算检查。"
+        }
+      ],
+      "bbm": "年代图、日历、练习卡",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "提供换算关系及分步算式。",
+      "extension": "用两种表示方式核对同一答案。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C09",
+      "sk": "4.5",
+      "sp": "4.5.2",
+      "topic": "小时与天、天与星期的乘除",
+      "objective": "完成四道时长与至两位数的乘除题。",
+      "criterion": "四题至少三题正确。",
+      "induction": "提出连续多周重复活动的时间安排。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范先换成较小单位再乘除的策略。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生利用活动卡列式并将结果换回合适单位。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并检查答案。"
+        }
+      ],
+      "bbm": "时间表、算式卡",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "先以一位数乘除。",
+      "extension": "设计一道每周重复活动的总时长题。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C10",
+      "sk": "4.5",
+      "sp": "4.5.2",
+      "topic": "月与年、年与年代和世纪的乘除",
+      "objective": "完成五道涉及月年及年与年代、世纪的乘除题，乘数或除数至两位数。",
+      "criterion": "五题至少四题正确。",
+      "induction": "展示不同阶段的虚构长期计划。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范统一时间单位后再计算。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生比较直接计算与先换算的方法。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成五题，包含全部指定单位组合。"
+        }
+      ],
+      "bbm": "时间单位表、任务卡",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "提供换算因数并先练整除。",
+      "extension": "用逆运算解释一道除法题。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U4-C11",
+      "sk": "4.6",
+      "sp": "4.6.1",
+      "topic": "时间应用题",
+      "objective": "解决四道涉及日常时刻、时长及时间单位运算的问题。",
+      "criterion": "四题至少三题列式和答案正确。",
+      "induction": "展示旅行、课程和活动的模拟时间表。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用时间轴示范整理条件、选择运算与验算。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生分组解决两个不同类型的应用题并比较方法。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立解答四道新题，检查答案的合理性。"
+        }
+      ],
+      "bbm": "模拟时间表、时间轴",
+      "assessment": "教师按照本课成功标准检查学生独立作答，记录实际掌握人数。",
+      "closure": "学生解释本课的一种解题方法，教师纠正错误。",
+      "remedial": "标记已知条件和所求量。",
+      "extension": "设计一题含两步运算的行程问题。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    }
+  ]
+}
