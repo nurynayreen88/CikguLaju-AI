@@ -1,0 +1,263 @@
+{
+  "status": "HOLD",
+  "year": 4,
+  "subject": "数学（华小）",
+  "unit": "钱币",
+  "dskp_source": "https://fliphtml5.com/dsymy/mozv/",
+  "dskp_crosscheck": [
+    "https://anyflip.com/xzmqr/mxus/basic/51-91",
+    "https://anyflip.com/ysqd/pngh/basic/51-88"
+  ],
+  "textbook_source": "https://anyflip.com/zehqn/akxt/basic/51-100",
+  "note": "Eight original teaching candidates; SP topic alignment provisional from indexed source excerpts and parallel language cross-check. Full document access blocked. No official wording, textbook page numbers, final PdP sequence, or remaining SP coverage asserted. Do not publish.",
+  "records": [
+    {
+      "candidate_id": "T4-U3-C01",
+      "sk": "3.1",
+      "sp": "3.1.1",
+      "topic": "币值加法",
+      "objective": "计算四道最多三个币值的加法题，总额不超过RM100 000。",
+      "criterion": "四题至少三题正确。",
+      "induction": "展示三张购物收据，估算总支出。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范对齐令吉和仙。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生组合价目卡，列式计算并互相检查。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题，用估算核对总额。"
+        }
+      ],
+      "bbm": "价目卡、模拟钱币",
+      "assessment": "教师按成功标准检查独立作答，记录实际掌握情况。",
+      "closure": "学生说出本课的一项关键方法或概念，教师纠正误解。",
+      "remedial": "先用整数币值，再加入仙。",
+      "extension": "学生设计同类任务并说明答案的依据。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C02",
+      "sk": "3.1",
+      "sp": "3.1.2",
+      "topic": "币值减法",
+      "objective": "计算四道从一个币值减去一个或两个币值的题，限RM100 000。",
+      "criterion": "四题至少三题正确。",
+      "induction": "展示预算与两项购买支出。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师以余额图示范逐次扣除。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用模拟账单记录每次付款后的余额。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立计算四题，用加法复核。"
+        }
+      ],
+      "bbm": "预算卡、模拟收据",
+      "assessment": "教师按成功标准检查独立作答，记录实际掌握情况。",
+      "closure": "学生说出本课的一项关键方法或概念，教师纠正误解。",
+      "remedial": "先练一次扣除再练两次扣除。",
+      "extension": "学生设计同类任务并说明答案的依据。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C03",
+      "sk": "3.1",
+      "sp": "3.1.3",
+      "topic": "币值乘法",
+      "objective": "计算四道币值乘以不超过两位数的题，积不超过RM100 000。",
+      "criterion": "四题至少三题正确。",
+      "induction": "比较购买一套和十二套文具的价钱。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师以拆分乘数示范计算。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生利用商品卡求不同数量的总价。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并估算。"
+        }
+      ],
+      "bbm": "商品卡、数位表",
+      "assessment": "教师按成功标准检查独立作答，记录实际掌握情况。",
+      "closure": "学生说出本课的一项关键方法或概念，教师纠正误解。",
+      "remedial": "先用一位数乘数。",
+      "extension": "学生设计同类任务并说明答案的依据。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C04",
+      "sk": "3.1",
+      "sp": "3.1.4",
+      "topic": "币值除法",
+      "objective": "计算四道RM100 000以内币值除以不超过两位数的题。",
+      "criterion": "四题至少三题正确。",
+      "induction": "提出班级活动费用平均分担的情境。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范整除与小数点的处理。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生以费用卡分配相同款额，并用乘法核对。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并解释一题。"
+        }
+      ],
+      "bbm": "费用卡、白板",
+      "assessment": "教师按成功标准检查独立作答，记录实际掌握情况。",
+      "closure": "学生说出本课的一项关键方法或概念，教师纠正误解。",
+      "remedial": "先用能整除的整令吉数。",
+      "extension": "学生设计同类任务并说明答案的依据。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C05",
+      "sk": "3.2",
+      "sp": "3.2.1",
+      "topic": "币值加减混合运算",
+      "objective": "解决四道RM100 000以内的币值加减混合算式。",
+      "criterion": "四题至少三题正确。",
+      "induction": "展示活动经费、额外收入及付款记录。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用收支流程图展示先后计算。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生根据三项交易列式并逐步求余额。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并核对中间结果。"
+        }
+      ],
+      "bbm": "收支卡、流程图",
+      "assessment": "教师按成功标准检查独立作答，记录实际掌握情况。",
+      "closure": "学生说出本课的一项关键方法或概念，教师纠正误解。",
+      "remedial": "将混合算式拆成两个步骤。",
+      "extension": "学生设计同类任务并说明答案的依据。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C06",
+      "sk": "3.3",
+      "sp": "3.3.3",
+      "topic": "储蓄和开支记录",
+      "objective": "从一份模拟收支表找出三项资料，并说明保存记录的两项用途。",
+      "criterion": "五项至少四项正确。",
+      "induction": "比较有记录和没有记录的零用钱情况。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范日期、收入、支出及余额栏。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用虚构交易填写一周记录并核对余额。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立回答五个记录与用途问题。"
+        }
+      ],
+      "bbm": "虚构收支记录表",
+      "assessment": "教师按成功标准检查独立作答，记录实际掌握情况。",
+      "closure": "学生说出本课的一项关键方法或概念，教师纠正误解。",
+      "remedial": "提供已填写部分栏位的记录表。",
+      "extension": "学生设计同类任务并说明答案的依据。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C07",
+      "sk": "3.5",
+      "sp": "3.5.1",
+      "topic": "世界主要国家的货币",
+      "objective": "辨认五组国家与货币配对。",
+      "criterion": "五项至少四项正确。",
+      "induction": "观察不同国家的模拟纸币图卡。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师区分国家、货币名称和符号。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生配对马来西亚及其他主要国家的货币卡。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成五组新排列的配对。"
+        }
+      ],
+      "bbm": "货币图卡、世界地图",
+      "assessment": "教师按成功标准检查独立作答，记录实际掌握情况。",
+      "closure": "学生说出本课的一项关键方法或概念，教师纠正误解。",
+      "remedial": "提供国家与货币名称提示。",
+      "extension": "学生设计同类任务并说明答案的依据。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C08",
+      "sk": "3.5",
+      "sp": "3.5.2",
+      "topic": "令吉与外币汇率",
+      "objective": "从教师提供的有日期的汇率表正确读取五项RM1对应的外币数值。",
+      "criterion": "五项至少四项正确。",
+      "induction": "观察两张不同日期的示例汇率表。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师说明表头、单位及汇率会变化。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生小组根据标明日期的资料找出指定货币的对应值。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立读出五项数据并注明日期。"
+        }
+      ],
+      "bbm": "注明日期的汇率资料、任务卡",
+      "assessment": "教师按成功标准检查独立作答，记录实际掌握情况。",
+      "closure": "学生说出本课的一项关键方法或概念，教师纠正误解。",
+      "remedial": "先圈出RM1对应的一列。",
+      "extension": "学生设计同类任务并说明答案的依据。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+    }
+  ]
+}
