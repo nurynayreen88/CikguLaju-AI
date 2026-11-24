@@ -16,3 +16,31 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y libreoffice-writer fonts-noto-cjk
       - run: pip install python-docx pymupdf pypdf
       - run: python -m unittest discover -s tests -p test_sjkc_math_shared_layout_20261124.py -v
+
+      - name: Export visual QA samples
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import pymupdf
+          from staging.matematik_sjkc.tahun_2 import rph as y2
+          from staging.matematik_sjkc.tahun_3 import rph as y3
+          from tools.sjkc_math_shared_layout_qa_20261124 import word_for, pdf_for_qa
+          out = Path("qa-sjkc-visual")
+          out.mkdir(exist_ok=True)
+          for year, source in ((2,y2),(3,y3)):
+              for i in (0,16,95):
+                  lesson = source.lessons()[i]
+                  name = f"T{year}_PdP{lesson['pdp']:03}"
+                  word = word_for(year,lesson)
+                  pdf = pdf_for_qa(word)
+                  (out / (name+".docx")).write_bytes(word)
+                  (out / (name+".pdf")).write_bytes(pdf)
+                  with pymupdf.open(stream=pdf,filetype="pdf") as doc:
+                      assert len(doc)==1, name
+                      doc[0].get_pixmap(matrix=pymupdf.Matrix(1.5,1.5)).save(out / (name+".png"))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sjkc-visual-qa-six-lessons
+          path: qa-sjkc-visual/
+          retention-days: 7
