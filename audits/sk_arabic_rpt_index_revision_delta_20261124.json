@@ -1,0 +1,2433 @@
+{
+  "status": "QA_ONLY_NOT_PUBLISHED",
+  "scope": "Compare historical staging RPT index with main source index, not claim live PDF contains old exact rows",
+  "old_ref": "feat/rpt2027-sejarah-pjpk-unified-staging-20261107",
+  "current_ref": "main",
+  "policy": "Retain original calendar and approved cover; new codes need source statements and alignment verification. No changes to existing RPT/RPH.",
+  "groups": {
+    "A": {
+      "source_path": "rpt_2027/bahasa_arab/rpt_2027_KUMPULAN_A_INDEKS_PDP_DRAF.csv",
+      "current_sha": "9ab0a3643dbb05ac468a7c33c8a742880860dba3",
+      "old_sha": "b7da02ca42450aec90c6002abda5e0cc0e8cafb7",
+      "stats": {
+        "2": {
+          "count": 60,
+          "changes": 32,
+          "sp": 27,
+          "new_codes": [
+            "2.2.3",
+            "2.3.3",
+            "2.2.4",
+            "2.1.2",
+            "1.4.3",
+            "2.4.4",
+            "2.4.2",
+            "2.4.3",
+            "2.5.3",
+            "1.4.2"
+          ],
+          "coverage": 27
+        },
+        "3": {
+          "count": 60,
+          "changes": 32,
+          "sp": 21,
+          "new_codes": [
+            "2.2.4",
+            "1.4.5",
+            "2.4.4",
+            "3.4.1"
+          ],
+          "coverage": 23
+        },
+        "4": {
+          "count": 58,
+          "changes": 0,
+          "sp": 0,
+          "new_codes": [],
+          "coverage": 25
+        },
+        "5": {
+          "count": 60,
+          "changes": 0,
+          "sp": 0,
+          "new_codes": [],
+          "coverage": 25
+        },
+        "6": {
+          "count": 60,
+          "changes": 0,
+          "sp": 0,
+          "new_codes": [],
+          "coverage": 25
+        }
+      },
+      "changes": [
+        {
+          "tahun": 2,
+          "pdp": "018",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Pengukuhan membaca kata bunyi و dan س",
+            "halaman_buku": "31"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Membezakan suku kata wau dan sin",
+            "halaman_buku": "31"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit2_pdp013_028_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_018.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "021",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca perkataan ahli keluarga",
+            "halaman_buku": "34"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Meniru bacaan suku kata ahli keluarga",
+            "halaman_buku": "34"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit2_pdp013_028_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_021.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "022",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Menyusun dan mengenal nama ahli keluarga",
+            "halaman_buku": "35"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.3",
+            "fokus": "Membezakan suku kata dalam nama ahli keluarga",
+            "halaman_buku": "34–35"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit2_pdp013_028_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_022.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "030",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membina dan membaca kata berhuruf ه",
+            "halaman_buku": "51"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Kenal pasti suku kata huruf ha",
+            "halaman_buku": "51"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_030.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "032",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca kata melalui suku kata anggota badan",
+            "halaman_buku": "53"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.4",
+            "fokus": "Bina suku kata huruf ra",
+            "halaman_buku": "53"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_032.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "034",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Permainan pengukuhan kata bunyi ه dan ر",
+            "halaman_buku": "55"
+          },
+          "current": {
+            "sk": "2.1",
+            "sp": "2.1.2",
+            "fokus": "Kedudukan huruf ha dan ra",
+            "halaman_buku": "55"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_034.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "035",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.1",
+            "fokus": "Mendengar kosa kata deria muka",
+            "halaman_buku": "56"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Ulang sebut kosa kata wajah",
+            "halaman_buku": "56"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_035.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "036",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.2",
+            "fokus": "Mendengar arahan penjagaan anggota badan",
+            "halaman_buku": "57"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Kenal anggota badan yang disebut",
+            "halaman_buku": "57"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_036.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "037",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca kata bagi anggota badan",
+            "halaman_buku": "58"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.5",
+            "fokus": "Ulang baca nama bahagian muka",
+            "halaman_buku": "58"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_037.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "038",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Membaca perkataan anggota badan pada ilustrasi",
+            "halaman_buku": "59"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.3",
+            "fokus": "Bezakan suku kata nama anggota",
+            "halaman_buku": "59"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_038.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "039",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Ayat mudah mengenal anggota badan dengan هذا/هذه",
+            "halaman_buku": "61"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Ulang ayat menggunakan hadha",
+            "halaman_buku": "61"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_039.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "040",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Ayat mudah tentang anggota dan kebersihan",
+            "halaman_buku": "62"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.3",
+            "fokus": "Padankan ayat hadhihi",
+            "halaman_buku": "62"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_040.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "041",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Membaca dialog 'Apakah ini?' tentang anggota",
+            "halaman_buku": "63"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.4",
+            "fokus": "Lakonkan dialog anggota badan",
+            "halaman_buku": "63"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_041.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "042",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.2",
+            "fokus": "Membaca ayat pemilikan anggota badan",
+            "halaman_buku": "64"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.2",
+            "fokus": "Kenal pasti ayat indi",
+            "halaman_buku": "64"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_042.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "043",
+          "previous": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Menyebut ayat berangkai penjagaan kebersihan",
+            "halaman_buku": "65"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.3",
+            "fokus": "Bezakan frasa dengan kata sifat",
+            "halaman_buku": "65"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_043.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "044",
+          "previous": {
+            "sk": "3.2",
+            "sp": "3.2.1",
+            "fokus": "Membaca dan menulis nombor tujuh belas hingga dua puluh",
+            "halaman_buku": "69"
+          },
+          "current": {
+            "sk": "2.5",
+            "sp": "2.5.3",
+            "fokus": "Bezakan dan baca nombor 17–20",
+            "halaman_buku": "69"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_044.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "045",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar dan mengecam bunyi ف",
+            "halaman_buku": "76"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Ulang bunyi huruf fa",
+            "halaman_buku": "76"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_045.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "046",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca kata berhuruf ف",
+            "halaman_buku": "77"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Kenal pasti suku kata berhuruf fa",
+            "halaman_buku": "77"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_046.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "047",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar bunyi ط dalam perkataan",
+            "halaman_buku": "78"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Ulang bunyi huruf ta",
+            "halaman_buku": "78"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_047.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "048",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca kata daripada segmen ط",
+            "halaman_buku": "79"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Kenal pasti suku kata berhuruf ta",
+            "halaman_buku": "79"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_048.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "049",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar dan mengecam huruf ق",
+            "halaman_buku": "80"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Ulang bunyi huruf qaf",
+            "halaman_buku": "80"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_049.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "050",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca perkataan berhuruf ق",
+            "halaman_buku": "81"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Kenal pasti suku kata qaf",
+            "halaman_buku": "81"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_050.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "051",
+          "previous": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Menulis kata yang mengandungi ف ط ق",
+            "halaman_buku": "82"
+          },
+          "current": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Salin bentuk fa, ta dan qaf",
+            "halaman_buku": "82"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_051.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "052",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Ulang kaji fonetik ف dan ق melalui padanan",
+            "halaman_buku": "83"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Ulang bacaan suku kata fa",
+            "halaman_buku": "83"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_052.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "053",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.1",
+            "fokus": "Mendengar kosa kata alat tulis di kedai",
+            "halaman_buku": "84"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Ulang sebut nama alat sekolah",
+            "halaman_buku": "84"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_053.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "054",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca nama peralatan sekolah",
+            "halaman_buku": "86"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Bezakan suku kata nama alat",
+            "halaman_buku": "86"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_054.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "055",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Membezakan jenis alat tulis berdasarkan bacaan",
+            "halaman_buku": "87"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.2",
+            "fokus": "Kenal pasti suku kata nama alat",
+            "halaman_buku": "87"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_055.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "056",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Ayat kata tunjuk untuk alat sekolah",
+            "halaman_buku": "89"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Ulang ayat dengan hadha",
+            "halaman_buku": "89"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_056.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "057",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Menggunakan هذا dan هذه dalam aktiviti kedai",
+            "halaman_buku": "90"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.3",
+            "fokus": "Kenal pasti hadha dan hadhihi",
+            "halaman_buku": "90"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_057.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "058",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Membaca dialog 'Apakah ini?' dalam kedai",
+            "halaman_buku": "91"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.2",
+            "fokus": "Hafal dan lafazkan dialog",
+            "halaman_buku": "91"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_058.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "059",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.2",
+            "fokus": "Membaca ayat lokasi barang sekolah",
+            "halaman_buku": "93"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.2",
+            "fokus": "Padankan ayat lokasi dengan gambar",
+            "halaman_buku": "93"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_059.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "060",
+          "previous": {
+            "sk": "3.3",
+            "sp": "3.3.1",
+            "fokus": "Menulis ayat lokasi alat sekolah",
+            "halaman_buku": "94"
+          },
+          "current": {
+            "sk": "3.4",
+            "sp": "3.4.1",
+            "fokus": "Salin ayat lokasi alat sekolah",
+            "halaman_buku": "94"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_060.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "029",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mengecam bunyi ح melalui gambar",
+            "halaman_buku": "60"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi ح dalam perkataan",
+            "halaman_buku": "60"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_029.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "030",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Mengenal bentuk huruf ح dan خ dalam bacaan",
+            "halaman_buku": "61"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Menirukan bacaan suku kata ح dengan sukun atau syaddah",
+            "halaman_buku": "61"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_030.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "031",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar dan membezakan sebutan ث",
+            "halaman_buku": "62"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi ث dalam perkataan",
+            "halaman_buku": "63"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_031.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "032",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membina perkataan berunsur ث",
+            "halaman_buku": "63"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.4",
+            "fokus": "Membina perkataan daripada suku kata berhuruf ث",
+            "halaman_buku": "64"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_032.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "033",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.2",
+            "fokus": "Membaca suku kata dengan bunyi ث dan ذ",
+            "halaman_buku": "64"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Menirukan bacaan suku kata huruf ث dan ذ",
+            "halaman_buku": "64 & 67"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_033.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "034",
+          "previous": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Mencantum dan menulis segmen bunyi",
+            "halaman_buku": "66"
+          },
+          "current": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Menulis huruf ذ secara tunggal dan bersambung daripada kanan",
+            "halaman_buku": "68"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_034.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "035",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.3",
+            "fokus": "Pengukuhan bacaan dan padanan empat bunyi",
+            "halaman_buku": "68"
+          },
+          "current": {
+            "sk": "2.1",
+            "sp": "2.1.2",
+            "fokus": "Mengenal pasti huruf fokus ح، ث dan ذ dalam bacaan",
+            "halaman_buku": "69"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_035.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "036",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.1",
+            "fokus": "Mendengar nama warna dalam situasi melukis",
+            "halaman_buku": "69"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Mengenal pasti nama warna yang didengar",
+            "halaman_buku": "70"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_036.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "037",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca nama warna pada menu minuman",
+            "halaman_buku": "72"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.5",
+            "fokus": "Membaca perkataan nama warna secara lengkap",
+            "halaman_buku": "72"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_037.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "038",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Membaca variasi warna pada belon",
+            "halaman_buku": "73"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Membezakan suku kata yang dibaca dalam perkataan warna",
+            "halaman_buku": "73"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_038.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "039",
+          "previous": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Mengenal dan menulis suku kata warna",
+            "halaman_buku": "75"
+          },
+          "current": {
+            "sk": "3.3",
+            "sp": "3.3.1",
+            "fokus": "Menulis perkataan nama warna dalam silang kata",
+            "halaman_buku": "78"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_039.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "040",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Membaca nama warna melalui buah-buahan",
+            "halaman_buku": "76"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.1",
+            "fokus": "Menirukan bacaan ayat tentang warna objek",
+            "halaman_buku": "76"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_040.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "041",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Memperkenalkan warna objek dalam situasi sosial",
+            "halaman_buku": "80"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.5",
+            "fokus": "Melakonkan dialog lisan tentang warna objek",
+            "halaman_buku": "77"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_041.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "042",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Mengenal warna benda dalam perbualan luar kelas",
+            "halaman_buku": "82"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Memilih perkataan warna yang didengar daripada pilihan",
+            "halaman_buku": "82"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_042.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "043",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Membaca semula kosa kata warna dan huruf",
+            "halaman_buku": "84"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Menirukan bacaan suku kata daripada perkataan warna yang didengar",
+            "halaman_buku": "83"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_043.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "044",
+          "previous": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Bertanya dan menjawab tentang warna benda",
+            "halaman_buku": "85"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Menirukan soalan dan jawapan tentang warna dengan intonasi sesuai",
+            "halaman_buku": "76"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_044.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "045",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar bunyi huruf ظ",
+            "halaman_buku": "88"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi ظ dalam perkataan",
+            "halaman_buku": "88"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_045.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "046",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca dan membezakan bentuk ظ",
+            "halaman_buku": "89"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Menirukan bacaan suku kata ظ",
+            "halaman_buku": "89"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_046.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "047",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar bunyi غ dalam perkataan",
+            "halaman_buku": "90"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi غ dalam perkataan",
+            "halaman_buku": "91"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_047.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "048",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca kata berhuruf غ",
+            "halaman_buku": "91"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.4",
+            "fokus": "Membina perkataan daripada suku kata غ",
+            "halaman_buku": "92"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_048.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "049",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.2",
+            "fokus": "Mengecam bunyi ص melalui gambar",
+            "halaman_buku": "92"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi ض dengan vokal pendek dan panjang",
+            "halaman_buku": "94"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_049.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "050",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.2",
+            "fokus": "Membina kata melalui huruf ص",
+            "halaman_buku": "93"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Membezakan suku kata ض yang dibaca",
+            "halaman_buku": "95"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_050.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "051",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.3",
+            "fokus": "Mengukuhkan bacaan bunyi ض",
+            "halaman_buku": "94"
+          },
+          "current": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Menulis ض tunggal dan bersambung",
+            "halaman_buku": "96"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_051.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "052",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.1",
+            "fokus": "Mendengar kosa kata rutin harian",
+            "halaman_buku": "97"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Mengenal pasti nama hari yang didengar",
+            "halaman_buku": "98"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_052.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "053",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Menyatakan waktu semalam, hari ini dan esok",
+            "halaman_buku": "98"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Menirukan sebutan perkataan hari dan waktu",
+            "halaman_buku": "99"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_053.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "054",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca jadual hari dan aktiviti kantin",
+            "halaman_buku": "99"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.5",
+            "fokus": "Membaca nama hari dan waktu dalam jadual",
+            "halaman_buku": "100"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_054.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "055",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.2",
+            "fokus": "Mendengar dan mengenal waktu aktiviti harian",
+            "halaman_buku": "103"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.3",
+            "fokus": "Mengenal pasti frasa hari yang didengar",
+            "halaman_buku": "103"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_055.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "056",
+          "previous": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Dialog ringkas tentang waktu pulang atau keluar",
+            "halaman_buku": "104"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Menirukan frasa tentang waktu makan",
+            "halaman_buku": "104"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_056.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "057",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Membaca ayat berkaitan hari dan rutin",
+            "halaman_buku": "105"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.4",
+            "fokus": "Melakonkan dialog ringkas yang dibaca",
+            "halaman_buku": "105"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_057.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "058",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.2",
+            "fokus": "Membaca jadual aktiviti mingguan",
+            "halaman_buku": "108"
+          },
+          "current": {
+            "sk": "3.4",
+            "sp": "3.4.1",
+            "fokus": "Menyalin frasa tentang hari, waktu makan dan ucapan perpisahan",
+            "halaman_buku": "108"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_058.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "059",
+          "previous": {
+            "sk": "2.4",
+            "sp": "2.4.1",
+            "fokus": "Membaca ungkapan rutin dan masa dalam konteks",
+            "halaman_buku": "115"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.1",
+            "fokus": "Menirukan bacaan rangkai kata hari daripada persembahan buku",
+            "halaman_buku": "113"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_059.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "060",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.3",
+            "fokus": "Mengenal nombor rumah dalam peta lingkungan",
+            "halaman_buku": "109"
+          },
+          "current": {
+            "sk": "3.4",
+            "sp": "3.4.1",
+            "fokus": "Menulis semula frasa hari dan waktu daripada aktiviti ulang kaji",
+            "halaman_buku": "109"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_060.md"
+        }
+      ]
+    },
+    "B": {
+      "source_path": "rpt_2027/bahasa_arab/rpt_2027_KUMPULAN_B_INDEKS_PDP_DRAF.csv",
+      "current_sha": "0d8eea060f1c69f2b0db17cfd4a6264b3947ed5b",
+      "old_sha": "809cd365b5b51c9d4973613c16b4ad7f64c7edc8",
+      "stats": {
+        "2": {
+          "count": 60,
+          "changes": 32,
+          "sp": 27,
+          "new_codes": [
+            "2.2.3",
+            "2.3.3",
+            "2.2.4",
+            "2.1.2",
+            "1.4.3",
+            "2.4.4",
+            "2.4.2",
+            "2.4.3",
+            "2.5.3",
+            "1.4.2"
+          ],
+          "coverage": 27
+        },
+        "3": {
+          "count": 60,
+          "changes": 32,
+          "sp": 21,
+          "new_codes": [
+            "2.2.4",
+            "1.4.5",
+            "2.4.4",
+            "3.4.1"
+          ],
+          "coverage": 23
+        },
+        "4": {
+          "count": 58,
+          "changes": 0,
+          "sp": 0,
+          "new_codes": [],
+          "coverage": 25
+        },
+        "5": {
+          "count": 60,
+          "changes": 0,
+          "sp": 0,
+          "new_codes": [],
+          "coverage": 25
+        },
+        "6": {
+          "count": 60,
+          "changes": 0,
+          "sp": 0,
+          "new_codes": [],
+          "coverage": 25
+        }
+      },
+      "changes": [
+        {
+          "tahun": 2,
+          "pdp": "018",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Pengukuhan membaca kata bunyi و dan س",
+            "halaman_buku": "31"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Membezakan suku kata wau dan sin",
+            "halaman_buku": "31"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit2_pdp013_028_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_018.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "021",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca perkataan ahli keluarga",
+            "halaman_buku": "34"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Meniru bacaan suku kata ahli keluarga",
+            "halaman_buku": "34"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit2_pdp013_028_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_021.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "022",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Menyusun dan mengenal nama ahli keluarga",
+            "halaman_buku": "35"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.3",
+            "fokus": "Membezakan suku kata dalam nama ahli keluarga",
+            "halaman_buku": "34–35"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit2_pdp013_028_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_022.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "030",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membina dan membaca kata berhuruf ه",
+            "halaman_buku": "51"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Kenal pasti suku kata huruf ha",
+            "halaman_buku": "51"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_030.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "032",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca kata melalui suku kata anggota badan",
+            "halaman_buku": "53"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.4",
+            "fokus": "Bina suku kata huruf ra",
+            "halaman_buku": "53"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_032.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "034",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Permainan pengukuhan kata bunyi ه dan ر",
+            "halaman_buku": "55"
+          },
+          "current": {
+            "sk": "2.1",
+            "sp": "2.1.2",
+            "fokus": "Kedudukan huruf ha dan ra",
+            "halaman_buku": "55"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_034.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "035",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.1",
+            "fokus": "Mendengar kosa kata deria muka",
+            "halaman_buku": "56"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Ulang sebut kosa kata wajah",
+            "halaman_buku": "56"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_035.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "036",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.2",
+            "fokus": "Mendengar arahan penjagaan anggota badan",
+            "halaman_buku": "57"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Kenal anggota badan yang disebut",
+            "halaman_buku": "57"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_036.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "037",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca kata bagi anggota badan",
+            "halaman_buku": "58"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.5",
+            "fokus": "Ulang baca nama bahagian muka",
+            "halaman_buku": "58"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_037.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "038",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Membaca perkataan anggota badan pada ilustrasi",
+            "halaman_buku": "59"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.3",
+            "fokus": "Bezakan suku kata nama anggota",
+            "halaman_buku": "59"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_038.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "039",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Ayat mudah mengenal anggota badan dengan هذا/هذه",
+            "halaman_buku": "61"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Ulang ayat menggunakan hadha",
+            "halaman_buku": "61"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_039.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "040",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Ayat mudah tentang anggota dan kebersihan",
+            "halaman_buku": "62"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.3",
+            "fokus": "Padankan ayat hadhihi",
+            "halaman_buku": "62"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_040.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "041",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Membaca dialog 'Apakah ini?' tentang anggota",
+            "halaman_buku": "63"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.4",
+            "fokus": "Lakonkan dialog anggota badan",
+            "halaman_buku": "63"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_041.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "042",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.2",
+            "fokus": "Membaca ayat pemilikan anggota badan",
+            "halaman_buku": "64"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.2",
+            "fokus": "Kenal pasti ayat indi",
+            "halaman_buku": "64"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_042.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "043",
+          "previous": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Menyebut ayat berangkai penjagaan kebersihan",
+            "halaman_buku": "65"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.3",
+            "fokus": "Bezakan frasa dengan kata sifat",
+            "halaman_buku": "65"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_043.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "044",
+          "previous": {
+            "sk": "3.2",
+            "sp": "3.2.1",
+            "fokus": "Membaca dan menulis nombor tujuh belas hingga dua puluh",
+            "halaman_buku": "69"
+          },
+          "current": {
+            "sk": "2.5",
+            "sp": "2.5.3",
+            "fokus": "Bezakan dan baca nombor 17–20",
+            "halaman_buku": "69"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_044.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "045",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar dan mengecam bunyi ف",
+            "halaman_buku": "76"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Ulang bunyi huruf fa",
+            "halaman_buku": "76"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_045.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "046",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca kata berhuruf ف",
+            "halaman_buku": "77"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Kenal pasti suku kata berhuruf fa",
+            "halaman_buku": "77"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_046.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "047",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar bunyi ط dalam perkataan",
+            "halaman_buku": "78"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Ulang bunyi huruf ta",
+            "halaman_buku": "78"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_047.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "048",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca kata daripada segmen ط",
+            "halaman_buku": "79"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Kenal pasti suku kata berhuruf ta",
+            "halaman_buku": "79"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_048.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "049",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar dan mengecam huruf ق",
+            "halaman_buku": "80"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Ulang bunyi huruf qaf",
+            "halaman_buku": "80"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_049.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "050",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca perkataan berhuruf ق",
+            "halaman_buku": "81"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Kenal pasti suku kata qaf",
+            "halaman_buku": "81"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_050.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "051",
+          "previous": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Menulis kata yang mengandungi ف ط ق",
+            "halaman_buku": "82"
+          },
+          "current": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Salin bentuk fa, ta dan qaf",
+            "halaman_buku": "82"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_051.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "052",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Ulang kaji fonetik ف dan ق melalui padanan",
+            "halaman_buku": "83"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Ulang bacaan suku kata fa",
+            "halaman_buku": "83"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_052.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "053",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.1",
+            "fokus": "Mendengar kosa kata alat tulis di kedai",
+            "halaman_buku": "84"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Ulang sebut nama alat sekolah",
+            "halaman_buku": "84"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_053.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "054",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca nama peralatan sekolah",
+            "halaman_buku": "86"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Bezakan suku kata nama alat",
+            "halaman_buku": "86"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_054.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "055",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Membezakan jenis alat tulis berdasarkan bacaan",
+            "halaman_buku": "87"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.2",
+            "fokus": "Kenal pasti suku kata nama alat",
+            "halaman_buku": "87"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_055.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "056",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Ayat kata tunjuk untuk alat sekolah",
+            "halaman_buku": "89"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Ulang ayat dengan hadha",
+            "halaman_buku": "89"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_056.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "057",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Menggunakan هذا dan هذه dalam aktiviti kedai",
+            "halaman_buku": "90"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.3",
+            "fokus": "Kenal pasti hadha dan hadhihi",
+            "halaman_buku": "90"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_057.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "058",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Membaca dialog 'Apakah ini?' dalam kedai",
+            "halaman_buku": "91"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.2",
+            "fokus": "Hafal dan lafazkan dialog",
+            "halaman_buku": "91"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_058.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "059",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.2",
+            "fokus": "Membaca ayat lokasi barang sekolah",
+            "halaman_buku": "93"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.2",
+            "fokus": "Padankan ayat lokasi dengan gambar",
+            "halaman_buku": "93"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_059.md"
+        },
+        {
+          "tahun": 2,
+          "pdp": "060",
+          "previous": {
+            "sk": "3.3",
+            "sp": "3.3.1",
+            "fokus": "Menulis ayat lokasi alat sekolah",
+            "halaman_buku": "94"
+          },
+          "current": {
+            "sk": "3.4",
+            "sp": "3.4.1",
+            "fokus": "Salin ayat lokasi alat sekolah",
+            "halaman_buku": "94"
+          },
+          "source": "rpt_2027/bahasa_arab/year2_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year2/lesson_060.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "029",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mengecam bunyi ح melalui gambar",
+            "halaman_buku": "60"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi ح dalam perkataan",
+            "halaman_buku": "60"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_029.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "030",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Mengenal bentuk huruf ح dan خ dalam bacaan",
+            "halaman_buku": "61"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Menirukan bacaan suku kata ح dengan sukun atau syaddah",
+            "halaman_buku": "61"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_030.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "031",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar dan membezakan sebutan ث",
+            "halaman_buku": "62"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi ث dalam perkataan",
+            "halaman_buku": "63"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_031.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "032",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membina perkataan berunsur ث",
+            "halaman_buku": "63"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.4",
+            "fokus": "Membina perkataan daripada suku kata berhuruf ث",
+            "halaman_buku": "64"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_032.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "033",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.2",
+            "fokus": "Membaca suku kata dengan bunyi ث dan ذ",
+            "halaman_buku": "64"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Menirukan bacaan suku kata huruf ث dan ذ",
+            "halaman_buku": "64 & 67"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_033.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "034",
+          "previous": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Mencantum dan menulis segmen bunyi",
+            "halaman_buku": "66"
+          },
+          "current": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Menulis huruf ذ secara tunggal dan bersambung daripada kanan",
+            "halaman_buku": "68"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_034.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "035",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.3",
+            "fokus": "Pengukuhan bacaan dan padanan empat bunyi",
+            "halaman_buku": "68"
+          },
+          "current": {
+            "sk": "2.1",
+            "sp": "2.1.2",
+            "fokus": "Mengenal pasti huruf fokus ح، ث dan ذ dalam bacaan",
+            "halaman_buku": "69"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_035.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "036",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.1",
+            "fokus": "Mendengar nama warna dalam situasi melukis",
+            "halaman_buku": "69"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Mengenal pasti nama warna yang didengar",
+            "halaman_buku": "70"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_036.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "037",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca nama warna pada menu minuman",
+            "halaman_buku": "72"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.5",
+            "fokus": "Membaca perkataan nama warna secara lengkap",
+            "halaman_buku": "72"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_037.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "038",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.2",
+            "fokus": "Membaca variasi warna pada belon",
+            "halaman_buku": "73"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Membezakan suku kata yang dibaca dalam perkataan warna",
+            "halaman_buku": "73"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_038.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "039",
+          "previous": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Mengenal dan menulis suku kata warna",
+            "halaman_buku": "75"
+          },
+          "current": {
+            "sk": "3.3",
+            "sp": "3.3.1",
+            "fokus": "Menulis perkataan nama warna dalam silang kata",
+            "halaman_buku": "78"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_039.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "040",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Membaca nama warna melalui buah-buahan",
+            "halaman_buku": "76"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.1",
+            "fokus": "Menirukan bacaan ayat tentang warna objek",
+            "halaman_buku": "76"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_040.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "041",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Memperkenalkan warna objek dalam situasi sosial",
+            "halaman_buku": "80"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.5",
+            "fokus": "Melakonkan dialog lisan tentang warna objek",
+            "halaman_buku": "77"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_041.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "042",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Mengenal warna benda dalam perbualan luar kelas",
+            "halaman_buku": "82"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Memilih perkataan warna yang didengar daripada pilihan",
+            "halaman_buku": "82"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_042.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "043",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Membaca semula kosa kata warna dan huruf",
+            "halaman_buku": "84"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Menirukan bacaan suku kata daripada perkataan warna yang didengar",
+            "halaman_buku": "83"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_043.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "044",
+          "previous": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Bertanya dan menjawab tentang warna benda",
+            "halaman_buku": "85"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Menirukan soalan dan jawapan tentang warna dengan intonasi sesuai",
+            "halaman_buku": "76"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_044.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "045",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar bunyi huruf ظ",
+            "halaman_buku": "88"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi ظ dalam perkataan",
+            "halaman_buku": "88"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_045.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "046",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca dan membezakan bentuk ظ",
+            "halaman_buku": "89"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Menirukan bacaan suku kata ظ",
+            "halaman_buku": "89"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_046.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "047",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Mendengar bunyi غ dalam perkataan",
+            "halaman_buku": "90"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi غ dalam perkataan",
+            "halaman_buku": "91"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_047.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "048",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.1",
+            "fokus": "Membaca kata berhuruf غ",
+            "halaman_buku": "91"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.4",
+            "fokus": "Membina perkataan daripada suku kata غ",
+            "halaman_buku": "92"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_048.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "049",
+          "previous": {
+            "sk": "1.1",
+            "sp": "1.1.2",
+            "fokus": "Mengecam bunyi ص melalui gambar",
+            "halaman_buku": "92"
+          },
+          "current": {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "fokus": "Menirukan bunyi ض dengan vokal pendek dan panjang",
+            "halaman_buku": "94"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_049.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "050",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.2",
+            "fokus": "Membina kata melalui huruf ص",
+            "halaman_buku": "93"
+          },
+          "current": {
+            "sk": "2.2",
+            "sp": "2.2.3",
+            "fokus": "Membezakan suku kata ض yang dibaca",
+            "halaman_buku": "95"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_050.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "051",
+          "previous": {
+            "sk": "2.1",
+            "sp": "2.1.3",
+            "fokus": "Mengukuhkan bacaan bunyi ض",
+            "halaman_buku": "94"
+          },
+          "current": {
+            "sk": "3.1",
+            "sp": "3.1.1",
+            "fokus": "Menulis ض tunggal dan bersambung",
+            "halaman_buku": "96"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_051.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "052",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.1",
+            "fokus": "Mendengar kosa kata rutin harian",
+            "halaman_buku": "97"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.2",
+            "fokus": "Mengenal pasti nama hari yang didengar",
+            "halaman_buku": "98"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_052.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "053",
+          "previous": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Menyatakan waktu semalam, hari ini dan esok",
+            "halaman_buku": "98"
+          },
+          "current": {
+            "sk": "1.3",
+            "sp": "1.3.1",
+            "fokus": "Menirukan sebutan perkataan hari dan waktu",
+            "halaman_buku": "99"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_053.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "054",
+          "previous": {
+            "sk": "2.2",
+            "sp": "2.2.1",
+            "fokus": "Membaca jadual hari dan aktiviti kantin",
+            "halaman_buku": "99"
+          },
+          "current": {
+            "sk": "2.3",
+            "sp": "2.3.5",
+            "fokus": "Membaca nama hari dan waktu dalam jadual",
+            "halaman_buku": "100"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_054.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "055",
+          "previous": {
+            "sk": "1.2",
+            "sp": "1.2.2",
+            "fokus": "Mendengar dan mengenal waktu aktiviti harian",
+            "halaman_buku": "103"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.3",
+            "fokus": "Mengenal pasti frasa hari yang didengar",
+            "halaman_buku": "103"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_055.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "056",
+          "previous": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Dialog ringkas tentang waktu pulang atau keluar",
+            "halaman_buku": "104"
+          },
+          "current": {
+            "sk": "1.4",
+            "sp": "1.4.1",
+            "fokus": "Menirukan frasa tentang waktu makan",
+            "halaman_buku": "104"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_056.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "057",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.1",
+            "fokus": "Membaca ayat berkaitan hari dan rutin",
+            "halaman_buku": "105"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.4",
+            "fokus": "Melakonkan dialog ringkas yang dibaca",
+            "halaman_buku": "105"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_057.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "058",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.2",
+            "fokus": "Membaca jadual aktiviti mingguan",
+            "halaman_buku": "108"
+          },
+          "current": {
+            "sk": "3.4",
+            "sp": "3.4.1",
+            "fokus": "Menyalin frasa tentang hari, waktu makan dan ucapan perpisahan",
+            "halaman_buku": "108"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_058.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "059",
+          "previous": {
+            "sk": "2.4",
+            "sp": "2.4.1",
+            "fokus": "Membaca ungkapan rutin dan masa dalam konteks",
+            "halaman_buku": "115"
+          },
+          "current": {
+            "sk": "2.4",
+            "sp": "2.4.1",
+            "fokus": "Menirukan bacaan rangkai kata hari daripada persembahan buku",
+            "halaman_buku": "113"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_059.md"
+        },
+        {
+          "tahun": 3,
+          "pdp": "060",
+          "previous": {
+            "sk": "2.3",
+            "sp": "2.3.3",
+            "fokus": "Mengenal nombor rumah dalam peta lingkungan",
+            "halaman_buku": "109"
+          },
+          "current": {
+            "sk": "3.4",
+            "sp": "3.4.1",
+            "fokus": "Menulis semula frasa hari dan waktu daripada aktiviti ulang kaji",
+            "halaman_buku": "109"
+          },
+          "source": "rpt_2027/bahasa_arab/year3_unit4_pdp045_060_DRAF.csv",
+          "rph": "rph_standalone/bahasa_arab/year3/lesson_060.md"
+        }
+      ]
+    }
+  }
+}
