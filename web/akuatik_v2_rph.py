@@ -20,8 +20,22 @@ def resolve(year, source_id):
             return r
     raise ValueError("Unknown Aquatics V2 selection")
 
-def render(year, source_id, fmt, teacher=None):
+def eligible_existing_pdp(year, source_id):
+    """Exact immutable source identity only; never infer from title or unit."""
+    try:
+        r=resolve(year,source_id)
+    except ValueError:
+        return False
+    return r.get("menu_eligibility")=="QA_WATER_REQUIRED_EXISTING_PDP"
+
+def options(year, source_id):
+    """Candidate UI metadata. Caller must keep original authentication/credit checks."""
+    return ("V1","V2_DARAT") if eligible_existing_pdp(year,source_id) else ("V1",)
+
+def render(year, source_id, fmt, teacher=None, *, qa_reference=False):
     r=resolve(year,source_id)
+    if not qa_reference and not eligible_existing_pdp(year,source_id):
+        raise ValueError("V2 only applies to an existing water-required PdP")
     teacher=teacher or {}
     s=r["standard_descriptions"]
     heading=("Rancangan Pengajaran Harian","Pendidikan Jasmani · Tahun %d"%year,r["title"])
