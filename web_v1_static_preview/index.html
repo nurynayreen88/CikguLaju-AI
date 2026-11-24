@@ -2365,7 +2365,7 @@ function aquaticV2Eligible(){
  return curriculum.value==="kssr"&&subject.value==="PJPK"&&component.value==="PJ"&&["p-3-PJ-022","p-3-PJ-023","p-4-PJ-026"].includes(lesson.value)&&lesson.value.startsWith("p-"+year.value+"-");
 }
 function aquaticV2Selected(){return aquaticV2Eligible()&&document.getElementById("akuatik-v2-version").value==="V2_DARAT";}
-document.getElementById("akuatik-v2-version").addEventListener("change",()=>{resetMaterials();});
+document.getElementById("akuatik-v2-version")?.addEventListener?.("change",()=>{resetMaterials();});
 lesson.addEventListener("change",()=>{
  document.getElementById("akuatik-v2-version").value="V1";
  document.getElementById("akuatik-v2-choice").hidden=!aquaticV2Eligible();
