@@ -151,6 +151,7 @@ const ctx={
   })[id]??variantRpt},
  async fetch(url,options){
   kpPilotRequests.push({url,options});
+  if(url==="/api/web/teacher/profile")return {ok:true,json:async()=>({})};
   if(url.endsWith("/matematik/available"))return {ok:true,json:async()=>({
    groups:{A:[1,2],B:[1]},
    items:{
@@ -229,7 +230,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(catalogueCalls,[]);
  subject.value="MATH_KP2027";
  await listeners["subject.change"]();
- assert.equal(kpPilotRequests.at(-1).url,"/api/kp2027/sk/tahun-1/matematik/available");
+ assert.equal(kpPilotRequests.filter(item=>item.url!=="/api/web/teacher/profile").at(-1).url,"/api/kp2027/sk/tahun-1/matematik/available");
  assert.equal(unit.hidden,false);
  assert.equal(lesson.hidden,true);
  assert.deepEqual(unit.options.map(x=>x.value),["","Nombor Bulat hingga 100 — Nilai Nombor"]);
