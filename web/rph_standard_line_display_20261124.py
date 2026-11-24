@@ -9,7 +9,7 @@ SUBJECTS = frozenset(("bahasa melayu", "matematik", "sains",
     "pendidikan muzik", "pendidikan moral"))
 # Exact numeric DSKP codes, including Math subclauses. Only a known source
 # join separator followed by a full code is a break, not prose punctuation.
-CODE = r"\d+(?:\.\d+){1,3}(?:\([ivxlcdm]+\))?"
+CODE = r"K?\d+(?:\.\d+){1,3}(?:\([ivxlcdm]+\))?"
 BOUNDARY = re.compile(r"[ \t]*(?:[;|·])[ \t]*(?="+CODE+r"(?![\d.(])(?:\s|$))", re.I)
 START = re.compile(r"^"+CODE+r"(?![\d.(])(?:\s|$)",re.I)
 MARKER = "_CIKGULAJU_STANDARD_ONE_CODE_PER_LINE_20261124"
