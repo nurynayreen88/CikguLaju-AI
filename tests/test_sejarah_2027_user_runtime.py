@@ -56,7 +56,9 @@ class SejarahUserRuntimeTest(unittest.TestCase):
                 self.assertIn(r["textbook_reference"]["checked_focus_pages"]["printed_page_range"],
                               outcome["BAHAN BANTU MENGAJAR"])
                 self.assertIn("DRAF", outcome["TAJUK"])
-                self.assertTrue(outcome["REFLEKSI"] == r["reflection"])
+                self.assertIn(r["success_criteria"].rstrip(". "), outcome["REFLEKSI"])
+                self.assertNotIn("PdP ", outcome["TAJUK"])
+                self.assertEqual(adapt_rows({**state, "rph_teacher_reflection": "Catatan guru."}, original)["REFLEKSI"], "Catatan guru.")
                 self.assertEqual(original["REFLEKSI"], "Original generic")
 
     def test_stale_source_selection_does_not_replace_another_subject(self):
