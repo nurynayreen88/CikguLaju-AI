@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import os
 import re
+from web.rph_source_reflection_rbt_sejarah import source_reflection
 from functools import lru_cache
 from pathlib import Path
 from web.rbt_2027_staging_source import (
@@ -115,7 +116,7 @@ def adapt_rows(state, previous, *, root=ROOT):
         "PENTAKSIRAN": row["pbd_evidens"],
         "PENUTUP": l["penutup"]["aktiviti"],
         "PEMULIHAN / PENGAYAAN": "Bimbing murid memurnikan hasil SP pada sesi ini.",
-        "REFLEKSI": "___ / ___ murid mencapai objektif. Tindakan susulan: ________.",
+        "REFLEKSI": source_reflection(state, "___ / ___ murid mencapai objektif. Tindakan susulan: ________.", row["kriteria_kejayaan"]),
     })
     return out
 
