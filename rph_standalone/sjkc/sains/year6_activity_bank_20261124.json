@@ -1,0 +1,584 @@
+{
+  "status": "QA_NOT_PUBLISHED",
+  "year": 6,
+  "source": "rpt_2027/sjkc/sains/year_6_kuala_lumpur.json",
+  "source_git_blob": "6871677de4a199e74141b455f9f82ed881140b0b",
+  "records": [
+    {
+      "pdp": 1,
+      "unit_number": 1,
+      "topic": "观察与分类",
+      "materials": "安全物品、分类表",
+      "teacher_guidance": "以共同可观察特征分类",
+      "source_focus": "观察物体的特征，并按可观察的共同特征分组。",
+      "ready": false
+    },
+    {
+      "pdp": 2,
+      "unit_number": 1,
+      "topic": "测量和作出推断",
+      "materials": "小车模型、直尺、记录表",
+      "teacher_guidance": "量度距离并用数据推断",
+      "source_focus": "量度模型在不同条件下的移动距离，用数据支持推断。",
+      "ready": false
+    },
+    {
+      "pdp": 3,
+      "unit_number": 1,
+      "topic": "预测和记录",
+      "materials": "小车模型、预测表",
+      "teacher_guidance": "对照预测与实际表现",
+      "source_focus": "先预测模型的表现，再用表格及口述报告结果。",
+      "ready": false
+    },
+    {
+      "pdp": 4,
+      "unit_number": 1,
+      "topic": "时空关系和诠释资料",
+      "materials": "距离时间数据、图表纸",
+      "teacher_guidance": "描述图中趋势并解释",
+      "source_focus": "用距离与时间的数据画图，描述及解释变化趋势。",
+      "ready": false
+    },
+    {
+      "pdp": 5,
+      "unit_number": 1,
+      "topic": "操作性定义和变量",
+      "materials": "模型测量记录、变量卡",
+      "teacher_guidance": "以可量度标准定义表现",
+      "source_focus": "以测量标准定义模型的表现，确定操纵、反应和固定变量。",
+      "ready": false
+    },
+    {
+      "pdp": 6,
+      "unit_number": 1,
+      "topic": "提出假设与实验",
+      "materials": "小车模型、公平测试清单",
+      "teacher_guidance": "检查可检验假设并记录",
+      "source_focus": "用模型完成公平测试，检查假设，提交实验记录。",
+      "ready": false
+    },
+    {
+      "pdp": 7,
+      "unit_number": 2,
+      "topic": "人类生殖器官的功能",
+      "materials": "适龄教材生殖器官图、功能卡",
+      "teacher_guidance": "使用恰当科学词汇配对功能",
+      "source_focus": "用教材图卡配对生殖器官与功能，使用恰当的科学词汇。",
+      "ready": false
+    },
+    {
+      "pdp": 8,
+      "unit_number": 2,
+      "topic": "从受精到出生",
+      "materials": "教材发展阶段图卡",
+      "teacher_guidance": "排列受精到出生的主要阶段",
+      "source_focus": "将主要发展阶段按顺序排列，说明受精到出生的过程。",
+      "ready": false
+    },
+    {
+      "pdp": 9,
+      "unit_number": 2,
+      "topic": "繁殖对人类的重要性",
+      "materials": "繁殖流程图、词语卡",
+      "teacher_guidance": "解释延续世代的意义",
+      "source_focus": "用流程图总结人类繁殖，并解释延续世代的意义。",
+      "ready": false
+    },
+    {
+      "pdp": 10,
+      "unit_number": 2,
+      "topic": "神经系统的组成与功能",
+      "materials": "神经系统图、功能卡",
+      "teacher_guidance": "标出脑、脊髓、周围神经",
+      "source_focus": "在人体图上标注脑、脊髓和周围神经，配对功能。",
+      "ready": false
+    },
+    {
+      "pdp": 11,
+      "unit_number": 2,
+      "topic": "神经信息与反应",
+      "materials": "反应情境图",
+      "teacher_guidance": "说明神经信息与反应的联系",
+      "source_focus": "分析情境卡，预测周围神经受损对身体反应的影响。",
+      "ready": false
+    },
+    {
+      "pdp": 12,
+      "unit_number": 2,
+      "topic": "照顾神经系统",
+      "materials": "护具及健康行为图卡",
+      "teacher_guidance": "解释保护神经系统的做法",
+      "source_focus": "制作健康行为图表，说明护具及良好习惯如何保护神经系统。",
+      "ready": false
+    },
+    {
+      "pdp": 13,
+      "unit_number": 3,
+      "topic": "认识微生物及其种类",
+      "materials": "显微照片、资料卡",
+      "teacher_guidance": "按资料辨认微生物种类",
+      "source_focus": "根据显微照片和资料卡分类，说明微生物通常须借助仪器观察。",
+      "ready": false
+    },
+    {
+      "pdp": 14,
+      "unit_number": 3,
+      "topic": "微生物的生命过程",
+      "materials": "教材微生物观察记录",
+      "teacher_guidance": "描述生长、呼吸、繁殖",
+      "source_focus": "用教材图片和记录描述课堂实例中的生长、呼吸和繁殖现象。",
+      "ready": false
+    },
+    {
+      "pdp": 15,
+      "unit_number": 3,
+      "topic": "影响微生物生长的条件",
+      "materials": "教师食用酵母示范记录",
+      "teacher_guidance": "比较安全条件和变量，不培养未知微生物",
+      "source_focus": "由教师以食用酵母作安全对照示范，学生记录结果并说明变量。",
+      "ready": false
+    },
+    {
+      "pdp": 16,
+      "unit_number": 3,
+      "topic": "微生物的益处和害处",
+      "materials": "食物卫生案例图卡",
+      "teacher_guidance": "比较微生物益处与害处",
+      "source_focus": "根据食物和卫生案例，制作图卡呈现应用、影响及证据。",
+      "ready": false
+    },
+    {
+      "pdp": 17,
+      "unit_number": 4,
+      "topic": "动物之间的关系",
+      "materials": "动物关系图卡",
+      "teacher_guidance": "辨认捕食、竞争及共生",
+      "source_focus": "配对捕食者和猎物，辨认竞争和共生的例子。",
+      "ready": false
+    },
+    {
+      "pdp": 18,
+      "unit_number": 4,
+      "topic": "动物之间的竞争",
+      "materials": "动物资源情境卡",
+      "teacher_guidance": "解释同种异种竞争",
+      "source_focus": "用案例说明同种与异种动物会因哪些资源发生竞争。",
+      "ready": false
+    },
+    {
+      "pdp": 19,
+      "unit_number": 4,
+      "topic": "动物的共生与沟通",
+      "materials": "共生关系图、比较表",
+      "teacher_guidance": "区分互利共栖寄生",
+      "source_focus": "通过图解说明双方在互利、共栖或寄生关系中受到的影响。",
+      "ready": false
+    },
+    {
+      "pdp": 20,
+      "unit_number": 4,
+      "topic": "植物之间的竞争",
+      "materials": "植物生长记录、条件卡",
+      "teacher_guidance": "依据资料解释光水空间竞争",
+      "source_focus": "分析不同种植条件的生长资料，解释光、水和空间的作用。",
+      "ready": false
+    },
+    {
+      "pdp": 21,
+      "unit_number": 4,
+      "topic": "植物之间的共生",
+      "materials": "植物共生实例图",
+      "teacher_guidance": "说明双方关系及证据",
+      "source_focus": "以图解比较植物共生实例，解释双方关系并陈述证据。",
+      "ready": false
+    },
+    {
+      "pdp": 22,
+      "unit_number": 5,
+      "topic": "保护与复育的意思",
+      "materials": "保育行动卡",
+      "teacher_guidance": "区分保护与复育目标",
+      "source_focus": "将行动卡配对至保护或复育，解释两种行动的目标。",
+      "ready": false
+    },
+    {
+      "pdp": 23,
+      "unit_number": 5,
+      "topic": "保护与复育的方法",
+      "materials": "本地物种资料、行动卡",
+      "teacher_guidance": "提出可行措施并说明依据",
+      "source_focus": "为本地物种拟定可行的保护措施，说明选择依据。",
+      "ready": false
+    },
+    {
+      "pdp": 24,
+      "unit_number": 5,
+      "topic": "绝种和濒临绝种",
+      "materials": "物种资料卡",
+      "teacher_guidance": "按资料区别绝种与濒危",
+      "source_focus": "比较物种资料卡，区分已绝种与濒临绝种并举例。",
+      "ready": false
+    },
+    {
+      "pdp": 25,
+      "unit_number": 5,
+      "topic": "物种受威胁的原因",
+      "materials": "栖息地威胁图、因果卡",
+      "teacher_guidance": "解释威胁及影响",
+      "source_focus": "分析栖息地受破坏等案例，用因果图呈现威胁。",
+      "ready": false
+    },
+    {
+      "pdp": 26,
+      "unit_number": 5,
+      "topic": "自然平衡和保育行动",
+      "materials": "保育资料、海报纸",
+      "teacher_guidance": "联系生态平衡及保护行动",
+      "source_focus": "用资料设计保育海报，解释保护物种和生态平衡的关系。",
+      "ready": false
+    },
+    {
+      "pdp": 27,
+      "unit_number": 6,
+      "topic": "推、拉与力的效应",
+      "materials": "小车、软材料、记录表",
+      "teacher_guidance": "观察推拉引起运动形状变化",
+      "source_focus": "用小车和软材料示范推拉，记录运动或形状的变化。",
+      "ready": false
+    },
+    {
+      "pdp": 28,
+      "unit_number": 6,
+      "topic": "表达力的效应",
+      "materials": "实验图、力的方向箭头",
+      "teacher_guidance": "用证据解释力的效应",
+      "source_focus": "为实验图画力的方向，解释力改变物体运动或形状的证据。",
+      "ready": false
+    },
+    {
+      "pdp": 29,
+      "unit_number": 6,
+      "topic": "摩擦力的含义及效应",
+      "materials": "物体、不同表面、记录表",
+      "teacher_guidance": "比较相对运动与摩擦",
+      "source_focus": "比较物体在不同表面移动的方式，解释摩擦阻碍相对运动。",
+      "ready": false
+    },
+    {
+      "pdp": 30,
+      "unit_number": 6,
+      "topic": "影响摩擦力的因素",
+      "materials": "同一物体、两种表面",
+      "teacher_guidance": "保持其他条件一致比较摩擦",
+      "source_focus": "以相同物体比较表面，记录公平测试数据。",
+      "ready": false
+    },
+    {
+      "pdp": 31,
+      "unit_number": 6,
+      "topic": "生活中的摩擦力问题",
+      "materials": "防滑减磨情境图",
+      "teacher_guidance": "提出方法并解释理由",
+      "source_focus": "为防滑或减磨情境提出做法，以图说明理由。",
+      "ready": false
+    },
+    {
+      "pdp": 32,
+      "unit_number": 6,
+      "topic": "周围的气压",
+      "materials": "吸盘、空气压力示意图",
+      "teacher_guidance": "观察安全示范并解释气压",
+      "source_focus": "观察教师示范并用图说明空气能对物体施压。",
+      "ready": false
+    },
+    {
+      "pdp": 33,
+      "unit_number": 6,
+      "topic": "气压与高度",
+      "materials": "高度气压数据表",
+      "teacher_guidance": "比较气压随高度变化",
+      "source_focus": "比较不同高度的气压资料，总结两者之间的关系。",
+      "ready": false
+    },
+    {
+      "pdp": 34,
+      "unit_number": 6,
+      "topic": "气压的应用",
+      "materials": "吸盘、安全用具图",
+      "teacher_guidance": "解释内外气压差",
+      "source_focus": "用吸盘等安全用具图示内外气压差，并解释观察结果。",
+      "ready": false
+    },
+    {
+      "pdp": 35,
+      "unit_number": 7,
+      "topic": "认识速度和单位",
+      "materials": "速度标示图、单位卡",
+      "teacher_guidance": "区分米每秒与千米每小时",
+      "source_focus": "判读速度标示，区分米每秒与千米每小时。",
+      "ready": false
+    },
+    {
+      "pdp": 36,
+      "unit_number": 7,
+      "topic": "速度、距离和时间",
+      "materials": "小车、直尺、计时器",
+      "teacher_guidance": "量度距离时间并比较速度",
+      "source_focus": "量度移动距离和时间，用公正的比较找出三者关系。",
+      "ready": false
+    },
+    {
+      "pdp": 37,
+      "unit_number": 7,
+      "topic": "以公式解决速度问题",
+      "materials": "速度计算题卡",
+      "teacher_guidance": "核对单位并应用公式",
+      "source_focus": "读题选取单位，用速度公式求距离、时间或速度。",
+      "ready": false
+    },
+    {
+      "pdp": 38,
+      "unit_number": 7,
+      "topic": "速度的操作性定义",
+      "materials": "固定距离数据表",
+      "teacher_guidance": "用测量结果定义快慢",
+      "source_focus": "根据固定距离的测量说明怎样判定快慢，展示数据和结论。",
+      "ready": false
+    },
+    {
+      "pdp": 39,
+      "unit_number": 8,
+      "topic": "食物变质的特征",
+      "materials": "变质食物照片、记录表",
+      "teacher_guidance": "辨认外观质地变化，不触尝",
+      "source_focus": "用照片辨认外观及质地变化，整理观察表。",
+      "ready": false
+    },
+    {
+      "pdp": 40,
+      "unit_number": 8,
+      "topic": "食物变质的原因",
+      "materials": "微生物教材图及观察记录",
+      "teacher_guidance": "解释变质与微生物关系",
+      "source_focus": "从图像与记录说明微生物与变质的关系，完成图解。",
+      "ready": false
+    },
+    {
+      "pdp": 41,
+      "unit_number": 8,
+      "topic": "食物保存的目的与原理",
+      "materials": "保存方法情境卡",
+      "teacher_guidance": "说明冷藏干燥减缓变质",
+      "source_focus": "比较冷藏、干燥等方法，解释它们怎样减缓食物变质。",
+      "ready": false
+    },
+    {
+      "pdp": 42,
+      "unit_number": 8,
+      "topic": "为同一种食物选择保存法",
+      "materials": "安全保存示例记录",
+      "teacher_guidance": "比较保存方法，不食用实验样品",
+      "source_focus": "以教师指导的食物保存项目比较可用方法，记录观察并总结。",
+      "ready": false
+    },
+    {
+      "pdp": 43,
+      "unit_number": 8,
+      "topic": "组合保存方法",
+      "materials": "食品标签、保存法图",
+      "teacher_guidance": "辨认组合方法及作用",
+      "source_focus": "从食品标签和教材实例辨认两种结合使用的保存法，并说明其作用。",
+      "ready": false
+    },
+    {
+      "pdp": 44,
+      "unit_number": 8,
+      "topic": "食物保存与科技",
+      "materials": "保存科技教材图",
+      "teacher_guidance": "说明技术满足日常需求",
+      "source_focus": "根据教材实例说明保存技术如何满足日常的食物需求。",
+      "ready": false
+    },
+    {
+      "pdp": 45,
+      "unit_number": 8,
+      "topic": "食物保存项目汇报",
+      "materials": "保存项目记录、流程图",
+      "teacher_guidance": "依据真实记录汇报结论",
+      "source_focus": "使用流程图和表格呈现项目的观察、判断与结论。",
+      "ready": false
+    },
+    {
+      "pdp": 46,
+      "unit_number": 9,
+      "topic": "按材料辨认废物",
+      "materials": "洁净废物样品、分类卡",
+      "teacher_guidance": "按材料分类",
+      "source_focus": "用洁净样品或图卡按纸、塑料、金属等材料分类。",
+      "ready": false
+    },
+    {
+      "pdp": 47,
+      "unit_number": 9,
+      "topic": "可降解与不可降解废物",
+      "materials": "分解资料图卡",
+      "teacher_guidance": "依据资料比较降解性质",
+      "source_focus": "比较资料卡中的分解现象，说明选用分类的依据。",
+      "ready": false
+    },
+    {
+      "pdp": 48,
+      "unit_number": 9,
+      "topic": "明智使用与处置废物",
+      "materials": "校园废物情境卡",
+      "teacher_guidance": "提出减量再用适当处置",
+      "source_focus": "为学校的废物情境提出减量、再用或适当处置的做法。",
+      "ready": false
+    },
+    {
+      "pdp": 49,
+      "unit_number": 9,
+      "topic": "妥善处理废物",
+      "materials": "废物处理流程图",
+      "teacher_guidance": "选择适合校园的处理方法",
+      "source_focus": "比较常见废物的后续处理，说明哪些做法适合校园。",
+      "ready": false
+    },
+    {
+      "pdp": 50,
+      "unit_number": 9,
+      "topic": "校园废物行动报告",
+      "materials": "校园废物建议表",
+      "teacher_guidance": "说明建议的环境影响",
+      "source_focus": "以图表呈现校园废物处理建议，说明对环境的影响。",
+      "ready": false
+    },
+    {
+      "pdp": 51,
+      "unit_number": 10,
+      "topic": "模拟月食",
+      "materials": "低亮度灯、大小球",
+      "teacher_guidance": "模拟月球进入地影",
+      "source_focus": "用灯和球标出三者的位置，解释月球如何进入地影。",
+      "ready": false
+    },
+    {
+      "pdp": 52,
+      "unit_number": 10,
+      "topic": "模拟日食",
+      "materials": "低亮度灯、大小球",
+      "teacher_guidance": "模拟日食位置，不观看太阳",
+      "source_focus": "用模型比较日食时的位置和影子，说明遮挡光的物体。",
+      "ready": false
+    },
+    {
+      "pdp": 53,
+      "unit_number": 10,
+      "topic": "用光的特性比较日月食",
+      "materials": "日月食模型、影区图",
+      "teacher_guidance": "比较本影半影及遮光关系",
+      "source_focus": "用模型判断何时形成食，绘图比较本影与半影并口述依据。",
+      "ready": false
+    },
+    {
+      "pdp": 54,
+      "unit_number": 11,
+      "topic": "什么是星系",
+      "materials": "星系图像、特征卡",
+      "teacher_guidance": "归纳星系基本组成",
+      "source_focus": "从星系图像找共同特征，归纳星系的基本组成。",
+      "ready": false
+    },
+    {
+      "pdp": 55,
+      "unit_number": 11,
+      "topic": "银河系与太阳系",
+      "materials": "银河系示意图、位置卡",
+      "teacher_guidance": "区分银河系与太阳系",
+      "source_focus": "画出含太阳系位置的银河系示意图，区分结构与尺度。",
+      "ready": false
+    },
+    {
+      "pdp": 56,
+      "unit_number": 11,
+      "topic": "模拟星系尺度与沟通",
+      "materials": "比例示意图、模型材料",
+      "teacher_guidance": "解释相对尺度",
+      "source_focus": "用比例示意说明太阳系在银河系内的相对大小，展示模型。",
+      "ready": false
+    },
+    {
+      "pdp": 57,
+      "unit_number": 12,
+      "topic": "稳度、强度和结构",
+      "materials": "纸结构模型、轻物",
+      "teacher_guidance": "区别稳度与承受力",
+      "source_focus": "比较结构模型，举例解释稳度与承受力的区别。",
+      "ready": false
+    },
+    {
+      "pdp": 58,
+      "unit_number": 12,
+      "topic": "影响物体稳度的因素",
+      "materials": "底面积高度不同的轻模型",
+      "teacher_guidance": "比较倾倒趋势",
+      "source_focus": "比较底面积或高度，记录哪个模型较难倾倒及原因。",
+      "ready": false
+    },
+    {
+      "pdp": 59,
+      "unit_number": 12,
+      "topic": "影响结构强度的因素",
+      "materials": "纸制结构、轻负载",
+      "teacher_guidance": "比较形状材料与承载结果",
+      "source_focus": "比较形状或材料不同的纸制结构，用承载结果作推论。",
+      "ready": false
+    },
+    {
+      "pdp": 60,
+      "unit_number": 12,
+      "topic": "稳固结构的重要性",
+      "materials": "建筑案例图、评价卡",
+      "teacher_guidance": "说明稳定强度对安全的作用",
+      "source_focus": "从建筑案例解释稳度及强度对安全和耐用的作用。",
+      "ready": false
+    },
+    {
+      "pdp": 61,
+      "unit_number": 12,
+      "topic": "制作与展示稳固模型",
+      "materials": "环保材料、轻物、记录表",
+      "teacher_guidance": "测试模型并依据结果改良",
+      "source_focus": "以环保材料制成模型，通过测试提出改良并分享证据。",
+      "ready": false
+    },
+    {
+      "pdp": 62,
+      "unit_number": 13,
+      "topic": "工艺的意思及作用",
+      "materials": "生活问题图、技术应用卡",
+      "teacher_guidance": "配对工艺与解决的问题",
+      "source_focus": "把生活问题与工艺应用配对，并说出解决了什么困难。",
+      "ready": false
+    },
+    {
+      "pdp": 63,
+      "unit_number": 13,
+      "topic": "不同领域的工艺发展",
+      "materials": "科技发展时间线图卡",
+      "teacher_guidance": "比较不同领域的改变",
+      "source_focus": "用时间线比较交通、农业、医药、通信或建筑的发展。",
+      "ready": false
+    },
+    {
+      "pdp": 64,
+      "unit_number": 13,
+      "topic": "工艺的利与弊",
+      "materials": "科技利弊案例、对照表",
+      "teacher_guidance": "以证据比较好处和限制",
+      "source_focus": "以图表比较一个工艺实例的好处和限制，汇报证据。",
+      "ready": false
+    }
+  ]
+}
