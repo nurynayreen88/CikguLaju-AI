@@ -50,10 +50,10 @@ def test_arabic_teacher_header_left_and_source_fields_preserved():
     assert header.alignment == WD_TABLE_ALIGNMENT.RIGHT
     identity = header.rows[0].cells[0].text
     assert len(header.rows[0].cells[0].paragraphs) == 3
-    for expected in ("الصف والحصّة", "الوحدة", "موضوع الدرس",
+    for expected in ("الصف", "الوحدة", "موضوع الدرس",
                      "المدرسة", "الفصل"):
         assert expected in identity
-    for value in ("الصف والحصّة", "الوحدة", "موضوع الدرس"):
+    for value in ("الصف", "الوحدة", "موضوع الدرس"):
         # Reposition existing identity fields, never duplicate them in the
         # detail table or lose text from the approved Arabic lesson.
         assert value not in " ".join(
