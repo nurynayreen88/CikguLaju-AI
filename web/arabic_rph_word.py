@@ -73,6 +73,16 @@ def _table(doc, widths, rows, *, header=False, align_right=False, teacher_left=F
     return table
 
 
+def _automatic_reflection(plan):
+    """Replace only the generic count template with the exact success evidence."""
+    original = plan["reflection"]
+    if original.strip() == "بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.":
+        success = plan["success"].strip()
+        if success:
+            return "____ / ____ تحقق لديهم معيار النجاح: " + success + " المتابعة: ____."
+    return original
+
+
 def render_arabic_word(plan, teacher_fields, reflection, dest):
     class_name, date_iso, time, pupils, _ = teacher_fields
     lesson_date = date.fromisoformat(date_iso).strftime("%d/%m/%Y") if date_iso else ""
@@ -145,7 +155,7 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     _table(doc, (4.3, 14.4), [
         ("الوسائل التعليمية", plan["materials"]),
         ("المرجع", f"كتاب اللغة العربية للصفّ {year}، ص {pages}."),
-        ("تأمّل المعلّم", reflection or plan["reflection"]),
+        ("تأمّل المعلّم", reflection or _automatic_reflection(plan)),
     ])
     _paragraph(section.footer.paragraphs[0], "CikguLaju AI", size=8, centered=True)
     doc.core_properties.title = "خطة التدريس اليومية لمادة اللغة العربية"
