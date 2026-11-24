@@ -148,7 +148,7 @@ def _activity_line(role, value):
     return f"{role}: {content}"
 
 
-def render_docx(record):
+def render_docx(record, *, layout=None, tone=TONE, strong=STRONG):
     """Four equal-width outer tables, no template overlay or placeholders."""
     from docx import Document
     from docx.shared import Mm, Pt, RGBColor
@@ -224,30 +224,34 @@ def render_docx(record):
         p.paragraph_format.line_spacing = Pt(1)
         p.add_run(" ").font.size = Pt(1)
 
-    h = heading(record)
+    h = layout[0] if layout else heading(record)
+    if layout:
+        title = d.add_paragraph()
+        title.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        title.add_run(h[0]).bold = True
     head = table((116, 58), 1)
-    put(head.cell(0, 0), [(h[0], True), (h[1], True), (h[2], False)])
-    set_cell(head.cell(0, 0), STRONG)
+    put(head.cell(0, 0), [(h[1], True), (h[2], False)] if layout else [(h[0], True), (h[1], True), (h[2], False)])
+    set_cell(head.cell(0, 0), strong)
     put(head.cell(0, 1), [(s + ":", True) for s in ("Kelas", "Tarikh", "Masa", "Bil. Murid")])
-    set_cell(head.cell(0, 1), TONE)
+    set_cell(head.cell(0, 1), 'F5F7FA' if layout else tone)
     spacer()
-    standards, activities, follow_up = _rows(record)
+    standards, activities, follow_up = layout[1] if layout else _rows(record)
     t = table((LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM), len(standards))
     for i, (label, contents) in enumerate(standards):
         put(t.cell(i, 0), [(label, True)])
-        set_cell(t.cell(i, 0), TONE)
+        set_cell(t.cell(i, 0), tone)
         put(t.cell(i, 1), [(x, False) for x in contents])
     spacer()
     t = table((LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM), len(activities))
     for i, (label, chunks) in enumerate(activities):
         put(t.cell(i, 0), [(label, True)])
-        set_cell(t.cell(i, 0), TONE)
+        set_cell(t.cell(i, 0), tone)
         put(t.cell(i, 1), [(_activity_line(role, value), False) for role, value in chunks])
     spacer()
     t = table((LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM), len(follow_up))
     for i, (label, contents) in enumerate(follow_up):
         put(t.cell(i, 0), [(label, True)])
-        set_cell(t.cell(i, 0), TONE)
+        set_cell(t.cell(i, 0), tone)
         put(t.cell(i, 1), [(x, False) for x in contents])
     # Reject accidentally added fifth table or text unrelated to source.
     if len(d.tables) != 4:
@@ -257,7 +261,7 @@ def render_docx(record):
     return out.getvalue()
 
 
-def render_pdf(record):
+def render_pdf(record, *, layout=None, tone=TONE, strong=STRONG):
     """Direct vector PDF using the same source, no redactions or overlays."""
     from reportlab.lib import colors
     from reportlab.lib.enums import TA_LEFT
@@ -293,7 +297,7 @@ def render_pdf(record):
         pdf, pagesize=A4,
         leftMargin=MARGIN_MM*mm, rightMargin=MARGIN_MM*mm,
         topMargin=14*mm, bottomMargin=14*mm,
-        title=f"RPH Bahasa Melayu SJK Tahun 1 PdP {record['proposed_pdp']:03d}"
+        title=' — '.join(layout[0][1:]) if layout else f"RPH Bahasa Melayu SJK Tahun 1 PdP {record['proposed_pdp']:03d}"
     )
     width = OUTER_WIDTH_MM*mm
     def tb(rows, col_widths, shaded_rows):
@@ -308,22 +312,25 @@ def render_pdf(record):
             ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5),
         ]
         for n in shaded_rows:
-            styles.append(("BACKGROUND", (0, n), (0, n), colors.HexColor("#"+TONE)))
+            styles.append(("BACKGROUND", (0, n), (0, n), colors.HexColor("#"+tone)))
         t.setStyle(TableStyle(styles))
         if abs(sum(t._colWidths)-width) > 0.01:
             raise AssertionError("PDF table outer widths differ")
         return t
 
-    h=heading(record)
-    left = [para(x, bold=(i<2)) for i, x in enumerate(h)]
+    h=layout[0] if layout else heading(record)
+    left = [para(x, bold=(i==0 if layout else i<2)) for i, x in enumerate(h[1:] if layout else h)]
     right = [para(s+":") for s in ("Kelas", "Tarikh", "Masa", "Bil. Murid")]
     hdr = tb([[left, right]], [116, 58], [])
     hdr.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (0, 0), colors.HexColor("#"+STRONG)),
-        ("BACKGROUND", (1, 0), (1, 0), colors.HexColor("#"+TONE)),
+        ("BACKGROUND", (0, 0), (0, 0), colors.HexColor("#"+strong)),
+        ("BACKGROUND", (1, 0), (1, 0), colors.HexColor("#F5F7FA" if layout else "#"+tone)),
     ]))
     story = [hdr, Spacer(1, 2*mm)]
-    standards, activities, follow_up = _rows(record)
+    if layout:
+        title_style = ParagraphStyle('KPQA title', parent=normal, alignment=1, fontSize=13, leading=15)
+        story.insert(0, Paragraph('<b>'+escape(h[0])+'</b>', title_style))
+    standards, activities, follow_up = layout[1] if layout else _rows(record)
     def content_table(rows):
         return tb([[para(label, bold=True), pack(contents)] for label, contents in rows],
                   [LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM],
