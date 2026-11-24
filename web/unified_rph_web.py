@@ -659,7 +659,7 @@ def _selection(args=None):
     extras = {"teacher_class", "teacher_date", "teacher_time",
               "teacher_start", "teacher_end", "teacher_students"}
     keys = set(args)
-    if not required.issubset(keys) or not keys.issubset(required | extras | {"component", "rph_context"}):
+    if not required.issubset(keys) or not keys.issubset(required | extras | {"component", "rph_context", "rph_variant"}):
         raise ValueError("Unexpected selection keys")
     if any(len(args.getlist(key)) != 1 for key in keys):
         raise ValueError("Ambiguous selection")
@@ -677,6 +677,12 @@ def _selection(args=None):
         raise ValueError("Unexpected component")
     if args.get("rph_context", "hari-ini") != "hari-ini":
         raise ValueError("Unexpected RPH context")
+    if args.get("rph_variant") not in (None, "V2_DARAT"):
+        raise ValueError("Invalid RPH variant")
+    if args.get("rph_variant") == "V2_DARAT":
+        from web.akuatik_v2_web_client import kssr_id
+        if not kssr_id(year, subject, component, lesson):
+            raise ValueError("V2 not available for this PdP")
     return year, subject, unit, lesson, component
 
 
@@ -1020,6 +1026,9 @@ def create_blueprint():
             return None, (jsonify({"error": "RPH tidak dapat disahkan dengan sumber Telegram.",
                                    "code": "RPH_SOURCE_NOT_VERIFIED"}), 503)
         result["source_digest"] = digest
+        if request.args.get("rph_variant") == "V2_DARAT":
+            from web.akuatik_v2_web_client import kssr_id
+            result["aquatics_v2_id"] = kssr_id(year, subject, component, token)
         if subject == "ENGLISH" and year == 5:
             from web.english_y5_fixed_draft_preview_runtime import preview_rows
             from web.english_y5_standalone_runtime import approved_for_telegram, verified_draft_for_web
@@ -1133,7 +1142,10 @@ def create_blueprint():
         from web.native_telegram_rph_client import request_native_rph, NativeRPHUnavailable
         try:
             school = {sjkc.SOURCE: sjkc, sjkt.SOURCE: sjkt}.get(selected.get("source"))
-            if school is not None:
+            if selected.get("aquatics_v2_id"):
+                from web.akuatik_v2_web_client import request_document
+                document = request_document(selected["year"], selected["aquatics_v2_id"], fmt, selected["teacher"])
+            elif school is not None:
                 document = school.request_document(selected, fmt)
             elif selected.get("source") == "telegram-native-bm-pdp":
                 from web.native_telegram_bm_rph_client import request_native_bm_rph
@@ -1198,7 +1210,7 @@ def create_blueprint():
         # Existing activity titles may be bolded without changing any RPH
         # content, Word tables, SK/SP, teacher information or trial quota.
         # Unknown layouts always keep Telegram's original DOCX unchanged.
-        if fmt == "word":
+        if fmt == "word" and not selected.get("aquatics_v2_id"):
             from web.rph_activity_heading_delivery import style_word_activity_titles
             document = style_word_activity_titles(document)
             # Visual-only KP2027-style palette/borders on verified KSSR native
@@ -1211,7 +1223,8 @@ def create_blueprint():
         # verifiably matching document cell and never the private PI v2 source.
         # Run BEFORE charging any trial quota.
         from web.rph_reflection_universal import personalize_verified_document
-        document = personalize_verified_document(document, fmt, selected)
+        if not selected.get("aquatics_v2_id"):
+            document = personalize_verified_document(document, fmt, selected)
         if g.cikgulaju_rph_paid:
             return document, None, None
         from web.rph_delivery_quota import authorize_rendered_document
@@ -1250,7 +1263,7 @@ def create_blueprint():
         lesson_tag = ("-".join(f"{n:03d}" for n in selected["lessons"]) if selected.get("lessons")
                       else f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
                       else re.sub(r"[^A-Za-z0-9_-]", "_", selected["lesson"])[:80])
-        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.docx"
+        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}{'_AKUATIK_V2' if selected.get('aquatics_v2_id') else ''}.docx"
         response = send_file(document,
             mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             as_attachment=True,download_name=filename,conditional=False)
@@ -1386,7 +1399,7 @@ def create_blueprint():
         lesson_tag = ("-".join(f"{n:03d}" for n in selected["lessons"]) if selected.get("lessons")
                       else f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
                       else re.sub(r"[^A-Za-z0-9_-]", "_", selected["lesson"])[:80])
-        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.pdf"
+        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}{'_AKUATIK_V2' if selected.get('aquatics_v2_id') else ''}.pdf"
         response = send_file(document,mimetype="application/pdf",
             as_attachment=True,download_name=filename,conditional=False)
         response.headers["X-RPH-Generator"] = (
