@@ -57,6 +57,50 @@ _EXTRA_SPS = {
 _MARKER = "_CIKGULAJU_SK_SP_VERIFIED_DESCRIPTIONS_20261124"
 
 
+
+def _source_labels(state, prefix):
+    """Read exact verified descriptions carried by the selected native bridge.
+
+    Conflicting text, absent text and non-matching codes stay unresolved.
+    Do not use topics, objectives or another year's curriculum as a fallback.
+    """
+    candidates = {}
+    pairs = state.get("_rph_verified_display_standard_pairs")
+    if not isinstance(pairs, list):
+        return {}
+    for pair in pairs:
+        if not isinstance(pair, dict):
+            continue
+        code = str(pair.get(prefix + "_code") or "").strip()
+        label = str(pair.get(prefix + "_text") or "").strip()
+        if not re.fullmatch(r"\d+(?:\.\d+)+(?:\([ivxlcdm]+\))?", code, re.I):
+            continue
+        if label.startswith(code + " "):
+            label = label[len(code):].strip()
+        # Reject missing/ambiguous compound labels and raw code-only values.
+        if not label or ";" in label or not any(ch.isalpha() for ch in label):
+            continue
+        if re.fullmatch(r"[\d.()\sivxlcdm]+", label, re.I):
+            continue
+        candidates.setdefault(code, set()).add(label)
+    return {code: next(iter(values)) for code, values in candidates.items()
+            if len(values) == 1}
+
+
+def _expand_source_cells(state, rows):
+    revisions = {}
+    for prefix, field in (("sk", "STANDARD KANDUNGAN"),
+                          ("sp", "STANDARD PEMBELAJARAN")):
+        value = rows.get(field)
+        if not isinstance(value, str):
+            continue
+        labels = _source_labels(state, prefix)
+        clauses = [piece.strip() for piece in value.split(";")]
+        if clauses and all(piece in labels for piece in clauses):
+            revisions[field] = "; ".join(f"{code} {labels[code]}" for code in clauses)
+    return {**rows, **revisions} if revisions else rows
+
+
 def display_verified_standards(state, rows):
     """Preserve source text; expand only exact, audited code-only cells."""
     if not isinstance(state, dict) or not isinstance(rows, dict):
@@ -69,7 +113,7 @@ def display_verified_standards(state, rows):
     subject = str(state.get("subject") or "").strip()
     year_no = int(year[1])
     choice = _VERIFIED.get((subject, year_no))
-    if not choice:
+    if subject not in ("Matematik", "Sains"):
         return rows
     for key in ("curriculum", "curriculum_version", "stream",
                 "programme", "program", "school_type"):
@@ -80,6 +124,9 @@ def display_verified_standards(state, rows):
     prefix = f"MT{year_no}" if subject == "Matematik" else f"SCI-Y{year_no}"
     if not re.fullmatch(re.escape(prefix) + r"-PDP-\d{3}", code):
         return rows
+
+    if not choice:
+        return _expand_source_cells(state, rows)
 
     sk_code, sk_text, sp_code, sp_text = choice
     revisions = {}
@@ -98,8 +145,8 @@ def display_verified_standards(state, rows):
                 f"{piece} {sp_map[piece]}" for piece in clauses
             )
     if not revisions:
-        return rows
-    return {**rows, **revisions}
+        return _expand_source_cells(state, rows)
+    return _expand_source_cells(state, {**rows, **revisions})
 
 
 def install(runtime):

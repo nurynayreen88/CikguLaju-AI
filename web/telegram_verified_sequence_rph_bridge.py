@@ -217,6 +217,12 @@ def _build_state(runtime, year, subject, unit_token, pdp_code, teacher):
     if not callable(group):
         raise SourceUnavailable("Native grouped SP resolver unavailable")
     group(state, mapped)
+    # Exact descriptions from the verified selected source rows, for display only.
+    # The renderer must never infer descriptions from a topic or change IDs.
+    state["_rph_verified_display_standard_pairs"] = [
+        {key: row.get(key) for key in ("sk_code", "sk_text", "sp_code", "sp_text")}
+        for row in rows
+    ]
     state["selected_sp_codes"] = list(state.get("grouped_sp_codes") or [])
     if not state.get("sp_code") or not state.get("selected_sp_codes"):
         raise SourceUnavailable("No grouped SP selected")
