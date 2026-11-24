@@ -8,10 +8,12 @@ import json
 import re
 from pathlib import Path
 
+from web.rph_phase_display import phase_heading
+
 ROOT = Path(__file__).resolve().parent
 BOLD_HEADING = re.compile(r"^\s*\*\*([^*\n]+)\*\*\s*(.*)$")
 CODES = re.compile(r"^[1-5]\.[1-9]\.\d+$")
-ACTIVITY_HEADER = ["Fasa / Masa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"]
+ACTIVITY_HEADER = ["Fasa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"]
 
 
 def _sections(text):
@@ -107,9 +109,9 @@ def build_staging_preview(root, year, pdp):
     criteria = criterion[0][1] if criterion else drafted["criterion"] if drafted else "—"
     # Each source heading already includes its activity number/phase name.
     # Avoid "Aktiviti 1 - Aktiviti 1" and "Pengukuhan - Pengukuhan".
-    notes = labels["act1"][0] + "\n" + labels["act1"][1] + \
-            "\n\n" + labels["act2"][0] + "\n" + labels["act2"][1] + \
-            "\n\n" + labels["assessment"][0] + "\n" + labels["assessment"][1]
+    notes = phase_heading(labels["act1"][0]) + "\n" + labels["act1"][1] + \
+            "\n\n" + phase_heading(labels["act2"][0]) + "\n" + labels["act2"][1] + \
+            "\n\n" + phase_heading(labels["assessment"][0]) + "\n" + labels["assessment"][1]
     # Use the previously reviewed printed DSKP mappings, not inferred SP prefixes.
     bank = json.loads((base / "dskp_standard_descriptions.json").read_text(encoding="utf-8"))[str(year)]
     learning = [bank["sp"][code] for code in sp]
@@ -126,7 +128,7 @@ def build_staging_preview(root, year, pdp):
         ("Nama Guru", ""), ("Nama Sekolah", ""), ("Tarikh", ""), ("Hari", ""),
         ("Masa", ""), ("Kelas", ""), ("Bilangan Murid", ""), ("Tahun", str(year)),
         ("Subjek", "Pendidikan Muzik"), ("Tajuk", row["unit"]),
-        ("PdP", str(pdp)), ("Standard Kandungan", sk_text),
+        ("Standard Kandungan", sk_text),
         ("Standard Pembelajaran", sp_text),
         ("OBJEKTIF PEMBELAJARAN", labels["objective"][1]),
         ("KRITERIA KEJAYAAN", criteria or "—"), ("PENGETAHUAN SEDIA ADA", "—"),
@@ -139,9 +141,9 @@ def build_staging_preview(root, year, pdp):
         "header": [{"label": k, "value": v} for k, v in metadata],
         "activity_header": ACTIVITY_HEADER,
         "phases": [
-            {"label": "Set Induksi (4 minit)", "activity": labels["induction"][1], "notes": ""},
-            {"label": "Aktiviti Utama dan Pengukuhan (24 minit)", "activity": notes, "notes": ""},
-            {"label": "Penutup (2 minit)", "activity": labels["closure"][1], "notes": ""},
+            {"label": "Set Induksi", "activity": labels["induction"][1], "notes": ""},
+            {"label": "Aktiviti Utama dan Pengukuhan", "activity": notes, "notes": ""},
+            {"label": "Penutup", "activity": labels["closure"][1], "notes": ""},
         ],
         "footer": [
             {"label": "Pemulihan / Pengayaan", "value": footer_values.get("pemulihan / pengayaan", "")},
