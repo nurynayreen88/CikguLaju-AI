@@ -26,6 +26,11 @@ def test_all_480():
                         title = next(line for line in result[key].splitlines() if line.startswith(f"Aktiviti {n}"))
                         from web.rph_reference_style_20261121 import _is_standalone_activity_title
                         assert _is_standalone_activity_title(title), (year,number,title)
+                elif key == "STANDARD PEMBELAJARAN":
+                    expected = re.split(r"[ \t]*[|;,][ \t]*(?=\d+\.\d+(?![\d.])(?:\s|$))", value)
+                    assert result[key].splitlines() == expected, (year,number,key)
+                    assert all(re.match(r"^\d+\.\d+(?![\d.])", line) for line in expected)
+                    assert all(len(re.findall(r"(?<!\d)\d+\.\d+(?![\d.])", line)) == 1 for line in expected)
                 elif key != "TAJUK":
                     assert result[key] == value, (year, number, key)
             assert result["KELAS"] == ""
@@ -38,3 +43,10 @@ def test_all_480():
             count += 1
     assert count == 480
     assert linked == 480, f"{linked}/480 source-linked reflections"
+
+
+def test_standard_line_breaks_only_at_source_code_boundaries():
+    from web.pendidikan_moral_80_runtime import _standard_lines
+    assert _standard_lines("1.1 — Memberi contoh, tindakan wajar. | 1.2 — Menghuraikan tujuan.") == "1.1 — Memberi contoh, tindakan wajar.\n1.2 — Menghuraikan tujuan."
+    assert _standard_lines("1.1; 1.2") == "1.1\n1.2"
+    assert _standard_lines("1.1 — Memberi contoh.") == "1.1 — Memberi contoh."
