@@ -487,6 +487,43 @@ def create_native_rph_blueprint(runtime):
             return jsonify({"available": False}), 404
         return jsonify({"available": True, "formats": ["word", "pdf"]})
 
+    @bp.post("/internal/rph/v1/akuatik-v2/render")
+    def aquatics_v2_render():
+        # Private renderer only: Web remains responsible for user access and
+        # trial credits. Exact source allowlist, never a client-selected plan.
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if not request.is_json or not 0 < (request.content_length or 0) <= 7000:
+            return jsonify({"error": "Invalid render body"}), 400
+        from web import akuatik_v2_rph as aquatic
+        body = request.get_json(silent=True)
+        try:
+            if not isinstance(body, dict) or set(body) != {"year", "source_id", "teacher", "format"}:
+                raise ValueError("Invalid request")
+            year, source_id, fmt = body["year"], body["source_id"], body["format"]
+            if not isinstance(fmt, str) or fmt not in MIMES or not aquatic.eligible_existing_pdp(year, source_id):
+                raise ValueError("Invalid water-required PdP")
+            teacher = body["teacher"]
+            if not valid_teacher_fields(teacher):
+                raise ValueError("Invalid teacher fields")
+            limits = {"class": 40, "date": 10, "time": 13, "students": 3}
+            teacher = {key: _require_text(teacher[key], limit, allow_empty=True)
+                       for key, limit in limits.items()}
+            if any(not value.isprintable() for value in teacher.values() if value):
+                raise ValueError("Invalid teacher fields")
+        except (ValueError, KeyError, TypeError):
+            return jsonify({"error": "Invalid Aquatics V2 selection"}), 400
+        try:
+            document = aquatic.render(year, source_id, fmt, teacher)
+            response = Response(document, mimetype=MIMES[fmt])
+            suffix = "docx" if fmt == "word" else "pdf"
+            response.headers["Content-Disposition"] = (
+                f'attachment; filename="CIKGULAJU_RPH_AKUATIK_V2_T{year}_{source_id}.{suffix}"')
+            return response
+        except Exception:
+            return jsonify({"error": "Aquatics V2 renderer unavailable"}), 503
+
     @bp.post("/internal/rph/v1/dlp/render")
     def dlp_render():
         from flask import current_app
