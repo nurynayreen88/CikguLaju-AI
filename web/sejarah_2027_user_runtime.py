@@ -125,7 +125,7 @@ def adapt_rows(state, rows, *, root=ROOT):
         "TAHUN/TINGKATAN": f"Tahun {row['year']}",
         "TAJUK": f"{row['unit_title']} (DRAF)",
         "STANDARD KANDUNGAN": f"{r['sk']} — {r['sk_title']}",
-        "STANDARD PEMBELAJARAN": row["sp_text"],
+        "STANDARD PEMBELAJARAN": row["sp_text"].replace(" · ", "\n"),
         "OBJEKTIF PEMBELAJARAN": "; ".join(r["objective"]),
         "KRITERIA KEJAYAAN": r["success_criteria"],
         "PENGETAHUAN SEDIA ADA": "Pengetahuan murid tentang " + row["unit_title"],
