@@ -77,6 +77,9 @@ def main():
     shared_lines=defaultdict(list)
     shared_main=defaultdict(list)
     shared_candidate=defaultdict(list)
+    candidate_bank=[]
+    registry=json.loads(Path("staging/pendidikan_islam/active_activity_source_registry_20261125.json").read_text(encoding="utf8"))
+    source_registry={entry["year"]:entry for entry in registry["years"]}
     try:
         runtime.DB_PATH=str(db)
         runtime.CIKGULAJU_DB_V2600_ACTIVE=True
@@ -129,6 +132,20 @@ def main():
                         shared_lines[line].append({**identity,"objective":objective})
                 if proposed:
                     shared_candidate[normalized(proposed)].append({**identity,"objective":objective})
+                if proposed:
+                    source_row=state.get("_quick_selected_rpt_row_v2388") or {}
+                    # Store every candidate, not just representative examples.
+                    # Source references are claims from DB, not verified page evidence.
+                    candidate_bank.append({**identity,"status":"QA_HOLD_SOURCE_PAGE_REVIEW",
+                        "topic":row.get("topic"),"objective":rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"),
+                        "sk_codes":state.get("grouped_sk_codes",[]), "sp_codes":state.get("grouped_sp_codes",[]),
+                        "sk_texts":state.get("grouped_sk_texts",[]), "sp_texts":state.get("grouped_sp_texts",[]),
+                        "textbook_unit_claim":state.get("textbook_unit"),"textbook_pages_claim":state.get("textbook_pages"),
+                        "dskp_drive_id":source_registry[year]["dskp"],"textbook_drive_id":source_registry[year]["textbook"],
+                        "source_note":row["activity_note"],"source_note_sha256":sha256(row["activity_note"].encode()).hexdigest(),
+                        "source_steps":source_steps(row["activity_note"]),"current_main":rows.get("AKTIVITI UTAMA"),
+                        "candidate_main":proposed,"candidate_missing_source_steps":[i for i,step in enumerate(source_steps(row["activity_note"]),1) if normalized(step) not in normalized(proposed)],
+                        "dskp_page_checked":False,"textbook_page_checked":False,"jawi_editor_approved":False,"native_output_approved":False,"ready":False})
                 report["records"].append(record)
                 # At most two diagnostic examples per field/year: actual
                 # source, current output and candidate, not invented content.
@@ -155,6 +172,18 @@ def main():
         out=Path("qa/pi-activity-quality")
         out.mkdir(parents=True,exist_ok=True)
         (out/"audit.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        repeated={x["text"] for x in report["identical_candidate_clusters"]}
+        for item in candidate_bank:
+            item["same_candidate_as_another_pdp"]=normalized(item["candidate_main"]) in repeated
+            assert not item["candidate_missing_source_steps"], item["id"]
+            assert not item["ready"]
+        assert len({x["id"] for x in candidate_bank})==len(candidate_bank)
+        assert len(candidate_bank)==sum(s["candidate"] for s in report["years"].values())
+        (out/"all_activity_candidates.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":candidate_bank},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        print("PI_FULL_CANDIDATE_BANK",json.dumps({"total":len(candidate_bank),"years":dict(Counter(x["year"] for x in candidate_bank)),
+            "same_candidate_review":sum(x["same_candidate_as_another_pdp"] for x in candidate_bank),
+            "textbook_reference_claim_available":sum(bool(x["textbook_pages_claim"]) for x in candidate_bank),
+            "ready":0}),flush=True)
         print("PI_ACTIVITY_QUALITY",json.dumps(report["years"],ensure_ascii=False),flush=True)
         for e in report["examples"][:20]:
             print("PI_ACTIVITY_EXAMPLE",json.dumps(e,ensure_ascii=False),flush=True)
