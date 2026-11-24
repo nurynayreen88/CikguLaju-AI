@@ -22,64 +22,194 @@
       "year": 2,
       "pdp": 2,
       "unit": "Akidah",
-      "status": "PENDING_ACADEMIC_REVIEW",
-      "live": false
+      "status": "TEXTBOOK_VISUAL_MATCH_PENDING_EXACT_DSKP_AND_JAWI",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          56,
+          57,
+          59
+        ],
+        "pdf": [
+          66,
+          67,
+          69
+        ],
+        "expected_sp": [
+          "2.1.1",
+          "2.1.2"
+        ],
+        "note": "Book lists 20 wajib and meanings, exercise naming and matching five; choose activity with exact textbook task."
+      }
     },
     {
       "id": 1277,
       "year": 2,
       "pdp": 3,
       "unit": "Jawi",
-      "status": "PENDING_ACADEMIC_REVIEW",
-      "live": false
+      "status": "TEXTBOOK_VISUAL_MATCH_PENDING_EXACT_DSKP_AND_JAWI",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          37,
+          38
+        ],
+        "pdf": [
+          47,
+          48
+        ],
+        "expected_sp": [
+          "6.1.1",
+          "6.1.2"
+        ],
+        "note": "Kampungku Permai illustrated occupations and Alamku Damai examples; use suitable three-syllable examples selected from book, not all illustrated words."
+      }
     },
     {
       "id": 1279,
       "year": 2,
       "pdp": 5,
       "unit": "Akidah",
-      "status": "PENDING_ACADEMIC_REVIEW",
-      "live": false
+      "status": "HOLD_SOURCE_SCOPE",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          56,
+          57,
+          58,
+          59
+        ],
+        "pdf": [
+          66,
+          67,
+          68,
+          69
+        ],
+        "expected_sp": [
+          "2.1.1",
+          "2.1.2"
+        ],
+        "note": "RPT activity names sifat mustahil; these inspected textbook pages show 20 wajib and application only. Do not mark mustahil wrong; reconcile scope of RPT and DSKP before release."
+      }
     },
     {
       "id": 1280,
       "year": 2,
       "pdp": 6,
       "unit": "Jawi",
-      "status": "PENDING_ACADEMIC_REVIEW",
-      "live": false
+      "status": "TEXTBOOK_VISUAL_MATCH_PENDING_EXACT_DSKP_AND_JAWI",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          37,
+          38
+        ],
+        "pdf": [
+          47,
+          48
+        ],
+        "expected_sp": [
+          "6.1.1",
+          "6.1.2"
+        ],
+        "note": "Same target as PdP3; use segmentation and matching, distinct from initial reading."
+      }
     },
     {
       "id": 1285,
       "year": 2,
       "pdp": 11,
       "unit": "Ibadah",
-      "status": "PENDING_ACADEMIC_REVIEW",
-      "live": false
+      "status": "TEXTBOOK_VISUAL_MATCH_PENDING_EXACT_DSKP_AND_JAWI",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          74,
+          75,
+          77
+        ],
+        "pdf": [
+          84,
+          85,
+          87
+        ],
+        "expected_sp": [
+          "3.1.1",
+          "3.1.2"
+        ],
+        "note": "Tools: clean rough objects; criteria and two conditions shown; exercise identify and explain."
+      }
     },
     {
       "id": 1288,
       "year": 2,
       "pdp": 14,
       "unit": "Ibadah",
-      "status": "PENDING_ACADEMIC_REVIEW",
-      "live": false
+      "status": "TEXTBOOK_VISUAL_MATCH_PENDING_EXACT_DSKP_AND_JAWI",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          76,
+          77
+        ],
+        "pdf": [
+          86,
+          87
+        ],
+        "expected_sp": [
+          "3.1.3",
+          "3.1.4"
+        ],
+        "note": "Three wipes, new rough surface each wipe; accessible, alternative to water; use illustrated/model demonstration, no bodily demonstration."
+      }
     },
     {
       "id": 1296,
       "year": 2,
       "pdp": 22,
       "unit": "Al-Quran",
-      "status": "PENDING_ACADEMIC_REVIEW",
-      "live": false
+      "status": "TEXTBOOK_VISUAL_MATCH_PENDING_EXACT_DSKP_AND_JAWI",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          1
+        ],
+        "pdf": [
+          9
+        ],
+        "expected_sp": [
+          "1.1.1"
+        ],
+        "note": "An-Nas six verses, read following teacher; note talaqqi and musyafahah. Verify exact active SP."
+      }
     },
     {
       "id": 1300,
       "year": 2,
       "pdp": 26,
       "unit": "Al-Quran",
-      "status": "PENDING_ACADEMIC_REVIEW",
-      "live": false
+      "status": "TEXTBOOK_VISUAL_MATCH_PENDING_EXACT_DSKP_AND_JAWI",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          13
+        ],
+        "pdf": [
+          21
+        ],
+        "expected_sp": [
+          "1.3.1"
+        ],
+        "note": "An-Nas memorization six verses; teacher models, pupils practise individual/paired/group recitation; verify exact active SP and application."
+      }
     }
-  ]
+  ],
+  "source_textbook": {
+    "title": "Buku Teks Pendidikan Islam Tahun 2 KSSR Semakan",
+    "drive_id": "1AWJbiaHaPOZshcGJzmDa2t3RcqkBjHTa",
+    "publisher": "DBP for KPM, 2017",
+    "isbn": "978-983-49-1609-1",
+    "visual_review": "PDF page images inspected on 2026-11-25; source duplicate differs from initial registry file ID, no claim of binary identity"
+  },
+  "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed."
 }
