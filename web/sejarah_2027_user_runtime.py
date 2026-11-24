@@ -12,6 +12,7 @@ from functools import lru_cache
 import json
 import os
 from pathlib import Path
+from web.rbt_sejarah_lesson_reflection import lesson_reflection
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -121,7 +122,7 @@ def adapt_rows(state, rows, *, root=ROOT):
     result.update({
         "MATA PELAJARAN": SUBJECT,
         "TAHUN/TINGKATAN": f"Tahun {row['year']}",
-        "TAJUK": f"{row['unit_title']} — PdP {row['pdp']:03d} (DRAF)",
+        "TAJUK": f"{row['unit_title']} — {r['sk_title']} (DRAF)",
         "STANDARD KANDUNGAN": f"{r['sk']} — {r['sk_title']}",
         "STANDARD PEMBELAJARAN": row["sp_text"],
         "OBJEKTIF PEMBELAJARAN": "; ".join(r["objective"]),
@@ -139,7 +140,7 @@ def adapt_rows(state, rows, *, root=ROOT):
         "PENTAKSIRAN": r["pengukuhan_pbd"]["activity"],
         "PENUTUP": r["penutup"]["activity"],
         "PEMULIHAN / PENGAYAAN": "Bimbing murid yang masih memerlukan sokongan.",
-        "REFLEKSI": r["reflection"],
+        "REFLEKSI": lesson_reflection(state, r["success_criteria"], r["objective"], r["reflection"]),
     })
     return result
 
