@@ -88,7 +88,20 @@ def compact_pi_identity(data):
             label_text=text(label).strip()
             if "EMK" in label_text or "KBAT" in label_text or PAK21.search(label_text):
                 for run in label.iter(W+"r"):
-                    if text(run).strip():bold(run)
+                    if not text(run).strip():continue
+                    bold(run)
+                    pr=run.find(W+"rPr")
+                    fonts=pr.find(W+"rFonts")
+                    if fonts is None:
+                        fonts=etree.Element(W+"rFonts");pr.insert(0,fonts)
+                    for attr in list(fonts.attrib):
+                        if attr.rsplit("}",1)[-1].casefold().endswith("theme"):del fonts.attrib[attr]
+                    for name in ("ascii","hAnsi","eastAsia","cs"):
+                        fonts.set(W+name,"DejaVu Sans")
+                    for tag in ("sz","szCs"):
+                        el=pr.find(W+tag)
+                        if el is None:el=etree.SubElement(pr,W+tag)
+                        el.set(W+"val","20")
                 for node in label.iter(W+"t"):
                     if node.text:node.text=PAK21.sub("PAK 21",node.text)
         out=BytesIO()
