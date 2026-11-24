@@ -61,8 +61,8 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         with (patch("web.rpt_2027_all_http._account", return_value=({"telegram_user_id":42}, None)),
               patch("web.rpt_2027_all_http._has_paid_access", side_effect=[False] + [True] * 10)):
             data = self.client.get("/api/rpt/2027/catalog").get_json()
-            self.assertEqual(data["total_rpt"], 66)
-            self.assertEqual(data["available_rpt"], 66)
+            self.assertEqual(data["total_rpt"], 68)
+            self.assertEqual(data["available_rpt"], 68)
             self.assertEqual(len(expected_pairs()), 56)
             for code in ("science_dlp", "mathematics_dlp"):
                 entry = next(s for s in data["subjects"] if s["code"] == code)
@@ -78,14 +78,17 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
     def test_all_56_files_and_25_language_choices_in_preparation(self):
         data=catalog_data(root=self.root,allowed=True)
         self.assertEqual(len(data["subjects"]),18)
-        self.assertEqual(data["total_rpt"],56)
-        self.assertEqual(data["available_rpt"],56)
-        self.assertEqual(sum(len(x["years"]) for x in data["subjects"]),91)
-        self.assertEqual(data["total_display_choices"],91)
+        self.assertEqual(data["total_rpt"],58)
+        self.assertEqual(data["available_rpt"],58)
+        self.assertEqual(sum(len(x["years"]) for x in data["subjects"]),93)
+        self.assertEqual(data["total_display_choices"],93)
         for year in (2, 3):
             choices = [row["code"] for row in data["subjects"]
-                       if row["label"] == "Matematik" and any(y["year"] == year for y in row["years"])]
-            self.assertEqual(choices, ["matematik_dpk"])
+                       if row["code"] in {"matematik","matematik_dpk"} and any(y["year"] == year for y in row["years"])]
+            self.assertEqual(choices, ["matematik","matematik_dpk"])
+            labels={row["code"]:row["label"] for row in data["subjects"]}
+            self.assertEqual(labels["matematik"],"Matematik SK")
+            self.assertEqual(labels["matematik_dpk"],"Matematik SK (DPK Edisi 3)")
         self.assertEqual(sum(y.get("coming_soon",False) and y["year"]>=2
                              for s in data["subjects"] for y in s["years"]),25)
         self.assertEqual(data["year1_coming_soon"],10)
@@ -147,7 +150,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
             for paid in (False, True):
                 with patch("web.rpt_2027_all_http._has_paid_access", return_value=paid):
                     data = self.client.get("/api/rpt/2027/catalog").get_json()
-                    self.assertEqual(data["available_rpt"], 61)
+                    self.assertEqual(data["available_rpt"], 63)
                     self.assertEqual(len(expected_pairs()), 56)
                     entry = next(item for item in data["subjects"] if item["code"] == CODE)
                     self.assertEqual([year["year"] for year in entry["years"]], list(YEARS))
@@ -188,7 +191,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                     self.assertEqual(self.client.get(f"/api/rpt/2027/all/{CODE}/{year}.pdf").status_code, 403)
             with patch("web.rpt_2027_all_http._has_paid_access", return_value=True):
                 data = self.client.get("/api/rpt/2027/catalog").get_json()
-                self.assertEqual(data["available_rpt"], 61)
+                self.assertEqual(data["available_rpt"], 63)
                 bm = next(subject for subject in data["subjects"] if subject["code"] == CODE)
                 self.assertEqual([item["year"] for item in bm["years"]], list(years))
                 for item in bm["years"]:
@@ -273,7 +276,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         self.manifest["files"]["sains:6"]["sha256"]="0"*64
         self._save()
         data=catalog_data(root=self.root,allowed=True)
-        self.assertEqual(data["available_rpt"],55)
+        self.assertEqual(data["available_rpt"],57)
         self.assertFalse(pdf_ready("sains",6,root=self.root))
         self.assertTrue(pdf_ready("sains",5,root=self.root))
 
@@ -304,7 +307,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
               patch("web.rpt_2027_all_http._has_paid_access",return_value=True)):
             catalog=self.client.get("/api/rpt/2027/catalog")
             self.assertEqual(catalog.status_code,200)
-            self.assertEqual(catalog.get_json()["available_rpt"],56)
+            self.assertEqual(catalog.get_json()["available_rpt"],58)
             self.assertTrue(catalog.get_json()["personalization_allowed"])
             pdf=self.client.get("/api/rpt/2027/all/bahasa_arab/6.pdf")
             self.assertEqual(pdf.status_code,200)
@@ -322,7 +325,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
               patch("web.rpt_2027_all_http._has_paid_access",return_value=False)):
             catalog=self.client.get("/api/rpt/2027/catalog")
             self.assertEqual(catalog.status_code,200)
-            self.assertEqual(catalog.get_json()["available_rpt"],56)
+            self.assertEqual(catalog.get_json()["available_rpt"],58)
             self.assertTrue(catalog.get_json()["allowed"])
             self.assertFalse(catalog.get_json()["personalization_allowed"])
             result=self.client.get("/api/rpt/2027/all/english/2.pdf")

@@ -125,13 +125,13 @@ const kpPilotPdf={disabled:true,dataset:{kp2027Format:"pdf"},addEventListener(ev
 const kpPilotRequests=[];
 let checkedRph=0;
 const variants=[
- {code:"science_dlp",label:"Science (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
- {code:"mathematics_dlp",label:"Mathematics (DLP)",rph_code:"MATH_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
- {code:"matematik_sjkc",label:"Matematik (SJKC)",curriculum:"sjkc",rpt_years:[2]},
- {code:"matematik_sjkt",label:"Matematik (SJKT)",curriculum:"sjkt"},
+ {code:"science_dlp",label:"Science SK (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
+ {code:"mathematics_dlp",label:"Mathematics SK (DLP)",rph_code:"MATH_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
+ {code:"matematik_sjkc",label:"Matematik SJKC",curriculum:"sjkc",rpt_years:[2]},
+ {code:"matematik_sjkt",label:"Matematik SJKT",curriculum:"sjkt"},
  ...[
   ["bahasa_iban","Bahasa Iban"],["bahasa_kadazandusun","Bahasa Kadazandusun"],
-  ["bahasa_semai","Bahasa Semai"],["bahasa_cina_sk","Bahasa Cina (SK)"],["bahasa_tamil_sk","Bahasa Tamil (SK)"]
+  ["bahasa_semai","Bahasa Semai"],["bahasa_cina_sk","Bahasa Cina SK"],["bahasa_tamil_sk","Bahasa Tamil SK"]
  ].map(([code,label])=>({code,label,curriculum:"kssr"})),
 ];
 function dlpId(science,n){
@@ -151,6 +151,7 @@ const ctx={
   })[id]??variantRpt},
  async fetch(url,options){
   kpPilotRequests.push({url,options});
+  if(url==="/api/web/teacher/profile")return {ok:true,json:async()=>({})};
   if(url.endsWith("/matematik/available"))return {ok:true,json:async()=>({
    groups:{A:[1,2],B:[1]},
    items:{
@@ -172,7 +173,7 @@ const ctx={
  materialPanel:{hidden:true},
  canGenerateRph:()=>true,
  resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
- fillSelect(el,items,label){ctx.resetSelect(el,label);el.options.push(...items);el.disabled=!items.length;},
+ fillSelect(el,items,label){ctx.resetSelect(el,label);if(el===subject)items=[...items].sort((a,b)=>new Intl.Collator("ms-MY",{sensitivity:"base"}).compare(a.label,b.label));el.options.push(...items);el.disabled=!items.length;},
  resetCurriculumChoices(){ctx.resetSelect(unit,"");ctx.resetSelect(lesson,"");unit.hidden=lesson.hidden=variantRpt.hidden=true;delete variantRpt.dataset.subject;},
  setSubjectNavigationLabels(){},
  resetMaterials(){},resetRphPreview(){},showRphAction(){},displayBookReference(){},
@@ -181,7 +182,7 @@ const ctx={
   catalogueCalls.push(kind);
   if(extra.curriculum==="sjkc")return ctx.sjkcReady?[{value:"MATH_SJKC",label:"Matematik SJKC"}]:[];
   if(extra.curriculum==="sjkt")return ctx.sjktReady?[{value:"MATH_SJKT",label:"Matematik SJKT"}]:[];
-  return [{value:"MATH",label:"Matematik"}];
+  return [{value:"MATH",label:"Matematik"},{value:"MATH_DPK3",label:"Matematik SK (DPK Edisi 3)"},{value:"BM",label:"Bahasa Melayu (SK)"},{value:"SCIENCE",label:"Sains"},{value:"ARAB",label:"Bahasa Arab (DRAF)"}];
  },
  showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
  async fillForSelection(el,kind,extra){
@@ -223,17 +224,21 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  await listeners["year.change"]();
  assert.equal(subject.disabled,false);
  assert.equal(subject.hidden,false);
- assert.deepEqual(subject.options.map(x=>x.value),["","MATH_KP2027","ALAM_KP2027","BM_SK_KP2027","PJ_KP2027"]);
+ assert.deepEqual(subject.options.map(x=>x.value),["","ALAM_KP2027","BM_SK_KP2027","MATH_KP2027","PJ_KP2027"]);
  assert.match(ctx.help,/Download Word\/PDF/i);
  assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
  assert.deepEqual(catalogueCalls,[]);
  subject.value="MATH_KP2027";
  await listeners["subject.change"]();
- assert.equal(kpPilotRequests.at(-1).url,"/api/kp2027/sk/tahun-1/matematik/available");
+ assert.equal(kpPilotRequests.filter(item=>item.url!=="/api/web/teacher/profile").at(-1).url,"/api/kp2027/sk/tahun-1/matematik/available");
+ assert.equal(kpPilotGroup.hidden,false);
+ // No school state in the mock profile: the teacher must choose A/B first.
+ assert.equal(unit.hidden,true);
+ kpPilotGroup.value="A";
+ listeners["kp-pilot-group.change"]();
  assert.equal(unit.hidden,false);
  assert.equal(lesson.hidden,true);
  assert.deepEqual(unit.options.map(x=>x.value),["","Nombor Bulat hingga 100 — Nilai Nombor"]);
- assert.equal(kpPilotGroup.hidden,false);
  assert.equal(kpPilotActions.hidden,true);
  assert.equal(kpPilotWord.disabled,true);
  unit.value="Nombor Bulat hingga 100 — Nilai Nombor";
@@ -274,10 +279,14 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
  for(const y of ["2","3"]){
   year.value=y;await listeners["year.change"]();
-  assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik (SK)"));
+  assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik SK"));
+  assert.ok(subject.options.some(o=>o.value==="MATH_DPK3"&&o.label==="Matematik SK (DPK Edisi 3)"));
+  assert.ok(subject.options.some(o=>o.value==="BM"&&o.label==="Bahasa Melayu SK"));
+  assert.ok(subject.options.some(o=>o.value==="SCIENCE"&&o.label==="Sains SK"));
+  assert.ok(subject.options.some(o=>o.value==="ARAB"&&o.label==="Bahasa Arab SK (DRAF)"));
   const pending=subject.options.find(o=>o.value==="matematik_sjkc");
   assert.ok(pending,"Year "+y+" SJKC planned subject");
-  assert.match(pending.label,/Matematik \(SJKC\).*Dalam Penyediaan/);
+  assert.match(pending.label,/Matematik SJKC.*Dalam Penyediaan/);
   subject.value=pending.value;await listeners["subject.change"]();
   assert.equal(unit.hidden,true);assert.equal(lesson.hidden,true);
   assert.match(ctx.help,/dalam penyediaan/i);
@@ -287,7 +296,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  for(const y of ["2","3"]){
   year.value=y;await listeners["year.change"]();
   const option=subject.options.find(o=>o.value==="MATH_SJKC");
-  assert.ok(option);assert.equal(option.label,"Matematik (SJKC)");
+  assert.ok(option);assert.equal(option.label,"Matematik SJKC");
   subject.value="MATH_SJKC";await listeners["subject.change"]();
   assert.deepEqual(unit.options.map(o=>o.value),["","2"]);
   unit.value="2";await listeners["unit.change"]();
@@ -298,12 +307,12 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   "subjects","subjects","units","MATH_SJKC","pdp","MATH_SJKC","2"]);
  year.value="2";await listeners["year.change"]();
  const draftSjkt=subject.options.find(o=>o.value==="matematik_sjkt");
- assert.ok(draftSjkt);assert.match(draftSjkt.label,/Matematik \(SJKT\).*Dalam Penyediaan/);
+ assert.ok(draftSjkt);assert.match(draftSjkt.label,/Matematik SJKT.*Dalam Penyediaan/);
  subject.value=draftSjkt.value;await listeners["subject.change"]();
  assert.equal(unit.hidden,true);
  ctx.sjktReady=true;await listeners["year.change"]();
  const sjktOption=subject.options.find(o=>o.value==="MATH_SJKT");
- assert.ok(sjktOption);assert.equal(sjktOption.label,"Matematik (SJKT)");
+ assert.ok(sjktOption);assert.equal(sjktOption.label,"Matematik SJKT");
  subject.value=sjktOption.value;await listeners["subject.change"]();
  assert.deepEqual(unit.options.map(o=>o.value),["","5"]);
  unit.value="5";await listeners["unit.change"]();
@@ -326,8 +335,10 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   year.value=n;
   await listeners["year.change"]();
   assert.deepEqual(subject.options.filter(x=>x.value.endsWith("_DLP")).map(x=>x.label),
-   ["Science (DLP)","Mathematics (DLP)"]);
+   ["Mathematics SK (DLP)","Science SK (DLP)"]);
   assert.ok(subject.options.some(item=>item.value==="MATH"));
+  const labels=subject.options.slice(1).map(item=>item.label);
+  assert.deepEqual(labels,[...labels].sort(new Intl.Collator("ms-MY",{sensitivity:"base"}).compare));
   assert.deepEqual(catalogueCalls.splice(0),n==="2"?["subjects","subjects","subjects"]:n==="3"?["subjects","subjects"]:["subjects"]);
   for(const code of ["SCIENCE_DLP","MATH_DLP"]){
    const id=dlpId(code==="SCIENCE_DLP",n);
@@ -354,7 +365,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
  year.value="2";
  await listeners["year.change"]();
- assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik (SK)"));
+ assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik SK"));
  assert.ok(subject.options.some(o=>o.value==="MATH_SJKC"));
  assert.ok(subject.options.some(o=>o.value==="MATH_SJKT"));
  for(const option of subject.options.filter(item=>item.value.startsWith("planned:"))){
@@ -377,7 +388,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  await listeners["year.change"]();
  for(const resolve of resolveOldSubjects)resolve([{value:"MATH",label:"Matematik"}]);
  await pending;
- assert.deepEqual(subject.options.map(x=>x.value),["","MATH_KP2027","ALAM_KP2027","BM_SK_KP2027","PJ_KP2027"]);
+ assert.deepEqual(subject.options.map(x=>x.value),["","ALAM_KP2027","BM_SK_KP2027","MATH_KP2027","PJ_KP2027"]);
  assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
  console.log("WEB_PLANNED_MENUS: PASS (curriculum first, scoped years and subjects, stale request discarded)");
 })().catch(error=>{console.error(error);process.exitCode=1;});

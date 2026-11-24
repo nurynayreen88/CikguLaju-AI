@@ -37,7 +37,7 @@ SUBJECT_LABELS = {
     "ENGLISH": "Bahasa Inggeris",
     "BM": "Bahasa Melayu",
     "MATH": "Matematik",
-    "MATH_DPK3": "Matematik",
+    "MATH_DPK3": "Matematik SK (DPK Edisi 3)",
     "MATH_DLP": "Mathematics (DLP)",
     "SCIENCE_DLP": "Science (DLP)",
     sjkc.SUBJECT: sjkc.LABEL,

@@ -41,6 +41,20 @@ class DailyTimetablePureTests(TestCase):
                 self.assertEqual(subject_identity(raw),expected)
         self.assertEqual(subject_identity("Cikgu Laju Algebra"),(None,None))
 
+    def test_explicit_school_labels_and_math_editions(self):
+        for name, code in (("Bahasa Melayu SK","BM"),("Sains SK","SCIENCE"),
+                           ("Pendidikan Islam SK","PI"),("Matematik SK","MATH")):
+            self.assertEqual(subject_identity(name, 2),(code,None))
+        for year in (2,3):
+            self.assertEqual(subject_identity("Matematik SK (DPK Edisi 3)",year),("MATH_DPK3",None))
+        self.assertEqual(subject_identity("Matematik SK (DPK Edisi 3)",4),(None,None))
+        target = date(2027,1,11)
+        schedule = {"entries": [
+            {"day":"Isnin","start":"08:00","end":"09:00","class_name":"2 Bestari","subject":"Matematik SK"},
+            {"day":"Isnin","start":"09:00","end":"10:00","class_name":"2 Amanah","subject":"Matematik SK (DPK Edisi 3)"}]}
+        result = day_payload({"state_name":"Pahang"},schedule,target,today=target)
+        self.assertEqual([r["subject_code"] for r in result["entries"]],["MATH","MATH_DPK3"])
+
     def test_class_year_requires_leading_year(self):
         self.assertEqual(class_year("4 Bestari"),4)
         self.assertEqual(class_year("Tahun 6 Amanah"),6)

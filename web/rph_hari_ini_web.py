@@ -78,10 +78,14 @@ def subject_identity(value, year=None):
     if not isinstance(value, str):
         return None, None
     key = " ".join(value.casefold().strip().replace("&", " dan ").split())
+    if key in ("matematik sk (dpk edisi 3)", "matematik (dpk edisi 3)"):
+        return (DPK_SUBJECT, None) if year in DPK_YEARS else (None, None)
     code = variants_by_name().get(key, {}).get("rph_code")
     if (year, code) in DLP_COMPLETION_LIMITS:
         return code, None
-    return SUBJECTS.get(key, (None, None))
+    # Accept the plain school suffix without altering native subject identities.
+    plain = re.sub(r"\s+(?:sk|\(sk\))$", "", key)
+    return SUBJECTS.get(key, SUBJECTS.get(plain, (None, None)))
 
 
 def class_year(value):
@@ -221,9 +225,11 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
             raise ProfileValidation("Maklumat waktu dalam jadual tidak sah")
         year = class_year(cls)
         code, component = subject_identity(subject, year)
-        if code == "MATH" and target.year == 2027 and year in DPK_YEARS:
-            code = DPK_SUBJECT
         subject_key = " ".join(subject.casefold().split())
+        # Existing unqualified timetable names retain their previous DPK default.
+        # An explicit SK label selects the original DSKP route instead.
+        if code == "MATH" and target.year == 2027 and year in DPK_YEARS and subject_key not in ("matematik sk", "matematik (sk)", "mathematics sk", "mathematics (sk)"):
+            code = DPK_SUBJECT
         variant = variants_by_name().get(subject_key)
         curriculum = None
         if not closure and variant:

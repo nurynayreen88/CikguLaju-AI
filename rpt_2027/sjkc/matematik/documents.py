@@ -2,7 +2,7 @@
 from pathlib import Path
 
 CODE = "matematik_sjkc"
-LABEL = "Matematik (SJKC)"
+LABEL = "Matematik SJKC"
 YEARS = (2, 3)
 FORMATS = {"pdf": "PDF", "docx": "Word"}
 ROOT = Path(__file__).resolve().parent

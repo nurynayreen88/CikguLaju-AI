@@ -55,10 +55,10 @@ class MobileRptDownloadTests(unittest.TestCase):
             page.evaluate("""async () => {
                 document.querySelector('main.panel').hidden=true;
                 document.querySelector('#workspace').hidden=false;
-                const row={code:"matematik_sjkc",label:"Matematik (SJKC)",curriculum:"sjkc"};
+                const row={code:"matematik_sjkc",label:"Matematik SJKC",curriculum:"sjkc"};
                 sjkcSubjectOptions.push({...row,value:row.code,rpt_years:[2]});
                 sjktSubjectOptions.splice(0,sjktSubjectOptions.length,
-                    {code:"matematik_sjkt",value:"matematik_sjkt",label:"Matematik (SJKT)",curriculum:"sjkt"});
+                    {code:"matematik_sjkt",value:"matematik_sjkt",label:"Matematik SJKT",curriculum:"sjkt"});
                 const realFetch=window.fetch;
                 window.fetch=async (url,options)=>url==='/api/rpt/2027/catalog'
                   ?new Response(JSON.stringify({subjects:[{...row,years:[
@@ -105,7 +105,7 @@ class MobileRptDownloadTests(unittest.TestCase):
                 document.querySelector('main.panel').hidden = true;
                 document.querySelector('#workspace').hidden = false;
                 if (!sjkcSubjectOptions.some(row => row.value === 'matematik_sjkc')) {
-                    sjkcSubjectOptions.push({value:'matematik_sjkc',label:'Matematik (SJKC)',rpt_years:[2]});
+                    sjkcSubjectOptions.push({value:'matematik_sjkc',label:'Matematik SJKC',rpt_years:[2]});
                 }
                 const previousFetch = window.fetch;
                 window.fetch = (url, options) => {
@@ -145,11 +145,11 @@ class MobileRptDownloadTests(unittest.TestCase):
             self.prepare(page)
             page.evaluate("""async () => {
                 const subjects=[
-                    {code:"english",label:"English (SK)",years:[
+                    {code:"english",label:"English SK",years:[
                         {year:1,coming_soon:true},{year:2,pdf_ready:true,download_enabled:true}]},
                     {code:"sejarah",label:"Sejarah",years:[
                         {year:4,pdf_ready:true,download_enabled:true}]},
-                    {code:"bahasa_cina_sjkc",label:"Bahasa Cina (SJKC)",years:[
+                    {code:"bahasa_cina_sjkc",label:"Bahasa Cina SJKC",years:[
                         {year:2,pdf_ready:true,download_enabled:true,docx_ready:true,docx_url:"/api/rpt/2027/sjkc/bahasa-cina/2.docx",note:"W.P. Kuala Lumpur"},
                         {year:3,pdf_ready:true,download_enabled:false}]},
                     {code:"bahasa_melayu_sjk",label:"Bahasa Melayu (SJK)",years:[
@@ -163,17 +163,17 @@ class MobileRptDownloadTests(unittest.TestCase):
                          docx_url:"/api/rpt/2027/sjkc/bahasa-melayu/5.docx",note:"W.P. Kuala Lumpur"},
                         {year:6,pdf_ready:true,download_enabled:true,docx_ready:true,
                          docx_url:"/api/rpt/2027/sjkc/bahasa-melayu/6.docx",note:"W.P. Kuala Lumpur"}]},
-                    {code:"sains_sjkc",label:"Sains (SJKC)",years:[
+                    {code:"sains_sjkc",label:"Sains SJKC",years:[
                         {year:6,pdf_ready:true,download_enabled:true,docx_ready:true,
                          docx_url:"/api/rpt/2027/sjkc/sains/6.docx"}]},
-                    {code:"matematik_sjkc",label:"Matematik (SJKC)",years:[
+                    {code:"matematik_sjkc",label:"Matematik SJKC",years:[
                         {year:2,pdf_ready:true,download_enabled:true,docx_ready:true,
                          docx_url:"/api/rpt/2027/sjkc/matematik/2.docx"},
                         {year:3,pdf_ready:true,download_enabled:true,docx_ready:true,
                          docx_url:"/api/rpt/2027/sjkc/matematik/3.docx",note:"Tarikh Kumpulan A dan B dalam satu RPT."}]},
-                    {code:"science_dlp",label:"Science (DLP)",years:[
+                    {code:"science_dlp",label:"Science SK (DLP)",years:[
                         {year:3,pdf_ready:true,download_enabled:true,year_label:"Year 3"}]},
-                    {code:"mathematics_dlp",label:"Mathematics (DLP)",years:[
+                    {code:"mathematics_dlp",label:"Mathematics SK (DLP)",years:[
                         {year:1,pdf_ready:false,download_enabled:false,coming_soon:true},
                         {year:3,pdf_ready:true,download_enabled:true,year_label:"Year 3"}]}
                 ];
@@ -200,73 +200,73 @@ class MobileRptDownloadTests(unittest.TestCase):
             curriculum.select_option("kssr")
             self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Tahun 2","Tahun 3","Tahun 4","Tahun 5","Tahun 6"])
             year.select_option("2")
-            self.assertEqual(subject.locator("option").all_text_contents(),["Pilih atau cari subjek","Bahasa Cina (SJKC)","Bahasa Melayu (SJKC)","English (SK)","Matematik (SJKC)"])
-            choose_subject("English (SK)")
+            self.assertEqual(subject.locator("option").all_text_contents(),["Pilih atau cari subjek","Bahasa Cina SJKC","Bahasa Melayu SJKC","English SK","Matematik SJKC"])
+            choose_subject("English SK")
             self.assertTrue(pdf.is_visible())
             self.assertFalse(word.is_visible())
             # SK and SJKC stay under KSSR; change only subject, not curriculum.
             self.assertEqual(curriculum.input_value(),"kssr")
             subject_search.tap()
             self.assertEqual(subject_options.all_text_contents(),
-                             ["Bahasa Cina (SJKC)","Bahasa Melayu (SJKC)",
-                              "English (SK)","Matematik (SJKC)"])
+                             ["Bahasa Cina SJKC","Bahasa Melayu SJKC",
+                              "English SK","Matematik SJKC"])
             subject_search.fill("melayu")
-            self.assertEqual(subject_options.all_text_contents(),["Bahasa Melayu (SJKC)"])
+            self.assertEqual(subject_options.all_text_contents(),["Bahasa Melayu SJKC"])
             subject_search.fill("tiada padanan")
             self.assertTrue(page.locator("#view-rpt").get_by_text("Tiada subjek sepadan.").is_visible())
             subject_search.fill("cInA")
             subject_search.press("ArrowDown")
             subject_search.press("Enter")
-            self.assertEqual(subject_search.input_value(),"Bahasa Cina (SJKC)")
+            self.assertEqual(subject_search.input_value(),"Bahasa Cina SJKC")
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-cina/2.docx")
-            choose_subject("Bahasa Melayu (SJKC)")
+            choose_subject("Bahasa Melayu SJKC")
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/2.docx")
             self.assertIn("W.P. Kuala Lumpur",page.locator("#rpt-status").inner_text())
-            choose_subject("Matematik (SJKC)")
+            choose_subject("Matematik SJKC")
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/matematik/2.docx")
             year.select_option("3")
             self.assertEqual(subject.input_value(),"")
             self.assertEqual(subject_search.input_value(),"")
             self.assertIsNone(word.get_attribute("href"))
-            choose_subject("Bahasa Cina (SJKC)")
+            choose_subject("Bahasa Cina SJKC")
             self.assertIn("akses berbayar",page.locator("#rpt-status").inner_text())
             self.assertFalse(pdf.is_visible())
-            choose_subject("Bahasa Melayu (SJKC)")
+            choose_subject("Bahasa Melayu SJKC")
             self.assertTrue(pdf.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/3.docx")
-            choose_subject("Matematik (SJKC)")
+            choose_subject("Matematik SJKC")
             self.assertTrue(pdf.is_visible())
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/matematik/3.docx")
             self.assertIn("Kumpulan A dan B",page.locator("#rpt-status").inner_text())
             year.select_option("4")
-            choose_subject("Bahasa Melayu (SJKC)")
+            choose_subject("Bahasa Melayu SJKC")
             self.assertTrue(pdf.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/4.docx")
             year.select_option("5")
-            choose_subject("Bahasa Melayu (SJKC)")
+            choose_subject("Bahasa Melayu SJKC")
             self.assertTrue(pdf.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/5.docx")
             year.select_option("6")
-            choose_subject("Bahasa Melayu (SJKC)")
+            choose_subject("Bahasa Melayu SJKC")
             self.assertTrue(pdf.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/6.docx")
-            choose_subject("Sains (SJKC)")
+            choose_subject("Sains SJKC")
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/sains/6.docx")
             curriculum.select_option("kp2027")
             year.select_option("1")
             self.assertEqual(subject.locator("option").all_text_contents(),
-                             ["Pilih atau cari subjek","English (SK) — Dalam Penyediaan"])
-            choose_subject("English (SK)")
+                             ["Pilih atau cari subjek","English SK — Dalam Penyediaan"])
+            choose_subject("English SK")
             self.assertEqual(page.locator("#rpt-status").inner_text(),"Dalam Penyediaan")
             self.assertFalse(pdf.is_visible())
             curriculum.select_option("kssr")
             year.select_option("3")
-            for label in ("Science (DLP)", "Mathematics (DLP)"):
+            for label in ("Science SK (DLP)", "Mathematics SK (DLP)"):
                 choose_subject(label)
                 self.assertTrue(pdf.is_visible())
                 self.assertIsNone(word.get_attribute("href"))

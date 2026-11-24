@@ -1847,7 +1847,7 @@ function dlpRphDownload(){
 }
 const subjectCollator=new Intl.Collator("ms-MY",{sensitivity:"base"});
 const dlpSubjectOptions=subjectVariants.filter(item=>item.curriculum==="dlp")
- .map(item=>({...item,value:item.rph_code}));
+ .map(item=>({...item,value:item.rph_code,label:kssrSchoolLabel(item.label,"SK")}));
 const sjkcSubjectOptions=subjectVariants.filter(item=>item.curriculum==="sjkc")
  .map(item=>({...item,value:item.code}));
 const sjktSubjectOptions=subjectVariants.filter(item=>item.curriculum==="sjkt")
@@ -1856,10 +1856,14 @@ const plannedKssrLanguages=subjectVariants.filter(item=>item.curriculum==="kssr"
  .map(item=>({...item,value:item.code}));
 const rphVariantRpt=document.getElementById("rph-variant-rpt");
 function kssrSchoolLabel(label,school){
- const raw=String(label||"").replace(/\s*\(SJK\)\s*$/i,"").trim();
- return /\((?:SK|SJKC|SJKT)\)$/i.test(raw)
-  ?raw.replace(/\((?:SK|SJKC|SJKT)\)$/i,"("+school+")")
-  :raw+" ("+school+")";
+ // School identity is a plain suffix; keep edition/program/status qualifiers.
+ const raw=String(label||"").trim();
+ const qualifiers=[];
+ let name=raw.replace(/\s*\(([^()]+)\)/g,(match,qualifier)=>{
+  if(!/^(?:SK|SJK|SJKC|SJKT)$/i.test(qualifier.trim()))qualifiers.push(qualifier.trim());
+  return "";
+ }).trim().replace(/\s+(?:SK|SJK|SJKC|SJKT)$/i,"").trim();
+ return [name,school,...qualifiers.map(value=>"("+value+")")].filter(Boolean).join(" ");
 }
 function fillKssrSubjects(items,readySjkc=[],readySjkt=[]){
  const regular=items.filter(item=>!isDlpRphSubject(item.value));
@@ -2956,16 +2960,16 @@ rptCurriculum.addEventListener("change",()=>{
 rptYear.addEventListener("change",()=>{
  rptKp2027Group.value="";
  const rows=rptEntries(Number(rptYear.value))
-  .sort((a,b)=>subjectCollator.compare(a.item.label,b.item.label))
   .map(({item,year,curriculum:kind})=>{
    const status=year.coming_soon?" — Dalam Penyediaan":
     !year.pdf_ready?" — Belum tersedia":!year.download_enabled?" — Akses berbayar":"";
    const school=item.code.endsWith("_sjkc")||item.code==="bahasa_melayu_sjk"
     ?"SJKC":item.code.endsWith("_sjkt")?"SJKT":"SK";
-   const display=kind==="kssr"&&!item.code.endsWith("_dlp")
+   const display=kind==="kssr"
     ?kssrSchoolLabel(item.label,school):item.label;
    return {label:display,value:item.code,option:new Option(display+status,item.code)};
-  });
+  })
+  .sort((a,b)=>subjectCollator.compare(a.label,b.label));
  resetRptSubjects(rptYear.value?"Pilih atau cari subjek":"Pilih tahun dahulu",rows);
  refreshRptDownload();
 });
