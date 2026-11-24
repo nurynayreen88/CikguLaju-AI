@@ -82,6 +82,28 @@ def check_one(runtime, path, row, code, output_dir):
         if code == "BM":
             # Latin text extraction is well supported for these audit samples.
             assert "murid:" in page.get_text().casefold()
+            # QA-only production-source check: every source-authored Aktiviti
+            # heading is bold and occupies its own line, never the end of a
+            # numbered teacher instruction. Do not touch Word or source text.
+            lines = [
+                line for block in page.get_text("dict")["blocks"]
+                for line in block.get("lines", [])
+            ]
+            for n in (1, 2, 3):
+                matches = [
+                    line for line in lines
+                    if any("Aktiviti " + str(n) in span["text"]
+                           for span in line["spans"])
+                ]
+                assert len(matches) == 1, ("heading count", n, matches)
+                line_text = "".join(span["text"] for span in matches[0]["spans"])
+                assert line_text.strip().startswith("Aktiviti " + str(n)), (
+                    "title shares teacher-instruction line", n, line_text
+                )
+                assert any("Bold" in span["font"] and "Aktiviti " in span["text"]
+                           for span in matches[0]["spans"]), (
+                    "source activity heading not bold", n, line_text
+                )
     if code == "PI":
         assert "سورة" in text
         assert "موري" in text
