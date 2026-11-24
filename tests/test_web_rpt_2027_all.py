@@ -91,14 +91,23 @@ class AllSubjectRPTTests(unittest.TestCase):
         self.assertEqual(download.status_code, 200)
         self.assertEqual(download.headers["X-RPT-Personalization-Allowed"],"0")
         self.assertEqual(download.data,b"%PDF-"+b"x"*9000)
+        self.assertEqual(download.headers["X-RPT-Source-SHA256"], sha256(download.data).hexdigest())
 
     @patch("web.rpt_2027_all_http._has_paid_access", return_value=True)
     @patch("web.rpt_2027_all_http._account", return_value=({"authenticated": True}, None))
     def test_paid_exact_pdf_only_and_no_fallback(self, *_mocks):
+        # An unreviewed legacy PDF must not trigger the obsolete extra cover.
+        self.assertEqual(self.client.get("/api/rpt/2027/all/bahasa_melayu/2.pdf").status_code, 503)
+        import json
+        layout=self.root/"web_2027_pdfs"/"original_cover_layout_verified.json"
+        layout.parent.mkdir(parents=True,exist_ok=True)
+        original=pdf_path("bahasa_melayu",2,root=self.root).read_bytes()
+        layout.write_text(json.dumps({"source_sha256_by_subject_year":{"bahasa_melayu:2":sha256(original).hexdigest()}}))
         r = self.client.get("/api/rpt/2027/all/bahasa_melayu/2.pdf")
         self.assertEqual(r.status_code, 200)
         self.assertEqual(r.mimetype, "application/pdf")
-        self.assertEqual(r.data[:5], b"%PDF-")
+        self.assertEqual(r.data, original)
+        self.assertEqual(r.headers["X-RPT-Source-SHA256"], sha256(original).hexdigest())
         self.assertEqual(r.headers["Cache-Control"], "no-store, private")
         self.assertEqual(r.headers["X-RPT-Personalization-Allowed"],"1")
         self.assertIn("attachment", r.headers["Content-Disposition"])
