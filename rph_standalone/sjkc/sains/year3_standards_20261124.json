@@ -10,12 +10,12 @@
     "1.2": "操纵性技能",
     "2.1": "科学室规则",
     "3.1": "牙齿",
-    "3.2": "食物与营养",
+    "3.2": "营养素",
     "3.3": "消化",
     "4.1": "进食习性",
     "5.1": "植物繁殖",
-    "6.1": "面积与体积",
-    "7.1": "密度与浮沉",
+    "6.1": "测量面积与体积",
+    "7.1": "物体或材料与水的相对密度",
     "8.1": "酸与碱",
     "9.1": "太阳系",
     "10.1": "滑轮"
@@ -67,19 +67,19 @@
       "description": "比较乳牙恒牙"
     },
     "3.1.4": {
-      "description": "保护牙齿方法"
+      "description": "联系牙齿各结构与保健方法"
     },
     "3.1.5": {
       "description": "表达牙齿保健观察"
     },
     "3.2.1": {
-      "description": "辨认营养素"
+      "description": "按营养素举出食物实例"
     },
     "3.2.2": {
       "description": "说明营养素作用"
     },
     "3.2.3": {
-      "description": "均衡饮食"
+      "description": "依据食物金字塔解释并举例均衡饮食"
     },
     "3.2.4": {
       "description": "不均衡饮食后果"
@@ -94,7 +94,7 @@
       "description": "消化路径"
     },
     "3.3.3": {
-      "description": "营养吸收及排遗"
+      "description": "总结消化后身体不需要的残余物的去向"
     },
     "3.3.4": {
       "description": "表达消化过程"
@@ -106,7 +106,7 @@
       "description": "举例草食肉食杂食"
     },
     "4.1.3": {
-      "description": "按食物推断类别"
+      "description": "依据进食习性类别作出有理由的推断"
     },
     "4.1.4": {
       "description": "比较动物牙齿"
@@ -115,7 +115,7 @@
       "description": "汇报进食观察"
     },
     "5.1.1": {
-      "description": "举例各繁殖方式"
+      "description": "为各种繁殖方法举出相应植物"
     },
     "5.1.2": {
       "description": "推断繁殖重要性"
@@ -142,7 +142,7 @@
       "description": "正确测量液体体积"
     },
     "6.1.6": {
-      "description": "排水法测量不规则固体"
+      "description": "以排水测定不规则固体体积"
     },
     "6.1.7": {
       "description": "交流测量观察"
@@ -163,7 +163,7 @@
       "description": "石蕊试纸判断酸碱中性"
     },
     "8.1.2": {
-      "description": "比较感官描述与科学测试证据"
+      "description": "根据教材所述味觉、触觉特征归纳酸碱中性；不品尝或接触未知样品"
     },
     "8.1.3": {
       "description": "探索其他指示材料"
@@ -201,5 +201,31 @@
     "10.1.5": {
       "description": "表达滑轮观察"
     }
+  },
+  "targeted_source_review": {
+    "source": "https://anyflip.com/ceydd/ytcw/basic/51-72",
+    "printed_pages": "40–54",
+    "corrected_sp": [
+      "3.1.4",
+      "3.2.1",
+      "3.2.3",
+      "3.3.3",
+      "4.1.3",
+      "5.1.1",
+      "6.1.6",
+      "8.1.2"
+    ],
+    "corrected_sk": [
+      "3.2",
+      "6.1",
+      "7.1"
+    ],
+    "activity_review": [
+      {
+        "pdp": 40,
+        "reason": "DSKP includes sensory comparison; retain textbook-supplied descriptions rather than pupil tasting or touching samples. No claim of practical sensory assessment."
+      }
+    ],
+    "scope": "Targeted source cross-check only; independent full semantic review still pending. Labels remain editorial paraphrases."
   }
 }
