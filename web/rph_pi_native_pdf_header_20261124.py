@@ -132,8 +132,18 @@ def reflow_verified_pi_header(state, story):
             subject.text = subject_text
             if hasattr(subject, "_img"):
                 subject._img = None
+        from web.rph_pi_topic_display_20261124 import clean_pi_topic
+        topic=rows[7][0]
+        cleaned=clean_pi_topic(_flow_text(topic))
+        if cleaned != _flow_text(topic):
+            if isinstance(topic, Paragraph):
+                topic=Paragraph(cleaned,topic.style)
+            else:
+                topic=copy(topic)
+                topic.text=cleaned
+                if hasattr(topic,"_img"):topic._img=None
         wide = Table([[subject, ""], [rows[1][0], ""],
-                      [rows[7][0], rows[7][1]]],
+                      [topic, rows[7][1]]],
                      colWidths=[82*mm,26*mm], hAlign="CENTER")
         wide.setStyle(TableStyle([
             ("SPAN",(0,0),(1,0)),("SPAN",(0,1),(1,1)),
@@ -153,6 +163,7 @@ def reflow_verified_pi_header(state, story):
         ("BACKGROUND", (0, 0), (0, 0), TEACHER_FILL),
         ("BACKGROUND", (1, 0), (1, 0), IDENTITY_FILL),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("VALIGN", (1, 0), (1, 0), "MIDDLE"),
         ("LEFTPADDING", (0, 0), (-1, -1), 2),
         ("RIGHTPADDING", (0, 0), (-1, -1), 2),
         ("TOPPADDING", (0, 0), (-1, -1), 3),
