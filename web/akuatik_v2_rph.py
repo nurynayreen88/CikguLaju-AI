@@ -67,4 +67,4 @@ def render(year, source_id, fmt, teacher=None, *, qa_reference=False):
     reflection=[("Refleksi",r["reflection"])]
     return render_structured_rph(source="akuatik_v2",fmt=fmt,heading=heading,
         details=details,activities=activities,footer=reflection,compact=True,
-        label_fill="E7F0E6")
+        label_fill="F3F2E8")
