@@ -215,6 +215,7 @@
     )).map(b=>b.toString(16).padStart(2,"0")).join("");
     if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
     return {bytes,sha:actualSha,paidCover:response.headers.get("X-RPT-Personalization-Allowed")==="1",
+            coverUnverified:response.headers.get("X-RPT-Cover-Status")==="unverified",
             ppkiUnits:response.headers.get("content-disposition")?.match(/UNIT_(1_2_3_4_5|2(?:_3(?:_4(?:_5)?)?)?)_2027\.pdf/)?.[1]||"2"};
   }
   async function downloadWithOriginalCover(code,year,openedViewer=null,mobileRequest=false){
@@ -224,8 +225,8 @@
     // and never invoke the PDF stamping library. Keep source bytes untouched.
     let output=source.bytes;
     let result={hasLogo:false,hasSchool:false,hasTeacher:false,
-                personalized:false};
-    if(source.paidCover){
+                personalized:false,coverUnverified:source.paidCover&&source.coverUnverified};
+    if(source.paidCover&&!source.coverUnverified){
       const PDF=window.PDFLib;
       if(!PDF||!PDF.PDFDocument)
         throw Error("Modul PDF tidak dapat dimuatkan. Refresh laman Web dan cuba semula.");
@@ -245,7 +246,7 @@
     const filename=ppki?"CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_"+
       source.ppkiUnits+"_2027.pdf":
       "CIKGULAJU_RPT_"+code.toUpperCase()+yearLabel+year+
-      (result.personalized?"_2027_ISI_PROFIL.pdf":"_2027_PERCUMA.pdf");
+      (result.personalized?"_2027_ISI_PROFIL.pdf":result.coverUnverified?"_2027_ASAL.pdf":"_2027_PERCUMA.pdf");
     if(ppki)result.ppkiEdition=ppkiEdition;
     function downloadLink(doc){
       const link=doc.createElement("a");
@@ -285,7 +286,9 @@
                  [!status.hasLogo&&"logo sekolah",!status.hasSchool&&"nama sekolah",
                   !status.hasTeacher&&"nama guru"].filter(Boolean).join(", ")+
                  ". Lengkapkan dalam Profil Guru.":"")
-           : code==="pengurusan_kehidupan_ppki"
+           : status.coverUnverified
+             ? "PDF asal dimuat turun tanpa cetakan identiti sekolah kerana muka depan versi ini belum disahkan. Akses berbayar anda kekal."
+             : code==="pengurusan_kehidupan_ppki"
              ? "Agihan PdP bagi "+status.ppkiEdition+"."
              : "Versi percuma tanpa nama guru, nama sekolah atau logo. Maklumat Profil Guru tetap disimpan.");
         return true;
