@@ -1033,6 +1033,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <button type="button" id="rph-variant-rpt" hidden>Buka RPT 2027</button>
 <label for="kp2027-pilot-group" id="kp2027-pilot-group-label" hidden>Kumpulan</label><select id="kp2027-pilot-group" hidden disabled><option value="A">Kumpulan A</option><option value="B">Kumpulan B</option></select>
 <label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select>
+<div id="akuatik-v2-choice" hidden><label for="akuatik-v2-version">Versi RPH Akuatik</label><select id="akuatik-v2-version"><option value="V1">Versi 1 — Aktiviti asal</option><option value="V2_DARAT">Versi 2 — Aktiviti darat (tanpa kolam)</option></select></div>
 <p id="catalog-status" class="notice" role="status"></p>
 <div id="kp2027-pilot-downloads" hidden aria-label="Muat turun RPH KP2027">
  <button type="button" id="kp2027-pilot-word" data-kp2027-format="word" disabled>Download RPH Word</button>
@@ -1694,6 +1695,7 @@ function currentRphParams(){
    teacher_class:className,teacher_date:teacherDate.value,
    teacher_start:start,teacher_end:end,teacher_students:students});
  if(subject.value==="PJPK"){if(!component.value)return null;params.set("component",component.value);}
+ if(aquaticV2Selected())params.set("rph_variant","V2_DARAT");
  return params;
 }
 function resetRphPreview(){
@@ -1988,6 +1990,8 @@ async function fillForSelection(el,kind,extra,label,unchanged){
  return true;
 }
 function resetCurriculumChoices(){
+ document.getElementById("akuatik-v2-choice").hidden=true;
+ document.getElementById("akuatik-v2-version").value="V1";
  rphVariantRpt.hidden=true;
  delete rphVariantRpt.dataset.subject;
  for(const [el,label] of [[component,"Pilih PJ atau PK"],[theme,"Pilih Tema"],[unit,"Pilih Unit"],[topic,"Pilih Tajuk"],[lesson,"Pilih Lesson/PdP"]])
@@ -2318,6 +2322,7 @@ async function kp2027DownloadApproved(format){
  let teacherPayload;
  try{teacherPayload=kp2027TeacherPayload();}catch(error){status.textContent=error.message;return;}
  const payload=["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(code)?{group,lesson:value,format,...teacherPayload}:{lesson:value,format,...teacherPayload};
+ if(code==="PJ_KP2027"&&aquaticV2Selected())payload.rph_variant="V2_DARAT";
  kp2027PilotBusy=true;
  for(const button of kp2027PilotButtons)button.disabled=true;
  status.textContent="Menyediakan fail RPH...";
@@ -2334,7 +2339,7 @@ async function kp2027DownloadApproved(format){
   const documentBlob=await response.blob();
   const ext=format==="pdf"?"pdf":"docx";
   const stem=code==="MATH_KP2027"?"MATH_T1_"+group:code==="BM_SK_KP2027"?"BM_SK_T1_"+group:code==="PJ_KP2027"?"PJ_T1_"+group:"ALAM_T1";
-  const fileName="CIKGULAJU_KP2027_"+stem+"_PDP"+String(value).padStart(3,"0")+"."+ext;
+  const fileName="CIKGULAJU_KP2027_"+stem+"_PDP"+String(value).padStart(3,"0")+(payload.rph_variant?"_AKUATIK_V2":"")+"."+ext;
   const fileUrl=URL.createObjectURL(documentBlob),anchor=document.createElement("a");
   anchor.href=fileUrl;anchor.download=fileName;anchor.click();
   setTimeout(()=>URL.revokeObjectURL(fileUrl),30000);
@@ -2355,7 +2360,15 @@ async function kp2027DownloadApproved(format){
 }
 for(const button of kp2027PilotButtons)
  button.addEventListener("click",()=>{void kp2027DownloadApproved(button.dataset.kp2027Format);});
+function aquaticV2Eligible(){
+ if(curriculum.value==="kp2027")return year.value==="1"&&subject.value==="PJ_KP2027"&&((kp2027PilotGroup.value==="A"&&Number(lesson.value)===51)||(kp2027PilotGroup.value==="B"&&Number(lesson.value)===50));
+ return curriculum.value==="kssr"&&subject.value==="PJPK"&&component.value==="PJ"&&["p-3-PJ-022","p-3-PJ-023","p-4-PJ-026"].includes(lesson.value)&&lesson.value.startsWith("p-"+year.value+"-");
+}
+function aquaticV2Selected(){return aquaticV2Eligible()&&document.getElementById("akuatik-v2-version").value==="V2_DARAT";}
+document.getElementById("akuatik-v2-version")?.addEventListener?.("change",()=>{resetMaterials();});
 lesson.addEventListener("change",()=>{
+ document.getElementById("akuatik-v2-version").value="V1";
+ document.getElementById("akuatik-v2-choice").hidden=!aquaticV2Eligible();
  resetMaterials();resetRphPreview();showRphAction();displayBookReference();
  if(curriculum.value==="kp2027"){
   const ready=!!lesson.value&&kp2027CurrentLessons().includes(Number(lesson.value))&&!kp2027PilotBusy;
@@ -3059,7 +3072,7 @@ async function generateRphFile(format){
   const url=URL.createObjectURL(blob),link=document.createElement("a");
   link.href=url;
   link.download="CIKGULAJU_RPH_"+subject.value+"_TAHUN_"+year.value+"_"+
-      lesson.value.replace(/[^a-zA-Z0-9_-]/g,"_")+(isPdf?".pdf":".docx");
+      lesson.value.replace(/[^a-zA-Z0-9_-]/g,"_")+(params.get("rph_variant")==="V2_DARAT"?"_AKUATIK_V2":"")+(isPdf?".pdf":".docx");
   document.body.append(link);link.click();link.remove();
   setTimeout(()=>URL.revokeObjectURL(url),30000);
   const mode=response.headers.get("X-RPH-Access-Mode");
