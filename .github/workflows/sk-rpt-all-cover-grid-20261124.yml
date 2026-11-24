@@ -1,0 +1,22 @@
+name: SK RPT all cover and grid batch
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_sk_rpt_all_cover_grid_20261124.py'
+      - '.github/workflows/sk-rpt-all-cover-grid-20261124.yml'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install 'PyMuPDF==1.26.7'
+      - run: python -m scripts.audit_sk_rpt_all_cover_grid_20261124
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sk-rpt-all-cover-grid
+          path: qa-sk-rpt-all/
+          retention-days: 7
