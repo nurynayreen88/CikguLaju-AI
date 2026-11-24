@@ -75,11 +75,32 @@ def render(row, bank, dest):
         ("التقويم التكويني", first(f, "Pengukuhan", "Penilaian (PBD)", "PBD")),
         ("الخاتمة", first(f, "Penutup")),
     ]
-    _table(doc, (3.1, 12.0, 3.6), [("المرحلة", "أنشطة التعليم والتعلّم", "ملاحظات")] + [(k,v,"") for k,v in activities], header=True)
+    phases = _table(doc, (3.1, 12.0, 3.6), [("المرحلة", "أنشطة التعليم والتعلّم", "ملاحظات")] + [(k,v,"") for k,v in activities], header=True)
+    activity_titles = []
+    for index, prefix in ((2, "Aktiviti 1"), (3, "Aktiviti 2")):
+        source_label = next((k for k in f if k.startswith(prefix)), "")
+        suffix = source_label[len(prefix):].strip(" —–-:")
+        if suffix:
+            cell = phases.cell(index, 1)
+            body = cell.paragraphs[0]
+            heading = body.insert_paragraph_before()
+            _paragraph(heading, suffix, bold=True, size=9)
+            activity_titles.append(suffix)
+    original_reflection = first(f, "Refleksi guru", "Refleksi")
+    reflection = original_reflection
+    # Existing specific reflections remain untouched. Generic blank-count
+    # reflections gain exact source evidence, without inventing pupil results.
+    if re.search(r"murid mencapai objektif|murid mencapai kriteria kejayaan", original_reflection, re.I):
+        criterion = details[3][1].strip()
+        objective = details[2][1].strip()
+        generic = re.search(r"seperti dalam objektif|mengikut objektif|fokus pembelajaran|mengikut SP", criterion, re.I)
+        evidence = objective if generic else criterion
+        if evidence:
+            reflection = "____ / ____ murid mencapai sasaran: " + evidence.rstrip(".") + ". Baki dibimbing semula."
     footer = [
         ("الوسائل التعليمية", first(f, "BBM")),
         ("المرجع", row["halaman_buku"]),
-        ("تأمّل المعلّم", first(f, "Refleksi guru", "Refleksi")),
+        ("تأمّل المعلّم", reflection),
     ]
     _table(doc, (4.3, 14.4), footer)
     # Native table helper uses 11 pt; compact mixed-language drafts to 9 pt
@@ -103,8 +124,15 @@ def render(row, bank, dest):
     assert all(v and v in displayed for _,v in identity + details + activities)
     assert footer[0][1] and footer[0][1] in displayed
     assert all(v in displayed for _,v in footer if v)
+    assert all(v in displayed for v in activity_titles)
+    for idx in (2, 3):
+        paras = check.tables[2].cell(idx, 1).paragraphs
+        if len(paras) > 1:
+            assert any(run.bold for run in paras[0].runs)
+    if reflection != original_reflection:
+        assert evidence.rstrip(".") in reflection
     assert all(not r.cells[2].text for r in check.tables[0].rows)
-    return {"year":year, "pdp":pdp, "sk":row["sk"], "sp":row["sp"], "source_sha256":hashlib.sha256(raw.encode()).hexdigest(), "sp_candidate":True, "sk_description_pending":True, "ready":False}
+    return {"year":year, "pdp":pdp, "sk":row["sk"], "sp":row["sp"], "source_sha256":hashlib.sha256(raw.encode()).hexdigest(), "sp_candidate":True, "sk_description_pending":True, "activity_titles":activity_titles, "reflection_linked":reflection != original_reflection, "ready":False}
 
 def main():
     import argparse
