@@ -1,0 +1,2391 @@
+{
+  "status": "QA_RPT_SOURCE_MAP_NOT_PUBLISHED",
+  "curriculum": "KP2027",
+  "subject": "Pendidikan Jasmani",
+  "year": 1,
+  "source": {
+    "title": "5. DK PENDIDIKAN JASMANI TAHUN 1_ISBN.pdf",
+    "isbn": "978-967-420-807-3",
+    "drive_id": "1I-N29W5syivfvsThQplu2-SottmhXPQj",
+    "catalog_path": "web/kp2027_pj_t1_catalog.json",
+    "catalog_git_blob": "41c1416cacd91da3b37d82c3335320f9a1b1d1a1",
+    "source_pdf_sha256": "7bdc2715decd84d5a83782c2c4b5af0f2cc502d337d902305e7d999b5c116629",
+    "dk_code_pages": {
+      "A1.1.1": 24,
+      "A1.1.2": 24,
+      "A1.1.3": 24,
+      "A1.1.4": 24,
+      "A1.1.5": 25,
+      "A1.1.6": 25,
+      "A1.1.7": 25,
+      "A1.2.1": 29,
+      "A1.2.2": 29,
+      "A1.2.3": 29,
+      "A1.2.4": 29,
+      "A1.2.5": 30,
+      "A1.2.6": 30,
+      "A1.2.7": 30,
+      "A1.3.1": 33,
+      "A1.3.2": 33,
+      "A1.3.3": 33,
+      "A1.3.4": 33,
+      "A1.3.5": 34,
+      "A1.4.1": 36,
+      "A1.4.2": 36,
+      "A1.4.3": 36,
+      "A1.4.4": 36,
+      "A1.4.5": 37,
+      "A1.4.6": 37,
+      "A1.4.7": 37,
+      "A2.1.1": 44,
+      "A2.1.2": 44,
+      "A2.1.3": 44,
+      "A2.1.4": 44,
+      "A2.1.5": 45,
+      "A2.1.6": 45,
+      "A2.1.7": 45,
+      "A2.1.8": 45,
+      "A2.1.9": 46,
+      "A3.1.1": 52,
+      "A3.1.2": 52,
+      "A3.1.3": 52,
+      "A3.1.4": 52,
+      "A3.1.5": 52,
+      "A3.1.6": 53,
+      "A3.1.7": 53,
+      "A3.1.8": 53,
+      "A4.1.1": 59,
+      "A4.1.2": 59,
+      "A4.1.3": 59,
+      "A4.1.4": 59,
+      "A4.1.5": 60,
+      "A4.2.1": 63,
+      "A4.2.2": 63,
+      "A4.2.3": 63,
+      "A4.2.4": 63,
+      "A4.2.5": 63,
+      "A4.2.6": 64,
+      "A4.2.7": 64,
+      "A4.2.8": 64,
+      "A4.2.9": 64,
+      "K1.1.1": 24,
+      "K1.1.10": 26,
+      "K1.1.11": 26,
+      "K1.1.2": 24,
+      "K1.1.3": 24,
+      "K1.1.4": 24,
+      "K1.1.5": 25,
+      "K1.1.6": 25,
+      "K1.1.7": 25,
+      "K1.1.8": 25,
+      "K1.1.9": 26,
+      "K1.2.1": 29,
+      "K1.2.2": 29,
+      "K1.2.3": 29,
+      "K1.2.4": 30,
+      "K1.2.5": 30,
+      "K1.2.6": 30,
+      "K1.2.7": 30,
+      "K1.2.8": 31,
+      "K1.3.1": 33,
+      "K1.3.2": 33,
+      "K1.3.3": 33,
+      "K1.4.1": 36,
+      "K1.4.2": 36,
+      "K1.4.3": 36,
+      "K1.4.4": 37,
+      "K1.4.5": 37,
+      "K1.4.6": 38,
+      "K2.1.1": 44,
+      "K2.1.2": 44,
+      "K2.1.3": 44,
+      "K2.1.4": 44,
+      "K2.1.5": 44,
+      "K2.1.6": 45,
+      "K2.1.7": 45,
+      "K2.1.8": 45,
+      "K3.1.1": 52,
+      "K3.1.10": 54,
+      "K3.1.2": 52,
+      "K3.1.3": 52,
+      "K3.1.4": 52,
+      "K3.1.5": 53,
+      "K3.1.6": 53,
+      "K3.1.7": 54,
+      "K3.1.8": 54,
+      "K3.1.9": 54,
+      "K4.1.1": 59,
+      "K4.1.2": 59,
+      "K4.1.3": 59,
+      "K4.1.4": 60,
+      "K4.1.5": 60,
+      "K4.2.1": 63,
+      "K4.2.10": 65,
+      "K4.2.2": 63,
+      "K4.2.3": 63,
+      "K4.2.4": 63,
+      "K4.2.5": 64,
+      "K4.2.6": 64,
+      "K4.2.7": 64,
+      "K4.2.8": 65,
+      "K4.2.9": 65,
+      "P1.1.1": 24,
+      "P1.1.2": 24,
+      "P1.1.3": 24,
+      "P1.1.4": 25,
+      "P1.1.5": 25,
+      "P1.1.6": 25,
+      "P1.1.7": 26,
+      "P1.2.1": 29,
+      "P1.2.2": 29,
+      "P1.2.3": 30,
+      "P1.2.4": 30,
+      "P1.2.5": 30,
+      "P1.3.1": 33,
+      "P1.3.2": 33,
+      "P1.3.3": 33,
+      "P1.3.4": 34,
+      "P1.4.1": 36,
+      "P1.4.2": 36,
+      "P1.4.3": 37,
+      "P1.4.4": 37,
+      "P1.4.5": 37,
+      "P1.4.6": 38,
+      "P1.4.7": 38,
+      "P1.4.8": 38,
+      "P2.1.1": 44,
+      "P2.1.2": 44,
+      "P2.1.3": 44,
+      "P2.1.4": 44,
+      "P2.1.5": 44,
+      "P2.1.6": 45,
+      "P2.1.7": 45,
+      "P2.1.8": 45,
+      "P2.1.9": 46,
+      "P3.1.1": 52,
+      "P3.1.2": 52,
+      "P3.1.3": 52,
+      "P3.1.4": 53,
+      "P3.1.5": 53,
+      "P3.1.6": 54,
+      "P4.1.1": 59,
+      "P4.1.2": 59,
+      "P4.1.3": 60,
+      "P4.2.1": 63,
+      "P4.2.2": 63,
+      "P4.2.3": 64,
+      "P4.2.4": 64,
+      "P4.2.5": 64,
+      "P4.2.6": 65,
+      "P4.2.7": 65
+    }
+  },
+  "counts": {
+    "pdp": 127,
+    "distinct_sp": 167,
+    "missing_domain_rows": 24,
+    "cross_subbidang_rows": 20
+  },
+  "groups": {
+    "A": {
+      "count": 64,
+      "distinct_sp": 167,
+      "missing_domain_rows": 13,
+      "cross_subbidang_rows": 10,
+      "rows": [
+        {
+          "pdp": 1,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "A1.1.1"
+          ],
+          "dk_pages": [
+            24
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 2,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "A1.1.2"
+          ],
+          "dk_pages": [
+            24
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 3,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.2",
+            "K1.1.3",
+            "A1.1.3"
+          ],
+          "dk_pages": [
+            24
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 4,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.3",
+            "K1.1.4",
+            "A1.1.4"
+          ],
+          "dk_pages": [
+            24
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 5,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.4",
+            "K1.1.5",
+            "A1.1.5"
+          ],
+          "dk_pages": [
+            25
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 6,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.4",
+            "K1.1.6",
+            "A1.1.6"
+          ],
+          "dk_pages": [
+            25
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 7,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.5",
+            "K1.1.7"
+          ],
+          "dk_pages": [
+            25
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 8,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.6",
+            "K1.1.8",
+            "A1.1.7"
+          ],
+          "dk_pages": [
+            25
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 9,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.7",
+            "K1.1.9",
+            "A1.2.1"
+          ],
+          "dk_pages": [
+            26,
+            29
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "A1.2.1"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 10,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.7",
+            "K1.1.10",
+            "A1.2.2"
+          ],
+          "dk_pages": [
+            26,
+            29
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "A1.2.2"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 11,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.1",
+            "A1.2.3"
+          ],
+          "dk_pages": [
+            29
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 12,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.2",
+            "K1.1.11",
+            "A1.2.4"
+          ],
+          "dk_pages": [
+            26,
+            29
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.1.11"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 13,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.3",
+            "K1.2.1"
+          ],
+          "dk_pages": [
+            29,
+            30
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 14,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.4",
+            "K1.2.2",
+            "A1.2.5"
+          ],
+          "dk_pages": [
+            29,
+            30
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 15,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.4",
+            "K1.2.3",
+            "A1.2.6"
+          ],
+          "dk_pages": [
+            29,
+            30
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 16,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.5",
+            "K1.2.4",
+            "A1.2.7"
+          ],
+          "dk_pages": [
+            30
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 17,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.1",
+            "K1.2.5",
+            "A1.3.1"
+          ],
+          "dk_pages": [
+            30,
+            33
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.2.5"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 18,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.2",
+            "K1.2.6",
+            "A1.3.2"
+          ],
+          "dk_pages": [
+            30,
+            33
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.2.6"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 19,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.2",
+            "K1.2.7"
+          ],
+          "dk_pages": [
+            30,
+            33
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [
+            "K1.2.7"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 20,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.3",
+            "K1.2.8",
+            "A1.3.3"
+          ],
+          "dk_pages": [
+            31,
+            33
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.2.8"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 21,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.4",
+            "A1.3.4"
+          ],
+          "dk_pages": [
+            33,
+            34
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 22,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.1",
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "dk_pages": [
+            33,
+            34,
+            36
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 23,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.2",
+            "K1.3.2",
+            "A1.4.1"
+          ],
+          "dk_pages": [
+            33,
+            36
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.3.2"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 24,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.2",
+            "K1.3.3",
+            "A1.4.2"
+          ],
+          "dk_pages": [
+            33,
+            36
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.3.3"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 25,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.3",
+            "K1.4.1"
+          ],
+          "dk_pages": [
+            36,
+            37
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 26,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.4",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "dk_pages": [
+            36,
+            37
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 27,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.5",
+            "K1.4.3",
+            "A1.4.4"
+          ],
+          "dk_pages": [
+            36,
+            37
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 28,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.5",
+            "K1.4.4",
+            "A1.4.5"
+          ],
+          "dk_pages": [
+            37
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 29,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.6",
+            "K1.4.5",
+            "A1.4.6"
+          ],
+          "dk_pages": [
+            37,
+            38
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 30,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "dk_pages": [
+            37,
+            38
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 31,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.8"
+          ],
+          "dk_pages": [
+            38
+          ],
+          "missing_domains": [
+            "K",
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 32,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 33,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.1",
+            "K2.1.2",
+            "A2.1.2"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 34,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.2",
+            "A2.1.3"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 35,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.3",
+            "K2.1.3"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 36,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.4",
+            "K2.1.4",
+            "A2.1.4"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 37,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.4",
+            "A2.1.5"
+          ],
+          "dk_pages": [
+            44,
+            45
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 38,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.5",
+            "K2.1.5",
+            "A2.1.6"
+          ],
+          "dk_pages": [
+            44,
+            45
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 39,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.6",
+            "K2.1.6"
+          ],
+          "dk_pages": [
+            45
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 40,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.7",
+            "A2.1.7"
+          ],
+          "dk_pages": [
+            45
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 41,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.7",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "dk_pages": [
+            45
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 42,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.8",
+            "K2.1.8",
+            "A2.1.9"
+          ],
+          "dk_pages": [
+            45,
+            46
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 43,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.9"
+          ],
+          "dk_pages": [
+            46
+          ],
+          "missing_domains": [
+            "K",
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 44,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "dk_pages": [
+            52
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 45,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.1",
+            "K3.1.3",
+            "A3.1.2"
+          ],
+          "dk_pages": [
+            52
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 46,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.2",
+            "K3.1.4",
+            "A3.1.3"
+          ],
+          "dk_pages": [
+            52
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 47,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.3",
+            "K3.1.5",
+            "A3.1.4"
+          ],
+          "dk_pages": [
+            52,
+            53
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 48,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.4",
+            "K3.1.6",
+            "K3.1.7",
+            "A3.1.5"
+          ],
+          "dk_pages": [
+            52,
+            53,
+            54
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 49,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.4",
+            "K3.1.8",
+            "A3.1.6"
+          ],
+          "dk_pages": [
+            53,
+            54
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 50,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.5",
+            "K3.1.9",
+            "A3.1.7"
+          ],
+          "dk_pages": [
+            53,
+            54
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 51,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.6",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "dk_pages": [
+            53,
+            54
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 52,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "K4.1.2",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "dk_pages": [
+            59
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 53,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "dk_pages": [
+            59
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 54,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "dk_pages": [
+            59,
+            60
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 55,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "dk_pages": [
+            60
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 56,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "A4.2.1"
+          ],
+          "dk_pages": [
+            63
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 57,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "dk_pages": [
+            63
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 58,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "dk_pages": [
+            63
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 59,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "dk_pages": [
+            63,
+            64
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 60,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "dk_pages": [
+            63,
+            64
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 61,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.4",
+            "K4.2.7",
+            "A4.2.6"
+          ],
+          "dk_pages": [
+            64
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 62,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.5",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "dk_pages": [
+            64,
+            65
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 63,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "dk_pages": [
+            64,
+            65
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 64,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "dk_pages": [
+            64,
+            65
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        }
+      ]
+    },
+    "B": {
+      "count": 63,
+      "distinct_sp": 167,
+      "missing_domain_rows": 11,
+      "cross_subbidang_rows": 10,
+      "rows": [
+        {
+          "pdp": 1,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "A1.1.1"
+          ],
+          "dk_pages": [
+            24
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 2,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "A1.1.2"
+          ],
+          "dk_pages": [
+            24
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 3,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.2",
+            "K1.1.3",
+            "A1.1.3"
+          ],
+          "dk_pages": [
+            24
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 4,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.3",
+            "K1.1.4",
+            "A1.1.4"
+          ],
+          "dk_pages": [
+            24
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 5,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.4",
+            "K1.1.5",
+            "A1.1.5"
+          ],
+          "dk_pages": [
+            25
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 6,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.4",
+            "K1.1.6",
+            "A1.1.6"
+          ],
+          "dk_pages": [
+            25
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 7,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.5",
+            "K1.1.7"
+          ],
+          "dk_pages": [
+            25
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 8,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.6",
+            "K1.1.8",
+            "A1.1.7"
+          ],
+          "dk_pages": [
+            25
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 9,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.7",
+            "K1.1.9",
+            "A1.2.1"
+          ],
+          "dk_pages": [
+            26,
+            29
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "A1.2.1"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 10,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.1.7",
+            "K1.1.10",
+            "A1.2.2"
+          ],
+          "dk_pages": [
+            26,
+            29
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "A1.2.2"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 11,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.1",
+            "A1.2.3"
+          ],
+          "dk_pages": [
+            29
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 12,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.2",
+            "K1.1.11",
+            "A1.2.4"
+          ],
+          "dk_pages": [
+            26,
+            29
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.1.11"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 13,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.3",
+            "K1.2.1"
+          ],
+          "dk_pages": [
+            29,
+            30
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 14,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.4",
+            "K1.2.2",
+            "A1.2.5"
+          ],
+          "dk_pages": [
+            29,
+            30
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 15,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.4",
+            "K1.2.3",
+            "A1.2.6"
+          ],
+          "dk_pages": [
+            29,
+            30
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 16,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.2.5",
+            "K1.2.4",
+            "A1.2.7"
+          ],
+          "dk_pages": [
+            30
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 17,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.1",
+            "K1.2.5",
+            "A1.3.1"
+          ],
+          "dk_pages": [
+            30,
+            33
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.2.5"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 18,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.2",
+            "K1.2.6",
+            "A1.3.2"
+          ],
+          "dk_pages": [
+            30,
+            33
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.2.6"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 19,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.2",
+            "K1.2.7"
+          ],
+          "dk_pages": [
+            30,
+            33
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [
+            "K1.2.7"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 20,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.3",
+            "K1.2.8",
+            "A1.3.3"
+          ],
+          "dk_pages": [
+            31,
+            33
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.2.8"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 21,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.3.4",
+            "A1.3.4"
+          ],
+          "dk_pages": [
+            33,
+            34
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 22,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.1",
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "dk_pages": [
+            33,
+            34,
+            36
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 23,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.2",
+            "K1.3.2",
+            "A1.4.1"
+          ],
+          "dk_pages": [
+            33,
+            36
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.3.2"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 24,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.2",
+            "K1.3.3",
+            "A1.4.2"
+          ],
+          "dk_pages": [
+            33,
+            36
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [
+            "K1.3.3"
+          ],
+          "date": null
+        },
+        {
+          "pdp": 25,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.3",
+            "K1.4.1"
+          ],
+          "dk_pages": [
+            36,
+            37
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 26,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.4",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "dk_pages": [
+            36,
+            37
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 27,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.5",
+            "K1.4.3",
+            "A1.4.4"
+          ],
+          "dk_pages": [
+            36,
+            37
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 28,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.5",
+            "K1.4.4",
+            "A1.4.5"
+          ],
+          "dk_pages": [
+            37
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 29,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.6",
+            "K1.4.5",
+            "A1.4.6"
+          ],
+          "dk_pages": [
+            37,
+            38
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 30,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "dk_pages": [
+            37,
+            38
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 31,
+          "bidang": "Asas pergerakan",
+          "tajuk": "Asas pergerakan",
+          "sp": [
+            "P1.4.8"
+          ],
+          "dk_pages": [
+            38
+          ],
+          "missing_domains": [
+            "K",
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 32,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 33,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.1",
+            "K2.1.2",
+            "A2.1.2"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 34,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.2",
+            "K2.1.3",
+            "A2.1.3"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 35,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.3",
+            "A2.1.4"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 36,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.4",
+            "K2.1.4",
+            "A2.1.5"
+          ],
+          "dk_pages": [
+            44,
+            45
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 37,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.5",
+            "K2.1.5"
+          ],
+          "dk_pages": [
+            44
+          ],
+          "missing_domains": [
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 38,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.5",
+            "K2.1.6",
+            "A2.1.6"
+          ],
+          "dk_pages": [
+            44,
+            45
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 39,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.6",
+            "A2.1.7"
+          ],
+          "dk_pages": [
+            45
+          ],
+          "missing_domains": [
+            "K"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 40,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.7",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "dk_pages": [
+            45
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 41,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.8",
+            "K2.1.8",
+            "A2.1.9"
+          ],
+          "dk_pages": [
+            45,
+            46
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 42,
+          "bidang": "Kemahiran manipulasi",
+          "tajuk": "Kemahiran manipulasi",
+          "sp": [
+            "P2.1.9"
+          ],
+          "dk_pages": [
+            46
+          ],
+          "missing_domains": [
+            "K",
+            "A"
+          ],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 43,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "dk_pages": [
+            52
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 44,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.1",
+            "K3.1.3",
+            "A3.1.2"
+          ],
+          "dk_pages": [
+            52
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 45,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.2",
+            "K3.1.4",
+            "A3.1.3"
+          ],
+          "dk_pages": [
+            52
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 46,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.3",
+            "K3.1.5",
+            "A3.1.4"
+          ],
+          "dk_pages": [
+            52,
+            53
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 47,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.4",
+            "K3.1.6",
+            "K3.1.7",
+            "A3.1.5"
+          ],
+          "dk_pages": [
+            52,
+            53,
+            54
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 48,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.4",
+            "K3.1.8",
+            "A3.1.6"
+          ],
+          "dk_pages": [
+            53,
+            54
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 49,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.5",
+            "K3.1.9",
+            "A3.1.7"
+          ],
+          "dk_pages": [
+            53,
+            54
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 50,
+          "bidang": "Rekreasi dan aktiviti luar",
+          "tajuk": "Rekreasi dan aktiviti luar",
+          "sp": [
+            "P3.1.6",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "dk_pages": [
+            53,
+            54
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 51,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "K4.1.2",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "dk_pages": [
+            59
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 52,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "dk_pages": [
+            59
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 53,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "dk_pages": [
+            59,
+            60
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 54,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "dk_pages": [
+            60
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 55,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "A4.2.1"
+          ],
+          "dk_pages": [
+            63
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 56,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "dk_pages": [
+            63
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 57,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "dk_pages": [
+            63
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 58,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "dk_pages": [
+            63,
+            64
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 59,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "dk_pages": [
+            63,
+            64
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 60,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.4",
+            "K4.2.7",
+            "A4.2.6"
+          ],
+          "dk_pages": [
+            64
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 61,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.5",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "dk_pages": [
+            64,
+            65
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 62,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "dk_pages": [
+            64,
+            65
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        },
+        {
+          "pdp": 63,
+          "bidang": "Kecergasan fizikal",
+          "tajuk": "Kecergasan fizikal",
+          "sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "dk_pages": [
+            64,
+            65
+          ],
+          "missing_domains": [],
+          "cross_subbidang": [],
+          "date": null
+        }
+      ]
+    }
+  },
+  "notes": [
+    "All 167 catalog codes match codes in DK standard tables. Presence only, not pedagogical parity.",
+    "Rows are copied from existing RPH catalog, not changed. Check missing domains and cross-subbidang assignments against actual source Word before any academic approval.",
+    "Dates remain blank until verified source timetable is supplied; no annual schedule invented.",
+    "This audit does not change any active RPH, storage approval, quota or public route."
+  ]
+}
