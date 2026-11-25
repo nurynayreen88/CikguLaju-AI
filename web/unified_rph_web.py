@@ -52,6 +52,7 @@ SUBJECT_LABELS = {
     "ARAB": "Bahasa Arab",
     "MUZIK": "Pendidikan Muzik",
     ppki.SUBJECT: "Pengurusan Kehidupan (PPKI)",
+    ppki.ENGLISH_SUBJECT: ppki.ENGLISH_LABEL,
 }
 SOURCE_SUBJECTS = frozenset(("ENGLISH", "MORAL", "PJPK", "PSV"))
 MAX_TOKEN = 40
@@ -983,7 +984,7 @@ def create_blueprint():
                 "unit": unit, "lesson": token, "teacher": teacher,
                 "status": "DRAF CADANGAN",
             }, None
-        if subject == ppki.SUBJECT:
+        if subject in ppki.SUBJECTS:
             try:
                 row = ppki.validate_selection(year, subject, unit, token)
             except (ppki.NativeRPHUnavailable, ValueError):

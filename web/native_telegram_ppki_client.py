@@ -11,6 +11,9 @@ from web.rph_teacher_reflection import valid_teacher_fields
 
 SOURCE = "ppki-pengurusan-kehidupan-v1"
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
+ENGLISH_SUBJECT = "BAHASA_INGGERIS_PPKI"
+ENGLISH_LABEL = "Bahasa Inggeris (PPKI)"
+SUBJECTS = frozenset((SUBJECT, ENGLISH_SUBJECT))
 COMPONENT = "pengurusan-diri"
 MANIPULATIVE_COMPONENT = "kemahiran-manipulatif"
 MANIPULATIVE_UNIT1 = "u01-kemahiran-manipulatif"
@@ -91,7 +94,7 @@ def _request(path, accept, limit, payload=None):
     if data is not None:
         headers["Content-Type"] = "application/json"
     request = Request(base + "/internal/rph/v1/ppki/" + path, data=data, headers=headers)
-    timeout = 6 if path.split("?", 1)[0] == "catalog" else 24
+    timeout = 6 if path.split("?", 1)[0] in ("catalog", "subject-catalog") else 24
     try:
         with build_opener(HTTPSHandler(), BlockRedirects()).open(request, timeout=timeout) as response:
             if response.status != 200 or response.headers.get_content_type() != accept:
@@ -186,7 +189,53 @@ def catalog(year=YEAR):
     return obj
 
 
+def english_catalog(year):
+    """Only server-reviewed English Year 2 Unit 1 may enter this release."""
+    if year != 2:
+        raise ValueError("Unknown PPKI English year")
+    try:
+        obj = json.loads(_request(
+            "subject-catalog?year=2&subject=" + ENGLISH_SUBJECT,
+            "application/json", 20000))
+    except (UnicodeError, ValueError) as exc:
+        raise NativeRPHUnavailable("Invalid PPKI English catalog JSON") from exc
+    if (not isinstance(obj, dict) or obj.get("source") != "ppki-subject-v1"
+            or obj.get("year") != year or obj.get("subject") != ENGLISH_SUBJECT):
+        raise NativeRPHUnavailable("Invalid PPKI English identity")
+    units = obj.get("units")
+    if obj.get("available") is False and units == []:
+        return []
+    if obj.get("available") is not True or not isinstance(units, list) or len(units) != 1:
+        raise NativeRPHUnavailable("Unexpected PPKI English unit scope")
+    entry = units[0]
+    _validate_unit(entry, "1", [["001", "002", "003"]])
+    if any(item.get("formats") != list(FORMATS) or
+           not isinstance(item.get("textbook_ref"), str) for item in entry["lessons"]):
+        raise NativeRPHUnavailable("Invalid PPKI English lesson metadata")
+    return units
+
+
 def get_options(kind, year, subject=None, component=None, unit=None):
+    if kind == "subjects" and year in YEARS:
+        legacy = catalog() if year == YEAR else catalog(year)
+        subjects = list(legacy["subjects"])
+        if year == 2:
+            try:
+                if english_catalog(year):
+                    subjects.insert(0, {"value": ENGLISH_SUBJECT, "label": ENGLISH_LABEL})
+            except NativeRPHUnavailable:
+                # Older backend or temporary failure: keep legacy PPKI usable.
+                pass
+        return subjects
+    if subject == ENGLISH_SUBJECT:
+        if year != 2 or component not in (None, "") or kind not in ("units", "pdp"):
+            raise ValueError("Invalid PPKI English selection")
+        units = english_catalog(year)
+        if kind == "units":
+            return [{"value": row["value"], "label": row["label"]} for row in units]
+        if unit != "1":
+            raise ValueError("Invalid PPKI English unit")
+        return units[0]["lessons"] if units else []
     if (year not in YEARS or kind not in ("subjects", "components", "units", "pdp")
             or (kind != "subjects" and subject != SUBJECT)
             or (kind == "units" and component not in (COMPONENT, MANIPULATIVE_COMPONENT))
@@ -213,6 +262,11 @@ def accepted_unit(year, unit):
 
 
 def validate_selection(year, subject, unit, lesson):
+    if subject == ENGLISH_SUBJECT:
+        selected = next((row for row in get_options("pdp", year, subject, unit=unit) if row["value"] == lesson), None)
+        if selected is None:
+            raise ValueError("Invalid PPKI English PdP")
+        return selected
     if subject != SUBJECT or not accepted_unit(year, unit):
         raise ValueError("Invalid PPKI RPH selection")
     source = catalog() if year == YEAR else catalog(year)

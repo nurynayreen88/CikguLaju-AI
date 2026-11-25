@@ -169,7 +169,7 @@ def options():
                         "bm-themes", "bm-units", "bm-topics", "bm-pdp"):
             return jsonify({"error": "invalid option kind"}), 400
         from web import native_telegram_ppki_client as ppki
-        if request.args.get("curriculum") == "ppki" or request.args.get("subject") == ppki.SUBJECT:
+        if request.args.get("curriculum") == "ppki" or request.args.get("subject") in ppki.SUBJECTS:
             try:
                 items = ppki.get_options(kind, year, request.args.get("subject"),
                                          request.args.get("component"), request.args.get("unit"))
