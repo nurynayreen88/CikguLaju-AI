@@ -3,7 +3,7 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1508,
+  "pages": 1452,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
@@ -227,47 +227,47 @@
     },
     "pendidikan_islam:2": {
       "path": "pendidikan_islam/tahun_2.pdf",
-      "sha256": "d90635e993ed1b92ecc06d61801b171bc5e048055eaa0290e1de49090acbef90",
-      "bytes": 718306,
-      "pages": 40,
+      "sha256": "79129ba5613f672cb105fb2621252283dfa7bb76ccc67cee0842d0339e50c92e",
+      "bytes": 210401,
+      "pages": 26,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_698_NATIVE_RPH_20261125",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:3": {
       "path": "pendidikan_islam/tahun_3.pdf",
-      "sha256": "f0c4ef02c13bdf81fc78220e1e8f46492143894ae537dbb66c1270f6d5854b74",
-      "bytes": 793242,
-      "pages": 41,
+      "sha256": "134253d2bc89c1736347df70e3e2929ab94e537e14869c69c0bf559fae7e5a33",
+      "bytes": 245558,
+      "pages": 34,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_698_NATIVE_RPH_20261125",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:4": {
       "path": "pendidikan_islam/tahun_4.pdf",
-      "sha256": "c9de72f9b047395c4f7682a44151c161306a146bfc36fb3c1b9cf46c4bc3f440",
-      "bytes": 802341,
-      "pages": 60,
+      "sha256": "e77bfd0654b5bf687bbb74fbc5c1d22a3c088adb735e0b6e62e001899a941e74",
+      "bytes": 258289,
+      "pages": 36,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_698_NATIVE_RPH_20261125",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:5": {
       "path": "pendidikan_islam/tahun_5.pdf",
-      "sha256": "7963db1a6dd94c639cfd35a1054096051a8b803855bd4f5a37f20b3fe7732b22",
-      "bytes": 790167,
-      "pages": 45,
+      "sha256": "f8830f4efbcd8bf26a33acb804ee2673e5dabdc354b8dfe34bb5d21bce1fc159",
+      "bytes": 254143,
+      "pages": 36,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_698_NATIVE_RPH_20261125",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:6": {
       "path": "pendidikan_islam/tahun_6.pdf",
-      "sha256": "df8a5f55a7a55188c1550a6c32138958c474f2b0dcb59aeffa4fa1aa8ad2f041",
-      "bytes": 785108,
-      "pages": 38,
+      "sha256": "b993b3cf5baeebc4e67d37456b5b2e12955a0d4373a5dc29b5014fc4fb98f41f",
+      "bytes": 255296,
+      "pages": 36,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_698_NATIVE_RPH_20261125",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_moral:2": {
