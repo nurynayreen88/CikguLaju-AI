@@ -1,0 +1,547 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "English",
+  "subject_id": "BAHASA_INGGERIS_PPKI",
+  "status": "READY",
+  "units": {
+    "9": "Months of the Year",
+    "10": "Work We Do",
+    "11": "Going Around",
+    "12": "Animals I Love"
+  },
+  "sources": {
+    "textbook": "https://fliphtml5.com/gutjj/fwbv/English_%28Learning_Disabilities%29_Year_2/",
+    "dskp": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
+  },
+  "standard_text_kind": "Source-aligned paraphrases; not verbatim",
+  "release_scope": "RPH only, Units 9–12; independent activities; Activity Book references and dated RPT pending",
+  "content_standards": {
+    "1.1": "Respond suitably to spoken input for different purposes.",
+    "1.2": "Develop pronunciation, stress, rhythm and intonation through listening.",
+    "1.3": "Take part in everyday exchanges.",
+    "1.4": "Understand and respond to spoken stories, visual material and songs or rhymes.",
+    "2.1": "Recognise, remember and comprehend vocabulary and short phrases through reading.",
+    "3.1": "Produce clear, readable written words.",
+    "3.2": "Use appropriate sentence writing and punctuation.",
+    "3.3": "Communicate ideas creatively through suitable media and language."
+  },
+  "learning_standards": {
+    "1.1.1": "Listen and give an appropriate response to a stimulus.",
+    "1.1.2": "Show understanding of short spoken instructions.",
+    "1.2.1": "Hear and pronounce vocabulary and short phrases.",
+    "1.2.2(i)": "Listen to and sing nursery rhymes.",
+    "1.2.2(ii)": "Listen to and sing songs.",
+    "1.3.1": "Respond to everyday conversation with support.",
+    "1.3.2(i)": "Join supported exchanges using basic greetings.",
+    "1.3.2(ii)": "Join supported exchanges introducing relatives.",
+    "1.3.2(iii)": "Follow basic classroom directions with support during an exchange.",
+    "1.4.1(i)": "Demonstrate listening comprehension using yes/no responses.",
+    "1.4.1(ii)": "Demonstrate listening comprehension by judging statements true or false.",
+    "1.4.1(iii)": "Demonstrate listening comprehension by answering Wh-questions.",
+    "2.1.1": "Identify and remember words.",
+    "2.1.2": "Read vocabulary and short phrases.",
+    "2.1.3": "Read and show comprehension of vocabulary and short phrases.",
+    "3.1.1": "Copy and write familiar sight vocabulary legibly.",
+    "3.1.2": "Write legible, correctly spelled words.",
+    "3.2.1(i)": "Use lowercase letters correctly in sentences.",
+    "3.2.1(ii)": "Use uppercase letters correctly in sentences.",
+    "3.2.1(iv)": "Use full stops correctly in sentences.",
+    "3.3.1(i)": "Produce simple creative greeting cards.",
+    "3.3.1(ii)": "Produce simple creative collages."
+  },
+  "lessons": [
+    {
+      "pdp": "039",
+      "unit": 9,
+      "title": "Months and events",
+      "textbook_page": "43–44",
+      "sp": [
+        "1.1.1",
+        "1.2.1"
+      ],
+      "sk": [
+        "1.1",
+        "1.2"
+      ],
+      "objective": "Pronounce six month names and answer three spoken questions about planned events.",
+      "success_criterion": "Pronounce six month names and answer three spoken questions about planned events.",
+      "materials": "Textbook p. 43–44; Calendar cards, event pictures",
+      "induction": "Show a calendar",
+      "guided": "Introduce six month names using the textbook class planner; model their pronunciation and ask about three events.",
+      "practice": "Pupils pronounce the six selected months, then listen to three event questions and locate the matching months on the planner.",
+      "support": "Use numbered month slots and a reduced card set",
+      "closure": "Name the month following a selected card",
+      "assessment": "Record six pronunciation attempts and three responses separately.",
+      "reflection_criterion": "Pronounce six month names and answer three spoken questions about planned events.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "040",
+      "unit": 9,
+      "title": "Calendar dialogue",
+      "textbook_page": "45",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match three of four calendar questions and answers.",
+      "success_criterion": "Read and match three of four calendar questions and answers.",
+      "materials": "Textbook p. 45; Fictional class planner, dialogue strips",
+      "induction": "Show an event icon",
+      "guided": "Model reading a question and locating the matching event in the class planner.",
+      "practice": "Pairs read four short calendar exchanges using different event cards and match each answer to its month.",
+      "support": "Mark the event row and provide two answer choices",
+      "closure": "Read one question with a partner",
+      "assessment": "Check four reading matches.",
+      "reflection_criterion": "Read and match three of four calendar questions and answers.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "041",
+      "unit": 9,
+      "title": "Writing month names",
+      "textbook_page": "46–47",
+      "sp": [
+        "2.1.3",
+        "3.1.1"
+      ],
+      "sk": [
+        "2.1",
+        "3.1"
+      ],
+      "objective": "Find four of six events in the planner and copy their month names legibly.",
+      "success_criterion": "Find four of six events in the planner and copy their month names legibly.",
+      "materials": "Textbook p. 46–47; Calendar, word bank, writing sheets",
+      "induction": "Find a missing-letter month card",
+      "guided": "Model copying a month name from the planner",
+      "practice": "Pupils read six original event clues, locate the corresponding month in the planner and copy its name, using letter prompts if necessary.",
+      "support": "Provide first-letter prompts and enlarged text",
+      "closure": "Compare one answer with the planner",
+      "assessment": "Check correct month selection and legibility.",
+      "reflection_criterion": "Find four of six events in the planner and copy their month names legibly.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "042",
+      "unit": 9,
+      "title": "Celebration card display",
+      "textbook_page": "48",
+      "sp": [
+        "3.3.1(i)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Make a greeting card with a readable month and greeting.",
+      "success_criterion": "Make a greeting card with a readable month and greeting.",
+      "materials": "Textbook p. 48; Folded cards, stickers, month bank",
+      "induction": "Show a fictional event card",
+      "guided": "Model folding a card, choosing a month and writing a simple birthday greeting.",
+      "practice": "Pupils make a card for a fictional friend, add the month and a greeting and decorate it with paper shapes.",
+      "support": "Provide adhesive labels and precut decoration",
+      "closure": "Read the month on the card",
+      "assessment": "Check that the card has a greeting and readable month label.",
+      "reflection_criterion": "Make a greeting card with a readable month and greeting.",
+      "activity_book_ref": null,
+      "source_note": "Textbook p.48 prints 3.3.1(ii); the greeting-card activity aligns with DSKP 3.3.1(i).",
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "043",
+      "unit": 10,
+      "title": "Occupation song cues",
+      "textbook_page": "49",
+      "sp": [
+        "1.2.2(ii)"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "objective": "Sing at three occupation-word cues in the song.",
+      "success_criterion": "Sing at three occupation-word cues in the song.",
+      "materials": "Textbook p. 49; Occupation pictures, textbook",
+      "induction": "Show a picture of a baker",
+      "guided": "Use three worker pictures and model singing the occupation words to the textbook tune.",
+      "practice": "Pupils choose a worker card, sing the target word at three cues, and match a worker to a workplace after singing.",
+      "support": "Use a spoken rhythmic version or communication board",
+      "closure": "Match one worker to a workplace",
+      "assessment": "Record vocal participation at three cues; record non-vocal adaptations separately.",
+      "reflection_criterion": "Sing at three occupation-word cues in the song.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY",
+      "source_note": "Textbook p.49 prints 1.2.2(i); the named song fits DSKP song subcode 1.2.2(ii)."
+    },
+    {
+      "pdp": "044",
+      "unit": 10,
+      "title": "Reading job clues",
+      "textbook_page": "50–51",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match four of five short job clues to workers.",
+      "success_criterion": "Read and match four of five short job clues to workers.",
+      "materials": "Textbook p. 50–51; Worker pictures, original clue cards",
+      "induction": "Show a picture of a pilot",
+      "guided": "Model reading a short work-action phrase and matching it to a worker picture.",
+      "practice": "Pupils read five original clues about familiar jobs and match each clue to a picture of the worker.",
+      "support": "Use one highlighted verb per clue",
+      "closure": "Read a clue to a partner",
+      "assessment": "Count correct matches.",
+      "reflection_criterion": "Read and match four of five short job clues to workers.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "045",
+      "unit": 10,
+      "title": "Occupation story reading",
+      "textbook_page": "52",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match three of four short phrases to events in the police story.",
+      "success_criterion": "Read and match three of four short phrases to events in the police story.",
+      "materials": "Textbook p. 52; Textbook, picture sequence",
+      "induction": "Show a police station picture",
+      "guided": "Read the textbook story with picture support and model matching one phrase to a story scene.",
+      "practice": "Pupils read four short original phrases about the story and place each by a scene; discuss seeking a trusted adult if danger is seen.",
+      "support": "Use picture choices; reinforce seeking help from a trusted adult",
+      "closure": "Name the worker in the story",
+      "assessment": "Check four phrase-to-scene matches.",
+      "reflection_criterion": "Read and match three of four short phrases to events in the police story.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "046",
+      "unit": 10,
+      "title": "Worker and action sentences",
+      "textbook_page": "53",
+      "sp": [
+        "3.1.2"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "objective": "Write four of five missing job-action words legibly with correct spelling.",
+      "success_criterion": "Write four of five missing job-action words legibly with correct spelling.",
+      "materials": "Textbook p. 53; Word tiles, substitution grid",
+      "induction": "Mime a familiar job",
+      "guided": "Model choosing an action word from a worker-action grid and writing it into a short sentence.",
+      "practice": "Pupils match five workers to actions, then write the missing action words into original sentence frames.",
+      "support": "Provide two action options per worker",
+      "closure": "Read one completed sentence",
+      "assessment": "Check word choice, spelling and legibility.",
+      "reflection_criterion": "Write four of five missing job-action words legibly with correct spelling.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "047",
+      "unit": 10,
+      "title": "Job picture booklet",
+      "textbook_page": "54",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Create three labelled worker-picture collages in a booklet.",
+      "success_criterion": "Create three labelled worker-picture collages in a booklet.",
+      "materials": "Textbook p. 54; Folded paper, job images, glue",
+      "induction": "Show a sample booklet",
+      "guided": "Model attaching a worker picture and a separate tool or workplace cut-out to a booklet page, then add a label.",
+      "practice": "Pupils assemble three collage pages with worker pictures and appropriate details; label the workers using a word bank.",
+      "support": "Use adhesive word tiles or tracing guides",
+      "closure": "Present one page",
+      "assessment": "Check three readable labels and the attached collage details.",
+      "reflection_criterion": "Create three labelled worker-picture collages in a booklet.",
+      "activity_book_ref": null,
+      "source_note": "Adaptation adds a collage element to meet DSKP 3.3.1(ii); original textbook craft retained.",
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "048",
+      "unit": 11,
+      "title": "Bus song participation",
+      "textbook_page": "55",
+      "sp": [
+        "1.2.2(ii)"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "objective": "Sing along at three target cues in the bus song.",
+      "success_criterion": "Sing along at three target cues in the bus song.",
+      "materials": "Textbook p. 55; Bus model, gesture cards",
+      "induction": "Roll a toy bus",
+      "guided": "Model singing with picture cues and optional seated movements.",
+      "practice": "Pupils choose bus-related pictures and sing the target words at three cues; no physical movement is required.",
+      "support": "Allow pointing instead of movement and offer quiet pacing",
+      "closure": "Recall one bus word",
+      "assessment": "Record vocal responses to three cues and adapted responses separately.",
+      "reflection_criterion": "Sing along at three target cues in the bus song.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "049",
+      "unit": 11,
+      "title": "Transport questions",
+      "textbook_page": "56–57",
+      "sp": [
+        "1.1.1",
+        "1.4.1(iii)"
+      ],
+      "sk": [
+        "1.1",
+        "1.4"
+      ],
+      "objective": "Answer five of seven oral questions about transport and state or select a travel preference.",
+      "success_criterion": "Answer five of seven oral questions about transport and state or select a travel preference.",
+      "materials": "Textbook p. 56–57; Vehicle pictures, three sorting mats",
+      "induction": "Show a boat and a car",
+      "guided": "Use pictures of vehicles to model questions about transport and where it travels.",
+      "practice": "Ask seven Wh-questions aloud. Pupils answer by speaking or selecting picture cards; include a preference question with a reason choice.",
+      "support": "Use two choices and a sentence starter",
+      "closure": "Choose a favourite vehicle",
+      "assessment": "Count relevant responses and note prompts.",
+      "reflection_criterion": "Answer five of seven oral questions about transport and state or select a travel preference.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "050",
+      "unit": 11,
+      "title": "School transport sentences",
+      "textbook_page": "58",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match four short transport phrases to pictures.",
+      "success_criterion": "Read and match four short transport phrases to pictures.",
+      "materials": "Textbook p. 58; Original sentence cards, vehicle pictures",
+      "induction": "Choose a transport picture",
+      "guided": "Model reading a vehicle name and short travel phrase.",
+      "practice": "Pupils read four original travel phrases, match each to a vehicle picture and use one in a fictional school journey.",
+      "support": "Highlight the vehicle word; provide a communication board",
+      "closure": "Read a sentence to a partner",
+      "assessment": "Check all four reading matches.",
+      "reflection_criterion": "Read and match four short transport phrases to pictures.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "051",
+      "unit": 11,
+      "title": "Reading a travel list",
+      "textbook_page": "59",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read a short travel list and identify three listed vehicles.",
+      "success_criterion": "Read a short travel list and identify three listed vehicles.",
+      "materials": "Textbook p. 59; Textbook, simple fictional map, vehicle tokens",
+      "induction": "Show a picture of an island",
+      "guided": "Model locating vehicle words in a short travel passage and explain how commas separate the items.",
+      "practice": "Pupils read an original three-item travel list, match the vehicles to picture tokens and point to the separators.",
+      "support": "Use coloured separators and picture clues",
+      "closure": "Read the selected vehicle names",
+      "assessment": "Record three correct vehicle matches; comma recognition is enrichment only.",
+      "reflection_criterion": "Read a short travel list and identify three listed vehicles.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "052",
+      "unit": 11,
+      "title": "Boat model display",
+      "textbook_page": "60",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Make a labelled boat display with a model and at least two attached collage details.",
+      "success_criterion": "Make a labelled boat display with a model and at least two attached collage details.",
+      "materials": "Textbook p. 60; Cardboard boat base, paper sail, paper shapes, tape, blunt scissors; teacher-prepared parts",
+      "induction": "Show a boat model",
+      "guided": "Model attaching the sail to a stable paper base and arranging two travel-themed paper cut-outs on a display backing.",
+      "practice": "Pupils assemble a dry tabletop boat model with support, attach two cut-outs to its backing and add a readable label.",
+      "support": "Use precut pieces; no sharp plastic cutting or water trial is required.",
+      "closure": "Present the boat label",
+      "assessment": "Check model, collage details and label.",
+      "reflection_criterion": "Make a labelled boat display with a model and at least two attached collage details.",
+      "activity_book_ref": null,
+      "source_note": "Adaptation adds a collage element to meet DSKP 3.3.1(ii); original textbook craft retained.",
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "053",
+      "unit": 12,
+      "title": "Counting monkey song",
+      "textbook_page": "61",
+      "sp": [
+        "1.2.2(ii)"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "objective": "Sing at three number-word cues in the monkey song.",
+      "success_criterion": "Sing at three number-word cues in the monkey song.",
+      "materials": "Textbook p. 61; Monkey pictures, number cards",
+      "induction": "Show five monkey cards",
+      "guided": "Use five monkey picture cards and model the song, changing the number card as the count decreases.",
+      "practice": "Pupils select the next number card and sing the target number words at three cues.",
+      "support": "Use tabletop cards instead of physical movement",
+      "closure": "Show the final number",
+      "assessment": "Record three vocal cues and any adapted responses separately.",
+      "reflection_criterion": "Sing at three number-word cues in the monkey song.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "054",
+      "unit": 12,
+      "title": "Zoo animal picture talk",
+      "textbook_page": "62–63",
+      "sp": [
+        "1.1.1",
+        "1.4.1(i)",
+        "1.4.1(iii)"
+      ],
+      "sk": [
+        "1.1",
+        "1.4"
+      ],
+      "objective": "Answer five of seven spoken animal questions, including one yes/no and Wh-questions.",
+      "success_criterion": "Answer five of seven spoken animal questions, including one yes/no and Wh-questions.",
+      "materials": "Textbook p. 62–63; Animal pictures, toy figures",
+      "induction": "Reveal a zebra image",
+      "guided": "Model asking about a zoo picture and choosing an animal name or feature.",
+      "practice": "Ask seven questions aloud using animal pictures, including a yes/no question and Wh-questions; pupils respond using speech or picture choices.",
+      "support": "Provide two animal choices and tactile figures",
+      "closure": "Name an animal they like",
+      "assessment": "Count relevant responses and record prompt level.",
+      "reflection_criterion": "Answer five of seven spoken animal questions, including one yes/no and Wh-questions.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "055",
+      "unit": 12,
+      "title": "Reading animal features",
+      "textbook_page": "64",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match four of five animal-feature phrases to pictures.",
+      "success_criterion": "Read and match four of five animal-feature phrases to pictures.",
+      "materials": "Textbook p. 64; Feature strips, animal pictures",
+      "induction": "Show a trunk picture",
+      "guided": "Model reading a short animal-feature phrase and selecting the matching animal.",
+      "practice": "Pupils read five original feature clues and match them to animal pictures.",
+      "support": "Highlight the key feature word and use picture cues",
+      "closure": "Read one clue aloud",
+      "assessment": "Check five reading matches.",
+      "reflection_criterion": "Read and match four of five animal-feature phrases to pictures.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "056",
+      "unit": 12,
+      "title": "Favourite animal dialogue",
+      "textbook_page": "65",
+      "sp": [
+        "2.1.3",
+        "1.4.1(iii)"
+      ],
+      "sk": [
+        "2.1",
+        "1.4"
+      ],
+      "objective": "Read three short dialogue lines and answer one spoken Wh-question about a favourite animal.",
+      "success_criterion": "Read three short dialogue lines and answer one spoken Wh-question about a favourite animal.",
+      "materials": "Textbook p. 65; Dialogue cards, animal pictures",
+      "induction": "Choose an animal picture",
+      "guided": "Model reading a short exchange and ask why a character prefers an animal.",
+      "practice": "Pairs read three short dialogue lines and answer a teacher's spoken Wh-question using a feature picture or words.",
+      "support": "Supply a sentence frame or speech output",
+      "closure": "Show an animal and state one feature",
+      "assessment": "Record reading participation and listening response separately.",
+      "reflection_criterion": "Read three short dialogue lines and answer one spoken Wh-question about a favourite animal.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    },
+    {
+      "pdp": "057",
+      "unit": 12,
+      "title": "Animal scene display",
+      "textbook_page": "66",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Make a labelled animal diorama with three animal pictures and two attached habitat details.",
+      "success_criterion": "Make a labelled animal diorama with three animal pictures and two attached habitat details.",
+      "materials": "Textbook p. 66; Shoebox, precut animals, label cards",
+      "induction": "Show an empty display box",
+      "guided": "Model arranging animal cut-outs and paper habitat elements inside a shallow box, then attach labels.",
+      "practice": "Pupils attach three animal pictures and two habitat details to the backing, assemble the display and add three readable labels.",
+      "support": "Provide preassembled display base and large printed words",
+      "closure": "Present one labelled animal",
+      "assessment": "Check the attached collage elements and three correct labels.",
+      "reflection_criterion": "Make a labelled animal diorama with three animal pictures and two attached habitat details.",
+      "activity_book_ref": null,
+      "source_note": "Adaptation adds a collage element to meet DSKP 3.3.1(ii); original textbook craft retained.",
+      "standard_audit": "Textbook teacher-note codes on pages 43–66 and DSKP extracted text reviewed 2026-11-26; fresh PDF page screenshots unavailable. Activities independently adapted.",
+      "status": "READY"
+    }
+  ]
+}
