@@ -1,0 +1,902 @@
+{
+  "date": "2026-11-25",
+  "status": "TEXT_EXTRACTION_SK_CANDIDATES_AND_INDEX_COVERAGE_ONLY",
+  "scope": "Only used SK headline sentences, not theme lists, examples or academic signoff; SK candidates reconstructed from year-specific Drive PDF extracted text with RTL word-order and spacing repairs. No independent rendered-page visual reinspection or hash recomputation in this session. No production, RPT, access or renderer changes.",
+  "index_blob": "9ab0a3643dbb05ac468a7c33c8a742880860dba3",
+  "sp_bank_blob": "45d3a46f439a8131ee9792cd7f2fbd3c270ce7b0",
+  "years": {
+    "5": {
+      "source_url": "https://drive.google.com/file/d/1D-Yb6pwiHAf4k4FDkPbdbsAhvGwv8G5q/view",
+      "recorded_pdf_sha256": "8017d4d6e3f47cd107e1f193edb46ad5aefd47beadaab6edef208eed9015cbf4",
+      "archived_sp_blob": "d086ba79b032cbe50491e4680cb060c69bf3151b",
+      "lesson_count": 60,
+      "distinct_sk": 11,
+      "distinct_sp": 25,
+      "all_sp_match_archived_year_specific_text_and_page": true,
+      "entries": {
+        "1.1": {
+          "text": "الاستماع إلى أصوات الحروف المتماثلة ثم نطقها نطقا صحيحا.",
+          "pdf_page": 31,
+          "printed_page": 19,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "1.2": {
+          "text": "الاستماع إلى كلمات المحاور الآتية ونطقها نطقا صحيحا.",
+          "pdf_page": 32,
+          "printed_page": 20,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "1.3": {
+          "text": "الاستماع إلى الجمل البسيطة حسب المحاور الآتية ونطقها نطقا صحيحا.",
+          "pdf_page": 33,
+          "printed_page": 21,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "1.4": {
+          "text": "الاستماع إلى الجمل المتناسقة* حسب المحاور المقترحة ونطقها نطقا صحيحا.",
+          "pdf_page": 34,
+          "printed_page": 22,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "2.1": {
+          "text": "قراءة الكلمات التي فيها أصوات الحروف المتماثلة قراءة صحيحة.",
+          "pdf_page": 36,
+          "printed_page": 24,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "2.2": {
+          "text": "قراءة الكلمات حسب المحاور الآتية قراءة صحيحة.",
+          "pdf_page": 37,
+          "printed_page": 25,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "2.3": {
+          "text": "قراءة الجمل البسيطة حسب المحاور الآتية قراءة صحيحة.",
+          "pdf_page": 38,
+          "printed_page": 26,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "3.1": {
+          "text": "كتابة الكلمات التي فيها الحروف المتشابهة رسما كتابة صحيحة.",
+          "pdf_page": 41,
+          "printed_page": 29,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "3.2": {
+          "text": "كتابة كلمات المحاور الآتية كتابة صحيحة.",
+          "pdf_page": 42,
+          "printed_page": 30,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "3.3": {
+          "text": "كتابة الجمل البسيطة حسب المحاور الآتية كتابة صحيحة.",
+          "pdf_page": 43,
+          "printed_page": 31,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "3.4": {
+          "text": "كتابة الجمل المتناسقة* حسب المحاور المقترحة كتابة صحيحة.",
+          "pdf_page": 44,
+          "printed_page": 32,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        }
+      },
+      "lessons": [
+        {
+          "pdp": 1,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 2,
+          "sk": "1.1",
+          "sp": "1.1.3",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 3,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 4,
+          "sk": "2.1",
+          "sp": "2.1.1",
+          "pdf_page": 36
+        },
+        {
+          "pdp": 5,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 6,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "pdf_page": 42
+        },
+        {
+          "pdp": 7,
+          "sk": "1.3",
+          "sp": "1.3.1",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 8,
+          "sk": "1.3",
+          "sp": "1.3.2",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 9,
+          "sk": "2.3",
+          "sp": "2.3.1",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 10,
+          "sk": "2.3",
+          "sp": "2.3.2",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 11,
+          "sk": "3.3",
+          "sp": "3.3.1",
+          "pdf_page": 43
+        },
+        {
+          "pdp": 12,
+          "sk": "1.4",
+          "sp": "1.4.1",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 13,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 14,
+          "sk": "1.1",
+          "sp": "1.1.2",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 15,
+          "sk": "2.1",
+          "sp": "2.1.1",
+          "pdf_page": 36
+        },
+        {
+          "pdp": 16,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 17,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 18,
+          "sk": "1.2",
+          "sp": "1.2.3",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 19,
+          "sk": "1.2",
+          "sp": "1.2.5",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 20,
+          "sk": "2.2",
+          "sp": "2.2.3",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 21,
+          "sk": "2.2",
+          "sp": "2.2.2",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 22,
+          "sk": "2.2",
+          "sp": "2.2.5",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 23,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "pdf_page": 42
+        },
+        {
+          "pdp": 24,
+          "sk": "1.3",
+          "sp": "1.3.1",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 25,
+          "sk": "2.3",
+          "sp": "2.3.2",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 26,
+          "sk": "3.3",
+          "sp": "3.3.1",
+          "pdf_page": 43
+        },
+        {
+          "pdp": 27,
+          "sk": "1.4",
+          "sp": "1.4.1",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 28,
+          "sk": "2.2",
+          "sp": "2.2.5",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 29,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 30,
+          "sk": "1.1",
+          "sp": "1.1.3",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 31,
+          "sk": "2.1",
+          "sp": "2.1.1",
+          "pdf_page": 36
+        },
+        {
+          "pdp": 32,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 33,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 34,
+          "sk": "1.2",
+          "sp": "1.2.4",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 35,
+          "sk": "1.2",
+          "sp": "1.2.3",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 36,
+          "sk": "2.2",
+          "sp": "2.2.2",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 37,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 38,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "pdf_page": 42
+        },
+        {
+          "pdp": 39,
+          "sk": "2.3",
+          "sp": "2.3.2",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 40,
+          "sk": "2.3",
+          "sp": "2.3.1",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 41,
+          "sk": "3.3",
+          "sp": "3.3.1",
+          "pdf_page": 43
+        },
+        {
+          "pdp": 42,
+          "sk": "1.4",
+          "sp": "1.4.2",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 43,
+          "sk": "3.4",
+          "sp": "3.4.1",
+          "pdf_page": 44
+        },
+        {
+          "pdp": 44,
+          "sk": "2.2",
+          "sp": "2.2.3",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 45,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 46,
+          "sk": "1.1",
+          "sp": "1.1.2",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 47,
+          "sk": "2.1",
+          "sp": "2.1.1",
+          "pdf_page": 36
+        },
+        {
+          "pdp": 48,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 49,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 50,
+          "sk": "1.2",
+          "sp": "1.2.4",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 51,
+          "sk": "1.2",
+          "sp": "1.2.5",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 52,
+          "sk": "2.2",
+          "sp": "2.2.3",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 53,
+          "sk": "2.2",
+          "sp": "2.2.5",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 54,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "pdf_page": 42
+        },
+        {
+          "pdp": 55,
+          "sk": "1.3",
+          "sp": "1.3.5",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 56,
+          "sk": "1.3",
+          "sp": "1.3.2",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 57,
+          "sk": "2.3",
+          "sp": "2.3.3",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 58,
+          "sk": "2.3",
+          "sp": "2.3.6",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 59,
+          "sk": "1.4",
+          "sp": "1.4.1",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 60,
+          "sk": "1.4",
+          "sp": "1.4.2",
+          "pdf_page": 34
+        }
+      ]
+    },
+    "6": {
+      "source_url": "https://drive.google.com/file/d/1tHZTKLAc_4N4fpMvHeJN_DgCpn_m7dMp/view",
+      "recorded_pdf_sha256": "a8e27f109f4aa5cbe1214e71000138f1bdccdea6cdd38cd289715f71cac7238a",
+      "archived_sp_blob": "cc3976012bb5147a18768d1d9a0a94b878196912",
+      "lesson_count": 60,
+      "distinct_sk": 10,
+      "distinct_sp": 25,
+      "all_sp_match_archived_year_specific_text_and_page": true,
+      "entries": {
+        "1.1": {
+          "text": "الاستماع إلى أصوات الحروف المتماثلة ثم نطقها نطقا صحيحا.",
+          "pdf_page": 31,
+          "printed_page": 19,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "1.2": {
+          "text": "الاستماع إلى كلمات المحاور الآتية ونطقها نطقا صحيحا.",
+          "pdf_page": 32,
+          "printed_page": 20,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "1.3": {
+          "text": "الاستماع إلى الجمل البسيطة حسب المحاور الآتية ونطقها نطقا صحيحا.",
+          "pdf_page": 33,
+          "printed_page": 21,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "1.4": {
+          "text": "الاستماع إلى الجمل المتناسقة* حسب المحاور المقترحة ونطقها نطقا صحيحا.",
+          "pdf_page": 34,
+          "printed_page": 22,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "2.1": {
+          "text": "قراءة الكلمات التي فيها الحروف المتماثلة قراءة صحيحة.",
+          "pdf_page": 36,
+          "printed_page": 24,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "2.2": {
+          "text": "قراءة الكلمات حسب المحاور الآتية قراءة صحيحة.",
+          "pdf_page": 37,
+          "printed_page": 25,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "2.3": {
+          "text": "قراءة الجمل البسيطة حسب المحاور الآتية قراءة صحيحة.",
+          "pdf_page": 38,
+          "printed_page": 26,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "3.1": {
+          "text": "كتابة كلمات المحاور الآتية كتابة صحيحة.",
+          "pdf_page": 41,
+          "printed_page": 29,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "3.2": {
+          "text": "كتابة الجمل البسيطة حسب المحاور الآتية كتابة صحيحة.",
+          "pdf_page": 42,
+          "printed_page": 30,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        },
+        "3.3": {
+          "text": "كتابة الجمل المتناسقة* حسب المحاور المقترحة كتابة صحيحة.",
+          "pdf_page": 43,
+          "printed_page": 31,
+          "visual_page_reinspected": false,
+          "academic_panel_signed_off": false
+        }
+      },
+      "lessons": [
+        {
+          "pdp": 1,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 2,
+          "sk": "1.1",
+          "sp": "1.1.2",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 3,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 4,
+          "sk": "2.1",
+          "sp": "2.1.2",
+          "pdf_page": 36
+        },
+        {
+          "pdp": 5,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 6,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 7,
+          "sk": "1.3",
+          "sp": "1.3.1",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 8,
+          "sk": "1.3",
+          "sp": "1.3.2",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 9,
+          "sk": "2.3",
+          "sp": "2.3.1",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 10,
+          "sk": "2.3",
+          "sp": "2.3.2",
+          "pdf_page": 38
+        },
+        {
+          "pdp": 11,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "pdf_page": 42
+        },
+        {
+          "pdp": 12,
+          "sk": "1.4",
+          "sp": "1.4.1",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 13,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 14,
+          "sk": "1.1",
+          "sp": "1.1.4",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 15,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 16,
+          "sk": "1.2",
+          "sp": "1.2.4",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 17,
+          "sk": "1.2",
+          "sp": "1.2.5",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 18,
+          "sk": "2.2",
+          "sp": "2.2.3",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 19,
+          "sk": "2.2",
+          "sp": "2.2.2",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 20,
+          "sk": "2.2",
+          "sp": "2.2.5",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 21,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 22,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 23,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 24,
+          "sk": "1.3",
+          "sp": "1.3.1",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 25,
+          "sk": "1.3",
+          "sp": "1.3.4",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 26,
+          "sk": "1.3",
+          "sp": "1.3.2",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 27,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "pdf_page": 42
+        },
+        {
+          "pdp": 28,
+          "sk": "1.4",
+          "sp": "1.4.1",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 29,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 30,
+          "sk": "1.1",
+          "sp": "1.1.4",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 31,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 32,
+          "sk": "1.2",
+          "sp": "1.2.2",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 33,
+          "sk": "1.2",
+          "sp": "1.2.4",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 34,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 35,
+          "sk": "2.2",
+          "sp": "2.2.4",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 36,
+          "sk": "2.2",
+          "sp": "2.2.5",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 37,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 38,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 39,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 40,
+          "sk": "1.3",
+          "sp": "1.3.1",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 41,
+          "sk": "1.3",
+          "sp": "1.3.4",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 42,
+          "sk": "1.3",
+          "sp": "1.3.2",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 43,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "pdf_page": 42
+        },
+        {
+          "pdp": 44,
+          "sk": "1.4",
+          "sp": "1.4.1",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 45,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "pdf_page": 31
+        },
+        {
+          "pdp": 46,
+          "sk": "2.1",
+          "sp": "2.1.2",
+          "pdf_page": 36
+        },
+        {
+          "pdp": 47,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 48,
+          "sk": "1.2",
+          "sp": "1.2.3",
+          "pdf_page": 32
+        },
+        {
+          "pdp": 49,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 50,
+          "sk": "2.2",
+          "sp": "2.2.4",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 51,
+          "sk": "2.2",
+          "sp": "2.2.3",
+          "pdf_page": 37
+        },
+        {
+          "pdp": 52,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "pdf_page": 41
+        },
+        {
+          "pdp": 53,
+          "sk": "1.3",
+          "sp": "1.3.4",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 54,
+          "sk": "1.3",
+          "sp": "1.3.1",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 55,
+          "sk": "1.3",
+          "sp": "1.3.2",
+          "pdf_page": 33
+        },
+        {
+          "pdp": 56,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "pdf_page": 42
+        },
+        {
+          "pdp": 57,
+          "sk": "1.4",
+          "sp": "1.4.1",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 58,
+          "sk": "1.4",
+          "sp": "1.4.3",
+          "pdf_page": 34
+        },
+        {
+          "pdp": 59,
+          "sk": "3.3",
+          "sp": "3.3.1",
+          "pdf_page": 43
+        },
+        {
+          "pdp": 60,
+          "sk": "2.3",
+          "sp": "2.3.6",
+          "pdf_page": 38
+        }
+      ]
+    }
+  }
+}
