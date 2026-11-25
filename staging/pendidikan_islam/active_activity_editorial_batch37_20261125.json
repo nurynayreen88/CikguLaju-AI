@@ -288,7 +288,7 @@
         ]
       ],
       "status": "EDITORIAL_QA_NOT_READY",
-      "source_evidence": "Exact active source audit run 45528716628. Preserve source scope; textbook/DSKP or mushaf visual verification and Jawi review pending. Year 6 PdP26 original range 23–33 preserved, not an assertion of complete sequential coverage."
+      "source_evidence": "Original 2026 RPT T6 Drive 1WJTT7wm3aiN4F7YHMf1v_Qj6tuWu597a and actual active RPT agree on al-Jathiyah 23–33 + al-Ahqaf 1–14; previous session al-Jathiyah 1–22. Al-Jathiyah has 37 verses, so 34–37 may be omitted; preserved literal source pending confirmation of intended coverage. Do not release until this scope is checked."
     }
   ]
 }
