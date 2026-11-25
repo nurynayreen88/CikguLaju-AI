@@ -5,13 +5,13 @@
 **Kod SK/SP:** 2.2 / 2.2.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid membaca dengan betul 5 daripada 6 kosa kata صابون، شامبو، مشط، منشفة، مرآة، فرشاة الأسنان.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 5 daripada 6 kosa kata kebersihan dengan betul.
 
 **Set induksi:** Guru menunjukkan gambar cermin dan syampu, murid mencuba membaca perkataannya.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru memodelkan bacaan enam kosa kata kebersihan dan murid membaca secara kelas kemudian individu.
+**Aktiviti 1 — Baca enam kosa kata kebersihan:** Guru memodelkan bacaan enam kosa kata kebersihan dan murid membaca secara kelas kemudian individu.
 
-**Aktiviti 2 — Amali murid:** Secara berpasangan murid memilih gambar, membaca nama Arab dan memadankannya dengan kad perkataan.
+**Aktiviti 2 — Padankan gambar dengan nama Arab:** Secara berpasangan murid memilih gambar, membaca nama Arab dan memadankannya dengan kad perkataan.
 
 **Pengukuhan / PBD:** Guru menilai bacaan enam perkataan tanpa bantuan audio.
 

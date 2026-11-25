@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** أَحْتَرِمُ الطَّبِيب، أَحْتَرِمُ الإِطْفَائِيّ
 **Objektif pembelajaran:** Menyatakan dua ungkapan penghargaan kepada pekerja komuniti secara jelas.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid menyatakan dua ungkapan penghargaan kepada pekerja komuniti secara jelas.
 
 **Set induksi:** Guru memaparkan gambar petugas bomba menolong orang ramai.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing dialog h45 tentang nilai menghormati kerja dan cita-cita; murid meniru dengan intonasi yang sesuai.
+**Aktiviti 1 — Ajuk dialog menghormati kerjaya:** Guru membimbing dialog h45 tentang nilai menghormati kerja dan cita-cita; murid meniru dengan intonasi yang sesuai.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih dua kerjaya lalu menyatakan penghargaan kepada pasangan menggunakan ayat berpandu.
+**Aktiviti 2 — Ucap penghargaan kepada dua pekerja:** Murid memilih dua kerjaya lalu menyatakan penghargaan kepada pasangan menggunakan ayat berpandu.
 
 **Pengukuhan / Penilaian (PBD):** Dua ungkapan lisan dan penggunaan nama profesion dinilai.
 

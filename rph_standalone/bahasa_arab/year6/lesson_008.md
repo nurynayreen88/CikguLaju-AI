@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** بماذا تغسل؟ أغسل بالصابون، كيف تنظف؟ أنا أنظف
 **Objektif pembelajaran:** Murid menyebut dua pasangan soalan-jawapan kebersihan dengan nada yang sesuai.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid menyebut dua pasangan soal jawab kebersihan dengan nada sesuai.
 
 **Set induksi:** Guru melafaz بماذا تغسل؟ dan meminta murid memilih respons yang sepadan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan jeda dan intonasi soal berbanding respons menggunakan gerak kerja mencuci tangan.
+**Aktiviti 1 — Ajuk intonasi soal jawab mencuci tangan:** Guru memodelkan jeda dan intonasi soal berbanding respons menggunakan gerak kerja mencuci tangan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memainkan situasi di sinki kelas secara simulasi: seorang bertanya, seorang menjawab dengan kad alat.
+**Aktiviti 2 — Simulasi dialog di sinki kelas:** Murid memainkan situasi di sinki kelas secara simulasi: seorang bertanya, seorang menjawab dengan kad alat.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua dialog dengan sasaran dua respons yang sesuai.
 

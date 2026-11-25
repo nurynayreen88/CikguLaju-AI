@@ -5,13 +5,13 @@
 **Kod SK/SP:** 1.2 / 1.2.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid meniru sebutan 5 daripada 6 kata صابون، شامبو، فرشاة الأسنان، معجون الأسنان، مشط، منشفة.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid meniru sebutan sekurang-kurangnya 5 daripada 6 kata kebersihan diri.
 
 **Set induksi:** Guru memegang sabun dan tuala kecil sambil menyebut nama Arab kedua-duanya.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru memperdengarkan enam nama alatan penjagaan diri dan murid mengulang sambil melihat gambar.
+**Aktiviti 1 — Ajuk enam nama alat penjagaan diri:** Guru memperdengarkan enam nama alatan penjagaan diri dan murid mengulang sambil melihat gambar.
 
-**Aktiviti 2 — Amali murid:** Permainan beg misteri: murid mengambil gambar alatan, menyebut namanya dan rakan memilih kad perkataan yang sepadan.
+**Aktiviti 2 — Beg misteri dan padanan perkataan:** Permainan beg misteri: murid mengambil gambar alatan, menyebut namanya dan rakan memilih kad perkataan yang sepadan.
 
 **Pengukuhan / PBD:** Guru mempamer enam gambar secara rawak dan mencatat sebutan tepat setiap murid.
 

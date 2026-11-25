@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** ذَهَب، ذِئْب، ذُبَاب، ظِلّ، ظَهْر
 **Objektif pembelajaran:** Mengecam empat daripada lima kata mengikut bunyi ذ/ظ.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid mengecam sekurang-kurangnya 4 daripada 5 kata mengikut bunyi ذ atau ظ.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut dua pasangan bunyi tanpa label dan membimbing murid mengenal titik/huruf pada h62.
+**Aktiviti 1 — Bezakan bunyi ذ dan ظ:** Guru menyebut dua pasangan bunyi tanpa label dan membimbing murid mengenal titik/huruf pada h62.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengelaskan lima gambar mengikut huruf yang disebut dan mengulang empat sebutan jelas.
+**Aktiviti 2 — Kelaskan lima gambar mengikut huruf:** Murid mengelaskan lima gambar mengikut huruf yang disebut dan mengulang empat sebutan jelas.
 
 **Pengukuhan / Penilaian (PBD):** Empat pengecaman bunyi dan sebutan. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 
