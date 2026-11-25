@@ -10,15 +10,15 @@
 
 **Objektif:** Murid memainkan frasa not F/E dengan penjarian dan ton baik.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menunjukkan penjarian F dan E secara senyap; murid meniru kedudukan jari sebelum meniup rekoder.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru memodelkan penjarian F/E, postur tangan kiri di atas dan perlidahan 'tu'.
+**Aktiviti 1 — Demonstrasi Penjarian F dan E (8 minit):** Guru memodelkan penjarian F/E, postur tangan kiri di atas dan perlidahan 'tu'.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid berlatih lima latihan rekoder secara bertahap dan mencuba melodi kaunter Ikan Yu.
+**Aktiviti 2 — Latihan Rekoder dan Kaunter Ikan Yu (10 minit):** Murid berlatih lima latihan rekoder secara bertahap dan mencuba melodi kaunter Ikan Yu.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak penjarian, ton, pernafasan dan tempo.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid memainkan satu frasa F/E dengan ton terkawal; guru menyemak penjarian dan perlidahan.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 38-41; instrumen/kad/skor mengikut PdP.
 

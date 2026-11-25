@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru menepuk dua detik dan mengingatkan murid tekanan pada detik pertama.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru menganjurkan permainan Ikut Gerak Gaya halaman 50–51: kumpulan bergerak melalui tujuh stesen seperti lompat setempat, seret langkah dan berjalan mengikut arahan, dengan kawalan ruang.
+**Aktiviti 1 — Tujuh Stesen Ikut Gerak Gaya (8 minit):** Guru menganjurkan permainan Ikut Gerak Gaya halaman 50–51: kumpulan bergerak melalui tujuh stesen seperti lompat setempat, seret langkah dan berjalan mengikut arahan, dengan kawalan ruang.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid berlatih corak irama 1–3 halaman 52–53 dengan dua kumpulan bergerak mengikut arah jam dan lawan arah jam sebelum menggabungkannya dalam Corak Irama 4.
+**Aktiviti 2 — Gabung Corak Meter 2/4 (10 minit):** Murid berlatih corak irama 1–3 halaman 52–53 dengan dua kumpulan bergerak mengikut arah jam dan lawan arah jam sebelum menggabungkannya dalam Corak Irama 4.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan kiraan 2/4, arah pergerakan dan keselamatan murid sepanjang dua urutan.
 

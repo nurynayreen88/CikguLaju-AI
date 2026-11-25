@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Murid menyatakan contoh keselamatan jalan raya yang dinyatakan dalam tema lagu.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing nyanyian Santun di Jalan Raya halaman 11, menyemak sebutan dan tanda pernafasan, serta memperkenalkan perbezaan tempo lambat dan cepat.
+**Aktiviti 1 — Nyanyian dan Kenal Dua Tempo (8 minit):** Guru membimbing nyanyian Santun di Jalan Raya halaman 11, menyemak sebutan dan tanda pernafasan, serta memperkenalkan perbezaan tempo lambat dan cepat.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menjalankan aktiviti hantaran objek mengikut detik halaman 12 dalam arah ditetapkan pada dua tempo yang dihasilkan guru dengan tepukan/metronom; menyanyi semula satu rangkap dengan tempo sesuai.
+**Aktiviti 2 — Hantaran Objek Mengikut Detik (10 minit):** Murid menjalankan aktiviti hantaran objek mengikut detik halaman 12 dalam arah ditetapkan pada dua tempo yang dihasilkan guru dengan tepukan/metronom; menyanyi semula satu rangkap dengan tempo sesuai.
 
 **Pengukuhan dan pentaksiran (6 minit):** Nilai pic, sebutan dan keupayaan mengekalkan detik ketika tempo berubah.
 

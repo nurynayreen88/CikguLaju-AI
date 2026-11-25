@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru membandingkan nyanyian solo dengan nyanyian beriringan melalui tepukan detik.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru merujuk skor perkusi Waspada Selalu halaman 8–9, membahagi murid kepada kumpulan alat dan melatih setiap pola secara berasingan.
+**Aktiviti 1 — Latihan Skor Perkusi Mengikut Alat (8 minit):** Guru merujuk skor perkusi Waspada Selalu halaman 8–9, membahagi murid kepada kumpulan alat dan melatih setiap pola secara berasingan.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menyatukan semua kumpulan dalam ensembel: seorang memberi isyarat mula, kumpulan perkusi mengiringi nyanyian Waspada Selalu; rakan memerhatikan keseimbangan bunyi dan tempo.
+**Aktiviti 2 — Gabung Ensembel Waspada Selalu (10 minit):** Murid menyatukan semua kumpulan dalam ensembel: seorang memberi isyarat mula, kumpulan perkusi mengiringi nyanyian Waspada Selalu; rakan memerhatikan keseimbangan bunyi dan tempo.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan masuk, kestabilan tempo dan disiplin kendalian alat ketika ensembel.
 

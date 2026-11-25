@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru menyanyi frasa sama secara perlahan dan kuat; murid mengangkat kad piano atau forte.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru memainkan Audio 22. Murid menandakan simbol p dan f pada frasa lagu Santun di Jalan Raya dan menerangkan sebab pemilihan dinamik.
+**Aktiviti 1 — Tandakan Dinamik p dan f (8 minit):** Guru memainkan Audio 22. Murid menandakan simbol p dan f pada frasa lagu Santun di Jalan Raya dan menerangkan sebab pemilihan dinamik.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Setiap kumpulan mempersembahkan frasa berpandukan susunan dinamik dan membandingkan sama ada simbol tersebut sesuai dengan suasana lagu.
+**Aktiviti 2 — Persembahan Frasa dengan Dinamik Pilihan (10 minit):** Setiap kumpulan mempersembahkan frasa berpandukan susunan dinamik dan membandingkan sama ada simbol tersebut sesuai dengan suasana lagu.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru memeriksa dua simbol ditandakan betul, kawalan suara dan alasan pemilihan dinamik.
 

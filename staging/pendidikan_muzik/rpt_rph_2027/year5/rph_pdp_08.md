@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru mengimbas semula penjarian B, A, G, C' dan D' yang pernah dipelajari.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Murid menepuk dan mengajuk latihan rekoder halaman 22 menggunakan not B, A, G, C' dan D', memeriksa tanda nafas pada akhir frasa.
+**Aktiviti 1 — Latihan Penjarian dan Tanda Nafas (8 minit):** Murid menepuk dan mengajuk latihan rekoder halaman 22 menggunakan not B, A, G, C' dan D', memeriksa tanda nafas pada akhir frasa.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid memainkan frasa Lightly Row halaman 23 dengan penjarian dan perlidahan lembut; pasangan membandingkan ketepatan frasa sebelum latihan kedua.
+**Aktiviti 2 — Main Frasa Lightly Row (10 minit):** Murid memainkan frasa Lightly Row halaman 23 dengan penjarian dan perlidahan lembut; pasangan membandingkan ketepatan frasa sebelum latihan kedua.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menyemak penjarian, tanda nafas, tempo dan dinamik mudah menggunakan senarai semak.
 

@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru memperkenalkan Busak Pakui sebagai lagu tradisional Sarawak dan memodelkan senandung hmm dengan suara.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing nyanyian halaman 19 mengikut pic/tempo, termasuk bahagian bersenandung hmm, kemudian murid menepuk enam corak irama A–F pada halaman 20.
+**Aktiviti 1 — Nyanyian Busak Pakui dan Corak A–F (8 minit):** Guru membimbing nyanyian halaman 19 mengikut pic/tempo, termasuk bahagian bersenandung hmm, kemudian murid menepuk enam corak irama A–F pada halaman 20.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Kelas dibahagi empat kumpulan seperti nota halaman 21: satu kumpulan menyanyi Busak Pakui dan tiga kumpulan memainkan iringan perkusi; murid bertukar peranan mengikut isyarat guru.
+**Aktiviti 2 — Ensembel Empat Kumpulan (10 minit):** Kelas dibahagi empat kumpulan seperti nota halaman 21: satu kumpulan menyanyi Busak Pakui dan tiga kumpulan memainkan iringan perkusi; murid bertukar peranan mengikut isyarat guru.
 
 **Pengukuhan dan pentaksiran (6 minit):** Senarai semak frasa nyanyian, pola perkusi dan koordinasi masuk ensembel.
 

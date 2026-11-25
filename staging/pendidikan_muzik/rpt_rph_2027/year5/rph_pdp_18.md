@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru memberi contoh latihan vokal ringkas dan mengingatkan postur serta kawalan nafas.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Berpandukan halaman 47, murid melakukan latihan vokal 1 hingga 4 secara ajuk-frasa; guru membimbing artikulasi tanpa memaksa nada tinggi.
+**Aktiviti 1 — Latihan Vokal dan Artikulasi Silap Mata (8 minit):** Berpandukan halaman 47, murid melakukan latihan vokal 1 hingga 4 secara ajuk-frasa; guru membimbing artikulasi tanpa memaksa nada tinggi.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid mengajuk lagu Silap Mata berdasarkan skor halaman 48 dan menyanyikannya secara berkumpulan, kemudian mengulangi frasa yang kurang tepat. Guru menyebut bahawa skor nyanyian ialah dalam nada F minor.
+**Aktiviti 2 — Nyanyian Frasa dalam Nada F Minor (10 minit):** Murid mengajuk lagu Silap Mata berdasarkan skor halaman 48 dan menyanyikannya secara berkumpulan, kemudian mengulangi frasa yang kurang tepat. Guru menyebut bahawa skor nyanyian ialah dalam nada F minor.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak dua latihan vokal dan satu frasa lagu dari segi pic, tempo dan kejelasan sebutan.
 

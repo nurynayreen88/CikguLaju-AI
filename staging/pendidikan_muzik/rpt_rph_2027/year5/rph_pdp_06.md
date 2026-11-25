@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru menepuk pola dua detik dan tiga detik lalu murid mengenal pasti tekanan pada detik pertama.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing perbandingan meter pada halaman 14 dan memodelkan gerakan harian meter 3/4 halaman 15 seperti sembur-lap cermin, sidai-kepit dan tarik langsir.
+**Aktiviti 1 — Banding Meter dan Gerakan Harian (8 minit):** Guru membimbing perbandingan meter pada halaman 14 dan memodelkan gerakan harian meter 3/4 halaman 15 seperti sembur-lap cermin, sidai-kepit dan tarik langsir.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid bermain Permainan Gerak Berirama halaman 16–17; kumpulan memilih dua kad gerakan badan, menyusun pola tiga detik dan mempersembahkan dua pusingan dengan penilaian rakan sebaya.
+**Aktiviti 2 — Cipta Gerakan Meter 3/4 (10 minit):** Murid bermain Permainan Gerak Berirama halaman 16–17; kumpulan memilih dua kad gerakan badan, menyusun pola tiga detik dan mempersembahkan dua pusingan dengan penilaian rakan sebaya.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak tekanan pada detik satu, ketepatan kiraan tiga detik dan keselamatan pergerakan.
 

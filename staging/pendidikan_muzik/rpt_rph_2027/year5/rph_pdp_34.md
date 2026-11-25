@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Guru memainkan petikan Joget Khatulistiwa sebagai contoh projek. Murid menepuk detik dan mengenal pasti bahagian nyanyian atau iringan.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru membentuk empat kumpulan untuk nyanyian, perkusi, pergerakan dan rekoder. Murid memilih lagu daripada Unit 6–10 dan mengagihkan peranan.
+**Aktiviti 1 — Agih Empat Peranan Persembahan (8 minit):** Guru membentuk empat kumpulan untuk nyanyian, perkusi, pergerakan dan rekoder. Murid memilih lagu daripada Unit 6–10 dan mengagihkan peranan.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid mengisi borang tugas, menyediakan audio lagu pilihan dan menetapkan jadual latihan. Setiap kumpulan mencuba satu bahagian persembahan.
+**Aktiviti 2 — Bina Pelan dan Jadual Latihan (10 minit):** Murid mengisi borang tugas, menyediakan audio lagu pilihan dan menetapkan jadual latihan. Setiap kumpulan mencuba satu bahagian persembahan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak tugas, peralatan dan kesediaan persembahan.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Wakil kumpulan membentangkan pelan bagi nyanyian, perkusi, pergerakan dan rekoder; guru menyemak pembahagian tugas.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK m/s 88–89, audio contoh Joget Khatulistiwa, alat perkusi, rekoder dan borang projek.
 

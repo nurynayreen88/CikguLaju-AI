@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Murid mengulang satu frasa lagu pilihan dengan audio latihan. Guru memberi isyarat mula untuk menyelaraskan nyanyian dan iringan.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Murid menyemak audio lagu pilihan, alat perkusi dan ruang pergerakan. Guru membimbing setiap kumpulan berlatih bahagian yang belum seragam.
+**Aktiviti 1 — Semak Peralatan dan Latihan Akhir (8 minit):** Murid menyemak audio lagu pilihan, alat perkusi dan ruang pergerakan. Guru membimbing setiap kumpulan berlatih bahagian yang belum seragam.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Setiap kumpulan mempersembahkan lagu pilihan dengan perkusi atau pergerakan. Murid mengisi borang penilaian kendiri dan memberikan satu ulasan kepada kumpulan lain.
+**Aktiviti 2 — Persembahan Projek dan Penilaian Kendiri (10 minit):** Setiap kumpulan mempersembahkan lagu pilihan dengan perkusi atau pergerakan. Murid mengisi borang penilaian kendiri dan memberikan satu ulasan kepada kumpulan lain.
 
 **Pengukuhan dan pentaksiran (6 minit):** Nilai penglibatan, kemahiran, kreativiti dan nilai murni.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Kumpulan menilai tiga komponen rubrik dan mencadangkan satu pembaikan berdasarkan persembahan mereka; guru merekod evidens PBD.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK m/s 44–45, Audio 49–54 sebagai contoh Unit 4, alat perkusi dan borang projek.
 

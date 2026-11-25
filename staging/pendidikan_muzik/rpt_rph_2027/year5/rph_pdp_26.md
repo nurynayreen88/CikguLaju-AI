@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru mengetuk soalan irama pendek; murid memberi jawapan yang mempunyai jumlah detik sepadan.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Murid melengkapkan jawapan bar 2 dan 4 menggunakan not B, A, G, lalu mencipta soalan baharu bagi bar 1 dan 3 seperti latihan halaman 66–67, termasuk tanda rehat yang sesuai.
+**Aktiviti 1 — Cipta Soalan dan Jawapan B/A/G (8 minit):** Murid melengkapkan jawapan bar 2 dan 4 menggunakan not B, A, G, lalu mencipta soalan baharu bagi bar 1 dan 3 seperti latihan halaman 66–67, termasuk tanda rehat yang sesuai.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid bermain Cipta Melodi Indah halaman 68–69: membaling dadu, mengumpulkan blok nilai not, menyusun empat bar dan memainkan hasil ciptaan menggunakan rekoder.
+**Aktiviti 2 — Permainan Cipta Melodi Indah (10 minit):** Murid bermain Cipta Melodi Indah halaman 68–69: membaling dadu, mengumpulkan blok nilai not, menyusun empat bar dan memainkan hasil ciptaan menggunakan rekoder.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru memeriksa jumlah detik mengikut meter, kesahihan empat bar dan kebolehan memainkan melodi ciptaan.
 

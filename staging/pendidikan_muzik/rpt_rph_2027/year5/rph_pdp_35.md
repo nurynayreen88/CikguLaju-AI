@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Guru meminta setiap kumpulan mengulang satu frasa atau pergerakan sebelum persembahan. Murid menyemak isyarat mula dan henti.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Murid menguji audio lagu pilihan dan menyemak peralatan. Guru membimbing kumpulan menyelaraskan tempo serta urutan masuk semasa latihan akhir.
+**Aktiviti 1 — Latihan Akhir dan Semakan Isyarat (8 minit):** Murid menguji audio lagu pilihan dan menyemak peralatan. Guru membimbing kumpulan menyelaraskan tempo serta urutan masuk semasa latihan akhir.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan mempersembahkan lagu pilihan mengikut peranan. Murid mengisi penilaian kendiri dan memberi satu ulasan berdasarkan persembahan rakan.
+**Aktiviti 2 — Persembahan Penggal Dua dan Ulasan Rakan (10 minit):** Kumpulan mempersembahkan lagu pilihan mengikut peranan. Murid mengisi penilaian kendiri dan memberi satu ulasan berdasarkan persembahan rakan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Rubrik penglibatan, ketepatan, kreativiti dan nilai murni.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid menyatakan satu kekuatan dan satu pembaikan berdasarkan persembahan kumpulan; guru merekod penilaian kendiri dan evidens PBD.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK m/s 88–89, audio contoh Joget Khatulistiwa, alat perkusi, rekoder dan borang projek.
 
