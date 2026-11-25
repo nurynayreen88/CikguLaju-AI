@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyenandungkan frasa dan menyanyi mengikut pic yang betul dalam dua percubaan.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit SAYA JUARA; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru menyenandungkan frasa pendek Sukan Sekolah. Murid mengajuk bunyi dengan mulut tertutup.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru memainkan atau memodelkan frasa Sukan Sekolah dan mengajar teknik senandung sebelum menyanyi.
+**Aktiviti 1 — Senandung frasa:** Guru memainkan atau memodelkan frasa Sukan Sekolah dan mengajar teknik senandung sebelum menyanyi.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid menyenandungkan frasa pendek, menyebut kata dengan jelas lalu menyanyikan satu rangkap dalam kumpulan.
+**Aktiviti 2 — Nyanyian mengikut pic:** Murid menyenandungkan frasa pendek, menyebut kata dengan jelas lalu menyanyikan satu rangkap dalam kumpulan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Nilai pic, sebutan dan keseragaman frasa; bimbing murid mengulang bahagian yang sukar.
+**Pengukuhan dan pentaksiran:** Nilai pic, sebutan dan keseragaman frasa; bimbing murid mengulang bahagian yang sukar.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Murid menyenandungkan dan menyanyikan frasa yang sama. Guru memberi maklum balas pic.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 26; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 26; lagu Sukan Sekolah, panduan melodi guru.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 

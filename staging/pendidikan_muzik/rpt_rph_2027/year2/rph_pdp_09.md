@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyanyikan satu rangkap Main Gasing sambil mengekalkan tempo dan menukar tempo apabila diminta.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit PUSING GASING PUSING; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru menunjukkan gambar gasing dan mengetuk detik tetap. Murid mengikut detik dengan tepukan.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru memperkenalkan lagu Main Gasing dan mengetuk detik sebagai asas nyanyian.
+**Aktiviti 1 — Detik lagu Main Gasing:** Guru memperkenalkan lagu Main Gasing dan mengetuk detik sebagai asas nyanyian.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid menyanyi frasa secara respons-gema, kemudian mengulang pada tempo berbeza dan menyebut kesan perubahan tempo.
+**Aktiviti 2 — Nyanyian dan pertukaran tempo:** Murid menyanyi frasa secara respons-gema, kemudian mengulang pada tempo berbeza dan menyebut kesan perubahan tempo.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan pic, tempo dan respons terhadap isyarat guru.
+**Pengukuhan dan pentaksiran:** Semak ketepatan pic, tempo dan respons terhadap isyarat guru.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Murid menyanyikan frasa Main Gasing mengikut perubahan isyarat tempo. Guru menyemak ketepatan.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 34; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 34; lagu Main Gasing, gambar gasing, alat ketuk.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 

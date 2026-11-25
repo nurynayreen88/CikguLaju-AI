@@ -10,17 +10,17 @@
 
 **Objektif:** Murid memainkan corak irama melalui dua alat perkusi mengikut skor ikon pada tempo yang seragam dalam dua percubaan.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit PUSING GASING PUSING; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru menepuk satu pola iringan Main Gasing. Murid mengajuk pola sambil mengekalkan detik.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru menunjukkan empat iringan: kastanet, loceng, kayu tik tok dan kerincing; murid menepuk pola setiap alat sebelum mencuba.
+**Aktiviti 1 — Baca skor ikon perkusi:** Guru menunjukkan empat iringan: kastanet, loceng, kayu tik tok dan kerincing; murid menepuk pola setiap alat sebelum mencuba.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Kumpulan bermain alat mengikut corak masing-masing dengan isyarat masuk/henti, mengiringi Main Gasing dan bertukar peranan alat.
+**Aktiviti 2 — Ensembel Main Gasing:** Kumpulan bermain alat mengikut corak masing-masing dengan isyarat masuk/henti, mengiringi Main Gasing dan bertukar peranan alat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak corak, detik dan koordinasi dalam ensembel menggunakan rubrik ringkas.
+**Pengukuhan dan pentaksiran:** Guru menyemak corak, detik dan koordinasi dalam ensembel menggunakan rubrik ringkas.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Dua kumpulan memainkan pola alat masing-masing pada detik sama. Guru memberi isyarat henti serentak.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 36-37; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 36–37; skor ikon Main Gasing, kastanet, loceng, kayu tik tok, kerincing.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 
