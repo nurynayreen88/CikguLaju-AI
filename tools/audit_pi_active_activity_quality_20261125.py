@@ -88,6 +88,9 @@ def main():
     source_registry={entry["year"]:entry for entry in registry["years"]}
     page_evidence=json.loads(Path("staging/pendidikan_islam/active_dskp_text_page_evidence_20261125.json").read_text(encoding="utf8"))
     dskp_pages={entry["year"]:entry.get("code_page_candidates",{}) for entry in page_evidence["years"]}
+    ledger=json.loads(Path("staging/pendidikan_islam/active_activity_release_ledger_20261125.json").read_text(encoding="utf8"))
+    wave1={item["id"]:item for item in ledger["wave1"]}
+    wave1_evidence=[]
     try:
         runtime.DB_PATH=str(db)
         runtime.CIKGULAJU_DB_V2600_ACTIVE=True
@@ -131,6 +134,27 @@ def main():
                 objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
                 if unit=="Al-Quran":
                     verse_review.append({**identity,"objective":objective,**inspect_verse_ranges(objective),"ready":False})
+                if row["id"] in wave1:
+                    target=wave1[row["id"]]
+                    assert (year,row["sequence_no"],unit)==(target["year"],target["pdp"],target["unit"])
+                    # Capture both active selection metadata and printed standards;
+                    # no substitution of expected codes for actual ones.
+                    sk_codes=state.get("grouped_sk_codes") or []
+                    sp_codes=state.get("grouped_sp_codes") or []
+                    printed_sk=rows.get("STANDARD KANDUNGAN")
+                    printed_sp=rows.get("STANDARD PEMBELAJARAN")
+                    codes=sorted(set(re.findall(r"(?<![\\d.])\\d+\\.\\d+\\.\\d+(?![\\d.])", normalized(printed_sp))))
+                    expected=sorted(target["textbook_evidence"]["expected_sp"])
+                    evidence={**identity,"expected_sp":expected,"active_printed_sp_codes":codes,
+                        "active_sk_codes":sk_codes,"active_sp_codes":sp_codes,
+                        "printed_sk":printed_sk,"printed_sp":printed_sp,"objective":objective,
+                        "active_source_note":row["activity_note"],
+                        "expected_sp_matches_printed":codes==expected,
+                        "dskp_text_layer_pages":{code:dskp_pages[year].get(code,[]) for code in codes},
+                        "source_hold":target["status"]=="HOLD_SOURCE_SCOPE",
+                        "academic_approved":False,"live":False}
+                    wave1_evidence.append(evidence)
+                    print("PI_WAVE1_ACTIVE_STANDARD",json.dumps(evidence,ensure_ascii=False),flush=True)
                 main_text=normalized(rows.get("AKTIVITI UTAMA"))
                 shared_main[sha256(main_text.encode()).hexdigest()].append({**identity,"objective":objective})
                 # Compare complete activity instruction lines, not shared headings
@@ -170,6 +194,10 @@ def main():
                 stats["errors"]+=1
                 report["records"].append({"year":year,"id":row["id"],"pdp":row["sequence_no"],
                     "error":type(exc).__name__})
+        assert {item["id"] for item in wave1_evidence}==set(wave1), "Incomplete first-wave active standards evidence"
+        out=Path("qa/pi-activity-quality")
+        out.mkdir(parents=True,exist_ok=True)
+        (out/"wave1_active_standard_evidence.json").write_text(json.dumps({"status":"QA_ONLY_NOT_READY","records":wave1_evidence},ensure_ascii=False,indent=2)+"\\n",encoding="utf8")
         report["examples"]=[e for v in examples.values() for e in v]
         def clusters(items):
             return sorted(({"text":line,"count":len(entries),"distinct_objectives":len({e["objective"] for e in entries}),"records":entries}
