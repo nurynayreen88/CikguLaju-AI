@@ -1,0 +1,229 @@
+{
+  "status": "16_VISUAL_TEXTBOOK_SUPPORT_REVIEW_NOT_READY",
+  "year": 6,
+  "draft_blob": "27a3a69e8e012b708191ee0ef115b704cad8e376",
+  "textbook_url": "https://drive.google.com/file/d/19Kj-ImcjjPbLTMbhi2DQ7t3JKZZbe8AU/view",
+  "source_edition": "KSSR Semakan 2017, content matches DBP 2021 edition and unit sequence; this copy comprises printed pages 1–120",
+  "supersedes": "audits/arabic_rpt2027_year6_extra_textbook_partial_20261126.json",
+  "rows": [
+    {
+      "pdp": 4,
+      "sp": "1.1.3",
+      "printed_pages": [
+        2
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "evidence": "DIRECT",
+      "note": "1.1.3 discrimination of the four target letter sounds"
+    },
+    {
+      "pdp": 8,
+      "sp": "3.1.2",
+      "printed_pages": [
+        10,
+        12
+      ],
+      "physical_pdf_pages": [
+        10,
+        12
+      ],
+      "evidence": "DIRECT",
+      "note": "3.1.2 hygiene tool writing and spelling practice"
+    },
+    {
+      "pdp": 12,
+      "sp": "2.3.4",
+      "printed_pages": [
+        13,
+        14
+      ],
+      "physical_pdf_pages": [
+        13,
+        14
+      ],
+      "evidence": "DIRECT",
+      "note": "2.3.4 hygiene sentence ordering p14; dialogue vocabulary p13"
+    },
+    {
+      "pdp": 16,
+      "sp": "2.4.4",
+      "printed_pages": [
+        19,
+        20
+      ],
+      "physical_pdf_pages": [
+        19,
+        20
+      ],
+      "evidence": "CONTEXT",
+      "note": "Linked hygiene sentences and dialogue; new sequencing exercise; target 2.4.4 not printed on these pages"
+    },
+    {
+      "pdp": 20,
+      "sp": "1.2.2",
+      "printed_pages": [
+        34
+      ],
+      "physical_pdf_pages": [
+        34
+      ],
+      "evidence": "DIRECT",
+      "note": "1.2.2 occupation names heard and identified"
+    },
+    {
+      "pdp": 26,
+      "sp": "2.2.4",
+      "printed_pages": [
+        39,
+        42
+      ],
+      "physical_pdf_pages": [
+        39,
+        42
+      ],
+      "evidence": "CONTEXT",
+      "note": "Masculine/feminine occupational vocabulary and classification; new reading discrimination"
+    },
+    {
+      "pdp": 30,
+      "sp": "3.1.2",
+      "printed_pages": [
+        40,
+        42
+      ],
+      "physical_pdf_pages": [
+        40,
+        42
+      ],
+      "evidence": "CONTEXT",
+      "note": "Occupation spelling correction and practice explicitly labelled dictation; target 3.1.2 not printed on these inspected pages"
+    },
+    {
+      "pdp": 36,
+      "sp": "1.4.4",
+      "printed_pages": [
+        49
+      ],
+      "physical_pdf_pages": [
+        49
+      ],
+      "evidence": "DIRECT",
+      "note": "1.4.4 related sentences about jobs and workplaces"
+    },
+    {
+      "pdp": 40,
+      "sp": "1.2.2",
+      "printed_pages": [
+        64,
+        65
+      ],
+      "physical_pdf_pages": [
+        64,
+        65
+      ],
+      "evidence": "DIRECT",
+      "note": "1.2.2 listening and identifying transport names"
+    },
+    {
+      "pdp": 46,
+      "sp": "2.2.3",
+      "printed_pages": [
+        67,
+        69,
+        72
+      ],
+      "physical_pdf_pages": [
+        67,
+        69,
+        72
+      ],
+      "evidence": "CONTEXT",
+      "note": "Transport words and land/sea/air categories; classification by reading is a new activity"
+    },
+    {
+      "pdp": 50,
+      "sp": "3.1.2",
+      "printed_pages": [
+        70,
+        72
+      ],
+      "physical_pdf_pages": [
+        70,
+        72
+      ],
+      "evidence": "DIRECT",
+      "note": "3.1.2 transport spelling and dictation"
+    },
+    {
+      "pdp": 56,
+      "sp": "2.4.4",
+      "printed_pages": [
+        79,
+        80
+      ],
+      "physical_pdf_pages": [
+        79,
+        80
+      ],
+      "evidence": "CONTEXT",
+      "note": "Related travel sentences and time/destination dialogue; new sequencing task"
+    },
+    {
+      "pdp": 60,
+      "sp": "1.2.2",
+      "printed_pages": [
+        94,
+        97
+      ],
+      "physical_pdf_pages": [
+        94,
+        97
+      ],
+      "evidence": "DIRECT",
+      "note": "1.2.2 national symbols and national vocabulary listening on p94"
+    },
+    {
+      "pdp": 66,
+      "sp": "3.1.2",
+      "printed_pages": [
+        100,
+        102
+      ],
+      "physical_pdf_pages": [
+        100,
+        102
+      ],
+      "evidence": "DIRECT",
+      "note": "3.1.2 national vocabulary writing and listen-and-write practice"
+    },
+    {
+      "pdp": 70,
+      "sp": "1.3.2",
+      "printed_pages": [
+        105
+      ],
+      "physical_pdf_pages": [
+        105
+      ],
+      "evidence": "DIRECT",
+      "note": "1.3.2 oral questions about Malaysia capital and flag colours"
+    },
+    {
+      "pdp": 76,
+      "sp": "2.3.6",
+      "printed_pages": [
+        114
+      ],
+      "physical_pdf_pages": [
+        114
+      ],
+      "evidence": "CONTEXT",
+      "note": "Parliament visit passage; teacher-created information card based on reading"
+    }
+  ],
+  "direct": 10,
+  "context": 6,
+  "notes": "All 16 checked visually. DIRECT means target SP printed on inspected supporting page. CONTEXT means topic/material support only. New exercises teacher-authored. No source or release changes."
+}
