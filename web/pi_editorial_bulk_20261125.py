@@ -57,6 +57,7 @@ def apply(state,rows,catalog):
         master=state.get(name)
         if isinstance(master,dict):
             notes.add(norm(master.get("activity_note")))
+            notes.add(norm(master.get("_pi_original_rpt_activity_note_20261125")))
     objective=norm(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
     matches=[catalog[(int(year.group(1)),int(pdp),note,objective)] for note in notes if note and (int(year.group(1)),int(pdp),note,objective) in catalog]
     if len(matches)!=1 or "AKTIVITI UTAMA" not in rows:
