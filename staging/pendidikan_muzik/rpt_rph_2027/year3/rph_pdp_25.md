@@ -9,13 +9,13 @@
 
 **Objektif:** Melaksanakan dua latihan persembahan boneka dengan tempo selaras dan sekurang-kurangnya dua peranan diselaraskan.
 
-**Kriteria kejayaan:** Murid melaksanakan tugas projek dengan sekurang-kurangnya tiga daripada empat item senarai semak guru.
+**Kriteria kejayaan:** Murid melaksanakan dua latihan dengan tempo selaras dan menyelaraskan sekurang-kurangnya dua peranan.
 
 **Set Induksi — 4 minit:** Guru menyemak kesediaan alat, peranan, kerjasama serta etika projek.
 
-**Aktiviti 1 — Perancangan dan demonstrasi (8 minit):** Murid melatih frasa lagu Kau Sahabatku secara ajuk dengan sebutan yang sesuai dan memadankannya kepada aksi boneka serta iringan perkusi mudah.
+**Aktiviti 1 — Padankan lagu dan aksi boneka:** Murid melatih frasa lagu Kau Sahabatku secara ajuk dengan sebutan yang sesuai dan memadankannya kepada aksi boneka serta iringan perkusi mudah.
 
-**Aktiviti 2 — Latihan atau persembahan (10 minit):** Kumpulan berlatih sambil ketua memberi isyarat mula/henti; guru menyemak kedudukan prop dan disiplin penggunaan alat. Bukan persembahan akhir.
+**Aktiviti 2 — Latihan isyarat dan tempo:** Kumpulan berlatih sambil ketua memberi isyarat mula/henti; guru menyemak kedudukan prop dan disiplin penggunaan alat. Bukan persembahan akhir.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai pelibatan setiap murid, tempo, peranan kumpulan dan kreativiti persembahan atau hasil rancangan menggunakan borang penilaian.
 
