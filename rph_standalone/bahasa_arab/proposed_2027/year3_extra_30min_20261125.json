@@ -2,13 +2,13 @@
   "status": "16_SOURCE_TEXT_CHECKED_ARABIC_30_MINUTE_RPH_DRAFTS_NOT_READY",
   "source_projection_blob": "463b2f2352603e84eca43f6429f1f2c07a2c6af4",
   "dskp_url": "https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view",
-  "source_note": "Code and semantic intent checked against DSKP 2017 extracted text, printed pages only; PDF physical offset not independently established in this copy. Examples teacher-created, textbook page and actual RPT2026 weekly alignment unverified. Unit title labels pending exact textbook match.",
+  "source_note": "Code and semantic intent checked against DSKP 2017 extracted text, printed pages only; PDF physical offset not independently established in this copy. Examples teacher-created, textbook page and actual RPT2026 weekly alignment unverified. Unit names matched exactly to current Year 3 source RPH unit labels.",
   "records": [
     {
       "year": 3,
       "proposed_pdp": 4,
       "unit": 1,
-      "unit_name": "في الفصل",
+      "unit_name": "تفضل إلى الفصل",
       "minutes": 30,
       "week": "M02",
       "group_A": [
@@ -50,7 +50,7 @@
       "year": 3,
       "proposed_pdp": 8,
       "unit": 1,
-      "unit_name": "في الفصل",
+      "unit_name": "تفضل إلى الفصل",
       "minutes": 30,
       "week": "M04",
       "group_A": [
@@ -92,7 +92,7 @@
       "year": 3,
       "proposed_pdp": 12,
       "unit": 1,
-      "unit_name": "في الفصل",
+      "unit_name": "تفضل إلى الفصل",
       "minutes": 30,
       "week": "M07",
       "group_A": [
@@ -134,7 +134,7 @@
       "year": 3,
       "proposed_pdp": 16,
       "unit": 1,
-      "unit_name": "في الفصل",
+      "unit_name": "تفضل إلى الفصل",
       "minutes": 30,
       "week": "M09",
       "group_A": [
@@ -176,7 +176,7 @@
       "year": 3,
       "proposed_pdp": 20,
       "unit": 2,
-      "unit_name": "الملابس",
+      "unit_name": "ملابسي الجميلة",
       "minutes": 30,
       "week": "M11",
       "group_A": [
@@ -218,7 +218,7 @@
       "year": 3,
       "proposed_pdp": 26,
       "unit": 2,
-      "unit_name": "الملابس",
+      "unit_name": "ملابسي الجميلة",
       "minutes": 30,
       "week": "M14",
       "group_A": [
@@ -260,7 +260,7 @@
       "year": 3,
       "proposed_pdp": 30,
       "unit": 2,
-      "unit_name": "الملابس",
+      "unit_name": "ملابسي الجميلة",
       "minutes": 30,
       "week": "M16",
       "group_A": [
@@ -302,7 +302,7 @@
       "year": 3,
       "proposed_pdp": 36,
       "unit": 2,
-      "unit_name": "الملابس",
+      "unit_name": "ملابسي الجميلة",
       "minutes": 30,
       "week": "M20",
       "group_A": [
@@ -489,7 +489,7 @@
       "dskp_printed_page": 19,
       "dskp_pdf_page": null,
       "focus": "تمثيل سؤال وجواب عن ألوان الأشياء",
-      "vocabulary": "ما لون هذا؟ لونه أحمر. ما لون هذه؟ لونها زرقاء.",
+      "vocabulary": "ما لون هذا؟ لونه أحمر. ما لون هذه؟ لونها أزرق.",
       "objective": "يؤدي التلاميذ سؤالين وجوابيهما عن ألوان شيئين باستعمال تركيب مناسب.",
       "criterion": "يؤدي التلاميذ سؤالين وجوابيهما عن ألوان شيئين باستعمال تركيب مناسب.",
       "intro": "يعرض المعلم قلما أحمر وحقيبة زرقاء.",
