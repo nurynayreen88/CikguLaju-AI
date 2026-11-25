@@ -1,0 +1,24 @@
+name: Arabic 178 active draft native quality audit
+on:
+  pull_request:
+    paths:
+      - tools/audit_arabic_178_native_20261125.py
+      - .github/workflows/arabic-178-native-audit-20261125.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Flask==3.1.3 requests==2.32.3 python-docx==1.2.0 reportlab==4.2.5 pypdf==5.1.0 Pillow==11.3.0 lxml==5.4.0
+      - run: python -m tools.audit_arabic_178_native_20261125
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arabic178-native-audit
+          path: qa/arabic178/report.json
