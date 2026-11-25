@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyanyikan dua frasa Kami Suka Sayur pada tempo cepat dan lambat dengan sekurang-kurangnya dua daripada tiga percubaan tepat.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit KAMI SUKA SAYUR; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru mengetuk detik cepat dan lambat. Murid meniru ketukan dan menyebut tempo yang didengar.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru mengaitkan nyanyian dengan pemakanan sayur dan memodelkan detik pada tempo perlahan dan cepat.
+**Aktiviti 1 — Detik dan tempo lagu:** Guru mengaitkan nyanyian dengan pemakanan sayur dan memodelkan detik pada tempo perlahan dan cepat.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid mengajuk frasa lagu secara respons-gema, kemudian menyanyi mengikut dua tempo menggunakan isyarat tangan guru.
+**Aktiviti 2 — Nyanyian dua tempo:** Murid mengajuk frasa lagu secara respons-gema, kemudian menyanyi mengikut dua tempo menggunakan isyarat tangan guru.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menilai tempo, pic dan perubahan tempo; murid mengulang satu frasa selepas pembetulan.
+**Pengukuhan dan pentaksiran:** Guru menilai tempo, pic dan perubahan tempo; murid mengulang satu frasa selepas pembetulan.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Guru memberi isyarat tempo; murid menyanyi satu frasa mengikut isyarat. Guru merekod ketepatan.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 10; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 10; lagu Kami Suka Sayur, alat ketuk atau tepukan.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 
