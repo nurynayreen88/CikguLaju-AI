@@ -205,10 +205,14 @@ def english_catalog(year):
     units = obj.get("units")
     if obj.get("available") is False and units == []:
         return []
-    if obj.get("available") is not True or not isinstance(units, list) or not 1 <= len(units) <= 4:
+    if obj.get("available") is not True or not isinstance(units, list) or not 1 <= len(units) <= 8:
         raise NativeRPHUnavailable("Unexpected PPKI English unit scope")
     expected = {"1": ["001", "002", "003"], "2": ["004", "005", "006", "007"],
-                "3": ["008", "009", "010", "011"], "4": ["012", "013", "014", "015", "016"]}
+                "3": ["008", "009", "010", "011"], "4": ["012", "013", "014", "015", "016"],
+                "5": [f"{n:03d}" for n in range(17, 23)],
+                "6": [f"{n:03d}" for n in range(23, 28)],
+                "7": [f"{n:03d}" for n in range(28, 33)],
+                "8": [f"{n:03d}" for n in range(33, 39)]}
     if any(not isinstance(entry, dict) for entry in units) or [entry.get("value") for entry in units] != list(expected)[:len(units)]:
         raise NativeRPHUnavailable("Unexpected PPKI English unit sequence")
     for entry in units:
@@ -237,7 +241,7 @@ def get_options(kind, year, subject=None, component=None, unit=None):
         units = english_catalog(year)
         if kind == "units":
             return [{"value": row["value"], "label": row["label"]} for row in units]
-        if unit not in ("1", "2", "3", "4"):
+        if unit not in tuple(str(n) for n in range(1, 9)):
             raise ValueError("Invalid PPKI English unit")
         return next((entry["lessons"] for entry in units if entry["value"] == unit), [])
     if (year not in YEARS or kind not in ("subjects", "components", "units", "pdp")
