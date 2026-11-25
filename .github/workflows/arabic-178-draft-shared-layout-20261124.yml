@@ -2,6 +2,7 @@ name: Arabic SK 178 draft shared RTL layout QA
 on:
   pull_request:
     paths:
+      - 'rph_standalone/bahasa_arab/year[456]/**'
       - 'tools/arabic_178_draft_shared_layout_20261124.py'
       - 'web/telegram_provisional_arab_music_api.py'
       - 'audits/arabic_draft_y4_y6_sp_candidate_bank_20261124.json'
