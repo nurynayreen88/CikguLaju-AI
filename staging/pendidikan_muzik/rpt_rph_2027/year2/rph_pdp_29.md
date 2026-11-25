@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyanyi sambil bergerak mengikut tempo cepat, lambat dan perubahan tempo.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan JALAN-JALAN KE TAMAN RAMA-RAMA; murid menunjukkan respons awal.
+**Set induksi:** Guru memperagakan gerak bunga dan rama-rama pada dua tempo. Murid mengajuk gerak setempat.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru menerangkan peranan dua kumpulan: bunga dan rama-rama, dan menunjukkan gerak yang selamat.
+**Aktiviti 1 — Gerakan bunga dan rama-rama:** Guru menerangkan peranan dua kumpulan: bunga dan rama-rama, dan menunjukkan gerak yang selamat.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid melakukan gerakan masing-masing sambil menyanyi Taman Mini dan bertukar tempo apabila isyarat berubah.
+**Aktiviti 2 — Nyanyian dan gerak dua tempo:** Murid melakukan gerakan masing-masing sambil menyanyi Taman Mini dan bertukar tempo apabila isyarat berubah.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak kesepadanan tempo, koordinasi dan keselamatan.
+**Pengukuhan dan pentaksiran:** Semak kesepadanan tempo, koordinasi dan keselamatan.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menukar gerakan ketika tempo berubah tanpa mengganggu ruang rakan.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 81; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 81; lagu Taman Mini, kad tempo, ruang selamat.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
