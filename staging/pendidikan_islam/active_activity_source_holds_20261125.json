@@ -112,6 +112,13 @@
       "year": 6,
       "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
       "source_run": 45514360861
+    },
+    {
+      "id": 1475,
+      "year": 3,
+      "pdp": 89,
+      "reason": "Objective and memorization steps target Surah al-Asr but first recording step names Surah al-Kafirun. Verify original textbook and RPT before editorial revision.",
+      "source_run": 45520794883
     }
   ]
 }
