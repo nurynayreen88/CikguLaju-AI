@@ -13,7 +13,7 @@
     }
   ],
   "total_active": 698,
-  "staged_unique_reported": 624,
+  "staged_unique_reported": 631,
   "live_editorial_count": 0,
   "release_gate": "Review original DSKP/textbook/mushaf evidence and Jawi, confirm native output, then promote only approved records. Mark LIVE only after deployment and authenticated download verification.",
   "wave1": [
@@ -218,47 +218,29 @@
     "draft_count": 534,
     "note": "Native structural render only; academic approval outstanding."
   },
-  "staged_unique_verified": 624,
+  "staged_unique_verified": 631,
   "staged_year_counts": {
     "2": 112,
     "3": 135,
-    "4": 125,
+    "4": 132,
     "5": 128,
     "6": 124
   },
-  "remaining_without_draft": 74,
+  "remaining_without_draft": 67,
   "latest_editorial_batch": {
-    "batch": 32,
+    "batch": 33,
     "years": {
-      "5": [
-        114,
-        117,
-        118,
-        121,
-        122,
-        126,
-        130,
-        133,
-        134,
-        138,
-        141
-      ],
-      "6": [
-        49,
-        53,
-        57,
-        60,
-        64,
-        68,
-        72,
-        76,
-        80,
-        84,
-        91,
-        95
+      "4": [
+        5,
+        17,
+        29,
+        41,
+        61,
+        73,
+        150
       ]
     },
-    "commit": "1a0ba7e523be61c91d507c4f2e5778485093c893",
+    "commit": "a3a4e03567cfa49639c7d5152c4f2a448aae6132",
     "status": "QA_RENDER_PENDING"
   },
   "cross_batch_audit": {
@@ -285,7 +267,7 @@
       }
     }
   },
-  "manual_source_hold_count": 22,
+  "manual_source_hold_count": 27,
   "latest_render_blocker": {
     "status": "RESOLVED_STRUCTURAL_CI",
     "run": 45523576114
