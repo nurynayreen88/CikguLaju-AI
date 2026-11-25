@@ -70,3 +70,22 @@ class TestPPKIEnglishWebRelease(unittest.TestCase):
                 self.assertIn("BAHASA_INGGERIS_PPKI", response.headers["Content-Disposition"])
                 self.assertEqual(response.headers["X-RPH-Access-Mode"], "paid")
                 render.assert_called_once()
+
+
+    def test_expanded_catalog_exact_units_and_backward_compatibility(self):
+        obj = source()
+        for unit, title, start, end in [("2", "My Body", 4, 7),
+                                        ("3", "My Big Family", 8, 11),
+                                        ("4", "Good Manners", 12, 16)]:
+            obj["units"].append({"value": unit, "label": title, "lessons": [
+                {"value": f"{n:03d}", "label": f"Lesson {n}", "textbook_ref": str(n),
+                 "formats": ["word", "pdf"]} for n in range(start, end + 1)]})
+        with patch.object(ppki, "_request", return_value=json.dumps(obj).encode()):
+            self.assertEqual([u["value"] for u in ppki.get_options("units", 2, ppki.ENGLISH_SUBJECT)], ["1", "2", "3", "4"])
+            self.assertEqual(ppki.validate_selection(2, ppki.ENGLISH_SUBJECT, "4", "016")["value"], "016")
+            with self.assertRaises(ValueError):
+                ppki.validate_selection(2, ppki.ENGLISH_SUBJECT, "1", "004")
+        obj["units"][2]["lessons"][0]["value"] = "999"
+        with patch.object(ppki, "_request", return_value=json.dumps(obj).encode()):
+            with self.assertRaises(ppki.NativeRPHUnavailable):
+                ppki.english_catalog(2)
