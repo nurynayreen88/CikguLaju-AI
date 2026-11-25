@@ -28,6 +28,10 @@ def main():
                 failures.append((item["id"],item["year"],item["pdp"],state.get("pdp_no"),state.get("lesson_no"),state.get("lesson")))
                 continue
             allowed={"AKTIVITI UTAMA","KRITERIA KEJAYAAN","PENTAKSIRAN","REFLEKSI"}
+            if (item.get("final_review_fields") or {}).get("sp_text_proposal"):
+                allowed.add("STANDARD PEMBELAJARAN")
+                for code,description in item["final_review_fields"]["sp_text_proposal"].items():
+                    assert jawi_display_digits(code+" "+description) in revised["STANDARD PEMBELAJARAN"]
             if item.get("corrected_objective"):
                 key="OBJEKTIF PEMBELAJARAN" if "OBJEKTIF PEMBELAJARAN" in old else "OBJEKTIF"
                 allowed.add(key)
@@ -41,7 +45,7 @@ def main():
             counts[item["year"]]+=1
         print("PI_BULK_INTEGRATION",dict(counts),"total",sum(counts.values()),"catalog",len(catalog),flush=True)
         assert not failures, failures
-        assert sum(counts.values())==len(catalog)==685
+        assert sum(counts.values())==len(catalog)==689
     finally:
         tmp.cleanup()
 
