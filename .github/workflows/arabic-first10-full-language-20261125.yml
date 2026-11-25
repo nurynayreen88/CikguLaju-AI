@@ -3,7 +3,7 @@ on:
   pull_request:
     paths:
       - 'rph_standalone/bahasa_arab/year[456]/**'
-      - 'tools/arabic_10_draft_shared_layout_20261124.py'
+      - 'tools/arabic_178_draft_shared_layout_20261124.py'
       - 'web/telegram_provisional_arab_music_api.py'
       - 'audits/arabic_draft_y4_y6_sp_candidate_bank_20261124.json'
       - 'tools/qa_arabic_full_standards_20261125.py'
