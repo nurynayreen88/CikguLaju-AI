@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** تمساح، ثعبان، فيل، قرد، ماعز، نمر، كلب
 **Objektif pembelajaran:** Mengenal pasti lima daripada tujuh nama haiwan yang disebut secara lisan.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid mengenal pasti sekurang-kurangnya 5 daripada 7 nama haiwan yang disebut.
 
 **Set induksi:** Guru menunjukkan gambar zoo dan kandang lalu meminta murid menamakan haiwan yang dikenali.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membaca nama haiwan daripada h88 secara jelas; murid mendengar dan menunjuk haiwan dalam carta gambar.
+**Aktiviti 1 — Dengar nama haiwan daripada carta:** Guru membaca nama haiwan daripada h88 secara jelas; murid mendengar dan menunjuk haiwan dalam carta gambar.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyertai permainan 'dengar dan sentuh' gambar haiwan; guru menukar urutan sebutan untuk menguji kefahaman.
+**Aktiviti 2 — Permainan dengar dan sentuh gambar:** Murid menyertai permainan 'dengar dan sentuh' gambar haiwan; guru menukar urutan sebutan untuk menguji kefahaman.
 
 **Pengukuhan / Penilaian (PBD):** Lima daripada tujuh respons gambar yang tepat direkod.
 

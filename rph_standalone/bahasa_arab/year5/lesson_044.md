@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** نادي الكمبيوتر، فرقة الكشافة، كرة القدم، القفز الطويل
 **Objektif pembelajaran:** Murid dapat mengelaskan empat frasa dan membacanya dengan tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid mengelaskan empat frasa dan membacanya dengan tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan mengelaskan nama sukan dan kelab melalui projek tarsia dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menunjukkan projek Tarsia pada h84 dan membimbing bacaan kata sukan/kelab.
+**Aktiviti 1 — Baca frasa sukan dan kelab dalam Tarsia:** Guru menunjukkan projek Tarsia pada h84 dan membimbing bacaan kata sukan/kelab.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membina empat padanan Tarsia di atas kertas, membaca semua frasa dan menerangkan kategori kepada kumpulan.
+**Aktiviti 2 — Bina empat padanan Tarsia:** Murid membina empat padanan Tarsia di atas kertas, membaca semua frasa dan menerangkan kategori kepada kumpulan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat padanan dan bacaan frasa yang tepat.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** ماذا تربي؟، أنا أربي البط، هل تطعم الأرنب؟
 **Objektif pembelajaran:** Membaca serta menyusun tiga bahagian dialog ringkas dengan urutan yang bermakna.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid membaca serta menyusun tiga bahagian dialog dengan urutan bermakna.
 
 **Set induksi:** Guru memaparkan dua baris dialog berselerak dan murid menyusun urutan soal jawab.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan dialog h99 berkaitan haiwan yang dipelihara dan makanannya; murid menandakan bentuk soalan dan jawapan.
+**Aktiviti 1 — Baca dialog haiwan peliharaan dan makanan:** Guru membimbing bacaan dialog h99 berkaitan haiwan yang dipelihara dan makanannya; murid menandakan bentuk soalan dan jawapan.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid menyusun kad dialog, membaca secara bergilir dan menjelaskan pilihan urutan kepada guru.
+**Aktiviti 2 — Susun tiga bahagian dialog dan baca:** Pasangan murid menyusun kad dialog, membaca secara bergilir dan menjelaskan pilihan urutan kepada guru.
 
 **Pengukuhan / Penilaian (PBD):** Tiga bahagian dialog disusun munasabah dan dibaca lancar.
 

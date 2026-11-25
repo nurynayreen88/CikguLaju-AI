@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** ماذا تحبين؟، أنا أحب القط، أنا أحب الدب
 **Objektif pembelajaran:** Menyebut dua respons bermakna daripada tiga soalan mudah berkaitan haiwan.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 2 respons bermakna daripada 3 soalan mudah tentang haiwan.
 
 **Set induksi:** Guru memegang dua gambar haiwan dan bertanya haiwan kegemaran murid.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan dan membimbing soal jawab tentang haiwan yang disukai berdasarkan h97, membezakan respons pendek dengan jawapan penuh.
+**Aktiviti 1 — Latih respons tentang haiwan disukai:** Guru memperdengarkan dan membimbing soal jawab tentang haiwan yang disukai berdasarkan h97, membezakan respons pendek dengan jawapan penuh.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun kad kata untuk dialog ringkas, kemudian mempraktikkan soalan dan jawapan secara berpasangan.
+**Aktiviti 2 — Susun kad dan praktik dialog:** Murid menyusun kad kata untuk dialog ringkas, kemudian mempraktikkan soalan dan jawapan secara berpasangan.
 
 **Pengukuhan / Penilaian (PBD):** Dua respons lisan yang sesuai dan difahami direkod; bentuk kata tanya diteliti guru.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** أنا أشاهد النمر في الغابة، أنا أربي الديك، أنا أحب القط
 **Objektif pembelajaran:** Membaca tiga ayat pendek dan menghasilkan satu ayat baharu dengan kosa kata unit.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid membaca tiga ayat pendek dan menghasilkan satu ayat baharu menggunakan kosa kata unit.
 
 **Set induksi:** Guru menunjukkan gambar hutan, sangkar dan kandang lalu meminta murid melengkapkan frasa mudah.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan bacaan ayat dalam latihan h100 dan menandakan kata kerja serta tempat dalam ayat.
+**Aktiviti 1 — Kenal kata kerja dan tempat dalam ayat:** Guru memodelkan bacaan ayat dalam latihan h100 dan menandakan kata kerja serta tempat dalam ayat.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih kad subjek, kata kerja dan haiwan untuk membina satu ayat baharu yang kemudian dibaca kepada pasangan.
+**Aktiviti 2 — Bina dan baca satu ayat baharu:** Murid memilih kad subjek, kata kerja dan haiwan untuk membina satu ayat baharu yang kemudian dibaca kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Murid membaca tiga ayat asas dan membina sekurang-kurangnya satu ayat yang boleh difahami.
 

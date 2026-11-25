@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** أسد، نمر، تمساح، كلب، ماعز، حصان
 **Objektif pembelajaran:** Mengelaskan sekurang-kurangnya lima daripada enam perkataan bertulis kepada kategori tepat.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 5 daripada 6 perkataan bertulis kepada kategori tepat.
 
 **Set induksi:** Guru memaparkan enam nama haiwan dalam tulisan Arab dan meminta murid membaca dua contoh.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan kata dan pengelasan haiwan pada latihan أقرأ وأصنف h92.
+**Aktiviti 1 — Baca kata haiwan jinak dan pemangsa:** Guru membimbing bacaan kata dan pengelasan haiwan pada latihan أقرأ وأصنف h92.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengisi jadual haiwan أليف / مفترس menggunakan kad perkataan tanpa bantuan gambar, kemudian menyemak bersama pasangan.
+**Aktiviti 2 — Isi jadual أليف dan مفترس:** Murid mengisi jadual haiwan أليف / مفترس menggunakan kad perkataan tanpa bantuan gambar, kemudian menyemak bersama pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Lima daripada enam kata diklasifikasi betul dan dibaca dengan jelas.
 

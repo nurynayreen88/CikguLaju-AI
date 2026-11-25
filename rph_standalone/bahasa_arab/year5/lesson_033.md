@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** سباق الجري، القفز الطويل، القفز العالي، كرة القدم، كرة اليد
 **Objektif pembelajaran:** Murid dapat menyebut empat daripada lima frasa acara sukan dengan tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 4 daripada 5 frasa acara sukan dengan tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan dengar dan sebut acara sukan dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan lima frasa acara olahraga dan sukan pada latihan h60 sambil menunjuk gambar.
+**Aktiviti 1 — Dengar lima frasa acara sukan:** Guru memperdengarkan lima frasa acara olahraga dan sukan pada latihan h60 sambil menunjuk gambar.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan frasa dengan gambar dan menyebutnya kepada pasangan.
+**Aktiviti 2 — Padankan gambar dan sebut frasa:** Murid memadankan frasa dengan gambar dan menyebutnya kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat daripada lima sebutan dan padanan yang tepat.
 
