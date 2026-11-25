@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menunjukkan postur nyanyian duduk serta berdiri yang betul dan menyanyikan satu frasa dengan pic tepat.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit BERSIH PASTI CANTIK; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru menunjukkan dua postur nyanyian. Murid memilih dan meniru postur yang betul.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru memperagakan bahu relaks, badan tegak dan kaki stabil dalam postur duduk dan berdiri.
+**Aktiviti 1 — Postur duduk dan berdiri:** Guru memperagakan bahu relaks, badan tegak dan kaki stabil dalam postur duduk dan berdiri.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid berpasangan menyemak postur rakan, mengajuk lagu Riang Bernyanyi baris demi baris dan menyanyi dengan sebutan tepat.
+**Aktiviti 2 — Nyanyian frasa dan pic:** Murid berpasangan menyemak postur rakan, mengajuk lagu Riang Bernyanyi baris demi baris dan menyanyi dengan sebutan tepat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rubrik tiga kriteria: postur, pic dan sebutan; dua percubaan.
+**Pengukuhan dan pentaksiran:** Rubrik tiga kriteria: postur, pic dan sebutan; dua percubaan.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Murid memperagakan postur betul dan menyanyi satu frasa Riang Bernyanyi. Guru menyemak pic.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 18-19; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 18–19; lagu Riang Bernyanyi, kerusi.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 
