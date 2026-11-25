@@ -1826,7 +1826,8 @@ const ppkiSubject="PENGURUSAN_KEHIDUPAN_PPKI";
 function canSelectRph(){
  if(isDlpRphSubject(subject.value))return dlpRphDownload();
  if(curriculum.value==="ppki")
-  return ["2","3","4","5","6"].includes(year.value)&&subject.value===ppkiSubject;
+  return (["2","3","4","5","6"].includes(year.value)&&subject.value===ppkiSubject)||
+         (year.value==="2"&&subject.value==="BAHASA_INGGERIS_PPKI");
  if(curriculum.value!=="kssr")return false;
  if(subject.value==="MATH_SJKC")return ["2","3"].includes(year.value);
  if(subject.value==="MATH_SJKT")return year.value==="2";
