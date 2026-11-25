@@ -5,13 +5,13 @@
 **Kod SK/SP:** 2.2 / 2.2.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid membaca sekurang-kurangnya 5 daripada 6 kad nama bulan يناير hingga يونيو dengan sebutan tepat.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 5 daripada 6 kad nama bulan dengan sebutan tepat.
 
 **Set induksi:** Guru menunjukkan gambar kalendar dan meminta murid meneka nama bulan dalam bahasa Arab.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru merujuk aktiviti membaca kalendar pada Buku Teks Tahun 4 halaman bercetak 7. Murid membaca enam nama bulan يناير hingga يونيو secara berkumpulan kemudian individu.
+**Aktiviti 1 — Baca kalendar Januari hingga Jun:** Guru merujuk aktiviti membaca kalendar pada Buku Teks Tahun 4 halaman bercetak 7. Murid membaca enam nama bulan يناير hingga يونيو secara berkumpulan kemudian individu.
 
-**Aktiviti 2 — Amali murid:** Permainan susun urutan enam bulan: murid membaca nama dari kad terbalik, kemudian meletakkan mengikut turutan kalendar.
+**Aktiviti 2 — Permainan kad bulan terbalik:** Permainan susun urutan enam bulan: murid membaca nama dari kad terbalik, kemudian meletakkan mengikut turutan kalendar.
 
 **Pengukuhan / PBD:** Guru menguji enam kad, menanda bilangan bulan yang dibaca betul.
 

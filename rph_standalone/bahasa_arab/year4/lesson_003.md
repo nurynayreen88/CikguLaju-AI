@@ -5,13 +5,13 @@
 **Kod SK/SP:** 1.2 / 1.2.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid mengulang sekurang-kurangnya 4 daripada 5 nama bulan: يناير، فبراير، مارس، إبريل، مايو.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 4 daripada 5 nama bulan Januari hingga Mei dengan tepat.
 
 **Set induksi:** Guru menunjukkan kad kalendar Januari hingga Mei dan bertanya nama bulan semasa.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menggunakan aktiviti kalendar bulan Masihi dalam Buku Teks halaman 4–5, memperdengarkan Januari–Mei (يناير، فبراير، مارس، إبريل، مايو). Murid meniru mengikut suku kata dan tekanan yang betul.
+**Aktiviti 1 — Ajuk nama lima bulan Masihi:** Guru menggunakan aktiviti kalendar bulan Masihi dalam Buku Teks halaman 4–5, memperdengarkan Januari–Mei (يناير، فبراير، مارس، إبريل، مايو). Murid meniru mengikut suku kata dan tekanan yang betul.
 
-**Aktiviti 2 — Amali murid:** Pasangan murid menyusun lima kad bulan secara urutan, kemudian murid A menyebut nama dan murid B menunjukkan nombor urutan bulan.
+**Aktiviti 2 — Susun kad bulan dan sebut urutan:** Pasangan murid menyusun lima kad bulan secara urutan, kemudian murid A menyebut nama dan murid B menunjukkan nombor urutan bulan.
 
 **Pengukuhan / PBD:** Guru menilai sebutan lima bulan setiap murid dengan senarai semak.
 

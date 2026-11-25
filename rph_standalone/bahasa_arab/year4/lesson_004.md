@@ -5,13 +5,13 @@
 **Kod SK/SP:** 2.1 / 2.1.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid meniru bacaan 4 daripada 5 perkataan berawalan ال dengan sebutan syamsiah/qamariah yang sesuai.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 4 daripada 5 perkataan berawalan ال dengan bacaan lam yang betul.
 
 **Set induksi:** Guru memaparkan dua kata berawalan ال yang pernah didengar dan meminta murid membacanya.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru membaca empat kata contoh pada Buku Teks halaman 3 (الْمُعَلِّم، الْعِيد، التَّقْوِيم، الرَّئِيس), diikuti satu kata pengukuhan yang sesuai. Murid mengulang, menandakan huruf selepas ال dan membezakan bacaan lam.
+**Aktiviti 1 — Baca dan kenal huruf selepas ال:** Guru membaca empat kata contoh pada Buku Teks halaman 3 (الْمُعَلِّم، الْعِيد، التَّقْوِيم، الرَّئِيس), diikuti satu kata pengukuhan yang sesuai. Murid mengulang, menandakan huruf selepas ال dan membezakan bacaan lam.
 
-**Aktiviti 2 — Amali murid:** Secara berpasangan murid menggariskan huruf selepas ال dan membaca lantang untuk rakan menilai syamsiah atau qamariah.
+**Aktiviti 2 — Garis huruf dan baca kepada pasangan:** Secara berpasangan murid menggariskan huruf selepas ال dan membaca lantang untuk rakan menilai syamsiah atau qamariah.
 
 **Pengukuhan / PBD:** Guru menandakan lima bacaan individu dan pembetulan sebutan.
 

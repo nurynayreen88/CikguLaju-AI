@@ -8,13 +8,13 @@
 **Masa/Tarikh/Kelas:** Diisi oleh guru mengikut jadual.
 
 **Objektif PdP:** Murid dapat meniru sebutan sekurang-kurangnya 4 daripada 5 kata berawalan ال mengikut bunyi syamsiah/qamariah dengan betul.  
-**Kriteria kejayaan:** Sasaran individu seperti dalam objektif; bilangan tepat direkod oleh guru.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 4 daripada 5 sebutan kata berawalan ال dengan bunyi lam yang tepat.
 
 **Set induksi:** Guru memperdengarkan dua sebutan kata berawalan ال yang berbeza dan meminta murid meneka sama ada lam dibunyikan.
 
-**Aktiviti 1 — Dengar dan ulang:** Guru menggunakan perkataan pada Buku Teks Unit 1 halaman bercetak 2, contohnya الْيَوْم، الشَّهْر، اللُّغَة dan الرِّيَاضِيّ, untuk memodelkan sebutan ال qamariah/syamsiah. Murid mengulang dan menandakan sama ada bunyi lam didengar.
+**Aktiviti 1 — Dengar dan ulang bunyi ال:** Guru menggunakan perkataan pada Buku Teks Unit 1 halaman bercetak 2, contohnya الْيَوْم، الشَّهْر، اللُّغَة dan الرِّيَاضِيّ, untuk memodelkan sebutan ال qamariah/syamsiah. Murid mengulang dan menandakan sama ada bunyi lam didengar.
 
-**Aktiviti 2 — Amali/berpasangan:** Murid menyusun kad perkataan sebenar daripada unit buku teks kepada dua kumpulan. Setiap pasangan membaca semula perkataan yang dipilih dan menyemak sebutan bersama guru.
+**Aktiviti 2 — Kelaskan kad syamsiah dan qamariah:** Murid menyusun kad perkataan sebenar daripada unit buku teks kepada dua kumpulan. Setiap pasangan membaca semula perkataan yang dipilih dan menyemak sebutan bersama guru.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyebut lima kata pilihan daripada buku teks dan meminta murid mengulang; senarai semak sebutan lam dan huruf berkenaan (sasaran ≥4/5).
 

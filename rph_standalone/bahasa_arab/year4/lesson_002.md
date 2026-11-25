@@ -5,13 +5,13 @@
 **Kod SK/SP:** 1.1 / 1.1.2 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid mengelaskan 4 daripada 5 sebutan kata berawalan ال kepada syamsiah atau qamariah.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 4 daripada 5 sebutan kata kepada syamsiah atau qamariah.
 
 **Set induksi:** Guru menyebut ال pada dua kata contoh daripada bahan bulan Masihi dan murid mengenal sama ada lam dibunyikan.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menggunakan contoh kata pada Buku Teks halaman bercetak 2 seperti الْيَوْم، الشَّهْر، اللُّغَة dan الرِّيَاضِيّ, kemudian menambah satu kad latihan setara. Murid mengangkat kad qamariah atau syamsiah selepas mendengar.
+**Aktiviti 1 — Kenal kategori melalui sebutan:** Guru menggunakan contoh kata pada Buku Teks halaman bercetak 2 seperti الْيَوْم، الشَّهْر، اللُّغَة dan الرِّيَاضِيّ, kemudian menambah satu kad latihan setara. Murid mengangkat kad qamariah atau syamsiah selepas mendengar.
 
-**Aktiviti 2 — Amali murid:** Dua kumpulan membincangkan pengelasan setiap kad, kemudian menyebut semula kata bagi membuktikan pilihan; guru membetulkan lam yang digugurkan/dibunyikan.
+**Aktiviti 2 — Buktikan pengelasan dengan bacaan:** Dua kumpulan membincangkan pengelasan setiap kad, kemudian menyebut semula kata bagi membuktikan pilihan; guru membetulkan lam yang digugurkan/dibunyikan.
 
 **Pengukuhan / PBD:** Guru memperdengarkan lima perkataan pilihan dan merekod kategori yang tepat.
 

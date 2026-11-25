@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** الظهر، الشمس، الحارس، الفصل
 **Objektif pembelajaran:** Murid mengenal pasti sekurang-kurangnya 4/5 bunyi ال daripada contoh kata yang didengar.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid mengenal pasti sekurang-kurangnya 4 daripada 5 bunyi ال dengan tepat.
 
 **Set induksi:** Guru menyebut الشمس dan الفصل tanpa memperlihatkan tulisan; murid meneka sama ada bunyi lam jelas.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut kata ber-ال pada latihan h.30 dalam susunan rawak. Murid memilih kad 'lam dibaca' atau 'lam tidak dibaca' dengan bimbingan.
+**Aktiviti 1 — Kenal bunyi lam dalam susunan rawak:** Guru menyebut kata ber-ال pada latihan h.30 dalam susunan rawak. Murid memilih kad 'lam dibaca' atau 'lam tidak dibaca' dengan bimbingan.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam pasangan, murid A menyebut lima contoh kata, murid B menyusun kad mengikut perbezaan sebutan dan bertukar peranan.
+**Aktiviti 2 — Uji lima kata secara berpasangan:** Dalam pasangan, murid A menyebut lima contoh kata, murid B menyusun kad mengikut perbezaan sebutan dan bertukar peranan.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod sekurang-kurangnya empat padanan audio dan kad yang tepat.
 

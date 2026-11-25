@@ -5,13 +5,13 @@
 **Kod SK/SP:** 3.1 / 3.1.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid menulis empat daripada lima perkataan berawalan ال secara tepat dari segi huruf dan sambungan.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 4 daripada 5 perkataan berawalan ال dengan huruf dan sambungan tepat.
 
 **Set induksi:** Guru menulis ال di papan dan murid mengenal dua huruf tersebut.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menunjukkan empat kata pada Buku Teks halaman bercetak 3 (الْمُعَلِّم، الْعِيد، التَّقْوِيم، الرَّئِيس) dan satu kad pengukuhan guru. Murid menjejak sambungan huruf, menyalin satu contoh dan menyemak model.
+**Aktiviti 1 — Jejak sambungan huruf ال:** Guru menunjukkan empat kata pada Buku Teks halaman bercetak 3 (الْمُعَلِّم، الْعِيد، التَّقْوِيم، الرَّئِيس) dan satu kad pengukuhan guru. Murid menjejak sambungan huruf, menyalin satu contoh dan menyemak model.
 
-**Aktiviti 2 — Amali murid:** Murid menyalin empat kata berikutnya ke buku, mewarnakan ال dan membacanya kepada pasangan sambil guru memantau arah tulisan.
+**Aktiviti 2 — Salin kata dan semak arah tulisan:** Murid menyalin empat kata berikutnya ke buku, mewarnakan ال dan membacanya kepada pasangan sambil guru memantau arah tulisan.
 
 **Pengukuhan / PBD:** Guru memeriksa lima perkataan bertulis dan senarai semak sambungan serta ejaan.
 

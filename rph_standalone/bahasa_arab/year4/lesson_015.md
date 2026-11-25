@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** المعلم، العيد، التقويم، الرئيس، الكمبيوتر
 **Objektif pembelajaran:** Murid meniru bacaan empat daripada lima kata ber-ال dalam latihan halaman 31 dengan sebutan yang tepat.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 4 daripada 5 kata ber-ال dengan sebutan tepat.
 
 **Set induksi:** Guru menunjukkan kata المعلم dan komputer untuk menarik perhatian kepada bentuk ال dan bunyi awal.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan baca-tulis Buku Teks h.31, menunjukkan kata المعلم، العيد، التقويم dan komputer; murid membunyikan kata dengan bacaan ال yang betul.
+**Aktiviti 1 — Baca kata ber-ال halaman 31:** Guru merujuk latihan baca-tulis Buku Teks h.31, menunjukkan kata المعلم، العيد، التقويم dan komputer; murid membunyikan kata dengan bacaan ال yang betul.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengasingkan lima kad bacaan mengikut jenis ال dan membaca setiap kad dalam kumpulan kecil tanpa model kedua.
+**Aktiviti 2 — Asingkan kad dan baca tanpa model:** Murid mengasingkan lima kad bacaan mengikut jenis ال dan membaca setiap kad dalam kumpulan kecil tanpa model kedua.
 
 **Pengukuhan / Penilaian (PBD):** Guru mendengar bacaan individu sekurang-kurangnya empat kata, menandakan ketepatan lafal.
 

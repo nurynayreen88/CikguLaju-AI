@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** الشمس، الظهر، الحارس، الحصة، الفصل
 **Objektif pembelajaran:** Murid meniru sebutan sekurang-kurangnya 4/5 kata ber-ال dengan makhraj tepat.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid meniru sebutan sekurang-kurangnya 4 daripada 5 kata ber-ال dengan makhraj tepat.
 
 **Set induksi:** Guru memaparkan gambar matahari dan kelas, kemudian menyebut الشمس dan الفصل; murid mengenal bunyi ال yang dibunyikan atau digugurkan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan dengar-ulang Buku Teks h.30 (الشمس، الظهر، الحارس، الحصة، الفصل) dan memodelkan sebutan ال mengikut syamsiah/qamariah. Murid mengulang bergilir.
+**Aktiviti 1 — Dengar dan ulang kata tentang sekolah:** Guru menggunakan latihan dengar-ulang Buku Teks h.30 (الشمس، الظهر، الحارس، الحصة، الفصل) dan memodelkan sebutan ال mengikut syamsiah/qamariah. Murid mengulang bergilir.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menampal empat kad perkataan pada dua lajur syamsiah dan qamariah lalu menyebutnya kepada pasangan.
+**Aktiviti 2 — Tampal kad pada dua lajur ال:** Murid menampal empat kad perkataan pada dua lajur syamsiah dan qamariah lalu menyebutnya kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat daripada lima sebutan kata yang tepat serta perbezaan bunyi lam.
 

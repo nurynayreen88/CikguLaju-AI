@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** متى يوم ميلادك؟ يوم ميلادي في شهر مايو، يوم ميلادي في شهر مارس.
 **Objektif pembelajaran:** Murid meniru bacaan sekurang-kurangnya tiga ayat pendek dengan baris/intonasi tepat.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya tiga ayat pendek dengan baris dan intonasi tepat.
 
 **Set induksi:** Guru memaparkan ayat ini: هذا الشهر شهر إبريل dan meminta murid mencari perkataan bulan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk dialog bacaan Buku Teks Tahun 4 halaman 15 tentang bulan hari jadi; murid menjejak dan membaca ayat daripada kad secara bergilir.
+**Aktiviti 1 — Baca dialog bulan hari jadi:** Guru merujuk dialog bacaan Buku Teks Tahun 4 halaman 15 tentang bulan hari jadi; murid menjejak dan membaca ayat daripada kad secara bergilir.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun jalur kata kepada ayat lengkap kemudian membacakannya kepada rakan.
+**Aktiviti 2 — Susun jalur kata dan baca ayat:** Murid menyusun jalur kata kepada ayat lengkap kemudian membacakannya kepada rakan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai bacaan tiga ayat setiap murid; sasaran tiga jelas dengan bimbingan minimum.
 
