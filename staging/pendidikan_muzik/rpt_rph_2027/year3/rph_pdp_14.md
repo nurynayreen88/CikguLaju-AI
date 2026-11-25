@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru mengingatkan teknik menarik nafas dan memperdengarkan atau menyenandungkan contoh melodi ringkas tanpa kebergantungan pada fail audio.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+**Aktiviti 1 — Latihan frasa Parang Ilang**  
 Guru menggunakan halaman 44–45 untuk membimbing latihan pernafasan dan ajuk nyanyi frasa demi frasa lagu Parang Ilang; murid berlatih tanpa menjerit.
 
-**Aktiviti 2 — Aplikasi / persembahan (10 minit)**  
+**Aktiviti 2 — Nyanyian rangkap Parang Ilang**  
 Murid berlatih nyanyian dalam kumpulan, mengulang rangkap dengan tempo yang stabil sambil membandingkan ketepatan pic percubaan pertama dan kedua.
 
 **Pengukuhan & Penilaian — 6 minit**  

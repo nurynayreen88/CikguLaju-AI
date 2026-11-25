@@ -10,15 +10,15 @@
 
 **Objektif:** Murid memainkan kastanet pada setiap detik lagu Tut Tut Kereta Api dengan tempo stabil dalam dua percubaan.
 
-**Set induksi (4 minit):** Guru meniru bunyi kereta api dan meminta murid menyatakan perbezaan antara bunyi, nyanyian, detik dan tempo.
+**Set induksi:** Guru mengetuk detik lagu Tut Tut Kereta Api. Murid menepuk tangan dan paha mengikut detik.
 
-**Aktiviti 1 — Bimbingan (8 minit):** Guru memainkan Audio 8 dan menunjukkan cara menepuk tangan serta paha pada setiap detik. Murid menepuk secara selang-seli mengikut detik lagu.
+**Aktiviti 1 — Tepukan tangan dan paha:** Guru memainkan Audio 8 dan menunjukkan cara menepuk tangan serta paha pada setiap detik. Murid menepuk secara selang-seli mengikut detik lagu.
 
-**Aktiviti 2 — Amali muzik (10 minit):** Murid berpindah daripada tepukan kepada kastanet sambil menyanyi atau mendengar frasa Tut Tut Kereta Api; rakan menilai keseragaman.
+**Aktiviti 2 — Iringan kastanet:** Murid berpindah daripada tepukan kepada kastanet sambil menyanyi atau mendengar frasa Tut Tut Kereta Api; rakan menilai keseragaman.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan setiap detik, tempo dan kawalan alat dalam dua percubaan.
 
-**Penutup (2 minit):** Murid menunjukkan contoh kemahiran yang dipelajari, memberi satu ulasan terhadap persembahan rakan; guru merekod pemerhatian PBD.
+**Penutup:** Murid memainkan kastanet pada setiap detik satu frasa. Guru menyemak kestabilan tempo dan kawalan alat.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 3 SK m/s 12, Audio 8 dan kastanet.
 

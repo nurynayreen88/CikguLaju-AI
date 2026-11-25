@@ -10,15 +10,15 @@
 
 **Objektif:** Murid bergerak dalam formasi kereta api mengikut tempo lagu dan mengubah halaju apabila isyarat berubah.
 
-**Set induksi (4 minit):** Guru meniru bunyi kereta api dan meminta murid menyatakan perbezaan antara bunyi, nyanyian, detik dan tempo.
+**Set induksi:** Guru mengetuk tempo lambat dan cepat. Murid berjalan setempat mengikut tempo dengan jarak selamat.
 
-**Aktiviti 1 — Bimbingan (8 minit):** Guru menunjukkan langkah mengikut tempo dan menetapkan jarak selamat. Murid berlatih dengan Audio 8 yang mempunyai detik panduan atau Audio 5 tanpa detik panduan.
+**Aktiviti 1 — Langkah mengikut tempo:** Guru menunjukkan langkah mengikut tempo dan menetapkan jarak selamat. Murid berlatih dengan Audio 8 yang mempunyai detik panduan atau Audio 5 tanpa detik panduan.
 
-**Aktiviti 2 — Amali muzik (10 minit):** Murid bergerak dalam barisan seperti kereta api secara berkumpulan, menukar langkah mengikut tempo lagu dan memberi arahan mula/henti.
+**Aktiviti 2 — Formasi kereta api:** Murid bergerak dalam barisan seperti kereta api secara berkumpulan, menukar langkah mengikut tempo lagu dan memberi arahan mula/henti.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak tempo, koordinasi dan keselamatan barisan.
 
-**Penutup (2 minit):** Murid menunjukkan contoh kemahiran yang dipelajari, memberi satu ulasan terhadap persembahan rakan; guru merekod pemerhatian PBD.
+**Penutup:** Kumpulan memperagakan pertukaran tempo dan berhenti apabila diberi isyarat. Guru menyemak koordinasi.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 3 SK m/s 13 dan Audio 5 atau 8.
 

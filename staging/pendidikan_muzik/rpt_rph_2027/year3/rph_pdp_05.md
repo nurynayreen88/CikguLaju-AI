@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru mengira empat detik secara lisan; murid melangkah setempat mengikut detik dan memeriksa jarak selamat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
+**Aktiviti 1 — Urutan empat detik**  
 Berpandukan gambar halaman 20, guru memodelkan urutan: maju empat langkah; angkat tangan pada detik keempat; berdiri setempat empat detik; undur empat langkah; kekal setempat empat detik.
 
-**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Gerak maju dan undur**  
 Murid berlatih urutan secara berpasangan menggunakan kiraan guru, kemudian mencuba bersama nyanyian atau vokal bermetronom jika fail Audio 15 yang disahkan tersedia.
 
 **Pengukuhan & Penilaian — 6 minit**  

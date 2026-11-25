@@ -13,9 +13,9 @@
 
 **Set Induksi — 4 minit:** Guru menyemak kesediaan alat, peranan, kerjasama serta etika projek.
 
-**Aktiviti 1 — Perancangan dan demonstrasi (8 minit):** Kumpulan mengagihkan peranan seperti dalam buku: latihan lakonan, nyanyian dan gerak, perkusi mengikut detik, serta prop dan kostum halaman 4–5.
+**Aktiviti 1 — Pembahagian peranan projek:** Kumpulan mengagihkan peranan seperti dalam buku: latihan lakonan, nyanyian dan gerak, perkusi mengikut detik, serta prop dan kostum halaman 4–5.
 
-**Aktiviti 2 — Latihan atau persembahan (10 minit):** Murid menyediakan jadual latihan, menyemak kesediaan prop dan menetapkan frasa lagu Serangga atau pilihan Unit 1–5 melalui bimbingan guru.
+**Aktiviti 2 — Jadual latihan persembahan:** Murid menyediakan jadual latihan, menyemak kesediaan prop dan menetapkan frasa lagu Serangga atau pilihan Unit 1–5 melalui bimbingan guru.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai pelibatan setiap murid, tempo, peranan kumpulan dan kreativiti persembahan atau hasil rancangan menggunakan borang penilaian.
 

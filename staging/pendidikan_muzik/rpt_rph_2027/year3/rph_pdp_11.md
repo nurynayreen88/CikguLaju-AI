@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru memperkenalkan gambar atau deskripsi muzik jaz dan meminta murid menyatakan perkara yang mereka jangka akan dengar.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
+**Aktiviti 1 — Kenali muzik jaz**  
 Guru merujuk halaman 39 yang menerangkan Muzik Jaz serta menyebut contoh penyanyi tempatan, termasuk Julie Sudiro dan Sheila Majid; murid mencatat dua fakta daripada bahan tersebut.
 
-**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Ulasan ciri muzik jaz**  
 Guru memperdengarkan petikan yang sah digunakan, jika tersedia, atau menggunakan contoh irama yang dimainkan sendiri; pasangan murid membincangkan sifat muzik dan membentangkan ulasan pendek.
 
 **Pengukuhan & Penilaian — 6 minit**  

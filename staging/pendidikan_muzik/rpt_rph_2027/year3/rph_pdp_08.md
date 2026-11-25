@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru menunjukkan kad ikon bernilai satu, dua atau empat detik; murid membandingkan jumlah detik beberapa susunan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
+**Aktiviti 1 — Roda ciptaan lapan detik**  
 Guru memodelkan permainan Putar-putar Roda Ciptaan halaman 28–29: kumpulan memilih kad melalui enam pusingan, kemudian membincangkan susunan yang menghasilkan lapan detik.
 
-**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Persembahan corak ciptaan**  
 Murid menyusun kad, berlatih menepuk susunan ciptaan dan mempersembahkan secara berkumpulan; kumpulan lain menyemak jumlah detik dan memberi maklum balas.
 
 **Pengukuhan & Penilaian — 6 minit**  

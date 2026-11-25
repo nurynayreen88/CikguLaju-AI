@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru memperagakan suara solo dan gabungan beberapa suara; murid memutuskan yang mana bertekstur nipis atau tebal.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
+**Aktiviti 1 — Bezakan tekstur nipis dan tebal**  
 Berdasarkan halaman 36, guru menerangkan tekstur nipis (bunyi solo) dan tebal (lapisan bunyi berkumpulan); murid mengelaskan empat contoh berdasarkan penerangan atau demonstrasi langsung.
 
-**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Nyanyian solo dan kumpulan**  
 Berpandukan lagu Serangga halaman 37, seorang murid menyanyikan frasa pendek secara solo, diikuti kumpulan kecil; rakan memerihalkan perubahan lapisan bunyi, bukan sekadar kuat/lemah.
 
 **Pengukuhan & Penilaian — 6 minit**  

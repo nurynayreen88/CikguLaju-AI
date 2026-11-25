@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru menceritakan ringkasan situasi labah-labah membina sarang dan bertanya bunyi yang boleh mewakili kerja, kejutan atau kerosakan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
+**Aktiviti 1 — Rancang kesan bunyi cerita**  
 Berpandukan cerita halaman 38, setiap kumpulan memilih sekurang-kurangnya tiga adegan dan merancang kesan bunyi menggunakan perkusi badan atau alat perkusi yang selamat.
 
-**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Persembahan Gigih Si Labah-labah**  
 Murid mempersembahkan cerita mengikut urutan; kumpulan menambah kesan bunyi pada adegan yang sesuai, kemudian membandingkan versi dengan dan tanpa kesan bunyi melalui demonstrasi sendiri.
 
 **Pengukuhan & Penilaian — 6 minit**  

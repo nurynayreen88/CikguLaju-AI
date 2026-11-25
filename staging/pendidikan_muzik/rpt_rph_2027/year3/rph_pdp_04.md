@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru membimbing pemanasan suara ringkas (dagu, bibir dan lidah) sebelum guru memperdengarkan atau menyenandungkan satu frasa melodi.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
+**Aktiviti 1 — Ajuk frasa melodi**  
 Guru melaksanakan latihan mengajuk melodi halaman 18 secara panggil dan jawab; murid mengulang frasa pendek dengan sebutan jelas sebelum mencantumkan frasa.
 
-**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Nyanyian Kita Satu Keluarga**  
 Murid menyanyikan lagu Kita Satu Keluarga baris demi baris berpandukan skor halaman 19. Selepas menguasai rangkap, mereka menyanyikannya pada tempo lambat dan cepat sambil menepuk detik.
 
 **Pengukuhan & Penilaian — 6 minit**  
