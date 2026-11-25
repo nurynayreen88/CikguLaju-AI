@@ -234,11 +234,37 @@ def main():
         print("PI_RESIDUAL_REVIEW",json.dumps({"total":len(residual_review),"by_reason":dict(Counter(x["reason"] for x in residual_review)),"by_year":dict(Counter(x["year"] for x in residual_review)),"priority_duplicate_or_missing_reference":len(priority),"ready":0}),flush=True)
         # Select the next source-grounded editorial batch, excluding all staged IDs.
         staged_ids=set()
+        editorial_rows=[]
         for staged_file in sorted(Path("staging/pendidikan_islam").glob("active_activity_editorial_batch*_20261125.json")):
             staged=json.loads(staged_file.read_text(encoding="utf8"))
             for item in staged["records"]:
                 assert item["id"] not in staged_ids, ("duplicate editorial ID",item["id"])
                 staged_ids.add(item["id"])
+                editorial_rows.append(item)
+        # Full cross-batch comparison (QA flags only, not automatic approval).
+        def editorial_normalize(value):
+            value=unicodedata.normalize("NFKC", str(value or "")).translate(DIGITS)
+            value=re.sub(r"[\u064b-\u065f\u0670\u200e\u200f\u202a-\u202e\u2066-\u2069]", "", value)
+            value=value.translate(str.maketrans({"ک":"ك","ی":"ي"}))
+            return " ".join(re.sub(r"[^\w\s]", " ", value).split())
+        groups={name:defaultdict(list) for name in ("body","title","objective","whole_activity")}
+        for item in editorial_rows:
+            ident={key:item[key] for key in ("id","year","pdp","unit")}
+            for title,body in item["activities"]:
+                groups["title"][editorial_normalize(title)].append(ident)
+                groups["body"][editorial_normalize(body)].append(ident)
+            groups["objective"][editorial_normalize(item["objective"])].append(ident)
+            groups["whole_activity"][editorial_normalize(" ".join(body for _,body in item["activities"]))].append(ident)
+        repeat_flags={name:[{"text":key,"lessons":ids} for key,ids in sorted(entries.items())
+                           if key and len({x["id"] for x in ids})>1] for name,entries in groups.items()}
+        assert staged_ids <= {x["id"] for x in source}
+        editorial_summary={"status":"QA_ONLY_NOT_FOR_RUNTIME","draft_count":len(editorial_rows),
+                           "unique_ids":len(staged_ids),"year_counts":dict(Counter(x["year"] for x in editorial_rows)),
+                           "remaining_without_draft":698-len(staged_ids),"release_eligible":0,
+                           "repeat_group_counts":{name:len(flags) for name,flags in repeat_flags.items()},
+                           "repeat_flags":repeat_flags}
+        (out/"editorial_cross_batch_current.json").write_text(json.dumps(editorial_summary,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        print("PI_EDITORIAL_CROSS_BATCH",json.dumps({k:v for k,v in editorial_summary.items() if k!="repeat_flags"}),flush=True)
         hold_file=Path("staging/pendidikan_islam/active_activity_source_holds_20261125.json")
         manual_holds=json.loads(hold_file.read_text(encoding="utf8"))["records"] if hold_file.exists() else []
         blocked_ids={item["id"] for item in manual_holds}|{item["id"] for item in verse_review if item["status"] in ("INVALID_RANGE","UNPARSED_REFERENCE")}
