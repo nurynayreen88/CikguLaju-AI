@@ -77,6 +77,8 @@ def render(row, bank, dest, *, teacher=None, manual_reflection='', include_candi
         ("معيار النجاح", first(f, "Kriteria kejayaan")),
     ]
     vocabulary = first(f, "Kosa kata / ayat")
+    if arabic_translation is not None and "vocabulary" in arabic_translation["translation"]:
+        vocabulary = arabic_translation["translation"]["vocabulary"]
     if vocabulary:
         details.append(("المفردات", vocabulary))
     _table(doc, (4.3, 14.4), details)
