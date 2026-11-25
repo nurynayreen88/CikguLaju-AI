@@ -1,0 +1,217 @@
+{
+  "status": "16_VISUAL_TEXTBOOK_SUPPORT_REVIEW_NOT_READY",
+  "year": 3,
+  "draft_blob": "db672426da4e01789846bde43f49a69a5e96175f",
+  "textbook_url": "https://drive.google.com/file/d/13mB5rckp-z701R-sWfoyJv3YcXoevind/view",
+  "rows": [
+    {
+      "pdp": 4,
+      "sp": "1.1.3",
+      "printed_pages": [
+        2,
+        6
+      ],
+      "physical_pdf_pages": [
+        9,
+        13
+      ],
+      "evidence": "CONTEXT",
+      "note": "Both target letters and sound examples, exact 1.1.3 not printed"
+    },
+    {
+      "pdp": 8,
+      "sp": "3.1.1",
+      "printed_pages": [
+        5,
+        9
+      ],
+      "physical_pdf_pages": [
+        12,
+        16
+      ],
+      "evidence": "DIRECT",
+      "note": "3.1.1 connected and separate letter writing"
+    },
+    {
+      "pdp": 12,
+      "sp": "2.3.5",
+      "printed_pages": [
+        13
+      ],
+      "physical_pdf_pages": [
+        20
+      ],
+      "evidence": "DIRECT",
+      "note": "2.3.5 classroom word reading"
+    },
+    {
+      "pdp": 16,
+      "sp": "1.4.5",
+      "printed_pages": [
+        21
+      ],
+      "physical_pdf_pages": [
+        28
+      ],
+      "evidence": "CONTEXT",
+      "note": "Polite classroom expressions in revision; teacher-created role play"
+    },
+    {
+      "pdp": 20,
+      "sp": "1.3.4",
+      "printed_pages": [
+        30,
+        32
+      ],
+      "physical_pdf_pages": [
+        37,
+        39
+      ],
+      "evidence": "CONTEXT",
+      "note": "Target letter ayn and written word examples; listening construction is new"
+    },
+    {
+      "pdp": 26,
+      "sp": "1.1.3",
+      "printed_pages": [
+        33,
+        36
+      ],
+      "physical_pdf_pages": [
+        40,
+        43
+      ],
+      "evidence": "DIRECT",
+      "note": "1.1.3 on p33, both target letters supported"
+    },
+    {
+      "pdp": 30,
+      "sp": "2.3.5",
+      "printed_pages": [
+        42
+      ],
+      "physical_pdf_pages": [
+        49
+      ],
+      "evidence": "DIRECT",
+      "note": "2.3.5 clothing word reading; classification is extension"
+    },
+    {
+      "pdp": 36,
+      "sp": "1.4.5",
+      "printed_pages": [
+        55,
+        58
+      ],
+      "physical_pdf_pages": [
+        62,
+        65
+      ],
+      "evidence": "CONTEXT",
+      "note": "Ownership expressions and question-answer practice"
+    },
+    {
+      "pdp": 40,
+      "sp": "1.1.3",
+      "printed_pages": [
+        60,
+        63
+      ],
+      "physical_pdf_pages": [
+        67,
+        70
+      ],
+      "evidence": "DIRECT",
+      "note": "1.1.3 on both sound discrimination pages"
+    },
+    {
+      "pdp": 46,
+      "sp": "1.3.2",
+      "printed_pages": [
+        70
+      ],
+      "physical_pdf_pages": [
+        77
+      ],
+      "evidence": "DIRECT",
+      "note": "1.3.2 colour identification by listening"
+    },
+    {
+      "pdp": 50,
+      "sp": "3.3.1",
+      "printed_pages": [
+        78
+      ],
+      "physical_pdf_pages": [
+        85
+      ],
+      "evidence": "DIRECT",
+      "note": "3.3.1 writing colour words within phrases"
+    },
+    {
+      "pdp": 56,
+      "sp": "1.4.5",
+      "printed_pages": [
+        76
+      ],
+      "physical_pdf_pages": [
+        83
+      ],
+      "evidence": "DIRECT",
+      "note": "1.4.5 colour dialogue"
+    },
+    {
+      "pdp": 60,
+      "sp": "2.2.4",
+      "printed_pages": [
+        89,
+        92
+      ],
+      "physical_pdf_pages": [
+        96,
+        99
+      ],
+      "evidence": "DIRECT",
+      "note": "2.2.4 constructing and reading syllables of both letters"
+    },
+    {
+      "pdp": 66,
+      "sp": "1.3.2",
+      "printed_pages": [
+        98
+      ],
+      "physical_pdf_pages": [
+        105
+      ],
+      "evidence": "DIRECT",
+      "note": "1.3.2 listening to days"
+    },
+    {
+      "pdp": 70,
+      "sp": "2.4.1",
+      "printed_pages": [
+        103
+      ],
+      "physical_pdf_pages": [
+        110
+      ],
+      "evidence": "DIRECT",
+      "note": "2.4.1 reading day/date expressions; routine table is new"
+    },
+    {
+      "pdp": 76,
+      "sp": "3.4.1",
+      "printed_pages": [
+        109
+      ],
+      "physical_pdf_pages": [
+        116
+      ],
+      "evidence": "DIRECT",
+      "note": "3.4.1 routine phrase writing"
+    }
+  ],
+  "direct": 12,
+  "context": 4,
+  "notes": "DIRECT means target SP printed on at least one inspected supporting page; CONTEXT means topic/material support only. Supplementary exercises teacher-authored. No source or release change."
+}

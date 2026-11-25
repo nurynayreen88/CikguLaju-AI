@@ -1,0 +1,217 @@
+{
+  "status": "16_VISUAL_TEXTBOOK_SUPPORT_REVIEW_NOT_READY",
+  "year": 5,
+  "draft_blob": "f6934b37e961992703524daf3d4f628136b84921",
+  "textbook_url": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view",
+  "rows": [
+    {
+      "pdp": 4,
+      "sp": "1.1.4",
+      "printed_pages": [
+        2,
+        3
+      ],
+      "physical_pdf_pages": [
+        12,
+        13
+      ],
+      "evidence": "DIRECT",
+      "note": "1.1.4 on p3; letter discrimination examples p2"
+    },
+    {
+      "pdp": 8,
+      "sp": "3.2.2",
+      "printed_pages": [
+        6,
+        10
+      ],
+      "physical_pdf_pages": [
+        16,
+        20
+      ],
+      "evidence": "DIRECT",
+      "note": "3.2.2 on p10; kitchen utensils on p6"
+    },
+    {
+      "pdp": 12,
+      "sp": "1.3.5",
+      "printed_pages": [
+        13,
+        14
+      ],
+      "physical_pdf_pages": [
+        23,
+        24
+      ],
+      "evidence": "CONTEXT",
+      "note": "Kitchen action sentence models; ordering orally is new practice"
+    },
+    {
+      "pdp": 16,
+      "sp": "2.4.1",
+      "printed_pages": [
+        19
+      ],
+      "physical_pdf_pages": [
+        29
+      ],
+      "evidence": "DIRECT",
+      "note": "2.4.1 linked plate and refrigerator sentences"
+    },
+    {
+      "pdp": 20,
+      "sp": "2.1.4",
+      "printed_pages": [
+        30,
+        31
+      ],
+      "physical_pdf_pages": [
+        40,
+        41
+      ],
+      "evidence": "CONTEXT",
+      "note": "Similar-sound letters and reading/building words; target 2.1.4 not printed on inspected pages"
+    },
+    {
+      "pdp": 26,
+      "sp": "2.2.3",
+      "printed_pages": [
+        35,
+        37
+      ],
+      "physical_pdf_pages": [
+        45,
+        47
+      ],
+      "evidence": "DIRECT",
+      "note": "2.2.3 food classification p35 and drink words p37"
+    },
+    {
+      "pdp": 30,
+      "sp": "3.2.2",
+      "printed_pages": [
+        38
+      ],
+      "physical_pdf_pages": [
+        48
+      ],
+      "evidence": "DIRECT",
+      "note": "3.2.2 food and drink writing practice"
+    },
+    {
+      "pdp": 36,
+      "sp": "1.4.4",
+      "printed_pages": [
+        48
+      ],
+      "physical_pdf_pages": [
+        58
+      ],
+      "evidence": "DIRECT",
+      "note": "1.4.4 food-related linked sentences"
+    },
+    {
+      "pdp": 40,
+      "sp": "2.1.4",
+      "printed_pages": [
+        58,
+        59
+      ],
+      "physical_pdf_pages": [
+        68,
+        69
+      ],
+      "evidence": "CONTEXT",
+      "note": "Sound contrast and written words; target 2.1.4 not printed on inspected pages"
+    },
+    {
+      "pdp": 46,
+      "sp": "2.2.2",
+      "printed_pages": [
+        63
+      ],
+      "physical_pdf_pages": [
+        73
+      ],
+      "evidence": "DIRECT",
+      "note": "2.2.2 athletics names and pictures"
+    },
+    {
+      "pdp": 50,
+      "sp": "2.3.4",
+      "printed_pages": [
+        69
+      ],
+      "physical_pdf_pages": [
+        79
+      ],
+      "evidence": "DIRECT",
+      "note": "2.3.4 sport/club sentence ordering"
+    },
+    {
+      "pdp": 56,
+      "sp": "2.2.3",
+      "printed_pages": [
+        84
+      ],
+      "physical_pdf_pages": [
+        94
+      ],
+      "evidence": "DIRECT",
+      "note": "2.2.3 sports and clubs project"
+    },
+    {
+      "pdp": 60,
+      "sp": "2.1.5",
+      "printed_pages": [
+        87
+      ],
+      "physical_pdf_pages": [
+        97
+      ],
+      "evidence": "DIRECT",
+      "note": "2.1.5 letter and word construction"
+    },
+    {
+      "pdp": 66,
+      "sp": "2.2.3",
+      "printed_pages": [
+        92
+      ],
+      "physical_pdf_pages": [
+        102
+      ],
+      "evidence": "DIRECT",
+      "note": "2.2.3 tame/predatory animal classification"
+    },
+    {
+      "pdp": 70,
+      "sp": "1.3.2",
+      "printed_pages": [
+        97
+      ],
+      "physical_pdf_pages": [
+        107
+      ],
+      "evidence": "DIRECT",
+      "note": "1.3.2 spoken animal-preference dialogue"
+    },
+    {
+      "pdp": 76,
+      "sp": "3.4.1",
+      "printed_pages": [
+        104,
+        105
+      ],
+      "physical_pdf_pages": [
+        114,
+        115
+      ],
+      "evidence": "DIRECT",
+      "note": "Animal care dialogue and 3.4.1 linked sentence writing"
+    }
+  ],
+  "direct": 13,
+  "context": 3,
+  "notes": "DIRECT means target SP printed on inspected supporting page; CONTEXT means topic/material support only. Supplementary exercises teacher-authored; not quotations. Existing anchors unchanged; release review pending."
+}

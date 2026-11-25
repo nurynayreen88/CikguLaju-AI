@@ -1,0 +1,66 @@
+{
+  "status": "STRUCTURAL_PASS_82_DRAFTS_NOT_RELEASED",
+  "source_projection_blob": "463b2f2352603e84eca43f6429f1f2c07a2c6af4",
+  "counts": [
+    {
+      "year": 2,
+      "source_blob": "c3d6694c168b215244616256e7891620d89e9614",
+      "new_drafts": 16,
+      "planned_original": 60,
+      "visual_dskp_checked": 16,
+      "book_page_verified": 0,
+      "ready": 0
+    },
+    {
+      "year": 3,
+      "source_blob": "b4af79ca2fb77354a457b51b23f3bbcfb91751c8",
+      "new_drafts": 16,
+      "planned_original": 60,
+      "visual_dskp_checked": 0,
+      "book_page_verified": 0,
+      "ready": 0
+    },
+    {
+      "year": 4,
+      "source_blob": "6b2a2de79237ae32f759efc14530f6cdc1d16d6e",
+      "new_drafts": 18,
+      "planned_original": 58,
+      "visual_dskp_checked": 0,
+      "book_page_verified": 0,
+      "ready": 0
+    },
+    {
+      "year": 5,
+      "source_blob": "f6934b37e961992703524daf3d4f628136b84921",
+      "new_drafts": 16,
+      "planned_original": 60,
+      "visual_dskp_checked": 0,
+      "book_page_verified": 0,
+      "ready": 0
+    },
+    {
+      "year": 6,
+      "source_blob": "27a3a69e8e012b708191ee0ef115b704cad8e376",
+      "new_drafts": 16,
+      "planned_original": 60,
+      "visual_dskp_checked": 0,
+      "book_page_verified": 0,
+      "ready": 0
+    }
+  ],
+  "existing_total": 298,
+  "new_drafts_total": 82,
+  "planned_total": 380,
+  "checks": [
+    "All 82 new unique slots match year, unit, anchor, A/B dates, week and 30 minute duration",
+    "All required pedagogical fields populated, no Latin letters in Arabic content, reflection tied to criterion",
+    "SK/SP code hierarchy consistent",
+    "No ready promotion, no textbook page verification claimed"
+  ],
+  "not_checked": [
+    "Independent visual DSKP verification for Years 3–6",
+    "Exact textbook pages and RPT 2026 weekly alignment",
+    "298 original lessons duration suitability",
+    "Arabic language academic review, native Word/PDF rendering, production integration"
+  ]
+}

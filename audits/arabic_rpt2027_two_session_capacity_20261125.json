@@ -1,0 +1,1147 @@
+{
+  "status": "PROPOSED_SLOT_CAPACITY_ONLY_NOT_ACADEMIC_SIGNOFF",
+  "calendar_blob": "7eaf028842155d8c329e614eec7408778a7ec3ae",
+  "calendar_ref": "afa6127d367cbe1bc5f19f5ab2f859fe406a0fa0",
+  "calendar_source": "https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit",
+  "index_blob": "9ab0a3643dbb05ac468a7c33c8a742880860dba3",
+  "index_ref": "67c62286d7fe7a51d0f93583134754b666e3315c",
+  "previous_allocation": "PR #515: 1–2 lessons distributed mathematically across 42 weeks",
+  "rules": {
+    "sessions_per_normal_week": 2,
+    "minutes_per_session_proposed": [
+      60,
+      30
+    ],
+    "annual_minimum_hours": 48,
+    "teaching_end": "2027-11-05",
+    "midyear_teaching_end": "2027-05-14",
+    "full_school_holidays_excluded": true,
+    "state_specific_holidays_verified": false,
+    "session_duration_confirmed_by_school": false,
+    "existing_pdp_order_preserved": true,
+    "existing_materials_modified": false,
+    "academic_mapping_complete": false,
+    "owner_confirmed_standard_weekly_pattern": true,
+    "owner_confirmed_period_minutes": 30,
+    "owner_confirmed_period_distribution": [
+      2,
+      1
+    ],
+    "period_pattern_scope": "KSSR SK Bahasa Arab Years 2–6, normal teaching weeks; actual school dates and period order flexible"
+  },
+  "reference_2026": [
+    {
+      "year": 2,
+      "url": "https://anyflip.com/fmsod/jbip/basic",
+      "access_this_review": "UNAVAILABLE_THIS_REVIEW"
+    },
+    {
+      "year": 3,
+      "url": "https://anyflip.com/lcwfx/nxjq/basic",
+      "full_text_access": false,
+      "access_this_review": "UNAVAILABLE_THIS_REVIEW"
+    },
+    {
+      "year": 4,
+      "url": "https://anyflip.com/zxzlm/xrtv/basic",
+      "access_this_review": "UNAVAILABLE_THIS_REVIEW"
+    },
+    {
+      "year": 5,
+      "url": "https://anyflip.com/zxzlm/ucjc/basic",
+      "access_this_review": "FULL_TEXT_READ"
+    },
+    {
+      "year": 6,
+      "url": "https://anyflip.com/zxzlm/bmaa/basic",
+      "access_this_review": "UNAVAILABLE_THIS_REVIEW"
+    }
+  ],
+  "reference_portal": "https://sites.google.com/moe-dl.edu.my/bahasa-arab-skmh/rpt/2026",
+  "weeks": [
+    {
+      "week": "M01",
+      "A": [
+        "2027-01-04",
+        "2027-01-07"
+      ],
+      "B": [
+        "2027-01-04",
+        "2027-01-08"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M02",
+      "A": [
+        "2027-01-10",
+        "2027-01-14"
+      ],
+      "B": [
+        "2027-01-11",
+        "2027-01-15"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M03",
+      "A": [
+        "2027-01-17",
+        "2027-01-21"
+      ],
+      "B": [
+        "2027-01-18",
+        "2027-01-22"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M04",
+      "A": [
+        "2027-01-24",
+        "2027-01-28"
+      ],
+      "B": [
+        "2027-01-25",
+        "2027-01-29"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M05",
+      "A": [
+        "2027-01-31",
+        "2027-02-04"
+      ],
+      "B": [
+        "2027-02-01",
+        "2027-02-05"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M06",
+      "A": [
+        "2027-02-07",
+        "2027-02-11"
+      ],
+      "B": [
+        "2027-02-08",
+        "2027-02-12"
+      ],
+      "sessions": 0,
+      "reason": "Cuti perayaan Tahun Baharu Cina; reserve common A/B week, Kedah may differ",
+      "session_minutes": []
+    },
+    {
+      "week": "M07",
+      "A": [
+        "2027-02-14",
+        "2027-02-18"
+      ],
+      "B": [
+        "2027-02-15",
+        "2027-02-19"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M08",
+      "A": [
+        "2027-02-21",
+        "2027-02-25"
+      ],
+      "B": [
+        "2027-02-22",
+        "2027-02-26"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M09",
+      "A": [
+        "2027-02-28",
+        "2027-03-04"
+      ],
+      "B": [
+        "2027-03-01",
+        "2027-03-05"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M10",
+      "A": [
+        "2027-03-14",
+        "2027-03-18"
+      ],
+      "B": [
+        "2027-03-15",
+        "2027-03-19"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M11",
+      "A": [
+        "2027-03-21",
+        "2027-03-25"
+      ],
+      "B": [
+        "2027-03-22",
+        "2027-03-26"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M12",
+      "A": [
+        "2027-03-28",
+        "2027-04-01"
+      ],
+      "B": [
+        "2027-03-29",
+        "2027-04-02"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M13",
+      "A": [
+        "2027-04-04",
+        "2027-04-08"
+      ],
+      "B": [
+        "2027-04-05",
+        "2027-04-09"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M14",
+      "A": [
+        "2027-04-11",
+        "2027-04-15"
+      ],
+      "B": [
+        "2027-04-12",
+        "2027-04-16"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M15",
+      "A": [
+        "2027-04-18",
+        "2027-04-22"
+      ],
+      "B": [
+        "2027-04-19",
+        "2027-04-23"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M16",
+      "A": [
+        "2027-04-25",
+        "2027-04-29"
+      ],
+      "B": [
+        "2027-04-26",
+        "2027-04-30"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M17",
+      "A": [
+        "2027-05-02",
+        "2027-05-06"
+      ],
+      "B": [
+        "2027-05-03",
+        "2027-05-07"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M18",
+      "A": [
+        "2027-05-09",
+        "2027-05-13"
+      ],
+      "B": [
+        "2027-05-10",
+        "2027-05-14"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M19",
+      "A": [
+        "2027-05-16",
+        "2027-05-20"
+      ],
+      "B": [
+        "2027-05-17",
+        "2027-05-21"
+      ],
+      "sessions": 0,
+      "reason": "Ruang pentaksiran sebelum cuti pertengahan tahun; minggu banyak cuti",
+      "session_minutes": []
+    },
+    {
+      "week": "M20",
+      "A": [
+        "2027-06-06",
+        "2027-06-10"
+      ],
+      "B": [
+        "2027-06-07",
+        "2027-06-11"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M21",
+      "A": [
+        "2027-06-13",
+        "2027-06-17"
+      ],
+      "B": [
+        "2027-06-14",
+        "2027-06-18"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M22",
+      "A": [
+        "2027-06-20",
+        "2027-06-24"
+      ],
+      "B": [
+        "2027-06-21",
+        "2027-06-25"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M23",
+      "A": [
+        "2027-06-27",
+        "2027-07-01"
+      ],
+      "B": [
+        "2027-06-28",
+        "2027-07-02"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M24",
+      "A": [
+        "2027-07-04",
+        "2027-07-08"
+      ],
+      "B": [
+        "2027-07-05",
+        "2027-07-09"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M25",
+      "A": [
+        "2027-07-11",
+        "2027-07-15"
+      ],
+      "B": [
+        "2027-07-12",
+        "2027-07-16"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M26",
+      "A": [
+        "2027-07-18",
+        "2027-07-22"
+      ],
+      "B": [
+        "2027-07-19",
+        "2027-07-23"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M27",
+      "A": [
+        "2027-07-25",
+        "2027-07-29"
+      ],
+      "B": [
+        "2027-07-26",
+        "2027-07-30"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M28",
+      "A": [
+        "2027-08-01",
+        "2027-08-05"
+      ],
+      "B": [
+        "2027-08-02",
+        "2027-08-06"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M29",
+      "A": [
+        "2027-08-08",
+        "2027-08-12"
+      ],
+      "B": [
+        "2027-08-09",
+        "2027-08-13"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M30",
+      "A": [
+        "2027-08-15",
+        "2027-08-19"
+      ],
+      "B": [
+        "2027-08-16",
+        "2027-08-20"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M31",
+      "A": [
+        "2027-08-22",
+        "2027-08-26"
+      ],
+      "B": [
+        "2027-08-23",
+        "2027-08-27"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M32",
+      "A": [
+        "2027-09-05",
+        "2027-09-09"
+      ],
+      "B": [
+        "2027-09-06",
+        "2027-09-10"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M33",
+      "A": [
+        "2027-09-12",
+        "2027-09-16"
+      ],
+      "B": [
+        "2027-09-13",
+        "2027-09-17"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M34",
+      "A": [
+        "2027-09-19",
+        "2027-09-23"
+      ],
+      "B": [
+        "2027-09-20",
+        "2027-09-24"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M35",
+      "A": [
+        "2027-09-26",
+        "2027-09-30"
+      ],
+      "B": [
+        "2027-09-27",
+        "2027-10-01"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M36",
+      "A": [
+        "2027-10-03",
+        "2027-10-07"
+      ],
+      "B": [
+        "2027-10-04",
+        "2027-10-08"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M37",
+      "A": [
+        "2027-10-10",
+        "2027-10-14"
+      ],
+      "B": [
+        "2027-10-11",
+        "2027-10-15"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M38",
+      "A": [
+        "2027-10-17",
+        "2027-10-21"
+      ],
+      "B": [
+        "2027-10-18",
+        "2027-10-22"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M39",
+      "A": [
+        "2027-10-24",
+        "2027-10-28"
+      ],
+      "B": [
+        "2027-10-25",
+        "2027-10-29"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M40",
+      "A": [
+        "2027-10-31",
+        "2027-11-04"
+      ],
+      "B": [
+        "2027-11-01",
+        "2027-11-05"
+      ],
+      "sessions": 2,
+      "reason": "PdP biasa; slot sebenar disahkan guru",
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    {
+      "week": "M41",
+      "A": [
+        "2027-11-07",
+        "2027-11-11"
+      ],
+      "B": [
+        "2027-11-08",
+        "2027-11-12"
+      ],
+      "sessions": 0,
+      "reason": "Ruang pentaksiran/aktiviti selepas tamat sukatan",
+      "session_minutes": []
+    },
+    {
+      "week": "M42",
+      "A": [
+        "2027-11-14",
+        "2027-11-18"
+      ],
+      "B": [
+        "2027-11-15",
+        "2027-11-19"
+      ],
+      "sessions": 0,
+      "reason": "Ruang pentaksiran/aktiviti selepas tamat sukatan",
+      "session_minutes": []
+    },
+    {
+      "week": "M43",
+      "A": [
+        "2027-11-21",
+        "2027-11-25"
+      ],
+      "B": [
+        "2027-11-22",
+        "2027-11-26"
+      ],
+      "sessions": 0,
+      "reason": "Aktiviti selepas UASA",
+      "session_minutes": []
+    },
+    {
+      "week": "M44",
+      "A": [
+        "2027-11-28",
+        "2027-12-02"
+      ],
+      "B": [
+        "2027-11-29",
+        "2027-12-03"
+      ],
+      "sessions": 0,
+      "reason": "Aktiviti penutup tahun",
+      "session_minutes": []
+    }
+  ],
+  "years": [
+    {
+      "year": 2,
+      "existing_rph": 60,
+      "proposed_slots": 76,
+      "additional_slots": 16,
+      "existing_pdp_ids": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010",
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "016",
+        "017",
+        "018",
+        "019",
+        "020",
+        "021",
+        "022",
+        "023",
+        "024",
+        "025",
+        "026",
+        "027",
+        "028",
+        "029",
+        "030",
+        "031",
+        "032",
+        "033",
+        "034",
+        "035",
+        "036",
+        "037",
+        "038",
+        "039",
+        "040",
+        "041",
+        "042",
+        "043",
+        "044",
+        "045",
+        "046",
+        "047",
+        "048",
+        "049",
+        "050",
+        "051",
+        "052",
+        "053",
+        "054",
+        "055",
+        "056",
+        "057",
+        "058",
+        "059",
+        "060"
+      ],
+      "additional_content_mapped": false
+    },
+    {
+      "year": 3,
+      "existing_rph": 60,
+      "proposed_slots": 76,
+      "additional_slots": 16,
+      "existing_pdp_ids": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010",
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "016",
+        "017",
+        "018",
+        "019",
+        "020",
+        "021",
+        "022",
+        "023",
+        "024",
+        "025",
+        "026",
+        "027",
+        "028",
+        "029",
+        "030",
+        "031",
+        "032",
+        "033",
+        "034",
+        "035",
+        "036",
+        "037",
+        "038",
+        "039",
+        "040",
+        "041",
+        "042",
+        "043",
+        "044",
+        "045",
+        "046",
+        "047",
+        "048",
+        "049",
+        "050",
+        "051",
+        "052",
+        "053",
+        "054",
+        "055",
+        "056",
+        "057",
+        "058",
+        "059",
+        "060"
+      ],
+      "additional_content_mapped": false
+    },
+    {
+      "year": 4,
+      "existing_rph": 58,
+      "proposed_slots": 76,
+      "additional_slots": 18,
+      "existing_pdp_ids": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010",
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "016",
+        "017",
+        "018",
+        "019",
+        "020",
+        "021",
+        "022",
+        "023",
+        "024",
+        "025",
+        "026",
+        "027",
+        "028",
+        "029",
+        "030",
+        "031",
+        "032",
+        "033",
+        "034",
+        "035",
+        "036",
+        "037",
+        "038",
+        "039",
+        "040",
+        "041",
+        "042",
+        "043",
+        "044",
+        "045",
+        "046",
+        "047",
+        "048",
+        "049",
+        "050",
+        "051",
+        "052",
+        "053",
+        "054",
+        "055",
+        "056",
+        "057",
+        "058"
+      ],
+      "additional_content_mapped": false
+    },
+    {
+      "year": 5,
+      "existing_rph": 60,
+      "proposed_slots": 76,
+      "additional_slots": 16,
+      "existing_pdp_ids": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010",
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "016",
+        "017",
+        "018",
+        "019",
+        "020",
+        "021",
+        "022",
+        "023",
+        "024",
+        "025",
+        "026",
+        "027",
+        "028",
+        "029",
+        "030",
+        "031",
+        "032",
+        "033",
+        "034",
+        "035",
+        "036",
+        "037",
+        "038",
+        "039",
+        "040",
+        "041",
+        "042",
+        "043",
+        "044",
+        "045",
+        "046",
+        "047",
+        "048",
+        "049",
+        "050",
+        "051",
+        "052",
+        "053",
+        "054",
+        "055",
+        "056",
+        "057",
+        "058",
+        "059",
+        "060"
+      ],
+      "additional_content_mapped": false
+    },
+    {
+      "year": 6,
+      "existing_rph": 60,
+      "proposed_slots": 76,
+      "additional_slots": 16,
+      "existing_pdp_ids": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010",
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "016",
+        "017",
+        "018",
+        "019",
+        "020",
+        "021",
+        "022",
+        "023",
+        "024",
+        "025",
+        "026",
+        "027",
+        "028",
+        "029",
+        "030",
+        "031",
+        "032",
+        "033",
+        "034",
+        "035",
+        "036",
+        "037",
+        "038",
+        "039",
+        "040",
+        "041",
+        "042",
+        "043",
+        "044",
+        "045",
+        "046",
+        "047",
+        "048",
+        "049",
+        "050",
+        "051",
+        "052",
+        "053",
+        "054",
+        "055",
+        "056",
+        "057",
+        "058",
+        "059",
+        "060"
+      ],
+      "additional_content_mapped": false
+    }
+  ],
+  "summary": {
+    "teaching_weeks": 38,
+    "proposed_slots_each_year": 76,
+    "proposed_minutes_each_year": 3420,
+    "existing_total": 298,
+    "proposed_total": 380,
+    "additional_slots_total": 82
+  },
+  "next_gate": "Review each proposed extra focus and original session length against DSKP and textbook, and the 2026 RPT where accessible; no invented standards or release."
+}

@@ -1,0 +1,77 @@
+{
+  "status": "VISUAL_DSKP_CODE_PAGE_PASS_82_NOT_READY",
+  "scope": "82 additional 30-minute Arabic RPH",
+  "counts": [
+    16,
+    16,
+    18,
+    16,
+    16
+  ],
+  "years": [
+    {
+      "year": 2,
+      "blob": "c3d6694c168b215244616256e7891620d89e9614",
+      "drive": "1WY_c69UshDm3jHzVK86G2xfu77UUkGYO"
+    },
+    {
+      "year": 3,
+      "blob": "db672426da4e01789846bde43f49a69a5e96175f",
+      "drive": "1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00"
+    },
+    {
+      "year": 4,
+      "blob": "6b2a2de79237ae32f759efc14530f6cdc1d16d6e",
+      "drive": "1J3hPVU5QhA3z1Mus8MEKntWI-83WpImj",
+      "checked_pdf_pages": [
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        39,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "year": 5,
+      "blob": "f6934b37e961992703524daf3d4f628136b84921",
+      "drive": "16px1xzM1OQxa5-Pggb1nGLN-L4a4wSHY",
+      "checked_pdf_pages": [
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        39,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "year": 6,
+      "blob": "27a3a69e8e012b708191ee0ef115b704cad8e376",
+      "drive": "1tHZTKLAc_4N4fpMvHeJN_DgCpn_m7dMp",
+      "checked_pdf_pages": [
+        31,
+        32,
+        33,
+        34,
+        37,
+        38,
+        39,
+        41
+      ]
+    }
+  ],
+  "matched": 82,
+  "errors": 0,
+  "notes": "82 exact code/parent/page matches. Year 4 and 5 alternate DSKP copies. Draft flags for 50 records not yet updated. Textbook page, academic approval, rendering and release outstanding."
+}

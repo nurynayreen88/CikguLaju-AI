@@ -1,0 +1,112 @@
+{
+  "status": "PARTIAL_TEXTBOOK_TEXT_REVIEW_NOT_VISUAL",
+  "year": 6,
+  "draft_blob": "27a3a69e8e012b708191ee0ef115b704cad8e376",
+  "source": "https://anyflip.com/gcmci/mxcs/basic",
+  "source_edition": "DBP 2021 KSSR Semakan 2017",
+  "rows": [
+    {
+      "pdp": 4,
+      "sp": "1.1.3",
+      "printed_pages": [
+        2
+      ],
+      "evidence": "DIRECT",
+      "note": "Letter sound contrast, target SP 1.1.3"
+    },
+    {
+      "pdp": 8,
+      "sp": "3.1.2",
+      "printed_pages": [
+        10,
+        12
+      ],
+      "evidence": "DIRECT",
+      "note": "Dictation and tool vocabulary; 3.1.2 on p10"
+    },
+    {
+      "pdp": 12,
+      "sp": "2.3.4",
+      "printed_pages": [
+        14
+      ],
+      "evidence": "DIRECT",
+      "note": "2.3.4 hygiene sentence ordering"
+    },
+    {
+      "pdp": 16,
+      "sp": "2.4.4",
+      "printed_pages": [
+        19
+      ],
+      "evidence": "CONTEXT",
+      "note": "Linked hygiene sentences; new ordering activity"
+    },
+    {
+      "pdp": 20,
+      "sp": "1.2.2",
+      "printed_pages": [
+        34
+      ],
+      "evidence": "DIRECT",
+      "note": "1.2.2 occupations listening"
+    },
+    {
+      "pdp": 26,
+      "sp": "2.2.4",
+      "printed_pages": [
+        39
+      ],
+      "evidence": "CONTEXT",
+      "note": "Masculine/feminine occupation examples, p39"
+    },
+    {
+      "pdp": 60,
+      "sp": "1.2.2",
+      "printed_pages": [
+        94,
+        97,
+        98
+      ],
+      "evidence": "DIRECT",
+      "note": "1.2.2 national vocabulary and supporting words"
+    },
+    {
+      "pdp": 66,
+      "sp": "3.1.2",
+      "printed_pages": [
+        100,
+        102
+      ],
+      "evidence": "DIRECT",
+      "note": "3.1.2 dictation"
+    },
+    {
+      "pdp": 70,
+      "sp": "1.3.2",
+      "printed_pages": [
+        105
+      ],
+      "evidence": "DIRECT",
+      "note": "1.3.2 capital and flag colours"
+    },
+    {
+      "pdp": 76,
+      "sp": "2.3.6",
+      "printed_pages": [
+        114
+      ],
+      "evidence": "CONTEXT",
+      "note": "Reading about parliament; information card newly authored"
+    }
+  ],
+  "pending": [
+    30,
+    36,
+    40,
+    46,
+    50,
+    56
+  ],
+  "note": "Printed page text checked, not image inspection. The Drive file 1WPab-TZG1SpqYhBIbo6Lb5wVr98_aIbP contains a different edition and must not be used as evidence. AnyFlip middle section 51–100 unavailable for further review. No promotion or source changes."
+}
