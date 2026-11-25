@@ -56,6 +56,62 @@
       "pdp": 107,
       "reason": "Objective states six rukun puasa; confirm original wording and intended classification against DSKP and textbook before drafting. No inferred count or doctrinal substitution.",
       "source_run": 45514360861
+    },
+    {
+      "id": 1727,
+      "pdp": 41,
+      "year": 5,
+      "reason": "Source activity switches between mad iwadh and mad badal; confirm exact DSKP/textbook scope and objective before editing; no inferred substitution.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1731,
+      "pdp": 45,
+      "year": 5,
+      "reason": "Source activity switches between mad iwadh and mad badal; confirm exact DSKP/textbook scope and objective before editing; no inferred substitution.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1735,
+      "pdp": 49,
+      "year": 5,
+      "reason": "Source activity switches between mad iwadh and mad badal; confirm exact DSKP/textbook scope and objective before editing; no inferred substitution.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1940,
+      "pdp": 110,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1944,
+      "pdp": 114,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1948,
+      "pdp": 118,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1952,
+      "pdp": 122,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1956,
+      "pdp": 126,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
     }
   ]
 }
