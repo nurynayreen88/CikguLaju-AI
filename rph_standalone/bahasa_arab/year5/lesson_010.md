@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** ماذا تطبخ؟ أنا أطبخ الأرز، أين تضع الفواكه؟ أضع الفواكه في الثلاجة.
 **Objektif pembelajaran:** Murid membaca dua daripada tiga ayat dengan intonasi dan jeda yang sesuai.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 2 daripada 3 ayat dengan intonasi dan jeda sesuai.
 
 **Set induksi:** Guru memaparkan ماذا تطبخ؟ dan meminta murid mengecam tanda soal.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membacakan dialog memasak daripada buku halaman 14 serta soalan-jawapan bentuk daripada halaman 15; murid menanda jeda sebelum respons.
+**Aktiviti 1 — Tanda jeda dalam dialog memasak:** Guru membacakan dialog memasak daripada buku halaman 14 serta soalan-jawapan bentuk daripada halaman 15; murid menanda jeda sebelum respons.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membaca dialog tiga ayat secara berpasangan, kemudian bertukar peranan membaca soalan.
+**Aktiviti 2 — Baca dialog dan tukar peranan:** Murid membaca dialog tiga ayat secara berpasangan, kemudian bertukar peranan membaca soalan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai bacaan tanpa bimbingan bagi tiga ayat; sasaran dua lancar.
 

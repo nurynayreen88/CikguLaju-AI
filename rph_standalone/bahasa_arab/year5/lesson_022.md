@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** حليب، عصير، قهوة، شاي، ماء، بوظة
 **Objektif pembelajaran:** Murid dapat Menghasilkan satu menu ringkas dengan sekurang-kurangnya empat nama minuman yang dibaca dan dieja betul.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menghasilkan satu menu dengan sekurang-kurangnya empat nama minuman yang dibaca dan dieja betul.
 
 **Set induksi:** Guru menunjukkan contoh papan menu minuman dengan gambar dan harga rekaan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru berpandukan latihan projek bacaan halaman 37 yang menyenaraikan minuman, menerangkan cara memilih kata yang tepat sebelum menulis menu ringkas.
+**Aktiviti 1 — Pilih kosa kata minuman daripada bacaan:** Guru berpandukan latihan projek bacaan halaman 37 yang menyenaraikan minuman, menerangkan cara memilih kata yang tepat sebelum menulis menu ringkas.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan menghasilkan satu menu gambar minuman dengan sekurang-kurangnya empat kata Arab; murid membaca menu kepada pasangan.
+**Aktiviti 2 — Hasilkan dan baca menu minuman:** Murid berpasangan menghasilkan satu menu gambar minuman dengan sekurang-kurangnya empat kata Arab; murid membaca menu kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai sekurang-kurangnya empat kata dibaca serta dipadankan gambar dengan tepat.
 

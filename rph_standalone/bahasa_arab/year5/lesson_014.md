@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** حليب، خضراوات، ذرة، زيت
 **Objektif pembelajaran:** Murid dapat Mengenal pasti sekurang-kurangnya 3 daripada 4 bunyi awal dalam perkataan yang didengar.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid mengenal pasti sekurang-kurangnya 3 daripada 4 bunyi awal dalam perkataan yang didengar.
 
 **Set induksi:** Guru memperdengarkan dua kata حليب dan خضراوات tanpa teks supaya murid membezakan bunyi awal.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut empat kosa kata latihan halaman 30 secara rawak. Murid mengenal bunyi huruf awal menggunakan kad jawapan dan guru menerangkan kesalahan makhraj.
+**Aktiviti 1 — Kenal bunyi awal melalui pendengaran:** Guru menyebut empat kosa kata latihan halaman 30 secara rawak. Murid mengenal bunyi huruf awal menggunakan kad jawapan dan guru menerangkan kesalahan makhraj.
 
-**Aktiviti 2 — Aplikasi murid:** Kumpulan murid bermain dengar-tunjuk: seorang menyebut kata yang dipilih guru dan rakan mengangkat huruf yang sepadan.
+**Aktiviti 2 — Permainan dengar dan tunjuk huruf:** Kumpulan murid bermain dengar-tunjuk: seorang menyebut kata yang dipilih guru dan rakan mengangkat huruf yang sepadan.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod tiga daripada empat respons pengecaman bunyi yang tepat.
 

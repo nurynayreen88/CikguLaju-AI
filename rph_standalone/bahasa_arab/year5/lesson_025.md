@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** ماذا تشتري؟ أشتري الماء. ماذا تبيع؟ أبيع العصير.
 **Objektif pembelajaran:** Murid dapat Membaca sekurang-kurangnya tiga daripada empat pertuturan dialog jual beli dengan intonasi tepat.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 pertuturan dialog jual beli dengan intonasi tepat.
 
 **Set induksi:** Guru menunjukkan situasi gerai makanan dan meminta murid meneka penjual serta pembeli.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk dialog bertanya membeli/menjual pada halaman 42, membimbing bacaan ماذا تشتري؟ dan ماذا تبيع؟ bersama contoh respons.
+**Aktiviti 1 — Baca dialog membeli dan menjual:** Guru merujuk dialog bertanya membeli/menjual pada halaman 42, membimbing bacaan ماذا تشتري؟ dan ماذا تبيع؟ bersama contoh respons.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan melakonkan penjual dan pembeli menggunakan kad dialog dua warna, membaca dan menukar peranan selepas dua pusingan.
+**Aktiviti 2 — Lakonkan penjual dan pembeli:** Murid berpasangan melakonkan penjual dan pembeli menggunakan kad dialog dua warna, membaca dan menukar peranan selepas dua pusingan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat pertuturan bacaan dengan sebutan serta intonasi yang sesuai.
 

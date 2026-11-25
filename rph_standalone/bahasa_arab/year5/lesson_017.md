@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** أرز، سمك، دجاج، لحم، خضراوات، عصير
 **Objektif pembelajaran:** Murid dapat Menuturkan sekurang-kurangnya lima daripada enam nama makanan atau minuman dengan betul.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menuturkan sekurang-kurangnya 5 daripada 6 nama makanan atau minuman dengan betul.
 
 **Set induksi:** Guru menunjukkan menu ringkas makanan dan meminta murid meneka nama Arab bagi nasi serta ikan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أستمع وأردد Buku Teks halaman 32 untuk menyebut أرز، سمك، دجاج، لحم، خضراوات، عصير; murid mendengar, mengulang dan memadankan gambar.
+**Aktiviti 1 — Dengar enam nama makanan dan minuman:** Guru menggunakan latihan أستمع وأردد Buku Teks halaman 32 untuk menyebut أرز، سمك، دجاج، لحم، خضراوات، عصير; murid mendengar, mengulang dan memadankan gambar.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan mengambil kad menu rawak, menyebut perkataan yang dipilih dan membetulkan sebutan dengan panduan guru.
+**Aktiviti 2 — Cabut kad menu dan sebut perkataan:** Murid berpasangan mengambil kad menu rawak, menyebut perkataan yang dipilih dan membetulkan sebutan dengan panduan guru.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai lima daripada enam sebutan kosa kata yang tepat.
 

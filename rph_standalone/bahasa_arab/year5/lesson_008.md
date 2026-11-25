@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** ما شكل الصحن؟ شكل الصحن بيضاوي، ما شكل الفرن؟ شكل الفرن مربع.
 **Objektif pembelajaran:** Murid melafaz dua pasangan soalan-jawapan dengan tekanan dan intonasi sesuai.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid melafazkan dua pasangan soal jawab dengan tekanan dan intonasi sesuai.
 
 **Set induksi:** Guru menunjukkan gambar pinggan dan ketuhar, kemudian menyebut ما شكل الصحن؟ dengan intonasi bertanya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan dialog bentuk peralatan buku halaman 15, memodelkan jeda dan nada tanya/jawab; murid meniru dua pasangan ayat.
+**Aktiviti 1 — Ajuk intonasi dialog bentuk peralatan:** Guru menggunakan dialog bentuk peralatan buku halaman 15, memodelkan jeda dan nada tanya/jawab; murid meniru dua pasangan ayat.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan memilih kad bentuk pinggan dan ketuhar; seorang bertanya ما شكل ...? manakala rakan menjawab dengan بيضاوي atau مربع.
+**Aktiviti 2 — Soal jawab ما شكل ... berdasarkan kad:** Murid berpasangan memilih kad bentuk pinggan dan ketuhar; seorang bertanya ما شكل ...? manakala rakan menjawab dengan بيضاوي atau مربع.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat respons lisan, menanda ≥3 sebutan dengan intonasi tepat.
 

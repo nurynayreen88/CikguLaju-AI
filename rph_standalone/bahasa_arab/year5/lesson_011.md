@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أطبخ الأرز في القدر، أنا أرتب الكوب على الرف (ayat kedua ialah latihan pengayaan guru).
 **Objektif pembelajaran:** Murid menulis dua ayat mudah secara tepat dengan susunan perkataan yang betul.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid menulis dua ayat mudah berkaitan dapur dengan susunan perkataan betul.
 
 **Set induksi:** Guru menunjukkan jalur kata أطبخ / الأرز / في القدر daripada latihan penulisan buku halaman 16.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan tulisan أطبخ الأرز في القدر berdasarkan buku halaman 16, memberi perhatian pada jarak perkataan dan arah kanan-ke-kiri.
+**Aktiviti 1 — Model tulisan ayat memasak:** Guru memodelkan tulisan أطبخ الأرز في القدر berdasarkan buku halaman 16, memberi perhatian pada jarak perkataan dan arah kanan-ke-kiri.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun jalur kata, menyalin dua ayat dapur dan melabel gambar yang sepadan.
+**Aktiviti 2 — Susun jalur kata dan tulis dua ayat:** Murid menyusun jalur kata, menyalin dua ayat dapur dan melabel gambar yang sepadan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak dua ayat untuk ejaan dan susunan; sasaran dua dengan sedikit bimbingan.
 

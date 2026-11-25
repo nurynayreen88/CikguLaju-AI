@@ -5,13 +5,13 @@
 **Kod SK/SP:** 3.2 / 3.2.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid menulis sekurang-kurangnya 4 daripada 5 nama peralatan موقد، ملعقة، مقلاة، شوكة، ثلاجة dengan ejaan dan sambungan huruf yang betul.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 4 daripada 5 nama peralatan dengan ejaan dan sambungan huruf betul.
 
 **Set induksi:** Guru menyusun huruf س ك ي ن secara bercampur; murid menjangka perkataan yang akan dibina.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menggunakan latihan menulis buku teks halaman 10 untuk memodelkan موقد، ملعقة، مقلاة dan شوكة; murid menjejak bentuk huruf, menyalin dan menyemak tulisan mengikut arah kanan-ke-kiri.
+**Aktiviti 1 — Jejak dan salin nama peralatan dapur:** Guru menggunakan latihan menulis buku teks halaman 10 untuk memodelkan موقد، ملعقة، مقلاة dan شوكة; murid menjejak bentuk huruf, menyalin dan menyemak tulisan mengikut arah kanan-ke-kiri.
 
-**Aktiviti 2 — Amali murid:** Murid menulis lima kosa kata pada kad gambar, kemudian bertukar kad untuk semak ejaan berpandukan buku teks.
+**Aktiviti 2 — Tulis lima kata pada kad gambar:** Murid menulis lima kosa kata pada kad gambar, kemudian bertukar kad untuk semak ejaan berpandukan buku teks.
 
 **Pengukuhan / PBD:** Guru menyemak lima perkataan untuk ejaan, sambungan dan titik yang tepat.
 

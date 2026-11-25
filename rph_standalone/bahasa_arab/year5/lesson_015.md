@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** خروف، حصان، زرافة، ذباب
 **Objektif pembelajaran:** Murid dapat Membaca sekurang-kurangnya tiga daripada empat kata contoh latihan huruf serupa dengan sebutan tepat.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 kata contoh dengan sebutan tepat.
 
 **Set induksi:** Guru memaparkan gambar haiwan daripada latihan fonetik, dan murid mengenal bunyi awal huruf yang sama dengan perkataan makanan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan bacaan kata خروف، حصان، زرافة، ذباب daripada latihan membaca halaman 31; murid menandai huruf serupa sebelum membaca secara individu.
+**Aktiviti 1 — Tanda huruf serupa dalam kata haiwan:** Guru memodelkan bacaan kata خروف، حصان، زرافة، ذباب daripada latihan membaca halaman 31; murid menandai huruf serupa sebelum membaca secara individu.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun kad bunyi kepada kata contoh dan membaca dengan tepat. Tema contoh fonetik adalah haiwan, **bukan** didakwa kosa kata makanan.
+**Aktiviti 2 — Susun kad bunyi dan baca kata:** Murid menyusun kad bunyi kepada kata contoh dan membaca dengan tepat. Tema contoh fonetik adalah haiwan, **bukan** didakwa kosa kata makanan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai bacaan tiga daripada empat perkataan dengan makhraj dan huruf yang tepat.
 
