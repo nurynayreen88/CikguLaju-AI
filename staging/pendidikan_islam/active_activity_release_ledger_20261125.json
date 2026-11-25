@@ -13,7 +13,7 @@
     }
   ],
   "total_active": 698,
-  "staged_unique_reported": 656,
+  "staged_unique_reported": 686,
   "live_editorial_count": 0,
   "release_gate": "Review original DSKP/textbook/mushaf evidence and Jawi, confirm native output, then promote only approved records. Mark LIVE only after deployment and authenticated download verification.",
   "wave1": [
@@ -213,55 +213,44 @@
   },
   "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed.",
   "latest_verified_structural_ci": {
-    "run": 45524095256,
+    "run": 45525742302,
     "conclusion": "success",
-    "draft_count": 558,
-    "note": "Native structural render only; academic approval outstanding."
+    "draft_count": 656,
+    "note": "Native activity-only structural render; academic approval outstanding."
   },
-  "staged_unique_verified": 656,
+  "staged_unique_verified": 673,
   "staged_year_counts": {
     "2": 112,
-    "3": 135,
-    "4": 138,
-    "5": 137,
-    "6": 134
+    "3": 142,
+    "4": 147,
+    "5": 144,
+    "6": 141
   },
-  "remaining_without_draft": 42,
+  "remaining_without_draft": 12,
   "latest_editorial_batch": {
-    "batch": 35,
-    "years": {
-      "4": [
-        89,
-        105,
-        109,
-        113,
-        137,
-        141
-      ]
-    },
-    "commit": "46633d76279818c28e038f9e98f440721582420a",
+    "batch": 36,
+    "records": 17,
     "status": "QA_RENDER_PENDING"
   },
   "cross_batch_audit": {
-    "run": 45521869775,
+    "run": 45527723160,
     "status": "CI_SUCCESS",
     "summary": {
-      "status": "QA_ONLY_NOT_FOR_RUNTIME",
-      "draft_count": 489,
-      "unique_ids": 489,
+      "draft_count": 673,
+      "unique_ids": 673,
       "year_counts": {
         "2": 112,
-        "3": 105,
-        "4": 89,
-        "5": 94,
-        "6": 89
+        "3": 140,
+        "4": 146,
+        "5": 141,
+        "6": 134
       },
-      "remaining_without_draft": 209,
+      "remaining_without_draft": 25,
       "release_eligible": 0,
       "repeat_group_counts": {
-        "body": 6,
-        "title": 43,
-        "objective": 30,
+        "body": 22,
+        "title": 63,
+        "objective": 44,
         "whole_activity": 0
       }
     }
@@ -270,5 +259,11 @@
   "latest_render_blocker": {
     "status": "RESOLVED_STRUCTURAL_CI",
     "run": 45523576114
-  }
+  },
+  "manual_source_hold_draft_count": 31,
+  "manual_source_hold_release_approved_count": 0,
+  "objective_correction_drafts": 14,
+  "objective_correction_overlap_ids": [
+    1387
+  ]
 }
