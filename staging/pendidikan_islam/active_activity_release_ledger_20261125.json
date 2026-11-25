@@ -213,10 +213,10 @@
   },
   "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed.",
   "latest_verified_structural_ci": {
-    "run": 45525742302,
+    "run": 45527723160,
     "conclusion": "success",
-    "draft_count": 656,
-    "note": "Native activity-only structural render; academic approval outstanding."
+    "draft_count": 673,
+    "note": "Activity-only Word/PDF native render, includes original activity proposal for overlapping id1387, not the subsequent objective correction."
   },
   "staged_unique_verified": 686,
   "staged_year_counts": {
@@ -285,5 +285,12 @@
   "objective_correction_drafts": 14,
   "objective_correction_overlap_ids": [
     1387
-  ]
+  ],
+  "rpt_alignment": {
+    "status": "QA_PLAN_NOT_RUNTIME",
+    "requested": "2026-11-25",
+    "authority": "Final approved RPH, validated against DSKP/textbook/mushaf",
+    "scope": "PI KSSR T2–T6, both groups A/B; update activity notes and corrected objectives only where needed; preserve SK/SP, PdP IDs/order, durations and calendar, existing cover/design.",
+    "release_gate": "Generate RPT changes from approved RPH only; compare actual exported RPT and RPH; no production writes yet."
+  }
 }
