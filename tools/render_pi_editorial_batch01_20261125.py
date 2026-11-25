@@ -108,6 +108,30 @@ def main():
             baseline_path.unlink(missing_ok=True)
             row_hits=[]
             extra_changes=[]
+            # The final native document formatter can rebuild SK directly
+            # from state.sk_text/grouped_sk_texts. Correct the isolated
+            # render state as well as the rows, retaining the source baseline.
+            render_state=dict(state)
+            if item.get("corrected_sk_text"):
+                assert len(item["sk_codes"])==1
+                code=normalized(item["sk_codes"][0])
+                assert normalized(state.get("sk_code"))==code
+                assert [normalized(x) for x in state.get("grouped_sk_codes",[])]==[code]
+                original_sk=normalized(item["original_sk_text"])
+                corrected_sk=normalized(item["corrected_sk_text"])
+                def correct_state_sk(value):
+                    actual=normalized(value)
+                    for prefix in ("",code+" "):
+                        for old,new in ((original_sk,corrected_sk),
+                                        (original_sk[len(code)+1:],corrected_sk[len(code)+1:])):
+                            if actual==prefix+old:
+                                # Keep the source representation: code already
+                                # present or description alone.
+                                return jawi_display_digits(prefix+new)
+                    raise AssertionError((item["year"],item["pdp"],"unexpected state SK",value))
+                render_state["sk_text"]=correct_state_sk(state["sk_text"])
+                render_state["grouped_sk_texts"]=[correct_state_sk(x) for x in state["grouped_sk_texts"]]
+                extra_changes.append((item["original_sk_text"],item["corrected_sk_text"]))
             expected_objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
             expected_sp=normalized(rows.get("STANDARD PEMBELAJARAN"))
             def replace_activity(s,current,boundary):
@@ -172,8 +196,8 @@ def main():
             tag=f"PI_T{item['year']}_PDP{item['pdp']:03d}"
             unique="pi_editorial_"+uuid.uuid4().hex[:16]
             try:
-                word=Path(runtime.create_word_file(state,native,unique))
-                pdf=Path(runtime.create_pdf_file(state,native,unique+"p"))
+                word=Path(runtime.create_word_file(render_state,native,unique))
+                pdf=Path(runtime.create_pdf_file(render_state,native,unique+"p"))
                 document=Document(str(word))
                 changed_cells=compare_word_layout(baseline_document,document,[title for title,body in item["activities"]],item["objective"],corrected_objective,extra_changes)
                 whole="\n".join(c.text for t in document.tables for r in t.rows for c in r.cells)
