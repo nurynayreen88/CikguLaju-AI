@@ -129,9 +129,13 @@ def main():
                     if not str(s.get("rph_teacher_reflection") or "").strip():
                         related["REFLEKSI"]=item.get("corrected_auto_reflection")
                     if item.get("corrected_sk_text"):
-                        current_sk=normalized(current.get("STANDARD KANDUNGAN"))
-                        assert current_sk in {normalized(item["original_sk_text"]),normalized(item["corrected_sk_text"])}
-                        related["STANDARD KANDUNGAN"]=item["corrected_sk_text"]
+                        # Native row dictionaries and final document rows may
+                        # use different keys for SK. Match the exact verified
+                        # SK text, never a broad or fuzzy substitution.
+                        expected_sk={normalized(item["original_sk_text"]),normalized(item["corrected_sk_text"])}
+                        sk_keys=[key for key,value in current.items() if normalized(value) in expected_sk]
+                        assert len(sk_keys)==1, (item["year"],item["pdp"],boundary,"SK exact match unavailable or ambiguous",[(key,value) for key,value in current.items() if "KANDUNGAN" in str(key).upper() or str(key).upper()=="SK"],list(current))
+                        related[sk_keys[0]]=item["corrected_sk_text"]
                     for key,value in related.items():
                         if value and key in current:
                             if normalized(current[key])!=normalized(value):
