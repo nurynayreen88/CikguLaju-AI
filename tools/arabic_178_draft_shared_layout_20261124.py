@@ -25,12 +25,21 @@ BANK = ROOT / "audits/arabic_draft_y4_y6_sp_candidate_bank_20261124.json"
 INDEX = ROOT / "rpt_2027/bahasa_arab/rpt_2027_KUMPULAN_A_INDEKS_PDP_DRAF.csv"
 COUNTS = {4: 58, 5: 60, 6: 60}
 
-def render(row, bank, dest, *, teacher=None, manual_reflection='', include_candidate=True):
+def render(row, bank, dest, *, teacher=None, manual_reflection='', include_candidate=True, sk_candidate=None, arabic_translation=None):
     year, pdp = int(row["tahun"]), int(row["pdp"])
     path = SOURCE / f"year{year}/lesson_{pdp:03d}.md"
     raw = path.read_text(encoding="utf-8")
     _, f = fields(raw)
     assert display_sk_sp(first(f, "DSKP SK/SP", "Kod SK/SP", "SK/SP cadangan")) == f"{row['sk']} / {row['sp']}"
+    if arabic_translation is not None:
+        assert arabic_translation["year"] == year and arabic_translation["pdp"] == pdp
+        data = path.read_bytes()
+        assert hashlib.sha1(b"blob " + str(len(data)).encode() + b"\x00" + data).hexdigest() == arabic_translation["source_git_blob"]
+        t = arabic_translation["translation"]
+        for key, value in list(f.items()):
+            if key.startswith("Aktiviti 1") or key.startswith("Aktiviti 2"):
+                del f[key]
+        f.update({"Unit":t["unit"],"Fokus PdP":t["focus"],"Objektif PdP":t["objective"],"Kriteria kejayaan":t["criterion"],"Set induksi":t["intro"],"Aktiviti 1 — "+t["title1"]:t["activity1"],"Aktiviti 2 — "+t["title2"]:t["activity2"],"Pengukuhan":t["assessment"],"Penutup":t["close"],"BBM":t["materials"],"Refleksi guru":t["reflection"]})
     statement = bank[str(year)]["entries"][row["sp"]]["text"] if include_candidate else ""
     cls, dt, tm, pupils, _ = teacher or ("", "", "", "", "")
     from datetime import date
@@ -62,12 +71,14 @@ def render(row, bank, dest, *, teacher=None, manual_reflection='', include_candi
         p.paragraph_format.tab_stops.add_tab_stop(Cm(3.1))
         _paragraph(p, f"{label}:\t{value}", bold=i == 0, size=11)
     details = [
-        ("معيار المحتوى", row["sk"]),
+        ("معيار المحتوى", (row["sk"] + " " + sk_candidate).strip() if sk_candidate else row["sk"]),
         ("معيار التعلّم", (row["sp"] + " " + statement).strip()),
         ("هدف التعلّم", first(f, "Objektif PdP", "Objektif pembelajaran", "Objektif")),
         ("معيار النجاح", first(f, "Kriteria kejayaan")),
     ]
     vocabulary = first(f, "Kosa kata / ayat")
+    if arabic_translation is not None and "vocabulary" in arabic_translation["translation"]:
+        vocabulary = arabic_translation["translation"]["vocabulary"]
     if vocabulary:
         details.append(("المفردات", vocabulary))
     _table(doc, (4.3, 14.4), details)
@@ -104,7 +115,7 @@ def render(row, bank, dest, *, teacher=None, manual_reflection='', include_candi
         reflection = manual_reflection
     footer = [
         ("الوسائل التعليمية", first(f, "BBM")),
-        ("المرجع", row["halaman_buku"]),
+        ("المرجع", row["halaman_buku"] if arabic_translation is None else row["halaman_buku"].replace(" & ", " و ").replace("hlm", "الصفحة").translate(numerals)),
         ("تأمّل المعلّم", reflection),
     ]
     _table(doc, (4.3, 14.4), footer)
@@ -120,7 +131,7 @@ def render(row, bank, dest, *, teacher=None, manual_reflection='', include_candi
                         sz = rpr.find(qn("w:szCs"))
                         if sz is not None:
                             sz.set(qn("w:val"), "18")
-    doc.core_properties.comments = ("QA ONLY; SP transcription candidate; SK statement and academic approval pending." if include_candidate else "Existing provisional source; no academic status change.")
+    doc.core_properties.comments = ("QA ONLY; SK/SP transcription candidates; academic approval pending." if sk_candidate else ("QA ONLY; SP transcription candidate; SK statement and academic approval pending." if include_candidate else "Existing provisional source; no academic status change."))
     doc.save(dest)
     check = Document(dest)
     displayed = "\n".join(c.text for t in check.tables for r in t.rows for c in r.cells)
@@ -137,7 +148,7 @@ def render(row, bank, dest, *, teacher=None, manual_reflection='', include_candi
     if reflection != original_reflection and not manual_reflection:
         assert evidence.rstrip(".") in reflection
     assert [r.cells[2].text for r in check.tables[0].rows] == [cls or "", lesson_date, tm or "", pupils or ""]
-    return {"year":year, "pdp":pdp, "sk":row["sk"], "sp":row["sp"], "source_sha256":hashlib.sha256(raw.encode()).hexdigest(), "sp_candidate":True, "sk_description_pending":True, "activity_titles":activity_titles, "reflection_linked":reflection != original_reflection, "ready":False}
+    return {"year":year, "pdp":pdp, "sk":row["sk"], "sp":row["sp"], "source_sha256":hashlib.sha256(raw.encode()).hexdigest(), "sp_candidate":True, "sk_description_pending":not bool(sk_candidate), "activity_titles":activity_titles, "reflection_linked":reflection != original_reflection, "ready":False}
 
 def main():
     import argparse
