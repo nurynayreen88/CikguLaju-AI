@@ -25,8 +25,10 @@ jobs:
           CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
       - run: python -m tools.plan_pi_rpt_final_20261125
       - run: python -m tools.test_pi_no_duration_display_20261125
+      - run: python -m pip install reportlab arabic-reshaper python-bidi
+      - run: python -m tools.render_pi_final_rpt_20261125
       - uses: actions/upload-artifact@v4
         with:
           name: pi-rpt-final-698-source
-          path: qa/pi-rpt-final-source/*.json
+          path: qa/pi-rpt-final-source/*
           retention-days: 7
