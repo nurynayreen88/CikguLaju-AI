@@ -14,7 +14,8 @@
   "sources": {
     "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/023-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-ASAS-3M-19-5-2016-1.pdf",
     "textbook": "https://anyflip.com/smjjv/svvv/basic",
-    "activity_book": "References printed in textbook; independent copy not yet verified"
+    "activity_book": "References printed in textbook; independent copy not yet verified",
+    "dskp_audit": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
   },
   "notes": "Draft sequence, not connected to production. Confirm complete SK/SP descriptions, annual pacing, format and source audit before publication. Activities and criteria are original pedagogical adaptations.",
   "lessons": [
@@ -36,7 +37,11 @@
       "closure": "Tunjukkan satu arahan yang telah dikuasai.",
       "activity_book_ref": "BA 1",
       "assessment": "Rekod pencapaian: 2 daripada 3 arahan guru satu langkah. Catat jenis bantuan.",
-      "reflection_criterion": "2 daripada 3 arahan guru satu langkah"
+      "reflection_criterion": "2 daripada 3 arahan guru satu langkah",
+      "sk": [
+        "1.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "002",
@@ -56,7 +61,11 @@
       "closure": "Bunyikan dua kad pilihan.",
       "activity_book_ref": "BA 2",
       "assessment": "Rekod pencapaian: 4 daripada 6 suku kata KV dibunyikan. Catat jenis bantuan.",
-      "reflection_criterion": "4 daripada 6 suku kata KV dibunyikan"
+      "reflection_criterion": "4 daripada 6 suku kata KV dibunyikan",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "003",
@@ -76,7 +85,11 @@
       "closure": "Pilih satu kad dan bunyikan tanpa rentak.",
       "activity_book_ref": "BA 3",
       "assessment": "Rekod pencapaian: 4 daripada 6 suku kata baharu dibunyikan. Catat jenis bantuan.",
-      "reflection_criterion": "4 daripada 6 suku kata baharu dibunyikan"
+      "reflection_criterion": "4 daripada 6 suku kata baharu dibunyikan",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "004",
@@ -96,7 +109,11 @@
       "closure": "Pilih satu hasil surihan untuk ditunjukkan.",
       "activity_book_ref": "BA 4",
       "assessment": "Rekod pencapaian: 3 daripada 4 suku kata disurih mengikut bentuk. Catat jenis bantuan.",
-      "reflection_criterion": "3 daripada 4 suku kata disurih mengikut bentuk"
+      "reflection_criterion": "3 daripada 4 suku kata disurih mengikut bentuk",
+      "sk": [
+        "3.2"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "005",
@@ -116,7 +133,11 @@
       "closure": "Kongsi satu nama secara sukarela.",
       "activity_book_ref": null,
       "assessment": "Rekod pencapaian: 2 nama ahli keluarga diberikan. Catat jenis bantuan.",
-      "reflection_criterion": "2 nama ahli keluarga diberikan"
+      "reflection_criterion": "2 nama ahli keluarga diberikan",
+      "sk": [
+        "4.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "006",
@@ -136,7 +157,11 @@
       "closure": "Ulang satu arahan berjimat sebelum keluar kelas.",
       "activity_book_ref": "BA 5",
       "assessment": "Rekod pencapaian: 2 arahan berjimat dilafazkan. Catat jenis bantuan.",
-      "reflection_criterion": "2 arahan berjimat dilafazkan"
+      "reflection_criterion": "2 arahan berjimat dilafazkan",
+      "sk": [
+        "1.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "007",
@@ -156,7 +181,11 @@
       "closure": "Pilih hiasan yang disukai dan berikan respons.",
       "activity_book_ref": "BA 6",
       "assessment": "Rekod pencapaian: 2 daripada 3 respons berkaitan cerita betul. Catat jenis bantuan.",
-      "reflection_criterion": "2 daripada 3 respons berkaitan cerita betul"
+      "reflection_criterion": "2 daripada 3 respons berkaitan cerita betul",
+      "sk": [
+        "1.2"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "008",
@@ -176,7 +205,11 @@
       "closure": "Batang satu perkataan tanpa bantuan gambar.",
       "activity_book_ref": "BA 7",
       "assessment": "Rekod pencapaian: 3 daripada 5 perkataan V+KV dibatang. Catat jenis bantuan.",
-      "reflection_criterion": "3 daripada 5 perkataan V+KV dibatang"
+      "reflection_criterion": "3 daripada 5 perkataan V+KV dibatang",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "009",
@@ -196,7 +229,11 @@
       "closure": "Baca satu perkataan pilihan kepada rakan.",
       "activity_book_ref": "BA 8",
       "assessment": "Rekod pencapaian: 4 daripada 5 perkataan KV+KV dibatang. Catat jenis bantuan.",
-      "reflection_criterion": "4 daripada 5 perkataan KV+KV dibatang"
+      "reflection_criterion": "4 daripada 5 perkataan KV+KV dibatang",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "010",
@@ -216,7 +253,11 @@
       "closure": "Pilih satu perkataan yang paling jelas.",
       "activity_book_ref": "BA 9–10",
       "assessment": "Rekod pencapaian: 3 daripada 4 perkataan disurih dengan bentuk boleh dikenal. Catat jenis bantuan.",
-      "reflection_criterion": "3 daripada 4 perkataan disurih dengan bentuk boleh dikenal"
+      "reflection_criterion": "3 daripada 4 perkataan disurih dengan bentuk boleh dikenal",
+      "sk": [
+        "3.2"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "011",
@@ -236,7 +277,11 @@
       "closure": "Pilih satu pekerjaan dan nyatakan tugasnya dengan sokongan.",
       "activity_book_ref": null,
       "assessment": "Rekod pencapaian: 2 respons pekerjaan ahli keluarga atau watak diberikan. Catat jenis bantuan.",
-      "reflection_criterion": "2 respons pekerjaan ahli keluarga atau watak diberikan"
+      "reflection_criterion": "2 respons pekerjaan ahli keluarga atau watak diberikan",
+      "sk": [
+        "4.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "012",
@@ -256,7 +301,11 @@
       "closure": "Nyatakan satu cara membantu rakan.",
       "activity_book_ref": null,
       "assessment": "Rekod pencapaian: 2 peristiwa cerita diceritakan semula mengikut urutan. Catat jenis bantuan.",
-      "reflection_criterion": "2 peristiwa cerita diceritakan semula mengikut urutan"
+      "reflection_criterion": "2 peristiwa cerita diceritakan semula mengikut urutan",
+      "sk": [
+        "1.2"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "013",
@@ -276,7 +325,11 @@
       "closure": "Baca satu perkataan tiga suku kata.",
       "activity_book_ref": "BA 11–12",
       "assessment": "Rekod pencapaian: 3 daripada 5 perkataan KV+KV+KV dibatang. Catat jenis bantuan.",
-      "reflection_criterion": "3 daripada 5 perkataan KV+KV+KV dibatang"
+      "reflection_criterion": "3 daripada 5 perkataan KV+KV+KV dibatang",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "014",
@@ -296,7 +349,11 @@
       "closure": "Semak satu perkataan dengan kad asal.",
       "activity_book_ref": "BA 13–14",
       "assessment": "Rekod pencapaian: 3 daripada 4 perkataan disalin dengan urutan huruf betul. Catat jenis bantuan.",
-      "reflection_criterion": "3 daripada 4 perkataan disalin dengan urutan huruf betul"
+      "reflection_criterion": "3 daripada 4 perkataan disalin dengan urutan huruf betul",
+      "sk": [
+        "3.2"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "015",
@@ -318,7 +375,51 @@
       "closure": "Murid pilih satu perkataan yang ingin diulang.",
       "activity_book_ref": null,
       "assessment": "Rekod pencapaian: 4 daripada 6 perkataan pelbagai pola dibatang. Catat jenis bantuan.",
-      "reflection_criterion": "4 daripada 6 perkataan pelbagai pola dibatang"
+      "reflection_criterion": "4 daripada 6 perkataan pelbagai pola dibatang",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     }
-  ]
+  ],
+  "content_standards": {
+    "1.1": "Arahan lisan dalam situasi berbeza.",
+    "1.2": "Pemahaman cerita dan penceritaan semula.",
+    "2.1": "Gabungan dan ejaan suku kata.",
+    "2.2": "Bacaan mekanis.",
+    "3.1": "Tulisan suku kata dan perkataan.",
+    "3.2": "Latihan tulisan mekanis.",
+    "3.3": "Penghasilan frasa bertulis.",
+    "3.4": "Penghasilan ayat tunggal.",
+    "4.1": "Komunikasi tentang keluarga."
+  },
+  "learning_standards": {
+    "1.1.1(i)": "Respons kepada arahan guru.",
+    "1.1.1(ii)": "Respons kepada arahan rakan.",
+    "1.1.2": "Dengar dan ucap arahan mengikut situasi.",
+    "1.2.1": "Respons kepada cerita lisan dengan satu gambar.",
+    "1.2.2": "Cerita semula bahan yang didengar berbantukan media.",
+    "2.1.1": "Eja dan bunyikan KV.",
+    "2.1.2": "Eja serta gabungkan V+KV.",
+    "2.1.3": "Eja serta gabungkan KV+KV.",
+    "2.1.4": "Eja serta gabungkan KV+KV+KV.",
+    "2.1.5": "Kenal pasti suku kata permulaan dan penghujung.",
+    "2.2.1": "Baca kata dua suku kata terbuka.",
+    "2.2.2": "Baca kata tiga suku kata terbuka.",
+    "2.2.3": "Baca ayat tunggal bersuku kata terbuka.",
+    "2.2.4": "Baca ayat bersuku kata terbuka dengan penghubung dan.",
+    "3.1.1": "Tulis KV.",
+    "3.1.2": "Tulis kata dua suku kata terbuka.",
+    "3.1.3": "Tulis kata tiga suku kata terbuka.",
+    "3.2.1": "Jejak tulisan KV, kata dan ayat.",
+    "3.2.2": "Salin KV, kata dan ayat.",
+    "3.3.1": "Salin frasa berkataan dua atau tiga suku kata.",
+    "3.3.2": "Tulis frasa berkataan dua atau tiga suku kata.",
+    "3.4.1": "Salin ayat tunggal berkataan dua atau tiga suku kata.",
+    "3.4.2": "Tulis ayat tunggal berkataan dua atau tiga suku kata.",
+    "4.1.1(i)": "Soal jawab nama ahli keluarga.",
+    "4.1.1(ii)": "Soal jawab pekerjaan ahli keluarga.",
+    "4.1.1(iii)": "Soal jawab kegiatan masa lapang ahli keluarga."
+  },
+  "standard_text_kind": "Huraian ringkas parafrasa untuk audit, bukan petikan rasmi"
 }
