@@ -1,0 +1,446 @@
+{
+  "status": "QA_ONLY_NOT_FOR_RUNTIME",
+  "as_of": "2026-11-25",
+  "ci_run": 45506086211,
+  "ci_jobs": [
+    {
+      "name": "native-editorial-render",
+      "conclusion": "success"
+    },
+    {
+      "name": "actual-activity-audit",
+      "conclusion": "success"
+    }
+  ],
+  "total_active": 698,
+  "staged_unique_reported": 698,
+  "live_editorial_count": 0,
+  "release_gate": "Review original DSKP/textbook/mushaf evidence and Jawi, confirm native output, then promote only approved records. Mark LIVE only after deployment and authenticated download verification.",
+  "wave1": [
+    {
+      "id": 1276,
+      "year": 2,
+      "pdp": 2,
+      "unit": "Akidah",
+      "status": "DSKP_VISUAL_REVIEWED_FINAL_CONTENT_AND_RENDER_PENDING",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          56,
+          57,
+          59
+        ],
+        "pdf": [
+          66,
+          67,
+          69
+        ],
+        "expected_sp": [
+          "2.1.1",
+          "2.1.2"
+        ],
+        "note": "Book lists 20 wajib and meanings, exercise naming and matching five; choose activity with exact textbook task."
+      },
+      "native_review": {
+        "sp": [
+          "2.1.1",
+          "2.1.2"
+        ],
+        "criterion": "موريد داڤت مثنارايکن صيفت واجب الله دان مڽاتاکن مقصودڽ دڠن بتول.",
+        "assessment": "Semak padanan sifat wajib dengan makna melalui latihan buku teks.",
+        "note": "Activity and objective align with observed native standards; use textbook matching exercise.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
+      },
+      "dskp_visual_evidence": {
+        "drive_id": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+        "printed_page": 27,
+        "pdf_page": 39,
+        "reviewed": true,
+        "note": "SK2.1 matches concept; SP2.1.2 DSKP says meaning of each attribute, native text abridged. Activity fits wajib focus."
+      }
+    },
+    {
+      "id": 1277,
+      "year": 2,
+      "pdp": 3,
+      "unit": "Jawi",
+      "status": "DSKP_VISUAL_REVIEWED_FINAL_CONTENT_AND_RENDER_PENDING",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          37,
+          38
+        ],
+        "pdf": [
+          47,
+          48
+        ],
+        "expected_sp": [
+          "6.1.1",
+          "6.1.2"
+        ],
+        "note": "Kampungku Permai illustrated occupations and Alamku Damai examples; use suitable three-syllable examples selected from book, not all illustrated words."
+      },
+      "native_review": {
+        "sp": [
+          "6.1.1",
+          "6.1.2"
+        ],
+        "criterion": "موريد داڤت ممباچ دان ممبينا ڤرکاتاءن تيݢ سوکو کات دڠن بتول.",
+        "assessment": "Semak bacaan dan binaan perkataan tiga suku kata secara individu.",
+        "note": "Choose examples from textbook, do not invent page content.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
+      },
+      "dskp_visual_evidence": {
+        "drive_id": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+        "printed_page": 45,
+        "pdf_page": 57,
+        "reviewed": true,
+        "note": "DSKP SK6.1 and SP6.1.1/2 include three OR MORE syllables and correct performance; native SP is shortened to three. Three-syllable focus is valid, but restore exact SP wording before release."
+      }
+    },
+    {
+      "id": 1279,
+      "year": 2,
+      "pdp": 5,
+      "unit": "Akidah",
+      "status": "HOLD_SOURCE_SCOPE",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          56,
+          57,
+          58,
+          59
+        ],
+        "pdf": [
+          66,
+          67,
+          68,
+          69
+        ],
+        "expected_sp": [
+          "2.1.1",
+          "2.1.2"
+        ],
+        "note": "RPT activity names sifat mustahil; these inspected textbook pages show 20 wajib and application only. Do not mark mustahil wrong; reconcile scope of RPT and DSKP before release."
+      },
+      "native_review": {
+        "sp": [
+          "2.1.1",
+          "2.1.2"
+        ],
+        "note": "HOLD: RPT focuses on sifat mustahil but inspected pages focus on sifat wajib; reconcile scope before any release.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
+      },
+      "dskp_visual_evidence": {
+        "drive_id": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+        "printed_page": 27,
+        "pdf_page": 39,
+        "reviewed": true,
+        "note": "DSKP general attributes, does not explicitly require mustahil; textbook evidence is wajib. Retain hold."
+      }
+    },
+    {
+      "id": 1280,
+      "year": 2,
+      "pdp": 6,
+      "unit": "Jawi",
+      "status": "DSKP_VISUAL_REVIEWED_FINAL_CONTENT_AND_RENDER_PENDING",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          37,
+          38
+        ],
+        "pdf": [
+          47,
+          48
+        ],
+        "expected_sp": [
+          "6.1.1",
+          "6.1.2"
+        ],
+        "note": "Same target as PdP3; use segmentation and matching, distinct from initial reading."
+      },
+      "native_review": {
+        "sp": [
+          "6.1.1",
+          "6.1.2"
+        ],
+        "criterion": "موريد داڤت مڽوسون تيݢ سوکو کات دان ممباچ ڤرکاتاءن يڠ دبينا دڠن بتول.",
+        "assessment": "Semak susunan tiga suku kata dan bacaan hasil binaan secara individu.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
+      },
+      "dskp_visual_evidence": {
+        "drive_id": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+        "printed_page": 45,
+        "pdf_page": 57,
+        "reviewed": true,
+        "note": "Same as PdP3; restore exact SP wording incl. or more and correctness; three syllables remains lesson focus."
+      }
+    },
+    {
+      "id": 1285,
+      "year": 2,
+      "pdp": 11,
+      "unit": "Ibadah",
+      "status": "DSKP_VISUAL_REVIEWED_FINAL_CONTENT_AND_RENDER_PENDING",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          74,
+          75,
+          77
+        ],
+        "pdf": [
+          84,
+          85,
+          87
+        ],
+        "expected_sp": [
+          "3.1.1",
+          "3.1.2"
+        ],
+        "note": "Tools: clean rough objects; criteria and two conditions shown; exercise identify and explain."
+      },
+      "native_review": {
+        "sp": [
+          "3.1.1",
+          "3.1.2"
+        ],
+        "criterion": "موريد داڤت مثنارايکن الت براستنجاء سلاءين درڤد اءير دان منرڠکن شرطڽ دڠن بتول.",
+        "assessment": "Murid memilih alat yang sesuai dan menerangkan syaratnya; guru menyemak jawapan.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
+      },
+      "dskp_visual_evidence": {
+        "drive_id": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+        "printed_page": 31,
+        "pdf_page": 43,
+        "reviewed": true,
+        "note": "SK3.1 and SP3.1.1/2 match exact concept and tasks."
+      }
+    },
+    {
+      "id": 1288,
+      "year": 2,
+      "pdp": 14,
+      "unit": "Ibadah",
+      "status": "DSKP_VISUAL_REVIEWED_FINAL_CONTENT_AND_RENDER_PENDING",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          76,
+          77
+        ],
+        "pdf": [
+          86,
+          87
+        ],
+        "expected_sp": [
+          "3.1.3",
+          "3.1.4"
+        ],
+        "note": "Three wipes, new rough surface each wipe; accessible, alternative to water; use illustrated/model demonstration, no bodily demonstration."
+      },
+      "native_review": {
+        "sp": [
+          "3.1.3",
+          "3.1.4"
+        ],
+        "criterion": "موريد داڤت منجلسکن چارا دان کڤنتيڠن براستنجاء سلاءين درڤد اءير دڠن بتول.",
+        "assessment": "Susun langkah berdasarkan ilustrasi buku teks, terangkan kepentingan; tiada demonstrasi pada tubuh.",
+        "note": "Strengthen activity 2 with safe illustration/model based on inspected source pages.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
+      },
+      "dskp_visual_evidence": {
+        "drive_id": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+        "printed_page": 31,
+        "pdf_page": 43,
+        "reviewed": true,
+        "note": "SP3.1.3 explain method; SP3.1.4 analyse importance. Need specific safe illustrated method and reason, not generic discussion."
+      }
+    },
+    {
+      "id": 1296,
+      "year": 2,
+      "pdp": 22,
+      "unit": "Al-Quran",
+      "status": "DSKP_VISUAL_REVIEWED_FINAL_CONTENT_AND_RENDER_PENDING",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          1
+        ],
+        "pdf": [
+          9
+        ],
+        "expected_sp": [
+          "1.1.1"
+        ],
+        "note": "An-Nas six verses, read following teacher; note talaqqi and musyafahah. Verify exact active SP."
+      },
+      "native_review": {
+        "sp": [
+          "1.1.1",
+          "1.1.2",
+          "1.1.3"
+        ],
+        "criterion": "موريد داڤت ممباچ دان ممڤردڠرکن باچاءن سورة الناس دڠن بتول دان برتجويد.",
+        "assessment": "Semakan individu bacaan Surah an-Nas, ketepatan dan tajwid; bimbing pembetulan.",
+        "note": "Existing native criterion wrongly says hafazan; correct criterion and auto reflection. Check daily application scope against source.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
+      },
+      "dskp_visual_evidence": {
+        "drive_id": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+        "printed_page": 18,
+        "pdf_page": 30,
+        "reviewed": true,
+        "note": "SK1.1 tilawah, SP1.1.1/2 reading/talaqqi musyafahah; SP1.1.3 practice in daily life. Add application task and criterion; not hafazan."
+      }
+    },
+    {
+      "id": 1300,
+      "year": 2,
+      "pdp": 26,
+      "unit": "Al-Quran",
+      "status": "DSKP_VISUAL_REVIEWED_FINAL_CONTENT_AND_RENDER_PENDING",
+      "live": false,
+      "textbook_evidence": {
+        "printed": [
+          13
+        ],
+        "pdf": [
+          21
+        ],
+        "expected_sp": [
+          "1.3.1"
+        ],
+        "note": "An-Nas memorization six verses; teacher models, pupils practise individual/paired/group recitation; verify exact active SP and application."
+      },
+      "native_review": {
+        "sp": [
+          "1.3.1",
+          "1.3.2",
+          "1.3.3"
+        ],
+        "criterion": "موريد داڤت ممڤردڠرکن حفظن سورة الناس دڠن بتول دان برتجويد سرتا مڽاتاکن عملنڽ دالم صلاة دان کهيدوڤن هارين.",
+        "assessment": "Semak hafazan individu dan penerangan penggunaan surah dalam solat atau kehidupan harian.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
+      },
+      "dskp_visual_evidence": {
+        "drive_id": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+        "printed_page": 21,
+        "pdf_page": 33,
+        "reviewed": true,
+        "note": "SK1.3 hafazan, all three SP match; application in prayer and daily life."
+      }
+    }
+  ],
+  "source_textbook": {
+    "title": "Buku Teks Pendidikan Islam Tahun 2 KSSR Semakan",
+    "drive_id": "1AWJbiaHaPOZshcGJzmDa2t3RcqkBjHTa",
+    "publisher": "DBP for KPM, 2017",
+    "isbn": "978-983-49-1609-1",
+    "visual_review": "PDF page images inspected on 2026-11-25; source duplicate differs from initial registry file ID, no claim of binary identity"
+  },
+  "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed.",
+  "latest_verified_structural_ci": {
+    "run": 45534515175,
+    "commit": "2bc7495cabb959c98b47a33b42163a5183baa983",
+    "conclusion": "success",
+    "draft_count": 698,
+    "unique_ids": 698,
+    "objective_corrections_rendered": 14,
+    "native_pdf_one_a4_count": 698,
+    "non_target_word_layout_identical": true,
+    "note": "All 698 actual render records verified in completed job log 138937704535. Academic/visual approval and production integration remain separate."
+  },
+  "staged_unique_verified": 698,
+  "staged_year_counts": {
+    "2": 112,
+    "3": 148,
+    "4": 152,
+    "5": 144,
+    "6": 142
+  },
+  "remaining_without_draft": 0,
+  "latest_editorial_batch": {
+    "batch": 37,
+    "years": {
+      "3": [
+        53,
+        57,
+        61,
+        121,
+        125,
+        129
+      ],
+      "4": [
+        53,
+        57,
+        121,
+        125,
+        129
+      ],
+      "6": [
+        26
+      ]
+    },
+    "commit": "a07fc8ae200619dfac2a845f9bee19b6316ae003",
+    "status": "NATIVE_STRUCTURAL_CI_PASS"
+  },
+  "cross_batch_audit": {
+    "run": 45529019665,
+    "status": "CI_SUCCESS",
+    "summary": {
+      "draft_count": 698,
+      "unique_ids": 698,
+      "year_counts": {
+        "2": 112,
+        "3": 148,
+        "4": 152,
+        "5": 144,
+        "6": 142
+      },
+      "remaining_without_draft": 0,
+      "release_eligible": 0,
+      "repeat_group_counts": {
+        "body": 22,
+        "title": 67,
+        "objective": 51,
+        "whole_activity": 0
+      }
+    }
+  },
+  "manual_source_hold_count": 31,
+  "latest_render_blocker": {
+    "status": "RESOLVED_STRUCTURAL_CI",
+    "run": 45534515175
+  },
+  "manual_source_hold_draft_count": 31,
+  "manual_source_hold_release_approved_count": 0,
+  "objective_correction_drafts": 14,
+  "objective_correction_overlap_ids": [
+    1387
+  ],
+  "rpt_alignment": {
+    "status": "QA_SOURCE_ID_ALIGNMENT_PASSED",
+    "requested": "2026-11-25",
+    "authority": "Final approved RPH, validated against DSKP/textbook/mushaf",
+    "scope": "PI KSSR T2–T6, both groups A/B; update activity notes and corrected objectives only where needed; preserve SK/SP, PdP IDs/order, durations and calendar, existing cover/design.",
+    "release_gate": "Generate RPT changes from approved RPH only; compare actual exported RPT and RPH; no production writes yet.",
+    "audit_run": 45529236157,
+    "verified_records": 698,
+    "objective_changes": 14,
+    "live": false
+  },
+  "wave1_review": {
+    "status": "ORIGINAL_DSKP_VISUAL_REVIEW_COMPLETE_8_NOT_RELEASE_APPROVED",
+    "reviewed": 8,
+    "hold_source_scope": 1,
+    "criterion_proposals": 7,
+    "note": "Actual native SP codes captured; retain all source/visual release gates. For PdP22 and26 the native SP lists three codes, not just initial expected code.",
+    "dskp_visual_reviewed": 8
+  }
+}

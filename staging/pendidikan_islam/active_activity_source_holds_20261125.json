@@ -1,0 +1,222 @@
+{
+  "status": "QA_HOLD_NOT_FOR_RUNTIME",
+  "records": [
+    {
+      "id": 1473,
+      "year": 3,
+      "pdp": 87,
+      "reason": "RPT activity note mentions adab tidur but objective concerns adab menuntut ilmu; verify textbook and DSKP before drafting",
+      "source_run": 45496052502
+    },
+    {
+      "id": 1836,
+      "year": 6,
+      "pdp": 6,
+      "reason": "Objective cites Al-Shura verses 33–77; surah has 53 verses. Verify correct intended range and any following surah against source, do not guess.",
+      "source_run": 45496052502
+    },
+    {
+      "id": 1445,
+      "year": 3,
+      "pdp": 59,
+      "reason": "Objective lists invalidators 7–12 but RPT activity note lists 13–18. Check original RPT and textbook before selecting range.",
+      "source_run": 45496513559
+    },
+    {
+      "id": 1387,
+      "year": 3,
+      "pdp": 1,
+      "reason": "Native objective has Al-Kafirun range 3–1 in logical text order; may be bidi ordering, not necessarily a wrong intended range. Verify exact original RPT/mushaf and native Word/PDF display; no automatic reversal.",
+      "source_run": 45498362049
+    },
+    {
+      "id": 1391,
+      "year": 3,
+      "pdp": 5,
+      "reason": "Native objective has Al-Kafirun range 5–4 in logical text order; may be bidi ordering, not necessarily a wrong intended range. Verify exact original RPT/mushaf and native Word/PDF display; no automatic reversal.",
+      "source_run": 45498362049
+    },
+    {
+      "id": 1533,
+      "year": 3,
+      "pdp": 147,
+      "reason": "Objective and first source steps are Sunnah Rasulullah; last source step is gratitude to Allah. Review actual DSKP and textbook before retaining or changing this step.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1669,
+      "year": 4,
+      "pdp": 135,
+      "reason": "Objective is nifaq, but source includes bomoh, deviant teachings, apostasy and actions that mislead. Confirm precise scope against DSKP and textbook, do not conflate concepts.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1641,
+      "year": 4,
+      "pdp": 107,
+      "reason": "Objective states six rukun puasa; confirm original wording and intended classification against DSKP and textbook before drafting. No inferred count or doctrinal substitution.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1727,
+      "pdp": 41,
+      "year": 5,
+      "reason": "Source activity switches between mad iwadh and mad badal; confirm exact DSKP/textbook scope and objective before editing; no inferred substitution.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1731,
+      "pdp": 45,
+      "year": 5,
+      "reason": "Source activity switches between mad iwadh and mad badal; confirm exact DSKP/textbook scope and objective before editing; no inferred substitution.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1735,
+      "pdp": 49,
+      "year": 5,
+      "reason": "Source activity switches between mad iwadh and mad badal; confirm exact DSKP/textbook scope and objective before editing; no inferred substitution.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1940,
+      "pdp": 110,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1944,
+      "pdp": 114,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1948,
+      "pdp": 118,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1952,
+      "pdp": 122,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1956,
+      "pdp": 126,
+      "year": 6,
+      "reason": "Objective identifies khat riq'ah but requires writing khat nasakh; original activities require riq'ah. Verify DSKP and textbook before editing; do not change objective or choose one style by inference.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1475,
+      "year": 3,
+      "pdp": 89,
+      "reason": "Objective and memorization steps target Surah al-Asr but first recording step names Surah al-Kafirun. Verify original textbook and RPT before editorial revision.",
+      "source_run": 45520794883
+    },
+    {
+      "id": 1479,
+      "year": 3,
+      "pdp": 93,
+      "reason": "Objective targets al-Asr memorization; recording step names al-Kafirun.",
+      "source_run": 45521707716
+    },
+    {
+      "id": 1751,
+      "year": 5,
+      "pdp": 65,
+      "reason": "Objective mixes al-Asr and al-Qadr while source activities focus on al-Qadr; verify source scope.",
+      "source_run": 45520998464
+    },
+    {
+      "id": 1946,
+      "year": 6,
+      "pdp": 116,
+      "reason": "Sequence names al-Zumar after al-Jinn and before next session of al-Jinn; verify original RPT and mushaf, do not substitute surah by inference.",
+      "source_run": 45520998464
+    },
+    {
+      "id": 1495,
+      "year": 3,
+      "pdp": 109,
+      "reason": "Objective and three source steps target Iqlab but reading drill names Ikhfa Hakiki. Confirm source against DSKP and textbook.",
+      "source_run": 45524095256
+    },
+    {
+      "id": 1815,
+      "year": 5,
+      "pdp": 129,
+      "reason": "Objective combines al-Asr and al-Qadr; activity note focuses on al-Qadr. Verify original curriculum and textbook before correction.",
+      "source_run": 45524846245
+    },
+    {
+      "id": 1543,
+      "pdp": 9,
+      "reason": "Objective targets al-Takathur 1–4, recording and final listening name al-Kafirun.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1547,
+      "pdp": 13,
+      "reason": "Objective targets al-Takathur 5–8, recording and final listening name al-Kafirun.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1599,
+      "pdp": 65,
+      "reason": "Objective and initial steps target al-Ikhlas, final task names al-Fatihah.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1611,
+      "pdp": 77,
+      "reason": "Objective targets three mim sakinah rules, first activity instead names izhar halqi and nun sakinah idgham rules.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1615,
+      "pdp": 81,
+      "reason": "Objective targets al-Qariah 1–5, first audio names al-Asr.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1747,
+      "pdp": 61,
+      "year": 5,
+      "reason": "Objective concerns al-Asr, source activities on benefits instead name al-Qadr. Confirm original textbook and curriculum.",
+      "source_run": 45525260267
+    },
+    {
+      "id": 1811,
+      "pdp": 125,
+      "year": 5,
+      "reason": "Objective concerns al-Asr, source activities on benefits instead name al-Qadr. Confirm original textbook and curriculum.",
+      "source_run": 45525260267
+    },
+    {
+      "id": 1619,
+      "pdp": 85,
+      "reason": "Objective al-Qariah 6–11; first audio names al-Asr and last activity names al-Qariah 1–5.",
+      "year": 4,
+      "source_run": 45525395926
+    },
+    {
+      "id": 1627,
+      "pdp": 93,
+      "reason": "Objective al-Qariah 6–11; final assessment names 1–5.",
+      "year": 4,
+      "source_run": 45525395926
+    }
+  ]
+}

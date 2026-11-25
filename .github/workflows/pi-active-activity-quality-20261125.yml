@@ -1,0 +1,76 @@
+name: PI active 698 activity quality and source-grounded candidates QA
+on:
+  pull_request:
+    paths:
+      - "tools/audit_pi_active_activity_quality_20261125.py"
+      - "tools/test_pi_editorial_bulk_20261125.py"
+      - "web/pi_editorial_bulk_20261125.py"
+      - "tools/render_pi_editorial_batch01_20261125.py"
+      - "staging/pendidikan_islam/active_activity_editorial_batch*_20261125.json"
+      - "staging/pendidikan_islam/active_activity_source_registry_20261125.json"
+      - "staging/pendidikan_islam/active_dskp_text_page_evidence_20261125.json"
+      - "tools/pi_active_recitation_candidate_20261125.py"
+      - ".github/workflows/pi-active-activity-quality-20261125.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  actual-activity-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install existing Jawi runtime requirements
+        run: bash build_jawi.sh
+      - name: Compare native RPH activities for every active PI PdP T2-6
+        env:
+          PYTHONUNBUFFERED: "1"
+          CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
+        run: python -m tools.audit_pi_active_activity_quality_20261125
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pi-active-698-activity-quality-qa
+          path: qa/pi-activity-quality/*.json
+          if-no-files-found: warn
+          retention-days: 7
+  native-editorial-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install existing Jawi runtime requirements
+        run: bash build_jawi.sh
+      - name: Render all staged source-specific activities with original Word and PDF generator
+        env:
+          PYTHONUNBUFFERED: "1"
+          CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
+        run: python -m tools.render_pi_editorial_batch01_20261125
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pi-editorial-native-word-pdf
+          path: qa/pi-editorial-batch01/*
+          if-no-files-found: warn
+          retention-days: 7
+
+  bulk-integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bash build_jawi.sh
+      - name: Check all eligible bulk records against native runtime state
+        env:
+          CIKGULAJU_WEB_NATIVE_RPH_ENABLED: '0'
+          PYTHONUNBUFFERED: '1'
+        run: python -m tools.test_pi_editorial_bulk_20261125

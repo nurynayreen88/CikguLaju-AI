@@ -1,0 +1,57 @@
+{
+  "status": "SOURCE_REGISTRY_QA_NOT_APPROVAL",
+  "scope": "KSSR SK Pendidikan Islam T2–6 active v26 only",
+  "years": [
+    {
+      "year": 2,
+      "dskp": "1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr",
+      "textbook": "1VDXKCAyEveZCkhMLVVIyl3qg2sZhk9KP",
+      "source_file_located": true,
+      "lesson_page_review_complete": false
+    },
+    {
+      "year": 3,
+      "dskp": "1tjcWRrfcAGk-Y_OpzeQhO253hunaz9RA",
+      "textbook": "1DNXL1vmN3ERz6o4_7jcCVc9m3E42JDSY",
+      "source_file_located": true,
+      "lesson_page_review_complete": false
+    },
+    {
+      "year": 4,
+      "dskp": "1r5IexeLxm5L025Abj_V-r6NRlDBeoQdJ",
+      "textbook": "17x1icc3hkoutTopyjbyi6kIfmxksBo1R",
+      "source_file_located": true,
+      "lesson_page_review_complete": false
+    },
+    {
+      "year": 5,
+      "dskp": "1fQ0Tt25JGAs2zCmJMyjNV3ZIBqPz8JWA",
+      "textbook": "1xxBNvbeXVoKSJB_it_zdiM1_gJTaULKz",
+      "source_file_located": true,
+      "lesson_page_review_complete": false
+    },
+    {
+      "year": 6,
+      "dskp": "1pasG1F0ThshBUNoyLtQCD867bIkhekTZ",
+      "textbook": "10eHX0E_yg3TOpGvaRTtwBevO90Nq-buf",
+      "source_file_located": true,
+      "lesson_page_review_complete": false
+    }
+  ],
+  "required_evidence": [
+    "Verified active row ID and year, SK/SP wording and exact DSKP page (including visual check if Jawi text extraction unreliable)",
+    "Textbook edition, printed page and PDF page, exact learning task and relevance to SP; no guessed page or copied generic task",
+    "RPT source activity/objective and actual session length",
+    "Activity book/teacher guide, official PBD, reliable mushaf/hadith or audio when applicable; state not applicable if no relevant source",
+    "Review Jawi spelling, religious content, distinct teacher and pupil actions, objective-aligned assessment",
+    "Compare Word/PDF actual output and preserve template/other fields"
+  ],
+  "previous_evidence": "PR #443 provides prior source review records only; no automatic academic approval or activation of legacy 696.",
+  "current_batch": {
+    "count": 128,
+    "academic_source_page_approval": 0,
+    "render_check": "PASS run 45497371776: 128 native Word/PDF outputs; Word non-activity cells and table layout unchanged; PDF A4 single page. Visual academic review remains outstanding.",
+    "render_run": 45497371776,
+    "manual_source_holds": 3
+  }
+}
