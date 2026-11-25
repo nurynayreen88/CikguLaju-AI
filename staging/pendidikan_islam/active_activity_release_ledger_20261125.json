@@ -13,7 +13,7 @@
     }
   ],
   "total_active": 698,
-  "staged_unique_reported": 582,
+  "staged_unique_reported": 601,
   "live_editorial_count": 0,
   "release_gate": "Review original DSKP/textbook/mushaf evidence and Jawi, confirm native output, then promote only approved records. Mark LIVE only after deployment and authenticated download verification.",
   "wave1": [
@@ -213,53 +213,48 @@
   },
   "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed.",
   "latest_verified_structural_ci": {
-    "run": 45520243603,
+    "run": 45523576114,
     "conclusion": "success",
-    "source_commit": "c09bfc00a3a055c15a18dc7948cee1627e5e8428",
-    "note": "Batch 21 structural test passed; academic approval outstanding."
+    "draft_count": 534,
+    "note": "Native structural render only; academic approval outstanding."
   },
-  "staged_unique_verified": 582,
+  "staged_unique_verified": 601,
   "staged_year_counts": {
     "2": 112,
-    "3": 128,
-    "4": 113,
+    "3": 135,
+    "4": 125,
     "5": 117,
     "6": 112
   },
-  "remaining_without_draft": 116,
+  "remaining_without_draft": 97,
   "latest_editorial_batch": {
-    "batch": 30,
+    "batch": 31,
     "years": {
-      "5": [
-        86,
-        90,
-        94,
-        97,
-        98,
-        101,
-        102,
-        105,
-        106,
-        109,
-        110,
-        113
-      ],
-      "6": [
-        5,
-        9,
-        13,
-        17,
-        21,
-        25,
+      "3": [
         29,
-        33,
-        37,
         41,
-        45,
-        140
+        65,
+        77,
+        97,
+        137,
+        145
+      ],
+      "4": [
+        117,
+        118,
+        122,
+        126,
+        130,
+        133,
+        134,
+        138,
+        142,
+        145,
+        146,
+        149
       ]
     },
-    "commit": "9940e420e8c265543280886a8fc63efc22078f04",
+    "commit": "65cf616ef4ffcc133da1ff6d9ffa90a5acd0570a",
     "status": "QA_RENDER_PENDING"
   },
   "cross_batch_audit": {
@@ -286,11 +281,9 @@
       }
     }
   },
-  "manual_source_hold_count": 20,
+  "manual_source_hold_count": 21,
   "latest_render_blocker": {
-    "run": 45522386505,
-    "status": "FIX_COMMITTED_RETEST_PENDING",
-    "fix": "4da94601d0414660a1c3ea7e3a377a4ce4ccd3d7",
-    "preflight": "a511c2659cbe714e84476e95b88ef698192fa321"
+    "status": "RESOLVED_STRUCTURAL_CI",
+    "run": 45523576114
   }
 }
