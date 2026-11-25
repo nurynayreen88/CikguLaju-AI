@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** متى يوم ميلادك؟ يوم ميلادي في شهر مايو، يوم ميلادي في شهر مارس.
 **Objektif pembelajaran:** Murid mengulang sekurang-kurangnya dua ayat soal-jawab berkaitan bulan dengan sebutan sesuai.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid mengulang sekurang-kurangnya dua ayat soal-jawab berkaitan bulan dengan sebutan sesuai.
 
 **Set induksi:** Guru menunjukkan kalendar dan bertanya ما هذا الشهر؟.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan dialog hari jadi pada Buku Teks halaman 15; murid mendengar متى يوم ميلادك؟ dan mengulang jawapan tentang bulan kelahiran.
+**Aktiviti 1 — Dengar dialog bulan kelahiran:** Guru menggunakan dialog hari jadi pada Buku Teks halaman 15; murid mendengar متى يوم ميلادك؟ dan mengulang jawapan tentang bulan kelahiran.
 
-**Aktiviti 2 — Aplikasi murid:** Murid bertukar kad bulan lalu menyebut ayat هذا الشهر شهر ... mengikut kad yang diterima.
+**Aktiviti 2 — Tukar kad dan sebut ayat bulan:** Murid bertukar kad bulan lalu menyebut ayat هذا الشهر شهر ... mengikut kad yang diterima.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua respons lisan berkaitan bulan secara individu.
 

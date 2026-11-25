@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** متى يوم اللغة العربية؟ يوم اللغة العربية في شهر إبريل. هل تشارك فيه؟ نعم، أشارك. (dialog guru berpandukan BT h.20)
 **Objektif pembelajaran:** Murid meniru sekurang-kurangnya tiga daripada empat pertuturan berkait tentang Hari Bahasa Arab dengan sebutan tepat.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 3 daripada 4 pertuturan dialog dengan sebutan tepat.
 
 **Set induksi:** Guru menunjukkan poster Hari Bahasa Arab dan kalendar bulan إبريل.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan soal-jawab tentang tarikh Hari Bahasa Arab dan penyertaan aktiviti seperti dalam dialog Buku Teks Tahun 4 halaman bercetak 20, kemudian murid mengulangi setiap giliran.
+**Aktiviti 1 — Ajuk giliran dialog Hari Bahasa Arab:** Guru memodelkan soal-jawab tentang tarikh Hari Bahasa Arab dan penyertaan aktiviti seperti dalam dialog Buku Teks Tahun 4 halaman bercetak 20, kemudian murid mengulangi setiap giliran.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan melakonkan empat giliran dialog: tarikh peristiwa dan penyertaan dalam aktiviti. Guru membetulkan intonasi serta kesinambungan respons.
+**Aktiviti 2 — Lakonkan empat giliran dialog:** Murid berpasangan melakonkan empat giliran dialog: tarikh peristiwa dan penyertaan dalam aktiviti. Guru membetulkan intonasi serta kesinambungan respons.
 
 **Pengukuhan / Penilaian (PBD):** Guru menanda sekurang-kurangnya tiga daripada empat pertuturan dengan sebutan serta urutan dialog yang tepat.
 

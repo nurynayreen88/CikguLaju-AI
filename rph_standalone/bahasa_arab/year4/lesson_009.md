@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** ما هذا الشهر؟ هذا الشهر شهر مارس، متى يوم المعلمين؟
 **Objektif pembelajaran:** Murid menyebut dua ayat soal dan dua ayat jawapan dengan intonasi sesuai.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid menyebut dua ayat soal dan dua ayat jawapan dengan intonasi sesuai.
 
 **Set induksi:** Guru membaca ما هذا الشهر؟ secara nada rata dan nada soal, murid memilih yang betul.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mengambil latihan soal-jawab pada buku halaman 25 (ما هذا الشهر؟، متى يوم ميلادك؟) untuk memodelkan nada tanya, jeda dan jawapan; murid meniru sebutan.
+**Aktiviti 1 — Bezakan intonasi tanya dan jawab:** Guru mengambil latihan soal-jawab pada buku halaman 25 (ما هذا الشهر؟، متى يوم ميلادك؟) untuk memodelkan nada tanya, jeda dan jawapan; murid meniru sebutan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan menjadi pengacara kalendar: seorang bertanya, seorang menjawab menggunakan empat kad bulan.
+**Aktiviti 2 — Pengacara kalendar berpasangan:** Murid berpasangan menjadi pengacara kalendar: seorang bertanya, seorang menjawab menggunakan empat kad bulan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat sebutan dan menanda sekurang-kurangnya tiga intonasi/sebutan sesuai.
 

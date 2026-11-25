@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** يناير، فبراير، مارس، إبريل، مايو، يونيو
 **Objektif pembelajaran:** Murid menulis lima daripada enam nama bulan mengikut ejaan model yang tepat.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 5 daripada 6 nama bulan dengan ejaan tepat.
 
 **Set induksi:** Guru memaparkan فبراير dengan susunan huruf salah dan murid membetulkannya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan menulis bulan Masihi pada Buku Teks Tahun 4 halaman bercetak 10 (misalnya فبراير، مايو، أغسطس), kemudian murid menjejak sambungan huruf sebelum menulis tanpa contoh.
+**Aktiviti 1 — Jejak ejaan nama bulan:** Guru merujuk latihan menulis bulan Masihi pada Buku Teks Tahun 4 halaman bercetak 10 (misalnya فبراير، مايو، أغسطس), kemudian murid menjejak sambungan huruf sebelum menulis tanpa contoh.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melengkapkan kalendar mini Januari hingga Jun dengan nama Arab yang tepat, kemudian semak pasangan.
+**Aktiviti 2 — Lengkapkan kalendar mini:** Murid melengkapkan kalendar mini Januari hingga Jun dengan nama Arab yang tepat, kemudian semak pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menguji penulisan enam nama bulan menggunakan kad kosong; sasaran 5/6.
 

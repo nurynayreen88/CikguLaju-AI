@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** يوم ميلاد سعيد، كل عام وأنتم بخير.
 **Objektif pembelajaran:** Murid menulis dua ayat mudah berdasarkan rangka dengan susunan perkataan tepat.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid menulis dua ayat mudah dengan susunan perkataan tepat.
 
 **Set induksi:** Guru menunjukkan kad شهر dan يناير yang disusun salah, murid membetulkan urutan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menunjukkan model kad ucapan daripada latihan Buku Teks halaman 16; murid menyalin dan memeriksa jarak serta sambungan perkataan Arab.
+**Aktiviti 1 — Salin model kad ucapan:** Guru menunjukkan model kad ucapan daripada latihan Buku Teks halaman 16; murid menyalin dan memeriksa jarak serta sambungan perkataan Arab.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melengkapkan dua rangka ayat pada kalendar mini dan menulis semula dengan bulan pilihan.
+**Aktiviti 2 — Lengkapkan dua rangka ayat:** Murid melengkapkan dua rangka ayat pada kalendar mini dan menulis semula dengan bulan pilihan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak dua ayat untuk susunan kata, ejaan dan tanda baca.
 
