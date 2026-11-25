@@ -9,15 +9,15 @@
 
 **Objektif:** Memainkan iringan perkusi berdasarkan skor dengan dua pilihan tempo secara tepat.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **KOTA CERIA**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru menunjukkan satu alat perkusi dan memainkan pola pendek pada dua tempo; murid meniru pola melalui tepukan.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menunjukkan contoh kastanet, tamborin atau dram bes dalam iringan Desaku Tercinta.
+**Aktiviti 1 — Teroka Bunyi dan Corak Alat Perkusi (8 minit):** Guru menunjukkan contoh kastanet, tamborin atau dram bes dalam iringan Desaku Tercinta.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid berlatih peranan alat masing-masing dan memainkan corak pada tempo cepat kemudian lambat, membandingkan ketepatan.
+**Aktiviti 2 — Main Iringan pada Dua Tempo (10 minit):** Murid berlatih peranan alat masing-masing dan memainkan corak pada tempo cepat kemudian lambat, membandingkan ketepatan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Nilai ketepatan pola, isyarat dan perubahan tempo.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid memainkan pola iringan pada tempo cepat dan lambat; guru merekod ketepatan skor, detik dan respons kepada isyarat.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

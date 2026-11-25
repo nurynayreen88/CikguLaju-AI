@@ -12,9 +12,9 @@
 
 **Set induksi (4 minit):** Guru menepuk Corak Irama 1 dan 2 daripada buku m/s 70–71; murid mengajuk detik dan menunjukkan pola yang berbeza melalui kad irama.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menepuk Corak Irama 1/2 kemudian mengingatkan kedudukan not yang digunakan untuk ciptaan.
+**Aktiviti 1 — Teroka Corak Irama dan Not B/A/G (8 minit):** Guru menepuk Corak Irama 1/2 kemudian mengingatkan kedudukan not yang digunakan untuk ciptaan.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Kumpulan mencipta melodi teras menggunakan kad not B, A dan G, menulis pada baluk dan memainkan dengan rekoder. Not C’ daripada buku teks hanyalah pengayaan pilihan selepas kemahiran teras dikuasai, bukan kriteria wajib.
+**Aktiviti 2 — Susun dan Mainkan Melodi B/A/G (10 minit):** Kumpulan mencipta melodi teras menggunakan kad not B, A dan G, menulis pada baluk dan memainkan dengan rekoder. Not C’ daripada buku teks hanyalah pengayaan pilihan selepas kemahiran teras dikuasai, bukan kriteria wajib.
 
 **Pengukuhan dan pentaksiran (6 minit):** Setiap kumpulan mempersembahkan satu frasa melodi B, A dan G; guru menyemak pilihan not, ketepatan detik dan kelancaran permainan rekoder.
 

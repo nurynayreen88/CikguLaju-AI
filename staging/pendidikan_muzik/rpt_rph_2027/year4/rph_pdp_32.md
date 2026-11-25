@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Guru menunjukkan ketukan kayu kol melalui demonstrasi tanpa alat dan mengajak murid menepuk detik.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Guru memainkan Audio 117 dan menunjukkan pola ketukan Kolattam. Murid memadankan pola ketukan dengan langkah pergerakan.
+**Aktiviti 1 — Padankan Ketukan dengan Langkah (8 minit):** Guru memainkan Audio 117 dan menunjukkan pola ketukan Kolattam. Murid memadankan pola ketukan dengan langkah pergerakan.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan merancang pola empat atau lapan kiraan, bergerak dalam ruang selamat dan mengikut isyarat tempo yang diberi.
+**Aktiviti 2 — Cipta Dua Corak Gerakan Selaras Tempo (10 minit):** Kumpulan merancang pola empat atau lapan kiraan, bergerak dalam ruang selamat dan mengikut isyarat tempo yang diberi.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menilai kawalan detik, susunan gerak dan kerjasama dengan rubrik tiga aspek.
 
-**Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
+**Penutup (2 minit):** Kumpulan menunjukkan dua corak gerakan mengikut tempo dengan jarak selamat; guru merekod kawalan detik dan kerjasama.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 102–103, Audio 117 dan alat ketukan yang sesuai.
 

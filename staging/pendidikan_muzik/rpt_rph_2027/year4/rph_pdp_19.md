@@ -9,15 +9,15 @@
 
 **Objektif:** Mengiringi satu rangkap lagu menggunakan perkusi badan mengikut tempo pada dua ulangan.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **INDAHNYA DASAR LAUT**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru menyanyikan satu frasa Tapak Sulaiman sambil menepuk detik tetap; murid menyambung tepukan ketika guru berhenti menepuk.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperdengarkan atau menyanyikan frasa Tapak Sulaiman dan membimbing murid mengecam detik.
+**Aktiviti 1 — Kenal Detik Tapak Sulaiman (8 minit):** Guru memperdengarkan atau menyanyikan frasa Tapak Sulaiman dan membimbing murid mengecam detik.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menyanyi sambil melakukan perkusi badan, mencuba tempo berlainan dan mengekalkan koordinasi kumpulan.
+**Aktiviti 2 — Perkusi Badan Dua Ulangan (10 minit):** Murid menyanyi sambil melakukan perkusi badan, mencuba tempo berlainan dan mengekalkan koordinasi kumpulan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak keselarasan detik dan irama ketika tempo berubah.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid mengiringi satu rangkap dengan perkusi badan sebanyak dua ulangan; guru merekod keselarasan detik mengikut tempo.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

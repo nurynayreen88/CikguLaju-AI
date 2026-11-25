@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru memaparkan carta penjarian G/A/B/C'/D' dan kad pola perkusi, kemudian murid meneka dua not pada baluk.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Guru memperdengarkan petikan Audio 49 dan 68 untuk mengimbas penjarian. Murid membaca skor, menepuk detik dan memainkan frasa rekoder. Guru boleh menggunakan Audio 85 sebagai pola perkusi contoh.
+**Aktiviti 1 — Ulang Kaji Penjarian dan Skor Rekoder (8 minit):** Guru memperdengarkan petikan Audio 49 dan 68 untuk mengimbas penjarian. Murid membaca skor, menepuk detik dan memainkan frasa rekoder. Guru boleh menggunakan Audio 85 sebagai pola perkusi contoh.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Kumpulan A memainkan frasa rekoder, Kumpulan B menepuk atau memainkan pola perkusi empat detik, kemudian kedua-dua kumpulan bertukar peranan.
+**Aktiviti 2 — Giliran Melodi Rekoder dan Perkusi (10 minit):** Kumpulan A memainkan frasa rekoder, Kumpulan B menepuk atau memainkan pola perkusi empat detik, kemudian kedua-dua kumpulan bertukar peranan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Rubrik penjarian, tempo, iringan perkusi dan koordinasi ensembel; guru membuat intervensi mengikut kemahiran yang belum dikuasai.
 

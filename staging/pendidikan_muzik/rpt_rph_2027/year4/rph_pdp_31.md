@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Guru menunjukkan gambar tarian Kolattam dan murid menyatakan hubungan antara kayu kol dengan irama.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Guru memainkan petikan Audio 110 hingga 116 bersama gambar alat muzik. Murid mengenal pasti alat muzik berdasarkan bunyi yang didengar.
+**Aktiviti 1 — Kenal Bunyi Alat Muzik Kolattam (8 minit):** Guru memainkan petikan Audio 110 hingga 116 bersama gambar alat muzik. Murid mengenal pasti alat muzik berdasarkan bunyi yang didengar.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid menyusun peta alat dan keluarga alat, kemudian menerangkan sekurang-kurangnya tiga pilihan secara berpasangan.
+**Aktiviti 2 — Kelaskan Alat dan Huraikan Ciri (10 minit):** Murid menyusun peta alat dan keluarga alat, kemudian menerangkan sekurang-kurangnya tiga pilihan secara berpasangan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak tiga nama alat dan dua ciri perbezaan menggunakan kad soal jawab.
 
-**Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
+**Penutup (2 minit):** Murid menamakan tiga alat muzik Kolattam dan menerangkan dua ciri alat; guru merekod ketepatan jawapan.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 100–101, Audio 110–116 dan gambar alat muzik Kolattam.
 

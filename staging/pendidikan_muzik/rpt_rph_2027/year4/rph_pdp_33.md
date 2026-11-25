@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Guru memperlihatkan semula carta urutan Kolattam dan murid mempraktikkan isyarat mula serta hentian.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Murid mengulang pola ketukan dan langkah Kolattam berpandukan Audio 117. Guru menyemak persediaan sebelum persembahan.
+**Aktiviti 1 — Ulang Pola Ketukan dan Langkah (8 minit):** Murid mengulang pola ketukan dan langkah Kolattam berpandukan Audio 117. Guru menyemak persediaan sebelum persembahan.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan mempersembahkan gerak pada tempo tetap; pemerhati menggunakan rubrik kreativiti dan kerjasama seperti contoh di halaman 103.
+**Aktiviti 2 — Persembahan Kolattam dan Penilaian Rakan (10 minit):** Kumpulan mempersembahkan gerak pada tempo tetap; pemerhati menggunakan rubrik kreativiti dan kerjasama seperti contoh di halaman 103.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru dan murid membandingkan dua percubaan dari segi tempo, kerjasama serta kekemasan dan memilih satu pembaikan.
 
-**Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
+**Penutup (2 minit):** Murid menyatakan dua kriteria penilaian rakan dan satu pembaikan bagi urutan gerak kumpulan; guru merekod evidens persembahan.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 102–103, Audio 117, alat ketukan dan rubrik persembahan.
 

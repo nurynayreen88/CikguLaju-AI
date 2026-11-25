@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru memaparkan gambar Kolattam dan bertanya hubungan alat atau kayu dengan pola detik yang dimainkan.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid merujuk semula buku Kesenian Tahun 4 halaman 100–101, membezakan peranan muzik pengiring dan corak bunyi, kemudian menyatakan dua fakta tepat.
+**Aktiviti 1 — Ulang Kaji Fakta dan Muzik Kolattam (8 minit):** Murid merujuk semula buku Kesenian Tahun 4 halaman 100–101, membezakan peranan muzik pengiring dan corak bunyi, kemudian menyatakan dua fakta tepat.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid memainkan pola empat detik dan berlatih pergerakan Kolattam mengikut Audio 117. Guru menyemak ketepatan detik dan jarak selamat antara pasangan.
+**Aktiviti 2 — Laksana Pola Gerak Empat Detik (10 minit):** Murid memainkan pola empat detik dan berlatih pergerakan Kolattam mengikut Audio 117. Guru menyemak ketepatan detik dan jarak selamat antara pasangan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Rubrik: dua fakta Kolattam tepat, corak empat detik dan keselamatan ruang; guru memberi intervensi kepada murid yang keliru arah gerakan.
 

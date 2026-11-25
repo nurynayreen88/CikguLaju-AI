@@ -9,15 +9,15 @@
 
 **Objektif:** Menyanyikan satu rangkap Desaku Tercinta pada pic dan tempo tepat.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **KOTA CERIA**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru menyanyikan satu frasa Desaku Tercinta; murid mengetuk detik dan mengajuk frasa tanpa mempercepat tempo.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperdengarkan frasa lagu dan meminta murid mengetuk detik sebelum menyanyi.
+**Aktiviti 1 — Dengar Frasa dan Ketuk Detik (8 minit):** Guru memperdengarkan frasa lagu dan meminta murid mengetuk detik sebelum menyanyi.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid berlatih nyanyian secara respons-gema, kemudian menyanyi bersama mengikut iringan tanpa melangkaui kelajuan yang sesuai.
+**Aktiviti 2 — Nyanyian Gema dan Nyanyian Bersama (10 minit):** Murid berlatih nyanyian secara respons-gema, kemudian menyanyi bersama mengikut iringan tanpa melangkaui kelajuan yang sesuai.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak pic, tempo dan ketepatan frasa pada dua percubaan.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menyanyikan satu rangkap; guru merekod ketepatan pic dan tempo berdasarkan dua percubaan.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

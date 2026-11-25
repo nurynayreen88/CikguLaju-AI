@@ -13,9 +13,9 @@
 
 **Set Induksi — 4 minit:** Guru meminta kumpulan mengimbas pelan mereka serta memastikan alat dan ruang persembahan selamat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan melakukan latihan berasingan nyanyian, perkusi dan gerakan; guru menyemak tempo, intonasi dan masuk bersama sambil merujuk tujuan persembahan muzikal halaman 55.
+**Aktiviti 1 — Latihan Nyanyian, Perkusi dan Gerakan (8 minit):** Kumpulan melakukan latihan berasingan nyanyian, perkusi dan gerakan; guru menyemak tempo, intonasi dan masuk bersama sambil merujuk tujuan persembahan muzikal halaman 55.
 
-**Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit):** Murid menjalankan latihan separa penuh, menetapkan isyarat mula dan berhenti, serta memperbaiki sekurang-kurangnya dua peralihan bahagian berdasarkan maklum balas guru.
+**Aktiviti 2 — Selaras Dua Peralihan Persembahan (10 minit):** Murid menjalankan latihan separa penuh, menetapkan isyarat mula dan berhenti, serta memperbaiki sekurang-kurangnya dua peralihan bahagian berdasarkan maklum balas guru.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak ketepatan tempo, dua isyarat masuk/henti, penglibatan ahli dan pengurusan alat.
 

@@ -9,15 +9,15 @@
 
 **Objektif:** Mengenal dua bunyi alat perkusi dan memainkan satu pola iringan mengikut skor secara konsisten.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **HELO, HELO APA KHABAR?**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru menghasilkan dua bunyi perkusi tanpa menunjukkan alat; murid meneka sumber bunyi sebelum alat diperlihatkan.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperdengarkan contoh bunyi alat berlainan dan meminta murid mengenal sumber bunyi.
+**Aktiviti 1 — Kenal Bunyi Dua Alat Perkusi (8 minit):** Guru memperdengarkan contoh bunyi alat berlainan dan meminta murid mengenal sumber bunyi.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid membaca dua corak perkusi bagi lagu Cergas Badan, berlatih secara bergilir dan menggabungkan iringan dengan tempo yang sama.
+**Aktiviti 2 — Baca Skor Iringan Cergas Badan (10 minit):** Murid membaca dua corak perkusi bagi lagu Cergas Badan, berlatih secara bergilir dan menggabungkan iringan dengan tempo yang sama.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak pengecaman bunyi, irama dan disiplin persembahan.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menamakan dua bunyi alat dan mempersembahkan satu pola iringan; guru merekod pengecaman bunyi dan ketepatan skor.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
