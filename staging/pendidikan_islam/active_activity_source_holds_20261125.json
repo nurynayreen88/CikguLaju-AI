@@ -35,6 +35,27 @@
       "pdp": 5,
       "reason": "Native objective has Al-Kafirun range 5–4 in logical text order; may be bidi ordering, not necessarily a wrong intended range. Verify exact original RPT/mushaf and native Word/PDF display; no automatic reversal.",
       "source_run": 45498362049
+    },
+    {
+      "id": 1533,
+      "year": 3,
+      "pdp": 147,
+      "reason": "Objective and first source steps are Sunnah Rasulullah; last source step is gratitude to Allah. Review actual DSKP and textbook before retaining or changing this step.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1669,
+      "year": 4,
+      "pdp": 135,
+      "reason": "Objective is nifaq, but source includes bomoh, deviant teachings, apostasy and actions that mislead. Confirm precise scope against DSKP and textbook, do not conflate concepts.",
+      "source_run": 45514360861
+    },
+    {
+      "id": 1641,
+      "year": 4,
+      "pdp": 107,
+      "reason": "Objective states six rukun puasa; confirm original wording and intended classification against DSKP and textbook before drafting. No inferred count or doctrinal substitution.",
+      "source_run": 45514360861
     }
   ]
 }
