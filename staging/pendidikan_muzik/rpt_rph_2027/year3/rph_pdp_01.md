@@ -10,15 +10,15 @@
 
 **Objektif:** Murid melakukan latihan pernafasan 8–16 detik mengikut kemampuan serta menyanyi satu frasa dengan pic sesuai.
 
-**Set induksi (4 minit):** Guru meniru bunyi kereta api dan meminta murid menyatakan perbezaan antara bunyi, nyanyian, detik dan tempo.
+**Set induksi:** Guru meniru bunyi kereta api dan membimbing murid menyenandungkan satu frasa pendek.
 
-**Aktiviti 1 — Bimbingan (8 minit):** Guru memodelkan tarik nafas, hembus secara terkawal dan bunyi lebah zzz pada kiraan lapan detik.
+**Aktiviti 1 — Pernafasan dan senandung:** Guru memodelkan tarik nafas, hembus secara terkawal dan bunyi lebah zzz pada kiraan lapan detik.
 
-**Aktiviti 2 — Amali muzik (10 minit):** Murid mengajuk melodi lagu Tut Tut Kereta Api secara berperingkat, membetulkan pic dan membandingkan frasa bertitik yang disebut terputus-putus.
+**Aktiviti 2 — Nyanyian Tut Tut Kereta Api:** Murid mengajuk melodi lagu Tut Tut Kereta Api secara berperingkat, membetulkan pic dan membandingkan frasa bertitik yang disebut terputus-putus.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak pernafasan, postur dan pic melalui dua ulangan.
 
-**Penutup (2 minit):** Murid menunjukkan contoh kemahiran yang dipelajari, memberi satu ulasan terhadap persembahan rakan; guru merekod pemerhatian PBD.
+**Penutup:** Murid mengulang satu frasa dengan pernafasan terkawal. Guru memberi maklum balas pic dan postur.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018 m/s 10-11, kad/kastanet atau ruang gerak yang selamat.
 
