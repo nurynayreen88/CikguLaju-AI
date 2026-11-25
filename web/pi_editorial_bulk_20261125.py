@@ -30,6 +30,8 @@ def load_catalog():
     holds={i["id"] for i in json.loads((ROOT/"active_activity_source_holds_20261125.json").read_text(encoding="utf8"))["records"]}
     holds.update(i["id"] for i in corrections)
     holds.update((1276,1277,1279,1280))
+    # Second wave: explicit source-backed corrections; ambiguous sequence and SK changes stay held.
+    holds.difference_update((1641,1735,1940,1944,1948,1952,1956,1387,1391,1473,1727,1731,1475,1479,1495,1543,1547,1611,1615,1747,1811,1619))
     lookup={}
     for item in items.values():
         if item["id"] in holds:
@@ -64,6 +66,19 @@ def apply(state,rows,catalog):
         return rows
     item=matches[0]
     updated=dict(rows)
+    if item.get("corrected_objective"):
+        # Change the displayed objective only for the exact original source match.
+        # SK/SP identifiers and source database remain unchanged.
+        if item.get("corrected_sk_text"):
+            return rows
+        if [norm(x) for x in state.get("grouped_sp_codes",[])] != [norm(x) for x in item.get("sp_codes",[])]:
+            return rows
+        objective_key="OBJEKTIF PEMBELAJARAN" if "OBJEKTIF PEMBELAJARAN" in rows else "OBJEKTIF"
+        updated[objective_key]=jawi_display_digits(item["corrected_objective"])
+        if "KRITERIA KEJAYAAN" in rows:
+            updated["KRITERIA KEJAYAAN"]=jawi_display_digits(item["corrected_success_criteria"])
+        if "REFLEKSI" in rows and not str(state.get("rph_teacher_reflection") or "").strip() and str(state.get("rph_reflection_mode") or "").casefold()!="manual":
+            updated["REFLEKSI"]=jawi_display_digits(item["corrected_auto_reflection"])
     updated["AKTIVITI UTAMA"]=jawi_display_digits("\n".join(f"اکتيۏيتي {i} - {title}\n1. {body}" for i,(title,body) in enumerate(item["activities"],1)))
     fields=item.get("final_review_fields")
     if fields and not fields.get("sp_text_proposal"):
