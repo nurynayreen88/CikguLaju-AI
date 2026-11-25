@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** قميص، طويل، طائر، تلميذ
 **Objektif pembelajaran:** Murid dapat membaca tiga daripada empat kata dengan sebutan tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 kata dengan sebutan tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan membaca kata yang mengandungi huruf seakan sama dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membaca contoh kata berhuruf serupa pada latihan h59, murid mengenal bentuk ط/ت dan ص/ط.
+**Aktiviti 1 — Baca kata berhuruf hampir sama:** Guru membaca contoh kata berhuruf serupa pada latihan h59, murid mengenal bentuk ط/ت dan ص/ط.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mencantum kad huruf kepada kata dan membaca secara individu.
+**Aktiviti 2 — Cantum kad huruf dan baca individu:** Murid mencantum kad huruf kepada kata dan membaca secara individu.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod tiga daripada empat bacaan yang betul.
 

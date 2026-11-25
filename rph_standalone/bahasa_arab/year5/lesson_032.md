@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** قميص، طويل، طائر، تلميذ
 **Objektif pembelajaran:** Murid dapat menulis tiga daripada empat kata dengan titik dan sambungan tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 kata dengan titik dan sambungan tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan menulis kata dengan bentuk huruf seakan sama dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan huruf berbeza dan tulisan kanan-ke-kiri daripada latihan أقرأ وأكتب h59.
+**Aktiviti 1 — Model tulisan huruf yang hampir sama:** Guru memodelkan huruf berbeza dan tulisan kanan-ke-kiri daripada latihan أقرأ وأكتب h59.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis dan menyemak empat kata pada helaian berpetak secara berpasangan.
+**Aktiviti 2 — Tulis empat kata dan semak pasangan:** Murid menulis dan menyemak empat kata pada helaian berpetak secara berpasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tiga daripada empat ejaan yang betul.
 

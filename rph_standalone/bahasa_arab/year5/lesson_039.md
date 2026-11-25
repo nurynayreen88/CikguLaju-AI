@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** ماذا تلعب؟ ألعب كرة القدم. فيم تشترك؟ أشترك في فرقة الكشافة.
 **Objektif pembelajaran:** Murid dapat membaca tiga daripada empat giliran dialog dengan intonasi betul.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 giliran dialog dengan intonasi betul.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan membaca dialog permainan dan penyertaan kelab dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membacakan dialog aktiviti h69 serta membezakan soalan bermain dan menyertai kelab.
+**Aktiviti 1 — Baca dialog bermain dan menyertai kelab:** Guru membacakan dialog aktiviti h69 serta membezakan soalan bermain dan menyertai kelab.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan menjadi penanya dan penjawab, lalu bertukar watak dengan kad dialog.
+**Aktiviti 2 — Soal jawab dan pertukaran watak:** Murid berpasangan menjadi penanya dan penjawab, lalu bertukar watak dengan kad dialog.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai sekurang-kurangnya tiga giliran bacaan tepat.
 

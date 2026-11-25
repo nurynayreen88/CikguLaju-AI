@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** أشترك في نادي الكمبيوتر، ألعب كرة اليد، أحب فرقة الكشافة
 **Objektif pembelajaran:** Murid dapat menulis dua ayat dengan susunan kata yang tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis dua ayat dengan susunan kata tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan menulis ayat mudah berkaitan kokurikulum dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing contoh menulis ayat tentang sukan/kelab daripada latihan h72 menggunakan jalur perkataan.
+**Aktiviti 1 — Susun jalur kata ayat kokurikulum:** Guru membimbing contoh menulis ayat tentang sukan/kelab daripada latihan h72 menggunakan jalur perkataan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis dua ayat berkaitan penyertaan atau permainan kokurikulum dan menyemak ejaan.
+**Aktiviti 2 — Tulis dua ayat penyertaan atau permainan:** Murid menulis dua ayat berkaitan penyertaan atau permainan kokurikulum dan menyemak ejaan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak dua ayat mudah lengkap dan betul.
 
