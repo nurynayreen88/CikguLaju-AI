@@ -72,6 +72,12 @@ def main():
         out["years"][str(year)]=data
         print("PI_RPT_CANDIDATE",year,json.dumps({k:v for k,v in data.items() if k!="weekly"}),flush=True)
     OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+    # Teacher-facing projection: date windows and PdP identities only.
+    # Keep provisional capacity assumptions in the separate internal report.
+    public={"status":"RPT_DISPLAY_CANDIDATE_NOT_PUBLISHED","source_commit":src["source_commit"],"years":{}}
+    for year,data in out["years"].items():
+        public["years"][year]={"count":data["count"],"weeks":{w:{"dates":v["dates"],"pdp":v["pdp"],"tasmik_pdp":v["tasmik_pdp"],"separate_tasmik":v["separate_tasmik_provisional"]} for w,v in data["weekly"].items()}}
+    (OUT.parent/"teacher_schedule.json").write_text(json.dumps(public,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
     print("PI_RPT_CANDIDATE_TOTAL",sum(x["count"] for x in out["years"].values()),flush=True)
 
 if __name__=="__main__":
