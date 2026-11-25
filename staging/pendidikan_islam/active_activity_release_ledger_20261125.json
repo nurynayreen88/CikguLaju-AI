@@ -13,7 +13,7 @@
     }
   ],
   "total_active": 698,
-  "staged_unique_reported": 409,
+  "staged_unique_reported": 430,
   "live_editorial_count": 0,
   "release_gate": "Review original DSKP/textbook/mushaf evidence and Jawi, confirm native output, then promote only approved records. Mark LIVE only after deployment and authenticated download verification.",
   "wave1": [
@@ -218,37 +218,50 @@
     "source_commit": "f7b3090aef0c067b3490411cfe35017b891483ed",
     "note": "Structural only; no release approval."
   },
-  "staged_unique_verified": 409,
+  "staged_unique_verified": 430,
   "staged_year_counts": {
     "2": 106,
-    "3": 83,
-    "4": 67,
+    "3": 94,
+    "4": 77,
     "5": 77,
     "6": 76
   },
-  "remaining_without_draft": 289,
+  "remaining_without_draft": 268,
   "latest_editorial_batch": {
-    "batch": 21,
-    "year": 2,
-    "pdp": [
-      1,
-      4,
-      7,
-      44,
-      47,
-      91,
-      94,
-      98,
-      101,
-      104,
-      107,
-      110
-    ],
-    "commit": "05788a09d875215d7556244c0f6762f2afed76b8",
+    "batch": 22,
+    "years": {
+      "3": [
+        50,
+        54,
+        58,
+        62,
+        66,
+        69,
+        124,
+        128,
+        132,
+        136,
+        140
+      ],
+      "4": [
+        42,
+        45,
+        46,
+        49,
+        50,
+        56,
+        60,
+        64,
+        68,
+        139
+      ]
+    },
+    "commit": "fe4fef871110319f70f5acb8c30bbea311b520d5",
     "status": "QA_RENDER_PENDING"
   },
   "cross_batch_audit": {
     "commit": "183d2f707beac47278b6281382418293deea0db0",
     "status": "CI_PENDING"
-  }
+  },
+  "manual_source_hold_count": 8
 }
