@@ -16,7 +16,8 @@
   "sources": {
     "textbook": "https://fliphtml5.com/ktpkn/pywc/BT_Matematik_Tahun_2/",
     "dskp": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf",
-    "activity_book": "References printed in textbook; independent copy not yet audited"
+    "activity_book": "References printed in textbook; independent copy not yet audited",
+    "dskp_audit": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
   },
   "audit_notes": [
     "SK 2.2 in the available DSKP transcription repeats the 2.1.x numbering; textbook pages 10–12 use 2.2.1–2.2.3. Keep draft textbook numbering until visual audit.",
@@ -46,7 +47,8 @@
       "closure": "Susun dua jalur mengikut panjang",
       "assessment": "Rekod pencapaian kriteria: 4/5 pasangan objek dibandingkan tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 pasangan objek dibandingkan tepat",
-      "activity_book_ref": "2"
+      "activity_book_ref": "2",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "002",
@@ -70,7 +72,8 @@
       "closure": "Pilih bekas ringan",
       "assessment": "Rekod pencapaian kriteria: 4/5 pasangan objek dibandingkan tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 pasangan objek dibandingkan tepat",
-      "activity_book_ref": "2"
+      "activity_book_ref": "2",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "003",
@@ -94,7 +97,8 @@
       "closure": "Pilih buku nipis untuk disimpan",
       "assessment": "Rekod pencapaian kriteria: 4/5 pasangan buku dikenal pasti tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 pasangan buku dikenal pasti tepat",
-      "activity_book_ref": "1"
+      "activity_book_ref": "1",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "004",
@@ -118,7 +122,8 @@
       "closure": "Tunjuk menara rendah",
       "assessment": "Rekod pencapaian kriteria: 4/5 pasangan objek dikenal pasti tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 pasangan objek dikenal pasti tepat",
-      "activity_book_ref": "1"
+      "activity_book_ref": "1",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "005",
@@ -142,7 +147,8 @@
       "closure": "Nyatakan satu ciri objek pilihan",
       "assessment": "Rekod pencapaian kriteria: 6/8 jawapan ciri objek tepat. Catat jenis bantuan.",
       "reflection_criterion": "6/8 jawapan ciri objek tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "006",
@@ -166,7 +172,8 @@
       "closure": "Tunjuk kumpulan yang kurang",
       "assessment": "Rekod pencapaian kriteria: 4/5 perbandingan kumpulan tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 perbandingan kumpulan tepat",
-      "activity_book_ref": "3–5"
+      "activity_book_ref": "3–5",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "007",
@@ -189,7 +196,8 @@
       "closure": "Bina dua kumpulan sama banyak",
       "assessment": "Rekod pencapaian kriteria: 4/5 pasangan kumpulan dikenal pasti. Catat jenis bantuan.",
       "reflection_criterion": "4/5 pasangan kumpulan dikenal pasti",
-      "activity_book_ref": "3–5"
+      "activity_book_ref": "3–5",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "008",
@@ -214,7 +222,8 @@
       "closure": "Banding hasil dua binaan",
       "assessment": "Rekod pencapaian kriteria: 3/4 binaan memenuhi kad cabaran. Catat jenis bantuan.",
       "reflection_criterion": "3/4 binaan memenuhi kad cabaran",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "009",
@@ -240,7 +249,8 @@
       "closure": "Tunjuk nombor pada satu gambar",
       "assessment": "Rekod pencapaian kriteria: 5/6 nombor di persekitaran dikenal pasti. Catat jenis bantuan.",
       "reflection_criterion": "5/6 nombor di persekitaran dikenal pasti",
-      "activity_book_ref": "7"
+      "activity_book_ref": "7",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "010",
@@ -264,7 +274,8 @@
       "closure": "Namakan kad pilihan rakan",
       "assessment": "Rekod pencapaian kriteria: 8/10 nombor rawak dinamakan. Catat jenis bantuan.",
       "reflection_criterion": "8/10 nombor rawak dinamakan",
-      "activity_book_ref": "7"
+      "activity_book_ref": "7",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "011",
@@ -290,7 +301,8 @@
       "reflection_criterion": "4/5 angka dua digit ditulis dengan susunan tepat",
       "activity_book_ref": "8–11",
       "status": "KONFLIK_PENOMBORAN_DSKP",
-      "source_note": "DSKP Asas 3M T2 hlm. 49 mencetak 2.1.1–2.1.3 di bawah SK 2.2. Kod BT perlu disemak silang dengan pembetulan rasmi."
+      "source_note": "Kod BT di bawah SK 2.2 dikekalkan sementara; halaman 49 DSKP mencetak siri 2.1.x yang bertindih dengan halaman 48. Jangan guna dalam produksi tanpa pengesahan.",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "012",
@@ -316,7 +328,8 @@
       "reflection_criterion": "4/5 nama nombor ditulis atau dibaca tepat mengikut tugasan",
       "activity_book_ref": "8–11",
       "status": "KONFLIK_PENOMBORAN_DSKP",
-      "source_note": "DSKP Asas 3M T2 hlm. 49 mencetak 2.1.1–2.1.3 di bawah SK 2.2. Kod BT perlu disemak silang dengan pembetulan rasmi."
+      "source_note": "Kod BT di bawah SK 2.2 dikekalkan sementara; halaman 49 DSKP mencetak siri 2.1.x yang bertindih dengan halaman 48. Jangan guna dalam produksi tanpa pengesahan.",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "013",
@@ -340,7 +353,8 @@
       "closure": "Simpan tiket di tempat sepadan",
       "assessment": "Rekod pencapaian kriteria: 4/5 label nombor digunakan pada lokasi betul. Catat jenis bantuan.",
       "reflection_criterion": "4/5 label nombor digunakan pada lokasi betul",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "014",
@@ -364,7 +378,8 @@
       "closure": "Tunjuk lajur puluh",
       "assessment": "Rekod pencapaian kriteria: 4/5 nilai tempat digit dikenal pasti. Catat jenis bantuan.",
       "reflection_criterion": "4/5 nilai tempat digit dikenal pasti",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "015",
@@ -386,12 +401,13 @@
       "materials": "Pembilang besar, bekas sepuluh",
       "induction": "Isi sepuluh pembilang ke bekas",
       "guided": "Guru bina 11 menggunakan satu kumpulan sepuluh dan satu sa",
-      "practice": "Murid bina empat set 11–14 dan pilih kad jumlah",
+      "practice": "Murid bina empat set 11–14 dan pilih kad jumlah Murid nyatakan nilai digit puluh dan sa bagi setiap nombor yang dibina atau dipadankan.",
       "support": "Gunakan bingkai sepuluh dan kira sentuh satu persatu",
       "closure": "Tunjuk jumlah satu set",
-      "assessment": "Rekod pencapaian kriteria: 3/4 nombor dipadankan dengan kuantiti tepat. Catat jenis bantuan.",
+      "assessment": "Rekod pencapaian kriteria: 3/4 nombor dipadankan dengan kuantiti tepat. Catat jenis bantuan. Rekod nilai digit secara berasingan.",
       "reflection_criterion": "3/4 nombor dipadankan dengan kuantiti tepat",
-      "activity_book_ref": "13–15"
+      "activity_book_ref": "13–15",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "016",
@@ -412,12 +428,13 @@
       "materials": "Blok puluh dan sa, kad angka",
       "induction": "Tunjuk set 15 tanpa label",
       "guided": "Guru kira satu puluh dan sa secara berasingan",
-      "practice": "Murid bina set 15,16,17 daripada tiga kad angka",
+      "practice": "Murid bina set 15,16,17 daripada tiga kad angka Murid nyatakan nilai digit puluh dan sa bagi setiap nombor yang dibina atau dipadankan.",
       "support": "Berikan satu blok puluh siap dan pembilang berasingan",
       "closure": "Pilih label satu set",
-      "assessment": "Rekod pencapaian kriteria: 3/3 set bilangan dibina tepat. Catat jenis bantuan.",
+      "assessment": "Rekod pencapaian kriteria: 3/3 set bilangan dibina tepat. Catat jenis bantuan. Rekod nilai digit secara berasingan.",
       "reflection_criterion": "3/3 set bilangan dibina tepat",
-      "activity_book_ref": "13–15"
+      "activity_book_ref": "13–15",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "017",
@@ -438,12 +455,13 @@
       "materials": "Dua bingkai sepuluh, kad gambar",
       "induction": "Lengkapkan dua bingkai sepuluh",
       "guided": "Guru modelkan perbezaan 19 dan 20 dengan bingkai",
-      "practice": "Murid padankan empat kad angka dengan gambar bilangan",
+      "practice": "Murid padankan empat kad angka dengan gambar bilangan Murid nyatakan nilai digit puluh dan sa bagi setiap nombor yang dibina atau dipadankan.",
       "support": "Gunakan penanda petak kosong",
       "closure": "Terangkan 20 melalui dua kumpulan sepuluh",
-      "assessment": "Rekod pencapaian kriteria: 3/4 padanan nombor dan gambar tepat. Catat jenis bantuan.",
+      "assessment": "Rekod pencapaian kriteria: 3/4 padanan nombor dan gambar tepat. Catat jenis bantuan. Rekod nilai digit secara berasingan.",
       "reflection_criterion": "3/4 padanan nombor dan gambar tepat",
-      "activity_book_ref": "13–15"
+      "activity_book_ref": "13–15",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "018",
@@ -468,7 +486,8 @@
       "closure": "Banding kad dengan jumlah pelekat",
       "assessment": "Rekod pencapaian kriteria: 4/5 kad angka mempunyai hiasan bilangan tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 kad angka mempunyai hiasan bilangan tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "019",
@@ -487,12 +506,13 @@
       "materials": "Kad angka, jalur nombor",
       "induction": "Gerakkan penanda dari nombor kecil",
       "guided": "Guru susun contoh empat kad dari kecil ke besar",
-      "practice": "Murid susun lima set kad yang telah dikocok",
+      "practice": "Murid susun lima set kad yang telah dikocok Sebut turutan yang telah disusun.",
       "support": "Sediakan jalur nombor dan anak panah",
       "closure": "Baca satu susunan dari kiri",
-      "assessment": "Rekod pencapaian kriteria: 4/5 set nombor disusun menaik. Catat jenis bantuan.",
+      "assessment": "Rekod pencapaian kriteria: 4/5 set nombor disusun menaik. Catat jenis bantuan. Catat bacaan turutan.",
       "reflection_criterion": "4/5 set nombor disusun menaik",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "020",
@@ -515,7 +535,8 @@
       "closure": "Baca jalur yang siap",
       "assessment": "Rekod pencapaian kriteria: 4/5 nombor hilang dilengkapkan. Catat jenis bantuan.",
       "reflection_criterion": "4/5 nombor hilang dilengkapkan",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "021",
@@ -534,12 +555,13 @@
       "materials": "Kad angka, tangga nombor",
       "induction": "Gerakkan penanda menuruni tangga",
       "guided": "Guru modelkan menyusun dari 20 ke nombor lebih kecil",
-      "practice": "Murid susun lima set kad secara menurun",
+      "practice": "Murid susun lima set kad secara menurun Sebut turutan yang telah disusun.",
       "support": "Gunakan anak panah dan nombor mula",
       "closure": "Baca satu susunan dari besar ke kecil",
-      "assessment": "Rekod pencapaian kriteria: 4/5 set nombor disusun menurun. Catat jenis bantuan.",
+      "assessment": "Rekod pencapaian kriteria: 4/5 set nombor disusun menurun. Catat jenis bantuan. Catat bacaan turutan.",
       "reflection_criterion": "4/5 set nombor disusun menurun",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "022",
@@ -562,7 +584,8 @@
       "closure": "Semak nombor terakhir dengan rakan",
       "assessment": "Rekod pencapaian kriteria: 4/5 ruang kosong menurun dilengkapkan. Catat jenis bantuan.",
       "reflection_criterion": "4/5 ruang kosong menurun dilengkapkan",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "023",
@@ -580,13 +603,14 @@
       "success_criterion": "4/5 hasil tambah objek tepat",
       "materials": "Pembilang, dua dulang, dulang jumlah",
       "induction": "Letak tiga pembilang dalam dulang",
-      "guided": "Guru masukkan kumpulan kedua dan kira semua",
+      "guided": "Guru masukkan kumpulan kedua dan kira semua Gunakan istilah tambah lagi, jumlah dan semua.",
       "practice": "Murid gabungkan lima pasangan kumpulan dan sebut jumlah",
       "support": "Gunakan dulang berpetak dan pembilang besar",
       "closure": "Tunjukkan jumlah selepas menggabung",
       "assessment": "Rekod pencapaian kriteria: 4/5 hasil tambah objek tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 hasil tambah objek tepat",
-      "activity_book_ref": "19–21"
+      "activity_book_ref": "19–21",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "024",
@@ -609,7 +633,8 @@
       "closure": "Nyatakan satu jumlah",
       "assessment": "Rekod pencapaian kriteria: 4/5 jumlah gambar ditentukan tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 jumlah gambar ditentukan tepat",
-      "activity_book_ref": "19–21"
+      "activity_book_ref": "19–21",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "025",
@@ -632,7 +657,8 @@
       "closure": "Baca satu ayat matematik",
       "assessment": "Rekod pencapaian kriteria: 4/5 simbol yang hilang dipilih tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 simbol yang hilang dipilih tepat",
-      "activity_book_ref": "19–21"
+      "activity_book_ref": "19–21",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "026",
@@ -655,7 +681,8 @@
       "closure": "Baca satu ayat matematik",
       "assessment": "Rekod pencapaian kriteria: 4/5 ayat tambah lengkap ditulis tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 ayat tambah lengkap ditulis tepat",
-      "activity_book_ref": "19–21"
+      "activity_book_ref": "19–21",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "027",
@@ -678,7 +705,8 @@
       "closure": "Semak susunan digit",
       "assessment": "Rekod pencapaian kriteria: 4/5 operasi ditulis dengan kedudukan betul. Catat jenis bantuan.",
       "reflection_criterion": "4/5 operasi ditulis dengan kedudukan betul",
-      "activity_book_ref": "19–23"
+      "activity_book_ref": "19–23",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "028",
@@ -703,7 +731,8 @@
       "closure": "Terangkan satu pergerakan",
       "assessment": "Rekod pencapaian kriteria: 4/5 jumlah dalam lingkungan 20 tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 jumlah dalam lingkungan 20 tepat",
-      "activity_book_ref": "22–23"
+      "activity_book_ref": "22–23",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "029",
@@ -722,12 +751,13 @@
       "materials": "Pembilang dua warna, kad jumlah",
       "induction": "Pisahkan enam pembilang kepada dua warna",
       "guided": "Guru ubah pembahagian tanpa menukar jumlah",
-      "practice": "Murid cari lima pasangan nombor bagi jumlah yang ditetapkan",
+      "practice": "Murid cari lima pasangan nombor bagi jumlah yang ditetapkan Lukis dua kumpulan bagi satu pasangan.",
       "support": "Gunakan dulang tetap bilangan petak",
       "closure": "Kongsi satu pasangan nombor",
       "assessment": "Rekod pencapaian kriteria: 4/5 pasangan nombor membentuk jumlah sasaran. Catat jenis bantuan.",
       "reflection_criterion": "4/5 pasangan nombor membentuk jumlah sasaran",
-      "activity_book_ref": "19–23"
+      "activity_book_ref": "19–23",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "030",
@@ -750,7 +780,8 @@
       "closure": "Semak nilai puluh satu jawapan",
       "assessment": "Rekod pencapaian kriteria: 4/5 operasi dua digit tambah satu digit tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 operasi dua digit tambah satu digit tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "031",
@@ -768,12 +799,13 @@
       "materials": "Kad fakta tambah, kad jawapan",
       "induction": "Pilih satu kad jumlah sasaran",
       "guided": "Guru bina satu fakta daripada pasangan nombor",
-      "practice": "Murid padankan enam ayat tambah dengan hasil dalam permainan giliran",
+      "practice": "Murid padankan enam ayat tambah dengan hasil dalam permainan giliran Bina dua fakta tambah baharu daripada satu jumlah sasaran.",
       "support": "Gunakan pembilang sebagai sokongan bukan ujian kepantasan",
       "closure": "Baca satu fakta tambah",
       "assessment": "Rekod pencapaian kriteria: 5/6 hasil tambah tepat. Catat jenis bantuan.",
       "reflection_criterion": "5/6 hasil tambah tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "032",
@@ -791,13 +823,14 @@
       "success_criterion": "4/5 baki objek tepat",
       "materials": "Pembilang besar, dua bekas",
       "induction": "Tunjuk bekas berisi objek",
-      "guided": "Guru asingkan sebahagian objek dan kira yang masih tinggal",
+      "guided": "Guru asingkan sebahagian objek dan kira yang masih tinggal Gunakan istilah asingkan dan baki.",
       "practice": "Murid lakukan lima arahan asing dan sebut baki",
       "support": "Gunakan ruang berasingan supaya objek yang ditolak jelas",
       "closure": "Tunjuk objek yang masih tinggal",
       "assessment": "Rekod pencapaian kriteria: 4/5 baki objek tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 baki objek tepat",
-      "activity_book_ref": "27–29"
+      "activity_book_ref": "27–29",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "033",
@@ -820,7 +853,8 @@
       "closure": "Nyatakan satu baki",
       "assessment": "Rekod pencapaian kriteria: 4/5 baki gambar tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 baki gambar tepat",
-      "activity_book_ref": "27–29"
+      "activity_book_ref": "27–29",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "034",
@@ -843,7 +877,8 @@
       "closure": "Baca simbol yang dipilih",
       "assessment": "Rekod pencapaian kriteria: 4/5 simbol yang hilang dipilih tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 simbol yang hilang dipilih tepat",
-      "activity_book_ref": "27–29"
+      "activity_book_ref": "27–29",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "035",
@@ -866,7 +901,8 @@
       "closure": "Baca satu ayat matematik",
       "assessment": "Rekod pencapaian kriteria: 4/5 ayat tolak lengkap ditulis tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 ayat tolak lengkap ditulis tepat",
-      "activity_book_ref": "27–29"
+      "activity_book_ref": "27–29",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "036",
@@ -889,7 +925,8 @@
       "closure": "Semak kedudukan digit",
       "assessment": "Rekod pencapaian kriteria: 4/5 operasi disusun dengan digit dan simbol tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 operasi disusun dengan digit dan simbol tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "037",
@@ -914,7 +951,8 @@
       "closure": "Tunjuk langkah bagi satu operasi",
       "assessment": "Rekod pencapaian kriteria: 4/5 hasil tolak dalam lingkungan 20 tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 hasil tolak dalam lingkungan 20 tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "038",
@@ -933,12 +971,13 @@
       "materials": "Kad jumlah, pembilang dua warna",
       "induction": "Bina satu kumpulan dua warna",
       "guided": "Guru asingkan satu warna dan padankan operasi",
-      "practice": "Murid pilih lima jumlah dan bina fakta tolak daripada dua bahagian",
+      "practice": "Murid pilih lima jumlah dan bina fakta tolak daripada dua bahagian Lukis dua bahagian bagi satu fakta tolak.",
       "support": "Gunakan kad gambar dua bahagian",
       "closure": "Nyatakan baki daripada satu jumlah",
       "assessment": "Rekod pencapaian kriteria: 4/5 fakta tolak dibina tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 fakta tolak dibina tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "039",
@@ -961,7 +1000,8 @@
       "closure": "Semak bilangan puluh yang tidak berubah",
       "assessment": "Rekod pencapaian kriteria: 4/5 operasi dua digit tolak satu digit tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 operasi dua digit tolak satu digit tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "040",
@@ -981,12 +1021,13 @@
       "materials": "Papan laluan rekaan, dadu, kad operasi",
       "induction": "Pilih penanda permainan",
       "guided": "Guru modelkan giliran dan cara menyemak jawapan",
-      "practice": "Murid jawab enam kad tolak mengikut giliran dengan bahan sokongan jika perlu",
+      "practice": "Murid jawab enam kad tolak mengikut giliran dengan bahan sokongan jika perlu Bina dua fakta tolak daripada satu jumlah dan bahagiannya.",
       "support": "Tiada had masa; beri pilihan menunjuk jawapan",
       "closure": "Ulang fakta yang memerlukan latihan",
       "assessment": "Rekod pencapaian kriteria: 5/6 hasil tolak tepat. Catat jenis bantuan.",
       "reflection_criterion": "5/6 hasil tolak tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "041",
@@ -1009,7 +1050,8 @@
       "closure": "Pilih kad RM5",
       "assessment": "Rekod pencapaian kriteria: 5/6 kad wang dipadankan mengikut denominasi tepat. Catat jenis bantuan.",
       "reflection_criterion": "5/6 kad wang dipadankan mengikut denominasi tepat",
-      "activity_book_ref": "35"
+      "activity_book_ref": "35",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "042",
@@ -1032,7 +1074,8 @@
       "closure": "Namakan wang pilihan",
       "assessment": "Rekod pencapaian kriteria: 5/6 wang yang ditunjuk dinamakan tepat. Catat jenis bantuan.",
       "reflection_criterion": "5/6 wang yang ditunjuk dinamakan tepat",
-      "activity_book_ref": "35"
+      "activity_book_ref": "35",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "043",
@@ -1055,7 +1098,8 @@
       "closure": "Baca satu label harga",
       "assessment": "Rekod pencapaian kriteria: 4/5 label wang dilengkapkan dengan RM. Catat jenis bantuan.",
       "reflection_criterion": "4/5 label wang dilengkapkan dengan RM",
-      "activity_book_ref": "36"
+      "activity_book_ref": "36",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "044",
@@ -1078,7 +1122,8 @@
       "closure": "Pilih wang bagi satu harga",
       "assessment": "Rekod pencapaian kriteria: 5/6 nilai wang dipilih tepat. Catat jenis bantuan.",
       "reflection_criterion": "5/6 nilai wang dipilih tepat",
-      "activity_book_ref": "36–37"
+      "activity_book_ref": "36–37",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "045",
@@ -1104,7 +1149,8 @@
       "closure": "Semak satu transaksi simulasi",
       "assessment": "Rekod pencapaian kriteria: 5/6 tugasan pengecaman, nama dan nilai tepat. Catat jenis bantuan.",
       "reflection_criterion": "5/6 tugasan pengecaman, nama dan nilai tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "046",
@@ -1127,7 +1173,8 @@
       "closure": "Tunjuk kedudukan nombor 12",
       "assessment": "Rekod pencapaian kriteria: 8/12 nombor pada muka jam dikenal pasti. Catat jenis bantuan.",
       "reflection_criterion": "8/12 nombor pada muka jam dikenal pasti",
-      "activity_book_ref": "39"
+      "activity_book_ref": "39",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "047",
@@ -1151,7 +1198,8 @@
       "closure": "Nyatakan jarum yang menunjukkan jam",
       "assessment": "Rekod pencapaian kriteria: 4/5 pengecaman jarum tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 pengecaman jarum tepat",
-      "activity_book_ref": "39"
+      "activity_book_ref": "39",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "048",
@@ -1174,7 +1222,8 @@
       "closure": "Sebut waktu pada jam pilihan",
       "assessment": "Rekod pencapaian kriteria: 4/5 waktu tepat pada jam analog disebut. Catat jenis bantuan.",
       "reflection_criterion": "4/5 waktu tepat pada jam analog disebut",
-      "activity_book_ref": "40"
+      "activity_book_ref": "40",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "049",
@@ -1197,7 +1246,8 @@
       "closure": "Baca satu jawapan yang ditulis",
       "assessment": "Rekod pencapaian kriteria: 4/5 waktu pada jam analog ditulis tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 waktu pada jam analog ditulis tepat",
-      "activity_book_ref": "41"
+      "activity_book_ref": "41",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "050",
@@ -1220,7 +1270,8 @@
       "closure": "Semak panjang jarum yang dilukis",
       "assessment": "Rekod pencapaian kriteria: 4/5 jarum pendek dilukis pada nombor yang betul. Catat jenis bantuan.",
       "reflection_criterion": "4/5 jarum pendek dilukis pada nombor yang betul",
-      "activity_book_ref": "42–43"
+      "activity_book_ref": "42–43",
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     },
     {
       "pdp": "051",
@@ -1245,7 +1296,94 @@
       "closure": "Pilih satu waktu rutin harian",
       "assessment": "Rekod pencapaian kriteria: 5/6 tugasan sebut, tulis atau lukis waktu tepat. Catat jenis bantuan.",
       "reflection_criterion": "5/6 tugasan sebut, tulis atau lukis waktu tepat",
-      "activity_book_ref": null
+      "activity_book_ref": null,
+      "standard_audit": "DSKP Asas 3M, halaman bercetak 47–62; huraian ringkas untuk audit. Status kelulusan asal dikekalkan."
     }
-  ]
+  ],
+  "content_standards": {
+    "1.1": "Perbandingan objek dan kuantiti.",
+    "2.1": "Pengecaman angka.",
+    "2.2": "Tulisan dan bacaan nombor.",
+    "2.3": "Digit, nilai dan kuantiti.",
+    "2.4": "Turutan angka.",
+    "2.5": "Penggunaan nombor harian.",
+    "3.1": "Asas penambahan.",
+    "3.2": "Notasi penambahan.",
+    "3.3": "Pengiraan jumlah.",
+    "4.1": "Asas penolakan.",
+    "4.2": "Notasi penolakan.",
+    "4.3": "Pengiraan beza.",
+    "5.1": "Mata wang tempatan.",
+    "6.1": "Waktu jam tepat."
+  },
+  "learning_standards": {
+    "1.1.1": "Cam perbezaan fizikal objek.",
+    "1.1.2": "Bezakan objek mengikut sifatnya.",
+    "1.1.3": "Bandingkan jumlah dalam kumpulan.",
+    "1.1.3(i)": "Banding banyak dengan sedikit.",
+    "1.1.3(ii)": "Banding lebih dengan kurang.",
+    "1.1.3(iii)": "Tentukan kesamaan kuantiti.",
+    "2.1.1": "Cam angka hingga 20.",
+    "2.1.2": "Namakan angka hingga 20.",
+    "2.2.1": "Lakar angka.",
+    "2.2.2(i)": "Catat dalam bentuk angka.",
+    "2.2.2(ii)": "Catat nama nombor.",
+    "2.2.3": "Baca nama atau angka.",
+    "2.3.1(i)": "Sebut kedudukan digit sa dan puluh.",
+    "2.3.1(ii)": "Sebut nilai digit.",
+    "2.3.2(i)": "Tentukan kedudukan digit.",
+    "2.3.2(ii)": "Tentukan nilai digit.",
+    "2.3.3(i)": "Padankan angka dengan bilangan benda.",
+    "2.3.3(ii)": "Padankan angka dengan bilangan bergambar.",
+    "2.4.1": "Sebut turutan menaik.",
+    "2.4.2": "Atur angka menaik.",
+    "2.4.3": "Isi angka hilang dalam turutan menaik.",
+    "2.4.4": "Sebut turutan menurun.",
+    "2.4.5": "Atur angka menurun.",
+    "2.4.6": "Isi angka hilang dalam turutan menurun.",
+    "2.5.1": "Sebut angka sekitar murid.",
+    "2.5.2": "Kira benda sekitar murid.",
+    "2.5.3": "Gunakan angka dalam rutin.",
+    "3.1.1": "Kenali istilah penambahan.",
+    "3.1.2": "Tentukan jumlah gabungan dua kumpulan.",
+    "3.1.2(i)": "Tentukan jumlah menggunakan benda.",
+    "3.1.2(ii)": "Tentukan jumlah menggunakan gambar.",
+    "3.2.1": "Cam tanda + dan =.",
+    "3.2.2(i)": "Tulis ayat tambah mendatar.",
+    "3.2.2(ii)": "Tulis tambah secara menegak.",
+    "3.3.1": "Tambah satu digit kepada dua digit tanpa pengumpulan semula.",
+    "3.3.2(i)": "Bina fakta tambah dengan benda.",
+    "3.3.2(ii)": "Bina fakta tambah dengan gambar.",
+    "3.3.2(iii)": "Bina fakta tambah dengan angka.",
+    "4.1.1": "Kenali istilah penolakan.",
+    "4.1.2": "Tentukan baki selepas pengurangan.",
+    "4.1.2(i)": "Tentukan baki menggunakan benda.",
+    "4.1.2(ii)": "Tentukan baki menggunakan gambar.",
+    "4.2.1": "Cam tanda − dan =.",
+    "4.2.2(i)": "Tulis ayat tolak mendatar.",
+    "4.2.2(ii)": "Tulis tolak secara menegak.",
+    "4.3.1": "Tolak satu digit daripada dua digit tanpa pengumpulan semula.",
+    "4.3.2(i)": "Bina fakta tolak dengan benda.",
+    "4.3.2(ii)": "Bina fakta tolak dengan gambar.",
+    "4.3.2(iii)": "Bina fakta tolak dengan angka.",
+    "5.1.1": "Cam denominasi RM1, RM5 dan RM10.",
+    "5.1.2": "Namakan tiga denominasi tersebut.",
+    "5.1.3": "Cam singkatan RM.",
+    "5.1.4": "Tentukan nilai ketiga-tiga denominasi.",
+    "6.1.1": "Cam angka pada jam analog.",
+    "6.1.2(i)": "Cam jarum penunjuk jam.",
+    "6.1.2(ii)": "Cam jarum penunjuk minit.",
+    "6.1.3": "Sebut waktu tepat dalam jam.",
+    "6.1.4": "Catat waktu jam analog.",
+    "6.1.5": "Lukis jarum jam mengikut waktu.",
+    "1.1.1(i)": "Cam ketebalan objek.",
+    "1.1.2(i)": "Bezakan ketebalan objek.",
+    "1.1.1(ii)": "Cam ketinggian objek.",
+    "1.1.2(ii)": "Bezakan ketinggian objek.",
+    "1.1.1(iii)": "Cam panjang objek.",
+    "1.1.2(iii)": "Bezakan panjang objek.",
+    "1.1.1(iv)": "Cam berat objek.",
+    "1.1.2(iv)": "Bezakan berat objek."
+  },
+  "standard_text_kind": "Parafrasa audit; bukan salinan rasmi"
 }
