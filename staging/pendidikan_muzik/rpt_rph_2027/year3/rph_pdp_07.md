@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru membandingkan bunyi pendek dan panjang; murid menyebut ta serta ta-a mengikut kiraan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
+**Aktiviti 1 — Nilai not satu dan dua detik**  
 Berdasarkan latihan pada halaman 26, murid menepuk corak satu dan dua detik menggunakan ikon nilai not; guru membetulkan tempoh bunyi sebelum menambah kerincing.
 
-**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Iringan kerincing Tepuk Amai-amai**  
 Murid dibahagi dua kumpulan seperti cadangan halaman 27: kumpulan pertama menyanyikan Tepuk Amai-amai, kumpulan kedua memainkan corak kerincing; mereka bertukar peranan selepas satu pusingan.
 
 **Pengukuhan & Penilaian — 6 minit**  
