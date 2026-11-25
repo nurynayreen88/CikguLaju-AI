@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru menyemak tepukan mengikut ikon halaman 46 secara pasangan sambil menyebut empat detik.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+**Aktiviti 1 — Urutan enam gerakan**  
 Guru memodelkan turutan halaman 47: gerak setempat empat detik, kaki kiri ke sisi, kaki kanan ke belakang, kaki kiri ke depan, rapatkan kaki kanan dan gerak setempat semula.
 
-**Aktiviti 2 — Aplikasi / persembahan (10 minit)**  
+**Aktiviti 2 — Gerak Irama berpasangan**  
 Murid berlatih berpasangan dengan kiraan guru, kemudian kumpulan mempersembahkan urutan sambil seorang ahli menjaga tempo menggunakan perkusi.
 
 **Pengukuhan & Penilaian — 6 minit**  
