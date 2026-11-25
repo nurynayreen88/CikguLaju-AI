@@ -80,13 +80,17 @@ class TestPPKIEnglishWebRelease(unittest.TestCase):
                                         ("5", "Clothes We Wear", 17, 22),
                                         ("6", "Colours Everywhere", 23, 27),
                                         ("7", "Fruits and Vegetables", 28, 32),
-                                        ("8", "Count Together", 33, 38)]:
+                                        ("8", "Count Together", 33, 38),
+                                        ("9", "Months of the Year", 39, 42),
+                                        ("10", "Work We Do", 43, 47),
+                                        ("11", "Going Around", 48, 52),
+                                        ("12", "Animals I Love", 53, 57)]:
             obj["units"].append({"value": unit, "label": title, "lessons": [
                 {"value": f"{n:03d}", "label": f"Lesson {n}", "textbook_ref": str(n),
                  "formats": ["word", "pdf"]} for n in range(start, end + 1)]})
         with patch.object(ppki, "_request", return_value=json.dumps(obj).encode()):
-            self.assertEqual([u["value"] for u in ppki.get_options("units", 2, ppki.ENGLISH_SUBJECT)], ["1", "2", "3", "4", "5", "6", "7", "8"])
-            self.assertEqual(ppki.validate_selection(2, ppki.ENGLISH_SUBJECT, "8", "038")["value"], "038")
+            self.assertEqual([u["value"] for u in ppki.get_options("units", 2, ppki.ENGLISH_SUBJECT)], [str(n) for n in range(1, 13)])
+            self.assertEqual(ppki.validate_selection(2, ppki.ENGLISH_SUBJECT, "12", "057")["value"], "057")
             with self.assertRaises(ValueError):
                 ppki.validate_selection(2, ppki.ENGLISH_SUBJECT, "1", "004")
         obj["units"][2]["lessons"][0]["value"] = "999"
