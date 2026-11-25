@@ -40,6 +40,16 @@
           "2.1.2"
         ],
         "note": "Book lists 20 wajib and meanings, exercise naming and matching five; choose activity with exact textbook task."
+      },
+      "native_review": {
+        "sp": [
+          "2.1.1",
+          "2.1.2"
+        ],
+        "criterion": "موريد داڤت مثنارايکن صيفت واجب الله دان مڽاتاکن مقصودڽ دڠن بتول.",
+        "assessment": "Semak padanan sifat wajib dengan makna melalui latihan buku teks.",
+        "note": "Activity and objective align with observed native standards; use textbook matching exercise.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
       }
     },
     {
@@ -63,6 +73,16 @@
           "6.1.2"
         ],
         "note": "Kampungku Permai illustrated occupations and Alamku Damai examples; use suitable three-syllable examples selected from book, not all illustrated words."
+      },
+      "native_review": {
+        "sp": [
+          "6.1.1",
+          "6.1.2"
+        ],
+        "criterion": "موريد داڤت ممباچ دان ممبينا ڤرکاتاءن تيݢ سوکو کات دڠن بتول.",
+        "assessment": "Semak bacaan dan binaan perkataan tiga suku kata secara individu.",
+        "note": "Choose examples from textbook, do not invent page content.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
       }
     },
     {
@@ -90,6 +110,14 @@
           "2.1.2"
         ],
         "note": "RPT activity names sifat mustahil; these inspected textbook pages show 20 wajib and application only. Do not mark mustahil wrong; reconcile scope of RPT and DSKP before release."
+      },
+      "native_review": {
+        "sp": [
+          "2.1.1",
+          "2.1.2"
+        ],
+        "note": "HOLD: RPT focuses on sifat mustahil but inspected pages focus on sifat wajib; reconcile scope before any release.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
       }
     },
     {
@@ -113,6 +141,15 @@
           "6.1.2"
         ],
         "note": "Same target as PdP3; use segmentation and matching, distinct from initial reading."
+      },
+      "native_review": {
+        "sp": [
+          "6.1.1",
+          "6.1.2"
+        ],
+        "criterion": "موريد داڤت مڽوسون تيݢ سوکو کات دان ممباچ ڤرکاتاءن يڠ دبينا دڠن بتول.",
+        "assessment": "Semak susunan tiga suku kata dan bacaan hasil binaan secara individu.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
       }
     },
     {
@@ -138,6 +175,15 @@
           "3.1.2"
         ],
         "note": "Tools: clean rough objects; criteria and two conditions shown; exercise identify and explain."
+      },
+      "native_review": {
+        "sp": [
+          "3.1.1",
+          "3.1.2"
+        ],
+        "criterion": "موريد داڤت مثنارايکن الت براستنجاء سلاءين درڤد اءير دان منرڠکن شرطڽ دڠن بتول.",
+        "assessment": "Murid memilih alat yang sesuai dan menerangkan syaratnya; guru menyemak jawapan.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
       }
     },
     {
@@ -161,6 +207,16 @@
           "3.1.4"
         ],
         "note": "Three wipes, new rough surface each wipe; accessible, alternative to water; use illustrated/model demonstration, no bodily demonstration."
+      },
+      "native_review": {
+        "sp": [
+          "3.1.3",
+          "3.1.4"
+        ],
+        "criterion": "موريد داڤت منجلسکن چارا دان کڤنتيڠن براستنجاء سلاءين درڤد اءير دڠن بتول.",
+        "assessment": "Susun langkah berdasarkan ilustrasi buku teks, terangkan kepentingan; tiada demonstrasi pada tubuh.",
+        "note": "Strengthen activity 2 with safe illustration/model based on inspected source pages.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
       }
     },
     {
@@ -181,6 +237,17 @@
           "1.1.1"
         ],
         "note": "An-Nas six verses, read following teacher; note talaqqi and musyafahah. Verify exact active SP."
+      },
+      "native_review": {
+        "sp": [
+          "1.1.1",
+          "1.1.2",
+          "1.1.3"
+        ],
+        "criterion": "موريد داڤت ممباچ دان ممڤردڠرکن باچاءن سورة الناس دڠن بتول دان برتجويد.",
+        "assessment": "Semakan individu bacaan Surah an-Nas, ketepatan dan tajwid; bimbing pembetulan.",
+        "note": "Existing native criterion wrongly says hafazan; correct criterion and auto reflection. Check daily application scope against source.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
       }
     },
     {
@@ -201,6 +268,16 @@
           "1.3.1"
         ],
         "note": "An-Nas memorization six verses; teacher models, pupils practise individual/paired/group recitation; verify exact active SP and application."
+      },
+      "native_review": {
+        "sp": [
+          "1.3.1",
+          "1.3.2",
+          "1.3.3"
+        ],
+        "criterion": "موريد داڤت ممڤردڠرکن حفظن سورة الناس دڠن بتول دان برتجويد سرتا مڽاتاکن عملنڽ دالم صلاة دان کهيدوڤن هارين.",
+        "assessment": "Semak hafazan individu dan penerangan penggunaan surah dalam solat atau kehidupan harian.",
+        "source": "Actual native Word text, CI 45528744516; compare prior textbook evidence; proposed fields only; exact original DSKP/Jawi visual and final render pending."
       }
     }
   ],
@@ -297,5 +374,12 @@
     "verified_records": 698,
     "objective_changes": 14,
     "live": false
+  },
+  "wave1_review": {
+    "status": "NATIVE_SP_OBJECTIVE_ACTIVITY_REVIEW_8_COMPLETE_NOT_RELEASE_APPROVED",
+    "reviewed": 8,
+    "hold_source_scope": 1,
+    "criterion_proposals": 7,
+    "note": "Actual native SP codes captured; retain all source/visual release gates. For PdP22 and26 the native SP lists three codes, not just initial expected code."
   }
 }
