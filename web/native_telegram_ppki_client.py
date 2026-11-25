@@ -190,7 +190,7 @@ def catalog(year=YEAR):
 
 
 def english_catalog(year):
-    """Only server-reviewed English Year 2 Unit 1 may enter this release."""
+    """Accept only reviewed complete units in the explicit Year 2 release scope."""
     if year != 2:
         raise ValueError("Unknown PPKI English year")
     try:
@@ -205,13 +205,17 @@ def english_catalog(year):
     units = obj.get("units")
     if obj.get("available") is False and units == []:
         return []
-    if obj.get("available") is not True or not isinstance(units, list) or len(units) != 1:
+    if obj.get("available") is not True or not isinstance(units, list) or not 1 <= len(units) <= 4:
         raise NativeRPHUnavailable("Unexpected PPKI English unit scope")
-    entry = units[0]
-    _validate_unit(entry, "1", [["001", "002", "003"]])
-    if any(item.get("formats") != list(FORMATS) or
-           not isinstance(item.get("textbook_ref"), str) for item in entry["lessons"]):
-        raise NativeRPHUnavailable("Invalid PPKI English lesson metadata")
+    expected = {"1": ["001", "002", "003"], "2": ["004", "005", "006", "007"],
+                "3": ["008", "009", "010", "011"], "4": ["012", "013", "014", "015", "016"]}
+    if any(not isinstance(entry, dict) for entry in units) or [entry.get("value") for entry in units] != list(expected)[:len(units)]:
+        raise NativeRPHUnavailable("Unexpected PPKI English unit sequence")
+    for entry in units:
+        _validate_unit(entry, entry["value"], [expected[entry["value"]]])
+        if any(item.get("formats") != list(FORMATS) or
+               not isinstance(item.get("textbook_ref"), str) for item in entry["lessons"]):
+            raise NativeRPHUnavailable("Invalid PPKI English lesson metadata")
     return units
 
 
@@ -233,9 +237,9 @@ def get_options(kind, year, subject=None, component=None, unit=None):
         units = english_catalog(year)
         if kind == "units":
             return [{"value": row["value"], "label": row["label"]} for row in units]
-        if unit != "1":
+        if unit not in ("1", "2", "3", "4"):
             raise ValueError("Invalid PPKI English unit")
-        return units[0]["lessons"] if units else []
+        return next((entry["lessons"] for entry in units if entry["value"] == unit), [])
     if (year not in YEARS or kind not in ("subjects", "components", "units", "pdp")
             or (kind != "subjects" and subject != SUBJECT)
             or (kind == "units" and component not in (COMPONENT, MANIPULATIVE_COMPONENT))
