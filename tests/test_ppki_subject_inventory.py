@@ -51,15 +51,16 @@ class TestPPKISubjectReleaseAPI(unittest.TestCase):
             response = client.get(prefix + "/subject-catalog?year=2&subject=" + subject, headers=headers)
             self.assertEqual(response.status_code, 200)
             units = response.get_json()["units"]
-            self.assertEqual([u["value"] for u in units], ["1"])
+            self.assertEqual([u["value"] for u in units], ["1", "2", "3", "4"])
+            self.assertEqual([len(u["lessons"]) for u in units], [3, 4, 4, 5])
             self.assertEqual([x["value"] for x in units[0]["lessons"]], ["001", "002", "003"])
             teacher = {"class": "2 PPKI", "date": "2027-01-12", "time": "08:00 - 09:00", "students": "6", "reflection": ""}
-            for lesson in ("001", "002", "003", "004"):
+            for unit, lesson in [(u["value"], x["value"]) for u in units for x in u["lessons"]] + [("1", "004"), ("5", "017")]:
                 for fmt in ("word", "pdf"):
                     response = client.post(prefix + "/render", headers=headers, json={
-                        "selection": {"year": 2, "subject": subject, "unit": "1", "lesson": lesson},
+                        "selection": {"year": 2, "subject": subject, "unit": unit, "lesson": lesson},
                         "format": fmt, "teacher": teacher})
-                    if lesson == "004":
+                    if (unit, lesson) in (("1", "004"), ("5", "017")):
                         self.assertEqual(response.status_code, 404)
                     else:
                         self.assertEqual(response.status_code, 200)
