@@ -11,13 +11,13 @@
 
 **Set induksi (4 minit):** Guru memperdengarkan satu frasa latihan rekoder. Murid menunjukkan kedudukan jari bagi not G, A dan B sebelum mencuba not C’.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menyemak postur serta cara meniup lembut sambil memperkenalkan penjarian not C’ seperti buku m/s 60.
+**Aktiviti 1 — Penjarian not C’:** Guru menyemak postur serta cara meniup lembut sambil memperkenalkan penjarian not C’ seperti buku m/s 60.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid memainkan latihan rekoder 1–5 secara bertahap dan mengulang frasa yang tidak tepat pada tempo perlahan.
+**Aktiviti 2 — Latihan frasa rekoder:** Murid memainkan latihan rekoder 1–5 secara bertahap dan mengulang frasa yang tidak tepat pada tempo perlahan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menilai ton, penjarian, postur dan perlidahan dalam dua percubaan. Sebagai pengayaan, murid menepuk corak irama melodi kaunter Cergas Badan dan memainkan satu frasa dengan iringan Audio 55 atau 56.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid memainkan semula frasa G, A, B dan C’ yang sukar dengan hembusan lembut.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 60–61, rekoder, Audio 49–53 untuk latihan dan Audio 54–57 untuk pengayaan.
 

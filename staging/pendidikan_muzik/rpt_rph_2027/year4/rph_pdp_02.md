@@ -9,15 +9,15 @@
 
 **Objektif:** Mengenal dan menulis sekurang-kurangnya tiga daripada empat simbol muzik dengan betul.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **SENJA NAN INDAH**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru menunjukkan baluk daripada skor Not Berbunyi. Murid mengenal simbol yang pernah dilihat.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru mengimbas lagu Not Berbunyi kemudian memperkenalkan baluk, klef trebel, garis bar dan garis penamat seperti dalam buku m/s 11.
+**Aktiviti 1 — Kenali simbol muzik:** Guru mengimbas lagu Not Berbunyi kemudian memperkenalkan baluk, klef trebel, garis bar dan garis penamat seperti dalam buku m/s 11.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menyalin baluk pendek dan menandakan garis bar, simbol ulangan serta meter pada tempat yang betul.
+**Aktiviti 2 — Latihan menulis simbol:** Murid menyalin baluk pendek dan menandakan garis bar, simbol ulangan serta meter pada tempat yang betul.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak empat simbol dan minta murid menerangkan fungsi satu simbol.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid melukis tiga simbol dan menerangkan fungsi satu daripadanya.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

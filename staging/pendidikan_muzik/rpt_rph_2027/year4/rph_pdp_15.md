@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Guru menunjukkan ayunan tangan perlahan dan langkah setempat; murid meniru apabila mendengar detik.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Guru menunjukkan langkah dan ayunan Pergerakan Gemalai. Murid mengulang pergerakan mengikut detik Audio 48.
+**Aktiviti 1 — Langkah dan ayunan Gemalai:** Guru menunjukkan langkah dan ayunan Pergerakan Gemalai. Murid mengulang pergerakan mengikut detik Audio 48.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan kecil membina urutan gerak dan mengekalkan tempo ketika menggabungkan ayunan tangan dengan langkah ke depan dan belakang.
+**Aktiviti 2 — Gabungan urutan gerak:** Kumpulan kecil membina urutan gerak dan mengekalkan tempo ketika menggabungkan ayunan tangan dengan langkah ke depan dan belakang.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru memeriksa tempo, koordinasi dan ruang selamat melalui demonstrasi individu dan berkumpulan.
 
-**Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
+**Penutup:** Murid memperagakan dua urutan Gemalai mengikut detik dengan ruang selamat.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 52–53, Audio 48 dan ruang pergerakan yang selamat.
 

@@ -9,15 +9,15 @@
 
 **Objektif:** Menyanyikan frasa lagu dengan pic dan tempo tepat dalam dua daripada tiga percubaan.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **BEG CANTIK MENAWAN**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru mengetuk detik dan menunjukkan bahagian kumpulan suara pada skor. Murid menandakan giliran masuk.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memainkan Audio 17 dan 18 secara bergilir sambil menunjukkan bahagian kumpulan suara pada skor Beg Cantik Menawan. Murid menepuk detik dan menyebut masa kumpulan suara masuk.
+**Aktiviti 1 — Giliran kumpulan suara:** Guru memainkan Audio 17 dan 18 secara bergilir sambil menunjukkan bahagian kumpulan suara pada skor Beg Cantik Menawan. Murid menepuk detik dan menyebut masa kumpulan suara masuk.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menyanyikan frasa pendek secara bergilir, kemudian menyanyikan keseluruhan bahagian yang sesuai dengan tempo seragam.
+**Aktiviti 2 — Nyanyian frasa mengikut tempo:** Murid menyanyikan frasa pendek secara bergilir, kemudian menyanyikan keseluruhan bahagian yang sesuai dengan tempo seragam.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menyemak pic, tempo dan postur; murid mencuba semula selepas pembetulan.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menyanyi satu frasa pada giliran yang betul; guru menyemak pic dan tempo.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 30–31, skor Beg Cantik Menawan dan Audio 17–18.
 

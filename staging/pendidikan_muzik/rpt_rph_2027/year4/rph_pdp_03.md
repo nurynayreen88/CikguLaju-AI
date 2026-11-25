@@ -9,15 +9,15 @@
 
 **Objektif:** Menulis dan menamakan not C’ dan D’ pada baluk serta melengkapkan sekurang-kurangnya tiga daripada empat item latihan.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **SENJA NAN INDAH**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru mengimbas kedudukan G, A dan B, kemudian menunjukkan dua kad not C’ dan D’.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menunjukkan penjarian/kedudukan not C’ dan D’ di baluk dan mengaitkannya dengan not G, A dan B yang dipelajari.
+**Aktiviti 1 — Kedudukan not C’ dan D’:** Guru menunjukkan penjarian/kedudukan not C’ dan D’ di baluk dan mengaitkannya dengan not G, A dan B yang dipelajari.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menyusun kad warna dan nilai not mengikut arahan aktiviti Susun Notasi serta menulis jawapan dalam buku manuskrip.
+**Aktiviti 2 — Susun Notasi:** Murid menyusun kad warna dan nilai not mengikut arahan aktiviti Susun Notasi serta menulis jawapan dalam buku manuskrip.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak nama, kedudukan dan nilai not C’/D’ melalui empat item.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menulis C’ dan D’ pada baluk; guru membetulkan kedudukan yang tersilap.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

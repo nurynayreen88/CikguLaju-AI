@@ -9,15 +9,15 @@
 
 **Objektif:** Membezakan serta melaksanakan legato dan staccato dalam nyanyian pada dua frasa contoh.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **BUNGA GERGASI**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru menyanyikan satu frasa secara bersambung dan terputus-putus. Murid membezakan kedua-duanya.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memodelkan sebutan bersambung (legato) dan terputus-putus (staccato), murid membandingkan kedua-duanya.
+**Aktiviti 1 — Kenali legato dan staccato:** Guru memodelkan sebutan bersambung (legato) dan terputus-putus (staccato), murid membandingkan kedua-duanya.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menandakan simbol pada kad frasa lagu Bunga Gergasi dan menyanyikannya dengan artikulasi yang ditunjukkan.
+**Aktiviti 2 — Artikulasi lagu Bunga Gergasi:** Murid menandakan simbol pada kad frasa lagu Bunga Gergasi dan menyanyikannya dengan artikulasi yang ditunjukkan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak dua penggunaan artikulasi dan satu penjelasan lisan.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid mempersembahkan dua frasa dengan artikulasi berbeza dan menamakan setiap teknik.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

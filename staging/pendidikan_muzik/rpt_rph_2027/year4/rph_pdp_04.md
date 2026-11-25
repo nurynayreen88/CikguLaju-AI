@@ -9,15 +9,15 @@
 
 **Objektif:** Menepuk satu corak irama dengan tanda rehat dan mengikut skor yang disediakan secara tepat dalam dua percubaan.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **WARNA WARNI KEK CAWAN**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru menepuk pola dengan satu detik senyap. Murid mengajuk tepukan tanpa mengisi rehat.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperdengarkan contoh Kek Cawan Comel dan menunjukkan perbezaan bunyi dengan rehat.
+**Aktiviti 1 — Bunyi dan tanda rehat:** Guru memperdengarkan contoh Kek Cawan Comel dan menunjukkan perbezaan bunyi dengan rehat.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid membaca corak irama satu dan dua serta menepuk pola menggunakan sebutan ta dan ti-ti sebelum memegang perkusi.
+**Aktiviti 2 — Tepuk corak Kek Cawan Comel:** Murid membaca corak irama satu dan dua serta menepuk pola menggunakan sebutan ta dan ti-ti sebelum memegang perkusi.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menyemak bacaan pola dan rehat, kemudian murid menepuk sambil lagu dinyanyikan.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menepuk satu pola dengan rehat mengikut skor; guru menyemak ketepatan.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

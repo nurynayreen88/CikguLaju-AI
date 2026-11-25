@@ -9,15 +9,15 @@
 
 **Objektif:** Memainkan dua corak irama yang berbeza mengikut tempo lagu secara ensembel ringkas.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **BEG CANTIK MENAWAN**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru menepuk Corak Irama 1 dan 2 secara berasingan. Murid mengenal perbezaan pola.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperlihatkan Corak Irama 1 dan 2 di buku serta meminta murid menepuk setiap corak berasingan.
+**Aktiviti 1 — Latihan dua corak irama:** Guru memperlihatkan Corak Irama 1 dan 2 di buku serta meminta murid menepuk setiap corak berasingan.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menggunakan kerincing atau kastanet (jika ada) untuk mengiringi lagu dalam dua kumpulan dan bergilir peranan.
+**Aktiviti 2 — Ensembel kerincing dan kastanet:** Murid menggunakan kerincing atau kastanet (jika ada) untuk mengiringi lagu dalam dua kumpulan dan bergilir peranan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menilai ketepatan pola, tempo dan koordinasi semasa ensembel.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Kumpulan memainkan dua pola serentak pada detik sama; guru menyemak koordinasi.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
