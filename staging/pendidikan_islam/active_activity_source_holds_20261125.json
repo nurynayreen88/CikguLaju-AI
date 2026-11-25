@@ -147,6 +147,13 @@
       "pdp": 109,
       "reason": "Objective and three source steps target Iqlab but reading drill names Ikhfa Hakiki. Confirm source against DSKP and textbook.",
       "source_run": 45524095256
+    },
+    {
+      "id": 1815,
+      "year": 5,
+      "pdp": 129,
+      "reason": "Objective combines al-Asr and al-Qadr; activity note focuses on al-Qadr. Verify original curriculum and textbook before correction.",
+      "source_run": 45524846245
     }
   ]
 }
