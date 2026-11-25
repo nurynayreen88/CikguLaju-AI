@@ -32,12 +32,13 @@
       "materials": "Kon, penanda tapak, permukaan rata",
       "induction": "Panaskan badan dengan gerakan ringan.",
       "guided": "Guru modelkan langkah pendek dan panjang di trek selamat.",
-      "practice": "Murid ikut empat arahan laluan dan berhenti pada isyarat.",
+      "practice": "Murid ikut empat arahan laluan dan berhenti pada isyarat. Laksanakan latihan pada rumput rata atau pasir yang selamat dan kenal pasti permukaan.",
       "support": "Alat mobiliti atau sokongan individu; jarak disesuaikan.",
       "closure": "Sejukkan badan dan kenal permukaan.",
       "assessment": "Rekod pencapaian: 3/4 laluan ditempuh mengikut arahan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 laluan ditempuh mengikut arahan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "002",
@@ -64,7 +65,9 @@
       "closure": "Keluar secara tertib dan bersihkan diri.",
       "assessment": "Rekod pencapaian: 2 laluan pendek dilalui dengan sokongan sesuai. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 laluan pendek dilalui dengan sokongan sesuai",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "alternate_no_pool": true,
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "003",
@@ -91,7 +94,8 @@
       "closure": "Sejukkan badan dan pilih permukaan.",
       "assessment": "Rekod pencapaian: 3/4 laluan selamat dilalui. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 laluan selamat dilalui",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "004",
@@ -118,7 +122,8 @@
       "closure": "Kenal pasti satu gerakan.",
       "assessment": "Rekod pencapaian: 3 gerakan statik dilakukan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 gerakan statik dilakukan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "005",
@@ -145,7 +150,8 @@
       "closure": "Sejukkan badan.",
       "assessment": "Rekod pencapaian: 3/4 gerakan kiri atau kanan tepat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 gerakan kiri atau kanan tepat",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "006",
@@ -172,7 +178,8 @@
       "closure": "Padankan kad gerak.",
       "assessment": "Rekod pencapaian: 3 jenis gerakan dikenal dan ditunjukkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 jenis gerakan dikenal dan ditunjukkan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "007",
@@ -200,7 +207,8 @@
       "closure": "Kutip alatan dengan arahan.",
       "assessment": "Rekod pencapaian: 3/5 balingan sampai kawasan sasaran. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/5 balingan sampai kawasan sasaran",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "008",
@@ -228,7 +236,8 @@
       "closure": "Sejukkan tangan.",
       "assessment": "Rekod pencapaian: 3/5 golekan sampai sasaran. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/5 golekan sampai sasaran",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "009",
@@ -257,7 +266,8 @@
       "closure": "Simpan bola.",
       "assessment": "Rekod pencapaian: 3/5 tendangan menuju sasaran. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/5 tendangan menuju sasaran",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "010",
@@ -286,7 +296,8 @@
       "closure": "Kemas alat.",
       "assessment": "Rekod pencapaian: 3/5 objek ditangkap atau dikawal. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/5 objek ditangkap atau dikawal",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "011",
@@ -314,7 +325,8 @@
       "closure": "Refleksi stesen pilihan.",
       "assessment": "Rekod pencapaian: 3/4 stesen diselesaikan dengan teknik sasaran. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 stesen diselesaikan dengan teknik sasaran",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "012",
@@ -342,7 +354,9 @@
       "closure": "Keluar dengan bantuan dan berehat.",
       "assessment": "Rekod pencapaian: 2 tindakan keyakinan air dilakukan mengikut kesediaan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 tindakan keyakinan air dilakukan mengikut kesediaan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "alternate_no_pool": true,
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "013",
@@ -370,7 +384,9 @@
       "closure": "Keluar, rehat dan rekod pencapaian sebenar.",
       "assessment": "Rekod pencapaian: Percubaan bobbing terkawal direkod mengikut kesediaan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "Percubaan bobbing terkawal direkod mengikut kesediaan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "alternate_no_pool": true,
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "014",
@@ -397,7 +413,8 @@
       "closure": "Ucap penghargaan kepada rakan.",
       "assessment": "Rekod pencapaian: 2 giliran permainan diselesaikan mengikut peraturan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 giliran permainan diselesaikan mengikut peraturan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "015",
@@ -414,18 +431,20 @@
         "2.5",
         "5.2"
       ],
-      "title": "Permainan susun blok berkumpulan",
-      "objective": "2 tugas giliran diselesaikan",
-      "success_criterion": "2 tugas giliran diselesaikan",
-      "materials": "Blok besar, penanda lorong",
-      "induction": "Tunjuk bentuk sasaran.",
-      "guided": "Guru terangkan giliran dan sempadan lorong.",
-      "practice": "Kumpulan susun blok selepas bergerak atau menggunakan versi meja.",
-      "support": "Jarak pendek dan tiada perlumbaan wajib.",
+      "title": "Tarik upih dan perbandingan permainan",
+      "objective": "1 permainan tradisional dikenal pasti dan 2 giliran simulasi selamat diselesaikan",
+      "success_criterion": "1 permainan tradisional dikenal pasti dan 2 giliran simulasi selamat diselesaikan",
+      "materials": "Gambar tarik upih, bahan simulasi ringan, kad permainan",
+      "induction": "Lihat gambar permainan tarik upih.",
+      "guided": "Guru jelaskan peraturan tarik upih dan beza dengan permainan susun blok.",
+      "practice": "Murid mengenal pasti permainan tradisional dan mencuba simulasi menarik bahan kosong yang ringan dengan giliran; rekod simulasi berasingan daripada permainan sebenar.",
+      "support": "Tiada tarikan membawa murid lain; adaptasi berdasarkan kemampuan dan penilaian risiko sekolah.",
       "closure": "Kemas blok bersama.",
-      "assessment": "Rekod pencapaian: 2 tugas giliran diselesaikan. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "2 tugas giliran diselesaikan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "assessment": "Rekod pencapaian: 1 permainan tradisional dikenal pasti dan 2 giliran simulasi selamat diselesaikan. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "1 permainan tradisional dikenal pasti dan 2 giliran simulasi selamat diselesaikan",
+      "status": "ADAPTASI_PERLU_SAHAN",
+      "source_note": "DSKP menetapkan tarik upih dan ketingting; simulasi tidak membuktikan penguasaan permainan sebenar.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "016",
@@ -450,7 +469,8 @@
       "assessment": "Rekod pencapaian: 2 aktiviti pemanasan dan 1 gerakan menyejukkan badan dilakukan. Catat bantuan dan adaptasi.",
       "reflection_criterion": "2 aktiviti pemanasan dan 1 gerakan menyejukkan badan dilakukan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "017",
@@ -477,7 +497,8 @@
       "assessment": "Rekod dua gerakan aktif, satu gerakan penyejukan dan respons mengenal pasti aktiviti. Catat adaptasi.",
       "reflection_criterion": "2 gerakan aktif dan 1 aktiviti menyejukkan badan dilakukan serta dikenal pasti",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "DSKP hlm. 27, semakan visual 3.1.1, 3.1.2, 4.1.2."
+      "source_note": "DSKP hlm. 27, semakan visual 3.1.1, 3.1.2, 4.1.2.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "018",
@@ -503,7 +524,8 @@
       "assessment": "Rekod pencapaian: 1 tempoh berjalan yang disesuaikan diselesaikan dan 1 aktiviti aerobik dikenal pasti. Catat bantuan dan adaptasi.",
       "reflection_criterion": "1 tempoh berjalan yang disesuaikan diselesaikan dan 1 aktiviti aerobik dikenal pasti",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "019",
@@ -527,7 +549,8 @@
       "assessment": "Rekod pencapaian: 3 gaya berjalan dicuba dalam tempoh yang ditetapkan mengikut kemampuan. Catat bantuan dan adaptasi.",
       "reflection_criterion": "3 gaya berjalan dicuba dalam tempoh yang ditetapkan mengikut kemampuan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "020",
@@ -552,7 +575,8 @@
       "assessment": "Rekod pencapaian: 1 ukuran tinggi dan 1 timbangan dilakukan dengan bimbingan. Catat bantuan dan adaptasi.",
       "reflection_criterion": "1 ukuran tinggi dan 1 timbangan dilakukan dengan bimbingan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "021",
@@ -577,9 +601,71 @@
       "assessment": "Rekod pencapaian: 2 ukuran dibuat dan direkod dengan bantuan yang sesuai. Catat bantuan dan adaptasi.",
       "reflection_criterion": "2 ukuran dibuat dan direkod dengan bantuan yang sesuai",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     }
   ],
   "audit_round": "2026-11-26: semakan kod sasaran, bukan kelulusan penuh",
-  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan."
+  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan.",
+  "units": {
+    "1": "Lokomotor",
+    "2": "Bukan lokomotor",
+    "3": "Manipulasi alatan",
+    "4": "Akuatik asas",
+    "5": "Rekreasi dan kesenggangan",
+    "6": "Konsep kecergasan",
+    "7": "Kapasiti aerobik",
+    "8": "Komposisi badan"
+  },
+  "content_standards": {
+    "1.1": "Gerak lokomotor asas.",
+    "2.1": "Pengetahuan lokomotor.",
+    "1.2": "Gerak bukan lokomotor.",
+    "2.2": "Pengetahuan gerak bukan lokomotor.",
+    "1.3": "Kemahiran mengendalikan alatan.",
+    "2.3": "Pengetahuan manipulasi alatan.",
+    "1.4": "Asas renang.",
+    "2.4": "Keselamatan air.",
+    "1.5": "Permainan tradisional.",
+    "2.5": "Aktiviti luar kelas dan keselamatan.",
+    "3.1": "Aktiviti fizikal dan kecergasan.",
+    "4.1": "Pengetahuan konsep kecergasan.",
+    "3.2": "Peningkatan kapasiti aerobik.",
+    "4.2": "Pengetahuan kapasiti aerobik.",
+    "3.3": "Pengukuran komposisi badan.",
+    "5.1": "Pengurusan dan keselamatan.",
+    "5.2": "Keyakinan serta tanggungjawab kendiri."
+  },
+  "learning_standards": {
+    "1.1.1": "Berjalan di kawasan rumput, pasir, air dan batu.",
+    "2.1.1": "Kenal pasti aktiviti berjalan pada empat permukaan tersebut.",
+    "5.1.1": "Amalkan persediaan diri sepanjang aktiviti.",
+    "1.2.1": "Lakukan ayunan, kilasan dan pusingan.",
+    "2.2.1": "Nyatakan cara gerak bukan lokomotor yang selamat.",
+    "5.1.2": "Kenal pasti ruang aktiviti yang selamat.",
+    "1.3.1": "Baling objek dengan bebas.",
+    "1.3.2": "Golek objek dengan bebas.",
+    "1.3.3": "Tendang objek dengan bebas.",
+    "1.3.4": "Tangkap objek sambil menyerap daya.",
+    "2.3.1": "Kenal pasti kedudukan badan yang sesuai.",
+    "2.3.2": "Kenal pasti alatan sesuai.",
+    "2.3.3": "Nyatakan alatan sesuai.",
+    "5.1.3": "Simpan alatan secara selamat sepanjang aktiviti.",
+    "1.4.1": "Bina keyakinan dalam air.",
+    "1.4.2": "Praktikkan pernafasan bobbing dalam air.",
+    "2.4.1": "Kenal pasti aspek keselamatan air.",
+    "1.5.1": "Main tarik upih dan ketingting.",
+    "2.5.1": "Kenal pasti permainan tarik upih dan ketingting.",
+    "2.5.2": "Bezakan permainan tradisional daripada permainan lain.",
+    "5.2.1": "Tunjukkan keseronokan mencuba aktiviti baharu.",
+    "5.2.2": "Terima cabaran dan keputusan permainan.",
+    "3.1.1": "Lakukan aktiviti yang menaikkan suhu badan dan kadar nafas.",
+    "3.1.2": "Lakukan penyejukan badan.",
+    "4.1.2": "Nyatakan aktiviti penyejukan.",
+    "3.2.1": "Berjalan pelbagai gaya secara berterusan dalam tempoh ditetapkan.",
+    "4.2.1": "Nyatakan aktiviti yang meningkatkan kapasiti aerobik.",
+    "3.3.1": "Ukur ketinggian.",
+    "3.3.2": "Timbang berat badan."
+  },
+  "standard_text_kind": "Parafrasa ringkas untuk audit; bukan huraian verbatim rasmi."
 }
