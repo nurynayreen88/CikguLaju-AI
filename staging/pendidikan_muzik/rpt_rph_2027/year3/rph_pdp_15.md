@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru menepuk detik Parang Ilang dan meminta murid membezakan gerakan tepat dan terlewat.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+**Aktiviti 1 — Latihan lima gerakan**  
 Berpandukan ilustrasi gerakan halaman 45, guru memodelkan lima bentuk gerakan yang sesuai lalu membahagikan murid kepada kumpulan penyanyi dan kumpulan bergerak.
 
-**Aktiviti 2 — Aplikasi / persembahan (10 minit)**  
+**Aktiviti 2 — Persembahan gerak berkumpulan**  
 Kumpulan A menyanyi mengikut pic, kumpulan B memperagakan gerakan mengikut tempo; mereka bertukar peranan dan menilai keseragaman pergerakan.
 
 **Pengukuhan & Penilaian — 6 minit**  
