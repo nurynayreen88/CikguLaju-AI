@@ -968,3 +968,11 @@ except Exception as _pi_jawi_numerals_exc:
     RPH_PI_JAWI_NUMERALS_ACTIVE = False
     print("PI Jawi numeral presentation unavailable:",
           type(_pi_jawi_numerals_exc).__name__, flush=True)
+
+# Bulk PI editorial integration, gated until release validation.
+try:
+    from web.pi_editorial_bulk_20261125 import install as install_pi_editorial_bulk
+    PI_EDITORIAL_BULK_ACTIVE = bool(install_pi_editorial_bulk(telegram_runtime))
+except Exception as _pi_bulk_exc:
+    PI_EDITORIAL_BULK_ACTIVE = False
+    print('PI bulk editorial unavailable:',type(_pi_bulk_exc).__name__,flush=True)
