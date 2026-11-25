@@ -9,15 +9,15 @@
 
 **Objektif:** Melengkapkan empat daripada lima item meter, garis bar atau tanda rehat pada baluk.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **LARIAN RIANG RIA**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru menepuk empat detik dengan tekanan pada detik pertama. Murid mengenal permulaan bar.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memainkan Audio 58 hingga 60 sambil menunjukkan meter pada skor. Murid menepuk corak dan menekankan detik pertama setiap bar.
+**Aktiviti 1 — Meter dan tekanan detik:** Guru memainkan Audio 58 hingga 60 sambil menunjukkan meter pada skor. Murid menepuk corak dan menekankan detik pertama setiap bar.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menyalin latihan buku m/s 62–63, mengisi meter, melukis garis bar dan tanda rehat mengikut corak.
+**Aktiviti 2 — Latihan garis bar dan rehat:** Murid menyalin latihan buku m/s 62–63, mengisi meter, melukis garis bar dan tanda rehat mengikut corak.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak lima item hasil murid dan pembetulan rakan sebaya.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menunjukkan pembetulan meter, garis bar atau tanda rehat pada baluk.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 62–63, Audio 58–60 dan manuskrip muzik.
 
