@@ -10,15 +10,15 @@
 
 **Objektif:** Murid mencipta corak irama empat detik dan memainkannya bersama nyanyian secara kumpulan.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan SEGARNYA AIR TERJUN; murid menunjukkan respons awal.
+**Set induksi:** Guru menepuk empat detik dan menunjukkan kad ikon. Murid mengajuk corak pendek.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru memainkan petikan Nyamannya di Air Terjun. Murid menepuk empat detik sebelum berlatih corak irama ciptaan dengan Audio 81 atau 82.
+**Aktiviti 1 — Bina corak empat detik:** Guru memainkan petikan Nyamannya di Air Terjun. Murid menepuk empat detik sebelum berlatih corak irama ciptaan dengan Audio 81 atau 82.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid bertukar peranan, membina corak menggunakan kad ikon dan memainkannya pada lagu Nyamannya di Air Terjun.
+**Aktiviti 2 — Ensembel Pemuzik Cilik:** Murid bertukar peranan, membina corak menggunakan kad ikon dan memainkannya pada lagu Nyamannya di Air Terjun.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak corak ciptaan, tempo, isyarat masuk dan kerjasama.
+**Pengukuhan dan pentaksiran:** Semak corak ciptaan, tempo, isyarat masuk dan kerjasama.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Kumpulan memainkan corak empat detik bersama nyanyian. Guru menyemak isyarat masuk dan tempo.
 
 **Bahan:** Buku Kesenian Tahun 2 m/s 90 dan 92–94, Audio 80–82 Nyamannya di Air Terjun, kad ikon dan alat improvisasi.
 

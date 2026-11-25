@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyanyikan satu rangkap Burung Kenek-Kenek dengan pic yang tepat.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan BURUNG KENEK-KENEK; murid menunjukkan respons awal.
+**Set induksi:** Guru menyenandungkan frasa Burung Kenek-Kenek. Murid mengajuk frasa tanpa lirik terlebih dahulu.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru memodelkan cara menyenandungkan lagu dan mengajuk frasa sebelum menyebut lirik.
+**Aktiviti 1 — Senandung dan ajuk pic:** Guru memodelkan cara menyenandungkan lagu dan mengajuk frasa sebelum menyebut lirik.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid menyanyi baris demi baris, kemudian rangkap demi rangkap dalam kumpulan dengan pembetulan pic.
+**Aktiviti 2 — Nyanyian satu rangkap:** Murid menyanyi baris demi baris, kemudian rangkap demi rangkap dalam kumpulan dengan pembetulan pic.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak pic, frasa dan sebutan dalam dua percubaan.
+**Pengukuhan dan pentaksiran:** Semak pic, frasa dan sebutan dalam dua percubaan.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menyanyikan frasa yang sukar sekali lagi. Guru membimbing pembetulan pic.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 61; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 61; lagu Burung Kenek-Kenek, panduan melodi guru.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 

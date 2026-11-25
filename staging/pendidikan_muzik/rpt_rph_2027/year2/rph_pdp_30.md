@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyatakan dua ciri muzik tarian singa serta satu alat pengiringnya.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan JALAN-JALAN KE TAMAN RAMA-RAMA; murid menunjukkan respons awal.
+**Set induksi:** Guru menunjukkan gambar tarian singa dan alat iringan. Murid meneka alat yang menghasilkan bunyi.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru menunjukkan gambar tarian singa dan menjelaskan fungsi dram serta gong sebagai alat iringan.
+**Aktiviti 1 — Alat iringan tarian singa:** Guru menunjukkan gambar tarian singa dan menjelaskan fungsi dram serta gong sebagai alat iringan.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid membincangkan suasana persembahan tarian singa dan melakonkan satu gerak berpasangan yang selamat.
+**Aktiviti 2 — Apresiasi muzik dan gerak:** Murid membincangkan suasana persembahan tarian singa dan melakonkan satu gerak berpasangan yang selamat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak dua fakta budaya, pengenalan alat dan satu ulasan berdasarkan petikan.
+**Pengukuhan dan pentaksiran:** Semak dua fakta budaya, pengenalan alat dan satu ulasan berdasarkan petikan.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menamakan satu alat iringan dan menyebut dua ciri muzik tarian singa.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 82-83; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 82–83; gambar tarian singa, gambar dram dan gong.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 

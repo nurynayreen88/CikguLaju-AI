@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyanyikan satu frasa Tembikar Cantik pada tempo yang betul.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan ULI-ULI TEMBIKAR; murid menunjukkan respons awal.
+**Set induksi:** Guru menunjukkan skor Tembikar Cantik dan mengetuk detik tetap. Murid mengikut detik dengan tepukan.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru menunjukkan skor lagu Tembikar Cantik dan mengetuk tempo secara seragam.
+**Aktiviti 1 — Detik lagu Tembikar Cantik:** Guru menunjukkan skor lagu Tembikar Cantik dan mengetuk tempo secara seragam.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid mengajuk frasa, menyanyi secara bergilir dan mengulangi rangkap dengan tempo tetap.
+**Aktiviti 2 — Nyanyian frasa berirama:** Murid mengajuk frasa, menyanyi secara bergilir dan mengulangi rangkap dengan tempo tetap.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak pic, tempo dan artikulasi dua percubaan.
+**Pengukuhan dan pentaksiran:** Semak pic, tempo dan artikulasi dua percubaan.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menyanyikan satu frasa mengikut detik yang ditetapkan tanpa bantuan tepukan rakan.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 70; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 70; skor Tembikar Cantik, alat ketuk.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 

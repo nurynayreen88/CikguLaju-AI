@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyusun corak irama daripada sekurang-kurangnya empat ikon setelah mendengar contoh.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan CANTIK MENAWAN; murid menunjukkan respons awal.
+**Set induksi:** Guru menepuk satu pola empat detik. Murid memilih ikon ta, ti-ti atau sa mengikut bunyi.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru memodelkan empat corak irama dan cara memadankan bunyi dengan ikon ta, ti-ti dan sa.
+**Aktiviti 1 — Padankan bunyi dan ikon:** Guru memodelkan empat corak irama dan cara memadankan bunyi dengan ikon ta, ti-ti dan sa.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid mengambil kad ikon mengikut bunyi, menyusun di papan dan menepuk pola dalam kumpulan.
+**Aktiviti 2 — Dengar Susun Ajuk Tepuk:** Murid mengambil kad ikon mengikut bunyi, menyusun di papan dan menepuk pola dalam kumpulan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak pemadanan, ketepatan tepuk dan satu corak hasil ciptaan murid.
+**Pengukuhan dan pentaksiran:** Semak pemadanan, ketepatan tepuk dan satu corak hasil ciptaan murid.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menyusun empat ikon berdasarkan ketukan guru, kemudian menepuk semula pola tersebut.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 54; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 54; kad ikon ta, ti-ti, sa, papan susunan.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 

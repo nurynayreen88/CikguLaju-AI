@@ -10,15 +10,15 @@
 
 **Objektif:** Murid memainkan irama dalam kumpulan mengikut isyarat konduktor dan bertukar peranan.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan ULI-ULI TEMBIKAR; murid menunjukkan respons awal.
+**Set induksi:** Guru menunjukkan isyarat mula dan henti. Murid memberi respons melalui satu pola tepukan.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru menggunakan Audio 67 untuk mengimbas Tembikar Cantik. Murid membaca skor ikon dan mencuba isyarat mula serta henti sebelum bermain.
+**Aktiviti 1 — Skor ikon dan isyarat:** Guru menggunakan Audio 67 untuk mengimbas Tembikar Cantik. Murid membaca skor ikon dan mencuba isyarat mula serta henti sebelum bermain.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid memilih alat improvisasi, bermain pada tempo seragam dan bergilir menjadi konduktor kumpulan.
+**Aktiviti 2 — Konduktor Muda:** Murid memilih alat improvisasi, bermain pada tempo seragam dan bergilir menjadi konduktor kumpulan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan isyarat, tempo, kerjasama serta keselamatan alat.
+**Pengukuhan dan pentaksiran:** Semak ketepatan isyarat, tempo, kerjasama serta keselamatan alat.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Seorang murid memberi isyarat mula dan henti kepada kumpulan. Guru menyemak respons dan tempo.
 
 **Bahan:** Buku Kesenian Tahun 2 m/s 70 dan 72–73, skor ikon Tembikar Cantik, Audio 67–69 dan alat muzik improvisasi.
 

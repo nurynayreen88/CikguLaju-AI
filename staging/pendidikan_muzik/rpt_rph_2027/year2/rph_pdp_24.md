@@ -10,17 +10,17 @@
 
 **Objektif:** Murid mengekalkan detik lagu pada dua tempo menggunakan ketukan kayu irama dalam pasangan.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan ULI-ULI TEMBIKAR; murid menunjukkan respons awal.
+**Set induksi:** Guru mengetuk dua tempo menggunakan kayu irama. Murid mengajuk ketukan cepat dan lambat.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru memperdengarkan contoh tempo lambat/cepat dan menunjukkan pergerakan Ketuk-ketuk Detik.
+**Aktiviti 1 — Ketuk detik dua tempo:** Guru memperdengarkan contoh tempo lambat/cepat dan menunjukkan pergerakan Ketuk-ketuk Detik.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid mengetuk kayu irama dengan pasangan dan berkawad/bertukar pasangan secara selamat apabila frasa bertukar.
+**Aktiviti 2 — Gerak dan tukar pasangan:** Murid mengetuk kayu irama dengan pasangan dan berkawad/bertukar pasangan secara selamat apabila frasa bertukar.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak ketukan, tempo dan koordinasi pergerakan.
+**Pengukuhan dan pentaksiran:** Semak ketukan, tempo dan koordinasi pergerakan.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Pasangan murid memainkan empat detik pada setiap tempo. Guru menyemak ketepatan pertukaran.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 71; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 71; kayu irama, kad tempo, ruang pergerakan selamat.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
