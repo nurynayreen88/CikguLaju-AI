@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru mengajar langkah setempat empat kiraan dan isyarat tepuk pasangan sebelum memulakan pergerakan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid mengikut tiga gerakan halaman 14–15: tepuk sendiri, empat langkah kanan/kiri diikuti empat petikan jari, dan tepukan tangan bersama pasangan.
+**Aktiviti 1 — Latihan Tiga Corak Gerakan (8 minit):** Murid mengikut tiga gerakan halaman 14–15: tepuk sendiri, empat langkah kanan/kiri diikuti empat petikan jari, dan tepukan tangan bersama pasangan.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Kelas dibahagi Kumpulan A/B untuk gerakan arah jam dan lawan jam halaman 16–17; murid berhenti berpasangan pada frasa tengah, kemudian mengubah gerakan mengikut tempo cepat/sederhana/lambat yang diberi guru.
+**Aktiviti 2 — Gerak Bulatan Mengikut Perubahan Tempo (10 minit):** Kelas dibahagi Kumpulan A/B untuk gerakan arah jam dan lawan jam halaman 16–17; murid berhenti berpasangan pada frasa tengah, kemudian mengubah gerakan mengikut tempo cepat/sederhana/lambat yang diberi guru.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru memeriksa tiga corak, ketepatan tempo dan pengurusan ruang/arah pergerakan.
 

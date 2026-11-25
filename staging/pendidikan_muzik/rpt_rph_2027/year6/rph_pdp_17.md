@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru menerangkan perbezaan melodi utama dan melodi kaunter melalui dua contoh bunyi yang dihasilkan sendiri.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membaca dan memainkan latihan rekoder Country Gardens halaman 48 secara ansur maju dengan penjarian dan perlidahan yang bersih.
+**Aktiviti 1 — Latihan Rekoder Country Gardens (8 minit):** Murid membaca dan memainkan latihan rekoder Country Gardens halaman 48 secara ansur maju dengan penjarian dan perlidahan yang bersih.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kelas dibahagi dua kumpulan seperti nota buku halaman 49 untuk berlatih melodi kaunter Memori Indah dan mempersembahkan secara bergilir, kemudian seorang murid mencuba secara individu.
+**Aktiviti 2 — Melodi Kaunter Memori Indah (10 minit):** Kelas dibahagi dua kumpulan seperti nota buku halaman 49 untuk berlatih melodi kaunter Memori Indah dan mempersembahkan secara bergilir, kemudian seorang murid mencuba secara individu.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak penjarian, tempo dan kejelasan satu frasa daripada setiap latihan.
 

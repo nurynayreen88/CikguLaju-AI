@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru memulakan pematah lidah pendek dengan tempo lambat lalu mempercepat sebutan secara terkawal.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid berlatih pematah lidah halaman 11 dan ajuk frasa lagu Mouse Mousie; guru menumpukan sebutan tepat sebelum tempo ditingkatkan.
+**Aktiviti 1 — Pematah Lidah dan Sebutan Mouse Mousie (8 minit):** Murid berlatih pematah lidah halaman 11 dan ajuk frasa lagu Mouse Mousie; guru menumpukan sebutan tepat sebelum tempo ditingkatkan.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid mengajuk nyanyian Gerbang Ilmu halaman 12, mengikut tanda pernafasan pada awal frasa dan simbol dinamik dalam skor.
+**Aktiviti 2 — Nyanyian Gerbang Ilmu dengan Dinamik (10 minit):** Murid mengajuk nyanyian Gerbang Ilmu halaman 12, mengikut tanda pernafasan pada awal frasa dan simbol dinamik dalam skor.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai satu pematah lidah dan nyanyian melalui sebutan, pic dan tempo.
 

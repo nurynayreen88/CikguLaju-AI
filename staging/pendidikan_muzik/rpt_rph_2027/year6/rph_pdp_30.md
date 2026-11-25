@@ -10,15 +10,15 @@
 
 **Objektif:** Murid menyanyikan frasa Rindu dengan pic dan tempo serta ayunan irama swing.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu petikan, skor atau aktiviti berkaitan unit dan meminta murid menunjukkan pengetahuan sedia ada.
+**Set induksi (4 minit):** Guru menyanyikan satu frasa Rindu mengikut skor dan menunjukkan ayunan irama swing melalui tepukan; murid mengajuk frasa tersebut.
 
-**Aktiviti 1 — Demonstrasi / penemuan (8 minit):** Guru menunjukkan frasa yang mencabar dan demonstrasi sebutan mengikut tempo swing.
+**Aktiviti 1 — Demonstrasi Sebutan dan Irama Swing (8 minit):** Guru menunjukkan frasa yang mencabar dan demonstrasi sebutan mengikut tempo swing.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid mengajuk frasa pendek, menyanyi dengan ekspresi, kemudian menilai keseragaman kumpulan.
+**Aktiviti 2 — Nyanyian Gema Rindu dengan Ekspresi (10 minit):** Murid mengajuk frasa pendek, menyanyi dengan ekspresi, kemudian menilai keseragaman kumpulan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak pic, ayunan tempo dan tempat nafas.
 
-**Penutup (2 minit):** Murid menunjukkan satu kemahiran atau fakta muzik yang dipelajari; guru merekod pemerhatian PBD dan maklum balas.
+**Penutup (2 minit):** Murid menyanyikan satu frasa Rindu dengan pic, tempo dan ayunan swing yang tepat; guru memberi maklum balas.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, m/s 78-79, skor dan alat mengikut PdP.
 

@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru membimbing pemanasan suara dan menarik nafas sebelum memperdengarkan perbezaan bunyi beransur kuat dan lembut.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru membimbing latihan vokal halaman 3 serta nyanyian Setia Kawan mengikut frasa pada halaman 4, dengan pernafasan dan dinamik berpandukan skor.
+**Aktiviti 1 — Latihan Vokal dan Nyanyian Setia Kawan (8 minit):** Guru membimbing latihan vokal halaman 3 serta nyanyian Setia Kawan mengikut frasa pada halaman 4, dengan pernafasan dan dinamik berpandukan skor.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menggunakan simbol crescendo dan decrescendo halaman 5 untuk menyebut satu frasa dengan bunyi beransur kuat kemudian beransur lembut; mereka menyanyikan semula bahagian lagu.
+**Aktiviti 2 — Crescendo dan Decrescendo pada Frasa (10 minit):** Murid menggunakan simbol crescendo dan decrescendo halaman 5 untuk menyebut satu frasa dengan bunyi beransur kuat kemudian beransur lembut; mereka menyanyikan semula bahagian lagu.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai pic, tempo dan ketepatan dinamik melalui senarai semak tiga aspek.
 

@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru mengimbas fungsi rekoder, loceng, egg shaker dan dram bes dalam ensembel.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid menepuk dan memainkan tiga latihan perkusi halaman 74 (loceng–egg shaker, loceng–dram bes dan egg shaker–dram bes) secara kumpulan.
+**Aktiviti 1 — Latihan Tiga Pasangan Alat Perkusi (8 minit):** Murid menepuk dan memainkan tiga latihan perkusi halaman 74 (loceng–egg shaker, loceng–dram bes dan egg shaker–dram bes) secara kumpulan.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan rekoder dan perkusi menggabungkan ensembel Kelestarian Alam halaman 75–77; murid menjawab soalan skor tentang corak berulang, dinamik dan julat not sebelum persembahan.
+**Aktiviti 2 — Gabung Rekoder dan Perkusi Kelestarian Alam (10 minit):** Kumpulan rekoder dan perkusi menggabungkan ensembel Kelestarian Alam halaman 75–77; murid menjawab soalan skor tentang corak berulang, dinamik dan julat not sebelum persembahan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak penjarian melodi kaunter, ketepatan dua pola perkusi dan keseimbangan bunyi ensembel.
 

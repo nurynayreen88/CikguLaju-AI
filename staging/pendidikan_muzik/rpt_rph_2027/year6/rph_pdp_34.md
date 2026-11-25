@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru mengimbas frasa Country Gardens dan melodi kaunter Memori Indah dari halaman 48–49 untuk mengenal perbezaan melodi utama dan kaunter.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Guru memodelkan satu frasa melodi kaunter Memori Indah dengan Audio 94. Murid menyemak penjarian dan berlatih dengan Audio 95 tanpa suara rekoder.
+**Aktiviti 1 — Ulang Kaji Penjarian Kaunter Memori Indah (8 minit):** Guru memodelkan satu frasa melodi kaunter Memori Indah dengan Audio 94. Murid menyemak penjarian dan berlatih dengan Audio 95 tanpa suara rekoder.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Kumpulan A memainkan frasa rekoder dan Kumpulan B memberi ketukan detik; kemudian bertukar supaya setiap murid dapat memperbaiki penjarian dan keseimbangan bunyi.
+**Aktiviti 2 — Giliran Rekoder dan Iringan Detik (10 minit):** Kumpulan A memainkan frasa rekoder dan Kumpulan B memberi ketukan detik; kemudian bertukar supaya setiap murid dapat memperbaiki penjarian dan keseimbangan bunyi.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai penjarian, ton, tanda nafas dan tempo melalui dua percubaan yang berasingan.
 

@@ -13,13 +13,13 @@
 
 **Set Induksi — 4 minit:** Guru mengimbas peranan ketua kumpulan, etika persembahan dan pemanasan sebelum menggunakan alat muzik.
 
-**Aktiviti 1 — Bimbingan projek (8 minit):** Ketua menyemak audio bagi lagu pilihan, alat, peranan dan tertib masuk. Murid berlatih satu bahagian yang belum seragam sebelum persembahan.
+**Aktiviti 1 — Semak Giliran dan Latihan Akhir (8 minit):** Ketua menyemak audio bagi lagu pilihan, alat, peranan dan tertib masuk. Murid berlatih satu bahagian yang belum seragam sebelum persembahan.
 
-**Aktiviti 2 — Pelaksanaan projek (10 minit):** Kumpulan membuat persembahan, mengamalkan etika sebelum, semasa dan selepas persembahan, serta menilai kumpulan lain dengan borang.
+**Aktiviti 2 — Persembahan Projek dan Penilaian Rakan (10 minit):** Kumpulan membuat persembahan, mengamalkan etika sebelum, semasa dan selepas persembahan, serta menilai kumpulan lain dengan borang.
 
 **Pengukuhan dan Penilaian — 6 minit:** Murid menyemak senarai semak lagu, peranan, disiplin, koordinasi dan pengurusan alat. Guru melengkapkan pemerhatian PBD.
 
-**Penutup — 2 minit:** Ketua kumpulan berkongsi satu penambahbaikan serta memastikan peralatan disimpan dengan selamat.
+**Penutup — 2 minit:** Kumpulan melengkapkan sekurang-kurangnya tiga item penilaian kendiri dan rakan, kemudian menyatakan satu pembaikan persembahan.
 
 **Bahan:** Buku Muzik Tahun 6 m/s 44–45, borang penilaian, alat muzik dan audio contoh Mikroorganisma.
 

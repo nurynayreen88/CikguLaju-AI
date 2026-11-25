@@ -10,15 +10,15 @@
 
 **Objektif:** Murid mencipta empat gerak lapan detik dan mempersembahkan satu turutan yang sepadan dengan tempo.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu petikan, skor atau aktiviti berkaitan unit dan meminta murid menunjukkan pengetahuan sedia ada.
+**Set induksi (4 minit):** Guru menunjukkan pola langkah lapan detik mengikut tempo Rindu; murid meniru gerak sambil mengekalkan jarak selamat.
 
-**Aktiviti 1 — Demonstrasi / penemuan (8 minit):** Guru membimbing murid melalui stesen perkusi badan, pola langkah dan gerakan maju/mundur seperti contoh buku.
+**Aktiviti 1 — Teroka Tiga Stesen Gerakan (8 minit):** Guru membimbing murid melalui stesen perkusi badan, pola langkah dan gerakan maju/mundur seperti contoh buku.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan merancang empat gerak baharu mengikut tempo Rindu, melakukan latihan dan menilai persembahan rakan.
+**Aktiviti 2 — Cipta Empat Gerak Lapan Detik (10 minit):** Kumpulan merancang empat gerak baharu mengikut tempo Rindu, melakukan latihan dan menilai persembahan rakan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak urutan lapan detik, keselarasan tempo, koordinasi dan keselamatan.
 
-**Penutup (2 minit):** Murid menunjukkan satu kemahiran atau fakta muzik yang dipelajari; guru merekod pemerhatian PBD dan maklum balas.
+**Penutup (2 minit):** Kumpulan mempersembahkan turutan empat gerak lapan detik; guru menyemak keselarasan tempo dan keselamatan.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, m/s 80-81, skor dan alat mengikut PdP.
 

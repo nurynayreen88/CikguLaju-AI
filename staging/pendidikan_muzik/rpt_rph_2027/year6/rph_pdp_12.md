@@ -13,13 +13,13 @@
 
 **Set Induksi — 4 minit:** Guru mengimbas peranan ketua kumpulan, etika persembahan dan pemanasan sebelum menggunakan alat muzik.
 
-**Aktiviti 1 — Bimbingan projek (8 minit):** Guru memperdengarkan petikan Mikroorganisma sebagai contoh. Murid memilih lagu atau aktiviti daripada Unit 1–5, melantik ketua dan membahagikan peranan.
+**Aktiviti 1 — Pilih Lagu dan Agih Peranan Projek (8 minit):** Guru memperdengarkan petikan Mikroorganisma sebagai contoh. Murid memilih lagu atau aktiviti daripada Unit 1–5, melantik ketua dan membahagikan peranan.
 
-**Aktiviti 2 — Pelaksanaan projek (10 minit):** Murid melengkapkan borang perancangan, membina jadual latihan dan menguji kesediaan alat; guru memberi maklum balas.
+**Aktiviti 2 — Rancang Jadual dan Semak Peralatan (10 minit):** Murid melengkapkan borang perancangan, membina jadual latihan dan menguji kesediaan alat; guru memberi maklum balas.
 
 **Pengukuhan dan Penilaian — 6 minit:** Murid menyemak senarai semak lagu, peranan, disiplin, koordinasi dan pengurusan alat. Guru melengkapkan pemerhatian PBD.
 
-**Penutup — 2 minit:** Ketua kumpulan berkongsi satu penambahbaikan serta memastikan peralatan disimpan dengan selamat.
+**Penutup — 2 minit:** Ketua membentangkan pilihan lagu, peranan ahli, jadual dan senarai alat; guru menyemak kelengkapan rancangan.
 
 **Bahan:** Buku Muzik Tahun 6 m/s 44–45, borang projek, alat muzik dan audio contoh Mikroorganisma.
 

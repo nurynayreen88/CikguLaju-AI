@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru memperkenalkan lagu Tudung Periuk sebagai karya yang disebut dalam buku dan menerangkan penggunaan bahan berlesen.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid mengajuk frasa nyanyian yang ditunjukkan dalam buku teks halaman 19 secara lisan melalui bimbingan guru, dengan latihan sebutan dan penekanan ekspresi.
+**Aktiviti 1 — Ajuk Frasa dan Sebutan Tudung Periuk (8 minit):** Murid mengajuk frasa nyanyian yang ditunjukkan dalam buku teks halaman 19 secara lisan melalui bimbingan guru, dengan latihan sebutan dan penekanan ekspresi.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menyanyikan satu frasa mengikut skor rujukan guru dengan dinamik yang berubah-ubah. Rakaman atau salinan lirik tidak diterbitkan bersama RPH; guru menggunakan sumber yang diperoleh secara sah.
+**Aktiviti 2 — Nyanyian dengan Dinamik dan Ekspresi (10 minit):** Murid menyanyikan satu frasa mengikut skor rujukan guru dengan dinamik yang berubah-ubah. Rakaman atau salinan lirik tidak diterbitkan bersama RPH; guru menggunakan sumber yang diperoleh secara sah.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru mencatat ketepatan sebutan, kawalan dinamik dan ekspresi dalam dua percubaan.
 

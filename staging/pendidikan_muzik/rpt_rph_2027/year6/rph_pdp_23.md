@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru memperagakan gerak tepuk detik dan gerak bertema, lalu murid menjelaskan perbezaannya.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan A mencadangkan gerakan mengikut tempo (tepuk, petik jari, hentak kaki), manakala Kumpulan B mencadangkan gerakan bertema Warna-warni Malaysia halaman 64.
+**Aktiviti 1 — Teroka Gerakan Tempo dan Tema (8 minit):** Kumpulan A mencadangkan gerakan mengikut tempo (tepuk, petik jari, hentak kaki), manakala Kumpulan B mencadangkan gerakan bertema Warna-warni Malaysia halaman 64.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan kecil empat orang menggunakan combo-mat halaman 65: tulis cadangan pada A–D, pilih yang terbaik di E, berlatih dan persembahkan dalam bulatan apabila diberi empat isyarat guru.
+**Aktiviti 2 — Pilih Gerakan melalui Combo-mat (10 minit):** Kumpulan kecil empat orang menggunakan combo-mat halaman 65: tulis cadangan pada A–D, pilih yang terbaik di E, berlatih dan persembahkan dalam bulatan apabila diberi empat isyarat guru.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai kesesuaian dua gerakan, penyertaan keempat-empat ahli dan ketepatan mengikut detik.
 

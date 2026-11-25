@@ -10,15 +10,15 @@
 
 **Objektif:** Murid mengenal tiga komposer Klasikal dan dua pasangan komposer–karya yang betul.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu petikan, skor atau aktiviti berkaitan unit dan meminta murid menunjukkan pengetahuan sedia ada.
+**Set induksi (4 minit):** Guru menunjukkan nama Haydn, Mozart dan Beethoven pada bahan rujukan; murid mencari judul karya yang dikaitkan dengan setiap komposer.
 
-**Aktiviti 1 — Demonstrasi / penemuan (8 minit):** Guru membezakan zaman Classical dengan Baroque, kemudian memperkenalkan Haydn, Mozart, Beethoven dan karya yang dinamakan dalam buku.
+**Aktiviti 1 — Kenal Komposer dan Karya Classical (8 minit):** Guru membezakan zaman Classical dengan Baroque, kemudian memperkenalkan Haydn, Mozart, Beethoven dan karya yang dinamakan dalam buku.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid menghasilkan kad atau buku skrap mini yang memadankan negara asal, nama komposer dan judul karya; mereka memberi ulasan petikan yang sah.
+**Aktiviti 2 — Kad Padanan Komposer dan Karya (10 minit):** Murid menghasilkan kad atau buku skrap mini yang memadankan negara asal, nama komposer dan judul karya; mereka memberi ulasan petikan yang sah.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak tiga nama, dua karya dan satu sebab apresiasi.
 
-**Penutup (2 minit):** Murid menunjukkan satu kemahiran atau fakta muzik yang dipelajari; guru merekod pemerhatian PBD dan maklum balas.
+**Penutup (2 minit):** Murid menamakan tiga komposer Classical dan memadankan dua komposer dengan karya berdasarkan rujukan; guru menyemak ketepatan jawapan.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, m/s 34-35, skor dan alat mengikut PdP.
 

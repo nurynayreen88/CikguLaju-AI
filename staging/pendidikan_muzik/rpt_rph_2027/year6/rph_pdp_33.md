@@ -10,15 +10,15 @@
 
 **Objektif:** Murid mempersembahkan bahagian ensembel Rindu dan menunjukkan tempo yang tepat dalam dua ulangan.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu petikan, skor atau aktiviti berkaitan unit dan meminta murid menunjukkan pengetahuan sedia ada.
+**Set induksi (4 minit):** Guru menandakan isyarat masuk nyanyian, rekoder dan perkusi pada skor Rindu; murid menepuk detik sebelum latihan kumpulan.
 
-**Aktiviti 1 — Demonstrasi / penemuan (8 minit):** Guru membahagikan peranan nyanyian, rekoder dan perkusi serta menyemak skor utama dan kaunter.
+**Aktiviti 1 — Agih Peranan dan Baca Skor Rindu (8 minit):** Guru membahagikan peranan nyanyian, rekoder dan perkusi serta menyemak skor utama dan kaunter.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan berlatih terlebih dahulu pada tempo perlahan (rujukan bercetak q=90), kemudian mengulang pada tempo lebih cepat (q=100).
+**Aktiviti 2 — Ensembel pada Dua Tempo (10 minit):** Kumpulan berlatih terlebih dahulu pada tempo perlahan (rujukan bercetak q=90), kemudian mengulang pada tempo lebih cepat (q=100).
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak koordinasi masuk, tempo, dinamik dan ketepatan peranan setiap kumpulan.
 
-**Penutup (2 minit):** Murid menunjukkan satu kemahiran atau fakta muzik yang dipelajari; guru merekod pemerhatian PBD dan maklum balas.
+**Penutup (2 minit):** Kumpulan mempersembahkan semula bahagian ensembel dalam dua ulangan dengan tempo tepat; guru menyemak keseragaman masa masuk.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, m/s 85-87, skor dan alat mengikut PdP.
 

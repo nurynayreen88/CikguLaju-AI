@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru menunjukkan tiga susunan not: mendatar, bertangga dan melompat; murid menggambarkan pergerakan pic.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid mengesan dan menanda tiga jenis kontur dalam keratan Rangkaian Globalisasi halaman 30, kemudian merancang meter 4/4 dan nilai not yang sesuai pada halaman 31.
+**Aktiviti 1 — Kenal Tiga Kontur dan Meter 4/4 (8 minit):** Murid mengesan dan menanda tiga jenis kontur dalam keratan Rangkaian Globalisasi halaman 30, kemudian merancang meter 4/4 dan nilai not yang sesuai pada halaman 31.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menyusun kad untuk mencipta melodi dua bar halaman 32–33 menggunakan not B/A/G/C'/D', bertukar hasil ciptaan dengan rakan dan memainkan melodi rakan menggunakan rekoder.
+**Aktiviti 2 — Cipta dan Tukar Melodi Dua Bar (10 minit):** Murid menyusun kad untuk mencipta melodi dua bar halaman 32–33 menggunakan not B/A/G/C'/D', bertukar hasil ciptaan dengan rakan dan memainkan melodi rakan menggunakan rekoder.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai tiga jenis kontur, jumlah empat detik setiap bar dan ketepatan melodi dua bar.
 

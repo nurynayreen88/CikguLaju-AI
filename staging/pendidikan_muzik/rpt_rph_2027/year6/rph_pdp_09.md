@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru mengaitkan istilah globalisasi dengan perkembangan teknologi komunikasi secara ringkas.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid mengajuk nyanyian Rangkaian Globalisasi halaman 27 dengan pic, tempo dan dinamik, kemudian mengulang tiga latihan rekoder B, A, G, C', D', E, F halaman 28.
+**Aktiviti 1 — Nyanyian Rangkaian Globalisasi dan Ulang Kaji Not (8 minit):** Murid mengajuk nyanyian Rangkaian Globalisasi halaman 27 dengan pic, tempo dan dinamik, kemudian mengulang tiga latihan rekoder B, A, G, C', D', E, F halaman 28.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menepuk corak irama dahulu, lalu memainkan frasa daripada Permainan Rekoder halaman 29 secara ansur maju dengan kawalan pernafasan dan perlidahan.
+**Aktiviti 2 — Permainan Rekoder dan Kawalan Nafas (10 minit):** Murid menepuk corak irama dahulu, lalu memainkan frasa daripada Permainan Rekoder halaman 29 secara ansur maju dengan kawalan pernafasan dan perlidahan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak nyanyian satu frasa, pertukaran dua penjarian sukar dan tempo permainan rekoder.
 

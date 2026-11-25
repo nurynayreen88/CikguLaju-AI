@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru memberi contoh sebutan berulang ringkas daripada tema lagu tanpa menyalin lirik penuh.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan memilih satu perkataan daripada keratan skor Gerbang Ilmu halaman 13, memecahkannya kepada suku kata dan menulis sebutan berulang konsisten sepanjang empat bar.
+**Aktiviti 1 — Cipta Sebutan Berulang Empat Bar (8 minit):** Kumpulan memilih satu perkataan daripada keratan skor Gerbang Ilmu halaman 13, memecahkannya kepada suku kata dan menulis sebutan berulang konsisten sepanjang empat bar.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menyanyikan sebutan berulang dan mencipta melodi mudah empat bar menggunakan not D' serta G; mereka mencuba hasil ciptaan dengan rekoder.
+**Aktiviti 2 — Cipta Melodi D’ dan G pada Rekoder (10 minit):** Murid menyanyikan sebutan berulang dan mencipta melodi mudah empat bar menggunakan not D' serta G; mereka mencuba hasil ciptaan dengan rekoder.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak empat bar lengkap, pengulangan konsisten dan ketepatan dua not dalam persembahan.
 

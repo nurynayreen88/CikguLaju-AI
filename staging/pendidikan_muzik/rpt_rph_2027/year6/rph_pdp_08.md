@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru menghasilkan sebutan berirama tu dan murid menepuk corak sebelum memegang alat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid mendengar atau membaca tiga corak irama halaman 24 dan mengajuknya dengan sebutan tu; tiga kumpulan bergerak antara stesen untuk membunyikan corak pada loceng berpic.
+**Aktiviti 1 — Ajuk Tiga Corak pada Loceng Berpic (8 minit):** Murid mendengar atau membaca tiga corak irama halaman 24 dan mengajuknya dengan sebutan tu; tiga kumpulan bergerak antara stesen untuk membunyikan corak pada loceng berpic.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Kumpulan mencipta melodi dua bar dengan not B, A dan G, menulis meter serta melodi pada baluk halaman 25, kemudian memainkan hasil dengan rekoder.
+**Aktiviti 2 — Cipta Melodi Dua Bar B/A/G (10 minit):** Kumpulan mencipta melodi dua bar dengan not B, A dan G, menulis meter serta melodi pada baluk halaman 25, kemudian memainkan hasil dengan rekoder.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru memeriksa dua bar lengkap, kesesuaian nilai detik dan ketepatan not B/A/G.
 

@@ -13,13 +13,13 @@
 
 **Set Induksi — 4 minit:** Guru mengimbas peranan ketua kumpulan, etika persembahan dan pemanasan sebelum menggunakan alat muzik.
 
-**Aktiviti 1 — Bimbingan projek (8 minit):** Murid menguji audio untuk lagu pilihan Unit 6–10, memanaskan suara atau jari rekoder dan menyemak giliran masuk serta kesiapsiagaan alat.
+**Aktiviti 1 — Pemanasan dan Semakan Giliran Masuk (8 minit):** Murid menguji audio untuk lagu pilihan Unit 6–10, memanaskan suara atau jari rekoder dan menyemak giliran masuk serta kesiapsiagaan alat.
 
-**Aktiviti 2 — Pelaksanaan projek (10 minit):** Kumpulan mempersembahkan pilihan nyanyian, rekoder, alat perkusi atau gerakan Unit 6–10; rakan menilai disiplin, kerjasama dan kreativiti.
+**Aktiviti 2 — Persembahan Projek dan Penilaian Etika (10 minit):** Kumpulan mempersembahkan pilihan nyanyian, rekoder, alat perkusi atau gerakan Unit 6–10; rakan menilai disiplin, kerjasama dan kreativiti.
 
 **Pengukuhan dan Penilaian — 6 minit:** Murid menyemak senarai semak lagu, peranan, disiplin, koordinasi dan pengurusan alat. Guru melengkapkan pemerhatian PBD.
 
-**Penutup — 2 minit:** Ketua kumpulan berkongsi satu penambahbaikan serta memastikan peralatan disimpan dengan selamat.
+**Penutup — 2 minit:** Kumpulan menyatakan tiga amalan etika persembahan yang telah dipraktikkan dan satu pembaikan berdasarkan penilaian rakan.
 
 **Bahan:** Buku Muzik Tahun 6 m/s 88–89, borang penilaian, alat muzik dan audio contoh Memori Indah atau Rindu.
 

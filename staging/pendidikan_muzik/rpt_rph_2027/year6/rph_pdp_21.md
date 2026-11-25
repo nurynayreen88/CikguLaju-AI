@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru menunjukkan tiga alat iringan dan murid menamakan bunyi yang sesuai untuk mengiringi nyanyian.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membahagikan peranan egg shaker, klaves dan dram bes lalu membaca corak skor ensembel halaman 60–61 melalui tepukan dahulu.
+**Aktiviti 1 — Baca Skor Tiga Alat Perkusi (8 minit):** Murid membahagikan peranan egg shaker, klaves dan dram bes lalu membaca corak skor ensembel halaman 60–61 melalui tepukan dahulu.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Ketiga-tiga kumpulan memainkan iringan Puteri Legenda Langkawi di bawah isyarat ketua; murid mengawal dinamik seperti ditanda dalam buku dan menilai keseimbangan ensembel.
+**Aktiviti 2 — Ensembel Puteri Legenda Langkawi (10 minit):** Ketiga-tiga kumpulan memainkan iringan Puteri Legenda Langkawi di bawah isyarat ketua; murid mengawal dinamik seperti ditanda dalam buku dan menilai keseimbangan ensembel.
 
 **Pengukuhan dan Penilaian — 6 minit:** Senarai semak masuk/henti, corak irama dan perubahan dinamik dalam dua percubaan.
 

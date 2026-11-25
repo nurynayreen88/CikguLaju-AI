@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru menerangkan legenda Mahsuri sebagai konteks lagu tanpa menyalin liriknya ke dalam bahan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru membimbing ajuk frasa halaman 55 dan menunjukkan fermata halaman 56 sebagai pemanjangan nilai not; murid membandingkan demonstrasi guru dengan/ tanpa fermata.
+**Aktiviti 1 — Ajuk Frasa dan Kenal Fermata (8 minit):** Guru membimbing ajuk frasa halaman 55 dan menunjukkan fermata halaman 56 sebagai pemanjangan nilai not; murid membandingkan demonstrasi guru dengan/ tanpa fermata.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan empat orang menerima empat keratan skor pada halaman 57; setiap murid menanda crescendo, decrescendo atau fermata pada keratannya, kemudian kumpulan menyusun dan mempersembahkan contoh frasa.
+**Aktiviti 2 — Tandakan Tiga Simbol Ekspresi (10 minit):** Kumpulan empat orang menerima empat keratan skor pada halaman 57; setiap murid menanda crescendo, decrescendo atau fermata pada keratannya, kemudian kumpulan menyusun dan mempersembahkan contoh frasa.
 
 **Pengukuhan dan Penilaian — 6 minit:** Nilai ketepatan satu fermata dan tiga simbol ekspresi serta peranan murid dalam susunan keratan.
 
