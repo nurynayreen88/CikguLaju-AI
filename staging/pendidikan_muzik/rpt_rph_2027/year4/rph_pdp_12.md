@@ -13,9 +13,9 @@
 
 **Set Induksi — 4 minit:** Guru membentangkan aktiviti projek Kesenian Penggal Satu dalam buku dan mengingatkan bahawa kita menumpukan bahagian muzik.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru memperdengarkan petikan Beg Cantik Menawan atau Bunga Gergasi. Murid membentuk lima kumpulan, memilih satu lagu Unit 1–5 dan mengagihkan tugas nyanyian, perkusi atau gerakan.
+**Aktiviti 1 — Pemilihan lagu dan peranan:** Guru memperdengarkan petikan Beg Cantik Menawan atau Bunga Gergasi. Murid membentuk lima kumpulan, memilih satu lagu Unit 1–5 dan mengagihkan tugas nyanyian, perkusi atau gerakan.
 
-**Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit):** Kumpulan menyusun rancangan ringkas untuk persembahan muzikal, termasuk jadual latihan, alat yang diperlukan dan cara mengawal volume supaya nyanyian dapat didengar; kumpulan membentangkan pelan kepada guru.
+**Aktiviti 2 — Rancangan persembahan muzikal:** Kumpulan menyusun rancangan ringkas untuk persembahan muzikal, termasuk jadual latihan, alat yang diperlukan dan cara mengawal volume supaya nyanyian dapat didengar; kumpulan membentangkan pelan kepada guru.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak empat aspek perancangan: lagu Unit 1–5, pembahagian peranan, senarai alat dan jadual latihan.
 
