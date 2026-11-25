@@ -267,6 +267,31 @@ def main():
                 fields=runtime._rph_rows(state,native)
                 item={"id":identity,"year":year,"pdp":row["sequence_no"],"unit":unit,"objective":fields.get("OBJEKTIF PEMBELAJARAN") or fields.get("OBJEKTIF"),"source_note":row["activity_note"],"sk_codes":state.get("grouped_sk_codes",[]),"sp_codes":state.get("grouped_sp_codes",[])}
             print("PI_REMAINING_EXACT_SOURCE",json.dumps({k:item.get(k) for k in ("id","year","pdp","unit","objective","source_note","sk_codes","sp_codes","textbook_pages_claim","reference_review_type")},ensure_ascii=False),flush=True)
+        # RPT alignment is a prospective export, keyed by immutable lesson ID.
+        # Only a later approved RPH release may authorize its use.
+        source_by_id={x["id"]:x for x in source}
+        rpt_alignment=[]
+        for item in sorted(editorial_rows,key=lambda x:(x["year"],x["pdp"],x["id"])):
+            row=source_by_id[item["id"]]
+            original_note=item.get("original_source_note",item.get("source_note"))
+            assert row["activity_note"]==original_note,(item["id"],"RPT source changed")
+            assert row["sequence_no"]==item["pdp"]
+            assert row["year_label"]==f"Tahun {item['year']}"
+            assert pi_navigation_unit(row)==item["unit"]
+            note=" ".join(f"{i}. {title}: {body}" for i,(title,body) in enumerate(item["activities"],1))
+            rpt_alignment.append({"id":item["id"],"year":item["year"],"pdp":item["pdp"],"unit":item["unit"],
+                "original_activity_note":original_note,"proposed_activity_note":jawi_display_digits(note),
+                "original_objective":item.get("original_objective",item["objective"]),
+                "proposed_objective":item["objective"],"objective_changed":item["id"] in objective_ids,
+                "source_row_sha256":sha256(json.dumps(row,ensure_ascii=False,sort_keys=True,default=str).encode()).hexdigest(),
+                "preserve":["SK","SP","lesson ID","sequence","duration","calendar A/B","cover and layout"],
+                "status":"QA_ONLY_PENDING_RPH_APPROVAL"})
+        rpt_summary={"status":"QA_ONLY_NOT_FOR_RUNTIME","total":len(rpt_alignment),
+                     "year_counts":dict(Counter(x["year"] for x in rpt_alignment)),
+                     "objective_changes":sum(x["objective_changed"] for x in rpt_alignment),
+                     "release_eligible":0}
+        (out/"rpt_alignment_from_rph_proposals.json").write_text(json.dumps({**rpt_summary,"records":rpt_alignment},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        print("PI_RPT_ALIGNMENT_QA",json.dumps(rpt_summary),flush=True)
         # Full cross-batch comparison (QA flags only, not automatic approval).
         def editorial_normalize(value):
             value=unicodedata.normalize("NFKC", str(value or "")).translate(DIGITS)
