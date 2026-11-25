@@ -7,7 +7,8 @@
   "status": "DALAM_SEMAKAN",
   "sources": {
     "textbook": "https://fliphtml5.com/vdvtp/bsfc/Pendidikan_Jasmani_(Masalah_Pembelajaran)_Tahun_2/",
-    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/027-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-JASMANI-TAHUN-2.pdf"
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/027-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-JASMANI-TAHUN-2.pdf",
+    "dskp_audit": "https://asiemodel.net/wp-content/uploads/2022/08/027-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-JASMANI-TAHUN-2.pdf"
   },
   "notes": "Draf pedagogi asal; julat halaman ialah rujukan kelompok. Kod kosong sengaja tidak direka. Semak teks DSKP penuh, halaman individu, BA, audio jika berkaitan, agihan masa dan Word/PDF sebelum READY. V2 akuatik tidak membuktikan kemahiran dalam air.",
   "lessons": [
@@ -430,20 +431,26 @@
       "pdp": "016",
       "unit": "6",
       "textbook_page": "42–44",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "sk": [
+        "3.1"
+      ],
       "title": "Stesen kecergasan dan regangan",
-      "objective": "3 gerakan ringan dilakukan mengikut kemampuan",
-      "success_criterion": "3 gerakan ringan dilakukan mengikut kemampuan",
+      "objective": "2 aktiviti pemanasan dan 1 gerakan menyejukkan badan dilakukan",
+      "success_criterion": "2 aktiviti pemanasan dan 1 gerakan menyejukkan badan dilakukan",
       "materials": "Tikar, kon, kad gerak",
       "induction": "Panaskan badan perlahan.",
-      "guided": "Guru demonstrasi tiga gerakan tanpa paksaan sendi.",
-      "practice": "Murid ikut stesen dan berehat apabila perlu.",
+      "guided": "Guru demonstrasi berjalan ringan dan pergerakan yang meningkatkan suhu badan, diikuti aktiviti menyejukkan badan.",
+      "practice": "Murid melakukan dua aktiviti ringan dan satu gerakan menyejukkan badan mengikut kesediaan.",
       "support": "Pilihan duduk dan intensiti individu.",
       "closure": "Sejukkan badan.",
-      "assessment": "Rekod pencapaian: 3 gerakan ringan dilakukan mengikut kemampuan. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "3 gerakan ringan dilakukan mengikut kemampuan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "assessment": "Rekod pencapaian: 2 aktiviti pemanasan dan 1 gerakan menyejukkan badan dilakukan. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "2 aktiviti pemanasan dan 1 gerakan menyejukkan badan dilakukan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "017",
@@ -468,77 +475,103 @@
       "pdp": "018",
       "unit": "7",
       "textbook_page": "52–54",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "3.2.1",
+        "4.2.1"
+      ],
+      "sk": [
+        "3.2",
+        "4.2"
+      ],
       "title": "Aktiviti daya tahan ringan",
-      "objective": "2 pusingan aktiviti diselesaikan pada intensiti sesuai",
-      "success_criterion": "2 pusingan aktiviti diselesaikan pada intensiti sesuai",
+      "objective": "1 tempoh berjalan yang disesuaikan diselesaikan dan 1 aktiviti aerobik dikenal pasti",
+      "success_criterion": "1 tempoh berjalan yang disesuaikan diselesaikan dan 1 aktiviti aerobik dikenal pasti",
       "materials": "Kon, kad isyarat",
       "induction": "Kenal tanda berhenti.",
-      "guided": "Guru modelkan berjalan atau gerak duduk berterusan ringan.",
-      "practice": "Murid laksana dua pusingan pendek dan perhatikan perubahan pernafasan.",
+      "guided": "Guru modelkan berjalan dengan pelbagai gaya dalam tempoh pendek yang ditetapkan berdasarkan kemampuan murid.",
+      "practice": "Murid yang bersedia berjalan pelbagai gaya dalam tempoh yang ditetapkan; pilih kad aktiviti aerobik. Rehat apabila perlu dan catat adaptasi.",
       "support": "Tiada sasaran kelajuan; ikut keadaan kesihatan.",
       "closure": "Sejukkan badan dan nyatakan rasa.",
-      "assessment": "Rekod pencapaian: 2 pusingan aktiviti diselesaikan pada intensiti sesuai. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "2 pusingan aktiviti diselesaikan pada intensiti sesuai",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "assessment": "Rekod pencapaian: 1 tempoh berjalan yang disesuaikan diselesaikan dan 1 aktiviti aerobik dikenal pasti. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "1 tempoh berjalan yang disesuaikan diselesaikan dan 1 aktiviti aerobik dikenal pasti",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "019",
       "unit": "7",
       "textbook_page": "56–58",
-      "sp": [],
-      "sk": [],
-      "title": "Litar berhalangan adaptif",
-      "objective": "3 stesen dilalui dengan selamat",
-      "success_criterion": "3 stesen dilalui dengan selamat",
+      "sp": [
+        "3.2.1"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "title": "Litar berjalan pelbagai gaya",
+      "objective": "3 gaya berjalan dicuba dalam tempoh yang ditetapkan mengikut kemampuan",
+      "success_criterion": "3 gaya berjalan dicuba dalam tempoh yang ditetapkan mengikut kemampuan",
       "materials": "Kon, garisan lantai, objek rendah",
       "induction": "Semak laluan bebas halangan bahaya.",
-      "guided": "Guru tunjuk cara melalui stesen dengan pilihan akses.",
-      "practice": "Murid ikut tiga stesen secara individu.",
-      "support": "Elakkan lompatan atau halangan tinggi jika tidak sesuai.",
+      "guided": "Guru modelkan berjalan langkah kecil, langkah biasa dan arah sisi dalam laluan rata.",
+      "practice": "Murid berjalan melalui tiga zon dengan gaya berlainan dalam tempoh yang sesuai; hentikan bila perlu.",
+      "support": "Alat mobiliti dan laluan adaptif; rekod jenis adaptasi tanpa mengesahkan kemahiran berjalan yang tidak dilakukan.",
       "closure": "Rekod stesen yang dikuasai.",
-      "assessment": "Rekod pencapaian: 3 stesen dilalui dengan selamat. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "3 stesen dilalui dengan selamat",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "assessment": "Rekod pencapaian: 3 gaya berjalan dicuba dalam tempoh yang ditetapkan mengikut kemampuan. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "3 gaya berjalan dicuba dalam tempoh yang ditetapkan mengikut kemampuan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "020",
       "unit": "8",
       "textbook_page": "60–63",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "3.3.1",
+        "3.3.2"
+      ],
+      "sk": [
+        "3.3"
+      ],
       "title": "Ukur tinggi dan berat secara berhemah",
-      "objective": "2 alat ukuran dikenal pasti",
-      "success_criterion": "2 alat ukuran dikenal pasti",
+      "objective": "1 ukuran tinggi dan 1 timbangan dilakukan dengan bimbingan",
+      "success_criterion": "1 ukuran tinggi dan 1 timbangan dilakukan dengan bimbingan",
       "materials": "Pita ukuran, penimbang, model",
       "induction": "Lihat dua alat ukuran.",
-      "guided": "Guru tunjuk penggunaan alat dengan model tanpa membandingkan tubuh murid.",
-      "practice": "Murid pilih alat bagi dua tugasan dan bantu mengukur model.",
+      "guided": "Guru tunjuk ukuran tinggi dengan model dan cara menggunakan penimbang dengan persetujuan serta privasi.",
+      "practice": "Murid mengukur tinggi model atau individu yang bersetuju dan menimbang mengikut prosedur selamat; rekod amali sebenar, bukan sekadar memilih alat.",
       "support": "Data sebenar murid hanya secara sulit dan sukarela.",
       "closure": "Padankan alat dengan fungsi.",
-      "assessment": "Rekod pencapaian: 2 alat ukuran dikenal pasti. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "2 alat ukuran dikenal pasti",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "assessment": "Rekod pencapaian: 1 ukuran tinggi dan 1 timbangan dilakukan dengan bimbingan. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "1 ukuran tinggi dan 1 timbangan dilakukan dengan bimbingan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "021",
       "unit": "8",
       "textbook_page": "64–65",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "3.3.1",
+        "3.3.2"
+      ],
+      "sk": [
+        "3.3"
+      ],
       "title": "Carta pertumbuhan diri",
-      "objective": "2 maklumat ukuran contoh direkod dengan betul",
-      "success_criterion": "2 maklumat ukuran contoh direkod dengan betul",
+      "objective": "2 ukuran dibuat dan direkod dengan bantuan yang sesuai",
+      "success_criterion": "2 ukuran dibuat dan direkod dengan bantuan yang sesuai",
       "materials": "Carta kosong, data contoh rekaan",
       "induction": "Lihat carta tanpa nama.",
-      "guided": "Guru modelkan memasukkan angka contoh.",
-      "practice": "Murid isi dua nilai daripada kad rekaan dan semak unit.",
-      "support": "Kad angka besar dan petak label.",
+      "guided": "Guru tunjuk cara mengukur tinggi dan menimbang berat, kemudian memindahkan bacaan ke carta tanpa nama.",
+      "practice": "Murid lakukan dua ukuran dengan model atau peserta yang bersetuju, kemudian rekod nilai dan unit; data contoh hanya sebagai latihan.",
+      "support": "Jaga privasi dan kesediaan murid; tiada perbandingan tubuh. Rekod latihan model berasingan daripada pengukuran individu.",
       "closure": "Tunjuk lokasi catatan pada carta.",
-      "assessment": "Rekod pencapaian: 2 maklumat ukuran contoh direkod dengan betul. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "2 maklumat ukuran contoh direkod dengan betul",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "assessment": "Rekod pencapaian: 2 ukuran dibuat dan direkod dengan bantuan yang sesuai. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "2 ukuran dibuat dan direkod dengan bantuan yang sesuai",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     }
-  ]
+  ],
+  "audit_round": "2026-11-26: semakan kod sasaran, bukan kelulusan penuh",
+  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan."
 }
