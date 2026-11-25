@@ -178,8 +178,10 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         if "RPTStandardBold" not in pdfmetrics.getRegisteredFontNames():
             pdfmetrics.registerFont(TTFont("RPTStandardBold", str(heavy)))
         font, bold = "RPTStandardRegular", "RPTStandardBold"
-    amiri_reg = Path("/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf")
-    amiri_bold = Path("/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf")
+    amiri_reg = Path("fonts/jawi/Amiri-Regular.ttf")
+    amiri_bold = Path("fonts/jawi/Amiri-Bold.ttf")
+    if not amiri_reg.is_file() or not amiri_bold.is_file():
+        raise ValueError("Provisioned Amiri fonts required for PI RPT; no silent fallback")
     if amiri_reg.is_file() and amiri_bold.is_file():
         if "RPTAmiriRegular" not in pdfmetrics.getRegisteredFontNames():
             pdfmetrics.registerFont(TTFont("RPTAmiriRegular", str(amiri_reg)))
