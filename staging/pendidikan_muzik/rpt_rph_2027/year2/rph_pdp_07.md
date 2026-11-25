@@ -10,17 +10,17 @@
 
 **Objektif:** Murid mencipta satu corak irama daripada kad ikon dan memainkannya dengan bahan improvisasi secara berkumpulan.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit SAYA JUARA; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru menunjukkan kad bunyi dan diam. Murid mengetuk atau berhenti mengikut kad.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru menunjukkan lapan kad contoh yang mewakili bunyi dan diam; murid meneroka variasi corak melalui ketukan selamat.
+**Aktiviti 1 — Kenali ikon bunyi dan diam:** Guru menunjukkan lapan kad contoh yang mewakili bunyi dan diam; murid meneroka variasi corak melalui ketukan selamat.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Setiap kumpulan menyusun kad ikon, memainkan corak melalui alat improvisasi dan bertukar hasil ciptaan dengan kumpulan lain.
+**Aktiviti 2 — Cipta irama improvisasi:** Setiap kumpulan menyusun kad ikon, memainkan corak melalui alat improvisasi dan bertukar hasil ciptaan dengan kumpulan lain.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak susunan pola, kerjasama dan ketepatan irama yang dimainkan murid secara berkumpulan.
+**Pengukuhan dan pentaksiran:** Guru menyemak susunan pola, kerjasama dan ketepatan irama yang dimainkan murid secara berkumpulan.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Kumpulan memainkan corak ciptaan sekali lagi. Rakan menunjukkan kad yang sepadan dengan bunyi.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 27; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 27; lapan kad ikon, bahan ketukan selamat.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 
