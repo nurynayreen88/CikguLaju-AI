@@ -140,6 +140,13 @@
       "pdp": 116,
       "reason": "Sequence names al-Zumar after al-Jinn and before next session of al-Jinn; verify original RPT and mushaf, do not substitute surah by inference.",
       "source_run": 45520998464
+    },
+    {
+      "id": 1495,
+      "year": 3,
+      "pdp": 109,
+      "reason": "Objective and three source steps target Iqlab but reading drill names Ikhfa Hakiki. Confirm source against DSKP and textbook.",
+      "source_run": 45524095256
     }
   ]
 }
