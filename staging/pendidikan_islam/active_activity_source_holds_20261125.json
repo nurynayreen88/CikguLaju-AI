@@ -203,6 +203,20 @@
       "year": 5,
       "reason": "Objective concerns al-Asr, source activities on benefits instead name al-Qadr. Confirm original textbook and curriculum.",
       "source_run": 45525260267
+    },
+    {
+      "id": 1619,
+      "pdp": 85,
+      "reason": "Objective al-Qariah 6–11; first audio names al-Asr and last activity names al-Qariah 1–5.",
+      "year": 4,
+      "source_run": 45525395926
+    },
+    {
+      "id": 1627,
+      "pdp": 93,
+      "reason": "Objective al-Qariah 6–11; final assessment names 1–5.",
+      "year": 4,
+      "source_run": 45525395926
     }
   ]
 }
