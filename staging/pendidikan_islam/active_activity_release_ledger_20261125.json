@@ -218,7 +218,7 @@
     "draft_count": 673,
     "note": "Activity-only Word/PDF native render, includes original activity proposal for overlapping id1387, not the subsequent objective correction."
   },
-  "staged_unique_verified": 686,
+  "staged_unique_verified": 698,
   "staged_year_counts": {
     "2": 112,
     "3": 148,
@@ -253,24 +253,24 @@
     "status": "QA_RENDER_PENDING"
   },
   "cross_batch_audit": {
-    "run": 45528716628,
+    "run": 45529019665,
     "status": "CI_SUCCESS",
     "summary": {
-      "draft_count": 686,
-      "unique_ids": 686,
+      "draft_count": 698,
+      "unique_ids": 698,
       "year_counts": {
         "2": 112,
-        "3": 142,
-        "4": 147,
+        "3": 148,
+        "4": 152,
         "5": 144,
-        "6": 141
+        "6": 142
       },
-      "remaining_without_draft": 12,
+      "remaining_without_draft": 0,
       "release_eligible": 0,
       "repeat_group_counts": {
         "body": 22,
         "title": 67,
-        "objective": 46,
+        "objective": 51,
         "whole_activity": 0
       }
     }
