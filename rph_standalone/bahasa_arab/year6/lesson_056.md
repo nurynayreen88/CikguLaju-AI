@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أَنَا أُحِبُّ وَطَنِي، أَنَا فَخُورٌ بِوَطَنِي، الْمُوَاطِنُ الْأَصْلِيّ
 **Objektif pembelajaran:** Menulis dua ayat mudah berdasarkan contoh buku.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid menulis dua ayat mudah berdasarkan contoh buku.
 
 **Set induksi:** Guru menunjukkan dua kad ayat tidak lengkap bertema sayang negara.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan susunan kata daripada aktiviti menulis h106 termasuk bentuk أنا dan penggunaan جارّ ومجرور secara praktikal.
+**Aktiviti 1 — Model susunan ayat cinta negara:** Guru memodelkan susunan kata daripada aktiviti menulis h106 termasuk bentuk أنا dan penggunaan جارّ ومجرور secara praktikal.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membina dua ayat daripada kad, menyalin RTL dan memeriksa ejaan dalam pasangan.
+**Aktiviti 2 — Bina dua ayat dan semak ejaan RTL:** Murid membina dua ayat daripada kad, menyalin RTL dan memeriksa ejaan dalam pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Dua ayat ditulis dengan urutan kata serta ejaan tepat.
 

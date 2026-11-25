@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** هنا نادي اللغة. أحب نادي اللغة. أشترك في نادي اللغة.
 **Objektif pembelajaran:** Murid dapat menulis dua ayat berkait dengan ejaan tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis dua ayat berkait dengan ejaan tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan menulis ayat bersambung mengenai kelab bahasa dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan penulisan ayat berkait tentang نادي اللغة daripada latihan Buku Teks h77.
+**Aktiviti 1 — Model tulisan ayat berkait نادي اللغة:** Guru memodelkan penulisan ayat berkait tentang نادي اللغة daripada latihan Buku Teks h77.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis dua ayat berkait dan memilih satu frasa tambahan sebagai pengayaan guru.
+**Aktiviti 2 — Tulis dua ayat tentang kelab bahasa:** Murid menulis dua ayat berkait dan memilih satu frasa tambahan sebagai pengayaan guru.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak dua ayat mempunyai sambungan idea serta ejaan tepat.
 

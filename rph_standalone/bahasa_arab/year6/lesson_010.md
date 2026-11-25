@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** كيف تنظف؟ أنا أنظف يدي، بماذا تغسل؟ أغسل بالصابون
 **Objektif pembelajaran:** Murid membaca tiga daripada empat ayat dengan tekanan dan intonasi yang betul.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 ayat dengan tekanan dan intonasi betul.
 
 **Set induksi:** Guru menunjukkan tanda soal pada كيف تنظف؟ dan membaca dua cara.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan dua soal-jawab dengan tempo sederhana, murid mengulangi dalam bahagian kecil.
+**Aktiviti 1 — Ajuk dua soal jawab secara berperingkat:** Guru memodelkan dua soal-jawab dengan tempo sederhana, murid mengulangi dalam bahagian kecil.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membaca dialog secara berpasangan dan menukar peranan; rakan menilai jeda dan bunyi.
+**Aktiviti 2 — Baca dialog dan tukar peranan:** Murid membaca dialog secara berpasangan dan menukar peranan; rakan menilai jeda dan bunyi.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat bacaan, sasaran tiga lancar dengan sebutan tepat.
 

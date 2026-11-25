@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** ماذا تأكل؟ أنا آكل الأرز. ماذا تشرب؟ أنا أشرب الحليب.
 **Objektif pembelajaran:** Murid dapat Mengulang sekurang-kurangnya tiga daripada empat giliran dialog dengan sebutan dan intonasi tepat.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid mengulang sekurang-kurangnya 3 daripada 4 giliran dialog dengan sebutan dan intonasi tepat.
 
 **Set induksi:** Guru menunjukkan gambar murid yang sedang makan dan minum kemudian bertanya dalam Bahasa Arab.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan soalan jawab daripada halaman 41, membezakan ماذا تأكل؟ dan ماذا تشرب؟; murid mengulang bersama watak pada kad.
+**Aktiviti 1 — Dengar soalan makan dan minum:** Guru memperdengarkan soalan jawab daripada halaman 41, membezakan ماذا تأكل؟ dan ماذا تشرب؟; murid mengulang bersama watak pada kad.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan memainkan peranan penanya/penjawab dengan kad nasi, roti, susu dan teh serta menukar makanan/minuman pada respons.
+**Aktiviti 2 — Lakonkan dialog pilihan makanan:** Murid berpasangan memainkan peranan penanya/penjawab dengan kad nasi, roti, susu dan teh serta menukar makanan/minuman pada respons.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod sekurang-kurangnya tiga daripada empat giliran dialog yang betul.
 

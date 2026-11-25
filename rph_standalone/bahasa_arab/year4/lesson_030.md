@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** الوراء، الغرفة، الدكان، القاعة
 **Objektif pembelajaran:** Murid dapat mengenal sekurang-kurangnya tiga daripada empat kata yang disebut dan memilih kad bunyi ال yang sesuai.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid mengenal sekurang-kurangnya 3 daripada 4 kata yang disebut dan memilih kad bunyi ال yang sesuai.
 
 **Set induksi:** Guru menyebut القاعة dan الدكان tanpa memaparkan perkataan, murid memilih dua gambar.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut semula empat contoh daripada latihan dengar h58 dan meminta murid mengenal perbezaan jenis ال melalui kad jawapan.
+**Aktiviti 1 — Kenal jenis bunyi ال:** Guru menyebut semula empat contoh daripada latihan dengar h58 dan meminta murid mengenal perbezaan jenis ال melalui kad jawapan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menjalankan permainan 'dengar dan angkat' mengikut kata yang dibaca rakan menggunakan kad dua kategori.
+**Aktiviti 2 — Permainan dengar dan angkat kad:** Murid menjalankan permainan 'dengar dan angkat' mengikut kata yang dibaca rakan menggunakan kad dua kategori.
 
 **Pengukuhan / Penilaian (PBD):** Guru menandakan tiga daripada empat keputusan yang betul berdasarkan audio guru.
 

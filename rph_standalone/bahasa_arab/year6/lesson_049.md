@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** مَلِك، رَئِيسُ الْوُزَرَاءِ، عَاصِمَة، وِلَايَة
 **Objektif pembelajaran:** Membaca empat label yang berkaitan dengan pentadbiran negara.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid membaca empat label berkaitan pentadbiran negara.
 
 **Set induksi:** Guru menayangkan laman sekolah ringkas dengan label negeri serta ibu negara.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan pada rajah h97 dan membezakan perkataan مَلِك، عَاصِمَة، وِلَايَة.
+**Aktiviti 1 — Baca istilah negeri dan negara:** Guru membimbing bacaan pada rajah h97 dan membezakan perkataan مَلِك، عَاصِمَة، وِلَايَة.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih empat kad frasa dan menempatkannya di bawah ikon yang tepat, kemudian membaca semula kepada rakan.
+**Aktiviti 2 — Padankan empat label dengan ikon:** Murid memilih empat kad frasa dan menempatkannya di bawah ikon yang tepat, kemudian membaca semula kepada rakan.
 
 **Pengukuhan / Penilaian (PBD):** Empat bacaan istilah serta tiga padanan ilustrasi diperiksa.
 

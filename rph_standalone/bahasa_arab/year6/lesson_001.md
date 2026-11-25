@@ -8,13 +8,13 @@
 **Masa/Tarikh/Kelas:** Diisi oleh guru mengikut jadual.
 
 **Objektif PdP:** Murid dapat meniru sekurang-kurangnya 3 daripada 4 bunyi huruf ع، أ، ح، ه dengan sebutan yang jelas.  
-**Kriteria kejayaan:** Sasaran individu seperti dalam objektif; bilangan tepat direkod oleh guru.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 3 daripada 4 bunyi huruf dengan sebutan jelas.
 
 **Set induksi:** Guru menyebut ع dan أ secara berselang-seli; murid mendengar dan memilih kad bunyi yang didengar.
 
-**Aktiviti 1 — Dengar dan ulang:** Guru memodelkan pasangan ع/أ dan ح/ه menggunakan kad huruf. Murid mengulang dan memerhatikan perbezaan tempat artikulasi melalui demonstrasi guru.
+**Aktiviti 1 — Ajuk bunyi ع، أ، ح، ه:** Guru memodelkan pasangan ع/أ dan ح/ه menggunakan kad huruf. Murid mengulang dan memerhatikan perbezaan tempat artikulasi melalui demonstrasi guru.
 
-**Aktiviti 2 — Amali/berpasangan:** Aktiviti berpasangan: murid A memilih satu kad bunyi tanpa menunjukkannya; murid B mendengar dan menunjukkan kad sama. Murid bertukar peranan.
+**Aktiviti 2 — Teka kad bunyi secara berpasangan:** Aktiviti berpasangan: murid A memilih satu kad bunyi tanpa menunjukkannya; murid B mendengar dan menunjukkan kad sama. Murid bertukar peranan.
 
 **Pengukuhan / Penilaian (PBD):** Guru mendengar empat sebutan murid dan merekod ketepatan bunyi (sasaran ≥3/4).
 

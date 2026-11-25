@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** أَمَلِي أَنْ أَكُونَ خَيَّاطًا، الطَّبِيبَةُ فِي المُسْتَشْفَى
 **Objektif pembelajaran:** Menulis dua ayat pendek berdasarkan pekerjaan pilihan.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid menulis dua ayat pendek berdasarkan pekerjaan pilihan.
 
 **Set induksi:** Guru memaparkan gambar penjahit dan doktor di hospital.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan pola ayat bercita-cita dan lokasi berdasarkan latihan menulis h46.
+**Aktiviti 1 — Model ayat cita-cita dan lokasi:** Guru memodelkan pola ayat bercita-cita dan lokasi berdasarkan latihan menulis h46.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun kad kata sebelum menulis dua ayat dan menjalankan semakan ejaan bersama guru.
+**Aktiviti 2 — Susun kad dan tulis dua ayat:** Murid menyusun kad kata sebelum menulis dua ayat dan menjalankan semakan ejaan bersama guru.
 
 **Pengukuhan / Penilaian (PBD):** Dua ayat bertulis dinilai dari aspek susunan, kata kerja dan kosa kata.
 

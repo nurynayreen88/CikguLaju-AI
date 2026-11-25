@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** عصفور، عقرب، طاووس، كلب
 **Objektif pembelajaran:** Membaca tiga daripada empat perkataan haiwan dengan betul.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 perkataan haiwan dengan betul.
 
 **Set induksi:** Guru menunjukkan kad kata berbahagi suku bunyi tanpa gambar dan meminta murid meneka perkataan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing murid menggabungkan huruf menjadi nama haiwan pada latihan أقرأ وأكتب h87, termasuk عصفور، عقرب dan طاووس.
+**Aktiviti 1 — Gabungkan huruf menjadi nama haiwan:** Guru membimbing murid menggabungkan huruf menjadi nama haiwan pada latihan أقرأ وأكتب h87, termasuk عصفور، عقرب dan طاووس.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun segmen huruf menjadi tiga perkataan, membaca di depan pasangan dan memadankan dengan gambar.
+**Aktiviti 2 — Susun segmen huruf dan baca kepada pasangan:** Murid menyusun segmen huruf menjadi tiga perkataan, membaca di depan pasangan dan memadankan dengan gambar.
 
 **Pengukuhan / Penilaian (PBD):** Bacaan individu bagi sekurang-kurangnya tiga daripada empat kata direkod.
 

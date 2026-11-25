@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** مطعم، فناء، ملعب، فصل، مكتبة، حديقة
 **Objektif pembelajaran:** Murid dapat mengelaskan sekurang-kurangnya empat daripada enam kata tempat mengikut kategori kawasan sekolah.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 4 daripada 6 kata tempat mengikut kategori kawasan sekolah.
 
 **Set induksi:** Guru menyebut مطعم dan ملعب; murid meneka lokasi dalam atau luar bangunan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan pengelasan perkataan tempat pada latihan h60 mengikut tempat berbumbung dan kawasan terbuka. Murid mendengar sebelum memilih label.
+**Aktiviti 1 — Kenal kategori kawasan sekolah:** Guru memodelkan pengelasan perkataan tempat pada latihan h60 mengikut tempat berbumbung dan kawasan terbuka. Murid mendengar sebelum memilih label.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan, murid mengelaskan enam kad yang guru baca mengikut kategori yang ditentukan dan memberi sebab ringkas dalam Bahasa Melayu jika perlu.
+**Aktiviti 2 — Kelaskan enam kad daripada sebutan:** Dalam kumpulan, murid mengelaskan enam kad yang guru baca mengikut kategori yang ditentukan dan memberi sebab ringkas dalam Bahasa Melayu jika perlu.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod empat daripada enam padanan kategori berdasarkan kata didengar.
 

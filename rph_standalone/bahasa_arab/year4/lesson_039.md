@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** أهلا وسهلا، مرحبا، ما أجمل مدرستك!
 **Objektif pembelajaran:** Murid dapat menulis dua daripada tiga ayat mudah dengan ejaan dan jarak tepat.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 2 daripada 3 ayat mudah dengan ejaan dan jarak tepat.
 
 **Set induksi:** Guru memaparkan ucapan أهلا وسهلا dan bertanya bila ucapan itu sesuai.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أقرأ وأكتب h72 tentang ucapan dan sambutan sekolah, memodelkan tulisan أهلا وسهلا، مرحبا dan ما أجمل مدرستك!.
+**Aktiviti 1 — Tiru tulisan ucapan sambutan sekolah:** Guru menggunakan latihan أقرأ وأكتب h72 tentang ucapan dan sambutan sekolah, memodelkan tulisan أهلا وسهلا، مرحبا dan ما أجمل مدرستك!.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis dua daripada tiga ungkapan ringkas untuk poster sambutan sekolah dan membaca ayat kepada rakan.
+**Aktiviti 2 — Tulis ungkapan pada poster sambutan:** Murid menulis dua daripada tiga ungkapan ringkas untuk poster sambutan sekolah dan membaca ayat kepada rakan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua ayat yang ditulis dengan ejaan dan susun kata betul.
 

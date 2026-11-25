@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** بِالْقِطَار، بِالطَّائِرَة، مُرِيح، مُمْتِع
 **Objektif pembelajaran:** Menyatakan dua respons berkaitan pengangkutan dan pengalaman.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid menyatakan dua respons berkaitan pengangkutan dan pengalaman.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing murid memilih jawapan bermakna pada dialog h75.
+**Aktiviti 1 — Pilih respons tentang cara perjalanan:** Guru membimbing murid memilih jawapan bermakna pada dialog h75.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan menjadi pelanggan dan pekerja kaunter perjalanan serta memberi dua respons.
+**Aktiviti 2 — Simulasi pelanggan dan kaunter perjalanan:** Murid berpasangan menjadi pelanggan dan pekerja kaunter perjalanan serta memberi dua respons.
 
 **Pengukuhan / Penilaian (PBD):** Dua jawapan pengalaman/perjalanan boleh difahami. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

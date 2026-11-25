@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** أَيْنَ يَعْمَلُ الطَّبِيب؟ فِي المُسْتَشْفَى، أَيْنَ يَعْمَلُ الصَّيَّاد؟ فِي البَحْر
 **Objektif pembelajaran:** Melakonkan dua soal jawab mengenai tempat bekerja secara berpandu.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid melakonkan dua soal jawab mengenai tempat bekerja secara berpandu.
 
 **Set induksi:** Guru menunjukkan gambar hospital dan laut serta dua kad petugas.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing ungkapan pertanyaan tempat bekerja dalam dialog h44 serta respons yang sesuai dengan pekerjaan.
+**Aktiviti 1 — Latih ungkapan pertanyaan tempat kerja:** Guru membimbing ungkapan pertanyaan tempat bekerja dalam dialog h44 serta respons yang sesuai dengan pekerjaan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid bergerak antara stesen gambar tempat kerja, bertanya dan menjawab dua dialog dengan rakan.
+**Aktiviti 2 — Soal jawab di stesen gambar:** Murid bergerak antara stesen gambar tempat kerja, bertanya dan menjawab dua dialog dengan rakan.
 
 **Pengukuhan / Penilaian (PBD):** Dua soalan dan jawapan lokasi yang sepadan diperiksa.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** جُنْدِيّ، شُرْطِيّ، مُمَرِّضَة، طَبَّاخ، مُضِيفَة
 **Objektif pembelajaran:** Membaca dan mengelaskan lima label kerjaya mengikut kategori dalam latihan.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid membaca dan mengelaskan lima label kerjaya mengikut kategori latihan.
 
 **Set induksi:** Guru memaparkan poster Hari Kerjaya dengan beberapa peranan yang diketahui murid.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan label dan dua lajur kategori sektor pekerjaan daripada h37; klasifikasi digunakan untuk contoh buku, bukan menentukan status rasmi semua majikan.
+**Aktiviti 1 — Baca label dua kategori pekerjaan:** Guru membimbing bacaan label dan dua lajur kategori sektor pekerjaan daripada h37; klasifikasi digunakan untuk contoh buku, bukan menentukan status rasmi semua majikan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan lima kad kepada kategori latihan dan membaca nama pekerjaan dengan pasangan.
+**Aktiviti 2 — Padankan lima kad kerjaya:** Murid memadankan lima kad kepada kategori latihan dan membaca nama pekerjaan dengan pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Lima bacaan serta empat padanan kategori yang munasabah dinilai.
 

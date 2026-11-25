@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** هذا مطعم. المطعم نظيف. هذا مطعم نظيف.
 **Objektif pembelajaran:** Murid dapat menulis sekurang-kurangnya dua ayat yang berkait dan betul dari segi susunan serta tulisan.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya dua ayat berkait dengan susunan dan tulisan tepat.
 
 **Set induksi:** Guru menunjukkan gambar kantin bersih dan menyebut مطعم نظيف.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru berpandukan contoh menulis ayat bersambung h76, menunjukkan hubungan هذا مطعم dengan المطعم نظيف, kemudian murid meniru penulisan model.
+**Aktiviti 1 — Kenal hubungan dua ayat tentang lokasi:** Guru berpandukan contoh menulis ayat bersambung h76, menunjukkan hubungan هذا مطعم dengan المطعم نظيف, kemudian murid meniru penulisan model.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih gambar lokasi sekolah lalu menulis dua ayat berkait dengan kosa kata yang dipelajari; ayat baharu ditandakan sebagai ciptaan murid.
+**Aktiviti 2 — Tulis dua ayat berdasarkan gambar tempat:** Murid memilih gambar lokasi sekolah lalu menulis dua ayat berkait dengan kosa kata yang dipelajari; ayat baharu ditandakan sebagai ciptaan murid.
 
 **Pengukuhan / Penilaian (PBD):** Guru memeriksa dua ayat yang mempunyai idea saling berkait dan ejaan tepat.
 

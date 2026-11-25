@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** سلم، كنبة، صالة الضيوف، موقف السيارة
 **Objektif pembelajaran:** Murid dapat menulis semula tiga daripada empat kata atau frasa rumah dengan ejaan dan sambungan tepat.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid menulis semula sekurang-kurangnya 3 daripada 4 kata atau frasa dengan ejaan dan sambungan tepat.
 
 **Set induksi:** Guru menunjukkan perkataan سلم yang tertinggal satu huruf dan meminta murid melengkapkannya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan أكتب وأقرأ halaman 94, membimbing murid menyambung huruf dalam سلم، كنبة، صالة الضيوف dan موقف السيارة secara RTL.
+**Aktiviti 1 — Model tulisan peralatan dan bilik rumah:** Guru merujuk latihan أكتب وأقرأ halaman 94, membimbing murid menyambung huruf dalam سلم، كنبة، صالة الضيوف dan موقف السيارة secara RTL.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyalin empat perkataan/frasa ke dalam petak tulisan, menanda jarak perkataan dan menyemak dengan model.
+**Aktiviti 2 — Salin empat kata atau frasa dan semak jarak:** Murid menyalin empat perkataan/frasa ke dalam petak tulisan, menanda jarak perkataan dan menyemak dengan model.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat tulisan berdasarkan ejaan, jarak dan sambungan huruf yang betul.
 

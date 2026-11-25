@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** فِي الْجَوّ، فِي الْبَرّ، فِي الْبَحْر، طَائِرَة، سَفِينَة
 **Objektif pembelajaran:** Menulis tiga nama pengangkutan mengikut kategori tempat.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid menulis tiga nama pengangkutan mengikut kategori tempat.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing latihan menamakan gambar serta tiga kategori pada h72.
+**Aktiviti 1 — Kenal tiga kategori pengangkutan:** Guru membimbing latihan menamakan gambar serta tiga kategori pada h72.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis tiga nama pengangkutan dalam jadual kategori dan membacanya kepada pasangan.
+**Aktiviti 2 — Tulis nama dalam jadual kategori:** Murid menulis tiga nama pengangkutan dalam jadual kategori dan membacanya kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Tiga tulisan dan tiga kategori sepadan. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

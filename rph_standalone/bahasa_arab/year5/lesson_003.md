@@ -5,13 +5,13 @@
 **Kod SK/SP:** 1.2 / 1.2.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid meniru sebutan sekurang-kurangnya 5 daripada 6 kata إبريق، موقد، فرن، ثلاجة، ملعقة، صحن.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid meniru sebutan sekurang-kurangnya 5 daripada 6 kata peralatan dapur dengan tepat.
 
 **Set induksi:** Guru menunjukkan gambar pinggan dan sudu, murid meneka dan mendengar nama Arab.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menyebut enam kosa kata peralatan dapur dengan sokongan gambar; murid mengulang dalam susunan berbeza.
+**Aktiviti 1 — Ajuk enam nama peralatan dapur:** Guru menyebut enam kosa kata peralatan dapur dengan sokongan gambar; murid mengulang dalam susunan berbeza.
 
-**Aktiviti 2 — Amali murid:** Murid mengadakan 'kedai dapur' simulasi: murid memilih dua gambar, menyebut namanya dengan jelas dan rakan memadankan kad.
+**Aktiviti 2 — Simulasi kedai dapur dan padanan kad:** Murid mengadakan 'kedai dapur' simulasi: murid memilih dua gambar, menyebut namanya dengan jelas dan rakan memadankan kad.
 
 **Pengukuhan / PBD:** Guru menunjukkan enam gambar dan merekod pengulangan sebutan tepat.
 

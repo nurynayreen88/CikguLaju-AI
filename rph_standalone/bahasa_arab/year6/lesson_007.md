@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** ماذا تستخدم؟ أنا أستخدم الصابون، كيف تنظف؟ أنا أنظف
 **Objektif pembelajaran:** Murid meniru tiga daripada empat ayat tentang kebersihan dengan sebutan jelas.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 3 daripada 4 ayat kebersihan dengan sebutan jelas.
 
 **Set induksi:** Guru menunjukkan sabun dan bertanya ماذا تستخدم؟.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan empat ayat menggunakan kad alat kebersihan dan murid meniru respons.
+**Aktiviti 1 — Dengar empat ayat kebersihan:** Guru memperdengarkan empat ayat menggunakan kad alat kebersihan dan murid meniru respons.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam pasangan seorang murid menunjukkan alat kebersihan, seorang lagi memilih dan menyebut ayat tindakan yang sepadan.
+**Aktiviti 2 — Padankan alat dengan ayat tindakan:** Dalam pasangan seorang murid menunjukkan alat kebersihan, seorang lagi memilih dan menyebut ayat tindakan yang sepadan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat ayat lisan; sasaran tiga tepat.
 

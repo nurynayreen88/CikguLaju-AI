@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** ضِيَاء، ضِدّ، مَنْضَدَة، رِيَاضَة
 **Objektif pembelajaran:** Membina dan membaca tiga perkataan daripada potongan huruf.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid membina dan membaca tiga perkataan daripada potongan huruf.
 
 **Set induksi:** Guru mengemukakan perkataan tidak lengkap pada kad gambar.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing teknik mencantum huruf yang mengandungi د atau ض daripada aktiviti h93, dengan perhatian pada titik dan sambungan.
+**Aktiviti 1 — Model cantuman huruf د dan ض:** Guru membimbing teknik mencantum huruf yang mengandungi د atau ض daripada aktiviti h93, dengan perhatian pada titik dan sambungan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyiapkan tiga perkataan menggunakan kad segmen dan membaca hasil tulisan kepada rakan.
+**Aktiviti 2 — Bina tiga perkataan dan baca:** Murid menyiapkan tiga perkataan menggunakan kad segmen dan membaca hasil tulisan kepada rakan.
 
 **Pengukuhan / Penilaian (PBD):** Tiga binaan kata dan tiga bacaan dinilai.
 

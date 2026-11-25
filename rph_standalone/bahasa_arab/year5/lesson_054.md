@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** نمر، تمساح، ديك، طائر
 **Objektif pembelajaran:** Menulis sekurang-kurangnya tiga daripada empat nama haiwan dengan ejaan tepat.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 nama haiwan dengan ejaan tepat.
 
 **Set induksi:** Guru menunjukkan empat gambar haiwan tanpa nama, murid memberi respons lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan penulisan kata haiwan pada latihan أقرأ وأكتب h94 dan menegaskan sambungan serta arah tulisan kanan ke kiri.
+**Aktiviti 1 — Model tulisan nama haiwan secara RTL:** Guru memodelkan penulisan kata haiwan pada latihan أقرأ وأكتب h94 dan menegaskan sambungan serta arah tulisan kanan ke kiri.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis label untuk empat gambar haiwan pada kad sendiri dan bertukar kad untuk semak rakan.
+**Aktiviti 2 — Tulis empat label gambar dan semak rakan:** Murid menulis label untuk empat gambar haiwan pada kad sendiri dan bertukar kad untuk semak rakan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tiga daripada empat ejaan lengkap dan bentuk huruf.
 

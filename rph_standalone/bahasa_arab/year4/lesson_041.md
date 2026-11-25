@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** أهلا وسهلا إلى مدرستنا، هيا إلى المدرسة، ندرس في الفصل
 **Objektif pembelajaran:** Murid dapat melafazkan tiga ungkapan berkait dengan sebutan dan rentak tepat.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid melafazkan tiga ungkapan berkait dengan sebutan dan rentak tepat.
 
 **Set induksi:** Guru menunjukkan gambar sambutan pelawat ke sekolah dan memulakan ucapan أهلا وسهلا.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk aktiviti nyanyian/persembahan h82 yang menyebut tempat dan aktiviti di sekolah; murid meniru frasa ucapan serta menyebut lokasi secara berkumpulan.
+**Aktiviti 1 — Latih frasa ucapan dan rentak:** Guru merujuk aktiviti nyanyian/persembahan h82 yang menyebut tempat dan aktiviti di sekolah; murid meniru frasa ucapan serta menyebut lokasi secara berkumpulan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mencipta persembahan lisan ringkas menggunakan tiga frasa yang dipelajari (tanpa menyalin keseluruhan lagu buku).
+**Aktiviti 2 — Persembahkan tiga ungkapan berkait:** Murid mencipta persembahan lisan ringkas menggunakan tiga frasa yang dipelajari (tanpa menyalin keseluruhan lagu buku).
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai kelancaran sebutan tiga ungkapan dan kerjasama kumpulan.
 

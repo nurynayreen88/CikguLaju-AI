@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أنا أستخدم الصابون، أنا أغسل يدي؛ لا تبذر الماء ialah ayat pengayaan guru daripada unit, bukan dialog 2.3.1 h13–15.
 **Objektif pembelajaran:** Murid meniru bacaan tiga ayat kebersihan dengan sebutan tepat.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid meniru bacaan tiga ayat kebersihan dengan sebutan tepat.
 
 **Set induksi:** Guru memaparkan ikon jangan membazir air dan ayat لا تبذر الماء.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membaca tiga ayat berfrasa sambil menekankan kata kerja tindakan.
+**Aktiviti 1 — Baca ayat dan kenal kata kerja:** Guru membaca tiga ayat berfrasa sambil menekankan kata kerja tindakan.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan murid memadankan tiga ayat dengan tiga gambar kebersihan sebelum membacanya lantang.
+**Aktiviti 2 — Padankan tiga ayat dengan gambar:** Dalam kumpulan murid memadankan tiga ayat dengan tiga gambar kebersihan sebelum membacanya lantang.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai bacaan tiga ayat dan catat kesilapan pada kata kerja.
 

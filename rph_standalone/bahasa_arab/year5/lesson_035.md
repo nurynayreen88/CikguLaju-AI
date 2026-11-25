@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** فرقة الكشافة، جمعية الهلال الأحمر، نادي اللغة، نادي الكمبيوتر
 **Objektif pembelajaran:** Murid dapat mengelaskan tiga daripada empat frasa aktiviti kokurikulum dengan tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 3 daripada 4 frasa aktiviti kokurikulum dengan tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan mengelaskan kelab dan unit beruniform kokurikulum dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut frasa kelab, persatuan dan unit beruniform pada h62 dan menunjukkan gambar jawatan.
+**Aktiviti 1 — Kenal frasa kelab dan unit beruniform:** Guru menyebut frasa kelab, persatuan dan unit beruniform pada h62 dan menunjukkan gambar jawatan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengasingkan kad frasa kepada kategori kelab, persatuan dan unit beruniform, kemudian membacakannya.
+**Aktiviti 2 — Kelaskan kad kokurikulum dan baca:** Murid mengasingkan kad frasa kepada kategori kelab, persatuan dan unit beruniform, kemudian membacakannya.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat frasa ditempatkan dalam kategori yang betul.
 

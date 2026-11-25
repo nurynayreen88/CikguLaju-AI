@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** قِطَار كَهْرَبَائِيّ، حَافِلَة، جَدِيد، كَبِيرَة
 **Objektif pembelajaran:** Membaca dua rangkaian ayat dan memperkenalkan pengangkutan.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid membaca dua rangkaian ayat dan memperkenalkan pengangkutan.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan penerangan pengangkutan elektrik dan bas pada h79.
+**Aktiviti 1 — Baca penerangan pengangkutan elektrik dan bas:** Guru membimbing bacaan penerangan pengangkutan elektrik dan bas pada h79.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyesuaikan kata sifat pada dua gambar kenderaan, kemudian membaca dan menghasilkan satu ayat baharu.
+**Aktiviti 2 — Sesuaikan sifat dan bina ayat baharu:** Murid menyesuaikan kata sifat pada dua gambar kenderaan, kemudian membaca dan menghasilkan satu ayat baharu.
 
 **Pengukuhan / Penilaian (PBD):** Dua rangkaian ayat dengan sifat sepadan. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

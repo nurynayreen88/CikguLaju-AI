@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** حيوانات أليفة، حيوانات مفترسة، كلب، نمر، أسد، ماعز
 **Objektif pembelajaran:** Mengelaskan empat daripada enam contoh haiwan dengan betul selepas mendengar.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 4 daripada 6 contoh haiwan dengan betul selepas mendengar.
 
 **Set induksi:** Guru memaparkan dua ruang berlabel jinak dan pemangsa, murid meneka kategori.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menerangkan perbezaan haiwan jinak dan pemangsa menggunakan ilustrasi h88 serta menyebut nama secara berturutan.
+**Aktiviti 1 — Kenal haiwan jinak dan pemangsa:** Guru menerangkan perbezaan haiwan jinak dan pemangsa menggunakan ilustrasi h88 serta menyebut nama secara berturutan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid meletakkan gambar haiwan ke dalam dua kategori selepas mendengar sebutan guru dan menjelaskan satu pilihan.
+**Aktiviti 2 — Kelaskan gambar selepas mendengar:** Murid meletakkan gambar haiwan ke dalam dua kategori selepas mendengar sebutan guru dan menjelaskan satu pilihan.
 
 **Pengukuhan / Penilaian (PBD):** Sekurang-kurangnya empat daripada enam padanan kategori disemak.
 

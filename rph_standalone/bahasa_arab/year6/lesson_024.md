@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** أَمَلِي أَنْ أَكُونَ طَبَّاخًا، أَمَلِي أَنْ أَكُونَ مُهَنْدِسَةً
 **Objektif pembelajaran:** Menyampaikan dua ayat tentang cita-cita secara lisan dengan berpandu.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid menyampaikan dua ayat tentang cita-cita secara lisan dengan berpandu.
 
 **Set induksi:** Guru meminta dua murid memilih gambar profesion kegemaran.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan pola cita-cita dalam dialog h43 dan membimbing murid membezakan bentuk kata nama kerjaya mengikut watak.
+**Aktiviti 1 — Ajuk dialog cita-cita:** Guru memodelkan pola cita-cita dalam dialog h43 dan membimbing murid membezakan bentuk kata nama kerjaya mengikut watak.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melakonkan pasangan temu bual mini, bertanya cita-cita rakan dan memberikan dua jawapan dengan kad kerja berlainan.
+**Aktiviti 2 — Temu bual mini tentang kerjaya:** Murid melakonkan pasangan temu bual mini, bertanya cita-cita rakan dan memberikan dua jawapan dengan kad kerja berlainan.
 
 **Pengukuhan / Penilaian (PBD):** Dua ayat lisan tentang cita-cita dapat difahami dan penggunaan kata tepat.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** طائر، تمساح، ثعبان، كلب، صقر
 **Objektif pembelajaran:** Menyebut dengan tepat empat daripada lima nama haiwan selepas mendengar model guru.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 4 daripada 5 nama haiwan dengan tepat selepas mendengar model guru.
 
 **Set induksi:** Guru memaparkan gambar burung, buaya dan ular tanpa label. Murid meneka nama haiwan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan kata طائر، تمساح، ثعبان، كلب، صقر dan membimbing murid mengecam huruf dan bunyi yang sama seperti latihan mendengar h86.
+**Aktiviti 1 — Dengar lima nama haiwan dan kenal bunyi:** Guru memperdengarkan kata طائر، تمساح، ثعبان، كلب، صقر dan membimbing murid mengecam huruf dan bunyi yang sama seperti latihan mendengar h86.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun kad bunyi mengikut lima gambar, kemudian menyebut kata sasaran dalam pasangan.
+**Aktiviti 2 — Susun kad bunyi dan sebut kata haiwan:** Murid menyusun kad bunyi mengikut lima gambar, kemudian menyebut kata sasaran dalam pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Empat daripada lima sebutan haiwan dan padanan gambar diperiksa secara individu.
 

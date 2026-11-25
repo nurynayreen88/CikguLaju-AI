@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** عَلَم، النَّشِيدُ الْوَطَنِيّ، نَشِيدُ الْوِلَايَة، مَبَادِئُ الدَّوْلَة
 **Objektif pembelajaran:** Mengenal empat lambang atau unsur kenegaraan yang disebut guru.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid mengenal empat lambang atau unsur kenegaraan yang disebut guru.
 
 **Set induksi:** Guru menunjukkan gambar bendera dan dokumen Rukun Negara tanpa membaca teks lagu.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut istilah buku h94 dalam situasi pameran Sayangi Malaysiaku, murid memilih gambar yang sepadan.
+**Aktiviti 1 — Dengar istilah lambang kenegaraan:** Guru menyebut istilah buku h94 dalam situasi pameran Sayangi Malaysiaku, murid memilih gambar yang sepadan.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid memainkan aktiviti 'dengar dan tunjuk' empat kad lambang kenegaraan dan menyebut satu istilah pilihan.
+**Aktiviti 2 — Permainan dengar dan tunjuk empat kad:** Pasangan murid memainkan aktiviti 'dengar dan tunjuk' empat kad lambang kenegaraan dan menyebut satu istilah pilihan.
 
 **Pengukuhan / Penilaian (PBD):** Empat padanan sebutan-gambar dan bacaan istilah direkod.
 

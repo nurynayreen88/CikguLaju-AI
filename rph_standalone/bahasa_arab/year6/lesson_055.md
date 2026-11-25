@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** مَا عَاصِمَةُ مَالِيزِيَا؟ كُوالَا لُمبُور، مَا أَلْوَانُ الْعَلَم؟
 **Objektif pembelajaran:** Menyampaikan dua jawapan tentang ibu negara dan warna bendera.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid menyampaikan dua jawapan tentang ibu negara dan warna bendera.
 
 **Set induksi:** Guru menunjukkan peta Malaysia serta gambar bendera tanpa label warna.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing dialog pada h105 dan menggunakan nama warna yang telah dipelajari untuk respons berpandu.
+**Aktiviti 1 — Latih dialog ibu negara dan warna:** Guru membimbing dialog pada h105 dan menggunakan nama warna yang telah dipelajari untuk respons berpandu.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membuat dialog dua giliran bertanya lokasi ibu negara dan mengenal empat warna bendera Malaysia.
+**Aktiviti 2 — Soal jawab lokasi dan warna bendera:** Murid membuat dialog dua giliran bertanya lokasi ibu negara dan mengenal empat warna bendera Malaysia.
 
 **Pengukuhan / Penilaian (PBD):** Dua respons dialog dan bacaan nama warna diperiksa.
 

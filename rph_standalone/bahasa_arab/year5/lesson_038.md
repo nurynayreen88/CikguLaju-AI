@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** سباق الجري، القفز الطويل، فرقة الكشافة، نادي الكمبيوتر
 **Objektif pembelajaran:** Murid dapat menulis tiga daripada empat frasa dengan ejaan tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 frasa dengan ejaan tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan menulis nama kelab dan aktiviti sukan dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أقرأ وأكتب h66, memodelkan jarak perkataan serta sambungan huruf Arab.
+**Aktiviti 1 — Model tulisan frasa kelab dan sukan:** Guru menggunakan latihan أقرأ وأكتب h66, memodelkan jarak perkataan serta sambungan huruf Arab.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyalin empat frasa dan semak ejaan menggunakan model buku.
+**Aktiviti 2 — Salin empat frasa dan semak ejaan:** Murid menyalin empat frasa dan semak ejaan menggunakan model buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tiga daripada empat frasa ditulis lengkap dengan betul.
 

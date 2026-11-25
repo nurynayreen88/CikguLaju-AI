@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** وسادة، ستار، سلم، ساعة، حمام، سرير
 **Objektif pembelajaran:** Murid dapat membaca lima daripada enam kata objek rumah dengan sebutan tepat.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 5 daripada 6 kata objek rumah dengan sebutan tepat.
 
 **Set induksi:** Guru menunjukkan tiga gambar peralatan dan meminta murid cuba membaca kad tanpa bantuan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan aktiviti أقرأ وأردد halaman 91 yang mengulang kosa kata rumah; murid menjejak perkataan dan membaca mengikut model guru.
+**Aktiviti 1 — Ajuk bacaan kata objek rumah:** Guru menggunakan aktiviti أقرأ وأردد halaman 91 yang mengulang kosa kata rumah; murid menjejak perkataan dan membaca mengikut model guru.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan memilih kad kata daripada sampul, membacanya dan memadankan dengan objek pada pelan rumah.
+**Aktiviti 2 — Cabut kad dan padankan objek pada pelan:** Murid berpasangan memilih kad kata daripada sampul, membacanya dan memadankan dengan objek pada pelan rumah.
 
 **Pengukuhan / Penilaian (PBD):** Guru mendengar enam bacaan individu dan menanda sekurang-kurangnya lima tepat.
 

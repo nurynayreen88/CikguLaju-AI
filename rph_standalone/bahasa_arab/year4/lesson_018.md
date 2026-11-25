@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** كاتب، كاتبة، تلميذ، تلميذة، مدير، مديرة
 **Objektif pembelajaran:** Murid memilih sekurang-kurangnya lima daripada enam gambar orang apabila mendengar nama dalam bahasa Arab.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid memilih sekurang-kurangnya 5 daripada 6 gambar berdasarkan nama warga sekolah yang didengar.
 
 **Set induksi:** Guru memperdengarkan sebutan تلميذ dan تلميذة; murid menunjukkan gambar yang sesuai.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membacakan enam nama warga sekolah daripada set kosa kata Buku Teks h.32. Murid mendengar tanpa melihat kata bertulis, kemudian mengangkat kad gambar.
+**Aktiviti 1 — Dengar nama tanpa melihat tulisan:** Guru membacakan enam nama warga sekolah daripada set kosa kata Buku Teks h.32. Murid mendengar tanpa melihat kata bertulis, kemudian mengangkat kad gambar.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan, murid menyusun gambar mengikut urutan audio sebutan guru dan membandingkan jawapan.
+**Aktiviti 2 — Susun gambar mengikut urutan sebutan:** Dalam kumpulan, murid menyusun gambar mengikut urutan audio sebutan guru dan membandingkan jawapan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai lima daripada enam pemadanan kata yang didengar dengan gambar.
 

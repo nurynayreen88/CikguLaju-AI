@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** مُحَاضِرَة، طَبِيب، مُهَنْدِس، طَيَّار، مُحَاسِب
 **Objektif pembelajaran:** Menyebut lima perkataan pekerjaan dengan jelas dan merakam bacaan ringkas.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid menyebut lima perkataan pekerjaan dengan jelas dan merakam bacaan ringkas.
 
 **Set induksi:** Guru menunjukkan poster pameran kerjaya dan menamakan tiga profesion.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing latih tubi sebutan perkataan kerjaya pada h36 dengan penekanan huruf tengah dan akhir.
+**Aktiviti 1 — Latih sebutan nama kerjaya:** Guru membimbing latih tubi sebutan perkataan kerjaya pada h36 dengan penekanan huruf tengah dan akhir.
 
-**Aktiviti 2 — Aplikasi murid:** Kumpulan murid memilih lima kad profesi, mengulang sebutan lalu membuat rakaman suara pendek bagi semakan guru.
+**Aktiviti 2 — Rakam lima nama pekerjaan:** Kumpulan murid memilih lima kad profesi, mengulang sebutan lalu membuat rakaman suara pendek bagi semakan guru.
 
 **Pengukuhan / Penilaian (PBD):** Lima sebutan dan kelancaran kata diperiksa daripada rakaman.
 

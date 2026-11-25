@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** طَبِيب، تَاجِر، شُرْطِيّ، مُحَاضِر
 **Objektif pembelajaran:** Menulis empat kata pekerjaan dengan bentuk huruf serta tanda baca tepat.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid menulis empat kata pekerjaan dengan bentuk huruf serta tanda baca tepat.
 
 **Set induksi:** Guru menunjukkan dua ejaan salah yang melibatkan sambungan huruf.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan latihan semak betul/salah dan penulisan pada h40, menegaskan penyambungan huruf.
+**Aktiviti 1 — Kenal ejaan kerjaya betul dan salah:** Guru memodelkan latihan semak betul/salah dan penulisan pada h40, menegaskan penyambungan huruf.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menandakan ejaan salah, menulis semula empat kata dan menyemak dengan rakan.
+**Aktiviti 2 — Tulis semula empat kata pekerjaan:** Murid menandakan ejaan salah, menulis semula empat kata dan menyemak dengan rakan.
 
 **Pengukuhan / Penilaian (PBD):** Empat ejaan nama kerja yang betul direkod.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** مَبَادِئُ الدَّوْلَة، النَّشِيدُ الْوَطَنِيّ، نَشِيدُ الْوِلَايَة، عَلَم
 **Objektif pembelajaran:** Membaca empat frasa dan membezakan kegunaan setiap lambang.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid membaca empat frasa dan membezakan kegunaan setiap lambang.
 
 **Set induksi:** Guru memaparkan kad ikon bendera, senarai prinsip dan nota lagu negeri tanpa memainkan teks penuh.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan nama unsur kenegaraan pada h98, mengaitkan kad dengan kategori serta fungsi masing-masing.
+**Aktiviti 1 — Baca nama dan fungsi unsur kenegaraan:** Guru membimbing bacaan nama unsur kenegaraan pada h98, mengaitkan kad dengan kategori serta fungsi masing-masing.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membina peta frasa empat unsur, membaca nama dan menulis satu contoh kegunaan dalam BM.
+**Aktiviti 2 — Peta frasa empat unsur negara:** Murid membina peta frasa empat unsur, membaca nama dan menulis satu contoh kegunaan dalam BM.
 
 **Pengukuhan / Penilaian (PBD):** Empat bacaan frasa dan kategori yang tepat direkod.
 

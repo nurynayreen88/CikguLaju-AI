@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** ما شكل الصحن؟ شكل الصحن بيضاوي، ما شكل الفرن؟ شكل الفرن مربع.
 **Objektif pembelajaran:** Murid meniru bacaan tiga ayat dapur dengan sebutan tepat.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid meniru bacaan tiga ayat dapur dengan sebutan tepat.
 
 **Set induksi:** Guru menunjukkan gambar pinggan dan kad بيضاوي daripada aktiviti bentuk pada buku teks halaman 15.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membaca dialog bentuk peralatan pada buku halaman 15 dan murid mengulang secara berpasangan dengan sebutan perkataan tepat.
+**Aktiviti 1 — Baca dialog bentuk peralatan:** Guru membaca dialog bentuk peralatan pada buku halaman 15 dan murid mengulang secara berpasangan dengan sebutan perkataan tepat.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan dialog bentuk dengan gambar pinggan atau ketuhar, kemudian membaca tiga ayat secara bergilir.
+**Aktiviti 2 — Padankan gambar dan baca tiga ayat:** Murid memadankan dialog bentuk dengan gambar pinggan atau ketuhar, kemudian membaca tiga ayat secara bergilir.
 
 **Pengukuhan / Penilaian (PBD):** Guru menguji bacaan ketiga-tiga ayat, tandakan bunyi kata kerja dan objek.
 

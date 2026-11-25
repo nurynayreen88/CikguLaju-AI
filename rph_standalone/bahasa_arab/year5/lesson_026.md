@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** ماذا تفضلين؟ أفضل القهوة. ماذا تطبخين؟
 **Objektif pembelajaran:** Murid dapat Menulis sekurang-kurangnya dua ayat pendek daripada model latihan halaman 44 dengan susunan kata tepat.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya dua ayat pendek dengan susunan kata tepat.
 
 **Set induksi:** Guru memaparkan dua jalur kata أفضل / القهوة dan meminta murid menyusun ayat mudah.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أقرأ وأكتب halaman 44 yang menulis ماذا تفضلين؟ dan أفضل القهوة, menunjukkan tanda soal, ruang dan sambungan huruf.
+**Aktiviti 1 — Model tulisan soalan dan jawapan pilihan:** Guru menggunakan latihan أقرأ وأكتب halaman 44 yang menulis ماذا تفضلين؟ dan أفضل القهوة, menunjukkan tanda soal, ruang dan sambungan huruf.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis dua ayat soalan-jawapan pada lembaran dan menukar satu nama minuman sebagai ayat pengayaan ciptaan sendiri.
+**Aktiviti 2 — Tulis dua ayat dan ubah nama minuman:** Murid menulis dua ayat soalan-jawapan pada lembaran dan menukar satu nama minuman sebagai ayat pengayaan ciptaan sendiri.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak dua ayat dari segi ejaan, susunan perkataan dan tanda soal.
 

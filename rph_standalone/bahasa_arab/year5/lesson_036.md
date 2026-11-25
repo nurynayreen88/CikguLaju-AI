@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** سباق الجري، القفز العالي، القفز الطويل، رمي الجلة
 **Objektif pembelajaran:** Murid dapat memilih tiga daripada empat gambar yang sesuai dengan bacaan.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid memilih sekurang-kurangnya 3 daripada 4 gambar yang sepadan dengan bacaan.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan mengenal nama acara olahraga daripada bacaan dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membaca latihan أقرأ وأحدد h63 dan membimbing sebutan setiap acara olahraga.
+**Aktiviti 1 — Baca nama acara olahraga:** Guru membaca latihan أقرأ وأحدد h63 dan membimbing sebutan setiap acara olahraga.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membaca kad sukan dan memadankan gambar sukan secara individu.
+**Aktiviti 2 — Padankan kad bacaan dengan gambar:** Murid membaca kad sukan dan memadankan gambar sukan secara individu.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat bacaan serta padanan yang tepat.
 

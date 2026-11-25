@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** ماذا تفعلين يا أمي؟ أنا أطبخ الطعام. أين أضع المقلاة؟ على الموقد. (dialog pengajaran diolah daripada situasi BT h.20)
 **Objektif pembelajaran:** Murid meniru sekurang-kurangnya tiga daripada empat pertuturan dialog berkait dengan makhraj dan susunan yang tepat.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 3 daripada 4 pertuturan dialog dengan makhraj dan susunan tepat.
 
 **Set induksi:** Guru menunjukkan gambar ibu dan anak di dapur, kemudian bertanya apakah mereka sedang lakukan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan urutan dialog ibu dan anak dalam Buku Teks Tahun 5 halaman bercetak 20, iaitu bertanya tindakan memasak dan tempat meletakkan kuali; murid mendengar dan mengulang mengikut giliran.
+**Aktiviti 1 — Dengar dan ajuk dialog ibu dan anak:** Guru memodelkan urutan dialog ibu dan anak dalam Buku Teks Tahun 5 halaman bercetak 20, iaitu bertanya tindakan memasak dan tempat meletakkan kuali; murid mendengar dan mengulang mengikut giliran.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan memilih peranan ibu atau anak dan meniru empat giliran dialog secara bersambung; guru membetulkan sebutan dan kesinambungan respons.
+**Aktiviti 2 — Lakonkan empat giliran dialog memasak:** Murid berpasangan memilih peranan ibu atau anak dan meniru empat giliran dialog secara bersambung; guru membetulkan sebutan dan kesinambungan respons.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod tiga daripada empat pertuturan tepat dan sekurang-kurangnya satu respons sambung tanpa contoh bertulis.
 

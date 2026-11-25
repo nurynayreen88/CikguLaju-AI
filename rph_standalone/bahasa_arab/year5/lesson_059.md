@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** ماذا تربي يا أحمد؟، أنا أربي الأرنب، أنا أحب القط
 **Objektif pembelajaran:** Menuturkan dua hingga tiga ayat berkait tentang haiwan peliharaan dalam dialog berpandu.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menuturkan dua hingga tiga ayat berkait tentang haiwan peliharaan dalam dialog berpandu.
 
 **Set induksi:** Guru memaparkan gambar arnab dan kucing serta menyoal cara menjaga haiwan dengan baik.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing dialog berangkai pada h104; murid mengulang soalan, jawapan dan tindak balas yang sesuai.
+**Aktiviti 1 — Ajuk dialog penjagaan haiwan:** Guru membimbing dialog berangkai pada h104; murid mengulang soalan, jawapan dan tindak balas yang sesuai.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid bermain peranan pemilik haiwan dan rakan, menuturkan sekurang-kurangnya dua ayat serta satu soalan.
+**Aktiviti 2 — Lakonkan pemilik haiwan dan rakan:** Pasangan murid bermain peranan pemilik haiwan dan rakan, menuturkan sekurang-kurangnya dua ayat serta satu soalan.
 
 **Pengukuhan / Penilaian (PBD):** Kefahaman, turutan dua ayat dan sebutan dinilai melalui lakonan pendek.
 

@@ -5,13 +5,13 @@
 **Kod SK/SP:** 3.1 / 3.1.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid menulis 4 daripada 5 kata صابون، مشط، منشفة، مرآة، شامبو dengan susunan huruf dan titik betul.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 4 daripada 5 kata dengan susunan huruf dan titik betul.
 
 **Set induksi:** Guru menunjukkan perkataan مشط tanpa satu huruf; murid melengkapkannya.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru memodelkan tulisan dua kata kebersihan sambil menekankan arah kanan ke kiri.
+**Aktiviti 1 — Model tulisan kata kebersihan:** Guru memodelkan tulisan dua kata kebersihan sambil menekankan arah kanan ke kiri.
 
-**Aktiviti 2 — Amali murid:** Murid menulis lima label objek penjagaan diri, melekatkannya pada gambar dan menilai ejaan secara berpasangan.
+**Aktiviti 2 — Tulis lima label dan semak ejaan:** Murid menulis lima label objek penjagaan diri, melekatkannya pada gambar dan menilai ejaan secara berpasangan.
 
 **Pengukuhan / PBD:** Guru menyemak lima label berdasarkan ketepatan huruf, titik dan sambungan.
 

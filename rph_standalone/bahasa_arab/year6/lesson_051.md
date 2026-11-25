@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** مَالِيزِيّ، مَالِيزِيَّة، مَلَايُوِيّ، صِينِيّ، هِنْدِيّ، مُوَاطِن أَصْلِيّ
 **Objektif pembelajaran:** Membaca dan mengelaskan empat bentuk kosa kata dalam ayat.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid membaca dan mengelaskan empat bentuk kosa kata dalam ayat.
 
 **Set induksi:** Guru memperkenalkan kad watak rekaan dengan nama dan penerangan pilihan, bukan meneka latar belakang orang sebenar.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan label etnik dan jantina tatabahasa pada h99 serta perbezaan bentuk muzakkar-muannath.
+**Aktiviti 1 — Baca bentuk kosa kata identiti:** Guru membimbing bacaan label etnik dan jantina tatabahasa pada h99 serta perbezaan bentuk muzakkar-muannath.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan empat kad frasa kepada profil watak rekaan yang dinyatakan dan membaca tanpa stereotaip.
+**Aktiviti 2 — Padankan frasa dengan profil watak rekaan:** Murid memadankan empat kad frasa kepada profil watak rekaan yang dinyatakan dan membaca tanpa stereotaip.
 
 **Pengukuhan / Penilaian (PBD):** Empat bacaan dan empat padanan berdasarkan label pilihan dinilai.
 

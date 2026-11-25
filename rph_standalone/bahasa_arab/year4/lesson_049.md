@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** سرير، حمام، ساعة، صالة الطعام، غرفة النوم
 **Objektif pembelajaran:** Murid dapat membezakan sekurang-kurangnya empat daripada lima kad perkataan atau frasa ruang rumah.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid membezakan sekurang-kurangnya 4 daripada 5 kad perkataan atau frasa ruang rumah.
 
 **Set induksi:** Guru memaparkan gambar katil dan ruang makan; murid menamakan kategori objek atau ruang.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أقرأ وأميز halaman 93, menunjukkan bacaan kata dan frasa berkaitan rumah serta perbezaannya daripada kosa kata sekolah.
+**Aktiviti 1 — Bezakan bacaan kata objek dan frasa ruang:** Guru menggunakan latihan أقرأ وأميز halaman 93, menunjukkan bacaan kata dan frasa berkaitan rumah serta perbezaannya daripada kosa kata sekolah.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menempatkan lima kad bacaan dalam lajur 'objek rumah' atau 'ruang rumah' lalu membaca setiap satu kepada pasangan.
+**Aktiviti 2 — Kelaskan lima kad bacaan:** Murid menempatkan lima kad bacaan dalam lajur 'objek rumah' atau 'ruang rumah' lalu membaca setiap satu kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak empat daripada lima pengelasan bacaan dan ketepatan sebutan.
 
