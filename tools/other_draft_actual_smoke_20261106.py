@@ -325,7 +325,7 @@ def main():
     assert result.status_code==200,result.json if result.is_json else None
     with ZipFile(io.BytesIO(result.data)) as document:
         text=document.read("word/document.xml").decode()
-        assert "PdP 030" not in text and "1.1" in text and "1.1.4" in text and "h63" in text
+        assert "PdP 030" not in text and "1.1" in text and "1.1.4" in text and "٦٣" in text
     doc=Document(io.BytesIO(result.data))
     assert [len(t.columns) for t in doc.tables]==[3,2,3,2]
     assert doc.tables[1].cell(0,1).text=="1.1"
