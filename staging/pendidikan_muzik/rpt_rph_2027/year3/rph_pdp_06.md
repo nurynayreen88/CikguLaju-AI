@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Murid mengimbas urutan halaman 20 dan mengenal pasti perbezaan tempo lambat dengan tempo cepat melalui tepukan guru.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
+**Aktiviti 1 — Susun formasi kumpulan**  
 Guru merancang kumpulan kecil untuk mengiringi Kita Satu Keluarga mengikut halaman 21; murid menetapkan peranan, titik mula dan urutan maju–setempat–undur–setempat.
 
-**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Persembahan dua tempo**  
 Kumpulan berlatih pada tempo lambat, kemudian tempo cepat; jika fail audio telah sah, gunakan instrumental bercetak Audio 16 diikuti Audio 17. Tanpa fail, guru mengira detik atau memberi iringan perkusi sendiri.
 
 **Pengukuhan & Penilaian — 6 minit**  
