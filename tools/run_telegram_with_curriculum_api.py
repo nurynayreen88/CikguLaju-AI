@@ -968,3 +968,11 @@ except Exception as _pi_jawi_numerals_exc:
     RPH_PI_JAWI_NUMERALS_ACTIVE = False
     print("PI Jawi numeral presentation unavailable:",
           type(_pi_jawi_numerals_exc).__name__, flush=True)
+
+# Source-reviewed PI first-wave fields; keep native generator and original template.
+try:
+    from web.pi_editorial_wave1_20261125 import install as install_pi_editorial_wave1
+    PI_EDITORIAL_WAVE1_ACTIVE = bool(install_pi_editorial_wave1(telegram_runtime))
+except Exception as _pi_editorial_wave1_exc:
+    PI_EDITORIAL_WAVE1_ACTIVE = False
+    print('PI editorial wave1 unavailable:', type(_pi_editorial_wave1_exc).__name__, flush=True)
