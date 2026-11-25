@@ -9,15 +9,15 @@
 
 **Objektif pembelajaran (draf boleh ukur):** Mencipta corak lapan detik dengan sekurang-kurangnya tiga jenis ikon buah dan memainkannya secara berkumpulan.
 
-**Kriteria kejayaan:** Murid mencapai kriteria yang dinyatakan melalui persembahan atau respons individu dan senarai semak guru.
+**Kriteria kejayaan:** Murid mencipta dan memainkan corak lapan detik menggunakan sekurang-kurangnya tiga jenis ikon buah.
 
 **Set Induksi — 4 minit**  
 Guru memperkenalkan Permainan Buah Lazat serta nilai kad ikon dan mengingatkan cara mengira detik.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan (8 minit)**  
+**Aktiviti 1 — Cabutan kad buah**  
 Guru menyediakan 35 kad ikon mengikut buku dan membentuk tiga kumpulan. Setiap kumpulan mencabut 10 kad; kad durian membenarkan cabutan tambahan mengikut peraturan permainan.
 
-**Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Cipta irama lapan detik**  
 Murid mengira jumlah detik kad, menyusun irama tepat lapan detik menggunakan sekurang-kurangnya tiga jenis ikon buah, lalu memainkan hasil ciptaan dengan alat perkusi mengikut giliran.
 
 **Pengukuhan & Penilaian — 6 minit**  

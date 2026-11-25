@@ -9,15 +9,15 @@
 
 **Objektif pembelajaran (draf boleh ukur):** Menyatakan dua ciri muzik rock serta mengenal pasti sekurang-kurangnya tiga peranan pemuzik dalam persembahan rock.
 
-**Kriteria kejayaan:** Murid mencapai kriteria yang dinyatakan melalui persembahan atau respons individu dan senarai semak guru.
+**Kriteria kejayaan:** Murid menyatakan dua ciri muzik rock dan mengenal pasti sekurang-kurangnya tiga peranan pemuzik.
 
 **Set Induksi — 4 minit**  
 Guru menunjukkan gambar penyanyi, pemain gitar utama, gitar bes dan dram serta meminta murid mengenal peranan.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan (8 minit)**  
+**Aktiviti 1 — Kenali ciri muzik rock**  
 Guru merujuk halaman 96 dan menerangkan muzik rock mula popular sekitar 1970-an; murid membezakan persembahan rancak dengan rock balada yang lebih perlahan.
 
-**Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit)**  
+**Aktiviti 2 — Peranan pemuzik rock**  
 Murid melaksanakan perbincangan Pusingan Robin: menamakan peranan penyanyi, gitar utama, gitar bes, dram dan papan kekunci, kemudian memberi ulasan ringkas tentang pengalaman mendengar muzik rock.
 
 **Pengukuhan & Penilaian — 6 minit**  

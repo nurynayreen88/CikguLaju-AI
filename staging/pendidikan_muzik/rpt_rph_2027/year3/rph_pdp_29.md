@@ -9,22 +9,22 @@
 
 **Objektif pembelajaran (draf boleh ukur):** Menghasilkan tiga kesan bunyi yang sesuai untuk tiga peristiwa dalam cerita Tamak Selalu Rugi.
 
-**Kriteria kejayaan:** Murid boleh menunjukkan kemahiran khusus yang diterangkan dalam objektif dengan bimbingan guru dan dinilai melalui senarai semak aktiviti.
+**Kriteria kejayaan:** Murid menghasilkan tiga kesan bunyi yang sesuai dengan tiga peristiwa cerita Tamak Selalu Rugi.
 
 **Set Induksi — 4 minit**  
 Guru membayangkan bunyi langkah, perut lapar dan ikan jatuh ke sungai, lalu murid mencadangkan bahan bunyi.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+**Aktiviti 1 — Pilih adegan cerita Olla**  
 Murid membaca cerita Olla pada halaman 82–83 dan menandakan tiga adegan untuk diiringi bunyi.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit)**  
+**Aktiviti 2 — Persembahan kesan bunyi**  
 Kumpulan mempersembahkan cerita dengan kesan bunyi perkusi badan atau alat improvisasi, kemudian membandingkan dua versi persembahan.
 
 **Pengukuhan & Penilaian — 6 minit**  
 Semak tiga padanan adegan–bunyi, masa masuk bunyi dan kesepakatan kumpulan.
 
 **Penutup — 2 minit**  
-Murid menjelaskan satu kemahiran yang diperbaiki; guru merekod pemerhatian dan mengatur latihan pemulihan bagi murid yang belum menguasai kemahiran.
+Murid memperdengarkan tiga kesan bunyi dan menyatakan adegan yang sepadan.
 
 **Bahan:** Kad adegan, buku halaman 82–83, perkusi badan dan alat improvisasi selamat.  
 **Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018, halaman 82–83, sumber teks https://anyflip.com/lcinm/flxx/basic/51-100. Kod dicetak dalam buku Kesenian: 3.2.1, 3.2.3; kod RPT Muzik tidak dinormalisasikan secara automatik. Nombor audio tercetak 69–70; **tiada fail audio sebenar disahkan atau dipasang ke Telegram**.

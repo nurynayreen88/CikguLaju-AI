@@ -9,22 +9,22 @@
 
 **Objektif pembelajaran (draf boleh ukur):** Memainkan corak perkusi untuk mengiringi Selamat Malam sekurang-kurangnya lapan detik tanpa kehilangan tempo.
 
-**Kriteria kejayaan:** Murid boleh menunjukkan kemahiran khusus yang diterangkan dalam objektif dengan bimbingan guru dan dinilai melalui senarai semak aktiviti.
+**Kriteria kejayaan:** Murid memainkan corak iringan sekurang-kurangnya lapan detik tanpa kehilangan tempo.
 
 **Set Induksi — 4 minit**  
 Murid mengimbas lagu Selamat Malam sambil menepuk detik dengan guru.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+**Aktiviti 1 — Pola Perkusi Gubahanku**  
 Berpandukan Perkusi Gubahanku pada halaman 72, guru mengajar pola melalui tepukan dan murid berlatih menggunakan alat perkusi selamat.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit)**  
+**Aktiviti 2 — Iringan Selamat Malam**  
 Kumpulan memainkan iringan ketika rakan menyanyi; ketua kumpulan memberi isyarat mula, henti dan kawalan dinamik.
 
 **Pengukuhan & Penilaian — 6 minit**  
 Periksa pola, detik stabil, koordinasi kumpulan dan etika penggunaan alat.
 
 **Penutup — 2 minit**  
-Murid menjelaskan satu kemahiran yang diperbaiki; guru merekod pemerhatian dan mengatur latihan pemulihan bagi murid yang belum menguasai kemahiran.
+Kumpulan memainkan lapan detik iringan dengan isyarat mula dan henti serentak.
 
 **Bahan:** Alat perkusi kelas, kad ikon, skor perkusi halaman 72–73.  
 **Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018, halaman 72–73, sumber teks https://anyflip.com/lcinm/flxx/basic/51-100. Kod dicetak dalam buku Kesenian: 2.2.5; kod RPT Muzik tidak dinormalisasikan secara automatik. Nombor audio tercetak 61–64; **tiada fail audio sebenar disahkan atau dipasang ke Telegram**.
