@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** إدارة، فناء، مكتبة، مطعم، حمام، مصلى
 **Objektif pembelajaran:** Murid dapat meniru lima daripada enam nama tempat dengan sebutan jelas.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 5 daripada 6 nama tempat sekolah dengan jelas.
 
 **Set induksi:** Guru menunjukkan pelan sekolah kosong dan menanya nama tempat tertentu.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan enam kata lokasi daripada latihan h60 (إدارة، فناء، مكتبة، مطعم، حمام، مصلى) dan murid mengulang serta menunjuk pada pelan.
+**Aktiviti 1 — Ajuk enam nama tempat sekolah:** Guru memperdengarkan enam kata lokasi daripada latihan h60 (إدارة، فناء، مكتبة، مطعم، حمام، مصلى) dan murid mengulang serta menunjuk pada pelan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih kad nama lokasi dan melekat pada pelan sekolah, kemudian melafazkan nama kepada rakan sekelas.
+**Aktiviti 2 — Letakkan kad nama pada pelan:** Murid memilih kad nama lokasi dan melekat pada pelan sekolah, kemudian melafazkan nama kepada rakan sekelas.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai lima daripada enam sebutan dan padanan lokasi.
 

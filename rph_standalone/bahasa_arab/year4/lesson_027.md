@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** أهلا وسهلا، مرحبا يا أصدقاء، من هو؟، من هي؟
 **Objektif pembelajaran:** Murid dapat menyampaikan sekurang-kurangnya tiga frasa yang bersambung dalam persembahan berkumpulan.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menyampaikan sekurang-kurangnya tiga frasa bersambung dalam persembahan kumpulan.
 
 **Set induksi:** Guru menunjukkan poster sambutan sekolah dan meminta murid menyapa rakan menggunakan مرحبا.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing murid membaca frasa persembahan h54 seperti أهلا وسهلا، مرحبا يا أصدقاء dan soalan من هو؟. Murid mengulang sambil menggunakan isyarat gambar jawatan sekolah.
+**Aktiviti 1 — Latih frasa ucapan warga sekolah:** Guru membimbing murid membaca frasa persembahan h54 seperti أهلا وسهلا، مرحبا يا أصدقاء dan soalan من هو؟. Murid mengulang sambil menggunakan isyarat gambar jawatan sekolah.
 
-**Aktiviti 2 — Aplikasi murid:** Kumpulan murid menghasilkan persembahan ringkas tiga hingga empat baris tentang warga sekolah menggunakan nama jawatan yang telah dipelajari.
+**Aktiviti 2 — Persembahan tiga frasa berkait:** Kumpulan murid menghasilkan persembahan ringkas tiga hingga empat baris tentang warga sekolah menggunakan nama jawatan yang telah dipelajari.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai sebutan, nada, kelancaran dan kesesuaian tiga frasa dalam satu persembahan.
 

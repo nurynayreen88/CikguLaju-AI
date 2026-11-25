@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** غرفة المدير، غرفة المعلمين، معمل العلوم، معمل الكمبيوتر
 **Objektif pembelajaran:** Murid dapat memadankan tiga daripada empat frasa bilik khas yang didengar dengan gambar.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid memadankan sekurang-kurangnya 3 daripada 4 frasa bilik khas yang didengar dengan gambar tepat.
 
 **Set induksi:** Guru menunjukkan dua gambar bilik berbeza dan menyebut غرفة المدير.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membacakan frasa Buku Teks h62, contohnya غرفة المدير، غرفة المعلمين، معمل العلوم، معمل الكمبيوتر, sambil murid mendengar dan memadankan kad gambar yang tepat.
+**Aktiviti 1 — Dengar frasa bilik khas:** Guru membacakan frasa Buku Teks h62, contohnya غرفة المدير، غرفة المعلمين، معمل العلوم، معمل الكمبيوتر, sambil murid mendengar dan memadankan kad gambar yang tepat.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid bertukar peranan membacakan frasa dan mengangkat gambar; guru membimbing bentuk idafah pada aras sebutan tanpa menambah kod tatabahasa rasmi.
+**Aktiviti 2 — Padankan frasa dan gambar berpasangan:** Pasangan murid bertukar peranan membacakan frasa dan mengangkat gambar; guru membimbing bentuk idafah pada aras sebutan tanpa menambah kod tatabahasa rasmi.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod tiga daripada empat pemadanan frasa yang didengar.
 

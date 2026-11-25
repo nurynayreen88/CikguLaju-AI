@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** هذا مساعد المدير. هو مساعد المدير الجديد.
 **Objektif pembelajaran:** Murid menulis sekurang-kurangnya dua ayat bersambung tentang warga sekolah dengan susunan kata dan ejaan tepat.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya dua ayat bersambung dengan susunan kata dan ejaan tepat.
 
 **Set induksi:** Guru menunjukkan gambar pegawai sekolah dan memperdengarkan frasa مساعد المدير.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan model ayat berkait pada Buku Teks h.48, menandakan sambungan makna antara هذا مساعد المدير dan هو مساعد المدير الجديد. Murid menyusun dan menulis ayat menggunakan kad kata.
+**Aktiviti 1 — Susun kad kata menjadi ayat berkait:** Guru menggunakan model ayat berkait pada Buku Teks h.48, menandakan sambungan makna antara هذا مساعد المدير dan هو مساعد المدير الجديد. Murid menyusun dan menulis ayat menggunakan kad kata.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis dua ayat berkait tentang warga sekolah menggunakan kata pilihan dan menukar satu jawatan di bawah bimbingan guru; ayat ubah suai ialah ciptaan murid, bukan petikan buku.
+**Aktiviti 2 — Tulis dua ayat tentang warga sekolah:** Murid menulis dua ayat berkait tentang warga sekolah menggunakan kata pilihan dan menukar satu jawatan di bawah bimbingan guru; ayat ubah suai ialah ciptaan murid, bukan petikan buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak kedua-dua ayat mempunyai susunan kata, sambungan idea dan tulisan yang betul.
 

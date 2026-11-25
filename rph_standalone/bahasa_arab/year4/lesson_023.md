@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أريد أن أقابل المدير، تفضلي، من أنت؟
 **Objektif pembelajaran:** Murid membaca sekurang-kurangnya tiga daripada empat ayat pendek berkaitan bertemu pengetua dengan intonasi betul.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 ayat pendek dengan intonasi betul.
 
 **Set induksi:** Guru memperlihatkan gambar pejabat sekolah dan bertanya siapakah yang ingin dijumpai.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan bacaan ayat Buku Teks h.44 seperti أريد أن أقابل المدير dan تفضلي. Murid membaca mengikut peranan pelawat dan petugas sekolah.
+**Aktiviti 1 — Baca dialog bertemu pengetua:** Guru memodelkan bacaan ayat Buku Teks h.44 seperti أريد أن أقابل المدير dan تفضلي. Murid membaca mengikut peranan pelawat dan petugas sekolah.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melakonkan situasi di pejabat sekolah secara berpasangan, membaca kad dialog dan menyesuaikan nada soalan/jawapan.
+**Aktiviti 2 — Lakonkan situasi pejabat sekolah:** Murid melakonkan situasi di pejabat sekolah secara berpasangan, membaca kad dialog dan menyesuaikan nada soalan/jawapan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat bacaan ayat dengan sebutan dan intonasi tepat.
 
