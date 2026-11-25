@@ -53,7 +53,7 @@ def main():
                     rec["issues"].append("missing objective or criterion")
                 if any(not re.match(r"^\d+\.\d+(?:\.\d+)?\s+\S",line) for line in rec["sp"].splitlines()):
                     rec["issues"].append("SP without description")
-                if "; " in rec["sk"]:
+                if len(rec["sk"].splitlines()) != len(music["preview"]["sk_codes"]) or any(not line.startswith(code+" ") for line,code in zip(rec["sk"].splitlines(),music["preview"]["sk_codes"])):
                     rec["issues"].append("SK display delimiter")
                 teacher=dict.fromkeys(("class","date","time","students"),"")
                 for fmt in ("word","pdf"):
@@ -86,6 +86,8 @@ def main():
     repeated=[v for v in repeats.values() if len(v)>1]
     (out/"report.json").write_text(json.dumps({"records":records,"identical_activities":repeated},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
     print("MUSIC_NATIVE_TOTAL",len(records),"identical_activity_groups",len(repeated),"issue_count",sum(len(r["issues"]) for r in records),flush=True)
+
+    assert not any(r["issues"] for r in records), "Native document or standard format issues remain"
 
 if __name__=="__main__":
     main()
