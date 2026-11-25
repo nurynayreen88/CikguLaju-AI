@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menyusun sekurang-kurangnya empat kad ikon membentuk corak irama dan mempersembahkannya tepat.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit BERSIH PASTI CANTIK; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru menepuk pola ta, ti-ti dan sa. Murid meniru tepukan serta menunjukkan senyap pada sa.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru menunjukkan ikon dan sebutan ta, ti-ti serta sa; murid mengajuk tiga pola latihan daripada buku.
+**Aktiviti 1 — Ikon ta, ti-ti dan sa:** Guru menunjukkan ikon dan sebutan ta, ti-ti serta sa; murid mengajuk tiga pola latihan daripada buku.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Kumpulan menyusun 15 kad ikon dalam Permainan Tepuk Ikon, mencipta corak sendiri, menepuk dan membetulkan kiraan.
+**Aktiviti 2 — Cipta dan tepuk pola:** Kumpulan menyusun 15 kad ikon dalam Permainan Tepuk Ikon, mencipta corak sendiri, menepuk dan membetulkan kiraan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak corak ciptaan, ketepatan sebutan dan persembahan berkumpulan.
+**Pengukuhan dan pentaksiran:** Semak corak ciptaan, ketepatan sebutan dan persembahan berkumpulan.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Murid mempersembah corak empat ikon. Rakan menepuk semula; guru menyemak ketepatan.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 20-21; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 20–21; kad ikon ta, ti-ti, sa.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 

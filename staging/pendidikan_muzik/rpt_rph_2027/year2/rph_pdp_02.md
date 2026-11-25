@@ -10,17 +10,17 @@
 
 **Objektif:** Murid membezakan tempo cepat/lambat pada tiga daripada empat contoh dan menyesuaikan gerakan mengikut tempo.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit KAMI SUKA SAYUR; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru menunjukkan kad arnab dan kura-kura. Murid memilih kad bagi dua contoh tempo ketukan.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru memperkenalkan permainan kad tempo dengan imej arnab dan kura-kura sambil memberi dua contoh ketukan.
+**Aktiviti 1 — Kad arnab dan kura-kura:** Guru memperkenalkan permainan kad tempo dengan imej arnab dan kura-kura sambil memberi dua contoh ketukan.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid mengangkat kad arnab atau kura-kura apabila guru mengetuk tempo cepat atau lambat secara langsung, kemudian bergerak setempat mengikut perubahan tempo; aktiviti boleh dijalankan tanpa audio.
+**Aktiviti 2 — Gerakan mengikut tempo:** Murid mengangkat kad arnab atau kura-kura apabila guru mengetuk tempo cepat atau lambat secara langsung, kemudian bergerak setempat mengikut perubahan tempo; aktiviti boleh dijalankan tanpa audio.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru membuat empat pemerhatian pilihan kad dan ketepatan perubahan gerak.
+**Pengukuhan dan pentaksiran:** Guru membuat empat pemerhatian pilihan kad dan ketepatan perubahan gerak.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Guru mengetuk tempo pilihan; murid mengangkat kad dan bergerak sepadan. Guru merekod respons.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 11; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 11; kad arnab dan kura-kura, alat ketuk.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 

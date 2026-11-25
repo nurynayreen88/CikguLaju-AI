@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - tools/audit_music_175_native_20261125.py
+      - staging/pendidikan_muzik/rpt_rph_2027/**
       - .github/workflows/music-175-native-audit-20261125.yml
   workflow_dispatch:
 permissions:
