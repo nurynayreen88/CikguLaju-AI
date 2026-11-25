@@ -52,6 +52,8 @@ class PpkiWebTest(unittest.TestCase):
 
     def _request(self, path, mime, limit, payload=None):
         self.source_requests.append((path, payload))
+        if path == "subject-catalog?year=2&subject=" + ppki.ENGLISH_SUBJECT:
+            raise ppki.NativeRPHUnavailable("English source not deployed in legacy fixture")
         if path == "catalog":
             return json.dumps(self.catalog).encode()
         if path == "catalog?year=3":
