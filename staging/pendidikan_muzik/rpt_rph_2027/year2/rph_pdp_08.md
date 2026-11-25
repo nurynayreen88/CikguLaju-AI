@@ -10,17 +10,17 @@
 
 **Objektif:** Murid mengenal melodi menaik, menurun dan mendatar pada tiga contoh serta mengajuknya menggunakan suku kata la.
 
-**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit SAYA JUARA; murid memberi respons dan menyatakan pengalaman berkaitan.
+**Set induksi:** Guru menyanyikan la dengan melodi menaik dan menurun. Murid menggerakkan tangan mengikut arah bunyi.
 
-**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru memperdengarkan tiga bentuk pergerakan melodi dan mengajak murid menunjuk arah dengan tangan.
+**Aktiviti 1 — Arah pergerakan melodi:** Guru memperdengarkan tiga bentuk pergerakan melodi dan mengajak murid menunjuk arah dengan tangan.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid bermain Tangga Melodi: memilih kad arah yang sepadan dengan bunyi dan mengajuk frasa selepas guru.
+**Aktiviti 2 — Permainan Tangga Melodi:** Murid bermain Tangga Melodi: memilih kad arah yang sepadan dengan bunyi dan mengajuk frasa selepas guru.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak pengenalan tiga bentuk melodi dan satu demonstrasi ajuk yang tepat.
+**Pengukuhan dan pentaksiran:** Semak pengenalan tiga bentuk melodi dan satu demonstrasi ajuk yang tepat.
 
-**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
+**Penutup:** Murid memilih kad arah bagi tiga contoh melodi dan mengajuk satu frasa. Guru merekod respons.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 28-29; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 28–29; kad arah melodi, panduan melodi guru.
 
 **Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 
