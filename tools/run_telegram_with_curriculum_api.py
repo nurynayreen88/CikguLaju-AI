@@ -976,3 +976,7 @@ try:
 except Exception as _pi_bulk_exc:
     PI_EDITORIAL_BULK_ACTIVE = False
     print('PI bulk editorial unavailable:',type(_pi_bulk_exc).__name__,flush=True)
+
+# Owner instruction: omit fixed PdP duration from PI display, retain teacher Masa.
+from web.pi_rph_no_duration_display_20261125 import install as install_pi_no_duration
+PI_NO_DURATION_DISPLAY_ACTIVE = bool(install_pi_no_duration(telegram_runtime))
