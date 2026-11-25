@@ -7,7 +7,8 @@
   "status": "DALAM_SEMAKAN",
   "sources": {
     "textbook": "https://fliphtml5.com/gutjj/ivsp/Pendidikan_Islam_(Masalah_Pembelajaran)_Tahun_2/",
-    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/025-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-ISLAM-TAHUN-2.pdf"
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/025-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-ISLAM-TAHUN-2.pdf",
+    "dskp_audit": "https://asiemodel.net/wp-content/uploads/2022/08/025-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-ISLAM-TAHUN-2.pdf"
   },
   "notes": "Draf pedagogi asal; julat halaman ialah rujukan kelompok. Kod kosong sengaja tidak direka. Semak teks DSKP penuh, halaman individu, BA, audio jika berkaitan, agihan masa dan Word/PDF sebelum READY. V2 akuatik tidak membuktikan kemahiran dalam air.",
   "lessons": [
@@ -84,115 +85,146 @@
       "pdp": "004",
       "unit": "1.2",
       "textbook_page": "15–28",
-      "sp": [],
-      "sk": [],
-      "title": "Bacaan huruf berbaris atas secara turutan",
-      "objective": "4/6 huruf dalam jalur dibaca",
-      "success_criterion": "4/6 huruf dalam jalur dibaca",
-      "materials": "Jalur huruf, kad padanan",
+      "sp": [
+        "1.2.2",
+        "1.2.3"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "title": "Bacaan dua huruf dan kalimah berbaris atas",
+      "objective": "4 pasangan huruf dibunyikan dan 2 kalimah dibaca dengan bimbingan",
+      "success_criterion": "4 pasangan huruf dibunyikan dan 2 kalimah dibaca dengan bimbingan",
+      "materials": "Kad dua huruf bersambung dan tidak bersambung, jalur kalimah daripada BT",
       "induction": "Cari tanda baris atas pada kad.",
-      "guided": "Guru bimbing bacaan mengikut turutan jalur pendek.",
-      "practice": "Murid baca enam huruf daripada jalur baharu tanpa contoh serentak.",
+      "guided": "Guru tunjuk dua bentuk huruf dan modelkan bunyi berbaris atas, diikuti bacaan kalimah pendek.",
+      "practice": "Murid membunyikan empat pasangan huruf dan membaca dua kalimah sasaran dengan bimbingan.",
       "support": "Asingkan satu huruf pada satu masa.",
       "closure": "Ulang bacaan jalur pilihan.",
-      "assessment": "Rekod pencapaian: 4/6 huruf dalam jalur dibaca. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "4/6 huruf dalam jalur dibaca",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "assessment": "Rekod pencapaian: 4 pasangan huruf dibunyikan dan 2 kalimah dibaca dengan bimbingan. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "4 pasangan huruf dibunyikan dan 2 kalimah dibaca dengan bimbingan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "005",
       "unit": "2.1",
       "textbook_page": "29–36",
-      "sp": [],
-      "sk": [],
-      "title": "Bacaan Surah al-Nas bahagian awal",
+      "sp": [
+        "2.1.1"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "title": "Bacaan Surah al-Nas bahagian awal (ayat 1–3)",
       "objective": "2 ayat sasaran dibaca dengan bimbingan",
       "success_criterion": "2 ayat sasaran dibaca dengan bimbingan",
       "materials": "Mushaf atau BT, penunjuk ayat",
       "induction": "Dengar bacaan guru.",
-      "guided": "Guru membaca ayat sasaran dengan sebutan yang betul dan murid mengikut.",
-      "practice": "Murid membaca dua ayat secara individu; guru merekod bahagian yang perlu dibetulkan.",
+      "guided": "Guru membaca ayat sasaran dengan sebutan yang betul dan murid mengikut. Fokus ayat 1–3.",
+      "practice": "Murid membaca dua ayat secara individu; guru merekod bahagian yang perlu dibetulkan. Pilih dua ayat daripada julat 1–3 sebagai sasaran berperingkat.",
       "support": "Pecahkan ayat kepada frasa pendek.",
       "closure": "Ulang satu bahagian secara tertib.",
       "assessment": "Rekod pencapaian: 2 ayat sasaran dibaca dengan bimbingan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran dibaca dengan bimbingan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "006",
       "unit": "2.1",
       "textbook_page": "29–36",
-      "sp": [],
-      "sk": [],
-      "title": "Bacaan Surah al-Nas bahagian akhir",
+      "sp": [
+        "2.1.2"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "title": "Bacaan Surah al-Nas bahagian akhir (ayat 4–6)",
       "objective": "2 ayat sasaran dibaca dengan bimbingan",
       "success_criterion": "2 ayat sasaran dibaca dengan bimbingan",
       "materials": "BT, kad penanda ayat",
       "induction": "Dengar semula bahagian sebelumnya.",
-      "guided": "Guru modelkan bahagian akhir dan membetulkan sebutan secara individu.",
-      "practice": "Murid membaca dua ayat sasaran dengan teks di hadapan.",
+      "guided": "Guru modelkan bahagian akhir dan membetulkan sebutan secara individu. Fokus ayat 4–6.",
+      "practice": "Murid membaca dua ayat sasaran dengan teks di hadapan. Pilih dua ayat daripada julat 4–6 sebagai sasaran berperingkat.",
       "support": "Berikan penunjuk frasa dan jeda.",
       "closure": "Guru rumuskan bahagian yang telah dibaca.",
       "assessment": "Rekod pencapaian: 2 ayat sasaran dibaca dengan bimbingan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran dibaca dengan bimbingan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "007",
       "unit": "2.2",
       "textbook_page": "37–44",
-      "sp": [],
-      "sk": [],
-      "title": "Hafazan Surah al-Nas",
+      "sp": [
+        "2.2.1"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "title": "Hafazan Surah al-Nas (ayat 1–3)",
       "objective": "2 ayat sasaran diingat mengikut turutan",
       "success_criterion": "2 ayat sasaran diingat mengikut turutan",
       "materials": "Kad nombor ayat, bacaan guru",
       "induction": "Ulang bacaan berpandu.",
-      "guided": "Guru latih hafazan frasa dengan pengurangan petunjuk.",
-      "practice": "Murid cuba mengingat dua ayat tanpa melihat teks apabila bersedia.",
+      "guided": "Guru latih hafazan frasa dengan pengurangan petunjuk. Fokus ayat 1–3.",
+      "practice": "Murid cuba mengingat dua ayat tanpa melihat teks apabila bersedia. Pilih dua ayat daripada julat 1–3 sebagai sasaran berperingkat.",
       "support": "Terima hafazan sebahagian sebagai evidens kemajuan, bukan penguasaan penuh.",
       "closure": "Tentukan satu ayat untuk latihan susulan.",
       "assessment": "Rekod pencapaian: 2 ayat sasaran diingat mengikut turutan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran diingat mengikut turutan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "008",
       "unit": "2.3",
       "textbook_page": "45–52",
-      "sp": [],
-      "sk": [],
-      "title": "Bacaan Surah al-Falaq",
+      "sp": [
+        "2.3.1"
+      ],
+      "sk": [
+        "2.3"
+      ],
+      "title": "Bacaan Surah al-Falaq (ayat 1–3)",
       "objective": "2 ayat sasaran dibaca dengan bimbingan",
       "success_criterion": "2 ayat sasaran dibaca dengan bimbingan",
       "materials": "BT, penunjuk ayat",
       "induction": "Dengar bacaan contoh.",
-      "guided": "Guru bimbing bacaan frasa dan sambungan ayat secara talaqqi.",
-      "practice": "Murid baca dua ayat sasaran secara bergilir.",
+      "guided": "Guru bimbing bacaan frasa dan sambungan ayat secara talaqqi. Fokus ayat 1–3.",
+      "practice": "Murid baca dua ayat sasaran secara bergilir. Pilih dua ayat daripada julat 1–3 sebagai sasaran berperingkat.",
       "support": "Ulang frasa perlahan dan sediakan teks besar.",
       "closure": "Ulang ayat yang dipilih guru.",
       "assessment": "Rekod pencapaian: 2 ayat sasaran dibaca dengan bimbingan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran dibaca dengan bimbingan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "009",
       "unit": "2.4",
       "textbook_page": "53–60",
-      "sp": [],
-      "sk": [],
-      "title": "Hafazan Surah al-Falaq",
+      "sp": [
+        "2.4.1"
+      ],
+      "sk": [
+        "2.4"
+      ],
+      "title": "Hafazan Surah al-Falaq (ayat 1–3)",
       "objective": "2 ayat sasaran diingat mengikut turutan",
       "success_criterion": "2 ayat sasaran diingat mengikut turutan",
       "materials": "Kad nombor ayat, bacaan guru",
       "induction": "Ulang bacaan bersama.",
-      "guided": "Guru kurangkan petunjuk selepas latihan frasa.",
-      "practice": "Murid cuba hafazan dua ayat secara individu.",
+      "guided": "Guru kurangkan petunjuk selepas latihan frasa. Fokus ayat 1–3.",
+      "practice": "Murid cuba hafazan dua ayat secara individu. Pilih dua ayat daripada julat 1–3 sebagai sasaran berperingkat.",
       "support": "Beri kata mula jika perlu dan rekod bantuan.",
       "closure": "Nyatakan bahagian untuk diulang.",
       "assessment": "Rekod pencapaian: 2 ayat sasaran diingat mengikut turutan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran diingat mengikut turutan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "010",
@@ -246,8 +278,12 @@
       "pdp": "012",
       "unit": "3.2",
       "textbook_page": "71–80",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "3.2.3"
+      ],
+      "sk": [
+        "3.2"
+      ],
       "title": "Lafaz dua kalimah syahadah",
       "objective": "Lafaz bahagian sasaran secara tertib dengan bimbingan",
       "success_criterion": "Lafaz bahagian sasaran secara tertib dengan bimbingan",
@@ -259,14 +295,19 @@
       "closure": "Ulang bahagian yang belum lancar.",
       "assessment": "Rekod pencapaian: Lafaz bahagian sasaran secara tertib dengan bimbingan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "Lafaz bahagian sasaran secara tertib dengan bimbingan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "013",
       "unit": "3.2",
       "textbook_page": "71–80",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "3.2.3"
+      ],
+      "sk": [
+        "3.2"
+      ],
       "title": "Makna dua kalimah syahadah",
       "objective": "2 makna asas dikenal pasti melalui respons",
       "success_criterion": "2 makna asas dikenal pasti melalui respons",
@@ -278,15 +319,15 @@
       "closure": "Guru rumuskan kedua-dua makna.",
       "assessment": "Rekod pencapaian: 2 makna asas dikenal pasti melalui respons. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 makna asas dikenal pasti melalui respons",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "014",
       "unit": "4.1",
       "textbook_page": "81–83",
       "sp": [
-        "4.1.1",
-        "4.1.2"
+        "4.1.1"
       ],
       "sk": [
         "4.1"
@@ -302,7 +343,8 @@
       "closure": "Semak satu situasi.",
       "assessment": "Rekod pencapaian: 3/4 situasi dikelaskan mengikut hukum yang dipelajari. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 situasi dikelaskan mengikut hukum yang dipelajari",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "source_note": "4.1.2 dikeluarkan: aktiviti belum menilai rukun dan sunat wuduk."
     },
     {
       "pdp": "015",
@@ -354,8 +396,13 @@
       "pdp": "017",
       "unit": "4.2",
       "textbook_page": "91–100",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "4.2.2",
+        "4.2.3"
+      ],
+      "sk": [
+        "4.2"
+      ],
       "title": "Konsep solat fardu",
       "objective": "3/5 nama solat fardu dipadankan dengan waktu",
       "success_criterion": "3/5 nama solat fardu dipadankan dengan waktu",
@@ -367,14 +414,19 @@
       "closure": "Pilih nama solat selepas waktu tertentu.",
       "assessment": "Rekod pencapaian: 3/5 nama solat fardu dipadankan dengan waktu. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/5 nama solat fardu dipadankan dengan waktu",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "018",
       "unit": "4.3",
       "textbook_page": "101–110",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "4.3.3"
+      ],
+      "sk": [
+        "4.3"
+      ],
       "title": "Perlakuan solat",
       "objective": "3 perlakuan sasaran ditunjukkan mengikut turutan",
       "success_criterion": "3 perlakuan sasaran ditunjukkan mengikut turutan",
@@ -386,7 +438,8 @@
       "closure": "Semak urutan kad.",
       "assessment": "Rekod pencapaian: 3 perlakuan sasaran ditunjukkan mengikut turutan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 perlakuan sasaran ditunjukkan mengikut turutan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "019",
@@ -439,8 +492,12 @@
       "pdp": "021",
       "unit": "5.2",
       "textbook_page": "121–130",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "5.2.4"
+      ],
+      "sk": [
+        "5.2"
+      ],
       "title": "Beradab dengan ibu bapa",
       "objective": "3/4 respons sopan ditunjukkan",
       "success_criterion": "3/4 respons sopan ditunjukkan",
@@ -452,7 +509,8 @@
       "closure": "Pilih satu tindakan menghormati.",
       "assessment": "Rekod pencapaian: 3/4 respons sopan ditunjukkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 respons sopan ditunjukkan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
     },
     {
       "pdp": "022",
@@ -477,5 +535,7 @@
       "reflection_criterion": "3 maklumat sirah dikenal pasti",
       "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
     }
-  ]
+  ],
+  "audit_round": "2026-11-26: semakan kod sasaran, bukan kelulusan penuh",
+  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan."
 }
