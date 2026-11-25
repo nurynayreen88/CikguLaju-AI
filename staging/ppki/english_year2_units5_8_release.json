@@ -1,0 +1,627 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "English",
+  "subject_id": "BAHASA_INGGERIS_PPKI",
+  "status": "READY",
+  "units": {
+    "5": "Clothes We Wear",
+    "6": "Colours Everywhere",
+    "7": "Fruits and Vegetables",
+    "8": "Count Together"
+  },
+  "sources": {
+    "textbook": "https://anyflip.com/smjjv/pcyn/basic",
+    "dskp": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
+  },
+  "standard_text_kind": "Source-aligned paraphrases; not verbatim",
+  "release_scope": "RPH only, Units 5–8; independent activities; Activity Book page mapping and dated RPT not claimed",
+  "content_standards": {
+    "1.1": "Respond suitably to spoken input for different purposes.",
+    "1.2": "Develop pronunciation, stress, rhythm and intonation through listening.",
+    "1.3": "Take part in everyday exchanges.",
+    "1.4": "Understand and respond to spoken stories, visual material and songs or rhymes.",
+    "2.1": "Recognise, remember and comprehend vocabulary and short phrases through reading.",
+    "3.1": "Produce clear, readable written words.",
+    "3.2": "Use appropriate sentence writing and punctuation.",
+    "3.3": "Communicate ideas creatively through suitable media and language."
+  },
+  "learning_standards": {
+    "1.1.1": "Listen and give an appropriate response to a stimulus.",
+    "1.1.2": "Show understanding of short spoken instructions.",
+    "1.2.1": "Hear and pronounce vocabulary and short phrases.",
+    "1.2.2(i)": "Listen to and sing nursery rhymes.",
+    "1.2.2(ii)": "Listen to and sing songs.",
+    "1.3.1": "Respond to everyday conversation with support.",
+    "1.3.2(i)": "Join supported exchanges using basic greetings.",
+    "1.3.2(ii)": "Join supported exchanges introducing relatives.",
+    "1.3.2(iii)": "Follow basic classroom directions with support during an exchange.",
+    "1.4.1(i)": "Demonstrate listening comprehension using yes/no responses.",
+    "1.4.1(ii)": "Demonstrate listening comprehension by judging statements true or false.",
+    "1.4.1(iii)": "Demonstrate listening comprehension by answering Wh-questions.",
+    "2.1.1": "Identify and remember words.",
+    "2.1.2": "Read vocabulary and short phrases.",
+    "2.1.3": "Read and show comprehension of vocabulary and short phrases.",
+    "3.1.1": "Copy and write familiar sight vocabulary legibly.",
+    "3.1.2": "Write legible, correctly spelled words.",
+    "3.2.1(i)": "Use lowercase letters correctly in sentences.",
+    "3.2.1(ii)": "Use uppercase letters correctly in sentences.",
+    "3.2.1(iv)": "Use full stops correctly in sentences.",
+    "3.3.1(i)": "Produce simple creative greeting cards.",
+    "3.3.1(ii)": "Produce simple creative collages."
+  },
+  "lessons": [
+    {
+      "pdp": "017",
+      "unit": 5,
+      "title": "Laundry chant",
+      "textbook_page": "19",
+      "sp": [
+        "1.2.2(ii)"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "objective": "Join the laundry chant vocally at three action-word cues.",
+      "success_criterion": "Join the laundry chant vocally at three action-word cues.",
+      "materials": "Textbook p. 19; Clean cloth, washing and folding pictures",
+      "induction": "Show a clean shirt and a laundry basket; pupils choose a matching action card.",
+      "guided": "Model the three laundry actions with the textbook chant at a comfortable pace.",
+      "practice": "Pupils select action cards and join the chant on three target-word cues; repeat with a different clothing item.",
+      "support": "Use quiet rhythm and accessible movements",
+      "closure": "Choose a picture for the last action",
+      "assessment": "Count vocal responses at three cues; note adapted non-vocal responses separately.",
+      "reflection_criterion": "Join the laundry chant vocally at three action-word cues.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "018",
+      "unit": 5,
+      "title": "Clothing vocabulary",
+      "textbook_page": "20",
+      "sp": [
+        "1.1.1",
+        "1.4.1(iii)"
+      ],
+      "sk": [
+        "1.1",
+        "1.4"
+      ],
+      "objective": "Answer five of six spoken Wh-questions about clothes.",
+      "success_criterion": "Answer five of six spoken Wh-questions about clothes.",
+      "materials": "Textbook p. 20; Clean clothing samples, picture cards",
+      "induction": "Reveal a hat from a bag",
+      "guided": "Model naming clothing and asking what a person wears",
+      "practice": "Ask six oral questions about clothing type or what a person is wearing. Pupils answer with speech or a picture choice.",
+      "support": "Allow a word card or two clothing choices",
+      "closure": "Name an item suitable for school",
+      "assessment": "Count correct answers to the six oral questions.",
+      "reflection_criterion": "Answer five of six spoken Wh-questions about clothes.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "019",
+      "unit": 5,
+      "title": "Reading clothing descriptions",
+      "textbook_page": "21",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match four of five short clothing descriptions to pictures.",
+      "success_criterion": "Read and match four of five short clothing descriptions to pictures.",
+      "materials": "Textbook p. 21; Character pictures, word tiles",
+      "induction": "Match a shirt to a character",
+      "guided": "Model replacing a picture with a printed clothing word",
+      "practice": "Pupils use printed clothing words to replace picture cues in five original descriptions, then match each description to an outfit.",
+      "support": "Use a two-word bank for each blank",
+      "closure": "Read one completed description",
+      "assessment": "Check four of five reading matches.",
+      "reflection_criterion": "Read and match four of five short clothing descriptions to pictures.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "020",
+      "unit": 5,
+      "title": "Colour and clothing sentences",
+      "textbook_page": "22",
+      "sp": [
+        "3.1.2"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "objective": "Write three of four missing clothing words legibly with correct spelling.",
+      "success_criterion": "Write three of four missing clothing words legibly with correct spelling.",
+      "materials": "Textbook p. 22; Outfit cards, sentence frames",
+      "induction": "Compare two different coloured socks",
+      "guided": "Model selecting a word using the outfit picture",
+      "practice": "Pupils inspect four outfit pictures and write the missing clothing words in the original sentence frames.",
+      "support": "Offer colour and clothing word banks",
+      "closure": "Read one completed sentence",
+      "assessment": "Check word choice, spelling and legibility for four responses.",
+      "reflection_criterion": "Write three of four missing clothing words legibly with correct spelling.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "021",
+      "unit": 5,
+      "title": "One item and many items",
+      "textbook_page": "23",
+      "sp": [
+        "3.1.2"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "objective": "Write four of five suitable singular or plural clothing words legibly.",
+      "success_criterion": "Write four of five suitable singular or plural clothing words legibly.",
+      "materials": "Textbook p. 23; Toy clothes, number cards",
+      "induction": "Show one hat and three hats",
+      "guided": "Model selecting the word form for one or more than one",
+      "practice": "Pupils match five pictures showing one or several items to a word choice, then write the chosen word in the sentence frame.",
+      "support": "Provide paired singular/plural cards",
+      "closure": "Show a plural item and read its label",
+      "assessment": "Count responses with suitable number form, spelling and legibility.",
+      "reflection_criterion": "Write four of five suitable singular or plural clothing words legibly.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "022",
+      "unit": 5,
+      "title": "Paper clothing craft",
+      "textbook_page": "24",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Create a labelled clothing collage using a folded paper shirt and at least two attached details.",
+      "success_criterion": "Create a labelled clothing collage using a folded paper shirt and at least two attached details.",
+      "materials": "Textbook p. 24; Prefolded paper, crayons, labels",
+      "induction": "Show a paper shirt",
+      "guided": "Model a paper-shirt fold, attach it to card, and add paper pockets or buttons and a label.",
+      "practice": "Pupils fold or use an adapted pre-folded shirt, attach it and two details to a backing, then add a readable label.",
+      "support": "Offer a precut shape if folding is difficult",
+      "closure": "Display the labelled work",
+      "assessment": "Check the attached elements and the label; note folding support separately.",
+      "reflection_criterion": "Create a labelled clothing collage using a folded paper shirt and at least two attached details.",
+      "activity_book_ref": null,
+      "source_note": "Adaptation adds a collage element to meet DSKP 3.3.1(ii); original textbook craft retained.",
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "023",
+      "unit": 6,
+      "title": "Colour questions",
+      "textbook_page": "25",
+      "sp": [
+        "1.1.1",
+        "1.4.1(iii)"
+      ],
+      "sk": [
+        "1.1",
+        "1.4"
+      ],
+      "objective": "Answer four of five spoken colour questions correctly.",
+      "success_criterion": "Answer four of five spoken colour questions correctly.",
+      "materials": "Textbook p. 25; Colour swatches, balloon pictures",
+      "induction": "Reveal a coloured ribbon",
+      "guided": "Model asking what colour an object is",
+      "practice": "Pupils listen to five questions about object colours, choose swatches and name or indicate answers.",
+      "support": "Use high-contrast samples and verbal descriptions where appropriate",
+      "closure": "Choose a favourite colour",
+      "assessment": "Count correct oral-question responses independently of colour matching.",
+      "reflection_criterion": "Answer four of five spoken colour questions correctly.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "024",
+      "unit": 6,
+      "title": "Traditional clothing dialogue",
+      "textbook_page": "26–27",
+      "sp": [
+        "2.1.3",
+        "1.4.1(ii)"
+      ],
+      "sk": [
+        "2.1",
+        "1.4"
+      ],
+      "objective": "Match three of four written colour descriptions and answer three of four spoken true/false statements.",
+      "success_criterion": "Match three of four written colour descriptions and answer three of four spoken true/false statements.",
+      "materials": "Textbook p. 26–27; Outfit pictures, textbook",
+      "induction": "Show pictures of traditional outfits",
+      "guided": "Read the textbook dialogue with picture support and identify colours of traditional garments.",
+      "practice": "Pupils match four original written descriptions to clothing pictures. Teacher reads four different statements aloud; pupils indicate true or false.",
+      "support": "Provide character-colour cue cards",
+      "closure": "Read one character's line",
+      "assessment": "Record the two scores separately.",
+      "reflection_criterion": "Match three of four written colour descriptions and answer three of four spoken true/false statements.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "025",
+      "unit": 6,
+      "title": "Colour phrase reading",
+      "textbook_page": "28",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read four of five colour-object phrases and match pictures",
+      "success_criterion": "Read four of five colour-object phrases and match pictures",
+      "materials": "Textbook p. 28; Colour cards, object phrase strips",
+      "induction": "Sort two balloons by colour",
+      "guided": "Model reading an adjective before the object",
+      "practice": "Pupils draw five phrase strips and locate matching images",
+      "support": "Use separate movable word cards",
+      "closure": "Read a phrase to a partner",
+      "assessment": "Record the demonstrated criterion: Read four of five colour-object phrases and match pictures. Record prompts separately.",
+      "reflection_criterion": "Read four of five colour-object phrases and match pictures",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "026",
+      "unit": 6,
+      "title": "Rainbow reading and writing",
+      "textbook_page": "29",
+      "sp": [
+        "2.1.3",
+        "3.1.1"
+      ],
+      "sk": [
+        "2.1",
+        "3.1"
+      ],
+      "objective": "Read the rainbow passage and copy four missing colour words legibly.",
+      "success_criterion": "Read the rainbow passage and copy four missing colour words legibly.",
+      "materials": "Textbook p. 29; Rainbow outline, colour word bank",
+      "induction": "Show a rainbow picture",
+      "guided": "Guide reading the passage and locating named colours",
+      "practice": "Pupils locate the missing colour words in the passage and copy four onto the rainbow chart.",
+      "support": "Offer alphabet clues and a word bank",
+      "closure": "Read one newly written label",
+      "assessment": "Check correct colour word and legible copying.",
+      "reflection_criterion": "Read the rainbow passage and copy four missing colour words legibly.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "027",
+      "unit": 6,
+      "title": "Rainbow collage",
+      "textbook_page": "30",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Make a collage and label at least three colours",
+      "success_criterion": "Make a collage and label at least three colours",
+      "materials": "Textbook p. 30; Paper pieces, glue, crayons",
+      "induction": "Compare three coloured strips",
+      "guided": "Model applying paper pieces and attaching one label",
+      "practice": "Pupils complete a rainbow and add three labels",
+      "support": "Provide large strips and label stickers",
+      "closure": "Present one labelled section",
+      "assessment": "Record the demonstrated criterion: Make a collage and label at least three colours. Record prompts separately.",
+      "reflection_criterion": "Make a collage and label at least three colours",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "028",
+      "unit": 7,
+      "title": "Fruit and vegetable chant",
+      "textbook_page": "31",
+      "sp": [
+        "1.2.2(i)"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "objective": "Join the food rhyme vocally at three target-food cues.",
+      "success_criterion": "Join the food rhyme vocally at three target-food cues.",
+      "materials": "Textbook p. 31; Food picture cards",
+      "induction": "Show a picture of an apple",
+      "guided": "Model the textbook food rhyme using pictures and a steady beat.",
+      "practice": "Pupils select food pictures and join vocally on three target cues; offer visual prompts or quieter speech.",
+      "support": "Use gesture or speech output at the cue",
+      "closure": "Choose a food word to repeat",
+      "assessment": "Record vocal participation at three cues; note non-vocal adaptations separately.",
+      "reflection_criterion": "Join the food rhyme vocally at three target-food cues.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "029",
+      "unit": 7,
+      "title": "Reading food labels",
+      "textbook_page": "32–33",
+      "sp": [
+        "2.1.1"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match six of eight food words",
+      "success_criterion": "Read and match six of eight food words",
+      "materials": "Textbook p. 32–33; Food models, word cards, two baskets",
+      "induction": "Sort a fruit and a vegetable",
+      "guided": "Model reading the first label before placing it by a picture",
+      "practice": "Pupils read eight word cards and match the objects",
+      "support": "Offer fewer cards and initial sound support",
+      "closure": "Read one item from each basket",
+      "assessment": "Record the demonstrated criterion: Read and match six of eight food words. Record prompts separately.",
+      "reflection_criterion": "Read and match six of eight food words",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "030",
+      "unit": 7,
+      "title": "Food story comprehension",
+      "textbook_page": "34",
+      "sp": [
+        "2.1.3",
+        "1.4.1(i)",
+        "1.4.1(iii)"
+      ],
+      "sk": [
+        "2.1",
+        "1.4"
+      ],
+      "objective": "Read and match two food-related phrases and answer two of three spoken questions.",
+      "success_criterion": "Read and match two food-related phrases and answer two of three spoken questions.",
+      "materials": "Textbook, food picture choices",
+      "induction": "Show two snack pictures",
+      "guided": "Read the food story with picture support and model matching a short phrase to a picture.",
+      "practice": "Pupils match two printed phrases to story pictures; teacher asks one yes/no and two Wh-questions orally about the story.",
+      "support": "Offer two alternatives and reread one sentence",
+      "closure": "Choose a food from the story",
+      "assessment": "Record reading matches and listening answers separately.",
+      "reflection_criterion": "Read and match two food-related phrases and answer two of three spoken questions.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "031",
+      "unit": 7,
+      "title": "Juice stall dialogue",
+      "textbook_page": "35",
+      "sp": [
+        "2.1.3",
+        "3.1.1"
+      ],
+      "sk": [
+        "2.1",
+        "3.1"
+      ],
+      "objective": "Read one short juice request and copy two menu words legibly.",
+      "success_criterion": "Read one short juice request and copy two menu words legibly.",
+      "materials": "Textbook p. 35; Pretend menu, cups, price cards",
+      "induction": "Set up a pretend juice stall",
+      "guided": "Model reading a menu and asking for a drink",
+      "practice": "Pupils read a request from a teacher-made menu card, role-play a stall with pretend money, then copy two menu words.",
+      "support": "Use picture menus and sentence frames",
+      "closure": "Repeat a polite request",
+      "assessment": "Check the read request and two legible copied words.",
+      "reflection_criterion": "Read one short juice request and copy two menu words legibly.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "032",
+      "unit": 7,
+      "title": "Following food preparation directions",
+      "textbook_page": "36",
+      "sp": [
+        "1.1.2",
+        "1.3.2(iii)"
+      ],
+      "sk": [
+        "1.1",
+        "1.3"
+      ],
+      "objective": "Respond to three of four spoken preparation instructions in order.",
+      "success_criterion": "Respond to three of four spoken preparation instructions in order.",
+      "materials": "Textbook p. 36; Picture instructions, pretend fruit and vegetables, bowl, spoon; real food only after allergy and swallowing checks",
+      "induction": "Show an empty bowl",
+      "guided": "Model mixing, adding, stirring and serving using pretend ingredients. Give one oral direction at a time.",
+      "practice": "Pupils take turns as helper and listener, carrying out four spoken directions; use pretend food by default.",
+      "support": "Use picture cues and accessible utensils; real food only after allergy and hygiene checks",
+      "closure": "Retell one step using a picture",
+      "assessment": "Count three correctly followed directions; record verbal and visual prompts.",
+      "reflection_criterion": "Respond to three of four spoken preparation instructions in order.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "033",
+      "unit": 8,
+      "title": "Aquarium counting talk",
+      "textbook_page": "37",
+      "sp": [
+        "1.1.1"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "Give three relevant spoken or selected responses about the picture",
+      "success_criterion": "Give three relevant spoken or selected responses about the picture",
+      "materials": "Textbook p. 37; Fish pictures, number cards",
+      "induction": "Reveal a fish picture",
+      "guided": "Discuss the scene using short questions",
+      "practice": "Pupils answer three questions and point to the evidence",
+      "support": "Provide two picture choices and number cards",
+      "closure": "Identify one animal in the scene",
+      "assessment": "Record the demonstrated criterion: Give three relevant spoken or selected responses about the picture. Record prompts separately.",
+      "reflection_criterion": "Give three relevant spoken or selected responses about the picture",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "034",
+      "unit": 8,
+      "title": "Number words eleven to twenty",
+      "textbook_page": "38",
+      "sp": [
+        "1.2.1",
+        "2.1.1"
+      ],
+      "sk": [
+        "1.2",
+        "2.1"
+      ],
+      "objective": "Pronounce and recognise seven of ten number words from 11–20.",
+      "success_criterion": "Pronounce and recognise seven of ten number words from 11–20.",
+      "materials": "Textbook p. 38; Number and word cards",
+      "induction": "Count ten counters then add one",
+      "guided": "Model linking numeral and word for 11–20",
+      "practice": "Pupils listen to each of ten number words, repeat them and select the matching written word and numeral.",
+      "support": "Use a number line and break long words into parts",
+      "closure": "Read one word chosen by a partner",
+      "assessment": "Record pronunciation attempts and correct matching separately.",
+      "reflection_criterion": "Pronounce and recognise seven of ten number words from 11–20.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "035",
+      "unit": 8,
+      "title": "Number and object phrases",
+      "textbook_page": "39",
+      "sp": [
+        "2.1.2"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match four of five quantity phrases",
+      "success_criterion": "Read and match four of five quantity phrases",
+      "materials": "Textbook p. 39; Counters, classroom objects, phrase cards",
+      "induction": "Show a tray of twelve counters",
+      "guided": "Model reading one number-object phrase and counting that amount",
+      "practice": "Pupils read five phrases and select the matching prepared set",
+      "support": "Provide ten-frames and word cues",
+      "closure": "Read the phrase for a selected set",
+      "assessment": "Record the demonstrated criterion: Read and match four of five quantity phrases. Record prompts separately.",
+      "reflection_criterion": "Read and match four of five quantity phrases",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "036",
+      "unit": 8,
+      "title": "Shopping list numbers",
+      "textbook_page": "40",
+      "sp": [
+        "2.1.3",
+        "3.1.2"
+      ],
+      "sk": [
+        "2.1",
+        "3.1"
+      ],
+      "objective": "Read four shopping descriptions and correctly spell three of four missing quantity words.",
+      "success_criterion": "Read four shopping descriptions and correctly spell three of four missing quantity words.",
+      "materials": "Textbook p. 40; Shopping list, number bank, toy produce",
+      "induction": "Show a shopping basket",
+      "guided": "Model finding the quantity in a short sentence",
+      "practice": "Pupils match four original shopping descriptions to picture quantities, then write the missing quantity words.",
+      "support": "Underline number clues and provide a word bank",
+      "closure": "Check one item against the list",
+      "assessment": "Check understanding and spelling of each quantity word.",
+      "reflection_criterion": "Read four shopping descriptions and correctly spell three of four missing quantity words.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "037",
+      "unit": 8,
+      "title": "Number board game",
+      "textbook_page": "41",
+      "sp": [
+        "2.1.2"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read four of five number words landed on",
+      "success_criterion": "Read four of five number words landed on",
+      "materials": "Textbook p. 41; Original number board, dice, tokens",
+      "induction": "Choose a numbered square",
+      "guided": "Model moving a token and reading its word",
+      "practice": "Pairs play and each pupil reads five selected words; record accuracy independently",
+      "support": "Use a large accessible board and assisted dice rolling",
+      "closure": "Read the word at the final square",
+      "assessment": "Record the demonstrated criterion: Read four of five number words landed on. Record prompts separately.",
+      "reflection_criterion": "Read four of five number words landed on",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    },
+    {
+      "pdp": "038",
+      "unit": 8,
+      "title": "Number display craft",
+      "textbook_page": "42",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Create a number-roller collage with five correct numeral-word pairs.",
+      "success_criterion": "Create a number-roller collage with five correct numeral-word pairs.",
+      "materials": "Textbook p. 42; Paper strips, markers, cardboard",
+      "induction": "Show a sliding number card",
+      "guided": "Model a rotating paper strip on a tube. Attach a small number-picture collage to its display backing.",
+      "practice": "Pupils prepare five numeral-word pairs, assemble the roller with support, and attach five matching picture labels on the backing.",
+      "support": "Provide printed number-word tiles or writing guides",
+      "closure": "Use the strip to read one pair",
+      "assessment": "Check the five pairs and collage elements; note physical support separately.",
+      "reflection_criterion": "Create a number-roller collage with five correct numeral-word pairs.",
+      "activity_book_ref": null,
+      "source_note": "Adaptation adds a collage element to meet DSKP 3.3.1(ii); original textbook craft retained.",
+      "standard_audit": "Textbook teacher-note codes on pages 19–42 checked against the previously reviewed DSKP English standard dictionary; text extracted on 2026-11-26; fresh DSKP page images unavailable. Activities reviewed and adapted independently.",
+      "status": "READY"
+    }
+  ]
+}
