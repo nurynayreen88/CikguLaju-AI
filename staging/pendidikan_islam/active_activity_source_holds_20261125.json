@@ -154,6 +154,41 @@
       "pdp": 129,
       "reason": "Objective combines al-Asr and al-Qadr; activity note focuses on al-Qadr. Verify original curriculum and textbook before correction.",
       "source_run": 45524846245
+    },
+    {
+      "id": 1543,
+      "pdp": 9,
+      "reason": "Objective targets al-Takathur 1–4, recording and final listening name al-Kafirun.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1547,
+      "pdp": 13,
+      "reason": "Objective targets al-Takathur 5–8, recording and final listening name al-Kafirun.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1599,
+      "pdp": 65,
+      "reason": "Objective and initial steps target al-Ikhlas, final task names al-Fatihah.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1611,
+      "pdp": 77,
+      "reason": "Objective targets three mim sakinah rules, first activity instead names izhar halqi and nun sakinah idgham rules.",
+      "year": 4,
+      "source_run": 45525012944
+    },
+    {
+      "id": 1615,
+      "pdp": 81,
+      "reason": "Objective targets al-Qariah 1–5, first audio names al-Asr.",
+      "year": 4,
+      "source_run": 45525012944
     }
   ]
 }
