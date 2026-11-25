@@ -13,7 +13,7 @@
     }
   ],
   "total_active": 698,
-  "staged_unique_reported": 430,
+  "staged_unique_reported": 446,
   "live_editorial_count": 0,
   "release_gate": "Review original DSKP/textbook/mushaf evidence and Jawi, confirm native output, then promote only approved records. Mark LIVE only after deployment and authenticated download verification.",
   "wave1": [
@@ -213,55 +213,70 @@
   },
   "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed.",
   "latest_verified_structural_ci": {
-    "run": 45514360861,
+    "run": 45520243603,
     "conclusion": "success",
-    "source_commit": "f7b3090aef0c067b3490411cfe35017b891483ed",
-    "note": "Structural only; no release approval."
+    "source_commit": "c09bfc00a3a055c15a18dc7948cee1627e5e8428",
+    "note": "Batch 21 structural test passed; academic approval outstanding."
   },
-  "staged_unique_verified": 430,
+  "staged_unique_verified": 446,
   "staged_year_counts": {
     "2": 106,
     "3": 94,
     "4": 77,
-    "5": 77,
-    "6": 76
+    "5": 86,
+    "6": 83
   },
-  "remaining_without_draft": 268,
+  "remaining_without_draft": 252,
   "latest_editorial_batch": {
-    "batch": 22,
+    "batch": 23,
     "years": {
-      "3": [
-        50,
-        54,
-        58,
-        62,
-        66,
-        69,
-        124,
-        128,
-        132,
-        136,
-        140
-      ],
-      "4": [
+      "5": [
         42,
-        45,
         46,
-        49,
         50,
-        56,
-        60,
-        64,
-        68,
-        139
+        96,
+        100,
+        104,
+        112,
+        116,
+        120
+      ],
+      "6": [
+        88,
+        92,
+        96,
+        100,
+        104,
+        108,
+        130
       ]
     },
-    "commit": "fe4fef871110319f70f5acb8c30bbea311b520d5",
+    "commit": "3cb121905b3a5b3f2bfb81399d631a4e81e48c00",
     "status": "QA_RENDER_PENDING"
   },
   "cross_batch_audit": {
-    "commit": "183d2f707beac47278b6281382418293deea0db0",
-    "status": "CI_PENDING"
+    "run": 45520243603,
+    "status": "CI_SUCCESS",
+    "summary": {
+      "status": "QA_ONLY_NOT_FOR_RUNTIME",
+      "draft_count": 409,
+      "unique_ids": 409,
+      "year_counts": {
+        "2": 106,
+        "3": 83,
+        "4": 67,
+        "5": 77,
+        "6": 76
+      },
+      "remaining_without_draft": 289,
+      "release_eligible": 0,
+      "repeat_group_counts": {
+        "body": 1,
+        "title": 33,
+        "objective": 22,
+        "whole_activity": 0
+      }
+    }
   },
-  "manual_source_hold_count": 8
+  "manual_source_hold_count": 16
 }
