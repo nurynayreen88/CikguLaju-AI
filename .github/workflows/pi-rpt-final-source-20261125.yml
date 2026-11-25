@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - tools/export_pi_final_rpt_source_20261125.py
+      - tools/plan_pi_rpt_final_20261125.py
+      - staging/pendidikan_islam/rpt_2027_prior_calendar_reference_20261125.json
       - .github/workflows/pi-rpt-final-source-20261125.yml
   workflow_dispatch:
 permissions:
@@ -21,8 +23,9 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
           CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
+      - run: python -m tools.plan_pi_rpt_final_20261125
       - uses: actions/upload-artifact@v4
         with:
           name: pi-rpt-final-698-source
-          path: qa/pi-rpt-final-source/records.json
+          path: qa/pi-rpt-final-source/*.json
           retention-days: 7
