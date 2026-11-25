@@ -271,6 +271,17 @@ def _music_state(selected,teacher):
     return state,text
 
 
+@lru_cache(maxsize=1)
+def _arab_translations():
+    path = ROOT / "audits/arabic_language_first10_20261125.json"
+    records = json.loads(path.read_text(encoding="utf8"))["records"]
+    result = {(r["year"], r["pdp"]):r for r in records}
+    expected = {(y,n) for y in (4,5,6) for n in range(1,EXPECTED[y]+1)}
+    if len(records) != len(expected) or set(result) != expected:
+        raise ValueError("Incomplete Arabic translation catalogue")
+    return result
+
+
 def _arab_word(selected,teacher,dest):
     from scripts.render_bahasa_arab_staging import render_one
     from docx import Document
@@ -284,7 +295,8 @@ def _arab_word(selected,teacher,dest):
     if selected["year"] in (4, 5, 6):
         from tools.arabic_178_draft_shared_layout_20261124 import render
         row = _arab_index()[(selected["year"], selected["lesson"])]
-        render(row, {}, dest, teacher=metadata, manual_reflection=reflection, include_candidate=False)
+        translation = _arab_translations()[(selected["year"], selected["lesson"])]
+        render(row, {}, dest, teacher=metadata, manual_reflection=reflection, include_candidate=False, arabic_translation=translation)
         return dest
     cls,dt,tm,pupils,day = metadata
     generated=render_one(selected["source"],dest)
