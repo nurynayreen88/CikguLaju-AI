@@ -4,6 +4,7 @@ on:
     paths:
       - 'rph_standalone/bahasa_arab/proposed_2027/**'
       - 'audits/arabic_rpt2027_380_aligned_ab_schedule_20261125.csv'
+      - 'audits/arabic_rpt2027_year*_extra_textbook_visual_20261126.json'
       - 'tools/qa_arabic_82_extra_word_20261125.py'
       - '.github/workflows/arabic-82-extra-qa-20261125.yml'
   workflow_dispatch:
@@ -29,6 +30,9 @@ jobs:
           out=Path("qa-arabic-82")
           with open("audits/arabic_rpt2027_380_aligned_ab_schedule_20261125.csv",encoding="utf8") as f: rows=list(csv.DictReader(f))
           assert len(rows)==380
+          extra=[r for r in rows if r["status"]=="EXTRA_REVIEW"]
+          assert len(extra)==82 and all(r["textbook_pages"] for r in extra)
+          assert Counter(r["textbook_evidence"] for r in extra)=={"DIRECT":55,"CONTEXT":27}
           assert Counter(r["status"] for r in rows)=={"EXTRA_REVIEW":82,"ORIGINAL_DURATION_REVIEW":298}
           for y in range(2,7):
               rs=[r for r in rows if int(r["year"])==y]
@@ -40,8 +44,8 @@ jobs:
               assert original==list(range(1,59 if y==4 else 61))
               for g in "AB":
                   with (out/f"RPT_T{y}_{g}.csv").open("w",encoding="utf-8-sig",newline="") as f:
-                      w=csv.writer(f);w.writerow(["pdp","week","start","end","minutes","unit","original_pdp","sk","sp","status"])
-                      for r in rs:w.writerow([r["new_pdp"],r["week"],r[g+"_start"],r[g+"_end"],r["minutes"],r["unit"],r["old_pdp"],r["sk"],r["sp"],r["status"]])
+                      w=csv.writer(f);w.writerow(["pdp","week","start","end","minutes","unit","original_pdp","sk","sp","status","textbook_pages","textbook_evidence"])
+                      for r in rs:w.writerow([r["new_pdp"],r["week"],r[g+"_start"],r[g+"_end"],r["minutes"],r["unit"],r["old_pdp"],r["sk"],r["sp"],r["status"],r["textbook_pages"],r["textbook_evidence"]])
           print("380 slots verified, 10 A/B schedule files")
           PY
       - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri
