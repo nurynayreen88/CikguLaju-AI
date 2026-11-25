@@ -114,6 +114,9 @@ def _resolve_verified_rpt(runtime, selection):
                 if detail is None:
                     raise SourceUnavailable("Verified Jawi PdP context unavailable")
                 row.update(dict(detail))
+                # Retain the exact verified RPT activity note before PI detail overlay.
+                # This is a source fingerprint only; native display fields are unchanged.
+                row['_pi_original_rpt_activity_note_20261125'] = src_activity
             if not (sk and sp):
                 if code != "PI" or standards or not is_pi_recitation_session(row):
                     raise SourceUnavailable("Verified SK/SP incomplete")
