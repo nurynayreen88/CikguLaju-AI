@@ -10,15 +10,15 @@
 
 **Objektif:** Murid memainkan skor iringan kastanet dan loceng bersama nyanyian pada tempo seragam.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan BURUNG KENEK-KENEK; murid menunjukkan respons awal.
+**Set induksi:** Guru menunjukkan kastanet dan loceng. Murid meniru corak ketukan setiap alat melalui tepukan.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru memainkan Audio 60 hingga 63 secara bergilir. Murid menyebut dan menepuk corak kastanet serta loceng sebelum bermain dalam kumpulan.
+**Aktiviti 1 — Baca pola dua alat:** Guru memainkan Audio 60 hingga 63 secara bergilir. Murid menyebut dan menepuk corak kastanet serta loceng sebelum bermain dalam kumpulan.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Kumpulan kastanet dan loceng memainkan pola secara berasingan lalu bergabung mengiringi nyanyian.
+**Aktiviti 2 — Iringan kastanet dan loceng:** Kumpulan kastanet dan loceng memainkan pola secara berasingan lalu bergabung mengiringi nyanyian.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak tempo, skor, koordinasi dan pertukaran peranan.
+**Pengukuhan dan pentaksiran:** Semak tempo, skor, koordinasi dan pertukaran peranan.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Kedua-dua kumpulan mengiringi satu frasa nyanyian pada detik seragam. Guru menyemak koordinasi.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK m/s 62–63, Audio 60–66, kastanet dan loceng.
 
