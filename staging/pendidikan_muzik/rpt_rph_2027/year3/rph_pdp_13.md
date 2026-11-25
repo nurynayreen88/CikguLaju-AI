@@ -13,9 +13,9 @@
 
 **Set Induksi — 4 minit:** Guru menyemak kesediaan alat, peranan, kerjasama serta etika projek.
 
-**Aktiviti 1 — Perancangan dan demonstrasi (8 minit):** Kumpulan bersedia dengan kostum, alat perkusi dan peranan lakonan/nyanyian/gerak daripada projek halaman 4–5 lalu menyemak jadual.
+**Aktiviti 1 — Persediaan persembahan:** Kumpulan bersedia dengan kostum, alat perkusi dan peranan lakonan/nyanyian/gerak daripada projek halaman 4–5 lalu menyemak jadual.
 
-**Aktiviti 2 — Latihan atau persembahan (10 minit):** Kumpulan membuat persembahan mini; rakan menilai disiplin, tempo dan kerjasama. Murid membersihkan ruang, menyimpan bahan dan menyatakan refleksi selepas persembahan.
+**Aktiviti 2 — Persembahan dan ulasan rakan:** Kumpulan membuat persembahan mini; rakan menilai disiplin, tempo dan kerjasama. Murid membersihkan ruang, menyimpan bahan dan menyatakan refleksi selepas persembahan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai pelibatan setiap murid, tempo, peranan kumpulan dan kreativiti persembahan atau hasil rancangan menggunakan borang penilaian.
 
