@@ -14,10 +14,10 @@
 **Set Induksi — 4 minit**  
 Guru menunjukkan bahagian kepala, badan dan kaki rekoder lalu bertanya cara memegang yang selamat.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+**Aktiviti 1 — Penjarian not B**  
 Berdasarkan halaman 54–55, murid mengenal nombor lubang dan kedudukan tangan. Guru memodelkan penjarian not B serta sebutan irama ta, ta-a dan ta-a-a-a.
 
-**Aktiviti 2 — Aplikasi / persembahan (10 minit)**  
+**Aktiviti 2 — Permainan dua corak rekoder**  
 Murid menepuk irama latihan not B sebelum memainkan dua corak pendek dengan hembusan lembut. Guru membimbing satu bar pada satu masa.
 
 **Pengukuhan & Penilaian — 6 minit**  
