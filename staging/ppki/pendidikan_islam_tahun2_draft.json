@@ -33,7 +33,8 @@
       "closure": "Baca semula satu huruf.",
       "assessment": "Rekod pencapaian: 4/6 bunyi huruf tepat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "4/6 bunyi huruf tepat",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "002",
@@ -56,7 +57,8 @@
       "closure": "Pilih satu kad untuk bacaan ulangan.",
       "assessment": "Rekod pencapaian: 4/6 bunyi huruf tepat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "4/6 bunyi huruf tepat",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "003",
@@ -79,7 +81,8 @@
       "closure": "Baca dua kad pilihan.",
       "assessment": "Rekod pencapaian: 4/6 huruf dibaca tepat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "4/6 huruf dibaca tepat",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "004",
@@ -104,7 +107,8 @@
       "assessment": "Rekod pencapaian: 4 pasangan huruf dibunyikan dan 2 kalimah dibaca dengan bimbingan. Catat bantuan dan adaptasi.",
       "reflection_criterion": "4 pasangan huruf dibunyikan dan 2 kalimah dibaca dengan bimbingan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "005",
@@ -128,7 +132,8 @@
       "assessment": "Rekod pencapaian: 2 ayat sasaran dibaca dengan bimbingan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran dibaca dengan bimbingan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "006",
@@ -152,7 +157,8 @@
       "assessment": "Rekod pencapaian: 2 ayat sasaran dibaca dengan bimbingan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran dibaca dengan bimbingan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "007",
@@ -176,7 +182,8 @@
       "assessment": "Rekod pencapaian: 2 ayat sasaran diingat mengikut turutan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran diingat mengikut turutan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "008",
@@ -200,7 +207,8 @@
       "assessment": "Rekod pencapaian: 2 ayat sasaran dibaca dengan bimbingan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran dibaca dengan bimbingan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "009",
@@ -224,7 +232,8 @@
       "assessment": "Rekod pencapaian: 2 ayat sasaran diingat mengikut turutan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 ayat sasaran diingat mengikut turutan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "010",
@@ -237,17 +246,18 @@
         "3.1"
       ],
       "title": "Lima Rukun Islam",
-      "objective": "4/5 rukun dikenal pasti mengikut turutan",
-      "success_criterion": "4/5 rukun dikenal pasti mengikut turutan",
+      "objective": "Maksud Rukun Islam dinyatakan dan 4 daripada 5 rukun dikenal pasti",
+      "success_criterion": "Maksud Rukun Islam dinyatakan dan 4 daripada 5 rukun dikenal pasti",
       "materials": "Kad gambar dan nombor",
       "induction": "Lihat kad lima petak.",
       "guided": "Guru susun kad rukun dan bimbing sebutan.",
-      "practice": "Murid susun lima kad dan namakan rukun yang dikenal.",
+      "practice": "Murid susun lima kad dan namakan rukun yang dikenal. Murid nyatakan maksud Rukun Islam dengan pilihan ujaran mudah.",
       "support": "Kad bergambar dan nombor panduan.",
       "closure": "Ulang satu rukun pilihan.",
-      "assessment": "Rekod pencapaian: 4/5 rukun dikenal pasti mengikut turutan. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "4/5 rukun dikenal pasti mengikut turutan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "assessment": "Rekod pencapaian: Maksud Rukun Islam dinyatakan dan 4 daripada 5 rukun dikenal pasti. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "Maksud Rukun Islam dinyatakan dan 4 daripada 5 rukun dikenal pasti",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "011",
@@ -267,12 +277,13 @@
       "materials": "Kad situasi ibadah",
       "induction": "Tunjuk gambar jadual solat.",
       "guided": "Guru bincang manfaat amalan dan kewajipan melalui situasi mudah.",
-      "practice": "Murid padankan tiga situasi dengan amalan yang sesuai.",
+      "practice": "Murid padankan tiga situasi dengan amalan yang sesuai. Bagi setiap kad, murid pilih kepentingan, akibat pengabaian atau hukum yang sepadan.",
       "support": "Gunakan dua pilihan gambar tanpa memalukan murid.",
       "closure": "Pilih satu amalan harian.",
       "assessment": "Rekod pencapaian: 2/3 respons situasi tepat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2/3 respons situasi tepat",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "012",
@@ -290,13 +301,14 @@
       "materials": "BT, kad penanda frasa",
       "induction": "Dengar lafaz guru.",
       "guided": "Guru bimbing lafaz frasa satu demi satu.",
-      "practice": "Murid mengulang bahagian sasaran dan cuba menyambungkannya.",
+      "practice": "Murid mengulang bahagian sasaran dan cuba menyambungkannya. Guru juga membimbing lafaz terjemahan; murid cuba menyebut bahagian makna yang dipelajari.",
       "support": "Jeda dan ulang tanpa tekanan.",
       "closure": "Ulang bahagian yang belum lancar.",
       "assessment": "Rekod pencapaian: Lafaz bahagian sasaran secara tertib dengan bimbingan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "Lafaz bahagian sasaran secara tertib dengan bimbingan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "013",
@@ -314,13 +326,14 @@
       "materials": "Kad pernyataan ringkas",
       "induction": "Guru baca terjemahan daripada BT.",
       "guided": "Bincang dua bahagian makna dengan bahasa mudah.",
-      "practice": "Murid pilih dua pernyataan yang sepadan selepas guru membacanya.",
+      "practice": "Murid pilih dua pernyataan yang sepadan selepas guru membacanya. Ulang lafaz syahadah sebelum menyebut maknanya.",
       "support": "Pilihan gambar simbolik dan respons lisan.",
       "closure": "Guru rumuskan kedua-dua makna.",
       "assessment": "Rekod pencapaian: 2 makna asas dikenal pasti melalui respons. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 makna asas dikenal pasti melalui respons",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "014",
@@ -344,7 +357,8 @@
       "assessment": "Rekod pencapaian: 3/4 situasi dikelaskan mengikut hukum yang dipelajari. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 situasi dikelaskan mengikut hukum yang dipelajari",
       "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
-      "source_note": "4.1.2 dikeluarkan: aktiviti belum menilai rukun dan sunat wuduk."
+      "source_note": "4.1.2 dikeluarkan: aktiviti belum menilai rukun dan sunat wuduk.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "015",
@@ -367,7 +381,8 @@
       "closure": "Susun semula kad rukun.",
       "assessment": "Rekod pencapaian: 5/6 rukun ditunjukkan mengikut tertib. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "5/6 rukun ditunjukkan mengikut tertib",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "016",
@@ -390,7 +405,8 @@
       "closure": "Ulang satu situasi.",
       "assessment": "Rekod pencapaian: 3/4 situasi dikenal pasti. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 situasi dikenal pasti",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "017",
@@ -404,18 +420,19 @@
         "4.2"
       ],
       "title": "Konsep solat fardu",
-      "objective": "3/5 nama solat fardu dipadankan dengan waktu",
-      "success_criterion": "3/5 nama solat fardu dipadankan dengan waktu",
-      "materials": "Kad waktu dan ikon matahari",
+      "objective": "3 daripada 5 solat dipadankan dengan waktu dan bilangan rakaat",
+      "success_criterion": "3 daripada 5 solat dipadankan dengan waktu dan bilangan rakaat",
+      "materials": "Kad waktu dan ikon matahari; kad bilangan rakaat",
       "induction": "Lihat gambar pagi dan malam.",
       "guided": "Guru terangkan nama solat dan urutan waktu.",
-      "practice": "Murid susun lima kad nama dan padankan waktu bergambar.",
+      "practice": "Murid susun lima kad nama dan padankan waktu bergambar. Padankan juga kad rakaat dengan nama solat.",
       "support": "Gunakan papan urutan dan kad besar.",
       "closure": "Pilih nama solat selepas waktu tertentu.",
-      "assessment": "Rekod pencapaian: 3/5 nama solat fardu dipadankan dengan waktu. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "3/5 nama solat fardu dipadankan dengan waktu",
+      "assessment": "Rekod pencapaian: 3 daripada 5 solat dipadankan dengan waktu dan bilangan rakaat. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "3 daripada 5 solat dipadankan dengan waktu dan bilangan rakaat",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "018",
@@ -439,7 +456,8 @@
       "assessment": "Rekod pencapaian: 3 perlakuan sasaran ditunjukkan mengikut turutan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 perlakuan sasaran ditunjukkan mengikut turutan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "019",
@@ -463,7 +481,8 @@
       "closure": "Pilih satu amalan malam.",
       "assessment": "Rekod pencapaian: 3/4 amalan adab dikenal pasti. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 amalan adab dikenal pasti",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "020",
@@ -486,7 +505,8 @@
       "closure": "Pilih rutin yang boleh diamalkan.",
       "assessment": "Rekod pencapaian: 2 kebaikan dinyatakan atau dipilih. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 kebaikan dinyatakan atau dipilih",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "021",
@@ -510,7 +530,8 @@
       "assessment": "Rekod pencapaian: 3/4 respons sopan ditunjukkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 respons sopan ditunjukkan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "022",
@@ -528,14 +549,75 @@
       "materials": "Kad masa, nama dan lokasi; tanpa ilustrasi Nabi",
       "induction": "Tunjuk peta ringkas Makkah.",
       "guided": "Guru ceritakan peristiwa sirah menurut BT dengan kad garis masa.",
-      "practice": "Murid padankan tiga fakta dengan kad sebelum atau semasa kelahiran.",
+      "practice": "Murid padankan tiga fakta daripada buku kepada peristiwa sebelum, semasa dan selepas kelahiran.",
       "support": "Baca semula petikan pendek dan beri pilihan.",
       "closure": "Susun dua kad peristiwa.",
       "assessment": "Rekod pencapaian: 3 maklumat sirah dikenal pasti. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 maklumat sirah dikenal pasti",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     }
   ],
   "audit_round": "2026-11-26: semakan kod sasaran, bukan kelulusan penuh",
-  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan."
+  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan.",
+  "units": {
+    "1.1": "Tilawah: huruf tunggal",
+    "1.2": "Tilawah: huruf dan kalimah",
+    "2.1": "Bacaan al-Nas",
+    "2.2": "Hafazan al-Nas",
+    "2.3": "Bacaan al-Falaq",
+    "2.4": "Hafazan al-Falaq",
+    "3.1": "Rukun Islam",
+    "3.2": "Syahadah",
+    "4.1": "Wuduk",
+    "4.2": "Konsep solat",
+    "4.3": "Perlakuan solat",
+    "5.1": "Adab tidur",
+    "5.2": "Adab kepada ibu bapa",
+    "6.1": "Sirah kelahiran Nabi"
+  },
+  "content_standards": {
+    "1.1": "Bacaan huruf hijaiyyah tunggal dengan satu baris.",
+    "1.2": "Huruf dan kalimah berbaris atas.",
+    "2.1": "Bacaan al-Nas.",
+    "2.2": "Bacaan dan hafazan al-Nas.",
+    "2.3": "Bacaan al-Falaq.",
+    "2.4": "Bacaan dan hafazan al-Falaq.",
+    "3.1": "Pemahaman dan amalan Rukun Islam.",
+    "3.2": "Lafaz serta makna syahadah.",
+    "4.1": "Pelaksanaan wuduk.",
+    "4.2": "Konsep solat.",
+    "4.3": "Perlakuan solat.",
+    "5.1": "Adab tidur dan bangun.",
+    "5.2": "Adab terhadap ibu bapa.",
+    "6.1": "Sirah sekitar kelahiran Nabi Muhammad SAW."
+  },
+  "learning_standards": {
+    "1.1.2": "Bunyikan huruf tunggal alif hingga ya dengan satu baris.",
+    "1.2.2": "Bunyikan huruf bersambung dan terpisah berbaris atas.",
+    "1.2.3": "Baca kalimah berbaris atas.",
+    "2.1.1": "Baca al-Nas ayat 1–3.",
+    "2.1.2": "Baca al-Nas ayat 4–6.",
+    "2.2.1": "Baca dan hafaz al-Nas ayat 1–3.",
+    "2.3.1": "Baca al-Falaq ayat 1–3.",
+    "2.4.1": "Baca dan hafaz al-Falaq ayat 1–3.",
+    "3.1.1": "Nyatakan maksud Rukun Islam.",
+    "3.1.2": "Terangkan kepentingan amalan Rukun Islam.",
+    "3.1.3": "Terangkan kesan buruk mengabaikan Rukun Islam.",
+    "3.1.4": "Jelaskan hukum pelaksanaan Rukun Islam.",
+    "3.2.3": "Lafaz syahadah bersama terjemahan.",
+    "4.1.1": "Nyatakan hukum wuduk.",
+    "4.1.4": "Demonstrasikan wuduk yang lengkap.",
+    "4.1.3": "Kenal pasti perkara yang membatalkan wuduk.",
+    "4.2.2": "Nyatakan waktu solat wajib.",
+    "4.2.3": "Jelaskan nama dan rakaat solat wajib.",
+    "4.3.3": "Demonstrasikan perlakuan solat.",
+    "5.1.1": "Nyatakan adab tidur dan bangun.",
+    "5.1.2": "Kenal pasti adab tidur dan bangun.",
+    "5.1.3": "Terangkan manfaat adab tidur.",
+    "5.2.4": "Demonstrasikan adab kepada ibu bapa.",
+    "6.1.1": "Ceritakan peristiwa sebelum, ketika dan selepas kelahiran Nabi."
+  },
+  "standard_text_kind": "Parafrasa ringkas untuk audit; bukan huraian verbatim rasmi.",
+  "format_blocker": "Penulisan Jawi dan susun atur RTL belum diuji; jangan terbit dalam penjana LTR."
 }
