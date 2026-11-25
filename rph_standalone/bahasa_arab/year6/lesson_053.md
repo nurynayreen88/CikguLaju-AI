@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** فِي أَيِّ وِلَايَةٍ وُلِدْتَ؟ وُلِدْتُ فِي وِلَايَةِ سَلَاغُور
 **Objektif pembelajaran:** Melakonkan dua soal jawab tentang negeri kelahiran berdasarkan kad watak.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid melakonkan dua soal jawab tentang negeri kelahiran berdasarkan kad watak.
 
 **Set induksi:** Guru memaparkan peta negeri Malaysia dan dua profil rekaan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing soalan أين/في أي ولاية dalam dialog h103 dan menegaskan murid boleh menggunakan identiti watak, bukan perlu berkongsi maklumat peribadi.
+**Aktiviti 1 — Ajuk soalan أين dan في أي ولاية:** Guru membimbing soalan أين/في أي ولاية dalam dialog h103 dan menegaskan murid boleh menggunakan identiti watak, bukan perlu berkongsi maklumat peribadi.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan menemu bual dua watak rekaan pada kad, merekod negeri dan menjawab soalan lisan.
+**Aktiviti 2 — Temu bual dua watak rekaan:** Murid berpasangan menemu bual dua watak rekaan pada kad, merekod negeri dan menjawab soalan lisan.
 
 **Pengukuhan / Penilaian (PBD):** Dua dialog lengkap dan sebutan negeri dinilai.
 

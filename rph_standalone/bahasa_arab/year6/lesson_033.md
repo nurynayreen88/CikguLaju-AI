@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** قَارِب، سَفِينَة، قِطَار، طَائِرَة
 **Objektif pembelajaran:** Mengecam empat nama kenderaan dan cara perjalanannya.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid mengecam empat nama kenderaan dan cara perjalanannya.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperkenalkan gambar kapal/perahu/kereta api pada h66 dan menyebut namanya.
+**Aktiviti 1 — Dengar nama kapal, perahu dan kereta api:** Guru memperkenalkan gambar kapal/perahu/kereta api pada h66 dan menyebut namanya.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menunjukkan gambar mengikut arahan audio, kemudian membezakan pengangkutan air daripada darat.
+**Aktiviti 2 — Padankan gambar dan beza air dengan darat:** Murid menunjukkan gambar mengikut arahan audio, kemudian membezakan pengangkutan air daripada darat.
 
 **Pengukuhan / Penilaian (PBD):** Empat padanan audio dan kategori. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

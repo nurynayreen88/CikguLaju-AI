@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** زِيَارَة، مَبْنَى الْبَرْلَمَان، قَاعَةُ اجْتِمَاع، السَّاحَة
 **Objektif pembelajaran:** Membaca tiga maklumat penting daripada petikan lawatan ke Parlimen.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid membaca dan mengenal tiga maklumat penting daripada petikan lawatan ke Parlimen.
 
 **Set induksi:** Guru menunjukkan gambar bangunan Parlimen dan murid meneka tujuan lawatan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan terpilih daripada teks naratif h114 tentang lawatan murid dan mengenal tempat yang disebut.
+**Aktiviti 1 — Baca petikan lawatan ke Parlimen:** Guru membimbing bacaan terpilih daripada teks naratif h114 tentang lawatan murid dan mengenal tempat yang disebut.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membaca petikan pendek secara bergilir, menandakan tiga maklumat tempat atau aktiviti dan menjawab soalan guru.
+**Aktiviti 2 — Kenal tiga maklumat dan jawab soalan:** Murid membaca petikan pendek secara bergilir, menandakan tiga maklumat tempat atau aktiviti dan menjawab soalan guru.
 
 **Pengukuhan / Penilaian (PBD):** Tiga maklumat daripada bacaan dan sebutan frasa penting disemak.
 

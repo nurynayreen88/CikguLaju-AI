@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** طَائِرَة، مِرْوَحِيَّة، شَاحِنَة، حَافِلَة
 **Objektif pembelajaran:** Membaca empat nama pengangkutan dan menyatakan kategori.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid membaca empat nama pengangkutan dan menyatakan kategori yang sesuai.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan kad bergambar pada h68 untuk membimbing sebutan setiap kata.
+**Aktiviti 1 — Baca nama pengangkutan daripada gambar:** Guru menggunakan kad bergambar pada h68 untuk membimbing sebutan setiap kata.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengumpul kad berdasarkan pengangkutan udara/darat, membaca dan mengesan satu gambar yang tidak sesuai.
+**Aktiviti 2 — Kelaskan kad udara dan darat:** Murid mengumpul kad berdasarkan pengangkutan udara/darat, membaca dan mengesan satu gambar yang tidak sesuai.
 
 **Pengukuhan / Penilaian (PBD):** Empat bacaan dan pengelasan tepat. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

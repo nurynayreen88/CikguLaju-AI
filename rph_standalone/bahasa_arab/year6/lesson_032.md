@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** فِي الْبَرّ، فِي الْجَوّ، حَافِلَة، طَائِرَة
 **Objektif pembelajaran:** Mengelaskan empat gambar mengikut cara pengangkutan.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid mengelaskan empat gambar mengikut cara pengangkutan.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menerangkan kategori perjalanan udara dan darat dari latihan h65.
+**Aktiviti 1 — Kenal kategori perjalanan udara dan darat:** Guru menerangkan kategori perjalanan udara dan darat dari latihan h65.
 
-**Aktiviti 2 — Aplikasi murid:** Kumpulan menyusun empat kad pengangkutan kepada kategori dan menerangkan satu pilihan secara lisan.
+**Aktiviti 2 — Kelaskan empat kad pengangkutan:** Kumpulan menyusun empat kad pengangkutan kepada kategori dan menerangkan satu pilihan secara lisan.
 
 **Pengukuhan / Penilaian (PBD):** Empat pengelasan dan dua sebutan. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

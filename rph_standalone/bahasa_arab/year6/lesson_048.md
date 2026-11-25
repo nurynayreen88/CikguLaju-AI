@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** هُوَ مَالِيزِيّ، هِيَ مَالِيزِيَّة، هُوَ مَلَايُوِيّ، هِيَ مَلَايُوِيَّة
 **Objektif pembelajaran:** Mengelaskan empat ungkapan kepada هو atau هي berdasarkan watak gambar.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid mengelaskan empat ungkapan kepada هو atau هي berdasarkan watak gambar.
 
 **Set induksi:** Guru memperkenalkan dua watak pada kad gambar dan meminta murid menunjukkan kata ganti Arab.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing perbezaan هو dan هي pada contoh identiti dalam h96 tanpa menganggap identiti berdasarkan rupa.
+**Aktiviti 1 — Kenal kata ganti هو dan هي:** Guru membimbing perbezaan هو dan هي pada contoh identiti dalam h96 tanpa menganggap identiti berdasarkan rupa.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan empat kad frasa dengan watak rekaan berlabel dan membacanya kepada pasangan.
+**Aktiviti 2 — Padankan empat frasa dengan watak:** Murid memadankan empat kad frasa dengan watak rekaan berlabel dan membacanya kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Empat padanan kata ganti dan dua ayat lisan dinilai.
 

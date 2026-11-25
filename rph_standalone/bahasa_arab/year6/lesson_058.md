@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** فِي أَيِّ وِلَايَةٍ وُلِدْتَ؟ وُلِدْتُ فِي وِلَايَةِ سَلَاغُور، مَا أَلْوَانُ عَلَمِهَا؟
 **Objektif pembelajaran:** Melakonkan sekurang-kurangnya dua dialog ringkas tentang negeri dan bendera.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid melakonkan sekurang-kurangnya dua dialog ringkas tentang negeri dan bendera.
 
 **Set induksi:** Guru memaparkan dua kad negeri dan satu gambar bendera negeri.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing dialog berangkai pada h110 sambil membandingkan kata tanya dan jawapan.
+**Aktiviti 1 — Ajuk dialog negeri dan bendera:** Guru membimbing dialog berangkai pada h110 sambil membandingkan kata tanya dan jawapan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melakonkan temu bual dua watak dari negeri berbeza dan menggunakan kad warna untuk menyebut warna bendera.
+**Aktiviti 2 — Temu bual dua watak dan kad warna:** Murid melakonkan temu bual dua watak dari negeri berbeza dan menggunakan kad warna untuk menyebut warna bendera.
 
 **Pengukuhan / Penilaian (PBD):** Dua dialog lengkap serta padanan negeri dan warna dinilai.
 

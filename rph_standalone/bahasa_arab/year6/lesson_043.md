@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** أَنَا أَرْكَبُ الدَّرَّاجَة، فِي الْمَسَاء، إِلَى الْقَرْيَة
 **Objektif pembelajaran:** Menulis dua ayat mudah berurutan tentang perjalanan.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid menulis dua ayat mudah berurutan tentang perjalanan.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan susunan ayat daripada contoh tulisan pada h76.
+**Aktiviti 1 — Model susunan ayat waktu perjalanan:** Guru memodelkan susunan ayat daripada contoh tulisan pada h76.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun kad frasa tentang perjalanan dan menulis dua ayat sebelum semakan rakan.
+**Aktiviti 2 — Susun frasa dan tulis dua ayat:** Murid menyusun kad frasa tentang perjalanan dan menulis dua ayat sebelum semakan rakan.
 
 **Pengukuhan / Penilaian (PBD):** Dua ayat dengan kata kerja dan tempat/masa betul. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 
