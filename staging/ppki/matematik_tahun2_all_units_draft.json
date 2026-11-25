@@ -1,0 +1,1247 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Matematik",
+  "subject_id": "MATEMATIK_PPKI",
+  "status": "DALAM_SEMAKAN",
+  "units": {
+    "1": "Kenal Objek",
+    "2": "Nombor",
+    "3": "Tambah",
+    "4": "Tolak",
+    "5": "Wang",
+    "6": "Masa dan Waktu"
+  },
+  "sources": {
+    "textbook": "https://fliphtml5.com/ktpkn/pywc/BT_Matematik_Tahun_2/",
+    "dskp": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf",
+    "activity_book": "References printed in textbook; independent copy not yet audited"
+  },
+  "audit_notes": [
+    "SK 2.2 in the available DSKP transcription repeats the 2.1.x numbering; textbook pages 10–12 use 2.2.1–2.2.3. Keep draft textbook numbering until visual audit.",
+    "Operations under SP 3.3.1 and 4.3.1 are explicitly restricted to no regrouping. Other concrete fact-building activities stay within 20.",
+    "All lesson numbers and time allocations are proposed; full SK/SP wording, workbook verification, annual pacing and rendering pending."
+  ],
+  "lessons": [
+    {
+      "pdp": "001",
+      "unit": 1,
+      "title": "Panjang dan pendek",
+      "textbook_page": "1",
+      "sp": [
+        "1.1.1(iii)",
+        "1.1.2(iii)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "4/5 pasangan objek dibandingkan tepat",
+      "success_criterion": "4/5 pasangan objek dibandingkan tepat",
+      "materials": "Jalur kertas, tali pendek, pembaris",
+      "induction": "Tunjuk dua jalur berbeza panjang",
+      "guided": "Sejajarkan hujung jalur dan modelkan perbandingan panjang",
+      "practice": "Murid sejajarkan lima pasangan jalur lalu pilih yang lebih panjang atau pendek",
+      "support": "Gunakan jalur kontras dan titik mula jelas",
+      "closure": "Susun dua jalur mengikut panjang",
+      "assessment": "Rekod pencapaian kriteria: 4/5 pasangan objek dibandingkan tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 pasangan objek dibandingkan tepat",
+      "activity_book_ref": "2"
+    },
+    {
+      "pdp": "002",
+      "unit": 1,
+      "title": "Berat dan ringan",
+      "textbook_page": "1",
+      "sp": [
+        "1.1.1(iv)",
+        "1.1.2(iv)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "4/5 pasangan objek dibandingkan tepat",
+      "success_criterion": "4/5 pasangan objek dibandingkan tepat",
+      "materials": "Neraca, bekas ringan tertutup",
+      "induction": "Banding dua bekas kecil",
+      "guided": "Guru tunjuk neraca dan kaitkan kedudukan dengan berat",
+      "practice": "Murid banding lima pasangan menggunakan neraca",
+      "support": "Bekas mudah diangkat dan bantuan visual",
+      "closure": "Pilih bekas ringan",
+      "assessment": "Rekod pencapaian kriteria: 4/5 pasangan objek dibandingkan tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 pasangan objek dibandingkan tepat",
+      "activity_book_ref": "2"
+    },
+    {
+      "pdp": "003",
+      "unit": 1,
+      "title": "Tebal dan nipis",
+      "textbook_page": "2",
+      "sp": [
+        "1.1.1(i)",
+        "1.1.2(i)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "4/5 pasangan buku dikenal pasti tepat",
+      "success_criterion": "4/5 pasangan buku dikenal pasti tepat",
+      "materials": "Buku tebal dan nipis, kad label",
+      "induction": "Tunjuk sisi dua buku",
+      "guided": "Modelkan membandingkan ketebalan pada permukaan rata",
+      "practice": "Murid padankan lima pasangan buku dengan kad ciri",
+      "support": "Gunakan buku berlainan ketebalan yang ketara",
+      "closure": "Pilih buku nipis untuk disimpan",
+      "assessment": "Rekod pencapaian kriteria: 4/5 pasangan buku dikenal pasti tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 pasangan buku dikenal pasti tepat",
+      "activity_book_ref": "1"
+    },
+    {
+      "pdp": "004",
+      "unit": 1,
+      "title": "Tinggi dan rendah",
+      "textbook_page": "2",
+      "sp": [
+        "1.1.1(ii)",
+        "1.1.2(ii)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "4/5 pasangan objek dikenal pasti tepat",
+      "success_criterion": "4/5 pasangan objek dikenal pasti tepat",
+      "materials": "Menara blok, kad label",
+      "induction": "Bina dua menara berbeza tinggi",
+      "guided": "Guru samakan tapak menara sebelum membandingkan",
+      "practice": "Murid bina atau pilih lima pasangan menara dan labelkan ciri",
+      "support": "Gunakan blok besar dan permukaan rata",
+      "closure": "Tunjuk menara rendah",
+      "assessment": "Rekod pencapaian kriteria: 4/5 pasangan objek dikenal pasti tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 pasangan objek dikenal pasti tepat",
+      "activity_book_ref": "1"
+    },
+    {
+      "pdp": "005",
+      "unit": 1,
+      "title": "Pengukuhan ciri objek",
+      "textbook_page": "3",
+      "sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "6/8 jawapan ciri objek tepat",
+      "success_criterion": "6/8 jawapan ciri objek tepat",
+      "materials": "Empat stesen perbandingan, kad gambar",
+      "induction": "Cabut satu kad ciri",
+      "guided": "Guru tunjuk cara memilih alat perbandingan yang betul",
+      "practice": "Murid lalui stesen panjang, berat, tinggi dan tebal dengan dua soalan setiap stesen",
+      "support": "Sediakan rehat antara stesen dan satu pasangan pada satu masa",
+      "closure": "Nyatakan satu ciri objek pilihan",
+      "assessment": "Rekod pencapaian kriteria: 6/8 jawapan ciri objek tepat. Catat jenis bantuan.",
+      "reflection_criterion": "6/8 jawapan ciri objek tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "006",
+      "unit": 1,
+      "title": "Banyak sedikit dan lebih kurang",
+      "textbook_page": "4–5",
+      "sp": [
+        "1.1.3(i)",
+        "1.1.3(ii)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "4/5 perbandingan kumpulan tepat",
+      "success_criterion": "4/5 perbandingan kumpulan tepat",
+      "materials": "Pembilang besar, dulang dua ruang",
+      "induction": "Letak dua kumpulan pembilang",
+      "guided": "Guru padankan satu dengan satu sehingga baki dapat dilihat",
+      "practice": "Murid padankan lima pasangan kumpulan dan pilih label sesuai",
+      "support": "Gunakan petak pasangan bercetak",
+      "closure": "Tunjuk kumpulan yang kurang",
+      "assessment": "Rekod pencapaian kriteria: 4/5 perbandingan kumpulan tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 perbandingan kumpulan tepat",
+      "activity_book_ref": "3–5"
+    },
+    {
+      "pdp": "007",
+      "unit": 1,
+      "title": "Sama banyak atau tidak sama banyak",
+      "textbook_page": "4–5",
+      "sp": [
+        "1.1.3(iii)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "4/5 pasangan kumpulan dikenal pasti",
+      "success_criterion": "4/5 pasangan kumpulan dikenal pasti",
+      "materials": "Kad titik, dulang, pembilang",
+      "induction": "Banding dua dulang yang sama bilangan",
+      "guided": "Guru modelkan satu dengan satu dan tambah satu objek pada satu dulang",
+      "practice": "Murid periksa lima pasangan termasuk bilangan sama dan tidak sama",
+      "support": "Gunakan susun atur selari",
+      "closure": "Bina dua kumpulan sama banyak",
+      "assessment": "Rekod pencapaian kriteria: 4/5 pasangan kumpulan dikenal pasti. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 pasangan kumpulan dikenal pasti",
+      "activity_book_ref": "3–5"
+    },
+    {
+      "pdp": "008",
+      "unit": 1,
+      "title": "Permainan susunan blok",
+      "textbook_page": "6",
+      "sp": [
+        "1.1.1(iii)",
+        "1.1.2(iii)",
+        "1.1.3"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "objective": "3/4 binaan memenuhi kad cabaran",
+      "success_criterion": "3/4 binaan memenuhi kad cabaran",
+      "materials": "Blok besar, kad cabaran",
+      "induction": "Bina kereta api blok pendek",
+      "guided": "Guru contohkan binaan panjang dan kumpulan sama banyak",
+      "practice": "Pasangan bina empat cabaran, murid terangkan atau pilih kad ciri",
+      "support": "Gunakan model separuh siap dan kad visual",
+      "closure": "Banding hasil dua binaan",
+      "assessment": "Rekod pencapaian kriteria: 3/4 binaan memenuhi kad cabaran. Catat jenis bantuan.",
+      "reflection_criterion": "3/4 binaan memenuhi kad cabaran",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "009",
+      "unit": 2,
+      "title": "Nombor di persekitaran",
+      "textbook_page": "7–8",
+      "sp": [
+        "2.1.1",
+        "2.5.1",
+        "2.5.3"
+      ],
+      "sk": [
+        "2.1",
+        "2.5"
+      ],
+      "objective": "5/6 nombor di persekitaran dikenal pasti",
+      "success_criterion": "5/6 nombor di persekitaran dikenal pasti",
+      "materials": "Gambar nombor meja, kad label",
+      "induction": "Tunjuk label nombor kelas",
+      "guided": "Guru padankan nombor pada gambar dengan kad angka",
+      "practice": "Murid cari enam label pada stesen rekaan dan padankan angka",
+      "support": "Sediakan dua pilihan angka",
+      "closure": "Tunjuk nombor pada satu gambar",
+      "assessment": "Rekod pencapaian kriteria: 5/6 nombor di persekitaran dikenal pasti. Catat jenis bantuan.",
+      "reflection_criterion": "5/6 nombor di persekitaran dikenal pasti",
+      "activity_book_ref": "7"
+    },
+    {
+      "pdp": "010",
+      "unit": 2,
+      "title": "Nama nombor hingga 20",
+      "textbook_page": "8–9",
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "8/10 nombor rawak dinamakan",
+      "success_criterion": "8/10 nombor rawak dinamakan",
+      "materials": "Kad angka 11–20, papan pilihan",
+      "induction": "Susun kad 11 dan 12",
+      "guided": "Guru sebut nombor dan murid cari angka sepadan",
+      "practice": "Murid ambil sepuluh kad rawak dan nyatakan nama nombor",
+      "support": "Gunakan jalur nombor sebagai sokongan",
+      "closure": "Namakan kad pilihan rakan",
+      "assessment": "Rekod pencapaian kriteria: 8/10 nombor rawak dinamakan. Catat jenis bantuan.",
+      "reflection_criterion": "8/10 nombor rawak dinamakan",
+      "activity_book_ref": "7"
+    },
+    {
+      "pdp": "011",
+      "unit": 2,
+      "title": "Lakaran dan tulisan angka",
+      "textbook_page": "10–11",
+      "sp": [
+        "2.2.1",
+        "2.2.2(i)"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "objective": "4/5 angka dua digit ditulis dengan susunan tepat",
+      "success_criterion": "4/5 angka dua digit ditulis dengan susunan tepat",
+      "materials": "Kad angka, pasir dalam dulang, pensel",
+      "induction": "Jejak angka di udara",
+      "guided": "Guru modelkan lakaran dan urutan dua digit",
+      "practice": "Murid tulis lima angka menggunakan kad rujukan",
+      "support": "Gunakan kotak digit dan pensel mudah genggam",
+      "closure": "Semak satu angka yang ditulis",
+      "assessment": "Rekod pencapaian kriteria: 4/5 angka dua digit ditulis dengan susunan tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 angka dua digit ditulis dengan susunan tepat",
+      "activity_book_ref": "8–11"
+    },
+    {
+      "pdp": "012",
+      "unit": 2,
+      "title": "Nombor dalam perkataan",
+      "textbook_page": "10–12",
+      "sp": [
+        "2.2.2(ii)",
+        "2.2.3"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "objective": "4/5 nama nombor ditulis atau dibaca tepat mengikut tugasan",
+      "success_criterion": "4/5 nama nombor ditulis atau dibaca tepat mengikut tugasan",
+      "materials": "Kad angka, kad perkataan, lembaran",
+      "induction": "Padankan kad 12 dengan nama nombor",
+      "guided": "Guru tunjuk cara membaca dan menyalin nama nombor",
+      "practice": "Murid padankan dan tulis lima nama nombor berdasarkan angka",
+      "support": "Gunakan bank perkataan dan panduan tulisan",
+      "closure": "Baca satu nama nombor",
+      "assessment": "Rekod pencapaian kriteria: 4/5 nama nombor ditulis atau dibaca tepat mengikut tugasan. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 nama nombor ditulis atau dibaca tepat mengikut tugasan",
+      "activity_book_ref": "8–11"
+    },
+    {
+      "pdp": "013",
+      "unit": 2,
+      "title": "Label nombor harian",
+      "textbook_page": "13",
+      "sp": [
+        "2.5.1",
+        "2.5.3"
+      ],
+      "sk": [
+        "2.5"
+      ],
+      "objective": "4/5 label nombor digunakan pada lokasi betul",
+      "success_criterion": "4/5 label nombor digunakan pada lokasi betul",
+      "materials": "Kad nombor meja, loker rekaan, tiket",
+      "induction": "Lakon mengambil tiket nombor",
+      "guided": "Guru tunjuk cara mencari tempat sepadan dengan tiket",
+      "practice": "Murid padankan lima tiket dengan lokasi bernombor",
+      "support": "Susun lokasi pada papan meja untuk murid yang memerlukan",
+      "closure": "Simpan tiket di tempat sepadan",
+      "assessment": "Rekod pencapaian kriteria: 4/5 label nombor digunakan pada lokasi betul. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 label nombor digunakan pada lokasi betul",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "014",
+      "unit": 2,
+      "title": "Sa dan puluh",
+      "textbook_page": "14–15",
+      "sp": [
+        "2.3.1(i)",
+        "2.3.2(i)"
+      ],
+      "sk": [
+        "2.3"
+      ],
+      "objective": "4/5 nilai tempat digit dikenal pasti",
+      "success_criterion": "4/5 nilai tempat digit dikenal pasti",
+      "materials": "Blok asas sepuluh, jadual sa-puluh",
+      "induction": "Tunjuk satu blok puluh dan tiga blok sa",
+      "guided": "Guru letakkan blok dalam jadual dan label digit",
+      "practice": "Murid bina lima nombor serta tunjuk digit sa dan puluh",
+      "support": "Warna berbeza untuk setiap lajur",
+      "closure": "Tunjuk lajur puluh",
+      "assessment": "Rekod pencapaian kriteria: 4/5 nilai tempat digit dikenal pasti. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 nilai tempat digit dikenal pasti",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "015",
+      "unit": 2,
+      "title": "Kuantiti 11 hingga 14",
+      "textbook_page": "16–17",
+      "sp": [
+        "2.3.1(ii)",
+        "2.3.2(ii)",
+        "2.3.3(i)",
+        "2.5.2"
+      ],
+      "sk": [
+        "2.3",
+        "2.5"
+      ],
+      "objective": "3/4 nombor dipadankan dengan kuantiti tepat",
+      "success_criterion": "3/4 nombor dipadankan dengan kuantiti tepat",
+      "materials": "Pembilang besar, bekas sepuluh",
+      "induction": "Isi sepuluh pembilang ke bekas",
+      "guided": "Guru bina 11 menggunakan satu kumpulan sepuluh dan satu sa",
+      "practice": "Murid bina empat set 11–14 dan pilih kad jumlah",
+      "support": "Gunakan bingkai sepuluh dan kira sentuh satu persatu",
+      "closure": "Tunjuk jumlah satu set",
+      "assessment": "Rekod pencapaian kriteria: 3/4 nombor dipadankan dengan kuantiti tepat. Catat jenis bantuan.",
+      "reflection_criterion": "3/4 nombor dipadankan dengan kuantiti tepat",
+      "activity_book_ref": "13–15"
+    },
+    {
+      "pdp": "016",
+      "unit": 2,
+      "title": "Kuantiti 15 hingga 17",
+      "textbook_page": "18",
+      "sp": [
+        "2.3.2(ii)",
+        "2.3.3(i)",
+        "2.5.2"
+      ],
+      "sk": [
+        "2.3",
+        "2.5"
+      ],
+      "objective": "3/3 set bilangan dibina tepat",
+      "success_criterion": "3/3 set bilangan dibina tepat",
+      "materials": "Blok puluh dan sa, kad angka",
+      "induction": "Tunjuk set 15 tanpa label",
+      "guided": "Guru kira satu puluh dan sa secara berasingan",
+      "practice": "Murid bina set 15,16,17 daripada tiga kad angka",
+      "support": "Berikan satu blok puluh siap dan pembilang berasingan",
+      "closure": "Pilih label satu set",
+      "assessment": "Rekod pencapaian kriteria: 3/3 set bilangan dibina tepat. Catat jenis bantuan.",
+      "reflection_criterion": "3/3 set bilangan dibina tepat",
+      "activity_book_ref": "13–15"
+    },
+    {
+      "pdp": "017",
+      "unit": 2,
+      "title": "Kuantiti 18 hingga 20",
+      "textbook_page": "19–20",
+      "sp": [
+        "2.3.2(ii)",
+        "2.3.3(ii)",
+        "2.5.2"
+      ],
+      "sk": [
+        "2.3",
+        "2.5"
+      ],
+      "objective": "3/4 padanan nombor dan gambar tepat",
+      "success_criterion": "3/4 padanan nombor dan gambar tepat",
+      "materials": "Dua bingkai sepuluh, kad gambar",
+      "induction": "Lengkapkan dua bingkai sepuluh",
+      "guided": "Guru modelkan perbezaan 19 dan 20 dengan bingkai",
+      "practice": "Murid padankan empat kad angka dengan gambar bilangan",
+      "support": "Gunakan penanda petak kosong",
+      "closure": "Terangkan 20 melalui dua kumpulan sepuluh",
+      "assessment": "Rekod pencapaian kriteria: 3/4 padanan nombor dan gambar tepat. Catat jenis bantuan.",
+      "reflection_criterion": "3/4 padanan nombor dan gambar tepat",
+      "activity_book_ref": "13–15"
+    },
+    {
+      "pdp": "018",
+      "unit": 2,
+      "title": "Hiasan nombor mengikut kuantiti",
+      "textbook_page": "21",
+      "sp": [
+        "2.3.3(i)",
+        "2.5.3"
+      ],
+      "sk": [
+        "2.3",
+        "2.5"
+      ],
+      "objective": "4/5 kad angka mempunyai hiasan bilangan tepat",
+      "success_criterion": "4/5 kad angka mempunyai hiasan bilangan tepat",
+      "materials": "Kad angka, pelekat besar",
+      "induction": "Tunjuk kad 12 dengan pelekat",
+      "guided": "Guru modelkan membilang pelekat sebelum menampal",
+      "practice": "Murid hias lima kad dengan jumlah yang ditetapkan",
+      "support": "Gunakan bingkai sepuluh dan pelekat mudah dikendalikan",
+      "closure": "Banding kad dengan jumlah pelekat",
+      "assessment": "Rekod pencapaian kriteria: 4/5 kad angka mempunyai hiasan bilangan tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 kad angka mempunyai hiasan bilangan tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "019",
+      "unit": 2,
+      "title": "Susunan menaik",
+      "textbook_page": "22–23",
+      "sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sk": [
+        "2.4"
+      ],
+      "objective": "4/5 set nombor disusun menaik",
+      "success_criterion": "4/5 set nombor disusun menaik",
+      "materials": "Kad angka, jalur nombor",
+      "induction": "Gerakkan penanda dari nombor kecil",
+      "guided": "Guru susun contoh empat kad dari kecil ke besar",
+      "practice": "Murid susun lima set kad yang telah dikocok",
+      "support": "Sediakan jalur nombor dan anak panah",
+      "closure": "Baca satu susunan dari kiri",
+      "assessment": "Rekod pencapaian kriteria: 4/5 set nombor disusun menaik. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 set nombor disusun menaik",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "020",
+      "unit": 2,
+      "title": "Rangkaian menaik yang hilang",
+      "textbook_page": "22–25",
+      "sp": [
+        "2.4.3"
+      ],
+      "sk": [
+        "2.4"
+      ],
+      "objective": "4/5 nombor hilang dilengkapkan",
+      "success_criterion": "4/5 nombor hilang dilengkapkan",
+      "materials": "Jalur nombor berlubang, jubin angka",
+      "induction": "Tunjuk satu ruang kosong pada jalur",
+      "guided": "Guru cari nombor sebelum dan selepas ruang",
+      "practice": "Murid isi lima ruang kosong dalam rangkaian menaik",
+      "support": "Gunakan jubin pilihan dua nombor",
+      "closure": "Baca jalur yang siap",
+      "assessment": "Rekod pencapaian kriteria: 4/5 nombor hilang dilengkapkan. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 nombor hilang dilengkapkan",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "021",
+      "unit": 2,
+      "title": "Susunan menurun",
+      "textbook_page": "24–25",
+      "sp": [
+        "2.4.4",
+        "2.4.5"
+      ],
+      "sk": [
+        "2.4"
+      ],
+      "objective": "4/5 set nombor disusun menurun",
+      "success_criterion": "4/5 set nombor disusun menurun",
+      "materials": "Kad angka, tangga nombor",
+      "induction": "Gerakkan penanda menuruni tangga",
+      "guided": "Guru modelkan menyusun dari 20 ke nombor lebih kecil",
+      "practice": "Murid susun lima set kad secara menurun",
+      "support": "Gunakan anak panah dan nombor mula",
+      "closure": "Baca satu susunan dari besar ke kecil",
+      "assessment": "Rekod pencapaian kriteria: 4/5 set nombor disusun menurun. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 set nombor disusun menurun",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "022",
+      "unit": 2,
+      "title": "Rangkaian menurun dan permainan pagar",
+      "textbook_page": "24–26",
+      "sp": [
+        "2.4.6"
+      ],
+      "sk": [
+        "2.4"
+      ],
+      "objective": "4/5 ruang kosong menurun dilengkapkan",
+      "success_criterion": "4/5 ruang kosong menurun dilengkapkan",
+      "materials": "Papan pagar rekaan, kad angka",
+      "induction": "Tunjuk pagar dengan nombor hilang",
+      "guided": "Guru modelkan mengira satu kurang",
+      "practice": "Murid lengkapkan lima rangkaian menurun pada papan",
+      "support": "Sediakan jalur nombor dalam jangkauan",
+      "closure": "Semak nombor terakhir dengan rakan",
+      "assessment": "Rekod pencapaian kriteria: 4/5 ruang kosong menurun dilengkapkan. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 ruang kosong menurun dilengkapkan",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "023",
+      "unit": 3,
+      "title": "Gabung dua kumpulan objek",
+      "textbook_page": "27",
+      "sp": [
+        "3.1.1",
+        "3.1.2(i)"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "objective": "4/5 hasil tambah objek tepat",
+      "success_criterion": "4/5 hasil tambah objek tepat",
+      "materials": "Pembilang, dua dulang, dulang jumlah",
+      "induction": "Letak tiga pembilang dalam dulang",
+      "guided": "Guru masukkan kumpulan kedua dan kira semua",
+      "practice": "Murid gabungkan lima pasangan kumpulan dan sebut jumlah",
+      "support": "Gunakan dulang berpetak dan pembilang besar",
+      "closure": "Tunjukkan jumlah selepas menggabung",
+      "assessment": "Rekod pencapaian kriteria: 4/5 hasil tambah objek tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 hasil tambah objek tepat",
+      "activity_book_ref": "19–21"
+    },
+    {
+      "pdp": "024",
+      "unit": 3,
+      "title": "Tambah melalui gambar",
+      "textbook_page": "27–28",
+      "sp": [
+        "3.1.2(ii)"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "objective": "4/5 jumlah gambar ditentukan tepat",
+      "success_criterion": "4/5 jumlah gambar ditentukan tepat",
+      "materials": "Kad gambar, pensel warna",
+      "induction": "Tunjuk dua gambar kumpulan buah",
+      "guided": "Guru bulatkan dua kumpulan dan kira keseluruhan",
+      "practice": "Murid kira lima pasangan gambar dan pilih kad jumlah",
+      "support": "Galakkan tanda pada setiap gambar yang sudah dikira",
+      "closure": "Nyatakan satu jumlah",
+      "assessment": "Rekod pencapaian kriteria: 4/5 jumlah gambar ditentukan tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 jumlah gambar ditentukan tepat",
+      "activity_book_ref": "19–21"
+    },
+    {
+      "pdp": "025",
+      "unit": 3,
+      "title": "Simbol tambah dan sama dengan",
+      "textbook_page": "28",
+      "sp": [
+        "3.2.1"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "objective": "4/5 simbol yang hilang dipilih tepat",
+      "success_criterion": "4/5 simbol yang hilang dipilih tepat",
+      "materials": "Kad simbol, jalur nombor",
+      "induction": "Tunjuk simbol tambah antara dua kumpulan",
+      "guided": "Guru terangkan fungsi simbol tambah dan sama dengan",
+      "practice": "Murid lengkapkan lima jalur simbol tanpa mengira hasil baharu",
+      "support": "Gunakan simbol bersaiz besar",
+      "closure": "Baca satu ayat matematik",
+      "assessment": "Rekod pencapaian kriteria: 4/5 simbol yang hilang dipilih tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 simbol yang hilang dipilih tepat",
+      "activity_book_ref": "19–21"
+    },
+    {
+      "pdp": "026",
+      "unit": 3,
+      "title": "Ayat matematik tambah",
+      "textbook_page": "28–29",
+      "sp": [
+        "3.2.2(i)"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "objective": "4/5 ayat tambah lengkap ditulis tepat",
+      "success_criterion": "4/5 ayat tambah lengkap ditulis tepat",
+      "materials": "Kad nombor dan simbol, pembilang",
+      "induction": "Gabung dua set pembilang",
+      "guided": "Guru pindahkan jumlah setiap set ke ayat mendatar",
+      "practice": "Murid bina dan tulis lima ayat matematik daripada gambar",
+      "support": "Gunakan jalur tiga petak dan simbol siap",
+      "closure": "Baca satu ayat matematik",
+      "assessment": "Rekod pencapaian kriteria: 4/5 ayat tambah lengkap ditulis tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 ayat tambah lengkap ditulis tepat",
+      "activity_book_ref": "19–21"
+    },
+    {
+      "pdp": "027",
+      "unit": 3,
+      "title": "Tambah bentuk lazim",
+      "textbook_page": "28–31",
+      "sp": [
+        "3.2.2(ii)"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "objective": "4/5 operasi ditulis dengan kedudukan betul",
+      "success_criterion": "4/5 operasi ditulis dengan kedudukan betul",
+      "materials": "Jadual sa-puluh, kad digit",
+      "induction": "Banding susunan mendatar dan menegak",
+      "guided": "Guru letak digit mengikut lajur dan simbol pada kedudukan sesuai",
+      "practice": "Murid tukar lima ayat tambah kepada bentuk lazim dan kira hasil",
+      "support": "Gunakan petak lajur berwarna",
+      "closure": "Semak susunan digit",
+      "assessment": "Rekod pencapaian kriteria: 4/5 operasi ditulis dengan kedudukan betul. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 operasi ditulis dengan kedudukan betul",
+      "activity_book_ref": "19–23"
+    },
+    {
+      "pdp": "028",
+      "unit": 3,
+      "title": "Tambah dengan membilang terus",
+      "textbook_page": "30–31",
+      "sp": [
+        "3.1.2",
+        "3.2.2(i)"
+      ],
+      "sk": [
+        "3.1",
+        "3.2"
+      ],
+      "objective": "4/5 jumlah dalam lingkungan 20 tepat",
+      "success_criterion": "4/5 jumlah dalam lingkungan 20 tepat",
+      "materials": "Garis nombor, penanda",
+      "induction": "Letakkan penanda pada nombor 5",
+      "guided": "Guru modelkan bergerak ke kanan sebanyak nombor kedua",
+      "practice": "Murid selesaikan lima operasi dengan lompatan dan tulis hasil",
+      "support": "Gunakan garis nombor besar dan langkah berpenanda",
+      "closure": "Terangkan satu pergerakan",
+      "assessment": "Rekod pencapaian kriteria: 4/5 jumlah dalam lingkungan 20 tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 jumlah dalam lingkungan 20 tepat",
+      "activity_book_ref": "22–23"
+    },
+    {
+      "pdp": "029",
+      "unit": 3,
+      "title": "Pasangan nombor tambah",
+      "textbook_page": "28–30",
+      "sp": [
+        "3.3.2(i)",
+        "3.3.2(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "4/5 pasangan nombor membentuk jumlah sasaran",
+      "success_criterion": "4/5 pasangan nombor membentuk jumlah sasaran",
+      "materials": "Pembilang dua warna, kad jumlah",
+      "induction": "Pisahkan enam pembilang kepada dua warna",
+      "guided": "Guru ubah pembahagian tanpa menukar jumlah",
+      "practice": "Murid cari lima pasangan nombor bagi jumlah yang ditetapkan",
+      "support": "Gunakan dulang tetap bilangan petak",
+      "closure": "Kongsi satu pasangan nombor",
+      "assessment": "Rekod pencapaian kriteria: 4/5 pasangan nombor membentuk jumlah sasaran. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 pasangan nombor membentuk jumlah sasaran",
+      "activity_book_ref": "19–23"
+    },
+    {
+      "pdp": "030",
+      "unit": 3,
+      "title": "Tambah dua digit tanpa kumpul semula",
+      "textbook_page": "32–35",
+      "sp": [
+        "3.3.1"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "4/5 operasi dua digit tambah satu digit tepat",
+      "success_criterion": "4/5 operasi dua digit tambah satu digit tepat",
+      "materials": "Blok puluh-sa, jadual lajur",
+      "induction": "Bina 12 dan tambah dua blok sa",
+      "guided": "Guru kekalkan lajur puluh dan gabungkan blok sa tanpa melebihi sembilan",
+      "practice": "Murid selesaikan lima operasi tanpa kumpul semula melalui blok dan nombor",
+      "support": "Berikan blok puluh siap dan contoh lajur",
+      "closure": "Semak nilai puluh satu jawapan",
+      "assessment": "Rekod pencapaian kriteria: 4/5 operasi dua digit tambah satu digit tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 operasi dua digit tambah satu digit tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "031",
+      "unit": 3,
+      "title": "Pengukuhan fakta asas tambah",
+      "textbook_page": "36",
+      "sp": [
+        "3.3.2(iii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "5/6 hasil tambah tepat",
+      "success_criterion": "5/6 hasil tambah tepat",
+      "materials": "Kad fakta tambah, kad jawapan",
+      "induction": "Pilih satu kad jumlah sasaran",
+      "guided": "Guru bina satu fakta daripada pasangan nombor",
+      "practice": "Murid padankan enam ayat tambah dengan hasil dalam permainan giliran",
+      "support": "Gunakan pembilang sebagai sokongan bukan ujian kepantasan",
+      "closure": "Baca satu fakta tambah",
+      "assessment": "Rekod pencapaian kriteria: 5/6 hasil tambah tepat. Catat jenis bantuan.",
+      "reflection_criterion": "5/6 hasil tambah tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "032",
+      "unit": 4,
+      "title": "Asingkan objek dan cari baki",
+      "textbook_page": "37",
+      "sp": [
+        "4.1.1",
+        "4.1.2(i)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "objective": "4/5 baki objek tepat",
+      "success_criterion": "4/5 baki objek tepat",
+      "materials": "Pembilang besar, dua bekas",
+      "induction": "Tunjuk bekas berisi objek",
+      "guided": "Guru asingkan sebahagian objek dan kira yang masih tinggal",
+      "practice": "Murid lakukan lima arahan asing dan sebut baki",
+      "support": "Gunakan ruang berasingan supaya objek yang ditolak jelas",
+      "closure": "Tunjuk objek yang masih tinggal",
+      "assessment": "Rekod pencapaian kriteria: 4/5 baki objek tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 baki objek tepat",
+      "activity_book_ref": "27–29"
+    },
+    {
+      "pdp": "033",
+      "unit": 4,
+      "title": "Cari baki melalui gambar",
+      "textbook_page": "37–38",
+      "sp": [
+        "4.1.2(ii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "objective": "4/5 baki gambar tepat",
+      "success_criterion": "4/5 baki gambar tepat",
+      "materials": "Kad kumpulan gambar, token penutup",
+      "induction": "Tunjuk gambar kumpulan mainan",
+      "guided": "Guru tutup bilangan yang keluar dan kira gambar terbuka",
+      "practice": "Murid tutup dan tentukan baki bagi lima kad gambar",
+      "support": "Gunakan token besar dan petak jelas",
+      "closure": "Nyatakan satu baki",
+      "assessment": "Rekod pencapaian kriteria: 4/5 baki gambar tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 baki gambar tepat",
+      "activity_book_ref": "27–29"
+    },
+    {
+      "pdp": "034",
+      "unit": 4,
+      "title": "Simbol tolak dan sama dengan",
+      "textbook_page": "38",
+      "sp": [
+        "4.2.1"
+      ],
+      "sk": [
+        "4.2"
+      ],
+      "objective": "4/5 simbol yang hilang dipilih tepat",
+      "success_criterion": "4/5 simbol yang hilang dipilih tepat",
+      "materials": "Kad simbol +, − dan =",
+      "induction": "Banding tindakan tambah dan mengeluarkan objek",
+      "guided": "Guru padankan simbol tolak dengan tindakan mengasing",
+      "practice": "Murid isi simbol tolak atau sama dengan pada lima jalur",
+      "support": "Sediakan kad pilihan dan model tindakan",
+      "closure": "Baca simbol yang dipilih",
+      "assessment": "Rekod pencapaian kriteria: 4/5 simbol yang hilang dipilih tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 simbol yang hilang dipilih tepat",
+      "activity_book_ref": "27–29"
+    },
+    {
+      "pdp": "035",
+      "unit": 4,
+      "title": "Ayat matematik tolak",
+      "textbook_page": "38–39",
+      "sp": [
+        "4.2.2(i)"
+      ],
+      "sk": [
+        "4.2"
+      ],
+      "objective": "4/5 ayat tolak lengkap ditulis tepat",
+      "success_criterion": "4/5 ayat tolak lengkap ditulis tepat",
+      "materials": "Kad situasi, nombor dan simbol",
+      "induction": "Lakon keluarkan dua objek",
+      "guided": "Guru pindahkan bilangan awal, keluar dan baki ke jalur",
+      "practice": "Murid bina lima ayat tolak daripada situasi bergambar",
+      "support": "Gunakan jalur berlabel awal, keluar, baki",
+      "closure": "Baca satu ayat matematik",
+      "assessment": "Rekod pencapaian kriteria: 4/5 ayat tolak lengkap ditulis tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 ayat tolak lengkap ditulis tepat",
+      "activity_book_ref": "27–29"
+    },
+    {
+      "pdp": "036",
+      "unit": 4,
+      "title": "Tolak bentuk lazim",
+      "textbook_page": "38–40",
+      "sp": [
+        "4.2.2(ii)"
+      ],
+      "sk": [
+        "4.2"
+      ],
+      "objective": "4/5 operasi disusun dengan digit dan simbol tepat",
+      "success_criterion": "4/5 operasi disusun dengan digit dan simbol tepat",
+      "materials": "Jadual sa-puluh, kad digit",
+      "induction": "Tunjuk ayat tolak mendatar",
+      "guided": "Guru susun digit dalam lajur dan letak simbol tolak",
+      "practice": "Murid tukarkan lima operasi kepada bentuk lazim lalu kira",
+      "support": "Gunakan petak menegak yang besar",
+      "closure": "Semak kedudukan digit",
+      "assessment": "Rekod pencapaian kriteria: 4/5 operasi disusun dengan digit dan simbol tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 operasi disusun dengan digit dan simbol tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "037",
+      "unit": 4,
+      "title": "Tolak dengan membilang menurun",
+      "textbook_page": "40–43",
+      "sp": [
+        "4.1.2",
+        "4.2.2(i)"
+      ],
+      "sk": [
+        "4.1",
+        "4.2"
+      ],
+      "objective": "4/5 hasil tolak dalam lingkungan 20 tepat",
+      "success_criterion": "4/5 hasil tolak dalam lingkungan 20 tepat",
+      "materials": "Garis nombor, penanda",
+      "induction": "Gerakkan penanda satu langkah ke kiri",
+      "guided": "Guru modelkan bilangan langkah menurun mengikut nombor ditolak",
+      "practice": "Murid selesaikan lima operasi dan catat tempat berhenti",
+      "support": "Gunakan garis nombor dengan anak panah kiri",
+      "closure": "Tunjuk langkah bagi satu operasi",
+      "assessment": "Rekod pencapaian kriteria: 4/5 hasil tolak dalam lingkungan 20 tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 hasil tolak dalam lingkungan 20 tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "038",
+      "unit": 4,
+      "title": "Fakta asas tolak dengan objek dan gambar",
+      "textbook_page": "38–43",
+      "sp": [
+        "4.3.2(i)",
+        "4.3.2(ii)"
+      ],
+      "sk": [
+        "4.3"
+      ],
+      "objective": "4/5 fakta tolak dibina tepat",
+      "success_criterion": "4/5 fakta tolak dibina tepat",
+      "materials": "Kad jumlah, pembilang dua warna",
+      "induction": "Bina satu kumpulan dua warna",
+      "guided": "Guru asingkan satu warna dan padankan operasi",
+      "practice": "Murid pilih lima jumlah dan bina fakta tolak daripada dua bahagian",
+      "support": "Gunakan kad gambar dua bahagian",
+      "closure": "Nyatakan baki daripada satu jumlah",
+      "assessment": "Rekod pencapaian kriteria: 4/5 fakta tolak dibina tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 fakta tolak dibina tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "039",
+      "unit": 4,
+      "title": "Tolak satu digit tanpa kumpul semula",
+      "textbook_page": "44–45",
+      "sp": [
+        "4.3.1"
+      ],
+      "sk": [
+        "4.3"
+      ],
+      "objective": "4/5 operasi dua digit tolak satu digit tepat",
+      "success_criterion": "4/5 operasi dua digit tolak satu digit tepat",
+      "materials": "Blok puluh-sa, jadual lajur",
+      "induction": "Bina 16 dan keluarkan tiga sa",
+      "guided": "Guru tolak blok sa tanpa membuka blok puluh",
+      "practice": "Murid selesaikan lima soalan tanpa kumpul semula menggunakan blok dan angka",
+      "support": "Gunakan blok puluh siap dan pembilang sa",
+      "closure": "Semak bilangan puluh yang tidak berubah",
+      "assessment": "Rekod pencapaian kriteria: 4/5 operasi dua digit tolak satu digit tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 operasi dua digit tolak satu digit tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "040",
+      "unit": 4,
+      "title": "Permainan fakta tolak",
+      "textbook_page": "46",
+      "sp": [
+        "4.2.2(i)",
+        "4.3.2(iii)"
+      ],
+      "sk": [
+        "4.2",
+        "4.3"
+      ],
+      "objective": "5/6 hasil tolak tepat",
+      "success_criterion": "5/6 hasil tolak tepat",
+      "materials": "Papan laluan rekaan, dadu, kad operasi",
+      "induction": "Pilih penanda permainan",
+      "guided": "Guru modelkan giliran dan cara menyemak jawapan",
+      "practice": "Murid jawab enam kad tolak mengikut giliran dengan bahan sokongan jika perlu",
+      "support": "Tiada had masa; beri pilihan menunjuk jawapan",
+      "closure": "Ulang fakta yang memerlukan latihan",
+      "assessment": "Rekod pencapaian kriteria: 5/6 hasil tolak tepat. Catat jenis bantuan.",
+      "reflection_criterion": "5/6 hasil tolak tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "041",
+      "unit": 5,
+      "title": "Mengecam wang RM1 RM5 RM10",
+      "textbook_page": "47–49",
+      "sp": [
+        "5.1.1"
+      ],
+      "sk": [
+        "5.1"
+      ],
+      "objective": "5/6 kad wang dipadankan mengikut denominasi tepat",
+      "success_criterion": "5/6 kad wang dipadankan mengikut denominasi tepat",
+      "materials": "Wang permainan, kad nilai",
+      "induction": "Tunjuk tiga denominasi wang",
+      "guided": "Guru banding angka, warna dan ciri pada setiap wang",
+      "practice": "Murid padankan enam kad dengan tiga denominasi",
+      "support": "Jangan bergantung pada warna sahaja; gunakan angka besar",
+      "closure": "Pilih kad RM5",
+      "assessment": "Rekod pencapaian kriteria: 5/6 kad wang dipadankan mengikut denominasi tepat. Catat jenis bantuan.",
+      "reflection_criterion": "5/6 kad wang dipadankan mengikut denominasi tepat",
+      "activity_book_ref": "35"
+    },
+    {
+      "pdp": "042",
+      "unit": 5,
+      "title": "Menamakan wang kertas",
+      "textbook_page": "48–49",
+      "sp": [
+        "5.1.2"
+      ],
+      "sk": [
+        "5.1"
+      ],
+      "objective": "5/6 wang yang ditunjuk dinamakan tepat",
+      "success_criterion": "5/6 wang yang ditunjuk dinamakan tepat",
+      "materials": "Wang permainan, kad nama nilai",
+      "induction": "Tunjuk satu kad wang secara rawak",
+      "guided": "Guru modelkan nama setiap denominasi",
+      "practice": "Murid namakan enam kad rawak secara lisan atau melalui kad nama",
+      "support": "Sediakan tiga kad nama sebagai sokongan",
+      "closure": "Namakan wang pilihan",
+      "assessment": "Rekod pencapaian kriteria: 5/6 wang yang ditunjuk dinamakan tepat. Catat jenis bantuan.",
+      "reflection_criterion": "5/6 wang yang ditunjuk dinamakan tepat",
+      "activity_book_ref": "35"
+    },
+    {
+      "pdp": "043",
+      "unit": 5,
+      "title": "Simbol Ringgit Malaysia",
+      "textbook_page": "50",
+      "sp": [
+        "5.1.3"
+      ],
+      "sk": [
+        "5.1"
+      ],
+      "objective": "4/5 label wang dilengkapkan dengan RM",
+      "success_criterion": "4/5 label wang dilengkapkan dengan RM",
+      "materials": "Kad simbol, label harga rekaan",
+      "induction": "Lihat simbol pada label harga",
+      "guided": "Guru terangkan kedudukan simbol sebelum angka",
+      "practice": "Murid pilih atau tulis RM bagi lima label harga",
+      "support": "Sediakan cop huruf RM atau kad surih",
+      "closure": "Baca satu label harga",
+      "assessment": "Rekod pencapaian kriteria: 4/5 label wang dilengkapkan dengan RM. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 label wang dilengkapkan dengan RM",
+      "activity_book_ref": "36"
+    },
+    {
+      "pdp": "044",
+      "unit": 5,
+      "title": "Nilai wang kertas",
+      "textbook_page": "50–51",
+      "sp": [
+        "5.1.4"
+      ],
+      "sk": [
+        "5.1"
+      ],
+      "objective": "5/6 nilai wang dipilih tepat",
+      "success_criterion": "5/6 nilai wang dipilih tepat",
+      "materials": "Kad nilai RM1 RM5 RM10, wang permainan",
+      "induction": "Banding dua denominasi",
+      "guided": "Guru modelkan memilih wang sepadan dengan harga tepat",
+      "practice": "Murid padankan enam harga kepada sekeping wang yang sama nilai",
+      "support": "Gunakan tiga pilihan wang dan label angka besar",
+      "closure": "Pilih wang bagi satu harga",
+      "assessment": "Rekod pencapaian kriteria: 5/6 nilai wang dipilih tepat. Catat jenis bantuan.",
+      "reflection_criterion": "5/6 nilai wang dipilih tepat",
+      "activity_book_ref": "36–37"
+    },
+    {
+      "pdp": "045",
+      "unit": 5,
+      "title": "Kuiz wang dan kedai simulasi",
+      "textbook_page": "52",
+      "sp": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3",
+        "5.1.4"
+      ],
+      "sk": [
+        "5.1"
+      ],
+      "objective": "5/6 tugasan pengecaman, nama dan nilai tepat",
+      "success_criterion": "5/6 tugasan pengecaman, nama dan nilai tepat",
+      "materials": "Kaunter mainan, label harga, wang permainan",
+      "induction": "Susun tiga barang dengan harga tepat",
+      "guided": "Guru modelkan memilih sekeping wang yang sepadan",
+      "practice": "Murid jawab enam tugasan pelbagai jenis dan jalankan pembelian tanpa baki",
+      "support": "Gunakan kad pilihan dan kaunter dalam jangkauan",
+      "closure": "Semak satu transaksi simulasi",
+      "assessment": "Rekod pencapaian kriteria: 5/6 tugasan pengecaman, nama dan nilai tepat. Catat jenis bantuan.",
+      "reflection_criterion": "5/6 tugasan pengecaman, nama dan nilai tepat",
+      "activity_book_ref": null
+    },
+    {
+      "pdp": "046",
+      "unit": 6,
+      "title": "Nombor pada muka jam",
+      "textbook_page": "53–54",
+      "sp": [
+        "6.1.1"
+      ],
+      "sk": [
+        "6.1"
+      ],
+      "objective": "8/12 nombor pada muka jam dikenal pasti",
+      "success_criterion": "8/12 nombor pada muka jam dikenal pasti",
+      "materials": "Jam model, kad nombor",
+      "induction": "Tunjuk jam analog",
+      "guided": "Guru susun nombor mengikut kedudukan pada muka jam",
+      "practice": "Murid lengkapkan nombor yang hilang pada jam model",
+      "support": "Gunakan nombor besar dan petunjuk empat penjuru",
+      "closure": "Tunjuk kedudukan nombor 12",
+      "assessment": "Rekod pencapaian kriteria: 8/12 nombor pada muka jam dikenal pasti. Catat jenis bantuan.",
+      "reflection_criterion": "8/12 nombor pada muka jam dikenal pasti",
+      "activity_book_ref": "39"
+    },
+    {
+      "pdp": "047",
+      "unit": 6,
+      "title": "Jarum jam dan minit",
+      "textbook_page": "54",
+      "sp": [
+        "6.1.2(i)",
+        "6.1.2(ii)"
+      ],
+      "sk": [
+        "6.1"
+      ],
+      "objective": "4/5 pengecaman jarum tepat",
+      "success_criterion": "4/5 pengecaman jarum tepat",
+      "materials": "Jam model, kad panjang dan pendek",
+      "induction": "Banding dua jalur berlainan panjang",
+      "guided": "Guru tunjuk jarum pendek dan panjang pada jam",
+      "practice": "Murid tunjuk jarum yang dinamakan dalam lima kedudukan",
+      "support": "Gunakan warna kontras dan label jarum",
+      "closure": "Nyatakan jarum yang menunjukkan jam",
+      "assessment": "Rekod pencapaian kriteria: 4/5 pengecaman jarum tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 pengecaman jarum tepat",
+      "activity_book_ref": "39"
+    },
+    {
+      "pdp": "048",
+      "unit": 6,
+      "title": "Menyebut waktu dalam jam",
+      "textbook_page": "55",
+      "sp": [
+        "6.1.3"
+      ],
+      "sk": [
+        "6.1"
+      ],
+      "objective": "4/5 waktu tepat pada jam analog disebut",
+      "success_criterion": "4/5 waktu tepat pada jam analog disebut",
+      "materials": "Jam boleh laras, kad waktu",
+      "induction": "Tetapkan jarum panjang pada 12",
+      "guided": "Guru ubah jarum pendek dan sebut waktu",
+      "practice": "Murid baca lima muka jam berbeza dalam unit jam",
+      "support": "Kekalkan jarum minit pada 12 dan beri kad pilihan",
+      "closure": "Sebut waktu pada jam pilihan",
+      "assessment": "Rekod pencapaian kriteria: 4/5 waktu tepat pada jam analog disebut. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 waktu tepat pada jam analog disebut",
+      "activity_book_ref": "40"
+    },
+    {
+      "pdp": "049",
+      "unit": 6,
+      "title": "Menulis waktu dalam jam",
+      "textbook_page": "56",
+      "sp": [
+        "6.1.4"
+      ],
+      "sk": [
+        "6.1"
+      ],
+      "objective": "4/5 waktu pada jam analog ditulis tepat",
+      "success_criterion": "4/5 waktu pada jam analog ditulis tepat",
+      "materials": "Kad muka jam, lembaran waktu",
+      "induction": "Tunjuk muka jam pukul tujuh",
+      "guided": "Guru modelkan membaca jarum pendek sebelum menulis",
+      "practice": "Murid tulis waktu bagi lima muka jam",
+      "support": "Gunakan rangka Pukul dan kad angka",
+      "closure": "Baca satu jawapan yang ditulis",
+      "assessment": "Rekod pencapaian kriteria: 4/5 waktu pada jam analog ditulis tepat. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 waktu pada jam analog ditulis tepat",
+      "activity_book_ref": "41"
+    },
+    {
+      "pdp": "050",
+      "unit": 6,
+      "title": "Melukis jarum pendek",
+      "textbook_page": "57",
+      "sp": [
+        "6.1.5"
+      ],
+      "sk": [
+        "6.1"
+      ],
+      "objective": "4/5 jarum pendek dilukis pada nombor yang betul",
+      "success_criterion": "4/5 jarum pendek dilukis pada nombor yang betul",
+      "materials": "Muka jam dengan jarum minit siap, pembaris",
+      "induction": "Tunjuk muka jam tanpa jarum pendek",
+      "guided": "Guru modelkan garis dari titik tengah ke nombor waktu",
+      "practice": "Murid lukis jarum pendek untuk lima waktu diberikan",
+      "support": "Gunakan titik tengah besar dan pembaris mudah pegang",
+      "closure": "Semak panjang jarum yang dilukis",
+      "assessment": "Rekod pencapaian kriteria: 4/5 jarum pendek dilukis pada nombor yang betul. Catat jenis bantuan.",
+      "reflection_criterion": "4/5 jarum pendek dilukis pada nombor yang betul",
+      "activity_book_ref": "42–43"
+    },
+    {
+      "pdp": "051",
+      "unit": 6,
+      "title": "Permainan pengukuhan waktu",
+      "textbook_page": "58",
+      "sp": [
+        "6.1.3",
+        "6.1.4",
+        "6.1.5"
+      ],
+      "sk": [
+        "6.1"
+      ],
+      "objective": "5/6 tugasan sebut, tulis atau lukis waktu tepat",
+      "success_criterion": "5/6 tugasan sebut, tulis atau lukis waktu tepat",
+      "materials": "Kad jam besar, bekas cabutan, penanda",
+      "induction": "Cabut satu kad muka jam",
+      "guided": "Guru modelkan tiga jenis tugasan mengikut kad",
+      "practice": "Murid cabut enam kad dan jawab mengikut tugasan",
+      "support": "Gantikan cabutan magnet dengan kad besar; beri masa mencukupi",
+      "closure": "Pilih satu waktu rutin harian",
+      "assessment": "Rekod pencapaian kriteria: 5/6 tugasan sebut, tulis atau lukis waktu tepat. Catat jenis bantuan.",
+      "reflection_criterion": "5/6 tugasan sebut, tulis atau lukis waktu tepat",
+      "activity_book_ref": null
+    }
+  ]
+}
