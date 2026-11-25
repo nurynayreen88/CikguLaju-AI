@@ -32,7 +32,8 @@
   "sources": {
     "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/023-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-ASAS-3M-19-5-2016-1.pdf",
     "textbook": "https://fliphtml5.com/gutjj/rzil/Asas_3_Bahasa_Melayu_(Masalah_Pembelajaran)_Tahun_2/",
-    "activity_book": "Rujukan BA daripada nota BT, belum semak naskhah BA bebas."
+    "activity_book": "Rujukan BA daripada nota BT, belum semak naskhah BA bebas.",
+    "dskp_audit": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
   },
   "notes": "Urutan draf selepas Tema 1 (PdP 001–015). Aktiviti ialah olahan pedagogi asli; pemetaan pengukuhan tanpa SP cetak adalah cadangan. Sahkan semua kod, huraian penuh SK/SP, agihan masa, RPT dan penjana sebelum READY. Tiada perubahan produksi.",
   "lessons": [
@@ -59,7 +60,8 @@
       "closure": "Ulang satu arahan dengan rakan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 arahan rakan diikuti. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 arahan rakan diikuti",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "017",
@@ -84,7 +86,8 @@
       "closure": "Sebut suku kata akhir satu perkataan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 kedudukan suku kata dikenal pasti. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 kedudukan suku kata dikenal pasti",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "018",
@@ -109,7 +112,8 @@
       "closure": "Pilih KV dan tulis semula",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 KV ditulis dengan urutan huruf tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 KV ditulis dengan urutan huruf tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "019",
@@ -134,7 +138,8 @@
       "closure": "Padankan hasil dengan gambar",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan dua KV ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 perkataan dua KV ditulis",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "020",
@@ -159,7 +164,8 @@
       "closure": "Baca satu nama yang ditulis",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan tiga KV ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 perkataan tiga KV ditulis",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "021",
@@ -184,7 +190,8 @@
       "closure": "Nyatakan watak cerita",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 peristiwa diceritakan mengikut urutan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 peristiwa diceritakan mengikut urutan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "022",
@@ -209,7 +216,8 @@
       "closure": "Baca nama sayur pilihan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 nama sayur tiga KV dibatang. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 nama sayur tiga KV dibatang",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "023",
@@ -234,7 +242,8 @@
       "closure": "Banding tulisan dengan kad semak",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan lengkap ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 perkataan lengkap ditulis",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "024",
@@ -259,7 +268,8 @@
       "closure": "Letakkan satu label pada gambar",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 frasa disalin dengan ruang antara perkataan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 frasa disalin dengan ruang antara perkataan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "025",
@@ -284,7 +294,8 @@
       "closure": "Nyatakan satu aktiviti yang disukai",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons aktiviti keluarga diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 respons aktiviti keluarga diberikan",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "026",
@@ -309,7 +320,8 @@
       "closure": "Tunjuk gambar tempat selamat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 soalan tentang gambar dijawab. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 soalan tentang gambar dijawab",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "027",
@@ -334,7 +346,8 @@
       "closure": "Baca kad kegemaran",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan dua KV dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 perkataan dua KV dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "028",
@@ -359,7 +372,8 @@
       "closure": "Baca satu kad tanpa gambar",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan tiga KV dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 perkataan tiga KV dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "029",
@@ -384,7 +398,8 @@
       "closure": "Semak ruang antara kata",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 frasa dua atau tiga KV disalin. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 frasa dua atau tiga KV disalin",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "030",
@@ -409,7 +424,8 @@
       "closure": "Pilih satu hobi watak",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 jawapan aktiviti masa lapang diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 jawapan aktiviti masa lapang diberikan",
-      "source_note": "DSKP 4.1.1(iii) digunakan; nota BT mencetak (ii) walaupun fokus masa lapang."
+      "source_note": "DSKP 4.1.1(iii) digunakan; nota BT mencetak (ii) walaupun fokus masa lapang.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "031",
@@ -434,7 +450,8 @@
       "closure": "Tanda satu ayat lengkap",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 ayat disalin dengan perkataan lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 ayat disalin dengan perkataan lengkap",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "032",
@@ -459,7 +476,8 @@
       "closure": "Nyatakan hasil akhir",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3 langkah diceritakan mengikut urutan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3 langkah diceritakan mengikut urutan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "033",
@@ -484,7 +502,8 @@
       "closure": "Baca label di lokasi sebenar",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 label dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 label dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "034",
@@ -509,7 +528,8 @@
       "closure": "Padankan satu hasil dengan bahan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan disurih jelas. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 perkataan disurih jelas",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "035",
@@ -534,7 +554,8 @@
       "closure": "Semak label yang hilang huruf",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 perkataan disalin lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 perkataan disalin lengkap",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "036",
@@ -559,7 +580,8 @@
       "closure": "Kongsi satu hobi pilihan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons hobi diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 respons hobi diberikan",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "037",
@@ -584,7 +606,8 @@
       "closure": "Pilih satu fungsi robot",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 respons tentang robot betul. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 respons tentang robot betul",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "038",
@@ -609,7 +632,8 @@
       "closure": "Nyatakan perasaan watak",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 kejadian diceritakan berurutan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 kejadian diceritakan berurutan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "039",
@@ -634,17 +658,18 @@
       "closure": "Bunyikan bahagian yang dipilih",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 jawapan awal atau akhir tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 jawapan awal atau akhir tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "040",
       "theme": 3,
       "unit": 8,
       "sp": [
-        "3.2.3"
+        "3.1.2"
       ],
       "sk": [
-        "3.2"
+        "3.1"
       ],
       "textbook_page": "44",
       "activity_book_ref": "36–37",
@@ -654,13 +679,17 @@
       "materials": "Kad gambar, papan suku kata",
       "induction": "Kenal gambar dan sebut kata",
       "guided": "Guru tunjuk cara menggabungkan dua KV sebelum menulis",
-      "practice": "Murid tulis enam perkataan berdasarkan gambar, bukan menyalin ayat",
+      "practice": "Murid tulis enam perkataan berdasarkan gambar, bukan menyalin ayat Gunakan perkataan dua suku kata terbuka sahaja.",
       "support": "Bank suku kata dan penunjuk",
       "closure": "Semak satu perkataan dengan kad jawapan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan ditulis dengan huruf lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 perkataan ditulis dengan huruf lengkap",
-      "source_note": "DSKP Asas 3M T2 hlm. 30 menunjukkan 3.2.3 tanpa huraian dan 3.2.4 dengan huraian penulisan. Kod BT perlu disemak silang.",
-      "status": "KONFLIK_PENOMBORAN_DSKP"
+      "source_note": "Kod BT 3.2.3 tidak mempunyai huraian jelas dalam DSKP hlm. 30. Cadangan kod DSKP lain berdasarkan kemahiran sebenar; kod asal dikekalkan untuk semakan.",
+      "status": "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN",
+      "original_sp": [
+        "3.2.3"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "041",
@@ -685,7 +714,8 @@
       "closure": "Baca nama objek terakhir",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 nama objek dua KV ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 nama objek dua KV ditulis",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "042",
@@ -710,7 +740,8 @@
       "closure": "Padankan satu pekerjaan dengan alat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 jawapan pekerjaan watak diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 jawapan pekerjaan watak diberikan",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "043",
@@ -735,7 +766,8 @@
       "closure": "Nyatakan tindakan yang sesuai",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 jawapan berdasarkan gambar tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 jawapan berdasarkan gambar tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "044",
@@ -760,7 +792,8 @@
       "closure": "Nyatakan tujuan kompos",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3 langkah diceritakan semula. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3 langkah diceritakan semula",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "045",
@@ -785,7 +818,8 @@
       "closure": "Baca kata yang dipilih rakan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 perkataan tiga KV dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 perkataan tiga KV dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "046",
@@ -793,11 +827,11 @@
       "unit": 9,
       "sp": [
         "2.2.1",
-        "3.2.3"
+        "3.1.2"
       ],
       "sk": [
         "2.2",
-        "3.2"
+        "3.1"
       ],
       "textbook_page": "50",
       "activity_book_ref": null,
@@ -807,13 +841,18 @@
       "materials": "Grid besar, kad gambar",
       "induction": "Teka gambar objek",
       "guided": "Guru modelkan pengisian petak bagi satu jawapan",
-      "practice": "Murid pilih dan tulis enam kata dalam grid",
+      "practice": "Murid pilih dan tulis enam kata dalam grid Gunakan perkataan dua suku kata terbuka sahaja.",
       "support": "Sediakan huruf awal dan kad kata",
       "closure": "Baca dua jawapan silang",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 jawapan dibaca dan ditulis betul. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 jawapan dibaca dan ditulis betul",
-      "source_note": "DSKP Asas 3M T2 hlm. 30 menunjukkan 3.2.3 tanpa huraian dan 3.2.4 dengan huraian penulisan. Kod BT perlu disemak silang.",
-      "status": "KONFLIK_PENOMBORAN_DSKP"
+      "source_note": "Kod BT 3.2.3 tidak mempunyai huraian jelas dalam DSKP hlm. 30. Cadangan kod DSKP lain berdasarkan kemahiran sebenar; kod asal dikekalkan untuk semakan.",
+      "status": "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN",
+      "original_sp": [
+        "2.2.1",
+        "3.2.3"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "047",
@@ -838,7 +877,8 @@
       "closure": "Sampaikan satu pesanan sebelum rehat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 arahan kebersihan dilafazkan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 arahan kebersihan dilafazkan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "048",
@@ -863,7 +903,8 @@
       "closure": "Tunjuk satu perbuatan membantu",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 soalan cerita dijawab. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 soalan cerita dijawab",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "049",
@@ -888,7 +929,8 @@
       "closure": "Ucap satu tindakan kerjasama",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3 peristiwa diceritakan mengikut urutan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3 peristiwa diceritakan mengikut urutan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "050",
@@ -913,7 +955,8 @@
       "closure": "Tanda jarak antara perkataan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 ayat disurih lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 ayat disurih lengkap",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "051",
@@ -938,7 +981,8 @@
       "closure": "Baca satu ayat sendiri",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 ayat disalin lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 ayat disalin lengkap",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "052",
@@ -963,7 +1007,8 @@
       "closure": "Tunjuk satu amalan selamat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 arahan guru diikuti. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 arahan guru diikuti",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "053",
@@ -988,7 +1033,8 @@
       "closure": "Kemas bekas mengikut arahan rakan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 arahan rakan diikuti. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 arahan rakan diikuti",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "054",
@@ -1013,7 +1059,8 @@
       "closure": "Pilih satu ayat untuk bacaan ulangan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat tunggal dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat tunggal dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "055",
@@ -1038,7 +1085,8 @@
       "closure": "Baca satu ayat kepada rakan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat yang mengandungi dan dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat yang mengandungi dan dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "056",
@@ -1063,7 +1111,8 @@
       "closure": "Tunjukkan satu ayat lengkap",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat disurih lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat disurih lengkap",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "057",
@@ -1088,7 +1137,8 @@
       "closure": "Pilih ayat untuk dibaca",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat disalin tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat disalin tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "058",
@@ -1113,7 +1163,8 @@
       "closure": "Nyatakan satu cara mengirim berita",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 peristiwa diceritakan dalam urutan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 peristiwa diceritakan dalam urutan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "059",
@@ -1138,7 +1189,8 @@
       "closure": "Baca ayat pilihan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat dengan kata dan dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat dengan kata dan dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "060",
@@ -1163,7 +1215,8 @@
       "closure": "Baca satu ayat yang siap",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/5 ayat tunggal dilengkapkan tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/5 ayat tunggal dilengkapkan tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "061",
@@ -1188,7 +1241,8 @@
       "closure": "Padankan kad nama dengan gambar",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 nama ahli keluarga watak diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 nama ahli keluarga watak diberikan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "062",
@@ -1213,7 +1267,8 @@
       "closure": "Nyatakan satu alat pekerjaan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons pekerjaan diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 respons pekerjaan diberikan",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "063",
@@ -1238,7 +1293,8 @@
       "closure": "Baca satu ayat dan semak titik",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat bermakna ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat bermakna ditulis",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "064",
@@ -1263,7 +1319,8 @@
       "closure": "Tunjuk satu peraturan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 jawapan tentang peraturan betul. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 jawapan tentang peraturan betul",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "065",
@@ -1288,7 +1345,8 @@
       "closure": "Baca ayat terpanjang mengikut kemampuan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat tunggal dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat tunggal dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "066",
@@ -1313,7 +1371,8 @@
       "closure": "Semak urutan tiga KV",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan tiga KV ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 perkataan tiga KV ditulis",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "067",
@@ -1338,7 +1397,8 @@
       "closure": "Banding satu frasa dengan contoh",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 frasa disalin lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 frasa disalin lengkap",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "068",
@@ -1363,7 +1423,8 @@
       "closure": "Pilih satu aktiviti tanpa skrin",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 jawapan aktiviti masa lapang diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 jawapan aktiviti masa lapang diberikan",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "069",
@@ -1388,7 +1449,8 @@
       "closure": "Namakan satu peralatan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 soalan cerita dijawab. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 soalan cerita dijawab",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "070",
@@ -1413,7 +1475,8 @@
       "closure": "Baca satu ayat pilihan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat dibaca tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat dibaca tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "071",
@@ -1438,7 +1501,8 @@
       "closure": "Baca satu ayat tanpa warna bantuan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat dibaca termasuk dan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat dibaca termasuk dan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "072",
@@ -1463,7 +1527,8 @@
       "closure": "Tanda ayat paling kemas",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 ayat disalin lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 ayat disalin lengkap",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "073",
@@ -1488,7 +1553,8 @@
       "closure": "Baca satu label",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/5 frasa disalin dengan tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/5 frasa disalin dengan tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "074",
@@ -1513,7 +1579,8 @@
       "closure": "Padankan pekerjaan dan alat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons pekerjaan diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 respons pekerjaan diberikan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "075",
@@ -1538,7 +1605,8 @@
       "closure": "Pilih gambar kawasan selamat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3 langkah diceritakan mengikut urutan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3 langkah diceritakan mengikut urutan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "076",
@@ -1563,7 +1631,8 @@
       "closure": "Baca satu ayat tanpa bantuan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 ayat tunggal dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 ayat tunggal dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "077",
@@ -1588,7 +1657,8 @@
       "closure": "Semak nota pesanan dengan rakan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 frasa bermakna ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 frasa bermakna ditulis",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "078",
@@ -1613,7 +1683,8 @@
       "closure": "Nyatakan satu fungsi peralatan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/5 jawapan teka-teki lisan tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/5 jawapan teka-teki lisan tepat",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "079",
@@ -1638,7 +1709,8 @@
       "closure": "Nyatakan satu kegunaan wang",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 maklumat cerita diceritakan semula. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 maklumat cerita diceritakan semula",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "080",
@@ -1663,7 +1735,8 @@
       "closure": "Baca satu ayat sebagai pelanggan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat dengan dan dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat dengan dan dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "081",
@@ -1688,7 +1761,8 @@
       "closure": "Padankan satu ayat dengan gambar barang",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat disurih lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat disurih lengkap",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "082",
@@ -1713,7 +1787,8 @@
       "closure": "Baca satu ayat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 ayat disalin tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 ayat disalin tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "083",
@@ -1738,7 +1813,8 @@
       "closure": "Baca ayat terakhir kepada rakan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat tunggal ditulis dengan pilihan kata tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat tunggal ditulis dengan pilihan kata tepat",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "084",
@@ -1763,7 +1839,8 @@
       "closure": "Tunjukkan tindakan menunggu giliran",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 soalan cerita dijawab. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2/3 soalan cerita dijawab",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "085",
@@ -1788,17 +1865,18 @@
       "closure": "Baca satu ayat resipi",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 ayat tunggal dibaca. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 ayat tunggal dibaca",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "086",
       "theme": 6,
       "unit": 17,
       "sp": [
-        "3.2.3"
+        "3.4.2"
       ],
       "sk": [
-        "3.2"
+        "3.4"
       ],
       "textbook_page": "94",
       "activity_book_ref": "78",
@@ -1808,13 +1886,17 @@
       "materials": "Gambar gerai, kad kata kerja",
       "induction": "Lihat gambar pelanggan membeli makanan",
       "guided": "Guru tunjuk cara membina ayat mudah berdasarkan gambar",
-      "practice": "Murid tulis empat ayat menggunakan kata sesuai",
+      "practice": "Murid tulis empat ayat menggunakan kata sesuai Gunakan ayat tunggal yang mengandungi perkataan dua dan tiga suku kata terbuka.",
       "support": "Rangka subjek dan kata kerja; tiada salinan penuh",
       "closure": "Semak titik pada ayat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat berkaitan gambar ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat berkaitan gambar ditulis",
-      "source_note": "DSKP Asas 3M T2 hlm. 30 menunjukkan 3.2.3 tanpa huraian dan 3.2.4 dengan huraian penulisan. Kod BT perlu disemak silang.",
-      "status": "KONFLIK_PENOMBORAN_DSKP"
+      "source_note": "Kod BT 3.2.3 tidak mempunyai huraian jelas dalam DSKP hlm. 30. Cadangan kod DSKP lain berdasarkan kemahiran sebenar; kod asal dikekalkan untuk semakan.",
+      "status": "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN",
+      "original_sp": [
+        "3.2.3"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "087",
@@ -1839,7 +1921,8 @@
       "closure": "Baca satu label hasil tani",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 frasa disalin tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 frasa disalin tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "088",
@@ -1864,7 +1947,8 @@
       "closure": "Nyatakan satu tugas juruwang",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 jawapan pekerjaan watak diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 jawapan pekerjaan watak diberikan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "089",
@@ -1889,7 +1973,8 @@
       "closure": "Pilih tindakan jujur dalam jualan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 soalan berdasarkan cerita dijawab. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 soalan berdasarkan cerita dijawab",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "090",
@@ -1914,7 +1999,8 @@
       "closure": "Nyatakan tujuan tabung",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3 langkah diceritakan semula. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3 langkah diceritakan semula",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "091",
@@ -1939,7 +2025,8 @@
       "closure": "Baca satu kad tanpa petunjuk",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 perkataan dibaca tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 perkataan dibaca tepat",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "092",
@@ -1964,7 +2051,8 @@
       "closure": "Baca satu nasihat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat tunggal disalin lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat tunggal disalin lengkap",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "093",
@@ -1989,7 +2077,8 @@
       "closure": "Kongsi satu aktiviti pilihan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons aktiviti masa lapang diberikan. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "2 respons aktiviti masa lapang diberikan",
-      "source_note": null
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "094",
@@ -2015,7 +2104,8 @@
       "closure": "Baca frasa akhir",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/4 frasa dibaca dengan perkataan sasaran tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/4 frasa dibaca dengan perkataan sasaran tepat",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "095",
@@ -2023,11 +2113,11 @@
       "unit": 18,
       "sp": [
         "2.1.5",
-        "3.2.3"
+        "3.1.2"
       ],
       "sk": [
         "2.1",
-        "3.2"
+        "3.1"
       ],
       "textbook_page": "103",
       "activity_book_ref": null,
@@ -2037,13 +2127,18 @@
       "materials": "Kad dua suku kata, lembaran warna",
       "induction": "Pilih dua kad untuk membentuk kata",
       "guided": "Guru modelkan mencari awal dan akhir berdasarkan gambar",
-      "practice": "Murid pilih dan tulis enam perkataan bermakna",
+      "practice": "Murid pilih dan tulis enam perkataan bermakna Gunakan perkataan dua suku kata terbuka sahaja.",
       "support": "Sediakan dua pilihan bagi setiap suku kata",
       "closure": "Semak satu jawapan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan dilengkap dan ditulis tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 perkataan dilengkap dan ditulis tepat",
-      "source_note": "DSKP Asas 3M T2 hlm. 30 menunjukkan 3.2.3 tanpa huraian dan 3.2.4 dengan huraian penulisan. Kod BT perlu disemak silang.",
-      "status": "KONFLIK_PENOMBORAN_DSKP"
+      "source_note": "Kod BT 3.2.3 tidak mempunyai huraian jelas dalam DSKP hlm. 30. Cadangan kod DSKP lain berdasarkan kemahiran sebenar; kod asal dikekalkan untuk semakan.",
+      "status": "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN",
+      "original_sp": [
+        "2.1.5",
+        "3.2.3"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "096",
@@ -2070,7 +2165,8 @@
       "closure": "Baca satu frasa yang dibina",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 frasa bermakna ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/5 frasa bermakna ditulis",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "097",
@@ -2096,7 +2192,8 @@
       "closure": "Baca perkataan yang dipilih rakan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan dibentuk dan dibatang tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 perkataan dibentuk dan dibatang tepat",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     },
     {
       "pdp": "098",
@@ -2121,7 +2218,48 @@
       "closure": "Baca semula satu ayat pilihan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 ayat dibaca dengan tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 ayat dibaca dengan tepat",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
     }
-  ]
+  ],
+  "content_standards": {
+    "1.1": "Arahan lisan dalam situasi berbeza.",
+    "1.2": "Pemahaman cerita dan penceritaan semula.",
+    "2.1": "Gabungan dan ejaan suku kata.",
+    "2.2": "Bacaan mekanis.",
+    "3.1": "Tulisan suku kata dan perkataan.",
+    "3.2": "Latihan tulisan mekanis.",
+    "3.3": "Penghasilan frasa bertulis.",
+    "3.4": "Penghasilan ayat tunggal.",
+    "4.1": "Komunikasi tentang keluarga."
+  },
+  "learning_standards": {
+    "1.1.1(i)": "Respons kepada arahan guru.",
+    "1.1.1(ii)": "Respons kepada arahan rakan.",
+    "1.1.2": "Dengar dan ucap arahan mengikut situasi.",
+    "1.2.1": "Respons kepada cerita lisan dengan satu gambar.",
+    "1.2.2": "Cerita semula bahan yang didengar berbantukan media.",
+    "2.1.1": "Eja dan bunyikan KV.",
+    "2.1.2": "Eja serta gabungkan V+KV.",
+    "2.1.3": "Eja serta gabungkan KV+KV.",
+    "2.1.4": "Eja serta gabungkan KV+KV+KV.",
+    "2.1.5": "Kenal pasti suku kata permulaan dan penghujung.",
+    "2.2.1": "Baca kata dua suku kata terbuka.",
+    "2.2.2": "Baca kata tiga suku kata terbuka.",
+    "2.2.3": "Baca ayat tunggal bersuku kata terbuka.",
+    "2.2.4": "Baca ayat bersuku kata terbuka dengan penghubung dan.",
+    "3.1.1": "Tulis KV.",
+    "3.1.2": "Tulis kata dua suku kata terbuka.",
+    "3.1.3": "Tulis kata tiga suku kata terbuka.",
+    "3.2.1": "Jejak tulisan KV, kata dan ayat.",
+    "3.2.2": "Salin KV, kata dan ayat.",
+    "3.3.1": "Salin frasa berkataan dua atau tiga suku kata.",
+    "3.3.2": "Tulis frasa berkataan dua atau tiga suku kata.",
+    "3.4.1": "Salin ayat tunggal berkataan dua atau tiga suku kata.",
+    "3.4.2": "Tulis ayat tunggal berkataan dua atau tiga suku kata.",
+    "4.1.1(i)": "Soal jawab nama ahli keluarga.",
+    "4.1.1(ii)": "Soal jawab pekerjaan ahli keluarga.",
+    "4.1.1(iii)": "Soal jawab kegiatan masa lapang ahli keluarga."
+  },
+  "standard_text_kind": "Huraian ringkas parafrasa untuk audit, bukan petikan rasmi"
 }
