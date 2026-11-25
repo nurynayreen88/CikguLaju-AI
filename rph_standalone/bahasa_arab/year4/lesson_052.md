@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** هل عندك ...؟ نعم، عندي ... / لا، ما عندي ...
 **Objektif pembelajaran:** Murid dapat membaca sekurang-kurangnya tiga daripada empat pertuturan dialog dengan intonasi jelas.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 pertuturan dialog dengan intonasi jelas.
 
 **Set induksi:** Guru menunjukkan kad sebuah telefon dan bertanya هل عندك هاتف؟
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan dialog tanya-jawab milik pada halaman 98, termasuk bentuk عندي dan هل عندك, tanpa menganggap kad pengayaan sebagai petikan buku.
+**Aktiviti 1 — Baca dialog عندي dan هل عندك:** Guru membimbing bacaan dialog tanya-jawab milik pada halaman 98, termasuk bentuk عندي dan هل عندك, tanpa menganggap kad pengayaan sebagai petikan buku.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengambil peranan penanya dan penjawab dengan kad objek; mereka membaca dan menyesuaikan respons ya/tidak berpandukan gambar.
+**Aktiviti 2 — Lakonkan penanya dan penjawab:** Murid mengambil peranan penanya dan penjawab dengan kad objek; mereka membaca dan menyesuaikan respons ya/tidak berpandukan gambar.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod tiga daripada empat giliran bacaan dengan sebutan dan intonasi yang betul.
 

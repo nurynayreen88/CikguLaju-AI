@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** الطاولة، البساط، الصالة، الباب
 **Objektif pembelajaran:** Murid dapat menentukan bunyi lam dibaca atau tidak pada tiga daripada empat kata selepas mendengar.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid menentukan bunyi lam dibaca atau tidak pada sekurang-kurangnya 3 daripada 4 kata.
 
 **Set induksi:** Guru menyebut الباب dan الصالة tanpa memaparkan tulisan; murid memadankan dengan gambar objek rumah.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mengulangi pilihan kosa kata daripada latihan halaman 86 dengan penekanan pada perbezaan bunyi. Murid mengangkat kad 'lam kedengaran' atau 'lam tidak kedengaran'.
+**Aktiviti 1 — Bezakan lam yang kedengaran:** Guru mengulangi pilihan kosa kata daripada latihan halaman 86 dengan penekanan pada perbezaan bunyi. Murid mengangkat kad 'lam kedengaran' atau 'lam tidak kedengaran'.
 
-**Aktiviti 2 — Aplikasi murid:** Murid bermain dengar-angkat menggunakan empat kad dalam kumpulan kecil; setiap murid memberikan sekurang-kurangnya satu respons.
+**Aktiviti 2 — Permainan dengar dan angkat empat kad:** Murid bermain dengar-angkat menggunakan empat kad dalam kumpulan kecil; setiap murid memberikan sekurang-kurangnya satu respons.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod sekurang-kurangnya tiga daripada empat pengecaman bunyi yang tepat.
 

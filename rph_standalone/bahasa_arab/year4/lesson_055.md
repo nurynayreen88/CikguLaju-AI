@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** هذه كنبة. هذه كنبة جميلة.
 **Objektif pembelajaran:** Murid dapat menulis sekurang-kurangnya dua ayat bersambung yang menggambarkan satu perabot rumah.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya dua ayat bersambung yang menggambarkan satu perabot rumah.
 
 **Set induksi:** Guru menunjukkan gambar sofa dan bertanya sama ada murid boleh menerangkan rupanya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أكون وأكتب halaman 104 yang membina ayat berturutan tentang كنبة; murid memerhatikan pertambahan sifat جميلة pada ayat kedua.
+**Aktiviti 1 — Bina ayat berturutan tentang كنبة:** Guru menggunakan latihan أكون وأكتب halaman 104 yang membina ayat berturutan tentang كنبة; murid memerhatikan pertambahan sifat جميلة pada ayat kedua.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih satu perabot lain dan membina dua ayat berkaitan dengan kata sifat pilihan mereka; ayat hasil murid dilabel ciptaan sendiri.
+**Aktiviti 2 — Tulis dua ayat berkait tentang perabot:** Murid memilih satu perabot lain dan membina dua ayat berkaitan dengan kata sifat pilihan mereka; ayat hasil murid dilabel ciptaan sendiri.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua ayat berhubung idea serta ditulis dengan ejaan dan jarak betul.
 

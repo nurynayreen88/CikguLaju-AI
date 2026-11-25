@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** الباب، الصحن، الجدار، الطاولة
 **Objektif pembelajaran:** Murid dapat menulis semula tiga daripada empat kata ber-ال dengan bentuk huruf dan titik tepat.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid menulis semula sekurang-kurangnya 3 daripada 4 kata ber-ال dengan bentuk huruf dan titik tepat.
 
 **Set induksi:** Guru memperlihatkan kad kata باب dan meminta murid menambah ال di bahagian hadapan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أستمع وأكتب halaman 87 yang membina kata ber-ال, menunjukkan sambungan tulisan Arab kanan-ke-kiri dan kedudukan titik/baris.
+**Aktiviti 1 — Tunjuk sambungan huruf kata rumah:** Guru menggunakan latihan أستمع وأكتب halaman 87 yang membina kata ber-ال, menunjukkan sambungan tulisan Arab kanan-ke-kiri dan kedudukan titik/baris.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mencantum kad ال dengan kata rumah, kemudian menulis empat perkataan pada helaian sebelum menyemak dengan contoh buku.
+**Aktiviti 2 — Cantum kad dan tulis empat perkataan:** Murid mencantum kad ال dengan kata rumah, kemudian menulis empat perkataan pada helaian sebelum menyemak dengan contoh buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tiga daripada empat tulisan yang betul dari segi ejaan, sambungan dan arah RTL.
 

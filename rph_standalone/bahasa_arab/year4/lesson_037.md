@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** فصل، غرفة المعلمين، دكان المدرسة، مطعم
 **Objektif pembelajaran:** Murid dapat menulis tiga daripada empat kata/frasa sekolah dengan sambungan huruf tepat.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 kata atau frasa sekolah dengan sambungan huruf tepat.
 
 **Set induksi:** Guru memaparkan kata فصل yang hilang beberapa huruf dan mengajak murid melengkapkannya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أكتب وأقرأ h66 untuk memodelkan tulisan فصل، غرفة المعلمين، دكان المدرسة dan مطعم dalam arah RTL.
+**Aktiviti 1 — Tunjuk model tulisan tempat sekolah:** Guru menggunakan latihan أكتب وأقرأ h66 untuk memodelkan tulisan فصل، غرفة المعلمين، دكان المدرسة dan مطعم dalam arah RTL.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyalin empat kata/frasa dan menandakan jarak antara dua perkataan, kemudian menyemak secara berpasangan.
+**Aktiviti 2 — Salin empat kata atau frasa dan semak jarak:** Murid menyalin empat kata/frasa dan menandakan jarak antara dua perkataan, kemudian menyemak secara berpasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat tulisan dengan ejaan serta jarak perkataan betul.
 

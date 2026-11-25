@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** الوسادة على السرير، الهاتف فوق الطاولة، الكنبة في صالة الضيوف
 **Objektif pembelajaran:** Murid dapat menyusun dan membaca dua ayat lokasi dengan susunan kata betul.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid menyusun dan membaca dua ayat lokasi dengan susunan kata betul.
 
 **Set induksi:** Guru memaparkan kad فوق / الطاولة / الهاتف yang bercampur dan mengajak murid menyusunnya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أقرأ وأرتب halaman 99, memodelkan kaedah menyusun perkataan menjadi ayat mudah tentang objek dan lokasi rumah.
+**Aktiviti 1 — Model susunan kata dalam ayat lokasi:** Guru menggunakan latihan أقرأ وأرتب halaman 99, memodelkan kaedah menyusun perkataan menjadi ayat mudah tentang objek dan lokasi rumah.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan menyusun dua ayat daripada kad bercampur, membacanya dan menyemak kedudukan kata arah.
+**Aktiviti 2 — Susun dan baca dua ayat arah:** Murid berpasangan menyusun dua ayat daripada kad bercampur, membacanya dan menyemak kedudukan kata arah.
 
 **Pengukuhan / Penilaian (PBD):** Guru memeriksa ketepatan dua ayat serta sebutan ketika dibaca.
 

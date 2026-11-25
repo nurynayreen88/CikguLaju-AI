@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** وسادة، ستار، سلم، ساعة، بساط، سرير
 **Objektif pembelajaran:** Murid dapat menyebut lima daripada enam perkataan peralatan rumah dengan sebutan jelas.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 5 daripada 6 perkataan peralatan rumah dengan jelas.
 
 **Set induksi:** Guru menunjukkan gambar bantal, jam dan tangga lalu meminta murid meneka perkataan Arab.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan kosa kata pada latihan Unit 4 sekitar halaman 88–89; murid mengulang dan menunjukkan gambar وسادة، ستار، سلم، ساعة، بساط، سرير.
+**Aktiviti 1 — Dengar dan ajuk enam nama peralatan:** Guru memperdengarkan kosa kata pada latihan Unit 4 sekitar halaman 88–89; murid mengulang dan menunjukkan gambar وسادة، ستار، سلم، ساعة، بساط، سرير.
 
-**Aktiviti 2 — Aplikasi murid:** Murid dalam pasangan bermain padan kad kata dengan gambar; seorang menyebut kata, seorang memilih gambar sebelum bertukar peranan.
+**Aktiviti 2 — Padankan kad perkataan dengan gambar:** Murid dalam pasangan bermain padan kad kata dengan gambar; seorang menyebut kata, seorang memilih gambar sebelum bertukar peranan.
 
 **Pengukuhan / Penilaian (PBD):** Guru mendengar dan menanda ketepatan lima daripada enam sebutan individu.
 
