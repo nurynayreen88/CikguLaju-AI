@@ -213,10 +213,11 @@
   },
   "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed.",
   "latest_verified_structural_ci": {
-    "run": 45527723160,
+    "run": 45528744516,
     "conclusion": "success",
-    "draft_count": 673,
-    "note": "Activity-only Word/PDF native render, includes original activity proposal for overlapping id1387, not the subsequent objective correction."
+    "draft_count": 686,
+    "objective_corrections_rendered": 14,
+    "note": "Native Word/PDF test confirmed 686 unique IDs, all 14 objective patches, one A4 page per PDF, non-target Word cells unchanged. Academic and visual approval remain pending."
   },
   "staged_unique_verified": 698,
   "staged_year_counts": {
@@ -287,10 +288,14 @@
     1387
   ],
   "rpt_alignment": {
-    "status": "QA_PLAN_NOT_RUNTIME",
+    "status": "QA_SOURCE_ID_ALIGNMENT_PASSED",
     "requested": "2026-11-25",
     "authority": "Final approved RPH, validated against DSKP/textbook/mushaf",
     "scope": "PI KSSR T2–T6, both groups A/B; update activity notes and corrected objectives only where needed; preserve SK/SP, PdP IDs/order, durations and calendar, existing cover/design.",
-    "release_gate": "Generate RPT changes from approved RPH only; compare actual exported RPT and RPH; no production writes yet."
+    "release_gate": "Generate RPT changes from approved RPH only; compare actual exported RPT and RPH; no production writes yet.",
+    "audit_run": 45529236157,
+    "verified_records": 698,
+    "objective_changes": 14,
+    "live": false
   }
 }
