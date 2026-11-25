@@ -456,20 +456,28 @@
       "pdp": "017",
       "unit": "6",
       "textbook_page": "46–50",
-      "sp": [],
-      "sk": [],
-      "title": "Permainan otot dan rehat",
-      "objective": "2 gerakan dan 1 rutin rehat ditunjukkan",
-      "success_criterion": "2 gerakan dan 1 rutin rehat ditunjukkan",
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "4.1.2"
+      ],
+      "sk": [
+        "3.1",
+        "4.1"
+      ],
+      "title": "Permainan ringan dan menyejukkan badan",
+      "objective": "2 gerakan aktif dan 1 aktiviti menyejukkan badan dilakukan serta dikenal pasti",
+      "success_criterion": "2 gerakan aktif dan 1 aktiviti menyejukkan badan dilakukan serta dikenal pasti",
       "materials": "Bola ringan, kad rehat",
       "induction": "Tunjukkan kad aktif dan rehat.",
-      "guided": "Guru modelkan gerakan terkawal berselang rehat.",
-      "practice": "Murid buat dua gerakan mengikut kemampuan dan pilih masa rehat.",
+      "guided": "Guru tunjuk berjalan ringan atau gerak aktif adaptif, kemudian berjalan perlahan dan regangan selesa sebagai penyejukan.",
+      "practice": "Murid lakukan dua gerakan aktif mengikut kemampuan, diikuti satu gerakan menyejukkan badan; pilih kad yang menunjukkan penyejukan.",
       "support": "Hentikan jika sakit atau letih luar biasa.",
       "closure": "Minum air dan rehat.",
-      "assessment": "Rekod pencapaian: 2 gerakan dan 1 rutin rehat ditunjukkan. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "2 gerakan dan 1 rutin rehat ditunjukkan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "assessment": "Rekod dua gerakan aktif, satu gerakan penyejukan dan respons mengenal pasti aktiviti. Catat adaptasi.",
+      "reflection_criterion": "2 gerakan aktif dan 1 aktiviti menyejukkan badan dilakukan serta dikenal pasti",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "DSKP hlm. 27, semakan visual 3.1.1, 3.1.2, 4.1.2."
     },
     {
       "pdp": "018",
