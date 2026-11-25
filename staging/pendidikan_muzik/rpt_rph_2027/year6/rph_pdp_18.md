@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru menepuk not minim biasa dan not minim bertitik, meminta murid membandingkan tempoh kedua-duanya.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membezakan minim bertitik serta krocet bertitik dan menyalin dua contoh not/tanda rehat yang betul daripada latihan halaman 50–51 ke baluk sendiri.
+**Aktiviti 1 — Bezakan Minim dan Krocet Bertitik (8 minit):** Murid membezakan minim bertitik serta krocet bertitik dan menyalin dua contoh not/tanda rehat yang betul daripada latihan halaman 50–51 ke baluk sendiri.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Murid berlatih langkah, seretan kaki dan hayunan badan di Stesen 1. Di Stesen 2, murid mendengar Audio 96 dan mempersembahkan dua corak gerak bertema.
+**Aktiviti 2 — Dua Stesen Gerakan Memori Indah (10 minit):** Murid berlatih langkah, seretan kaki dan hayunan badan di Stesen 1. Di Stesen 2, murid mendengar Audio 96 dan mempersembahkan dua corak gerak bertema.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak dua contoh notasi bertitik dan ketepatan gerakan menurut tema dan tempo; catat penilaian rakan.
 

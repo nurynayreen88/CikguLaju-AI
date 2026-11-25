@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru menunjukkan kad perayaan pelbagai kaum dan meminta murid berkongsi satu pemerhatian.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru memperkenalkan frasa lagu Warna-warni Malaysia halaman 63 secara ajuk-nyanyi, dengan perhatian pada sebutan, pic dan tanda nafas.
+**Aktiviti 1 — Ajuk Frasa Warna-warni Malaysia (8 minit):** Guru memperkenalkan frasa lagu Warna-warni Malaysia halaman 63 secara ajuk-nyanyi, dengan perhatian pada sebutan, pic dan tanda nafas.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Murid menyanyikan satu rangkap secara berkumpulan dan berbincang dua contoh kepelbagaian budaya yang diperkenalkan dalam buku tanpa menyalin lirik lagu.
+**Aktiviti 2 — Nyanyian dan Perbincangan Kepelbagaian Budaya (10 minit):** Murid menyanyikan satu rangkap secara berkumpulan dan berbincang dua contoh kepelbagaian budaya yang diperkenalkan dalam buku tanpa menyalin lirik lagu.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak pic, tempo dan dua contoh budaya yang disebut berdasarkan tema.
 

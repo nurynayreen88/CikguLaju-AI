@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru memodelkan bunyi perkusi mulut pom/cak serta tanda rehat tanpa meminta murid meniru lirik lagu berhak cipta.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid bergerak antara dua stesen halaman 20 untuk menyebut corak berirama, kemudian tiga kumpulan memainkan kastanet, kayu tik tok dan tamborin bagi latihan skor halaman 21.
+**Aktiviti 1 — Stesen Irama dan Tanda Rehat (8 minit):** Murid bergerak antara dua stesen halaman 20 untuk menyebut corak berirama, kemudian tiga kumpulan memainkan kastanet, kayu tik tok dan tamborin bagi latihan skor halaman 21.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid mengiringi melodi Tudung Periuk menggunakan corak ensembel di halaman 22–23 dengan isyarat mula/henti guru; tiada penerbitan audio atau lirik lagu.
+**Aktiviti 2 — Ensembel Perkusi Tudung Periuk (10 minit):** Murid mengiringi melodi Tudung Periuk menggunakan corak ensembel di halaman 22–23 dengan isyarat mula/henti guru; tiada penerbitan audio atau lirik lagu.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak rehat krocet/kuaver, ketepatan pola dan kawalan kuat/lembut iringan.
 

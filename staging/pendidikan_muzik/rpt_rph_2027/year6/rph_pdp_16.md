@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru meminta murid berkongsi kenangan sekolah secara ringkas, kemudian membimbing latihan pernafasan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru membimbing nyanyian satu frasa Memori Indah halaman 47 melalui ajuk melodi dan tanda nafas tanpa memuat naik lirik atau rakaman.
+**Aktiviti 1 — Ajuk Melodi dan Tanda Nafas Memori Indah (8 minit):** Guru membimbing nyanyian satu frasa Memori Indah halaman 47 melalui ajuk melodi dan tanda nafas tanpa memuat naik lirik atau rakaman.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan menyanyi semula frasa tersebut pada tempo yang stabil dengan dinamik seperti ditanda pada skor buku; murid mencatat satu perubahan daripada percubaan pertama.
+**Aktiviti 2 — Nyanyian Dinamik Dua Percubaan (10 minit):** Kumpulan menyanyi semula frasa tersebut pada tempo yang stabil dengan dinamik seperti ditanda pada skor buku; murid mencatat satu perubahan daripada percubaan pertama.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak pic, tempo dan perubahan dinamik pada dua percubaan yang dirakam dalam senarai semak guru.
 

@@ -12,9 +12,9 @@
 
 **Set Induksi — 4 minit:** Guru memodelkan corak tepuk/hentak kaki dan bunyi perkusi mulut tanpa alat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membentuk bulatan dan menepuk dua latihan perkusi badan sepanjang 32 detik halaman 6, kemudian mencuba corak perkusi mulut secara selamat.
+**Aktiviti 1 — Perkusi Badan dan Mulut 32 Detik (8 minit):** Murid membentuk bulatan dan menepuk dua latihan perkusi badan sepanjang 32 detik halaman 6, kemudian mencuba corak perkusi mulut secara selamat.
 
-**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Guru membahagikan kastanet, loceng dan kerincing untuk melatih corak 1 dan 2 halaman 7; tiga kumpulan perkusi mengiringi satu kumpulan penyanyi Setia Kawan mengikut skor halaman 8–9.
+**Aktiviti 2 — Ensembel Perkusi Setia Kawan (10 minit):** Guru membahagikan kastanet, loceng dan kerincing untuk melatih corak 1 dan 2 halaman 7; tiga kumpulan perkusi mengiringi satu kumpulan penyanyi Setia Kawan mengikut skor halaman 8–9.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak 32 detik yang stabil, ketepatan satu corak irama dan keseimbangan bunyi antara nyanyian dengan alat.
 

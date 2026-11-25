@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru mengemukakan isu menjaga sungai dan udara bersih sebagai tema lagu.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid mengajuk frasa Kelestarian Alam halaman 71 melalui suara guru, menjaga pic/tempo, serta mengenal bahagian berwarna hijau (suara alam) dan ungu (suara makhluk bumi).
+**Aktiviti 1 — Nyanyian Dua Suara Kelestarian Alam (8 minit):** Murid mengajuk frasa Kelestarian Alam halaman 71 melalui suara guru, menjaga pic/tempo, serta mengenal bahagian berwarna hijau (suara alam) dan ungu (suara makhluk bumi).
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Murid menyusun dua gerak yang bersesuaian dengan dialog dua suara menggunakan goyang badan dan angkat tangan dari bawah ke atas seperti gambar halaman 71; kumpulan menyanyi dan bergerak secara bergilir.
+**Aktiviti 2 — Gerakan Bertema Alam Mengikut Dialog (10 minit):** Murid menyusun dua gerak yang bersesuaian dengan dialog dua suara menggunakan goyang badan dan angkat tangan dari bawah ke atas seperti gambar halaman 71; kumpulan menyanyi dan bergerak secara bergilir.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak frasa nyanyian, dua gerak yang sesuai dan peranan suara alam/makhluk bumi.
 

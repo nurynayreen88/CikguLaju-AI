@@ -13,13 +13,13 @@
 
 **Set Induksi — 4 minit:** Guru mengimbas peranan ketua kumpulan, etika persembahan dan pemanasan sebelum menggunakan alat muzik.
 
-**Aktiviti 1 — Bimbingan projek (8 minit):** Guru memperdengarkan petikan Memori Indah atau Rindu sebagai contoh. Murid memilih lagu Unit 6–10 dan mengagihkan peranan nyanyian, rekoder, perkusi dan gerak kreatif.
+**Aktiviti 1 — Pilih Lagu dan Agih Empat Peranan (8 minit):** Guru memperdengarkan petikan Memori Indah atau Rindu sebagai contoh. Murid memilih lagu Unit 6–10 dan mengagihkan peranan nyanyian, rekoder, perkusi dan gerak kreatif.
 
-**Aktiviti 2 — Pelaksanaan projek (10 minit):** Murid merancang jadual, alat, tatacara dan borang penilaian kendiri, kemudian membuat latihan percubaan.
+**Aktiviti 2 — Rancang Tiga Fasa Projek (10 minit):** Murid merancang jadual, alat, tatacara dan borang penilaian kendiri, kemudian membuat latihan percubaan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Murid menyemak senarai semak lagu, peranan, disiplin, koordinasi dan pengurusan alat. Guru melengkapkan pemerhatian PBD.
 
-**Penutup — 2 minit:** Ketua kumpulan berkongsi satu penambahbaikan serta memastikan peralatan disimpan dengan selamat.
+**Penutup — 2 minit:** Ketua membentangkan pembahagian peranan dan senarai semak tiga fasa; guru menilai kelengkapan pelan persembahan.
 
 **Bahan:** Buku Muzik Tahun 6 m/s 88–89, borang projek, alat muzik dan audio contoh Memori Indah atau Rindu.
 

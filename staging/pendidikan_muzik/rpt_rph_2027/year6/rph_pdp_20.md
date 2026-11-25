@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru memodelkan satu pola tepukan dan meminta murid mengira detik sebelum menggunakan cawan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid melaksanakan pola cawan plastik/kertas di permukaan rata halaman 58, kemudian menggunakan klaves dan egg shaker bagi corak 1 dan 2, mengikut kiraan guru.
+**Aktiviti 1 — Corak Cawan, Klaves dan Egg Shaker (8 minit):** Murid melaksanakan pola cawan plastik/kertas di permukaan rata halaman 58, kemudian menggunakan klaves dan egg shaker bagi corak 1 dan 2, mengikut kiraan guru.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Tiga kumpulan mempraktikkan Latihan Corak Irama 1 dan 2 halaman 59 menggunakan egg shaker, klaves dan dram bes sebelum menggabungkan ensembel.
+**Aktiviti 2 — Gabung Dua Corak Irama Perkusi (10 minit):** Tiga kumpulan mempraktikkan Latihan Corak Irama 1 dan 2 halaman 59 menggunakan egg shaker, klaves dan dram bes sebelum menggabungkan ensembel.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru memeriksa dua pola, ketepatan detik dan kendalian alat secara selamat.
 

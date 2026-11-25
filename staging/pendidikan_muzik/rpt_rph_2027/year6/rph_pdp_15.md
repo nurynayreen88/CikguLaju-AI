@@ -10,15 +10,15 @@
 
 **Objektif:** Murid memainkan not D dan C pada rekoder serta satu frasa melodi kaunter dengan ton terkawal.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu petikan, skor atau aktiviti berkaitan unit dan meminta murid menunjukkan pengetahuan sedia ada.
+**Set induksi (4 minit):** Guru menunjukkan penjarian D dan C pada rekoder; murid meniru kedudukan jari tanpa meniup sebelum menguji ton.
 
-**Aktiviti 1 — Demonstrasi / penemuan (8 minit):** Guru membimbing penjarian D dan C serta perlidahan 'tu' yang betul, seperti latihan buku.
+**Aktiviti 1 — Latihan Penjarian D dan C (8 minit):** Guru membimbing penjarian D dan C serta perlidahan 'tu' yang betul, seperti latihan buku.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid melakukan latihan rekoder bertahap kemudian membahagikan kumpulan kepada melodi utama dan kaunter Mikroorganisma.
+**Aktiviti 2 — Gabung Melodi Utama dan Kaunter (10 minit):** Murid melakukan latihan rekoder bertahap kemudian membahagikan kumpulan kepada melodi utama dan kaunter Mikroorganisma.
 
 **Pengukuhan dan pentaksiran (6 minit):** Rubrik penjarian, ton, masa masuk dan tempo.
 
-**Penutup (2 minit):** Murid menunjukkan satu kemahiran atau fakta muzik yang dipelajari; guru merekod pemerhatian PBD dan maklum balas.
+**Penutup (2 minit):** Murid memainkan not D dan C serta satu frasa kaunter Mikroorganisma; guru menyemak penjarian dan kawalan ton.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, m/s 38-43, skor dan alat mengikut PdP.
 

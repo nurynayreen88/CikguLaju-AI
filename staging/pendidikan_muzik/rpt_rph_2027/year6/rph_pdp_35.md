@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru menunjukkan garis masa berlabel Classical 1750–1830 (rujukan DSKP); murid menyatakan satu perkara yang pernah dipelajari daripada Unit Rangkaian Globalisasi.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyebut komposer, karya dan negara asal berdasarkan nota sumber yang dipilih guru, kemudian menyatakan satu ciri untuk perbincangan berkumpulan.
+**Aktiviti 1 — Ulang Kaji Komposer dan Karya Classical (8 minit):** Murid menyebut komposer, karya dan negara asal berdasarkan nota sumber yang dipilih guru, kemudian menyatakan satu ciri untuk perbincangan berkumpulan.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Guru memilih satu contoh Audio 71–73. Murid mendengar petikan, menjelaskan satu ciri bunyi dan menulis dua ayat ulasan berdasarkan karya tersebut.
+**Aktiviti 2 — Apresiasi Petikan dan Ulasan Bertulis (10 minit):** Guru memilih satu contoh Audio 71–73. Murid mendengar petikan, menjelaskan satu ciri bunyi dan menulis dua ayat ulasan berdasarkan karya tersebut.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak julat Classical DSKP, dua fakta karya tepat serta satu alasan daripada bahan; rekod pemulihan bagi murid yang tidak dapat menyokong ulasan.
 

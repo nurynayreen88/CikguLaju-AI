@@ -14,9 +14,9 @@
 
 **Set Induksi — 4 minit:** Guru memberi contoh soalan melodi ringkas lalu murid menjawab secara tepukan, mengekalkan empat detik setiap bar.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid merujuk halaman 66–67 untuk melengkapkan soalan–jawapan melodi meter 4/4 dua bar, mengubah suai irama atau kontur dan menulis not yang dibenarkan.
+**Aktiviti 1 — Lengkapkan Soalan dan Jawapan Melodi 4/4 (8 minit):** Murid merujuk halaman 66–67 untuk melengkapkan soalan–jawapan melodi meter 4/4 dua bar, mengubah suai irama atau kontur dan menulis not yang dibenarkan.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan bergilir antara stesen Kutub Utara, Kutub Selatan dan Khatulistiwa halaman 68–69; murid menukar melodi ciptaan melalui kapal terbang kertas dan memainkan melodi rakan pada rekoder/loceng berpic.
+**Aktiviti 2 — Cipta dan Tukar Melodi di Tiga Stesen (10 minit):** Kumpulan bergilir antara stesen Kutub Utara, Kutub Selatan dan Khatulistiwa halaman 68–69; murid menukar melodi ciptaan melalui kapal terbang kertas dan memainkan melodi rakan pada rekoder/loceng berpic.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak meter 4/4, dua bar lengkap, not yang dibenarkan serta kebolehan membaca melodi rakan.
 
