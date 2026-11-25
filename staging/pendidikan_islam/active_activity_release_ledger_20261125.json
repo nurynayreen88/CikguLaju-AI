@@ -13,7 +13,7 @@
     }
   ],
   "total_active": 698,
-  "staged_unique_reported": 475,
+  "staged_unique_reported": 512,
   "live_editorial_count": 0,
   "release_gate": "Review original DSKP/textbook/mushaf evidence and Jawi, confirm native output, then promote only approved records. Mark LIVE only after deployment and authenticated download verification.",
   "wave1": [
@@ -218,80 +218,72 @@
     "source_commit": "c09bfc00a3a055c15a18dc7948cee1627e5e8428",
     "note": "Batch 21 structural test passed; academic approval outstanding."
   },
-  "staged_unique_verified": 475,
+  "staged_unique_verified": 512,
   "staged_year_counts": {
     "2": 112,
-    "3": 105,
-    "4": 89,
-    "5": 86,
-    "6": 83
+    "3": 116,
+    "4": 101,
+    "5": 94,
+    "6": 89
   },
-  "remaining_without_draft": 223,
+  "remaining_without_draft": 186,
   "latest_editorial_batch": {
-    "batch": 24,
+    "batch": 26,
     "years": {
-      "2": [
-        10,
-        13,
-        16,
-        19,
-        23,
-        80
-      ],
       "3": [
-        70,
-        73,
-        74,
-        78,
-        81,
-        82,
-        85,
-        86,
-        90,
-        144,
-        148
+        94,
+        98,
+        101,
+        102,
+        105,
+        106,
+        110,
+        113,
+        114,
+        117,
+        118
       ],
       "4": [
-        54,
-        58,
-        62,
-        66,
-        69,
-        70,
-        72,
-        76,
-        80,
-        84,
-        88,
-        96
+        74,
+        78,
+        82,
+        86,
+        90,
+        94,
+        104,
+        108,
+        112,
+        116,
+        120,
+        124
       ]
     },
-    "commit": "51ecc5e71f9ff07a5fd4592e2f988774fdb39396",
+    "commit": "0f3a7b00aa8853f23dd1898e66ed8f21c17a2e53",
     "status": "QA_RENDER_PENDING"
   },
   "cross_batch_audit": {
-    "run": 45520998464,
+    "run": 45521869775,
     "status": "CI_SUCCESS",
     "summary": {
       "status": "QA_ONLY_NOT_FOR_RUNTIME",
-      "draft_count": 446,
-      "unique_ids": 446,
+      "draft_count": 489,
+      "unique_ids": 489,
       "year_counts": {
-        "2": 106,
-        "3": 94,
-        "4": 77,
-        "5": 86,
-        "6": 83
+        "2": 112,
+        "3": 105,
+        "4": 89,
+        "5": 94,
+        "6": 89
       },
-      "remaining_without_draft": 252,
+      "remaining_without_draft": 209,
       "release_eligible": 0,
       "repeat_group_counts": {
-        "body": 3,
-        "title": 35,
-        "objective": 26,
+        "body": 6,
+        "title": 43,
+        "objective": 30,
         "whole_activity": 0
       }
     }
   },
-  "manual_source_hold_count": 17
+  "manual_source_hold_count": 20
 }
