@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru meniru titisan hujan dengan tepukan pendek dan meminta murid menghasilkan bunyi bersambung sebagai perbandingan.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing murid mengajuk frasa 'tip tap' secara staccato di halaman 63, kemudian menyemak nada, sebutan dan tanda pernafasan.
+**Aktiviti 1 — Latihan Staccato dan Tanda Nafas (8 minit):** Guru membimbing murid mengajuk frasa 'tip tap' secara staccato di halaman 63, kemudian menyemak nada, sebutan dan tanda pernafasan.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menyanyikan satu rangkap Tip Tap Tip Tap, memberi perhatian pada frasa pendek staccato dan bahagian lain yang perlu dilagukan lebih bersambung.
+**Aktiviti 2 — Nyanyian Tip Tap Tip Tap (10 minit):** Murid menyanyikan satu rangkap Tip Tap Tip Tap, memberi perhatian pada frasa pendek staccato dan bahagian lain yang perlu dilagukan lebih bersambung.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak sebutan staccato, ketepatan pic dan pengambilan nafas dalam dua percubaan.
 

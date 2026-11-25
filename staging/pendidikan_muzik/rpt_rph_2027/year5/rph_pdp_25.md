@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru menunjukkan dua contoh tepukan/bunyi putus-putus dan bersambung; murid mengelaskan staccato atau legato.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru memperkenalkan staccato/legato melalui contoh The Frogs halaman 64, kemudian murid menandakan simbol sesuai pada dua latihan notasi.
+**Aktiviti 1 — Kenal Staccato dan Legato pada Skor (8 minit):** Guru memperkenalkan staccato/legato melalui contoh The Frogs halaman 64, kemudian murid menandakan simbol sesuai pada dua latihan notasi.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Empat kumpulan menjalankan Permainan Lompat Luncur halaman 65: setiap kumpulan bergerak mengikut arahan stesen bagi gerakan putus-putus dan gerakan meluncur yang bersambung.
+**Aktiviti 2 — Empat Stesen Lompat Luncur (10 minit):** Empat kumpulan menjalankan Permainan Lompat Luncur halaman 65: setiap kumpulan bergerak mengikut arahan stesen bagi gerakan putus-putus dan gerakan meluncur yang bersambung.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak dua simbol pada skor dan dua corak pergerakan yang sepadan dengan artikulasi.
 

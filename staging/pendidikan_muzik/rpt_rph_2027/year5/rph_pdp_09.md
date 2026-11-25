@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru meminta murid memecahkan nama sendiri kepada suku kata dan menepuk mengikut sebutan.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Berpandukan Permainan Nama Berirama halaman 24, murid memilih nilai not kuaver, krocet, minim atau semibrif untuk setiap suku kata serta menepuk coraknya.
+**Aktiviti 1 — Nama Berirama Mengikut Nilai Not (8 minit):** Berpandukan Permainan Nama Berirama halaman 24, murid memilih nilai not kuaver, krocet, minim atau semibrif untuk setiap suku kata serta menepuk coraknya.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid memilih not B, A dan G, menyusun corak pada baluk halaman 25 lalu mempersembahkannya dengan rekoder secara individu atau pasangan.
+**Aktiviti 2 — Cipta Melodi Nama B/A/G (10 minit):** Murid memilih not B, A dan G, menyusun corak pada baluk halaman 25 lalu mempersembahkannya dengan rekoder secara individu atau pasangan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menyemak padanan suku kata dengan durasi, not B/A/G dan kebolehan memainkan hasil ciptaan.
 

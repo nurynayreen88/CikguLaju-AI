@@ -10,15 +10,15 @@
 
 **Objektif:** Murid memainkan melodi kaunter dengan masa masuk dan penjarian betul.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menunjukkan dua bahagian pada skor Raja di Lautan; murid menandakan tempat masuk melodi kaunter sebelum latihan.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru menandakan bahagian melodi utama dan melodi kaunter pada skor Raja di Lautan.
+**Aktiviti 1 — Kenal Melodi Utama dan Kaunter (8 minit):** Guru menandakan bahagian melodi utama dan melodi kaunter pada skor Raja di Lautan.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Dua kumpulan berlatih berasingan kemudian bergabung dengan tempo perlahan.
+**Aktiviti 2 — Gabung Dua Kumpulan Rekoder (10 minit):** Dua kumpulan berlatih berasingan kemudian bergabung dengan tempo perlahan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak ton, penjarian, tempo dan masa masuk.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid memainkan semula satu frasa kaunter dengan penjarian dan masa masuk tepat; guru menyemak ton dan tempo.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 42-43; instrumen/kad/skor mengikut PdP.
 

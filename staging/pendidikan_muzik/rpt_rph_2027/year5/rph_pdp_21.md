@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru memperkenalkan nama empat buruj yang disebut dalam tema lagu dan meminta murid mengenal sebutannya.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing pemanasan vokal dan ajuk frasa Buruj halaman 55 dengan pic dan tempo yang tepat.
+**Aktiviti 1 — Latihan Vokal Buruj (8 minit):** Guru membimbing pemanasan vokal dan ajuk frasa Buruj halaman 55 dengan pic dan tempo yang tepat.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Kumpulan lima orang menjalankan Permainan Mencari Not halaman 56–57: murid membulatkan not pada keratan skor, menyusun lima keratan dan menyalin not yang ditemui pada baluk.
+**Aktiviti 2 — Permainan Mencari Tujuh Not (10 minit):** Kumpulan lima orang menjalankan Permainan Mencari Not halaman 56–57: murid membulatkan not pada keratan skor, menyusun lima keratan dan menyalin not yang ditemui pada baluk.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak nyanyian satu frasa dan ketepatan pengecaman lima daripada tujuh not pada keratan.
 

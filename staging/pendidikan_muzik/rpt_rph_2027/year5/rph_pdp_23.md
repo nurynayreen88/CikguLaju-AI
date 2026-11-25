@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru memperagakan kesan permainan perkusi terlalu kuat berbanding seimbang bersama nyanyian.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Murid membaca skor ensembel Buruj halaman 60–61; guru membahagikan kepada kastanet, loceng dan dram bes, kemudian melatih kumpulan secara berasingan.
+**Aktiviti 1 — Baca Skor Kastanet, Loceng dan Dram Bes (8 minit):** Murid membaca skor ensembel Buruj halaman 60–61; guru membahagikan kepada kastanet, loceng dan dram bes, kemudian melatih kumpulan secara berasingan.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Kumpulan menyatukan iringan perkusi untuk menyokong lagu Buruj; ketua kumpulan memberi isyarat mula/henti dan murid mengurangkan kelantangan jika alat menenggelamkan nyanyian.
+**Aktiviti 2 — Ensembel Buruj dengan Imbangan Bunyi (10 minit):** Kumpulan menyatukan iringan perkusi untuk menyokong lagu Buruj; ketua kumpulan memberi isyarat mula/henti dan murid mengurangkan kelantangan jika alat menenggelamkan nyanyian.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru memeriksa pola tepat, tempo, keseimbangan kelantangan dan koordinasi ensembel.
 

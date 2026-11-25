@@ -10,15 +10,15 @@
 
 **Objektif:** Murid mempersembahkan dua pola gerakan selaras cerita dan perubahan tempo.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menceritakan semula bahagian cepat dan perlahan daripada bahan Dia Adiwira; murid mencadangkan gerakan yang sesuai.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru membimbing murid mengenal bahagian cerita Dia Adiwira yang cepat dan perlahan.
+**Aktiviti 1 — Kenal Tempo dalam Cerita Dia Adiwira (8 minit):** Guru membimbing murid mengenal bahagian cerita Dia Adiwira yang cepat dan perlahan.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan menyusun gerakan selamat dan mempersembahkannya pada isyarat yang sesuai.
+**Aktiviti 2 — Cipta Dua Pola Gerakan Cerita (10 minit):** Kumpulan menyusun gerakan selamat dan mempersembahkannya pada isyarat yang sesuai.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak padanan gerak, tempo dan keselamatan ruang.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Kumpulan menunjukkan dua pola gerakan mengikut perubahan tempo; guru menilai keselarasan dengan cerita dan keselamatan.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 74-77; instrumen/kad/skor mengikut PdP.
 

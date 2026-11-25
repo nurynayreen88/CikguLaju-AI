@@ -10,15 +10,15 @@
 
 **Objektif:** Murid bermain pola perkusi dengan tempo serta dinamik p/f yang tepat.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menunjukkan kad p/f sambil mengetuk pola perkusi; murid meniru perubahan kuat dan lembut tanpa mengubah tempo.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru memperkenalkan corak kastanet, loceng dan dram bes; murid menepuk dahulu.
+**Aktiviti 1 — Tepuk Corak Kastanet, Loceng dan Dram Bes (8 minit):** Guru memperkenalkan corak kastanet, loceng dan dram bes; murid menepuk dahulu.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan memainkan pola berasingan kemudian membentuk iringan ensembel.
+**Aktiviti 2 — Gabung Iringan Perkusi Joget (10 minit):** Kumpulan memainkan pola berasingan kemudian membentuk iringan ensembel.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak corak, tempo, dinamik dan kerjasama.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid memainkan satu pola perkusi pada tempo tetap dengan dinamik p/f tepat; guru menyemak keseimbangan iringan.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 84-87; instrumen/kad/skor mengikut PdP.
 

@@ -10,15 +10,15 @@
 
 **Objektif:** Murid menyanyi satu frasa dengan pic dan tempo yang tepat.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menyanyikan satu frasa Raja di Lautan; murid mengesan tempat nafas pada skor dan mengajuk frasa secara perlahan.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru memodelkan pernafasan dan pic frasa Raja di Lautan berdasarkan skor buku.
+**Aktiviti 1 — Contoh Pernafasan dan Pic Raja di Lautan (8 minit):** Guru memodelkan pernafasan dan pic frasa Raja di Lautan berdasarkan skor buku.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid mengajuk frasa, menyanyi bersama dan memperbaiki tempo serta dinamik.
+**Aktiviti 2 — Nyanyian Gema dan Pembetulan Tempo (10 minit):** Murid mengajuk frasa, menyanyi bersama dan memperbaiki tempo serta dinamik.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak pic, tempo dan dinamik dengan dua percubaan.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid menyanyikan semula satu frasa dengan pic dan tempo tepat; guru memberi maklum balas terhadap dua percubaan.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 36-37; instrumen/kad/skor mengikut PdP.
 

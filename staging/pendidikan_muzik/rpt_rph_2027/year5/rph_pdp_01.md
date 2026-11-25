@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru membezakan bunyi kuat dan lembut menggunakan sebutan da dan dum; murid menunjukkan kad p atau f.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing latihan vokal halaman 3 secara ajuk frasa dan kawalan nafas, kemudian permainan Da Dum halaman 4 menggunakan kad piano (p) dan forte (f).
+**Aktiviti 1 — Latihan Vokal dan Permainan Da Dum (8 minit):** Guru membimbing latihan vokal halaman 3 secara ajuk frasa dan kawalan nafas, kemudian permainan Da Dum halaman 4 menggunakan kad piano (p) dan forte (f).
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid mengajuk lagu Waspada Selalu (m/s 5), mengenal tanda nafas lalu menyanyikan satu rangkap dengan dinamik berdasarkan skor; guru memberikan contoh vokal atau kiraan sebagai panduan.
+**Aktiviti 2 — Nyanyian Waspada Selalu dengan Dinamik p/f (10 minit):** Murid mengajuk lagu Waspada Selalu (m/s 5), mengenal tanda nafas lalu menyanyikan satu rangkap dengan dinamik berdasarkan skor; guru memberikan contoh vokal atau kiraan sebagai panduan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menilai pic, tempo dan dinamik dalam tiga percubaan dan membimbing semula frasa yang kurang tepat.
 

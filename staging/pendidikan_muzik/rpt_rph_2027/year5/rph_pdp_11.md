@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru menepuk satu corak meter 3/4 dan meminta murid menulis nilai not asas pada kad.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Melalui Ini Melodiku halaman 30–31, murid menyusun empat bar corak irama meter 3/4, menyebut ta/ti-ti/ta-a dan mengaitkan kad not pada baluk.
+**Aktiviti 1 — Ini Melodiku dalam Meter 3/4 (8 minit):** Melalui Ini Melodiku halaman 30–31, murid menyusun empat bar corak irama meter 3/4, menyebut ta/ti-ti/ta-a dan mengaitkan kad not pada baluk.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid melaksanakan Dua Kekal Dua Mengembara halaman 32–33 menggunakan not B, A, G dan meter 4/4 bagi empat bar, lalu dua ahli berpindah berkongsi serta bermain melodi ciptaan kumpulan.
+**Aktiviti 2 — Dua Kekal Dua Mengembara dalam Meter 4/4 (10 minit):** Murid melaksanakan Dua Kekal Dua Mengembara halaman 32–33 menggunakan not B, A, G dan meter 4/4 bagi empat bar, lalu dua ahli berpindah berkongsi serta bermain melodi ciptaan kumpulan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak bilangan bar dan nilai detik bagi setiap meter, ketepatan notasi dan kebolehan memainkan melodi; bezakan meter 3/4 dengan 4/4.
 

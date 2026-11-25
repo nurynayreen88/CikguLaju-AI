@@ -10,15 +10,15 @@
 
 **Objektif:** Murid memadankan sekurang-kurangnya dua komposer Baroque dengan karya mereka.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menunjukkan nama tiga komposer pada halaman 34–35; murid mencari judul karya yang sepadan sebelum membincangkan zaman Baroque.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru menerangkan Bach, Vivaldi dan Handel menggunakan halaman 34–35 dan contoh karya yang direkodkan di situ.
+**Aktiviti 1 — Kenali Bach, Vivaldi dan Handel (8 minit):** Guru menerangkan Bach, Vivaldi dan Handel menggunakan halaman 34–35 dan contoh karya yang direkodkan di situ.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Pasangan membina peta minda komposer–negara asal–judul karya, kemudian membandingkan dua ciri karya berdasarkan keterangan buku; rakaman sah milik sekolah boleh digunakan sebagai pengayaan pilihan.
+**Aktiviti 2 — Peta Minda Komposer dan Karya (10 minit):** Pasangan membina peta minda komposer–negara asal–judul karya, kemudian membandingkan dua ciri karya berdasarkan keterangan buku; rakaman sah milik sekolah boleh digunakan sebagai pengayaan pilihan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak dua komposer, negara asal dan satu judul karya.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid memadankan dua komposer Baroque dengan karya masing-masing berdasarkan buku; guru menyemak padanan dan membetulkan kekeliruan.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 34-35; instrumen/kad/skor mengikut PdP.
 

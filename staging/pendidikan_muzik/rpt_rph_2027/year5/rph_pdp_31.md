@@ -10,15 +10,15 @@
 
 **Objektif:** Murid memainkan satu latihan rekoder dengan penjarian dan perlidahan 'tu' tepat.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menunjukkan penjarian satu latihan daripada skor Joget Khatulistiwa; murid mencuba perlidahan 'tu' sebelum memainkan not.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru memodelkan latihan penjarian 1–5 dan teknik perlidahan.
+**Aktiviti 1 — Latihan Penjarian 1–5 dan Perlidahan (8 minit):** Guru memodelkan latihan penjarian 1–5 dan teknik perlidahan.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid bermain secara berpasangan dan membaca pola melodi kaunter daripada skor.
+**Aktiviti 2 — Permainan Rekoder Berpasangan (10 minit):** Murid bermain secara berpasangan dan membaca pola melodi kaunter daripada skor.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak penjarian, perlidahan dan bacaan skor.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid memainkan satu latihan rekoder; guru merekod penjarian dan kejelasan perlidahan 'tu'.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 80-81; instrumen/kad/skor mengikut PdP.
 

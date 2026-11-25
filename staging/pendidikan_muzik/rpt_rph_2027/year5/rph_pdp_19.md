@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru menerangkan beza antara melodi utama yang dinyanyikan dengan melodi kaunter rekoder yang mengiringinya.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing murid membaca skor melodi kaunter Silap Mata halaman 49, memeriksa pernafasan dan penjarian not sebelum meniup rekoder.
+**Aktiviti 1 — Baca Skor Kaunter Silap Mata (8 minit):** Guru membimbing murid membaca skor melodi kaunter Silap Mata halaman 49, memeriksa pernafasan dan penjarian not sebelum meniup rekoder.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menyanyi frasa melodi utama pada pusingan pertama dan memainkan melodi kaunter rekoder pada pusingan kedua. Guru membezakan nada F minor untuk nyanyian dengan A minor untuk rekoder seperti nota guru.
+**Aktiviti 2 — Giliran Nyanyian dan Rekoder (10 minit):** Murid menyanyi frasa melodi utama pada pusingan pertama dan memainkan melodi kaunter rekoder pada pusingan kedua. Guru membezakan nada F minor untuk nyanyian dengan A minor untuk rekoder seperti nota guru.
 
 **Pengukuhan dan pentaksiran (6 minit):** Senarai semak penjarian, ketepatan frasa, tiupan bersih dan kebolehan mengekalkan tempo.
 

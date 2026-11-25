@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru membimbing murid membandingkan dua melodi berbeza yang boleh dinyanyikan pada detik sama.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Kumpulan A berlatih Hot Cross Buns dan kumpulan B Bow Wow Wow pada halaman 26–27, lalu menyatukan dua bahagian dengan tempo yang sama.
+**Aktiviti 1 — Nyanyian Hot Cross Buns dan Bow Wow Wow (8 minit):** Kumpulan A berlatih Hot Cross Buns dan kumpulan B Bow Wow Wow pada halaman 26–27, lalu menyatukan dua bahagian dengan tempo yang sama.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid mengulangi konsep dengan pasangan lagu Waspada Selalu dan Santun di Jalan Raya pada halaman 28–29; guru mengekalkan detik dan menilai keseimbangan kedua-dua kumpulan.
+**Aktiviti 2 — Gabung Dua Lagu Berkembar (10 minit):** Murid mengulangi konsep dengan pasangan lagu Waspada Selalu dan Santun di Jalan Raya pada halaman 28–29; guru mengekalkan detik dan menilai keseimbangan kedua-dua kumpulan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menilai kemampuan murid kekal pada bahagian sendiri, pic dan tempo semasa nyanyian serentak.
 

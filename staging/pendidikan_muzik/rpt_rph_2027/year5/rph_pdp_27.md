@@ -10,15 +10,15 @@
 
 **Objektif:** Murid menyanyi satu frasa Adiwira dengan pic serta perubahan tempo tepat.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menunjukkan perubahan tempo pada skor Adiwira dan mengetuk detik pada dua kelajuan; murid membezakan perubahan itu.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru menunjukkan tanda perubahan tempo pada skor lagu Adiwira.
+**Aktiviti 1 — Kenal Tanda Perubahan Tempo Adiwira (8 minit):** Guru menunjukkan tanda perubahan tempo pada skor lagu Adiwira.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid menyanyi bergilir kemudian mengulang frasa mengikut tempo lagu.
+**Aktiviti 2 — Nyanyian Bergilir Mengikut Tempo (10 minit):** Murid menyanyi bergilir kemudian mengulang frasa mengikut tempo lagu.
 
 **Pengukuhan dan pentaksiran (6 minit):** Periksa pic, tempo dan sebutan.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid menyanyikan satu frasa Adiwira mengikut perubahan tempo pada skor; guru merekod ketepatan pic dan tempo.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 70-71; instrumen/kad/skor mengikut PdP.
 

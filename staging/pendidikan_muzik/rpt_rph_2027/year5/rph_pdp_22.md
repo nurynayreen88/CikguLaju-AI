@@ -14,9 +14,9 @@
 
 **Set induksi (4 minit):** Guru menunjukkan alat perkusi yang digunakan dalam Buruj dan murid menamakan perbezaan bunyi.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Murid mengikuti permainan Siapa yang Kena halaman 58: guru memilih nama, murid meneka bunyi alat, mengajuk corak dengan perkusi badan lalu memilih alat yang sesuai.
+**Aktiviti 1 — Teka Bunyi dan Ajuk Corak Perkusi (8 minit):** Murid mengikuti permainan Siapa yang Kena halaman 58: guru memilih nama, murid meneka bunyi alat, mengajuk corak dengan perkusi badan lalu memilih alat yang sesuai.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid berlatih skor latihan perkusi 1 hingga 3 halaman 59 menggunakan alat secara bergilir, dahulu perlahan kemudian dengan detik yang stabil.
+**Aktiviti 2 — Latihan Tiga Skor Perkusi (10 minit):** Murid berlatih skor latihan perkusi 1 hingga 3 halaman 59 menggunakan alat secara bergilir, dahulu perlahan kemudian dengan detik yang stabil.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak pengecaman tiga bunyi, ketepatan pola dua latihan dan pengendalian alat.
 

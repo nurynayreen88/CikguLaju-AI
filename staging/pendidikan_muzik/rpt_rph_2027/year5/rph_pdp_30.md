@@ -10,15 +10,15 @@
 
 **Objektif:** Murid menyanyi frasa Joget Khatulistiwa dengan pic, tempo dan tempat nafas betul.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru menyanyikan frasa pembuka Joget Khatulistiwa; murid mengetuk detik dan mengenal tanda nafas pada skor.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru menunjukkan tanda nafas dalam skor dan memperdengarkan contoh frasa lagu.
+**Aktiviti 1 — Kenal Tanda Nafas dan Frasa Joget (8 minit):** Guru menunjukkan tanda nafas dalam skor dan memperdengarkan contoh frasa lagu.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid mengajuk frasa dan menyanyi dalam kumpulan pada tempo yang ditetapkan.
+**Aktiviti 2 — Nyanyian Gema Joget Khatulistiwa (10 minit):** Murid mengajuk frasa dan menyanyi dalam kumpulan pada tempo yang ditetapkan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak pic, nafas dan tempo.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Murid menyanyikan satu frasa dengan pic, tempo dan tempat nafas tepat; guru membimbing pembetulan jika perlu.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 78-79; instrumen/kad/skor mengikut PdP.
 

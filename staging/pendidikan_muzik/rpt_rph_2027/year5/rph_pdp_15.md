@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Guru memainkan petikan Hot Cross Buns atau Bow Wow Wow daripada Unit 4. Murid mengenal pasti tempo lagu dan mencadangkan cara mengiringi nyanyian.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru membentuk dua kumpulan. Kumpulan pertama merancang nyanyian dengan perkusi dan kumpulan kedua merancang nyanyian dengan pergerakan. Murid memilih satu lagu daripada Unit 1–5.
+**Aktiviti 1 — Pilih Lagu dan Bentuk Kumpulan Projek (8 minit):** Guru membentuk dua kumpulan. Kumpulan pertama merancang nyanyian dengan perkusi dan kumpulan kedua merancang nyanyian dengan pergerakan. Murid memilih satu lagu daripada Unit 1–5.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid mengisi borang tugas, menyediakan audio latihan dan menetapkan jadual. Guru membimbing setiap kumpulan berlatih satu bahagian lagu.
+**Aktiviti 2 — Agih Tugasan dan Jadual Latihan (10 minit):** Murid mengisi borang tugas, menyediakan audio latihan dan menetapkan jadual. Guru membimbing setiap kumpulan berlatih satu bahagian lagu.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak kesediaan bahan, peranan, masa dan kerjasama.
 
-**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
+**Penutup (2 minit):** Wakil kumpulan menerangkan tugasan, bahan dan jadual latihan yang dipersetujui; guru menyemak kesiapsiagaan projek.
 
 **Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK m/s 44–45, Audio 49–54 sebagai contoh Unit 4, alat perkusi dan borang projek.
 
