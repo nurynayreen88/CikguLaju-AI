@@ -1,6 +1,6 @@
 {
   "status": "QA_ONLY_NOT_FOR_RUNTIME",
-  "note": "Nine objective and activity patches, original objectives preserved for comparison. Native objective+activity validation and academic visual review required.",
+  "note": "14 objective/activities correction drafts; 17 activity-only hold drafts in batch36. ID1387 overlaps existing activity draft and must supersede it only after approval. No runtime changes.",
   "records": [
     {
       "id": 1641,
@@ -288,6 +288,156 @@
         "1.6.4"
       ],
       "source_evidence": "Original Rozayus RPT T5 SK 2026 (Drive 1LfsnR2HNyMlDT7aHVzsrH2MVNaMPbg9v), week 15, SP1.6.3 explicitly specifies Mad Iwad; first objective and steps 1–3 corroborate it. DSKP printed pp24–25. Original objective 2 and activity 4 incorrectly name Mad Badal. Visual/Jawi approval pending.",
+      "status": "OBJECTIVE_AND_ACTIVITY_QA_NOT_READY"
+    },
+    {
+      "id": 1387,
+      "year": 3,
+      "pdp": 1,
+      "unit": "Al-Quran",
+      "original_objective": "موريد داڤت :\n١. ممباچ سورة الكافرون اية ٣-١ دڠن بتول دان لنچر.\n٢. ممباچ سورة الكافرون اية ٣-١ دڠن بتول دان برتجويد.",
+      "corrected_objective": "موريد داڤت :\n١. ممباچ سورة الكافرون اية ١ هيڠݢ ٣ دڠن بتول دان لنچر.\n٢. ممباچ سورة الكافرون اية ١ هيڠݢ ٣ دڠن بتول دان برتجويد.",
+      "original_source_note": "1. ݢورو ممڤردڠركن باچاءن سورة الكافرون دري رقمن تيليفون بيمبيت. 2. لاتيه توبي مثبوت/ممباچ كلمة، ڤوتوڠن اية دان اية سورة الكافرون اية 3-1 دڠن بتول دان برتجويد.. 3.تسميع باچاءن سچارا برڤاسڠن (think pair share) دان دالم كومڤولن (round robin). 4. ممڤردڠركن باچاءن سورة الكافرون برداسركن جدوال يڠ دسدياكن.",
+      "activities": [
+        [
+          "دڠر الكافرون اية ١ هيڠݢ ٣",
+          "ݢورو ممڤردڠرکن باچاءن سورة الكافرون. موريد ممباچ ڤوتوڠن اية ١ هيڠݢ ٣ سچارا تلقي."
+        ],
+        [
+          "سماکن تيݢ اية اول",
+          "موريد برݢيلير ممباچ تيݢ اية اول دان مڽمق سبوتن راکن."
+        ],
+        [
+          "تسميع باچاءن الكافرون",
+          "موريد ممڤردڠرکن باچاءن اية ١ هيڠݢ ٣. ݢورو مڽمق کلنچرن دان تجويد."
+        ]
+      ],
+      "sk_codes": [
+        "1.1"
+      ],
+      "sp_codes": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "source_evidence": "Original 2026 T3 RPT repeats descending 3-1 in objective and activity; active audit confirms same; normalize to explicit 1 hingga 3, scope unchanged. RTL visual pending; overlaps existing staged activity draft.",
+      "status": "OBJECTIVE_AND_ACTIVITY_QA_NOT_READY"
+    },
+    {
+      "id": 1391,
+      "year": 3,
+      "pdp": 5,
+      "unit": "Al-Quran",
+      "original_objective": "موريد داڤت :\n١. ممباچ سورة الكافرون اية ٥-٤ دڠن بتول دان لنچر.\n٢. ممباچ سورة الكافرون اية ٥-٤ دڠن بتول دان برتجويد.",
+      "corrected_objective": "موريد داڤت :\n١. ممباچ سورة الكافرون اية ٤ هيڠݢ ٥ دڠن بتول دان لنچر.\n٢. ممباچ سورة الكافرون اية ٤ هيڠݢ ٥ دڠن بتول دان برتجويد.",
+      "original_source_note": "1. ݢورو ممڤردڠركن باچاءن سورة الكافرون دري رقمن تيليفون بيمبيت. 2. لاتيه توبي مثبوت/ممباچ كلمة، ڤوتوڠن اية دان اية سورة الكافرون اية 5-4 دڠن بتول دان برتجويد.. 3.تسميع باچاءن سچارا برڤاسڠن (think pair share) دان دالم كومڤولن (round robin). 4. ممڤردڠركن باچاءن سورة الكافرون برداسركن جدوال يڠ دسدياكن.",
+      "activities": [
+        [
+          "دڠر الكافرون اية ٤ هيڠݢ ٥",
+          "ݢورو ممڤردڠرکن باچاءن سورة الكافرون. موريد ممباچ اية ٤ دان ٥ سچارا مشافهة."
+        ],
+        [
+          "بنديڠ سبوتن دوا اية",
+          "موريد ممباچ ڤوتوڠن اية ٤ دان ٥ برڤاسڠن دان مڽمق سبوتن راکن."
+        ],
+        [
+          "تسميع دوا اية ساسرن",
+          "موريد ممڤردڠرکن باچاءن اية ٤ دان ٥ مڠيکوت جدوال. ݢورو منيلاي تجويد."
+        ]
+      ],
+      "sk_codes": [
+        "1.1"
+      ],
+      "sp_codes": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "source_evidence": "Original 2026 T3 RPT and active source use 5-4; explicit 4 hingga 5, scope unchanged. RTL visual pending.",
+      "status": "OBJECTIVE_AND_ACTIVITY_QA_NOT_READY"
+    },
+    {
+      "id": 1445,
+      "year": 3,
+      "pdp": 59,
+      "unit": "Ibadah",
+      "original_objective": "موريد داڤت :\n١. منرڠكن سناراي ٧-١٢ درڤد يڠ ممبطلكن صلاة دڠن بتول .\n٢. مثلسايكن ٣ ڤرمسئلهن درڤد ڤركارا يڠ ممبطلكن صلاة دڠن بتول.",
+      "corrected_objective": "موريد داڤت :\n١. منرڠكن انم چونتوه ڤركارا يڠ ممبطلكن صلاة دڠن بتول .\n٢. مثلسايكن ٣ ڤرمسئلهن درڤد ڤركارا يڠ ممبطلكن صلاة دڠن بتول.",
+      "original_source_note": "1.سومبڠ سارن تنتڠ عباده صلاة يڠ موريد لقساناكن. 2. لاتيه توبي مثبوتكن سناراي 13-18 درڤد يڠ ممبطلكن صلاة دان ݢورو منجلسكنث. 3. اكتيؤيتي مثنارايكن 13-18 درڤد يڠ ممبطلكن صلاة. (round robin) 4. اكتيؤيتي ڤربينچڠن 3 ڤرمسئلهن درڤد ڤركارا يڠ ممبطلكن صلاة. (gallery walk) 5. روموسن چارا صلاة يڠ سمڤورنا دان كسنث دالم ملاهيركن ڤريبادي موليا.",
+      "activities": [
+        [
+          "کنل ڤرکارا ممبطلكن صلاة",
+          "ݢورو ممبيمبيڠ موريد ممباچ سناراي دالم بوکو تيکس دان منرڠکن انم چونتوه ڤمبطل صلاة."
+        ],
+        [
+          "بينچڠ تيݢ سيتواسي صلاة",
+          "موريد بربينچڠ تنتڠ سيتواسي برکاتاکات دڠن سڠاج، ماکن دان برڤاليڠ دادا دري قبلة."
+        ],
+        [
+          "سماکن جاوڤن سيتواسي",
+          "موريد منرڠکن انم چونتوه دان تيندکن يڠ بتول باݢي تيݢ سيتواسي. ݢورو منيلاي حوراين."
+        ]
+      ],
+      "sk_codes": [
+        "4.2"
+      ],
+      "sp_codes": [
+        "4.2.1",
+        "4.2.2"
+      ],
+      "source_evidence": "Original T3 RPT preceding rows teach 1–6 then 7–12; disputed row conflicts 7–12 versus 13–18. Textbook printed pp88–91 SP4.2.1/4.2.2 lists invalidators and situations, does not substantiate 13–18. Use six textbook examples and three scenarios without unsupported numbering. Editorial scope decision, visual review pending.",
+      "status": "OBJECTIVE_AND_ACTIVITY_QA_NOT_READY"
+    },
+    {
+      "id": 1836,
+      "year": 6,
+      "pdp": 6,
+      "unit": "Al-Quran",
+      "original_objective": "موريد داڤت : ممباچ الشورى اية ٣٣-٧٧ دڠن بتول دان برتجويد",
+      "corrected_objective": "موريد داڤت : ممباچ الشورى اية ٣٣ هيڠݢ ٥١ دڠن بتول دان برتجويد",
+      "original_source_note": "1. ممباچ اية سچارا تلقي دان مشاڤهة 2. ممبتولكن باچاءن يڠ كورڠ فصيح 3. ممبيمبيڠ راكن سباي 4. ݢورو مريكود ڤنچاڤاين موريد.",
+      "activities": [
+        [
+          "تلقي الشورى ٣٣-٥١",
+          "ݢورو ممبيمبيڠ باچاءن اية ٣٣ هيڠݢ ٥١. موريد مڠيکوت باچاءن سچارا تلقي دان مشافهة."
+        ],
+        [
+          "سماکن ڤتيقن الشورى",
+          "موريد ممباچ ڤتيقن اية ساسرن برڤاسڠن دان منونجوق کلمة يڠ ڤرلو دبتولکن."
+        ],
+        [
+          "رکود باچاءن الشورى",
+          "موريد ممباچ سمولا بهاݢين يڠ دبتولکن. ݢورو مريكود ڤنچاڤاين تجويد."
+        ]
+      ],
+      "sk_codes": [],
+      "sp_codes": [],
+      "source_evidence": "Original T6 RPT and active PdP2/10 confirm adjacent ranges 1–32 and 52–53 plus al-Zukhruf. Proposed 33–51 inferred for continuity, not original literal; mushaf/academic approval pending.",
+      "status": "OBJECTIVE_AND_ACTIVITY_QA_NOT_READY"
+    },
+    {
+      "id": 1946,
+      "year": 6,
+      "pdp": 116,
+      "unit": "Al-Quran",
+      "original_objective": "موريد داڤت : ممباچ سورة المعارج ٤٠-٤٤ نوح ١-٢٨ الجن ١-١٣ الزمر ١-٥ دڠن بتول دان برتجويد",
+      "corrected_objective": "موريد داڤت : ممباچ سورة المعارج ٤٠-٤٤ نوح ١-٢٨ الجن ١-١٣ دڠن بتول دان برتجويد",
+      "original_source_note": "1. ممباچ اية سچرا تلقي دان مشافهة 2. ممبتولكن باچاءن يڠ كورڠ فصيح 3. ممبيمبيڠ راكن سباي 4. ݢورو مريكود ڤنچاڤاين موريد.",
+      "activities": [
+        [
+          "تلقي المعارج، نوح دان الجن",
+          "ݢورو ممبيمبيڠ باچاءن المعارج ٤٠-٤٤، نوح ١-٢٨ دان الجن ١-١٣. موريد مڠيکوت ڤتيقن."
+        ],
+        [
+          "سماکن تيݢ ڤتيقن سورة",
+          "موريد برݢيلير ممباچ ڤتيقن ستياڤ سورة دان راکن ممبيمبيڠ ڤمبتولن باچاءن."
+        ],
+        [
+          "رکود باچاءن جزء ٢٩",
+          "موريد ممباچ سمولا ڤتيقن يڠ کورڠ فصيح. ݢورو مريكود ڤنچاڤاين مڠيکوت سورة."
+        ]
+      ],
+      "sk_codes": [],
+      "sp_codes": [],
+      "source_evidence": "Original T6 RPT Juz29 and active PdP112/120 confirm continuous al-Maarij/Nuh/al-Jinn; remove al-Zumar 1–5 as out-of-juz editorial correction. Verify mushaf and academic approval.",
       "status": "OBJECTIVE_AND_ACTIVITY_QA_NOT_READY"
     }
   ]
