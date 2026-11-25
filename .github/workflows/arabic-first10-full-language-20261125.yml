@@ -1,4 +1,4 @@
-name: Arabic 70 full-language Word and A4 QA
+name: Arabic 85 full-language Word and A4 QA
 on:
   pull_request:
     paths:
@@ -31,7 +31,7 @@ jobs:
         run: |
           timeout 240 sudo apt-get update
           timeout 1200 sudo apt-get -o Acquire::Retries=3 install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri
-      - name: Convert all 70 Word candidates and check A4
+      - name: Convert all 85 Word candidates and check A4
         run: |
           python - <<'PY'
           import subprocess
@@ -39,7 +39,7 @@ jobs:
           import fitz
           out=Path("qa-arabic-full-standards").resolve()
           files=sorted(out.glob("*.docx"))
-          assert len(files)==70
+          assert len(files)==85
           pdf=out/"pdf"
           pdf.mkdir()
           for start in range(0,len(files),24):
@@ -53,13 +53,13 @@ jobs:
               with fitz.open(p) as d:
                   if len(d)!=1 or abs(d[0].rect.width-595.28)>2 or abs(d[0].rect.height-841.89)>2 or not d[0].get_text().strip():
                       errors.append((f.name,"A4/page/text",len(d)))
-          print("A4 screen",70-len(errors),"/70",errors)
+          print("A4 screen",85-len(errors),"/85",errors)
           assert not errors
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: arabic-70-full-language-review
+          name: arabic-85-full-language-review
           path: |
             qa-arabic-full-standards/*.docx
             qa-arabic-full-standards/*.json
