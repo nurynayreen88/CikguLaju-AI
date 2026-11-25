@@ -1,4 +1,4 @@
-"""Offline 144 full Arabic translations, no production mutation."""
+"""Offline 159 full Arabic translations, no production mutation."""
 import csv
 import json
 import re
@@ -16,8 +16,8 @@ def main():
     translations = json.loads((ROOT/"audits/arabic_language_first10_20261125.json").read_text(encoding="utf-8"))["records"]
     with INDEX.open(encoding="utf-8-sig",newline="") as f:
         rows = {(int(r["tahun"]), int(r["pdp"])):r for r in csv.DictReader(f)}
-    assert len(translations)==144
-    assert len({(t['year'], t['pdp']) for t in translations})==144
+    assert len(translations)==159
+    assert len({(t['year'], t['pdp']) for t in translations})==159
     for tr in translations:
         y,n=tr["year"],tr["pdp"]
         row=rows[y,n]
@@ -38,6 +38,6 @@ def main():
     render(row,bank,manual,arabic_translation=tr,manual_reflection="Catatan guru kekal.")
     assert Document(manual).tables[-1].cell(2,1).text=="Catatan guru kekal."
     manual.unlink()
-    print("144/144 Arabic-only candidate documents; original teacher manual reflection unchanged.")
+    print("159/159 Arabic-only candidate documents; original teacher manual reflection unchanged.")
 if __name__=="__main__":
     main()
