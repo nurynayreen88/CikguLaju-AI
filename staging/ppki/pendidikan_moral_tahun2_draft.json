@@ -35,7 +35,8 @@
       "closure": "Pilih satu tindakan menjaga alam.",
       "assessment": "Rekod pencapaian: 3/4 tindakan menjaga dikenal pasti. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 tindakan menjaga dikenal pasti",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "002",
@@ -60,7 +61,8 @@
       "closure": "Pilih tugas penjagaan esok.",
       "assessment": "Rekod pencapaian: 3 langkah penjagaan ditunjukkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 langkah penjagaan ditunjukkan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "003",
@@ -85,7 +87,8 @@
       "closure": "Nyatakan satu manfaat membantu.",
       "assessment": "Rekod pencapaian: 2/3 tindakan membantu dipilih. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2/3 tindakan membantu dipilih",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "004",
@@ -110,7 +113,8 @@
       "closure": "Ulang tawaran bantuan.",
       "assessment": "Rekod pencapaian: 2 tawaran bantuan sopan ditunjukkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 tawaran bantuan sopan ditunjukkan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "005",
@@ -135,7 +139,8 @@
       "closure": "Pilih satu rutin sendiri.",
       "assessment": "Rekod pencapaian: 3/4 rutin tanggungjawab dikenal pasti. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 rutin tanggungjawab dikenal pasti",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "006",
@@ -160,7 +165,8 @@
       "closure": "Tanda tugasan yang selesai.",
       "assessment": "Rekod pencapaian: 3 langkah tugasan disiapkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 langkah tugasan disiapkan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "007",
@@ -185,7 +191,8 @@
       "closure": "Ucap terima kasih kepada pasangan.",
       "assessment": "Rekod pencapaian: 3/4 situasi dipadankan dengan ucapan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 situasi dipadankan dengan ucapan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "008",
@@ -210,7 +217,8 @@
       "closure": "Tunjukkan kad kepada penerima pilihan.",
       "assessment": "Rekod pencapaian: 2 tindakan penghargaan ditunjukkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 tindakan penghargaan ditunjukkan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "009",
@@ -235,7 +243,8 @@
       "closure": "Ulang ujaran meminta izin.",
       "assessment": "Rekod pencapaian: 3/4 ujaran sopan dipilih. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 ujaran sopan dipilih",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "010",
@@ -260,7 +269,8 @@
       "assessment": "Rekod pencapaian: 3/4 tindakan hormat dikenal pasti. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 tindakan hormat dikenal pasti",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "011",
@@ -284,7 +294,8 @@
       "assessment": "Rekod pencapaian: 2 tindakan kasih sayang ditunjukkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 tindakan kasih sayang ditunjukkan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "012",
@@ -308,7 +319,8 @@
       "assessment": "Rekod pencapaian: 3/4 pembahagian objek dibuat secara adil. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 pembahagian objek dibuat secara adil",
       "status": "KONFLIK_PENOMBORAN_DSKP",
-      "source_note": "DSKP hlm. 35 (nilai 8 Keadilan) mencetak SK 4.1, SP 8.1.1, 4.1.2 dan 4.1.3. Kod 8.1.2 draf bukan kod cetak; perlu semakan silang sumber rasmi sebelum terbit. Aktiviti amali lebih hampir kepada SP amalan keadilan (4.1.3 cetak)."
+      "source_note": "DSKP hlm. 35 (nilai 8 Keadilan) mencetak SK 4.1, SP 8.1.1, 4.1.2 dan 4.1.3. Kod 8.1.2 draf bukan kod cetak; perlu semakan silang sumber rasmi sebelum terbit. Aktiviti amali lebih hampir kepada SP amalan keadilan (4.1.3 cetak).",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "013",
@@ -332,7 +344,8 @@
       "assessment": "Rekod pencapaian: 2 kehendak disampaikan secara sopan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 kehendak disampaikan secara sopan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "014",
@@ -357,7 +370,8 @@
       "assessment": "Rekod pencapaian: 3/4 pilihan perlakuan jujur dikenal pasti. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 pilihan perlakuan jujur dikenal pasti",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "015",
@@ -381,7 +395,8 @@
       "assessment": "Rekod pencapaian: 3 langkah tugasan disiapkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 langkah tugasan disiapkan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "DSKP hlm. 41: amalan rajin dalam bilik darjah; disemak secara visual."
+      "source_note": "DSKP hlm. 41: amalan rajin dalam bilik darjah; disemak secara visual.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "016",
@@ -405,7 +420,8 @@
       "assessment": "Rekod pencapaian: 2 tugas kumpulan disiapkan mengikut peranan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 tugas kumpulan disiapkan mengikut peranan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "017",
@@ -429,7 +445,8 @@
       "assessment": "Rekod pencapaian: 3/4 pilihan penggunaan secukupnya tepat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 pilihan penggunaan secukupnya tepat",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     },
     {
       "pdp": "018",
@@ -453,9 +470,71 @@
       "assessment": "Rekod pencapaian: 2 situasi giliran diselesaikan dengan sopan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 situasi giliran diselesaikan dengan sopan",
       "status": "KOD_DSKP_DIPADANKAN_DRAF",
-      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan."
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
     }
   ],
   "audit_round": "2026-11-26: semakan kod sasaran, bukan kelulusan penuh",
-  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan."
+  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan.",
+  "units": {
+    "1": "Kepercayaan kepada Tuhan",
+    "2": "Baik hati",
+    "3": "Bertanggungjawab",
+    "4": "Berterima kasih",
+    "5": "Hemah tinggi",
+    "6": "Hormat",
+    "7": "Kasih sayang",
+    "8": "Keadilan",
+    "9": "Keberanian",
+    "10": "Kejujuran",
+    "11": "Kerajinan",
+    "12": "Kerjasama",
+    "13": "Kesederhanaan",
+    "14": "Toleransi"
+  },
+  "content_standards": {
+    "1.1": "Penghargaan ciptaan Tuhan.",
+    "2.1": "Sikap baik hati terhadap guru.",
+    "3.1": "Tanggungjawab diri di sekolah.",
+    "4.1": "Penghargaan kepada orang lain.",
+    "5.1": "Tutur kata berhemah.",
+    "6.1": "Hormat warga sekolah.",
+    "7.1": "Kasih sayang kepada ibu bapa.",
+    "8.1": "Keadilan dalam pergaulan kelas (kod cadangan, cetakan bercanggah).",
+    "9.1": "Keberanian menyuarakan kehendak di kelas.",
+    "10.1": "Kejujuran kepada keluarga.",
+    "11.1": "Kerajinan di kelas.",
+    "12.1": "Kerjasama bersama guru.",
+    "13.1": "Kesederhanaan di kelas.",
+    "14.1": "Toleransi terhadap rakan."
+  },
+  "learning_standards": {
+    "1.1.1": "Namakan contoh ciptaan Tuhan.",
+    "1.1.2": "Kenal pasti cara menghargai ciptaan Tuhan.",
+    "1.1.3": "Jelaskan kepentingan menghargainya.",
+    "2.1.1": "Nyatakan perlakuan baik hati terhadap guru.",
+    "2.1.2": "Terangkan manfaat membantu guru.",
+    "2.1.3": "Tunjukkan sikap baik hati kepada guru.",
+    "3.1.1": "Nyatakan tanggungjawab terhadap diri di sekolah.",
+    "3.1.2": "Jelaskan kepentingan tanggungjawab diri.",
+    "3.1.3": "Amalkan tanggungjawab terhadap diri di sekolah.",
+    "4.1.1": "Nyatakan contoh penghargaan.",
+    "4.1.2": "Terangkan manfaat penghargaan.",
+    "4.1.3": "Tunjukkan perlakuan berterima kasih.",
+    "5.1.1": "Nyatakan perlakuan berhemah.",
+    "5.1.2": "Terangkan manfaat berhemah.",
+    "5.1.3": "Tunjukkan perlakuan berhemah.",
+    "6.1.1": "Nyatakan perlakuan hormat warga sekolah.",
+    "6.1.3": "Demonstrasikan cara menghormati warga sekolah.",
+    "7.1.3": "Tunjukkan kasih sayang kepada ibu bapa.",
+    "8.1.2": "Kenal pasti perlakuan adil (kod sementara, tidak diluluskan).",
+    "9.1.3": "Tunjukkan keberanian menyatakan kehendak di kelas.",
+    "10.1.1": "Nyatakan contoh jujur kepada keluarga.",
+    "10.1.3": "Demonstrasikan sikap jujur kepada keluarga.",
+    "11.1.3": "Amalkan kerajinan di kelas.",
+    "12.1.3": "Tunjukkan kerjasama bersama guru.",
+    "13.1.3": "Demonstrasikan kesederhanaan di kelas.",
+    "14.1.3": "Tunjukkan toleransi terhadap rakan."
+  },
+  "standard_text_kind": "Parafrasa ringkas untuk audit; bukan huraian verbatim rasmi."
 }
