@@ -119,6 +119,27 @@
       "pdp": 89,
       "reason": "Objective and memorization steps target Surah al-Asr but first recording step names Surah al-Kafirun. Verify original textbook and RPT before editorial revision.",
       "source_run": 45520794883
+    },
+    {
+      "id": 1479,
+      "year": 3,
+      "pdp": 93,
+      "reason": "Objective targets al-Asr memorization; recording step names al-Kafirun.",
+      "source_run": 45521707716
+    },
+    {
+      "id": 1751,
+      "year": 5,
+      "pdp": 65,
+      "reason": "Objective mixes al-Asr and al-Qadr while source activities focus on al-Qadr; verify source scope.",
+      "source_run": 45520998464
+    },
+    {
+      "id": 1946,
+      "year": 6,
+      "pdp": 116,
+      "reason": "Sequence names al-Zumar after al-Jinn and before next session of al-Jinn; verify original RPT and mushaf, do not substitute surah by inference.",
+      "source_run": 45520998464
     }
   ]
 }
