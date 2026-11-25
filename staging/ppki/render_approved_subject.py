@@ -34,8 +34,15 @@ def render_approved_lesson(catalog, lesson, extension, teacher):
                 raise ValueError(f"Missing verified description: {code}")
             lines.append(f"{code} {description.strip()}")
         return "\n".join(lines)
-    sk = standard_lines(sk_codes, catalog["content_standards"])
-    sp = standard_lines(sp_codes, catalog["learning_standards"])
+    standard_source = catalog
+    if catalog.get("component_standards"):
+        standard_source = catalog["component_standards"].get(lesson.get("component"))
+        if not standard_source:
+            raise ValueError("Missing component-specific standard mapping")
+    if catalog.get("format_blocker"):
+        raise ValueError("Subject-specific document format has not passed approval")
+    sk = standard_lines(sk_codes, standard_source["content_standards"])
+    sp = standard_lines(sp_codes, standard_source["learning_standards"])
     if lesson["success_criterion"] != lesson["reflection_criterion"]:
         raise ValueError("Reflection criterion mismatch")
     unit_label = catalog.get("units", {}).get(str(lesson["unit"]))
