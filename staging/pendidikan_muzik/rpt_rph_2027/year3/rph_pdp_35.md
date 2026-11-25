@@ -10,13 +10,13 @@
 
 **Objektif:** Mencipta satu corak irama lapan detik dan memberikan dua maklumat tepat tentang ciri muzik rock atau peranan ahli kumpulan rock.
 
-**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
+**Kriteria kejayaan:** Murid mempersembahkan corak lapan detik dan memberikan dua maklumat tepat tentang muzik rock atau peranan pemuziknya.
 
 **Set Induksi — 4 minit:** Guru mengimbas ciri Muzik Rock berdasarkan buku Kesenian Tahun 3 m/s 96 melalui kad gambar dan corak detik yang ditunjukkan secara langsung.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyusun kad ikon sepanjang lapan detik dan menepuk corak ciptaan; kumpulan menyemak jumlah detik dan memperbaiki satu kesilapan.
+**Aktiviti 1 — Cipta corak lapan detik:** Murid menyusun kad ikon sepanjang lapan detik dan menepuk corak ciptaan; kumpulan menyemak jumlah detik dan memperbaiki satu kesilapan.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Kumpulan mempersembahkan corak dan memberikan ulasan dua ciri berkaitan muzik rock atau tugas penyanyi, dram, gitar utama/gitar bes berdasarkan penerangan yang dirujuk.
+**Aktiviti 2 — Persembahan dan apresiasi rock:** Kumpulan mempersembahkan corak dan memberikan ulasan dua ciri berkaitan muzik rock atau tugas penyanyi, dram, gitar utama/gitar bes berdasarkan penerangan yang dirujuk.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru merekod dua kriteria: irama lapan detik tepat dan sekurang-kurangnya dua maklumat apresiasi berpandukan rujukan.
 
