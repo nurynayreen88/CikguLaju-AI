@@ -1,0 +1,28 @@
+name: PI RPT 2027 final 698 source alignment
+on:
+  pull_request:
+    paths:
+      - tools/export_pi_final_rpt_source_20261125.py
+      - .github/workflows/pi-rpt-final-source-20261125.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export-final-rpt-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: bash build_jawi.sh
+      - run: python -m tools.export_pi_final_rpt_source_20261125
+        env:
+          PYTHONUNBUFFERED: "1"
+          CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pi-rpt-final-698-source
+          path: qa/pi-rpt-final-source/records.json
+          retention-days: 7
