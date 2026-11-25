@@ -10,7 +10,7 @@ def render_approved_lesson(catalog, lesson, extension, teacher):
     """Require per-record approval and full source-backed standard text."""
     if catalog.get("status") != "READY" or lesson.get("status") != "READY":
         raise ValueError("PPKI lesson has not passed curriculum approval")
-    if lesson.get("source_note", "").startswith("KONFLIK"):
+    if str(lesson.get("source_note") or "").startswith("KONFLIK"):
         raise ValueError("Unresolved source conflict")
     if catalog.get("year") not in (2, 3, 4, 5, 6):
         raise ValueError("Invalid PPKI year")
