@@ -9,15 +9,15 @@
 
 **Objektif:** Mengenal bentuk lagu AA dan AB serta menunjukkan dua pola gerak mengikut bahagian muzik.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **BUNGA GERGASI**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru menyuarakan dua petikan dengan bahagian berulang dan berbeza. Murid mengangkat kad A atau B.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperdengarkan petikan Bapaku Pulang dan Burung Kakaktua lalu membantu murid menandakan bahagian A dan B.
+**Aktiviti 1 — Kenali bentuk AA dan AB:** Guru memperdengarkan petikan Bapaku Pulang dan Burung Kakaktua lalu membantu murid menandakan bahagian A dan B.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid memilih formasi gerak A/B dan mengubah gerakan semasa bahagian lagu berubah menggunakan persembahan ringkas.
+**Aktiviti 2 — Gerakan mengikut bahagian lagu:** Murid memilih formasi gerak A/B dan mengubah gerakan semasa bahagian lagu berubah menggunakan persembahan ringkas.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak pengecaman bentuk dan keselarasan perubahan gerak dengan muzik.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid menamakan bentuk lagu dan menunjukkan perubahan gerak apabila bahagian bertukar.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
