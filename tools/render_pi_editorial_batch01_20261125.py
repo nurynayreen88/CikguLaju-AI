@@ -10,7 +10,7 @@ from web.rph_pi_jawi_numerals_20261124 import jawi_display_digits
 from docx import Document
 import fitz
 
-def compare_word_layout(baseline, candidate, activity_titles, original_objective=None, corrected_objective=None):
+def compare_word_layout(baseline, candidate, activity_titles, original_objective=None, corrected_objective=None, additional_changes=()):
     """Compare actual emitted DOCX structure and all non-activity cells."""
     assert len(baseline.tables)==len(candidate.tables)
     changed=[]
@@ -26,7 +26,8 @@ def compare_word_layout(baseline, candidate, activity_titles, original_objective
                     changed.append((ti,ri,ci))
                     activity_changed=all(normalized(title) in normalized(new_cell.text) for title in activity_titles)
                     objective_changed=bool(corrected_objective and normalized(original_objective) in normalized(old_cell.text) and normalized(corrected_objective) in normalized(new_cell.text))
-                    assert activity_changed or objective_changed, ("unexpected changed cell",ti,ri,ci)
+                    related_changed=any(normalized(old) in normalized(old_cell.text) and normalized(new) in normalized(new_cell.text) for old,new in additional_changes if old and new)
+                    assert activity_changed or objective_changed or related_changed, ("unexpected changed cell",ti,ri,ci)
     assert changed, "No actual activity cell changed"
     return changed
 
@@ -106,6 +107,7 @@ def main():
             baseline_document=Document(str(baseline_path))
             baseline_path.unlink(missing_ok=True)
             row_hits=[]
+            extra_changes=[]
             expected_objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
             expected_sp=normalized(rows.get("STANDARD PEMBELAJARAN"))
             def replace_activity(s,current,boundary):
@@ -123,6 +125,19 @@ def main():
                 if corrected_objective:
                     updated[objective_key]=jawi_display_digits(corrected_objective)
                     allowed.add(objective_key)
+                    related={"KRITERIA KEJAYAAN":item.get("corrected_success_criteria")}
+                    if not str(s.get("rph_teacher_reflection") or "").strip():
+                        related["REFLEKSI"]=item.get("corrected_auto_reflection")
+                    if item.get("corrected_sk_text"):
+                        current_sk=normalized(current.get("STANDARD KANDUNGAN"))
+                        assert current_sk in {normalized(item["original_sk_text"]),normalized(item["corrected_sk_text"])}
+                        related["STANDARD KANDUNGAN"]=item["corrected_sk_text"]
+                    for key,value in related.items():
+                        if value and key in current:
+                            if normalized(current[key])!=normalized(value):
+                                extra_changes.append((current[key],value))
+                            updated[key]=jawi_display_digits(value)
+                            allowed.add(key)
                 assert {k:v for k,v in updated.items() if k not in allowed}=={k:v for k,v in current.items() if k not in allowed}
                 return updated
             def qa_rows(s,t):
@@ -149,11 +164,16 @@ def main():
                 word=Path(runtime.create_word_file(state,native,unique))
                 pdf=Path(runtime.create_pdf_file(state,native,unique+"p"))
                 document=Document(str(word))
-                changed_cells=compare_word_layout(baseline_document,document,[title for title,body in item["activities"]],item["objective"],corrected_objective)
+                changed_cells=compare_word_layout(baseline_document,document,[title for title,body in item["activities"]],item["objective"],corrected_objective,extra_changes)
                 whole="\n".join(c.text for t in document.tables for r in t.rows for c in r.cells)
                 if corrected_objective:
                     assert normalized(corrected_objective) in normalized(whole),(tag,"corrected objective absent")
                     assert normalized(item["objective"]) not in normalized(whole),(tag,"old objective still printed")
+                    for key in ("corrected_success_criteria","corrected_auto_reflection","corrected_sk_text"):
+                        if item.get(key):
+                            assert normalized(item[key]) in normalized(whole),(tag,"missing related field",key)
+                    if item.get("original_sk_text"):
+                        assert normalized(item["original_sk_text"]) not in normalized(whole),(tag,"old SK still printed")
                 print("PI_QA_RENDER_HOOKS",tag,row_hits,flush=True)
                 print("PI_QA_WORD_ACTUAL",tag,repr(whole[:5000]),flush=True)
                 for title,body in item["activities"]:
