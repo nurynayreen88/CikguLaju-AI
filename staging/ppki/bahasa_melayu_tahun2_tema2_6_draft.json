@@ -659,7 +659,8 @@
       "closure": "Semak satu perkataan dengan kad jawapan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan ditulis dengan huruf lengkap. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 perkataan ditulis dengan huruf lengkap",
-      "source_note": null
+      "source_note": "DSKP Asas 3M T2 hlm. 30 menunjukkan 3.2.3 tanpa huraian dan 3.2.4 dengan huraian penulisan. Kod BT perlu disemak silang.",
+      "status": "KONFLIK_PENOMBORAN_DSKP"
     },
     {
       "pdp": "041",
@@ -811,7 +812,8 @@
       "closure": "Baca dua jawapan silang",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 jawapan dibaca dan ditulis betul. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 jawapan dibaca dan ditulis betul",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "DSKP Asas 3M T2 hlm. 30 menunjukkan 3.2.3 tanpa huraian dan 3.2.4 dengan huraian penulisan. Kod BT perlu disemak silang.",
+      "status": "KONFLIK_PENOMBORAN_DSKP"
     },
     {
       "pdp": "047",
@@ -1811,7 +1813,8 @@
       "closure": "Semak titik pada ayat",
       "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat berkaitan gambar ditulis. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "3/4 ayat berkaitan gambar ditulis",
-      "source_note": null
+      "source_note": "DSKP Asas 3M T2 hlm. 30 menunjukkan 3.2.3 tanpa huraian dan 3.2.4 dengan huraian penulisan. Kod BT perlu disemak silang.",
+      "status": "KONFLIK_PENOMBORAN_DSKP"
     },
     {
       "pdp": "087",
@@ -2039,7 +2042,8 @@
       "closure": "Semak satu jawapan",
       "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan dilengkap dan ditulis tepat. Catat tahap bantuan secara berasingan.",
       "reflection_criterion": "4/6 perkataan dilengkap dan ditulis tepat",
-      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit."
+      "source_note": "DSKP Asas 3M T2 hlm. 30 menunjukkan 3.2.3 tanpa huraian dan 3.2.4 dengan huraian penulisan. Kod BT perlu disemak silang.",
+      "status": "KONFLIK_PENOMBORAN_DSKP"
     },
     {
       "pdp": "096",
