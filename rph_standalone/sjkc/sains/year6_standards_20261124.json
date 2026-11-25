@@ -1,0 +1,363 @@
+{
+  "year": 6,
+  "status": "EDITORIAL_LABELS_QA_ONLY",
+  "source_rpt": "rpt_2027/sjkc/sains/year_6_kuala_lumpur.json",
+  "source_git_blob": "6871677de4a199e74141b455f9f82ed881140b0b",
+  "dskp_reference": "https://anyflip.com/mhwl/hmbd/basic",
+  "policy": "Editorial Chinese topic labels based on original RPT and partial DSKP cross-check, not verbatim official descriptions. Independent semantic verification required before release. RPT unchanged.",
+  "sk": {
+    "1.1": "科学程序技能",
+    "2.1": "人类繁殖",
+    "2.2": "神经系统",
+    "3.1": "微生物生命过程及影响",
+    "4.1": "动物间相互关系",
+    "4.2": "植物间相互关系",
+    "5.1": "通过保护与复育维持自然平衡",
+    "6.1": "力及其效应",
+    "6.2": "摩擦力",
+    "6.3": "气压",
+    "7.1": "速度",
+    "8.1": "食物变质",
+    "8.2": "食物保存",
+    "9.1": "废物处理",
+    "10.1": "日食和月食现象",
+    "11.1": "银河系",
+    "12.1": "物体与建筑的平稳性和坚固性",
+    "13.1": "工艺的利弊"
+  },
+  "sp": {
+    "1.1.1": {
+      "description": "感官及工具观察"
+    },
+    "1.1.2": {
+      "description": "按共同特征分类"
+    },
+    "1.1.3": {
+      "description": "使用标准单位测量"
+    },
+    "1.1.4": {
+      "description": "依据观察推断"
+    },
+    "1.1.5": {
+      "description": "凭证据预测"
+    },
+    "1.1.6": {
+      "description": "系统记录和交流"
+    },
+    "1.1.7": {
+      "description": "按时间整理变化"
+    },
+    "1.1.8": {
+      "description": "解释资料趋势"
+    },
+    "1.1.9": {
+      "description": "以操作说明概念"
+    },
+    "1.1.10": {
+      "description": "辨认操纵、反应、固定变量"
+    },
+    "1.1.11": {
+      "description": "提出可检验假设"
+    },
+    "1.1.12": {
+      "description": "实验、分析、结论及报告"
+    },
+    "2.1.1": {
+      "description": "生殖器官功能"
+    },
+    "2.1.2": {
+      "description": "受精至出生过程"
+    },
+    "2.1.3": {
+      "description": "繁殖重要性"
+    },
+    "2.1.4": {
+      "description": "表达繁殖学习结果"
+    },
+    "2.2.1": {
+      "description": "神经系统类别"
+    },
+    "2.2.2": {
+      "description": "中枢神经系统功能"
+    },
+    "2.2.3": {
+      "description": "周围神经系统功能"
+    },
+    "2.2.4": {
+      "description": "周围神经失常影响"
+    },
+    "2.2.5": {
+      "description": "保健措施"
+    },
+    "2.2.6": {
+      "description": "表达神经系统观察"
+    },
+    "3.1.1": {
+      "description": "微生物类别"
+    },
+    "3.1.2": {
+      "description": "微生物概念"
+    },
+    "3.1.3": {
+      "description": "通过研究描述微生物的生命活动，例如呼吸、生长及移动"
+    },
+    "3.1.4": {
+      "description": "研究生长条件"
+    },
+    "3.1.5": {
+      "description": "日常影响"
+    },
+    "3.1.6": {
+      "description": "表达微生物观察"
+    },
+    "4.1.1": {
+      "description": "关系种类"
+    },
+    "4.1.2": {
+      "description": "同种与异种竞争因素"
+    },
+    "4.1.3": {
+      "description": "共生关系"
+    },
+    "4.1.4": {
+      "description": "表达动物关系观察"
+    },
+    "4.2.1": {
+      "description": "植物竞争因素"
+    },
+    "4.2.2": {
+      "description": "植物共生"
+    },
+    "4.2.3": {
+      "description": "表达植物关系观察"
+    },
+    "5.1.1": {
+      "description": "区分保护和复育"
+    },
+    "5.1.2": {
+      "description": "保护复育方法"
+    },
+    "5.1.3": {
+      "description": "辨认绝种"
+    },
+    "5.1.4": {
+      "description": "辨认濒危"
+    },
+    "5.1.5": {
+      "description": "物种受威胁原因"
+    },
+    "5.1.6": {
+      "description": "评价保护复育措施对濒危动植物的影响"
+    },
+    "5.1.7": {
+      "description": "表达保育观察"
+    },
+    "6.1.1": {
+      "description": "力的概念"
+    },
+    "6.1.2": {
+      "description": "力的效应"
+    },
+    "6.1.3": {
+      "description": "表达力的实验观察"
+    },
+    "6.2.1": {
+      "description": "摩擦力概念"
+    },
+    "6.2.2": {
+      "description": "摩擦力效应"
+    },
+    "6.2.3": {
+      "description": "研究质量及接触表面类型对摩擦的影响"
+    },
+    "6.2.4": {
+      "description": "解决摩擦力生活问题"
+    },
+    "6.2.5": {
+      "description": "表达摩擦力观察"
+    },
+    "6.3.1": {
+      "description": "空气产生压力"
+    },
+    "6.3.2": {
+      "description": "高度和气压"
+    },
+    "6.3.3": {
+      "description": "气压应用"
+    },
+    "6.3.4": {
+      "description": "表达气压观察"
+    },
+    "7.1.1": {
+      "description": "速度单位"
+    },
+    "7.1.2": {
+      "description": "速度距离时间关系"
+    },
+    "7.1.3": {
+      "description": "速度公式"
+    },
+    "7.1.4": {
+      "description": "速度操作性定义"
+    },
+    "7.1.5": {
+      "description": "表达速度观察"
+    },
+    "8.1.1": {
+      "description": "变质特征"
+    },
+    "8.1.2": {
+      "description": "变质原因"
+    },
+    "8.1.3": {
+      "description": "表达食物变质观察"
+    },
+    "8.2.1": {
+      "description": "保存目的"
+    },
+    "8.2.2": {
+      "description": "联系保存方法与微生物生长所需条件"
+    },
+    "8.2.3": {
+      "description": "通过专题活动采用多种方法保存同一种食物"
+    },
+    "8.2.4": {
+      "description": "归纳同一种食物可有多种保存方式"
+    },
+    "8.2.5": {
+      "description": "组合保存方法"
+    },
+    "8.2.6": {
+      "description": "保存技术用途"
+    },
+    "8.2.7": {
+      "description": "表达保存观察"
+    },
+    "9.1.1": {
+      "description": "按材料辨认废物"
+    },
+    "9.1.2": {
+      "description": "可降解和不可降解"
+    },
+    "9.1.3": {
+      "description": "按降解性质分类"
+    },
+    "9.1.4": {
+      "description": "明智使用材料"
+    },
+    "9.1.5": {
+      "description": "妥善处理废物"
+    },
+    "9.1.6": {
+      "description": "表达废物处理观察"
+    },
+    "10.1.1": {
+      "description": "模拟并解释月食"
+    },
+    "10.1.2": {
+      "description": "模拟并解释日食"
+    },
+    "10.1.3": {
+      "description": "光的特性与食现象"
+    },
+    "10.1.4": {
+      "description": "预测日食或月食发生时地球上的可观察情况"
+    },
+    "10.1.5": {
+      "description": "表达日月食观察"
+    },
+    "11.1.1": {
+      "description": "星系概念"
+    },
+    "11.1.2": {
+      "description": "描述银河系"
+    },
+    "11.1.3": {
+      "description": "太阳系在银河系内"
+    },
+    "11.1.4": {
+      "description": "通过模拟认识太阳系相对于银河系的大小"
+    },
+    "11.1.5": {
+      "description": "表达星系观察"
+    },
+    "12.1.1": {
+      "description": "区分平稳性及坚固性"
+    },
+    "12.1.2": {
+      "description": "解释并举例稳固的结构"
+    },
+    "12.1.3": {
+      "description": "平稳性因素"
+    },
+    "12.1.4": {
+      "description": "结构坚固性因素"
+    },
+    "12.1.5": {
+      "description": "稳定坚固结构重要性"
+    },
+    "12.1.6": {
+      "description": "制作稳定坚固模型"
+    },
+    "12.1.7": {
+      "description": "表达结构测试观察"
+    },
+    "13.1.1": {
+      "description": "工艺概念与重要性"
+    },
+    "13.1.2": {
+      "description": "不同领域工艺进展"
+    },
+    "13.1.3": {
+      "description": "工艺利弊"
+    },
+    "13.1.4": {
+      "description": "表达工艺利弊观察"
+    }
+  },
+  "targeted_source_review": {
+    "source": "https://anyflip.com/mhwl/hmbd/basic/51-80",
+    "printed_pages": "34–57 (first section https://anyflip.com/mhwl/hmbd/basic)",
+    "corrected_sp": [
+      "3.1.3",
+      "5.1.6",
+      "6.2.3",
+      "8.2.2",
+      "8.2.3",
+      "8.2.4",
+      "10.1.4",
+      "11.1.4",
+      "12.1.2"
+    ],
+    "corrected_sk": [
+      "5.1",
+      "9.1",
+      "10.1",
+      "12.1",
+      "13.1"
+    ],
+    "activity_review": [
+      {
+        "pdp": 14,
+        "reason": "DSKP examples include movement. Add safe video or existing observation evidence; no culture of unknown organisms."
+      },
+      {
+        "pdp": 26,
+        "reason": "Explicitly evaluate effect of conservation on threatened species."
+      },
+      {
+        "pdp": 30,
+        "reason": "Surface investigation present; add safe second comparison of object mass with same surface."
+      },
+      {
+        "pdp": 42,
+        "reason": "8.2.3 is a project; use teacher-controlled safe samples and recorded observations, not tasting."
+      },
+      {
+        "pdp": 53,
+        "reason": "Add prediction of Earth's observable conditions in each eclipse, without direct solar viewing."
+      }
+    ],
+    "scope": "Targeted source cross-check only; independent full semantic review still pending. Labels remain editorial paraphrases."
+  }
+}

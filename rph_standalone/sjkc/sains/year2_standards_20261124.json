@@ -1,0 +1,278 @@
+{
+  "status": "SOURCE_ALIGNED_QA",
+  "source": "DSKP Sains SJK(C) Tahun 2, KPM 2016, printed pp.26–52",
+  "source_url": "https://fliphtml5.com/dsymy/nunm/DSKP_KSSR_Semakan_2017_Sains_Tahun_2_SJKC/",
+  "note": "SK titles and source-aligned concise Chinese SP descriptions. SP descriptions are editorial paraphrases, not claimed verbatim official text. Keep original codes and RPT.",
+  "sk": {
+    "1.1": "科学程序技能",
+    "1.2": "操纵性技能",
+    "2.1": "科学室的规则",
+    "3.1": "人类的繁殖和成长",
+    "4.1": "动物的成长和繁殖",
+    "5.1": "植物的成长",
+    "6.1": "光和暗",
+    "7.1": "电路",
+    "8.1": "混合物",
+    "9.1": "水",
+    "9.2": "空气",
+    "10.1": "模型组件"
+  },
+  "sp": {
+    "1.1.1": {
+      "description": "观察事物及现象",
+      "page": 26
+    },
+    "1.1.2": {
+      "description": "依据特征进行分类",
+      "page": 26
+    },
+    "1.1.3": {
+      "description": "运用量具和数值测量",
+      "page": 26
+    },
+    "1.1.4": {
+      "description": "记录及传达科学资料",
+      "page": 26
+    },
+    "1.2.1": {
+      "description": "妥善操作科学器材及材料",
+      "page": 34
+    },
+    "1.2.2": {
+      "description": "谨慎处理标本",
+      "page": 34
+    },
+    "1.2.3": {
+      "description": "准确绘制标本及器材",
+      "page": 34
+    },
+    "1.2.4": {
+      "description": "正确清洗科学器材",
+      "page": 34
+    },
+    "1.2.5": {
+      "description": "安全归放科学器材与材料",
+      "page": 34
+    },
+    "2.1.1": {
+      "description": "实践科学室的各项规则",
+      "page": 36
+    },
+    "3.1.1": {
+      "description": "说明人类如何繁衍后代",
+      "page": 38
+    },
+    "3.1.2": {
+      "description": "描述出生以来体型、身高和体重的改变",
+      "page": 38
+    },
+    "3.1.3": {
+      "description": "通过活动归纳不同个体的成长差异",
+      "page": 38
+    },
+    "3.1.4": {
+      "description": "认识来自父母或家族的遗传特征",
+      "page": 38
+    },
+    "3.1.5": {
+      "description": "举出家族遗传特征的实例",
+      "page": 38
+    },
+    "3.1.6": {
+      "description": "用图画、数字媒介、文字或口头报告成长及遗传观察",
+      "page": 39
+    },
+    "4.1.1": {
+      "description": "说明动物繁衍后代的方式",
+      "page": 40
+    },
+    "4.1.2": {
+      "description": "依繁殖方式归类动物",
+      "page": 40
+    },
+    "4.1.3": {
+      "description": "举例说明动物产卵数量的差异",
+      "page": 40
+    },
+    "4.1.4": {
+      "description": "举例说明胎生动物产仔数量的差异",
+      "page": 40
+    },
+    "4.1.5": {
+      "description": "观察动物成长阶段并记录变化",
+      "page": 40
+    },
+    "4.1.6": {
+      "description": "举例比较幼儿与母体外形的异同",
+      "page": 41
+    },
+    "4.1.7": {
+      "description": "以适当媒介汇报动物繁殖与成长的观察",
+      "page": 41
+    },
+    "5.1.1": {
+      "description": "说明植物对人类及动物的价值",
+      "page": 42
+    },
+    "5.1.2": {
+      "description": "说明种子萌发所需的基本条件",
+      "page": 42
+    },
+    "5.1.3": {
+      "description": "观察并记录种子萌发到成长的变化",
+      "page": 42
+    },
+    "5.1.4": {
+      "description": "排列植物萌发与成长阶段",
+      "page": 42
+    },
+    "5.1.5": {
+      "description": "研究植物成长所需条件并归纳结果",
+      "page": 42
+    },
+    "5.1.6": {
+      "description": "以适当媒介表达植物成长观察",
+      "page": 43
+    },
+    "6.1.1": {
+      "description": "辨识并说明光的来源",
+      "page": 44
+    },
+    "6.1.2": {
+      "description": "比较明亮与黑暗条件下的活动",
+      "page": 44
+    },
+    "6.1.3": {
+      "description": "通过活动说明影子的产生",
+      "page": 44
+    },
+    "6.1.4": {
+      "description": "研究挡光材料产生的影子清晰程度",
+      "page": 44
+    },
+    "6.1.5": {
+      "description": "设计利用影子的游戏",
+      "page": 44
+    },
+    "6.1.6": {
+      "description": "以适当媒介表达对明暗的观察",
+      "page": 45
+    },
+    "7.1.1": {
+      "description": "辨认干电池、灯泡及开关等电路元件",
+      "page": 46
+    },
+    "7.1.2": {
+      "description": "说明完整电路内各元件的作用",
+      "page": 46
+    },
+    "7.1.3": {
+      "description": "以干电池、灯泡、开关及导线组装闭合电路",
+      "page": 46
+    },
+    "7.1.4": {
+      "description": "推测灯泡不亮的可能原因",
+      "page": 46
+    },
+    "7.1.5": {
+      "description": "测试接入不同物品时的灯泡亮度并记录",
+      "page": 46
+    },
+    "7.1.6": {
+      "description": "根据灯泡是否发亮区分导体与绝缘体",
+      "page": 47
+    },
+    "7.1.7": {
+      "description": "以适当媒介汇报电路观察",
+      "page": 47
+    },
+    "8.1.1": {
+      "description": "说明分离混合物的方法",
+      "page": 48
+    },
+    "8.1.2": {
+      "description": "推测适合分离混合物各成分的方法",
+      "page": 48
+    },
+    "8.1.3": {
+      "description": "研究哪些材料可溶于水",
+      "page": 48
+    },
+    "8.1.4": {
+      "description": "探究加快溶解的方式并归纳结果",
+      "page": 48
+    },
+    "8.1.5": {
+      "description": "以适当媒介表达混合物观察",
+      "page": 48
+    },
+    "9.1.1": {
+      "description": "举出雨、河流、湖泊、海洋及泉等天然水源",
+      "page": 50
+    },
+    "9.1.2": {
+      "description": "通过活动说明水的流向",
+      "page": 50
+    },
+    "9.1.3": {
+      "description": "利用媒体观察归纳自然界水流方向",
+      "page": 50
+    },
+    "9.1.4": {
+      "description": "排列自然界的水循环过程",
+      "page": 50
+    },
+    "9.1.5": {
+      "description": "以适当媒介表达水循环观察",
+      "page": 50
+    },
+    "9.2.1": {
+      "description": "说明空气存在于四周",
+      "page": 51
+    },
+    "9.2.2": {
+      "description": "说明空气由多种气体构成，例如氧气及二氧化碳",
+      "page": 51
+    },
+    "9.2.3": {
+      "description": "归纳风是空气的流动",
+      "page": 51
+    },
+    "9.2.4": {
+      "description": "探讨空气流动对生活的影响",
+      "page": 51
+    },
+    "9.2.5": {
+      "description": "利用空气流动原理制作器具或模型",
+      "page": 51
+    },
+    "9.2.6": {
+      "description": "以适当媒介汇报空气观察",
+      "page": 51
+    },
+    "10.1.1": {
+      "description": "选定模型组件中要组装的模型",
+      "page": 52
+    },
+    "10.1.2": {
+      "description": "依图解手册确认所需零件",
+      "page": 52
+    },
+    "10.1.3": {
+      "description": "按图解手册装配模型",
+      "page": 52
+    },
+    "10.1.4": {
+      "description": "创作手册之外的新模型",
+      "page": 52
+    },
+    "10.1.5": {
+      "description": "依序拆卸模型并将零件收回原盒",
+      "page": 52
+    },
+    "10.1.6": {
+      "description": "以适当媒介说明模型成品的观察",
+      "page": 52
+    }
+  }
+}

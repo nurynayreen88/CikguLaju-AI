@@ -1,0 +1,340 @@
+{
+  "year": 4,
+  "status": "EDITORIAL_LABELS_QA_ONLY",
+  "source_rpt": "rpt_2027/sjkc/sains/year_4_kuala_lumpur.json",
+  "source_git_blob": "9edd108e78f05db329567eb3bccd4caf6f825601",
+  "dskp_reference": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Sains-Tahun-4_-SJKC.pdf",
+  "policy": "Editorial Chinese topic labels based on original RPT and partial DSKP cross-check, not verbatim official descriptions. Independent semantic verification required before release. RPT unchanged.",
+  "sk": {
+    "1.1": "科学程序技能",
+    "2.1": "人体呼吸",
+    "2.2": "排泄与排遗",
+    "2.3": "对刺激的反应",
+    "3.1": "动物呼吸",
+    "3.2": "脊椎动物",
+    "4.1": "植物对外来刺激的反应",
+    "4.2": "光合作用",
+    "5.1": "光的直线传播",
+    "5.2": "光的反射",
+    "5.3": "光的折射",
+    "6.1": "声音",
+    "7.1": "能的来源及形式",
+    "7.2": "可更新与不可更新能源",
+    "8.1": "材料的来源",
+    "8.2": "材料的性质",
+    "9.1": "地球引力",
+    "9.2": "地球自转与公转",
+    "10.1": "杠杆",
+    "10.2": "简单机械与复杂机械"
+  },
+  "sp": {
+    "1.1.1": {
+      "description": "感官及工具观察"
+    },
+    "1.1.2": {
+      "description": "按共同特征分类"
+    },
+    "1.1.3": {
+      "description": "使用标准单位测量"
+    },
+    "1.1.4": {
+      "description": "依据观察推断"
+    },
+    "1.1.5": {
+      "description": "凭证据预测"
+    },
+    "1.1.6": {
+      "description": "系统记录和交流"
+    },
+    "1.1.7": {
+      "description": "按时间整理变化"
+    },
+    "1.1.8": {
+      "description": "解释资料趋势"
+    },
+    "1.1.9": {
+      "description": "以操作说明概念"
+    },
+    "1.1.10": {
+      "description": "辨认操纵、反应、固定变量"
+    },
+    "1.1.11": {
+      "description": "提出可检验假设"
+    },
+    "1.1.12": {
+      "description": "实验、分析、结论及报告"
+    },
+    "2.1.1": {
+      "description": "辨认呼吸器官"
+    },
+    "2.1.2": {
+      "description": "呼吸时空气流向"
+    },
+    "2.1.3": {
+      "description": "比较吸入和呼出气体"
+    },
+    "2.1.4": {
+      "description": "胸腔变化"
+    },
+    "2.1.5": {
+      "description": "联系活动和呼吸率"
+    },
+    "2.1.6": {
+      "description": "表达呼吸观察"
+    },
+    "2.2.1": {
+      "description": "区分排泄与排遗"
+    },
+    "2.2.2": {
+      "description": "排泄器官及排泄物"
+    },
+    "2.2.3": {
+      "description": "排出废物的重要性"
+    },
+    "2.2.4": {
+      "description": "表达排泄排遗观察"
+    },
+    "2.3.1": {
+      "description": "辨认感官及刺激"
+    },
+    "2.3.2": {
+      "description": "刺激引起的反应"
+    },
+    "2.3.3": {
+      "description": "反应的重要性"
+    },
+    "2.3.4": {
+      "description": "感官保健"
+    },
+    "2.3.5": {
+      "description": "表达刺激反应观察"
+    },
+    "3.1.1": {
+      "description": "辨认呼吸器官"
+    },
+    "3.1.2": {
+      "description": "按呼吸器官分类"
+    },
+    "3.1.3": {
+      "description": "多种呼吸器官的动物"
+    },
+    "3.1.4": {
+      "description": "表达动物呼吸观察"
+    },
+    "3.2.1": {
+      "description": "辨认有无脊椎"
+    },
+    "3.2.2": {
+      "description": "举例两类动物"
+    },
+    "3.2.3": {
+      "description": "按特征分类脊椎动物"
+    },
+    "3.2.4": {
+      "description": "汇报脊椎动物观察"
+    },
+    "4.1.1": {
+      "description": "观察植物反应"
+    },
+    "4.1.2": {
+      "description": "刺激与反应部位"
+    },
+    "4.1.3": {
+      "description": "研究刺激反应"
+    },
+    "4.1.4": {
+      "description": "表达研究观察"
+    },
+    "4.2.1": {
+      "description": "光合作用概念"
+    },
+    "4.2.2": {
+      "description": "原料及条件"
+    },
+    "4.2.3": {
+      "description": "辨认淀粉及氧气是光合作用的产物"
+    },
+    "4.2.4": {
+      "description": "光合作用重要性"
+    },
+    "4.2.5": {
+      "description": "表达光合作用观察"
+    },
+    "5.1.1": {
+      "description": "说明直线传播"
+    },
+    "5.1.2": {
+      "description": "比较不同材料的影子"
+    },
+    "5.1.3": {
+      "description": "影子大小及形状的因素"
+    },
+    "5.1.4": {
+      "description": "用适当媒介表达光直线传播的观察"
+    },
+    "5.2.1": {
+      "description": "观察反射"
+    },
+    "5.2.2": {
+      "description": "概括日常生活应用光反射的原理"
+    },
+    "5.2.3": {
+      "description": "绘出镜面反射的光线路径"
+    },
+    "5.2.4": {
+      "description": "表达反射观察"
+    },
+    "5.3.1": {
+      "description": "辨认折射"
+    },
+    "5.3.2": {
+      "description": "举例折射"
+    },
+    "5.3.3": {
+      "description": "彩虹形成"
+    },
+    "5.3.4": {
+      "description": "表达折射观察"
+    },
+    "6.1.1": {
+      "description": "振动产生声音"
+    },
+    "6.1.2": {
+      "description": "声音向各方传播"
+    },
+    "6.1.3": {
+      "description": "举例声音反射"
+    },
+    "6.1.4": {
+      "description": "区分乐音和噪音"
+    },
+    "6.1.5": {
+      "description": "减噪方法"
+    },
+    "7.1.1": {
+      "description": "能的概念"
+    },
+    "7.1.2": {
+      "description": "能量来源"
+    },
+    "7.1.3": {
+      "description": "能量形式"
+    },
+    "7.1.4": {
+      "description": "能量转换"
+    },
+    "7.1.5": {
+      "description": "能量守恒与转换"
+    },
+    "7.1.6": {
+      "description": "表达能量观察"
+    },
+    "7.2.1": {
+      "description": "举例两类能源"
+    },
+    "7.2.2": {
+      "description": "明智用能"
+    },
+    "7.2.3": {
+      "description": "表达能源观察"
+    },
+    "8.1.1": {
+      "description": "辨认材料来源"
+    },
+    "8.1.2": {
+      "description": "按来源分类"
+    },
+    "8.1.3": {
+      "description": "表达材料来源观察"
+    },
+    "8.2.1": {
+      "description": "研究材料性质"
+    },
+    "8.2.2": {
+      "description": "运用材料性质知识制作物品"
+    },
+    "8.2.3": {
+      "description": "推断制作物品时选择材料的依据"
+    },
+    "8.2.4": {
+      "description": "表达材料性质观察"
+    },
+    "9.1.1": {
+      "description": "观察重力"
+    },
+    "9.1.2": {
+      "description": "根据观察概括重力让地面物体保持位置"
+    },
+    "9.1.3": {
+      "description": "借助图示或口述表达重力观察"
+    },
+    "9.2.1": {
+      "description": "说明两种运动"
+    },
+    "9.2.2": {
+      "description": "方向与周期"
+    },
+    "9.2.3": {
+      "description": "自转产生的现象"
+    },
+    "9.2.4": {
+      "description": "表达地球运动观察"
+    },
+    "10.1.1": {
+      "description": "辨认三作用点"
+    },
+    "10.1.2": {
+      "description": "阻力点与支点距离影响"
+    },
+    "10.1.3": {
+      "description": "表达杠杆实验观察"
+    },
+    "10.2.1": {
+      "description": "简单机械用途"
+    },
+    "10.2.2": {
+      "description": "设计机械模型"
+    },
+    "10.2.3": {
+      "description": "归纳复杂机械由多种简单机械组成"
+    },
+    "10.2.4": {
+      "description": "表达机械观察"
+    }
+  },
+  "targeted_source_review": {
+    "source": "https://anyflip.com/zkumo/wfmr/basic/51-74",
+    "printed_pages": "39–54",
+    "corrected_sp": [
+      "4.2.3",
+      "5.1.4",
+      "5.2.2",
+      "5.2.3",
+      "8.2.2",
+      "8.2.3",
+      "9.1.2",
+      "9.1.3",
+      "10.2.3"
+    ],
+    "corrected_sk": [
+      "4.1",
+      "5.1",
+      "9.1"
+    ],
+    "activity_review": [
+      {
+        "pdp": 31,
+        "reason": "RPT uses 糖; DSKP expects starch and oxygen. Clarify sugar made by photosynthesis can be converted to starch; include both starch and oxygen in assessment."
+      },
+      {
+        "pdp": 53,
+        "reason": "8.2.2 requires actually applying properties to create an object; add safe construction and testing."
+      },
+      {
+        "pdp": 56,
+        "reason": "9.1.2 requires objects remaining on Earth, not only direction; add explicit explanation."
+      }
+    ],
+    "scope": "Targeted source cross-check only; independent full semantic review still pending. Labels remain editorial paraphrases."
+  }
+}

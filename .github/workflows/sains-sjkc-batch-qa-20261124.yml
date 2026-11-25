@@ -1,0 +1,60 @@
+name: Sains SJKC 288 RPH batch Word PDF QA
+on:
+  pull_request:
+    paths:
+      - 'rph_standalone/sjkc/sains/**'
+      - 'tools/sains_sjkc_rph_batch_qa.py'
+      - '.github/workflows/sains-sjkc-batch-qa-20261124.yml'
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [2,3,4,5,6]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install python-docx pymupdf
+      - name: Prepare native Word
+        run: python -m tools.sains_sjkc_rph_batch_qa --year ${{ matrix.year }} --out /tmp/rph-word
+      - name: Install CJK fonts and native office renderer
+        run: |
+          sudo apt-get update -qq -o Acquire::Retries=2
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-noto-cjk
+      - name: Convert and verify native PDFs
+        run: |
+          mkdir -p /tmp/rph-pdf
+          libreoffice -env:UserInstallation=file:///tmp/lo-sjkc-qa --headless --convert-to pdf --outdir /tmp/rph-pdf /tmp/rph-word/*.docx
+          python - <<'PY'
+          from pathlib import Path
+          import fitz,json,hashlib
+          root=Path('/tmp/rph-word')
+          manifest=json.loads((root/'manifest.json').read_text())
+          results=[]
+          for item in manifest['files']:
+              name=Path(item['name']).with_suffix('.pdf').name
+              p=Path('/tmp/rph-pdf')/name
+              with fitz.open(p) as d:
+                  assert len(d)==1,(name,len(d))
+                  page=d[0]
+                  assert abs(page.rect.width-595.28)<1 and abs(page.rect.height-841.89)<1
+                  text=''.join(page.get_text().split())
+                  assert all(x in text for x in ('活动一','活动二','活动三','教学反思','学习标准','PdP')),name
+              results.append({'name':name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+          assert len(results)==len(list(Path('/tmp/rph-pdf').glob('*.pdf')))
+          (Path('/tmp/rph-pdf')/'manifest.json').write_text(json.dumps({'status':'QA_NOT_PUBLISHED','ready':0,'files':results},ensure_ascii=False,indent=2))
+          print('Verified PDF count:',len(results))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sains-sjkc-t${{ matrix.year }}-qa
+          path: |
+            /tmp/rph-word
+            /tmp/rph-pdf
+          retention-days: 7

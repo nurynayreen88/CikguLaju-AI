@@ -1,0 +1,440 @@
+{
+  "status": "QA_NOT_PUBLISHED",
+  "year": 3,
+  "source": "rpt_2027/sjkc/sains/year_3_kuala_lumpur.json",
+  "source_git_blob": "bf55ef46513d4dc17ba323f092a3332e853e2d6c",
+  "records": [
+    {
+      "pdp": 1,
+      "unit_number": 1,
+      "topic": "观察物体的特征",
+      "materials": "水果、观察表",
+      "teacher_guidance": "比较两种水果并区分观察与解释",
+      "source_focus": "用视觉和触觉记录两种水果的颜色、形状或表面特征。",
+      "ready": false
+    },
+    {
+      "pdp": 2,
+      "unit_number": 1,
+      "topic": "根据特征分类",
+      "materials": "样本图卡、分类表",
+      "teacher_guidance": "找出共同特征并尝试另一分法",
+      "source_focus": "按一种可观察特征把样本分组，再说明另一种可行的分法。",
+      "ready": false
+    },
+    {
+      "pdp": 3,
+      "unit_number": 1,
+      "topic": "测量和应用数目",
+      "materials": "直尺、量筒、记录表",
+      "teacher_guidance": "检查零刻度、读数与单位",
+      "source_focus": "选择适合的测量工具和单位，把两项测量结果写入表格。",
+      "ready": false
+    },
+    {
+      "pdp": 4,
+      "unit_number": 1,
+      "topic": "观察与推断",
+      "materials": "鞋底磨损图、证据卡",
+      "teacher_guidance": "区分观察到的磨损与可能原因",
+      "source_focus": "根据鞋底磨损图提出一个推断，并指出用来支持推断的观察。",
+      "ready": false
+    },
+    {
+      "pdp": 5,
+      "unit_number": 1,
+      "topic": "预测变化",
+      "materials": "变化序列图、预测卡",
+      "teacher_guidance": "寻找规律，说明预测依据",
+      "source_focus": "根据图示的发展规律对下一阶段作出预测，说明使用的依据。",
+      "ready": false
+    },
+    {
+      "pdp": 6,
+      "unit_number": 1,
+      "topic": "以记录说明推断和预测",
+      "materials": "观察记录、三栏表",
+      "teacher_guidance": "把同一例子的事实、推断及预测分开",
+      "source_focus": "把观察、推断和预测分栏，向组员解释三者在同一个例子中的区别。",
+      "ready": false
+    },
+    {
+      "pdp": 7,
+      "unit_number": 1,
+      "topic": "使用用具和处理标本",
+      "materials": "塑料漏斗、量筒、安全样本",
+      "teacher_guidance": "示范安全操作及轻放标本",
+      "source_focus": "使用漏斗和量筒完成指定操作，按示范安全处理样本。",
+      "ready": false
+    },
+    {
+      "pdp": 8,
+      "unit_number": 1,
+      "topic": "绘制清洗与归位",
+      "materials": "用具、清水、画纸",
+      "teacher_guidance": "核对标注、清洗和归位步骤",
+      "source_focus": "绘制并标明用具特征，完成清洗和归位后逐项核对。",
+      "ready": false
+    },
+    {
+      "pdp": 9,
+      "unit_number": 2,
+      "topic": "遵守科学室规则",
+      "materials": "规则图卡、清单",
+      "teacher_guidance": "比较活动前中后的正确行为",
+      "source_focus": "演示活动前、进行中和结束后的正确做法，说明一项违规行为的后果。",
+      "ready": false
+    },
+    {
+      "pdp": 10,
+      "unit_number": 3,
+      "topic": "牙齿的种类和功能",
+      "materials": "牙齿图、功能卡",
+      "teacher_guidance": "比较门齿、犬齿及臼齿的形状",
+      "source_focus": "根据图示指出门齿、犬齿和臼齿，为每类牙齿配对一个功能。",
+      "ready": false
+    },
+    {
+      "pdp": 11,
+      "unit_number": 3,
+      "topic": "牙齿的结构",
+      "materials": "牙齿横切图、标签",
+      "teacher_guidance": "指认牙釉质等主要结构",
+      "source_focus": "标示牙齿横切图中的主要结构，并辨认保护牙齿表面的部分。",
+      "ready": false
+    },
+    {
+      "pdp": 12,
+      "unit_number": 3,
+      "topic": "比较乳牙和恒牙",
+      "materials": "乳牙恒牙图表",
+      "teacher_guidance": "依据图表比较数目及种类",
+      "source_focus": "从牙齿图表找出乳牙和恒牙在数目与种类上的异同。",
+      "ready": false
+    },
+    {
+      "pdp": 13,
+      "unit_number": 3,
+      "topic": "保护牙齿并解释原因",
+      "materials": "刷牙图、因果卡",
+      "teacher_guidance": "说明习惯与蛀牙的联系",
+      "source_focus": "用流程图说明一项行为如何影响牙齿，并提出一项预防蛀牙的做法。",
+      "ready": false
+    },
+    {
+      "pdp": 14,
+      "unit_number": 3,
+      "topic": "食物营养与身体功能",
+      "materials": "食物卡、营养素标签",
+      "teacher_guidance": "配对营养素与功能，承认食物成分多样",
+      "source_focus": "用食物卡为三种营养素配对食物及身体功能，说明一种食物可含多种营养素。",
+      "ready": false
+    },
+    {
+      "pdp": 15,
+      "unit_number": 3,
+      "topic": "设计均衡的一餐",
+      "materials": "食物金字塔、菜单纸",
+      "teacher_guidance": "检查菜单的食物类别搭配",
+      "source_focus": "参照食物金字塔画出一份菜单，说明不同食物类别如何搭配。",
+      "ready": false
+    },
+    {
+      "pdp": 16,
+      "unit_number": 3,
+      "topic": "饮食不均衡的影响",
+      "materials": "示例菜单、食物类别卡",
+      "teacher_guidance": "分析缺少或过量的食物",
+      "source_focus": "检查一份菜单，指出缺少或过量的食物并解释可能产生的一项问题。",
+      "ready": false
+    },
+    {
+      "pdp": 17,
+      "unit_number": 3,
+      "topic": "食物的消化过程",
+      "materials": "消化示意图、阶段卡",
+      "teacher_guidance": "解释食物分解成小分子",
+      "source_focus": "参照图片说明食物在消化过程中如何被分解。",
+      "ready": false
+    },
+    {
+      "pdp": 18,
+      "unit_number": 3,
+      "topic": "排列消化路径",
+      "materials": "消化器官图卡、箭头",
+      "teacher_guidance": "核对食物经过器官的顺序",
+      "source_focus": "按顺序排列消化器官图卡，并沿图示口述食物经过的路径。",
+      "ready": false
+    },
+    {
+      "pdp": 19,
+      "unit_number": 3,
+      "topic": "营养吸收和排出残渣",
+      "materials": "吸收示意图、残渣路径卡",
+      "teacher_guidance": "区分营养吸收与排遗",
+      "source_focus": "用图示说明营养被吸收后残渣如何离开身体。",
+      "ready": false
+    },
+    {
+      "pdp": 20,
+      "unit_number": 4,
+      "topic": "按动物的进食习性分类",
+      "materials": "动物及食物图卡",
+      "teacher_guidance": "按食物记录分类",
+      "source_focus": "把动物图卡按所吃的食物分组，并标明两张卡的分类依据。",
+      "ready": false
+    },
+    {
+      "pdp": 21,
+      "unit_number": 4,
+      "topic": "草食肉食和杂食",
+      "materials": "草食肉食杂食标签、图卡",
+      "teacher_guidance": "为每类配对动物和食物",
+      "source_focus": "为三种进食习性各举一个动物及其常吃的食物。",
+      "ready": false
+    },
+    {
+      "pdp": 22,
+      "unit_number": 4,
+      "topic": "根据食物推断动物组别",
+      "materials": "动物食物记录、分类表",
+      "teacher_guidance": "从证据推断未知动物类别",
+      "source_focus": "根据食物记录推断陌生动物所属组别，并向同伴说明依据。",
+      "ready": false
+    },
+    {
+      "pdp": 23,
+      "unit_number": 4,
+      "topic": "比较动物的牙齿结构",
+      "materials": "三类动物牙齿图、比较表",
+      "teacher_guidance": "联系牙齿形状与食物",
+      "source_focus": "比较三种动物的牙齿图，用口述或图表说明牙齿形状如何配合所吃的食物。",
+      "ready": false
+    },
+    {
+      "pdp": 24,
+      "unit_number": 5,
+      "topic": "植物的繁殖方法",
+      "materials": "植物图卡、繁殖方法卡",
+      "teacher_guidance": "配对种子、茎等繁殖实例",
+      "source_focus": "把植物图卡与对应的繁殖方法配对，口述两个例子。",
+      "ready": false
+    },
+    {
+      "pdp": 25,
+      "unit_number": 5,
+      "topic": "植物繁殖对生物的重要性",
+      "materials": "动植物关系图、因果卡",
+      "teacher_guidance": "推断植物繁殖减少的影响",
+      "source_focus": "根据两种动物利用植物的情境，推断植物难以繁殖会带来的影响。",
+      "ready": false
+    },
+    {
+      "pdp": 26,
+      "unit_number": 5,
+      "topic": "以两种方式繁殖一种植物",
+      "materials": "蕹菜种子和茎段、记录表",
+      "teacher_guidance": "对照起始材料及真实后续观察",
+      "source_focus": "比较蕹菜用种子及茎段繁殖的例子，记录两组起始材料和观察结果。",
+      "ready": false
+    },
+    {
+      "pdp": 27,
+      "unit_number": 5,
+      "topic": "交流植物繁殖观察",
+      "materials": "繁殖观察记录、画纸",
+      "teacher_guidance": "展示证据，不虚构生长结果",
+      "source_focus": "用图画或观察记录说明一种繁殖方法，并指出观察到的变化。",
+      "ready": false
+    },
+    {
+      "pdp": 28,
+      "unit_number": 6,
+      "topic": "面积和体积的单位",
+      "materials": "面积体积单位卡、物品图",
+      "teacher_guidance": "区分平方及立方单位",
+      "source_focus": "为书本封面、教室地面和空盒体积选择相应的单位。",
+      "ready": false
+    },
+    {
+      "pdp": 29,
+      "unit_number": 6,
+      "topic": "测量规则图形的面积",
+      "materials": "平方厘米方格纸、规则图",
+      "teacher_guidance": "覆盖图形并核对完整方格",
+      "source_focus": "用一平方厘米方格覆盖规则图形，数出方格并记录面积。",
+      "ready": false
+    },
+    {
+      "pdp": 30,
+      "unit_number": 6,
+      "topic": "估计不规则图形的面积",
+      "materials": "方格纸、不规则图",
+      "teacher_guidance": "估计边缘部分并说明近似值",
+      "source_focus": "数出完整方格并估计边缘部分，说明如何取得近似面积。",
+      "ready": false
+    },
+    {
+      "pdp": 31,
+      "unit_number": 6,
+      "topic": "量出空盒子的体积",
+      "materials": "立方厘米小方块、空盒",
+      "teacher_guidance": "计数无空隙填充的小方块",
+      "source_focus": "用一立方厘米小方块填满空盒，记录所用方块数和体积。",
+      "ready": false
+    },
+    {
+      "pdp": 32,
+      "unit_number": 6,
+      "topic": "测量液体的体积",
+      "materials": "塑料量筒、清水、托盘",
+      "teacher_guidance": "示范视线平齐液面读数",
+      "source_focus": "选用有刻度的量筒，把视线对准液面读数，以毫升记下结果。",
+      "ready": false
+    },
+    {
+      "pdp": 33,
+      "unit_number": 6,
+      "topic": "排水法测量固体的体积",
+      "materials": "塑料量筒、水、安全固体",
+      "teacher_guidance": "核对排水前后读数及差值",
+      "source_focus": "记录物体放入水前后的体积读数，用差值计算固体的体积。",
+      "ready": false
+    },
+    {
+      "pdp": 34,
+      "unit_number": 6,
+      "topic": "解释日常生活中的测量",
+      "materials": "测量工具图、实例卡",
+      "teacher_guidance": "根据实际用途选择工具单位",
+      "source_focus": "用例子说明面积和体积测量各有什么用途，并解释选用的工具与单位。",
+      "ready": false
+    },
+    {
+      "pdp": 35,
+      "unit_number": 7,
+      "topic": "推断物体在水中的浮沉",
+      "materials": "水盆、安全物件、记录表",
+      "teacher_guidance": "先预测再比较实际浮沉",
+      "source_focus": "先预测几种物体的浮沉，再进行观察并比较实际结果。",
+      "ready": false
+    },
+    {
+      "pdp": 36,
+      "unit_number": 7,
+      "topic": "联系浮沉和密度",
+      "materials": "油水示例、教师指定物件",
+      "teacher_guidance": "从观察解释相对密度",
+      "source_focus": "比较油、水与指定小物件的观察结果，说出浮沉如何反映相对密度。",
+      "ready": false
+    },
+    {
+      "pdp": 37,
+      "unit_number": 7,
+      "topic": "增加水的密度",
+      "materials": "小番茄、盐水、透明杯",
+      "teacher_guidance": "比较逐次加盐后的浮沉记录",
+      "source_focus": "逐次把食盐溶入水中，记录同一颗小番茄的浮沉变化。",
+      "ready": false
+    },
+    {
+      "pdp": 38,
+      "unit_number": 7,
+      "topic": "解释浮沉实验结果",
+      "materials": "浮沉记录、标注图",
+      "teacher_guidance": "引用真实数据支持解释",
+      "source_focus": "以标注图或表格呈现浮沉观察，引用一项记录支持解释。",
+      "ready": false
+    },
+    {
+      "pdp": 39,
+      "unit_number": 8,
+      "topic": "用石蕊试纸辨认酸碱中性",
+      "materials": "红蓝石蕊、教师配制安全样品",
+      "teacher_guidance": "依据试纸变色分类，不触尝样品",
+      "source_focus": "比较红、蓝石蕊试纸的变色情况，用记录判断教师准备的样品。",
+      "ready": false
+    },
+    {
+      "pdp": 40,
+      "unit_number": 8,
+      "topic": "感官描述与试纸证据",
+      "materials": "课本描述、试纸结果表",
+      "teacher_guidance": "说明仅凭感官描述的局限",
+      "source_focus": "根据课本提供的感官描述和试纸结果对照分类，指出仅凭感官描述的局限。",
+      "ready": false
+    },
+    {
+      "pdp": 41,
+      "unit_number": 8,
+      "topic": "探索其他酸碱指示材料",
+      "materials": "植物指示液、石蕊记录",
+      "teacher_guidance": "在监督下比较安全样品颜色",
+      "source_focus": "使用教师准备的植物指示液和样品，记录颜色并与石蕊结果比较。",
+      "ready": false
+    },
+    {
+      "pdp": 42,
+      "unit_number": 8,
+      "topic": "呈现酸碱测试结果",
+      "materials": "酸碱测试记录、表格",
+      "teacher_guidance": "用证据说明三类样品",
+      "source_focus": "用表格报告酸性、碱性和中性样品各一例，并说明分类证据。",
+      "ready": false
+    },
+    {
+      "pdp": 43,
+      "unit_number": 9,
+      "topic": "辨认太阳系的成员",
+      "materials": "太阳系图卡、成员标签",
+      "teacher_guidance": "区别太阳、行星及其他天体",
+      "source_focus": "根据图示说出太阳系中的太阳、行星与其他成员，并辨认各一个例子。",
+      "ready": false
+    },
+    {
+      "pdp": 44,
+      "unit_number": 9,
+      "topic": "排列行星并比较温度",
+      "materials": "八颗行星图卡、教材温度表",
+      "teacher_guidance": "排序并依据资料比较温度",
+      "source_focus": "从太阳向外排列八颗行星，依据书中资料比较行星表面温度。",
+      "ready": false
+    },
+    {
+      "pdp": 45,
+      "unit_number": 9,
+      "topic": "轨道与公转时间",
+      "materials": "太阳系模型、公转周期表",
+      "teacher_guidance": "比较两条轨道及公转时间",
+      "source_focus": "用模型演示行星沿各自轨道绕太阳运转，并根据表格比较两颗行星的公转时间。",
+      "ready": false
+    },
+    {
+      "pdp": 46,
+      "unit_number": 9,
+      "topic": "汇报太阳系的观察",
+      "materials": "轨道图、箭头",
+      "teacher_guidance": "用图说明轨道与周期",
+      "source_focus": "画出两条不同的轨道，标明行星并向同伴解释轨道与公转时间的关系。",
+      "ready": false
+    },
+    {
+      "pdp": 47,
+      "unit_number": 10,
+      "topic": "定滑轮的用途与生活例子",
+      "materials": "定滑轮、小轻物、绳",
+      "teacher_guidance": "示范改变拉力方向，避免吊重物",
+      "source_focus": "使用定滑轮模型改变拉力的方向，举出一个生活中的应用。",
+      "ready": false
+    },
+    {
+      "pdp": 48,
+      "unit_number": 10,
+      "topic": "制作与说明滑轮模型",
+      "materials": "滑轮模型、轻小物",
+      "teacher_guidance": "测试模型并解释绳与滑轮配合",
+      "source_focus": "设计可运作的滑轮模型，用它提起小物件并说明绳子和滑轮如何配合。",
+      "ready": false
+    }
+  ]
+}
