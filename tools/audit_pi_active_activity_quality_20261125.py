@@ -243,6 +243,30 @@ def main():
                 assert item["id"] not in staged_ids, ("duplicate editorial ID",item["id"])
                 staged_ids.add(item["id"])
                 editorial_rows.append(item)
+        # Separate objective patches supersede activity-only proposals for the
+        # same ID in this QA report only. Never apply them to production.
+        objective_file=Path("staging/pendidikan_islam/active_activity_objective_corrections_20261125.json")
+        objective_records=json.loads(objective_file.read_text(encoding="utf8"))["records"] if objective_file.exists() else []
+        assert len({x["id"] for x in objective_records})==len(objective_records)
+        objective_ids={x["id"] for x in objective_records}
+        editorial_rows=[x for x in editorial_rows if x["id"] not in objective_ids]
+        for item in objective_records:
+            editorial_rows.append({**item,"objective":item["corrected_objective"]})
+        staged_ids.update(objective_ids)
+        assert len(editorial_rows)==len(staged_ids)
+        remaining_ids={x["id"] for x in source}-staged_ids
+        source_map={x["id"]:x for x in candidate_bank+residual_review}
+        for identity in sorted(remaining_ids):
+            item=source_map.get(identity)
+            if item is None:
+                row=next(x for x in source if x["id"]==identity)
+                year=int(row["year_label"].split()[-1])
+                unit=pi_navigation_unit(row)
+                state=_native_state(runtime,{"year":year,"subject":"PI","unit":unit,"lesson":identity},teacher.copy())
+                native=_native_text(runtime,state)
+                fields=runtime._rph_rows(state,native)
+                item={"id":identity,"year":year,"pdp":row["sequence_no"],"unit":unit,"objective":fields.get("OBJEKTIF PEMBELAJARAN") or fields.get("OBJEKTIF"),"source_note":row["activity_note"],"sk_codes":state.get("grouped_sk_codes",[]),"sp_codes":state.get("grouped_sp_codes",[])}
+            print("PI_REMAINING_EXACT_SOURCE",json.dumps({k:item.get(k) for k in ("id","year","pdp","unit","objective","source_note","sk_codes","sp_codes","textbook_pages_claim","reference_review_type")},ensure_ascii=False),flush=True)
         # Full cross-batch comparison (QA flags only, not automatic approval).
         def editorial_normalize(value):
             value=unicodedata.normalize("NFKC", str(value or "")).translate(DIGITS)
