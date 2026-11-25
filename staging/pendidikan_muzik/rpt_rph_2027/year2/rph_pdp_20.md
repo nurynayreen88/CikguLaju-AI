@@ -10,17 +10,17 @@
 
 **Objektif:** Murid menghasilkan tiga kesan bunyi yang sesuai untuk tiga peristiwa dalam cerita.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan BURUNG KENEK-KENEK; murid menunjukkan respons awal.
+**Set induksi:** Guru membuat bunyi ketukan seperti burung belatuk. Murid mencadangkan bunyi hujan dan guruh.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru menunjukkan sumber bunyi tiruan hujan, guruh dan kepakan burung menggunakan bahan improvisasi yang selamat.
+**Aktiviti 1 — Teroka bunyi cerita:** Guru menunjukkan sumber bunyi tiruan hujan, guruh dan kepakan burung menggunakan bahan improvisasi yang selamat.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Kumpulan membaca bahagian cerita Burung Belatuk dan menghasilkan kesan bunyi tepat apabila peristiwa disebut.
+**Aktiviti 2 — Iringan bunyi Burung Belatuk:** Kumpulan membaca bahagian cerita Burung Belatuk dan menghasilkan kesan bunyi tepat apabila peristiwa disebut.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak tiga padanan peristiwa–bunyi serta keselamatan bahan.
+**Pengukuhan dan pentaksiran:** Semak tiga padanan peristiwa–bunyi serta keselamatan bahan.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Guru menyebut tiga peristiwa cerita; murid menghasilkan kesan bunyi yang sepadan.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 60; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 60; cerita Burung Belatuk, kertas, bekas bertutup dan bahan improvisasi selamat.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
