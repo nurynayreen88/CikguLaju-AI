@@ -10,13 +10,13 @@
 
 **Objektif:** Memainkan satu frasa tiga hingga empat bar menggunakan not B, A dan G serta mengekalkan empat detik perkusi secara berpasangan.
 
-**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
+**Kriteria kejayaan:** Murid memainkan frasa tiga hingga empat bar menggunakan not B, A dan G serta mengekalkan empat detik perkusi berpasangan.
 
 **Set Induksi — 4 minit:** Guru menunjukkan carta B, A dan G; murid menamakan not dan menyemak postur rekoder sebelum latihan.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Guru memainkan petikan Audio 60 Selamat Malam. Murid menyemak penjarian not B, A dan G sebelum berlatih satu frasa dengan Audio 63.
+**Aktiviti 1 — Ulang penjarian B, A dan G:** Guru memainkan petikan Audio 60 Selamat Malam. Murid menyemak penjarian not B, A dan G sebelum berlatih satu frasa dengan Audio 63.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Pasangan A memainkan frasa rekoder B/A/G daripada latihan sedia ada Tahun 3, pasangan B menepuk empat detik, kemudian bertukar peranan dan menilai ketepatan tempo.
+**Aktiviti 2 — Frasa rekoder dan detik perkusi:** Pasangan A memainkan frasa rekoder B/A/G daripada latihan sedia ada Tahun 3, pasangan B menepuk empat detik, kemudian bertukar peranan dan menilai ketepatan tempo.
 
 **Pengukuhan dan Penilaian — 6 minit:** Senarai semak empat unsur: penjarian, ton, tempo dan giliran perkusi; murid yang belum menguasai berlatih dua bar dahulu.
 
