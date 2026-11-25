@@ -1,0 +1,55 @@
+name: PI RPT 2027 final 698 source alignment
+on:
+  pull_request:
+    paths:
+      - tools/export_pi_final_rpt_source_20261125.py
+      - tools/plan_pi_rpt_final_20261125.py
+      - tools/package_pi_rpt_web_release_20261125.py
+      - tools/render_pi_final_rpt_20261125.py
+      - tools/pi_rpt_reference_layout_20261125.py
+      - staging/pendidikan_islam/rpt_2027_prior_calendar_reference_20261125.json
+      - .github/workflows/pi-rpt-final-source-20261125.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export-final-rpt-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: bash build_jawi.sh
+      - run: python -m tools.export_pi_final_rpt_source_20261125
+        env:
+          PYTHONUNBUFFERED: "1"
+          CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
+      - run: python -m tools.plan_pi_rpt_final_20261125
+      - run: python -m tools.test_pi_no_duration_display_20261125
+      - run: python -m pip install reportlab arabic-reshaper python-bidi
+      - run: python -m tools.render_pi_final_rpt_20261125
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pi-rpt-final-698-source
+          path: qa/pi-rpt-final-source/*
+          retention-days: 7
+      - uses: actions/checkout@v4
+        with:
+          ref: production/cikgulaju-web-20261105
+          path: web-release
+      - name: Package PI PDFs, exact original covers and Web index
+        run: python -m tools.package_pi_rpt_web_release_20261125 qa/pi-rpt-final-source web-release
+      - name: Create isolated Web release candidate branch, never production
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'qa/pi-rpt-final-698-alignment-20261125'
+        working-directory: web-release
+        run: |
+          git add rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_{2,3,4,5,6}.pdf rpt_2027/web_2027_pdfs/manifest.json rpt_2027/web_2027_pdfs/original_cover_layout_verified.json web/rpt_weekly_suggestions_2027.json
+          test "$(git diff --cached --name-only | wc -l)" -eq 8
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Align five PI RPT 2027 PDFs and RPH Pantas with 698 native PdP"
+          git push origin HEAD:refs/heads/release/pi-rpt-web-698-${{ github.run_id }}
