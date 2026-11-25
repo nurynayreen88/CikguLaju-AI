@@ -9,6 +9,7 @@ from collections import Counter
 from tools.bm_native_v26_navigation_audit import database
 from web.pi_editorial_bulk_20261125 import load_catalog, apply, norm
 from web.rph_pi_jawi_numerals_20261124 import jawi_display_digits
+from web.pi_rph_no_duration_display_20261125 import display_topic
 
 EXPECTED={2:112,3:148,4:152,5:144,6:142}
 OLD={2:112,3:147,4:151,5:143,6:143}
@@ -37,7 +38,7 @@ def main():
                 expected=jawi_display_digits("\n".join(f"اکتيۏيتي {i} - {title}\n1. {body}" for i,(title,body) in enumerate(item["activities"],1)))
                 assert revised["AKTIVITI UTAMA"]==expected,item["id"]
                 record={"year":item["year"],"pdp":item["pdp"],"id":item["id"],"unit":item["unit"],
-                    "topic":state.get("topic"),"subtopic":state.get("subtopic"),
+                    "topic":display_topic(state.get("topic")),"subtopic":display_topic(state.get("subtopic")),
                     "sk_codes":state.get("grouped_sk_codes",[]),"sp_codes":state.get("grouped_sp_codes",[]),
                     "sk":revised.get("STANDARD KANDUNGAN"),"sp":revised.get("STANDARD PEMBELAJARAN"),
                     "objective":revised.get("OBJEKTIF PEMBELAJARAN") or revised.get("OBJEKTIF"),
