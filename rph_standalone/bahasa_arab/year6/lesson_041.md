@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** إِلَى أَيْنَ تُسَافِر؟ مَتَى تُسَافِر؟ فِي الصَّبَاح، فِي الْمَسَاء
 **Objektif pembelajaran:** Melakonkan dua dialog ringkas tentang destinasi dan masa.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid melakonkan dua dialog ringkas tentang destinasi dan masa.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan beza soalan tempat dengan waktu dalam latihan h74.
+**Aktiviti 1 — Bezakan soalan destinasi dan waktu:** Guru memodelkan beza soalan tempat dengan waktu dalam latihan h74.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid menukar kad destinasi/waktu dan melakonkan dua dialog lengkap.
+**Aktiviti 2 — Tukar kad dan lakonkan dua dialog:** Pasangan murid menukar kad destinasi/waktu dan melakonkan dua dialog lengkap.
 
 **Pengukuhan / Penilaian (PBD):** Dua dialog lokasi/masa tepat. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

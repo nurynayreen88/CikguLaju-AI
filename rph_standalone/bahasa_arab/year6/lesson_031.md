@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** سَيَّارَة، حَافِلَة، طَائِرَة، دَرَّاجَة، شَاحِنَة
 **Objektif pembelajaran:** Mengecam lima daripada enam nama kenderaan selepas mendengar.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid mengecam sekurang-kurangnya 5 daripada 6 nama kenderaan selepas mendengar.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperlihatkan gambar pengangkutan dan memodelkan sebutan halaman 64.
+**Aktiviti 1 — Dengar dan ajuk nama kenderaan darat dan udara:** Guru memperlihatkan gambar pengangkutan dan memodelkan sebutan halaman 64.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menunjuk kenderaan disebut rakan, kemudian menyusun lima kad gambar mengikut sebutan guru.
+**Aktiviti 2 — Susun kad gambar mengikut sebutan:** Murid menunjuk kenderaan disebut rakan, kemudian menyusun lima kad gambar mengikut sebutan guru.
 
 **Pengukuhan / Penilaian (PBD):** Lima padanan audio kepada gambar. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

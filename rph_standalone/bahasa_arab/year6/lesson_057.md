@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أَنَا مَالِيزِيَّة، أَنَا أُحِبُّ وَطَنِي، أَنَا أُنْشِدُ النَّشِيدَ الْوَطَنِيّ
 **Objektif pembelajaran:** Menyusun dan membaca dua rangkaian ayat bermakna.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid menyusun dan membaca dua rangkaian ayat bermakna.
 
 **Set induksi:** Guru memaparkan tiga kad frasa bercampur daripada topik h109.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan susunan ayat berangkai dalam latihan h109 dan memodelkan cara menyambung subjek, kata kerja dan objek.
+**Aktiviti 1 — Kenal susunan ayat berangkai:** Guru memperdengarkan susunan ayat berangkai dalam latihan h109 dan memodelkan cara menyambung subjek, kata kerja dan objek.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun dua rangkaian daripada kad frasa kemudian membaca di hadapan rakan.
+**Aktiviti 2 — Susun dan baca dua rangkaian frasa:** Murid menyusun dua rangkaian daripada kad frasa kemudian membaca di hadapan rakan.
 
 **Pengukuhan / Penilaian (PBD):** Dua rangkaian ayat dibaca dengan urutan dan intonasi betul.
 

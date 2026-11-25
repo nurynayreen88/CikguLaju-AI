@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أَنَا أُحِبُّ وَطَنِي مَالِيزِيَا، أَنَا فَخُورٌ بِوَطَنِي
 **Objektif pembelajaran:** Menulis dua ayat berangkai pendek yang menyatakan rasa cinta negara.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid menulis dua ayat berangkai pendek yang menyatakan rasa cinta negara.
 
 **Set induksi:** Guru menunjukkan kad frasa yang tidak tersusun seperti pada latihan h111.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menerangkan aktiviti أُكَوِّنُ وَأَكْتُبُ h111 serta mengingatkan kedudukan huruf dan tanda baris.
+**Aktiviti 1 — Model bina ayat أُكَوِّنُ وَأَكْتُبُ:** Guru menerangkan aktiviti أُكَوِّنُ وَأَكْتُبُ h111 serta mengingatkan kedudukan huruf dan tanda baris.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih dua ayat, menyusun perkataan dan menyalin tanpa mengubah susunan tatabahasa.
+**Aktiviti 2 — Susun dan tulis dua ayat cinta negara:** Murid memilih dua ayat, menyusun perkataan dan menyalin tanpa mengubah susunan tatabahasa.
 
 **Pengukuhan / Penilaian (PBD):** Dua tulisan ayat dengan kosa kata dan jarak kata betul.
 

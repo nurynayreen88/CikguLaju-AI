@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** نَشِيدُ الْوِلَايَة، عَاصِمَة، مَلِك، وِلَايَة
 **Objektif pembelajaran:** Menulis tiga daripada empat frasa atau kata dengan bentuk huruf betul.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 frasa atau kata dengan bentuk huruf betul.
 
 **Set induksi:** Guru menunjukkan kad huruf Arab berkaitan unit yang belum lengkap.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan penyalinan frasa pada permainan Pencil Grab h100 dengan penekanan ejaan dan RTL.
+**Aktiviti 1 — Model penyalinan frasa Pencil Grab:** Guru memodelkan penyalinan frasa pada permainan Pencil Grab h100 dengan penekanan ejaan dan RTL.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melengkapkan tiga label bertitik kosong dan menyalin setiap kata sebelum semakan silang rakan.
+**Aktiviti 2 — Lengkapkan label dan semak tulisan:** Murid melengkapkan tiga label bertitik kosong dan menyalin setiap kata sebelum semakan silang rakan.
 
 **Pengukuhan / Penilaian (PBD):** Tiga tulisan betul bentuk huruf, susunan dan jarak kata.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** سَفِينَة، دَرَّاجَة، مِرْوَحِيَّة، قِطَار
 **Objektif pembelajaran:** Membetulkan tiga daripada empat ejaan perkataan.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid membetulkan sekurang-kurangnya 3 daripada 4 ejaan perkataan.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mengemukakan kad ejaan betul/salah berdasarkan aktiviti h70.
+**Aktiviti 1 — Kenal ejaan betul dan salah:** Guru mengemukakan kad ejaan betul/salah berdasarkan aktiviti h70.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengesan kesalahan, menulis semula tiga kata dan membaca satu ejaan yang dibetulkan.
+**Aktiviti 2 — Betulkan tiga ejaan dan baca semula:** Murid mengesan kesalahan, menulis semula tiga kata dan membaca satu ejaan yang dibetulkan.
 
 **Pengukuhan / Penilaian (PBD):** Tiga pembetulan ejaan dan tulisan. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 
