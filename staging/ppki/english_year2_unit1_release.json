@@ -1,0 +1,110 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "English",
+  "subject_id": "BAHASA_INGGERIS_PPKI",
+  "status": "READY",
+  "units": {
+    "1": "Welcome Back"
+  },
+  "sources": {
+    "textbook": "https://anyflip.com/smjjv/pcyn/basic",
+    "dskp": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
+  },
+  "standard_text_kind": "Source-aligned paraphrases; not a verbatim transcription",
+  "content_standards": {
+    "1.1": "Respond suitably to spoken input for different purposes.",
+    "1.2": "Develop pronunciation, stress, rhythm and intonation through listening.",
+    "1.4": "Understand and respond to spoken stories, visual material and songs or rhymes.",
+    "2.1": "Recognise, remember and comprehend vocabulary and short phrases through reading."
+  },
+  "learning_standards": {
+    "1.2.2(ii)": "Listen to and sing songs.",
+    "1.1.1": "Listen and give an appropriate response to a stimulus.",
+    "1.4.1(iii)": "Demonstrate listening comprehension by answering Wh-questions.",
+    "2.1.3": "Read and show comprehension of vocabulary and short phrases."
+  },
+  "release_scope": "RPH only, Unit 1; independent practice; Activity Book page mapping and annual RPT not claimed.",
+  "lessons": [
+    {
+      "pdp": "001",
+      "unit": 1,
+      "title": "School song – Welcome Back",
+      "textbook_page": "1",
+      "sp": [
+        "1.2.2(ii)"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "objective": "Sing along at three target-word cues in the school song with appropriate support.",
+      "success_criterion": "Sing along at three target-word cues in the school song with appropriate support.",
+      "materials": "Textbook p.1, school picture, school bag, two word cards",
+      "induction": "Show the school bag and picture; pupils identify school using speech or a picture choice.",
+      "guided": "Model the textbook song at a comfortable tempo, pointing to the school picture at the target words.",
+      "practice": "Pupils take turns choosing the cue card, then sing the target words at three points in the song.",
+      "support": "Use quiet singing, shorter phrases or visual prompts; record non-vocal alternatives separately.",
+      "closure": "Pupils select the school picture and recall one target word.",
+      "assessment": "Observe each pupil at three singing cues and record successful vocal responses and prompts.",
+      "reflection_criterion": "Sing along at three target-word cues in the school song with appropriate support.",
+      "activity_book_ref": null,
+      "standard_audit": "Unit 1: individually checked against textbook pages 1–4 and DSKP printed pages 37, 38, 40, 41 on 2026-11-26; original differentiated classroom activities; no Activity Book page claimed.",
+      "status": "READY"
+    },
+    {
+      "pdp": "002",
+      "unit": 1,
+      "title": "School places",
+      "textbook_page": "2–3",
+      "sp": [
+        "1.1.1",
+        "1.4.1(iii)"
+      ],
+      "sk": [
+        "1.1",
+        "1.4"
+      ],
+      "objective": "Answer at least four of six spoken Wh-questions about school places using the pictures.",
+      "success_criterion": "Answer at least four of six spoken Wh-questions about school places using the pictures.",
+      "materials": "Textbook pp.2–3, six original school photo cards, school map",
+      "induction": "Show a library photo",
+      "guided": "Ask and model questions about the field, canteen, library, classroom, computer room and hall; link each place to its function.",
+      "practice": "Pupils listen to six Wh-questions, answer with speech or picture choices and place the matching cards on a simple map.",
+      "support": "Provide two photographs and a sentence starter",
+      "closure": "Name a place to visit next",
+      "assessment": "Record correct responses to six spoken questions and the type of prompt used.",
+      "reflection_criterion": "Answer at least four of six spoken Wh-questions about school places using the pictures.",
+      "activity_book_ref": null,
+      "standard_audit": "Unit 1: individually checked against textbook pages 1–4 and DSKP printed pages 37, 38, 40, 41 on 2026-11-26; original differentiated classroom activities; no Activity Book page claimed.",
+      "status": "READY"
+    },
+    {
+      "pdp": "003",
+      "unit": 1,
+      "title": "Reading directions",
+      "textbook_page": "4",
+      "sp": [
+        "2.1.3",
+        "1.1.1"
+      ],
+      "sk": [
+        "2.1",
+        "1.1"
+      ],
+      "objective": "Read and act on three of four direction cards and respond to one spoken direction.",
+      "success_criterion": "Read and act on three of four direction cards and respond to one spoken direction.",
+      "materials": "Textbook p.4, floor arrows, tabletop map, toy figure, direction cards",
+      "induction": "Trace a route with a finger",
+      "guided": "Model the three direction phrases on the page using the toy figure; read each card and demonstrate its action.",
+      "practice": "Pupils read four cards, including one repeated direction, and move the figure to the classroom, canteen or library. Teacher also gives a spoken direction as a separate listening check.",
+      "support": "Use arrows beside the printed words; offer seated movement",
+      "closure": "Select a route to the library",
+      "assessment": "Record correct reading actions out of four and the separate response to the spoken instruction.",
+      "reflection_criterion": "Read and act on three of four direction cards and respond to one spoken direction.",
+      "activity_book_ref": null,
+      "standard_audit": "Unit 1: individually checked against textbook pages 1–4 and DSKP printed pages 37, 38, 40, 41 on 2026-11-26; original differentiated classroom activities; no Activity Book page claimed.",
+      "status": "READY"
+    }
+  ]
+}
