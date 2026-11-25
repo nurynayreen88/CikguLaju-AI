@@ -116,7 +116,7 @@ def build_staging_preview(root, year, pdp):
     bank = json.loads((base / "dskp_standard_descriptions.json").read_text(encoding="utf-8"))[str(year)]
     learning = [bank["sp"][code] for code in sp]
     standards = list(dict.fromkeys(entry["sk"] for entry in learning))
-    sk_text = "; ".join(f"{code} {bank['sk'][code]}" for code in standards)
+    sk_text = "\n".join(f"{code} {bank['sk'][code]}" for code in standards)
     sp_text = "\n".join(f"{code} {entry['description']}" for code, entry in zip(sp, learning, strict=True))
     # The combined blank writing lines in the source are not teaching content.
     footer_values = {
