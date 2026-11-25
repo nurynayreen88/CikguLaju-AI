@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** حلوى، مكرونة، خبز، فواكه، حساء، كعك
 **Objektif pembelajaran:** Murid dapat Merakam sebutan sekurang-kurangnya empat daripada enam nama makanan dengan jelas.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid merakam sebutan sekurang-kurangnya 4 daripada 6 nama makanan dengan jelas.
 
 **Set induksi:** Guru menunjukkan gambar roti, sup dan buah untuk menarik perhatian murid pada sebutan yang baharu.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan enam kata daripada latihan halaman 34, kemudian menunjukkan cara membuat rakaman ringkas menggunakan perakam suara sekolah.
+**Aktiviti 1 — Model sebutan dan teknik rakaman:** Guru memodelkan enam kata daripada latihan halaman 34, kemudian menunjukkan cara membuat rakaman ringkas menggunakan perakam suara sekolah.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan kecil, murid merakam empat sebutan kata makanan, mendengar semula dan memperbaiki sebutan selepas maklum balas guru.
+**Aktiviti 2 — Rakam dan baiki empat sebutan:** Dalam kumpulan kecil, murid merakam empat sebutan kata makanan, mendengar semula dan memperbaiki sebutan selepas maklum balas guru.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak sekurang-kurangnya empat sebutan jelas dalam satu rakaman kumpulan.
 

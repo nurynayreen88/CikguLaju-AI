@@ -5,13 +5,13 @@
 **Kod SK/SP:** 2.2 / 2.2.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid membaca sekurang-kurangnya 5 daripada 6 perkataan ثلاجة، شوكة، ملعقة، كوب، فنجان، قدر dengan betul.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 5 daripada 6 perkataan dapur dengan betul.
 
 **Set induksi:** Guru menunjukkan gambar cawan dan garpu; murid menamakan dalam bahasa Arab.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru membaca enam kata mengikut kad perkataan, murid mengulang dengan perhatian pada tekanan suku kata.
+**Aktiviti 1 — Baca enam perkataan mengikut suku kata:** Guru membaca enam kata mengikut kad perkataan, murid mengulang dengan perhatian pada tekanan suku kata.
 
-**Aktiviti 2 — Amali murid:** Murid menyusun kad gambar berpasangan dan membaca nama tanpa bantuan guru; pasangan memadankan perkataan dengan gambar.
+**Aktiviti 2 — Padankan nama peralatan dengan gambar:** Murid menyusun kad gambar berpasangan dan membaca nama tanpa bantuan guru; pasangan memadankan perkataan dengan gambar.
 
 **Pengukuhan / PBD:** Guru menilai bacaan enam kad setiap murid secara individu.
 

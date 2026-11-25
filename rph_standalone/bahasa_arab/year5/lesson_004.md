@@ -5,13 +5,13 @@
 **Kod SK/SP:** 2.1 / 2.1.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid meniru bacaan dengan tepat sekurang-kurangnya 3 daripada 4 kad ثلاجة، سكين، صحن dan satu kata latihan guru سمكة.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 kad kata dengan bunyi awal yang tepat.
 
 **Set induksi:** Guru memaparkan kad ثلاجة dan صحن, murid mendengar dua bunyi awal yang berlainan.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menggunakan tiga kata yang dipaparkan pada Buku Teks halaman 3 (ثلاجة، سكين، صحن) untuk memperdengarkan sebutan awal, manakala سمكة ialah kad pengayaan guru. Guru turut menunjukkan latihan bercantum huruf ب/ن di halaman yang sama sebagai latihan tambahan bacaan.
+**Aktiviti 1 — Baca kata dapur dan kenal bunyi awal:** Guru menggunakan tiga kata yang dipaparkan pada Buku Teks halaman 3 (ثلاجة، سكين، صحن) untuk memperdengarkan sebutan awal, manakala سمكة ialah kad pengayaan guru. Guru turut menunjukkan latihan bercantum huruf ب/ن di halaman yang sama sebagai latihan tambahan bacaan.
 
-**Aktiviti 2 — Amali murid:** Rakan sepasang menarik kad rawak, membaca tanpa audio dan mengelaskan perkataan mengikut bunyi awal.
+**Aktiviti 2 — Cabut kad bacaan dan kelaskan bunyi:** Rakan sepasang menarik kad rawak, membaca tanpa audio dan mengelaskan perkataan mengikut bunyi awal.
 
 **Pengukuhan / PBD:** Guru mendengar bacaan empat kad dan menanda makhraj serta ketepatan bunyi awal.
 

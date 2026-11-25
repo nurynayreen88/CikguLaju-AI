@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** خروف، حصان، زرافة، ذباب
 **Objektif pembelajaran:** Murid dapat Menulis tiga daripada empat perkataan latihan bentuk huruf serupa dengan titik dan sambungan tepat.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 perkataan dengan titik dan sambungan tepat.
 
 **Set induksi:** Guru menunjukkan huruf ح dan خ, dan murid menyatakan perbezaan titik sebelum menulis.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru berpandukan latihan أستمع وأكتب halaman 31, memodelkan penulisan خروف، حصان، زرافة، ذباب dengan huruf bersambung dalam tulisan Arab kanan-ke-kiri.
+**Aktiviti 1 — Model tulisan empat kata berhuruf serupa:** Guru berpandukan latihan أستمع وأكتب halaman 31, memodelkan penulisan خروف، حصان، زرافة، ذباب dengan huruf bersambung dalam tulisan Arab kanan-ke-kiri.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis empat kata daripada kad, menandakan titik dan menyemak bersama pasangan berasaskan model buku.
+**Aktiviti 2 — Tulis dan semak titik bersama pasangan:** Murid menulis empat kata daripada kad, menandakan titik dan menyemak bersama pasangan berasaskan model buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tiga daripada empat perkataan lengkap, kemas dan bertitik betul.
 

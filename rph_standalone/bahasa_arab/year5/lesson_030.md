@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** طويل، تلميذ، قفز، كرة
 **Objektif pembelajaran:** Murid dapat membezakan tiga daripada empat bunyi awal dalam kata didengar.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membezakan sekurang-kurangnya 3 daripada 4 bunyi awal dalam kata yang didengar.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan membezakan bunyi huruf hampir sama dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut empat kata latihan أستمع وأميز h58 tanpa paparan tulisan dan menerangkan bunyi t dan q.
+**Aktiviti 1 — Dengar empat kata tanpa tulisan:** Guru menyebut empat kata latihan أستمع وأميز h58 tanpa paparan tulisan dan menerangkan bunyi t dan q.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengangkat kad ت/ط/ق/ك mengikut bunyi yang didengar dan membetulkan respons rakan.
+**Aktiviti 2 — Angkat kad huruf dan semak respons:** Murid mengangkat kad ت/ط/ق/ك mengikut bunyi yang didengar dan membetulkan respons rakan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai sekurang-kurangnya tiga daripada empat pengecaman.
 

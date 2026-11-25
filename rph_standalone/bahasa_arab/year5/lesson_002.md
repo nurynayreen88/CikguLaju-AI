@@ -5,13 +5,13 @@
 **Kod SK/SP:** 1.1 / 1.1.3 — DSKP Tahun 5: membezakan bunyi huruf serupa dalam perkataan yang didengar; kod 1.1.3 turut tercetak pada latihan BT h.2. Padanan urutan PdP masih DRAF.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid membezakan sekurang-kurangnya 3 daripada 4 bunyi awal ث، س، ص yang didengar dalam kata ثلاجة، سكين، سمكة، صحن.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid membezakan sekurang-kurangnya 3 daripada 4 bunyi awal ث، س، ص dengan betul.
 
 **Set induksi:** Guru menyebut ثلاجة dan سكين tanpa menunjukkan kad; murid menunjukkan huruf awal yang didengar.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menyebut empat kata yang mengandungi ث/س/ص daripada aktiviti fonetik Unit 1 h.2; murid membezakan bunyi tersebut dengan mengangkat kad huruf.
+**Aktiviti 1 — Dengar empat kata dan kenal huruf awal:** Guru menyebut empat kata yang mengandungi ث/س/ص daripada aktiviti fonetik Unit 1 h.2; murid membezakan bunyi tersebut dengan mengangkat kad huruf.
 
-**Aktiviti 2 — Amali murid:** Dalam kumpulan tiga orang, murid A menyebut perkataan daripada kad gambar, murid B mengangkat kad huruf, murid C menilai menggunakan model guru.
+**Aktiviti 2 — Permainan tiga peranan kad huruf:** Dalam kumpulan tiga orang, murid A menyebut perkataan daripada kad gambar, murid B mengangkat kad huruf, murid C menilai menggunakan model guru.
 
 **Pengukuhan / PBD:** Guru memperdengarkan empat perkataan secara rawak dan menandakan ketepatan membezakan bunyi awal; sasaran sekurang-kurangnya 3/4.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** أرز، خبز، دجاج، لحم، كعك، حلوى
 **Objektif pembelajaran:** Murid dapat Mengelaskan sekurang-kurangnya empat daripada enam nama makanan yang dibaca kepada kategori asas yang ditetapkan guru.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 4 daripada 6 nama makanan yang dibaca kepada kategori ditetapkan.
 
 **Set induksi:** Guru memaparkan kad roti dan ayam, kemudian meminta murid memilih kumpulan makanan masing-masing.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan أقرأ وأصنف halaman 35 yang membezakan الكربوهيدرات dan البروتينات; murid membaca perkataan yang dipelajari dahulu sebelum mengelaskan.
+**Aktiviti 1 — Baca dan kenal kumpulan makanan:** Guru merujuk latihan أقرأ وأصنف halaman 35 yang membezakan الكربوهيدرات dan البروتينات; murid membaca perkataan yang dipelajari dahulu sebelum mengelaskan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengasingkan enam kad makanan kepada kumpulan karbohidrat/protein berdasarkan contoh halaman; bagi item yang tidak masuk dua kumpulan, guru menandakan kategori pengayaan, bukan salah label.
+**Aktiviti 2 — Kelaskan kad karbohidrat dan protein:** Murid mengasingkan enam kad makanan kepada kumpulan karbohidrat/protein berdasarkan contoh halaman; bagi item yang tidak masuk dua kumpulan, guru menandakan kategori pengayaan, bukan salah label.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat daripada enam bacaan dan padanan kategori yang tepat mengikut contoh yang diberi.
 
