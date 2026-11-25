@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** هو مدير نشيط، هي معلمة مجتهدة، من أنت؟
 **Objektif pembelajaran:** Murid dapat menyusun sekurang-kurangnya dua daripada tiga ayat berkait dan membacanya dengan lancar.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menyusun sekurang-kurangnya 2 daripada 3 ayat berkait dan membacanya dengan lancar.
 
 **Set induksi:** Guru menunjukkan kad perkataan yang bercampur dan meminta murid meneka ayat mudah.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menerangkan peraturan permainan h53: kad daripada bola dimasukkan ke dalam gelung, diambil dan disusun menjadi ayat yang mempunyai makna. Murid membaca contoh ayat dengan intonasi sesuai.
+**Aktiviti 1 — Permainan kad ayat dalam gelung:** Guru menerangkan peraturan permainan h53: kad daripada bola dimasukkan ke dalam gelung, diambil dan disusun menjadi ayat yang mempunyai makna. Murid membaca contoh ayat dengan intonasi sesuai.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan, murid menyusun kad ayat mengenai warga sekolah dan membaca susunan akhir; ayat tambahan ialah ciptaan murid, bukan petikan buku.
+**Aktiviti 2 — Susun dan baca ayat berkait:** Dalam kumpulan, murid menyusun kad ayat mengenai warga sekolah dan membaca susunan akhir; ayat tambahan ialah ciptaan murid, bukan petikan buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak ketepatan urutan dua daripada tiga ayat serta bacaan kumpulan.
 

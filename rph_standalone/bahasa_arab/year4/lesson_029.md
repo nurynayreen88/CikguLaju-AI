@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** الوراء، الغرفة، القاعة، الدكان، الخروج
 **Objektif pembelajaran:** Murid dapat meniru sekurang-kurangnya empat daripada lima kata dengan sebutan dan panjang bunyi tepat.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 4 daripada 5 kata dengan sebutan dan panjang bunyi tepat.
 
 **Set induksi:** Guru menunjukkan gambar ruang sekolah dan melafazkan الغرفة serta الدكان.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan fonetik pada h58: kata ber-ال yang mempamerkan bunyi lam jelas dan lam yang digugurkan, kemudian murid mendengar dan mengulang.
+**Aktiviti 1 — Dengar dan ajuk kata tempat ber-ال:** Guru menggunakan latihan fonetik pada h58: kata ber-ال yang mempamerkan bunyi lam jelas dan lam yang digugurkan, kemudian murid mendengar dan mengulang.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan mengasingkan lima kad kata kepada syamsiah dan qamariah dan membaca dua contoh tanpa bimbingan.
+**Aktiviti 2 — Asingkan kad syamsiah dan qamariah:** Murid berpasangan mengasingkan lima kad kata kepada syamsiah dan qamariah dan membaca dua contoh tanpa bimbingan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai sekurang-kurangnya empat daripada lima sebutan dan pemadanan kategori.
 

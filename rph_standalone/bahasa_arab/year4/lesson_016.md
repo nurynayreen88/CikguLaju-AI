@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** المعلم، العيد، التقويم، الرئيس
 **Objektif pembelajaran:** Murid menulis semula sekurang-kurangnya tiga daripada empat kata ber-ال dengan bentuk dan sambungan huruf tepat.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 kata ber-ال dengan bentuk dan sambungan huruf tepat.
 
 **Set induksi:** Guru memaparkan perkataan الرئيس yang belum lengkap; murid menyatakan awalan yang perlu ditambah.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mencontohkan penulisan perkataan ber-ال daripada h.31, menunjukkan sambungan huruf serta titik dan baris; murid menjejak model pada kad RTL.
+**Aktiviti 1 — Jejak sambungan huruf pada kad RTL:** Guru mencontohkan penulisan perkataan ber-ال daripada h.31, menunjukkan sambungan huruf serta titik dan baris; murid menjejak model pada kad RTL.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis empat kata pada kertas berpetak dan menandai ال dengan pensel berlainan, kemudian semak rakan.
+**Aktiviti 2 — Tulis empat kata dan semak rakan:** Murid menulis empat kata pada kertas berpetak dan menandai ال dengan pensel berlainan, kemudian semak rakan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tiga daripada empat kata lengkap dan bersambung dengan betul.
 

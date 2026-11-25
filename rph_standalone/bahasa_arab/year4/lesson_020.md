@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أمين المكتبة، أمينة المكتبة، رئيس الفصل، معلمة
 **Objektif pembelajaran:** Murid membaca sekurang-kurangnya tiga daripada empat frasa warga sekolah dengan sebutan tepat.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 frasa warga sekolah dengan sebutan tepat.
 
 **Set induksi:** Guru menunjukkan gambar bilik perpustakaan dan bertanya siapa yang menguruskan tempat tersebut.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan membaca kata/frasa Buku Teks h.36, memodelkan bacaan أمين المكتبة، أمينة المكتبة، رئيس الفصل dan معلمة. Murid mengulang dan mencantum gambar dengan frasa.
+**Aktiviti 1 — Baca frasa warga sekolah:** Guru merujuk latihan membaca kata/frasa Buku Teks h.36, memodelkan bacaan أمين المكتبة، أمينة المكتبة، رئيس الفصل dan معلمة. Murid mengulang dan mencantum gambar dengan frasa.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menarik satu kad secara rawak, membaca nama jawatan, kemudian meletakkan kad pada gambar lokasi sekolah.
+**Aktiviti 2 — Cabut kad dan padankan lokasi:** Murid menarik satu kad secara rawak, membaca nama jawatan, kemudian meletakkan kad pada gambar lokasi sekolah.
 
 **Pengukuhan / Penilaian (PBD):** Guru mendengar bacaan individu dan merekod sekurang-kurangnya tiga daripada empat frasa tepat.
 

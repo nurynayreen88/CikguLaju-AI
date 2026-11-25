@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** هل أنت عريف؟ نعم، أنا عريف. هل هي مديرة؟
 **Objektif pembelajaran:** Murid membezakan sekurang-kurangnya tiga daripada empat ayat yang didengar berkenaan peranan warga sekolah.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membezakan sekurang-kurangnya 3 daripada 4 ayat tentang peranan warga sekolah yang didengar.
 
 **Set induksi:** Guru memperdengarkan soalan هل أنت عريف؟ dan meminta murid menyatakan siapa yang sedang ditanya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan dialog dan latihan susun ayat Buku Teks h.42, menyebut ayat pendek tentang عريف dan مديرة. Murid membandingkan ayat yang didengar dengan pilihan gambar dan respons.
+**Aktiviti 1 — Bezakan ayat dialog melalui pendengaran:** Guru menggunakan dialog dan latihan susun ayat Buku Teks h.42, menyebut ayat pendek tentang عريف dan مديرة. Murid membandingkan ayat yang didengar dengan pilihan gambar dan respons.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan memilih kad soalan dan jawapan; seorang membaca, seorang memadankan respons yang sesuai tanpa menyalin teks buku secara panjang.
+**Aktiviti 2 — Padankan soalan dan respons:** Murid berpasangan memilih kad soalan dan jawapan; seorang membaca, seorang memadankan respons yang sesuai tanpa menyalin teks buku secara panjang.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tiga daripada empat pasangan ayat soalan-respons dipilih tepat.
 
