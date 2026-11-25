@@ -12,13 +12,13 @@
 
 **Set induksi (4 minit):** Guru memperlihatkan gambar agung, tambul dan kulintangan; murid meneka cara bunyi dihasilkan.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Guru memainkan Audio 44 hingga 46 secara bergilir. Murid mengenal pasti bunyi agung, tambul dan kulintangan.
+**Aktiviti 1 — Kenali bunyi Tagunggu:** Guru memainkan Audio 44 hingga 46 secara bergilir. Murid mengenal pasti bunyi agung, tambul dan kulintangan.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Dalam pasangan, murid membina kad padanan nama alat, jenis bunyi dan keluarga alat; mereka memberi ulasan ringkas terhadap persembahan ensembel Tagunggu.
+**Aktiviti 2 — Padanan alat dan keluarga:** Dalam pasangan, murid membina kad padanan nama alat, jenis bunyi dan keluarga alat; mereka memberi ulasan ringkas terhadap persembahan ensembel Tagunggu.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak tiga nama alat serta sekurang-kurangnya dua keluarga alat; guru catat keputusan pada senarai semak.
 
-**Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
+**Penutup:** Murid menamakan tiga alat Tagunggu dan menyatakan keluarga bagi dua alat.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 50–51, Audio 44–47 dan gambar alat muzik Tagunggu.
 
