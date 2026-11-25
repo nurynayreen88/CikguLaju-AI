@@ -46,7 +46,8 @@ def audit(root=Path(__file__).parent):
                     problems.append(f"{prefix}: missing {field}")
             if not lesson.get("sp"):
                 problems.append(f"{prefix}: missing SP")
-            if lesson.get("status") == "KONFLIK_PENOMBORAN_DSKP":
+            if lesson.get("status") in ("KONFLIK_PENOMBORAN_DSKP",
+                                         "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN"):
                 problems.append(f"{prefix}: unresolved source numbering")
             if lesson["success_criterion"] != lesson["reflection_criterion"]:
                 problems.append(f"{prefix}: reflection mismatch")
