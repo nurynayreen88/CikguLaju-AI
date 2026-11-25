@@ -133,6 +133,13 @@ def main():
                         # use different keys for SK. Match the exact verified
                         # SK text, never a broad or fuzzy substitution.
                         expected_sk={normalized(item["original_sk_text"]),normalized(item["corrected_sk_text"])}
+                        # Native _rph_rows prepends SK code to source text
+                        # already containing that same code (observed T5/65).
+                        # Permit exactly this known duplicated-code variant.
+                        assert len(item["sk_codes"]) == 1
+                        code=normalized(item["sk_codes"][0])
+                        assert all(value.startswith(code+" ") for value in expected_sk)
+                        expected_sk |= {code+" "+value for value in expected_sk}
                         sk_keys=[key for key,value in current.items() if normalized(value) in expected_sk]
                         assert len(sk_keys)==1, (item["year"],item["pdp"],boundary,"SK exact match unavailable or ambiguous",[(key,value) for key,value in current.items() if "KANDUNGAN" in str(key).upper() or str(key).upper()=="SK"],list(current))
                         related[sk_keys[0]]=item["corrected_sk_text"]
