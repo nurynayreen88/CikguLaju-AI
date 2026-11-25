@@ -24,6 +24,7 @@ jobs:
           PYTHONUNBUFFERED: "1"
           CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
       - run: python -m tools.plan_pi_rpt_final_20261125
+      - run: python -m tools.test_pi_no_duration_display_20261125
       - uses: actions/upload-artifact@v4
         with:
           name: pi-rpt-final-698-source
