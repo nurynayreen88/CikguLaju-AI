@@ -211,5 +211,20 @@
     "isbn": "978-983-49-1609-1",
     "visual_review": "PDF page images inspected on 2026-11-25; source duplicate differs from initial registry file ID, no claim of binary identity"
   },
-  "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed."
+  "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed.",
+  "latest_verified_structural_ci": {
+    "run": 45514360861,
+    "conclusion": "success",
+    "source_commit": "f7b3090aef0c067b3490411cfe35017b891483ed",
+    "note": "Structural only; no release approval."
+  },
+  "staged_unique_verified": 397,
+  "staged_year_counts": {
+    "2": 94,
+    "3": 83,
+    "4": 67,
+    "5": 77,
+    "6": 76
+  },
+  "remaining_without_draft": 301
 }
