@@ -10,7 +10,7 @@ from web.rph_pi_jawi_numerals_20261124 import jawi_display_digits
 from docx import Document
 import fitz
 
-def compare_word_layout(baseline, candidate, activity_titles):
+def compare_word_layout(baseline, candidate, activity_titles, original_objective=None, corrected_objective=None):
     """Compare actual emitted DOCX structure and all non-activity cells."""
     assert len(baseline.tables)==len(candidate.tables)
     changed=[]
@@ -24,7 +24,9 @@ def compare_word_layout(baseline, candidate, activity_titles):
                 assert old_cell._tc.tcPr.xml==new_cell._tc.tcPr.xml, ("cell properties",ti,ri,ci)
                 if normalized(old_cell.text)!=normalized(new_cell.text):
                     changed.append((ti,ri,ci))
-                    assert all(normalized(title) in normalized(new_cell.text) for title in activity_titles), ("unexpected changed cell",ti,ri,ci)
+                    activity_changed=all(normalized(title) in normalized(new_cell.text) for title in activity_titles)
+                    objective_changed=bool(corrected_objective and normalized(original_objective) in normalized(old_cell.text) and normalized(corrected_objective) in normalized(new_cell.text))
+                    assert activity_changed or objective_changed, ("unexpected changed cell",ti,ri,ci)
     assert changed, "No actual activity cell changed"
     return changed
 
@@ -42,6 +44,15 @@ def main():
         assert batch["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
         records.extend(batch["records"])
     assert len(records)>=128 and len({item["id"] for item in records})==len(records)
+    objective_file=Path("staging/pendidikan_islam/active_activity_objective_corrections_20261125.json")
+    objective_items=json.loads(objective_file.read_text(encoding="utf8"))["records"] if objective_file.exists() else []
+    objective_ids={x["id"] for x in objective_items}
+    assert len(objective_ids)==len(objective_items)
+    records=[x for x in records if x["id"] not in objective_ids]
+    corrected=[{**x,"objective":x["original_objective"],"source_note":x["original_source_note"]} for x in objective_items]
+    # Test objective patches first, to detect failures before the full render.
+    records=corrected+records
+    assert len({x["id"] for x in records})==len(records)
     # Validate every draft before any expensive native render, so missing
     # teacher/pupil actions cannot halt a multi-hundred-document run late.
     failures=[]
@@ -66,7 +77,10 @@ def main():
         reports=[]
         seen=set()
         for item in payload["records"]:
-            assert item["status"]=="EDITORIAL_QA_NOT_READY"
+            assert item["status"] in ("EDITORIAL_QA_NOT_READY","OBJECTIVE_AND_ACTIVITY_QA_NOT_READY")
+            corrected_objective=item.get("corrected_objective")
+            if corrected_objective:
+                assert normalized(corrected_objective)!=normalized(item["objective"])
             with sqlite3.connect(db.resolve().as_uri()+"?mode=ro",uri=True) as con:
                 con.row_factory=sqlite3.Row
                 source=dict(con.execute("SELECT * FROM rpt_entries WHERE id=? AND verified=1 AND subject='Pendidikan Islam'",(item["id"],)).fetchone())
@@ -92,19 +106,24 @@ def main():
             baseline_document=Document(str(baseline_path))
             baseline_path.unlink(missing_ok=True)
             row_hits=[]
-            expected_objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN"))
+            expected_objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
             expected_sp=normalized(rows.get("STANDARD PEMBELAJARAN"))
             def replace_activity(s,current,boundary):
                 if not isinstance(current,dict):
                     return current
-                same_objective=normalized(current.get("OBJEKTIF PEMBELAJARAN"))==expected_objective
+                objective_key="OBJEKTIF PEMBELAJARAN" if "OBJEKTIF PEMBELAJARAN" in current else "OBJEKTIF"
+                same_objective=normalized(current.get(objective_key)) in ({expected_objective,normalized(corrected_objective)} if corrected_objective else {expected_objective})
                 same_sp=normalized(current.get("STANDARD PEMBELAJARAN"))==expected_sp
                 row_hits.append({"boundary":boundary,"subject":s.get("subject"),"id":s.get("rpt_entry_id"),"objective_match":same_objective,"sp_match":same_sp})
                 if not same_objective or not same_sp:
                     return current
                 updated=dict(current)
                 updated["AKTIVITI UTAMA"]=activity
-                assert {k:v for k,v in updated.items() if k!="AKTIVITI UTAMA"}=={k:v for k,v in current.items() if k!="AKTIVITI UTAMA"}
+                allowed={"AKTIVITI UTAMA"}
+                if corrected_objective:
+                    updated[objective_key]=jawi_display_digits(corrected_objective)
+                    allowed.add(objective_key)
+                assert {k:v for k,v in updated.items() if k not in allowed}=={k:v for k,v in current.items() if k not in allowed}
                 return updated
             def qa_rows(s,t):
                 return replace_activity(s,original(s,t),"rows")
@@ -130,8 +149,11 @@ def main():
                 word=Path(runtime.create_word_file(state,native,unique))
                 pdf=Path(runtime.create_pdf_file(state,native,unique+"p"))
                 document=Document(str(word))
-                changed_cells=compare_word_layout(baseline_document,document,[title for title,body in item["activities"]])
+                changed_cells=compare_word_layout(baseline_document,document,[title for title,body in item["activities"]],item["objective"],corrected_objective)
                 whole="\n".join(c.text for t in document.tables for r in t.rows for c in r.cells)
+                if corrected_objective:
+                    assert normalized(corrected_objective) in normalized(whole),(tag,"corrected objective absent")
+                    assert normalized(item["objective"]) not in normalized(whole),(tag,"old objective still printed")
                 print("PI_QA_RENDER_HOOKS",tag,row_hits,flush=True)
                 print("PI_QA_WORD_ACTUAL",tag,repr(whole[:5000]),flush=True)
                 for title,body in item["activities"]:
@@ -145,7 +167,7 @@ def main():
                 shutil.copy2(pdf,root/(tag+".pdf"))
                 word.unlink(missing_ok=True)
                 pdf.unlink(missing_ok=True)
-                reports.append({"id":item["id"],"year":item["year"],"pdp":item["pdp"],"status":"NATIVE_OUTPUT_QA_ONLY","original_chars":len(rows["AKTIVITI UTAMA"]),"candidate_chars":len(activity),"native_pdf_pages":1,"changed_word_cells":changed_cells,"non_activity_word_layout_identical":True,"preview_png":tag+".png"})
+                reports.append({"id":item["id"],"year":item["year"],"pdp":item["pdp"],"status":"NATIVE_OUTPUT_QA_ONLY","original_chars":len(rows["AKTIVITI UTAMA"]),"candidate_chars":len(activity),"native_pdf_pages":1,"changed_word_cells":changed_cells,"non_activity_word_layout_identical":not bool(corrected_objective),"non_target_word_layout_identical":True,"objective_corrected":bool(corrected_objective),"preview_png":tag+".png"})
                 print("PI_EDITORIAL_RENDER",json.dumps(reports[-1]),flush=True)
             finally:
                 runtime._rph_rows=original
