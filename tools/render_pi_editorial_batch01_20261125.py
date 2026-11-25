@@ -42,6 +42,21 @@ def main():
         assert batch["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
         records.extend(batch["records"])
     assert len(records)>=128 and len({item["id"] for item in records})==len(records)
+    # Validate every draft before any expensive native render, so missing
+    # teacher/pupil actions cannot halt a multi-hundred-document run late.
+    failures=[]
+    for item in records:
+        tag=(item["year"],item["pdp"],item["id"])
+        activities=item["activities"]
+        if len(activities)!=3:
+            failures.append((tag,"activity_count"))
+        for idx,(title,body) in enumerate(activities,1):
+            if "موريد" not in body:
+                failures.append((tag,"missing_pupil",idx,title))
+        if not any("ݢورو" in body for title,body in activities):
+            failures.append((tag,"missing_teacher"))
+    assert not failures, failures
+    print("PI_EDITORIAL_PREFLIGHT",len(records),"passed",flush=True)
     payload={"records":records}
     original=runtime._rph_rows
     original_document=getattr(runtime,"_rph_document_rows",None)
@@ -67,7 +82,7 @@ def main():
             activity=jawi_display_digits("\n".join(f"اکتيۏيتي {i} - {title}\n1. {body}" for i,(title,body) in enumerate(item["activities"],1)))
             assert len(item["activities"])==3 and activity not in seen
             seen.add(activity)
-            assert all("موريد" in body for title,body in item["activities"])
+            assert all("موريد" in body for title,body in item["activities"]), (item["year"],item["pdp"],"missing pupil action")
             assert "ݢورو" in activity
             assert len(activity)<=len(rows["AKTIVITI UTAMA"])+100, "Avoid unchecked long output"
             # Isolated single-record test. Render wrappers can copy or normalize
