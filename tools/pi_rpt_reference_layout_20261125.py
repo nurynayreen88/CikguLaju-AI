@@ -203,7 +203,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     lm, rm = 29, 29
     usable = w - lm - rm
 
-    def p(text, *, size=7.5, leading=11.3, strong=False, color="#263b4e", center=False):
+    def p(text, *, size=7.5, leading=11.3, strong=False, color="#263b4e", center=False, cell_width=None):
         uses_arabic = any("\u0600" <= ch <= "\u08ff" for ch in str(text))
         style = ParagraphStyle(
             "rpt", fontName=(arabic_heavy if strong else arabic_font) if uses_arabic
@@ -216,10 +216,25 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         if any("\u0600" <= ch <= "\u08ff" for ch in printable):
             from arabic_reshaper import reshape
             from bidi.algorithm import get_display
-            printable = "\n".join(
-                get_display(reshape(piece), base_dir="R") if piece.strip() else piece
-                for piece in printable.split("\n")
-            )
+            # Wrap the logical words first; shape each line separately.
+            # Wrapping already reordered Arabic glyphs breaks reading order.
+            lines=[]
+            for piece in printable.split("\n"):
+                if not cell_width:
+                    lines.append(get_display(reshape(piece),base_dir="R") if piece.strip() else piece)
+                    continue
+                logical=""
+                for word in piece.split():
+                    candidate=(logical+" "+word).strip()
+                    visual=get_display(reshape(candidate),base_dir="R")
+                    if logical and pdfmetrics.stringWidth(visual,style.fontName,size)>cell_width-16:
+                        lines.append(get_display(reshape(logical),base_dir="R"))
+                        logical=word
+                    else:
+                        logical=candidate
+                lines.append(get_display(reshape(logical),base_dir="R") if logical else "")
+            printable="\n".join(lines)
+            style.wordWrap=None
         return Paragraph(escape(printable).replace("\n", "<br/>"), style)
 
     def source_pdf_link(url, page_number):
@@ -370,8 +385,8 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
                 unit_lines.append(p(topic_match.group(1).strip(),size=7.8,leading=11.6))
                 unit_lines.append(p(topic_match.group(2).strip(),size=7.8,leading=11.6))
             else:
-                unit_lines.append(p(topic_text,size=7.8,leading=11.6))
-        note_cell=[p(public_note(row),size=7.6,leading=11.5)]
+                unit_lines.append(p(topic_text,size=7.8,leading=11.6,cell_width=180))
+        note_cell=[p(public_note(row),size=7.6,leading=11.5,cell_width=usable-105-180-125-210)]
         if "source_sp_dskp_pdf_url" in row:
             if subject!="bahasa_arab" or row.get("source_sp_dskp_text_signoff") is not False:
                 raise ValueError("DSKP URL link only supported for unapproved Arabic sources")
@@ -380,8 +395,8 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         logical_cells = [
             "" if index in grouped_followers else p(weektext,size=7.0,leading=11.3),
             unit_lines,
-            p(public_standard(row, "sk"),size=7.5,leading=11.3),
-            p(public_standard(row, "sp"),size=7.3,leading=10.8),
+            p(public_standard(row, "sk"),size=7.5,leading=11.3,cell_width=125),
+            p(public_standard(row, "sp"),size=7.3,leading=10.8,cell_width=210),
             note_cell
         ]
         table_rows.append(list(reversed(logical_cells)) if rtl_table else logical_cells)
@@ -404,7 +419,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         ("TOPPADDING",(0,1),(-1,-1),9),
         ("BOTTOMPADDING",(0,1),(-1,-1),9),
         ("LINEBELOW",(0,0),(-1,0),0.5,line),
-        ("LINEBELOW",(1,1),(-1,-1),0.35,line),
+        ("LINEBELOW",(0,1),(3,-1),0.35,line) if rtl_table else ("LINEBELOW",(1,1),(-1,-1),0.35,line),
         ("LINEBEFORE",(1,0),(-1,-1),0.3,line),
         ("BOX",(0,0),(-1,-1),0.6,ink)
     ]))
