@@ -1,0 +1,94 @@
+{
+  "status": "VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL",
+  "year": 4,
+  "source_url": "https://drive.google.com/file/d/1ljeuSbPI4vfu0moS_itg7ONaJ6mnKII2/view",
+  "pdf_sha256": "f4b35b8cfb5cfb494596e015373be941dd1c6d19dbfda273f6ed7f6c790c0f8b",
+  "pdf_pages": 54,
+  "scope": "SK headline sentence only; accompanying theme vocabulary/examples and footnotes remain in original DSKP; not full academic approval",
+  "entries": {
+    "1.1": {
+      "page": 31,
+      "printed_page": 19,
+      "text": "الاستماع إلى أصوات الحروف القمرية والشمسية داخل كلمات المحاور ونطقها نطقا صحيحا.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "1.2": {
+      "page": 32,
+      "printed_page": 20,
+      "text": "الاستماع إلى كلمات المحاور الآتية ونطقها نطقا صحيحا.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "1.3": {
+      "page": 33,
+      "printed_page": 21,
+      "text": "الاستماع إلى الجمل البسيطة حسب المحاور الآتية ونطقها نطقا صحيحا.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "1.4": {
+      "page": 34,
+      "printed_page": 22,
+      "text": "الاستماع إلى الجمل المتناسقة* البسيطة حسب المحاور المقترحة ونطقها نطقا صحيحا.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "2.1": {
+      "page": 36,
+      "printed_page": 24,
+      "text": "قراءة كلمات المحاور التي فيها الحروف القمرية والشمسية.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "2.2": {
+      "page": 37,
+      "printed_page": 25,
+      "text": "قراءة الكلمات حسب المحاور الآتية قراءة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "2.3": {
+      "page": 38,
+      "printed_page": 26,
+      "text": "قراءة الجمل البسيطة حسب المحاور الآتية قراءة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "2.4": {
+      "page": 39,
+      "printed_page": 27,
+      "text": "قراءة الجمل المتناسقة* البسيطة حسب المحاور الآتية قراءة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "3.1": {
+      "page": 41,
+      "printed_page": 29,
+      "text": "كتابة كلمات المحاور التي فيها \"أل\" القمرية والشمسية كتابة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "3.2": {
+      "page": 42,
+      "printed_page": 30,
+      "text": "كتابة كلمات المحاور الآتية كتابة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "3.3": {
+      "page": 43,
+      "printed_page": 31,
+      "text": "كتابة الجمل البسيطة حسب المحاور المقترحة كتابة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "3.4": {
+      "page": 44,
+      "printed_page": 32,
+      "text": "كتابة الجمل البسيطة المتناسقة* حسب المحاور الآتية كتابة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    }
+  }
+}
