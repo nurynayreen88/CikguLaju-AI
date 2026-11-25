@@ -1,0 +1,458 @@
+{
+  "status": "VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL",
+  "year": 4,
+  "source_url": "https://drive.google.com/file/d/1ljeuSbPI4vfu0moS_itg7ONaJ6mnKII2/view",
+  "pdf_sha256": "f4b35b8cfb5cfb494596e015373be941dd1c6d19dbfda273f6ed7f6c790c0f8b",
+  "pdf_pages": 54,
+  "scope": "SK headline sentence only; accompanying theme vocabulary/examples and footnotes remain in original DSKP; not full academic approval",
+  "entries": {
+    "1.1": {
+      "page": 31,
+      "printed_page": 19,
+      "text": "الاستماع إلى أصوات الحروف القمرية والشمسية داخل كلمات المحاور ونطقها نطقا صحيحا.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "1.2": {
+      "page": 32,
+      "printed_page": 20,
+      "text": "الاستماع إلى كلمات المحاور الآتية ونطقها نطقا صحيحا.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "1.3": {
+      "page": 33,
+      "printed_page": 21,
+      "text": "الاستماع إلى الجمل البسيطة حسب المحاور الآتية ونطقها نطقا صحيحا.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "1.4": {
+      "page": 34,
+      "printed_page": 22,
+      "text": "الاستماع إلى الجمل المتناسقة* البسيطة حسب المحاور المقترحة ونطقها نطقا صحيحا.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "2.1": {
+      "page": 36,
+      "printed_page": 24,
+      "text": "قراءة كلمات المحاور التي فيها الحروف القمرية والشمسية.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "2.2": {
+      "page": 37,
+      "printed_page": 25,
+      "text": "قراءة الكلمات حسب المحاور الآتية قراءة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "2.3": {
+      "page": 38,
+      "printed_page": 26,
+      "text": "قراءة الجمل البسيطة حسب المحاور الآتية قراءة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "2.4": {
+      "page": 39,
+      "printed_page": 27,
+      "text": "قراءة الجمل المتناسقة* البسيطة حسب المحاور الآتية قراءة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "3.1": {
+      "page": 41,
+      "printed_page": 29,
+      "text": "كتابة كلمات المحاور التي فيها \"أل\" القمرية والشمسية كتابة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "3.2": {
+      "page": 42,
+      "printed_page": 30,
+      "text": "كتابة كلمات المحاور الآتية كتابة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "3.3": {
+      "page": 43,
+      "printed_page": 31,
+      "text": "كتابة الجمل البسيطة حسب المحاور المقترحة كتابة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    },
+    "3.4": {
+      "page": 44,
+      "printed_page": 32,
+      "text": "كتابة الجمل البسيطة المتناسقة* حسب المحاور الآتية كتابة صحيحة.",
+      "visual_page_inspected": true,
+      "academic_panel_signed_off": false
+    }
+  },
+  "coverage_review": {
+    "status": "CANDIDATE_MAPPING_PASS_NOT_ACADEMIC_APPROVAL",
+    "date": "2026-11-25",
+    "rpt_index_blob": "9ab0a3643dbb05ac468a7c33c8a742880860dba3",
+    "sp_bank_blob": "45d3a46f439a8131ee9792cd7f2fbd3c270ce7b0",
+    "lesson_count": 58,
+    "distinct_sk": 12,
+    "distinct_sp": 25,
+    "all_sp_parent_codes_match": true,
+    "all_sk_sp_candidate_pages_match": true,
+    "recorded_source_hashes_match": true,
+    "source_text_review": "Drive PDF readable text cross-check supports existing used SP candidates; extraction has RTL order and ligature corruption. No independent visual reinspection or academic panel approval claimed.",
+    "academic_panel_signed_off": false,
+    "lessons": [
+      {
+        "pdp": 1,
+        "sk": "1.1",
+        "sp": "1.1.1",
+        "pdf_page": 31
+      },
+      {
+        "pdp": 2,
+        "sk": "1.1",
+        "sp": "1.1.2",
+        "pdf_page": 31
+      },
+      {
+        "pdp": 3,
+        "sk": "1.2",
+        "sp": "1.2.1",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 4,
+        "sk": "2.1",
+        "sp": "2.1.1",
+        "pdf_page": 36
+      },
+      {
+        "pdp": 5,
+        "sk": "2.2",
+        "sp": "2.2.1",
+        "pdf_page": 37
+      },
+      {
+        "pdp": 6,
+        "sk": "3.1",
+        "sp": "3.1.1",
+        "pdf_page": 41
+      },
+      {
+        "pdp": 7,
+        "sk": "3.2",
+        "sp": "3.2.1",
+        "pdf_page": 42
+      },
+      {
+        "pdp": 8,
+        "sk": "1.3",
+        "sp": "1.3.1",
+        "pdf_page": 33
+      },
+      {
+        "pdp": 9,
+        "sk": "1.3",
+        "sp": "1.3.2",
+        "pdf_page": 33
+      },
+      {
+        "pdp": 10,
+        "sk": "2.3",
+        "sp": "2.3.1",
+        "pdf_page": 38
+      },
+      {
+        "pdp": 11,
+        "sk": "3.3",
+        "sp": "3.3.1",
+        "pdf_page": 43
+      },
+      {
+        "pdp": 12,
+        "sk": "1.4",
+        "sp": "1.4.1",
+        "pdf_page": 34
+      },
+      {
+        "pdp": 13,
+        "sk": "1.1",
+        "sp": "1.1.1",
+        "pdf_page": 31
+      },
+      {
+        "pdp": 14,
+        "sk": "1.1",
+        "sp": "1.1.2",
+        "pdf_page": 31
+      },
+      {
+        "pdp": 15,
+        "sk": "2.1",
+        "sp": "2.1.1",
+        "pdf_page": 36
+      },
+      {
+        "pdp": 16,
+        "sk": "3.1",
+        "sp": "3.1.1",
+        "pdf_page": 41
+      },
+      {
+        "pdp": 17,
+        "sk": "1.2",
+        "sp": "1.2.1",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 18,
+        "sk": "1.2",
+        "sp": "1.2.2",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 19,
+        "sk": "1.2",
+        "sp": "1.2.4",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 20,
+        "sk": "2.2",
+        "sp": "2.2.1",
+        "pdf_page": 37
+      },
+      {
+        "pdp": 21,
+        "sk": "3.2",
+        "sp": "3.2.1",
+        "pdf_page": 42
+      },
+      {
+        "pdp": 22,
+        "sk": "1.3",
+        "sp": "1.3.4",
+        "pdf_page": 33
+      },
+      {
+        "pdp": 23,
+        "sk": "2.3",
+        "sp": "2.3.2",
+        "pdf_page": 38
+      },
+      {
+        "pdp": 24,
+        "sk": "3.4",
+        "sp": "3.4.1",
+        "pdf_page": 44
+      },
+      {
+        "pdp": 25,
+        "sk": "1.4",
+        "sp": "1.4.1",
+        "pdf_page": 34
+      },
+      {
+        "pdp": 26,
+        "sk": "2.4",
+        "sp": "2.4.2",
+        "pdf_page": 39
+      },
+      {
+        "pdp": 27,
+        "sk": "1.4",
+        "sp": "1.4.2",
+        "pdf_page": 34
+      },
+      {
+        "pdp": 28,
+        "sk": "2.3",
+        "sp": "2.3.6",
+        "pdf_page": 38
+      },
+      {
+        "pdp": 29,
+        "sk": "1.1",
+        "sp": "1.1.1",
+        "pdf_page": 31
+      },
+      {
+        "pdp": 30,
+        "sk": "1.1",
+        "sp": "1.1.2",
+        "pdf_page": 31
+      },
+      {
+        "pdp": 31,
+        "sk": "2.1",
+        "sp": "2.1.1",
+        "pdf_page": 36
+      },
+      {
+        "pdp": 32,
+        "sk": "3.1",
+        "sp": "3.1.1",
+        "pdf_page": 41
+      },
+      {
+        "pdp": 33,
+        "sk": "1.2",
+        "sp": "1.2.1",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 34,
+        "sk": "1.2",
+        "sp": "1.2.3",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 35,
+        "sk": "1.2",
+        "sp": "1.2.4",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 36,
+        "sk": "2.2",
+        "sp": "2.2.3",
+        "pdf_page": 37
+      },
+      {
+        "pdp": 37,
+        "sk": "3.2",
+        "sp": "3.2.1",
+        "pdf_page": 42
+      },
+      {
+        "pdp": 38,
+        "sk": "2.3",
+        "sp": "2.3.4",
+        "pdf_page": 38
+      },
+      {
+        "pdp": 39,
+        "sk": "3.3",
+        "sp": "3.3.1",
+        "pdf_page": 43
+      },
+      {
+        "pdp": 40,
+        "sk": "3.4",
+        "sp": "3.4.1",
+        "pdf_page": 44
+      },
+      {
+        "pdp": 41,
+        "sk": "1.4",
+        "sp": "1.4.2",
+        "pdf_page": 34
+      },
+      {
+        "pdp": 42,
+        "sk": "2.2",
+        "sp": "2.2.3",
+        "pdf_page": 37
+      },
+      {
+        "pdp": 43,
+        "sk": "1.1",
+        "sp": "1.1.1",
+        "pdf_page": 31
+      },
+      {
+        "pdp": 44,
+        "sk": "1.1",
+        "sp": "1.1.2",
+        "pdf_page": 31
+      },
+      {
+        "pdp": 45,
+        "sk": "3.1",
+        "sp": "3.1.1",
+        "pdf_page": 41
+      },
+      {
+        "pdp": 46,
+        "sk": "1.2",
+        "sp": "1.2.1",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 47,
+        "sk": "1.2",
+        "sp": "1.2.3",
+        "pdf_page": 32
+      },
+      {
+        "pdp": 48,
+        "sk": "2.2",
+        "sp": "2.2.1",
+        "pdf_page": 37
+      },
+      {
+        "pdp": 49,
+        "sk": "2.2",
+        "sp": "2.2.4",
+        "pdf_page": 37
+      },
+      {
+        "pdp": 50,
+        "sk": "3.2",
+        "sp": "3.2.1",
+        "pdf_page": 42
+      },
+      {
+        "pdp": 51,
+        "sk": "1.3",
+        "sp": "1.3.2",
+        "pdf_page": 33
+      },
+      {
+        "pdp": 52,
+        "sk": "2.3",
+        "sp": "2.3.1",
+        "pdf_page": 38
+      },
+      {
+        "pdp": 53,
+        "sk": "2.3",
+        "sp": "2.3.4",
+        "pdf_page": 38
+      },
+      {
+        "pdp": 54,
+        "sk": "3.3",
+        "sp": "3.3.1",
+        "pdf_page": 43
+      },
+      {
+        "pdp": 55,
+        "sk": "3.4",
+        "sp": "3.4.1",
+        "pdf_page": 44
+      },
+      {
+        "pdp": 56,
+        "sk": "1.4",
+        "sp": "1.4.1",
+        "pdf_page": 34
+      },
+      {
+        "pdp": 57,
+        "sk": "1.4",
+        "sp": "1.4.4",
+        "pdf_page": 34
+      },
+      {
+        "pdp": 58,
+        "sk": "2.4",
+        "sp": "2.4.2",
+        "pdf_page": 39
+      }
+    ]
+  }
+}
