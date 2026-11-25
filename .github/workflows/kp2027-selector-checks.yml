@@ -12,6 +12,11 @@ on:
       - 'staging/ppki/**'
       - 'web/telegram_ppki_api.py'
       - 'tests/test_ppki_telegram.py'
+      - 'tests/test_ppki_subject_inventory.py'
+      - 'tests/test_ppki_draft_release_gate.py'
+      - 'tests/test_ppki_english_native_qa.py'
+      - 'tests/test_ppki_bm_math_native_qa.py'
+      - 'tests/test_ppki_other_subjects_native_qa.py'
       - 'web/native_rph_telegram_api.py'
       - 'tests/test_curriculum_version_*.py'
       - 'data/dlp_year2_review.json'
@@ -32,4 +37,4 @@ jobs:
       - run: python -m pip install Flask==3.1.0 python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
       - run: python -m py_compile curriculum_version_selector.py curriculum_version_telegram.py app.py
       - run: python tools/build_dlp_year2_review_catalog.py --check
-      - run: python -m unittest tests.test_curriculum_version_selector tests.test_curriculum_version_telegram tests.test_curriculum_version_dlp_download tests.test_ppki_telegram
+      - run: python -m unittest tests.test_curriculum_version_selector tests.test_curriculum_version_telegram tests.test_curriculum_version_dlp_download tests.test_ppki_telegram tests.test_ppki_subject_inventory tests.test_ppki_draft_release_gate tests.test_ppki_english_native_qa tests.test_ppki_bm_math_native_qa tests.test_ppki_other_subjects_native_qa

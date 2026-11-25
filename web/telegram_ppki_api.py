@@ -5,6 +5,7 @@ from staging.ppki.catalog import (
     FORMATS, RPT_COMBINED_FILENAME, RPT_FILENAME, RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_MANIPULATIVE_YEAR4_FILENAME, RPT_MANIPULATIVE_YEAR5_FILENAME, RPT_MANIPULATIVE_YEAR6_FILENAME, RPT_YEAR3_FILENAME, RPT_YEAR4_FILENAME, RPT_YEAR5_FILENAME, RPT_YEAR6_FILENAME,
     SUBJECT, YEAR, YEARS, catalog, lesson_filename, options, selected_lesson,
 )
+from staging.ppki.subject_inventory import subject_inventory
 from staging.ppki.render_pengurusan_kehidupan import render_lesson
 from staging.ppki.rpt import render_rpt
 from web.native_rph_telegram_api import MIMES
@@ -27,6 +28,14 @@ def create_ppki_blueprint():
             "X-Content-Type-Options": "nosniff",
         })
         return response
+
+    @bp.get("/subjects")
+    def ppki_subjects():
+        try:
+            year = requested_year()
+        except ValueError:
+            return jsonify({"error": "Unexpected query parameters"}), 400
+        return jsonify({"year": year, "subjects": subject_inventory(year)})
 
     @bp.get("/catalog")
     def ppki_catalog():

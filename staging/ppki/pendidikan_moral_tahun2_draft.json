@@ -1,0 +1,540 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Pendidikan Moral",
+  "subject_id": "PENDIDIKAN_MORAL_PPKI",
+  "status": "DALAM_SEMAKAN",
+  "sources": {
+    "textbook": "https://fliphtml5.com/gutjj/iifs/Pendidikan_Moral_(Masalah_Pembelajaran)_Tahun_2/",
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/026-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-MORAL-TAHUN-2.pdf",
+    "dskp_audit": "https://anyflip.com/gurlb/wkyr/basic/201-250"
+  },
+  "notes": "Draf pedagogi asal; julat halaman ialah rujukan kelompok. Kod kosong sengaja tidak direka. Semak teks DSKP penuh, halaman individu, BA, audio jika berkaitan, agihan masa dan Word/PDF sebelum READY. V2 akuatik tidak membuktikan kemahiran dalam air.",
+  "lessons": [
+    {
+      "pdp": "001",
+      "unit": "1",
+      "textbook_page": "1–3",
+      "sp": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "title": "Menghargai haiwan dan tumbuhan",
+      "objective": "3/4 tindakan menjaga dikenal pasti",
+      "success_criterion": "3/4 tindakan menjaga dikenal pasti",
+      "materials": "Kad haiwan, tumbuhan dan tindakan",
+      "induction": "Lihat gambar haiwan.",
+      "guided": "Guru padankan tindakan menjaga dengan keperluan haiwan dan tumbuhan.",
+      "practice": "Murid pilih tindakan bagi empat situasi dan beri satu sebab.",
+      "support": "Dua gambar pilihan; respons melalui kad.",
+      "closure": "Pilih satu tindakan menjaga alam.",
+      "assessment": "Rekod pencapaian: 3/4 tindakan menjaga dikenal pasti. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 tindakan menjaga dikenal pasti",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "002",
+      "unit": "1",
+      "textbook_page": "4",
+      "sp": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "title": "Projek menjaga anak pokok",
+      "objective": "3 langkah penjagaan ditunjukkan",
+      "success_criterion": "3 langkah penjagaan ditunjukkan",
+      "materials": "Bekas, kapas, kacang hijau, air",
+      "induction": "Lihat biji benih.",
+      "guided": "Guru modelkan menyediakan bekas dan menyiram secukupnya.",
+      "practice": "Murid sediakan bekas, tanam dan jadualkan penjagaan bergilir.",
+      "support": "Guna bekas stabil; elak memasukkan biji ke mulut.",
+      "closure": "Pilih tugas penjagaan esok.",
+      "assessment": "Rekod pencapaian: 3 langkah penjagaan ditunjukkan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3 langkah penjagaan ditunjukkan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "003",
+      "unit": "2",
+      "textbook_page": "5–6",
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "title": "Membantu guru di kelas",
+      "objective": "2/3 tindakan membantu dipilih",
+      "success_criterion": "2/3 tindakan membantu dipilih",
+      "materials": "Kad tugas kelas",
+      "induction": "Tunjuk meja bersepah.",
+      "guided": "Guru bincangkan bantuan yang sesuai dan meminta izin.",
+      "practice": "Murid pilih tiga situasi dan tunjuk cara membantu dengan selamat.",
+      "support": "Gunakan objek ringan dan kad tindakan.",
+      "closure": "Nyatakan satu manfaat membantu.",
+      "assessment": "Rekod pencapaian: 2/3 tindakan membantu dipilih. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2/3 tindakan membantu dipilih",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "004",
+      "unit": "2",
+      "textbook_page": "7–8",
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "title": "Amali menawarkan bantuan",
+      "objective": "2 tawaran bantuan sopan ditunjukkan",
+      "success_criterion": "2 tawaran bantuan sopan ditunjukkan",
+      "materials": "Buku ringan, kad dialog",
+      "induction": "Guru membawa buku.",
+      "guided": "Modelkan cara menawarkan bantuan dan menerima arahan.",
+      "practice": "Pasangan berlakon menyusun buku dan membuka ruang laluan.",
+      "support": "Sediakan rangka ujaran atau kad komunikasi.",
+      "closure": "Ulang tawaran bantuan.",
+      "assessment": "Rekod pencapaian: 2 tawaran bantuan sopan ditunjukkan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 tawaran bantuan sopan ditunjukkan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "005",
+      "unit": "3",
+      "textbook_page": "9–11",
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "title": "Tanggungjawab diri di sekolah",
+      "objective": "3/4 rutin tanggungjawab dikenal pasti",
+      "success_criterion": "3/4 rutin tanggungjawab dikenal pasti",
+      "materials": "Kad rutin, papan semak",
+      "induction": "Banding dua gambar meja.",
+      "guided": "Guru susun rutin pakaian, tugasan dan kemasan.",
+      "practice": "Murid kelaskan empat rutin dan pilih tindakan bagi satu situasi.",
+      "support": "Gunakan gambar urutan dan dua pilihan.",
+      "closure": "Pilih satu rutin sendiri.",
+      "assessment": "Rekod pencapaian: 3/4 rutin tanggungjawab dikenal pasti. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 rutin tanggungjawab dikenal pasti",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "006",
+      "unit": "3",
+      "textbook_page": "12",
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "title": "Tanggungjawab menyiapkan tugasan",
+      "objective": "3 langkah tugasan disiapkan",
+      "success_criterion": "3 langkah tugasan disiapkan",
+      "materials": "Kad proses, pinggan dan makanan mainan",
+      "induction": "Tunjuk tugasan belum siap.",
+      "guided": "Guru modelkan urutan menyediakan makanan secara simulasi tanpa alat panas.",
+      "practice": "Murid susun alat, siapkan simulasi dan kemas sendiri mengikut kemampuan.",
+      "support": "Kad tiga langkah dan bantuan fizikal yang sesuai.",
+      "closure": "Tanda tugasan yang selesai.",
+      "assessment": "Rekod pencapaian: 3 langkah tugasan disiapkan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3 langkah tugasan disiapkan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "007",
+      "unit": "4",
+      "textbook_page": "13–14",
+      "sp": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "title": "Ucapan penghargaan",
+      "objective": "3/4 situasi dipadankan dengan ucapan",
+      "success_criterion": "3/4 situasi dipadankan dengan ucapan",
+      "materials": "Kad situasi, buku",
+      "induction": "Lakon menerima buku pinjaman.",
+      "guided": "Guru modelkan ungkapan terima kasih dan sebabnya.",
+      "practice": "Murid pilih ungkapan bagi empat situasi bantuan.",
+      "support": "Kad frasa dan pilihan komunikasi.",
+      "closure": "Ucap terima kasih kepada pasangan.",
+      "assessment": "Rekod pencapaian: 3/4 situasi dipadankan dengan ucapan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 situasi dipadankan dengan ucapan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "008",
+      "unit": "4",
+      "textbook_page": "15–16",
+      "sp": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "title": "Menghargai jasa melalui perbuatan",
+      "objective": "2 tindakan penghargaan ditunjukkan",
+      "success_criterion": "2 tindakan penghargaan ditunjukkan",
+      "materials": "Kad kosong, pensel, situasi",
+      "induction": "Lihat kad penghargaan.",
+      "guided": "Guru tunjuk cara menulis atau memilih mesej penghargaan.",
+      "practice": "Murid hasilkan satu kad dan lakon satu tindakan menghargai.",
+      "support": "Guna pelekat perkataan siap.",
+      "closure": "Tunjukkan kad kepada penerima pilihan.",
+      "assessment": "Rekod pencapaian: 2 tindakan penghargaan ditunjukkan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 tindakan penghargaan ditunjukkan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "009",
+      "unit": "5",
+      "textbook_page": "17–20",
+      "sp": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sk": [
+        "5.1"
+      ],
+      "title": "Tutur kata sopan",
+      "objective": "3/4 ujaran sopan dipilih",
+      "success_criterion": "3/4 ujaran sopan dipilih",
+      "materials": "Boneka, kad dialog",
+      "induction": "Boneka menyapa jiran.",
+      "guided": "Guru modelkan salam, meminta izin dan meminta bantuan.",
+      "practice": "Murid berlakon empat situasi dengan pasangan.",
+      "support": "Kad komunikasi dan pilihan ayat.",
+      "closure": "Ulang ujaran meminta izin.",
+      "assessment": "Rekod pencapaian: 3/4 ujaran sopan dipilih. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 ujaran sopan dipilih",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "010",
+      "unit": "6",
+      "textbook_page": "21–24",
+      "sp": [
+        "6.1.1",
+        "6.1.3"
+      ],
+      "sk": [
+        "6.1"
+      ],
+      "title": "Hormat warga sekolah",
+      "objective": "3/4 tindakan hormat dikenal pasti",
+      "success_criterion": "3/4 tindakan hormat dikenal pasti",
+      "materials": "Kad situasi sekolah",
+      "induction": "Lihat gambar perbualan.",
+      "guided": "Guru modelkan menyapa guru, mendengar petugas sekolah dan memberi laluan kepada warga sekolah.",
+      "practice": "Murid memilih tindakan hormat dalam empat situasi melibatkan guru, pembantu dan rakan sekolah, kemudian lakon satu tindakan.",
+      "support": "Gambar dua pilihan dan arahan ringkas.",
+      "closure": "Pilih amalan untuk kelas.",
+      "assessment": "Rekod pencapaian: 3/4 tindakan hormat dikenal pasti. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 tindakan hormat dikenal pasti",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "011",
+      "unit": "7",
+      "textbook_page": "25–28",
+      "sp": [
+        "7.1.3"
+      ],
+      "sk": [
+        "7.1"
+      ],
+      "title": "Kasih sayang kepada ibu bapa",
+      "objective": "2 tindakan kasih sayang ditunjukkan",
+      "success_criterion": "2 tindakan kasih sayang ditunjukkan",
+      "materials": "Kad rutin rumah, boneka",
+      "induction": "Boneka pulang ke rumah.",
+      "guided": "Guru modelkan bertanya khabar dan membantu kerja ringan.",
+      "practice": "Murid main peranan dua situasi keluarga atau penjaga rekaan.",
+      "support": "Tidak wajib berkongsi keadaan keluarga sebenar.",
+      "closure": "Pilih satu tindakan membantu.",
+      "assessment": "Rekod pencapaian: 2 tindakan kasih sayang ditunjukkan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 tindakan kasih sayang ditunjukkan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "012",
+      "unit": "8",
+      "textbook_page": "29–32",
+      "sp": [
+        "8.1.2"
+      ],
+      "sk": [
+        "8.1"
+      ],
+      "title": "Adil dalam pembahagian",
+      "objective": "3/4 pembahagian objek dibuat secara adil",
+      "success_criterion": "3/4 pembahagian objek dibuat secara adil",
+      "materials": "Pembilang, tiga dulang",
+      "induction": "Tunjuk dulang tidak seimbang.",
+      "guided": "Guru modelkan memberi satu demi satu mengikut giliran.",
+      "practice": "Murid agih empat set bahan secara adil mengikut peraturan.",
+      "support": "Gunakan petak penerima yang jelas.",
+      "closure": "Semak setiap penerima mendapat bahagian.",
+      "assessment": "Rekod pencapaian: 3/4 pembahagian objek dibuat secara adil. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 pembahagian objek dibuat secara adil",
+      "status": "KONFLIK_PENOMBORAN_DSKP",
+      "source_note": "DSKP hlm. 35 (nilai 8 Keadilan) mencetak SK 4.1, SP 8.1.1, 4.1.2 dan 4.1.3. Kod 8.1.2 draf bukan kod cetak; perlu semakan silang sumber rasmi sebelum terbit. Aktiviti amali lebih hampir kepada SP amalan keadilan (4.1.3 cetak).",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "013",
+      "unit": "9",
+      "textbook_page": "33–36",
+      "sp": [
+        "9.1.3"
+      ],
+      "sk": [
+        "9.1"
+      ],
+      "title": "Berani menyatakan kehendak",
+      "objective": "2 kehendak disampaikan secara sopan",
+      "success_criterion": "2 kehendak disampaikan secara sopan",
+      "materials": "Kad pilihan, papan komunikasi",
+      "induction": "Tunjuk dua aktiviti pilihan.",
+      "guided": "Guru modelkan meminta bantuan dan menyatakan pilihan.",
+      "practice": "Murid nyatakan dua kehendak dalam situasi selamat.",
+      "support": "Benarkan AAC dan masa respons tanpa tekanan.",
+      "closure": "Pilih cara meminta bantuan.",
+      "assessment": "Rekod pencapaian: 2 kehendak disampaikan secara sopan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 kehendak disampaikan secara sopan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "014",
+      "unit": "10",
+      "textbook_page": "37–42",
+      "sp": [
+        "10.1.1",
+        "10.1.3"
+      ],
+      "sk": [
+        "10.1"
+      ],
+      "title": "Jujur terhadap ahli keluarga",
+      "objective": "3/4 pilihan perlakuan jujur dikenal pasti",
+      "success_criterion": "3/4 pilihan perlakuan jujur dikenal pasti",
+      "materials": "Kad situasi barang pinjaman, barang rosak dan wang baki",
+      "induction": "Boneka meminjam alat tulis milik penjaga.",
+      "guided": "Guru bincangkan bercakap benar kepada ahli keluarga dan memulangkan barang yang dipinjam.",
+      "practice": "Murid memilih tindakan jujur dalam empat situasi keluarga rekaan dan melakonkan satu tindakan.",
+      "support": "Dua pilihan dan boneka; elak memalukan.",
+      "closure": "Nyatakan satu manfaat jujur kepada ahli keluarga.",
+      "assessment": "Rekod pencapaian: 3/4 pilihan perlakuan jujur dikenal pasti. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 pilihan perlakuan jujur dikenal pasti",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "015",
+      "unit": "11",
+      "textbook_page": "43–48",
+      "sp": [
+        "11.1.3"
+      ],
+      "sk": [
+        "11.1"
+      ],
+      "title": "Rajin menyelesaikan tugasan",
+      "objective": "3 langkah tugasan disiapkan",
+      "success_criterion": "3 langkah tugasan disiapkan",
+      "materials": "Puzzle besar, papan semak",
+      "induction": "Tunjuk puzzle belum siap.",
+      "guided": "Guru modelkan membahagi tugasan kepada langkah kecil.",
+      "practice": "Murid siapkan puzzle, semak hasil dan simpan alat.",
+      "support": "Rehat mengikut keperluan dan bilangan kepingan sesuai.",
+      "closure": "Tanda kemajuan sendiri.",
+      "assessment": "Rekod pencapaian: 3 langkah tugasan disiapkan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3 langkah tugasan disiapkan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "DSKP hlm. 41: amalan rajin dalam bilik darjah; disemak secara visual.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "016",
+      "unit": "12",
+      "textbook_page": "49–54",
+      "sp": [
+        "12.1.3"
+      ],
+      "sk": [
+        "12.1"
+      ],
+      "title": "Bekerjasama dengan guru",
+      "objective": "2 tugas kumpulan disiapkan mengikut peranan",
+      "success_criterion": "2 tugas kumpulan disiapkan mengikut peranan",
+      "materials": "Kad peranan, bahan kelas ringan",
+      "induction": "Tunjuk hasil kerja bersama.",
+      "guided": "Guru agihkan peranan mengikut kemampuan.",
+      "practice": "Murid bekerjasama menyediakan dua sudut bahan dengan giliran.",
+      "support": "Gunakan pasangan dan kad tugas visual.",
+      "closure": "Nyatakan sumbangan sendiri.",
+      "assessment": "Rekod pencapaian: 2 tugas kumpulan disiapkan mengikut peranan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 tugas kumpulan disiapkan mengikut peranan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "017",
+      "unit": "13",
+      "textbook_page": "55–60",
+      "sp": [
+        "13.1.3"
+      ],
+      "sk": [
+        "13.1"
+      ],
+      "title": "Bersederhana menggunakan bahan",
+      "objective": "3/4 pilihan penggunaan secukupnya tepat",
+      "success_criterion": "3/4 pilihan penggunaan secukupnya tepat",
+      "materials": "Kad sumber, token bekalan",
+      "induction": "Tunjuk dua kuantiti kertas.",
+      "guided": "Guru bincangkan jumlah diperlukan dan membazir.",
+      "practice": "Murid pilih kuantiti sesuai dalam empat situasi.",
+      "support": "Berikan dua pilihan konkrit.",
+      "closure": "Simpan baki bahan.",
+      "assessment": "Rekod pencapaian: 3/4 pilihan penggunaan secukupnya tepat. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 pilihan penggunaan secukupnya tepat",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    },
+    {
+      "pdp": "018",
+      "unit": "14",
+      "textbook_page": "61–66",
+      "sp": [
+        "14.1.3"
+      ],
+      "sk": [
+        "14.1"
+      ],
+      "title": "Bertoleransi dengan rakan",
+      "objective": "2 situasi giliran diselesaikan dengan sopan",
+      "success_criterion": "2 situasi giliran diselesaikan dengan sopan",
+      "materials": "Mainan, kad giliran, pemasa visual",
+      "induction": "Tunjuk dua boneka mahu alat sama.",
+      "guided": "Guru modelkan persetujuan giliran dan pilihan alternatif.",
+      "practice": "Pasangan lakon dua situasi dengan peraturan dipersetujui.",
+      "support": "Kad giliran dan tempoh singkat; tiada paksaan.",
+      "closure": "Pilih penyelesaian yang dipersetujui.",
+      "assessment": "Rekod pencapaian: 2 situasi giliran diselesaikan dengan sopan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 situasi giliran diselesaikan dengan sopan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "standard_audit": "Huraian ringkas berdasarkan DSKP; semakan penuh pemetaan BT dan aktiviti masih diperlukan."
+    }
+  ],
+  "audit_round": "2026-11-26: semakan kod sasaran, bukan kelulusan penuh",
+  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan.",
+  "units": {
+    "1": "Kepercayaan kepada Tuhan",
+    "2": "Baik hati",
+    "3": "Bertanggungjawab",
+    "4": "Berterima kasih",
+    "5": "Hemah tinggi",
+    "6": "Hormat",
+    "7": "Kasih sayang",
+    "8": "Keadilan",
+    "9": "Keberanian",
+    "10": "Kejujuran",
+    "11": "Kerajinan",
+    "12": "Kerjasama",
+    "13": "Kesederhanaan",
+    "14": "Toleransi"
+  },
+  "content_standards": {
+    "1.1": "Penghargaan ciptaan Tuhan.",
+    "2.1": "Sikap baik hati terhadap guru.",
+    "3.1": "Tanggungjawab diri di sekolah.",
+    "4.1": "Penghargaan kepada orang lain.",
+    "5.1": "Tutur kata berhemah.",
+    "6.1": "Hormat warga sekolah.",
+    "7.1": "Kasih sayang kepada ibu bapa.",
+    "8.1": "Keadilan dalam pergaulan kelas (kod cadangan, cetakan bercanggah).",
+    "9.1": "Keberanian menyuarakan kehendak di kelas.",
+    "10.1": "Kejujuran kepada keluarga.",
+    "11.1": "Kerajinan di kelas.",
+    "12.1": "Kerjasama bersama guru.",
+    "13.1": "Kesederhanaan di kelas.",
+    "14.1": "Toleransi terhadap rakan."
+  },
+  "learning_standards": {
+    "1.1.1": "Namakan contoh ciptaan Tuhan.",
+    "1.1.2": "Kenal pasti cara menghargai ciptaan Tuhan.",
+    "1.1.3": "Jelaskan kepentingan menghargainya.",
+    "2.1.1": "Nyatakan perlakuan baik hati terhadap guru.",
+    "2.1.2": "Terangkan manfaat membantu guru.",
+    "2.1.3": "Tunjukkan sikap baik hati kepada guru.",
+    "3.1.1": "Nyatakan tanggungjawab terhadap diri di sekolah.",
+    "3.1.2": "Jelaskan kepentingan tanggungjawab diri.",
+    "3.1.3": "Amalkan tanggungjawab terhadap diri di sekolah.",
+    "4.1.1": "Nyatakan contoh penghargaan.",
+    "4.1.2": "Terangkan manfaat penghargaan.",
+    "4.1.3": "Tunjukkan perlakuan berterima kasih.",
+    "5.1.1": "Nyatakan perlakuan berhemah.",
+    "5.1.2": "Terangkan manfaat berhemah.",
+    "5.1.3": "Tunjukkan perlakuan berhemah.",
+    "6.1.1": "Nyatakan perlakuan hormat warga sekolah.",
+    "6.1.3": "Demonstrasikan cara menghormati warga sekolah.",
+    "7.1.3": "Tunjukkan kasih sayang kepada ibu bapa.",
+    "8.1.2": "Kenal pasti perlakuan adil (kod sementara, tidak diluluskan).",
+    "9.1.3": "Tunjukkan keberanian menyatakan kehendak di kelas.",
+    "10.1.1": "Nyatakan contoh jujur kepada keluarga.",
+    "10.1.3": "Demonstrasikan sikap jujur kepada keluarga.",
+    "11.1.3": "Amalkan kerajinan di kelas.",
+    "12.1.3": "Tunjukkan kerjasama bersama guru.",
+    "13.1.3": "Demonstrasikan kesederhanaan di kelas.",
+    "14.1.3": "Tunjukkan toleransi terhadap rakan."
+  },
+  "standard_text_kind": "Parafrasa ringkas untuk audit; bukan huraian verbatim rasmi."
+}

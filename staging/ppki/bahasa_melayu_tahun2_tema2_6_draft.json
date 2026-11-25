@@ -1,0 +1,2265 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Bahasa Melayu",
+  "subject_id": "BAHASA_MELAYU_PPKI",
+  "status": "DALAM_SEMAKAN",
+  "themes": {
+    "2": "Indahnya Alam",
+    "3": "Kreativiti dan Inovasi",
+    "4": "Nilai Murni",
+    "5": "Teknologi Maklumat",
+    "6": "Pendidikan Kewangan"
+  },
+  "units": {
+    "4": "Hijaunya Bumi",
+    "5": "Alam Sekeliling",
+    "6": "Hargai Alam",
+    "7": "Bahan Kitar Semula",
+    "8": "Jom Kreatif",
+    "9": "Cara yang Betul",
+    "10": "Gotong-royong",
+    "11": "Sayangi Haiwan",
+    "12": "Bercuti Bersama-sama Keluarga",
+    "13": "Dunia Siber",
+    "14": "Komputer",
+    "15": "Teknologi Maya",
+    "16": "Bijak Berbelanja",
+    "17": "Jom Menabung",
+    "18": "Hari Keusahawanan"
+  },
+  "sources": {
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/023-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-ASAS-3M-19-5-2016-1.pdf",
+    "textbook": "https://fliphtml5.com/gutjj/rzil/Asas_3_Bahasa_Melayu_(Masalah_Pembelajaran)_Tahun_2/",
+    "activity_book": "Rujukan BA daripada nota BT, belum semak naskhah BA bebas.",
+    "dskp_audit": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
+  },
+  "notes": "Urutan draf selepas Tema 1 (PdP 001–015). Aktiviti ialah olahan pedagogi asli; pemetaan pengukuhan tanpa SP cetak adalah cadangan. Sahkan semua kod, huraian penuh SK/SP, agihan masa, RPT dan penjana sebelum READY. Tiada perubahan produksi.",
+  "lessons": [
+    {
+      "pdp": "016",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "1.1.1(ii)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "textbook_page": "18",
+      "activity_book_ref": "15",
+      "title": "Arahan rakan menjaga alam",
+      "objective": "2/3 arahan rakan diikuti",
+      "success_criterion": "2/3 arahan rakan diikuti",
+      "materials": "Kad tugas, bekas kitar semula",
+      "induction": "Tunjuk sudut kelas bersih dan kotor",
+      "guided": "Pasangan meminta rakan mengutip kad sampah dan meletakkan bekas",
+      "practice": "Laksanakan tiga arahan rakan dengan pertukaran peranan",
+      "support": "Gambar tindakan dan demonstrasi awal",
+      "closure": "Ulang satu arahan dengan rakan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 arahan rakan diikuti. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 arahan rakan diikuti",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "017",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "2.1.5"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "textbook_page": "19",
+      "activity_book_ref": "16–17",
+      "title": "Awal dan akhir perkataan",
+      "objective": "4/6 kedudukan suku kata dikenal pasti",
+      "success_criterion": "4/6 kedudukan suku kata dikenal pasti",
+      "materials": "Kad suku kata, gambar benda",
+      "induction": "Buka gambar teko dan padi",
+      "guided": "Asingkan kad awal dan akhir menggunakan dua ruang berwarna",
+      "practice": "Letakkan enam kad pada ruang yang ditanya",
+      "support": "Dua pilihan dengan contoh bunyi",
+      "closure": "Sebut suku kata akhir satu perkataan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 kedudukan suku kata dikenal pasti. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 kedudukan suku kata dikenal pasti",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "018",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "3.1.1"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "20",
+      "activity_book_ref": "18",
+      "title": "Menulis KV",
+      "objective": "4/6 KV ditulis dengan urutan huruf tepat",
+      "success_criterion": "4/6 KV ditulis dengan urutan huruf tepat",
+      "materials": "Kad g, m dan vokal, papan mini",
+      "induction": "Padankan g dan a",
+      "guided": "Guru membentuk KV dengan vokal berlainan; murid menulis pada papan",
+      "practice": "Tulis enam gabungan KV daripada kad bunyi",
+      "support": "Contoh garis besar dan pensel adaptif",
+      "closure": "Pilih KV dan tulis semula",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 KV ditulis dengan urutan huruf tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 KV ditulis dengan urutan huruf tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "019",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "3.1.2"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "21",
+      "activity_book_ref": "19",
+      "title": "Perkataan di kebun",
+      "objective": "3/4 perkataan dua KV ditulis",
+      "success_criterion": "3/4 perkataan dua KV ditulis",
+      "materials": "Kad gambar buah, huruf magnet",
+      "induction": "Kenal gambar ciku dan duku",
+      "guided": "Bina dua suku kata pada dulang huruf",
+      "practice": "Tulis empat perkataan kebun pada buku selepas kad ditutup mengikut kemampuan",
+      "support": "Tunjukkan satu suku kata permulaan",
+      "closure": "Padankan hasil dengan gambar",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan dua KV ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 perkataan dua KV ditulis",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "020",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "3.1.3"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "22",
+      "activity_book_ref": "20",
+      "title": "Nama tumbuhan",
+      "objective": "3/4 perkataan tiga KV ditulis",
+      "success_criterion": "3/4 perkataan tiga KV ditulis",
+      "materials": "Gambar pokok, kad tiga petak",
+      "induction": "Tepuk suku kata kelapa",
+      "guided": "Gabungkan tiga kad bunyi untuk nama tumbuhan",
+      "practice": "Tulis empat nama daripada gambar dan kad bantuan",
+      "support": "Sediakan jalur tiga petak dan bank kata",
+      "closure": "Baca satu nama yang ditulis",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan tiga KV ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 perkataan tiga KV ditulis",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "021",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "23",
+      "activity_book_ref": "21",
+      "title": "Cerita serangga",
+      "objective": "2 peristiwa diceritakan mengikut urutan",
+      "success_criterion": "2 peristiwa diceritakan mengikut urutan",
+      "materials": "Puppet serangga, gambar urutan",
+      "induction": "Teka serangga melalui gerakan",
+      "guided": "Guru bercerita berdasarkan gambar; murid menggerakkan puppet",
+      "practice": "Susun tiga gambar dan ceritakan dua kejadian",
+      "support": "Dua gambar dan rangka ujaran",
+      "closure": "Nyatakan watak cerita",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 peristiwa diceritakan mengikut urutan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 peristiwa diceritakan mengikut urutan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "022",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "2.1.4"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "textbook_page": "24–25",
+      "activity_book_ref": "22",
+      "title": "Suku kata sayur",
+      "objective": "4/5 nama sayur tiga KV dibatang",
+      "success_criterion": "4/5 nama sayur tiga KV dibatang",
+      "materials": "Kad sayur, blok suku kata",
+      "induction": "Kenal gambar sayur",
+      "guided": "Ketuk tiga blok dan gabungkan bunyinya",
+      "practice": "Murid mengeja serta membatang lima nama sayur tanpa meniru guru",
+      "support": "Petunjuk bunyi satu blok pada satu masa",
+      "closure": "Baca nama sayur pilihan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 nama sayur tiga KV dibatang. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 nama sayur tiga KV dibatang",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "023",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "3.1.3"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "26",
+      "activity_book_ref": "23",
+      "title": "Tulisan tiga suku kata",
+      "objective": "3/4 perkataan lengkap ditulis",
+      "success_criterion": "3/4 perkataan lengkap ditulis",
+      "materials": "Kad gambar, jubin huruf",
+      "induction": "Lihat gambar air terjun dan objek sekitar",
+      "guided": "Guru susun tiga KV; murid isi petak suku kata yang hilang",
+      "practice": "Tulis empat perkataan daripada kad gambar",
+      "support": "Kurangkan pilihan jubin; panduan bunyi",
+      "closure": "Banding tulisan dengan kad semak",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan lengkap ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 perkataan lengkap ditulis",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "024",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "3.3.1"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "textbook_page": "27",
+      "activity_book_ref": "24",
+      "title": "Salin frasa objek",
+      "objective": "3/4 frasa disalin dengan ruang antara perkataan",
+      "success_criterion": "3/4 frasa disalin dengan ruang antara perkataan",
+      "materials": "Objek kayu, kad frasa",
+      "induction": "Padankan gambar meja dan bahan kayu",
+      "guided": "Modelkan ruang menggunakan pembaris jarak",
+      "practice": "Salin empat frasa pada kad label",
+      "support": "Contoh dekat dan garis panduan",
+      "closure": "Letakkan satu label pada gambar",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 frasa disalin dengan ruang antara perkataan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 frasa disalin dengan ruang antara perkataan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "025",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "4.1.1(iii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "28",
+      "activity_book_ref": null,
+      "title": "Masa lapang keluarga",
+      "objective": "2 respons aktiviti keluarga diberikan",
+      "success_criterion": "2 respons aktiviti keluarga diberikan",
+      "materials": "Kad aktiviti, watak rekaan",
+      "induction": "Pilih gambar berbasikal atau membaca",
+      "guided": "Modelkan soal jawab dengan watak keluarga",
+      "practice": "Pasangan memilih dua aktiviti dan menjawab soalan",
+      "support": "Pilihan gambar dan alat komunikasi alternatif",
+      "closure": "Nyatakan satu aktiviti yang disukai",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons aktiviti keluarga diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 respons aktiviti keluarga diberikan",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "026",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "29",
+      "activity_book_ref": null,
+      "title": "Respons cerita banjir",
+      "objective": "2/3 soalan tentang gambar dijawab",
+      "success_criterion": "2/3 soalan tentang gambar dijawab",
+      "materials": "Gambar situasi banjir, kad respons",
+      "induction": "Perhatikan gambar hujan lebat",
+      "guided": "Guru ceritakan gambar dan modelkan pilihan tempat selamat",
+      "practice": "Jawab tiga soalan tentang keadaan dan tindakan selamat",
+      "support": "Ulang ujaran dengan dua pilihan",
+      "closure": "Tunjuk gambar tempat selamat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 soalan tentang gambar dijawab. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 soalan tentang gambar dijawab",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "027",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "2.2.1"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "30",
+      "activity_book_ref": "25",
+      "title": "Bacaan anggota badan",
+      "objective": "4/6 perkataan dua KV dibaca",
+      "success_criterion": "4/6 perkataan dua KV dibaca",
+      "materials": "Dadu, gambar anggota, kad kata",
+      "induction": "Tunjuk anggota yang dinamakan",
+      "guided": "Gilir dadu untuk memilih kad dan guru modelkan bacaan pertama",
+      "practice": "Baca enam kad secara individu dengan padanan gambar",
+      "support": "Petunjuk bunyi awal",
+      "closure": "Baca kad kegemaran",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan dua KV dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 perkataan dua KV dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "028",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "2.2.2"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "31",
+      "activity_book_ref": "26",
+      "title": "Bacaan tiga KV",
+      "objective": "4/6 perkataan tiga KV dibaca",
+      "success_criterion": "4/6 perkataan tiga KV dibaca",
+      "materials": "Kad gambar perahu, pokok dan objek",
+      "induction": "Tepuk tiga bunyi",
+      "guided": "Padankan kad kata dengan gambar menggunakan jalur tiga suku kata",
+      "practice": "Baca enam perkataan dalam susunan baharu",
+      "support": "Tutup sebahagian perkataan dahulu",
+      "closure": "Baca satu kad tanpa gambar",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan tiga KV dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 perkataan tiga KV dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "029",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "3.3.1"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "textbook_page": "32",
+      "activity_book_ref": "27–28",
+      "title": "Salin frasa makanan",
+      "objective": "3/4 frasa dua atau tiga KV disalin",
+      "success_criterion": "3/4 frasa dua atau tiga KV disalin",
+      "materials": "Kad menu, buku tulis",
+      "induction": "Pilih gambar minuman",
+      "guided": "Guru modelkan susunan perkataan pada menu",
+      "practice": "Salin empat frasa untuk menu kelas",
+      "support": "Gunakan kad contoh di sisi buku",
+      "closure": "Semak ruang antara kata",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 frasa dua atau tiga KV disalin. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 frasa dua atau tiga KV disalin",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "030",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "4.1.1(iii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "33",
+      "activity_book_ref": null,
+      "title": "Aktiviti datuk dan nenek",
+      "objective": "2 jawapan aktiviti masa lapang diberikan",
+      "success_criterion": "2 jawapan aktiviti masa lapang diberikan",
+      "materials": "Gambar anyaman dan hobi, kad dialog",
+      "induction": "Perhatikan gambar tikar",
+      "guided": "Guru modelkan soal jawab hobi watak",
+      "practice": "Murid bertanya dan menjawab dua soalan menggunakan gambar",
+      "support": "Terima respons melalui kad komunikasi",
+      "closure": "Pilih satu hobi watak",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 jawapan aktiviti masa lapang diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 jawapan aktiviti masa lapang diberikan",
+      "source_note": "DSKP 4.1.1(iii) digunakan; nota BT mencetak (ii) walaupun fokus masa lapang.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "031",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "3.2.2"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "34",
+      "activity_book_ref": null,
+      "title": "Pengukuhan salinan ayat",
+      "objective": "2/3 ayat disalin dengan perkataan lengkap",
+      "success_criterion": "2/3 ayat disalin dengan perkataan lengkap",
+      "materials": "Kad ayat, buku tulis",
+      "induction": "Susun gambar petani dan alatan",
+      "guided": "Guru tunjuk cara semak perkataan dari kiri ke kanan",
+      "practice": "Salin tiga ayat pengukuhan dengan semakan sendiri",
+      "support": "Pecahkan ayat kepada jalur perkataan",
+      "closure": "Tanda satu ayat lengkap",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 ayat disalin dengan perkataan lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 ayat disalin dengan perkataan lengkap",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "032",
+      "theme": 3,
+      "unit": 7,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "36",
+      "activity_book_ref": "29",
+      "title": "Cerita kotak guna semula",
+      "objective": "3 langkah diceritakan mengikut urutan",
+      "success_criterion": "3 langkah diceritakan mengikut urutan",
+      "materials": "Kotak siap, kad proses",
+      "induction": "Tunjuk kotak sebelum dan selepas dihias",
+      "guided": "Guru cerita proses menggunakan kad; murid atur gambar",
+      "practice": "Ceritakan semula tiga peringkat tanpa penggunaan alat tajam",
+      "support": "Sediakan gambar bernombor",
+      "closure": "Nyatakan hasil akhir",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3 langkah diceritakan mengikut urutan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3 langkah diceritakan mengikut urutan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "033",
+      "theme": 3,
+      "unit": 7,
+      "sp": [
+        "2.2.1"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "37",
+      "activity_book_ref": "30",
+      "title": "Label objek dua KV",
+      "objective": "4/6 label dibaca",
+      "success_criterion": "4/6 label dibaca",
+      "materials": "Kad meja, laci, warna",
+      "induction": "Cari objek di dalam kelas",
+      "guided": "Guru modelkan bacaan label dan murid melekatkannya pada gambar",
+      "practice": "Baca enam label sebelum memilih objek",
+      "support": "Petunjuk suku kata awal",
+      "closure": "Baca label di lokasi sebenar",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 label dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 label dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "034",
+      "theme": 3,
+      "unit": 7,
+      "sp": [
+        "3.2.1"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "38",
+      "activity_book_ref": "31",
+      "title": "Surih nama bahan",
+      "objective": "3/4 perkataan disurih jelas",
+      "success_criterion": "3/4 perkataan disurih jelas",
+      "materials": "Lidi tumpul, tali, kad tulisan",
+      "induction": "Rasa tekstur tali dan kayu",
+      "guided": "Guru tunjuk jejak huruf; murid meniru dengan jari",
+      "practice": "Surih empat nama bahan pada kertas",
+      "support": "Huruf besar dan alat genggam",
+      "closure": "Padankan satu hasil dengan bahan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan disurih jelas. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 perkataan disurih jelas",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "035",
+      "theme": 3,
+      "unit": 7,
+      "sp": [
+        "3.2.2"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "39",
+      "activity_book_ref": "32",
+      "title": "Salin label kitar semula",
+      "objective": "4/5 perkataan disalin lengkap",
+      "success_criterion": "4/5 perkataan disalin lengkap",
+      "materials": "Bekas selamat, kad label",
+      "induction": "Kelaskan gambar bahan",
+      "guided": "Modelkan salinan satu label, kemudian banding huruf",
+      "practice": "Salin lima label dan letak pada gambar bekas",
+      "support": "Contoh dekat, satu label pada satu masa",
+      "closure": "Semak label yang hilang huruf",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 perkataan disalin lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 perkataan disalin lengkap",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "036",
+      "theme": 3,
+      "unit": 7,
+      "sp": [
+        "4.1.1(iii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "40",
+      "activity_book_ref": null,
+      "title": "Hobi menghasilkan kraf",
+      "objective": "2 respons hobi diberikan",
+      "success_criterion": "2 respons hobi diberikan",
+      "materials": "Kain perca, gambar kraf",
+      "induction": "Tunjukkan hasil kraf mudah",
+      "guided": "Guru bertanya aktiviti watak pada waktu lapang",
+      "practice": "Pasangan bertanya dan menjawab tentang dua gambar hobi",
+      "support": "Kad kata kerja dan pilihan visual",
+      "closure": "Kongsi satu hobi pilihan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons hobi diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 respons hobi diberikan",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "037",
+      "theme": 3,
+      "unit": 8,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "41",
+      "activity_book_ref": "33",
+      "title": "Robot rekaan",
+      "objective": "3/4 respons tentang robot betul",
+      "success_criterion": "3/4 respons tentang robot betul",
+      "materials": "Model robot kadbod, gambar",
+      "induction": "Teka fungsi model",
+      "guided": "Guru huraikan gambar robot dengan empat maklumat",
+      "practice": "Murid jawab empat soalan berkaitan cerita",
+      "support": "Kad pilihan fungsi dan bahan",
+      "closure": "Pilih satu fungsi robot",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 respons tentang robot betul. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 respons tentang robot betul",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "038",
+      "theme": 3,
+      "unit": 8,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "42",
+      "activity_book_ref": "34",
+      "title": "Cerita pertandingan reka cipta",
+      "objective": "2/3 kejadian diceritakan berurutan",
+      "success_criterion": "2/3 kejadian diceritakan berurutan",
+      "materials": "Kad pameran, pingat mainan",
+      "induction": "Tunjuk gambar pingat",
+      "guided": "Guru cerita perjalanan watak dari persediaan hingga penghargaan",
+      "practice": "Susun dan ceritakan semula tiga gambar",
+      "support": "Rangka mula, kemudian, akhir",
+      "closure": "Nyatakan perasaan watak",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 kejadian diceritakan berurutan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 kejadian diceritakan berurutan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "039",
+      "theme": 3,
+      "unit": 8,
+      "sp": [
+        "2.1.5"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "textbook_page": "43",
+      "activity_book_ref": "35",
+      "title": "Kenal bahagian suku kata",
+      "objective": "4/6 jawapan awal atau akhir tepat",
+      "success_criterion": "4/6 jawapan awal atau akhir tepat",
+      "materials": "Kad topi, bola, baju",
+      "induction": "Tepuk dua suku kata",
+      "guided": "Guru letak perkataan pada jalur kiri dan kanan",
+      "practice": "Cabut satu kad daripada enam perkataan mengikut arahan awal atau akhir",
+      "support": "Gunakan kod warna kedudukan",
+      "closure": "Bunyikan bahagian yang dipilih",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 jawapan awal atau akhir tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 jawapan awal atau akhir tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "040",
+      "theme": 3,
+      "unit": 8,
+      "sp": [
+        "3.1.2"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "44",
+      "activity_book_ref": "36–37",
+      "title": "Tulis perkataan bergambar",
+      "objective": "4/6 perkataan ditulis dengan huruf lengkap",
+      "success_criterion": "4/6 perkataan ditulis dengan huruf lengkap",
+      "materials": "Kad gambar, papan suku kata",
+      "induction": "Kenal gambar dan sebut kata",
+      "guided": "Guru tunjuk cara menggabungkan dua KV sebelum menulis",
+      "practice": "Murid tulis enam perkataan berdasarkan gambar, bukan menyalin ayat Gunakan perkataan dua suku kata terbuka sahaja.",
+      "support": "Bank suku kata dan penunjuk",
+      "closure": "Semak satu perkataan dengan kad jawapan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan ditulis dengan huruf lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 perkataan ditulis dengan huruf lengkap",
+      "source_note": "Kod BT 3.2.3 tidak mempunyai huraian jelas dalam DSKP hlm. 30. Cadangan kod DSKP lain berdasarkan kemahiran sebenar; kod asal dikekalkan untuk semakan.",
+      "status": "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN",
+      "original_sp": [
+        "3.2.3"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "041",
+      "theme": 3,
+      "unit": 8,
+      "sp": [
+        "3.1.2"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "45",
+      "activity_book_ref": "38",
+      "title": "Tulis dua KV daripada objek",
+      "objective": "3/4 nama objek dua KV ditulis",
+      "success_criterion": "3/4 nama objek dua KV ditulis",
+      "materials": "Kotak sentuh, objek selamat",
+      "induction": "Teka satu objek melalui sentuhan",
+      "guided": "Guru modelkan satu nama objek pada papan",
+      "practice": "Murid ambil empat objek dan tulis nama masing-masing",
+      "support": "Kad bunyi tersedia selepas cubaan awal",
+      "closure": "Baca nama objek terakhir",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 nama objek dua KV ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 nama objek dua KV ditulis",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "042",
+      "theme": 3,
+      "unit": 8,
+      "sp": [
+        "4.1.1(ii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "46",
+      "activity_book_ref": null,
+      "title": "Pekerjaan pembuat makanan",
+      "objective": "2 jawapan pekerjaan watak diberikan",
+      "success_criterion": "2 jawapan pekerjaan watak diberikan",
+      "materials": "Kad peniaga, guru dan pekerja lain",
+      "induction": "Tunjuk gambar gerai biskut",
+      "guided": "Guru modelkan dialog pelanggan dan watak keluarga",
+      "practice": "Pasangan jawab dua soalan tentang pekerjaan ahli keluarga rekaan",
+      "support": "Pilihan gambar pekerjaan dan rangka jawapan",
+      "closure": "Padankan satu pekerjaan dengan alat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 jawapan pekerjaan watak diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 jawapan pekerjaan watak diberikan",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "043",
+      "theme": 3,
+      "unit": 9,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "47",
+      "activity_book_ref": "39",
+      "title": "Respons cerita kebersihan",
+      "objective": "2/3 jawapan berdasarkan gambar tepat",
+      "success_criterion": "2/3 jawapan berdasarkan gambar tepat",
+      "materials": "Gambar situasi halaman buku",
+      "induction": "Lihat gambar tunggal dan kenal objek",
+      "guided": "Guru ceritakan situasi tanpa menunjukkan jawapan",
+      "practice": "Murid menjawab tiga soalan tentang tindakan dalam cerita",
+      "support": "Ulang satu ayat dan beri pilihan visual",
+      "closure": "Nyatakan tindakan yang sesuai",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 jawapan berdasarkan gambar tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 jawapan berdasarkan gambar tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "044",
+      "theme": 3,
+      "unit": 9,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "48",
+      "activity_book_ref": "40",
+      "title": "Urutan cerita kompos",
+      "objective": "3 langkah diceritakan semula",
+      "success_criterion": "3 langkah diceritakan semula",
+      "materials": "Kad proses, bekas kosong tertutup",
+      "induction": "Tunjuk gambar tumbuhan subur",
+      "guided": "Guru cerita proses pada gambar tanpa mengendalikan sisa sebenar",
+      "practice": "Murid susun kad proses dan terangkan tiga langkah",
+      "support": "Kad bernombor dan model ujaran",
+      "closure": "Nyatakan tujuan kompos",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3 langkah diceritakan semula. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3 langkah diceritakan semula",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "045",
+      "theme": 3,
+      "unit": 9,
+      "sp": [
+        "2.2.2"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "49",
+      "activity_book_ref": "41–42",
+      "title": "Bacaan aktiviti keluarga",
+      "objective": "4/5 perkataan tiga KV dibaca",
+      "success_criterion": "4/5 perkataan tiga KV dibaca",
+      "materials": "Kad kata, gambar aktiviti",
+      "induction": "Kenal satu gambar perahu",
+      "guided": "Guru pecah bunyi tiga KV dan gabungkan",
+      "practice": "Murid baca lima perkataan serta padankan gambar",
+      "support": "Jalur suku kata berwarna",
+      "closure": "Baca kata yang dipilih rakan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 perkataan tiga KV dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 perkataan tiga KV dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "046",
+      "theme": 3,
+      "unit": 9,
+      "sp": [
+        "2.2.1",
+        "3.1.2"
+      ],
+      "sk": [
+        "2.2",
+        "3.1"
+      ],
+      "textbook_page": "50",
+      "activity_book_ref": null,
+      "title": "Teka silang kata mudah",
+      "objective": "4/6 jawapan dibaca dan ditulis betul",
+      "success_criterion": "4/6 jawapan dibaca dan ditulis betul",
+      "materials": "Grid besar, kad gambar",
+      "induction": "Teka gambar objek",
+      "guided": "Guru modelkan pengisian petak bagi satu jawapan",
+      "practice": "Murid pilih dan tulis enam kata dalam grid Gunakan perkataan dua suku kata terbuka sahaja.",
+      "support": "Sediakan huruf awal dan kad kata",
+      "closure": "Baca dua jawapan silang",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 jawapan dibaca dan ditulis betul. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 jawapan dibaca dan ditulis betul",
+      "source_note": "Kod BT 3.2.3 tidak mempunyai huraian jelas dalam DSKP hlm. 30. Cadangan kod DSKP lain berdasarkan kemahiran sebenar; kod asal dikekalkan untuk semakan.",
+      "status": "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN",
+      "original_sp": [
+        "2.2.1",
+        "3.2.3"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "047",
+      "theme": 4,
+      "unit": 10,
+      "sp": [
+        "1.1.2"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "textbook_page": "52",
+      "activity_book_ref": "43",
+      "title": "Arahan selepas gotong-royong",
+      "objective": "2 arahan kebersihan dilafazkan",
+      "success_criterion": "2 arahan kebersihan dilafazkan",
+      "materials": "Kad tugas dan gambar sinki",
+      "induction": "Tunjuk gambar tangan selepas berkebun",
+      "guided": "Guru contohkan pesanan kepada rakan",
+      "practice": "Murid pilih dua kad situasi lalu lafazkan arahan yang sesuai",
+      "support": "Rangka ayat dan komunikasi suara alternatif",
+      "closure": "Sampaikan satu pesanan sebelum rehat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 arahan kebersihan dilafazkan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 arahan kebersihan dilafazkan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "048",
+      "theme": 4,
+      "unit": 10,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "53",
+      "activity_book_ref": null,
+      "title": "Respons tentang kerjasama",
+      "objective": "2/3 soalan cerita dijawab",
+      "success_criterion": "2/3 soalan cerita dijawab",
+      "materials": "Gambar gotong-royong",
+      "induction": "Kenal alatan dalam gambar",
+      "guided": "Guru perihalkan tindakan setiap watak",
+      "practice": "Murid jawab tiga soalan dan pilih tindakan susulan",
+      "support": "Gambar dua pilihan dan ulang maklumat",
+      "closure": "Tunjuk satu perbuatan membantu",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 soalan cerita dijawab. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 soalan cerita dijawab",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "049",
+      "theme": 4,
+      "unit": 10,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "54",
+      "activity_book_ref": "44",
+      "title": "Cerita kerja berpasukan",
+      "objective": "3 peristiwa diceritakan mengikut urutan",
+      "success_criterion": "3 peristiwa diceritakan mengikut urutan",
+      "materials": "Kad situasi kerja bersama",
+      "induction": "Pilih gambar aktiviti berkumpulan",
+      "guided": "Guru bercerita sambil menyusun urutan pertama",
+      "practice": "Murid susun dan ceritakan tiga peristiwa kepada pasangan",
+      "support": "Papan urutan dan kata kunci",
+      "closure": "Ucap satu tindakan kerjasama",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3 peristiwa diceritakan mengikut urutan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3 peristiwa diceritakan mengikut urutan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "050",
+      "theme": 4,
+      "unit": 10,
+      "sp": [
+        "3.2.1"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "55",
+      "activity_book_ref": "45",
+      "title": "Surih ayat tindakan",
+      "objective": "2/3 ayat disurih lengkap",
+      "success_criterion": "2/3 ayat disurih lengkap",
+      "materials": "Lembaran ayat, kad kata kerja",
+      "induction": "Lakonkan tindakan menggali secara simbolik",
+      "guided": "Guru tunjuk jejak huruf dan jarak antara perkataan",
+      "practice": "Murid surih tiga ayat pendek tentang tindakan",
+      "support": "Pecahkan ayat kepada frasa dan gunakan tulisan besar",
+      "closure": "Tanda jarak antara perkataan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 ayat disurih lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 ayat disurih lengkap",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "051",
+      "theme": 4,
+      "unit": 10,
+      "sp": [
+        "3.2.2"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "56",
+      "activity_book_ref": "46",
+      "title": "Salin ayat rutin",
+      "objective": "2/3 ayat disalin lengkap",
+      "success_criterion": "2/3 ayat disalin lengkap",
+      "materials": "Kad ayat, buku aktiviti",
+      "induction": "Padankan gambar rutin dengan kata kerja",
+      "guided": "Modelkan menyalin ayat menggunakan penunjuk",
+      "practice": "Salin tiga ayat dan semak huruf yang tertinggal",
+      "support": "Kad ayat diletakkan berhampiran buku",
+      "closure": "Baca satu ayat sendiri",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 ayat disalin lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 ayat disalin lengkap",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "052",
+      "theme": 4,
+      "unit": 11,
+      "sp": [
+        "1.1.1(i)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "textbook_page": "57",
+      "activity_book_ref": null,
+      "title": "Arahan menjaga haiwan",
+      "objective": "2/3 arahan guru diikuti",
+      "success_criterion": "2/3 arahan guru diikuti",
+      "materials": "Model reban, haiwan mainan",
+      "induction": "Kenal gambar haiwan",
+      "guided": "Guru modelkan arahan selamat berhampiran reban mainan",
+      "practice": "Murid laksanakan tiga arahan di ruang simulasi",
+      "support": "Kad simbol berhenti dan ambil; tiada haiwan hidup",
+      "closure": "Tunjuk satu amalan selamat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 arahan guru diikuti. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 arahan guru diikuti",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "053",
+      "theme": 4,
+      "unit": 11,
+      "sp": [
+        "1.1.1(ii)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "textbook_page": "58",
+      "activity_book_ref": null,
+      "title": "Arahan rakan memberi makanan",
+      "objective": "2/3 arahan rakan diikuti",
+      "success_criterion": "2/3 arahan rakan diikuti",
+      "materials": "Bekas, sudu dan ikan mainan",
+      "induction": "Pilih alatan makanan ikan",
+      "guided": "Pasangan berlatih meminta sudu dan bekas",
+      "practice": "Laksanakan tiga arahan rakan dalam simulasi tanpa ikan hidup",
+      "support": "Gunakan arahan satu langkah dan kad objek",
+      "closure": "Kemas bekas mengikut arahan rakan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 arahan rakan diikuti. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 arahan rakan diikuti",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "054",
+      "theme": 4,
+      "unit": 11,
+      "sp": [
+        "2.2.3"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "59",
+      "activity_book_ref": "47",
+      "title": "Bacaan cerita haiwan peliharaan",
+      "objective": "3/4 ayat tunggal dibaca",
+      "success_criterion": "3/4 ayat tunggal dibaca",
+      "materials": "Gambar kucing, jalur ayat",
+      "induction": "Kenal watak haiwan",
+      "guided": "Guru modelkan bacaan ayat pendek dengan penunjuk",
+      "practice": "Murid baca empat ayat dan padankan dengan gambar",
+      "support": "Tutup ayat lain supaya fokus satu baris",
+      "closure": "Pilih satu ayat untuk bacaan ulangan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat tunggal dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat tunggal dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "055",
+      "theme": 4,
+      "unit": 11,
+      "sp": [
+        "2.2.4"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "60",
+      "activity_book_ref": "48",
+      "title": "Bacaan ayat dengan dan",
+      "objective": "3/4 ayat yang mengandungi dan dibaca",
+      "success_criterion": "3/4 ayat yang mengandungi dan dibaca",
+      "materials": "Kad ayat, kad kata hubung",
+      "induction": "Gabungkan dua gambar menggunakan kad dan",
+      "guided": "Guru modelkan membaca kedua-dua bahagian ayat",
+      "practice": "Murid baca empat ayat tanpa meninggalkan kata hubung",
+      "support": "Warnakan kata hubung untuk panduan",
+      "closure": "Baca satu ayat kepada rakan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat yang mengandungi dan dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat yang mengandungi dan dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "056",
+      "theme": 4,
+      "unit": 11,
+      "sp": [
+        "3.2.1"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "61",
+      "activity_book_ref": "49",
+      "title": "Surih ayat tentang kuda",
+      "objective": "3/4 ayat disurih lengkap",
+      "success_criterion": "3/4 ayat disurih lengkap",
+      "materials": "Gambar kuda, lembaran jejak",
+      "induction": "Perhatikan gambar kuda",
+      "guided": "Guru tunjuk arah surihan pada ayat pertama",
+      "practice": "Murid surih empat ayat pendek berkaitan gambar",
+      "support": "Gunakan ruang tulisan luas dan rehat tangan",
+      "closure": "Tunjukkan satu ayat lengkap",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat disurih lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat disurih lengkap",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "057",
+      "theme": 4,
+      "unit": 11,
+      "sp": [
+        "3.2.2"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "62",
+      "activity_book_ref": "50",
+      "title": "Salin ayat haiwan",
+      "objective": "3/4 ayat disalin tepat",
+      "success_criterion": "3/4 ayat disalin tepat",
+      "materials": "Kad haiwan, buku tulis",
+      "induction": "Padankan gambar haiwan dengan ciri",
+      "guided": "Guru tunjuk salinan satu ayat daripada kad gambar",
+      "practice": "Murid salin empat ayat dan banding dengan kad asal",
+      "support": "Pecahkan ayat kepada jalur kata",
+      "closure": "Pilih ayat untuk dibaca",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat disalin tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat disalin tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "058",
+      "theme": 4,
+      "unit": 12,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "63",
+      "activity_book_ref": "51",
+      "title": "Cerita surat percutian",
+      "objective": "2 peristiwa diceritakan dalam urutan",
+      "success_criterion": "2 peristiwa diceritakan dalam urutan",
+      "materials": "Sampul surat, gambar percutian",
+      "induction": "Buka sampul berisi gambar rekaan",
+      "guided": "Guru cerita penghantaran berita percutian",
+      "practice": "Murid susun gambar dan ceritakan dua kejadian",
+      "support": "Rangka ayat dan dua pilihan gambar",
+      "closure": "Nyatakan satu cara mengirim berita",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 peristiwa diceritakan dalam urutan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 peristiwa diceritakan dalam urutan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "059",
+      "theme": 4,
+      "unit": 12,
+      "sp": [
+        "2.2.4"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "64",
+      "activity_book_ref": "52–53",
+      "title": "Bacaan ayat percutian",
+      "objective": "3/4 ayat dengan kata dan dibaca",
+      "success_criterion": "3/4 ayat dengan kata dan dibaca",
+      "materials": "Jalur ayat, kalendar mainan",
+      "induction": "Pilih dua hari pada kalendar",
+      "guided": "Guru modelkan bacaan ayat tentang dua aktiviti",
+      "practice": "Murid baca empat ayat dan pilih gambar yang sepadan",
+      "support": "Serlahkan dan, guna penunjuk",
+      "closure": "Baca ayat pilihan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat dengan kata dan dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat dengan kata dan dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "060",
+      "theme": 4,
+      "unit": 12,
+      "sp": [
+        "3.4.2"
+      ],
+      "sk": [
+        "3.4"
+      ],
+      "textbook_page": "65",
+      "activity_book_ref": "54–55",
+      "title": "Lengkapkan ayat keluarga",
+      "objective": "3/5 ayat tunggal dilengkapkan tepat",
+      "success_criterion": "3/5 ayat tunggal dilengkapkan tepat",
+      "materials": "Kad kata, gambar hadiah dan minuman",
+      "induction": "Padankan gambar dengan nama",
+      "guided": "Guru modelkan memilih kata yang melengkapkan maksud ayat",
+      "practice": "Murid tulis lima ayat menggunakan pilihan kata sesuai",
+      "support": "Kurangkan pilihan kepada dua dan beri contoh struktur",
+      "closure": "Baca satu ayat yang siap",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/5 ayat tunggal dilengkapkan tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/5 ayat tunggal dilengkapkan tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "061",
+      "theme": 4,
+      "unit": 12,
+      "sp": [
+        "4.1.1(i)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "66",
+      "activity_book_ref": "56",
+      "title": "Nama keluarga watak",
+      "objective": "2 nama ahli keluarga watak diberikan",
+      "success_criterion": "2 nama ahli keluarga watak diberikan",
+      "materials": "Carta keluarga rekaan, kad nama",
+      "induction": "Perhatikan carta bergambar",
+      "guided": "Guru modelkan soalan nama ahli keluarga",
+      "practice": "Pasangan bersoal jawab tentang dua watak dalam carta",
+      "support": "Murid boleh memilih watak rekaan; kad komunikasi",
+      "closure": "Padankan kad nama dengan gambar",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 nama ahli keluarga watak diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 nama ahli keluarga watak diberikan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "062",
+      "theme": 4,
+      "unit": 12,
+      "sp": [
+        "4.1.1(ii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "67",
+      "activity_book_ref": null,
+      "title": "Pekerjaan keluarga watak",
+      "objective": "2 respons pekerjaan diberikan",
+      "success_criterion": "2 respons pekerjaan diberikan",
+      "materials": "Kamera mainan, kad pekerjaan",
+      "induction": "Teka pekerjaan melalui alat",
+      "guided": "Guru modelkan soal jawab pekerjaan jurufoto dan watak lain",
+      "practice": "Murid pilih dua watak dan jawab soalan pekerjaan",
+      "support": "Gunakan simbol pekerjaan; elak pendedahan maklumat peribadi",
+      "closure": "Nyatakan satu alat pekerjaan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons pekerjaan diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 respons pekerjaan diberikan",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "063",
+      "theme": 4,
+      "unit": 12,
+      "sp": [
+        "3.4.2"
+      ],
+      "sk": [
+        "3.4"
+      ],
+      "textbook_page": "68",
+      "activity_book_ref": null,
+      "title": "Pengukuhan bina ayat",
+      "objective": "3/4 ayat bermakna ditulis",
+      "success_criterion": "3/4 ayat bermakna ditulis",
+      "materials": "Kad subjek, kata kerja dan objek",
+      "induction": "Susun satu ayat daripada kad",
+      "guided": "Guru tunjuk cara memilih padanan subjek dan tindakan",
+      "practice": "Murid bina dan tulis empat ayat daripada jadual",
+      "support": "Sediakan petak mengikut fungsi perkataan",
+      "closure": "Baca satu ayat dan semak titik",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat bermakna ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat bermakna ditulis",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "064",
+      "theme": 5,
+      "unit": 13,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "70",
+      "activity_book_ref": "57",
+      "title": "Respons peraturan makmal",
+      "objective": "3/4 jawapan tentang peraturan betul",
+      "success_criterion": "3/4 jawapan tentang peraturan betul",
+      "materials": "Kad peraturan, gambar makmal",
+      "induction": "Banding dua gambar tindakan selamat",
+      "guided": "Guru ceritakan situasi di makmal",
+      "practice": "Murid jawab empat soalan dan pilih kad peraturan",
+      "support": "Gunakan pilihan visual tanpa komputer sebenar",
+      "closure": "Tunjuk satu peraturan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 jawapan tentang peraturan betul. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 jawapan tentang peraturan betul",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "065",
+      "theme": 5,
+      "unit": 13,
+      "sp": [
+        "2.2.3"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "71",
+      "activity_book_ref": "58",
+      "title": "Baca ayat tentang meja",
+      "objective": "3/4 ayat tunggal dibaca",
+      "success_criterion": "3/4 ayat tunggal dibaca",
+      "materials": "Gambar meja dan buku, jalur ayat",
+      "induction": "Kenal dua objek",
+      "guided": "Guru tambah perkataan secara berperingkat pada jalur ayat",
+      "practice": "Murid baca empat jalur dengan panjang berbeza",
+      "support": "Tutup perkataan belum dibaca dan gunakan penunjuk",
+      "closure": "Baca ayat terpanjang mengikut kemampuan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat tunggal dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat tunggal dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "066",
+      "theme": 5,
+      "unit": 13,
+      "sp": [
+        "3.1.3"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "72",
+      "activity_book_ref": "59",
+      "title": "Tulis perkataan tiga KV",
+      "objective": "4/6 perkataan tiga KV ditulis",
+      "success_criterion": "4/6 perkataan tiga KV ditulis",
+      "materials": "Kad suku kata awal dan gambar",
+      "induction": "Tepuk bunyi kamera",
+      "guided": "Guru modelkan melengkapkan dua suku kata yang hilang",
+      "practice": "Murid tulis enam perkataan penuh menggunakan kad awal",
+      "support": "Sediakan bank suku kata untuk murid yang perlu",
+      "closure": "Semak urutan tiga KV",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan tiga KV ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 perkataan tiga KV ditulis",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "067",
+      "theme": 5,
+      "unit": 13,
+      "sp": [
+        "3.3.1"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "textbook_page": "73",
+      "activity_book_ref": "60",
+      "title": "Salin frasa pelbagai objek",
+      "objective": "4/6 frasa disalin lengkap",
+      "success_criterion": "4/6 frasa disalin lengkap",
+      "materials": "Kad gambar, buku nota",
+      "induction": "Pilih gambar dua objek",
+      "guided": "Guru modelkan salinan frasa dua perkataan",
+      "practice": "Murid salin enam frasa sambil menanda ruang antara kata",
+      "support": "Kad contoh dekat dengan ruang menulis",
+      "closure": "Banding satu frasa dengan contoh",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 frasa disalin lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 frasa disalin lengkap",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "068",
+      "theme": 5,
+      "unit": 13,
+      "sp": [
+        "4.1.1(iii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "74",
+      "activity_book_ref": null,
+      "title": "Aktiviti keluarga menggunakan media",
+      "objective": "2 jawapan aktiviti masa lapang diberikan",
+      "success_criterion": "2 jawapan aktiviti masa lapang diberikan",
+      "materials": "Gambar membaca dan menonton bersama",
+      "induction": "Pilih gambar aktiviti keluarga",
+      "guided": "Guru modelkan soalan tentang masa lapang",
+      "practice": "Pasangan bertanya dan menjawab dua soalan menggunakan watak rekaan",
+      "support": "Gambar pilihan dan alat komunikasi alternatif",
+      "closure": "Pilih satu aktiviti tanpa skrin",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 jawapan aktiviti masa lapang diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 jawapan aktiviti masa lapang diberikan",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "069",
+      "theme": 5,
+      "unit": 14,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "75",
+      "activity_book_ref": "61",
+      "title": "Respons cerita kedai komputer",
+      "objective": "3/4 soalan cerita dijawab",
+      "success_criterion": "3/4 soalan cerita dijawab",
+      "materials": "Gambar kedai, model komputer",
+      "induction": "Tunjuk gambar pencetak",
+      "guided": "Guru cerita lawatan watak ke kedai",
+      "practice": "Murid jawab empat soalan berdasarkan gambar dan cerita",
+      "support": "Ulang kata kunci dan beri kad pilihan",
+      "closure": "Namakan satu peralatan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 soalan cerita dijawab. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 soalan cerita dijawab",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "070",
+      "theme": 5,
+      "unit": 14,
+      "sp": [
+        "2.2.3"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "76",
+      "activity_book_ref": "62",
+      "title": "Ayat tunggal objek harian",
+      "objective": "3/4 ayat dibaca tepat",
+      "success_criterion": "3/4 ayat dibaca tepat",
+      "materials": "Kad ayat, gambar barang",
+      "induction": "Padankan gambar kamera dengan kad kata",
+      "guided": "Guru modelkan bacaan ayat menggunakan penunjuk",
+      "practice": "Murid baca empat ayat dan pilih gambar sepadan",
+      "support": "Pecahkan kepada perkataan dan gabungkan semula",
+      "closure": "Baca satu ayat pilihan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat dibaca tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat dibaca tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "071",
+      "theme": 5,
+      "unit": 14,
+      "sp": [
+        "2.2.4"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "77",
+      "activity_book_ref": "63",
+      "title": "Ayat dengan kata hubung",
+      "objective": "3/4 ayat dibaca termasuk dan",
+      "success_criterion": "3/4 ayat dibaca termasuk dan",
+      "materials": "Kad ayat dan gambar pasangan objek",
+      "induction": "Tunjuk dua objek bersama",
+      "guided": "Guru bina ayat dengan kad dan di tengah",
+      "practice": "Murid membaca empat ayat lengkap dan memilih gambar gabungan",
+      "support": "Serlahkan kata hubung",
+      "closure": "Baca satu ayat tanpa warna bantuan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat dibaca termasuk dan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat dibaca termasuk dan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "072",
+      "theme": 5,
+      "unit": 14,
+      "sp": [
+        "3.2.2"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "78",
+      "activity_book_ref": "64",
+      "title": "Salin ayat daripada kad",
+      "objective": "4/5 ayat disalin lengkap",
+      "success_criterion": "4/5 ayat disalin lengkap",
+      "materials": "Kad ayat, buku tulis",
+      "induction": "Kenal kata kerja daripada gambar",
+      "guided": "Guru tunjuk cara menyalin dan menyemak ayat",
+      "practice": "Murid salin lima ayat mengikut giliran dan semak huruf serta ruang",
+      "support": "Sediakan jalur pendek satu demi satu",
+      "closure": "Tanda ayat paling kemas",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 ayat disalin lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 ayat disalin lengkap",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "073",
+      "theme": 5,
+      "unit": 14,
+      "sp": [
+        "3.3.1"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "textbook_page": "79",
+      "activity_book_ref": "65",
+      "title": "Label peralatan komputer",
+      "objective": "3/5 frasa disalin dengan tepat",
+      "success_criterion": "3/5 frasa disalin dengan tepat",
+      "materials": "Gambar papan kekunci dan peranti, kad frasa",
+      "induction": "Tunjukkan peralatan tanpa menyambung kuasa",
+      "guided": "Guru modelkan label dua perkataan",
+      "practice": "Murid salin lima frasa dan padankan pada gambar peranti",
+      "support": "Kad contoh berhampiran buku",
+      "closure": "Baca satu label",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/5 frasa disalin dengan tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/5 frasa disalin dengan tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "074",
+      "theme": 5,
+      "unit": 14,
+      "sp": [
+        "4.1.1(ii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "80",
+      "activity_book_ref": "66",
+      "title": "Pekerjaan juruteknik dan watak lain",
+      "objective": "2 respons pekerjaan diberikan",
+      "success_criterion": "2 respons pekerjaan diberikan",
+      "materials": "Kad alatan kerja, gambar watak",
+      "induction": "Teka pekerjaan melalui gambar alat",
+      "guided": "Guru modelkan dialog tentang watak pak cik",
+      "practice": "Pasangan memilih dan menjawab dua soalan pekerjaan",
+      "support": "Gambar pilihan, tiada maklumat keluarga diwajibkan",
+      "closure": "Padankan pekerjaan dan alat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons pekerjaan diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 respons pekerjaan diberikan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "075",
+      "theme": 5,
+      "unit": 15,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "81",
+      "activity_book_ref": "67",
+      "title": "Cerita bermain layang-layang",
+      "objective": "3 langkah diceritakan mengikut urutan",
+      "success_criterion": "3 langkah diceritakan mengikut urutan",
+      "materials": "Model layang-layang, gambar cuaca",
+      "induction": "Lihat gambar padang",
+      "guided": "Guru cerita persediaan bermain menggunakan gambar",
+      "practice": "Murid susun kad dan ceritakan tiga langkah di dalam kelas",
+      "support": "Kad bernombor dan kata kunci",
+      "closure": "Pilih gambar kawasan selamat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3 langkah diceritakan mengikut urutan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3 langkah diceritakan mengikut urutan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "076",
+      "theme": 5,
+      "unit": 15,
+      "sp": [
+        "2.2.3"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "82",
+      "activity_book_ref": "68",
+      "title": "Baca ayat rutin keluarga",
+      "objective": "4/5 ayat tunggal dibaca",
+      "success_criterion": "4/5 ayat tunggal dibaca",
+      "materials": "Kad ayat, gambar rutin",
+      "induction": "Lakon satu tindakan rutin",
+      "guided": "Guru modelkan membaca ayat dan jeda akhir",
+      "practice": "Murid baca lima ayat serta padankan tindakan dengan gambar",
+      "support": "Penunjuk perkataan dan bacaan berpandu sebelum ujian",
+      "closure": "Baca satu ayat tanpa bantuan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 ayat tunggal dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 ayat tunggal dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "077",
+      "theme": 5,
+      "unit": 15,
+      "sp": [
+        "3.3.2"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "textbook_page": "83",
+      "activity_book_ref": "69–70",
+      "title": "Tulis frasa pesanan",
+      "objective": "3/4 frasa bermakna ditulis",
+      "success_criterion": "3/4 frasa bermakna ditulis",
+      "materials": "Telefon mainan, gambar barang, kertas nota",
+      "induction": "Lakon panggilan pesanan ringkas",
+      "guided": "Guru modelkan menyusun dua kata untuk satu barang",
+      "practice": "Murid tulis empat frasa berdasarkan gambar pesanan",
+      "support": "Bank kata dan petak dua perkataan",
+      "closure": "Semak nota pesanan dengan rakan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 frasa bermakna ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 frasa bermakna ditulis",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "078",
+      "theme": 5,
+      "unit": 15,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "84",
+      "activity_book_ref": null,
+      "title": "Pengukuhan teka peralatan",
+      "objective": "3/5 jawapan teka-teki lisan tepat",
+      "success_criterion": "3/5 jawapan teka-teki lisan tepat",
+      "materials": "Kad gambar peralatan",
+      "induction": "Tunjuk sebahagian gambar",
+      "guided": "Guru huraikan fungsi peralatan menggunakan petunjuk sendiri",
+      "practice": "Murid dengar lima petunjuk dan pilih gambar yang betul",
+      "support": "Dua pilihan gambar; ulang petunjuk",
+      "closure": "Nyatakan satu fungsi peralatan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/5 jawapan teka-teki lisan tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/5 jawapan teka-teki lisan tepat",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "079",
+      "theme": 6,
+      "unit": 16,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "86",
+      "activity_book_ref": "71",
+      "title": "Cerita penggunaan wang",
+      "objective": "2 maklumat cerita diceritakan semula",
+      "success_criterion": "2 maklumat cerita diceritakan semula",
+      "materials": "Wang mainan, gambar kedai",
+      "induction": "Kenal wang mainan",
+      "guided": "Guru cerita situasi membeli barang dan menyimpan baki",
+      "practice": "Murid susun dua gambar dan ceritakan semula tindakan watak",
+      "support": "Modelkan kata membeli dan menyimpan",
+      "closure": "Nyatakan satu kegunaan wang",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 maklumat cerita diceritakan semula. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 maklumat cerita diceritakan semula",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "080",
+      "theme": 6,
+      "unit": 16,
+      "sp": [
+        "2.2.4"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "87",
+      "activity_book_ref": "72",
+      "title": "Baca ayat membeli makanan",
+      "objective": "3/4 ayat dengan dan dibaca",
+      "success_criterion": "3/4 ayat dengan dan dibaca",
+      "materials": "Kad makanan, jalur ayat",
+      "induction": "Pilih dua gambar kuih",
+      "guided": "Guru modelkan membaca ayat dengan kata hubung",
+      "practice": "Murid baca empat ayat dan ambil dua gambar yang disebut",
+      "support": "Serlahkan dan; gunakan penunjuk",
+      "closure": "Baca satu ayat sebagai pelanggan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat dengan dan dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat dengan dan dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "081",
+      "theme": 6,
+      "unit": 16,
+      "sp": [
+        "3.2.1"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "88",
+      "activity_book_ref": "73",
+      "title": "Surih ayat senarai beli",
+      "objective": "3/4 ayat disurih lengkap",
+      "success_criterion": "3/4 ayat disurih lengkap",
+      "materials": "Kad barang, lembaran surihan",
+      "induction": "Padankan gambar labu dan cili",
+      "guided": "Guru tunjuk surihan ayat pesanan dengan jarak kata",
+      "practice": "Murid surih empat ayat pesanan secara individu",
+      "support": "Gunakan tulisan besar dan garis panduan",
+      "closure": "Padankan satu ayat dengan gambar barang",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat disurih lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat disurih lengkap",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "082",
+      "theme": 6,
+      "unit": 16,
+      "sp": [
+        "3.2.2"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "89",
+      "activity_book_ref": "74",
+      "title": "Salin ayat simpanan",
+      "objective": "2/3 ayat disalin tepat",
+      "success_criterion": "2/3 ayat disalin tepat",
+      "materials": "Kad gambar bank, buku tulis",
+      "induction": "Tunjukkan buku akaun mainan",
+      "guided": "Guru modelkan salinan satu ayat tentang simpanan",
+      "practice": "Murid salin tiga ayat dan semak dengan contoh",
+      "support": "Kad ayat dekat, pecahkan baris",
+      "closure": "Baca satu ayat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 ayat disalin tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 ayat disalin tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "083",
+      "theme": 6,
+      "unit": 16,
+      "sp": [
+        "3.4.2"
+      ],
+      "sk": [
+        "3.4"
+      ],
+      "textbook_page": "90",
+      "activity_book_ref": null,
+      "title": "Lengkapkan ayat hadiah",
+      "objective": "3/4 ayat tunggal ditulis dengan pilihan kata tepat",
+      "success_criterion": "3/4 ayat tunggal ditulis dengan pilihan kata tepat",
+      "materials": "Kad hadiah, gambar perjalanan, bank kata",
+      "induction": "Pilih gambar hadiah",
+      "guided": "Guru tunjuk memilih kata mengikut maksud gambar",
+      "practice": "Murid lengkap dan tulis empat ayat cerita hadiah",
+      "support": "Dua pilihan kata bagi setiap ruang",
+      "closure": "Baca ayat terakhir kepada rakan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat tunggal ditulis dengan pilihan kata tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat tunggal ditulis dengan pilihan kata tepat",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "084",
+      "theme": 6,
+      "unit": 17,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "91",
+      "activity_book_ref": "75",
+      "title": "Respons tentang peraturan bank",
+      "objective": "2/3 soalan cerita dijawab",
+      "success_criterion": "2/3 soalan cerita dijawab",
+      "materials": "Gambar kaunter, kad giliran",
+      "induction": "Lakon mengambil nombor giliran",
+      "guided": "Guru cerita situasi menunggu giliran di bank",
+      "practice": "Murid jawab tiga soalan tentang tindakan watak",
+      "support": "Gambar urutan dan dua pilihan",
+      "closure": "Tunjukkan tindakan menunggu giliran",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2/3 soalan cerita dijawab. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2/3 soalan cerita dijawab",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "085",
+      "theme": 6,
+      "unit": 17,
+      "sp": [
+        "2.2.3"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "92–93",
+      "activity_book_ref": "76–77",
+      "title": "Baca ayat resipi",
+      "objective": "4/5 ayat tunggal dibaca",
+      "success_criterion": "4/5 ayat tunggal dibaca",
+      "materials": "Kad bahan makanan, gambar resipi",
+      "induction": "Pilih gambar bahan",
+      "guided": "Guru modelkan bacaan arahan mudah tanpa memasak",
+      "practice": "Murid baca lima ayat dan pilih kad bahan sepadan",
+      "support": "Gunakan gambar dan penunjuk satu baris",
+      "closure": "Baca satu ayat resipi",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 ayat tunggal dibaca. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 ayat tunggal dibaca",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "086",
+      "theme": 6,
+      "unit": 17,
+      "sp": [
+        "3.4.2"
+      ],
+      "sk": [
+        "3.4"
+      ],
+      "textbook_page": "94",
+      "activity_book_ref": "78",
+      "title": "Tulis ayat medan selera",
+      "objective": "3/4 ayat berkaitan gambar ditulis",
+      "success_criterion": "3/4 ayat berkaitan gambar ditulis",
+      "materials": "Gambar gerai, kad kata kerja",
+      "induction": "Lihat gambar pelanggan membeli makanan",
+      "guided": "Guru tunjuk cara membina ayat mudah berdasarkan gambar",
+      "practice": "Murid tulis empat ayat menggunakan kata sesuai Gunakan ayat tunggal yang mengandungi perkataan dua dan tiga suku kata terbuka.",
+      "support": "Rangka subjek dan kata kerja; tiada salinan penuh",
+      "closure": "Semak titik pada ayat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat berkaitan gambar ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat berkaitan gambar ditulis",
+      "source_note": "Kod BT 3.2.3 tidak mempunyai huraian jelas dalam DSKP hlm. 30. Cadangan kod DSKP lain berdasarkan kemahiran sebenar; kod asal dikekalkan untuk semakan.",
+      "status": "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN",
+      "original_sp": [
+        "3.2.3"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "087",
+      "theme": 6,
+      "unit": 17,
+      "sp": [
+        "3.3.1"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "textbook_page": "95",
+      "activity_book_ref": "79",
+      "title": "Salin frasa petani",
+      "objective": "4/5 frasa disalin tepat",
+      "success_criterion": "4/5 frasa disalin tepat",
+      "materials": "Kad hasil tani dan kenderaan",
+      "induction": "Teka barang yang dibawa lori",
+      "guided": "Guru modelkan satu frasa dengan jarak perkataan",
+      "practice": "Murid salin lima frasa dan padankan gambar",
+      "support": "Sediakan contoh dekat dan garis panduan",
+      "closure": "Baca satu label hasil tani",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 frasa disalin tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 frasa disalin tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "088",
+      "theme": 6,
+      "unit": 17,
+      "sp": [
+        "4.1.1(ii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "96",
+      "activity_book_ref": "80",
+      "title": "Pekerjaan juruwang",
+      "objective": "2 jawapan pekerjaan watak diberikan",
+      "success_criterion": "2 jawapan pekerjaan watak diberikan",
+      "materials": "Kaunter mainan, kad pekerjaan",
+      "induction": "Lakon menyerahkan wang mainan",
+      "guided": "Guru modelkan dialog tentang pekerjaan watak",
+      "practice": "Murid bertanya dan menjawab dua soalan tentang pekerjaan",
+      "support": "Kad gambar dan rangka ujaran",
+      "closure": "Nyatakan satu tugas juruwang",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 jawapan pekerjaan watak diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 jawapan pekerjaan watak diberikan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "089",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "97",
+      "activity_book_ref": null,
+      "title": "Respons cerita jualan sekolah",
+      "objective": "3/4 soalan berdasarkan cerita dijawab",
+      "success_criterion": "3/4 soalan berdasarkan cerita dijawab",
+      "materials": "Gambar gerai, kad barangan",
+      "induction": "Tunjuk gambar jualan",
+      "guided": "Guru cerita tentang watak di gerai berdasarkan gambar",
+      "practice": "Murid jawab empat soalan tentang pelanggan dan jualan",
+      "support": "Ulang cerita dengan pilihan bergambar",
+      "closure": "Pilih tindakan jujur dalam jualan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 soalan berdasarkan cerita dijawab. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 soalan berdasarkan cerita dijawab",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "090",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "98",
+      "activity_book_ref": "81",
+      "title": "Cerita tabung buatan sendiri",
+      "objective": "3 langkah diceritakan semula",
+      "success_criterion": "3 langkah diceritakan semula",
+      "materials": "Tabung siap, kad proses rekaan",
+      "induction": "Tunjuk tabung daripada bekas selamat",
+      "guided": "Guru cerita urutan membuat tabung melalui gambar",
+      "practice": "Murid susun tiga gambar dan ceritakan semula proses",
+      "support": "Gunakan kad bernombor dan rangka ayat",
+      "closure": "Nyatakan tujuan tabung",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3 langkah diceritakan semula. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3 langkah diceritakan semula",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "091",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "2.2.2"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "99",
+      "activity_book_ref": "82",
+      "title": "Baca perkataan tiga KV",
+      "objective": "4/5 perkataan dibaca tepat",
+      "success_criterion": "4/5 perkataan dibaca tepat",
+      "materials": "Kad perkataan tiga KV, gambar produk",
+      "induction": "Tepuk tiga bunyi perkataan",
+      "guided": "Guru modelkan membaca perkataan melalui gabungan tiga KV",
+      "practice": "Murid baca lima kad perkataan dalam susunan rawak",
+      "support": "Garis pemisah suku kata boleh digunakan",
+      "closure": "Baca satu kad tanpa petunjuk",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 perkataan dibaca tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 perkataan dibaca tepat",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "092",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "3.4.1"
+      ],
+      "sk": [
+        "3.4"
+      ],
+      "textbook_page": "100",
+      "activity_book_ref": "83",
+      "title": "Salin ayat pada penanda buku",
+      "objective": "3/4 ayat tunggal disalin lengkap",
+      "success_criterion": "3/4 ayat tunggal disalin lengkap",
+      "materials": "Penanda buku kosong, kad ayat",
+      "induction": "Pilih gambar penanda buku",
+      "guided": "Guru tunjuk salinan satu ayat nasihat",
+      "practice": "Murid salin empat ayat dan hias penanda buku sendiri",
+      "support": "Sediakan penanda bersaiz besar",
+      "closure": "Baca satu nasihat",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 ayat tunggal disalin lengkap. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 ayat tunggal disalin lengkap",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "093",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "4.1.1(iii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "101",
+      "activity_book_ref": "84",
+      "title": "Aktiviti keluarga di hari jualan",
+      "objective": "2 respons aktiviti masa lapang diberikan",
+      "success_criterion": "2 respons aktiviti masa lapang diberikan",
+      "materials": "Gambar keluarga rekaan, kad dialog",
+      "induction": "Pilih gambar aktiviti jualan atau berjalan",
+      "guided": "Guru modelkan soal jawab tentang masa lapang",
+      "practice": "Murid bertanya dan menjawab dua soalan menggunakan gambar pilihan",
+      "support": "Gunakan kad aktiviti dan alat komunikasi alternatif",
+      "closure": "Kongsi satu aktiviti pilihan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 2 respons aktiviti masa lapang diberikan. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "2 respons aktiviti masa lapang diberikan",
+      "source_note": null,
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "094",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "102",
+      "activity_book_ref": null,
+      "title": "Pengukuhan bacaan frasa",
+      "objective": "4/4 frasa dibaca dengan perkataan sasaran tepat",
+      "success_criterion": "4/4 frasa dibaca dengan perkataan sasaran tepat",
+      "materials": "Peta laluan rekaan, kad frasa",
+      "induction": "Pilih gambar tabung",
+      "guided": "Guru modelkan membaca satu frasa pada hentian",
+      "practice": "Murid bergerak melalui empat hentian dan membaca setiap frasa",
+      "support": "Kad suku kata untuk murid memerlukan bantuan",
+      "closure": "Baca frasa akhir",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/4 frasa dibaca dengan perkataan sasaran tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/4 frasa dibaca dengan perkataan sasaran tepat",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "095",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "2.1.5",
+        "3.1.2"
+      ],
+      "sk": [
+        "2.1",
+        "3.1"
+      ],
+      "textbook_page": "103",
+      "activity_book_ref": null,
+      "title": "Pengukuhan awal akhir dan tulisan",
+      "objective": "4/6 perkataan dilengkap dan ditulis tepat",
+      "success_criterion": "4/6 perkataan dilengkap dan ditulis tepat",
+      "materials": "Kad dua suku kata, lembaran warna",
+      "induction": "Pilih dua kad untuk membentuk kata",
+      "guided": "Guru modelkan mencari awal dan akhir berdasarkan gambar",
+      "practice": "Murid pilih dan tulis enam perkataan bermakna Gunakan perkataan dua suku kata terbuka sahaja.",
+      "support": "Sediakan dua pilihan bagi setiap suku kata",
+      "closure": "Semak satu jawapan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 perkataan dilengkap dan ditulis tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 perkataan dilengkap dan ditulis tepat",
+      "source_note": "Kod BT 3.2.3 tidak mempunyai huraian jelas dalam DSKP hlm. 30. Cadangan kod DSKP lain berdasarkan kemahiran sebenar; kod asal dikekalkan untuk semakan.",
+      "status": "PADANAN_ALTERNATIF_DSKP_PERLU_SAHAN",
+      "original_sp": [
+        "2.1.5",
+        "3.2.3"
+      ],
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "096",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "2.2.1",
+        "3.3.2"
+      ],
+      "sk": [
+        "2.2",
+        "3.3"
+      ],
+      "textbook_page": "104",
+      "activity_book_ref": null,
+      "title": "Pengukuhan bina frasa",
+      "objective": "4/5 frasa bermakna ditulis",
+      "success_criterion": "4/5 frasa bermakna ditulis",
+      "materials": "Kad kata dan grid carian rekaan",
+      "induction": "Padankan dua kata menjadi frasa",
+      "guided": "Guru tunjuk cara mencari kata pasangan",
+      "practice": "Murid cari lima kata dan tulis frasa yang lengkap",
+      "support": "Kurangkan bilangan pilihan pada grid",
+      "closure": "Baca satu frasa yang dibina",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/5 frasa bermakna ditulis. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/5 frasa bermakna ditulis",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "097",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "2.1.3",
+        "2.1.5"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "textbook_page": "105",
+      "activity_book_ref": null,
+      "title": "Pengukuhan bina kata bergambar",
+      "objective": "3/4 perkataan dibentuk dan dibatang tepat",
+      "success_criterion": "3/4 perkataan dibentuk dan dibatang tepat",
+      "materials": "Kad suku kata dan gambar",
+      "induction": "Pilih gambar buku",
+      "guided": "Guru modelkan gabungan dua KV menggunakan kad",
+      "practice": "Murid pilih suku kata untuk empat gambar kemudian batang perkataan",
+      "support": "Sediakan kad awal dan pilihan akhir",
+      "closure": "Baca perkataan yang dipilih rakan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 3/4 perkataan dibentuk dan dibatang tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "3/4 perkataan dibentuk dan dibatang tepat",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    },
+    {
+      "pdp": "098",
+      "theme": 6,
+      "unit": 18,
+      "sp": [
+        "2.2.3"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "106",
+      "activity_book_ref": null,
+      "title": "Pengukuhan bacaan ayat dua dan tiga KV",
+      "objective": "4/6 ayat dibaca dengan tepat",
+      "success_criterion": "4/6 ayat dibaca dengan tepat",
+      "materials": "Kad ayat, pensel warna",
+      "induction": "Tepuk bilangan suku kata satu perkataan",
+      "guided": "Guru modelkan bacaan ayat dan mengenal kata sasaran",
+      "practice": "Murid baca enam ayat dan tanda kata dua atau tiga KV",
+      "support": "Jalur pemisah suku kata dan penunjuk",
+      "closure": "Baca semula satu ayat pilihan",
+      "assessment": "Rekod prestasi berdasarkan kriteria: 4/6 ayat dibaca dengan tepat. Catat tahap bantuan secara berasingan.",
+      "reflection_criterion": "4/6 ayat dibaca dengan tepat",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "DSKP hlm. 25–33: huraian ringkas berdasarkan semakan visual; keselarasan aktiviti, BT/BA dan kod alternatif belum diluluskan."
+    }
+  ],
+  "content_standards": {
+    "1.1": "Arahan lisan dalam situasi berbeza.",
+    "1.2": "Pemahaman cerita dan penceritaan semula.",
+    "2.1": "Gabungan dan ejaan suku kata.",
+    "2.2": "Bacaan mekanis.",
+    "3.1": "Tulisan suku kata dan perkataan.",
+    "3.2": "Latihan tulisan mekanis.",
+    "3.3": "Penghasilan frasa bertulis.",
+    "3.4": "Penghasilan ayat tunggal.",
+    "4.1": "Komunikasi tentang keluarga."
+  },
+  "learning_standards": {
+    "1.1.1(i)": "Respons kepada arahan guru.",
+    "1.1.1(ii)": "Respons kepada arahan rakan.",
+    "1.1.2": "Dengar dan ucap arahan mengikut situasi.",
+    "1.2.1": "Respons kepada cerita lisan dengan satu gambar.",
+    "1.2.2": "Cerita semula bahan yang didengar berbantukan media.",
+    "2.1.1": "Eja dan bunyikan KV.",
+    "2.1.2": "Eja serta gabungkan V+KV.",
+    "2.1.3": "Eja serta gabungkan KV+KV.",
+    "2.1.4": "Eja serta gabungkan KV+KV+KV.",
+    "2.1.5": "Kenal pasti suku kata permulaan dan penghujung.",
+    "2.2.1": "Baca kata dua suku kata terbuka.",
+    "2.2.2": "Baca kata tiga suku kata terbuka.",
+    "2.2.3": "Baca ayat tunggal bersuku kata terbuka.",
+    "2.2.4": "Baca ayat bersuku kata terbuka dengan penghubung dan.",
+    "3.1.1": "Tulis KV.",
+    "3.1.2": "Tulis kata dua suku kata terbuka.",
+    "3.1.3": "Tulis kata tiga suku kata terbuka.",
+    "3.2.1": "Jejak tulisan KV, kata dan ayat.",
+    "3.2.2": "Salin KV, kata dan ayat.",
+    "3.3.1": "Salin frasa berkataan dua atau tiga suku kata.",
+    "3.3.2": "Tulis frasa berkataan dua atau tiga suku kata.",
+    "3.4.1": "Salin ayat tunggal berkataan dua atau tiga suku kata.",
+    "3.4.2": "Tulis ayat tunggal berkataan dua atau tiga suku kata.",
+    "4.1.1(i)": "Soal jawab nama ahli keluarga.",
+    "4.1.1(ii)": "Soal jawab pekerjaan ahli keluarga.",
+    "4.1.1(iii)": "Soal jawab kegiatan masa lapang ahli keluarga."
+  },
+  "standard_text_kind": "Huraian ringkas parafrasa untuk audit, bukan petikan rasmi"
+}
