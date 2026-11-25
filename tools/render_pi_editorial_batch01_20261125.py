@@ -69,6 +69,10 @@ def main():
             failures.append((tag,"missing_teacher"))
     assert not failures, failures
     print("PI_EDITORIAL_PREFLIGHT",len(records),"passed",flush=True)
+    # The full 698-record baseline already passed run 45534515175.
+    # This incremental pass targets only the seven newly revised source reviews.
+    records=[x for x in records if x.get("final_review_fields")]
+    assert len(records)==7
     payload={"records":records}
     original=runtime._rph_rows
     original_document=getattr(runtime,"_rph_document_rows",None)
@@ -173,6 +177,17 @@ def main():
                                 extra_changes.append((current[key],value))
                             updated[key]=jawi_display_digits(value)
                             allowed.add(key)
+                fields=item.get("final_review_fields") or {}
+                if fields:
+                    related={"KRITERIA KEJAYAAN":fields["criterion"],"PENTAKSIRAN":fields["assessment"]}
+                    if not str(s.get("rph_teacher_reflection") or "").strip():
+                        related["REFLEKSI"]="____ / ____ "+fields["reflection"]+" موريد يڠ بلوم مڠواساءي دبمبيڠ سمولا."
+                    for key,value in related.items():
+                        assert key in current,(item["id"],boundary,key,list(current))
+                        if normalized(current[key])!=normalized(value):
+                            extra_changes.append((current[key],value))
+                        updated[key]=jawi_display_digits(value)
+                        allowed.add(key)
                 assert {k:v for k,v in updated.items() if k not in allowed}=={k:v for k,v in current.items() if k not in allowed}
                 return updated
             def qa_rows(s,t):
@@ -209,6 +224,10 @@ def main():
                             assert normalized(item[key]) in normalized(whole),(tag,"missing related field",key)
                     if item.get("original_sk_text"):
                         assert normalized(item["original_sk_text"]) not in normalized(whole),(tag,"old SK still printed")
+                fields=item.get("final_review_fields") or {}
+                for key in ("criterion","assessment","reflection"):
+                    if fields.get(key):
+                        assert normalized(fields[key]) in normalized(whole),(tag,"missing new field",key)
                 print("PI_QA_RENDER_HOOKS",tag,row_hits,flush=True)
                 print("PI_QA_WORD_ACTUAL",tag,repr(whole[:5000]),flush=True)
                 for title,body in item["activities"]:
