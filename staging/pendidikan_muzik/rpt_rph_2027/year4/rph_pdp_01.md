@@ -9,15 +9,15 @@
 
 **Objektif:** Mengenal not G, A dan B serta menunjukkan tiga kedudukannya pada baluk dengan betul.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **SENJA NAN INDAH**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru menunjukkan baluk kosong dan memperdengarkan not G, A dan B. Murid menunjuk kedudukan not pada kad.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menggunakan lagu Not Berbunyi untuk membandingkan bunyi not G, A, B dan membimbing murid menunjukkan kedudukan pada baluk.
+**Aktiviti 1 — Kenali not G, A dan B:** Guru menggunakan lagu Not Berbunyi untuk membandingkan bunyi not G, A, B dan membimbing murid menunjukkan kedudukan pada baluk.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid memadankan kad not dengan bunyi dan menamakan jenis nilai not yang dipaparkan pada buku m/s 10–11.
+**Aktiviti 2 — Padankan not dan bunyi:** Murid memadankan kad not dengan bunyi dan menamakan jenis nilai not yang dipaparkan pada buku m/s 10–11.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan tiga kedudukan not dan satu pembacaan not.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Murid meletakkan kad G, A dan B pada baluk dan membaca satu not pilihan.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
