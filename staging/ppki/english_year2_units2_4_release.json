@@ -1,0 +1,393 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "English",
+  "subject_id": "BAHASA_INGGERIS_PPKI",
+  "status": "READY",
+  "units": {
+    "2": "My Body",
+    "3": "My Big Family",
+    "4": "Good Manners"
+  },
+  "sources": {
+    "textbook": "https://anyflip.com/smjjv/pcyn/basic",
+    "dskp": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
+  },
+  "standard_text_kind": "Source-aligned paraphrases; not verbatim",
+  "release_scope": "RPH only, Units 2–4; no Activity Book page or dated RPT claimed",
+  "content_standards": {
+    "1.1": "Respond suitably to spoken input for different purposes.",
+    "1.2": "Develop pronunciation, stress, rhythm and intonation through listening.",
+    "1.3": "Take part in everyday exchanges.",
+    "1.4": "Understand and respond to spoken stories, visual material and songs or rhymes.",
+    "2.1": "Recognise, remember and comprehend vocabulary and short phrases through reading.",
+    "3.1": "Produce clear, readable written words.",
+    "3.2": "Use appropriate sentence writing and punctuation.",
+    "3.3": "Communicate ideas creatively through suitable media and language."
+  },
+  "learning_standards": {
+    "1.1.1": "Listen and give an appropriate response to a stimulus.",
+    "1.1.2": "Show understanding of short spoken instructions.",
+    "1.2.1": "Hear and pronounce vocabulary and short phrases.",
+    "1.2.2(i)": "Listen to and sing nursery rhymes.",
+    "1.2.2(ii)": "Listen to and sing songs.",
+    "1.3.1": "Respond to everyday conversation with support.",
+    "1.3.2(i)": "Join supported exchanges using basic greetings.",
+    "1.3.2(ii)": "Join supported exchanges introducing relatives.",
+    "1.3.2(iii)": "Follow basic classroom directions with support during an exchange.",
+    "1.4.1(i)": "Demonstrate listening comprehension using yes/no responses.",
+    "1.4.1(ii)": "Demonstrate listening comprehension by judging statements true or false.",
+    "1.4.1(iii)": "Demonstrate listening comprehension by answering Wh-questions.",
+    "2.1.1": "Identify and remember words.",
+    "2.1.2": "Read vocabulary and short phrases.",
+    "2.1.3": "Read and show comprehension of vocabulary and short phrases.",
+    "3.1.1": "Copy and write familiar sight vocabulary legibly.",
+    "3.1.2": "Write legible, correctly spelled words.",
+    "3.2.1(i)": "Use lowercase letters correctly in sentences.",
+    "3.2.1(ii)": "Use uppercase letters correctly in sentences.",
+    "3.2.1(iv)": "Use full stops correctly in sentences.",
+    "3.3.1(i)": "Produce simple creative greeting cards.",
+    "3.3.1(ii)": "Produce simple creative collages."
+  },
+  "lessons": [
+    {
+      "pdp": "004",
+      "unit": 2,
+      "title": "Body movement song",
+      "textbook_page": "5",
+      "sp": [
+        "1.2.2(ii)"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "objective": "Sing the target body-part words at three cues with appropriate support.",
+      "success_criterion": "Sing the target body-part words at three cues with appropriate support.",
+      "materials": "Textbook p. 5; Body cards, textbook",
+      "induction": "Teacher shows three body-part cards; pupils identify the corresponding parts.",
+      "guided": "Teacher models the song and a seated or standing movement for each cue.",
+      "practice": "Pupils select three body-part cards and sing the related words at three cues; gestures may be adapted or omitted.",
+      "support": "Allow gaze or pointing; avoid demanding movement beyond ability",
+      "closure": "Show one body part",
+      "assessment": "Record the three vocal responses; record non-vocal alternatives separately.",
+      "reflection_criterion": "Sing the target body-part words at three cues with appropriate support.",
+      "activity_book_ref": null,
+      "source_note": "Textbook p.5 prints 1.2.1(i), which has no subcode (i) in DSKP p.38. Song objective aligns with 1.2.2(ii).",
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "005",
+      "unit": 2,
+      "title": "Body picture questions",
+      "textbook_page": "6",
+      "sp": [
+        "1.1.1",
+        "1.4.1(iii)"
+      ],
+      "sk": [
+        "1.1",
+        "1.4"
+      ],
+      "objective": "Answer five of seven spoken questions about body parts.",
+      "success_criterion": "Answer five of seven spoken questions about body parts.",
+      "materials": "Textbook p. 6; Body outline, picture labels",
+      "induction": "Find an elbow on a puppet",
+      "guided": "Model questions and place labels on the outline",
+      "practice": "Teacher asks seven Wh-questions using the body outline; pupils answer by naming, pointing or selecting the corresponding label.",
+      "support": "Use a smaller choice set and visual prompts",
+      "closure": "Choose a label for the puppet",
+      "assessment": "Record the demonstrated criterion: Identify five of seven named body parts. Record prompts separately.",
+      "reflection_criterion": "Answer five of seven spoken questions about body parts.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "006",
+      "unit": 2,
+      "title": "What my body can do",
+      "textbook_page": "7",
+      "sp": [
+        "2.1.3"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and match four of five body-action phrases to pictures.",
+      "success_criterion": "Read and match four of five body-action phrases to pictures.",
+      "materials": "Textbook p. 7; Action cards, sentence strips",
+      "induction": "Mime clapping",
+      "guided": "Teacher reads one short body-action phrase and matches it to a picture.",
+      "practice": "Pupils read five short body-action phrases in sentence strips and match them to pictures.",
+      "support": "Underline the body word and use picture cues",
+      "closure": "Read one action sentence",
+      "assessment": "Record the demonstrated criterion: Match four of five action sentences to body pictures. Record prompts separately.",
+      "reflection_criterion": "Read and match four of five body-action phrases to pictures.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "007",
+      "unit": 2,
+      "title": "Face collage",
+      "textbook_page": "8",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Produce a face collage with three recognisable labelled parts",
+      "success_criterion": "Produce a face collage with three recognisable labelled parts",
+      "materials": "Textbook p. 8; Precut shapes, glue, crayons",
+      "induction": "Show a blank face outline",
+      "guided": "Model placing a shape and writing its label",
+      "practice": "Pupils arrange and attach shapes then add three labels using a word bank",
+      "support": "Use large precut pieces and adaptive grips",
+      "closure": "Present one label to a partner",
+      "assessment": "Record the demonstrated criterion: Produce a face collage with three recognisable labelled parts. Record prompts separately.",
+      "reflection_criterion": "Produce a face collage with three recognisable labelled parts",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "008",
+      "unit": 3,
+      "title": "Introducing family members",
+      "textbook_page": "9",
+      "sp": [
+        "1.3.2(ii)",
+        "2.1.2"
+      ],
+      "sk": [
+        "1.3",
+        "2.1"
+      ],
+      "objective": "Read two family labels and use both to introduce fictional relatives.",
+      "success_criterion": "Read two family labels and use both to introduce fictional relatives.",
+      "materials": "Textbook p. 9; Fictional family portraits, speech cards",
+      "induction": "Introduce a puppet's relative",
+      "guided": "Model a short introduction for an aunt or uncle",
+      "practice": "Pupils read two family labels, then introduce the fictional relatives to a partner.",
+      "support": "Allow a recorded response or word card; no personal photos required",
+      "closure": "Choose a relative word to repeat",
+      "assessment": "Record the reading and supported conversational responses separately.",
+      "reflection_criterion": "Read two family labels and use both to introduce fictional relatives.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "009",
+      "unit": 3,
+      "title": "Family tree reading",
+      "textbook_page": "10",
+      "sp": [
+        "2.1.1"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "objective": "Read and locate four of six family labels",
+      "success_criterion": "Read and locate four of six family labels",
+      "materials": "Textbook p. 10; Fictional tree diagram, word cards",
+      "induction": "Find a grandparent picture",
+      "guided": "Model reading and attaching the first label to a branch",
+      "practice": "Pupils read six cards and place them in the correct positions",
+      "support": "Offer colour-coded generations and two choices",
+      "closure": "Point to the label read aloud",
+      "assessment": "Record the demonstrated criterion: Read and locate four of six family labels. Record prompts separately.",
+      "reflection_criterion": "Read and locate four of six family labels",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "010",
+      "unit": 3,
+      "title": "Sentence punctuation",
+      "textbook_page": "11",
+      "sp": [
+        "3.2.1(i)",
+        "3.2.1(ii)",
+        "3.2.1(iv)"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "objective": "Correct letter case and final full stops in three of four sentences.",
+      "success_criterion": "Correct letter case and final full stops in three of four sentences.",
+      "materials": "Textbook p. 11; Sentence strips, two coloured pencils",
+      "induction": "Compare one sentence with and without a full stop",
+      "guided": "Teacher contrasts upper- and lowercase letters, models the sentence opening and ending, and demonstrates a full stop.",
+      "practice": "Pupils correct capital letters, lowercase letters and full stops in four original family sentences.",
+      "support": "Provide enlarged print and a coloured starting dot",
+      "closure": "Check the punctuation of one sentence",
+      "assessment": "Check the three punctuation features for each sentence.",
+      "reflection_criterion": "Correct letter case and final full stops in three of four sentences.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "011",
+      "unit": 3,
+      "title": "Family picture frame",
+      "textbook_page": "12",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Create a labelled frame collage with three attached paper elements.",
+      "success_criterion": "Create a labelled frame collage with three attached paper elements.",
+      "materials": "Textbook p. 12; Cardboard frame, fictional photo, tape",
+      "induction": "Show a framed character portrait",
+      "guided": "Teacher models assembling the frame and arranging cut paper elements into a labelled collage on its backing.",
+      "practice": "Pupils arrange and attach at least three paper elements around a fictional family portrait and add a readable label.",
+      "support": "Supply assembled frames and large word stickers",
+      "closure": "Show the label on the frame",
+      "assessment": "Check the collage composition and readable label; record support.",
+      "reflection_criterion": "Create a labelled frame collage with three attached paper elements.",
+      "activity_book_ref": null,
+      "source_note": "Adaptation adds a collage element to meet DSKP 3.3.1(ii); original textbook craft retained.",
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "012",
+      "unit": 4,
+      "title": "Thanks and apologies",
+      "textbook_page": "13",
+      "sp": [
+        "1.3.1"
+      ],
+      "sk": [
+        "1.3"
+      ],
+      "objective": "Respond politely in three of four role-play situations",
+      "success_criterion": "Respond politely in three of four role-play situations",
+      "materials": "Textbook p. 13; Puppets, situation cards",
+      "induction": "Puppet receives a pencil",
+      "guided": "Model thanking a helper and apologising for a mistake",
+      "practice": "Pupils draw four scenarios and act out an appropriate response",
+      "support": "Offer two phrase cards or speech output",
+      "closure": "Choose the phrase for receiving help",
+      "assessment": "Record the demonstrated criterion: Respond politely in three of four role-play situations. Record prompts separately.",
+      "reflection_criterion": "Respond politely in three of four role-play situations",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "013",
+      "unit": 4,
+      "title": "Permission and waiting",
+      "textbook_page": "14",
+      "sp": [
+        "1.3.1"
+      ],
+      "sk": [
+        "1.3"
+      ],
+      "objective": "Use two appropriate expressions in a classroom role-play",
+      "success_criterion": "Use two appropriate expressions in a classroom role-play",
+      "materials": "Textbook p. 14; Queue markers, permission cards",
+      "induction": "Show two figures waiting at a counter",
+      "guided": "Model asking permission and waiting for a reply",
+      "practice": "Pairs practise asking to leave and joining a pretend queue",
+      "support": "Provide visual turn-taking cues and a short script",
+      "closure": "Repeat a polite request",
+      "assessment": "Record the demonstrated criterion: Use two appropriate expressions in a classroom role-play. Record prompts separately.",
+      "reflection_criterion": "Use two appropriate expressions in a classroom role-play",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "014",
+      "unit": 4,
+      "title": "Telephone conversation",
+      "textbook_page": "15",
+      "sp": [
+        "1.3.1",
+        "1.3.2(i)"
+      ],
+      "sk": [
+        "1.3"
+      ],
+      "objective": "Complete a greeting, request and farewell in a simulated call",
+      "success_criterion": "Complete a greeting, request and farewell in a simulated call",
+      "materials": "Textbook p. 15; Disconnected toy phones, fictional name cards",
+      "induction": "Play a gentle ringing sound",
+      "guided": "Model a safe call using fictional names Practise a greeting and remind pupils not to share personal information with strangers.",
+      "practice": "Partners take caller and receiver roles and complete the three exchanges",
+      "support": "Offer picture prompts for conversation stages; do not disclose real contact details",
+      "closure": "Choose a farewell phrase",
+      "assessment": "Record the demonstrated criterion: Complete a greeting, request and farewell in a simulated call. Record prompts separately.",
+      "reflection_criterion": "Complete a greeting, request and farewell in a simulated call",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "015",
+      "unit": 4,
+      "title": "Reading a manners story",
+      "textbook_page": "16–17",
+      "sp": [
+        "2.1.3",
+        "1.3.2(i)",
+        "1.4.1(ii)"
+      ],
+      "sk": [
+        "2.1",
+        "1.3",
+        "1.4"
+      ],
+      "objective": "Match two story phrases, answer three of four spoken true/false statements and use one greeting.",
+      "success_criterion": "Match two story phrases, answer three of four spoken true/false statements and use one greeting.",
+      "materials": "Textbook p. 16–17; Textbook, true/false cards",
+      "induction": "Show a queue picture",
+      "guided": "Read the story in short sections and discuss picture clues",
+      "practice": "Pupils read two short story phrases and match pictures. Teacher reads four original statements aloud; pupils show true/false. Pairs act out a greeting from the story.",
+      "support": "Present one statement at a time and point to relevant picture",
+      "closure": "Identify one polite action",
+      "assessment": "Record each of the three skills separately.",
+      "reflection_criterion": "Match two story phrases, answer three of four spoken true/false statements and use one greeting.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    },
+    {
+      "pdp": "016",
+      "unit": 4,
+      "title": "Polite phrases display",
+      "textbook_page": "18",
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "objective": "Create a leaf collage with three legible polite-phrase labels.",
+      "success_criterion": "Create a leaf collage with three legible polite-phrase labels.",
+      "materials": "Textbook p. 18; Leaf-shaped cards, glue, word bank",
+      "induction": "Read one example of a polite phrase",
+      "guided": "Teacher models arranging leaf shapes on a display backing and adding readable polite-expression labels.",
+      "practice": "Pupils select three leaf shapes, write or assemble three polite phrases and attach the leaves to create a tree collage.",
+      "support": "Use preprinted word tiles for assembly",
+      "closure": "Read one phrase from the display",
+      "assessment": "Check attached leaves, readable labels and pupil participation.",
+      "reflection_criterion": "Create a leaf collage with three legible polite-phrase labels.",
+      "activity_book_ref": null,
+      "standard_audit": "Textbook pages 5–18 and DSKP English standard text reviewed 2026-11-26; adapted activities are original.",
+      "status": "READY"
+    }
+  ]
+}
