@@ -1,0 +1,324 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Bahasa Melayu",
+  "subject_id": "BAHASA_MELAYU_PPKI",
+  "theme": "Merdeka! Merdeka! Merdeka!",
+  "units": {
+    "1": "Sambutan Kemerdekaan",
+    "2": "Cinta akan Negara",
+    "3": "Kami Sepakat"
+  },
+  "status": "DALAM_SEMAKAN",
+  "sources": {
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/023-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-ASAS-3M-19-5-2016-1.pdf",
+    "textbook": "https://anyflip.com/smjjv/svvv/basic",
+    "activity_book": "References printed in textbook; independent copy not yet verified"
+  },
+  "notes": "Draft sequence, not connected to production. Confirm complete SK/SP descriptions, annual pacing, format and source audit before publication. Activities and criteria are original pedagogical adaptations.",
+  "lessons": [
+    {
+      "pdp": "001",
+      "unit": 1,
+      "textbook_page": 2,
+      "sp": [
+        "1.1.1(i)"
+      ],
+      "title": "Bersatu hati",
+      "objective": "2 daripada 3 arahan guru satu langkah",
+      "success_criterion": "2 daripada 3 arahan guru satu langkah",
+      "materials": "Bendera mini, kad arahan",
+      "induction": "Tunjuk bendera dan ajak murid menyebut Merdeka.",
+      "guided": "Guru modelkan arahan ambil dan letakkan bendera; murid meniru.",
+      "practice": "Murid melaksanakan tiga arahan baharu dengan objek kelas.",
+      "support": "Beri satu objek dan kad visual; kurangkan isyarat apabila bersedia.",
+      "closure": "Tunjukkan satu arahan yang telah dikuasai.",
+      "activity_book_ref": "BA 1",
+      "assessment": "Rekod pencapaian: 2 daripada 3 arahan guru satu langkah. Catat jenis bantuan.",
+      "reflection_criterion": "2 daripada 3 arahan guru satu langkah"
+    },
+    {
+      "pdp": "002",
+      "unit": 1,
+      "textbook_page": 3,
+      "sp": [
+        "2.1.1"
+      ],
+      "title": "Bunyikan suku kata KV",
+      "objective": "4 daripada 6 suku kata KV dibunyikan",
+      "success_criterion": "4 daripada 6 suku kata KV dibunyikan",
+      "materials": "Kad konsonan dan vokal",
+      "induction": "Padankan dua kad huruf pada papan.",
+      "guided": "Gabungkan konsonan dan vokal daripada halaman rujukan; murid ikut bunyi.",
+      "practice": "Murid memilih enam kad KV dan mengeja secara bergilir.",
+      "support": "Hadkan pilihan kepada dua kad, kemudian tambah pilihan.",
+      "closure": "Bunyikan dua kad pilihan.",
+      "activity_book_ref": "BA 2",
+      "assessment": "Rekod pencapaian: 4 daripada 6 suku kata KV dibunyikan. Catat jenis bantuan.",
+      "reflection_criterion": "4 daripada 6 suku kata KV dibunyikan"
+    },
+    {
+      "pdp": "003",
+      "unit": 1,
+      "textbook_page": 4,
+      "sp": [
+        "2.1.1"
+      ],
+      "title": "Irama suku kata",
+      "objective": "4 daripada 6 suku kata baharu dibunyikan",
+      "success_criterion": "4 daripada 6 suku kata baharu dibunyikan",
+      "materials": "Kad ba, ca, da, fa, ga, ha",
+      "induction": "Tepuk rentak pendek.",
+      "guided": "Guru modelkan gabungan huruf menggunakan tepukan; murid ikut sebutan.",
+      "practice": "Murid angkat kad sepadan dengan bunyi dan eja enam kad secara individu.",
+      "support": "Perlahankan rentak; beri contoh bunyi satu demi satu.",
+      "closure": "Pilih satu kad dan bunyikan tanpa rentak.",
+      "activity_book_ref": "BA 3",
+      "assessment": "Rekod pencapaian: 4 daripada 6 suku kata baharu dibunyikan. Catat jenis bantuan.",
+      "reflection_criterion": "4 daripada 6 suku kata baharu dibunyikan"
+    },
+    {
+      "pdp": "004",
+      "unit": 1,
+      "textbook_page": 5,
+      "sp": [
+        "3.2.1"
+      ],
+      "title": "Surihan suku kata",
+      "objective": "3 daripada 4 suku kata disurih mengikut bentuk",
+      "success_criterion": "3 daripada 4 suku kata disurih mengikut bentuk",
+      "materials": "Kad bertekstur, pensel, lembaran surihan",
+      "induction": "Jejak bentuk huruf di udara.",
+      "guided": "Guru tunjuk arah surihan; murid jejak dengan jari dahulu.",
+      "practice": "Murid menyurih empat KV pada lembaran mengikut arah yang ditunjukkan.",
+      "support": "Besarkan huruf dan sediakan alat tulis mudah genggam.",
+      "closure": "Pilih satu hasil surihan untuk ditunjukkan.",
+      "activity_book_ref": "BA 4",
+      "assessment": "Rekod pencapaian: 3 daripada 4 suku kata disurih mengikut bentuk. Catat jenis bantuan.",
+      "reflection_criterion": "3 daripada 4 suku kata disurih mengikut bentuk"
+    },
+    {
+      "pdp": "005",
+      "unit": 1,
+      "textbook_page": 6,
+      "sp": [
+        "4.1.1(i)"
+      ],
+      "title": "Nama ahli keluarga",
+      "objective": "2 nama ahli keluarga diberikan",
+      "success_criterion": "2 nama ahli keluarga diberikan",
+      "materials": "Kad watak dan kad nama",
+      "induction": "Kenalkan watak keluarga dalam gambar.",
+      "guided": "Guru modelkan soal jawab nama; murid padankan nama dengan watak.",
+      "practice": "Murid menjawab soalan tentang dua ahli keluarga sendiri atau watak pilihan.",
+      "support": "Benarkan menunjuk kad nama atau menggunakan alat komunikasi alternatif.",
+      "closure": "Kongsi satu nama secara sukarela.",
+      "activity_book_ref": null,
+      "assessment": "Rekod pencapaian: 2 nama ahli keluarga diberikan. Catat jenis bantuan.",
+      "reflection_criterion": "2 nama ahli keluarga diberikan"
+    },
+    {
+      "pdp": "006",
+      "unit": 2,
+      "textbook_page": 7,
+      "sp": [
+        "1.1.2"
+      ],
+      "title": "Arahan berjimat",
+      "objective": "2 arahan berjimat dilafazkan",
+      "success_criterion": "2 arahan berjimat dilafazkan",
+      "materials": "Kad kipas, lampu, air dan suis tiruan",
+      "induction": "Tunjukkan gambar kelas kosong dengan lampu menyala.",
+      "guided": "Guru modelkan arahan menutup suis menggunakan papan simulasi; murid mengulang.",
+      "practice": "Murid memilih dua kad situasi dan melafazkan arahan kepada pasangan.",
+      "support": "Sediakan rangka ayat dan kad kata kerja; tiada manipulasi suis elektrik sebenar.",
+      "closure": "Ulang satu arahan berjimat sebelum keluar kelas.",
+      "activity_book_ref": "BA 5",
+      "assessment": "Rekod pencapaian: 2 arahan berjimat dilafazkan. Catat jenis bantuan.",
+      "reflection_criterion": "2 arahan berjimat dilafazkan"
+    },
+    {
+      "pdp": "007",
+      "unit": 2,
+      "textbook_page": 8,
+      "sp": [
+        "1.2.1"
+      ],
+      "title": "Basikal berhias",
+      "objective": "2 daripada 3 respons berkaitan cerita betul",
+      "success_criterion": "2 daripada 3 respons berkaitan cerita betul",
+      "materials": "Gambar basikal berhias, kad warna dan objek",
+      "induction": "Perhatikan gambar basikal.",
+      "guided": "Guru ceritakan situasi berdasarkan gambar; murid menunjuk objek disebut.",
+      "practice": "Murid jawab tiga soalan mudah tentang gambar dan cerita yang didengar.",
+      "support": "Ulang cerita pendek; gunakan dua pilihan bergambar.",
+      "closure": "Pilih hiasan yang disukai dan berikan respons.",
+      "activity_book_ref": "BA 6",
+      "assessment": "Rekod pencapaian: 2 daripada 3 respons berkaitan cerita betul. Catat jenis bantuan.",
+      "reflection_criterion": "2 daripada 3 respons berkaitan cerita betul"
+    },
+    {
+      "pdp": "008",
+      "unit": 2,
+      "textbook_page": 9,
+      "sp": [
+        "2.1.2"
+      ],
+      "title": "Perkataan V+KV",
+      "objective": "3 daripada 5 perkataan V+KV dibatang",
+      "success_criterion": "3 daripada 5 perkataan V+KV dibatang",
+      "materials": "Kad vokal dan KV, gambar ibu, ubi, api",
+      "induction": "Tunjuk gambar ubi dan sebut namanya.",
+      "guided": "Guru pisahkan vokal dan KV, kemudian gabung bunyi; murid meniru.",
+      "practice": "Murid memadankan lima pasangan kad dan membatang perkataan secara individu.",
+      "support": "Gunakan pengekodan warna dan model bunyi perlahan.",
+      "closure": "Batang satu perkataan tanpa bantuan gambar.",
+      "activity_book_ref": "BA 7",
+      "assessment": "Rekod pencapaian: 3 daripada 5 perkataan V+KV dibatang. Catat jenis bantuan.",
+      "reflection_criterion": "3 daripada 5 perkataan V+KV dibatang"
+    },
+    {
+      "pdp": "009",
+      "unit": 2,
+      "textbook_page": 10,
+      "sp": [
+        "2.1.3"
+      ],
+      "title": "Perkataan KV+KV",
+      "objective": "4 daripada 5 perkataan KV+KV dibatang",
+      "success_criterion": "4 daripada 5 perkataan KV+KV dibatang",
+      "materials": "Kad suku kata, papan padanan, gambar",
+      "induction": "Tunjukkan gambar bapa dan tugu.",
+      "guided": "Guru modelkan gabungan dua KV menggunakan kad berasingan.",
+      "practice": "Murid bina dan batang lima perkataan; guru semak bacaan tanpa model.",
+      "support": "Beri kad suku kata awal dan dua pilihan akhir.",
+      "closure": "Baca satu perkataan pilihan kepada rakan.",
+      "activity_book_ref": "BA 8",
+      "assessment": "Rekod pencapaian: 4 daripada 5 perkataan KV+KV dibatang. Catat jenis bantuan.",
+      "reflection_criterion": "4 daripada 5 perkataan KV+KV dibatang"
+    },
+    {
+      "pdp": "010",
+      "unit": 2,
+      "textbook_page": 11,
+      "sp": [
+        "3.2.1"
+      ],
+      "title": "Surihan perkataan",
+      "objective": "3 daripada 4 perkataan disurih dengan bentuk boleh dikenal",
+      "success_criterion": "3 daripada 4 perkataan disurih dengan bentuk boleh dikenal",
+      "materials": "Lembaran surihan, pensel",
+      "induction": "Jejak satu perkataan menggunakan jari.",
+      "guided": "Guru tunjuk arah tulisan dan jarak; murid berlatih pada kertas besar.",
+      "practice": "Murid surih empat perkataan pada lembaran dan semak dengan contoh.",
+      "support": "Kurangkan jumlah pada satu masa dan gunakan garis panduan.",
+      "closure": "Pilih satu perkataan yang paling jelas.",
+      "activity_book_ref": "BA 9–10",
+      "assessment": "Rekod pencapaian: 3 daripada 4 perkataan disurih dengan bentuk boleh dikenal. Catat jenis bantuan.",
+      "reflection_criterion": "3 daripada 4 perkataan disurih dengan bentuk boleh dikenal"
+    },
+    {
+      "pdp": "011",
+      "unit": 2,
+      "textbook_page": 12,
+      "sp": [
+        "4.1.1(ii)"
+      ],
+      "title": "Pekerjaan ahli keluarga",
+      "objective": "2 respons pekerjaan ahli keluarga atau watak diberikan",
+      "success_criterion": "2 respons pekerjaan ahli keluarga atau watak diberikan",
+      "materials": "Kad pekerjaan dan watak rekaan",
+      "induction": "Tunjuk gambar anggota pasukan keselamatan.",
+      "guided": "Guru modelkan soal jawab pekerjaan berdasarkan watak rekaan.",
+      "practice": "Murid bersoal jawab dengan pasangan menggunakan dua watak pilihan.",
+      "support": "Beri pilihan gambar pekerjaan; murid tidak wajib berkongsi maklumat keluarga sebenar.",
+      "closure": "Pilih satu pekerjaan dan nyatakan tugasnya dengan sokongan.",
+      "activity_book_ref": null,
+      "assessment": "Rekod pencapaian: 2 respons pekerjaan ahli keluarga atau watak diberikan. Catat jenis bantuan.",
+      "reflection_criterion": "2 respons pekerjaan ahli keluarga atau watak diberikan"
+    },
+    {
+      "pdp": "012",
+      "unit": 3,
+      "textbook_page": 13,
+      "sp": [
+        "1.2.2"
+      ],
+      "title": "Cerita kerjasama",
+      "objective": "2 peristiwa cerita diceritakan semula mengikut urutan",
+      "success_criterion": "2 peristiwa cerita diceritakan semula mengikut urutan",
+      "materials": "Kad gambar berurutan, objek simulasi",
+      "induction": "Tunjukkan dua gambar murid bekerjasama.",
+      "guided": "Guru bercerita berpandukan gambar; murid susun kad mengikut cerita.",
+      "practice": "Murid ceritakan semula dua peristiwa dengan media pilihan.",
+      "support": "Gunakan dua kad dahulu dan rangka ayat; terima komunikasi alternatif yang menyampaikan urutan.",
+      "closure": "Nyatakan satu cara membantu rakan.",
+      "activity_book_ref": null,
+      "assessment": "Rekod pencapaian: 2 peristiwa cerita diceritakan semula mengikut urutan. Catat jenis bantuan.",
+      "reflection_criterion": "2 peristiwa cerita diceritakan semula mengikut urutan"
+    },
+    {
+      "pdp": "013",
+      "unit": 3,
+      "textbook_page": 14,
+      "sp": [
+        "2.1.4"
+      ],
+      "title": "Perkataan tiga KV",
+      "objective": "3 daripada 5 perkataan KV+KV+KV dibatang",
+      "success_criterion": "3 daripada 5 perkataan KV+KV+KV dibatang",
+      "materials": "Kad tiga suku kata dan gambar",
+      "induction": "Tepuk tiga kali mengikut suku kata.",
+      "guided": "Guru gabungkan tiga kad secara perlahan; murid ikut membatang.",
+      "practice": "Murid menyusun dan membatang lima perkataan, termasuk contoh buku.",
+      "support": "Gunakan jalur tiga petak; beri satu kad pada satu masa.",
+      "closure": "Baca satu perkataan tiga suku kata.",
+      "activity_book_ref": "BA 11–12",
+      "assessment": "Rekod pencapaian: 3 daripada 5 perkataan KV+KV+KV dibatang. Catat jenis bantuan.",
+      "reflection_criterion": "3 daripada 5 perkataan KV+KV+KV dibatang"
+    },
+    {
+      "pdp": "014",
+      "unit": 3,
+      "textbook_page": 15,
+      "sp": [
+        "3.2.2"
+      ],
+      "title": "Salin perkataan perkhemahan",
+      "objective": "3 daripada 4 perkataan disalin dengan urutan huruf betul",
+      "success_criterion": "3 daripada 4 perkataan disalin dengan urutan huruf betul",
+      "materials": "Kad sudu, kamera, bateri dan kayu, buku tulis",
+      "induction": "Padankan gambar dengan objek perkhemahan.",
+      "guided": "Guru modelkan menyalin satu perkataan sambil menyebut huruf.",
+      "practice": "Murid menyalin empat perkataan daripada kad ke buku tulis.",
+      "support": "Sediakan contoh berhampiran ruang menulis dan garis panduan.",
+      "closure": "Semak satu perkataan dengan kad asal.",
+      "activity_book_ref": "BA 13–14",
+      "assessment": "Rekod pencapaian: 3 daripada 4 perkataan disalin dengan urutan huruf betul. Catat jenis bantuan.",
+      "reflection_criterion": "3 daripada 4 perkataan disalin dengan urutan huruf betul"
+    },
+    {
+      "pdp": "015",
+      "unit": 3,
+      "textbook_page": 16,
+      "sp": [
+        "2.1.2",
+        "2.1.3",
+        "2.1.4"
+      ],
+      "title": "Uji minda: pengukuhan bacaan",
+      "objective": "4 daripada 6 perkataan pelbagai pola dibatang",
+      "success_criterion": "4 daripada 6 perkataan pelbagai pola dibatang",
+      "materials": "Kad perkataan dan rekod semak",
+      "induction": "Asingkan kad mengikut bilangan suku kata.",
+      "guided": "Guru ulang satu contoh setiap pola; murid bina perkataan menggunakan kad.",
+      "practice": "Murid membatang enam perkataan daripada pengukuhan halaman 16 secara individu; catat skor setiap pola.",
+      "support": "Sediakan kad suku kata sebagai bantuan; rekod jenis bantuan berasingan.",
+      "closure": "Murid pilih satu perkataan yang ingin diulang.",
+      "activity_book_ref": null,
+      "assessment": "Rekod pencapaian: 4 daripada 6 perkataan pelbagai pola dibatang. Catat jenis bantuan.",
+      "reflection_criterion": "4 daripada 6 perkataan pelbagai pola dibatang"
+    }
+  ]
+}
