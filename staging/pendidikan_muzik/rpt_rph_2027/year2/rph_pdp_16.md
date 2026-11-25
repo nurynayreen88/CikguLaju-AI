@@ -10,17 +10,17 @@
 
 **Objektif:** Murid membezakan bunyi pak dan bung serta menyatakan dua ciri permainan kompang.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan BERSUKAN BADAN SIHAT; murid menunjukkan respons awal.
+**Set induksi:** Guru menunjukkan gambar kompang dan memperdengarkan dua contoh bunyi pak dan bung. Murid mengenal perbezaannya.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru memperkenalkan gambar kompang dan memodelkan dua bunyi pak dan bung dengan tepukan selamat.
+**Aktiviti 1 — Kenali bunyi kompang:** Guru memperkenalkan gambar kompang dan memodelkan dua bunyi pak dan bung dengan tepukan selamat.
 
-**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid mencuba dua pola tepukan pak-bung dan membincangkan fungsi kompang dalam persembahan berkumpulan.
+**Aktiviti 2 — Pola pak dan bung:** Murid mencuba dua pola tepukan pak-bung dan membincangkan fungsi kompang dalam persembahan berkumpulan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rubrik dua pola, dua fakta kompang dan respons apresiasi.
+**Pengukuhan dan pentaksiran:** Rubrik dua pola, dua fakta kompang dan respons apresiasi.
 
-**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
+**Penutup:** Murid memperagakan pola pak-bung serta menyebut dua ciri permainan kompang.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 44-45; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 44–45; gambar kompang, kompang atau tepukan.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
