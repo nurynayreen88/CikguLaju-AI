@@ -1,0 +1,54 @@
+{
+  "status": "82_OF_82_VISUAL_TEXTBOOK_SUPPORT_REVIEW_COMPLETE_NOT_ACADEMIC_RELEASE",
+  "years": [
+    {
+      "year": 2,
+      "audit_blob": "f3fed9c38aec110b6a0d6e2e510f66bf3573be97",
+      "draft_blob": "c3d6694c168b215244616256e7891620d89e9614",
+      "rows": 16,
+      "direct": 7,
+      "context": 9,
+      "source": "https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view"
+    },
+    {
+      "year": 3,
+      "audit_blob": "219d39efe539341094548da30b73e25ead8d01b4",
+      "draft_blob": "db672426da4e01789846bde43f49a69a5e96175f",
+      "rows": 16,
+      "direct": 12,
+      "context": 4,
+      "source": "https://drive.google.com/file/d/13mB5rckp-z701R-sWfoyJv3YcXoevind/view"
+    },
+    {
+      "year": 4,
+      "audit_blob": "addf88623198c07fd803dabd9a8be31e65ea22ea",
+      "draft_blob": "6b2a2de79237ae32f759efc14530f6cdc1d16d6e",
+      "rows": 18,
+      "direct": 13,
+      "context": 5,
+      "source": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view"
+    },
+    {
+      "year": 5,
+      "audit_blob": "db7c71422faed03bf5a2451467478c7f218f57f3",
+      "draft_blob": "f6934b37e961992703524daf3d4f628136b84921",
+      "rows": 16,
+      "direct": 13,
+      "context": 3,
+      "source": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view"
+    },
+    {
+      "year": 6,
+      "audit_blob": "ebc75f40b3b9e5287cca8fb9cfa3a54e0f5f3dad",
+      "draft_blob": "27a3a69e8e012b708191ee0ef115b704cad8e376",
+      "rows": 16,
+      "direct": 10,
+      "context": 6,
+      "source": "https://drive.google.com/file/d/19Kj-ImcjjPbLTMbhi2DQ7t3JKZZbe8AU/view"
+    }
+  ],
+  "total": 82,
+  "direct": 55,
+  "context": 27,
+  "notes": "All new lessons have visually checked textbook support. Context-only pages are not exact printed SP matches; DSKP codes checked separately. Exercises are newly authored. Original lessons' planned duration suitability and publication review remain outstanding."
+}
