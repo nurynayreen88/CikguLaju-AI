@@ -1,6 +1,6 @@
 {
   "status": "QA_PROPOSED_NOT_RUNTIME",
-  "note": "31 holds triaged; original 2026 RPT T3/T5/T6 consulted. 26 correction drafts saved, five further cases need exact active row/visual review. No runtime approval.",
+  "note": "All 31 manual holds have saved correction drafts (17 activity-only, 14 objective+activity). Source-inferred decisions explicitly retained. No release approval.",
   "source_drive_ids": {
     "3": {
       "dskp": "1tjcWRrfcAGk-Y_OpzeQhO253hunaz9RA",
@@ -29,7 +29,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Adab menuntut ilmu: maksud serta kepentingan ilmu fardu ain/fardu kifayah, baca dan fahami dalil. Buang adab tidur.",
       "evidence": "T3 buku teks cetakan 2018 hlm 128–129; SP 6.2.1–6.2.2. Teks guru menyebut perbezaan kedua-dua ilmu dan pembacaan dalil.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1836,
@@ -39,8 +40,10 @@
       "source_run": 45496052502,
       "disposition": "SEQUENCE_CORRECTION_PROPOSED",
       "proposed_correction": "Cadangan al-Syura 33–51 supaya bersambung tepat dengan sesi berikutnya al-Syura 52–53 dan al-Zukhruf 1–33. Jangan dakwa julat 33–51 sebagai petikan sumber asal.",
-      "evidence": "Original Rozayus RPT T6 SK 2026, Drive 1WJTT7wm3aiN4F7YHMf1v_Qj6tuWu597a, successive weeks list 1–32, 33–77, 52–53 + al-Zukhruf 1–33. 77 invalid; 51 inferred from sequence. Verify active neighbor rows and mushaf.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "Original T6 RPT and active PdP2/10 confirm adjacent ranges 1–32 and 52–53 plus al-Zukhruf. Proposed 33–51 inferred for continuity, not original literal; mushaf/academic approval pending.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت : ممباچ الشورى اية ٣٣ هيڠݢ ٥١ دڠن بتول دان برتجويد"
     },
     {
       "id": 1445,
@@ -50,8 +53,10 @@
       "source_run": 45496513559,
       "disposition": "UNRESOLVED_SCOPE",
       "proposed_correction": "RPT asal turut bercanggah. Semak jumlah pembatal solat dalam buku teks; jangan cipta item 13–18 atau ulang 7–12 tanpa semak.",
-      "evidence": "Original Rozayus RPT T3 SK 2026, Drive 1Y49KHcVTDUzbSLuenyhUtSqP9F7JM0Ip: preceding objectives/activities 1–6 then 7–12, disputed row repeats objective 7–12 but activities 13–18. Exact textbook numbered list and target still pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "Original T3 RPT preceding rows teach 1–6 then 7–12; disputed row conflicts 7–12 versus 13–18. Textbook printed pp88–91 SP4.2.1/4.2.2 lists invalidators and situations, does not substantiate 13–18. Use six textbook examples and three scenarios without unsupported numbering. Editorial scope decision, visual review pending.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت :\n١. منرڠكن انم چونتوه ڤركارا يڠ ممبطلكن صلاة دڠن بتول .\n٢. مثلسايكن ٣ ڤرمسئلهن درڤد ڤركارا يڠ ممبطلكن صلاة دڠن بتول."
     },
     {
       "id": 1387,
@@ -61,8 +66,10 @@
       "source_run": 45498362049,
       "disposition": "RANGE_DISPLAY_REVIEW",
       "proposed_correction": "Paparkan ayat 1 hingga 3 secara eksplisit dalam Jawi, tidak bergantung arah tanda sempang. Kekalkan skop ayat.",
-      "evidence": "Original Rozayus RPT T3 SK 2026, Drive 1Y49KHcVTDUzbSLuenyhUtSqP9F7JM0Ip: objective and activity both use 3-1. DSKP p20, textbook al-Kafirun. RTL rendering still needs test.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "Original 2026 T3 RPT repeats descending 3-1 in objective and activity; active audit confirms same; normalize to explicit 1 hingga 3, scope unchanged. RTL visual pending; overlaps existing staged activity draft.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت :\n١. ممباچ سورة الكافرون اية ١ هيڠݢ ٣ دڠن بتول دان لنچر.\n٢. ممباچ سورة الكافرون اية ١ هيڠݢ ٣ دڠن بتول دان برتجويد."
     },
     {
       "id": 1391,
@@ -72,8 +79,10 @@
       "source_run": 45498362049,
       "disposition": "RANGE_DISPLAY_REVIEW",
       "proposed_correction": "Paparkan ayat 4 hingga 5 secara eksplisit dalam Jawi, tidak bergantung arah tanda sempang. Kekalkan skop ayat.",
-      "evidence": "Original RPT T3 and active objective use descending notation. DSKP p20; confirm exact source row and RTL output.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "Original 2026 T3 RPT and active source use 5-4; explicit 4 hingga 5, scope unchanged. RTL visual pending.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت :\n١. ممباچ سورة الكافرون اية ٤ هيڠݢ ٥ دڠن بتول دان لنچر.\n٢. ممباچ سورة الكافرون اية ٤ هيڠݢ ٥ دڠن بتول دان برتجويد."
     },
     {
       "id": 1533,
@@ -84,7 +93,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Sunnah Rasulullah: perkataan dan perbuatan, kepentingan mengamalkan sunnah. Buang penutup syukur yang bukan objektif.",
       "evidence": "T3 buku teks kandungan membezakan unit Mari Bersyukur dan Cintakan Sunnah Rasulullah; SP 6.4.3–6.4.5 from active RPT; exact pages pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1669,
@@ -95,7 +105,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Nifaq: maksud, dalil dengan terjemahan, klasifikasi contoh nifaq menurut buku teks; jangan campurkan kufur atau amalan khurafat.",
       "evidence": "T4 buku teks cetakan 2019 kandungan bidang akidah membezakan unit 3 Kufur dan unit 4 Nifaq. Exact page and SK/SP pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1641,
@@ -105,8 +116,10 @@
       "source_run": 45514360861,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Tukar ٦ درڤد روكون kepada دوا روكون; bezakan rukun dan sunat, bukan enam rukun.",
-      "evidence": "T4 buku teks cetakan 2019 hlm 130 menyenaraikan niat dan tidak melakukan pembatal puasa; hlm 132 sunat; SP 4.3.3–4.3.4.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "T4 textbook 2019 printed p130 and p132, SP4.3.3–4.3.4: two pillars (niat and abstaining from invalidators), distinguish sunnah.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت :\n١. مثنارايكن دوا روكون ڤواسا رمضان دڠن تڤت.\n٢. مڠكتݢوريكن انتارا روكون دان سنة ڤواسا رمضان دڠن تڤت"
     },
     {
       "id": 1727,
@@ -117,7 +130,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Kekalkan Mad Iwad (مد عوض) dalam pengenalan dan bacaan, keluarkan Mad Badal daripada latihan sasaran.",
       "evidence": "T5 DSKP hlm 24 SP 1.6.1–1.6.2 mengandungi kedua-dua hukum; objektif sesi khusus Mad Iwad.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1731,
@@ -128,7 +142,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Latihan bacaan dan aplikasi Mad Iwad sahaja, bukan Mad Badal.",
       "evidence": "T5 DSKP hlm 24 SP 1.6.2–1.6.3; objektif sesi khusus Mad Iwad.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1735,
@@ -138,8 +153,10 @@
       "source_run": 45514360861,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Mad Iwad pada kedua-dua objektif serta latihan. SP1.6.3 RPT asal jelas Mad Iwad; dua sebutan Mad Badal adalah salinan tersalah.",
-      "evidence": "Original Rozayus RPT T5 SK 2026, week 15, Drive 1LfsnR2HNyMlDT7aHVzsrH2MVNaMPbg9v; DSKP pp24–25. Draft saved in objective corrections.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "Original Rozayus RPT T5 SK 2026 (Drive 1LfsnR2HNyMlDT7aHVzsrH2MVNaMPbg9v), week 15, SP1.6.3 explicitly specifies Mad Iwad; first objective and steps 1–3 corroborate it. DSKP printed pp24–25. Original objective 2 and activity 4 incorrectly name Mad Badal. Visual/Jawi approval pending.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت :\n١. مڠنل ڤستي كلمة دان ڤوتوڠن اية يڠ مڠاندوڠي باچاءن مد عوض دڠن بتول.\n٢. مڠاڤليكاسيكن باچاءن مد عوض دڠن بتول دان برتجويد دالم ڤمباچاءن القرءان."
     },
     {
       "id": 1940,
@@ -149,8 +166,10 @@
       "source_run": 45514360861,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Tukar خط نسخ kepada خط رِقعة dalam objektif kedua; semua latihan tulis perkataan mengikut Riq'ah, contoh bentuk Nasakh hanya untuk perbandingan jika diperlukan.",
-      "evidence": "T6 DSKP hlm 44–45 SK 7.2/SP 7.2.1 dan 7.2.3 jelas merujuk khat Riq'ah; textbook text layer empty, visual review pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "T6 DSKP printed pp44–45 SK7.2, SP7.2.1/7.2.3 explicitly khat riqah. Textbook visual unavailable, existing source note corroborates riqah.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت:\n١. مڠنل ڤستي بنتوق حروف خط رِقعة دڠن بتول.\n٢. منوليس ڤركاتاءن مڠيكوت قاعده خط رِقعة يڠ بتول."
     },
     {
       "id": 1944,
@@ -160,8 +179,10 @@
       "source_run": 45514360861,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Tukar خط نسخ kepada خط رِقعة dalam objektif kedua; semua latihan tulis perkataan mengikut Riq'ah, contoh bentuk Nasakh hanya untuk perbandingan jika diperlukan.",
-      "evidence": "T6 DSKP hlm 44–45 SK 7.2/SP 7.2.1 dan 7.2.3 jelas merujuk khat Riq'ah; textbook text layer empty, visual review pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "T6 DSKP printed pp44–45 SK7.2, SP7.2.1/7.2.3 explicitly khat riqah. Textbook visual unavailable, existing source note corroborates riqah.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت:\n١. مڠنل ڤستي بنتوق حروف خط رِقعة دڠن بتول.\n٢. منوليس ڤركاتاءن مڠيكوت قاعده خط رِقعة يڠ بتول."
     },
     {
       "id": 1948,
@@ -171,8 +192,10 @@
       "source_run": 45514360861,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Tukar خط نسخ kepada خط رِقعة dalam objektif kedua; semua latihan tulis perkataan mengikut Riq'ah, contoh bentuk Nasakh hanya untuk perbandingan jika diperlukan.",
-      "evidence": "T6 DSKP hlm 44–45 SK 7.2/SP 7.2.1 dan 7.2.3 jelas merujuk khat Riq'ah; textbook text layer empty, visual review pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "T6 DSKP printed pp44–45 SK7.2, SP7.2.1/7.2.3 explicitly khat riqah. Textbook visual unavailable, existing source note corroborates riqah.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت:\n١. مڠنل ڤستي بنتوق حروف خط رِقعة دڠن بتول.\n٢. منوليس ڤركاتاءن مڠيكوت قاعده خط رِقعة يڠ بتول."
     },
     {
       "id": 1952,
@@ -182,8 +205,10 @@
       "source_run": 45514360861,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Tukar خط نسخ kepada خط رِقعة dalam objektif kedua; semua latihan tulis perkataan mengikut Riq'ah, contoh bentuk Nasakh hanya untuk perbandingan jika diperlukan.",
-      "evidence": "T6 DSKP hlm 44–45 SK 7.2/SP 7.2.1 dan 7.2.3 jelas merujuk khat Riq'ah; textbook text layer empty, visual review pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "T6 DSKP printed pp44–45 SK7.2, SP7.2.1/7.2.3 explicitly khat riqah. Textbook visual unavailable, existing source note corroborates riqah.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت:\n١. مڠنل ڤستي بنتوق حروف خط رِقعة دڠن بتول.\n٢. منوليس ڤركاتاءن مڠيكوت قاعده خط رِقعة يڠ بتول."
     },
     {
       "id": 1956,
@@ -193,8 +218,10 @@
       "source_run": 45514360861,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Tukar خط نسخ kepada خط رِقعة dalam objektif kedua; semua latihan tulis perkataan mengikut Riq'ah, contoh bentuk Nasakh hanya untuk perbandingan jika diperlukan.",
-      "evidence": "T6 DSKP hlm 44–45 SK 7.2/SP 7.2.1 dan 7.2.3 jelas merujuk khat Riq'ah; textbook text layer empty, visual review pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "T6 DSKP printed pp44–45 SK7.2, SP7.2.1/7.2.3 explicitly khat riqah. Textbook visual unavailable, existing source note corroborates riqah.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت:\n١. مڠنل ڤستي بنتوق حروف خط رِقعة دڠن بتول.\n٢. منوليس ڤركاتاءن مڠيكوت قاعده خط رِقعة يڠ بتول."
     },
     {
       "id": 1475,
@@ -205,7 +232,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Rakaman dan tasmi' al-Asr, bukan al-Kafirun; fokus hafazan lengkap.",
       "evidence": "T3 DSKP hlm 21 al-Asr; buku teks hlm 20–21 SP 1.4.1–1.4.2, hafazan al-Asr.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1479,
@@ -216,7 +244,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Rakaman dan penilaian hafazan al-Asr; semakan rakan dan pembetulan tajwid.",
       "evidence": "T3 DSKP hlm 21 al-Asr; buku teks hlm 20–21 SP 1.4.1–1.4.2.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1751,
@@ -226,8 +255,10 @@
       "source_run": 45520998464,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Kedua-dua objektif dan aktiviti kefahaman merujuk al-Asr, bukan al-Qadr.",
-      "evidence": "T5 buku teks hlm 24–26, SP 1.5.3–1.5.4: penghayatan surah al-Asr dan penggunaan masa; DSKP hlm 23.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "T5 textbook 2020 printed pp24–27 SP1.5.3/1.5.4 explicitly al-Asr and personal character; DSKP p23.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت :\n١. مڠهورايكن ٣ درڤد كڤنتيڠن مڠعملكن سورة العصر دڠن بتول.\n٢. مثنارايكن ٣ كڤنتيڠن مڠعملكن ڤڠاجرن سورة العصر دالم ممبنتوق كڤريبادين دڠن تڤت."
     },
     {
       "id": 1946,
@@ -237,8 +268,10 @@
       "source_run": 45520998464,
       "disposition": "SEQUENCE_CORRECTION_PROPOSED",
       "proposed_correction": "Cadangan buang al-Zumar 1–5 dari sesi Juz 29 kerana di luar Juz 29; kekalkan al-Maarij 40–44, Nuh 1–28, al-Jinn 1–13. Jangan ganti dengan surah lain.",
-      "evidence": "Original Rozayus RPT T6 SK 2026, Drive 1WJTT7wm3aiN4F7YHMf1v_Qj6tuWu597a: Juz 29 session followed by al-Jinn 14–28, al-Muzzammil 1–20, al-Muddaththir 1–17. Al-Zumar belongs to Juz 23/24. Removal is proposed editorial decision, not a verbatim RPT correction.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "Original T6 RPT Juz29 and active PdP112/120 confirm continuous al-Maarij/Nuh/al-Jinn; remove al-Zumar 1–5 as out-of-juz editorial correction. Verify mushaf and academic approval.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت : ممباچ سورة المعارج ٤٠-٤٤ نوح ١-٢٨ الجن ١-١٣ دڠن بتول دان برتجويد"
     },
     {
       "id": 1495,
@@ -249,7 +282,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Iqlab: nun sakinah/tanwin bertemu ba; latih Iqlab bukan Ikhfa Hakiki.",
       "evidence": "T3 buku teks hlm 32–33 SP 1.6.1–1.6.3 jadual nun sakinah/tanwin termasuk Iqlab, huruf ba.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1815,
@@ -259,8 +293,10 @@
       "source_run": 45524846245,
       "disposition": "OBJECTIVE_CORRECTION",
       "proposed_correction": "Kedua-dua objektif dan aktiviti kefahaman al-Asr, bukan al-Qadr.",
-      "evidence": "T5 buku teks hlm 24–26 SP 1.5.3–1.5.4; DSKP hlm 23.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "evidence": "T5 textbook 2020 printed pp24–27 SP1.5.3/1.5.4 explicitly al-Asr and personal character; DSKP p23.",
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_objective_corrections_20261125.json",
+      "proposed_objective": "موريد داڤت :\n١. مڠهورايكن ٣ درڤد كڤنتيڠن مڠعملكن سورة العصر دڠن بتول.\n٢. مثنارايكن ٣ كڤنتيڠن مڠعملكن ڤڠاجرن سورة العصر دالم ممبنتوق كڤريبادين دڠن تڤت."
     },
     {
       "id": 1543,
@@ -271,7 +307,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Rakaman, hafazan dan tasmi' al-Takathur ayat 1–4, bukan al-Kafirun.",
       "evidence": "T4 buku teks hlm 14–15 hafazan al-Takathur SP 1.3.1–1.3.2.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1547,
@@ -282,7 +319,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Rakaman, hafazan dan tasmi' al-Takathur ayat 5–8, bukan al-Kafirun.",
       "evidence": "T4 buku teks hlm 14–15 hafazan al-Takathur SP 1.3.1–1.3.2.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1599,
@@ -293,7 +331,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Ketiga-tiga kepentingan dan kesan terhadap keperibadian merujuk al-Ikhlas, bukan al-Fatihah.",
       "evidence": "T4 buku teks unit 5 kefahaman: tuntutan al-Ikhlas, tauhid dan ikhlas ibadah; exact page visual pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1611,
@@ -304,7 +343,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Ulang kaji tiga hukum mim sakinah: Izhar Syafawi, Ikhfa Syafawi, Idgham Mithlain Syafawi, bukan hukum nun sakinah.",
       "evidence": "T4 buku teks kandungan unit 6 hukum mim sakinah; active objective confirms three rules.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1615,
@@ -315,7 +355,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Rakaman dan bacaan al-Qariah 1–5, bukan al-Asr.",
       "evidence": "T4 DSKP hlm 20 al-Qariah; buku teks hlm 8–9 SP 1.2.1.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1747,
@@ -326,7 +367,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Kepentingan dan tuntutan al-Asr, bukan al-Qadr; kaitkan penggunaan masa dengan iman dan amalan baik.",
       "evidence": "T5 buku teks hlm 24–26 SP 1.5.2–1.5.4; DSKP hlm 23.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1811,
@@ -337,7 +379,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Kepentingan dan tuntutan al-Asr, bukan al-Qadr; gunakan situasi pengurusan masa.",
       "evidence": "T5 buku teks hlm 24–26 SP 1.5.2–1.5.4; DSKP hlm 23.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1619,
@@ -348,7 +391,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Rakaman dan pentaksiran al-Qariah 6–11, bukan al-Asr atau ayat 1–5.",
       "evidence": "T4 DSKP hlm 20 al-Qariah; buku teks hlm 8–9 SP 1.2.1; session split from active objective.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     },
     {
       "id": 1627,
@@ -359,7 +403,8 @@
       "disposition": "ACTIVITY_CORRECTION",
       "proposed_correction": "Hafazan dan tasmi' al-Qariah 6–11, bukan 1–5.",
       "evidence": "T4 buku teks al-Qariah; session split from active objective; exact hafazan page visual pending.",
-      "status": "QA_PROPOSED_NOT_RUNTIME"
+      "status": "DRAFT_SAVED_ACADEMIC_AND_NATIVE_QA_PENDING",
+      "draft_file": "active_activity_editorial_batch36_20261125.json"
     }
   ]
 }
