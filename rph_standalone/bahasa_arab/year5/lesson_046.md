@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** قط، كلب، صقر، ثعبان، تمساح
 **Objektif pembelajaran:** Memilih empat daripada lima gambar haiwan berdasarkan sebutan yang didengar.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid memilih sekurang-kurangnya 4 daripada 5 gambar haiwan berdasarkan sebutan yang didengar.
 
 **Set induksi:** Guru menyembunyikan lima kad haiwan dan memainkan bunyi sebutan nama haiwan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut nama haiwan h86 secara rawak; murid mendengar tanpa membaca perkataan dan menunjuk kad gambar yang tepat.
+**Aktiviti 1 — Dengar nama haiwan tanpa perkataan:** Guru menyebut nama haiwan h86 secara rawak; murid mendengar tanpa membaca perkataan dan menunjuk kad gambar yang tepat.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan, seorang murid menyebut satu kata dan ahli lain memilih gambar; guru membetulkan bunyi yang mudah tertukar.
+**Aktiviti 2 — Pilih gambar berdasarkan sebutan rakan:** Dalam kumpulan, seorang murid menyebut satu kata dan ahli lain memilih gambar; guru membetulkan bunyi yang mudah tertukar.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod ketepatan padanan empat daripada lima input lisan.
 

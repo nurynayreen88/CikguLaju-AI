@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** أريد أن أقابل المدير، هل يمكن أن أقابل مساعد المدير؟، تفضلي
 **Objektif pembelajaran:** Murid dapat meniru empat giliran dialog dengan sebutan, intonasi dan respons yang sesuai.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid meniru empat giliran dialog dengan sebutan, intonasi dan respons sesuai.
 
 **Set induksi:** Guru memainkan peranan petugas pejabat dan murid sebagai pelawat; murid meneka situasi.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan dialog meminta bertemu pengetua pada Buku Teks halaman 49, memperdengarkan permintaan, jawapan serta penutup. Murid mendengar dan mengulang ayat yang dipilih secara bersiri.
+**Aktiviti 1 — Ajuk permintaan dan jawapan dialog:** Guru menggunakan dialog meminta bertemu pengetua pada Buku Teks halaman 49, memperdengarkan permintaan, jawapan serta penutup. Murid mendengar dan mengulang ayat yang dipilih secara bersiri.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan melakonkan pelawat dan petugas menggunakan kad situasi h49, kemudian bertukar peranan dan mengolah satu respons dengan bimbingan.
+**Aktiviti 2 — Lakonkan pelawat dan petugas:** Murid berpasangan melakonkan pelawat dan petugas menggunakan kad situasi h49, kemudian bertukar peranan dan mengolah satu respons dengan bimbingan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menanda sekurang-kurangnya tiga daripada empat giliran lisan serta ungkapan sopan yang tepat.
 

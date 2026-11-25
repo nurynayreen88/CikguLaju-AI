@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** سَيَّارَة، سَيَّارَة أُجْرَة، دَرَّاجَة، دَرَّاجَة نَارِيَّة
 **Objektif pembelajaran:** Membaca empat kata atau frasa kenderaan dengan tepat.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid membaca empat kata atau frasa kenderaan dengan tepat.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan label pada halaman 67 sambil membandingkan kata majmuk dengan kata tunggal.
+**Aktiviti 1 — Baca label kenderaan bermotor:** Guru membimbing bacaan label pada halaman 67 sambil membandingkan kata majmuk dengan kata tunggal.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan label kenderaan pada gambar dan membaca empat pilihan kepada pasangan.
+**Aktiviti 2 — Padankan label dan baca empat pilihan:** Murid memadankan label kenderaan pada gambar dan membaca empat pilihan kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Empat bacaan label dan tiga padanan. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

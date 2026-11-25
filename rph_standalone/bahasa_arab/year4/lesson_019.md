@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** مساعد المدير، مساعدة المدير، أمين المكتبة، أمينة المكتبة
 **Objektif pembelajaran:** Murid membezakan sekurang-kurangnya tiga daripada empat frasa nama jawatan selepas mendengar sebutan guru.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membezakan sekurang-kurangnya 3 daripada 4 frasa jawatan yang didengar.
 
 **Set induksi:** Guru menunjukkan gambar penolong pengetua dan pustakawan untuk mengenal dua jenis tugas.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan frasa jawatan h.34 dan menyebut مساعد المدير، مساعدة المدير، أمين المكتبة، أمينة المكتبة. Murid mengangkat kad mengikut frasa yang didengar.
+**Aktiviti 1 — Dengar frasa jawatan muzakkar dan muannath:** Guru menggunakan latihan frasa jawatan h.34 dan menyebut مساعد المدير، مساعدة المدير، أمين المكتبة، أمينة المكتبة. Murid mengangkat kad mengikut frasa yang didengar.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan frasa dengan gambar sambil menerangkan perbezaan bentuk muzakkar/muannath melalui pasangan contoh.
+**Aktiviti 2 — Padankan frasa jawatan dengan gambar:** Murid memadankan frasa dengan gambar sambil menerangkan perbezaan bentuk muzakkar/muannath melalui pasangan contoh.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod sekurang-kurangnya tiga daripada empat frasa yang dapat dibezakan dengan betul.
 

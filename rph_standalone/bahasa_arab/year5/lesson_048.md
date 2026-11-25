@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** طاووس، عقرب، عصفور
 **Objektif pembelajaran:** Menyalin dan melengkapkan tiga perkataan haiwan dengan bentuk huruf yang betul.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menyalin dan melengkapkan tiga perkataan haiwan dengan bentuk huruf betul.
 
 **Set induksi:** Guru memaparkan kata haiwan dengan satu huruf hilang dan murid mengenal tempat huruf tersebut.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan sambungan huruf pada nama haiwan daripada latihan menulis h87, kemudian murid menyalin dua contoh berpandu.
+**Aktiviti 1 — Model sambungan huruf nama haiwan:** Guru memodelkan sambungan huruf pada nama haiwan daripada latihan menulis h87, kemudian murid menyalin dua contoh berpandu.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melengkapkan kad suku kata عصفور، عقرب، طاووس tanpa meniru baris penuh, dan menyemak bentuk awal, tengah atau akhir huruf.
+**Aktiviti 2 — Lengkapkan tiga kad kata haiwan:** Murid melengkapkan kad suku kata عصفور، عقرب، طاووس tanpa meniru baris penuh, dan menyemak bentuk awal, tengah atau akhir huruf.
 
 **Pengukuhan / Penilaian (PBD):** Tiga perkataan disemak untuk bentuk huruf, susunan dan ejaan.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** أرز، خضراوات، عصير، حليب، فواكه
 **Objektif pembelajaran:** Murid dapat Menghasilkan satu kolaj menu dengan empat kosa kata yang boleh dibaca serta dilabel dengan betul.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menghasilkan satu kolaj dengan empat kosa kata yang dibaca dan dilabel betul.
 
 **Set induksi:** Guru memaparkan projek kolaj menu dari bahan terpakai dan meminta murid menyebut dua makanan/minuman.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menerangkan projek أعد وأقدم halaman 56 menggunakan assemblage gambar makanan/minuman dan kaitan dengan kemahiran membaca kata dalam SP 2.2.5; murid menyemak sebutan sebelum memilih perkataan.
+**Aktiviti 1 — Pilih dan baca label kolaj makanan:** Guru menerangkan projek أعد وأقدم halaman 56 menggunakan assemblage gambar makanan/minuman dan kaitan dengan kemahiran membaca kata dalam SP 2.2.5; murid menyemak sebutan sebelum memilih perkataan.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan, murid menghasilkan kolaj empat item makanan atau minuman daripada gambar sendiri/guntingan, membaca label Arab dan membentangkan kepada kelas.
+**Aktiviti 2 — Hasilkan serta bentangkan kolaj menu:** Dalam kumpulan, murid menghasilkan kolaj empat item makanan atau minuman daripada gambar sendiri/guntingan, membaca label Arab dan membentangkan kepada kelas.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat padanan gambar dan label yang betul serta kebolehan membaca nama item.
 

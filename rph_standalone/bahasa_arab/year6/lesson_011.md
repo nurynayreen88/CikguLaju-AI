@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أنا أغسل يدي، أنا أستخدم الصابون، لا تبذر الماء
 **Objektif pembelajaran:** Murid menulis dua daripada tiga ayat mudah dengan urutan kata betul.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 2 daripada 3 ayat mudah dengan urutan kata betul.
 
 **Set induksi:** Guru memaparkan kata أنا / يدي / أغسل yang bercampur dan murid menyusunnya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan arah penulisan dan ruang antara perkataan dalam ayat kebersihan.
+**Aktiviti 1 — Model tulisan ayat kebersihan:** Guru memodelkan arah penulisan dan ruang antara perkataan dalam ayat kebersihan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun tiga kad ayat mudah dan menyalin dua ayat pilihan untuk melabel poster kebersihan.
+**Aktiviti 2 — Susun dan salin ayat poster:** Murid menyusun tiga kad ayat mudah dan menyalin dua ayat pilihan untuk melabel poster kebersihan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tulisan dua ayat: ejaan, titik dan urutan tepat.
 

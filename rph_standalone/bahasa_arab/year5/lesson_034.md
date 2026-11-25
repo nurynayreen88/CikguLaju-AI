@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** كرة القدم، كرة اليد، الكرة الطائرة، كرة الريشة
 **Objektif pembelajaran:** Murid dapat memadankan tiga daripada empat sebutan kepada gambar yang tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid memadankan sekurang-kurangnya 3 daripada 4 sebutan permainan bola dengan gambar tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan membezakan jenis permainan bola yang didengar dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membacakan frasa permainan bola secara rawak daripada latihan dengar h60.
+**Aktiviti 1 — Dengar frasa permainan bola secara rawak:** Guru membacakan frasa permainan bola secara rawak daripada latihan dengar h60.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih gambar sukan lalu menyebut nama permainan yang mereka dengar.
+**Aktiviti 2 — Pilih gambar dan sebut nama permainan:** Murid memilih gambar sukan lalu menyebut nama permainan yang mereka dengar.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod tiga daripada empat padanan audio dan gambar betul.
 

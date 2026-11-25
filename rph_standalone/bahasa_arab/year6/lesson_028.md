@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** شُرْطِيّ، مَرْكَزُ الشُّرْطَة، مُضِيفَة، شَرِكَةُ الطَّيَرَان
 **Objektif pembelajaran:** Membaca dan menghasilkan dua rangkaian ayat yang menghubungkan pekerjaan dengan tempatnya.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid membaca dan menghasilkan dua rangkaian ayat yang menghubungkan pekerjaan dengan tempatnya.
 
 **Set induksi:** Guru menunjukkan gambar balai polis dan kabin kapal terbang.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan rangkaian ayat mudah tentang profesion serta lokasi dalam aktiviti h49.
+**Aktiviti 1 — Baca rangkaian ayat profesion dan lokasi:** Guru membimbing bacaan rangkaian ayat mudah tentang profesion serta lokasi dalam aktiviti h49.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mencantum kad ayat yang berurutan, membacanya dan menghasilkan dua ayat baharu secara berpasangan.
+**Aktiviti 2 — Cantum kad dan bina ayat berkait:** Murid mencantum kad ayat yang berurutan, membacanya dan menghasilkan dua ayat baharu secara berpasangan.
 
 **Pengukuhan / Penilaian (PBD):** Dua rangkaian ayat berkaitan pekerjaan-tempat yang tepat dinilai.
 

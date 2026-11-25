@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** ماذا تشاهد؟ أشاهد مباراة كرة القدم. أشاهد مسابقة القفز العالي.
 **Objektif pembelajaran:** Murid dapat membaca dua daripada tiga ayat dengan sebutan jelas.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 2 daripada 3 ayat dengan sebutan jelas.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan membaca ayat tentang pertandingan sukan ditonton dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan latihan mendengar dan membaca dialog acara yang ditonton pada h70.
+**Aktiviti 1 — Baca dialog pertandingan yang ditonton:** Guru memodelkan latihan mendengar dan membaca dialog acara yang ditonton pada h70.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan gambar pertandingan dengan ayat dan membacanya secara bergilir.
+**Aktiviti 2 — Padankan gambar dan baca ayat:** Murid memadankan gambar pertandingan dengan ayat dan membacanya secara bergilir.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua daripada tiga ayat dibaca tepat.
 

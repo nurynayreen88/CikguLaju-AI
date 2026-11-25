@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** ش، ب، ا، ب، شَبَاب
 **Objektif pembelajaran:** Menyebut dan membina perkataan شَبَاب secara berpandu.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid menyebut dan membina perkataan شَبَاب secara berpandu.
 
 **Set induksi:** Guru mengangkat kad huruf ش dan meminta murid mencari bunyi yang sama dalam tajuk unit.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mencontohkan gabungan empat huruf pada h33, menegaskan arah kanan-ke-kiri dan bunyi panjang alif.
+**Aktiviti 1 — Gabungkan huruf dan bunyi panjang alif:** Guru mencontohkan gabungan empat huruf pada h33, menegaskan arah kanan-ke-kiri dan bunyi panjang alif.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mencantum kad huruf, membaca perkataan lengkap dan menulisnya sekali dengan panduan.
+**Aktiviti 2 — Cantum kad dan baca شَبَاب:** Murid mencantum kad huruf, membaca perkataan lengkap dan menulisnya sekali dengan panduan.
 
 **Pengukuhan / Penilaian (PBD):** Susunan empat huruf dan sebutan lengkap diperiksa.
 

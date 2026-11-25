@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** طَائِرَة، دَرَّاجَة، حَافِلَة، قَارِب، قِطَار
 **Objektif pembelajaran:** Membaca sekurang-kurangnya lima nama kenderaan dalam permainan.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya lima nama kenderaan dalam permainan.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing peraturan permainan BINGO kosa kata daripada h71.
+**Aktiviti 1 — Kenal peraturan BINGO kenderaan:** Guru membimbing peraturan permainan BINGO kosa kata daripada h71.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih lima nama kenderaan secara rawak, mencatat pada petak dan membaca apabila dipanggil.
+**Aktiviti 2 — Permainan BINGO lima nama kenderaan:** Murid memilih lima nama kenderaan secara rawak, mencatat pada petak dan membaca apabila dipanggil.
 
 **Pengukuhan / Penilaian (PBD):** Lima bacaan dan padanan BINGO. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

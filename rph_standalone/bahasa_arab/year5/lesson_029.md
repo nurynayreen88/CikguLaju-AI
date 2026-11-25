@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** تلميذ، طويل، طائر، كرة، قفز
 **Objektif pembelajaran:** Murid dapat menyebut empat daripada lima kata dengan bunyi awal tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 4 daripada 5 kata dengan bunyi awal tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan dengar dan sebut bunyi ت/ط dan ق/ك dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menunjukkan perbezaan makhraj ت/ط dan ق/ك menerusi latihan أستمع وأردد h58, kemudian murid mengulang kata sukan dan fonetik.
+**Aktiviti 1 — Ajuk makhraj ت، ط، ق، ك:** Guru menunjukkan perbezaan makhraj ت/ط dan ق/ك menerusi latihan أستمع وأردد h58, kemudian murid mengulang kata sukan dan fonetik.
 
-**Aktiviti 2 — Aplikasi murid:** Murid padankan lima kad huruf dengan kata dan mengulang bacaan kepada pasangan.
+**Aktiviti 2 — Padankan lima kad huruf dengan kata:** Murid padankan lima kad huruf dengan kata dan mengulang bacaan kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak empat daripada lima sebutan tepat.
 

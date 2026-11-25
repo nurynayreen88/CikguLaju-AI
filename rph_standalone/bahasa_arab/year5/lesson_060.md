@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** الفيل، الديك، البط، الأسد، الأرنب
 **Objektif pembelajaran:** Mempersembahkan satu dialog teka haiwan dengan sekurang-kurangnya tiga petunjuk lisan.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid mempersembahkan satu dialog teka haiwan dengan sekurang-kurangnya tiga petunjuk lisan.
 
 **Set induksi:** Guru memberikan tiga petunjuk tentang seekor haiwan dan murid meneka nama Arabnya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menunjukkan struktur soal jawab permainan teka haiwan pada h110, membimbing murid memilih petunjuk yang sesuai tanpa menyalin dialog penuh.
+**Aktiviti 1 — Pilih petunjuk untuk teka haiwan:** Guru menunjukkan struktur soal jawab permainan teka haiwan pada h110, membimbing murid memilih petunjuk yang sesuai tanpa menyalin dialog penuh.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan kecil, murid melakonkan pusingan soal jawab teka haiwan dengan giliran pemberi petunjuk dan peneka.
+**Aktiviti 2 — Lakonkan dialog pemberi petunjuk dan peneka:** Dalam kumpulan kecil, murid melakonkan pusingan soal jawab teka haiwan dengan giliran pemberi petunjuk dan peneka.
 
 **Pengukuhan / Penilaian (PBD):** Murid memberikan tiga petunjuk yang difahami dan menggunakan kata haiwan tepat; catatan PBD dibuat.
 

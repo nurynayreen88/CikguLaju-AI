@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** سَفِينَة، قَارِب، قِطَار، قِطَار كَهْرَبَائِيّ
 **Objektif pembelajaran:** Membaca empat label pengangkutan dengan sebutan jelas.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid membaca empat label pengangkutan dengan sebutan jelas.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menunjukkan ilustrasi kapal, perahu dan kereta api elektrik pada halaman 69.
+**Aktiviti 1 — Kenal label pengangkutan laut dan rel:** Guru menunjukkan ilustrasi kapal, perahu dan kereta api elektrik pada halaman 69.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membina poster mini berlabel tiga pengangkutan, membaca dan menyemak sebutan rakan.
+**Aktiviti 2 — Poster mini dan bacaan label:** Murid membina poster mini berlabel tiga pengangkutan, membaca dan menyemak sebutan rakan.
 
 **Pengukuhan / Penilaian (PBD):** Empat bacaan dan tiga label betul. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

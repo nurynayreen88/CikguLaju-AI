@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** قط، ديك، بط، طائر، أرنب
 **Objektif pembelajaran:** Merakam dan memperdengarkan sekurang-kurangnya empat nama haiwan dengan sebutan difahami.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid merakam dan memperdengarkan sekurang-kurangnya empat nama haiwan dengan sebutan difahami.
 
 **Set induksi:** Guru memainkan contoh rakaman pendek nama haiwan jinak dan murid memilih kata yang didengar.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing murid menyebut lima kata haiwan daripada h90 dengan intonasi dan sebutan yang sesuai.
+**Aktiviti 1 — Latih sebutan lima nama haiwan:** Guru membimbing murid menyebut lima kata haiwan daripada h90 dengan intonasi dan sebutan yang sesuai.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid menghasilkan rakaman suara sendiri menggunakan empat nama haiwan serta mendengar semula untuk pembetulan.
+**Aktiviti 2 — Rakam empat nama dan semak sebutan:** Pasangan murid menghasilkan rakaman suara sendiri menggunakan empat nama haiwan serta mendengar semula untuk pembetulan.
 
 **Pengukuhan / Penilaian (PBD):** Rakaman dinilai pada sebutan empat nama dan kejelasan bunyi; pilihan tanpa telefon ialah bacaan langsung.
 

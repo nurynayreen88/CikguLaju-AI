@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** الطاولة، البساط، الجدار، الباب، الصالة
 **Objektif pembelajaran:** Murid dapat melafazkan sekurang-kurangnya empat daripada lima kata ber-ال dengan makhraj yang betul.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid melafazkan sekurang-kurangnya 4 daripada 5 kata ber-ال dengan makhraj betul.
 
 **Set induksi:** Guru menunjukkan gambar meja, permaidani dan pintu lalu meminta murid mendengar dua sebutan berbeza bagi ال.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan kata daripada latihan fonetik halaman 86 seperti الطاولة، البساط، الجدار، الباب، الصالة; murid mendengar dan meniru sambil menyentuh kad bunyi qamariah atau syamsiah.
+**Aktiviti 1 — Dengar kata rumah ber-ال:** Guru memodelkan kata daripada latihan fonetik halaman 86 seperti الطاولة، البساط، الجدار، الباب، الصالة; murid mendengar dan meniru sambil menyentuh kad bunyi qamariah atau syamsiah.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid menyusun lima kad kata mengikut bunyi lam yang didengar dan melafazkan setiap contoh tanpa audio guru.
+**Aktiviti 2 — Susun kad mengikut bunyi lam:** Pasangan murid menyusun lima kad kata mengikut bunyi lam yang didengar dan melafazkan setiap contoh tanpa audio guru.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyenaraikan tepat/tidak tepat bagi lima bacaan individu dan memberikan bimbingan makhraj kepada murid yang memerlukan.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** الغرفة، الدكان، القرآن، الخيمة
 **Objektif pembelajaran:** Murid dapat menulis sekurang-kurangnya tiga daripada empat kata ber-ال dengan sambungan huruf dan baris tepat.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 kata ber-ال dengan sambungan huruf dan baris tepat.
 
 **Set induksi:** Guru menunjukkan perkataan ناقص ال pada papan mini dan meminta murid melengkapkannya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru berpandukan latihan h59, memodelkan penambahan ال kepada kata yang sesuai, menerangkan sambungan huruf dan murid menjejak bentuk RTL.
+**Aktiviti 1 — Jejak bentuk kata ber-ال:** Guru berpandukan latihan h59, memodelkan penambahan ال kepada kata yang sesuai, menerangkan sambungan huruf dan murid menjejak bentuk RTL.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis semula empat kad kata ber-ال serta menanda huruf lam sebelum menyemak dengan contoh buku.
+**Aktiviti 2 — Tulis empat kata dan semak baris:** Murid menulis semula empat kad kata ber-ال serta menanda huruf lam sebelum menyemak dengan contoh buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak tiga daripada empat tulisan dengan ejaan dan sambungan betul.
 

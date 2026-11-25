@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** ذلك سمك، تلك فواكه، تلك خضراوات، ذلك ماء
 **Objektif pembelajaran:** Murid dapat Memilih tiga daripada empat frasa selepas membaca kata tunjuk dan nama makanan dengan tepat.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid memilih sekurang-kurangnya 3 daripada 4 frasa kata tunjuk dan nama makanan dengan tepat.
 
 **Set induksi:** Guru menunjukkan gambar ikan dan sayur di tempat berjauhan, kemudian memperkenalkan ذلك dan تلك.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan bacaan kata tunjuk ذلك / تلك serta nama makanan daripada latihan halaman 36; murid membaca dan mengenal gambar sasaran.
+**Aktiviti 1 — Baca kata tunjuk ذلك dan تلك:** Guru memodelkan bacaan kata tunjuk ذلك / تلك serta nama makanan daripada latihan halaman 36; murid membaca dan mengenal gambar sasaran.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid mengambil kad kata tunjuk secara rawak, memadankan dengan tiga gambar makanan dan membaca frasa yang disusun.
+**Aktiviti 2 — Padankan kata tunjuk dengan gambar:** Pasangan murid mengambil kad kata tunjuk secara rawak, memadankan dengan tiga gambar makanan dan membaca frasa yang disusun.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai ketepatan tiga daripada empat bacaan dan pemilihan frasa.
 

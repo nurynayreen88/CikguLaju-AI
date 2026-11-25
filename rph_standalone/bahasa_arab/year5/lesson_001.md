@@ -8,13 +8,13 @@
 **Masa/Tarikh/Kelas:** Diisi oleh guru mengikut jadual.
 
 **Objektif PdP:** Murid dapat meniru sebutan sekurang-kurangnya 3 daripada 4 perkataan unit dapur dengan bunyi huruf yang betul.  
-**Kriteria kejayaan:** Sasaran individu seperti dalam objektif; bilangan tepat direkod oleh guru.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 3 daripada 4 perkataan dengan bunyi huruf tepat.
 
 **Set induksi:** Guru menunjukkan gambar peti sejuk dan pisau; murid mendengar sebutan tanpa melihat tulisan.
 
-**Aktiviti 1 — Dengar dan ulang:** Guru memperdengarkan ثلاجة، سكين، سمكة، صحن berdasarkan kosa kata dalam RPT 2026 dan memodelkan perbezaan ث، س، ص. Murid mendengar dan mengulang secara berirama.
+**Aktiviti 1 — Dengar dan ulang bunyi ث، س، ص:** Guru memperdengarkan ثلاجة، سكين، سمكة، صحن berdasarkan kosa kata dalam RPT 2026 dan memodelkan perbezaan ث، س، ص. Murid mendengar dan mengulang secara berirama.
 
-**Aktiviti 2 — Amali/berpasangan:** Murid bermain padanan gambar–perkataan. Secara berpasangan, seorang menyebut perkataan manakala seorang lagi mengangkat gambar yang betul; guru membimbing sebutan huruf yang hampir sama.
+**Aktiviti 2 — Padankan gambar melalui sebutan:** Murid bermain padanan gambar–perkataan. Secara berpasangan, seorang menyebut perkataan manakala seorang lagi mengangkat gambar yang betul; guru membimbing sebutan huruf yang hampir sama.
 
 **Pengukuhan / Penilaian (PBD):** Setiap murid menyebut empat perkataan. Guru menanda kejelasan bunyi ث/س/ص dan merekod sasaran ≥3/4.
 

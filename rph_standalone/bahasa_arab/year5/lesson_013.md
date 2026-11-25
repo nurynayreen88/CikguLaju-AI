@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** حليب، خضراوات، ذرة، زيت
 **Objektif pembelajaran:** Murid dapat Menyebut dengan tepat sekurang-kurangnya 4 daripada 5 kata yang mengandungi bunyi hampir sama.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 4 daripada 5 kata yang mengandungi bunyi hampir sama dengan tepat.
 
 **Set induksi:** Guru menunjukkan gambar susu, sayur, jagung dan minyak; murid mendengar sebutan tanpa melihat perkataan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan bunyi ح/خ dan ذ/ز pada latihan أستمع وأردد halaman 30; murid mengulang perkataan حليب، خضراوات، ذرة، زيت dengan makhraj dan harakat yang jelas.
+**Aktiviti 1 — Ajuk makhraj ح، خ، ذ، ز:** Guru memodelkan bunyi ح/خ dan ذ/ز pada latihan أستمع وأردد halaman 30; murid mengulang perkataan حليب، خضراوات، ذرة، زيت dengan makhraj dan harakat yang jelas.
 
-**Aktiviti 2 — Aplikasi murid:** Pasangan murid mengangkat kad bunyi yang didengar, kemudian menyebut empat perkataan dari kad gambar kepada rakan.
+**Aktiviti 2 — Padankan kad bunyi dan sebut kata:** Pasangan murid mengangkat kad bunyi yang didengar, kemudian menyebut empat perkataan dari kad gambar kepada rakan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai sekurang-kurangnya empat daripada lima sebutan perkataan dengan betul.
 

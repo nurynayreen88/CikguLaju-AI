@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** هذه كرة القدم. أنا ألعب كرة القدم. أفوز في مباراة كرة القدم.
 **Objektif pembelajaran:** Murid dapat menuturkan dua daripada tiga ayat berkait dengan lancar.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menuturkan sekurang-kurangnya 2 daripada 3 ayat berkait dengan lancar.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan menuturkan rangkaian ayat tentang acara sukan dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan ayat berangkai tentang bola sepak pada h75, memodelkan pertuturan satu demi satu.
+**Aktiviti 1 — Ajuk ayat berangkai bola sepak:** Guru menggunakan latihan ayat berangkai tentang bola sepak pada h75, memodelkan pertuturan satu demi satu.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun tiga kad ayat, kemudian menyebutnya bersama pasangan mengikut urutan makna.
+**Aktiviti 2 — Susun tiga kad dan tuturkan ayat:** Murid menyusun tiga kad ayat, kemudian menyebutnya bersama pasangan mengikut urutan makna.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua ayat yang berkait dan disebut jelas.
 

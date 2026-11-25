@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** أَنَا أُلَوِّحُ الْعَلَم، أَنَا أُنْشِدُ النَّشِيدَ الْوَطَنِيّ
 **Objektif pembelajaran:** Menuturkan dua ayat aktiviti kenegaraan menggunakan pola أنا.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid menuturkan dua ayat aktiviti kenegaraan menggunakan pola أنا.
 
 **Set induksi:** Guru menunjukkan ilustrasi bendera dan perhimpunan sekolah.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mencontohkan dua ayat daripada dialog h104 lalu meminta murid memadankan tindakan dengan kata kerja.
+**Aktiviti 1 — Padankan tindakan kenegaraan dengan kata kerja:** Guru mencontohkan dua ayat daripada dialog h104 lalu meminta murid memadankan tindakan dengan kata kerja.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melakonkan situasi perhimpunan secara berpasangan sambil menyebut dua ayat yang sesuai.
+**Aktiviti 2 — Lakonkan situasi perhimpunan:** Murid melakonkan situasi perhimpunan secara berpasangan sambil menyebut dua ayat yang sesuai.
 
 **Pengukuhan / Penilaian (PBD):** Dua ayat lisan dengan kosa kata tindakan diperiksa.
 

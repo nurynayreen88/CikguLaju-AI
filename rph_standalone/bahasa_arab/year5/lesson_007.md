@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** ماذا تفعل؟ أنا أنظف الفنجان، أنا أرتب الكوب، ماذا تطبخ؟ أنا أطبخ الأرز.
 **Objektif pembelajaran:** Murid meniru tiga daripada empat ayat mudah dengan sebutan jelas.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 3 daripada 4 ayat tindakan dapur dengan sebutan jelas.
 
 **Set induksi:** Guru menunjukkan gambar menyusun pinggan lalu menyebut أنا أرتب.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan dialog tindakan dapur dalam Buku Teks Tahun 5 halaman 13–14; murid mengulang soalan-jawapan dan memadankan gambar tindakan membersih, menyusun dan memasak.
+**Aktiviti 1 — Dengar dialog tindakan di dapur:** Guru memodelkan dialog tindakan dapur dalam Buku Teks Tahun 5 halaman 13–14; murid mengulang soalan-jawapan dan memadankan gambar tindakan membersih, menyusun dan memasak.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam kumpulan murid melakukan aksi mengikut ayat yang didengar kemudian meniru ayat kepada rakan.
+**Aktiviti 2 — Lakonkan aksi dan ulang ayat:** Dalam kumpulan murid melakukan aksi mengikut ayat yang didengar kemudian meniru ayat kepada rakan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai empat sebutan ayat pendek, sasaran tiga tepat.
 

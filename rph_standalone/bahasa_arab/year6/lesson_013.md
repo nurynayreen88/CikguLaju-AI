@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** سَاعَة، سَمَكَة، سِتَار، شَعْر، شِعَار
 **Objektif pembelajaran:** Mengecam sekurang-kurangnya empat daripada lima perkataan mengikut bunyi س atau ش.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid mengecam sekurang-kurangnya 4 daripada 5 perkataan mengikut bunyi س atau ش.
 
 **Set induksi:** Guru menunjukkan kad jam, ikan dan rambut tanpa label Arab.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan bunyi س dan ش berdasarkan contoh buku h32 serta meminta murid membezakan makhraj dan tiga titik.
+**Aktiviti 1 — Bezakan bunyi س dan ش:** Guru memperdengarkan bunyi س dan ش berdasarkan contoh buku h32 serta meminta murid membezakan makhraj dan tiga titik.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun kad gambar ke dalam dua kumpulan bunyi, kemudian menyebut empat kata yang dibaca rakan.
+**Aktiviti 2 — Kelaskan kad gambar mengikut bunyi:** Murid menyusun kad gambar ke dalam dua kumpulan bunyi, kemudian menyebut empat kata yang dibaca rakan.
 
 **Pengukuhan / Penilaian (PBD):** Empat padanan dan empat sebutan diperiksa dalam senarai semak.
 

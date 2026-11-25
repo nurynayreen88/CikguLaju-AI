@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** المدير، المعلم، الحارس، أمين المكتبة، رئيس الفصل
 **Objektif pembelajaran:** Murid dapat mengemukakan sekurang-kurangnya tiga sebutan watak/lokasi dan satu ayat penerangan yang jelas.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya tiga watak atau lokasi dan satu ayat penerangan yang jelas.
 
 **Set induksi:** Guru menunjukkan gambar diorama sekolah dan meminta murid mengenal ruang sekolah.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk projek أعد وأقدم pada buku halaman 56: menghasilkan diorama orang di sekolah dan mempersembahkannya. Murid menyusun kad watak mengikut peranan dan memodelkan penerangan ringkas.
+**Aktiviti 1 — Susun watak dan lokasi diorama:** Guru merujuk projek أعد وأقدم pada buku halaman 56: menghasilkan diorama orang di sekolah dan mempersembahkannya. Murid menyusun kad watak mengikut peranan dan memodelkan penerangan ringkas.
 
-**Aktiviti 2 — Aplikasi murid:** Kumpulan menghasilkan model ringkas menggunakan kad gambar/papan; seorang wakil menerangkan tiga warga sekolah dan fungsi mereka secara berpandu. Projek ciptaan murid, bukan salinan buku.
+**Aktiviti 2 — Persembahkan diorama warga sekolah:** Kumpulan menghasilkan model ringkas menggunakan kad gambar/papan; seorang wakil menerangkan tiga warga sekolah dan fungsi mereka secara berpandu. Projek ciptaan murid, bukan salinan buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menggunakan rubrik ringkas untuk menyemak tiga sebutan dan satu ayat penerangan.
 

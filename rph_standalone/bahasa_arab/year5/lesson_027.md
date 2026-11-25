@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** هذه فواكه. أنا أفضل الفواكه الطازجة. ما أحلى الفواكه الطازجة!
 **Objektif pembelajaran:** Murid dapat Menuturkan dua daripada tiga ayat berangkai dengan sebutan tepat.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menuturkan sekurang-kurangnya 2 daripada 3 ayat berangkai dengan sebutan tepat.
 
 **Set induksi:** Guru menunjukkan pinggan buah-buahan segar dan meminta murid memberikan satu perkataan Arab bagi buah.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan tiga ayat berkait pada latihan أستمع وأردد ثم أقرأ halaman 47 tentang فواكه طازجة; murid mendengar dan mengulang mengikut urutan makna.
+**Aktiviti 1 — Ajuk tiga ayat berkait tentang buah:** Guru memodelkan tiga ayat berkait pada latihan أستمع وأردد ثم أقرأ halaman 47 tentang فواكه طازجة; murid mendengar dan mengulang mengikut urutan makna.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun tiga kad ayat buah mengikut hubungan idea dan menuturkannya bersama pasangan tanpa mengubah ayat contoh.
+**Aktiviti 2 — Susun kad dan tuturkan ayat:** Murid menyusun tiga kad ayat buah mengikut hubungan idea dan menuturkannya bersama pasangan tanpa mengubah ayat contoh.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua daripada tiga ayat dituturkan dengan urutan serta sebutan yang betul.
 

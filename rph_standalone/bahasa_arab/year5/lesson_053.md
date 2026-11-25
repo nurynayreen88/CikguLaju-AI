@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** أسد، أرنب، ثعبان، طائر
 **Objektif pembelajaran:** Membaca tiga nama haiwan dan melengkapkan satu rajah rantaian makanan ringkas.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid membaca tiga nama haiwan dan melengkapkan satu rajah rantaian makanan ringkas.
 
 **Set induksi:** Guru menunjukkan satu gambar susunan haiwan dan bertanya haiwan mana makan yang lain.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperkenalkan aktiviti projek rantaian makanan pada h93, membimbing bacaan kata nama haiwan yang dipaparkan.
+**Aktiviti 1 — Baca label projek rantaian makanan:** Guru memperkenalkan aktiviti projek rantaian makanan pada h93, membimbing bacaan kata nama haiwan yang dipaparkan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menghasilkan rajah kecil yang menghubungkan tiga haiwan menggunakan kad bergambar dan label Arab yang dibaca sendiri.
+**Aktiviti 2 — Bina rajah rantaian makanan tiga haiwan:** Murid menghasilkan rajah kecil yang menghubungkan tiga haiwan menggunakan kad bergambar dan label Arab yang dibaca sendiri.
 
 **Pengukuhan / Penilaian (PBD):** Tiga label Arab dibaca tepat dan satu rajah disusun dengan munasabah; konteks sains disemak guru.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** عريف، تلميذ، معلمة، مساعد المدير
 **Objektif pembelajaran:** Murid menulis sekurang-kurangnya tiga daripada empat kata/frasa daripada latihan halaman 38 dengan titik dan sambungan yang tepat.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 kata atau frasa dengan titik dan sambungan tepat.
 
 **Set induksi:** Guru memaparkan kad perkataan عريف yang hilang beberapa huruf, murid melengkapkannya secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan أكتب وأقرأ Buku Teks h.38 dan memodelkan penulisan عريف، تلميذ، معلمة، مساعد المدير dengan penekanan pada susunan huruf serta jarak perkataan.
+**Aktiviti 1 — Contoh tulisan kata dan frasa warga sekolah:** Guru merujuk latihan أكتب وأقرأ Buku Teks h.38 dan memodelkan penulisan عريف، تلميذ، معلمة، مساعد المدير dengan penekanan pada susunan huruf serta jarak perkataan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyalin empat kata/frasa dalam tulisan RTL dan melakukan semak kendiri titik, sambungan serta baris menggunakan model buku.
+**Aktiviti 2 — Salin dan semak titik serta sambungan:** Murid menyalin empat kata/frasa dalam tulisan RTL dan melakukan semak kendiri titik, sambungan serta baris menggunakan model buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat kata/frasa ditulis lengkap dan terbaca.
 

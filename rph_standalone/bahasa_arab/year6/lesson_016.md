@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** الزِّيّ الرَّسْمِيّ، الزِّيّ غَيْرُ الرَّسْمِيّ، العَمَل
 **Objektif pembelajaran:** Mengelaskan empat gambar pekerjaan mengikut bentuk pakaian dengan alasan ringkas.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid mengelaskan empat gambar pekerjaan mengikut pakaian dan memberikan alasan ringkas.
 
 **Set induksi:** Guru memaparkan foto pakaian juruterbang dan pelukis sebagai perbandingan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperkenalkan kategori pakaian rasmi dan bukan rasmi pada h35 serta membimbing murid menghubungkannya dengan kerjaya.
+**Aktiviti 1 — Kenal pakaian rasmi dan bukan rasmi:** Guru memperkenalkan kategori pakaian rasmi dan bukan rasmi pada h35 serta membimbing murid menghubungkannya dengan kerjaya.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengumpul empat gambar kerjaya kepada dua kategori dan menyebut satu nama pekerjaan pada setiap kumpulan.
+**Aktiviti 2 — Kelaskan empat gambar pekerjaan:** Murid mengumpul empat gambar kerjaya kepada dua kategori dan menyebut satu nama pekerjaan pada setiap kumpulan.
 
 **Pengukuhan / Penilaian (PBD):** Empat pengelasan dan dua sebutan pekerjaan diperiksa.
 

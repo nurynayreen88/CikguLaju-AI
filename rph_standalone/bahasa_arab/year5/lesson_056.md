@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
 **Kosa kata / ayat:** ماذا تشاهد؟، أين تشاهدين؟، أشاهد القرد في الغابة
 **Objektif pembelajaran:** Menjawab sekurang-kurangnya dua soalan mudah tentang haiwan dan tempat dengan respons sesuai.
-**Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menjawab sekurang-kurangnya dua soalan mudah tentang haiwan dan tempat dengan respons sesuai.
 
 **Set induksi:** Guru menunjukkan gambar hutan dan sangkar, murid meneka haiwan yang mungkin dilihat.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan dialog سؤال وجواب pada h98 tentang haiwan dan tempat tinggal, kemudian murid menyebut mengikut giliran.
+**Aktiviti 1 — Ajuk dialog haiwan dan lokasi:** Guru memodelkan dialog سؤال وجواب pada h98 tentang haiwan dan tempat tinggal, kemudian murid menyebut mengikut giliran.
 
-**Aktiviti 2 — Aplikasi murid:** Dalam pasangan, murid memilih gambar lokasi dan haiwan, bertanya ماذا تشاهد؟ dan menjawab dengan frasa lokasi yang berpandu.
+**Aktiviti 2 — Soal jawab ماذا تشاهد؟ berdasarkan gambar:** Dalam pasangan, murid memilih gambar lokasi dan haiwan, bertanya ماذا تشاهد؟ dan menjawab dengan frasa lokasi yang berpandu.
 
 **Pengukuhan / Penilaian (PBD):** Dua jawapan lisan disemak untuk ketepatan kosa kata dan sebutan.
 

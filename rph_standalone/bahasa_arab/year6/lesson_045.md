@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru mengisi tarikh, waktu mula–tamat serta nama kelas berdasarkan jadual sebenar.
 **Kosa kata / ayat:** دَجَاجَة، دِينَار، دُخَان، ضَابِط، ضِمَادَة
 **Objektif pembelajaran:** Mengecam empat daripada lima kata yang mengandungi د atau ض.
-**Kriteria kejayaan:** Murid mencapai bilangan atau kualiti hasil dalam objektif dan guru merekod bimbingan susulan.
+**Kriteria kejayaan:** Murid mengecam sekurang-kurangnya 4 daripada 5 kata yang mengandungi د atau ض.
 
 **Set induksi:** Guru menayangkan dua kad huruf د dan ض, murid mendengar dua bunyi pembuka.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan makhraj د/ض daripada contoh kata pada h92, kemudian murid mengangkat kad huruf ketika mendengar sebutan.
+**Aktiviti 1 — Dengar dan bezakan makhraj د dan ض:** Guru memodelkan makhraj د/ض daripada contoh kata pada h92, kemudian murid mengangkat kad huruf ketika mendengar sebutan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengasingkan lima kad kata ke kumpulan د atau ض serta mengulang empat kata secara berpasangan.
+**Aktiviti 2 — Kelaskan lima kad kata mengikut huruf:** Murid mengasingkan lima kad kata ke kumpulan د atau ض serta mengulang empat kata secara berpasangan.
 
 **Pengukuhan / Penilaian (PBD):** Empat pengecaman audio dan tiga sebutan yang jelas.
 

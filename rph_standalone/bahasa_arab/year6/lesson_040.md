@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** مَاذَا تَرْكَب؟ أَرْكَبُ السَّفِينَة، أَرْكَبُ الطَّائِرَة
 **Objektif pembelajaran:** Melaksanakan dua soal jawab tentang pilihan kenderaan.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid melaksanakan dua soal jawab tentang pilihan kenderaan.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan pola soalan mengenai kenderaan dari dialog h73.
+**Aktiviti 1 — Ajuk soalan pilihan kenderaan:** Guru memodelkan pola soalan mengenai kenderaan dari dialog h73.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melakonkan dua situasi perjalanan dan bertukar kad kenderaan untuk menjawab rakan.
+**Aktiviti 2 — Lakonkan dua situasi perjalanan:** Murid melakonkan dua situasi perjalanan dan bertukar kad kenderaan untuk menjawab rakan.
 
 **Pengukuhan / Penilaian (PBD):** Dua soalan dan dua jawapan lisan bermakna. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

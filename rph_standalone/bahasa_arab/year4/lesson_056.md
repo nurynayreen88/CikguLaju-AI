@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** أهلا وسهلا إلى بيتي، تفضل، شكرا (kad contoh ringkas untuk latihan guru)
 **Objektif pembelajaran:** Murid dapat meniru sekurang-kurangnya tiga daripada empat giliran dialog menerima tetamu dengan sebutan jelas.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 3 daripada 4 giliran dialog menerima tetamu dengan sebutan jelas.
 
 **Set induksi:** Guru menunjukkan gambar tetamu datang ke rumah dan bertanya cara mengalu-alukan tetamu.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk dialog menerima tetamu pada latihan أستمع وأقرأ ثم أمثل halaman 105; murid mendengar ungkapan dan meniru respons yang berkaitan.
+**Aktiviti 1 — Dengar dan ajuk dialog menerima tetamu:** Guru merujuk dialog menerima tetamu pada latihan أستمع وأقرأ ثم أمثل halaman 105; murid mendengar ungkapan dan meniru respons yang berkaitan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan melakonkan tuan rumah dan tetamu menggunakan kad sapaan ringkas. Kad contoh guru digunakan untuk memperkukuh pola, bukan sebagai petikan tepat buku.
+**Aktiviti 2 — Lakonkan tuan rumah dan tetamu:** Murid berpasangan melakonkan tuan rumah dan tetamu menggunakan kad sapaan ringkas. Kad contoh guru digunakan untuk memperkukuh pola, bukan sebagai petikan tepat buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menanda sekurang-kurangnya tiga giliran dialog dengan intonasi dan susunan respons tepat.
 

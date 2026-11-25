@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** إِطْفَائِيّ، فَلَّاح، صَيَّاد، خَيَّاط، مُحَاسِب
 **Objektif pembelajaran:** Membaca sekurang-kurangnya empat daripada lima label pekerjaan.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 4 daripada 5 label pekerjaan dengan betul.
 
 **Set induksi:** Guru menunjukkan lima gambar petugas komuniti dan perusahaan kecil.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan perkataan pada latihan h38, memecahkan suku kata panjang sebelum murid membaca secara berulang.
+**Aktiviti 1 — Latih bacaan kata pekerjaan bersuku kata:** Guru membimbing bacaan perkataan pada latihan h38, memecahkan suku kata panjang sebelum murid membaca secara berulang.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan gambar dengan kad profesion lalu menjalankan permainan pembacaan pantas secara berpasangan.
+**Aktiviti 2 — Padankan gambar dan baca pantas:** Murid memadankan gambar dengan kad profesion lalu menjalankan permainan pembacaan pantas secara berpasangan.
 
 **Pengukuhan / Penilaian (PBD):** Empat bacaan dengan sebutan tepat diperiksa.
 

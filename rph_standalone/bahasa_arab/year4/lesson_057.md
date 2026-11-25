@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** نزور بيت المسنين، يفرح المسنون بالزيارة، نساعد المسنين
 **Objektif pembelajaran:** Murid dapat membina sekurang-kurangnya dua daripada tiga ayat berkait tentang lawatan dengan sebutan tepat.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid membina sekurang-kurangnya 2 daripada 3 ayat berkait tentang lawatan dengan sebutan tepat.
 
 **Set induksi:** Guru menunjukkan gambar lawatan murid ke rumah warga emas dan menyoal tindakan sopan yang sesuai.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan petikan bertema زيارة بيت المسنين pada halaman 108 untuk menjelaskan urutan peristiwa dan membina ayat sambungan daripada kosa kata yang telah didengar.
+**Aktiviti 1 — Kenal urutan peristiwa lawatan:** Guru menggunakan petikan bertema زيارة بيت المسنين pada halaman 108 untuk menjelaskan urutan peristiwa dan membina ayat sambungan daripada kosa kata yang telah didengar.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun tiga kad peristiwa (melawat, menyapa, membantu) lalu mencipta dua ayat bersambung dalam kumpulan, bukan menyalin petikan penuh buku.
+**Aktiviti 2 — Susun kad peristiwa dan bina ayat:** Murid menyusun tiga kad peristiwa (melawat, menyapa, membantu) lalu mencipta dua ayat bersambung dalam kumpulan, bukan menyalin petikan penuh buku.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua ayat yang berhubung idea dan boleh diucap dengan jelas.
 

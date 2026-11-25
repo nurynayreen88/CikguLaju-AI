@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** القاموس، الخمار، الغرفة، الدكان
 **Objektif pembelajaran:** Murid dapat membaca tiga daripada empat perkataan dengan sebutan ال dan bentuk huruf tepat.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 3 daripada 4 perkataan dengan sebutan ال dan bentuk huruf tepat.
 
 **Set induksi:** Guru memaparkan kad الدكان dengan awal kata disembunyikan, murid meneka bunyi.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أقرأ وأكتب h59 yang menunjukkan pembentukan kata ber-ال dan membimbing murid membaca kata contoh yang sesuai dengan konteks sekolah.
+**Aktiviti 1 — Baca kata lokasi sekolah ber-ال:** Guru menggunakan latihan أقرأ وأكتب h59 yang menunjukkan pembentukan kata ber-ال dan membimbing murid membaca kata contoh yang sesuai dengan konteks sekolah.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membina kata daripada kad ال serta kata dasar, kemudian membaca kepada pasangan dan membetulkan kesalahan.
+**Aktiviti 2 — Bina kata dan baca kepada pasangan:** Murid membina kata daripada kad ال serta kata dasar, kemudian membaca kepada pasangan dan membetulkan kesalahan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai bacaan tiga daripada empat kata serta ketepatan penambahan ال.
 

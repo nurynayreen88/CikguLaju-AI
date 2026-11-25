@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** ماء، حليب، شاي، قهوة، عصير، أرز
 **Objektif pembelajaran:** Murid dapat Mengelaskan sekurang-kurangnya lima daripada enam nama yang didengar kepada makanan atau minuman.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 5 daripada 6 nama yang didengar kepada makanan atau minuman.
 
 **Set induksi:** Guru memaparkan dua bakul bertanda makanan dan minuman dan menunjukkan gambar air serta nasi.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan enam kata daripada latihan mendengar dan pengelasan halaman 32–33; murid memilih gambar dan menyatakan kategorinya.
+**Aktiviti 1 — Dengar kata dan kenal kategori:** Guru memperdengarkan enam kata daripada latihan mendengar dan pengelasan halaman 32–33; murid memilih gambar dan menyatakan kategorinya.
 
-**Aktiviti 2 — Aplikasi murid:** Kumpulan murid memasukkan kad ke dua bakul selepas sebutan guru, kemudian setiap murid membaca dua pilihan kepada rakan.
+**Aktiviti 2 — Kelaskan kad dalam dua bakul:** Kumpulan murid memasukkan kad ke dua bakul selepas sebutan guru, kemudian setiap murid membaca dua pilihan kepada rakan.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod lima daripada enam kategori yang betul serta ketepatan pendengaran.
 

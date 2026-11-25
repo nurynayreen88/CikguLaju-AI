@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual kelas sebenar.
 **Kosa kata / ayat:** كرة اليد، كرة القدم، كرة الريشة، الكرة الطائرة
 **Objektif pembelajaran:** Murid dapat membaca keempat-empat frasa sukan dengan sebutan tepat.
-**Kriteria kejayaan:** Prestasi murid mencapai sasaran penilaian PBD; guru menyediakan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca keempat-empat frasa sukan dengan sebutan tepat.
 
 **Set induksi:** Guru memperlihatkan gambar berkaitan membaca nama permainan sukan dan memperdengarkan dua perkataan sasaran; murid memberi respons secara lisan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan bacaan kosa kata permainan bola dan badminton pada latihan h64.
+**Aktiviti 1 — Model bacaan nama permainan sukan:** Guru memodelkan bacaan kosa kata permainan bola dan badminton pada latihan h64.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menarik kad sukan, membaca nama permainan dan padankan dengan gambar.
+**Aktiviti 2 — Cabut kad dan baca nama permainan:** Murid menarik kad sukan, membaca nama permainan dan padankan dengan gambar.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod empat frasa dibaca tanpa tertukar perkataan.
 

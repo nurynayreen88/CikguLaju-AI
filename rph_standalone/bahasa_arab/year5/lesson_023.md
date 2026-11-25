@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual waktu sebenar.
 **Kosa kata / ayat:** أرز، عصير، خضراوات، مكرونة
 **Objektif pembelajaran:** Murid dapat Menulis sekurang-kurangnya tiga daripada empat perkataan makanan dengan ejaan dan sambungan huruf yang betul.
-**Kriteria kejayaan:** Murid menunjukkan tahap minimum yang dinyatakan dalam objektif. Guru merekod murid memerlukan pemulihan.
+**Kriteria kejayaan:** Murid menulis sekurang-kurangnya 3 daripada 4 perkataan dengan ejaan dan sambungan huruf betul.
 
 **Set induksi:** Guru menunjukkan kad perkataan أرز yang hurufnya dipisahkan dan murid menyatukan sebutan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أكتب وأقرأ pada halaman 38, memodelkan sambungan huruf serta arah kanan-ke-kiri dalam أرز، عصير، خضراوات dan مكرونة.
+**Aktiviti 1 — Model tulisan empat kata makanan:** Guru menggunakan latihan أكتب وأقرأ pada halaman 38, memodelkan sambungan huruf serta arah kanan-ke-kiri dalam أرز، عصير، خضراوات dan مكرونة.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis empat kata ke dalam helaian RTL, kemudian melakukan semak rakan tentang huruf, titik dan baris.
+**Aktiviti 2 — Salin kata dan semak sambungan:** Murid menulis empat kata ke dalam helaian RTL, kemudian melakukan semak rakan tentang huruf, titik dan baris.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat tulisan yang lengkap serta terbaca dengan tepat.
 

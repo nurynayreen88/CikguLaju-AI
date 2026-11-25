@@ -5,13 +5,13 @@
 **Kod SK/SP:** 1.1 / 1.1.2 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid mengenal sekurang-kurangnya 3 daripada 4 bunyi ع، أ، ح، ه yang disebut guru.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid mengenal sekurang-kurangnya 3 daripada 4 bunyi ع، أ، ح، ه yang disebut guru.
 
 **Set induksi:** Guru menyebut ح dan ه tanpa kad; murid membuat keputusan berdasarkan bunyi.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru membunyikan empat huruf dengan baris fathah; murid memadankan dengan kad عَ، أَ، حَ، هَ.
+**Aktiviti 1 — Dengar empat huruf berbaris fathah:** Guru membunyikan empat huruf dengan baris fathah; murid memadankan dengan kad عَ، أَ، حَ، هَ.
 
-**Aktiviti 2 — Amali murid:** Murid berpasangan dan menjalankan permainan 'dengar-diagnosis': pasangan menyebut satu bunyi, murid memegang kad yang tepat.
+**Aktiviti 2 — Permainan dengar dan pilih kad:** Murid berpasangan dan menjalankan permainan 'dengar-diagnosis': pasangan menyebut satu bunyi, murid memegang kad yang tepat.
 
 **Pengukuhan / PBD:** Guru menyebut empat bunyi secara rawak dan merekod kad yang dipilih.
 

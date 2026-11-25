@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** مدير، مديرة، معلم، معلمة، حارس، حارسة
 **Objektif pembelajaran:** Murid meniru sekurang-kurangnya lima daripada enam nama warga sekolah dengan sebutan yang jelas.
-**Kriteria kejayaan:** Rekod individu mengikut sasaran objektif; guru memberikan pemulihan untuk murid belum menguasai.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya 5 daripada 6 nama warga sekolah dengan jelas.
 
 **Set induksi:** Guru menunjukkan gambar pengetua, guru dan pengawal lelaki/perempuan lalu menyoal siapa mereka.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan nama jawatan daripada Buku Teks h.32 (مدير، مديرة، معلم، معلمة، حارس، حارسة); murid mengulang sambil mengenal perbezaan bentuk maskulin/feminin.
+**Aktiviti 1 — Ajuk enam nama warga sekolah:** Guru memperdengarkan nama jawatan daripada Buku Teks h.32 (مدير، مديرة، معلم، معلمة، حارس، حارسة); murid mengulang sambil mengenal perbezaan bentuk maskulin/feminin.
 
-**Aktiviti 2 — Aplikasi murid:** Murid bekerja berpasangan memadankan enam kad gambar dengan kata yang didengar kemudian menyebut nama peranan secara bergilir.
+**Aktiviti 2 — Padankan gambar dan sebut jawatan:** Murid bekerja berpasangan memadankan enam kad gambar dengan kata yang didengar kemudian menyebut nama peranan secara bergilir.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod lima daripada enam respons lisan dan pemadanan gambar tepat.
 

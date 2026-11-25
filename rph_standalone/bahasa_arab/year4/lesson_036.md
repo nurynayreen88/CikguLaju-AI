@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** هذا ملعب، هذه مكتبة، هذا مطعم، هذه حديقة
 **Objektif pembelajaran:** Murid dapat membaca empat frasa dan mengelaskan sekurang-kurangnya tiga daripadanya mengikut هذا atau هذه.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid membaca empat frasa dan mengelaskan sekurang-kurangnya tiga daripadanya mengikut هذا atau هذه.
 
 **Set induksi:** Guru menunjukkan gambar حديقة dan ملعب sambil menyebut dua kata tunjuk.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru berpandukan latihan h64, membaca beberapa tempat sekolah dan menunjukkan pengelasan mengikut هذا dan هذه.
+**Aktiviti 1 — Baca frasa tempat dengan هذا dan هذه:** Guru berpandukan latihan h64, membaca beberapa tempat sekolah dan menunjukkan pengelasan mengikut هذا dan هذه.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun gambar serta frasa nama tempat pada dua lajur هذا/هذه lalu membaca kepada pasangan.
+**Aktiviti 2 — Kelaskan gambar dan frasa dua lajur:** Murid menyusun gambar serta frasa nama tempat pada dua lajur هذا/هذه lalu membaca kepada pasangan.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai tiga daripada empat pengelasan dan bacaan frasa dengan tepat.
 
