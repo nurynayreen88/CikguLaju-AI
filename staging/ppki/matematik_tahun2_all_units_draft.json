@@ -288,7 +288,9 @@
       "closure": "Semak satu angka yang ditulis",
       "assessment": "Rekod pencapaian kriteria: 4/5 angka dua digit ditulis dengan susunan tepat. Catat jenis bantuan.",
       "reflection_criterion": "4/5 angka dua digit ditulis dengan susunan tepat",
-      "activity_book_ref": "8–11"
+      "activity_book_ref": "8–11",
+      "status": "KONFLIK_PENOMBORAN_DSKP",
+      "source_note": "DSKP Asas 3M T2 hlm. 49 mencetak 2.1.1–2.1.3 di bawah SK 2.2. Kod BT perlu disemak silang dengan pembetulan rasmi."
     },
     {
       "pdp": "012",
@@ -312,7 +314,9 @@
       "closure": "Baca satu nama nombor",
       "assessment": "Rekod pencapaian kriteria: 4/5 nama nombor ditulis atau dibaca tepat mengikut tugasan. Catat jenis bantuan.",
       "reflection_criterion": "4/5 nama nombor ditulis atau dibaca tepat mengikut tugasan",
-      "activity_book_ref": "8–11"
+      "activity_book_ref": "8–11",
+      "status": "KONFLIK_PENOMBORAN_DSKP",
+      "source_note": "DSKP Asas 3M T2 hlm. 49 mencetak 2.1.1–2.1.3 di bawah SK 2.2. Kod BT perlu disemak silang dengan pembetulan rasmi."
     },
     {
       "pdp": "013",
