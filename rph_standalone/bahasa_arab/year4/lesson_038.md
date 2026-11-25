@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** الفصل أمام الحمام، معمل العلوم على يمين الفصل
 **Objektif pembelajaran:** Murid dapat menyusun dan membaca dua ayat lokasi sekolah dengan urutan kata yang tepat.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid menyusun dan membaca dua ayat lokasi sekolah dengan urutan kata tepat.
 
 **Set induksi:** Guru meletakkan gambar kelas dan tandas, murid mengenal مفهوم أمام.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menggunakan latihan أقرأ وأرتب h70 untuk menunjukkan susunan frasa lokasi seperti الفصل أمام الحمام dan معمل العلوم على يمين الفصل.
+**Aktiviti 1 — Baca model ayat kedudukan tempat:** Guru menggunakan latihan أقرأ وأرتب h70 untuk menunjukkan susunan frasa lokasi seperti الفصل أمام الحمام dan معمل العلوم على يمين الفصل.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun kad perkataan mengikut gambar arah, membacanya dan menguji ayat pasangan menggunakan pelan sekolah.
+**Aktiviti 2 — Susun kad arah dan uji pada pelan sekolah:** Murid menyusun kad perkataan mengikut gambar arah, membacanya dan menguji ayat pasangan menggunakan pelan sekolah.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai dua ayat yang disusun serta dibaca dengan tepat.
 

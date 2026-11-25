@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** الوسادة على السرير، السرير في غرفة النوم
 **Objektif pembelajaran:** Murid dapat menulis dua ayat rumah dengan ejaan, jarak dan susunan kata yang betul.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid menulis dua ayat rumah dengan ejaan, jarak dan susunan kata betul.
 
 **Set induksi:** Guru menunjukkan bantal di atas katil pada gambar dan membaca ayat الوسادة على السرير.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan أكتب وأقرأ halaman 100 yang menulis ayat rumah; murid menjejak susunan perkataan, jarak dan huruf bersambung.
+**Aktiviti 1 — Jejak tulisan ayat kedudukan perkakas:** Guru merujuk latihan أكتب وأقرأ halaman 100 yang menulis ayat rumah; murid menjejak susunan perkataan, jarak dan huruf bersambung.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menulis dua ayat berpandukan kad objek serta pelan bilik, lalu melakukan semak rakan terhadap penanda arah.
+**Aktiviti 2 — Tulis dua ayat berdasarkan pelan bilik:** Murid menulis dua ayat berpandukan kad objek serta pelan bilik, lalu melakukan semak rakan terhadap penanda arah.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai kedua-dua ayat lengkap dari segi susunan dan tulisan tepat.
 

@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** هذا سرير، السرير في غرفة النوم، هذه كنبة
 **Objektif pembelajaran:** Murid dapat membaca dua ayat yang berkait serta menjelaskan satu gambar siluet perabot dengan sebutan betul.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid membaca dua ayat berkait dan menjelaskan satu gambar siluet perabot dengan sebutan betul.
 
 **Set induksi:** Guru menunjukkan gambar siluet katil dan meminta murid meneka objek.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk projek أعد وأقدم halaman 112 yang menggunakan siluet perabot rumah. Murid membaca ayat mudah berkait tentang katil dan lokasi seperti contoh projek.
+**Aktiviti 1 — Baca ayat berkait daripada projek siluet:** Guru merujuk projek أعد وأقدم halaman 112 yang menggunakan siluet perabot rumah. Murid membaca ayat mudah berkait tentang katil dan lokasi seperti contoh projek.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membina siluet daripada kertas, memadankannya dengan dua ayat bersambung, lalu membentangkan secara berpasangan; projek ialah hasil murid sendiri.
+**Aktiviti 2 — Bina siluet dan bentangkan dua ayat:** Murid membina siluet daripada kertas, memadankannya dengan dua ayat bersambung, lalu membentangkan secara berpasangan; projek ialah hasil murid sendiri.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai bacaan dua ayat serta padanan siluet dengan perabot yang tepat.
 

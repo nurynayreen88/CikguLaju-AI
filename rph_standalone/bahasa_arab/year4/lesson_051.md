@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** أين الوسادة؟ الوسادة على السرير. أين المخزن؟ المخزن تحت السلم.
 **Objektif pembelajaran:** Murid dapat menyebut sekurang-kurangnya dua pasangan soal-jawab dengan sebutan serta intonasi yang sesuai.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid menyebut sekurang-kurangnya dua pasangan soal jawab dengan sebutan dan intonasi sesuai.
 
 **Set induksi:** Guru menyembunyikan gambar bantal dan bertanya أين الوسادة؟
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan soal-jawab lokasi objek rumah daripada Buku Teks halaman 97 termasuk atas katil dan di bawah tangga; murid meniru nada tanya dan jawab.
+**Aktiviti 1 — Ajuk nada soal jawab lokasi objek:** Guru memperdengarkan soal-jawab lokasi objek rumah daripada Buku Teks halaman 97 termasuk atas katil dan di bawah tangga; murid meniru nada tanya dan jawab.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan menggunakan pelan rumah dan kad objek untuk bertanya أين...؟ serta menjawab berdasarkan gambar.
+**Aktiviti 2 — Dialog أين berdasarkan pelan rumah:** Murid berpasangan menggunakan pelan rumah dan kad objek untuk bertanya أين...؟ serta menjawab berdasarkan gambar.
 
 **Pengukuhan / Penilaian (PBD):** Guru mencatat dua pasangan soal-jawab tepat dari segi sebutan, respons dan arah tempat.
 

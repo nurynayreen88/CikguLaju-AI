@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual sebenar.
 **Kosa kata / ayat:** غرفة النوم، صالة الضيوف، صالة الطعام، موقف السيارة
 **Objektif pembelajaran:** Murid dapat mengelaskan sekurang-kurangnya tiga daripada empat frasa ruang rumah yang didengar.
-**Kriteria kejayaan:** Ketepatan lisan/tulisan direkod mengikut sasaran objektif dan ditindaklanjut dengan pemulihan murid.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 3 daripada 4 frasa ruang rumah yang didengar.
 
 **Set induksi:** Guru memperdengarkan frasa غرفة النوم dan meminta murid menunjuk gambar bilik tidur.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membacakan empat frasa ruang rumah daripada latihan halaman 90. Murid mengangkat kad gambar dan membezakan ruang istirehat, makan serta tempat letak kereta.
+**Aktiviti 1 — Dengar empat frasa ruang rumah:** Guru membacakan empat frasa ruang rumah daripada latihan halaman 90. Murid mengangkat kad gambar dan membezakan ruang istirehat, makan serta tempat letak kereta.
 
-**Aktiviti 2 — Aplikasi murid:** Murid dalam kumpulan mengelaskan gambar ruang dalam/luar rumah mengikut frasa yang disebut guru, kemudian melafazkannya.
+**Aktiviti 2 — Kelaskan gambar ruang dalam dan luar:** Murid dalam kumpulan mengelaskan gambar ruang dalam/luar rumah mengikut frasa yang disebut guru, kemudian melafazkannya.
 
 **Pengukuhan / Penilaian (PBD):** Guru merekod sekurang-kurangnya tiga daripada empat gambar dan frasa dipadankan dengan betul.
 

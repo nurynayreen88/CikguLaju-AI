@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual waktu sebenar.
 **Kosa kata / ayat:** هذا ملعب، هذه مكتبة، هذا مطعم، هذه حديقة
 **Objektif pembelajaran:** Murid dapat mengelaskan sekurang-kurangnya tiga daripada empat frasa ke kategori yang tepat dan membacanya.
-**Kriteria kejayaan:** Murid menunjukkan bukti minimum penguasaan pada penilaian yang dinyatakan; intervensi dibuat bagi murid belum menguasai.
+**Kriteria kejayaan:** Murid mengelaskan sekurang-kurangnya 3 daripada 4 frasa dengan tepat dan membacanya.
 
 **Set induksi:** Guru menunjukkan kotak yang mengandungi gambar lokasi sekolah dan meminta murid meneka tujuan permainan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk projek صندوق ذكي pada Buku Teks h84, menerangkan langkah mengumpul kad tempat sekolah dan membacanya sebelum memasukkan dalam dua bahagian kotak.
+**Aktiviti 1 — Baca kad untuk kotak bijak:** Guru merujuk projek صندوق ذكي pada Buku Teks h84, menerangkan langkah mengumpul kad tempat sekolah dan membacanya sebelum memasukkan dalam dua bahagian kotak.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membina kotak dua ruang dan mengelaskan empat frasa هذا/هذه; kumpulan membentangkan pilihan menggunakan sebutan Arab yang jelas.
+**Aktiviti 2 — Kelaskan frasa هذا dan هذه dalam kotak:** Murid membina kotak dua ruang dan mengelaskan empat frasa هذا/هذه; kumpulan membentangkan pilihan menggunakan sebutan Arab yang jelas.
 
 **Pengukuhan / Penilaian (PBD):** Guru menyemak sekurang-kurangnya tiga daripada empat pengelasan dan bacaan lisan yang tepat.
 
