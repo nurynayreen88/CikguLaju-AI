@@ -7,7 +7,8 @@
   "status": "DALAM_SEMAKAN",
   "sources": {
     "textbook": "https://fliphtml5.com/gutjj/yqvr/Pendidikan_Seni_Kreatif_(Masalah_Pembelajaran)_Tahun_2/",
-    "dskp": "https://anyflip.com/wlcrm/hwuh/basic"
+    "dskp": "https://anyflip.com/wlcrm/hwuh/basic",
+    "dskp_audit": "https://asiemodel.net/wp-content/uploads/2022/08/028-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-SENI-KREATIF-TAHUN-2.pdf"
   },
   "notes": "Draf pedagogi asal; julat halaman ialah rujukan kelompok. Kod kosong sengaja tidak direka. Semak teks DSKP penuh, halaman individu, BA, audio jika berkaitan, agihan masa dan Word/PDF sebelum READY. V2 akuatik tidak membuktikan kemahiran dalam air.",
   "lessons": [
@@ -32,7 +33,8 @@
       "closure": "Tunjukkan satu kesan.",
       "assessment": "Rekod pencapaian: 3 kesan media kering dihasilkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 kesan media kering dihasilkan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "002",
@@ -55,7 +57,8 @@
       "closure": "Banding dua kesan.",
       "assessment": "Rekod pencapaian: 2 petak warna dihasilkan menggunakan berus. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 petak warna dihasilkan menggunakan berus",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "003",
@@ -79,7 +82,8 @@
       "closure": "Namakan dua media.",
       "assessment": "Rekod pencapaian: 1 karya menggunakan dua jenis media. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "1 karya menggunakan dua jenis media",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "004",
@@ -102,14 +106,19 @@
       "closure": "Tunjuk satu garisan.",
       "assessment": "Rekod pencapaian: 3 jenis garisan atau bentuk digunakan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 jenis garisan atau bentuk digunakan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "005",
       "unit": "V1",
       "textbook_page": "14–17",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "1.3.1"
+      ],
+      "sk": [
+        "1.3"
+      ],
       "title": "Menggambar objek pilihan",
       "objective": "1 gambar mempunyai sekurang-kurangnya 2 ciri dikenali",
       "success_criterion": "1 gambar mempunyai sekurang-kurangnya 2 ciri dikenali",
@@ -121,52 +130,70 @@
       "closure": "Ceritakan satu ciri.",
       "assessment": "Rekod pencapaian: 1 gambar mempunyai sekurang-kurangnya 2 ciri dikenali. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "1 gambar mempunyai sekurang-kurangnya 2 ciri dikenali",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "006",
       "unit": "V1",
       "textbook_page": "18–25",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "1.4.2"
+      ],
+      "sk": [
+        "1.4"
+      ],
       "title": "Mewarna kawasan gambar",
-      "objective": "3 kawasan diwarnakan mengikut pilihan",
-      "success_criterion": "3 kawasan diwarnakan mengikut pilihan",
+      "objective": "3 kawasan diwarnakan dengan sekurang-kurangnya 1 warna primer dan 1 warna sekunder",
+      "success_criterion": "3 kawasan diwarnakan dengan sekurang-kurangnya 1 warna primer dan 1 warna sekunder",
       "materials": "Krayon, lakaran besar",
       "induction": "Pilih dua warna.",
-      "guided": "Guru modelkan sapuan terkawal dalam ruang luas.",
-      "practice": "Murid warna tiga kawasan dan pilih kemasan.",
+      "guided": "Guru kenalkan warna primer dan sekunder serta tunjuk cara mewarna gambar.",
+      "practice": "Murid mewarna tiga kawasan menggunakan sekurang-kurangnya satu warna primer dan satu warna sekunder.",
       "support": "Gunakan sempadan tebal dan alat mudah genggam.",
       "closure": "Pamerkan hasil.",
-      "assessment": "Rekod pencapaian: 3 kawasan diwarnakan mengikut pilihan. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "3 kawasan diwarnakan mengikut pilihan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "assessment": "Rekod pencapaian: 3 kawasan diwarnakan dengan sekurang-kurangnya 1 warna primer dan 1 warna sekunder. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "3 kawasan diwarnakan dengan sekurang-kurangnya 1 warna primer dan 1 warna sekunder",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "007",
       "unit": "V2",
       "textbook_page": "27–30",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "2.1.2"
+      ],
+      "sk": [
+        "2.1"
+      ],
       "title": "Corak tidak terancang",
       "objective": "1 corak mengandungi 3 kesan bebas",
       "success_criterion": "1 corak mengandungi 3 kesan bebas",
-      "materials": "Cat tidak toksik, span, kertas",
-      "induction": "Tunjukkan kesan span.",
-      "guided": "Guru demonstrasi cap atau sapuan bebas.",
-      "practice": "Murid buat tiga kesan tanpa susunan tetap.",
-      "support": "Gunakan span besar dan alas meja.",
+      "materials": "Cat tidak toksik, berus, pipet, alas meja",
+      "induction": "Tunjuk kesan percikan dan renjisan yang telah kering.",
+      "guided": "Guru tunjuk percikan dan renjisan terkawal ke arah kertas, jauh daripada muka.",
+      "practice": "Murid menghasilkan tiga kesan percikan atau renjisan bebas.",
+      "support": "Gunakan berus besar dan alas; guru bantu jika murid belum dapat mengawal alat.",
       "closure": "Pilih kesan menarik.",
       "assessment": "Rekod pencapaian: 1 corak mengandungi 3 kesan bebas. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "1 corak mengandungi 3 kesan bebas",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "008",
       "unit": "V2",
       "textbook_page": "31–37",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "2.2.3"
+      ],
+      "sk": [
+        "2.2"
+      ],
       "title": "Corak terancang",
       "objective": "3 ulangan motif dihasilkan",
       "success_criterion": "3 ulangan motif dihasilkan",
@@ -178,14 +205,20 @@
       "closure": "Tunjuk bahagian ulangan.",
       "assessment": "Rekod pencapaian: 3 ulangan motif dihasilkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 ulangan motif dihasilkan",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "009",
       "unit": "V2",
       "textbook_page": "38–40",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "2.3.2"
+      ],
+      "sk": [
+        "2.3"
+      ],
       "title": "Projek corak dan rekaan",
       "objective": "1 rekaan dihias dengan motif berulang",
       "success_criterion": "1 rekaan dihias dengan motif berulang",
@@ -197,14 +230,21 @@
       "closure": "Pamerkan karya.",
       "assessment": "Rekod pencapaian: 1 rekaan dihias dengan motif berulang. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "1 rekaan dihias dengan motif berulang",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "010",
       "unit": "V3",
       "textbook_page": "42–47",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sk": [
+        "3.1"
+      ],
       "title": "Topeng muka mudah",
       "objective": "1 topeng model mempunyai 3 ciri muka",
       "success_criterion": "1 topeng model mempunyai 3 ciri muka",
@@ -216,7 +256,9 @@
       "closure": "Tunjukkan karya tanpa menutup penglihatan.",
       "assessment": "Rekod pencapaian: 1 topeng model mempunyai 3 ciri muka. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "1 topeng model mempunyai 3 ciri muka",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "011",
@@ -229,17 +271,18 @@
         "4.1"
       ],
       "title": "Rekaan corak batik",
-      "objective": "1 corak motif dan latar diwarnakan",
-      "success_criterion": "1 corak motif dan latar diwarnakan",
+      "objective": "1 corak batik kertas dihasilkan dengan kesan resis yang kelihatan",
+      "success_criterion": "1 corak batik kertas dihasilkan dengan kesan resis yang kelihatan",
       "materials": "Kertas, krayon, cat air",
       "induction": "Lihat contoh motif batik.",
-      "guided": "Guru tunjuk lakaran motif dan warna latar tanpa lilin panas.",
-      "practice": "Murid hasilkan rekaan di atas kertas dan pilih warna latar.",
+      "guided": "Guru modelkan teknik resis menggunakan krayon lilin pada kertas, kemudian sapuan cat air.",
+      "practice": "Murid melukis motif krayon dan menyapu cat air untuk menghasilkan kesan resis.",
       "support": "Gunakan stensil besar dan cat tidak toksik.",
       "closure": "Kenal motif sendiri.",
-      "assessment": "Rekod pencapaian: 1 corak motif dan latar diwarnakan. Catat jenis bantuan dan adaptasi.",
-      "reflection_criterion": "1 corak motif dan latar diwarnakan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "assessment": "Rekod pencapaian: 1 corak batik kertas dihasilkan dengan kesan resis yang kelihatan. Catat bantuan dan adaptasi.",
+      "reflection_criterion": "1 corak batik kertas dihasilkan dengan kesan resis yang kelihatan",
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "component": "Pendidikan Seni Visual"
     },
     {
       "pdp": "012",
@@ -262,7 +305,8 @@
       "closure": "Pilih gerakan kegemaran.",
       "assessment": "Rekod pencapaian: 3 respons gerakan mengikut isyarat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 respons gerakan mengikut isyarat",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "013",
@@ -285,7 +329,8 @@
       "closure": "Tunjuk kad lambat.",
       "assessment": "Rekod pencapaian: 3 daripada 4 gerakan sepadan dengan tempo lambat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 daripada 4 gerakan sepadan dengan tempo lambat",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "014",
@@ -308,7 +353,8 @@
       "closure": "Pilih satu tempo.",
       "assessment": "Rekod pencapaian: 3/4 pertukaran tempo direspons tepat. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 pertukaran tempo direspons tepat",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "015",
@@ -331,7 +377,8 @@
       "closure": "Rehat dengan pernafasan biasa.",
       "assessment": "Rekod pencapaian: 2 latihan pernafasan selesa dilakukan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 latihan pernafasan selesa dilakukan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "016",
@@ -354,7 +401,8 @@
       "closure": "Pilih kad dinamik.",
       "assessment": "Rekod pencapaian: 3/4 respons dinamik sepadan dengan cue. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 respons dinamik sepadan dengan cue",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "017",
@@ -377,7 +425,8 @@
       "closure": "Pilih satu corak.",
       "assessment": "Rekod pencapaian: 3 corak bunyi badan dihasilkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 corak bunyi badan dihasilkan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "018",
@@ -400,7 +449,8 @@
       "closure": "Simpan alat.",
       "assessment": "Rekod pencapaian: 2 bunyi daripada alatan selamat dihasilkan. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 bunyi daripada alatan selamat dihasilkan",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "019",
@@ -423,7 +473,8 @@
       "closure": "Tunjuk ikon corak akhir.",
       "assessment": "Rekod pencapaian: 3/4 corak gabungan ditiru. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3/4 corak gabungan ditiru",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "020",
@@ -446,14 +497,19 @@
       "closure": "Kongsi respons pilihan.",
       "assessment": "Rekod pencapaian: 2 respons perasaan terhadap dua petikan muzik diberi. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "2 respons perasaan terhadap dua petikan muzik diberi",
-      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP",
+      "component": "Pendidikan Muzik"
     },
     {
       "pdp": "021",
       "unit": "M4",
       "textbook_page": "90–96",
-      "sp": [],
-      "sk": [],
+      "sp": [
+        "4.2.2"
+      ],
+      "sk": [
+        "4.2"
+      ],
       "title": "Gerakan mengikut irama lagu",
       "objective": "3 perubahan gerakan dibuat mengikut cue",
       "success_criterion": "3 perubahan gerakan dibuat mengikut cue",
@@ -465,7 +521,11 @@
       "closure": "Sejukkan tangan dan pilih gerakan.",
       "assessment": "Rekod pencapaian: 3 perubahan gerakan dibuat mengikut cue. Catat jenis bantuan dan adaptasi.",
       "reflection_criterion": "3 perubahan gerakan dibuat mengikut cue",
-      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+      "status": "KOD_DSKP_DIPADANKAN_DRAF",
+      "source_note": "Padanan kod DSKP dan fokus pedagogi; halaman BT dan huraian rasmi penuh masih perlu semakan.",
+      "component": "Pendidikan Muzik"
     }
-  ]
+  ],
+  "audit_round": "2026-11-26: semakan kod sasaran, bukan kelulusan penuh",
+  "audit_remaining": "Semakan penuh semua SP lama, halaman BT/BA dan agihan masa diperlukan sebelum penerbitan."
 }
