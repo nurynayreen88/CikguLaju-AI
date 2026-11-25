@@ -9,15 +9,15 @@
 
 **Objektif:** Menghasilkan satu iringan alat perkusi mengikut tempo berdasarkan skor dengan dua daripada tiga kriteria tepat.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **WARNA WARNI KEK CAWAN**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi:** Guru menunjukkan dua corak iringan Kek Cawan Comel. Murid menepuk detik tetap.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperlihatkan skor iringan dalam buku dan membahagi murid kepada dua kumpulan corak perkusi.
+**Aktiviti 1 — Latihan skor perkusi:** Guru memperlihatkan skor iringan dalam buku dan membahagi murid kepada dua kumpulan corak perkusi.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid berlatih corak secara berasingan, kemudian menggabungkan dua iringan dengan isyarat mula/henti dan tempo lagu.
+**Aktiviti 2 — Gabungan dua iringan:** Murid berlatih corak secara berasingan, kemudian menggabungkan dua iringan dengan isyarat mula/henti dan tempo lagu.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan pola, tempo dan kerjasama semasa persembahan kecil.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup:** Kedua-dua kumpulan memainkan iringan pada tempo seragam dan berhenti mengikut isyarat guru.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
