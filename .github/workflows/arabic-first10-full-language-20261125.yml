@@ -1,0 +1,67 @@
+name: Arabic 178 full-language Word and A4 QA
+on:
+  pull_request:
+    paths:
+      - 'rph_standalone/bahasa_arab/year[456]/**'
+      - 'tools/arabic_178_draft_shared_layout_20261124.py'
+      - 'web/telegram_provisional_arab_music_api.py'
+      - 'audits/arabic_draft_y4_y6_sp_candidate_bank_20261124.json'
+      - 'tools/qa_arabic_full_standards_20261125.py'
+      - 'audits/arabic_draft_y4_sk_visual_candidates_20261125.json'
+      - 'audits/arabic_draft_y5_y6_sk_text_candidates_20261125.json'
+      - 'audits/arabic_language_first10_20261125.json'
+      - 'tools/qa_arabic_language_first10_20261125.py'
+      - '.github/workflows/arabic-first10-full-language-20261125.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  batch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx pymupdf flask reportlab pypdf
+      - name: Generate full SK/SP candidates offline
+        run: python -m tools.qa_arabic_language_first10_20261125
+      - name: Install native PDF converter and Arabic font
+        run: |
+          timeout 240 sudo apt-get update
+          timeout 1200 sudo apt-get -o Acquire::Retries=3 install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri
+      - name: Convert all 178 Word candidates and check A4
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          import fitz
+          out=Path("qa-arabic-full-standards").resolve()
+          files=sorted(out.glob("*.docx"))
+          assert len(files)==178
+          pdf=out/"pdf"
+          pdf.mkdir()
+          for start in range(0,len(files),24):
+              subprocess.run(["libreoffice","-env:UserInstallation="+(out/f"lo-{start}").as_uri(),"--headless","--convert-to","pdf","--outdir",str(pdf),*map(str,files[start:start+24])],check=True,timeout=180)
+          errors=[]
+          for f in files:
+              p=pdf/(f.stem+".pdf")
+              if not p.exists():
+                  errors.append((f.name,"missing"))
+                  continue
+              with fitz.open(p) as d:
+                  if len(d)!=1 or abs(d[0].rect.width-595.28)>2 or abs(d[0].rect.height-841.89)>2 or not d[0].get_text().strip():
+                      errors.append((f.name,"A4/page/text",len(d)))
+          print("A4 screen",178-len(errors),"/178",errors)
+          assert not errors
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arabic-178-full-language-review
+          path: |
+            qa-arabic-full-standards/*.docx
+            qa-arabic-full-standards/*.json
+            qa-arabic-full-standards/pdf/*.pdf
+          retention-days: 7
