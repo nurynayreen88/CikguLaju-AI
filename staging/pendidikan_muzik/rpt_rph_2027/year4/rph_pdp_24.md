@@ -12,9 +12,9 @@
 
 **Set induksi (4 minit):** Guru menepuk pola soalan empat detik, kemudian murid membalas satu pola jawapan secara berpasangan; guru mengaitkan respons itu dengan ciptaan melodi.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperkenalkan Contoh Soalan dan dua pilihan Contoh Jawapan pada skor buku m/s 82–83.
+**Aktiviti 1 — Teroka Soalan dan Jawapan Muzik (8 minit):** Guru memperkenalkan Contoh Soalan dan dua pilihan Contoh Jawapan pada skor buku m/s 82–83.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid mencipta corak irama dengan empat kad notasi, menepuk corak serta menghasilkan melodi soalan-jawapan menggunakan not B, A dan G. Pasangan mempersembahkan dan guru menilai ketepatan detik serta pic.
+**Aktiviti 2 — Cipta Corak Irama dan Melodi Jawapan (10 minit):** Murid mencipta corak irama dengan empat kad notasi, menepuk corak serta menghasilkan melodi soalan-jawapan menggunakan not B, A dan G. Pasangan mempersembahkan dan guru menilai ketepatan detik serta pic.
 
 **Pengukuhan dan pentaksiran (6 minit):** Setiap pasangan mempersembahkan satu soalan dan jawapan melodi B/A/G; guru merekod tiga aspek, iaitu ketepatan detik, pic dan respons pasangan.
 

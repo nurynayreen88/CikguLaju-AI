@@ -9,15 +9,15 @@
 
 **Objektif:** Memainkan not D’ dengan penjarian dan ton yang betul serta mencuba satu frasa kaunter pendek.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **HELO, HELO APA KHABAR?**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru menunjukkan penjarian D’ secara senyap; murid meniru kedudukan jari sebelum mencuba satu bunyi terkawal.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru membimbing demonstrasi penjarian D’ dan latihan rekoder bertahap seperti buku m/s 78–79.
+**Aktiviti 1 — Latih Penjarian dan Ton D’ (8 minit):** Guru membimbing demonstrasi penjarian D’ dan latihan rekoder bertahap seperti buku m/s 78–79.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid dibahagi kepada melodi utama dan kaunter; kedua-dua kumpulan berlatih secara berasingan sebelum digabungkan.
+**Aktiviti 2 — Gabung Melodi Utama dan Kaunter (10 minit):** Murid dibahagi kepada melodi utama dan kaunter; kedua-dua kumpulan berlatih secara berasingan sebelum digabungkan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak penjarian D’, ton, masa masuk dan tempo ensembel.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menunjukkan penjarian D’ dan memainkan satu frasa kaunter pendek; guru merekod penjarian, ton dan masa masuk.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

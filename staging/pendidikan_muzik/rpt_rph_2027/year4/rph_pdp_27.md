@@ -13,9 +13,9 @@
 
 **Set Induksi — 4 minit:** Guru menyemak tata tertib persembahan serta menyediakan ruang untuk setiap kumpulan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan melakukan pemanasan suara dan alat secara ringkas dan menyemak pembahagian tugas sebelum mengikut giliran persembahan.
+**Aktiviti 1 — Pemanasan dan Persediaan Persembahan (8 minit):** Kumpulan melakukan pemanasan suara dan alat secara ringkas dan menyemak pembahagian tugas sebelum mengikut giliran persembahan.
 
-**Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit):** Murid mempersembahkan lagu atau persembahan muzikal yang dirancang. Rakan menilai tiga kriteria—tempo, kerjasama dan kreativiti—kemudian guru membimbing ulasan terhadap persembahan.
+**Aktiviti 2 — Persembahan Muzikal dan Apresiasi Rakan (10 minit):** Murid mempersembahkan lagu atau persembahan muzikal yang dirancang. Rakan menilai tiga kriteria—tempo, kerjasama dan kreativiti—kemudian guru membimbing ulasan terhadap persembahan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Rubrik tiga item: ketepatan persembahan, pelibatan semua ahli dan komen apresiasi; guru mengisi rekod PBD.
 

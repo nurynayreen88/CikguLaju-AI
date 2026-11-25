@@ -13,9 +13,9 @@
 
 **Set Induksi — 4 minit:** Guru memperkenalkan Projek Kesenian Penggal Dua dan memperdengarkan sebahagian daripada audio projek sebelum murid memilih bahan persembahan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan memilih bahan persembahan yang sesuai untuk Unit 6–10 (atau lagu contoh Ayahku Sayang jika bahan sah tersedia) dan menetapkan ketua, penyanyi, pemain alat serta penggerak mengikut kepakaran.
+**Aktiviti 1 — Pilih Lagu dan Agih Peranan (8 minit):** Kumpulan memilih bahan persembahan yang sesuai untuk Unit 6–10 (atau lagu contoh Ayahku Sayang jika bahan sah tersedia) dan menetapkan ketua, penyanyi, pemain alat serta penggerak mengikut kepakaran.
 
-**Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit):** Murid mengisi senarai semak persediaan persembahan muzikal halaman 54–55, mengatur jadual latihan, menyenaraikan alat serta merancang giliran kelompok.
+**Aktiviti 2 — Bina Jadual Latihan dan Senarai Alat (10 minit):** Murid mengisi senarai semak persediaan persembahan muzikal halaman 54–55, mengatur jadual latihan, menyenaraikan alat serta merancang giliran kelompok.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak ketepatan pelan: pilihan lagu yang jelas, pembahagian tugas, jadual, kelengkapan alat dan keselamatan.
 

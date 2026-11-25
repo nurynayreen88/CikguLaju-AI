@@ -9,15 +9,15 @@
 
 **Objektif:** Mempersembahkan dua bahagian lagu pusingan secara berkumpulan dengan masuk pada bar yang ditetapkan.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **KOTA CERIA**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru menyanyikan frasa pembuka Tapak Sulaiman; murid meneliti bar masuk suara kedua pada skor sebelum mencuba secara berkumpulan.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memodelkan suara 1 dan suara 2 daripada skor lagu pusingan Tapak Sulaiman.
+**Aktiviti 1 — Teroka Suara 1 dan Suara 2 (8 minit):** Guru memodelkan suara 1 dan suara 2 daripada skor lagu pusingan Tapak Sulaiman.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menyanyi berasingan mengikut kumpulan, kemudian suara 2 masuk pada bar yang ditandakan dalam buku m/s 94–95.
+**Aktiviti 2 — Nyanyian Pusingan Mengikut Bar (10 minit):** Murid menyanyi berasingan mengikut kumpulan, kemudian suara 2 masuk pada bar yang ditandakan dalam buku m/s 94–95.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan masuk, kelancaran nyanyian dan kerjasama antara dua suara.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Dua kumpulan menyanyikan lagu pusingan dengan suara kedua masuk pada bar yang ditetapkan; guru merekod masa masuk dan kelancaran.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 

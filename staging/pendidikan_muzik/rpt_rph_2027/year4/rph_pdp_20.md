@@ -9,15 +9,15 @@
 
 **Objektif:** Memainkan corak irama mudah menggunakan tepukan/perkusi badan pada dua tempo berbeza.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **INDAHNYA DASAR LAUT**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru menepuk pola yang sama pada dua kelajuan; murid menunjukkan tempo cepat atau lambat tanpa mengubah pola.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru membandingkan nyanyian Tapak Sulaiman pada tempo cepat dan lambat; murid mengenal perbezaannya.
+**Aktiviti 1 — Banding Tempo Cepat dan Lambat (8 minit):** Guru membandingkan nyanyian Tapak Sulaiman pada tempo cepat dan lambat; murid mengenal perbezaannya.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menggunakan tepukan dan hentakan terkawal untuk mengiringi lagu dalam dua kumpulan tempo yang dipilih.
+**Aktiviti 2 — Tepukan dan Hentakan Dua Tempo (10 minit):** Murid menggunakan tepukan dan hentakan terkawal untuk mengiringi lagu dalam dua kumpulan tempo yang dipilih.
 
 **Pengukuhan dan pentaksiran (6 minit):** Nilai ketepatan masuk, detik dan perubahan tempo.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid memainkan semula satu pola pada kedua-dua tempo; guru merekod ketepatan pola dan perubahan kelajuan.
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
