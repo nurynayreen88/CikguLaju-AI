@@ -1,6 +1,6 @@
 {
   "status": "QA_ONLY_NOT_FOR_RUNTIME",
-  "note": "Eight proposed objective and activity patches. Original objective remains intact for comparison. Separate from activity-only renderer; requires native objective+activity validation and visual academic review before release.",
+  "note": "Nine objective and activity patches, original objectives preserved for comparison. Native objective+activity validation and academic visual review required.",
   "records": [
     {
       "id": 1641,
@@ -256,6 +256,38 @@
         "1.5.4"
       ],
       "source_evidence": "T5 textbook 2020 printed pp24–27 SP1.5.3/1.5.4 explicitly al-Asr and personal character; DSKP p23.",
+      "status": "OBJECTIVE_AND_ACTIVITY_QA_NOT_READY"
+    },
+    {
+      "id": 1735,
+      "year": 5,
+      "pdp": 49,
+      "unit": "Al-Quran",
+      "original_objective": "موريد داڤت :\n١. مڠنل ڤستي كلمة دان ڤوتوڠن اية يڠ مڠاندوڠي باچاءن مد عوض دڠن بتول.\n٢. مڠاڤليكاسيكن باچاءن مد بدل دڠن بتول دان برتجويد دالم ڤمباچاءن القرءان.",
+      "corrected_objective": "موريد داڤت :\n١. مڠنل ڤستي كلمة دان ڤوتوڠن اية يڠ مڠاندوڠي باچاءن مد عوض دڠن بتول.\n٢. مڠاڤليكاسيكن باچاءن مد عوض دڠن بتول دان برتجويد دالم ڤمباچاءن القرءان.",
+      "original_source_note": "1. ڤنرڠن قاعدة حكوم مد عوض دان ݢورو مثنارايكنث دهادڤن كلس. 2. لاتيه توبي مڠنل ڤستي كلمة دان ڤوتوڠن اية يڠ مڠاندوڠي باچاءن مد عوض. 3. لاتيه توبي ممباچ كلمة دان ڤوتوڠن اية يڠ مڠندوڠي حكوم مد ب عوض. (shoulder partner) 4. اكتيۏيتي مڠلواركن حكوم مد بدل درڤد سورة ترتنتو دالم القرءان. (gallery walk)",
+      "activities": [
+        [
+          "اولڠ کاجي مد عوض",
+          "ݢورو منرڠکن قاعده مد عوض. موريد منونجوق چونتوه تنوين فتحه يڠ دباچ دڠن مد کتيک وقف."
+        ],
+        [
+          "لاتيهن باچاءن کتيک وقف",
+          "موريد ممباچ کلمة دان ڤوتوڠن اية مد عوض برڤاسڠن دان مڽمق باچاءن راکن."
+        ],
+        [
+          "اڤليکاسي مد عوض",
+          "موريد منچاري چونتوه مد عوض دالم اية ڤيليهن دان ممباچڽ. ݢورو منيلاي کبتولن تجويد."
+        ]
+      ],
+      "sk_codes": [
+        "1.6"
+      ],
+      "sp_codes": [
+        "1.6.3",
+        "1.6.4"
+      ],
+      "source_evidence": "Original Rozayus RPT T5 SK 2026 (Drive 1LfsnR2HNyMlDT7aHVzsrH2MVNaMPbg9v), week 15, SP1.6.3 explicitly specifies Mad Iwad; first objective and steps 1–3 corroborate it. DSKP printed pp24–25. Original objective 2 and activity 4 incorrectly name Mad Badal. Visual/Jawi approval pending.",
       "status": "OBJECTIVE_AND_ACTIVITY_QA_NOT_READY"
     }
   ]
