@@ -9,22 +9,22 @@
 
 **Objektif pembelajaran (draf boleh ukur):** Menyanyikan satu rangkap Kad Ucapan Hari Lahirku dengan pic dan tempo tepat dalam dua percubaan.
 
-**Kriteria kejayaan:** Murid boleh menunjukkan kemahiran khusus yang diterangkan dalam objektif dengan bimbingan guru dan dinilai melalui senarai semak aktiviti.
+**Kriteria kejayaan:** Murid menyanyikan satu rangkap Kad Ucapan Hari Lahirku dengan pic dan tempo tepat dalam dua percubaan.
 
 **Set Induksi — 4 minit**  
 Guru memulakan ucapan hari lahir berirama dan latihan suara ringkas.
 
-**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+**Aktiviti 1 — Ajuk frasa hari lahir**  
 Guru membimbing murid mengajuk frasa Kad Ucapan Hari Lahirku pada halaman 62–63 baris demi baris.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit)**  
+**Aktiviti 2 — Nyanyian rangkap**  
 Murid menyanyikan rangkap dalam kumpulan kecil, membandingkan pic dan sebutan, lalu mencuba semula dengan bimbingan.
 
 **Pengukuhan & Penilaian — 6 minit**  
 Senarai semak ketepatan pic, tempo dan sebutan semasa dua percubaan nyanyian.
 
 **Penutup — 2 minit**  
-Murid menjelaskan satu kemahiran yang diperbaiki; guru merekod pemerhatian dan mengatur latihan pemulihan bagi murid yang belum menguasai kemahiran.
+Murid menyanyikan semula frasa yang tersasar pic; guru memberi maklum balas.
 
 **Bahan:** Skor guru buku halaman 62–63, kad frasa, alat penentu detik.  
 **Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018, halaman 62–63, sumber teks https://anyflip.com/lcinm/flxx/basic/51-100. Kod dicetak dalam buku Kesenian: 2.2.2; kod RPT Muzik tidak dinormalisasikan secara automatik. Nombor audio tercetak 54–57; **tiada fail audio sebenar disahkan atau dipasang ke Telegram**.
