@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - "tools/audit_pi_active_activity_quality_20261125.py"
+      - "tools/test_pi_editorial_bulk_20261125.py"
+      - "web/pi_editorial_bulk_20261125.py"
       - "tools/render_pi_editorial_batch01_20261125.py"
       - "staging/pendidikan_islam/active_activity_editorial_batch*_20261125.json"
       - "staging/pendidikan_islam/active_activity_source_registry_20261125.json"
@@ -57,3 +59,18 @@ jobs:
           path: qa/pi-editorial-batch01/*
           if-no-files-found: warn
           retention-days: 7
+
+  bulk-integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bash build_jawi.sh
+      - name: Check all eligible bulk records against native runtime state
+        env:
+          CIKGULAJU_WEB_NATIVE_RPH_ENABLED: '0'
+          PYTHONUNBUFFERED: '1'
+        run: python -m tools.test_pi_editorial_bulk_20261125
