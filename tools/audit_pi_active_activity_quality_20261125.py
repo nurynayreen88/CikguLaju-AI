@@ -132,6 +132,8 @@ def main():
                     "topic":row.get("topic"),**m,"candidate_available":proposed is not None}
                 identity={"year":year,"pdp":row["sequence_no"],"id":row["id"],"unit":unit}
                 objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
+                if row["id"] in {1387,1391,1445,1735,1832,1836,1840,1942,1946,1950}:
+                    print("PI_HOLD_EXACT_SOURCE",json.dumps({**identity,"objective":rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"),"source_note":row["activity_note"],"sk_codes":state.get("grouped_sk_codes",[]),"sp_codes":state.get("grouped_sp_codes",[]),"topic":row.get("topic"),"raw_objective_fields":{k:v for k,v in row.items() if "objective" in k.lower()}},ensure_ascii=False),flush=True)
                 if unit=="Al-Quran":
                     verse_review.append({**identity,"objective":objective,**inspect_verse_ranges(objective),"ready":False})
                 if row["id"] in wave1:
