@@ -6,6 +6,8 @@ from staging.ppki.catalog import (
     SUBJECT, YEAR, YEARS, catalog, lesson_filename, options, selected_lesson,
 )
 from staging.ppki.subject_inventory import subject_inventory
+from staging.ppki.subject_release_catalog import subject_options, approved_selection
+from staging.ppki.render_approved_subject import render_approved_lesson
 from staging.ppki.render_pengurusan_kehidupan import render_lesson
 from staging.ppki.rpt import render_rpt
 from web.native_rph_telegram_api import MIMES
@@ -35,7 +37,13 @@ def create_ppki_blueprint():
             year = requested_year()
         except ValueError:
             return jsonify({"error": "Unexpected query parameters"}), 400
-        return jsonify({"year": year, "subjects": subject_inventory(year)})
+        entries = subject_inventory(year)
+        for entry in entries:
+            if entry["value"] != SUBJECT:
+                entry["catalog_connected"] = subject_options(year, entry["value"])["available"]
+                if entry["catalog_connected"]:
+                    entry["status"] = "catalog_connected"
+        return jsonify({"year": year, "subjects": entries})
 
     @bp.get("/catalog")
     def ppki_catalog():
@@ -44,6 +52,20 @@ def create_ppki_blueprint():
         except ValueError:
             return jsonify({"error": "Unexpected query parameters"}), 400
         return jsonify(options(year))
+
+    @bp.get("/subject-catalog")
+    def ppki_subject_catalog():
+        if set(request.args) != {"year", "subject"} or any(len(request.args.getlist(k)) != 1 for k in request.args):
+            return jsonify({"error": "Invalid PPKI query"}), 400
+        value, subject = request.args["year"], request.args["subject"]
+        if value not in {str(y) for y in YEARS}:
+            return jsonify({"error": "Invalid PPKI year"}), 400
+        year = int(value)
+        if subject not in {e["value"] for e in subject_inventory(year)}:
+            return jsonify({"error": "Invalid PPKI subject"}), 400
+        if subject == SUBJECT:
+            return jsonify(options(year))
+        return jsonify(subject_options(year, subject))
 
     def requested_year():
         if not request.args:
@@ -67,11 +89,30 @@ def create_ppki_blueprint():
         teacher = data["teacher"]
         if (not isinstance(selection, dict) or set(selection) != {"year", "subject", "unit", "lesson"}
                 or type(selection["year"]) is not int or selection["year"] not in YEARS
-                or selection["subject"] != SUBJECT or fmt not in FORMATS):
+                or not isinstance(selection["subject"], str) or fmt not in FORMATS):
             return jsonify({"error": "Invalid PPKI selection"}), 400
         year, unit = selection["year"], selection["unit"]
         if not isinstance(unit, str):
             return jsonify({"error": "Invalid PPKI unit"}), 400
+        subject = selection["subject"]
+        if subject not in {e["value"] for e in subject_inventory(year)}:
+            return jsonify({"error": "Invalid PPKI subject"}), 400
+        if not isinstance(selection["lesson"], str):
+            return jsonify({"error": "Invalid PPKI PdP"}), 400
+        if subject != SUBJECT:
+            pair = approved_selection(year, subject, unit, selection["lesson"])
+            if pair is None:
+                return jsonify({"error": "PPKI PdP unavailable"}), 404
+            try:
+                _teacher_metadata(teacher, subject)
+            except (ValueError, TypeError):
+                return jsonify({"error": "Invalid teacher metadata"}), 400
+            bank, lesson = pair
+            extension = "docx" if fmt == "word" else "pdf"
+            body = render_approved_lesson(bank, lesson, extension, teacher)
+            response = Response(body, mimetype=MIMES[fmt])
+            response.headers["Content-Disposition"] = f'attachment; filename="CIKGULAJU_RPH_{subject}_TAHUN_{year}_{lesson["pdp"]}.{extension}"'
+            return response
         lesson = selected_lesson(unit, selection["lesson"], year=year)
         if lesson is None:
             return jsonify({"error": "PPKI PdP unavailable"}), 404
