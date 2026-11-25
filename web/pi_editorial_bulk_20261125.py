@@ -34,6 +34,8 @@ def load_catalog():
     holds.difference_update((1641,1735,1940,1944,1948,1952,1956,1387,1391,1473,1727,1731,1475,1479,1495,1543,1547,1611,1615,1747,1811,1619))
     # Four remaining Year 2 lessons, original DSKP pp27/45 and textbook pp37/38/56/59.
     holds.difference_update((1276,1277,1279,1280))
+    # Final source-verified wave (7); retain two T6 ambiguous recitation ranges.
+    holds.difference_update((1445,1533,1669,1599,1627,1751,1815))
     lookup={}
     for item in items.values():
         if item["id"] in holds:
@@ -64,6 +66,9 @@ def apply(state,rows,catalog):
             notes.add(norm(master.get("_pi_original_rpt_activity_note_20261125")))
     objective=norm(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
     matches=[catalog[(int(year.group(1)),int(pdp),note,objective)] for note in notes if note and (int(year.group(1)),int(pdp),note,objective) in catalog]
+    if not matches:
+        # The final document formatter may already contain the corrected objective.
+        matches=[item for (y,p,n,o),item in catalog.items() if y==int(year.group(1)) and p==int(pdp) and n in notes and item.get("corrected_objective") and norm(item["corrected_objective"])==objective]
     if len(matches)!=1 or "AKTIVITI UTAMA" not in rows:
         return rows
     item=matches[0]
@@ -72,7 +77,16 @@ def apply(state,rows,catalog):
         # Change the displayed objective only for the exact original source match.
         # SK/SP identifiers and source database remain unchanged.
         if item.get("corrected_sk_text"):
-            return rows
+            codes=[norm(x) for x in state.get("grouped_sk_codes",[])]
+            if codes!=item["sk_codes"] or len(codes)!=1:
+                return rows
+            code=codes[0]
+            known={norm(item["original_sk_text"]),norm(item["corrected_sk_text"])}
+            known |= {code+" "+value for value in known}
+            sk_keys=[key for key,value in rows.items() if norm(value) in known]
+            if len(sk_keys)!=1:
+                return rows
+            updated[sk_keys[0]]=jawi_display_digits(item["corrected_sk_text"])
         if [norm(x) for x in state.get("grouped_sp_codes",[])] != [norm(x) for x in item.get("sp_codes",[])]:
             return rows
         objective_key="OBJEKTIF PEMBELAJARAN" if "OBJEKTIF PEMBELAJARAN" in rows else "OBJEKTIF"
@@ -129,7 +143,7 @@ def install(runtime):
             result=previous_document(state,rows,*args,**kwargs)
             # A second pass only for the four explicit SP corrections, since the
             # final document formatter can rebuild standards from source state.
-            if norm(state.get("year"))=="Tahun 2" and norm(state.get("pdp_no") or state.get("lesson_no")) in ("2","3","5","6"):
+            if (norm(state.get("year"))=="Tahun 2" and norm(state.get("pdp_no") or state.get("lesson_no")) in ("2","3","5","6")) or (norm(state.get("year"))=="Tahun 5" and norm(state.get("pdp_no") or state.get("lesson_no")) in ("65","129")):
                 return apply(state,result,catalog)
             return result
         runtime._rph_document_rows=document_wrapper
