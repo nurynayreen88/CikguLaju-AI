@@ -72,7 +72,7 @@ def main():
     # The full 698-record baseline already passed run 45534515175.
     # This incremental pass targets only the seven newly revised source reviews.
     records=[x for x in records if x.get("final_review_fields")]
-    assert len(records)==7
+    assert len(records)==8
     payload={"records":records}
     original=runtime._rph_rows
     original_document=getattr(runtime,"_rph_document_rows",None)

@@ -32,6 +32,8 @@ def load_catalog():
     holds.update((1276,1277,1279,1280))
     # Second wave: explicit source-backed corrections; ambiguous sequence and SK changes stay held.
     holds.difference_update((1641,1735,1940,1944,1948,1952,1956,1387,1391,1473,1727,1731,1475,1479,1495,1543,1547,1611,1615,1747,1811,1619))
+    # Four remaining Year 2 lessons, original DSKP pp27/45 and textbook pp37/38/56/59.
+    holds.difference_update((1276,1277,1279,1280))
     lookup={}
     for item in items.values():
         if item["id"] in holds:
@@ -81,7 +83,24 @@ def apply(state,rows,catalog):
             updated["REFLEKSI"]=jawi_display_digits(item["corrected_auto_reflection"])
     updated["AKTIVITI UTAMA"]=jawi_display_digits("\n".join(f"اکتيۏيتي {i} - {title}\n1. {body}" for i,(title,body) in enumerate(item["activities"],1)))
     fields=item.get("final_review_fields")
-    if fields and not fields.get("sp_text_proposal"):
+    if fields:
+        proposals=fields.get("sp_text_proposal") or {}
+        if proposals:
+            codes=[norm(x) for x in state.get("grouped_sp_codes",[])]
+            texts=state.get("grouped_sp_texts",[])
+            if not set(proposals).issubset(codes) or len(codes)!=len(texts):
+                return rows
+            # Preserve the exact code sequence; only the verified descriptions change.
+            lines=[]
+            for code,description in zip(codes,texts):
+                description=proposals.get(code,str(description or "").strip())
+                if norm(description).startswith(code+" "):
+                    lines.append(description)
+                else:
+                    lines.append(code+" "+description)
+            if "STANDARD PEMBELAJARAN" not in rows:
+                return rows
+            updated["STANDARD PEMBELAJARAN"]=jawi_display_digits("\n".join(lines))
         for key,field in (("KRITERIA KEJAYAAN","criterion"),("PENTAKSIRAN","assessment")):
             if key in rows:
                 updated[key]=jawi_display_digits(fields[field])
@@ -103,10 +122,23 @@ def install(runtime):
     def wrapper(state,*args,**kwargs):
         return apply(state,old(state,*args,**kwargs),catalog)
     runtime._rph_rows=wrapper
+    previous_document=getattr(runtime,"_rph_document_rows",None)
+    if callable(previous_document):
+        @wraps(previous_document)
+        def document_wrapper(state,rows,*args,**kwargs):
+            result=previous_document(state,rows,*args,**kwargs)
+            # A second pass only for the four explicit SP corrections, since the
+            # final document formatter can rebuild standards from source state.
+            if norm(state.get("year"))=="Tahun 2" and norm(state.get("pdp_no") or state.get("lesson_no")) in ("2","3","5","6"):
+                return apply(state,result,catalog)
+            return result
+        runtime._rph_document_rows=document_wrapper
     renderer=getattr(runtime,"_create_rph_word",None)
     globals_=getattr(renderer,"__globals__",None)
     if isinstance(globals_,dict) and globals_ is not vars(runtime) and globals_.get("_rph_rows") is old:
         globals_["_rph_rows"]=wrapper
+    if isinstance(globals_,dict) and globals_ is not vars(runtime) and callable(previous_document) and globals_.get("_rph_document_rows") is previous_document:
+        globals_["_rph_document_rows"]=runtime._rph_document_rows
     runtime._CIKGULAJU_PI_EDITORIAL_BULK=True
     print("PI editorial bulk candidate count:",len(catalog),flush=True)
     return True
