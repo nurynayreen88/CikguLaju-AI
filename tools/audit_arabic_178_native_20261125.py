@@ -19,7 +19,7 @@ def norm(s):
     return " ".join(str(s or "").casefold().split())
 
 def main():
-    os.environ.update(BOT_TOKEN="",GEMINI_API_KEY="",CIKGULAJU_AUTHORITATIVE_API_TOKEN="t"*40",CIKGULAJU_WEB_NATIVE_RPH_ENABLED="1")
+    os.environ.update(BOT_TOKEN="",GEMINI_API_KEY="",CIKGULAJU_AUTHORITATIVE_API_TOKEN="t"*40,CIKGULAJU_WEB_NATIVE_RPH_ENABLED="1")
     import requests
     def deny(*a,**k):
         raise AssertionError("network prohibited")
