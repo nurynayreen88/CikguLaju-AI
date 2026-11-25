@@ -13,9 +13,9 @@
 
 **Set Induksi — 4 minit:** Guru menyemak etika masuk persembahan, kesiapsiagaan alat dan kedudukan murid dengan ruang selamat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid menyemak audio dan alat bagi lagu pilihan Unit 1–5. Ketua memberi isyarat mula dan henti semasa latihan akhir.
+**Aktiviti 1 — Latihan akhir persembahan:** Murid menyemak audio dan alat bagi lagu pilihan Unit 1–5. Ketua memberi isyarat mula dan henti semasa latihan akhir.
 
-**Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit):** Kumpulan mempersembahkan lagu pilihan Unit 1–5 mengikut giliran, rakan mencatat satu kelebihan dan satu cadangan penambahbaikan. Murid mengemas peralatan dan ruang selepas aktiviti.
+**Aktiviti 2 — Persembahan dan apresiasi rakan:** Kumpulan mempersembahkan lagu pilihan Unit 1–5 mengikut giliran, rakan mencatat satu kelebihan dan satu cadangan penambahbaikan. Murid mengemas peralatan dan ruang selepas aktiviti.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak tempo, kerjasama, etika persembahan dan dua ulasan apresiasi berasaskan pemerhatian.
 
