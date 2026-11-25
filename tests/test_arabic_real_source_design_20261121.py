@@ -15,7 +15,7 @@ from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_TABLE_DIRECTION
 import fitz
 
-from web.arabic_rph_word import render_arabic_word
+from web.arabic_rph_word import render_arabic_word, _automatic_reflection
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,7 +23,7 @@ SOURCE = ROOT / "rph_standalone" / "bahasa_arab"
 TEXT_KEYS = (
     "topic", "focus", "content_standard", "learning_standard",
     "objective", "success", "induction", "activity_1", "activity_2",
-    "assessment", "closure", "materials", "reflection",
+    "assessment", "closure", "materials",
 )
 PDF_SAMPLES = tuple((year, lesson) for year in (2, 3) for lesson in range(1, 61))
 
@@ -37,8 +37,8 @@ def _plan(year, lesson):
 
 def _render(plan):
     data = BytesIO()
-    # Empty *teacher* fields must remain empty; source reflection remains
-    # unchanged, including a manual-fill template in existing source data.
+    # Empty teacher fields remain empty; generic automatic reflection uses
+    # the exact source success criterion without altering the plan.
     render_arabic_word(plan, ("", "", "", "", None), "", data)
     return data.getvalue()
 
@@ -64,6 +64,9 @@ def _assert_design_and_source(raw, plan):
     )
     for field in TEXT_KEYS:
         assert plan[field] in displayed, (plan["year"], plan["lesson"], field)
+    assert doc.tables[3].cell(2, 1).text == _automatic_reflection(plan)
+    if _automatic_reflection(plan) != plan["reflection"]:
+        assert plan["success"].strip() in doc.tables[3].cell(2, 1).text
     for standard in ("sk", "sp"):
         assert plan[standard] in displayed
     assert "الصف" in header.cell(0, 0).text
@@ -93,6 +96,16 @@ def test_all_120_real_reviewed_arabic_lessons_keep_source_and_outer_grid():
             _assert_design_and_source(_render(plan), plan)
             total += 1
     assert total == 120
+
+
+def test_manual_and_source_specific_reflection_are_preserved():
+    plan = _plan(2, 2)
+    assert plan["success"] in _automatic_reflection(plan)
+    original = "تأمّل خاص بالدرس."
+    assert _automatic_reflection({**plan, "reflection": original}) == original
+    output = BytesIO()
+    render_arabic_word(plan, ("", "", "", "", None), "Catatan guru.", output)
+    assert Document(output).tables[3].cell(2, 1).text == "Catatan guru."
 
 
 def test_all_120_real_arabic_lessons_word_to_pdf_a4(tmp_path):
