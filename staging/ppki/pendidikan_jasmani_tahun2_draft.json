@@ -1,0 +1,544 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Pendidikan Jasmani",
+  "subject_id": "PENDIDIKAN_JASMANI_PPKI",
+  "status": "DALAM_SEMAKAN",
+  "sources": {
+    "textbook": "https://fliphtml5.com/vdvtp/bsfc/Pendidikan_Jasmani_(Masalah_Pembelajaran)_Tahun_2/",
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/027-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENDIDIKAN-JASMANI-TAHUN-2.pdf"
+  },
+  "notes": "Draf pedagogi asal; julat halaman ialah rujukan kelompok. Kod kosong sengaja tidak direka. Semak teks DSKP penuh, halaman individu, BA, audio jika berkaitan, agihan masa dan Word/PDF sebelum READY. V2 akuatik tidak membuktikan kemahiran dalam air.",
+  "lessons": [
+    {
+      "pdp": "001",
+      "unit": "1",
+      "textbook_page": "2–3",
+      "sp": [
+        "1.1.1",
+        "2.1.1",
+        "5.1.1"
+      ],
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.1"
+      ],
+      "title": "Langkah kecil dan besar",
+      "objective": "3/4 laluan ditempuh mengikut arahan",
+      "success_criterion": "3/4 laluan ditempuh mengikut arahan",
+      "materials": "Kon, penanda tapak, permukaan rata",
+      "induction": "Panaskan badan dengan gerakan ringan.",
+      "guided": "Guru modelkan langkah pendek dan panjang di trek selamat.",
+      "practice": "Murid ikut empat arahan laluan dan berhenti pada isyarat.",
+      "support": "Alat mobiliti atau sokongan individu; jarak disesuaikan.",
+      "closure": "Sejukkan badan dan kenal permukaan.",
+      "assessment": "Rekod pencapaian: 3/4 laluan ditempuh mengikut arahan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 laluan ditempuh mengikut arahan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "002",
+      "unit": "1",
+      "textbook_page": "4–5",
+      "sp": [
+        "1.1.1",
+        "2.1.1",
+        "5.1.1"
+      ],
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.1"
+      ],
+      "title": "Berjalan dalam air cetek",
+      "objective": "2 laluan pendek dilalui dengan sokongan sesuai",
+      "success_criterion": "2 laluan pendek dilalui dengan sokongan sesuai",
+      "materials": "Kolam cetek, palang, petugas penyelamat",
+      "induction": "Semak kesediaan dan peraturan kolam.",
+      "guided": "Guru kompeten demonstrasi berjalan hadapan dan sisi.",
+      "practice": "Murid bergerak seorang demi seorang dengan pengawasan dekat.",
+      "support": "Alternatif tanpa kolam: laluan kering dan simulasi arah; bukan bukti kemahiran air.",
+      "closure": "Keluar secara tertib dan bersihkan diri.",
+      "assessment": "Rekod pencapaian: 2 laluan pendek dilalui dengan sokongan sesuai. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 laluan pendek dilalui dengan sokongan sesuai",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "003",
+      "unit": "1",
+      "textbook_page": "6–9",
+      "sp": [
+        "1.1.1",
+        "2.1.1",
+        "5.1.1"
+      ],
+      "sk": [
+        "1.1",
+        "2.1",
+        "5.1"
+      ],
+      "title": "Berjalan pelbagai permukaan",
+      "objective": "3/4 laluan selamat dilalui",
+      "success_criterion": "3/4 laluan selamat dilalui",
+      "materials": "Tikar tekstur rata, baton lembut",
+      "induction": "Kenal tekstur dengan tangan jika sesuai.",
+      "guided": "Guru modelkan langkah stabil di trek adaptif.",
+      "practice": "Murid lalu empat trek pendek dan serahkan baton.",
+      "support": "Elakkan batu tajam, permukaan licin atau berjalan tanpa kasut jika tidak sesuai.",
+      "closure": "Sejukkan badan dan pilih permukaan.",
+      "assessment": "Rekod pencapaian: 3/4 laluan selamat dilalui. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 laluan selamat dilalui",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "004",
+      "unit": "2",
+      "textbook_page": "12–13",
+      "sp": [
+        "1.2.1",
+        "2.2.1",
+        "5.1.2"
+      ],
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.1"
+      ],
+      "title": "Ayunan tangan dan gerak berirama",
+      "objective": "3 gerakan statik dilakukan",
+      "success_criterion": "3 gerakan statik dilakukan",
+      "materials": "Kad gerak, isyarat tempo",
+      "induction": "Gerakkan bahu ringan.",
+      "guided": "Guru tunjuk ayun tangan dalam ruang peribadi.",
+      "practice": "Murid ikut tiga gerakan pada isyarat tempo.",
+      "support": "Pilihan duduk dan tempo perlahan.",
+      "closure": "Kenal pasti satu gerakan.",
+      "assessment": "Rekod pencapaian: 3 gerakan statik dilakukan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3 gerakan statik dilakukan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "005",
+      "unit": "2",
+      "textbook_page": "14–15",
+      "sp": [
+        "1.2.1",
+        "2.2.1",
+        "5.1.2"
+      ],
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.1"
+      ],
+      "title": "Mengilas dan memusing",
+      "objective": "3/4 gerakan kiri atau kanan tepat",
+      "success_criterion": "3/4 gerakan kiri atau kanan tepat",
+      "materials": "Bola lembut, penanda ruang",
+      "induction": "Semak jarak rakan.",
+      "guided": "Guru modelkan kilas ringan tanpa memaksa sendi.",
+      "practice": "Pasangan hantar bola pada empat arah terkawal.",
+      "support": "Guna bola ringan dan julat gerakan selesa.",
+      "closure": "Sejukkan badan.",
+      "assessment": "Rekod pencapaian: 3/4 gerakan kiri atau kanan tepat. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 gerakan kiri atau kanan tepat",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "006",
+      "unit": "2",
+      "textbook_page": "16–18",
+      "sp": [
+        "1.2.1",
+        "2.2.1",
+        "5.1.2"
+      ],
+      "sk": [
+        "1.2",
+        "2.2",
+        "5.1"
+      ],
+      "title": "Gerak statik dalam rutin",
+      "objective": "3 jenis gerakan dikenal dan ditunjukkan",
+      "success_criterion": "3 jenis gerakan dikenal dan ditunjukkan",
+      "materials": "Tali lembut, gelung ringan, kad",
+      "induction": "Lihat tiga kad gerak.",
+      "guided": "Guru tunjuk mengayun, mengilas dan memusing menggunakan alatan selamat.",
+      "practice": "Murid pilih tiga stesen dan demonstrasi gerakan.",
+      "support": "Gunakan versi tanpa alatan atau duduk.",
+      "closure": "Padankan kad gerak.",
+      "assessment": "Rekod pencapaian: 3 jenis gerakan dikenal dan ditunjukkan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3 jenis gerakan dikenal dan ditunjukkan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "007",
+      "unit": "3",
+      "textbook_page": "20",
+      "sp": [
+        "1.3.1",
+        "2.3.1",
+        "2.3.3",
+        "5.1.3"
+      ],
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.1"
+      ],
+      "title": "Baling ke sasaran",
+      "objective": "3/5 balingan sampai kawasan sasaran",
+      "success_criterion": "3/5 balingan sampai kawasan sasaran",
+      "materials": "Pundi lembut, bakul",
+      "induction": "Panaskan tangan.",
+      "guided": "Guru modelkan pandang sasaran dan baling bawah tangan.",
+      "practice": "Murid baling lima kali dari jarak sesuai.",
+      "support": "Dekatkan sasaran dan besarkan bakul.",
+      "closure": "Kutip alatan dengan arahan.",
+      "assessment": "Rekod pencapaian: 3/5 balingan sampai kawasan sasaran. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/5 balingan sampai kawasan sasaran",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "008",
+      "unit": "3",
+      "textbook_page": "21",
+      "sp": [
+        "1.3.2",
+        "2.3.1",
+        "2.3.2",
+        "5.1.3"
+      ],
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.1"
+      ],
+      "title": "Golek bola",
+      "objective": "3/5 golekan sampai sasaran",
+      "success_criterion": "3/5 golekan sampai sasaran",
+      "materials": "Bola lembut, lorong kon",
+      "induction": "Tunjuk bola bergolek.",
+      "guided": "Guru modelkan golekan dekat lantai.",
+      "practice": "Murid golek lima bola melalui lorong.",
+      "support": "Lebarkan lorong dan guna posisi duduk.",
+      "closure": "Sejukkan tangan.",
+      "assessment": "Rekod pencapaian: 3/5 golekan sampai sasaran. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/5 golekan sampai sasaran",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "009",
+      "unit": "3",
+      "textbook_page": "22",
+      "sp": [
+        "1.3.3",
+        "2.3.1",
+        "2.3.2",
+        "2.3.3",
+        "5.1.3"
+      ],
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.1"
+      ],
+      "title": "Tendang bola",
+      "objective": "3/5 tendangan menuju sasaran",
+      "success_criterion": "3/5 tendangan menuju sasaran",
+      "materials": "Bola lembut, kon",
+      "induction": "Panaskan kaki mengikut kemampuan.",
+      "guided": "Guru modelkan kaki sokongan dan sentuhan terkawal.",
+      "practice": "Murid tendang lima bola ke gawang lebar.",
+      "support": "Bola pegun dan jarak dekat; alternatif gerak kaki sesuai kemampuan.",
+      "closure": "Simpan bola.",
+      "assessment": "Rekod pencapaian: 3/5 tendangan menuju sasaran. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/5 tendangan menuju sasaran",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "010",
+      "unit": "3",
+      "textbook_page": "23",
+      "sp": [
+        "1.3.4",
+        "2.3.1",
+        "2.3.2",
+        "2.3.3",
+        "5.1.3"
+      ],
+      "sk": [
+        "1.3",
+        "2.3",
+        "5.1"
+      ],
+      "title": "Menangkap objek lembut",
+      "objective": "3/5 objek ditangkap atau dikawal",
+      "success_criterion": "3/5 objek ditangkap atau dikawal",
+      "materials": "Bola kain, pundi lembut",
+      "induction": "Tunjuk posisi tangan sedia.",
+      "guided": "Guru demonstrasi menangkap dan membawa objek ke dada.",
+      "practice": "Murid menangkap lima hantaran perlahan dari guru.",
+      "support": "Gunakan objek besar ringan dan jarak dekat.",
+      "closure": "Kemas alat.",
+      "assessment": "Rekod pencapaian: 3/5 objek ditangkap atau dikawal. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/5 objek ditangkap atau dikawal",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "011",
+      "unit": "3",
+      "textbook_page": "24–26",
+      "sp": [
+        "1.3.1",
+        "1.3.2",
+        "1.3.3",
+        "1.3.4",
+        "5.1.3"
+      ],
+      "sk": [
+        "1.3",
+        "5.1"
+      ],
+      "title": "Litar manipulasi alatan",
+      "objective": "3/4 stesen diselesaikan dengan teknik sasaran",
+      "success_criterion": "3/4 stesen diselesaikan dengan teknik sasaran",
+      "materials": "Empat stesen bola lembut",
+      "induction": "Semak isyarat berhenti.",
+      "guided": "Guru tunjuk peraturan setiap stesen.",
+      "practice": "Murid bergilir membaling, menggolek, menendang dan menangkap; rekod berasingan.",
+      "support": "Kurangkan jarak dan beri rehat.",
+      "closure": "Refleksi stesen pilihan.",
+      "assessment": "Rekod pencapaian: 3/4 stesen diselesaikan dengan teknik sasaran. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3/4 stesen diselesaikan dengan teknik sasaran",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "012",
+      "unit": "4",
+      "textbook_page": "28–31",
+      "sp": [
+        "1.4.1",
+        "2.4.1",
+        "5.1.1",
+        "5.1.2"
+      ],
+      "sk": [
+        "1.4",
+        "2.4",
+        "5.1"
+      ],
+      "title": "Keyakinan dan pergerakan di kolam",
+      "objective": "2 tindakan keyakinan air dilakukan mengikut kesediaan",
+      "success_criterion": "2 tindakan keyakinan air dilakukan mengikut kesediaan",
+      "materials": "Kolam cetek, petugas penyelamat",
+      "induction": "Semak akses dan kesediaan individu.",
+      "guided": "Guru kompeten bimbing masuk dan keluar selamat.",
+      "practice": "Murid cuba dua tindakan air dengan pengawasan dekat, tanpa paksaan.",
+      "support": "V2 tanpa kolam: latihan peraturan masuk keluar dan simulasi kering; bukan penguasaan air.",
+      "closure": "Keluar dengan bantuan dan berehat.",
+      "assessment": "Rekod pencapaian: 2 tindakan keyakinan air dilakukan mengikut kesediaan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 tindakan keyakinan air dilakukan mengikut kesediaan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "013",
+      "unit": "4",
+      "textbook_page": "32–34",
+      "sp": [
+        "1.4.2",
+        "2.4.1",
+        "5.1.1",
+        "5.1.2"
+      ],
+      "sk": [
+        "1.4",
+        "2.4",
+        "5.1"
+      ],
+      "title": "Bobbing berpandu",
+      "objective": "Percubaan bobbing terkawal direkod mengikut kesediaan",
+      "success_criterion": "Percubaan bobbing terkawal direkod mengikut kesediaan",
+      "materials": "Kolam cetek, guru akuatik, penyelamat",
+      "induction": "Semak prasyarat keyakinan air dan kesihatan.",
+      "guided": "Guru kompeten demonstrasi teknik dalam keadaan terkawal.",
+      "practice": "Murid yang bersedia sahaja mencuba dengan pengawasan individu; berhenti jika tidak selesa.",
+      "support": "V2 tanpa kolam: latihan sedar pernafasan normal dan kad keselamatan, tanpa tahan nafas; bukan evidens bobbing.",
+      "closure": "Keluar, rehat dan rekod pencapaian sebenar.",
+      "assessment": "Rekod pencapaian: Percubaan bobbing terkawal direkod mengikut kesediaan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "Percubaan bobbing terkawal direkod mengikut kesediaan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "014",
+      "unit": "5",
+      "textbook_page": "36–37",
+      "sp": [
+        "1.5.1",
+        "2.5.1",
+        "5.2.1"
+      ],
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.2"
+      ],
+      "title": "Permainan tradisional adaptif",
+      "objective": "2 giliran permainan diselesaikan mengikut peraturan",
+      "success_criterion": "2 giliran permainan diselesaikan mengikut peraturan",
+      "materials": "Petak lantai, pundi lembut",
+      "induction": "Kenal petak permainan.",
+      "guided": "Guru tunjuk ketingting adaptif atau melangkah dalam petak.",
+      "practice": "Murid laksana dua giliran dengan pilihan gerakan.",
+      "support": "Guna petak meja untuk murid yang tidak sesuai melompat; rekod adaptasi.",
+      "closure": "Ucap penghargaan kepada rakan.",
+      "assessment": "Rekod pencapaian: 2 giliran permainan diselesaikan mengikut peraturan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 giliran permainan diselesaikan mengikut peraturan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "015",
+      "unit": "5",
+      "textbook_page": "38–40",
+      "sp": [
+        "1.5.1",
+        "2.5.2",
+        "5.2.1",
+        "5.2.2"
+      ],
+      "sk": [
+        "1.5",
+        "2.5",
+        "5.2"
+      ],
+      "title": "Permainan susun blok berkumpulan",
+      "objective": "2 tugas giliran diselesaikan",
+      "success_criterion": "2 tugas giliran diselesaikan",
+      "materials": "Blok besar, penanda lorong",
+      "induction": "Tunjuk bentuk sasaran.",
+      "guided": "Guru terangkan giliran dan sempadan lorong.",
+      "practice": "Kumpulan susun blok selepas bergerak atau menggunakan versi meja.",
+      "support": "Jarak pendek dan tiada perlumbaan wajib.",
+      "closure": "Kemas blok bersama.",
+      "assessment": "Rekod pencapaian: 2 tugas giliran diselesaikan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 tugas giliran diselesaikan",
+      "status": "PADANAN_BT_PERLU_AUDIT_DSKP"
+    },
+    {
+      "pdp": "016",
+      "unit": "6",
+      "textbook_page": "42–44",
+      "sp": [],
+      "sk": [],
+      "title": "Stesen kecergasan dan regangan",
+      "objective": "3 gerakan ringan dilakukan mengikut kemampuan",
+      "success_criterion": "3 gerakan ringan dilakukan mengikut kemampuan",
+      "materials": "Tikar, kon, kad gerak",
+      "induction": "Panaskan badan perlahan.",
+      "guided": "Guru demonstrasi tiga gerakan tanpa paksaan sendi.",
+      "practice": "Murid ikut stesen dan berehat apabila perlu.",
+      "support": "Pilihan duduk dan intensiti individu.",
+      "closure": "Sejukkan badan.",
+      "assessment": "Rekod pencapaian: 3 gerakan ringan dilakukan mengikut kemampuan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3 gerakan ringan dilakukan mengikut kemampuan",
+      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+    },
+    {
+      "pdp": "017",
+      "unit": "6",
+      "textbook_page": "46–50",
+      "sp": [],
+      "sk": [],
+      "title": "Permainan otot dan rehat",
+      "objective": "2 gerakan dan 1 rutin rehat ditunjukkan",
+      "success_criterion": "2 gerakan dan 1 rutin rehat ditunjukkan",
+      "materials": "Bola ringan, kad rehat",
+      "induction": "Tunjukkan kad aktif dan rehat.",
+      "guided": "Guru modelkan gerakan terkawal berselang rehat.",
+      "practice": "Murid buat dua gerakan mengikut kemampuan dan pilih masa rehat.",
+      "support": "Hentikan jika sakit atau letih luar biasa.",
+      "closure": "Minum air dan rehat.",
+      "assessment": "Rekod pencapaian: 2 gerakan dan 1 rutin rehat ditunjukkan. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 gerakan dan 1 rutin rehat ditunjukkan",
+      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+    },
+    {
+      "pdp": "018",
+      "unit": "7",
+      "textbook_page": "52–54",
+      "sp": [],
+      "sk": [],
+      "title": "Aktiviti daya tahan ringan",
+      "objective": "2 pusingan aktiviti diselesaikan pada intensiti sesuai",
+      "success_criterion": "2 pusingan aktiviti diselesaikan pada intensiti sesuai",
+      "materials": "Kon, kad isyarat",
+      "induction": "Kenal tanda berhenti.",
+      "guided": "Guru modelkan berjalan atau gerak duduk berterusan ringan.",
+      "practice": "Murid laksana dua pusingan pendek dan perhatikan perubahan pernafasan.",
+      "support": "Tiada sasaran kelajuan; ikut keadaan kesihatan.",
+      "closure": "Sejukkan badan dan nyatakan rasa.",
+      "assessment": "Rekod pencapaian: 2 pusingan aktiviti diselesaikan pada intensiti sesuai. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 pusingan aktiviti diselesaikan pada intensiti sesuai",
+      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+    },
+    {
+      "pdp": "019",
+      "unit": "7",
+      "textbook_page": "56–58",
+      "sp": [],
+      "sk": [],
+      "title": "Litar berhalangan adaptif",
+      "objective": "3 stesen dilalui dengan selamat",
+      "success_criterion": "3 stesen dilalui dengan selamat",
+      "materials": "Kon, garisan lantai, objek rendah",
+      "induction": "Semak laluan bebas halangan bahaya.",
+      "guided": "Guru tunjuk cara melalui stesen dengan pilihan akses.",
+      "practice": "Murid ikut tiga stesen secara individu.",
+      "support": "Elakkan lompatan atau halangan tinggi jika tidak sesuai.",
+      "closure": "Rekod stesen yang dikuasai.",
+      "assessment": "Rekod pencapaian: 3 stesen dilalui dengan selamat. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "3 stesen dilalui dengan selamat",
+      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+    },
+    {
+      "pdp": "020",
+      "unit": "8",
+      "textbook_page": "60–63",
+      "sp": [],
+      "sk": [],
+      "title": "Ukur tinggi dan berat secara berhemah",
+      "objective": "2 alat ukuran dikenal pasti",
+      "success_criterion": "2 alat ukuran dikenal pasti",
+      "materials": "Pita ukuran, penimbang, model",
+      "induction": "Lihat dua alat ukuran.",
+      "guided": "Guru tunjuk penggunaan alat dengan model tanpa membandingkan tubuh murid.",
+      "practice": "Murid pilih alat bagi dua tugasan dan bantu mengukur model.",
+      "support": "Data sebenar murid hanya secara sulit dan sukarela.",
+      "closure": "Padankan alat dengan fungsi.",
+      "assessment": "Rekod pencapaian: 2 alat ukuran dikenal pasti. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 alat ukuran dikenal pasti",
+      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+    },
+    {
+      "pdp": "021",
+      "unit": "8",
+      "textbook_page": "64–65",
+      "sp": [],
+      "sk": [],
+      "title": "Carta pertumbuhan diri",
+      "objective": "2 maklumat ukuran contoh direkod dengan betul",
+      "success_criterion": "2 maklumat ukuran contoh direkod dengan betul",
+      "materials": "Carta kosong, data contoh rekaan",
+      "induction": "Lihat carta tanpa nama.",
+      "guided": "Guru modelkan memasukkan angka contoh.",
+      "practice": "Murid isi dua nilai daripada kad rekaan dan semak unit.",
+      "support": "Kad angka besar dan petak label.",
+      "closure": "Tunjuk lokasi catatan pada carta.",
+      "assessment": "Rekod pencapaian: 2 maklumat ukuran contoh direkod dengan betul. Catat jenis bantuan dan adaptasi.",
+      "reflection_criterion": "2 maklumat ukuran contoh direkod dengan betul",
+      "status": "KOD_SK_SP_BELUM_DISAHKAN"
+    }
+  ]
+}
