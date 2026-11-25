@@ -9,13 +9,13 @@
 
 **Objektif:** Mempersembahkan projek boneka muzik selama satu segmen ringkas serta memberikan satu ulasan kreativiti dan kerjasama.
 
-**Kriteria kejayaan:** Murid melaksanakan tugas projek dengan sekurang-kurangnya tiga daripada empat item senarai semak guru.
+**Kriteria kejayaan:** Murid mempersembahkan satu segmen boneka muzikal dan memberi satu ulasan kreativiti serta kerjasama.
 
 **Set Induksi — 4 minit:** Guru menyemak kesediaan alat, peranan, kerjasama serta etika projek.
 
-**Aktiviti 1 — Perancangan dan demonstrasi (8 minit):** Murid membuat latihan akhir bahagian nyanyian, boneka dan iringan serta memeriksa keselamatan props seperti cadangan halaman 49.
+**Aktiviti 1 — Persediaan akhir boneka:** Murid membuat latihan akhir bahagian nyanyian, boneka dan iringan serta memeriksa keselamatan props seperti cadangan halaman 49.
 
-**Aktiviti 2 — Latihan atau persembahan (10 minit):** Kumpulan mempersembahkan boneka muzikal menggunakan pilihan Unit 6–10; kumpulan lain menilai kreativiti, tempo, kerjasama dan etika, kemudian memberikan satu ulasan membina.
+**Aktiviti 2 — Persembahan boneka muzikal:** Kumpulan mempersembahkan boneka muzikal menggunakan pilihan Unit 6–10; kumpulan lain menilai kreativiti, tempo, kerjasama dan etika, kemudian memberikan satu ulasan membina.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai pelibatan setiap murid, tempo, peranan kumpulan dan kreativiti persembahan atau hasil rancangan menggunakan borang penilaian.
 
