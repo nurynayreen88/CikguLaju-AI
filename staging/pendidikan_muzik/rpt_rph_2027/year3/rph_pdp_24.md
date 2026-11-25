@@ -9,13 +9,13 @@
 
 **Objektif:** Merancang persembahan boneka muzik bertema persahabatan daripada Unit 6–10 dengan pemilihan lagu dan peranan empat ahli.
 
-**Kriteria kejayaan:** Murid melaksanakan tugas projek dengan sekurang-kurangnya tiga daripada empat item senarai semak guru.
+**Kriteria kejayaan:** Murid memilih lagu dan mengagihkan empat peranan serta menyediakan rancangan latihan.
 
 **Set Induksi — 4 minit:** Guru menyemak kesediaan alat, peranan, kerjasama serta etika projek.
 
-**Aktiviti 1 — Perancangan dan demonstrasi (8 minit):** Guru memperkenalkan konsep persembahan boneka pada halaman 48–49 dan tajuk lagu Kau Sahabatku; murid membahagikan peranan penyanyi, pemain iringan, penggerak boneka dan ketua.
+**Aktiviti 1 — Agih peranan boneka:** Guru memperkenalkan konsep persembahan boneka pada halaman 48–49 dan tajuk lagu Kau Sahabatku; murid membahagikan peranan penyanyi, pemain iringan, penggerak boneka dan ketua.
 
-**Aktiviti 2 — Latihan atau persembahan (10 minit):** Kumpulan memilih satu frasa lagu daripada sumber guru yang sah, menyusun prop boneka sedia ada serta membina jadual latihan mengikut tugasan.
+**Aktiviti 2 — Rancangan latihan Kau Sahabatku:** Kumpulan memilih satu frasa lagu daripada sumber guru yang sah, menyusun prop boneka sedia ada serta membina jadual latihan mengikut tugasan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Guru menilai pelibatan setiap murid, tempo, peranan kumpulan dan kreativiti persembahan atau hasil rancangan menggunakan borang penilaian.
 
