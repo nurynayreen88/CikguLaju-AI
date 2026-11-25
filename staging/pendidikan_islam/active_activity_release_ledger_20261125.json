@@ -290,11 +290,15 @@
   },
   "dskp_review": "Public PDF text and prior Drive text-layer code candidates consulted; screenshot tool returned cache miss. Exact active SK/SP and original DSKP visual confirmation still needed.",
   "latest_verified_structural_ci": {
-    "run": 45528744516,
+    "run": 45534515175,
+    "commit": "2bc7495cabb959c98b47a33b42163a5183baa983",
     "conclusion": "success",
-    "draft_count": 686,
+    "draft_count": 698,
+    "unique_ids": 698,
     "objective_corrections_rendered": 14,
-    "note": "Native Word/PDF test confirmed 686 unique IDs, all 14 objective patches, one A4 page per PDF, non-target Word cells unchanged. Academic and visual approval remain pending."
+    "native_pdf_one_a4_count": 698,
+    "non_target_word_layout_identical": true,
+    "note": "All 698 actual render records verified in completed job log 138937704535. Academic/visual approval and production integration remain separate."
   },
   "staged_unique_verified": 698,
   "staged_year_counts": {
@@ -328,7 +332,7 @@
       ]
     },
     "commit": "a07fc8ae200619dfac2a845f9bee19b6316ae003",
-    "status": "QA_RENDER_PENDING"
+    "status": "NATIVE_STRUCTURAL_CI_PASS"
   },
   "cross_batch_audit": {
     "run": 45529019665,
@@ -356,7 +360,7 @@
   "manual_source_hold_count": 31,
   "latest_render_blocker": {
     "status": "RESOLVED_STRUCTURAL_CI",
-    "run": 45523576114
+    "run": 45534515175
   },
   "manual_source_hold_draft_count": 31,
   "manual_source_hold_release_approved_count": 0,
