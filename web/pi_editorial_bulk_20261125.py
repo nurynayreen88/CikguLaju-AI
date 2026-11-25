@@ -36,6 +36,9 @@ def load_catalog():
     holds.difference_update((1276,1277,1279,1280))
     # Final source-verified wave (7); retain two T6 ambiguous recitation ranges.
     holds.difference_update((1445,1533,1669,1599,1627,1751,1815))
+    # Editorial sequence correction: T6 PdP6 and 116; adjacent verified RPT ranges
+    # and mushaf boundaries support these proposed lesson allocations.
+    holds.difference_update((1836,1946))
     lookup={}
     for item in items.values():
         if item["id"] in holds:

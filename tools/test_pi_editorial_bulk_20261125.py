@@ -53,11 +53,11 @@ def main():
             counts[item["year"]]+=1
         print("PI_BULK_INTEGRATION",dict(counts),"total",sum(counts.values()),"catalog",len(catalog),flush=True)
         assert not failures, failures
-        assert sum(counts.values())==len(catalog)==696
+        assert sum(counts.values())==len(catalog)==698
         os.environ["CIKGULAJU_PI_EDITORIAL_BULK"]="1"
         assert install(runtime)
         for item in catalog.values():
-            if item["id"] not in (1445,1533,1669,1599,1627,1751,1815):
+            if item["id"] not in (1445,1533,1669,1599,1627,1751,1815,1836,1946):
                 continue
             state=_native_state(runtime,{"year":item["year"],"subject":"PI","unit":item["unit"],"lesson":item["id"]},{"class":"","date":"","time":"","students":"","reflection":""})
             native=_native_text(runtime,state)
