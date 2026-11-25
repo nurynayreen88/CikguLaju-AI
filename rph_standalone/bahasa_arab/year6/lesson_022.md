@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** طَيَّار، رَسَّام، مُحَاسِب، جُنْدِيّ، مُهَنْدِسَة
 **Objektif pembelajaran:** Mengenal lima kerjaya daripada kad gambar tanpa bantuan guru.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid mengenal lima kerjaya daripada kad gambar tanpa bantuan guru.
 
 **Set induksi:** Guru memaparkan beberapa kad profesion secara pantas.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing peraturan permainan memori daripada aktiviti h41 dan melatih sebutan perkataan yang kurang dikuasai.
+**Aktiviti 1 — Latih sebutan untuk permainan memori:** Guru membimbing peraturan permainan memori daripada aktiviti h41 dan melatih sebutan perkataan yang kurang dikuasai.
 
-**Aktiviti 2 — Aplikasi murid:** Murid bermain mengingat urutan kad kerjaya bersama kumpulan, membaca kata apabila kad diterbalikkan.
+**Aktiviti 2 — Permainan ingat kad kerjaya:** Murid bermain mengingat urutan kad kerjaya bersama kumpulan, membaca kata apabila kad diterbalikkan.
 
 **Pengukuhan / Penilaian (PBD):** Lima padanan gambar-kata dan tiga bacaan spontan dinilai.
 

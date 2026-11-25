@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** مُمَرِّضَة، مُحَاضِر، شُرْطِيّ، تَاجِرَة، مُحَامِيَة
 **Objektif pembelajaran:** Menulis tiga profesion dan mengelaskan dua pasangan bentuk gender.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid menulis tiga profesion dan mengelaskan dua pasangan bentuk gender dengan tepat.
 
 **Set induksi:** Guru menunjukkan jadual kosong kategori pekerjaan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing latihan penulisan dan pemilihan bentuk muzakkar-muannath pada h42.
+**Aktiviti 1 — Kenal bentuk muzakkar dan muannath:** Guru membimbing latihan penulisan dan pemilihan bentuk muzakkar-muannath pada h42.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melengkapkan tiga kata daripada segmen, mengisikan jadual dan menyemak ejaan bersama rakan.
+**Aktiviti 2 — Lengkapkan kata dan jadual pekerjaan:** Murid melengkapkan tiga kata daripada segmen, mengisikan jadual dan menyemak ejaan bersama rakan.
 
 **Pengukuhan / Penilaian (PBD):** Tiga tulisan dan dua pengelasan gender diperiksa.
 

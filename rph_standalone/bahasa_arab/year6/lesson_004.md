@@ -5,13 +5,13 @@
 **Kod SK/SP:** 2.1 / 2.1.2 — membaca kata dengan huruf berbunyi hampir sama; diselaraskan dengan DSKP Tahun 6 serta aktiviti buku teks halaman bercetak 2; RPH ini masih BELUM READY.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
 **Objektif:** Murid membaca sekurang-kurangnya 4 daripada 5 kad kata عَلَم، عِلْم، أَسَد، أُذُن، هَدِيَّة dengan sebutan tepat.
-**Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
+**Kriteria kejayaan:** Murid membaca sekurang-kurangnya 4 daripada 5 kad kata dengan sebutan tepat.
 
 **Set induksi:** Guru memaparkan dua kad huruf ح dan ه, murid menyebut perbezaan bunyi.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru membaca kad عَلَم، عِلْم، أَسَد، أُذُن، هَدِيَّة yang terdapat dalam latihan fonetik Unit 1 halaman bercetak 2. Murid mengenal beza bunyi ع dan أ lalu meniru sebutan sambil membaca kata.
+**Aktiviti 1 — Baca kata dan beza bunyi ع dan أ:** Guru membaca kad عَلَم، عِلْم، أَسَد، أُذُن، هَدِيَّة yang terdapat dalam latihan fonetik Unit 1 halaman bercetak 2. Murid mengenal beza bunyi ع dan أ lalu meniru sebutan sambil membaca kata.
 
-**Aktiviti 2 — Amali murid:** Murid menarik satu daripada lima kad, membaca kepada pasangan dan menunjuk huruf sasaran; pasangan menyemak dengan model dan guru membetulkan makhraj.
+**Aktiviti 2 — Cabut kad dan kenal huruf sasaran:** Murid menarik satu daripada lima kad, membaca kepada pasangan dan menunjuk huruf sasaran; pasangan menyemak dengan model dan guru membetulkan makhraj.
 
 **Pengukuhan / PBD:** Guru mendengar lima bacaan individu dan merekod ketepatan bacaan serta pengecaman huruf sasaran; sasaran sekurang-kurangnya 4/5.
 

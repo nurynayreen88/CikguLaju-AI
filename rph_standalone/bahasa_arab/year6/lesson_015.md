@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru mengikut jadual dan tempoh sebenar.
 **Kosa kata / ayat:** طَيَّار، رَسَّام، جُنْدِيّ، شُرْطِيّ، مُمَرِّضَة
 **Objektif pembelajaran:** Mengenal sekurang-kurangnya empat pekerjaan berdasarkan gambar selepas mendengar guru.
-**Kriteria kejayaan:** Murid mencapai bukti minimum objektif; guru menanda murid yang memerlukan bimbingan.
+**Kriteria kejayaan:** Murid mengenal sekurang-kurangnya empat pekerjaan berdasarkan gambar selepas mendengar guru.
 
 **Set induksi:** Guru menunjukkan lima gambar kerjaya dan murid meneka profesion dalam bahasa Melayu.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan nama kerjaya berasaskan latihan h34 dan menegaskan sebutan profesi lelaki serta perempuan.
+**Aktiviti 1 — Dengar nama kerjaya lelaki dan perempuan:** Guru memperdengarkan nama kerjaya berasaskan latihan h34 dan menegaskan sebutan profesi lelaki serta perempuan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menunjukkan kad profesion selepas sebutan guru, kemudian memperkenalkan satu pekerjaan dalam bahasa Arab.
+**Aktiviti 2 — Pilih kad profesion dan perkenalkan kerjaya:** Murid menunjukkan kad profesion selepas sebutan guru, kemudian memperkenalkan satu pekerjaan dalam bahasa Arab.
 
 **Pengukuhan / Penilaian (PBD):** Empat padanan audio dan bacaan nama pekerjaan direkod.
 

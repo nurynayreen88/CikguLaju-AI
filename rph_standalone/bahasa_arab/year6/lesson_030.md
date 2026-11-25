@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Guru masukkan kelas, negeri, waktu mula/tamat dan tarikh sebenar.
 **Kosa kata / ayat:** ذَيْل، ذِرَاع، ذُرَة، ظَرْف، ظِلّ
 **Objektif pembelajaran:** Membina tiga perkataan berdasarkan segmen huruf.
-**Kriteria kejayaan:** Murid mencapai sasaran minimum dalam objektif. Guru mengenal pasti murid memerlukan pengukuhan.
+**Kriteria kejayaan:** Murid membina tiga perkataan berdasarkan segmen huruf.
 
 **Set induksi:** Guru memaparkan gambar perjalanan atau kad bunyi yang berkait dengan fokus di atas. Murid mengenal pasti dua contoh daripada pengalaman harian.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan gabungan huruf dan vokal pada latihan h63.
+**Aktiviti 1 — Model gabungan huruf dan vokal:** Guru memodelkan gabungan huruf dan vokal pada latihan h63.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melengkapkan tiga kad kata berhuruf ذ/ظ, membacanya dan menyalin satu ke buku latihan.
+**Aktiviti 2 — Lengkapkan tiga kad kata ذ dan ظ:** Murid melengkapkan tiga kad kata berhuruf ذ/ظ, membacanya dan menyalin satu ke buku latihan.
 
 **Pengukuhan / Penilaian (PBD):** Tiga binaan dan dua bacaan tepat. Guru merekod murid memerlukan pembetulan sebutan, bacaan atau tulisan.
 

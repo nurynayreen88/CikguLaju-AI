@@ -6,13 +6,13 @@
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** هذا دلو. أنا أضع الماء في الدلو. الدلو نظيف. (ayat ketiga pengayaan guru)
 **Objektif pembelajaran:** Murid meniru sekurang-kurangnya dua daripada tiga ayat tentang baldi dengan sebutan tepat dan urutan betul.
-**Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
+**Kriteria kejayaan:** Murid meniru sekurang-kurangnya 2 daripada 3 ayat tentang baldi dengan sebutan dan urutan betul.
 
 **Set induksi:** Guru menunjukkan baldi dengan air dan meminta murid meneka kegunaannya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan dua ayat berkaitan baldi dari Buku Teks Tahun 6 halaman 18, termasuk هذا دلو dan أنا أضع الماء في الدلو; murid mengulang ayat secara berurutan.
+**Aktiviti 1 — Ajuk ayat berkait tentang دلو:** Guru memodelkan dua ayat berkaitan baldi dari Buku Teks Tahun 6 halaman 18, termasuk هذا دلو dan أنا أضع الماء في الدلو; murid mengulang ayat secara berurutan.
 
-**Aktiviti 2 — Aplikasi murid:** Murid berpasangan menyusun dua kad ayat berpandukan buku dan satu kad pengayaan guru, kemudian meniru urutan ayat dengan sebutan jelas.
+**Aktiviti 2 — Susun kad ayat dan ulang urutan:** Murid berpasangan menyusun dua kad ayat berpandukan buku dan satu kad pengayaan guru, kemudian meniru urutan ayat dengan sebutan jelas.
 
 **Pengukuhan / Penilaian (PBD):** Guru menilai bacaan dua daripada tiga ayat dan urutan logik; kad pengayaan bukan bukti petikan buku.
 
