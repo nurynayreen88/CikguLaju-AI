@@ -10,6 +10,7 @@ their own source adapters; never substitute an older staged PDF.
 from collections import Counter
 from datetime import date
 from hashlib import sha256
+from io import BytesIO
 from pathlib import Path
 import argparse
 import json
@@ -161,9 +162,9 @@ def hyperlink(cell,url):
 def date_label(d):
     return date.fromisoformat(d).strftime("%d/%m/%Y")
 
-def render(subject,year,out,manifest,lock):
+def build_word(subject,year,manifest,lock,*,root=ROOT):
     key=f"{subject}:{year}"
-    entry=manifest["files"][key];source=ROOT/entry["path"];raw=source.read_bytes()
+    entry=manifest["files"][key];source=Path(root)/entry["path"];raw=source.read_bytes()
     if sha256(raw).hexdigest()!=entry["sha256"]:raise ValueError("Live RPT digest changed")
     dates,groups,closures,source_ids,links=extract(source,subject)
     doc=Document();section=doc.sections[0]
@@ -205,9 +206,9 @@ def render(subject,year,out,manifest,lock):
         text_cell(merged,[f"{week:02d}","Kumpulan A",f"{d[0]} – {d[1]}","Kumpulan B",f"{d[2]} – {d[3]}"],
                   bold=True,center=True,shade="EAF1E3")
         ranges.append((first,last))
-    name=f"RPT_{subject}_tahun_{year}_2027"
-    word=out/(name+".docx");doc.save(word)
-    check=Document(word)
+    stream=BytesIO();doc.save(stream)
+    blob=stream.getvalue()
+    check=Document(BytesIO(blob))
     assert len(check.tables)==1
     table=check.tables[0]
     assert table.rows[0]._tr.get_or_add_trPr().find(qn("w:tblHeader")) is not None
@@ -219,6 +220,14 @@ def render(subject,year,out,manifest,lock):
         assert table.rows[i]._tr.get_or_add_trPr().find(qn("w:cantSplit")) is not None
     assert [i for _,i,_ in expected]==source_ids
     assert Counter(rel.target_ref for rel in check.part.rels.values() if rel.reltype==RT.HYPERLINK)==Counter(set(links))
+    return blob,raw,source,source_ids,links,ranges
+
+def render(subject,year,out,manifest,lock):
+    key=f"{subject}:{year}"
+    entry=manifest["files"][key]
+    blob,raw,source,source_ids,links,ranges=build_word(subject,year,manifest,lock)
+    name=f"RPT_{subject}_tahun_{year}_2027"
+    word=out/(name+".docx");word.write_bytes(blob)
     with tempfile.TemporaryDirectory() as temp:
         folder=Path(temp)
         subprocess.run(["libreoffice","-env:UserInstallation="+(folder/"lo").as_uri(),"--headless",
