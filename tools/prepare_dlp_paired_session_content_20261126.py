@@ -55,6 +55,30 @@ def prepare(crosswalk,drafts):
                 for x in selected:
                     task=clean(x["pupils"])
                     if task not in objectives:objectives.append(task);evidence.append(task)
+            assert objectives
+            units=[];titles=[];standards=[];references=[]
+            for p in records:
+                titles.append(p["source_id"]+": "+clean(" ".join(p["title"])))
+                standards.append(p["standards"])
+                references.extend(x for x in p["textbook_reference"] if not re.fullmatch(r"\d+\s*min(?:utes)?",x.strip(),re.I))
+                units.extend(x for x in p["title"] if x.startswith("Unit "))
+            review=list(d["review"])
+            # A complete original induction and closure may be reused, but
+            # a continuation requires its own reviewed opening/exit task.
+            # Do not silently invent or duplicate activities to force them.
+            need_open="induction" not in actions[0]["phase"].lower()
+            need_exit="closure" not in actions[-1]["phase"].lower()
+            entry=boundary.get(str(d["session"]),{})
+            if key in boundary_bank:
+                assert set(entry)==({"O"} if need_open else set())|({"C"} if need_exit else set()),(key,d["session"],entry,need_open,need_exit)
+            if need_open:
+                if "O" in entry:
+                    teacher,pupils=entry["O"];actions.insert(0,{"source_label":actions[0]["source_label"],"phase":"Set induction","teacher":teacher,"pupils":pupils});used_boundary.add((str(d["session"]),"O"));review.append("AUTHORED_OPENING_DURATION_REVIEW")
+                else:review.append("SESSION_OPENING_REVIEW")
+            if need_exit:
+                if "C" in entry:
+                    teacher,pupils=entry["C"];actions.append({"source_label":actions[-1]["source_label"],"phase":"Closure","teacher":teacher,"pupils":pupils});used_boundary.add((str(d["session"]),"C"));review.append("AUTHORED_EXIT_DURATION_REVIEW")
+                else:review.append("SESSION_EXIT_REVIEW")
             # Explicit academic workload adaptation for the two most crowded
             # Year 6 Mathematics slots. Retain both original source IDs and
             # the required assessment evidence; shorten redundant examples.
@@ -85,30 +109,34 @@ def prepare(crosswalk,drafts):
                 evidence=list(objectives)
                 assert sum(session_minutes)==d["slot_minutes"]
                 for activity,minutes in zip(actions,session_minutes,strict=True):activity["suggested_minutes"]=minutes
-            assert objectives
-            units=[];titles=[];standards=[];references=[]
-            for p in records:
-                titles.append(p["source_id"]+": "+clean(" ".join(p["title"])))
-                standards.append(p["standards"])
-                references.extend(x for x in p["textbook_reference"] if not re.fullmatch(r"\d+\s*min(?:utes)?",x.strip(),re.I))
-                units.extend(x for x in p["title"] if x.startswith("Unit "))
-            review=list(d["review"])
-            # A complete original induction and closure may be reused, but
-            # a continuation requires its own reviewed opening/exit task.
-            # Do not silently invent or duplicate activities to force them.
-            need_open="induction" not in actions[0]["phase"].lower()
-            need_exit="closure" not in actions[-1]["phase"].lower()
-            entry=boundary.get(str(d["session"]),{})
-            if key in boundary_bank:
-                assert set(entry)==({"O"} if need_open else set())|({"C"} if need_exit else set()),(key,d["session"],entry,need_open,need_exit)
-            if need_open:
-                if "O" in entry:
-                    teacher,pupils=entry["O"];actions.insert(0,{"source_label":actions[0]["source_label"],"phase":"Set induction","teacher":teacher,"pupils":pupils});used_boundary.add((str(d["session"]),"O"));review.append("AUTHORED_OPENING_DURATION_REVIEW")
-                else:review.append("SESSION_OPENING_REVIEW")
-            if need_exit:
-                if "C" in entry:
-                    teacher,pupils=entry["C"];actions.append({"source_label":actions[-1]["source_label"],"phase":"Closure","teacher":teacher,"pupils":pupils});used_boundary.add((str(d["session"]),"C"));review.append("AUTHORED_EXIT_DURATION_REVIEW")
-                else:review.append("SESSION_EXIT_REVIEW")
+            # Candidate pacing only: preserve all tasks, allocate whole minutes,
+            # and explicitly retain review flags for real classroom feasibility.
+            # Existing source durations are weights, not a mandate to overrun.
+            if not all("suggested_minutes" in x for x in actions):
+                original_minutes={(x["source_label"],label_phase(x["phase"]),x["teacher"],x["pupils"]):x["end"]-x["start"] for x in d["activities"]}
+                weights=[];minimum=[]
+                for x in actions:
+                    phase=x["phase"].lower()
+                    boundary_phase="induction" in phase or "closure" in phase
+                    key4=(x["source_label"],x["phase"],x["teacher"],x["pupils"])
+                    old=original_minutes.get(key4)
+                    if old is None and reinforcement and x["phase"]==reinforcement["phase"]:old=reinforcement["planned_minutes"]
+                    weights.append(max(1,old if old is not None else (5 if boundary_phase else 15)))
+                    minimum.append(3 if boundary_phase else 5)
+                budget=d["slot_minutes"]-sum(minimum)
+                assert budget>=0,(key,d["session"],minimum)
+                # Distribute whole minutes by largest remainder, respecting minima.
+                adjusted=[max(0,w-m) for w,m in zip(weights,minimum)]
+                if not any(adjusted):adjusted=[1]*len(actions)
+                denominator=sum(adjusted)
+                allocation=[m+budget*w//denominator for m,w in zip(minimum,adjusted)]
+                order=sorted(range(len(actions)),key=lambda j:(-(budget*adjusted[j]%denominator),j))
+                for j in order[:d["slot_minutes"]-sum(allocation)]:allocation[j]+=1
+                for activity,minutes in zip(actions,allocation,strict=True):activity["suggested_minutes"]=minutes
+                if sum(weights)>d["slot_minutes"]:review.append("COMPRESSED_ACTIVITY_SCOPE_REVIEW")
+            assert sum(x["suggested_minutes"] for x in actions)==d["slot_minutes"],(key,d["session"])
+            assert all(x["suggested_minutes"]>0 for x in actions)
+            review.append("PACING_CANDIDATE_NOT_ACADEMIC_APPROVAL")
             sessions.append({"session":d["session"],"week":d["week"],"dates":d["dates"],"slot_minutes":d["slot_minutes"],"source_ids":[p["actual_rph_id"] for p in records],"source_labels":sources,"titles":titles,"standards":standards,"references":list(dict.fromkeys(references)),"objective":objectives,"evidence":evidence,"activities":actions,"review":list(dict.fromkeys(review))})
         assert used_boundary=={(n,k) for n,values in boundary.items() for k in values}
         assert len(sessions)==dataset["sessions"]
