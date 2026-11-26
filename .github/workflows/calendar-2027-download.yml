@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'web/calendar_2027_download.py'
+      - 'rpt_2027/calendar/*.pdf'
       - 'tests/test_calendar_2027_download.py'
       - 'web_v1_static_preview/index.html'
       - '.github/workflows/calendar-2027-download.yml'
