@@ -33,7 +33,7 @@ def build(task):
         assert pr.find(qn("w:tblW")).get(qn("w:type"))=="dxa"
         assert int(pr.find(qn("w:tblW")).get(qn("w:w")))==sum(c.width.twips for c in t.columns)
         assert t.rows[0]._tr.trPr.find(qn("w:tblHeader")) is not None
-        assert all(any(c.text.strip() for c in row.cells[1:]) for row in t.rows[1:])
+        assert all(any(c.text.strip() for c in row.cells[1:]) for table in word.tables for row in table.rows[1:])
         headings=[re.sub(r"\s+"," ",c.text).strip().casefold() for c in t.rows[0].cells]
         candidate=next(out.glob("*.pdf"))
         with fitz.open(dest) as before,fitz.open(candidate) as after:

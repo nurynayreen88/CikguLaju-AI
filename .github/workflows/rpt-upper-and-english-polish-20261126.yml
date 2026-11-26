@@ -51,7 +51,7 @@ jobs:
           d=Document(next(out.glob("*.docx")))
           t=d.tables[0]
           rows=[]
-          for i,row in enumerate(t.rows[1:],1):
+          for i,row in enumerate((r for t in d.tables for r in t.rows[1:]),1):
               values=[c.text.strip() for c in row.cells]
               assert any(values[1:]),(i,"empty body row")
               rows.append(values)

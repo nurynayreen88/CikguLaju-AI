@@ -65,7 +65,7 @@ class PrivateBatchTests(unittest.TestCase):
                         self.assertEqual(word.headers["Cache-Control"],"no-store, private")
                         self.assertIn("attachment",word.headers["Content-Disposition"])
                         document=Document(io.BytesIO(word.data))
-                        self.assertEqual(len(document.tables),1)
+                        self.assertGreater(len(document.tables),1)
                         self.assertGreater(len(document.tables[0].rows),1)
                         self.assertTrue(document.paragraphs[0]._p.xpath(".//wp:anchor"))
                     before=profile.call_count
@@ -99,7 +99,7 @@ class PrivateBatchTests(unittest.TestCase):
                     word=client.get(url+".docx")
                     self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else "")
                     doc=Document(io.BytesIO(word.data))
-                    self.assertEqual(len(doc.tables),1)
+                    self.assertGreater(len(doc.tables),1)
                     self.assertGreater(len(doc.tables[0].rows),1)
                     self.assertEqual(word.headers["Cache-Control"],"no-store, private")
                 before=profile.call_count
@@ -134,8 +134,8 @@ class PrivateBatchTests(unittest.TestCase):
                     word=client.get(url+".docx")
                     self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else "")
                     doc=Document(io.BytesIO(word.data))
-                    self.assertEqual(len(doc.tables),1)
-                    self.assertGreater(len(doc.tables[0].rows),117)
+                    self.assertGreater(len(doc.tables),1)
+                    self.assertGreater(sum(len(t.rows)-1 for t in doc.tables),116)
                     self.assertEqual(word.headers["Cache-Control"],"no-store, private")
                 before=profile.call_count
                 with patch("web.rpt_2027_all_http._account",return_value=(free,None)):
@@ -169,7 +169,7 @@ class PrivateBatchTests(unittest.TestCase):
                     self.assertEqual(sha256(pdf.data).hexdigest(),lock["english_integrated"]["source_sha256_by_subject_year"][f"english:{year}"])
                     word=client.get(url+".docx")
                     self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else "")
-                    self.assertGreater(len(Document(io.BytesIO(word.data)).tables[0].rows),160)
+                    self.assertGreater(sum(len(t.rows)-1 for t in Document(io.BytesIO(word.data)).tables),159)
                     self.assertEqual(word.headers["Cache-Control"],"no-store, private")
                 with patch("web.rpt_2027_all_http._account",return_value=(free,None)):
                     self.assertEqual(client.get(url+".docx").status_code,403)
@@ -194,7 +194,7 @@ class PrivateBatchTests(unittest.TestCase):
                     self.assertEqual(sha256(pdf.data).hexdigest(),digest)
                     word=client.get(url+".docx")
                     self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else "")
-                    self.assertGreater(len(Document(io.BytesIO(word.data)).tables[0].rows),50)
+                    self.assertGreater(sum(len(t.rows)-1 for t in Document(io.BytesIO(word.data)).tables),49)
                     self.assertEqual(word.headers["Cache-Control"],"no-store, private")
                 calls=profile.call_count
                 with patch("web.rpt_2027_all_http._account",return_value=(free,None)):

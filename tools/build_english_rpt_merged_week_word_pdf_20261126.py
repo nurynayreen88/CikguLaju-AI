@@ -146,6 +146,8 @@ def integrated_rows(active,weeks):
     assert list(rows)==list(range(1,161)),len(rows)
     return rows
 
+from tools.rpt_kssr_physical_pages import paginate,verify_pages
+
 def build_word(year):
     active,digest=source_identity(year)
     weeks=schedule(year)
@@ -221,6 +223,7 @@ def build_word(year):
                 assert normalize(row.cells[3].text)==normalize(" ".join(rows[lesson][2]))
         first+=n
     assert seen==list(range(1,161))
+    blob=paginate(blob)
     return blob,raw,active,digest
 
 def render(year,out):
@@ -240,6 +243,7 @@ def render(year,out):
             result.insert_pdf(converted,from_page=1)
             result.save(target,garbage=4,deflate=True)
         with fitz.open(target) as result,fitz.open(active) as original:
+            verify_pages(blob,result)
             assert result[0].get_pixmap().samples==original[0].get_pixmap().samples
             body="\n".join(p.get_text() for p in list(result)[1:])
             found=[int(n) for n in re.findall(r"LESSON:\s*(\d+)",body)]
