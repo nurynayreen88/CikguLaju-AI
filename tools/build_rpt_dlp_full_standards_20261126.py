@@ -189,7 +189,7 @@ def append_notes(doc,lines):
     return lines[begin:cut]+lines[end:]+holidays[2:]
 from tools.rpt_physical_page_tables import split_week_tables,next_page_section
 
-def build_word(subject,year,root=ROOT):
+def build_word(subject,year,root=ROOT,*,whole_weeks=False):
     root=Path(root);key=f"{subject}:{year}"
     path=document_path(subject,year,root=root/"dlp")
     raw=path.read_bytes();assert sha256(raw).hexdigest()==PINS[key]
@@ -198,6 +198,9 @@ def build_word(subject,year,root=ROOT):
         verify_cover(old,selected_layout(lock,key,PINS[key]))
         rows=extract(old)
         notes=[line.strip() for line in old[0].get_text().splitlines() if line.strip()]
+    if whole_weeks:
+        from tools.dlp_whole_lesson_calendar_20261126 import schedule
+        rows,_=schedule(subject,year,rows,root)
     bank=json.loads((root/"dlp"/"standard_descriptions"/f"{subject.split('_')[0]}_year{year}.json").read_text())
     cover,png=source_cover(subject,year,root)
     doc=Document();sec=doc.sections[0]
@@ -210,7 +213,8 @@ def build_word(subject,year,root=ROOT):
     add_word_cover(doc,png)
     t=doc.add_table(rows=1,cols=6);t.style="Table Grid";t.autofit=False;t.alignment=WD_TABLE_ALIGNMENT.CENTER
     shade="DCECDC" if subject=="science_dlp" else "D9E9F3"
-    for i,(h,w) in enumerate(zip(HEADS,WIDTHS)):
+    heads=(*HEADS[:-1],"Textbook") if whole_weeks else HEADS
+    for i,(h,w) in enumerate(zip(heads,WIDTHS)):
         t.columns[i].width=Cm(w);t.rows[0].cells[i].width=Cm(w)
         polished_cell(t.rows[0].cells[i],[h],bold=True,center=True,shade=shade)
     mark(t.rows[0]._tr.get_or_add_trPr(),"w:tblHeader")
@@ -231,6 +235,8 @@ def build_word(subject,year,root=ROOT):
         mark(row._tr.get_or_add_trPr(),"w:cantSplit")
         for cell,w in zip(row.cells,WIDTHS):cell.width=Cm(w)
         vals=(c[0],natural_lines(c[1],"lesson"),cs,ls,natural_lines(c[3],"evidence"),natural_lines(c[4],"reference"))
+        if whole_weeks:
+            vals=(*vals[:-1],[v for v in vals[-1] if not re.fullmatch(r"\d+\s*min(?:utes)?",v.strip(),re.I)])
         for cell,lines,kind in zip(row.cells[1:],vals[1:],("lesson","standard","standard","evidence","reference")):
             polished_cell(cell,lines or [""],kind=kind)
         for url in links:hyperlink(row.cells[-1],url)
@@ -242,7 +248,8 @@ def build_word(subject,year,root=ROOT):
     for week,(label,first,last) in enumerate(groups,1):
         cell=t.cell(first,0)
         if first<last:cell=cell.merge(t.cell(last,0))
-        polished_cell(cell,[f"Week {week:02d}",*label],bold=True,center=True,shade=shade)
+        week_label=list(label) if whole_weeks else [f"Week {week:02d}",*label]
+        polished_cell(cell,week_label,bold=True,center=True,shade=shade)
         # Keep a merged week together, not one forced page per week.
         # Keep each group together using all physical cells of each row,
         # including the vertical merge continuation cells.
@@ -252,7 +259,7 @@ def build_word(subject,year,root=ROOT):
                 for p in _Cell(tc,t).paragraphs:
                     p.paragraph_format.keep_with_next=i<last
         for i in range(first,last+1):
-            expected[i-1]=([f"Week {week:02d}",*label],*expected[i-1][1:])
+            expected[i-1]=(week_label,*expected[i-1][1:])
     preserved_notes=append_notes(doc,notes)
     apply_table_template(t,subject)
     apply_table_template(doc.tables[-1],subject,appendix=True)
@@ -261,7 +268,7 @@ def build_word(subject,year,root=ROOT):
             for run in p.runs:
                 run.font.size=Pt(12 if p.style.name=="Heading 1" else 10)
                 run.font.color.rgb=RGBColor.from_string("315C4C" if subject=="science_dlp" else "31546C")
-    chunks=split_week_tables(doc,t,groups,breaks={7,11,16,22,28,33} if key=="mathematics_dlp:6" else None)
+    chunks=split_week_tables(doc,t,groups,breaks={7,11,16,22,28,33} if key=="mathematics_dlp:6" and not whole_weeks else None)
     stream=BytesIO();doc.save(stream);blob=stream.getvalue()
     check=Document(BytesIO(blob));body_rows=[row for table in check.tables[:-1] for row in table.rows[1:]]
     assert len(body_rows)==len(rows) and len(check.tables)==len(chunks)+1
@@ -269,8 +276,9 @@ def build_word(subject,year,root=ROOT):
         assert all(norm(cell.text)==norm(" ".join(v)) for cell,v in zip(row.cells,vals)),(key,i)
     assert all(v[2] and v[3] for v in expected)
     return blob,cover,rows,expected,preserved_notes
-def render(subject,year,out):
-    blob,cover,rows,expected,notes=build_word(subject,year)
+def render(subject,year,out,*,whole_weeks=False):
+    blob,cover,rows,expected,notes=build_word(subject,year,whole_weeks=whole_weeks)
+    heads=(*HEADS[:-1],"Textbook") if whole_weeks else HEADS
     name=f"RPT_{subject}_Year_{year}_2027"
     word=out/(name+".docx");word.write_bytes(blob)
     with tempfile.TemporaryDirectory() as td:
@@ -285,7 +293,7 @@ def render(subject,year,out):
             assert len(new)==len(Document(BytesIO(blob)).tables)+1,(subject,year,"unexpected spill page",len(new))
             for page in list(new)[1:-1]:
                 page_text=norm(page.get_text())
-                assert all(norm(h) in page_text for h in HEADS),(subject,year,page.number,"missing header")
+                assert all(norm(h) in page_text for h in heads),(subject,year,page.number,"missing header")
                 assert all(d["rect"].y1<=page.rect.height-39 for d in page.get_drawings()),(subject,year,page.number,"bottom margin")
             assert "Main school breaks" not in new[0].get_text()
             assert "Main school breaks" in new[-1].get_text()
@@ -316,4 +324,4 @@ def render(subject,year,out):
 
             print(json.dumps({"key":f"{subject}:{year}","rows":len(rows),"pages":len(new),"cs_entries":sum(len(v[2]) for v in expected),"ls_entries":sum(len(v[3]) for v in expected),"status":"PRIVATE_LAYOUT_QA_ONLY"}),flush=True)
 if __name__=="__main__":
-    p=argparse.ArgumentParser();p.add_argument("--subject",choices=SUBJECTS,required=True);p.add_argument("--year",type=int,choices=range(2,7),required=True);p.add_argument("--out",type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True);render(a.subject,a.year,a.out)
+    p=argparse.ArgumentParser();p.add_argument("--subject",choices=SUBJECTS,required=True);p.add_argument("--year",type=int,choices=range(2,7),required=True);p.add_argument("--out",type=Path,required=True);p.add_argument("--whole-weeks",action="store_true");a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True);render(a.subject,a.year,a.out,whole_weeks=a.whole_weeks)
