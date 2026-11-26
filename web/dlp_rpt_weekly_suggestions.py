@@ -30,7 +30,7 @@ def published_weeks(code,year):
     calendar=json.loads((ROOT/"pendidikan_moral/induk_minggu_2027_ab.json").read_text())["weeks"]
     dates=[tuple((date.fromisoformat(g["start"]),date.fromisoformat(g["end"])) for g in pair)
            for pair in zip(calendar["A"],calendar["B"],strict=True)]
-    weeks=defaultdict(list);lesson=review=0
+    weeks=defaultdict(list);reserve=defaultdict(int);lesson=review=0
     with fitz.open(path) as pdf:rows=extract(pdf)
     from web.rpt_compact_pdf import dlp_whole_week_release
     if dlp_whole_week_release(ROOT):
@@ -40,6 +40,11 @@ def published_weeks(code,year):
         ranges=date_ranges(c[0])
         matching=[n for n,window in enumerate(dates,1) if all(a<=start<=end<=b for (start,end),(a,b) in zip(ranges,window))]
         assert len(matching)==1,(code,year,ranges)
+        if c[1][0]=="Reinforcement / PBD follow-up":
+            assert (code,year)==("MATH_DLP",2)
+            reserve[matching[0]]+=1
+            weeks[matching[0]]  # Reserve only: never invent a numbered RPH ID.
+            continue
         title=" ".join(c[1]);match=re.match(r"Lesson\s+(\d+)\b",title)
         if match:
             lesson+=1
@@ -51,7 +56,7 @@ def published_weeks(code,year):
         weeks[matching[0]].append(label)
     assert (lesson,review)==COUNTS[code,year]
     assert list(weeks)==sorted(weeks)
-    return {n:{"labels":labels,"dates":[[a.isoformat(),b.isoformat()] for a,b in dates[n-1]]}
+    return {n:{"labels":labels,"reserve_slots":reserve[n],"dates":[[a.isoformat(),b.isoformat()] for a,b in dates[n-1]]}
             for n,labels in weeks.items()}
 
 def suggestion(code,year,target,group_a):
@@ -62,7 +67,7 @@ def suggestion(code,year,target,group_a):
             start,end=row["dates"][0 if group_a else 1]
             if start<=target.isoformat()<=end:
                 return {"week":n,"group":"A" if group_a else "B",
-                        "lessons":{"":[]},"dlp_labels":row["labels"]}
+                        "lessons":{"":[]},"dlp_labels":row["labels"],"dlp_reserve_slots":row["reserve_slots"]}
     except (OSError,ValueError,AssertionError,ImportError,KeyError):
         # Never recommend a different lesson if a source cannot be verified.
         return None

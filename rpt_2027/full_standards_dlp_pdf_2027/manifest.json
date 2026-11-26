@@ -6,8 +6,8 @@
     "mathematics_dlp:2": {
       "path": "mathematics_dlp/tahun_2.pdf",
       "source_sha256": "d66bf14378e2ceb00c12dbd3fd66ac19eb18d7ccc8437eda94e2c6db6b5441aa",
-      "sha256": "03440c43d9e37aaf440793251cb18f5cead3271b9b70850ba60a5ab4ccd13ab9",
-      "bytes": 155008,
+      "sha256": "cb5abe89179c5499811192abbcd3a814cb524253de432553d40a5d232b3bfc64",
+      "bytes": 156945,
       "pages": 13
     },
     "science_dlp:2": {
@@ -181,5 +181,8 @@
       4,
       4
     ]
+  },
+  "session_first_by_set": {
+    "mathematics_dlp:2": "20261126"
   }
 }

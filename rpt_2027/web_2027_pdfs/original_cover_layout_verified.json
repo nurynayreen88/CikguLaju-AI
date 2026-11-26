@@ -2213,7 +2213,7 @@
     ],
     "status": "FULL_STANDARDS_DLP_RPT_PDF_COVER_VERIFIED",
     "source_sha256_by_subject_year": {
-      "mathematics_dlp:2": "03440c43d9e37aaf440793251cb18f5cead3271b9b70850ba60a5ab4ccd13ab9",
+      "mathematics_dlp:2": "cb5abe89179c5499811192abbcd3a814cb524253de432553d40a5d232b3bfc64",
       "science_dlp:2": "bae5accf305dccde84eca9e7921f58fceee6e77c45ade6ddef6772e81d1e60ea",
       "mathematics_dlp:3": "b2f120b6885ce0a50eac5ecb41868f7977b9840072cc7158d3b48cabd50e1065",
       "science_dlp:3": "daba772ea747f8929c7b6d1a23588e289b65baddb73d59759cf716b82f6982eb",
