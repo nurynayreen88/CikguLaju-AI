@@ -9,6 +9,7 @@ import re
 from docx import Document
 
 from dlp_year2_rph import SUBJECTS, catalog, render, rpt_lessons
+from staging.dlp.year2.science_flexible_delivery import adapt_science_phases
 
 SOURCE = Path(__file__).resolve().parent
 RPT_ROOT = SOURCE.parents[2] / "rpt_2027/dlp"
@@ -79,6 +80,8 @@ class Downloads:
                     raise ValueError(f"Lesson order does not match {subject_name} {label}.")
                 lesson = {**original_lesson, "rpt_dates": dates.splitlines(), "numbered_label": label,
                           "minutes": minutes}
+                if self.subject == "SCIENCE_DLP" and minutes == 30:
+                    lesson["phases"] = adapt_science_phases(original_lesson, lesson_count, minutes)
                 taught.update(codes)
             units[unit_title]["lessons"].append({**lesson, "unit_title": unit_title})
             total_minutes += minutes
