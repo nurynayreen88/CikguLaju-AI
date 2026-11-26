@@ -17,6 +17,7 @@ def label_phase(s):
 
 def prepare(crosswalk,drafts):
     by_key={p["key"]:p for p in crosswalk["plans"]};output=[]
+    boundary_bank=json.loads(Path(__file__).with_name("dlp_science_continuation_open_exit_20261126.json").read_text())["sets"]
     for dataset in drafts["sets"]:
         key=dataset["key"];original=by_key[key]
         lookup={};parts_by_slot={}
@@ -25,7 +26,7 @@ def prepare(crosswalk,drafts):
                 parts_by_slot[s["session"]]=s["source_parts"]
                 for p in s["source_parts"]:
                     lookup[p["source_id"]]=p
-        sessions=[]
+        sessions=[];used_boundary=set();boundary=boundary_bank.get(key,{})
         for d in dataset["draft_sessions"]:
             parts=parts_by_slot[d["session"]]
             reinforcement=d["targeted_reinforcement"]
@@ -64,9 +65,21 @@ def prepare(crosswalk,drafts):
             # A complete original induction and closure may be reused, but
             # a continuation requires its own reviewed opening/exit task.
             # Do not silently invent or duplicate activities to force them.
-            if "induction" not in actions[0]["phase"].lower():review.append("SESSION_OPENING_REVIEW")
-            if "closure" not in actions[-1]["phase"].lower():review.append("SESSION_EXIT_REVIEW")
+            need_open="induction" not in actions[0]["phase"].lower()
+            need_exit="closure" not in actions[-1]["phase"].lower()
+            entry=boundary.get(str(d["session"]),{})
+            if key in boundary_bank:
+                assert set(entry)==({"O"} if need_open else set())|({"C"} if need_exit else set()),(key,d["session"],entry,need_open,need_exit)
+            if need_open:
+                if "O" in entry:
+                    teacher,pupils=entry["O"];actions.insert(0,{"source_label":actions[0]["source_label"],"phase":"Set induction","teacher":teacher,"pupils":pupils});used_boundary.add((str(d["session"]),"O"));review.append("AUTHORED_OPENING_DURATION_REVIEW")
+                else:review.append("SESSION_OPENING_REVIEW")
+            if need_exit:
+                if "C" in entry:
+                    teacher,pupils=entry["C"];actions.append({"source_label":actions[-1]["source_label"],"phase":"Closure","teacher":teacher,"pupils":pupils});used_boundary.add((str(d["session"]),"C"));review.append("AUTHORED_EXIT_DURATION_REVIEW")
+                else:review.append("SESSION_EXIT_REVIEW")
             sessions.append({"session":d["session"],"week":d["week"],"dates":d["dates"],"slot_minutes":d["slot_minutes"],"source_ids":[p["actual_rph_id"] for p in records],"source_labels":sources,"titles":titles,"standards":standards,"references":list(dict.fromkeys(references)),"objective":objectives,"evidence":evidence,"activities":actions,"review":list(dict.fromkeys(review))})
+        assert used_boundary=={(n,k) for n,values in boundary.items() for k in values}
         assert len(sessions)==dataset["sessions"]
         counts=Counter(x for s in sessions for x in s["review"])
         output.append({"key":key,"sessions":sessions,"review_counts":dict(counts),"release_ready":False})
