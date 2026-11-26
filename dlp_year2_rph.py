@@ -500,7 +500,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     regular, bold, _ = pdf_fonts()
     font_size = 9 if mathematics else 9.5
     leading = (9.35 if compact else 9.9) if mathematics else (11 if compact else 12)
-    if paired_density and not mathematics: leading=10.25
+    if paired_density and not mathematics: leading={1:10.25,2:10.25,3:10.0,4:9.8}[int(paired_density)]
     body = ParagraphStyle("DLP body", fontName=regular, fontSize=font_size, leading=leading)
     label = ParagraphStyle("DLP label", parent=body, fontName=bold)
     table_heading = ParagraphStyle("DLP table heading", parent=label, alignment=TA_CENTER)
@@ -522,7 +522,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
             cells[0] = [paragraph(value, table_heading) for value in rows[0]]
         result = Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header))
         padding = 2.5 if mathematics else (3 if compact else 4)
-        if paired_density and not mathematics: padding=min(padding,2)
+        if paired_density and not mathematics: padding=min(padding,{1:2,2:1.5,3:1,4:0.75}[int(paired_density)])
         commands = pdf_box_style(padding)
         commands.append(("BACKGROUND", (0, 0), (0, -1), fill))
         if header:
