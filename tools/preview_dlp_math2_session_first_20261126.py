@@ -28,7 +28,15 @@ def candidate_schedule(subject,year,rows,root):
         used=[]
         for s in w["sessions"]:
             if not s["source_parts"]:
-                assert s["reserve_minutes"]==60
+                assert s["reserve_minutes"]==60 and index==len(rows)
+                # Explicit reserve slots retain the final approved review's
+                # learning standards and evidence. Not a new Lesson/RPH ID.
+                c,links=rows[-1]
+                field=c[2]
+                if " ".join(field) in ("Consolidation Review taught standards","Review Review taught standards"):
+                    mappings=json.loads((Path(root)/"dlp/standard_descriptions/review_mappings.json").read_text())["mappings"]["mathematics_dlp:2"]
+                    field=["LS "+", ".join(mappings["R18"])]
+                out.append(([labels,["Reinforcement / PBD follow-up","Reserve session — no new standard"],field,c[3],c[4]],links))
                 continue
             assert len(s["source_parts"])==1
             p=s["source_parts"][0]
@@ -41,7 +49,9 @@ def candidate_schedule(subject,year,rows,root):
     assert index==len(rows)==96
     assert sum(loads.values())==5760
     assert sum(w["reserve_slots"] for w in weekly)==5
-    assert all(x[0][1:]==y[0][1:] and x[1]==y[1] for x,y in zip(rows,out,strict=True))
+    original=[r for r in out if r[0][1][0]!="Reinforcement / PBD follow-up"]
+    assert len(out)==101 and len(original)==96
+    assert all(x[0][1:]==y[0][1:] and x[1]==y[1] for x,y in zip(rows,original,strict=True))
     return out,loads,weekly
 
 def main():
@@ -59,7 +69,7 @@ def main():
             pilot=folder/"pilot.docx";pilot.write_bytes(blob)
             subprocess.run(["libreoffice","-env:UserInstallation="+(folder/"lo").as_uri(),"--headless","--convert-to","pdf","--outdir",str(folder),str(pilot)],check=True,timeout=180)
             with fitz.open(pilot.with_suffix(".pdf")) as pdf:heights=measure_weeks(pdf)
-            assert len(heights)==sum(bool(w["source_ids"]) for w in captured["weekly"])
+            assert len(heights)==35
             sizes=choose_sizes(heights)
         render(subject,year,out,whole_weeks=True,compact_sizes=sizes)
     pdf=out/f"RPT_{subject}_Year_{year}_2027.pdf"
@@ -68,7 +78,9 @@ def main():
         assert new[0].get_pixmap(matrix=fitz.Matrix(2,2)).samples==previous[0].get_pixmap(matrix=fitz.Matrix(2,2)).samples
         for p in list(new)[1:-1]:verify_bottom(p,"mathematics_dlp:2")
         weeks=[int(n) for p in list(new)[1:-1] for n in re.findall(r"(?m)^Week\s+(\d{2})\s*$",p.get_text())]
-        assert weeks==[w["week"] for w in captured["weekly"] if w["source_ids"]]
+        assert weeks==[w["week"] for w in captured["weekly"]]
+        body=" ".join(p.get_text() for p in list(new)[1:-1])
+        assert body.count("Reinforcement / PBD")==5,(body.count("Reinforcement / PBD"),"reserve slots")
         print("MATH2_SESSION_FIRST_DOCUMENT_OK",len(new),"pages",sizes,"96 source RPH preserved",flush=True)
     (out/"weekly_candidate.json").write_text(json.dumps({"status":"PRIVATE_REVIEW","source_rph_count":96,"weekly":captured["weekly"],"page_groups":sizes},indent=2)+"\n")
 if __name__=="__main__":main()
