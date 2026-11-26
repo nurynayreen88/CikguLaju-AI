@@ -149,7 +149,8 @@ def main():
                             normalize=lambda t:re.sub(r"\s+","",t)
                             old_chars=Counter(normalize(old_text));new_chars=Counter(normalize(new_text))
                             removed=old_chars-new_chars;added=new_chars-old_chars
-                            repeated_header=Counter(normalize("".join(rows[0])))
+                            from dlp_year2_rph import _activity_table
+                            repeated_header=Counter(normalize("".join(_activity_table(rows,english=True)[0])))
                             allowed=Counter({ch:count*(old_pages-1) for ch,count in repeated_header.items()})
                             assert not added and (not removed or removed==allowed),("layout changed text",n,dict(removed),dict(added))
                             # Every teacher/pupil task and each nonempty details
