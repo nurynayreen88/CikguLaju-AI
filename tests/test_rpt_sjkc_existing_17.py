@@ -46,6 +46,10 @@ class SJKCExisting(unittest.TestCase):
                     tables=doc.tables
                     self.assertTrue(tables,"No editable table in Word")
                     repeated=sum(bool(t.rows[0]._tr.xpath(".//w:tblHeader")) for t in tables if t.rows)
+                    if slug=="bahasa-melayu":
+                        from collections import Counter
+                        headers=Counter(tuple(c.text.strip() for c in t.rows[0].cells) for t in tables if t.rows)
+                        print("SJKC_BM_HEADERS",year,json.dumps([(list(k),n) for k,n in headers.items()],ensure_ascii=False),flush=True)
                     with fitz.open(stream=pdf.data,filetype="pdf") as f:
                         self.assertGreater(len(f),1)
                         sizes=sorted(set((round(p.rect.width),round(p.rect.height)) for p in f))
