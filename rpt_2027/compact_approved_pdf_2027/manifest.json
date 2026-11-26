@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "status": "LAYOUT_QA_CANDIDATE",
+  "count": 5,
+  "files": {
+    "matematik:4": {
+      "path": "matematik/tahun_4.pdf",
+      "source_sha256": "57f3e88155422c3f34327145beaae8067b114fb01cf65f2b231d17f378b05de3",
+      "sha256": "6a886bf796d0aee9572ad563ad977ef39a67b117cef456fbbe0eb766e45139fc",
+      "bytes": 124068,
+      "pages": 11,
+      "source_pages": 15
+    },
+    "matematik:5": {
+      "path": "matematik/tahun_5.pdf",
+      "source_sha256": "c740fb70bfa711b8ebdd54dbaf6b13aeb9c66018bf9dda1b7b3d1153ddaf4909",
+      "sha256": "5c16ad8350dc403b08f10b729ca6692155538bb8d5f83403ee676fdd95ca2436",
+      "bytes": 122365,
+      "pages": 11,
+      "source_pages": 15
+    },
+    "matematik:6": {
+      "path": "matematik/tahun_6.pdf",
+      "source_sha256": "1eda26ae8a13fda98535ce95e62e0f94ebfe7924106127df3581c21a55720847",
+      "sha256": "f409dc394ae41217f517411eee70566dc99d41e513dc5439a843c7b8b80f2672",
+      "bytes": 123604,
+      "pages": 11,
+      "source_pages": 15
+    },
+    "sains:5": {
+      "path": "sains/tahun_5.pdf",
+      "source_sha256": "281d25b8b37cfda50caa22ebcc9ee235767e1bfb4a8a4cfad171a5bf324a1e8b",
+      "sha256": "5c19de810ce2641256c9d1914c8e533d616752ea83d3720342d4e0e610db4936",
+      "bytes": 155359,
+      "pages": 11,
+      "source_pages": 12
+    },
+    "sains:6": {
+      "path": "sains/tahun_6.pdf",
+      "source_sha256": "0f168595c8c6259c455f143aeeb98489152a85cc599e5c1d60db88d19503d477",
+      "sha256": "9013fe3ce0695777cf41169c3d8a60a938d1f1fff8b3b3a831db2606cf62ac8b",
+      "bytes": 154193,
+      "pages": 12,
+      "source_pages": 13
+    }
+  }
+}

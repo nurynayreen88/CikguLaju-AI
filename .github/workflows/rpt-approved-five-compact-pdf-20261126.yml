@@ -1,0 +1,26 @@
+name: Verify five approved Math Science compact PDF candidates
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/compact_approved_pdf_2027/**'
+      - 'web/rpt_compact_pdf.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'web_v1_static_preview/rpt-personalize.js'
+      - 'tests/test_rpt_compact_approved_pdf.py'
+      - '.github/workflows/rpt-approved-five-compact-pdf-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: python -m unittest discover -s tests -p 'test_rpt_compact_approved_pdf.py' -v
