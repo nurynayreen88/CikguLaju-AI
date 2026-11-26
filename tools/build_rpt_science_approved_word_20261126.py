@@ -10,6 +10,7 @@ import subprocess
 import tempfile
 import fitz
 from docx import Document
+from tools.rpt_source_table_polish import format_source_cell, fixed_grid
 from docx.shared import Cm, Pt
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
@@ -98,7 +99,7 @@ def build_word(year,root=ROOT):
     s.top_margin=s.bottom_margin=Cm(1.1)
     s.header_distance=s.footer_distance=Cm(.45)
     doc.styles["Normal"].font.name="Arial";doc.styles["Normal"].font.size=Pt(8.5)
-    s.header.paragraphs[0].text=f"RPT 2027 · SAINS SK · TAHUN {year}"
+    s.header.paragraphs[0].text=""
     s.footer.paragraphs[0].text="RPT 2027 · Kumpulan A dan B"
     add_word_cover(doc,cover_png(raw,lock,f"sains:{year}"))
     table=doc.add_table(rows=1,cols=5);table.style="Table Grid";table.autofit=False
@@ -113,7 +114,7 @@ def build_word(year,root=ROOT):
         mark(row._tr.get_or_add_trPr(),"w:cantSplit")
         for j,(cell,text,width) in enumerate(zip(row.cells,cells,WIDTHS)):
             cell.width=Cm(width)
-            if j:text_cell(cell,text.splitlines() or [""])
+            if j:format_source_cell(cell,text.splitlines() or [""],text_cell,preserve=j==1)
         if groups and groups[-1][0]==week:
             assert norm(groups[-1][3])==norm(cells[0]),"Week labels differ"
             groups[-1]=(week,groups[-1][1],i,cells[0])
@@ -122,6 +123,7 @@ def build_word(year,root=ROOT):
         merged=table.cell(first,0)
         if first!=last:merged=merged.merge(table.cell(last,0))
         text_cell(merged,label.splitlines(),bold=True,center=True,shade="EAF1E3")
+    fixed_grid(table,"DCECDC")
     out=BytesIO();doc.save(out);blob=out.getvalue()
     check=Document(BytesIO(blob));t=check.tables[0]
     assert len(t.rows)==len(rows)+1

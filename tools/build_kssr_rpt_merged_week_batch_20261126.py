@@ -30,6 +30,7 @@ from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from scripts.reschedule_web_rpt_teaching_weeks import pdf_rows
 from scripts.build_web_rpt_weekly_suggestions import read_weeks, SUBJECTS
 from web.rpt_native_word_cover import add_word_cover, cover_png
+from tools.rpt_source_table_polish import fixed_grid
 
 ROOT=Path("rpt_2027/web_2027_pdfs")
 SCOPE={
@@ -149,6 +150,29 @@ def text_cell(cell,lines,*,bold=False,center=False,shade=None):
         r.bold=bold or bool(MARKER.fullmatch(line.strip()))
     if shade:mark(cell._tc.get_or_add_tcPr(),"w:shd",{"w:fill":shade})
 
+def reflow_source_cell(lines,column):
+    # Preserve semantic boundaries, not visual wraps from the PDF extraction.
+    out=[]
+    for line in lines:
+        v=line.strip()
+        if not v:continue
+        boundary=(column==1 and (MARKER.fullmatch(v) or re.match(r"^(?:Unit|Tema|Tajuk|Bidang|Modul|Topik)\b",v,re.I))) or (column in (2,3) and re.match(r"^\d+\.\d+(?:\.\d+)*(?:\s|$|\()",v)) or (column==4 and re.match(r"^(?:BBM|Bahan|Buku Teks|Pentaksiran|PBD|Catatan|Rujukan|EMK|KBAT|Nilai)\b",v,re.I))
+        if not out or boundary or (column==1 and MARKER.fullmatch(out[-1])):out.append(v)
+        else:out[-1]+=" "+v
+    assert norm(" ".join(out))==norm(" ".join(lines))
+    return out
+
+def format_kssr_cell(cell,lines,column):
+    text_cell(cell,reflow_source_cell(lines,column))
+    for p in cell.paragraphs:
+        p.paragraph_format.keep_together=True
+        m=re.match(r"^(?:(?:PJ |PK )?(?:PdP|Lesson) \d{3}|\d+\.\d+(?:\.\d+)*(?:\([ivx]+\))?)",p.text,re.I)
+        if m:
+            val=p.text;p.clear()
+            for v,b in ((m.group(),True),(val[m.end():],False)):
+                if v:
+                    run=p.add_run(v);run.bold=b;run.font.name="Arial";run.font.size=Pt(8.5)
+
 def hyperlink(cell,url):
     if not url.startswith(("https://","http://")):raise ValueError("Unapproved source URI")
     p=cell.add_paragraph()
@@ -173,7 +197,7 @@ def build_word(subject,year,manifest,lock,*,root=ROOT):
     section.top_margin=section.bottom_margin=Cm(1.1)
     section.header_distance=section.footer_distance=Cm(.45)
     normal=doc.styles["Normal"];normal.font.name="Arial";normal.font.size=Pt(8.5)
-    section.header.paragraphs[0].text=f"RPT 2027 · {subject.replace('_',' ').upper()} · TAHUN {year}"
+    section.header.paragraphs[0].text=""
     section.footer.paragraphs[0].text="RPT 2027 · DRAF SEMAKAN · Kumpulan A dan B"
     add_word_cover(doc,cover_png(raw,lock,key))
     t=doc.add_table(rows=1,cols=5);t.style="Table Grid";t.autofit=False
@@ -197,7 +221,7 @@ def build_word(subject,year,manifest,lock,*,root=ROOT):
             d=tuple(date_label(x) for x in dates[week])
             for identity,cells,urls in groups[week]:
                 row=add_row()
-                for cell,content in zip(row.cells[1:],cells,strict=True):text_cell(cell,content)
+                for column,(cell,content) in enumerate(zip(row.cells[1:],cells,strict=True),1):format_kssr_cell(cell,content,column)
                 for url in urls:hyperlink(row.cells[4],url)
                 expected.append((len(t.rows)-1,identity,cells))
         last=len(t.rows)-1
@@ -206,6 +230,7 @@ def build_word(subject,year,manifest,lock,*,root=ROOT):
         text_cell(merged,[f"{week:02d}","Kumpulan A",f"{d[0]} – {d[1]}","Kumpulan B",f"{d[2]} – {d[3]}"],
                   bold=True,center=True,shade="EAF1E3")
         ranges.append((first,last))
+    fixed_grid(t,COLORS[subject])
     stream=BytesIO();doc.save(stream)
     blob=stream.getvalue()
     check=Document(BytesIO(blob))
@@ -216,7 +241,7 @@ def build_word(subject,year,manifest,lock,*,root=ROOT):
         assert all(table.cell(first,0)._tc is table.cell(i,0)._tc for i in range(first,last+1))
     for i,identity,cells in expected:
         for cell,source_lines in zip(table.rows[i].cells[1:],cells,strict=True):
-            assert all(line in cell.text for line in source_lines)
+            assert norm(" ".join(p.text for p in cell.paragraphs if not p._p.xpath(".//w:hyperlink")))==norm(" ".join(source_lines))
         assert table.rows[i]._tr.get_or_add_trPr().find(qn("w:cantSplit")) is not None
     assert [i for _,i,_ in expected]==source_ids
     assert Counter(rel.target_ref for rel in check.part.rels.values() if rel.reltype==RT.HYPERLINK)==Counter(set(links))
