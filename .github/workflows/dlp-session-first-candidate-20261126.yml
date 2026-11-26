@@ -9,6 +9,7 @@ on:
       - 'rpt_2027/dlp/science_y4_y5_reinforcement_candidate_20261126.json'
       - 'tools/optimize_dlp_session_phases_20261126.py'
       - 'tools/optimize_dlp_lower_science_whole_sources_20261126.py'
+      - 'tools/build_dlp_upper_whole_phase_batch_20261126.py'
       - 'tools/build_dlp_lower_science_content_20261126.py'
       - 'rpt_2027/dlp/science_y2_y3_split_and_reinforcement_20261126.json'
       - '.github/workflows/dlp-session-first-candidate-20261126.yml'
@@ -41,6 +42,8 @@ jobs:
         run: python -m tools.optimize_dlp_session_phases_20261126 dlp_session_activity_review.json dlp_phase_aware_review.json
       - name: Optimize whole source delivery for Science Year 2 and 3
         run: python -m tools.optimize_dlp_lower_science_whole_sources_20261126 dlp_phase_aware_review.json dlp_lower_science_review.json
+      - name: Build remaining 474 upper DLP whole-phase sessions
+        run: python -m tools.build_dlp_upper_whole_phase_batch_20261126 dlp_phase_aware_review.json dlp_upper_whole_phase_review.json
       - name: Compile full lower Science session content
         run: python -m tools.build_dlp_lower_science_content_20261126 dlp_lower_science_review.json dlp_phase_aware_review.json rpt_2027/dlp/science_y2_y3_split_and_reinforcement_20261126.json dlp_lower_science_content.json
       - name: Render 22 topic-specific Science RPH candidates
@@ -57,4 +60,5 @@ jobs:
             dlp_phase_aware_review.json
             dlp_lower_science_review.json
             dlp_lower_science_content.json
+            dlp_upper_whole_phase_review.json
             science_rph_review/
