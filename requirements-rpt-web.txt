@@ -1,0 +1,5 @@
+# Minimal dependencies for authenticated native RPT Word generation on Render.
+# Do not install Telegram/OCR dependencies on the 512 MB Web service.
+python-docx==1.2.0
+PyMuPDF==1.26.7
+Pillow==12.3.0
