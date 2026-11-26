@@ -1736,5 +1736,397 @@
       "english:5": "5e06e1671f652fd38b7ddb39e1d30a97370366c8b697cd8476ac821bb27a3630",
       "english:6": "98732fb65987315384d62554b9481fd2a684eac5a3b839422f5f61929c58cf66"
     }
+  },
+  "compact_dlp_pdf_covers": {
+    "mathematics_dlp:2": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "mathematics_dlp:2": "1ebf0820b9859d16df7f6dcacf23b71b5130b9eed7f6684da5b4188d584704b2"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "science_dlp:2": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "science_dlp:2": "3f549de58eff8f8f726f97c8b8046534089d115e934330904e438e9f99a578f7"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "mathematics_dlp:3": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "mathematics_dlp:3": "c4eff5c127737f843af4eb869e288259be0099b02a2553493342a39bacc0dd4b"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "science_dlp:3": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "science_dlp:3": "98cdf481490ca2d4a1665eff84817b20ca0ce568bc95c74c43a32329649fc15c"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "mathematics_dlp:4": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "mathematics_dlp:4": "18dea0ee038b27ccfec71b07324bcb948af3de284e90cc310cf29579ed395659"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "science_dlp:4": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "science_dlp:4": "39e4d4922ba3eb40a7aedc0d9def40a49629f5e2fc9baf5f7f1bc536a5e9d4de"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "mathematics_dlp:5": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "mathematics_dlp:5": "de5234f35306e0c40b5e03308f214fca3275d21def8637fe67d06b4087bab2ee"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "science_dlp:5": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "science_dlp:5": "f41996a31176ac3518eeb8fb69127ea6d0094bd59502a4497bf1b9b5e55d34b2"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "mathematics_dlp:6": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "mathematics_dlp:6": "29e0b296a1838902eb50d382c75355432efab652e7c983aa73729c56f25dfcc6"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    },
+    "science_dlp:6": {
+      "version": 1,
+      "status": "COMPACT_DLP_RPT_PDF_COVER_VERIFIED",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "science_dlp:6": "dc79be577c96405ee3342d90f57bdd0b549c7ffdee1a73e37522fa2e37f0d952"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    }
   }
 }
