@@ -18,7 +18,14 @@ import subprocess
 def candidate_schedule(subject,year,rows,root):
     assert (subject,year)==("mathematics_dlp",2)
     weeks=build(subject,year,rows,root)
-    index=0;out=[];loads={};weekly=[]
+    index=0;out=[];loads={};weekly=[];reserve_no=0
+    reserve_evidence=[
+        'Use a class shop survey to construct and interpret a bar chart. Compare two prices and calculate the total cost of selected items.',
+        'Read a pictograph of canteen sales and compare quantities. Use a price list to calculate the change from a given amount of money.',
+        'Compare two shopping baskets against a fixed budget. Use a frequency table to justify which items to choose and calculate the balance.',
+        'Identify and correct an incorrect bar-chart reading and an incorrect change calculation. Explain both corrections using the given data.',
+        'Complete an individual PBD task using a new shop data table: interpret the quantities, compare prices and calculate the total and change. Explain the answers.'
+    ]
     def label(g):
         a,b=map(date.fromisoformat,(g["start"],g["end"]))
         return f"{a.day}-{b.day} {b:%b}" if a.month==b.month else f"{a.day} {a:%b}-{b.day} {b:%b}"
@@ -36,7 +43,8 @@ def candidate_schedule(subject,year,rows,root):
                 if " ".join(field) in ("Consolidation Review taught standards","Review Review taught standards"):
                     mappings=json.loads((Path(root)/"dlp/standard_descriptions/review_mappings.json").read_text())["mappings"]["mathematics_dlp:2"]
                     field=["LS "+", ".join(mappings["R18"])]
-                out.append(([labels,["Reinforcement / PBD follow-up","Reserve session — no new standard"],field,c[3],c[4]],links))
+                out.append(([labels,["Reinforcement / PBD follow-up",f"Reserve session {reserve_no+1} — no new standard"],field,[reserve_evidence[reserve_no]],c[4]],links))
+                reserve_no+=1
                 continue
             assert len(s["source_parts"])==1
             p=s["source_parts"][0]
@@ -50,7 +58,7 @@ def candidate_schedule(subject,year,rows,root):
     assert sum(loads.values())==5760
     assert sum(w["reserve_slots"] for w in weekly)==5
     original=[r for r in out if r[0][1][0]!="Reinforcement / PBD follow-up"]
-    assert len(out)==101 and len(original)==96
+    assert len(out)==101 and len(original)==96 and reserve_no==5
     assert all(x[0][1:]==y[0][1:] and x[1]==y[1] for x,y in zip(rows,original,strict=True))
     return out,loads,weekly
 
