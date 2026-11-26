@@ -247,7 +247,7 @@ def build_word(subject,year,manifest,lock,*,root=ROOT):
         assert table.rows[i]._tr.get_or_add_trPr().find(qn("w:cantSplit")) is not None
     assert [i for _,i,_ in expected]==source_ids
     assert Counter(rel.target_ref for rel in check.part.rels.values() if rel.reltype==RT.HYPERLINK)==Counter(set(links))
-    blob=paginate(blob)
+    blob=paginate(blob,budget=480 if (subject,year)==('pjpk',3) else 440)
     return blob,raw,source,source_ids,links,ranges
 
 def render(subject,year,out,manifest,lock):
