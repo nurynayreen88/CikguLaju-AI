@@ -13,7 +13,9 @@ SOURCE = "ppki-pengurusan-kehidupan-v1"
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 ENGLISH_SUBJECT = "BAHASA_INGGERIS_PPKI"
 ENGLISH_LABEL = "Bahasa Inggeris (PPKI)"
-SUBJECTS = frozenset((SUBJECT, ENGLISH_SUBJECT))
+MALAY_SUBJECT = "BAHASA_MELAYU_PPKI"
+MALAY_LABEL = "Bahasa Melayu (PPKI)"
+SUBJECTS = frozenset((SUBJECT, ENGLISH_SUBJECT, MALAY_SUBJECT))
 COMPONENT = "pengurusan-diri"
 MANIPULATIVE_COMPONENT = "kemahiran-manipulatif"
 MANIPULATIVE_UNIT1 = "u01-kemahiran-manipulatif"
@@ -227,6 +229,36 @@ def english_catalog(year):
     return units
 
 
+def malay_catalog(year):
+    """Validate the independently released Malay units, not KSSR mainstream BM."""
+    if year != 2:
+        raise ValueError("Unknown PPKI Malay year")
+    try:
+        obj = json.loads(_request("subject-catalog?year=2&subject=" + MALAY_SUBJECT,
+                                  "application/json", 20000))
+    except (UnicodeError, ValueError) as exc:
+        raise NativeRPHUnavailable("Invalid PPKI Malay catalog JSON") from exc
+    if (not isinstance(obj, dict) or obj.get("source") != "ppki-subject-v1"
+            or obj.get("year") != year or obj.get("subject") != MALAY_SUBJECT):
+        raise NativeRPHUnavailable("Invalid PPKI Malay identity")
+    units = obj.get("units")
+    if obj.get("available") is False and units == []:
+        return []
+    expected = {str(i): [f"{n:03d}" for n in range(start, end)]
+                for i, (start, end) in enumerate(((1,6),(6,12),(12,16),(16,21),(21,26),(26,32)),1)}
+    if (obj.get("available") is not True or not isinstance(units, list)
+            or not 1 <= len(units) <= len(expected)
+            or any(not isinstance(entry, dict) for entry in units)
+            or [entry.get("value") for entry in units] != list(expected)[:len(units)]):
+        raise NativeRPHUnavailable("Unexpected PPKI Malay unit scope")
+    for entry in units:
+        _validate_unit(entry, entry["value"], [expected[entry["value"]]])
+        if any(item.get("formats") != list(FORMATS) or
+               not isinstance(item.get("textbook_ref"), str) for item in entry["lessons"]):
+            raise NativeRPHUnavailable("Invalid PPKI Malay lesson metadata")
+    return units
+
+
 def get_options(kind, year, subject=None, component=None, unit=None):
     if kind == "subjects" and year in YEARS:
         legacy = catalog() if year == YEAR else catalog(year)
@@ -238,7 +270,21 @@ def get_options(kind, year, subject=None, component=None, unit=None):
             except NativeRPHUnavailable:
                 # Older backend or temporary failure: keep legacy PPKI usable.
                 pass
-        return subjects
+            try:
+                if malay_catalog(year):
+                    subjects.append({"value": MALAY_SUBJECT, "label": MALAY_LABEL})
+            except NativeRPHUnavailable:
+                pass
+        return sorted(subjects, key=lambda item: item["label"].casefold())
+    if subject == MALAY_SUBJECT:
+        if year != 2 or component not in (None, "") or kind not in ("units", "pdp"):
+            raise ValueError("Invalid PPKI Malay selection")
+        units = malay_catalog(year)
+        if kind == "units":
+            return [{"value": row["value"], "label": row["label"]} for row in units]
+        if unit not in tuple(str(n) for n in range(1, 7)):
+            raise ValueError("Invalid PPKI Malay unit")
+        return next((entry["lessons"] for entry in units if entry["value"] == unit), [])
     if subject == ENGLISH_SUBJECT:
         if year != 2 or component not in (None, "") or kind not in ("units", "pdp"):
             raise ValueError("Invalid PPKI English selection")
@@ -274,10 +320,10 @@ def accepted_unit(year, unit):
 
 
 def validate_selection(year, subject, unit, lesson):
-    if subject == ENGLISH_SUBJECT:
+    if subject in (ENGLISH_SUBJECT, MALAY_SUBJECT):
         selected = next((row for row in get_options("pdp", year, subject, unit=unit) if row["value"] == lesson), None)
         if selected is None:
-            raise ValueError("Invalid PPKI English PdP")
+            raise ValueError("Invalid PPKI PdP")
         return selected
     if subject != SUBJECT or not accepted_unit(year, unit):
         raise ValueError("Invalid PPKI RPH selection")
