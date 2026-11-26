@@ -1,0 +1,40 @@
+name: RPT SK 36 merged-week Word PDF and original cover private QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/build_kssr_rpt_merged_week_batch_20261126.py'
+      - 'web/rpt_native_word_cover.py'
+      - 'tests/test_rpt_native_word_cover.py'
+      - '.github/workflows/kssr-rpt-batch-merged-week-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  layout:
+    strategy:
+      fail-fast: false
+      matrix:
+        subject: [bahasa_melayu, pendidikan_moral, pjpk, psv, muzik, rbt, sejarah, sains, matematik]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx pymupdf flask
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+      - run: python -m tools.build_kssr_rpt_merged_week_batch_20261126 --subject ${{ matrix.subject }} --out "$RUNNER_TEMP/rpt-private"
+      - if: always()
+        run: rm -rf "$RUNNER_TEMP/rpt-private"
+  profile:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx pymupdf flask pillow
+      - run: python -m unittest discover -s tests -p 'test_rpt_native_word_cover.py' -v
