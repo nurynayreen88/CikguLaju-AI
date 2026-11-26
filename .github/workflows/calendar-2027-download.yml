@@ -1,0 +1,20 @@
+name: Calendar 2027 protected exact PDF download
+on:
+  pull_request:
+    paths:
+      - 'web/calendar_2027_download.py'
+      - 'tests/test_calendar_2027_download.py'
+      - 'web_v1_static_preview/index.html'
+      - '.github/workflows/calendar-2027-download.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install flask pymupdf python-docx pillow pypdf docxcompose
+      - run: python -m unittest discover -s tests -p test_calendar_2027_download.py -v
