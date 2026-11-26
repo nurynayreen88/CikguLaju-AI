@@ -1,0 +1,143 @@
+{
+  "status": "private_content_candidate",
+  "minutes_each": 30,
+  "placement": "Before original practice and assessment; original activity phases remain unmodified",
+  "sets": {
+    "science_dlp:4": {
+      "R01": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide a fresh ramp-height results table with three runs per height. Ask pairs to identify the changed, measured and controlled variables, then compare the repeated measurements.",
+        "pupils": "Annotate the variables, compare three readings per condition and write a conclusion citing two values; explain why repeat readings matter."
+      },
+      "R02": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide separate cards showing inhalation, touching a hot object and passing urine. Ask pupils to connect the organ or system to each event and explain its function.",
+        "pupils": "Trace the air route, match the stimulus to a protective response and identify one waste-removal organ; explain each choice on three labelled cards."
+      },
+      "R03": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Distribute animal cards for a fish, frog, bird, mammal and reptile, with breathing clues. Ask pupils to distinguish backbone classification from breathing organs.",
+        "pupils": "Sort the animals into vertebrate groups, match the breathing clues and justify two matches using the cards."
+      },
+      "R04": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide new pictures of roots growing towards water and a plant in light. Ask pupils to distinguish responses to stimuli from the requirements for photosynthesis.",
+        "pupils": "Complete a stimulus-response chart, then label water, carbon dioxide, sunlight, sugar and oxygen on the photosynthesis diagram and explain the distinction."
+      },
+      "R05": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Set up a torch and opaque object; provide a mirror and a diagram of a straw in water. Guide pupils to compare one changed position and observe the other two effects.",
+        "pupils": "Sketch two shadows with the changed position labelled; draw the reflected light path and explain the apparent bend of the straw using the word refraction."
+      },
+      "R06": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Give pupils two room diagrams with hard and soft surfaces. Use a simple clap demonstration at a safe sound level and ask them to compare sound reflection.",
+        "pupils": "Draw the outgoing and reflected sound paths, compare the room surfaces and propose a noise-reduction measure supported by an explanation."
+      },
+      "R07": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Supply cards for sunlight, wind, coal and natural gas alongside a fan and a torch diagram. Ask pupils to distinguish energy sources from energy forms.",
+        "pupils": "Sort the sources as renewable or non-renewable, draw labelled energy transformation arrows for the fan and torch, and identify the useful output."
+      },
+      "R08": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide a property-results chart for wood, metal and plastic. Assign the design of a handle and a transparent cover; ask pupils to compare evidence rather than guess.",
+        "pupils": "Recommend a suitable material for each purpose, cite two relevant observations from the chart and explain why one alternative is less suitable."
+      },
+      "R09": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Use a globe and lamp to model Earth rotating; show a picture of a supported ball and a falling ball. Ask pupils to distinguish the two explanations.",
+        "pupils": "Mark day and night on the globe, demonstrate rotation, and add gravity arrows to both ball diagrams with a short explanation of why the supported ball stays in place."
+      },
+      "R10": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Use a ruler, safe light load and fulcrum to compare two lever arrangements. Provide a picture of a familiar tool containing simple machines.",
+        "pupils": "Predict and compare effort when the load distance changes, record the comparison, and label two simple-machine mechanisms on the tool."
+      }
+    },
+    "science_dlp:5": {
+      "R01": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Give pairs a fresh paper-plane results chart with several trials per condition. Ask them to identify the variables and check whether the conclusion follows from the measured distances.",
+        "pupils": "Annotate the changed, measured and controlled variables; compare the trial results and write a conclusion using two values with a fair-test justification."
+      },
+      "R02": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide a joint-protection diagram and blank heart–lungs–heart pathway. Ask pupils to trace the movement of blood and explain how the respiratory and circulatory systems cooperate.",
+        "pupils": "Label a joint and a protective bone, complete the blood-flow arrows and explain how oxygen from the lungs reaches other body parts."
+      },
+      "R03": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Give a new food web with a producer, insect, bird and predator. Provide animal-defence clue cards; ask pupils to connect each defence to the relevant threat.",
+        "pupils": "Annotate the food web, predict a consequence of reducing the insect population, and justify one defence by naming the threat it reduces."
+      },
+      "R04": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide cards showing thick stems, waxy surfaces, floating fruits and hooked fruits. Ask pupils to distinguish habitat adaptations from seed dispersal mechanisms.",
+        "pupils": "Match each feature to its benefit or dispersal route and explain two predictions using the visible feature as evidence."
+      },
+      "R05": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Using only low-voltage classroom circuit equipment or diagrams, present two parallel branches and a switch. Give a separate picture of a damaged electrical plug.",
+        "pupils": "Trace complete and open paths, predict which lamp lights in each switch position, then state a safe action for the damaged plug without touching it."
+      },
+      "L39": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide two safe-temperature water samples, thermometers and a recording table. Demonstrate the correct probe position and ask pupils to repeat the reading independently.",
+        "pupils": "Measure and record each sample in degrees Celsius, compare the readings and explain that temperature measures how hot or cold an object is, while heat is energy transferred due to a temperature difference."
+      },
+      "R06": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide three thermometer illustrations and drawings of two bridge joints. Ask pupils to read the scales and relate the joint gaps to expansion.",
+        "pupils": "Record three temperatures with units, compare the readings and annotate a bridge joint to explain how its gap accommodates expansion."
+      },
+      "R07": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide results from iron nails kept in dry air, damp air and water with limited air. Show pictures of painted and scratched gates.",
+        "pupils": "Compare the observations to identify the conditions for rusting, then explain how a coating protects iron and why a scratched area needs repair."
+      },
+      "R08": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide a diagram of water evaporating from a surface, forming droplets and falling as rain. Ask pupils to organise the process cards and explain each transition.",
+        "pupils": "Arrange the cards in sequence, label evaporation and condensation using state-change arrows and explain how droplets can form rain."
+      },
+      "L56": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide four labelled-source constellation outline cards and shuffled matching cards for Orion, Big Dipper, Southern Cross and Scorpion. Discuss one documented direction or seasonal use without assuming year-round visibility.",
+        "pupils": "Match and sketch the four patterns, identify two from unlabelled outlines and explain one use of a named constellation, noting that visibility depends on place and time."
+      },
+      "R09": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide eight Moon observation cards and two constellation diagrams. Ask pupils to arrange the four main phases first, then distinguish the two star patterns.",
+        "pupils": "Sequence the four phases, explain the order using observed shapes, identify the constellation patterns and state one use of the Southern Cross."
+      },
+      "R10": {
+        "phase": "Targeted reinforcement",
+        "minutes": 30,
+        "teacher": "Provide labelled and unlabelled drawings of scissors and another familiar tool combining simple machines. Ask pupils to compare the movement of handles and cutting edges.",
+        "pupils": "Label the pivot, lever and wedge on scissors, explain each function and compare with the other tool using its labelled mechanisms."
+      }
+    }
+  }
+}
