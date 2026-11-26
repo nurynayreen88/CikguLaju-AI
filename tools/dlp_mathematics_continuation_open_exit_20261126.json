@@ -340,6 +340,456 @@
           "Identify whether the solid has one base or two matching parallel bases."
         ]
       }
+    },
+    "mathematics_dlp:4": {
+      "3": {
+        "C": [
+          "Show 50,023 and 50,032 on number cards.",
+          "Order them and name the first differing place."
+        ]
+      },
+      "4": {
+        "O": [
+          "Show 50,010 and 50,100.",
+          "Compare the two values by identifying the first differing digit."
+        ],
+        "C": [
+          "Show 37 and 48 counters in pairs on two diagrams.",
+          "Identify the odd and even quantities and explain the leftover counter."
+        ]
+      },
+      "5": {
+        "O": [
+          "Display 24, 35, 46 and 57.",
+          "Classify each as odd or even using its units digit."
+        ],
+        "C": [
+          "Write 49,800, 49,900, __.",
+          "Complete the pattern and state the constant increase."
+        ]
+      },
+      "6": {
+        "O": [
+          "Display 50,100, 50,000, 49,900.",
+          "Identify the descending step and predict the next number."
+        ]
+      },
+      "9": {
+        "C": [
+          "Write 12,450 + 6,700 + 1,350.",
+          "Estimate then calculate the total 20,500."
+        ]
+      },
+      "10": {
+        "O": [
+          "Show the three addends 12,450, 6,700 and 1,350.",
+          "Choose two convenient addends and check the total."
+        ],
+        "C": [
+          "Draw a bar with total 75 and known part 26.",
+          "Write 26 + n = 75 and find n."
+        ]
+      },
+      "11": {
+        "O": [
+          "Display n + 18 = 52.",
+          "Identify the missing addend and check its value by addition."
+        ],
+        "C": [
+          "Show 40,002 − 17 on a place-value mat.",
+          "Identify where the first exchange originates."
+        ]
+      },
+      "12": {
+        "O": [
+          "Display 30,004 − 26.",
+          "Mark the exchanges across the zero digits before solving."
+        ]
+      },
+      "14": {
+        "C": [
+          "Show a stock record: 500 items, 25 delivered, 18 sold.",
+          "Write the addition-subtraction expression and explain each sign."
+        ]
+      },
+      "15": {
+        "O": [
+          "Show 600 + 45 − 20.",
+          "Explain which change adds stock and which removes stock."
+        ],
+        "C": [
+          "Write 324 × 5 as three partial products.",
+          "Calculate the hundreds, tens and ones products and combine them."
+        ]
+      },
+      "16": {
+        "O": [
+          "Show 206 × 4.",
+          "Predict the two nonzero partial products and estimate the answer."
+        ]
+      },
+      "17": {
+        "C": [
+          "Write 426 × 100 and 62 × 1,000.",
+          "Use place value to explain both products."
+        ]
+      },
+      "18": {
+        "O": [
+          "Show 305 × 100 on a place-value mat.",
+          "Predict the new value of the digit 3 and calculate the product."
+        ]
+      },
+      "20": {
+        "C": [
+          "Show 725 ÷ 6 = 120 remainder 5.",
+          "Verify by multiplication and addition and compare the remainder with the divisor."
+        ]
+      },
+      "21": {
+        "O": [
+          "Show 2,115 ÷ 13 = 162 remainder 9.",
+          "Check the quotient and remainder using the inverse operation."
+        ],
+        "C": [
+          "Show 4 boxes of 12 items plus 5 loose items.",
+          "Write the mixed-operation expression and calculate the total."
+        ]
+      },
+      "22": {
+        "O": [
+          "Show a pack of 8 items and three extra items beside five packs.",
+          "Identify the multiplication and addition quantities before calculating."
+        ]
+      },
+      "23": {
+        "C": [
+          "Show 840 books, 120 delivered and 75 borrowed.",
+          "Select operations and calculate the remaining stock."
+        ]
+      },
+      "24": {
+        "O": [
+          "Return the stock bar model with quantities labelled.",
+          "Explain which amount is added and which is subtracted."
+        ],
+        "C": [
+          "Show a story with three equal packs totalling 27 items.",
+          "Identify the unknown and calculate the number per pack."
+        ]
+      },
+      "25": {
+        "O": [
+          "Show 6 × n = 48 beside six equal groups.",
+          "Find the missing quantity and verify by multiplication."
+        ]
+      },
+      "28": {
+        "C": [
+          "Display 1 1/2 + 3/4 on fraction strips.",
+          "Rename the halves in quarters and calculate 2 1/4."
+        ]
+      },
+      "29": {
+        "O": [
+          "Show 1/2 and 1/8 strips.",
+          "Rename one half as four eighths before addition."
+        ],
+        "C": [
+          "Show 2 1/4 − 3/4.",
+          "Exchange one whole for four quarters and calculate 1 1/2."
+        ]
+      },
+      "30": {
+        "O": [
+          "Show 3 1/4 − 1 3/4 using fraction bars.",
+          "Explain the exchange before subtracting."
+        ]
+      },
+      "31": {
+        "C": [
+          "Show 1 1/2 + 3/4 − 1/8.",
+          "Use eighths to represent both operations and calculate 2 1/8."
+        ]
+      },
+      "32": {
+        "O": [
+          "Show a strip marked in eighths with an addition and subtraction arrow.",
+          "Identify the common unit before calculating."
+        ],
+        "C": [
+          "Show 20 counters in five equal groups.",
+          "Find one fifth and then three fifths of the set."
+        ]
+      },
+      "33": {
+        "O": [
+          "Show 15 counters and five equal groups.",
+          "Identify the whole set and one fifth before finding a fraction of it."
+        ]
+      },
+      "34": {
+        "C": [
+          "Write 2.375 + 1.2 + 0.045.",
+          "Align decimal points and calculate 3.620."
+        ]
+      },
+      "35": {
+        "O": [
+          "Show 3.4 and 0.625 on a place-value grid.",
+          "Align units and decimal places before adding."
+        ],
+        "C": [
+          "Write 5.200 − 1.365.",
+          "Align the decimal points and calculate 3.835."
+        ]
+      },
+      "36": {
+        "O": [
+          "Show 8.125 − 2.7 − 0.425.",
+          "Identify the two subtraction steps and verify the final answer by addition."
+        ]
+      },
+      "37": {
+        "C": [
+          "Show 3.406 × 10 and × 100.",
+          "Explain the change of each digit's place value and calculate both products."
+        ]
+      },
+      "38": {
+        "O": [
+          "Show 0.426 × 100 and a place-value mat.",
+          "Predict the product and explain the movement of digits."
+        ],
+        "C": [
+          "Show 15.6 shared equally among three groups.",
+          "Estimate each share then calculate 5.2."
+        ]
+      },
+      "39": {
+        "O": [
+          "Show 8.4 ÷ 4.",
+          "Estimate the quotient before using the place-value mat."
+        ]
+      },
+      "42": {
+        "C": [
+          "Show a word problem with 25% of 80 tickets sold.",
+          "Represent the situation and calculate the 20 tickets sold."
+        ]
+      },
+      "43": {
+        "O": [
+          "Show a bar divided into four equal parts with total 80.",
+          "Identify the part representing 25% before solving a new problem."
+        ]
+      },
+      "45": {
+        "C": [
+          "Show two prices RM12.35 and RM8.90 with RM30 paid.",
+          "Calculate the total RM21.25 and change RM8.75."
+        ]
+      },
+      "46": {
+        "O": [
+          "Show a receipt with a missing total and two item prices.",
+          "Calculate the total and identify the operation for finding change."
+        ]
+      },
+      "48": {
+        "C": [
+          "Show four identical items at RM6.25 each and RM36 shared among eight pupils.",
+          "Calculate the group purchase and the equal share separately."
+        ]
+      },
+      "49": {
+        "O": [
+          "Show RM24.80 divided equally among four people.",
+          "Calculate the share and check by multiplication."
+        ],
+        "C": [
+          "Show three items at RM4.50 each plus RM2.00.",
+          "Write the mixed-operation expression and calculate RM15.50."
+        ]
+      },
+      "50": {
+        "O": [
+          "Show four items at RM3.75 each.",
+          "Identify unit price and quantity and calculate the cost."
+        ]
+      },
+      "53": {
+        "C": [
+          "Show a RM20 budget, a RM7 notebook and RM12 optional stickers.",
+          "Prioritise the needed purchase and explain the effect on savings."
+        ]
+      },
+      "54": {
+        "O": [
+          "Show two prices for a required notebook and a separate optional item.",
+          "Compare the prices and justify a choice within a stated budget."
+        ]
+      },
+      "57": {
+        "C": [
+          "Start with RM50, spend RM13.80 and receive a RM4 refund.",
+          "Record the running balance and check the final RM40.20."
+        ]
+      },
+      "58": {
+        "O": [
+          "Show a transaction table with starting balance RM80 and spending RM25.50.",
+          "Identify the outflow and calculate the remaining balance."
+        ]
+      },
+      "63": {
+        "C": [
+          "Show one century and one millennium on a unit chart.",
+          "Express each in years and explain the relationship."
+        ]
+      },
+      "64": {
+        "O": [
+          "Show 2 centuries and 3 decades.",
+          "Convert both to years before comparing."
+        ],
+        "C": [
+          "Show 1 day 18 hours plus 10 hours.",
+          "Regroup the result as 2 days 4 hours."
+        ]
+      },
+      "65": {
+        "O": [
+          "Show 2 hours 45 minutes plus 35 minutes.",
+          "Identify the regrouping needed when minutes exceed 60."
+        ]
+      },
+      "66": {
+        "C": [
+          "Show 3 blocks of 1 day 8 hours.",
+          "Calculate the total in days and hours."
+        ]
+      },
+      "67": {
+        "O": [
+          "Show 72 hours shared equally over three days.",
+          "Calculate the hours per day using the stated equal division."
+        ],
+        "C": [
+          "Show sessions 9:00–9:40 and 9:30–10:00.",
+          "Identify the ten-minute overlap and propose a nonoverlapping start."
+        ]
+      },
+      "68": {
+        "O": [
+          "Show two timetable entries with a 15-minute overlap.",
+          "Identify the clash and suggest moving the second entry."
+        ]
+      },
+      "71": {
+        "C": [
+          "Display 37 mm and 2,350 m.",
+          "Convert to centimetres and millimetres, and kilometres and metres."
+        ]
+      },
+      "72": {
+        "O": [
+          "Show 45 mm and 3 km 80 m.",
+          "Explain which conversion factor applies to each before converting."
+        ]
+      },
+      "75": {
+        "C": [
+          "Show three lengths of 1 m 25 cm and a 3 m 60 cm ribbon divided into three equal pieces.",
+          "Calculate the total and each equal length."
+        ]
+      },
+      "76": {
+        "O": [
+          "Show four lengths of 75 cm.",
+          "Calculate the total and express it in metres and centimetres."
+        ],
+        "C": [
+          "Show 1 kg 650 g plus 850 g.",
+          "Combine grams and regroup the total as 2 kg 500 g."
+        ]
+      },
+      "77": {
+        "O": [
+          "Show 2 kg 350 g and 750 g on mass bars.",
+          "Identify the gram values and calculate the combined mass."
+        ]
+      },
+      "78": {
+        "C": [
+          "Show 2 L 400 mL shared equally among four jugs.",
+          "Calculate 600 mL per jug."
+        ]
+      },
+      "79": {
+        "O": [
+          "Show 1 L 200 mL plus 850 mL on a capacity bar.",
+          "Convert to a common unit before adding."
+        ],
+        "C": [
+          "Show a recipe using 250 mL per serving for six servings.",
+          "Choose multiplication and give the required volume in millilitres."
+        ]
+      },
+      "80": {
+        "O": [
+          "Show a recipe for five portions using 180 mL each.",
+          "Identify the quantities and choose a calculation for the total."
+        ]
+      },
+      "85": {
+        "C": [
+          "Show a right triangle with base 6 cm and perpendicular height 4 cm on a grid.",
+          "Calculate 12 cm² and explain why it is half the matching rectangle."
+        ]
+      },
+      "86": {
+        "O": [
+          "Show a rectangle and two triangles with the same base and perpendicular height.",
+          "Predict the rectangle-to-triangle area relationship and verify with the formula."
+        ]
+      },
+      "93": {
+        "C": [
+          "Show a recipe for 3 portions using 180 g and a coordinate grid with point (2,4).",
+          "Find the mass for 6 portions and locate the point on the grid."
+        ]
+      },
+      "94": {
+        "O": [
+          "Show a proportional recipe table and a labelled coordinate grid.",
+          "Identify the missing quantity in the table and the ordered pair of a marked point."
+        ]
+      },
+      "96": {
+        "C": [
+          "Show data counts 4, 6, 8 and 2.",
+          "Choose a suitable pictograph key and bar-chart scale, and check the total."
+        ]
+      },
+      "97": {
+        "O": [
+          "Show a pictograph key of one symbol for two votes.",
+          "Convert four symbols to eight votes and identify the matching bar height."
+        ]
+      },
+      "99": {
+        "C": [
+          "Show library choices with 12, 8 and 5 votes.",
+          "Choose a purchase based on the data and justify it with two values."
+        ]
+      },
+      "100": {
+        "O": [
+          "Show two categories with counts 12 and 8.",
+          "Calculate the difference and explain which choice has stronger support."
+        ]
+      }
     }
   }
 }
