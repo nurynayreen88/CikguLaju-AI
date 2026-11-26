@@ -20,7 +20,31 @@ from staging.dlp.year2.downloads import BY_SUBJECT
 from staging.dlp.year6 import render_science
 from web.rph_unified_engine import render_structured_rph
 
-def source_records(year):
+def source_records(year,subject='science_dlp'):
+    if subject=='mathematics_dlp':
+        from staging.dlp.year3 import render_mathematics as m3
+        from staging.dlp.year4 import render_mathematics as m4
+        from staging.dlp.year5 import render_mathematics as m5
+        from staging.dlp.year6 import render_mathematics as m6
+        if year==3:
+            rows=[{'id':i,'title':t,'unit':u,'label':l,'materials':d['Materials']} for i,t,u,l,_,_,d,_ in m3.verify_drafts()]
+        elif year==4:
+            rows=[{'id':i,'title':t,'unit':u,'label':l,'materials':d['Materials']} for i,t,u,l,d,_ in m4.verify_drafts()]
+        else:rows=(m5 if year==5 else m6).load_plans()[1]
+    elif year==2:rows=[p for u in BY_SUBJECT['SCIENCE_DLP'].units for p in u['lessons']]
+    elif year==3:rows=[p for u in year3_science_catalog() for p in u['lessons']]
+    else:rows=render_science.load_plans()[1]
+    output={}
+    for p in rows:
+        ident=p['id'];label=p.get('numbered_label') or p['label']
+        m=re.search(r'\b(Lesson|Review)\s+(\d+)\b',label,re.I)
+        assert m,(ident,label)
+        name=m[1][0].upper()+f'{int(m[2]):02d}'
+        assert name not in output
+        output[name]=p
+    return output
+
+def _old_science_records(year):
     if year==2:rows=[p for u in BY_SUBJECT["SCIENCE_DLP"].units for p in u["lessons"]]
     elif year==3:rows=[p for u in year3_science_catalog() for p in u["lessons"]]
     else:rows=render_science.load_plans()[1]
@@ -72,11 +96,12 @@ def compact_pdf(heading,details,rows,footer,teacher):
         return render_structured_rph(source="dlp",fmt="pdf",heading=heading,details=details,activities=rows,footer=footer,teacher=teacher,compact=True)
 
 def main():
-    a=argparse.ArgumentParser();a.add_argument("--paired",type=Path,required=True);a.add_argument("--rpt-root",type=Path,required=True);a.add_argument("--year",type=int,choices=(2,3,6),required=True);a.add_argument("--out",type=Path,required=True);args=a.parse_args()
-    y=args.year;key=f"science_dlp:{y}"
+    a=argparse.ArgumentParser();a.add_argument("--paired",type=Path,required=True);a.add_argument("--rpt-root",type=Path,required=True);a.add_argument("--year",type=int,choices=(2,3,4,5,6),required=True);a.add_argument("--subject",choices=("science_dlp","mathematics_dlp"),default="science_dlp");a.add_argument("--out",type=Path,required=True);args=a.parse_args()
+    y=args.year;subject=args.subject;key=f"{subject}:{y}";math=subject=="mathematics_dlp"
+    assert y in ((3,4,5,6) if math else (2,3,6))
     data=next(x for x in json.loads(args.paired.read_text())["sets"] if x["key"]==key)
-    source=source_records(y)
-    bank=json.loads((args.rpt_root/"dlp/standard_descriptions"/f"science_year{y}.json").read_text())
+    source=source_records(y,subject)
+    bank=json.loads((args.rpt_root/"dlp/standard_descriptions"/f"{subject.split('_')[0]}_year{y}.json").read_text())
     reviews=json.loads((args.rpt_root/"dlp/standard_descriptions/review_mappings.json").read_text())["mappings"].get(key,{})
     out=args.out;out.mkdir(parents=True,exist_ok=True)
     counts=Counter();issues=[]
@@ -99,12 +124,12 @@ def main():
             assert title and unit
             start="08:00";end="08:30" if s["slot_minutes"]==30 else "09:00"
             teacher={"class":f"{y} Bestari","date":"2027-01-12","time":f"{start} - {end}","students":"30"}
-            heading=("Daily Lesson Plan",f"Science (DLP) · Year {y} SK",title)
+            heading=("Daily Lesson Plan",f"{'Mathematics' if math else 'Science'} (DLP) · Year {y} SK",title)
             details=[("Unit",unit),("Lesson / PdP"," / ".join(labels)),*science_class_fields(teacher,english=True),("Content Standards","\n".join(unique(cs))),("Learning Standards","\n".join(unique(ls))),("Book reference"," · ".join(s["references"])),("Learning objective","\n".join(s["objective"])),("Materials","; ".join(materials))]
             rows=[("Phase","Teacher","Pupils"),*[(p["phase"],p["teacher"],p["pupils"]) for p in activities]]
             footer=[("Reflection","___ of ___ pupils met the learning objective(s). Follow-up: ____________________.")]
             for fmt in ("word","pdf"):
-                blob=render_structured_rph(source="dlp",fmt=fmt,heading=heading,details=details,activities=rows,footer=footer,teacher=teacher,compact=True)
+                blob=render_structured_rph(source="dlp",fmt=fmt,heading=heading,details=details,activities=rows,footer=footer,teacher=teacher,compact=True,mathematics=math)
                 if fmt=="word":
                     doc=Document(BytesIO(blob));assert len(doc.tables)==4
                     text=" ".join(c.text for t in doc.tables for r in t.rows for c in r.cells)
@@ -114,7 +139,7 @@ def main():
                 else:
                     with fitz.open(stream=blob,filetype="pdf") as pdf:
                         old_pages=len(pdf);old_text="".join(pdf[i].get_text() for i in range(len(pdf)))
-                    if old_pages>1 and y==2:
+                    if old_pages>1 and y==2 and not math:
                         blob=compact_pdf(heading,details,rows,footer,teacher)
                         with fitz.open(stream=blob,filetype="pdf") as pdf:
                             new_text="".join(page.get_text() for page in pdf)
@@ -126,12 +151,12 @@ def main():
                     with fitz.open(stream=blob,filetype="pdf") as pdf:
                         assert len(pdf)==1,("PDF page count",len(pdf))
                     suffix="pdf"
-                (out/f"QA_SCI_Y{y}_SESSION_{n:03d}.{suffix}").write_bytes(blob)
+                (out/f"QA_{'MAT' if math else 'SCI'}_Y{y}_SESSION_{n:03d}.{suffix}").write_bytes(blob)
                 counts[fmt]+=1
         except Exception as e:
             issues.append({"session":n,"error":str(e)})
     result={"key":key,"sessions":len(data["sessions"]),"rendered":dict(counts),"issues":issues,"release_ready":False}
     (out/"qa-report.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n")
-    print("SCIENCE_NATIVE_SESSION_QA",json.dumps(result,ensure_ascii=False),flush=True)
+    print("DLP_NATIVE_SESSION_QA",json.dumps(result,ensure_ascii=False),flush=True)
 
 if __name__=="__main__":main()
