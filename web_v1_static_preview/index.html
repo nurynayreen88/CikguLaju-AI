@@ -1097,11 +1097,6 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <h3 id="calendar2027-title">Kalendar Akademik CikguLaju 2027</h3>
   <p>PDF A2 • Cuti sekolah, cuti umum dan tarikh emolumen. Percuma untuk pengguna log masuk.</p>
   <a id="calendar2027-download" class="rpt-download-link" href="/api/rpt/2027/calendar.pdf" download="CikguLaju_Kalendar_2027_A2_Kemas.pdf" hidden>Muat turun Kalendar PDF (A2)</a>
-  <div id="calendar2027-admin" hidden>
-   <label for="calendar2027-file">Admin: pilih PDF A2 versi Kemas yang asal</label>
-   <input id="calendar2027-file" type="file" accept="application/pdf,.pdf">
-   <button id="calendar2027-upload" type="button">Terbitkan kalendar</button>
-  </div>
   <p id="calendar2027-status" role="status" class="notice"></p>
  </div>
  <p class="notice">Semak padanan SK/SP, buku teks dan takwim sekolah sebelum menggunakan RPT.</p>
@@ -2788,36 +2783,17 @@ resetRptSubjects("Pilih tahun dahulu");
 async function refreshCalendar2027(){
  const card=document.getElementById("calendar2027-card");
  const link=document.getElementById("calendar2027-download");
- const admin=document.getElementById("calendar2027-admin");
  const note=document.getElementById("calendar2027-status");
- card.hidden=true;link.hidden=true;admin.hidden=true;
+ card.hidden=true;link.hidden=true;
  try{
   const response=await fetch("/api/rpt/2027/calendar/status",{credentials:"same-origin",cache:"no-store"});
   if(!response.ok)return;
   const data=await response.json();
-  link.hidden=data.ready!==true;
-  admin.hidden=data.admin!==true||data.ready===true;
-  card.hidden=link.hidden&&admin.hidden;
-  note.textContent=data.ready===true?"Sedia dimuat turun.":"PDF asal belum diterbitkan.";
+  if(data.ready!==true)return;
+  card.hidden=false;link.hidden=false;
+  note.textContent="Muat turun terus tanpa menggunakan kuota RPH.";
  }catch(error){}
 }
-document.getElementById("calendar2027-upload").addEventListener("click",async()=>{
- const file=document.getElementById("calendar2027-file").files[0];
- const button=document.getElementById("calendar2027-upload");
- const note=document.getElementById("calendar2027-status");
- if(!file){note.textContent="Pilih fail PDF terlebih dahulu.";return;}
- button.disabled=true;
- note.textContent="Memuat naik PDF asal…";
- try{
-  const response=await fetch("/api/rpt/2027/calendar/upload",{
-   method:"POST",credentials:"same-origin",headers:{"Content-Type":"application/pdf"},body:file
-  });
-  const data=await response.json();
-  if(!response.ok||data.ready!==true)throw Error(data.error||"Muat naik gagal.");
-  await refreshCalendar2027();
- }catch(error){note.textContent=error.message||"Muat naik gagal.";}
- finally{button.disabled=false;}
-});
 async function loadRptCatalog(){
  void refreshCalendar2027();
  rptCatalog=null;
