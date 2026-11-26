@@ -2996,7 +2996,8 @@ rptMobileLink.addEventListener("click",(event)=>{
  void downloadSelectedRpt(item);
 });
 rptCurriculum.addEventListener("change",()=>{
- const years=new Map(rptEntries().map(({year})=>[year.year,rptYearLabel(year.year,year.year_label)]));
+ // KSSR is a shared SK/SJK/DLP selector; do not let subject order change its year labels.
+ const years=new Map(rptEntries().map(({year})=>[year.year,rptYearLabel(year.year,rptCurriculum.value==="kssr"?undefined:year.year_label)]));
  const options=[...years].sort(([a],[b])=>a-b).map(([year,label])=>new Option(label,String(year)));
  resetRptSelect(rptYear,rptCurriculum.value?"Pilih tahun":"Pilih kurikulum dahulu",options);
  resetRptSubjects("Pilih tahun dahulu");
