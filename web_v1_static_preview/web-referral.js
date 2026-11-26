@@ -231,7 +231,8 @@
   }
   async function updateMembers(nextPage = membersPage) {
     const revision = ++membersRequest;
-    const query = new URLSearchParams({page:String(nextPage), referral_status:membersFilter.value});
+    const referralStatus = ["registered", "unpaid", "paid"].includes(membersFilter.value) ? membersFilter.value : "registered";
+    const query = new URLSearchParams({page:String(nextPage), referral_status:referralStatus});
     membersPrev.disabled = membersNext.disabled = true;
     membersStatus.textContent = "Memuatkan senarai affiliate…";
     try {
@@ -240,7 +241,8 @@
       membersPage = nextPage;
       admin.hidden = false;
       membersList.replaceChildren();
-      for (const item of data.items) {
+      const registeredMembers = data.items.filter(item => Number(item.registered_count) > 0);
+      for (const item of registeredMembers) {
         const li = document.createElement("li");
         const name = [item.first_name, item.username && `@${item.username}`].filter(Boolean).join(" ");
         const heading = document.createElement("button");
@@ -263,7 +265,7 @@
         li.append(heading, referrals, balances);
         membersList.append(li);
       }
-      membersStatus.textContent = data.items.length ? `Halaman ${membersPage + 1}` : "Tiada affiliate bagi pilihan ini.";
+      membersStatus.textContent = registeredMembers.length ? `Halaman ${membersPage + 1}` : "Tiada affiliate dengan pendaftaran rujukan bagi pilihan ini.";
       membersPrev.hidden = membersPage === 0;
       membersNext.hidden = !data.more;
     } catch (error) {
