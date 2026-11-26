@@ -6,15 +6,15 @@ from pathlib import Path
 from collections import Counter
 import fitz
 from docx import Document
-from docx.shared import Cm,Pt
+from docx.shared import Cm,Pt,RGBColor
 from docx.enum.table import WD_TABLE_ALIGNMENT,WD_CELL_VERTICAL_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
 from tools.build_rpt_dlp_native_20261126 import PINS,extract,verify_cover,ROOT,SUBJECTS,document_path
 from tools.build_kssr_rpt_merged_week_batch_20261126 import mark,norm,text_cell,hyperlink
 from web.rpt_native_word_cover import add_word_cover,selected_layout
-HEADS=("Week / Date range (A / B)","Lesson / Unit","Content Standard (CS)","Learning Standard (LS)","Learning evidence (PBD)","Book reference / Time")
-WIDTHS=(2.85,4.55,3.75,7.2,6.4,2.45)
+HEADS=("Week / Date\n(A / B)","Lesson / Unit","Content Standard\n(CS)","Learning Standard\n(LS)","Learning Evidence\n(PBD)","Textbook /\nTime")
+WIDTHS=(3.05,4.65,3.65,7.15,6.1,2.7)
 CODE=re.compile(r"(?<![\d.])\d+\.\d+(?:\.\d+)?(?:\([ivx]+\))?|\([ivx]+\)",re.I)
 def descriptions(lines,bank):
     joined=" ".join(lines)
@@ -103,6 +103,51 @@ def polished_cell(cell,lines,*,kind="",bold=False,center=False,shade=None):
                 p.clear()
                 a=p.add_run(m.group());a.bold=True;a.font.name="Arial";a.font.size=Pt(8.5)
                 a=p.add_run(val[m.end():]);a.font.name="Arial";a.font.size=Pt(8.5)
+def apply_table_template(table,subject,*,appendix=False):
+    """Exact formatting from reviewed sample; never copy identity or content."""
+    from docx.oxml import OxmlElement
+    from docx.table import _Cell
+    widths=(13.3,7,7) if appendix else WIDTHS
+    colors=("D5E6DF","EDF4F0","849991","21372F","426658") if subject=="science_dlp" else ("D5E5EF","EDF4F8","879DA9","203B4D","426477")
+    header,week,border,ink,unit=colors
+    def prop(parent,name,attrs):
+        child=parent.find(qn("w:"+name))
+        if child is None:
+            child=OxmlElement("w:"+name);parent.append(child)
+        for k,v in attrs.items():child.set(qn("w:"+k),str(v))
+        return child
+    table.autofit=False
+    for c,w in zip(table.columns,widths):c.width=Cm(w)
+    pr=table._tbl.tblPr
+    prop(pr,"tblW",{"type":"dxa","w":sum(c.width.twips for c in table.columns)})
+    prop(pr,"tblInd",{"type":"dxa","w":0})
+    borders=prop(pr,"tblBorders",{})
+    for side in ("top","left","bottom","right","insideH","insideV"):
+        prop(borders,side,{"val":"single","sz":4 if side.startswith("inside") else 5,"color":border})
+    margins=prop(pr,"tblCellMar",{})
+    for side,w in (("top",55),("bottom",55),("left",85),("right",85)):
+        prop(margins,side,{"type":"dxa","w":w})
+    # Physical cells: avoid repeatedly editing vertical merged start cells.
+    for i,row in enumerate(table.rows):
+        for j,tc in enumerate(row._tr.tc_lst):
+            c=_Cell(tc,table);c.width=Cm(widths[j])
+            is_week=not appendix and j==0
+            centered=i==0 or is_week or (j>0 if appendix else j==5)
+            c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER if centered else WD_CELL_VERTICAL_ALIGNMENT.TOP
+            prop(tc.get_or_add_tcPr(),"shd",{"fill":header if i==0 else week if is_week else "FFFFFF","val":"clear"})
+            for k,p in enumerate(c.paragraphs):
+                p.alignment=WD_ALIGN_PARAGRAPH.CENTER if centered else WD_ALIGN_PARAGRAPH.LEFT
+                p.paragraph_format.space_before=Pt(0)
+                p.paragraph_format.space_after=Pt(2 if not appendix and i and k<len(c.paragraphs)-1 else 0)
+                p.paragraph_format.line_spacing=1.03
+                for run in p.runs:
+                    run.font.name="Arial";run.font.size=Pt(9 if i==0 else 8.5)
+                    run.font.color.rgb=RGBColor.from_string(ink if i==0 else "202729")
+                    if i==0:run.bold=True
+                    elif is_week:run.bold=p.text.startswith("Week ")
+                    elif not appendix and j==1 and p.text.startswith("Unit "):
+                        run.italic=True;run.bold=False;run.font.color.rgb=RGBColor.from_string(unit)
+                    elif not appendix and j==5:run.bold=bool(re.fullmatch(r"\d+\s*min",p.text.strip()))
 def append_notes(doc,lines):
     # The previous cover's complete guidance, teaching allocation, holiday
     # dates and source citations are moved, not deleted. Holiday table last.
@@ -206,6 +251,13 @@ def build_word(subject,year,root=ROOT):
         for i in range(first,last+1):
             expected[i-1]=([f"Week {week:02d}",*label],*expected[i-1][1:])
     preserved_notes=append_notes(doc,notes)
+    apply_table_template(t,subject)
+    apply_table_template(doc.tables[-1],subject,appendix=True)
+    for p in doc.paragraphs:
+        if p.style.name in ("Heading 1","Heading 2"):
+            for run in p.runs:
+                run.font.size=Pt(12 if p.style.name=="Heading 1" else 10)
+                run.font.color.rgb=RGBColor.from_string("315C4C" if subject=="science_dlp" else "31546C")
     stream=BytesIO();doc.save(stream);blob=stream.getvalue()
     check=Document(BytesIO(blob));assert len(check.tables[0].rows)==len(rows)+1
     for i,vals in enumerate(expected,1):
