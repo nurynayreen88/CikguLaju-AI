@@ -27,7 +27,7 @@ jobs:
           from pathlib import Path
           from tempfile import TemporaryDirectory
           from hashlib import sha256
-          from concurrent.futures import ThreadPoolExecutor
+          from concurrent.futures import ProcessPoolExecutor
           import json,fitz
           from tools.build_rpt_dlp_full_standards_20261126 import render,PINS,SUBJECTS,document_path,ROOT
           root=Path(ROOT)
@@ -49,7 +49,7 @@ jobs:
                              "sha256":sha256(data).hexdigest(),"bytes":len(data),"pages":len(b)}
                       dest=output/entry["path"];dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(data)
                   return key,entry
-          with ThreadPoolExecutor(max_workers=2) as pool:
+          with ProcessPoolExecutor(max_workers=2) as pool:
               entries=dict(f.result() for f in [pool.submit(build,k,v) for k,v in PINS.items()])
           assert len(entries)==10 and len(list(output.rglob("*.pdf")))==10 and not list(output.rglob("*.docx"))
           (output/"manifest.json").write_text(json.dumps({"version":1,"status":"LAYOUT_QA_CANDIDATE","count":10,"files":entries},indent=2)+"\n")
