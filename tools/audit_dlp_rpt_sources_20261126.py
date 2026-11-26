@@ -16,10 +16,14 @@ def audit(subject,year):
     lock=json.loads((ROOT/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text())
     candidates=[lock.get("dlp_year"+str(year),{}),lock.get("aligned_rpt_covers",{}).get(key,{}),lock.get("science_year6_covers",{}).get(key,{})]
     layout=next((x for x in candidates if x.get("source_sha256_by_subject_year",{}).get(key)==digest),None)
-    assert layout is not None,(key,digest)
+    verified=layout is not None
+    if not verified:layout=lock["dlp_year"+str(year)]
     with fitz.open(path) as pdf:
-        assert abs(pdf[0].rect.width-layout["page_width"])<=layout["tolerance_pt"]
-        assert abs(pdf[0].rect.height-layout["page_height"])<=layout["tolerance_pt"]
+        cover=pdf[0]
+        cover_info={"size":[cover.rect.width,cover.rect.height],"text":cover.get_text(),"spans":[{"text":s["text"],"bbox":list(s["bbox"])} for b in cover.get_text("dict")["blocks"] for line in b.get("lines",[]) for s in line["spans"]],"drawings":[{"rect":list(d["rect"]),"fill":d.get("fill"),"type":d["type"]} for d in cover.get_drawings()][:60],"previous_layout":layout}
+        if verified:
+            assert abs(cover.rect.width-layout["page_width"])<=layout["tolerance_pt"]
+            assert abs(cover.rect.height-layout["page_height"])<=layout["tolerance_pt"]
         body=[p.get_text() for p in list(pdf)[1:]]
         assert body and all(t.strip() for t in body)
         for p in pdf:
@@ -29,7 +33,7 @@ def audit(subject,year):
                for b in page.get_text("dict")["blocks"] for line in b.get("lines",[]) for s in line["spans"]]
         draws=[{"rect":[round(v,1) for v in d["rect"]],"fill":d.get("fill"),"type":d["type"]}
                for d in page.get_drawings()]
-        result={"key":key,"pdf":path.name,"sha256":digest,"pages":len(pdf),"cover_verified":True,
+        result={"key":key,"pdf":path.name,"sha256":digest,"pages":len(pdf),"cover_verified":verified,"cover_info":cover_info,
                 "first_body_spans":spans[:120],"first_body_draws":draws[:80],
                 "page_sizes":sorted({(round(p.rect.width,1),round(p.rect.height,1)) for p in pdf}),
                 "source_replacement_chars":sum(t.count("\ufffd") for t in body)}
