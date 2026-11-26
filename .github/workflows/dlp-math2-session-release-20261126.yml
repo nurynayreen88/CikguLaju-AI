@@ -1,0 +1,38 @@
+name: Release Math DLP Year 2 fixed weekly sessions
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/prepare_dlp_math2_session_release_20261126.py'
+      - 'tools/dlp_math2_session_calendar_20261126.py'
+      - '.github/workflows/dlp-math2-session-release-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  release:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'fix/dlp-math2-session-release-20261126'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'requests>=2'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libreoffice-writer fonts-liberation2
+      - run: python -m tools.prepare_dlp_math2_session_release_20261126
+      - run: CIKGULAJU_DLP_FLEXIBLE_TIME=1 python -m unittest discover -s tests -p 'test_rpt_full_standards_dlp.py' -v
+      - run: python -m unittest discover -s tests -p 'test_dlp_rpt_weekly_suggestions.py' -v
+      - name: Commit verified Math Y2 assets only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rpt_2027/full_standards_dlp_pdf_2027/mathematics_dlp/tahun_2.pdf rpt_2027/full_standards_dlp_pdf_2027/manifest.json rpt_2027/web_2027_pdfs/original_cover_layout_verified.json
+          git diff --cached --stat
+          git commit -m 'Publish verified fixed-session Math Y2 RPT assets on review branch'
+          git push origin HEAD:refs/heads/fix/dlp-math2-session-release-20261126
