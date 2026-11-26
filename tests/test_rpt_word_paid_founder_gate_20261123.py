@@ -106,6 +106,34 @@ class RPTWordPaidOnlyGate(unittest.TestCase):
                             self.assertIn("attachment",response.headers["Content-Disposition"])
                             self.assertEqual(response.headers["Cache-Control"],"no-store, private")
 
+    def test_legacy_kp2027_group_word_also_requires_paid_account(self):
+        from web.kp2027_year1_rpt_bundle import SUBJECTS as LEGACY_SUBJECTS, GROUPS, document as legacy_document
+        prefix = "/api/rpt/2027/kp2027/tahun-1/"
+        now = datetime.now(timezone.utc)
+        accounts = (
+            ({"telegram_user_id":91,"free_generations_remaining":10}, False),
+            ({"telegram_user_id":92,"vip_expires_at":(now-timedelta(days=1)).isoformat()}, False),
+            ({"telegram_user_id":93,"rakan_pembangun":True}, True),
+            ({"telegram_user_id":94,"vip_expires_at":(now+timedelta(days=3)).isoformat()}, True),
+        )
+        for account, paid in accounts:
+            with patch("web.rpt_2027_all_http._account",return_value=(account,None)):
+                for subject in LEGACY_SUBJECTS:
+                    for group in GROUPS:
+                        url = prefix + subject + "/" + group
+                        response = self.client.get(url + ".docx")
+                        if not paid:
+                            self.assertEqual(response.status_code,403)
+                        else:
+                            data, filename, digest = legacy_document(subject,group,"docx")
+                            self.assertEqual(response.status_code,200)
+                            self.assertEqual(response.data,data)
+                            self.assertEqual(response.headers["X-RPT-Source-SHA256"],digest)
+                        pdf = self.client.get(url + ".pdf")
+                        data, filename, digest = legacy_document(subject,group,"pdf")
+                        self.assertEqual(pdf.status_code,200)
+                        self.assertEqual(pdf.data,data)
+
     def test_word_inventory_has_only_verified_source_documents(self):
         import json
         from pathlib import Path
