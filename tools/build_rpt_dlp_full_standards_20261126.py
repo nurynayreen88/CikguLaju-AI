@@ -6,6 +6,7 @@ from pathlib import Path
 from collections import Counter
 import fitz
 from docx import Document
+from tools.rpt_physical_pages import paginate
 from docx.shared import Cm,Pt,RGBColor
 from docx.enum.table import WD_TABLE_ALIGNMENT,WD_CELL_VERTICAL_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -199,7 +200,7 @@ def build_word(subject,year,root=ROOT):
     cover,png=source_cover(subject,year,root)
     doc=Document();sec=doc.sections[0]
     sec.page_width=Cm(29.7);sec.page_height=Cm(21)
-    sec.left_margin=sec.right_margin=Cm(1.2);sec.top_margin=sec.bottom_margin=Cm(1.05)
+    sec.left_margin=sec.right_margin=Cm(1.2);sec.top_margin=sec.bottom_margin=Cm(1.5)
     sec.header_distance=sec.footer_distance=Cm(.4)
     doc.styles["Normal"].font.name="Arial";doc.styles["Normal"].font.size=Pt(9)
     sec.header.paragraphs[0].text=""
@@ -258,10 +259,13 @@ def build_word(subject,year,root=ROOT):
             for run in p.runs:
                 run.font.size=Pt(12 if p.style.name=="Heading 1" else 10)
                 run.font.color.rgb=RGBColor.from_string("315C4C" if subject=="science_dlp" else "31546C")
+    page_count=paginate(doc,t)
     stream=BytesIO();doc.save(stream);blob=stream.getvalue()
-    check=Document(BytesIO(blob));assert len(check.tables[0].rows)==len(rows)+1
-    for i,vals in enumerate(expected,1):
-        assert all(norm(cell.text)==norm(" ".join(v)) for cell,v in zip(check.tables[0].rows[i].cells,vals)),(key,i)
+    check=Document(BytesIO(blob));assert len(check.tables)==page_count+1
+    actual=[row for table in check.tables[:-1] for row in table.rows[1:]]
+    assert len(actual)==len(rows)
+    for i,(row,vals) in enumerate(zip(actual,expected),1):
+        assert all(norm(cell.text)==norm(" ".join(v)) for cell,v in zip(row.cells,vals)),(key,i)
     assert all(v[2] and v[3] for v in expected)
     return blob,cover,rows,expected,preserved_notes
 def render(subject,year,out):
@@ -277,6 +281,12 @@ def render(subject,year,out):
             new.insert_pdf(front,from_page=0,to_page=0);new.insert_pdf(gen,from_page=1)
             new.save(target,garbage=4,deflate=True)
         with fitz.open(target) as new:
+            assert len(new)==len(Document(BytesIO(blob)).tables)+1,(subject,year,"physical page overflow")
+            for page in list(new)[1:-1]:
+                text=norm(page.get_text())
+                assert all(norm(h) in text for h in HEADS),(subject,year,page.number,"missing heading")
+                rects=[x["rect"] for x in page.get_drawings() if x["rect"].width>10 and x["rect"].height>.1]
+                assert rects and max(r.y1 for r in rects)<=page.rect.height-42,(subject,year,page.number,"bottom margin")
             assert "Main school breaks" not in new[0].get_text()
             assert "Main school breaks" in new[-1].get_text()
             body="\n".join(p.get_text() for p in list(new)[1:])

@@ -34,10 +34,11 @@ jobs:
           folder=Path(os.environ["RUNNER_TEMP"])/"private"
           doc=Document(next(folder.glob("*.docx")))
           table=doc.tables[0]
-          weeks=list(dict.fromkeys(r.cells[0].text.splitlines()[0] for r in table.rows[1:]))
+          rows=[row for t in doc.tables[:-1] for row in t.rows[1:]]
+          weeks=list(dict.fromkeys(r.cells[0].text.splitlines()[0] for r in rows))
           assert weeks==[f"Week {i:02d}" for i in range(1,len(weeks)+1)],weeks
-          assert all(any(p.text for p in r.cells[1].paragraphs) for r in table.rows[1:])
-          assert all(r.cells[2].paragraphs[0].runs[0].bold and r.cells[3].paragraphs[0].runs[0].bold for r in table.rows[1:])
+          assert all(any(p.text for p in r.cells[1].paragraphs) for r in rows)
+          assert all(r.cells[2].paragraphs[0].runs[0].bold and r.cells[3].paragraphs[0].runs[0].bold for r in rows)
           pdf=fitz.open(next(folder.glob("*.pdf")))
           for page in list(pdf)[1:-1]:
               text=page.get_text()
@@ -46,7 +47,7 @@ jobs:
               assert "Group A and Group B | CikguLaju" not in text
               assert re.search(r"Week \d+",text),(page.number,text[:200])
               assert re.search(r"Lesson \d+|Review",text)
-          print(json.dumps({"weeks":len(weeks),"rows":len(table.rows)-1,"pages":len(pdf),"result":"PASS"}))
+          print(json.dumps({"weeks":len(weeks),"rows":len(rows),"pages":len(pdf),"result":"PASS"}))
           if "${{ matrix.subject }}:${{ matrix.year }}"=="science_dlp:6":
               for idx in [1,len(pdf)-2,len(pdf)-1]:
                   print("SAMPLE_BEGIN",idx)
