@@ -4,6 +4,7 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - '.github/workflows/rpt-bm-five-compact-pdf-20261126.yml'
+      - 'tools/build_rpt_bm_compact_20261126.py'
 permissions:
   contents: write
 jobs:
@@ -29,7 +30,7 @@ jobs:
           from tempfile import TemporaryDirectory
           from hashlib import sha256
           import fitz
-          from tools.build_kssr_rpt_merged_week_batch_20261126 import ROOT,render
+          from tools.build_rpt_bm_compact_20261126 import ROOT,render
           source=json.loads((ROOT/"manifest.json").read_text())
           lock=json.loads((ROOT/"original_cover_layout_verified.json").read_text())
           output=ROOT.parent/"compact_bm_pdf_2027"
