@@ -1,0 +1,28 @@
+name: SK English RPT 2027 merged weeks Word PDF private QA
+on:
+  pull_request:
+    paths:
+      - 'tools/build_english_rpt_merged_week_word_pdf_20261126.py'
+      - 'tools/build_english_rpt_2027_review.py'
+      - 'rpt_2027/english/**'
+      - '.github/workflows/english-rpt-merged-week-private-qa.yml'
+permissions:
+  contents: read
+jobs:
+  private-qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx pymupdf reportlab
+      - name: Install document renderer
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+      - name: Verify all 800 lessons, 710 sessions, 220 weekly groups and original PDF covers
+        run: |
+          python -m tools.build_english_rpt_merged_week_word_pdf_20261126 --out "$RUNNER_TEMP/rpt-private-qa"
+      - name: Remove premium files after QA
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/rpt-private-qa"
