@@ -1,38 +1,28 @@
-name: Build 41 explicit-page free RPT PDFs and validate downloads
+name: Verify 41 explicit-page RPT candidates
 on:
   pull_request:
     branches: [production/cikgulaju-web-20261105]
     paths:
+      - 'rpt_2027/compact_free_pdf_2027/**'
+      - 'rpt_2027/compact_approved_pdf_2027/**'
+      - 'rpt_2027/compact_english_pdf_2027/**'
       - '.github/workflows/rpt-41-explicit-page-release-20261126.yml'
 permissions:
-  contents: write
+  contents: read
 jobs:
-  build:
-    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/rpt-kssr-41-explicit-page-tables-20261126'
+  verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
-      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
-      - run: python -m tools.build_rpt_41_fixed_grid_release_20261126
-      - name: Verify actual free and paid routes and original covers
+      - name: Verify actual free and paid routes and unchanged cover geometry
         run: |
           python -m unittest discover -s tests -p 'test_rpt_compact_pdf.py' -v
           python -m unittest discover -s tests -p 'test_rpt_compact_approved_pdf.py' -v
           python -m unittest discover -s tests -p 'test_rpt_compact_language_pdf.py' -v
           python -m unittest discover -s tests -p 'test_rpt_native_word_batch.py' -v
-      - name: Commit only public PDFs and checksum manifests
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- rpt_2027/compact_free_pdf_2027 rpt_2027/compact_approved_pdf_2027 rpt_2027/compact_english_pdf_2027 rpt_2027/web_2027_pdfs/original_cover_layout_verified.json
-          git diff --cached --name-only | python -c 'import sys; p=sys.stdin.read().splitlines(); assert len(p)==45 and sum(s.endswith(".pdf") for s in p)==41 and all(s.endswith(".pdf") or s.endswith("/manifest.json") or s=="rpt_2027/web_2027_pdfs/original_cover_layout_verified.json" for s in p)'
-          git commit -m "build(rpt): 41 explicit-page free PDFs with physical headers and checksum synchronization"
-          git push origin HEAD:refs/heads/feat/rpt-kssr-41-explicit-page-tables-20261126

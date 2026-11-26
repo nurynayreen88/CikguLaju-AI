@@ -1,0 +1,21 @@
+name: Verify ten explicit-page DLP release candidates
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/full_standards_dlp_pdf_2027/**'
+      - '.github/workflows/rpt-dlp-explicit-page-release-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: python -m unittest discover -s tests -p 'test_rpt_full_standards_dlp.py' -v
