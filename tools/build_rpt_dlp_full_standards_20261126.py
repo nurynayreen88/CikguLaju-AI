@@ -186,6 +186,8 @@ def append_notes(doc,lines):
         for j,(cell,v,w) in enumerate(zip(row.cells,holidays[i:i+3],(13.2,7,7))):
             cell.width=Cm(w);polished_cell(cell,[v],center=j>0)
     return lines[begin:cut]+lines[end:]+holidays[2:]
+from tools.rpt_physical_page_tables import split_week_tables
+
 def build_word(subject,year,root=ROOT):
     root=Path(root);key=f"{subject}:{year}"
     path=document_path(subject,year,root=root/"dlp")
@@ -258,10 +260,12 @@ def build_word(subject,year,root=ROOT):
             for run in p.runs:
                 run.font.size=Pt(12 if p.style.name=="Heading 1" else 10)
                 run.font.color.rgb=RGBColor.from_string("315C4C" if subject=="science_dlp" else "31546C")
+    chunks=split_week_tables(doc,t,groups,breaks={7,11,16,22,28,33} if key=="mathematics_dlp:6" else None)
     stream=BytesIO();doc.save(stream);blob=stream.getvalue()
-    check=Document(BytesIO(blob));assert len(check.tables[0].rows)==len(rows)+1
-    for i,vals in enumerate(expected,1):
-        assert all(norm(cell.text)==norm(" ".join(v)) for cell,v in zip(check.tables[0].rows[i].cells,vals)),(key,i)
+    check=Document(BytesIO(blob));body_rows=[row for table in check.tables[:-1] for row in table.rows[1:]]
+    assert len(body_rows)==len(rows) and len(check.tables)==len(chunks)+1
+    for i,(row,vals) in enumerate(zip(body_rows,expected),1):
+        assert all(norm(cell.text)==norm(" ".join(v)) for cell,v in zip(row.cells,vals)),(key,i)
     assert all(v[2] and v[3] for v in expected)
     return blob,cover,rows,expected,preserved_notes
 def render(subject,year,out):
@@ -277,6 +281,11 @@ def render(subject,year,out):
             new.insert_pdf(front,from_page=0,to_page=0);new.insert_pdf(gen,from_page=1)
             new.save(target,garbage=4,deflate=True)
         with fitz.open(target) as new:
+            assert len(new)==len(Document(BytesIO(blob)).tables)+1,(subject,year,"unexpected spill page",len(new))
+            for page in list(new)[1:-1]:
+                page_text=norm(page.get_text())
+                assert all(norm(h) in page_text for h in HEADS),(subject,year,page.number,"missing header")
+                assert all(d["rect"].y1<=page.rect.height-39 for d in page.get_drawings()),(subject,year,page.number,"bottom margin")
             assert "Main school breaks" not in new[0].get_text()
             assert "Main school breaks" in new[-1].get_text()
             body="\n".join(p.get_text() for p in list(new)[1:])
