@@ -266,7 +266,7 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                  if os.environ.get("CIKGULAJU_KSSR_BM_WORD_PRIVATE")=="1"
                  else bm_word.word_document(year,root=root))
                 if code=="bahasa_melayu" and personalization_allowed and ready else None)
-            batch_word = bool(personalization_allowed and (native_word.eligible(code,year,current,root=root) or native_word.eligible_rtl(code,year,current,root=root)))
+            batch_word = bool(personalization_allowed and (native_word.eligible(code,year,current,root=root) or native_word.eligible_rtl(code,year,current,root=root) or (code=='bahasa_melayu' and native_word.eligible_bm_merged(year,current,root=root))))
             entries.append({
                 "year":year,
                 "pdf_ready":ready,
@@ -525,7 +525,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
         english_word=subject=="english" and integrated_english is not None
         dlp_word=subject in DLP_SUBJECTS and year in PUBLISHED_YEARS
         rtl_word=native_word.rtl_enabled() and f"{subject}:{year}" in compact_pdf.RTL_PINS
-        if native_word.enabled() and (rtl_word or f"{subject}:{year}" in native_word.PINS or approved_science or approved_math or english_word or dlp_word):
+        bm_merged=subject=='bahasa_melayu' and year in bm_word.YEARS and native_word.bm_layout_enabled()
+        if native_word.enabled() and (bm_merged or rtl_word or f"{subject}:{year}" in native_word.PINS or approved_science or approved_math or english_word or dlp_word):
             if not _has_paid_access(account):
                 return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
             source=_approved_sk_science_file(subject,year,root) if approved_science else _staged_file(subject,year,root=root)
@@ -545,6 +546,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
                     blob,digest=native_word.dlp_document(subject,year,account,_config(),root=root)
                 elif rtl_word:
                     blob,digest=native_word.rtl_document(subject,year,source,account,_config(),root=root)
+                elif bm_merged:
+                    blob,digest=native_word.bm_merged_document(year,source,account,_config(),root=root)
                 else:
                     blob,digest=native_word.document(subject,year,source,account,_config(),root=root)
             except Exception:

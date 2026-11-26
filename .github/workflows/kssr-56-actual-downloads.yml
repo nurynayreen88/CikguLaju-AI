@@ -1,0 +1,32 @@
+name: All 56 SK RPT actual protected download checks
+on:
+  pull_request:
+    paths:
+      - 'tests/test_rpt_all_56_sk_downloads.py'
+      - 'tools/build_kssr_rpt_merged_week_batch_20261126.py'
+      - 'web/rpt_native_word_batch.py'
+      - 'web/rpt_2027_all_http.py'
+      - '.github/workflows/kssr-56-actual-downloads.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  bm-physical:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y libreoffice-writer fonts-liberation
+      - run: pip install pymupdf python-docx pillow flask pypdf docxcompose
+      - run: python -m tools.build_kssr_rpt_merged_week_batch_20261126 --subject bahasa_melayu --out /tmp/bm-layout
+  all:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pymupdf python-docx pillow flask pypdf docxcompose
+      - run: python -m unittest discover -s tests -p test_rpt_all_56_sk_downloads.py -v

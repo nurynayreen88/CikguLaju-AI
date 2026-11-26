@@ -59,7 +59,7 @@ def mark(el,tag,attrs=None):
 def norm(v):
     return re.sub(r"\s+"," ",v).strip()
 
-def extract_cells(page,rect):
+def extract_cells(page,rect,*,allow_empty_notes=False):
     # Assign whole native text spans to source column bands. Refuse any
     # cross-column text instead of silently clipping it.
     lines=[line for block in page.get_text("dict",clip=rect)["blocks"]
@@ -79,7 +79,8 @@ def extract_cells(page,rect):
             source.append(value)
         for i,parts in enumerate(current):
             if parts:result[i].append(" ".join(parts))
-    if not all(result):raise ValueError("Source RPT has empty required cell")
+    if not all(result[:3]) or (not result[3] and not allow_empty_notes):
+        raise ValueError(f"Source RPT has empty required cell: page {page.number+1}, rect {rect}, empty columns {[i+1 for i,v in enumerate(result) if not v]}, topic {result[0]}")
     if Counter(norm(" ".join(source)).split())!=Counter(norm(" ".join(x for c in result for x in c)).split()):
         raise ValueError("Source span preservation failed")
     if any("\ufffd" in x or any(0xe000<=ord(c)<=0xf8ff for c in x) for cell in result for x in cell):
@@ -117,7 +118,7 @@ def extract(source,subject):
         used_links=[]
         for identity,pageno,rect in rows:
             page=pdf[pageno]
-            cells=extract_cells(page,rect)
+            cells=extract_cells(page,rect,allow_empty_notes=(subject=="bahasa_melayu" and source.name in ("tahun_2.pdf","tahun_3.pdf")))
             markers=[MARKER.fullmatch(x.strip()) for x in cells[0]]
             markers=[(m[1] or "",int(m[2])) for m in markers if m]
             if markers!=[identity]:raise ValueError("Source identity mismatch")
