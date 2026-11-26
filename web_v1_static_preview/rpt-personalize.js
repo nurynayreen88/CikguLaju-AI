@@ -232,8 +232,13 @@
     const actualSha=Array.from(new Uint8Array(
       await crypto.subtle.digest("SHA-256",bytes)
     )).map(b=>b.toString(16).padStart(2,"0")).join("");
-    if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
-    return {bytes,sha:actualSha,paidCover:response.headers.get("X-RPT-Personalization-Allowed")==="1",
+    const transformed=response.headers.get("X-RPT-Layout-Transform")==="dlp-flexible-time-v1";
+    const outputSha=response.headers.get("X-RPT-Output-SHA256");
+    if(transformed){
+      if(!/^(mathematics|science)_dlp$/.test(code)||!outputSha||!/^[a-f0-9]{64}$/.test(outputSha)||actualSha!==outputSha)
+        throw Error("Checksum PDF DLP tidak sepadan. Muat turun dibatalkan.");
+    }else if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
+    return {bytes,sha:transformed?declaredSha:actualSha,paidCover:response.headers.get("X-RPT-Personalization-Allowed")==="1",
             coverUnverified:response.headers.get("X-RPT-Cover-Status")==="unverified",
             ppkiUnits:response.headers.get("content-disposition")?.match(/UNIT_(1_2_3_4_5|2(?:_3(?:_4(?:_5)?)?)?)_2027\.pdf/)?.[1]||"2"};
   }

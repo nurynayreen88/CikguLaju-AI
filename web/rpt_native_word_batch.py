@@ -207,6 +207,9 @@ def dlp_document(subject,year,account,config,*,root):
         doc.part.related_parts[rid]._blob=cover_png(pdf_bytes,lock,key)
         out=BytesIO();doc.save(out)
         result=personalized_word(out.getvalue(),pdf_bytes,lock,key,account,config)
+        if os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1":
+            from web.rpt_dlp_flexible_time import word_without_fixed_minutes
+            result=word_without_fixed_minutes(result)
         return result,hashlib.sha256(result).hexdigest()
     blob,raw,_=build_word(subject,year,root=root)
     if hashlib.sha256(raw).hexdigest()!=dlp_pins[key]:

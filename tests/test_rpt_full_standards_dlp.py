@@ -1,4 +1,4 @@
-import hashlib,io,json,subprocess,unittest,re
+import hashlib,io,json,subprocess,unittest,re,os
 from pathlib import Path
 from unittest.mock import patch
 import fitz
@@ -25,6 +25,9 @@ class FullDLPTest(unittest.TestCase):
             url=f"/api/rpt/2027/all/{subject}/{year}"
             with patch.dict("os.environ",{"CIKGULAJU_RPT_FULL_STANDARDS_DLP":"1","CIKGULAJU_RPT_NATIVE_WORD_BATCH":"1"}):
                 raw,digest=read_full_standards_dlp(subject,year,original,root=ROOT)
+                flexible=os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1"
+                headers=list(HEADS)
+                if flexible:headers[-1]="Textbook"
                 self.assertEqual(digest,e["sha256"])
                 self.assertIsNone(read_full_standards_dlp(subject,year,original+b"x",root=ROOT))
                 with fitz.open(stream=raw,filetype="pdf") as pdf:
@@ -33,22 +36,36 @@ class FullDLPTest(unittest.TestCase):
                     self.assertNotRegex(first,r"(?i)cuti|school breaks|teaching allocation")
                     self.assertIn("Main school breaks",pdf[-1].get_text())
                 with patch("web.rpt_2027_all_http._account",return_value=({"telegram_user_id":9},None)):
-                    self.assertEqual(client.get(url+".pdf").data,raw)
+                    pdf_response=client.get(url+".pdf")
+                    self.assertEqual(pdf_response.status_code,200)
+                    if flexible:
+                        self.assertEqual(pdf_response.headers["X-RPT-Layout-Transform"],"dlp-flexible-time-v1")
+                        self.assertEqual(pdf_response.headers["X-RPT-Output-SHA256"],hashlib.sha256(pdf_response.data).hexdigest())
+                        with fitz.open(stream=pdf_response.data,filetype="pdf") as new,fitz.open(stream=raw,filetype="pdf") as old:
+                            self.assertEqual(old[0].get_pixmap().samples,new[0].get_pixmap().samples)
+                            self.assertFalse(any(re.fullmatch(r"\d+\s*min(?:utes)?",line.strip(),re.I) for p in list(new)[1:-1] for line in p.get_text().splitlines()))
+                    else:self.assertEqual(pdf_response.data,raw)
                     self.assertEqual(client.get(url+".docx").status_code,403)
                 with patch("web.rpt_2027_all_http._account",return_value=({"telegram_user_id":9,"rakan_pembangun":True},None)),patch("web_v1_telegram_auth_routes._config",return_value={"account_backend":"supabase"}),patch("web.rpt_school_cover.school_identity",return_value=identity):
-                    res=client.get(url+".pdf");self.assertEqual(res.data,raw)
+                    res=client.get(url+".pdf");self.assertEqual(res.status_code,200)
+                    if flexible:
+                        self.assertEqual(res.headers["X-RPT-Layout-Transform"],"dlp-flexible-time-v1")
+                        self.assertEqual(res.headers["X-RPT-Output-SHA256"],hashlib.sha256(res.data).hexdigest())
+                    else:self.assertEqual(res.data,raw)
                     self.assertEqual(res.headers["X-RPT-Source-SHA256"],digest)
                     self.assertEqual(res.headers["X-RPT-Personalization-Allowed"],"1")
                     from web.rpt_native_word_batch import dlp_document
                     dlp_document(subject,year,{"telegram_user_id":9,"rakan_pembangun":True},{"account_backend":"supabase"},root=ROOT)
                     word=client.get(url+".docx");self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else key)
-                    doc=Document(io.BytesIO(word.data));self.assertEqual([c.text for c in doc.tables[0].rows[0].cells],list(HEADS))
+                    doc=Document(io.BytesIO(word.data));self.assertEqual([c.text for c in doc.tables[0].rows[0].cells],headers)
                     self.assertGreater(len(doc.tables),2)
                     for table in doc.tables[:-1]:
-                        self.assertEqual([c.text for c in table.rows[0].cells],list(HEADS))
+                        self.assertEqual([c.text for c in table.rows[0].cells],headers)
                     for row in (r for t in doc.tables[:-1] for r in t.rows[1:]):
                         for cell in row.cells[2:4]:
                             self.assertRegex(cell.text,r"\d+\.\d+.*[A-Za-z]")
+                    if flexible:
+                        self.assertFalse(any(re.fullmatch(r"\d+\s*min(?:utes)?",p.text.strip(),re.I) for t in doc.tables[:-1] for row in t.rows[1:] for p in row.cells[-1].paragraphs))
                     self.assertTrue(any("Main school breaks" in p.text for p in doc.paragraphs))
                     from docx.oxml.ns import qn
                     for table in doc.tables:

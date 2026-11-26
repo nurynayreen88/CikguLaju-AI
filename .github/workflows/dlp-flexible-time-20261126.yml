@@ -1,0 +1,26 @@
+name: DLP flexible time ten actual documents
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web/rpt_dlp_flexible_time.py'
+      - 'web/rpt_native_word_batch.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'tools/verify_dlp_flexible_time_20261126.py'
+      - '.github/workflows/dlp-flexible-time-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: python -m tools.verify_dlp_flexible_time_20261126
+      - run: CIKGULAJU_DLP_FLEXIBLE_TIME=1 python -m unittest discover -s tests -p 'test_rpt_full_standards_dlp.py' -v
