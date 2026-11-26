@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "LAYOUT_QA_CANDIDATE",
-  "count": 9,
+  "count": 10,
   "files": {
     "pendidikan_islam:2": {
       "path": "pendidikan_islam/tahun_2.pdf",
@@ -72,6 +72,14 @@
       "source_sha256": "279d576410b261261190e3a8cb146cbd333bea5f04d31f5bd4711130cfdc4f30",
       "sha256": "d65b0d9cd8d555520157828255215772773787a97b21f21e27c8312450cac40b",
       "bytes": 290861,
+      "pages": 12,
+      "source_pages": 12
+    },
+    "bahasa_arab:2": {
+      "path": "bahasa_arab/tahun_2.pdf",
+      "source_sha256": "ed5699127c118f28fe86cff6edef6e8ee85e7d787e5ef753cb251a771b4ea4b7",
+      "sha256": "fa8bba5a11623b7dadba65d26677981f821247d67cf8ceecb23c7d9f2cd74dff",
+      "bytes": 409413,
       "pages": 12,
       "source_pages": 12
     }
