@@ -20,6 +20,7 @@ from tools.prepare_dlp_week_column_release_20261126 import verify_bottom
 
 def candidate_rows(subject,year):
     key=f"{subject}:{year}";p=plan(subject,year)
+    bank=json.loads(Path(__file__).with_name("dlp_session_targeted_reinforcement_20261126.json").read_text())["sets"][key];used_bank=set()
     with fitz.open(document_path(subject,year,root=ROOT/"dlp")) as pdf:source=extract(pdf)
     mappings=json.loads((ROOT/"dlp/standard_descriptions/review_mappings.json").read_text())["mappings"].get(key,{})
     lookup={};review=0
@@ -50,7 +51,8 @@ def candidate_rows(subject,year):
                 c,links,field=lookup[label]
                 title.append(f"Reserve / PBD — reference {label}")
                 fields.extend(field)
-                evidence.extend(["Candidate follow-up; activity requires review. Source evidence:",*c[3]])
+                pupils,_=bank[label];used_bank.add(label)
+                evidence.append(pupils)
                 reference.extend(c[4]);urls.extend(links)
             else:
                 for part in parts:
@@ -63,11 +65,15 @@ def candidate_rows(subject,year):
                     fields.extend(field)
                     evidence.extend([f"{label} source evidence:",*c[3]])
                     reference.extend(c[4]);urls.extend(links)
+                if s["reserve_minutes"]:
+                    pupils,_=bank[previous];used_bank.add(previous)
+                    evidence.append("Targeted reinforcement: "+pupils)
                 if s["status"]!="EXACT_SOURCE_SLOT_VERIFY_RPH":
                     evidence.append("Candidate session — activity scope requires review.")
             # No internal duration is printed in the public-style document.
             reference=[v for v in reference if not re.fullmatch(r"\d+\s*min(?:utes)?",v.strip(),re.I)]
             result.append(([date_label,title,fields,evidence,list(dict.fromkeys(reference))],list(dict.fromkeys(urls))))
+    assert used_bank==set(bank),(key,used_bank^set(bank))
     assert len(result)==p["sessions"]
     return result,loads,p
 
