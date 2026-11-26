@@ -1,0 +1,79 @@
+name: Build polished DLP free PDF release and synchronize cover hashes
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - '.github/workflows/rpt-dlp-polished-release-20261126.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/rpt-dlp-table-polish-20261126'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+      - name: Render and verify all ten before replacing any released candidate
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from tempfile import TemporaryDirectory
+          from hashlib import sha256
+          from concurrent.futures import ProcessPoolExecutor
+          import json,fitz,re
+          from docx import Document
+          from tools.build_rpt_dlp_full_standards_20261126 import render,PINS,ROOT
+          root=Path(ROOT)
+          output=root/"full_standards_dlp_pdf_2027"
+          m=json.loads((output/"manifest.json").read_text())
+          lockpath=root/"web_2027_pdfs"/"original_cover_layout_verified.json"
+          lock=json.loads(lockpath.read_text())
+          def build(key):
+              subject,y=key.split(":");year=int(y)
+              entry=m["files"][key].copy()
+              dest=output/entry["path"]
+              assert sha256(dest.read_bytes()).hexdigest()==entry["sha256"]
+              with TemporaryDirectory() as temp:
+                  render(subject,year,Path(temp))
+                  candidate=Path(temp)/f"RPT_{subject}_Year_{year}_2027.pdf"
+                  word=Document(candidate.with_suffix(".docx"))
+                  weeks=list(dict.fromkeys(r.cells[0].text.splitlines()[0] for r in word.tables[0].rows[1:]))
+                  assert weeks==[f"Week {i:02d}" for i in range(1,len(weeks)+1)]
+                  with fitz.open(dest) as old,fitz.open(candidate) as new:
+                      assert old[0].get_pixmap().samples==new[0].get_pixmap().samples
+                      for p in list(new)[1:-1]:
+                          t=p.get_text()
+                          assert "Content Standard (CS)" in t and "Learning Standard (LS)" in t and re.search(r"Week \d+",t)
+                          assert "YEARLY TEACHING PLAN 2027 |" not in t
+                      assert "Main school breaks" in new[-1].get_text()
+                      data=candidate.read_bytes()
+                      entry.update(sha256=sha256(data).hexdigest(),bytes=len(data),pages=len(new))
+                  return key,entry,data
+          with ProcessPoolExecutor(max_workers=2) as pool:
+              results=list(pool.map(build,PINS))
+          assert len(results)==10
+          for key,entry,data in results:
+              (output/entry["path"]).write_bytes(data)
+              m["files"][key]=entry
+              lock["full_standards_dlp_pdf_covers"]["source_sha256_by_subject_year"][key]=entry["sha256"]
+          (output/"manifest.json").write_text(json.dumps(m,indent=2)+"\n")
+          lockpath.write_text(json.dumps(lock,indent=2)+"\n")
+          PY
+      - name: Verify actual download and profile routes against new files
+        run: python -m unittest discover -s tests -p 'test_rpt_full_standards_dlp.py' -v
+      - name: Commit only free PDFs and checksum manifests
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- rpt_2027/full_standards_dlp_pdf_2027 rpt_2027/web_2027_pdfs/original_cover_layout_verified.json
+          git diff --cached --name-only | python -c 'import sys; p=sys.stdin.read().splitlines(); assert len(p)==12 and all(s=="rpt_2027/web_2027_pdfs/original_cover_layout_verified.json" or (s.startswith("rpt_2027/full_standards_dlp_pdf_2027/") and (s.endswith(".pdf") or s.endswith("/manifest.json"))) for s in p)'
+          git commit -m "build(rpt): ten polished DLP free PDFs and synchronized cover hashes"
+          git push origin HEAD:refs/heads/feat/rpt-dlp-table-polish-20261126
