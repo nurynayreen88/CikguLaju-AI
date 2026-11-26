@@ -25,7 +25,10 @@ from web.rpt_native_word_cover import add_word_cover,cover_png
 ROOT=Path("rpt_2027/web_2027_pdfs")
 BANDS=(35,198.89,408.89,533.89,713.89,818.89)
 WIDTHS=(3.15,6.25,4.30,7.60,6.10)
-HEADERS=("MINGGU / TARIKH","UNIT / TAJUK / PdP","SK","SP","CATATAN / BAHAN")
+HEADERS={
+    "pendidikan_islam":("ميڠݢو / تاريخ","بيدڠ / تاجوق / ڤدڤ","ستندرد كاندوڠن","ستندرد ڤمبالجرن","چاتتن / باهن"),
+    "bahasa_arab":("الأسبوع / التاريخ","الوحدة / الموضوع / الدرس","معيار المحتوى","معيار التعلم","الملاحظات / الوسائل"),
+}
 RTL=re.compile(r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff]")
 BAD=re.compile(r"[\ufffd\ue000-\uf8ff]")
 PRESENTATION=re.compile(r"[\ufb50-\ufdff\ufe70-\ufefc]")
@@ -182,7 +185,7 @@ def build_word(subject,year,root=ROOT):
     table.alignment=WD_TABLE_ALIGNMENT.CENTER
     mark(table._tbl.tblPr,"w:bidiVisual",{"w:val":"1"})
     color="ECE4F6" if subject=="pendidikan_islam" else "E7EEDB"
-    for i,(header,width) in enumerate(zip(HEADERS,WIDTHS)):
+    for i,(header,width) in enumerate(zip(HEADERS[subject],WIDTHS)):
         table.columns[i].width=Cm(width);table.rows[0].cells[i].width=Cm(width)
         rtl_cell(table.rows[0].cells[i],header,bold=True,center=True,shade=color)
     mark(table.rows[0]._tr.get_or_add_trPr(),"w:tblHeader")
@@ -241,7 +244,7 @@ def render(subject,year,out):
             assert found==ids
             for p in list(pdf)[1:]:
                 assert abs(p.rect.width-841.89)<2 and abs(p.rect.height-595.28)<2
-                assert all(norm(h).casefold() in norm(p.get_text()).casefold() for h in HEADERS)
+                assert all(norm(h) in norm(unicodedata.normalize('NFKC',p.get_text())) for h in HEADERS[subject])
             assert Counter(l["uri"] for p in list(pdf)[1:] for l in p.get_links() if l["kind"]==fitz.LINK_URI)==Counter(links)
             print(json.dumps({"subject":subject,"year":year,"lessons":len(ids),"links":len(links),
                               "pages_before":len(orig),"pages_after":len(pdf),
