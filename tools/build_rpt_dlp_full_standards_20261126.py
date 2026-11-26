@@ -189,7 +189,7 @@ def append_notes(doc,lines):
     return lines[begin:cut]+lines[end:]+holidays[2:]
 from tools.rpt_physical_page_tables import split_week_tables,next_page_section
 
-def build_word(subject,year,root=ROOT,*,whole_weeks=False):
+def build_word(subject,year,root=ROOT,*,whole_weeks=False,compact_sizes=None,pilot=False):
     root=Path(root);key=f"{subject}:{year}"
     path=document_path(subject,year,root=root/"dlp")
     raw=path.read_bytes();assert sha256(raw).hexdigest()==PINS[key]
@@ -268,7 +268,14 @@ def build_word(subject,year,root=ROOT,*,whole_weeks=False):
             for run in p.runs:
                 run.font.size=Pt(12 if p.style.name=="Heading 1" else 10)
                 run.font.color.rgb=RGBColor.from_string("315C4C" if subject=="science_dlp" else "31546C")
-    chunks=split_week_tables(doc,t,groups,breaks={7,11,16,22,28,33} if key=="mathematics_dlp:6" and not whole_weeks else None)
+    if whole_weeks and compact_sizes is None and not pilot:
+        release=json.loads((root/"full_standards_dlp_pdf_2027/manifest.json").read_text())
+        compact_sizes=release.get("page_groups",{}).get(key)
+    if pilot or compact_sizes is not None:
+        from tools.rpt_dlp_compact_pagination_20261126 import compact_table
+        chunks=compact_table(doc,t,groups,compact_sizes)
+    else:
+        chunks=split_week_tables(doc,t,groups,breaks={7,11,16,22,28,33} if key=="mathematics_dlp:6" and not whole_weeks else None)
     stream=BytesIO();doc.save(stream);blob=stream.getvalue()
     check=Document(BytesIO(blob));body_rows=[row for table in check.tables[:-1] for row in table.rows[1:]]
     assert len(body_rows)==len(rows) and len(check.tables)==len(chunks)+1
@@ -276,8 +283,8 @@ def build_word(subject,year,root=ROOT,*,whole_weeks=False):
         assert all(norm(cell.text)==norm(" ".join(v)) for cell,v in zip(row.cells,vals)),(key,i)
     assert all(v[2] and v[3] for v in expected)
     return blob,cover,rows,expected,preserved_notes
-def render(subject,year,out,*,whole_weeks=False):
-    blob,cover,rows,expected,notes=build_word(subject,year,whole_weeks=whole_weeks)
+def render(subject,year,out,*,whole_weeks=False,compact_sizes=None):
+    blob,cover,rows,expected,notes=build_word(subject,year,whole_weeks=whole_weeks,compact_sizes=compact_sizes)
     heads=(*HEADS[:-1],"Textbook") if whole_weeks else HEADS
     name=f"RPT_{subject}_Year_{year}_2027"
     word=out/(name+".docx");word.write_bytes(blob)
