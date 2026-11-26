@@ -30,20 +30,31 @@ def logical(s):
 def cells(page,rect):
     out=[[] for _ in range(4)]
     source=[]
-    for block in page.get_text("dict",clip=rect)["blocks"]:
+    for block in page.get_text("rawdict",clip=rect)["blocks"]:
         for line in block.get("lines",()):
             buckets=[[] for _ in out]
             for s in line["spans"]:
-                v=s["text"]
-                if not v.strip():continue
-                x0,_,x1,_=s["bbox"]
-                ix=[i for i,(a,b) in enumerate(zip(BANDS,BANDS[1:])) if a-1<=x0 and x1<=b+1]
-                if len(ix)!=1:raise ValueError(("cross-column span",page.number,v[:60],s["bbox"]))
-                if "\ufffd" in v or any(0xe000<=ord(c)<=0xf8ff for c in v):raise ValueError("unresolved source glyph")
-                buckets[3-ix[0]].append(logical(v));source.append(logical(v))
+                for ch in s["chars"]:
+                    v=ch["c"]
+                    if "\ufffd" in v or any(0xe000<=ord(c)<=0xf8ff for c in v):raise ValueError("unresolved source glyph")
+                    x0,_,x1,_=ch["bbox"]
+                    mid=(x0+x1)/2
+                    ix=[i for i,(a,b) in enumerate(zip(BANDS,BANDS[1:])) if a<=mid<b]
+                    if not ix:
+                        if not v.strip():continue
+                        raise ValueError(("unassigned source character",page.number,v,ch["bbox"]))
+                    # A PDF span can contain several independent cells; a glyph
+                    # itself must not substantially straddle a physical rule.
+                    a,b=BANDS[ix[0]:ix[0]+2]
+                    if v.strip() and (x0<a-2 or x1>b+2):
+                        raise ValueError(("cross-column glyph",page.number,v,ch["bbox"]))
+                    buckets[3-ix[0]].append(logical(v));source.append(logical(v))
             for i,parts in enumerate(buckets):
-                if parts:out[i].append(" ".join(parts))
-    assert Counter(norm(" ".join(source)).split())==Counter(norm(" ".join(x for cell in out for x in cell)).split())
+                if parts and "".join(parts).strip():out[i].append("".join(parts).strip())
+    # Compare all non-space glyphs; geometry may introduce a synthetic gap
+    # between independent spans, but no original glyph may be discarded.
+    glyphs=lambda s:Counter(c for c in s if not c.isspace())
+    assert glyphs("".join(source))==glyphs("".join(x for cell in out for x in cell))
     assert all(out),("empty source cell",page.number,rect)
     return out
 def set_cell(cell,lines,*,center=False,bold=False,shade=None):
