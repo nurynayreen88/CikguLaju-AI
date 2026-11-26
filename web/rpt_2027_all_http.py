@@ -645,7 +645,11 @@ def create_all_rpt_blueprint(*,root=ROOT):
         if integrated is not None:
             if digest is None:
                 return jsonify({"error": "PDF RPT English bersepadu belum dapat disahkan."}), 503
-            response = send_file(integrated, mimetype="application/pdf", as_attachment=True,
+            content=integrated.read_bytes()
+            compact=compact_pdf.read_language(subject,year,content,root=root)
+            if compact is not None:
+                content,digest=compact
+            response = send_file(BytesIO(content), mimetype="application/pdf", as_attachment=True,
                                  download_name=integrated.name, conditional=False)
             response.headers["X-RPT-Source-SHA256"] = digest
             response.headers["X-RPT-Personalization-Allowed"] = "1" if _has_paid_access(account) else "0"
@@ -683,6 +687,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
         # cover has not been reviewed. Entitlement is unchanged; the browser
         # must not fetch private profile data or stamp an unreviewed cover.
         compact=compact_pdf.read(subject,year,content,root=root) if staged is not None else None
+        if compact is None and staged is not None and subject=="bahasa_melayu":
+            compact=compact_pdf.read_language(subject,year,content,root=root)
         if compact is not None:
             content,digest=compact
         response=send_file(BytesIO(content),mimetype="application/pdf",as_attachment=True,
