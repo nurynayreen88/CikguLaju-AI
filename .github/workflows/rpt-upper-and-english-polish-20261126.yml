@@ -3,6 +3,7 @@ on:
   pull_request:
     branches: [production/cikgulaju-web-20261105]
     paths:
+      - 'tools/rpt_kssr_physical_pages.py'
       - 'tools/rpt_source_table_polish.py'
       - 'tools/build_rpt_math_upper_native_word_20261126.py'
       - 'tools/build_rpt_science_approved_word_20261126.py'
