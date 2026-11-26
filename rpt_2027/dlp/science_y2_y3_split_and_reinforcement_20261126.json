@@ -1,0 +1,233 @@
+{
+  "status": "PRIVATE_CONTENT_REVIEW",
+  "split_sources": {
+    "science_dlp:2": {
+      "L02": {
+        "part1": {
+          "teacher": "Sort six animal cards using one visible feature, modelling opposite group labels. Ask each pair to explain a placement and photograph or record their completed groups.",
+          "pupils": "Sort and label six cards; explain the selected feature using one animal."
+        },
+        "part2": {
+          "teacher": "Ask pupils to reconstruct the rule using two of their saved cards, then test a second visible feature on the same set.",
+          "pupils": "Re-sort the cards by a different feature and explain why a card changes groups."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      },
+      "L24": {
+        "part1": {
+          "teacher": "Use tomato growth cards to model the sequence from seed to germination. Guide groups to place the young plant, flowering and fruiting cards and identify a visible clue.",
+          "pupils": "Order all five cards and annotate a clue for each neighbouring pair."
+        },
+        "part2": {
+          "teacher": "Revisit the group's completed tomato sequence and ask pupils to explain the transition from flowering to fruiting.",
+          "pupils": "Point to the changes in two neighbouring stages and prepare to order the new okra cards independently."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      },
+      "L36": {
+        "part1": {
+          "teacher": "Use a safe dry-cell kit with an open switch. Present a single fault at a time and model predicting where the circuit is incomplete before checking. Open the switch before handling components.",
+          "pupils": "Predict and check faults in the low-voltage kit; record the observed result for each safe test."
+        },
+        "part2": {
+          "teacher": "Present a different incomplete circuit diagram; ask pupils to use their earlier records to choose the first point to check.",
+          "pupils": "Mark the suspected break, explain the prediction and check the proposed correction using the teacher's diagram."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      }
+    },
+    "science_dlp:3": {
+      "L18": {
+        "part1": {
+          "teacher": "Use picture cards to model food being broken into smaller components and locate the process in the digestive system. Build a class sequence without real food.",
+          "pupils": "Order the picture cards and explain what changes at each stage."
+        },
+        "part2": {
+          "teacher": "Revisit the sequence and use a nutrient card to connect smaller components to the body's use of nutrients.",
+          "pupils": "Explain the link between breaking food down and the body using nutrients before completing the individual explanation."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      },
+      "L26": {
+        "part1": {
+          "teacher": "Model a two-step cause-and-effect chain showing new plants replacing old plants. Give groups food, shelter and survival context cards.",
+          "pupils": "Arrange arrows to show the replacement of plants and identify one organism that depends on them."
+        },
+        "part2": {
+          "teacher": "Ask pupils to revisit their arrows and predict the result if the supply of new plants stops.",
+          "pupils": "Explain the predicted consequence using the chosen context, then prepare an individual cause-and-effect diagram."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      },
+      "L32": {
+        "part1": {
+          "teacher": "Model packing a full layer of unit cubes in a box without gaps. Guide pairs to count the first layer and fill remaining layers.",
+          "pupils": "Pack the cubes, record the number in each layer and calculate the total."
+        },
+        "part2": {
+          "teacher": "Review the saved layer counts and check an example with a missing cube. Model recording the total in cm³.",
+          "pupils": "Correct the example and explain why each layer must be complete before independently measuring a small box."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      },
+      "L35": {
+        "part1": {
+          "teacher": "Prepare area and volume stations. Demonstrate a suitable tool and a technique for each; supervise pupils measuring at both stations.",
+          "pupils": "Measure or check one area and one volume, and record the results with units."
+        },
+        "part2": {
+          "teacher": "Ask pairs to compare their recorded values and explain why the chosen tool and unit match each measurement.",
+          "pupils": "Check both units and rehearse one evidence-based reason for a tool or method choice before individual assessment."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      },
+      "L38": {
+        "part1": {
+          "teacher": "Show a potato piece in fresh water and provide a pretested salt solution. Help groups plan two trials, keeping the object and liquid amount similar.",
+          "pupils": "Test the same piece in both liquids and record whether it floats or sinks."
+        },
+        "part2": {
+          "teacher": "Revisit the two trial records and ask what changed when salt dissolved. Compare the same piece in both liquids.",
+          "pupils": "Use the observations to explain how the denser salt solution changed the outcome."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      },
+      "L41": {
+        "part1": {
+          "teacher": "Compare documented descriptions of familiar acidic and alkaline examples with separate litmus records. Explain safe evidence sources and do not allow tasting or touching unknown liquids.",
+          "pupils": "Use the cards to compare examples, separating description evidence from indicator-colour evidence."
+        },
+        "part2": {
+          "teacher": "Present an unlabelled-liquid scenario and ask pupils to select a safe evidence source.",
+          "pupils": "Explain why an unknown sample must be referred to the teacher and use the documented indicator results for comparison."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      },
+      "L47": {
+        "part1": {
+          "teacher": "Use a checked chart of four planets' revolution periods in consistent units. Model ordering one pair and guide groups to order all four.",
+          "pupils": "Arrange the four planets by period and record each value with its unit."
+        },
+        "part2": {
+          "teacher": "Provide the distance row from the same chart; ask pupils to compare the two ordered sets.",
+          "pupils": "Identify the distance–period pattern supported by the chart before completing the individual task."
+        },
+        "structure": "Part 1: original induction, guided main activity and evidence checkpoint. Part 2: recap/continuation, original independent assessment and closure."
+      }
+    }
+  },
+  "reinforcement_sessions": {
+    "science_dlp:2": {
+      "32": {
+        "source": "L30",
+        "minutes": 30,
+        "teacher": "Give pupils a new set of opaque, translucent and transparent materials. Hold torch, screen and material positions constant.",
+        "pupils": "Observe each shadow, record its clarity and justify the comparison using the three results."
+      },
+      "35": {
+        "source": "L33",
+        "minutes": 30,
+        "teacher": "Supply low-voltage component trays and two circuit drawings in different layouts. Ask pupils to locate the same components without connecting to mains electricity.",
+        "pupils": "Match and label cells, bulbs and switches in each layout; distinguish each component from its holder or connecting wire."
+      },
+      "42": {
+        "source": "L38",
+        "minutes": 30,
+        "teacher": "Provide a working low-voltage tester and safe samples of metal, wood and plastic; check the tester first.",
+        "pupils": "Predict, test and classify the samples; record evidence for whether each allows current through the tester."
+      },
+      "48": {
+        "source": "L43",
+        "minutes": 30,
+        "teacher": "Provide two teacher-prepared safe-temperature water samples and equal sugar portions; keep the amounts and stirring identical.",
+        "pupils": "Time the disappearance of visible grains, compare the two readings and identify temperature as the changed factor."
+      },
+      "50": {
+        "source": "L44",
+        "minutes": 30,
+        "teacher": "Use equal amounts of salt and water at the same temperature; stir one cup steadily while leaving the other still.",
+        "pupils": "Record visible grains at agreed intervals, compare the cups and explain the effect of stirring."
+      },
+      "57": {
+        "source": "L51",
+        "minutes": 30,
+        "teacher": "Provide a prepared covered bowl with droplets under the cooled cover and a labelled water-cycle picture.",
+        "pupils": "Sketch the droplets' path, compare the model to cloud formation and rain, and explain what the cooled cover represents."
+      },
+      "59": {
+        "source": "L53",
+        "minutes": 30,
+        "teacher": "Provide an air-mixture diagram with oxygen and carbon dioxide labels removed and a separate set of gas cards.",
+        "pupils": "Place the labels, explain why air is a mixture and identify the gas needed for breathing."
+      },
+      "63": {
+        "source": "L57",
+        "minutes": 30,
+        "teacher": "Show a teacher demonstration of air escaping from a tilted submerged cup and a paper sail moving in moving air.",
+        "pupils": "Record one observation from each demonstration and explain what each shows about air."
+      },
+      "69": {
+        "source": "L63",
+        "minutes": 30,
+        "teacher": "Provide a completed model and a comparison photograph showing one support removed. Ask pupils to inspect the parts safely.",
+        "pupils": "Record two visible features and explain how the support helps the model stand or function."
+      }
+    },
+    "science_dlp:3": {
+      "1": {
+        "source": "L01",
+        "minutes": 30,
+        "teacher": "Provide three safe objects at sight, touch and listening stations with a mix of observations and guesses on cards.",
+        "pupils": "Record one evidence statement at each station, identify the sense used and correct one unsupported guess."
+      },
+      "8": {
+        "source": "L07",
+        "minutes": 30,
+        "teacher": "Provide a magnifier, blunt tongs, labelled trays and a safe specimen transfer path.",
+        "pupils": "Inspect and transfer the specimen carefully, demonstrate correct tool handling and explain one precaution."
+      },
+      "11": {
+        "source": "L10",
+        "minutes": 30,
+        "teacher": "Give pupils unfamiliar tooth diagrams and illustrated cutting, tearing and grinding actions.",
+        "pupils": "Match incisors, canines and molars to the functions; explain one match from the visible tooth shape."
+      },
+      "14": {
+        "source": "L12",
+        "minutes": 30,
+        "teacher": "Provide textbook diagrams of milk and permanent teeth with labels concealed.",
+        "pupils": "Count and compare the two sets, record the findings in a two-column table and explain which set replaces the other."
+      },
+      "26": {
+        "source": "L21",
+        "minutes": 30,
+        "teacher": "Provide six new illustrated animal cases with reliable diet evidence.",
+        "pupils": "Classify the animals as herbivores, carnivores or omnivores and support two decisions using their food records."
+      },
+      "28": {
+        "source": "L22",
+        "minutes": 30,
+        "teacher": "Give a food log for an unfamiliar animal across several days, including plant and animal food evidence.",
+        "pupils": "Highlight the relevant foods, infer the diet group and justify the classification from the complete log."
+      },
+      "30": {
+        "source": "L23",
+        "minutes": 30,
+        "teacher": "Give pairs labelled diet cards and tooth diagrams with visible broad and pointed surfaces.",
+        "pupils": "Compare the surfaces and explain how one observed feature is associated with the food eaten."
+      },
+      "32": {
+        "source": "L24",
+        "minutes": 30,
+        "teacher": "Provide a short animal feeding record that includes its usual diet and a reported change in feeding behaviour.",
+        "pupils": "Prepare a report naming the usual diet group, one supporting observation and a possible reason for the reported change."
+      },
+      "68": {
+        "source": "L51",
+        "minutes": 30,
+        "teacher": "Provide illustrated examples of a flagpole, well and a device without a pulley.",
+        "pupils": "Identify rope, wheel and load where present; explain one practical benefit of using the pulley."
+      }
+    }
+  }
+}
