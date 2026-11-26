@@ -9,6 +9,9 @@ from collections import Counter
 from io import BytesIO
 from pathlib import Path
 import argparse,json,re,sys
+from unittest.mock import patch
+from reportlab.lib.styles import ParagraphStyle
+from web.rph_document_style import pdf_box_style
 sys.path.insert(0,str(Path.cwd()))
 from docx import Document
 import fitz
@@ -58,6 +61,16 @@ def full_standards(lines,bank):
     assert cs and ls,joined
     return unique(cs),unique(ls)
 
+def compact_pdf(heading,details,rows,footer,teacher):
+    """Isolated layout trial: keep 9.5pt font and all content; reduce gaps only."""
+    def style(name,*args,**kwargs):
+        if name=="DLP body":kwargs["leading"]=10.25
+        return ParagraphStyle(name,*args,**kwargs)
+    def box(padding):
+        return pdf_box_style(min(padding,2))
+    with patch("reportlab.lib.styles.ParagraphStyle",side_effect=style),patch("web.rph_document_style.pdf_box_style",side_effect=box):
+        return render_structured_rph(source="dlp",fmt="pdf",heading=heading,details=details,activities=rows,footer=footer,teacher=teacher,compact=True)
+
 def main():
     a=argparse.ArgumentParser();a.add_argument("--paired",type=Path,required=True);a.add_argument("--rpt-root",type=Path,required=True);a.add_argument("--year",type=int,choices=(2,3,6),required=True);a.add_argument("--out",type=Path,required=True);args=a.parse_args()
     y=args.year;key=f"science_dlp:{y}"
@@ -99,6 +112,17 @@ def main():
                         assert " ".join(p["pupils"].split()) in " ".join(text.split())
                     suffix="docx"
                 else:
+                    with fitz.open(stream=blob,filetype="pdf") as pdf:
+                        old_pages=len(pdf);old_text="".join(pdf[i].get_text() for i in range(len(pdf)))
+                    if old_pages>1 and y==2:
+                        blob=compact_pdf(heading,details,rows,footer,teacher)
+                        with fitz.open(stream=blob,filetype="pdf") as pdf:
+                            new_text="".join(page.get_text() for page in pdf)
+                            # Compare all glyphs, excluding whitespace and page ordering.
+                            assert Counter(re.sub(r"\s+","",old_text))==Counter(re.sub(r"\s+","",new_text)),("layout changed text",n)
+                            assert len(pdf)==1,("compact PDF page count",len(pdf))
+                            assert all(span["size"]>=9.4 for page in pdf for block in page.get_text("dict")["blocks"] for line in block.get("lines",[]) for span in line["spans"] if span["text"].strip()),("unexpected font shrink",n)
+                        counts["compact_spacing_fix"]+=1
                     with fitz.open(stream=blob,filetype="pdf") as pdf:
                         assert len(pdf)==1,("PDF page count",len(pdf))
                     suffix="pdf"
