@@ -642,9 +642,17 @@ def create_all_rpt_blueprint(*,root=ROOT):
             if subject in DLP_SUBJECTS:
                 revised_dlp=compact_pdf.read_full_standards_dlp(subject,year,content,root=root)
                 compact=revised_dlp or compact_pdf.read_dlp(subject,year,content,root=root)
-            if compact is not None:
+            from web import dlp_paired_science_rpt as paired
+            paired_active=paired.enabled(subject,year)
+            if paired_active:
+                try:
+                    content=paired.assets(str(root),year)["pdf"]
+                    digest=hashlib.sha256(content).hexdigest()
+                except (OSError,ValueError,KeyError):
+                    return jsonify({"error":"RPT sesi DLP belum dapat disahkan."}),503
+            elif compact is not None:
                 content,digest=compact
-            flexible=bool(revised_dlp and not compact_pdf.dlp_whole_week_release(root) and os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1")
+            flexible=bool(not paired_active and revised_dlp and not compact_pdf.dlp_whole_week_release(root) and os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1")
             if flexible:
                 from web.rpt_dlp_flexible_time import pdf_without_fixed_minutes
                 content=pdf_without_fixed_minutes(content)
