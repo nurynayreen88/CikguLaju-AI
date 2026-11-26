@@ -19,6 +19,9 @@ def calendar_slots(root,subject,year):
     normal=[60,60,60] if subject=="mathematics_dlp" else [60,30] if year<=3 else [60,60]
     for n,pair in enumerate(zip(cal["A"],cal["B"],strict=True),1):
         if n>38:break
+        # Preserve the approved DLP teaching-window exclusions. These are
+        # explicit curriculum calendar decisions, not inferred holidays.
+        if n in (6,18,19):continue
         available={}
         common=[]
         for group,span,group_states in zip(("A","B"),pair,groups,strict=True):
@@ -64,6 +67,7 @@ def build(subject,year,rows,root=ROOT):
             sessions.append({"session":session,"minutes":duration,"source_parts":parts,"reserve_minutes":remaining,
                              "status":"CONTENT_REVIEW_REQUIRED" if parts else "RESERVE_NOT_NUMBERED_RPH"})
         planned.append({"week":n,"dates":pair,"available_days_by_state":days,"sessions":sessions})
+    assert len(planned)==35,(subject,year,"approved teaching windows",len(planned))
     assert cursor==len(source),(subject,year,"capacity insufficient",cursor,len(source))
     assert dict(covered)=={label:m for label,m,*_ in source}
     assert sum(len(w["sessions"]) for w in planned)==session
