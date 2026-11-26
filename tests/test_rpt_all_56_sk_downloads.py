@@ -23,7 +23,7 @@ class AllSKDownloads(unittest.TestCase):
         paid={"telegram_user_id":9,"rakan_pembangun":True}
         free={"telegram_user_id":10,"free_generations_remaining":10}
         flags={"CIKGULAJU_RPT_NATIVE_WORD_BATCH":"1","CIKGULAJU_RPT_NATIVE_RTL_WORD":"1","CIKGULAJU_RPT_BM_MERGED_WORD":"1","CIKGULAJU_RPT_COMPACT_PDF_BATCH":"1"}
-        with patch.dict("os.environ",flags),patch("web_v1_telegram_auth_routes._config",return_value={"account_backend":"supabase"}),patch("web.rpt_school_cover.school_identity",return_value=identity):
+        with patch.dict("os.environ",flags),patch("web.native_telegram_integrated_english_client.integrated_enabled",return_value=True),patch("web_v1_telegram_auth_routes._config",return_value={"account_backend":"supabase"}),patch("web.rpt_school_cover.school_identity",return_value=identity):
             for key,entry in manifest["files"].items():
                 with self.subTest(key=key):
                     subject,y=key.split(":");year=int(y)
@@ -44,6 +44,9 @@ class AllSKDownloads(unittest.TestCase):
                         self.assertTrue(pdf.data.startswith(b"%PDF-"))
                     with patch("web.rpt_2027_all_http._account",return_value=(paid,None)):
                         self.assertEqual(client.get(url+".pdf").data,pdf.data)
+                        if subject=="bahasa_melayu":
+                            from web.rpt_native_word_batch import bm_merged_document
+                            bm_merged_document(year,source,paid,{"account_backend":"supabase"},root=ROOT)
                         word=client.get(url+".docx")
                         self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else key)
                         self.assertIn("attachment",word.headers["Content-Disposition"])
