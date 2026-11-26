@@ -48,6 +48,12 @@ class FullDLPTest(unittest.TestCase):
                             self.assertRegex(cell.text,r"\d+\.\d+.*[A-Za-z]")
                     self.assertTrue(any("Main school breaks" in p.text for p in doc.paragraphs))
                     from docx.oxml.ns import qn
+                    for table in doc.tables:
+                        pr=table._tbl.tblPr
+                        self.assertEqual(pr.find(qn("w:tblW")).get(qn("w:type")),"dxa")
+                        self.assertEqual(int(pr.find(qn("w:tblW")).get(qn("w:w"))),sum(c.width.twips for c in table.columns))
+                        self.assertIsNotNone(pr.find(qn("w:tblCellMar")))
+                        self.assertIsNotNone(pr.find(qn("w:tblBorders")))
                     rid=doc.paragraphs[0]._p.xpath(".//a:blip")[0].get(qn("r:embed"))
                     self.assertEqual(doc.part.related_parts[rid].blob,cover_png(raw,lock,key,identity))
                 with patch.dict("os.environ",{"CIKGULAJU_RPT_FULL_STANDARDS_DLP":"0"}):
