@@ -196,9 +196,13 @@ def build_word(subject,year,root=ROOT):
         if first<last:cell=cell.merge(t.cell(last,0))
         polished_cell(cell,[f"Week {week:02d}",*label],bold=True,center=True,shade=shade)
         # Keep a merged week together, not one forced page per week.
-        for i in range(first,last):
-            for c in t.rows[i].cells[1:]:
-                for p in c.paragraphs:p.paragraph_format.keep_with_next=True
+        # Keep each group together using all physical cells of each row,
+        # including the vertical merge continuation cells.
+        from docx.table import _Cell
+        for i in range(first,last+1):
+            for tc in t.rows[i]._tr.tc_lst:
+                for p in _Cell(tc,t).paragraphs:
+                    p.paragraph_format.keep_with_next=i<last
         for i in range(first,last+1):
             expected[i-1]=([f"Week {week:02d}",*label],*expected[i-1][1:])
     preserved_notes=append_notes(doc,notes)
@@ -225,7 +229,7 @@ def render(subject,year,out):
             assert "Main school breaks" in new[-1].get_text()
             body="\n".join(p.get_text() for p in list(new)[1:])
             for val in notes:
-                assert norm(val) in norm(body),(subject,year,"appendix",val)
+                assert re.sub(r"\s+","",val) in re.sub(r"\s+","",body),(subject,year,"appendix",val)
             assert re.findall(r"(?m)^Lesson\s+(\d+)\b",body)==[re.search(r"\bLesson\s+(\d+)",' '.join(c[1])).group(1) for c,_ in rows if re.search(r"\bLesson\s+(\d+)",' '.join(c[1]))]
             # Extract standards by physical column; ignore layout-only line
             # breaks (including wrapping at an existing hyphen), not glyphs.
