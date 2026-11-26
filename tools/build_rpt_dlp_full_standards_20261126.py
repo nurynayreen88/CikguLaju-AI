@@ -7,14 +7,14 @@ from collections import Counter
 import fitz
 from docx import Document
 from docx.shared import Cm,Pt
-from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.enum.table import WD_TABLE_ALIGNMENT,WD_CELL_VERTICAL_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
 from tools.build_rpt_dlp_native_20261126 import PINS,extract,verify_cover,ROOT,SUBJECTS,document_path
 from tools.build_kssr_rpt_merged_week_batch_20261126 import mark,norm,text_cell,hyperlink
 from web.rpt_native_word_cover import add_word_cover,selected_layout
 HEADS=("Week / Date range (A / B)","Lesson / Unit","Content Standard (CS)","Learning Standard (LS)","Learning evidence (PBD)","Book reference / Time")
-WIDTHS=(3.45,4.15,4.05,6.1,6.0,3.45)
+WIDTHS=(2.85,4.55,3.75,7.2,6.4,2.45)
 CODE=re.compile(r"(?<![\d.])\d+\.\d+(?:\.\d+)?(?:\([ivx]+\))?|\([ivx]+\)",re.I)
 def descriptions(lines,bank):
     joined=" ".join(lines)
@@ -78,29 +78,68 @@ def source_cover(subject,year,root):
         assert not re.search(r"cuti|holiday|break|teaching allocation",page.get_text(),re.I)
         assert "LOGO SEKOLAH" in page.get_text() and "NAMA SEKOLAH" in page.get_text() and "NAMA GURU" in page.get_text()
         return doc.tobytes(garbage=4,deflate=True),page.get_pixmap(matrix=fitz.Matrix(2,2),alpha=False).tobytes("png")
+def natural_lines(lines,kind):
+    # Source PDF line wraps are not semantic paragraph breaks. Preserve every
+    # source word, while retaining actual lesson/unit and reference boundaries.
+    result=[]
+    for line in lines:
+        if not result or (kind=="lesson" and re.match(r"^(?:Unit\s+\d+|Lesson\s+\d+|Review\b)",line)) or (kind=="reference" and re.match(r"^\d+\s*min\b",line)):
+            result.append(line)
+        else:
+            result[-1]+=" "+line
+    return [re.sub(r"[ \t]+"," ",v).strip() for v in result]
+def polished_cell(cell,lines,*,kind="",bold=False,center=False,shade=None):
+    text_cell(cell,lines,bold=bold,center=center,shade=shade)
+    for p in cell.paragraphs:
+        p.paragraph_format.space_after=Pt(2)
+        p.paragraph_format.line_spacing=1.05
+        p.paragraph_format.keep_with_next=False
+        p.paragraph_format.keep_together=True
+        # Bold only the identifier, preserving the editable description.
+        if not bold and kind in ("lesson","standard"):
+            val=p.text
+            m=re.match(r"^(?:Lesson\s+\d+|Review\b|\d+\.\d+(?:\.\d+)?(?:\([ivx]+\))?)",val,re.I)
+            if m:
+                p.clear()
+                a=p.add_run(m.group());a.bold=True;a.font.name="Arial";a.font.size=Pt(8.5)
+                a=p.add_run(val[m.end():]);a.font.name="Arial";a.font.size=Pt(8.5)
 def append_notes(doc,lines):
     # The previous cover's complete guidance, teaching allocation, holiday
     # dates and source citations are moved, not deleted. Holiday table last.
     assert "Teaching allocation" in lines and "Main school breaks" in lines
     begin=lines.index("Teaching allocation");cut=lines.index("Main school breaks")
     assert begin<cut
-    doc.add_page_break()
-    doc.add_heading("Teaching information and source references",level=1)
+    heading=doc.add_heading("Teaching information and source references",level=1)
+    heading.paragraph_format.page_break_before=True
+    pending=[]
+    def flush():
+        if pending:
+            doc.add_paragraph(" ".join(pending));pending.clear()
     for line in lines[begin:cut]:
         if line in ("Teaching allocation","Using the schedule"):
-            doc.add_heading(line,level=2)
-        else:doc.add_paragraph(line)
+            flush();doc.add_heading(line,level=2)
+        elif line.startswith("Group A covers"):
+            flush();doc.add_paragraph(line)
+        else:pending.append(line)
+    flush()
     end=next(i for i in range(cut+1,len(lines)) if lines[i].startswith("CS ="))
     holidays=lines[cut+1:end]
     assert holidays[:2]==["Group A","Group B"],holidays
     assert len(holidays[2:])%3==0,holidays
-    for line in lines[end:]:doc.add_paragraph(line)
+    doc.add_paragraph(lines[end])
+    if lines[end+1:]:doc.add_paragraph(" ".join(lines[end+1:]))
     doc.add_heading("Main school breaks",level=2)
     t=doc.add_table(rows=1,cols=3);t.style="Table Grid";t.autofit=False
-    for i,v in enumerate(("School break","Group A","Group B")):text_cell(t.rows[0].cells[i],[v],bold=True,shade="E8F0E9")
+    t.alignment=WD_TABLE_ALIGNMENT.CENTER
+    for i,(v,w) in enumerate(zip(("School break","Group A","Group B"),(13.2,7,7))):
+        t.columns[i].width=Cm(w);t.rows[0].cells[i].width=Cm(w)
+        polished_cell(t.rows[0].cells[i],[v],bold=True,center=True,shade="E8F0E9")
+    mark(t.rows[0]._tr.get_or_add_trPr(),"w:tblHeader")
     for i in range(2,len(holidays),3):
         row=t.add_row()
-        for cell,v in zip(row.cells,holidays[i:i+3]):text_cell(cell,[v])
+        mark(row._tr.get_or_add_trPr(),"w:cantSplit")
+        for j,(cell,v,w) in enumerate(zip(row.cells,holidays[i:i+3],(13.2,7,7))):
+            cell.width=Cm(w);polished_cell(cell,[v],center=j>0)
     return lines[begin:cut]+lines[end:]+holidays[2:]
 def build_word(subject,year,root=ROOT):
     root=Path(root);key=f"{subject}:{year}"
@@ -118,14 +157,14 @@ def build_word(subject,year,root=ROOT):
     sec.left_margin=sec.right_margin=Cm(1.2);sec.top_margin=sec.bottom_margin=Cm(1.05)
     sec.header_distance=sec.footer_distance=Cm(.4)
     doc.styles["Normal"].font.name="Arial";doc.styles["Normal"].font.size=Pt(9)
-    sec.header.paragraphs[0].text=f"YEARLY TEACHING PLAN 2027 | {SUBJECTS[subject].upper()} (DLP) | YEAR {year}"
-    sec.footer.paragraphs[0].text="Group A and Group B | CikguLaju"
+    sec.header.paragraphs[0].text=""
+    sec.footer.paragraphs[0].text=""
     add_word_cover(doc,png)
     t=doc.add_table(rows=1,cols=6);t.style="Table Grid";t.autofit=False;t.alignment=WD_TABLE_ALIGNMENT.CENTER
     shade="DCECDC" if subject=="science_dlp" else "D9E9F3"
     for i,(h,w) in enumerate(zip(HEADS,WIDTHS)):
         t.columns[i].width=Cm(w);t.rows[0].cells[i].width=Cm(w)
-        text_cell(t.rows[0].cells[i],[h],bold=True,center=True,shade=shade)
+        polished_cell(t.rows[0].cells[i],[h],bold=True,center=True,shade=shade)
     mark(t.rows[0]._tr.get_or_add_trPr(),"w:tblHeader")
     groups=[];expected=[];failures=[]
     review_map=json.loads((root/"dlp"/"standard_descriptions"/"review_mappings.json").read_text())["mappings"].get(key,{})
@@ -143,18 +182,29 @@ def build_word(subject,year,root=ROOT):
         row=t.add_row();index=len(t.rows)-1
         mark(row._tr.get_or_add_trPr(),"w:cantSplit")
         for cell,w in zip(row.cells,WIDTHS):cell.width=Cm(w)
-        vals=(c[0],c[1],cs,ls,c[3],c[4])
-        for cell,lines in zip(row.cells[1:],vals[1:]):text_cell(cell,lines or [""])
+        vals=(c[0],natural_lines(c[1],"lesson"),cs,ls,natural_lines(c[3],"evidence"),natural_lines(c[4],"reference"))
+        for cell,lines,kind in zip(row.cells[1:],vals[1:],("lesson","standard","standard","evidence","reference")):
+            polished_cell(cell,lines or [""],kind=kind)
         for url in links:hyperlink(row.cells[-1],url)
         expected.append(vals)
         label=tuple(c[0])
         if groups and groups[-1][0]==label:groups[-1]=(label,groups[-1][1],index)
         else:groups.append((label,index,index))
     assert not failures,(key,json.dumps(failures,ensure_ascii=False))
-    for label,first,last in groups:
+    for week,(label,first,last) in enumerate(groups,1):
         cell=t.cell(first,0)
         if first<last:cell=cell.merge(t.cell(last,0))
-        text_cell(cell,list(label),bold=True,center=True,shade=shade)
+        polished_cell(cell,[f"Week {week:02d}",*label],bold=True,center=True,shade=shade)
+        # Keep a merged week together, not one forced page per week.
+        # Keep each group together using all physical cells of each row,
+        # including the vertical merge continuation cells.
+        from docx.table import _Cell
+        for i in range(first,last+1):
+            for tc in t.rows[i]._tr.tc_lst:
+                for p in _Cell(tc,t).paragraphs:
+                    p.paragraph_format.keep_with_next=i<last
+        for i in range(first,last+1):
+            expected[i-1]=([f"Week {week:02d}",*label],*expected[i-1][1:])
     preserved_notes=append_notes(doc,notes)
     stream=BytesIO();doc.save(stream);blob=stream.getvalue()
     check=Document(BytesIO(blob));assert len(check.tables[0].rows)==len(rows)+1
@@ -179,7 +229,7 @@ def render(subject,year,out):
             assert "Main school breaks" in new[-1].get_text()
             body="\n".join(p.get_text() for p in list(new)[1:])
             for val in notes:
-                assert norm(val) in norm(body),(subject,year,"appendix",val)
+                assert re.sub(r"\s+","",val) in re.sub(r"\s+","",body),(subject,year,"appendix",val)
             assert re.findall(r"(?m)^Lesson\s+(\d+)\b",body)==[re.search(r"\bLesson\s+(\d+)",' '.join(c[1])).group(1) for c,_ in rows if re.search(r"\bLesson\s+(\d+)",' '.join(c[1]))]
             # Extract standards by physical column; ignore layout-only line
             # breaks (including wrapping at an existing hyphen), not glyphs.

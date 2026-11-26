@@ -6,71 +6,71 @@
     "mathematics_dlp:2": {
       "path": "mathematics_dlp/tahun_2.pdf",
       "source_sha256": "d66bf14378e2ceb00c12dbd3fd66ac19eb18d7ccc8437eda94e2c6db6b5441aa",
-      "sha256": "7c9ab1769c081531a1eb3285fa06fde479ecc697c58538df3c91f4445d848e8d",
-      "bytes": 137038,
+      "sha256": "f7213eb59cfcafdcde8a5ef23703374b56908aeb67c50addf8f9a1f0b9304de3",
+      "bytes": 138704,
       "pages": 13
     },
     "science_dlp:2": {
       "path": "science_dlp/tahun_2.pdf",
       "source_sha256": "c6d84f552078c1c1949e1e87c9a2329af64725c3b9d4ef5c683d8fc6a7c89a83",
-      "sha256": "37ebf3ac53618e359164ebc95da9edc706d140a1374528b48e5a91ee309bcf26",
-      "bytes": 125553,
+      "sha256": "6cff19beeae51186c842c9fad572425d0b142db8224a6ad06b8a36c9dfac4d9a",
+      "bytes": 126342,
       "pages": 9
     },
     "mathematics_dlp:3": {
       "path": "mathematics_dlp/tahun_3.pdf",
       "source_sha256": "0580026d81648f07283052e1f11c83eeecd50c6f552ab9a0d9a6535adfa7df09",
-      "sha256": "6333fc429ded9a2c9fbd3fb64d8e13e54876ac2b88dd2cf28abf9c46991bf765",
-      "bytes": 134422,
-      "pages": 12
+      "sha256": "a5d4fa33c5fe615ea3d0861bc0fb804f54b5614c4c76cd153835459f99838769",
+      "bytes": 133026,
+      "pages": 11
     },
     "science_dlp:3": {
       "path": "science_dlp/tahun_3.pdf",
       "source_sha256": "8c518d0b0be79ae51c656e254e6588e14e01f7ace99f622449781cb58d59d7ed",
-      "sha256": "452a360e4b61bdf1891f1b7d81bb78298506524b46f08d526f188fe51c541c16",
-      "bytes": 119999,
-      "pages": 8
+      "sha256": "be0f4834490e54a637c0d277e50a5891fa681226109962f9e802d2788d20cffe",
+      "bytes": 119816,
+      "pages": 7
     },
     "mathematics_dlp:4": {
       "path": "mathematics_dlp/tahun_4.pdf",
       "source_sha256": "6f256b646bd558dccacea23c13e4283bb563e0949bdf937b2ddbd35fc14448d1",
-      "sha256": "a55cad5aed83a16336631a0391f1c717a1cd9aac92464ea7023552addff55bf9",
-      "bytes": 129161,
-      "pages": 11
+      "sha256": "74fa6da279bb3333bdf030f322e41e732fb6776ec5b150d3b1606152f0142594",
+      "bytes": 128362,
+      "pages": 10
     },
     "science_dlp:4": {
       "path": "science_dlp/tahun_4.pdf",
       "source_sha256": "eff2cd8354c00aae176b069dc19aacbdcfb81b2ac84527b3c3c6c015ebdd2413",
-      "sha256": "1a3e9879cf0282765862ac891c5aad8af278209cbdd58dd629d9e324f5c24051",
-      "bytes": 126156,
+      "sha256": "0813f0a72ea35999fabc0e96755ba9d409ff0b6f9940afb268145d12cd24594e",
+      "bytes": 126971,
       "pages": 10
     },
     "mathematics_dlp:5": {
       "path": "mathematics_dlp/tahun_5.pdf",
       "source_sha256": "4dd0f9109c0a45e0cff2586e8342a16282a88f25f1b8e498fa27bbf04be0fb39",
-      "sha256": "158428a4c0ed84fb3743bc272e161a03269b7f714b00d16a2a2b6a436e0472c0",
-      "bytes": 125769,
+      "sha256": "15bd8b6b5d2b230644b5b6679b4fd152994b5280d7a1ed966423b07eb971b337",
+      "bytes": 125755,
       "pages": 10
     },
     "science_dlp:5": {
       "path": "science_dlp/tahun_5.pdf",
       "source_sha256": "8eee415688d9572b6c02046e3fc1bef5d0fedeea11871a52b9d39d01600601b2",
-      "sha256": "b60e00f50e14b97c949ffb8bf1a1aabc5c873fdc4c5d144a410cd1b71c0b485e",
-      "bytes": 128926,
-      "pages": 11
+      "sha256": "35724c56995713b4f9b475bb6ad40b454669b897c542b8006148de2d59f9a862",
+      "bytes": 128222,
+      "pages": 10
     },
     "mathematics_dlp:6": {
       "path": "mathematics_dlp/tahun_6.pdf",
       "source_sha256": "e90acb6896ce438d619b9d159081ee0ea7f39d27f62dfbd5a41d648bf038d488",
-      "sha256": "bd5284836cace08228a356f901797c398f392c4289ce779b167573c8cd5affe0",
-      "bytes": 118125,
+      "sha256": "c72e82b416dea0c37c618b6ce5443c5934c13d3fe810946250f425aec3491429",
+      "bytes": 118515,
       "pages": 8
     },
     "science_dlp:6": {
       "path": "science_dlp/tahun_6.pdf",
       "source_sha256": "991465fcfacc1b1925f9ded6cf12b8da7a9ac220c9321ef4011537900bdd97db",
-      "sha256": "e9613a6aedb8e1de1cd7d655f0e726fedd3a25683a381559be4ae301ef88229f",
-      "bytes": 125312,
+      "sha256": "fdfa19ac79cb78e2dc8ca3a2ad222232725db4d82f9216586296c7a0fad22497",
+      "bytes": 126146,
       "pages": 10
     }
   }
