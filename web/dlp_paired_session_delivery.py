@@ -50,5 +50,13 @@ def render(row,fmt,teacher):
     denominator=teacher.get("students","")
     denominator=denominator if re.fullmatch(r"[1-9]\d{0,2}",denominator) else "___"
     reflection=teacher.get("reflection") or "; ".join(f"Obj. {n}: ___/{denominator}" for n in range(1,row["objectives"]+1))+" pupils achieved. Follow-up: ____________________."
-    return render_structured_rph(source="dlp",fmt=fmt,heading=row["heading"],details=[*fields,*row["details"]],
-            activities=row["activities"],footer=[("Reflection",reflection)],teacher=teacher,compact=True)
+    payload=dict(source="dlp",fmt=fmt,heading=row["heading"],details=[row["details"][0],row["details"][1],*fields,*row["details"][2:]],activities=row["activities"],footer=[("Reflection",reflection)],teacher=teacher,compact=True)
+    blob=render_structured_rph(**payload)
+    if fmt=="pdf":
+        import fitz
+        with fitz.open(stream=blob,filetype="pdf") as doc: pages=len(doc)
+        if pages>1:
+            blob=render_structured_rph(**payload,paired_density=True)
+            with fitz.open(stream=blob,filetype="pdf") as doc:
+                if len(doc)!=1: raise ValueError("Paired RPH PDF exceeds one page")
+    return blob
