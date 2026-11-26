@@ -19,7 +19,7 @@ def selected_layout(lock,key,digest):
                 lock.get("science_year6_covers",{}).get(key,{}),
                 lock.get("dlp_year"+key.rsplit(":",1)[-1],{}) if "_dlp:" in key else {}]
     for candidate in candidates:
-        if candidate.get("source_sha256_by_subject_year",{}).get(key)==digest:
+        if candidate.get("source_sha256_by_subject_year",{}).get(key)==digest or (candidate is lock.get("full_standards_dlp_pdf_covers") and candidate.get("original_source_sha256_by_subject_year",{}).get(key)==digest):
             return candidate
     raise ValueError("RPT original cover hash has no verified layout")
 
