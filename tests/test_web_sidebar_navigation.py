@@ -68,6 +68,26 @@ class WebSidebarTabsTests(unittest.TestCase):
         # Same markup is reused for mobile, no separate ordering is necessary.
         self.assertIn('.sidebar-menu{display:grid;grid-template-columns:',self.html)
 
+    def test_curriculum_documents_separate_menu_and_source_filters(self):
+        import re
+        menu=re.search(r'<nav class="sidebar-menu"[^>]*>(.*?)</nav>',self.html,flags=re.S)
+        choices=re.findall(r'data-web-view="([^"]+)"',menu.group(1))
+        self.assertEqual(choices[:7],["guide","account","today","rph","rpt","payment","curriculum-docs"])
+        self.assertIn('["curriculum-docs","view-curriculum-docs"]',self.html)
+        self.assertIn('id="view-curriculum-docs" class="app-view" aria-labelledby="curriculum-docs-heading" hidden',self.html)
+        for category in ("kp2027","kssr","dpk","pk"):
+            self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
+        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://drive.google.com/file/d/[A-Za-z0-9_-]+/view)"',self.html)
+        self.assertEqual(len(rows),48)
+        self.assertEqual(len({url for _,_,url in rows}),48)
+        self.assertEqual({(year,subject) for year,subject,_ in rows},
+                         {(str(year),subject+" "+stream) for year in range(1,7)
+                          for subject in ("Matematik","Sains")
+                          for stream in ("SK","SJKC","SJKT","DLP")})
+        self.assertIn('docsYear.addEventListener("change",filterCurriculumDocs)',self.html)
+        self.assertIn('docsSubject.addEventListener("change",filterCurriculumDocs)',self.html)
+        self.assertIn('#workspace #view-curriculum-docs{display:none!important}',self.html)
+
     def test_rpt_catalog_outside_rph_section(self):
         # Structural check using parsed nesting, not only search positions.
         class NodeParser(HTMLParser):
