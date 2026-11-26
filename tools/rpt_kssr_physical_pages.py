@@ -1,5 +1,6 @@
 """Physical page tables with repeated headings and explicit safe page breaks."""
 from copy import deepcopy
+from docx.enum.text import WD_BREAK
 from io import BytesIO
 from docx import Document
 from docx.oxml import OxmlElement
@@ -65,8 +66,8 @@ def paginate(blob,*,budget=440,first_budget=None):
         if n:
             el=OxmlElement("w:p");anchor.addprevious(el)
             p=Paragraph(el,doc);pf=p.paragraph_format
-            pf.page_break_before=True;pf.space_before=Pt(0);pf.space_after=Pt(0);pf.line_spacing=Pt(1)
-            p.add_run(" ").font.size=Pt(1)
+            pf.page_break_before=False;pf.keep_with_next=False;pf.keep_together=False;pf.space_before=Pt(0);pf.space_after=Pt(0);pf.line_spacing=Pt(1)
+            run=p.add_run();run.font.size=Pt(1);run.add_break(WD_BREAK.PAGE)
         clone=deepcopy(anchor)
         for tr in list(clone.tr_lst)[1:]:clone.remove(tr)
         for start,rows in blocks:
@@ -78,6 +79,14 @@ def paginate(blob,*,budget=440,first_budget=None):
                 # Avoid inheriting keep-next across the new physical page boundary.
                 for e in row.xpath(".//w:keepNext"):e.getparent().remove(e)
                 clone.append(row)
+        # Keep the complete physical page table together where Word can fit it.
+        # Each new table begins after a literal page break, not a blank paragraph flag.
+        for idx,tr in enumerate(clone.tr_lst):
+            for node in tr.xpath(".//w:p"):
+                fmt=Paragraph(node,doc).paragraph_format
+                fmt.keep_with_next=idx<len(clone.tr_lst)-1
+                fmt.keep_together=True
+                fmt.widow_control=False
         anchor.addprevious(clone)
     anchor.getparent().remove(anchor)
     for sec in doc.sections:sec.top_margin=sec.bottom_margin=Cm(1.5)
