@@ -3,11 +3,23 @@ on:
   pull_request:
     paths:
       - 'tests/test_rpt_sjkc_existing_17.py'
+      - 'tests/test_rpt_sjkc_bm_headers.py'
+      - 'web/rpt_sjk_word_header_repair.py'
       - '.github/workflows/sjkc-existing-rpt-inventory.yml'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
+  bm-render:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y libreoffice-writer fonts-liberation fonts-noto-cjk
+      - run: pip install pymupdf python-docx pillow flask pypdf docxcompose
+      - run: python -m unittest discover -s tests -p test_rpt_sjkc_bm_headers.py -v
   inventory:
     runs-on: ubuntu-24.04
     steps:
