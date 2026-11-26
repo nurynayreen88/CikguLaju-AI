@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "status": "LAYOUT_QA_CANDIDATE",
+  "count": 10,
+  "files": {
+    "pendidikan_islam:2": {
+      "path": "pendidikan_islam/tahun_2.pdf",
+      "source_sha256": "79129ba5613f672cb105fb2621252283dfa7bb76ccc67cee0842d0339e50c92e",
+      "sha256": "f3f9250213664c8d73c44cf6cc37594fe8e6ac8060983d83340d187bcd1e808d",
+      "bytes": 286234,
+      "pages": 23,
+      "source_pages": 26
+    },
+    "pendidikan_islam:3": {
+      "path": "pendidikan_islam/tahun_3.pdf",
+      "source_sha256": "134253d2bc89c1736347df70e3e2929ab94e537e14869c69c0bf559fae7e5a33",
+      "sha256": "e460aee63f064aa19e92debe9b08002a70e0f709297ddedcc264c90b5d89bb02",
+      "bytes": 352819,
+      "pages": 29,
+      "source_pages": 34
+    },
+    "pendidikan_islam:4": {
+      "path": "pendidikan_islam/tahun_4.pdf",
+      "source_sha256": "e77bfd0654b5bf687bbb74fbc5c1d22a3c088adb735e0b6e62e001899a941e74",
+      "sha256": "023d9d747bf7d8aba800976166217183dc4adac23c2595fc5e7c2bfbbecadc4b",
+      "bytes": 366619,
+      "pages": 32,
+      "source_pages": 36
+    },
+    "pendidikan_islam:5": {
+      "path": "pendidikan_islam/tahun_5.pdf",
+      "source_sha256": "f8830f4efbcd8bf26a33acb804ee2673e5dabdc354b8dfe34bb5d21bce1fc159",
+      "sha256": "91531ca7a9a7f9fc5568788003745003b81c89be7d75f05272d88b4a136dbfb1",
+      "bytes": 346074,
+      "pages": 31,
+      "source_pages": 36
+    },
+    "pendidikan_islam:6": {
+      "path": "pendidikan_islam/tahun_6.pdf",
+      "source_sha256": "b993b3cf5baeebc4e67d37456b5b2e12955a0d4373a5dc29b5014fc4fb98f41f",
+      "sha256": "ff2f65f04370367c26db3cd0c8d915b2453d60331cde5be5b5fd19f1dac43f95",
+      "bytes": 325137,
+      "pages": 30,
+      "source_pages": 36
+    },
+    "bahasa_arab:3": {
+      "path": "bahasa_arab/tahun_3.pdf",
+      "source_sha256": "c91f7b38a059ee9a208f852a3b371ee606326aa4d50e5742dc523efc68743d3b",
+      "sha256": "d47aa6f0987380dba0d6699757c017aa94fb4b8e38152c8080a1cd3105a2f8e0",
+      "bytes": 402463,
+      "pages": 12,
+      "source_pages": 12
+    },
+    "bahasa_arab:4": {
+      "path": "bahasa_arab/tahun_4.pdf",
+      "source_sha256": "8b979445bcf8bc1663e4fc4196da11bb9a32fd756f5c916ace6503be059ae217",
+      "sha256": "1158805d51a35dffdb3ce4bab61e79d93f5e4b48c3339d16a9d897301624c316",
+      "bytes": 279636,
+      "pages": 11,
+      "source_pages": 11
+    },
+    "bahasa_arab:5": {
+      "path": "bahasa_arab/tahun_5.pdf",
+      "source_sha256": "be92eff7fc8b1017f88641bbe2ad1227b26436b41cf3f9e327b632de1d52b0ca",
+      "sha256": "55e1e48c83cfd4ce3e92c03903c58ab9287454ef8421aae75870b5a199124ab0",
+      "bytes": 288509,
+      "pages": 12,
+      "source_pages": 12
+    },
+    "bahasa_arab:6": {
+      "path": "bahasa_arab/tahun_6.pdf",
+      "source_sha256": "279d576410b261261190e3a8cb146cbd333bea5f04d31f5bd4711130cfdc4f30",
+      "sha256": "d65b0d9cd8d555520157828255215772773787a97b21f21e27c8312450cac40b",
+      "bytes": 290861,
+      "pages": 12,
+      "source_pages": 12
+    },
+    "bahasa_arab:2": {
+      "path": "bahasa_arab/tahun_2.pdf",
+      "source_sha256": "ed5699127c118f28fe86cff6edef6e8ee85e7d787e5ef753cb251a771b4ea4b7",
+      "sha256": "fa8bba5a11623b7dadba65d26677981f821247d67cf8ceecb23c7d9f2cd74dff",
+      "bytes": 409413,
+      "pages": 12,
+      "source_pages": 12
+    }
+  }
+}

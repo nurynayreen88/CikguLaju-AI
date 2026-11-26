@@ -1,0 +1,27 @@
+name: Verify final Arabic Year 2 vector PDF checksum
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/compact_rtl_pdf_2027/**'
+      - '.github/workflows/rpt-rtl-ba2-final-candidate-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          root=Path("rpt_2027/compact_rtl_pdf_2027")
+          m=json.loads((root/"manifest.json").read_text())
+          assert m["count"]==len(m["files"])==10
+          for e in m["files"].values():
+              assert hashlib.sha256((root/e["path"]).read_bytes()).hexdigest()==e["sha256"]
+          PY
