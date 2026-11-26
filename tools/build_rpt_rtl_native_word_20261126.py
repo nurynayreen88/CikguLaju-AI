@@ -43,17 +43,46 @@ def logical_glyphs(text):
     if BAD.search(result) or PRESENTATION.search(result):raise ValueError("No safe Unicode decomposition")
     return result
 
+
+# A PDF from ReportLab contains already shaped visual Arabic. PyMuPDF's
+# extracted reading order may reverse digits inside those native spans.
+# Restore only numeric atoms using the original physical glyph positions;
+# never infer the Arabic spelling or reverse the entire sentence.
+NUMBER_ATOM=re.compile(r"[0-9\u0660-\u0669\u06f0-\u06f9]+(?:[./–-][0-9\u0660-\u0669\u06f0-\u06f9]+)*")
+def numeric_text(glyphs):
+    source="".join(g["c"] for g in glyphs)
+    # A multi-codepoint ligature may not have one coordinate per char.
+    # Do not assign guessed positions; map each source char to its glyph.
+    positions=[g for g in glyphs for _ in g["c"]]
+    def physical(match):
+        entries=list(zip(match.group(),positions[match.start():match.end()]))
+        if len(entries)<2:return match.group()
+        x=lambda pair:(pair[1]["bbox"][0]+pair[1]["bbox"][2])/2
+        ordered="".join(c for c,g in sorted(entries,key=x))
+        assert Counter(ordered)==Counter(match.group())
+        return ordered
+    return logical_glyphs(NUMBER_ATOM.sub(physical,source))
+
+def numeric_atoms_by_geometry(page,clip):
+    values=[]
+    for b in page.get_text("rawdict",clip=clip)["blocks"]:
+        for line in b.get("lines",()):
+            for span in line["spans"]:
+                value=numeric_text(span["chars"])
+                values.extend(m.group() for m in NUMBER_ATOM.finditer(value))
+    return values
+
 def clip_cells(page,rect):
     # A glyph's bounding box can touch the neighboring cell even when the
     # native line belongs to one column. Read the whole row once, preserving
     # the exact text order within each native span and assigning by geometry.
     columns=[[] for _ in range(4)]
     original=[]
-    for block in page.get_text("dict",clip=rect)["blocks"]:
+    for block in page.get_text("rawdict",clip=rect)["blocks"]:
         for line in block.get("lines",()):
             parts=[[] for _ in range(4)]
             for span in line["spans"]:
-                value=logical_glyphs(span["text"])
+                value=numeric_text(span["chars"])
                 if not value.strip():continue
                 x0,_,x1,_=span["bbox"]
                 overlaps=[max(0,min(x1,b)-max(x0,a)) for a,b in zip(BANDS[:4],BANDS[1:5])]
@@ -95,16 +124,17 @@ def clip_cells_glyphwise(page,rect):
             for i,items in enumerate(parts):
                 if not items:continue
                 out=[]
+                sequence=[]
                 previous=None
                 for glyph in items:
                     x0,_,x1,_=glyph["bbox"]
                     if previous is not None:
                         p0,p1=previous
                         if max(x0-p1,p0-x1)>2:
-                            out.append(" ")
-                    out.append(logical_glyphs(glyph["c"]))
+                            sequence.append({"c":" ","bbox":[p0,0,p1,0]})
+                    sequence.append(glyph)
                     previous=(x0,x1)
-                columns[i].append("".join(out))
+                columns[i].append(numeric_text(sequence))
     physical=["\n".join(lines).strip() for lines in columns]
     letters=lambda v:Counter(c for c in v if not c.isspace())
     assert letters("".join(original))==letters("".join(physical))
@@ -152,19 +182,32 @@ def extract(path,subject):
 def rtl_cell(cell,value,*,bold=False,center=False,shade=None):
     text_cell(cell,value.splitlines() or [""],bold=bold,center=center,shade=shade)
     for p in cell.paragraphs:
-        if RTL.search(p.text):
-            if not center:p.alignment=WD_ALIGN_PARAGRAPH.RIGHT
-            mark(p._p.get_or_add_pPr(),"w:bidi",{"w:val":"1"})
-            for run in p.runs:
-                if RTL.search(run.text):
-                    run.font.name="Amiri"
-                    run.font.size=Pt(10)
-                    props=run._r.get_or_add_rPr()
-                    fonts=props.find(qn("w:rFonts"))
-                    if fonts is not None:fonts.set(qn("w:cs"),"Amiri")
-                    mark(props,"w:rtl",{"w:val":"1"})
-                    mark(props,"w:szCs",{"w:val":"20"})
-                    mark(props,"w:lang",{"w:bidi":"ar-SA"})
+        if not RTL.search(p.text):continue
+        if not center:p.alignment=WD_ALIGN_PARAGRAPH.RIGHT
+        mark(p._p.get_or_add_pPr(),"w:bidi",{"w:val":"1"})
+        raw=p.text
+        # Rebuild the runs, leaving numeric tokens explicitly LTR and the
+        # Arabic/Jawi script in a native complex-script run.
+        for child in list(p._p):
+            if child.tag==qn("w:r"):p._p.remove(child)
+        def add(value,number=False):
+            if not value:return
+            run=p.add_run(value)
+            run.bold=bold
+            run.font.name="Amiri"
+            run.font.size=Pt(10)
+            props=run._r.get_or_add_rPr()
+            fonts=props.find(qn("w:rFonts"))
+            if fonts is not None:fonts.set(qn("w:cs"),"Amiri")
+            mark(props,"w:rtl",{"w:val":"0" if number else "1"})
+            mark(props,"w:szCs",{"w:val":"20"})
+            mark(props,"w:lang",{"w:bidi":"ar-SA"})
+        at=0
+        for m in NUMBER_ATOM.finditer(raw):
+            add(raw[at:m.start()])
+            add("\u200e"+m.group()+"\u200e",True)
+            at=m.end()
+        add(raw[at:])
 
 def build_word(subject,year,root=ROOT):
     root=Path(root);key=f"{subject}:{year}"
@@ -217,7 +260,7 @@ def build_word(subject,year,root=ROOT):
     check=Document(BytesIO(blob));t=check.tables[0]
     assert t._tbl.tblPr.find(qn("w:bidiVisual")) is not None
     for i,identity,cells in expected:
-        assert all(norm(val) in norm(cell.text) for cell,val in zip(t.rows[i].cells[1:],cells))
+        assert all(norm(val) in norm(cell.text.replace("\u200e","")) for cell,val in zip(t.rows[i].cells[1:],cells))
     assert [i for _,i,_ in expected]==ids
     for first,last in ranges:
         assert all(t.cell(first,0)._tc is t.cell(i,0)._tc for i in range(first,last+1))
