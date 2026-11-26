@@ -6,26 +6,26 @@
     "matematik:2": {
       "path": "matematik/tahun_2.pdf",
       "source_sha256": "d675e0e419d3597ece0c9e3340fcbdb1f787535988a4912fda8f00c90b8bccf6",
-      "sha256": "3de5c4502dcd56495991564a01de213b77e94d9e59a179180d75a3353d2983b6",
-      "bytes": 154862,
-      "pages": 31,
+      "sha256": "1091f64984bbb87d5d025002fcf90ff0920b11ffd4eeb410f089e0f017bb12e2",
+      "bytes": 152795,
+      "pages": 26,
       "source_pages": 44,
       "lessons": 117
     },
     "matematik:3": {
       "path": "matematik/tahun_3.pdf",
       "source_sha256": "07a383d5c1f2560093f808affc9770081cb539d026230918d22623fcef0bd88b",
-      "sha256": "504ed5d73282d9c195045e51de3e13f44741bacb6f7e163110d886c764bd8417",
-      "bytes": 160074,
-      "pages": 32,
+      "sha256": "faf5e6ec2935ddf8f0a6ec19b8fc53f4bd2e428b920eae7592fa70732002346e",
+      "bytes": 160062,
+      "pages": 29,
       "source_pages": 44,
       "lessons": 117
     },
     "muzik:2": {
       "path": "muzik/tahun_2.pdf",
       "source_sha256": "0bc94d264fd372ed8977fa65db4f2177864e2684465e7a700688398e94936a5b",
-      "sha256": "186a2db4ce6e962ecaaf6e8bd6dd7a22fe0850be41dbfb5d5e1a34ce15213934",
-      "bytes": 105319,
+      "sha256": "649e62081ce1f1bf2f48d6332021b9974434db3b8b90d2de8bd8e64e484445ae",
+      "bytes": 106673,
       "pages": 7,
       "source_pages": 7,
       "lessons": 35
@@ -33,8 +33,8 @@
     "muzik:3": {
       "path": "muzik/tahun_3.pdf",
       "source_sha256": "7b78a82a30327c44a8673d613eafdba4e4b882ca5acb34d078be2d9fbdcb97a4",
-      "sha256": "9a296bdaab775628ac34e39a334b21bbbaf3430229085646c33ad316924cb801",
-      "bytes": 104296,
+      "sha256": "969bb6eb7472ca418f19d201e1a2b7062dbf9c9a4622bd23ab8a6e3cac851f3f",
+      "bytes": 105732,
       "pages": 7,
       "source_pages": 7,
       "lessons": 35
@@ -42,8 +42,8 @@
     "muzik:4": {
       "path": "muzik/tahun_4.pdf",
       "source_sha256": "ffa2f013b54b838e91bbe5498dabd3ebb3ebd9b2a197e88ba5ab2b3c332bb958",
-      "sha256": "98bde4bb9dce35ffa1710683c026b6a4388d79dbfc17b8a47ee54e921a6d6251",
-      "bytes": 104388,
+      "sha256": "985e120957dd4c0a48959a081fce86a424884adc7dc542f30f51318fd7199cb9",
+      "bytes": 105664,
       "pages": 7,
       "source_pages": 8,
       "lessons": 35
@@ -51,8 +51,8 @@
     "muzik:5": {
       "path": "muzik/tahun_5.pdf",
       "source_sha256": "0341ef735063d84d909823bce8d41269be7f540fa4472eda1a9f9f5b3958e385",
-      "sha256": "e8436e5297b78ca9723cc3a1ba42f6177466cccc18c79d5acc14e273a87664a4",
-      "bytes": 104909,
+      "sha256": "74ac51683c9e900193679f5d8a0e98b26a1358cb4fd36f58fd38487ea6756938",
+      "bytes": 106201,
       "pages": 7,
       "source_pages": 7,
       "lessons": 35
@@ -60,89 +60,89 @@
     "muzik:6": {
       "path": "muzik/tahun_6.pdf",
       "source_sha256": "b26671282b6843c735fa3e2bfe5d936537bc58c47f36e18f5d43ab0d83048210",
-      "sha256": "4949899d9bc74156a18908f4bed7e9e3541cdb7ddba2b7410430805892e922b8",
-      "bytes": 107133,
-      "pages": 7,
+      "sha256": "a508373e33663cdd939d9d4bb3b038267bb73557a02d939f016048432e70a3fb",
+      "bytes": 109777,
+      "pages": 8,
       "source_pages": 8,
       "lessons": 35
     },
     "pendidikan_moral:2": {
       "path": "pendidikan_moral/tahun_2.pdf",
       "source_sha256": "77f60c620a84775eaf946e199da8870c6e0923274ea2b5680aa1fc06a93e272a",
-      "sha256": "2f64bbefc86161b7391300f57866f632c30d65e71968ceecc026696d515bdc43",
-      "bytes": 150847,
-      "pages": 23,
+      "sha256": "45013ea9ae4710b84bbc437de0c3dcbf6701d1e922d11efdcaf84a4fce150402",
+      "bytes": 151296,
+      "pages": 21,
       "source_pages": 35,
       "lessons": 96
     },
     "pendidikan_moral:3": {
       "path": "pendidikan_moral/tahun_3.pdf",
       "source_sha256": "546a4bb5b25a5c84f5db5006697bd8af22e8765dc8cf1e0561cf5481f4506cb4",
-      "sha256": "675f789bc3b3df07ba72622c80640c1a74b3f554767e19a42f7debb081023a72",
-      "bytes": 152369,
-      "pages": 23,
+      "sha256": "8e96a07dcba220d28cf20e973323b63da715901def993f9ccbc4938e08e461c9",
+      "bytes": 153095,
+      "pages": 21,
       "source_pages": 35,
       "lessons": 96
     },
     "pendidikan_moral:4": {
       "path": "pendidikan_moral/tahun_4.pdf",
       "source_sha256": "485c98504de7a24c8f82194713db1c8c5686bf22b2a0e7f9e905655d7459ca03",
-      "sha256": "e8e2ef908a8857899473f4508dc05a5f8cf50cc562447a9efa6705000f839b11",
-      "bytes": 152233,
-      "pages": 23,
+      "sha256": "fd3c605b38c8c9929af4da4bf7c8faa184310d6b21cd078a4586c113fd550b63",
+      "bytes": 152926,
+      "pages": 21,
       "source_pages": 34,
       "lessons": 96
     },
     "pendidikan_moral:5": {
       "path": "pendidikan_moral/tahun_5.pdf",
       "source_sha256": "b06700f5a39576638fbc490a8a351efbcf2cc62022f09e1299ce751a4d04c1a6",
-      "sha256": "e15048af4c3fdc95e23c801710e81d9e3a7d74541cc064f24cdde7e2db7c647d",
-      "bytes": 153891,
-      "pages": 23,
+      "sha256": "952c6bfb92c02e27f4f00b511162cb843869944c52057807abb357ea70496d42",
+      "bytes": 154377,
+      "pages": 21,
       "source_pages": 34,
       "lessons": 96
     },
     "pendidikan_moral:6": {
       "path": "pendidikan_moral/tahun_6.pdf",
       "source_sha256": "8ef07730b1d50e8f36e61497b3b87ddb6a833a7bbf04f1d540f05f460ea4294d",
-      "sha256": "be0bb6310c29468f5da740a78412670d6ba346cb75d8a9dc59190dd109075924",
-      "bytes": 154361,
-      "pages": 24,
+      "sha256": "480e955f83d84c9ae8f8b31d1efa8ed0ee56f3d57d15b87f7ae3dc00fdaa154b",
+      "bytes": 153585,
+      "pages": 21,
       "source_pages": 34,
       "lessons": 96
     },
     "pjpk:2": {
       "path": "pjpk/tahun_2.pdf",
       "source_sha256": "6b4896600a55b9c6ef9e759eafc5243c16fea7da1b30a7857b0d2ff447015705",
-      "sha256": "a9f9fa647285cfc7592b8ecb0f22a964da8ca20a37c49f485908e1c826bc1f1f",
-      "bytes": 149368,
-      "pages": 18,
+      "sha256": "3fde47a1885537a544c5b53e2ef8ed9666ef44a2ce9ed046d5e529c1113166af",
+      "bytes": 152324,
+      "pages": 17,
       "source_pages": 28,
       "lessons": 72
     },
     "pjpk:3": {
       "path": "pjpk/tahun_3.pdf",
       "source_sha256": "33aa07b8347a15aae8955d2151c046eeb9c77b5f34014e6ff597258d68e45be3",
-      "sha256": "b1747bb4289e7f73cbfd468bc71f999487057465d5100b9f351f66b936319efa",
-      "bytes": 168195,
-      "pages": 21,
+      "sha256": "fc8aba33b179fe40f4e22939b1cb4666fd7379aad80fac33f39d8bf9babb460e",
+      "bytes": 170027,
+      "pages": 19,
       "source_pages": 35,
       "lessons": 70
     },
     "pjpk:4": {
       "path": "pjpk/tahun_4.pdf",
       "source_sha256": "4d635dcc07f8ddb85723390a5f3c6d42142965c070205aead0ff788afa388504",
-      "sha256": "6a45b86be3cce0274c4131775d7e443e96a38e559660c259f7596391c866eb00",
-      "bytes": 150513,
-      "pages": 18,
+      "sha256": "dd044697db7059e9589ac8f76b0a10610a4658f166f40365c98a29748bd6b407",
+      "bytes": 153384,
+      "pages": 17,
       "source_pages": 27,
       "lessons": 66
     },
     "pjpk:5": {
       "path": "pjpk/tahun_5.pdf",
       "source_sha256": "2a3d3a905f19001e3ddbe15a79dbd876be3e9e4298f6ab4602d5a610508386e7",
-      "sha256": "06cc8a92295017226ec5902f515ad44bdaa740eff452fdaa8e2f25ddfed1237b",
-      "bytes": 145451,
+      "sha256": "17b28aeebadb38880b7f8e9611dc085cc1204d4e69cbce21f580a1813a3aad44",
+      "bytes": 149374,
       "pages": 16,
       "source_pages": 23,
       "lessons": 65
@@ -150,62 +150,62 @@
     "pjpk:6": {
       "path": "pjpk/tahun_6.pdf",
       "source_sha256": "df2a8a1bf6276d652c6c924887fbf8e02695a1d67e81eac241f8c513f49fc0d0",
-      "sha256": "161cc79cdd91ca2b239d2bbe84309feb04cb2d7a6052fbbc8fbe4d473c481183",
-      "bytes": 149360,
-      "pages": 17,
+      "sha256": "14eabda6267f81dbe262dd4780f7e2fb3364d1c319adb6386577f9435ac84f8b",
+      "bytes": 151999,
+      "pages": 16,
       "source_pages": 27,
       "lessons": 66
     },
     "psv:2": {
       "path": "psv/tahun_2.pdf",
       "source_sha256": "b0fdd7aa6f3569692130151859c1c0d10cfed71d969f40bf9ca5bd88565e1a4a",
-      "sha256": "1bd1835ef11e020f7be0135f4d4d5614144b9021ff83e6c89883750075e6a0b1",
-      "bytes": 140655,
-      "pages": 14,
+      "sha256": "e9cd5d140bd91faf8abe479246ce6bf842854ff5abba7eb8f88bed1a4398a236",
+      "bytes": 139588,
+      "pages": 12,
       "source_pages": 16,
       "lessons": 42
     },
     "psv:3": {
       "path": "psv/tahun_3.pdf",
       "source_sha256": "bf434209d5e75a450aa1ce30d92e4e1210d9e3d480d64b93117c54d571fd8765",
-      "sha256": "5f201cd82e7d118eceeedee1fd4fabafaf4f4735c84698c542bc7b096c1756a3",
-      "bytes": 137192,
-      "pages": 12,
+      "sha256": "8bb79581233c81fc53781883265ee9d19cbe13e86f4730f7eb6f19c0719ba3d1",
+      "bytes": 137762,
+      "pages": 11,
       "source_pages": 15,
       "lessons": 42
     },
     "psv:4": {
       "path": "psv/tahun_4.pdf",
       "source_sha256": "063041453269d161f246cfeaafcdab97f6ad608981c5cb01ff0162548ea8ae40",
-      "sha256": "945b9fdd394a08111285fa4e943faec91d7cf8989d6e182da156c7a50750a0e6",
-      "bytes": 139039,
-      "pages": 13,
+      "sha256": "6de0a74f2d42729335452160a450739476d583e9d0fd11a99ce5f763d5d86bea",
+      "bytes": 140740,
+      "pages": 12,
       "source_pages": 17,
       "lessons": 42
     },
     "psv:5": {
       "path": "psv/tahun_5.pdf",
       "source_sha256": "5f49b0d27bac20c9e3131ae63c8fa19fd7d00e0c8419765677291f5abbc5cd81",
-      "sha256": "600f7d89e95b37f14a29d3763857b171ae9744cd73fcd1774c2e43859eb64ded",
-      "bytes": 137619,
-      "pages": 12,
+      "sha256": "ef62f6341a968aa126fbf536e6efad2c242190c7f9590b0dd44f3dde0b80d63d",
+      "bytes": 138421,
+      "pages": 11,
       "source_pages": 16,
       "lessons": 42
     },
     "psv:6": {
       "path": "psv/tahun_6.pdf",
       "source_sha256": "91de6e92c2d807f6c38a0de4e3776391e08c92798f126148c3a548ad06010a16",
-      "sha256": "9957d556d424e64940273b2aaed82fadc1338fff8945f526451e5f2a4f6de50a",
-      "bytes": 138270,
-      "pages": 12,
+      "sha256": "2f8315e70b68b47e911af8e1c40a24600e1be43d5c164799ca416964187103cd",
+      "bytes": 139025,
+      "pages": 11,
       "source_pages": 16,
       "lessons": 42
     },
     "rbt:4": {
       "path": "rbt/tahun_4.pdf",
       "source_sha256": "9ea854b7f0c863d51c33af4403cbc1638d8b954be9e604620970563879d398ee",
-      "sha256": "58a4070052d5a93ab6d07c3f04ffd7053841a5f2d3b1261d5537483740173a07",
-      "bytes": 105108,
+      "sha256": "b25da4b91e8fe49504045d0510c6162ceb34ab9bdc4940010513be4bd53870da",
+      "bytes": 106229,
       "pages": 7,
       "source_pages": 8,
       "lessons": 32
@@ -213,8 +213,8 @@
     "rbt:5": {
       "path": "rbt/tahun_5.pdf",
       "source_sha256": "2f80ed3a03ad562af9b7d4e3076330f836f7faa6298ffa8e92d6708faa2a9ffd",
-      "sha256": "d4e4beef377896e7c0a4d06f4c7f754abe1b9ae546c8eb44ad58c0498c9eb2ca",
-      "bytes": 103129,
+      "sha256": "ed6a309dd789183031e7a2b2c2374532cabe7691731f38b03b59c1bc306a87e3",
+      "bytes": 104082,
       "pages": 7,
       "source_pages": 7,
       "lessons": 32
@@ -222,8 +222,8 @@
     "rbt:6": {
       "path": "rbt/tahun_6.pdf",
       "source_sha256": "8f8ec00e915bbc9757f6886dd16c2e8e79c874f4b1cef384f7580de4e4401500",
-      "sha256": "fadaba02d1e38fecf4185c5381766a07a0715b363ec87f684c78b6e45f8d9ec9",
-      "bytes": 101735,
+      "sha256": "a2421211160d49516cb4596e7dbc8fdf199f82e75ef36cf6bd8585f56e8a6587",
+      "bytes": 102973,
       "pages": 7,
       "source_pages": 8,
       "lessons": 32
@@ -231,17 +231,17 @@
     "sains:2": {
       "path": "sains/tahun_2.pdf",
       "source_sha256": "0fd06eea9867fa67d2afb898d99a397a74984b578e4f1490be7a3daec16e4386",
-      "sha256": "f278f7dfd4bc14610b16590f0f7d8d6f82d10eb431c6e18e442db730c717fbac",
-      "bytes": 148552,
-      "pages": 12,
+      "sha256": "53ede4a36f9accf64ddd69810527e2c5ece1eb0740eef1bcb69efb2fcc02e0e4",
+      "bytes": 149925,
+      "pages": 11,
       "source_pages": 19,
       "lessons": 92
     },
     "sains:3": {
       "path": "sains/tahun_3.pdf",
       "source_sha256": "06cb134948b6ae8e68fc3bc03a2ce5df425df92a9d803dcc05951471d8786fd9",
-      "sha256": "3c7eb69b7da2360bb980827248162d1da420cde9f49e3877d4080051370ebc09",
-      "bytes": 149121,
+      "sha256": "dfbfc8f0f034098da3386531507d7b1a745ac71a337b2ba7ca02b9277aa693a0",
+      "bytes": 152317,
       "pages": 12,
       "source_pages": 21,
       "lessons": 103
@@ -249,17 +249,17 @@
     "sains:4": {
       "path": "sains/tahun_4.pdf",
       "source_sha256": "05fb79906df3b0c27df77f0c747265980137440382b6b3c22c66c0e689115efa",
-      "sha256": "8245920d6a19424100b82d209229d2669d5136115b89356e5f61aa582fdb4e2e",
-      "bytes": 150872,
-      "pages": 12,
+      "sha256": "a72d282c0b341bab7298740ae318d9e2830a989a923e0a3af223ed85fb3df221",
+      "bytes": 152198,
+      "pages": 11,
       "source_pages": 19,
       "lessons": 88
     },
     "sejarah:4": {
       "path": "sejarah/tahun_4.pdf",
       "source_sha256": "b02475784a2611a730b64c825aeae8c437b22c09ad0c8bd458e0fdcba2ed2742",
-      "sha256": "64cb26fc86124748665e69314e8c5f26a24ec1f143ee6cc4e4a86e2ce6d4de23",
-      "bytes": 115425,
+      "sha256": "e36a5a5761f9386466ec89924fc7da87b762b51396bd98e0e714ffeacf02ee88",
+      "bytes": 116680,
       "pages": 7,
       "source_pages": 8,
       "lessons": 36
@@ -267,17 +267,17 @@
     "sejarah:5": {
       "path": "sejarah/tahun_5.pdf",
       "source_sha256": "70dc0c6d2e22ab80486ba51c9fbac1c0548d82d062c05ab9294b4afde1a58519",
-      "sha256": "ba243b2ccf1438cbe27e0914a567794d97485c2025e2e66e924da97f81ab3e50",
-      "bytes": 116236,
-      "pages": 7,
+      "sha256": "a4441c5f133e6892fc1b4a9405e554a622ecb3946dd148b45031fe165eccef57",
+      "bytes": 118880,
+      "pages": 8,
       "source_pages": 8,
       "lessons": 36
     },
     "sejarah:6": {
       "path": "sejarah/tahun_6.pdf",
       "source_sha256": "c4acfae098d482be802d9432985263da71ba302dfd39eeb6f560e18c940532b7",
-      "sha256": "dd8aee8a42cf5bd1c3177db9d330a7dd77b64aa6d928176ccca187f834049968",
-      "bytes": 114426,
+      "sha256": "aff02429155cf03876637370fce4d59244d5b979b8bfa8b4889aadfa51c67259",
+      "bytes": 116067,
       "pages": 7,
       "source_pages": 8,
       "lessons": 36

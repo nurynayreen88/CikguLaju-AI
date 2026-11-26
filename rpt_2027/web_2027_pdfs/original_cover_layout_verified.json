@@ -1307,37 +1307,37 @@
     ],
     "status": "COMPACT_RPT_PDF_COVER_VERIFIED",
     "source_sha256_by_subject_year": {
-      "matematik:2": "3de5c4502dcd56495991564a01de213b77e94d9e59a179180d75a3353d2983b6",
-      "matematik:3": "504ed5d73282d9c195045e51de3e13f44741bacb6f7e163110d886c764bd8417",
-      "muzik:2": "186a2db4ce6e962ecaaf6e8bd6dd7a22fe0850be41dbfb5d5e1a34ce15213934",
-      "muzik:3": "9a296bdaab775628ac34e39a334b21bbbaf3430229085646c33ad316924cb801",
-      "muzik:4": "98bde4bb9dce35ffa1710683c026b6a4388d79dbfc17b8a47ee54e921a6d6251",
-      "muzik:5": "e8436e5297b78ca9723cc3a1ba42f6177466cccc18c79d5acc14e273a87664a4",
-      "muzik:6": "4949899d9bc74156a18908f4bed7e9e3541cdb7ddba2b7410430805892e922b8",
-      "pendidikan_moral:2": "2f64bbefc86161b7391300f57866f632c30d65e71968ceecc026696d515bdc43",
-      "pendidikan_moral:3": "675f789bc3b3df07ba72622c80640c1a74b3f554767e19a42f7debb081023a72",
-      "pendidikan_moral:4": "e8e2ef908a8857899473f4508dc05a5f8cf50cc562447a9efa6705000f839b11",
-      "pendidikan_moral:5": "e15048af4c3fdc95e23c801710e81d9e3a7d74541cc064f24cdde7e2db7c647d",
-      "pendidikan_moral:6": "be0bb6310c29468f5da740a78412670d6ba346cb75d8a9dc59190dd109075924",
-      "pjpk:2": "a9f9fa647285cfc7592b8ecb0f22a964da8ca20a37c49f485908e1c826bc1f1f",
-      "pjpk:3": "b1747bb4289e7f73cbfd468bc71f999487057465d5100b9f351f66b936319efa",
-      "pjpk:4": "6a45b86be3cce0274c4131775d7e443e96a38e559660c259f7596391c866eb00",
-      "pjpk:5": "06cc8a92295017226ec5902f515ad44bdaa740eff452fdaa8e2f25ddfed1237b",
-      "pjpk:6": "161cc79cdd91ca2b239d2bbe84309feb04cb2d7a6052fbbc8fbe4d473c481183",
-      "psv:2": "1bd1835ef11e020f7be0135f4d4d5614144b9021ff83e6c89883750075e6a0b1",
-      "psv:3": "5f201cd82e7d118eceeedee1fd4fabafaf4f4735c84698c542bc7b096c1756a3",
-      "psv:4": "945b9fdd394a08111285fa4e943faec91d7cf8989d6e182da156c7a50750a0e6",
-      "psv:5": "600f7d89e95b37f14a29d3763857b171ae9744cd73fcd1774c2e43859eb64ded",
-      "psv:6": "9957d556d424e64940273b2aaed82fadc1338fff8945f526451e5f2a4f6de50a",
-      "rbt:4": "58a4070052d5a93ab6d07c3f04ffd7053841a5f2d3b1261d5537483740173a07",
-      "rbt:5": "d4e4beef377896e7c0a4d06f4c7f754abe1b9ae546c8eb44ad58c0498c9eb2ca",
-      "rbt:6": "fadaba02d1e38fecf4185c5381766a07a0715b363ec87f684c78b6e45f8d9ec9",
-      "sains:2": "f278f7dfd4bc14610b16590f0f7d8d6f82d10eb431c6e18e442db730c717fbac",
-      "sains:3": "3c7eb69b7da2360bb980827248162d1da420cde9f49e3877d4080051370ebc09",
-      "sains:4": "8245920d6a19424100b82d209229d2669d5136115b89356e5f61aa582fdb4e2e",
-      "sejarah:4": "64cb26fc86124748665e69314e8c5f26a24ec1f143ee6cc4e4a86e2ce6d4de23",
-      "sejarah:5": "ba243b2ccf1438cbe27e0914a567794d97485c2025e2e66e924da97f81ab3e50",
-      "sejarah:6": "dd8aee8a42cf5bd1c3177db9d330a7dd77b64aa6d928176ccca187f834049968"
+      "matematik:2": "1091f64984bbb87d5d025002fcf90ff0920b11ffd4eeb410f089e0f017bb12e2",
+      "matematik:3": "faf5e6ec2935ddf8f0a6ec19b8fc53f4bd2e428b920eae7592fa70732002346e",
+      "muzik:2": "649e62081ce1f1bf2f48d6332021b9974434db3b8b90d2de8bd8e64e484445ae",
+      "muzik:3": "969bb6eb7472ca418f19d201e1a2b7062dbf9c9a4622bd23ab8a6e3cac851f3f",
+      "muzik:4": "985e120957dd4c0a48959a081fce86a424884adc7dc542f30f51318fd7199cb9",
+      "muzik:5": "74ac51683c9e900193679f5d8a0e98b26a1358cb4fd36f58fd38487ea6756938",
+      "muzik:6": "a508373e33663cdd939d9d4bb3b038267bb73557a02d939f016048432e70a3fb",
+      "pendidikan_moral:2": "45013ea9ae4710b84bbc437de0c3dcbf6701d1e922d11efdcaf84a4fce150402",
+      "pendidikan_moral:3": "8e96a07dcba220d28cf20e973323b63da715901def993f9ccbc4938e08e461c9",
+      "pendidikan_moral:4": "fd3c605b38c8c9929af4da4bf7c8faa184310d6b21cd078a4586c113fd550b63",
+      "pendidikan_moral:5": "952c6bfb92c02e27f4f00b511162cb843869944c52057807abb357ea70496d42",
+      "pendidikan_moral:6": "480e955f83d84c9ae8f8b31d1efa8ed0ee56f3d57d15b87f7ae3dc00fdaa154b",
+      "pjpk:2": "3fde47a1885537a544c5b53e2ef8ed9666ef44a2ce9ed046d5e529c1113166af",
+      "pjpk:3": "fc8aba33b179fe40f4e22939b1cb4666fd7379aad80fac33f39d8bf9babb460e",
+      "pjpk:4": "dd044697db7059e9589ac8f76b0a10610a4658f166f40365c98a29748bd6b407",
+      "pjpk:5": "17b28aeebadb38880b7f8e9611dc085cc1204d4e69cbce21f580a1813a3aad44",
+      "pjpk:6": "14eabda6267f81dbe262dd4780f7e2fb3364d1c319adb6386577f9435ac84f8b",
+      "psv:2": "e9cd5d140bd91faf8abe479246ce6bf842854ff5abba7eb8f88bed1a4398a236",
+      "psv:3": "8bb79581233c81fc53781883265ee9d19cbe13e86f4730f7eb6f19c0719ba3d1",
+      "psv:4": "6de0a74f2d42729335452160a450739476d583e9d0fd11a99ce5f763d5d86bea",
+      "psv:5": "ef62f6341a968aa126fbf536e6efad2c242190c7f9590b0dd44f3dde0b80d63d",
+      "psv:6": "2f8315e70b68b47e911af8e1c40a24600e1be43d5c164799ca416964187103cd",
+      "rbt:4": "b25da4b91e8fe49504045d0510c6162ceb34ab9bdc4940010513be4bd53870da",
+      "rbt:5": "ed6a309dd789183031e7a2b2c2374532cabe7691731f38b03b59c1bc306a87e3",
+      "rbt:6": "a2421211160d49516cb4596e7dbc8fdf199f82e75ef36cf6bd8585f56e8a6587",
+      "sains:2": "53ede4a36f9accf64ddd69810527e2c5ece1eb0740eef1bcb69efb2fcc02e0e4",
+      "sains:3": "dfbfc8f0f034098da3386531507d7b1a745ac71a337b2ba7ca02b9277aa693a0",
+      "sains:4": "a72d282c0b341bab7298740ae318d9e2830a989a923e0a3af223ed85fb3df221",
+      "sejarah:4": "e36a5a5761f9386466ec89924fc7da87b762b51396bd98e0e714ffeacf02ee88",
+      "sejarah:5": "a4441c5f133e6892fc1b4a9405e554a622ecb3946dd148b45031fe165eccef57",
+      "sejarah:6": "aff02429155cf03876637370fce4d59244d5b979b8bfa8b4889aadfa51c67259"
     }
   },
   "compact_approved_pdf_covers": {
@@ -1415,7 +1415,7 @@
       "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true,
       "status": "COMPACT_APPROVED_RPT_PDF_COVER_VERIFIED",
       "source_sha256_by_subject_year": {
-        "matematik:4": "6a886bf796d0aee9572ad563ad977ef39a67b117cef456fbbe0eb766e45139fc"
+        "matematik:4": "00c402eaeccf33c61723c6a1168404a4949d8f87287afdfa1692c295df085b73"
       }
     },
     "matematik:5": {
@@ -1492,7 +1492,7 @@
       "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true,
       "status": "COMPACT_APPROVED_RPT_PDF_COVER_VERIFIED",
       "source_sha256_by_subject_year": {
-        "matematik:5": "5c16ad8350dc403b08f10b729ca6692155538bb8d5f83403ee676fdd95ca2436"
+        "matematik:5": "83276aa8a42a997bbd1b9af23998b736a24ce3a188c6518a5f86afcda0d71da8"
       }
     },
     "matematik:6": {
@@ -1569,7 +1569,7 @@
       "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true,
       "status": "COMPACT_APPROVED_RPT_PDF_COVER_VERIFIED",
       "source_sha256_by_subject_year": {
-        "matematik:6": "f409dc394ae41217f517411eee70566dc99d41e513dc5439a843c7b8b80f2672"
+        "matematik:6": "093dfa5ac5255a951ccce3e9107da1bba85f94d43768171e3158e055b7554436"
       }
     },
     "sains:5": {
@@ -1584,7 +1584,7 @@
         1
       ],
       "source_sha256_by_subject_year": {
-        "sains:5": "5c19de810ce2641256c9d1914c8e533d616752ea83d3720342d4e0e610db4936"
+        "sains:5": "65666f4770220479901494d7bd7979c41550b5333364ca08a58e146d721398bd"
       },
       "logo_interior_top_left": [
         418,
@@ -1623,7 +1623,7 @@
         1
       ],
       "source_sha256_by_subject_year": {
-        "sains:6": "9013fe3ce0695777cf41169c3d8a60a938d1f1fff8b3b3a831db2606cf62ac8b"
+        "sains:6": "e7785b3f255583d555fd58c74aae8d6561389992d56309fdec4abce283dca78d"
       },
       "logo_interior_top_left": [
         418,
@@ -1730,11 +1730,11 @@
     ],
     "status": "COMPACT_ENGLISH_RPT_PDF_COVER_VERIFIED",
     "source_sha256_by_subject_year": {
-      "english:2": "c629d4a852ef5066ec075444dc87869fcac670bdb6a0dcfb30bbda4edfa91c06",
-      "english:3": "5e9b41299f48a17892d3398dd74ec46abc354a113663466003911736dc2e2bfa",
-      "english:4": "e83f0af4df0012fff7095bf59fae4e6d4d3642b34c111b7998a4829a1b1fc1bd",
-      "english:5": "5e06e1671f652fd38b7ddb39e1d30a97370366c8b697cd8476ac821bb27a3630",
-      "english:6": "98732fb65987315384d62554b9481fd2a684eac5a3b839422f5f61929c58cf66"
+      "english:2": "4ff4df29c39b421bdddfb85f92839002f0555ef0fff47c20ce14a723ed275408",
+      "english:3": "d3be1f09a7ec813d6e227bdedbba2c8e926d030721c539f0ce6f35287b7bb3c5",
+      "english:4": "75606dc0a449bc7eb3d0f9db08994fb27900c458f1afaf7e32e2764066f3960e",
+      "english:5": "634ad7068f84c7fdc3bd3cba6225378000ad325eda0372349a78d46c0777f083",
+      "english:6": "d447530c897f3f4b827e79b70ba15af697b5289d1d49cdb789f4f6ad37ed9d5c"
     }
   },
   "compact_dlp_pdf_covers": {
