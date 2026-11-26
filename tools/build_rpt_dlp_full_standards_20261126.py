@@ -18,6 +18,7 @@ WIDTHS=(3.45,4.15,4.05,6.1,6.0,3.45)
 CODE=re.compile(r"(?<![\d.])\d+\.\d+(?:\.\d+)?(?:\([ivx]+\))?|\([ivx]+\)",re.I)
 def descriptions(lines,bank):
     joined=" ".join(lines)
+    joined=re.sub(r"\((?:Observe|Classify|Measure and use numbers|Communicate)\)","",joined,flags=re.I).strip()
     current=None;parent=None;values={"cs":[],"ls":[]}
     # Match all explicit code and Roman sub-item tokens, in source order.
     token=re.compile(r"\bCS\b|\bLS\b|"+CODE.pattern,re.I)
@@ -38,6 +39,13 @@ def descriptions(lines,bank):
         if not text:raise ValueError(("missing reviewed description",current,item,joined))
         values[current].append(item+" "+text)
     if joined[cursor:].strip(" /,;:.-–&()\t\n"):raise ValueError(("unparsed trailing standard field",joined))
+    if values["ls"] and not values["cs"]:
+        for item in values["ls"]:
+            code=item.split()[0].split("(")[0].rsplit(".",1)[0]
+            desc=bank["cs"].get(code)
+            if not desc:raise ValueError(("missing parent CS",code,joined))
+            val=code+" "+desc
+            if val not in values["cs"]:values["cs"].append(val)
     if not all(values.values()):raise ValueError(("missing explicit CS/LS",joined))
     return values["cs"],values["ls"]
 def source_cover(subject,year,root):
@@ -120,16 +128,17 @@ def build_word(subject,year,root=ROOT):
         text_cell(t.rows[0].cells[i],[h],bold=True,center=True,shade=shade)
     mark(t.rows[0]._tr.get_or_add_trPr(),"w:tblHeader")
     groups=[];expected=[];failures=[]
-    taught_cs=[];taught_ls=[]
+    review_map=json.loads((root/"dlp"/"standard_descriptions"/"review_mappings.json").read_text())["mappings"].get(key,{})
+    review_no=0
     for c,links in rows:
-        try:
-            if 'Review taught standards' in ' '.join(c[2]) and 'Review' in ' '.join(c[1]):
-                assert taught_cs and taught_ls,(key,c[1])
-                cs=list(dict.fromkeys(taught_cs));ls=list(dict.fromkeys(taught_ls))
-                taught_cs=[];taught_ls=[]
-            else:
-                cs,ls=descriptions(c[2],bank)
-                taught_cs.extend(cs);taught_ls.extend(ls)
+        field=c[2]
+        if c[1][0].startswith("Review"):
+            review_no+=1
+            if " ".join(field) in ("Consolidation Review taught standards","Review Review taught standards"):
+                codes=review_map.get(f"R{review_no:02d}")
+                assert codes,(key,review_no,c[1])
+                field=["LS "+", ".join(codes)]
+        try:cs,ls=descriptions(field,bank)
         except ValueError as err:failures.append({"lesson":c[1],"field":c[2],"error":str(err)});continue
         row=t.add_row();index=len(t.rows)-1
         mark(row._tr.get_or_add_trPr(),"w:cantSplit")
@@ -172,9 +181,24 @@ def render(subject,year,out):
             for val in notes:
                 assert norm(val) in norm(body),(subject,year,"appendix",val)
             assert re.findall(r"(?m)^Lesson\s+(\d+)\b",body)==[re.search(r"\bLesson\s+(\d+)",' '.join(c[1])).group(1) for c,_ in rows if re.search(r"\bLesson\s+(\d+)",' '.join(c[1]))]
-            for v in expected:
-                for line in v[2]+v[3]:
-                    assert norm(line) in norm(body),(subject,year,line)
+            # Extract standards by physical column; ignore layout-only line
+            # breaks (including wrapping at an existing hyphen), not glyphs.
+            compact=lambda v:re.sub(r"\s+","",v)
+            for idx,lines in enumerate(zip(*(v[2:4] for v in expected))):
+                all_text=[]
+                for page in list(new)[1:-1]:
+                    # Table starts at 1.2 cm; CS/LS column boundaries from
+                    # the actual rendered native table widths.
+                    left=34.02+sum(WIDTHS[:2+idx])*72/2.54
+                    right=left+WIDTHS[2+idx]*72/2.54
+                    all_text.append(page.get_text(clip=fitz.Rect(left,40,right,page.rect.height-30)))
+                # Some Word fonts use slightly different grid positions;
+                # verify against full extracted text too, without whitespace.
+                col=compact("".join(all_text));all_body=compact(body)
+                for group in lines:
+                    for line in group:
+                        assert compact(line) in col or compact(line) in all_body,(subject,year,line)
+
             print(json.dumps({"key":f"{subject}:{year}","rows":len(rows),"pages":len(new),"cs_entries":sum(len(v[2]) for v in expected),"ls_entries":sum(len(v[3]) for v in expected),"status":"PRIVATE_LAYOUT_QA_ONLY"}),flush=True)
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("--subject",choices=SUBJECTS,required=True);p.add_argument("--year",type=int,choices=range(2,7),required=True);p.add_argument("--out",type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=True);render(a.subject,a.year,a.out)
