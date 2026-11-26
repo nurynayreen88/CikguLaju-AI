@@ -22,6 +22,7 @@ from web import kp2027_year1_rpt_bundle as kp_rpt
 from web import kp2027_year1_rpt_combined as kp_ab
 from web import rpt_2027_kssr_bm_word as bm_word
 from web import rpt_kssr_bm_private_storage as private_bm_word
+from web import rpt_native_word_batch as native_word
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.matematik import sk_documents as matematik_sk
@@ -254,14 +255,15 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                  if os.environ.get("CIKGULAJU_KSSR_BM_WORD_PRIVATE")=="1"
                  else bm_word.word_document(year,root=root))
                 if code=="bahasa_melayu" and personalization_allowed and ready else None)
+            batch_word = bool(personalization_allowed and native_word.eligible(code,year,current,root=root))
             entries.append({
                 "year":year,
                 "pdf_ready":ready,
                 "status":entry_status if ready else "PDF BELUM DIPASANG",
                 "download_enabled":bool(ready and allowed),
-                "docx_ready":bool(word),
-                "docx_url":f"/api/rpt/2027/all/bahasa_melayu/{year}.docx" if word else None,
-                "word_paid_only":code=="bahasa_melayu",
+                "docx_ready":bool(word or batch_word),
+                "docx_url":f"/api/rpt/2027/all/{code}/{year}.docx" if word or batch_word else None,
+                "word_paid_only":code=="bahasa_melayu" or batch_word,
                 "note":NOTES.get(code,DEFAULT_NOTE),
                 "is_draft":current is not None or entry_status!="TERSEDIA",
             })
@@ -503,6 +505,24 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
+        if native_word.enabled() and f"{subject}:{year}" in native_word.PINS:
+            if not _has_paid_access(account):
+                return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
+            source=_staged_file(subject,year,root=root)
+            if (subject=="matematik" and year in matematik_sk.DIGESTS) or _approved_sk_science_file(subject,year,root) is not None:
+                return jsonify({"error":"Versi RPT Word belum sepadan dengan PDF terkini."}),503
+            from web_v1_telegram_auth_routes import _config
+            try:
+                blob,digest=native_word.document(subject,year,source,account,_config(),root=root)
+            except Exception:
+                return jsonify({"error":"RPT Word belum dapat disediakan. Sila cuba semula."}),503
+            response=send_file(BytesIO(blob),as_attachment=True,conditional=False,
+                mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                download_name=f"CIKGULAJU_RPT_{subject.upper()}_SK_TAHUN_{year}_2027_WORD.docx")
+            response.headers["X-RPT-Source-SHA256"]=digest
+            response.headers["X-RPT-Word-Access"]="paid-founder-only"
+            response.headers["X-RPT-Academic-Status"]="DRAF_SEMAKAN"
+            return response
         if subject!="bahasa_melayu" or year not in bm_word.YEARS:
             return jsonify({"error":"RPT Word KSSR belum tersedia bagi pilihan ini."}),404
         # Backend gate also applies to users copying the URL, not just menu.
