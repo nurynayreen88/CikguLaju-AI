@@ -127,6 +127,12 @@ def weekly_rpt_suggestion(state, target, subject, year):
     group_a = state in FRI_SAT
     if school_closure(state, target):
         return None
+    if subject in DLP_SUBJECTS:
+        import os
+        if os.environ.get("CIKGULAJU_DLP_WEEKLY_SUGGESTIONS")!="1":
+            return None
+        from web.dlp_rpt_weekly_suggestions import suggestion
+        return suggestion(subject,year,target,group_a)
     try:
         from web.native_telegram_integrated_english_client import integrated_enabled
         if subject == "ENGLISH" and 2 <= year <= 6 and integrated_enabled():
@@ -346,7 +352,7 @@ def assign_week_suggestions(days):
         first = entries[0][1]
         suggestion = first.get("rpt_suggestion")
         # A generic PJPK period still needs the teacher to choose PJ or PK.
-        if not suggestion or (code == "PJPK" and not component):
+        if not suggestion or "dlp_labels" in suggestion or (code == "PJPK" and not component):
             continue
         if any(slot.get("rpt_suggestion") != suggestion
                or (code != DPK_SUBJECT and "progress" not in slot) for _, slot in entries):
