@@ -1,0 +1,27 @@
+name: DLP ten active RPT source and native Word layout audit
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/audit_dlp_rpt_sources_20261126.py'
+      - '.github/workflows/rpt-dlp-ten-source-audit-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        subject: [mathematics_dlp, science_dlp]
+        year: [2,3,4,5,6]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: python -m tools.audit_dlp_rpt_sources_20261126 --subject ${{ matrix.subject }} --year ${{ matrix.year }}
