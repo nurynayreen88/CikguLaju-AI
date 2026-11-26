@@ -93,3 +93,27 @@ def replace_cover_image(original,source,layout,identity):
         part._blob=pdf[0].get_pixmap(matrix=fitz.Matrix(2,2),alpha=False).tobytes("png")
     result=BytesIO();doc.save(result)
     return result.getvalue()
+
+
+def for_paid_download(account,original,source,layout):
+    """Reuse the signed-session profile; never accept browser identity values."""
+    from web.english_rpt_2027_http import _has_paid_access
+    from web.teacher_profile_store import ProfileUnavailable
+    if not _has_paid_access(account):
+        raise PermissionError("RPT Word hanya untuk pengguna berbayar aktif")
+    uid=account.get("telegram_user_id")
+    if type(uid) is not int or uid<1:
+        raise ProfileUnavailable("Akaun guru tidak sah")
+    from web_v1_telegram_auth_routes import _config
+    from web.rpt_school_cover import school_identity
+    config=_config()
+    if not config or config.get("account_backend")!="supabase":
+        raise ProfileUnavailable("Profil sekolah tidak dapat disemak")
+    identity=school_identity(config,uid,allow_teacher_only=True)
+    if identity is None:
+        return original,False
+    try:
+        updated=replace_cover_image(original,source,layout,identity)
+    except (ValueError,RuntimeError,TypeError,OSError):
+        raise ProfileUnavailable("Muka depan RPT Word tidak dapat disediakan") from None
+    return updated,updated!=original
