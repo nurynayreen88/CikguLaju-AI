@@ -1827,7 +1827,7 @@ function canSelectRph(){
  if(isDlpRphSubject(subject.value))return dlpRphDownload();
  if(curriculum.value==="ppki")
   return (["2","3","4","5","6"].includes(year.value)&&subject.value===ppkiSubject)||
-         (year.value==="2"&&subject.value==="BAHASA_INGGERIS_PPKI");
+         (year.value==="2"&&["BAHASA_INGGERIS_PPKI","BAHASA_MELAYU_PPKI"].includes(subject.value));
  if(curriculum.value!=="kssr")return false;
  if(subject.value==="MATH_SJKC")return ["2","3"].includes(year.value);
  if(subject.value==="MATH_SJKT")return year.value==="2";

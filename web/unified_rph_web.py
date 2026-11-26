@@ -53,6 +53,7 @@ SUBJECT_LABELS = {
     "MUZIK": "Pendidikan Muzik",
     ppki.SUBJECT: "Pengurusan Kehidupan (PPKI)",
     ppki.ENGLISH_SUBJECT: ppki.ENGLISH_LABEL,
+    ppki.MALAY_SUBJECT: ppki.MALAY_LABEL,
 }
 SOURCE_SUBJECTS = frozenset(("ENGLISH", "MORAL", "PJPK", "PSV"))
 MAX_TOKEN = 40
