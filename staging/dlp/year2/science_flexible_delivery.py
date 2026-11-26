@@ -14,14 +14,14 @@ SCIENCE_SHORT_PREPARATION = {
     "16": "Use ready-printed nest and egg-cluster observations; compare side by side.",
     "17": "Provide the four illustrated birth records in a two-column format.",
     "20": "Pre-arrange the life-cycle pictures; allow oral reports alongside sketches.",
-    "21": "Give pairs ready-sorted picture sets for food and shelter.",
+    "21": "Give pairs mixed picture sets ready for sorting into food and shelter.",
     "26": "Provide dated observations and the consequence prompt on one sheet.",
     "27": "Set up the torch, mirror and card before pupils arrive.",
     "28": "Prepare paired viewing boxes and equivalent symbols before the lesson; run trials concurrently.",
     "32": "Set up the two demonstrations and reuse pupils' previous observation records.",
     "33": "Place identical component trays and printed circuit pictures on tables.",
     "34": "Prepare a working low-voltage circuit and four function cards per pair.",
-    "40": "Prepare all five separation examples for brief teacher demonstrations instead of rotating groups.",
+    "40": "Set up all five stations before class and stagger groups to reduce waiting.",
     "41": "Prepare three small mixtures and tools at each table so pairs can test concurrently.",
     "46": "Display the previous sieve and dissolving results side by side.",
     "47": "Give each pair one five-source picture set and a ready-drawn map.",
@@ -42,7 +42,7 @@ SCIENCE_SHORT_PREPARATION = {
 def adapt_science_phases(lesson, number, minutes):
     if minutes != 30:
         return lesson["phases"]
-    preparation = SCIENCE_SHORT_PREPARATION[number]
+    preparation = SCIENCE_SHORT_PREPARATION[str(number)]
     phases = [list(p) for p in lesson["phases"]]
     assert len(phases) == 4
     # Internal indicative allocation only: the handout displays teacher time.
