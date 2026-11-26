@@ -1,0 +1,23 @@
+name: Paired Mathematics actual download gate
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/dlp_paired_session_delivery.py'
+      - 'tests/test_dlp_paired_math_delivery.py'
+      - '.github/workflows/dlp-paired-math-actual-download.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'python-docx>=1.1,<2' 'reportlab>=4,<5' 'pypdf>=5,<7' 'PyMuPDF>=1.24,<2' 'flask>=3,<4' 'lxml>=5,<7' 'requests>=2'
+      - run: python -m unittest discover -s tests -p 'test_dlp_paired_math_delivery.py' -v

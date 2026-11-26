@@ -26,6 +26,26 @@
       "publication_authorized": true,
       "publication_authorized_on": "2026-11-26",
       "technical_qa_run": 45829055792
+    },
+    "MATH_DLP:3": {
+      "sha256": "3c6329d7aff789fdee66aa86c57c820445357d9e01e1b0af244fc4b57cf7de93",
+      "count": 101,
+      "academic_approved": false
+    },
+    "MATH_DLP:4": {
+      "sha256": "9b000b601d3b578cd4c663d076145789862c67ee2497b65c61cb27af788bf9b1",
+      "count": 101,
+      "academic_approved": false
+    },
+    "MATH_DLP:5": {
+      "sha256": "9030e39217143bb51d5df0927ce247a93846d20f068bb8f772c104bc20e0c3d4",
+      "count": 101,
+      "academic_approved": false
+    },
+    "MATH_DLP:6": {
+      "sha256": "d9359483b350e02b3452967807a16ec39332cb8853b616346fed493100c26570",
+      "count": 101,
+      "academic_approved": false
     }
   }
 }
