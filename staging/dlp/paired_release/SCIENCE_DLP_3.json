@@ -1,0 +1,6549 @@
+[
+  {
+    "session": 1,
+    "week": 1,
+    "dates": [
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-01",
+      "DLP-SCI-Y3-02"
+    ],
+    "source_labels": [
+      "L01",
+      "L02"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Observe with the senses / Classify living things"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L01 / L02"
+      ],
+      [
+        "Content Standards",
+        "1.1 Science process skills"
+      ],
+      [
+        "Learning Standards",
+        "1.1.1 Use relevant senses and suitable tools where needed to observe objects, events or changes\n1.1.2 Group objects or phenomena by shared and differing characteristics"
+      ],
+      [
+        "Book reference",
+        "TB pp. 2-3 · AB pp. 1-2 · TB pp. 4-5 · AB pp. 3"
+      ],
+      [
+        "Learning objective",
+        "1. Submit three observations and identify sight, touch or hearing beside each.\n2. Sort the six pictures independently and write the sorting rule."
+      ],
+      [
+        "Materials",
+        "Leaves, an opaque sound tube, trays and observation cards.; Six picture cards of living things and two sorting mats."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a leaf and ask which features can be checked without guessing.",
+        "Name one feature and say which sense can check it."
+      ],
+      [
+        "Main activity",
+        "Set up looking, touching and quiet listening stations. Model the difference between “rough” and “looks old”.",
+        "Examine the safe items and record an observation and sense at each station."
+      ],
+      [
+        "Practice and assessment",
+        "Ask each pupil to submit three evidence statements and check the sense named for each.",
+        "Submit three observations and identify sight, touch or hearing beside each."
+      ],
+      [
+        "Closure",
+        "Ask how two pupils can check a disputed observation.",
+        "Repeat it using the named sense and report what was observed."
+      ],
+      [
+        "Set induction",
+        "Show a bird and a fish. Ask for one feature that can be seen in both images.",
+        "Suggest a feature such as legs, fins or a visible covering."
+      ],
+      [
+        "Main activity",
+        "Give pairs six animal pictures with clear features. Ask them to name one testable rule and keep it throughout their sort.",
+        "Place all six cards into two groups using the named visible feature."
+      ],
+      [
+        "Practice and assessment",
+        "Give each pupil an unsorted copy and check all six placements against their rule.",
+        "Sort the six pictures independently and write the sorting rule."
+      ],
+      [
+        "Closure",
+        "Show a new example and ask where it would go.",
+        "Place it using the same feature and explain why."
+      ]
+    ],
+    "references": "TB pp. 2-3 · AB pp. 1-2 · TB pp. 4-5 · AB pp. 3",
+    "objectives": 2
+  },
+  {
+    "session": 2,
+    "week": 1,
+    "dates": [
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-03"
+    ],
+    "source_labels": [
+      "L03"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Measure and record length"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L03"
+      ],
+      [
+        "Content Standards",
+        "1.1 Science process skills"
+      ],
+      [
+        "Learning Standards",
+        "1.1.3 Measure with appropriate tools, standard units and correct techniques, and record numerical readings"
+      ],
+      [
+        "Book reference",
+        "TB pp. 6-7 · AB pp. 4-5"
+      ],
+      [
+        "Learning objective",
+        "1. Measure independently, then submit both lengths in centimetres."
+      ],
+      [
+        "Materials",
+        "Centimetre rulers, pencils, strips of card and recording slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Hold a strip at the ruler’s 1 cm mark. Ask where its end should start.",
+        "Identify the zero mark as the starting point."
+      ],
+      [
+        "Main activity",
+        "Model alignment and show how to read the other end in cm. Give each pair two short objects.",
+        "Take turns aligning each object at zero, reading the scale and recording the length."
+      ],
+      [
+        "Practice and assessment",
+        "Observe each pupil measuring one of the two objects and check both readings and units on the slip.",
+        "Measure independently, then submit both lengths in centimetres."
+      ],
+      [
+        "Closure",
+        "Show a ruler with a gap before the zero mark.",
+        "Explain why the ruler’s edge is different from its zero mark."
+      ]
+    ],
+    "references": "TB pp. 6-7 · AB pp. 4-5",
+    "objectives": 1
+  },
+  {
+    "session": 3,
+    "week": 2,
+    "dates": [
+      {
+        "week": "M02",
+        "start": "2027-01-10",
+        "end": "2027-01-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-11",
+        "end": "2027-01-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-04"
+    ],
+    "source_labels": [
+      "L04"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Make an inference"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L04"
+      ],
+      [
+        "Content Standards",
+        "1.1 Science process skills"
+      ],
+      [
+        "Learning Standards",
+        "1.1.4 Use information from observations to give a reasonable explanation"
+      ],
+      [
+        "Book reference",
+        "TB pp. 8-10 · AB pp. 6-7"
+      ],
+      [
+        "Learning objective",
+        "1. Write one observation and one possible explanation connected by “because”."
+      ],
+      [
+        "Materials",
+        "Illustrated footprints, comparison cards and an observation–inference sheet."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a picture of damp footprints beside a tap. Ask what the picture actually shows.",
+        "Describe one visible detail without suggesting a cause."
+      ],
+      [
+        "Main activity",
+        "Model separate observation and inference columns. Give groups two illustrated scenes with more than one possible explanation.",
+        "Record visible clues, suggest an explanation for each scene and compare which clues support it."
+      ],
+      [
+        "Practice and assessment",
+        "Give an unfamiliar scene to each pupil. Check that the inference is plausible and linked to a visible detail.",
+        "Write one observation and one possible explanation connected by “because”."
+      ],
+      [
+        "Closure",
+        "Ask for another explanation that fits the same visible evidence.",
+        "Offer an alternative and say what could be checked next."
+      ]
+    ],
+    "references": "TB pp. 8-10 · AB pp. 6-7",
+    "objectives": 1
+  },
+  {
+    "session": 4,
+    "week": 2,
+    "dates": [
+      {
+        "week": "M02",
+        "start": "2027-01-10",
+        "end": "2027-01-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-11",
+        "end": "2027-01-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-05"
+    ],
+    "source_labels": [
+      "L05"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Predict from evidence"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L05"
+      ],
+      [
+        "Content Standards",
+        "1.1 Science process skills"
+      ],
+      [
+        "Learning Standards",
+        "1.1.5 Predict an outcome using observations, previous experience, data or patterns"
+      ],
+      [
+        "Book reference",
+        "TB pp. 11-12 · AB pp. 8"
+      ],
+      [
+        "Learning objective",
+        "1. Submit a likely next result with one stated pattern or earlier observation."
+      ],
+      [
+        "Materials",
+        "Three picture cards from a growing pattern, a ruler and prediction slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show three pictures of the same shoot taken on different days.",
+        "Describe the pattern across the three pictures."
+      ],
+      [
+        "Main activity",
+        "Model using the first two pictures to predict the third. Offer a second sequence with its last picture covered.",
+        "Record a prediction and point to a previous result that supports it."
+      ],
+      [
+        "Practice and assessment",
+        "Ask each pupil to finish a prediction sentence and give a reason drawn from the sequence.",
+        "Submit a likely next result with one stated pattern or earlier observation."
+      ],
+      [
+        "Closure",
+        "Reveal the covered result and discuss predictions supported by the pattern.",
+        "Compare the result with the prediction and say what evidence was used."
+      ]
+    ],
+    "references": "TB pp. 11-12 · AB pp. 8",
+    "objectives": 1
+  },
+  {
+    "session": 5,
+    "week": 3,
+    "dates": [
+      {
+        "week": "M03",
+        "start": "2027-01-17",
+        "end": "2027-01-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-18",
+        "end": "2027-01-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-06"
+    ],
+    "source_labels": [
+      "L06"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Communicate findings"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L06"
+      ],
+      [
+        "Content Standards",
+        "1.1 Science process skills"
+      ],
+      [
+        "Learning Standards",
+        "1.1.6 Record findings in a suitable form and present them systematically"
+      ],
+      [
+        "Book reference",
+        "TB pp. 13-14 · AB pp. 9"
+      ],
+      [
+        "Learning objective",
+        "1. Submit a labelled table or drawing and explain one recorded finding."
+      ],
+      [
+        "Materials",
+        "Shell or leaf cards, magnifiers, paper and sample table headings."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show an unlabelled recording sheet and ask what a reader needs to identify each result.",
+        "Suggest a heading, label or key."
+      ],
+      [
+        "Main activity",
+        "Model two formats using a different specimen. Give groups specimens or clear photographs and ask them to choose a table or drawing.",
+        "Observe three features, record each feature clearly and agree which result to explain."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil’s three observations and ask them to explain one without relying on their partner.",
+        "Submit a labelled table or drawing and explain one recorded finding."
+      ],
+      [
+        "Closure",
+        "Compare two recordings that present the same idea differently.",
+        "Identify one label that helped the reader understand a result."
+      ]
+    ],
+    "references": "TB pp. 13-14 · AB pp. 9",
+    "objectives": 1
+  },
+  {
+    "session": 6,
+    "week": 3,
+    "dates": [
+      {
+        "week": "M03",
+        "start": "2027-01-17",
+        "end": "2027-01-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-18",
+        "end": "2027-01-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-06"
+    ],
+    "source_labels": [
+      "L06"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Communicate findings"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L06"
+      ],
+      [
+        "Content Standards",
+        "1.1 Science process skills"
+      ],
+      [
+        "Learning Standards",
+        "1.1.6 Record findings in a suitable form and present them systematically"
+      ],
+      [
+        "Book reference",
+        "TB pp. 13-14 · AB pp. 9"
+      ],
+      [
+        "Learning objective",
+        "1. Present three observations of two leaves in a labelled table or drawing; explain one comparison supported by the record."
+      ],
+      [
+        "Materials",
+        "Shell or leaf cards, magnifiers, paper and sample table headings."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display two leaves and ask which visible difference could be recorded.",
+        "Suggest a feature such as shape or leaf edge."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Provide fresh leaves or clear pictures and a blank data table.",
+        "Present three observations of two leaves in a labelled table or drawing; explain one comparison supported by the record."
+      ],
+      [
+        "Closure",
+        "Ask for one comparison that refers to the recorded table.",
+        "Read a labelled observation and state a supported difference."
+      ]
+    ],
+    "references": "TB pp. 13-14 · AB pp. 9",
+    "objectives": 1
+  },
+  {
+    "session": 7,
+    "week": 4,
+    "dates": [
+      {
+        "week": "M04",
+        "start": "2027-01-24",
+        "end": "2027-01-28",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-25",
+        "end": "2027-01-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-07"
+    ],
+    "source_labels": [
+      "L07"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Use apparatus and handle specimens"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L07"
+      ],
+      [
+        "Content Standards",
+        "1.2 Manipulative skills"
+      ],
+      [
+        "Learning Standards",
+        "1.2.1 Use and handle science apparatus and materials in the correct way\n1.2.2 Handle specimens carefully using suitable techniques"
+      ],
+      [
+        "Book reference",
+        "TB pp. 15-17 · AB pp. 10-11"
+      ],
+      [
+        "Learning objective",
+        "1. Select and use both tools safely, then show the leaf remains intact in the receiving tray."
+      ],
+      [
+        "Materials",
+        "Magnifiers, blunt tongs, soft brushes, trays and dry leaves."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Compare a crushed paper leaf with an intact one and ask how tools could protect it.",
+        "Name a way to hold or move a specimen gently."
+      ],
+      [
+        "Main activity",
+        "Demonstrate proper handling of a magnifier and blunt tongs. Set up labelled practice stations with a specimen transfer path.",
+        "Inspect a specimen using the magnifier and transfer the specimen between trays without crushing it."
+      ],
+      [
+        "Practice and assessment",
+        "Use a three-point checklist for two tools and the specimen transfer. Rotate so each pupil demonstrates independently.",
+        "Select and use both tools safely, then show the leaf remains intact in the receiving tray."
+      ],
+      [
+        "Closure",
+        "Ask what to do if a fragile part breaks or spills.",
+        "Explain how to stop, report and continue after guidance."
+      ]
+    ],
+    "references": "TB pp. 15-17 · AB pp. 10-11",
+    "objectives": 1
+  },
+  {
+    "session": 8,
+    "week": 4,
+    "dates": [
+      {
+        "week": "M04",
+        "start": "2027-01-24",
+        "end": "2027-01-28",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-25",
+        "end": "2027-01-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-07"
+    ],
+    "source_labels": [
+      "L07"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Use apparatus and handle specimens"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L07"
+      ],
+      [
+        "Content Standards",
+        "1.2 Manipulative skills"
+      ],
+      [
+        "Learning Standards",
+        "1.2.1 Use and handle science apparatus and materials in the correct way\n1.2.2 Handle specimens carefully using suitable techniques"
+      ],
+      [
+        "Book reference",
+        "TB pp. 15-17 · AB pp. 10-11"
+      ],
+      [
+        "Learning objective",
+        "1. Use a hand lens and forceps to observe and move a safe specimen without damaging it; explain two handling rules."
+      ],
+      [
+        "Materials",
+        "Magnifiers, blunt tongs, soft brushes, trays and dry leaves."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a hand lens and forceps beside a clean specimen.",
+        "Identify the tool for viewing detail and the tool for moving the specimen."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Demonstrate tool use and supervise with clean, non-hazardous specimens.",
+        "Use a hand lens and forceps to observe and move a safe specimen without damaging it; explain two handling rules."
+      ],
+      [
+        "Closure",
+        "Ask how the specimen can be returned without crushing it.",
+        "Demonstrate or explain a safe handling action."
+      ]
+    ],
+    "references": "TB pp. 15-17 · AB pp. 10-11",
+    "objectives": 1
+  },
+  {
+    "session": 9,
+    "week": 5,
+    "dates": [
+      {
+        "week": "M05",
+        "start": "2027-01-31",
+        "end": "2027-02-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M05",
+        "start": "2027-02-01",
+        "end": "2027-02-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-08"
+    ],
+    "source_labels": [
+      "L08"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Sketch, clean and store"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 1 Scientific Skills"
+      ],
+      [
+        "Lesson / PdP",
+        "L08"
+      ],
+      [
+        "Content Standards",
+        "1.2 Manipulative skills"
+      ],
+      [
+        "Learning Standards",
+        "1.2.3 Draw accurate sketches of specimens, apparatus and science materials\n1.2.4 Clean science apparatus using the correct method\n1.2.5 Put away science apparatus and materials safely in the correct places"
+      ],
+      [
+        "Book reference",
+        "TB pp. 17-20 · AB pp. 12-14"
+      ],
+      [
+        "Learning objective",
+        "1. Show a recognisable sketch with labels and demonstrate the correct clean-and-store sequence."
+      ],
+      [
+        "Materials",
+        "Specimens, pencils, trays, cleaning cloths, magnifiers and a storage chart."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display a sketch with an unclear label and a tray with equipment in the wrong place.",
+        "Suggest one correction to the picture or storage arrangement."
+      ],
+      [
+        "Main activity",
+        "Model a clear outline and straight label lines. Demonstrate wiping, drying and returning the apparatus after use.",
+        "Observe a specimen, make a labelled sketch, clean the apparatus and match it to its storage place."
+      ],
+      [
+        "Practice and assessment",
+        "Check every pupil’s drawing and observe each pupil cleaning and storing one item.",
+        "Show a recognisable sketch with labels and demonstrate the correct clean-and-store sequence."
+      ],
+      [
+        "Closure",
+        "Ask why damp apparatus is dried before being stored.",
+        "Explain one consequence of putting it away wet."
+      ]
+    ],
+    "references": "TB pp. 17-20 · AB pp. 12-14",
+    "objectives": 1
+  },
+  {
+    "session": 10,
+    "week": 5,
+    "dates": [
+      {
+        "week": "M05",
+        "start": "2027-01-31",
+        "end": "2027-02-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M05",
+        "start": "2027-02-01",
+        "end": "2027-02-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-09"
+    ],
+    "source_labels": [
+      "L09"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Follow science room rules"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 2 Science Room Rules"
+      ],
+      [
+        "Lesson / PdP",
+        "L09"
+      ],
+      [
+        "Content Standards",
+        "2.1 Science room rules"
+      ],
+      [
+        "Learning Standards",
+        "2.1.1 Follow the rules for working in the science room"
+      ],
+      [
+        "Book reference",
+        "TB pp. 24-26 · AB pp. 15-16"
+      ],
+      [
+        "Learning objective",
+        "1. Demonstrate an appropriate rule at each stage and explain what could happen if one is ignored."
+      ],
+      [
+        "Materials",
+        "Science room rules cards, teacher-made scenario cards and empty apparatus trays."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a picture of a crowded doorway and ask how the class should enter safely.",
+        "State one action that keeps the entrance clear."
+      ],
+      [
+        "Main activity",
+        "Set up a short dry-run with empty trays and rules cards for before, during and after work.",
+        "Rehearse entering, handling and returning materials safely. Explain each chosen rule to a partner."
+      ],
+      [
+        "Practice and assessment",
+        "Give each pupil three situation prompts and use a checklist for the three stages and a consequence.",
+        "Demonstrate an appropriate rule at each stage and explain what could happen if one is ignored."
+      ],
+      [
+        "Closure",
+        "Ask which rule helps keep the next class safe.",
+        "Name a rule and connect it to a possible consequence."
+      ]
+    ],
+    "references": "TB pp. 24-26 · AB pp. 15-16",
+    "objectives": 1
+  },
+  {
+    "session": 11,
+    "week": 7,
+    "dates": [
+      {
+        "week": "M07",
+        "start": "2027-02-14",
+        "end": "2027-02-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-15",
+        "end": "2027-02-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-10"
+    ],
+    "source_labels": [
+      "L10"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Types of teeth and functions"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L10"
+      ],
+      [
+        "Content Standards",
+        "3.1 Human teeth"
+      ],
+      [
+        "Learning Standards",
+        "3.1.1 Describe the different types of teeth and what each does"
+      ],
+      [
+        "Book reference",
+        "TB pp. 30-31 · AB pp. 17-19"
+      ],
+      [
+        "Learning objective",
+        "1. Label all three types and match cutting, tearing and grinding to them.\n2. Match pictures of incisors, canines and molars to cutting, tearing and grinding, then explain the function of each."
+      ],
+      [
+        "Materials",
+        "Tooth model or images, shape cards and job labels."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a pointed and a broad tooth and ask what differences are visible.",
+        "Describe the two shapes and propose a job for each."
+      ],
+      [
+        "Main activity",
+        "Point to incisors, canines and molars on an image. Use cards to model cutting, tearing and grinding without food handling.",
+        "Match each tooth group to its shape and job, then explain one match to a partner."
+      ],
+      [
+        "Practice and assessment",
+        "Use three unlabelled images and check the match between name and function for each pupil.",
+        "Label all three types and match cutting, tearing and grinding to them."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Give tooth-shape cards and food-action pictures; do not require eating.",
+        "Match pictures of incisors, canines and molars to cutting, tearing and grinding, then explain the function of each."
+      ],
+      [
+        "Closure",
+        "Ask which tooth is useful for grinding and why its shape helps.",
+        "Point to a molar and name its broad surface."
+      ]
+    ],
+    "references": "TB pp. 30-31 · AB pp. 17-19",
+    "objectives": 2
+  },
+  {
+    "session": 12,
+    "week": 7,
+    "dates": [
+      {
+        "week": "M07",
+        "start": "2027-02-14",
+        "end": "2027-02-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-15",
+        "end": "2027-02-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-11"
+    ],
+    "source_labels": [
+      "L11"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Structure of a tooth"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L11"
+      ],
+      [
+        "Content Standards",
+        "3.1 Human teeth"
+      ],
+      [
+        "Learning Standards",
+        "3.1.2 Identify and label the parts of a tooth"
+      ],
+      [
+        "Book reference",
+        "TB pp. 32-33 · AB pp. 20"
+      ],
+      [
+        "Learning objective",
+        "1. Label enamel, dentine, gum, blood vessels and nerves on the outline."
+      ],
+      [
+        "Materials",
+        "Large tooth cross-section, word bank and individual outline cards."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show the outside of a tooth and ask what the cutaway view could reveal.",
+        "Suggest one part that cannot be seen from outside."
+      ],
+      [
+        "Main activity",
+        "Trace the enamel, dentine, gum, blood vessels and nerves on a diagram with five colour-coded prompts.",
+        "Place five word cards at the correct sites and compare enamel and dentine positions."
+      ],
+      [
+        "Practice and assessment",
+        "Give an unlabelled outline with five arrows. Check each pupil’s labels against the diagram.",
+        "Label enamel, dentine, gum, blood vessels and nerves on the outline."
+      ],
+      [
+        "Closure",
+        "Ask pupils to point to the outer hard layer and the parts inside the tooth.",
+        "Name enamel and distinguish it from the inside structures."
+      ]
+    ],
+    "references": "TB pp. 32-33 · AB pp. 20",
+    "objectives": 1
+  },
+  {
+    "session": 13,
+    "week": 8,
+    "dates": [
+      {
+        "week": "M08",
+        "start": "2027-02-21",
+        "end": "2027-02-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-22",
+        "end": "2027-02-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-12"
+    ],
+    "source_labels": [
+      "L12"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Milk and permanent teeth"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L12"
+      ],
+      [
+        "Content Standards",
+        "3.1 Human teeth"
+      ],
+      [
+        "Learning Standards",
+        "3.1.3 Describe similarities and differences between milk teeth and permanent teeth"
+      ],
+      [
+        "Book reference",
+        "TB pp. 34-36 · AB pp. 21"
+      ],
+      [
+        "Learning objective",
+        "1. Submit two comparisons with the same feature shown across the two columns."
+      ],
+      [
+        "Materials",
+        "Milk and permanent tooth-set diagrams, comparison table and counting counters."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two tooth charts with covered headings and ask what can be counted or compared.",
+        "Identify one difference visible between charts."
+      ],
+      [
+        "Main activity",
+        "Give pairs labelled textbook diagrams to compare quantity, replacement and features visible in the drawings. Model evidence for one cell.",
+        "Count and compare the charts, then enter paired observations in a two-column table."
+      ],
+      [
+        "Practice and assessment",
+        "Ask each pupil to produce two fair comparisons. Check each comparison refers to both tooth sets.",
+        "Submit two comparisons with the same feature shown across the two columns."
+      ],
+      [
+        "Closure",
+        "Ask what replaces milk teeth as children grow.",
+        "Identify permanent teeth and state one other difference from the table."
+      ]
+    ],
+    "references": "TB pp. 34-36 · AB pp. 21",
+    "objectives": 1
+  },
+  {
+    "session": 14,
+    "week": 8,
+    "dates": [
+      {
+        "week": "M08",
+        "start": "2027-02-21",
+        "end": "2027-02-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-22",
+        "end": "2027-02-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-13"
+    ],
+    "source_labels": [
+      "L13"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Care for teeth and explain why"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L13"
+      ],
+      [
+        "Content Standards",
+        "3.1 Human teeth"
+      ],
+      [
+        "Learning Standards",
+        "3.1.4 Explain how dental care protects the different parts of a tooth\n3.1.5 Present observations about teeth creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 37-39 · AB pp. 22-25"
+      ],
+      [
+        "Learning objective",
+        "1. Practise on the model. On a tooth outline, mark where a simulated residue mark changed after brushing."
+      ],
+      [
+        "Materials",
+        "Tooth model, washable food-residue marks, demonstration brush and tooth outlines."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two dental care routines and ask which protects a tooth and how.",
+        "Choose a routine and suggest one reason."
+      ],
+      [
+        "Main activity",
+        "Mark the chewing surface and gumline on the model. Demonstrate gentle brushing and compare the marks before and after.",
+        "Practise on the model. On a tooth outline, mark where a simulated residue mark changed after brushing."
+      ],
+      [
+        "Closure",
+        "Show the before-and-after simulated residue marks on the tooth model.",
+        "Identify one area that became cleaner after brushing."
+      ]
+    ],
+    "references": "TB pp. 37-39 · AB pp. 22-25",
+    "objectives": 1
+  },
+  {
+    "session": 15,
+    "week": 9,
+    "dates": [
+      {
+        "week": "M09",
+        "start": "2027-02-28",
+        "end": "2027-03-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-03-01",
+        "end": "2027-03-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-13",
+      "DLP-SCI-Y3-14"
+    ],
+    "source_labels": [
+      "L13",
+      "L14"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Care for teeth and explain why / Classify foods"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L13 / L14"
+      ],
+      [
+        "Content Standards",
+        "3.1 Human teeth\n3.2 Food classes"
+      ],
+      [
+        "Learning Standards",
+        "3.1.4 Explain how dental care protects the different parts of a tooth\n3.1.5 Present observations about teeth creatively through writing, speech, drawings or digital tools\n3.2.1 Identify examples of foods in each food class"
+      ],
+      [
+        "Book reference",
+        "TB pp. 37-39 · AB pp. 22-25 · TB pp. 40-41 · AB pp. 26"
+      ],
+      [
+        "Learning objective",
+        "1. Annotate the tooth outline with one observed change and explain how brushing helps clean that area.\n2. Sort the cards and write another example beside every heading assigned."
+      ],
+      [
+        "Materials",
+        "Tooth model, washable food-residue marks, demonstration brush and tooth outlines.; Familiar food picture cards, food-class headings and example slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Return the annotated tooth outline and ask which surface was cleaned.",
+        "Point to the observed change before the individual explanation."
+      ],
+      [
+        "Practice and assessment",
+        "Check for a labelled part, a before-and-after observation and a care action linked to that part.",
+        "Annotate the tooth outline with one observed change and explain how brushing helps clean that area."
+      ],
+      [
+        "Closure",
+        "Ask pupils to name one routine they can explain to someone else.",
+        "Give a care action and link it to the tooth or gum area shown."
+      ],
+      [
+        "Set induction",
+        "Show pictures of rice and fish and ask how they could be placed into different food classes.",
+        "Name a likely class for each card."
+      ],
+      [
+        "Main activity",
+        "Model sorting single foods by the food class shown in the textbook. Give each group a small selection and the available class headings.",
+        "Sort each card under a heading and propose one further example for each assigned class."
+      ],
+      [
+        "Practice and assessment",
+        "Allocate two or three class headings per pupil, then check correct placement and one new example for each.",
+        "Sort the cards and write another example beside every heading assigned."
+      ],
+      [
+        "Closure",
+        "Ask for one way to justify a class choice when two foods look similar.",
+        "Name the food class and point to a named example that supports it."
+      ]
+    ],
+    "references": "TB pp. 37-39 · AB pp. 22-25 · TB pp. 40-41 · AB pp. 26",
+    "objectives": 2
+  },
+  {
+    "session": 16,
+    "week": 9,
+    "dates": [
+      {
+        "week": "M09",
+        "start": "2027-02-28",
+        "end": "2027-03-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-03-01",
+        "end": "2027-03-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-15"
+    ],
+    "source_labels": [
+      "L15"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain why food classes matter"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L15"
+      ],
+      [
+        "Content Standards",
+        "3.2 Food classes"
+      ],
+      [
+        "Learning Standards",
+        "3.2.2 Draw conclusions about how each food class helps the body"
+      ],
+      [
+        "Book reference",
+        "TB pp. 42-43 · AB pp. 27-29"
+      ],
+      [
+        "Learning objective",
+        "1. Submit three class–role pairs and give a reason for one pair."
+      ],
+      [
+        "Materials",
+        "Food-class cards, function cards and short scenario slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Ask what food helps with when someone needs energy to move.",
+        "Propose a food class and give a reason."
+      ],
+      [
+        "Main activity",
+        "Model “class–role” with one example. Give groups short needs such as energy, growth or healthy digestion and cards to match.",
+        "Match food classes to their roles, then explain a match using one relevant body need."
+      ],
+      [
+        "Practice and assessment",
+        "Ask each pupil to match three classes to three roles and justify one selection.",
+        "Submit three class–role pairs and give a reason for one pair."
+      ],
+      [
+        "Closure",
+        "Compare two distinct roles and ask for an example of each.",
+        "Name the classes and explain one difference in their roles."
+      ]
+    ],
+    "references": "TB pp. 42-43 · AB pp. 27-29",
+    "objectives": 1
+  },
+  {
+    "session": 17,
+    "week": 10,
+    "dates": [
+      {
+        "week": "M10",
+        "start": "2027-03-14",
+        "end": "2027-03-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-15",
+        "end": "2027-03-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-16"
+    ],
+    "source_labels": [
+      "L16"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Plan a balanced meal"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L16"
+      ],
+      [
+        "Content Standards",
+        "3.2 Food classes"
+      ],
+      [
+        "Learning Standards",
+        "3.2.3 Use the food pyramid to explain examples of balanced meals"
+      ],
+      [
+        "Book reference",
+        "TB pp. 44-46 · AB pp. 30"
+      ],
+      [
+        "Learning objective",
+        "1. Draw or list a meal and explain why the selected components fit the food pyramid."
+      ],
+      [
+        "Materials",
+        "Food pyramid diagram, meal cards and plate templates."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a one-food meal picture and ask which parts of a balanced meal are missing.",
+        "Name one missing food group and propose a food example."
+      ],
+      [
+        "Main activity",
+        "Model using the food pyramid to check variety and relative proportions. Ask pairs to improve a simple meal while keeping it realistic.",
+        "Build a meal with cards, identify where each component fits in the pyramid and explain one revision."
+      ],
+      [
+        "Practice and assessment",
+        "Give each pupil a blank plate. Check the proposed meal and its explanation against the pyramid.",
+        "Draw or list a meal and explain why the selected components fit the food pyramid."
+      ],
+      [
+        "Closure",
+        "Invite pupils to give one change that improves a sample meal.",
+        "Name the food added or adjusted and connect it to its place in the pyramid."
+      ]
+    ],
+    "references": "TB pp. 44-46 · AB pp. 30",
+    "objectives": 1
+  },
+  {
+    "session": 18,
+    "week": 10,
+    "dates": [
+      {
+        "week": "M10",
+        "start": "2027-03-14",
+        "end": "2027-03-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-15",
+        "end": "2027-03-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-17"
+    ],
+    "source_labels": [
+      "L17"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain an imbalanced diet"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L17"
+      ],
+      [
+        "Content Standards",
+        "3.2 Food classes"
+      ],
+      [
+        "Learning Standards",
+        "3.2.4 Explain why an unbalanced diet can affect health\n3.2.5 Present observations about food classes creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 47-48 · AB pp. 29,31-32"
+      ],
+      [
+        "Learning objective",
+        "1. Annotate each menu with examples of food classes. Use the pyramid to compare the two menus over time."
+      ],
+      [
+        "Materials",
+        "Two illustrated menus, food pyramid and comparison slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two sample menus and ask which contains a wider variety of suitable foods.",
+        "Choose a menu and point to visible evidence."
+      ],
+      [
+        "Main activity",
+        "Guide groups to label the food classes represented in two menus. Model tying a repeated imbalance to one effect.",
+        "Annotate each menu with examples of food classes. Use the pyramid to compare the two menus over time."
+      ],
+      [
+        "Closure",
+        "Ask pupils to compare two menu cards against the food-class chart.",
+        "Identify one food class missing or underrepresented in one menu."
+      ]
+    ],
+    "references": "TB pp. 47-48 · AB pp. 29,31-32",
+    "objectives": 1
+  },
+  {
+    "session": 19,
+    "week": 11,
+    "dates": [
+      {
+        "week": "M11",
+        "start": "2027-03-21",
+        "end": "2027-03-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-17",
+      "DLP-SCI-Y3-18"
+    ],
+    "source_labels": [
+      "L17",
+      "L18"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain an imbalanced diet / Describe digestion"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L17 / L18"
+      ],
+      [
+        "Content Standards",
+        "3.2 Food classes\n3.3 Digestion"
+      ],
+      [
+        "Learning Standards",
+        "3.2.4 Explain why an unbalanced diet can affect health\n3.2.5 Present observations about food classes creatively through writing, speech, drawings or digital tools\n3.3.1 Describe how digestion breaks food down so the body can absorb nutrients"
+      ],
+      [
+        "Book reference",
+        "TB pp. 47-48 · AB pp. 29,31-32 · TB pp. 49-53 · AB pp. 33"
+      ],
+      [
+        "Learning objective",
+        "1. Label one food class in each menu. Explain one likely effect of the less balanced pattern and one change that addresses it.\n2. Place cards in an evidence-based order and say how the body can make use of nutrients after breaking food down."
+      ],
+      [
+        "Materials",
+        "Two illustrated menus, food pyramid and comparison slips.; Food-piece illustrations, digestion sequence cards and a body diagram."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display the less balanced menu and its suggested change.",
+        "Name the food class addressed by that change."
+      ],
+      [
+        "Practice and assessment",
+        "Check a labelled food example, one possible effect of a repeated imbalance and a realistic change.",
+        "Label one food class in each menu. Explain one likely effect of the less balanced pattern and one change that addresses it."
+      ],
+      [
+        "Closure",
+        "Ask pupils why a single sample menu is different from a long-term diet.",
+        "Explain that repeated patterns affect the body over time."
+      ],
+      [
+        "Set induction",
+        "Ask whether the body can use a large piece of food in the same form it is swallowed.",
+        "Suggest what happens to food after chewing and swallowing."
+      ],
+      [
+        "Main activity",
+        "Use picture cards to model food breaking down into smaller components and show where digestion occurs. Build a simple class sequence without using real food.",
+        "Place cards in an evidence-based order and say how the body can make use of nutrients after breaking food down."
+      ],
+      [
+        "Closure",
+        "Show an intact food illustration beside its broken-down representation.",
+        "Describe one change caused by digestion."
+      ]
+    ],
+    "references": "TB pp. 47-48 · AB pp. 29,31-32 · TB pp. 49-53 · AB pp. 33",
+    "objectives": 2
+  },
+  {
+    "session": 20,
+    "week": 11,
+    "dates": [
+      {
+        "week": "M11",
+        "start": "2027-03-21",
+        "end": "2027-03-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-18"
+    ],
+    "source_labels": [
+      "L18"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Describe digestion"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L18"
+      ],
+      [
+        "Content Standards",
+        "3.3 Digestion"
+      ],
+      [
+        "Learning Standards",
+        "3.3.1 Describe how digestion breaks food down so the body can absorb nutrients"
+      ],
+      [
+        "Book reference",
+        "TB pp. 49-53 · AB pp. 33"
+      ],
+      [
+        "Learning objective",
+        "1. Explain in simple terms what digestion changes and why that helps the body use nutrients."
+      ],
+      [
+        "Materials",
+        "Food-piece illustrations, digestion sequence cards and a body diagram."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a food particle diagram before and after breakdown.",
+        "Identify which representation shows smaller particles."
+      ],
+      [
+        "Practice and assessment",
+        "Invite each pupil to give a short oral or written explanation with both breakdown and purpose.",
+        "Explain in simple terms what digestion changes and why that helps the body use nutrients."
+      ],
+      [
+        "Closure",
+        "Ask a pupil to complete “Digestion breaks food down so …”.",
+        "Finish the sentence using a body-use or nutrients statement."
+      ]
+    ],
+    "references": "TB pp. 49-53 · AB pp. 33",
+    "objectives": 1
+  },
+  {
+    "session": 21,
+    "week": 12,
+    "dates": [
+      {
+        "week": "M12",
+        "start": "2027-03-28",
+        "end": "2027-04-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-29",
+        "end": "2027-04-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-19"
+    ],
+    "source_labels": [
+      "L19"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Trace the path of food"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L19"
+      ],
+      [
+        "Content Standards",
+        "3.3 Digestion"
+      ],
+      [
+        "Learning Standards",
+        "3.3.2 Put the parts through which food passes during digestion in sequence"
+      ],
+      [
+        "Book reference",
+        "TB pp. 50-51 · AB pp. 34"
+      ],
+      [
+        "Learning objective",
+        "1. Order the five organs correctly and identify the anus as the exit for undigested waste."
+      ],
+      [
+        "Materials",
+        "Digestive-pathway diagram, movable organ labels and arrows."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show an outline of the human body and ask where food enters.",
+        "Point to the mouth and name a likely next place."
+      ],
+      [
+        "Main activity",
+        "Model following one continuous route using arrow cards. Give groups scrambled cards for the organs and the exit.",
+        "Arrange mouth, oesophagus, stomach, small intestine and large intestine. Add the exit and trace the full route."
+      ],
+      [
+        "Practice and assessment",
+        "Give each pupil the unlabelled path and six movable labels, including the exit. Check order independently.",
+        "Order the five organs correctly and identify the anus as the exit for undigested waste."
+      ],
+      [
+        "Closure",
+        "Ask which organ follows the stomach along the route.",
+        "Point to and name the small intestine."
+      ]
+    ],
+    "references": "TB pp. 50-51 · AB pp. 34",
+    "objectives": 1
+  },
+  {
+    "session": 22,
+    "week": 12,
+    "dates": [
+      {
+        "week": "M12",
+        "start": "2027-03-28",
+        "end": "2027-04-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-29",
+        "end": "2027-04-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-19"
+    ],
+    "source_labels": [
+      "L19"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Trace the path of food"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L19"
+      ],
+      [
+        "Content Standards",
+        "3.3 Digestion"
+      ],
+      [
+        "Learning Standards",
+        "3.3.2 Put the parts through which food passes during digestion in sequence"
+      ],
+      [
+        "Book reference",
+        "TB pp. 50-51 · AB pp. 34"
+      ],
+      [
+        "Learning objective",
+        "1. Arrange cards for mouth, oesophagus, stomach, small intestine, large intestine and exit; explain the direction using arrows."
+      ],
+      [
+        "Materials",
+        "Digestive-pathway diagram, movable organ labels and arrows."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a mouth card and a stomach card from the digestive pathway.",
+        "Predict which is encountered first by food."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Provide an unlabelled digestive-system diagram and sequence cards.",
+        "Arrange cards for mouth, oesophagus, stomach, small intestine, large intestine and exit; explain the direction using arrows."
+      ],
+      [
+        "Closure",
+        "Ask which organ follows the stomach in the labelled sequence.",
+        "Point to the small intestine and trace the direction of movement."
+      ]
+    ],
+    "references": "TB pp. 50-51 · AB pp. 34",
+    "objectives": 1
+  },
+  {
+    "session": 23,
+    "week": 13,
+    "dates": [
+      {
+        "week": "M13",
+        "start": "2027-04-04",
+        "end": "2027-04-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-05",
+        "end": "2027-04-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-20"
+    ],
+    "source_labels": [
+      "L20"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain what happens after digestion"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 3 Humans"
+      ],
+      [
+        "Lesson / PdP",
+        "L20"
+      ],
+      [
+        "Content Standards",
+        "3.3 Digestion"
+      ],
+      [
+        "Learning Standards",
+        "3.3.3 Draw a conclusion about what happens to food material the body does not need after digestion\n3.3.4 Present observations about digestion creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 49-54 · AB pp. 35-36"
+      ],
+      [
+        "Learning objective",
+        "1. Draw and label the two routes. Add a sentence about what happens to the material the body does not use."
+      ],
+      [
+        "Materials",
+        "Digestive diagram with coloured arrows, nutrient/waste cards and individual diagrams."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two arrows after the small intestine and ask what could travel by different routes.",
+        "Suggest what happens to useful nutrients and undigested material."
+      ],
+      [
+        "Main activity",
+        "Model two routes: nutrients through the wall of the small intestine into the blood, and remaining undigested food toward the exit.",
+        "Place nutrient and remaining-food cards on the two routes. Explain what each arrow carries."
+      ],
+      [
+        "Practice and assessment",
+        "Check arrows and a conclusion that the remaining undigested food goes through the large intestine and leaves as faeces.",
+        "Draw and label the two routes. Add a sentence about what happens to the material the body does not use."
+      ],
+      [
+        "Closure",
+        "Ask which arrow carries nutrients to the body.",
+        "Point to the route toward the blood and explain why the routes differ."
+      ]
+    ],
+    "references": "TB pp. 49-54 · AB pp. 35-36",
+    "objectives": 1
+  },
+  {
+    "session": 24,
+    "week": 13,
+    "dates": [
+      {
+        "week": "M13",
+        "start": "2027-04-04",
+        "end": "2027-04-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-05",
+        "end": "2027-04-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-R01"
+    ],
+    "source_labels": [
+      "R01"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Humans"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Consolidation"
+      ],
+      [
+        "Lesson / PdP",
+        "R01"
+      ],
+      [
+        "Content Standards",
+        "3.1 Human teeth\n3.2 Food classes\n3.3 Digestion"
+      ],
+      [
+        "Learning Standards",
+        "3.1.1 Describe the different types of teeth and what each does\n3.2.3 Use the food pyramid to explain examples of balanced meals\n3.3.1 Describe how digestion breaks food down so the body can absorb nutrients"
+      ],
+      [
+        "Book reference",
+        "TB pp. 55-58 · Teacher-selected prompts"
+      ],
+      [
+        "Learning objective",
+        "1. Make a map explaining how teeth start breaking food down, how a balanced meal supplies nutrients and how digestion lets the body use them."
+      ],
+      [
+        "Materials",
+        "Tooth images, meal cards, digestion route and concept-map sheet."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a tooth, a meal and a stomach picture. Ask for a connection between any two.",
+        "Explain one link using a fact from the unit."
+      ],
+      [
+        "Main activity",
+        "Model one connecting arrow with a verb. Ask pairs to place all three images and discuss how to connect them.",
+        "Sketch a concept map linking teeth, balanced food and digestion using words along the arrows."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil’s diagram has all three ideas and accurate labelled links.",
+        "Make a map explaining how teeth start breaking food down, how a balanced meal supplies nutrients and how digestion lets the body use them."
+      ],
+      [
+        "Closure",
+        "Ask which link explains why chewing helps.",
+        "Point to the relevant arrow and explain it in one sentence."
+      ]
+    ],
+    "references": "TB pp. 55-58 · Teacher-selected prompts",
+    "objectives": 1
+  },
+  {
+    "session": 25,
+    "week": 14,
+    "dates": [
+      {
+        "week": "M14",
+        "start": "2027-04-11",
+        "end": "2027-04-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-12",
+        "end": "2027-04-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-21"
+    ],
+    "source_labels": [
+      "L21"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Group animals by what they eat"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 4 Animals"
+      ],
+      [
+        "Lesson / PdP",
+        "L21"
+      ],
+      [
+        "Content Standards",
+        "4.1 Animals' eating habits"
+      ],
+      [
+        "Learning Standards",
+        "4.1.1 Group animals by what they eat\n4.1.2 Use examples to explain what herbivores, carnivores and omnivores eat"
+      ],
+      [
+        "Book reference",
+        "TB pp. 60-63 · AB pp. 37-39"
+      ],
+      [
+        "Learning objective",
+        "1. Classify the six animals as herbivores, carnivores or omnivores using the diet records."
+      ],
+      [
+        "Materials",
+        "Six animal pictures with diet records, group labels and classification grids."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a rabbit food card and a tiger food card and compare what the two animals eat.",
+        "Describe the food evidence for each card."
+      ],
+      [
+        "Main activity",
+        "Model how plant, animal or both kinds of food support the three diet groups. Give groups six illustrated cases with diet evidence.",
+        "Sort each case using the diet shown and record at least one piece of evidence for the classification."
+      ],
+      [
+        "Practice and assessment",
+        "Give an independent grid. Check six classifications and the evidence used instead of the animal’s appearance.",
+        "Classify the six animals as herbivores, carnivores or omnivores using the diet records."
+      ],
+      [
+        "Closure",
+        "Ask how the evidence changes when a card lists plants and animals.",
+        "Name omnivore and cite both types of food."
+      ]
+    ],
+    "references": "TB pp. 60-63 · AB pp. 37-39",
+    "objectives": 1
+  },
+  {
+    "session": 26,
+    "week": 14,
+    "dates": [
+      {
+        "week": "M14",
+        "start": "2027-04-11",
+        "end": "2027-04-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-12",
+        "end": "2027-04-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-22"
+    ],
+    "source_labels": [
+      "L22"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Infer the group from an animal's diet"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 4 Animals"
+      ],
+      [
+        "Lesson / PdP",
+        "L22"
+      ],
+      [
+        "Content Standards",
+        "4.1 Animals' eating habits"
+      ],
+      [
+        "Learning Standards",
+        "4.1.3 Infer an animal's group from evidence about its diet"
+      ],
+      [
+        "Book reference",
+        "TB pp. 62-63 · AB pp. 40-41"
+      ],
+      [
+        "Learning objective",
+        "1. Highlight plant and animal foods and infer the likely group from the full log."
+      ],
+      [
+        "Materials",
+        "Four-day feeding log cards, diet group chart and evidence slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a single feeding observation and ask what additional detail might help identify a diet group.",
+        "Say what food is recorded and propose what else to observe."
+      ],
+      [
+        "Main activity",
+        "Model reading a record across several days rather than relying on the animal’s shape. Give pairs an unfamiliar animal’s food log.",
+        "Highlight plant and animal foods and infer the likely group from the full log."
+      ],
+      [
+        "Closure",
+        "Show one animal's food log containing plant and animal foods.",
+        "Name the evidence needed before assigning a diet group."
+      ]
+    ],
+    "references": "TB pp. 62-63 · AB pp. 40-41",
+    "objectives": 1
+  },
+  {
+    "session": 27,
+    "week": 15,
+    "dates": [
+      {
+        "week": "M15",
+        "start": "2027-04-18",
+        "end": "2027-04-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-19",
+        "end": "2027-04-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-22",
+      "DLP-SCI-Y3-23"
+    ],
+    "source_labels": [
+      "L22",
+      "L23"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Infer the group from an animal's diet / Compare animal teeth"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 4 Animals"
+      ],
+      [
+        "Lesson / PdP",
+        "L22 / L23"
+      ],
+      [
+        "Content Standards",
+        "4.1 Animals' eating habits"
+      ],
+      [
+        "Learning Standards",
+        "4.1.3 Infer an animal's group from evidence about its diet\n4.1.4 Describe similarities and differences in the teeth of herbivores, carnivores and omnivores"
+      ],
+      [
+        "Book reference",
+        "TB pp. 62-63 · AB pp. 40-41 · TB pp. 64-66 · AB pp. 42-43"
+      ],
+      [
+        "Learning objective",
+        "1. State the likely group and quote or paraphrase one or two food observations that justify it.\n2. Compare two features for each pictured group and connect one observed feature to the type of food eaten."
+      ],
+      [
+        "Materials",
+        "Four-day feeding log cards, diet group chart and evidence slips.; Clear tooth photos or diagrams of three animals, comparison grids and pencils."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Return an animal diet log with two highlighted foods.",
+        "Identify whether each food is plant or animal material."
+      ],
+      [
+        "Practice and assessment",
+        "Give each pupil a second short record. Check that the conclusion names the correct group and cites recorded foods.",
+        "State the likely group and quote or paraphrase one or two food observations that justify it."
+      ],
+      [
+        "Closure",
+        "Ask whether a record of one meal is always enough to classify a diet.",
+        "Explain why more observations may change the inference."
+      ],
+      [
+        "Set induction",
+        "Compare two close-up tooth images and ask what looks alike or different.",
+        "Name a visible tooth feature without naming the diet yet."
+      ],
+      [
+        "Main activity",
+        "Set out herbivore, carnivore and omnivore diagrams with diet labels. Model comparing a broad grinding surface and a pointed tearing surface.",
+        "Compare two features for each pictured group and connect one observed feature to the type of food eaten."
+      ],
+      [
+        "Closure",
+        "Show a broad grinding tooth and a pointed tearing tooth.",
+        "Match one visible shape to a feeding function."
+      ]
+    ],
+    "references": "TB pp. 62-63 · AB pp. 40-41 · TB pp. 64-66 · AB pp. 42-43",
+    "objectives": 2
+  },
+  {
+    "session": 28,
+    "week": 15,
+    "dates": [
+      {
+        "week": "M15",
+        "start": "2027-04-18",
+        "end": "2027-04-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-19",
+        "end": "2027-04-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-23"
+    ],
+    "source_labels": [
+      "L23"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare animal teeth"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 4 Animals"
+      ],
+      [
+        "Lesson / PdP",
+        "L23"
+      ],
+      [
+        "Content Standards",
+        "4.1 Animals' eating habits"
+      ],
+      [
+        "Learning Standards",
+        "4.1.4 Describe similarities and differences in the teeth of herbivores, carnivores and omnivores"
+      ],
+      [
+        "Book reference",
+        "TB pp. 64-66 · AB pp. 42-43"
+      ],
+      [
+        "Learning objective",
+        "1. Complete the grid and relate one specific tooth feature to the animal’s diet."
+      ],
+      [
+        "Materials",
+        "Clear tooth photos or diagrams of three animals, comparison grids and pencils."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display a tooth comparison grid with one cell missing.",
+        "Choose a visible tooth feature to complete it."
+      ],
+      [
+        "Practice and assessment",
+        "Ask for an individual entry showing two comparisons across all three groups and one evidence-based link.",
+        "Complete the grid and relate one specific tooth feature to the animal’s diet."
+      ],
+      [
+        "Closure",
+        "Ask what information would confirm a prediction about diet made from teeth alone.",
+        "Propose checking what the animal is observed eating."
+      ]
+    ],
+    "references": "TB pp. 64-66 · AB pp. 42-43",
+    "objectives": 1
+  },
+  {
+    "session": 29,
+    "week": 16,
+    "dates": [
+      {
+        "week": "M16",
+        "start": "2027-04-25",
+        "end": "2027-04-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-26",
+        "end": "2027-04-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-24"
+    ],
+    "source_labels": [
+      "L24"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain evidence about animal diets"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 4 Animals"
+      ],
+      [
+        "Lesson / PdP",
+        "L24"
+      ],
+      [
+        "Content Standards",
+        "4.1 Animals' eating habits"
+      ],
+      [
+        "Learning Standards",
+        "4.1.5 Present observations about animals' diets creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 67-68 · AB pp. 44"
+      ],
+      [
+        "Learning objective",
+        "1. Present a diet classification, name one supporting food observation and explain the behaviour change in the case."
+      ],
+      [
+        "Materials",
+        "Food record cards, a teacher-made before–after feeding scenario and presentation sheets."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show an animal feeding record with one change between two days.",
+        "Describe what changed in the record before suggesting why."
+      ],
+      [
+        "Main activity",
+        "Guide groups to separate the usual diet classification from a reported behaviour change. Model how to cite a recorded food item.",
+        "Prepare a brief report naming the group, a supporting observation and one possible reason for the observed change."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil gives evidence for the group and explanation for the scenario rather than a claim about all animals in the group.",
+        "Present a diet classification, name one supporting food observation and explain the behaviour change in the case."
+      ],
+      [
+        "Closure",
+        "Ask which part of the report is evidence and which part is explanation.",
+        "Identify one direct observation and one interpretation."
+      ]
+    ],
+    "references": "TB pp. 67-68 · AB pp. 44",
+    "objectives": 1
+  },
+  {
+    "session": 30,
+    "week": 16,
+    "dates": [
+      {
+        "week": "M16",
+        "start": "2027-04-25",
+        "end": "2027-04-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-26",
+        "end": "2027-04-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-25"
+    ],
+    "source_labels": [
+      "L25"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Identify ways plants reproduce"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 5 Plants"
+      ],
+      [
+        "Lesson / PdP",
+        "L25"
+      ],
+      [
+        "Content Standards",
+        "5.1 Plant reproduction"
+      ],
+      [
+        "Learning Standards",
+        "5.1.1 Give examples of plants that reproduce by each method"
+      ],
+      [
+        "Book reference",
+        "TB pp. 72-73 · AB pp. 45-46"
+      ],
+      [
+        "Learning objective",
+        "1. Match all six examples: seed, sucker, underground stem, spore, stem cutting and leaf. Point to the relevant clue."
+      ],
+      [
+        "Materials",
+        "Six specimen photos: chilli, banana, potato, fern, cassava and snake plant. Six method cards."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show one seed and a photograph of a plantlet on a leaf.",
+        "Describe where each new plant might start."
+      ],
+      [
+        "Main activity",
+        "Model matching chilli to seeds. Offer one specimen for each remaining method and ask groups to identify the relevant part or clue.",
+        "Match all six examples: seed, sucker, underground stem, spore, stem cutting and leaf. Point to the relevant clue."
+      ],
+      [
+        "Closure",
+        "Show a plant example and the part used for reproduction.",
+        "Name the method and point to the relevant part."
+      ]
+    ],
+    "references": "TB pp. 72-73 · AB pp. 45-46",
+    "objectives": 1
+  },
+  {
+    "session": 31,
+    "week": 17,
+    "dates": [
+      {
+        "week": "M17",
+        "start": "2027-05-02",
+        "end": "2027-05-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-03",
+        "end": "2027-05-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-25",
+      "DLP-SCI-Y3-26"
+    ],
+    "source_labels": [
+      "L25",
+      "L26"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Identify ways plants reproduce / Explain why reproduction matters"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 5 Plants"
+      ],
+      [
+        "Lesson / PdP",
+        "L25 / L26"
+      ],
+      [
+        "Content Standards",
+        "5.1 Plant reproduction"
+      ],
+      [
+        "Learning Standards",
+        "5.1.1 Give examples of plants that reproduce by each method\n5.1.2 Explain why plant reproduction matters to living things"
+      ],
+      [
+        "Book reference",
+        "TB pp. 72-73 · AB pp. 45-46 · TB pp. 74-75 · AB pp. 47-48"
+      ],
+      [
+        "Learning objective",
+        "1. Match at least four specimens to their methods. Name or point to the plant part that supports one match.\n2. Arrange arrows to show how new plants replace old plants and what that allows organisms to continue using."
+      ],
+      [
+        "Materials",
+        "Six specimen photos: chilli, banana, potato, fern, cassava and snake plant. Six method cards.; Plant photos, picture cards for food and habitats and arrow-label slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display a leaf cutting and a seed illustration.",
+        "Identify the different plant parts used."
+      ],
+      [
+        "Practice and assessment",
+        "Shuffle the cards. Check four independent matches and ask each pupil to explain one of them.",
+        "Match at least four specimens to their methods. Name or point to the plant part that supports one match."
+      ],
+      [
+        "Closure",
+        "Ask one pupil to explain why a particular example was not matched to seeds.",
+        "Point to the observable plant part and name its method."
+      ],
+      [
+        "Set induction",
+        "Ask what might happen in a place where old plants die and no new plants grow.",
+        "Suggest one effect for an animal or a person."
+      ],
+      [
+        "Main activity",
+        "Model a two-step cause-and-effect chain using one familiar plant. Give groups context cards for food, shelter or species survival.",
+        "Arrange arrows to show how new plants replace old plants and what that allows organisms to continue using."
+      ],
+      [
+        "Closure",
+        "Ask what would happen if old plants died and no new plants grew.",
+        "State one effect on the survival of the plant population."
+      ]
+    ],
+    "references": "TB pp. 72-73 · AB pp. 45-46 · TB pp. 74-75 · AB pp. 47-48",
+    "objectives": 2
+  },
+  {
+    "session": 32,
+    "week": 17,
+    "dates": [
+      {
+        "week": "M17",
+        "start": "2027-05-02",
+        "end": "2027-05-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-03",
+        "end": "2027-05-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-26"
+    ],
+    "source_labels": [
+      "L26"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain why reproduction matters"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 5 Plants"
+      ],
+      [
+        "Lesson / PdP",
+        "L26"
+      ],
+      [
+        "Content Standards",
+        "5.1 Plant reproduction"
+      ],
+      [
+        "Learning Standards",
+        "5.1.2 Explain why plant reproduction matters to living things"
+      ],
+      [
+        "Book reference",
+        "TB pp. 74-75 · AB pp. 47-48"
+      ],
+      [
+        "Learning objective",
+        "1. Draw and label a cause-and-effect sequence for food, habitat or survival of a species."
+      ],
+      [
+        "Materials",
+        "Plant photos, picture cards for food and habitats and arrow-label slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a plant-population sequence with the new plant missing.",
+        "Identify the missing stage and its role."
+      ],
+      [
+        "Practice and assessment",
+        "Check each individual diagram links new plants to at least one supported outcome.",
+        "Draw and label a cause-and-effect sequence for food, habitat or survival of a species."
+      ],
+      [
+        "Closure",
+        "Ask what would change if the first part of the chain stopped.",
+        "Use the diagram to name one consequence of reduced reproduction."
+      ]
+    ],
+    "references": "TB pp. 74-75 · AB pp. 47-48",
+    "objectives": 1
+  },
+  {
+    "session": 33,
+    "week": 20,
+    "dates": [
+      {
+        "week": "M20",
+        "start": "2027-06-06",
+        "end": "2027-06-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M20",
+        "start": "2027-06-07",
+        "end": "2027-06-11",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-27"
+    ],
+    "source_labels": [
+      "L27"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Investigate more than one propagation method"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 5 Plants"
+      ],
+      [
+        "Lesson / PdP",
+        "L27"
+      ],
+      [
+        "Content Standards",
+        "5.1 Plant reproduction"
+      ],
+      [
+        "Learning Standards",
+        "5.1.3 Use evidence from a project to conclude that some plants can reproduce in more than one way"
+      ],
+      [
+        "Book reference",
+        "TB pp. 76 · AB pp. 49-50"
+      ],
+      [
+        "Learning objective",
+        "1. Record the initial condition for each method and state one visible change to look for."
+      ],
+      [
+        "Materials",
+        "Water spinach seeds, rooted water spinach stem cuttings, labelled containers, soil, water and dated logs."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show water spinach seeds and a rooted cutting from the same species. Ask where new shoots might appear.",
+        "Identify which setup starts with a seed and which starts with a cutting."
+      ],
+      [
+        "Main activity",
+        "Use the water spinach project on textbook p. 76. Set up the seeds in soil and the rooted cuttings in water. Agree a daily observation time.",
+        "Label the two setups and log the date and starting appearance. Plan to record any new shoot at each daily check."
+      ],
+      [
+        "Practice and assessment",
+        "Check both setups and each pupil’s baseline. Ask what evidence would count as a new shoot.",
+        "Record the initial condition for each method and state one visible change to look for."
+      ],
+      [
+        "Closure",
+        "Ask how the class will distinguish the two setups at the next observation.",
+        "Refer to the method and date labels and agree when to check them."
+      ]
+    ],
+    "references": "TB pp. 76 · AB pp. 49-50",
+    "objectives": 1
+  },
+  {
+    "session": 34,
+    "week": 20,
+    "dates": [
+      {
+        "week": "M20",
+        "start": "2027-06-06",
+        "end": "2027-06-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M20",
+        "start": "2027-06-07",
+        "end": "2027-06-11",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-28"
+    ],
+    "source_labels": [
+      "L28"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Report the plant project"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 5 Plants"
+      ],
+      [
+        "Lesson / PdP",
+        "L28"
+      ],
+      [
+        "Content Standards",
+        "5.1 Plant reproduction"
+      ],
+      [
+        "Learning Standards",
+        "5.1.3 Use evidence from a project to conclude that some plants can reproduce in more than one way\n5.1.4 Present observations about plant reproduction creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 76-77 · AB pp. 50-52"
+      ],
+      [
+        "Learning objective",
+        "1. Compare new shoots in both logs. Label each observation as class evidence or an earlier teacher example."
+      ],
+      [
+        "Materials",
+        "Dated water spinach logs from Lesson 27, labelled teacher comparison photos and a two-column chart."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two dated entries and ask what can be compared at the same point in the records.",
+        "Name one feature such as first visible new roots or shoots."
+      ],
+      [
+        "Main activity",
+        "Show how to compare seed and cutting entries by elapsed day. Supply labelled photos from an earlier setup if the class logs are incomplete.",
+        "Compare new shoots in both logs. Label each observation as class evidence or an earlier teacher example."
+      ],
+      [
+        "Closure",
+        "Ask which log entry was an actual class observation rather than a teacher example.",
+        "Point to a dated class entry and read the observation."
+      ]
+    ],
+    "references": "TB pp. 76-77 · AB pp. 50-52",
+    "objectives": 1
+  },
+  {
+    "session": 35,
+    "week": 21,
+    "dates": [
+      {
+        "week": "M21",
+        "start": "2027-06-13",
+        "end": "2027-06-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-14",
+        "end": "2027-06-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-28",
+      "DLP-SCI-Y3-R02"
+    ],
+    "source_labels": [
+      "L28",
+      "R02"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Report the plant project / Animals and Plants"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 5 Plants / Consolidation"
+      ],
+      [
+        "Lesson / PdP",
+        "L28 / R02"
+      ],
+      [
+        "Content Standards",
+        "5.1 Plant reproduction\n4.1 Animals' eating habits"
+      ],
+      [
+        "Learning Standards",
+        "5.1.3 Use evidence from a project to conclude that some plants can reproduce in more than one way\n5.1.4 Present observations about plant reproduction creatively through writing, speech, drawings or digital tools\n4.1.1 Group animals by what they eat\n5.1.1 Give examples of plants that reproduce by each method"
+      ],
+      [
+        "Book reference",
+        "TB pp. 76-77 · AB pp. 50-52 · TB pp. 69-70,78 · Teacher-selected prompts"
+      ],
+      [
+        "Learning objective",
+        "1. Cite one dated observation for each method. State whether the evidence so far supports growth by both methods.\n2. Submit four classifications and write two reasons drawn from the cards."
+      ],
+      [
+        "Materials",
+        "Dated water spinach logs from Lesson 27, labelled teacher comparison photos and a two-column chart.; Two animal diet cards, two plant propagation cards, labels and an evidence sheet."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Return the two plant-project logs and show their dates.",
+        "Select one dated observation for each reproduction method."
+      ],
+      [
+        "Practice and assessment",
+        "Check two dated entries and a conclusion supported by both methods. Accept a pending result if one has yet to show growth.",
+        "Cite one dated observation for each method. State whether the evidence so far supports growth by both methods."
+      ],
+      [
+        "Closure",
+        "Ask why observations taken on different days should be labelled.",
+        "Explain how dates make a comparison fairer to interpret."
+      ],
+      [
+        "Set induction",
+        "Show a diet entry and a cutting photograph and ask what each can establish.",
+        "Identify which detail helps group an animal or identify a plant method."
+      ],
+      [
+        "Main activity",
+        "Give pairs four review cases and model an evidence sentence on a separate example.",
+        "Sort both animal and plant cases and prepare reasons using the recorded food or plant part."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil groups all four cases and explains two choices using evidence.",
+        "Submit four classifications and write two reasons drawn from the cards."
+      ],
+      [
+        "Closure",
+        "Ask why being able to point to a clue helps a reader check the answer.",
+        "Name one clue from an animal or plant case."
+      ]
+    ],
+    "references": "TB pp. 76-77 · AB pp. 50-52 · TB pp. 69-70,78 · Teacher-selected prompts",
+    "objectives": 2
+  },
+  {
+    "session": 36,
+    "week": 21,
+    "dates": [
+      {
+        "week": "M21",
+        "start": "2027-06-13",
+        "end": "2027-06-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-14",
+        "end": "2027-06-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-29"
+    ],
+    "source_labels": [
+      "L29"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Recognise area and volume units"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L29"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.1 Identify units for measuring area and volume"
+      ],
+      [
+        "Book reference",
+        "TB pp. 80,85 · AB pp. 53,58"
+      ],
+      [
+        "Learning objective",
+        "1. Select cm², cm³, mL or L for the four items and explain one selection."
+      ],
+      [
+        "Materials",
+        "Unit cards, squares, cubes, a measuring cylinder, a litre jug and four use-case images."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Compare a square tile, a cube and a water container.",
+        "Say which example shows a surface or holds a volume."
+      ],
+      [
+        "Main activity",
+        "Match cm² to the square unit, cm³ to the cube and mL/L to liquid measures. Show the difference in practical scale between a small cylinder and a jug.",
+        "Choose the suitable unit for each use-case image and discuss near choices in pairs."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil chooses four appropriate units and justifies one choice by attribute or scale.",
+        "Select cm², cm³, mL or L for the four items and explain one selection."
+      ],
+      [
+        "Closure",
+        "Ask which unit measures a surface and which unit could be used for a small liquid quantity.",
+        "Name cm² and mL and describe the difference."
+      ]
+    ],
+    "references": "TB pp. 80,85 · AB pp. 53,58",
+    "objectives": 1
+  },
+  {
+    "session": 37,
+    "week": 22,
+    "dates": [
+      {
+        "week": "M22",
+        "start": "2027-06-20",
+        "end": "2027-06-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-21",
+        "end": "2027-06-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-30"
+    ],
+    "source_labels": [
+      "L30"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Measure a regular area"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L30"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.2 Measure the area of regular surfaces using squares with sides of 1 cm"
+      ],
+      [
+        "Book reference",
+        "TB pp. 81-82 · AB pp. 54-55"
+      ],
+      [
+        "Learning objective",
+        "1. Make the tile count and record the total in cm²."
+      ],
+      [
+        "Materials",
+        "One-centimetre square tiles, regular outlines, a 1 cm grid and recording slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a rectangle on centimetre paper and ask what part is measured by area.",
+        "Point to the inside surface rather than the outline."
+      ],
+      [
+        "Main activity",
+        "Model fitting tiles edge-to-edge without gaps and counting each tile once. Give pairs different regular outlines.",
+        "Cover a rectangle or square with 1 cm squares and compare counts by rows or columns."
+      ],
+      [
+        "Practice and assessment",
+        "Ask each pupil to cover a fresh outline and record its area. Check coverage and unit.",
+        "Make the tile count and record the total in cm²."
+      ],
+      [
+        "Closure",
+        "Ask why a gap or overlap changes the result.",
+        "Describe whether coverage would be too little or counted twice."
+      ]
+    ],
+    "references": "TB pp. 81-82 · AB pp. 54-55",
+    "objectives": 1
+  },
+  {
+    "session": 38,
+    "week": 22,
+    "dates": [
+      {
+        "week": "M22",
+        "start": "2027-06-20",
+        "end": "2027-06-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-21",
+        "end": "2027-06-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-31"
+    ],
+    "source_labels": [
+      "L31"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Estimate an irregular area"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L31"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.3 Solve problems by estimating the area of irregular surfaces"
+      ],
+      [
+        "Book reference",
+        "TB pp. 83-84 · AB pp. 56"
+      ],
+      [
+        "Learning objective",
+        "1. Mark full squares, estimate partial squares and use both counts to estimate the leaf’s area."
+      ],
+      [
+        "Materials",
+        "Leaf outlines, transparent centimetre grids, pencils and tally sheets."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a leaf outline over a grid and ask why some squares are only partly covered.",
+        "Identify one full square and one partial square."
+      ],
+      [
+        "Main activity",
+        "Demonstrate counting full squares and using a consistent approximation for parts, such as pairing halves. Ask pairs to agree and document their rule.",
+        "Mark full squares, estimate partial squares and use both counts to estimate the leaf’s area."
+      ],
+      [
+        "Closure",
+        "Ask pupils to point to a partial square at the leaf boundary.",
+        "State the rule used to estimate that partial square."
+      ]
+    ],
+    "references": "TB pp. 83-84 · AB pp. 56",
+    "objectives": 1
+  },
+  {
+    "session": 39,
+    "week": 23,
+    "dates": [
+      {
+        "week": "M23",
+        "start": "2027-06-27",
+        "end": "2027-07-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-28",
+        "end": "2027-07-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-31",
+      "DLP-SCI-Y3-32"
+    ],
+    "source_labels": [
+      "L31",
+      "L32"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Estimate an irregular area / Measure the volume of a box"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L31 / L32"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.3 Solve problems by estimating the area of irregular surfaces\n6.1.4 Measure the volume of hollow boxes using cubes with edges of 1 cm"
+      ],
+      [
+        "Book reference",
+        "TB pp. 83-84 · AB pp. 56 · TB pp. 86-87 · AB pp. 57-58"
+      ],
+      [
+        "Learning objective",
+        "1. Estimate a new leaf outline and show the full-square count and chosen partial-square rule.\n2. Pack cubes without gaps, count cubes in each layer and record the total."
+      ],
+      [
+        "Materials",
+        "Leaf outlines, transparent centimetre grids, pencils and tally sheets.; Small box with whole-centimetre dimensions, 1 cm cubes and layer diagrams."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a leaf outline on a grid with full and partial squares marked.",
+        "Identify which squares count directly and which need an estimate."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil gives an area in cm² and explains how partial squares contributed.",
+        "Estimate a new leaf outline and show the full-square count and chosen partial-square rule."
+      ],
+      [
+        "Closure",
+        "Ask why two valid estimates of the same outline can differ slightly.",
+        "Connect the difference to choices about partly covered squares."
+      ],
+      [
+        "Set induction",
+        "Show an empty box and ask how cubes can measure the space inside.",
+        "Propose filling the box with equal-sized cubes."
+      ],
+      [
+        "Main activity",
+        "Model making a full first layer with no space and recording its cube count. Guide pairs to fill the remaining layers.",
+        "Pack cubes without gaps, count cubes in each layer and record the total."
+      ],
+      [
+        "Closure",
+        "Show a filled layer of cubes inside the box.",
+        "State the cubes in one layer and how many layers were counted."
+      ]
+    ],
+    "references": "TB pp. 83-84 · AB pp. 56 · TB pp. 86-87 · AB pp. 57-58",
+    "objectives": 2
+  },
+  {
+    "session": 40,
+    "week": 23,
+    "dates": [
+      {
+        "week": "M23",
+        "start": "2027-06-27",
+        "end": "2027-07-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-28",
+        "end": "2027-07-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-32"
+    ],
+    "source_labels": [
+      "L32"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Measure the volume of a box"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L32"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.4 Measure the volume of hollow boxes using cubes with edges of 1 cm"
+      ],
+      [
+        "Book reference",
+        "TB pp. 86-87 · AB pp. 57-58"
+      ],
+      [
+        "Learning objective",
+        "1. Fill a small box independently or show the checked layer counts and write its volume in cm³."
+      ],
+      [
+        "Materials",
+        "Small box with whole-centimetre dimensions, 1 cm cubes and layer diagrams."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display a box model containing two equal layers of cubes.",
+        "Predict the total by multiplying the cubes in one layer by two."
+      ],
+      [
+        "Practice and assessment",
+        "Check the pupil’s box model or labelled layers. Confirm a correct total in cm³.",
+        "Fill a small box independently or show the checked layer counts and write its volume in cm³."
+      ],
+      [
+        "Closure",
+        "Ask which three dimensions a cube measures.",
+        "Explain that the measured space has length, width and height."
+      ]
+    ],
+    "references": "TB pp. 86-87 · AB pp. 57-58",
+    "objectives": 1
+  },
+  {
+    "session": 41,
+    "week": 24,
+    "dates": [
+      {
+        "week": "M24",
+        "start": "2027-07-04",
+        "end": "2027-07-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-05",
+        "end": "2027-07-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-33"
+    ],
+    "source_labels": [
+      "L33"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Measure a liquid volume"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L33"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.5 Measure liquid volume using suitable tools and correct techniques"
+      ],
+      [
+        "Book reference",
+        "TB pp. 88-90 · AB pp. 59-60"
+      ],
+      [
+        "Learning objective",
+        "1. Read a cylinder at eye level and submit both mL values using the scale shown."
+      ],
+      [
+        "Materials",
+        "Small measuring cylinders, coloured water, pouring trays and a reading table."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two drawings of the same cylinder viewed above and at eye level.",
+        "Identify which viewing position gives a reliable reading."
+      ],
+      [
+        "Main activity",
+        "Model choosing a cylinder that holds the sample and has usable scale divisions. Place the cylinder on a level surface and show the bottom of the water meniscus at eye level.",
+        "Choose a cylinder, pour with supervision and take two eye-level readings while a partner records the units."
+      ],
+      [
+        "Practice and assessment",
+        "Observe each pupil reading one sample and check that both readings are recorded correctly in mL.",
+        "Read a cylinder at eye level and submit both mL values using the scale shown."
+      ],
+      [
+        "Closure",
+        "Ask how to read a line between numbered marks.",
+        "State the value of a scale division and use it to explain a reading."
+      ]
+    ],
+    "references": "TB pp. 88-90 · AB pp. 59-60",
+    "objectives": 1
+  },
+  {
+    "session": 42,
+    "week": 24,
+    "dates": [
+      {
+        "week": "M24",
+        "start": "2027-07-04",
+        "end": "2027-07-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-05",
+        "end": "2027-07-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-34"
+    ],
+    "source_labels": [
+      "L34"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Calculate displaced volume"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L34"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.6 Solve problems by using water displacement to find the volume of irregular solids"
+      ],
+      [
+        "Book reference",
+        "TB pp. 91-92 · AB pp. 61-62"
+      ],
+      [
+        "Learning objective",
+        "1. Record the two readings for the same object and calculate the difference. Repeat if the readings are unclear."
+      ],
+      [
+        "Materials",
+        "Plastic measuring cylinders, water, nonfloating objects that fit, thread and trays."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a water level before and after an object is submerged and ask what changed.",
+        "State that the water level rose and suggest how to quantify the change."
+      ],
+      [
+        "Main activity",
+        "Read at eye level before and after fully submerging a fitting object. Check for trapped air. Model final reading minus initial reading.",
+        "Record the two readings for the same object and calculate the difference. Repeat if the readings are unclear."
+      ],
+      [
+        "Closure",
+        "Display the initial and final readings from the measuring cylinder.",
+        "Identify the two readings to subtract."
+      ]
+    ],
+    "references": "TB pp. 91-92 · AB pp. 61-62",
+    "objectives": 1
+  },
+  {
+    "session": 43,
+    "week": 25,
+    "dates": [
+      {
+        "week": "M25",
+        "start": "2027-07-11",
+        "end": "2027-07-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-12",
+        "end": "2027-07-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-34",
+      "DLP-SCI-Y3-35"
+    ],
+    "source_labels": [
+      "L34",
+      "L35"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Calculate displaced volume / Explain an area or volume method"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L34 / L35"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.6 Solve problems by using water displacement to find the volume of irregular solids\n6.1.7 Present observations about area and volume measurements creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 91-92 · AB pp. 61-62 · TB pp. 90-94 · AB pp. 59-62"
+      ],
+      [
+        "Learning objective",
+        "1. Show 38 mL minus 25 mL and report the solid’s volume as 13 cm³. Compare the method with the group measurement.\n2. Make or check two measurements, record units and prepare reasons for a method choice."
+      ],
+      [
+        "Materials",
+        "Plastic measuring cylinders, water, nonfloating objects that fit, thread and trays.; A grid, a cylinder, outline cards, measured samples and evidence cards."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show the marked 25 mL and 38 mL levels on a cylinder diagram.",
+        "Identify the starting and ending volumes before calculating displacement."
+      ],
+      [
+        "Practice and assessment",
+        "Provide a separate card with 25 mL before and 38 mL after. Check subtraction and the unit for solid volume.",
+        "Show 38 mL minus 25 mL and report the solid’s volume as 13 cm³. Compare the method with the group measurement."
+      ],
+      [
+        "Closure",
+        "Ask whether the final water level alone gives the object’s volume.",
+        "Use the readings to explain why the change is needed."
+      ],
+      [
+        "Set induction",
+        "Present two claims with missing units and ask why they cannot be checked properly.",
+        "Identify the missing units or information about the tools."
+      ],
+      [
+        "Main activity",
+        "Set up an area method station and a volume method station. Model describing one technique and explaining why the selected tool fits the job.",
+        "Make or check two measurements, record units and prepare reasons for a method choice."
+      ],
+      [
+        "Closure",
+        "Ask which unit belongs to area and which belongs to volume.",
+        "Match cm² to area and cm³ to volume."
+      ]
+    ],
+    "references": "TB pp. 91-92 · AB pp. 61-62 · TB pp. 90-94 · AB pp. 59-62",
+    "objectives": 2
+  },
+  {
+    "session": 44,
+    "week": 25,
+    "dates": [
+      {
+        "week": "M25",
+        "start": "2027-07-11",
+        "end": "2027-07-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-12",
+        "end": "2027-07-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-35"
+    ],
+    "source_labels": [
+      "L35"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain an area or volume method"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 6 Measurement"
+      ],
+      [
+        "Lesson / PdP",
+        "L35"
+      ],
+      [
+        "Content Standards",
+        "6.1 Measurement of area and volume"
+      ],
+      [
+        "Learning Standards",
+        "6.1.7 Present observations about area and volume measurements creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 90-94 · AB pp. 59-62"
+      ],
+      [
+        "Learning objective",
+        "1. Present both measured values with units and explain one tool or technique used."
+      ],
+      [
+        "Materials",
+        "A grid, a cylinder, outline cards, measured samples and evidence cards."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display a leaf grid and a measuring cylinder.",
+        "Choose the appropriate tool for one measurement and explain the choice."
+      ],
+      [
+        "Practice and assessment",
+        "Ask each pupil to show two results and justify one tool or method from the evidence.",
+        "Present both measured values with units and explain one tool or technique used."
+      ],
+      [
+        "Closure",
+        "Ask what a different class would need to repeat the method.",
+        "Name one detail about the tool, unit or technique that needs to be recorded."
+      ]
+    ],
+    "references": "TB pp. 90-94 · AB pp. 59-62",
+    "objectives": 1
+  },
+  {
+    "session": 45,
+    "week": 26,
+    "dates": [
+      {
+        "week": "M26",
+        "start": "2027-07-18",
+        "end": "2027-07-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-19",
+        "end": "2027-07-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-36"
+    ],
+    "source_labels": [
+      "L36"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Investigate floating and sinking"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 7 Density"
+      ],
+      [
+        "Lesson / PdP",
+        "L36"
+      ],
+      [
+        "Content Standards",
+        "7.1 Objects and materials denser or less dense than water"
+      ],
+      [
+        "Learning Standards",
+        "7.1.1 Use results from activities to infer why objects or materials float or sink"
+      ],
+      [
+        "Book reference",
+        "TB pp. 96-97 · AB pp. 63"
+      ],
+      [
+        "Learning objective",
+        "1. Submit the table and describe a supported explanation of one result or contrast."
+      ],
+      [
+        "Materials",
+        "Clear water tubs, trays, cork, plastic cap, metal washer and stone."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show four small objects and ask where each will go in water.",
+        "Predict one float or sink result and say what could be observed."
+      ],
+      [
+        "Main activity",
+        "Ask groups to lower each object gently in the same water, one at a time. Model recording a surface or bottom observation without pushing the object.",
+        "Test all four items, record their behaviour and compare results to predictions."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil records four results and supplies one explanation based on a contrast or observation.",
+        "Submit the table and describe a supported explanation of one result or contrast."
+      ],
+      [
+        "Closure",
+        "Ask why size alone is insufficient as an explanation.",
+        "Cite two items whose results do not fit a size-only rule."
+      ]
+    ],
+    "references": "TB pp. 96-97 · AB pp. 63",
+    "objectives": 1
+  },
+  {
+    "session": 46,
+    "week": 26,
+    "dates": [
+      {
+        "week": "M26",
+        "start": "2027-07-18",
+        "end": "2027-07-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-19",
+        "end": "2027-07-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-37"
+    ],
+    "source_labels": [
+      "L37"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare density with water"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 7 Density"
+      ],
+      [
+        "Lesson / PdP",
+        "L37"
+      ],
+      [
+        "Content Standards",
+        "7.1 Objects and materials denser or less dense than water"
+      ],
+      [
+        "Learning Standards",
+        "7.1.2 Explain whether objects or materials float or sink according to their density relative to water"
+      ],
+      [
+        "Book reference",
+        "TB pp. 98-99 · AB pp. 64-66"
+      ],
+      [
+        "Learning objective",
+        "1. Place tested items under denser or less dense than fresh water and attach the observation used for each choice."
+      ],
+      [
+        "Materials",
+        "Fresh-water results from Lesson 36, stable tubs and density statement cards."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two test results that behaved differently in fresh water.",
+        "Identify which example stayed at the surface and which went to the bottom."
+      ],
+      [
+        "Main activity",
+        "Explain how these tested items can be compared with water using the float/sink records. Keep the claim tied to the objects in the investigation.",
+        "Place tested items under denser or less dense than fresh water and attach the observation used for each choice."
+      ],
+      [
+        "Closure",
+        "Show the freshwater test record for a floating and a sinking object.",
+        "Use one observation to compare the object's density with water."
+      ]
+    ],
+    "references": "TB pp. 98-99 · AB pp. 64-66",
+    "objectives": 1
+  },
+  {
+    "session": 47,
+    "week": 27,
+    "dates": [
+      {
+        "week": "M27",
+        "start": "2027-07-25",
+        "end": "2027-07-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-26",
+        "end": "2027-07-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-37",
+      "DLP-SCI-Y3-38"
+    ],
+    "source_labels": [
+      "L37",
+      "L38"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare density with water / Make water denser"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 7 Density"
+      ],
+      [
+        "Lesson / PdP",
+        "L37 / L38"
+      ],
+      [
+        "Content Standards",
+        "7.1 Objects and materials denser or less dense than water"
+      ],
+      [
+        "Learning Standards",
+        "7.1.2 Explain whether objects or materials float or sink according to their density relative to water\n7.1.3 Solve a problem by finding a way to increase the density of water"
+      ],
+      [
+        "Book reference",
+        "TB pp. 98-99 · AB pp. 64-66 · TB pp. 99-101 · AB pp. 68"
+      ],
+      [
+        "Learning objective",
+        "1. Write the density comparison for each tested item and point to its supporting freshwater behaviour.\n2. Compare the same piece in the two cups. Keep the amount of liquid similar and record whether the piece floats."
+      ],
+      [
+        "Materials",
+        "Fresh-water results from Lesson 36, stable tubs and density statement cards.; Fresh water, teacher-pretested salt solution, equal cups, one pretested potato piece per group and trays."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Return the freshwater results before introducing salt water.",
+        "Identify one floating and one sinking result."
+      ],
+      [
+        "Practice and assessment",
+        "Check individual classifications and ask for one short inference from the table.",
+        "Write the density comparison for each tested item and point to its supporting freshwater behaviour."
+      ],
+      [
+        "Closure",
+        "Ask what the comparison uses as its reference.",
+        "Identify fresh water and state how it was used to compare the items."
+      ],
+      [
+        "Set induction",
+        "Show a potato piece sinking in fresh water. Challenge groups to make that piece float by changing the water.",
+        "Suggest what to change in the water and what to keep the same."
+      ],
+      [
+        "Main activity",
+        "Offer fresh water and a pretested salt solution. Ask groups to plan two trials with the same piece and record each outcome.",
+        "Compare the same piece in the two cups. Keep the amount of liquid similar and record whether the piece floats."
+      ],
+      [
+        "Closure",
+        "Ask which factor changed when the same piece was moved into the second cup.",
+        "Identify the dissolved salt as the change in the liquid."
+      ]
+    ],
+    "references": "TB pp. 98-99 · AB pp. 64-66 · TB pp. 99-101 · AB pp. 68",
+    "objectives": 2
+  },
+  {
+    "session": 48,
+    "week": 27,
+    "dates": [
+      {
+        "week": "M27",
+        "start": "2027-07-25",
+        "end": "2027-07-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-26",
+        "end": "2027-07-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-38"
+    ],
+    "source_labels": [
+      "L38"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Make water denser"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 7 Density"
+      ],
+      [
+        "Lesson / PdP",
+        "L38"
+      ],
+      [
+        "Content Standards",
+        "7.1 Objects and materials denser or less dense than water"
+      ],
+      [
+        "Learning Standards",
+        "7.1.3 Solve a problem by finding a way to increase the density of water"
+      ],
+      [
+        "Book reference",
+        "TB pp. 99-101 · AB pp. 68"
+      ],
+      [
+        "Learning objective",
+        "1. Use the two observations to explain how dissolving salt made the water denser and changed what happened to the piece."
+      ],
+      [
+        "Materials",
+        "Fresh water, teacher-pretested salt solution, equal cups, one pretested potato piece per group and trays."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show the two records for the same object in fresh and salt water.",
+        "State the observed difference in floating behaviour."
+      ],
+      [
+        "Practice and assessment",
+        "Check one comparison from the table and an explanation of how the solution changed.",
+        "Use the two observations to explain how dissolving salt made the water denser and changed what happened to the piece."
+      ],
+      [
+        "Closure",
+        "Ask why comparing two different objects would weaken the result.",
+        "Explain that the same test object helps isolate the difference between the liquids."
+      ]
+    ],
+    "references": "TB pp. 99-101 · AB pp. 68",
+    "objectives": 1
+  },
+  {
+    "session": 49,
+    "week": 28,
+    "dates": [
+      {
+        "week": "M28",
+        "start": "2027-08-01",
+        "end": "2027-08-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-02",
+        "end": "2027-08-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-39"
+    ],
+    "source_labels": [
+      "L39"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain a use of density"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 7 Density"
+      ],
+      [
+        "Lesson / PdP",
+        "L39"
+      ],
+      [
+        "Content Standards",
+        "7.1 Objects and materials denser or less dense than water"
+      ],
+      [
+        "Learning Standards",
+        "7.1.4 Present observations about relative density creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 102-104 · AB pp. 67-68"
+      ],
+      [
+        "Learning objective",
+        "1. Submit a sketch and write an explanation that names the classroom result used."
+      ],
+      [
+        "Materials",
+        "Floating marker and flotation-device images, class results and drawing sheets."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a floating marker and ask which classroom test it resembles.",
+        "Name an object observed floating and describe what it did."
+      ],
+      [
+        "Main activity",
+        "Ask groups to choose a familiar application. Model using an arrow or label to link the observation to why the object stays at the surface.",
+        "Prepare a labelled sketch and explain the real-life use using one classroom observation."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil labels the object and water and explicitly links an actual observation to the application.",
+        "Submit a sketch and write an explanation that names the classroom result used."
+      ],
+      [
+        "Closure",
+        "Ask what might change if the material or shape were changed.",
+        "Suggest one change and say how it could be tested safely."
+      ]
+    ],
+    "references": "TB pp. 102-104 · AB pp. 67-68",
+    "objectives": 1
+  },
+  {
+    "session": 50,
+    "week": 28,
+    "dates": [
+      {
+        "week": "M28",
+        "start": "2027-08-01",
+        "end": "2027-08-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-02",
+        "end": "2027-08-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-40"
+    ],
+    "source_labels": [
+      "L40"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Test substances using litmus"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 8 Acid and Alkali"
+      ],
+      [
+        "Lesson / PdP",
+        "L40"
+      ],
+      [
+        "Content Standards",
+        "8.1 Acid and alkali"
+      ],
+      [
+        "Learning Standards",
+        "8.1.1 Investigate whether substances are acidic, alkaline or neutral by observing colour changes in litmus paper"
+      ],
+      [
+        "Book reference",
+        "TB pp. 106-108 · AB pp. 69-71"
+      ],
+      [
+        "Learning objective",
+        "1. Record the starting and final colours of both strips for three samples. Classify the samples from the paired results."
+      ],
+      [
+        "Materials",
+        "Red and blue litmus, separate droppers, trays and teacher-prechecked acidic, alkaline and neutral samples."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display the two litmus colours and read the safety rule for unknown liquids.",
+        "State how the droppers and indicators will be used without tasting or touching samples."
+      ],
+      [
+        "Main activity",
+        "Test a prechecked neutral water sample and show how to use a fresh red and blue strip for each labelled sample.",
+        "Record the starting and final colours of both strips for three samples. Classify the samples from the paired results."
+      ],
+      [
+        "Closure",
+        "Show the recorded red and blue litmus results for one sample.",
+        "Use both colour observations to name its classification."
+      ]
+    ],
+    "references": "TB pp. 106-108 · AB pp. 69-71",
+    "objectives": 1
+  },
+  {
+    "session": 51,
+    "week": 29,
+    "dates": [
+      {
+        "week": "M29",
+        "start": "2027-08-08",
+        "end": "2027-08-12",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-09",
+        "end": "2027-08-13",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-40",
+      "DLP-SCI-Y3-41"
+    ],
+    "source_labels": [
+      "L40",
+      "L41"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Test substances using litmus / Compare reported properties safely"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 8 Acid and Alkali"
+      ],
+      [
+        "Lesson / PdP",
+        "L40 / L41"
+      ],
+      [
+        "Content Standards",
+        "8.1 Acid and alkali"
+      ],
+      [
+        "Learning Standards",
+        "8.1.1 Investigate whether substances are acidic, alkaline or neutral by observing colour changes in litmus paper\n8.1.2 Compare reported taste and texture properties of acidic, alkaline and neutral substances and recognise their limits as indicators"
+      ],
+      [
+        "Book reference",
+        "TB pp. 106-108 · AB pp. 69-71 · TB pp. 109-111 · AB pp. 72-74"
+      ],
+      [
+        "Learning objective",
+        "1. Submit the three-row table. For one sample, use both of its strip outcomes to explain the classification.\n2. Use the cards to compare two examples. Identify the wording that comes from a description and the colour evidence from the test."
+      ],
+      [
+        "Materials",
+        "Red and blue litmus, separate droppers, trays and teacher-prechecked acidic, alkaline and neutral samples.; Teacher description cards for known acidic, alkaline and neutral examples, litmus records and a comparison chart."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Return the three-row indicator results table.",
+        "Select the paired strip outcomes for one sample."
+      ],
+      [
+        "Practice and assessment",
+        "Check the paired results. Blue turning red supports acidic. Red turning blue supports alkaline. Both unchanged supports neutral in this test.",
+        "Submit the three-row table. For one sample, use both of its strip outcomes to explain the classification."
+      ],
+      [
+        "Closure",
+        "Ask why one unchanged strip alone is insufficient for a neutral claim.",
+        "Explain that both red and blue strips need to be considered."
+      ],
+      [
+        "Set induction",
+        "Show a labelled picture and a container marked unknown. Ask which sources can provide safe evidence.",
+        "Choose reliable written descriptions or an appropriate indicator with teacher supervision."
+      ],
+      [
+        "Main activity",
+        "Compare descriptions of familiar examples and show the separate litmus record for each. Discuss which evidence to use for an unknown sample.",
+        "Use the cards to compare two examples. Identify the wording that comes from a description and the colour evidence from the test."
+      ],
+      [
+        "Closure",
+        "Ask whether an unlabelled substance should be tasted to classify it.",
+        "Reject tasting and identify documented indicator evidence instead."
+      ]
+    ],
+    "references": "TB pp. 106-108 · AB pp. 69-71 · TB pp. 109-111 · AB pp. 72-74",
+    "objectives": 2
+  },
+  {
+    "session": 52,
+    "week": 29,
+    "dates": [
+      {
+        "week": "M29",
+        "start": "2027-08-08",
+        "end": "2027-08-12",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-09",
+        "end": "2027-08-13",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-41"
+    ],
+    "source_labels": [
+      "L41"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare reported properties safely"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 8 Acid and Alkali"
+      ],
+      [
+        "Lesson / PdP",
+        "L41"
+      ],
+      [
+        "Content Standards",
+        "8.1 Acid and alkali"
+      ],
+      [
+        "Learning Standards",
+        "8.1.2 Compare reported taste and texture properties of acidic, alkaline and neutral substances and recognise their limits as indicators"
+      ],
+      [
+        "Book reference",
+        "TB pp. 109-111 · AB pp. 72-74"
+      ],
+      [
+        "Learning objective",
+        "1. Submit two comparisons. Tell the teacher about an unlabelled sample and explain the value of the documented indicator results."
+      ],
+      [
+        "Materials",
+        "Teacher description cards for known acidic, alkaline and neutral examples, litmus records and a comparison chart."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a sample description beside a recorded colour test.",
+        "Distinguish a description from an observation made in the test."
+      ],
+      [
+        "Practice and assessment",
+        "Check two comparisons based on the supplied descriptions. Ask how a pupil would respond to an unlabelled sample.",
+        "Submit two comparisons. Tell the teacher about an unlabelled sample and explain the value of the documented indicator results."
+      ],
+      [
+        "Closure",
+        "Ask how to respond if a classmate suggests touching an unknown liquid.",
+        "Explain the class safety rule and identify a safer evidence source."
+      ]
+    ],
+    "references": "TB pp. 109-111 · AB pp. 72-74",
+    "objectives": 1
+  },
+  {
+    "session": 53,
+    "week": 30,
+    "dates": [
+      {
+        "week": "M30",
+        "start": "2027-08-15",
+        "end": "2027-08-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-16",
+        "end": "2027-08-20",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-42"
+    ],
+    "source_labels": [
+      "L42"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare other indicators"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 8 Acid and Alkali"
+      ],
+      [
+        "Lesson / PdP",
+        "L42"
+      ],
+      [
+        "Content Standards",
+        "8.1 Acid and alkali"
+      ],
+      [
+        "Learning Standards",
+        "8.1.3 Investigate other materials that can indicate whether substances are acidic, alkaline or neutral"
+      ],
+      [
+        "Book reference",
+        "TB pp. 112 · AB pp. 75"
+      ],
+      [
+        "Learning objective",
+        "1. Compare the two indicator results for one sample and explain your claim using its recorded colours and the two keys."
+      ],
+      [
+        "Materials",
+        "Teacher-made red cabbage indicator, litmus, droppers, safe teacher-prepared samples and a comparison grid."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show the plant indicator and litmus separately and ask how to compare their responses fairly.",
+        "Suggest using the same samples and separate clean droppers."
+      ],
+      [
+        "Main activity",
+        "Show the plant-indicator colour reference made with known samples. Test labelled samples alongside litmus using separate clean droppers.",
+        "Use the same sample labels in both columns. Record the observed colour and interpret each test with its own key."
+      ],
+      [
+        "Practice and assessment",
+        "Check two paired records and one claim about agreement or difference supported by the colour keys.",
+        "Compare the two indicator results for one sample and explain your claim using its recorded colours and the two keys."
+      ],
+      [
+        "Closure",
+        "Ask why the class needs the supplied plant-indicator colour reference.",
+        "Explain that different indicators can show different colours for the same type of substance."
+      ]
+    ],
+    "references": "TB pp. 112 · AB pp. 75",
+    "objectives": 1
+  },
+  {
+    "session": 54,
+    "week": 30,
+    "dates": [
+      {
+        "week": "M30",
+        "start": "2027-08-15",
+        "end": "2027-08-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-16",
+        "end": "2027-08-20",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-43"
+    ],
+    "source_labels": [
+      "L43"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Report indicator results"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 8 Acid and Alkali"
+      ],
+      [
+        "Lesson / PdP",
+        "L43"
+      ],
+      [
+        "Content Standards",
+        "8.1 Acid and alkali"
+      ],
+      [
+        "Learning Standards",
+        "8.1.4 Present observations about acids and alkalis creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 111-114 · AB pp. 75-76"
+      ],
+      [
+        "Learning objective",
+        "1. Summarise their observations and discuss which colour changes justify one chosen claim."
+      ],
+      [
+        "Materials",
+        "Class indicator records, sample labels and a three-row table template."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a record missing its conclusion and ask which columns provide evidence.",
+        "Point to the result columns and name one useful value."
+      ],
+      [
+        "Main activity",
+        "Model a three-row table with sample, indicator observation and classification. Ask groups to verify their entries against the indicator key.",
+        "Summarise their observations and discuss which colour changes justify one chosen claim."
+      ],
+      [
+        "Closure",
+        "Ask pupils to underline the two colour outcomes that justify their chosen claim.",
+        "Point to those recorded results and state the classification."
+      ]
+    ],
+    "references": "TB pp. 111-114 · AB pp. 75-76",
+    "objectives": 1
+  },
+  {
+    "session": 55,
+    "week": 31,
+    "dates": [
+      {
+        "week": "M31",
+        "start": "2027-08-22",
+        "end": "2027-08-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-23",
+        "end": "2027-08-27",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-43",
+      "DLP-SCI-Y3-R03"
+    ],
+    "source_labels": [
+      "L43",
+      "R03"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Report indicator results / Measurement, Density and Indicators"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 8 Acid and Alkali / Consolidation"
+      ],
+      [
+        "Lesson / PdP",
+        "L43 / R03"
+      ],
+      [
+        "Content Standards",
+        "8.1 Acid and alkali\n6.1 Measurement of area and volume\n7.1 Objects and materials denser or less dense than water"
+      ],
+      [
+        "Learning Standards",
+        "8.1.4 Present observations about acids and alkalis creatively through writing, speech, drawings or digital tools\n6.1.5 Measure liquid volume using suitable tools and correct techniques\n7.1.2 Explain whether objects or materials float or sink according to their density relative to water\n8.1.1 Investigate whether substances are acidic, alkaline or neutral by observing colour changes in litmus paper"
+      ],
+      [
+        "Book reference",
+        "TB pp. 111-114 · AB pp. 75-76 · TB pp. 93-94,104,113-114 · Teacher-selected prompts"
+      ],
+      [
+        "Learning objective",
+        "1. Submit the table and explain one sample classification using its recorded colour changes.\n2. Write the corrected reading with its unit and justify one inference using a value or observation in your chosen record."
+      ],
+      [
+        "Materials",
+        "Class indicator records, sample labels and a three-row table template.; Cylinder drawing with 20, 25 and 30 mL marks. Recorded results for a cork or a sample tested with two litmus strips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Return an indicator table with one classification blank.",
+        "Use the recorded colours to predict the missing classification."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil’s three-row table and require a conclusion grounded in a recorded result.",
+        "Submit the table and explain one sample classification using its recorded colour changes."
+      ],
+      [
+        "Closure",
+        "Present an unlabelled result and ask what detail would make it interpretable.",
+        "Specify the indicator colour before or after the test and the sample identity."
+      ],
+      [
+        "Set induction",
+        "Show a measurement read from the wrong scale mark.",
+        "Identify what looks wrong and propose a check."
+      ],
+      [
+        "Main activity",
+        "Show a reading of 30 mL written for a meniscus at 25 mL. Provide a cork-float record and a litmus result to choose from.",
+        "Correct the reading, then choose either the float record or the paired litmus record and locate its evidence."
+      ],
+      [
+        "Practice and assessment",
+        "Check 25 mL. Accept a cork-density inference or a litmus classification when supported by the selected record.",
+        "Write the corrected reading with its unit and justify one inference using a value or observation in your chosen record."
+      ],
+      [
+        "Closure",
+        "Ask which details allow someone else to check the pupil’s reasoning.",
+        "Name a unit, a scale mark or a relevant table entry."
+      ]
+    ],
+    "references": "TB pp. 111-114 · AB pp. 75-76 · TB pp. 93-94,104,113-114 · Teacher-selected prompts",
+    "objectives": 2
+  },
+  {
+    "session": 56,
+    "week": 31,
+    "dates": [
+      {
+        "week": "M31",
+        "start": "2027-08-22",
+        "end": "2027-08-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-23",
+        "end": "2027-08-27",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-44"
+    ],
+    "source_labels": [
+      "L44"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Identify Solar System members"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 9 The Solar System"
+      ],
+      [
+        "Lesson / PdP",
+        "L44"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System"
+      ],
+      [
+        "Learning Standards",
+        "9.1.1 Use different media to identify the objects that make up the Solar System"
+      ],
+      [
+        "Book reference",
+        "TB pp. 116-119 · AB pp. 77-79"
+      ],
+      [
+        "Learning objective",
+        "1. Label a sequence from the Sun outwards and add asteroids and comets to the list of other objects."
+      ],
+      [
+        "Materials",
+        "Sun and planet cards, orbit strip and object cards for asteroids and comets."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show the Sun and Earth cards and ask where the Sun belongs in the model.",
+        "Place the Sun centrally and identify Earth as a planet."
+      ],
+      [
+        "Main activity",
+        "Use the textbook sequence to check the eight planet cards. Demonstrate adding two other objects to an illustrated Solar System without treating them as planets.",
+        "Build the Sun and planet sequence, then sort asteroid and comet cards as separate object types."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil labels the Sun and eight planets in order and names two other object types.",
+        "Label a sequence from the Sun outwards and add asteroids and comets to the list of other objects."
+      ],
+      [
+        "Closure",
+        "Ask pupils to name Earth’s neighbouring planets in the order from the Sun.",
+        "Identify Venus and Mars from the completed order."
+      ]
+    ],
+    "references": "TB pp. 116-119 · AB pp. 77-79",
+    "objectives": 1
+  },
+  {
+    "session": 57,
+    "week": 32,
+    "dates": [
+      {
+        "week": "M32",
+        "start": "2027-09-05",
+        "end": "2027-09-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-06",
+        "end": "2027-09-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-45"
+    ],
+    "source_labels": [
+      "L45"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare planet temperatures"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 9 The Solar System"
+      ],
+      [
+        "Lesson / PdP",
+        "L45"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System"
+      ],
+      [
+        "Learning Standards",
+        "9.1.2 Use the order of the planets to describe the general pattern in their temperatures"
+      ],
+      [
+        "Book reference",
+        "TB pp. 120-121 · AB pp. 80-81"
+      ],
+      [
+        "Learning objective",
+        "1. Submit a trend statement and one evidence-backed explanation of Venus as an exception."
+      ],
+      [
+        "Materials",
+        "Teacher-supplied chart of relative distances and representative temperatures, axes and comparison slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Ask which of Mercury and Venus is closer to the Sun before revealing the data.",
+        "Identify Mercury from the planet sequence and predict which might be hotter."
+      ],
+      [
+        "Main activity",
+        "Read both columns of the chart. Guide groups to describe the broad trend and compare Mercury and Venus using the chart and the textbook explanation of Venus’s atmosphere.",
+        "Order examples by distance, compare their temperatures and mark Venus as an exception to the simple distance prediction."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil states the general trend, cites Mercury/Venus evidence and links Venus’s high temperature to heat trapped by its atmosphere.",
+        "Submit a trend statement and one evidence-backed explanation of Venus as an exception."
+      ],
+      [
+        "Closure",
+        "Ask why distance is useful but insufficient in this example.",
+        "Explain that atmosphere can affect a planet’s temperature."
+      ]
+    ],
+    "references": "TB pp. 120-121 · AB pp. 80-81",
+    "objectives": 1
+  },
+  {
+    "session": 58,
+    "week": 32,
+    "dates": [
+      {
+        "week": "M32",
+        "start": "2027-09-05",
+        "end": "2027-09-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-06",
+        "end": "2027-09-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-45"
+    ],
+    "source_labels": [
+      "L45"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare planet temperatures"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 9 The Solar System"
+      ],
+      [
+        "Lesson / PdP",
+        "L45"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System"
+      ],
+      [
+        "Learning Standards",
+        "9.1.2 Use the order of the planets to describe the general pattern in their temperatures"
+      ],
+      [
+        "Book reference",
+        "TB pp. 120-121 · AB pp. 80-81"
+      ],
+      [
+        "Learning objective",
+        "1. Arrange the planets in order from the Sun using a supplied chart, describe the general temperature pattern and identify Venus as an exception."
+      ],
+      [
+        "Materials",
+        "Teacher-supplied chart of relative distances and representative temperatures, axes and comparison slips."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show Venus and Earth on a planet chart.",
+        "Identify which planet is closer to the Sun before comparing temperatures."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Provide a checked planet-order and mean-temperature chart; guide comparison of the overall pattern, without requiring a detailed explanation of atmospheric physics.",
+        "Arrange the planets in order from the Sun using a supplied chart, describe the general temperature pattern and identify Venus as an exception."
+      ],
+      [
+        "Closure",
+        "Ask why temperature is not determined by distance alone.",
+        "Mention Venus's thick atmosphere and its heat-trapping effect."
+      ]
+    ],
+    "references": "TB pp. 120-121 · AB pp. 80-81",
+    "objectives": 1
+  },
+  {
+    "session": 59,
+    "week": 33,
+    "dates": [
+      {
+        "week": "M33",
+        "start": "2027-09-12",
+        "end": "2027-09-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-13",
+        "end": "2027-09-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-46"
+    ],
+    "source_labels": [
+      "L46"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Model orbits around the Sun"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 9 The Solar System"
+      ],
+      [
+        "Lesson / PdP",
+        "L46"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System"
+      ],
+      [
+        "Learning Standards",
+        "9.1.3 Describe how planets move around the Sun along their orbits"
+      ],
+      [
+        "Book reference",
+        "TB pp. 122-123 · AB pp. 78,82"
+      ],
+      [
+        "Learning objective",
+        "1. Demonstrate the orbit and distinguish revolution from rotation in an explanation."
+      ],
+      [
+        "Materials",
+        "Tabletop Sun and planet models, a marked side of the planet ball and orbit arrows."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Spin the ball in place and ask whether it has travelled round the Sun.",
+        "Identify a spin without an orbit."
+      ],
+      [
+        "Main activity",
+        "Show rotation about the model’s axis and revolution around the Sun separately, then together. Set out an arrow track for partners to use.",
+        "Take turns modelling one complete orbit and one spin. Use the marked side to show the difference."
+      ],
+      [
+        "Practice and assessment",
+        "Ask each pupil to identify and demonstrate both motions. Check the model travels around the Sun for revolution.",
+        "Demonstrate the orbit and distinguish revolution from rotation in an explanation."
+      ],
+      [
+        "Closure",
+        "Ask which motion determines a planet’s year in the model.",
+        "Point to the orbit and name revolution."
+      ]
+    ],
+    "references": "TB pp. 122-123 · AB pp. 78,82",
+    "objectives": 1
+  },
+  {
+    "session": 60,
+    "week": 33,
+    "dates": [
+      {
+        "week": "M33",
+        "start": "2027-09-12",
+        "end": "2027-09-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-13",
+        "end": "2027-09-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-46"
+    ],
+    "source_labels": [
+      "L46"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Model orbits around the Sun"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 9 The Solar System"
+      ],
+      [
+        "Lesson / PdP",
+        "L46"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System"
+      ],
+      [
+        "Learning Standards",
+        "9.1.3 Describe how planets move around the Sun along their orbits"
+      ],
+      [
+        "Book reference",
+        "TB pp. 122-123 · AB pp. 78,82"
+      ],
+      [
+        "Learning objective",
+        "1. Move planet markers along their separate paths around a central Sun marker; draw and label the paths and describe the movement of planets around the Sun."
+      ],
+      [
+        "Materials",
+        "Tabletop Sun and planet models, a marked side of the planet ball and orbit arrows."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a ball turning in place and then moving around a marker.",
+        "Name the two different movements."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Provide a simple orbit diagram and model; distinguish the paths without requiring rotation as a separate assessed concept.",
+        "Move planet markers along their separate paths around a central Sun marker; draw and label the paths and describe the movement of planets around the Sun."
+      ],
+      [
+        "Closure",
+        "Ask pupils to draw an arrow for one orbit and one spin.",
+        "Label revolution and rotation correctly."
+      ]
+    ],
+    "references": "TB pp. 122-123 · AB pp. 78,82",
+    "objectives": 1
+  },
+  {
+    "session": 61,
+    "week": 34,
+    "dates": [
+      {
+        "week": "M34",
+        "start": "2027-09-19",
+        "end": "2027-09-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-20",
+        "end": "2027-09-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-47"
+    ],
+    "source_labels": [
+      "L47"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare revolution times"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 9 The Solar System"
+      ],
+      [
+        "Lesson / PdP",
+        "L47"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System"
+      ],
+      [
+        "Learning Standards",
+        "9.1.4 Explain how distance from the Sun relates to the time a planet takes to complete an orbit"
+      ],
+      [
+        "Book reference",
+        "TB pp. 124 · AB pp. 83"
+      ],
+      [
+        "Learning objective",
+        "1. Produce the ordered list and state how the period generally changes with distance from the Sun."
+      ],
+      [
+        "Materials",
+        "Four printed planet data cards, number strip and distance labels."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two cards with different revolution periods and ask how they can be compared.",
+        "Identify the relevant values and check their units."
+      ],
+      [
+        "Main activity",
+        "Give four planets with periods in consistent units from a checked teaching chart. Model ordering one pair by period, then comparing distances.",
+        "Arrange planets from the shortest to longest period and use a separate distance row to look for a pattern."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil orders all four and gives a distance–period relationship supported by the cards.",
+        "Produce the ordered list and state how the period generally changes with distance from the Sun."
+      ],
+      [
+        "Closure",
+        "Ask what one revolution period measures.",
+        "Explain it is the time for one trip around the Sun."
+      ]
+    ],
+    "references": "TB pp. 124 · AB pp. 83",
+    "objectives": 1
+  },
+  {
+    "session": 62,
+    "week": 34,
+    "dates": [
+      {
+        "week": "M34",
+        "start": "2027-09-19",
+        "end": "2027-09-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-20",
+        "end": "2027-09-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-47"
+    ],
+    "source_labels": [
+      "L47"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Compare revolution times"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 9 The Solar System"
+      ],
+      [
+        "Lesson / PdP",
+        "L47"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System"
+      ],
+      [
+        "Learning Standards",
+        "9.1.4 Explain how distance from the Sun relates to the time a planet takes to complete an orbit"
+      ],
+      [
+        "Book reference",
+        "TB pp. 124 · AB pp. 83"
+      ],
+      [
+        "Learning objective",
+        "1. Order four planets using a supplied orbital-period table and relate longer periods to greater distance from the Sun."
+      ],
+      [
+        "Materials",
+        "Four printed planet data cards, number strip and distance labels."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show two orbital-period values from the table.",
+        "Identify which planet takes longer to complete an orbit."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Provide verified simplified orbital data and ask pupils to cite two entries.",
+        "Order four planets using a supplied orbital-period table and relate longer periods to greater distance from the Sun."
+      ],
+      [
+        "Closure",
+        "Ask for one pair of planets that supports the distance-period relationship.",
+        "Cite the two table entries and describe the pattern."
+      ]
+    ],
+    "references": "TB pp. 124 · AB pp. 83",
+    "objectives": 1
+  },
+  {
+    "session": 63,
+    "week": 35,
+    "dates": [
+      {
+        "week": "M35",
+        "start": "2027-09-26",
+        "end": "2027-09-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M35",
+        "start": "2027-09-27",
+        "end": "2027-10-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-48"
+    ],
+    "source_labels": [
+      "L48"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Communicate Solar System findings"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 9 The Solar System"
+      ],
+      [
+        "Lesson / PdP",
+        "L48"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System"
+      ],
+      [
+        "Learning Standards",
+        "9.1.5 Present observations about the Solar System creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 121-126 · AB pp. 84"
+      ],
+      [
+        "Learning objective",
+        "1. Explain the relationship in one minute or on a written card using both the diagram and the data point."
+      ],
+      [
+        "Materials",
+        "Planet diagrams, checked temperature or period chart, blank poster sheets and evidence prompts."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a planet claim without supporting evidence and ask what could strengthen it.",
+        "Suggest one matching data point or a labelled part of a model."
+      ],
+      [
+        "Main activity",
+        "Model combining a diagram with a number or recorded comparison. Invite pairs to present one relationship about planet temperature, distance or revolution.",
+        "Prepare a labelled diagram and select a data point that directly supports the explanation."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil names the relationship, labels the diagram accurately and points to a matching data point.",
+        "Explain the relationship in one minute or on a written card using both the diagram and the data point."
+      ],
+      [
+        "Closure",
+        "Ask the class to identify the evidence in one presentation.",
+        "Name the relevant label or data point and say how it supports the idea."
+      ]
+    ],
+    "references": "TB pp. 121-126 · AB pp. 84",
+    "objectives": 1
+  },
+  {
+    "session": 64,
+    "week": 35,
+    "dates": [
+      {
+        "week": "M35",
+        "start": "2027-09-26",
+        "end": "2027-09-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M35",
+        "start": "2027-09-27",
+        "end": "2027-10-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-49"
+    ],
+    "source_labels": [
+      "L49"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Identify a pulley and its purpose"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 10 Machine"
+      ],
+      [
+        "Lesson / PdP",
+        "L49"
+      ],
+      [
+        "Content Standards",
+        "10.1 Pulleys"
+      ],
+      [
+        "Learning Standards",
+        "10.1.1 Describe what a pulley is and what it is used for"
+      ],
+      [
+        "Book reference",
+        "TB pp. 128 · AB pp. 85"
+      ],
+      [
+        "Learning objective",
+        "1. Label the wheel and rope and explain one way the pulley helps move a load."
+      ],
+      [
+        "Materials",
+        "Fixed pulley demonstration, light attached load and outline cards."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a photo of a flag raising system and ask what guides the line.",
+        "Identify the wheel or rope in the picture."
+      ],
+      [
+        "Main activity",
+        "Point out the wheel and rope on a secure tabletop demonstration. Slowly raise the light load and trace the moving line.",
+        "Observe the demonstration, trace the rope over the wheel and tell a partner what the pulley helps people move."
+      ],
+      [
+        "Practice and assessment",
+        "Give each pupil an outline to label. Check wheel, rope and a correct purpose statement.",
+        "Label the wheel and rope and explain one way the pulley helps move a load."
+      ],
+      [
+        "Closure",
+        "Ask how the line moves when the load goes up.",
+        "Use the demonstration to describe one direction of motion."
+      ]
+    ],
+    "references": "TB pp. 128 · AB pp. 85",
+    "objectives": 1
+  },
+  {
+    "session": 65,
+    "week": 36,
+    "dates": [
+      {
+        "week": "M36",
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-04",
+        "end": "2027-10-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-50"
+    ],
+    "source_labels": [
+      "L50"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain a fixed pulley"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 10 Machine"
+      ],
+      [
+        "Lesson / PdP",
+        "L50"
+      ],
+      [
+        "Content Standards",
+        "10.1 Pulleys"
+      ],
+      [
+        "Learning Standards",
+        "10.1.2 Use a model to explain how a fixed pulley works"
+      ],
+      [
+        "Book reference",
+        "TB pp. 129-130 · AB pp. 86"
+      ],
+      [
+        "Learning objective",
+        "1. Draw a downward pull arrow and an upward load arrow. Explain that the pulley changes the direction of the pull."
+      ],
+      [
+        "Materials",
+        "Secure fixed pulley stands, soft cords, very light test loads and arrow cards."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Hold a pulley diagram and ask which way to pull to make the load rise.",
+        "Predict the pull and movement directions with two arrows."
+      ],
+      [
+        "Main activity",
+        "Demonstrate changing the direction of pull using a secure model. Give pairs a checked station with a light test load.",
+        "Pull the line down under supervision, observe the load rise and mark arrows on the model drawing."
+      ],
+      [
+        "Practice and assessment",
+        "Check the pull and load arrows on a new sketch. Ask what the single fixed pulley changes in this demonstration.",
+        "Draw a downward pull arrow and an upward load arrow. Explain that the pulley changes the direction of the pull."
+      ],
+      [
+        "Closure",
+        "Ask what the direction arrows can show about this model.",
+        "State the two directions indicated by the labelled arrows."
+      ]
+    ],
+    "references": "TB pp. 129-130 · AB pp. 86",
+    "objectives": 1
+  },
+  {
+    "session": 66,
+    "week": 36,
+    "dates": [
+      {
+        "week": "M36",
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-04",
+        "end": "2027-10-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-50"
+    ],
+    "source_labels": [
+      "L50"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Explain a fixed pulley"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 10 Machine"
+      ],
+      [
+        "Lesson / PdP",
+        "L50"
+      ],
+      [
+        "Content Standards",
+        "10.1 Pulleys"
+      ],
+      [
+        "Learning Standards",
+        "10.1.2 Use a model to explain how a fixed pulley works"
+      ],
+      [
+        "Book reference",
+        "TB pp. 129-130 · AB pp. 86"
+      ],
+      [
+        "Learning objective",
+        "1. On a fixed-pulley model, draw arrows for pulling down and the load moving up; explain the change in direction."
+      ],
+      [
+        "Materials",
+        "Secure fixed pulley stands, soft cords, very light test loads and arrow cards."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a flagpole rope passing over a fixed pulley.",
+        "Predict the flag's movement if the free end is pulled downward."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Use a safe light load on a securely fixed model, or use a diagram.",
+        "On a fixed-pulley model, draw arrows for pulling down and the load moving up; explain the change in direction."
+      ],
+      [
+        "Closure",
+        "Ask pupils to point to the direction of effort and load movement.",
+        "Draw arrows showing opposite directions in the fixed pulley."
+      ]
+    ],
+    "references": "TB pp. 129-130 · AB pp. 86",
+    "objectives": 1
+  },
+  {
+    "session": 67,
+    "week": 37,
+    "dates": [
+      {
+        "week": "M37",
+        "start": "2027-10-10",
+        "end": "2027-10-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-11",
+        "end": "2027-10-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-51"
+    ],
+    "source_labels": [
+      "L51"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Find pulley applications"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 10 Machine"
+      ],
+      [
+        "Lesson / PdP",
+        "L51"
+      ],
+      [
+        "Content Standards",
+        "10.1 Pulleys"
+      ],
+      [
+        "Learning Standards",
+        "10.1.3 Give everyday examples of how people use pulleys"
+      ],
+      [
+        "Book reference",
+        "TB pp. 131-132 · AB pp. 87-89"
+      ],
+      [
+        "Learning objective",
+        "1. List three applications and connect a named benefit to the task the pulley helps perform."
+      ],
+      [
+        "Materials",
+        "Photos of flagpoles, blinds, wells and other checked examples, scenario cards and labels."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a flagpole rope and ask how it differs from lifting the flag directly by hand.",
+        "Name one practical benefit of the pulley position."
+      ],
+      [
+        "Main activity",
+        "Ask groups to identify the wheel, rope and load in illustrated uses. Provide picture options with and without pulleys to compare.",
+        "Find how the parts work in each use and record a practical benefit in one case."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil identifies three genuine applications and explains a benefit in one context.",
+        "List three applications and connect a named benefit to the task the pulley helps perform."
+      ],
+      [
+        "Closure",
+        "Ask for evidence that one chosen example really uses a pulley.",
+        "Point to the wheel and rope arrangement in its image."
+      ]
+    ],
+    "references": "TB pp. 131-132 · AB pp. 87-89",
+    "objectives": 1
+  },
+  {
+    "session": 68,
+    "week": 37,
+    "dates": [
+      {
+        "week": "M37",
+        "start": "2027-10-10",
+        "end": "2027-10-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-11",
+        "end": "2027-10-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-51"
+    ],
+    "source_labels": [
+      "L51"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Find pulley applications"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 10 Machine"
+      ],
+      [
+        "Lesson / PdP",
+        "L51"
+      ],
+      [
+        "Content Standards",
+        "10.1 Pulleys"
+      ],
+      [
+        "Learning Standards",
+        "10.1.3 Give everyday examples of how people use pulleys"
+      ],
+      [
+        "Book reference",
+        "TB pp. 131-132 · AB pp. 87-89"
+      ],
+      [
+        "Learning objective",
+        "1. Match flagpole, well and construction-hoist pictures to pulley use; explain one benefit in the selected example."
+      ],
+      [
+        "Materials",
+        "Photos of flagpoles, blinds, wells and other checked examples, scenario cards and labels."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a well bucket and a flagpole with pulley pictures.",
+        "Identify the shared simple machine."
+      ],
+      [
+        "Targeted reinforcement / PBD",
+        "Provide three contextual diagrams and ask pupils to justify the match.",
+        "Match flagpole, well and construction-hoist pictures to pulley use; explain one benefit in the selected example."
+      ],
+      [
+        "Closure",
+        "Ask which pulley application would help raise a flag.",
+        "Choose the flagpole and explain the change in direction of pull."
+      ]
+    ],
+    "references": "TB pp. 131-132 · AB pp. 87-89",
+    "objectives": 1
+  },
+  {
+    "session": 69,
+    "week": 38,
+    "dates": [
+      {
+        "week": "M38",
+        "start": "2027-10-17",
+        "end": "2027-10-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-18",
+        "end": "2027-10-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-52"
+    ],
+    "source_labels": [
+      "L52"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Build and explain a pulley model"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Unit 10 Machine"
+      ],
+      [
+        "Lesson / PdP",
+        "L52"
+      ],
+      [
+        "Content Standards",
+        "10.1 Pulleys"
+      ],
+      [
+        "Learning Standards",
+        "10.1.4 Build a working pulley model\n10.1.5 Present observations about pulleys creatively through writing, speech, drawings or digital tools"
+      ],
+      [
+        "Book reference",
+        "TB pp. 133-135 · AB pp. 90-92"
+      ],
+      [
+        "Learning objective",
+        "1. Show the load rise in the test. Draw the wheel, rope and load with arrows for pull and load motion."
+      ],
+      [
+        "Materials",
+        "Teacher-checked pulley kits, soft cords, clamps, arrow cards and very light test loads."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Show a secure model and ask what would stop the load from rising smoothly.",
+        "Name one possible threading or alignment problem."
+      ],
+      [
+        "Main activity",
+        "Check support and rope placement before testing. Assign a builder and an observer, then switch roles for a second test.",
+        "Assemble and test the model with a light load. Record the observed motion, then swap roles and check the rope path."
+      ],
+      [
+        "Practice and assessment",
+        "Observe the pair lift the load. Ask each pupil for an individual sketch with a supported explanation.",
+        "Show the load rise in the test. Draw the wheel, rope and load with arrows for pull and load motion."
+      ],
+      [
+        "Closure",
+        "Ask which change had a visible effect on the model’s performance.",
+        "Describe an adjustment and the observed result."
+      ]
+    ],
+    "references": "TB pp. 133-135 · AB pp. 90-92",
+    "objectives": 1
+  },
+  {
+    "session": 70,
+    "week": 38,
+    "dates": [
+      {
+        "week": "M38",
+        "start": "2027-10-17",
+        "end": "2027-10-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-18",
+        "end": "2027-10-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-R04"
+    ],
+    "source_labels": [
+      "R04"
+    ],
+    "heading": [
+      "Daily Lesson Plan",
+      "Science (DLP) · Year 3 SK",
+      "Solar System and Machine"
+    ],
+    "details": [
+      [
+        "Unit",
+        "Consolidation"
+      ],
+      [
+        "Lesson / PdP",
+        "R04"
+      ],
+      [
+        "Content Standards",
+        "9.1 The Solar System\n10.1 Pulleys"
+      ],
+      [
+        "Learning Standards",
+        "9.1.3 Describe how planets move around the Sun along their orbits\n10.1.2 Use a model to explain how a fixed pulley works"
+      ],
+      [
+        "Book reference",
+        "TB pp. 126,137 · Teacher-selected prompts"
+      ],
+      [
+        "Learning objective",
+        "1. Explain the orbit and add pull and load arrows with an explanation of how the fixed pulley changes direction."
+      ],
+      [
+        "Materials",
+        "Orbit diagram, small fixed-pulley model or diagram, arrow cards and two-question review sheet."
+      ]
+    ],
+    "activities": [
+      [
+        "Phase",
+        "Teacher",
+        "Pupils"
+      ],
+      [
+        "Set induction",
+        "Display an orbit drawing and a pulley drawing. Ask what travels in each.",
+        "Identify the planet and the pulley load in their different models."
+      ],
+      [
+        "Main activity",
+        "Review the centre and motion of an orbit and demonstrate the direction of pull and load movement. Give a new diagram for each topic.",
+        "Read the orbit diagram and place arrows for the demonstrated fixed pulley in pairs."
+      ],
+      [
+        "Practice and assessment",
+        "Check each pupil interprets one orbit representation and correctly explains the relation of pull to load movement.",
+        "Explain the orbit and add pull and load arrows with an explanation of how the fixed pulley changes direction."
+      ],
+      [
+        "Closure",
+        "Ask pupils to name one useful label in each model.",
+        "Name the Sun and the load or pull direction and explain what each label shows."
+      ]
+    ],
+    "references": "TB pp. 126,137 · Teacher-selected prompts",
+    "objectives": 1
+  }
+]
