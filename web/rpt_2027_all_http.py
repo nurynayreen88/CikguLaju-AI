@@ -638,17 +638,22 @@ def create_all_rpt_blueprint(*,root=ROOT):
             content=path.read_bytes()
             digest=hashlib.sha256(content).hexdigest()
             compact=compact_pdf.read_approved(subject,year,content,root=root) if math_sk or approved_sains is not None else None
+            revised_dlp=None
             if subject in DLP_SUBJECTS:
-                compact=compact_pdf.read_full_standards_dlp(subject,year,content,root=root) or compact_pdf.read_dlp(subject,year,content,root=root)
+                revised_dlp=compact_pdf.read_full_standards_dlp(subject,year,content,root=root)
+                compact=revised_dlp or compact_pdf.read_dlp(subject,year,content,root=root)
             if compact is not None:
                 content,digest=compact
-            if subject in DLP_SUBJECTS:
+            flexible=bool(revised_dlp and os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1")
+            if flexible:
                 from web.rpt_dlp_flexible_time import pdf_without_fixed_minutes
                 content=pdf_without_fixed_minutes(content)
-                digest=hashlib.sha256(content).hexdigest()
             response = send_file(BytesIO(content), mimetype="application/pdf", as_attachment=True,
                                  download_name=path.name, conditional=False)
             response.headers["X-RPT-Source-SHA256"] = digest
+            if flexible:
+                response.headers["X-RPT-Output-SHA256"]=hashlib.sha256(content).hexdigest()
+                response.headers["X-RPT-Layout-Transform"]="dlp-flexible-time-v1"
             response.headers["X-RPT-Personalization-Allowed"] = "1" if _has_paid_access(account) else "0"
             return response
         if subject not in SUBJECTS or year not in SUBJECTS[subject][1]:
