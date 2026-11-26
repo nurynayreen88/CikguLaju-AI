@@ -1,0 +1,63 @@
+name: Build nine verified RTL original vector PDF candidates
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - '.github/workflows/rpt-rtl-nine-vector-pdf-20261126.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/rpt-rtl-nine-vector-pdf-release-20261126'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt
+      - name: Build only nine validated free PDFs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from tempfile import TemporaryDirectory
+          from hashlib import sha256
+          import json
+          import fitz
+          from tools.build_rpt_rtl_vector_pdf_20261126 import build,ROOT
+          source=json.loads((ROOT/"manifest.json").read_text())["files"]
+          folder=ROOT.parent/"compact_rtl_pdf_2027";folder.mkdir(parents=True,exist_ok=True)
+          entries={}
+          with TemporaryDirectory() as temp:
+              for subject in ("pendidikan_islam","bahasa_arab"):
+                  for year in range(2,7):
+                      if subject=="bahasa_arab" and year==2:continue
+                      key=f"{subject}:{year}";entry=source[key]
+                      old=ROOT/entry["path"]
+                      assert sha256(old.read_bytes()).hexdigest()==entry["sha256"]
+                      build(subject,year,Path(temp))
+                      candidate=Path(temp)/f"RPT_{subject}_tahun_{year}_2027.pdf"
+                      data=candidate.read_bytes()
+                      with fitz.open(old) as a,fitz.open(candidate) as b:
+                          assert a[0].get_pixmap().samples==b[0].get_pixmap().samples
+                          assert len(b)<=len(a)
+                          assert all(p.get_text().strip() for p in list(b)[1:])
+                          e={"path":f"{subject}/tahun_{year}.pdf","source_sha256":entry["sha256"],
+                             "sha256":sha256(data).hexdigest(),"bytes":len(data),"pages":len(b),"source_pages":len(a)}
+                      dest=folder/e["path"];dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(data)
+                      entries[key]=e
+          assert len(entries)==9 and len(list(folder.rglob("*.pdf")))==9 and not list(folder.rglob("*.docx"))
+          (folder/"manifest.json").write_text(json.dumps({"version":1,"status":"LAYOUT_QA_CANDIDATE","count":9,"files":entries},indent=2)+"\n")
+          PY
+      - name: Commit only nine free unpersonalized PDFs to isolated branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- rpt_2027/compact_rtl_pdf_2027
+          git diff --cached --name-only | python -c 'import sys; p=sys.stdin.read().splitlines(); assert len(p)==10 and all(s.startswith("rpt_2027/compact_rtl_pdf_2027/") and (s.endswith(".pdf") or s.endswith("/manifest.json")) for s in p)'
+          git commit -m "build(rpt): nine verified RTL free vector PDFs"
+          git push origin HEAD:refs/heads/feat/rpt-rtl-nine-vector-pdf-release-20261126
