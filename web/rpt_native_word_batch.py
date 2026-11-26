@@ -159,3 +159,31 @@ def integrated_english_document(year,source,source_digest,account,config,*,root)
     lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
     result=personalized_word(blob,raw,lock,f"english:{year}",account,config)
     return result,hashlib.sha256(result).hexdigest()
+
+def eligible_dlp(subject,year,*,root):
+    if not enabled():
+        return False
+    from rpt_2027.dlp.documents import document_path
+    from tools.build_rpt_dlp_native_20261126 import PINS as dlp_pins
+    try:
+        expected=dlp_pins.get(f"{subject}:{year}")
+        path=document_path(subject,year,root=Path(root)/"dlp")
+        return bool(expected and path and hashlib.sha256(path.read_bytes()).hexdigest()==expected)
+    except OSError:
+        return False
+
+def dlp_document(subject,year,account,config,*,root):
+    from web.english_rpt_2027_http import _has_paid_access
+    if not _has_paid_access(account):
+        raise PermissionError("Paid RPT Word only")
+    if not eligible_dlp(subject,year,root=root):
+        raise ValueError("DLP RPT source changed")
+    from tools.build_rpt_dlp_native_20261126 import build_word,PINS as dlp_pins
+    from web.rpt_native_word_cover import personalized_word
+    blob,raw,_=build_word(subject,year,root=root)
+    key=f"{subject}:{year}"
+    if hashlib.sha256(raw).hexdigest()!=dlp_pins[key]:
+        raise ValueError("DLP RPT source changed")
+    lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
+    result=personalized_word(blob,raw,lock,key,account,config)
+    return result,hashlib.sha256(result).hexdigest()

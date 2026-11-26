@@ -288,6 +288,9 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                 "status": "TERSEDIA",
                 "download_enabled": bool(allowed),
                 "note": f"Year {year} SK · Group A and Group B",
+                "docx_ready":bool(personalization_allowed and native_word.eligible_dlp(code,year,root=root)),
+                "word_paid_only":True,
+                "docx_url":f"/api/rpt/2027/all/{code}/{year}.docx" if personalization_allowed and native_word.eligible_dlp(code,year,root=root) else None,
                 "is_draft": False,
                 "year_label": f"Year {year}",
             }
@@ -520,7 +523,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
         approved_math=subject=="matematik" and year in matematik_sk.DIGESTS
         integrated_english,english_digest=_integrated_english_file(subject,year,root)
         english_word=subject=="english" and integrated_english is not None
-        if native_word.enabled() and (f"{subject}:{year}" in native_word.PINS or approved_science or approved_math or english_word):
+        dlp_word=subject in DLP_SUBJECTS and year in PUBLISHED_YEARS
+        if native_word.enabled() and (f"{subject}:{year}" in native_word.PINS or approved_science or approved_math or english_word or dlp_word):
             if not _has_paid_access(account):
                 return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
             source=_approved_sk_science_file(subject,year,root) if approved_science else _staged_file(subject,year,root=root)
@@ -536,6 +540,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
                     blob,digest=native_word.approved_math_document(year,source,account,_config(),root=root)
                 elif english_word:
                     blob,digest=native_word.integrated_english_document(year,integrated_english,english_digest,account,_config(),root=root)
+                elif dlp_word:
+                    blob,digest=native_word.dlp_document(subject,year,account,_config(),root=root)
                 else:
                     blob,digest=native_word.document(subject,year,source,account,_config(),root=root)
             except Exception:
@@ -545,7 +551,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
                 download_name=f"CIKGULAJU_RPT_{subject.upper()}_SK_TAHUN_{year}_2027_WORD.docx")
             response.headers["X-RPT-Source-SHA256"]=digest
             response.headers["X-RPT-Word-Access"]="paid-founder-only"
-            response.headers["X-RPT-Academic-Status"]="TERSEDIA" if (approved_science or approved_math) else "DRAF_SEMAKAN"
+            response.headers["X-RPT-Academic-Status"]="TERSEDIA" if (approved_science or approved_math or dlp_word) else "DRAF_SEMAKAN"
             return response
         if subject!="bahasa_melayu" or year not in bm_word.YEARS:
             return jsonify({"error":"RPT Word KSSR belum tersedia bagi pilihan ini."}),404

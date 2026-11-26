@@ -175,4 +175,37 @@ class PrivateBatchTests(unittest.TestCase):
                     self.assertEqual(client.get(url+".docx").status_code,403)
                     self.assertEqual(client.get(url+".pdf").data,pdf.data)
 
+
+    def test_dlp_paid_word_all_ten(self):
+        import io
+        from docx import Document
+        from web.rpt_2027_all_http import ROOT,catalog_data
+        from tools.build_rpt_dlp_native_20261126 import PINS
+        app=Flask(__name__);app.register_blueprint(create_all_rpt_blueprint());client=app.test_client()
+        paid={"telegram_user_id":9,"rakan_pembangun":True}
+        free={"telegram_user_id":10,"free_generations_remaining":10}
+        with patch.dict("os.environ",{"CIKGULAJU_RPT_NATIVE_WORD_BATCH":"1"}),patch("web_v1_telegram_auth_routes._config",return_value={"account_backend":"supabase"}),patch("web.rpt_school_cover.school_identity",return_value=None) as profile:
+            for key,digest in PINS.items():
+                subject,y=key.split(":")
+                url=f"/api/rpt/2027/all/{subject}/{y}"
+                with patch("web.rpt_2027_all_http._account",return_value=(paid,None)):
+                    pdf=client.get(url+".pdf")
+                    self.assertEqual(pdf.status_code,200,key)
+                    self.assertEqual(sha256(pdf.data).hexdigest(),digest)
+                    word=client.get(url+".docx")
+                    self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else "")
+                    self.assertGreater(len(Document(io.BytesIO(word.data)).tables[0].rows),50)
+                    self.assertEqual(word.headers["Cache-Control"],"no-store, private")
+                calls=profile.call_count
+                with patch("web.rpt_2027_all_http._account",return_value=(free,None)):
+                    self.assertEqual(client.get(url+".docx").status_code,403)
+                    self.assertEqual(client.get(url+".pdf").data,pdf.data)
+                self.assertEqual(profile.call_count,calls)
+            for access in (False,True):
+                subjects=catalog_data(root=ROOT,personalization_allowed=access)["subjects"]
+                for code in ("mathematics_dlp","science_dlp"):
+                    rows=next(x for x in subjects if x["code"]==code)["years"]
+                    self.assertEqual(len(rows),5)
+                    self.assertTrue(all(y["docx_ready"]==access for y in rows))
+
 if __name__=="__main__": unittest.main()

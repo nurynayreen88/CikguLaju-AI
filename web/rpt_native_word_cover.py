@@ -16,7 +16,8 @@ import fitz
 def selected_layout(lock,key,digest):
     candidates=[lock,lock.get("english_integrated",{}),
                 lock.get("aligned_rpt_covers",{}).get(key,{}),
-                lock.get("science_year6_covers",{}).get(key,{})]
+                lock.get("science_year6_covers",{}).get(key,{}),
+                lock.get("dlp_year"+key.rsplit(":",1)[-1],{}) if "_dlp:" in key else {}]
     for candidate in candidates:
         if candidate.get("source_sha256_by_subject_year",{}).get(key)==digest:
             return candidate
