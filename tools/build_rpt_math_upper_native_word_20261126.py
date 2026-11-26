@@ -91,6 +91,8 @@ def extract(source):
     assert not {w for w,_,_ in expected}&{6,18,19}
     return intro,rows,expected
 
+from tools.rpt_kssr_physical_pages import paginate,verify_pages
+
 def build_word(year,root=ROOT):
     source=sk_documents.document_path(year,root=Path(root)/"matematik")
     assert source is not None
@@ -146,6 +148,7 @@ def build_word(year,root=ROOT):
             assert norm(table.cell(i,1).text)==norm(cells[1])
     for _,first,last,_ in groups:
         assert all(table.cell(first,0)._tc is table.cell(i,0)._tc for i in range(first,last+1))
+    blob=paginate(blob,[(a,b) for _,a,b,_ in groups],first_budget=310)
     return blob,raw,expected
 
 def render(year,out):

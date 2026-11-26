@@ -186,6 +186,8 @@ def hyperlink(cell,url):
 def date_label(d):
     return date.fromisoformat(d).strftime("%d/%m/%Y")
 
+from tools.rpt_kssr_physical_pages import paginate,verify_pages
+
 def build_word(subject,year,manifest,lock,*,root=ROOT):
     key=f"{subject}:{year}"
     entry=manifest["files"][key];source=Path(root)/entry["path"];raw=source.read_bytes()
@@ -245,6 +247,7 @@ def build_word(subject,year,manifest,lock,*,root=ROOT):
         assert table.rows[i]._tr.get_or_add_trPr().find(qn("w:cantSplit")) is not None
     assert [i for _,i,_ in expected]==source_ids
     assert Counter(rel.target_ref for rel in check.part.rels.values() if rel.reltype==RT.HYPERLINK)==Counter(set(links))
+    blob=paginate(blob,ranges)
     return blob,raw,source,source_ids,links,ranges
 
 def render(subject,year,out,manifest,lock):

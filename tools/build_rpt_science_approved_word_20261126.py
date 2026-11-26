@@ -86,6 +86,8 @@ def extract(path,year):
     assert seen==expected,(len(seen),len(expected),"Source teaching identity mismatch")
     return headers,rows,expected
 
+from tools.rpt_kssr_physical_pages import paginate,verify_pages
+
 def build_word(year,root=ROOT):
     source=sk_documents.document_path(year,root=Path(root)/"sains")
     assert source is not None
@@ -131,6 +133,7 @@ def build_word(year,root=ROOT):
         assert all(norm(c.text)==norm(x) for c,x in zip(t.rows[i].cells,cells))
     for _,first,last,_ in groups:
         assert all(t.cell(first,0)._tc is t.cell(i,0)._tc for i in range(first,last+1))
+    blob=paginate(blob,[(a,b) for _,a,b,_ in groups])
     return blob,raw,expected,headers
 
 def render(year,out):
