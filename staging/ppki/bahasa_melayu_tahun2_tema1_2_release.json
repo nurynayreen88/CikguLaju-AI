@@ -1,0 +1,876 @@
+{
+  "program": "PPKI",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Bahasa Melayu",
+  "subject_id": "BAHASA_MELAYU_PPKI",
+  "theme": "Tema 1–2",
+  "units": {
+    "1": "Sambutan Kemerdekaan",
+    "2": "Cinta akan Negara",
+    "3": "Kami Sepakat",
+    "4": "Hijaunya Bumi",
+    "5": "Alam Sekeliling",
+    "6": "Hargai Alam"
+  },
+  "status": "READY",
+  "sources": {
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/023-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-ASAS-3M-19-5-2016-1.pdf",
+    "textbook": "https://anyflip.com/smjjv/svvv/basic",
+    "activity_book": "Nombor halaman menurut nota guru buku teks; buku aktiviti berasingan belum diperiksa.",
+    "dskp_audit": "https://www.eprema.com.my/SKDocs/DSKP/PKTahun2/DSKP_KSSR_PK_MP_Tahun_2_SEMAKAN2017_ASAS_3M.pdf"
+  },
+  "notes": "Draft sequence, not connected to production. Confirm complete SK/SP descriptions, annual pacing, format and source audit before publication. Activities and criteria are original pedagogical adaptations.",
+  "lessons": [
+    {
+      "pdp": "001",
+      "unit": 1,
+      "textbook_page": "2",
+      "sp": [
+        "1.1.1(i)"
+      ],
+      "title": "Bersatu hati",
+      "objective": "Melaksanakan 2 daripada 3 arahan satu langkah yang didengar daripada guru.",
+      "success_criterion": "Melaksanakan 2 daripada 3 arahan satu langkah yang didengar daripada guru.",
+      "materials": "Bendera mini, kad arahan",
+      "induction": "Tunjuk bendera dan ajak murid menyebut Merdeka.",
+      "guided": "Guru modelkan arahan ambil dan letakkan bendera; murid meniru.",
+      "practice": "Murid mendengar tiga arahan berbeza menggunakan bendera kertas dan bahan kelas, lalu melakukan tindakan yang diminta.",
+      "support": "Beri satu objek dan kad visual; kurangkan isyarat apabila bersedia.",
+      "closure": "Tunjukkan satu arahan yang telah dikuasai.",
+      "activity_book_ref": "BA 1 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Melaksanakan 2 daripada 3 arahan satu langkah yang didengar daripada guru. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Melaksanakan 2 daripada 3 arahan satu langkah yang didengar daripada guru.",
+      "sk": [
+        "1.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "002",
+      "unit": 1,
+      "textbook_page": "3",
+      "sp": [
+        "2.1.1"
+      ],
+      "title": "Bunyikan suku kata KV",
+      "objective": "Mengeja dan membunyikan 4 daripada 6 suku kata KV dengan betul.",
+      "success_criterion": "Mengeja dan membunyikan 4 daripada 6 suku kata KV dengan betul.",
+      "materials": "Kad konsonan dan vokal",
+      "induction": "Padankan dua kad huruf pada papan.",
+      "guided": "Gabungkan konsonan dan vokal daripada halaman rujukan; murid ikut bunyi.",
+      "practice": "Murid memilih enam kad KV dan mengeja secara bergilir. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Hadkan pilihan kepada dua kad, kemudian tambah pilihan.",
+      "closure": "Bunyikan dua kad pilihan.",
+      "activity_book_ref": "BA 2 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Mengeja dan membunyikan 4 daripada 6 suku kata KV dengan betul. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Mengeja dan membunyikan 4 daripada 6 suku kata KV dengan betul.",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "003",
+      "unit": 1,
+      "textbook_page": "4",
+      "sp": [
+        "2.1.1"
+      ],
+      "title": "Irama suku kata",
+      "objective": "Mengeja dan membunyikan 4 daripada 6 suku kata KV dengan betul.",
+      "success_criterion": "Mengeja dan membunyikan 4 daripada 6 suku kata KV dengan betul.",
+      "materials": "Kad ba, ca, da, fa, ga, ha",
+      "induction": "Tepuk rentak pendek.",
+      "guided": "Guru modelkan gabungan huruf menggunakan tepukan; murid ikut sebutan.",
+      "practice": "Murid angkat kad sepadan dengan bunyi dan eja enam kad secara individu. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Perlahankan rentak; beri contoh bunyi satu demi satu.",
+      "closure": "Pilih satu kad dan bunyikan tanpa rentak.",
+      "activity_book_ref": "BA 3 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Mengeja dan membunyikan 4 daripada 6 suku kata KV dengan betul. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Mengeja dan membunyikan 4 daripada 6 suku kata KV dengan betul.",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "004",
+      "unit": 1,
+      "textbook_page": "5",
+      "sp": [
+        "3.2.1"
+      ],
+      "title": "Surihan suku kata",
+      "objective": "3 daripada 4 suku kata disurih mengikut bentuk",
+      "success_criterion": "3 daripada 4 suku kata disurih mengikut bentuk",
+      "materials": "Kad bertekstur, pensel, lembaran surihan",
+      "induction": "Jejak bentuk huruf di udara.",
+      "guided": "Guru tunjuk arah surihan; murid jejak dengan jari dahulu.",
+      "practice": "Murid menyurih empat KV pada lembaran mengikut arah yang ditunjukkan. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Besarkan huruf dan sediakan alat tulis mudah genggam.",
+      "closure": "Pilih satu hasil surihan untuk ditunjukkan.",
+      "activity_book_ref": "BA 4 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3 daripada 4 suku kata disurih mengikut bentuk. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3 daripada 4 suku kata disurih mengikut bentuk",
+      "sk": [
+        "3.2"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "005",
+      "unit": 1,
+      "textbook_page": "6",
+      "sp": [
+        "4.1.1(i)"
+      ],
+      "title": "Nama ahli keluarga",
+      "objective": "Bersoal jawab mengenai dua nama ahli keluarga sendiri atau keluarga rekaan.",
+      "success_criterion": "Bersoal jawab mengenai dua nama ahli keluarga sendiri atau keluarga rekaan.",
+      "materials": "Kad watak dan kad nama",
+      "induction": "Kenalkan watak keluarga dalam gambar.",
+      "guided": "Guru modelkan soal jawab nama; murid padankan nama dengan watak.",
+      "practice": "Murid bergilir menyoal nama dua ahli keluarga pada kad watak rekaan dan menjawab soalan pasangan menggunakan nama yang sepadan.",
+      "support": "Benarkan menunjuk kad nama atau menggunakan alat komunikasi alternatif.",
+      "closure": "Kongsi satu nama secara sukarela.",
+      "activity_book_ref": null,
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Bersoal jawab mengenai dua nama ahli keluarga sendiri atau keluarga rekaan. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Bersoal jawab mengenai dua nama ahli keluarga sendiri atau keluarga rekaan.",
+      "sk": [
+        "4.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "006",
+      "unit": 2,
+      "textbook_page": "7",
+      "sp": [
+        "1.1.2"
+      ],
+      "title": "Arahan berjimat",
+      "objective": "Melafazkan dua arahan berjimat berdasarkan arahan yang didengar.",
+      "success_criterion": "Melafazkan dua arahan berjimat berdasarkan arahan yang didengar.",
+      "materials": "Kad kipas, lampu, air dan suis tiruan",
+      "induction": "Tunjukkan gambar kelas kosong dengan lampu menyala.",
+      "guided": "Guru modelkan arahan menutup suis menggunakan papan simulasi; murid mengulang.",
+      "practice": "Guru menyebut dua arahan berjimat dalam situasi simulasi. Murid melafazkan semula arahan kepada pasangan tanpa menyentuh suis sebenar. Gunakan BA 5 untuk pengukuhan jika sesuai.",
+      "support": "Sediakan rangka ayat dan kad kata kerja; tiada manipulasi suis elektrik sebenar.",
+      "closure": "Ulang satu arahan berjimat sebelum keluar kelas.",
+      "activity_book_ref": "BA 5 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Melafazkan dua arahan berjimat berdasarkan arahan yang didengar. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Melafazkan dua arahan berjimat berdasarkan arahan yang didengar.",
+      "sk": [
+        "1.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "007",
+      "unit": 2,
+      "textbook_page": "8",
+      "sp": [
+        "1.2.1"
+      ],
+      "title": "Basikal berhias",
+      "objective": "2 daripada 3 respons berkaitan cerita betul",
+      "success_criterion": "2 daripada 3 respons berkaitan cerita betul",
+      "materials": "Gambar basikal berhias, kad warna dan objek",
+      "induction": "Perhatikan gambar basikal.",
+      "guided": "Guru ceritakan situasi berdasarkan gambar; murid menunjuk objek disebut.",
+      "practice": "Murid jawab tiga soalan mudah tentang gambar dan cerita yang didengar. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Ulang cerita pendek; gunakan dua pilihan bergambar.",
+      "closure": "Pilih hiasan yang disukai dan berikan respons.",
+      "activity_book_ref": "BA 6 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 2 daripada 3 respons berkaitan cerita betul. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "2 daripada 3 respons berkaitan cerita betul",
+      "sk": [
+        "1.2"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "008",
+      "unit": 2,
+      "textbook_page": "9",
+      "sp": [
+        "2.1.2"
+      ],
+      "title": "Perkataan V+KV",
+      "objective": "3 daripada 5 perkataan V+KV dibatang",
+      "success_criterion": "3 daripada 5 perkataan V+KV dibatang",
+      "materials": "Kad vokal dan KV, gambar ibu, ubi, api",
+      "induction": "Tunjuk gambar ubi dan sebut namanya.",
+      "guided": "Guru pisahkan vokal dan KV, kemudian gabung bunyi; murid meniru.",
+      "practice": "Murid memadankan lima pasangan kad dan membatang perkataan secara individu. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Gunakan pengekodan warna dan model bunyi perlahan.",
+      "closure": "Batang satu perkataan tanpa bantuan gambar.",
+      "activity_book_ref": "BA 7 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3 daripada 5 perkataan V+KV dibatang. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3 daripada 5 perkataan V+KV dibatang",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "009",
+      "unit": 2,
+      "textbook_page": "10",
+      "sp": [
+        "2.1.3"
+      ],
+      "title": "Perkataan KV+KV",
+      "objective": "4 daripada 5 perkataan KV+KV dibatang",
+      "success_criterion": "4 daripada 5 perkataan KV+KV dibatang",
+      "materials": "Kad suku kata, papan padanan, gambar",
+      "induction": "Tunjukkan gambar bapa dan tugu.",
+      "guided": "Guru modelkan gabungan dua KV menggunakan kad berasingan.",
+      "practice": "Murid bina dan batang lima perkataan; guru semak bacaan tanpa model. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Beri kad suku kata awal dan dua pilihan akhir.",
+      "closure": "Baca satu perkataan pilihan kepada rakan.",
+      "activity_book_ref": "BA 8 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 4 daripada 5 perkataan KV+KV dibatang. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "4 daripada 5 perkataan KV+KV dibatang",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "010",
+      "unit": 2,
+      "textbook_page": "11",
+      "sp": [
+        "3.2.1"
+      ],
+      "title": "Surihan perkataan",
+      "objective": "3 daripada 4 perkataan disurih dengan bentuk boleh dikenal",
+      "success_criterion": "3 daripada 4 perkataan disurih dengan bentuk boleh dikenal",
+      "materials": "Lembaran surihan, pensel",
+      "induction": "Jejak satu perkataan menggunakan jari.",
+      "guided": "Guru tunjuk arah tulisan dan jarak; murid berlatih pada kertas besar.",
+      "practice": "Murid surih empat perkataan pada lembaran dan semak dengan contoh. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Kurangkan jumlah pada satu masa dan gunakan garis panduan.",
+      "closure": "Pilih satu perkataan yang paling jelas.",
+      "activity_book_ref": "BA 9–10 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3 daripada 4 perkataan disurih dengan bentuk boleh dikenal. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3 daripada 4 perkataan disurih dengan bentuk boleh dikenal",
+      "sk": [
+        "3.2"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "011",
+      "unit": 2,
+      "textbook_page": "12",
+      "sp": [
+        "4.1.1(ii)"
+      ],
+      "title": "Pekerjaan ahli keluarga",
+      "objective": "Bersoal jawab tentang dua pekerjaan ahli keluarga atau watak rekaan.",
+      "success_criterion": "Bersoal jawab tentang dua pekerjaan ahli keluarga atau watak rekaan.",
+      "materials": "Kad pekerjaan dan watak rekaan",
+      "induction": "Tunjuk gambar anggota pasukan keselamatan.",
+      "guided": "Guru modelkan soal jawab pekerjaan berdasarkan watak rekaan.",
+      "practice": "Murid bersoal jawab dengan pasangan menggunakan dua watak pilihan.",
+      "support": "Beri pilihan gambar pekerjaan; murid tidak wajib berkongsi maklumat keluarga sebenar.",
+      "closure": "Pilih satu pekerjaan dan nyatakan tugasnya dengan sokongan.",
+      "activity_book_ref": null,
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Bersoal jawab tentang dua pekerjaan ahli keluarga atau watak rekaan. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Bersoal jawab tentang dua pekerjaan ahli keluarga atau watak rekaan.",
+      "sk": [
+        "4.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "012",
+      "unit": 3,
+      "textbook_page": "13",
+      "sp": [
+        "1.2.2"
+      ],
+      "title": "Cerita kerjasama",
+      "objective": "Menceritakan semula dua peristiwa yang didengar dengan bantuan kad gambar mengikut urutan.",
+      "success_criterion": "Menceritakan semula dua peristiwa yang didengar dengan bantuan kad gambar mengikut urutan.",
+      "materials": "Kad gambar berurutan, objek simulasi",
+      "induction": "Tunjukkan dua gambar murid bekerjasama.",
+      "guided": "Guru bercerita berpandukan gambar; murid susun kad mengikut cerita.",
+      "practice": "Murid ceritakan semula dua peristiwa dengan media pilihan.",
+      "support": "Gunakan dua kad dahulu dan rangka ayat; terima komunikasi alternatif yang menyampaikan urutan.",
+      "closure": "Nyatakan satu cara membantu rakan.",
+      "activity_book_ref": null,
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Menceritakan semula dua peristiwa yang didengar dengan bantuan kad gambar mengikut urutan. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Menceritakan semula dua peristiwa yang didengar dengan bantuan kad gambar mengikut urutan.",
+      "sk": [
+        "1.2"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "013",
+      "unit": 3,
+      "textbook_page": "14",
+      "sp": [
+        "2.1.4"
+      ],
+      "title": "Perkataan tiga KV",
+      "objective": "3 daripada 5 perkataan KV+KV+KV dibatang",
+      "success_criterion": "3 daripada 5 perkataan KV+KV+KV dibatang",
+      "materials": "Kad tiga suku kata dan gambar",
+      "induction": "Tepuk tiga kali mengikut suku kata.",
+      "guided": "Guru gabungkan tiga kad secara perlahan; murid ikut membatang.",
+      "practice": "Murid menyusun dan membatang lima perkataan, termasuk contoh buku. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Gunakan jalur tiga petak; beri satu kad pada satu masa.",
+      "closure": "Baca satu perkataan tiga suku kata.",
+      "activity_book_ref": "BA 11–12 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3 daripada 5 perkataan KV+KV+KV dibatang. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3 daripada 5 perkataan KV+KV+KV dibatang",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "014",
+      "unit": 3,
+      "textbook_page": "15",
+      "sp": [
+        "3.2.2"
+      ],
+      "title": "Salin perkataan perkhemahan",
+      "objective": "3 daripada 4 perkataan disalin dengan urutan huruf betul",
+      "success_criterion": "3 daripada 4 perkataan disalin dengan urutan huruf betul",
+      "materials": "Kad sudu, kamera, bateri dan kayu, buku tulis",
+      "induction": "Padankan gambar dengan objek perkhemahan.",
+      "guided": "Guru modelkan menyalin satu perkataan sambil menyebut huruf.",
+      "practice": "Murid menyalin empat perkataan daripada kad ke buku tulis. Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Sediakan contoh berhampiran ruang menulis dan garis panduan.",
+      "closure": "Semak satu perkataan dengan kad asal.",
+      "activity_book_ref": "BA 13–14 (rujukan nota guru BT)",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3 daripada 4 perkataan disalin dengan urutan huruf betul. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3 daripada 4 perkataan disalin dengan urutan huruf betul",
+      "sk": [
+        "3.2"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "015",
+      "unit": 3,
+      "textbook_page": "16",
+      "sp": [
+        "2.1.2",
+        "2.1.3",
+        "2.1.4"
+      ],
+      "title": "Uji minda: pengukuhan bacaan",
+      "objective": "4 daripada 6 perkataan pelbagai pola dibatang",
+      "success_criterion": "4 daripada 6 perkataan pelbagai pola dibatang",
+      "materials": "Kad perkataan dan rekod semak",
+      "induction": "Asingkan kad mengikut bilangan suku kata.",
+      "guided": "Guru ulang satu contoh setiap pola; murid bina perkataan menggunakan kad.",
+      "practice": "Murid membatang enam perkataan daripada pengukuhan halaman 16 secara individu; catat skor setiap pola.",
+      "support": "Sediakan kad suku kata sebagai bantuan; rekod jenis bantuan berasingan.",
+      "closure": "Murid pilih satu perkataan yang ingin diulang.",
+      "activity_book_ref": null,
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 4 daripada 6 perkataan pelbagai pola dibatang. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "4 daripada 6 perkataan pelbagai pola dibatang",
+      "sk": [
+        "2.1"
+      ],
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "016",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "1.1.1(ii)"
+      ],
+      "sk": [
+        "1.1"
+      ],
+      "textbook_page": "18",
+      "activity_book_ref": "15 (rujukan nota guru BT)",
+      "title": "Arahan rakan menjaga alam",
+      "objective": "Melaksanakan 2 daripada 3 arahan satu langkah yang diberikan oleh rakan.",
+      "success_criterion": "Melaksanakan 2 daripada 3 arahan satu langkah yang diberikan oleh rakan.",
+      "materials": "Kad tugas, bekas kitar semula",
+      "induction": "Tunjuk sudut kelas bersih dan kotor",
+      "guided": "Pasangan meminta rakan mengutip kad sampah dan meletakkan bekas",
+      "practice": "Rakan memberi tiga arahan menggunakan kotak kosong, penyepit dan bahan kitar semula bersih. Murid melaksanakan arahan yang didengar; guru mencatat respons setiap murid. Gunakan BA 15 sebagai pengukuhan jika sesuai.",
+      "support": "Gambar tindakan dan demonstrasi awal",
+      "closure": "Ulang satu arahan dengan rakan",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Melaksanakan 2 daripada 3 arahan satu langkah yang diberikan oleh rakan. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Melaksanakan 2 daripada 3 arahan satu langkah yang diberikan oleh rakan.",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "017",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "2.1.5"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "textbook_page": "19",
+      "activity_book_ref": "16–17 (rujukan nota guru BT)",
+      "title": "Awal dan akhir perkataan",
+      "objective": "Menentukan suku kata awal dan akhir bagi 4 daripada 5 perkataan.",
+      "success_criterion": "Menentukan suku kata awal dan akhir bagi 4 daripada 5 perkataan.",
+      "materials": "Kad suku kata, gambar benda",
+      "induction": "Buka gambar teko dan padi",
+      "guided": "Asingkan kad awal dan akhir menggunakan dua ruang berwarna",
+      "practice": "Letakkan enam kad pada ruang yang ditanya Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Dua pilihan dengan contoh bunyi",
+      "closure": "Sebut suku kata akhir satu perkataan",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Menentukan suku kata awal dan akhir bagi 4 daripada 5 perkataan. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Menentukan suku kata awal dan akhir bagi 4 daripada 5 perkataan.",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "018",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "3.1.1"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "20",
+      "activity_book_ref": "18 (rujukan nota guru BT)",
+      "title": "Menulis KV",
+      "objective": "4/6 KV ditulis dengan urutan huruf tepat",
+      "success_criterion": "4/6 KV ditulis dengan urutan huruf tepat",
+      "materials": "Kad g, m dan vokal, papan mini",
+      "induction": "Padankan g dan a",
+      "guided": "Guru membentuk KV dengan vokal berlainan; murid menulis pada papan",
+      "practice": "Tulis enam gabungan KV daripada kad bunyi Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Contoh garis besar dan pensel adaptif",
+      "closure": "Pilih KV dan tulis semula",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 4/6 KV ditulis dengan urutan huruf tepat. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "4/6 KV ditulis dengan urutan huruf tepat",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "019",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "3.1.2"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "21",
+      "activity_book_ref": "19 (rujukan nota guru BT)",
+      "title": "Perkataan di kebun",
+      "objective": "3/4 perkataan dua KV ditulis",
+      "success_criterion": "3/4 perkataan dua KV ditulis",
+      "materials": "Kad gambar buah, huruf magnet",
+      "induction": "Kenal gambar ciku dan duku",
+      "guided": "Bina dua suku kata pada dulang huruf",
+      "practice": "Tulis empat perkataan kebun pada buku selepas kad ditutup mengikut kemampuan Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Tunjukkan satu suku kata permulaan",
+      "closure": "Padankan hasil dengan gambar",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3/4 perkataan dua KV ditulis. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3/4 perkataan dua KV ditulis",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "020",
+      "theme": 2,
+      "unit": 4,
+      "sp": [
+        "3.1.3"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "22",
+      "activity_book_ref": "20 (rujukan nota guru BT)",
+      "title": "Nama tumbuhan",
+      "objective": "3/4 perkataan tiga KV ditulis",
+      "success_criterion": "3/4 perkataan tiga KV ditulis",
+      "materials": "Gambar pokok, kad tiga petak",
+      "induction": "Tepuk suku kata kelapa",
+      "guided": "Gabungkan tiga kad bunyi untuk nama tumbuhan",
+      "practice": "Tulis empat nama daripada gambar dan kad bantuan Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Sediakan jalur tiga petak dan bank kata",
+      "closure": "Baca satu nama yang ditulis",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3/4 perkataan tiga KV ditulis. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3/4 perkataan tiga KV ditulis",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "021",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "1.2.2"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "23",
+      "activity_book_ref": "21 (rujukan nota guru BT)",
+      "title": "Cerita serangga",
+      "objective": "2 peristiwa diceritakan mengikut urutan",
+      "success_criterion": "2 peristiwa diceritakan mengikut urutan",
+      "materials": "Puppet serangga, gambar urutan",
+      "induction": "Teka serangga melalui gerakan",
+      "guided": "Guru bercerita berdasarkan gambar; murid menggerakkan puppet",
+      "practice": "Susun tiga gambar dan ceritakan dua kejadian Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Dua gambar dan rangka ujaran",
+      "closure": "Nyatakan watak cerita",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 2 peristiwa diceritakan mengikut urutan. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "2 peristiwa diceritakan mengikut urutan",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "022",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "2.1.4"
+      ],
+      "sk": [
+        "2.1"
+      ],
+      "textbook_page": "24–25",
+      "activity_book_ref": "22 (rujukan nota guru BT)",
+      "title": "Suku kata sayur",
+      "objective": "4/5 nama sayur tiga KV dibatang",
+      "success_criterion": "4/5 nama sayur tiga KV dibatang",
+      "materials": "Kad sayur, blok suku kata",
+      "induction": "Kenal gambar sayur",
+      "guided": "Ketuk tiga blok dan gabungkan bunyinya",
+      "practice": "Murid mengeja serta membatang lima nama sayur tanpa meniru guru Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Petunjuk bunyi satu blok pada satu masa",
+      "closure": "Baca nama sayur pilihan",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 4/5 nama sayur tiga KV dibatang. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "4/5 nama sayur tiga KV dibatang",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "023",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "3.1.3"
+      ],
+      "sk": [
+        "3.1"
+      ],
+      "textbook_page": "26",
+      "activity_book_ref": "23 (rujukan nota guru BT)",
+      "title": "Tulisan tiga suku kata",
+      "objective": "3/4 perkataan lengkap ditulis",
+      "success_criterion": "3/4 perkataan lengkap ditulis",
+      "materials": "Kad gambar, jubin huruf",
+      "induction": "Lihat gambar air terjun dan objek sekitar",
+      "guided": "Guru susun tiga KV; murid isi petak suku kata yang hilang",
+      "practice": "Tulis empat perkataan daripada kad gambar Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Kurangkan pilihan jubin; panduan bunyi",
+      "closure": "Banding tulisan dengan kad semak",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3/4 perkataan lengkap ditulis. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3/4 perkataan lengkap ditulis",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "024",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "3.3.1"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "textbook_page": "27",
+      "activity_book_ref": "24 (rujukan nota guru BT)",
+      "title": "Salin frasa objek",
+      "objective": "3/4 frasa disalin dengan ruang antara perkataan",
+      "success_criterion": "3/4 frasa disalin dengan ruang antara perkataan",
+      "materials": "Objek kayu, kad frasa",
+      "induction": "Padankan gambar meja dan bahan kayu",
+      "guided": "Modelkan ruang menggunakan pembaris jarak",
+      "practice": "Salin empat frasa pada kad label Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Contoh dekat dan garis panduan",
+      "closure": "Letakkan satu label pada gambar",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3/4 frasa disalin dengan ruang antara perkataan. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3/4 frasa disalin dengan ruang antara perkataan",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "025",
+      "theme": 2,
+      "unit": 5,
+      "sp": [
+        "4.1.1(iii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "28",
+      "activity_book_ref": null,
+      "title": "Masa lapang keluarga",
+      "objective": "Bersoal jawab mengenai dua aktiviti keluarga pada waktu lapang.",
+      "success_criterion": "Bersoal jawab mengenai dua aktiviti keluarga pada waktu lapang.",
+      "materials": "Kad aktiviti, watak rekaan",
+      "induction": "Pilih gambar berbasikal atau membaca",
+      "guided": "Modelkan soal jawab dengan watak keluarga",
+      "practice": "Pasangan memilih dua aktiviti dan menjawab soalan",
+      "support": "Pilihan gambar dan alat komunikasi alternatif",
+      "closure": "Nyatakan satu aktiviti yang disukai",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Bersoal jawab mengenai dua aktiviti keluarga pada waktu lapang. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Bersoal jawab mengenai dua aktiviti keluarga pada waktu lapang.",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "026",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "1.2.1"
+      ],
+      "sk": [
+        "1.2"
+      ],
+      "textbook_page": "29",
+      "activity_book_ref": null,
+      "title": "Respons cerita banjir",
+      "objective": "Memberikan 2 daripada 3 respons tepat terhadap cerita yang didengar berdasarkan satu gambar.",
+      "success_criterion": "Memberikan 2 daripada 3 respons tepat terhadap cerita yang didengar berdasarkan satu gambar.",
+      "materials": "Gambar situasi banjir, kad respons",
+      "induction": "Perhatikan gambar hujan lebat",
+      "guided": "Guru ceritakan gambar dan modelkan pilihan tempat selamat",
+      "practice": "Guru bercerita tentang banjir berdasarkan satu gambar. Murid menjawab tiga soalan mudah menggunakan gambar dan kata pilihan; bincangkan tindakan mendapatkan bantuan orang dewasa.",
+      "support": "Ulang ujaran dengan dua pilihan",
+      "closure": "Tunjuk gambar tempat selamat",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Memberikan 2 daripada 3 respons tepat terhadap cerita yang didengar berdasarkan satu gambar. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Memberikan 2 daripada 3 respons tepat terhadap cerita yang didengar berdasarkan satu gambar.",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "027",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "2.2.1"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "30",
+      "activity_book_ref": "25 (rujukan nota guru BT)",
+      "title": "Bacaan anggota badan",
+      "objective": "4/6 perkataan dua KV dibaca",
+      "success_criterion": "4/6 perkataan dua KV dibaca",
+      "materials": "Dadu, gambar anggota, kad kata",
+      "induction": "Tunjuk anggota yang dinamakan",
+      "guided": "Gilir dadu untuk memilih kad dan guru modelkan bacaan pertama",
+      "practice": "Baca enam kad secara individu dengan padanan gambar Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Petunjuk bunyi awal",
+      "closure": "Baca kad kegemaran",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 4/6 perkataan dua KV dibaca. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "4/6 perkataan dua KV dibaca",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "028",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "2.2.2"
+      ],
+      "sk": [
+        "2.2"
+      ],
+      "textbook_page": "31",
+      "activity_book_ref": "26 (rujukan nota guru BT)",
+      "title": "Bacaan tiga KV",
+      "objective": "4/6 perkataan tiga KV dibaca",
+      "success_criterion": "4/6 perkataan tiga KV dibaca",
+      "materials": "Kad gambar perahu, pokok dan objek",
+      "induction": "Tepuk tiga bunyi",
+      "guided": "Padankan kad kata dengan gambar menggunakan jalur tiga suku kata",
+      "practice": "Baca enam perkataan dalam susunan baharu Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Tutup sebahagian perkataan dahulu",
+      "closure": "Baca satu kad tanpa gambar",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 4/6 perkataan tiga KV dibaca. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "4/6 perkataan tiga KV dibaca",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "029",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "3.3.1"
+      ],
+      "sk": [
+        "3.3"
+      ],
+      "textbook_page": "32",
+      "activity_book_ref": "27–28 (rujukan nota guru BT)",
+      "title": "Salin frasa makanan",
+      "objective": "3/4 frasa dua atau tiga KV disalin",
+      "success_criterion": "3/4 frasa dua atau tiga KV disalin",
+      "materials": "Kad menu, buku tulis",
+      "induction": "Pilih gambar minuman",
+      "guided": "Guru modelkan susunan perkataan pada menu",
+      "practice": "Salin empat frasa untuk menu kelas Guru menawarkan latihan pengukuhan pada halaman BA yang dirujuk selepas latihan utama, mengikut kesediaan murid.",
+      "support": "Gunakan kad contoh di sisi buku",
+      "closure": "Semak ruang antara kata",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 3/4 frasa dua atau tiga KV disalin. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "3/4 frasa dua atau tiga KV disalin",
+      "source_note": null,
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "030",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "4.1.1(iii)"
+      ],
+      "sk": [
+        "4.1"
+      ],
+      "textbook_page": "33",
+      "activity_book_ref": null,
+      "title": "Aktiviti datuk dan nenek",
+      "objective": "Bersoal jawab tentang dua aktiviti waktu lapang ahli keluarga atau watak rekaan.",
+      "success_criterion": "Bersoal jawab tentang dua aktiviti waktu lapang ahli keluarga atau watak rekaan.",
+      "materials": "Gambar anyaman dan hobi, kad dialog",
+      "induction": "Perhatikan gambar tikar",
+      "guided": "Guru modelkan soal jawab hobi watak",
+      "practice": "Murid memilih kad aktiviti masa lapang dua watak rekaan, menyoal rakan tentang aktiviti dan menjawab soalan rakan.",
+      "support": "Terima respons melalui kad komunikasi",
+      "closure": "Pilih satu hobi watak",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: Bersoal jawab tentang dua aktiviti waktu lapang ahli keluarga atau watak rekaan. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "Bersoal jawab tentang dua aktiviti waktu lapang ahli keluarga atau watak rekaan.",
+      "source_note": "BT hlm. 33 mencetak 4.1.1(ii) tetapi nota guru dan fokus aktiviti ialah masa lapang; DSKP hlm. 33 meletakkannya pada 4.1.1(iii).",
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    },
+    {
+      "pdp": "031",
+      "theme": 2,
+      "unit": 6,
+      "sp": [
+        "3.2.2"
+      ],
+      "sk": [
+        "3.2"
+      ],
+      "textbook_page": "34",
+      "activity_book_ref": null,
+      "title": "Pengukuhan salinan ayat",
+      "objective": "2/3 ayat disalin dengan perkataan lengkap",
+      "success_criterion": "2/3 ayat disalin dengan perkataan lengkap",
+      "materials": "Kad ayat, buku tulis",
+      "induction": "Susun gambar petani dan alatan",
+      "guided": "Guru tunjuk cara semak perkataan dari kiri ke kanan",
+      "practice": "Salin tiga ayat pengukuhan dengan semakan sendiri",
+      "support": "Pecahkan ayat kepada jalur perkataan",
+      "closure": "Tanda satu ayat lengkap",
+      "assessment": "Rekod pencapaian berdasarkan kriteria: 2/3 ayat disalin dengan perkataan lengkap. Catat tahap bantuan yang digunakan.",
+      "reflection_criterion": "2/3 ayat disalin dengan perkataan lengkap",
+      "source_note": "Tiada rujukan BA dicetak atau aktiviti pengukuhan; sahkan sebelum terbit.",
+      "standard_audit": "Padanan nota guru buku teks hlm. 2–34 dengan teks DSKP komponen BM hlm. 25–33; imej PDF tidak dapat dimuatkan. Aktiviti asli disesuaikan dengan keupayaan murid.",
+      "status": "READY"
+    }
+  ],
+  "content_standards": {
+    "1.1": "Arahan lisan dalam situasi berbeza.",
+    "1.2": "Pemahaman cerita dan penceritaan semula.",
+    "2.1": "Gabungan dan ejaan suku kata.",
+    "2.2": "Bacaan mekanis.",
+    "3.1": "Tulisan suku kata dan perkataan.",
+    "3.2": "Latihan tulisan mekanis.",
+    "3.3": "Penghasilan frasa bertulis.",
+    "3.4": "Penghasilan ayat tunggal.",
+    "4.1": "Komunikasi tentang keluarga."
+  },
+  "learning_standards": {
+    "1.1.1(i)": "Respons kepada arahan guru.",
+    "1.1.1(ii)": "Respons kepada arahan rakan.",
+    "1.1.2": "Dengar dan ucap arahan mengikut situasi.",
+    "1.2.1": "Respons kepada cerita lisan dengan satu gambar.",
+    "1.2.2": "Cerita semula bahan yang didengar berbantukan media.",
+    "2.1.1": "Eja dan bunyikan KV.",
+    "2.1.2": "Eja serta gabungkan V+KV.",
+    "2.1.3": "Eja serta gabungkan KV+KV.",
+    "2.1.4": "Eja serta gabungkan KV+KV+KV.",
+    "2.1.5": "Kenal pasti suku kata permulaan dan penghujung.",
+    "2.2.1": "Baca kata dua suku kata terbuka.",
+    "2.2.2": "Baca kata tiga suku kata terbuka.",
+    "2.2.3": "Baca ayat tunggal bersuku kata terbuka.",
+    "2.2.4": "Baca ayat bersuku kata terbuka dengan penghubung dan.",
+    "3.1.1": "Tulis KV.",
+    "3.1.2": "Tulis kata dua suku kata terbuka.",
+    "3.1.3": "Tulis kata tiga suku kata terbuka.",
+    "3.2.1": "Jejak tulisan KV, kata dan ayat.",
+    "3.2.2": "Salin KV, kata dan ayat.",
+    "3.3.1": "Salin frasa berkataan dua atau tiga suku kata.",
+    "3.3.2": "Tulis frasa berkataan dua atau tiga suku kata.",
+    "3.4.1": "Salin ayat tunggal berkataan dua atau tiga suku kata.",
+    "3.4.2": "Tulis ayat tunggal berkataan dua atau tiga suku kata.",
+    "4.1.1(i)": "Soal jawab nama ahli keluarga.",
+    "4.1.1(ii)": "Soal jawab pekerjaan ahli keluarga.",
+    "4.1.1(iii)": "Soal jawab kegiatan masa lapang ahli keluarga."
+  },
+  "standard_text_kind": "Parafrasa standard; bukan petikan verbatim.",
+  "release_scope": "RPH PdP 001–031, BT hlm. 2–34; BA dirujuk berdasarkan nota guru BT, bukan salinan BA yang diperiksa."
+}
