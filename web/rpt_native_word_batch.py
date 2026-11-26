@@ -187,10 +187,26 @@ def dlp_document(subject,year,account,config,*,root):
     revised=read_full_standards_dlp(subject,year,original,root=root)
     if revised is not None:
         from tools.build_rpt_dlp_full_standards_20261126 import build_word as build_revised
-        blob,_,_,_,_=build_revised(subject,year,root=root)
+        blob,cover,_,_,_=build_revised(subject,year,root=root)
         pdf_bytes,_=revised
         lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
-        result=personalized_word(blob,pdf_bytes,lock,key,account,config)
+        # Reuse the exact released PDF cover pixels, including PDF font subset
+        # reserialization. Verify the freshly generated cover against the
+        # published first page before anchoring the release cover in Word.
+        import fitz
+        from io import BytesIO
+        from docx import Document
+        from docx.oxml.ns import qn
+        from web.rpt_native_word_cover import cover_png
+        with fitz.open(stream=cover,filetype="pdf") as a,fitz.open(stream=pdf_bytes,filetype="pdf") as b:
+            if a[0].get_text()!=b[0].get_text():raise ValueError("Revised cover text differs")
+            if a[0].get_pixmap(matrix=fitz.Matrix(2,2)).samples!=b[0].get_pixmap(matrix=fitz.Matrix(2,2)).samples:
+                raise ValueError("Revised cover pixels differ")
+        doc=Document(BytesIO(blob))
+        rid=doc.paragraphs[0]._p.xpath(".//a:blip")[0].get(qn("r:embed"))
+        doc.part.related_parts[rid]._blob=cover_png(pdf_bytes,lock,key)
+        out=BytesIO();doc.save(out)
+        result=personalized_word(out.getvalue(),pdf_bytes,lock,key,account,config)
         return result,hashlib.sha256(result).hexdigest()
     blob,raw,_=build_word(subject,year,root=root)
     if hashlib.sha256(raw).hexdigest()!=dlp_pins[key]:

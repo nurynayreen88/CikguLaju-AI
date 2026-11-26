@@ -39,6 +39,8 @@ class FullDLPTest(unittest.TestCase):
                     res=client.get(url+".pdf");self.assertEqual(res.data,raw)
                     self.assertEqual(res.headers["X-RPT-Source-SHA256"],digest)
                     self.assertEqual(res.headers["X-RPT-Personalization-Allowed"],"1")
+                    from web.rpt_native_word_batch import dlp_document
+                    dlp_document(subject,year,{"telegram_user_id":9,"rakan_pembangun":True},{"account_backend":"supabase"},root=ROOT)
                     word=client.get(url+".docx");self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else key)
                     doc=Document(io.BytesIO(word.data));self.assertEqual([c.text for c in doc.tables[0].rows[0].cells],list(HEADS))
                     for row in doc.tables[0].rows[1:]:
