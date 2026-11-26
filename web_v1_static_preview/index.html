@@ -730,12 +730,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <a href="/admin/semakan/matematik-sjkt-tahun-2">Semak RPH Matematik SJKT Tahun 2</a>
 <section id="affiliate-admin" class="teacher-timetable-section" aria-labelledby="affiliate-admin-heading" hidden>
  <h3 id="affiliate-admin-heading">Pengurusan Affiliate</h3>
- <h4>Senarai Affiliate dan Baki Mata</h4>
+ <h4>Affiliate dengan Pendaftaran Rujukan</h4>
+ <p>Hanya akaun yang telah membawa sekurang-kurangnya satu pendaftaran melalui pautan affiliate disenaraikan.</p>
  <label for="affiliate-members-filter">Status jemputan</label>
  <select id="affiliate-members-filter">
-  <option value="all">Semua affiliate</option>
-  <option value="registered">Ada jemputan berdaftar</option>
-  <option value="none">Belum ada jemputan berdaftar</option>
+  <option value="registered" selected>Semua yang ada pendaftaran rujukan</option>
   <option value="unpaid">Ada jemputan tanpa bayaran disahkan</option>
   <option value="paid">Ada jemputan dengan bayaran disahkan</option>
  </select>
@@ -750,7 +749,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <h4>Tuntutan Ganjaran</h4>
   <p id="affiliate-admin-member-filter" hidden>
    <span id="affiliate-admin-selected-member"></span>
-   <button id="affiliate-admin-clear-member" type="button">Lihat Semua Affiliate</button>
+   <button id="affiliate-admin-clear-member" type="button">Lihat Semua Tuntutan</button>
   </p>
   <label for="affiliate-admin-filter">Status tuntutan</label>
   <select id="affiliate-admin-filter">
@@ -3160,7 +3159,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/rph-today.js?v=muat-turun-audio-english-20261120"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=resit-web-utama-20261123"></script>
-<script src="/assets/web-referral.js?v=pusat-admin-affiliate-open-20261123"></script>
+<script src="/assets/web-referral.js?v=affiliate-berdaftar-20261126"></script>
 <script src="/assets/admin-usage.js?v=profil-pengguna-rakan-20261123"></script>
 <script src="/assets/web-feedback.js?v=pusat-admin-alert-20261123"></script>
 <script src="/assets/web-admin-chat.js?v=pusat-admin-read-20261123"></script>
