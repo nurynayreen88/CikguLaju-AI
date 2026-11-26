@@ -1,0 +1,663 @@
+{
+  "status": "authored_topic_specific_review_candidate",
+  "sets": {
+    "science_dlp:2": {
+      "2": {
+        "O": [
+          "Show a leaf and a smooth stone. Ask which observations can be made without touching.",
+          "Name a visible feature of each object."
+        ],
+        "C": [
+          "Ask a pupil to read one observation and name the sense used.",
+          "State one recorded observation and the corresponding sense."
+        ]
+      },
+      "4": {
+        "O": [
+          "Show a round red card and a square red card. Ask for two possible sorting rules.",
+          "Suggest colour or shape as a sorting rule."
+        ],
+        "C": [
+          "Show a new card and ask where it belongs under the chosen rule.",
+          "Place it in the appropriate group and state the rule."
+        ]
+      },
+      "12": {
+        "C": [
+          "Ask which measurement on the group's chart is about height and which is about hand length.",
+          "Point to one value of each kind and state that growth can differ."
+        ]
+      },
+      "13": {
+        "O": [
+          "Display the two recorded heights and hand lengths from the preceding activity.",
+          "Identify which quantities are being compared."
+        ]
+      },
+      "16": {
+        "C": [
+          "Show a chick and a kitten card and ask how each starts life.",
+          "Identify which comes from an egg and which is born alive."
+        ]
+      },
+      "17": {
+        "O": [
+          "Show two new cards, a duck and a cat, before returning the classification sheets.",
+          "Predict their groups and explain the evidence needed."
+        ]
+      },
+      "20": {
+        "C": [
+          "Show an adult frog and a tadpole and ask about a visible difference.",
+          "Name one difference in body form."
+        ]
+      },
+      "21": {
+        "O": [
+          "Display an adult cow with its calf and an adult frog with its tadpole.",
+          "Point to one similar or different feature before the recorded comparison."
+        ]
+      },
+      "24": {
+        "C": [
+          "Point to today's seedling record and ask which number represents its height.",
+          "Read one height with its unit and one leaf count."
+        ]
+      },
+      "25": {
+        "O": [
+          "Return the dated seedling chart and ask which observation was made later.",
+          "Identify the date and one value from the later record."
+        ],
+        "C": [
+          "Show a picture of a flowering plant next to a seedling.",
+          "Name the later stage and point to the flower as evidence."
+        ]
+      },
+      "26": {
+        "O": [
+          "Show the seed and germination pictures in reversed order.",
+          "Place the two pictures in order and point to the emerging root."
+        ]
+      },
+      "32": {
+        "C": [
+          "Ask pupils to point to the material that produced the most distinct outline on their screen.",
+          "Name the material and one recorded shadow feature."
+        ]
+      },
+      "33": {
+        "O": [
+          "Display the three shadow-test results and ask pupils to choose the clearest.",
+          "Select the result to be explained in the next task."
+        ],
+        "C": [
+          "Invite a partner to identify one newly revised shadow outline.",
+          "State which visible feature helped the partner identify it."
+        ]
+      },
+      "34": {
+        "O": [
+          "Show a revised cut-out beside its first version.",
+          "Point to one changed edge or angle before testing the clues."
+        ]
+      },
+      "38": {
+        "C": [
+          "With the low-voltage circuit switched off, ask which part was corrected in the demonstration.",
+          "Point to the corrected connection and state whether the bulb lit afterward."
+        ]
+      },
+      "39": {
+        "O": [
+          "Show two disconnected circuit diagrams and ask where a break might occur.",
+          "Point to one break before completing the fault explanation."
+        ],
+        "C": [
+          "Ask pupils to select one tested object from their table and read its result.",
+          "Name the object and say whether the bulb lit."
+        ]
+      },
+      "40": {
+        "O": [
+          "Show the two rows recording a repeated object test.",
+          "Find the repeated sample and check whether the recorded results agree."
+        ]
+      },
+      "42": {
+        "C": [
+          "Show an open-switch and closed-switch drawing.",
+          "Point to the drawing that produced sound and trace its complete path."
+        ]
+      },
+      "43": {
+        "O": [
+          "Display a low-voltage buzzer circuit diagram with a visible break.",
+          "Predict sound or silence and give one reason."
+        ]
+      },
+      "46": {
+        "C": [
+          "Display both recorded dissolving times.",
+          "Identify the shorter time and its corresponding cup."
+        ]
+      },
+      "47": {
+        "O": [
+          "Return the two temperature-test records and ask which cup dissolved sugar sooner.",
+          "Point to the recorded time supporting the answer."
+        ],
+        "C": [
+          "Ask which two observations must be compared at the same time point.",
+          "Point to the corresponding stirred and unstirred entries."
+        ]
+      },
+      "48": {
+        "O": [
+          "Show the stirring experiment's paired observations at one time point.",
+          "Identify where more grains remained visible before drawing a conclusion."
+        ]
+      },
+      "66": {
+        "O": [
+          "Show a completed model and one illustrated assembly step.",
+          "Locate the piece shown in the instruction before assembling."
+        ],
+        "C": [
+          "Ask pupils to compare one connection on their finished model with the manual.",
+          "Point to a matching connection or explain a correction."
+        ]
+      }
+    },
+    "science_dlp:3": {
+      "6": {
+        "O": [
+          "Display two leaves and ask which visible difference could be recorded.",
+          "Suggest a feature such as shape or leaf edge."
+        ],
+        "C": [
+          "Ask for one comparison that refers to the recorded table.",
+          "Read a labelled observation and state a supported difference."
+        ]
+      },
+      "8": {
+        "O": [
+          "Show a hand lens and forceps beside a clean specimen.",
+          "Identify the tool for viewing detail and the tool for moving the specimen."
+        ],
+        "C": [
+          "Ask how the specimen can be returned without crushing it.",
+          "Demonstrate or explain a safe handling action."
+        ]
+      },
+      "14": {
+        "C": [
+          "Show the before-and-after simulated residue marks on the tooth model.",
+          "Identify one area that became cleaner after brushing."
+        ]
+      },
+      "15": {
+        "O": [
+          "Return the annotated tooth outline and ask which surface was cleaned.",
+          "Point to the observed change before the individual explanation."
+        ]
+      },
+      "18": {
+        "C": [
+          "Ask pupils to compare two menu cards against the food-class chart.",
+          "Identify one food class missing or underrepresented in one menu."
+        ]
+      },
+      "19": {
+        "O": [
+          "Display the less balanced menu and its suggested change.",
+          "Name the food class addressed by that change."
+        ],
+        "C": [
+          "Show an intact food illustration beside its broken-down representation.",
+          "Describe one change caused by digestion."
+        ]
+      },
+      "20": {
+        "O": [
+          "Show a food particle diagram before and after breakdown.",
+          "Identify which representation shows smaller particles."
+        ]
+      },
+      "22": {
+        "O": [
+          "Show a mouth card and a stomach card from the digestive pathway.",
+          "Predict which is encountered first by food."
+        ],
+        "C": [
+          "Ask which organ follows the stomach in the labelled sequence.",
+          "Point to the small intestine and trace the direction of movement."
+        ]
+      },
+      "26": {
+        "C": [
+          "Show one animal's food log containing plant and animal foods.",
+          "Name the evidence needed before assigning a diet group."
+        ]
+      },
+      "27": {
+        "O": [
+          "Return an animal diet log with two highlighted foods.",
+          "Identify whether each food is plant or animal material."
+        ],
+        "C": [
+          "Show a broad grinding tooth and a pointed tearing tooth.",
+          "Match one visible shape to a feeding function."
+        ]
+      },
+      "28": {
+        "O": [
+          "Display a tooth comparison grid with one cell missing.",
+          "Choose a visible tooth feature to complete it."
+        ]
+      },
+      "30": {
+        "C": [
+          "Show a plant example and the part used for reproduction.",
+          "Name the method and point to the relevant part."
+        ]
+      },
+      "31": {
+        "O": [
+          "Display a leaf cutting and a seed illustration.",
+          "Identify the different plant parts used."
+        ],
+        "C": [
+          "Ask what would happen if old plants died and no new plants grew.",
+          "State one effect on the survival of the plant population."
+        ]
+      },
+      "32": {
+        "O": [
+          "Show a plant-population sequence with the new plant missing.",
+          "Identify the missing stage and its role."
+        ]
+      },
+      "34": {
+        "C": [
+          "Ask which log entry was an actual class observation rather than a teacher example.",
+          "Point to a dated class entry and read the observation."
+        ]
+      },
+      "35": {
+        "O": [
+          "Return the two plant-project logs and show their dates.",
+          "Select one dated observation for each reproduction method."
+        ]
+      },
+      "38": {
+        "C": [
+          "Ask pupils to point to a partial square at the leaf boundary.",
+          "State the rule used to estimate that partial square."
+        ]
+      },
+      "39": {
+        "O": [
+          "Show a leaf outline on a grid with full and partial squares marked.",
+          "Identify which squares count directly and which need an estimate."
+        ],
+        "C": [
+          "Show a filled layer of cubes inside the box.",
+          "State the cubes in one layer and how many layers were counted."
+        ]
+      },
+      "40": {
+        "O": [
+          "Display a box model containing two equal layers of cubes.",
+          "Predict the total by multiplying the cubes in one layer by two."
+        ]
+      },
+      "42": {
+        "C": [
+          "Display the initial and final readings from the measuring cylinder.",
+          "Identify the two readings to subtract."
+        ]
+      },
+      "43": {
+        "O": [
+          "Show the marked 25 mL and 38 mL levels on a cylinder diagram.",
+          "Identify the starting and ending volumes before calculating displacement."
+        ],
+        "C": [
+          "Ask which unit belongs to area and which belongs to volume.",
+          "Match cm² to area and cm³ to volume."
+        ]
+      },
+      "44": {
+        "O": [
+          "Display a leaf grid and a measuring cylinder.",
+          "Choose the appropriate tool for one measurement and explain the choice."
+        ]
+      },
+      "46": {
+        "C": [
+          "Show the freshwater test record for a floating and a sinking object.",
+          "Use one observation to compare the object's density with water."
+        ]
+      },
+      "47": {
+        "O": [
+          "Return the freshwater results before introducing salt water.",
+          "Identify one floating and one sinking result."
+        ],
+        "C": [
+          "Ask which factor changed when the same piece was moved into the second cup.",
+          "Identify the dissolved salt as the change in the liquid."
+        ]
+      },
+      "48": {
+        "O": [
+          "Show the two records for the same object in fresh and salt water.",
+          "State the observed difference in floating behaviour."
+        ]
+      },
+      "50": {
+        "C": [
+          "Show the recorded red and blue litmus results for one sample.",
+          "Use both colour observations to name its classification."
+        ]
+      },
+      "51": {
+        "O": [
+          "Return the three-row indicator results table.",
+          "Select the paired strip outcomes for one sample."
+        ],
+        "C": [
+          "Ask whether an unlabelled substance should be tasted to classify it.",
+          "Reject tasting and identify documented indicator evidence instead."
+        ]
+      },
+      "52": {
+        "O": [
+          "Show a sample description beside a recorded colour test.",
+          "Distinguish a description from an observation made in the test."
+        ]
+      },
+      "54": {
+        "C": [
+          "Ask pupils to underline the two colour outcomes that justify their chosen claim.",
+          "Point to those recorded results and state the classification."
+        ]
+      },
+      "55": {
+        "O": [
+          "Return an indicator table with one classification blank.",
+          "Use the recorded colours to predict the missing classification."
+        ]
+      },
+      "58": {
+        "O": [
+          "Show Venus and Earth on a planet chart.",
+          "Identify which planet is closer to the Sun before comparing temperatures."
+        ],
+        "C": [
+          "Ask why temperature is not determined by distance alone.",
+          "Mention Venus's thick atmosphere and its heat-trapping effect."
+        ]
+      },
+      "60": {
+        "O": [
+          "Show a ball turning in place and then moving around a marker.",
+          "Name the two different movements."
+        ],
+        "C": [
+          "Ask pupils to draw an arrow for one orbit and one spin.",
+          "Label revolution and rotation correctly."
+        ]
+      },
+      "62": {
+        "O": [
+          "Show two orbital-period values from the table.",
+          "Identify which planet takes longer to complete an orbit."
+        ],
+        "C": [
+          "Ask for one pair of planets that supports the distance-period relationship.",
+          "Cite the two table entries and describe the pattern."
+        ]
+      },
+      "66": {
+        "O": [
+          "Show a flagpole rope passing over a fixed pulley.",
+          "Predict the flag's movement if the free end is pulled downward."
+        ],
+        "C": [
+          "Ask pupils to point to the direction of effort and load movement.",
+          "Draw arrows showing opposite directions in the fixed pulley."
+        ]
+      },
+      "68": {
+        "O": [
+          "Show a well bucket and a flagpole with pulley pictures.",
+          "Identify the shared simple machine."
+        ],
+        "C": [
+          "Ask which pulley application would help raise a flag.",
+          "Choose the flagpole and explain the change in direction of pull."
+        ]
+      }
+    },
+    "science_dlp:6": {
+      "4": {
+        "C": [
+          "Point to the steepest section of the second position-time graph.",
+          "Name the interval and the distance change shown."
+        ]
+      },
+      "5": {
+        "O": [
+          "Show the graph axes used in the previous activity.",
+          "Identify the time and distance axes before plotting the new readings."
+        ]
+      },
+      "9": {
+        "C": [
+          "Show an unlabelled reproductive-system diagram and indicate the uterus.",
+          "State its role in supporting development during pregnancy."
+        ]
+      },
+      "10": {
+        "O": [
+          "Display two unlabelled structures from the preceding diagram.",
+          "Match the ovary and uterus to their distinct biological roles."
+        ]
+      },
+      "12": {
+        "C": [
+          "Point to the brain, spinal cord and a peripheral nerve on the diagram.",
+          "Identify which two structures belong to the central nervous system."
+        ]
+      },
+      "13": {
+        "O": [
+          "Display a nervous-system diagram with one missing central label.",
+          "Identify the spinal cord or brain before completing the labelled pathway."
+        ]
+      },
+      "15": {
+        "C": [
+          "Show one corrected sequence arrow from the review task.",
+          "Explain the biological relationship represented by the arrow."
+        ]
+      },
+      "16": {
+        "O": [
+          "Display the reproductive and sensory diagrams from the preceding review.",
+          "Identify the location of fertilisation or the correct direction of the sensory signal."
+        ]
+      },
+      "18": {
+        "C": [
+          "Ask which factor differs between the two labelled samples and when the first reading was recorded.",
+          "Name the changed factor and identify the initial observation."
+        ]
+      },
+      "19": {
+        "O": [
+          "Display the initial matched-area readings from the supplied or safely supervised investigation.",
+          "Identify which recorded values will be compared with the follow-up readings."
+        ]
+      },
+      "22": {
+        "C": [
+          "Present a scenario with two animals competing for a scarce resource.",
+          "Name the resource and explain why competition can occur."
+        ]
+      },
+      "23": {
+        "O": [
+          "Show a hawk and rat example alongside two animals seeking one resource.",
+          "Distinguish predation from competition before classifying the scenarios."
+        ]
+      },
+      "25": {
+        "C": [
+          "Ask how one plant receives support while another draws resources from its host.",
+          "Identify a difference using the comparison chart."
+        ]
+      },
+      "26": {
+        "O": [
+          "Display an orchid growing on a tree and dodder attached to a host plant.",
+          "Identify the two interactions to be compared."
+        ]
+      },
+      "30": {
+        "C": [
+          "Ask pupils to identify one piece of evidence that changed their protection proposal.",
+          "State the evidence and the revised action."
+        ]
+      },
+      "31": {
+        "O": [
+          "Show the nesting-beach scenario and its proposed access restriction.",
+          "Predict one effect to be monitored."
+        ]
+      },
+      "33": {
+        "C": [
+          "Display the repeated friction readings for two surfaces.",
+          "Identify the surface with greater measured resistance."
+        ]
+      },
+      "34": {
+        "O": [
+          "Return the friction-results table with a notably high reading marked.",
+          "Identify a possible reason to repeat that trial."
+        ]
+      },
+      "37": {
+        "C": [
+          "Show the sealed-syringe and held-card drawings.",
+          "Point to one arrow representing pressure and explain the observation supporting it."
+        ]
+      },
+      "38": {
+        "O": [
+          "Show the card demonstration before and after air enters.",
+          "Predict what happens to the card when the seal is broken."
+        ]
+      },
+      "40": {
+        "C": [
+          "Show two speeds written with different units.",
+          "Explain why comparing the numerical values alone may be misleading."
+        ]
+      },
+      "41": {
+        "O": [
+          "Display a toy car and a highway vehicle example.",
+          "Choose different convenient units for measuring their speeds."
+        ]
+      },
+      "44": {
+        "C": [
+          "Ask whether a food with no visible spoilage can be assumed safe.",
+          "Explain why appearance alone is insufficient evidence."
+        ]
+      },
+      "45": {
+        "O": [
+          "Display two recorded food-spoilage images without exposing pupils to spoiled food.",
+          "Identify one visible change before discussing microorganisms."
+        ]
+      },
+      "47": {
+        "C": [
+          "Show a product preserved by drying and another by drying plus refrigeration.",
+          "Identify the single and combined methods."
+        ]
+      },
+      "48": {
+        "O": [
+          "Show a seasonal crop and two preservation-method cards.",
+          "Identify two alternatives for extending the crop's availability."
+        ]
+      },
+      "50": {
+        "C": [
+          "Show a clean paper card and a plastic lid picture.",
+          "Distinguish a potentially biodegradable material from a non-biodegradable example."
+        ]
+      },
+      "51": {
+        "O": [
+          "Display a banana peel and a glass jar on classification cards.",
+          "Predict which can be broken down biologically under suitable conditions."
+        ]
+      },
+      "54": {
+        "C": [
+          "Using the lamp-and-ball model only, point to the shadow on the globe.",
+          "Identify why only some locations experience a solar eclipse."
+        ]
+      },
+      "55": {
+        "O": [
+          "Show a safely illustrated Sun–Moon–Earth alignment and remind pupils never to look directly at the Sun.",
+          "Identify the object blocking sunlight in a solar eclipse."
+        ]
+      },
+      "58": {
+        "C": [
+          "Display two classified galaxy images.",
+          "Name one visible feature distinguishing the shapes."
+        ]
+      },
+      "59": {
+        "O": [
+          "Show the Milky Way schematic and a different galaxy image.",
+          "Identify the barred-spiral features of the Milky Way representation."
+        ]
+      },
+      "63": {
+        "C": [
+          "Point to the repeated beam-test measurements.",
+          "Name one controlled factor and one improvement for a fair comparison."
+        ]
+      },
+      "64": {
+        "O": [
+          "Display the flat and folded beam test results.",
+          "Identify the two shape results before interpreting the comparison."
+        ]
+      },
+      "67": {
+        "C": [
+          "Show one group's three-stage technology timeline.",
+          "Identify one change in capability between two stages."
+        ]
+      },
+      "68": {
+        "O": [
+          "Display an earlier and a later tool from the timeline.",
+          "Identify one human limitation that the newer tool helps address."
+        ]
+      }
+    }
+  }
+}
