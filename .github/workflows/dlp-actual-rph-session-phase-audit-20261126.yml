@@ -7,6 +7,8 @@ on:
       - 'tools/build_dlp_distinct_session_activity_drafts_20261126.py'
       - 'tools/dlp_session_targeted_reinforcement_20261126.json'
       - 'tools/prepare_dlp_paired_session_content_20261126.py'
+      - 'tools/dlp_science_continuation_open_exit_20261126.json'
+      - 'tools/build_dlp_seven_session_previews_20261126.py'
       - '.github/workflows/dlp-actual-rph-session-phase-audit-20261126.yml'
 permissions:
   contents: read
@@ -45,4 +47,39 @@ jobs:
             actual-rph-phase-crosswalk.json
             distinct-session-activity-drafts.json
             paired-session-content.json
+          if-no-files-found: error
+  paired-native-rpt:
+    needs: phase-crosswalk
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {subject: mathematics_dlp, year: 3}
+          - {subject: mathematics_dlp, year: 4}
+          - {subject: mathematics_dlp, year: 5}
+          - {subject: mathematics_dlp, year: 6}
+          - {subject: science_dlp, year: 2}
+          - {subject: science_dlp, year: 3}
+          - {subject: science_dlp, year: 6}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: dlp-actual-rph-phase-crosswalk
+          path: session-data
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'requests>=2'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libreoffice-writer fonts-liberation2
+      - run: python -m tools.build_dlp_seven_session_previews_20261126 --subject ${{ matrix.subject }} --year ${{ matrix.year }} --paired session-data/paired-session-content.json --out previews
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paired-native-rpt-${{ matrix.subject }}-y${{ matrix.year }}
+          path: previews/
           if-no-files-found: error
