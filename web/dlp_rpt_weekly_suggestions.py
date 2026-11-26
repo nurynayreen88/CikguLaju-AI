@@ -62,6 +62,9 @@ def published_weeks(code,year):
 def suggestion(code,year,target,group_a):
     if (code,year) not in COUNTS:return None
     try:
+        from web import dlp_paired_science_rpt as paired
+        if paired.enabled(CODES[code],year):
+            return paired.suggestion(ROOT,year,target,group_a)
         weeks=published_weeks(code,year)
         for n,row in weeks.items():
             start,end=row["dates"][0 if group_a else 1]
