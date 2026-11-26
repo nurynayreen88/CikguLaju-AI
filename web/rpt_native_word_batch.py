@@ -221,3 +221,36 @@ def dlp_document(subject,year,account,config,*,root):
     lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
     result=personalized_word(blob,raw,lock,key,account,config)
     return result,hashlib.sha256(result).hexdigest()
+
+
+def rtl_enabled():
+    return enabled() and os.environ.get("CIKGULAJU_RPT_NATIVE_RTL_WORD")=="1"
+
+def eligible_rtl(subject,year,source,*,root):
+    if not rtl_enabled() or source is None:
+        return False
+    from web.rpt_compact_pdf import RTL_PINS
+    expected=RTL_PINS.get(f"{subject}:{year}")
+    if not expected:
+        return False
+    path=Path(root)/"web_2027_pdfs"/subject/f"tahun_{year}.pdf"
+    try:
+        return Path(source)==path and not path.is_symlink() and hashlib.sha256(path.read_bytes()).hexdigest()==expected
+    except OSError:
+        return False
+
+def rtl_document(subject,year,source,account,config,*,root):
+    from web.english_rpt_2027_http import _has_paid_access
+    if not _has_paid_access(account):
+        raise PermissionError("Paid RPT Word only")
+    if not eligible_rtl(subject,year,source,root=root):
+        raise ValueError("RTL Word release not enabled or source changed")
+    from tools.build_kssr_rpt_rtl_native_20261126 import build_word
+    from web.rpt_native_word_cover import personalized_word
+    base=Path(root)/"web_2027_pdfs"
+    blob,raw,actual,*_=build_word(subject,year,root=base)
+    if actual!=Path(source) or raw!=actual.read_bytes():
+        raise ValueError("RTL source changed")
+    lock=json.loads((base/"original_cover_layout_verified.json").read_text("utf8"))
+    result=personalized_word(blob,raw,lock,f"{subject}:{year}",account,config)
+    return result,hashlib.sha256(result).hexdigest()
