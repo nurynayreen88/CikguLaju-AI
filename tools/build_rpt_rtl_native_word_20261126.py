@@ -16,6 +16,7 @@ from docx.shared import Cm, Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
+from docx.oxml import OxmlElement
 from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from scripts.build_web_rpt_weekly_suggestions import read_weeks,SUBJECTS
 from scripts.reschedule_web_rpt_teaching_weeks import pdf_rows,TOP
@@ -182,9 +183,14 @@ def extract(path,subject):
 def rtl_cell(cell,value,*,bold=False,center=False,shade=None):
     text_cell(cell,value.splitlines() or [""],bold=bold,center=center,shade=shade)
     for p in cell.paragraphs:
-        if not RTL.search(p.text):continue
+        if not RTL.search(p.text):
+            if not center:p.alignment=WD_ALIGN_PARAGRAPH.RIGHT
+            continue
         if not center:p.alignment=WD_ALIGN_PARAGRAPH.RIGHT
-        mark(p._p.get_or_add_pPr(),"w:bidi",{"w:val":"1"})
+        # OOXML pPr order matters: bidi must precede spacing and jc.
+        ppr=p._p.get_or_add_pPr()
+        bidi=OxmlElement("w:bidi");bidi.set(qn("w:val"),"1")
+        ppr.insert_element_before(bidi,"w:adjustRightInd","w:snapToGrid","w:spacing","w:ind","w:contextualSpacing","w:mirrorIndents","w:suppressOverlap","w:jc","w:textDirection","w:textAlignment","w:rPr","w:sectPr","w:pPrChange")
         raw=p.text
         # Rebuild the runs, leaving numeric tokens explicitly LTR and the
         # Arabic/Jawi script in a native complex-script run.
@@ -199,8 +205,8 @@ def rtl_cell(cell,value,*,bold=False,center=False,shade=None):
             props=run._r.get_or_add_rPr()
             fonts=props.find(qn("w:rFonts"))
             if fonts is not None:fonts.set(qn("w:cs"),"Amiri")
-            mark(props,"w:rtl",{"w:val":"0" if number else "1"})
             mark(props,"w:szCs",{"w:val":"20"})
+            mark(props,"w:rtl",{"w:val":"0" if number else "1"})
             mark(props,"w:lang",{"w:bidi":"ar-SA"})
         at=0
         for m in NUMBER_ATOM.finditer(raw):
