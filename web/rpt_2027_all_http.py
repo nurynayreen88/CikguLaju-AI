@@ -642,6 +642,10 @@ def create_all_rpt_blueprint(*,root=ROOT):
                 compact=compact_pdf.read_full_standards_dlp(subject,year,content,root=root) or compact_pdf.read_dlp(subject,year,content,root=root)
             if compact is not None:
                 content,digest=compact
+            if subject in DLP_SUBJECTS:
+                from web.rpt_dlp_flexible_time import pdf_without_fixed_minutes
+                content=pdf_without_fixed_minutes(content)
+                digest=hashlib.sha256(content).hexdigest()
             response = send_file(BytesIO(content), mimetype="application/pdf", as_attachment=True,
                                  download_name=path.name, conditional=False)
             response.headers["X-RPT-Source-SHA256"] = digest
