@@ -8,8 +8,9 @@ import json, os, re
 
 ROOT=Path(__file__).resolve().parents[1]/"staging/dlp/paired_release"
 SETS={(2,"SCIENCE_DLP"):70,(3,"SCIENCE_DLP"):70,(6,"SCIENCE_DLP"):70}
+SETS.update({(y,"MATH_DLP"):101 for y in (3,4,5,6)})
 TOKEN=re.compile(r"SESSION-(\d{3})")
-@lru_cache(maxsize=3)
+@lru_cache(maxsize=7)
 def _load(year,subject):
     count=SETS[year,subject]
     manifest=json.loads((ROOT/"manifest.json").read_text())
@@ -27,7 +28,8 @@ def _load(year,subject):
     return rows
 
 def enabled(year,subject):
-    return (year,subject) in SETS and str(year) in os.getenv("CIKGULAJU_DLP_PAIRED_SCIENCE_YEARS","").split(",")
+    key="CIKGULAJU_DLP_PAIRED_MATH_YEARS" if subject=="MATH_DLP" else "CIKGULAJU_DLP_PAIRED_SCIENCE_YEARS"
+    return (year,subject) in SETS and str(year) in os.getenv(key,"").split(",")
 
 def resolve(year,subject,unit,lesson):
     if not enabled(year,subject) or unit!="sessions":
@@ -52,7 +54,7 @@ def render(row,fmt,teacher):
     denominator=teacher.get("students","")
     denominator=denominator if re.fullmatch(r"[1-9]\d{0,2}",denominator) else "___"
     reflection=teacher.get("reflection") or "; ".join(f"Obj. {n}: ___/{denominator}" for n in range(1,row["objectives"]+1))+" pupils achieved. Follow-up: ____________________."
-    payload=dict(source="dlp",fmt=fmt,heading=row["heading"],details=[row["details"][0],row["details"][1],*fields,*row["details"][2:]],activities=row["activities"],footer=[("Reflection",reflection)],teacher=teacher,compact=True)
+    payload=dict(source="dlp",fmt=fmt,heading=row["heading"],details=[row["details"][0],row["details"][1],*fields,*row["details"][2:]],activities=row["activities"],footer=[("Reflection",reflection)],teacher=teacher,compact=True,mathematics=row["heading"][1].startswith("Mathematics"))
     blob=render_structured_rph(**payload)
     if fmt=="pdf":
         import fitz
