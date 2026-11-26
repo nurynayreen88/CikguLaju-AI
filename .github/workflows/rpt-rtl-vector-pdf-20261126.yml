@@ -1,0 +1,29 @@
+name: RTL ten original vector row compact PDF QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/build_rpt_rtl_vector_pdf_20261126.py'
+      - '.github/workflows/rpt-rtl-vector-pdf-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        subject: [pendidikan_islam,bahasa_arab]
+        year: [2,3,4,5,6]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt
+      - run: python -m tools.build_rpt_rtl_vector_pdf_20261126 --subject ${{ matrix.subject }} --year ${{ matrix.year }} --out "$RUNNER_TEMP/rpt-review"
+      - if: always()
+        run: rm -rf "$RUNNER_TEMP/rpt-review"
