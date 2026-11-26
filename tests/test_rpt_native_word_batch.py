@@ -114,4 +114,39 @@ class PrivateBatchTests(unittest.TestCase):
                     if y["year"] in batch.APPROVED_SCIENCE_PINS:
                         self.assertEqual(y.get("docx_ready"),access)
 
+
+    def test_approved_math_word_paid_only_and_exact_source(self):
+        import io
+        from docx import Document
+        from rpt_2027.matematik import sk_documents
+        from web.rpt_2027_all_http import ROOT, catalog_data
+        app=Flask(__name__);app.register_blueprint(create_all_rpt_blueprint())
+        client=app.test_client()
+        paid={"telegram_user_id":9,"rakan_pembangun":True}
+        free={"telegram_user_id":10,"free_generations_remaining":10}
+        with patch.dict("os.environ",{"CIKGULAJU_RPT_NATIVE_WORD_BATCH":"1"}), patch("web_v1_telegram_auth_routes._config",return_value={"account_backend":"supabase"}), patch("web.rpt_school_cover.school_identity",return_value=None) as profile:
+            for year,source_digest in sk_documents.DIGESTS.items():
+                url=f"/api/rpt/2027/all/matematik/{year}"
+                with patch("web.rpt_2027_all_http._account",return_value=(paid,None)):
+                    pdf=client.get(url+".pdf")
+                    self.assertEqual(pdf.status_code,200)
+                    self.assertEqual(sha256(pdf.data).hexdigest(),source_digest)
+                    word=client.get(url+".docx")
+                    self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else "")
+                    doc=Document(io.BytesIO(word.data))
+                    self.assertEqual(len(doc.tables),1)
+                    self.assertGreater(len(doc.tables[0].rows),117)
+                    self.assertEqual(word.headers["Cache-Control"],"no-store, private")
+                before=profile.call_count
+                with patch("web.rpt_2027_all_http._account",return_value=(free,None)):
+                    self.assertEqual(client.get(url+".docx").status_code,403)
+                    self.assertEqual(client.get(url+".pdf").data,pdf.data)
+                self.assertEqual(profile.call_count,before)
+            for access in (True,False):
+                subjects=catalog_data(root=ROOT,personalization_allowed=access)["subjects"]
+                math=next(x for x in subjects if x["code"]=="matematik")
+                for y in math["years"]:
+                    if y["year"] in sk_documents.DIGESTS:
+                        self.assertEqual(y.get("docx_ready"),access)
+
 if __name__=="__main__": unittest.main()

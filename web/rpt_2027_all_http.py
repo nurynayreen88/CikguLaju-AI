@@ -243,9 +243,13 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
             if code == "matematik" and year in matematik_sk.DIGESTS:
                 ready = pdf_ready(code, year, root=root)
                 available += int(ready)
+                source=matematik_sk.document_path(year,root=Path(root)/"matematik")
+                approved_word=bool(personalization_allowed and native_word.eligible_approved_math(year,source,root=root))
                 entries.append({"year": year, "pdf_ready": ready,
                                 "status": "TERSEDIA" if ready else "PDF BELUM DIPASANG",
                                 "download_enabled": bool(ready and allowed), "is_draft": False,
+                                "docx_ready":approved_word,"word_paid_only":True,
+                                "docx_url":f"/api/rpt/2027/all/{code}/{year}.docx" if approved_word else None,
                                 "note": "Kumpulan A dan B. 117 Lesson dalam 96 jam hingga Minggu 38."})
                 continue
             current=_staged_file(code,year,root=root)
@@ -510,16 +514,21 @@ def create_all_rpt_blueprint(*,root=ROOT):
         if error is not None:
             return error
         approved_science=subject=="sains" and year in native_word.APPROVED_SCIENCE_PINS
-        if native_word.enabled() and (f"{subject}:{year}" in native_word.PINS or approved_science):
+        approved_math=subject=="matematik" and year in matematik_sk.DIGESTS
+        if native_word.enabled() and (f"{subject}:{year}" in native_word.PINS or approved_science or approved_math):
             if not _has_paid_access(account):
                 return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
             source=_approved_sk_science_file(subject,year,root) if approved_science else _staged_file(subject,year,root=root)
-            if not approved_science and ((subject=="matematik" and year in matematik_sk.DIGESTS) or _approved_sk_science_file(subject,year,root) is not None):
+            if approved_math:
+                source=matematik_sk.document_path(year,root=Path(root)/"matematik")
+            if not (approved_science or approved_math) and ((subject=="matematik" and year in matematik_sk.DIGESTS) or _approved_sk_science_file(subject,year,root) is not None):
                 return jsonify({"error":"Versi RPT Word belum sepadan dengan PDF terkini."}),503
             from web_v1_telegram_auth_routes import _config
             try:
                 if approved_science:
                     blob,digest=native_word.approved_science_document(year,source,account,_config(),root=root)
+                elif approved_math:
+                    blob,digest=native_word.approved_math_document(year,source,account,_config(),root=root)
                 else:
                     blob,digest=native_word.document(subject,year,source,account,_config(),root=root)
             except Exception:
@@ -529,7 +538,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
                 download_name=f"CIKGULAJU_RPT_{subject.upper()}_SK_TAHUN_{year}_2027_WORD.docx")
             response.headers["X-RPT-Source-SHA256"]=digest
             response.headers["X-RPT-Word-Access"]="paid-founder-only"
-            response.headers["X-RPT-Academic-Status"]="TERSEDIA" if approved_science else "DRAF_SEMAKAN"
+            response.headers["X-RPT-Academic-Status"]="TERSEDIA" if (approved_science or approved_math) else "DRAF_SEMAKAN"
             return response
         if subject!="bahasa_melayu" or year not in bm_word.YEARS:
             return jsonify({"error":"RPT Word KSSR belum tersedia bagi pilihan ini."}),404
