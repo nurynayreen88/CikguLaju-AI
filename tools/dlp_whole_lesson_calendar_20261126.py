@@ -21,7 +21,9 @@ def schedule(subject,year,rows,root):
     assert sum(minutes)==(5760 if math else 2880 if year<=3 else 3840)
     assert all(n in (30,60,90,120,150) for n in minutes)
     # Preserve entire lessons and order. Exceptional weeks can use a single
-    # extra 30-minute period; do not shorten a long RPH to fit a date boundary.
+    # extra 30-minute period; Year 6 Mathematics may exceptionally require
+    # two extra periods to preserve a complete 150-minute lesson. Report all
+    # exceptions for timetable review; never shorten an RPH to fit a boundary.
     prefix=[0]
     for m in minutes:prefix.append(prefix[-1]+m)
     states={0:(0,[])}
@@ -30,9 +32,9 @@ def schedule(subject,year,rows,root):
         for start,(cost,counts) in states.items():
             for stop in range(start+1,len(minutes)+1):
                 used=prefix[stop]-prefix[start]
-                if used>normal+30:break
+                if used>normal+(60 if math and year==6 else 30):break
                 if len(minutes)-stop<len(targets)-index-1:break
-                score=cost+((used-target)/30)**2+20*(max(0,used-normal)/30)**2
+                score=cost+((used-target)/30)**2+20*(max(0,used-normal)/30)**2+100*(max(0,used-normal-30)/30)**2
                 if stop not in new or score<new[stop][0]:
                     new[stop]=(score,counts+[stop-start])
         states=new
