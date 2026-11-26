@@ -268,6 +268,10 @@
  function renderWeeklySuggestion(c){
   const suggestion=c.slot.rpt_suggestion;
   if(!suggestion)return;
+  if(Array.isArray(suggestion.dlp_labels)){
+   c.weeklySuggestion.textContent="Cadangan RPT · Minggu "+suggestion.week+" (Kumpulan "+suggestion.group+") — "+suggestion.dlp_labels.join(", ")+". Pilih mengikut kemajuan kelas.";
+   return;
+  }
   const label=c.slot.subject_code==="ENGLISH"?"Lesson":"PdP";
   const numbers=suggestedLessonNumbers(c);
   const assigned=c.slot.suggested_session?.map(n=>String(n).padStart(3,"0")).join(" + ");
@@ -390,7 +394,7 @@
      option.dataset.completionToken=String(item.completion_token||"");
      if(c.slot.suggested_session?.includes(lessonNumber(title,c.slot.subject_code,c.slot.year)))
       option.textContent+=" · Cadangan slot ini";
-     else if(!c.progressHint&&suggestedLessonNumbers(c).includes(lessonNumber(title,c.slot.subject_code,c.slot.year)))
+     else if(!c.progressHint&&(suggestedLessonNumbers(c).includes(lessonNumber(title,c.slot.subject_code,c.slot.year)) || c.slot.rpt_suggestion?.dlp_labels?.includes(title.match(/^(Lesson|Review)\s+(\d+)\b/i)?.[0].replace(/\d+$/,n=>String(Number(n)).padStart(2,"0")))))
       option.textContent+=" · Cadangan minggu ini";
      option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
      option.dataset.activityBookRef=String(item.activitybook_ref||"").trim();
