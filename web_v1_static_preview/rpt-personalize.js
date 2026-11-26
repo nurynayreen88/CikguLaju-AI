@@ -76,6 +76,8 @@
       box[0]<box[2]&&box[1]<box[3];
   }
   function validatedLayout(layout,key,hash){
+    const compact = layout?.compact_pdf_covers;
+    const compactMatch = Boolean(compact&&compact.source_sha256_by_subject_year?.[key]===hash);
     const scienceYear6 = layout?.science_year6_covers?.[key];
     const alignedScience = Boolean(scienceYear6&&scienceYear6.source_sha256_by_subject_year?.[key]===hash);
     const alignedCover = layout?.aligned_rpt_covers?.[key];
@@ -95,8 +97,9 @@
     if(sjkc)layout = layout?.sjkc_bahasa_cina;
     if(alignedScience)layout = scienceYear6;
     if(alignedRPT)layout = alignedCover;
-    const status = alignedRPT ? "ALIGNED_RPT_PDF_COVER" : alignedScience ? "SCIENCE_YEAR_6_PDF_COVER" : integratedEnglish ? "ENGLISH_INTEGRATED_RPT_COVER" : matematikSjkc ? "SJKC_MATEMATIK_PDF_COVER" : sainsSjkc ? "SJKC_SAINS_PDF_COVER" : bmSjk ? "SJK_BAHASA_MELAYU_PDF_COVER" : sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
-    const count = alignedRPT||alignedScience ? 1 : integratedEnglish ? 5 : matematikSjkc ? 1 : sainsSjkc ? 5 : bmSjk ? 5 : sjkc ? 5 : dlp ? 2 : 56;
+    if(compactMatch)layout = compact;
+    const status = compactMatch ? "COMPACT_RPT_PDF_COVER_VERIFIED" : alignedRPT ? "ALIGNED_RPT_PDF_COVER" : alignedScience ? "SCIENCE_YEAR_6_PDF_COVER" : integratedEnglish ? "ENGLISH_INTEGRATED_RPT_COVER" : matematikSjkc ? "SJKC_MATEMATIK_PDF_COVER" : sainsSjkc ? "SJKC_SAINS_PDF_COVER" : bmSjk ? "SJK_BAHASA_MELAYU_PDF_COVER" : sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
+    const count = compactMatch ? 31 : alignedRPT||alignedScience ? 1 : integratedEnglish ? 5 : matematikSjkc ? 1 : sainsSjkc ? 5 : bmSjk ? 5 : sjkc ? 5 : dlp ? 2 : 56;
     if(!layout||layout.version!==1||
        layout.status!==status||
        Object.keys(layout.source_sha256_by_subject_year||{}).length!==count||
