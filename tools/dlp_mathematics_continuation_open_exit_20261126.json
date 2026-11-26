@@ -1396,6 +1396,688 @@
           "Identify which measure describes the most frequent response."
         ]
       }
+    },
+    "mathematics_dlp:6": {
+      "1": {
+        "C": [
+          "Show 7,035,208.",
+          "Read the number aloud and write it in words."
+        ]
+      },
+      "2": {
+        "O": [
+          "Dictate six million forty thousand and nine.",
+          "Write 6,040,009 in numerals."
+        ],
+        "C": [
+          "Show 2,400,000 + 30,000 + 500.",
+          "Reconstruct the number and name the value of digit 3."
+        ]
+      },
+      "3": {
+        "O": [
+          "Show 5,600,030 and 5,600,300.",
+          "Compare the numbers using the first differing place."
+        ],
+        "C": [
+          "Show 3,100,000, 3,200,000, __.",
+          "Complete the sequence and state the step."
+        ]
+      },
+      "4": {
+        "O": [
+          "Show 8,300,000, 8,200,000, 8,100,000.",
+          "State the rule and predict the next term."
+        ]
+      },
+      "6": {
+        "C": [
+          "Show 2,750,000.",
+          "Express the number as 2.75 million."
+        ]
+      },
+      "7": {
+        "O": [
+          "Show 4,125,000 on a million-unit bar.",
+          "Express it as a decimal of a million."
+        ],
+        "C": [
+          "Show 1 1/2 million.",
+          "Express it as 1,500,000."
+        ]
+      },
+      "8": {
+        "O": [
+          "Show 2.25 million and 2 1/4 million.",
+          "Write both as whole numbers and compare."
+        ],
+        "C": [
+          "Show 3,750,000.",
+          "Express it as 3 3/4 million and 3.75 million."
+        ]
+      },
+      "9": {
+        "O": [
+          "Show 0.625 million.",
+          "Convert to 625,000 and explain the conversion factor."
+        ]
+      },
+      "10": {
+        "C": [
+          "Show 2.4 million + 1.25 million.",
+          "Find 3.65 million and express it in whole numbers."
+        ]
+      },
+      "11": {
+        "O": [
+          "Show 5 1/2 million minus 0.75 million.",
+          "Choose a common form before subtracting."
+        ],
+        "C": [
+          "Show three batches of 1.25 million.",
+          "Calculate 3.75 million."
+        ]
+      },
+      "12": {
+        "O": [
+          "Show 6 million divided equally into four groups.",
+          "Find 1.5 million per group."
+        ],
+        "C": [
+          "Show 2 1/2 million multiplied by two.",
+          "Calculate 5 million and verify the whole-number equivalent."
+        ]
+      },
+      "13": {
+        "O": [
+          "Show 7.2 million divided by six.",
+          "Estimate and calculate the quotient in millions."
+        ]
+      },
+      "16": {
+        "C": [
+          "Show 17 and 21.",
+          "List factors to distinguish a prime from a composite."
+        ]
+      },
+      "17": {
+        "O": [
+          "Show 1, 2 and 9.",
+          "Classify each as prime, composite or neither."
+        ],
+        "C": [
+          "Show 29 and 35.",
+          "Use factor pairs to explain each classification."
+        ]
+      },
+      "18": {
+        "O": [
+          "Show 49 as 7 × 7.",
+          "Explain why 49 is composite."
+        ],
+        "C": [
+          "Show a stock of 1.2 million, 350,000 delivered and 200,000 sold.",
+          "Form and solve the mixed-operation problem."
+        ]
+      },
+      "19": {
+        "O": [
+          "Show 2.5 million units packed into five equal batches.",
+          "Identify the given quantities and the unknown batch size."
+        ]
+      },
+      "21": {
+        "C": [
+          "Show 3/4 ÷ 1/2.",
+          "Use a model or inverse multiplication to verify 1 1/2."
+        ]
+      },
+      "22": {
+        "O": [
+          "Show 1 1/2 ÷ 3/4.",
+          "Convert the mixed number and identify how many three-quarters fit."
+        ],
+        "C": [
+          "Show 0.24 × 0.5.",
+          "Estimate the result and calculate 0.12."
+        ]
+      },
+      "23": {
+        "O": [
+          "Show 1.2 × 0.3.",
+          "Predict whether the result is smaller than 1.2 and calculate."
+        ],
+        "C": [
+          "Show 2.5 × 0.04.",
+          "Calculate 0.10 and explain decimal placement."
+        ]
+      },
+      "24": {
+        "O": [
+          "Show 3.6 × 0.25.",
+          "Estimate using one quarter of 3.6."
+        ]
+      },
+      "25": {
+        "C": [
+          "Show 4.8 ÷ 0.6.",
+          "Use equivalent division 48 ÷ 6 to find 8."
+        ]
+      },
+      "26": {
+        "O": [
+          "Show 2.25 ÷ 0.15.",
+          "Scale both numbers by 100 and predict the quotient."
+        ],
+        "C": [
+          "Show 1.44 ÷ 0.12.",
+          "Find 12 and check by multiplication."
+        ]
+      },
+      "27": {
+        "O": [
+          "Show 0.875 ÷ 0.25.",
+          "Convert to equivalent division with a whole-number divisor."
+        ]
+      },
+      "29": {
+        "C": [
+          "Show 45% + 25% − 10%.",
+          "Calculate 60%, using the same reference whole."
+        ]
+      },
+      "30": {
+        "O": [
+          "Show 120% − 35%.",
+          "Calculate 85% and explain the common reference whole."
+        ],
+        "C": [
+          "Show 35% of 200.",
+          "Find 70 and identify the reference quantity."
+        ]
+      },
+      "31": {
+        "O": [
+          "Show 60 as a percentage of 240.",
+          "Identify 240 as the whole and find 25%."
+        ],
+        "C": [
+          "Show 30% of an unknown quantity equals 45.",
+          "Determine the original quantity and check."
+        ]
+      },
+      "32": {
+        "O": [
+          "Show 125% of 80.",
+          "Estimate whether the answer exceeds 80 and calculate."
+        ]
+      },
+      "33": {
+        "C": [
+          "Show 1/2 + 0.25 × 4.",
+          "Identify multiplication first and give 1.5."
+        ]
+      },
+      "34": {
+        "O": [
+          "Show (1/2 + 0.25) × 4.",
+          "Explain how brackets change the operation order."
+        ],
+        "C": [
+          "Show 3 − 1.2 ÷ 0.6.",
+          "Divide first and calculate 1."
+        ]
+      },
+      "35": {
+        "O": [
+          "Show 2 × (1.5 + 1/4).",
+          "Convert to a common form and identify the bracketed operation."
+        ]
+      },
+      "37": {
+        "C": [
+          "Show a RM120 price reduced by 25%.",
+          "Find the discount and the reduced price."
+        ]
+      },
+      "38": {
+        "O": [
+          "Show a 2.4 L container that is 3/4 full.",
+          "Identify the fraction and calculate the liquid volume."
+        ],
+        "C": [
+          "Show 0.6 × 0.5 and 3/4 ÷ 1/2.",
+          "Calculate both and verify one result."
+        ]
+      },
+      "39": {
+        "O": [
+          "Show a percentage bar with 40% of 150 marked.",
+          "Find the marked quantity before revising the calculation."
+        ],
+        "C": [
+          "Show 0.8 ÷ 0.2 and 25% of 60.",
+          "Correctly solve both and explain the two methods."
+        ]
+      },
+      "40": {
+        "O": [
+          "Show 2 + 0.5 × 3.",
+          "Identify the first operation and calculate."
+        ]
+      },
+      "41": {
+        "C": [
+          "Show cost RM80 and selling price RM95.",
+          "Calculate profit RM15 and distinguish cost from selling price."
+        ]
+      },
+      "42": {
+        "O": [
+          "Show cost RM120 and selling price RM105.",
+          "Identify a loss and calculate RM15."
+        ],
+        "C": [
+          "Show a fictional receipt listing two prices and total paid.",
+          "Identify the item prices and verify the total."
+        ]
+      },
+      "43": {
+        "O": [
+          "Show two fictional price offers with clear conditions.",
+          "Compare the actual payable totals."
+        ],
+        "C": [
+          "Show an invoice marked RM150 and a receipt for RM150.",
+          "Explain which requests payment and which records payment."
+        ]
+      },
+      "44": {
+        "O": [
+          "Show a sample receipt with a missing item total.",
+          "Calculate the missing amount from quantity and unit price."
+        ]
+      },
+      "46": {
+        "C": [
+          "Show RM240 with a 15% discount.",
+          "Calculate the discount and final price RM204."
+        ]
+      },
+      "47": {
+        "O": [
+          "Show a RM150 price and RM10 rebate.",
+          "Identify the reduced payable amount."
+        ],
+        "C": [
+          "Show a fictional service of RM200 subject to a stated 6% tax.",
+          "Calculate the tax RM12 and total RM212."
+        ]
+      },
+      "48": {
+        "O": [
+          "Show a hypothetical RM500 balance with 2% simple interest for one year.",
+          "Calculate RM10 interest."
+        ],
+        "C": [
+          "Show fictional units worth RM1,000 with a declared 3% dividend.",
+          "Calculate the RM30 dividend for that example."
+        ]
+      },
+      "49": {
+        "O": [
+          "Show a hypothetical RM80 taxable amount and stated 5% tax.",
+          "Calculate tax and the amount including tax."
+        ]
+      },
+      "50": {
+        "C": [
+          "Show two fictional protection scenarios, one involving a damaged house.",
+          "Identify the purpose of protection against financial loss."
+        ]
+      },
+      "51": {
+        "O": [
+          "Show a hypothetical accident-related loss and a protection arrangement.",
+          "Explain why people may arrange financial protection in advance."
+        ],
+        "C": [
+          "Show simple cards describing risk transfer and mutual assistance.",
+          "Match them to conventional insurance and takaful as taught."
+        ]
+      },
+      "52": {
+        "O": [
+          "Show fictional descriptions of insurance and takaful.",
+          "Identify their shared protective purpose and the stated difference."
+        ],
+        "C": [
+          "Show a RM100 budget with two options costing RM75 and RM95.",
+          "Compare the remaining balance and justify a practical choice."
+        ]
+      },
+      "53": {
+        "O": [
+          "Show a fictional RM200 budget and two offers with delivery charges.",
+          "Calculate the full costs before choosing."
+        ],
+        "C": [
+          "Show an offer at RM150 plus RM20 delivery and a RM165 inclusive offer.",
+          "Compare totals and explain one practical factor in choosing."
+        ]
+      },
+      "54": {
+        "O": [
+          "Show a fictional supplier quote that includes an additional service charge.",
+          "Calculate the complete payable cost rather than comparing base prices."
+        ]
+      },
+      "56": {
+        "C": [
+          "Show UTC+8 and UTC+2 on a time-zone chart.",
+          "Explain why simultaneous local clock readings differ."
+        ]
+      },
+      "57": {
+        "O": [
+          "Show UTC noon and a UTC+3 region.",
+          "Set the local clock to 3 p.m."
+        ],
+        "C": [
+          "Show city A at UTC+8 and city B at UTC+2.",
+          "Calculate their six-hour time difference."
+        ]
+      },
+      "58": {
+        "O": [
+          "Show UTC+5 and UTC−2.",
+          "Find the seven-hour difference using a number line."
+        ],
+        "C": [
+          "Show city A at UTC+8 on Monday 01:00 and city B at UTC−3.",
+          "Find B's time and day: Sunday 14:00."
+        ]
+      },
+      "59": {
+        "O": [
+          "Show UTC+5:30 and UTC+8.",
+          "Find the time difference in hours and minutes."
+        ]
+      },
+      "60": {
+        "C": [
+          "Show a flight leaving a UTC+8 city at 10:00, lasting 3 hours, arriving in UTC+7.",
+          "Find 12:00 local arrival time."
+        ]
+      },
+      "61": {
+        "O": [
+          "Show a call at UTC+8 18:00 to a UTC+1 city.",
+          "Calculate the recipient's local time before choosing a suitable call slot."
+        ],
+        "C": [
+          "Show a UTC+8 departure at 23:00 and four-hour travel to UTC+9.",
+          "Find the next day's 04:00 arrival."
+        ]
+      },
+      "62": {
+        "O": [
+          "Show a journey crossing midnight with a stated time-zone offset.",
+          "Mark departure, duration and destination offset on a timeline."
+        ]
+      },
+      "64": {
+        "C": [
+          "Show 2 m of uniform wire weighing 40 g.",
+          "Calculate the mass of 5 m using the stated rate."
+        ]
+      },
+      "65": {
+        "O": [
+          "Show 1.5 m of ribbon weighing 30 g.",
+          "Find the mass per metre before calculating a new length."
+        ],
+        "C": [
+          "Show a pipe holding 0.4 L per metre.",
+          "Find the volume held by 3 m, assuming a constant cross-section."
+        ]
+      },
+      "66": {
+        "O": [
+          "Show a uniform tube holding 250 mL per metre.",
+          "Find the length needed to hold 1 L."
+        ]
+      },
+      "67": {
+        "C": [
+          "Show a mixture needing 200 g of powder per litre of water.",
+          "Find the mass for 2.5 L."
+        ]
+      },
+      "68": {
+        "O": [
+          "Show 150 g per 0.5 L in a recipe.",
+          "Find the mass per litre."
+        ],
+        "C": [
+          "Show 600 g of material needed for 1.5 L.",
+          "Calculate the amount for 0.75 L and check by scaling."
+        ]
+      },
+      "69": {
+        "O": [
+          "Show a recipe ratio of 300 g per 0.75 L.",
+          "Find the amount required for 2 L using the stated relationship."
+        ]
+      },
+      "71": {
+        "C": [
+          "Show a baseline and specify a 75° angle.",
+          "Construct and verify it using a protractor."
+        ]
+      },
+      "72": {
+        "O": [
+          "Show the two scales on a protractor.",
+          "Select the correct scale to construct 120° from the stated ray."
+        ],
+        "C": [
+          "Show a regular hexagon and an irregular hexagon.",
+          "Identify the regular figure using equal sides and angles."
+        ]
+      },
+      "73": {
+        "O": [
+          "Show a square grid and specify a regular quadrilateral.",
+          "Construct a square and check equal side lengths."
+        ]
+      },
+      "74": {
+        "C": [
+          "Show a circle centred at O with a radius of 3 cm.",
+          "Label a radius and identify its diameter as 6 cm."
+        ]
+      },
+      "75": {
+        "O": [
+          "Show a circle with two radii on opposite sides of its centre.",
+          "Identify the diameter as their combined length."
+        ],
+        "C": [
+          "Show a chord not passing through the centre.",
+          "Explain why the chord is not a diameter."
+        ]
+      },
+      "76": {
+        "O": [
+          "Show a diameter of 10 cm.",
+          "Find the radius and identify the centre midpoint."
+        ],
+        "C": [
+          "Specify a circle with radius 2.5 cm.",
+          "Use a compass to construct it and label centre and radius."
+        ]
+      },
+      "77": {
+        "O": [
+          "Give a required diameter of 8 cm.",
+          "Set the compass to 4 cm and construct the circle."
+        ]
+      },
+      "79": {
+        "C": [
+          "Show a circle with radius 3 cm and a 110° angle task.",
+          "Label the diameter and verify the constructed angle."
+        ]
+      },
+      "80": {
+        "O": [
+          "Show a labelled circle and a polygon diagram.",
+          "Identify one diameter and one correct geometric label."
+        ],
+        "C": [
+          "Show A(2,4) and B(7,4) at 10 m per unit.",
+          "Find the horizontal distance of 50 m."
+        ]
+      },
+      "81": {
+        "O": [
+          "Show A(3,1) and B(3,5) at 25 m per unit.",
+          "Find the vertical distance of 100 m."
+        ],
+        "C": [
+          "Show a horizontal distance of six grid units at 20 m per unit.",
+          "Calculate 120 m and retain the correct unit."
+        ]
+      },
+      "82": {
+        "O": [
+          "Show a coordinate grid at 100 m per unit.",
+          "Explain how to convert a vertical grid distance of three units to metres."
+        ]
+      },
+      "83": {
+        "C": [
+          "Show 18 red and 24 blue counters.",
+          "Simplify the red-to-blue ratio to 3:4."
+        ]
+      },
+      "84": {
+        "O": [
+          "Show 15:25 and 3:5.",
+          "Verify that the ratios are equivalent."
+        ],
+        "C": [
+          "Show 12 girls and 8 boys.",
+          "Write girls-to-boys and boys-to-girls in simplest form."
+        ]
+      },
+      "85": {
+        "O": [
+          "Show 28:42.",
+          "Find a common factor and simplify to 2:3."
+        ],
+        "C": [
+          "Show a ratio 2:3 with first quantity 8.",
+          "Find the second quantity 12 using the same scale factor."
+        ]
+      },
+      "86": {
+        "O": [
+          "Show four books costing RM20.",
+          "Find the cost of seven books by proportion."
+        ]
+      },
+      "88": {
+        "C": [
+          "Show a six-unit grid distance at 30 m per unit and a ratio 6:9.",
+          "Calculate 180 m and simplify to 2:3."
+        ]
+      },
+      "89": {
+        "O": [
+          "Show a grid distance of four units at 50 m per unit.",
+          "Find the real distance before checking the proportion task."
+        ]
+      },
+      "90": {
+        "C": [
+          "Show 40 votes, with 20 for category A.",
+          "Identify the half-circle sector as 180°."
+        ]
+      },
+      "91": {
+        "O": [
+          "Show 40 votes, with 10 for B and 5 for C.",
+          "Identify their 90° and 45° sectors."
+        ],
+        "C": [
+          "Show a completed chart with sectors 180°, 90°, 45°, 45°.",
+          "Check the total and compare category sizes."
+        ]
+      },
+      "92": {
+        "O": [
+          "Show a 40-response chart with a 90° sector.",
+          "Find the ten responses represented by that sector."
+        ]
+      },
+      "93": {
+        "C": [
+          "Show a bag of 7 red and 2 blue counters.",
+          "State which colour is more likely and explain using counts."
+        ]
+      },
+      "94": {
+        "O": [
+          "Show bags A (6 red, 2 blue) and B (2 red, 6 blue).",
+          "Predict in which bag red is more likely."
+        ],
+        "C": [
+          "Show an experiment with a short tally differing from the prediction.",
+          "Explain why a likely outcome need not occur on every trial."
+        ]
+      },
+      "95": {
+        "O": [
+          "Show a bag with one green and eight yellow counters.",
+          "Describe green as unlikely and give a reason."
+        ]
+      },
+      "97": {
+        "C": [
+          "Show 12 story, six comic and two atlas survey responses.",
+          "Use the counts to explain which category is more likely in a random selection."
+        ]
+      },
+      "98": {
+        "O": [
+          "Show two charts of different total sample sizes.",
+          "Compare the relevant category as a share of its own total."
+        ]
+      },
+      "99": {
+        "C": [
+          "Show a chart of 40 responses with a 180° and a 90° sector.",
+          "Convert these sectors to 20 and 10 responses and compare likelihood."
+        ]
+      },
+      "100": {
+        "O": [
+          "Show a 45° sector from 40 responses.",
+          "Identify five responses before interpreting the chart."
+        ],
+        "C": [
+          "Show an assertion that an unlikely event cannot happen.",
+          "Correct the assertion using the example of a low-count category."
+        ]
+      },
+      "101": {
+        "O": [
+          "Show 180°, 90°, 45° and 45° sectors for 40 responses.",
+          "Check the total angle and calculate the category counts."
+        ]
+      }
     }
   }
 }
