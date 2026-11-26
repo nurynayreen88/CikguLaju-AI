@@ -14,8 +14,10 @@ def _load(year,subject):
     count=SETS[year,subject]
     manifest=json.loads((ROOT/"manifest.json").read_text())
     entry=manifest["sets"][f"{subject}:{year}"]
-    if entry.get("academic_approved") is not True:
-        raise ValueError("DLP academic approval missing")
+    # Explicit owner publication authorization is separate from academic review.
+    # The source review status stays unchanged; do not label these academically certified.
+    if entry.get("academic_approved") is not True and entry.get("publication_authorized") is not True:
+        raise ValueError("DLP publication approval missing")
     raw=(ROOT/f"{subject}_{year}.json").read_bytes()
     if sha256(raw).hexdigest()!=entry["sha256"]:
         raise ValueError("DLP data integrity mismatch")
