@@ -54,7 +54,7 @@ def render_structured_rph(*, source: Literal["dlp", "ppki", "akuatik_v2"],
     builder = _pdf if fmt == "pdf" else _word
     builder(buffer, heading, details, activities, footer,
             compact=compact, mathematics=mathematics, teacher=teacher,
-            label_fill=label_fill, **({"paired_density": True} if fmt == "pdf" and paired_density else {}))
+            label_fill=label_fill, **({"paired_density": paired_density} if fmt == "pdf" and paired_density else {}))
     data = buffer.getvalue()
     if not data.startswith(b"%PDF-" if fmt == "pdf" else b"PK\x03\x04"):
         raise ValueError("Generated RPH file has an invalid signature")
