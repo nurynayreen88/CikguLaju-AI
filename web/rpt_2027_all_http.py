@@ -508,7 +508,17 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return jsonify({"error": f"Pilihan RPT {definition.LABEL} tidak tersedia."}), 404
         mime = ("application/pdf" if fmt == "pdf" else
                 "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
-        response = send_file(path, mimetype=mime, as_attachment=True, conditional=False)
+        if school=="sjkc" and slug=="bahasa-melayu" and fmt=="docx" and year in (3,4,5,6) and os.environ.get("CIKGULAJU_RPT_SJK_BM_REPEAT_HEADERS")=="1":
+            from web.rpt_sjk_word_header_repair import repair
+            try:
+                repaired=repair(year,path.read_bytes())
+            except (ValueError,OSError):
+                # Preserve the currently published original if the candidate source changed.
+                response=send_file(path,mimetype=mime,as_attachment=True,conditional=False)
+            else:
+                response=send_file(BytesIO(repaired),mimetype=mime,as_attachment=True,conditional=False,download_name=path.name)
+        else:
+            response = send_file(path, mimetype=mime, as_attachment=True, conditional=False)
         if fmt == "pdf":
             response.headers["X-RPT-Source-SHA256"] = hashlib.sha256(path.read_bytes()).hexdigest()
             response.headers["X-RPT-Personalization-Allowed"] = "1"
