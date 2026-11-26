@@ -50,8 +50,8 @@ jobs:
               out.mkdir(parents=True,exist_ok=True)
               render(subject,year,out,manifest,lock)
               d=Document(next(out.glob("*.docx")))
-              assert len(d.tables)==1
-              assert all(any(c.text.strip() for c in r.cells[1:]) for r in d.tables[0].rows[1:])
+              assert len(d.tables)>1
+              assert all(any(c.text.strip() for c in r.cells[1:]) for t in d.tables for r in t.rows[1:])
               with fitz.open(next(out.glob("*.pdf"))) as pdf:
                   assert all(len(p.get_text().strip())>20 for p in list(pdf)[1:])
               print("TABLE_PASS",key,flush=True)

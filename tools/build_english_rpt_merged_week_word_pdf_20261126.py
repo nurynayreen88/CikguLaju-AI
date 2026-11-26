@@ -146,6 +146,8 @@ def integrated_rows(active,weeks):
     assert list(rows)==list(range(1,161)),len(rows)
     return rows
 
+from tools.rpt_kssr_physical_pages import paginate,verify_pages
+
 def build_word(year):
     active,digest=source_identity(year)
     weeks=schedule(year)
@@ -221,6 +223,9 @@ def build_word(year):
                 assert normalize(row.cells[3].text)==normalize(" ".join(rows[lesson][2]))
         first+=n
     assert seen==list(range(1,161))
+    offset=1;ranges=[]
+    for n in counts:ranges.append((offset,offset+n-1));offset+=n
+    blob=paginate(blob,ranges)
     return blob,raw,active,digest
 
 def render(year,out):
