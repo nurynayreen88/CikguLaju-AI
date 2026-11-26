@@ -164,6 +164,9 @@ def pdf_rows(pdf, rtl):
             right = page.rect.width - MARGIN
             source_row = draw['type'] == 'f' and abs(rect.x0 - LEFT) <= 0.1
             reflowed_row = draw['type'] == 's' and abs(rect.x0 - body.x0) <= 0.1
+            # Horizontal table rules have zero height and are not lesson rows.
+            if rect.height <= 0.1:
+                continue
             if not (source_row or reflowed_row) or rect.y0 < TOP - 0.1:
                 continue
             if abs(rect.x1 - (right if source_row else body.x1)) > 0.1:
