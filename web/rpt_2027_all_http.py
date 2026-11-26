@@ -646,7 +646,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
             paired_active=paired.enabled(subject,year)
             if paired_active:
                 try:
-                    content=paired.assets(str(root),year)["pdf"]
+                    content=paired.assets(str(root),year,subject)["pdf"]
                     digest=hashlib.sha256(content).hexdigest()
                 except (OSError,ValueError,KeyError):
                     return jsonify({"error":"RPT sesi DLP belum dapat disahkan."}),503
