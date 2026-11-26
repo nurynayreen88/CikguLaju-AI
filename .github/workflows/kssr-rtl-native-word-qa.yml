@@ -1,0 +1,30 @@
+name: KSSR RTL ten native Word and physical PDF QA
+on:
+  pull_request:
+    paths:
+      - 'tools/build_kssr_rpt_rtl_native_20261126.py'
+      - '.github/workflows/kssr-rtl-native-word-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        subject: [pendidikan_islam, bahasa_arab]
+        year: [2, 3, 4, 5, 6]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice-writer fonts-hosny-amiri fonts-liberation
+      - run: pip install pymupdf python-docx pillow
+      - run: python -m tools.build_kssr_rpt_rtl_native_20261126 --subject ${{ matrix.subject }} --year ${{ matrix.year }} --out qa-rtl
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rtl-${{ matrix.subject }}-${{ matrix.year }}
+          path: qa-rtl/
+          retention-days: 7
