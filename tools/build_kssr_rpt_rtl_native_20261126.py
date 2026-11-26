@@ -34,7 +34,23 @@ def cells(page,rect):
         for line in block.get("lines",()):
             buckets=[[] for _ in out]
             for s in line["spans"]:
-                for ch in s["chars"]:
+                chars=s["chars"]
+                text="".join(ch["c"] for ch in chars)
+                x0,_,x1,_=s["bbox"]
+                direct=[i for i,(a,b) in enumerate(zip(BANDS,BANDS[1:])) if a-1<=x0 and x1<=b+1]
+                if len(direct)==1:
+                    buckets[3-direct[0]].append(logical(text));source.append(logical(text))
+                    continue
+                # A long Arabic standard may overflow leftwards from its original
+                # right-aligned cell. Preserve the complete span only if exactly
+                # one standard marker occurs and the right edge matches a cell.
+                codes=re.findall(r"(?<!\d)\d+(?:\.\d+){1,3}(?!\d)",text)
+                anchors=[i for i,b in enumerate(BANDS[1:]) if abs(x1-(b-7))<=2]
+                if len(codes)==1 and len(anchors)==1 and RTL.search(text) and anchors[0] in (1,2):
+                    if "\ufffd" in text or any(0xe000<=ord(v)<=0xf8ff for v in text):raise ValueError("unresolved source glyph")
+                    buckets[3-anchors[0]].append(logical(text));source.append(logical(text))
+                    continue
+                for ch in chars:
                     v=ch["c"]
                     if "\ufffd" in v or any(0xe000<=ord(c)<=0xf8ff for c in v):raise ValueError("unresolved source glyph")
                     x0,_,x1,_=ch["bbox"]
@@ -43,11 +59,9 @@ def cells(page,rect):
                     if not ix:
                         if not v.strip():continue
                         raise ValueError(("unassigned source character",page.number,v,ch["bbox"]))
-                    # A PDF span can contain several independent cells; a glyph
-                    # itself must not substantially straddle a physical rule.
                     a,b=BANDS[ix[0]:ix[0]+2]
                     if v.strip() and (x0<a-2 or x1>b+2):
-                        raise ValueError(("cross-column glyph",page.number,v,ch["bbox"]))
+                        raise ValueError(("cross-column glyph; manual source diagnosis required",page.number,text,ch["bbox"],s["bbox"],codes,anchors))
                     buckets[3-ix[0]].append(logical(v));source.append(logical(v))
             for i,parts in enumerate(buckets):
                 if parts and "".join(parts).strip():out[i].append("".join(parts).strip())
