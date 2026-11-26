@@ -60,6 +60,7 @@ DLP_SUBJECTS = {subject for _, subject in DLP_CATALOGUES}
 DLP_SESSION_TOKEN=re.compile(r"SESSION-(?:00[1-9]|0[1-9][0-9]|10[01])")
 def _paired_enabled(year,subject):
     if subject=="MATH_DLP":return year in (3,4,5,6) and str(year) in os.getenv("CIKGULAJU_DLP_PAIRED_MATH_YEARS","").split(",")
+    if subject=="MATH_DLP":return year in (3,4,5,6) and str(year) in os.getenv("CIKGULAJU_DLP_PAIRED_MATH_YEARS","").split(",")
     return subject=="SCIENCE_DLP" and year in (2,3,6) and str(year) in os.getenv("CIKGULAJU_DLP_PAIRED_SCIENCE_YEARS","").split(",")
 
 
