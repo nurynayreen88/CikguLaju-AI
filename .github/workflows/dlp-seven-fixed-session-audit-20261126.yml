@@ -4,6 +4,7 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - 'tools/audit_dlp_seven_fixed_sessions_20261126.py'
+      - 'tools/build_dlp_seven_session_previews_20261126.py'
       - '.github/workflows/dlp-seven-fixed-session-audit-20261126.yml'
 permissions:
   contents: read
@@ -26,4 +27,35 @@ jobs:
         with:
           name: dlp-seven-source-locked-session-plans
           path: dlp-seven-fixed-session-plan.json
+          if-no-files-found: error
+  native-previews:
+    needs: source-and-capacity
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {subject: mathematics_dlp, year: 3}
+          - {subject: mathematics_dlp, year: 4}
+          - {subject: mathematics_dlp, year: 5}
+          - {subject: mathematics_dlp, year: 6}
+          - {subject: science_dlp, year: 2}
+          - {subject: science_dlp, year: 3}
+          - {subject: science_dlp, year: 6}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'requests>=2'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libreoffice-writer fonts-liberation2
+      - run: python -m tools.build_dlp_seven_session_previews_20261126 --subject ${{ matrix.subject }} --year ${{ matrix.year }} --out previews
+      - uses: actions/upload-artifact@v4
+        with:
+          name: private-rpt-${{ matrix.subject }}-y${{ matrix.year }}
+          path: previews/
           if-no-files-found: error
