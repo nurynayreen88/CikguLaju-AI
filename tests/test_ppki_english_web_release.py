@@ -97,3 +97,39 @@ class TestPPKIEnglishWebRelease(unittest.TestCase):
         with patch.object(ppki, "_request", return_value=json.dumps(obj).encode()):
             with self.assertRaises(ppki.NativeRPHUnavailable):
                 ppki.english_catalog(2)
+
+
+    def test_malay_menu_and_source_scope(self):
+        bm = {"source": "ppki-subject-v1", "year": 2, "subject": ppki.MALAY_SUBJECT,
+              "available": True, "units": []}
+        for unit, (start, end) in enumerate(((1,6),(6,12),(12,16),(16,21),(21,26),(26,32)),1):
+            bm["units"].append({"value": str(unit), "label": f"Unit {unit}", "lessons": [
+                {"value": f"{n:03d}", "label": f"PdP {n}", "textbook_ref": str(n),
+                 "formats": ["word", "pdf"]} for n in range(start, end)]})
+        def request(path, *_):
+            return json.dumps(bm if ppki.MALAY_SUBJECT in path else source()).encode()
+        legacy = {"subjects": [{"value": ppki.SUBJECT, "label": "Pengurusan Kehidupan"}]}
+        with patch.object(ppki, "catalog", return_value=legacy), patch.object(ppki, "_request", side_effect=request):
+            self.assertEqual([x["value"] for x in ppki.get_options("subjects", 2)],
+                             [ppki.ENGLISH_SUBJECT, ppki.MALAY_SUBJECT, ppki.SUBJECT])
+            self.assertEqual(len(ppki.get_options("units", 2, ppki.MALAY_SUBJECT)), 6)
+            self.assertEqual(ppki.validate_selection(2, ppki.MALAY_SUBJECT, "6", "031")["value"], "031")
+            for unit, pdp in [("1", "006"), ("7", "032"), ("6", "032")]:
+                with self.assertRaises(ValueError):
+                    ppki.validate_selection(2, ppki.MALAY_SUBJECT, unit, pdp)
+        app = Flask(__name__)
+        app.register_blueprint(rph.create_blueprint())
+        client = app.test_client()
+        query = {"year": "2", "subject": ppki.MALAY_SUBJECT, "unit": "6",
+                 "lesson": "031", "teacher_students": "6"}
+        with patch.object(rph, "_account", return_value=({"telegram_user_id": 42, "free_remaining": 0}, None)), patch.object(
+                ppki, "_request", side_effect=request), patch.object(ppki, "request_rph", return_value=BytesIO(b"%PDF-test")) as render:
+            with patch.object(rph, "_has_paid_access", return_value=False):
+                self.assertEqual(client.get("/api/web/rph/pdf", query_string=query).status_code, 403)
+                render.assert_not_called()
+            with patch.object(rph, "_has_paid_access", return_value=True), patch(
+                    "web.rph_reflection_universal.personalize_verified_document", side_effect=lambda doc, *_: doc):
+                result = client.get("/api/web/rph/pdf", query_string=query)
+                self.assertEqual(result.status_code, 200)
+                self.assertIn(ppki.MALAY_SUBJECT, result.headers["Content-Disposition"])
+                render.assert_called_once()
