@@ -1,0 +1,26 @@
+name: Science DLP Year 4 and 5 session downloads
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'staging/dlp/science_y45_session*'
+      - 'staging/dlp/year4/render_science.py'
+      - 'staging/dlp/year5/downloads.py'
+      - 'tools/test_dlp_science_y45_session_download.py'
+      - '.github/workflows/dlp-science-y45-session-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'python-docx>=1.1,<2' 'reportlab>=4,<5' 'pypdf>=5,<7' 'PyMuPDF>=1.24,<2' 'flask>=3,<4' 'lxml>=5,<7'
+      - run: python -m tools.test_dlp_science_y45_session_download
+      - run: python -m tools.verify_dlp_rph_workload_20261126
