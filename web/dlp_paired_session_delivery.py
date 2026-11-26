@@ -56,7 +56,9 @@ def render(row,fmt,teacher):
         import fitz
         with fitz.open(stream=blob,filetype="pdf") as doc: pages=len(doc)
         if pages>1:
-            blob=render_structured_rph(**payload,paired_density=True)
-            with fitz.open(stream=blob,filetype="pdf") as doc:
-                if len(doc)!=1: raise ValueError("Paired RPH PDF exceeds one page")
+            for density in (1,2,3,4):
+                blob=render_structured_rph(**payload,paired_density=density)
+                with fitz.open(stream=blob,filetype="pdf") as doc: pages=len(doc)
+                if pages==1: break
+            if pages!=1: raise ValueError("Paired RPH PDF exceeds one page")
     return blob
