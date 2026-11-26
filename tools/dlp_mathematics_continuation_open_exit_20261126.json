@@ -790,6 +790,612 @@
           "Calculate the difference and explain which choice has stronger support."
         ]
       }
+    },
+    "mathematics_dlp:5": {
+      "2": {
+        "C": [
+          "Show 460,208 and point to 6.",
+          "State its digit value, 60,000, and place value."
+        ]
+      },
+      "3": {
+        "O": [
+          "Display 800,000 + 40,000 + 309.",
+          "Reconstruct 840,309."
+        ],
+        "C": [
+          "Show 520,480 and 520,408.",
+          "Order them and justify using the tens place."
+        ]
+      },
+      "4": {
+        "O": [
+          "Show 803,200 and 830,200.",
+          "Identify the first differing digit and compare."
+        ]
+      },
+      "6": {
+        "C": [
+          "Show 299,980, 299,990, __.",
+          "Complete the pattern and state its step."
+        ]
+      },
+      "7": {
+        "O": [
+          "Write 480,000, 470,000, __, 450,000.",
+          "Complete the descending sequence and explain the rule."
+        ]
+      },
+      "9": {
+        "C": [
+          "Mark 645,000 on a number line between 640,000 and 650,000.",
+          "Round to the nearest ten thousand and explain the midpoint."
+        ]
+      },
+      "10": {
+        "O": [
+          "Show 749,999 and 750,000.",
+          "Compare their rounded values to the nearest hundred thousand."
+        ],
+        "C": [
+          "Show 210,400 + 185,600 + 12,000.",
+          "Group two terms conveniently and calculate 408,000."
+        ]
+      },
+      "11": {
+        "O": [
+          "Write 315,005 + 207,995.",
+          "Estimate the sum and identify the regrouping."
+        ]
+      },
+      "12": {
+        "C": [
+          "Show 500,002 − 8,765.",
+          "Identify the exchange across zeros and verify the difference."
+        ]
+      },
+      "13": {
+        "O": [
+          "Show 720,000 − 150,000 − 20,000.",
+          "Estimate the remaining amount before exact subtraction."
+        ],
+        "C": [
+          "Show 12,345 × 10.",
+          "Explain the digit-place shift and calculate 123,450."
+        ]
+      },
+      "14": {
+        "O": [
+          "Show 12,408 × 6.",
+          "Estimate the product and identify the partial products."
+        ]
+      },
+      "16": {
+        "C": [
+          "Display 24 × n = 864.",
+          "Use division to find n = 36 and verify."
+        ]
+      },
+      "17": {
+        "O": [
+          "Display n ÷ 15 = 240.",
+          "Find the unknown using multiplication."
+        ],
+        "C": [
+          "Show 300 + 12 × 5.",
+          "Mark the first operation and calculate 360."
+        ]
+      },
+      "18": {
+        "O": [
+          "Show 500 − 15 × 8.",
+          "Identify the operation order and explain why."
+        ]
+      },
+      "19": {
+        "C": [
+          "Display 900 − 240 ÷ 6.",
+          "Divide first and find the result 860."
+        ]
+      },
+      "20": {
+        "O": [
+          "Show 80 + 480 ÷ 12.",
+          "Identify division as the first operation."
+        ],
+        "C": [
+          "Show 2,400 items, 600 sold, then 250 delivered.",
+          "Choose operations and calculate the final stock."
+        ]
+      },
+      "21": {
+        "O": [
+          "Present 1,250 books in stock and three deliveries of 120.",
+          "Choose an expression for the new stock."
+        ]
+      },
+      "22": {
+        "C": [
+          "Show 1,440 pencils packed in boxes of 24.",
+          "Form an equation with an unknown box count and solve."
+        ]
+      },
+      "23": {
+        "O": [
+          "Show 18 equal boxes holding 720 items.",
+          "Identify the unknown group size and the inverse operation."
+        ]
+      },
+      "25": {
+        "C": [
+          "Display a grid representing 2/3 of 3/5.",
+          "Shade the overlapping region and simplify 6/15 to 2/5."
+        ]
+      },
+      "26": {
+        "O": [
+          "Show 1 1/2 and 2/3 on fraction bars.",
+          "Convert the mixed number and predict the product."
+        ]
+      },
+      "28": {
+        "C": [
+          "Show 5.125 − 2.4 + 0.275.",
+          "Align decimal places and calculate 3.000."
+        ]
+      },
+      "29": {
+        "O": [
+          "Show 7.2 + 0.45 − 1.075.",
+          "Align decimal places before solving."
+        ],
+        "C": [
+          "Show 3.125 × 100.",
+          "Explain each digit's changed place value and give 312.5."
+        ]
+      },
+      "30": {
+        "O": [
+          "Show 4.26 × 12.",
+          "Split the multiplier into 10 and 2 before combining products."
+        ]
+      },
+      "31": {
+        "C": [
+          "Show 6.72 ÷ 12.",
+          "Calculate 0.56 and verify by multiplication."
+        ]
+      },
+      "32": {
+        "O": [
+          "Show 48.6 ÷ 100.",
+          "Predict the quotient using place value."
+        ],
+        "C": [
+          "Show 1 1/4 as a fraction diagram.",
+          "Express the mixed number as 125%."
+        ]
+      },
+      "33": {
+        "O": [
+          "Show 175% on two hundred grids.",
+          "Express it as 1 3/4."
+        ]
+      },
+      "34": {
+        "C": [
+          "Show 120% of 150.",
+          "Identify 150 as the reference quantity and find 180."
+        ]
+      },
+      "35": {
+        "O": [
+          "Show 90 out of 120.",
+          "Identify the reference whole and calculate the percentage."
+        ],
+        "C": [
+          "Show a 40 L tank that is 75% full.",
+          "Calculate the volume and express it as 30 L."
+        ]
+      },
+      "36": {
+        "O": [
+          "Show a 200-item stock reduced by 25%.",
+          "Identify the original reference quantity before finding the remaining stock."
+        ]
+      },
+      "39": {
+        "C": [
+          "Show RM80,000 minus RM12,350.50 and RM2,500.",
+          "Track both deductions and calculate the balance."
+        ]
+      },
+      "40": {
+        "O": [
+          "Show RM5,000 − RM1,237.65.",
+          "Estimate the balance and verify by addition."
+        ],
+        "C": [
+          "Show 24 items at RM18.75 each.",
+          "Calculate RM450 and check by estimation."
+        ]
+      },
+      "41": {
+        "O": [
+          "Show 100 items priced RM12.40 each.",
+          "Predict the total using place value."
+        ]
+      },
+      "42": {
+        "C": [
+          "Show RM3,600 shared equally among 24 pupils.",
+          "Find RM150 per pupil and verify."
+        ]
+      },
+      "43": {
+        "O": [
+          "Show RM725 ÷ 100.",
+          "Express the quotient with two sen digits."
+        ],
+        "C": [
+          "Show 12 items at RM8.50 plus RM15 delivery.",
+          "Write the mixed expression and calculate RM117."
+        ]
+      },
+      "44": {
+        "O": [
+          "Show 5 packs at RM12.90 with a RM4 deduction.",
+          "Identify the multiplication and subtraction steps."
+        ]
+      },
+      "45": {
+        "C": [
+          "Show a fictional savings account and an investment fund.",
+          "Distinguish their purposes and identify which example has variable returns."
+        ]
+      },
+      "46": {
+        "O": [
+          "Show a fictional RM1,000 balance earning 2% simple interest for one year.",
+          "Calculate RM20 and distinguish interest from principal."
+        ],
+        "C": [
+          "Show RM120 cash versus RM30 now plus four instalments of RM25.",
+          "Calculate both totals and identify the outstanding amount after the first payment."
+        ]
+      },
+      "47": {
+        "O": [
+          "Show two fictional cash and credit offers with full payment schedules.",
+          "Compare the total paid and identify any amount still owing."
+        ]
+      },
+      "48": {
+        "C": [
+          "Show a RM500 budget, 8 kits at RM42.50 and RM25 delivery.",
+          "Calculate the cost and remaining RM135."
+        ]
+      },
+      "49": {
+        "O": [
+          "Show a RM1,200 budget and 16 tickets at RM65 each.",
+          "Find the ticket subtotal before considering a further charge."
+        ]
+      },
+      "51": {
+        "C": [
+          "Show 9:35 a.m. and 12:10 p.m. on a timeline.",
+          "Calculate the elapsed 2 hours 35 minutes."
+        ]
+      },
+      "52": {
+        "O": [
+          "Show February 27 to March 2 in a leap year.",
+          "Count the elapsed days using the calendar."
+        ],
+        "C": [
+          "Show 2 1/4 hours and a minute conversion chart.",
+          "Convert to 135 minutes."
+        ]
+      },
+      "53": {
+        "O": [
+          "Show 3/4 day.",
+          "Convert to 18 hours using 24 hours per day."
+        ]
+      },
+      "54": {
+        "C": [
+          "Show 2.75 hours.",
+          "Convert to 165 minutes and explain the 0.75 hour part."
+        ]
+      },
+      "55": {
+        "O": [
+          "Show 1.2 hours.",
+          "Convert to minutes using the factor 60."
+        ],
+        "C": [
+          "Show 1.5 hours plus 45 minutes.",
+          "Convert both and calculate 2 hours 15 minutes."
+        ]
+      },
+      "56": {
+        "O": [
+          "Show 2 1/4 hours plus 30 minutes.",
+          "Choose a common unit before adding."
+        ]
+      },
+      "57": {
+        "C": [
+          "Show 3 hours minus 1.25 hours.",
+          "Calculate 1.75 hours or 1 hour 45 minutes."
+        ]
+      },
+      "58": {
+        "O": [
+          "Show 2 1/2 hours minus 45 minutes.",
+          "Represent both quantities in minutes before subtracting."
+        ]
+      },
+      "61": {
+        "C": [
+          "Show 2.35 m and 1 1/2 km.",
+          "Convert them to centimetres and metres respectively."
+        ]
+      },
+      "62": {
+        "O": [
+          "Show 0.75 km and 3/4 km.",
+          "Confirm that both represent 750 m."
+        ],
+        "C": [
+          "Show 2.4 m plus 75 cm.",
+          "Convert to a common unit and calculate 3.15 m."
+        ]
+      },
+      "63": {
+        "O": [
+          "Show 1 1/2 m minus 40 cm.",
+          "Choose a common unit before subtracting."
+        ]
+      },
+      "64": {
+        "C": [
+          "Show 2.4 m divided into six equal parts.",
+          "Find 40 cm per part and verify the total."
+        ]
+      },
+      "65": {
+        "O": [
+          "Show four pieces each 0.75 m long.",
+          "Calculate the total length and express it in centimetres."
+        ],
+        "C": [
+          "Show 2.35 kg and 3/4 kg.",
+          "Convert to 2,350 g and 750 g."
+        ]
+      },
+      "66": {
+        "O": [
+          "Show 1.25 kg.",
+          "Express its mass in grams and explain the conversion factor."
+        ]
+      },
+      "67": {
+        "C": [
+          "Show 2.4 kg minus 750 g.",
+          "Convert to a common unit and calculate 1.65 kg."
+        ]
+      },
+      "68": {
+        "O": [
+          "Show 1 1/2 kg plus 250 g.",
+          "Identify a common unit and estimate the total."
+        ],
+        "C": [
+          "Show 3.6 kg divided equally among six bags.",
+          "Calculate 600 g per bag."
+        ]
+      },
+      "69": {
+        "O": [
+          "Show four bags each weighing 0.85 kg.",
+          "Calculate the combined mass."
+        ]
+      },
+      "70": {
+        "C": [
+          "Show 1.25 L and 3/4 L.",
+          "Convert each to millilitres."
+        ]
+      },
+      "71": {
+        "O": [
+          "Show 0.45 L and a millilitre scale.",
+          "Convert to 450 mL."
+        ],
+        "C": [
+          "Show 2.5 L minus 750 mL.",
+          "Use a common unit and calculate 1.75 L."
+        ]
+      },
+      "72": {
+        "O": [
+          "Show 1 1/4 L plus 600 mL.",
+          "Choose a common unit before adding."
+        ]
+      },
+      "73": {
+        "C": [
+          "Show 3.6 L shared equally among six jugs.",
+          "Find 600 mL per jug and check."
+        ]
+      },
+      "74": {
+        "O": [
+          "Show five bottles each containing 0.75 L.",
+          "Calculate their total volume."
+        ],
+        "C": [
+          "Show a recipe using 350 mL per serving for eight servings.",
+          "Calculate 2.8 L and explain the conversion."
+        ]
+      },
+      "75": {
+        "O": [
+          "Show a 2 L container and six servings of 250 mL.",
+          "Choose a calculation for the remaining volume."
+        ]
+      },
+      "77": {
+        "C": [
+          "Show a square and a rectangle with unequal adjacent sides.",
+          "Identify which is a regular polygon and justify using sides and angles."
+        ]
+      },
+      "78": {
+        "O": [
+          "Show a regular pentagon and an irregular pentagon.",
+          "Identify the distinguishing property."
+        ],
+        "C": [
+          "Show a marked interior angle in a pentagon.",
+          "Use a protractor to measure and record the angle in degrees."
+        ]
+      },
+      "79": {
+        "O": [
+          "Show a polygon with one marked interior angle.",
+          "Position the protractor correctly before measuring."
+        ]
+      },
+      "80": {
+        "C": [
+          "Show a composite L-shape with all outer lengths labelled.",
+          "Trace the outer boundary and add only its outer sides."
+        ]
+      },
+      "81": {
+        "O": [
+          "Show an L-shape with an internal dividing line.",
+          "Identify why the dividing line is excluded from perimeter."
+        ],
+        "C": [
+          "Show two nonoverlapping rectangles of areas 24 and 12 cm².",
+          "Combine them to find the composite area, 36 cm²."
+        ]
+      },
+      "82": {
+        "O": [
+          "Show a composite shape split into two labelled rectangles.",
+          "Identify the dimensions needed for each area."
+        ]
+      },
+      "83": {
+        "C": [
+          "Show two joined cuboids of volumes 24 and 18 cm³.",
+          "Find their combined volume and retain cubic units."
+        ]
+      },
+      "84": {
+        "O": [
+          "Show a composite solid made from two labelled cuboids.",
+          "Identify each cuboid's three dimensions."
+        ],
+        "C": [
+          "Show a garden plan composed of two rectangles.",
+          "Decide whether area or perimeter answers a question about covering the ground."
+        ]
+      },
+      "85": {
+        "O": [
+          "Show a room plan and a border-length requirement.",
+          "Choose the relevant measure and explain why."
+        ]
+      },
+      "87": {
+        "C": [
+          "Show A(2,3) and B(7,3) on a unit grid.",
+          "Find the horizontal distance of five units."
+        ]
+      },
+      "88": {
+        "O": [
+          "Show A(4,2) and B(4,8).",
+          "Count the six vertical units before calculating."
+        ],
+        "C": [
+          "Show six red and nine blue counters.",
+          "Express the red-to-blue ratio as 2:3 in simplest form."
+        ]
+      },
+      "89": {
+        "O": [
+          "Show eight pens and twelve pencils.",
+          "Write their ratio in the stated order and simplify."
+        ]
+      },
+      "90": {
+        "C": [
+          "Show four notebooks costing RM12.",
+          "Find the cost of seven notebooks using the unit price."
+        ]
+      },
+      "91": {
+        "O": [
+          "Show three items costing RM15.",
+          "Find one item's cost before scaling the quantity."
+        ]
+      },
+      "92": {
+        "C": [
+          "Show a grid route from (2,1) to (2,5) and a recipe for 2 portions using 100 g.",
+          "Find the grid distance and the amount for six portions."
+        ]
+      },
+      "93": {
+        "O": [
+          "Show a proportional table with 4 items costing RM20.",
+          "Identify the unit value before filling the missing entry."
+        ]
+      },
+      "95": {
+        "C": [
+          "Show a pie chart with half, quarter and two eighth sectors.",
+          "Identify the largest category and compare it with one eighth."
+        ]
+      },
+      "96": {
+        "O": [
+          "Display a pie chart with labelled equal quarter sectors.",
+          "Compare the selected categories without relying on sector colour alone."
+        ]
+      },
+      "97": {
+        "C": [
+          "Show data 2, 4, 4, 6, 9.",
+          "Find mode, median and range and distinguish the measures."
+        ]
+      },
+      "98": {
+        "O": [
+          "Show five values 3, 5, 7, 7, 8.",
+          "Order the values and identify which calculation yields the mean."
+        ]
+      },
+      "99": {
+        "C": [
+          "Show two groups' reading totals: 4, 4, 6 and 2, 5, 7.",
+          "Choose a measure appropriate for comparing their typical reading and justify."
+        ]
+      },
+      "100": {
+        "O": [
+          "Show a survey with values 3, 3, 5, 9.",
+          "Identify which measure describes the most frequent response."
+        ]
+      }
     }
   }
 }
