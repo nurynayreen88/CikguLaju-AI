@@ -95,6 +95,35 @@ def compact_pdf(heading,details,rows,footer,teacher,*,padding_limit=2,leading=10
     with patch("reportlab.lib.styles.ParagraphStyle",side_effect=style),patch("web.rph_document_style.pdf_box_style",side_effect=box):
         return render_structured_rph(source="dlp",fmt="pdf",heading=heading,details=details,activities=rows,footer=footer,teacher=teacher,compact=True)
 
+def session_payload(s,source,bank,reviews,y,subject,teacher):
+    """Build native payload from authenticated caller fields; never sample data.
+
+    Caller retains existing authentication, subscription and quota checks.
+    A manual reflection is preserved verbatim; otherwise provide individual
+    attainment counts linked to the explicitly numbered objectives. No
+    pupil achievement is fabricated.
+    """
+    teacher={k:str((teacher or {}).get(k) or "").strip() for k in ("class","date","time","students","reflection")}
+    labels=s["source_labels"];records=[source[l] for l in labels];activities=s["activities"]
+    cs=[];ls=[]
+    for label,field in zip(labels,s["standards"],strict=True):
+        if " ".join(field) in ("Consolidation Review taught standards","Review Review taught standards"):
+            field=["LS "+", ".join(reviews[label])]
+        c,l=full_standards(field,bank);cs.extend(c);ls.extend(l)
+    materials=unique([normal(p.get("materials")) for p in records]);assert materials
+    title=" / ".join(unique([normal(p.get("title")) for p in records]))
+    unit=" / ".join(unique([normal(p.get("unit_title") or p.get("unit")) for p in records]))
+    assert title and unit and s["objective"]
+    math=subject=="mathematics_dlp"
+    heading=("Daily Lesson Plan",f"{'Mathematics' if math else 'Science'} (DLP) · Year {y} SK",title)
+    numbered=[f"{i}. {value}" for i,value in enumerate(s["objective"],1)]
+    details=[("Unit",unit),("Lesson / PdP"," / ".join(labels)),*science_class_fields(teacher,english=True),("Content Standards","\n".join(unique(cs))),("Learning Standards","\n".join(unique(ls))),("Book reference"," · ".join(s["references"])),("Learning objective","\n".join(numbered)),("Materials","; ".join(materials))]
+    rows=[("Phase","Teacher","Pupils"),*[(p["phase"],p["teacher"],p["pupils"]) for p in activities]]
+    denominator=teacher["students"] if re.fullmatch(r"[1-9]\d{0,2}",teacher["students"]) else "___"
+    attainment="; ".join(f"Obj. {i}: ___/{denominator}" for i in range(1,len(numbered)+1))
+    footer=[("Reflection",teacher["reflection"] or f"{attainment} pupils achieved. Follow-up: ____________________.")]
+    return heading,details,rows,footer,teacher
+
 def main():
     a=argparse.ArgumentParser();a.add_argument("--paired",type=Path,required=True);a.add_argument("--rpt-root",type=Path,required=True);a.add_argument("--year",type=int,choices=(2,3,4,5,6),required=True);a.add_argument("--subject",choices=("science_dlp","mathematics_dlp"),default="science_dlp");a.add_argument("--out",type=Path,required=True);args=a.parse_args()
     y=args.year;subject=args.subject;key=f"{subject}:{y}";math=subject=="mathematics_dlp"
@@ -111,23 +140,15 @@ def main():
         if "induction" not in activities[0]["phase"].lower() or "closure" not in activities[-1]["phase"].lower():
             issues.append({"session":n,"error":"missing authored boundary"});continue
         try:
-            cs=[];ls=[]
-            for label,field in zip(labels,s["standards"],strict=True):
-                if " ".join(field) in ("Consolidation Review taught standards","Review Review taught standards"):
-                    field=["LS "+", ".join(reviews[label])]
-                c,l=full_standards(field,bank);cs.extend(c);ls.extend(l)
-            # Use actual source materials, not an invented list.
-            materials=unique([normal(p.get("materials")) for p in records])
-            assert materials,(key,n)
-            title=" / ".join(unique([normal(p.get("title")) for p in records]))
-            unit=" / ".join(unique([normal(p.get("unit_title") or p.get("unit")) for p in records]))
-            assert title and unit
             start="08:00";end="08:30" if s["slot_minutes"]==30 else "09:00"
-            teacher={"class":f"{y} Bestari","date":"2027-01-12","time":f"{start} - {end}","students":"30"}
-            heading=("Daily Lesson Plan",f"{'Mathematics' if math else 'Science'} (DLP) · Year {y} SK",title)
-            details=[("Unit",unit),("Lesson / PdP"," / ".join(labels)),*science_class_fields(teacher,english=True),("Content Standards","\n".join(unique(cs))),("Learning Standards","\n".join(unique(ls))),("Book reference"," · ".join(s["references"])),("Learning objective","\n".join(s["objective"])),("Materials","; ".join(materials))]
-            rows=[("Phase","Teacher","Pupils"),*[(p["phase"],p["teacher"],p["pupils"]) for p in activities]]
-            footer=[("Reflection","___ of ___ pupils met the learning objective(s). Follow-up: ____________________.")]
+            demo={"class":"QA Bestari","date":"2027-01-12","time":f"{start} - {end}","students":"30"}
+            heading,details,rows,footer,teacher=session_payload(s,source,bank,reviews,y,subject,demo)
+            # Verify caller identity is used, missing fields remain blank,
+            # and manual reflection overrides the objective-linked default.
+            _,alt_details,_,alt_footer,alt_teacher=session_payload(s,source,bank,reviews,y,subject,{"class":"QA Alternate","students":"26","reflection":"Manual QA reflection."})
+            assert dict(alt_details)["Class"]=="QA Alternate" and dict(alt_details)["Date"]==""
+            assert alt_teacher["students"]=="26" and alt_footer==[("Reflection","Manual QA reflection.")]
+            assert all(f"Obj. {i}: ___/30" in footer[0][1] for i in range(1,len(s["objective"])+1))
             for fmt in ("word","pdf"):
                 blob=render_structured_rph(source="dlp",fmt=fmt,heading=heading,details=details,activities=rows,footer=footer,teacher=teacher,compact=True,mathematics=math)
                 if fmt=="word":
