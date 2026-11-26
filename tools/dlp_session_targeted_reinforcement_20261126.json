@@ -24,12 +24,12 @@
         "Give a place-value grid and an incorrect worked example to discuss."
       ],
       "L44": [
-        "Use a price list with RM4.50, RM3.80 and RM2.40; choose two items, write a word problem and find change from RM10.",
-        "Set up a mock receipt and check the calculation in ringgit and sen."
+        "Given RM4.50 + RM3.80 = RM8.30, create a shopping story that matches the number sentence, then find the change from RM10.",
+        "Provide the number sentence and price cards; check that the story matches both addends and that the change is correct."
       ],
       "L49": [
-        "A bus leaves at 9:25 a.m., travels 45 minutes and stops for 20 minutes; find its arrival time and the departure time if arrival is fixed.",
-        "Provide timelines with blank endpoints and ask pupils to justify each change."
+        "A bus leaves at 9:25 a.m., travels 45 minutes and stops for 20 minutes. Find its arrival time. If it must arrive at 11:00 a.m. with the same durations, find its departure time.",
+        "Provide two blank timelines; check both addition and subtraction of hours and minutes."
       ],
       "L55": [
         "Convert 2 kg 350 g and 4 kg 80 g to grams, then express 3,425 g in kilograms and grams.",
@@ -184,16 +184,16 @@
         "Give a safe age-appropriate model and its illustrated instructions; supervise assembly."
       ],
       "R03": [
-        "Use three picture problems to explain a shadow, identify an open low-voltage circuit and choose a suitable method to separate sand and stones.",
-        "Provide diagrams and safe sorting materials, then check explanations individually."
+        "Use a torch and opaque card to form a shadow; assemble a working low-voltage circuit using a dry cell, bulb, switch and wires; describe how to separate sand and stones.",
+        "Supervise three short stations with a torch, safe low-voltage components and clean dry materials; check each pupil's explanation and circuit."
       ],
       "L48": [
         "Compare water flowing down two differently tilted trays; draw arrows and identify the higher and lower ends.",
         "Use shallow trays and small amounts of water; wipe spills immediately."
       ],
       "L52": [
-        "Observe a balloon inflating and an inverted cup trapping air above water; draw both observations and explain that air occupies space.",
-        "Demonstrate with safe classroom materials and supervise handling."
+        "Observe an inverted transparent cup trapping air above water and a bag filled with air from the classroom. Identify evidence that air is present around us.",
+        "Demonstrate the two observations with safe classroom materials; ask pupils to point to evidence of air, without requiring explanations of pressure."
       ],
       "L54": [
         "Observe a paper strip moved by a hand fan and a ribbon near a fan; record two signs of moving air and identify wind.",
@@ -226,12 +226,12 @@
         "Provide an unlabelled digestive-system diagram and sequence cards."
       ],
       "L45": [
-        "Read a supplied planet temperature and distance chart; compare Venus and Earth and explain why Venus is unusually hot.",
-        "Use a checked chart and distinguish atmospheric heat trapping from distance alone."
+        "Arrange the planets in order from the Sun using a supplied chart, describe the general temperature pattern and identify Venus as an exception.",
+        "Provide a checked planet-order and mean-temperature chart; guide comparison of the overall pattern, without requiring a detailed explanation of atmospheric physics."
       ],
       "L46": [
-        "Use a ball and central Sun marker to demonstrate revolution and rotation separately; label arrows for each movement.",
-        "Provide a simple physical model and check that the two motions are distinguished."
+        "Move planet markers along their separate paths around a central Sun marker; draw and label the paths and describe the movement of planets around the Sun.",
+        "Provide a simple orbit diagram and model; distinguish the paths without requiring rotation as a separate assessed concept."
       ],
       "L47": [
         "Order four planets using a supplied orbital-period table and relate longer periods to greater distance from the Sun.",
@@ -264,32 +264,32 @@
         "Provide accurate pictures of parasitic and non-parasitic plant relationships."
       ],
       "L27": [
-        "Read two friction-test result tables, one varying surface and one varying load; identify controlled variables and compare results.",
-        "Use separate supplied data sets so the two factors are not changed together."
+        "Using a spring balance and the same small block, compare pulling force on two surfaces; repeat each trial, record readings and identify the factor affecting friction.",
+        "Supervise a safe low-load experiment; keep the block and pulling method constant, vary only the surface and check repeated measurements."
       ],
       "L31": [
         "Match cm/s, m/s and km/h to a small toy, runner and vehicle respectively; justify the units using the scale of each motion.",
         "Provide labelled examples and discuss appropriate units rather than fixed speeds."
       ],
       "L43": [
-        "Draw Sun–Moon–Earth alignment and shade the shadow region; explain the eclipse using straight-line light travel.",
-        "Use a lamp-and-ball model only; remind pupils never to look directly at the Sun."
+        "Use a lamp and two balls to model the Sun, Moon and Earth during a solar eclipse. Draw their positions and shadow, and explain how light is blocked.",
+        "Supervise the lamp-and-ball model; remind pupils never to look directly at the Sun and check the alignment and explanation."
       ],
       "L44": [
-        "Compare solar and lunar eclipse diagrams, identifying the object that blocks light and the affected observer or Moon region.",
-        "Provide two labelled model diagrams and safe observation guidance."
+        "Predict what an observer in the Moon's shadow would experience during a solar eclipse and what would be seen during a lunar eclipse; communicate both predictions using labelled diagrams.",
+        "Provide two accurate eclipse diagrams and ask pupils to compare predicted conditions; use diagrams only for solar observations."
       ],
       "L47": [
-        "Compare a wide-base model and a stronger beam model; explain the difference between resistance to tipping and supporting a load.",
-        "Use safe small models and a comparison table."
+        "Compare two safe models with different base widths and two beams with different load-bearing capacities. Record the observations and identify a real-life example of a strong, stable structure.",
+        "Guide a gentle tipping test and a controlled light-load test; check the distinction between stability and strength."
       ],
       "L49": [
-        "Compare load-test results for flat and folded paper beams; explain which shape carried more load using recorded evidence.",
-        "Provide a safe light-load test or a results table."
+        "Construct flat and folded beams from equal-sized sheets of paper; test each with the same small loads, record the maximum supported load and explain which shape was stronger.",
+        "Supervise a controlled light-load test with equal span and paper type; vary the shape only and check the recorded evidence."
       ],
       "L50": [
-        "Improve a small recyclable-material tower, compare its stability and light-load test results and justify one design choice.",
-        "Provide safe materials and a controlled test area; supervise the model test."
+        "Improve a small recycled-material tower; test its stability and ability to support a light load, draw the results and explain why a durable structure reduces waste from frequent replacement.",
+        "Provide safe recycled materials and a controlled test area; supervise both tests and discuss the benefit for sustainable living."
       ],
       "L52": [
         "Compare two effects of a familiar technology and propose a responsible usage choice supported by one benefit and one drawback.",
