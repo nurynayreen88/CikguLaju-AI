@@ -1,0 +1,345 @@
+{
+  "status": "authored_topic_specific_review_candidate",
+  "sets": {
+    "mathematics_dlp:3": {
+      "5": {
+        "C": [
+          "Show 4,087 and 4,078; ask which belongs first in ascending order.",
+          "Choose 4,078 and identify the tens digit that settles the comparison."
+        ]
+      },
+      "6": {
+        "O": [
+          "Show 5,032 and 5,023 on two cards.",
+          "Identify the first differing place and predict which number is greater."
+        ]
+      },
+      "9": {
+        "C": [
+          "Mark 3,450 on a number line between 3,400 and 3,500.",
+          "Explain the nearest-hundred midpoint rule and give the rounded value."
+        ]
+      },
+      "10": {
+        "O": [
+          "Show 3,449 and 3,450 beside a hundreds number line.",
+          "Predict how rounding to the nearest hundred differs."
+        ],
+        "C": [
+          "Write 4,010, 4,020, __, 4,040.",
+          "Supply 4,030 and state the constant step of ten."
+        ]
+      },
+      "11": {
+        "O": [
+          "Show 8,450 and 8,350 as successive terms.",
+          "Identify the decrease of 100 and predict the next term."
+        ],
+        "C": [
+          "Display two four-digit labels and one place-value clue.",
+          "Eliminate the label that fails the clue and explain why."
+        ]
+      },
+      "12": {
+        "O": [
+          "Show 4,026 and 4,260 with a clue that the tens digit is two.",
+          "Choose 4,026 and identify the tens place."
+        ]
+      },
+      "14": {
+        "C": [
+          "Write 8 + 7 in the ones column of a place-value mat.",
+          "Explain the exchange of ten ones for one ten and record five ones."
+        ]
+      },
+      "15": {
+        "O": [
+          "Show a completed addition with an exchange above the tens column.",
+          "Explain the meaning of the carried digit before checking the calculation."
+        ],
+        "C": [
+          "Write 275 + 125 + 48.",
+          "Identify the pair making 400, then give the total 448."
+        ]
+      },
+      "16": {
+        "O": [
+          "Show 240 + 160 + 38 on separate cards.",
+          "Choose the convenient pair and state its subtotal."
+        ],
+        "C": [
+          "Show 4,002 on a place-value chart.",
+          "Identify the thousands place as the nonzero starting point for an exchange across zeros."
+        ]
+      },
+      "17": {
+        "O": [
+          "Write 3,005 − 7 on a place-value mat.",
+          "Describe which nonzero place supplies the first exchange."
+        ]
+      },
+      "18": {
+        "C": [
+          "Show a starting balance of 850 and withdrawals of 120 and 35.",
+          "Calculate 730 after the first change and 695 after the second."
+        ]
+      },
+      "19": {
+        "O": [
+          "Show the intermediate balance 730 before a second withdrawal of 35.",
+          "Identify the operation needed to find the new balance."
+        ],
+        "C": [
+          "Use a stock card starting at 450, decreasing by 30 then increasing by 20.",
+          "Record both arrows and the final quantity 440."
+        ]
+      },
+      "20": {
+        "O": [
+          "Show 500 → 470 → 490 on a timeline.",
+          "Name the two operations represented by the arrows."
+        ]
+      },
+      "22": {
+        "C": [
+          "Write □ + 245 = 680.",
+          "Choose subtraction to find the missing value and check by addition."
+        ]
+      },
+      "23": {
+        "O": [
+          "Show 75 + □ = 120.",
+          "Identify the unknown addend and write 120 − 75."
+        ],
+        "C": [
+          "Display three bundles each containing 200 counters.",
+          "Write 3 × 200 and explain the total 600."
+        ]
+      },
+      "24": {
+        "O": [
+          "Show 3 × 204 as 3 × 200 and 3 × 4.",
+          "Predict the two partial products before combining them."
+        ]
+      },
+      "25": {
+        "C": [
+          "Move the digit 4 from the tens column to the hundreds column.",
+          "Explain why its value changes from 40 to 400."
+        ]
+      },
+      "26": {
+        "O": [
+          "Show 36 × 10 on a place-value mat.",
+          "Predict the new value of the digit 3."
+        ],
+        "C": [
+          "Group 23 counters into groups of five.",
+          "Count four full groups and three remaining counters."
+        ]
+      },
+      "27": {
+        "O": [
+          "Show a division result 23 ÷ 5 = 4 remainder 3.",
+          "Verify using 4 × 5 + 3 and compare the remainder with five."
+        ]
+      },
+      "28": {
+        "C": [
+          "Display 2,400 ÷ 100.",
+          "Use place value to predict 24 and verify by multiplying by 100."
+        ]
+      },
+      "29": {
+        "O": [
+          "Show 6,000 ÷ 10 and 6,000 ÷ 100.",
+          "Predict which quotient is smaller and why."
+        ]
+      },
+      "31": {
+        "C": [
+          "Draw a bar of 24 divided into four equal groups.",
+          "Find the value of one group and label the unknown in a division sentence."
+        ]
+      },
+      "32": {
+        "O": [
+          "Show a bar with six equal groups and a total of 42.",
+          "Identify the whole, number of groups and unknown group size."
+        ],
+        "C": [
+          "Present a story with 18 books delivered and 7 borrowed.",
+          "Identify the operation for finding the remaining stock if there were 50 books initially."
+        ]
+      },
+      "33": {
+        "O": [
+          "Show a table of starting stock, deliveries and loans.",
+          "Choose the operation for each type of change before solving."
+        ]
+      },
+      "36": {
+        "C": [
+          "Place a half-strip alongside two quarter-strips.",
+          "Explain why the lengths are equal although the number of parts differs."
+        ]
+      },
+      "37": {
+        "O": [
+          "Show 2/4 and 3/6 on fraction strips.",
+          "Predict their common simplest fraction and explain the equal whole."
+        ]
+      },
+      "39": {
+        "C": [
+          "Show 1/4 + 2/8 with equivalent strips.",
+          "Rename one quarter as two eighths and state the sum of one half."
+        ]
+      },
+      "40": {
+        "O": [
+          "Display a quarter-strip and an eighth-strip.",
+          "Identify the common eighth-size part before adding."
+        ],
+        "C": [
+          "Shade 5/8 of a strip and cover 2/8.",
+          "Name the uncovered 3/8."
+        ]
+      },
+      "41": {
+        "O": [
+          "Show 7/8 with two eighths marked for removal.",
+          "Predict the remaining fraction before drawing the model."
+        ]
+      },
+      "42": {
+        "C": [
+          "Show a hundred grid with 40 shaded cells.",
+          "Write 40/100 and 0.40; explain the zero in the hundredths place."
+        ]
+      },
+      "43": {
+        "O": [
+          "Show 0.07 and 0.70.",
+          "Identify which grid would have seven shaded cells and which would have seventy."
+        ]
+      },
+      "45": {
+        "C": [
+          "Write 0.7 + 0.24 with the decimal points misaligned.",
+          "Correct the alignment and calculate 0.94."
+        ]
+      },
+      "46": {
+        "O": [
+          "Show 0.85 − 0.36 in a place-value grid.",
+          "Identify which column requires an exchange before solving."
+        ]
+      },
+      "48": {
+        "C": [
+          "Shade 25 cells in a hundred grid.",
+          "Write 25/100, 0.25 and 25% as equivalent forms."
+        ]
+      },
+      "49": {
+        "O": [
+          "Show seven shaded cells on a hundred grid.",
+          "Write 0.07 and 7%, explaining the zero tenths."
+        ],
+        "C": [
+          "Shade two separate portions of the same hundred grid, 20 and 15 cells.",
+          "Explain why their combined portion is 35% of the same whole."
+        ]
+      },
+      "50": {
+        "O": [
+          "Show a bar with two labelled fractions of the same whole.",
+          "Identify what the whole represents before composing the word problem."
+        ]
+      },
+      "52": {
+        "C": [
+          "Display prices RM3.65 and RM2.80.",
+          "Estimate the total then add the exact amounts, showing two sen digits."
+        ]
+      },
+      "53": {
+        "O": [
+          "Show 85 sen plus 40 sen.",
+          "Exchange 100 sen for RM1 and record RM1.25."
+        ],
+        "C": [
+          "Show RM20 paid for an item costing RM7.50.",
+          "Estimate the change and verify the exact RM12.50."
+        ]
+      },
+      "54": {
+        "O": [
+          "Show a RM20 balance after spending RM7.50.",
+          "Explain how subtraction gives the new balance before another purchase."
+        ]
+      },
+      "61": {
+        "C": [
+          "Show a receipt with two costs and cash paid.",
+          "Write an equation connecting total purchases and change to the cash paid."
+        ]
+      },
+      "62": {
+        "O": [
+          "Show two prices RM4.50 and RM3.80 with RM10 paid.",
+          "Identify the two steps required to find and check change."
+        ]
+      },
+      "68": {
+        "C": [
+          "Mark 9:00 a.m. on a timeline and add 45 minutes.",
+          "Read 9:45 a.m. and show where the interval ends."
+        ]
+      },
+      "69": {
+        "O": [
+          "Show a timeline with a 20-minute increase and a 10-minute decrease.",
+          "Explain the direction of each arrow before calculating."
+        ]
+      },
+      "76": {
+        "C": [
+          "Show 3 kg and 250 g on separate cards.",
+          "Combine them as 3 kg 250 g and convert to 3,250 g."
+        ]
+      },
+      "77": {
+        "O": [
+          "Show 4,065 g and a conversion chart.",
+          "Identify four whole kilograms and the remaining 65 g."
+        ]
+      },
+      "81": {
+        "C": [
+          "Combine 1 L 250 mL with 750 mL on a jug diagram.",
+          "Explain why the total is exactly 2 L."
+        ]
+      },
+      "82": {
+        "O": [
+          "Show 2 L 100 mL − 650 mL.",
+          "Explain why one litre must be exchanged for 1,000 mL."
+        ]
+      },
+      "87": {
+        "C": [
+          "Show a triangular prism and a triangular pyramid.",
+          "Identify two matching triangular bases on the prism and one on the pyramid."
+        ]
+      },
+      "88": {
+        "O": [
+          "Display two solids with triangular faces.",
+          "Identify whether the solid has one base or two matching parallel bases."
+        ]
+      }
+    }
+  }
+}
