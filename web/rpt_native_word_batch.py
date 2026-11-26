@@ -105,3 +105,30 @@ def approved_science_document(year,source,account,config,*,root):
     lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
     result=personalized_word(blob,raw,lock,f"sains:{year}",account,config)
     return result,hashlib.sha256(result).hexdigest()
+
+def eligible_approved_math(year,source,*,root):
+    if not enabled() or source is None:
+        return False
+    from rpt_2027.matematik import sk_documents
+    try:
+        expected=sk_documents.document_path(year,root=Path(root)/"matematik")
+        return (year in sk_documents.DIGESTS and expected is not None and Path(source)==expected
+                and hashlib.sha256(expected.read_bytes()).hexdigest()==sk_documents.DIGESTS[year])
+    except OSError:
+        return False
+
+def approved_math_document(year,source,account,config,*,root):
+    from web.english_rpt_2027_http import _has_paid_access
+    if not _has_paid_access(account):
+        raise PermissionError("Paid RPT Word only")
+    if not eligible_approved_math(year,source,root=root):
+        raise ValueError("Approved Math PDF changed")
+    from rpt_2027.matematik import sk_documents
+    from tools.build_rpt_math_upper_native_word_20261126 import build_word
+    from web.rpt_native_word_cover import personalized_word
+    blob,raw,*_=build_word(year,root=root)
+    if hashlib.sha256(raw).hexdigest()!=sk_documents.DIGESTS[year]:
+        raise ValueError("Approved Math source changed")
+    lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
+    result=personalized_word(blob,raw,lock,f"matematik:{year}",account,config)
+    return result,hashlib.sha256(result).hexdigest()
