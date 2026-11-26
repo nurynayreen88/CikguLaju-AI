@@ -55,6 +55,36 @@ def prepare(crosswalk,drafts):
                 for x in selected:
                     task=clean(x["pupils"])
                     if task not in objectives:objectives.append(task);evidence.append(task)
+            # Explicit academic workload adaptation for the two most crowded
+            # Year 6 Mathematics slots. Retain both original source IDs and
+            # the required assessment evidence; shorten redundant examples.
+            # These are still teacher-review candidates, not release approval.
+            if key=="mathematics_dlp:6" and d["session"] in (52,101):
+                if d["session"]==52:
+                    assert sources==["L26","L27"],sources
+                    actions=[
+                        {"source_label":"L26","phase":"Set induction","teacher":"Display two fictional protection cards for insurance and takaful.","pupils":"Identify their shared protective purpose."},
+                        {"source_label":"L26","phase":"Practice and assessment","teacher":"Provide one comparison table and two cases: travel medical and house fire. Ask pupils to complete it independently.","pupils":"Distinguish risk transfer from mutual assistance; match each case to suitable coverage and explain one benefit and one coverage limit."},
+                        {"source_label":"L26","phase":"Closure","teacher":"Ask pupils to identify a coverage detail to check before relying on a benefit.","pupils":"Name a relevant coverage limit and explain why it matters."},
+                        {"source_label":"L27","phase":"Set induction","teacher":"Show a fictional supplier quote with item cost and service charge.","pupils":"Identify both amounts needed for a complete comparison."},
+                        {"source_label":"L27","phase":"Modelling","teacher":"Model one worked comparison of two offers including stated charges, hypothetical tax and a later rebate. Distinguish immediate outlay from effective cost.","pupils":"Record and compare both totals with a stated budget and explain the effect of the rebate."},
+                        {"source_label":"L27","phase":"Closure","teacher":"Show two fictional complete offers within a RM100 budget.","pupils":"Compare the remaining balances and justify one choice."},
+                    ]
+                    session_minutes=[3,20,3,3,27,4]
+                    objectives=[actions[1]["pupils"],actions[4]["pupils"]]
+                else:
+                    assert sources==["R08"],sources
+                    actions=[
+                        {"source_label":"R08","phase":"Set induction","teacher":"Display a 40-response chart with sectors 180°, 90°, 45° and 45°.","pupils":"Check that the angles total 360°."},
+                        {"source_label":"R08","phase":"Practice and assessment","teacher":"Set the four-count interpretation task and compare category A with all remaining responses combined.","pupils":"Calculate all four counts and use them to explain the relative likelihood of selecting each category."},
+                        {"source_label":"R08","phase":"Targeted reinforcement / PBD","teacher":"Provide a second chart of 24 survey responses with sectors 180°, 90°, 45° and 45°.","pupils":"Interpret the sector counts and justify one likely outcome without treating it as certain."},
+                        {"source_label":"R08","phase":"Closure","teacher":"Ask which pair of categories has equal likelihood in the second chart.","pupils":"Identify the equal pair and justify using its counts."},
+                    ]
+                    session_minutes=[5,30,20,5]
+                    objectives=[actions[1]["pupils"],actions[2]["pupils"]]
+                evidence=list(objectives)
+                assert sum(session_minutes)==d["slot_minutes"]
+                for activity,minutes in zip(actions,session_minutes,strict=True):activity["suggested_minutes"]=minutes
             assert objectives
             units=[];titles=[];standards=[];references=[]
             for p in records:
