@@ -41,13 +41,30 @@ def logical_glyphs(text):
     return result
 
 def clip_cells(page,rect):
-    physical=[]
-    for a,b in zip(BANDS[:4],BANDS[1:5]):
-        cell=page.get_text("text",clip=fitz.Rect(a,rect.y0,b,rect.y1)).strip()
-        physical.append(logical_glyphs(cell))
-    whole=logical_glyphs(page.get_text("text",clip=rect))
-    if Counter(norm(whole).split())!=Counter(norm(" ".join(physical)).split()):
-        raise ValueError("Source text crosses RTL column boundary")
+    # A glyph's bounding box can touch the neighboring cell even when the
+    # native line belongs to one column. Read the whole row once, preserving
+    # the exact text order within each native span and assigning by geometry.
+    columns=[[] for _ in range(4)]
+    original=[]
+    for block in page.get_text("dict",clip=rect)["blocks"]:
+        for line in block.get("lines",()):
+            parts=[[] for _ in range(4)]
+            for span in line["spans"]:
+                value=logical_glyphs(span["text"])
+                if not value.strip():continue
+                x0,_,x1,_=span["bbox"]
+                overlaps=[max(0,min(x1,b)-max(x0,a)) for a,b in zip(BANDS[:4],BANDS[1:5])]
+                i=max(range(4),key=lambda j:overlaps[j])
+                if overlaps[i]<=0 or max(0,x1-x0)-overlaps[i]>2.5:
+                    raise ValueError(f"Ambiguous RTL span at page {page.number+1}, x={x0:.1f}–{x1:.1f}")
+                original.append(value)
+                parts[i].append(value)
+            for i,values in enumerate(parts):
+                if values:columns[i].append(" ".join(values))
+    physical=["\n".join(lines).strip() for lines in columns]
+    letters=lambda v:Counter(c for c in v if not c.isspace())
+    if letters("".join(original))!=letters("".join(physical)):
+        raise ValueError("Source RTL character loss")
     return tuple(reversed(physical))
 
 def extract(path,subject):
