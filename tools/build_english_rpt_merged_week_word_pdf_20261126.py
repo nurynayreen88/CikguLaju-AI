@@ -17,6 +17,7 @@ import tempfile
 
 import fitz
 from docx import Document
+from tools.rpt_source_table_polish import format_source_cell
 from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_TABLE_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
@@ -167,7 +168,7 @@ def build_word(year):
     sec.left_margin=sec.right_margin=Cm(1.25)
     sec.top_margin=sec.bottom_margin=Cm(1.15)
     sec.header_distance=Cm(.5);sec.footer_distance=Cm(.5)
-    sec.header.paragraphs[0].text=f"SCHEME OF WORK ENGLISH YEAR {year} (SK) 2027"
+    sec.header.paragraphs[0].text=""
     footer=sec.footer.paragraphs[0]
     footer.alignment=WD_ALIGN_PARAGRAPH.RIGHT
     footer.add_run("Page ")
@@ -188,9 +189,9 @@ def build_word(year):
                     row=add_row(t)
                     topic,standards,references=rows[n]
                     label=f"Session {slot} · 60 min" if len(session)==1 else f"Session {slot} · RPH {session[0]:03d}+{session[1]:03d}"
-                    fill(row.cells[1],topic)
-                    fill(row.cells[2],standards)
-                    fill(row.cells[3],references)
+                    format_source_cell(row.cells[1],topic,fill,size=9,preserve=True)
+                    format_source_cell(row.cells[2],standards,fill,size=9)
+                    format_source_cell(row.cells[3],references,fill,size=9)
         else:
             row=add_row(t)
             fill(row.cells[1].merge(row.cells[3]),[CLOSED[week]])
@@ -215,8 +216,8 @@ def build_word(year):
             found=re.search(r"LESSON:\s*(\d+)",row.cells[1].text)
             if found:
                 lesson=int(found[1]);seen.append(lesson)
-                assert all(line in row.cells[2].text for line in rows[lesson][1])
-                assert all(line in row.cells[3].text for line in rows[lesson][2])
+                assert normalize(row.cells[2].text)==normalize(" ".join(rows[lesson][1]))
+                assert normalize(row.cells[3].text)==normalize(" ".join(rows[lesson][2]))
         first+=n
     assert seen==list(range(1,161))
     return blob,raw,active,digest
