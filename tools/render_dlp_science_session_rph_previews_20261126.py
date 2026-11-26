@@ -143,8 +143,20 @@ def main():
                         blob=compact_pdf(heading,details,rows,footer,teacher)
                         with fitz.open(stream=blob,filetype="pdf") as pdf:
                             new_text="".join(page.get_text() for page in pdf)
-                            # Compare all glyphs, excluding whitespace and page ordering.
-                            assert Counter(re.sub(r"\s+","",old_text))==Counter(re.sub(r"\s+","",new_text)),("layout changed text",n)
+                            # ReportLab repeats the activity table header on a
+                            # continuation page. Only allow removal of that exact
+                            # redundant header, never lesson or reflection text.
+                            normalize=lambda t:re.sub(r"\s+","",t)
+                            old_chars=Counter(normalize(old_text));new_chars=Counter(normalize(new_text))
+                            removed=old_chars-new_chars;added=new_chars-old_chars
+                            repeated_header=Counter(normalize("".join(rows[0])))
+                            allowed=Counter({ch:count*(old_pages-1) for ch,count in repeated_header.items()})
+                            assert not added and (not removed or removed==allowed),("layout changed text",n,dict(removed),dict(added))
+                            # Every teacher/pupil task and each nonempty details
+                            # value must independently survive text extraction.
+                            flat=normalize(new_text)
+                            for value in [p["teacher"] for p in activities]+[p["pupils"] for p in activities]+[v for _,v in details]+[v for _,v in footer]:
+                                assert normalize(str(value)) in flat,("missing compact field",n,str(value)[:100])
                             assert len(pdf)==1,("compact PDF page count",len(pdf))
                             assert all(span["size"]>=9.4 for page in pdf for block in page.get_text("dict")["blocks"] for line in block.get("lines",[]) for span in line["spans"] if span["text"].strip()),("unexpected font shrink",n)
                         counts["compact_spacing_fix"]+=1
