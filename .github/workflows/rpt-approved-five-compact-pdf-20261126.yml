@@ -1,74 +1,26 @@
-name: Build five approved Math Science compact free PDFs
+name: Verify five approved Math Science compact PDF candidates
 on:
   pull_request:
     branches: [production/cikgulaju-web-20261105]
     paths:
+      - 'rpt_2027/compact_approved_pdf_2027/**'
+      - 'web/rpt_compact_pdf.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'web_v1_static_preview/rpt-personalize.js'
+      - 'tests/test_rpt_compact_approved_pdf.py'
       - '.github/workflows/rpt-approved-five-compact-pdf-20261126.yml'
 permissions:
-  contents: write
+  contents: read
 jobs:
-  build:
-    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/rpt-approved-math-science-5-compact-pdf-20261126'
+  verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
-      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
-      - name: Generate only unpersonalized PDF release candidates
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          from hashlib import sha256
-          from tempfile import TemporaryDirectory
-          import json
-          import fitz
-          from tools.build_rpt_math_upper_native_word_20261126 import render as math_render
-          from tools.build_rpt_science_approved_word_20261126 import render as science_render
-          from rpt_2027.matematik import sk_documents as math
-          from rpt_2027.sains import sk_documents as science
-          from web.rpt_native_word_batch import APPROVED_SCIENCE_PINS
-          root=Path("rpt_2027")
-          output=root/"compact_approved_pdf_2027"
-          output.mkdir(parents=True,exist_ok=True)
-          entries={}
-          with TemporaryDirectory() as temp:
-              for subject,years,builder,source,pins in (
-                  ("matematik",(4,5,6),math_render,math,math.DIGESTS),
-                  ("sains",(5,6),science_render,science,APPROVED_SCIENCE_PINS)):
-                  for year in years:
-                      src=source.document_path(year,root=root/subject)
-                      assert sha256(src.read_bytes()).hexdigest()==pins[year]
-                      builder(year,Path(temp))
-                      candidate=Path(temp)/f"RPT_{subject.upper()}_SK_TAHUN_{year}_2027.pdf"
-                      data=candidate.read_bytes()
-                      with fitz.open(src) as a,fitz.open(candidate) as b:
-                          assert a[0].get_pixmap().samples==b[0].get_pixmap().samples
-                          assert all(p.get_text().strip() for p in list(b)[1:])
-                          for p in b:
-                              assert p.get_pixmap(matrix=fitz.Matrix(.5,.5),alpha=False).width>0
-                          e={"path":f"{subject}/tahun_{year}.pdf","source_sha256":pins[year],
-                             "sha256":sha256(data).hexdigest(),"bytes":len(data),"pages":len(b),
-                             "source_pages":len(a)}
-                      dest=output/e["path"]
-                      dest.parent.mkdir(parents=True,exist_ok=True)
-                      dest.write_bytes(data)
-                      entries[f"{subject}:{year}"]=e
-          assert len(entries)==5 and len(list(output.rglob("*.pdf")))==5
-          assert not list(output.rglob("*.docx"))
-          (output/"manifest.json").write_text(json.dumps({"version":1,"status":"LAYOUT_QA_CANDIDATE","count":5,"files":entries},indent=2)+"\n")
-          PY
-      - name: Commit only five free PDF candidates to isolated review branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- rpt_2027/compact_approved_pdf_2027
-          git diff --cached --name-only | python -c 'import sys; p=sys.stdin.read().splitlines(); assert len(p)==6 and all(s.startswith("rpt_2027/compact_approved_pdf_2027/") and (s.endswith(".pdf") or s.endswith("/manifest.json")) for s in p)'
-          git commit -m "build(rpt): five approved Math Science compact free PDF candidates"
-          git push origin HEAD:refs/heads/feat/rpt-approved-math-science-5-compact-pdf-20261126
+      - run: python -m unittest discover -s tests -p 'test_rpt_compact_approved_pdf.py' -v
