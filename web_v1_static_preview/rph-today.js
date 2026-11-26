@@ -71,7 +71,7 @@
  }
  function nativeLessonLabel(item,code,year){
   let text=String(item.label||"").trim();
-  if(code==="SCIENCE_DLP"&&/^SESSION-(?:00[1-9]|0[1-6][0-9]|070)$/.test(String(item.value))&&/^Session \d{2}\b/.test(text))return text;
+  if((code==="SCIENCE_DLP"||code==="MATH_DLP")&&/^SESSION-(?:00[1-9]|0[1-9][0-9]|10[01])$/.test(String(item.value))&&Number(String(item.value).slice(-3))<=(code==="MATH_DLP"?101:70)&&/^Session \d{2,3}\b/.test(text))return text;
   if(!/^(?:PdP|Lesson)\s*0*[1-9][0-9]*/i.test(text)){
    const n=item.pdp_no??item.lesson_no??item.sequence_no;
    if(Number.isInteger(n)&&n>0&&n<10000)

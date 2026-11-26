@@ -1,0 +1,3282 @@
+[
+  {
+    "session": 1,
+    "week": 1,
+    "dates": [
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L01"
+    ],
+    "source_labels": [
+      "L01"
+    ],
+    "titles": [
+      "L01: Lesson 01 Read and write numbers to 100,000 Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 2,
+    "week": 1,
+    "dates": [
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L02"
+    ],
+    "source_labels": [
+      "L02"
+    ],
+    "titles": [
+      "L02: Lesson 02 Place value and expanded notation Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 3,
+    "week": 2,
+    "dates": [
+      {
+        "week": "M02",
+        "start": "2027-01-10",
+        "end": "2027-01-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-11",
+        "end": "2027-01-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L03"
+    ],
+    "source_labels": [
+      "L03"
+    ],
+    "titles": [
+      "L03: Lesson 03 Compare, order and complete sequences Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 4,
+    "week": 2,
+    "dates": [
+      {
+        "week": "M02",
+        "start": "2027-01-10",
+        "end": "2027-01-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-11",
+        "end": "2027-01-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L03",
+      "DLP-MAT-Y4-L04"
+    ],
+    "source_labels": [
+      "L03",
+      "L04"
+    ],
+    "titles": [
+      "L03: Lesson 03 Compare, order and complete sequences Unit 1 Numbers and Operations",
+      "L04: Lesson 04 Identify and classify odd and even numbers Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 5,
+    "week": 2,
+    "dates": [
+      {
+        "week": "M02",
+        "start": "2027-01-10",
+        "end": "2027-01-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-11",
+        "end": "2027-01-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L04",
+      "DLP-MAT-Y4-L05"
+    ],
+    "source_labels": [
+      "L04",
+      "L05"
+    ],
+    "titles": [
+      "L04: Lesson 04 Identify and classify odd and even numbers Unit 1 Numbers and Operations",
+      "L05: Lesson 05 Identify and extend a number pattern Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 6,
+    "week": 3,
+    "dates": [
+      {
+        "week": "M03",
+        "start": "2027-01-17",
+        "end": "2027-01-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-18",
+        "end": "2027-01-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L05"
+    ],
+    "source_labels": [
+      "L05"
+    ],
+    "titles": [
+      "L05: Lesson 05 Identify and extend a number pattern Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 7,
+    "week": 3,
+    "dates": [
+      {
+        "week": "M03",
+        "start": "2027-01-17",
+        "end": "2027-01-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-18",
+        "end": "2027-01-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L06"
+    ],
+    "source_labels": [
+      "L06"
+    ],
+    "titles": [
+      "L06: Lesson 06 Estimate using a reference set Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 8,
+    "week": 3,
+    "dates": [
+      {
+        "week": "M03",
+        "start": "2027-01-17",
+        "end": "2027-01-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-18",
+        "end": "2027-01-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L07"
+    ],
+    "source_labels": [
+      "L07"
+    ],
+    "titles": [
+      "L07: Lesson 07 Round to the nearest ten thousand Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 9,
+    "week": 4,
+    "dates": [
+      {
+        "week": "M04",
+        "start": "2027-01-24",
+        "end": "2027-01-28",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-25",
+        "end": "2027-01-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L08"
+    ],
+    "source_labels": [
+      "L08"
+    ],
+    "titles": [
+      "L08: Lesson 08 Add within 100,000 Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 10,
+    "week": 4,
+    "dates": [
+      {
+        "week": "M04",
+        "start": "2027-01-24",
+        "end": "2027-01-28",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-25",
+        "end": "2027-01-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L08",
+      "DLP-MAT-Y4-L09"
+    ],
+    "source_labels": [
+      "L08",
+      "L09"
+    ],
+    "titles": [
+      "L08: Lesson 08 Add within 100,000 Unit 1 Numbers and Operations",
+      "L09: Lesson 09 Find an unknown in addition Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 11,
+    "week": 4,
+    "dates": [
+      {
+        "week": "M04",
+        "start": "2027-01-24",
+        "end": "2027-01-28",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-25",
+        "end": "2027-01-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L09",
+      "DLP-MAT-Y4-L10"
+    ],
+    "source_labels": [
+      "L09",
+      "L10"
+    ],
+    "titles": [
+      "L09: Lesson 09 Find an unknown in addition Unit 1 Numbers and Operations",
+      "L10: Lesson 10 Subtract within 100,000 Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 12,
+    "week": 5,
+    "dates": [
+      {
+        "week": "M05",
+        "start": "2027-01-31",
+        "end": "2027-02-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M05",
+        "start": "2027-02-01",
+        "end": "2027-02-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L10"
+    ],
+    "source_labels": [
+      "L10"
+    ],
+    "titles": [
+      "L10: Lesson 10 Subtract within 100,000 Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 13,
+    "week": 5,
+    "dates": [
+      {
+        "week": "M05",
+        "start": "2027-01-31",
+        "end": "2027-02-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M05",
+        "start": "2027-02-01",
+        "end": "2027-02-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L11"
+    ],
+    "source_labels": [
+      "L11"
+    ],
+    "titles": [
+      "L11: Lesson 11 Find an unknown in subtraction Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 14,
+    "week": 7,
+    "dates": [
+      {
+        "week": "M07",
+        "start": "2027-02-14",
+        "end": "2027-02-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-15",
+        "end": "2027-02-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L12"
+    ],
+    "source_labels": [
+      "L12"
+    ],
+    "titles": [
+      "L12: Lesson 12 Combine addition and subtraction Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 15,
+    "week": 7,
+    "dates": [
+      {
+        "week": "M07",
+        "start": "2027-02-14",
+        "end": "2027-02-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-15",
+        "end": "2027-02-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L12",
+      "DLP-MAT-Y4-L13"
+    ],
+    "source_labels": [
+      "L12",
+      "L13"
+    ],
+    "titles": [
+      "L12: Lesson 12 Combine addition and subtraction Unit 1 Numbers and Operations",
+      "L13: Lesson 13 Multiply by one and two digits Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 16,
+    "week": 7,
+    "dates": [
+      {
+        "week": "M07",
+        "start": "2027-02-14",
+        "end": "2027-02-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-15",
+        "end": "2027-02-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L13"
+    ],
+    "source_labels": [
+      "L13"
+    ],
+    "titles": [
+      "L13: Lesson 13 Multiply by one and two digits Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 17,
+    "week": 8,
+    "dates": [
+      {
+        "week": "M08",
+        "start": "2027-02-21",
+        "end": "2027-02-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-22",
+        "end": "2027-02-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L14"
+    ],
+    "source_labels": [
+      "L14"
+    ],
+    "titles": [
+      "L14: Lesson 14 Multiply by 100 and 1,000 Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 18,
+    "week": 8,
+    "dates": [
+      {
+        "week": "M08",
+        "start": "2027-02-21",
+        "end": "2027-02-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-22",
+        "end": "2027-02-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L14"
+    ],
+    "source_labels": [
+      "L14"
+    ],
+    "titles": [
+      "L14: Lesson 14 Multiply by 100 and 1,000 Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 19,
+    "week": 8,
+    "dates": [
+      {
+        "week": "M08",
+        "start": "2027-02-21",
+        "end": "2027-02-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-22",
+        "end": "2027-02-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L15"
+    ],
+    "source_labels": [
+      "L15"
+    ],
+    "titles": [
+      "L15: Lesson 15 Divide by 10, 100 and 1,000 Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 20,
+    "week": 9,
+    "dates": [
+      {
+        "week": "M09",
+        "start": "2027-02-28",
+        "end": "2027-03-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-03-01",
+        "end": "2027-03-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L16"
+    ],
+    "source_labels": [
+      "L16"
+    ],
+    "titles": [
+      "L16: Lesson 16 Divide by one and two digits Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 21,
+    "week": 9,
+    "dates": [
+      {
+        "week": "M09",
+        "start": "2027-02-28",
+        "end": "2027-03-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-03-01",
+        "end": "2027-03-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L16",
+      "DLP-MAT-Y4-L17"
+    ],
+    "source_labels": [
+      "L16",
+      "L17"
+    ],
+    "titles": [
+      "L16: Lesson 16 Divide by one and two digits Unit 1 Numbers and Operations",
+      "L17: Lesson 17 Combine multiplication and division Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 22,
+    "week": 9,
+    "dates": [
+      {
+        "week": "M09",
+        "start": "2027-02-28",
+        "end": "2027-03-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-03-01",
+        "end": "2027-03-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L17"
+    ],
+    "source_labels": [
+      "L17"
+    ],
+    "titles": [
+      "L17: Lesson 17 Combine multiplication and division Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 23,
+    "week": 10,
+    "dates": [
+      {
+        "week": "M10",
+        "start": "2027-03-14",
+        "end": "2027-03-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-15",
+        "end": "2027-03-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L18"
+    ],
+    "source_labels": [
+      "L18"
+    ],
+    "titles": [
+      "L18: Lesson 18 Choose operations for daily problems Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 24,
+    "week": 10,
+    "dates": [
+      {
+        "week": "M10",
+        "start": "2027-03-14",
+        "end": "2027-03-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-15",
+        "end": "2027-03-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L18",
+      "DLP-MAT-Y4-L19"
+    ],
+    "source_labels": [
+      "L18",
+      "L19"
+    ],
+    "titles": [
+      "L18: Lesson 18 Choose operations for daily problems Unit 1 Numbers and Operations",
+      "L19: Lesson 19 Solve a mixed problem and an unknown Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 25,
+    "week": 10,
+    "dates": [
+      {
+        "week": "M10",
+        "start": "2027-03-14",
+        "end": "2027-03-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-15",
+        "end": "2027-03-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L19"
+    ],
+    "source_labels": [
+      "L19"
+    ],
+    "titles": [
+      "L19: Lesson 19 Solve a mixed problem and an unknown Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 26,
+    "week": 11,
+    "dates": [
+      {
+        "week": "M11",
+        "start": "2027-03-21",
+        "end": "2027-03-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-R01"
+    ],
+    "source_labels": [
+      "R01"
+    ],
+    "titles": [
+      "R01: Review Unit 1 Numbers and Operations"
+    ]
+  },
+  {
+    "session": 27,
+    "week": 11,
+    "dates": [
+      {
+        "week": "M11",
+        "start": "2027-03-21",
+        "end": "2027-03-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L20"
+    ],
+    "source_labels": [
+      "L20"
+    ],
+    "titles": [
+      "L20: Lesson 20 Convert improper fractions and mixed numbers Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 28,
+    "week": 11,
+    "dates": [
+      {
+        "week": "M11",
+        "start": "2027-03-21",
+        "end": "2027-03-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L21"
+    ],
+    "source_labels": [
+      "L21"
+    ],
+    "titles": [
+      "L21: Lesson 21 Add fractions, whole numbers and mixed numbers Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 29,
+    "week": 12,
+    "dates": [
+      {
+        "week": "M12",
+        "start": "2027-03-28",
+        "end": "2027-04-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-29",
+        "end": "2027-04-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L21",
+      "DLP-MAT-Y4-L22"
+    ],
+    "source_labels": [
+      "L21",
+      "L22"
+    ],
+    "titles": [
+      "L21: Lesson 21 Add fractions, whole numbers and mixed numbers Unit 2 Fractions, Decimals, and Percentages",
+      "L22: Lesson 22 Subtract fractions and mixed numbers Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 30,
+    "week": 12,
+    "dates": [
+      {
+        "week": "M12",
+        "start": "2027-03-28",
+        "end": "2027-04-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-29",
+        "end": "2027-04-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L22"
+    ],
+    "source_labels": [
+      "L22"
+    ],
+    "titles": [
+      "L22: Lesson 22 Subtract fractions and mixed numbers Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 31,
+    "week": 12,
+    "dates": [
+      {
+        "week": "M12",
+        "start": "2027-03-28",
+        "end": "2027-04-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-29",
+        "end": "2027-04-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L23"
+    ],
+    "source_labels": [
+      "L23"
+    ],
+    "titles": [
+      "L23: Lesson 23 Combine addition and subtraction of fractions Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 32,
+    "week": 13,
+    "dates": [
+      {
+        "week": "M13",
+        "start": "2027-04-04",
+        "end": "2027-04-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-05",
+        "end": "2027-04-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L23",
+      "DLP-MAT-Y4-L24"
+    ],
+    "source_labels": [
+      "L23",
+      "L24"
+    ],
+    "titles": [
+      "L23: Lesson 23 Combine addition and subtraction of fractions Unit 2 Fractions, Decimals, and Percentages",
+      "L24: Lesson 24 Find a fraction of a quantity Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 33,
+    "week": 13,
+    "dates": [
+      {
+        "week": "M13",
+        "start": "2027-04-04",
+        "end": "2027-04-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-05",
+        "end": "2027-04-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L24"
+    ],
+    "source_labels": [
+      "L24"
+    ],
+    "titles": [
+      "L24: Lesson 24 Find a fraction of a quantity Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 34,
+    "week": 13,
+    "dates": [
+      {
+        "week": "M13",
+        "start": "2027-04-04",
+        "end": "2027-04-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-05",
+        "end": "2027-04-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L25"
+    ],
+    "source_labels": [
+      "L25"
+    ],
+    "titles": [
+      "L25: Lesson 25 Add decimals to three decimal places Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 35,
+    "week": 14,
+    "dates": [
+      {
+        "week": "M14",
+        "start": "2027-04-11",
+        "end": "2027-04-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-12",
+        "end": "2027-04-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L25",
+      "DLP-MAT-Y4-L26"
+    ],
+    "source_labels": [
+      "L25",
+      "L26"
+    ],
+    "titles": [
+      "L25: Lesson 25 Add decimals to three decimal places Unit 2 Fractions, Decimals, and Percentages",
+      "L26: Lesson 26 Subtract decimals to three decimal places Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 36,
+    "week": 14,
+    "dates": [
+      {
+        "week": "M14",
+        "start": "2027-04-11",
+        "end": "2027-04-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-12",
+        "end": "2027-04-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L26"
+    ],
+    "source_labels": [
+      "L26"
+    ],
+    "titles": [
+      "L26: Lesson 26 Subtract decimals to three decimal places Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 37,
+    "week": 14,
+    "dates": [
+      {
+        "week": "M14",
+        "start": "2027-04-11",
+        "end": "2027-04-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-12",
+        "end": "2027-04-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L27"
+    ],
+    "source_labels": [
+      "L27"
+    ],
+    "titles": [
+      "L27: Lesson 27 Multiply decimals Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 38,
+    "week": 15,
+    "dates": [
+      {
+        "week": "M15",
+        "start": "2027-04-18",
+        "end": "2027-04-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-19",
+        "end": "2027-04-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L27",
+      "DLP-MAT-Y4-L28"
+    ],
+    "source_labels": [
+      "L27",
+      "L28"
+    ],
+    "titles": [
+      "L27: Lesson 27 Multiply decimals Unit 2 Fractions, Decimals, and Percentages",
+      "L28: Lesson 28 Divide decimals Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 39,
+    "week": 15,
+    "dates": [
+      {
+        "week": "M15",
+        "start": "2027-04-18",
+        "end": "2027-04-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-19",
+        "end": "2027-04-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L28"
+    ],
+    "source_labels": [
+      "L28"
+    ],
+    "titles": [
+      "L28: Lesson 28 Divide decimals Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 40,
+    "week": 15,
+    "dates": [
+      {
+        "week": "M15",
+        "start": "2027-04-18",
+        "end": "2027-04-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-19",
+        "end": "2027-04-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L29"
+    ],
+    "source_labels": [
+      "L29"
+    ],
+    "titles": [
+      "L29: Lesson 29 Convert between fractions and percentages Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 41,
+    "week": 16,
+    "dates": [
+      {
+        "week": "M16",
+        "start": "2027-04-25",
+        "end": "2027-04-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-26",
+        "end": "2027-04-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L30"
+    ],
+    "source_labels": [
+      "L30"
+    ],
+    "titles": [
+      "L30: Lesson 30 Find percentages of a quantity Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 42,
+    "week": 16,
+    "dates": [
+      {
+        "week": "M16",
+        "start": "2027-04-25",
+        "end": "2027-04-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-26",
+        "end": "2027-04-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L31"
+    ],
+    "source_labels": [
+      "L31"
+    ],
+    "titles": [
+      "L31: Lesson 31 Solve fraction, decimal and percentage problems Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 43,
+    "week": 16,
+    "dates": [
+      {
+        "week": "M16",
+        "start": "2027-04-25",
+        "end": "2027-04-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-26",
+        "end": "2027-04-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L31"
+    ],
+    "source_labels": [
+      "L31"
+    ],
+    "titles": [
+      "L31: Lesson 31 Solve fraction, decimal and percentage problems Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 44,
+    "week": 17,
+    "dates": [
+      {
+        "week": "M17",
+        "start": "2027-05-02",
+        "end": "2027-05-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-03",
+        "end": "2027-05-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-R02"
+    ],
+    "source_labels": [
+      "R02"
+    ],
+    "titles": [
+      "R02: Review Unit 2 Fractions, Decimals, and Percentages"
+    ]
+  },
+  {
+    "session": 45,
+    "week": 17,
+    "dates": [
+      {
+        "week": "M17",
+        "start": "2027-05-02",
+        "end": "2027-05-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-03",
+        "end": "2027-05-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L32"
+    ],
+    "source_labels": [
+      "L32"
+    ],
+    "titles": [
+      "L32: Lesson 32 Add and subtract amounts of money Unit 3 Money"
+    ]
+  },
+  {
+    "session": 46,
+    "week": 17,
+    "dates": [
+      {
+        "week": "M17",
+        "start": "2027-05-02",
+        "end": "2027-05-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-03",
+        "end": "2027-05-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L32"
+    ],
+    "source_labels": [
+      "L32"
+    ],
+    "titles": [
+      "L32: Lesson 32 Add and subtract amounts of money Unit 3 Money"
+    ]
+  },
+  {
+    "session": 47,
+    "week": 20,
+    "dates": [
+      {
+        "week": "M20",
+        "start": "2027-06-06",
+        "end": "2027-06-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M20",
+        "start": "2027-06-07",
+        "end": "2027-06-11",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L33"
+    ],
+    "source_labels": [
+      "L33"
+    ],
+    "titles": [
+      "L33: Lesson 33 Combine addition and subtraction of money Unit 3 Money"
+    ]
+  },
+  {
+    "session": 48,
+    "week": 20,
+    "dates": [
+      {
+        "week": "M20",
+        "start": "2027-06-06",
+        "end": "2027-06-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M20",
+        "start": "2027-06-07",
+        "end": "2027-06-11",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L34"
+    ],
+    "source_labels": [
+      "L34"
+    ],
+    "titles": [
+      "L34: Lesson 34 Multiply and divide amounts of money Unit 3 Money"
+    ]
+  },
+  {
+    "session": 49,
+    "week": 21,
+    "dates": [
+      {
+        "week": "M21",
+        "start": "2027-06-13",
+        "end": "2027-06-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-14",
+        "end": "2027-06-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L34",
+      "DLP-MAT-Y4-L35"
+    ],
+    "source_labels": [
+      "L34",
+      "L35"
+    ],
+    "titles": [
+      "L34: Lesson 34 Multiply and divide amounts of money Unit 3 Money",
+      "L35: Lesson 35 Combine multiplication and division of money Unit 3 Money"
+    ]
+  },
+  {
+    "session": 50,
+    "week": 21,
+    "dates": [
+      {
+        "week": "M21",
+        "start": "2027-06-13",
+        "end": "2027-06-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-14",
+        "end": "2027-06-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L35"
+    ],
+    "source_labels": [
+      "L35"
+    ],
+    "titles": [
+      "L35: Lesson 35 Combine multiplication and division of money Unit 3 Money"
+    ]
+  },
+  {
+    "session": 51,
+    "week": 21,
+    "dates": [
+      {
+        "week": "M21",
+        "start": "2027-06-13",
+        "end": "2027-06-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-14",
+        "end": "2027-06-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L36"
+    ],
+    "source_labels": [
+      "L36"
+    ],
+    "titles": [
+      "L36: Lesson 36 Plan a budget for a savings target Unit 3 Money"
+    ]
+  },
+  {
+    "session": 52,
+    "week": 22,
+    "dates": [
+      {
+        "week": "M22",
+        "start": "2027-06-20",
+        "end": "2027-06-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-21",
+        "end": "2027-06-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L37"
+    ],
+    "source_labels": [
+      "L37"
+    ],
+    "titles": [
+      "L37: Lesson 37 Record savings and expenses Unit 3 Money"
+    ]
+  },
+  {
+    "session": 53,
+    "week": 22,
+    "dates": [
+      {
+        "week": "M22",
+        "start": "2027-06-20",
+        "end": "2027-06-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-21",
+        "end": "2027-06-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L38"
+    ],
+    "source_labels": [
+      "L38"
+    ],
+    "titles": [
+      "L38: Lesson 38 Compare financial choices Unit 3 Money"
+    ]
+  },
+  {
+    "session": 54,
+    "week": 22,
+    "dates": [
+      {
+        "week": "M22",
+        "start": "2027-06-20",
+        "end": "2027-06-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-21",
+        "end": "2027-06-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L38"
+    ],
+    "source_labels": [
+      "L38"
+    ],
+    "titles": [
+      "L38: Lesson 38 Compare financial choices Unit 3 Money"
+    ]
+  },
+  {
+    "session": 55,
+    "week": 23,
+    "dates": [
+      {
+        "week": "M23",
+        "start": "2027-06-27",
+        "end": "2027-07-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-28",
+        "end": "2027-07-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L39"
+    ],
+    "source_labels": [
+      "L39"
+    ],
+    "titles": [
+      "L39: Lesson 39 Identify currencies and compare published rates Unit 3 Money"
+    ]
+  },
+  {
+    "session": 56,
+    "week": 23,
+    "dates": [
+      {
+        "week": "M23",
+        "start": "2027-06-27",
+        "end": "2027-07-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-28",
+        "end": "2027-07-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L40"
+    ],
+    "source_labels": [
+      "L40"
+    ],
+    "titles": [
+      "L40: Lesson 40 Compare payment methods Unit 3 Money"
+    ]
+  },
+  {
+    "session": 57,
+    "week": 23,
+    "dates": [
+      {
+        "week": "M23",
+        "start": "2027-06-27",
+        "end": "2027-07-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-28",
+        "end": "2027-07-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L41"
+    ],
+    "source_labels": [
+      "L41"
+    ],
+    "titles": [
+      "L41: Lesson 41 Solve a multi-step money problem Unit 3 Money"
+    ]
+  },
+  {
+    "session": 58,
+    "week": 24,
+    "dates": [
+      {
+        "week": "M24",
+        "start": "2027-07-04",
+        "end": "2027-07-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-05",
+        "end": "2027-07-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L41"
+    ],
+    "source_labels": [
+      "L41"
+    ],
+    "titles": [
+      "L41: Lesson 41 Solve a multi-step money problem Unit 3 Money"
+    ]
+  },
+  {
+    "session": 59,
+    "week": 24,
+    "dates": [
+      {
+        "week": "M24",
+        "start": "2027-07-04",
+        "end": "2027-07-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-05",
+        "end": "2027-07-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-R03"
+    ],
+    "source_labels": [
+      "R03"
+    ],
+    "titles": [
+      "R03: Review Unit 3 Money"
+    ]
+  },
+  {
+    "session": 60,
+    "week": 24,
+    "dates": [
+      {
+        "week": "M24",
+        "start": "2027-07-04",
+        "end": "2027-07-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-05",
+        "end": "2027-07-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L42"
+    ],
+    "source_labels": [
+      "L42"
+    ],
+    "titles": [
+      "L42: Lesson 42 Convert 12-hour and 24-hour times Unit 4 Time"
+    ]
+  },
+  {
+    "session": 61,
+    "week": 25,
+    "dates": [
+      {
+        "week": "M25",
+        "start": "2027-07-11",
+        "end": "2027-07-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-12",
+        "end": "2027-07-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L43"
+    ],
+    "source_labels": [
+      "L43"
+    ],
+    "titles": [
+      "L43: Lesson 43 Calculate duration within 24 hours Unit 4 Time"
+    ]
+  },
+  {
+    "session": 62,
+    "week": 25,
+    "dates": [
+      {
+        "week": "M25",
+        "start": "2027-07-11",
+        "end": "2027-07-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-12",
+        "end": "2027-07-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L44"
+    ],
+    "source_labels": [
+      "L44"
+    ],
+    "titles": [
+      "L44: Lesson 44 Estimate and verify a duration Unit 4 Time"
+    ]
+  },
+  {
+    "session": 63,
+    "week": 25,
+    "dates": [
+      {
+        "week": "M25",
+        "start": "2027-07-11",
+        "end": "2027-07-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-12",
+        "end": "2027-07-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L45"
+    ],
+    "source_labels": [
+      "L45"
+    ],
+    "titles": [
+      "L45: Lesson 45 Relate and convert time units Unit 4 Time"
+    ]
+  },
+  {
+    "session": 64,
+    "week": 26,
+    "dates": [
+      {
+        "week": "M26",
+        "start": "2027-07-18",
+        "end": "2027-07-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-19",
+        "end": "2027-07-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L45",
+      "DLP-MAT-Y4-L46"
+    ],
+    "source_labels": [
+      "L45",
+      "L46"
+    ],
+    "titles": [
+      "L45: Lesson 45 Relate and convert time units Unit 4 Time",
+      "L46: Lesson 46 Add and subtract durations Unit 4 Time"
+    ]
+  },
+  {
+    "session": 65,
+    "week": 26,
+    "dates": [
+      {
+        "week": "M26",
+        "start": "2027-07-18",
+        "end": "2027-07-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-19",
+        "end": "2027-07-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L46"
+    ],
+    "source_labels": [
+      "L46"
+    ],
+    "titles": [
+      "L46: Lesson 46 Add and subtract durations Unit 4 Time"
+    ]
+  },
+  {
+    "session": 66,
+    "week": 26,
+    "dates": [
+      {
+        "week": "M26",
+        "start": "2027-07-18",
+        "end": "2027-07-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-19",
+        "end": "2027-07-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L47"
+    ],
+    "source_labels": [
+      "L47"
+    ],
+    "titles": [
+      "L47: Lesson 47 Multiply and divide durations Unit 4 Time"
+    ]
+  },
+  {
+    "session": 67,
+    "week": 27,
+    "dates": [
+      {
+        "week": "M27",
+        "start": "2027-07-25",
+        "end": "2027-07-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-26",
+        "end": "2027-07-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L47",
+      "DLP-MAT-Y4-L48"
+    ],
+    "source_labels": [
+      "L47",
+      "L48"
+    ],
+    "titles": [
+      "L47: Lesson 47 Multiply and divide durations Unit 4 Time",
+      "L48: Lesson 48 Solve a timetable problem Unit 4 Time"
+    ]
+  },
+  {
+    "session": 68,
+    "week": 27,
+    "dates": [
+      {
+        "week": "M27",
+        "start": "2027-07-25",
+        "end": "2027-07-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-26",
+        "end": "2027-07-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L48"
+    ],
+    "source_labels": [
+      "L48"
+    ],
+    "titles": [
+      "L48: Lesson 48 Solve a timetable problem Unit 4 Time"
+    ]
+  },
+  {
+    "session": 69,
+    "week": 27,
+    "dates": [
+      {
+        "week": "M27",
+        "start": "2027-07-25",
+        "end": "2027-07-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-26",
+        "end": "2027-07-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-R04"
+    ],
+    "source_labels": [
+      "R04"
+    ],
+    "titles": [
+      "R04: Review Unit 4 Time"
+    ]
+  },
+  {
+    "session": 70,
+    "week": 28,
+    "dates": [
+      {
+        "week": "M28",
+        "start": "2027-08-01",
+        "end": "2027-08-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-02",
+        "end": "2027-08-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L49"
+    ],
+    "source_labels": [
+      "L49"
+    ],
+    "titles": [
+      "L49: Lesson 49 Recognise length units and measure in millimetres Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 71,
+    "week": 28,
+    "dates": [
+      {
+        "week": "M28",
+        "start": "2027-08-01",
+        "end": "2027-08-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-02",
+        "end": "2027-08-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L50"
+    ],
+    "source_labels": [
+      "L50"
+    ],
+    "titles": [
+      "L50: Lesson 50 Relate and convert length units Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 72,
+    "week": 28,
+    "dates": [
+      {
+        "week": "M28",
+        "start": "2027-08-01",
+        "end": "2027-08-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-02",
+        "end": "2027-08-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L50"
+    ],
+    "source_labels": [
+      "L50"
+    ],
+    "titles": [
+      "L50: Lesson 50 Relate and convert length units Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 73,
+    "week": 29,
+    "dates": [
+      {
+        "week": "M29",
+        "start": "2027-08-08",
+        "end": "2027-08-12",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-09",
+        "end": "2027-08-13",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L51"
+    ],
+    "source_labels": [
+      "L51"
+    ],
+    "titles": [
+      "L51: Lesson 51 Estimate a distance in kilometres Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 74,
+    "week": 29,
+    "dates": [
+      {
+        "week": "M29",
+        "start": "2027-08-08",
+        "end": "2027-08-12",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-09",
+        "end": "2027-08-13",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L52"
+    ],
+    "source_labels": [
+      "L52"
+    ],
+    "titles": [
+      "L52: Lesson 52 Add and subtract lengths Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 75,
+    "week": 29,
+    "dates": [
+      {
+        "week": "M29",
+        "start": "2027-08-08",
+        "end": "2027-08-12",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-09",
+        "end": "2027-08-13",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L53"
+    ],
+    "source_labels": [
+      "L53"
+    ],
+    "titles": [
+      "L53: Lesson 53 Multiply and divide lengths Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 76,
+    "week": 30,
+    "dates": [
+      {
+        "week": "M30",
+        "start": "2027-08-15",
+        "end": "2027-08-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-16",
+        "end": "2027-08-20",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L53",
+      "DLP-MAT-Y4-L54"
+    ],
+    "source_labels": [
+      "L53",
+      "L54"
+    ],
+    "titles": [
+      "L53: Lesson 53 Multiply and divide lengths Unit 5 Length, Mass, and Volume of Liquid",
+      "L54: Lesson 54 Calculate with kilograms and grams Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 77,
+    "week": 30,
+    "dates": [
+      {
+        "week": "M30",
+        "start": "2027-08-15",
+        "end": "2027-08-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-16",
+        "end": "2027-08-20",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L54"
+    ],
+    "source_labels": [
+      "L54"
+    ],
+    "titles": [
+      "L54: Lesson 54 Calculate with kilograms and grams Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 78,
+    "week": 30,
+    "dates": [
+      {
+        "week": "M30",
+        "start": "2027-08-15",
+        "end": "2027-08-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-16",
+        "end": "2027-08-20",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L55"
+    ],
+    "source_labels": [
+      "L55"
+    ],
+    "titles": [
+      "L55: Lesson 55 Calculate with litres and millilitres Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 79,
+    "week": 31,
+    "dates": [
+      {
+        "week": "M31",
+        "start": "2027-08-22",
+        "end": "2027-08-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-23",
+        "end": "2027-08-27",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L55",
+      "DLP-MAT-Y4-L56"
+    ],
+    "source_labels": [
+      "L55",
+      "L56"
+    ],
+    "titles": [
+      "L55: Lesson 55 Calculate with litres and millilitres Unit 5 Length, Mass, and Volume of Liquid",
+      "L56: Lesson 56 Solve a measurement problem Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 80,
+    "week": 31,
+    "dates": [
+      {
+        "week": "M31",
+        "start": "2027-08-22",
+        "end": "2027-08-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-23",
+        "end": "2027-08-27",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L56"
+    ],
+    "source_labels": [
+      "L56"
+    ],
+    "titles": [
+      "L56: Lesson 56 Solve a measurement problem Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 81,
+    "week": 31,
+    "dates": [
+      {
+        "week": "M31",
+        "start": "2027-08-22",
+        "end": "2027-08-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-23",
+        "end": "2027-08-27",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-R05"
+    ],
+    "source_labels": [
+      "R05"
+    ],
+    "titles": [
+      "R05: Review Unit 5 Length, Mass, and Volume of Liquid"
+    ]
+  },
+  {
+    "session": 82,
+    "week": 32,
+    "dates": [
+      {
+        "week": "M32",
+        "start": "2027-09-05",
+        "end": "2027-09-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-06",
+        "end": "2027-09-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L57"
+    ],
+    "source_labels": [
+      "L57"
+    ],
+    "titles": [
+      "L57: Lesson 57 Identify and compare angles Unit 6 Space"
+    ]
+  },
+  {
+    "session": 83,
+    "week": 32,
+    "dates": [
+      {
+        "week": "M32",
+        "start": "2027-09-05",
+        "end": "2027-09-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-06",
+        "end": "2027-09-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L58"
+    ],
+    "source_labels": [
+      "L58"
+    ],
+    "titles": [
+      "L58: Lesson 58 Identify and draw parallel and perpendicular lines Unit 6 Space"
+    ]
+  },
+  {
+    "session": 84,
+    "week": 32,
+    "dates": [
+      {
+        "week": "M32",
+        "start": "2027-09-05",
+        "end": "2027-09-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-06",
+        "end": "2027-09-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L59"
+    ],
+    "source_labels": [
+      "L59"
+    ],
+    "titles": [
+      "L59: Lesson 59 Calculate polygon perimeters Unit 6 Space"
+    ]
+  },
+  {
+    "session": 85,
+    "week": 33,
+    "dates": [
+      {
+        "week": "M33",
+        "start": "2027-09-12",
+        "end": "2027-09-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-13",
+        "end": "2027-09-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L60"
+    ],
+    "source_labels": [
+      "L60"
+    ],
+    "titles": [
+      "L60: Lesson 60 Calculate areas on squares and grids Unit 6 Space"
+    ]
+  },
+  {
+    "session": 86,
+    "week": 33,
+    "dates": [
+      {
+        "week": "M33",
+        "start": "2027-09-12",
+        "end": "2027-09-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-13",
+        "end": "2027-09-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L60"
+    ],
+    "source_labels": [
+      "L60"
+    ],
+    "titles": [
+      "L60: Lesson 60 Calculate areas on squares and grids Unit 6 Space"
+    ]
+  },
+  {
+    "session": 87,
+    "week": 33,
+    "dates": [
+      {
+        "week": "M33",
+        "start": "2027-09-12",
+        "end": "2027-09-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-13",
+        "end": "2027-09-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L61"
+    ],
+    "source_labels": [
+      "L61"
+    ],
+    "titles": [
+      "L61: Lesson 61 Calculate volumes of cubes and cuboids Unit 6 Space"
+    ]
+  },
+  {
+    "session": 88,
+    "week": 34,
+    "dates": [
+      {
+        "week": "M34",
+        "start": "2027-09-19",
+        "end": "2027-09-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-20",
+        "end": "2027-09-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L62"
+    ],
+    "source_labels": [
+      "L62"
+    ],
+    "titles": [
+      "L62: Lesson 62 Solve a spatial measurement problem Unit 6 Space"
+    ]
+  },
+  {
+    "session": 89,
+    "week": 34,
+    "dates": [
+      {
+        "week": "M34",
+        "start": "2027-09-19",
+        "end": "2027-09-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-20",
+        "end": "2027-09-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-R06"
+    ],
+    "source_labels": [
+      "R06"
+    ],
+    "titles": [
+      "R06: Review Unit 6 Space"
+    ]
+  },
+  {
+    "session": 90,
+    "week": 34,
+    "dates": [
+      {
+        "week": "M34",
+        "start": "2027-09-19",
+        "end": "2027-09-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-20",
+        "end": "2027-09-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L63"
+    ],
+    "source_labels": [
+      "L63"
+    ],
+    "titles": [
+      "L63: Lesson 63 Read and plot coordinates Unit 7 Coordinates, Ratio, and Proportion"
+    ]
+  },
+  {
+    "session": 91,
+    "week": 35,
+    "dates": [
+      {
+        "week": "M35",
+        "start": "2027-09-26",
+        "end": "2027-09-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M35",
+        "start": "2027-09-27",
+        "end": "2027-10-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L64"
+    ],
+    "source_labels": [
+      "L64"
+    ],
+    "titles": [
+      "L64: Lesson 64 Represent a relationship as a ratio Unit 7 Coordinates, Ratio, and Proportion"
+    ]
+  },
+  {
+    "session": 92,
+    "week": 35,
+    "dates": [
+      {
+        "week": "M35",
+        "start": "2027-09-26",
+        "end": "2027-09-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M35",
+        "start": "2027-09-27",
+        "end": "2027-10-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L65"
+    ],
+    "source_labels": [
+      "L65"
+    ],
+    "titles": [
+      "L65: Lesson 65 Solve a proportion using the unitary method Unit 7 Coordinates, Ratio, and Proportion"
+    ]
+  },
+  {
+    "session": 93,
+    "week": 36,
+    "dates": [
+      {
+        "week": "M36",
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-04",
+        "end": "2027-10-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L66"
+    ],
+    "source_labels": [
+      "L66"
+    ],
+    "titles": [
+      "L66: Lesson 66 Solve a coordinate or proportion problem Unit 7 Coordinates, Ratio, and Proportion"
+    ]
+  },
+  {
+    "session": 94,
+    "week": 36,
+    "dates": [
+      {
+        "week": "M36",
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-04",
+        "end": "2027-10-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L66"
+    ],
+    "source_labels": [
+      "L66"
+    ],
+    "titles": [
+      "L66: Lesson 66 Solve a coordinate or proportion problem Unit 7 Coordinates, Ratio, and Proportion"
+    ]
+  },
+  {
+    "session": 95,
+    "week": 36,
+    "dates": [
+      {
+        "week": "M36",
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-04",
+        "end": "2027-10-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-R07"
+    ],
+    "source_labels": [
+      "R07"
+    ],
+    "titles": [
+      "R07: Review Unit 7 Coordinates, Ratio, and Proportion"
+    ]
+  },
+  {
+    "session": 96,
+    "week": 37,
+    "dates": [
+      {
+        "week": "M37",
+        "start": "2027-10-10",
+        "end": "2027-10-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-11",
+        "end": "2027-10-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L67"
+    ],
+    "source_labels": [
+      "L67"
+    ],
+    "titles": [
+      "L67: Lesson 67 Construct a pictograph and bar chart Unit 8 Data Handling"
+    ]
+  },
+  {
+    "session": 97,
+    "week": 37,
+    "dates": [
+      {
+        "week": "M37",
+        "start": "2027-10-10",
+        "end": "2027-10-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-11",
+        "end": "2027-10-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L67"
+    ],
+    "source_labels": [
+      "L67"
+    ],
+    "titles": [
+      "L67: Lesson 67 Construct a pictograph and bar chart Unit 8 Data Handling"
+    ]
+  },
+  {
+    "session": 98,
+    "week": 37,
+    "dates": [
+      {
+        "week": "M37",
+        "start": "2027-10-10",
+        "end": "2027-10-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-11",
+        "end": "2027-10-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L68"
+    ],
+    "source_labels": [
+      "L68"
+    ],
+    "titles": [
+      "L68: Lesson 68 Interpret charts built in class Unit 8 Data Handling"
+    ]
+  },
+  {
+    "session": 99,
+    "week": 38,
+    "dates": [
+      {
+        "week": "M38",
+        "start": "2027-10-17",
+        "end": "2027-10-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-18",
+        "end": "2027-10-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L69"
+    ],
+    "source_labels": [
+      "L69"
+    ],
+    "titles": [
+      "L69: Lesson 69 Solve a problem with data Unit 8 Data Handling"
+    ]
+  },
+  {
+    "session": 100,
+    "week": 38,
+    "dates": [
+      {
+        "week": "M38",
+        "start": "2027-10-17",
+        "end": "2027-10-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-18",
+        "end": "2027-10-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-L69"
+    ],
+    "source_labels": [
+      "L69"
+    ],
+    "titles": [
+      "L69: Lesson 69 Solve a problem with data Unit 8 Data Handling"
+    ]
+  },
+  {
+    "session": 101,
+    "week": 38,
+    "dates": [
+      {
+        "week": "M38",
+        "start": "2027-10-17",
+        "end": "2027-10-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-18",
+        "end": "2027-10-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-MAT-Y4-R08"
+    ],
+    "source_labels": [
+      "R08"
+    ],
+    "titles": [
+      "R08: Review Unit 8 Data Handling"
+    ]
+  }
+]

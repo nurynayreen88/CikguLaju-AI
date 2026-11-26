@@ -1,0 +1,88 @@
+name: Install matched Mathematics session RPT candidates
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - '.github/workflows/install-dlp-math-session-rpt-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  install:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'release/dlp-mathematics-web-20261126'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: true
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: paired-native-rpt-mathematics_dlp-y*
+          run-id: 45824945883
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: evidence/rpt
+      - uses: actions/download-artifact@v4
+        with:
+          name: dlp-actual-rph-phase-crosswalk
+          run-id: 45824945883
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: evidence/session
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'python-docx>=1.1,<2' 'PyMuPDF>=1.24,<2'
+      - run: |
+          python - <<'PY'
+          import json,hashlib,re
+          from pathlib import Path
+          from docx import Document
+          import fitz
+          dest=Path('rpt_2027/paired_math_release')
+          dest.mkdir(parents=True,exist_ok=True)
+          raw=Path('evidence/session/paired-session-content.json').read_bytes()
+          data=json.loads(raw)
+          manifest={'qa_run':45824945883,'source_sha256':hashlib.sha256(raw).hexdigest(),'sets':{}}
+          for y in (3,4,5,6):
+              source=Path(f'evidence/rpt/paired-native-rpt-mathematics_dlp-y{y}')
+              files={}
+              for suffix in ('pdf','docx'):
+                  paths=list(source.rglob('*.'+suffix))
+                  assert len(paths)==1,(y,suffix,paths)
+                  blob=paths[0].read_bytes()
+                  name=f'mathematics_dlp_y{y}.{suffix}'
+                  if suffix=='pdf':
+                      with fitz.open(stream=blob,filetype='pdf') as new,fitz.open(f'rpt_2027/full_standards_dlp_pdf_2027/mathematics_dlp/tahun_{y}.pdf') as old:
+                          assert new[0].get_pixmap().samples==old[0].get_pixmap().samples
+                          assert len(new)>2
+                          for page in list(new)[1:-1]:
+                              assert 'Week' in page.get_text() and 'Date' in page.get_text()
+                  else:
+                      d=Document(paths[0])
+                      assert sum(len(t.rows)-1 for t in d.tables[:-1])==101
+                  (dest/name).write_bytes(blob)
+                  files[suffix]={'path':name,'sha256':hashlib.sha256(blob).hexdigest(),'bytes':len(blob)}
+              sessions=next(s['sessions'] for s in data['sets'] if s['key']==f'mathematics_dlp:{y}')
+              assert len(sessions)==101
+              rows=[{k:s[k] for k in ('session','week','dates','slot_minutes','source_ids','source_labels','titles')} for s in sessions]
+              index=json.dumps(rows,ensure_ascii=False,indent=2).encode()+b'\n'
+              name=f'mathematics_dlp_y{y}_index.json'
+              (dest/name).write_bytes(index)
+              files['index']={'path':name,'sha256':hashlib.sha256(index).hexdigest(),'bytes':len(index)}
+              manifest['sets'][str(y)]={'files':files,'sessions':101,'enabled':False}
+          (dest/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          print('Four paired RPTs and 404 calendar sessions installed; flags off.')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rpt_2027/paired_math_release
+          if git diff --cached --quiet; then
+            echo 'Assets already installed; no commit required.'
+          else
+            git commit -m 'Install three matched Mathematics RPT candidate sets from locked QA run'
+            git push origin HEAD:refs/heads/release/dlp-mathematics-web-20261126
+          fi

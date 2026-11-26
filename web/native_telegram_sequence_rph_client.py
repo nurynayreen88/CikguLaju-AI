@@ -57,8 +57,10 @@ DLP_CATALOGUES = {
     (6, "SCIENCE_DLP"): ("year6-science/catalogue", DLP_SCIENCE_UNIT, DLP_SCIENCE_LESSON, 13, 61),
 }
 DLP_SUBJECTS = {subject for _, subject in DLP_CATALOGUES}
-DLP_SESSION_TOKEN=re.compile(r"SESSION-(?:00[1-9]|0[1-6][0-9]|070)")
+DLP_SESSION_TOKEN=re.compile(r"SESSION-(?:00[1-9]|0[1-9][0-9]|10[01])")
 def _paired_enabled(year,subject):
+    if subject=="MATH_DLP":return year in (3,4,5,6) and str(year) in os.getenv("CIKGULAJU_DLP_PAIRED_MATH_YEARS","").split(",")
+    if subject=="MATH_DLP":return year in (3,4,5,6) and str(year) in os.getenv("CIKGULAJU_DLP_PAIRED_MATH_YEARS","").split(",")
     return subject=="SCIENCE_DLP" and year in (2,3,6) and str(year) in os.getenv("CIKGULAJU_DLP_PAIRED_SCIENCE_YEARS","").split(",")
 
 
@@ -103,7 +105,7 @@ def _selection(year, subject, unit, lesson=None):
         if (not isinstance(lesson, str) or not 0 < len(lesson) <= 100
                 or any(ord(c) < 32 for c in lesson)):
             raise ValueError("Invalid native PdP code")
-        if route == DLP_ROUTE and not (DLP_SESSION_TOKEN.fullmatch(lesson) if unit=="sessions" else DLP_CATALOGUES[year, subject][2].fullmatch(lesson)):
+        if route == DLP_ROUTE and not ((DLP_SESSION_TOKEN.fullmatch(lesson) and int(lesson[-3:])<=(101 if subject=="MATH_DLP" else 70)) if unit=="sessions" else DLP_CATALOGUES[year, subject][2].fullmatch(lesson)):
             raise ValueError("Invalid DLP lesson code")
         result["lesson"] = lesson
     return route, result
@@ -158,7 +160,7 @@ def _dlp_catalogue(year, subject):
             raise NativeRPHUnavailable("Paired DLP catalogue unavailable")
         paired=candidates[0]
         entries=paired.get("lessons")
-        if (not isinstance(entries,list) or len(entries)!=70 or
+        if (not isinstance(entries,list) or len(entries)!=(101 if subject=="MATH_DLP" else 70) or
             any(not isinstance(e,dict) or e.get("id")!=f"SESSION-{i:03d}" or
                 not all(isinstance(e.get(k),str) and e[k].strip() for k in ("title","label","book_reference")) or
                 e.get("minutes") not in (30,60) for i,e in enumerate(entries,1)) or

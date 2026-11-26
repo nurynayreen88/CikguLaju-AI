@@ -28,7 +28,7 @@ def read(subject,year,original,*,root):
         raw=file.read_bytes()
         digest=hashlib.sha256(raw).hexdigest()
         layout=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))["compact_pdf_covers"]
-        if not raw.startswith(b"%PDF-") or len(raw)!=e["bytes"] or digest!=e["sha256"] or layout["source_sha256_by_subject_year"].get(key)!=digest:
+        if not raw.startswith(b"%PDF-") or len(raw)!=e["bytes"] or digest!=e["sha256"] or layout.get("original_source_sha256_by_subject_year",layout["source_sha256_by_subject_year"]).get(key)!=digest:
             return None
         return raw,digest
     except (OSError,ValueError,KeyError,TypeError,AttributeError):
