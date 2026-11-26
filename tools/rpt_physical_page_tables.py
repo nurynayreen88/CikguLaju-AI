@@ -1,10 +1,28 @@
 """Physical native Word page tables; do not rely on repeat-header support."""
 from copy import deepcopy
-from docx.enum.text import WD_BREAK
+from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 from docx.shared import Pt,Cm
 from docx.text.paragraph import Paragraph
 import fitz
+def next_page_section(doc, anchor):
+    """Physical next-page section, separate from both adjacent tables."""
+    el=OxmlElement("w:p");anchor.addprevious(el)
+    p=Paragraph(el,doc);f=p.paragraph_format
+    f.page_break_before=False;f.keep_with_next=False;f.keep_together=False
+    f.space_before=Pt(0);f.space_after=Pt(0);f.line_spacing=Pt(1)
+    sec=deepcopy(doc.element.body.sectPr)
+    for child in list(sec):
+        if child.tag in (qn("w:headerReference"),qn("w:footerReference"),qn("w:pgNumType")):
+            sec.remove(child)
+    typ=sec.find(qn("w:type"))
+    if typ is None:
+        typ=OxmlElement("w:type")
+        sec.insert_element_before(typ,"w:pgSz","w:pgMar","w:cols","w:docGrid")
+    typ.set(qn("w:val"),"nextPage")
+    el.get_or_add_pPr().append(sec)
+    return el
+
 def lines(text,width):
     n=1;used=0
     for token in text.split():
@@ -17,14 +35,14 @@ def lines(text,width):
     return n
 def height(cell,width):
     return 8+sum(12.3*lines(p.text,width-12)+3 for p in cell.paragraphs)
-def split_week_tables(doc,t,groups,*,budget=465,breaks=None):
+def split_week_tables(doc,t,groups,*,budget=405,breaks=None):
     widths=[c.width.pt for c in t.columns]
     header=max(height(c,w) for c,w in zip(t.rows[0].cells,widths))
     chunks=[];first=None;last=None;total=header
     for week,(_,a,b) in enumerate(groups,1):
         h=sum(max(height(c,w) for c,w in zip(t.rows[i].cells[1:],widths[1:])) for i in range(a,b+1))
         h=max(h,height(t.cell(a,0),widths[0]))
-        if first is not None and ((breaks is not None and week in breaks) or (breaks is None and total+h>budget)):
+        if first is not None and ((breaks is not None and week in breaks) or total+h>budget or b-first+1>5):
             chunks.append((first,last));first=None;total=header
         if first is None:first=a
         last=b;total+=h
@@ -33,10 +51,7 @@ def split_week_tables(doc,t,groups,*,budget=465,breaks=None):
     anchor=t._tbl
     for i,(a,b) in enumerate(chunks):
         if i:
-            el=OxmlElement("w:p");anchor.addprevious(el)
-            p=Paragraph(el,doc);f=p.paragraph_format
-            f.page_break_before=False;f.keep_with_next=False;f.keep_together=False;f.space_before=Pt(0);f.space_after=Pt(0);f.line_spacing=Pt(1)
-            run=p.add_run();run.font.size=Pt(1);run.add_break(WD_BREAK.PAGE)
+            next_page_section(doc,anchor)
         clone=deepcopy(anchor)
         for j,tr in enumerate(list(clone.tr_lst)):
             if j!=0 and not a<=j<=b:clone.remove(tr)
