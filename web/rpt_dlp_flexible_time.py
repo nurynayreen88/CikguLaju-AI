@@ -1,13 +1,12 @@
 """Presentation only: remove prescriptive per-lesson durations, preserve source PDFs and RPH IDs."""
 import re
 from io import BytesIO
-import fitz
-from docx import Document
 
 DURATION=re.compile(r"^\d+\s*min(?:utes)?$",re.I)
 HEADERS={"Textbook /\nTime":"Textbook","Book reference / Time":"Book reference","Textbook / Time":"Textbook"}
 
 def word_without_fixed_minutes(blob):
+    from docx import Document
     doc=Document(BytesIO(blob))
     removed=0
     for table in doc.tables:
@@ -32,6 +31,7 @@ def word_without_fixed_minutes(blob):
     out=BytesIO();doc.save(out);return out.getvalue()
 
 def pdf_without_fixed_minutes(raw):
+    import fitz
     # Remove only exact duration glyphs in the final reference column, not
     # graphics, table lines, images, or mathematical statements. The original
     # approved PDF remains untouched; appendix annual totals are retained.
