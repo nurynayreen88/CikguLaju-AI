@@ -11,8 +11,8 @@ from pathlib import Path
 import argparse,json,re,sys
 from unittest.mock import patch
 from reportlab.lib.styles import ParagraphStyle
-from web.rph_document_style import pdf_box_style
 sys.path.insert(0,str(Path.cwd()))
+from web.rph_document_style import pdf_box_style
 from docx import Document
 import fitz
 from dlp_year2_rph import year3_science_catalog,science_class_fields
