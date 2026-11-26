@@ -1,0 +1,55 @@
+{
+  "status": "user_approved_policy_pending_implementation",
+  "effective": "2027",
+  "scope": "SK DLP Year 2–6",
+  "normal_week": {
+    "mathematics_dlp": {
+      "years": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sessions": 3,
+      "session_minutes": [
+        60,
+        60,
+        60
+      ]
+    },
+    "science_dlp_lower": {
+      "years": [
+        2,
+        3
+      ],
+      "sessions": 2,
+      "session_minutes": [
+        60,
+        30
+      ]
+    },
+    "science_dlp_upper": {
+      "years": [
+        4,
+        5,
+        6
+      ],
+      "sessions": 2,
+      "session_minutes": [
+        60,
+        60
+      ]
+    }
+  },
+  "holiday_rules": [
+    "Determine teaching days separately for Group A and B from verified calendar; exclude school breaks entirely.",
+    "Adjust short-week session counts to actual available teaching days and timetable; do not mechanically reduce every public-holiday week if all sessions still fit.",
+    "Maintain state-specific closures in RPH Pantas.",
+    "Keep original lesson sequence, CS/LS, activity content and annual workload; continuation of long source lesson is not a new curriculum topic.",
+    "Align RPT weekly session sequence and RPH Pantas; validate actual RPH activities before activation.",
+    "Minutes are internal scheduling metadata, not printed RPT lesson duration.",
+    "Keep approved compact table layout, repeated headers and corrected first-column borders."
+  ],
+  "release_ready": false
+}

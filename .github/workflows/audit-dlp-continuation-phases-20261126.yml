@@ -1,0 +1,32 @@
+name: Audit actual DLP continuation activity phases
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/audit_dlp_continuation_phases_20261126.py'
+      - 'rpt_2027/dlp/audit_weekly_capacity_candidate_20261126.json'
+      - '.github/workflows/audit-dlp-continuation-phases-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  phase-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: '4570559b46325b765402f1883345d53b68c71710'
+          path: rph-source
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'requests>=2'
+      - name: Compare exact source activity phase boundaries
+        run: |
+          cp tools/audit_dlp_continuation_phases_20261126.py rph-source/tools/
+          cd rph-source
+          python -m tools.audit_dlp_continuation_phases_20261126 ../rpt_2027/dlp/audit_weekly_capacity_candidate_20261126.json

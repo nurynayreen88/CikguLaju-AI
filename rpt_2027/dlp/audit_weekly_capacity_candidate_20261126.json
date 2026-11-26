@@ -1,0 +1,7797 @@
+{
+  "status": "candidate_not_live",
+  "basis": "Pinned DLP source durations; existing 35 teaching windows and weekly capacity assumptions; no new IDs or duration reduction.",
+  "sets": {
+    "mathematics_dlp:2": {
+      "source_lessons": 96,
+      "annual_minutes": 5760,
+      "split_lessons": 0,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 120,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 180,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 180,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 180,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "R01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 120,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L10",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L11",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L12",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L13",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L14",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L15",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L16",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L17",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L18",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L19",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L20",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L21",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L22",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L23",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L24",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L25",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L26",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L27",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L28",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L29",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L30",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L31",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L32",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L33",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L34",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L35",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L36",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L37",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L38",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L39",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L40",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L41",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L43",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L44",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L45",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L46",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L47",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R10",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L48",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L49",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L50",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L51",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L52",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R11",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L53",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L54",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L55",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L56",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L57",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L58",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R12",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L59",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L60",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L61",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L62",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L63",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L64",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R13",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L65",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L66",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L67",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L68",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R14",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L69",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L70",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L71",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "R15",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L72",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L73",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L74",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R16",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L75",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L76",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L77",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R17",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L78",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R18",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        }
+      ]
+    },
+    "science_dlp:2": {
+      "source_lessons": 67,
+      "annual_minutes": 2880,
+      "split_lessons": 3,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 60,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L04",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L05",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L06",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L07",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 60,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L09",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L10",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L11",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L12",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L13",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "R01",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L14",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L15",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L16",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L17",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L18",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L19",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L20",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L21",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L22",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L23",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L24",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L25",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L26",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R02",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L27",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L28",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 60,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L29",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L30",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L31",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L31",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L32",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L33",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L34",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L35",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L36",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L37",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L37",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L38",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L39",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L40",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L41",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L43",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L44",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L45",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L45",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L46",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "R03",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L47",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L48",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L49",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L50",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L51",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L52",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L53",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L54",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L55",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L56",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 60,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L57",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L58",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L59",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L60",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L61",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L62",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L63",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "R04",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        }
+      ]
+    },
+    "mathematics_dlp:3": {
+      "source_lessons": 82,
+      "annual_minutes": 5760,
+      "split_lessons": 5,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 120,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L05",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L07",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L07",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L08",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L10",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R01",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R01",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L11",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L12",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L13",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L14",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L15",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L16",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L17",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L18",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L19",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L20",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L21",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L22",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L23",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L24",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L25",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L26",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L26",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 60,
+              "to_minute": 90
+            },
+            {
+              "id": "L27",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L28",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L29",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L30",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L31",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L32",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L33",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L33",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L34",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L35",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L36",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L37",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L38",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L39",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L40",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L41",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L43",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L44",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L45",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L46",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L47",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L48",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L49",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L50",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L51",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L52",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L53",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L54",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L55",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L56",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L57",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L57",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L58",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L59",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L60",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L61",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L62",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L63",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 180,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L64",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L65",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L66",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L67",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L68",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L69",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L70",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L71",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L72",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L73",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        }
+      ]
+    },
+    "science_dlp:3": {
+      "source_lessons": 56,
+      "annual_minutes": 2880,
+      "split_lessons": 7,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 60,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L02",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L03",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L05",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 60,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L09",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L10",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L11",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L12",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L13",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L14",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L15",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L16",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L17",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L18",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L18",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L19",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L20",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R01",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L21",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L22",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L22",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L23",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L24",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L25",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L25",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L26",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 60,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L27",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L28",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R02",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L29",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L30",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L31",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L32",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L32",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L33",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L34",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L35",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L35",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L36",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L37",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L38",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L38",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L39",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L40",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L41",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L41",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L43",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R03",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L44",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L45",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L46",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L47",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 60,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L48",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L49",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L50",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L51",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L52",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R04",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        }
+      ]
+    },
+    "mathematics_dlp:4": {
+      "source_lessons": 77,
+      "annual_minutes": 5760,
+      "split_lessons": 6,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L03",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L05",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L08",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L09",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L09",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L10",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L11",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L12",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L13",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L14",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L15",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L16",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L17",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L18",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L19",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L20",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L21",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L22",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L23",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L24",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L25",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L26",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L27",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L28",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L29",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L30",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L31",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R02",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "R02",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L32",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L33",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L34",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L35",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L35",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 30,
+              "to_minute": 90
+            },
+            {
+              "id": "L36",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L37",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L38",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L39",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L40",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L40",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L41",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L43",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L44",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L45",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L46",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L47",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L48",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "R04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L49",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L50",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L50",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 30,
+              "to_minute": 90
+            },
+            {
+              "id": "L51",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L52",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L53",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L54",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L55",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L56",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L57",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L58",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L59",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L60",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L61",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L62",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L63",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L64",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L65",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L66",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L67",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L68",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L68",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L69",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        }
+      ]
+    },
+    "science_dlp:4": {
+      "source_lessons": 69,
+      "annual_minutes": 3840,
+      "split_lessons": 2,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L10",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R01",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L11",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L12",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L13",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L14",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L15",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L16",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L17",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L18",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R02",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L19",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L20",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L21",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L22",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R03",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L23",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L24",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L25",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L26",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L27",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R04",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L28",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L29",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L30",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L31",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L32",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L33",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L34",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L35",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R05",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L36",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L36",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L37",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L38",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L38",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L39",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R06",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L40",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L41",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L43",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L44",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L45",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R07",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L46",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L47",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L48",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L49",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L50",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R08",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L51",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L52",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L53",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L54",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R09",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L55",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L56",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L57",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L58",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L59",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R10",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        }
+      ]
+    },
+    "mathematics_dlp:5": {
+      "source_lessons": 69,
+      "annual_minutes": 5760,
+      "split_lessons": 6,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L02",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L02",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 60,
+              "to_minute": 90
+            },
+            {
+              "id": "L03",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L05",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L07",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L08",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L09",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L10",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L11",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L12",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L13",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L14",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L15",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L16",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L17",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L18",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L19",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L20",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L21",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L22",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L23",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L24",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 180,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "R02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L25",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L26",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L27",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L28",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L29",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L30",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L31",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L32",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L33",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L34",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L34",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 30,
+              "to_minute": 90
+            },
+            {
+              "id": "L35",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L36",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L36",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 30,
+              "to_minute": 90
+            },
+            {
+              "id": "L37",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L38",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L38",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "R04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L39",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L40",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L41",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L42",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L43",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L44",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L45",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L46",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L47",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L48",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L49",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L50",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L51",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L52",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L53",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L54",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L55",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L56",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L56",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 30,
+              "to_minute": 90
+            },
+            {
+              "id": "L57",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L57",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 60,
+              "to_minute": 90
+            },
+            {
+              "id": "L58",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L59",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L60",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L61",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        }
+      ]
+    },
+    "science_dlp:5": {
+      "source_lessons": 70,
+      "annual_minutes": 3840,
+      "split_lessons": 1,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L02",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R01",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L10",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L11",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L12",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L13",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L14",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L15",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R02",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L16",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L17",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L18",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L19",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L20",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L21",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L22",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L23",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L24",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L25",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L26",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R03",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L27",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L28",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L29",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L30",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R04",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L31",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L32",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L33",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L34",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L35",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L36",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L37",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L38",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "R05",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L39",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L40",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L41",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L43",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R06",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L44",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L45",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L46",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L47",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R07",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L48",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L49",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L50",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L51",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L52",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L53",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R08",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L54",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L54",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L55",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L56",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L57",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R09",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L58",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L59",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L60",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R10",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        }
+      ]
+    },
+    "mathematics_dlp:6": {
+      "source_lessons": 54,
+      "annual_minutes": 5760,
+      "split_lessons": 15,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L02",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L04",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L05",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L06",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L07",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            },
+            {
+              "id": "L08",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L10",
+              "minutes": 120,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 120
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L10",
+              "minutes": 30,
+              "original_minutes": 150,
+              "from_minute": 120,
+              "to_minute": 150
+            },
+            {
+              "id": "L11",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L12",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L13",
+              "minutes": 90,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L13",
+              "minutes": 60,
+              "original_minutes": 150,
+              "from_minute": 90,
+              "to_minute": 150
+            },
+            {
+              "id": "L14",
+              "minutes": 120,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 120
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L14",
+              "minutes": 30,
+              "original_minutes": 150,
+              "from_minute": 120,
+              "to_minute": 150
+            },
+            {
+              "id": "L15",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L16",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L17",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L18",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            },
+            {
+              "id": "L19",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L19",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L20",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "R02",
+              "minutes": 60,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "R02",
+              "minutes": 90,
+              "original_minutes": 150,
+              "from_minute": 60,
+              "to_minute": 150
+            },
+            {
+              "id": "L21",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L22",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            },
+            {
+              "id": "L23",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L23",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L24",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L25",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L26",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            },
+            {
+              "id": "L27",
+              "minutes": 30,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L27",
+              "minutes": 120,
+              "original_minutes": 150,
+              "from_minute": 30,
+              "to_minute": 150
+            },
+            {
+              "id": "R03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L28",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L29",
+              "minutes": 90,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L29",
+              "minutes": 60,
+              "original_minutes": 150,
+              "from_minute": 90,
+              "to_minute": 150
+            },
+            {
+              "id": "L30",
+              "minutes": 120,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 120
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L30",
+              "minutes": 30,
+              "original_minutes": 150,
+              "from_minute": 120,
+              "to_minute": 150
+            },
+            {
+              "id": "R04",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L31",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L32",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L33",
+              "minutes": 90,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L33",
+              "minutes": 60,
+              "original_minutes": 150,
+              "from_minute": 90,
+              "to_minute": 150
+            },
+            {
+              "id": "R05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L34",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L34",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 60,
+              "to_minute": 90
+            },
+            {
+              "id": "L35",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L36",
+              "minutes": 60,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L36",
+              "minutes": 90,
+              "original_minutes": 150,
+              "from_minute": 60,
+              "to_minute": 150
+            },
+            {
+              "id": "L37",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L38",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R06",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L39",
+              "minutes": 30,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L39",
+              "minutes": 120,
+              "original_minutes": 150,
+              "from_minute": 30,
+              "to_minute": 150
+            },
+            {
+              "id": "L40",
+              "minutes": 60,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L40",
+              "minutes": 90,
+              "original_minutes": 150,
+              "from_minute": 60,
+              "to_minute": 150
+            },
+            {
+              "id": "L41",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R07",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L43",
+              "minutes": 120,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 120
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 180,
+          "minutes": 180,
+          "lessons": [
+            {
+              "id": "L43",
+              "minutes": 30,
+              "original_minutes": 150,
+              "from_minute": 120,
+              "to_minute": 150
+            },
+            {
+              "id": "L44",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "L45",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L46",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 180,
+          "minutes": 150,
+          "lessons": [
+            {
+              "id": "R08",
+              "minutes": 150,
+              "original_minutes": 150,
+              "from_minute": 0,
+              "to_minute": 150
+            }
+          ]
+        }
+      ]
+    },
+    "science_dlp:6": {
+      "source_lessons": 61,
+      "annual_minutes": 3840,
+      "split_lessons": 7,
+      "weeks": [
+        {
+          "week": 1,
+          "capacity": 90,
+          "minutes": 60,
+          "lessons": [
+            {
+              "id": "L01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L02",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L04",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L04",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 30,
+              "to_minute": 90
+            },
+            {
+              "id": "L05",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R01",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L07",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L08",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L10",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L11",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L12",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "R02",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "R02",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 60,
+              "to_minute": 90
+            },
+            {
+              "id": "L13",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L14",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L15",
+              "minutes": 120,
+              "original_minutes": 120,
+              "from_minute": 0,
+              "to_minute": 120
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L16",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "R03",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L17",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L18",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L19",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L20",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L20",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 30,
+              "to_minute": 90
+            },
+            {
+              "id": "L21",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 16,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L22",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L23",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 17,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L24",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 20,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "R04",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L25",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 21,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L26",
+              "minutes": 120,
+              "original_minutes": 120,
+              "from_minute": 0,
+              "to_minute": 120
+            }
+          ]
+        },
+        {
+          "week": 22,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L27",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L28",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L29",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 23,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L29",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 30,
+              "to_minute": 90
+            },
+            {
+              "id": "L30",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "R05",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 24,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "R05",
+              "minutes": 30,
+              "original_minutes": 60,
+              "from_minute": 30,
+              "to_minute": 60
+            },
+            {
+              "id": "L31",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 25,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L32",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L33",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 26,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L34",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L35",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 27,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L36",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L37",
+              "minutes": 60,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 28,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L37",
+              "minutes": 30,
+              "original_minutes": 90,
+              "from_minute": 60,
+              "to_minute": 90
+            },
+            {
+              "id": "L38",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "R06",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 29,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L39",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L40",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 30,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L41",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L42",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 31,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L43",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            },
+            {
+              "id": "L44",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            }
+          ]
+        },
+        {
+          "week": 32,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "R07",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            },
+            {
+              "id": "L45",
+              "minutes": 60,
+              "original_minutes": 120,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 33,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L45",
+              "minutes": 60,
+              "original_minutes": 120,
+              "from_minute": 60,
+              "to_minute": 120
+            },
+            {
+              "id": "L46",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 34,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L47",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "L48",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 35,
+          "capacity": 90,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L49",
+              "minutes": 90,
+              "original_minutes": 90,
+              "from_minute": 0,
+              "to_minute": 90
+            }
+          ]
+        },
+        {
+          "week": 36,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L50",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "R08",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        },
+        {
+          "week": 37,
+          "capacity": 120,
+          "minutes": 120,
+          "lessons": [
+            {
+              "id": "L51",
+              "minutes": 120,
+              "original_minutes": 120,
+              "from_minute": 0,
+              "to_minute": 120
+            }
+          ]
+        },
+        {
+          "week": 38,
+          "capacity": 120,
+          "minutes": 90,
+          "lessons": [
+            {
+              "id": "L52",
+              "minutes": 30,
+              "original_minutes": 30,
+              "from_minute": 0,
+              "to_minute": 30
+            },
+            {
+              "id": "R09",
+              "minutes": 60,
+              "original_minutes": 60,
+              "from_minute": 0,
+              "to_minute": 60
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
