@@ -123,7 +123,47 @@
       ],
       "unit1_base_sp_count": 19,
       "textbook_alignment": "pending",
-      "academic_status": "HOLD"
+      "academic_status": "HOLD",
+      "unit2_sk_sp": [
+        {
+          "sk": "2.1",
+          "sp": [
+            "2.1.1",
+            "2.1.2",
+            "2.1.3",
+            "2.1.4",
+            "2.1.5"
+          ]
+        },
+        {
+          "sk": "2.2",
+          "sp": [
+            "2.2.1",
+            "2.2.2",
+            "2.2.3",
+            "2.2.4"
+          ]
+        },
+        {
+          "sk": "2.3",
+          "sp": [
+            "2.3.1",
+            "2.3.2"
+          ]
+        },
+        {
+          "sk": "2.4",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "unit2_base_sp_count": 12,
+      "unit2_dskp_printed_pages": [
+        37,
+        38
+      ],
+      "unit2_subclauses_require_separate_planning": true
     },
     {
       "year": 5,
@@ -244,7 +284,43 @@
       ],
       "unit1_base_sp_count": 18,
       "textbook_alignment": "pending",
-      "academic_status": "HOLD"
+      "academic_status": "HOLD",
+      "unit2_sk_sp": [
+        {
+          "sk": "2.1",
+          "sp": [
+            "2.1.1"
+          ]
+        },
+        {
+          "sk": "2.2",
+          "sp": [
+            "2.2.1",
+            "2.2.2",
+            "2.2.3",
+            "2.2.4"
+          ]
+        },
+        {
+          "sk": "2.3",
+          "sp": [
+            "2.3.1",
+            "2.3.2"
+          ]
+        },
+        {
+          "sk": "2.4",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "unit2_base_sp_count": 8,
+      "unit2_dskp_printed_pages": [
+        36,
+        37
+      ],
+      "unit2_subclauses_require_separate_planning": true
     },
     {
       "year": 6,
@@ -328,11 +404,53 @@
       ],
       "unit1_base_sp_count": 8,
       "textbook_alignment": "pending",
-      "academic_status": "HOLD"
+      "academic_status": "HOLD",
+      "unit2_sk_sp": [
+        {
+          "sk": "2.1",
+          "sp": [
+            "2.1.1"
+          ]
+        },
+        {
+          "sk": "2.2",
+          "sp": [
+            "2.2.1",
+            "2.2.2"
+          ]
+        },
+        {
+          "sk": "2.3",
+          "sp": [
+            "2.3.1",
+            "2.3.2",
+            "2.3.3"
+          ]
+        },
+        {
+          "sk": "2.4",
+          "sp": [
+            "2.4.1"
+          ]
+        },
+        {
+          "sk": "2.5",
+          "sp": [
+            "2.5.1"
+          ]
+        }
+      ],
+      "unit2_base_sp_count": 8,
+      "unit2_dskp_printed_pages": [
+        34,
+        35
+      ],
+      "unit2_subclauses_require_separate_planning": true
     }
   ],
   "notes": [
     "All 24 topic starts are checked against DSKP contents pages. Unit 1 base SP codes checked against the content/learning standards tables, not the performance descriptors. Subclauses require separate lesson planning.",
-    "No lesson dates, textbook pages or teaching periods inferred. DSKP Year 4 printed p.28 states minimum 96 hours annually for Tahap II; confirm actual calendar and timetable before allocation."
+    "No lesson dates, textbook pages or teaching periods inferred. DSKP Year 4 printed p.28 states minimum 96 hours annually for Tahap II; confirm actual calendar and timetable before allocation.",
+    "Unit 2 SK and base SP codes visually checked against both standards-table pages of each SJKC DSKP PDF (zero-based PDF pages 48–49, 47–48, 45–46 respectively); codes only, no curriculum wording copied. Year 4 SP 2.1.3 includes two distinct subclauses. Year 6 includes SK 2.4 mixed operations and SK 2.5 problem solving, unlike Years 4–5. Textbook sequence, dates, lesson durations and academic signoff remain pending."
   ]
 }
