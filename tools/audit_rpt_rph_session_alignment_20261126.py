@@ -70,13 +70,90 @@ def dlp(root):
                "long_sessions":dict(long),"weekly_minutes_histogram":dict(Counter(w["minutes"] for w in weeks)),
                "weeks":weeks,"status":"RPH_CONTENT_AND_WEEKLY_CAPACITY_REVIEW_REQUIRED"}
 
+def teaching_calendar(root):
+    calendar=json.loads((root/"rpt_2027/pendidikan_moral/induk_minggu_2027_ab.json").read_text())["weeks"]
+    assert len(calendar["A"])==len(calendar["B"])==44
+    result=[]
+    for n,(a,b) in enumerate(zip(calendar["A"],calendar["B"]),1):
+        assert a["week"]==b["week"]==f"M{n:02d}"
+        if n<=38 and n not in (6,18,19):
+            result.append((n,[a["start"],a["end"],b["start"],b["end"]]))
+    assert len(result)==35
+    return result
+
+def rebalance_dlp(plan,calendar):
+    # Actual timetable slot, not a 150-minute RPH. A slot may contain two
+    # different source components; that slot requires a reviewed combined RPH.
+    math=plan["subject"]=="mathematics_dlp"
+    normal=180 if math else 90 if plan["year"]<=3 else 120
+    short=120 if math else 60 if plan["year"]<=3 else 90
+    short_weeks={1,5,20,35}
+    source_rows={}
+    for week in plan["weeks"]:
+        for s in week["sessions"]:
+            n=s["source_row"]
+            entry=source_rows.setdefault(n,{"source_row":n,"source_label":s["source_label"],"minutes":s["original_minutes"]})
+            assert entry["minutes"]==s["original_minutes"]
+    # Expand only duration, not content. Each atom is tied to its source.
+    atoms=[(r["source_row"],r["source_label"],offset)
+           for r in source_rows.values() for offset in range(0,r["minutes"],30)]
+    assert len(atoms)*30==plan["source_minutes"]
+    capacity=sum(short if n in short_weeks else normal for n,_ in calendar)
+    assert capacity>=plan["source_minutes"],(plan["subject"],plan["year"],capacity)
+    new=[];cursor=0;number=0;covered=[];mixed=0;buffer=0
+    for week,dates in calendar:
+        limit=short if week in short_weeks else normal
+        sessions=[]
+        for minutes in slots(limit):
+            picked=atoms[cursor:cursor+minutes//30]
+            cursor+=len(picked)
+            if not picked:
+                buffer+=minutes
+                sessions.append({"minutes":minutes,"status":"FLEXIBLE_REINFORCEMENT_OR_REPLACEMENT_NO_RPH_ASSIGNED"})
+                continue
+            components=[]
+            for row,label,offset in picked:
+                if components and components[-1]["source_row"]==row:
+                    components[-1]["minutes"]+=30
+                else:
+                    components.append({"source_row":row,"source_label":label,"offset_minutes":offset,"minutes":30})
+            covered.extend(picked);number+=1
+            used=len(picked)*30
+            if len(components)>1:mixed+=1
+            sessions.append({"candidate_session":number,"minutes":used,"source_components":components,
+                 "status":"COMBINED_RPH_REVIEW_REQUIRED" if len(components)>1 else "RPH_MATCH_OR_REVIEW_REQUIRED"})
+            if used<minutes:
+                buffer+=minutes-used
+                sessions.append({"minutes":minutes-used,"status":"FLEXIBLE_REINFORCEMENT_OR_REPLACEMENT_NO_RPH_ASSIGNED"})
+        assert sum(x["minutes"] for x in sessions)==limit
+        assert all(x["minutes"] in (30,60) for x in sessions)
+        new.append({"week":week,"dates":dates,"planned_minutes":limit,"sessions":sessions})
+    assert covered==atoms and cursor==len(atoms)
+    assert capacity-buffer==plan["source_minutes"]
+    assert sum(x["minutes"] for w in new for x in w["sessions"] if "candidate_session" in x)==plan["source_minutes"]
+    return {"subject":plan["subject"],"year":plan["year"],"normal_week_minutes":normal,
+       "short_week_minutes":short,"short_weeks":sorted(short_weeks),
+       "reserved_weeks":[6,18,19],"last_teaching_week":38,"source_minutes":plan["source_minutes"],
+       "timetable_capacity_minutes":capacity,"flexible_minutes_unassigned":buffer,
+       "candidate_teaching_sessions":number,"combined_slots_requiring_review":mixed,
+       "source_sha256":plan["source_sha256"],"source_rows":list(source_rows.values()),
+       "weeks":new,"status":"CANDIDATE_ONLY_RPH_CONTENT_MAPPING_REQUIRED"}
+
 def main():
     import argparse
     p=argparse.ArgumentParser();p.add_argument("--out",type=Path,required=True)
     args=p.parse_args();root=Path(__file__).resolve().parents[1]
     plans=[*arabic(root),*dlp(root)]
     assert len(plans)==15
-    args.out.write_text(json.dumps({"release_ready":False,"plans":plans},ensure_ascii=False,indent=2))
+    calendar=teaching_calendar(root)
+    for plan in plans:
+        if plan["subject"]=="bahasa_arab":
+            assert [(w["week"],w["dates"]) for w in plan["weeks"]]==calendar
+    balanced=[rebalance_dlp(p,calendar) for p in plans if p["subject"]!="bahasa_arab"]
+    assert len(balanced)==10
+    args.out.write_text(json.dumps({"release_ready":False,"plans":plans,"balanced_dlp":balanced},ensure_ascii=False,indent=2))
+    for p in balanced:
+        print("BALANCED_DLP",json.dumps({k:v for k,v in p.items() if k not in ("weeks","source_rows")}),flush=True)
     for plan in plans:
         print("SESSION_AUDIT",json.dumps({k:v for k,v in plan.items() if k!="weeks"}),flush=True)
 
