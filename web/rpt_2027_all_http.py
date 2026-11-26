@@ -644,7 +644,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
                 compact=revised_dlp or compact_pdf.read_dlp(subject,year,content,root=root)
             if compact is not None:
                 content,digest=compact
-            flexible=bool(revised_dlp and os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1")
+            flexible=bool(revised_dlp and not compact_pdf.dlp_whole_week_release(root) and os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1")
             if flexible:
                 from web.rpt_dlp_flexible_time import pdf_without_fixed_minutes
                 content=pdf_without_fixed_minutes(content)

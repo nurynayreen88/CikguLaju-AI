@@ -32,6 +32,10 @@ def published_weeks(code,year):
            for pair in zip(calendar["A"],calendar["B"],strict=True)]
     weeks=defaultdict(list);lesson=review=0
     with fitz.open(path) as pdf:rows=extract(pdf)
+    from web.rpt_compact_pdf import dlp_whole_week_release
+    if dlp_whole_week_release(ROOT):
+        from tools.dlp_whole_lesson_calendar_20261126 import schedule
+        rows,_=schedule(subject,year,rows,ROOT)
     for c,_ in rows:
         ranges=date_ranges(c[0])
         matching=[n for n,window in enumerate(dates,1) if all(a<=start<=end<=b for (start,end),(a,b) in zip(ranges,window))]
