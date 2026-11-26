@@ -100,7 +100,7 @@ def install(ns):
             edition = RPT_COMBINED_EDITION
 
             if data == "rpt2027_ppki_home":
-                return send(cid, "📅 <b>RPT 2027 · Pendidikan Khas (PPKI)</b>\n\nPilih tahun.", [
+                return send(cid, "📅 <b>RPT 2027 · Pendidikan Khas</b>\n\nPilih tahun.", [
                     [{"text": "Tahun 2", "callback_data": "rpt2027_ppki_year2"}],
                     [{"text": "Tahun 3", "callback_data": "rpt2027_ppki_year3"}],
                     [{"text": "Tahun 4", "callback_data": "rpt2027_ppki_year4"}],
@@ -249,7 +249,7 @@ def install(ns):
             kb = [[{"text": "Tahun %s" % year,
                     "callback_data": "rpt2027_year_%s" % year}]
                   for year in range(1, 7)]
-            kb.append([{"text": "Pendidikan Khas (PPKI)", "callback_data": "rpt2027_ppki_home"}])
+            kb.append([{"text": "Pendidikan Khas", "callback_data": "rpt2027_ppki_home"}])
             kb.append([{"text": "🏠 Menu Utama", "callback_data": "home"}])
             return send(cid,
                 "📅 <b>RPT 2027</b>\n\n"

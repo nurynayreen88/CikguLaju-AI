@@ -26,7 +26,7 @@ DLP_2027_SCOPES = {
 PRIMARY_CURRICULA = {
     "cv_primary_kssr": (LEGACY, "KSSR"),
     "cv_primary_kp27": (KP2027, "KP2027"),
-    "cv_primary_ppki": (PPKI, "Pendidikan Khas (PPKI)"),
+    "cv_primary_ppki": (PPKI, "Pendidikan Khas"),
 }
 
 DLP_SUBJECTS = {
@@ -106,7 +106,8 @@ def install(namespace):
             keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
         keyboard.extend([[{"text":"⬅️ Pilih Kurikulum", "callback_data":"level_primary"}],
                          [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
-        return send(cid, f"📚 <b>{label}</b>\n\nPilih tahun.", keyboard)
+        prompt = ("KSSR Pendidikan Khas (Masalah Pembelajaran) · Tahun 2–6.\nKP2027 Pendidikan Khas Tahun 1 belum tersedia.\n\nPilih tahun." if version == PPKI else "Pilih tahun.")
+        return send(cid, f"📚 <b>{label}</b>\n\n{prompt}", keyboard)
 
     def choose_year_one_preview(cid):
         reset_selection(cid, KP2027)["year"] = "Tahun 1"
@@ -128,11 +129,11 @@ def install(namespace):
             year = int(action.removeprefix("year"))
             reset_selection(cid, PPKI)["year"] = f"Tahun {year}"
             source = catalog(component_units(year)[COMPONENT][0], year=year)
-            return show(f"Pendidikan Khas (PPKI) · Tahun {year}", "Pilih subjek.",
+            return show(f"Pendidikan Khas · Tahun {year}", "Pilih subjek.",
                         [(source["subject"], "cv_ppki_subject")], "cv_primary_ppki")
         year = next((number for number in YEARS if st.get("year") == f"Tahun {number}"), None)
         if year is None:
-            return primary_years(cid, PPKI, "Pendidikan Khas (PPKI)")
+            return primary_years(cid, PPKI, "Pendidikan Khas")
         units_by_component = component_units(year)
         if action == "subject":
             st["ppki_subject"] = SUBJECT
