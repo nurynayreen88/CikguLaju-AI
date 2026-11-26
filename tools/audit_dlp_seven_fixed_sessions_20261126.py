@@ -13,6 +13,68 @@ from tools.dlp_math2_session_calendar_20261126 import build,calendar_slots
 
 SETS=[("mathematics_dlp",y) for y in range(3,7)]+[("science_dlp",y) for y in (2,3,6)]
 
+
+def optimized_build(subject,year,rows):
+    """Allocate 30-minute source atoms without greedily forcing boundaries.
+
+    Preserve source order and all original minutes; minimize cross-source
+    slots first and then avoid splitting source blocks where feasible.
+    The result is still a review candidate, not a new RPH.
+    """
+    source=[];review=0;atoms=[]
+    for c,_ in rows:
+        m=re.match(r"Lesson\s+(\d+)\b",c[1][0])
+        if m:label=f"L{int(m[1]):02d}"
+        else:review+=1;label=f"R{review:02d}"
+        times=re.findall(r"\b(\d+)\s*min(?:utes)?\b"," ".join(c[4]),re.I)
+        assert len(times)==1
+        duration=int(times[0]);assert duration>0 and duration%30==0
+        source.append((label,duration,c[1],c[2]))
+        atoms.extend((len(source)-1,offset) for offset in range(0,duration,30))
+    calendar=list(calendar_slots(ROOT,subject,year))
+    slots=[(n,d) for n,ds,_,_ in calendar for d in ds]
+    capacity=sum(d//30 for _,d in slots)
+    assert len(atoms)<=capacity
+    # DP: exact source minutes and ordered coverage are hard constraints.
+    # Minimize mixed-source sessions, then cuts, then partially unused slots.
+    # The last term puts reserve capacity near the end when otherwise equal.
+    states={0:((0,0,0,0),[])};remaining=capacity
+    for ix,(_,duration) in enumerate(slots):
+        cap=duration//30;remaining-=cap;new={}
+        for cursor,(cost,picks) in states.items():
+            for take in range(cap+1):
+                stop=cursor+take
+                if stop>len(atoms) or len(atoms)-stop>remaining:continue
+                chosen=atoms[cursor:stop]
+                mixed=int(len({a[0] for a in chosen})>1)
+                cut=int(take>0 and 0<stop<len(atoms) and atoms[stop-1][0]==atoms[stop][0])
+                partial=int(0<take<cap)
+                waste=(cap-take)*(len(slots)-ix)
+                score=tuple(a+b for a,b in zip(cost,(mixed,cut,partial,waste),strict=True))
+                if stop not in new or score<new[stop][0]:new[stop]=(score,picks+[take])
+        states=new
+    assert len(atoms) in states
+    score,picks=states[len(atoms)]
+    cursor=0;session=0;planned=[]
+    for n,ds,available,pair in calendar:
+        sessions=[]
+        for duration in ds:
+            take=picks[session];session+=1
+            parts=[]
+            for row,offset in atoms[cursor:cursor+take]:
+                label,original,title,standards=source[row]
+                if parts and parts[-1]["source_id"]==label:parts[-1]["to_minute"]+=30
+                else:parts.append({"source_id":label,"from_minute":offset,"to_minute":offset+30,"original_minutes":original,"title":title,"standards":standards})
+            cursor+=take
+            sessions.append({"session":session,"minutes":duration,"source_parts":parts,"reserve_minutes":duration-take*30})
+        planned.append({"week":n,"dates":pair,"available_days_by_state":available,"sessions":sessions})
+    assert cursor==len(atoms)
+    return planned,score
+
+def mixed_count(weeks):
+    return sum(len(s["source_parts"])>1 for w in weeks for s in w["sessions"])
+
+
 def plan(subject,year):
     key=f"{subject}:{year}"
     path=document_path(subject,year,root=ROOT/"dlp")
@@ -27,7 +89,10 @@ def plan(subject,year):
             review+=1;label=f"R{review:02d}"
         assert label not in sources
         sources[label]={"title":c[1],"standards":c[2],"learning_evidence":c[3],"textbook_reference":c[4]}
-    weeks=build(subject,year,rows,ROOT)
+    baseline=build(subject,year,rows,ROOT)
+    weeks,score=optimized_build(subject,year,rows)
+    assert mixed_count(weeks)<=mixed_count(baseline)
+    assert score[0]==mixed_count(weeks)
     expected=list(calendar_slots(ROOT,subject,year))
     assert len(weeks)==len(expected)==35
     counts=Counter(); totals=Counter();seen=Counter()
@@ -55,7 +120,7 @@ def plan(subject,year):
         assert len(m)==1 and totals[label]==int(m[0]),(key,label)
     minutes=sum(totals.values())
     assert minutes==(5760 if subject=="mathematics_dlp" else 2880 if year<=3 else 3840)
-    return {"key":key,"source_sha256":PINS[key],"source_rows":len(sources),"source_minutes":minutes,"teaching_weeks":len(weeks),"sessions":sum(counts.values()),"status_counts":dict(counts),"source_continuations":sum(v>1 for v in seen.values()),"release_ready":False,"weeks":weeks}
+    return {"key":key,"baseline_mixed_sessions":mixed_count(baseline),"optimized_mixed_sessions":score[0],"source_boundary_cuts":score[1],"source_sha256":PINS[key],"source_rows":len(sources),"source_minutes":minutes,"teaching_weeks":len(weeks),"sessions":sum(counts.values()),"status_counts":dict(counts),"source_continuations":sum(v>1 for v in seen.values()),"release_ready":False,"weeks":weeks}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument("--out",type=Path,required=True);a=p.parse_args()
