@@ -444,6 +444,13 @@ def create_native_rph_blueprint(runtime):
         year, subject, unit, lesson = (selection[key] for key in ("year", "subject", "unit", "lesson"))
         if any(not isinstance(value, str) or len(value) > 40 for value in (subject, unit, lesson)):
             raise ValueError("Invalid DLP selection")
+        if unit == "sessions":
+            from web import dlp_paired_session_delivery as paired
+            try:
+                row=paired.resolve(year,subject,unit,lesson)
+                return ({"id":unit},{"id":lesson,"paired_session":row}) if row is not None else None
+            except (OSError,ValueError,KeyError) as exc:
+                raise RuntimeError("DLP session release unavailable") from exc
         renderer = aligned_dlp(year, subject)
         if renderer is None:
             return resolve(year, subject, unit, lesson)
@@ -464,8 +471,13 @@ def create_native_rph_blueprint(runtime):
         if renderer is None:
             return jsonify({"error": "DLP catalogue unavailable"}), 404
         try:
-            return jsonify({"year": year, "subject": subject, "units": renderer.download_catalogue()})
-        except (OSError, ValueError):
+            from web import dlp_paired_session_delivery as paired
+            units=list(renderer.download_catalogue())
+            session_unit=paired.catalogue(year,subject)
+            if session_unit is not None:
+                units.append(session_unit)
+            return jsonify({"year": year, "subject": subject, "units": units})
+        except (OSError, ValueError, KeyError):
             return jsonify({"error": "DLP curriculum source unavailable"}), 503
 
     @bp.get("/internal/rph/v1/dlp/availability")
@@ -564,7 +576,10 @@ def create_native_rph_blueprint(runtime):
         try:
             selection = body["selection"]
             renderer = aligned_dlp(selection["year"], selection["subject"])
-            if renderer:
+            if "paired_session" in lesson:
+                from web import dlp_paired_session_delivery as paired
+                document=paired.render(lesson["paired_session"],fmt,teacher)
+            elif renderer:
                 document = renderer.render_download(lesson, fmt, teacher)
             else:
                 document = render_dlp(selection["subject"], unit, lesson, fmt, teacher)

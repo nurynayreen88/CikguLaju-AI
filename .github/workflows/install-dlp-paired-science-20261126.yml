@@ -1,0 +1,79 @@
+name: Install paired Science session release candidates
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/install-dlp-paired-science-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  install:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'release/dlp-session-renderer-batch1-20261126'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: runtime
+          persist-credentials: true
+      - uses: actions/checkout@v4
+        with:
+          ref: 74c52d707746b292aca646f50a0b67c9b51272be
+          path: qa
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: dlp-actual-rph-phase-crosswalk
+          run-id: 45824945883
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: evidence
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'python-docx>=1.1,<2' 'reportlab>=4,<5' 'pypdf>=5,<7' 'PyMuPDF>=1.24,<2' 'flask>=3,<4' 'lxml>=5,<7' 'requests>=2'
+      - working-directory: runtime
+        run: |
+          python - <<'PY'
+          import sys,json,hashlib
+          from pathlib import Path
+          sys.path.insert(0,str(Path('../qa/tools').resolve()))
+          from render_dlp_science_session_rph_previews_20261126 import source_records,session_payload
+          from web.dlp_paired_session_delivery import ROOT,SETS
+          evidence=Path('../evidence/paired-session-content.json').read_bytes()
+          all_sets=json.loads(evidence)['sets']
+          manifest={'qa_run':45824945883,'qa_commit':'74c52d707746b292aca646f50a0b67c9b51272be','source_sha256':hashlib.sha256(evidence).hexdigest(),'sets':{}}
+          root=Path('../qa/rpt_2027/dlp/standard_descriptions')
+          ROOT.mkdir(parents=True,exist_ok=True)
+          for (year,subject),count in SETS.items():
+              key=f'science_dlp:{year}'
+              dataset=next(d for d in all_sets if d['key']==key)
+              bank=json.loads((root/f'science_year{year}.json').read_text())
+              reviews=json.loads((root/'review_mappings.json').read_text())['mappings'].get(key,{})
+              source=source_records(year)
+              rows=[]
+              for session in dataset['sessions']:
+                  heading,details,activities,footer,teacher=session_payload(session,source,bank,reviews,year,'science_dlp',{})
+                  assert not any(teacher.values())
+                  rows.append({'session':session['session'],'week':session['week'],'dates':session['dates'],'minutes':session['slot_minutes'],'source_ids':session['source_ids'],'source_labels':session['source_labels'],'heading':heading,'details':[(k,v) for k,v in details if k not in ('Class','Date','Time','Number of pupils')],'activities':activities,'references':' · '.join(session['references']),'objectives':len(session['objective'])})
+              assert len(rows)==count and [r['session'] for r in rows]==list(range(1,count+1))
+              data=json.dumps(rows,ensure_ascii=False,indent=2).encode()+b'\n'
+              (ROOT/f'{subject}_{year}.json').write_bytes(data)
+              manifest['sets'][f'{subject}:{year}']={'sha256':hashlib.sha256(data).hexdigest(),'count':count,'academic_approved':False}
+          (ROOT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          print('Prepared 210 source-locked session payloads; activation remains disabled.')
+          PY
+      - working-directory: runtime
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add staging/dlp/paired_release
+          if git diff --cached --quiet; then
+            echo 'Assets already installed; no commit required.'
+          else
+            git commit -m 'Install 210 checksum-pinned Science session candidates from validated QA run'
+            git push origin HEAD:refs/heads/release/dlp-session-renderer-batch1-20261126
+          fi

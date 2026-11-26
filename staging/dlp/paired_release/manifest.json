@@ -1,0 +1,22 @@
+{
+  "qa_run": 45824945883,
+  "qa_commit": "74c52d707746b292aca646f50a0b67c9b51272be",
+  "source_sha256": "28cbbdde4642b6be8f261f2a2c1820872027f5e8b7a04f10a3de3110a04fc9f4",
+  "sets": {
+    "SCIENCE_DLP:2": {
+      "sha256": "699953e693e11bc92f98259799f8ff8fda552f726cd8a89bf85dd6f6a8ec0295",
+      "count": 70,
+      "academic_approved": false
+    },
+    "SCIENCE_DLP:3": {
+      "sha256": "c27094f4a3067ee0b01196300f52679a6006954e00edf22e6cef35085e44797e",
+      "count": 70,
+      "academic_approved": false
+    },
+    "SCIENCE_DLP:6": {
+      "sha256": "c03b9a00b00d5f5340664522ef8e4286553cf0223699563ee35f78a9691ef89f",
+      "count": 70,
+      "academic_approved": false
+    }
+  }
+}
