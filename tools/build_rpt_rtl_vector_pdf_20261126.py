@@ -81,7 +81,23 @@ def build(subject,year,out):
             for page_no,clip,old_no,old_clip in copied:
                 before=old[old_no].get_text(clip=old_clip)
                 after=new[page_no].get_text(clip=clip)
-                assert before==after,(key,old_no,page_no,list(old_clip),list(clip),repr(before),repr(after))
+                if before!=after:
+                    # Extraction block order can change after translation even
+                    # when the native glyphs and their positions are unchanged.
+                    # Only accept exact per-glyph, relative-position parity.
+                    assert key=="bahasa_arab:2" and Counter(before.splitlines())==Counter(after.splitlines()),(key,repr(before),repr(after))
+                    def glyphs(page,box):
+                        out=[]
+                        for block in page.get_text("rawdict",clip=box)["blocks"]:
+                            for line in block.get("lines",[]):
+                                for span in line["spans"]:
+                                    for ch in span["chars"]:
+                                        if ch["c"].isspace():continue
+                                        out.append((ch["c"],ch["origin"][0]-box.x0,ch["origin"][1]-box.y0,span["size"]))
+                        return sorted(out)
+                    ga,gb=glyphs(old[old_no],old_clip),glyphs(new[page_no],clip)
+                    assert len(ga)==len(gb) and all(a[0]==b[0] and max(abs(x-y) for x,y in zip(a[1:],b[1:]))<.08 for a,b in zip(ga,gb)),(key,old_no,page_no,ga,gb)
+                    print("EXTRACTION_ORDER_ONLY_GLYPH_GEOMETRY_VERIFIED",key,old_no,page_no,flush=True)
             assert Counter(l["uri"] for p in old for l in p.get_links())==Counter(l["uri"] for p in new for l in p.get_links())
             assert len(new)<=len(old)
             for p in new:

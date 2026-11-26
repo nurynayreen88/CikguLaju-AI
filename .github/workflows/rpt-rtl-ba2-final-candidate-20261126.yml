@@ -1,0 +1,60 @@
+name: Build final verified Arabic Year 2 free vector PDF
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - '.github/workflows/rpt-rtl-ba2-final-candidate-20261126.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'feat/rpt-rtl-nine-vector-pdf-release-20261126'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt
+      - name: Add only the final verified free PDF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from tempfile import TemporaryDirectory
+          from hashlib import sha256
+          import json,fitz
+          from tools.build_rpt_rtl_vector_pdf_20261126 import build,ROOT
+          key="bahasa_arab:2"
+          entry=json.loads((ROOT/"manifest.json").read_text())["files"][key]
+          source=ROOT/entry["path"]
+          folder=ROOT.parent/"compact_rtl_pdf_2027"
+          manifest=json.loads((folder/"manifest.json").read_text())
+          assert manifest["count"]==9 and key not in manifest["files"]
+          assert sha256(source.read_bytes()).hexdigest()==entry["sha256"]
+          with TemporaryDirectory() as temp:
+              build("bahasa_arab",2,Path(temp))
+              candidate=Path(temp)/"RPT_bahasa_arab_tahun_2_2027.pdf"
+              data=candidate.read_bytes()
+              with fitz.open(source) as a,fitz.open(candidate) as b:
+                  assert a[0].get_pixmap().samples==b[0].get_pixmap().samples
+                  assert len(b)<=len(a)
+                  e={"path":"bahasa_arab/tahun_2.pdf","source_sha256":entry["sha256"],
+                     "sha256":sha256(data).hexdigest(),"bytes":len(data),"pages":len(b),"source_pages":len(a)}
+              (folder/e["path"]).write_bytes(data)
+          manifest["files"][key]=e
+          manifest["count"]=10
+          (folder/"manifest.json").write_text(json.dumps(manifest,indent=2)+"\n")
+          assert len(list(folder.rglob("*.pdf")))==10 and not list(folder.rglob("*.docx"))
+          PY
+      - name: Commit only final free PDF and manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- rpt_2027/compact_rtl_pdf_2027/bahasa_arab/tahun_2.pdf rpt_2027/compact_rtl_pdf_2027/manifest.json
+          git diff --cached --name-only | python -c 'import sys; assert set(sys.stdin.read().splitlines())=={"rpt_2027/compact_rtl_pdf_2027/bahasa_arab/tahun_2.pdf","rpt_2027/compact_rtl_pdf_2027/manifest.json"}'
+          git commit -m "build(rpt): final Arabic Year 2 free vector PDF"
+          git push origin HEAD:refs/heads/feat/rpt-rtl-nine-vector-pdf-release-20261126
