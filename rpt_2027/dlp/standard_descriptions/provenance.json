@@ -1,0 +1,82 @@
+{
+  "mathematics_dlp:2": {
+    "commit": "82eed32217c6b717d7ddd1c7f7c4200a989ecee5",
+    "path": "staging/dlp/year2/mathematics_standard_descriptions.json",
+    "blob_sha": "7ce97b9275855a6cb1faf84932c249098ec8d301",
+    "cs": 37,
+    "ls": 70,
+    "parts": 7
+  },
+  "mathematics_dlp:3": {
+    "commit": "16648b16a099f799c86c8f55bac76289f1b7589c",
+    "path": "staging/dlp/year3/mathematics_standard_descriptions.json",
+    "blob_sha": "28f54fe7ad175a6b1e3c37507b5e25c9bd6c4e26",
+    "cs": 52,
+    "ls": 102,
+    "parts": 4
+  },
+  "mathematics_dlp:4": {
+    "commit": "16648b16a099f799c86c8f55bac76289f1b7589c",
+    "path": "staging/dlp/year4/mathematics_standard_descriptions.json",
+    "blob_sha": "9810da2edf85e3cf479710271cc36db12c26e916",
+    "cs": 41,
+    "ls": 85,
+    "parts": 0
+  },
+  "mathematics_dlp:5": {
+    "commit": "16648b16a099f799c86c8f55bac76289f1b7589c",
+    "path": "staging/dlp/year5/mathematics_standard_descriptions.json",
+    "blob_sha": "42128037aeb237b33a41825f824e0e68174e3c4a",
+    "cs": 38,
+    "ls": 72,
+    "parts": 0
+  },
+  "mathematics_dlp:6": {
+    "commit": "16648b16a099f799c86c8f55bac76289f1b7589c",
+    "path": "staging/dlp/year6/mathematics_standard_descriptions.json",
+    "blob_sha": "18d8d3f373d8e6911fca4054f8aaaef3c90de3e8",
+    "cs": 25,
+    "ls": 38,
+    "parts": 0
+  },
+  "science_dlp:2": {
+    "commit": "8f32c1cabac9091e62447e8f8995e5d7fddf34c1",
+    "path": "staging/dlp/year2/science_standard_descriptions.json",
+    "blob_sha": "9b70db03760d8242dd6e958d22892b2534f864f0",
+    "cs": 12,
+    "ls": 64,
+    "parts": 0
+  },
+  "science_dlp:3": {
+    "commit": "2f9f00881b65c333296486e49b9fcc874be4b411",
+    "path": "staging/dlp/year3/science_standard_descriptions.json",
+    "blob_sha": "6b61365ae0db9879ac52c0782c4988183975fd87",
+    "cs": 13,
+    "ls": 60,
+    "parts": 0
+  },
+  "science_dlp:4": {
+    "commit": "61b24e6055f8a3e48213668e1f7648f94e7bdde6",
+    "path": "staging/dlp/year4/science_standard_descriptions.json",
+    "blob_sha": "6648509749c1661a51566d70134db72b588544bd",
+    "cs": 20,
+    "ls": 92,
+    "parts": 0
+  },
+  "science_dlp:5": {
+    "commit": "31cdc24883c847114db6ec7cd70b56b5206b3188",
+    "path": "staging/dlp/year5/science_standard_descriptions.json",
+    "blob_sha": "8d326a7075958927143f51acf490b240fe0c29c1",
+    "cs": 19,
+    "ls": 95,
+    "parts": 0
+  },
+  "science_dlp:6": {
+    "commit": "be77ec50b4f53fb93f6435eb7153b01397ee7c9e",
+    "path": "staging/dlp/year6/science_standard_descriptions.json",
+    "blob_sha": "3c6f46917f2c0e726dc2f57bd84f2fa291733842",
+    "cs": 18,
+    "ls": 96,
+    "parts": 0
+  }
+}
