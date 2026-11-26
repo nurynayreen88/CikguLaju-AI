@@ -109,11 +109,15 @@ def _book_references(plan):
     return " · ".join(plan["references"]).replace("TB ", "Textbook ")
 
 
+def _catalogue_minutes(plan):
+    from staging.dlp.science_y45_session_delivery import extend
+    return extend(plan,4)["minutes"]
+
 def download_catalogue():
     return [
         {"id": unit["id"], "title": unit["title"], "lessons": [
             {"id": plan["id"], "title": plan["title"], "label": plan["label"],
-             "book_reference": _book_references(plan), "minutes": plan["minutes"]}
+             "book_reference": _book_references(plan), "minutes": _catalogue_minutes(plan)}
             for plan in unit["lessons"].values()
         ]}
         for unit in _download_units().values()
@@ -128,6 +132,8 @@ def resolve_download(unit_id, lesson_id):
 
 
 def render_download(plan, fmt, teacher):
+    from staging.dlp.science_y45_session_delivery import for_teacher
+    plan=for_teacher(plan,4,teacher)
     output = BytesIO()
     render_plan(output, plan, {"word": _word, "pdf": _pdf}[fmt], teacher=teacher)
     return output.getvalue()
