@@ -94,68 +94,68 @@ def rebalance_dlp(plan,calendar):
             n=s["source_row"]
             entry=source_rows.setdefault(n,{"source_row":n,"source_label":s["source_label"],"minutes":s["original_minutes"]})
             assert entry["minutes"]==s["original_minutes"]
-    # Keep source lesson boundaries. Do not combine unrelated 30-minute
-    # activities just to fill 60 minutes: existing short RPHs remain intact.
-    # Split only the genuinely long source lessons into candidate parts.
-    sessions=[]
-    for r in source_rows.values():
-        offset=0;parts=slots(r["minutes"])
-        for part,minutes in enumerate(parts,1):
-            sessions.append({"source_row":r["source_row"],"source_label":r["source_label"],
-                "original_minutes":r["minutes"],"offset_minutes":offset,"part":part,
-                "parts":len(parts),"minutes":minutes,
-                "status":"RPH_MATCH_EXISTING" if len(parts)==1 else "DISTINCT_RPH_PART_REVIEW_REQUIRED"})
-            offset+=minutes
-        assert offset==r["minutes"]
-    assert sum(s["minutes"] for s in sessions)==plan["source_minutes"]
-    capacity=sum(short if n in short_weeks else normal for n,_ in calendar)
-    assert capacity>=plan["source_minutes"],(plan["subject"],plan["year"],capacity)
-    # Dynamic programming: preserve order and the source lesson identities.
-    # Choose balanced teaching load while leaving unused time explicit.
-    # No source sessions are merged. Permit an exceptional 60-min part to
-    # become two 30-min parts only if otherwise impossible (reported separately).
+    # Latest owner decision: durations are INTERNAL workload guides, not
+    # printed lesson durations or mandatory new RPH IDs. Keep every source's
+    # entire teaching time. Prefer keeping a source together; permit it to
+    # continue across weeks only where needed. Never combine unrelated sources.
+    atoms=[(r["source_row"],offset) for r in source_rows.values()
+           for offset in range(0,r["minutes"],30)]
     limits=[short if n in short_weeks else normal for n,_ in calendar]
-    def allocate(items):
-        states={0:(0,[])}
-        total=sum(s["minutes"] for s in items)
-        cap=0
-        for limit in limits:
-            cap+=limit;new={}
-            target=total*cap/sum(limits)
-            prefixes=[0]
-            for s in items:prefixes.append(prefixes[-1]+s["minutes"])
-            for start,(cost,counts) in states.items():
-                for stop in range(start,len(items)+1):
-                    used=prefixes[stop]-prefixes[start]
-                    if used>limit:break
-                    score=cost+(prefixes[stop]-target)**2+3*(limit-used)**2
-                    if stop not in new or score<new[stop][0]:
-                        new[stop]=(score,counts+[stop-start])
-            states=new
-        return states.get(len(items))
-    answer=allocate(sessions)
-    assert answer is not None,(plan["subject"],plan["year"],"source sessions cannot fit without extra split")
-    _,counts=answer;new=[];cursor=0;buffer=0
+    capacity=sum(limits)
+    assert len(atoms)*30==plan["source_minutes"]<=capacity
+    # Optimize weekly load and penalize cutting an existing lesson boundary.
+    # Work in 30-minute units; the original RPH remains the parent identity.
+    states={0:(0,[])};cap=0
+    for limit in limits:
+        cap+=limit;new={}
+        target=len(atoms)*cap/capacity
+        for start,(cost,counts) in states.items():
+            for stop in range(start,min(len(atoms),start+limit//30)+1):
+                cut=0<stop<len(atoms) and atoms[stop-1][0]==atoms[stop][0]
+                score=cost+(stop-target)**2+3*(limit//30-(stop-start))**2+100*cut
+                if stop not in new or score<new[stop][0]:
+                    new[stop]=(score,counts+[stop-start])
+        states=new
+    assert len(atoms) in states,(plan["subject"],plan["year"])
+    _,counts=states[len(atoms)]
+    new=[];cursor=0;buffer=0;source_totals=Counter();source_weeks=defaultdict(set)
     for (week,dates),limit,count in zip(calendar,limits,counts):
-        items=[dict(s,candidate_session=i+1) for i,s in enumerate(sessions[cursor:cursor+count],cursor)]
-        cursor+=count;used=sum(s["minutes"] for s in items)
-        buffer+=limit-used
-        for minutes in slots(limit-used) if limit>used else []:
-            items.append({"minutes":minutes,"status":"FLEXIBLE_REINFORCEMENT_OR_REPLACEMENT_NO_RPH_ASSIGNED"})
-        assert sum(s["minutes"] for s in items)==limit
-        new.append({"week":week,"dates":dates,"planned_minutes":limit,"sessions":items})
-    assert cursor==len(sessions) and capacity-buffer==plan["source_minutes"]
-    assert [s["source_row"] for w in new for s in w["sessions"] if "candidate_session" in s]==[s["source_row"] for s in sessions]
+        picked=atoms[cursor:cursor+count];cursor+=count
+        items=[]
+        for row,offset in picked:
+            source=source_rows[row]
+            if items and items[-1]["source_row"]==row:
+                items[-1]["internal_minutes"]+=30
+            else:
+                items.append({"source_row":row,"source_label":source["source_label"],
+                              "original_minutes":source["minutes"],"offset_minutes":offset,
+                              "internal_minutes":30,"status":"RPH_SOURCE_MATCH_REQUIRED"})
+            source_totals[row]+=30;source_weeks[row].add(week)
+        used=count*30;buffer+=limit-used
+        new.append({"week":week,"dates":dates,"internal_capacity_minutes":limit,
+                    "internal_teaching_minutes":used,"flexible_unassigned_minutes":limit-used,
+                    "lesson_blocks":items})
+    assert cursor==len(atoms) and capacity-buffer==plan["source_minutes"]
+    assert dict(source_totals)=={k:v["minutes"] for k,v in source_rows.items()}
+    split={row for row,weeks in source_weeks.items() if len(weeks)>1}
+    for w in new:
+        for item in w["lesson_blocks"]:
+            row=item["source_row"]
+            if row in split:
+                item["status"]="CONTINUATION_REQUIRES_DISTINCT_ACTIVITY_REVIEW"
+            elif item["internal_minutes"]>60:
+                item["status"]="LONG_LESSON_REVIEW_FOR_ACTUAL_TIMETABLE_SESSIONS"
+            else:
+                item["status"]="RETAIN_EXISTING_RPH_IF_CONTENT_MATCHES"
     return {"subject":plan["subject"],"year":plan["year"],"normal_week_minutes":normal,
        "short_week_minutes":short,"short_weeks":sorted(short_weeks),
        "reserved_weeks":[6,18,19],"last_teaching_week":38,"source_minutes":plan["source_minutes"],
        "timetable_capacity_minutes":capacity,"flexible_minutes_unassigned":buffer,
-       "candidate_teaching_sessions":len(sessions),
-       "existing_short_rph_candidates":sum(s["parts"]==1 for s in sessions),
-       "new_distinct_parts_requiring_review":sum(s["parts"]>1 for s in sessions),
-       "combined_slots_requiring_review":0,
+       "source_lessons_preserved":len(source_rows),
+       "source_lessons_spanning_weeks":len(split),
+       "long_source_lessons_needing_activity_review":sum(r["minutes"]>60 for r in source_rows.values()),
        "source_sha256":plan["source_sha256"],"source_rows":list(source_rows.values()),
-       "weeks":new,"status":"CANDIDATE_ONLY_RPH_CONTENT_MAPPING_REQUIRED"}
+       "weeks":new,"status":"INTERNAL_GUIDE_ONLY_RPH_CONTENT_MAPPING_REQUIRED"}
 
 def main():
     import argparse
