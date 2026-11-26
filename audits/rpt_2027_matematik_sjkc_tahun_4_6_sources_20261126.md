@@ -23,3 +23,16 @@ Pautan DSKP telah dikenal pasti; kandungan penuh belum disahkan. RPT sekolah ruj
 - Jangan tambah menu tahun sebelum fail dan semakan akademik tersedia.
 
 Rujukan struktur terdahulu: PR #828 (bahan Tahun 3, bukan sumber SK/SP Tahun 4–6).
+
+
+## Sumber alternatif 26 November — rujukan RPT 2026 ditemui
+
+| Tahun | DSKP salinan teks | RPT sekolah 2026 (金星小学) |
+|---|---|---|
+| 4 | [PDF](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-4-SJKC.pdf) | [RPT 2026](https://www.scribd.com/document/985486036/2026-%E5%9B%9B%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92) |
+| 5 | [Flipbook](https://fliphtml5.com/dsymy/qpkj) | [RPT 2026](https://www.scribd.com/document/985486037/2026-%E4%BA%94%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92) |
+| 6 | [PDF](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-6-SJKC.pdf) | [RPT 2026](https://www.scribd.com/document/985486035/2026-%E5%85%AD%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92) |
+
+Muka depan PDF Tahun 4 dan 6 diperiksa: kedua-duanya khusus Matematik SJK(C), tahun yang sepadan. Salinan PDF alternatif Tahun 5 di cikgulim.com mempunyai teks terindeks tetapi fail terus mengembalikan 404; jangan gunakan pautan tersebut sebagai sumber stabil. Rujuk flipbook dan pautan PPD. Tajuk dan tahun RPT sekolah 2026 dikenal pasti, tetapi urutan setiap PdP belum diaudit. Gunakan RPT sekolah hanya sebagai rujukan turutan dan semak silang DSKP serta buku teks, bukan salin kandungan.
+
+Status penerbitan kekal HOLD.
