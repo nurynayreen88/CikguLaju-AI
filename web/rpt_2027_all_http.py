@@ -697,6 +697,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
         compact=compact_pdf.read(subject,year,content,root=root) if staged is not None else None
         if compact is None and staged is not None and subject=="bahasa_melayu":
             compact=compact_pdf.read_language(subject,year,content,root=root)
+        if compact is None and staged is not None and subject in ("pendidikan_islam","bahasa_arab"):
+            compact=compact_pdf.read_rtl(subject,year,content,root=root)
         if compact is not None:
             content,digest=compact
         response=send_file(BytesIO(content),mimetype="application/pdf",as_attachment=True,
