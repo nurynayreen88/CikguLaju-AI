@@ -1,0 +1,26 @@
+name: DLP RPH Pantas weekly source alignment
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web/dlp_rpt_weekly_suggestions.py'
+      - 'web/rph_hari_ini_web.py'
+      - 'web_v1_static_preview/rph-today.js'
+      - 'tests/test_dlp_rpt_weekly_suggestions.py'
+      - '.github/workflows/dlp-weekly-rpt-pantas-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'requests>=2'
+      - run: node --check web_v1_static_preview/rph-today.js
+      - run: python -m unittest discover -s tests -p test_dlp_rpt_weekly_suggestions.py -v
