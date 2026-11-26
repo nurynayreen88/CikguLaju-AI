@@ -71,6 +71,7 @@
  }
  function nativeLessonLabel(item,code,year){
   let text=String(item.label||"").trim();
+  if(code==="SCIENCE_DLP"&&/^SESSION-(?:00[1-9]|0[1-6][0-9]|070)$/.test(String(item.value))&&/^Session \d{2}\b/.test(text))return text;
   if(!/^(?:PdP|Lesson)\s*0*[1-9][0-9]*/i.test(text)){
    const n=item.pdp_no??item.lesson_no??item.sequence_no;
    if(Number.isInteger(n)&&n>0&&n<10000)
@@ -394,7 +395,7 @@
      option.dataset.completionToken=String(item.completion_token||"");
      if(c.slot.suggested_session?.includes(lessonNumber(title,c.slot.subject_code,c.slot.year)))
       option.textContent+=" · Cadangan slot ini";
-     else if(!c.progressHint&&(suggestedLessonNumbers(c).includes(lessonNumber(title,c.slot.subject_code,c.slot.year)) || c.slot.rpt_suggestion?.dlp_labels?.includes(title.match(/^(Lesson|Review)\s+(\d+)\b/i)?.[0].replace(/\d+$/,n=>String(Number(n)).padStart(2,"0")))))
+     else if(!c.progressHint&&(suggestedLessonNumbers(c).includes(lessonNumber(title,c.slot.subject_code,c.slot.year)) || c.slot.rpt_suggestion?.dlp_labels?.includes(title.match(/^(Lesson|Review|Session)\s+(\d+)\b/i)?.[0].replace(/\d+$/,n=>String(Number(n)).padStart(2,"0")))))
       option.textContent+=" · Cadangan minggu ini";
      option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
      option.dataset.activityBookRef=String(item.activitybook_ref||"").trim();
