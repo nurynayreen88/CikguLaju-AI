@@ -79,7 +79,9 @@ def build(subject,year,out):
         with fitz.open(target) as new:
             assert old[0].get_pixmap().samples==new[0].get_pixmap().samples
             for page_no,clip,old_no,old_clip in copied:
-                assert old[old_no].get_text(clip=old_clip)==new[page_no].get_text(clip=clip),(key,old_no,page_no)
+                before=old[old_no].get_text(clip=old_clip)
+                after=new[page_no].get_text(clip=clip)
+                assert before==after,(key,old_no,page_no,list(old_clip),list(clip),repr(before),repr(after))
             assert Counter(l["uri"] for p in old for l in p.get_links())==Counter(l["uri"] for p in new for l in p.get_links())
             assert len(new)<=len(old)
             for p in new:
