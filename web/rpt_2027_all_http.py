@@ -362,6 +362,8 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
 
 def create_all_rpt_blueprint(*,root=ROOT):
     bp=Blueprint("all_rpt_2027_pdf",__name__)
+    from web.calendar_2027_download import install_routes
+    install_routes(bp,_account)
     @bp.after_request
     def private_cache(response):
         response.headers["Cache-Control"]="no-store, private"
