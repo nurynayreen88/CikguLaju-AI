@@ -187,3 +187,36 @@ def read_rtl(subject,year,original,*,root):
         return raw,digest
     except (OSError,ValueError,KeyError,TypeError,AttributeError):
         return None
+
+def read_full_standards_dlp(subject,year,original,*,root):
+    # New revision is opt-in only via the complete, checksum-locked manifest.
+    if os.environ.get("CIKGULAJU_RPT_COMPACT_PDF_BATCH")!="1":
+        return None
+    from tools.build_rpt_dlp_native_20261126 import PINS
+    key=f"{subject}:{year}"
+    expected=PINS.get(key)
+    if not expected or hashlib.sha256(original).hexdigest()!=expected:
+        return None
+    try:
+        base=Path(root)/"full_standards_dlp_pdf_2027"
+        m=json.loads((base/"manifest.json").read_text("utf8"))
+        if m["version"]!=1 or m["count"]!=10 or m["status"]!="LAYOUT_QA_CANDIDATE" or set(m["files"])!=set(PINS):
+            return None
+        e=m["files"][key]
+        relative=f"{subject}/tahun_{year}.pdf"
+        if e["path"]!=relative or e["source_sha256"]!=expected:
+            return None
+        file=base/relative
+        if file.is_symlink() or not 8000<=file.stat().st_size<=25*1024*1024:
+            return None
+        raw=file.read_bytes()
+        digest=hashlib.sha256(raw).hexdigest()
+        lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
+        layout=lock["full_standards_dlp_pdf_covers"]
+        if layout["status"]!="FULL_STANDARDS_DLP_RPT_PDF_COVER_VERIFIED" or set(layout["source_sha256_by_subject_year"])!=set(PINS):
+            return None
+        if not raw.startswith(b"%PDF-") or len(raw)!=e["bytes"] or digest!=e["sha256"] or layout["source_sha256_by_subject_year"].get(key)!=digest:
+            return None
+        return raw,digest
+    except (OSError,ValueError,KeyError,TypeError,AttributeError):
+        return None
