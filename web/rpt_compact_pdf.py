@@ -200,7 +200,7 @@ def dlp_whole_week_release(root):
         for key,digest in PINS.items():
             subject,year=key.split(":")
             entry=m["files"][key];relative=f"{subject}/tahun_{year}.pdf"
-            if entry["path"]!=relative or entry["source_sha256"]!=digest or layout["source_sha256_by_subject_year"].get(key)!=entry["sha256"]:
+            if entry["path"]!=relative or entry["source_sha256"]!=digest or layout.get("original_source_sha256_by_subject_year",layout["source_sha256_by_subject_year"]).get(key)!=entry["sha256"]:
                 return False
             file=base/relative
             if file.is_symlink() or file.stat().st_size!=entry["bytes"] or hashlib.sha256(file.read_bytes()).hexdigest()!=entry["sha256"]:
@@ -236,7 +236,7 @@ def read_full_standards_dlp(subject,year,original,*,root):
         layout=lock["full_standards_dlp_pdf_covers"]
         if layout["status"]!="FULL_STANDARDS_DLP_RPT_PDF_COVER_VERIFIED" or set(layout["source_sha256_by_subject_year"])!=set(PINS):
             return None
-        if not raw.startswith(b"%PDF-") or len(raw)!=e["bytes"] or digest!=e["sha256"] or layout["source_sha256_by_subject_year"].get(key)!=digest:
+        if not raw.startswith(b"%PDF-") or len(raw)!=e["bytes"] or digest!=e["sha256"] or layout.get("original_source_sha256_by_subject_year",layout["source_sha256_by_subject_year"]).get(key)!=digest:
             return None
         return raw,digest
     except (OSError,ValueError,KeyError,TypeError,AttributeError):
