@@ -109,10 +109,46 @@ def source_identity(year):
     if actual!=LIVE_BLOBS[year]: raise ValueError("Active English RPT source changed")
     return path,sha256(raw).hexdigest()
 
+def integrated_rows(active,weeks):
+    """Read exact teaching cells from the active integrated PDF, not legacy PDF."""
+    planned={n:(week,a,b,slot,session) for week,a,b,sessions in weeks
+             for slot,session in enumerate(sessions,1) for n in session}
+    rows={}
+    with fitz.open(active) as pdf:
+        for page in list(pdf)[3:]:
+            top=128.0
+            right=page.rect.width-34
+            rules=sorted(d["rect"].y0 for d in page.get_drawings()
+                         if d["rect"].height<.25 and abs(d["rect"].x0-34)<.5
+                         and abs(d["rect"].x1-right)<.5 and top<d["rect"].y0<page.rect.height-42)
+            ys=[top]
+            for y in rules:
+                if y-ys[-1]>.5:ys.append(y)
+            page_text=normalize(page.get_text())
+            for y0,y1 in zip(ys,ys[1:]):
+                cells=[]
+                for x0,x1 in ((34,204),(204,649),(649,right)):
+                    cells.append(page.get_text("text",clip=fitz.Rect(x0,y0,x1,y1)).strip().splitlines())
+                if not any(cells):continue
+                match=re.fullmatch(r"LESSON:\s*(\d+)",cells[0][0]) if cells[0] else None
+                if not match:raise ValueError(f"Unclassified English row p{page.number+1}")
+                n=int(match[1]);week,a,b,slot,session=planned[n]
+                assert n not in rows and all(cells)
+                assert f"Week {week:02d}" in page_text and f"Group A: {a}" in page_text and f"Group B: {b}" in page_text
+                label=f"Session {slot} · 60 min" if len(session)==1 else f"Session {slot} · RPH {session[0]:03d}+{session[1]:03d}"
+                assert normalize(label) in normalize(" ".join(cells[0]))
+                # Preserve the complete printed topic/session labels and exact column text.
+                all_text=page.get_text("text",clip=fitz.Rect(34,y0,right,y1))
+                letters=lambda v:Counter(c for c in v if not c.isspace())
+                assert letters(all_text)==letters("".join(line for cell in cells for line in cell))
+                rows[n]=cells
+    assert list(rows)==list(range(1,161)),len(rows)
+    return rows
+
 def build_word(year):
     active,digest=source_identity(year)
-    rows=source_rows(year)
     weeks=schedule(year)
+    rows=integrated_rows(active,weeks)
     assert len(rows)==160 and len(weeks)==44
     assert sum(len(sessions) for _,_,_,sessions in weeks)==142
     # Confirm each original dated source row matches the integrated live PDF.
@@ -152,7 +188,7 @@ def build_word(year):
                     row=add_row(t)
                     topic,standards,references=rows[n]
                     label=f"Session {slot} · 60 min" if len(session)==1 else f"Session {slot} · RPH {session[0]:03d}+{session[1]:03d}"
-                    fill(row.cells[1],[topic[0],label,*topic[1:]])
+                    fill(row.cells[1],topic)
                     fill(row.cells[2],standards)
                     fill(row.cells[3],references)
         else:
