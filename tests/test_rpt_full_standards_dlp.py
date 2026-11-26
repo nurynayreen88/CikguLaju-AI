@@ -25,9 +25,11 @@ class FullDLPTest(unittest.TestCase):
             url=f"/api/rpt/2027/all/{subject}/{year}"
             with patch.dict("os.environ",{"CIKGULAJU_RPT_FULL_STANDARDS_DLP":"1","CIKGULAJU_RPT_NATIVE_WORD_BATCH":"1"}):
                 raw,digest=read_full_standards_dlp(subject,year,original,root=ROOT)
-                flexible=os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1"
+                from web.rpt_compact_pdf import dlp_whole_week_release
+                whole=dlp_whole_week_release(ROOT)
+                flexible=not whole and os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1"
                 headers=list(HEADS)
-                if flexible:headers[-1]="Textbook"
+                if flexible or whole:headers[-1]="Textbook"
                 self.assertEqual(digest,e["sha256"])
                 self.assertIsNone(read_full_standards_dlp(subject,year,original+b"x",root=ROOT))
                 with fitz.open(stream=raw,filetype="pdf") as pdf:
@@ -64,7 +66,7 @@ class FullDLPTest(unittest.TestCase):
                     for row in (r for t in doc.tables[:-1] for r in t.rows[1:]):
                         for cell in row.cells[2:4]:
                             self.assertRegex(cell.text,r"\d+\.\d+.*[A-Za-z]")
-                    if flexible:
+                    if flexible or whole:
                         self.assertFalse(any(re.fullmatch(r"\d+\s*min(?:utes)?",p.text.strip(),re.I) for t in doc.tables[:-1] for row in t.rows[1:] for p in row.cells[-1].paragraphs))
                     self.assertTrue(any("Main school breaks" in p.text for p in doc.paragraphs))
                     from docx.oxml.ns import qn
