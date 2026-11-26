@@ -254,3 +254,31 @@ def rtl_document(subject,year,source,account,config,*,root):
     lock=json.loads((base/"original_cover_layout_verified.json").read_text("utf8"))
     result=personalized_word(blob,raw,lock,f"{subject}:{year}",account,config)
     return result,hashlib.sha256(result).hexdigest()
+
+
+def bm_layout_enabled():
+    return enabled() and os.environ.get("CIKGULAJU_RPT_BM_MERGED_WORD")=="1"
+
+def eligible_bm_merged(year,source,*,root):
+    if not bm_layout_enabled() or source is None:return False
+    from web.rpt_compact_pdf import LANGUAGE_PINS
+    expected=LANGUAGE_PINS["bm"].get(f"bahasa_melayu:{year}")
+    path=Path(root)/"web_2027_pdfs"/"bahasa_melayu"/f"tahun_{year}.pdf"
+    try:
+        return bool(expected and Path(source)==path and not path.is_symlink() and hashlib.sha256(path.read_bytes()).hexdigest()==expected)
+    except OSError:
+        return False
+
+def bm_merged_document(year,source,account,config,*,root):
+    from web.english_rpt_2027_http import _has_paid_access
+    if not _has_paid_access(account):raise PermissionError("Paid RPT Word only")
+    if not eligible_bm_merged(year,source,root=root):raise ValueError("BM source changed")
+    from tools.build_kssr_rpt_merged_week_batch_20261126 import build_word
+    from web.rpt_native_word_cover import personalized_word
+    base=Path(root)/"web_2027_pdfs"
+    manifest=json.loads((base/"manifest.json").read_text("utf8"))
+    lock=json.loads((base/"original_cover_layout_verified.json").read_text("utf8"))
+    blob,raw,actual,*_=build_word("bahasa_melayu",year,manifest,lock,root=base)
+    if actual!=Path(source) or raw!=actual.read_bytes():raise ValueError("BM source changed")
+    result=personalized_word(blob,raw,lock,f"bahasa_melayu:{year}",account,config)
+    return result,hashlib.sha256(result).hexdigest()
