@@ -1,6 +1,6 @@
 """Physical page tables with repeated headings and explicit safe page breaks."""
 from copy import deepcopy
-from docx.enum.text import WD_BREAK
+from tools.rpt_physical_page_tables import next_page_section
 from io import BytesIO
 from docx import Document
 from docx.oxml import OxmlElement
@@ -57,17 +57,14 @@ def paginate(blob,*,budget=440,first_budget=None):
         if current:blocks.append((start,current,max(total,height(t.cell(start,0),widths[0]))))
     pages=[];current=[];total=header
     for start,rows,h in blocks:
-        limit=first_budget if not pages and first_budget else budget
-        if current and total+h>limit:pages.append(current);current=[];total=header
+        limit=min(first_budget if not pages and first_budget else budget,405)
+        if current and (total+h>limit or sum(len(r) for _,r in current)+len(rows)>5):pages.append(current);current=[];total=header
         current.append((start,rows));total+=h
     if current:pages.append(current)
     anchor=t._tbl
     for n,blocks in enumerate(pages):
         if n:
-            el=OxmlElement("w:p");anchor.addprevious(el)
-            p=Paragraph(el,doc);pf=p.paragraph_format
-            pf.page_break_before=False;pf.keep_with_next=False;pf.keep_together=False;pf.space_before=Pt(0);pf.space_after=Pt(0);pf.line_spacing=Pt(1)
-            run=p.add_run();run.font.size=Pt(1);run.add_break(WD_BREAK.PAGE)
+            next_page_section(doc,anchor)
         clone=deepcopy(anchor)
         for tr in list(clone.tr_lst)[1:]:clone.remove(tr)
         for start,rows in blocks:
