@@ -1,0 +1,33 @@
+name: English SK five exact integrated RPT native Word and original cover
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/build_english_rpt_merged_week_word_pdf_20261126.py'
+      - 'web/rpt_native_word_batch.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'tests/test_rpt_native_word_batch.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tools/build_english_rpt_2027_review.py'
+      - 'rpt_2027/english/october_lesson_pairs.json'
+      - 'rpt_2027/takwim_pdp_2027_ab_draf.json'
+      - '.github/workflows/rpt-english-integrated-production-word-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+      - run: python -m tools.build_english_rpt_merged_week_word_pdf_20261126 --out "$RUNNER_TEMP/rpt-private"
+      - if: always()
+        run: rm -rf "$RUNNER_TEMP/rpt-private"
+      - run: python -m unittest discover -s tests -p 'test_rpt_native_word_batch.py' -v

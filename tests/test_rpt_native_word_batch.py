@@ -149,4 +149,30 @@ class PrivateBatchTests(unittest.TestCase):
                     if y["year"] in sk_documents.DIGESTS:
                         self.assertEqual(y.get("docx_ready"),access)
 
+
+    def test_integrated_english_paid_word(self):
+        import io
+        import json
+        from docx import Document
+        from web.rpt_2027_all_http import ROOT, catalog_data
+        app=Flask(__name__);app.register_blueprint(create_all_rpt_blueprint())
+        client=app.test_client()
+        paid={"telegram_user_id":9,"rakan_pembangun":True}
+        free={"telegram_user_id":10,"free_generations_remaining":10}
+        lock=json.loads((ROOT/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text())
+        with patch.dict("os.environ",{"CIKGULAJU_RPT_NATIVE_WORD_BATCH":"1"}), patch("web.native_telegram_integrated_english_client.integrated_enabled",return_value=True), patch("web_v1_telegram_auth_routes._config",return_value={"account_backend":"supabase"}), patch("web.rpt_school_cover.school_identity",return_value=None):
+            for year in range(2,7):
+                url=f"/api/rpt/2027/all/english/{year}"
+                with patch("web.rpt_2027_all_http._account",return_value=(paid,None)):
+                    pdf=client.get(url+".pdf")
+                    self.assertEqual(pdf.status_code,200)
+                    self.assertEqual(sha256(pdf.data).hexdigest(),lock["english_integrated"]["source_sha256_by_subject_year"][f"english:{year}"])
+                    word=client.get(url+".docx")
+                    self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else "")
+                    self.assertGreater(len(Document(io.BytesIO(word.data)).tables[0].rows),160)
+                    self.assertEqual(word.headers["Cache-Control"],"no-store, private")
+                with patch("web.rpt_2027_all_http._account",return_value=(free,None)):
+                    self.assertEqual(client.get(url+".docx").status_code,403)
+                    self.assertEqual(client.get(url+".pdf").data,pdf.data)
+
 if __name__=="__main__": unittest.main()
