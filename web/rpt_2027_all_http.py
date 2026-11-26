@@ -223,8 +223,11 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
             if integrated is not None:
                 ready = digest is not None
                 available += int(ready)
+                word_ready=bool(personalization_allowed and native_word.eligible_integrated_english(year,integrated,digest,root=root))
                 entries.append({
                     "year": year, "year_label": f"Year {year}", "pdf_ready": ready,
+                    "docx_ready":word_ready,"word_paid_only":True,
+                    "docx_url":f"/api/rpt/2027/all/{code}/{year}.docx" if word_ready else None,
                     "status": "SEMAKAN GURU" if ready else "PDF BELUM DIPASANG",
                     "download_enabled": bool(ready and allowed), "is_draft": True,
                     "note": "Kumpulan A dan B. 160 rujukan SOW dalam 142 sesi hingga akhir Oktober.",
@@ -515,7 +518,9 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return error
         approved_science=subject=="sains" and year in native_word.APPROVED_SCIENCE_PINS
         approved_math=subject=="matematik" and year in matematik_sk.DIGESTS
-        if native_word.enabled() and (f"{subject}:{year}" in native_word.PINS or approved_science or approved_math):
+        integrated_english,english_digest=_integrated_english_file(subject,year,root)
+        english_word=subject=="english" and integrated_english is not None
+        if native_word.enabled() and (f"{subject}:{year}" in native_word.PINS or approved_science or approved_math or english_word):
             if not _has_paid_access(account):
                 return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
             source=_approved_sk_science_file(subject,year,root) if approved_science else _staged_file(subject,year,root=root)
@@ -529,6 +534,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
                     blob,digest=native_word.approved_science_document(year,source,account,_config(),root=root)
                 elif approved_math:
                     blob,digest=native_word.approved_math_document(year,source,account,_config(),root=root)
+                elif english_word:
+                    blob,digest=native_word.integrated_english_document(year,integrated_english,english_digest,account,_config(),root=root)
                 else:
                     blob,digest=native_word.document(subject,year,source,account,_config(),root=root)
             except Exception:

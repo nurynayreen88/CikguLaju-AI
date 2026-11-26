@@ -4,6 +4,10 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - 'tools/build_english_rpt_merged_week_word_pdf_20261126.py'
+      - 'web/rpt_native_word_batch.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'tests/test_rpt_native_word_batch.py'
+      - 'web_v1_static_preview/index.html'
       - 'tools/build_english_rpt_2027_review.py'
       - 'rpt_2027/english/october_lesson_pairs.json'
       - 'rpt_2027/takwim_pdp_2027_ab_draf.json'
@@ -26,3 +30,4 @@ jobs:
       - run: python -m tools.build_english_rpt_merged_week_word_pdf_20261126 --out "$RUNNER_TEMP/rpt-private"
       - if: always()
         run: rm -rf "$RUNNER_TEMP/rpt-private"
+      - run: python -m unittest discover -s tests -p 'test_rpt_native_word_batch.py' -v

@@ -132,3 +132,30 @@ def approved_math_document(year,source,account,config,*,root):
     lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
     result=personalized_word(blob,raw,lock,f"matematik:{year}",account,config)
     return result,hashlib.sha256(result).hexdigest()
+
+def eligible_integrated_english(year,source,source_digest,*,root):
+    if not enabled() or source is None or year not in range(2,7):
+        return False
+    try:
+        lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
+        digest=lock["english_integrated"]["source_sha256_by_subject_year"][f"english:{year}"]
+        expected=Path(root)/"english"/f"RPT_English_SK_2027_Year_{year}_A_B.pdf"
+        return (Path(source)==expected and not expected.is_symlink() and source_digest==digest
+                and hashlib.sha256(expected.read_bytes()).hexdigest()==digest)
+    except (OSError,ValueError,KeyError,TypeError):
+        return False
+
+def integrated_english_document(year,source,source_digest,account,config,*,root):
+    from web.english_rpt_2027_http import _has_paid_access
+    if not _has_paid_access(account):
+        raise PermissionError("Paid RPT Word only")
+    if not eligible_integrated_english(year,source,source_digest,root=root):
+        raise ValueError("Integrated English source changed")
+    from tools.build_english_rpt_merged_week_word_pdf_20261126 import build_word
+    from web.rpt_native_word_cover import personalized_word
+    blob,raw,actual,digest=build_word(year)
+    if actual.resolve()!=Path(source).resolve() or digest!=source_digest or hashlib.sha256(raw).hexdigest()!=digest:
+        raise ValueError("Integrated English source changed")
+    lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
+    result=personalized_word(blob,raw,lock,f"english:{year}",account,config)
+    return result,hashlib.sha256(result).hexdigest()
