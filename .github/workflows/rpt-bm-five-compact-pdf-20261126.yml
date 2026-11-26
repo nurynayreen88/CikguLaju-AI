@@ -1,0 +1,39 @@
+name: Verify five BM free PDF candidates
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/compact_bm_pdf_2027/**'
+      - '.github/workflows/rpt-bm-five-compact-pdf-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt
+      - run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          import fitz
+          root=Path("rpt_2027")
+          folder=root/"compact_bm_pdf_2027"
+          m=json.loads((folder/"manifest.json").read_text())
+          assert m["count"]==5 and not list(folder.rglob("*.docx"))
+          for key,e in m["files"].items():
+              a=root/"web_2027_pdfs"/e["path"];b=folder/e["path"]
+              assert hashlib.sha256(a.read_bytes()).hexdigest()==e["source_sha256"]
+              assert hashlib.sha256(b.read_bytes()).hexdigest()==e["sha256"]
+              with fitz.open(a) as old,fitz.open(b) as new:
+                  assert old[0].get_pixmap().samples==new[0].get_pixmap().samples
+                  assert len(new)==e["pages"]
+                  assert all(p.get_text().strip() for p in list(new)[1:])
+          PY

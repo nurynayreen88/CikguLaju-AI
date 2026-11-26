@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "count": 5,
+  "status": "LAYOUT_QA_CANDIDATE",
+  "files": {
+    "bahasa_melayu:2": {
+      "path": "bahasa_melayu/tahun_2.pdf",
+      "source_sha256": "fbaa1d1c81b2feffc1150957c3d3a49c614871ad16440cc6d7bec1798fe5cbbd",
+      "sha256": "a3de23c448e123dc383a65706d2003cda5141ba293bd3cfbb244f9d08525414b",
+      "bytes": 159034,
+      "pages": 18,
+      "source_pages": 38
+    },
+    "bahasa_melayu:3": {
+      "path": "bahasa_melayu/tahun_3.pdf",
+      "source_sha256": "98db51ca3f37a7be29fa379c6d670061753884517acd2abd9a40a21283552756",
+      "sha256": "882c2aefc38fec1ea493c4894f557de0d4b726b047b6371d90b9c4b2355934ec",
+      "bytes": 168286,
+      "pages": 20,
+      "source_pages": 39
+    },
+    "bahasa_melayu:4": {
+      "path": "bahasa_melayu/tahun_4.pdf",
+      "source_sha256": "eb231841184177fa27a14f60fd4e2c4d0caf2cb0a15ebf674129e802d38d0c6f",
+      "sha256": "dfce61dad35f2a3ca3604acde54214a7d591005152cb2eacbbc7c5db4a497b1e",
+      "bytes": 163436,
+      "pages": 19,
+      "source_pages": 38
+    },
+    "bahasa_melayu:5": {
+      "path": "bahasa_melayu/tahun_5.pdf",
+      "source_sha256": "fbe90a74a6b8768e75215b189de93805decb3aa9f739caae3e0b450e79a0b11e",
+      "sha256": "201434190c331def01f83a343f1e3a47359027f3d9d098e33f026e4e53f45034",
+      "bytes": 165032,
+      "pages": 19,
+      "source_pages": 39
+    },
+    "bahasa_melayu:6": {
+      "path": "bahasa_melayu/tahun_6.pdf",
+      "source_sha256": "480e8b4f47a807e1d3b1870b5cf224283b77171455a2f033d4fca9d9dea18da2",
+      "sha256": "e0fd7d9d3f91acdf0b21c8ed6705dc3cecfbb689537b418ca2e597636ba1620f",
+      "bytes": 166154,
+      "pages": 19,
+      "source_pages": 38
+    }
+  }
+}
