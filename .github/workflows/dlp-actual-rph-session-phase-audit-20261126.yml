@@ -1,0 +1,38 @@
+name: DLP actual RPH source phase audit
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/audit_dlp_actual_rph_session_phases_20261126.py'
+      - '.github/workflows/dlp-actual-rph-session-phase-audit-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  phase-crosswalk:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'qa/dlp-seven-sets-fixed-session-20261126'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+          path: rpt
+      - uses: actions/checkout@v4
+        with:
+          ref: 8fd340fdc17ece2dc3074d085083a6f7d28d5a77
+          persist-credentials: false
+          path: rph
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r rpt/requirements-rph-word-bundle.txt 'flask==3.1.3' 'requests>=2' 'reportlab>=4,<5' 'pypdf>=5,<7'
+      - working-directory: rpt
+        run: python -m tools.audit_dlp_seven_fixed_sessions_20261126 --out ../session-plan.json
+      - working-directory: rph
+        run: python ../rpt/tools/audit_dlp_actual_rph_session_phases_20261126.py --plan ../session-plan.json --out ../actual-rph-phase-crosswalk.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dlp-actual-rph-phase-crosswalk
+          path: actual-rph-phase-crosswalk.json
+          if-no-files-found: error
