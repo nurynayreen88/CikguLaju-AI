@@ -94,48 +94,66 @@ def rebalance_dlp(plan,calendar):
             n=s["source_row"]
             entry=source_rows.setdefault(n,{"source_row":n,"source_label":s["source_label"],"minutes":s["original_minutes"]})
             assert entry["minutes"]==s["original_minutes"]
-    # Expand only duration, not content. Each atom is tied to its source.
-    atoms=[(r["source_row"],r["source_label"],offset)
-           for r in source_rows.values() for offset in range(0,r["minutes"],30)]
-    assert len(atoms)*30==plan["source_minutes"]
+    # Keep source lesson boundaries. Do not combine unrelated 30-minute
+    # activities just to fill 60 minutes: existing short RPHs remain intact.
+    # Split only the genuinely long source lessons into candidate parts.
+    sessions=[]
+    for r in source_rows.values():
+        offset=0;parts=slots(r["minutes"])
+        for part,minutes in enumerate(parts,1):
+            sessions.append({"source_row":r["source_row"],"source_label":r["source_label"],
+                "original_minutes":r["minutes"],"offset_minutes":offset,"part":part,
+                "parts":len(parts),"minutes":minutes,
+                "status":"RPH_MATCH_EXISTING" if len(parts)==1 else "DISTINCT_RPH_PART_REVIEW_REQUIRED"})
+            offset+=minutes
+        assert offset==r["minutes"]
+    assert sum(s["minutes"] for s in sessions)==plan["source_minutes"]
     capacity=sum(short if n in short_weeks else normal for n,_ in calendar)
     assert capacity>=plan["source_minutes"],(plan["subject"],plan["year"],capacity)
-    new=[];cursor=0;number=0;covered=[];mixed=0;buffer=0
-    for week,dates in calendar:
-        limit=short if week in short_weeks else normal
-        sessions=[]
-        for minutes in slots(limit):
-            picked=atoms[cursor:cursor+minutes//30]
-            cursor+=len(picked)
-            if not picked:
-                buffer+=minutes
-                sessions.append({"minutes":minutes,"status":"FLEXIBLE_REINFORCEMENT_OR_REPLACEMENT_NO_RPH_ASSIGNED"})
-                continue
-            components=[]
-            for row,label,offset in picked:
-                if components and components[-1]["source_row"]==row:
-                    components[-1]["minutes"]+=30
-                else:
-                    components.append({"source_row":row,"source_label":label,"offset_minutes":offset,"minutes":30})
-            covered.extend(picked);number+=1
-            used=len(picked)*30
-            if len(components)>1:mixed+=1
-            sessions.append({"candidate_session":number,"minutes":used,"source_components":components,
-                 "status":"COMBINED_RPH_REVIEW_REQUIRED" if len(components)>1 else "RPH_MATCH_OR_REVIEW_REQUIRED"})
-            if used<minutes:
-                buffer+=minutes-used
-                sessions.append({"minutes":minutes-used,"status":"FLEXIBLE_REINFORCEMENT_OR_REPLACEMENT_NO_RPH_ASSIGNED"})
-        assert sum(x["minutes"] for x in sessions)==limit
-        assert all(x["minutes"] in (30,60) for x in sessions)
-        new.append({"week":week,"dates":dates,"planned_minutes":limit,"sessions":sessions})
-    assert covered==atoms and cursor==len(atoms)
-    assert capacity-buffer==plan["source_minutes"]
-    assert sum(x["minutes"] for w in new for x in w["sessions"] if "candidate_session" in x)==plan["source_minutes"]
+    # Dynamic programming: preserve order and the source lesson identities.
+    # Choose balanced teaching load while leaving unused time explicit.
+    # No source sessions are merged. Permit an exceptional 60-min part to
+    # become two 30-min parts only if otherwise impossible (reported separately).
+    limits=[short if n in short_weeks else normal for n,_ in calendar]
+    def allocate(items):
+        states={0:(0,[])}
+        total=sum(s["minutes"] for s in items)
+        cap=0
+        for limit in limits:
+            cap+=limit;new={}
+            target=total*cap/sum(limits)
+            prefixes=[0]
+            for s in items:prefixes.append(prefixes[-1]+s["minutes"])
+            for start,(cost,counts) in states.items():
+                for stop in range(start,len(items)+1):
+                    used=prefixes[stop]-prefixes[start]
+                    if used>limit:break
+                    score=cost+(prefixes[stop]-target)**2+3*(limit-used)**2
+                    if stop not in new or score<new[stop][0]:
+                        new[stop]=(score,counts+[stop-start])
+            states=new
+        return states.get(len(items))
+    answer=allocate(sessions)
+    assert answer is not None,(plan["subject"],plan["year"],"source sessions cannot fit without extra split")
+    _,counts=answer;new=[];cursor=0;buffer=0
+    for (week,dates),limit,count in zip(calendar,limits,counts):
+        items=[dict(s,candidate_session=i+1) for i,s in enumerate(sessions[cursor:cursor+count],cursor)]
+        cursor+=count;used=sum(s["minutes"] for s in items)
+        buffer+=limit-used
+        for minutes in slots(limit-used) if limit>used else []:
+            items.append({"minutes":minutes,"status":"FLEXIBLE_REINFORCEMENT_OR_REPLACEMENT_NO_RPH_ASSIGNED"})
+        assert sum(s["minutes"] for s in items)==limit
+        new.append({"week":week,"dates":dates,"planned_minutes":limit,"sessions":items})
+    assert cursor==len(sessions) and capacity-buffer==plan["source_minutes"]
+    assert [s["source_row"] for w in new for s in w["sessions"] if "candidate_session" in s]==[s["source_row"] for s in sessions]
     return {"subject":plan["subject"],"year":plan["year"],"normal_week_minutes":normal,
        "short_week_minutes":short,"short_weeks":sorted(short_weeks),
        "reserved_weeks":[6,18,19],"last_teaching_week":38,"source_minutes":plan["source_minutes"],
        "timetable_capacity_minutes":capacity,"flexible_minutes_unassigned":buffer,
-       "candidate_teaching_sessions":number,"combined_slots_requiring_review":mixed,
+       "candidate_teaching_sessions":len(sessions),
+       "existing_short_rph_candidates":sum(s["parts"]==1 for s in sessions),
+       "new_distinct_parts_requiring_review":sum(s["parts"]>1 for s in sessions),
+       "combined_slots_requiring_review":0,
        "source_sha256":plan["source_sha256"],"source_rows":list(source_rows.values()),
        "weeks":new,"status":"CANDIDATE_ONLY_RPH_CONTENT_MAPPING_REQUIRED"}
 
