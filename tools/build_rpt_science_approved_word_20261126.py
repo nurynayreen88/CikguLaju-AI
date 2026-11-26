@@ -42,13 +42,31 @@ def extract(path,year):
             page_header=0
             for top,bottom in zip(ys,ys[1:]):
                 if bottom-top<3:continue
-                cells=[]
-                for left,right in zip(BANDS,BANDS[1:]):
-                    text=page.get_text("text",clip=fitz.Rect(left,top,right,bottom)).strip()
-                    cells.append(text)
+                # Read the native text once; independent cell clips can lose a glyph
+                # at a boundary due to font metrics. Assign whole spans by origin.
+                # Reject any actual multi-column overflow instead of silently dropping text.
+                rect=fitz.Rect(BANDS[0]-1,top,BANDS[-1]+1,bottom)
+                by_col=[[] for _ in range(5)]
+                original=[]
+                for block in page.get_text("dict",clip=rect)["blocks"]:
+                    for line in block.get("lines",()):
+                        per_line=[[] for _ in range(5)]
+                        for span in line["spans"]:
+                            text=span["text"]
+                            if not text.strip():continue
+                            x=span["origin"][0]
+                            cols=[i for i,(l,r) in enumerate(zip(BANDS,BANDS[1:]))
+                                  if l-.5<=x<r-.5]
+                            assert len(cols)==1,(page.number,top,"Unknown span origin",x)
+                            i=cols[0]
+                            assert span["bbox"][2]<=BANDS[i+1]+2,(page.number,top,"Span overflows cell",i,span["bbox"])
+                            original.append(text);per_line[i].append(text)
+                        for i,parts in enumerate(per_line):
+                            if parts:by_col[i].append(" ".join(parts))
+                cells=["\n".join(lines).strip() for lines in by_col]
                 if not any(cells):continue
-                full=page.get_text("text",clip=fitz.Rect(BANDS[0],top,BANDS[-1],bottom))
-                assert Counter(norm(full).split())==Counter(norm(" ".join(cells)).split()),"Source text crosses cell"
+                letters=lambda v:Counter(c for c in v if not c.isspace())
+                assert letters("".join(original))==letters("".join(cells)),"Source character loss"
                 if "MINGGU" in cells[0].upper() and not WEEK.match(cells[0]):
                     if headers is None:headers=tuple(cells)
                     assert tuple(map(norm,cells))==tuple(map(norm,headers)),"Source header changed"
