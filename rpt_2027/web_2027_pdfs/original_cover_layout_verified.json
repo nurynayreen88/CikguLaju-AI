@@ -1650,5 +1650,91 @@
         158
       ]
     }
+  },
+  "compact_bm_pdf_covers": {
+    "version": 1,
+    "page_width": 841.8898,
+    "page_height": 595.2756,
+    "tolerance_pt": 0.3,
+    "logo_interior_top_left": [
+      357.3,
+      70.4,
+      484.6,
+      197.6
+    ],
+    "logo_image_safe_top_left": [
+      365,
+      77,
+      477,
+      190
+    ],
+    "school_row_top_left": [
+      274,
+      332.5,
+      742,
+      359.5
+    ],
+    "teacher_row_top_left": [
+      274,
+      388.5,
+      742,
+      415.5
+    ],
+    "identity_background_rgb": [
+      0.960784,
+      0.972549,
+      0.964706
+    ],
+    "status": "COMPACT_BM_RPT_PDF_COVER_VERIFIED",
+    "source_sha256_by_subject_year": {
+      "bahasa_melayu:2": "a3de23c448e123dc383a65706d2003cda5141ba293bd3cfbb244f9d08525414b",
+      "bahasa_melayu:3": "882c2aefc38fec1ea493c4894f557de0d4b726b047b6371d90b9c4b2355934ec",
+      "bahasa_melayu:4": "dfce61dad35f2a3ca3604acde54214a7d591005152cb2eacbbc7c5db4a497b1e",
+      "bahasa_melayu:5": "201434190c331def01f83a343f1e3a47359027f3d9d098e33f026e4e53f45034",
+      "bahasa_melayu:6": "e0fd7d9d3f91acdf0b21c8ed6705dc3cecfbb689537b418ca2e597636ba1620f"
+    }
+  },
+  "compact_english_pdf_covers": {
+    "version": 1,
+    "page_width": 841.8898,
+    "page_height": 595.2756,
+    "tolerance_pt": 0.3,
+    "logo_interior_top_left": [
+      373.5,
+      122,
+      468.4,
+      216
+    ],
+    "logo_image_safe_top_left": [
+      380,
+      128,
+      462,
+      210
+    ],
+    "school_row_top_left": [
+      268,
+      228,
+      710,
+      257
+    ],
+    "teacher_row_top_left": [
+      268,
+      267,
+      710,
+      296
+    ],
+    "identity_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "status": "COMPACT_ENGLISH_RPT_PDF_COVER_VERIFIED",
+    "source_sha256_by_subject_year": {
+      "english:2": "c629d4a852ef5066ec075444dc87869fcac670bdb6a0dcfb30bbda4edfa91c06",
+      "english:3": "5e9b41299f48a17892d3398dd74ec46abc354a113663466003911736dc2e2bfa",
+      "english:4": "e83f0af4df0012fff7095bf59fae4e6d4d3642b34c111b7998a4829a1b1fc1bd",
+      "english:5": "5e06e1671f652fd38b7ddb39e1d30a97370366c8b697cd8476ac821bb27a3630",
+      "english:6": "98732fb65987315384d62554b9481fd2a684eac5a3b839422f5f61929c58cf66"
+    }
   }
 }
