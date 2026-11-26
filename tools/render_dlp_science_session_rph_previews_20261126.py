@@ -1,0 +1,113 @@
+"""Render real native RPH candidate documents using the pinned main engine.
+
+Private QA only. All original teaching activities are preserved; no draft
+is inserted into the live catalogue. Resolve full standards via the same
+reviewed bank used by RPT. Missing session boundaries and duration review
+are reported rather than concealed.
+"""
+from collections import Counter
+from io import BytesIO
+from pathlib import Path
+import argparse,json,re,sys
+sys.path.insert(0,str(Path.cwd()))
+from docx import Document
+import fitz
+from dlp_year2_rph import year3_science_catalog,science_class_fields
+from staging.dlp.year2.downloads import BY_SUBJECT
+from staging.dlp.year6 import render_science
+from web.rph_unified_engine import render_structured_rph
+
+def source_records(year):
+    if year==2:rows=[p for u in BY_SUBJECT["SCIENCE_DLP"].units for p in u["lessons"]]
+    elif year==3:rows=[p for u in year3_science_catalog() for p in u["lessons"]]
+    else:rows=render_science.load_plans()[1]
+    output={}
+    for p in rows:
+        ident=p["id"];label=p.get("numbered_label") or p["label"]
+        m=re.search(r"\b(Lesson|Review)\s+(\d+)\b",label,re.I)
+        assert m,(ident,label)
+        name=m[1][0].upper()+f"{int(m[2]):02d}"
+        assert name not in output
+        output[name]=p
+    return output
+
+def unique(items):
+    return list(dict.fromkeys(x for x in items if x))
+
+def normal(value):
+    if isinstance(value,(list,tuple)):return " · ".join(map(str,value))
+    return str(value or "")
+
+def full_standards(lines,bank):
+    joined=" ".join(lines)
+    joined=re.sub(r"\((?:Observe|Classify|Measure and use numbers|Communicate)\)","",joined,flags=re.I)
+    current=None;parent=None;cs=[];ls=[]
+    for m in re.finditer(r"\bCS\b|\bLS\b|(?<![\d.])\d+\.\d+(?:\.\d+)?(?:\([ivx]+\))?|\([ivx]+\)",joined,re.I):
+        item=m.group()
+        if item.upper() in ("CS","LS"):current=item.lower();parent=None;continue
+        if not current:raise ValueError(joined)
+        if item.startswith("("):item=parent+item
+        else:parent=item.split("(")[0]
+        text=bank.get("parts",{}).get(item) if "(" in item else bank[current].get(item)
+        assert text,(current,item)
+        (cs if current=="cs" else ls).append(item+" "+text)
+    if not cs:
+        for item in ls:
+            code=item.split()[0].split("(")[0].rsplit(".",1)[0]
+            cs.append(code+" "+bank["cs"][code])
+    assert cs and ls,joined
+    return unique(cs),unique(ls)
+
+def main():
+    a=argparse.ArgumentParser();a.add_argument("--paired",type=Path,required=True);a.add_argument("--rpt-root",type=Path,required=True);a.add_argument("--year",type=int,choices=(2,3,6),required=True);a.add_argument("--out",type=Path,required=True);args=a.parse_args()
+    y=args.year;key=f"science_dlp:{y}"
+    data=next(x for x in json.loads(args.paired.read_text())["sets"] if x["key"]==key)
+    source=source_records(y)
+    bank=json.loads((args.rpt_root/"dlp/standard_descriptions"/f"science_year{y}.json").read_text())
+    reviews=json.loads((args.rpt_root/"dlp/standard_descriptions/review_mappings.json").read_text())["mappings"].get(key,{})
+    out=args.out;out.mkdir(parents=True,exist_ok=True)
+    counts=Counter();issues=[]
+    for s in data["sessions"]:
+        n=s["session"];labels=s["source_labels"];records=[source[l] for l in labels]
+        activities=s["activities"];assert activities
+        if "induction" not in activities[0]["phase"].lower() or "closure" not in activities[-1]["phase"].lower():
+            issues.append({"session":n,"error":"missing authored boundary"});continue
+        try:
+            cs=[];ls=[]
+            for label,field in zip(labels,s["standards"],strict=True):
+                if " ".join(field) in ("Consolidation Review taught standards","Review Review taught standards"):
+                    field=["LS "+", ".join(reviews[label])]
+                c,l=full_standards(field,bank);cs.extend(c);ls.extend(l)
+            # Use actual source materials, not an invented list.
+            materials=unique([normal(p.get("materials")) for p in records])
+            assert materials,(key,n)
+            title=" / ".join(unique([normal(p.get("title")) for p in records]))
+            unit=" / ".join(unique([normal(p.get("unit_title") or p.get("unit")) for p in records]))
+            assert title and unit
+            start="08:00";end="08:30" if s["slot_minutes"]==30 else "09:00"
+            teacher={"class":f"{y} Bestari","date":"2027-01-12","time":f"{start} - {end}","students":"30"}
+            heading=("Daily Lesson Plan",f"Science (DLP) · Year {y} SK",title)
+            details=[("Unit",unit),("Lesson / PdP"," / ".join(labels)),*science_class_fields(teacher,english=True),("Content Standards","\n".join(unique(cs))),("Learning Standards","\n".join(unique(ls))),("Book reference"," · ".join(s["references"])),("Learning objective","\n".join(s["objective"])),("Materials","; ".join(materials))]
+            rows=[("Phase","Teacher","Pupils"),*[(p["phase"],p["teacher"],p["pupils"]) for p in activities]]
+            footer=[("Reflection","___ of ___ pupils met the learning objective(s). Follow-up: ____________________.")]
+            for fmt in ("word","pdf"):
+                blob=render_structured_rph(source="dlp",fmt=fmt,heading=heading,details=details,activities=rows,footer=footer,teacher=teacher,compact=True)
+                if fmt=="word":
+                    doc=Document(BytesIO(blob));assert len(doc.tables)==4
+                    text=" ".join(c.text for t in doc.tables for r in t.rows for c in r.cells)
+                    for p in activities:
+                        assert " ".join(p["pupils"].split()) in " ".join(text.split())
+                    suffix="docx"
+                else:
+                    with fitz.open(stream=blob,filetype="pdf") as pdf:
+                        assert len(pdf)==1,("PDF page count",len(pdf))
+                    suffix="pdf"
+                (out/f"QA_SCI_Y{y}_SESSION_{n:03d}.{suffix}").write_bytes(blob)
+                counts[fmt]+=1
+        except Exception as e:
+            issues.append({"session":n,"error":str(e)})
+    result={"key":key,"sessions":len(data["sessions"]),"rendered":dict(counts),"issues":issues,"release_ready":False}
+    (out/"qa-report.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n")
+    print("SCIENCE_NATIVE_SESSION_QA",json.dumps(result,ensure_ascii=False),flush=True)
+
+if __name__=="__main__":main()
