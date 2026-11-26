@@ -1,0 +1,21 @@
+name: Web affiliate registered-only admin list QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web_v1_static_preview/index.html'
+      - 'web_v1_static_preview/web-referral.js'
+      - 'tests/test_web_affiliate_registered_only.cjs'
+      - '.github/workflows/web-affiliate-registered-only.yml'
+permissions:
+  contents: read
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check web_v1_static_preview/web-referral.js
+      - run: node tests/test_web_affiliate_registered_only.cjs
