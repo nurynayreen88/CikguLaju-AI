@@ -80,5 +80,9 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add rpt_2027/paired_science_release
-          git commit -m 'Install three matched Science RPT candidate sets from locked QA run'
-          git push origin HEAD:refs/heads/release/dlp-science-session-web-20261126
+          if git diff --cached --quiet; then
+            echo 'Assets already installed; no commit required.'
+          else
+            git commit -m 'Install three matched Science RPT candidate sets from locked QA run'
+            git push origin HEAD:refs/heads/release/dlp-science-session-web-20261126
+          fi
