@@ -9,7 +9,7 @@ from staging.ppki.catalog import FORMATS
 
 BANKS = {
     (2, "BAHASA_INGGERIS_PPKI"): ("english_year2_unit1_release.json", "english_year2_units2_4_release.json", "english_year2_units5_8_release.json", "english_year2_units9_12_release.json", "english_year2_all_units_draft.json"),
-    (2, "BAHASA_MELAYU_PPKI"): ("bahasa_melayu_tahun2_tema1_draft.json", "bahasa_melayu_tahun2_tema2_6_draft.json"),
+    (2, "BAHASA_MELAYU_PPKI"): ("bahasa_melayu_tahun2_tema1_2_release.json", "bahasa_melayu_tahun2_tema1_draft.json", "bahasa_melayu_tahun2_tema2_6_draft.json"),
     (2, "MATEMATIK_PPKI"): ("matematik_tahun2_all_units_draft.json",),
     (2, "PENDIDIKAN_ISLAM_PPKI"): ("pendidikan_islam_tahun2_draft.json",),
     (2, "PENDIDIKAN_JASMANI_PPKI"): ("pendidikan_jasmani_tahun2_draft.json",),
