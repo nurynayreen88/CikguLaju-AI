@@ -9,6 +9,7 @@ import json
 import re
 import subprocess
 import tempfile
+import unicodedata
 import fitz
 from docx import Document
 from docx.shared import Cm, Pt
@@ -26,17 +27,25 @@ BANDS=(35,198.89,408.89,533.89,713.89,818.89)
 WIDTHS=(3.15,6.25,4.30,7.60,6.10)
 HEADERS=("MINGGU / TARIKH","UNIT / TAJUK / PdP","SK","SP","CATATAN / BAHAN")
 RTL=re.compile(r"[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff]")
-BAD=re.compile(r"[\ufffd\ue000-\uf8ff\ufb50-\ufdff\ufe70-\ufeff]")
+BAD=re.compile(r"[\ufffd\ue000-\uf8ff]")
+PRESENTATION=re.compile(r"[\ufb50-\ufdff\ufe70-\ufefc]")
 DATE=re.compile(r"\d{2}/\d{2}/2027")
 WEEK=re.compile(r"\bM(\d{2})\b")
+
+def logical_glyphs(text):
+    # Only Unicode-defined Arabic compatibility decompositions. Never guess
+    # spelling or reverse visual strings. Manual logical-order QA remains required.
+    if BAD.search(text):raise ValueError("Unresolved source glyph")
+    result=PRESENTATION.sub(lambda m:unicodedata.normalize("NFKC",m.group()),text)
+    if BAD.search(result) or PRESENTATION.search(result):raise ValueError("No safe Unicode decomposition")
+    return result
 
 def clip_cells(page,rect):
     physical=[]
     for a,b in zip(BANDS[:4],BANDS[1:5]):
         cell=page.get_text("text",clip=fitz.Rect(a,rect.y0,b,rect.y1)).strip()
-        if BAD.search(cell):raise ValueError("Source has unresolved or presentation-form glyph; need logical source adapter")
-        physical.append(cell)
-    whole=page.get_text("text",clip=rect)
+        physical.append(logical_glyphs(cell))
+    whole=logical_glyphs(page.get_text("text",clip=rect))
     if Counter(norm(whole).split())!=Counter(norm(" ".join(physical)).split()):
         raise ValueError("Source text crosses RTL column boundary")
     return tuple(reversed(physical))
