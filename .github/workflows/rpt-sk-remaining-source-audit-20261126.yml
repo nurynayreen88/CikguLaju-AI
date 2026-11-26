@@ -1,0 +1,114 @@
+name: RPT SK remaining 15 current source and layout audit
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - '.github/workflows/rpt-sk-remaining-source-audit-20261126.yml'
+      - 'rpt_2027/matematik/**'
+      - 'rpt_2027/sains/**'
+      - 'rpt_2027/web_2027_pdfs/**'
+permissions:
+  contents: read
+jobs:
+  source-audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rpt-web.txt 'flask==3.1.3'
+      - name: Inventory exact active PDF and available native Word
+        shell: bash
+        run: |
+          python - <<'PY'
+          from collections import Counter
+          from hashlib import sha256
+          from pathlib import Path
+          import json
+          import re
+          import fitz
+          from docx import Document
+          from docx.oxml.ns import qn
+          from rpt_2027.matematik import sk_documents as math
+          from rpt_2027.sains import sk_documents as science
+          root = Path('rpt_2027')
+          stage = root / 'web_2027_pdfs'
+          manifest = json.loads((stage / 'manifest.json').read_text())['files']
+          lock = json.loads((stage / 'original_cover_layout_verified.json').read_text())
+          scope = {'matematik': (4,5,6), 'sains': (5,6),
+                   'pendidikan_islam': (2,3,4,5,6), 'bahasa_arab': (2,3,4,5,6)}
+          reports, failures = [], []
+          for subject, years in scope.items():
+              for year in years:
+                  key = f'{subject}:{year}'
+                  try:
+                      if subject == 'matematik':
+                          path = math.document_path(year, root=root/'matematik')
+                      elif subject == 'sains':
+                          path = science.document_path(year, root=root/'sains')
+                      else:
+                          entry = manifest[key]
+                          assert entry['path'] == f'{subject}/tahun_{year}.pdf'
+                          path = stage/entry['path']
+                          assert path.stat().st_size == entry['bytes']
+                          assert sha256(path.read_bytes()).hexdigest() == entry['sha256']
+                      assert path is not None and path.is_file() and not path.is_symlink(), 'Active PDF missing'
+                      raw = path.read_bytes()
+                      digest = sha256(raw).hexdigest()
+                      candidates = [lock, lock.get('aligned_rpt_covers',{}).get(key,{}),
+                                    lock.get('science_year6_covers',{}).get(key,{})]
+                      matched = [c for c in candidates if c.get('source_sha256_by_subject_year',{}).get(key) == digest]
+                      with fitz.open(stream=raw, filetype='pdf') as pdf:
+                          assert len(pdf) > 1
+                          body = list(pdf)[1:]
+                          assert all(p.get_text().strip() for p in body), 'Empty or image-only page'
+                          dims = Counter((round(p.rect.width,1),round(p.rect.height,1)) for p in body)
+                          first = body[0]
+                          spans = [s for b in first.get_text('dict')['blocks']
+                                   for line in b.get('lines',()) for s in line['spans']
+                                   if s['text'].strip()]
+                          header_x = sorted({round(s['bbox'][0],1) for s in spans if s['bbox'][1]<80})
+                          vertical = Counter(round(d['rect'].x0,1) for p in body for d in p.get_drawings()
+                                             if d['rect'].width < 0.2 and d['rect'].height > 10)
+                          horizontal = Counter((round(d['rect'].x0,1),round(d['rect'].x1,1))
+                                               for p in body for d in p.get_drawings()
+                                               if d['rect'].height < 0.2 and d['rect'].width > 10)
+                          txt = '\n'.join(p.get_text() for p in body)
+                          rtl = sum('\u0600' <= c <= '\u06ff' for c in txt)
+                          unresolved = sum(c=='\ufffd' or '\ue000'<=c<='\uf8ff' for c in txt)
+                          report = {'key':key,'path':str(path),'sha256':digest,'pages':len(pdf),
+                                    'body_sizes':[[*d,n] for d,n in dims.items()],
+                                    'cover_hash_verified':bool(matched),'rtl_characters':rtl,
+                                    'unresolved_glyphs':unresolved,'header_x':header_x,
+                                    'vertical_rules':vertical.most_common(12),
+                                    'horizontal_rules':horizontal.most_common(12),
+                                    'numbered_marker_count':len(re.findall(r'(?i)\b(?:PdP|Lesson)\s+[0-9]{1,3}\b',txt)),
+                                    'source_links':sum(len(p.get_links()) for p in body)}
+                          if matched:
+                              c=matched[0]
+                              assert abs(pdf[0].rect.width-c['page_width'])<=c['tolerance_pt']
+                              assert abs(pdf[0].rect.height-c['page_height'])<=c['tolerance_pt']
+                      if subject == 'sains':
+                          word = science.document_path(year,'docx',root=root/'sains')
+                          if word:
+                              doc=Document(word)
+                              report['native_word']={'sha256':sha256(word.read_bytes()).hexdigest(),
+                                  'tables':len(doc.tables),
+                                  'repeating_header_rows':sum(len(t._tbl.xpath('.//w:tblHeader')) for t in doc.tables),
+                                  'vertical_merge_cells':sum(len(t._tbl.xpath('.//w:vMerge')) for t in doc.tables)}
+                          else:
+                              report['native_word']=None
+                      reports.append(report)
+                      print(json.dumps(report),flush=True)
+                  except Exception as exc:
+                      failures.append({'key':key,'error':str(exc)})
+                      print(json.dumps(failures[-1]),flush=True)
+          print(json.dumps({'expected':15,'audited':len(reports),'failed':failures,
+                            'status':'SOURCE_INVENTORY_ONLY_NOT_RELEASED'}),flush=True)
+          if failures or len(reports)!=15:
+              raise SystemExit(1)
+          PY
