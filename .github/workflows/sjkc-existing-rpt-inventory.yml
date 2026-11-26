@@ -1,0 +1,19 @@
+name: SJKC 17 existing RPT download and layout inventory
+on:
+  pull_request:
+    paths:
+      - 'tests/test_rpt_sjkc_existing_17.py'
+      - '.github/workflows/sjkc-existing-rpt-inventory.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pymupdf python-docx pillow flask pypdf docxcompose
+      - run: python -m unittest discover -s tests -p test_rpt_sjkc_existing_17.py -v
