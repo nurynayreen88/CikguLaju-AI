@@ -85,13 +85,13 @@ def full_standards(lines,bank):
     assert cs and ls,joined
     return unique(cs),unique(ls)
 
-def compact_pdf(heading,details,rows,footer,teacher):
+def compact_pdf(heading,details,rows,footer,teacher,*,padding_limit=2,leading=10.25):
     """Isolated layout trial: keep 9.5pt font and all content; reduce gaps only."""
     def style(name,*args,**kwargs):
-        if name=="DLP body":kwargs["leading"]=10.25
+        if name=="DLP body":kwargs["leading"]=leading
         return ParagraphStyle(name,*args,**kwargs)
     def box(padding):
-        return pdf_box_style(min(padding,2))
+        return pdf_box_style(min(padding,padding_limit))
     with patch("reportlab.lib.styles.ParagraphStyle",side_effect=style),patch("web.rph_document_style.pdf_box_style",side_effect=box):
         return render_structured_rph(source="dlp",fmt="pdf",heading=heading,details=details,activities=rows,footer=footer,teacher=teacher,compact=True)
 
@@ -140,7 +140,13 @@ def main():
                     with fitz.open(stream=blob,filetype="pdf") as pdf:
                         old_pages=len(pdf);old_text="".join(pdf[i].get_text() for i in range(len(pdf)))
                     if old_pages>1 and y==2 and not math:
-                        blob=compact_pdf(heading,details,rows,footer,teacher)
+                        # Keep the proven compact layout for the other sessions.
+                        # Try progressively smaller cell padding for session 7 only.
+                        for padding_limit,leading in ((2,10.25),(1.5,10.25),(1,10.0),(0.75,9.8)):
+                            blob=compact_pdf(heading,details,rows,footer,teacher,padding_limit=padding_limit,leading=leading)
+                            with fitz.open(stream=blob,filetype="pdf") as trial:
+                                if len(trial)==1:break
+                            if n!=7:break
                         with fitz.open(stream=blob,filetype="pdf") as pdf:
                             new_text="".join(page.get_text() for page in pdf)
                             # ReportLab repeats the activity table header on a
