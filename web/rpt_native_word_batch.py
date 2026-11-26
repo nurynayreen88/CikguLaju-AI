@@ -184,6 +184,9 @@ def dlp_document(subject,year,account,config,*,root):
     from rpt_2027.dlp.documents import document_path
     original=document_path(subject,year,root=Path(root)/"dlp").read_bytes()
     key=f"{subject}:{year}"
+    from web import dlp_paired_science_rpt as paired
+    if paired.enabled(subject,year):
+        return paired.word_document(root,year,account,config)
     revised=read_full_standards_dlp(subject,year,original,root=root)
     if revised is not None:
         from tools.build_rpt_dlp_full_standards_20261126 import build_word as build_revised

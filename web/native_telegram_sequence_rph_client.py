@@ -4,6 +4,7 @@ No RPT-week matching or Web-side lesson generation. Unit/PdP options,
 readiness checks and Word/PDF bytes all come from the running Telegram bot.
 """
 import io
+import os
 import json
 import re
 from urllib.parse import urlencode
@@ -56,6 +57,10 @@ DLP_CATALOGUES = {
     (6, "SCIENCE_DLP"): ("year6-science/catalogue", DLP_SCIENCE_UNIT, DLP_SCIENCE_LESSON, 13, 61),
 }
 DLP_SUBJECTS = {subject for _, subject in DLP_CATALOGUES}
+DLP_SESSION_TOKEN=re.compile(r"SESSION-(?:00[1-9]|0[1-6][0-9]|070)")
+def _paired_enabled(year,subject):
+    return subject=="SCIENCE_DLP" and year in (2,3,6) and str(year) in os.getenv("CIKGULAJU_DLP_PAIRED_SCIENCE_YEARS","").split(",")
+
 
 
 def _year_subject(year, subject):
@@ -74,7 +79,9 @@ def _selection(year, subject, unit, lesson=None):
         raise ValueError("Unverified native unit token")
     science = SCIENCE_2027_ROUTES.get(year) if subject == "SCIENCE" else None
     route = SEQUENCE_ROUTE
-    if subject in DLP_SUBJECTS and DLP_CATALOGUES[year, subject][1].fullmatch(unit):
+    if unit=="sessions" and _paired_enabled(year,subject):
+        route=DLP_ROUTE
+    elif subject in DLP_SUBJECTS and DLP_CATALOGUES[year, subject][1].fullmatch(unit):
         route = DLP_ROUTE
     elif subject == DPK_SUBJECT:
         if not re.fullmatch(r"d[a-f0-9]{24}", unit):
@@ -96,7 +103,7 @@ def _selection(year, subject, unit, lesson=None):
         if (not isinstance(lesson, str) or not 0 < len(lesson) <= 100
                 or any(ord(c) < 32 for c in lesson)):
             raise ValueError("Invalid native PdP code")
-        if route == DLP_ROUTE and not DLP_CATALOGUES[year, subject][2].fullmatch(lesson):
+        if route == DLP_ROUTE and not (DLP_SESSION_TOKEN.fullmatch(lesson) if unit=="sessions" else DLP_CATALOGUES[year, subject][2].fullmatch(lesson)):
             raise ValueError("Invalid DLP lesson code")
         result["lesson"] = lesson
     return route, result
@@ -142,7 +149,26 @@ def _dlp_catalogue(year, subject):
     if not isinstance(data, dict) or (data.get("year"), data.get("subject")) != (year, subject):
         raise NativeRPHUnavailable("Invalid DLP catalogue")
     units = data.get("units")
-    if not isinstance(units, list) or len(units) != unit_count:
+    paired=None
+    if not isinstance(units,list):
+        raise NativeRPHUnavailable("Invalid DLP catalogue units")
+    if _paired_enabled(year,subject):
+        candidates=[u for u in units if isinstance(u,dict) and u.get("id")=="sessions"]
+        if len(candidates)!=1:
+            raise NativeRPHUnavailable("Paired DLP catalogue unavailable")
+        paired=candidates[0]
+        entries=paired.get("lessons")
+        if (not isinstance(entries,list) or len(entries)!=70 or
+            any(not isinstance(e,dict) or e.get("id")!=f"SESSION-{i:03d}" or
+                not all(isinstance(e.get(k),str) and e[k].strip() for k in ("title","label","book_reference")) or
+                e.get("minutes") not in (30,60) for i,e in enumerate(entries,1)) or
+            not isinstance(paired.get("title"),str)):
+            raise NativeRPHUnavailable("Invalid paired session inventory")
+        units=[u for u in units if u is not paired]
+    elif any(isinstance(u,dict) and u.get("id")=="sessions" for u in units):
+        # Backend can be deployed first without exposing the session menu.
+        units=[u for u in units if not (isinstance(u,dict) and u.get("id")=="sessions")]
+    if len(units)!=unit_count:
         raise NativeRPHUnavailable("Incomplete DLP catalogue")
     found = {}
     lesson_ids = set()
@@ -161,6 +187,7 @@ def _dlp_catalogue(year, subject):
             lesson_ids.add(lesson["id"])
     if len(lesson_ids) != lesson_count:
         raise NativeRPHUnavailable("Incomplete DLP lessons")
+    if paired is not None:found["sessions"]=paired
     return found
 
 
@@ -197,6 +224,8 @@ def list_native_lessons(year, subject, unit):
         group = _dlp_catalogue(year, subject).get(unit)
         if group is None:
             raise NativeRPHUnavailable("Unknown DLP unit")
+        if unit=="sessions":
+            return [{"value":row["id"],"label":row["label"]+" • "+row["title"],"textbook_ref":row["book_reference"]} for row in group["lessons"]]
         return [{"value": row["id"], "label": row["label"].split(" · ", 1)[0] + " • " + row["title"],
                  "textbook_ref": row["book_reference"]} for row in group["lessons"]]
     data = (_read("lessons", args) if route == SEQUENCE_ROUTE else _read("lessons", args, route=route))

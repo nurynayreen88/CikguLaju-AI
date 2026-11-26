@@ -1,0 +1,2275 @@
+[
+  {
+    "session": 1,
+    "week": 1,
+    "dates": [
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-01",
+      "DLP-SCI-Y3-02"
+    ],
+    "source_labels": [
+      "L01",
+      "L02"
+    ],
+    "titles": [
+      "L01: Lesson 01 Observe with the senses Unit 1 Scientific Skills",
+      "L02: Lesson 02 Classify living things Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 2,
+    "week": 1,
+    "dates": [
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-03"
+    ],
+    "source_labels": [
+      "L03"
+    ],
+    "titles": [
+      "L03: Lesson 03 Measure and record length Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 3,
+    "week": 2,
+    "dates": [
+      {
+        "week": "M02",
+        "start": "2027-01-10",
+        "end": "2027-01-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-11",
+        "end": "2027-01-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-04"
+    ],
+    "source_labels": [
+      "L04"
+    ],
+    "titles": [
+      "L04: Lesson 04 Make an inference Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 4,
+    "week": 2,
+    "dates": [
+      {
+        "week": "M02",
+        "start": "2027-01-10",
+        "end": "2027-01-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-11",
+        "end": "2027-01-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-05"
+    ],
+    "source_labels": [
+      "L05"
+    ],
+    "titles": [
+      "L05: Lesson 05 Predict from evidence Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 5,
+    "week": 3,
+    "dates": [
+      {
+        "week": "M03",
+        "start": "2027-01-17",
+        "end": "2027-01-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-18",
+        "end": "2027-01-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-06"
+    ],
+    "source_labels": [
+      "L06"
+    ],
+    "titles": [
+      "L06: Lesson 06 Communicate findings Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 6,
+    "week": 3,
+    "dates": [
+      {
+        "week": "M03",
+        "start": "2027-01-17",
+        "end": "2027-01-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-18",
+        "end": "2027-01-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-06"
+    ],
+    "source_labels": [
+      "L06"
+    ],
+    "titles": [
+      "L06: Lesson 06 Communicate findings Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 7,
+    "week": 4,
+    "dates": [
+      {
+        "week": "M04",
+        "start": "2027-01-24",
+        "end": "2027-01-28",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-25",
+        "end": "2027-01-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-07"
+    ],
+    "source_labels": [
+      "L07"
+    ],
+    "titles": [
+      "L07: Lesson 07 Use apparatus and handle specimens Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 8,
+    "week": 4,
+    "dates": [
+      {
+        "week": "M04",
+        "start": "2027-01-24",
+        "end": "2027-01-28",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-25",
+        "end": "2027-01-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-07"
+    ],
+    "source_labels": [
+      "L07"
+    ],
+    "titles": [
+      "L07: Lesson 07 Use apparatus and handle specimens Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 9,
+    "week": 5,
+    "dates": [
+      {
+        "week": "M05",
+        "start": "2027-01-31",
+        "end": "2027-02-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M05",
+        "start": "2027-02-01",
+        "end": "2027-02-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-08"
+    ],
+    "source_labels": [
+      "L08"
+    ],
+    "titles": [
+      "L08: Lesson 08 Sketch, clean and store Unit 1 Scientific Skills"
+    ]
+  },
+  {
+    "session": 10,
+    "week": 5,
+    "dates": [
+      {
+        "week": "M05",
+        "start": "2027-01-31",
+        "end": "2027-02-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M05",
+        "start": "2027-02-01",
+        "end": "2027-02-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-09"
+    ],
+    "source_labels": [
+      "L09"
+    ],
+    "titles": [
+      "L09: Lesson 09 Follow science room rules Unit 2 Science Room Rules"
+    ]
+  },
+  {
+    "session": 11,
+    "week": 7,
+    "dates": [
+      {
+        "week": "M07",
+        "start": "2027-02-14",
+        "end": "2027-02-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-15",
+        "end": "2027-02-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-10"
+    ],
+    "source_labels": [
+      "L10"
+    ],
+    "titles": [
+      "L10: Lesson 10 Types of teeth and functions Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 12,
+    "week": 7,
+    "dates": [
+      {
+        "week": "M07",
+        "start": "2027-02-14",
+        "end": "2027-02-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-15",
+        "end": "2027-02-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-11"
+    ],
+    "source_labels": [
+      "L11"
+    ],
+    "titles": [
+      "L11: Lesson 11 Structure of a tooth Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 13,
+    "week": 8,
+    "dates": [
+      {
+        "week": "M08",
+        "start": "2027-02-21",
+        "end": "2027-02-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-22",
+        "end": "2027-02-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-12"
+    ],
+    "source_labels": [
+      "L12"
+    ],
+    "titles": [
+      "L12: Lesson 12 Milk and permanent teeth Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 14,
+    "week": 8,
+    "dates": [
+      {
+        "week": "M08",
+        "start": "2027-02-21",
+        "end": "2027-02-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-22",
+        "end": "2027-02-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-13"
+    ],
+    "source_labels": [
+      "L13"
+    ],
+    "titles": [
+      "L13: Lesson 13 Care for teeth and explain why Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 15,
+    "week": 9,
+    "dates": [
+      {
+        "week": "M09",
+        "start": "2027-02-28",
+        "end": "2027-03-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-03-01",
+        "end": "2027-03-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-13",
+      "DLP-SCI-Y3-14"
+    ],
+    "source_labels": [
+      "L13",
+      "L14"
+    ],
+    "titles": [
+      "L13: Lesson 13 Care for teeth and explain why Unit 3 Humans",
+      "L14: Lesson 14 Classify foods Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 16,
+    "week": 9,
+    "dates": [
+      {
+        "week": "M09",
+        "start": "2027-02-28",
+        "end": "2027-03-04",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-03-01",
+        "end": "2027-03-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-15"
+    ],
+    "source_labels": [
+      "L15"
+    ],
+    "titles": [
+      "L15: Lesson 15 Explain why food classes matter Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 17,
+    "week": 10,
+    "dates": [
+      {
+        "week": "M10",
+        "start": "2027-03-14",
+        "end": "2027-03-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-15",
+        "end": "2027-03-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-16"
+    ],
+    "source_labels": [
+      "L16"
+    ],
+    "titles": [
+      "L16: Lesson 16 Plan a balanced meal Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 18,
+    "week": 10,
+    "dates": [
+      {
+        "week": "M10",
+        "start": "2027-03-14",
+        "end": "2027-03-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-15",
+        "end": "2027-03-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-17"
+    ],
+    "source_labels": [
+      "L17"
+    ],
+    "titles": [
+      "L17: Lesson 17 Explain an imbalanced diet Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 19,
+    "week": 11,
+    "dates": [
+      {
+        "week": "M11",
+        "start": "2027-03-21",
+        "end": "2027-03-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-17",
+      "DLP-SCI-Y3-18"
+    ],
+    "source_labels": [
+      "L17",
+      "L18"
+    ],
+    "titles": [
+      "L17: Lesson 17 Explain an imbalanced diet Unit 3 Humans",
+      "L18: Lesson 18 Describe digestion Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 20,
+    "week": 11,
+    "dates": [
+      {
+        "week": "M11",
+        "start": "2027-03-21",
+        "end": "2027-03-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-18"
+    ],
+    "source_labels": [
+      "L18"
+    ],
+    "titles": [
+      "L18: Lesson 18 Describe digestion Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 21,
+    "week": 12,
+    "dates": [
+      {
+        "week": "M12",
+        "start": "2027-03-28",
+        "end": "2027-04-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-29",
+        "end": "2027-04-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-19"
+    ],
+    "source_labels": [
+      "L19"
+    ],
+    "titles": [
+      "L19: Lesson 19 Trace the path of food Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 22,
+    "week": 12,
+    "dates": [
+      {
+        "week": "M12",
+        "start": "2027-03-28",
+        "end": "2027-04-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-29",
+        "end": "2027-04-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-19"
+    ],
+    "source_labels": [
+      "L19"
+    ],
+    "titles": [
+      "L19: Lesson 19 Trace the path of food Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 23,
+    "week": 13,
+    "dates": [
+      {
+        "week": "M13",
+        "start": "2027-04-04",
+        "end": "2027-04-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-05",
+        "end": "2027-04-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-20"
+    ],
+    "source_labels": [
+      "L20"
+    ],
+    "titles": [
+      "L20: Lesson 20 Explain what happens after digestion Unit 3 Humans"
+    ]
+  },
+  {
+    "session": 24,
+    "week": 13,
+    "dates": [
+      {
+        "week": "M13",
+        "start": "2027-04-04",
+        "end": "2027-04-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-05",
+        "end": "2027-04-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-R01"
+    ],
+    "source_labels": [
+      "R01"
+    ],
+    "titles": [
+      "R01: Review Humans Consolidation"
+    ]
+  },
+  {
+    "session": 25,
+    "week": 14,
+    "dates": [
+      {
+        "week": "M14",
+        "start": "2027-04-11",
+        "end": "2027-04-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-12",
+        "end": "2027-04-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-21"
+    ],
+    "source_labels": [
+      "L21"
+    ],
+    "titles": [
+      "L21: Lesson 21 Group animals by what they eat Unit 4 Animals"
+    ]
+  },
+  {
+    "session": 26,
+    "week": 14,
+    "dates": [
+      {
+        "week": "M14",
+        "start": "2027-04-11",
+        "end": "2027-04-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-12",
+        "end": "2027-04-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-22"
+    ],
+    "source_labels": [
+      "L22"
+    ],
+    "titles": [
+      "L22: Lesson 22 Infer the group from an animal's diet Unit 4 Animals"
+    ]
+  },
+  {
+    "session": 27,
+    "week": 15,
+    "dates": [
+      {
+        "week": "M15",
+        "start": "2027-04-18",
+        "end": "2027-04-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-19",
+        "end": "2027-04-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-22",
+      "DLP-SCI-Y3-23"
+    ],
+    "source_labels": [
+      "L22",
+      "L23"
+    ],
+    "titles": [
+      "L22: Lesson 22 Infer the group from an animal's diet Unit 4 Animals",
+      "L23: Lesson 23 Compare animal teeth Unit 4 Animals"
+    ]
+  },
+  {
+    "session": 28,
+    "week": 15,
+    "dates": [
+      {
+        "week": "M15",
+        "start": "2027-04-18",
+        "end": "2027-04-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-19",
+        "end": "2027-04-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-23"
+    ],
+    "source_labels": [
+      "L23"
+    ],
+    "titles": [
+      "L23: Lesson 23 Compare animal teeth Unit 4 Animals"
+    ]
+  },
+  {
+    "session": 29,
+    "week": 16,
+    "dates": [
+      {
+        "week": "M16",
+        "start": "2027-04-25",
+        "end": "2027-04-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-26",
+        "end": "2027-04-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-24"
+    ],
+    "source_labels": [
+      "L24"
+    ],
+    "titles": [
+      "L24: Lesson 24 Explain evidence about animal diets Unit 4 Animals"
+    ]
+  },
+  {
+    "session": 30,
+    "week": 16,
+    "dates": [
+      {
+        "week": "M16",
+        "start": "2027-04-25",
+        "end": "2027-04-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-26",
+        "end": "2027-04-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-25"
+    ],
+    "source_labels": [
+      "L25"
+    ],
+    "titles": [
+      "L25: Lesson 25 Identify ways plants reproduce Unit 5 Plants"
+    ]
+  },
+  {
+    "session": 31,
+    "week": 17,
+    "dates": [
+      {
+        "week": "M17",
+        "start": "2027-05-02",
+        "end": "2027-05-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-03",
+        "end": "2027-05-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-25",
+      "DLP-SCI-Y3-26"
+    ],
+    "source_labels": [
+      "L25",
+      "L26"
+    ],
+    "titles": [
+      "L25: Lesson 25 Identify ways plants reproduce Unit 5 Plants",
+      "L26: Lesson 26 Explain why reproduction matters Unit 5 Plants"
+    ]
+  },
+  {
+    "session": 32,
+    "week": 17,
+    "dates": [
+      {
+        "week": "M17",
+        "start": "2027-05-02",
+        "end": "2027-05-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-03",
+        "end": "2027-05-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-26"
+    ],
+    "source_labels": [
+      "L26"
+    ],
+    "titles": [
+      "L26: Lesson 26 Explain why reproduction matters Unit 5 Plants"
+    ]
+  },
+  {
+    "session": 33,
+    "week": 20,
+    "dates": [
+      {
+        "week": "M20",
+        "start": "2027-06-06",
+        "end": "2027-06-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M20",
+        "start": "2027-06-07",
+        "end": "2027-06-11",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-27"
+    ],
+    "source_labels": [
+      "L27"
+    ],
+    "titles": [
+      "L27: Lesson 27 Investigate more than one propagation method Unit 5 Plants"
+    ]
+  },
+  {
+    "session": 34,
+    "week": 20,
+    "dates": [
+      {
+        "week": "M20",
+        "start": "2027-06-06",
+        "end": "2027-06-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M20",
+        "start": "2027-06-07",
+        "end": "2027-06-11",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-28"
+    ],
+    "source_labels": [
+      "L28"
+    ],
+    "titles": [
+      "L28: Lesson 28 Report the plant project Unit 5 Plants"
+    ]
+  },
+  {
+    "session": 35,
+    "week": 21,
+    "dates": [
+      {
+        "week": "M21",
+        "start": "2027-06-13",
+        "end": "2027-06-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-14",
+        "end": "2027-06-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-28",
+      "DLP-SCI-Y3-R02"
+    ],
+    "source_labels": [
+      "L28",
+      "R02"
+    ],
+    "titles": [
+      "L28: Lesson 28 Report the plant project Unit 5 Plants",
+      "R02: Review Animals and Plants Consolidation"
+    ]
+  },
+  {
+    "session": 36,
+    "week": 21,
+    "dates": [
+      {
+        "week": "M21",
+        "start": "2027-06-13",
+        "end": "2027-06-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-14",
+        "end": "2027-06-18",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-29"
+    ],
+    "source_labels": [
+      "L29"
+    ],
+    "titles": [
+      "L29: Lesson 29 Recognise area and volume units Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 37,
+    "week": 22,
+    "dates": [
+      {
+        "week": "M22",
+        "start": "2027-06-20",
+        "end": "2027-06-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-21",
+        "end": "2027-06-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-30"
+    ],
+    "source_labels": [
+      "L30"
+    ],
+    "titles": [
+      "L30: Lesson 30 Measure a regular area Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 38,
+    "week": 22,
+    "dates": [
+      {
+        "week": "M22",
+        "start": "2027-06-20",
+        "end": "2027-06-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-21",
+        "end": "2027-06-25",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-31"
+    ],
+    "source_labels": [
+      "L31"
+    ],
+    "titles": [
+      "L31: Lesson 31 Estimate an irregular area Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 39,
+    "week": 23,
+    "dates": [
+      {
+        "week": "M23",
+        "start": "2027-06-27",
+        "end": "2027-07-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-28",
+        "end": "2027-07-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-31",
+      "DLP-SCI-Y3-32"
+    ],
+    "source_labels": [
+      "L31",
+      "L32"
+    ],
+    "titles": [
+      "L31: Lesson 31 Estimate an irregular area Unit 6 Measurement",
+      "L32: Lesson 32 Measure the volume of a box Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 40,
+    "week": 23,
+    "dates": [
+      {
+        "week": "M23",
+        "start": "2027-06-27",
+        "end": "2027-07-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-28",
+        "end": "2027-07-02",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-32"
+    ],
+    "source_labels": [
+      "L32"
+    ],
+    "titles": [
+      "L32: Lesson 32 Measure the volume of a box Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 41,
+    "week": 24,
+    "dates": [
+      {
+        "week": "M24",
+        "start": "2027-07-04",
+        "end": "2027-07-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-05",
+        "end": "2027-07-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-33"
+    ],
+    "source_labels": [
+      "L33"
+    ],
+    "titles": [
+      "L33: Lesson 33 Measure a liquid volume Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 42,
+    "week": 24,
+    "dates": [
+      {
+        "week": "M24",
+        "start": "2027-07-04",
+        "end": "2027-07-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-05",
+        "end": "2027-07-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-34"
+    ],
+    "source_labels": [
+      "L34"
+    ],
+    "titles": [
+      "L34: Lesson 34 Calculate displaced volume Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 43,
+    "week": 25,
+    "dates": [
+      {
+        "week": "M25",
+        "start": "2027-07-11",
+        "end": "2027-07-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-12",
+        "end": "2027-07-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-34",
+      "DLP-SCI-Y3-35"
+    ],
+    "source_labels": [
+      "L34",
+      "L35"
+    ],
+    "titles": [
+      "L34: Lesson 34 Calculate displaced volume Unit 6 Measurement",
+      "L35: Lesson 35 Explain an area or volume method Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 44,
+    "week": 25,
+    "dates": [
+      {
+        "week": "M25",
+        "start": "2027-07-11",
+        "end": "2027-07-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-12",
+        "end": "2027-07-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-35"
+    ],
+    "source_labels": [
+      "L35"
+    ],
+    "titles": [
+      "L35: Lesson 35 Explain an area or volume method Unit 6 Measurement"
+    ]
+  },
+  {
+    "session": 45,
+    "week": 26,
+    "dates": [
+      {
+        "week": "M26",
+        "start": "2027-07-18",
+        "end": "2027-07-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-19",
+        "end": "2027-07-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-36"
+    ],
+    "source_labels": [
+      "L36"
+    ],
+    "titles": [
+      "L36: Lesson 36 Investigate floating and sinking Unit 7 Density"
+    ]
+  },
+  {
+    "session": 46,
+    "week": 26,
+    "dates": [
+      {
+        "week": "M26",
+        "start": "2027-07-18",
+        "end": "2027-07-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-19",
+        "end": "2027-07-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-37"
+    ],
+    "source_labels": [
+      "L37"
+    ],
+    "titles": [
+      "L37: Lesson 37 Compare density with water Unit 7 Density"
+    ]
+  },
+  {
+    "session": 47,
+    "week": 27,
+    "dates": [
+      {
+        "week": "M27",
+        "start": "2027-07-25",
+        "end": "2027-07-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-26",
+        "end": "2027-07-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-37",
+      "DLP-SCI-Y3-38"
+    ],
+    "source_labels": [
+      "L37",
+      "L38"
+    ],
+    "titles": [
+      "L37: Lesson 37 Compare density with water Unit 7 Density",
+      "L38: Lesson 38 Make water denser Unit 7 Density"
+    ]
+  },
+  {
+    "session": 48,
+    "week": 27,
+    "dates": [
+      {
+        "week": "M27",
+        "start": "2027-07-25",
+        "end": "2027-07-29",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-26",
+        "end": "2027-07-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-38"
+    ],
+    "source_labels": [
+      "L38"
+    ],
+    "titles": [
+      "L38: Lesson 38 Make water denser Unit 7 Density"
+    ]
+  },
+  {
+    "session": 49,
+    "week": 28,
+    "dates": [
+      {
+        "week": "M28",
+        "start": "2027-08-01",
+        "end": "2027-08-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-02",
+        "end": "2027-08-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-39"
+    ],
+    "source_labels": [
+      "L39"
+    ],
+    "titles": [
+      "L39: Lesson 39 Explain a use of density Unit 7 Density"
+    ]
+  },
+  {
+    "session": 50,
+    "week": 28,
+    "dates": [
+      {
+        "week": "M28",
+        "start": "2027-08-01",
+        "end": "2027-08-05",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-02",
+        "end": "2027-08-06",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-40"
+    ],
+    "source_labels": [
+      "L40"
+    ],
+    "titles": [
+      "L40: Lesson 40 Test substances using litmus Unit 8 Acid and Alkali"
+    ]
+  },
+  {
+    "session": 51,
+    "week": 29,
+    "dates": [
+      {
+        "week": "M29",
+        "start": "2027-08-08",
+        "end": "2027-08-12",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-09",
+        "end": "2027-08-13",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-40",
+      "DLP-SCI-Y3-41"
+    ],
+    "source_labels": [
+      "L40",
+      "L41"
+    ],
+    "titles": [
+      "L40: Lesson 40 Test substances using litmus Unit 8 Acid and Alkali",
+      "L41: Lesson 41 Compare reported properties safely Unit 8 Acid and Alkali"
+    ]
+  },
+  {
+    "session": 52,
+    "week": 29,
+    "dates": [
+      {
+        "week": "M29",
+        "start": "2027-08-08",
+        "end": "2027-08-12",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-09",
+        "end": "2027-08-13",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-41"
+    ],
+    "source_labels": [
+      "L41"
+    ],
+    "titles": [
+      "L41: Lesson 41 Compare reported properties safely Unit 8 Acid and Alkali"
+    ]
+  },
+  {
+    "session": 53,
+    "week": 30,
+    "dates": [
+      {
+        "week": "M30",
+        "start": "2027-08-15",
+        "end": "2027-08-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-16",
+        "end": "2027-08-20",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-42"
+    ],
+    "source_labels": [
+      "L42"
+    ],
+    "titles": [
+      "L42: Lesson 42 Compare other indicators Unit 8 Acid and Alkali"
+    ]
+  },
+  {
+    "session": 54,
+    "week": 30,
+    "dates": [
+      {
+        "week": "M30",
+        "start": "2027-08-15",
+        "end": "2027-08-19",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-16",
+        "end": "2027-08-20",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-43"
+    ],
+    "source_labels": [
+      "L43"
+    ],
+    "titles": [
+      "L43: Lesson 43 Report indicator results Unit 8 Acid and Alkali"
+    ]
+  },
+  {
+    "session": 55,
+    "week": 31,
+    "dates": [
+      {
+        "week": "M31",
+        "start": "2027-08-22",
+        "end": "2027-08-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-23",
+        "end": "2027-08-27",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-43",
+      "DLP-SCI-Y3-R03"
+    ],
+    "source_labels": [
+      "L43",
+      "R03"
+    ],
+    "titles": [
+      "L43: Lesson 43 Report indicator results Unit 8 Acid and Alkali",
+      "R03: Review Measurement, Density and Indicators Consolidation"
+    ]
+  },
+  {
+    "session": 56,
+    "week": 31,
+    "dates": [
+      {
+        "week": "M31",
+        "start": "2027-08-22",
+        "end": "2027-08-26",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-23",
+        "end": "2027-08-27",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-44"
+    ],
+    "source_labels": [
+      "L44"
+    ],
+    "titles": [
+      "L44: Lesson 44 Identify Solar System members Unit 9 The Solar System"
+    ]
+  },
+  {
+    "session": 57,
+    "week": 32,
+    "dates": [
+      {
+        "week": "M32",
+        "start": "2027-09-05",
+        "end": "2027-09-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-06",
+        "end": "2027-09-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-45"
+    ],
+    "source_labels": [
+      "L45"
+    ],
+    "titles": [
+      "L45: Lesson 45 Compare planet temperatures Unit 9 The Solar System"
+    ]
+  },
+  {
+    "session": 58,
+    "week": 32,
+    "dates": [
+      {
+        "week": "M32",
+        "start": "2027-09-05",
+        "end": "2027-09-09",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-06",
+        "end": "2027-09-10",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-45"
+    ],
+    "source_labels": [
+      "L45"
+    ],
+    "titles": [
+      "L45: Lesson 45 Compare planet temperatures Unit 9 The Solar System"
+    ]
+  },
+  {
+    "session": 59,
+    "week": 33,
+    "dates": [
+      {
+        "week": "M33",
+        "start": "2027-09-12",
+        "end": "2027-09-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-13",
+        "end": "2027-09-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-46"
+    ],
+    "source_labels": [
+      "L46"
+    ],
+    "titles": [
+      "L46: Lesson 46 Model orbits around the Sun Unit 9 The Solar System"
+    ]
+  },
+  {
+    "session": 60,
+    "week": 33,
+    "dates": [
+      {
+        "week": "M33",
+        "start": "2027-09-12",
+        "end": "2027-09-16",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-13",
+        "end": "2027-09-17",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-46"
+    ],
+    "source_labels": [
+      "L46"
+    ],
+    "titles": [
+      "L46: Lesson 46 Model orbits around the Sun Unit 9 The Solar System"
+    ]
+  },
+  {
+    "session": 61,
+    "week": 34,
+    "dates": [
+      {
+        "week": "M34",
+        "start": "2027-09-19",
+        "end": "2027-09-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-20",
+        "end": "2027-09-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-47"
+    ],
+    "source_labels": [
+      "L47"
+    ],
+    "titles": [
+      "L47: Lesson 47 Compare revolution times Unit 9 The Solar System"
+    ]
+  },
+  {
+    "session": 62,
+    "week": 34,
+    "dates": [
+      {
+        "week": "M34",
+        "start": "2027-09-19",
+        "end": "2027-09-23",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-20",
+        "end": "2027-09-24",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-47"
+    ],
+    "source_labels": [
+      "L47"
+    ],
+    "titles": [
+      "L47: Lesson 47 Compare revolution times Unit 9 The Solar System"
+    ]
+  },
+  {
+    "session": 63,
+    "week": 35,
+    "dates": [
+      {
+        "week": "M35",
+        "start": "2027-09-26",
+        "end": "2027-09-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M35",
+        "start": "2027-09-27",
+        "end": "2027-10-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-48"
+    ],
+    "source_labels": [
+      "L48"
+    ],
+    "titles": [
+      "L48: Lesson 48 Communicate Solar System findings Unit 9 The Solar System"
+    ]
+  },
+  {
+    "session": 64,
+    "week": 35,
+    "dates": [
+      {
+        "week": "M35",
+        "start": "2027-09-26",
+        "end": "2027-09-30",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M35",
+        "start": "2027-09-27",
+        "end": "2027-10-01",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-49"
+    ],
+    "source_labels": [
+      "L49"
+    ],
+    "titles": [
+      "L49: Lesson 49 Identify a pulley and its purpose Unit 10 Machine"
+    ]
+  },
+  {
+    "session": 65,
+    "week": 36,
+    "dates": [
+      {
+        "week": "M36",
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-04",
+        "end": "2027-10-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-50"
+    ],
+    "source_labels": [
+      "L50"
+    ],
+    "titles": [
+      "L50: Lesson 50 Explain a fixed pulley Unit 10 Machine"
+    ]
+  },
+  {
+    "session": 66,
+    "week": 36,
+    "dates": [
+      {
+        "week": "M36",
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-04",
+        "end": "2027-10-08",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-50"
+    ],
+    "source_labels": [
+      "L50"
+    ],
+    "titles": [
+      "L50: Lesson 50 Explain a fixed pulley Unit 10 Machine"
+    ]
+  },
+  {
+    "session": 67,
+    "week": 37,
+    "dates": [
+      {
+        "week": "M37",
+        "start": "2027-10-10",
+        "end": "2027-10-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-11",
+        "end": "2027-10-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-51"
+    ],
+    "source_labels": [
+      "L51"
+    ],
+    "titles": [
+      "L51: Lesson 51 Find pulley applications Unit 10 Machine"
+    ]
+  },
+  {
+    "session": 68,
+    "week": 37,
+    "dates": [
+      {
+        "week": "M37",
+        "start": "2027-10-10",
+        "end": "2027-10-14",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-11",
+        "end": "2027-10-15",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-51"
+    ],
+    "source_labels": [
+      "L51"
+    ],
+    "titles": [
+      "L51: Lesson 51 Find pulley applications Unit 10 Machine"
+    ]
+  },
+  {
+    "session": 69,
+    "week": 38,
+    "dates": [
+      {
+        "week": "M38",
+        "start": "2027-10-17",
+        "end": "2027-10-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-18",
+        "end": "2027-10-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 60,
+    "source_ids": [
+      "DLP-SCI-Y3-52"
+    ],
+    "source_labels": [
+      "L52"
+    ],
+    "titles": [
+      "L52: Lesson 52 Build and explain a pulley model Unit 10 Machine"
+    ]
+  },
+  {
+    "session": 70,
+    "week": 38,
+    "dates": [
+      {
+        "week": "M38",
+        "start": "2027-10-17",
+        "end": "2027-10-21",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-18",
+        "end": "2027-10-22",
+        "type": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "slot_minutes": 30,
+    "source_ids": [
+      "DLP-SCI-Y3-R04"
+    ],
+    "source_labels": [
+      "R04"
+    ],
+    "titles": [
+      "R04: Review Solar System and Machine Consolidation"
+    ]
+  }
+]

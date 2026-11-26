@@ -7,7 +7,7 @@ import fitz
 from docx import Document
 from tools.build_rpt_dlp_native_20261126 import PINS, document_path
 from tools.build_rpt_dlp_full_standards_20261126 import build_word
-from web.rpt_compact_pdf import read_full_standards_dlp
+from web.rpt_compact_pdf import read_full_standards_dlp,dlp_whole_week_release
 from web.rpt_dlp_flexible_time import word_without_fixed_minutes,pdf_without_fixed_minutes,DURATION
 
 def test_all():
@@ -19,6 +19,15 @@ def test_all():
         approved=read_full_standards_dlp(subject,year,raw,root=root)
         assert approved,key
         old_pdf=approved[0]
+        if dlp_whole_week_release(root):
+            # Current published calendar already omits fixed per-lesson durations.
+            # Verify its real bytes instead of applying a retired transform twice.
+            with fitz.open(stream=old_pdf,filetype="pdf") as pdf:
+                for page in list(pdf)[1:-1]:
+                    assert not any(DURATION.fullmatch(t.strip()) for t in page.get_text().splitlines()),(key,page.number)
+                    assert "Textbook" in page.get_text(),(key,page.number)
+            print("FLEXIBLE_TIME_ALREADY_RELEASED",key,flush=True)
+            continue
         old_word=build_word(subject,year,root=root)[0]
         new_word=word_without_fixed_minutes(old_word)
         a,b=Document(BytesIO(old_word)),Document(BytesIO(new_word))

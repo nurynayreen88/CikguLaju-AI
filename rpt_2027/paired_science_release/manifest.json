@@ -1,0 +1,69 @@
+{
+  "qa_run": 45824945883,
+  "source_sha256": "28cbbdde4642b6be8f261f2a2c1820872027f5e8b7a04f10a3de3110a04fc9f4",
+  "sets": {
+    "2": {
+      "files": {
+        "pdf": {
+          "path": "science_dlp_y2.pdf",
+          "sha256": "dbdf3acf66442161015c80d695bbd3dec313edbdc6140b6d26bd67d3e458f1ff",
+          "bytes": 134286
+        },
+        "docx": {
+          "path": "science_dlp_y2.docx",
+          "sha256": "312f9915cac3cfb450c1beeedcf6eed70fdf96ce70cbb40a4771b15525da0a0c",
+          "bytes": 59704
+        },
+        "index": {
+          "path": "science_dlp_y2_index.json",
+          "sha256": "6c2d4b6891bd2d88b0c404c598c632d504018d4b9f34c7c35e2c410c0f060c81",
+          "bytes": 52029
+        }
+      },
+      "sessions": 70,
+      "enabled": false
+    },
+    "3": {
+      "files": {
+        "pdf": {
+          "path": "science_dlp_y3.pdf",
+          "sha256": "c3b63704492873cb12f34eb7c7d43bdcc523f41d3d748a1fd23d78a8ae53f1c4",
+          "bytes": 132782
+        },
+        "docx": {
+          "path": "science_dlp_y3.docx",
+          "sha256": "abab0bf6bd63254ceb83c0f6fb28b94822cdd857dd8f7616acc47e741339daa3",
+          "bytes": 58164
+        },
+        "index": {
+          "path": "science_dlp_y3_index.json",
+          "sha256": "f0d477693aa0db85d44686c532b45a7cf17dc09e6eead1ec6dd69e2080dfa28f",
+          "bytes": 51137
+        }
+      },
+      "sessions": 70,
+      "enabled": false
+    },
+    "6": {
+      "files": {
+        "pdf": {
+          "path": "science_dlp_y6.pdf",
+          "sha256": "71f11af1559be7fdf2c11f69f7cf1a224b18d83ec78c1e13c4037dca477396f6",
+          "bytes": 139820
+        },
+        "docx": {
+          "path": "science_dlp_y6.docx",
+          "sha256": "c7e42db2d2e91a303b4cf4f956b1136ee9a07c9f35d0af323cff65ad8b4a845d",
+          "bytes": 59297
+        },
+        "index": {
+          "path": "science_dlp_y6_index.json",
+          "sha256": "a3d3858c4d44dced91d99819f4b01fedc307414c36b716a8d224cd38c06fd72f",
+          "bytes": 51063
+        }
+      },
+      "sessions": 70,
+      "enabled": false
+    }
+  }
+}
