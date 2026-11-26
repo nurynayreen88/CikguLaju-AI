@@ -137,11 +137,11 @@ def render(year,out):
     style=doc.styles["Normal"];style.font.name="Arial";style.font.size=Pt(9)
     cover(doc,year)
     counts=[]
-    for index,(week,a,b,sessions) in enumerate(weeks):
-        # One table per week: all lessons keep separate rows and share the
-        # vertically merged WEEK cell. Word repeats headers if a long week
-        # crosses a page; never collapse CS/LS or join unrelated lessons.
-        t=table(doc)
+    # Continuous table: no forced page break between weeks. Each lesson
+    # remains an independent row and the first row repeats on every page.
+    t=table(doc)
+    for week,a,b,sessions in weeks:
+        first=len(t.rows)
         if sessions:
             for slot,session in enumerate(sessions,1):
                 for n in session:
@@ -154,31 +154,32 @@ def render(year,out):
         else:
             row=add_row(t)
             fill(row.cells[1].merge(row.cells[3]),[CLOSED[week]])
-        nrows=sum(map(len,sessions)) or 1
-        merged=t.cell(1,0)
-        if nrows>1: merged=merged.merge(t.cell(nrows,0))
+        nrows=len(t.rows)-first
+        merged=t.cell(first,0)
+        if nrows>1: merged=merged.merge(t.cell(first+nrows-1,0))
         fill(merged,[f"{week:02d}",f"Group A: {a}",f"Group B: {b}"],bold=True,center=True,shade="EAF1E3")
         counts.append(nrows)
-        # Separator between independently editable week groups.
-        p=doc.add_paragraph()
-        p.paragraph_format.space_after=Pt(2);p.paragraph_format.space_before=Pt(0)
-        p.paragraph_format.line_spacing=Pt(3)
     name=f"RPT_English_SK_2027_Year_{year}_A_B"
     word=out/(name+".docx")
     doc.save(word)
     check=Document(word)
-    assert len(check.tables)==45
+    assert len(check.tables)==2
+    t=check.tables[1]
+    assert t.rows[0]._tr.get_or_add_trPr().find(qn("w:tblHeader")) is not None
+    assert len(t.rows)==sum(counts)+1
     seen=[]
-    for t,n in zip(check.tables[1:],counts,strict=True):
-        assert len(t.rows)==n+1
+    first=1
+    for n in counts:
         if n>1:
-            assert all(t.cell(1,0)._tc is t.cell(i,0)._tc for i in range(1,n+1))
-        for row in t.rows[1:]:
+            assert all(t.cell(first,0)._tc is t.cell(i,0)._tc for i in range(first,first+n))
+        for row in t.rows[first:first+n]:
+            assert row._tr.get_or_add_trPr().find(qn("w:cantSplit")) is not None
             found=re.search(r"LESSON:\s*(\d+)",row.cells[1].text)
             if found:
                 lesson=int(found[1]);seen.append(lesson)
                 assert all(line in row.cells[2].text for line in rows[lesson][1])
                 assert all(line in row.cells[3].text for line in rows[lesson][2])
+        first+=n
     assert seen==list(range(1,161))
     with tempfile.TemporaryDirectory() as temp:
         folder=Path(temp)
@@ -200,8 +201,12 @@ def render(year,out):
             for p in result:
                 assert abs(p.rect.width-841.89)<2 and abs(p.rect.height-595.28)<2
                 assert p.get_text().strip()
+                if p.number > 0:
+                    page_text=normalize(p.get_text())
+                    assert all(normalize(h) in page_text for h in HEADERS), (year,p.number+1,"Missing repeated table headings")
             pages=len(result)
     return {"year":year,"lessons":160,"sessions":142,"merged_week_groups":44,"pdf_pages":pages,
+            "continuous_table":True,"repeated_headers_every_body_page":True,
             "source_sha256":digest,"word_sha256":sha256(word.read_bytes()).hexdigest(),
             "pdf_sha256":sha256(target.read_bytes()).hexdigest(),
             "status":"PRIVATE_QA_NOT_RELEASED","word_cover_visual_parity_pending":True}
