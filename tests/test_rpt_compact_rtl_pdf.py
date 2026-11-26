@@ -7,10 +7,10 @@ from web.rpt_2027_all_http import ROOT,create_all_rpt_blueprint
 from web.rpt_compact_pdf import read_rtl,RTL_PINS
 from scripts.build_web_rpt_weekly_suggestions import read_weeks,SUBJECTS
 class CompactRTLTest(unittest.TestCase):
-    def test_nine_routes_and_covers(self):
+    def test_ten_routes_and_covers(self):
         app=Flask(__name__);app.register_blueprint(create_all_rpt_blueprint());client=app.test_client()
         m=json.loads((ROOT/"compact_rtl_pdf_2027"/"manifest.json").read_text())
-        self.assertEqual(m["count"],9)
+        self.assertEqual(m["count"],10)
         self.assertEqual(set(m["files"]),set(RTL_PINS))
         for key,e in m["files"].items():
             subject,y=key.split(":");year=int(y)
@@ -37,10 +37,6 @@ class CompactRTLTest(unittest.TestCase):
                         self.assertEqual(res.data,raw,key)
                         self.assertEqual(res.headers["X-RPT-Source-SHA256"],digest)
                         self.assertEqual(res.headers["X-RPT-Personalization-Allowed"],"1" if paid else "0")
-        with patch.dict("os.environ",{"CIKGULAJU_RPT_COMPACT_PDF_BATCH":"1"}),patch("web.rpt_2027_all_http._account",return_value=({"telegram_user_id":9},None)):
-            source=ROOT/"web_2027_pdfs"/"bahasa_arab"/"tahun_2.pdf"
-            self.assertIsNone(read_rtl("bahasa_arab",2,source.read_bytes(),root=ROOT))
-            self.assertEqual(client.get("/api/rpt/2027/all/bahasa_arab/2.pdf").data,source.read_bytes())
     def test_browser_cover(self):
         script=Path(__file__).resolve().parents[1]/"web_v1_static_preview"/"rpt-personalize.js"
         lock=ROOT/"web_2027_pdfs"/"original_cover_layout_verified.json"

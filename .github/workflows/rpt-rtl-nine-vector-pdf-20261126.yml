@@ -1,4 +1,4 @@
-name: Verify nine RTL original vector PDF downloads
+name: Verify ten RTL original vector PDF downloads
 on:
   pull_request:
     branches: [production/cikgulaju-web-20261105]

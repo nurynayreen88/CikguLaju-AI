@@ -147,6 +147,7 @@ def read_dlp(subject,year,original,*,root):
         return None
 
 RTL_PINS={
+    "bahasa_arab:2": "ed5699127c118f28fe86cff6edef6e8ee85e7d787e5ef753cb251a771b4ea4b7",
     "pendidikan_islam:2": "79129ba5613f672cb105fb2621252283dfa7bb76ccc67cee0842d0339e50c92e",
     "pendidikan_islam:3": "134253d2bc89c1736347df70e3e2929ab94e537e14869c69c0bf559fae7e5a33",
     "pendidikan_islam:4": "e77bfd0654b5bf687bbb74fbc5c1d22a3c088adb735e0b6e62e001899a941e74",
@@ -169,7 +170,7 @@ def read_rtl(subject,year,original,*,root):
         base=Path(root)/"compact_rtl_pdf_2027"
         manifest=json.loads((base/"manifest.json").read_text("utf8"))
         entries=manifest["files"]
-        if manifest["version"]!=1 or manifest["count"]!=9 or manifest["status"]!="LAYOUT_QA_CANDIDATE" or set(entries)!=set(RTL_PINS):
+        if manifest["version"]!=1 or manifest["count"]!=10 or manifest["status"]!="LAYOUT_QA_CANDIDATE" or set(entries)!=set(RTL_PINS):
             return None
         e=entries[key]
         relative=f"{subject}/tahun_{year}.pdf"
