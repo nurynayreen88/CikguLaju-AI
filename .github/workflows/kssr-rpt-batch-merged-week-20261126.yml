@@ -6,6 +6,7 @@ on:
       - 'tools/build_kssr_rpt_merged_week_batch_20261126.py'
       - 'web/rpt_native_word_cover.py'
       - 'requirements-rpt-web.txt'
+      - 'requirements-rph-word-bundle.txt'
       - 'web/rpt_native_word_batch.py'
       - 'web/rpt_2027_all_http.py'
       - 'tests/test_rpt_native_word_batch.py'
@@ -29,7 +30,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements-rpt-web.txt 'flask==3.1.3'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'gunicorn==23.0.0'
       - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
       - run: python -m tools.build_kssr_rpt_merged_week_batch_20261126 --subject ${{ matrix.subject }} --out "$RUNNER_TEMP/rpt-private"
       - if: always()
@@ -41,7 +42,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements-rpt-web.txt 'flask==3.1.3'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'gunicorn==23.0.0'
       - run: python -m unittest discover -s tests -p 'test_rpt_native_word_cover.py' -v
-      - run: pip install requests reportlab pypdf fonttools
       - run: python -m unittest discover -s tests -p 'test_rpt_native_word_batch.py' -v
