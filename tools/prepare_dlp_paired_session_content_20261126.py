@@ -18,6 +18,7 @@ def label_phase(s):
 def prepare(crosswalk,drafts):
     by_key={p["key"]:p for p in crosswalk["plans"]};output=[]
     boundary_bank=json.loads(Path(__file__).with_name("dlp_science_continuation_open_exit_20261126.json").read_text())["sets"]
+    boundary_bank.update(json.loads(Path(__file__).with_name("dlp_mathematics_continuation_open_exit_20261126.json").read_text())["sets"])
     for dataset in drafts["sets"]:
         key=dataset["key"];original=by_key[key]
         lookup={};parts_by_slot={}
