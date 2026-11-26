@@ -14,7 +14,7 @@ from web.kp2027_year1_rpt_personalize import _identity_fields
 import fitz
 
 def selected_layout(lock,key,digest):
-    candidates=[lock,lock.get("english_integrated",{}),
+    candidates=[lock,lock.get("full_standards_dlp_pdf_covers",{}),lock.get("english_integrated",{}),
                 lock.get("aligned_rpt_covers",{}).get(key,{}),
                 lock.get("science_year6_covers",{}).get(key,{}),
                 lock.get("dlp_year"+key.rsplit(":",1)[-1],{}) if "_dlp:" in key else {}]

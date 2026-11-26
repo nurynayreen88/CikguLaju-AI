@@ -1,0 +1,30 @@
+name: Verify ten revised DLP download routes and personalized covers
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/full_standards_dlp_pdf_2027/**'
+      - 'rpt_2027/dlp/standard_descriptions/**'
+      - 'tools/build_rpt_dlp_full_standards_20261126.py'
+      - 'web/rpt_compact_pdf.py'
+      - 'web/rpt_native_word_batch.py'
+      - 'web/rpt_native_word_cover.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'web_v1_static_preview/rpt-personalize.js'
+      - 'tests/test_rpt_full_standards_dlp.py'
+      - '.github/workflows/rpt-dlp-full-standards-build-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: python -m unittest discover -s tests -p 'test_rpt_full_standards_dlp.py' -v
