@@ -792,6 +792,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="today" aria-controls="view-today"><span aria-hidden="true">⚡</span><span class="sidebar-tab-label">RPH Pantas <small>Hari Ini &amp; Minggu Ini</small></span></button>
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
+    <button type="button" class="sidebar-tab" data-web-view="curriculum-docs" aria-controls="view-curriculum-docs"><span aria-hidden="true">📚</span> Dokumen Kurikulum</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
     <details class="sidebar-more" id="sidebar-more">
       <summary>Menu lain</summary>
@@ -1089,6 +1090,35 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <ul id="special-materials-list"></ul>
   <p class="notice" id="special-materials-note" role="status"></p>
  </section>
+</section>
+<section id="view-curriculum-docs" class="app-view" aria-labelledby="curriculum-docs-heading" hidden>
+ <h2 id="curriculum-docs-heading" tabindex="-1">Dokumen Kurikulum</h2>
+ <p class="notice">Rujukan kurikulum untuk semua pengguna log masuk, tanpa penggunaan kuota RPH. Pilih dokumen yang sepadan dengan kurikulum, tahun dan aliran sekolah. Pautan membuka sumber asal; akses fail tertakluk pada perkongsian pemilik sumber.</p>
+ <div class="rpt-selectors">
+  <div><label for="curriculum-docs-type">Kurikulum</label><select id="curriculum-docs-type"><option value="">Pilih kurikulum</option><option value="kp2027">KP2027</option><option value="kssr">KSSR (Semakan 2017)</option><option value="pk">Pendidikan Khas</option></select></div>
+ </div>
+ <div id="curriculum-docs-kp2027" hidden>
+  <h3>Dokumen Kurikulum KP2027</h3>
+  <p>Rujukan umum Kementerian Pendidikan Malaysia. Dokumen mata pelajaran Tahun 1 akan disenaraikan berasingan selepas sumber asal dikenal pasti.</p>
+  <p><a href="https://www.moe.gov.my/kurikulum-persekolahan-2027" target="_blank" rel="noopener noreferrer">Buka rujukan umum KP2027 — Portal KPM</a></p>
+ </div>
+ <div id="curriculum-docs-kssr" hidden>
+  <h3>DSKP KSSR (Semakan 2017)</h3>
+  <p>Rujukan mengikut subjek dan aliran. Direktori PPD menyenaraikan Tahun 1–6; pilih tahun dan aliran yang betul di sumber asal.</p>
+  <p><a href="https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/dskp" target="_blank" rel="noopener noreferrer">Direktori DSKP Matematik dan Sains — SK, SJKC, SJKT dan DLP (PPD Batu Pahat)</a></p>
+  <h4>Matematik SJKC — pautan dokumen individu</h4>
+  <ul>
+   <li><a href="https://drive.google.com/file/d/1auJsWeEN5NIgV9QF2CVEFtiRzQHQC3ma/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 4</a></li>
+   <li><a href="https://drive.google.com/file/d/1XM9HToqoZ7ID0cTPcyhlLlgAicc9UUvm/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 5</a></li>
+   <li><a href="https://drive.google.com/file/d/17WnQDqmdAEfG8gN8Ln4ieCNRBiye7t84/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 6</a></li>
+  </ul>
+  <p class="notice">Dokumen Penjajaran Kurikulum (DPK) dan DSKP subjek lain akan disenaraikan selepas pautan khusus disahkan.</p>
+ </div>
+ <div id="curriculum-docs-pk" hidden>
+  <h3>Dokumen Kurikulum Pendidikan Khas</h3>
+  <p>Rujukan umum Bahagian Pendidikan Khas. Dokumen mata pelajaran mengikut aliran dan tahun belum disenaraikan.</p>
+  <p><a href="https://sites.google.com/moe-dl.edu.my/delimabpkhas/bahan-pengajaran-dan-pembelajaran" target="_blank" rel="noopener noreferrer">Buka sumber rujukan Bahagian Pendidikan Khas</a></p>
+ </div>
 </section>
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading">
@@ -1464,7 +1494,13 @@ function updateRphTrialFromDenial(data){
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
 const sidebarMore=document.getElementById("sidebar-more");
-const webViews=new Map([["today","view-today"],["rph","view-rph"],["worksheet","view-worksheet"],["bbm","view-bbm"],["uasa","view-uasa"],["pbd","view-pbd"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["guide","view-guide"]]);
+const curriculumDocsType=document.getElementById("curriculum-docs-type");
+curriculumDocsType.addEventListener("change",()=>{
+ for(const type of ["kp2027","kssr","pk"]){
+  document.getElementById("curriculum-docs-"+type).hidden=curriculumDocsType.value!==type;
+ }
+});
+const webViews=new Map([["today","view-today"],["rph","view-rph"],["worksheet","view-worksheet"],["bbm","view-bbm"],["uasa","view-uasa"],["pbd","view-pbd"],["special","view-special"],["rpt","view-rpt"],["curriculum-docs","view-curriculum-docs"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["guide","view-guide"]]);
 /* Only the original curriculum dropdowns and material actions are moved
  * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
  * or renders inside RPH Hari Ini. Event listeners and native APIs are reused.
