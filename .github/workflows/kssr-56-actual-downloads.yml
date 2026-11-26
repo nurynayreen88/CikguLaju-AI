@@ -1,0 +1,19 @@
+name: All 56 SK RPT actual protected download checks
+on:
+  pull_request:
+    paths:
+      - 'tests/test_rpt_all_56_sk_downloads.py'
+      - '.github/workflows/kssr-56-actual-downloads.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  all:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pymupdf python-docx pillow flask pypdf docxcompose
+      - run: python -m unittest discover -s tests -p test_rpt_all_56_sk_downloads.py -v
