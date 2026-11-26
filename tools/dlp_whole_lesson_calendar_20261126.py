@@ -11,6 +11,10 @@ def schedule(subject,year,rows,root):
             from tools.dlp_math2_session_calendar_20261126 import candidate_schedule
             scheduled,loads,_=candidate_schedule(subject,year,rows,root)
             return scheduled,loads
+    if subject=="science_dlp" and year in (4,5) and manifest.is_file():
+        if json.loads(manifest.read_text()).get("session_first_by_set",{}).get(f"{subject}:{year}")=="20261126":
+            from tools.dlp_science_y45_session_calendar_20261126 import schedule as fixed_science
+            return fixed_science(subject,year,rows,root)
     calendar=json.loads((Path(root)/"pendidikan_moral/induk_minggu_2027_ab.json").read_text())["weeks"]
     weeks=[(n,a,b) for n,(a,b) in enumerate(zip(calendar["A"],calendar["B"],strict=True),1)
            if n<=38 and n not in (6,18,19)]

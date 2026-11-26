@@ -41,7 +41,7 @@ def published_weeks(code,year):
         matching=[n for n,window in enumerate(dates,1) if all(a<=start<=end<=b for (start,end),(a,b) in zip(ranges,window))]
         assert len(matching)==1,(code,year,ranges)
         if c[1][0]=="Reinforcement / PBD follow-up":
-            assert (code,year)==("MATH_DLP",2)
+            assert (code,year) in (("MATH_DLP",2),("SCIENCE_DLP",4))
             reserve[matching[0]]+=1
             weeks[matching[0]]  # Reserve only: never invent a numbered RPH ID.
             continue
