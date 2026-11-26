@@ -1,0 +1,26 @@
+name: RPT SK compact batch and original cover private QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/build_sk_rpt_compact_batch_20261126.py'
+      - 'web/rpt_original_cover_word.py'
+      - '.github/workflows/rpt-sk-compact-batch-private-qa.yml'
+permissions:
+  contents: read
+jobs:
+  private-qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx pymupdf
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+      - run: python -m tools.build_sk_rpt_compact_batch_20261126 --out "$RUNNER_TEMP/rpt-private-qa"
+      - if: always()
+        run: rm -rf "$RUNNER_TEMP/rpt-private-qa"
