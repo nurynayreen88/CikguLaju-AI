@@ -460,6 +460,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return error
         if subject not in kp_rpt.SUBJECTS or group not in kp_rpt.GROUPS or fmt not in kp_rpt.FORMATS:
             return jsonify({"error": "Pilihan RPT KP2027 tidak sah."}), 404
+        if fmt == "docx" and not _has_paid_access(account):
+            return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
         try:
             payload, filename, digest = kp_rpt.document(subject, group, fmt)
         except kp_rpt.BundleUnavailable:
