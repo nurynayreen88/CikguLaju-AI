@@ -6,72 +6,72 @@
     "mathematics_dlp:2": {
       "path": "mathematics_dlp/tahun_2.pdf",
       "source_sha256": "d66bf14378e2ceb00c12dbd3fd66ac19eb18d7ccc8437eda94e2c6db6b5441aa",
-      "sha256": "4728654ad98f90c1012fc29847cdc638be91ec4b274bfd4d06035861e0e6ad53",
-      "bytes": 154013,
-      "pages": 12
+      "sha256": "0fd13cf20577f9dc5e6a492ae72d4aceb8482069065b9689c5aee8aae7fdaad4",
+      "bytes": 165763,
+      "pages": 21
     },
     "science_dlp:2": {
       "path": "science_dlp/tahun_2.pdf",
       "source_sha256": "c6d84f552078c1c1949e1e87c9a2329af64725c3b9d4ef5c683d8fc6a7c89a83",
-      "sha256": "b7b3fc8cd3910a7ed1c446683231663749a5aad40c0e3a65adfed1df03ba0a05",
-      "bytes": 141150,
-      "pages": 9
+      "sha256": "009fec865bd7c80e80616f73241a92d280c09de2d5c101db6fb86b0883a4e91f",
+      "bytes": 147882,
+      "pages": 14
     },
     "mathematics_dlp:3": {
       "path": "mathematics_dlp/tahun_3.pdf",
       "source_sha256": "0580026d81648f07283052e1f11c83eeecd50c6f552ab9a0d9a6535adfa7df09",
-      "sha256": "98dcdd1d0f0b3b2616ab2278783e3a1e248b4ac27dd83d7eeff74c95fb49ba0d",
-      "bytes": 150518,
-      "pages": 12
+      "sha256": "d54606633f102b40a2ab720531ebf6a1c59241a0950e5401296bcf635baa2302",
+      "bytes": 162685,
+      "pages": 21
     },
     "science_dlp:3": {
       "path": "science_dlp/tahun_3.pdf",
       "source_sha256": "8c518d0b0be79ae51c656e254e6588e14e01f7ace99f622449781cb58d59d7ed",
-      "sha256": "94aebf4d4b95c1e25586257ee98681e568c723f14a147e94868e0637e513e08d",
-      "bytes": 132873,
-      "pages": 7
+      "sha256": "ee7d307b7a59e5b6da0f5a782adc1245dfc9b83ea33204465e3015eb58f6be65",
+      "bytes": 138434,
+      "pages": 11
     },
     "mathematics_dlp:4": {
       "path": "mathematics_dlp/tahun_4.pdf",
       "source_sha256": "6f256b646bd558dccacea23c13e4283bb563e0949bdf937b2ddbd35fc14448d1",
-      "sha256": "151a5c423b36d5abc7327893436e26b6f3308f017ad528549aa8478deac36ea8",
-      "bytes": 143199,
-      "pages": 10
+      "sha256": "cd752d0e9e6e814c943ae17fd453c20dd203dab3ecc86f90f77b41783b1121a4",
+      "bytes": 153577,
+      "pages": 18
     },
     "science_dlp:4": {
       "path": "science_dlp/tahun_4.pdf",
       "source_sha256": "eff2cd8354c00aae176b069dc19aacbdcfb81b2ac84527b3c3c6c015ebdd2413",
-      "sha256": "a66dfe9765dfa39cf7c15d9d874bd012e3713c360c848ef35181cb3e9fbfe24a",
-      "bytes": 141091,
-      "pages": 10
+      "sha256": "0adf2b4f0ae830e99a55fcc6a3195fc674f162828765603272569a24ceeb9d72",
+      "bytes": 147806,
+      "pages": 15
     },
     "mathematics_dlp:5": {
       "path": "mathematics_dlp/tahun_5.pdf",
       "source_sha256": "4dd0f9109c0a45e0cff2586e8342a16282a88f25f1b8e498fa27bbf04be0fb39",
-      "sha256": "4aa9f42f9c94c7c5d5b04f10963cf22028490ef05b43fe93c5363139a52ccab9",
-      "bytes": 140396,
-      "pages": 10
+      "sha256": "fd98076b9b2e01f3b12a06b0765a169108259e24856292fa11569180e23507dd",
+      "bytes": 147679,
+      "pages": 15
     },
     "science_dlp:5": {
       "path": "science_dlp/tahun_5.pdf",
       "source_sha256": "8eee415688d9572b6c02046e3fc1bef5d0fedeea11871a52b9d39d01600601b2",
-      "sha256": "5b700467427703124289b5f4a30386022c4076b5f2e0139e16211189657d10d9",
-      "bytes": 143774,
-      "pages": 11
+      "sha256": "a6f1b08abef48e84fced8f611296e648a302950bf0842bc09731f0e4655e7d9a",
+      "bytes": 153310,
+      "pages": 18
     },
     "mathematics_dlp:6": {
       "path": "mathematics_dlp/tahun_6.pdf",
       "source_sha256": "e90acb6896ce438d619b9d159081ee0ea7f39d27f62dfbd5a41d648bf038d488",
-      "sha256": "f94940b8422e27c6be1274a5afa4cac74b938d3ab09212de9042cbf2e49173d4",
-      "bytes": 132146,
-      "pages": 8
+      "sha256": "da280d99484199cec67166a680948695d722cecea0e74f9054d0def839f692a9",
+      "bytes": 133337,
+      "pages": 9
     },
     "science_dlp:6": {
       "path": "science_dlp/tahun_6.pdf",
       "source_sha256": "991465fcfacc1b1925f9ded6cf12b8da7a9ac220c9321ef4011537900bdd97db",
-      "sha256": "835ec89303d0b1f2c68d1412a47403c069321cdf32584ab6bdeaa56922ee86ac",
-      "bytes": 141395,
-      "pages": 10
+      "sha256": "27f4ac3133a3830712c36c3e35deced594b484f9d3d553f0ea8c0416eb451837",
+      "bytes": 150766,
+      "pages": 17
     }
   }
 }
