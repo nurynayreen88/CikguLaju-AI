@@ -639,7 +639,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
             digest=hashlib.sha256(content).hexdigest()
             compact=compact_pdf.read_approved(subject,year,content,root=root) if math_sk or approved_sains is not None else None
             if subject in DLP_SUBJECTS:
-                compact=compact_pdf.read_dlp(subject,year,content,root=root)
+                compact=compact_pdf.read_full_standards_dlp(subject,year,content,root=root) or compact_pdf.read_dlp(subject,year,content,root=root)
             if compact is not None:
                 content,digest=compact
             response = send_file(BytesIO(content), mimetype="application/pdf", as_attachment=True,
