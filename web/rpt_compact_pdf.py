@@ -188,6 +188,27 @@ def read_rtl(subject,year,original,*,root):
     except (OSError,ValueError,KeyError,TypeError,AttributeError):
         return None
 
+def dlp_whole_week_release(root):
+    """Only use the new calendar after a complete verified manifest is installed."""
+    try:
+        from tools.build_rpt_dlp_native_20261126 import PINS
+        base=Path(root)/"full_standards_dlp_pdf_2027"
+        m=json.loads((base/"manifest.json").read_text("utf8"))
+        if m.get("schedule")!="whole_lesson_20261126" or set(m["files"])!=set(PINS):
+            return False
+        layout=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))["full_standards_dlp_pdf_covers"]
+        for key,digest in PINS.items():
+            subject,year=key.split(":")
+            entry=m["files"][key];relative=f"{subject}/tahun_{year}.pdf"
+            if entry["path"]!=relative or entry["source_sha256"]!=digest or layout["source_sha256_by_subject_year"].get(key)!=entry["sha256"]:
+                return False
+            file=base/relative
+            if file.is_symlink() or file.stat().st_size!=entry["bytes"] or hashlib.sha256(file.read_bytes()).hexdigest()!=entry["sha256"]:
+                return False
+        return True
+    except (OSError,ValueError,KeyError,TypeError,ImportError):
+        return False
+
 def read_full_standards_dlp(subject,year,original,*,root):
     # New revision is opt-in only via the complete, checksum-locked manifest.
     if os.environ.get("CIKGULAJU_RPT_FULL_STANDARDS_DLP")!="1":
