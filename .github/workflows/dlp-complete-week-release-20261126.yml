@@ -1,0 +1,38 @@
+name: Prepare complete DLP weekly release
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/prepare_dlp_whole_week_release_20261126.py'
+      - 'tools/dlp_whole_lesson_calendar_20261126.py'
+      - '.github/workflows/dlp-complete-week-release-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  prepare:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'release/dlp-whole-lesson-calendar-20261126'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'requests>=2'
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libreoffice-writer fonts-liberation2
+      - run: python -m tools.prepare_dlp_whole_week_release_20261126
+      - run: CIKGULAJU_DLP_FLEXIBLE_TIME=1 python -m unittest discover -s tests -p 'test_rpt_full_standards_dlp.py' -v
+      - run: python -m unittest discover -s tests -p 'test_dlp_rpt_weekly_suggestions.py' -v
+      - name: Commit only verified generated assets to review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rpt_2027/full_standards_dlp_pdf_2027/ rpt_2027/web_2027_pdfs/original_cover_layout_verified.json
+          git diff --cached --stat
+          git commit -m 'Generate verified complete 10-set DLP weekly release'
+          git push origin HEAD:refs/heads/release/dlp-whole-lesson-calendar-20261126
