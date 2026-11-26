@@ -5,6 +5,12 @@ import json,re
 from pathlib import Path
 
 def schedule(subject,year,rows,root):
+    manifest=Path(root)/"full_standards_dlp_pdf_2027/manifest.json"
+    if (subject,year)==("mathematics_dlp",2) and manifest.is_file():
+        if json.loads(manifest.read_text()).get("session_first_by_set",{}).get("mathematics_dlp:2")=="20261126":
+            from tools.dlp_math2_session_calendar_20261126 import candidate_schedule
+            scheduled,loads,_=candidate_schedule(subject,year,rows,root)
+            return scheduled,loads
     calendar=json.loads((Path(root)/"pendidikan_moral/induk_minggu_2027_ab.json").read_text())["weeks"]
     weeks=[(n,a,b) for n,(a,b) in enumerate(zip(calendar["A"],calendar["B"],strict=True),1)
            if n<=38 and n not in (6,18,19)]
