@@ -1,0 +1,90 @@
+{
+  "qa_run": 45824945883,
+  "source_sha256": "28cbbdde4642b6be8f261f2a2c1820872027f5e8b7a04f10a3de3110a04fc9f4",
+  "sets": {
+    "3": {
+      "files": {
+        "pdf": {
+          "path": "mathematics_dlp_y3.pdf",
+          "sha256": "1a9e9cbd783699a9a7d3c3e7ed5894ff57402adba1dfe3c294c9494848f292ab",
+          "bytes": 155097
+        },
+        "docx": {
+          "path": "mathematics_dlp_y3.docx",
+          "sha256": "44864278ec3f4eba4c4cc1ce7961f2c323aca5403dad9b38d3a2b25e65d44b70",
+          "bytes": 62421
+        },
+        "index": {
+          "path": "mathematics_dlp_y3_index.json",
+          "sha256": "047a2b382b355782df0b7ee1af9ad4bab31030dfd88585fb1c5fea559b00bc09",
+          "bytes": 75525
+        }
+      },
+      "sessions": 101,
+      "enabled": false
+    },
+    "4": {
+      "files": {
+        "pdf": {
+          "path": "mathematics_dlp_y4.pdf",
+          "sha256": "5009d97ca75f5b07a102341cfb0f39b2bf727f12715cdd7583499417f22c6df4",
+          "bytes": 151353
+        },
+        "docx": {
+          "path": "mathematics_dlp_y4.docx",
+          "sha256": "3d56aa84ccf521b152f747294cf1897e5bfd6bc68b27949671156a0230cf1415",
+          "bytes": 62317
+        },
+        "index": {
+          "path": "mathematics_dlp_y4_index.json",
+          "sha256": "9b182c2049539f5d90b3da09fad7aeb6c4af86f4615aaf7fed585158217a36a3",
+          "bytes": 75651
+        }
+      },
+      "sessions": 101,
+      "enabled": false
+    },
+    "5": {
+      "files": {
+        "pdf": {
+          "path": "mathematics_dlp_y5.pdf",
+          "sha256": "6b1f7d4b001402a5c06b2aed777cb307cbe6df01ace99a012d3bd8e922eac5fa",
+          "bytes": 156367
+        },
+        "docx": {
+          "path": "mathematics_dlp_y5.docx",
+          "sha256": "1be2457baaee6b30c12e49616fb485f0eebd2b08158ca1d52d0917db17099a20",
+          "bytes": 62207
+        },
+        "index": {
+          "path": "mathematics_dlp_y5_index.json",
+          "sha256": "d5d2d04b9eaa4412236a872369feb5dce345e1685bb2b1025f5b6e07921a151a",
+          "bytes": 75107
+        }
+      },
+      "sessions": 101,
+      "enabled": false
+    },
+    "6": {
+      "files": {
+        "pdf": {
+          "path": "mathematics_dlp_y6.pdf",
+          "sha256": "5e0d02f5e845f7a22c899158ffcdff3c27ccf2d868c38a9d81d8fa554222ce80",
+          "bytes": 151621
+        },
+        "docx": {
+          "path": "mathematics_dlp_y6.docx",
+          "sha256": "1c55a0432b748e057bbdc3fc8b688d453c9c22130de0c6661fdd5d01665598aa",
+          "bytes": 62831
+        },
+        "index": {
+          "path": "mathematics_dlp_y6_index.json",
+          "sha256": "a3e60619af967860dd14416081b2f6608f9db4944aa8b4ebdabfc68eafdbf537",
+          "bytes": 74487
+        }
+      },
+      "sessions": 101,
+      "enabled": false
+    }
+  }
+}
