@@ -109,6 +109,26 @@ def prepare(crosswalk,drafts):
                 evidence=list(objectives)
                 assert sum(session_minutes)==d["slot_minutes"]
                 for activity,minutes in zip(actions,session_minutes,strict=True):activity["suggested_minutes"]=minutes
+            # Science Y2: tighten the scope of actual source tasks, not just
+            # the numerical LS mapping. Retain source labels and boundaries.
+            if key=="science_dlp:2" and d["session"] in (12,24,25,33,39,46,47):
+                corrections={
+                    12:(("L11","Main activity","Model measuring hand length from the wrist line to the longest fingertip. Give pairs dated records of two same-age children at two ages and their matching hand outlines.","Measure the outlines, compare the recorded changes in height of both children and conclude that individuals grow differently."),),
+                    24:(("L23","Main activity","Guide groups to observe real seeds and seedlings planted earlier. Demonstrate measuring from the support surface to the shoot tip; use the dated germination records and record today's height and leaf count.","Observe the real seeds and seedlings, measure and count leaves, record today's date and findings and compare them with the earlier germination records."),),
+                    25:(("L23","Practice and assessment","Return the dated observations of real plants, including germination and today's measurement. Ask each pupil to complete the record and describe the changes.","Record the dates, heights and leaf counts of the observed plants and describe their changes since germination."),),
+                    33:(("L31","Main activity","Model a simple shadow guessing game. Give pairs pre-cut card shapes, a torch and a screen; ask them to design two rounds, agree a scoring rule, test and improve the game.","Create a two-round shadow guessing game, agree a scoring rule, play with a partner and improve one unclear silhouette."),),
+                    39:(("L37","Main activity","Use a dry-cell circuit with the switch open; remove the switch and demonstrate clipping each of four samples across its position. Supervise each test and reconnect the switch afterward.","Replace the switch with each sample in turn, record whether the bulb lights and restore the original circuit after testing."),),
+                    46:(("L43","Main activity","Prepare safe warm and room-temperature water with equal volumes and equal sugar masses. Keep grain size and stirring constant, time both trials and compare the results.","Record the dissolving times and use the results to explain which water temperature makes sugar dissolve faster."),),
+                    47:(("L44","Main activity","Keep water temperature, volume and salt mass the same. Stir one cup steadily and leave the other still. Ask groups to observe at the same intervals and compare the recorded outcomes.","Record the visible grains at the same times and explain from the results whether stirring makes salt dissolve faster."),),
+                }
+                for label,phase,new_teacher,new_pupils in corrections[d["session"]]:
+                    matching=[x for x in actions if x["source_label"]==label and x["phase"]==phase]
+                    assert len(matching)==1,(key,d["session"],label,phase)
+                    activity=matching[0];old=clean(activity["pupils"])
+                    activity.update(teacher=new_teacher,pupils=new_pupils)
+                    objectives=[new_pupils if x==old else x for x in objectives]
+                    evidence=[new_pupils if x==old else x for x in evidence]
+                review.append("SCIENCE_Y2_LS_SCOPE_REVISED")
             # Candidate pacing only: preserve all tasks, allocate whole minutes,
             # and explicitly retain review flags for real classroom feasibility.
             # Existing source durations are weights, not a mandate to overrun.
