@@ -1,0 +1,31 @@
+name: SK RPT batch continuous layout and three-field cover private QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/qa_rpt_continuous_sk_batch_20261126.py'
+      - '.github/workflows/sk-rpt-batch-continuous-private-qa.yml'
+permissions:
+  contents: read
+jobs:
+  generate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        subject: [bahasa_melayu, pendidikan_moral, pjpk, psv, muzik, rbt, sejarah, matematik, sains]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx pymupdf pillow
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends libreoffice-writer fonts-liberation
+      - name: Generate native editable Word and PDF, verify profile fields and source rows
+        run: python -m tools.qa_rpt_continuous_sk_batch_20261126 --subject ${{ matrix.subject }} --out "$RUNNER_TEMP/rpt-private"
+      - name: Remove private premium output
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/rpt-private"
