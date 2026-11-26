@@ -36,7 +36,7 @@ jobs:
                   assert len(d)==e["pages"]
                   for p in list(d)[1:-1]:
                       t=p.get_text()
-                      assert "Content Standard (CS)" in t and "Learning Standard (LS)" in t and re.search(r"Week \d+",t),key
+                      assert re.search(r"Content Standard\s*\(CS\)",t) and re.search(r"Learning Standard\s*\(LS\)",t) and re.search(r"Week \d+",t),key
                       assert "YEARLY TEACHING PLAN 2027 |" not in t
                   assert "Main school breaks" in d[-1].get_text()
               print(key,"PASS")

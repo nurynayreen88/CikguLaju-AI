@@ -1,0 +1,43 @@
+name: Verify fixed DLP table release and cover checksums
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/full_standards_dlp_pdf_2027/**'
+      - 'tools/build_rpt_dlp_full_standards_20261126.py'
+      - '.github/workflows/rpt-dlp-fixed-table-release-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: python -m unittest discover -s tests -p 'test_rpt_full_standards_dlp.py' -v
+      - name: Verify published table headings and numbered weeks
+        run: |
+          python - <<'PY'
+          import fitz,re,json
+          from pathlib import Path
+          from hashlib import sha256
+          root=Path("rpt_2027/full_standards_dlp_pdf_2027")
+          m=json.loads((root/"manifest.json").read_text())
+          assert len(m["files"])==10
+          for key,e in m["files"].items():
+              path=root/e["path"]
+              assert sha256(path.read_bytes()).hexdigest()==e["sha256"]
+              with fitz.open(path) as d:
+                  assert len(d)==e["pages"]
+                  for p in list(d)[1:-1]:
+                      t=p.get_text()
+                      assert re.search(r"Content Standard\s*\(CS\)",t) and re.search(r"Learning Standard\s*\(LS\)",t) and re.search(r"Week \d+",t),key
+                      assert "YEARLY TEACHING PLAN 2027 |" not in t
+                  assert "Main school breaks" in d[-1].get_text()
+              print(key,"PASS")
+          PY

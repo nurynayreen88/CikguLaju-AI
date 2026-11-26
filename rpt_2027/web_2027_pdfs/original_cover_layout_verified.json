@@ -2213,16 +2213,16 @@
     ],
     "status": "FULL_STANDARDS_DLP_RPT_PDF_COVER_VERIFIED",
     "source_sha256_by_subject_year": {
-      "mathematics_dlp:2": "f7213eb59cfcafdcde8a5ef23703374b56908aeb67c50addf8f9a1f0b9304de3",
-      "science_dlp:2": "6cff19beeae51186c842c9fad572425d0b142db8224a6ad06b8a36c9dfac4d9a",
-      "mathematics_dlp:3": "a5d4fa33c5fe615ea3d0861bc0fb804f54b5614c4c76cd153835459f99838769",
-      "science_dlp:3": "be0f4834490e54a637c0d277e50a5891fa681226109962f9e802d2788d20cffe",
-      "mathematics_dlp:4": "74fa6da279bb3333bdf030f322e41e732fb6776ec5b150d3b1606152f0142594",
-      "science_dlp:4": "0813f0a72ea35999fabc0e96755ba9d409ff0b6f9940afb268145d12cd24594e",
-      "mathematics_dlp:5": "15bd8b6b5d2b230644b5b6679b4fd152994b5280d7a1ed966423b07eb971b337",
-      "science_dlp:5": "35724c56995713b4f9b475bb6ad40b454669b897c542b8006148de2d59f9a862",
-      "mathematics_dlp:6": "c72e82b416dea0c37c618b6ce5443c5934c13d3fe810946250f425aec3491429",
-      "science_dlp:6": "fdfa19ac79cb78e2dc8ca3a2ad222232725db4d82f9216586296c7a0fad22497"
+      "mathematics_dlp:2": "4728654ad98f90c1012fc29847cdc638be91ec4b274bfd4d06035861e0e6ad53",
+      "science_dlp:2": "b7b3fc8cd3910a7ed1c446683231663749a5aad40c0e3a65adfed1df03ba0a05",
+      "mathematics_dlp:3": "98dcdd1d0f0b3b2616ab2278783e3a1e248b4ac27dd83d7eeff74c95fb49ba0d",
+      "science_dlp:3": "94aebf4d4b95c1e25586257ee98681e568c723f14a147e94868e0637e513e08d",
+      "mathematics_dlp:4": "151a5c423b36d5abc7327893436e26b6f3308f017ad528549aa8478deac36ea8",
+      "science_dlp:4": "a66dfe9765dfa39cf7c15d9d874bd012e3713c360c848ef35181cb3e9fbfe24a",
+      "mathematics_dlp:5": "4aa9f42f9c94c7c5d5b04f10963cf22028490ef05b43fe93c5363139a52ccab9",
+      "science_dlp:5": "5b700467427703124289b5f4a30386022c4076b5f2e0139e16211189657d10d9",
+      "mathematics_dlp:6": "f94940b8422e27c6be1274a5afa4cac74b938d3ab09212de9042cbf2e49173d4",
+      "science_dlp:6": "835ec89303d0b1f2c68d1412a47403c069321cdf32584ab6bdeaa56922ee86ac"
     }
   }
 }

@@ -41,7 +41,7 @@ jobs:
           pdf=fitz.open(next(folder.glob("*.pdf")))
           for page in list(pdf)[1:-1]:
               text=page.get_text()
-              assert "Content Standard (CS)" in text and "Learning Standard (LS)" in text,(page.number,text[:200])
+              assert re.search(r"Content Standard\s*\(CS\)",text) and re.search(r"Learning Standard\s*\(LS\)",text),(page.number,text[:200])
               assert "YEARLY TEACHING PLAN 2027 |" not in text
               assert "Group A and Group B | CikguLaju" not in text
               assert re.search(r"Week \d+",text),(page.number,text[:200])
