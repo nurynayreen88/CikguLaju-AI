@@ -155,7 +155,8 @@ def append_notes(doc,lines):
     begin=lines.index("Teaching allocation");cut=lines.index("Main school breaks")
     assert begin<cut
     heading=doc.add_heading("Teaching information and source references",level=1)
-    heading.paragraph_format.page_break_before=True
+    heading.paragraph_format.page_break_before=False
+    next_page_section(doc,heading._p)
     pending=[]
     def flush():
         if pending:
@@ -186,7 +187,7 @@ def append_notes(doc,lines):
         for j,(cell,v,w) in enumerate(zip(row.cells,holidays[i:i+3],(13.2,7,7))):
             cell.width=Cm(w);polished_cell(cell,[v],center=j>0)
     return lines[begin:cut]+lines[end:]+holidays[2:]
-from tools.rpt_physical_page_tables import split_week_tables
+from tools.rpt_physical_page_tables import split_week_tables,next_page_section
 
 def build_word(subject,year,root=ROOT):
     root=Path(root);key=f"{subject}:{year}"
@@ -288,6 +289,9 @@ def render(subject,year,out):
                 assert all(d["rect"].y1<=page.rect.height-39 for d in page.get_drawings()),(subject,year,page.number,"bottom margin")
             assert "Main school breaks" not in new[0].get_text()
             assert "Main school breaks" in new[-1].get_text()
+            assert new[-1].get_text().lstrip().startswith("Teaching information and source references"),(subject,year,"references must start their own page")
+            assert all("Teaching information and source references" not in p.get_text() for p in list(new)[1:-1])
+            assert all(d["rect"].y1<=new[-1].rect.height-39 for d in new[-1].get_drawings()),(subject,year,"appendix bottom margin")
             body="\n".join(p.get_text() for p in list(new)[1:])
             for val in notes:
                 assert re.sub(r"\s+","",val) in re.sub(r"\s+","",body),(subject,year,"appendix",val)
