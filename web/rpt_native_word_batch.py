@@ -180,14 +180,15 @@ def dlp_document(subject,year,account,config,*,root):
         raise ValueError("DLP RPT source changed")
     from tools.build_rpt_dlp_native_20261126 import build_word,PINS as dlp_pins
     from web.rpt_native_word_cover import personalized_word
-    from web.rpt_compact_pdf import read_full_standards_dlp
+    from web.rpt_compact_pdf import read_full_standards_dlp,dlp_whole_week_release
     from rpt_2027.dlp.documents import document_path
     original=document_path(subject,year,root=Path(root)/"dlp").read_bytes()
     key=f"{subject}:{year}"
     revised=read_full_standards_dlp(subject,year,original,root=root)
     if revised is not None:
         from tools.build_rpt_dlp_full_standards_20261126 import build_word as build_revised
-        blob,cover,_,_,_=build_revised(subject,year,root=root)
+        whole=dlp_whole_week_release(root)
+        blob,cover,_,_,_=build_revised(subject,year,root=root,whole_weeks=whole)
         pdf_bytes,_=revised
         lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
         # Reuse the exact released PDF cover pixels, including PDF font subset
@@ -207,7 +208,7 @@ def dlp_document(subject,year,account,config,*,root):
         doc.part.related_parts[rid]._blob=cover_png(pdf_bytes,lock,key)
         out=BytesIO();doc.save(out)
         result=personalized_word(out.getvalue(),pdf_bytes,lock,key,account,config)
-        if os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1":
+        if not whole and os.environ.get("CIKGULAJU_DLP_FLEXIBLE_TIME")=="1":
             from web.rpt_dlp_flexible_time import word_without_fixed_minutes
             result=word_without_fixed_minutes(result)
         return result,hashlib.sha256(result).hexdigest()
