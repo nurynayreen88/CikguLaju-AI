@@ -18,7 +18,7 @@ from tools.build_kssr_rpt_merged_week_batch_20261126 import norm
 from tools.rpt_dlp_compact_pagination_20261126 import measure_weeks,choose_sizes
 from tools.prepare_dlp_week_column_release_20261126 import verify_bottom
 
-def candidate_rows(subject,year):
+def candidate_rows(subject,year,paired=None):
     key=f"{subject}:{year}";p=plan(subject,year)
     bank=json.loads(Path(__file__).with_name("dlp_session_targeted_reinforcement_20261126.json").read_text())["sets"][key];used_bank=set()
     with fitz.open(document_path(subject,year,root=ROOT/"dlp")) as pdf:source=extract(pdf)
@@ -36,7 +36,9 @@ def candidate_rows(subject,year):
     def span(g):
         a,b=map(date.fromisoformat,(g["start"],g["end"]))
         return f"{a.day}-{b.day} {b:%b}" if a.month==b.month else f"{a.day} {a:%b}-{b.day} {b:%b}"
-    result=[];loads={};previous=None
+    result=[];loads={};previous=None;occurrence={}
+    paired_by_slot={s['session']:s for s in paired['sessions']} if paired else {}
+    if paired:assert paired['key']==key and len(paired_by_slot)==p['sessions']
     for w in p["weeks"]:
         n=w["week"];a,b=w["dates"]
         date_label=[f"Week {n:02d}","A "+span(a),"B "+span(b)]
@@ -59,7 +61,8 @@ def candidate_rows(subject,year):
                     label=part["source_id"];previous=label
                     c,links,field=lookup[label]
                     full=(part["from_minute"]==0 and part["to_minute"]==part["original_minutes"])
-                    role="" if full else f" (part {part['from_minute']//60+1}, continuation reference)"
+                    occurrence[label]=occurrence.get(label,0)+1
+                    role="" if full else f" (part {occurrence[label]})"
                     # Keep original lesson and unit wording; no replacement IDs.
                     title.append(f"{label}{role}: "+" ".join(c[1]))
                     fields.extend(field)
@@ -70,6 +73,12 @@ def candidate_rows(subject,year):
                     evidence.append("Targeted reinforcement: "+pupils)
                 if s["status"]!="EXACT_SOURCE_SLOT_VERIFY_RPH":
                     evidence.append("Candidate session — activity scope requires review.")
+            if paired:
+                same=paired_by_slot[s['session']]
+                assert same['week']==n and same['slot_minutes']==s['minutes']
+                assert same['source_labels']==list(dict.fromkeys([x['source_id'] for x in parts]+([previous] if s['reserve_minutes'] else [])))
+                evidence=same['evidence']
+                assert evidence and evidence==same['objective']
             # No internal duration is printed in the public-style document.
             reference=[v for v in reference if not re.fullmatch(r"\d+\s*min(?:utes)?",v.strip(),re.I)]
             result.append(([date_label,title,fields,evidence,list(dict.fromkeys(reference))],list(dict.fromkeys(urls))))
@@ -82,11 +91,13 @@ def convert(word,folder):
     return folder/(word.stem+".pdf")
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument("--subject",required=True);parser.add_argument("--year",type=int,required=True);parser.add_argument("--out",type=Path,required=True);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument("--subject",required=True);parser.add_argument("--year",type=int,required=True);parser.add_argument("--out",type=Path,required=True);parser.add_argument("--paired",type=Path);args=parser.parse_args()
     subject,year=args.subject,args.year
     assert (subject,year) in SETS
     out=args.out.resolve();out.mkdir(parents=True,exist_ok=True)
-    key=f"{subject}:{year}";rows,loads,p=candidate_rows(subject,year)
+    key=f"{subject}:{year}";paired=None
+    if args.paired:paired=next(s for s in json.loads(args.paired.read_text())["sets"] if s["key"]==key)
+    rows,loads,p=candidate_rows(subject,year,paired)
     with TemporaryDirectory() as temp,patch("tools.dlp_whole_lesson_calendar_20261126.schedule",return_value=(rows,loads)):
         folder=Path(temp)
         blob,*_=build_word(subject,year,whole_weeks=True,pilot=True)
