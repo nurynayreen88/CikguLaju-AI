@@ -1,7 +1,8 @@
 """Verify actual DLP RPH source workloads and display text without altering approved activities."""
 from collections import Counter
 import re
-from dlp_year2_rph import year3_science_catalog, _rph_display_rows
+from dlp_year2_rph import catalog, year3_science_catalog, _rph_display_rows
+from staging.dlp.year2.science_flexible_delivery import SCIENCE_SHORT_PREPARATION
 from staging.dlp.year2.downloads import BY_SUBJECT
 from staging.dlp.year3 import render_mathematics as m3
 from staging.dlp.year4 import render_mathematics as m4, render_science as s4
@@ -35,6 +36,26 @@ def plans():
         yield key,[(p["id"],p["label"],p["phases"],p["minutes"]) for p in data]
 
 def verify():
+    from io import BytesIO
+    from docx import Document
+    import fitz
+    original={l['id']:l for u in catalog()['SCIENCE_DLP'] for l in u['lessons']}
+    seen_short=set()
+    for unit in BY_SUBJECT['SCIENCE_DLP'].units:
+        for lesson in unit['lessons']:
+            if lesson['id'] not in original or lesson['minutes']!=30:continue
+            old=original[lesson['id']];number=str(int(lesson['numbered_label'].split()[-1]));seen_short.add(number)
+            assert lesson['objective']==old['objective'] and lesson['standards']==old['standards']
+            assert all(a[2]==b[2] for a,b in zip(lesson['phases'],old['phases'],strict=True))
+            assert all(a[1].endswith(b[1]) for a,b in zip(lesson['phases'],old['phases'],strict=True))
+            teacher={'class':'2 Bestari','time':'08:00 - 08:30','date':'2027-01-12','students':'25'}
+            pdf=BY_SUBJECT['SCIENCE_DLP'].render_download(lesson,'pdf',teacher)
+            word=BY_SUBJECT['SCIENCE_DLP'].render_download(lesson,'word',teacher)
+            with fitz.open(stream=pdf,filetype='pdf') as doc:
+                assert len(doc)==1,(number,'PDF pagination')
+            assert len(Document(BytesIO(word)).tables)==4,(number,'Word layout')
+    assert seen_short==set(SCIENCE_SHORT_PREPARATION) and len(seen_short)==34
+    print('SCIENCE_Y2_34_ADAPTATIONS_RENDERED',flush=True)
     seen=set(); blockers=[]
     for key,rows in plans():
         seen.add(key)
