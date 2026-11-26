@@ -28,7 +28,7 @@ def render_structured_rph(*, source: Literal["dlp", "ppki", "akuatik_v2"],
                           fmt: Literal["word", "docx", "pdf"],
                           heading, details, activities, footer,
                           compact=False, mathematics=False,
-                          teacher=None, label_fill=None) -> bytes:
+                          teacher=None, label_fill=None, paired_density=False) -> bytes:
     """Build source-approved four-box RPH Word/PDF via ONE common entry point.
 
     The source adapter sends the exact existing four payloads; no extra rows,
@@ -54,7 +54,7 @@ def render_structured_rph(*, source: Literal["dlp", "ppki", "akuatik_v2"],
     builder = _pdf if fmt == "pdf" else _word
     builder(buffer, heading, details, activities, footer,
             compact=compact, mathematics=mathematics, teacher=teacher,
-            label_fill=label_fill)
+            label_fill=label_fill, **({"paired_density": True} if fmt == "pdf" and paired_density else {}))
     data = buffer.getvalue()
     if not data.startswith(b"%PDF-" if fmt == "pdf" else b"PK\x03\x04"):
         raise ValueError("Generated RPH file has an invalid signature")
