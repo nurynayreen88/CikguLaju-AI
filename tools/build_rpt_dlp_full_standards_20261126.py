@@ -282,6 +282,10 @@ def build_word(subject,year,root=ROOT,*,whole_weeks=False,compact_sizes=None,pil
     for i,(row,vals) in enumerate(zip(body_rows,expected),1):
         assert all(norm(cell.text)==norm(" ".join(v)) for cell,v in zip(row.cells,vals)),(key,i)
     assert all(v[2] and v[3] for v in expected)
+    if whole_weeks and compact_sizes is not None:
+        from tools.rpt_dlp_week_column_20261126 import fix_week_column
+        for table in doc.tables[:-1]:fix_week_column(table)
+        stream=BytesIO();doc.save(stream);blob=stream.getvalue()
     return blob,cover,rows,expected,preserved_notes
 def render(subject,year,out,*,whole_weeks=False,compact_sizes=None):
     blob,cover,rows,expected,notes=build_word(subject,year,whole_weeks=whole_weeks,compact_sizes=compact_sizes)

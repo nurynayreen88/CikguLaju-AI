@@ -1,0 +1,24 @@
+name: DLP native Word independent week-grid QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/verify_dlp_week_grid_20261126.py'
+      - 'tools/rpt_dlp_week_column_20261126.py'
+      - 'tools/build_rpt_dlp_full_standards_20261126.py'
+      - '.github/workflows/dlp-word-week-grid-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  word-grid:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3' 'requests>=2'
+      - run: python -m tools.verify_dlp_week_grid_20261126
