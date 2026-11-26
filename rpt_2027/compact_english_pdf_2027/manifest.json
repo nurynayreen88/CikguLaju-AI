@@ -6,9 +6,9 @@
     "english:2": {
       "path": "english/tahun_2.pdf",
       "source_sha256": "7cd4dd1eabd568dcaa9de3faba1fa0de3c4f8469ed69c3df7101b7c74a8600e9",
-      "sha256": "4ff4df29c39b421bdddfb85f92839002f0555ef0fff47c20ce14a723ed275408",
-      "bytes": 273322,
-      "pages": 34,
+      "sha256": "a454ad9f05ad300debb592be93fe23a2c95650ebab13441b42c093ed5a888260",
+      "bytes": 321042,
+      "pages": 71,
       "source_pages": 54,
       "lessons": 160,
       "sessions": 142
@@ -16,9 +16,9 @@
     "english:3": {
       "path": "english/tahun_3.pdf",
       "source_sha256": "55528e8481f9af52386d6f7b898458aad80dcf1996f70c6b424a10da89515eb2",
-      "sha256": "d3be1f09a7ec813d6e227bdedbba2c8e926d030721c539f0ce6f35287b7bb3c5",
-      "bytes": 271026,
-      "pages": 34,
+      "sha256": "363620bd42c9adecef4e3c68147e31fd8aaa369d09b137dc2af7c72c3ccee140",
+      "bytes": 320021,
+      "pages": 73,
       "source_pages": 55,
       "lessons": 160,
       "sessions": 142
@@ -26,9 +26,9 @@
     "english:4": {
       "path": "english/tahun_4.pdf",
       "source_sha256": "0e72c8e993c9ef9e0d8112872b343cf58efcb512400a76d355d65bfdb4cb347e",
-      "sha256": "75606dc0a449bc7eb3d0f9db08994fb27900c458f1afaf7e32e2764066f3960e",
-      "bytes": 285596,
-      "pages": 35,
+      "sha256": "f25c4ca3ce70d0af2e043f784261bee438770d21919f9601acfa89777d032ef2",
+      "bytes": 333063,
+      "pages": 72,
       "source_pages": 56,
       "lessons": 160,
       "sessions": 142
@@ -36,9 +36,9 @@
     "english:5": {
       "path": "english/tahun_5.pdf",
       "source_sha256": "5a58b042920643d342060a7d9634481c57e67261245ca6b98b416aa470020019",
-      "sha256": "634ad7068f84c7fdc3bd3cba6225378000ad325eda0372349a78d46c0777f083",
-      "bytes": 293885,
-      "pages": 38,
+      "sha256": "04ec51c3624d8a45fa33334ff2d94fa3af269fd51e7e1f2caaabd84af20e2805",
+      "bytes": 346579,
+      "pages": 78,
       "source_pages": 54,
       "lessons": 160,
       "sessions": 142
@@ -46,9 +46,9 @@
     "english:6": {
       "path": "english/tahun_6.pdf",
       "source_sha256": "f9c8ca388328f123aad9202e26397eeb1fae5359ac1e9b1fbda1004541fda34f",
-      "sha256": "d447530c897f3f4b827e79b70ba15af697b5289d1d49cdb789f4f6ad37ed9d5c",
-      "bytes": 301401,
-      "pages": 39,
+      "sha256": "0cadc9e1c0e1d92f4dfcffd12315274b1173d93ade0e89b08af8d14b26eb4ad2",
+      "bytes": 347516,
+      "pages": 74,
       "source_pages": 54,
       "lessons": 160,
       "sessions": 142

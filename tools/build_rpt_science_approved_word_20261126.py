@@ -86,6 +86,8 @@ def extract(path,year):
     assert seen==expected,(len(seen),len(expected),"Source teaching identity mismatch")
     return headers,rows,expected
 
+from tools.rpt_kssr_physical_pages import paginate,verify_pages
+
 def build_word(year,root=ROOT):
     source=sk_documents.document_path(year,root=Path(root)/"sains")
     assert source is not None
@@ -131,6 +133,7 @@ def build_word(year,root=ROOT):
         assert all(norm(c.text)==norm(x) for c,x in zip(t.rows[i].cells,cells))
     for _,first,last,_ in groups:
         assert all(t.cell(first,0)._tc is t.cell(i,0)._tc for i in range(first,last+1))
+    blob=paginate(blob)
     return blob,raw,expected,headers
 
 def render(year,out):
@@ -148,6 +151,7 @@ def render(year,out):
             final.insert_pdf(orig,from_page=0,to_page=0);final.insert_pdf(gen,from_page=1)
             final.save(target,garbage=4,deflate=True)
         with fitz.open(target) as pdf,fitz.open(stream=raw,filetype="pdf") as orig:
+            verify_pages(blob,pdf)
             assert pdf[0].get_pixmap().samples==orig[0].get_pixmap().samples
             text="\n".join(p.get_text() for p in list(pdf)[1:])
             assert [int(n) for n in SCIENCE_PDP.findall(text)]==[n for _,n in expected]

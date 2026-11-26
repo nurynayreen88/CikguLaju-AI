@@ -6,41 +6,41 @@
     "matematik:4": {
       "path": "matematik/tahun_4.pdf",
       "source_sha256": "57f3e88155422c3f34327145beaae8067b114fb01cf65f2b231d17f378b05de3",
-      "sha256": "00c402eaeccf33c61723c6a1168404a4949d8f87287afdfa1692c295df085b73",
-      "bytes": 123796,
-      "pages": 9,
+      "sha256": "657b4e75a6ba0ba5fcc28f753073363b5c2088643aa49c421c38d5bf500eb161",
+      "bytes": 134809,
+      "pages": 19,
       "source_pages": 15
     },
     "matematik:5": {
       "path": "matematik/tahun_5.pdf",
       "source_sha256": "c740fb70bfa711b8ebdd54dbaf6b13aeb9c66018bf9dda1b7b3d1153ddaf4909",
-      "sha256": "83276aa8a42a997bbd1b9af23998b736a24ce3a188c6518a5f86afcda0d71da8",
-      "bytes": 123097,
-      "pages": 10,
+      "sha256": "8e0532415f3ea4727fb5d5ac90f85070a45fd81153e59cf3054491e1ba34ecf0",
+      "bytes": 133260,
+      "pages": 19,
       "source_pages": 15
     },
     "matematik:6": {
       "path": "matematik/tahun_6.pdf",
       "source_sha256": "1eda26ae8a13fda98535ce95e62e0f94ebfe7924106127df3581c21a55720847",
-      "sha256": "093dfa5ac5255a951ccce3e9107da1bba85f94d43768171e3158e055b7554436",
-      "bytes": 124544,
-      "pages": 10,
+      "sha256": "10a6100bee9102cf81eb0f935a430e09ac45f394c280560defd25b21b2082715",
+      "bytes": 137838,
+      "pages": 22,
       "source_pages": 15
     },
     "sains:5": {
       "path": "sains/tahun_5.pdf",
       "source_sha256": "281d25b8b37cfda50caa22ebcc9ee235767e1bfb4a8a4cfad171a5bf324a1e8b",
-      "sha256": "65666f4770220479901494d7bd7979c41550b5333364ca08a58e146d721398bd",
-      "bytes": 158186,
-      "pages": 13,
+      "sha256": "b538d181faa44c789bad94f8e4d8e59981a1bdcfd48f82e8cedb90ef520b0227",
+      "bytes": 178278,
+      "pages": 32,
       "source_pages": 12
     },
     "sains:6": {
       "path": "sains/tahun_6.pdf",
       "source_sha256": "0f168595c8c6259c455f143aeeb98489152a85cc599e5c1d60db88d19503d477",
-      "sha256": "e7785b3f255583d555fd58c74aae8d6561389992d56309fdec4abce283dca78d",
-      "bytes": 157018,
-      "pages": 14,
+      "sha256": "31a8c96863f6de47dae0dc996a192024c26f04edc8039e6b9616385baf8efe02",
+      "bytes": 174834,
+      "pages": 31,
       "source_pages": 13
     }
   }
