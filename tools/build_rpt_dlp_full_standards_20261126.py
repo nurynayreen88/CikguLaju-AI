@@ -120,8 +120,16 @@ def build_word(subject,year,root=ROOT):
         text_cell(t.rows[0].cells[i],[h],bold=True,center=True,shade=shade)
     mark(t.rows[0]._tr.get_or_add_trPr(),"w:tblHeader")
     groups=[];expected=[];failures=[]
+    taught_cs=[];taught_ls=[]
     for c,links in rows:
-        try:cs,ls=descriptions(c[2],bank)
+        try:
+            if 'Review taught standards' in ' '.join(c[2]) and 'Review' in ' '.join(c[1]):
+                assert taught_cs and taught_ls,(key,c[1])
+                cs=list(dict.fromkeys(taught_cs));ls=list(dict.fromkeys(taught_ls))
+                taught_cs=[];taught_ls=[]
+            else:
+                cs,ls=descriptions(c[2],bank)
+                taught_cs.extend(cs);taught_ls.extend(ls)
         except ValueError as err:failures.append({"lesson":c[1],"field":c[2],"error":str(err)});continue
         row=t.add_row();index=len(t.rows)-1
         mark(row._tr.get_or_add_trPr(),"w:cantSplit")
