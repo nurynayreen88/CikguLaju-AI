@@ -208,7 +208,26 @@ def render(subject,year,out,manifest):
             assert Counter(links_new)==Counter(links_expected)
             pages=len(final)
     # Exercise sample profile injection in Word without modifying any teaching row.
-    personalized=replace_cover_image(word.read_bytes(),source,layout,{"school":"SK CONTOH UJIAN","teacher":"GURU CONTOH","state":"","logo":None})
+    with fitz.open() as mock_logo:
+        page=mock_logo.new_page(width=100,height=100)
+        page.draw_rect(fitz.Rect(10,10,90,90),fill=(.1,.4,.7),color=None)
+        page.insert_text((22,55),"TEST",fontsize=16)
+        logo=page.get_pixmap(alpha=False).tobytes("png")
+    identity={"school":"SK CONTOH UJIAN","teacher":"GURU CONTOH","state":"","logo":logo}
+    personalized=replace_cover_image(word.read_bytes(),source,layout,identity)
+    with fitz.open(stream=cover_page(source,layout,identity),filetype="pdf") as filled, fitz.open(source) as baseline:
+        assert len(filled)==1
+        assert "SK CONTOH UJIAN" in filled[0].get_text()
+        assert "GURU CONTOH" in filled[0].get_text()
+        assert filled[0].get_pixmap().samples!=baseline[0].get_pixmap().samples
+        assert filled[0].get_pixmap(clip=fitz.Rect(layout["logo_image_safe_top_left"])).samples!=baseline[0].get_pixmap(clip=fitz.Rect(layout["logo_image_safe_top_left"])).samples
+    from web.rpt_original_cover_word import for_paid_download
+    try:
+        for_paid_download({"telegram_user_id":99,"free_generations_remaining":10},word.read_bytes(),source,layout)
+    except PermissionError:
+        pass
+    else:
+        raise AssertionError("Free Word access incorrectly allowed")
     assert Document(BytesIO(personalized)).tables[0]._tbl.xml==check.tables[0]._tbl.xml
     return {"subject":subject,"year":year,"lessons":len(expected),"weekly_groups":len(blocks),
             "pdf_pages":pages,"original_pdf_cover_identical":True,"word_cover_profile_test":True,
