@@ -1662,8 +1662,8 @@
       },
       "40": {
         "O": [
-          "Show 2 + 0.5 × 3.",
-          "Identify the first operation and calculate."
+          "Show 0.875 ÷ 0.25 and 125% of 80 as two short revision cards.",
+          "Calculate both and check the division by multiplication."
         ]
       },
       "41": {
@@ -1882,14 +1882,14 @@
           "Select the correct scale to construct 120° from the stated ray."
         ],
         "C": [
-          "Provide a square grid and a ruler; ask for a regular hexagon using a supplied construction guide.",
-          "Draw the hexagon and check its equal sides and angles."
+          "Supply a triangular grid and a ruler. Demonstrate joining six equal grid segments to form a regular hexagon.",
+          "Draw a regular hexagon on the triangular grid and measure its interior angles with a protractor."
         ]
       },
       "73": {
         "O": [
-          "Show a square grid and specify a regular quadrilateral.",
-          "Construct a square and check equal side lengths."
+          "Show a square grid and a protractor.",
+          "Draw a square with sides of four grid units and measure its interior angles."
         ]
       },
       "74": {
@@ -1915,25 +1915,25 @@
         ],
         "C": [
           "Specify a circle with radius 2.5 cm.",
-          "Use a compass to construct it and label centre and radius."
+          "Draw the circle using a compass, then label its centre, radius and diameter."
         ]
       },
       "77": {
         "O": [
-          "Give a required diameter of 8 cm.",
-          "Set the compass to 4 cm and construct the circle."
+          "Specify a circle with radius 4 cm.",
+          "Set the compass to 4 cm, draw the circle and label its centre, radius and diameter."
         ]
       },
       "79": {
         "C": [
-          "Show a circle with radius 3 cm and a 110° angle task.",
-          "Label the diameter and verify the constructed angle."
+          "Give a radius of 3 cm and a separate angle of 110 degrees.",
+          "Construct the circle, label its centre, radius and diameter, and construct the 110-degree angle."
         ]
       },
       "80": {
         "O": [
-          "Show a labelled circle and a polygon diagram.",
-          "Identify one diameter and one correct geometric label."
+          "Give a 2 cm radius and a 60-degree angle for a short construction task.",
+          "Draw and label the circle, and construct the given angle using a protractor."
         ],
         "C": [
           "Show A(2,4) and B(7,4) at 10 m per unit.",
@@ -1990,30 +1990,30 @@
       },
       "88": {
         "C": [
-          "Show a six-unit grid distance at 30 m per unit and a ratio 6:9.",
-          "Calculate 180 m and simplify to 2:3."
+          "Show a six-unit horizontal grid distance at 30 m per unit and a recipe in the ratio 2:3 with the first quantity 8.",
+          "Calculate the real distance as 180 m and the second quantity as 12."
         ]
       },
       "89": {
         "O": [
-          "Show a grid distance of four units at 50 m per unit.",
-          "Find the real distance before checking the proportion task."
+          "Show a grid distance of four units at 50 m per unit and a ratio of 3:5 with first quantity 9.",
+          "Find the real distance and the second proportional quantity."
         ]
       },
       "90": {
         "C": [
-          "Show 40 votes, with 20 for category A.",
-          "Identify the half-circle sector as 180°."
+          "Provide a partially completed pie chart for 40 responses with 20 in category A and 20 in category B.",
+          "Complete the missing 180-degree sector and compare the two categories."
         ]
       },
       "91": {
         "O": [
-          "Show 40 votes, with 10 for B and 5 for C.",
-          "Identify their 90° and 45° sectors."
+          "Show a partially completed 40-response pie chart with missing sectors for 10 and 5 responses.",
+          "Complete the 90-degree and 45-degree sectors and label their categories."
         ],
         "C": [
-          "Show a completed chart with sectors 180°, 90°, 45°, 45°.",
-          "Check the total and compare category sizes."
+          "Give a four-category data table of 20, 10, 5 and 5 responses with a circle containing one labelled half-sector.",
+          "Complete the remaining 90-degree and 45-degree sectors and compare their counts."
         ]
       },
       "92": {
@@ -2068,8 +2068,8 @@
           "Identify five responses before interpreting the chart."
         ],
         "C": [
-          "Show an assertion that an unlikely event cannot happen.",
-          "Correct the assertion using the example of a low-count category."
+          "Show a chart of eight red and two blue counters, with no green counters.",
+          "Explain why selecting green is impossible, selecting blue is less likely than red, and selecting either red or blue is certain."
         ]
       },
       "101": {
