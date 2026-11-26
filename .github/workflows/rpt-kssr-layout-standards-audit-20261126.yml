@@ -1,0 +1,60 @@
+name: KSSR 36 source-locked polished table and standards audit
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/build_kssr_rpt_merged_week_batch_20261126.py'
+      - '.github/workflows/rpt-kssr-layout-standards-audit-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        subject: [bahasa_melayu,pendidikan_moral,pjpk,psv,muzik,rbt,sejarah,sains,matematik]
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+      - name: Verify exact source descriptions and actual Word/PDF tables
+        run: |
+          python - <<'PY'
+          import json,re,os,fitz
+          from pathlib import Path
+          from docx import Document
+          from tools.build_kssr_rpt_merged_week_batch_20261126 import ROOT,SCOPE,extract,render
+          subject="${{ matrix.subject }}"
+          manifest=json.loads((ROOT/"manifest.json").read_text())
+          lock=json.loads((ROOT/"original_cover_layout_verified.json").read_text())
+          for year in SCOPE[subject]:
+              key=f"{subject}:{year}"
+              src=ROOT/manifest["files"][key]["path"]
+              dates,groups,closures,ids,links=extract(src,subject)
+              missing=[]
+              for week,records in groups.items():
+                  for identity,cells,urls in records:
+                      for label,lines in zip(("SK","SP"),cells[1:3]):
+                          text=" ".join(lines)
+                          if not re.search(r"[A-Za-zÀ-ÿ]{2,}",text):
+                              missing.append({"week":week,"identity":identity,"field":label,"value":text})
+              print("STANDARDS_AUDIT",json.dumps({"key":key,"rows":len(ids),"code_only":missing,"closure_weeks":list(closures)},ensure_ascii=False),flush=True)
+              out=Path(os.environ["RUNNER_TEMP"])/subject/str(year)
+              out.mkdir(parents=True,exist_ok=True)
+              render(subject,year,out,manifest,lock)
+              d=Document(next(out.glob("*.docx")))
+              assert len(d.tables)==1
+              assert all(any(c.text.strip() for c in r.cells[1:]) for r in d.tables[0].rows[1:])
+              with fitz.open(next(out.glob("*.pdf"))) as pdf:
+                  assert all(len(p.get_text().strip())>20 for p in list(pdf)[1:])
+              print("TABLE_PASS",key,flush=True)
+          PY
+      - if: always()
+        run: rm -rf "$RUNNER_TEMP/${{ matrix.subject }}"
