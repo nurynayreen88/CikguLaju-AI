@@ -23,7 +23,8 @@ def report_word(key,raw):
         if not t.rows:continue
         pr=t._tbl.tblPr
         width=pr.find(qn("w:tblW"))
-        tables.append({"rows":len(t.rows),"columns":len(t.columns),"width_type":width.get(qn("w:type")) if width is not None else None,"autofit":t.autofit,"repeat":t.rows[0]._tr.get_or_add_trPr().find(qn("w:tblHeader")) is not None,"empty_rows":[i for i,row in enumerate(t.rows,1) if all(not c.text.strip() for c in row.cells)]})
+        tables.append({"first_row":[c.text[:100] for c in t.rows[0].cells],"last_row":[c.text[:80] for c in t.rows[-1].cells],"grid_twips":[c.width.twips if c.width else None for c in t.columns],"rows":len(t.rows),"columns":len(t.columns),"width_type":width.get(qn("w:type")) if width is not None else None,"autofit":t.autofit,"repeat":t.rows[0]._tr.get_or_add_trPr().find(qn("w:tblHeader")) is not None,"empty_rows":[i for i,row in enumerate(t.rows,1) if all(not c.text.strip() for c in row.cells)]})
+    print("WORD_DETAIL",json.dumps({"key":key,"sections":[{"page_width":s.page_width.twips,"left_margin":s.left_margin.twips,"right_margin":s.right_margin.twips} for s in d.sections],"tables":[{"index":i,**x} for i,x in enumerate(tables) if i<3 or x["empty_rows"] or not x["repeat"]]},ensure_ascii=False),flush=True)
     print("WORD_AUDIT",json.dumps({"key":key,"tables":tables},ensure_ascii=False),flush=True)
 for y in bm.YEARS:
     source=bm.word_document(y,root=ROOT)
