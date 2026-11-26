@@ -43,7 +43,10 @@ class FullDLPTest(unittest.TestCase):
                     dlp_document(subject,year,{"telegram_user_id":9,"rakan_pembangun":True},{"account_backend":"supabase"},root=ROOT)
                     word=client.get(url+".docx");self.assertEqual(word.status_code,200,word.get_data(as_text=True) if word.status_code!=200 else key)
                     doc=Document(io.BytesIO(word.data));self.assertEqual([c.text for c in doc.tables[0].rows[0].cells],list(HEADS))
-                    for row in doc.tables[0].rows[1:]:
+                    self.assertGreater(len(doc.tables),2)
+                    for t in doc.tables[:-1]:
+                        self.assertEqual([c.text for c in t.rows[0].cells],list(HEADS))
+                    for row in [row for t in doc.tables[:-1] for row in t.rows[1:]]:
                         for cell in row.cells[2:4]:
                             self.assertRegex(cell.text,r"\d+\.\d+.*[A-Za-z]")
                     self.assertTrue(any("Main school breaks" in p.text for p in doc.paragraphs))
