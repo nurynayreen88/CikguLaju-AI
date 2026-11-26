@@ -5,6 +5,10 @@ on:
     paths:
       - 'tools/build_kssr_rpt_merged_week_batch_20261126.py'
       - 'web/rpt_native_word_cover.py'
+      - 'web/rpt_native_word_batch.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'tests/test_rpt_native_word_batch.py'
+      - 'scripts/reschedule_web_rpt_teaching_weeks.py'
       - 'tests/test_rpt_native_word_cover.py'
       - '.github/workflows/kssr-rpt-batch-merged-week-20261126.yml'
 permissions:
@@ -14,7 +18,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        subject: [bahasa_melayu, pendidikan_moral, pjpk, psv, muzik, rbt, sejarah, sains, matematik]
+        subject: [pendidikan_moral, pjpk, psv, muzik, rbt, sejarah, sains, matematik] # BM retains its dedicated Word pipeline
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
@@ -38,3 +42,5 @@ jobs:
           python-version: '3.12'
       - run: pip install python-docx pymupdf flask pillow
       - run: python -m unittest discover -s tests -p 'test_rpt_native_word_cover.py' -v
+      - run: pip install requests reportlab pypdf fonttools
+      - run: python -m unittest discover -s tests -p 'test_rpt_native_word_batch.py' -v
