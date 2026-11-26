@@ -56,7 +56,10 @@ def clip_cells(page,rect):
                 overlaps=[max(0,min(x1,b)-max(x0,a)) for a,b in zip(BANDS[:4],BANDS[1:5])]
                 i=max(range(4),key=lambda j:overlaps[j])
                 if overlaps[i]<=0 or max(0,x1-x0)-overlaps[i]>2.5:
-                    raise ValueError(f"Ambiguous RTL span at page {page.number+1}, x={x0:.1f}–{x1:.1f}")
+                    # PyMuPDF sometimes joins disjoint native spans across
+                    # columns. Recover the original cell strings from the
+                    # entire source row using raw glyph coordinates, below.
+                    return clip_cells_glyphwise(page,rect)
                 original.append(value)
                 parts[i].append(value)
             for i,values in enumerate(parts):
@@ -65,6 +68,45 @@ def clip_cells(page,rect):
     letters=lambda v:Counter(c for c in v if not c.isspace())
     if letters("".join(original))!=letters("".join(physical)):
         raise ValueError("Source RTL character loss")
+    return tuple(reversed(physical))
+
+
+def clip_cells_glyphwise(page,rect):
+    columns=[[] for _ in range(4)]
+    original=[]
+    for block in page.get_text("rawdict",clip=rect)["blocks"]:
+        for line in block.get("lines",()):
+            parts=[[] for _ in range(4)]
+            for span in line["spans"]:
+                for glyph in span["chars"]:
+                    value=logical_glyphs(glyph["c"])
+                    if not value.strip():
+                        continue
+                    x0,_,x1,_=glyph["bbox"]
+                    x=(x0+x1)/2
+                    matching=[i for i,(a,b) in enumerate(zip(BANDS[:4],BANDS[1:5])) if a<=x<b]
+                    if len(matching)!=1:
+                        raise ValueError(f"Ambiguous RTL glyph at page {page.number+1}")
+                    original.append(value)
+                    parts[matching[0]].append(glyph)
+            for i,items in enumerate(parts):
+                if not items:continue
+                out=[]
+                previous=None
+                for glyph in items:
+                    x0,_,x1,_=glyph["bbox"]
+                    if previous is not None:
+                        p0,p1=previous
+                        if max(x0-p1,p0-x1)>2:
+                            out.append(" ")
+                    out.append(logical_glyphs(glyph["c"]))
+                    previous=(x0,x1)
+                columns[i].append("".join(out))
+    physical=["\n".join(lines).strip() for lines in columns]
+    letters=lambda v:Counter(c for c in v if not c.isspace())
+    assert letters("".join(original))==letters("".join(physical))
+    # Do not auto-publish glyphwise candidates: original logical order
+    # and word spacing must still be checked visually by a reviewer.
     return tuple(reversed(physical))
 
 def extract(path,subject):
