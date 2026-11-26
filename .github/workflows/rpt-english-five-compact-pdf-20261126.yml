@@ -1,0 +1,41 @@
+name: Verify five integrated English compact free PDFs
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/compact_english_pdf_2027/**'
+      - '.github/workflows/rpt-english-five-compact-pdf-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt
+      - run: |
+          python - <<'PY'
+          import json,hashlib,re
+          from pathlib import Path
+          import fitz
+          root=Path("rpt_2027")
+          folder=root/"compact_english_pdf_2027"
+          m=json.loads((folder/"manifest.json").read_text())
+          assert m["count"]==5 and not list(folder.rglob("*.docx"))
+          for key,e in m["files"].items():
+              y=int(key.split(":")[1])
+              a=root/"english"/f"RPT_English_SK_2027_Year_{y}_A_B.pdf";b=folder/e["path"]
+              assert hashlib.sha256(a.read_bytes()).hexdigest()==e["source_sha256"]
+              assert hashlib.sha256(b.read_bytes()).hexdigest()==e["sha256"]
+              with fitz.open(a) as old,fitz.open(b) as new:
+                  assert old[0].get_pixmap().samples==new[0].get_pixmap().samples
+                  assert len(new)==e["pages"]
+                  assert all(p.get_text().strip() for p in list(new)[1:])
+                  assert [int(n) for n in re.findall(r"LESSON:\s*(\d+)","\n".join(p.get_text() for p in list(new)[1:]))]==list(range(1,161))
+          PY
