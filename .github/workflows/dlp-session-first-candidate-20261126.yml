@@ -5,6 +5,7 @@ on:
     paths:
       - 'tools/build_dlp_session_first_candidate_20261126.py'
       - 'tools/map_dlp_session_activities_20261126.py'
+      - 'tools/optimize_dlp_session_phases_20261126.py'
       - '.github/workflows/dlp-session-first-candidate-20261126.yml'
 permissions:
   contents: read
@@ -31,9 +32,12 @@ jobs:
           cp tools/map_dlp_session_activities_20261126.py rph-source/tools/
           cd rph-source
           python -m tools.map_dlp_session_activities_20261126 ../dlp_session_first_candidate.json ../dlp_session_activity_review.json
+      - name: Optimize phase boundaries in all 855 slots
+        run: python -m tools.optimize_dlp_session_phases_20261126 dlp_session_activity_review.json dlp_phase_aware_review.json
       - uses: actions/upload-artifact@v4
         with:
           name: dlp-session-first-private-candidate
           path: |
             dlp_session_first_candidate.json
             dlp_session_activity_review.json
+            dlp_phase_aware_review.json
