@@ -180,8 +180,19 @@ def dlp_document(subject,year,account,config,*,root):
         raise ValueError("DLP RPT source changed")
     from tools.build_rpt_dlp_native_20261126 import build_word,PINS as dlp_pins
     from web.rpt_native_word_cover import personalized_word
-    blob,raw,_=build_word(subject,year,root=root)
+    from web.rpt_compact_pdf import read_full_standards_dlp
+    from rpt_2027.dlp.documents import document_path
+    original=document_path(subject,year,root=Path(root)/"dlp").read_bytes()
     key=f"{subject}:{year}"
+    revised=read_full_standards_dlp(subject,year,original,root=root)
+    if revised is not None:
+        from tools.build_rpt_dlp_full_standards_20261126 import build_word as build_revised
+        blob,_,_,_,_=build_revised(subject,year,root=root)
+        pdf_bytes,_=revised
+        lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
+        result=personalized_word(blob,pdf_bytes,lock,key,account,config)
+        return result,hashlib.sha256(result).hexdigest()
+    blob,raw,_=build_word(subject,year,root=root)
     if hashlib.sha256(raw).hexdigest()!=dlp_pins[key]:
         raise ValueError("DLP RPT source changed")
     lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))

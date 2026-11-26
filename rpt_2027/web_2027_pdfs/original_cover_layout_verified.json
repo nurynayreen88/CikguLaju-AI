@@ -2128,5 +2128,101 @@
         255
       ]
     }
+  },
+  "compact_rtl_pdf_covers": {
+    "version": 1,
+    "page_width": 841.8898,
+    "page_height": 595.2756,
+    "tolerance_pt": 0.3,
+    "logo_interior_top_left": [
+      357.3,
+      70.4,
+      484.6,
+      197.6
+    ],
+    "logo_image_safe_top_left": [
+      365,
+      77,
+      477,
+      190
+    ],
+    "school_row_top_left": [
+      274,
+      332.5,
+      742,
+      359.5
+    ],
+    "teacher_row_top_left": [
+      274,
+      388.5,
+      742,
+      415.5
+    ],
+    "identity_background_rgb": [
+      0.960784,
+      0.972549,
+      0.964706
+    ],
+    "status": "COMPACT_RTL_RPT_PDF_COVER_VERIFIED",
+    "source_sha256_by_subject_year": {
+      "pendidikan_islam:2": "f3f9250213664c8d73c44cf6cc37594fe8e6ac8060983d83340d187bcd1e808d",
+      "pendidikan_islam:3": "e460aee63f064aa19e92debe9b08002a70e0f709297ddedcc264c90b5d89bb02",
+      "pendidikan_islam:4": "023d9d747bf7d8aba800976166217183dc4adac23c2595fc5e7c2bfbbecadc4b",
+      "pendidikan_islam:5": "91531ca7a9a7f9fc5568788003745003b81c89be7d75f05272d88b4a136dbfb1",
+      "pendidikan_islam:6": "ff2f65f04370367c26db3cd0c8d915b2453d60331cde5be5b5fd19f1dac43f95",
+      "bahasa_arab:3": "d47aa6f0987380dba0d6699757c017aa94fb4b8e38152c8080a1cd3105a2f8e0",
+      "bahasa_arab:4": "1158805d51a35dffdb3ce4bab61e79d93f5e4b48c3339d16a9d897301624c316",
+      "bahasa_arab:5": "55e1e48c83cfd4ce3e92c03903c58ab9287454ef8421aae75870b5a199124ab0",
+      "bahasa_arab:6": "d65b0d9cd8d555520157828255215772773787a97b21f21e27c8312450cac40b",
+      "bahasa_arab:2": "fa8bba5a11623b7dadba65d26677981f821247d67cf8ceecb23c7d9f2cd74dff"
+    }
+  },
+  "full_standards_dlp_pdf_covers": {
+    "version": 1,
+    "page_width": 841.8898,
+    "page_height": 595.2756,
+    "tolerance_pt": 0.3,
+    "logo_interior_top_left": [
+      357.3,
+      70.4,
+      484.6,
+      197.6
+    ],
+    "logo_image_safe_top_left": [
+      365,
+      77,
+      477,
+      190
+    ],
+    "school_row_top_left": [
+      274,
+      332.5,
+      742,
+      359.5
+    ],
+    "teacher_row_top_left": [
+      274,
+      388.5,
+      742,
+      415.5
+    ],
+    "identity_background_rgb": [
+      0.960784,
+      0.972549,
+      0.964706
+    ],
+    "status": "FULL_STANDARDS_DLP_RPT_PDF_COVER_VERIFIED",
+    "source_sha256_by_subject_year": {
+      "mathematics_dlp:2": "7c9ab1769c081531a1eb3285fa06fde479ecc697c58538df3c91f4445d848e8d",
+      "science_dlp:2": "37ebf3ac53618e359164ebc95da9edc706d140a1374528b48e5a91ee309bcf26",
+      "mathematics_dlp:3": "6333fc429ded9a2c9fbd3fb64d8e13e54876ac2b88dd2cf28abf9c46991bf765",
+      "science_dlp:3": "452a360e4b61bdf1891f1b7d81bb78298506524b46f08d526f188fe51c541c16",
+      "mathematics_dlp:4": "a55cad5aed83a16336631a0391f1c717a1cd9aac92464ea7023552addff55bf9",
+      "science_dlp:4": "1a3e9879cf0282765862ac891c5aad8af278209cbdd58dd629d9e324f5c24051",
+      "mathematics_dlp:5": "158428a4c0ed84fb3743bc272e161a03269b7f714b00d16a2a2b6a436e0472c0",
+      "science_dlp:5": "b60e00f50e14b97c949ffb8bf1a1aabc5c873fdc4c5d144a410cd1b71c0b485e",
+      "mathematics_dlp:6": "bd5284836cace08228a356f901797c398f392c4289ce779b167573c8cd5affe0",
+      "science_dlp:6": "e9613a6aedb8e1de1cd7d655f0e726fedd3a25683a381559be4ae301ef88229f"
+    }
   }
 }

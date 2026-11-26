@@ -145,3 +145,78 @@ def read_dlp(subject,year,original,*,root):
         return raw,digest
     except (OSError,ValueError,KeyError,TypeError,AttributeError):
         return None
+
+RTL_PINS={
+    "bahasa_arab:2": "ed5699127c118f28fe86cff6edef6e8ee85e7d787e5ef753cb251a771b4ea4b7",
+    "pendidikan_islam:2": "79129ba5613f672cb105fb2621252283dfa7bb76ccc67cee0842d0339e50c92e",
+    "pendidikan_islam:3": "134253d2bc89c1736347df70e3e2929ab94e537e14869c69c0bf559fae7e5a33",
+    "pendidikan_islam:4": "e77bfd0654b5bf687bbb74fbc5c1d22a3c088adb735e0b6e62e001899a941e74",
+    "pendidikan_islam:5": "f8830f4efbcd8bf26a33acb804ee2673e5dabdc354b8dfe34bb5d21bce1fc159",
+    "pendidikan_islam:6": "b993b3cf5baeebc4e67d37456b5b2e12955a0d4373a5dc29b5014fc4fb98f41f",
+    "bahasa_arab:3": "c91f7b38a059ee9a208f852a3b371ee606326aa4d50e5742dc523efc68743d3b",
+    "bahasa_arab:4": "8b979445bcf8bc1663e4fc4196da11bb9a32fd756f5c916ace6503be059ae217",
+    "bahasa_arab:5": "be92eff7fc8b1017f88641bbe2ad1227b26436b41cf3f9e327b632de1d52b0ca",
+    "bahasa_arab:6": "279d576410b261261190e3a8cb146cbd333bea5f04d31f5bd4711130cfdc4f30"
+}
+
+def read_rtl(subject,year,original,*,root):
+    if os.environ.get("CIKGULAJU_RPT_COMPACT_PDF_BATCH")!="1":
+        return None
+    key=f"{subject}:{year}"
+    expected=RTL_PINS.get(key)
+    if not expected or hashlib.sha256(original).hexdigest()!=expected:
+        return None
+    try:
+        base=Path(root)/"compact_rtl_pdf_2027"
+        manifest=json.loads((base/"manifest.json").read_text("utf8"))
+        entries=manifest["files"]
+        if manifest["version"]!=1 or manifest["count"]!=10 or manifest["status"]!="LAYOUT_QA_CANDIDATE" or set(entries)!=set(RTL_PINS):
+            return None
+        e=entries[key]
+        relative=f"{subject}/tahun_{year}.pdf"
+        if e["source_sha256"]!=expected or e["path"]!=relative:
+            return None
+        file=base/relative
+        if file.is_symlink() or not 8000<=file.stat().st_size<=25*1024*1024:
+            return None
+        raw=file.read_bytes()
+        digest=hashlib.sha256(raw).hexdigest()
+        layout=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))["compact_rtl_pdf_covers"]
+        if not raw.startswith(b"%PDF-") or len(raw)!=e["bytes"] or digest!=e["sha256"] or layout["source_sha256_by_subject_year"].get(key)!=digest:
+            return None
+        return raw,digest
+    except (OSError,ValueError,KeyError,TypeError,AttributeError):
+        return None
+
+def read_full_standards_dlp(subject,year,original,*,root):
+    # New revision is opt-in only via the complete, checksum-locked manifest.
+    if os.environ.get("CIKGULAJU_RPT_FULL_STANDARDS_DLP")!="1":
+        return None
+    from tools.build_rpt_dlp_native_20261126 import PINS
+    key=f"{subject}:{year}"
+    expected=PINS.get(key)
+    if not expected or hashlib.sha256(original).hexdigest()!=expected:
+        return None
+    try:
+        base=Path(root)/"full_standards_dlp_pdf_2027"
+        m=json.loads((base/"manifest.json").read_text("utf8"))
+        if m["version"]!=1 or m["count"]!=10 or m["status"]!="LAYOUT_QA_CANDIDATE" or set(m["files"])!=set(PINS):
+            return None
+        e=m["files"][key]
+        relative=f"{subject}/tahun_{year}.pdf"
+        if e["path"]!=relative or e["source_sha256"]!=expected:
+            return None
+        file=base/relative
+        if file.is_symlink() or not 8000<=file.stat().st_size<=25*1024*1024:
+            return None
+        raw=file.read_bytes()
+        digest=hashlib.sha256(raw).hexdigest()
+        lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
+        layout=lock["full_standards_dlp_pdf_covers"]
+        if layout["status"]!="FULL_STANDARDS_DLP_RPT_PDF_COVER_VERIFIED" or set(layout["source_sha256_by_subject_year"])!=set(PINS):
+            return None
+        if not raw.startswith(b"%PDF-") or len(raw)!=e["bytes"] or digest!=e["sha256"] or layout["source_sha256_by_subject_year"].get(key)!=digest:
+            return None
+        return raw,digest
+    except (OSError,ValueError,KeyError,TypeError,AttributeError):
+        return None
