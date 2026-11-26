@@ -1,4 +1,4 @@
-name: KSSR 36 source-locked polished table and standards audit
+name: KSSR 31 source-locked polished table and standards audit
 on:
   pull_request:
     branches: [production/cikgulaju-web-20261105]
@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        subject: [bahasa_melayu,pendidikan_moral,pjpk,psv,muzik,rbt,sejarah,sains,matematik]
+        subject: [pendidikan_moral,pjpk,psv,muzik,rbt,sejarah,sains,matematik]
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4

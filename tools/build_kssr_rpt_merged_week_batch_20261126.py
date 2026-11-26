@@ -156,7 +156,7 @@ def reflow_source_cell(lines,column):
         v=line.strip()
         if not v:continue
         boundary=(column==1 and (MARKER.fullmatch(v) or re.match(r"^(?:Unit|Tema|Tajuk|Bidang|Modul|Topik)\b",v,re.I))) or (column in (2,3) and re.match(r"^\d+\.\d+(?:\.\d+)*(?:\s|$|\()",v)) or (column==4 and re.match(r"^(?:BBM|Bahan|Buku Teks|Pentaksiran|PBD|Catatan|Rujukan|EMK|KBAT|Nilai)\b",v,re.I))
-        if not out or boundary:out.append(v)
+        if not out or boundary or (column==1 and MARKER.fullmatch(out[-1])):out.append(v)
         else:out[-1]+=" "+v
     assert norm(" ".join(out))==norm(" ".join(lines))
     return out
