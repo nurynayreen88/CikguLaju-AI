@@ -4,6 +4,7 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - 'tools/audit_dlp_actual_rph_session_phases_20261126.py'
+      - 'tools/build_dlp_distinct_session_activity_drafts_20261126.py'
       - '.github/workflows/dlp-actual-rph-session-phase-audit-20261126.yml'
 permissions:
   contents: read
@@ -31,8 +32,12 @@ jobs:
         run: python -m tools.audit_dlp_seven_fixed_sessions_20261126 --out ../session-plan.json
       - working-directory: rph
         run: python ../rpt/tools/audit_dlp_actual_rph_session_phases_20261126.py --plan ../session-plan.json --out ../actual-rph-phase-crosswalk.json
+      - working-directory: rpt
+        run: python -m tools.build_dlp_distinct_session_activity_drafts_20261126 --crosswalk ../actual-rph-phase-crosswalk.json --out ../distinct-session-activity-drafts.json
       - uses: actions/upload-artifact@v4
         with:
           name: dlp-actual-rph-phase-crosswalk
-          path: actual-rph-phase-crosswalk.json
+          path: |
+            actual-rph-phase-crosswalk.json
+            distinct-session-activity-drafts.json
           if-no-files-found: error
