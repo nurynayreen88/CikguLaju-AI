@@ -480,7 +480,7 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
 
 
 def _pdf(output, heading, details, activities, reflection, *, compact=False,
-         mathematics=False, teacher=None, label_fill=None):
+         mathematics=False, teacher=None, label_fill=None, paired_density=False):
     from reportlab.lib import colors
     from reportlab.lib.enums import TA_CENTER
     from reportlab.lib.pagesizes import A4
@@ -500,6 +500,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     regular, bold, _ = pdf_fonts()
     font_size = 9 if mathematics else 9.5
     leading = (9.35 if compact else 9.9) if mathematics else (11 if compact else 12)
+    if paired_density and not mathematics: leading=10.25
     body = ParagraphStyle("DLP body", fontName=regular, fontSize=font_size, leading=leading)
     label = ParagraphStyle("DLP label", parent=body, fontName=bold)
     table_heading = ParagraphStyle("DLP table heading", parent=label, alignment=TA_CENTER)
@@ -521,6 +522,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
             cells[0] = [paragraph(value, table_heading) for value in rows[0]]
         result = Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header))
         padding = 2.5 if mathematics else (3 if compact else 4)
+        if paired_density and not mathematics: padding=min(padding,2)
         commands = pdf_box_style(padding)
         commands.append(("BACKGROUND", (0, 0), (0, -1), fill))
         if header:
