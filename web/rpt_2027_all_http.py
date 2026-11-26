@@ -23,6 +23,7 @@ from web import kp2027_year1_rpt_combined as kp_ab
 from web import rpt_2027_kssr_bm_word as bm_word
 from web import rpt_kssr_bm_private_storage as private_bm_word
 from web import rpt_native_word_batch as native_word
+from web import rpt_compact_pdf as compact_pdf
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.matematik import sk_documents as matematik_sk
@@ -660,6 +661,9 @@ def create_all_rpt_blueprint(*,root=ROOT):
         # Keep a valid, exact legacy PDF downloadable even when the original
         # cover has not been reviewed. Entitlement is unchanged; the browser
         # must not fetch private profile data or stamp an unreviewed cover.
+        compact=compact_pdf.read(subject,year,content,root=root) if staged is not None else None
+        if compact is not None:
+            content,digest=compact
         response=send_file(BytesIO(content),mimetype="application/pdf",as_attachment=True,
                            download_name=f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_DRAF.pdf",
                            conditional=False)

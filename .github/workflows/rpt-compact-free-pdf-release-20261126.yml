@@ -1,0 +1,57 @@
+name: Verify 31 compact free RPT PDF release candidates
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/compact_free_pdf_2027/**'
+      - '.github/workflows/rpt-compact-free-pdf-release-20261126.yml'
+      - 'web/rpt_compact_pdf.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'web_v1_static_preview/rpt-personalize.js'
+      - 'tests/test_rpt_compact_pdf.py'
+      - 'rpt_2027/web_2027_pdfs/original_cover_layout_verified.json'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - name: Verify every original cover and candidate checksum
+        run: |
+          python - <<'PY'
+          from hashlib import sha256
+          from pathlib import Path
+          import json
+          import fitz
+          from web.rpt_native_word_batch import PINS
+          base=Path("rpt_2027")
+          root=base/"compact_free_pdf_2027"
+          m=json.loads((root/"manifest.json").read_text())
+          assert m["count"]==31 and set(m["files"])==set(PINS)
+          assert len(list(root.rglob("*.pdf")))==31 and not list(root.rglob("*.docx"))
+          for key,e in m["files"].items():
+              subject,year=key.split(":")
+              assert e["path"]==f"{subject}/tahun_{year}.pdf"
+              old=base/"web_2027_pdfs"/e["path"]
+              new=root/e["path"]
+              assert not old.is_symlink() and not new.is_symlink()
+              assert sha256(old.read_bytes()).hexdigest()==PINS[key]==e["source_sha256"]
+              data=new.read_bytes()
+              assert len(data)==e["bytes"] and sha256(data).hexdigest()==e["sha256"]
+              with fitz.open(old) as a,fitz.open(new) as b:
+                  assert len(a)==e["source_pages"] and len(b)==e["pages"]
+                  assert a[0].get_pixmap().samples==b[0].get_pixmap().samples
+                  for p in list(b)[1:]:
+                      assert p.get_text().strip()
+                      assert abs(p.rect.width-841.89)<2 and abs(p.rect.height-595.28)<2
+              print(key,e["source_pages"],e["pages"])
+          PY
+      - run: python -m unittest discover -s tests -p 'test_rpt_compact_pdf.py' -v

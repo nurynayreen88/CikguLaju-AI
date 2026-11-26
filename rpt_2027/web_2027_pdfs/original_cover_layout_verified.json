@@ -1270,5 +1270,74 @@
     "source_sha256_by_subject_year": {
       "matematik_sjkc:3": "c51aec85dfa0aa7f57b72128152b51c14e189cdb4c276d7fe28d271009ca9e7b"
     }
+  },
+  "compact_pdf_covers": {
+    "version": 1,
+    "page_width": 841.8898,
+    "page_height": 595.2756,
+    "tolerance_pt": 0.3,
+    "logo_interior_top_left": [
+      357.3,
+      70.4,
+      484.6,
+      197.6
+    ],
+    "logo_image_safe_top_left": [
+      365,
+      77,
+      477,
+      190
+    ],
+    "school_row_top_left": [
+      274,
+      332.5,
+      742,
+      359.5
+    ],
+    "teacher_row_top_left": [
+      274,
+      388.5,
+      742,
+      415.5
+    ],
+    "identity_background_rgb": [
+      0.960784,
+      0.972549,
+      0.964706
+    ],
+    "status": "COMPACT_RPT_PDF_COVER_VERIFIED",
+    "source_sha256_by_subject_year": {
+      "matematik:2": "3de5c4502dcd56495991564a01de213b77e94d9e59a179180d75a3353d2983b6",
+      "matematik:3": "504ed5d73282d9c195045e51de3e13f44741bacb6f7e163110d886c764bd8417",
+      "muzik:2": "186a2db4ce6e962ecaaf6e8bd6dd7a22fe0850be41dbfb5d5e1a34ce15213934",
+      "muzik:3": "9a296bdaab775628ac34e39a334b21bbbaf3430229085646c33ad316924cb801",
+      "muzik:4": "98bde4bb9dce35ffa1710683c026b6a4388d79dbfc17b8a47ee54e921a6d6251",
+      "muzik:5": "e8436e5297b78ca9723cc3a1ba42f6177466cccc18c79d5acc14e273a87664a4",
+      "muzik:6": "4949899d9bc74156a18908f4bed7e9e3541cdb7ddba2b7410430805892e922b8",
+      "pendidikan_moral:2": "2f64bbefc86161b7391300f57866f632c30d65e71968ceecc026696d515bdc43",
+      "pendidikan_moral:3": "675f789bc3b3df07ba72622c80640c1a74b3f554767e19a42f7debb081023a72",
+      "pendidikan_moral:4": "e8e2ef908a8857899473f4508dc05a5f8cf50cc562447a9efa6705000f839b11",
+      "pendidikan_moral:5": "e15048af4c3fdc95e23c801710e81d9e3a7d74541cc064f24cdde7e2db7c647d",
+      "pendidikan_moral:6": "be0bb6310c29468f5da740a78412670d6ba346cb75d8a9dc59190dd109075924",
+      "pjpk:2": "a9f9fa647285cfc7592b8ecb0f22a964da8ca20a37c49f485908e1c826bc1f1f",
+      "pjpk:3": "b1747bb4289e7f73cbfd468bc71f999487057465d5100b9f351f66b936319efa",
+      "pjpk:4": "6a45b86be3cce0274c4131775d7e443e96a38e559660c259f7596391c866eb00",
+      "pjpk:5": "06cc8a92295017226ec5902f515ad44bdaa740eff452fdaa8e2f25ddfed1237b",
+      "pjpk:6": "161cc79cdd91ca2b239d2bbe84309feb04cb2d7a6052fbbc8fbe4d473c481183",
+      "psv:2": "1bd1835ef11e020f7be0135f4d4d5614144b9021ff83e6c89883750075e6a0b1",
+      "psv:3": "5f201cd82e7d118eceeedee1fd4fabafaf4f4735c84698c542bc7b096c1756a3",
+      "psv:4": "945b9fdd394a08111285fa4e943faec91d7cf8989d6e182da156c7a50750a0e6",
+      "psv:5": "600f7d89e95b37f14a29d3763857b171ae9744cd73fcd1774c2e43859eb64ded",
+      "psv:6": "9957d556d424e64940273b2aaed82fadc1338fff8945f526451e5f2a4f6de50a",
+      "rbt:4": "58a4070052d5a93ab6d07c3f04ffd7053841a5f2d3b1261d5537483740173a07",
+      "rbt:5": "d4e4beef377896e7c0a4d06f4c7f754abe1b9ae546c8eb44ad58c0498c9eb2ca",
+      "rbt:6": "fadaba02d1e38fecf4185c5381766a07a0715b363ec87f684c78b6e45f8d9ec9",
+      "sains:2": "f278f7dfd4bc14610b16590f0f7d8d6f82d10eb431c6e18e442db730c717fbac",
+      "sains:3": "3c7eb69b7da2360bb980827248162d1da420cde9f49e3877d4080051370ebc09",
+      "sains:4": "8245920d6a19424100b82d209229d2669d5136115b89356e5f61aa582fdb4e2e",
+      "sejarah:4": "64cb26fc86124748665e69314e8c5f26a24ec1f143ee6cc4e4a86e2ce6d4de23",
+      "sejarah:5": "ba243b2ccf1438cbe27e0914a567794d97485c2025e2e66e924da97f81ab3e50",
+      "sejarah:6": "dd8aee8a42cf5bd1c3177db9d330a7dd77b64aa6d928176ccca187f834049968"
+    }
   }
 }
