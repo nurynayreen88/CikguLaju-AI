@@ -190,7 +190,7 @@ def rtl_cell(cell,value,*,bold=False,center=False,shade=None):
         if not RTL.search(p.text):
             if not center:p.alignment=WD_ALIGN_PARAGRAPH.RIGHT
             continue
-        if not center:p.alignment=WD_ALIGN_PARAGRAPH.RIGHT
+        if not center:p.alignment=WD_ALIGN_PARAGRAPH.LEFT
         # OOXML pPr order matters: bidi must precede spacing and jc.
         ppr=p._p.get_or_add_pPr()
         bidi=OxmlElement("w:bidi");bidi.set(qn("w:val"),"1")
@@ -205,11 +205,11 @@ def rtl_cell(cell,value,*,bold=False,center=False,shade=None):
             run=p.add_run(value)
             run.bold=bold
             run.font.name="Amiri"
-            run.font.size=Pt(10)
+            run.font.size=Pt(9.5)
             props=run._r.get_or_add_rPr()
             fonts=props.find(qn("w:rFonts"))
             if fonts is not None:fonts.set(qn("w:cs"),"Amiri")
-            mark(props,"w:szCs",{"w:val":"20"})
+            mark(props,"w:szCs",{"w:val":"19"})
             mark(props,"w:rtl",{"w:val":"0" if number else "1"})
             mark(props,"w:lang",{"w:bidi":"ar-SA"})
         at=0
@@ -224,7 +224,7 @@ def paginate_rtl(doc,table,ranges):
     # Leave white space rather than force a full-height table.
     widths=[c.width.pt for c in table.columns]
     def cell_height(cell,width):
-        return 12+sum(16*max(1,sum(max(1,ceil(len(line)*6.0/max(20,width-18))) for line in p.text.splitlines() or [""])) for p in cell.paragraphs)
+        return 8+sum(13*max(1,sum(max(1,ceil(len(line)*5.3/max(20,width-14))) for line in p.text.splitlines() or [""])) for p in cell.paragraphs)
     def row_height(i):
         offset=0;heights=[]
         for tc in table.rows[i]._tr.tc_lst:
@@ -241,13 +241,13 @@ def paginate_rtl(doc,table,ranges):
         part=[];h=0
         for i in range(a,b+1):
             rh=row_height(i)
-            if part and (header+max(label,h+rh)>budget or len(part)>=4):
+            if part and (header+max(label,h+rh)>budget or len(part)>=5):
                 blocks.append((a,part,max(label,h)));part=[];h=0
             part.append(i);h+=rh
         if part:blocks.append((a,part,max(label,h)))
     pages=[];current=[];total=header
     for a,rows,h in blocks:
-        if current and (total+h>budget or sum(len(r) for _,r in current)+len(rows)>4):
+        if current and (total+h>budget or sum(len(r) for _,r in current)+len(rows)>5):
             pages.append(current);current=[];total=header
         current.append((a,rows));total+=h
     if current:pages.append(current)
@@ -299,7 +299,7 @@ def build_word(subject,year,root=ROOT):
     section.top_margin=section.bottom_margin=Cm(1.1)
     section.header_distance=section.footer_distance=Cm(.45)
     section.header.paragraphs[0].text=f"RPT 2027 · {subject.replace('_',' ').upper()} · TAHUN {year}"
-    section.footer.paragraphs[0].text="RPT 2027 · DRAF SEMAKAN · Kumpulan A dan B"
+    section.footer.paragraphs[0].text="RPT 2027 · Kumpulan A dan B"
     add_word_cover(doc,cover_png(raw,lock,key))
     table=doc.add_table(rows=1,cols=5);table.style="Table Grid";table.autofit=False
     table.alignment=WD_TABLE_ALIGNMENT.CENTER
