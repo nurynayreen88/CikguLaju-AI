@@ -39,6 +39,8 @@ def partition(phases,parts):
     assert [a for p in parts for a in p["candidate_activities"]]==phases
 
 def create(plan):
+    bank=json.loads(Path(__file__).with_name('dlp_session_targeted_reinforcement_20261126.json').read_text())['sets'][plan['key']]
+    used_bank=set();previous=None
     by_source=defaultdict(list);phases_by_source=defaultdict(dict)
     for w in plan["weeks"]:
         for s in w["sessions"]:
@@ -63,8 +65,14 @@ def create(plan):
                 for phase in p["candidate_activities"]:
                     activities.append({"source_id":p["actual_rph_id"],"source_label":p["source_id"],**phase})
             total=sum(x["end"]-x["start"] for x in activities)
-            issues=[]
-            if not parts:issues.append("RESERVE_SPECIFIC_PBD_REQUIRED")
+            issues=[];targeted=None
+            if parts:previous=parts[-1]["source_id"]
+            if s["reserve_minutes"]:
+                assert s["reserve_minutes"]==30 and previous in bank,(plan["key"],previous,s)
+                pupils,teacher=bank[previous];used_bank.add(previous)
+                targeted={"source_label":previous,"phase":"Targeted reinforcement / PBD","teacher":teacher,"pupils":pupils,"planned_minutes":30,"status":"REVIEW_DURATION_AND_SCOPE"}
+                if total+30>s["minutes"]:issues.append("REINFORCEMENT_TIMING_REVIEW")
+            if not parts:issues.append("RESERVE_SPECIFIC_PBD_DRAFTED")
             if len(parts)>1:issues.append("COMBINED_OBJECTIVE_AND_PBD_REVIEW")
             if any(not p["candidate_activities"] for p in parts):issues.append("EMPTY_SOURCE_PART_REVIEW")
             if any(p["from_minute"] or p["to_minute"]!=p["original_minutes"] for p in parts):issues.append("CONTINUATION_OBJECTIVE_AND_CLOSURE_REVIEW")
@@ -73,13 +81,14 @@ def create(plan):
             if any(p["timing_delta_minutes"] for p in parts):issues.append("SOURCE_BOUNDARY_TIMING_REVIEW")
             if not issues:issues.append("EXACT_SOURCE_RETAIN")
             counts.update(issues)
-            drafts.append({"week":w["week"],"dates":w["dates"],"session":s["session"],"slot_minutes":s["minutes"],"source_ids":[p["actual_rph_id"] for p in parts],"source_standards":[p["standards"] for p in parts],"source_evidence":[p["learning_evidence"] for p in parts],"source_references":[p["textbook_reference"] for p in parts],"activities":activities,"original_activity_minutes":total,"review":issues})
+            drafts.append({"week":w["week"],"dates":w["dates"],"session":s["session"],"slot_minutes":s["minutes"],"source_ids":[p["actual_rph_id"] for p in parts],"source_standards":[p["standards"] for p in parts],"source_evidence":[p["learning_evidence"] for p in parts],"source_references":[p["textbook_reference"] for p in parts],"activities":activities,"original_activity_minutes":total,"targeted_reinforcement":targeted,"review":issues})
+    assert used_bank==set(bank),(plan["key"],used_bank^set(bank))
     assert len(drafts)==plan["sessions"]
     assert sum(d["original_activity_minutes"] for d in drafts)==plan["source_minutes"]
     original=[(label,p["start"],p["end"],p["teacher"],p["pupils"]) for label,phases in phases_by_source.items() for p in phases.values()]
     actual=[(p["source_label"],p["start"],p["end"],p["teacher"],p["pupils"]) for d in drafts for p in d["activities"]]
     assert Counter(original)==Counter(actual)
-    result={"key":plan["key"],"source_rows":len(by_source),"sessions":len(drafts),"original_phases_preserved":len(actual),"review_counts":dict(counts),"release_ready":False,"draft_sessions":drafts}
+    result={"key":plan["key"],"source_rows":len(by_source),"sessions":len(drafts),"original_phases_preserved":len(actual),"targeted_reinforcement_drafts":len(used_bank),"review_counts":dict(counts),"release_ready":False,"draft_sessions":drafts}
     print("DLP_DISTINCT_ACTIVITY_DRAFT",json.dumps({k:v for k,v in result.items() if k!="draft_sessions"}),flush=True)
     return result
 
