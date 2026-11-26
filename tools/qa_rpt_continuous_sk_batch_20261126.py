@@ -23,6 +23,7 @@ from docx.oxml.ns import qn
 from docx.shared import Pt, Cm
 from scripts.build_web_rpt_weekly_suggestions import ROOT, SUBJECTS, read_weeks, WEEK, DATE, LESSON
 from scripts.reschedule_web_rpt_teaching_weeks import pdf_rows
+from web.rpt_native_word_cover import personalize_word
 
 # The live route overrides English integrated, Maths Y4–6 and Sains Y5–6.
 # Never use the superseded manifest files for those years. RTL subjects need
@@ -145,41 +146,23 @@ def cover(doc,slug,year,source):
     from docx.enum.table import WD_ROW_HEIGHT_RULE
     r.height_rule=WD_ROW_HEIGHT_RULE.EXACTLY
     fill(r.cells[0],"LOGO SEKOLAH",center=True,size=9)
-    for line in ("RANCANGAN PENGAJARAN TAHUNAN 2027",slug.replace("_"," ").upper()+f" (SK) • TAHUN {year}"):
+    with fitz.open(source) as original:
+        cover_lines=[line.strip() for line in original[0].get_text().splitlines() if line.strip()]
+    title=next((line for line in cover_lines if "RANCANGAN PENGAJARAN TAHUNAN" in line),None)
+    subtitle=next((line for line in cover_lines if re.search(r"TAHUN\\s+"+str(year)+r"\\b",line,re.I)),None)
+    if not title or not subtitle: raise ValueError("Original cover title/subject not recovered")
+    for line in (title,subtitle):
         p=doc.add_paragraph();p.alignment=WD_ALIGN_PARAGRAPH.CENTER
         p.paragraph_format.space_after=Pt(12)
         run=p.add_run(line);run.bold=True;run.font.size=Pt(20 if line.startswith("RANCANGAN") else 15)
     fields=table(doc,(170,490))
-    row=fields.rows[0];row.height=Pt(56)
+    row=fields.rows[0];row.height=Pt(56);row.height_rule=WD_ROW_HEIGHT_RULE.EXACTLY
     fill(row.cells[0],"NAMA SEKOLAH",bold=True,center=True,shade="F5F8F6")
     fill(row.cells[1],"__________________________________________",shade="F5F8F6",size=11)
-    row=add_row(fields,(170,490));row.height=Pt(56)
+    row=add_row(fields,(170,490));row.height=Pt(56);row.height_rule=WD_ROW_HEIGHT_RULE.EXACTLY
     fill(row.cells[0],"NAMA GURU",bold=True,center=True,shade="F5F8F6")
     fill(row.cells[1],"__________________________________________",shade="F5F8F6",size=11)
     doc.add_page_break()
-
-def personalize_word(original,identity):
-    # Only the marked cover tables are changed, never the teaching grid.
-    from web.kp2027_year1_rpt_personalize import _identity_fields
-    school,teacher,_,logo=_identity_fields(identity)
-    if not any((school,teacher,logo)):return original
-    doc=Document(BytesIO(original))
-    if len(doc.tables)!=3 or doc.tables[0].cell(0,0).text!="LOGO SEKOLAH" or [doc.tables[1].cell(i,0).text for i in range(2)]!=["NAMA SEKOLAH","NAMA GURU"]:
-        raise ValueError("Unrecognized Word cover")
-    baseline=doc.tables[2]._tbl.xml
-    if logo:
-        cell=doc.tables[0].cell(0,0);cell.text=""
-        p=cell.paragraphs[0];p.alignment=WD_ALIGN_PARAGRAPH.CENTER
-        from PIL import Image
-        with Image.open(BytesIO(logo)) as img:
-            w,h=img.size
-        scale=min(112/w,112/h)
-        p.add_run().add_picture(BytesIO(logo),width=Pt(w*scale),height=Pt(h*scale))
-    for i,value in enumerate((school,teacher)):
-        if value:
-            fill(doc.tables[1].cell(i,1),value,shade="F5F8F6",size=10 if len(value)<90 else 8.5)
-    assert doc.tables[2]._tbl.xml==baseline
-    buf=BytesIO();doc.save(buf);return buf.getvalue()
 
 def build(slug,year,out,manifest,layout):
     key=f"{slug}:{year}";entry=manifest["files"][key]
