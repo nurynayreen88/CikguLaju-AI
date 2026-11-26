@@ -156,7 +156,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 @media print{
  #workspace > .app-shell:not(#rph-preview-panel){display:block!important}
  #workspace .app-main,#workspace #view-rph{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
- #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-payment,#workspace #view-referral,#workspace #view-guide{display:none!important}
+ #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-payment,#workspace #view-referral,#workspace #view-guide,#workspace #view-curriculum-docs{display:none!important}
  #workspace #view-rph > *:not(#rph-preview-panel){display:none!important}
 }
 
@@ -793,6 +793,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
+    <button type="button" class="sidebar-tab" data-web-view="curriculum-docs" aria-controls="view-curriculum-docs"><span aria-hidden="true">📚</span> Dokumen Kurikulum</button>
     <details class="sidebar-more" id="sidebar-more">
       <summary>Menu lain</summary>
       <div class="sidebar-more-list">
@@ -1089,6 +1090,136 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <ul id="special-materials-list"></ul>
   <p class="notice" id="special-materials-note" role="status"></p>
  </section>
+</section>
+<section id="view-curriculum-docs" class="app-view" aria-labelledby="curriculum-docs-heading" hidden>
+ <h2 id="curriculum-docs-heading" tabindex="-1">Dokumen Kurikulum</h2>
+ <p class="notice">Rujukan kurikulum untuk semua pengguna log masuk, tanpa penggunaan kuota RPH. Pilih dokumen yang sepadan dengan kurikulum, tahun dan aliran sekolah. Pautan membuka sumber asal; akses fail tertakluk pada perkongsian pemilik sumber.</p>
+ <div class="rpt-selectors">
+  <div><label for="curriculum-docs-type">Kurikulum</label><select id="curriculum-docs-type"><option value="">Pilih kurikulum</option><option value="kp2027">KP2027</option><option value="kssr">KSSR (Semakan 2017)</option><option value="dpk">DPK Edisi 3</option><option value="pk">Pendidikan Khas</option></select></div>
+ </div>
+ <div id="curriculum-docs-kp2027" hidden>
+  <h3>Dokumen Kurikulum KP2027</h3>
+  <p>Rujukan umum Kementerian Pendidikan Malaysia. Dokumen mata pelajaran Tahun 1 akan disenaraikan berasingan selepas sumber asal dikenal pasti.</p>
+  <p><a href="https://www.moe.gov.my/kurikulum-persekolahan-2027" target="_blank" rel="noopener noreferrer">Buka rujukan umum KP2027 — Portal KPM</a></p>
+  <p><a href="https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027" target="_blank" rel="noopener noreferrer">Rujukan DK Pendidikan Islam dan Bahasa Arab Tahun 1 — PPD Saratok</a></p>
+  <ul><li><a href="https://sites.google.com/moe-dl.edu.my/kp2027bitampin/home" target="_blank" rel="noopener noreferrer">Bahasa Inggeris Tahun 1 SK — bahan penataran KP2027</a></li><li><a href="https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home" target="_blank" rel="noopener noreferrer">Alam dan Manusia Tahun 1 — bahan penataran KP2027</a></li><li><a href="https://www.pendidik2u.my/dokumen-kurikulum/" target="_blank" rel="noopener noreferrer">Direktori dokumen KP2027 mengikut subjek (sumber sekunder)</a></li></ul>
+  <p><a href="https://ecentral.my/wp-content/uploads/2026/11/3.-DK-MATEMATIK-TAHUN-1_ISBN.pdf" target="_blank" rel="noopener noreferrer">DK Matematik Tahun 1 — PDF salinan rujukan (eCentral)</a></p>
+ </div>
+ <div id="curriculum-docs-kssr" hidden>
+  <h3>DSKP KSSR (Semakan 2017)</h3>
+  <p>Rujukan mengikut subjek dan aliran. Direktori PPD menyenaraikan Tahun 1–6; pilih tahun dan aliran yang betul di sumber asal.</p>
+  <p><a href="https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/dskp" target="_blank" rel="noopener noreferrer">Direktori DSKP Matematik dan Sains — SK, SJKC, SJKT dan DLP (PPD Batu Pahat)</a></p>
+  <h4>Matematik dan Sains — SK, SJKC, SJKT dan DLP</h4>
+ <div class="rpt-selectors">
+ <div><label for="curriculum-docs-year">Tahun</label><select id="curriculum-docs-year"><option value="">Semua tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select></div>
+ <div><label for="curriculum-docs-subject">Subjek dan aliran</label><select id="curriculum-docs-subject"><option value="">Semua subjek</option><option value="Matematik SK">Matematik SK</option><option value="Sains SK">Sains SK</option><option value="Matematik SJKC">Matematik SJKC</option><option value="Matematik SJKT">Matematik SJKT</option><option value="Matematik DLP">Matematik DLP</option><option value="Sains SJKC">Sains SJKC</option><option value="Sains SJKT">Sains SJKT</option><option value="Sains DLP">Sains DLP</option></select></div>
+ </div>
+ <ul id="curriculum-docs-kssr-list"><li data-doc-year="1" data-doc-subject="Matematik SK"><a href="https://drive.google.com/file/d/1HWScvhf2V3e6vQbpaanRGroncfKJZ3ac/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SK Tahun 1</a></li>
+<li data-doc-year="2" data-doc-subject="Matematik SK"><a href="https://drive.google.com/file/d/1AWFIV6IUqi6y2OxQ8X-z-oR-HA2IFYlm/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SK Tahun 2</a></li>
+<li data-doc-year="3" data-doc-subject="Matematik SK"><a href="https://drive.google.com/file/d/1LTArhuu1PR9EzkgXHJmz2Q9oD1OMdjCX/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SK Tahun 3</a></li>
+<li data-doc-year="4" data-doc-subject="Matematik SK"><a href="https://drive.google.com/file/d/18RGogErtcHKADNlnu6sOxhLemSe1WaDg/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SK Tahun 4</a></li>
+<li data-doc-year="5" data-doc-subject="Matematik SK"><a href="https://drive.google.com/file/d/1DE-P5XhkiUbFWSDx5RpRIJS8HemU2jJa/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SK Tahun 5</a></li>
+<li data-doc-year="6" data-doc-subject="Matematik SK"><a href="https://drive.google.com/file/d/1mk70cGS-G5DmItXs8hM4vbxDqG0V-dEm/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SK Tahun 6</a></li>
+<li data-doc-year="1" data-doc-subject="Sains SK"><a href="https://drive.google.com/file/d/1I474OL3Mw-EcaFjhdq-SV9o0jCzk8srH/view" target="_blank" rel="noopener noreferrer">DSKP Sains SK Tahun 1</a></li>
+<li data-doc-year="2" data-doc-subject="Sains SK"><a href="https://drive.google.com/file/d/14_-xbpuXYZLVzs6ziHZYWqHlX-Vaiwrj/view" target="_blank" rel="noopener noreferrer">DSKP Sains SK Tahun 2</a></li>
+<li data-doc-year="3" data-doc-subject="Sains SK"><a href="https://drive.google.com/file/d/1LWXiV8FSvyeeyV9ng5h5HhuWpH_P5zXM/view" target="_blank" rel="noopener noreferrer">DSKP Sains SK Tahun 3</a></li>
+<li data-doc-year="4" data-doc-subject="Sains SK"><a href="https://drive.google.com/file/d/1irs3s0na0wC9LCUONGSNGnzkZbfFh9jN/view" target="_blank" rel="noopener noreferrer">DSKP Sains SK Tahun 4</a></li>
+<li data-doc-year="5" data-doc-subject="Sains SK"><a href="https://drive.google.com/file/d/1lgo5lmo7i_e8edKH2ZF--5iBNXgDLxHP/view" target="_blank" rel="noopener noreferrer">DSKP Sains SK Tahun 5</a></li>
+<li data-doc-year="6" data-doc-subject="Sains SK"><a href="https://drive.google.com/file/d/1FBOoBNH4pk-gXH2oR1GMcOLEv1GxTRwO/view" target="_blank" rel="noopener noreferrer">DSKP Sains SK Tahun 6</a></li>
+<li data-doc-year="1" data-doc-subject="Matematik SJKC"><a href="https://drive.google.com/file/d/1XV-6_4F8DeggjbpbbfnHzDmNqqHAEG7g/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 1</a></li>
+<li data-doc-year="2" data-doc-subject="Matematik SJKC"><a href="https://drive.google.com/file/d/1wo0Us6Bl_BQBxq_Ijf4rJMPW_eymYhTR/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 2</a></li>
+<li data-doc-year="3" data-doc-subject="Matematik SJKC"><a href="https://drive.google.com/file/d/16CDXNbWbpKwtVsNxFkzWcCXms8631PFA/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 3</a></li>
+<li data-doc-year="4" data-doc-subject="Matematik SJKC"><a href="https://drive.google.com/file/d/1auJsWeEN5NIgV9QF2CVEFtiRzQHQC3ma/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 4</a></li>
+<li data-doc-year="5" data-doc-subject="Matematik SJKC"><a href="https://drive.google.com/file/d/1XM9HToqoZ7ID0cTPcyhlLlgAicc9UUvm/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 5</a></li>
+<li data-doc-year="6" data-doc-subject="Matematik SJKC"><a href="https://drive.google.com/file/d/17WnQDqmdAEfG8gN8Ln4ieCNRBiye7t84/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKC Tahun 6</a></li>
+<li data-doc-year="1" data-doc-subject="Matematik SJKT"><a href="https://drive.google.com/file/d/1Az7u383pgb9NJL_9qKQiaLGQ43i3mzWa/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKT Tahun 1</a></li>
+<li data-doc-year="2" data-doc-subject="Matematik SJKT"><a href="https://drive.google.com/file/d/1NGHIYM3biVXqxcPYrVPe3YOQWlMOrik6/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKT Tahun 2</a></li>
+<li data-doc-year="3" data-doc-subject="Matematik SJKT"><a href="https://drive.google.com/file/d/1pQCGNIxQB5nk6LYeUmY3CD-0i0xNH7/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKT Tahun 3</a></li>
+<li data-doc-year="4" data-doc-subject="Matematik SJKT"><a href="https://drive.google.com/file/d/1rycdYrLAAMfKl-UlxOa71-JHG8etZKr1/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKT Tahun 4</a></li>
+<li data-doc-year="5" data-doc-subject="Matematik SJKT"><a href="https://drive.google.com/file/d/1UjvFpHCkdIcVuV2G0ZD_WbWAt3RCAe_X/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKT Tahun 5</a></li>
+<li data-doc-year="6" data-doc-subject="Matematik SJKT"><a href="https://drive.google.com/file/d/12sDo9o4xgBULfCZrW95HuIk5oyUz4HBr/view" target="_blank" rel="noopener noreferrer">DSKP Matematik SJKT Tahun 6</a></li>
+<li data-doc-year="1" data-doc-subject="Matematik DLP"><a href="https://drive.google.com/file/d/15oaqa95rQCe-FdWpp5RVh4aREClpgg5_/view" target="_blank" rel="noopener noreferrer">DSKP Matematik DLP Tahun 1</a></li>
+<li data-doc-year="2" data-doc-subject="Matematik DLP"><a href="https://drive.google.com/file/d/1o8LEnKrPt5QpS9VcL-kbbEM_67-daRvM/view" target="_blank" rel="noopener noreferrer">DSKP Matematik DLP Tahun 2</a></li>
+<li data-doc-year="3" data-doc-subject="Matematik DLP"><a href="https://drive.google.com/file/d/188CYHRHzt9JGKWRXy81wHzO0KZ9oPVfd/view" target="_blank" rel="noopener noreferrer">DSKP Matematik DLP Tahun 3</a></li>
+<li data-doc-year="4" data-doc-subject="Matematik DLP"><a href="https://drive.google.com/file/d/11ScQkAHdSwUws4oau6htowtLNooOFwXk/view" target="_blank" rel="noopener noreferrer">DSKP Matematik DLP Tahun 4</a></li>
+<li data-doc-year="5" data-doc-subject="Matematik DLP"><a href="https://drive.google.com/file/d/1bibOluZym59fLHTe4BtF4G0Tda0MDeAZ/view" target="_blank" rel="noopener noreferrer">DSKP Matematik DLP Tahun 5</a></li>
+<li data-doc-year="6" data-doc-subject="Matematik DLP"><a href="https://drive.google.com/file/d/1AQNTXJtOSlQHR2eRvnDXwG0ZLsqCXVs1/view" target="_blank" rel="noopener noreferrer">DSKP Matematik DLP Tahun 6</a></li>
+<li data-doc-year="1" data-doc-subject="Sains SJKC"><a href="https://drive.google.com/file/d/1sVhOygGwp4h9ZR-kT9zeTpiV6WoblTTd/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKC Tahun 1</a></li>
+<li data-doc-year="2" data-doc-subject="Sains SJKC"><a href="https://drive.google.com/file/d/1E9JQkLSN1ui1I7htvDE2ovj9aRzLx8BD/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKC Tahun 2</a></li>
+<li data-doc-year="3" data-doc-subject="Sains SJKC"><a href="https://drive.google.com/file/d/1dFu-9aEA49J47ogYkaU_TxBKJIer5gW_/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKC Tahun 3</a></li>
+<li data-doc-year="4" data-doc-subject="Sains SJKC"><a href="https://drive.google.com/file/d/1m97nnGoZVXiU5qiqpGcRki2Ug9VNwdEP/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKC Tahun 4</a></li>
+<li data-doc-year="5" data-doc-subject="Sains SJKC"><a href="https://drive.google.com/file/d/1cr9zKsNsm_v0lB6uH-1Mrl736pho8uv4/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKC Tahun 5</a></li>
+<li data-doc-year="6" data-doc-subject="Sains SJKC"><a href="https://drive.google.com/file/d/1DeWU9TJBqNyKgdCRmQ5_jNC3kRBpgZt9/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKC Tahun 6</a></li>
+<li data-doc-year="1" data-doc-subject="Sains SJKT"><a href="https://drive.google.com/file/d/1BcX6avASLAVr-3ed7l1uisvCToKnvU61/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKT Tahun 1</a></li>
+<li data-doc-year="2" data-doc-subject="Sains SJKT"><a href="https://drive.google.com/file/d/1CMSHj4qSZLW1ohldeFm9cXc8LkhS94W6/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKT Tahun 2</a></li>
+<li data-doc-year="3" data-doc-subject="Sains SJKT"><a href="https://drive.google.com/file/d/1ebVpI8M0e6BtRuxphxWMhwLns2xPsI3y/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKT Tahun 3</a></li>
+<li data-doc-year="4" data-doc-subject="Sains SJKT"><a href="https://drive.google.com/file/d/1gghC1aJmrR5EFiDaLtRTycfmhLPDkPKd/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKT Tahun 4</a></li>
+<li data-doc-year="5" data-doc-subject="Sains SJKT"><a href="https://drive.google.com/file/d/1HmiZQdk5iG0DaNx9DnErKLu9TJEbpYe4/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKT Tahun 5</a></li>
+<li data-doc-year="6" data-doc-subject="Sains SJKT"><a href="https://drive.google.com/file/d/1s25w5lTsR-TSTKf2slMs58d9aLVhUk7n/view" target="_blank" rel="noopener noreferrer">DSKP Sains SJKT Tahun 6</a></li>
+<li data-doc-year="1" data-doc-subject="Sains DLP"><a href="https://drive.google.com/file/d/1NOpYP8iFWq26Q_aRwqytBSGsbiAOHmtf/view" target="_blank" rel="noopener noreferrer">DSKP Sains DLP Tahun 1</a></li>
+<li data-doc-year="2" data-doc-subject="Sains DLP"><a href="https://drive.google.com/file/d/1ofkH-zGNrhBBxOGzWyTq7GhTdP5gibOB/view" target="_blank" rel="noopener noreferrer">DSKP Sains DLP Tahun 2</a></li>
+<li data-doc-year="3" data-doc-subject="Sains DLP"><a href="https://drive.google.com/file/d/1Sp6dPTSw331w2B3IgAj9qs0KCHAlXLf7/view" target="_blank" rel="noopener noreferrer">DSKP Sains DLP Tahun 3</a></li>
+<li data-doc-year="4" data-doc-subject="Sains DLP"><a href="https://drive.google.com/file/d/1avyxBu6c5DDd4r1LU5Ffqt1D6Iyp8Q6G/view" target="_blank" rel="noopener noreferrer">DSKP Sains DLP Tahun 4</a></li>
+<li data-doc-year="5" data-doc-subject="Sains DLP"><a href="https://drive.google.com/file/d/1gx4HaxnTqouBfx2NzQYBieupVmOmsxI-/view" target="_blank" rel="noopener noreferrer">DSKP Sains DLP Tahun 5</a></li>
+<li data-doc-year="6" data-doc-subject="Sains DLP"><a href="https://drive.google.com/file/d/1PSqQSThcRA1fX9R2lck9TX2LOQISkK7k/view" target="_blank" rel="noopener noreferrer">DSKP Sains DLP Tahun 6</a></li></ul>
+ <p id="curriculum-docs-match-count" role="status">48 pautan sumber</p>
+  <h4>Bahasa Arab — KSSR Semakan 2017</h4>
+ <p>Pautan PDF yang disenaraikan di <a href="https://www.akademiyoutuber.com/2023/03/dskp-bagi-mata-pelajaran-bahasa-arab.html" target="_blank" rel="noopener noreferrer">Akademi Youtuber</a>. Nama dan jenis fail disemak; akses tertakluk kepada pemilik sumber.</p>
+ <ul id="curriculum-docs-arabic-list"><li><a href="https://drive.google.com/file/d/18Y70kv_csBIGWdKN6klG3zXN7ZgFuaMr/view?usp=sharing" target="_blank" rel="noopener noreferrer">DSKP Bahasa Arab Tahun 1</a></li>
+<li><a href="https://drive.google.com/file/d/10VpTM3ii81eI138wR2yCgow0Ado6hzEC/view?usp=sharing" target="_blank" rel="noopener noreferrer">DSKP Bahasa Arab Tahun 2</a></li>
+<li><a href="https://drive.google.com/file/d/1LlqBjz05t3M-M-kMC_FpZA0QSXdcUaZW/view?usp=sharing" target="_blank" rel="noopener noreferrer">DSKP Bahasa Arab Tahun 3</a></li>
+<li><a href="https://drive.google.com/file/d/1ljeuSbPI4vfu0moS_itg7ONaJ6mnKII2/view?usp=sharing" target="_blank" rel="noopener noreferrer">DSKP Bahasa Arab Tahun 4</a></li>
+<li><a href="https://drive.google.com/file/d/1D-Yb6pwiHAf4k4FDkPbdbsAhvGwv8G5q/view?usp=sharing" target="_blank" rel="noopener noreferrer">DSKP Bahasa Arab Tahun 5</a></li>
+<li><a href="https://drive.google.com/file/d/1tHZTKLAc_4N4fpMvHeJN_DgCpn_m7dMp/view?usp=sharing" target="_blank" rel="noopener noreferrer">DSKP Bahasa Arab Tahun 6</a></li></ul>
+ <h4>Bahasa Melayu SK — KSSR Semakan 2017</h4>
+<p>Pautan asal daripada <a href="https://sites.google.com/moe-dl.edu.my/segakdipersada/kurikulum/panitia-mata-pelajaran/bahasa-melayu/dokumen-standard-kurikulum-pentaksiran-dskp" target="_blank" rel="noopener noreferrer">Panitia Bahasa Melayu Se'Gak Dipersada</a>. Akses fail tertakluk kepada pemilik sumber.</p>
+<ul><li><a href="https://drive.google.com/file/d/14eMyxBVGQQBn4y93Jx8xGFbGDGjRX4AJ/view" target="_blank" rel="noopener noreferrer">DSKP Bahasa Melayu SK Tahun 1</a></li>
+<li><a href="https://drive.google.com/file/d/1SIWyiFmqe4OyXD4Id1ArJo77t47YuRdN/view" target="_blank" rel="noopener noreferrer">DSKP Bahasa Melayu SK Tahun 2</a></li>
+<li><a href="https://drive.google.com/file/d/1bpjzm-JOQRmuhFJKl9Ab6-OpFJD7q2ku/view" target="_blank" rel="noopener noreferrer">DSKP Bahasa Melayu SK Tahun 3</a></li>
+<li><a href="https://drive.google.com/file/d/1CMEWsL2JDtrQHT2OOOXa0RsE8qJfSQB5/view" target="_blank" rel="noopener noreferrer">DSKP Bahasa Melayu SK Tahun 4</a></li>
+<li><a href="https://drive.google.com/file/d/1gSUi0HEBfHJTfkYyMYmZ0NcexjOJETsU/view" target="_blank" rel="noopener noreferrer">DSKP Bahasa Melayu SK Tahun 5</a></li>
+<li><a href="https://drive.google.com/file/d/1zX1lUK1rIXs_WPADcdKc2Bfk_Gdz08hX/view" target="_blank" rel="noopener noreferrer">DSKP Bahasa Melayu SK Tahun 6</a></li></ul>
+<h4>Rujukan subjek lain</h4>
+<ul><li><a href="https://gurubesar.my/himpunan-dskp-tahun-1-hingga-6-kssr/" target="_blank" rel="noopener noreferrer">Himpunan DSKP Tahun 1–6 pelbagai subjek — GuruBesar (semak edisi dan aliran)</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/panitiabahasainggeris2024/dokumen-standard-kurikulum" target="_blank" rel="noopener noreferrer">Bahasa Inggeris SK Tahun 1–6 — direktori panitia</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/fcpi/download" target="_blank" rel="noopener noreferrer">Pendidikan Islam dan Bahasa Arab Tahun 1–6 — e-JAUHAR (sebahagian pautan lama)</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/btsk-skmes/dskp-dan-rpt" target="_blank" rel="noopener noreferrer">Bahasa Tamil SK Tahun 1–6 — direktori panitia (flipbook)</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/panitia-iban-2026/2-dokumen-standard-kurikulum-pentaksiran" target="_blank" rel="noopener noreferrer">Bahasa Iban Tahun 1–6 — direktori panitia 2026</a></li></ul>
+<h4>Rujukan bahasa tambahan dan SJK</h4>
+<ul><li><a href="https://sites.google.com/moe.gov.my/bahasa-iban-di-sekula/turai-pelajar/dskp-kssr" target="_blank" rel="noopener noreferrer">Bahasa Iban Tahun 1–6 — direktori Bahasa Iban</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/ubspb/mata-pelajaran/bahasa-cina/sekolah-rendah/sjkc" target="_blank" rel="noopener noreferrer">Bahasa Cina SJKC — direktori JPN Sabah (pautan lama; semak akses)</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/sjktlb-bahasa-tamil/home/dskp-bahasa-tamil" target="_blank" rel="noopener noreferrer">Bahasa Tamil — direktori SJKT Ladang Brafferton (semak akses)</a></li>
+<li><a href="https://drive.google.com/file/d/1JvW_Yv5r1B-Dq1gzJvLw314R1uLJ6YqA/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">DSKP Bahasa Inggeris SJK Tahun 5 — pautan asal</a></li></ul>
+<p class="notice">Untuk DPK Edisi 3, pilih kategori DPK. Pautan direktori bukan pengesahan bahawa semua PDF boleh dimuat turun.</p>
+ </div>
+ <div id="curriculum-docs-dpk" hidden>
+ <h3>Dokumen Penjajaran Kurikulum Edisi 3 — Tahap I</h3>
+ <p>11 pautan asal mengikut subjek dan bahasa pengantar, disenaraikan dalam <a href="https://sites.google.com/moe-dl.edu.my/dokumenpenjajarankurikulum/home" target="_blank" rel="noopener noreferrer">direktori Dokumen Penjajaran Kurikulum</a>. Akses fail tertakluk pada pemilik sumber.</p>
+ <ul><li><a href="https://drive.google.com/file/d/1z4THFpOtMnJtVip6alXJvpSAXmyGyu-3/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Bahasa Melayu SK — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1GMvCyof-o1DmsNYUxpSuilOKgNp258vZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Bahasa Melayu SJK — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1mVmTE61xN-m055qVV4S2ipzCIzPL9t_T/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Bahasa Inggeris — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1vjNjPj_rWoEHugtdtMu1c8pNj7MtLVxn/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Matematik SK — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1Pf_50AAR_soA3PpvvBfK8Ecs-FL79wX9/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Matematik DLP — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1Km3tEnqC36GPK2pl9uUbzwfJKo6N8sTJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Matematik SJKC — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1bYA5U1r94rT0C3YzyJANBNmS0JtZ8mUb/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Matematik SJKT — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1ZjnSGhk571bQht9WWZy35Dv9a4g5rBHW/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Sains SK — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1R92a6_7EFHdhFWdq1tJpNdSsWl9jzx4c/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Sains DLP — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1fSWDWT9LBUb4RhFLX8Zw9x7pfDFh2xtH/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Sains SJKC — Tahap I</a></li>
+<li><a href="https://drive.google.com/file/d/1YSWR-alu7eEWO3I7q1HYl1StfbAAIZzH/view?usp=sharing" target="_blank" rel="noopener noreferrer">DPK Sains SJKT — Tahap I</a></li></ul>
+ </div>
+ <div id="curriculum-docs-pk" hidden>
+  <h3>Dokumen Kurikulum Pendidikan Khas</h3>
+  <p>Rujukan umum Bahagian Pendidikan Khas serta direktori KSSRPK. Asingkan masalah pembelajaran, ketidakupayaan pendengaran dan penglihatan; pilih aliran sebenar. Senarai masih belum lengkap.</p>
+  <p><a href="https://sites.google.com/moe-dl.edu.my/delimabpkhas/bahan-pengajaran-dan-pembelajaran" target="_blank" rel="noopener noreferrer">Buka sumber rujukan Bahagian Pendidikan Khas</a></p>
+<h4>KSSRPK — Masalah Pembelajaran (rujukan sumber)</h4>
+<p><a href="https://sites.google.com/moe-dl.edu.my/kurikulumskpkm/dokumen" target="_blank" rel="noopener noreferrer">Direktori dokumen SK Pendidikan Khas Melaka — rujukan BPK (pautan lama)</a></p><p><a href="https://sites.google.com/moe-dl.edu.my/skpendidikankhasbatupahat/kurikulum/koleksi-dskp-buku-teks-digital-kpm" target="_blank" rel="noopener noreferrer">Direktori SK Pendidikan Khas Batu Pahat — koleksi BPK</a></p>
+<ul><li><a href="https://sites.google.com/view/ppki-sk-dato-wan-kemara/pengoperasian-ppki/pengurusan-ppki-2022-2023/kurikulum-sesi-20222023" target="_blank" rel="noopener noreferrer">KSSRPK Masalah Pembelajaran Tahun 1–6 — SK Dato Wan Kemara</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/ppkipermata/utama/kurikulum/matapelajaran/pengurusan-diri/dokumen-standard-kurikulum-pendidikan-dskp" target="_blank" rel="noopener noreferrer">Pengurusan Kehidupan Tahun 1–6 — SK Taman Permata</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/sksb-ppkisksgbuloh/utama/pengurusan-kurikulum/pengurusan-panitia-ppki/dskp/dskp-tahun-1" target="_blank" rel="noopener noreferrer">DSKP Masalah Pembelajaran Tahun 1 — PPKI SK Sungai Buloh</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/sksb-ppkisksgbuloh/utama/pengurusan-kurikulum/pengurusan-panitia-ppki/dskp/dskp-tahun-4" target="_blank" rel="noopener noreferrer">DSKP Masalah Pembelajaran Tahun 4 — PPKI SK Sungai Buloh</a></li>
+<li><a href="https://sites.google.com/moe-dl.edu.my/sksb-ppkisksgbuloh/utama/pengurusan-kurikulum/pengurusan-panitia-ppki/dskp/dskp-tahun-5" target="_blank" rel="noopener noreferrer">DSKP Masalah Pembelajaran Tahun 5 — PPKI SK Sungai Buloh</a></li>
+<li><a href="https://kemahiranbelajarsite.wordpress.com/wp-content/uploads/2019/08/023-dskp-kssr-semakan-2017-masalah-pembelajaran-asas-3m-tahun-3.pdf" target="_blank" rel="noopener noreferrer">DSKP Asas 3M Masalah Pembelajaran Tahun 3 — salinan rujukan PDF</a></li></ul>
+ </div>
 </section>
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading">
@@ -1464,7 +1595,26 @@ function updateRphTrialFromDenial(data){
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
 const sidebarMore=document.getElementById("sidebar-more");
-const webViews=new Map([["today","view-today"],["rph","view-rph"],["worksheet","view-worksheet"],["bbm","view-bbm"],["uasa","view-uasa"],["pbd","view-pbd"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["guide","view-guide"]]);
+const curriculumDocsType=document.getElementById("curriculum-docs-type");
+const docsYear=document.getElementById("curriculum-docs-year");
+const docsSubject=document.getElementById("curriculum-docs-subject");
+function filterCurriculumDocs(){
+ let count=0;
+ document.querySelectorAll("#curriculum-docs-kssr-list li").forEach(item=>{
+  item.hidden=Boolean((docsYear.value&&docsYear.value!==item.dataset.docYear)||(docsSubject.value&&docsSubject.value!==item.dataset.docSubject));
+  if(!item.hidden)count++;
+ });
+ document.getElementById("curriculum-docs-match-count").textContent=count+" pautan sumber";
+}
+docsYear.addEventListener("change",filterCurriculumDocs);
+docsSubject.addEventListener("change",filterCurriculumDocs);
+
+curriculumDocsType.addEventListener("change",()=>{
+ for(const type of ["kp2027","kssr","dpk","pk"]){
+  document.getElementById("curriculum-docs-"+type).hidden=curriculumDocsType.value!==type;
+ }
+});
+const webViews=new Map([["today","view-today"],["rph","view-rph"],["worksheet","view-worksheet"],["bbm","view-bbm"],["uasa","view-uasa"],["pbd","view-pbd"],["special","view-special"],["rpt","view-rpt"],["curriculum-docs","view-curriculum-docs"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["guide","view-guide"]]);
 /* Only the original curriculum dropdowns and material actions are moved
  * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
  * or renders inside RPH Hari Ini. Event listeners and native APIs are reused.
