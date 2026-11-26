@@ -74,3 +74,34 @@ def document(subject,year,source,account,config,*,root):
         raise ValueError("RPT source changed")
     result=personalized_word(blob,raw,lock,f"{subject}:{year}",account,config)
     return result,hashlib.sha256(result).hexdigest()
+
+APPROVED_SCIENCE_PINS={
+    5:"281d25b8b37cfda50caa22ebcc9ee235767e1bfb4a8a4cfad171a5bf324a1e8b",
+    6:"0f168595c8c6259c455f143aeeb98489152a85cc599e5c1d60db88d19503d477",
+}
+
+def eligible_approved_science(year,source,*,root):
+    if not enabled() or year not in APPROVED_SCIENCE_PINS or source is None:
+        return False
+    from rpt_2027.sains import sk_documents
+    try:
+        expected=sk_documents.document_path(year,root=Path(root)/"sains")
+        return (expected is not None and Path(source)==expected and
+                hashlib.sha256(expected.read_bytes()).hexdigest()==APPROVED_SCIENCE_PINS[year])
+    except OSError:
+        return False
+
+def approved_science_document(year,source,account,config,*,root):
+    from web.english_rpt_2027_http import _has_paid_access
+    if not _has_paid_access(account):
+        raise PermissionError("Paid RPT Word only")
+    if not eligible_approved_science(year,source,root=root):
+        raise ValueError("Approved Science PDF changed")
+    from tools.build_rpt_science_approved_word_20261126 import build_word
+    from web.rpt_native_word_cover import personalized_word
+    blob,raw,*_=build_word(year,root=root)
+    if hashlib.sha256(raw).hexdigest()!=APPROVED_SCIENCE_PINS[year]:
+        raise ValueError("Approved Science source changed")
+    lock=json.loads((Path(root)/"web_2027_pdfs"/"original_cover_layout_verified.json").read_text("utf8"))
+    result=personalized_word(blob,raw,lock,f"sains:{year}",account,config)
+    return result,hashlib.sha256(result).hexdigest()
