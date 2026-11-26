@@ -1,0 +1,28 @@
+name: Verify 41 published fixed-grid RPT candidates
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/compact_free_pdf_2027/**'
+      - 'rpt_2027/compact_approved_pdf_2027/**'
+      - 'rpt_2027/compact_english_pdf_2027/**'
+      - '.github/workflows/rpt-41-fixed-grid-release-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - name: Verify actual free and paid routes and unchanged cover geometry
+        run: |
+          python -m unittest discover -s tests -p 'test_rpt_compact_pdf.py' -v
+          python -m unittest discover -s tests -p 'test_rpt_compact_approved_pdf.py' -v
+          python -m unittest discover -s tests -p 'test_rpt_compact_language_pdf.py' -v
+          python -m unittest discover -s tests -p 'test_rpt_native_word_batch.py' -v

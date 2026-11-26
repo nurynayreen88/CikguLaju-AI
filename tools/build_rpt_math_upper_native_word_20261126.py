@@ -10,6 +10,7 @@ import subprocess
 import tempfile
 import fitz
 from docx import Document
+from tools.rpt_source_table_polish import format_source_cell, fixed_grid
 from docx.shared import Cm, Pt
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
@@ -121,7 +122,8 @@ def build_word(year,root=ROOT):
         mark(row._tr.get_or_add_trPr(),"w:cantSplit")
         for c,w in zip(row.cells,WIDTHS):c.width=Cm(w)
         if teaching:
-            for c,value in zip(row.cells[1:],cells[1:]):text_cell(c,value.splitlines())
+            for j,(c,value) in enumerate(zip(row.cells[1:],cells[1:]),1):
+                format_source_cell(c,value.splitlines(),text_cell,preserve=j==1)
         else:
             text_cell(row.cells[1].merge(row.cells[4]),cells[1].splitlines(),shade="EAF1E3")
         if groups and groups[-1][0]==week:
@@ -132,6 +134,7 @@ def build_word(year,root=ROOT):
         c=t.cell(first,0)
         if first<last:c=c.merge(t.cell(last,0))
         text_cell(c,label.splitlines(),bold=True,center=True,shade="EAF1E3")
+    fixed_grid(t,"D9E9F3")
     out=BytesIO();doc.save(out);blob=out.getvalue()
     check=Document(BytesIO(blob));table=check.tables[0]
     assert len(table.rows)==len(rows)+1
