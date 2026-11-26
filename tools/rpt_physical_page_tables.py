@@ -1,5 +1,6 @@
 """Physical native Word page tables; do not rely on repeat-header support."""
 from copy import deepcopy
+from docx.enum.text import WD_BREAK
 from docx.oxml import OxmlElement
 from docx.shared import Pt,Cm
 from docx.text.paragraph import Paragraph
@@ -34,11 +35,19 @@ def split_week_tables(doc,t,groups,*,budget=465,breaks=None):
         if i:
             el=OxmlElement("w:p");anchor.addprevious(el)
             p=Paragraph(el,doc);f=p.paragraph_format
-            f.page_break_before=True;f.space_before=Pt(0);f.space_after=Pt(0);f.line_spacing=Pt(1)
-            p.add_run(" ").font.size=Pt(1)
+            f.page_break_before=False;f.keep_with_next=False;f.keep_together=False;f.space_before=Pt(0);f.space_after=Pt(0);f.line_spacing=Pt(1)
+            run=p.add_run();run.font.size=Pt(1);run.add_break(WD_BREAK.PAGE)
         clone=deepcopy(anchor)
         for j,tr in enumerate(list(clone.tr_lst)):
             if j!=0 and not a<=j<=b:clone.remove(tr)
+        # Keep the complete physical page table together where Word can fit it.
+        # Each new table begins after a literal page break, not a blank paragraph flag.
+        for idx,tr in enumerate(clone.tr_lst):
+            for node in tr.xpath(".//w:p"):
+                fmt=Paragraph(node,doc).paragraph_format
+                fmt.keep_with_next=idx<len(clone.tr_lst)-1
+                fmt.keep_together=True
+                fmt.widow_control=False
         anchor.addprevious(clone)
     anchor.getparent().remove(anchor)
     for sec in doc.sections:sec.top_margin=sec.bottom_margin=Cm(1.5)

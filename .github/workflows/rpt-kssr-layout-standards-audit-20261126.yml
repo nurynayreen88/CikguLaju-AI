@@ -3,6 +3,7 @@ on:
   pull_request:
     branches: [production/cikgulaju-web-20261105]
     paths:
+      - 'tools/rpt_kssr_physical_pages.py'
       - 'tools/build_kssr_rpt_merged_week_batch_20261126.py'
       - '.github/workflows/rpt-kssr-layout-standards-audit-20261126.yml'
 permissions:
