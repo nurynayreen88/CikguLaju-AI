@@ -1,5 +1,9 @@
 """Private RTL RPT layout candidate; exact staged source, no academic promotion."""
 from collections import Counter
+from copy import deepcopy
+from math import ceil
+from docx.text.paragraph import Paragraph
+from docx.table import _Cell
 from datetime import date
 from hashlib import sha256
 from io import BytesIO
@@ -215,6 +219,73 @@ def rtl_cell(cell,value,*,bold=False,center=False,shade=None):
             at=m.end()
         add(raw[at:])
 
+def paginate_rtl(doc,table,ranges):
+    # Conservative physical blocks; preserve the source cells and the RTL runs.
+    # Leave white space rather than force a full-height table.
+    widths=[c.width.pt for c in table.columns]
+    def cell_height(cell,width):
+        return 12+sum(16*max(1,sum(max(1,ceil(len(line)*6.0/max(20,width-18))) for line in p.text.splitlines() or [""])) for p in cell.paragraphs)
+    def row_height(i):
+        offset=0;heights=[]
+        for tc in table.rows[i]._tr.tc_lst:
+            span=tc.grid_span
+            if offset:
+                heights.append(cell_height(_Cell(tc,table),sum(widths[offset:offset+span])))
+            offset+=span
+        return max(heights+[24])
+    header=max(cell_height(c,w) for c,w in zip(table.rows[0].cells,widths))
+    budget=405
+    blocks=[]
+    for a,b in ranges:
+        label=cell_height(table.cell(a,0),widths[0])
+        part=[];h=0
+        for i in range(a,b+1):
+            rh=row_height(i)
+            if part and (header+max(label,h+rh)>budget or len(part)>=4):
+                blocks.append((a,part,max(label,h)));part=[];h=0
+            part.append(i);h+=rh
+        if part:blocks.append((a,part,max(label,h)))
+    pages=[];current=[];total=header
+    for a,rows,h in blocks:
+        if current and (total+h>budget or sum(len(r) for _,r in current)+len(rows)>4):
+            pages.append(current);current=[];total=header
+        current.append((a,rows));total+=h
+    if current:pages.append(current)
+    before=[tuple(c.text for c in r.cells) for r in table.rows[1:]]
+    anchor=table._tbl
+    for n,blocks in enumerate(pages):
+        if n:
+            el=OxmlElement("w:p");anchor.addprevious(el)
+            pf=Paragraph(el,doc).paragraph_format
+            pf.keep_with_next=False;pf.keep_together=False
+            pf.space_before=Pt(0);pf.space_after=Pt(0);pf.line_spacing=Pt(1)
+            sec=deepcopy(doc.element.body.sectPr)
+            for child in list(sec):
+                if child.tag in (qn("w:headerReference"),qn("w:footerReference"),qn("w:pgNumType")):sec.remove(child)
+            typ=sec.find(qn("w:type"))
+            if typ is None:
+                typ=OxmlElement("w:type");sec.insert_element_before(typ,"w:pgSz","w:pgMar","w:cols","w:docGrid")
+            typ.set(qn("w:val"),"nextPage")
+            el.get_or_add_pPr().append(sec)
+        clone=deepcopy(anchor)
+        for tr in list(clone.tr_lst)[1:]:clone.remove(tr)
+        for a,indices in blocks:
+            for k,i in enumerate(indices):
+                row=deepcopy(table.rows[i]._tr)
+                if k==0 and i!=a:
+                    row.replace(row.tc_lst[0],deepcopy(table.rows[a]._tr.tc_lst[0]))
+                clone.append(row)
+        for j,tr in enumerate(clone.tr_lst):
+            for el in tr.xpath(".//w:p"):
+                pf=Paragraph(el,doc).paragraph_format
+                pf.keep_with_next=j<len(clone.tr_lst)-1
+                pf.keep_together=True;pf.widow_control=False
+        anchor.addprevious(clone)
+    anchor.getparent().remove(anchor)
+    for section in doc.sections:section.top_margin=section.bottom_margin=Cm(1.5)
+    assert [tuple(c.text for c in r.cells) for t in doc.tables for r in t.rows[1:]]==before
+    assert all(t._tbl.tblPr.find(qn("w:bidiVisual")) is not None for t in doc.tables)
+
 def build_word(subject,year,root=ROOT):
     root=Path(root);key=f"{subject}:{year}"
     manifest=json.loads((root/"manifest.json").read_text())["files"]
@@ -271,6 +342,8 @@ def build_word(subject,year,root=ROOT):
     for first,last in ranges:
         assert all(t.cell(first,0)._tc is t.cell(i,0)._tc for i in range(first,last+1))
     assert Counter(rel.target_ref for rel in check.part.rels.values() if rel.reltype==RT.HYPERLINK)==Counter(set(links))
+    paginate_rtl(doc,table,ranges)
+    stream=BytesIO();doc.save(stream);blob=stream.getvalue()
     return blob,raw,ids,links
 
 def render(subject,year,out):
@@ -288,6 +361,8 @@ def render(subject,year,out):
             final.save(target,garbage=4,deflate=True)
         with fitz.open(target) as pdf,fitz.open(stream=raw,filetype="pdf") as orig:
             assert pdf[0].get_pixmap().samples==orig[0].get_pixmap().samples
+            assert len(pdf)==len(Document(BytesIO(blob)).tables)+1,(subject,year,"spill page")
+            assert all(d["rect"].y1<=p.rect.height-39 for p in list(pdf)[1:] for d in p.get_drawings()),(subject,year,"bottom clearance")
             text="\n".join(p.get_text() for p in list(pdf)[1:])
             found=[(m[1] or "",int(m[2])) for m in re.finditer(r"(?m)^(?:(PJ|PK) )?(?:PdP|Lesson) (\d{3})\s*$",text)]
             assert found==ids
