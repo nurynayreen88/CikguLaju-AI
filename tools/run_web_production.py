@@ -11,6 +11,8 @@ from web.teacher_profile_routes import bp as teacher_profile_bp
 app.register_blueprint(teacher_profile_bp)
 from web.rph_hari_ini_web import bp as rph_hari_ini_bp
 app.register_blueprint(rph_hari_ini_bp)
+from web.erph_records_web import bp as erph_records_bp
+app.register_blueprint(erph_records_bp)
 from web.pbd_routes import bp as pbd_bp
 app.register_blueprint(pbd_bp)
 from web.web_payment_routes import bp as web_payment_bp
