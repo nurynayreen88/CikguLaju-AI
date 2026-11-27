@@ -1,0 +1,400 @@
+{
+  "status": "DSKP_ONLY_NOT_TEXTBOOK_VERIFIED",
+  "year": 5,
+  "parent": {
+    "path": "audits/rpt_2027_matematik_sjkc_t4_t6_sp_session_draft_20261127.json",
+    "sha": "420ab6fe9300b86a8dc1870bfbafcd8136b1c2d0"
+  },
+  "dskp_source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-5-SJKC.pdf",
+  "textbook_candidates": [
+    "https://anyflip.com/lvbkv/ayph/basic",
+    "https://anyflip.com/viihi/sezs/basic",
+    "https://online.fliphtml5.com/izabd/wyvc/"
+  ],
+  "notes": [
+    "DSKP printed pages 30–33 inspected visually. Original session topics, not verbatim standard wording. Reallocated two extra sessions to place value/order and mixed operations. Book candidates returned HTTP 403 or no extracted text, so page ranges null and textbook order unconfirmed. All draft IDs and dates provisional; no publication."
+  ],
+  "unit1": [
+    {
+      "draft_pdp": 1,
+      "week": "M01",
+      "A": {
+        "start": "2027-01-04",
+        "end": "2027-01-07"
+      },
+      "B": {
+        "start": "2027-01-04",
+        "end": "2027-01-08"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "topic_cn_original": "百万以内数词、数字与含零数的读写",
+      "dskp_printed_page": 30,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 2,
+      "week": "M01",
+      "A": {
+        "start": "2027-01-04",
+        "end": "2027-01-07"
+      },
+      "B": {
+        "start": "2027-01-04",
+        "end": "2027-01-08"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "topic_cn_original": "利用数位表拆分六位数",
+      "dskp_printed_page": 30,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 3,
+      "week": "M02",
+      "A": {
+        "start": "2027-01-10",
+        "end": "2027-01-14"
+      },
+      "B": {
+        "start": "2027-01-11",
+        "end": "2027-01-15"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "topic_cn_original": "数轴上的比较、排序及填数",
+      "dskp_printed_page": 30,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 4,
+      "week": "M02",
+      "A": {
+        "start": "2027-01-10",
+        "end": "2027-01-14"
+      },
+      "B": {
+        "start": "2027-01-11",
+        "end": "2027-01-15"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.2.1"
+      ],
+      "topic_cn_original": "筛选百以内只具有两个因数的数",
+      "dskp_printed_page": 30,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 5,
+      "week": "M02",
+      "A": {
+        "start": "2027-01-10",
+        "end": "2027-01-14"
+      },
+      "B": {
+        "start": "2027-01-11",
+        "end": "2027-01-15"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.3.1"
+      ],
+      "topic_cn_original": "以参照数量估计并检验估计值",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 6,
+      "week": "M03",
+      "A": {
+        "start": "2027-01-17",
+        "end": "2027-01-21"
+      },
+      "B": {
+        "start": "2027-01-18",
+        "end": "2027-01-22"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.4.1"
+      ],
+      "topic_cn_original": "用数轴解释取近似值的界限",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 7,
+      "week": "M03",
+      "A": {
+        "start": "2027-01-17",
+        "end": "2027-01-21"
+      },
+      "B": {
+        "start": "2027-01-18",
+        "end": "2027-01-22"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.4.2"
+      ],
+      "topic_cn_original": "从近似值推断原数的可能范围",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 8,
+      "week": "M03",
+      "A": {
+        "start": "2027-01-17",
+        "end": "2027-01-21"
+      },
+      "B": {
+        "start": "2027-01-18",
+        "end": "2027-01-22"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.5.1"
+      ],
+      "topic_cn_original": "辨别顺数和倒数的步长",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 9,
+      "week": "M04",
+      "A": {
+        "start": "2027-01-24",
+        "end": "2027-01-28"
+      },
+      "B": {
+        "start": "2027-01-25",
+        "end": "2027-01-29"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.5.2"
+      ],
+      "topic_cn_original": "补全及构造规律数列",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 10,
+      "week": "M04",
+      "A": {
+        "start": "2027-01-24",
+        "end": "2027-01-28"
+      },
+      "B": {
+        "start": "2027-01-25",
+        "end": "2027-01-29"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.6.1"
+      ],
+      "topic_cn_original": "合计最多五项六位数以内的数量",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 11,
+      "week": "M04",
+      "A": {
+        "start": "2027-01-24",
+        "end": "2027-01-28"
+      },
+      "B": {
+        "start": "2027-01-25",
+        "end": "2027-01-29"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.6.2"
+      ],
+      "topic_cn_original": "用拆分法处理两次连续扣减",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 12,
+      "week": "M05",
+      "A": {
+        "start": "2027-01-31",
+        "end": "2027-02-04"
+      },
+      "B": {
+        "start": "2027-02-01",
+        "end": "2027-02-05"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.6.3"
+      ],
+      "topic_cn_original": "多位数乘两位数及整百整千",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 13,
+      "week": "M05",
+      "A": {
+        "start": "2027-01-31",
+        "end": "2027-02-04"
+      },
+      "B": {
+        "start": "2027-02-01",
+        "end": "2027-02-05"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.6.4"
+      ],
+      "topic_cn_original": "用笔算处理两位数及整百整千除数",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 14,
+      "week": "M07",
+      "A": {
+        "start": "2027-02-14",
+        "end": "2027-02-18"
+      },
+      "B": {
+        "start": "2027-02-15",
+        "end": "2027-02-19"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.7.1"
+      ],
+      "topic_cn_original": "比较加乘、减乘算式的括号作用",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 15,
+      "week": "M07",
+      "A": {
+        "start": "2027-02-14",
+        "end": "2027-02-18"
+      },
+      "B": {
+        "start": "2027-02-15",
+        "end": "2027-02-19"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.7.1"
+      ],
+      "topic_cn_original": "比较加除、减除算式的运算顺序",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 16,
+      "week": "M07",
+      "A": {
+        "start": "2027-02-14",
+        "end": "2027-02-18"
+      },
+      "B": {
+        "start": "2027-02-15",
+        "end": "2027-02-19"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.8.1"
+      ],
+      "topic_cn_original": "从积与一个因数反推缺失的数",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 17,
+      "week": "M08",
+      "A": {
+        "start": "2027-02-21",
+        "end": "2027-02-25"
+      },
+      "B": {
+        "start": "2027-02-22",
+        "end": "2027-02-26"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.8.2"
+      ],
+      "topic_cn_original": "用逆运算处理除式中的缺失项",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 18,
+      "week": "M08",
+      "A": {
+        "start": "2027-02-21",
+        "end": "2027-02-25"
+      },
+      "B": {
+        "start": "2027-02-22",
+        "end": "2027-02-26"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.9.1"
+      ],
+      "topic_cn_original": "解释百万以内人口及物品数量资料",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 19,
+      "week": "M08",
+      "A": {
+        "start": "2027-02-21",
+        "end": "2027-02-25"
+      },
+      "B": {
+        "start": "2027-02-22",
+        "end": "2027-02-26"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.9.2"
+      ],
+      "topic_cn_original": "设计并检验多步骤的收支算式",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 20,
+      "week": "M09",
+      "A": {
+        "start": "2027-02-28",
+        "end": "2027-03-04"
+      },
+      "B": {
+        "start": "2027-03-01",
+        "end": "2027-03-05"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.9.3"
+      ],
+      "topic_cn_original": "用未知量表达乘除情境并求值",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    }
+  ],
+  "release": false
+}
