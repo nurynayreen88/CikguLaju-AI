@@ -1,0 +1,388 @@
+{
+  "status": "DRAFT_SUPPLEMENT_ONLY",
+  "source_zip": "CIKGULAJU_KP2027_ALAM_T1_29_RPH_AKTIVITI_SOKONGAN_KHUSUS_QA_V3_20261123.zip",
+  "source_zip_sha256": "5e48b06595fec113fe0e6f46482f28981295fa1128e6c8fe8aac5b3c65768b3",
+  "source_drive_id": "1ubXD5fFjrxN9K9DJxGDquM3WF2mbKJx_",
+  "source_policy": "Preserve exact source standards, objective, criteria, BBM, closure, remediation, enrichment and reflection. RPT PdP numbering differs from source64 numbering. No release until independent DK parity, manual review and Word/PDF layout verification.",
+  "count": 29,
+  "records": [
+    {
+      "rpt_pdp": 2,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP002_QA_V3.docx",
+      "phases": {
+        "engagement": "Carta tubuh: murid menyebut anggota yang dikenali.",
+        "exploration": "Pasangan memadankan kad nama pada carta.",
+        "explanation": "Guru menyemak sebutan dan kedudukan anggota serta mengingatkan hormat tubuh.",
+        "elaboration": "Murid memilih anggota pada carta dan menerangkan kegunaannya.",
+        "evaluation": "Secara individu murid menunjukkan serta menamakan sekurang-kurangnya lima anggota."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 5,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP005_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memaparkan gambar anggota deria dan situasi bunyi atau warna.",
+        "exploration": "Kumpulan menyusun kad anggota dan fungsi deria.",
+        "explanation": "Guru menjelaskan perbezaan lima deria dengan contoh selamat.",
+        "elaboration": "Murid memilih dua situasi dan menerangkan deria yang digunakan.",
+        "evaluation": "Murid memadankan sekurang-kurangnya empat anggota dengan fungsi deria."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 10,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP010_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memperdengarkan satu rangkap lagu keluarga.",
+        "exploration": "Murid mengajuk frasa pendek secara berkumpulan.",
+        "explanation": "Guru memodelkan sebutan, pic dan ketukan tempo.",
+        "elaboration": "Pasangan berlatih menyanyi mengikut isyarat mula dan berhenti.",
+        "evaluation": "Murid menyanyikan satu rangkap dengan sebutan jelas dan tempo konsisten."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 11,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP011_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru mengulang rangkap lagu keluarga dan murid mengingat frasa.",
+        "exploration": "Kumpulan kecil menguji nyanyian mengikut ketukan perlahan.",
+        "explanation": "Guru memberi maklum balas tentang sebutan dan kestabilan tempo.",
+        "elaboration": "Pasangan menyanyi bergilir dan memberi komen sopan.",
+        "evaluation": "Guru menilai nyanyian satu rangkap dengan sebutan jelas dan tempo konsisten."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 16,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP016_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan ilustrasi bantuan dan ucapan sopan dalam keluarga.",
+        "exploration": "Murid memadankan kad situasi rekaan dengan tindakan lisan atau bukan lisan.",
+        "explanation": "Guru menjelaskan kasih sayang yang menghormati batasan ahli keluarga.",
+        "elaboration": "Murid memilih tindakan sesuai bagi situasi rekaan dan memberi sebab.",
+        "evaluation": "Murid menyatakan dua cara menzahirkan kasih sayang tanpa mendedahkan pengalaman peribadi."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 20,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP020_QA_V3.docx",
+      "phases": {
+        "engagement": "Murid membandingkan dua ilustrasi kebersihan diri.",
+        "exploration": "Kumpulan memadankan amalan kebersihan dengan sebab kepentingannya.",
+        "explanation": "Guru menerangkan kaitan amalan dengan kesihatan.",
+        "elaboration": "Kumpulan membina pesanan kebersihan dan menerangkan kepentingannya.",
+        "evaluation": "Murid secara individu menghubungkan dua amalan kebersihan dengan kepentingannya."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 21,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP021_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memaparkan carta langkah mencuci tangan.",
+        "exploration": "Murid mencuba urutan berpandu secara bergilir, rakan menyemak kad.",
+        "explanation": "Guru mendemonstrasi semula langkah yang terlepas menggunakan air dan sabun.",
+        "elaboration": "Murid memperagakan urutan sendiri dan menyebut waktu sesuai mencuci tangan.",
+        "evaluation": "Guru memerhati demonstrasi individu mengikut urutan yang betul."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 26,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP026_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar sarapan, makan tengah hari dan makan malam.",
+        "exploration": "Murid menyusun kad hidangan menurut waktu biasa.",
+        "explanation": "Guru menerangkan kaitan hidangan teratur dan makanan berkhasiat dengan tenaga.",
+        "elaboration": "Murid memilih kad situasi aktiviti harian dan menjelaskan kepentingan makan.",
+        "evaluation": "Murid menyatakan dua kepentingan hidangan utama tanpa membincangkan bekalan makanan keluarga."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 29,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP029_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan bentuk beberapa model makanan.",
+        "exploration": "Murid memilih makanan dan mencuba teknik membentuk bahan selamat.",
+        "explanation": "Guru menunjukkan teknik membentuk serta penggunaan alatan berhemah.",
+        "elaboration": "Murid menyiapkan model dan memperkemas ciri makanan pilihan.",
+        "evaluation": "Guru menilai satu model dan penerangan sekurang-kurangnya satu ciri."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 32,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP032_QA_V3.docx",
+      "phases": {
+        "engagement": "Murid membandingkan gambar postur sesuai dan kurang sesuai.",
+        "exploration": "Murid mencuba duduk, berdiri dan mengambil objek ringan secara berpandu.",
+        "explanation": "Guru menerangkan pergerakan selamat termasuk membengkokkan lutut.",
+        "elaboration": "Murid memilih dua situasi harian dan menunjukkan postur sesuai.",
+        "evaluation": "Guru memerhati postur betul dalam sekurang-kurangnya dua aktiviti."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 36,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP036_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memaparkan contoh rekaan alamat, telefon dan kata laluan.",
+        "exploration": "Murid mengelaskan kad maklumat umum dan maklumat yang perlu dilindungi.",
+        "explanation": "Guru menerangkan sebab maklumat tertentu tidak patut didedahkan.",
+        "elaboration": "Murid memilih respons menolak dengan sopan dan orang dewasa dipercayai.",
+        "evaluation": "Murid mengenal pasti tiga contoh maklumat peribadi yang tidak wajar didedahkan."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 39,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP039_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menjelaskan hak terhadap ruang peribadi menggunakan ilustrasi sesuai umur.",
+        "exploration": "Murid menilai kad situasi rekaan secara sukarela tanpa berkongsi pengalaman sebenar.",
+        "explanation": "Guru menjelaskan sentuhan tidak selesa dan cara meminta pertolongan.",
+        "elaboration": "Murid berlatih respons tegas, menjauh dan meminta bantuan tanpa sentuhan fizikal.",
+        "evaluation": "Murid menyatakan dua situasi tidak selamat atau tidak selesa serta satu tindakan mendapatkan bantuan."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 41,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP041_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan situasi rekaan yang mengandungi tanda bahaya.",
+        "exploration": "Murid menyusun kad bertenang, menjauh, meminta bantuan dan memberitahu orang dewasa.",
+        "explanation": "Guru menerangkan pilihan tindakan selamat berdasarkan keadaan.",
+        "elaboration": "Murid memilih kad situasi dan menyebut langkah sesuai tanpa lakonan berisiko.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya dua tindakan ketika tidak selamat."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 45,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP045_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar pasukan keselamatan.",
+        "exploration": "Murid memerhati peranan dan memilih pasukan untuk lukisan atau kolaj.",
+        "explanation": "Guru membincangkan tugas pasukan dan teknik penggunaan bahan selamat.",
+        "elaboration": "Murid menyiapkan karya serta memilih elemen yang hendak diterangkan.",
+        "evaluation": "Guru menilai karya dan penerangan tentang maksud serta tugas pasukan."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 48,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP048_QA_V3.docx",
+      "phases": {
+        "engagement": "Murid melihat objek maujud dan kad gambar.",
+        "exploration": "Kumpulan mengasingkan kad kepada hidup dan bukan hidup.",
+        "explanation": "Guru membincangkan ciri dan sebab pengelasan.",
+        "elaboration": "Murid memilih objek selamat di kelas dan menjelaskan kategorinya.",
+        "evaluation": "Murid mengelaskan sekurang-kurangnya enam objek dengan betul."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 50,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP050_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan manusia, haiwan dan tumbuhan.",
+        "exploration": "Murid memadankan kad keperluan asas dengan jenis hidupan.",
+        "explanation": "Guru menjelaskan persamaan dan perbezaan keperluan berdasarkan kad.",
+        "elaboration": "Murid memilih hidupan dan menerangkan keperluannya menggunakan contoh.",
+        "evaluation": "Guru menyemak pengenalpastian keperluan asas manusia, haiwan dan tumbuhan."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 55,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP055_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memberikan situasi rekaan memilih barang penting dan pilihan.",
+        "exploration": "Murid mengasingkan kad kepada keperluan asas dan kehendak.",
+        "explanation": "Guru menjelaskan perbezaan berdasarkan alasan murid.",
+        "elaboration": "Murid membandingkan dua contoh pilihan tanpa membincangkan kewangan keluarga.",
+        "evaluation": "Murid menerangkan perbezaan keperluan asas dan kehendak menggunakan dua contoh."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 57,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP057_QA_V3.docx",
+      "phases": {
+        "engagement": "Murid mendengar bunyi biasa pada kelantangan selamat dan meneka sumber.",
+        "exploration": "Murid menyusun kad bunyi persekitaran sekolah dalam peta ringkas.",
+        "explanation": "Guru membimbing perbandingan bunyi kuat dan perlahan.",
+        "elaboration": "Murid memilih dua bunyi dan mengaitkan dengan sumbernya.",
+        "evaluation": "Murid menerangkan sekurang-kurangnya dua bunyi yang didengar."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 60,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP060_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memperagakan bunyi daripada objek bukan alat muzik.",
+        "exploration": "Kumpulan mencuba dua atau tiga sumber bunyi pada kelantangan terkawal.",
+        "explanation": "Guru menunjukkan cara merekod urutan menggunakan simbol.",
+        "elaboration": "Kumpulan membina, berlatih dan memperkemas corak bunyi.",
+        "evaluation": "Guru menilai satu persembahan gabungan bunyi daripada bahan bukan alat muzik."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 65,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP065_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memaparkan ilustrasi pelbagai emosi.",
+        "exploration": "Murid memilih emosi rekaan dan meneroka garis, bentuk atau warna.",
+        "explanation": "Guru menjelaskan cara unsur visual menggambarkan emosi tanpa menuntut kisah peribadi.",
+        "elaboration": "Murid menyiapkan lakaran dan boleh menerangkan pilihan secara sukarela.",
+        "evaluation": "Guru menilai satu lakaran yang menggambarkan emosi pilihan."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 67,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP067_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memperdengarkan rangkap lagu bertema emosi.",
+        "exploration": "Murid mengajuk lirik dalam kumpulan kecil.",
+        "explanation": "Guru membimbing sebutan, pic dan tempo mengikut isyarat.",
+        "elaboration": "Pasangan berlatih dan memberi maklum balas sopan.",
+        "evaluation": "Murid menyanyikan satu rangkap dengan sebutan dan tempo sesuai."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 70,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP070_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar aktiviti dalam keadaan terang dan gelap.",
+        "exploration": "Murid memadankan kad aktiviti dengan keadaan pencahayaan.",
+        "explanation": "Guru menerangkan perbezaan dan keselamatan.",
+        "elaboration": "Murid memilih aktiviti yang lebih selamat dilakukan ketika terang dan memberi sebab tanpa bergerak dalam gelap.",
+        "evaluation": "Murid membanding beza sekurang-kurangnya dua aktiviti dalam keadaan terang dan gelap."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 74,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP074_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memaparkan gambar kraf cahaya Malaysia dan negara lain.",
+        "exploration": "Murid meneroka bayang objek kertas menggunakan lampu suluh dikawal guru.",
+        "explanation": "Guru membimbing perbandingan ciri dua kraf.",
+        "elaboration": "Murid memilih satu kraf dan menerangkan penggunaan cahaya.",
+        "evaluation": "Murid mengenal pasti dua contoh kraf cahaya dan menerangkan satu fungsinya."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 76,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP076_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru memaparkan tanglung kertas atau siluet wayang kulit.",
+        "exploration": "Murid merancang dan memilih bahan serta alatan selamat.",
+        "explanation": "Guru menunjukkan teknik pembinaan tanpa api terbuka.",
+        "elaboration": "Murid menyiapkan kraf dan menguji dengan cahaya LED.",
+        "evaluation": "Guru menilai satu kraf berkaitan sumber cahaya dan keselamatan bahan."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 79,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP079_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan mercu tanda luar negara melalui gambar.",
+        "exploration": "Murid memadankan kad nama dengan gambar.",
+        "explanation": "Guru menjelaskan ciri bentuk yang membezakan mercu tanda.",
+        "elaboration": "Murid memilih gambar dan mengingat nama melalui ciri bentuk.",
+        "evaluation": "Guru menyemak pengenalpastian tiga mercu tanda melalui gambar."
+      },
+      "status": "HOLD_SOURCE_OBJECTIVE_ACTIVITY_MISMATCH",
+      "note": "Original objective requires three landmarks while Activity 3 asks for two. Proposed 5P evaluation aligns with objective; verify source and obtain review before release.",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 83,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP083_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan model mercu tanda yang telah dibina.",
+        "exploration": "Murid menyusun kad langkah dari pemilihan bahan hingga kemasan.",
+        "explanation": "Guru menyemak urutan berdasarkan model yang dibina.",
+        "elaboration": "Murid menerangkan proses model sendiri menggunakan kad atau gambar.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya tiga langkah penghasilan model."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 85,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP085_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru membincangkan susun atur dan adab pameran.",
+        "exploration": "Murid menyusun model dan memilih ciri yang akan diterangkan.",
+        "explanation": "Guru memodelkan penerangan nama dan ciri mercu tanda.",
+        "elaboration": "Murid mempamerkan model secara bergilir dan memberi komen sopan.",
+        "evaluation": "Murid mempamerkan model serta menerangkan sekurang-kurangnya dua cirinya."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 88,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP088_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan masalah rekaan mudah seperti sampah kelas.",
+        "exploration": "Kumpulan membincangkan pilihan dan menyusun kad langkah.",
+        "explanation": "Guru menyemak keselamatan dan kebolehlaksanaan setiap langkah.",
+        "elaboration": "Kumpulan menerangkan pelan dan alasan pilihan.",
+        "evaluation": "Murid menyusun sekurang-kurangnya tiga langkah penyelesaian masalah."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 92,
+      "source_word": "Word/CIKGULAJU_RPH_ALAM_KP2027_T1_PDP092_QA_V3.docx",
+      "phases": {
+        "engagement": "Guru menunjukkan contoh ringkas pembentangan produk.",
+        "exploration": "Kumpulan memilih bahan, mengagihkan tugas dan menyusun kad langkah.",
+        "explanation": "Guru menerangkan keperluan bahan, peranan dan urutan pembentangan.",
+        "elaboration": "Kumpulan membuat latihan pendek dan menyemak pelan.",
+        "evaluation": "Guru menilai pelan yang merangkumi tugas, bahan dan urutan aktiviti."
+      },
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    }
+  ]
+}
