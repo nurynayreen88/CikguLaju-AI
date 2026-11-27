@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ms"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>e-RPH Saya | CikguLaju</title>
+<style>*{box-sizing:border-box}body{font:16px system-ui;background:#f6f8fa;color:#203040;max-width:780px;margin:auto;padding:20px}section,form{background:white;border:1px solid #dce4ec;border-radius:12px;padding:20px;margin:16px 0}label{display:block;margin:10px 0}input,textarea,select{display:block;width:100%;font:inherit;border:1px solid #aab7c4;border-radius:6px;padding:8px;margin-top:5px}button{font:inherit;border:0;border-radius:7px;padding:9px 16px;background:#155e75;color:white;cursor:pointer;margin:4px}button:disabled{opacity:.5}textarea{min-height:100px}.slot{border-bottom:1px solid #ddd;padding:12px 0}.meta{color:#536579;font-size:.9rem}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}a{color:#155e75}</style>
+<h1>e-RPH Saya</h1><p>Rekod peribadi guru. Isi rancangan, simpan dan lengkapkan refleksi selepas PdP.</p><a href="/">Kembali ke CikguLaju</a>
+<section><label>Tarikh rekod<input id="day" type="date"></label><button id="load">Papar rekod</button><button id="new">Tambah RPH</button><div id="list"></div></section>
+<form id="editor" hidden><h2 id="heading">RPH baharu</h2>
+<label>Tarikh<input name="teaching_date" type="date" required></label>
+<div class="grid"><label>Kelas<input name="class_name" maxlength="80" required></label><label>Subjek<input name="subject_name" maxlength="120" required></label><label>Masa mula<input name="start_time" type="time" required></label><label>Masa tamat<input name="end_time" type="time" required></label></div>
+<label>Tajuk<input name="title" maxlength="200" required></label>
+<label>Format RPH<select name="rph_format"><option value="biasa">RPH biasa</option><option value="5p">RPH Ringkas 5P</option></select></label>
+<label>Objektif pembelajaran<textarea name="objectives" maxlength="4000"></textarea></label>
+<label>Aktiviti PdP<textarea name="activities" maxlength="12000"></textarea></label>
+<label>Refleksi<textarea name="reflection" maxlength="4000"></textarea></label>
+<label>Status<select name="status"><option value="draft">Draf</option><option value="saved">Disediakan</option><option value="completed">PdP selesai</option></select></label>
+<button id="save" type="submit">Simpan RPH</button><button id="cancel" type="button">Tutup</button></form>
+<p id="msg" role="status"></p>
+<script>
+const day=document.getElementById('day'),list=document.getElementById('list'),form=document.getElementById('editor'),msg=document.getElementById('msg'),save=document.getElementById('save');
+let editing=null,seq=0;
+const fields=['teaching_date','class_name','subject_name','start_time','end_time','title','objectives','activities','reflection','rph_format','status'];
+day.value=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kuala_Lumpur',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+async function api(path,options){const r=await fetch('/api/erph/records'+path,{credentials:'same-origin',cache:'no-store',...options});const j=await r.json();if(!r.ok)throw Error(j.error||'Permintaan gagal');return j}
+function edit(item){editing=item?.id||null;form.reset();for(const k of fields){if(item&&typeof item[k]==='string')form.elements[k].value=k.endsWith('_time')?item[k].slice(0,5):item[k]}if(!item)form.elements.teaching_date.value=day.value;document.getElementById('heading').textContent=editing?'Sunting RPH':'RPH baharu';form.hidden=false}
+async function load(){const n=++seq;msg.textContent='';list.textContent='Memuatkan rekod…';try{const j=await api('?date='+encodeURIComponent(day.value));if(n!==seq)return;list.replaceChildren();for(const item of j.items){const el=document.createElement('div');el.className='slot';const t=document.createElement('strong');t.textContent=item.subject_name+' • '+item.class_name;const m=document.createElement('div');m.className='meta';m.textContent=item.start_time.slice(0,5)+' – '+item.end_time.slice(0,5)+' • '+({draft:'Draf',saved:'Disediakan',completed:'PdP selesai'}[item.status]||'');const b=document.createElement('button');b.textContent='Sunting';b.onclick=()=>edit(item);el.append(t,m,b);list.append(el)}if(!j.items.length)list.textContent='Belum ada rekod.'}catch(e){if(n===seq){list.textContent='';msg.textContent=e.message}}}
+document.getElementById('load').onclick=load;day.onchange=load;document.getElementById('new').onclick=()=>edit(null);document.getElementById('cancel').onclick=()=>{form.hidden=true};
+form.onsubmit=async e=>{e.preventDefault();save.disabled=true;msg.textContent='';try{const data=Object.fromEntries(fields.map(k=>[k,form.elements[k].value]));await api(editing?'/'+encodeURIComponent(editing):'',{method:editing?'PUT':'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});day.value=data.teaching_date;form.hidden=true;await load();msg.textContent='RPH disimpan.'}catch(e){msg.textContent=e.message}finally{save.disabled=false}};
+load();
+</script></html>
