@@ -194,6 +194,22 @@
       "drive_file_id": "1mrTXJVFk1lruoz2g5YWjOi2vtffNb6BS",
       "size_bytes": 82505,
       "sha256": "017d21dacdd1ab4c6566ff14d7f2c51d8763ffa461e7ade6f7af2d241d2b8caf"
+    },
+    "3/17": {
+      "unit": "Every day",
+      "main_sp": "1.2.2",
+      "complementary_sp": "1.3.1",
+      "drive_file_id": "12p7gbWqC5VyY9YKYz8hcTUmSPNIaX0o4",
+      "size_bytes": 206289,
+      "sha256": "a82affe5a35237303c0da61b8e01f96e48285028f42047cf7f23090e46995524"
+    },
+    "3/18": {
+      "unit": "Every day",
+      "main_sp": "2.1.2",
+      "complementary_sp": "4.3.2",
+      "drive_file_id": "1X4s9E8NFrfpDcxj9SdAR1PKpmHJuhc0M",
+      "size_bytes": 200673,
+      "sha256": "df9050aa90514e6acc8cf96c708d774ddbff7cfbf3967e8c271e182e310ee940"
     }
   }
 }
