@@ -2,6 +2,7 @@
 from datetime import date
 from html import escape
 from io import BytesIO
+from unicodedata import normalize
 
 MAX_RECORDS=80
 MAX_CHARS=300000
@@ -35,6 +36,8 @@ def word(rows):
     from docx import Document
     from docx.shared import Cm, Pt, RGBColor
     from docx.enum.text import WD_ALIGN_PARAGRAPH
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
     d=Document()
     sec=d.sections[0]
     sec.page_width,sec.page_height=Cm(21),Cm(29.7)
@@ -45,9 +48,14 @@ def word(rows):
     normal.paragraph_format.space_after=Pt(2)
     normal.paragraph_format.line_spacing=1.0
     normal.paragraph_format.widow_control=True
+    footer=sec.footer.paragraphs[0]
+    footer.alignment=WD_ALIGN_PARAGRAPH.RIGHT
+    footer.add_run('Halaman ')
+    field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');footer._p.append(field)
     for i,row in enumerate(rows):
-        if i:d.add_page_break()
         p=d.add_paragraph()
+        if i:p.paragraph_format.page_break_before=True
+        p.paragraph_format.keep_with_next=True
         p.alignment=WD_ALIGN_PARAGRAPH.CENTER
         r=p.add_run('REKOD e-RPH');r.bold=True;r.font.size=Pt(15);r.font.color.rgb=RGBColor.from_string('24566B')
         d.add_heading(row['subject_name'],level=2)
@@ -58,9 +66,12 @@ def word(rows):
             p=d.add_paragraph()
             p.paragraph_format.keep_with_next=True
             p.add_run(label).bold=True
-            d.add_paragraph('\n'.join(line for line in value.splitlines() if line.strip()))
+            d.add_paragraph(value.replace('\r\n','\n').replace('\r','\n'))
     out=BytesIO();d.save(out)
     return out.getvalue()
+
+def _compact(text):
+    return ''.join(ch for ch in normalize('NFC',text) if not ch.isspace())
 
 def pdf(rows):
     import fitz
@@ -70,14 +81,16 @@ def pdf(rows):
         for value in (row['subject_name'],*header(row),*(v for _,v in sections(row))):
             if any('\u0590'<=ch<='\u08ff' or '\uFB1D'<=ch<='\uFEFF' for ch in value):
                 raise ValueError('Eksport PDF Jawi/Arab belum disahkan. Gunakan Word.')
-    def h(s):return escape('\n'.join(line for line in s.splitlines() if line.strip())).replace('\n','<br/>')
+    def h(s):return escape(s.replace('\r\n','\n').replace('\r','\n')).replace('\n','<br/>')
     out=BytesIO()
     writer=fitz.DocumentWriter(out)
     page=fitz.paper_rect('a4')
     rect=page+ (45,43,-45,-43)
     count=0
+    ranges=[]
     try:
         for row in rows:
+            first=count
             html='<h1>REKOD e-RPH</h1><h2>'+h(row['subject_name'])+'</h2>'
             html+='<p>'+h('  |  '.join(header(row)[:3]))+'<br/>'+h('  |  '.join(header(row)[3:]))+'</p>'
             html+=''.join('<h3>'+h(label)+'</h3><p>'+h(value)+'</p>' for label,value in sections(row))
@@ -91,9 +104,28 @@ def pdf(rows):
                 device=writer.begin_page(page)
                 story.draw(device)
                 writer.end_page()
+            ranges.append((first,count,row))
     finally:
         writer.close()
-    return out.getvalue()
+    # Fail closed instead of delivering a document with missing or clipped text.
+    with fitz.open(stream=out.getvalue(),filetype='pdf') as doc:
+        for first,last,row in ranges:
+            expected=['REKOD e-RPH',row['subject_name'],'  |  '.join(header(row)[:3]),'  |  '.join(header(row)[3:])]
+            for label,value in sections(row):expected.extend((label,value))
+            actual=''.join(doc[i].get_text() for i in range(first,last))
+            if _compact(actual)!=_compact(''.join(expected)):
+                raise ValueError('Kandungan PDF tidak sepadan sepenuhnya. Gunakan Word.')
+            for i in range(first,last):
+                pg=doc[i]
+                for block in pg.get_text('dict')['blocks']:
+                    for line in block.get('lines',[]):
+                        if not (rect.x0-2<=line['bbox'][0] and line['bbox'][2]<=rect.x1+2 and rect.y0-2<=line['bbox'][1] and line['bbox'][3]<=rect.y1+2):
+                            raise ValueError('Kandungan PDF melebihi ruang cetak. Gunakan Word.')
+        for i,pg in enumerate(doc):
+            pg.insert_text((45,pg.rect.height-22),'CikguLaju | Rekod e-RPH',fontsize=8,color=(0.35,0.4,0.45))
+            pg.insert_textbox(fitz.Rect(pg.rect.width-160,pg.rect.height-30,pg.rect.width-45,pg.rect.height-13),
+                              'Halaman '+str(i+1)+' / '+str(len(doc)),fontsize=8,align=fitz.TEXT_ALIGN_RIGHT,color=(0.35,0.4,0.45))
+        return doc.tobytes(garbage=3,deflate=True)
 
 def render(rows,fmt):
     validate_rows(rows)
