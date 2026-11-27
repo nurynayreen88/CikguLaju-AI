@@ -2587,7 +2587,7 @@ subject.addEventListener("change",async()=>{
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,125)||
        !kp2027ValidEntries(data.items.B,data.groups.B,125))
      throw Error("Padanan Unit dan PdP Matematik belum dapat disahkan.");
-    inventory={groups:data.groups,items:data.items};
+    inventory={groups:data.groups,items:data.items,rphVariants:Array.isArray(data.rph_variants)?data.rph_variants:[]};
    }else if(code==="BM_SK_KP2027"){
     if(!data.groups||!kp2027ValidList(data.groups.A,178)||!kp2027ValidList(data.groups.B,175)||
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,178)||
@@ -2769,7 +2769,7 @@ async function kp2027DownloadVariant(format,variant){
  try{teacherPayload=kp2027TeacherPayload();}catch(error){status.textContent=error.message;return;}
  const payload=["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(code)?{group,lesson:value,format,...teacherPayload}:{lesson:value,format,...teacherPayload};
  if(variant==="5p"){
-  if(code!=="BM_SK_KP2027"||!kp2027PilotInventory?.rphVariants?.includes("5p"))return;
+  if(!["BM_SK_KP2027","MATH_KP2027"].includes(code)||!kp2027PilotInventory?.rphVariants?.includes("5p"))return;
   payload.rph_variant="5p";
  }
  if(code==="PJ_KP2027"&&aquaticV2Selected())payload.rph_variant="V2_DARAT";
@@ -2899,7 +2899,7 @@ function populateKp2027MaterialList(){
   materialRow("RPH PDF",{ready:true,onDownload:()=>{void kp2027DownloadApproved("pdf");}}),
   materialRow("RPH Word",{ready:true,onDownload:()=>{void kp2027DownloadApproved("word");}})
  );
- if(subject.value==="BM_SK_KP2027"&&kp2027PilotInventory?.rphVariants?.includes("5p")){
+ if(["BM_SK_KP2027","MATH_KP2027"].includes(subject.value)&&kp2027PilotInventory?.rphVariants?.includes("5p")){
   list.append(
    materialRow("RPH Ringkas 5P PDF",{ready:true,onDownload:()=>{void kp2027DownloadVariant("pdf","5p");}}),
    materialRow("RPH Ringkas 5P Word",{ready:true,onDownload:()=>{void kp2027DownloadVariant("word","5p");}})
