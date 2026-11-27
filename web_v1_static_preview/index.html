@@ -2768,7 +2768,11 @@ async function kp2027DownloadVariant(format,variant){
  let teacherPayload;
  try{teacherPayload=kp2027TeacherPayload();}catch(error){status.textContent=error.message;return;}
  const payload=["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(code)?{group,lesson:value,format,...teacherPayload}:{lesson:value,format,...teacherPayload};
- if(variant==="5p"){
+ const alam5p=variant==="5p"&&code==="ALAM_KP2027";
+ if(alam5p){
+  if(!kp2027PilotInventory?.fivePTemplates||kp2027PilotInventory?.catalogMode!=="rpt93")return;
+  payload.pdp=value;delete payload.lesson;
+ }else if(variant==="5p"){
   if(!["BM_SK_KP2027","MATH_KP2027"].includes(code)||!kp2027PilotInventory?.rphVariants?.includes("5p"))return;
   payload.rph_variant="5p";
  }
@@ -2777,7 +2781,7 @@ async function kp2027DownloadVariant(format,variant){
  for(const button of kp2027PilotButtons)button.disabled=true;
  status.textContent="Menyediakan fail RPH...";
  try{
-  const response=await fetch(route+"/download",{
+  const response=await fetch(route+(alam5p?"/5p/download":"/download"),{
    method:"POST",credentials:"same-origin",cache:"no-store",
    headers:{"Content-Type":"application/json",Accept:"application/octet-stream"},
    body:JSON.stringify(payload)
@@ -2789,7 +2793,7 @@ async function kp2027DownloadVariant(format,variant){
   const documentBlob=await response.blob();
   const ext=format==="pdf"?"pdf":"docx";
   const stem=code==="MATH_KP2027"?"MATH_T1_"+group:code==="BM_SK_KP2027"?"BM_SK_T1_"+group:code==="PJ_KP2027"?"PJ_T1_"+group:"ALAM_T1";
-  const fileName="CIKGULAJU_KP2027_"+stem+"_PDP"+String(value).padStart(3,"0")+(payload.rph_variant==="5p"?"_5P":payload.rph_variant==="V2_DARAT"?"_AKUATIK_V2":"")+"."+ext;
+  const fileName="CIKGULAJU_KP2027_"+stem+"_PDP"+String(value).padStart(3,"0")+(alam5p||payload.rph_variant==="5p"?"_5P":payload.rph_variant==="V2_DARAT"?"_AKUATIK_V2":"")+"."+ext;
   const fileUrl=URL.createObjectURL(documentBlob),anchor=document.createElement("a");
   anchor.href=fileUrl;anchor.download=fileName;anchor.click();
   setTimeout(()=>URL.revokeObjectURL(fileUrl),30000);
@@ -2906,9 +2910,12 @@ function populateKp2027MaterialList(){
   );
  }
  if(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.fivePTemplates){
-  list.append(materialRow("RPH Ringkas 5P (templat kosong)",{ready:true,url:"/kp2027/tahun-1/alam-dan-manusia/5p",actionLabel:"Pilih PdP"}));
+  if(kp2027PilotInventory.catalogMode==="rpt93")list.append(
+   materialRow("RPH Ringkas 5P PDF",{ready:true,onDownload:()=>{void kp2027DownloadVariant("pdf","5p");}}),
+   materialRow("RPH Ringkas 5P Word",{ready:true,onDownload:()=>{void kp2027DownloadVariant("word","5p");}})
+  );else list.append(materialRow("RPH Ringkas 5P",{ready:true,url:"/kp2027/tahun-1/alam-dan-manusia/5p",actionLabel:"Pilih PdP"}));
  }
- status.textContent="Pilih format RPH untuk Download. Maklumat kelas, tarikh, masa dan murid yang diisi akan dicetak dalam fail."+(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.fivePTemplates?" Templat kosong 5P diisi sendiri.":"");
+ status.textContent="Pilih format RPH untuk Download. Maklumat kelas, tarikh, masa dan murid yang diisi akan dicetak dalam fail.";
 }
 async function populateMaterialList(){
  const key=currentRphLessonKey();
