@@ -77,15 +77,19 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('id="view-curriculum-docs" class="app-view" aria-labelledby="curriculum-docs-heading" hidden',self.html)
         for category in ("kp2027","kssr","dpk","pk"):
             self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
-        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf))"',self.html)
-        self.assertEqual(len(rows),99)
-        self.assertEqual(len({url for _,_,url in rows}),99)
+        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf|gurubesar\.my/dskp-[a-z0-9-]+-tahun-[1-6]-kssr/))"',self.html)
+        self.assertEqual(len(rows),135)
+        self.assertEqual(len({url for _,_,url in rows}),135)
         expected={(str(year),subject+" "+stream) for year in range(1,7)
                   for subject in ("Matematik","Sains")
                   for stream in ("SK","SJKC","SJKT","DLP")}
         for subject,years in {
             "Bahasa Melayu SK": range(1,7), "Bahasa Arab": range(1,7),
             "Bahasa Melayu SJK": range(1,7), "Pendidikan Islam": range(1,7),
+            "Bahasa Inggeris SK": range(1,7), "Pendidikan Moral": range(1,7),
+            "Pendidikan Jasmani dan Pendidikan Kesihatan": range(1,7),
+            "Pendidikan Seni Visual": range(1,7), "Pendidikan Muzik": range(1,7),
+            "Sejarah": range(4,7), "Reka Bentuk dan Teknologi": range(4,7),
             "Bahasa Cina SK": range(1,7), "Bahasa Cina SJKC": range(1,7),
             "Bahasa Tamil SK": range(1,7), "Bahasa Tamil SJKT": (2,3,4,5,6),
             "Bahasa Iban": (3,4,5,6),
