@@ -1,0 +1,900 @@
+{
+  "status": "FOURTEEN_NEW_RPH_CONTENT_CANDIDATES_NOT_PUBLISHED",
+  "year": 4,
+  "subject": "Matematik SJKC",
+  "source": {
+    "rpt_path": "audits/rpt_2027_matematik_sjkc_t4_t6_layout_input_20261127.json",
+    "rpt_blob": "fb090b1d7c562ecb2b485ec2fe647aba265fd9ee",
+    "dskp_drive_id": "1PlpjBO35rc0C9eGj8IDMB74A5njPKhLm",
+    "dskp_printed_pages": [
+      37,
+      38
+    ],
+    "qualification": "DSKP source directly read; complete original teaching content candidates, scope not verbatim standard wording. Full official wording, textbook verification, rendering and release QA pending."
+  },
+  "records": [
+    {
+      "draft_pdp": 23,
+      "unit": 2,
+      "week": "M10",
+      "dates": {
+        "A": {
+          "start": "2027-03-14",
+          "end": "2027-03-18"
+        },
+        "B": {
+          "start": "2027-03-15",
+          "end": "2027-03-19"
+        }
+      },
+      "minutes": 60,
+      "topic": "用图形互换带分数与假分数",
+      "sk_code": "2.1",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "scope": "假分数与带分数的双向换算",
+      "objective": "利用分数模型将假分数与带分数互换并解释整数部分。",
+      "success_criteria": "10道双向换算题至少答对8道。",
+      "set_induction": "展示两个完整的圆及四分之三圆，请学生用两种分数形式表示。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "拼圆工坊：用四等份圆片拼成11/4，数出完整圆和余下部分，再写成2又3/4。"
+        },
+        {
+          "number": 2,
+          "text": "换算接力：学生用乘加法把带分数化为假分数，用除法及余数作反向换算，配对卡片并互查。"
+        },
+        {
+          "number": 3,
+          "text": "独立任务：完成五道假分数转带分数及五道反向转换，任选一题画图验证。"
+        }
+      ],
+      "closure": "归纳整数部分、余数与原分母的关系。",
+      "bbm": "分数圆片、换算卡",
+      "assessment": "核对10题及图示。",
+      "remedial": "先用同分母圆片表示一个以上的整体。",
+      "enrichment": "写出三组不同分母且整数部分相同的带分数及对应假分数。",
+      "emk": "创造力、语言",
+      "pak21": "操作探究、同伴互查",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "10道双向换算题至少答对8道。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        46,
+        47
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 24,
+      "unit": 2,
+      "week": "M10",
+      "dates": {
+        "A": {
+          "start": "2027-03-14",
+          "end": "2027-03-18"
+        },
+        "B": {
+          "start": "2027-03-15",
+          "end": "2027-03-19"
+        }
+      },
+      "minutes": 60,
+      "topic": "通分后合并三个以内的整数或分数",
+      "sk_code": "2.1",
+      "sp_codes": [
+        "2.1.2"
+      ],
+      "scope": "至三个数目的加法，涉及真分数、整数和带分数",
+      "objective": "通分后计算至三个真分数、整数或带分数的和，并化简。",
+      "success_criteria": "8题至少答对7题，含三个加数及异分母。",
+      "set_induction": "展示1/2米、3/4米和1米三段丝带，估计总长度。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "分数条对齐：学生用等值分数条比较1/2与3/4，找共同分母再相加。"
+        },
+        {
+          "number": 2,
+          "text": "接龙拼接：小组抽取整数、真分数及带分数卡，计算三项之和，比较分开计算整数部分与化为假分数的方法。"
+        },
+        {
+          "number": 3,
+          "text": "个人练习：完成8题，含需要进一的分数和，写出通分及化简步骤。"
+        }
+      ],
+      "closure": "说明只有分母相同时才能直接相加分子。",
+      "bbm": "分数条、数卡、方格纸",
+      "assessment": "批改8题并检查化简。",
+      "remedial": "先完成同分母两项加法，再加入整数。",
+      "enrichment": "设计三项异分母相加且结果为整数的算式。",
+      "emk": "逻辑推理",
+      "pak21": "合作解题",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，含三个加数及异分母。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        48,
+        49
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 25,
+      "unit": 2,
+      "week": "M11",
+      "dates": {
+        "A": {
+          "start": "2027-03-21",
+          "end": "2027-03-25"
+        },
+        "B": {
+          "start": "2027-03-22",
+          "end": "2027-03-26"
+        }
+      },
+      "minutes": 60,
+      "topic": "两数相减：整数与不同形式的分数",
+      "sk_code": "2.1",
+      "sp_codes": [
+        "2.1.3"
+      ],
+      "scope": "两个数目的减法，涉及整数、真分数和带分数",
+      "objective": "计算两个数目的分数减法，正确通分或借一个整数。",
+      "success_criteria": "8题至少答对7题，涵盖整数、真分数和带分数。",
+      "set_induction": "展示2又1/4米布，剪去3/4米，预测余量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "剪带模型：以分数条表示2又1/4减3/4，将一个整体换成四等份。"
+        },
+        {
+          "number": 2,
+          "text": "策略配对：学生比较化成假分数与借位的方法，用两种方法解一道带分数题，再解释结果一致。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成8道两数减法，含异分母及需要借位的题，检查差是否合理。"
+        }
+      ],
+      "closure": "总结通分与借位的条件。",
+      "bbm": "分数条、剪带情境卡",
+      "assessment": "按8题结果及关键步骤计分。",
+      "remedial": "使用同分母模型练习从整数借一个整体。",
+      "enrichment": "构造两组不同带分数且差为1/2的算式。",
+      "emk": "资源节约、推理",
+      "pak21": "Think-Pair-Share",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，涵盖整数、真分数和带分数。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        50,
+        51
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 26,
+      "unit": 2,
+      "week": "M11",
+      "dates": {
+        "A": {
+          "start": "2027-03-21",
+          "end": "2027-03-25"
+        },
+        "B": {
+          "start": "2027-03-22",
+          "end": "2027-03-26"
+        }
+      },
+      "minutes": 60,
+      "topic": "依次减去两个分数或整数",
+      "sk_code": "2.1",
+      "sp_codes": [
+        "2.1.3"
+      ],
+      "scope": "三个数目的连减法，涉及整数、真分数和带分数",
+      "objective": "依次计算三项分数连减并检验中间结果。",
+      "success_criteria": "6题至少答对5题，步骤顺序正确。",
+      "set_induction": "一卷长4米的绳子先剪去1又1/2米，再剪去3/4米。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "事件拼图：学生把两次剪取过程按顺序排列，以条形图标出剩余。"
+        },
+        {
+          "number": 2,
+          "text": "计算工作坊：小组分别以逐次相减和先求两次减少量之和验证结果，使用含整数及带分数的题卡。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：完成6道连减题，写出中间余量并核对最后差。"
+        }
+      ],
+      "closure": "提醒减法不可随意交换被减数和减数。",
+      "bbm": "绳长示意图、分数条、题卡",
+      "assessment": "核对6道连减题及中间步骤。",
+      "remedial": "把连减拆为两个同分母减法。",
+      "enrichment": "根据指定余量设计三项连减式。",
+      "emk": "资源管理",
+      "pak21": "小组推理",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "6题至少答对5题，步骤顺序正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        50,
+        51
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 27,
+      "unit": 2,
+      "week": "M11",
+      "dates": {
+        "A": {
+          "start": "2027-03-21",
+          "end": "2027-03-25"
+        },
+        "B": {
+          "start": "2027-03-22",
+          "end": "2027-03-26"
+        }
+      },
+      "minutes": 60,
+      "topic": "在同一算式中处理分数加减",
+      "sk_code": "2.1",
+      "sp_codes": [
+        "2.1.4"
+      ],
+      "scope": "整数、真分数和带分数的加减混合运算",
+      "objective": "按正确顺序完成含整数、真分数和带分数的加减混合式。",
+      "success_criteria": "8题至少答对7题，涵盖加减及减加。",
+      "set_induction": "一壶水有2升，加入3/4升后倒出1/2升，学生列式。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "容量时间线：用图表示增加及减少动作，写出算式与中间数量。"
+        },
+        {
+          "number": 2,
+          "text": "错题诊所：小组修正未通分或颠倒运算顺序的例题，说明错误原因。"
+        },
+        {
+          "number": 3,
+          "text": "独立练习：完成8道混合式，含异分母及借位，任选两题用逆运算核对。"
+        }
+      ],
+      "closure": "归纳同级运算从左至右，先通分再运算。",
+      "bbm": "容量示意卡、错题卡",
+      "assessment": "检查8题的顺序、通分及答案。",
+      "remedial": "以同分母分数条模拟一次加一次减。",
+      "enrichment": "为给定混合式编写实际情境。",
+      "emk": "科学与工艺、推理",
+      "pak21": "纠错讨论",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，涵盖加减及减加。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        52,
+        53
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 28,
+      "unit": 2,
+      "week": "M12",
+      "dates": {
+        "A": {
+          "start": "2027-03-28",
+          "end": "2027-04-01"
+        },
+        "B": {
+          "start": "2027-03-29",
+          "end": "2027-04-02"
+        }
+      },
+      "minutes": 60,
+      "topic": "用条形模型求一个数量的几分之几",
+      "sk_code": "2.1",
+      "sp_codes": [
+        "2.1.5"
+      ],
+      "scope": "确定真分数和带分数在某数量中的值",
+      "objective": "以等分和整数倍计算真分数或带分数对应的数量。",
+      "success_criteria": "8题至少答对7题，真分数及带分数各不少于3题。",
+      "set_induction": "有24枚棋子，学生找出其中3/4的数量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "等分棋盘：先把24枚棋子分为四组，再取三组，解释分母和分子的作用。"
+        },
+        {
+          "number": 2,
+          "text": "倍量条形图：以12为一个整体，求1又2/3个12的数量；比较先求整数部分与先化假分数的策略。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：完成8道数量题，包括2/5的30及1又3/4的20，画图验证一题。"
+        }
+      ],
+      "closure": "说明求一份的数量后再乘所需份数。",
+      "bbm": "棋子、条形图、任务卡",
+      "assessment": "核对8题及模型。",
+      "remedial": "先求单位分数对应的整数数量。",
+      "enrichment": "选择适合的整体数量，使指定带分数的结果为整数。",
+      "emk": "逻辑推理",
+      "pak21": "操作探究",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，真分数及带分数各不少于3题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        54,
+        55
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 29,
+      "unit": 2,
+      "week": "M12",
+      "dates": {
+        "A": {
+          "start": "2027-03-28",
+          "end": "2027-04-01"
+        },
+        "B": {
+          "start": "2027-03-29",
+          "end": "2027-04-02"
+        }
+      },
+      "minutes": 60,
+      "topic": "对齐小数点完成加法",
+      "sk_code": "2.2",
+      "sp_codes": [
+        "2.2.1"
+      ],
+      "scope": "至三个小数、至三位小数的加法",
+      "objective": "对齐小数点并计算至三个小数之和。",
+      "success_criteria": "8题至少答对7题，含三项及不同小数位数。",
+      "set_induction": "展示三段长度1.25、0.875和2.4米，估计合计。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "位值拼板：学生将各数填入个位、十分位、百分位及千分位栏，补零但不改变数值。"
+        },
+        {
+          "number": 2,
+          "text": "测量记录站：三人合作读取给定测量卡并用竖式合计三项小数。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成8题（含连续进位），用估算核对结果。"
+        }
+      ],
+      "closure": "强调小数点对齐而不是最后一个数字对齐。",
+      "bbm": "小数位值表、测量记录卡",
+      "assessment": "检查8题的对齐与进位。",
+      "remedial": "先用相同小数位数的两项加法。",
+      "enrichment": "找出三个至三位小数、和为指定整数的组合。",
+      "emk": "科学与工艺",
+      "pak21": "合作记录",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，含三项及不同小数位数。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        58,
+        59
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 30,
+      "unit": 2,
+      "week": "M12",
+      "dates": {
+        "A": {
+          "start": "2027-03-28",
+          "end": "2027-04-01"
+        },
+        "B": {
+          "start": "2027-03-29",
+          "end": "2027-04-02"
+        }
+      },
+      "minutes": 60,
+      "topic": "对齐小数点完成减法",
+      "sk_code": "2.2",
+      "sp_codes": [
+        "2.2.2"
+      ],
+      "scope": "至三个小数、至三位小数的减法",
+      "objective": "对齐小数点，完成两项减法和三项连减。",
+      "success_criteria": "8题至少答对7题，含三项连减与跨位借位。",
+      "set_induction": "容器有5.000升液体，倒出1.275升及0.85升。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "借位示意：学生用小数位值表解释5.000减1.275，逐位标注借位。"
+        },
+        {
+          "number": 2,
+          "text": "液体记录：小组根据两次倒出的数据完成连减，比较逐次计算与先求总倒出量。"
+        },
+        {
+          "number": 3,
+          "text": "独立任务：完成8道小数减法及连减题，任选两题用加法验算。"
+        }
+      ],
+      "closure": "归纳补零与连续借位的处理。",
+      "bbm": "位值表、容量记录卡",
+      "assessment": "核对8题及验算。",
+      "remedial": "从一位小数的无借位减法开始。",
+      "enrichment": "设计三项小数连减且余量为0.125的算式。",
+      "emk": "科学与工艺",
+      "pak21": "同伴互查",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，含三项连减与跨位借位。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        60,
+        61
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 31,
+      "unit": 2,
+      "week": "M13",
+      "dates": {
+        "A": {
+          "start": "2027-04-04",
+          "end": "2027-04-08"
+        },
+        "B": {
+          "start": "2027-04-05",
+          "end": "2027-04-09"
+        }
+      },
+      "minutes": 60,
+      "topic": "小数乘一位数及10、100、1000",
+      "sk_code": "2.2",
+      "sp_codes": [
+        "2.2.3"
+      ],
+      "scope": "小数乘一位数、10、100及1 000，积至三位小数",
+      "objective": "计算指定范围的小数乘法，并解释乘10、100、1 000时数值的变化。",
+      "success_criteria": "8题至少答对7题，涵盖四类乘数。",
+      "set_induction": "一瓶水重0.375千克，计算四瓶的质量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "重复加法：学生用位值卡说明0.375乘4的过程，再转成竖式。"
+        },
+        {
+          "number": 2,
+          "text": "位值移动实验：用0.125分别乘10、100和1 000，观察各数字对应数位的变化。"
+        },
+        {
+          "number": 3,
+          "text": "个人练习：完成8题，含0.048乘一位数及整十、整百、整千乘数，确保积至三位小数。"
+        }
+      ],
+      "closure": "用估算检查小数点位置是否合理。",
+      "bbm": "位值板、乘数卡",
+      "assessment": "按8题及小数点位置评分。",
+      "remedial": "利用小数位值表处理0.2乘3，再增加位数。",
+      "enrichment": "构造两道乘数不同、积同为12.5的算式。",
+      "emk": "科学与工艺",
+      "pak21": "操作探究",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，涵盖四类乘数。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        62,
+        63
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 32,
+      "unit": 2,
+      "week": "M13",
+      "dates": {
+        "A": {
+          "start": "2027-04-04",
+          "end": "2027-04-08"
+        },
+        "B": {
+          "start": "2027-04-05",
+          "end": "2027-04-09"
+        }
+      },
+      "minutes": 60,
+      "topic": "小数除以一位数及10、100、1000",
+      "sk_code": "2.2",
+      "sp_codes": [
+        "2.2.4"
+      ],
+      "scope": "小数除以一位数、10、100及1 000，商至三位小数",
+      "objective": "完成指定范围小数除法，并用乘法检验商。",
+      "success_criteria": "8题至少答对7题，涵盖四类除数，商不超过三位小数。",
+      "set_induction": "将2.4升果汁平均分给6人，预测每人得到多少。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "均分模型：把2.4写成24个十分之一，分成6组，得到0.4。"
+        },
+        {
+          "number": 2,
+          "text": "位值变化：以125分别除以10、100、1 000，学生用位值表解释各数位变化。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成8道能在三位小数内除尽的题，任选两题乘回验证。"
+        }
+      ],
+      "closure": "说明平均分配后每份数量及商的数位。",
+      "bbm": "分组图、位值板",
+      "assessment": "核对8题及乘法验算。",
+      "remedial": "先用十分位整数倍的简单除法。",
+      "enrichment": "找出不同的被除数与指定除数，使商均为0.125。",
+      "emk": "科学与工艺",
+      "pak21": "同伴辅导",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，涵盖四类除数，商不超过三位小数。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        64,
+        65
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 33,
+      "unit": 2,
+      "week": "M13",
+      "dates": {
+        "A": {
+          "start": "2027-04-04",
+          "end": "2027-04-08"
+        },
+        "B": {
+          "start": "2027-04-05",
+          "end": "2027-04-09"
+        }
+      },
+      "minutes": 60,
+      "topic": "用等值分数理解百分率的双向转换",
+      "sk_code": "2.3",
+      "sp_codes": [
+        "2.3.1"
+      ],
+      "scope": "分数与百分比的双向换算",
+      "objective": "利用等值分数或百格图将分数与百分比互换并化简。",
+      "success_criteria": "10道换算题至少答对8道，两种方向均涵盖。",
+      "set_induction": "百格图中涂色25格，学生用分数和百分比表示。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "涂格实验：学生将1/2、1/4、3/5转换为分母100的等值分数，再读出百分比。"
+        },
+        {
+          "number": 2,
+          "text": "卡片配对：小组配对如7/20与35%、75%与3/4的卡片，解释化简过程。"
+        },
+        {
+          "number": 3,
+          "text": "个人检测：完成五道分数转百分比及五道百分比转分数，画百格图验证一题。"
+        }
+      ],
+      "closure": "归纳百分比表示每一百份中的份数。",
+      "bbm": "百格图、分数卡",
+      "assessment": "核对10题及化简。",
+      "remedial": "先处理分母100、10、2的分数。",
+      "enrichment": "为同一个百分比找出三个等值分数。",
+      "emk": "语言、推理",
+      "pak21": "配对学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "10道换算题至少答对8道，两种方向均涵盖。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        68,
+        69
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 34,
+      "unit": 2,
+      "week": "M14",
+      "dates": {
+        "A": {
+          "start": "2027-04-11",
+          "end": "2027-04-15"
+        },
+        "B": {
+          "start": "2027-04-12",
+          "end": "2027-04-16"
+        }
+      },
+      "minutes": 60,
+      "topic": "用百分率求实际数量",
+      "sk_code": "2.3",
+      "sp_codes": [
+        "2.3.2"
+      ],
+      "scope": "计算某个数量的百分比",
+      "objective": "用分数法或单位百分比法计算指定数量的百分比。",
+      "success_criteria": "8道题至少答对7道，写出数量及单位。",
+      "set_induction": "班上有40人，其中25%参加合唱队，估计人数。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "分组图：将40分为四等份，用25%=1/4求人数。"
+        },
+        {
+          "number": 2,
+          "text": "百分比策略站：学生分别求80的10%、200的35%及60的50%，比较先求1%或转换为分数的方法。"
+        },
+        {
+          "number": 3,
+          "text": "独立任务：完成8题，含人数、物品数量及金额，检查结果是否超过原总量。"
+        }
+      ],
+      "closure": "说明百分比与实际数量的区别。",
+      "bbm": "百格图、情境卡、条形图",
+      "assessment": "检查8题的策略与单位。",
+      "remedial": "先用50%、25%、10%及可整除的总量。",
+      "enrichment": "根据给定总量设计三道不同百分比数量题。",
+      "emk": "财务教育",
+      "pak21": "合作解题",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8道题至少答对7道，写出数量及单位。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        70,
+        71
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 35,
+      "unit": 2,
+      "week": "M14",
+      "dates": {
+        "A": {
+          "start": "2027-04-11",
+          "end": "2027-04-15"
+        },
+        "B": {
+          "start": "2027-04-12",
+          "end": "2027-04-16"
+        }
+      },
+      "minutes": 60,
+      "topic": "用图示处理分数和小数生活题",
+      "sk_code": "2.4",
+      "sp_codes": [
+        "2.4.1"
+      ],
+      "scope": "分数和小数的应用题",
+      "objective": "分析生活情境中的分数、小数数量关系，选择正确运算并验算。",
+      "success_criteria": "5道应用题至少答对4道，列式、答案及单位正确。",
+      "set_induction": "出示食谱中1又1/2杯面粉、0.75升水等数据，区分数量及单位。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "审题标注：圈出已知量和所求量，选择条形图或测量记录表表示关系。"
+        },
+        {
+          "number": 2,
+          "text": "情境轮换：小组解决丝带分数加减、分数数量、三笔小数测量加减及小数均分四类任务，解释运算选择。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：完成5道分数或小数应用题，写出审题、列式、计算与验算过程。"
+        }
+      ],
+      "closure": "分享如何利用单位及图示判断答案合理性。",
+      "bbm": "食谱卡、测量卡、条形图",
+      "assessment": "按5题的运算选择、答案及单位计分。",
+      "remedial": "提供已知量、所求量和图示框。",
+      "enrichment": "设计一个需要两个步骤的分数或小数问题。",
+      "emk": "资源管理、语言",
+      "pak21": "问题导向学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "5道应用题至少答对4道，列式、答案及单位正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        74,
+        80
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 36,
+      "unit": 2,
+      "week": "M14",
+      "dates": {
+        "A": {
+          "start": "2027-04-11",
+          "end": "2027-04-15"
+        },
+        "B": {
+          "start": "2027-04-12",
+          "end": "2027-04-16"
+        }
+      },
+      "minutes": 60,
+      "topic": "选择策略解决百分率生活题并验算",
+      "sk_code": "2.4",
+      "sp_codes": [
+        "2.4.1"
+      ],
+      "scope": "百分比的应用题",
+      "objective": "运用百格图、分数或单位百分比策略解决生活中的百分比问题。",
+      "success_criteria": "5道题至少答对4道，解释策略并验算。",
+      "set_induction": "学校有200本新书，35%是科学类，学生估计其数量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "百格建模：在百格图标记35%，再将200本书按百分比关系计算。"
+        },
+        {
+          "number": 2,
+          "text": "数据站：小组处理图书分类、参与人数、储蓄金额等情境；比较先求10%、5%与转分数的策略。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成5道百分比应用题，写出所求数量、单位及合理性检验。"
+        }
+      ],
+      "closure": "总结审题、拟定策略、计算、验算四步骤。",
+      "bbm": "百格图、资料表、情境卡",
+      "assessment": "核对5题列式与答案。",
+      "remedial": "使用50%、25%、10%与容易等分的总量。",
+      "enrichment": "为同一总量提出两个不同百分比的问题并比较答案。",
+      "emk": "财务教育、推理",
+      "pak21": "小组问题解决",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "5道题至少答对4道，解释策略并验算。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        74,
+        80
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    }
+  ],
+  "release": false
+}
