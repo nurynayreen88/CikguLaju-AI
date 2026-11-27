@@ -128,6 +128,23 @@ class NativeBMBridgeTests(unittest.TestCase):
         with self.assertRaises(SourceUnavailable):
             _select(self.runtime,2,"Keluargaku Sayang",self.token)
 
+    def test_worksheet_identity_uses_corrected_master_and_requires_auth(self):
+        token = self._add_mismapped_bm_t2_source()
+        url = "/internal/rph/v1/bm-sequence/worksheet-identity"
+        query = {"year":"2","subject":"BM","unit":"Hidup Berjiran","lesson":token}
+        with patch.dict(os.environ,self.env):
+            self.assertEqual(self.client.get(url,query_string=query).status_code,401)
+            answer = self.client.get(url,query_string=query,headers=self.headers)
+            self.assertEqual(answer.status_code,200)
+            self.assertEqual(answer.json["token"],token)
+            self.assertEqual(answer.json["topic"],"Majlis Pengikat Kemesraan")
+            self.assertEqual(answer.json["standards"],[{"sk":"2.2","sp":"2.2.1"}])
+            bad = self.client.get(url,query_string={**query,"lesson":"b"+"0"*24},headers=self.headers)
+            self.assertEqual(bad.status_code,404)
+            self.runtime._local_rph_text.assert_not_called()
+            self.runtime.create_word_file.assert_not_called()
+            self.runtime.create_pdf_file.assert_not_called()
+
     def test_private_availability_and_actual_word_bytes(self):
         with patch.dict(os.environ,self.env):
             url="/internal/rph/v1/bm-sequence/availability"

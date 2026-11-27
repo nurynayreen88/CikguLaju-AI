@@ -223,6 +223,23 @@ def create_native_bm_rph_blueprint(runtime):
         return (int(request.args["year"]), request.args["unit"],
                 request.args["lesson"])
 
+    @bp.get("/internal/rph/v1/bm-sequence/worksheet-identity")
+    def worksheet_identity():
+        # Reuse the live read-only master selection and corrected SK/SP.
+        # Existing private blueprint auth applies; no RPH rendering or debit.
+        try:
+            year, unit, token = query()
+            key, _, standards = _select(runtime, year, unit, token)
+        except (ValueError, SourceUnavailable):
+            return jsonify({"available": False}), 404
+        return jsonify({
+            "available": True, "year": year, "subject": "BM",
+            "token": token, "theme": key[0], "unit_code": key[1],
+            "unit": key[2], "topic": key[3],
+            "standards": [{"sk": item["sk_code"], "sp": item["sp_code"]}
+                          for item in standards],
+        })
+
     @bp.get("/internal/rph/v1/bm-sequence/availability")
     def availability():
         try:
