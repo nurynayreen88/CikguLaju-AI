@@ -1,0 +1,34 @@
+{
+  "status": "VISUAL_DK_MATCH_CONFIRMED_TEXTBOOK_HOLD",
+  "subject": "BM_SK",
+  "curriculum": "KP2027",
+  "year": 1,
+  "official_reference": {
+    "title": "Dokumen Kurikulum Bahasa Melayu Sekolah Kebangsaan Tahun 1",
+    "publisher": "BPK KPM",
+    "edition": 2026,
+    "isbn": "978-967-420-797-7",
+    "drive_id": "1-a9APG2zp8sAahgUweiP5PxzHyBC2TXh",
+    "printed_page": 44,
+    "pdf_page": 56
+  },
+  "finding": "Visually inspected rendered PDF page 56 (printed 44). Extraction contains extra hidden/overlapping text for SP 4.2.1 and 4.2.2; rendered official page shows only the two existing source statements below. Do not append extraction artifacts.",
+  "verified_sp": {
+    "4.2.1": "Menggabungkan dan membentuk suku kata, perkataan dan frasa.",
+    "4.2.2": "Membina dan menulis ayat dengan binaan ayat yang betul."
+  },
+  "affected_records": 22,
+  "resolution": "Supersedes earlier HOLD_COMPARE_FULL_SP_WORDING_PAGE_44 for these SP only; source statement retained. SK 4.1 and 3.2 continue to use existing corrected runtime lesson() text.",
+  "coverage": {
+    "A": 178,
+    "B": 175,
+    "total": 353
+  },
+  "release": false,
+  "remaining": [
+    "exact KP2027 textbook/activity book confirmation",
+    "per-record academic QA",
+    "Word/PDF layout QA",
+    "Web option integration and existing access gates"
+  ]
+}
