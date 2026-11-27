@@ -2908,7 +2908,7 @@ function populateKp2027MaterialList(){
  if(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.fivePTemplates){
   list.append(materialRow("RPH Ringkas 5P (templat kosong)",{ready:true,url:"/kp2027/tahun-1/alam-dan-manusia/5p",actionLabel:"Pilih PdP"}));
  }
- status.textContent="Pilih format RPH untuk Download. Maklumat kelas, tarikh, masa dan murid yang diisi akan dicetak dalam fail RPH biasa. Templat kosong 5P diisi sendiri.";
+ status.textContent="Pilih format RPH untuk Download. Maklumat kelas, tarikh, masa dan murid yang diisi akan dicetak dalam fail."+(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.fivePTemplates?" Templat kosong 5P diisi sendiri.":"");
 }
 async function populateMaterialList(){
  const key=currentRphLessonKey();
