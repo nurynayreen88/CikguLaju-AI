@@ -1529,6 +1529,18 @@ def create_blueprint():
                         return jsonify({"lessons": pair, "status": "SUMBER_ASAL", "items": items})
                     pair_note = f"Bahan gabungan belum tersedia. Senarai ini untuk Lesson {number:03d}."
                 items, missing = [], []
+                # The complete worksheet is an independent, source-matched PDF.
+                # Do not attach a single Lesson worksheet to a paired session.
+                if request.args.get("paired") != "1":
+                    try:
+                        from web.worksheet_complete_pdf import complete_pdf
+                        if complete_pdf(year, number, unit) is not None:
+                            items.append({"type": "worksheet",
+                                          "title": "Latihan PdP — 3 aras + panduan guru",
+                                          "url": "/api/web/rph/worksheet-pdf?" + params,
+                                          "action": "Download PDF"})
+                    except Exception:
+                        missing.append("Latihan PdP")
                 # Each verified Workbook uses the existing Telegram route.
                 try:
                     label = english_workbook_metadata(year, number)
@@ -1650,6 +1662,27 @@ def create_blueprint():
         name = f"CikguLaju_English_Y{year}_L{pair[0]:03d}-{pair[1]:03d}_{asset}.{extension}"
         return send_file(BytesIO(data), mimetype=mime, as_attachment=True,
                          conditional=False, download_name=name)
+
+    @bp.get("/api/web/rph/worksheet-pdf")
+    def worksheet_pdf():
+        error = materials_access_error()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, _, number = _extra_selection()
+            if sub != "ENGLISH":
+                raise ValueError("Wrong worksheet source")
+            from web.worksheet_complete_pdf import complete_pdf
+            data = complete_pdf(year, number, unit)
+        except (ValueError, TypeError):
+            return jsonify({"error": "Pilihan latihan tidak sah atau fail belum disahkan"}), 404
+        except Exception:
+            return jsonify({"error": "Fail latihan belum dapat dicapai"}), 503
+        if data is None:
+            return jsonify({"error": "Latihan belum tersedia untuk Lesson ini"}), 404
+        return send_file(BytesIO(data), mimetype="application/pdf",
+                         as_attachment=True, conditional=False,
+                         download_name=f"CIKGULAJU_LATIHAN_EN_Y{year}_L{number:03d}.pdf")
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
