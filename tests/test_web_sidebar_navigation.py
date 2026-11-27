@@ -78,19 +78,29 @@ class WebSidebarTabsTests(unittest.TestCase):
         for category in ("kp2027","kssr","dpk","pk"):
             self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
         rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf))"',self.html)
-        self.assertEqual(len(rows),85)
-        self.assertEqual(len({url for _,_,url in rows}),85)
+        self.assertEqual(len(rows),87)
+        self.assertEqual(len({url for _,_,url in rows}),87)
         expected={(str(year),subject+" "+stream) for year in range(1,7)
                   for subject in ("Matematik","Sains")
                   for stream in ("SK","SJKC","SJKT","DLP")}
         for subject,years in {
             "Bahasa Melayu SK": range(1,7), "Bahasa Arab": range(1,7),
             "Bahasa Cina SK": range(1,7), "Bahasa Cina SJKC": range(1,7),
-            "Bahasa Tamil SK": (2,3,4,5,6), "Bahasa Tamil SJKT": (2,3,4,5,6),
-            "Bahasa Iban": (3,5,6),
+            "Bahasa Tamil SK": range(1,7), "Bahasa Tamil SJKT": (2,3,4,5,6),
+            "Bahasa Iban": (3,4,5,6),
         }.items():
             expected.update((str(year),subject) for year in years)
         self.assertEqual({(year,subject) for year,subject,_ in rows},expected)
+        pk_rows=re.findall(r'<li data-pk-year="([1-6])" data-pk-subject="([^"]+)"><a href="(https://[^"]+\.pdf)"',self.html)
+        self.assertEqual(len(pk_rows),9)
+        self.assertEqual(len({url for _,_,url in pk_rows}),9)
+        self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
+            ("1","Asas 3M"),("2","Pengurusan Kehidupan"),("3","Asas 3M"),
+            ("3","Pengurusan Kehidupan"),("3","Pendidikan Seni Kreatif"),
+            ("5","Pengurusan Kehidupan"),("5","Kemahiran Hidup Asas"),
+            ("5","Pendidikan Sains, Sosial dan Alam Sekitar"),
+            ("6","Pendidikan Sains, Sosial dan Alam Sekitar"),
+        })
         self.assertIn('docsYear.addEventListener("change",filterCurriculumDocs)',self.html)
         self.assertIn('docsSubject.addEventListener("change",filterCurriculumDocs)',self.html)
         self.assertIn('#workspace #view-curriculum-docs{display:none!important}',self.html)
