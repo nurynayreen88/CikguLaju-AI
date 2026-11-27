@@ -1,0 +1,106 @@
+{
+  "status": "QA_ONLY_NOT_PUBLISHED",
+  "dk_drive_id": "1FO2UkgGeDEDYwiwlfpjc1SFfNOw-pcrs",
+  "dk_sha256": "2fabcb2e75ec9fbc9c9589db26f87925c91ac550d9a20a0dc31bac311e7e55a9",
+  "source_lesson_dk_pdf_pages": {
+    "6": [
+      31
+    ],
+    "7": [
+      31,
+      32
+    ],
+    "15": [
+      38
+    ],
+    "35": [
+      55
+    ],
+    "36": [
+      55
+    ],
+    "37": [
+      55
+    ],
+    "39": [
+      56
+    ],
+    "40": [
+      56
+    ],
+    "42": [
+      57
+    ],
+    "43": [
+      57
+    ],
+    "44": [
+      57
+    ],
+    "46": [
+      58
+    ],
+    "47": [
+      64
+    ],
+    "49": [
+      64
+    ],
+    "50": [
+      65
+    ],
+    "52": [
+      65
+    ],
+    "53": [
+      66
+    ],
+    "55": [
+      66
+    ],
+    "56": [
+      67
+    ],
+    "58": [
+      67
+    ],
+    "59": [
+      73
+    ],
+    "61": [
+      73
+    ],
+    "62": [
+      74
+    ],
+    "64": [
+      74
+    ]
+  },
+  "supplement_pdp": {
+    "79": [
+      66
+    ]
+  },
+  "output_archive": "CIKGULAJU_ALAM_25_RPH_5P_SEMAKAN_SKOP_QA_V2.zip",
+  "sha256": "a2335ab404cbda9d293e7d372fb21e2828ee5e1d518aac11898dc22ab7f56bac",
+  "bytes": 1649942,
+  "results": {
+    "word": 25,
+    "pdf": 25,
+    "a4_single_page": 25,
+    "unplanned_word_field_changes": 0,
+    "missing_pdf_text": 0,
+    "outside_page_text": 0,
+    "contact_sheet_review": 25
+  },
+  "notes": [
+    "24 source objectives rewritten to match observable criteria and DK verbs; selected phase and criteria changes are logged in archive manifest. Supplemental 079 uses three explicit foreign landmarks, original objective/criteria/PBD unchanged.",
+    "DK ISBN read and relevant page text inspected; not an official academic approval.",
+    "19 combined source RPH still require RPT focus decision: integrated DK permits combined SP but 93-PdP mapping separates focus; do not equate source lesson ID with RPT PdP.",
+    "Original documents unchanged. Source Word parity and authenticated Web test remain outstanding. Archive supplied in chat; no production or storage change."
+  ],
+  "academic_approved": false,
+  "ready": false,
+  "web_publish": false
+}
