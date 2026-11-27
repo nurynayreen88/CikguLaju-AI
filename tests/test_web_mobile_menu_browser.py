@@ -74,7 +74,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     expect(page.locator("#curriculum-kp2027-list li:visible")).to_have_count(5)
                     expect(page.locator("#curriculum-kp2027-list li:visible small").filter(has_text="PDF sumber luar")).to_have_count(3)
                     page.locator("#curriculum-docs-type").select_option("kssr")
-                    expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_count(144)
+                    expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_count(156)
                     page.locator("#curriculum-docs-year").select_option("6")
                     page.locator("#curriculum-docs-subject").select_option("Matematik SJKC")
                     expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_count(1)
