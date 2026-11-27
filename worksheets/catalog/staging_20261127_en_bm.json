@@ -4,7 +4,7 @@
   "source": "Verified Google Drive folder listing",
   "packages": 29,
   "publication_enabled": false,
-  "notes": "Source mapping completed against RPH files and BM audit/draft reference. Page 1–3 are pupils, page 4 teacher. Actual authenticated production selections and delivery not tested. Publication stays disabled. No RPH/RPT altered.",
+  "notes": "Source mapping recorded against RPH files and BM audit/draft reference. Teacher-facing delivery is one complete PDF per exact PdP (all three levels and teacher guide), one download button; DOCX retained internally. Actual authenticated production selections, full package contents and delivery require final verification. Publication stays disabled. No RPH/RPT altered.",
   "items": [
     {
       "subject": "Bahasa Melayu",
@@ -48,6 +48,14 @@
         "sp": "2.2.1",
         "sp_parts": [],
         "source": "audits/bm_t2_sp221_sk_source_correction_20261109.md"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -98,6 +106,14 @@
           "ii"
         ],
         "source": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_2_2027_Format_2026_DRAF.html"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -148,6 +164,14 @@
           "ii"
         ],
         "source": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_2_2027_Format_2026_DRAF.html"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -196,6 +220,14 @@
         "complementary_sp": "2.1.5",
         "rph_path": "rph_standalone/english/year3/lesson_001.md",
         "rph_git_blob_sha": "d438c73dc843e602d6ffcb8d4dd25b586ba1fcd3"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -244,6 +276,14 @@
         "complementary_sp": "1.2.2",
         "rph_path": "rph_standalone/english/year3/lesson_002.md",
         "rph_git_blob_sha": "eeeb7a18eea1c48c2bf1f72d41956f4c2f94225d"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -292,6 +332,14 @@
         "complementary_sp": "3.2.3",
         "rph_path": "rph_standalone/english/year3/lesson_003.md",
         "rph_git_blob_sha": "48157cc0f2ebd39b87e3613c162ad9b32dd39559"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -340,6 +388,14 @@
         "complementary_sp": "4.1.2",
         "rph_path": "rph_standalone/english/year3/lesson_004.md",
         "rph_git_blob_sha": "e876721be3ab65065571d0fdd2365892b2917f15"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -388,6 +444,14 @@
         "complementary_sp": "4.3.3",
         "rph_path": "rph_standalone/english/year3/lesson_005.md",
         "rph_git_blob_sha": "4ee66bb8120ad88ae47dba6e289fb4f2ccd93c74"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -436,6 +500,14 @@
         "complementary_sp": "4.3.1",
         "rph_path": "rph_standalone/english/year3/lesson_006.md",
         "rph_git_blob_sha": "a165ba2d592ae9b9e88fd80556c28379996111e4"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -484,6 +556,14 @@
         "complementary_sp": "1.2.5",
         "rph_path": "rph_standalone/english/year3/lesson_007.md",
         "rph_git_blob_sha": "a85d1cc97dd2fd75515da8654d8b89fb4d7cc585"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -532,6 +612,14 @@
         "complementary_sp": "3.2.3",
         "rph_path": "rph_standalone/english/year3/lesson_008.md",
         "rph_git_blob_sha": "9331ac140ca553085d4a2bd8726ca1cb4b9d4ccb"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -580,6 +668,14 @@
         "complementary_sp": "1.2.1",
         "rph_path": "rph_standalone/english/year3/lesson_009.md",
         "rph_git_blob_sha": "641fce2ac675d5d791d7c85d69df0cc3df407b78"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -628,6 +724,14 @@
         "complementary_sp": "5.1.1",
         "rph_path": "rph_standalone/english/year3/lesson_010.md",
         "rph_git_blob_sha": "d5073f65db66e1df40adadbab46d427b7af8f996"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -676,6 +780,14 @@
         "complementary_sp": "2.2.2",
         "rph_path": "rph_standalone/english/year3/lesson_011.md",
         "rph_git_blob_sha": "2f8ebed4ffe460facb7aae5c764fd833366b49a9"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -724,6 +836,14 @@
         "complementary_sp": "1.2.5",
         "rph_path": "rph_standalone/english/year3/lesson_012.md",
         "rph_git_blob_sha": "fbd40d074d0fb8a8183c1acab0335820ee745214"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -772,6 +892,14 @@
         "complementary_sp": "2.1.5",
         "rph_path": "rph_standalone/english/year3/lesson_013.md",
         "rph_git_blob_sha": "bbb87f1fd2f40ac82fcf3ff5f877f0d415438a1c"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -820,6 +948,14 @@
         "complementary_sp": "4.3.3",
         "rph_path": "rph_standalone/english/year3/lesson_014.md",
         "rph_git_blob_sha": "659c352b5df34f50b6c2defcd1fdc2c3ff6db7e0"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -868,6 +1004,14 @@
         "complementary_sp": "2.3.1",
         "rph_path": "rph_standalone/english/year3/lesson_015.md",
         "rph_git_blob_sha": "97c540d511747f417aaf4d9719a4560f3be12b11"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -916,6 +1060,14 @@
         "complementary_sp": "4.3.1",
         "rph_path": "rph_standalone/english/year3/lesson_016.md",
         "rph_git_blob_sha": "bd41b70dc6be1578673e067fc47127d0d042f7ed"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -964,6 +1116,14 @@
         "complementary_sp": "1.3.1",
         "rph_path": "rph_standalone/english/year3/lesson_017.md",
         "rph_git_blob_sha": "d4b8d7e58cc2c5db1e93b2a04ac4978acd4bf8c4"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1012,6 +1172,14 @@
         "complementary_sp": "4.3.2",
         "rph_path": "rph_standalone/english/year3/lesson_018.md",
         "rph_git_blob_sha": "7f25b59b017a946e075e95e74465e92fefcbcc43"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1060,6 +1228,14 @@
         "complementary_sp": "2.1.5",
         "rph_path": "rph_standalone/english/year3/lesson_031.md",
         "rph_git_blob_sha": "e93339db070f78f3f92907960e93f82dab14796e"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1108,6 +1284,14 @@
         "complementary_sp": "1.3.1",
         "rph_path": "rph_standalone/english/year3/lesson_033.md",
         "rph_git_blob_sha": "5da7ba3c0687568d8da849ac024318b609948ed0"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1156,6 +1340,14 @@
         "complementary_sp": "1.1.1",
         "rph_path": "rph_standalone/english/year3/lesson_034.md",
         "rph_git_blob_sha": "354d54ff41362b41dbe79fa0288f82e1a487c83a"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1204,6 +1396,14 @@
         "complementary_sp": "3.2.2",
         "rph_path": "rph_standalone/english/year3/lesson_036.md",
         "rph_git_blob_sha": "bf55da995a23365165742381465ae6257bdc6014"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1252,6 +1452,14 @@
         "complementary_sp": "4.3.2",
         "rph_path": "rph_standalone/english/year4/lesson_004.md",
         "rph_git_blob_sha": "dae4b2545f11d076a9f2bb75854426cf2c59e1e1"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1300,6 +1508,14 @@
         "complementary_sp": "2.1.1",
         "rph_path": "rph_standalone/english/year4/lesson_079.md",
         "rph_git_blob_sha": "cf8a708993c3306d3c84b8f97350fd23e68f00df"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1348,6 +1564,14 @@
         "complementary_sp": "4.2.4",
         "rph_path": "rph_standalone/english/year4/lesson_089.md",
         "rph_git_blob_sha": "017a6e5f688beadc7b8f2a317f1140d920e3f2c0"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     },
     {
@@ -1396,6 +1620,14 @@
         "complementary_sp": "4.2.2",
         "rph_path": "rph_standalone/english/year4/lesson_090.md",
         "rph_git_blob_sha": "b65acaa07d04a516d84dba51e22660a1a0b6992f"
+      },
+      "delivery": {
+        "format": "pdf",
+        "scope": "complete_package",
+        "button_count": 1,
+        "include_teacher_guide": true,
+        "source_file": "files.pdf",
+        "docx_internal_only": true
       }
     }
   ],
@@ -1404,5 +1636,22 @@
     "bm_verified_audit_reference": 1,
     "bm_draft_rpt_reference": 2,
     "production_verified": 0
+  },
+  "delivery_policy": {
+    "location": "Sediakan Bahan PdP — bersama muat turun RPH",
+    "teacher_facing_format": "pdf",
+    "buttons_per_pdp": 1,
+    "button_label": "Download PDF",
+    "material_label": "Latihan PdP",
+    "download_scope": "complete_package",
+    "package_order": [
+      "Aras 1 – Pemulihan",
+      "Aras 2 – Pengukuhan",
+      "Aras 3 – Pengayaan",
+      "Skema jawapan dan panduan guru"
+    ],
+    "docx_visibility": "internal_editing_only",
+    "show_only_when_ready_and_exactly_matched": true,
+    "changes_rph_quota": false
   }
 }
