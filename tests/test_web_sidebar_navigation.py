@@ -78,8 +78,8 @@ class WebSidebarTabsTests(unittest.TestCase):
         for category in ("kp2027","kssr","dpk","pk"):
             self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
         rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf|gurubesar\.my/dskp-[a-z0-9-]+-tahun-[1-6]-kssr/|sites\.google\.com/(?:moe-dl\.edu\.my|moe\.gov\.my)/[^"]+|www\.teacherfiera\.com/wp-content/uploads/2020/04/[^"]+\.pdf))"',self.html)
-        self.assertEqual(len(rows),144)
-        self.assertEqual(len({url for _,_,url in rows}),144)
+        self.assertEqual(len(rows),156)
+        self.assertEqual(len({url for _,_,url in rows}),156)
         expected={(str(year),subject+" "+stream) for year in range(1,7)
                   for subject in ("Matematik","Sains")
                   for stream in ("SK","SJKC","SJKT","DLP")}
@@ -92,7 +92,7 @@ class WebSidebarTabsTests(unittest.TestCase):
             "Sejarah": range(4,7), "Reka Bentuk dan Teknologi": range(4,7),
             "Bahasa Cina SK": range(1,7), "Bahasa Cina SJKC": range(1,7),
             "Bahasa Tamil SK": range(1,7), "Bahasa Tamil SJKT": range(1,7),
-            "Bahasa Iban": range(1,7),
+            "Bahasa Iban": range(1,7), "Bahasa Kadazandusun": range(1,7), "Bahasa Semai": range(1,7),
         }.items():
             expected.update((str(year),subject) for year in years)
         self.assertEqual({(year,subject) for year,subject,_ in rows},expected)
