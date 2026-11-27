@@ -1,0 +1,24 @@
+name: Alam KP2027 private 5P templates QA
+on:
+  pull_request:
+    paths:
+      - 'web/kp2027_alam_5p_templates.py'
+      - 'web/kp2027_alam_private_web.py'
+      - 'tests/test_kp2027_alam_5p_templates.py'
+      - 'web_v1_static_preview/index.html'
+      - '.github/workflows/alam-kp2027-5p-templates-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile web/kp2027_alam_5p_templates.py web/kp2027_alam_private_web.py
+      - run: PYTHONPATH=. python -m unittest discover -s tests -p 'test_kp2027_alam*web.py' -v
+      - run: PYTHONPATH=. python -m unittest discover -s tests -p 'test_kp2027_alam_5p_templates.py' -v
