@@ -138,6 +138,12 @@ class WebSidebarTabsTests(unittest.TestCase):
             ("5","Pendidikan Sains, Sosial dan Alam Sekitar"),
             ("6","Pendidikan Sains, Sosial dan Alam Sekitar"),
         })
+        stream_rows=re.findall(r'<li data-pk-stream="(pendengaran|penglihatan)" data-pk-stream-year="([1-6])" data-pk-stream-subject="([^"]+)"><a href="(https://[^"]+\.pdf)"',self.html)
+        self.assertEqual(len(stream_rows),15)
+        self.assertEqual(len({url for _,_,_,url in stream_rows}),15)
+        self.assertEqual({year for stream,year,subject,_ in stream_rows if stream=="pendengaran" and subject=="Bahasa Melayu (Suaian)"},set("123456"))
+        self.assertEqual(sum(stream=="pendengaran" for stream,_,_,_ in stream_rows),11)
+        self.assertEqual(sum(stream=="penglihatan" for stream,_,_,_ in stream_rows),4)
         self.assertIn('docsYear.addEventListener("change",filterCurriculumDocs)',self.html)
         self.assertIn('docsSubject.addEventListener("change",filterCurriculumDocs)',self.html)
         self.assertIn('#workspace #view-curriculum-docs{display:none!important}',self.html)
