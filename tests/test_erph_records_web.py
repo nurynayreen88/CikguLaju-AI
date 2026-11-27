@@ -27,9 +27,11 @@ class ErphTests(unittest.TestCase):
     def test_other_owner_cannot_update(self):
         with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store',return_value=[]) as store:
             rid='00000000-0000-4000-8000-000000000001'
-            self.assertEqual(self.client.put('/api/erph/records/'+rid,json=PAYLOAD,headers=ORIGIN).status_code,404)
+            stamp='2027-01-11T00:00:00+00:00'
+            headers=dict(ORIGIN,**{'X-eRPH-Version':stamp})
+            self.assertEqual(self.client.put('/api/erph/records/'+rid,json=PAYLOAD,headers=headers).status_code,409)
             self.assertEqual(store.call_args.args[1],42)
-            self.assertEqual(store.call_args.args[3],{'id':'eq.'+rid})
+            self.assertEqual(store.call_args.args[3],{'id':'eq.'+rid,'updated_at':'eq.'+stamp})
     def test_validation(self):
         for changes in ({'end_time':'07:00'},{'teaching_date':'2027-02-30'},{'status':'completed'},{'activities':''}):
             with self.assertRaises(ValueError):m.validate(dict(PAYLOAD,**changes))
@@ -172,6 +174,25 @@ class ErphTests(unittest.TestCase):
         self.assertIn('function edit(item){editorVersion++;',html)
         self.assertIn("'cancel').onclick=()=>{editorVersion++;form.hidden=true}",html)
         self.assertIn('if(version!==editorVersion||form.hidden)return;',html)
-        self.assertIn('const version=editorVersion,recordId=editing;',html)
+        self.assertIn('const version=editorVersion,recordId=editing,stamp=recordStamp;',html)
         self.assertIn("await api(recordId?'/'+encodeURIComponent(recordId):''",html)
-        self.assertIn('if(version===editorVersion&&!form.hidden){day.value=',html)
+        self.assertIn('if(version===editorVersion&&!form.hidden){editing=result.item.id;',html)
+
+    def test_update_requires_version_and_rejects_stale_record(self):
+        rid='00000000-0000-4000-8000-000000000001'
+        url='/api/erph/records/'+rid
+        current='2027-01-11T01:00:00+00:00'
+        stale='2027-01-11T00:00:00+00:00'
+        with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store') as store:
+            self.assertEqual(self.client.put(url,json=PAYLOAD,headers=ORIGIN).status_code,428)
+            self.assertEqual(self.client.put(url,json=PAYLOAD,headers=dict(ORIGIN,**{'X-eRPH-Version':'invalid'})).status_code,400)
+            store.assert_not_called()
+            store.return_value=[]
+            self.assertEqual(self.client.put(url,json=PAYLOAD,headers=dict(ORIGIN,**{'X-eRPH-Version':stale})).status_code,409)
+            self.assertEqual(store.call_args.args[3]['updated_at'],'eq.'+stale)
+            store.return_value=[dict(PAYLOAD,id=rid,updated_at=current)]
+            r=self.client.put(url,json=PAYLOAD,headers=dict(ORIGIN,**{'X-eRPH-Version':'2027-01-11T09:00:00+08:00'}))
+            self.assertEqual(r.status_code,200)
+            self.assertEqual(store.call_args.args[3],{'id':'eq.'+rid,'updated_at':'eq.'+current})
+            self.assertEqual(r.json['item']['updated_at'],current)
+            self.assertNotIn('owner_telegram_id',store.call_args.args[4])
