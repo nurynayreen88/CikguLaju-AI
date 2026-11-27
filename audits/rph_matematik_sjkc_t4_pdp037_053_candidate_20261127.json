@@ -1,0 +1,1149 @@
+{
+  "status": "SEVENTEEN_NEW_RPH_CONTENT_CANDIDATES_NOT_PUBLISHED",
+  "year": 4,
+  "subject": "Matematik SJKC",
+  "source": {
+    "rpt_path": "audits/rpt_2027_matematik_sjkc_t4_t6_layout_input_20261127.json",
+    "rpt_blob": "fb090b1d7c562ecb2b485ec2fe647aba265fd9ee",
+    "dskp_drive_id": "1PlpjBO35rc0C9eGj8IDMB74A5njPKhLm",
+    "dskp_printed_pages": [
+      41,
+      42
+    ],
+    "qualification": "DSKP table directly inspected via file text at lines 4057–4167. Original teaching activities and scope paraphrases; full wording, actual textbook pages, rendering and academic release QA still pending. Exchange rate must be teacher-verified on lesson date; no current rate fabricated."
+  },
+  "rpt_topic_revision_proposals": [
+    {
+      "draft_pdp": 45,
+      "previous": "从记录判断储蓄目标的进度",
+      "proposed": "保存储蓄和开支记录的需要及目标追踪",
+      "applied": false
+    },
+    {
+      "draft_pdp": 47,
+      "previous": "区分必需品和想要的物品",
+      "proposed": "按需要与需求的优先次序作出财务决策",
+      "applied": false
+    },
+    {
+      "draft_pdp": 50,
+      "previous": "读取一令吉对应外币的汇率表",
+      "proposed": "读取并讲述授课当天RM1对应主要外币的汇率",
+      "applied": false
+    },
+    {
+      "draft_pdp": 53,
+      "previous": "以图表分析十万令吉以内的购物和收支问题",
+      "proposed": "十万令吉以内基本与混合运算的生活应用题",
+      "applied": false
+    }
+  ],
+  "records": [
+    {
+      "draft_pdp": 37,
+      "unit": 3,
+      "week": "M15",
+      "dates": {
+        "A": {
+          "start": "2027-04-18",
+          "end": "2027-04-22"
+        },
+        "B": {
+          "start": "2027-04-19",
+          "end": "2027-04-23"
+        }
+      },
+      "minutes": 60,
+      "topic": "核算三笔以内的账单总额",
+      "original_rpt_topic": "核算三笔以内的账单总额",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.1",
+      "sp_codes": [
+        "3.1.1"
+      ],
+      "scope": "十万令吉以内三个币值的加法",
+      "objective": "正确计算至三笔金额的总额，处理仙位进位。",
+      "success_criteria": "8题至少答对7题。",
+      "set_induction": "展示RM1 250.80、RM372.45及RM85.90三张模拟账单。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "账单拼接：学生在令吉和仙的位值表上对齐三笔金额，先估算再计算。"
+        },
+        {
+          "number": 2,
+          "text": "采购核算：小组轮流担任采购员和会计，抽取三张价格卡计算总额并用另一方法复核。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：完成8道金额加法，包含仙位进位及三笔金额，结果不超过RM100 000。"
+        }
+      ],
+      "closure": "归纳小数点对齐及金额保留两位小数。",
+      "bbm": "模拟账单、位值表、价格卡",
+      "assessment": "核对8题结果及金额格式。",
+      "remedial": "先用模拟钱币合并两笔不进位金额。",
+      "enrichment": "设计三笔不同金额，使总额恰为RM5 000。",
+      "emk": "财务教育",
+      "pak21": "角色扮演",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        84,
+        85
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 38,
+      "unit": 3,
+      "week": "M15",
+      "dates": {
+        "A": {
+          "start": "2027-04-18",
+          "end": "2027-04-22"
+        },
+        "B": {
+          "start": "2027-04-19",
+          "end": "2027-04-23"
+        }
+      },
+      "minutes": 60,
+      "topic": "从储蓄中扣除两笔开销",
+      "original_rpt_topic": "从储蓄中扣除两笔开销",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.1",
+      "sp_codes": [
+        "3.1.2"
+      ],
+      "scope": "十万令吉以内至三个币值的减法",
+      "objective": "计算两笔金额之差及三笔金额连减，正确处理借位。",
+      "success_criteria": "8题至少答对7题，含两题连减。",
+      "set_induction": "储蓄RM520.00，支付RM125.65及RM48.90后剩多少？",
+      "activities": [
+        {
+          "number": 1,
+          "text": "钱包模型：学生用模拟钱币解释一令吉换成100仙，处理借位。"
+        },
+        {
+          "number": 2,
+          "text": "开销流水线：按两次支出的先后顺序写出连减式，用条形图记录各次余额。"
+        },
+        {
+          "number": 3,
+          "text": "独立核算：完成8道金额减法与连减题，任选两题以加法验算。"
+        }
+      ],
+      "closure": "提醒余额不可写成负数的模拟消费情境及正确借位。",
+      "bbm": "模拟钱币、余额记录卡",
+      "assessment": "检查8题及逆运算。",
+      "remedial": "使用整令吉与简单仙位金额练习。",
+      "enrichment": "根据指定余额和两笔开销反推初始金额。",
+      "emk": "财务教育、节约",
+      "pak21": "同伴互查",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，含两题连减。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        86,
+        87
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 39,
+      "unit": 3,
+      "week": "M16",
+      "dates": {
+        "A": {
+          "start": "2027-04-25",
+          "end": "2027-04-29"
+        },
+        "B": {
+          "start": "2027-04-26",
+          "end": "2027-04-30"
+        }
+      },
+      "minutes": 60,
+      "topic": "用收支表处理加减混合式",
+      "original_rpt_topic": "用收支表处理加减混合式",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.2",
+      "sp_codes": [
+        "3.2.1"
+      ],
+      "scope": "十万令吉以内币值的加减混合运算",
+      "objective": "按事件顺序正确完成金额加减混合式。",
+      "success_criteria": "8题至少答对7题，并记录中间余额。",
+      "set_induction": "班级基金RM1 250，筹得RM375.50，购买材料RM268.75。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "收支记账：用不同颜色区分收入和支出，列出单一加减混合式。"
+        },
+        {
+          "number": 2,
+          "text": "流水账诊所：学生交换账本，找出漏记收入、颠倒顺序或仙位借位错误。"
+        },
+        {
+          "number": 3,
+          "text": "个人练习：完成8题加减及减加混合式，保持各步金额在RM100 000以内。"
+        }
+      ],
+      "closure": "说明先后发生的收支如何对应算式。",
+      "bbm": "模拟流水账、彩色收支卡",
+      "assessment": "按8题的运算顺序和余额评估。",
+      "remedial": "用整数令吉的收支数轴。",
+      "enrichment": "编写两个事件顺序不同而最终余额相同的例子。",
+      "emk": "财务教育、诚信",
+      "pak21": "纠错学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，并记录中间余额。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        88,
+        89
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 40,
+      "unit": 3,
+      "week": "M16",
+      "dates": {
+        "A": {
+          "start": "2027-04-25",
+          "end": "2027-04-29"
+        },
+        "B": {
+          "start": "2027-04-26",
+          "end": "2027-04-30"
+        }
+      },
+      "minutes": 60,
+      "topic": "按单价计算多件商品的总价",
+      "original_rpt_topic": "按单价计算多件商品的总价",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.1",
+      "sp_codes": [
+        "3.1.3"
+      ],
+      "scope": "一个币值乘至二位数，积不超过十万令吉",
+      "objective": "用竖式或分拆策略计算单价乘一位或两位数量。",
+      "success_criteria": "8题至少答对7题，含两位数乘数。",
+      "set_induction": "每本练习簿RM3.85，购买24本，估计总价。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "购物篮分拆：把24拆成20和4，分别计算单价的部分积后相加。"
+        },
+        {
+          "number": 2,
+          "text": "模拟订货：小组选择价目表中一种商品，抽取1至99的数量卡，计算订单金额并确认不超预算。"
+        },
+        {
+          "number": 3,
+          "text": "个人检测：完成8道金额乘法，包括整令吉和含仙位单价；以估算检查小数点。"
+        }
+      ],
+      "closure": "归纳总价等于单价乘数量。",
+      "bbm": "价目表、订货单、数位板",
+      "assessment": "核对8题总价与金额格式。",
+      "remedial": "先进行一位数乘整令吉。",
+      "enrichment": "设计两种不同单价与数量、总价相同的订单。",
+      "emk": "财务教育",
+      "pak21": "模拟采购",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，含两位数乘数。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        90,
+        91
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 41,
+      "unit": 3,
+      "week": "M16",
+      "dates": {
+        "A": {
+          "start": "2027-04-25",
+          "end": "2027-04-29"
+        },
+        "B": {
+          "start": "2027-04-26",
+          "end": "2027-04-30"
+        }
+      },
+      "minutes": 60,
+      "topic": "将款项分摊给多组对象",
+      "original_rpt_topic": "将款项分摊给多组对象",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.1",
+      "sp_codes": [
+        "3.1.4"
+      ],
+      "scope": "十万令吉以内币值除以至二位数",
+      "objective": "计算指定金额平均分配后的每份币值，并用乘法验证。",
+      "success_criteria": "8题至少答对7题，含两位数除数。",
+      "set_induction": "12组平均分配RM486.00的材料经费。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "分款模型：把RM486.00按令吉与仙位分解，示范竖式除法。"
+        },
+        {
+          "number": 2,
+          "text": "费用分摊站：两人根据人数卡和总额卡计算每份金额，使用能整分至仙位的数据。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：完成8道金额除法题，选择两题以每份金额乘份数验算。"
+        }
+      ],
+      "closure": "提醒核查每份金额及总金额是否一致。",
+      "bbm": "模拟钱币、分摊单",
+      "assessment": "检查8题及乘法验算。",
+      "remedial": "使用整令吉且能被一位数整除的金额。",
+      "enrichment": "为给定每份金额设计两种不同份数的分摊方案。",
+      "emk": "公平、财务教育",
+      "pak21": "同伴辅导",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，含两位数除数。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        92,
+        93
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 42,
+      "unit": 3,
+      "week": "M17",
+      "dates": {
+        "A": {
+          "start": "2027-05-02",
+          "end": "2027-05-06"
+        },
+        "B": {
+          "start": "2027-05-03",
+          "end": "2027-05-07"
+        }
+      },
+      "minutes": 60,
+      "topic": "结合乘除计算交易金额",
+      "original_rpt_topic": "结合乘除计算交易金额",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.2",
+      "sp_codes": [
+        "3.2.2"
+      ],
+      "scope": "十万令吉以内币值的乘除混合运算",
+      "objective": "正确列出并计算金额乘除混合式，解释中间金额。",
+      "success_criteria": "8题至少答对7题，顺序正确。",
+      "set_induction": "6箱物品每箱RM84.00，总款由12人平分。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "交易流程图：学生先求六箱总价，再求每人分摊额，写成乘除混合式。"
+        },
+        {
+          "number": 2,
+          "text": "反向任务：按先分摊后计算若干份的故事卡列除乘式，比较两类中间金额的意义。"
+        },
+        {
+          "number": 3,
+          "text": "独立练习：完成8道乘除混合题；选取能精确至仙位且各步不超RM100 000的数据。"
+        }
+      ],
+      "closure": "归纳乘除同级运算按从左到右处理。",
+      "bbm": "流程图、交易卡",
+      "assessment": "按8题顺序、金额和单位评估。",
+      "remedial": "以两个连续的简单操作演示。",
+      "enrichment": "根据指定结果设计两个不同的乘除混合式。",
+      "emk": "财务教育、推理",
+      "pak21": "小组解题",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，顺序正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        94,
+        95
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 43,
+      "unit": 3,
+      "week": "M17",
+      "dates": {
+        "A": {
+          "start": "2027-05-02",
+          "end": "2027-05-06"
+        },
+        "B": {
+          "start": "2027-05-03",
+          "end": "2027-05-07"
+        }
+      },
+      "minutes": 60,
+      "topic": "设计日、周、月储蓄预算",
+      "original_rpt_topic": "设计日、周、月储蓄预算",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.3",
+      "sp_codes": [
+        "3.3.1"
+      ],
+      "scope": "天、周和月的财务预算与短期财务目标",
+      "objective": "根据模拟收入及必要开支拟定日、周、月预算，达到短期储蓄目标。",
+      "success_criteria": "完成3种预算表，各表收支不超收入且储蓄目标可达成。",
+      "set_induction": "假设每上课日可存RM2，讨论四周如何累积RM40。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "目标阶梯：学生为虚构文具目标设定金额、期限和储蓄方法。"
+        },
+        {
+          "number": 2,
+          "text": "预算工坊：利用教师给定收入、上课日数及开支卡，分别制定日、周及月预算，明确时间范围。"
+        },
+        {
+          "number": 3,
+          "text": "个人方案：填写3种相互一致的预算表，核对收入减开支与计划储蓄。"
+        }
+      ],
+      "closure": "分享一种不影响必要开支的储蓄方式。",
+      "bbm": "预算表、模拟收支卡",
+      "assessment": "核查三个预算的金额、期限与目标。",
+      "remedial": "提供部分填好的日预算表。",
+      "enrichment": "遇到虚构额外支出时修订预算而不增加收入。",
+      "emk": "财务教育",
+      "pak21": "项目式学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "完成3种预算表，各表收支不超收入且储蓄目标可达成。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        97,
+        99
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 44,
+      "unit": 3,
+      "week": "M17",
+      "dates": {
+        "A": {
+          "start": "2027-05-02",
+          "end": "2027-05-06"
+        },
+        "B": {
+          "start": "2027-05-03",
+          "end": "2027-05-07"
+        }
+      },
+      "minutes": 60,
+      "topic": "填写收支及储蓄记录",
+      "original_rpt_topic": "填写收支及储蓄记录",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.3",
+      "sp_codes": [
+        "3.3.2"
+      ],
+      "scope": "记录储蓄和开支以达财务目标",
+      "objective": "准确填写模拟储蓄和开支记录并计算余额。",
+      "success_criteria": "6笔记录至少5笔正确，最终余额正确。",
+      "set_induction": "教师出示一周的六笔模拟储蓄和购物记录。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "单据整理：学生按日期排列六张收支凭条，区分储蓄和开支。"
+        },
+        {
+          "number": 2,
+          "text": "记账接力：小组逐笔填写日期、事项、金额、累计余额，交换记录核对。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：根据另一组六笔交易填写完整记录，计算期末储蓄并与目标比较。"
+        }
+      ],
+      "closure": "说明及时记录每一笔交易的重要性。",
+      "bbm": "模拟收据、储蓄记录表",
+      "assessment": "检查6笔记录及余额。",
+      "remedial": "以三笔整数金额完成简化记录表。",
+      "enrichment": "补全缺失一笔金额的记录并解释推算。",
+      "emk": "财务教育、诚信",
+      "pak21": "合作记录",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "6笔记录至少5笔正确，最终余额正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        97,
+        99
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 45,
+      "unit": 3,
+      "week": "M20",
+      "dates": {
+        "A": {
+          "start": "2027-06-06",
+          "end": "2027-06-10"
+        },
+        "B": {
+          "start": "2027-06-07",
+          "end": "2027-06-11"
+        }
+      },
+      "minutes": 60,
+      "topic": "保存储蓄和开支记录的需要及目标追踪",
+      "original_rpt_topic": "从记录判断储蓄目标的进度",
+      "rpt_topic_revision_proposed": true,
+      "sk_code": "3.3",
+      "sp_codes": [
+        "3.3.3"
+      ],
+      "scope": "解说收存储蓄和开支记录的需要",
+      "objective": "运用完整与缺漏的记录比较，解释保存收支记录的用途。",
+      "success_criteria": "能说出至少3项保存记录的理由，并从两份记录中正确找出2处问题。",
+      "set_induction": "展示两份虚构账本，一份有日期和凭条，另一份只有最终余额。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "证据侦探：学生对照记录与模拟收据，找出遗漏及重复记账。"
+        },
+        {
+          "number": 2,
+          "text": "目标追踪：小组根据保存完好的记录计算储蓄进度，讨论缺少凭条时为何难以核实余额。"
+        },
+        {
+          "number": 3,
+          "text": "记录保管方案：学生制作简易收据袋与记录表，写下核对余额、检讨开支及规划储蓄等三项理由。"
+        }
+      ],
+      "closure": "说明保存记录有助于查证交易和作出后续计划。",
+      "bbm": "模拟账本、收据袋、目标卡",
+      "assessment": "评估3项理由及2处记录问题。",
+      "remedial": "提供配对的凭条和完整记录，逐项找证据。",
+      "enrichment": "设计一套纸本或模拟电子分类方法，并解释优点。",
+      "emk": "诚信、财务教育",
+      "pak21": "证据探究",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "能说出至少3项保存记录的理由，并从两份记录中正确找出2处问题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        97,
+        99
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 46,
+      "unit": 3,
+      "week": "M20",
+      "dates": {
+        "A": {
+          "start": "2027-06-06",
+          "end": "2027-06-10"
+        },
+        "B": {
+          "start": "2027-06-07",
+          "end": "2027-06-11"
+        }
+      },
+      "minutes": 60,
+      "topic": "比较不同消费决定的后果",
+      "original_rpt_topic": "比较不同消费决定的后果",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.4",
+      "sp_codes": [
+        "3.4.1"
+      ],
+      "scope": "解释财务决策带来的影响",
+      "objective": "比较虚构消费选择对余额、必要开支和储蓄目标的影响。",
+      "success_criteria": "分析3个情境，每个至少说明一项短期及一项后续影响。",
+      "set_induction": "有RM20的模拟预算，比较购买RM18玩具或保留交通及文具费用。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "选择树：学生为两种消费决定计算余额，并记录可能的后果。"
+        },
+        {
+          "number": 2,
+          "text": "情境辩论：小组轮流从短期需要和未来目标分析三个消费选择，不评判同学真实家境。"
+        },
+        {
+          "number": 3,
+          "text": "个人决策单：写出3个情境的选择及其短期和后续影响，用金额支持解释。"
+        }
+      ],
+      "closure": "归纳负责的决定要兼顾当下需要和未来目标。",
+      "bbm": "选择树、虚构预算卡",
+      "assessment": "检查3个情境的影响说明及余额计算。",
+      "remedial": "提供两个选择及已算好的余额。",
+      "enrichment": "比较价格不同但可使用时间不同的两种物品。",
+      "emk": "责任、财务教育",
+      "pak21": "讨论辩论",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "分析3个情境，每个至少说明一项短期及一项后续影响。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        100,
+        101
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 47,
+      "unit": 3,
+      "week": "M21",
+      "dates": {
+        "A": {
+          "start": "2027-06-13",
+          "end": "2027-06-17"
+        },
+        "B": {
+          "start": "2027-06-14",
+          "end": "2027-06-18"
+        }
+      },
+      "minutes": 60,
+      "topic": "按需要与需求的优先次序作出财务决策",
+      "original_rpt_topic": "区分必需品和想要的物品",
+      "rpt_topic_revision_proposed": true,
+      "sk_code": "3.4",
+      "sp_codes": [
+        "3.4.2"
+      ],
+      "scope": "按需要和需求的优先次序作出财务决策",
+      "objective": "区分虚构情境中的必需品与想要的物品，按预算排定购买优先次序。",
+      "success_criteria": "正确处理4组情境中的至少3组，并说明选择依据。",
+      "set_induction": "以RM30的模拟文具预算比较所需练习簿、铅笔和装饰品。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "分类市场：学生将物品卡按具体情境归类，说明某物品为何属于需要或想要。"
+        },
+        {
+          "number": 2,
+          "text": "限额购物：小组先满足必要开支，再评估剩余预算能否购买额外物品或储蓄。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：完成4组虚构购买计划，列明优先次序、总价与余额。"
+        }
+      ],
+      "closure": "提醒物品的优先次序会随实际情境而改变。",
+      "bbm": "物品卡、虚构预算单",
+      "assessment": "核对4组购买计划及理由。",
+      "remedial": "给予必要物品清单和简化预算。",
+      "enrichment": "在预算减少时重新排列优先次序。",
+      "emk": "责任、节约",
+      "pak21": "模拟决策",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "正确处理4组情境中的至少3组，并说明选择依据。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        100,
+        101
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 48,
+      "unit": 3,
+      "week": "M21",
+      "dates": {
+        "A": {
+          "start": "2027-06-13",
+          "end": "2027-06-17"
+        },
+        "B": {
+          "start": "2027-06-14",
+          "end": "2027-06-18"
+        }
+      },
+      "minutes": 60,
+      "topic": "比较资料来源并说明选择",
+      "original_rpt_topic": "比较资料来源并说明选择",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.4",
+      "sp_codes": [
+        "3.4.3"
+      ],
+      "scope": "分析不同来源理财资料作出财务决策",
+      "objective": "对照价格、数量、有效期和资料来源，作出有依据的模拟购买选择。",
+      "success_criteria": "在3组资料中至少2组正确比较并说明两项证据。",
+      "set_induction": "展示同款文具的模拟店铺价目表、广告及收据。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "来源识别：学生辨认价目表、促销广告和交易单据，标记商品规格与有效条件。"
+        },
+        {
+          "number": 2,
+          "text": "证据比较站：小组以同数量和规格比较不同来源的价格，找出不完整或不能直接比较的资料。"
+        },
+        {
+          "number": 3,
+          "text": "个人决策：分析3组模拟资料，记录价格差、所需数量和选择理由。"
+        }
+      ],
+      "closure": "强调先确认资料条件，再作决定。",
+      "bbm": "模拟广告、价目表、证据记录单",
+      "assessment": "按3组比较及两项证据评分。",
+      "remedial": "提供同规格商品的两张简单价目表。",
+      "enrichment": "加入限购或额外费用，修订购买判断。",
+      "emk": "媒体素养、财务教育",
+      "pak21": "证据比较",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "在3组资料中至少2组正确比较并说明两项证据。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        100,
+        101
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 49,
+      "unit": 3,
+      "week": "M21",
+      "dates": {
+        "A": {
+          "start": "2027-06-13",
+          "end": "2027-06-17"
+        },
+        "B": {
+          "start": "2027-06-14",
+          "end": "2027-06-18"
+        }
+      },
+      "minutes": 60,
+      "topic": "辨认各国货币的名称及符号",
+      "original_rpt_topic": "辨认各国货币的名称及符号",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.5",
+      "sp_codes": [
+        "3.5.1"
+      ],
+      "scope": "认识世界主要国家的货币",
+      "objective": "辨认主要国家或地区的货币名称、常见符号及代码。",
+      "success_criteria": "10道国家与货币配对至少答对8道。",
+      "set_induction": "展示模拟马币、新加坡元和日元标记，请学生猜测使用地区。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "货币地图：学生把马来西亚林吉特、新加坡元、美元、英镑、日元等卡片放到对应地图位置。"
+        },
+        {
+          "number": 2,
+          "text": "符号辨识：配对名称、代码和符号，讨论相同美元符号可用于不同货币，不能仅凭符号判断。"
+        },
+        {
+          "number": 3,
+          "text": "独立任务：完成10道配对题，圈出同符号但不同代码的例子。"
+        }
+      ],
+      "closure": "归纳货币名称和代码有助于辨认币种。",
+      "bbm": "地图、模拟货币卡",
+      "assessment": "检查10道配对题。",
+      "remedial": "先辨认三种常见货币。",
+      "enrichment": "补充欧元使用的多个国家并解释共用货币现象。",
+      "emk": "全球意识",
+      "pak21": "配对学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "10道国家与货币配对至少答对8道。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        104,
+        105
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 50,
+      "unit": 3,
+      "week": "M22",
+      "dates": {
+        "A": {
+          "start": "2027-06-20",
+          "end": "2027-06-24"
+        },
+        "B": {
+          "start": "2027-06-21",
+          "end": "2027-06-25"
+        }
+      },
+      "minutes": 60,
+      "topic": "读取并讲述授课当天RM1对应主要外币的汇率",
+      "original_rpt_topic": "读取一令吉对应外币的汇率表",
+      "rpt_topic_revision_proposed": true,
+      "sk_code": "3.5",
+      "sp_codes": [
+        "3.5.2"
+      ],
+      "scope": "讲述RM1与世界主要货币当日兑换率",
+      "objective": "从教师于授课当天核实并注明日期的汇率表读取RM1对应的外币数值。",
+      "success_criteria": "5道读表题至少答对4道，注明币种及汇率日期。",
+      "set_induction": "教师展示当天从可信来源取得的汇率表，说明汇率会变动。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "读表示范：先确认基准币为MYR及单位为RM1；若表列外币兑马币，教师先换算为统一方向并核实。"
+        },
+        {
+          "number": 2,
+          "text": "汇率卡配对：学生将表中的货币名称、代码及RM1对应数值配对，比较数值而不判断货币优劣。"
+        },
+        {
+          "number": 3,
+          "text": "个人读表：完成5道取值题，写出正确币种及表格日期，并解释为何旧表未必适用。"
+        }
+      ],
+      "closure": "说明汇率随日期变化，实际交易可能包含费用。",
+      "bbm": "当日核实汇率表、货币代码卡",
+      "assessment": "核对5题及日期；不使用预设真实汇率。",
+      "remedial": "用教师标为练习用的简化模拟表学习读表。",
+      "enrichment": "比较教师提供的两个注明日期的表格，指出一项变化。",
+      "emk": "全球意识、信息素养",
+      "pak21": "资料解读",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "5道读表题至少答对4道，注明币种及汇率日期。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        104,
+        105
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 51,
+      "unit": 3,
+      "week": "M22",
+      "dates": {
+        "A": {
+          "start": "2027-06-20",
+          "end": "2027-06-24"
+        },
+        "B": {
+          "start": "2027-06-21",
+          "end": "2027-06-25"
+        }
+      },
+      "minutes": 60,
+      "topic": "辨认现金、卡片及电子支付",
+      "original_rpt_topic": "辨认现金、卡片及电子支付",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.6",
+      "sp_codes": [
+        "3.6.1"
+      ],
+      "scope": "认识现金、电子付款系统及付款卡等工具",
+      "objective": "辨认三类付款工具及常见使用方式。",
+      "success_criteria": "9张付款情境或工具卡至少正确分类8张。",
+      "set_induction": "展示模拟纸币、付款卡和二维码图示，讨论各自用途。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "工具观察站：学生识别模拟现金、付款卡和电子支付图示，区分实物及电子工具。"
+        },
+        {
+          "number": 2,
+          "text": "分类墙：将9张交易卡归入现金、付款卡或电子支付栏，讨论有些工具可有多种用途。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：按图示及用途完成9项辨认任务，不使用真实支付账户。"
+        }
+      ],
+      "closure": "总结三类付款工具并提醒保护个人付款资料。",
+      "bbm": "模拟钱币、卡片、非真实二维码图示",
+      "assessment": "检查9项辨认。",
+      "remedial": "提供带名称和图示的三类卡。",
+      "enrichment": "比较实体付款卡和电子支付的异同。",
+      "emk": "信息安全、财务教育",
+      "pak21": "分类探究",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "9张付款情境或工具卡至少正确分类8张。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        106,
+        108
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 52,
+      "unit": 3,
+      "week": "M22",
+      "dates": {
+        "A": {
+          "start": "2027-06-20",
+          "end": "2027-06-24"
+        },
+        "B": {
+          "start": "2027-06-21",
+          "end": "2027-06-25"
+        }
+      },
+      "minutes": 60,
+      "topic": "为不同交易选择适合的付款方式",
+      "original_rpt_topic": "为不同交易选择适合的付款方式",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "3.6",
+      "sp_codes": [
+        "3.6.2"
+      ],
+      "scope": "解说货物和服务交易中各种付款工具的应用",
+      "objective": "根据虚构货物或服务交易情境说明适用付款工具及其条件。",
+      "success_criteria": "4种情境至少3种选用合理工具并解释依据。",
+      "set_induction": "模拟食堂购物与网上购买车票，比较可接受的付款方式。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "交易剧场：学生模拟收银员与顾客，使用纸制现金、卡片及电子支付标记，不进行真实交易。"
+        },
+        {
+          "number": 2,
+          "text": "条件卡：小组比较商家接受方式、网络可用性、金额及安全性，选择适用工具并解释。"
+        },
+        {
+          "number": 3,
+          "text": "个人方案：完成4道货物或服务交易情境题，说明工具用途及一项保护付款资料的方法。"
+        }
+      ],
+      "closure": "提醒选择受商家条件和安全因素影响，儿童实际付款须由监护人指导。",
+      "bbm": "模拟收银台、情境卡",
+      "assessment": "检查4项选择与依据。",
+      "remedial": "提供每个场景可用付款工具清单。",
+      "enrichment": "为网络中断的模拟交易提出替代方式。",
+      "emk": "财务教育、信息安全",
+      "pak21": "角色扮演",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "4种情境至少3种选用合理工具并解释依据。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        106,
+        108
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 53,
+      "unit": 3,
+      "week": "M23",
+      "dates": {
+        "A": {
+          "start": "2027-06-27",
+          "end": "2027-07-01"
+        },
+        "B": {
+          "start": "2027-06-28",
+          "end": "2027-07-02"
+        }
+      },
+      "minutes": 60,
+      "topic": "十万令吉以内基本与混合运算的生活应用题",
+      "original_rpt_topic": "以图表分析十万令吉以内的购物和收支问题",
+      "rpt_topic_revision_proposed": true,
+      "sk_code": "3.7",
+      "sp_codes": [
+        "3.7.1"
+      ],
+      "scope": "十万令吉以内基本及混合运算的日常钱币应用题",
+      "objective": "选择基本运算或加减、乘除混合策略解决金额问题并验证。",
+      "success_criteria": "6道应用题至少答对5道，涵盖基本及混合运算，金额单位正确。",
+      "set_induction": "教师出示虚构学校活动采购总预算、商品价目表及人数。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "审题工作台：学生标记数据、所求量和金额单位，用图表区分合计、差、总价与分摊。"
+        },
+        {
+          "number": 2,
+          "text": "采购规划：小组完成加减混合的基金收支题和乘除混合的费用分摊题，记录中间金额。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成6题，含四种基本运算及两种混合运算；所有金额控制在RM100 000以内，最后验算。"
+        }
+      ],
+      "closure": "总结审题、拟定策略、执行和验算。",
+      "bbm": "预算表、价目卡、分配图",
+      "assessment": "按6题算式、结果及单位评分。",
+      "remedial": "将多步题拆分成两个问题。",
+      "enrichment": "在给定预算内比较两个不同采购方案并说明理由。",
+      "emk": "财务教育、责任",
+      "pak21": "问题导向学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "6道应用题至少答对5道，涵盖基本及混合运算，金额单位正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        109,
+        115
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    }
+  ],
+  "release": false
+}
