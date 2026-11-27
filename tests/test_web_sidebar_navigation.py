@@ -108,8 +108,8 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertNotIn("penataran",kp_menu.lower())
         self.assertNotIn("curriculum-kp2027-ppd-list",kp_menu)
         self.assertIn("Hanya Dokumen Kurikulum (DK) disenaraikan.",kp_menu)
-        self.assertEqual(len(pk_rows),33)
-        self.assertEqual(len({url for _,_,url in pk_rows}),33)
+        self.assertEqual(len(pk_rows),41)
+        self.assertEqual(len({url for _,_,url in pk_rows}),41)
         self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
             ("1","Asas 3M"),("2","Pengurusan Kehidupan"),("3","Asas 3M"),
             ("1","Pendidikan Islam"),
@@ -121,6 +121,14 @@ class WebSidebarTabsTests(unittest.TestCase):
             ("1","Pendidikan Moral"),
             ("3","Pendidikan Moral"),
             ("4","Pendidikan Moral"),
+            ("4","Bahasa Inggeris"),
+            ("4","Kemahiran Hidup Asas"),
+            ("6","Kemahiran Hidup Asas"),
+            ("6","Pendidikan Moral"),
+            ("2","Pendidikan Moral"),
+            ("6","Bahasa Inggeris"),
+            ("5","Bahasa Melayu"),
+            ("6","Teknologi Maklumat dan Komunikasi"),
             ("5","Pendidikan Moral"),
             ("2","Pendidikan Jasmani"),
             ("3","Pendidikan Jasmani"),
