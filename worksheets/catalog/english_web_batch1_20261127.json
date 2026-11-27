@@ -1,0 +1,199 @@
+{
+  "version": "2026-11-27",
+  "scope": "KSSR SK",
+  "delivery": "complete-pdf",
+  "records": {
+    "3/1": {
+      "unit": "Welcome!",
+      "main_sp": "1.3.1",
+      "complementary_sp": "2.1.5",
+      "drive_file_id": "1m2aRCUbJfZNOVuRa6KLphdVB4Q89dS_o",
+      "size_bytes": 266236,
+      "sha256": "205d496cce28399447c1a47db58ab4c88cfd473070116006ce8dc297de8c5287"
+    },
+    "3/2": {
+      "unit": "Welcome!",
+      "main_sp": "2.1.5",
+      "complementary_sp": "1.2.2",
+      "drive_file_id": "1a5P7mnmh3eT3eBfdUuw7DaJ1t8UPhFvB",
+      "size_bytes": 340074,
+      "sha256": "b9cc04c57c14b542a4f8e7fc14fb0b958ab83082234ad8bb7ac822a03cd600f6"
+    },
+    "3/3": {
+      "unit": "Welcome!",
+      "main_sp": "3.2.2",
+      "complementary_sp": "3.2.3",
+      "drive_file_id": "1h_-llT2D-1Axk97iPt0XtmN2sUYe0w5n",
+      "size_bytes": 260814,
+      "sha256": "d34612cabb2534e8341d9bb89825f6bcbcd5d93b318e203839b065e43d4c91f4"
+    },
+    "3/4": {
+      "unit": "Welcome!",
+      "main_sp": "4.2.4",
+      "complementary_sp": "4.1.2",
+      "drive_file_id": "1ILoCPTdVD4dG-e_FQnkqSM93puR7geTq",
+      "size_bytes": 270871,
+      "sha256": "fa6752e6b6c06f7ba0c07f201844d6fabae5becbc7745883a73038fc58dfe36f"
+    },
+    "3/5": {
+      "unit": "Welcome!",
+      "main_sp": "5.3.1",
+      "complementary_sp": "4.3.3",
+      "drive_file_id": "1-rFmwSDdlEI_JGraE7tnXa2T6STaeKu8",
+      "size_bytes": 197864,
+      "sha256": "10237d9f9b2591754353e9be58a8cdbd694f148916d57c6b5d3ba90c307240e1"
+    },
+    "3/6": {
+      "unit": "Welcome!",
+      "main_sp": "1.2.2",
+      "complementary_sp": "4.3.1",
+      "drive_file_id": "1UKKH5TepmKsyQ9i-nHsw2tZePDD9ztdg",
+      "size_bytes": 161903,
+      "sha256": "94ae03f4db45ace073d85a72034ea3acbbd409f4bf84d3fed891c5445e224ef3"
+    },
+    "3/7": {
+      "unit": "Welcome!",
+      "main_sp": "2.1.5",
+      "complementary_sp": "1.2.5",
+      "drive_file_id": "127AGZd7NvC1mNlHiURQGzoACYReAbOX7",
+      "size_bytes": 262196,
+      "sha256": "60fbf8ba0e448003e8c86cdbb3392f165930bdabb666c97ae8aecab001a6556b"
+    },
+    "3/8": {
+      "unit": "Welcome!",
+      "main_sp": "3.2.1",
+      "complementary_sp": "3.2.3",
+      "drive_file_id": "1KL8XyyqHsZ7lXywYL38u1_OTbWv4WhN6",
+      "size_bytes": 236944,
+      "sha256": "b49b43b9a7fedcde1e91453dfca4ce9b72122246b21f2e2805de0f169d9df267"
+    },
+    "3/9": {
+      "unit": "Welcome!",
+      "main_sp": "4.3.2",
+      "complementary_sp": "1.2.1",
+      "drive_file_id": "1cx6FH1j8WgFja9WkM2_ZSNJ_pPuc5KNe",
+      "size_bytes": 58475,
+      "sha256": "b7ba11acda5e9b4ad958cb691dabf2677309b04994ffeb9dd7de27c07be10d0c"
+    },
+    "3/10": {
+      "unit": "Welcome!",
+      "main_sp": "5.3.1",
+      "complementary_sp": "5.1.1",
+      "drive_file_id": "1hviu6whSOVHmyjWb3IVR9lveNjUBD1aK",
+      "size_bytes": 204721,
+      "sha256": "c0f244c2df73a64015a3a5f2793971572c03b8361c9398a3fc9adb62b45d9bde"
+    },
+    "3/11": {
+      "unit": "Welcome!",
+      "main_sp": "1.2.5",
+      "complementary_sp": "2.2.2",
+      "drive_file_id": "14jkLGbOIc-VlUUPWI2fhgDWz7T2wCGYi",
+      "size_bytes": 140126,
+      "sha256": "20d13ff4e8b4f51e7353f3747093ade9ed2f8f66f722db3e9e075f1f70f3e8bd"
+    },
+    "3/12": {
+      "unit": "Welcome!",
+      "main_sp": "2.1.2",
+      "complementary_sp": "1.2.5",
+      "drive_file_id": "15RBmOCS2DegY-FTdFg0s-g5S-ty1uMBe",
+      "size_bytes": 220402,
+      "sha256": "e25bef3e351975f13879d35de414e5905c182c2049d39755c00bdd43dcc02feb"
+    },
+    "3/13": {
+      "unit": "Welcome!",
+      "main_sp": "3.2.2",
+      "complementary_sp": "2.1.5",
+      "drive_file_id": "1n2TTwZaOB_3EDi-6QqlqIFblVkJPKx8T",
+      "size_bytes": 143575,
+      "sha256": "bd77f86aee38b1268b826977f2dba63b7fc6bf43f3315299da92383b7b815161"
+    },
+    "3/14": {
+      "unit": "Welcome!",
+      "main_sp": "4.3.1",
+      "complementary_sp": "4.3.3",
+      "drive_file_id": "13faWDJN8LgSvQ2429964-KOMISkEsqQC",
+      "size_bytes": 139666,
+      "sha256": "4c8593e4bc488ce54592a3d87e440479edd4b6657883e3591b03f09c6a79628e"
+    },
+    "3/15": {
+      "unit": "Welcome!",
+      "main_sp": "5.2.1",
+      "complementary_sp": "2.3.1",
+      "drive_file_id": "17nXmISkIu_u4UU9Id8zBoBfvCupHoSgL",
+      "size_bytes": 60354,
+      "sha256": "9c0e1bf7330e82bf2761c3f5c5cb270820bd78c692a450aaeddc354f10517210"
+    },
+    "3/16": {
+      "unit": "Welcome!",
+      "main_sp": "3.2.2",
+      "complementary_sp": "4.3.1",
+      "drive_file_id": "1Yv5rsNGDQdz7sKzY5_v00ZYNPDP5Qntr",
+      "size_bytes": 152529,
+      "sha256": "8934a364d31b921e46dc08f47da3eae7d448c24a275da2d93e21c5d25beb8742"
+    },
+    "3/31": {
+      "unit": "Every day",
+      "main_sp": "5.2.1",
+      "complementary_sp": "2.1.5",
+      "drive_file_id": "1BDm7fiDQZ0a1SPfQdZw4090e9JpjKhJI",
+      "size_bytes": 200724,
+      "sha256": "e8f7a8fe44c5599d0bc699b0e4e15aa07e12c98a0f0a18d148be619b3134b20d"
+    },
+    "3/33": {
+      "unit": "Right now",
+      "main_sp": "1.2.2",
+      "complementary_sp": "1.3.1",
+      "drive_file_id": "1vksRHie9mnLWFFN4VVMKG41XDRRH_I7a",
+      "size_bytes": 382755,
+      "sha256": "15b785418077f1487ba4447181eddec6fb47848b673f71f38f674d2e538ff0a6"
+    },
+    "3/34": {
+      "unit": "Right now",
+      "main_sp": "2.1.5",
+      "complementary_sp": "1.1.1",
+      "drive_file_id": "1p0tQaSi3awuS38Fw2mZZPhnlaxjDV8mm",
+      "size_bytes": 242960,
+      "sha256": "165e99b0620462455de169ff7178609a1de9f0a61c10d7a15db942e664f445ca"
+    },
+    "3/36": {
+      "unit": "Right now",
+      "main_sp": "4.3.2",
+      "complementary_sp": "3.2.2",
+      "drive_file_id": "1vGDlLt3VDpz5zXlPGJ5s9J1wHju-wWUO",
+      "size_bytes": 244359,
+      "sha256": "32f3e2511e8bb71e3fb62627193399173ccd6f4b57047c7e87b4d7dcca225b78"
+    },
+    "4/4": {
+      "unit": "Where are you from?",
+      "main_sp": "4.2.4",
+      "complementary_sp": "4.3.2",
+      "drive_file_id": "1rgogWApibl4-gI__dWJxMGEedDXO_IyC",
+      "size_bytes": 88263,
+      "sha256": "b2a58a5521a2b1478db8998c89ab639623244b8bdfc1f5de24b2a37835f6fc85"
+    },
+    "4/79": {
+      "unit": "The King of Kites",
+      "main_sp": "5.3.1",
+      "complementary_sp": "2.1.1",
+      "drive_file_id": "1v5D9XVJigXfzbq6s39gXX1dufsk2q21f",
+      "size_bytes": 114761,
+      "sha256": "3c882774800de1b39bc0be10834be24f7a6c64a57fcfdcd9fab61e63e23831cb"
+    },
+    "4/89": {
+      "unit": "Getting around",
+      "main_sp": "4.3.3",
+      "complementary_sp": "4.2.4",
+      "drive_file_id": "1H0EqonA1kv_xfpVjSa_MfmsyAdMUh7k1",
+      "size_bytes": 160867,
+      "sha256": "f6b85455ed7be4cc6aa753cca9cc97a4a5e096c37b2902da21b7ca6752c75bde"
+    },
+    "4/90": {
+      "unit": "The King of Kites",
+      "main_sp": "5.3.1",
+      "complementary_sp": "4.2.2",
+      "drive_file_id": "1mrTXJVFk1lruoz2g5YWjOi2vtffNb6BS",
+      "size_bytes": 82505,
+      "sha256": "017d21dacdd1ab4c6566ff14d7f2c51d8763ffa461e7ade6f7af2d241d2b8caf"
+    }
+  }
+}
