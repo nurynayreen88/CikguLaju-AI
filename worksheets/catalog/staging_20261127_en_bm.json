@@ -1,0 +1,703 @@
+{
+  "catalog_version": "2026-11-27",
+  "status": "STAGING",
+  "source": "Verified Google Drive folder listing",
+  "packages": 29,
+  "publication_enabled": false,
+  "notes": "Inventory only. Do not treat filename sequence candidates as verified production keys. The Majlis Pengikat Kemesraan package has no confirmed sequence key. No existing RPH/RPT files are modified.",
+  "items": [
+    {
+      "subject": "Bahasa Melayu",
+      "year": 2,
+      "stem": "CIKGULAJU_BM_T2_MAJLIS_PENGIKAT_KEMESRAAN_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_BM_T2_MAJLIS_PENGIKAT_KEMESRAAN_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1TP8bTG96SHQZD7VP-WKJMqr9ANd8fpqj",
+          "size_bytes": 38926
+        },
+        "pdf": {
+          "name": "CIKGULAJU_BM_T2_MAJLIS_PENGIKAT_KEMESRAAN_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1IQ2yLLNXRQNPkTMP2aKJNO6D25F1qqUF",
+          "size_bytes": 85641
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": null,
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "Bahasa Melayu",
+      "year": 2,
+      "stem": "CIKGULAJU_BM_T2_P003_MEMBELI_BAHAN_KEK",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_BM_T2_P003_MEMBELI_BAHAN_KEK.docx",
+          "drive_file_id": "1MNq3ho0l8QdOfxebNotHHKrTys5WXIJp",
+          "size_bytes": 617019
+        },
+        "pdf": {
+          "name": "CIKGULAJU_BM_T2_P003_MEMBELI_BAHAN_KEK.pdf",
+          "drive_file_id": "1YvUrLRbdqCmzqEtpByrgRfe5mOEvRBE7",
+          "size_bytes": 317597
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "PdP",
+        "number": 3
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "Bahasa Melayu",
+      "year": 2,
+      "stem": "CIKGULAJU_BM_T2_P004_KEK_HARI_LAHIR",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_BM_T2_P004_KEK_HARI_LAHIR.docx",
+          "drive_file_id": "13QoBiNiL5F22C9Z93fgXJevSjYUeSoHw",
+          "size_bytes": 598618
+        },
+        "pdf": {
+          "name": "CIKGULAJU_BM_T2_P004_KEK_HARI_LAHIR.pdf",
+          "drive_file_id": "1EwUbIeYxzLbfv45MJAr6L4wwQjuIMc9f",
+          "size_bytes": 302881
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "PdP",
+        "number": 4
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L001_GAMBAR_SERAGAM",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L001_GAMBAR_SERAGAM.docx",
+          "drive_file_id": "1IS9hSLkeBqlEun0mzRKR5O511ISPzVu8",
+          "size_bytes": 498685
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L001_GAMBAR_SERAGAM.pdf",
+          "drive_file_id": "1m2aRCUbJfZNOVuRa6KLphdVB4Q89dS_o",
+          "size_bytes": 266236
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 1
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L002_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L002_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1EQt5croNavPTfR-OH1DqgZMlI283yC09",
+          "size_bytes": 574982
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L002_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1a5P7mnmh3eT3eBfdUuw7DaJ1t8UPhFvB",
+          "size_bytes": 340074
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 2
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L003_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L003_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1k1FvNqOEwaHNLHWrbP99gH-q6yOlKCdv",
+          "size_bytes": 417515
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L003_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1h_-llT2D-1Axk97iPt0XtmN2sUYe0w5n",
+          "size_bytes": 260814
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 3
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L004_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L004_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1UWV3i6fJWfauKpwaYpgW9Q-YXpe8O0t1",
+          "size_bytes": 661872
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L004_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1ILoCPTdVD4dG-e_FQnkqSM93puR7geTq",
+          "size_bytes": 270871
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 4
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L005_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L005_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1jyfmJ7_nxfctV8wALGT93kBerhrqXcgY",
+          "size_bytes": 431637
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L005_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1-rFmwSDdlEI_JGraE7tnXa2T6STaeKu8",
+          "size_bytes": 197864
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 5
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L006_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L006_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1ewCYNNAPxh7cd_nluvm6pcERm8GobtUW",
+          "size_bytes": 347983
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L006_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1UKKH5TepmKsyQ9i-nHsw2tZePDD9ztdg",
+          "size_bytes": 161903
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 6
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L007_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L007_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1WgBG8RWoiLDqugOQDYv29zTFPsn46gPo",
+          "size_bytes": 533056
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L007_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "127AGZd7NvC1mNlHiURQGzoACYReAbOX7",
+          "size_bytes": 262196
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 7
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L008_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L008_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1Hc5Iabv9Y8YWkM7FO5hf0FM_DASfQSdZ",
+          "size_bytes": 523028
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L008_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1KL8XyyqHsZ7lXywYL38u1_OTbWv4WhN6",
+          "size_bytes": 236944
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 8
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L009_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L009_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1qw6Nj9BaIh9bN2-MjPd7Aw63SlyOn4st",
+          "size_bytes": 38461
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L009_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1cx6FH1j8WgFja9WkM2_ZSNJ_pPuc5KNe",
+          "size_bytes": 58475
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 9
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L010_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L010_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "18Hc0afqUbv44VFEMBLbgLeZ1FY-E631U",
+          "size_bytes": 437379
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L010_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1hviu6whSOVHmyjWb3IVR9lveNjUBD1aK",
+          "size_bytes": 204721
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 10
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L011_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L011_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1LmXKzDjvxnQWNzWp--sqqPU35bBrrHc3",
+          "size_bytes": 371847
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L011_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "14jkLGbOIc-VlUUPWI2fhgDWz7T2wCGYi",
+          "size_bytes": 140126
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 11
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L012_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L012_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1_NnjOAfYqc-n07b_QgZVLlAuvcDgjOMc",
+          "size_bytes": 289527
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L012_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "15RBmOCS2DegY-FTdFg0s-g5S-ty1uMBe",
+          "size_bytes": 220402
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 12
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L013_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L013_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1g9fiYtspudLpVbtiyVbRkL93Hf7jet2D",
+          "size_bytes": 327711
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L013_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1n2TTwZaOB_3EDi-6QqlqIFblVkJPKx8T",
+          "size_bytes": 143575
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 13
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L014_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L014_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1AfEK5xJTe_cg1N4ToJjHKfIqV7sl1npC",
+          "size_bytes": 383045
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L014_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "13faWDJN8LgSvQ2429964-KOMISkEsqQC",
+          "size_bytes": 139666
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 14
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L015_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L015_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1-KnBPOIbKhpuj14FPKpaHEo2U_4ji42H",
+          "size_bytes": 39323
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L015_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "17nXmISkIu_u4UU9Id8zBoBfvCupHoSgL",
+          "size_bytes": 60354
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 15
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L016_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L016_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1wAwHYcgxfwaYhqLFKggVOwM472yOQXl2",
+          "size_bytes": 442723
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L016_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1Yv5rsNGDQdz7sKzY5_v00ZYNPDP5Qntr",
+          "size_bytes": 152529
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 16
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L017_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L017_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1-2q2l0LVAfwbX-GfU5uU1awh-dr7AtwQ",
+          "size_bytes": 370830
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L017_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "12p7gbWqC5VyY9YKYz8hcTUmSPNIaX0o4",
+          "size_bytes": 206289
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 17
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L018_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L018_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "17fCwzqOVbTdA-dqBGUGWd1JVzL6qupvH",
+          "size_bytes": 557348
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L018_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1X4s9E8NFrfpDcxj9SdAR1PKpmHJuhc0M",
+          "size_bytes": 200673
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 18
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L031_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L031_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1e6wU7e1P9Olp3ZcGBW5zuIPovyK7UJCE",
+          "size_bytes": 252859
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L031_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1BDm7fiDQZ0a1SPfQdZw4090e9JpjKhJI",
+          "size_bytes": 200724
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 31
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L033_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L033_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1f4HT0kUAjiKOWAOhevoSxUCgXq8p5yMv",
+          "size_bytes": 720047
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L033_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1vksRHie9mnLWFFN4VVMKG41XDRRH_I7a",
+          "size_bytes": 382755
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 33
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L034_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L034_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "10NdlWZt8wovUDEZvpzZMUEc_y5JW2NNL",
+          "size_bytes": 375047
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L034_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1p0tQaSi3awuS38Fw2mZZPhnlaxjDV8mm",
+          "size_bytes": 242960
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 34
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 3,
+      "stem": "CIKGULAJU_EN_Y3_L036_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y3_L036_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1ar9SJud2DGPpUCN8uZQrATkW01nWxqAd",
+          "size_bytes": 310750
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y3_L036_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1vGDlLt3VDpz5zXlPGJ5s9J1wHju-wWUO",
+          "size_bytes": 244359
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 36
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 4,
+      "stem": "CIKGULAJU_EN_Y4_L004_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y4_L004_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1zRDUBLBGMrpNWCUSBWr7zbE9xPiH12VB",
+          "size_bytes": 39397
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y4_L004_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1rgogWApibl4-gI__dWJxMGEedDXO_IyC",
+          "size_bytes": 88263
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 4
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 4,
+      "stem": "CIKGULAJU_EN_Y4_L079_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y4_L079_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1fUJat180o9ZircT7hkDnpKoXUWzPAb0z",
+          "size_bytes": 38707
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y4_L079_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1v5D9XVJigXfzbq6s39gXX1dufsk2q21f",
+          "size_bytes": 114761
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 79
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 4,
+      "stem": "CIKGULAJU_EN_Y4_L089_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y4_L089_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "19R6khkaj0bqcGeyIQxEQx4Z6q5Z_CGA-",
+          "size_bytes": 193336
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y4_L089_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1H0EqonA1kv_xfpVjSa_MfmsyAdMUh7k1",
+          "size_bytes": 160867
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 89
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    },
+    {
+      "subject": "English",
+      "year": 4,
+      "stem": "CIKGULAJU_EN_Y4_L090_AKTIVITI_KREATIF",
+      "files": {
+        "docx": {
+          "name": "CIKGULAJU_EN_Y4_L090_AKTIVITI_KREATIF.docx",
+          "drive_file_id": "1oGOFejGxs3ezkQcyQC8pfawiBPfxgGAr",
+          "size_bytes": 40941
+        },
+        "pdf": {
+          "name": "CIKGULAJU_EN_Y4_L090_AKTIVITI_KREATIF.pdf",
+          "drive_file_id": "1mrTXJVFk1lruoz2g5YWjOi2vtffNb6BS",
+          "size_bytes": 82505
+        }
+      },
+      "status": "STAGING",
+      "sequence_candidate": {
+        "kind": "Lesson",
+        "number": 90
+      },
+      "production_mapping_verified": false,
+      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+    }
+  ]
+}
