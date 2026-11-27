@@ -77,11 +77,15 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('id="view-curriculum-docs" class="app-view" aria-labelledby="curriculum-docs-heading" hidden',self.html)
         for category in ("kp2027","kssr","dpk","pk"):
             self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
-        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.usercontent\.google\.com/download\?id=[A-Za-z0-9_-]+&amp;export=download&amp;confirm=t|drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf|gurubesar\.my/dskp-[a-z0-9-]+-tahun-[1-6]-kssr/|sites\.google\.com/(?:moe-dl\.edu\.my|moe\.gov\.my)/[^"]+|www\.teacherfiera\.com/wp-content/uploads/2020/04/[^"]+\.pdf))"',self.html)
+        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)">(?:<span class="curriculum-doc-name">[^<]+</span> <button type="button" class="curriculum-direct-download" data-download-url="|<a href=")(https://(?:drive\.usercontent\.google\.com/download\?id=[A-Za-z0-9_-]+&amp;export=download&amp;confirm=t|drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf|gurubesar\.my/dskp-[a-z0-9-]+-tahun-[1-6]-kssr/|sites\.google\.com/(?:moe-dl\.edu\.my|moe\.gov\.my)/[^"]+|www\.teacherfiera\.com/wp-content/uploads/2020/04/[^"]+\.pdf))"',self.html)
         self.assertEqual(len(rows),156)
-        direct_pattern=r'<a href="https://drive\.usercontent\.google\.com/download\?id=([A-Za-z0-9_-]+)&amp;export=download&amp;confirm=t" class="curriculum-direct-download" download rel="noopener noreferrer" title="Muat turun PDF dari koleksi CikguLaju">'
+        direct_pattern=r'<button type="button" class="curriculum-direct-download" data-download-url="https://drive\.usercontent\.google\.com/download\?id=([A-Za-z0-9_-]+)&amp;export=download&amp;confirm=t" aria-label="Download [^"]+">Download</button>'
         direct_ids=re.findall(direct_pattern,self.html)
         self.assertEqual(len(direct_ids),153)
+        self.assertEqual(self.html.count('class="curriculum-doc-name"'),153)
+        self.assertIn('link.href=url.href;',self.html)
+        self.assertIn('link.click();',self.html)
+        self.assertNotIn('class="curriculum-direct-download" download',self.html)
         self.assertEqual(len(set(direct_ids)),153)
         self.assertEqual(sum("drive.usercontent.google.com" in url for _,_,url in rows),137)
         self.assertEqual(self.html.count('class="curriculum-direct-download"'),153)
