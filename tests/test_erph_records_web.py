@@ -56,3 +56,25 @@ class ErphTests(unittest.TestCase):
             self.assertIn(b'if(j.closure)',r.data)
             self.assertIn(b'name="standard_learning"',r.data)
             self.assertIn(b'private, no-store',r.headers['Cache-Control'].encode())
+
+    def test_word_import_preview_no_store(self):
+        from io import BytesIO
+        from zipfile import ZipFile
+        from xml.sax.saxutils import escape
+        def cell(s):
+            return '<w:tc><w:p><w:r><w:t>'+escape(s)+'</w:t></w:r></w:p></w:tc>'
+        rows=[('Tajuk','Nombor'),('Standard Pembelajaran','1.1.1'),('Objektif','Murid menyebut nombor'),('Aktiviti PdP','Susun kad'),('Refleksi','')]
+        xml='<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body><w:tbl>'+''.join('<w:tr>'+cell(a)+cell(b)+'</w:tr>' for a,b in rows)+'</w:tbl></w:body></w:document>'
+        stream=BytesIO()
+        with ZipFile(stream,'w') as z:z.writestr('word/document.xml',xml)
+        raw=stream.getvalue()
+        mime='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+        with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store') as store:
+            response=self.client.post('/api/erph/import-word',data=raw,content_type=mime,headers=ORIGIN)
+            self.assertEqual(response.status_code,200)
+            self.assertEqual(response.json['fields']['standard_learning'],'1.1.1')
+            self.assertIn('Susun kad',response.json['fields']['activities'])
+            self.assertFalse(response.json['source_verified'])
+            self.assertEqual(self.client.post('/api/erph/import-word',data=raw,content_type=mime).status_code,403)
+            self.assertEqual(self.client.post('/api/erph/import-word',data=b'not a word file',content_type=mime,headers=ORIGIN).status_code,400)
+            store.assert_not_called()
