@@ -76,10 +76,10 @@ def validate(data):
         raise ValueError('Isi refleksi selepas PdP.')
     return out
 
-def store(config, uid, method, filters, data=None):
+def store(config, uid, method, filters, data=None, *, summary=False):
     url,key = _settings(config)
     # Ownership filter is derived only from verified session. Never accept client owner.
-    query = dict(filters, owner_telegram_id='eq.'+str(uid), select=SELECT)
+    query = dict(filters, owner_telegram_id='eq.'+str(uid), select='id,teaching_date,status' if summary else SELECT)
     headers = dict(_headers(key), **{'Content-Type':'application/json','Prefer':'return=representation'})
     req = Request(url+'/rest/v1/erph_teacher_records?'+urlencode(query),
                   headers=headers, method=method,
@@ -223,3 +223,48 @@ def export_records():
     ext,mime=('docx','application/vnd.openxmlformats-officedocument.wordprocessingml.document') if fmt=='word' else ('pdf','application/pdf')
     return send_file(BytesIO(data),mimetype=mime,as_attachment=True,
       download_name='CIKGULAJU_eRPH_'+first.isoformat()+'_'+last.isoformat()+'.'+ext,conditional=False)
+
+@bp.get('/api/erph/summary')
+def summary_records():
+    c,uid,error=account()
+    if error is not None:return error
+    from calendar import monthrange
+    from datetime import timedelta
+    try:
+        if set(request.args)-{'date','scope'} or any(len(request.args.getlist(k))!=1 for k in request.args):
+            raise ValueError()
+        day=date.fromisoformat(request.args.get('date',''))
+        scope=request.args.get('scope','')
+        if not 2000<=day.year<=2100 or scope not in ('month','year'):
+            raise ValueError()
+        first=date(day.year,day.month if scope=='month' else 1,1)
+        last=date(day.year,day.month,monthrange(day.year,day.month)[1]) if scope=='month' else date(day.year,12,31)
+    except ValueError:return failure('Pilihan ringkasan tidak sah.',400)
+    counts={}
+    cursor=first
+    while cursor<=last:
+        key=cursor.isoformat() if scope=='month' else cursor.isoformat()[:7]
+        counts.setdefault(key,dict(draft=0,saved=0,completed=0))
+        cursor+=timedelta(days=1)
+    try:
+        # Only dates/status/IDs, not teaching content. Keyset pagination with
+        # a stable unique ordering avoids hidden 1000-row PostgREST truncation.
+        after=None
+        for page in range(21):
+            filters={'order':'id.asc','limit':'500','and':'(teaching_date.gte.'+first.isoformat()+',teaching_date.lte.'+last.isoformat()+')'}
+            if after:filters['id']='gt.'+after
+            rows=store(c,uid,'GET',filters,summary=True)
+            if not rows:break
+            if len(rows)>500 or page==20:raise ValueError('Rekod terlalu banyak. Pilih ringkasan bulanan.')
+            for row in rows:
+                rid=str(UUID(row['id']))
+                if after and rid<=after:raise ValueError('Susunan ringkasan tidak sah.')
+                after=rid
+                record_day=date.fromisoformat(row['teaching_date'])
+                if not first<=record_day<=last:raise ValueError('Tarikh rekod tidak sah.')
+                key=record_day.isoformat() if scope=='month' else record_day.isoformat()[:7]
+                counts[key][row['status']]+=1
+        return jsonify(scope=scope,start=first.isoformat(),end=last.isoformat(),
+          items=[dict(period=key,**value,total=sum(value.values())) for key,value in counts.items()])
+    except ValueError as exc:return failure(str(exc),400)
+    except Exception:return failure('Ringkasan belum dapat dibaca.',503)
