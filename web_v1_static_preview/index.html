@@ -2792,6 +2792,20 @@ async function kp2027DownloadVariant(format,variant){
    throw Error(data.error||"RPH belum dapat dimuat turun (HTTP "+response.status+").");
   }
   const documentBlob=await response.blob();
+  if(format==="word"&&revision===kp2027PilotEpoch&&!document.getElementById("erph-private-entry")?.hidden){
+   const old=document.getElementById("erph-after-download");if(old)old.remove();
+   const btn=document.createElement("button");btn.id="erph-after-download";btn.type="button";btn.className="material-download-action";btn.textContent="Simpan ke e-RPH";
+   const labels={MATH_KP2027:"Matematik SK",BM_SK_KP2027:"Bahasa Melayu SK",PJ_KP2027:"Pendidikan Jasmani",ALAM_KP2027:"Alam dan Manusia"};
+   const meta={teaching_date:teacherPayload.teacher_date,class_name:teacherPayload.teacher_class,subject_name:labels[code],start_time:teacherPayload.teacher_start,end_time:teacherPayload.teacher_end,rph_format:variant==="5p"?"5p":"biasa"};
+   btn.onclick=async()=>{btn.disabled=true;try{
+    const r=await fetch("/api/erph/import-word",{method:"POST",credentials:"same-origin",cache:"no-store",headers:{"Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},body:documentBlob});
+    const j=await r.json();if(!r.ok||!j.fields)throw Error(j.error||"Import gagal");
+    // Transfer only into a same-tab, in-memory editor via a user-initiated POST form.
+    const target=document.createElement("form");target.method="POST";target.action="/erph/import-preview";
+    const input=document.createElement("input");input.type="hidden";input.name="draft";input.value=JSON.stringify({...meta,...j.fields,status:"draft"});target.append(input);document.body.append(target);target.submit();
+   }catch(e){status.textContent="Word sudah dimuat turun. "+e.message;btn.disabled=false;}};
+   status.insertAdjacentElement("afterend",btn);
+  }
   const ext=format==="pdf"?"pdf":"docx";
   const stem=code==="MATH_KP2027"?"MATH_T1_"+group:code==="BM_SK_KP2027"?"BM_SK_T1_"+group:code==="PJ_KP2027"?"PJ_T1_"+group:"ALAM_T1";
   const fileName="CIKGULAJU_KP2027_"+stem+"_PDP"+String(value).padStart(3,"0")+(alam5p||payload.rph_variant==="5p"?"_5P":payload.rph_variant==="V2_DARAT"?"_AKUATIK_V2":"")+"."+ext;
