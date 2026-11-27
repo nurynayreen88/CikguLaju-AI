@@ -105,5 +105,55 @@ class WorksheetTests(unittest.TestCase):
                 ws._pdf("validid_123456",digest,len(self.raw))
         ws._pdf.cache_clear()
 
+class BMWorksheetTests(unittest.TestCase):
+    def setUp(self):
+        from web import bm_worksheet_complete_pdf as bm
+        self.bm = bm
+        self.token = "b" + "1"*24
+        self.unit = "Hidup Berjiran"
+        self.identity = {"available":True,"year":2,"subject":"BM",
+                         "unit":self.unit,"token":self.token,
+                         "topic":"Majlis Pengikat Kemesraan",
+                         "standards":[{"sk":"2.2","sp":"2.2.1"}]}
+
+    def test_exact_native_identity_only(self):
+        from unittest.mock import MagicMock
+        opener=MagicMock()
+        response=opener.open.return_value.__enter__.return_value
+        response.status=200
+        with patch.object(self.bm,"_backend",return_value=("https://example.test","secret")):
+            response.read.return_value=json.dumps(self.identity).encode()
+            self.assertIsNotNone(self.bm.resolve_bm(2,self.unit,self.token,opener=opener))
+            for invalid in [{"topic":"Other"}, {"token":"b"+"0"*24},
+                            {"standards":[{"sk":"2.1","sp":"2.2.1"}]},
+                            {"standards":[{"sk":"2.2","sp":"2.2.1"},{"sk":"3.1","sp":"3.1.1"}]}]:
+                response.read.return_value=json.dumps({**self.identity,**invalid}).encode()
+                self.assertIsNone(self.bm.resolve_bm(2,self.unit,self.token,opener=opener))
+            self.assertIsNone(self.bm.resolve_bm(2,"Hari Minggu dengan Keluarga",self.token,opener=opener))
+
+    def test_bm_one_button_and_attachment(self):
+        app=Flask(__name__)
+        app.register_blueprint(create_blueprint())
+        client=app.test_client()
+        query={"year":2,"subject":"BM","unit":self.unit,"lesson":self.token}
+        raw=b"%PDF-1.7\n"+b"X"*1000
+        filename="CIKGULAJU_LATIHAN_BM_T2_MAJLIS_PENGIKAT_KEMESRAAN.pdf"
+        with patch("web.unified_rph_web._account",return_value=(
+                {"telegram_user_id":1,"authenticated":True,"free_remaining":1},None)):
+            with patch.object(self.bm,"complete_bm_pdf",return_value=(raw,filename)):
+                result=client.get("/api/web/rph/extra-materials",query_string=query)
+                self.assertEqual(result.status_code,200)
+                self.assertEqual(len(result.json["items"]),1)
+                item=result.json["items"][0]
+                self.assertEqual(item["type"],"worksheet")
+                self.assertEqual(item["action"],"Download PDF")
+                answer=client.get(item["url"])
+                self.assertEqual(answer.status_code,200)
+                self.assertEqual(answer.data,raw)
+                self.assertIn(filename,answer.headers["Content-Disposition"])
+            with patch.object(self.bm,"complete_bm_pdf",return_value=None):
+                self.assertEqual(client.get("/api/web/rph/extra-materials",query_string=query).json["items"],[])
+                self.assertEqual(client.get("/api/web/rph/worksheet-pdf",query_string=query).status_code,404)
+
 if __name__ == "__main__":
     unittest.main()
