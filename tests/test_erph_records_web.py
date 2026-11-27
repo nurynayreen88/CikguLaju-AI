@@ -139,3 +139,28 @@ class ErphTests(unittest.TestCase):
             for params in ('scope=week','scope=year&owner=99','scope=year&scope=month'):
                 self.assertEqual(self.client.get('/api/erph/summary?date=2028-02-10&'+params).status_code,400)
             store.assert_not_called()
+
+    def test_premium_and_merged_5p_word_import_preserves_fields(self):
+        from io import BytesIO
+        from docx import Document
+        from web.erph_word_import import extract_docx
+        def make(rows):
+            d=Document();t=d.add_table(rows=0,cols=2)
+            for a,b in rows:
+                c=t.add_row().cells;c[0].text=a;c[1].text=b
+            out=BytesIO();d.save(out);return out.getvalue()
+        base=[('PENDIDIKAN JASMANI\nTahun 1\nTajuk: Asas pergerakan\nRPT Kumpulan A\nLesson 001','Maklumat PdP\nKelas:\nTarikh:'),
+            ('Kandungan Pembelajaran','Asas pergerakan'),('Standard Pembelajaran','P1.1.1'),('Objektif Pembelajaran','Murid bergerak'),
+            ('Kriteria Kejayaan','Dua percubaan'),('EMK / Nilai','Disiplin'),('PAK21 / KBAT','Komunikasi'),('Bahan / BBM','Kon'),
+            ('Set Induksi','Pemanasan'),('Aktiviti Utama','Lompat'),('Pengukuhan / PBD','Pemerhatian'),('Penutup','Penyejukan'),
+            ('Pemulihan','Bimbingan'),('Pengayaan','Cabaran'),('Refleksi (Auto / Manual)','Catatan')]
+        fields=extract_docx(make(base))
+        self.assertEqual(fields['title'],'Asas pergerakan')
+        for v in ('Dua percubaan','Disiplin','Komunikasi','Kon','Pemanasan','Lompat','Pemerhatian','Penyejukan','Bimbingan','Cabaran'):
+            self.assertIn(v,fields['activities'])
+        self.assertEqual(fields['reflection'],'Catatan')
+        phases=[('Aktiviti PdP (5P)','Penglibatan'),('','Lihat contoh'),('','Penerokaan'),('','Cuba gerak'),('','Penerangan'),('','Terangkan'),('','Pengembangan'),('','Ubah gerak'),('','Penilaian'),('','Semak gerak')]
+        fields=extract_docx(make(base[:5]+phases+base[-3:]))
+        for _,v in phases:self.assertIn(v,fields['activities'])
+        with self.assertRaises(ValueError):
+            extract_docx(make(base+[('Medan tidak dikenali','Kandungan penting')]))
