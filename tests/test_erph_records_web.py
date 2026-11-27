@@ -120,3 +120,22 @@ class ErphTests(unittest.TestCase):
     def test_export_empty(self):
         with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store',return_value=[]):
             self.assertEqual(self.client.get('/api/erph/export?date=2027-01-11&format=pdf').status_code,404)
+
+    def test_summary_year_and_leap_month(self):
+        rows=[{'id':'00000000-0000-4000-8000-000000000001','teaching_date':'2028-02-29','status':'completed'},
+              {'id':'00000000-0000-4000-8000-000000000002','teaching_date':'2028-02-29','status':'draft'}]
+        for scope,n in [('year',12),('month',29)]:
+            with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store',side_effect=[rows,[]]) as store:
+                r=self.client.get('/api/erph/summary?date=2028-02-10&scope='+scope)
+                self.assertEqual(r.status_code,200)
+                self.assertEqual(len(r.json['items']),n)
+                self.assertEqual(sum(x['total'] for x in r.json['items']),2)
+                self.assertEqual(sum(x['completed'] for x in r.json['items']),1)
+                self.assertEqual(store.call_args.args[1],42)
+                self.assertTrue(store.call_args.kwargs['summary'])
+                self.assertEqual(store.call_args.args[3]['id'],'gt.'+rows[-1]['id'])
+    def test_summary_rejects_unknown_scope_or_owner(self):
+        with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store') as store:
+            for params in ('scope=week','scope=year&owner=99','scope=year&scope=month'):
+                self.assertEqual(self.client.get('/api/erph/summary?date=2028-02-10&'+params).status_code,400)
+            store.assert_not_called()
