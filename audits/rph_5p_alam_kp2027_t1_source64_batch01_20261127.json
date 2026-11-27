@@ -1,0 +1,314 @@
+{
+  "status": "DRAFT_SOURCE64_ONLY",
+  "source_catalog_sha": "b29683bffc0f5c72a9e1c69cf7d9a5dada22d8a9",
+  "source_archive_sha256": "b1ae8dcab0894bacc894d7fb310ff5ece27a1077e84846a64a86a61235d3a8ef",
+  "combined_pdf_sha256": "d0c3dfc7c2e92cc9963b3d6b9a4f66222fc7ecc46397d768c0d43c746c14d3ba",
+  "dk_pdf_sha256": "2fabcb2e75ec9fbc9c9589db26f87925c91ac550d9a20a0dc31bac311e7e55a9",
+  "notes": "Reviewed actual combined original pages 1–12 and DK pp18–21. Separate source64 from rpt93 mapping, including 29 supplementary original documents not yet obtained; no live changes. Draft phase descriptions; individual team-teaching roles to verify against source before rendering.",
+  "records": [
+    {
+      "source_lesson": 1,
+      "source_catalog_codes": [
+        "1.1.1"
+      ],
+      "source_pdf_page": 1,
+      "source_word_sha256": "0366435a5998c5cd081081b159bbaa61f004b72b600171a7550dce4676dcd0a1",
+      "source_pdf_sha256": "d748ead52bafc14a649be173a542dad39f2694c4736759a4e8b069626209b534",
+      "dk_printed_page": 18,
+      "source_activity_titles": [
+        "Kenali Bahagian Tubuh",
+        "Padanan Gambar dan Nama",
+        "Namakan dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru A mempamerkan carta tubuh; murid menunjukkan anggota yang dikenali.",
+        "exploration": "Murid berpasangan memadankan kad perkataan dengan ilustrasi; Guru B membimbing.",
+        "explanation": "Guru A menyebut nama anggota dengan tepat; murid menunjukkan lokasi pada carta.",
+        "elaboration": "Murid memilih kad anggota, menunjukkan lokasi pada ilustrasi dan menyatakan satu kegunaan.",
+        "evaluation": "Kedua-dua guru menyemak secara individu sekurang-kurangnya lima nama dan lokasi anggota pada carta."
+      },
+      "note": "DK p18: sertakan ilustrasi sesuai umur dan istilah anatomi yang tepat; jangan meminta murid menunjukkan bahagian peribadi pada tubuh sendiri.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 2,
+      "source_catalog_codes": [
+        "1.1.2"
+      ],
+      "source_pdf_page": 2,
+      "source_word_sha256": "9b31e86b23c0cb98b99c53f4d3aa037a3fe65d74e1cb1132cf45ebe61cac39e7",
+      "source_pdf_sha256": "f568aea5fce5ff9495940d3a4471ef745d401c5cde6e42035b68e5767e8ac86e",
+      "dk_printed_page": 18,
+      "source_activity_titles": [
+        "Kenali Lirik Lagu",
+        "Latihan Sebutan Berirama",
+        "Persembahan Lagu"
+      ],
+      "phases": {
+        "engagement": "Guru A memperdengarkan irama asli ringkas berkaitan anggota badan.",
+        "exploration": "Murid mengecam nama anggota dalam lirik dan berlatih vokal serta menyebut lirik.",
+        "explanation": "Guru A memodelkan sebutan dan tempo melalui tepukan; Guru B membimbing murid.",
+        "elaboration": "Kumpulan kecil menyanyi sambil menunjukkan kad anggota yang disebut.",
+        "evaluation": "Kedua-dua guru menyemak sebutan jelas dan pengekalan tempo dalam nyanyian."
+      },
+      "note": "Retain exact original objective, criteria, teacher roles and PBD; check full individual record before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 3,
+      "source_catalog_codes": [
+        "1.1.3",
+        "1.1.4"
+      ],
+      "source_pdf_page": 3,
+      "source_word_sha256": "8416dbed247b4bbd54e39bcf44057174274d72e729d2754578f88459531b9bc7",
+      "source_pdf_sha256": "b0d48d3dd575de87ae4e0ed14be665d35af763324e4747933b2ac7b2a20d3e2a",
+      "dk_printed_page": 18,
+      "source_activity_titles": [
+        "Teka Bunyi dan Tepukan",
+        "Padankan Deria dan Pengalaman",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A memperdengarkan dua corak tepukan; murid membezakan rentak.",
+        "exploration": "Murid meniru corak perkusi badan dan bersama Guru B memadankan kad anggota deria dengan pengalaman.",
+        "explanation": "Guru menerangkan hubungan mata, telinga, hidung, lidah dan kulit dengan deria serta memodelkan corak irama.",
+        "elaboration": "Pasangan mempersembahkan dua corak tepukan dan memilih kad deria sesuai dengan pengalaman.",
+        "evaluation": "Kedua-dua guru memerhatikan dua corak tepukan dan padanan sekurang-kurangnya empat organ deria."
+      },
+      "note": "DK pp18–19; dua SP perlu kekal.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 4,
+      "source_catalog_codes": [
+        "1.1.5"
+      ],
+      "source_pdf_page": 4,
+      "source_word_sha256": "9f17a8eb25a6ceb3fcf9ed57daed9bbef26ca63fcd5333da5b998f5069746d9c",
+      "source_pdf_sha256": "b0766bc83f302c4e4c086d3cb76e9efccfaac228335dfd84c6c487b0abdf7848",
+      "dk_printed_page": 19,
+      "source_activity_titles": [
+        "Kenal Contoh Lakaran",
+        "Lukis dan Label Anggota Deria",
+        "Pamer dan Terangkan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan contoh lakaran mata, telinga dan hidung.",
+        "exploration": "Murid mengecam bentuk dan mencuba teknik menekap atau menyambung titik.",
+        "explanation": "Guru membimbing lakaran serta label anggota deria yang betul.",
+        "elaboration": "Murid melukis dan melabel sekurang-kurangnya tiga anggota serta menerangkan hasil kepada pasangan.",
+        "evaluation": "Kedua-dua guru menyemak tiga lakaran berlabel dan penerangan lisan."
+      },
+      "note": "Retain exact original objective, criteria, teacher roles and PBD; check full individual record before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 5,
+      "source_catalog_codes": [
+        "1.1.6"
+      ],
+      "source_pdf_page": 5,
+      "source_word_sha256": "a9321596aa3db430fdca541229b4415660be13bfebdc79577c5490ccd12476e0",
+      "source_pdf_sha256": "6f00ce3b5a1b53a2cceb523f513c1c65a998f771994034ab19a667a46dfb1967",
+      "dk_printed_page": 19,
+      "source_activity_titles": [
+        "Banding Ciri Objek",
+        "Uji Ciri dengan Selamat",
+        "Bentang Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kain, span dan blok kayu bersih; murid meramal perbezaan.",
+        "exploration": "Murid memerhati warna serta menyentuh bahan dengan bimbingan tanpa merasa bahan tidak dikenal pasti.",
+        "explanation": "Guru membimbing istilah licin, kasar, lembut dan keras berdasarkan pemerhatian.",
+        "elaboration": "Pasangan membandingkan dua objek dan menerangkan dua perbezaan menggunakan kad ciri.",
+        "evaluation": "Kedua-dua guru memerhati perbandingan sekurang-kurangnya dua objek serta amalan keselamatan."
+      },
+      "note": "Retain exact original objective, criteria, teacher roles and PBD; check full individual record before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 6,
+      "source_catalog_codes": [
+        "1.1.7"
+      ],
+      "source_pdf_page": 6,
+      "source_word_sha256": "8581adf01cb498e5b866ef85bb12b4959dceba5e4b7c32f76dbfe3828d15df4c",
+      "source_pdf_sha256": "eb7465963835d7eec8d42ff57d414ed7a44dc944a7d5e009705376cf836b35b8",
+      "dk_printed_page": 19,
+      "source_activity_titles": [
+        "Susun Perjalanan Tumbesaran",
+        "Kenal Perubahan Tinggi",
+        "Cerita Perubahan dengan Sopan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan ilustrasi watak yang sama pada usia berbeza.",
+        "exploration": "Murid menyusun tiga kad perkembangan daripada bayi kepada kanak-kanak.",
+        "explanation": "Guru membimbing penerangan perubahan saiz dan tinggi menggunakan model gambar.",
+        "elaboration": "Murid menerangkan perubahan pada watak rekaan kepada pasangan tanpa berkongsi rekod peribadi.",
+        "evaluation": "Kedua-dua guru menyemak susunan tiga gambar dan perubahan saiz atau tinggi yang dinyatakan."
+      },
+      "note": "Objektif asal menyebut tiga perubahan, kriteria dua; selaraskan jumlah sebelum release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 7,
+      "source_catalog_codes": [
+        "1.1.8",
+        "1.1.9"
+      ],
+      "source_pdf_page": 7,
+      "source_word_sha256": "2ee3c611a445ca4d7070bcc39d71c0c1702c62a4cf06b68b9d6c01c4e2a4ae11",
+      "source_pdf_sha256": "0fac3a6d3c4c90e3b3e160989ccc89f04427c564eea0d45706c9fb78ed09c233",
+      "dk_printed_page": 19,
+      "source_activity_titles": [
+        "Banding Siluet Rekaan",
+        "Ajuk Pic dan Tempo",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua siluet berbeza tinggi; murid menyatakan persamaan dan perbezaan secara hormat.",
+        "exploration": "Murid membandingkan jejak tapak tangan atau model saiz dan tinggi; penyertaan rakan secara sukarela, tanpa mempermalukan.",
+        "explanation": "Guru A menerangkan perbandingan tumbesaran secara sopan; Guru B memodelkan vokal, lirik, pic dan tempo lagu keluarga asli.",
+        "elaboration": "Murid menyatakan satu persamaan dan perbezaan secara hormat, kemudian menyanyikan satu rangkap lagu keluarga.",
+        "evaluation": "Kedua-dua guru menyemak perbandingan dan nyanyian dari aspek sebutan, pic dan tempo."
+      },
+      "note": "DK pp19–20; sumber asal menggunakan siluet sahaja dan kriteria hanya tempo. Selaraskan perbandingan rakan serta sebutan/pic secara sensitif.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 8,
+      "source_catalog_codes": [
+        "1.1.10"
+      ],
+      "source_pdf_page": 8,
+      "source_word_sha256": "57ea59e39bc37ac17c71904a176a466a6d4a26f0369aa0246059fa2bb72a4e2c",
+      "source_pdf_sha256": "e08eb7cc44b07296a0569930b7d18414d6c1c4262624adf1d3829b375fc6e866",
+      "dk_printed_page": 20,
+      "source_activity_titles": [
+        "Fahami Maksud Lirik",
+        "Padankan Perkataan dan Gerak",
+        "Persembahan Gerak Selamat"
+      ],
+      "phases": {
+        "engagement": "Guru mengulang dua frasa lirik asli dan menunjukkan gerakan tangan.",
+        "exploration": "Murid mentafsir perkataan mudah dan mencuba padanan gerak dengan kad lirik.",
+        "explanation": "Guru memodelkan tiga pergerakan setempat yang selamat mengikut maksud lirik.",
+        "elaboration": "Kumpulan mempersembahkan tiga gerakan mengikut lirik dengan menjaga ruang peribadi.",
+        "evaluation": "Kedua-dua guru menyemak tiga padanan gerak-lirik dan pematuhan keselamatan."
+      },
+      "note": "Retain exact original objective, criteria, teacher roles and PBD; check full individual record before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 9,
+      "source_catalog_codes": [
+        "1.1.11"
+      ],
+      "source_pdf_page": 9,
+      "source_word_sha256": "863fd43b29e1ee307173bca8ea5fc871859a1cb86ab3933ff9c831737017a0e2",
+      "source_pdf_sha256": "ad86efd47bb24636ed1cc9f7e7faed85b68c846389338eb4b57483752318114f",
+      "dk_printed_page": 20,
+      "source_activity_titles": [
+        "Kenal Nama Hubungan",
+        "Susun Carta Keluarga Rekaan",
+        "Ceritakan Satu Hubungan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan ilustrasi keluarga rekaan; murid meneka hubungan watak.",
+        "exploration": "Murid memadankan kad ibu, bapa, adik, abang, kakak, datuk dan nenek dengan ilustrasi.",
+        "explanation": "Guru menerangkan panggilan hubungan dan kepelbagaian susunan keluarga.",
+        "elaboration": "Murid membina carta keluarga rekaan dan menggunakan panggilan dalam ayat mudah.",
+        "evaluation": "Kedua-dua guru menyemak empat hubungan yang dikenal pasti serta penggunaan panggilan."
+      },
+      "note": "Retain exact original objective, criteria, teacher roles and PBD; check full individual record before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 10,
+      "source_catalog_codes": [
+        "1.1.12"
+      ],
+      "source_pdf_page": 10,
+      "source_word_sha256": "801996532538a4b1d87c5b7188a95137908ee19e85d1a188dc1738b956db3f86",
+      "source_pdf_sha256": "d9a728e46636c71e41d9414c261473d05c2e008bde51c83351a92cc91f9e3dda",
+      "dk_printed_page": 20,
+      "source_activity_titles": [
+        "Kenal Contoh Ciri Warisan",
+        "Cari Persamaan pada Watak Rekaan",
+        "Terangkan dengan Hormat"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan ilustrasi dua watak keluarga dengan ciri rambut serupa.",
+        "exploration": "Murid meneliti kad keluarga rekaan dan mencari persamaan ciri rambut, mata atau kulit.",
+        "explanation": "Guru menerangkan ciri yang boleh diwarisi tanpa mengandaikan hubungan sebenar berdasarkan rupa.",
+        "elaboration": "Murid memadankan dua contoh ciri pada ilustrasi dan menerangkan persamaan dengan bahasa hormat.",
+        "evaluation": "Kedua-dua guru menyemak dua contoh ciri warisan yang dikenal pasti dengan tepat dan sopan."
+      },
+      "note": "Retain exact original objective, criteria, teacher roles and PBD; check full individual record before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 11,
+      "source_catalog_codes": [
+        "1.1.13",
+        "1.1.14"
+      ],
+      "source_pdf_page": 11,
+      "source_word_sha256": "767cc28c900ed6e830d29bfd722619adff8f2631af1265d36a96a03d8a7d5b48",
+      "source_pdf_sha256": "c901da3c5fc8826fb30315a49b3f616da2169a7ad6f0c05108d4aff5b948c515",
+      "dk_printed_page": 20,
+      "source_activity_titles": [
+        "Kenal Ciri pada Ilustrasi",
+        "Lakonkan Situasi Harian",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan ilustrasi tiga ahli keluarga rekaan; murid mencari ciri serupa.",
+        "exploration": "Murid membandingkan kad ciri rambut dan mata serta meneliti kad amalan membantu.",
+        "explanation": "Guru menerangkan contoh ciri warisan dan cara menyatakan kasih sayang yang menghormati batas.",
+        "elaboration": "Kumpulan melakonkan dua cara menunjukkan kasih sayang dan menerangkan satu contoh ciri warisan pada watak rekaan.",
+        "evaluation": "Kedua-dua guru menyemak satu contoh warisan dan dua amalan kasih sayang tanpa maklumat peribadi."
+      },
+      "note": "DK pp20–21; dua SP kekal.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 12,
+      "source_catalog_codes": [
+        "1.1.15"
+      ],
+      "source_pdf_page": 12,
+      "source_word_sha256": "33d868ea837a870930a7f76543caf4f0f1b6a0a009767349bf29e36c177dda26",
+      "source_pdf_sha256": "f058ab8fe2f974c75b157993458e59349cca67f926ddfa41ace441ad311cd8e5",
+      "dk_printed_page": 21,
+      "source_activity_titles": [
+        "Rancang Karya",
+        "Hasilkan Karya Penghargaan",
+        "Kongsi Hasil dengan Sopan"
+      ],
+      "phases": {
+        "engagement": "Guru mempamerkan dua contoh kad penghargaan rekaan; murid mencari mesej dan hiasan.",
+        "exploration": "Murid memilih bentuk kad atau penanda buku dan merancang susun atur.",
+        "explanation": "Guru membimbing ucapan penghargaan, teknik hiasan dan penggunaan alat selamat.",
+        "elaboration": "Murid menghasilkan karya dan berkongsi ucapan secara sukarela; rakan memberi maklum balas membina.",
+        "evaluation": "Kedua-dua guru menyemak satu karya siap dengan ucapan penghargaan jelas serta penggunaan alat selamat."
+      },
+      "note": "Retain exact original objective, criteria, teacher roles and PBD; check full individual record before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    }
+  ],
+  "release": false
+}
