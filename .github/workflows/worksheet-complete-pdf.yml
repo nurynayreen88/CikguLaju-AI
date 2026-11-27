@@ -1,0 +1,39 @@
+name: Worksheet complete PDF release checks
+on:
+  pull_request:
+    paths:
+      - 'web/worksheet_complete_pdf.py'
+      - 'worksheets/catalog/english_web_batch1_20261127.json'
+      - 'web/unified_rph_web.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_worksheet_complete_pdf.py'
+      - '.github/workflows/worksheet-complete-pdf.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile web/worksheet_complete_pdf.py web/unified_rph_web.py
+      - run: python -m unittest discover -s tests -p 'test_worksheet_complete_pdf.py' -v
+      - name: Validate source PDF bytes (24 independent files)
+        run: |
+          python - <<'PY'
+          from concurrent.futures import ThreadPoolExecutor
+          from web.worksheet_complete_pdf import _sources, complete_pdf
+          records,_ = _sources()
+          def check(item):
+              key,row = item
+              y,n = map(int,key.split('/'))
+              pdf = complete_pdf(y,n,row['unit'])
+              assert pdf and len(pdf)==row['size_bytes'], key
+              print(key, 'verified')
+          with ThreadPoolExecutor(max_workers=6) as pool:
+              list(pool.map(check, records.items()))
+          PY
