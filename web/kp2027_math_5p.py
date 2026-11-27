@@ -69,7 +69,7 @@ def prepare(g,n,payload):
         "aids_pak21_emk":"BBM: "+fields["bbm"]+"\nPAK21 / KBAT: "+fields["pak"]+"\nEMK / Nilai: "+fields["emk"],
         "remedial_enrichment":"Pemulihan: "+fields["remedial"]+"\nPengayaan: "+fields["extension"],
         "reflection":"Kriteria: "+fields["criteria"]+"\nBilangan murid menguasai:    Belum menguasai:\nTindakan susulan:",
-        "reference":"Rujukan: DK Matematik Tahun 1 (BPK, 2026) • RPT 2027 Kumpulan "+g+".",
+        "reference":"Rujukan: DK Matematik Tahun 1 (BPK, 2026) • RPT 2027.",
     }
     raw=json.dumps(data,sort_keys=True,ensure_ascii=False).encode()
     companion={**{k:data[k] for k in ("subject","year","lesson_id","curriculum")},
