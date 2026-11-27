@@ -56,6 +56,12 @@
         "include_teacher_guide": true,
         "source_file": "files.pdf",
         "docx_internal_only": true
+      },
+      "private_asset": {
+        "asset_sha256": "4c8c2931888a038d2e6549ff415727fd2d722ad98b5069e54b310f48a5143c5d",
+        "size_bytes": 85641,
+        "storage": "server-only Supabase delivery copy",
+        "integrity_verified": true
       }
     },
     {
@@ -114,6 +120,12 @@
         "include_teacher_guide": true,
         "source_file": "files.pdf",
         "docx_internal_only": true
+      },
+      "private_asset": {
+        "asset_sha256": "ec920faa3aed60478193f9f2ee72df5ec2e04fd14d428c7e92eeef667031de17",
+        "size_bytes": 317597,
+        "storage": "server-only Supabase delivery copy",
+        "integrity_verified": true
       }
     },
     {
@@ -172,6 +184,12 @@
         "include_teacher_guide": true,
         "source_file": "files.pdf",
         "docx_internal_only": true
+      },
+      "private_asset": {
+        "asset_sha256": "3fbf8f8a2512fcf28bc31b1bf222e11020dde5248bdf92de5facf6cdd6907555",
+        "size_bytes": 302881,
+        "storage": "server-only Supabase delivery copy",
+        "integrity_verified": true
       }
     },
     {
@@ -1653,5 +1671,6 @@
     "docx_visibility": "internal_editing_only",
     "show_only_when_ready_and_exactly_matched": true,
     "changes_rph_quota": false
-  }
+  },
+  "bm_private_pdf_status": "3 exact stored PDF copies verified; production BM token and standards still require native source mapping; no publication for BM."
 }
