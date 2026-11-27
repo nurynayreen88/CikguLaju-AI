@@ -77,7 +77,7 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('id="view-curriculum-docs" class="app-view" aria-labelledby="curriculum-docs-heading" hidden',self.html)
         for category in ("kp2027","kssr","dpk","pk"):
             self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
-        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://drive.google.com/file/d/[A-Za-z0-9_-]+/view)"',self.html)
+        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://drive.google.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?)"',self.html)
         self.assertEqual(len(rows),78)
         self.assertEqual(len({url for _,_,url in rows}),78)
         expected={(str(year),subject+" "+stream) for year in range(1,7)
