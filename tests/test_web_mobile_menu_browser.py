@@ -100,7 +100,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     expect(page.locator("#curriculum-docs-kssr")).to_be_hidden()
                     expect(page.locator("#curriculum-docs-dpk")).to_be_visible()
                     page.locator("#curriculum-docs-type").select_option("pk")
-                    expect(page.locator("#curriculum-pk-list li:visible")).to_have_count(41)
+                    expect(page.locator("#curriculum-pk-list li:visible")).to_have_count(51)
                     page.locator("#curriculum-pk-year").select_option("3")
                     expect(page.locator("#curriculum-pk-list li:visible")).to_have_count(6)
                     page.locator("#curriculum-pk-subject").select_option("Pengurusan Kehidupan")
