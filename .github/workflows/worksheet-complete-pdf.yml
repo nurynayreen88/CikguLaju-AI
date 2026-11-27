@@ -1,0 +1,24 @@
+name: Worksheet complete PDF release checks
+on:
+  pull_request:
+    paths:
+      - 'web/worksheet_complete_pdf.py'
+      - 'worksheets/catalog/english_web_batch1_20261127.json'
+      - 'web/unified_rph_web.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_worksheet_complete_pdf.py'
+      - '.github/workflows/worksheet-complete-pdf.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile web/worksheet_complete_pdf.py web/unified_rph_web.py
+      - run: python -m unittest discover -s tests -p 'test_worksheet_complete_pdf.py' -v
