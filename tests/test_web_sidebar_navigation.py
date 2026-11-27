@@ -78,13 +78,14 @@ class WebSidebarTabsTests(unittest.TestCase):
         for category in ("kp2027","kssr","dpk","pk"):
             self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
         rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf))"',self.html)
-        self.assertEqual(len(rows),87)
-        self.assertEqual(len({url for _,_,url in rows}),87)
+        self.assertEqual(len(rows),99)
+        self.assertEqual(len({url for _,_,url in rows}),99)
         expected={(str(year),subject+" "+stream) for year in range(1,7)
                   for subject in ("Matematik","Sains")
                   for stream in ("SK","SJKC","SJKT","DLP")}
         for subject,years in {
             "Bahasa Melayu SK": range(1,7), "Bahasa Arab": range(1,7),
+            "Bahasa Melayu SJK": range(1,7), "Pendidikan Islam": range(1,7),
             "Bahasa Cina SK": range(1,7), "Bahasa Cina SJKC": range(1,7),
             "Bahasa Tamil SK": range(1,7), "Bahasa Tamil SJKT": (2,3,4,5,6),
             "Bahasa Iban": (3,4,5,6),
