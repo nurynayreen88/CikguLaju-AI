@@ -2918,6 +2918,8 @@ async function populateMaterialList(){
      continue;
     }
     if(!item||typeof item.url!=="string"||typeof item.title!=="string")continue;
+    const ownWorksheet=subject.value==="ENGLISH"&&item.type==="worksheet"&&
+        item.url.startsWith("/api/web/rph/worksheet-pdf?");
     const ownWorkbook=item.type==="workbook"&&
         item.url.startsWith("/api/web/rph/english-workbook?");
     const ownStudentBook=item.type==="textbook"&&
@@ -2942,9 +2944,9 @@ async function populateMaterialList(){
         item.url.startsWith("/api/web/rph/science-textbook?");
     const originalEnglishBook=subject.value==="ENGLISH"&&item.action==="Buka Buku Asal"&&
         /^https:\/\/online\.anyflip\.com\/(?:rmzft\/wwgq|hykyg\/rrpd)\/mobile\/index\.html\?pageIndex=[1-9][0-9]{0,2}$/.test(item.url);
-    if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!musicDownload&&!arabAudioDownload&&!ownScienceBook&&!originalEnglishBook&&!ppkiDownload&&!recordingPlayback&&!ppkiAudioPlayback)continue;
+    if(!ownWorksheet&&!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!musicDownload&&!arabAudioDownload&&!ownScienceBook&&!originalEnglishBook&&!ppkiDownload&&!recordingPlayback&&!ppkiAudioPlayback)continue;
     list.append(materialRow(item.title,{ready:true,url:item.url,
-      actionLabel:ownEnglishAudio?"Muat Turun Audio":originalEnglishBook||musicDownload||arabAudioDownload||ppkiDownload||recordingPlayback||ppkiAudioPlayback?item.action:"Download"}));
+      actionLabel:ownWorksheet?"Download PDF":ownEnglishAudio?"Muat Turun Audio":originalEnglishBook||musicDownload||arabAudioDownload||ppkiDownload||recordingPlayback||ppkiAudioPlayback?item.action:"Download"}));
     found++;
    }
   }catch(e){sourceError=(sourceError+" "+e.message).trim();}
