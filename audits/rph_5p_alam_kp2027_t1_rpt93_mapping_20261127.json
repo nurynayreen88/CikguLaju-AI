@@ -1,0 +1,1170 @@
+{
+  "status": "QA_ONLY_NOT_PUBLISHED",
+  "mapping_source_drive_id": "1Q_LorRq6JeE8eUJvVejcUS9eOjGs0tpR",
+  "counts": {
+    "rpt_pdp": 93,
+    "source": 64,
+    "supplement": 29,
+    "unique_sp": 83,
+    "combined_source": 19
+  },
+  "notes": "Mapping is identity and SP membership verification, not academic approval. Combined source documents cover two SP; separate RPT focus requires review. Never route RPT PdP numbers directly into source Lesson endpoint.",
+  "records": [
+    {
+      "rpt_pdp": 1,
+      "source_lesson": 1,
+      "kind": "source",
+      "sp_focus": "1.1.1",
+      "dk_pdf_page": 30,
+      "source_codes": [
+        "1.1.1"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 2,
+      "source_lesson": 1,
+      "kind": "supplement",
+      "sp_focus": "1.1.1",
+      "dk_pdf_page": 30,
+      "source_codes": [
+        "1.1.1"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 3,
+      "source_lesson": 2,
+      "kind": "source",
+      "sp_focus": "1.1.2",
+      "dk_pdf_page": 30,
+      "source_codes": [
+        "1.1.2"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 4,
+      "source_lesson": 3,
+      "kind": "source",
+      "sp_focus": "1.1.3",
+      "dk_pdf_page": 30,
+      "source_codes": [
+        "1.1.3",
+        "1.1.4"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 5,
+      "source_lesson": 3,
+      "kind": "supplement",
+      "sp_focus": "1.1.4",
+      "dk_pdf_page": 31,
+      "source_codes": [
+        "1.1.3",
+        "1.1.4"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 6,
+      "source_lesson": 4,
+      "kind": "source",
+      "sp_focus": "1.1.5",
+      "dk_pdf_page": 31,
+      "source_codes": [
+        "1.1.5"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 7,
+      "source_lesson": 5,
+      "kind": "source",
+      "sp_focus": "1.1.6",
+      "dk_pdf_page": 31,
+      "source_codes": [
+        "1.1.6"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 8,
+      "source_lesson": 6,
+      "kind": "source",
+      "sp_focus": "1.1.7",
+      "dk_pdf_page": 31,
+      "source_codes": [
+        "1.1.7"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 9,
+      "source_lesson": 7,
+      "kind": "source",
+      "sp_focus": "1.1.8",
+      "dk_pdf_page": 31,
+      "source_codes": [
+        "1.1.8",
+        "1.1.9"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 10,
+      "source_lesson": 7,
+      "kind": "supplement",
+      "sp_focus": "1.1.9",
+      "dk_pdf_page": 32,
+      "source_codes": [
+        "1.1.8",
+        "1.1.9"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 11,
+      "source_lesson": 7,
+      "kind": "supplement",
+      "sp_focus": "1.1.9",
+      "dk_pdf_page": 32,
+      "source_codes": [
+        "1.1.8",
+        "1.1.9"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 12,
+      "source_lesson": 8,
+      "kind": "source",
+      "sp_focus": "1.1.10",
+      "dk_pdf_page": 32,
+      "source_codes": [
+        "1.1.10"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 13,
+      "source_lesson": 9,
+      "kind": "source",
+      "sp_focus": "1.1.11",
+      "dk_pdf_page": 32,
+      "source_codes": [
+        "1.1.11"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 14,
+      "source_lesson": 10,
+      "kind": "source",
+      "sp_focus": "1.1.12",
+      "dk_pdf_page": 32,
+      "source_codes": [
+        "1.1.12"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 15,
+      "source_lesson": 11,
+      "kind": "source",
+      "sp_focus": "1.1.13",
+      "dk_pdf_page": 32,
+      "source_codes": [
+        "1.1.13",
+        "1.1.14"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 16,
+      "source_lesson": 11,
+      "kind": "supplement",
+      "sp_focus": "1.1.14",
+      "dk_pdf_page": 33,
+      "source_codes": [
+        "1.1.13",
+        "1.1.14"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 17,
+      "source_lesson": 12,
+      "kind": "source",
+      "sp_focus": "1.1.15",
+      "dk_pdf_page": 33,
+      "source_codes": [
+        "1.1.15"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 18,
+      "source_lesson": 13,
+      "kind": "source",
+      "sp_focus": "2.1.1",
+      "dk_pdf_page": 38,
+      "source_codes": [
+        "2.1.1"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 19,
+      "source_lesson": 14,
+      "kind": "source",
+      "sp_focus": "2.1.2",
+      "dk_pdf_page": 38,
+      "source_codes": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 20,
+      "source_lesson": 14,
+      "kind": "supplement",
+      "sp_focus": "2.1.2",
+      "dk_pdf_page": 38,
+      "source_codes": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 21,
+      "source_lesson": 14,
+      "kind": "supplement",
+      "sp_focus": "2.1.3",
+      "dk_pdf_page": 38,
+      "source_codes": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 22,
+      "source_lesson": 15,
+      "kind": "source",
+      "sp_focus": "2.1.4",
+      "dk_pdf_page": 38,
+      "source_codes": [
+        "2.1.4"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 23,
+      "source_lesson": 16,
+      "kind": "source",
+      "sp_focus": "2.1.5",
+      "dk_pdf_page": 39,
+      "source_codes": [
+        "2.1.5"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 24,
+      "source_lesson": 17,
+      "kind": "source",
+      "sp_focus": "2.1.6",
+      "dk_pdf_page": 39,
+      "source_codes": [
+        "2.1.6"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 25,
+      "source_lesson": 18,
+      "kind": "source",
+      "sp_focus": "2.1.7",
+      "dk_pdf_page": 39,
+      "source_codes": [
+        "2.1.7",
+        "2.1.8"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 26,
+      "source_lesson": 18,
+      "kind": "supplement",
+      "sp_focus": "2.1.8",
+      "dk_pdf_page": 39,
+      "source_codes": [
+        "2.1.7",
+        "2.1.8"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 27,
+      "source_lesson": 19,
+      "kind": "source",
+      "sp_focus": "2.1.9",
+      "dk_pdf_page": 39,
+      "source_codes": [
+        "2.1.9"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 28,
+      "source_lesson": 20,
+      "kind": "source",
+      "sp_focus": "2.1.10",
+      "dk_pdf_page": 40,
+      "source_codes": [
+        "2.1.10"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 29,
+      "source_lesson": 20,
+      "kind": "supplement",
+      "sp_focus": "2.1.10",
+      "dk_pdf_page": 40,
+      "source_codes": [
+        "2.1.10"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 30,
+      "source_lesson": 21,
+      "kind": "source",
+      "sp_focus": "2.1.11",
+      "dk_pdf_page": 40,
+      "source_codes": [
+        "2.1.11"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 31,
+      "source_lesson": 22,
+      "kind": "source",
+      "sp_focus": "2.1.12",
+      "dk_pdf_page": 40,
+      "source_codes": [
+        "2.1.12",
+        "2.1.13"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 32,
+      "source_lesson": 22,
+      "kind": "supplement",
+      "sp_focus": "2.1.13",
+      "dk_pdf_page": 40,
+      "source_codes": [
+        "2.1.12",
+        "2.1.13"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 33,
+      "source_lesson": 23,
+      "kind": "source",
+      "sp_focus": "2.1.14",
+      "dk_pdf_page": 41,
+      "source_codes": [
+        "2.1.14"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 34,
+      "source_lesson": 24,
+      "kind": "source",
+      "sp_focus": "3.1.1",
+      "dk_pdf_page": 46,
+      "source_codes": [
+        "3.1.1"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 35,
+      "source_lesson": 25,
+      "kind": "source",
+      "sp_focus": "3.1.2",
+      "dk_pdf_page": 46,
+      "source_codes": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 36,
+      "source_lesson": 25,
+      "kind": "supplement",
+      "sp_focus": "3.1.3",
+      "dk_pdf_page": 47,
+      "source_codes": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 37,
+      "source_lesson": 26,
+      "kind": "source",
+      "sp_focus": "3.1.4",
+      "dk_pdf_page": 47,
+      "source_codes": [
+        "3.1.4"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 38,
+      "source_lesson": 27,
+      "kind": "source",
+      "sp_focus": "3.1.5",
+      "dk_pdf_page": 47,
+      "source_codes": [
+        "3.1.5"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 39,
+      "source_lesson": 27,
+      "kind": "supplement",
+      "sp_focus": "3.1.5",
+      "dk_pdf_page": 47,
+      "source_codes": [
+        "3.1.5"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 40,
+      "source_lesson": 28,
+      "kind": "source",
+      "sp_focus": "3.1.6",
+      "dk_pdf_page": 48,
+      "source_codes": [
+        "3.1.6",
+        "3.1.7"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 41,
+      "source_lesson": 28,
+      "kind": "supplement",
+      "sp_focus": "3.1.7",
+      "dk_pdf_page": 48,
+      "source_codes": [
+        "3.1.6",
+        "3.1.7"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 42,
+      "source_lesson": 29,
+      "kind": "source",
+      "sp_focus": "3.1.8",
+      "dk_pdf_page": 48,
+      "source_codes": [
+        "3.1.8"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 43,
+      "source_lesson": 30,
+      "kind": "source",
+      "sp_focus": "3.1.9",
+      "dk_pdf_page": 48,
+      "source_codes": [
+        "3.1.9"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 44,
+      "source_lesson": 31,
+      "kind": "source",
+      "sp_focus": "3.1.10",
+      "dk_pdf_page": 49,
+      "source_codes": [
+        "3.1.10",
+        "3.1.11"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 45,
+      "source_lesson": 31,
+      "kind": "supplement",
+      "sp_focus": "3.1.11",
+      "dk_pdf_page": 49,
+      "source_codes": [
+        "3.1.10",
+        "3.1.11"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 46,
+      "source_lesson": 32,
+      "kind": "source",
+      "sp_focus": "3.1.12",
+      "dk_pdf_page": 49,
+      "source_codes": [
+        "3.1.12"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 47,
+      "source_lesson": 33,
+      "kind": "source",
+      "sp_focus": "4.1.1",
+      "dk_pdf_page": 54,
+      "source_codes": [
+        "4.1.1"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 48,
+      "source_lesson": 33,
+      "kind": "supplement",
+      "sp_focus": "4.1.1",
+      "dk_pdf_page": 54,
+      "source_codes": [
+        "4.1.1"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 49,
+      "source_lesson": 34,
+      "kind": "source",
+      "sp_focus": "4.1.2",
+      "dk_pdf_page": 54,
+      "source_codes": [
+        "4.1.2",
+        "4.1.3"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 50,
+      "source_lesson": 34,
+      "kind": "supplement",
+      "sp_focus": "4.1.3",
+      "dk_pdf_page": 54,
+      "source_codes": [
+        "4.1.2",
+        "4.1.3"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 51,
+      "source_lesson": 35,
+      "kind": "source",
+      "sp_focus": "4.1.4",
+      "dk_pdf_page": 55,
+      "source_codes": [
+        "4.1.4"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 52,
+      "source_lesson": 36,
+      "kind": "source",
+      "sp_focus": "4.1.5",
+      "dk_pdf_page": 55,
+      "source_codes": [
+        "4.1.5"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 53,
+      "source_lesson": 37,
+      "kind": "source",
+      "sp_focus": "4.1.6",
+      "dk_pdf_page": 55,
+      "source_codes": [
+        "4.1.6"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 54,
+      "source_lesson": 38,
+      "kind": "source",
+      "sp_focus": "4.1.7",
+      "dk_pdf_page": 56,
+      "source_codes": [
+        "4.1.7",
+        "4.1.8"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 55,
+      "source_lesson": 38,
+      "kind": "supplement",
+      "sp_focus": "4.1.8",
+      "dk_pdf_page": 56,
+      "source_codes": [
+        "4.1.7",
+        "4.1.8"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 56,
+      "source_lesson": 39,
+      "kind": "source",
+      "sp_focus": "4.1.9",
+      "dk_pdf_page": 56,
+      "source_codes": [
+        "4.1.9"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 57,
+      "source_lesson": 39,
+      "kind": "supplement",
+      "sp_focus": "4.1.9",
+      "dk_pdf_page": 56,
+      "source_codes": [
+        "4.1.9"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 58,
+      "source_lesson": 40,
+      "kind": "source",
+      "sp_focus": "4.1.10",
+      "dk_pdf_page": 56,
+      "source_codes": [
+        "4.1.10"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 59,
+      "source_lesson": 41,
+      "kind": "source",
+      "sp_focus": "4.1.11",
+      "dk_pdf_page": 56,
+      "source_codes": [
+        "4.1.11",
+        "4.1.12"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 60,
+      "source_lesson": 41,
+      "kind": "supplement",
+      "sp_focus": "4.1.12",
+      "dk_pdf_page": 57,
+      "source_codes": [
+        "4.1.11",
+        "4.1.12"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 61,
+      "source_lesson": 42,
+      "kind": "source",
+      "sp_focus": "4.1.13",
+      "dk_pdf_page": 57,
+      "source_codes": [
+        "4.1.13"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 62,
+      "source_lesson": 43,
+      "kind": "source",
+      "sp_focus": "4.1.14",
+      "dk_pdf_page": 57,
+      "source_codes": [
+        "4.1.14"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 63,
+      "source_lesson": 44,
+      "kind": "source",
+      "sp_focus": "4.1.15",
+      "dk_pdf_page": 57,
+      "source_codes": [
+        "4.1.15"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 64,
+      "source_lesson": 45,
+      "kind": "source",
+      "sp_focus": "4.1.16",
+      "dk_pdf_page": 58,
+      "source_codes": [
+        "4.1.16",
+        "4.1.17"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 65,
+      "source_lesson": 45,
+      "kind": "supplement",
+      "sp_focus": "4.1.17",
+      "dk_pdf_page": 58,
+      "source_codes": [
+        "4.1.16",
+        "4.1.17"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 66,
+      "source_lesson": 46,
+      "kind": "source",
+      "sp_focus": "4.1.18",
+      "dk_pdf_page": 58,
+      "source_codes": [
+        "4.1.18"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 67,
+      "source_lesson": 46,
+      "kind": "supplement",
+      "sp_focus": "4.1.18",
+      "dk_pdf_page": 58,
+      "source_codes": [
+        "4.1.18"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 68,
+      "source_lesson": 47,
+      "kind": "source",
+      "sp_focus": "5.1.1",
+      "dk_pdf_page": 64,
+      "source_codes": [
+        "5.1.1"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 69,
+      "source_lesson": 48,
+      "kind": "source",
+      "sp_focus": "5.1.2",
+      "dk_pdf_page": 64,
+      "source_codes": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 70,
+      "source_lesson": 48,
+      "kind": "supplement",
+      "sp_focus": "5.1.3",
+      "dk_pdf_page": 64,
+      "source_codes": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 71,
+      "source_lesson": 49,
+      "kind": "source",
+      "sp_focus": "5.1.4",
+      "dk_pdf_page": 64,
+      "source_codes": [
+        "5.1.4"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 72,
+      "source_lesson": 50,
+      "kind": "source",
+      "sp_focus": "5.1.5",
+      "dk_pdf_page": 65,
+      "source_codes": [
+        "5.1.5"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 73,
+      "source_lesson": 51,
+      "kind": "source",
+      "sp_focus": "5.1.6",
+      "dk_pdf_page": 65,
+      "source_codes": [
+        "5.1.6",
+        "5.1.7"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 74,
+      "source_lesson": 51,
+      "kind": "supplement",
+      "sp_focus": "5.1.7",
+      "dk_pdf_page": 65,
+      "source_codes": [
+        "5.1.6",
+        "5.1.7"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 75,
+      "source_lesson": 52,
+      "kind": "source",
+      "sp_focus": "5.1.8",
+      "dk_pdf_page": 65,
+      "source_codes": [
+        "5.1.8"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 76,
+      "source_lesson": 52,
+      "kind": "supplement",
+      "sp_focus": "5.1.8",
+      "dk_pdf_page": 65,
+      "source_codes": [
+        "5.1.8"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 77,
+      "source_lesson": 53,
+      "kind": "source",
+      "sp_focus": "5.2.1",
+      "dk_pdf_page": 66,
+      "source_codes": [
+        "5.2.1"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 78,
+      "source_lesson": 54,
+      "kind": "source",
+      "sp_focus": "5.2.2",
+      "dk_pdf_page": 66,
+      "source_codes": [
+        "5.2.2",
+        "5.2.3"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 79,
+      "source_lesson": 54,
+      "kind": "supplement",
+      "sp_focus": "5.2.3",
+      "dk_pdf_page": 66,
+      "source_codes": [
+        "5.2.2",
+        "5.2.3"
+      ],
+      "scope_review": "SUPPLEMENT_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 80,
+      "source_lesson": 55,
+      "kind": "source",
+      "sp_focus": "5.2.4",
+      "dk_pdf_page": 66,
+      "source_codes": [
+        "5.2.4"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 81,
+      "source_lesson": 56,
+      "kind": "source",
+      "sp_focus": "5.2.5",
+      "dk_pdf_page": 67,
+      "source_codes": [
+        "5.2.5"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 82,
+      "source_lesson": 57,
+      "kind": "source",
+      "sp_focus": "5.2.6",
+      "dk_pdf_page": 67,
+      "source_codes": [
+        "5.2.6",
+        "5.2.7"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 83,
+      "source_lesson": 57,
+      "kind": "supplement",
+      "sp_focus": "5.2.7",
+      "dk_pdf_page": 67,
+      "source_codes": [
+        "5.2.6",
+        "5.2.7"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 84,
+      "source_lesson": 58,
+      "kind": "source",
+      "sp_focus": "5.2.8",
+      "dk_pdf_page": 67,
+      "source_codes": [
+        "5.2.8"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 85,
+      "source_lesson": 58,
+      "kind": "supplement",
+      "sp_focus": "5.2.8",
+      "dk_pdf_page": 67,
+      "source_codes": [
+        "5.2.8"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 86,
+      "source_lesson": 59,
+      "kind": "source",
+      "sp_focus": "6.1.1",
+      "dk_pdf_page": 73,
+      "source_codes": [
+        "6.1.1"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 87,
+      "source_lesson": 60,
+      "kind": "source",
+      "sp_focus": "6.1.2",
+      "dk_pdf_page": 73,
+      "source_codes": [
+        "6.1.2",
+        "6.1.3"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 88,
+      "source_lesson": 60,
+      "kind": "supplement",
+      "sp_focus": "6.1.3",
+      "dk_pdf_page": 73,
+      "source_codes": [
+        "6.1.2",
+        "6.1.3"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 89,
+      "source_lesson": 61,
+      "kind": "source",
+      "sp_focus": "6.1.4",
+      "dk_pdf_page": 73,
+      "source_codes": [
+        "6.1.4"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 90,
+      "source_lesson": 62,
+      "kind": "source",
+      "sp_focus": "6.2.1",
+      "dk_pdf_page": 74,
+      "source_codes": [
+        "6.2.1"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 91,
+      "source_lesson": 63,
+      "kind": "source",
+      "sp_focus": "6.2.2",
+      "dk_pdf_page": 74,
+      "source_codes": [
+        "6.2.2",
+        "6.2.3"
+      ],
+      "scope_review": "COMBINED_SOURCE_REVIEW",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 92,
+      "source_lesson": 63,
+      "kind": "supplement",
+      "sp_focus": "6.2.3",
+      "dk_pdf_page": 74,
+      "source_codes": [
+        "6.2.2",
+        "6.2.3"
+      ],
+      "scope_review": "PENDING_MANUAL_APPROVAL",
+      "ready": false
+    },
+    {
+      "rpt_pdp": 93,
+      "source_lesson": 64,
+      "kind": "source",
+      "sp_focus": "6.2.4",
+      "dk_pdf_page": 74,
+      "source_codes": [
+        "6.2.4"
+      ],
+      "scope_review": "OBJECTIVE_REVIEW",
+      "ready": false
+    }
+  ]
+}
