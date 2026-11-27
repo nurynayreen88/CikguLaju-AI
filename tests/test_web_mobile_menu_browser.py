@@ -72,33 +72,52 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     expect(page.locator('[data-web-view="curriculum-docs"]')).to_have_attribute("aria-current","page")
                     page.locator("#curriculum-docs-type").select_option("kp2027")
                     expect(page.locator("#curriculum-kp2027-list li:visible")).to_have_count(5)
-                    expect(page.locator("#curriculum-kp2027-list li:visible small").filter(has_text="PDF sumber luar")).to_have_count(3)
+                    expect(page.locator("#curriculum-kp2027-list li:visible small").filter(has_text="PDF koleksi CikguLaju")).to_have_count(5)
+                    expect(page.locator("#curriculum-kp2027-list button.curriculum-direct-download")).to_have_count(5)
+                    expect(page.get_by_role("button",name="Download DK Bahasa Melayu SK Tahun 1",exact=True)).to_have_attribute("data-download-url","https://drive.usercontent.google.com/download?id=18TRqIUfNPsnyV-G_hk2BRpfExgZhyhv-&export=download&confirm=t")
+                    expect(page.locator("#curriculum-kp2027-list li a")).to_have_count(0)
+                    page.evaluate("""() => {
+                        window.curriculumDownloadClicks=[];
+                        const nativeClick=HTMLAnchorElement.prototype.click;
+                        HTMLAnchorElement.prototype.click=function(){
+                            if(this.href.startsWith("https://drive.usercontent.google.com/download?")){
+                                window.curriculumDownloadClicks.push({url:this.href,target:this.target,download:this.hasAttribute("download")});
+                            }else nativeClick.call(this);
+                        };
+                    }""")
+                    page.get_by_role("button",name="Download DK Bahasa Melayu SK Tahun 1",exact=True).click()
+                    self.assertEqual(page.evaluate("window.curriculumDownloadClicks"),[{
+                        "url":"https://drive.usercontent.google.com/download?id=18TRqIUfNPsnyV-G_hk2BRpfExgZhyhv-&export=download&confirm=t",
+                        "target":"","download":True}])
                     expect(page.locator("#curriculum-docs-kp2027")).not_to_contain_text("penataran",ignore_case=True)
                     expect(page.locator("#curriculum-kp2027-ppd-list")).to_have_count(0)
                     page.locator("#curriculum-docs-type").select_option("kssr")
                     expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_count(156)
+                    expect(page.locator("#curriculum-docs-kssr-list button.curriculum-direct-download")).to_have_count(137)
                     page.locator("#curriculum-docs-year").select_option("6")
                     page.locator("#curriculum-docs-subject").select_option("Matematik SJKC")
                     expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_count(1)
-                    expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_text("DSKP Matematik SJKC Tahun 6")
+                    expect(page.locator("#curriculum-docs-kssr-list li:visible .curriculum-doc-name")).to_have_text("DSKP Matematik SJKC Tahun 6")
+                    expect(page.locator("#curriculum-docs-kssr-list li:visible button")).to_have_attribute("data-download-url","https://drive.usercontent.google.com/download?id=1dMLgOsc-grs4fR2WSvLNDk45Dtqh_yY_&export=download&confirm=t")
                     page.locator("#curriculum-docs-subject").select_option("Bahasa Cina SJKC")
-                    expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_text("DSKP Bahasa Cina SJKC Tahun 6")
+                    expect(page.locator("#curriculum-docs-kssr-list li:visible .curriculum-doc-name")).to_have_text("DSKP Bahasa Cina SJKC Tahun 6")
                     page.locator("#curriculum-docs-year").select_option("1")
-                    expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_text("DSKP Bahasa Cina SJKC Tahun 1")
+                    expect(page.locator("#curriculum-docs-kssr-list li:visible .curriculum-doc-name")).to_have_text("DSKP Bahasa Cina SJKC Tahun 1")
                     page.locator("#curriculum-docs-subject").select_option("Bahasa Cina SK")
                     page.locator("#curriculum-docs-year").select_option("3")
-                    expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_text("DSKP Bahasa Cina SK Tahun 3")
+                    expect(page.locator("#curriculum-docs-kssr-list li:visible .curriculum-doc-name")).to_have_text("DSKP Bahasa Cina SK Tahun 3")
                     page.locator("#curriculum-docs-subject").select_option("Bahasa Tamil SK")
                     page.locator("#curriculum-docs-year").select_option("6")
                     expect(page.locator("#curriculum-docs-kssr-list li:visible a")).to_have_text("DSKP Bahasa Tamil SK Tahun 6")
                     expect(page.locator("#curriculum-docs-kssr-list li:visible small")).to_have_text("(salinan PDF sumber luar)")
                     page.locator("#curriculum-docs-year").select_option("1")
                     page.locator("#curriculum-docs-subject").select_option("Bahasa Iban")
-                    expect(page.locator("#curriculum-docs-kssr-list li:visible a")).to_have_text("DSKP Bahasa Iban Tahun 1")
+                    expect(page.locator("#curriculum-docs-kssr-list li:visible .curriculum-doc-name")).to_have_text("DSKP Bahasa Iban Tahun 1")
                     expect(page.locator("#curriculum-docs-match-count")).to_have_text("1 pautan sumber")
                     page.locator("#curriculum-docs-type").select_option("dpk")
                     expect(page.locator("#curriculum-docs-kssr")).to_be_hidden()
                     expect(page.locator("#curriculum-docs-dpk")).to_be_visible()
+                    expect(page.locator("#curriculum-docs-dpk button.curriculum-direct-download")).to_have_count(11)
                     page.locator("#curriculum-docs-type").select_option("pk")
                     expect(page.locator("#curriculum-pk-list li:visible")).to_have_count(54)
                     page.locator("#curriculum-pk-year").select_option("3")
