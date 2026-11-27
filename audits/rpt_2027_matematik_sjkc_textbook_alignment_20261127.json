@@ -7,7 +7,8 @@
   "notes": [
     "Textbook tables of contents retrieved for Y4 and Y6; chapter boundaries verified against printed TOC. Y6 pages 39,76,108 may be divider/blank pages; chapter windows are not exact teaching-page ranges.",
     "Original Chinese teaching focus descriptions are not verbatim official standards. Unit 1 scopes checked against DSKP printed pages; proposed per-session page windows use contents and selected SP footers, not exhaustive footer verification.",
-    "Y5 textbook listing found but contents not available; no pages inferred. Remaining unit sessions and Chinese full SK/SP wording pending, RPH linkage and academic approval pending. No published RPT modified."
+    "Y5 textbook listing found but contents not available; no pages inferred. Remaining unit sessions and Chinese full SK/SP wording pending, RPH linkage and academic approval pending. No published RPT modified.",
+    "27 Nov continuation: DSKP Y4 Unit 2 printed 37–38 and Y6 Units 2–8 printed 34–35,38,42,46,50,54,58 visually inspected. Y4 and Y6 textbook TOCs read from Chin Hwa library links already recorded. All proposed page spans refer to TOC section starts and next section boundaries, not verified per-page SP tags. New original topic descriptions split multi-part scopes; Y6 all units covered in draft. Y5 text unavailable from two listings; still pending. No production changes."
   ],
   "plans": [
     {
@@ -575,7 +576,323 @@
         "base_sp_coverage": 19,
         "sequence_adjustment": "Reordered operations/conversions to follow textbook, retained 60-minute sessions and dates; proposed page spans need exact footer checks."
       },
-      "release": false
+      "release": false,
+      "additional_units": [
+        {
+          "unit": 2,
+          "sessions": [
+            {
+              "draft_pdp": 23,
+              "week": "M10",
+              "A": {
+                "start": "2027-03-14",
+                "end": "2027-03-18"
+              },
+              "B": {
+                "start": "2027-03-15",
+                "end": "2027-03-19"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.1"
+              ],
+              "topic_cn_original": "用图形互换带分数与假分数",
+              "textbook_candidate_pages": [
+                46,
+                47
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 24,
+              "week": "M10",
+              "A": {
+                "start": "2027-03-14",
+                "end": "2027-03-18"
+              },
+              "B": {
+                "start": "2027-03-15",
+                "end": "2027-03-19"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.2"
+              ],
+              "topic_cn_original": "通分后合并三个以内的整数或分数",
+              "textbook_candidate_pages": [
+                48,
+                49
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 25,
+              "week": "M11",
+              "A": {
+                "start": "2027-03-21",
+                "end": "2027-03-25"
+              },
+              "B": {
+                "start": "2027-03-22",
+                "end": "2027-03-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.3"
+              ],
+              "topic_cn_original": "两数相减：整数与不同形式的分数",
+              "textbook_candidate_pages": [
+                50,
+                51
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 26,
+              "week": "M11",
+              "A": {
+                "start": "2027-03-21",
+                "end": "2027-03-25"
+              },
+              "B": {
+                "start": "2027-03-22",
+                "end": "2027-03-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.3"
+              ],
+              "topic_cn_original": "依次减去两个分数或整数",
+              "textbook_candidate_pages": [
+                50,
+                51
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 27,
+              "week": "M11",
+              "A": {
+                "start": "2027-03-21",
+                "end": "2027-03-25"
+              },
+              "B": {
+                "start": "2027-03-22",
+                "end": "2027-03-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.4"
+              ],
+              "topic_cn_original": "在同一算式中处理分数加减",
+              "textbook_candidate_pages": [
+                52,
+                53
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 28,
+              "week": "M12",
+              "A": {
+                "start": "2027-03-28",
+                "end": "2027-04-01"
+              },
+              "B": {
+                "start": "2027-03-29",
+                "end": "2027-04-02"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.5"
+              ],
+              "topic_cn_original": "用条形模型求一个数量的几分之几",
+              "textbook_candidate_pages": [
+                54,
+                55
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 29,
+              "week": "M12",
+              "A": {
+                "start": "2027-03-28",
+                "end": "2027-04-01"
+              },
+              "B": {
+                "start": "2027-03-29",
+                "end": "2027-04-02"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.2.1"
+              ],
+              "topic_cn_original": "对齐小数点完成加法",
+              "textbook_candidate_pages": [
+                58,
+                59
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 30,
+              "week": "M12",
+              "A": {
+                "start": "2027-03-28",
+                "end": "2027-04-01"
+              },
+              "B": {
+                "start": "2027-03-29",
+                "end": "2027-04-02"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.2.2"
+              ],
+              "topic_cn_original": "对齐小数点完成减法",
+              "textbook_candidate_pages": [
+                60,
+                61
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 31,
+              "week": "M13",
+              "A": {
+                "start": "2027-04-04",
+                "end": "2027-04-08"
+              },
+              "B": {
+                "start": "2027-04-05",
+                "end": "2027-04-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.2.3"
+              ],
+              "topic_cn_original": "小数乘一位数及10、100、1000",
+              "textbook_candidate_pages": [
+                62,
+                63
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 32,
+              "week": "M13",
+              "A": {
+                "start": "2027-04-04",
+                "end": "2027-04-08"
+              },
+              "B": {
+                "start": "2027-04-05",
+                "end": "2027-04-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.2.4"
+              ],
+              "topic_cn_original": "小数除以一位数及10、100、1000",
+              "textbook_candidate_pages": [
+                64,
+                65
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 33,
+              "week": "M13",
+              "A": {
+                "start": "2027-04-04",
+                "end": "2027-04-08"
+              },
+              "B": {
+                "start": "2027-04-05",
+                "end": "2027-04-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.3.1"
+              ],
+              "topic_cn_original": "用等值分数理解百分率的双向转换",
+              "textbook_candidate_pages": [
+                68,
+                69
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 34,
+              "week": "M14",
+              "A": {
+                "start": "2027-04-11",
+                "end": "2027-04-15"
+              },
+              "B": {
+                "start": "2027-04-12",
+                "end": "2027-04-16"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.3.2"
+              ],
+              "topic_cn_original": "用百分率求实际数量",
+              "textbook_candidate_pages": [
+                70,
+                71
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 35,
+              "week": "M14",
+              "A": {
+                "start": "2027-04-11",
+                "end": "2027-04-15"
+              },
+              "B": {
+                "start": "2027-04-12",
+                "end": "2027-04-16"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.4.1"
+              ],
+              "topic_cn_original": "用图示处理分数和小数生活题",
+              "textbook_candidate_pages": [
+                74,
+                80
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 36,
+              "week": "M14",
+              "A": {
+                "start": "2027-04-11",
+                "end": "2027-04-15"
+              },
+              "B": {
+                "start": "2027-04-12",
+                "end": "2027-04-16"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.4.1"
+              ],
+              "topic_cn_original": "选择策略解决百分率生活题并验算",
+              "textbook_candidate_pages": [
+                74,
+                80
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            }
+          ],
+          "base_sp_coverage": 12
+        }
+      ]
     },
     {
       "year": 6,
@@ -989,7 +1306,1833 @@
         "base_sp_coverage": 8,
         "sequence_adjustment": "Reordered operations/conversions to follow textbook, retained 60-minute sessions and dates; proposed page spans need exact footer checks."
       },
-      "release": false
+      "release": false,
+      "additional_units": [
+        {
+          "unit": 2,
+          "sessions": [
+            {
+              "draft_pdp": 16,
+              "week": "M08",
+              "A": {
+                "start": "2027-02-21",
+                "end": "2027-02-25"
+              },
+              "B": {
+                "start": "2027-02-22",
+                "end": "2027-02-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.1"
+              ],
+              "topic_cn_original": "用分组图理解整数除以分数",
+              "textbook_candidate_pages": [
+                41,
+                44
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 17,
+              "week": "M08",
+              "A": {
+                "start": "2027-02-21",
+                "end": "2027-02-25"
+              },
+              "B": {
+                "start": "2027-02-22",
+                "end": "2027-02-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.1"
+              ],
+              "topic_cn_original": "通过倒数完成分数相除",
+              "textbook_candidate_pages": [
+                41,
+                44
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 18,
+              "week": "M08",
+              "A": {
+                "start": "2027-02-21",
+                "end": "2027-02-25"
+              },
+              "B": {
+                "start": "2027-02-22",
+                "end": "2027-02-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.1.1"
+              ],
+              "topic_cn_original": "带分数参与除法及结果检验",
+              "textbook_candidate_pages": [
+                41,
+                44
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 19,
+              "week": "M09",
+              "A": {
+                "start": "2027-02-28",
+                "end": "2027-03-04"
+              },
+              "B": {
+                "start": "2027-03-01",
+                "end": "2027-03-05"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.2.1"
+              ],
+              "topic_cn_original": "用位值解释两个小数相乘",
+              "textbook_candidate_pages": [
+                45,
+                47
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 20,
+              "week": "M09",
+              "A": {
+                "start": "2027-02-28",
+                "end": "2027-03-04"
+              },
+              "B": {
+                "start": "2027-03-01",
+                "end": "2027-03-05"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.2.1"
+              ],
+              "topic_cn_original": "计算并检验三位小数以内的积",
+              "textbook_candidate_pages": [
+                45,
+                47
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 21,
+              "week": "M09",
+              "A": {
+                "start": "2027-02-28",
+                "end": "2027-03-04"
+              },
+              "B": {
+                "start": "2027-03-01",
+                "end": "2027-03-05"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.2.2"
+              ],
+              "topic_cn_original": "将除数转成整数后求商",
+              "textbook_candidate_pages": [
+                48,
+                51
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 22,
+              "week": "M10",
+              "A": {
+                "start": "2027-03-14",
+                "end": "2027-03-18"
+              },
+              "B": {
+                "start": "2027-03-15",
+                "end": "2027-03-19"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.2.2"
+              ],
+              "topic_cn_original": "检查三位小数以内的商",
+              "textbook_candidate_pages": [
+                48,
+                51
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 23,
+              "week": "M10",
+              "A": {
+                "start": "2027-03-14",
+                "end": "2027-03-18"
+              },
+              "B": {
+                "start": "2027-03-15",
+                "end": "2027-03-19"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.3.1"
+              ],
+              "topic_cn_original": "把大于1的小数表示为百分率",
+              "textbook_candidate_pages": [
+                52,
+                54
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 24,
+              "week": "M10",
+              "A": {
+                "start": "2027-03-14",
+                "end": "2027-03-18"
+              },
+              "B": {
+                "start": "2027-03-15",
+                "end": "2027-03-19"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.3.1"
+              ],
+              "topic_cn_original": "把超过100%的百分率还原成小数",
+              "textbook_candidate_pages": [
+                52,
+                54
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 25,
+              "week": "M11",
+              "A": {
+                "start": "2027-03-21",
+                "end": "2027-03-25"
+              },
+              "B": {
+                "start": "2027-03-22",
+                "end": "2027-03-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.3.3"
+              ],
+              "topic_cn_original": "求小数数量的百分率所对应的值",
+              "textbook_candidate_pages": [
+                55,
+                57
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 26,
+              "week": "M11",
+              "A": {
+                "start": "2027-03-21",
+                "end": "2027-03-25"
+              },
+              "B": {
+                "start": "2027-03-22",
+                "end": "2027-03-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.3.3"
+              ],
+              "topic_cn_original": "由部分数量反推百分率或原量",
+              "textbook_candidate_pages": [
+                55,
+                57
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 27,
+              "week": "M11",
+              "A": {
+                "start": "2027-03-21",
+                "end": "2027-03-25"
+              },
+              "B": {
+                "start": "2027-03-22",
+                "end": "2027-03-26"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.3.2"
+              ],
+              "topic_cn_original": "用数轴表示百分率之和",
+              "textbook_candidate_pages": [
+                58,
+                60
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 28,
+              "week": "M12",
+              "A": {
+                "start": "2027-03-28",
+                "end": "2027-04-01"
+              },
+              "B": {
+                "start": "2027-03-29",
+                "end": "2027-04-02"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.3.2"
+              ],
+              "topic_cn_original": "计算百分率的差及带分数百分率",
+              "textbook_candidate_pages": [
+                58,
+                60
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 29,
+              "week": "M12",
+              "A": {
+                "start": "2027-03-28",
+                "end": "2027-04-01"
+              },
+              "B": {
+                "start": "2027-03-29",
+                "end": "2027-04-02"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.4.1"
+              ],
+              "topic_cn_original": "无括号的整数、分数和小数两类运算",
+              "textbook_candidate_pages": [
+                61,
+                66
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 30,
+              "week": "M12",
+              "A": {
+                "start": "2027-03-28",
+                "end": "2027-04-01"
+              },
+              "B": {
+                "start": "2027-03-29",
+                "end": "2027-04-02"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.4.1"
+              ],
+              "topic_cn_original": "有括号的两类运算及验算",
+              "textbook_candidate_pages": [
+                61,
+                66
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 31,
+              "week": "M13",
+              "A": {
+                "start": "2027-04-04",
+                "end": "2027-04-08"
+              },
+              "B": {
+                "start": "2027-04-05",
+                "end": "2027-04-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.5.1"
+              ],
+              "topic_cn_original": "分数及小数情境的数量关系",
+              "textbook_candidate_pages": [
+                67,
+                72
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 32,
+              "week": "M13",
+              "A": {
+                "start": "2027-04-04",
+                "end": "2027-04-08"
+              },
+              "B": {
+                "start": "2027-04-05",
+                "end": "2027-04-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.5.1"
+              ],
+              "topic_cn_original": "百分率及原量的情境模型",
+              "textbook_candidate_pages": [
+                67,
+                72
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 33,
+              "week": "M13",
+              "A": {
+                "start": "2027-04-04",
+                "end": "2027-04-08"
+              },
+              "B": {
+                "start": "2027-04-05",
+                "end": "2027-04-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "2.5.1"
+              ],
+              "topic_cn_original": "综合情境题的策略比较",
+              "textbook_candidate_pages": [
+                67,
+                73
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            }
+          ],
+          "base_sp_coverage": 8
+        },
+        {
+          "unit": 3,
+          "sessions": [
+            {
+              "draft_pdp": 34,
+              "week": "M14",
+              "A": {
+                "start": "2027-04-11",
+                "end": "2027-04-15"
+              },
+              "B": {
+                "start": "2027-04-12",
+                "end": "2027-04-16"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.1.1"
+              ],
+              "topic_cn_original": "辨认进货成本、售价及盈亏",
+              "textbook_candidate_pages": [
+                78,
+                81
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 35,
+              "week": "M14",
+              "A": {
+                "start": "2027-04-11",
+                "end": "2027-04-15"
+              },
+              "B": {
+                "start": "2027-04-12",
+                "end": "2027-04-16"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.1.2"
+              ],
+              "topic_cn_original": "计算售价、成本及盈亏",
+              "textbook_candidate_pages": [
+                78,
+                81
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 36,
+              "week": "M15",
+              "A": {
+                "start": "2027-04-18",
+                "end": "2027-04-22"
+              },
+              "B": {
+                "start": "2027-04-19",
+                "end": "2027-04-23"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.1.1"
+              ],
+              "topic_cn_original": "辨别折扣、回扣、礼券及交易凭证",
+              "textbook_candidate_pages": [
+                82,
+                85
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 37,
+              "week": "M15",
+              "A": {
+                "start": "2027-04-18",
+                "end": "2027-04-22"
+              },
+              "B": {
+                "start": "2027-04-19",
+                "end": "2027-04-23"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.1.2"
+              ],
+              "topic_cn_original": "计算折扣和回扣后的金额",
+              "textbook_candidate_pages": [
+                82,
+                83
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 38,
+              "week": "M15",
+              "A": {
+                "start": "2027-04-18",
+                "end": "2027-04-22"
+              },
+              "B": {
+                "start": "2027-04-19",
+                "end": "2027-04-23"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.1.1"
+              ],
+              "topic_cn_original": "区别资产、债务、利息、股息与服务税",
+              "textbook_candidate_pages": [
+                86,
+                91
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 39,
+              "week": "M16",
+              "A": {
+                "start": "2027-04-25",
+                "end": "2027-04-29"
+              },
+              "B": {
+                "start": "2027-04-26",
+                "end": "2027-04-30"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.1.2"
+              ],
+              "topic_cn_original": "计算利息、股息和服务税",
+              "textbook_candidate_pages": [
+                88,
+                91
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 40,
+              "week": "M16",
+              "A": {
+                "start": "2027-04-25",
+                "end": "2027-04-29"
+              },
+              "B": {
+                "start": "2027-04-26",
+                "end": "2027-04-30"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.2.1"
+              ],
+              "topic_cn_original": "识别一般保险的基本概念",
+              "textbook_candidate_pages": [
+                92,
+                93
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 41,
+              "week": "M16",
+              "A": {
+                "start": "2027-04-25",
+                "end": "2027-04-29"
+              },
+              "B": {
+                "start": "2027-04-26",
+                "end": "2027-04-30"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.2.1"
+              ],
+              "topic_cn_original": "认识回教保险的互助概念",
+              "textbook_candidate_pages": [
+                94,
+                94
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 42,
+              "week": "M17",
+              "A": {
+                "start": "2027-05-02",
+                "end": "2027-05-06"
+              },
+              "B": {
+                "start": "2027-05-03",
+                "end": "2027-05-07"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.2.2"
+              ],
+              "topic_cn_original": "比较保障目标与风险承担",
+              "textbook_candidate_pages": [
+                95,
+                97
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 43,
+              "week": "M17",
+              "A": {
+                "start": "2027-05-02",
+                "end": "2027-05-06"
+              },
+              "B": {
+                "start": "2027-05-03",
+                "end": "2027-05-07"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.3.1"
+              ],
+              "topic_cn_original": "商店交易、礼券和账单的情境计算",
+              "textbook_candidate_pages": [
+                98,
+                103
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 44,
+              "week": "M17",
+              "A": {
+                "start": "2027-05-02",
+                "end": "2027-05-06"
+              },
+              "B": {
+                "start": "2027-05-03",
+                "end": "2027-05-07"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.3.1"
+              ],
+              "topic_cn_original": "利息、税费与个人收支的情境计算",
+              "textbook_candidate_pages": [
+                98,
+                103
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 45,
+              "week": "M20",
+              "A": {
+                "start": "2027-06-06",
+                "end": "2027-06-10"
+              },
+              "B": {
+                "start": "2027-06-07",
+                "end": "2027-06-11"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "3.3.1"
+              ],
+              "topic_cn_original": "资产、债务及风险情境的综合决策",
+              "textbook_candidate_pages": [
+                98,
+                104
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            }
+          ],
+          "base_sp_coverage": 5
+        },
+        {
+          "unit": 4,
+          "sessions": [
+            {
+              "draft_pdp": 46,
+              "week": "M20",
+              "A": {
+                "start": "2027-06-06",
+                "end": "2027-06-10"
+              },
+              "B": {
+                "start": "2027-06-07",
+                "end": "2027-06-11"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "4.1.1"
+              ],
+              "topic_cn_original": "认识世界时区与本地时间",
+              "textbook_candidate_pages": [
+                110,
+                112
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 47,
+              "week": "M21",
+              "A": {
+                "start": "2027-06-13",
+                "end": "2027-06-17"
+              },
+              "B": {
+                "start": "2027-06-14",
+                "end": "2027-06-18"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "4.1.1"
+              ],
+              "topic_cn_original": "从时区图判断城市的时间位置",
+              "textbook_candidate_pages": [
+                110,
+                112
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 48,
+              "week": "M21",
+              "A": {
+                "start": "2027-06-13",
+                "end": "2027-06-17"
+              },
+              "B": {
+                "start": "2027-06-14",
+                "end": "2027-06-18"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "4.1.1"
+              ],
+              "topic_cn_original": "辨认同一国家内的不同时区",
+              "textbook_candidate_pages": [
+                110,
+                112
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 49,
+              "week": "M21",
+              "A": {
+                "start": "2027-06-13",
+                "end": "2027-06-17"
+              },
+              "B": {
+                "start": "2027-06-14",
+                "end": "2027-06-18"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "4.1.2"
+              ],
+              "topic_cn_original": "用数轴计算两个城市的时间差",
+              "textbook_candidate_pages": [
+                113,
+                115
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 50,
+              "week": "M22",
+              "A": {
+                "start": "2027-06-20",
+                "end": "2027-06-24"
+              },
+              "B": {
+                "start": "2027-06-21",
+                "end": "2027-06-25"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "4.1.2"
+              ],
+              "topic_cn_original": "跨午夜的时差与日期变化",
+              "textbook_candidate_pages": [
+                113,
+                115
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 51,
+              "week": "M22",
+              "A": {
+                "start": "2027-06-20",
+                "end": "2027-06-24"
+              },
+              "B": {
+                "start": "2027-06-21",
+                "end": "2027-06-25"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "4.2.1"
+              ],
+              "topic_cn_original": "比较跨国联络的合适时刻",
+              "textbook_candidate_pages": [
+                116,
+                121
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 52,
+              "week": "M22",
+              "A": {
+                "start": "2027-06-20",
+                "end": "2027-06-24"
+              },
+              "B": {
+                "start": "2027-06-21",
+                "end": "2027-06-25"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "4.2.1"
+              ],
+              "topic_cn_original": "计算旅行行程中的当地时间",
+              "textbook_candidate_pages": [
+                116,
+                121
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 53,
+              "week": "M23",
+              "A": {
+                "start": "2027-06-27",
+                "end": "2027-07-01"
+              },
+              "B": {
+                "start": "2027-06-28",
+                "end": "2027-07-02"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "4.2.1"
+              ],
+              "topic_cn_original": "检验多城市时刻表的推理",
+              "textbook_candidate_pages": [
+                116,
+                122
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            }
+          ],
+          "base_sp_coverage": 3
+        },
+        {
+          "unit": 5,
+          "sessions": [
+            {
+              "draft_pdp": 54,
+              "week": "M23",
+              "A": {
+                "start": "2027-06-27",
+                "end": "2027-07-01"
+              },
+              "B": {
+                "start": "2027-06-28",
+                "end": "2027-07-02"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "长度与质量：统一单位",
+              "textbook_candidate_pages": [
+                126,
+                127
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 55,
+              "week": "M24",
+              "A": {
+                "start": "2027-07-04",
+                "end": "2027-07-08"
+              },
+              "B": {
+                "start": "2027-07-05",
+                "end": "2027-07-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "长度与质量：按比例推算",
+              "textbook_candidate_pages": [
+                126,
+                127
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 56,
+              "week": "M24",
+              "A": {
+                "start": "2027-07-04",
+                "end": "2027-07-08"
+              },
+              "B": {
+                "start": "2027-07-05",
+                "end": "2027-07-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "长度与质量：反推未知量",
+              "textbook_candidate_pages": [
+                126,
+                127
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 57,
+              "week": "M24",
+              "A": {
+                "start": "2027-07-04",
+                "end": "2027-07-08"
+              },
+              "B": {
+                "start": "2027-07-05",
+                "end": "2027-07-09"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "长度与液体体积：建立对应表",
+              "textbook_candidate_pages": [
+                128,
+                129
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 58,
+              "week": "M25",
+              "A": {
+                "start": "2027-07-11",
+                "end": "2027-07-15"
+              },
+              "B": {
+                "start": "2027-07-12",
+                "end": "2027-07-16"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "长度与液体体积：求单位数量",
+              "textbook_candidate_pages": [
+                128,
+                129
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 59,
+              "week": "M25",
+              "A": {
+                "start": "2027-07-11",
+                "end": "2027-07-15"
+              },
+              "B": {
+                "start": "2027-07-12",
+                "end": "2027-07-16"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "长度与液体体积：多步推理",
+              "textbook_candidate_pages": [
+                128,
+                129
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 60,
+              "week": "M25",
+              "A": {
+                "start": "2027-07-11",
+                "end": "2027-07-15"
+              },
+              "B": {
+                "start": "2027-07-12",
+                "end": "2027-07-16"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "质量与液体体积：换算及比较",
+              "textbook_candidate_pages": [
+                130,
+                131
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 61,
+              "week": "M26",
+              "A": {
+                "start": "2027-07-18",
+                "end": "2027-07-22"
+              },
+              "B": {
+                "start": "2027-07-19",
+                "end": "2027-07-23"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "质量与液体体积：按已知关系求值",
+              "textbook_candidate_pages": [
+                130,
+                131
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 62,
+              "week": "M26",
+              "A": {
+                "start": "2027-07-18",
+                "end": "2027-07-22"
+              },
+              "B": {
+                "start": "2027-07-19",
+                "end": "2027-07-23"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "5.1.1"
+              ],
+              "topic_cn_original": "三类度量关系的综合应用与验算",
+              "textbook_candidate_pages": [
+                130,
+                132
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            }
+          ],
+          "base_sp_coverage": 1
+        },
+        {
+          "unit": 6,
+          "sessions": [
+            {
+              "draft_pdp": 63,
+              "week": "M26",
+              "A": {
+                "start": "2027-07-18",
+                "end": "2027-07-22"
+              },
+              "B": {
+                "start": "2027-07-19",
+                "end": "2027-07-23"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.1.2"
+              ],
+              "topic_cn_original": "量角器定点并绘制锐角",
+              "textbook_candidate_pages": [
+                136,
+                137
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 64,
+              "week": "M27",
+              "A": {
+                "start": "2027-07-25",
+                "end": "2027-07-29"
+              },
+              "B": {
+                "start": "2027-07-26",
+                "end": "2027-07-30"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.1.2"
+              ],
+              "topic_cn_original": "绘制钝角和180度以内的角",
+              "textbook_candidate_pages": [
+                136,
+                137
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 65,
+              "week": "M27",
+              "A": {
+                "start": "2027-07-25",
+                "end": "2027-07-29"
+              },
+              "B": {
+                "start": "2027-07-26",
+                "end": "2027-07-30"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.1.2"
+              ],
+              "topic_cn_original": "检查给定度数与绘图误差",
+              "textbook_candidate_pages": [
+                136,
+                137
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 66,
+              "week": "M27",
+              "A": {
+                "start": "2027-07-25",
+                "end": "2027-07-29"
+              },
+              "B": {
+                "start": "2027-07-26",
+                "end": "2027-07-30"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.1.1"
+              ],
+              "topic_cn_original": "在方格纸画规则多边形并量内角",
+              "textbook_candidate_pages": [
+                138,
+                141
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 67,
+              "week": "M28",
+              "A": {
+                "start": "2027-08-01",
+                "end": "2027-08-05"
+              },
+              "B": {
+                "start": "2027-08-02",
+                "end": "2027-08-06"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.1.1"
+              ],
+              "topic_cn_original": "在三角格纸画正多边形并测量",
+              "textbook_candidate_pages": [
+                138,
+                141
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 68,
+              "week": "M28",
+              "A": {
+                "start": "2027-08-01",
+                "end": "2027-08-05"
+              },
+              "B": {
+                "start": "2027-08-02",
+                "end": "2027-08-06"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.1.1"
+              ],
+              "topic_cn_original": "用软件探索最多八边的正多边形",
+              "textbook_candidate_pages": [
+                138,
+                141
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 69,
+              "week": "M28",
+              "A": {
+                "start": "2027-08-01",
+                "end": "2027-08-05"
+              },
+              "B": {
+                "start": "2027-08-02",
+                "end": "2027-08-06"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.2.1"
+              ],
+              "topic_cn_original": "辨认圆心与半径",
+              "textbook_candidate_pages": [
+                142,
+                144
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 70,
+              "week": "M29",
+              "A": {
+                "start": "2027-08-08",
+                "end": "2027-08-12"
+              },
+              "B": {
+                "start": "2027-08-09",
+                "end": "2027-08-13"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.2.1"
+              ],
+              "topic_cn_original": "以折纸说明直径与半径关系",
+              "textbook_candidate_pages": [
+                142,
+                144
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 71,
+              "week": "M29",
+              "A": {
+                "start": "2027-08-08",
+                "end": "2027-08-12"
+              },
+              "B": {
+                "start": "2027-08-09",
+                "end": "2027-08-13"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.2.1"
+              ],
+              "topic_cn_original": "用圆形实物辨别三种构造",
+              "textbook_candidate_pages": [
+                142,
+                144
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 72,
+              "week": "M29",
+              "A": {
+                "start": "2027-08-08",
+                "end": "2027-08-12"
+              },
+              "B": {
+                "start": "2027-08-09",
+                "end": "2027-08-13"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.2.2"
+              ],
+              "topic_cn_original": "按给定半径使用圆规作图",
+              "textbook_candidate_pages": [
+                145,
+                146
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 73,
+              "week": "M30",
+              "A": {
+                "start": "2027-08-15",
+                "end": "2027-08-19"
+              },
+              "B": {
+                "start": "2027-08-16",
+                "end": "2027-08-20"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.2.2"
+              ],
+              "topic_cn_original": "标注圆心、直径及半径",
+              "textbook_candidate_pages": [
+                145,
+                146
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 74,
+              "week": "M30",
+              "A": {
+                "start": "2027-08-15",
+                "end": "2027-08-19"
+              },
+              "B": {
+                "start": "2027-08-16",
+                "end": "2027-08-20"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.2.2"
+              ],
+              "topic_cn_original": "对照指定半径检验所画的圆",
+              "textbook_candidate_pages": [
+                145,
+                146
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 75,
+              "week": "M30",
+              "A": {
+                "start": "2027-08-15",
+                "end": "2027-08-19"
+              },
+              "B": {
+                "start": "2027-08-16",
+                "end": "2027-08-20"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.3.1"
+              ],
+              "topic_cn_original": "用角度解决平面设计问题",
+              "textbook_candidate_pages": [
+                147,
+                148
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 76,
+              "week": "M31",
+              "A": {
+                "start": "2027-08-22",
+                "end": "2027-08-26"
+              },
+              "B": {
+                "start": "2027-08-23",
+                "end": "2027-08-27"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.3.1"
+              ],
+              "topic_cn_original": "用半径与直径解决实际问题",
+              "textbook_candidate_pages": [
+                147,
+                148
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 77,
+              "week": "M31",
+              "A": {
+                "start": "2027-08-22",
+                "end": "2027-08-26"
+              },
+              "B": {
+                "start": "2027-08-23",
+                "end": "2027-08-27"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "6.3.1"
+              ],
+              "topic_cn_original": "综合空间情境并说明作图策略",
+              "textbook_candidate_pages": [
+                147,
+                149
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            }
+          ],
+          "base_sp_coverage": 5
+        },
+        {
+          "unit": 7,
+          "sessions": [
+            {
+              "draft_pdp": 78,
+              "week": "M32",
+              "A": {
+                "start": "2027-09-05",
+                "end": "2027-09-09"
+              },
+              "B": {
+                "start": "2027-09-06",
+                "end": "2027-09-10"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.1.1"
+              ],
+              "topic_cn_original": "从坐标和比例尺求水平实际距离",
+              "textbook_candidate_pages": [
+                153,
+                156
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 79,
+              "week": "M32",
+              "A": {
+                "start": "2027-09-05",
+                "end": "2027-09-09"
+              },
+              "B": {
+                "start": "2027-09-06",
+                "end": "2027-09-10"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.1.1"
+              ],
+              "topic_cn_original": "计算竖直实际距离并核对单位",
+              "textbook_candidate_pages": [
+                153,
+                156
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 80,
+              "week": "M32",
+              "A": {
+                "start": "2027-09-05",
+                "end": "2027-09-09"
+              },
+              "B": {
+                "start": "2027-09-06",
+                "end": "2027-09-10"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.2.1"
+              ],
+              "topic_cn_original": "以整数表示两类物品的比",
+              "textbook_candidate_pages": [
+                157,
+                160
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 81,
+              "week": "M33",
+              "A": {
+                "start": "2027-09-12",
+                "end": "2027-09-16"
+              },
+              "B": {
+                "start": "2027-09-13",
+                "end": "2027-09-17"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.2.1"
+              ],
+              "topic_cn_original": "约简比并检验等值关系",
+              "textbook_candidate_pages": [
+                157,
+                160
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 82,
+              "week": "M33",
+              "A": {
+                "start": "2027-09-12",
+                "end": "2027-09-16"
+              },
+              "B": {
+                "start": "2027-09-13",
+                "end": "2027-09-17"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.2.1"
+              ],
+              "topic_cn_original": "通过共同因数比较最简比",
+              "textbook_candidate_pages": [
+                157,
+                160
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 83,
+              "week": "M33",
+              "A": {
+                "start": "2027-09-12",
+                "end": "2027-09-16"
+              },
+              "B": {
+                "start": "2027-09-13",
+                "end": "2027-09-17"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.3.1"
+              ],
+              "topic_cn_original": "根据给定比与一项数量求另一项",
+              "textbook_candidate_pages": [
+                161,
+                164
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 84,
+              "week": "M34",
+              "A": {
+                "start": "2027-09-19",
+                "end": "2027-09-23"
+              },
+              "B": {
+                "start": "2027-09-20",
+                "end": "2027-09-24"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.3.1"
+              ],
+              "topic_cn_original": "根据比和总量分配两项数量",
+              "textbook_candidate_pages": [
+                161,
+                164
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 85,
+              "week": "M34",
+              "A": {
+                "start": "2027-09-19",
+                "end": "2027-09-23"
+              },
+              "B": {
+                "start": "2027-09-20",
+                "end": "2027-09-24"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.4.1"
+              ],
+              "topic_cn_original": "地图比例尺和坐标的生活情境",
+              "textbook_candidate_pages": [
+                165,
+                169
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 86,
+              "week": "M34",
+              "A": {
+                "start": "2027-09-19",
+                "end": "2027-09-23"
+              },
+              "B": {
+                "start": "2027-09-20",
+                "end": "2027-09-24"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.4.1"
+              ],
+              "topic_cn_original": "按比例配置材料的生活情境",
+              "textbook_candidate_pages": [
+                165,
+                169
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 87,
+              "week": "M35",
+              "A": {
+                "start": "2027-09-26",
+                "end": "2027-09-30"
+              },
+              "B": {
+                "start": "2027-09-27",
+                "end": "2027-10-01"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "7.4.1"
+              ],
+              "topic_cn_original": "比较两种比例解题方法并验算",
+              "textbook_candidate_pages": [
+                165,
+                170
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            }
+          ],
+          "base_sp_coverage": 4
+        },
+        {
+          "unit": 8,
+          "sessions": [
+            {
+              "draft_pdp": 88,
+              "week": "M35",
+              "A": {
+                "start": "2027-09-26",
+                "end": "2027-09-30"
+              },
+              "B": {
+                "start": "2027-09-27",
+                "end": "2027-10-01"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.1.1"
+              ],
+              "topic_cn_original": "依据45、90及180度与数量补全扇形图",
+              "textbook_candidate_pages": [
+                174,
+                177
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 89,
+              "week": "M36",
+              "A": {
+                "start": "2027-10-03",
+                "end": "2027-10-07"
+              },
+              "B": {
+                "start": "2027-10-04",
+                "end": "2027-10-08"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.1.1"
+              ],
+              "topic_cn_original": "从扇形图读取并解释数据",
+              "textbook_candidate_pages": [
+                174,
+                177
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 90,
+              "week": "M36",
+              "A": {
+                "start": "2027-10-03",
+                "end": "2027-10-07"
+              },
+              "B": {
+                "start": "2027-10-04",
+                "end": "2027-10-08"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.2.1"
+              ],
+              "topic_cn_original": "以生活例子说明可发生的事件",
+              "textbook_candidate_pages": [
+                178,
+                179
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 91,
+              "week": "M36",
+              "A": {
+                "start": "2027-10-03",
+                "end": "2027-10-07"
+              },
+              "B": {
+                "start": "2027-10-04",
+                "end": "2027-10-08"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.2.1"
+              ],
+              "topic_cn_original": "判断不可能发生的事件并说明理由",
+              "textbook_candidate_pages": [
+                178,
+                179
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 92,
+              "week": "M37",
+              "A": {
+                "start": "2027-10-10",
+                "end": "2027-10-14"
+              },
+              "B": {
+                "start": "2027-10-11",
+                "end": "2027-10-15"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.2.2"
+              ],
+              "topic_cn_original": "把事件归入不可能至肯定的等级",
+              "textbook_candidate_pages": [
+                180,
+                183
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 93,
+              "week": "M37",
+              "A": {
+                "start": "2027-10-10",
+                "end": "2027-10-14"
+              },
+              "B": {
+                "start": "2027-10-11",
+                "end": "2027-10-15"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.2.2"
+              ],
+              "topic_cn_original": "比较事件机会大小及相同机会",
+              "textbook_candidate_pages": [
+                180,
+                183
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 94,
+              "week": "M37",
+              "A": {
+                "start": "2027-10-10",
+                "end": "2027-10-14"
+              },
+              "B": {
+                "start": "2027-10-11",
+                "end": "2027-10-15"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.3.1"
+              ],
+              "topic_cn_original": "根据扇形图解决数量问题",
+              "textbook_candidate_pages": [
+                184,
+                188
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 95,
+              "week": "M38",
+              "A": {
+                "start": "2027-10-17",
+                "end": "2027-10-21"
+              },
+              "B": {
+                "start": "2027-10-18",
+                "end": "2027-10-22"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.3.1"
+              ],
+              "topic_cn_original": "解释机会大小的现实情境",
+              "textbook_candidate_pages": [
+                184,
+                188
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            },
+            {
+              "draft_pdp": 96,
+              "week": "M38",
+              "A": {
+                "start": "2027-10-17",
+                "end": "2027-10-21"
+              },
+              "B": {
+                "start": "2027-10-18",
+                "end": "2027-10-22"
+              },
+              "minutes": 60,
+              "sp_codes": [
+                "8.3.1"
+              ],
+              "topic_cn_original": "综合数据和可能性并检验推理",
+              "textbook_candidate_pages": [
+                184,
+                189
+              ],
+              "evidence_level": "DSKP scope and textbook TOC aligned; precise page footer verification pending"
+            }
+          ],
+          "base_sp_coverage": 4
+        }
+      ]
     }
   ]
 }
