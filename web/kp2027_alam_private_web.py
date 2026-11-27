@@ -285,7 +285,7 @@ def create_blueprint():
         if error is not None:return error
         try:items=five_p.catalog(config)
         except PilotUnavailable:return denied('Senarai PdP 5P belum tersedia.',503,'ALAM_5P_UNAVAILABLE')
-        return jsonify({'items':items,'catalog_mode':'rpt93','template_only':True})
+        return jsonify({'items':items,'catalog_mode':'rpt93','template_only':False})
 
     @bp.post('/api/kp2027/sk/tahun-1/alam-dan-manusia/5p/download')
     def download_5p():
@@ -293,7 +293,7 @@ def create_blueprint():
         if request.headers.get('Origin')!=ORIGIN:return denied('Permintaan mestilah daripada Web CikguLaju.',403,'ORIGIN_REQUIRED')
         if not request.is_json or not 0<(request.content_length or 0)<=1024:return denied('Pilihan PdP tidak sah.',400,'INVALID_REQUEST')
         payload=request.get_json(silent=True)
-        if not isinstance(payload,dict) or set(payload)!={'pdp','format'}:
+        if not isinstance(payload,dict) or not {'pdp','format'}.issubset(payload) or set(payload)-{'pdp','format'}-EXTRA_FIELDS:
             return denied('Pilihan 5P tidak sah.',400,'INVALID_SELECTION')
         pdp,fmt=payload['pdp'],payload['format']
         if type(pdp) is not int or not 1<=pdp<=93 or not isinstance(fmt,str) or fmt not in FORMATS:
@@ -305,8 +305,12 @@ def create_blueprint():
             return denied('Baki janaan tidak dapat disahkan.',503,'TRIAL_UNVERIFIED')
         if not paid and account['free_remaining']==0:
             return denied('10 janaan percuma telah habis. Aktifkan langganan.',403,'FREE_TRIAL_EXHAUSTED')
-        try:document=five_p.fetch(config,pdp,fmt)
-        except PilotUnavailable:return denied('Fail 5P tidak dapat disahkan.',503,'ALAM_5P_UNAVAILABLE')
+        try:
+            from web.kp2027_alam_5p_personalize import LayoutError
+            fields={key:payload[key] for key in EXTRA_FIELDS if key in payload}
+            document=five_p.render(config,pdp,fmt,fields)
+        except (TeacherFieldError,LayoutError) as exc:return denied(str(exc),400,'INVALID_TEACHER_FIELDS')
+        except (PilotUnavailable,OSError,RuntimeError,ValueError,KeyError,TypeError):return denied('Fail 5P tidak dapat disahkan.',503,'ALAM_5P_UNAVAILABLE')
         remaining=None
         if not paid:
             try:charged=authorize_rendered_document(account,account['telegram_user_id'],document,
