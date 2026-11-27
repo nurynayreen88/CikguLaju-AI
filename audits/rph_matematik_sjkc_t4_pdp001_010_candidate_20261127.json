@@ -1,0 +1,649 @@
+{
+  "status": "TEN_NEW_RPH_CONTENT_CANDIDATES_NOT_PUBLISHED",
+  "year": 4,
+  "subject": "Matematik SJKC",
+  "source": {
+    "rpt_path": "audits/rpt_2027_matematik_sjkc_t4_t6_layout_input_20261127.json",
+    "rpt_blob": "fb090b1d7c562ecb2b485ec2fe647aba265fd9ee",
+    "dskp_drive_id": "1PlpjBO35rc0C9eGj8IDMB74A5njPKhLm",
+    "dskp_printed_pages": [
+      32,
+      33
+    ],
+    "qualification": "Original Chinese lesson content; DSKP scope checked against actual file, full official SK/SP wording must be linked from verified source before final rendering. Candidate textbook page tags not individually verified."
+  },
+  "production_checkpoint": "095f4702159a317d6d490dcd613380d9f5e418dd",
+  "records": [
+    {
+      "draft_pdp": 1,
+      "unit": 1,
+      "week": "M01",
+      "dates": {
+        "A": {
+          "start": "2027-01-04",
+          "end": "2027-01-07"
+        },
+        "B": {
+          "start": "2027-01-04",
+          "end": "2027-01-08"
+        }
+      },
+      "minutes": 60,
+      "topic": "十万以内整数的读法",
+      "sk_code": "1.1",
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "scope": "读出文字数目及说出数字数目",
+      "objective": "读出并口述100 000以内的整数，正确使用万、千、百、十、个位。",
+      "success_criteria": "10张数字或文字卡中至少8张读写对应正确。",
+      "set_induction": "教师出示学校图书馆藏书数28 406；学生说出数字中各单位名称。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "数字卡接龙：教师示范从万位起读28 406；学生用数位板摆出数字并轮流读出。"
+        },
+        {
+          "number": 2,
+          "text": "配对寻宝：两人分别持数字卡与文字卡，如56 020与五万六千零二十，配对后互相解释零的读法。"
+        },
+        {
+          "number": 3,
+          "text": "听数挑战：教师读出五个数，学生在小白板写数字；交换作品核对，再独立完成5组转换。"
+        }
+      ],
+      "closure": "抽取两张卡让学生读出；归纳从高位读数及零的读法。",
+      "bbm": "数位板、数字与文字卡、小白板",
+      "assessment": "收集10题读写记录，按正确对应计分。",
+      "remedial": "用数位表逐格读四位数，再过渡到五位数。",
+      "enrichment": "比较含多个零的两个五位数读法，并说明何处读零。",
+      "emk": "语言、沟通",
+      "pak21": "配对学习、Think-Pair-Share",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "10张数字或文字卡中至少8张读写对应正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        1,
+        2
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 2,
+      "unit": 1,
+      "week": "M01",
+      "dates": {
+        "A": {
+          "start": "2027-01-04",
+          "end": "2027-01-07"
+        },
+        "B": {
+          "start": "2027-01-04",
+          "end": "2027-01-08"
+        }
+      },
+      "minutes": 60,
+      "topic": "含零整数的读写转换",
+      "sk_code": "1.1",
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "scope": "以数字和文字写出含零的数目",
+      "objective": "在数字与文字之间转换100 000以内含零的整数。",
+      "success_criteria": "8道转换题至少答对7道，含零的读写无遗漏。",
+      "set_induction": "教师写出40 005及40 050；学生比较读法并指出不同。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "空位侦探：学生用数字0卡填补数位表，将六万零八十、六万零八分别写成数字。"
+        },
+        {
+          "number": 2,
+          "text": "听写与复核：教师分发商店库存标签；小组轮流口述数字，让同伴写成文字，并用数位表核对。"
+        },
+        {
+          "number": 3,
+          "text": "纠错站：学生改正四张错误标签，再独立完成8道双向转换题。"
+        }
+      ],
+      "closure": "请学生用一句话解释连续空数位的处理。",
+      "bbm": "库存标签、数位表、纠错卡",
+      "assessment": "检查8题答案及含零读写。",
+      "remedial": "用颜色区分非零数位与空数位，口述后再书写。",
+      "enrichment": "设计三个容易混淆的含零整数，并给同伴出题。",
+      "emk": "语言、诚信",
+      "pak21": "同伴互评、Gallery Walk",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8道转换题至少答对7道，含零的读写无遗漏。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        2,
+        3
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 3,
+      "unit": 1,
+      "week": "M02",
+      "dates": {
+        "A": {
+          "start": "2027-01-10",
+          "end": "2027-01-14"
+        },
+        "B": {
+          "start": "2027-01-11",
+          "end": "2027-01-15"
+        }
+      },
+      "minutes": 60,
+      "topic": "数位、位值及展开式",
+      "sk_code": "1.1",
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "scope": "讲述数位、数值并根据数位与数值分析数目",
+      "objective": "说出指定数字的数位和数值，并用展开式分析五位数。",
+      "success_criteria": "6题数位与数值及4题展开式中至少答对8题。",
+      "set_induction": "出示35 352，学生比较两个3和两个5的数值。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "数位银行：学生把35 352分解为万、千、百、十、个位筹码，解释每个数字的价值。"
+        },
+        {
+          "number": 2,
+          "text": "拼数工坊：小组领取30 000、4 000、500、0、8等数值卡，组成34 508并交换不同组合。"
+        },
+        {
+          "number": 3,
+          "text": "个人检测：从6个指定数字说出数位、数值，再写4个整数的展开式。"
+        }
+      ],
+      "closure": "学生说明数位与数值的区别，教师纠正把数字本身当成数值的错误。",
+      "bbm": "数位板、数值卡、筹码",
+      "assessment": "记录10题得分。",
+      "remedial": "使用三位数筹码逐步增加至五位。",
+      "enrichment": "同一数值卡组合逆向构造符合指定条件的数。",
+      "emk": "科学与工艺、创造力",
+      "pak21": "合作学习、操作探究",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "6题数位与数值及4题展开式中至少答对8题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        4,
+        5
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 4,
+      "unit": 1,
+      "week": "M02",
+      "dates": {
+        "A": {
+          "start": "2027-01-10",
+          "end": "2027-01-14"
+        },
+        "B": {
+          "start": "2027-01-11",
+          "end": "2027-01-15"
+        }
+      },
+      "minutes": 60,
+      "topic": "比较、升降排列及补数列",
+      "sk_code": "1.1",
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "scope": "比较数值、顺序逆序排列及完成数列",
+      "objective": "比较并排序100 000以内的整数，补全顺序与逆序数列。",
+      "success_criteria": "比较、排序、补数共10题至少答对8题。",
+      "set_induction": "学生比较45 098与45 890，指出第一个不同的数位。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "大小排队：四人持不同数字卡，按从小到大排队并解释比较依据。"
+        },
+        {
+          "number": 2,
+          "text": "数轴挑战：学生在标有20 000至21 000的数轴上放置给定整数，完成顺序与逆序排列。"
+        },
+        {
+          "number": 3,
+          "text": "独立闯关：完成4道比较、2道排序和4道补数题，圈出判断依据。"
+        }
+      ],
+      "closure": "归纳比较时从最高数位开始。",
+      "bbm": "数轴、整数卡、任务纸",
+      "assessment": "按10题作答检查比较、排序及补数。",
+      "remedial": "先比较不同万位，再比较万位相同的数。",
+      "enrichment": "构造五个指定万位的数并设计逆序缺项题。",
+      "emk": "语言、推理",
+      "pak21": "合作排序、同伴讲解",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "比较、排序、补数共10题至少答对8题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        6,
+        8
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 5,
+      "unit": 1,
+      "week": "M02",
+      "dates": {
+        "A": {
+          "start": "2027-01-10",
+          "end": "2027-01-14"
+        },
+        "B": {
+          "start": "2027-01-11",
+          "end": "2027-01-15"
+        }
+      },
+      "minutes": 60,
+      "topic": "用整除规律识别奇偶",
+      "sk_code": "1.2",
+      "sp_codes": [
+        "1.2.1"
+      ],
+      "scope": "讲述偶数和奇数的特征",
+      "objective": "利用配对及个位特征解释偶数和奇数。",
+      "success_criteria": "正确判断10个整数中的至少8个，并口述两类数的个位特征。",
+      "set_induction": "用12和13枚棋子两两配对，学生观察是否剩余。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "配对实验：小组将8、9、14、15枚棋子成对排列，记录有无剩余。"
+        },
+        {
+          "number": 2,
+          "text": "个位观察：学生从24 316、58 109等数字卡归纳末位0、2、4、6、8与1、3、5、7、9的特征。"
+        },
+        {
+          "number": 3,
+          "text": "理由检测：学生判断10个数的奇偶性，其中两题须解释理由。"
+        }
+      ],
+      "closure": "总结偶数可两两配对而不剩，奇数剩一个。",
+      "bbm": "棋子、整数卡、思考表",
+      "assessment": "10题判断及两题口述理由。",
+      "remedial": "使用20以内实物配对建立概念。",
+      "enrichment": "预测两个奇数相加的奇偶性，并用实物验证。",
+      "emk": "科学与工艺、沟通",
+      "pak21": "观察探究、Think-Pair-Share",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "正确判断10个整数中的至少8个，并口述两类数的个位特征。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        9,
+        9
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 6,
+      "unit": 1,
+      "week": "M03",
+      "dates": {
+        "A": {
+          "start": "2027-01-17",
+          "end": "2027-01-21"
+        },
+        "B": {
+          "start": "2027-01-18",
+          "end": "2027-01-22"
+        }
+      },
+      "minutes": 60,
+      "topic": "按个位特征分类整数",
+      "sk_code": "1.2",
+      "sp_codes": [
+        "1.2.2"
+      ],
+      "scope": "进行偶数和奇数的分类",
+      "objective": "按个位特征把100 000以内的整数分类为偶数或奇数。",
+      "success_criteria": "将12张数字卡分类，至少10张正确。",
+      "set_induction": "模拟运动会号码牌，学生判断怎样分成单双号队伍。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "分类接力：学生把不同位数的号码牌放到奇数或偶数区并解释。"
+        },
+        {
+          "number": 2,
+          "text": "找错分类：小组互换分类表，找出故意放错的三张号码牌。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：将12个混合整数写入双栏表，检查每个个位数字。"
+        }
+      ],
+      "closure": "学生列举一个含零的偶数和一个含零的奇数。",
+      "bbm": "号码牌、双栏分类表",
+      "assessment": "核对12张卡的分类结果。",
+      "remedial": "提供个位特征提示卡，先分类两位数。",
+      "enrichment": "按指定千位和奇偶性构造四个不同整数。",
+      "emk": "合作、语言",
+      "pak21": "分类接力、互评",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "将12张数字卡分类，至少10张正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        9,
+        9
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 7,
+      "unit": 1,
+      "week": "M03",
+      "dates": {
+        "A": {
+          "start": "2027-01-17",
+          "end": "2027-01-21"
+        },
+        "B": {
+          "start": "2027-01-18",
+          "end": "2027-01-22"
+        }
+      },
+      "minutes": 60,
+      "topic": "以已知数量为基准估算",
+      "sk_code": "1.3",
+      "sp_codes": [
+        "1.3.1"
+      ],
+      "scope": "根据参照物估算数量并确定答案的合理性",
+      "objective": "借助已知数量的参照物估算物品数量，并用合理范围检查答案。",
+      "success_criteria": "4项估算任务至少3项给出合理估值和参照依据。",
+      "set_induction": "教师出示一小袋100粒珠子的照片及一大袋同类珠子，学生猜测数量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "建立参照：学生观察100粒珠子的大小和占用空间，讨论如何估计相同珠子的总数。"
+        },
+        {
+          "number": 2,
+          "text": "估算站：根据10张纸厚度、100粒珠子及1000个小格的参照图，估算三个未知数量并写出倍数依据。"
+        },
+        {
+          "number": 3,
+          "text": "合理性检验：比较两种估计结果，用实际数量或教师预设合理范围核对，独立完成第四题。"
+        }
+      ],
+      "closure": "说明估算并非随意猜测，必须有参照和理由。",
+      "bbm": "实物、参照照片、估算记录表",
+      "assessment": "按参照选择、计算理由及合理范围检查4题。",
+      "remedial": "提供已知组数的图片及整数倍提示。",
+      "enrichment": "为同一数量选择两种参照并比较估算误差。",
+      "emk": "科学与工艺、批判思维",
+      "pak21": "实物探究、小组讨论",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "4项估算任务至少3项给出合理估值和参照依据。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        10,
+        10
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 8,
+      "unit": 1,
+      "week": "M03",
+      "dates": {
+        "A": {
+          "start": "2027-01-17",
+          "end": "2027-01-21"
+        },
+        "B": {
+          "start": "2027-01-18",
+          "end": "2027-01-22"
+        }
+      },
+      "minutes": 60,
+      "topic": "用数轴与进位规则取近似数",
+      "sk_code": "1.4",
+      "sp_codes": [
+        "1.4.1"
+      ],
+      "scope": "找出整数至万位的近似值",
+      "objective": "按指定数位找出整数至万位的近似值，并说明舍入依据。",
+      "success_criteria": "10道近似值题至少答对8道，其中包含至十、百、千、万位。",
+      "set_induction": "将46 800放在40 000与50 000之间的数轴上，学生判断较接近哪一端。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "数轴定位：用数轴找出23 476接近的十位、百位及千位整数。"
+        },
+        {
+          "number": 2,
+          "text": "舍入转盘：小组抽取数目卡与指定数位卡，标出判断位后写出近似值。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成10题，涵盖临界值、进位及至万位近似值。"
+        }
+      ],
+      "closure": "归纳判断位小于5舍去、5或以上进位，并说明适用的指定数位。",
+      "bbm": "数轴、数目卡、数位转盘",
+      "assessment": "批改10题，标记判断位错误。",
+      "remedial": "用数轴演示相邻整十数，再逐渐扩大数位。",
+      "enrichment": "列出可近似为50 000的最小和最大整数。",
+      "emk": "推理、语言",
+      "pak21": "同伴讲解、游戏学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "10道近似值题至少答对8道，其中包含至十、百、千、万位。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        11,
+        13
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 9,
+      "unit": 1,
+      "week": "M04",
+      "dates": {
+        "A": {
+          "start": "2027-01-24",
+          "end": "2027-01-28"
+        },
+        "B": {
+          "start": "2027-01-25",
+          "end": "2027-01-29"
+        }
+      },
+      "minutes": 60,
+      "topic": "辨别递增递减的步长",
+      "sk_code": "1.5",
+      "sp_codes": [
+        "1.5.1"
+      ],
+      "scope": "确认顺序逆序以1至10、100、1000、10000为步长的规律",
+      "objective": "找出顺序或逆序数列相邻两项的步长，并用语言描述规律。",
+      "success_criteria": "10组数列至少8组正确写出方向和步长。",
+      "set_induction": "展示23 000、24 000、25 000，学生说明每次变化。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "步长侦探：用相邻数相减辨认步长，判断递增或递减。"
+        },
+        {
+          "number": 2,
+          "text": "数列卡分类：小组按1至10、100、1000、10000步长及方向分类数列卡，轮流讲解理由。"
+        },
+        {
+          "number": 3,
+          "text": "个人检测：辨认10组数列（每组不超过6项），写出方向与步长。"
+        }
+      ],
+      "closure": "教师强调先比较相邻两项，再检查规律是否一致。",
+      "bbm": "数列卡、差值表、小白板",
+      "assessment": "按方向与步长两项均正确计分。",
+      "remedial": "在数轴上画等距跳跃箭头，先用1、2、5为步长。",
+      "enrichment": "写出一组递减千位步长数列并让同伴辨认。",
+      "emk": "推理、创造力",
+      "pak21": "分类讨论、同伴解释",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "10组数列至少8组正确写出方向和步长。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        14,
+        15
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 10,
+      "unit": 1,
+      "week": "M04",
+      "dates": {
+        "A": {
+          "start": "2027-01-24",
+          "end": "2027-01-28"
+        },
+        "B": {
+          "start": "2027-01-25",
+          "end": "2027-01-29"
+        }
+      },
+      "minutes": 60,
+      "topic": "填补并构造整数数列",
+      "sk_code": "1.5",
+      "sp_codes": [
+        "1.5.2"
+      ],
+      "scope": "完成顺序逆序有规律数列",
+      "objective": "根据指定步长补全顺序及逆序数列，保持规律一致。",
+      "success_criteria": "8组含缺项的数列至少答对7组。",
+      "set_induction": "展示40 000、30 000、空格、10 000，学生推断缺项及原因。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "缺项拼图：小组把数字卡填入缺一项的数列，再用相邻差验证。"
+        },
+        {
+          "number": 2,
+          "text": "双向挑战：学生从中间已知项向前及向后补齐数列，涵盖1至10、100、1000、10000步长。"
+        },
+        {
+          "number": 3,
+          "text": "独立任务：补全8组不超过6项的数列，写出步长并自检。"
+        }
+      ],
+      "closure": "同伴分享从中间项往两端推算的方法。",
+      "bbm": "缺项卡、数轴、练习纸",
+      "assessment": "每组所有缺项正确才计一分。",
+      "remedial": "先只缺最后一项，使用带箭头的数轴。",
+      "enrichment": "创建含两个缺项的逆序数列供同伴解答。",
+      "emk": "逻辑推理、创造力",
+      "pak21": "拼图学习、同伴互评",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8组含缺项的数列至少答对7组。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        14,
+        16
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    }
+  ],
+  "release": false
+}

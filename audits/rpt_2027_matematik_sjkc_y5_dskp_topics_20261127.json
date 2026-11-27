@@ -1,0 +1,1889 @@
+{
+  "status": "ALL_8_UNITS_DSKP_TOPIC_DRAFT_TEXTBOOK_NOT_VERIFIED",
+  "year": 5,
+  "parent": {
+    "path": "audits/rpt_2027_matematik_sjkc_t4_t6_sp_session_draft_20261127.json",
+    "sha": "420ab6fe9300b86a8dc1870bfbafcd8136b1c2d0"
+  },
+  "dskp_source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-5-SJKC.pdf",
+  "textbook_candidates": [
+    "https://anyflip.com/lvbkv/ayph/basic",
+    "https://anyflip.com/viihi/sezs/basic",
+    "https://online.fliphtml5.com/izabd/wyvc/"
+  ],
+  "notes": [
+    "DSKP printed pages 30–33 inspected visually. Original session topics, not verbatim standard wording. Reallocated two extra sessions to place value/order and mixed operations. Book candidates returned HTTP 403 or no extracted text, so page ranges null and textbook order unconfirmed. All draft IDs and dates provisional; no publication.",
+    "27 Nov continuation: actual DSKP standards tables visually checked for printed pp.36–37,40–41,44–45,48–50,54,58,62. Original Chinese focus topics, not official full standard wording. Some multi-scope codes grouped within provisional 60-minute sessions (not final time approval). All 96 sessions / 72 base codes present; textbook listing rmthb/yrbg returned 403, no fabricated printed textbook pages. Existing production unchanged."
+  ],
+  "unit1": [
+    {
+      "draft_pdp": 1,
+      "week": "M01",
+      "A": {
+        "start": "2027-01-04",
+        "end": "2027-01-07"
+      },
+      "B": {
+        "start": "2027-01-04",
+        "end": "2027-01-08"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "topic_cn_original": "百万以内数词、数字与含零数的读写",
+      "dskp_printed_page": 30,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 2,
+      "week": "M01",
+      "A": {
+        "start": "2027-01-04",
+        "end": "2027-01-07"
+      },
+      "B": {
+        "start": "2027-01-04",
+        "end": "2027-01-08"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "topic_cn_original": "利用数位表拆分六位数",
+      "dskp_printed_page": 30,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 3,
+      "week": "M02",
+      "A": {
+        "start": "2027-01-10",
+        "end": "2027-01-14"
+      },
+      "B": {
+        "start": "2027-01-11",
+        "end": "2027-01-15"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "topic_cn_original": "数轴上的比较、排序及填数",
+      "dskp_printed_page": 30,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 4,
+      "week": "M02",
+      "A": {
+        "start": "2027-01-10",
+        "end": "2027-01-14"
+      },
+      "B": {
+        "start": "2027-01-11",
+        "end": "2027-01-15"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.2.1"
+      ],
+      "topic_cn_original": "筛选百以内只具有两个因数的数",
+      "dskp_printed_page": 30,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 5,
+      "week": "M02",
+      "A": {
+        "start": "2027-01-10",
+        "end": "2027-01-14"
+      },
+      "B": {
+        "start": "2027-01-11",
+        "end": "2027-01-15"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.3.1"
+      ],
+      "topic_cn_original": "以参照数量估计并检验估计值",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 6,
+      "week": "M03",
+      "A": {
+        "start": "2027-01-17",
+        "end": "2027-01-21"
+      },
+      "B": {
+        "start": "2027-01-18",
+        "end": "2027-01-22"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.4.1"
+      ],
+      "topic_cn_original": "用数轴解释取近似值的界限",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 7,
+      "week": "M03",
+      "A": {
+        "start": "2027-01-17",
+        "end": "2027-01-21"
+      },
+      "B": {
+        "start": "2027-01-18",
+        "end": "2027-01-22"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.4.2"
+      ],
+      "topic_cn_original": "从近似值推断原数的可能范围",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 8,
+      "week": "M03",
+      "A": {
+        "start": "2027-01-17",
+        "end": "2027-01-21"
+      },
+      "B": {
+        "start": "2027-01-18",
+        "end": "2027-01-22"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.5.1"
+      ],
+      "topic_cn_original": "辨别顺数和倒数的步长",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 9,
+      "week": "M04",
+      "A": {
+        "start": "2027-01-24",
+        "end": "2027-01-28"
+      },
+      "B": {
+        "start": "2027-01-25",
+        "end": "2027-01-29"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.5.2"
+      ],
+      "topic_cn_original": "补全及构造规律数列",
+      "dskp_printed_page": 31,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 10,
+      "week": "M04",
+      "A": {
+        "start": "2027-01-24",
+        "end": "2027-01-28"
+      },
+      "B": {
+        "start": "2027-01-25",
+        "end": "2027-01-29"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.6.1"
+      ],
+      "topic_cn_original": "合计最多五项六位数以内的数量",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 11,
+      "week": "M04",
+      "A": {
+        "start": "2027-01-24",
+        "end": "2027-01-28"
+      },
+      "B": {
+        "start": "2027-01-25",
+        "end": "2027-01-29"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.6.2"
+      ],
+      "topic_cn_original": "用拆分法处理两次连续扣减",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 12,
+      "week": "M05",
+      "A": {
+        "start": "2027-01-31",
+        "end": "2027-02-04"
+      },
+      "B": {
+        "start": "2027-02-01",
+        "end": "2027-02-05"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.6.3"
+      ],
+      "topic_cn_original": "多位数乘两位数及整百整千",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 13,
+      "week": "M05",
+      "A": {
+        "start": "2027-01-31",
+        "end": "2027-02-04"
+      },
+      "B": {
+        "start": "2027-02-01",
+        "end": "2027-02-05"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.6.4"
+      ],
+      "topic_cn_original": "用笔算处理两位数及整百整千除数",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 14,
+      "week": "M07",
+      "A": {
+        "start": "2027-02-14",
+        "end": "2027-02-18"
+      },
+      "B": {
+        "start": "2027-02-15",
+        "end": "2027-02-19"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.7.1"
+      ],
+      "topic_cn_original": "比较加乘、减乘算式的括号作用",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 15,
+      "week": "M07",
+      "A": {
+        "start": "2027-02-14",
+        "end": "2027-02-18"
+      },
+      "B": {
+        "start": "2027-02-15",
+        "end": "2027-02-19"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.7.1"
+      ],
+      "topic_cn_original": "比较加除、减除算式的运算顺序",
+      "dskp_printed_page": 32,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 16,
+      "week": "M07",
+      "A": {
+        "start": "2027-02-14",
+        "end": "2027-02-18"
+      },
+      "B": {
+        "start": "2027-02-15",
+        "end": "2027-02-19"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.8.1"
+      ],
+      "topic_cn_original": "从积与一个因数反推缺失的数",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 17,
+      "week": "M08",
+      "A": {
+        "start": "2027-02-21",
+        "end": "2027-02-25"
+      },
+      "B": {
+        "start": "2027-02-22",
+        "end": "2027-02-26"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.8.2"
+      ],
+      "topic_cn_original": "用逆运算处理除式中的缺失项",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 18,
+      "week": "M08",
+      "A": {
+        "start": "2027-02-21",
+        "end": "2027-02-25"
+      },
+      "B": {
+        "start": "2027-02-22",
+        "end": "2027-02-26"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.9.1"
+      ],
+      "topic_cn_original": "解释百万以内人口及物品数量资料",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 19,
+      "week": "M08",
+      "A": {
+        "start": "2027-02-21",
+        "end": "2027-02-25"
+      },
+      "B": {
+        "start": "2027-02-22",
+        "end": "2027-02-26"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.9.2"
+      ],
+      "topic_cn_original": "设计并检验多步骤的收支算式",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    },
+    {
+      "draft_pdp": 20,
+      "week": "M09",
+      "A": {
+        "start": "2027-02-28",
+        "end": "2027-03-04"
+      },
+      "B": {
+        "start": "2027-03-01",
+        "end": "2027-03-05"
+      },
+      "minutes": 60,
+      "sp_codes": [
+        "1.9.3"
+      ],
+      "topic_cn_original": "用未知量表达乘除情境并求值",
+      "dskp_printed_page": 33,
+      "textbook_pages": null
+    }
+  ],
+  "release": false,
+  "additional_units": [
+    {
+      "unit": 2,
+      "base_sp_coverage": 8,
+      "sessions": [
+        {
+          "draft_pdp": 21,
+          "week": "M09",
+          "A": {
+            "start": "2027-02-28",
+            "end": "2027-03-04"
+          },
+          "B": {
+            "start": "2027-03-01",
+            "end": "2027-03-05"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.1.1"
+          ],
+          "topic_cn_original": "用面积模型求整数的几分之几",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 22,
+          "week": "M10",
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.1.1"
+          ],
+          "topic_cn_original": "用方格表示两个真分数的积",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 23,
+          "week": "M10",
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.1.1"
+          ],
+          "topic_cn_original": "把带分数转成假分数后相乘并约简",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 24,
+          "week": "M10",
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.2.1"
+          ],
+          "topic_cn_original": "在数轴上判断三位小数的近似值",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 25,
+          "week": "M11",
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.2.2"
+          ],
+          "topic_cn_original": "按运算顺序合并和扣除小数",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 26,
+          "week": "M11",
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.2.3"
+          ],
+          "topic_cn_original": "用位值表解释小数乘两位数及整百整千",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 27,
+          "week": "M11",
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.2.4"
+          ],
+          "topic_cn_original": "用逆运算检查小数除法及商的小数位",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 28,
+          "week": "M12",
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.3.1"
+          ],
+          "topic_cn_original": "在带分数与百分数之间转换",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 29,
+          "week": "M12",
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.3.2"
+          ],
+          "topic_cn_original": "根据百分数求数量及由数量求百分数（含超过百分之百）",
+          "dskp_printed_page": 36,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 30,
+          "week": "M12",
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.4.1"
+          ],
+          "topic_cn_original": "用模型分析分数与小数的实际数量关系",
+          "dskp_printed_page": 37,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 31,
+          "week": "M13",
+          "A": {
+            "start": "2027-04-04",
+            "end": "2027-04-08"
+          },
+          "B": {
+            "start": "2027-04-05",
+            "end": "2027-04-09"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "2.4.1"
+          ],
+          "topic_cn_original": "用百分数比较生活数据并检验答案",
+          "dskp_printed_page": 37,
+          "textbook_pages": null
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "base_sp_coverage": 10,
+      "sessions": [
+        {
+          "draft_pdp": 32,
+          "week": "M13",
+          "A": {
+            "start": "2027-04-04",
+            "end": "2027-04-08"
+          },
+          "B": {
+            "start": "2027-04-05",
+            "end": "2027-04-09"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.1.1"
+          ],
+          "topic_cn_original": "模拟汇总三笔以内的款项",
+          "dskp_printed_page": 40,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 33,
+          "week": "M14",
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.1.2"
+          ],
+          "topic_cn_original": "计算多次支出后的余额",
+          "dskp_printed_page": 40,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 34,
+          "week": "M14",
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.1.3"
+          ],
+          "topic_cn_original": "计算批量采购的总价",
+          "dskp_printed_page": 40,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 35,
+          "week": "M14",
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.1.4"
+          ],
+          "topic_cn_original": "将款项平均分配并验算",
+          "dskp_printed_page": 40,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 36,
+          "week": "M15",
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.2.1"
+          ],
+          "topic_cn_original": "合并固定费用和按数量计算的费用",
+          "dskp_printed_page": 40,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 37,
+          "week": "M15",
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.2.1"
+          ],
+          "topic_cn_original": "从预算扣减批量采购金额",
+          "dskp_printed_page": 40,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 38,
+          "week": "M15",
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.2.1"
+          ],
+          "topic_cn_original": "按份分配费用后计算加减与括号的作用",
+          "dskp_printed_page": 40,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 39,
+          "week": "M16",
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.3.1"
+          ],
+          "topic_cn_original": "区分储备资金与投资及可能的价值变化",
+          "dskp_printed_page": 41,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 40,
+          "week": "M16",
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.3.2"
+          ],
+          "topic_cn_original": "以示意图比较单利与复利",
+          "dskp_printed_page": 41,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 41,
+          "week": "M16",
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.4.1"
+          ],
+          "topic_cn_original": "辨认借款、偿还义务与利息",
+          "dskp_printed_page": 41,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 42,
+          "week": "M17",
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.4.2"
+          ],
+          "topic_cn_original": "比较现金购买和贷款购买的总支出",
+          "dskp_printed_page": 41,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 43,
+          "week": "M17",
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "3.5.1"
+          ],
+          "topic_cn_original": "制定百万令吉范围内的收支方案并解释选择",
+          "dskp_printed_page": 41,
+          "textbook_pages": null
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "base_sp_coverage": 6,
+      "sessions": [
+        {
+          "draft_pdp": 44,
+          "week": "M17",
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.1.1"
+          ],
+          "topic_cn_original": "用时间轴计算跨日的小时数",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 45,
+          "week": "M20",
+          "A": {
+            "start": "2027-06-06",
+            "end": "2027-06-10"
+          },
+          "B": {
+            "start": "2027-06-07",
+            "end": "2027-06-11"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.1.1"
+          ],
+          "topic_cn_original": "用月历计算两个日期相距的天数",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 46,
+          "week": "M20",
+          "A": {
+            "start": "2027-06-06",
+            "end": "2027-06-10"
+          },
+          "B": {
+            "start": "2027-06-07",
+            "end": "2027-06-11"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.1.1"
+          ],
+          "topic_cn_original": "在跨年及闰年情境中计算相隔天数",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 47,
+          "week": "M21",
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.2.1"
+          ],
+          "topic_cn_original": "分数小时与天转换成分钟与小时",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 48,
+          "week": "M21",
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.2.1"
+          ],
+          "topic_cn_original": "分数年与年代转换成月与年",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 49,
+          "week": "M21",
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.2.1"
+          ],
+          "topic_cn_original": "分数世纪转换成年代及年",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 50,
+          "week": "M22",
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.2.2"
+          ],
+          "topic_cn_original": "小数小时与天转换成分钟与小时",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 51,
+          "week": "M22",
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.2.2"
+          ],
+          "topic_cn_original": "小数年与年代转换成月与年",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 52,
+          "week": "M22",
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.2.2"
+          ],
+          "topic_cn_original": "小数世纪转换成年代及年",
+          "dskp_printed_page": 44,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 53,
+          "week": "M23",
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.3.1"
+          ],
+          "topic_cn_original": "用分数计算小时、分钟及天的增减",
+          "dskp_printed_page": 45,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 54,
+          "week": "M23",
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.3.1"
+          ],
+          "topic_cn_original": "计算含分数的年、月及年代增减",
+          "dskp_printed_page": 45,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 55,
+          "week": "M23",
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.3.1"
+          ],
+          "topic_cn_original": "计算含分数的世纪、年代及年增减",
+          "dskp_printed_page": 45,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 56,
+          "week": "M24",
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.3.2"
+          ],
+          "topic_cn_original": "用小数计算小时、分钟及天的增减",
+          "dskp_printed_page": 45,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 57,
+          "week": "M24",
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.3.2"
+          ],
+          "topic_cn_original": "用小数计算年、月、年代及世纪的增减",
+          "dskp_printed_page": 45,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 58,
+          "week": "M24",
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "4.4.1"
+          ],
+          "topic_cn_original": "根据日历与行程表选择时间计算策略",
+          "dskp_printed_page": 45,
+          "textbook_pages": null
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "base_sp_coverage": 17,
+      "sessions": [
+        {
+          "draft_pdp": 59,
+          "week": "M25",
+          "A": {
+            "start": "2027-07-11",
+            "end": "2027-07-15"
+          },
+          "B": {
+            "start": "2027-07-12",
+            "end": "2027-07-16"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.1"
+          ],
+          "topic_cn_original": "以刻度尺解释毫米和厘米的小数换算",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 60,
+          "week": "M25",
+          "A": {
+            "start": "2027-07-11",
+            "end": "2027-07-15"
+          },
+          "B": {
+            "start": "2027-07-12",
+            "end": "2027-07-16"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.1"
+          ],
+          "topic_cn_original": "用米尺解释厘米和米的小数换算",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 61,
+          "week": "M26",
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.1"
+          ],
+          "topic_cn_original": "根据路线数据在米和公里之间换算小数",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 62,
+          "week": "M26",
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.2"
+          ],
+          "topic_cn_original": "用分数表示毫米和厘米的关系",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 63,
+          "week": "M26",
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.2"
+          ],
+          "topic_cn_original": "用分数表示厘米和米的关系",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 64,
+          "week": "M27",
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.2"
+          ],
+          "topic_cn_original": "用分数表示米和公里的关系",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 65,
+          "week": "M27",
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.3"
+          ],
+          "topic_cn_original": "合计含分数和小数的多段长度",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 66,
+          "week": "M27",
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.4"
+          ],
+          "topic_cn_original": "统一长度单位后计算剩余距离",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 67,
+          "week": "M28",
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.5"
+          ],
+          "topic_cn_original": "用倍数关系计算绳索及路段长度",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 68,
+          "week": "M28",
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.1.6"
+          ],
+          "topic_cn_original": "将含分数或小数的长度等分",
+          "dskp_printed_page": 48,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 69,
+          "week": "M28",
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.2.1"
+          ],
+          "topic_cn_original": "用秤读数比较克与公斤的分数及小数表示",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 70,
+          "week": "M29",
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.2.2"
+          ],
+          "topic_cn_original": "合计最多三份不同质量的材料",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 71,
+          "week": "M29",
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.2.3"
+          ],
+          "topic_cn_original": "求多次取用材料后的剩余质量",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 72,
+          "week": "M29",
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.2.4"
+          ],
+          "topic_cn_original": "计算多批材料的总质量",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 73,
+          "week": "M30",
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.2.5"
+          ],
+          "topic_cn_original": "计算等量分装后的每份质量",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 74,
+          "week": "M30",
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.3.1"
+          ],
+          "topic_cn_original": "用量杯建立升和毫升的分数及小数关系",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 75,
+          "week": "M30",
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.3.2"
+          ],
+          "topic_cn_original": "合计多瓶不同容量的液体",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 76,
+          "week": "M31",
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.3.3"
+          ],
+          "topic_cn_original": "计算多次倒出液体后的剩余量",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 77,
+          "week": "M31",
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.3.4"
+          ],
+          "topic_cn_original": "按容器数量推算液体总量",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 78,
+          "week": "M31",
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.3.5"
+          ],
+          "topic_cn_original": "按份分配液体并核对单位",
+          "dskp_printed_page": 49,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 79,
+          "week": "M32",
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "5.4.1"
+          ],
+          "topic_cn_original": "综合长度、质量及容量的实际测量任务",
+          "dskp_printed_page": 50,
+          "textbook_pages": null
+        }
+      ]
+    },
+    {
+      "unit": 6,
+      "base_sp_coverage": 6,
+      "sessions": [
+        {
+          "draft_pdp": 80,
+          "week": "M32",
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "6.1.1"
+          ],
+          "topic_cn_original": "用边、角、对称轴与对角线比较正多边形",
+          "dskp_printed_page": 54,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 81,
+          "week": "M32",
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "6.2.1"
+          ],
+          "topic_cn_original": "用量角器测量三至八边正多边形的内角",
+          "dskp_printed_page": 54,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 82,
+          "week": "M33",
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "6.3.1"
+          ],
+          "topic_cn_original": "沿外边界求两个图形拼成的周长",
+          "dskp_printed_page": 54,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 83,
+          "week": "M33",
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "6.3.2"
+          ],
+          "topic_cn_original": "拆分含矩形和三角形的组合图求面积",
+          "dskp_printed_page": 54,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 84,
+          "week": "M33",
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "6.4.1"
+          ],
+          "topic_cn_original": "拆分两个长方体或正方体组成的模型求体积",
+          "dskp_printed_page": 54,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 85,
+          "week": "M34",
+          "A": {
+            "start": "2027-09-19",
+            "end": "2027-09-23"
+          },
+          "B": {
+            "start": "2027-09-20",
+            "end": "2027-09-24"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "6.5.1"
+          ],
+          "topic_cn_original": "为平面设计选择周长或面积计算方法",
+          "dskp_printed_page": 54,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 86,
+          "week": "M34",
+          "A": {
+            "start": "2027-09-19",
+            "end": "2027-09-23"
+          },
+          "B": {
+            "start": "2027-09-20",
+            "end": "2027-09-24"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "6.5.1"
+          ],
+          "topic_cn_original": "根据立体模型解决体积应用题并检查答案",
+          "dskp_printed_page": 54,
+          "textbook_pages": null
+        }
+      ]
+    },
+    {
+      "unit": 7,
+      "base_sp_coverage": 4,
+      "sessions": [
+        {
+          "draft_pdp": 87,
+          "week": "M35",
+          "A": {
+            "start": "2027-09-26",
+            "end": "2027-09-30"
+          },
+          "B": {
+            "start": "2027-09-27",
+            "end": "2027-10-01"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "7.1.1"
+          ],
+          "topic_cn_original": "根据第一象限两点的位置求横向及纵向距离",
+          "dskp_printed_page": 58,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 88,
+          "week": "M35",
+          "A": {
+            "start": "2027-09-26",
+            "end": "2027-09-30"
+          },
+          "B": {
+            "start": "2027-09-27",
+            "end": "2027-10-01"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "7.2.1"
+          ],
+          "topic_cn_original": "用双色实物表示部分与部分之比",
+          "dskp_printed_page": 58,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 89,
+          "week": "M36",
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "7.2.1"
+          ],
+          "topic_cn_original": "用条形图表示部分与总量之比",
+          "dskp_printed_page": 58,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 90,
+          "week": "M36",
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "7.2.1"
+          ],
+          "topic_cn_original": "统一单位后表示总量与部分之比",
+          "dskp_printed_page": 58,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 91,
+          "week": "M36",
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "7.3.1"
+          ],
+          "topic_cn_original": "通过单位量求比例中的未知数",
+          "dskp_printed_page": 58,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 92,
+          "week": "M37",
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "7.4.1"
+          ],
+          "topic_cn_original": "用坐标图和比例表处理生活问题",
+          "dskp_printed_page": 58,
+          "textbook_pages": null
+        }
+      ]
+    },
+    {
+      "unit": 8,
+      "base_sp_coverage": 3,
+      "sessions": [
+        {
+          "draft_pdp": 93,
+          "week": "M37",
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "8.1.1"
+          ],
+          "topic_cn_original": "读取扇形统计图并比较各组数据",
+          "dskp_printed_page": 62,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 94,
+          "week": "M37",
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "8.2.1"
+          ],
+          "topic_cn_original": "从未分组的数据找出众数与中位数",
+          "dskp_printed_page": 62,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 95,
+          "week": "M38",
+          "A": {
+            "start": "2027-10-17",
+            "end": "2027-10-21"
+          },
+          "B": {
+            "start": "2027-10-18",
+            "end": "2027-10-22"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "8.2.1"
+          ],
+          "topic_cn_original": "根据不同统计图求平均数和极差",
+          "dskp_printed_page": 62,
+          "textbook_pages": null
+        },
+        {
+          "draft_pdp": 96,
+          "week": "M38",
+          "A": {
+            "start": "2027-10-17",
+            "end": "2027-10-21"
+          },
+          "B": {
+            "start": "2027-10-18",
+            "end": "2027-10-22"
+          },
+          "minutes": 60,
+          "sp_codes": [
+            "8.3.1"
+          ],
+          "topic_cn_original": "分析调查数据并用统计量支持结论",
+          "dskp_printed_page": 62,
+          "textbook_pages": null
+        }
+      ]
+    }
+  ]
+}

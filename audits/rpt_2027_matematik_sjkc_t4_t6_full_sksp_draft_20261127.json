@@ -1,0 +1,42 @@
+{
+  "status": "DRAFT_FULL_SKSP_RENDERED_LAYOUT_AND_ACADEMIC_HOLD",
+  "source": "User's Google Drive DSKP PDFs, exact text extracted locally from standards-table columns; code set comparison exact for all years. Continuation of Y4 4.5.1 across pp48–49 retained.",
+  "sets": [
+    {
+      "year": 4,
+      "drive_id": "1PlpjBO35rc0C9eGj8IDMB74A5njPKhLm",
+      "sk": 41,
+      "sp": 85,
+      "numbered_pdp": 96,
+      "pdf_pages": 10
+    },
+    {
+      "year": 5,
+      "drive_id": "1y6RC-CumTqgmMIdMTXXtw4_M4_h8Vyhq",
+      "sk": 38,
+      "sp": 72,
+      "numbered_pdp": 96,
+      "pdf_pages": 11
+    },
+    {
+      "year": 6,
+      "drive_id": "1dMLgOsc-grs4fR2WSvLNDk45Dtqh_yY_",
+      "sk": 25,
+      "sp": 38,
+      "numbered_pdp": 96,
+      "pdf_pages": 11
+    }
+  ],
+  "local_draft_zip": {
+    "name": "CIKGULAJU_RPT_Matematik_SJKC_T4_T6_DRAF_SKSP.zip",
+    "sha256": "5155ed88b809e1e9675a63eb0dd4f43a226cbb37cc0002a6d3742b8124330120",
+    "bytes": 842459
+  },
+  "qa": "All 288 numbered PdP present once in rendered PDFs. Contact sheets inspected; table headers visually present but weekly merged cell continuation across page boundaries and short last teaching pages require pagination repair. ZIP stored in chat, not installed on repository/production.",
+  "hold": [
+    "Verify extracted wording and subclauses visually against source; code coverage alone does not validate topics or exact transcription.",
+    "Year 5 textbook pages unresolved, Year 4/6 candidate pages not individually verified.",
+    "Official personalized cover, actual calendar exceptions, RPH linkage and page layout still pending."
+  ],
+  "release": false
+}

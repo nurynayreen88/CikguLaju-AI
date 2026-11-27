@@ -1,0 +1,26 @@
+name: SJKC upper mathematics original cover reference QA
+on:
+  pull_request:
+    paths:
+      - 'tools/build_sjkc_upper_math_cover_qa_20261127.py'
+      - '.github/workflows/sjkc-upper-math-cover-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pymupdf
+      - run: python tools/build_sjkc_upper_math_cover_qa_20261127.py --out "$RUNNER_TEMP/sjkc-cover"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sjkc-y3-official-cover-reference
+          path: ${{ runner.temp }}/sjkc-cover/
+          if-no-files-found: error
+          retention-days: 7

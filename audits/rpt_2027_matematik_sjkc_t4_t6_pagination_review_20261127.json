@@ -1,0 +1,43 @@
+{
+  "status": "DRAFT_PAGINATION_CHECKED_RELEASE_HOLD",
+  "source_draft": "CIKGULAJU_RPT_Matematik_SJKC_T4_T6_DRAF_SKSP.zip",
+  "artifact": {
+    "name": "CIKGULAJU_RPT_Matematik_SJKC_T4_T6_DRAF_KEMAS.zip",
+    "bytes": 865447,
+    "sha256": "1d0cf31524dc1368b8fe2fa917dc118956c4188f8a3d5f06db5a778e5e132d34"
+  },
+  "sets": [
+    {
+      "year": 4,
+      "pages": 10,
+      "teaching_pages": 8,
+      "weekly_groups": 35,
+      "rows": 101,
+      "numbered_pdp": 96
+    },
+    {
+      "year": 5,
+      "pages": 12,
+      "teaching_pages": 10,
+      "weekly_groups": 35,
+      "rows": 101,
+      "numbered_pdp": 96
+    },
+    {
+      "year": 6,
+      "pages": 11,
+      "teaching_pages": 9,
+      "weekly_groups": 35,
+      "rows": 101,
+      "numbered_pdp": 96
+    }
+  ],
+  "checks": "Existing draft table cells preserved exactly; measured previous PDF row heights, split editable tables only at complete weekly boundaries; verified each rendered page contains its exact planned week labels, ordered lesson IDs, repeated header and expected page count. All 33 pages inspected via contact sheets; not native Word verification or full-size visual sign-off.",
+  "holds": [
+    "Official profile-linked cover",
+    "Textbook page verification, particularly Y5",
+    "Academic scope review, calendar exceptions and RPH linkage"
+  ],
+  "release": false,
+  "production_changes": false
+}

@@ -1,0 +1,5008 @@
+{
+  "status": "PROVISIONAL_SP_SESSION_MAPPING_NOT_READY",
+  "parent": {
+    "path": "audits/rpt_2027_matematik_sjkc_t4_t6_candidate_capacity_20261127.json",
+    "sha": "3e5fd5201686e6acf11d7633f00f47e5ca503862"
+  },
+  "method": "Manual provisional per-SP session weights based on previously indexed codes, NOT academically verified. Revised unit budgets for Y4 and Y5 to avoid dropping standards and provisionally allow multi-part topics. Repeated SP codes are phase placeholders, not distinct verified content or production RPH IDs. Full Chinese SK/SP wording, subclause scope, textbook printed pages, RPH mapping and calendar exceptions must be verified before release. No changes to published RPT.",
+  "plans": [
+    {
+      "year": 4,
+      "units": [
+        {
+          "unit": 1,
+          "proposed_hours": 22,
+          "base_sp_count": 19
+        },
+        {
+          "unit": 2,
+          "proposed_hours": 14,
+          "base_sp_count": 12
+        },
+        {
+          "unit": 3,
+          "proposed_hours": 17,
+          "base_sp_count": 17
+        },
+        {
+          "unit": 4,
+          "proposed_hours": 10,
+          "base_sp_count": 8
+        },
+        {
+          "unit": 5,
+          "proposed_hours": 15,
+          "base_sp_count": 14
+        },
+        {
+          "unit": 6,
+          "proposed_hours": 8,
+          "base_sp_count": 7
+        },
+        {
+          "unit": 7,
+          "proposed_hours": 6,
+          "base_sp_count": 5
+        },
+        {
+          "unit": 8,
+          "proposed_hours": 4,
+          "base_sp_count": 3
+        }
+      ],
+      "source_dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-4-SJKC.pdf",
+      "source_rpt_2026": "https://www.scribd.com/document/985486036/2026-%E5%9B%9B%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92",
+      "textbook_candidate": "https://anyflip.com/zehqn/akxt/basic",
+      "textbook_status": "Identified by indexed title, direct full page access failed; no page numbers asserted",
+      "schedule": [
+        {
+          "week": "M01",
+          "number": 1,
+          "A": {
+            "start": "2027-01-04",
+            "end": "2027-01-07"
+          },
+          "B": {
+            "start": "2027-01-04",
+            "end": "2027-01-08"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 1,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 2,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M02",
+          "number": 2,
+          "A": {
+            "start": "2027-01-10",
+            "end": "2027-01-14"
+          },
+          "B": {
+            "start": "2027-01-11",
+            "end": "2027-01-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 3,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 4,
+              "unit": 1,
+              "sk": "1.2",
+              "sp": "1.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 5,
+              "unit": 1,
+              "sk": "1.2",
+              "sp": "1.2.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M03",
+          "number": 3,
+          "A": {
+            "start": "2027-01-17",
+            "end": "2027-01-21"
+          },
+          "B": {
+            "start": "2027-01-18",
+            "end": "2027-01-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 6,
+              "unit": 1,
+              "sk": "1.3",
+              "sp": "1.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 7,
+              "unit": 1,
+              "sk": "1.4",
+              "sp": "1.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 8,
+              "unit": 1,
+              "sk": "1.5",
+              "sp": "1.5.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M04",
+          "number": 4,
+          "A": {
+            "start": "2027-01-24",
+            "end": "2027-01-28"
+          },
+          "B": {
+            "start": "2027-01-25",
+            "end": "2027-01-29"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 9,
+              "unit": 1,
+              "sk": "1.5",
+              "sp": "1.5.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 10,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 11,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M05",
+          "number": 5,
+          "A": {
+            "start": "2027-01-31",
+            "end": "2027-02-04"
+          },
+          "B": {
+            "start": "2027-02-01",
+            "end": "2027-02-05"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 12,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 13,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M07",
+          "number": 7,
+          "A": {
+            "start": "2027-02-14",
+            "end": "2027-02-18"
+          },
+          "B": {
+            "start": "2027-02-15",
+            "end": "2027-02-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 14,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 15,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.5",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 16,
+              "unit": 1,
+              "sk": "1.7",
+              "sp": "1.7.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M08",
+          "number": 8,
+          "A": {
+            "start": "2027-02-21",
+            "end": "2027-02-25"
+          },
+          "B": {
+            "start": "2027-02-22",
+            "end": "2027-02-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 17,
+              "unit": 1,
+              "sk": "1.7",
+              "sp": "1.7.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 18,
+              "unit": 1,
+              "sk": "1.8",
+              "sp": "1.8.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 19,
+              "unit": 1,
+              "sk": "1.8",
+              "sp": "1.8.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M09",
+          "number": 9,
+          "A": {
+            "start": "2027-02-28",
+            "end": "2027-03-04"
+          },
+          "B": {
+            "start": "2027-03-01",
+            "end": "2027-03-05"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 20,
+              "unit": 1,
+              "sk": "1.9",
+              "sp": "1.9.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 21,
+              "unit": 1,
+              "sk": "1.9",
+              "sp": "1.9.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 22,
+              "unit": 1,
+              "sk": "1.9",
+              "sp": "1.9.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M10",
+          "number": 10,
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            },
+            {
+              "draft_pdp": 23,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 24,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M11",
+          "number": 11,
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 25,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.3",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 26,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.3",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 27,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M12",
+          "number": 12,
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 28,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.5",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 29,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 30,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M13",
+          "number": 13,
+          "A": {
+            "start": "2027-04-04",
+            "end": "2027-04-08"
+          },
+          "B": {
+            "start": "2027-04-05",
+            "end": "2027-04-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 31,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 32,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 33,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M14",
+          "number": 14,
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 34,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 35,
+              "unit": 2,
+              "sk": "2.4",
+              "sp": "2.4.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 36,
+              "unit": 2,
+              "sk": "2.4",
+              "sp": "2.4.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M15",
+          "number": 15,
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            },
+            {
+              "draft_pdp": 37,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 38,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M16",
+          "number": 16,
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 39,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 40,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 41,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M17",
+          "number": 17,
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 42,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 43,
+              "unit": 3,
+              "sk": "3.3",
+              "sp": "3.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 44,
+              "unit": 3,
+              "sk": "3.3",
+              "sp": "3.3.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M20",
+          "number": 20,
+          "A": {
+            "start": "2027-06-06",
+            "end": "2027-06-10"
+          },
+          "B": {
+            "start": "2027-06-07",
+            "end": "2027-06-11"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 45,
+              "unit": 3,
+              "sk": "3.3",
+              "sp": "3.3.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 46,
+              "unit": 3,
+              "sk": "3.4",
+              "sp": "3.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M21",
+          "number": 21,
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 47,
+              "unit": 3,
+              "sk": "3.4",
+              "sp": "3.4.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 48,
+              "unit": 3,
+              "sk": "3.4",
+              "sp": "3.4.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 49,
+              "unit": 3,
+              "sk": "3.5",
+              "sp": "3.5.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M22",
+          "number": 22,
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 50,
+              "unit": 3,
+              "sk": "3.5",
+              "sp": "3.5.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 51,
+              "unit": 3,
+              "sk": "3.6",
+              "sp": "3.6.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 52,
+              "unit": 3,
+              "sk": "3.6",
+              "sp": "3.6.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M23",
+          "number": 23,
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 53,
+              "unit": 3,
+              "sk": "3.7",
+              "sp": "3.7.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 54,
+              "unit": 4,
+              "sk": "4.1",
+              "sp": "4.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 55,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M24",
+          "number": 24,
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 56,
+              "unit": 4,
+              "sk": "4.3",
+              "sp": "4.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 57,
+              "unit": 4,
+              "sk": "4.4",
+              "sp": "4.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 58,
+              "unit": 4,
+              "sk": "4.4",
+              "sp": "4.4.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M25",
+          "number": 25,
+          "A": {
+            "start": "2027-07-11",
+            "end": "2027-07-15"
+          },
+          "B": {
+            "start": "2027-07-12",
+            "end": "2027-07-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 59,
+              "unit": 4,
+              "sk": "4.5",
+              "sp": "4.5.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 60,
+              "unit": 4,
+              "sk": "4.5",
+              "sp": "4.5.2",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 61,
+              "unit": 4,
+              "sk": "4.5",
+              "sp": "4.5.2",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M26",
+          "number": 26,
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 62,
+              "unit": 4,
+              "sk": "4.6",
+              "sp": "4.6.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 63,
+              "unit": 4,
+              "sk": "4.6",
+              "sp": "4.6.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 4,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M27",
+          "number": 27,
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 64,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 65,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 66,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M28",
+          "number": 28,
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 67,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 68,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.5",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 69,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.6",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M29",
+          "number": 29,
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 70,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.7",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 71,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.8",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 72,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.9",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M30",
+          "number": 30,
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 73,
+              "unit": 5,
+              "sk": "5.2",
+              "sp": "5.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 74,
+              "unit": 5,
+              "sk": "5.2",
+              "sp": "5.2.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 75,
+              "unit": 5,
+              "sk": "5.3",
+              "sp": "5.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M31",
+          "number": 31,
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 76,
+              "unit": 5,
+              "sk": "5.3",
+              "sp": "5.3.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 77,
+              "unit": 5,
+              "sk": "5.4",
+              "sp": "5.4.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 78,
+              "unit": 5,
+              "sk": "5.4",
+              "sp": "5.4.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M32",
+          "number": 32,
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 79,
+              "unit": 6,
+              "sk": "6.1",
+              "sp": "6.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 80,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 81,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M33",
+          "number": 33,
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 82,
+              "unit": 6,
+              "sk": "6.3",
+              "sp": "6.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 83,
+              "unit": 6,
+              "sk": "6.3",
+              "sp": "6.3.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 84,
+              "unit": 6,
+              "sk": "6.4",
+              "sp": "6.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M34",
+          "number": 34,
+          "A": {
+            "start": "2027-09-19",
+            "end": "2027-09-23"
+          },
+          "B": {
+            "start": "2027-09-20",
+            "end": "2027-09-24"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 85,
+              "unit": 6,
+              "sk": "6.5",
+              "sp": "6.5.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 86,
+              "unit": 6,
+              "sk": "6.5",
+              "sp": "6.5.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 6,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M35",
+          "number": 35,
+          "A": {
+            "start": "2027-09-26",
+            "end": "2027-09-30"
+          },
+          "B": {
+            "start": "2027-09-27",
+            "end": "2027-10-01"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 87,
+              "unit": 7,
+              "sk": "7.1",
+              "sp": "7.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 88,
+              "unit": 7,
+              "sk": "7.1",
+              "sp": "7.1.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M36",
+          "number": 36,
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 89,
+              "unit": 7,
+              "sk": "7.2",
+              "sp": "7.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 90,
+              "unit": 7,
+              "sk": "7.3",
+              "sp": "7.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 91,
+              "unit": 7,
+              "sk": "7.4",
+              "sp": "7.4.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M37",
+          "number": 37,
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 92,
+              "unit": 7,
+              "sk": "7.4",
+              "sp": "7.4.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 93,
+              "unit": 8,
+              "sk": "8.1",
+              "sp": "8.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 94,
+              "unit": 8,
+              "sk": "8.1",
+              "sp": "8.1.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M38",
+          "number": 38,
+          "A": {
+            "start": "2027-10-17",
+            "end": "2027-10-21"
+          },
+          "B": {
+            "start": "2027-10-18",
+            "end": "2027-10-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 95,
+              "unit": 8,
+              "sk": "8.2",
+              "sp": "8.2.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 96,
+              "unit": 8,
+              "sk": "8.2",
+              "sp": "8.2.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 8,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            }
+          ]
+        }
+      ],
+      "coverage_codes": 85,
+      "instruction_hours": 96,
+      "reserve_hours": 5,
+      "release": false
+    },
+    {
+      "year": 5,
+      "units": [
+        {
+          "unit": 1,
+          "proposed_hours": 20,
+          "base_sp_count": 18
+        },
+        {
+          "unit": 2,
+          "proposed_hours": 11,
+          "base_sp_count": 8
+        },
+        {
+          "unit": 3,
+          "proposed_hours": 12,
+          "base_sp_count": 10
+        },
+        {
+          "unit": 4,
+          "proposed_hours": 15,
+          "base_sp_count": 6
+        },
+        {
+          "unit": 5,
+          "proposed_hours": 21,
+          "base_sp_count": 17
+        },
+        {
+          "unit": 6,
+          "proposed_hours": 7,
+          "base_sp_count": 6
+        },
+        {
+          "unit": 7,
+          "proposed_hours": 6,
+          "base_sp_count": 4
+        },
+        {
+          "unit": 8,
+          "proposed_hours": 4,
+          "base_sp_count": 3
+        }
+      ],
+      "source_dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-5-SJKC.pdf",
+      "source_rpt_2026": "https://www.scribd.com/document/985486037/2026-%E4%BA%94%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92",
+      "textbook_candidate": "https://anyflip.com/viihi/sezs/basic",
+      "textbook_status": "Identified by indexed title, direct full page access failed; no page numbers asserted",
+      "schedule": [
+        {
+          "week": "M01",
+          "number": 1,
+          "A": {
+            "start": "2027-01-04",
+            "end": "2027-01-07"
+          },
+          "B": {
+            "start": "2027-01-04",
+            "end": "2027-01-08"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 1,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 2,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M02",
+          "number": 2,
+          "A": {
+            "start": "2027-01-10",
+            "end": "2027-01-14"
+          },
+          "B": {
+            "start": "2027-01-11",
+            "end": "2027-01-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 3,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 4,
+              "unit": 1,
+              "sk": "1.2",
+              "sp": "1.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 5,
+              "unit": 1,
+              "sk": "1.3",
+              "sp": "1.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M03",
+          "number": 3,
+          "A": {
+            "start": "2027-01-17",
+            "end": "2027-01-21"
+          },
+          "B": {
+            "start": "2027-01-18",
+            "end": "2027-01-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 6,
+              "unit": 1,
+              "sk": "1.4",
+              "sp": "1.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 7,
+              "unit": 1,
+              "sk": "1.4",
+              "sp": "1.4.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 8,
+              "unit": 1,
+              "sk": "1.5",
+              "sp": "1.5.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M04",
+          "number": 4,
+          "A": {
+            "start": "2027-01-24",
+            "end": "2027-01-28"
+          },
+          "B": {
+            "start": "2027-01-25",
+            "end": "2027-01-29"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 9,
+              "unit": 1,
+              "sk": "1.5",
+              "sp": "1.5.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 10,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 11,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M05",
+          "number": 5,
+          "A": {
+            "start": "2027-01-31",
+            "end": "2027-02-04"
+          },
+          "B": {
+            "start": "2027-02-01",
+            "end": "2027-02-05"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 12,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 13,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M07",
+          "number": 7,
+          "A": {
+            "start": "2027-02-14",
+            "end": "2027-02-18"
+          },
+          "B": {
+            "start": "2027-02-15",
+            "end": "2027-02-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 14,
+              "unit": 1,
+              "sk": "1.6",
+              "sp": "1.6.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 15,
+              "unit": 1,
+              "sk": "1.7",
+              "sp": "1.7.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 16,
+              "unit": 1,
+              "sk": "1.8",
+              "sp": "1.8.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M08",
+          "number": 8,
+          "A": {
+            "start": "2027-02-21",
+            "end": "2027-02-25"
+          },
+          "B": {
+            "start": "2027-02-22",
+            "end": "2027-02-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 17,
+              "unit": 1,
+              "sk": "1.8",
+              "sp": "1.8.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 18,
+              "unit": 1,
+              "sk": "1.9",
+              "sp": "1.9.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 19,
+              "unit": 1,
+              "sk": "1.9",
+              "sp": "1.9.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M09",
+          "number": 9,
+          "A": {
+            "start": "2027-02-28",
+            "end": "2027-03-04"
+          },
+          "B": {
+            "start": "2027-03-01",
+            "end": "2027-03-05"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 20,
+              "unit": 1,
+              "sk": "1.9",
+              "sp": "1.9.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 1,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            },
+            {
+              "draft_pdp": 21,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M10",
+          "number": 10,
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 22,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 23,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 24,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M11",
+          "number": 11,
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 25,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 26,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 27,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M12",
+          "number": 12,
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 28,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 29,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 30,
+              "unit": 2,
+              "sk": "2.4",
+              "sp": "2.4.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M13",
+          "number": 13,
+          "A": {
+            "start": "2027-04-04",
+            "end": "2027-04-08"
+          },
+          "B": {
+            "start": "2027-04-05",
+            "end": "2027-04-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 31,
+              "unit": 2,
+              "sk": "2.4",
+              "sp": "2.4.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 2,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            },
+            {
+              "draft_pdp": 32,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M14",
+          "number": 14,
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 33,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 34,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 35,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M15",
+          "number": 15,
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 36,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 37,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 38,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M16",
+          "number": 16,
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 39,
+              "unit": 3,
+              "sk": "3.3",
+              "sp": "3.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 40,
+              "unit": 3,
+              "sk": "3.3",
+              "sp": "3.3.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 41,
+              "unit": 3,
+              "sk": "3.4",
+              "sp": "3.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M17",
+          "number": 17,
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 42,
+              "unit": 3,
+              "sk": "3.4",
+              "sp": "3.4.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 43,
+              "unit": 3,
+              "sk": "3.5",
+              "sp": "3.5.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 44,
+              "unit": 4,
+              "sk": "4.1",
+              "sp": "4.1.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M20",
+          "number": 20,
+          "A": {
+            "start": "2027-06-06",
+            "end": "2027-06-10"
+          },
+          "B": {
+            "start": "2027-06-07",
+            "end": "2027-06-11"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 45,
+              "unit": 4,
+              "sk": "4.1",
+              "sp": "4.1.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 46,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M21",
+          "number": 21,
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 47,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 48,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 49,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.2",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M22",
+          "number": 22,
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 50,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.2",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 51,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.2",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 52,
+              "unit": 4,
+              "sk": "4.3",
+              "sp": "4.3.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M23",
+          "number": 23,
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 53,
+              "unit": 4,
+              "sk": "4.3",
+              "sp": "4.3.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 54,
+              "unit": 4,
+              "sk": "4.3",
+              "sp": "4.3.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 55,
+              "unit": 4,
+              "sk": "4.3",
+              "sp": "4.3.2",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M24",
+          "number": 24,
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 56,
+              "unit": 4,
+              "sk": "4.3",
+              "sp": "4.3.2",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 57,
+              "unit": 4,
+              "sk": "4.4",
+              "sp": "4.4.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 58,
+              "unit": 4,
+              "sk": "4.4",
+              "sp": "4.4.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M25",
+          "number": 25,
+          "A": {
+            "start": "2027-07-11",
+            "end": "2027-07-15"
+          },
+          "B": {
+            "start": "2027-07-12",
+            "end": "2027-07-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            },
+            {
+              "draft_pdp": 59,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 60,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M26",
+          "number": 26,
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 61,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 62,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.2",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 63,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.2",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M27",
+          "number": 27,
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 64,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.2",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 65,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 66,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M28",
+          "number": 28,
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 67,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.5",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 68,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.6",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 69,
+              "unit": 5,
+              "sk": "5.2",
+              "sp": "5.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M29",
+          "number": 29,
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 70,
+              "unit": 5,
+              "sk": "5.2",
+              "sp": "5.2.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 71,
+              "unit": 5,
+              "sk": "5.2",
+              "sp": "5.2.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 72,
+              "unit": 5,
+              "sk": "5.2",
+              "sp": "5.2.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M30",
+          "number": 30,
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 73,
+              "unit": 5,
+              "sk": "5.2",
+              "sp": "5.2.5",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 74,
+              "unit": 5,
+              "sk": "5.3",
+              "sp": "5.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 75,
+              "unit": 5,
+              "sk": "5.3",
+              "sp": "5.3.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M31",
+          "number": 31,
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 76,
+              "unit": 5,
+              "sk": "5.3",
+              "sp": "5.3.3",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 77,
+              "unit": 5,
+              "sk": "5.3",
+              "sp": "5.3.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 78,
+              "unit": 5,
+              "sk": "5.3",
+              "sp": "5.3.5",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M32",
+          "number": 32,
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 79,
+              "unit": 5,
+              "sk": "5.4",
+              "sp": "5.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 80,
+              "unit": 6,
+              "sk": "6.1",
+              "sp": "6.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 81,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M33",
+          "number": 33,
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 82,
+              "unit": 6,
+              "sk": "6.3",
+              "sp": "6.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 83,
+              "unit": 6,
+              "sk": "6.3",
+              "sp": "6.3.2",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 84,
+              "unit": 6,
+              "sk": "6.4",
+              "sp": "6.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M34",
+          "number": 34,
+          "A": {
+            "start": "2027-09-19",
+            "end": "2027-09-23"
+          },
+          "B": {
+            "start": "2027-09-20",
+            "end": "2027-09-24"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 85,
+              "unit": 6,
+              "sk": "6.5",
+              "sp": "6.5.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 86,
+              "unit": 6,
+              "sk": "6.5",
+              "sp": "6.5.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 6,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M35",
+          "number": 35,
+          "A": {
+            "start": "2027-09-26",
+            "end": "2027-09-30"
+          },
+          "B": {
+            "start": "2027-09-27",
+            "end": "2027-10-01"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 87,
+              "unit": 7,
+              "sk": "7.1",
+              "sp": "7.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 88,
+              "unit": 7,
+              "sk": "7.2",
+              "sp": "7.2.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M36",
+          "number": 36,
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 89,
+              "unit": 7,
+              "sk": "7.2",
+              "sp": "7.2.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 90,
+              "unit": 7,
+              "sk": "7.2",
+              "sp": "7.2.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 91,
+              "unit": 7,
+              "sk": "7.3",
+              "sp": "7.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M37",
+          "number": 37,
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 92,
+              "unit": 7,
+              "sk": "7.4",
+              "sp": "7.4.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 93,
+              "unit": 8,
+              "sk": "8.1",
+              "sp": "8.1.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 94,
+              "unit": 8,
+              "sk": "8.2",
+              "sp": "8.2.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M38",
+          "number": 38,
+          "A": {
+            "start": "2027-10-17",
+            "end": "2027-10-21"
+          },
+          "B": {
+            "start": "2027-10-18",
+            "end": "2027-10-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 95,
+              "unit": 8,
+              "sk": "8.3",
+              "sp": "8.3.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 96,
+              "unit": 8,
+              "sk": "8.3",
+              "sp": "8.3.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 8,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            }
+          ]
+        }
+      ],
+      "coverage_codes": 72,
+      "instruction_hours": 96,
+      "reserve_hours": 5,
+      "release": false
+    },
+    {
+      "year": 6,
+      "units": [
+        {
+          "unit": 1,
+          "proposed_hours": 15,
+          "base_sp_count": 8
+        },
+        {
+          "unit": 2,
+          "proposed_hours": 18,
+          "base_sp_count": 8
+        },
+        {
+          "unit": 3,
+          "proposed_hours": 12,
+          "base_sp_count": 5
+        },
+        {
+          "unit": 4,
+          "proposed_hours": 8,
+          "base_sp_count": 3
+        },
+        {
+          "unit": 5,
+          "proposed_hours": 9,
+          "base_sp_count": 1
+        },
+        {
+          "unit": 6,
+          "proposed_hours": 15,
+          "base_sp_count": 5
+        },
+        {
+          "unit": 7,
+          "proposed_hours": 10,
+          "base_sp_count": 4
+        },
+        {
+          "unit": 8,
+          "proposed_hours": 9,
+          "base_sp_count": 4
+        }
+      ],
+      "source_dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-6-SJKC.pdf",
+      "source_rpt_2026": "https://www.scribd.com/document/985486035/2026-%E5%85%AD%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92",
+      "textbook_candidate": "https://anyflip.com/vwwcl/eruy/basic",
+      "textbook_status": "Identified by indexed title, direct full page access failed; no page numbers asserted",
+      "schedule": [
+        {
+          "week": "M01",
+          "number": 1,
+          "A": {
+            "start": "2027-01-04",
+            "end": "2027-01-07"
+          },
+          "B": {
+            "start": "2027-01-04",
+            "end": "2027-01-08"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 1,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 2,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M02",
+          "number": 2,
+          "A": {
+            "start": "2027-01-10",
+            "end": "2027-01-14"
+          },
+          "B": {
+            "start": "2027-01-11",
+            "end": "2027-01-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 3,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.2",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 4,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.2",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 5,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.3",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M03",
+          "number": 3,
+          "A": {
+            "start": "2027-01-17",
+            "end": "2027-01-21"
+          },
+          "B": {
+            "start": "2027-01-18",
+            "end": "2027-01-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 6,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.3",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 7,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.4",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 8,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.5",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M04",
+          "number": 4,
+          "A": {
+            "start": "2027-01-24",
+            "end": "2027-01-28"
+          },
+          "B": {
+            "start": "2027-01-25",
+            "end": "2027-01-29"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 9,
+              "unit": 1,
+              "sk": "1.1",
+              "sp": "1.1.5",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 10,
+              "unit": 1,
+              "sk": "1.2",
+              "sp": "1.2.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 11,
+              "unit": 1,
+              "sk": "1.2",
+              "sp": "1.2.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M05",
+          "number": 5,
+          "A": {
+            "start": "2027-01-31",
+            "end": "2027-02-04"
+          },
+          "B": {
+            "start": "2027-02-01",
+            "end": "2027-02-05"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 12,
+              "unit": 1,
+              "sk": "1.3",
+              "sp": "1.3.1",
+              "phase": 1,
+              "phase_count": 1,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 13,
+              "unit": 1,
+              "sk": "1.4",
+              "sp": "1.4.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M07",
+          "number": 7,
+          "A": {
+            "start": "2027-02-14",
+            "end": "2027-02-18"
+          },
+          "B": {
+            "start": "2027-02-15",
+            "end": "2027-02-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 14,
+              "unit": 1,
+              "sk": "1.4",
+              "sp": "1.4.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 15,
+              "unit": 1,
+              "sk": "1.4",
+              "sp": "1.4.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 1,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M08",
+          "number": 8,
+          "A": {
+            "start": "2027-02-21",
+            "end": "2027-02-25"
+          },
+          "B": {
+            "start": "2027-02-22",
+            "end": "2027-02-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 16,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 17,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 18,
+              "unit": 2,
+              "sk": "2.1",
+              "sp": "2.1.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M09",
+          "number": 9,
+          "A": {
+            "start": "2027-02-28",
+            "end": "2027-03-04"
+          },
+          "B": {
+            "start": "2027-03-01",
+            "end": "2027-03-05"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 19,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 20,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 21,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.2",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M10",
+          "number": 10,
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 22,
+              "unit": 2,
+              "sk": "2.2",
+              "sp": "2.2.2",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 23,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 24,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M11",
+          "number": 11,
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 25,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.2",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 26,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.2",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 27,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.3",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M12",
+          "number": 12,
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 28,
+              "unit": 2,
+              "sk": "2.3",
+              "sp": "2.3.3",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 29,
+              "unit": 2,
+              "sk": "2.4",
+              "sp": "2.4.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 30,
+              "unit": 2,
+              "sk": "2.4",
+              "sp": "2.4.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M13",
+          "number": 13,
+          "A": {
+            "start": "2027-04-04",
+            "end": "2027-04-08"
+          },
+          "B": {
+            "start": "2027-04-05",
+            "end": "2027-04-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 31,
+              "unit": 2,
+              "sk": "2.5",
+              "sp": "2.5.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 32,
+              "unit": 2,
+              "sk": "2.5",
+              "sp": "2.5.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 33,
+              "unit": 2,
+              "sk": "2.5",
+              "sp": "2.5.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M14",
+          "number": 14,
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            },
+            {
+              "draft_pdp": 34,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 35,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M15",
+          "number": 15,
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 36,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.2",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 37,
+              "unit": 3,
+              "sk": "3.1",
+              "sp": "3.1.2",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 38,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M16",
+          "number": 16,
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 39,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 40,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.2",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 41,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.2",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M17",
+          "number": 17,
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 42,
+              "unit": 3,
+              "sk": "3.2",
+              "sp": "3.2.2",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 43,
+              "unit": 3,
+              "sk": "3.3",
+              "sp": "3.3.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 44,
+              "unit": 3,
+              "sk": "3.3",
+              "sp": "3.3.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M20",
+          "number": 20,
+          "A": {
+            "start": "2027-06-06",
+            "end": "2027-06-10"
+          },
+          "B": {
+            "start": "2027-06-07",
+            "end": "2027-06-11"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 45,
+              "unit": 3,
+              "sk": "3.3",
+              "sp": "3.3.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 46,
+              "unit": 4,
+              "sk": "4.1",
+              "sp": "4.1.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M21",
+          "number": 21,
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 47,
+              "unit": 4,
+              "sk": "4.1",
+              "sp": "4.1.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 48,
+              "unit": 4,
+              "sk": "4.1",
+              "sp": "4.1.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 49,
+              "unit": 4,
+              "sk": "4.1",
+              "sp": "4.1.2",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M22",
+          "number": 22,
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 50,
+              "unit": 4,
+              "sk": "4.1",
+              "sp": "4.1.2",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 51,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 52,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M23",
+          "number": 23,
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 53,
+              "unit": 4,
+              "sk": "4.2",
+              "sp": "4.2.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 4,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            },
+            {
+              "draft_pdp": 54,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 1,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M24",
+          "number": 24,
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 55,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 2,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 56,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 3,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 57,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 4,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M25",
+          "number": 25,
+          "A": {
+            "start": "2027-07-11",
+            "end": "2027-07-15"
+          },
+          "B": {
+            "start": "2027-07-12",
+            "end": "2027-07-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 58,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 5,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 59,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 6,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 60,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 7,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M26",
+          "number": 26,
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 61,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 8,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 62,
+              "unit": 5,
+              "sk": "5.1",
+              "sp": "5.1.1",
+              "phase": 9,
+              "phase_count": 9,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 63,
+              "unit": 6,
+              "sk": "6.1",
+              "sp": "6.1.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M27",
+          "number": 27,
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 64,
+              "unit": 6,
+              "sk": "6.1",
+              "sp": "6.1.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 65,
+              "unit": 6,
+              "sk": "6.1",
+              "sp": "6.1.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 66,
+              "unit": 6,
+              "sk": "6.1",
+              "sp": "6.1.2",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M28",
+          "number": 28,
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 67,
+              "unit": 6,
+              "sk": "6.1",
+              "sp": "6.1.2",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 68,
+              "unit": 6,
+              "sk": "6.1",
+              "sp": "6.1.2",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 69,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M29",
+          "number": 29,
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 70,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 71,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 72,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.2",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M30",
+          "number": 30,
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 73,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.2",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 74,
+              "unit": 6,
+              "sk": "6.2",
+              "sp": "6.2.2",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 75,
+              "unit": 6,
+              "sk": "6.3",
+              "sp": "6.3.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M31",
+          "number": 31,
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 76,
+              "unit": 6,
+              "sk": "6.3",
+              "sp": "6.3.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 77,
+              "unit": 6,
+              "sk": "6.3",
+              "sp": "6.3.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 6,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M32",
+          "number": 32,
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 78,
+              "unit": 7,
+              "sk": "7.1",
+              "sp": "7.1.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 79,
+              "unit": 7,
+              "sk": "7.1",
+              "sp": "7.1.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 80,
+              "unit": 7,
+              "sk": "7.2",
+              "sp": "7.2.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M33",
+          "number": 33,
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 81,
+              "unit": 7,
+              "sk": "7.2",
+              "sp": "7.2.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 82,
+              "unit": 7,
+              "sk": "7.2",
+              "sp": "7.2.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 83,
+              "unit": 7,
+              "sk": "7.3",
+              "sp": "7.3.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M34",
+          "number": 34,
+          "A": {
+            "start": "2027-09-19",
+            "end": "2027-09-23"
+          },
+          "B": {
+            "start": "2027-09-20",
+            "end": "2027-09-24"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 84,
+              "unit": 7,
+              "sk": "7.3",
+              "sp": "7.3.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 85,
+              "unit": 7,
+              "sk": "7.4",
+              "sp": "7.4.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 86,
+              "unit": 7,
+              "sk": "7.4",
+              "sp": "7.4.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M35",
+          "number": 35,
+          "A": {
+            "start": "2027-09-26",
+            "end": "2027-09-30"
+          },
+          "B": {
+            "start": "2027-09-27",
+            "end": "2027-10-01"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "draft_pdp": 87,
+              "unit": 7,
+              "sk": "7.4",
+              "sp": "7.4.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 88,
+              "unit": 8,
+              "sk": "8.1",
+              "sp": "8.1.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M36",
+          "number": 36,
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 89,
+              "unit": 8,
+              "sk": "8.1",
+              "sp": "8.1.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 90,
+              "unit": 8,
+              "sk": "8.2",
+              "sp": "8.2.1",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 91,
+              "unit": 8,
+              "sk": "8.2",
+              "sp": "8.2.1",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M37",
+          "number": 37,
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 92,
+              "unit": 8,
+              "sk": "8.2",
+              "sp": "8.2.2",
+              "phase": 1,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 93,
+              "unit": 8,
+              "sk": "8.2",
+              "sp": "8.2.2",
+              "phase": 2,
+              "phase_count": 2,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 94,
+              "unit": 8,
+              "sk": "8.3",
+              "sp": "8.3.1",
+              "phase": 1,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            }
+          ]
+        },
+        {
+          "week": "M38",
+          "number": 38,
+          "A": {
+            "start": "2027-10-17",
+            "end": "2027-10-21"
+          },
+          "B": {
+            "start": "2027-10-18",
+            "end": "2027-10-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "draft_pdp": 95,
+              "unit": 8,
+              "sk": "8.3",
+              "sp": "8.3.1",
+              "phase": 2,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "draft_pdp": 96,
+              "unit": 8,
+              "sk": "8.3",
+              "sp": "8.3.1",
+              "phase": 3,
+              "phase_count": 3,
+              "minutes": 60,
+              "scope_status": "PENDING_DSKP_SUBCLAUSE_AND_TEXTBOOK_REVIEW",
+              "textbook_pages": null
+            },
+            {
+              "unit": 8,
+              "kind": "reserve_PBD_or_reinforcement",
+              "minutes": 60,
+              "numbered_rph": false
+            }
+          ]
+        }
+      ],
+      "coverage_codes": 38,
+      "instruction_hours": 96,
+      "reserve_hours": 5,
+      "release": false
+    }
+  ]
+}

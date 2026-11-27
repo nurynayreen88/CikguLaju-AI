@@ -1,0 +1,4171 @@
+{
+  "status": "DRAFT_CAPACITY_ONLY_NOT_PUBLISHED_RPT",
+  "calendar_source": {
+    "path": "rpt_2027/pendidikan_moral/induk_minggu_2027_ab.json",
+    "blob_sha": "a4eb31b91eb7b2c1e4a47284b6d964fa46dff4b3",
+    "existing_capacity_reference": "tools/dlp_whole_lesson_calendar_20261126.py",
+    "capacity_reference_blob_sha": "227a0371416498f71264454fb2c8fb51f0c695c9",
+    "qualification": "Existing DLP template used as provisional 35-week A/B capacity, NOT approved for SJKC. Verify actual school/holiday and assessment exceptions before release."
+  },
+  "index_source": {
+    "path": "audits/matematik_sjkc_t4_t6_dskp_index_20261127.json",
+    "blob_sha": "c44b9d0015e85d7b04374eedc4df3e897b045a11"
+  },
+  "method": "DSKP printed p.28 (all three exact SJKC editions) states minimum 96 hours annually. Unit order checked against 2026 school RPT references. Unit budgets are proposed, not copied or authoritative. Reserve capacity five hours, no RPH IDs invented. Per-SP allocation, textbook printed pages, wording, school calendar exceptions and RPH mapping remain pending. No production files changed.",
+  "plans": [
+    {
+      "year": 4,
+      "source_dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-4-SJKC.pdf",
+      "source_rpt_2026": "https://www.scribd.com/document/985486036/2026-%E5%9B%9B%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92",
+      "textbook_reference": "https://fliphtml5.com/izabd/zkzn/Matematik_Tahun_4_SJKC_compressed/",
+      "textbook_pages": "PENDING",
+      "annual_minimum_hours": 96,
+      "proposed_instruction_hours": 96,
+      "additional_reserve_hours": 5,
+      "units": [
+        {
+          "unit": 1,
+          "base_sp_codes": [
+            "1.1.1",
+            "1.1.2",
+            "1.2.1",
+            "1.2.2",
+            "1.3.1",
+            "1.4.1",
+            "1.5.1",
+            "1.5.2",
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "1.6.4",
+            "1.6.5",
+            "1.7.1",
+            "1.7.2",
+            "1.8.1",
+            "1.8.2",
+            "1.9.1",
+            "1.9.2"
+          ],
+          "proposed_hours": 24,
+          "dskp_printed_pages": [
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "unit": 2,
+          "base_sp_codes": [
+            "2.1.1",
+            "2.1.2",
+            "2.1.3",
+            "2.1.4",
+            "2.1.5",
+            "2.2.1",
+            "2.2.2",
+            "2.2.3",
+            "2.2.4",
+            "2.3.1",
+            "2.3.2",
+            "2.4.1"
+          ],
+          "proposed_hours": 14,
+          "dskp_printed_pages": [
+            37,
+            38
+          ]
+        },
+        {
+          "unit": 3,
+          "base_sp_codes": [
+            "3.1.1",
+            "3.1.2",
+            "3.1.3",
+            "3.1.4",
+            "3.2.1",
+            "3.2.2",
+            "3.3.1",
+            "3.3.2",
+            "3.3.3",
+            "3.4.1",
+            "3.4.2",
+            "3.4.3",
+            "3.5.1",
+            "3.5.2",
+            "3.6.1",
+            "3.6.2",
+            "3.7.1"
+          ],
+          "proposed_hours": 15,
+          "dskp_printed_pages": [
+            41,
+            42
+          ]
+        },
+        {
+          "unit": 4,
+          "base_sp_codes": [
+            "4.1.1",
+            "4.2.1",
+            "4.3.1",
+            "4.4.1",
+            "4.4.2",
+            "4.5.1",
+            "4.5.2",
+            "4.6.1"
+          ],
+          "proposed_hours": 10,
+          "dskp_printed_pages": [
+            48,
+            49
+          ]
+        },
+        {
+          "unit": 5,
+          "base_sp_codes": [
+            "5.1.1",
+            "5.1.2",
+            "5.1.3",
+            "5.1.4",
+            "5.1.5",
+            "5.1.6",
+            "5.1.7",
+            "5.1.8",
+            "5.1.9",
+            "5.2.1",
+            "5.2.2",
+            "5.3.1",
+            "5.3.2",
+            "5.4.1"
+          ],
+          "proposed_hours": 15,
+          "dskp_printed_pages": [
+            52,
+            53,
+            54
+          ]
+        },
+        {
+          "unit": 6,
+          "base_sp_codes": [
+            "6.1.1",
+            "6.2.1",
+            "6.2.2",
+            "6.3.1",
+            "6.3.2",
+            "6.4.1",
+            "6.5.1"
+          ],
+          "proposed_hours": 8,
+          "dskp_printed_pages": [
+            57
+          ]
+        },
+        {
+          "unit": 7,
+          "base_sp_codes": [
+            "7.1.1",
+            "7.1.2",
+            "7.2.1",
+            "7.3.1",
+            "7.4.1"
+          ],
+          "proposed_hours": 6,
+          "dskp_printed_pages": [
+            63
+          ]
+        },
+        {
+          "unit": 8,
+          "base_sp_codes": [
+            "8.1.1",
+            "8.1.2",
+            "8.2.1"
+          ],
+          "proposed_hours": 4,
+          "dskp_printed_pages": [
+            69
+          ]
+        }
+      ],
+      "schedule": [
+        {
+          "week": "M01",
+          "number": 1,
+          "A": {
+            "start": "2027-01-04",
+            "end": "2027-01-07"
+          },
+          "B": {
+            "start": "2027-01-04",
+            "end": "2027-01-08"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M02",
+          "number": 2,
+          "A": {
+            "start": "2027-01-10",
+            "end": "2027-01-14"
+          },
+          "B": {
+            "start": "2027-01-11",
+            "end": "2027-01-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M03",
+          "number": 3,
+          "A": {
+            "start": "2027-01-17",
+            "end": "2027-01-21"
+          },
+          "B": {
+            "start": "2027-01-18",
+            "end": "2027-01-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M04",
+          "number": 4,
+          "A": {
+            "start": "2027-01-24",
+            "end": "2027-01-28"
+          },
+          "B": {
+            "start": "2027-01-25",
+            "end": "2027-01-29"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M05",
+          "number": 5,
+          "A": {
+            "start": "2027-01-31",
+            "end": "2027-02-04"
+          },
+          "B": {
+            "start": "2027-02-01",
+            "end": "2027-02-05"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M07",
+          "number": 7,
+          "A": {
+            "start": "2027-02-14",
+            "end": "2027-02-18"
+          },
+          "B": {
+            "start": "2027-02-15",
+            "end": "2027-02-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 15,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 16,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M08",
+          "number": 8,
+          "A": {
+            "start": "2027-02-21",
+            "end": "2027-02-25"
+          },
+          "B": {
+            "start": "2027-02-22",
+            "end": "2027-02-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 17,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 18,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 19,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M09",
+          "number": 9,
+          "A": {
+            "start": "2027-02-28",
+            "end": "2027-03-04"
+          },
+          "B": {
+            "start": "2027-03-01",
+            "end": "2027-03-05"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 20,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 21,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 22,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M10",
+          "number": 10,
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 23,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 24,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M11",
+          "number": 11,
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M12",
+          "number": 12,
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M13",
+          "number": 13,
+          "A": {
+            "start": "2027-04-04",
+            "end": "2027-04-08"
+          },
+          "B": {
+            "start": "2027-04-05",
+            "end": "2027-04-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M14",
+          "number": 14,
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M15",
+          "number": 15,
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M16",
+          "number": 16,
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M17",
+          "number": 17,
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M20",
+          "number": 20,
+          "A": {
+            "start": "2027-06-06",
+            "end": "2027-06-10"
+          },
+          "B": {
+            "start": "2027-06-07",
+            "end": "2027-06-11"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M21",
+          "number": 21,
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M22",
+          "number": 22,
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M23",
+          "number": 23,
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 15,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M24",
+          "number": 24,
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M25",
+          "number": 25,
+          "A": {
+            "start": "2027-07-11",
+            "end": "2027-07-15"
+          },
+          "B": {
+            "start": "2027-07-12",
+            "end": "2027-07-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M26",
+          "number": 26,
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M27",
+          "number": 27,
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M28",
+          "number": 28,
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M29",
+          "number": 29,
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M30",
+          "number": 30,
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M31",
+          "number": 31,
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 15,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M32",
+          "number": 32,
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M33",
+          "number": 33,
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M34",
+          "number": 34,
+          "A": {
+            "start": "2027-09-19",
+            "end": "2027-09-23"
+          },
+          "B": {
+            "start": "2027-09-20",
+            "end": "2027-09-24"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M35",
+          "number": 35,
+          "A": {
+            "start": "2027-09-26",
+            "end": "2027-09-30"
+          },
+          "B": {
+            "start": "2027-09-27",
+            "end": "2027-10-01"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M36",
+          "number": 36,
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M37",
+          "number": 37,
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M38",
+          "number": 38,
+          "A": {
+            "start": "2027-10-17",
+            "end": "2027-10-21"
+          },
+          "B": {
+            "start": "2027-10-18",
+            "end": "2027-10-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 8,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        }
+      ],
+      "release": false
+    },
+    {
+      "year": 5,
+      "source_dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-5-SJKC.pdf",
+      "source_rpt_2026": "https://www.scribd.com/document/985486037/2026-%E4%BA%94%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92",
+      "textbook_reference": "https://fliphtml5.com/izabd/wyvc/",
+      "textbook_pages": "PENDING",
+      "annual_minimum_hours": 96,
+      "proposed_instruction_hours": 96,
+      "additional_reserve_hours": 5,
+      "units": [
+        {
+          "unit": 1,
+          "base_sp_codes": [
+            "1.1.1",
+            "1.1.2",
+            "1.2.1",
+            "1.3.1",
+            "1.4.1",
+            "1.4.2",
+            "1.5.1",
+            "1.5.2",
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "1.6.4",
+            "1.7.1",
+            "1.8.1",
+            "1.8.2",
+            "1.9.1",
+            "1.9.2",
+            "1.9.3"
+          ],
+          "proposed_hours": 21,
+          "dskp_printed_pages": [
+            30,
+            31,
+            32,
+            33
+          ]
+        },
+        {
+          "unit": 2,
+          "base_sp_codes": [
+            "2.1.1",
+            "2.2.1",
+            "2.2.2",
+            "2.2.3",
+            "2.2.4",
+            "2.3.1",
+            "2.3.2",
+            "2.4.1"
+          ],
+          "proposed_hours": 13,
+          "dskp_printed_pages": [
+            36,
+            37
+          ]
+        },
+        {
+          "unit": 3,
+          "base_sp_codes": [
+            "3.1.1",
+            "3.1.2",
+            "3.1.3",
+            "3.1.4",
+            "3.2.1",
+            "3.3.1",
+            "3.3.2",
+            "3.4.1",
+            "3.4.2",
+            "3.5.1"
+          ],
+          "proposed_hours": 12,
+          "dskp_printed_pages": [
+            40,
+            41
+          ]
+        },
+        {
+          "unit": 4,
+          "base_sp_codes": [
+            "4.1.1",
+            "4.2.1",
+            "4.2.2",
+            "4.3.1",
+            "4.3.2",
+            "4.4.1"
+          ],
+          "proposed_hours": 13,
+          "dskp_printed_pages": [
+            44,
+            45
+          ]
+        },
+        {
+          "unit": 5,
+          "base_sp_codes": [
+            "5.1.1",
+            "5.1.2",
+            "5.1.3",
+            "5.1.4",
+            "5.1.5",
+            "5.1.6",
+            "5.2.1",
+            "5.2.2",
+            "5.2.3",
+            "5.2.4",
+            "5.2.5",
+            "5.3.1",
+            "5.3.2",
+            "5.3.3",
+            "5.3.4",
+            "5.3.5",
+            "5.4.1"
+          ],
+          "proposed_hours": 17,
+          "dskp_printed_pages": [
+            48,
+            49,
+            50
+          ]
+        },
+        {
+          "unit": 6,
+          "base_sp_codes": [
+            "6.1.1",
+            "6.2.1",
+            "6.3.1",
+            "6.3.2",
+            "6.4.1",
+            "6.5.1"
+          ],
+          "proposed_hours": 8,
+          "dskp_printed_pages": [
+            54
+          ]
+        },
+        {
+          "unit": 7,
+          "base_sp_codes": [
+            "7.1.1",
+            "7.2.1",
+            "7.3.1",
+            "7.4.1"
+          ],
+          "proposed_hours": 7,
+          "dskp_printed_pages": [
+            58
+          ]
+        },
+        {
+          "unit": 8,
+          "base_sp_codes": [
+            "8.1.1",
+            "8.2.1",
+            "8.3.1"
+          ],
+          "proposed_hours": 5,
+          "dskp_printed_pages": [
+            62
+          ]
+        }
+      ],
+      "schedule": [
+        {
+          "week": "M01",
+          "number": 1,
+          "A": {
+            "start": "2027-01-04",
+            "end": "2027-01-07"
+          },
+          "B": {
+            "start": "2027-01-04",
+            "end": "2027-01-08"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M02",
+          "number": 2,
+          "A": {
+            "start": "2027-01-10",
+            "end": "2027-01-14"
+          },
+          "B": {
+            "start": "2027-01-11",
+            "end": "2027-01-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M03",
+          "number": 3,
+          "A": {
+            "start": "2027-01-17",
+            "end": "2027-01-21"
+          },
+          "B": {
+            "start": "2027-01-18",
+            "end": "2027-01-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M04",
+          "number": 4,
+          "A": {
+            "start": "2027-01-24",
+            "end": "2027-01-28"
+          },
+          "B": {
+            "start": "2027-01-25",
+            "end": "2027-01-29"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M05",
+          "number": 5,
+          "A": {
+            "start": "2027-01-31",
+            "end": "2027-02-04"
+          },
+          "B": {
+            "start": "2027-02-01",
+            "end": "2027-02-05"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M07",
+          "number": 7,
+          "A": {
+            "start": "2027-02-14",
+            "end": "2027-02-18"
+          },
+          "B": {
+            "start": "2027-02-15",
+            "end": "2027-02-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 15,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 16,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M08",
+          "number": 8,
+          "A": {
+            "start": "2027-02-21",
+            "end": "2027-02-25"
+          },
+          "B": {
+            "start": "2027-02-22",
+            "end": "2027-02-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 17,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 18,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 19,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M09",
+          "number": 9,
+          "A": {
+            "start": "2027-02-28",
+            "end": "2027-03-04"
+          },
+          "B": {
+            "start": "2027-03-01",
+            "end": "2027-03-05"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 20,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 21,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M10",
+          "number": 10,
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M11",
+          "number": 11,
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M12",
+          "number": 12,
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M13",
+          "number": 13,
+          "A": {
+            "start": "2027-04-04",
+            "end": "2027-04-08"
+          },
+          "B": {
+            "start": "2027-04-05",
+            "end": "2027-04-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M14",
+          "number": 14,
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            },
+            {
+              "unit": 3,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M15",
+          "number": 15,
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M16",
+          "number": 16,
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M17",
+          "number": 17,
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M20",
+          "number": 20,
+          "A": {
+            "start": "2027-06-06",
+            "end": "2027-06-10"
+          },
+          "B": {
+            "start": "2027-06-07",
+            "end": "2027-06-11"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M21",
+          "number": 21,
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M22",
+          "number": 22,
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M23",
+          "number": 23,
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M24",
+          "number": 24,
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M25",
+          "number": 25,
+          "A": {
+            "start": "2027-07-11",
+            "end": "2027-07-15"
+          },
+          "B": {
+            "start": "2027-07-12",
+            "end": "2027-07-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            },
+            {
+              "unit": 5,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M26",
+          "number": 26,
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M27",
+          "number": 27,
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M28",
+          "number": 28,
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M29",
+          "number": 29,
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M30",
+          "number": 30,
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 15,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 16,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M31",
+          "number": 31,
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 17,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M32",
+          "number": 32,
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M33",
+          "number": 33,
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M34",
+          "number": 34,
+          "A": {
+            "start": "2027-09-19",
+            "end": "2027-09-23"
+          },
+          "B": {
+            "start": "2027-09-20",
+            "end": "2027-09-24"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            },
+            {
+              "unit": 7,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M35",
+          "number": 35,
+          "A": {
+            "start": "2027-09-26",
+            "end": "2027-09-30"
+          },
+          "B": {
+            "start": "2027-09-27",
+            "end": "2027-10-01"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M36",
+          "number": 36,
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M37",
+          "number": 37,
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 8,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M38",
+          "number": 38,
+          "A": {
+            "start": "2027-10-17",
+            "end": "2027-10-21"
+          },
+          "B": {
+            "start": "2027-10-18",
+            "end": "2027-10-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 8,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        }
+      ],
+      "release": false
+    },
+    {
+      "year": 6,
+      "source_dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-6-SJKC.pdf",
+      "source_rpt_2026": "https://www.scribd.com/document/985486035/2026-%E5%85%AD%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92",
+      "textbook_reference": "https://fliphtml5.com/izabd/tqkq/",
+      "textbook_pages": "PENDING",
+      "annual_minimum_hours": 96,
+      "proposed_instruction_hours": 96,
+      "additional_reserve_hours": 5,
+      "units": [
+        {
+          "unit": 1,
+          "base_sp_codes": [
+            "1.1.1",
+            "1.1.2",
+            "1.1.3",
+            "1.1.4",
+            "1.1.5",
+            "1.2.1",
+            "1.3.1",
+            "1.4.1"
+          ],
+          "proposed_hours": 15,
+          "dskp_printed_pages": [
+            30,
+            31
+          ]
+        },
+        {
+          "unit": 2,
+          "base_sp_codes": [
+            "2.1.1",
+            "2.2.1",
+            "2.2.2",
+            "2.3.1",
+            "2.3.2",
+            "2.3.3",
+            "2.4.1",
+            "2.5.1"
+          ],
+          "proposed_hours": 18,
+          "dskp_printed_pages": [
+            34,
+            35
+          ]
+        },
+        {
+          "unit": 3,
+          "base_sp_codes": [
+            "3.1.1",
+            "3.1.2",
+            "3.2.1",
+            "3.2.2",
+            "3.3.1"
+          ],
+          "proposed_hours": 12,
+          "dskp_printed_pages": [
+            38
+          ]
+        },
+        {
+          "unit": 4,
+          "base_sp_codes": [
+            "4.1.1",
+            "4.1.2",
+            "4.2.1"
+          ],
+          "proposed_hours": 8,
+          "dskp_printed_pages": [
+            42
+          ]
+        },
+        {
+          "unit": 5,
+          "base_sp_codes": [
+            "5.1.1"
+          ],
+          "proposed_hours": 9,
+          "dskp_printed_pages": [
+            46
+          ]
+        },
+        {
+          "unit": 6,
+          "base_sp_codes": [
+            "6.1.1",
+            "6.1.2",
+            "6.2.1",
+            "6.2.2",
+            "6.3.1"
+          ],
+          "proposed_hours": 15,
+          "dskp_printed_pages": [
+            50
+          ]
+        },
+        {
+          "unit": 7,
+          "base_sp_codes": [
+            "7.1.1",
+            "7.2.1",
+            "7.3.1",
+            "7.4.1"
+          ],
+          "proposed_hours": 10,
+          "dskp_printed_pages": [
+            54
+          ]
+        },
+        {
+          "unit": 8,
+          "base_sp_codes": [
+            "8.1.1",
+            "8.2.1",
+            "8.2.2",
+            "8.3.1"
+          ],
+          "proposed_hours": 9,
+          "dskp_printed_pages": [
+            58
+          ]
+        }
+      ],
+      "schedule": [
+        {
+          "week": "M01",
+          "number": 1,
+          "A": {
+            "start": "2027-01-04",
+            "end": "2027-01-07"
+          },
+          "B": {
+            "start": "2027-01-04",
+            "end": "2027-01-08"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M02",
+          "number": 2,
+          "A": {
+            "start": "2027-01-10",
+            "end": "2027-01-14"
+          },
+          "B": {
+            "start": "2027-01-11",
+            "end": "2027-01-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M03",
+          "number": 3,
+          "A": {
+            "start": "2027-01-17",
+            "end": "2027-01-21"
+          },
+          "B": {
+            "start": "2027-01-18",
+            "end": "2027-01-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M04",
+          "number": 4,
+          "A": {
+            "start": "2027-01-24",
+            "end": "2027-01-28"
+          },
+          "B": {
+            "start": "2027-01-25",
+            "end": "2027-01-29"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M05",
+          "number": 5,
+          "A": {
+            "start": "2027-01-31",
+            "end": "2027-02-04"
+          },
+          "B": {
+            "start": "2027-02-01",
+            "end": "2027-02-05"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M07",
+          "number": 7,
+          "A": {
+            "start": "2027-02-14",
+            "end": "2027-02-18"
+          },
+          "B": {
+            "start": "2027-02-15",
+            "end": "2027-02-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 1,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "unit_slot": 15,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 1,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M08",
+          "number": 8,
+          "A": {
+            "start": "2027-02-21",
+            "end": "2027-02-25"
+          },
+          "B": {
+            "start": "2027-02-22",
+            "end": "2027-02-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M09",
+          "number": 9,
+          "A": {
+            "start": "2027-02-28",
+            "end": "2027-03-04"
+          },
+          "B": {
+            "start": "2027-03-01",
+            "end": "2027-03-05"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M10",
+          "number": 10,
+          "A": {
+            "start": "2027-03-14",
+            "end": "2027-03-18"
+          },
+          "B": {
+            "start": "2027-03-15",
+            "end": "2027-03-19"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M11",
+          "number": 11,
+          "A": {
+            "start": "2027-03-21",
+            "end": "2027-03-25"
+          },
+          "B": {
+            "start": "2027-03-22",
+            "end": "2027-03-26"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M12",
+          "number": 12,
+          "A": {
+            "start": "2027-03-28",
+            "end": "2027-04-01"
+          },
+          "B": {
+            "start": "2027-03-29",
+            "end": "2027-04-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 15,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M13",
+          "number": 13,
+          "A": {
+            "start": "2027-04-04",
+            "end": "2027-04-08"
+          },
+          "B": {
+            "start": "2027-04-05",
+            "end": "2027-04-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "unit_slot": 16,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 17,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 2,
+              "unit_slot": 18,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M14",
+          "number": 14,
+          "A": {
+            "start": "2027-04-11",
+            "end": "2027-04-15"
+          },
+          "B": {
+            "start": "2027-04-12",
+            "end": "2027-04-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 2,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            },
+            {
+              "unit": 3,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M15",
+          "number": 15,
+          "A": {
+            "start": "2027-04-18",
+            "end": "2027-04-22"
+          },
+          "B": {
+            "start": "2027-04-19",
+            "end": "2027-04-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M16",
+          "number": 16,
+          "A": {
+            "start": "2027-04-25",
+            "end": "2027-04-29"
+          },
+          "B": {
+            "start": "2027-04-26",
+            "end": "2027-04-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M17",
+          "number": 17,
+          "A": {
+            "start": "2027-05-02",
+            "end": "2027-05-06"
+          },
+          "B": {
+            "start": "2027-05-03",
+            "end": "2027-05-07"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 3,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M20",
+          "number": 20,
+          "A": {
+            "start": "2027-06-06",
+            "end": "2027-06-10"
+          },
+          "B": {
+            "start": "2027-06-07",
+            "end": "2027-06-11"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 3,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M21",
+          "number": 21,
+          "A": {
+            "start": "2027-06-13",
+            "end": "2027-06-17"
+          },
+          "B": {
+            "start": "2027-06-14",
+            "end": "2027-06-18"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M22",
+          "number": 22,
+          "A": {
+            "start": "2027-06-20",
+            "end": "2027-06-24"
+          },
+          "B": {
+            "start": "2027-06-21",
+            "end": "2027-06-25"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M23",
+          "number": 23,
+          "A": {
+            "start": "2027-06-27",
+            "end": "2027-07-01"
+          },
+          "B": {
+            "start": "2027-06-28",
+            "end": "2027-07-02"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 4,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 4,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            },
+            {
+              "unit": 5,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M24",
+          "number": 24,
+          "A": {
+            "start": "2027-07-04",
+            "end": "2027-07-08"
+          },
+          "B": {
+            "start": "2027-07-05",
+            "end": "2027-07-09"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M25",
+          "number": 25,
+          "A": {
+            "start": "2027-07-11",
+            "end": "2027-07-15"
+          },
+          "B": {
+            "start": "2027-07-12",
+            "end": "2027-07-16"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M26",
+          "number": 26,
+          "A": {
+            "start": "2027-07-18",
+            "end": "2027-07-22"
+          },
+          "B": {
+            "start": "2027-07-19",
+            "end": "2027-07-23"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 5,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 5,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M27",
+          "number": 27,
+          "A": {
+            "start": "2027-07-25",
+            "end": "2027-07-29"
+          },
+          "B": {
+            "start": "2027-07-26",
+            "end": "2027-07-30"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M28",
+          "number": 28,
+          "A": {
+            "start": "2027-08-01",
+            "end": "2027-08-05"
+          },
+          "B": {
+            "start": "2027-08-02",
+            "end": "2027-08-06"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M29",
+          "number": 29,
+          "A": {
+            "start": "2027-08-08",
+            "end": "2027-08-12"
+          },
+          "B": {
+            "start": "2027-08-09",
+            "end": "2027-08-13"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M30",
+          "number": 30,
+          "A": {
+            "start": "2027-08-15",
+            "end": "2027-08-19"
+          },
+          "B": {
+            "start": "2027-08-16",
+            "end": "2027-08-20"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 11,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 12,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 13,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M31",
+          "number": 31,
+          "A": {
+            "start": "2027-08-22",
+            "end": "2027-08-26"
+          },
+          "B": {
+            "start": "2027-08-23",
+            "end": "2027-08-27"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 6,
+              "unit_slot": 14,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "unit_slot": 15,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 6,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        },
+        {
+          "week": "M32",
+          "number": 32,
+          "A": {
+            "start": "2027-09-05",
+            "end": "2027-09-09"
+          },
+          "B": {
+            "start": "2027-09-06",
+            "end": "2027-09-10"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M33",
+          "number": 33,
+          "A": {
+            "start": "2027-09-12",
+            "end": "2027-09-16"
+          },
+          "B": {
+            "start": "2027-09-13",
+            "end": "2027-09-17"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M34",
+          "number": 34,
+          "A": {
+            "start": "2027-09-19",
+            "end": "2027-09-23"
+          },
+          "B": {
+            "start": "2027-09-20",
+            "end": "2027-09-24"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 7,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M35",
+          "number": 35,
+          "A": {
+            "start": "2027-09-26",
+            "end": "2027-09-30"
+          },
+          "B": {
+            "start": "2027-09-27",
+            "end": "2027-10-01"
+          },
+          "capacity": 2,
+          "slots": [
+            {
+              "unit": 7,
+              "unit_slot": 10,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 1,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M36",
+          "number": 36,
+          "A": {
+            "start": "2027-10-03",
+            "end": "2027-10-07"
+          },
+          "B": {
+            "start": "2027-10-04",
+            "end": "2027-10-08"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 8,
+              "unit_slot": 2,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 3,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 4,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M37",
+          "number": 37,
+          "A": {
+            "start": "2027-10-10",
+            "end": "2027-10-14"
+          },
+          "B": {
+            "start": "2027-10-11",
+            "end": "2027-10-15"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 8,
+              "unit_slot": 5,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 6,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 7,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            }
+          ]
+        },
+        {
+          "week": "M38",
+          "number": 38,
+          "A": {
+            "start": "2027-10-17",
+            "end": "2027-10-21"
+          },
+          "B": {
+            "start": "2027-10-18",
+            "end": "2027-10-22"
+          },
+          "capacity": 3,
+          "slots": [
+            {
+              "unit": 8,
+              "unit_slot": 8,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "unit_slot": 9,
+              "minutes": 60,
+              "kind": "instruction_capacity",
+              "sp_assignment": "PENDING"
+            },
+            {
+              "unit": 8,
+              "minutes": 60,
+              "kind": "reserve_PBD_or_reinforcement",
+              "numbered_rph": false
+            }
+          ]
+        }
+      ],
+      "release": false
+    }
+  ]
+}

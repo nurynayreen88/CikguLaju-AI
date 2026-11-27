@@ -1,0 +1,1065 @@
+{
+  "status": "ALL_8_UNITS_CODE_INDEX_NOT_RPT",
+  "school": "SJKC",
+  "subject": "matematik",
+  "year_plan": 2027,
+  "records": [
+    {
+      "year": 4,
+      "edition": 2018,
+      "source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-4-SJKC.pdf",
+      "topics": [
+        {
+          "unit": 1,
+          "description": "Nombor bulat dan operasi",
+          "dskp_printed_start": 31
+        },
+        {
+          "unit": 2,
+          "description": "Pecahan, perpuluhan dan peratus",
+          "dskp_printed_start": 36
+        },
+        {
+          "unit": 3,
+          "description": "Wang",
+          "dskp_printed_start": 40
+        },
+        {
+          "unit": 4,
+          "description": "Masa dan waktu",
+          "dskp_printed_start": 47
+        },
+        {
+          "unit": 5,
+          "description": "Ukuran dan sukatan",
+          "dskp_printed_start": 51
+        },
+        {
+          "unit": 6,
+          "description": "Ruang",
+          "dskp_printed_start": 56
+        },
+        {
+          "unit": 7,
+          "description": "Koordinat, nisbah dan kadaran",
+          "dskp_printed_start": 62
+        },
+        {
+          "unit": 8,
+          "description": "Pengurusan data",
+          "dskp_printed_start": 68
+        }
+      ],
+      "unit1_sk_sp": [
+        {
+          "sk": "1.1",
+          "sp": [
+            "1.1.1",
+            "1.1.2"
+          ]
+        },
+        {
+          "sk": "1.2",
+          "sp": [
+            "1.2.1",
+            "1.2.2"
+          ]
+        },
+        {
+          "sk": "1.3",
+          "sp": [
+            "1.3.1"
+          ]
+        },
+        {
+          "sk": "1.4",
+          "sp": [
+            "1.4.1"
+          ]
+        },
+        {
+          "sk": "1.5",
+          "sp": [
+            "1.5.1",
+            "1.5.2"
+          ]
+        },
+        {
+          "sk": "1.6",
+          "sp": [
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "1.6.4",
+            "1.6.5"
+          ]
+        },
+        {
+          "sk": "1.7",
+          "sp": [
+            "1.7.1",
+            "1.7.2"
+          ]
+        },
+        {
+          "sk": "1.8",
+          "sp": [
+            "1.8.1",
+            "1.8.2"
+          ]
+        },
+        {
+          "sk": "1.9",
+          "sp": [
+            "1.9.1",
+            "1.9.2"
+          ]
+        }
+      ],
+      "unit1_dskp_printed_pages": [
+        32,
+        33,
+        34
+      ],
+      "unit1_base_sp_count": 19,
+      "textbook_alignment": "pending",
+      "academic_status": "HOLD",
+      "unit2_sk_sp": [
+        {
+          "sk": "2.1",
+          "sp": [
+            "2.1.1",
+            "2.1.2",
+            "2.1.3",
+            "2.1.4",
+            "2.1.5"
+          ]
+        },
+        {
+          "sk": "2.2",
+          "sp": [
+            "2.2.1",
+            "2.2.2",
+            "2.2.3",
+            "2.2.4"
+          ]
+        },
+        {
+          "sk": "2.3",
+          "sp": [
+            "2.3.1",
+            "2.3.2"
+          ]
+        },
+        {
+          "sk": "2.4",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "unit2_base_sp_count": 12,
+      "unit2_dskp_printed_pages": [
+        37,
+        38
+      ],
+      "unit2_subclauses_require_separate_planning": true,
+      "unit3_sk_sp": [
+        {
+          "sk": "3.1",
+          "sp": [
+            "3.1.1",
+            "3.1.2",
+            "3.1.3",
+            "3.1.4"
+          ]
+        },
+        {
+          "sk": "3.2",
+          "sp": [
+            "3.2.1",
+            "3.2.2"
+          ]
+        },
+        {
+          "sk": "3.3",
+          "sp": [
+            "3.3.1",
+            "3.3.2",
+            "3.3.3"
+          ]
+        },
+        {
+          "sk": "3.4",
+          "sp": [
+            "3.4.1",
+            "3.4.2",
+            "3.4.3"
+          ]
+        },
+        {
+          "sk": "3.5",
+          "sp": [
+            "3.5.1",
+            "3.5.2"
+          ]
+        },
+        {
+          "sk": "3.6",
+          "sp": [
+            "3.6.1",
+            "3.6.2"
+          ]
+        },
+        {
+          "sk": "3.7",
+          "sp": [
+            "3.7.1"
+          ]
+        }
+      ],
+      "unit3_base_sp_count": 17,
+      "unit3_dskp_printed_pages": [
+        41,
+        42
+      ],
+      "unit3_subclauses_require_separate_planning": false,
+      "unit4_sk_sp": [
+        {
+          "sk": "4.1",
+          "sp": [
+            "4.1.1"
+          ]
+        },
+        {
+          "sk": "4.2",
+          "sp": [
+            "4.2.1"
+          ]
+        },
+        {
+          "sk": "4.3",
+          "sp": [
+            "4.3.1"
+          ]
+        },
+        {
+          "sk": "4.4",
+          "sp": [
+            "4.4.1",
+            "4.4.2"
+          ]
+        },
+        {
+          "sk": "4.5",
+          "sp": [
+            "4.5.1",
+            "4.5.2"
+          ]
+        },
+        {
+          "sk": "4.6",
+          "sp": [
+            "4.6.1"
+          ]
+        }
+      ],
+      "unit4_base_sp_count": 8,
+      "unit4_dskp_printed_pages": [
+        48,
+        49
+      ],
+      "unit4_subclauses_require_separate_planning": true,
+      "unit5_sk_sp": [
+        {
+          "sk": "5.1",
+          "sp": [
+            "5.1.1",
+            "5.1.2",
+            "5.1.3",
+            "5.1.4",
+            "5.1.5",
+            "5.1.6",
+            "5.1.7",
+            "5.1.8",
+            "5.1.9"
+          ]
+        },
+        {
+          "sk": "5.2",
+          "sp": [
+            "5.2.1",
+            "5.2.2"
+          ]
+        },
+        {
+          "sk": "5.3",
+          "sp": [
+            "5.3.1",
+            "5.3.2"
+          ]
+        },
+        {
+          "sk": "5.4",
+          "sp": [
+            "5.4.1"
+          ]
+        }
+      ],
+      "unit5_base_sp_count": 14,
+      "unit5_dskp_printed_pages": [
+        52,
+        53,
+        54
+      ],
+      "unit5_subclauses_require_separate_planning": false,
+      "unit6_sk_sp": [
+        {
+          "sk": "6.1",
+          "sp": [
+            "6.1.1"
+          ]
+        },
+        {
+          "sk": "6.2",
+          "sp": [
+            "6.2.1",
+            "6.2.2"
+          ]
+        },
+        {
+          "sk": "6.3",
+          "sp": [
+            "6.3.1",
+            "6.3.2"
+          ]
+        },
+        {
+          "sk": "6.4",
+          "sp": [
+            "6.4.1"
+          ]
+        },
+        {
+          "sk": "6.5",
+          "sp": [
+            "6.5.1"
+          ]
+        }
+      ],
+      "unit6_base_sp_count": 7,
+      "unit6_dskp_printed_pages": [
+        57
+      ],
+      "unit6_subclauses_require_separate_planning": false,
+      "unit7_sk_sp": [
+        {
+          "sk": "7.1",
+          "sp": [
+            "7.1.1",
+            "7.1.2"
+          ]
+        },
+        {
+          "sk": "7.2",
+          "sp": [
+            "7.2.1"
+          ]
+        },
+        {
+          "sk": "7.3",
+          "sp": [
+            "7.3.1"
+          ]
+        },
+        {
+          "sk": "7.4",
+          "sp": [
+            "7.4.1"
+          ]
+        }
+      ],
+      "unit7_base_sp_count": 5,
+      "unit7_dskp_printed_pages": [
+        63
+      ],
+      "unit7_subclauses_require_separate_planning": false,
+      "unit8_sk_sp": [
+        {
+          "sk": "8.1",
+          "sp": [
+            "8.1.1",
+            "8.1.2"
+          ]
+        },
+        {
+          "sk": "8.2",
+          "sp": [
+            "8.2.1"
+          ]
+        }
+      ],
+      "unit8_base_sp_count": 3,
+      "unit8_dskp_printed_pages": [
+        69
+      ],
+      "unit8_subclauses_require_separate_planning": false,
+      "total_base_sp_count": 85,
+      "units_indexed": 8
+    },
+    {
+      "year": 5,
+      "edition": 2019,
+      "source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-5-SJKC.pdf",
+      "topics": [
+        {
+          "unit": 1,
+          "description": "Nombor bulat dan operasi",
+          "dskp_printed_start": 29
+        },
+        {
+          "unit": 2,
+          "description": "Pecahan, perpuluhan dan peratus",
+          "dskp_printed_start": 35
+        },
+        {
+          "unit": 3,
+          "description": "Wang",
+          "dskp_printed_start": 39
+        },
+        {
+          "unit": 4,
+          "description": "Masa dan waktu",
+          "dskp_printed_start": 43
+        },
+        {
+          "unit": 5,
+          "description": "Ukuran dan sukatan",
+          "dskp_printed_start": 47
+        },
+        {
+          "unit": 6,
+          "description": "Ruang",
+          "dskp_printed_start": 53
+        },
+        {
+          "unit": 7,
+          "description": "Koordinat, nisbah dan kadaran",
+          "dskp_printed_start": 57
+        },
+        {
+          "unit": 8,
+          "description": "Pengurusan data",
+          "dskp_printed_start": 61
+        }
+      ],
+      "unit1_sk_sp": [
+        {
+          "sk": "1.1",
+          "sp": [
+            "1.1.1",
+            "1.1.2"
+          ]
+        },
+        {
+          "sk": "1.2",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "sk": "1.3",
+          "sp": [
+            "1.3.1"
+          ]
+        },
+        {
+          "sk": "1.4",
+          "sp": [
+            "1.4.1",
+            "1.4.2"
+          ]
+        },
+        {
+          "sk": "1.5",
+          "sp": [
+            "1.5.1",
+            "1.5.2"
+          ]
+        },
+        {
+          "sk": "1.6",
+          "sp": [
+            "1.6.1",
+            "1.6.2",
+            "1.6.3",
+            "1.6.4"
+          ]
+        },
+        {
+          "sk": "1.7",
+          "sp": [
+            "1.7.1"
+          ]
+        },
+        {
+          "sk": "1.8",
+          "sp": [
+            "1.8.1",
+            "1.8.2"
+          ]
+        },
+        {
+          "sk": "1.9",
+          "sp": [
+            "1.9.1",
+            "1.9.2",
+            "1.9.3"
+          ]
+        }
+      ],
+      "unit1_dskp_printed_pages": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "unit1_base_sp_count": 18,
+      "textbook_alignment": "pending",
+      "academic_status": "HOLD",
+      "unit2_sk_sp": [
+        {
+          "sk": "2.1",
+          "sp": [
+            "2.1.1"
+          ]
+        },
+        {
+          "sk": "2.2",
+          "sp": [
+            "2.2.1",
+            "2.2.2",
+            "2.2.3",
+            "2.2.4"
+          ]
+        },
+        {
+          "sk": "2.3",
+          "sp": [
+            "2.3.1",
+            "2.3.2"
+          ]
+        },
+        {
+          "sk": "2.4",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "unit2_base_sp_count": 8,
+      "unit2_dskp_printed_pages": [
+        36,
+        37
+      ],
+      "unit2_subclauses_require_separate_planning": true,
+      "unit3_sk_sp": [
+        {
+          "sk": "3.1",
+          "sp": [
+            "3.1.1",
+            "3.1.2",
+            "3.1.3",
+            "3.1.4"
+          ]
+        },
+        {
+          "sk": "3.2",
+          "sp": [
+            "3.2.1"
+          ]
+        },
+        {
+          "sk": "3.3",
+          "sp": [
+            "3.3.1",
+            "3.3.2"
+          ]
+        },
+        {
+          "sk": "3.4",
+          "sp": [
+            "3.4.1",
+            "3.4.2"
+          ]
+        },
+        {
+          "sk": "3.5",
+          "sp": [
+            "3.5.1"
+          ]
+        }
+      ],
+      "unit3_base_sp_count": 10,
+      "unit3_dskp_printed_pages": [
+        40,
+        41
+      ],
+      "unit3_subclauses_require_separate_planning": true,
+      "unit4_sk_sp": [
+        {
+          "sk": "4.1",
+          "sp": [
+            "4.1.1"
+          ]
+        },
+        {
+          "sk": "4.2",
+          "sp": [
+            "4.2.1",
+            "4.2.2"
+          ]
+        },
+        {
+          "sk": "4.3",
+          "sp": [
+            "4.3.1",
+            "4.3.2"
+          ]
+        },
+        {
+          "sk": "4.4",
+          "sp": [
+            "4.4.1"
+          ]
+        }
+      ],
+      "unit4_base_sp_count": 6,
+      "unit4_dskp_printed_pages": [
+        44,
+        45
+      ],
+      "unit4_subclauses_require_separate_planning": true,
+      "unit5_sk_sp": [
+        {
+          "sk": "5.1",
+          "sp": [
+            "5.1.1",
+            "5.1.2",
+            "5.1.3",
+            "5.1.4",
+            "5.1.5",
+            "5.1.6"
+          ]
+        },
+        {
+          "sk": "5.2",
+          "sp": [
+            "5.2.1",
+            "5.2.2",
+            "5.2.3",
+            "5.2.4",
+            "5.2.5"
+          ]
+        },
+        {
+          "sk": "5.3",
+          "sp": [
+            "5.3.1",
+            "5.3.2",
+            "5.3.3",
+            "5.3.4",
+            "5.3.5"
+          ]
+        },
+        {
+          "sk": "5.4",
+          "sp": [
+            "5.4.1"
+          ]
+        }
+      ],
+      "unit5_base_sp_count": 17,
+      "unit5_dskp_printed_pages": [
+        48,
+        49,
+        50
+      ],
+      "unit5_subclauses_require_separate_planning": true,
+      "unit6_sk_sp": [
+        {
+          "sk": "6.1",
+          "sp": [
+            "6.1.1"
+          ]
+        },
+        {
+          "sk": "6.2",
+          "sp": [
+            "6.2.1"
+          ]
+        },
+        {
+          "sk": "6.3",
+          "sp": [
+            "6.3.1",
+            "6.3.2"
+          ]
+        },
+        {
+          "sk": "6.4",
+          "sp": [
+            "6.4.1"
+          ]
+        },
+        {
+          "sk": "6.5",
+          "sp": [
+            "6.5.1"
+          ]
+        }
+      ],
+      "unit6_base_sp_count": 6,
+      "unit6_dskp_printed_pages": [
+        54
+      ],
+      "unit6_subclauses_require_separate_planning": false,
+      "unit7_sk_sp": [
+        {
+          "sk": "7.1",
+          "sp": [
+            "7.1.1"
+          ]
+        },
+        {
+          "sk": "7.2",
+          "sp": [
+            "7.2.1"
+          ]
+        },
+        {
+          "sk": "7.3",
+          "sp": [
+            "7.3.1"
+          ]
+        },
+        {
+          "sk": "7.4",
+          "sp": [
+            "7.4.1"
+          ]
+        }
+      ],
+      "unit7_base_sp_count": 4,
+      "unit7_dskp_printed_pages": [
+        58
+      ],
+      "unit7_subclauses_require_separate_planning": true,
+      "unit8_sk_sp": [
+        {
+          "sk": "8.1",
+          "sp": [
+            "8.1.1"
+          ]
+        },
+        {
+          "sk": "8.2",
+          "sp": [
+            "8.2.1"
+          ]
+        },
+        {
+          "sk": "8.3",
+          "sp": [
+            "8.3.1"
+          ]
+        }
+      ],
+      "unit8_base_sp_count": 3,
+      "unit8_dskp_printed_pages": [
+        62
+      ],
+      "unit8_subclauses_require_separate_planning": false,
+      "total_base_sp_count": 72,
+      "units_indexed": 8
+    },
+    {
+      "year": 6,
+      "edition": 2021,
+      "source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-6-SJKC.pdf",
+      "topics": [
+        {
+          "unit": 1,
+          "description": "Nombor bulat dan operasi",
+          "dskp_printed_start": 29
+        },
+        {
+          "unit": 2,
+          "description": "Pecahan, perpuluhan dan peratus",
+          "dskp_printed_start": 33
+        },
+        {
+          "unit": 3,
+          "description": "Wang",
+          "dskp_printed_start": 37
+        },
+        {
+          "unit": 4,
+          "description": "Masa dan waktu",
+          "dskp_printed_start": 41
+        },
+        {
+          "unit": 5,
+          "description": "Ukuran dan sukatan",
+          "dskp_printed_start": 45
+        },
+        {
+          "unit": 6,
+          "description": "Ruang",
+          "dskp_printed_start": 49
+        },
+        {
+          "unit": 7,
+          "description": "Koordinat, nisbah dan kadaran",
+          "dskp_printed_start": 53
+        },
+        {
+          "unit": 8,
+          "description": "Pengurusan data dan kebarangkalian",
+          "dskp_printed_start": 57
+        }
+      ],
+      "unit1_sk_sp": [
+        {
+          "sk": "1.1",
+          "sp": [
+            "1.1.1",
+            "1.1.2",
+            "1.1.3",
+            "1.1.4",
+            "1.1.5"
+          ]
+        },
+        {
+          "sk": "1.2",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "sk": "1.3",
+          "sp": [
+            "1.3.1"
+          ]
+        },
+        {
+          "sk": "1.4",
+          "sp": [
+            "1.4.1"
+          ]
+        }
+      ],
+      "unit1_dskp_printed_pages": [
+        30,
+        31
+      ],
+      "unit1_base_sp_count": 8,
+      "textbook_alignment": "pending",
+      "academic_status": "HOLD",
+      "unit2_sk_sp": [
+        {
+          "sk": "2.1",
+          "sp": [
+            "2.1.1"
+          ]
+        },
+        {
+          "sk": "2.2",
+          "sp": [
+            "2.2.1",
+            "2.2.2"
+          ]
+        },
+        {
+          "sk": "2.3",
+          "sp": [
+            "2.3.1",
+            "2.3.2",
+            "2.3.3"
+          ]
+        },
+        {
+          "sk": "2.4",
+          "sp": [
+            "2.4.1"
+          ]
+        },
+        {
+          "sk": "2.5",
+          "sp": [
+            "2.5.1"
+          ]
+        }
+      ],
+      "unit2_base_sp_count": 8,
+      "unit2_dskp_printed_pages": [
+        34,
+        35
+      ],
+      "unit2_subclauses_require_separate_planning": true,
+      "unit3_sk_sp": [
+        {
+          "sk": "3.1",
+          "sp": [
+            "3.1.1",
+            "3.1.2"
+          ]
+        },
+        {
+          "sk": "3.2",
+          "sp": [
+            "3.2.1",
+            "3.2.2"
+          ]
+        },
+        {
+          "sk": "3.3",
+          "sp": [
+            "3.3.1"
+          ]
+        }
+      ],
+      "unit3_base_sp_count": 5,
+      "unit3_dskp_printed_pages": [
+        38
+      ],
+      "unit3_subclauses_require_separate_planning": false,
+      "unit4_sk_sp": [
+        {
+          "sk": "4.1",
+          "sp": [
+            "4.1.1",
+            "4.1.2"
+          ]
+        },
+        {
+          "sk": "4.2",
+          "sp": [
+            "4.2.1"
+          ]
+        }
+      ],
+      "unit4_base_sp_count": 3,
+      "unit4_dskp_printed_pages": [
+        42
+      ],
+      "unit4_subclauses_require_separate_planning": false,
+      "unit5_sk_sp": [
+        {
+          "sk": "5.1",
+          "sp": [
+            "5.1.1"
+          ]
+        }
+      ],
+      "unit5_base_sp_count": 1,
+      "unit5_dskp_printed_pages": [
+        46
+      ],
+      "unit5_subclauses_require_separate_planning": true,
+      "unit6_sk_sp": [
+        {
+          "sk": "6.1",
+          "sp": [
+            "6.1.1",
+            "6.1.2"
+          ]
+        },
+        {
+          "sk": "6.2",
+          "sp": [
+            "6.2.1",
+            "6.2.2"
+          ]
+        },
+        {
+          "sk": "6.3",
+          "sp": [
+            "6.3.1"
+          ]
+        }
+      ],
+      "unit6_base_sp_count": 5,
+      "unit6_dskp_printed_pages": [
+        50
+      ],
+      "unit6_subclauses_require_separate_planning": false,
+      "unit7_sk_sp": [
+        {
+          "sk": "7.1",
+          "sp": [
+            "7.1.1"
+          ]
+        },
+        {
+          "sk": "7.2",
+          "sp": [
+            "7.2.1"
+          ]
+        },
+        {
+          "sk": "7.3",
+          "sp": [
+            "7.3.1"
+          ]
+        },
+        {
+          "sk": "7.4",
+          "sp": [
+            "7.4.1"
+          ]
+        }
+      ],
+      "unit7_base_sp_count": 4,
+      "unit7_dskp_printed_pages": [
+        54
+      ],
+      "unit7_subclauses_require_separate_planning": false,
+      "unit8_sk_sp": [
+        {
+          "sk": "8.1",
+          "sp": [
+            "8.1.1"
+          ]
+        },
+        {
+          "sk": "8.2",
+          "sp": [
+            "8.2.1",
+            "8.2.2"
+          ]
+        },
+        {
+          "sk": "8.3",
+          "sp": [
+            "8.3.1"
+          ]
+        }
+      ],
+      "unit8_base_sp_count": 4,
+      "unit8_dskp_printed_pages": [
+        58
+      ],
+      "unit8_subclauses_require_separate_planning": false,
+      "total_base_sp_count": 38,
+      "units_indexed": 8
+    }
+  ],
+  "notes": [
+    "All 24 topic starts are checked against DSKP contents pages. Unit 1 base SP codes checked against the content/learning standards tables, not the performance descriptors. Subclauses require separate lesson planning.",
+    "No lesson dates, textbook pages or teaching periods inferred. DSKP Year 4 printed p.28 states minimum 96 hours annually for Tahap II; confirm actual calendar and timetable before allocation.",
+    "Unit 2 SK and base SP codes visually checked against both standards-table pages of each SJKC DSKP PDF (zero-based PDF pages 48–49, 47–48, 45–46 respectively); codes only, no curriculum wording copied. Year 4 SP 2.1.3 includes two distinct subclauses. Year 6 includes SK 2.4 mixed operations and SK 2.5 problem solving, unlike Years 4–5. Textbook sequence, dates, lesson durations and academic signoff remain pending.",
+    "27 November: Units 3 and 4 verified visually in all three exact SJKC DSKP PDFs, using printed pages listed for each record (PDF page index = printed page + 11). Year 4 SP 4.5.2 contains two source subclauses labelled (iv); preserve both distinct scopes, do not infer a new SP code. Year 5 SP 3.2.1 has four operation combinations; SP 4.1.1, 4.2.1, 4.2.2, 4.3.1 and 4.3.2 have multiple explicit subclauses. No dates, textbook page numbers or lesson allocations approved. Units 5–8 pending; all release flags remain HOLD.",
+    "27 November, continuation: units 5–8 visually checked on the exact three SJKC DSKP PDF standards tables, printed pages recorded per unit (zero-based PDF page = printed page + 11). Y5 5.1.1 and 5.1.2 each contain three explicit conversion subclauses; 7.2.1 has three ratio cases. Y6 5.1.1 has three distinct measurement-pair contexts. Base codes are not lesson counts. All eight units now indexed; earlier notes mentioning pending units are historical. Textbook alignment, complete standards wording, dates, durations, RPH linkage and publication remain HOLD."
+  ]
+}

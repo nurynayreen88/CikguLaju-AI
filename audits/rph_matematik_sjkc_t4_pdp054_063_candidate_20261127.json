@@ -1,0 +1,694 @@
+{
+  "status": "TEN_NEW_RPH_CONTENT_CANDIDATES_NOT_PUBLISHED",
+  "year": 4,
+  "subject": "Matematik SJKC",
+  "source": {
+    "rpt_path": "audits/rpt_2027_matematik_sjkc_t4_t6_layout_input_20261127.json",
+    "rpt_blob": "fb090b1d7c562ecb2b485ec2fe647aba265fd9ee",
+    "dskp_drive_id": "1PlpjBO35rc0C9eGj8IDMB74A5njPKhLm",
+    "dskp_printed_pages": [
+      48,
+      49
+    ],
+    "qualification": "DSKP table read directly, lines 4360–4455. Original activities and scope paraphrases; exact textbook pages, full standard linkage, rendering and release review pending."
+  },
+  "rpt_topic_revision_proposals": [
+    {
+      "draft_pdp": 56,
+      "previous": "估计活动所需时间并实测比较",
+      "proposed": "根据参照物估算小时与分钟并用真实时间验证",
+      "applied": false
+    },
+    {
+      "draft_pdp": 57,
+      "previous": "用时间轴联系年、十年、百年和千年",
+      "proposed": "讲述千禧、世纪、年代和年之间的关系",
+      "applied": false
+    },
+    {
+      "draft_pdp": 60,
+      "previous": "月与年、年与年代及世纪的加减",
+      "proposed": "月与年、年与年代及世纪的至三项加减",
+      "applied": false
+    },
+    {
+      "draft_pdp": 63,
+      "previous": "建立行程时间表解决生活问题",
+      "proposed": "日常生活中的时间应用题：时刻、时长、换算与运算",
+      "applied": false
+    }
+  ],
+  "records": [
+    {
+      "draft_pdp": 54,
+      "unit": 4,
+      "week": "M23",
+      "dates": {
+        "A": {
+          "start": "2027-06-27",
+          "end": "2027-07-01"
+        },
+        "B": {
+          "start": "2027-06-28",
+          "end": "2027-07-02"
+        }
+      },
+      "minutes": 60,
+      "topic": "在两种时制之间转换时刻",
+      "original_rpt_topic": "在两种时制之间转换时刻",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "4.1",
+      "sp_codes": [
+        "4.1.1"
+      ],
+      "scope": "认识12时计时法和24时计时法之间的关系",
+      "objective": "正确辨认并双向转换12时与24时计时法的时刻，包括午夜和正午。",
+      "success_criteria": "10道双向时刻转换题至少答对8道，其中午夜和正午各一题。",
+      "set_induction": "展示学校午休12:30 p.m.和巴士票18:45，请学生说明两种表示方式。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "双钟探索：学生用可转动的钟面和24小时刻度条，对照上午8时、下午8时、午夜和正午的表示。"
+        },
+        {
+          "number": 2,
+          "text": "车站配对：两人将模拟出发时间表中的12时制和24时制卡片配成同一时刻，互相解释下午时刻的转换。"
+        },
+        {
+          "number": 3,
+          "text": "个人挑战：完成10道转换题，分别标明a.m.、p.m.或24时制；检查00:00与12:00的区别。"
+        }
+      ],
+      "closure": "归纳下午1时至11时与24时制的关系，以及午夜和正午的特殊表示。",
+      "bbm": "钟面模型、24小时刻度条、模拟车票",
+      "assessment": "检查10道转换题，并观察对午夜与正午的辨认。",
+      "remedial": "先配对上午时刻，再利用第二圈钟面处理下午时刻。",
+      "enrichment": "设计一张含上午、下午和午夜时刻的双时制活动表。",
+      "emk": "语言、逻辑思维",
+      "pak21": "配对学习、操作探究",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "10道双向时刻转换题至少答对8道，其中午夜和正午各一题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        119,
+        119
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 55,
+      "unit": 4,
+      "week": "M23",
+      "dates": {
+        "A": {
+          "start": "2027-06-27",
+          "end": "2027-07-01"
+        },
+        "B": {
+          "start": "2027-06-28",
+          "end": "2027-07-02"
+        }
+      },
+      "minutes": 60,
+      "topic": "在一天内用时间轴求时长",
+      "original_rpt_topic": "在一天内用时间轴求时长",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "4.2",
+      "sp_codes": [
+        "4.2.1"
+      ],
+      "scope": "确定24小时内涉及小时与分钟的相隔时间",
+      "objective": "利用时间轴确定24小时内两个时刻的相隔时间，以小时和分钟表示。",
+      "success_criteria": "8道相隔时间题至少答对7道，含跨整点及跨午夜但不超过24小时的情境。",
+      "set_induction": "校内活动从08:45至10:20，学生估计活动持续多久。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "跳跃时间轴：从08:45跳至09:00，再跳至10:00和10:20，把各段相加并说明理由。"
+        },
+        {
+          "number": 2,
+          "text": "行程站：小组根据模拟出发、抵达卡片画时间轴，处理跨正午和注明次日的跨午夜时刻；所有相隔时间小于24小时。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成8道题，任选两题以起始时刻加相隔时间核对终点。"
+        }
+      ],
+      "closure": "区分具体时刻与经过时间，强调60分钟等于1小时。",
+      "bbm": "时间轴、钟面、行程卡",
+      "assessment": "核对8道题的起止时刻、相隔时间和单位。",
+      "remedial": "从同一小时内的两时刻开始，再跨一个整点。",
+      "enrichment": "根据抵达时刻和相隔时间反推出发时刻。",
+      "emk": "推理、语言",
+      "pak21": "同伴讲解、合作学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8道相隔时间题至少答对7道，含跨整点及跨午夜但不超过24小时的情境。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        120,
+        120
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 56,
+      "unit": 4,
+      "week": "M24",
+      "dates": {
+        "A": {
+          "start": "2027-07-04",
+          "end": "2027-07-08"
+        },
+        "B": {
+          "start": "2027-07-05",
+          "end": "2027-07-09"
+        }
+      },
+      "minutes": 60,
+      "topic": "根据参照物估算小时与分钟并用真实时间验证",
+      "original_rpt_topic": "估计活动所需时间并实测比较",
+      "rpt_topic_revision_proposed": true,
+      "sk_code": "4.3",
+      "sp_codes": [
+        "4.3.1"
+      ],
+      "scope": "根据参照物估算生活活动所需的小时和分钟，并用真实时间验证",
+      "objective": "选择合适参照活动估算以分钟或小时表示的时长，并对照实测或真实记录说明误差。",
+      "success_criteria": "完成4项估算记录，至少3项选用适当参照、单位及真实时间进行比较。",
+      "set_induction": "学生先估算整理桌面和完成一节课各需多长时间，说明使用的时间参照。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "参照体验：实际计时一分钟整理文具，讨论一分钟与一小时活动的差异，建立时间参照。"
+        },
+        {
+          "number": 2,
+          "text": "估算实验：学生先估计两项短活动的分钟数，再以计时器实际测量；教师提供已经实际记录的两项较长活动的起止时刻及真实时长。"
+        },
+        {
+          "number": 3,
+          "text": "证据表：学生完成4项活动的估计值、参照依据、实际时长和误差记录，讨论如何改善下一次估算。"
+        }
+      ],
+      "closure": "强调估算需要参照，并须以实际时间或真实记录验证。",
+      "bbm": "计时器、真实活动记录、估算表",
+      "assessment": "评估4项记录的参照、单位及实际验证过程。",
+      "remedial": "提供1分钟和1小时的熟悉活动例子供选择。",
+      "enrichment": "比较两种参照策略的误差并说明较有效的方法。",
+      "emk": "科学与工艺、批判思维",
+      "pak21": "实测探究、小组讨论",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "完成4项估算记录，至少3项选用适当参照、单位及真实时间进行比较。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        121,
+        121
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 57,
+      "unit": 4,
+      "week": "M24",
+      "dates": {
+        "A": {
+          "start": "2027-07-04",
+          "end": "2027-07-08"
+        },
+        "B": {
+          "start": "2027-07-05",
+          "end": "2027-07-09"
+        }
+      },
+      "minutes": 60,
+      "topic": "讲述千禧、世纪、年代和年之间的关系",
+      "original_rpt_topic": "用时间轴联系年、十年、百年和千年",
+      "rpt_topic_revision_proposed": true,
+      "sk_code": "4.4",
+      "sp_codes": [
+        "4.4.1"
+      ],
+      "scope": "讲述千禧、世纪、年代和年之间的关系",
+      "objective": "利用时间轴和十进关系说明1年代、1世纪及1千禧各包含多少年，并辨认单位之间的关系。",
+      "success_criteria": "8道关系辨认或解释题至少答对7道，能正确说出10年、100年及1000年对应单位。",
+      "set_induction": "展示虚构学校成立10周年、城市100周年及1000年历史的例子。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "时间积木：以10个一年格组成一个年代，10个年代组成一个世纪，10个世纪组成一个千禧。"
+        },
+        {
+          "number": 2,
+          "text": "历史长卷：学生在标有相对年份的时间轴上比较不同长度，匹配年、年代、世纪及千禧的标签，不把具体公历世纪编号与时长混淆。"
+        },
+        {
+          "number": 3,
+          "text": "个人关系图：完成8道单位关系题，绘制从年到千禧的关系图并向同伴说明。"
+        }
+      ],
+      "closure": "归纳1年代=10年、1世纪=100年、1千禧=1000年及相邻单位的十倍关系。",
+      "bbm": "单位卡、时间长卷、方格图",
+      "assessment": "检查8题及关系图。",
+      "remedial": "使用十格组合模型逐步理解10、100、1000。",
+      "enrichment": "说明3世纪与30年代的关系，并设计其他等长表示。",
+      "emk": "历史意识、推理",
+      "pak21": "思考图、操作学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8道关系辨认或解释题至少答对7道，能正确说出10年、100年及1000年对应单位。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        122,
+        122
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 58,
+      "unit": 4,
+      "week": "M24",
+      "dates": {
+        "A": {
+          "start": "2027-07-04",
+          "end": "2027-07-08"
+        },
+        "B": {
+          "start": "2027-07-05",
+          "end": "2027-07-09"
+        }
+      },
+      "minutes": 60,
+      "topic": "换算小时与天、天与周、月与年及较长时间单位",
+      "original_rpt_topic": "换算小时与天、天与周、月与年及较长时间单位",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "4.4",
+      "sp_codes": [
+        "4.4.2"
+      ],
+      "scope": "换算时与天、天与星期、月与年、年与年代及世纪",
+      "objective": "根据固定换算关系进行指定时间单位的双向换算，正确处理带余量的复名数。",
+      "success_criteria": "10道换算题至少答对8道，四类单位组合均有涉及。",
+      "set_induction": "出示48小时、21天、36个月和200年四张卡，学生找出等值时间。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "换算阶梯：学生建立1天=24小时、1星期=7天、1年=12个月、1年代=10年及1世纪=100年的关系卡。"
+        },
+        {
+          "number": 2,
+          "text": "双向车站：小组轮换四个换算站，处理如53小时=2天5小时、25个月=2年1个月、130年=1世纪30年；明确不将月份一律当作30天。"
+        },
+        {
+          "number": 3,
+          "text": "独立练习：完成10道由大单位到小单位及反向换算题，用乘除关系验算。"
+        }
+      ],
+      "closure": "总结由大到小用乘法，由小到大用除法，并依不同进率换算。",
+      "bbm": "换算关系卡、日历、任务单",
+      "assessment": "检查10题的换算因数、余量和单位。",
+      "remedial": "每次提供一种单位的进率提示。",
+      "enrichment": "将250年以世纪、年代和年组合表示，解释不同等值表达。",
+      "emk": "逻辑推理",
+      "pak21": "轮站学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "10道换算题至少答对8道，四类单位组合均有涉及。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        123,
+        124
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 59,
+      "unit": 4,
+      "week": "M25",
+      "dates": {
+        "A": {
+          "start": "2027-07-11",
+          "end": "2027-07-15"
+        },
+        "B": {
+          "start": "2027-07-12",
+          "end": "2027-07-16"
+        }
+      },
+      "minutes": 60,
+      "topic": "小时与天、天与周的加减",
+      "original_rpt_topic": "小时与天、天与周的加减",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "4.5",
+      "sp_codes": [
+        "4.5.1"
+      ],
+      "scope": "至三个时间量的加减法：时与天、天与星期",
+      "objective": "进行至三个涉及天与小时或星期与天的时间量加减运算，正确换单位、进位及借位。",
+      "success_criteria": "8道题至少答对7道，两种单位组合均含加法与减法，至少两题涉及三个时间量。",
+      "set_induction": "两项活动分别历时1天18小时与2天9小时，学生估算合计天数。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "复名数相加：用24小时格将27小时换为1天3小时；将不同活动时长的天、小时分别相加再进位。"
+        },
+        {
+          "number": 2,
+          "text": "日历减法：用7天一星期的关系演示3星期2天减1星期5天，学生模拟借一个星期；再处理三项连减。"
+        },
+        {
+          "number": 3,
+          "text": "个人核算：完成8道天小时及星期天的加减题，含三项加法、连减及借位，用较小单位复核一题。"
+        }
+      ],
+      "closure": "强调不同单位分别计算，再按24或7的进率整理答案。",
+      "bbm": "24小时格、日历、时间量卡",
+      "assessment": "核对8题答案与换算步骤。",
+      "remedial": "先完成不需进位或借位的两项运算。",
+      "enrichment": "编写一组三项相加且结果恰为整数星期的时间量。",
+      "emk": "推理、资源规划",
+      "pak21": "操作探究、同伴互查",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8道题至少答对7道，两种单位组合均含加法与减法，至少两题涉及三个时间量。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        126,
+        129
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 60,
+      "unit": 4,
+      "week": "M25",
+      "dates": {
+        "A": {
+          "start": "2027-07-11",
+          "end": "2027-07-15"
+        },
+        "B": {
+          "start": "2027-07-12",
+          "end": "2027-07-16"
+        }
+      },
+      "minutes": 60,
+      "topic": "月与年、年与年代及世纪的至三项加减",
+      "original_rpt_topic": "月与年、年与年代及世纪的加减",
+      "rpt_topic_revision_proposed": true,
+      "sk_code": "4.5",
+      "sp_codes": [
+        "4.5.1"
+      ],
+      "scope": "至三个时间量的加减法：月与年、年与年代及世纪",
+      "objective": "完成至三个涉及年与月、年代与年、世纪与年的时间量加减，使用正确进率。",
+      "success_criteria": "8道题至少答对7道，涵盖年与月、年代与年、世纪与年的加减。",
+      "set_induction": "虚构校园建设分两阶段，历时2年8个月与1年7个月，求总时长。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "月份拼板：学生以12个月换1年，计算两项与三项复名数之和。"
+        },
+        {
+          "number": 2,
+          "text": "历史时间档案：小组用10年及100年进率处理年代、世纪的加减，例如2世纪15年减78年；比较先统一为年和借位两种方法。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成8题，包括三项连减及跨单位进借位，选择两题用换算后的年或月验算。"
+        }
+      ],
+      "closure": "归纳月、年、年代、世纪的不同进率，不将所有单位按十进制处理。",
+      "bbm": "月份卡、时间轴、历史情境卡",
+      "assessment": "检查8题的进借位、单位与最终结果。",
+      "remedial": "先用无进借位的年与月两项题，再练习年代。",
+      "enrichment": "设计一个以三种时间单位表达且可检验的加减情境。",
+      "emk": "历史意识、逻辑思维",
+      "pak21": "小组解题",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8道题至少答对7道，涵盖年与月、年代与年、世纪与年的加减。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        130,
+        135
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 61,
+      "unit": 4,
+      "week": "M25",
+      "dates": {
+        "A": {
+          "start": "2027-07-11",
+          "end": "2027-07-15"
+        },
+        "B": {
+          "start": "2027-07-12",
+          "end": "2027-07-16"
+        }
+      },
+      "minutes": 60,
+      "topic": "小时与天、天与周及月与年的乘除",
+      "original_rpt_topic": "小时与天、天与周及月与年的乘除",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "4.5",
+      "sp_codes": [
+        "4.5.2"
+      ],
+      "scope": "时间量乘除至二位数：时与天、天与星期、月与年",
+      "objective": "计算涉及天小时、星期天、年月的时间量与一位数或二位数相乘、相除，正确处理进率与余量。",
+      "success_criteria": "8道题至少答对7道，三类单位均有涉及且包含两位数乘数或除数。",
+      "set_induction": "每次训练历时1天6小时，共举行4次，求总时长。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "重复时长模型：将1天6小时化为30小时，再乘4并换回天；比较先分别乘复名数的方法。"
+        },
+        {
+          "number": 2,
+          "text": "平均分配站：将5星期5天平均分给8个阶段、将3年平均分为12份，先换成天或月，计算后整理单位；选取可整除至最小单位的数据。"
+        },
+        {
+          "number": 3,
+          "text": "个人练习：完成8道乘除题，含一位数及二位数因数，选择两题用逆运算验证。"
+        }
+      ],
+      "closure": "归纳先统一到较小单位、乘除后换回所需单位的方法。",
+      "bbm": "时间量卡、日历、换算表",
+      "assessment": "检查8题乘除、换算与单位。",
+      "remedial": "先进行整天乘一位数，再处理复名数。",
+      "enrichment": "设计一个可平均分成12段的年与月时长方案。",
+      "emk": "规划、推理",
+      "pak21": "合作轮站",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8道题至少答对7道，三类单位均有涉及且包含两位数乘数或除数。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        136,
+        141
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 62,
+      "unit": 4,
+      "week": "M26",
+      "dates": {
+        "A": {
+          "start": "2027-07-18",
+          "end": "2027-07-22"
+        },
+        "B": {
+          "start": "2027-07-19",
+          "end": "2027-07-23"
+        }
+      },
+      "minutes": 60,
+      "topic": "年与年代、年与世纪的乘除",
+      "original_rpt_topic": "年与年代、年与世纪的乘除",
+      "rpt_topic_revision_proposed": false,
+      "sk_code": "4.5",
+      "sp_codes": [
+        "4.5.2"
+      ],
+      "scope": "时间量乘除至二位数：年与年代、年与世纪",
+      "objective": "计算涉及年代与年、世纪与年的时间量乘除至二位数，并验证等值关系。",
+      "success_criteria": "8道题至少答对7道，两类时间单位均含乘法及除法。",
+      "set_induction": "虚构历史资料每个阶段涵盖1年代5年，共有6个阶段。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "年代计算器：学生将1年代5年化为15年，计算乘6后的时间，并换回年代和年。"
+        },
+        {
+          "number": 2,
+          "text": "世纪档案：小组处理如3世纪平均分成12阶段的题，先化成年再除；用时间轴核查各段总长。"
+        },
+        {
+          "number": 3,
+          "text": "独立任务：完成8道涉及一位数、二位数乘除的题，按要求表示为年、年代或世纪与年，任选两题验算。"
+        }
+      ],
+      "closure": "强调世纪与年代的固定进率，检查答案的单位及余量。",
+      "bbm": "历史档案卡、时间轴、换算板",
+      "assessment": "核对8题的乘除法、换算和验算。",
+      "remedial": "用整年代乘除一位数建立策略。",
+      "enrichment": "比较两个不同的平均分段方案，说明各阶段时长。",
+      "emk": "历史意识、推理",
+      "pak21": "合作解题",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8道题至少答对7道，两类时间单位均含乘法及除法。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        142,
+        145
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 63,
+      "unit": 4,
+      "week": "M26",
+      "dates": {
+        "A": {
+          "start": "2027-07-18",
+          "end": "2027-07-22"
+        },
+        "B": {
+          "start": "2027-07-19",
+          "end": "2027-07-23"
+        }
+      },
+      "minutes": 60,
+      "topic": "日常生活中的时间应用题：时刻、时长、换算与运算",
+      "original_rpt_topic": "建立行程时间表解决生活问题",
+      "rpt_topic_revision_proposed": true,
+      "sk_code": "4.6",
+      "sp_codes": [
+        "4.6.1"
+      ],
+      "scope": "解答日常生活与时间有关的应用题",
+      "objective": "根据生活情境选择时刻转换、相隔时间、单位换算及时间基本运算策略解决问题。",
+      "success_criteria": "6道应用题至少答对5道，涵盖时刻、相隔时间、单位换算及时间加减乘除中的不同运算。",
+      "set_induction": "展示模拟校外活动日程表，请学生判断出发、抵达和活动时长之间的关系。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "行程规划：学生读取模拟活动表，转换时刻并计算两段活动的相隔时间。"
+        },
+        {
+          "number": 2,
+          "text": "项目时间站：小组依据虚构阅读计划、维修计划或周年资料，选择日历、时间轴、换算表及基本运算，解释选择依据。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成6道时间生活题（含相隔时间、换算、加减和乘除），记录已知量、所求量、算式、单位与验算。"
+        }
+      ],
+      "closure": "总结审题、拟定策略、执行及验算，区分时刻与时长。",
+      "bbm": "模拟日程表、日历、时间轴、任务单",
+      "assessment": "按6题策略、算式、答案和单位计分。",
+      "remedial": "用分段时间轴和提示框协助理解题意。",
+      "enrichment": "在给定开始及结束时刻的限制下设计一份可行的活动日程。",
+      "emk": "责任、时间管理",
+      "pak21": "问题导向学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "6道应用题至少答对5道，涵盖时刻、相隔时间、单位换算及时间加减乘除中的不同运算。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        148,
+        153
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    }
+  ],
+  "release": false
+}
