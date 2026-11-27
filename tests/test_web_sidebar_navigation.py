@@ -119,6 +119,11 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('docsYear.addEventListener("change",filterCurriculumDocs)',self.html)
         self.assertIn('docsSubject.addEventListener("change",filterCurriculumDocs)',self.html)
         self.assertIn('#workspace #view-curriculum-docs{display:none!important}',self.html)
+        self.assertEqual(choices[7],"calendar")
+        self.assertIn('["calendar","view-calendar"]',self.html)
+        self.assertIn('#workspace #view-calendar,#workspace #view-curriculum-docs{display:none!important}',self.html)
+        self.assertIn('data-web-view="calendar" aria-controls="view-calendar"',self.html)
+
 
     def test_rpt_catalog_outside_rph_section(self):
         # Structural check using parsed nesting, not only search positions.
@@ -141,6 +146,11 @@ class WebSidebarTabsTests(unittest.TestCase):
         parsed=NodeParser()
         parsed.feed(self.html)
         self.assertIn("view-rpt",parsed.closest["rpt2027-panel"])
+        self.assertIn("view-calendar",parsed.closest["calendar2027-download"])
+        self.assertNotIn("view-rpt",parsed.closest["calendar2027-download"])
+        self.assertEqual(self.html.count('id="calendar2027-download"'),1)
+        self.assertIn('href="/api/rpt/2027/calendar.pdf" download="CikguLaju_Kalendar_2027_A2_Kemas.pdf"',self.html)
+
         self.assertNotIn("view-rph",parsed.closest["rpt2027-panel"])
         for name in ["year","subject","unit","lesson","rph-word","rph-pdf"]:
             self.assertIn("view-rph",parsed.closest[name],name)
