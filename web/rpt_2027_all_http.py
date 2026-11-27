@@ -337,8 +337,12 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                 "coming_soon": True,
             } for year in YEARS],
         })
+    from web import rpt_math_dpk_word
     dpk_entries = [
         {"year": year, "pdf_ready": True, "status": "TERSEDIA",
+         "docx_ready": bool(personalization_allowed and rpt_math_dpk_word.eligible(year,root=root)),
+         "word_paid_only": True,
+         "docx_url": f"/api/rpt/2027/all/{MATH_DPK_CODE}/{year}.docx" if personalization_allowed and rpt_math_dpk_word.eligible(year,root=root) else None,
          "download_enabled": bool(allowed), "is_draft": False,
          "note": "Kumpulan A dan B. 117 Lesson dalam 96 jam."}
         for year in matematik_sk.DPK_DIGESTS
@@ -531,6 +535,26 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
+        if subject == MATH_DPK_CODE:
+            from web import rpt_math_dpk_word
+            if year not in matematik_sk.DPK_DIGESTS:
+                return jsonify({"error":"Pilihan RPT tidak sah"}),404
+            if not _has_paid_access(account):
+                return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
+            if not rpt_math_dpk_word.eligible(year,root=root):
+                return jsonify({"error":"RPT Word DPK belum tersedia."}),503
+            from web_v1_telegram_auth_routes import _config
+            try:
+                blob,digest=rpt_math_dpk_word.document(year,account,_config(),root=root)
+            except Exception:
+                return jsonify({"error":"RPT Word DPK belum dapat disediakan. Sila cuba semula."}),503
+            response=send_file(BytesIO(blob),as_attachment=True,conditional=False,
+                mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                download_name=f"CIKGULAJU_RPT_MATEMATIK_SK_DPK_EDISI3_TAHUN_{year}_2027_WORD.docx")
+            response.headers["X-RPT-Source-SHA256"]=digest
+            response.headers["X-RPT-Word-Access"]="paid-founder-only"
+            response.headers["X-RPT-Academic-Status"]="TERSEDIA"
+            return response
         approved_science=subject=="sains" and year in native_word.APPROVED_SCIENCE_PINS
         approved_math=subject=="matematik" and year in matematik_sk.DIGESTS
         integrated_english,english_digest=_integrated_english_file(subject,year,root)
