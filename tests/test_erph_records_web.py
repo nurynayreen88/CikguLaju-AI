@@ -78,3 +78,21 @@ class ErphTests(unittest.TestCase):
             self.assertEqual(self.client.post('/api/erph/import-word',data=raw,content_type=mime).status_code,403)
             self.assertEqual(self.client.post('/api/erph/import-word',data=b'not a word file',content_type=mime,headers=ORIGIN).status_code,400)
             store.assert_not_called()
+
+    def test_week_scope_is_sunday_to_saturday(self):
+        with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store',return_value=[]) as store:
+            r=self.client.get('/api/erph/records?date=2027-01-13&scope=week')
+            self.assertEqual(r.status_code,200)
+            self.assertEqual((r.json['start'],r.json['end']),('2027-01-10','2027-01-16'))
+            self.assertEqual(store.call_args.args[1],42)
+            self.assertEqual(store.call_args.args[3]['and'],'(teaching_date.gte.2027-01-10,teaching_date.lte.2027-01-16)')
+    def test_preview_escapes_html_and_does_not_save(self):
+        import json
+        draft=dict(PAYLOAD,title='</script><script>alert(1)</script>',status='draft')
+        with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store') as store:
+            r=self.client.post('/erph/import-preview',data={'draft':json.dumps(draft)},headers=ORIGIN)
+            self.assertEqual(r.status_code,200)
+            self.assertNotIn(b'</script><script>alert(1)</script>',r.data)
+            self.assertIn(b'\\u003c/script\\u003e',r.data)
+            self.assertEqual(self.client.post('/erph/import-preview',data={'draft':json.dumps(draft)}).status_code,403)
+            store.assert_not_called()
