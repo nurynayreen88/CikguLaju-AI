@@ -1,0 +1,517 @@
+{
+  "status": "DRAFT_SOURCE64_ONLY",
+  "source_catalog_sha": "b29683bffc0f5c72a9e1c69cf7d9a5dada22d8a9",
+  "source_archive_sha256": "b1ae8dcab0894bacc894d7fb310ff5ece27a1077e84846a64a86a61235d3a8ef",
+  "combined_pdf_drive_id": "1K-Jamc8pLD163y0rsg2O-P2YHoM-29SN",
+  "dk_drive_id": "1EMxszL78CiPDVRiD_LqUCIijAuHMEFx1",
+  "notes": "Source lessons 13–32 and DK printed pp26–29,34–37 inspected; draft phase adaptation only, separate RPT93 mapping. No live changes.",
+  "records": [
+    {
+      "source_lesson": 13,
+      "source_catalog_codes": [
+        "2.1.1"
+      ],
+      "source_pdf_page": 13,
+      "source_word_sha256": "65208ab8f16de366fd7631074d88f4edbe0450d557efc5b513c67ed8e14b06c1",
+      "source_pdf_sha256": "98737c8de9ab2c1dfa797b96bf64be24ee81254b331a45832d622dc3e4c6d196",
+      "dk_printed_page": 26,
+      "source_activity_titles": [
+        "Kenal Tiga Amalan Sihat",
+        "Kelas dan Padankan Kad",
+        "Pilih Amalan Harian"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan tiga gambar rutin; murid memilih amalan sihat.",
+        "exploration": "Murid mengelaskan kad senaman, makanan seimbang dan kebersihan dengan bimbingan Guru B.",
+        "explanation": "Guru A menerangkan faedah setiap amalan; murid menerangkan pilihan.",
+        "elaboration": "Murid memilih satu amalan untuk watak rekaan dan menerangkan cara melaksanakannya.",
+        "evaluation": "Guru B merekod tiga amalan yang dikenal pasti dan satu contoh pelaksanaan; kedua-dua guru menyemak."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 14,
+      "source_catalog_codes": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "source_pdf_page": 14,
+      "source_word_sha256": "90237d5e8d15f353a62f2aa91895a6944349cb4cac84b7f861e52ec1b629de9c",
+      "source_pdf_sha256": "9a936c4583feedd5425c497714fccc430ff2b8091045b7e1f72a659e69b28cbb",
+      "dk_printed_page": 26,
+      "source_activity_titles": [
+        "Kenal Amalan Kebersihan",
+        "Amali Urutan Cuci Tangan",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar berus gigi, pemotong kuku dan sabun.",
+        "exploration": "Murid memadankan kad kebersihan dengan kepentingannya; Guru B menyediakan stesen amali.",
+        "explanation": "Guru A menjelaskan hubungan kebersihan dengan kesihatan; Guru B menunjukkan urutan mencuci tangan.",
+        "elaboration": "Murid mencuci tangan atau membuat simulasi berpandu, kemudian memadankan tindakan dengan kepentingannya.",
+        "evaluation": "Kedua-dua guru menyemak dua hubungan kebersihan-kepentingan dan urutan cuci tangan."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 15,
+      "source_catalog_codes": [
+        "2.1.4"
+      ],
+      "source_pdf_page": 15,
+      "source_word_sha256": "97b2dde31ab1f210d3d7ac8e3ab65d831426cff930ec87c84d115bd9ddc7d962",
+      "source_pdf_sha256": "feadc92112cd7ac03591de5ea7f881ed90f522589248cf04fc97c7844a3a5d6d",
+      "dk_printed_page": 26,
+      "source_activity_titles": [
+        "Latihan Sebutan Vokal",
+        "Dengar dan Ajuk Pic",
+        "Nyanyian Mengikut Tempo"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar kebersihan; murid menyebut perkataan berkaitan.",
+        "exploration": "Murid berlatih vokal dan tiga frasa; Guru B membimbing ajukan pic.",
+        "explanation": "Guru A memodelkan sebutan dan ketukan tempo; Guru B mencontohkan pic.",
+        "elaboration": "Murid menyanyikan rangkap lagu ciptaan guru mengikut ketukan dan pic contoh.",
+        "evaluation": "Kedua-dua guru menyemak tiga frasa jelas, pic dan tempo."
+      },
+      "note": "Kriteria asal menggunakan 'pic atau tempo'; cadangan nilai kedua-duanya seperti DK.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 16,
+      "source_catalog_codes": [
+        "2.1.5"
+      ],
+      "source_pdf_page": 16,
+      "source_word_sha256": "510206667d1550f60f9188ea0f0a781e5670f5637f97178297d107f78882ea13",
+      "source_pdf_sha256": "554137bb31a81d0def4e1852b82439d1c60347e47e8c0fb65909ea13b12932cf",
+      "dk_printed_page": 27,
+      "source_activity_titles": [
+        "Kenal Kata Kunci",
+        "Bina Gerak Selamat",
+        "Persembahan Berkumpulan"
+      ],
+      "phases": {
+        "engagement": "Guru A memperagakan gerak mencuci tangan; murid meneka maksud.",
+        "exploration": "Murid memilih tiga kata kunci lirik dan memadankan gambar amalan.",
+        "explanation": "Guru A memodelkan gerak simbolik; Guru B menyemak ruang dan keselamatan.",
+        "elaboration": "Murid mempersembahkan tiga gerak mengikut urutan lirik tanpa alat berbahaya.",
+        "evaluation": "Kedua-dua guru menyemak tiga padanan gerak-lirik dan keselamatan."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 17,
+      "source_catalog_codes": [
+        "2.1.6"
+      ],
+      "source_pdf_page": 17,
+      "source_word_sha256": "0ce45ff6180c25eaf08c2d22ca293595091da3981c2e035c4bf7664bcffcc7e3",
+      "source_pdf_sha256": "5dcad011ea0a54746c4736704ef236f90cc765f064e0998ff9e08e3a7669bd91",
+      "dk_printed_page": 27,
+      "source_activity_titles": [
+        "Pilih Dua Amalan",
+        "Lakar dan Warnakan Poster",
+        "Galeri Pesanan Kebersihan"
+      ],
+      "phases": {
+        "engagement": "Guru A mempamerkan dua poster contoh; murid meneka mesej.",
+        "exploration": "Murid memilih dua amalan dan merancang susun atur gambar.",
+        "explanation": "Guru A menunjukkan lakaran; Guru B membimbing warna dan penggunaan bahan selamat.",
+        "elaboration": "Murid menyiapkan poster dan berkongsi satu pesanan kebersihan dalam galeri.",
+        "evaluation": "Kedua-dua guru menyemak dua amalan tepat, satu pesanan jelas dan hasil siap."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 18,
+      "source_catalog_codes": [
+        "2.1.7",
+        "2.1.8"
+      ],
+      "source_pdf_page": 18,
+      "source_word_sha256": "9859863111e5a0885176f09b05dbb3aafc341b8e267f0134cca43295ef517efe",
+      "source_pdf_sha256": "da5ea80711f3c5351ff48eb081779408acc4a617f1f4acf8dc1653287aeb63e1",
+      "dk_printed_page": 27,
+      "source_activity_titles": [
+        "Namakan Tiga Hidangan",
+        "Padankan Situasi dan Kepentingan",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar pagi, tengah hari dan malam; murid meneka hidangan.",
+        "exploration": "Murid memadankan kad sarapan, makan tengah hari dan makan malam dengan waktu.",
+        "explanation": "Guru A mengukuhkan nama hidangan; Guru B menerangkan tenaga dan kesihatan melalui kad aktiviti.",
+        "elaboration": "Murid membina jadual tiga hidangan watak rekaan dan menerangkan dua kepentingan makan teratur.",
+        "evaluation": "Kedua-dua guru menyemak tiga hidangan dan dua kepentingan tanpa meminta diet peribadi."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 19,
+      "source_catalog_codes": [
+        "2.1.9"
+      ],
+      "source_pdf_page": 19,
+      "source_word_sha256": "246a170ae5cc057d8845d16f8b8286c58cc08c0b336a1c62629d033550033943",
+      "source_pdf_sha256": "386c3a4a0d3251364528a01b052200a415b8c9ff910e779362cfd53dd9a774d7",
+      "dk_printed_page": 27,
+      "source_activity_titles": [
+        "Susun Kategori Hidangan",
+        "Pilih Contoh Makanan",
+        "Kongsi Menu Rekaan"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan jadual tiga waktu hidangan kosong.",
+        "exploration": "Murid menyusun label waktu dan memilih kad makanan setempat pelbagai budaya.",
+        "explanation": "Guru A menerangkan susunan menu; Guru B membimbing pilihan munasabah.",
+        "elaboration": "Murid melengkapkan jadual menu watak rekaan dan memberi satu alasan pilihan.",
+        "evaluation": "Kedua-dua guru menyemak tiga ruang menu dan penerangan satu pilihan."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 20,
+      "source_catalog_codes": [
+        "2.1.10"
+      ],
+      "source_pdf_page": 20,
+      "source_word_sha256": "4416ef4b6125584bc722bfa62550e8e3b0b893e9c672f07f6295843634b3a9b2",
+      "source_pdf_sha256": "d4a524375a784d3a37b622520482abe6fd253719952c09b3a5060230a5638d94",
+      "dk_printed_page": 28,
+      "source_activity_titles": [
+        "Rancang Bentuk Makanan",
+        "Bentuk dengan Bahan Kraf",
+        "Pamer dan Terangkan"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan model makanan; murid meneka bentuk.",
+        "exploration": "Murid memilih dua gambar makanan dan melakar bentuk asas.",
+        "explanation": "Guru A memodelkan teknik menggulung dan menekan; Guru B menyelia bahan bukan toksik.",
+        "elaboration": "Murid membina dua model makanan, menamakan dan menerangkan teknik; bersihkan ruang.",
+        "evaluation": "Kedua-dua guru menyemak dua bentuk, nama dan penggunaan bahan selamat."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 21,
+      "source_catalog_codes": [
+        "2.1.11"
+      ],
+      "source_pdf_page": 21,
+      "source_word_sha256": "eab2e7bcc9d2ce128d77fddf7c1eaaa199971064478d091063769c696229f07a",
+      "source_pdf_sha256": "c46fff2ffd4dd9c83024ca06e9a8cf77eb23ad134e21a2c0c0550482bfb5bd9f",
+      "dk_printed_page": 28,
+      "source_activity_titles": [
+        "Latih Kata Kunci",
+        "Ajuk Pic dan Tempo",
+        "Persembahan Ringkas"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar hidangan; murid menyatakan manfaatnya.",
+        "exploration": "Murid melatih vokal dan frasa makanan serta tenaga; Guru B membimbing ajukan pic.",
+        "explanation": "Guru A memodelkan sebutan dan tempo; Guru B mencontohkan pic.",
+        "elaboration": "Murid menyanyikan lagu pilihan guru secara berkumpulan dan menerima maklum balas.",
+        "evaluation": "Kedua-dua guru menyemak dua frasa jelas, pic dan tempo."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 22,
+      "source_catalog_codes": [
+        "2.1.12",
+        "2.1.13"
+      ],
+      "source_pdf_page": 22,
+      "source_word_sha256": "63045f2776190742d678e7c91f16b04b6a9f7fb9a89fd36bafe0432c171f8853",
+      "source_pdf_sha256": "c5d4b5d2777dc466a10e3407d40c17e31b1818c71887045ee1c11b7261049e74",
+      "dk_printed_page": 28,
+      "source_activity_titles": [
+        "Kenal Alat Perkusi",
+        "Berdiri dengan Seimbang",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A mengetuk empat detik; murid meniru tepukan.",
+        "exploration": "Murid meneroka alat perkusi selamat dan kad postur; Guru B membimbing amali.",
+        "explanation": "Guru A memodelkan detik lagu; Guru B menunjukkan duduk tegak, berdiri tegak dan membengkokkan lutut ketika mengambil barang ringan.",
+        "elaboration": "Murid memainkan detik lagu berkaitan makanan, berhenti sebelum menunjukkan dua postur harian.",
+        "evaluation": "Kedua-dua guru menyemak detik konsisten menggunakan alat perkusi dan dua postur selamat."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 23,
+      "source_catalog_codes": [
+        "2.1.14"
+      ],
+      "source_pdf_page": 23,
+      "source_word_sha256": "7cffcd7f98fa0141ea518070cf9a2a35fbb318109efd90e276ee8118b0ef782b",
+      "source_pdf_sha256": "ad41e5a3ebc263c07676f04e4c4b1ee342e0610fa708dab74e299c84828a1ed3",
+      "dk_printed_page": 29,
+      "source_activity_titles": [
+        "Nyatakan Manfaat Rehat",
+        "Susun Rutin Watak",
+        "Bincang Tindakan Sihat"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan dua watak rekaan yang mengantuk dan segar.",
+        "exploration": "Murid menyusun kad belajar, bermain, tidur dan rehat dengan Guru B.",
+        "explanation": "Guru A menerangkan dua manfaat tidur dan rehat kepada tenaga serta emosi.",
+        "elaboration": "Murid memilih rutin rehat munasabah bagi watak rekaan dan memberi sebab.",
+        "evaluation": "Kedua-dua guru menyemak dua manfaat dan satu cadangan rutin."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 24,
+      "source_catalog_codes": [
+        "3.1.1"
+      ],
+      "source_pdf_page": 24,
+      "source_word_sha256": "3847f0cd79a634b8e9893b684e58020cbb702c1a55d889e91fc6b1ced6147c38",
+      "source_pdf_sha256": "50788eefc322f86fdd3211da7e710d53a26d4319eb02746714fe390fde653801",
+      "dk_printed_page": 34,
+      "source_activity_titles": [
+        "Kenal Dua Jenis Situasi",
+        "Kelaskan dan Jelaskan Risiko",
+        "Pilih Tindakan Bijak"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar berlari di tangga dan bermain di padang dengan pengawasan.",
+        "exploration": "Murid mengelaskan enam kad situasi rumah, sekolah dan luar rumah bersama Guru B.",
+        "explanation": "Guru A menjelaskan risiko dan tindakan lebih selamat menggunakan gambar.",
+        "elaboration": "Murid memilih alternatif selamat bagi satu situasi serta orang dewasa dipercayai.",
+        "evaluation": "Guru B merekod empat daripada enam klasifikasi tepat dan satu sebab; kedua-dua guru menyemak."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 25,
+      "source_catalog_codes": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "source_pdf_page": 25,
+      "source_word_sha256": "9143d6fc40b765aeb6b553dbf11df567402fb7a1bb61a1d03a9d9bbc5291bbe5",
+      "source_pdf_sha256": "a92c90718ee7bd9e23171706a2fe1d6b0e17d8e24b5778418db28b1376162537",
+      "dk_printed_page": 34,
+      "source_activity_titles": [
+        "Kenali Tiga Tempat",
+        "Kenali Mesej Berisiko",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan tangga dan lintasan pejalan kaki; murid menyebut tindakan selamat.",
+        "exploration": "Murid memadankan kad situasi rumah, sekolah dan luar rumah serta kad pertanyaan rekaan.",
+        "explanation": "Guru A menjelaskan risiko mengikut lokasi; Guru B menerangkan perlindungan nombor telefon, alamat dan kata laluan.",
+        "elaboration": "Murid memilih respons selamat apabila orang tidak dikenali meminta maklumat rekaan; rujuk dewasa dipercayai.",
+        "evaluation": "Kedua-dua guru menyemak dua klasifikasi dan dua jenis maklumat dilindungi; tiada data sebenar diminta."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 26,
+      "source_catalog_codes": [
+        "3.1.4"
+      ],
+      "source_pdf_page": 26,
+      "source_word_sha256": "e73404a13024cb007ef6b9df414d0efec77c05fbc76c49e8881ba37a0b20aa3c",
+      "source_pdf_sha256": "992a0844f4f0f72f169dd59e4837761876a03193685c78efb45dd889ab679ba1",
+      "dk_printed_page": 35,
+      "source_activity_titles": [
+        "Kenal Maksud",
+        "Baca Cerita Rekaan",
+        "Pilih Tindakan"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan watak rekaan yang tidak selesa apabila batas diri tidak dihormati.",
+        "exploration": "Murid memilih kad perasaan dan tindakan bagi cerita rekaan tanpa sentuhan fizikal.",
+        "explanation": "Guru A menerangkan perbezaan sentuhan memudaratkan dan sentuhan tidak disenangi; Guru B membimbing pilihan respons.",
+        "elaboration": "Murid menyusun kad berkata TIDAK, menjauh dan melapor kepada dewasa dipercayai.",
+        "evaluation": "Kedua-dua guru menyemak dua maksud dan dua tindakan selamat tanpa pendedahan peribadi."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 27,
+      "source_catalog_codes": [
+        "3.1.5"
+      ],
+      "source_pdf_page": 27,
+      "source_word_sha256": "e427e4d001087b5904fc7b19f9844324d57b5a2b7acccaafd51070e7c502c70a",
+      "source_pdf_sha256": "2ec1d0ade718769997cb403e82e491bf23e5f5498ade46825e9880f10951961e",
+      "dk_printed_page": 35,
+      "source_activity_titles": [
+        "Kenal Batas Tubuh",
+        "Bezakan Contoh",
+        "Pilih Orang Dipercayai"
+      ],
+      "phases": {
+        "engagement": "Guru A membacakan cerita rekaan tentang batas diri; murid mengenal pasti perasaan watak.",
+        "exploration": "Murid mengelaskan kad situasi yang sesuai umur tanpa lakonan sentuhan.",
+        "explanation": "Guru A menerangkan contoh sentuhan tidak selamat pada bahagian peribadi dan sentuhan tidak disenangi; Guru B membimbing respons.",
+        "elaboration": "Murid memilih tindakan menjauh, berkata TIDAK atau memberitahu dewasa dipercayai melalui kad.",
+        "evaluation": "Kedua-dua guru menyemak dua contoh situasi dan satu saluran bantuan tanpa meminta pengalaman sendiri."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 28,
+      "source_catalog_codes": [
+        "3.1.6",
+        "3.1.7"
+      ],
+      "source_pdf_page": 28,
+      "source_word_sha256": "33db79cabac05587027d7509d537a2c22e8575ff5bc78a235a27461540f10c01",
+      "source_pdf_sha256": "ff8fe2be45360625499ec1966fa41cf043553c1cea07b449def1436e774da76d",
+      "dk_printed_page": 36,
+      "source_activity_titles": [
+        "Latihan Suara Tegas",
+        "Padankan Situasi",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A memodelkan nada suara tegas menggunakan ayat ringkas.",
+        "exploration": "Murid berlatih berkata TIDAK tanpa menyentuh rakan; Guru B membimbing padanan kad situasi.",
+        "explanation": "Guru A memodelkan kata TIDAK, menjauh dan melapor; Guru B menerangkan tindakan meminta pertolongan.",
+        "elaboration": "Murid membuat simulasi tanpa sentuhan: berkata TIDAK, bergerak ke tempat selamat dan melapor.",
+        "evaluation": "Kedua-dua guru menyemak kata TIDAK tegas, dua tindakan selamat dan pilihan dewasa dipercayai."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 29,
+      "source_catalog_codes": [
+        "3.1.8"
+      ],
+      "source_pdf_page": 29,
+      "source_word_sha256": "768d21d3a3c5c243d9f7afb829cce8ea4bbdc0b457b7cca64fe834555433b08c",
+      "source_pdf_sha256": "0e2251ef8610bcad5a48a977c089573415034b6dfe3d44ad54c3cbb421cd567a",
+      "dk_printed_page": 36,
+      "source_activity_titles": [
+        "Latih Bunyi Vokal",
+        "Ajuk Pic Mudah",
+        "Nyanyi Mengikut Tempo"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan kad lampu isyarat; murid menyebut kata berhenti.",
+        "exploration": "Murid berlatih vokal dan tiga frasa keselamatan; Guru B membimbing ajukan pic.",
+        "explanation": "Guru A memodelkan sebutan serta tempo; Guru B mencontohkan pic.",
+        "elaboration": "Murid menyanyikan rangkap asli ciptaan guru sambil menunjukkan kad tindakan selamat.",
+        "evaluation": "Kedua-dua guru menyemak tiga frasa jelas, pic dan tempo."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 30,
+      "source_catalog_codes": [
+        "3.1.9"
+      ],
+      "source_pdf_page": 30,
+      "source_word_sha256": "0b3dbffbf1f0435f7787d232602eac8e6f72843f84a7b538cc7919e333465e7d",
+      "source_pdf_sha256": "2c57a2557ff2029c83d143ee3f1d30115e28cc29ed24055ba364680924ed3b70",
+      "dk_printed_page": 36,
+      "source_activity_titles": [
+        "Pilih Risiko Rekaan",
+        "Hasilkan Poster",
+        "Pamer dan Terangkan"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan kad situasi berlari di tangga; murid mencadangkan peringatan.",
+        "exploration": "Murid memilih satu risiko rekaan dan merancang simbol amaran serta tindakan selamat.",
+        "explanation": "Guru A memodelkan poster dua bahagian; Guru B membimbing bahan dan kejelasan mesej.",
+        "elaboration": "Murid menghasilkan poster, mempamerkannya dan menerangkan tindakan selamat.",
+        "evaluation": "Kedua-dua guru menyemak risiko, tindakan selamat, pesanan jelas dan hasil siap."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 31,
+      "source_catalog_codes": [
+        "3.1.10",
+        "3.1.11"
+      ],
+      "source_pdf_page": 31,
+      "source_word_sha256": "3703740fad22161719b662d094e35ef0c81ab9ca588a04b8d16f964db215b55c",
+      "source_pdf_sha256": "851afffe4fcf9af54f1844ffbc7c135a2569e45621ae5875fbfe793913e4bea0",
+      "dk_printed_page": 37,
+      "source_activity_titles": [
+        "Kenal Nama Pasukan",
+        "Lakar dan Warnakan",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar polis, bomba dan tentera; murid meneka tugas.",
+        "exploration": "Murid memadankan tiga kad pasukan dengan kad tugas; Guru B menyediakan bahan karya.",
+        "explanation": "Guru A menerangkan tugas setiap pasukan; Guru B memodelkan lakaran, montaj atau kolaj.",
+        "elaboration": "Murid menghasilkan satu karya pasukan keselamatan dan menerangkan satu tugas setiap pasukan.",
+        "evaluation": "Kedua-dua guru menyemak tiga nama dan tugas, karya siap serta penerangan."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 32,
+      "source_catalog_codes": [
+        "3.1.12"
+      ],
+      "source_pdf_page": 32,
+      "source_word_sha256": "8ebba56d6b0d0ac356c1a14da9f6bd105ae3af363ae368d839846b960304fbab",
+      "source_pdf_sha256": "7060005a03908cae0773f60d4dd970528c6f9a384474430b809b4f1c30b0ca26",
+      "dk_printed_page": 37,
+      "source_activity_titles": [
+        "Susun Galeri Selamat",
+        "Terangkan Karya",
+        "Hargai Persembahan"
+      ],
+      "phases": {
+        "engagement": "Guru A mempamerkan karya contoh dan memodelkan dua ayat penerangan.",
+        "exploration": "Murid menyusun karya terdahulu di galeri dengan Guru B tanpa menghalang laluan.",
+        "explanation": "Guru A membimbing cara menerangkan nama dan tugas pasukan; Guru B mengurus giliran.",
+        "elaboration": "Murid mempamerkan karya, menyampaikan dua ayat dan memberi maklum balas positif.",
+        "evaluation": "Kedua-dua guru menyemak karya dipamerkan, dua ayat tepat dan respons hormat."
+      },
+      "note": "Source lesson and DK SP reviewed; retain exact objective, criteria and PBD in render; both teachers assess.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    }
+  ],
+  "release": false
+}
