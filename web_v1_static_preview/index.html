@@ -2110,6 +2110,7 @@ function currentRphParams(){
  return params;
 }
 function resetRphPreview(){
+ clearErphDownloadOffer();
  const nextReflectionSelection=JSON.stringify([currentRphLessonKey(),chosenTeacherClass(),
   teacherDate.value,teacherTimeStart.value,teacherTimeEnd.value]);
  if(reflectionSelection!==nextReflectionSelection){
@@ -2340,7 +2341,24 @@ function showStep(el,visible){
  document.getElementById(el.id+"-label").hidden=!visible;
  if(el===subject)document.getElementById("rph-subject-search").hidden=!visible;
 }
+function clearErphDownloadOffer(){document.getElementById("erph-after-download")?.remove();}
+function offerErphDownloadedWord(documentBlob,meta,status){
+ clearErphDownloadOffer();
+ const entry=document.getElementById("erph-private-entry");
+ if(!entry||entry.hidden||!documentBlob||documentBlob.size>2000000)return;
+ const btn=document.createElement("button");btn.id="erph-after-download";btn.type="button";btn.className="material-download-action";btn.textContent="Simpan ke e-RPH";
+   btn.onclick=async()=>{btn.disabled=true;try{
+    const r=await fetch("/api/erph/import-word",{method:"POST",credentials:"same-origin",cache:"no-store",headers:{"Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},body:documentBlob});
+    const j=await r.json();if(!r.ok||!j.fields)throw Error(j.error||"Import gagal");
+    // Transfer only into a same-tab, in-memory editor via a user-initiated POST form.
+    const target=document.createElement("form");target.method="POST";target.action="/erph/import-preview";
+    const input=document.createElement("input");input.type="hidden";input.name="draft";input.value=JSON.stringify({...meta,...j.fields,status:"draft"});target.append(input);document.body.append(target);target.submit();
+   }catch(e){status.textContent="Word sudah dimuat turun. "+e.message;btn.disabled=false;}};
+
+ status.insertAdjacentElement("afterend",btn);
+}
 function resetMaterials(){
+ clearErphDownloadOffer();
  document.getElementById("show-materials").hidden=true;
  document.getElementById("show-materials").disabled=true;
  document.getElementById("materials-access-status").hidden=true;
@@ -2792,19 +2810,9 @@ async function kp2027DownloadVariant(format,variant){
    throw Error(data.error||"RPH belum dapat dimuat turun (HTTP "+response.status+").");
   }
   const documentBlob=await response.blob();
-  if(format==="word"&&revision===kp2027PilotEpoch&&!document.getElementById("erph-private-entry")?.hidden){
-   const old=document.getElementById("erph-after-download");if(old)old.remove();
-   const btn=document.createElement("button");btn.id="erph-after-download";btn.type="button";btn.className="material-download-action";btn.textContent="Simpan ke e-RPH";
+  if(format==="word"&&revision===kp2027PilotEpoch){
    const labels={MATH_KP2027:"Matematik SK",BM_SK_KP2027:"Bahasa Melayu SK",PJ_KP2027:"Pendidikan Jasmani",ALAM_KP2027:"Alam dan Manusia"};
-   const meta={teaching_date:teacherPayload.teacher_date,class_name:teacherPayload.teacher_class,subject_name:labels[code],start_time:teacherPayload.teacher_start,end_time:teacherPayload.teacher_end,rph_format:variant==="5p"?"5p":"biasa"};
-   btn.onclick=async()=>{btn.disabled=true;try{
-    const r=await fetch("/api/erph/import-word",{method:"POST",credentials:"same-origin",cache:"no-store",headers:{"Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},body:documentBlob});
-    const j=await r.json();if(!r.ok||!j.fields)throw Error(j.error||"Import gagal");
-    // Transfer only into a same-tab, in-memory editor via a user-initiated POST form.
-    const target=document.createElement("form");target.method="POST";target.action="/erph/import-preview";
-    const input=document.createElement("input");input.type="hidden";input.name="draft";input.value=JSON.stringify({...meta,...j.fields,status:"draft"});target.append(input);document.body.append(target);target.submit();
-   }catch(e){status.textContent="Word sudah dimuat turun. "+e.message;btn.disabled=false;}};
-   status.insertAdjacentElement("afterend",btn);
+   offerErphDownloadedWord(documentBlob,{teaching_date:teacherPayload.teacher_date,class_name:teacherPayload.teacher_class,subject_name:labels[code],start_time:teacherPayload.teacher_start,end_time:teacherPayload.teacher_end,rph_format:variant==="5p"?"5p":"biasa"},status);
   }
   const ext=format==="pdf"?"pdf":"docx";
   const stem=code==="MATH_KP2027"?"MATH_T1_"+group:code==="BM_SK_KP2027"?"BM_SK_T1_"+group:code==="PJ_KP2027"?"PJ_T1_"+group:"ALAM_T1";
@@ -3569,6 +3577,10 @@ async function generateRphFile(format){
   const blob=await response.blob();
   if(blob.size<1000||blob.size>15*1024*1024)
     throw Error("Saiz fail RPH tidak sah.");
+  if(!isPdf&&currentRphParams()?.toString()===key){
+   const subjectLabel=subject.selectedOptions[0]?.textContent?.trim()||params.get("subject");
+   offerErphDownloadedWord(blob,{teaching_date:params.get("teacher_date")||"",class_name:params.get("teacher_class")||"",subject_name:subjectLabel,start_time:params.get("teacher_start")||"",end_time:params.get("teacher_end")||"",rph_format:"biasa"},downloadStatus);
+  }
   const url=URL.createObjectURL(blob),link=document.createElement("a");
   link.href=url;
   link.download="CIKGULAJU_RPH_"+subject.value+"_TAHUN_"+year.value+"_"+
