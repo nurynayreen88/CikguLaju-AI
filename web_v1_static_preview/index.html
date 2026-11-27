@@ -794,6 +794,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab is-active" data-web-view="guide" aria-controls="view-guide" aria-current="page"><span aria-hidden="true">📖</span> Panduan</button>
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
     <button type="button" class="sidebar-tab" data-web-view="today" aria-controls="view-today"><span aria-hidden="true">⚡</span><span class="sidebar-tab-label">RPH Pantas <small>Hari Ini &amp; Minggu Ini</small></span></button>
+    <button type="button" class="sidebar-tab" id="erph-private-entry" hidden><span aria-hidden="true">🗂️</span> e-RPH Saya</button>
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
@@ -3607,5 +3608,11 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/web-feedback.js?v=pusat-admin-alert-20261123"></script>
 <script src="/assets/web-admin-chat.js?v=pusat-admin-read-20261123"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
+<script>
+(()=>{const entry=document.getElementById('erph-private-entry');if(!entry)return;
+ entry.addEventListener('click',()=>location.assign('/erph'));
+ fetch('/api/erph/availability',{credentials:'same-origin',cache:'no-store'}).then(async r=>{if(r.ok&&(await r.json()).enabled===true)entry.hidden=false;}).catch(()=>{});
+})();
+</script>
 </body>
 </html>
