@@ -1,0 +1,2179 @@
+{
+  "status": "DRAFT",
+  "subject": "Matematik SK",
+  "year": 1,
+  "curriculum": "KP2027",
+  "source": {
+    "catalog_sha": "af8fb413c5d84eb9433abd6728b75d2db8056592",
+    "archive_sha": "07003ed9b0037359ff30a8956ba328d3d5eb76ad44417bf1be5be18d74fe50cf",
+    "combined_pdf_drive_id": "1x8eTja5wJNAdolORpkH9asShxbpnHELn",
+    "dk_drive_id": "1YStEYq-J1oyg7L_hjZtxL93EHJv5RrNl",
+    "total": {
+      "A": 125,
+      "B": 124
+    }
+  },
+  "records": [
+    {
+      "group": "A",
+      "lesson": 21,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 21,
+      "source_word_sha256": "9a801415fa5226919aa0ead9b2bffe8c2f79dc3e30e6eb5bf0a676192ea2683b",
+      "source_pdf_sha256": "b78325bd9b2be080d0eb4170c6a820392d5b90d89a6af1c583787b61516043ab",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 2 dan 3 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 22,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 22,
+      "source_word_sha256": "df4c0b98a5e976984f62d143e81823017967bbf65069d33c293aff98f0f7decb",
+      "source_pdf_sha256": "9a748a6c703f9dcd96ac0686d414e0ba6dbf390ebfb771c8e4c60443aba6f843",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 4 dan 5 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 23,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 23,
+      "source_word_sha256": "f01f5a3a2d2435aafb1ae13e842d3c06da92557ed8be09adc4a0bca62de6e7b6",
+      "source_pdf_sha256": "246db2136d798e356a1bd54b192587b5feccd8f491e6ae67c8587879933c1d0d",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 1 dan 6 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 24,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 24,
+      "source_word_sha256": "8015317c7b4ab021c7d689abf5605c41d9bed9967b5145f9ec007f9e2f1de428",
+      "source_pdf_sha256": "c8ab608037838e2d891e9727fe956b37636e3e3a47148d7e0e49cebb9834725c",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 3 dan 3 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 25,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 25,
+      "source_word_sha256": "ee207b8a21ada476879a4823ea7a565bfd6e8d180b56f6f986fafd62b99b8dcd",
+      "source_pdf_sha256": "2906142a42f76cf949e3b46c65d2c99a6fc24c7522ff3b5121892d8ff0f675b9",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 5 dan 5 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 26,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 26,
+      "source_word_sha256": "38e4f543e2bd19d6cf8da9b48f4f28d7f0f9503e0db13fd94f2ba3d8574c026c",
+      "source_pdf_sha256": "9151de5817291c001bb7331c70a12e30d879a0d245517be9c867f076be62b4ec",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 2 dan 7 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 27,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 27,
+      "source_word_sha256": "46c301359aef02d99e03159fef90b5744ae9a2a3ead862540b6d45c78c4cf58b",
+      "source_pdf_sha256": "6644b4f3078e93fcc82f2b0cc536457e031788d4a92e797b85fdfe81df44fcfd",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 7 + 8 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 28,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 28,
+      "source_word_sha256": "a3e27ce9dec465bb52a8ecf09b1249fc0f54a19644bc994782273ff3a70c0532",
+      "source_pdf_sha256": "1183d84aae2036b2a2f68f9c814f02b648fa80ecb8064581e0706c2bd78588fd",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 10 + 9 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 29,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 29,
+      "source_word_sha256": "08978df05925f87636af7aee09ba88276999467c1b06c8f250b8b8d5412997b6",
+      "source_pdf_sha256": "405aeb1b92eafff84a3582ea8d2bad6c10c42b2c8360d933c9418f3c5b210e5f",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 14 + 9 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 30,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 30,
+      "source_word_sha256": "9ad5e98a32e74630ab32468663213a0cadac018cdb8e254093231fdfe5c32d78",
+      "source_pdf_sha256": "6fb36147cec8ac38b2fa9f46e49734111b309d790b3392ca0fea372d356e5e00",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 12 + 5 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 31,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 31,
+      "source_word_sha256": "37d84e1be01eac4bcea8afa6243204c482c99a2fb0f01ed3ebc817898668677d",
+      "source_pdf_sha256": "06656904e2cb6ff40d11788efc0f72ae56994592fc7a254126c36570f3bd6133",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 16 + 8 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 32,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 32,
+      "source_word_sha256": "b720a37407c511264361409855b29951cc068c5a7b3433662111b5a591819af5",
+      "source_pdf_sha256": "84c47473e08f1698e2099919c706b92b55def868855bee83e0767d4d6f2501bf",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 13 + 7 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 33,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 33,
+      "source_word_sha256": "13085d55f7c3c5503591ab7eeb25ae20b397690f69572312bfad2c8b5ef033b7",
+      "source_pdf_sha256": "ae79f0f9ff22afc46fc92e0d8ee56b3a2b183008f8a8918200d8c5d9137aaafb",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 14 pensel ditambah 7 pensel; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 34,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 34,
+      "source_word_sha256": "5a4213a5fa454512c3afed1de19048209861e5691263af4bda3bd0dcf426dcdf",
+      "source_pdf_sha256": "913c6e56ee566f0e342638c497430fa63f165af92b22f0fd9564f12f97f4f537",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 8 buku ditambah 9 buku; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 35,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 35,
+      "source_word_sha256": "d61f703c133b83bb16a90844793ea4c23536340842566df6f01d42d697e590ff",
+      "source_pdf_sha256": "603bcfd0ddd16c056a921904ec865e77801e8139ff261e25352b632cee58980f",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 13 guli ditambah 6 guli; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 36,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 36,
+      "source_word_sha256": "8218a8e246e971055cd942b39efe5657e598e6a64d85292d0122079ceac4039c",
+      "source_pdf_sha256": "c25aa0dca207fc2fd8993daa55a1e83aef6549fb0d85febdc062d84d5ed8067c",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 9 kad ditambah 12 kad; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 37,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 37,
+      "source_word_sha256": "ebccdb38c050542fbc3c7d9026a21a6a0c340966320bd17686e71a1a4e88f236",
+      "source_pdf_sha256": "016b2f29e6c70b051ebed97408993ed8aae18b43455e219c0aae8fda0a148753",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 16 pelekat ditambah 7 pelekat; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 38,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 38,
+      "source_word_sha256": "14e772537532360d48ed76c60fa63e0795f614b6b23b3467ece737a73fcc03a5",
+      "source_pdf_sha256": "66774c6006b315f07d03a216b4319f94b5ed195b2a198f2f8646c5b6a198e146",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 6 objek, memangkah 2 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 39,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 39,
+      "source_word_sha256": "d1028dd5d2b170ce354fc525fe561a09266317c274e19105f30ef8125c47f502",
+      "source_pdf_sha256": "431934259889f642746dab6633c83db80458f160cf75c231bdcd918b0a547341",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 10 objek, memangkah 3 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 40,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 40,
+      "source_word_sha256": "5e9fc47c77c58df16bfde50a52bdf668f32f932dbd38bf367d3fc6628ce3ed32",
+      "source_pdf_sha256": "1588c61b4a2da08b793f20ffe0b67f49ef63b60961a47d30471f12272758fc31",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 8 objek, memangkah 4 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 41,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 41,
+      "source_word_sha256": "8cd6dbe3d8f0afcbbea5b23b2d4837d3f8c0b3847e4f9005f94be1829974325d",
+      "source_pdf_sha256": "50b041ce488886e8b2b3625dbde99d0b44a6983a88846fb2a143fccf5fced4d4",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 7 objek, memangkah 3 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 42,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 42,
+      "source_word_sha256": "a90492fefc79bdc022481d43bf390cf8ac2e694d8e42f1537a710b943900725d",
+      "source_pdf_sha256": "98522948ea18caec30c24a7f16778a24f184c936213af39c6d5baa846674da72",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 9 objek, memangkah 2 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 43,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 43,
+      "source_word_sha256": "d97125f05150b8f5465eb1d5b9b593f63d7debf24cdff4455354cf226912277d",
+      "source_pdf_sha256": "6cd46a31ee7969feb6f7a79768d0cfab3ec840aa7f0dad37018159fd4dc5d7af",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 24 − 7 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 44,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 44,
+      "source_word_sha256": "aed11d6151eb67aa3c5fe1b6d4ed5a827e3738db806f13808583b9b4015d1895",
+      "source_pdf_sha256": "946668368e43c11d50926c0a039108877dbc137b9b89b04f348894a76656e5b7",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 21 − 6 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 45,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 45,
+      "source_word_sha256": "32ef9ba98ed26aa081fdf71317cdb9639e637fcd0a8f5adc87a5b61e67a5899d",
+      "source_pdf_sha256": "a51c2b673b79c5a7b24cd3cb114a4bf2af5d61e7a315f77065a0442c399b76d0",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 17 − 8 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 46,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 46,
+      "source_word_sha256": "08ab4711985fa0edf70521aa55d57d31753a46161ac19401a69d9435acfd85bb",
+      "source_pdf_sha256": "7c4dc2761f1ab8ad35922c80727449cfc32a9af4da3028aa523893541e914381",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 28 − 9 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 47,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 47,
+      "source_word_sha256": "d72f88be36e762c71b4a562d1a5f8790024bc4b7ca31acc85165f9a94443e1e9",
+      "source_pdf_sha256": "b7e0da22f3a8f27ea7dda473a250322aab30d5b26110e7ccb35718a81550b3d0",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 26 − 8 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 48,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 48,
+      "source_word_sha256": "6cf28a8ccec9d57383ef704271c97de5eef96514a516d217407126653a1112c0",
+      "source_pdf_sha256": "7285bb97c041bb44d6c15c340fbe9cd3bb69bda8a60870186da2dc57f27c0ef9",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 24 buku, 8 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 49,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 49,
+      "source_word_sha256": "650ed55800f0442a78ed307ef129cbaa586752dbbfc95ed6d4c7d1dd234955a3",
+      "source_pdf_sha256": "ff7f2df42b73545ef3308ccd1d7a03f3f8cb0e222279152b23eb51942e5e047b",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 19 kad, 7 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 50,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 50,
+      "source_word_sha256": "a148fdc2e20bad9599bffae534b1712492cb1794e80826d997be797f9bd6024e",
+      "source_pdf_sha256": "a9d3a8d26230821e91d21618dca938c0e46675e71c7f0b23ca853544baa394cc",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 25 pensel, 9 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 51,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 51,
+      "source_word_sha256": "eed244b387b745b4bf006c15acb4b074e5034aa60d265c95165332161a651fb3",
+      "source_pdf_sha256": "afd39065c984a2d50e71222187042eb6e06dcce8d5ac547f71cbf0f5ca10699e",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 18 pelekat, 6 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 52,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 52,
+      "source_word_sha256": "3a5096a5f452057721245b618b7d99b20155c31aeff76fd67db3251462d89b52",
+      "source_pdf_sha256": "7d518a69f22e5a8c20d9249ab30c483cc3f8836f28f9397fd290df46127e77fa",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 27 belon, 8 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 53,
+      "sp_code": "3.1.1",
+      "sp": "Mengenal wang kertas dan duit syiling.",
+      "title": "Mengenal Wang Malaysia",
+      "dk_printed_page": null,
+      "source_pdf_page": 53,
+      "source_word_sha256": "bd22721955d1d59417c704c01809cac2cb3e029f266253d45d2747daca9a30a3",
+      "source_pdf_sha256": "38ed49e89487b1cb6128d3492fb3cbd0d6d7ed0c386ccedeac73f9e86ed72fbd",
+      "source_activity_titles": [
+        "Kenal Wang Kertas",
+        "Bezakan Duit Syiling",
+        "Kedai Mini: Cari Wang"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan wang contoh; murid menyatakan wang yang pernah dilihat.",
+        "exploration": "Murid meneliti dan mengelaskan wang kertas RM1, RM5, RM10 serta syiling 5, 10, 20 dan 50 sen.",
+        "explanation": "Guru menerangkan cara mengenal wang berdasarkan nilai yang tertera; murid memadankan label.",
+        "elaboration": "Murid memilih wang contoh dalam permainan kedai mini berdasarkan kad nilai RM1, 10 sen dan RM10 dan menyemak bersama pasangan.",
+        "evaluation": "Guru menunjukkan tujuh jenis wang secara rawak; murid menamakan sekurang-kurangnya enam dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 54,
+      "sp_code": "3.1.1",
+      "sp": "Mengenal wang kertas dan duit syiling.",
+      "title": "Mengenal Wang Malaysia",
+      "dk_printed_page": null,
+      "source_pdf_page": 54,
+      "source_word_sha256": "49e96fafbdd22eed562eca887a61a01db5ef8e86471849722c0b4fa0b2a159b1",
+      "source_pdf_sha256": "2eb67c151f49810fc7d72b517747b5ece359ce7cab79aca0db0b13be63a3e295",
+      "source_activity_titles": [
+        "Kenal Wang Kertas",
+        "Bezakan Duit Syiling",
+        "Kedai Mini: Cari Wang"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan wang contoh; murid menyatakan wang yang pernah dilihat.",
+        "exploration": "Murid meneliti dan mengelaskan wang kertas RM1, RM5, RM10 serta syiling 5, 10, 20 dan 50 sen.",
+        "explanation": "Guru menerangkan cara mengenal wang berdasarkan nilai yang tertera; murid memadankan label.",
+        "elaboration": "Murid memilih wang contoh dalam permainan kedai mini berdasarkan kad nilai RM5, 20 sen dan 50 sen dan menyemak bersama pasangan.",
+        "evaluation": "Guru menunjukkan tujuh jenis wang secara rawak; murid menamakan sekurang-kurangnya enam dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 55,
+      "sp_code": "3.1.1",
+      "sp": "Mengenal wang kertas dan duit syiling.",
+      "title": "Mengenal Wang Malaysia",
+      "dk_printed_page": null,
+      "source_pdf_page": 55,
+      "source_word_sha256": "4d5def30bf7fa71545b2a94629d9d45d6ab9abd784e48fd1dea10ba2b422e59e",
+      "source_pdf_sha256": "3041fbf0f8f23c5c5296966e603b64f23c9145edcfb689139bd87d8a170f086d",
+      "source_activity_titles": [
+        "Kenal Wang Kertas",
+        "Bezakan Duit Syiling",
+        "Kedai Mini: Cari Wang"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan wang contoh; murid menyatakan wang yang pernah dilihat.",
+        "exploration": "Murid meneliti dan mengelaskan wang kertas RM1, RM5, RM10 serta syiling 5, 10, 20 dan 50 sen.",
+        "explanation": "Guru menerangkan cara mengenal wang berdasarkan nilai yang tertera; murid memadankan label.",
+        "elaboration": "Murid memilih wang contoh dalam permainan kedai mini berdasarkan kad nilai RM10, 5 sen dan 20 sen dan menyemak bersama pasangan.",
+        "evaluation": "Guru menunjukkan tujuh jenis wang secara rawak; murid menamakan sekurang-kurangnya enam dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 56,
+      "sp_code": "3.1.1",
+      "sp": "Mengenal wang kertas dan duit syiling.",
+      "title": "Mengenal Wang Malaysia",
+      "dk_printed_page": null,
+      "source_pdf_page": 56,
+      "source_word_sha256": "d419b92cf0a06c5126d244e69bcb310b53befca52b77647528d42951974133db",
+      "source_pdf_sha256": "e0493f5ab47fc56b80080afe23db5bf132de034e0555ded859475e0a017592fe",
+      "source_activity_titles": [
+        "Kenal Wang Kertas",
+        "Bezakan Duit Syiling",
+        "Kedai Mini: Cari Wang"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan wang contoh; murid menyatakan wang yang pernah dilihat.",
+        "exploration": "Murid meneliti dan mengelaskan wang kertas RM1, RM5, RM10 serta syiling 5, 10, 20 dan 50 sen.",
+        "explanation": "Guru menerangkan cara mengenal wang berdasarkan nilai yang tertera; murid memadankan label.",
+        "elaboration": "Murid memilih wang contoh dalam permainan kedai mini berdasarkan kad nilai RM1, RM5 dan 50 sen dan menyemak bersama pasangan.",
+        "evaluation": "Guru menunjukkan tujuh jenis wang secara rawak; murid menamakan sekurang-kurangnya enam dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 57,
+      "sp_code": "3.2.1",
+      "sp": "Menentukan nilai: (i) wang kertas hingga RM10, (ii) duit syiling hingga RM1.",
+      "title": "Menentukan Nilai Wang",
+      "dk_printed_page": 70,
+      "source_pdf_page": 57,
+      "source_word_sha256": "bcb75ab0428272f37e3dcdee5b9048e09fc7e792bb8ddfb95ab31f3835b95a3c",
+      "source_pdf_sha256": "3dedfb5089567a1f6af6234ca9414041c2bb93a26f274254eb28b83f2c1b237d",
+      "source_activity_titles": [
+        "Kenal Nilai Wang Kertas",
+        "Nilai Duit Syiling",
+        "Stesen Kenal Nilai"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+        "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+        "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+        "elaboration": "Murid membilang, menyebut dan menulis jumlah dua keping RM1 dan satu keping RM5 pada kad stesen nilai.",
+        "evaluation": "Murid menentukan nilai tujuh set wang kertas atau duit syiling; sekurang-kurangnya enam tepat."
+      },
+      "academic_status": "HOLD_VALUE_TOTAL_OBJECTIVE_CRITERIA_REVIEW",
+      "note": "DK printed pp70–71 includes counting, saying and writing combined values. Original criterion focuses seven displayed individual denominations; proposed phase extends to totals and must be reconciled before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 58,
+      "sp_code": "3.2.1",
+      "sp": "Menentukan nilai: (i) wang kertas hingga RM10, (ii) duit syiling hingga RM1.",
+      "title": "Menentukan Nilai Wang",
+      "dk_printed_page": 70,
+      "source_pdf_page": 58,
+      "source_word_sha256": "9f5180d051703f82ed028a205619af1be55e62faeb062d17341af49444bd01e2",
+      "source_pdf_sha256": "ff23c98eba1b82fdf015c2a3e50c19fa42e9295712e05f2859402f21577caab2",
+      "source_activity_titles": [
+        "Kenal Nilai Wang Kertas",
+        "Nilai Duit Syiling",
+        "Stesen Kenal Nilai"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+        "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+        "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+        "elaboration": "Murid membilang, menyebut dan menulis jumlah 50 sen, 20 sen, 10 sen dan 5 sen pada kad stesen nilai.",
+        "evaluation": "Murid menentukan nilai tujuh set wang kertas atau duit syiling; sekurang-kurangnya enam tepat."
+      },
+      "academic_status": "HOLD_VALUE_TOTAL_OBJECTIVE_CRITERIA_REVIEW",
+      "note": "DK printed pp70–71 includes counting, saying and writing combined values. Original criterion focuses seven displayed individual denominations; proposed phase extends to totals and must be reconciled before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 59,
+      "sp_code": "3.2.1",
+      "sp": "Menentukan nilai: (i) wang kertas hingga RM10, (ii) duit syiling hingga RM1.",
+      "title": "Menentukan Nilai Wang",
+      "dk_printed_page": 70,
+      "source_pdf_page": 59,
+      "source_word_sha256": "93aabd725eb1f3ca6cee0b78c646c5bcee7a8fd9f7af12ec34a7b68037faeb6d",
+      "source_pdf_sha256": "f4b8e80da878b88ee91acf7e306662a467409061d439d1b5762fbad83515ceb0",
+      "source_activity_titles": [
+        "Kenal Nilai Wang Kertas",
+        "Nilai Duit Syiling",
+        "Stesen Kenal Nilai"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+        "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+        "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+        "elaboration": "Murid membilang, menyebut dan menulis jumlah sekeping RM5 dan lima keping RM1 pada kad stesen nilai.",
+        "evaluation": "Murid menentukan nilai tujuh set wang kertas atau duit syiling; sekurang-kurangnya enam tepat."
+      },
+      "academic_status": "HOLD_VALUE_TOTAL_OBJECTIVE_CRITERIA_REVIEW",
+      "note": "DK printed pp70–71 includes counting, saying and writing combined values. Original criterion focuses seven displayed individual denominations; proposed phase extends to totals and must be reconciled before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 60,
+      "sp_code": "3.2.1",
+      "sp": "Menentukan nilai: (i) wang kertas hingga RM10, (ii) duit syiling hingga RM1.",
+      "title": "Menentukan Nilai Wang",
+      "dk_printed_page": 70,
+      "source_pdf_page": 60,
+      "source_word_sha256": "cf7b6ab3cca3430c433635cf4a37af3337e323470d40a1a1473abdd5cd651da0",
+      "source_pdf_sha256": "b731920ab2d15b983923b13d6f19c3d864017ca777c354c7b8d523354d10a35c",
+      "source_activity_titles": [
+        "Kenal Nilai Wang Kertas",
+        "Nilai Duit Syiling",
+        "Stesen Kenal Nilai"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+        "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+        "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+        "elaboration": "Murid membilang, menyebut dan menulis jumlah dua keping 20 sen dan dua keping 10 sen pada kad stesen nilai.",
+        "evaluation": "Murid menentukan nilai tujuh set wang kertas atau duit syiling; sekurang-kurangnya enam tepat."
+      },
+      "academic_status": "HOLD_VALUE_TOTAL_OBJECTIVE_CRITERIA_REVIEW",
+      "note": "DK printed pp70–71 includes counting, saying and writing combined values. Original criterion focuses seven displayed individual denominations; proposed phase extends to totals and must be reconciled before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 21,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 146,
+      "source_word_sha256": "e6d3310988a6d58f852dd08fbf9f64d814d2a40654c0a4c8c61ce8d5c71e287c",
+      "source_pdf_sha256": "56362715bb85147f48021bcb89fd68ab2037df6d931084d680d3222da33257b0",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 2 dan 3 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 22,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 147,
+      "source_word_sha256": "45c8595ebfd53f06ec4267b25cccf5037796dc5ebdfd16c3d0f6311ec711a2e5",
+      "source_pdf_sha256": "b50171f72d48f3e5051e155030306dc91f4405fddd4a8a078891f0389c6b2e56",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 4 dan 5 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 23,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 148,
+      "source_word_sha256": "f5d30043f217cd336cb96ce12e666122968a7f0b962c440a981312df2942fb1d",
+      "source_pdf_sha256": "e0c94b9c2416aff34adf5c4ee37845da64d11244e10b3c2ca3428ff91b76be8a",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 1 dan 6 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 24,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 149,
+      "source_word_sha256": "b0d23ce22a2c72a9eaeb1fe6939176cce8132741c14a5be77bfc3cef37317181",
+      "source_pdf_sha256": "15b7ee9a8b541e9ad0831a8911bfee5312cf19cae87e3b932b6c797cb9353b9e",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 3 dan 3 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 25,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 150,
+      "source_word_sha256": "a33ba0df7320387781c61c481c38b07e5387181240cb1ecffa61062cf2d8c9ca",
+      "source_pdf_sha256": "9342f7c9eca82a4aa697c8365d773f1cdee3b0f976ac5612c5018fb4905655b4",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 5 dan 5 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 26,
+      "sp_code": "2.1.1",
+      "sp": "Memahami operasi tambah.",
+      "title": "Memahami Operasi Tambah",
+      "dk_printed_page": 41,
+      "source_pdf_page": 151,
+      "source_word_sha256": "dce06fd9d84caaf322843ce021ca3c0c57b3dfd26203d4367c19a16d4162eb84",
+      "source_pdf_sha256": "bd6695dbf5749cfd30827fc3db61fb98b108a8527ca92c4d87938a76ed26f729",
+      "source_activity_titles": [
+        "Gabung Dua Kumpulan",
+        "Teroka Operasi Tambah",
+        "Terangkan Situasi Tambah"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan dua kumpulan pembilang dan meminta murid meramal jumlah.",
+        "exploration": "Murid menggabungkan dua kumpulan pembilang dalam lingkungan 10 dan membilang semuanya.",
+        "explanation": "Guru mengaitkan tindakan gabungan dengan simbol + dan =; murid menerangkan hasil.",
+        "elaboration": "Murid menggambarkan gabungan 2 dan 7 objek, menulis ayat tambah dan menerangkan jumlah kepada pasangan.",
+        "evaluation": "Murid menunjukkan penggabungan dua kumpulan objek dan menerangkan hasilnya menggunakan contoh mudah."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 27,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 152,
+      "source_word_sha256": "58f67bd7c84f79add34a0b8168a3a93684d00c576717fac10f628c383d636806",
+      "source_pdf_sha256": "9619100ec2b321417e0b7db618fec07966849a189efbf92891f4197f8475545a",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 7 + 8 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 28,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 153,
+      "source_word_sha256": "ffd95522f58eeb9173ab691e6fc6e4bd5ea767a9d5f13aebb2dac12a5d1ed9eb",
+      "source_pdf_sha256": "9a00cb7108a39cc6ece3cc58681f4924221fbfd601e75eb4f49fb37f2b6632c2",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 10 + 9 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 29,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 154,
+      "source_word_sha256": "b567086b4a78bca4a227d631014a8852d2c26880a1d95622c7469bea533c6fc2",
+      "source_pdf_sha256": "200bf2c598cd96c953de256d152f1879e25ee83ab775567c80aff4b43c091340",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 14 + 9 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 30,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 155,
+      "source_word_sha256": "77109a622df8835614ebafd4ad71c84816f7a9af2b9425004eef4e1c39dd8134",
+      "source_pdf_sha256": "05d32679777b3fa5dd02655b25c3db66b6009195d7f39ad5316504031c3d1019",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 12 + 5 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 31,
+      "sp_code": "2.1.2",
+      "sp": "Menambah dua nombor dan hasil tambah hingga 30.",
+      "title": "Tambah Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 156,
+      "source_word_sha256": "a2ce64fae03021237a2f7dc97aa269821a8e1163c25f61775f48dac3bb32b1d1",
+      "source_pdf_sha256": "e465fdd3ffb1ab3031c86dcdcee2951a24b5f69318603b4a8f82a89862e4eaa7",
+      "source_activity_titles": [
+        "Gabungkan Dua Kumpulan",
+        "Tambah dengan Garis Nombor",
+        "Kira dan Terangkan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menggabungkan 3 pembilang merah dan 4 biru; murid menyatakan jumlah.",
+        "exploration": "Murid memodelkan 3 + 4 dengan pembilang dan menyelesaikan 5 + 6 pada garis nombor.",
+        "explanation": "Guru membimbing membilang ke hadapan dan menggunakan blok asas 10; murid menjelaskan strategi.",
+        "elaboration": "Murid menyelesaikan 16 + 8 menggunakan objek, garis nombor atau lakaran dan menerangkan kaedah kepada rakan.",
+        "evaluation": "Murid menjawab lima ayat matematik tambah hingga 30; sekurang-kurangnya empat betul dan menerangkan cara mengira."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 32,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 157,
+      "source_word_sha256": "263ec83e7315b7938f8a910add7321c628f497068c55e69726de88dfa795af50",
+      "source_pdf_sha256": "574fae8f8ff0f9dc82d2f2ba11e3dac4a6d42744b255ce2562edd4ebd923f6fd",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 14 pensel ditambah 7 pensel; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 33,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 158,
+      "source_word_sha256": "9ec23e881616df632a85f369ff539780375307a613f7e51414d11c6e2b7f27fc",
+      "source_pdf_sha256": "3416f3aaf9b3038142a9958f46ba2a06af71279918fe11dc18cd02da1dcc90c0",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 8 buku ditambah 9 buku; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 34,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 159,
+      "source_word_sha256": "8cf7136f0d545a58e04cda9b9275aae084623bbde0edaa7de0efa69945862610",
+      "source_pdf_sha256": "85327770f8957bad105003980dc754aa2c154889ee38539a927a7f207ffcda56",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 13 guli ditambah 6 guli; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 35,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 160,
+      "source_word_sha256": "21e136f2a086f5febcbc8ea81333d3cffb3f0dfc1dd93bc5bce51e918e7aa1f9",
+      "source_pdf_sha256": "c14b6369c61e153629f1ae32488caeaf5cbd93b0762952e61f57b36256845f14",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 9 kad ditambah 12 kad; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 36,
+      "sp_code": "2.1.3",
+      "sp": "Menyelesaikan masalah operasi tambah hingga 30.",
+      "title": "Masalah Harian Operasi Tambah",
+      "dk_printed_page": null,
+      "source_pdf_page": 161,
+      "source_word_sha256": "f62a25259435c799bf86570f215105a3141ffd317031b8e5abcc9317e743af4d",
+      "source_pdf_sha256": "32f10d45e58c7e64d32208546b618dc42b0df17e24f8b8278fbc6ebf91a45214",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Bina Model dan Ayat Tambah",
+        "Selesaikan Masalah Berpasangan"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru bercerita tentang tiga murid lelaki dan dua murid perempuan bercermin mata; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti dua kuantiti dan soalan, lalu melukis kumpulan objek.",
+        "explanation": "Guru membimbing model bar 12 buku cerita dan 5 buku gambar; murid menulis 12 + 5 = 17.",
+        "elaboration": "Murid menyelesaikan cerita satu langkah: 16 pelekat ditambah 7 pelekat; tulis model, ayat matematik dan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan empat masalah tambah satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan ayat matematik dan unit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 37,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 162,
+      "source_word_sha256": "983d6b467d550a5fa50917ec9672970a131ea1287ffecd40e56e084f1b94508e",
+      "source_pdf_sha256": "9c1ce2d2917252fdbee74426402be9cc7944825068c60b607123a0c295f72783",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 6 objek, memangkah 2 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 38,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 163,
+      "source_word_sha256": "4675e2387506a16134dcb9009999de53fd6e921d558c95ef8f3c90044a526b26",
+      "source_pdf_sha256": "ed83a5aa84990e48f064c8685450ed4db54bdfc460ad4155dfc0b5f5407d64cd",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 10 objek, memangkah 3 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 39,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 164,
+      "source_word_sha256": "dad7a13f1f56c7ae8af119d2fa7098333c54f5cab6e59d12c1ec8a0181e57c97",
+      "source_pdf_sha256": "9907caab26173e37f8eaa0de00335b3683767be080e7c4c947acfa28dba70cc7",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 8 objek, memangkah 4 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 40,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 165,
+      "source_word_sha256": "172ff0165662efa421cf61581e7033556f7b7ede93fd644d28de46fe97cbcf2b",
+      "source_pdf_sha256": "ca42501604ecd3d8355dd5d6014136a25289901c7feccb1d5b449f293eb12c92",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 7 objek, memangkah 3 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 41,
+      "sp_code": "2.2.1",
+      "sp": "Memahami operasi tolak.",
+      "title": "Memahami Konsep Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 166,
+      "source_word_sha256": "aa383d4aa939600ba9b70e997bec0e5a934c6d674d6cf879c5d67a6d846a4604",
+      "source_pdf_sha256": "ba6c49528fea8d0cfc0d416eb72d856e949f668e442e9cfc8bbd96a28beb5cac",
+      "source_activity_titles": [
+        "Bina Kumpulan dan Asingkan",
+        "Padankan Simbol dengan Tindakan",
+        "Tunjuk Konsep dengan Gambar"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru mengasingkan tiga daripada lapan pembilang; murid meramal baki.",
+        "exploration": "Murid menyediakan tujuh objek, mengasingkan dua dan membilang baki.",
+        "explanation": "Guru memperkenalkan simbol − dan = serta memadankan tindakan dengan 9 − 4 = 5.",
+        "elaboration": "Murid melukis 9 objek, memangkah 2 dan menulis ayat tolak; murid menerangkan baki kepada rakan.",
+        "evaluation": "Murid memodelkan dan menulis empat situasi tolak dalam lingkungan 10; sekurang-kurangnya tiga tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 42,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 167,
+      "source_word_sha256": "dad0d37a761ddbcac68e5a8ed0e61ceac26d9cd273fa84fd9a5b64fa81024f25",
+      "source_pdf_sha256": "ccece41a15b89ae93ccdc6deec1fd938846d7dd743e3408655ed805181b5e95e",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 24 − 7 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 43,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 168,
+      "source_word_sha256": "87094f2a516615fd57c0b7b6d32d9f4c9d0a6168331886b5dd91e34544dc222e",
+      "source_pdf_sha256": "ecfa2bd0b94ba47cd95811ef9eaaf86517d63ead5636d4ae4faa0b2ae96b3545",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 21 − 6 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 44,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 169,
+      "source_word_sha256": "933aac58cdf784e5f65cfe6868cce4d66db287c3455ea1b91ebb15f6d495edf0",
+      "source_pdf_sha256": "3f4f7f967f15d1575910bf1f464f5ee5ca0b57f36253e68e8fdd06284782ff50",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 17 − 8 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 45,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 170,
+      "source_word_sha256": "b49bd14b8e85a871528097861f8258ee397745420c8ca107869d15f7681fbbea",
+      "source_pdf_sha256": "701958de353f838a9c1b9a963253015791d5cbeedfa6e0f3f619dc8587db8b9f",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 28 − 9 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 46,
+      "sp_code": "2.2.2",
+      "sp": "Menolak dua nombor dalam lingkungan 30.",
+      "title": "Menolak Dua Nombor hingga 30",
+      "dk_printed_page": null,
+      "source_pdf_page": 171,
+      "source_word_sha256": "de077ccf3ec515e8850bf8f748a9245b6204be659e3ff0a22b8d659dfb1bcb2f",
+      "source_pdf_sha256": "e9a0828c99cff0d7242d63208d60b95d087f19f3b3e92517c972d83f5baee622",
+      "source_activity_titles": [
+        "Tolak dengan Bahan Maujud",
+        "Membilang ke Belakang",
+        "Latih Dua Nombor hingga 30"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan sembilan kad pisang dan mengambil tiga; murid menyatakan baki.",
+        "exploration": "Murid menolak 8 − 3 dan 9 − 5 menggunakan pembilang atau lakaran.",
+        "explanation": "Guru memodelkan 18 − 5 pada garis nombor; murid menerangkan langkah membilang ke belakang.",
+        "elaboration": "Murid menyelesaikan 26 − 8 dengan bahan atau lakaran; pasangan menyemak kewajaran baki.",
+        "evaluation": "Murid menjawab lima ayat tolak dalam lingkungan 30; sekurang-kurangnya empat tepat dan menunjukkan proses mencari baki."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 47,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 172,
+      "source_word_sha256": "e7832f852748ac55ad1d4bdf66128a46184008fb5b31a0527278a2ed1dc4d65f",
+      "source_pdf_sha256": "0d7f474a539f7b8409c9c380977e4ba72ebe8106e142090be41634836a6ad3c4",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 24 buku, 8 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 48,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 173,
+      "source_word_sha256": "bcd1e0c808d914fb3ae306843e58bbc0874cfec9cc1f6bfd7db3381a47610b8f",
+      "source_pdf_sha256": "07e6302f823a5f932bf2376994ba3d96abe08b980b33047c6c00fcc9f5f6f265",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 19 kad, 7 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 49,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 174,
+      "source_word_sha256": "0fb09951ba3bda641415710084cf2d5a9e753b81cefba377f3acbdc6d38a469d",
+      "source_pdf_sha256": "e21328eb1cffe287c5b3a677ba056c35c5e6559d1c307c637c8390ee55bb4af8",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 25 pensel, 9 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 50,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 175,
+      "source_word_sha256": "50d54c4e094b77ad89fe778f152efd5c5a4a693588eb68608ca25aecb4b57053",
+      "source_pdf_sha256": "d9afefa5c7a0db1edb709c168bdc388940cee23b7d83a583abf0805e7737ebec",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 18 pelekat, 6 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 51,
+      "sp_code": "2.2.3",
+      "sp": "Menyelesaikan masalah operasi tolak dalam lingkungan 30.",
+      "title": "Selesaikan Masalah Operasi Tolak",
+      "dk_printed_page": null,
+      "source_pdf_page": 176,
+      "source_word_sha256": "f71fd5249094bc7665bf73c74d70548c0764610b741cb266165825bbb98d0a29",
+      "source_pdf_sha256": "14d28b786e7a86330ee75064e22f6d774cebaa0669996df6612d51721ccd5385",
+      "source_activity_titles": [
+        "Bezakan Diberi dan Dicari",
+        "Guna Model Bar dan Tolak",
+        "Jelaskan Masalah Harian"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menceritakan sembilan kek cawan, empat dimakan; murid menyatakan perkara yang dicari.",
+        "exploration": "Murid mengenal pasti bilangan asal, bilangan diambil dan baki melalui gambar.",
+        "explanation": "Guru membimbing model bar 17 belon, enam diberikan; murid menulis 17 − 6 = 11 dengan unit.",
+        "elaboration": "Murid menyelesaikan situasi 27 belon, 8 diberikan; lukis model atau tulis ayat tolak dan jawapan lengkap.",
+        "evaluation": "Murid menyelesaikan empat masalah tolak satu langkah hingga 30; sekurang-kurangnya tiga tepat dengan model atau ayat matematik dan jawapan lengkap."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 52,
+      "sp_code": "3.1.1",
+      "sp": "Mengenal wang kertas dan duit syiling.",
+      "title": "Mengenal Wang Malaysia",
+      "dk_printed_page": null,
+      "source_pdf_page": 177,
+      "source_word_sha256": "143fc78853b17fa249a0eb5147aad2e2793d1c1b40baf3e35ef50cd690702657",
+      "source_pdf_sha256": "c9c1c60be7beee1cbd410e5dbf2695f122e3cb7350dfc0a69001c952089cadc5",
+      "source_activity_titles": [
+        "Kenal Wang Kertas",
+        "Bezakan Duit Syiling",
+        "Kedai Mini: Cari Wang"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan wang contoh; murid menyatakan wang yang pernah dilihat.",
+        "exploration": "Murid meneliti dan mengelaskan wang kertas RM1, RM5, RM10 serta syiling 5, 10, 20 dan 50 sen.",
+        "explanation": "Guru menerangkan cara mengenal wang berdasarkan nilai yang tertera; murid memadankan label.",
+        "elaboration": "Murid memilih wang contoh dalam permainan kedai mini berdasarkan kad nilai RM1, 10 sen dan RM10 dan menyemak bersama pasangan.",
+        "evaluation": "Guru menunjukkan tujuh jenis wang secara rawak; murid menamakan sekurang-kurangnya enam dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 53,
+      "sp_code": "3.1.1",
+      "sp": "Mengenal wang kertas dan duit syiling.",
+      "title": "Mengenal Wang Malaysia",
+      "dk_printed_page": null,
+      "source_pdf_page": 178,
+      "source_word_sha256": "c23e3177c75304844a532b32a064063d77798df832a7c1515b694e5567a729c4",
+      "source_pdf_sha256": "bbf52cf1bc7c1eee568a85abf60b29d89cfdcf41d78a7ee4e1ace7fc71f72c83",
+      "source_activity_titles": [
+        "Kenal Wang Kertas",
+        "Bezakan Duit Syiling",
+        "Kedai Mini: Cari Wang"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan wang contoh; murid menyatakan wang yang pernah dilihat.",
+        "exploration": "Murid meneliti dan mengelaskan wang kertas RM1, RM5, RM10 serta syiling 5, 10, 20 dan 50 sen.",
+        "explanation": "Guru menerangkan cara mengenal wang berdasarkan nilai yang tertera; murid memadankan label.",
+        "elaboration": "Murid memilih wang contoh dalam permainan kedai mini berdasarkan kad nilai RM5, 20 sen dan 50 sen dan menyemak bersama pasangan.",
+        "evaluation": "Guru menunjukkan tujuh jenis wang secara rawak; murid menamakan sekurang-kurangnya enam dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 54,
+      "sp_code": "3.1.1",
+      "sp": "Mengenal wang kertas dan duit syiling.",
+      "title": "Mengenal Wang Malaysia",
+      "dk_printed_page": null,
+      "source_pdf_page": 179,
+      "source_word_sha256": "e8a2d7ba5f17e714a0bfc57dfeb8e00a87f5aa8c79616d9f0419b5022c0334a2",
+      "source_pdf_sha256": "1bb78c7728fa5398034b15cd231f074ef57bddda0e871fcb99b67e19fd177e6d",
+      "source_activity_titles": [
+        "Kenal Wang Kertas",
+        "Bezakan Duit Syiling",
+        "Kedai Mini: Cari Wang"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan wang contoh; murid menyatakan wang yang pernah dilihat.",
+        "exploration": "Murid meneliti dan mengelaskan wang kertas RM1, RM5, RM10 serta syiling 5, 10, 20 dan 50 sen.",
+        "explanation": "Guru menerangkan cara mengenal wang berdasarkan nilai yang tertera; murid memadankan label.",
+        "elaboration": "Murid memilih wang contoh dalam permainan kedai mini berdasarkan kad nilai RM10, 5 sen dan 20 sen dan menyemak bersama pasangan.",
+        "evaluation": "Guru menunjukkan tujuh jenis wang secara rawak; murid menamakan sekurang-kurangnya enam dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 55,
+      "sp_code": "3.1.1",
+      "sp": "Mengenal wang kertas dan duit syiling.",
+      "title": "Mengenal Wang Malaysia",
+      "dk_printed_page": null,
+      "source_pdf_page": 180,
+      "source_word_sha256": "12f3674c43fdaf278b77cd1d2871d9e9077543acc6c6cdc223d0394427439315",
+      "source_pdf_sha256": "9bc688544045db2262433b83ab3f5845cf6a817c41fec36f7a10507f7b5cad3a",
+      "source_activity_titles": [
+        "Kenal Wang Kertas",
+        "Bezakan Duit Syiling",
+        "Kedai Mini: Cari Wang"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan wang contoh; murid menyatakan wang yang pernah dilihat.",
+        "exploration": "Murid meneliti dan mengelaskan wang kertas RM1, RM5, RM10 serta syiling 5, 10, 20 dan 50 sen.",
+        "explanation": "Guru menerangkan cara mengenal wang berdasarkan nilai yang tertera; murid memadankan label.",
+        "elaboration": "Murid memilih wang contoh dalam permainan kedai mini berdasarkan kad nilai RM1, RM5 dan 50 sen dan menyemak bersama pasangan.",
+        "evaluation": "Guru menunjukkan tujuh jenis wang secara rawak; murid menamakan sekurang-kurangnya enam dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 56,
+      "sp_code": "3.2.1",
+      "sp": "Menentukan nilai: (i) wang kertas hingga RM10, (ii) duit syiling hingga RM1.",
+      "title": "Menentukan Nilai Wang",
+      "dk_printed_page": 70,
+      "source_pdf_page": 181,
+      "source_word_sha256": "c80be243179e9737f715b30cdbea3fe9df3cf83ae838f59687fbb51637b83916",
+      "source_pdf_sha256": "e984130770e3bec286e6148b8e56222d519c7f545b57ee314403324344699ce8",
+      "source_activity_titles": [
+        "Kenal Nilai Wang Kertas",
+        "Nilai Duit Syiling",
+        "Stesen Kenal Nilai"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+        "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+        "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+        "elaboration": "Murid membilang, menyebut dan menulis jumlah dua keping RM1 dan satu keping RM5 pada kad stesen nilai.",
+        "evaluation": "Murid menentukan nilai tujuh set wang kertas atau duit syiling; sekurang-kurangnya enam tepat."
+      },
+      "academic_status": "HOLD_VALUE_TOTAL_OBJECTIVE_CRITERIA_REVIEW",
+      "note": "DK printed pp70–71 includes counting, saying and writing combined values. Original criterion focuses seven displayed individual denominations; proposed phase extends to totals and must be reconciled before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 57,
+      "sp_code": "3.2.1",
+      "sp": "Menentukan nilai: (i) wang kertas hingga RM10, (ii) duit syiling hingga RM1.",
+      "title": "Menentukan Nilai Wang",
+      "dk_printed_page": 70,
+      "source_pdf_page": 182,
+      "source_word_sha256": "82cdde82264bf1d1999b9ec136d00a624f35a51c64b3a48158057a72bc50b125",
+      "source_pdf_sha256": "d2a15359636682d3b2b3b1d36ac140f7a05369d3bbeabc32a479f0e382ee6472",
+      "source_activity_titles": [
+        "Kenal Nilai Wang Kertas",
+        "Nilai Duit Syiling",
+        "Stesen Kenal Nilai"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+        "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+        "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+        "elaboration": "Murid membilang, menyebut dan menulis jumlah 50 sen, 20 sen, 10 sen dan 5 sen pada kad stesen nilai.",
+        "evaluation": "Murid menentukan nilai tujuh set wang kertas atau duit syiling; sekurang-kurangnya enam tepat."
+      },
+      "academic_status": "HOLD_VALUE_TOTAL_OBJECTIVE_CRITERIA_REVIEW",
+      "note": "DK printed pp70–71 includes counting, saying and writing combined values. Original criterion focuses seven displayed individual denominations; proposed phase extends to totals and must be reconciled before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 58,
+      "sp_code": "3.2.1",
+      "sp": "Menentukan nilai: (i) wang kertas hingga RM10, (ii) duit syiling hingga RM1.",
+      "title": "Menentukan Nilai Wang",
+      "dk_printed_page": 70,
+      "source_pdf_page": 183,
+      "source_word_sha256": "e13529b4ffd5c86c0ce14071bacf7278dbdc2f48ae643e90276785862201ad89",
+      "source_pdf_sha256": "b1bd31329c59b1e0f7b8a079e58d78ff1126a769e49a2d6c5118ed7c4ac2f250",
+      "source_activity_titles": [
+        "Kenal Nilai Wang Kertas",
+        "Nilai Duit Syiling",
+        "Stesen Kenal Nilai"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+        "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+        "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+        "elaboration": "Murid membilang, menyebut dan menulis jumlah sekeping RM5 dan lima keping RM1 pada kad stesen nilai.",
+        "evaluation": "Murid menentukan nilai tujuh set wang kertas atau duit syiling; sekurang-kurangnya enam tepat."
+      },
+      "academic_status": "HOLD_VALUE_TOTAL_OBJECTIVE_CRITERIA_REVIEW",
+      "note": "DK printed pp70–71 includes counting, saying and writing combined values. Original criterion focuses seven displayed individual denominations; proposed phase extends to totals and must be reconciled before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 59,
+      "sp_code": "3.2.1",
+      "sp": "Menentukan nilai: (i) wang kertas hingga RM10, (ii) duit syiling hingga RM1.",
+      "title": "Menentukan Nilai Wang",
+      "dk_printed_page": 70,
+      "source_pdf_page": 184,
+      "source_word_sha256": "cdc9a7b12cfda38e66f97f84ab614fe8c58907152b84049f255330a8ea9a333b",
+      "source_pdf_sha256": "513f3e4508de2701c466d11058a5c512ab7a967d45b7cc4c14c760c44af44f66",
+      "source_activity_titles": [
+        "Kenal Nilai Wang Kertas",
+        "Nilai Duit Syiling",
+        "Stesen Kenal Nilai"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+        "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+        "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+        "elaboration": "Murid membilang, menyebut dan menulis jumlah dua keping 20 sen dan dua keping 10 sen pada kad stesen nilai.",
+        "evaluation": "Murid menentukan nilai tujuh set wang kertas atau duit syiling; sekurang-kurangnya enam tepat."
+      },
+      "academic_status": "HOLD_VALUE_TOTAL_OBJECTIVE_CRITERIA_REVIEW",
+      "note": "DK printed pp70–71 includes counting, saying and writing combined values. Original criterion focuses seven displayed individual denominations; proposed phase extends to totals and must be reconciled before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 60,
+      "sp_code": "3.2.2",
+      "sp": "Menukar: (i) wang kertas hingga RM10; dan (ii) duit syiling hingga RM1.",
+      "title": "Menukar Nilai Wang",
+      "dk_printed_page": 77,
+      "source_pdf_page": 185,
+      "source_word_sha256": "5c60cc9d0acb8309baa1255944bae7ea1c8ffad67bf2ba8aff5fbfc22bc5ce50",
+      "source_pdf_sha256": "36657b66d844f800444bcb4f79553c9057e4acc789aff53b8600603f681f26dc",
+      "source_activity_titles": [
+        "Tukar Wang Kertas",
+        "Ganti Duit Syiling",
+        "Padan Nilai Setara"
+      ],
+      "source_basis": "Reviewed representative source lesson for the same SP from combined PDF; verify individual source before rendering.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM5 dan lima keping RM1; murid membandingkan jumlah nilai.",
+        "exploration": "Murid membina nilai 50 sen menggunakan syiling 20, 10 dan 5 sen.",
+        "explanation": "Guru memodelkan pertukaran RM5 dengan lima RM1; murid menerangkan persamaan nilai.",
+        "elaboration": "Murid menukar RM10 kepada RM5 dan RM1 kepada wang lain yang sama nilai dan menjelaskan padanan kepada pasangan.",
+        "evaluation": "Murid melengkapkan empat penukaran wang kertas atau duit syiling; sekurang-kurangnya tiga setara nilainya."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Source-specific variants; individual source, DK scope and page references to be checked before release.",
+      "ready": false
+    }
+  ],
+  "release": false
+}
