@@ -1,0 +1,60 @@
+name: BM KP2027 5P all 353 draft layout QA
+on:
+  pull_request:
+    paths:
+      - 'tools/build_bm_kp2027_5p_draft_qa.py'
+      - 'web/rph_5p_v5_layout.py'
+      - 'audits/rph_5p_source_adaptation_bm_t1_batch*'
+      - '.github/workflows/bm-kp2027-5p-all-draft-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  draft-layout:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+          pip install python-docx pymupdf
+      - run: PYTHONPATH=. python tools/build_bm_kp2027_5p_draft_qa.py
+      - name: Render every Word draft and verify page count
+        run: |
+          mkdir -p qa_bm_5p/pdf
+          find qa_bm_5p -maxdepth 1 -name '*.docx' -print0 | xargs -0 -r -n 40 libreoffice -env:UserInstallation=file:///tmp/lo-bm-5p --headless --convert-to pdf --outdir qa_bm_5p/pdf
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import fitz
+          p=Path("qa_bm_5p")
+          manifest=json.loads((p/"manifest.json").read_text())
+          assert len(manifest["records"])==353
+          issues=[]
+          for record in manifest["records"]:
+              f=p/"pdf"/(record["file"]+".pdf")
+              if not f.is_file():
+                  issues.append({"file":record["file"],"error":"Missing PDF"})
+                  continue
+              with fitz.open(f) as doc:
+                  if len(doc)!=1 or abs(doc[0].rect.width-595.28)>2 or abs(doc[0].rect.height-841.89)>2:
+                      issues.append({"file":record["file"],"error":"Not one A4 page","pages":len(doc)})
+                  text=" ".join(page.get_text() for page in doc)
+                  for label in ("Penglibatan","Penerokaan","Penerangan","Pengembangan","Penilaian","Refleksi",record["sp"]):
+                      if label not in text:
+                          issues.append({"file":record["file"],"error":"Missing "+label})
+          (p/"layout-report.json").write_text(json.dumps({"total":353,"issues":issues,"release":False},indent=2))
+          print("Layout issues:",len(issues))
+          assert not issues
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bm-kp2027-5p-353-draft-qa
+          path: qa_bm_5p/
+          if-no-files-found: warn
+          retention-days: 7
