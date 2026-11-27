@@ -1,0 +1,77 @@
+{
+  "status": "DRAFT_RENDER_QA_PASSED_ACADEMIC_AND_COVER_HOLD",
+  "run_id": 45960075029,
+  "artifact_id": 15180237879,
+  "head_sha": "c2f3dc003f3f0ec284a3f71acbc737663d3835f3",
+  "artifact_sha256": "34b9584512f65f2daa3869a2b90dbaf52258d829b00c7b0f6b07de4b0ea9f167",
+  "sets": [
+    {
+      "year": 4,
+      "pdf_sha256": "8456a0400792b3a5e247cb6530ec9c1375414e6a47b8bd361e142801f654c91c",
+      "docx_sha256": "e6b75bfa02b9c483252a8b50b03c15ec8a3f06f71725785cc53bdffb823424ba",
+      "numbered_rows_by_page": [
+        0,
+        16,
+        14,
+        14,
+        19,
+        21,
+        12,
+        0
+      ],
+      "pdf_pages": 8,
+      "docx_rows_including_header": 102,
+      "merged_week_groups": 35,
+      "repeat_table_header": true,
+      "release": false
+    },
+    {
+      "year": 5,
+      "pdf_sha256": "e2c62560f92c7a21d62776703f4c75c087f66658c3fbdb1334476431c145ed6b",
+      "docx_sha256": "b7d00972f21d94d18e72da40e565dcef46378a8ad286a8499f334fd32c7cb9aa",
+      "numbered_rows_by_page": [
+        0,
+        16,
+        13,
+        17,
+        20,
+        20,
+        10,
+        0
+      ],
+      "pdf_pages": 8,
+      "docx_rows_including_header": 102,
+      "merged_week_groups": 35,
+      "repeat_table_header": true,
+      "release": false
+    },
+    {
+      "year": 6,
+      "pdf_sha256": "077e1adb440f4ee1d40f621ccf0aab2381771788f60d90f02ecb50083ea15003",
+      "docx_sha256": "6ff1956566dd421225e18d1425ec2804a34cb5d22ac316e1718ac0ccc005ffde",
+      "numbered_rows_by_page": [
+        0,
+        15,
+        11,
+        14,
+        19,
+        18,
+        19,
+        0
+      ],
+      "pdf_pages": 8,
+      "docx_rows_including_header": 102,
+      "merged_week_groups": 35,
+      "repeat_table_header": true,
+      "release": false
+    }
+  ],
+  "review": "Downloaded actual ZIP and inspected contact sheets covering all 24 rendered PDF pages; checked DOCX row count, merged week groups and repeated header markup, and PDF numbered lesson counts. No obvious broken weekly cells, missing headers or clipped rows in contact sheet overview; not a 100% zoom or native Microsoft Word verification.",
+  "hold_reasons": [
+    "SK/SP full wording absent; codes only",
+    "Year 5 textbook page references unavailable; Year 4 and 6 proposed spans not fully verified",
+    "Cover is generic draft, not approved personalized cover with profile logo",
+    "Calendar exceptions and RPH linkage not independently approved",
+    "Production paths and routes unchanged"
+  ]
+}
