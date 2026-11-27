@@ -1,4 +1,6 @@
 import unittest
+import json
+import os
 from unittest.mock import patch
 from hashlib import sha256
 from types import SimpleNamespace
@@ -73,17 +75,32 @@ class WorksheetTests(unittest.TestCase):
 
     def test_byte_integrity(self):
         from unittest.mock import MagicMock
+        digest = sha256(self.raw).hexdigest()
         response=MagicMock()
         response.status=200
-        response.headers.get_content_type.return_value="application/pdf"
-        response.read.return_value=self.raw
+        response.headers.get_content_type.return_value="application/json"
+        response.read.return_value=json.dumps([{
+            "asset_sha256":digest,"size_bytes":len(self.raw),
+            "pdf_bytes":"\\x"+self.raw.hex()}]).encode()
         opener=MagicMock()
         opener.open.return_value.__enter__.return_value=response
         ws._pdf.cache_clear()
-        with patch.object(ws,"build_opener",return_value=opener):
-            self.assertEqual(ws._pdf("validid_123456",sha256(self.raw).hexdigest(),len(self.raw)),self.raw)
+        with patch.dict(os.environ,{"SUPABASE_URL":"https://example.supabase.co","SUPABASE_SECRET_KEY":"sb_secret_test"}), patch.object(ws,"build_opener",return_value=opener):
+            self.assertEqual(ws._pdf("validid_123456",digest,len(self.raw)),self.raw)
+            req=opener.open.call_args.args[0]
+            self.assertIn("/rest/v1/cikgulaju_worksheet_pdf_assets?",req.full_url)
+            self.assertIn(digest,req.full_url)
+            self.assertNotIn("validid_123456",req.full_url)
+            self.assertEqual(req.get_header("Apikey"),"sb_secret_test")
+            self.assertIsNone(req.get_header("Authorization"))
             with self.assertRaises(ValueError):
                 ws._pdf("validid_123456","0"*64,len(self.raw))
+            ws._pdf.cache_clear()
+            response.read.return_value=json.dumps([{
+                "asset_sha256":digest,"size_bytes":len(self.raw),
+                "pdf_bytes":"\\x"+(self.raw[:-1]+b"Y").hex()}]).encode()
+            with self.assertRaises(ValueError):
+                ws._pdf("validid_123456",digest,len(self.raw))
         ws._pdf.cache_clear()
 
 if __name__ == "__main__":
