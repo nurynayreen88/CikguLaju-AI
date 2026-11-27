@@ -191,3 +191,35 @@ def import_preview():
     marker='<script id="erph-initial-draft" type="application/json"></script>'
     if marker not in html:return failure('Editor belum tersedia.',503)
     return Response(html.replace(marker,'<script id="erph-initial-draft" type="application/json">'+data+'</script>',1),mimetype='text/html')
+
+@bp.get('/api/erph/export')
+def export_records():
+    c,uid,error=account()
+    if error is not None:return error
+    from datetime import timedelta
+    from io import BytesIO
+    from flask import send_file
+    from web.erph_export import render,MAX_RECORDS
+    try:
+        if set(request.args)-{'date','scope','format'} or any(len(request.args.getlist(k))!=1 for k in request.args):
+            raise ValueError()
+        day=date.fromisoformat(request.args.get('date',''))
+        scope=request.args.get('scope','day')
+        fmt=request.args.get('format','')
+        if not 2000<=day.year<=2100 or scope not in ('day','week') or fmt not in ('word','pdf'):
+            raise ValueError()
+        first=day-timedelta(days=(day.weekday()+1)%7) if scope=='week' else day
+        last=first+timedelta(days=6) if scope=='week' else first
+    except ValueError:return failure('Pilihan eksport tidak sah.',400)
+    filters={'order':'teaching_date.asc,start_time.asc','limit':str(MAX_RECORDS+1)}
+    if scope=='week':filters['and']='(teaching_date.gte.'+first.isoformat()+',teaching_date.lte.'+last.isoformat()+')'
+    else:filters['teaching_date']='eq.'+day.isoformat()
+    try:
+        rows=store(c,uid,'GET',filters)
+        if not rows:return failure('Tiada rekod untuk dieksport.',404)
+        data=render(rows,fmt)
+    except ValueError as exc:return failure(str(exc),400)
+    except Exception:return failure('Eksport belum dapat disediakan.',503)
+    ext,mime=('docx','application/vnd.openxmlformats-officedocument.wordprocessingml.document') if fmt=='word' else ('pdf','application/pdf')
+    return send_file(BytesIO(data),mimetype=mime,as_attachment=True,
+      download_name='CIKGULAJU_eRPH_'+first.isoformat()+'_'+last.isoformat()+'.'+ext,conditional=False)
