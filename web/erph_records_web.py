@@ -146,3 +146,16 @@ def page():
     from pathlib import Path
     html=(Path(__file__).resolve().parents[1]/'web_v1_static_preview'/'erph_records.html').read_text(encoding='utf-8')
     return Response(html,mimetype='text/html')
+
+@bp.post('/api/erph/import-word')
+def import_word():
+    c,uid,error=account()
+    if error is not None:return error
+    if request.headers.get('Origin')!=ORIGIN:return failure('Permintaan tidak sah.',403)
+    from web.erph_word_import import MAX_FILE,extract_docx
+    if request.mimetype!='application/vnd.openxmlformats-officedocument.wordprocessingml.document' or not 0<(request.content_length or 0)<=MAX_FILE:
+        return failure('Pilih fail Word (.docx), maksimum 2 MB.',400)
+    try:
+        fields=extract_docx(request.stream.read(MAX_FILE+1))
+    except ValueError as exc:return failure(str(exc),400)
+    return jsonify(fields=fields,source_verified=False)
