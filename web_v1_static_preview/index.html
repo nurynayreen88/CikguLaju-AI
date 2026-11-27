@@ -2757,7 +2757,8 @@ function kp2027TeacherPayload(){
  return {teacher_class:className,teacher_date:teacherDate.value,teacher_start:start,
    teacher_end:end,teacher_students:students,reflection_mode:mode,reflection};
 }
-async function kp2027DownloadApproved(format,variant="lengkap"){
+async function kp2027DownloadApproved(format){return kp2027DownloadVariant(format,"lengkap");}
+async function kp2027DownloadVariant(format,variant){
  const code=subject.value,route=kp2027PilotRoutes[code],value=Number(lesson.value);
  if(kp2027PilotBusy||curriculum.value!=="kp2027"||year.value!=="1"||!route||
     !["word","pdf"].includes(format)||!lesson.value||!kp2027CurrentLessons().includes(value)||
@@ -2900,8 +2901,8 @@ function populateKp2027MaterialList(){
  );
  if(subject.value==="BM_SK_KP2027"&&kp2027PilotInventory?.rphVariants?.includes("5p")){
   list.append(
-   materialRow("RPH Ringkas 5P PDF",{ready:true,onDownload:()=>{void kp2027DownloadApproved("pdf","5p");}}),
-   materialRow("RPH Ringkas 5P Word",{ready:true,onDownload:()=>{void kp2027DownloadApproved("word","5p");}})
+   materialRow("RPH Ringkas 5P PDF",{ready:true,onDownload:()=>{void kp2027DownloadVariant("pdf","5p");}}),
+   materialRow("RPH Ringkas 5P Word",{ready:true,onDownload:()=>{void kp2027DownloadVariant("word","5p");}})
   );
  }
  status.textContent="Pilih format RPH untuk Download. Maklumat kelas, tarikh, masa dan murid yang diisi akan dicetak dalam fail.";
