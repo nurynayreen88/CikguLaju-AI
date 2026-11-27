@@ -14,8 +14,9 @@ LABELS = {
     'standard kandungan':'standard_content','kandungan pembelajaran':'standard_content',
     'content standard':'standard_content','standard pembelajaran':'standard_learning',
     'learning standard':'standard_learning','objektif':'objectives',
-    'objektif pembelajaran':'objectives','learning objectives':'objectives',
-    'refleksi':'reflection','reflection':'reflection',
+    'objektif pembelajaran':'objectives','learning objectives':'objectives','learning objective':'objectives',
+    'theme / topic':'title','theme/topic':'title','topic':'title',
+    'refleksi':'reflection','refleksi (auto / manual)':'reflection','refleksi (auto/manual)':'reflection','reflection':'reflection',
 }
 def text_of(cell):
     paras=[]
@@ -40,22 +41,39 @@ def extract_docx(raw):
         raise ValueError('Fail Word tidak dapat dibaca.') from exc
     fields={key:'' for key in ('title','standard_content','standard_learning','objectives','activities','reflection')}
     other=[]
+    phase=False
     for row in root.findall('.//w:tbl/w:tr',NS):
         cells=[text_of(c) for c in row.findall('w:tc',NS)]
         if len(cells)<2:continue
         label=' '.join(cells[0].lower().strip().rstrip(':').split())
         value='\n'.join(c for c in cells[1:] if c).strip()
+        # Some premium source tables embed the title in the teacher-information header.
+        if ('maklumat pdp' in value.casefold() or 'kelas:' in value.casefold() or 'class:' in value.casefold()) and not fields['title']:
+            match=re.search(r'(?im)^(?:tajuk|topic)\s*:\s*(.+)$',cells[0])
+            if match:fields['title']=match.group(1).strip()
+            continue
+        if ('kelas:' in label or 'class:' in label) and ('tarikh:' in label or 'date:' in label):
+            continue
         if not value:continue
         target=LABELS.get(label)
         if target:
+            if target=='title':
+                value=re.sub(r'(?im)^(?:tajuk|topic)\s*:\s*','',value)
+                # Never treat internal scheduling labels or a QA marker as the title.
+                value='\n'.join(line for line in value.splitlines() if not re.match(r'(?i)^\s*(?:RPT Kumpulan|Kumpulan [AB]\b|Lesson\s+\d|PdP\s+\d|Draf QA\b)',line)).strip()
             fields[target]=(fields[target]+'\n'+value).strip()
-        elif any(x in label for x in ('aktiviti','activity','activities','set induksi','penutup','kriteria kejayaan','success criteria','bbm','pak21','emk','pemulihan','pengayaan','penilaian','pentaksiran')):
+            phase=False
+        elif any(x in label for x in ('aktiviti','activity','activities','set induksi','penutup','kriteria kejayaan','success criteria','bbm','pak21','emk','pemulihan','pengayaan','penilaian','pentaksiran','pengukuhan','pbd','bahan','teaching aids','closure','remedial','enrichment','assessment','values','induction','evaluation')):
             other.append((cells[0]+'\n'+value).strip())
-        elif not label and other:
-            # Continuation of a vertically merged phase label.
+            phase=('aktiviti' in label or 'activities' in label)
+        elif not label and phase:
+            # Continuation of a vertically merged activity / 5P phase label.
             other.append(value)
+        else:
+            # Fail closed on unknown populated rows. Do not silently drop content.
+            raise ValueError('Susun atur Word belum disokong sepenuhnya. Isi secara manual.')
     fields['activities']='\n\n'.join(other)
-    if not fields['objectives'] or not fields['activities']:
+    if not all(fields[k] for k in ('title','standard_learning','objectives','activities')):
         raise ValueError('Susun atur Word belum disokong. Isi secara manual.')
     limits=dict(title=200,standard_content=4000,standard_learning=4000,objectives=4000,activities=12000,reflection=4000)
     if any(len(fields[k])>limit for k,limit in limits.items()):
