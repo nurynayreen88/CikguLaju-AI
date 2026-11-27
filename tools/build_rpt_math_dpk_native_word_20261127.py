@@ -91,7 +91,39 @@ def extract(source):
     assert not {w for w,_,_ in expected}&{6,18,19}
     return intro,rows,expected
 
-from tools.rpt_kssr_physical_pages import paginate,verify_pages
+from docx.text.paragraph import Paragraph
+
+def compact_week_table(blob):
+    """Allow several intact weekly groups on each page; no fixed five-row cap."""
+    doc=Document(BytesIO(blob))
+    table=doc.tables[0]
+    snapshot=lambda: [tuple(c.text for c in row.cells) for row in table.rows]
+    before=snapshot()
+    for i,row in enumerate(table.rows):
+        same=i==0 or (i+1<len(table.rows) and row.cells[0].text==table.rows[i+1].cells[0].text)
+        for node in row._tr.xpath(".//w:p"):
+            fmt=Paragraph(node,doc).paragraph_format
+            fmt.keep_with_next=same
+            fmt.keep_together=True
+            fmt.widow_control=False
+    for sec in doc.sections:
+        sec.top_margin=sec.bottom_margin=Cm(1.5)
+    assert snapshot()==before
+    out=BytesIO();doc.save(out);return out.getvalue()
+
+def verify_compact_pages(blob,pdf):
+    doc=Document(BytesIO(blob))
+    assert len(doc.tables)==1
+    table=doc.tables[0]
+    expected=list(dict.fromkeys(WEEK.match(row.cells[0].text)[0] for row in table.rows[1:]))
+    actual=[]
+    for page in list(pdf)[1:]:
+        txt=page.get_text()
+        assert all(norm(c.text) in norm(txt) for c in table.rows[0].cells)
+        actual.extend(re.findall(r"(?m)^M\\d{2}\\s*$",txt))
+        assert all(d["rect"].y1<=page.rect.height-39 for d in page.get_drawings())
+    assert [x.strip() for x in actual]==expected,("missing, repeated or split week",actual,expected)
+    assert len(pdf)<=15,("excess pages",len(pdf))
 
 def build_word(year,root=ROOT):
     source=sk_documents.document_path(year,root=Path(root)/"matematik",dpk=True)
@@ -148,7 +180,7 @@ def build_word(year,root=ROOT):
             assert norm(table.cell(i,1).text)==norm(cells[1])
     for _,first,last,_ in groups:
         assert all(table.cell(first,0)._tc is table.cell(i,0)._tc for i in range(first,last+1))
-    blob=paginate(blob,first_budget=290)
+    blob=compact_week_table(blob)
     return blob,raw,expected
 
 def render(year,out):
@@ -165,7 +197,7 @@ def render(year,out):
             final.insert_pdf(orig,from_page=0,to_page=0);final.insert_pdf(gen,from_page=1)
             final.save(target,garbage=4,deflate=True)
         with fitz.open(target) as pdf,fitz.open(stream=raw,filetype="pdf") as orig:
-            verify_pages(blob,pdf)
+            verify_compact_pages(blob,pdf)
             assert pdf[0].get_pixmap().samples==orig[0].get_pixmap().samples
             text="\n".join(p.get_text() for p in list(pdf)[1:])
             found=[(int(n),int(m)) for n,m in re.findall(r"(?m)^(\d{3})\s*\n(30|60) min\s*$",text)]
