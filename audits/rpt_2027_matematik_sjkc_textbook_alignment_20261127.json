@@ -1,0 +1,995 @@
+{
+  "status": "PARTIAL_TEXTBOOK_ALIGNED_DRAFT_NOT_RPT",
+  "parent": {
+    "path": "audits/rpt_2027_matematik_sjkc_t4_t6_sp_session_draft_20261127.json",
+    "sha": "420ab6fe9300b86a8dc1870bfbafcd8136b1c2d0"
+  },
+  "notes": [
+    "Textbook tables of contents retrieved for Y4 and Y6; chapter boundaries verified against printed TOC. Y6 pages 39,76,108 may be divider/blank pages; chapter windows are not exact teaching-page ranges.",
+    "Original Chinese teaching focus descriptions are not verbatim official standards. Unit 1 scopes checked against DSKP printed pages; proposed per-session page windows use contents and selected SP footers, not exhaustive footer verification.",
+    "Y5 textbook listing found but contents not available; no pages inferred. Remaining unit sessions and Chinese full SK/SP wording pending, RPH linkage and academic approval pending. No published RPT modified."
+  ],
+  "plans": [
+    {
+      "year": 4,
+      "textbook_source": "https://fliphtml5.com/izabd/zkzn/Matematik_Tahun_4_SJKC_compressed/",
+      "dskp_source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-4-SJKC.pdf",
+      "unit_page_windows": [
+        {
+          "unit": 1,
+          "pages": [
+            1,
+            44
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 2,
+          "pages": [
+            45,
+            82
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 3,
+          "pages": [
+            83,
+            117
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 4,
+          "pages": [
+            118,
+            155
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 5,
+          "pages": [
+            156,
+            190
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 6,
+          "pages": [
+            191,
+            217
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 7,
+          "pages": [
+            218,
+            236
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 8,
+          "pages": [
+            237,
+            248
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        }
+      ],
+      "unit1": {
+        "dskp_printed_pages": [
+          32,
+          33,
+          34
+        ],
+        "sessions": [
+          {
+            "draft_pdp": 1,
+            "week": "M01",
+            "A": {
+              "start": "2027-01-04",
+              "end": "2027-01-07"
+            },
+            "B": {
+              "start": "2027-01-04",
+              "end": "2027-01-08"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.1"
+            ],
+            "topic_cn_original": "十万以内整数的读法",
+            "textbook_candidate_pages": [
+              1,
+              2
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 2,
+            "week": "M01",
+            "A": {
+              "start": "2027-01-04",
+              "end": "2027-01-07"
+            },
+            "B": {
+              "start": "2027-01-04",
+              "end": "2027-01-08"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.1"
+            ],
+            "topic_cn_original": "含零整数的读写转换",
+            "textbook_candidate_pages": [
+              2,
+              3
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 3,
+            "week": "M02",
+            "A": {
+              "start": "2027-01-10",
+              "end": "2027-01-14"
+            },
+            "B": {
+              "start": "2027-01-11",
+              "end": "2027-01-15"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.2"
+            ],
+            "topic_cn_original": "数位、位值及展开式",
+            "textbook_candidate_pages": [
+              4,
+              5
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 4,
+            "week": "M02",
+            "A": {
+              "start": "2027-01-10",
+              "end": "2027-01-14"
+            },
+            "B": {
+              "start": "2027-01-11",
+              "end": "2027-01-15"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.2"
+            ],
+            "topic_cn_original": "比较、升降排列及补数列",
+            "textbook_candidate_pages": [
+              6,
+              8
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 5,
+            "week": "M02",
+            "A": {
+              "start": "2027-01-10",
+              "end": "2027-01-14"
+            },
+            "B": {
+              "start": "2027-01-11",
+              "end": "2027-01-15"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.2.1"
+            ],
+            "topic_cn_original": "用整除规律识别奇偶",
+            "textbook_candidate_pages": [
+              9,
+              9
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 6,
+            "week": "M03",
+            "A": {
+              "start": "2027-01-17",
+              "end": "2027-01-21"
+            },
+            "B": {
+              "start": "2027-01-18",
+              "end": "2027-01-22"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.2.2"
+            ],
+            "topic_cn_original": "按个位特征分类整数",
+            "textbook_candidate_pages": [
+              9,
+              9
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 7,
+            "week": "M03",
+            "A": {
+              "start": "2027-01-17",
+              "end": "2027-01-21"
+            },
+            "B": {
+              "start": "2027-01-18",
+              "end": "2027-01-22"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.3.1"
+            ],
+            "topic_cn_original": "以已知数量为基准估算",
+            "textbook_candidate_pages": [
+              10,
+              10
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 8,
+            "week": "M03",
+            "A": {
+              "start": "2027-01-17",
+              "end": "2027-01-21"
+            },
+            "B": {
+              "start": "2027-01-18",
+              "end": "2027-01-22"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.4.1"
+            ],
+            "topic_cn_original": "用数轴与进位规则取近似数",
+            "textbook_candidate_pages": [
+              11,
+              13
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 9,
+            "week": "M04",
+            "A": {
+              "start": "2027-01-24",
+              "end": "2027-01-28"
+            },
+            "B": {
+              "start": "2027-01-25",
+              "end": "2027-01-29"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.5.1"
+            ],
+            "topic_cn_original": "辨别递增递减的步长",
+            "textbook_candidate_pages": [
+              14,
+              15
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 10,
+            "week": "M04",
+            "A": {
+              "start": "2027-01-24",
+              "end": "2027-01-28"
+            },
+            "B": {
+              "start": "2027-01-25",
+              "end": "2027-01-29"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.5.2"
+            ],
+            "topic_cn_original": "填补并构造整数数列",
+            "textbook_candidate_pages": [
+              14,
+              16
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 11,
+            "week": "M04",
+            "A": {
+              "start": "2027-01-24",
+              "end": "2027-01-28"
+            },
+            "B": {
+              "start": "2027-01-25",
+              "end": "2027-01-29"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.6.1"
+            ],
+            "topic_cn_original": "四个以内整数相加",
+            "textbook_candidate_pages": [
+              18,
+              19
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 12,
+            "week": "M05",
+            "A": {
+              "start": "2027-01-31",
+              "end": "2027-02-04"
+            },
+            "B": {
+              "start": "2027-02-01",
+              "end": "2027-02-05"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.6.2"
+            ],
+            "topic_cn_original": "两个整数相减",
+            "textbook_candidate_pages": [
+              20,
+              21
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 13,
+            "week": "M05",
+            "A": {
+              "start": "2027-01-31",
+              "end": "2027-02-04"
+            },
+            "B": {
+              "start": "2027-02-01",
+              "end": "2027-02-05"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.6.3"
+            ],
+            "topic_cn_original": "三个整数连续相减",
+            "textbook_candidate_pages": [
+              20,
+              21
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 14,
+            "week": "M07",
+            "A": {
+              "start": "2027-02-14",
+              "end": "2027-02-18"
+            },
+            "B": {
+              "start": "2027-02-15",
+              "end": "2027-02-19"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.7.1"
+            ],
+            "topic_cn_original": "先后执行加减两种运算",
+            "textbook_candidate_pages": [
+              22,
+              23
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 15,
+            "week": "M07",
+            "A": {
+              "start": "2027-02-14",
+              "end": "2027-02-18"
+            },
+            "B": {
+              "start": "2027-02-15",
+              "end": "2027-02-19"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.6.4"
+            ],
+            "topic_cn_original": "五位以内整数乘法",
+            "textbook_candidate_pages": [
+              24,
+              25
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 16,
+            "week": "M07",
+            "A": {
+              "start": "2027-02-14",
+              "end": "2027-02-18"
+            },
+            "B": {
+              "start": "2027-02-15",
+              "end": "2027-02-19"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.6.5"
+            ],
+            "topic_cn_original": "用不同除数完成整数除法",
+            "textbook_candidate_pages": [
+              26,
+              27
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 17,
+            "week": "M08",
+            "A": {
+              "start": "2027-02-21",
+              "end": "2027-02-25"
+            },
+            "B": {
+              "start": "2027-02-22",
+              "end": "2027-02-26"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.7.2"
+            ],
+            "topic_cn_original": "乘除混合式的运算顺序",
+            "textbook_candidate_pages": [
+              28,
+              29
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 18,
+            "week": "M08",
+            "A": {
+              "start": "2027-02-21",
+              "end": "2027-02-25"
+            },
+            "B": {
+              "start": "2027-02-22",
+              "end": "2027-02-26"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.8.1"
+            ],
+            "topic_cn_original": "以逆运算求加法中的未知量",
+            "textbook_candidate_pages": [
+              30,
+              31
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 19,
+            "week": "M08",
+            "A": {
+              "start": "2027-02-21",
+              "end": "2027-02-25"
+            },
+            "B": {
+              "start": "2027-02-22",
+              "end": "2027-02-26"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.8.2"
+            ],
+            "topic_cn_original": "以逆运算求减法中的未知量",
+            "textbook_candidate_pages": [
+              30,
+              31
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 20,
+            "week": "M09",
+            "A": {
+              "start": "2027-02-28",
+              "end": "2027-03-04"
+            },
+            "B": {
+              "start": "2027-03-01",
+              "end": "2027-03-05"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.9.1"
+            ],
+            "topic_cn_original": "单步整数情境题",
+            "textbook_candidate_pages": [
+              34,
+              40
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 21,
+            "week": "M09",
+            "A": {
+              "start": "2027-02-28",
+              "end": "2027-03-04"
+            },
+            "B": {
+              "start": "2027-03-01",
+              "end": "2027-03-05"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.9.1"
+            ],
+            "topic_cn_original": "加减或乘除的多步情境题",
+            "textbook_candidate_pages": [
+              34,
+              42
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 22,
+            "week": "M09",
+            "A": {
+              "start": "2027-02-28",
+              "end": "2027-03-04"
+            },
+            "B": {
+              "start": "2027-03-01",
+              "end": "2027-03-05"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.9.2"
+            ],
+            "topic_cn_original": "把生活情境转成含未知量的算式",
+            "textbook_candidate_pages": [
+              34,
+              42
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          }
+        ],
+        "base_sp_coverage": 19,
+        "sequence_adjustment": "Reordered operations/conversions to follow textbook, retained 60-minute sessions and dates; proposed page spans need exact footer checks."
+      },
+      "release": false
+    },
+    {
+      "year": 6,
+      "textbook_source": "https://fliphtml5.com/izabd/tqkq/%E5%85%AD%E5%B9%B4%E7%BA%A7_%E6%95%B0%E5%AD%A6%E8%AF%BE%E6%9C%AC/",
+      "dskp_source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-6-SJKC.pdf",
+      "unit_page_windows": [
+        {
+          "unit": 1,
+          "pages": [
+            1,
+            39
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 2,
+          "pages": [
+            40,
+            76
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 3,
+          "pages": [
+            77,
+            108
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 4,
+          "pages": [
+            109,
+            124
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 5,
+          "pages": [
+            125,
+            134
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 6,
+          "pages": [
+            135,
+            151
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 7,
+          "pages": [
+            152,
+            172
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        },
+        {
+          "unit": 8,
+          "pages": [
+            173,
+            191
+          ],
+          "level": "TOC chapter boundaries; includes review pages"
+        }
+      ],
+      "unit1": {
+        "dskp_printed_pages": [
+          30,
+          31
+        ],
+        "sessions": [
+          {
+            "draft_pdp": 1,
+            "week": "M01",
+            "A": {
+              "start": "2027-01-04",
+              "end": "2027-01-07"
+            },
+            "B": {
+              "start": "2027-01-04",
+              "end": "2027-01-08"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.1"
+            ],
+            "topic_cn_original": "千万以内多位数的读法",
+            "textbook_candidate_pages": [
+              1,
+              3
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 2,
+            "week": "M01",
+            "A": {
+              "start": "2027-01-04",
+              "end": "2027-01-07"
+            },
+            "B": {
+              "start": "2027-01-04",
+              "end": "2027-01-08"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.1"
+            ],
+            "topic_cn_original": "数词与数字的双向表达",
+            "textbook_candidate_pages": [
+              2,
+              3
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 3,
+            "week": "M02",
+            "A": {
+              "start": "2027-01-10",
+              "end": "2027-01-14"
+            },
+            "B": {
+              "start": "2027-01-11",
+              "end": "2027-01-15"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.2"
+            ],
+            "topic_cn_original": "多位数的表示与数轴定位",
+            "textbook_candidate_pages": [
+              3,
+              6
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 4,
+            "week": "M02",
+            "A": {
+              "start": "2027-01-10",
+              "end": "2027-01-14"
+            },
+            "B": {
+              "start": "2027-01-11",
+              "end": "2027-01-15"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.2"
+            ],
+            "topic_cn_original": "找规律并补全递增递减数列",
+            "textbook_candidate_pages": [
+              4,
+              6
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 5,
+            "week": "M02",
+            "A": {
+              "start": "2027-01-10",
+              "end": "2027-01-14"
+            },
+            "B": {
+              "start": "2027-01-11",
+              "end": "2027-01-15"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.3"
+            ],
+            "topic_cn_original": "理解百万为单位的分数表示",
+            "textbook_candidate_pages": [
+              7,
+              8
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 6,
+            "week": "M03",
+            "A": {
+              "start": "2027-01-17",
+              "end": "2027-01-21"
+            },
+            "B": {
+              "start": "2027-01-18",
+              "end": "2027-01-22"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.3",
+              "1.1.5"
+            ],
+            "topic_cn_original": "分数百万与整数的双向换算",
+            "textbook_candidate_pages": [
+              8,
+              10
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 7,
+            "week": "M03",
+            "A": {
+              "start": "2027-01-17",
+              "end": "2027-01-21"
+            },
+            "B": {
+              "start": "2027-01-18",
+              "end": "2027-01-22"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.4"
+            ],
+            "topic_cn_original": "读写百万单位的小数",
+            "textbook_candidate_pages": [
+              11,
+              11
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 8,
+            "week": "M03",
+            "A": {
+              "start": "2027-01-17",
+              "end": "2027-01-21"
+            },
+            "B": {
+              "start": "2027-01-18",
+              "end": "2027-01-22"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.1.4",
+              "1.1.5"
+            ],
+            "topic_cn_original": "整数与小数百万的双向转换",
+            "textbook_candidate_pages": [
+              12,
+              14
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 9,
+            "week": "M04",
+            "A": {
+              "start": "2027-01-24",
+              "end": "2027-01-28"
+            },
+            "B": {
+              "start": "2027-01-25",
+              "end": "2027-01-29"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.2.1"
+            ],
+            "topic_cn_original": "统一数的表示后做四则运算",
+            "textbook_candidate_pages": [
+              15,
+              16
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 10,
+            "week": "M04",
+            "A": {
+              "start": "2027-01-24",
+              "end": "2027-01-28"
+            },
+            "B": {
+              "start": "2027-01-25",
+              "end": "2027-01-29"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.2.1"
+            ],
+            "topic_cn_original": "无括号算式的优先顺序",
+            "textbook_candidate_pages": [
+              17,
+              18
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 11,
+            "week": "M04",
+            "A": {
+              "start": "2027-01-24",
+              "end": "2027-01-28"
+            },
+            "B": {
+              "start": "2027-01-25",
+              "end": "2027-01-29"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.2.1"
+            ],
+            "topic_cn_original": "括号内外的混合运算",
+            "textbook_candidate_pages": [
+              19,
+              20
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 12,
+            "week": "M05",
+            "A": {
+              "start": "2027-01-31",
+              "end": "2027-02-04"
+            },
+            "B": {
+              "start": "2027-02-01",
+              "end": "2027-02-05"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.2.1"
+            ],
+            "topic_cn_original": "逆运算及混合算式中的未知量",
+            "textbook_candidate_pages": [
+              21,
+              24
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 13,
+            "week": "M05",
+            "A": {
+              "start": "2027-01-31",
+              "end": "2027-02-04"
+            },
+            "B": {
+              "start": "2027-02-01",
+              "end": "2027-02-05"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.3.1"
+            ],
+            "topic_cn_original": "用因数辨别质数与合数",
+            "textbook_candidate_pages": [
+              25,
+              27
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 14,
+            "week": "M07",
+            "A": {
+              "start": "2027-02-14",
+              "end": "2027-02-18"
+            },
+            "B": {
+              "start": "2027-02-15",
+              "end": "2027-02-19"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.4.1"
+            ],
+            "topic_cn_original": "建立模型解决整数及百万单位情境题",
+            "textbook_candidate_pages": [
+              28,
+              35
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          },
+          {
+            "draft_pdp": 15,
+            "week": "M07",
+            "A": {
+              "start": "2027-02-14",
+              "end": "2027-02-18"
+            },
+            "B": {
+              "start": "2027-02-15",
+              "end": "2027-02-19"
+            },
+            "minutes": 60,
+            "sp_codes": [
+              "1.4.1"
+            ],
+            "topic_cn_original": "检验多步骤答案并处理未知数及质合数情境",
+            "textbook_candidate_pages": [
+              28,
+              36
+            ],
+            "evidence_level": "TOC_AND_DSKP_SCOPE_MATCH; exact individual page tags not exhaustively checked"
+          }
+        ],
+        "base_sp_coverage": 8,
+        "sequence_adjustment": "Reordered operations/conversions to follow textbook, retained 60-minute sessions and dates; proposed page spans need exact footer checks."
+      },
+      "release": false
+    }
+  ]
+}
