@@ -1,0 +1,1059 @@
+{
+  "status": "DRAFT",
+  "subject": "Matematik SK",
+  "year": 1,
+  "curriculum": "KP2027",
+  "source": {
+    "catalog_sha": "af8fb413c5d84eb9433abd6728b75d2db8056592",
+    "archive_sha": "07003ed9b0037359ff30a8956ba328d3d5eb76ad44417bf1be5be18d74fe50cf",
+    "combined_pdf_drive_id": "1x8eTja5wJNAdolORpkH9asShxbpnHELn",
+    "dk_drive_id": "1YStEYq-J1oyg7L_hjZtxL93EHJv5RrNl",
+    "total": {
+      "A": 125,
+      "B": 124
+    }
+  },
+  "records": [
+    {
+      "group": "A",
+      "lesson": 1,
+      "sp_code": "1.1.1",
+      "sp": "Menamakan nombor hingga 100.",
+      "title": "Kenal Nombor",
+      "dk_printed_page": 22,
+      "source_pdf_page": 1,
+      "source_word_sha256": "a946066c29a0a5aa7323c460db20263c30487b7611eb1b76663ad8a01fb0cab4",
+      "source_pdf_sha256": "290ee8564aff5f89df7aa7c09c4a34e4e55a1d13b5db8aa2ca7d7051bcf8edde",
+      "source_activity_titles": [
+        "Bilang Objek",
+        "Padan Kuantiti dan Angka",
+        "Permainan Padanan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kumpulan objek 1 hingga 9; murid meneka bilangannya.",
+        "exploration": "Murid membilang objek satu persatu dan memadankan kuantiti dengan kad angka.",
+        "explanation": "Guru memodelkan cara menyebut dan menulis nombor dalam angka serta perkataan; murid menerangkan padanan.",
+        "elaboration": "Murid memilih kad angka 1–9 dan membina kumpulan objek yang sepadan.",
+        "evaluation": "Guru menyemak secara individu murid membilang, menyebut dan menulis nombor satu hingga sembilan dengan padanan kuantiti yang betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 2,
+      "sp_code": "1.1.1",
+      "sp": "Menamakan nombor hingga 100.",
+      "title": "Kenal Nombor",
+      "dk_printed_page": 22,
+      "source_pdf_page": 2,
+      "source_word_sha256": "5af7282c91d77b8e29d33421396aa33b67b86ec43c4ed5f2d62b442071bd5d91",
+      "source_pdf_sha256": "554c6a0ef1f1bd082a346c816180594749670a027ca24ef5fa3fc2b5a7411c40",
+      "source_activity_titles": [
+        "Bilang Objek",
+        "Padan Kuantiti dan Angka",
+        "Permainan Padanan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kumpulan objek 1 hingga 9; murid meneka bilangannya.",
+        "exploration": "Murid membilang objek satu persatu dan memadankan kuantiti dengan kad angka.",
+        "explanation": "Guru memodelkan cara menyebut dan menulis nombor dalam angka serta perkataan; murid menerangkan padanan.",
+        "elaboration": "Murid membilang blok daripada kad gambar dan menulis angka serta perkataan nombor.",
+        "evaluation": "Guru menyemak secara individu murid membilang, menyebut dan menulis nombor satu hingga sembilan dengan padanan kuantiti yang betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 3,
+      "sp_code": "1.1.1",
+      "sp": "Menamakan nombor hingga 100.",
+      "title": "Kenal Nombor",
+      "dk_printed_page": 22,
+      "source_pdf_page": 3,
+      "source_word_sha256": "3fb9bdead34d92db26d627dfe7fb404115b95d0d01e49aeff9036f45274fd8c5",
+      "source_pdf_sha256": "adbe0b79de195b090517a7c20a2d75789358cc1dc58808f5cff4e606717f97e1",
+      "source_activity_titles": [
+        "Bilang Objek",
+        "Padan Kuantiti dan Angka",
+        "Permainan Padanan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kumpulan objek 1 hingga 9; murid meneka bilangannya.",
+        "exploration": "Murid membilang objek satu persatu dan memadankan kuantiti dengan kad angka.",
+        "explanation": "Guru memodelkan cara menyebut dan menulis nombor dalam angka serta perkataan; murid menerangkan padanan.",
+        "elaboration": "Murid menukar kad nombor dengan pasangan, membina kuantiti dan menyemak padanan.",
+        "evaluation": "Guru menyemak secara individu murid membilang, menyebut dan menulis nombor satu hingga sembilan dengan padanan kuantiti yang betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 4,
+      "sp_code": "1.1.1",
+      "sp": "Menamakan nombor hingga 100.",
+      "title": "Kenal Nombor",
+      "dk_printed_page": 22,
+      "source_pdf_page": 4,
+      "source_word_sha256": "1d875857b916c9772e1f0858bbea0654b845273c5700d5111a81203ffe03be6d",
+      "source_pdf_sha256": "8947b18f3d5e3f1a0fd75d8c12e20dba4f3abca5b9f6252b03e28f95719fcafc",
+      "source_activity_titles": [
+        "Bilang Objek",
+        "Padan Kuantiti dan Angka",
+        "Permainan Padanan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kumpulan objek 1 hingga 9; murid meneka bilangannya.",
+        "exploration": "Murid membilang objek satu persatu dan memadankan kuantiti dengan kad angka.",
+        "explanation": "Guru memodelkan cara menyebut dan menulis nombor dalam angka serta perkataan; murid menerangkan padanan.",
+        "elaboration": "Murid mencari kumpulan objek yang sepadan dengan kad angka rawak dan menulis nombor.",
+        "evaluation": "Guru menyemak secara individu murid membilang, menyebut dan menulis nombor satu hingga sembilan dengan padanan kuantiti yang betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 5,
+      "sp_code": "1.1.2",
+      "sp": "Membandingkan nilai nombor hingga 100.",
+      "title": "Banding Nilai Nombor",
+      "dk_printed_page": 26,
+      "source_pdf_page": 5,
+      "source_word_sha256": "03da0a57d6b4fffacfb1ca4819c10c983ccde118f0b6c203d82294c4c9671693",
+      "source_pdf_sha256": "3656828726aa2599240666ca576281252517bb2bf267fbe93c9e89cec983c6da",
+      "source_activity_titles": [
+        "Banding Kumpulan Objek",
+        "Banding Dua Nilai Nombor",
+        "Terangkan Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua kumpulan pembilang; murid meramal kumpulan yang lebih banyak.",
+        "exploration": "Murid membilang dan memadankan pembilang dalam dua kumpulan untuk membandingkan kuantiti.",
+        "explanation": "Guru membimbing penggunaan istilah sama banyak, lebih daripada dan kurang daripada; murid menerangkan perbandingan.",
+        "elaboration": "Murid membandingkan kumpulan pembilang 6 dan 8 dan menjelaskan hubungan kedua-duanya.",
+        "evaluation": "Murid membandingkan dua kumpulan objek secara individu menggunakan istilah sama banyak, lebih daripada atau kurang daripada dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 6,
+      "sp_code": "1.1.2",
+      "sp": "Membandingkan nilai nombor hingga 100.",
+      "title": "Banding Nilai Nombor",
+      "dk_printed_page": 26,
+      "source_pdf_page": 6,
+      "source_word_sha256": "e97a7b819870d0693a4307efb2d109dc11aecf3335c6e059a48a611d1e2ba01c",
+      "source_pdf_sha256": "b38bb81aae40a91021d67553411821f1a181c4b378157e1cdba4cbddfe4eafa5",
+      "source_activity_titles": [
+        "Banding Kumpulan Objek",
+        "Banding Dua Nilai Nombor",
+        "Terangkan Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua kumpulan pembilang; murid meramal kumpulan yang lebih banyak.",
+        "exploration": "Murid membilang dan memadankan pembilang dalam dua kumpulan untuk membandingkan kuantiti.",
+        "explanation": "Guru membimbing penggunaan istilah sama banyak, lebih daripada dan kurang daripada; murid menerangkan perbandingan.",
+        "elaboration": "Murid membina dua kumpulan dengan kuantiti sama, kemudian mengubah satu kumpulan untuk membandingkan.",
+        "evaluation": "Murid membandingkan dua kumpulan objek secara individu menggunakan istilah sama banyak, lebih daripada atau kurang daripada dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 7,
+      "sp_code": "1.1.2",
+      "sp": "Membandingkan nilai nombor hingga 100.",
+      "title": "Banding Nilai Nombor",
+      "dk_printed_page": 26,
+      "source_pdf_page": 7,
+      "source_word_sha256": "8cdc22bb7558c469c0d9b2c8999eb46fb471205b27fb9649db31df5a3a6b3008",
+      "source_pdf_sha256": "aa94a2c12eaa588bfcd3b7a96d26f4e2a27ffdc404a47aab44a40addbf1f864f",
+      "source_activity_titles": [
+        "Banding Kumpulan Objek",
+        "Banding Dua Nilai Nombor",
+        "Terangkan Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua kumpulan pembilang; murid meramal kumpulan yang lebih banyak.",
+        "exploration": "Murid membilang dan memadankan pembilang dalam dua kumpulan untuk membandingkan kuantiti.",
+        "explanation": "Guru membimbing penggunaan istilah sama banyak, lebih daripada dan kurang daripada; murid menerangkan perbandingan.",
+        "elaboration": "Murid memadankan kad nombor dengan dua kumpulan objek dan menyatakan kumpulan yang kurang.",
+        "evaluation": "Murid membandingkan dua kumpulan objek secara individu menggunakan istilah sama banyak, lebih daripada atau kurang daripada dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 8,
+      "sp_code": "1.1.2",
+      "sp": "Membandingkan nilai nombor hingga 100.",
+      "title": "Banding Nilai Nombor",
+      "dk_printed_page": 26,
+      "source_pdf_page": 8,
+      "source_word_sha256": "c383feb09b8c841ff0f5b7be46dee0f02477d00b7bdd58fa221fef6a7fc0f323",
+      "source_pdf_sha256": "cfc74869936c9b7b6a2a5f9b0ba20d26f78063e51176c2f24beb22377d57e881",
+      "source_activity_titles": [
+        "Banding Kumpulan Objek",
+        "Banding Dua Nilai Nombor",
+        "Terangkan Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua kumpulan pembilang; murid meramal kumpulan yang lebih banyak.",
+        "exploration": "Murid membilang dan memadankan pembilang dalam dua kumpulan untuk membandingkan kuantiti.",
+        "explanation": "Guru membimbing penggunaan istilah sama banyak, lebih daripada dan kurang daripada; murid menerangkan perbandingan.",
+        "elaboration": "Murid memilih dua kad nombor dan menunjukkan perbandingan melalui bahan maujud atau gambar.",
+        "evaluation": "Murid membandingkan dua kumpulan objek secara individu menggunakan istilah sama banyak, lebih daripada atau kurang daripada dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 9,
+      "sp_code": "1.1.3",
+      "sp": "Mengenal susunan nombor.",
+      "title": "Susunan Nombor",
+      "dk_printed_page": 28,
+      "source_pdf_page": 9,
+      "source_word_sha256": "73bd39eea4ee7eb1111ac13e73f1288f826df8e862e1708781b7ea98c92f9490",
+      "source_pdf_sha256": "71392889de9372a6a17b9890496561d6ae6e1d34d49db5f0ad5f3aff9c32e160",
+      "source_activity_titles": [
+        "Cari Nombor Terkecil",
+        "Susun pada Garis Nombor",
+        "Susun dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan lima kad nombor rawak; murid memilih nombor yang patut diletakkan dahulu.",
+        "exploration": "Murid menyusun lima kad nombor pada garis nombor dan mencuba susunan menaik serta menurun.",
+        "explanation": "Guru membimbing hubungan nilai nombor; murid menerangkan perbezaan tertib menaik dan menurun.",
+        "elaboration": "Murid menyusun 18, 15, 17, 16 dan 14 dalam kedua-dua tertib.",
+        "evaluation": "Murid menyusun sekurang-kurangnya lima nombor secara menaik dan menurun menggunakan garis nombor dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 10,
+      "sp_code": "1.1.3",
+      "sp": "Mengenal susunan nombor.",
+      "title": "Susunan Nombor",
+      "dk_printed_page": 28,
+      "source_pdf_page": 10,
+      "source_word_sha256": "3895119adb9de697b1f501108c9043cb222e6ee3686ccd190d2a60f30adfaac5",
+      "source_pdf_sha256": "a6e00582b5088cab3dc9f1d3d8166f29551580eb81f03cdc59c896ef99126cf4",
+      "source_activity_titles": [
+        "Cari Nombor Terkecil",
+        "Susun pada Garis Nombor",
+        "Susun dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan lima kad nombor rawak; murid memilih nombor yang patut diletakkan dahulu.",
+        "exploration": "Murid menyusun lima kad nombor pada garis nombor dan mencuba susunan menaik serta menurun.",
+        "explanation": "Guru membimbing hubungan nilai nombor; murid menerangkan perbezaan tertib menaik dan menurun.",
+        "elaboration": "Murid menyusun lima kad nombor 21, 25, 22, 24 dan 23 serta menerangkan pilihannya.",
+        "evaluation": "Murid menyusun sekurang-kurangnya lima nombor secara menaik dan menurun menggunakan garis nombor dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 11,
+      "sp_code": "1.1.3",
+      "sp": "Mengenal susunan nombor.",
+      "title": "Susunan Nombor",
+      "dk_printed_page": 28,
+      "source_pdf_page": 11,
+      "source_word_sha256": "161c9e35621787ba3c553e04e2823a7c279b6e46444ad94dc6b8e94aa0a36a94",
+      "source_pdf_sha256": "742f8c872ffd8af785d0991d51cb7263d9b05d56d20eeeeb7a4661d6f6711102",
+      "source_activity_titles": [
+        "Cari Nombor Terkecil",
+        "Susun pada Garis Nombor",
+        "Susun dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan lima kad nombor rawak; murid memilih nombor yang patut diletakkan dahulu.",
+        "exploration": "Murid menyusun lima kad nombor pada garis nombor dan mencuba susunan menaik serta menurun.",
+        "explanation": "Guru membimbing hubungan nilai nombor; murid menerangkan perbezaan tertib menaik dan menurun.",
+        "elaboration": "Murid membetulkan susunan rawak 34, 31, 35, 32 dan 33 dalam kedua-dua tertib.",
+        "evaluation": "Murid menyusun sekurang-kurangnya lima nombor secara menaik dan menurun menggunakan garis nombor dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 12,
+      "sp_code": "1.1.3",
+      "sp": "Mengenal susunan nombor.",
+      "title": "Susunan Nombor",
+      "dk_printed_page": 28,
+      "source_pdf_page": 12,
+      "source_word_sha256": "5f5daf89257549af4f4437e4fda778765da4ea82ccd0e819fbd3fa42acd27d42",
+      "source_pdf_sha256": "ca09032d8c8a5b4f6436393cb060947bfc68a7a34f7e38621dc1e6edb9a876b3",
+      "source_activity_titles": [
+        "Cari Nombor Terkecil",
+        "Susun pada Garis Nombor",
+        "Susun dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan lima kad nombor rawak; murid memilih nombor yang patut diletakkan dahulu.",
+        "exploration": "Murid menyusun lima kad nombor pada garis nombor dan mencuba susunan menaik serta menurun.",
+        "explanation": "Guru membimbing hubungan nilai nombor; murid menerangkan perbezaan tertib menaik dan menurun.",
+        "elaboration": "Murid memilih lima kad nombor daripada set guru dan menyusun dalam tertib menaik serta menurun.",
+        "evaluation": "Murid menyusun sekurang-kurangnya lima nombor secara menaik dan menurun menggunakan garis nombor dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 13,
+      "sp_code": "1.1.4",
+      "sp": "Mengenal pasti kedudukan nombor.",
+      "title": "Kedudukan Nombor",
+      "dk_printed_page": 31,
+      "source_pdf_page": 13,
+      "source_word_sha256": "8b43431bd8dbf41c6eec7f499b18468c9dfd22d67e04ddfb293dc9446fb6b461",
+      "source_pdf_sha256": "c0829773578125943a9e65455d44ceb87ceaa0ecae536fbeb28343a061c33180",
+      "source_activity_titles": [
+        "Kenal Garis Nombor",
+        "Susun Nombor pada Garis",
+        "Tunjuk Kedudukan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+        "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+        "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+        "elaboration": "Murid menyusun sepuluh kad gambar dalam satu barisan dan mengenal pasti kedudukan gambar pilihan.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya lima kedudukan dalam barisan pertama hingga kesepuluh dengan betul."
+      },
+      "academic_status": "HOLD_ORDINAL_OBJECTIVE_MISMATCH",
+      "note": "Original objective/criteria focus on number line up to 100, whereas DK p31 focuses on ordinal positions first–tenth in words. Proposed 5P objective and criteria require approval; do not silently alter source or release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 14,
+      "sp_code": "1.1.4",
+      "sp": "Mengenal pasti kedudukan nombor.",
+      "title": "Kedudukan Nombor",
+      "dk_printed_page": 31,
+      "source_pdf_page": 14,
+      "source_word_sha256": "6b71129aa5b33f7dcdea2b51d48ad283adfca052e17d1de8252967516527b259",
+      "source_pdf_sha256": "f45d9a43069f60227ea9b18470c97adf84f00b6c329584eebede6a80e705522c",
+      "source_activity_titles": [
+        "Kenal Garis Nombor",
+        "Susun Nombor pada Garis",
+        "Tunjuk Kedudukan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+        "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+        "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+        "elaboration": "Murid berbaris mengikut giliran dan menyatakan kedudukan masing-masing.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya lima kedudukan dalam barisan pertama hingga kesepuluh dengan betul."
+      },
+      "academic_status": "HOLD_ORDINAL_OBJECTIVE_MISMATCH",
+      "note": "Original objective/criteria focus on number line up to 100, whereas DK p31 focuses on ordinal positions first–tenth in words. Proposed 5P objective and criteria require approval; do not silently alter source or release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 15,
+      "sp_code": "1.1.4",
+      "sp": "Mengenal pasti kedudukan nombor.",
+      "title": "Kedudukan Nombor",
+      "dk_printed_page": 31,
+      "source_pdf_page": 15,
+      "source_word_sha256": "a8792e16c73634ecd9d36be90211400332b22a028af2f1452b78b7af080a3bce",
+      "source_pdf_sha256": "670ef8382d48f3b6e55f57731501c1dcbfbda7ee3ba7eb6ccad46f13f92184de",
+      "source_activity_titles": [
+        "Kenal Garis Nombor",
+        "Susun Nombor pada Garis",
+        "Tunjuk Kedudukan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+        "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+        "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+        "elaboration": "Murid meletakkan objek pada kedudukan yang disebut oleh pasangan.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya lima kedudukan dalam barisan pertama hingga kesepuluh dengan betul."
+      },
+      "academic_status": "HOLD_ORDINAL_OBJECTIVE_MISMATCH",
+      "note": "Original objective/criteria focus on number line up to 100, whereas DK p31 focuses on ordinal positions first–tenth in words. Proposed 5P objective and criteria require approval; do not silently alter source or release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 16,
+      "sp_code": "1.1.4",
+      "sp": "Mengenal pasti kedudukan nombor.",
+      "title": "Kedudukan Nombor",
+      "dk_printed_page": 31,
+      "source_pdf_page": 16,
+      "source_word_sha256": "2ec4ab6de852eaefcaa3a43d8a2ef1c868d6c4e7161ce549aead73f1e608736a",
+      "source_pdf_sha256": "e18d2380f3f5a2ef8733730877f9443c4170c520cdf6f9453966d48d92bed9fe",
+      "source_activity_titles": [
+        "Kenal Garis Nombor",
+        "Susun Nombor pada Garis",
+        "Tunjuk Kedudukan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+        "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+        "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+        "elaboration": "Murid menukar susunan kad gambar dan menyatakan kedudukan baharu lima gambar.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya lima kedudukan dalam barisan pertama hingga kesepuluh dengan betul."
+      },
+      "academic_status": "HOLD_ORDINAL_OBJECTIVE_MISMATCH",
+      "note": "Original objective/criteria focus on number line up to 100, whereas DK p31 focuses on ordinal positions first–tenth in words. Proposed 5P objective and criteria require approval; do not silently alter source or release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 17,
+      "sp_code": "1.2.1",
+      "sp": "Menyatakan ikatan nombor satu digit.",
+      "title": "Ikatan Nombor Satu Digit",
+      "dk_printed_page": 33,
+      "source_pdf_page": 17,
+      "source_word_sha256": "8efeeea1ea3dcc22b0fd354b2e0cc7df8d40010a98675f61e51e60b5d765d406",
+      "source_pdf_sha256": "0a3aa6ca098aeb770fcb5a19a140eef0733661d7eee972c7192c184a9f0b6fa0",
+      "source_activity_titles": [
+        "Lihat Kumpulan Objek",
+        "Bina Ikatan Nombor",
+        "Terangkan Bahagian dan Keseluruhan"
+      ],
+      "phases": {
+        "engagement": "Guru membahagikan sekumpulan pembilang kepada dua bahagian; murid menyatakan jumlah asal.",
+        "exploration": "Murid membina pasangan bahagian daripada pembilang dan kad ikatan nombor.",
+        "explanation": "Guru menerangkan hubungan bahagian dengan keseluruhan; murid menjelaskan bagaimana dua bahagian membentuk jumlah.",
+        "elaboration": "Murid membina ikatan nombor bagi 4 menggunakan pembilang dan menerangkan tiga padanan yang sesuai.",
+        "evaluation": "Murid membina dan menerangkan sekurang-kurangnya tiga ikatan nombor satu digit menggunakan objek konkrit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 18,
+      "sp_code": "1.2.1",
+      "sp": "Menyatakan ikatan nombor satu digit.",
+      "title": "Ikatan Nombor Satu Digit",
+      "dk_printed_page": 33,
+      "source_pdf_page": 18,
+      "source_word_sha256": "c670ddba9d3a7f6b8ae1daf867edbce759bef4422ed85da92341a4c4dedda2b8",
+      "source_pdf_sha256": "6a31acd6e3356a460c69a890d24b2b6acb11cdab99a4bba6f5a4230e84099aac",
+      "source_activity_titles": [
+        "Lihat Kumpulan Objek",
+        "Bina Ikatan Nombor",
+        "Terangkan Bahagian dan Keseluruhan"
+      ],
+      "phases": {
+        "engagement": "Guru membahagikan sekumpulan pembilang kepada dua bahagian; murid menyatakan jumlah asal.",
+        "exploration": "Murid membina pasangan bahagian daripada pembilang dan kad ikatan nombor.",
+        "explanation": "Guru menerangkan hubungan bahagian dengan keseluruhan; murid menjelaskan bagaimana dua bahagian membentuk jumlah.",
+        "elaboration": "Murid mencari tiga ikatan bagi 6 dan menyusun kad ikatan nombor.",
+        "evaluation": "Murid membina dan menerangkan sekurang-kurangnya tiga ikatan nombor satu digit menggunakan objek konkrit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 19,
+      "sp_code": "1.2.1",
+      "sp": "Menyatakan ikatan nombor satu digit.",
+      "title": "Ikatan Nombor Satu Digit",
+      "dk_printed_page": 33,
+      "source_pdf_page": 19,
+      "source_word_sha256": "f51e77dde58ad39c817fd4745cccb1eaf3c53e36349534640249f0ae22d9cac4",
+      "source_pdf_sha256": "b63ed9e7cf8ce78343e982c6f70b6c8e85ec0ab64da1be15e3ec5045d683c390",
+      "source_activity_titles": [
+        "Lihat Kumpulan Objek",
+        "Bina Ikatan Nombor",
+        "Terangkan Bahagian dan Keseluruhan"
+      ],
+      "phases": {
+        "engagement": "Guru membahagikan sekumpulan pembilang kepada dua bahagian; murid menyatakan jumlah asal.",
+        "exploration": "Murid membina pasangan bahagian daripada pembilang dan kad ikatan nombor.",
+        "explanation": "Guru menerangkan hubungan bahagian dengan keseluruhan; murid menjelaskan bagaimana dua bahagian membentuk jumlah.",
+        "elaboration": "Murid membina tiga ikatan bagi 8 menggunakan dua kumpulan pembilang.",
+        "evaluation": "Murid membina dan menerangkan sekurang-kurangnya tiga ikatan nombor satu digit menggunakan objek konkrit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 20,
+      "sp_code": "1.2.1",
+      "sp": "Menyatakan ikatan nombor satu digit.",
+      "title": "Ikatan Nombor Satu Digit",
+      "dk_printed_page": 33,
+      "source_pdf_page": 20,
+      "source_word_sha256": "4b369c399df4c5af7d99fb65167cf4457c4bee8f3066d4cb7f63298b48da7e58",
+      "source_pdf_sha256": "9fd0bbc9dbc694ff2d316e7fa1b9df265cc5e0cc8b0933c6a766d60d91e6fdcb",
+      "source_activity_titles": [
+        "Lihat Kumpulan Objek",
+        "Bina Ikatan Nombor",
+        "Terangkan Bahagian dan Keseluruhan"
+      ],
+      "phases": {
+        "engagement": "Guru membahagikan sekumpulan pembilang kepada dua bahagian; murid menyatakan jumlah asal.",
+        "exploration": "Murid membina pasangan bahagian daripada pembilang dan kad ikatan nombor.",
+        "explanation": "Guru menerangkan hubungan bahagian dengan keseluruhan; murid menjelaskan bagaimana dua bahagian membentuk jumlah.",
+        "elaboration": "Murid memilih jumlah satu digit dan membina tiga ikatan nombor dengan objek konkrit.",
+        "evaluation": "Murid membina dan menerangkan sekurang-kurangnya tiga ikatan nombor satu digit menggunakan objek konkrit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 1,
+      "sp_code": "1.1.1",
+      "sp": "Menamakan nombor hingga 100.",
+      "title": "Kenal Nombor",
+      "dk_printed_page": 22,
+      "source_pdf_page": 126,
+      "source_word_sha256": "8b8d3d3e3b957e98c4dc093942ffde6cde6d0b8ed81c04e2a0d34f30f74ea23f",
+      "source_pdf_sha256": "327f50c3c17c3afa94475f3d3ebb35de550c30b06d4e22c0ad9ceee6e21c81e5",
+      "source_activity_titles": [
+        "Bilang Objek",
+        "Padan Kuantiti dan Angka",
+        "Permainan Padanan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kumpulan objek 1 hingga 9; murid meneka bilangannya.",
+        "exploration": "Murid membilang objek satu persatu dan memadankan kuantiti dengan kad angka.",
+        "explanation": "Guru memodelkan cara menyebut dan menulis nombor dalam angka serta perkataan; murid menerangkan padanan.",
+        "elaboration": "Murid memilih kad angka 1–9 dan membina kumpulan objek yang sepadan.",
+        "evaluation": "Guru menyemak secara individu murid membilang, menyebut dan menulis nombor satu hingga sembilan dengan padanan kuantiti yang betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 2,
+      "sp_code": "1.1.1",
+      "sp": "Menamakan nombor hingga 100.",
+      "title": "Kenal Nombor",
+      "dk_printed_page": 22,
+      "source_pdf_page": 127,
+      "source_word_sha256": "3c3d8a98abf13c0716023230c1098fa095aab1d474e04028d331e0e976d26edd",
+      "source_pdf_sha256": "12f8a5dfc0393a55ddc0e10cffe5e0af709846b8aa0091f9b7a03b92c86ec982",
+      "source_activity_titles": [
+        "Bilang Objek",
+        "Padan Kuantiti dan Angka",
+        "Permainan Padanan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kumpulan objek 1 hingga 9; murid meneka bilangannya.",
+        "exploration": "Murid membilang objek satu persatu dan memadankan kuantiti dengan kad angka.",
+        "explanation": "Guru memodelkan cara menyebut dan menulis nombor dalam angka serta perkataan; murid menerangkan padanan.",
+        "elaboration": "Murid membilang blok daripada kad gambar dan menulis angka serta perkataan nombor.",
+        "evaluation": "Guru menyemak secara individu murid membilang, menyebut dan menulis nombor satu hingga sembilan dengan padanan kuantiti yang betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 3,
+      "sp_code": "1.1.1",
+      "sp": "Menamakan nombor hingga 100.",
+      "title": "Kenal Nombor",
+      "dk_printed_page": 22,
+      "source_pdf_page": 128,
+      "source_word_sha256": "c28bf242cd51dc1b6cfb500dacc88fcdd2910860498b2b3899e94c98d882c8c6",
+      "source_pdf_sha256": "6f9fbaea88867112fea899b82bbb80637c2c31f9afb3a8196273ad922ca230cb",
+      "source_activity_titles": [
+        "Bilang Objek",
+        "Padan Kuantiti dan Angka",
+        "Permainan Padanan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kumpulan objek 1 hingga 9; murid meneka bilangannya.",
+        "exploration": "Murid membilang objek satu persatu dan memadankan kuantiti dengan kad angka.",
+        "explanation": "Guru memodelkan cara menyebut dan menulis nombor dalam angka serta perkataan; murid menerangkan padanan.",
+        "elaboration": "Murid menukar kad nombor dengan pasangan, membina kuantiti dan menyemak padanan.",
+        "evaluation": "Guru menyemak secara individu murid membilang, menyebut dan menulis nombor satu hingga sembilan dengan padanan kuantiti yang betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 4,
+      "sp_code": "1.1.1",
+      "sp": "Menamakan nombor hingga 100.",
+      "title": "Kenal Nombor",
+      "dk_printed_page": 22,
+      "source_pdf_page": 129,
+      "source_word_sha256": "81325b6ec401ad8d175934ff321ebe89e2574c93cbae958f1c7c28f66306d3ef",
+      "source_pdf_sha256": "071173ff5beae98609d7e39cf46bc8952fbbd0e2e1db05ea76b88a3ea6c307b9",
+      "source_activity_titles": [
+        "Bilang Objek",
+        "Padan Kuantiti dan Angka",
+        "Permainan Padanan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan kumpulan objek 1 hingga 9; murid meneka bilangannya.",
+        "exploration": "Murid membilang objek satu persatu dan memadankan kuantiti dengan kad angka.",
+        "explanation": "Guru memodelkan cara menyebut dan menulis nombor dalam angka serta perkataan; murid menerangkan padanan.",
+        "elaboration": "Murid mencari kumpulan objek yang sepadan dengan kad angka rawak dan menulis nombor.",
+        "evaluation": "Guru menyemak secara individu murid membilang, menyebut dan menulis nombor satu hingga sembilan dengan padanan kuantiti yang betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 5,
+      "sp_code": "1.1.2",
+      "sp": "Membandingkan nilai nombor hingga 100.",
+      "title": "Banding Nilai Nombor",
+      "dk_printed_page": 26,
+      "source_pdf_page": 130,
+      "source_word_sha256": "a03cca4ba9e818b15adf36ee210e7f084584944f9679732083b6cde701c7a993",
+      "source_pdf_sha256": "38c782596338b35fb0153915869a6578142532a58bd97dbe6adce725a6d413c9",
+      "source_activity_titles": [
+        "Banding Kumpulan Objek",
+        "Banding Dua Nilai Nombor",
+        "Terangkan Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua kumpulan pembilang; murid meramal kumpulan yang lebih banyak.",
+        "exploration": "Murid membilang dan memadankan pembilang dalam dua kumpulan untuk membandingkan kuantiti.",
+        "explanation": "Guru membimbing penggunaan istilah sama banyak, lebih daripada dan kurang daripada; murid menerangkan perbandingan.",
+        "elaboration": "Murid membandingkan kumpulan pembilang 6 dan 8 dan menjelaskan hubungan kedua-duanya.",
+        "evaluation": "Murid membandingkan dua kumpulan objek secara individu menggunakan istilah sama banyak, lebih daripada atau kurang daripada dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 6,
+      "sp_code": "1.1.2",
+      "sp": "Membandingkan nilai nombor hingga 100.",
+      "title": "Banding Nilai Nombor",
+      "dk_printed_page": 26,
+      "source_pdf_page": 131,
+      "source_word_sha256": "9be39da2a631901dd9e9565a4007850216b60aba61916ad449159d6f561ddf5b",
+      "source_pdf_sha256": "d9f34e0204df1efe6ac9c21cb8f9ab67eb04bde1e5e42d57d7bda088e1d0d6ee",
+      "source_activity_titles": [
+        "Banding Kumpulan Objek",
+        "Banding Dua Nilai Nombor",
+        "Terangkan Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua kumpulan pembilang; murid meramal kumpulan yang lebih banyak.",
+        "exploration": "Murid membilang dan memadankan pembilang dalam dua kumpulan untuk membandingkan kuantiti.",
+        "explanation": "Guru membimbing penggunaan istilah sama banyak, lebih daripada dan kurang daripada; murid menerangkan perbandingan.",
+        "elaboration": "Murid membina dua kumpulan dengan kuantiti sama, kemudian mengubah satu kumpulan untuk membandingkan.",
+        "evaluation": "Murid membandingkan dua kumpulan objek secara individu menggunakan istilah sama banyak, lebih daripada atau kurang daripada dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 7,
+      "sp_code": "1.1.2",
+      "sp": "Membandingkan nilai nombor hingga 100.",
+      "title": "Banding Nilai Nombor",
+      "dk_printed_page": 26,
+      "source_pdf_page": 132,
+      "source_word_sha256": "39a0fafd1d12b25dd6955785535a18b92cba0b64094d65bf8149bd4557e69150",
+      "source_pdf_sha256": "7e86fceb7108bdbd72f00ec7104e598b71818505c98a1981943fe2ada4916875",
+      "source_activity_titles": [
+        "Banding Kumpulan Objek",
+        "Banding Dua Nilai Nombor",
+        "Terangkan Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua kumpulan pembilang; murid meramal kumpulan yang lebih banyak.",
+        "exploration": "Murid membilang dan memadankan pembilang dalam dua kumpulan untuk membandingkan kuantiti.",
+        "explanation": "Guru membimbing penggunaan istilah sama banyak, lebih daripada dan kurang daripada; murid menerangkan perbandingan.",
+        "elaboration": "Murid memadankan kad nombor dengan dua kumpulan objek dan menyatakan kumpulan yang kurang.",
+        "evaluation": "Murid membandingkan dua kumpulan objek secara individu menggunakan istilah sama banyak, lebih daripada atau kurang daripada dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 8,
+      "sp_code": "1.1.2",
+      "sp": "Membandingkan nilai nombor hingga 100.",
+      "title": "Banding Nilai Nombor",
+      "dk_printed_page": 26,
+      "source_pdf_page": 133,
+      "source_word_sha256": "ae0eba2c4a3f7b99e3bfb20e417148f27c5971e906f248f67ceb2d57930a218e",
+      "source_pdf_sha256": "67042b4cd98c9003d9a07932b16c4510e600c8979a15fc5c83a5e1da5f7f7c9a",
+      "source_activity_titles": [
+        "Banding Kumpulan Objek",
+        "Banding Dua Nilai Nombor",
+        "Terangkan Perbandingan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan dua kumpulan pembilang; murid meramal kumpulan yang lebih banyak.",
+        "exploration": "Murid membilang dan memadankan pembilang dalam dua kumpulan untuk membandingkan kuantiti.",
+        "explanation": "Guru membimbing penggunaan istilah sama banyak, lebih daripada dan kurang daripada; murid menerangkan perbandingan.",
+        "elaboration": "Murid memilih dua kad nombor dan menunjukkan perbandingan melalui bahan maujud atau gambar.",
+        "evaluation": "Murid membandingkan dua kumpulan objek secara individu menggunakan istilah sama banyak, lebih daripada atau kurang daripada dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 9,
+      "sp_code": "1.1.3",
+      "sp": "Mengenal susunan nombor.",
+      "title": "Susunan Nombor",
+      "dk_printed_page": 28,
+      "source_pdf_page": 134,
+      "source_word_sha256": "1d0b1664a596690642544827c7e097d23df4b4875d2122cd0455fb517548eec6",
+      "source_pdf_sha256": "f66912a487361bdb9080cef068458f7015134e7fc57d3a267de22552722c8cf8",
+      "source_activity_titles": [
+        "Cari Nombor Terkecil",
+        "Susun pada Garis Nombor",
+        "Susun dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan lima kad nombor rawak; murid memilih nombor yang patut diletakkan dahulu.",
+        "exploration": "Murid menyusun lima kad nombor pada garis nombor dan mencuba susunan menaik serta menurun.",
+        "explanation": "Guru membimbing hubungan nilai nombor; murid menerangkan perbezaan tertib menaik dan menurun.",
+        "elaboration": "Murid menyusun 18, 15, 17, 16 dan 14 dalam kedua-dua tertib.",
+        "evaluation": "Murid menyusun sekurang-kurangnya lima nombor secara menaik dan menurun menggunakan garis nombor dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 10,
+      "sp_code": "1.1.3",
+      "sp": "Mengenal susunan nombor.",
+      "title": "Susunan Nombor",
+      "dk_printed_page": 28,
+      "source_pdf_page": 135,
+      "source_word_sha256": "58c331439313378c39b38ab65e0c522fce30a88d334153f1fc812f6de00d6cc5",
+      "source_pdf_sha256": "7efa2f68e74eb3e7f148306d3ba1018503ad36f19b5123e7695afa860cd276ec",
+      "source_activity_titles": [
+        "Cari Nombor Terkecil",
+        "Susun pada Garis Nombor",
+        "Susun dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan lima kad nombor rawak; murid memilih nombor yang patut diletakkan dahulu.",
+        "exploration": "Murid menyusun lima kad nombor pada garis nombor dan mencuba susunan menaik serta menurun.",
+        "explanation": "Guru membimbing hubungan nilai nombor; murid menerangkan perbezaan tertib menaik dan menurun.",
+        "elaboration": "Murid menyusun lima kad nombor 21, 25, 22, 24 dan 23 serta menerangkan pilihannya.",
+        "evaluation": "Murid menyusun sekurang-kurangnya lima nombor secara menaik dan menurun menggunakan garis nombor dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 11,
+      "sp_code": "1.1.3",
+      "sp": "Mengenal susunan nombor.",
+      "title": "Susunan Nombor",
+      "dk_printed_page": 28,
+      "source_pdf_page": 136,
+      "source_word_sha256": "409f4b3535fb30d6210a595fb3faef9c28d429a3985e54d7d9638ad33204b424",
+      "source_pdf_sha256": "1a70f23ec1a91086c125153ce87782a77e7b3a059d27d1b374bbdc00d90ce43f",
+      "source_activity_titles": [
+        "Cari Nombor Terkecil",
+        "Susun pada Garis Nombor",
+        "Susun dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan lima kad nombor rawak; murid memilih nombor yang patut diletakkan dahulu.",
+        "exploration": "Murid menyusun lima kad nombor pada garis nombor dan mencuba susunan menaik serta menurun.",
+        "explanation": "Guru membimbing hubungan nilai nombor; murid menerangkan perbezaan tertib menaik dan menurun.",
+        "elaboration": "Murid membetulkan susunan rawak 34, 31, 35, 32 dan 33 dalam kedua-dua tertib.",
+        "evaluation": "Murid menyusun sekurang-kurangnya lima nombor secara menaik dan menurun menggunakan garis nombor dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 12,
+      "sp_code": "1.1.3",
+      "sp": "Mengenal susunan nombor.",
+      "title": "Susunan Nombor",
+      "dk_printed_page": 28,
+      "source_pdf_page": 137,
+      "source_word_sha256": "a08e771461b8d64b048c5ba5e6f8bb48f6902de14e4b47cba54c68c669431d9e",
+      "source_pdf_sha256": "1df1eb0bb056cf06dac3a95cb0d0bf2a69932c82fa53e417f6577e920550858a",
+      "source_activity_titles": [
+        "Cari Nombor Terkecil",
+        "Susun pada Garis Nombor",
+        "Susun dan Jelaskan"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan lima kad nombor rawak; murid memilih nombor yang patut diletakkan dahulu.",
+        "exploration": "Murid menyusun lima kad nombor pada garis nombor dan mencuba susunan menaik serta menurun.",
+        "explanation": "Guru membimbing hubungan nilai nombor; murid menerangkan perbezaan tertib menaik dan menurun.",
+        "elaboration": "Murid memilih lima kad nombor daripada set guru dan menyusun dalam tertib menaik serta menurun.",
+        "evaluation": "Murid menyusun sekurang-kurangnya lima nombor secara menaik dan menurun menggunakan garis nombor dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 13,
+      "sp_code": "1.1.4",
+      "sp": "Mengenal pasti kedudukan nombor.",
+      "title": "Kedudukan Nombor",
+      "dk_printed_page": 31,
+      "source_pdf_page": 138,
+      "source_word_sha256": "55d253869c0328970825f5b41260cef64aa9f28a2a3d1b7a326f8062aa362f16",
+      "source_pdf_sha256": "7a16c2f21a7bdc0c43ff753f4e0bf314455c22118a43ba29cdfdc9a56f18ee15",
+      "source_activity_titles": [
+        "Kenal Garis Nombor",
+        "Susun Nombor pada Garis",
+        "Tunjuk Kedudukan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+        "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+        "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+        "elaboration": "Murid menyusun sepuluh kad gambar dalam satu barisan dan mengenal pasti kedudukan gambar pilihan.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya lima kedudukan dalam barisan pertama hingga kesepuluh dengan betul."
+      },
+      "academic_status": "HOLD_ORDINAL_OBJECTIVE_MISMATCH",
+      "note": "Original objective/criteria focus on number line up to 100, whereas DK p31 focuses on ordinal positions first–tenth in words. Proposed 5P objective and criteria require approval; do not silently alter source or release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 14,
+      "sp_code": "1.1.4",
+      "sp": "Mengenal pasti kedudukan nombor.",
+      "title": "Kedudukan Nombor",
+      "dk_printed_page": 31,
+      "source_pdf_page": 139,
+      "source_word_sha256": "d557bfc2a0148c68d497a23495e85a4aaee26cb1c9d13635d46cde35909f7e30",
+      "source_pdf_sha256": "a090c0700563e138d3fcc119d6eb47d78a5492d071c58dd4524a21c1416bf91e",
+      "source_activity_titles": [
+        "Kenal Garis Nombor",
+        "Susun Nombor pada Garis",
+        "Tunjuk Kedudukan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+        "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+        "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+        "elaboration": "Murid berbaris mengikut giliran dan menyatakan kedudukan masing-masing.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya lima kedudukan dalam barisan pertama hingga kesepuluh dengan betul."
+      },
+      "academic_status": "HOLD_ORDINAL_OBJECTIVE_MISMATCH",
+      "note": "Original objective/criteria focus on number line up to 100, whereas DK p31 focuses on ordinal positions first–tenth in words. Proposed 5P objective and criteria require approval; do not silently alter source or release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 15,
+      "sp_code": "1.1.4",
+      "sp": "Mengenal pasti kedudukan nombor.",
+      "title": "Kedudukan Nombor",
+      "dk_printed_page": 31,
+      "source_pdf_page": 140,
+      "source_word_sha256": "b76dfb33e585c9294b652710d43000dbd10f684fa96bd0ee1c7e7ac75dcf4a8b",
+      "source_pdf_sha256": "699fa7066535854245ec002e922225ea449f3d0d50a136931610eb1845976dc6",
+      "source_activity_titles": [
+        "Kenal Garis Nombor",
+        "Susun Nombor pada Garis",
+        "Tunjuk Kedudukan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+        "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+        "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+        "elaboration": "Murid meletakkan objek pada kedudukan yang disebut oleh pasangan.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya lima kedudukan dalam barisan pertama hingga kesepuluh dengan betul."
+      },
+      "academic_status": "HOLD_ORDINAL_OBJECTIVE_MISMATCH",
+      "note": "Original objective/criteria focus on number line up to 100, whereas DK p31 focuses on ordinal positions first–tenth in words. Proposed 5P objective and criteria require approval; do not silently alter source or release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 16,
+      "sp_code": "1.1.4",
+      "sp": "Mengenal pasti kedudukan nombor.",
+      "title": "Kedudukan Nombor",
+      "dk_printed_page": 31,
+      "source_pdf_page": 141,
+      "source_word_sha256": "0640d1b2b6bedab7f1c49e601c1958bfabfca1b23ece0af8a4f6930467b535db",
+      "source_pdf_sha256": "8a8114a6c48db545293c7418e37e3811241541e48a7749a9ebe8e52a55d6f071",
+      "source_activity_titles": [
+        "Kenal Garis Nombor",
+        "Susun Nombor pada Garis",
+        "Tunjuk Kedudukan Nombor"
+      ],
+      "phases": {
+        "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+        "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+        "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+        "elaboration": "Murid menukar susunan kad gambar dan menyatakan kedudukan baharu lima gambar.",
+        "evaluation": "Murid menyatakan sekurang-kurangnya lima kedudukan dalam barisan pertama hingga kesepuluh dengan betul."
+      },
+      "academic_status": "HOLD_ORDINAL_OBJECTIVE_MISMATCH",
+      "note": "Original objective/criteria focus on number line up to 100, whereas DK p31 focuses on ordinal positions first–tenth in words. Proposed 5P objective and criteria require approval; do not silently alter source or release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 17,
+      "sp_code": "1.2.1",
+      "sp": "Menyatakan ikatan nombor satu digit.",
+      "title": "Ikatan Nombor Satu Digit",
+      "dk_printed_page": 33,
+      "source_pdf_page": 142,
+      "source_word_sha256": "a5d4d1938661214ef98d94f2f280d3b0afbda52338a85565a8265d47abb4b93a",
+      "source_pdf_sha256": "6f0f0c940d3c99745a67e7aaaa89d78ad52cff4f5149f205cf70f8dc138da250",
+      "source_activity_titles": [
+        "Lihat Kumpulan Objek",
+        "Bina Ikatan Nombor",
+        "Terangkan Bahagian dan Keseluruhan"
+      ],
+      "phases": {
+        "engagement": "Guru membahagikan sekumpulan pembilang kepada dua bahagian; murid menyatakan jumlah asal.",
+        "exploration": "Murid membina pasangan bahagian daripada pembilang dan kad ikatan nombor.",
+        "explanation": "Guru menerangkan hubungan bahagian dengan keseluruhan; murid menjelaskan bagaimana dua bahagian membentuk jumlah.",
+        "elaboration": "Murid membina ikatan nombor bagi 4 menggunakan pembilang dan menerangkan tiga padanan yang sesuai.",
+        "evaluation": "Murid membina dan menerangkan sekurang-kurangnya tiga ikatan nombor satu digit menggunakan objek konkrit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 18,
+      "sp_code": "1.2.1",
+      "sp": "Menyatakan ikatan nombor satu digit.",
+      "title": "Ikatan Nombor Satu Digit",
+      "dk_printed_page": 33,
+      "source_pdf_page": 143,
+      "source_word_sha256": "9f1fabfd587ad91f40b74eda561e1bca48f42a2edc3637fe1255c254a1862ee1",
+      "source_pdf_sha256": "a3a158897cc8464b40e3349ef5a69958764d19a1a1c4024bb64b33fd8512aa3c",
+      "source_activity_titles": [
+        "Lihat Kumpulan Objek",
+        "Bina Ikatan Nombor",
+        "Terangkan Bahagian dan Keseluruhan"
+      ],
+      "phases": {
+        "engagement": "Guru membahagikan sekumpulan pembilang kepada dua bahagian; murid menyatakan jumlah asal.",
+        "exploration": "Murid membina pasangan bahagian daripada pembilang dan kad ikatan nombor.",
+        "explanation": "Guru menerangkan hubungan bahagian dengan keseluruhan; murid menjelaskan bagaimana dua bahagian membentuk jumlah.",
+        "elaboration": "Murid mencari tiga ikatan bagi 6 dan menyusun kad ikatan nombor.",
+        "evaluation": "Murid membina dan menerangkan sekurang-kurangnya tiga ikatan nombor satu digit menggunakan objek konkrit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 19,
+      "sp_code": "1.2.1",
+      "sp": "Menyatakan ikatan nombor satu digit.",
+      "title": "Ikatan Nombor Satu Digit",
+      "dk_printed_page": 33,
+      "source_pdf_page": 144,
+      "source_word_sha256": "953cf499a346324c8fe47c9f23f79b0e42d6d820195fa45dcac268534d6fbc81",
+      "source_pdf_sha256": "af159dc1c75ae97b7a9cd8a4b568887e157214df98b63b1a65ce14b028a62653",
+      "source_activity_titles": [
+        "Lihat Kumpulan Objek",
+        "Bina Ikatan Nombor",
+        "Terangkan Bahagian dan Keseluruhan"
+      ],
+      "phases": {
+        "engagement": "Guru membahagikan sekumpulan pembilang kepada dua bahagian; murid menyatakan jumlah asal.",
+        "exploration": "Murid membina pasangan bahagian daripada pembilang dan kad ikatan nombor.",
+        "explanation": "Guru menerangkan hubungan bahagian dengan keseluruhan; murid menjelaskan bagaimana dua bahagian membentuk jumlah.",
+        "elaboration": "Murid membina tiga ikatan bagi 8 menggunakan dua kumpulan pembilang.",
+        "evaluation": "Murid membina dan menerangkan sekurang-kurangnya tiga ikatan nombor satu digit menggunakan objek konkrit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 20,
+      "sp_code": "1.2.1",
+      "sp": "Menyatakan ikatan nombor satu digit.",
+      "title": "Ikatan Nombor Satu Digit",
+      "dk_printed_page": 33,
+      "source_pdf_page": 145,
+      "source_word_sha256": "42d41faabc09d40b6bc7adac9d0210d9b684e43df532302544f017a851360473",
+      "source_pdf_sha256": "b0db1720eeb45c3fbed4d458fb6189ffe58513e4b10ca00c306922430d7d2167",
+      "source_activity_titles": [
+        "Lihat Kumpulan Objek",
+        "Bina Ikatan Nombor",
+        "Terangkan Bahagian dan Keseluruhan"
+      ],
+      "phases": {
+        "engagement": "Guru membahagikan sekumpulan pembilang kepada dua bahagian; murid menyatakan jumlah asal.",
+        "exploration": "Murid membina pasangan bahagian daripada pembilang dan kad ikatan nombor.",
+        "explanation": "Guru menerangkan hubungan bahagian dengan keseluruhan; murid menjelaskan bagaimana dua bahagian membentuk jumlah.",
+        "elaboration": "Murid memilih jumlah satu digit dan membina tiga ikatan nombor dengan objek konkrit.",
+        "evaluation": "Murid membina dan menerangkan sekurang-kurangnya tiga ikatan nombor satu digit menggunakan objek konkrit."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "note": "Review individual source and DK scope before release.",
+      "ready": false
+    }
+  ],
+  "release": false
+}

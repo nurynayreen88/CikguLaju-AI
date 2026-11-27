@@ -22,6 +22,7 @@ HOST = "soxakntcanbycjoygrcx.supabase.co"
 SOURCE_SHA = "07003ed9b0037359ff30a8956ba328d3d5eb76ad44417bf1be5be18d74fe50cf"
 ORIGIN = "https://cikgulaju-web.onrender.com"
 FEATURE_FLAG = "CIKGULAJU_KP2027_MATH_CANARY_ENABLED"
+FIVE_P_FLAG = "CIKGULAJU_KP2027_MATH_5P_ENABLED"
 FORMATS = {"word": ("docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
            "pdf": ("pdf", "application/pdf")}
 # Curriculum-only catalog: exact Lesson/SP and digest mapping from immutable QA V11.
@@ -294,7 +295,8 @@ def create_blueprint():
             items = math_approved_items(groups, _CATALOG)
         except (PilotUnavailable, ValueError, KeyError):
             return denied("Senarai PdP belum tersedia. Sila cuba lagi.", 503, "INVENTORY_UNAVAILABLE")
-        return jsonify({"groups": groups, "items": items, "source": "verified-private-kp2027-v11"})
+        return jsonify({"groups": groups, "items": items, "source": "verified-private-kp2027-v11",
+                        "rph_variants": ["lengkap", "5p"] if os.environ.get(FIVE_P_FLAG) == "1" else ["lengkap"]})
 
     @bp.post("/api/kp2027/sk/tahun-1/matematik/download")
     def download():
@@ -307,12 +309,15 @@ def create_blueprint():
         payload = request.get_json(silent=True)
         if (not isinstance(payload, dict) or
                 not {"group", "lesson", "format"}.issubset(payload) or
-                set(payload) - {"group", "lesson", "format"} - EXTRA_FIELDS):
+                set(payload) - {"group", "lesson", "format", "rph_variant"} - EXTRA_FIELDS):
             return denied("Pilihan PdP atau maklumat PdP tidak lengkap.", 400, "INVALID_SELECTION")
         try:
             group, lesson, fmt = valid_selection(payload["group"], payload["lesson"], payload["format"])
         except ValueError:
             return denied("PdP yang dipilih belum tersedia.", 404, "LESSON_NOT_AVAILABLE")
+        variant = payload.get("rph_variant", "lengkap")
+        if variant not in ("lengkap", "5p") or (variant == "5p" and os.environ.get(FIVE_P_FLAG) != "1"):
+            return denied("Pilihan format RPH belum tersedia.", 404, "RPH_VARIANT_UNAVAILABLE")
         config, account, error = account_for_request()
         if error is not None:
             return error
@@ -326,9 +331,16 @@ def create_blueprint():
         except PilotUnavailable:
             return denied("RPH ini masih dalam semakan atau tidak tersedia.", 503, "PILOT_ASSET_UNAVAILABLE")
         try:
-            document = personalize_approved_rph(document, fmt, {key:payload[key] for key in EXTRA_FIELDS if key in payload})
+            fields = {key:payload[key] for key in EXTRA_FIELDS if key in payload}
+            if variant == "5p":
+                from web import kp2027_math_5p
+                document = kp2027_math_5p.render(group, lesson, fmt, fields)
+            else:
+                document = personalize_approved_rph(document, fmt, fields)
         except TeacherFieldError as exc:
             return denied(str(exc), 400, "INVALID_TEACHER_FIELDS")
+        except (PilotUnavailable, RuntimeError, OSError, ValueError, TypeError, KeyError, ImportError, AssertionError):
+            return denied("RPH ini belum dapat dihasilkan.", 503, "RPH_RENDER_UNAVAILABLE")
         remaining = None
         if not paid:
             try:
@@ -342,8 +354,9 @@ def create_blueprint():
             remaining = result["remaining"]
         ext, mime = FORMATS[fmt]
         response = send_file(BytesIO(document), mimetype=mime, as_attachment=True,
-                             download_name=f"CIKGULAJU_KP2027_MATH_T1_{group}_LESSON{lesson:03d}.{ext}",
+                             download_name=f"CIKGULAJU_KP2027_MATH_T1_{group}_LESSON{lesson:03d}{'_5P' if variant == '5p' else ''} .{ext}".replace(" .", "."),
                              conditional=False)
+        response.headers["X-RPH-Variant"] = variant
         if remaining is not None:
             response.headers["X-RPH-Trial-Remaining"] = str(remaining)
         return response

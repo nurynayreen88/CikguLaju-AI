@@ -1,0 +1,3702 @@
+{
+  "status": "ACADEMIC_SCOPE_CORRECTIONS_DRAFT",
+  "source": {
+    "combined_pdf_sha256": "9fb7007dc8b22027dcc0d2dea4466a8fc1ac7fa8ba4c1fa2c88825a4eb9a5dde",
+    "dk_pdf_sha256": "b8c16beb34f408005030b700a1174e620bf7fea794221589e520a7a8149a150b",
+    "dk_isbn": "978-967-420-801-1",
+    "catalog_sha": "af8fb413c5d84eb9433abd6728b75d2db8056592",
+    "batch_blobs": [
+      "674cae2a8f535f18f56cfa6b9c0dce0e5b378fd7",
+      "48eed39d491b987b941652ceeb7cc0274d1c560f",
+      "af979602e4b077723b74cfbbd9235cfe1b4d6ca1"
+    ]
+  },
+  "audit": {
+    "source_pages_extracted": 249,
+    "unique_source_identities": 249,
+    "sp_statements_matched": 249,
+    "unique_sp": 30,
+    "objective_criteria_and_non_activity_fields_identical_within_each_sp": true,
+    "activity_title_sets_identical_within_each_sp": true,
+    "correction_drafts": 40,
+    "note": "Actual combined PDF and DK extracted locally; all SP texts match after normalizing line-wrapped hyphen. Source activity bodies differ in scaffolding within each SP. This audit is not independent per-lesson pedagogical approval. Original records untouched. Word/PDF rendering, personalized reflection and web integration pending."
+  },
+  "records": [
+    {
+      "group": "A",
+      "lesson": 1,
+      "sp_code": "1.1.1",
+      "source_pdf_page": 1,
+      "dk_printed_page": 22,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 2,
+      "sp_code": "1.1.1",
+      "source_pdf_page": 2,
+      "dk_printed_page": 22,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 3,
+      "sp_code": "1.1.1",
+      "source_pdf_page": 3,
+      "dk_printed_page": 22,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 4,
+      "sp_code": "1.1.1",
+      "source_pdf_page": 4,
+      "dk_printed_page": 22,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 5,
+      "sp_code": "1.1.2",
+      "source_pdf_page": 5,
+      "dk_printed_page": 26,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 6,
+      "sp_code": "1.1.2",
+      "source_pdf_page": 6,
+      "dk_printed_page": 26,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 7,
+      "sp_code": "1.1.2",
+      "source_pdf_page": 7,
+      "dk_printed_page": 26,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 8,
+      "sp_code": "1.1.2",
+      "source_pdf_page": 8,
+      "dk_printed_page": 26,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 9,
+      "sp_code": "1.1.3",
+      "source_pdf_page": 9,
+      "dk_printed_page": 28,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 10,
+      "sp_code": "1.1.3",
+      "source_pdf_page": 10,
+      "dk_printed_page": 28,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 11,
+      "sp_code": "1.1.3",
+      "source_pdf_page": 11,
+      "dk_printed_page": 28,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 12,
+      "sp_code": "1.1.3",
+      "source_pdf_page": 12,
+      "dk_printed_page": 28,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 13,
+      "sp_code": "1.1.4",
+      "source_pdf_page": 13,
+      "dk_printed_page": 31,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          31,
+          32
+        ],
+        "original_objective": "Murid mengenal pasti kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100.",
+        "original_criteria": "Murid menunjukkan kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100 dengan betul.",
+        "objective": "Murid mengenal pasti dan menyatakan kedudukan pertama hingga kesepuluh dalam barisan objek atau murid.",
+        "criteria": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan.",
+        "bbm": "Sepuluh kad gambar, objek kelas, kad perkataan kedudukan.",
+        "pbd": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan.",
+        "closure": "Murid menyatakan kedudukan satu objek pilihan dan menunjukkan arah mula barisan.",
+        "remedial": "Gunakan barisan lima objek dengan kad kedudukan dan bimbingan.",
+        "extension": "Susun semula sepuluh objek dan nyatakan kedudukan baharu.",
+        "phases": {
+          "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+          "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+          "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+          "elaboration": "Murid susun sepuluh kad gambar haiwan; nyatakan kedudukan pertama, ketiga dan kesepuluh.",
+          "evaluation": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan. Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan."
+        },
+        "reflection": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Gunakan barisan lima objek dengan kad kedudukan dan bimbingan."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 14,
+      "sp_code": "1.1.4",
+      "source_pdf_page": 14,
+      "dk_printed_page": 31,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          31,
+          32
+        ],
+        "original_objective": "Murid mengenal pasti kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100.",
+        "original_criteria": "Murid menunjukkan kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100 dengan betul.",
+        "objective": "Murid mengenal pasti dan menyatakan kedudukan pertama hingga kesepuluh dalam barisan objek atau murid.",
+        "criteria": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan.",
+        "bbm": "Sepuluh kad gambar, objek kelas, kad perkataan kedudukan.",
+        "pbd": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan.",
+        "closure": "Murid menyatakan kedudukan satu objek pilihan dan menunjukkan arah mula barisan.",
+        "remedial": "Gunakan barisan lima objek dengan kad kedudukan dan bimbingan.",
+        "extension": "Susun semula sepuluh objek dan nyatakan kedudukan baharu.",
+        "phases": {
+          "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+          "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+          "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+          "elaboration": "Murid berbaris dalam kumpulan sepuluh; tukar tempat dan nyatakan kedudukan baharu.",
+          "evaluation": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan. Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan."
+        },
+        "reflection": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Gunakan barisan lima objek dengan kad kedudukan dan bimbingan."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 15,
+      "sp_code": "1.1.4",
+      "source_pdf_page": 15,
+      "dk_printed_page": 31,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          31,
+          32
+        ],
+        "original_objective": "Murid mengenal pasti kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100.",
+        "original_criteria": "Murid menunjukkan kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100 dengan betul.",
+        "objective": "Murid mengenal pasti dan menyatakan kedudukan pertama hingga kesepuluh dalam barisan objek atau murid.",
+        "criteria": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan.",
+        "bbm": "Sepuluh kad gambar, objek kelas, kad perkataan kedudukan.",
+        "pbd": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan.",
+        "closure": "Murid menyatakan kedudukan satu objek pilihan dan menunjukkan arah mula barisan.",
+        "remedial": "Gunakan barisan lima objek dengan kad kedudukan dan bimbingan.",
+        "extension": "Susun semula sepuluh objek dan nyatakan kedudukan baharu.",
+        "phases": {
+          "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+          "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+          "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+          "elaboration": "Murid letakkan objek pada kedudukan kedua, kelima dan kelapan mengikut arahan pasangan.",
+          "evaluation": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan. Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan."
+        },
+        "reflection": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Gunakan barisan lima objek dengan kad kedudukan dan bimbingan."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 16,
+      "sp_code": "1.1.4",
+      "source_pdf_page": 16,
+      "dk_printed_page": 31,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          31,
+          32
+        ],
+        "original_objective": "Murid mengenal pasti kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100.",
+        "original_criteria": "Murid menunjukkan kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100 dengan betul.",
+        "objective": "Murid mengenal pasti dan menyatakan kedudukan pertama hingga kesepuluh dalam barisan objek atau murid.",
+        "criteria": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan.",
+        "bbm": "Sepuluh kad gambar, objek kelas, kad perkataan kedudukan.",
+        "pbd": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan.",
+        "closure": "Murid menyatakan kedudukan satu objek pilihan dan menunjukkan arah mula barisan.",
+        "remedial": "Gunakan barisan lima objek dengan kad kedudukan dan bimbingan.",
+        "extension": "Susun semula sepuluh objek dan nyatakan kedudukan baharu.",
+        "phases": {
+          "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+          "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+          "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+          "elaboration": "Murid susun sepuluh kad kenderaan, tukar dua kad dan nyatakan kedudukan baharu.",
+          "evaluation": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan. Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan."
+        },
+        "reflection": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Gunakan barisan lima objek dengan kad kedudukan dan bimbingan."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 17,
+      "sp_code": "1.2.1",
+      "source_pdf_page": 17,
+      "dk_printed_page": 33,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 18,
+      "sp_code": "1.2.1",
+      "source_pdf_page": 18,
+      "dk_printed_page": 33,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 19,
+      "sp_code": "1.2.1",
+      "source_pdf_page": 19,
+      "dk_printed_page": 33,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 20,
+      "sp_code": "1.2.1",
+      "source_pdf_page": 20,
+      "dk_printed_page": 33,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 1,
+      "sp_code": "1.1.1",
+      "source_pdf_page": 126,
+      "dk_printed_page": 22,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 2,
+      "sp_code": "1.1.1",
+      "source_pdf_page": 127,
+      "dk_printed_page": 22,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 3,
+      "sp_code": "1.1.1",
+      "source_pdf_page": 128,
+      "dk_printed_page": 22,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 4,
+      "sp_code": "1.1.1",
+      "source_pdf_page": 129,
+      "dk_printed_page": 22,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 5,
+      "sp_code": "1.1.2",
+      "source_pdf_page": 130,
+      "dk_printed_page": 26,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 6,
+      "sp_code": "1.1.2",
+      "source_pdf_page": 131,
+      "dk_printed_page": 26,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 7,
+      "sp_code": "1.1.2",
+      "source_pdf_page": 132,
+      "dk_printed_page": 26,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 8,
+      "sp_code": "1.1.2",
+      "source_pdf_page": 133,
+      "dk_printed_page": 26,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 9,
+      "sp_code": "1.1.3",
+      "source_pdf_page": 134,
+      "dk_printed_page": 28,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 10,
+      "sp_code": "1.1.3",
+      "source_pdf_page": 135,
+      "dk_printed_page": 28,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 11,
+      "sp_code": "1.1.3",
+      "source_pdf_page": 136,
+      "dk_printed_page": 28,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 12,
+      "sp_code": "1.1.3",
+      "source_pdf_page": 137,
+      "dk_printed_page": 28,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 13,
+      "sp_code": "1.1.4",
+      "source_pdf_page": 138,
+      "dk_printed_page": 31,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          31,
+          32
+        ],
+        "original_objective": "Murid mengenal pasti kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100.",
+        "original_criteria": "Murid menunjukkan kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100 dengan betul.",
+        "objective": "Murid mengenal pasti dan menyatakan kedudukan pertama hingga kesepuluh dalam barisan objek atau murid.",
+        "criteria": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan.",
+        "bbm": "Sepuluh kad gambar, objek kelas, kad perkataan kedudukan.",
+        "pbd": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan.",
+        "closure": "Murid menyatakan kedudukan satu objek pilihan dan menunjukkan arah mula barisan.",
+        "remedial": "Gunakan barisan lima objek dengan kad kedudukan dan bimbingan.",
+        "extension": "Susun semula sepuluh objek dan nyatakan kedudukan baharu.",
+        "phases": {
+          "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+          "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+          "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+          "elaboration": "Murid susun sepuluh kad gambar haiwan; nyatakan kedudukan pertama, ketiga dan kesepuluh.",
+          "evaluation": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan. Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan."
+        },
+        "reflection": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Gunakan barisan lima objek dengan kad kedudukan dan bimbingan."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 14,
+      "sp_code": "1.1.4",
+      "source_pdf_page": 139,
+      "dk_printed_page": 31,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          31,
+          32
+        ],
+        "original_objective": "Murid mengenal pasti kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100.",
+        "original_criteria": "Murid menunjukkan kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100 dengan betul.",
+        "objective": "Murid mengenal pasti dan menyatakan kedudukan pertama hingga kesepuluh dalam barisan objek atau murid.",
+        "criteria": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan.",
+        "bbm": "Sepuluh kad gambar, objek kelas, kad perkataan kedudukan.",
+        "pbd": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan.",
+        "closure": "Murid menyatakan kedudukan satu objek pilihan dan menunjukkan arah mula barisan.",
+        "remedial": "Gunakan barisan lima objek dengan kad kedudukan dan bimbingan.",
+        "extension": "Susun semula sepuluh objek dan nyatakan kedudukan baharu.",
+        "phases": {
+          "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+          "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+          "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+          "elaboration": "Murid berbaris dalam kumpulan sepuluh; tukar tempat dan nyatakan kedudukan baharu.",
+          "evaluation": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan. Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan."
+        },
+        "reflection": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Gunakan barisan lima objek dengan kad kedudukan dan bimbingan."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 15,
+      "sp_code": "1.1.4",
+      "source_pdf_page": 140,
+      "dk_printed_page": 31,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          31,
+          32
+        ],
+        "original_objective": "Murid mengenal pasti kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100.",
+        "original_criteria": "Murid menunjukkan kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100 dengan betul.",
+        "objective": "Murid mengenal pasti dan menyatakan kedudukan pertama hingga kesepuluh dalam barisan objek atau murid.",
+        "criteria": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan.",
+        "bbm": "Sepuluh kad gambar, objek kelas, kad perkataan kedudukan.",
+        "pbd": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan.",
+        "closure": "Murid menyatakan kedudukan satu objek pilihan dan menunjukkan arah mula barisan.",
+        "remedial": "Gunakan barisan lima objek dengan kad kedudukan dan bimbingan.",
+        "extension": "Susun semula sepuluh objek dan nyatakan kedudukan baharu.",
+        "phases": {
+          "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+          "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+          "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+          "elaboration": "Murid letakkan objek pada kedudukan kedua, kelima dan kelapan mengikut arahan pasangan.",
+          "evaluation": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan. Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan."
+        },
+        "reflection": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Gunakan barisan lima objek dengan kad kedudukan dan bimbingan."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 16,
+      "sp_code": "1.1.4",
+      "source_pdf_page": 141,
+      "dk_printed_page": 31,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          31,
+          32
+        ],
+        "original_objective": "Murid mengenal pasti kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100.",
+        "original_criteria": "Murid menunjukkan kedudukan sekurang-kurangnya lima nombor pada garis nombor sehingga 100 dengan betul.",
+        "objective": "Murid mengenal pasti dan menyatakan kedudukan pertama hingga kesepuluh dalam barisan objek atau murid.",
+        "criteria": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan.",
+        "bbm": "Sepuluh kad gambar, objek kelas, kad perkataan kedudukan.",
+        "pbd": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan.",
+        "closure": "Murid menyatakan kedudukan satu objek pilihan dan menunjukkan arah mula barisan.",
+        "remedial": "Gunakan barisan lima objek dengan kad kedudukan dan bimbingan.",
+        "extension": "Susun semula sepuluh objek dan nyatakan kedudukan baharu.",
+        "phases": {
+          "engagement": "Guru menunjukkan barisan sepuluh objek; murid mengenal pasti objek di hadapan.",
+          "exploration": "Murid menyusun sepuluh objek dan mencuba menyebut kedudukan setiap objek bermula dari arah yang ditetapkan.",
+          "explanation": "Guru membimbing sebutan kedudukan pertama hingga kesepuluh dalam perkataan; murid menerangkan kedudukan objek.",
+          "elaboration": "Murid susun sepuluh kad kenderaan, tukar dua kad dan nyatakan kedudukan baharu.",
+          "evaluation": "Pemerhatian dan lisan: enam tugasan menunjukkan atau menyebut kedudukan dalam barisan. Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan."
+        },
+        "reflection": "Murid menyatakan sekurang-kurangnya lima daripada enam kedudukan pertama hingga kesepuluh dengan tepat menggunakan perkataan. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Gunakan barisan lima objek dengan kad kedudukan dan bimbingan."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 17,
+      "sp_code": "1.2.1",
+      "source_pdf_page": 142,
+      "dk_printed_page": 33,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 18,
+      "sp_code": "1.2.1",
+      "source_pdf_page": 143,
+      "dk_printed_page": 33,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 19,
+      "sp_code": "1.2.1",
+      "source_pdf_page": 144,
+      "dk_printed_page": 33,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 20,
+      "sp_code": "1.2.1",
+      "source_pdf_page": 145,
+      "dk_printed_page": 33,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 21,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 21,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 22,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 22,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 23,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 23,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 24,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 24,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 25,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 25,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 26,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 26,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 27,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 27,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 28,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 28,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 29,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 29,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 30,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 30,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 31,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 31,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 32,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 32,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 33,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 33,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 34,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 34,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 35,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 35,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 36,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 36,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 37,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 37,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 38,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 38,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 39,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 39,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 40,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 40,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 41,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 41,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 42,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 42,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 43,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 43,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 44,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 44,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 45,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 45,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 46,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 46,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 47,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 47,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 48,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 48,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 49,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 49,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 50,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 50,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 51,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 51,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 52,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 52,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 53,
+      "sp_code": "3.1.1",
+      "source_pdf_page": 53,
+      "dk_printed_page": 67,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 54,
+      "sp_code": "3.1.1",
+      "source_pdf_page": 54,
+      "dk_printed_page": 67,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 55,
+      "sp_code": "3.1.1",
+      "source_pdf_page": 55,
+      "dk_printed_page": 67,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 56,
+      "sp_code": "3.1.1",
+      "source_pdf_page": 56,
+      "dk_printed_page": 67,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 57,
+      "sp_code": "3.2.1",
+      "source_pdf_page": 57,
+      "dk_printed_page": 70,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          70,
+          71
+        ],
+        "original_objective": "Murid menentukan nilai wang kertas hingga RM10 dan duit syiling hingga RM1 dengan betul.",
+        "original_criteria": "Murid menyatakan nilai sekurang-kurangnya enam daripada tujuh wang contoh yang ditunjukkan.",
+        "objective": "Murid membilang, menyebut dan menulis nilai gabungan wang kertas hingga RM10 serta duit syiling hingga RM1 secara berasingan.",
+        "criteria": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat.",
+        "bbm": "Wang contoh saiz sebenar RM1, RM5, RM10 dan 5/10/20/50 sen; kad nilai, dulang.",
+        "pbd": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1.",
+        "closure": "Murid menyatakan satu jumlah wang dan menulis nilainya dengan notasi yang sesuai.",
+        "remedial": "Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang.",
+        "extension": "Tentukan jumlah set wang kertas atau syiling baharu dalam had DK.",
+        "phases": {
+          "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+          "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+          "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+          "elaboration": "Murid bilang dua RM1 dan satu RM5, kemudian tulis RM7; ulang dengan syiling 20 sen dan 10 sen.",
+          "evaluation": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1. Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat."
+        },
+        "reflection": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 58,
+      "sp_code": "3.2.1",
+      "source_pdf_page": 58,
+      "dk_printed_page": 70,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          70,
+          71
+        ],
+        "original_objective": "Murid menentukan nilai wang kertas hingga RM10 dan duit syiling hingga RM1 dengan betul.",
+        "original_criteria": "Murid menyatakan nilai sekurang-kurangnya enam daripada tujuh wang contoh yang ditunjukkan.",
+        "objective": "Murid membilang, menyebut dan menulis nilai gabungan wang kertas hingga RM10 serta duit syiling hingga RM1 secara berasingan.",
+        "criteria": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat.",
+        "bbm": "Wang contoh saiz sebenar RM1, RM5, RM10 dan 5/10/20/50 sen; kad nilai, dulang.",
+        "pbd": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1.",
+        "closure": "Murid menyatakan satu jumlah wang dan menulis nilainya dengan notasi yang sesuai.",
+        "remedial": "Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang.",
+        "extension": "Tentukan jumlah set wang kertas atau syiling baharu dalam had DK.",
+        "phases": {
+          "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+          "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+          "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+          "elaboration": "Murid bilang 50 sen, 20 sen, 10 sen dan 5 sen; tulis 85 sen; ulang dengan tiga RM1.",
+          "evaluation": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1. Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat."
+        },
+        "reflection": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 59,
+      "sp_code": "3.2.1",
+      "source_pdf_page": 59,
+      "dk_printed_page": 70,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          70,
+          71
+        ],
+        "original_objective": "Murid menentukan nilai wang kertas hingga RM10 dan duit syiling hingga RM1 dengan betul.",
+        "original_criteria": "Murid menyatakan nilai sekurang-kurangnya enam daripada tujuh wang contoh yang ditunjukkan.",
+        "objective": "Murid membilang, menyebut dan menulis nilai gabungan wang kertas hingga RM10 serta duit syiling hingga RM1 secara berasingan.",
+        "criteria": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat.",
+        "bbm": "Wang contoh saiz sebenar RM1, RM5, RM10 dan 5/10/20/50 sen; kad nilai, dulang.",
+        "pbd": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1.",
+        "closure": "Murid menyatakan satu jumlah wang dan menulis nilainya dengan notasi yang sesuai.",
+        "remedial": "Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang.",
+        "extension": "Tentukan jumlah set wang kertas atau syiling baharu dalam had DK.",
+        "phases": {
+          "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+          "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+          "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+          "elaboration": "Murid bilang sekeping RM5 dan lima RM1; tulis RM10; ulang dengan dua syiling 20 sen.",
+          "evaluation": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1. Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat."
+        },
+        "reflection": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 60,
+      "sp_code": "3.2.1",
+      "source_pdf_page": 60,
+      "dk_printed_page": 70,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          70,
+          71
+        ],
+        "original_objective": "Murid menentukan nilai wang kertas hingga RM10 dan duit syiling hingga RM1 dengan betul.",
+        "original_criteria": "Murid menyatakan nilai sekurang-kurangnya enam daripada tujuh wang contoh yang ditunjukkan.",
+        "objective": "Murid membilang, menyebut dan menulis nilai gabungan wang kertas hingga RM10 serta duit syiling hingga RM1 secara berasingan.",
+        "criteria": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat.",
+        "bbm": "Wang contoh saiz sebenar RM1, RM5, RM10 dan 5/10/20/50 sen; kad nilai, dulang.",
+        "pbd": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1.",
+        "closure": "Murid menyatakan satu jumlah wang dan menulis nilainya dengan notasi yang sesuai.",
+        "remedial": "Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang.",
+        "extension": "Tentukan jumlah set wang kertas atau syiling baharu dalam had DK.",
+        "phases": {
+          "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+          "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+          "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+          "elaboration": "Murid bilang dua syiling 20 sen dan dua 10 sen; tulis 60 sen; ulang dengan RM5 dan RM1.",
+          "evaluation": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1. Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat."
+        },
+        "reflection": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 21,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 146,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 22,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 147,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 23,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 148,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 24,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 149,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 25,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 150,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 26,
+      "sp_code": "2.1.1",
+      "source_pdf_page": 151,
+      "dk_printed_page": 41,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 27,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 152,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 28,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 153,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 29,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 154,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 30,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 155,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 31,
+      "sp_code": "2.1.2",
+      "source_pdf_page": 156,
+      "dk_printed_page": 43,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 32,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 157,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 33,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 158,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 34,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 159,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 35,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 160,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 36,
+      "sp_code": "2.1.3",
+      "source_pdf_page": 161,
+      "dk_printed_page": 49,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 37,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 162,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 38,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 163,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 39,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 164,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 40,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 165,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 41,
+      "sp_code": "2.2.1",
+      "source_pdf_page": 166,
+      "dk_printed_page": 52,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 42,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 167,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 43,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 168,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 44,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 169,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 45,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 170,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 46,
+      "sp_code": "2.2.2",
+      "source_pdf_page": 171,
+      "dk_printed_page": 55,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 47,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 172,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 48,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 173,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 49,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 174,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 50,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 175,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 51,
+      "sp_code": "2.2.3",
+      "source_pdf_page": 176,
+      "dk_printed_page": 61,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 52,
+      "sp_code": "3.1.1",
+      "source_pdf_page": 177,
+      "dk_printed_page": 67,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 53,
+      "sp_code": "3.1.1",
+      "source_pdf_page": 178,
+      "dk_printed_page": 67,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 54,
+      "sp_code": "3.1.1",
+      "source_pdf_page": 179,
+      "dk_printed_page": 67,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 55,
+      "sp_code": "3.1.1",
+      "source_pdf_page": 180,
+      "dk_printed_page": 67,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 56,
+      "sp_code": "3.2.1",
+      "source_pdf_page": 181,
+      "dk_printed_page": 70,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          70,
+          71
+        ],
+        "original_objective": "Murid menentukan nilai wang kertas hingga RM10 dan duit syiling hingga RM1 dengan betul.",
+        "original_criteria": "Murid menyatakan nilai sekurang-kurangnya enam daripada tujuh wang contoh yang ditunjukkan.",
+        "objective": "Murid membilang, menyebut dan menulis nilai gabungan wang kertas hingga RM10 serta duit syiling hingga RM1 secara berasingan.",
+        "criteria": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat.",
+        "bbm": "Wang contoh saiz sebenar RM1, RM5, RM10 dan 5/10/20/50 sen; kad nilai, dulang.",
+        "pbd": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1.",
+        "closure": "Murid menyatakan satu jumlah wang dan menulis nilainya dengan notasi yang sesuai.",
+        "remedial": "Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang.",
+        "extension": "Tentukan jumlah set wang kertas atau syiling baharu dalam had DK.",
+        "phases": {
+          "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+          "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+          "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+          "elaboration": "Murid bilang dua RM1 dan satu RM5, kemudian tulis RM7; ulang dengan syiling 20 sen dan 10 sen.",
+          "evaluation": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1. Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat."
+        },
+        "reflection": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 57,
+      "sp_code": "3.2.1",
+      "source_pdf_page": 182,
+      "dk_printed_page": 70,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          70,
+          71
+        ],
+        "original_objective": "Murid menentukan nilai wang kertas hingga RM10 dan duit syiling hingga RM1 dengan betul.",
+        "original_criteria": "Murid menyatakan nilai sekurang-kurangnya enam daripada tujuh wang contoh yang ditunjukkan.",
+        "objective": "Murid membilang, menyebut dan menulis nilai gabungan wang kertas hingga RM10 serta duit syiling hingga RM1 secara berasingan.",
+        "criteria": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat.",
+        "bbm": "Wang contoh saiz sebenar RM1, RM5, RM10 dan 5/10/20/50 sen; kad nilai, dulang.",
+        "pbd": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1.",
+        "closure": "Murid menyatakan satu jumlah wang dan menulis nilainya dengan notasi yang sesuai.",
+        "remedial": "Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang.",
+        "extension": "Tentukan jumlah set wang kertas atau syiling baharu dalam had DK.",
+        "phases": {
+          "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+          "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+          "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+          "elaboration": "Murid bilang 50 sen, 20 sen, 10 sen dan 5 sen; tulis 85 sen; ulang dengan tiga RM1.",
+          "evaluation": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1. Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat."
+        },
+        "reflection": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 58,
+      "sp_code": "3.2.1",
+      "source_pdf_page": 183,
+      "dk_printed_page": 70,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          70,
+          71
+        ],
+        "original_objective": "Murid menentukan nilai wang kertas hingga RM10 dan duit syiling hingga RM1 dengan betul.",
+        "original_criteria": "Murid menyatakan nilai sekurang-kurangnya enam daripada tujuh wang contoh yang ditunjukkan.",
+        "objective": "Murid membilang, menyebut dan menulis nilai gabungan wang kertas hingga RM10 serta duit syiling hingga RM1 secara berasingan.",
+        "criteria": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat.",
+        "bbm": "Wang contoh saiz sebenar RM1, RM5, RM10 dan 5/10/20/50 sen; kad nilai, dulang.",
+        "pbd": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1.",
+        "closure": "Murid menyatakan satu jumlah wang dan menulis nilainya dengan notasi yang sesuai.",
+        "remedial": "Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang.",
+        "extension": "Tentukan jumlah set wang kertas atau syiling baharu dalam had DK.",
+        "phases": {
+          "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+          "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+          "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+          "elaboration": "Murid bilang sekeping RM5 dan lima RM1; tulis RM10; ulang dengan dua syiling 20 sen.",
+          "evaluation": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1. Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat."
+        },
+        "reflection": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 59,
+      "sp_code": "3.2.1",
+      "source_pdf_page": 184,
+      "dk_printed_page": 70,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          70,
+          71
+        ],
+        "original_objective": "Murid menentukan nilai wang kertas hingga RM10 dan duit syiling hingga RM1 dengan betul.",
+        "original_criteria": "Murid menyatakan nilai sekurang-kurangnya enam daripada tujuh wang contoh yang ditunjukkan.",
+        "objective": "Murid membilang, menyebut dan menulis nilai gabungan wang kertas hingga RM10 serta duit syiling hingga RM1 secara berasingan.",
+        "criteria": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat.",
+        "bbm": "Wang contoh saiz sebenar RM1, RM5, RM10 dan 5/10/20/50 sen; kad nilai, dulang.",
+        "pbd": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1.",
+        "closure": "Murid menyatakan satu jumlah wang dan menulis nilainya dengan notasi yang sesuai.",
+        "remedial": "Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang.",
+        "extension": "Tentukan jumlah set wang kertas atau syiling baharu dalam had DK.",
+        "phases": {
+          "engagement": "Guru menunjukkan RM1 dan 50 sen; murid menyebut nilai masing-masing.",
+          "exploration": "Murid menggunakan wang contoh saiz sebenar untuk membilang beberapa keping wang kertas atau syiling secara berasingan.",
+          "explanation": "Guru membimbing murid menyebut dan menulis jumlah wang kertas hingga RM10 serta syiling hingga RM1.",
+          "elaboration": "Murid bilang dua syiling 20 sen dan dua 10 sen; tulis 60 sen; ulang dengan RM5 dan RM1.",
+          "evaluation": "Tujuh set berasingan: tiga set wang kertas hingga RM10 dan empat set duit syiling hingga RM1. Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat."
+        },
+        "reflection": "Murid menentukan, menyebut dan menulis sekurang-kurangnya enam daripada tujuh jumlah set wang dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan dua keping RM1 atau dua syiling 10 sen dan bimbing membilang."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 60,
+      "sp_code": "3.2.2",
+      "source_pdf_page": 185,
+      "dk_printed_page": 77,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 61,
+      "sp_code": "3.2.2",
+      "source_pdf_page": 61,
+      "dk_printed_page": 77,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 62,
+      "sp_code": "3.2.2",
+      "source_pdf_page": 62,
+      "dk_printed_page": 77,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 63,
+      "sp_code": "3.2.2",
+      "source_pdf_page": 63,
+      "dk_printed_page": 77,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 64,
+      "sp_code": "3.2.2",
+      "source_pdf_page": 64,
+      "dk_printed_page": 77,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 65,
+      "sp_code": "3.2.3",
+      "source_pdf_page": 65,
+      "dk_printed_page": 80,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 66,
+      "sp_code": "3.2.3",
+      "source_pdf_page": 66,
+      "dk_printed_page": 80,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 67,
+      "sp_code": "3.2.3",
+      "source_pdf_page": 67,
+      "dk_printed_page": 80,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 68,
+      "sp_code": "3.2.3",
+      "source_pdf_page": 68,
+      "dk_printed_page": 80,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 69,
+      "sp_code": "4.1.1",
+      "source_pdf_page": 69,
+      "dk_printed_page": 87,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 70,
+      "sp_code": "4.1.1",
+      "source_pdf_page": 70,
+      "dk_printed_page": 87,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 71,
+      "sp_code": "4.1.1",
+      "source_pdf_page": 71,
+      "dk_printed_page": 87,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 72,
+      "sp_code": "4.1.2",
+      "source_pdf_page": 72,
+      "dk_printed_page": 89,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 73,
+      "sp_code": "4.1.2",
+      "source_pdf_page": 73,
+      "dk_printed_page": 89,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 74,
+      "sp_code": "4.1.2",
+      "source_pdf_page": 74,
+      "dk_printed_page": 89,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 75,
+      "sp_code": "4.1.3",
+      "source_pdf_page": 75,
+      "dk_printed_page": 90,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 76,
+      "sp_code": "4.1.3",
+      "source_pdf_page": 76,
+      "dk_printed_page": 90,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 77,
+      "sp_code": "4.1.3",
+      "source_pdf_page": 77,
+      "dk_printed_page": 90,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 78,
+      "sp_code": "5.1.1",
+      "source_pdf_page": 78,
+      "dk_printed_page": 95,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 79,
+      "sp_code": "5.1.1",
+      "source_pdf_page": 79,
+      "dk_printed_page": 95,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 80,
+      "sp_code": "5.1.1",
+      "source_pdf_page": 80,
+      "dk_printed_page": 95,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 81,
+      "sp_code": "5.1.1",
+      "source_pdf_page": 81,
+      "dk_printed_page": 95,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 82,
+      "sp_code": "5.1.2",
+      "source_pdf_page": 82,
+      "dk_printed_page": 98,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          98
+        ],
+        "original_objective": "Murid mengelaskan dan menyusun aktiviti mengikut pagi, tengah hari, petang dan malam.",
+        "original_criteria": "Murid menyusun empat peristiwa mengikut urutan masa yang munasabah.",
+        "objective": "Murid menyusun aktiviti dalam sehari dan menulis masa berdasarkan gambar aktiviti serta jam analog.",
+        "criteria": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat.",
+        "bbm": "Kad aktiviti, kad jam analog waktu tepat, carta rutin harian.",
+        "pbd": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari.",
+        "closure": "Murid menyebut dan menulis masa satu aktiviti berpandukan kad jam.",
+        "remedial": "Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa.",
+        "extension": "Bina carta rutin empat aktiviti dengan waktu tepat.",
+        "phases": {
+          "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+          "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+          "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+          "elaboration": "Murid susun sarapan pukul 7 pagi, makan pukul 12 tengah hari, bermain pukul 5 petang dan tidur pukul 9 malam; tulis masa.",
+          "evaluation": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari. Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat."
+        },
+        "reflection": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 83,
+      "sp_code": "5.1.2",
+      "source_pdf_page": 83,
+      "dk_printed_page": 98,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          98
+        ],
+        "original_objective": "Murid mengelaskan dan menyusun aktiviti mengikut pagi, tengah hari, petang dan malam.",
+        "original_criteria": "Murid menyusun empat peristiwa mengikut urutan masa yang munasabah.",
+        "objective": "Murid menyusun aktiviti dalam sehari dan menulis masa berdasarkan gambar aktiviti serta jam analog.",
+        "criteria": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat.",
+        "bbm": "Kad aktiviti, kad jam analog waktu tepat, carta rutin harian.",
+        "pbd": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari.",
+        "closure": "Murid menyebut dan menulis masa satu aktiviti berpandukan kad jam.",
+        "remedial": "Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa.",
+        "extension": "Bina carta rutin empat aktiviti dengan waktu tepat.",
+        "phases": {
+          "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+          "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+          "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+          "elaboration": "Murid padankan empat gambar rutin dengan jam contoh pukul 6, 12, 4 dan 8; tulis bahagian hari berpandukan gambar.",
+          "evaluation": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari. Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat."
+        },
+        "reflection": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 84,
+      "sp_code": "5.1.2",
+      "source_pdf_page": 84,
+      "dk_printed_page": 98,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          98
+        ],
+        "original_objective": "Murid mengelaskan dan menyusun aktiviti mengikut pagi, tengah hari, petang dan malam.",
+        "original_criteria": "Murid menyusun empat peristiwa mengikut urutan masa yang munasabah.",
+        "objective": "Murid menyusun aktiviti dalam sehari dan menulis masa berdasarkan gambar aktiviti serta jam analog.",
+        "criteria": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat.",
+        "bbm": "Kad aktiviti, kad jam analog waktu tepat, carta rutin harian.",
+        "pbd": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari.",
+        "closure": "Murid menyebut dan menulis masa satu aktiviti berpandukan kad jam.",
+        "remedial": "Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa.",
+        "extension": "Bina carta rutin empat aktiviti dengan waktu tepat.",
+        "phases": {
+          "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+          "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+          "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+          "elaboration": "Murid susun empat gambar rutin yang diberi bersama jam analog, tulis masa dan semak pasangan.",
+          "evaluation": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari. Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat."
+        },
+        "reflection": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 85,
+      "sp_code": "5.1.2",
+      "source_pdf_page": 85,
+      "dk_printed_page": 98,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          98
+        ],
+        "original_objective": "Murid mengelaskan dan menyusun aktiviti mengikut pagi, tengah hari, petang dan malam.",
+        "original_criteria": "Murid menyusun empat peristiwa mengikut urutan masa yang munasabah.",
+        "objective": "Murid menyusun aktiviti dalam sehari dan menulis masa berdasarkan gambar aktiviti serta jam analog.",
+        "criteria": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat.",
+        "bbm": "Kad aktiviti, kad jam analog waktu tepat, carta rutin harian.",
+        "pbd": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari.",
+        "closure": "Murid menyebut dan menulis masa satu aktiviti berpandukan kad jam.",
+        "remedial": "Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa.",
+        "extension": "Bina carta rutin empat aktiviti dengan waktu tepat.",
+        "phases": {
+          "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+          "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+          "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+          "elaboration": "Murid tukar carta empat rutin dengan pasangan; baca jam dan tulis masa serta bahagian hari.",
+          "evaluation": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari. Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat."
+        },
+        "reflection": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 86,
+      "sp_code": "5.2.1",
+      "source_pdf_page": 86,
+      "dk_printed_page": 101,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 87,
+      "sp_code": "5.2.1",
+      "source_pdf_page": 87,
+      "dk_printed_page": 101,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 88,
+      "sp_code": "5.2.1",
+      "source_pdf_page": 88,
+      "dk_printed_page": 101,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 89,
+      "sp_code": "5.2.1",
+      "source_pdf_page": 89,
+      "dk_printed_page": 101,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 90,
+      "sp_code": "6.1.1",
+      "source_pdf_page": 90,
+      "dk_printed_page": 107,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 91,
+      "sp_code": "6.1.1",
+      "source_pdf_page": 91,
+      "dk_printed_page": 107,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 92,
+      "sp_code": "6.1.1",
+      "source_pdf_page": 92,
+      "dk_printed_page": 107,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 93,
+      "sp_code": "6.1.1",
+      "source_pdf_page": 93,
+      "dk_printed_page": 107,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 94,
+      "sp_code": "6.1.2",
+      "source_pdf_page": 94,
+      "dk_printed_page": 110,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 95,
+      "sp_code": "6.1.2",
+      "source_pdf_page": 95,
+      "dk_printed_page": 110,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 96,
+      "sp_code": "6.1.2",
+      "source_pdf_page": 96,
+      "dk_printed_page": 110,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 97,
+      "sp_code": "6.1.2",
+      "source_pdf_page": 97,
+      "dk_printed_page": 110,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 98,
+      "sp_code": "6.2.1",
+      "source_pdf_page": 98,
+      "dk_printed_page": 112,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 99,
+      "sp_code": "6.2.1",
+      "source_pdf_page": 99,
+      "dk_printed_page": 112,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 100,
+      "sp_code": "6.2.1",
+      "source_pdf_page": 100,
+      "dk_printed_page": 112,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 101,
+      "sp_code": "6.2.1",
+      "source_pdf_page": 101,
+      "dk_printed_page": 112,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 102,
+      "sp_code": "6.2.2",
+      "source_pdf_page": 102,
+      "dk_printed_page": 114,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 103,
+      "sp_code": "6.2.2",
+      "source_pdf_page": 103,
+      "dk_printed_page": 114,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 104,
+      "sp_code": "6.2.2",
+      "source_pdf_page": 104,
+      "dk_printed_page": 114,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 105,
+      "sp_code": "6.2.2",
+      "source_pdf_page": 105,
+      "dk_printed_page": 114,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 106,
+      "sp_code": "6.2.3",
+      "source_pdf_page": 106,
+      "dk_printed_page": 117,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 107,
+      "sp_code": "6.2.3",
+      "source_pdf_page": 107,
+      "dk_printed_page": 117,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 108,
+      "sp_code": "6.2.3",
+      "source_pdf_page": 108,
+      "dk_printed_page": 117,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 109,
+      "sp_code": "6.2.3",
+      "source_pdf_page": 109,
+      "dk_printed_page": 117,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 110,
+      "sp_code": "7.1.1",
+      "source_pdf_page": 110,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 111,
+      "sp_code": "7.1.1",
+      "source_pdf_page": 111,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 112,
+      "sp_code": "7.1.1",
+      "source_pdf_page": 112,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 113,
+      "sp_code": "7.1.1",
+      "source_pdf_page": 113,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 114,
+      "sp_code": "7.1.2",
+      "source_pdf_page": 114,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 115,
+      "sp_code": "7.1.2",
+      "source_pdf_page": 115,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 116,
+      "sp_code": "7.1.2",
+      "source_pdf_page": 116,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 117,
+      "sp_code": "7.1.2",
+      "source_pdf_page": 117,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 118,
+      "sp_code": "7.1.3",
+      "source_pdf_page": 118,
+      "dk_printed_page": 125,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "original_objective": "Murid membaca jumlah dan membandingkan maklumat daripada piktograf mudah.",
+        "original_criteria": "Murid menjawab empat daripada lima soalan menggunakan piktograf yang diberikan.",
+        "objective": "Murid membaca dan mentafsir piktograf dengan petunjuk satu simbol mewakili satu unit atau sepuluh unit.",
+        "criteria": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat.",
+        "bbm": "Dua carta piktograf, kad petunjuk 1 unit dan 10 unit, kad soalan.",
+        "pbd": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai.",
+        "closure": "Murid menjelaskan mengapa petunjuk perlu dibaca sebelum mentafsir simbol.",
+        "remedial": "Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh.",
+        "extension": "Banding kategori pada piktograf berpetunjuk sepuluh unit.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+          "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+          "explanation": "Guru menunjukkan dua jenis petunjuk dan memodelkan pembilangan satu-satu atau sepuluh-sepuluh; murid menerangkan nilai satu simbol.",
+          "elaboration": "Murid baca dua piktograf buah, satu simbol satu biji dan satu simbol sepuluh biji; nyatakan nilai kategori.",
+          "evaluation": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai. Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat."
+        },
+        "reflection": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 119,
+      "sp_code": "7.1.3",
+      "source_pdf_page": 119,
+      "dk_printed_page": 125,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "original_objective": "Murid membaca jumlah dan membandingkan maklumat daripada piktograf mudah.",
+        "original_criteria": "Murid menjawab empat daripada lima soalan menggunakan piktograf yang diberikan.",
+        "objective": "Murid membaca dan mentafsir piktograf dengan petunjuk satu simbol mewakili satu unit atau sepuluh unit.",
+        "criteria": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat.",
+        "bbm": "Dua carta piktograf, kad petunjuk 1 unit dan 10 unit, kad soalan.",
+        "pbd": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai.",
+        "closure": "Murid menjelaskan mengapa petunjuk perlu dibaca sebelum mentafsir simbol.",
+        "remedial": "Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh.",
+        "extension": "Banding kategori pada piktograf berpetunjuk sepuluh unit.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+          "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+          "explanation": "Guru menunjukkan dua jenis petunjuk dan memodelkan pembilangan satu-satu atau sepuluh-sepuluh; murid menerangkan nilai satu simbol.",
+          "elaboration": "Murid baca carta buku yang menggunakan petunjuk 1 dan 10 buah; terangkan perbezaan nilai tiga simbol.",
+          "evaluation": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai. Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat."
+        },
+        "reflection": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 120,
+      "sp_code": "7.1.3",
+      "source_pdf_page": 120,
+      "dk_printed_page": 125,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "original_objective": "Murid membaca jumlah dan membandingkan maklumat daripada piktograf mudah.",
+        "original_criteria": "Murid menjawab empat daripada lima soalan menggunakan piktograf yang diberikan.",
+        "objective": "Murid membaca dan mentafsir piktograf dengan petunjuk satu simbol mewakili satu unit atau sepuluh unit.",
+        "criteria": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat.",
+        "bbm": "Dua carta piktograf, kad petunjuk 1 unit dan 10 unit, kad soalan.",
+        "pbd": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai.",
+        "closure": "Murid menjelaskan mengapa petunjuk perlu dibaca sebelum mentafsir simbol.",
+        "remedial": "Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh.",
+        "extension": "Banding kategori pada piktograf berpetunjuk sepuluh unit.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+          "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+          "explanation": "Guru menunjukkan dua jenis petunjuk dan memodelkan pembilangan satu-satu atau sepuluh-sepuluh; murid menerangkan nilai satu simbol.",
+          "elaboration": "Murid padankan dua petunjuk dengan carta haiwan atau pelekat dan jawab soalan kategori.",
+          "evaluation": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai. Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat."
+        },
+        "reflection": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 121,
+      "sp_code": "7.1.3",
+      "source_pdf_page": 121,
+      "dk_printed_page": 125,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "original_objective": "Murid membaca jumlah dan membandingkan maklumat daripada piktograf mudah.",
+        "original_criteria": "Murid menjawab empat daripada lima soalan menggunakan piktograf yang diberikan.",
+        "objective": "Murid membaca dan mentafsir piktograf dengan petunjuk satu simbol mewakili satu unit atau sepuluh unit.",
+        "criteria": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat.",
+        "bbm": "Dua carta piktograf, kad petunjuk 1 unit dan 10 unit, kad soalan.",
+        "pbd": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai.",
+        "closure": "Murid menjelaskan mengapa petunjuk perlu dibaca sebelum mentafsir simbol.",
+        "remedial": "Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh.",
+        "extension": "Banding kategori pada piktograf berpetunjuk sepuluh unit.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+          "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+          "explanation": "Guru menunjukkan dua jenis petunjuk dan memodelkan pembilangan satu-satu atau sepuluh-sepuluh; murid menerangkan nilai satu simbol.",
+          "elaboration": "Murid tukar kad soalan dua piktograf dengan pasangan dan buktikan jawapan melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+          "evaluation": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai. Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat."
+        },
+        "reflection": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 122,
+      "sp_code": "7.1.4",
+      "source_pdf_page": 122,
+      "dk_printed_page": 129,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          129,
+          130,
+          131
+        ],
+        "original_objective": "Murid menyelesaikan masalah mudah berdasarkan maklumat dalam piktograf.",
+        "original_criteria": "Murid menyelesaikan tiga daripada empat masalah satu langkah menggunakan piktograf.",
+        "objective": "Murid menyelesaikan masalah harian piktograf dengan membaca petunjuk dan menghitung simbol secara langsung bagi petunjuk satu atau sepuluh unit, tanpa operasi tambah atau tolak.",
+        "criteria": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak.",
+        "bbm": "Dua carta piktograf dengan petunjuk 1 dan 10 unit, kad masalah, kad simbol.",
+        "pbd": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan.",
+        "closure": "Murid menerangkan satu penyelesaian berdasarkan petunjuk dan kiraan simbol.",
+        "remedial": "Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh.",
+        "extension": "Cipta masalah beza dua kategori menggunakan padanan simbol, tanpa operasi tambah atau tolak.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+          "exploration": "Murid membaca petunjuk 1 dan 10 unit, menyusun pasangan simbol dan mengenal simbol yang perlu dihitung.",
+          "explanation": "Guru menunjukkan pembilangan semua simbol secara langsung atau padanan satu-satu untuk mencari simbol berlebihan; murid membilang satu-satu atau sepuluh-sepuluh tanpa operasi tambah atau tolak.",
+          "elaboration": "Murid hitung semua simbol buku pada dua baris bagi petunjuk 1 buah; kemudian padankan dua baris donat dan bilang simbol berlebihan sepuluh-sepuluh.",
+          "evaluation": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan. Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak."
+        },
+        "reflection": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 123,
+      "sp_code": "7.1.4",
+      "source_pdf_page": 123,
+      "dk_printed_page": 129,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          129,
+          130,
+          131
+        ],
+        "original_objective": "Murid menyelesaikan masalah mudah berdasarkan maklumat dalam piktograf.",
+        "original_criteria": "Murid menyelesaikan tiga daripada empat masalah satu langkah menggunakan piktograf.",
+        "objective": "Murid menyelesaikan masalah harian piktograf dengan membaca petunjuk dan menghitung simbol secara langsung bagi petunjuk satu atau sepuluh unit, tanpa operasi tambah atau tolak.",
+        "criteria": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak.",
+        "bbm": "Dua carta piktograf dengan petunjuk 1 dan 10 unit, kad masalah, kad simbol.",
+        "pbd": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan.",
+        "closure": "Murid menerangkan satu penyelesaian berdasarkan petunjuk dan kiraan simbol.",
+        "remedial": "Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh.",
+        "extension": "Cipta masalah beza dua kategori menggunakan padanan simbol, tanpa operasi tambah atau tolak.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+          "exploration": "Murid membaca petunjuk 1 dan 10 unit, menyusun pasangan simbol dan mengenal simbol yang perlu dihitung.",
+          "explanation": "Guru menunjukkan pembilangan semua simbol secara langsung atau padanan satu-satu untuk mencari simbol berlebihan; murid membilang satu-satu atau sepuluh-sepuluh tanpa operasi tambah atau tolak.",
+          "elaboration": "Murid bilang semua simbol buah dua kategori secara terus; bagi petunjuk 10 biji, hitung simbol yang tidak berpasangan.",
+          "evaluation": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan. Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak."
+        },
+        "reflection": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 124,
+      "sp_code": "7.1.4",
+      "source_pdf_page": 124,
+      "dk_printed_page": 129,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          129,
+          130,
+          131
+        ],
+        "original_objective": "Murid menyelesaikan masalah mudah berdasarkan maklumat dalam piktograf.",
+        "original_criteria": "Murid menyelesaikan tiga daripada empat masalah satu langkah menggunakan piktograf.",
+        "objective": "Murid menyelesaikan masalah harian piktograf dengan membaca petunjuk dan menghitung simbol secara langsung bagi petunjuk satu atau sepuluh unit, tanpa operasi tambah atau tolak.",
+        "criteria": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak.",
+        "bbm": "Dua carta piktograf dengan petunjuk 1 dan 10 unit, kad masalah, kad simbol.",
+        "pbd": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan.",
+        "closure": "Murid menerangkan satu penyelesaian berdasarkan petunjuk dan kiraan simbol.",
+        "remedial": "Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh.",
+        "extension": "Cipta masalah beza dua kategori menggunakan padanan simbol, tanpa operasi tambah atau tolak.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+          "exploration": "Murid membaca petunjuk 1 dan 10 unit, menyusun pasangan simbol dan mengenal simbol yang perlu dihitung.",
+          "explanation": "Guru menunjukkan pembilangan semua simbol secara langsung atau padanan satu-satu untuk mencari simbol berlebihan; murid membilang satu-satu atau sepuluh-sepuluh tanpa operasi tambah atau tolak.",
+          "elaboration": "Murid cari jumlah simbol pelekat dua kategori secara terus dengan petunjuk 10 unit; kemudian banding dua baris petunjuk 1 unit melalui padanan.",
+          "evaluation": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan. Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak."
+        },
+        "reflection": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "A",
+      "lesson": 125,
+      "sp_code": "7.1.4",
+      "source_pdf_page": 125,
+      "dk_printed_page": 129,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          129,
+          130,
+          131
+        ],
+        "original_objective": "Murid menyelesaikan masalah mudah berdasarkan maklumat dalam piktograf.",
+        "original_criteria": "Murid menyelesaikan tiga daripada empat masalah satu langkah menggunakan piktograf.",
+        "objective": "Murid menyelesaikan masalah harian piktograf dengan membaca petunjuk dan menghitung simbol secara langsung bagi petunjuk satu atau sepuluh unit, tanpa operasi tambah atau tolak.",
+        "criteria": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak.",
+        "bbm": "Dua carta piktograf dengan petunjuk 1 dan 10 unit, kad masalah, kad simbol.",
+        "pbd": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan.",
+        "closure": "Murid menerangkan satu penyelesaian berdasarkan petunjuk dan kiraan simbol.",
+        "remedial": "Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh.",
+        "extension": "Cipta masalah beza dua kategori menggunakan padanan simbol, tanpa operasi tambah atau tolak.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+          "exploration": "Murid membaca petunjuk 1 dan 10 unit, menyusun pasangan simbol dan mengenal simbol yang perlu dihitung.",
+          "explanation": "Guru menunjukkan pembilangan semua simbol secara langsung atau padanan satu-satu untuk mencari simbol berlebihan; murid membilang satu-satu atau sepuluh-sepuluh tanpa operasi tambah atau tolak.",
+          "elaboration": "Murid selesaikan dua situasi menggunakan petunjuk 1 dan 10 unit; tunjuk simbol yang dihitung atau tidak berpasangan, tanpa ayat operasi.",
+          "evaluation": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan. Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak."
+        },
+        "reflection": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 61,
+      "sp_code": "3.2.2",
+      "source_pdf_page": 186,
+      "dk_printed_page": 77,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 62,
+      "sp_code": "3.2.2",
+      "source_pdf_page": 187,
+      "dk_printed_page": 77,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 63,
+      "sp_code": "3.2.2",
+      "source_pdf_page": 188,
+      "dk_printed_page": 77,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 64,
+      "sp_code": "3.2.3",
+      "source_pdf_page": 189,
+      "dk_printed_page": 80,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 65,
+      "sp_code": "3.2.3",
+      "source_pdf_page": 190,
+      "dk_printed_page": 80,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 66,
+      "sp_code": "3.2.3",
+      "source_pdf_page": 191,
+      "dk_printed_page": 80,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 67,
+      "sp_code": "3.2.3",
+      "source_pdf_page": 192,
+      "dk_printed_page": 80,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 68,
+      "sp_code": "4.1.1",
+      "source_pdf_page": 193,
+      "dk_printed_page": 87,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 69,
+      "sp_code": "4.1.1",
+      "source_pdf_page": 194,
+      "dk_printed_page": 87,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 70,
+      "sp_code": "4.1.1",
+      "source_pdf_page": 195,
+      "dk_printed_page": 87,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 71,
+      "sp_code": "4.1.2",
+      "source_pdf_page": 196,
+      "dk_printed_page": 89,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 72,
+      "sp_code": "4.1.2",
+      "source_pdf_page": 197,
+      "dk_printed_page": 89,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 73,
+      "sp_code": "4.1.2",
+      "source_pdf_page": 198,
+      "dk_printed_page": 89,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 74,
+      "sp_code": "4.1.3",
+      "source_pdf_page": 199,
+      "dk_printed_page": 90,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 75,
+      "sp_code": "4.1.3",
+      "source_pdf_page": 200,
+      "dk_printed_page": 90,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 76,
+      "sp_code": "4.1.3",
+      "source_pdf_page": 201,
+      "dk_printed_page": 90,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 77,
+      "sp_code": "5.1.1",
+      "source_pdf_page": 202,
+      "dk_printed_page": 95,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 78,
+      "sp_code": "5.1.1",
+      "source_pdf_page": 203,
+      "dk_printed_page": 95,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 79,
+      "sp_code": "5.1.1",
+      "source_pdf_page": 204,
+      "dk_printed_page": 95,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 80,
+      "sp_code": "5.1.1",
+      "source_pdf_page": 205,
+      "dk_printed_page": 95,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 81,
+      "sp_code": "5.1.2",
+      "source_pdf_page": 206,
+      "dk_printed_page": 98,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          98
+        ],
+        "original_objective": "Murid mengelaskan dan menyusun aktiviti mengikut pagi, tengah hari, petang dan malam.",
+        "original_criteria": "Murid menyusun empat peristiwa mengikut urutan masa yang munasabah.",
+        "objective": "Murid menyusun aktiviti dalam sehari dan menulis masa berdasarkan gambar aktiviti serta jam analog.",
+        "criteria": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat.",
+        "bbm": "Kad aktiviti, kad jam analog waktu tepat, carta rutin harian.",
+        "pbd": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari.",
+        "closure": "Murid menyebut dan menulis masa satu aktiviti berpandukan kad jam.",
+        "remedial": "Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa.",
+        "extension": "Bina carta rutin empat aktiviti dengan waktu tepat.",
+        "phases": {
+          "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+          "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+          "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+          "elaboration": "Murid susun sarapan pukul 7 pagi, makan pukul 12 tengah hari, bermain pukul 5 petang dan tidur pukul 9 malam; tulis masa.",
+          "evaluation": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari. Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat."
+        },
+        "reflection": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 82,
+      "sp_code": "5.1.2",
+      "source_pdf_page": 207,
+      "dk_printed_page": 98,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          98
+        ],
+        "original_objective": "Murid mengelaskan dan menyusun aktiviti mengikut pagi, tengah hari, petang dan malam.",
+        "original_criteria": "Murid menyusun empat peristiwa mengikut urutan masa yang munasabah.",
+        "objective": "Murid menyusun aktiviti dalam sehari dan menulis masa berdasarkan gambar aktiviti serta jam analog.",
+        "criteria": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat.",
+        "bbm": "Kad aktiviti, kad jam analog waktu tepat, carta rutin harian.",
+        "pbd": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari.",
+        "closure": "Murid menyebut dan menulis masa satu aktiviti berpandukan kad jam.",
+        "remedial": "Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa.",
+        "extension": "Bina carta rutin empat aktiviti dengan waktu tepat.",
+        "phases": {
+          "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+          "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+          "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+          "elaboration": "Murid padankan empat gambar rutin dengan jam contoh pukul 6, 12, 4 dan 8; tulis bahagian hari berpandukan gambar.",
+          "evaluation": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari. Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat."
+        },
+        "reflection": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 83,
+      "sp_code": "5.1.2",
+      "source_pdf_page": 208,
+      "dk_printed_page": 98,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          98
+        ],
+        "original_objective": "Murid mengelaskan dan menyusun aktiviti mengikut pagi, tengah hari, petang dan malam.",
+        "original_criteria": "Murid menyusun empat peristiwa mengikut urutan masa yang munasabah.",
+        "objective": "Murid menyusun aktiviti dalam sehari dan menulis masa berdasarkan gambar aktiviti serta jam analog.",
+        "criteria": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat.",
+        "bbm": "Kad aktiviti, kad jam analog waktu tepat, carta rutin harian.",
+        "pbd": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari.",
+        "closure": "Murid menyebut dan menulis masa satu aktiviti berpandukan kad jam.",
+        "remedial": "Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa.",
+        "extension": "Bina carta rutin empat aktiviti dengan waktu tepat.",
+        "phases": {
+          "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+          "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+          "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+          "elaboration": "Murid susun empat gambar rutin yang diberi bersama jam analog, tulis masa dan semak pasangan.",
+          "evaluation": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari. Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat."
+        },
+        "reflection": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 84,
+      "sp_code": "5.1.2",
+      "source_pdf_page": 209,
+      "dk_printed_page": 98,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          98
+        ],
+        "original_objective": "Murid mengelaskan dan menyusun aktiviti mengikut pagi, tengah hari, petang dan malam.",
+        "original_criteria": "Murid menyusun empat peristiwa mengikut urutan masa yang munasabah.",
+        "objective": "Murid menyusun aktiviti dalam sehari dan menulis masa berdasarkan gambar aktiviti serta jam analog.",
+        "criteria": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat.",
+        "bbm": "Kad aktiviti, kad jam analog waktu tepat, carta rutin harian.",
+        "pbd": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari.",
+        "closure": "Murid menyebut dan menulis masa satu aktiviti berpandukan kad jam.",
+        "remedial": "Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa.",
+        "extension": "Bina carta rutin empat aktiviti dengan waktu tepat.",
+        "phases": {
+          "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+          "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+          "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+          "elaboration": "Murid tukar carta empat rutin dengan pasangan; baca jam dan tulis masa serta bahagian hari.",
+          "evaluation": "Semak urutan empat gambar dan penulisan empat masa, termasuk bahagian hari. Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat."
+        },
+        "reflection": "Murid menyusun empat gambar mengikut urutan pagi, tengah hari, petang dan malam serta menulis sekurang-kurangnya tiga daripada empat masa dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan dua gambar dengan waktu pagi atau malam, kemudian salin masa."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 85,
+      "sp_code": "5.2.1",
+      "source_pdf_page": 210,
+      "dk_printed_page": 101,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 86,
+      "sp_code": "5.2.1",
+      "source_pdf_page": 211,
+      "dk_printed_page": 101,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 87,
+      "sp_code": "5.2.1",
+      "source_pdf_page": 212,
+      "dk_printed_page": 101,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 88,
+      "sp_code": "5.2.1",
+      "source_pdf_page": 213,
+      "dk_printed_page": 101,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 89,
+      "sp_code": "6.1.1",
+      "source_pdf_page": 214,
+      "dk_printed_page": 107,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 90,
+      "sp_code": "6.1.1",
+      "source_pdf_page": 215,
+      "dk_printed_page": 107,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 91,
+      "sp_code": "6.1.1",
+      "source_pdf_page": 216,
+      "dk_printed_page": 107,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 92,
+      "sp_code": "6.1.1",
+      "source_pdf_page": 217,
+      "dk_printed_page": 107,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 93,
+      "sp_code": "6.1.2",
+      "source_pdf_page": 218,
+      "dk_printed_page": 110,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 94,
+      "sp_code": "6.1.2",
+      "source_pdf_page": 219,
+      "dk_printed_page": 110,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 95,
+      "sp_code": "6.1.2",
+      "source_pdf_page": 220,
+      "dk_printed_page": 110,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 96,
+      "sp_code": "6.1.2",
+      "source_pdf_page": 221,
+      "dk_printed_page": 110,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 97,
+      "sp_code": "6.2.1",
+      "source_pdf_page": 222,
+      "dk_printed_page": 112,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 98,
+      "sp_code": "6.2.1",
+      "source_pdf_page": 223,
+      "dk_printed_page": 112,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 99,
+      "sp_code": "6.2.1",
+      "source_pdf_page": 224,
+      "dk_printed_page": 112,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 100,
+      "sp_code": "6.2.1",
+      "source_pdf_page": 225,
+      "dk_printed_page": 112,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 101,
+      "sp_code": "6.2.2",
+      "source_pdf_page": 226,
+      "dk_printed_page": 114,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 102,
+      "sp_code": "6.2.2",
+      "source_pdf_page": 227,
+      "dk_printed_page": 114,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 103,
+      "sp_code": "6.2.2",
+      "source_pdf_page": 228,
+      "dk_printed_page": 114,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 104,
+      "sp_code": "6.2.2",
+      "source_pdf_page": 229,
+      "dk_printed_page": 114,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 105,
+      "sp_code": "6.2.3",
+      "source_pdf_page": 230,
+      "dk_printed_page": 117,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 106,
+      "sp_code": "6.2.3",
+      "source_pdf_page": 231,
+      "dk_printed_page": 117,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 107,
+      "sp_code": "6.2.3",
+      "source_pdf_page": 232,
+      "dk_printed_page": 117,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 108,
+      "sp_code": "6.2.3",
+      "source_pdf_page": 233,
+      "dk_printed_page": 117,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 109,
+      "sp_code": "7.1.1",
+      "source_pdf_page": 234,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 110,
+      "sp_code": "7.1.1",
+      "source_pdf_page": 235,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 111,
+      "sp_code": "7.1.1",
+      "source_pdf_page": 236,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 112,
+      "sp_code": "7.1.1",
+      "source_pdf_page": 237,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 113,
+      "sp_code": "7.1.2",
+      "source_pdf_page": 238,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 114,
+      "sp_code": "7.1.2",
+      "source_pdf_page": 239,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 115,
+      "sp_code": "7.1.2",
+      "source_pdf_page": 240,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 116,
+      "sp_code": "7.1.2",
+      "source_pdf_page": 241,
+      "dk_printed_page": 123,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SOURCE_FIELDS_EXTRACTED_LAYOUT_PENDING",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 117,
+      "sp_code": "7.1.3",
+      "source_pdf_page": 242,
+      "dk_printed_page": 125,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "original_objective": "Murid membaca jumlah dan membandingkan maklumat daripada piktograf mudah.",
+        "original_criteria": "Murid menjawab empat daripada lima soalan menggunakan piktograf yang diberikan.",
+        "objective": "Murid membaca dan mentafsir piktograf dengan petunjuk satu simbol mewakili satu unit atau sepuluh unit.",
+        "criteria": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat.",
+        "bbm": "Dua carta piktograf, kad petunjuk 1 unit dan 10 unit, kad soalan.",
+        "pbd": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai.",
+        "closure": "Murid menjelaskan mengapa petunjuk perlu dibaca sebelum mentafsir simbol.",
+        "remedial": "Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh.",
+        "extension": "Banding kategori pada piktograf berpetunjuk sepuluh unit.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+          "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+          "explanation": "Guru menunjukkan dua jenis petunjuk dan memodelkan pembilangan satu-satu atau sepuluh-sepuluh; murid menerangkan nilai satu simbol.",
+          "elaboration": "Murid baca dua piktograf buah, satu simbol satu biji dan satu simbol sepuluh biji; nyatakan nilai kategori.",
+          "evaluation": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai. Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat."
+        },
+        "reflection": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 118,
+      "sp_code": "7.1.3",
+      "source_pdf_page": 243,
+      "dk_printed_page": 125,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "original_objective": "Murid membaca jumlah dan membandingkan maklumat daripada piktograf mudah.",
+        "original_criteria": "Murid menjawab empat daripada lima soalan menggunakan piktograf yang diberikan.",
+        "objective": "Murid membaca dan mentafsir piktograf dengan petunjuk satu simbol mewakili satu unit atau sepuluh unit.",
+        "criteria": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat.",
+        "bbm": "Dua carta piktograf, kad petunjuk 1 unit dan 10 unit, kad soalan.",
+        "pbd": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai.",
+        "closure": "Murid menjelaskan mengapa petunjuk perlu dibaca sebelum mentafsir simbol.",
+        "remedial": "Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh.",
+        "extension": "Banding kategori pada piktograf berpetunjuk sepuluh unit.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+          "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+          "explanation": "Guru menunjukkan dua jenis petunjuk dan memodelkan pembilangan satu-satu atau sepuluh-sepuluh; murid menerangkan nilai satu simbol.",
+          "elaboration": "Murid baca carta buku yang menggunakan petunjuk 1 dan 10 buah; terangkan perbezaan nilai tiga simbol.",
+          "evaluation": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai. Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat."
+        },
+        "reflection": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 119,
+      "sp_code": "7.1.3",
+      "source_pdf_page": 244,
+      "dk_printed_page": 125,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "original_objective": "Murid membaca jumlah dan membandingkan maklumat daripada piktograf mudah.",
+        "original_criteria": "Murid menjawab empat daripada lima soalan menggunakan piktograf yang diberikan.",
+        "objective": "Murid membaca dan mentafsir piktograf dengan petunjuk satu simbol mewakili satu unit atau sepuluh unit.",
+        "criteria": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat.",
+        "bbm": "Dua carta piktograf, kad petunjuk 1 unit dan 10 unit, kad soalan.",
+        "pbd": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai.",
+        "closure": "Murid menjelaskan mengapa petunjuk perlu dibaca sebelum mentafsir simbol.",
+        "remedial": "Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh.",
+        "extension": "Banding kategori pada piktograf berpetunjuk sepuluh unit.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+          "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+          "explanation": "Guru menunjukkan dua jenis petunjuk dan memodelkan pembilangan satu-satu atau sepuluh-sepuluh; murid menerangkan nilai satu simbol.",
+          "elaboration": "Murid padankan dua petunjuk dengan carta haiwan atau pelekat dan jawab soalan kategori.",
+          "evaluation": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai. Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat."
+        },
+        "reflection": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 120,
+      "sp_code": "7.1.3",
+      "source_pdf_page": 245,
+      "dk_printed_page": 125,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          125,
+          126,
+          127,
+          128
+        ],
+        "original_objective": "Murid membaca jumlah dan membandingkan maklumat daripada piktograf mudah.",
+        "original_criteria": "Murid menjawab empat daripada lima soalan menggunakan piktograf yang diberikan.",
+        "objective": "Murid membaca dan mentafsir piktograf dengan petunjuk satu simbol mewakili satu unit atau sepuluh unit.",
+        "criteria": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat.",
+        "bbm": "Dua carta piktograf, kad petunjuk 1 unit dan 10 unit, kad soalan.",
+        "pbd": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai.",
+        "closure": "Murid menjelaskan mengapa petunjuk perlu dibaca sebelum mentafsir simbol.",
+        "remedial": "Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh.",
+        "extension": "Banding kategori pada piktograf berpetunjuk sepuluh unit.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+          "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+          "explanation": "Guru menunjukkan dua jenis petunjuk dan memodelkan pembilangan satu-satu atau sepuluh-sepuluh; murid menerangkan nilai satu simbol.",
+          "elaboration": "Murid tukar kad soalan dua piktograf dengan pasangan dan buktikan jawapan melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+          "evaluation": "Lima soalan bacaan daripada kedua-dua piktograf; semak petunjuk, bilangan simbol dan nilai. Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat."
+        },
+        "reflection": "Murid menjawab sekurang-kurangnya empat daripada lima soalan daripada dua piktograf yang menggunakan kedua-dua jenis petunjuk dengan tepat. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Mulakan petunjuk satu simbol satu unit, kemudian bilang sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 121,
+      "sp_code": "7.1.4",
+      "source_pdf_page": 246,
+      "dk_printed_page": 129,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          129,
+          130,
+          131
+        ],
+        "original_objective": "Murid menyelesaikan masalah mudah berdasarkan maklumat dalam piktograf.",
+        "original_criteria": "Murid menyelesaikan tiga daripada empat masalah satu langkah menggunakan piktograf.",
+        "objective": "Murid menyelesaikan masalah harian piktograf dengan membaca petunjuk dan menghitung simbol secara langsung bagi petunjuk satu atau sepuluh unit, tanpa operasi tambah atau tolak.",
+        "criteria": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak.",
+        "bbm": "Dua carta piktograf dengan petunjuk 1 dan 10 unit, kad masalah, kad simbol.",
+        "pbd": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan.",
+        "closure": "Murid menerangkan satu penyelesaian berdasarkan petunjuk dan kiraan simbol.",
+        "remedial": "Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh.",
+        "extension": "Cipta masalah beza dua kategori menggunakan padanan simbol, tanpa operasi tambah atau tolak.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+          "exploration": "Murid membaca petunjuk 1 dan 10 unit, menyusun pasangan simbol dan mengenal simbol yang perlu dihitung.",
+          "explanation": "Guru menunjukkan pembilangan semua simbol secara langsung atau padanan satu-satu untuk mencari simbol berlebihan; murid membilang satu-satu atau sepuluh-sepuluh tanpa operasi tambah atau tolak.",
+          "elaboration": "Murid hitung semua simbol buku pada dua baris bagi petunjuk 1 buah; kemudian padankan dua baris donat dan bilang simbol berlebihan sepuluh-sepuluh.",
+          "evaluation": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan. Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak."
+        },
+        "reflection": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 122,
+      "sp_code": "7.1.4",
+      "source_pdf_page": 247,
+      "dk_printed_page": 129,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          129,
+          130,
+          131
+        ],
+        "original_objective": "Murid menyelesaikan masalah mudah berdasarkan maklumat dalam piktograf.",
+        "original_criteria": "Murid menyelesaikan tiga daripada empat masalah satu langkah menggunakan piktograf.",
+        "objective": "Murid menyelesaikan masalah harian piktograf dengan membaca petunjuk dan menghitung simbol secara langsung bagi petunjuk satu atau sepuluh unit, tanpa operasi tambah atau tolak.",
+        "criteria": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak.",
+        "bbm": "Dua carta piktograf dengan petunjuk 1 dan 10 unit, kad masalah, kad simbol.",
+        "pbd": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan.",
+        "closure": "Murid menerangkan satu penyelesaian berdasarkan petunjuk dan kiraan simbol.",
+        "remedial": "Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh.",
+        "extension": "Cipta masalah beza dua kategori menggunakan padanan simbol, tanpa operasi tambah atau tolak.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+          "exploration": "Murid membaca petunjuk 1 dan 10 unit, menyusun pasangan simbol dan mengenal simbol yang perlu dihitung.",
+          "explanation": "Guru menunjukkan pembilangan semua simbol secara langsung atau padanan satu-satu untuk mencari simbol berlebihan; murid membilang satu-satu atau sepuluh-sepuluh tanpa operasi tambah atau tolak.",
+          "elaboration": "Murid bilang semua simbol buah dua kategori secara terus; bagi petunjuk 10 biji, hitung simbol yang tidak berpasangan.",
+          "evaluation": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan. Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak."
+        },
+        "reflection": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 123,
+      "sp_code": "7.1.4",
+      "source_pdf_page": 248,
+      "dk_printed_page": 129,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          129,
+          130,
+          131
+        ],
+        "original_objective": "Murid menyelesaikan masalah mudah berdasarkan maklumat dalam piktograf.",
+        "original_criteria": "Murid menyelesaikan tiga daripada empat masalah satu langkah menggunakan piktograf.",
+        "objective": "Murid menyelesaikan masalah harian piktograf dengan membaca petunjuk dan menghitung simbol secara langsung bagi petunjuk satu atau sepuluh unit, tanpa operasi tambah atau tolak.",
+        "criteria": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak.",
+        "bbm": "Dua carta piktograf dengan petunjuk 1 dan 10 unit, kad masalah, kad simbol.",
+        "pbd": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan.",
+        "closure": "Murid menerangkan satu penyelesaian berdasarkan petunjuk dan kiraan simbol.",
+        "remedial": "Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh.",
+        "extension": "Cipta masalah beza dua kategori menggunakan padanan simbol, tanpa operasi tambah atau tolak.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+          "exploration": "Murid membaca petunjuk 1 dan 10 unit, menyusun pasangan simbol dan mengenal simbol yang perlu dihitung.",
+          "explanation": "Guru menunjukkan pembilangan semua simbol secara langsung atau padanan satu-satu untuk mencari simbol berlebihan; murid membilang satu-satu atau sepuluh-sepuluh tanpa operasi tambah atau tolak.",
+          "elaboration": "Murid cari jumlah simbol pelekat dua kategori secara terus dengan petunjuk 10 unit; kemudian banding dua baris petunjuk 1 unit melalui padanan.",
+          "evaluation": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan. Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak."
+        },
+        "reflection": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh."
+      }
+    },
+    {
+      "group": "B",
+      "lesson": 124,
+      "sp_code": "7.1.4",
+      "source_pdf_page": 249,
+      "dk_printed_page": 129,
+      "source_catalog_verified": true,
+      "sp_text_matched_in_combined_source": true,
+      "status": "SCOPE_CORRECTION_DRAFT",
+      "ready": false,
+      "correction": {
+        "pages": [
+          129,
+          130,
+          131
+        ],
+        "original_objective": "Murid menyelesaikan masalah mudah berdasarkan maklumat dalam piktograf.",
+        "original_criteria": "Murid menyelesaikan tiga daripada empat masalah satu langkah menggunakan piktograf.",
+        "objective": "Murid menyelesaikan masalah harian piktograf dengan membaca petunjuk dan menghitung simbol secara langsung bagi petunjuk satu atau sepuluh unit, tanpa operasi tambah atau tolak.",
+        "criteria": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak.",
+        "bbm": "Dua carta piktograf dengan petunjuk 1 dan 10 unit, kad masalah, kad simbol.",
+        "pbd": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan.",
+        "closure": "Murid menerangkan satu penyelesaian berdasarkan petunjuk dan kiraan simbol.",
+        "remedial": "Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh.",
+        "extension": "Cipta masalah beza dua kategori menggunakan padanan simbol, tanpa operasi tambah atau tolak.",
+        "phases": {
+          "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+          "exploration": "Murid membaca petunjuk 1 dan 10 unit, menyusun pasangan simbol dan mengenal simbol yang perlu dihitung.",
+          "explanation": "Guru menunjukkan pembilangan semua simbol secara langsung atau padanan satu-satu untuk mencari simbol berlebihan; murid membilang satu-satu atau sepuluh-sepuluh tanpa operasi tambah atau tolak.",
+          "elaboration": "Murid selesaikan dua situasi menggunakan petunjuk 1 dan 10 unit; tunjuk simbol yang dihitung atau tidak berpasangan, tanpa ayat operasi.",
+          "evaluation": "Empat masalah daripada kedua-dua petunjuk; semak proses membilang simbol keseluruhan atau simbol berlebihan yang tidak berpasangan. Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak."
+        },
+        "reflection": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah daripada kedua-dua jenis petunjuk melalui penghitungan simbol secara tepat tanpa operasi tambah atau tolak. Bilangan menguasai: ; belum menguasai: . Tindakan susulan: Padankan simbol satu-satu, kemudian bimbing pembilangan sepuluh-sepuluh."
+      }
+    }
+  ],
+  "release": false
+}
