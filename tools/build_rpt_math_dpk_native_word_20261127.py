@@ -116,11 +116,19 @@ def verify_compact_pages(blob,pdf):
     assert len(doc.tables)==1
     table=doc.tables[0]
     expected=list(dict.fromkeys(WEEK.match(row.cells[0].text)[0] for row in table.rows[1:]))
+    by_week={w:[] for w in expected}
+    for row in table.rows[1:]:
+        w=WEEK.match(row.cells[0].text)[0]
+        m=LESSON.fullmatch(norm(row.cells[1].text))
+        if m: by_week[w].append((m[1],m[2]))
     actual=[]
     for page in list(pdf)[1:]:
         txt=page.get_text()
         assert all(norm(c.text) in norm(txt) for c in table.rows[0].cells)
-        actual.extend(re.findall(r"(?m)^M\\d{2}\\s*$",txt))
+        weeks=[x.strip() for x in re.findall(r"(?m)^M\d{2}\s*$",txt)]
+        actual.extend(weeks)
+        ids=re.findall(r"(?m)^(\d{3})\s*\n(30|60) min\s*$",txt)
+        assert ids==[n for w in weeks for n in by_week[w]],("split week lessons",page.number)
         assert all(d["rect"].y1<=page.rect.height-39 for d in page.get_drawings())
     assert [x.strip() for x in actual]==expected,("missing, repeated or split week",actual,expected)
     assert len(pdf)<=15,("excess pages",len(pdf))
