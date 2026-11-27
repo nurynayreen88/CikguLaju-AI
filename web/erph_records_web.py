@@ -14,9 +14,9 @@ bp = Blueprint('erph_records', __name__)
 FLAG = 'CIKGULAJU_ERPH_RECORDS_ENABLED'
 ORIGIN = 'https://cikgulaju-web.onrender.com'
 FIELDS = ('teaching_date','class_name','subject_name','start_time','end_time',
-          'title','objectives','activities','reflection','rph_format','status')
+          'title','standard_content','standard_learning','objectives','activities','reflection','rph_format','status')
 LIMITS = dict(class_name=80, subject_name=120, title=200,
-              objectives=4000, activities=12000, reflection=4000)
+              standard_content=4000, standard_learning=4000, objectives=4000, activities=12000, reflection=4000)
 SELECT = 'id,' + ','.join(FIELDS) + ',updated_at'
 
 @bp.after_request
@@ -132,6 +132,12 @@ def save(record_id=None):
         return jsonify(item=rows[0]), 201 if record_id is None else 200
     except Exception:
         return failure('Rekod tidak dapat disimpan. Semak jika slot sudah wujud.',503)
+
+@bp.get('/api/erph/availability')
+def availability():
+    c,uid,error=account()
+    if error is not None:return error
+    return jsonify(enabled=True)
 
 @bp.get('/erph')
 def page():
