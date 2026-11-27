@@ -210,6 +210,24 @@
       "drive_file_id": "1X4s9E8NFrfpDcxj9SdAR1PKpmHJuhc0M",
       "size_bytes": 200673,
       "sha256": "df9050aa90514e6acc8cf96c708d774ddbff7cfbf3967e8c271e182e310ee940"
+    },
+    "3/19": {
+      "unit": "Every day",
+      "main_sp": "3.2.1",
+      "complementary_sp": "3.2.2",
+      "drive_file_id": "1-Jnovn_qT-_J7BeCnxwbYlAeA0C-HHgq",
+      "size_bytes": 100025,
+      "sha256": "b1853ee1d9e15f8804afcf1f8765d3d81ba6fc3b5e0cba129ad11ed69d03b2b7"
+    },
+    "3/20": {
+      "unit": "Welcome",
+      "main_sp": "4.3.3",
+      "complementary_sp": "4.3.1",
+      "drive_file_id": "1KrNtsSRZMt-t-X85OoJpW9WToquJ4zad",
+      "size_bytes": 176517,
+      "sha256": "fcdb435d74e8533b641c056cc83ce048479eee225bb59bd5de3368fe849c5ded",
+      "instructional_unit": "Every Day",
+      "source_note": "Official KPM SOW Lesson 20 prints TOPIC: Welcome, although it follows the Every day unit and uses third-person daily routine writing; 2027 RPT and standalone RPH correctly use the instructional unit context Every Day. Keep printed discrepancy explicitly recorded."
     }
   }
 }
