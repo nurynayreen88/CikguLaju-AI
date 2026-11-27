@@ -21,16 +21,18 @@ class WorksheetTests(unittest.TestCase):
         return patch("web.unified_rph_web._account", return_value=(
             {"telegram_user_id": 1, "authenticated": True, "free_remaining": 1}, None))
 
-    def test_all_24_source_matches(self):
+    def test_all_26_source_matches(self):
         records, index = ws._sources()
-        self.assertEqual(len(records), 24)
+        self.assertEqual(len(records), 26)
         for key, rec in records.items():
             y, n = map(int, key.split("/"))
             rows = [r for r in source_records(y, "ENGLISH") if r["lesson"] == n]
             self.assertEqual(len(rows), 1)
             self.assertEqual(ws.resolve(y,n,rows[0]["unit"]), rec)
         self.assertIsNone(ws.resolve(3,1,"wrong"))
-        self.assertIsNone(ws.resolve(3,17,"Every day"))
+        self.assertIsNotNone(ws.resolve(3,17,"Every day"))
+        self.assertIsNotNone(ws.resolve(3,18,"Every day"))
+        self.assertIsNone(ws.resolve(3,19,"Every day"))
         self.assertIsNone(ws.resolve(4,1,"Welcome!"))
         self.assertIsNone(ws.resolve(True,1,"Welcome!"))
 
