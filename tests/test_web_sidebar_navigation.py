@@ -81,14 +81,14 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertEqual(len(rows),156)
         direct_pattern=r'<button type="button" class="curriculum-direct-download" data-download-url="https://drive\.usercontent\.google\.com/download\?id=([A-Za-z0-9_-]+)&amp;export=download&amp;confirm=t" aria-label="Download [^"]+">Download</button>'
         direct_ids=re.findall(direct_pattern,self.html)
-        self.assertEqual(len(direct_ids),183)
-        self.assertEqual(self.html.count('class="curriculum-doc-name"'),183)
+        self.assertEqual(len(direct_ids),189)
+        self.assertEqual(self.html.count('class="curriculum-doc-name"'),189)
         self.assertIn('link.href=url.href;',self.html)
         self.assertIn('link.click();',self.html)
         self.assertNotIn('class="curriculum-direct-download" download',self.html)
-        self.assertEqual(len(set(direct_ids)),183)
+        self.assertEqual(len(set(direct_ids)),189)
         self.assertEqual(sum("drive.usercontent.google.com" in url for _,_,url in rows),155)
-        self.assertEqual(self.html.count('class="curriculum-direct-download"'),183)
+        self.assertEqual(self.html.count('class="curriculum-direct-download"'),189)
         self.assertIn("18TRqIUfNPsnyV-G_hk2BRpfExgZhyhv-",direct_ids)
         self.assertIn("1dMLgOsc-grs4fR2WSvLNDk45Dtqh_yY_",direct_ids)
         self.assertIn("1NvtZL2ytCS_Ni878No0TJueAtwhp5o3W",direct_ids)
@@ -123,7 +123,7 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertNotIn("curriculum-kp2027-ppd-list",kp_menu)
         self.assertIn("Hanya Dokumen Kurikulum (DK) disenaraikan.",kp_menu)
         self.assertEqual(len(pk_rows),54)
-        self.assertEqual(sum("drive.usercontent.google.com" in url for _,_,url in pk_rows),12)
+        self.assertEqual(sum("drive.usercontent.google.com" in url for _,_,url in pk_rows),18)
         self.assertEqual(len({url for _,_,url in pk_rows}),54)
         self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
             ("1","Asas 3M"),("2","Pengurusan Kehidupan"),("3","Asas 3M"),
