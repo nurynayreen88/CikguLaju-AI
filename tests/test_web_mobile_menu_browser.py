@@ -93,7 +93,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     expect(page.locator("#curriculum-kp2027-ppd-list")).to_have_count(0)
                     page.locator("#curriculum-docs-type").select_option("kssr")
                     expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_count(156)
-                    expect(page.locator("#curriculum-docs-kssr-list button.curriculum-direct-download")).to_have_count(137)
+                    expect(page.locator("#curriculum-docs-kssr-list button.curriculum-direct-download")).to_have_count(155)
                     page.locator("#curriculum-docs-year").select_option("6")
                     page.locator("#curriculum-docs-subject").select_option("Matematik SJKC")
                     expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_count(1)
