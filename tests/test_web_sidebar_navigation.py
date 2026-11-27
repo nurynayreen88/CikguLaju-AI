@@ -92,6 +92,14 @@ class WebSidebarTabsTests(unittest.TestCase):
             expected.update((str(year),subject) for year in years)
         self.assertEqual({(year,subject) for year,subject,_ in rows},expected)
         pk_rows=re.findall(r'<li data-pk-year="([1-6])" data-pk-subject="([^"]+)"><a href="(https://[^"]+\.pdf)"',self.html)
+        kp_section=self.html.split('<ul id="curriculum-kp2027-list">',1)[1].split("</ul>",1)[0]
+        self.assertEqual(kp_section.count("<li>"),5)
+        self.assertEqual(kp_section.count("PDF sumber luar"),3)
+        self.assertEqual(kp_section.count("halaman sumber"),2)
+        self.assertIn('https://bpk.moe.gov.my/kurikulum/kp2027',self.html)
+        for name in ("Bahasa Melayu SK","Bahasa Melayu SJK","Matematik","Alam dan Manusia: Pembelajaran Bersepadu","Pendidikan Jasmani"):
+            self.assertIn("DK "+name+" Tahun 1",kp_section)
+        self.assertIn("Sumber penataran — edisi akhir belum disahkan",self.html)
         self.assertEqual(len(pk_rows),9)
         self.assertEqual(len({url for _,_,url in pk_rows}),9)
         self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
