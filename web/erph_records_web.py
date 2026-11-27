@@ -122,21 +122,33 @@ def save(record_id=None):
     if request.headers.get('Origin')!=ORIGIN:return failure('Permintaan tidak sah.',403)
     if not request.is_json or not 0<(request.content_length or 0)<=100000:
         return failure('Permintaan tidak sah.',400)
+    from datetime import datetime, timezone
+    expected=None
     try:
         data=validate(request.get_json(silent=True))
         if record_id is not None:
             record_id=str(UUID(record_id))
+            stamp=request.headers.get('X-eRPH-Version','')
+            if not 1<=len(stamp)<=64:
+                return failure('Versi rekod diperlukan. Buka semula rekod sebelum menyimpan.',428)
+            expected=datetime.fromisoformat(stamp)
+            if expected.tzinfo is None:
+                raise ValueError('Versi tidak sah.')
+            expected=expected.astimezone(timezone.utc).isoformat()
     except (ValueError,TypeError):
         return failure('Semak medan, tarikh, masa dan status.',400)
-    from datetime import datetime, timezone
     data['updated_at']=datetime.now(timezone.utc).isoformat()
     try:
         if record_id is None:
             data['owner_telegram_id']=uid
             rows=store(c,uid,'POST',{},data)
         else:
-            rows=store(c,uid,'PATCH',{'id':'eq.'+record_id},data)
-        if not rows:return failure('Rekod tidak ditemui.',404)
+            rows=store(c,uid,'PATCH',{'id':'eq.'+record_id,'updated_at':'eq.'+expected},data)
+        if not rows:
+            if record_id is not None:
+                # Do not distinguish an inaccessible record from a stale version.
+                return failure('Rekod telah berubah atau tidak tersedia. Salin pindaan anda, kemudian buka semula rekod.',409)
+            return failure('Rekod tidak ditemui.',404)
         if len(rows)!=1:return failure('Semakan rekod gagal.',503)
         return jsonify(item=rows[0]), 201 if record_id is None else 200
     except Exception:
