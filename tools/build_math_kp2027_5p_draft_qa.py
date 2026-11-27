@@ -1,5 +1,6 @@
 """QA real Math 5P renderer, not the production route."""
 import json
+import re
 from pathlib import Path
 from unicodedata import normalize
 from hashlib import sha256
@@ -7,7 +8,7 @@ import fitz
 from web import kp2027_math_5p as five
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"qa_math_5p"
-def norm(s):return " ".join(normalize("NFKC",s).split())
+def norm(s):return " ".join(re.sub(r"(?<=\w)-[ \t]*\r?\n[ \t]*(?=\w)","-",normalize("NFKC",s)).split())
 def build():
     _,original,drafts,reviews=five.inventory()
     OUT.mkdir(exist_ok=True)
