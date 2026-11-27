@@ -100,6 +100,12 @@ class WebSidebarTabsTests(unittest.TestCase):
         for name in ("Bahasa Melayu SK","Bahasa Melayu SJK","Matematik","Alam dan Manusia: Pembelajaran Bersepadu","Pendidikan Jasmani"):
             self.assertIn("DK "+name+" Tahun 1",kp_section)
         self.assertIn("Sumber penataran — edisi akhir belum disahkan",self.html)
+        ppd_section=self.html.split('<ul id="curriculum-kp2027-ppd-list">',1)[1].split("</ul>",1)[0]
+        self.assertEqual(ppd_section.count("<li>"),2)
+        self.assertIn("https://drive.google.com/file/d/1epPLRy2epJ40Wk68FXZIyilro5vBgl9s/view",ppd_section)
+        self.assertIn("https://drive.google.com/file/d/1bPu7O98BamtoSbKXBKVmCIfEIvNCE2b8/view",ppd_section)
+        self.assertIn("Dokumen penataran daripada PPD — edisi akhir belum disahkan",self.html)
+        self.assertIn("https://www.pendidik2u.my/dokumen-kurikulum-bahasa-melayu-tahun-1/",self.html)
         self.assertEqual(len(pk_rows),9)
         self.assertEqual(len({url for _,_,url in pk_rows}),9)
         self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
