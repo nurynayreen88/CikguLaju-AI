@@ -1,0 +1,346 @@
+{
+  "status": "ACADEMIC_HOLD_TEXTBOOK_AND_RENDER_PENDING",
+  "policy": {
+    "scope": "All SK RPH 5P, both KSSR and KP2027; include DPK/DLP only under their respective verified source and edition.",
+    "required": [
+      "Official applicable DK or DSKP edition, exact SK/SP wording and page provenance",
+      "Verified RPT/SOW lesson identity, group, year, duration, theme/unit/topic",
+      "Actual matching official textbook and activity/workbook pages, or documented justified non-applicability; verify audio/official teacher guide where relevant",
+      "Five distinct phase activities covering the actual standard, with observable evidence matching objective and success criteria",
+      "Correct language, appropriate age and subject-specific safety, remediation and enrichment",
+      "Profile/teacher field integrity, matching one-page Word/PDF layout and no fabricated reflections",
+      "Human or explicit academic review of content; keep release disabled until all applicable checks pass"
+    ],
+    "prohibited": [
+      "Inferring textbook page from RPT or penataran page",
+      "Mixing KSSR and KP2027 editions",
+      "Relabeling existing activity steps without phase review",
+      "Overwriting the source RPH or RPT",
+      "Claiming KPM approval of CikguLaju RPH"
+    ]
+  },
+  "review": {
+    "companion_file": "audits/rph_5p_bm_kp2027_t1_001_012_ab_20261127.json",
+    "companion_blob": "7ed68a47e6a123df2e2a0d3114d356a2810714ca",
+    "source": {
+      "publisher": "Bahagian Pembangunan Kurikulum, KPM",
+      "title": "Dokumen Kurikulum Bahasa Melayu Sekolah Kebangsaan Tahun 1",
+      "isbn": "978-967-420-797-7",
+      "edition": "2026 / KP2027",
+      "drive_id": "1-a9APG2zp8sAahgUweiP5PxzHyBC2TXh",
+      "printed_pages": [
+        22,
+        30,
+        38,
+        44
+      ],
+      "verification": "Read actual official DK PDF saved in project Drive; checked standard tables directly."
+    },
+    "total": 24,
+    "unique_sp": 7,
+    "sp_wording_matched": 24,
+    "raw_sk_wording_matched": 20,
+    "raw_sk_corrections_required": 4,
+    "correction": {
+      "code": "4.1",
+      "note": "Raw stored SK is incomplete; existing official-source-resolved lesson() applies exact DK correction. Require resolved record, not raw source, for 5P export.",
+      "official": "Menulis ayat secara mekanis dengan betulnya dan kemasnya.",
+      "page": 44
+    },
+    "textbook": {
+      "status": "NOT_VERIFIED",
+      "note": "Exact KP2027 Year 1 BM SK textbook was not found by targeted Drive search. Do not treat legacy penataran page 34/42/50/56 as textbook or final DK page. No textbook page claimed."
+    },
+    "records": [
+      {
+        "group": "A",
+        "lesson": 1,
+        "sp": "1.1.1",
+        "dk_printed_page": 22,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 2,
+        "sp": "2.1.1",
+        "dk_printed_page": 30,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 3,
+        "sp": "3.1.1",
+        "dk_printed_page": 38,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 4,
+        "sp": "4.1.1",
+        "dk_printed_page": 44,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": true,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 5,
+        "sp": "3.1.2",
+        "dk_printed_page": 38,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 6,
+        "sp": "2.1.2",
+        "dk_printed_page": 30,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 7,
+        "sp": "1.1.1",
+        "dk_printed_page": 22,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 8,
+        "sp": "2.1.1",
+        "dk_printed_page": 30,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 9,
+        "sp": "3.1.1",
+        "dk_printed_page": 38,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 10,
+        "sp": "4.1.1",
+        "dk_printed_page": 44,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": true,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 11,
+        "sp": "3.1.2",
+        "dk_printed_page": 38,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "A",
+        "lesson": 12,
+        "sp": "2.1.2",
+        "dk_printed_page": 30,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 1,
+        "sp": "1.1.1",
+        "dk_printed_page": 22,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 2,
+        "sp": "2.1.1",
+        "dk_printed_page": 30,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 3,
+        "sp": "3.1.1",
+        "dk_printed_page": 38,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 4,
+        "sp": "4.1.1",
+        "dk_printed_page": 44,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": true,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 5,
+        "sp": "1.1.1",
+        "dk_printed_page": 22,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 6,
+        "sp": "2.1.1",
+        "dk_printed_page": 30,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 7,
+        "sp": "3.1.1",
+        "dk_printed_page": 38,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 8,
+        "sp": "4.1.1",
+        "dk_printed_page": 44,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": true,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 9,
+        "sp": "3.1.2",
+        "dk_printed_page": 38,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 10,
+        "sp": "2.1.2",
+        "dk_printed_page": 30,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 11,
+        "sp": "1.1.2",
+        "dk_printed_page": 22,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      },
+      {
+        "group": "B",
+        "lesson": 12,
+        "sp": "2.1.2",
+        "dk_printed_page": 30,
+        "sp_checked": true,
+        "raw_sk_requires_resolved_correction": false,
+        "textbook_checked": false,
+        "render_checked": false,
+        "academic_ready": false,
+        "ready": false
+      }
+    ]
+  },
+  "release": false
+}
