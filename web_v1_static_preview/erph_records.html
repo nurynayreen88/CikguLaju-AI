@@ -10,7 +10,7 @@
 <div class="grid"><label>Kelas<input name="class_name" maxlength="80" required></label><label>Subjek<input name="subject_name" maxlength="120" required></label><label>Masa mula<input name="start_time" type="time" required></label><label>Masa tamat<input name="end_time" type="time" required></label></div>
 <label>Tajuk<input name="title" maxlength="200" required></label>
 <label>Format RPH<select name="rph_format"><option value="biasa">RPH biasa</option><option value="5p">RPH Ringkas 5P</option></select></label>
-<label>Objektif pembelajaran<textarea name="objectives" maxlength="4000"></textarea></label>
+<p class="meta">Isi SK/SP berdasarkan RPT atau DK/DSKP yang dirujuk. Ruang ini belum dipadankan secara automatik dengan katalog CikguLaju.</p><label>Standard Kandungan / Kandungan Pembelajaran<textarea name="standard_content" maxlength="4000"></textarea></label><label>Standard Pembelajaran<textarea name="standard_learning" maxlength="4000"></textarea></label><label>Objektif pembelajaran<textarea name="objectives" maxlength="4000"></textarea></label>
 <label>Aktiviti PdP<textarea name="activities" maxlength="12000"></textarea></label>
 <label>Refleksi<textarea name="reflection" maxlength="4000"></textarea></label>
 <label>Status<select name="status"><option value="draft">Draf</option><option value="saved">Disediakan</option><option value="completed">PdP selesai</option></select></label>
@@ -19,7 +19,7 @@
 <script>
 const day=document.getElementById('day'),list=document.getElementById('list'),form=document.getElementById('editor'),msg=document.getElementById('msg'),save=document.getElementById('save');
 let editing=null,seq=0;const slots=document.getElementById("slots");
-const fields=['teaching_date','class_name','subject_name','start_time','end_time','title','objectives','activities','reflection','rph_format','status'];
+const fields=['teaching_date','class_name','subject_name','start_time','end_time','title','standard_content','standard_learning','objectives','activities','reflection','rph_format','status'];
 const parts=Object.fromEntries(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kuala_Lumpur',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()).map(p=>[p.type,p.value]));day.value=parts.year+'-'+parts.month+'-'+parts.day;
 async function api(path,options){const r=await fetch('/api/erph/records'+path,{credentials:'same-origin',cache:'no-store',...options});const j=await r.json();if(!r.ok)throw Error(j.error||'Permintaan gagal');return j}
 function edit(item){editing=item?.id||null;form.reset();for(const k of fields){if(item&&typeof item[k]==='string')form.elements[k].value=k.endsWith('_time')?item[k].slice(0,5):item[k]}if(!item)form.elements.teaching_date.value=day.value;document.getElementById('heading').textContent=editing?'Sunting RPH':'RPH baharu';form.hidden=false}
