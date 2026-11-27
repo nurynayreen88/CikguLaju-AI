@@ -156,7 +156,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 @media print{
  #workspace > .app-shell:not(#rph-preview-panel){display:block!important}
  #workspace .app-main,#workspace #view-rph{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
- #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-payment,#workspace #view-referral,#workspace #view-guide,#workspace #view-curriculum-docs{display:none!important}
+ #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-payment,#workspace #view-referral,#workspace #view-guide,#workspace #view-calendar,#workspace #view-curriculum-docs{display:none!important}
  #workspace #view-rph > *:not(#rph-preview-panel){display:none!important}
 }
 
@@ -794,6 +794,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
     <button type="button" class="sidebar-tab" data-web-view="curriculum-docs" aria-controls="view-curriculum-docs"><span aria-hidden="true">📚</span> Dokumen Kurikulum</button>
+    <button type="button" class="sidebar-tab" data-web-view="calendar" aria-controls="view-calendar"><span aria-hidden="true">🗓️</span> Kalendar Akademik</button>
     <details class="sidebar-more" id="sidebar-more">
       <summary>Menu lain</summary>
       <div class="sidebar-more-list">
@@ -1351,15 +1352,18 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </ul>
  </div>
 </section>
+<section id="view-calendar" class="app-view" aria-labelledby="calendar2027-heading" hidden>
+ <h2 id="calendar2027-heading" tabindex="-1">Kalendar Akademik 2027</h2>
+ <p id="calendar2027-status" role="status" class="notice">Semak ketersediaan kalendar.</p>
+ <div id="calendar2027-card" class="profile-setup-guide" hidden aria-labelledby="calendar2027-heading">
+  <p>PDF A2 • Cuti sekolah, cuti umum dan tarikh emolumen. Percuma untuk pengguna log masuk.</p>
+  <a id="calendar2027-download" class="rpt-download-link" href="/api/rpt/2027/calendar.pdf" download="CikguLaju_Kalendar_2027_A2_Kemas.pdf" hidden>Muat turun Kalendar PDF (A2)</a>
+ </div>
+</section>
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading">
  <h3 id="rpt2027-heading" tabindex="-1">RPT 2027</h3>
- <div id="calendar2027-card" class="profile-setup-guide" hidden aria-labelledby="calendar2027-title">
-  <h3 id="calendar2027-title">Kalendar Akademik CikguLaju 2027</h3>
-  <p>PDF A2 • Cuti sekolah, cuti umum dan tarikh emolumen. Percuma untuk pengguna log masuk.</p>
-  <a id="calendar2027-download" class="rpt-download-link" href="/api/rpt/2027/calendar.pdf" download="CikguLaju_Kalendar_2027_A2_Kemas.pdf" hidden>Muat turun Kalendar PDF (A2)</a>
-  <p id="calendar2027-status" role="status" class="notice"></p>
- </div>
+
  <p class="notice">Semak padanan SK/SP, buku teks dan takwim sekolah sebelum menggunakan RPT.</p>
  <p class="notice">Muat turun RPT SK dan DLP percuma untuk pengguna log masuk. RPT SJKC memerlukan akses berbayar aktif. Cetakan berprofil hanya untuk Rakan Pembangun atau langganan aktif.</p>
  <div class="rpt-selectors">
@@ -1757,7 +1761,7 @@ curriculumDocsType.addEventListener("change",()=>{
   document.getElementById("curriculum-docs-"+type).hidden=curriculumDocsType.value!==type;
  }
 });
-const webViews=new Map([["today","view-today"],["rph","view-rph"],["worksheet","view-worksheet"],["bbm","view-bbm"],["uasa","view-uasa"],["pbd","view-pbd"],["special","view-special"],["rpt","view-rpt"],["curriculum-docs","view-curriculum-docs"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["guide","view-guide"]]);
+const webViews=new Map([["today","view-today"],["rph","view-rph"],["worksheet","view-worksheet"],["bbm","view-bbm"],["uasa","view-uasa"],["pbd","view-pbd"],["special","view-special"],["rpt","view-rpt"],["curriculum-docs","view-curriculum-docs"],["calendar","view-calendar"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["guide","view-guide"]]);
 /* Only the original curriculum dropdowns and material actions are moved
  * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
  * or renders inside RPH Hari Ini. Event listeners and native APIs are reused.
@@ -1820,6 +1824,7 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
     subject.dispatchEvent(new Event("change"));
   }
  }
+ if(button.dataset.webView==="calendar")void refreshCalendar2027();
  if(button.dataset.webView==="today")window.rphTodayLoad?.();
  if(button.dataset.webView==="pbd")window.cikgulajuPbdLoad?.();
  if(button.dataset.webView==="feedback")window.cikgulajuFeedbackLoad?.();
@@ -3078,14 +3083,15 @@ async function refreshCalendar2027(){
  const link=document.getElementById("calendar2027-download");
  const note=document.getElementById("calendar2027-status");
  card.hidden=true;link.hidden=true;
+ note.textContent="Memuatkan kalendar…";
  try{
   const response=await fetch("/api/rpt/2027/calendar/status",{credentials:"same-origin",cache:"no-store"});
-  if(!response.ok)return;
+  if(!response.ok){note.textContent="Kalendar belum dapat dimuatkan. Sila cuba semula.";return;}
   const data=await response.json();
-  if(data.ready!==true)return;
+  if(data.ready!==true){note.textContent="Kalendar belum tersedia.";return;}
   card.hidden=false;link.hidden=false;
   note.textContent="Muat turun terus tanpa menggunakan kuota RPH.";
- }catch(error){}
+ }catch(error){note.textContent="Kalendar belum dapat dimuatkan. Sila cuba semula.";}
 }
 async function loadRptCatalog(){
  void refreshCalendar2027();
