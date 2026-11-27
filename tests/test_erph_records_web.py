@@ -96,3 +96,27 @@ class ErphTests(unittest.TestCase):
             self.assertIn(b'\\u003c/script\\u003e',r.data)
             self.assertEqual(self.client.post('/erph/import-preview',data={'draft':json.dumps(draft)}).status_code,403)
             store.assert_not_called()
+
+    def test_export_saved_records(self):
+        from io import BytesIO
+        from docx import Document
+        import fitz
+        with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store',return_value=[PAYLOAD,PAYLOAD]) as store:
+            for fmt in ('word','pdf'):
+                r=self.client.get('/api/erph/export?date=2027-01-11&scope=week&format='+fmt)
+                self.assertEqual(r.status_code,200)
+                self.assertIn('attachment',r.headers['Content-Disposition'])
+                self.assertEqual(store.call_args.args[1],42)
+                if fmt=='word':
+                    text='\n'.join(p.text for p in Document(BytesIO(r.data)).paragraphs)
+                else:
+                    with fitz.open(stream=r.data,filetype='pdf') as doc:
+                        self.assertEqual(len(doc),2)
+                        text=' '.join(p.get_text() for p in doc)
+                self.assertIn('Susun kad',text)
+                self.assertIn('Refleksi',text)
+                self.assertNotIn('Kumpulan A',text)
+            self.assertEqual(self.client.get('/api/erph/export?date=2027-01-11&format=zip').status_code,400)
+    def test_export_empty(self):
+        with patch.object(m,'account',return_value=({},42,None)),patch.object(m,'store',return_value=[]):
+            self.assertEqual(self.client.get('/api/erph/export?date=2027-01-11&format=pdf').status_code,404)
