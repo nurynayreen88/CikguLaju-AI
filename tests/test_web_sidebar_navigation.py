@@ -104,13 +104,10 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('https://bpk.moe.gov.my/kurikulum/kp2027',self.html)
         for name in ("Bahasa Melayu SK","Bahasa Melayu SJK","Matematik","Alam dan Manusia: Pembelajaran Bersepadu","Pendidikan Jasmani"):
             self.assertIn("DK "+name+" Tahun 1",kp_section)
-        self.assertIn("Sumber penataran — edisi akhir belum disahkan",self.html)
-        ppd_section=self.html.split('<ul id="curriculum-kp2027-ppd-list">',1)[1].split("</ul>",1)[0]
-        self.assertEqual(ppd_section.count("<li>"),2)
-        self.assertIn("https://drive.google.com/file/d/1epPLRy2epJ40Wk68FXZIyilro5vBgl9s/view",ppd_section)
-        self.assertIn("https://drive.google.com/file/d/1bPu7O98BamtoSbKXBKVmCIfEIvNCE2b8/view",ppd_section)
-        self.assertIn("Dokumen penataran daripada PPD — edisi akhir belum disahkan",self.html)
-        self.assertIn("https://www.pendidik2u.my/dokumen-kurikulum-bahasa-melayu-tahun-1/",self.html)
+        kp_menu=self.html.split('<div id="curriculum-docs-kp2027" hidden>',1)[1].split('<div id="curriculum-docs-kssr"',1)[0]
+        self.assertNotIn("penataran",kp_menu.lower())
+        self.assertNotIn("curriculum-kp2027-ppd-list",kp_menu)
+        self.assertIn("Hanya Dokumen Kurikulum (DK) disenaraikan.",kp_menu)
         self.assertEqual(len(pk_rows),32)
         self.assertEqual(len({url for _,_,url in pk_rows}),32)
         self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
