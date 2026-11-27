@@ -78,13 +78,14 @@ class WebSidebarTabsTests(unittest.TestCase):
         for category in ("kp2027","kssr","dpk","pk"):
             self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
         rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf))"',self.html)
-        self.assertEqual(len(rows),87)
-        self.assertEqual(len({url for _,_,url in rows}),87)
+        self.assertEqual(len(rows),99)
+        self.assertEqual(len({url for _,_,url in rows}),99)
         expected={(str(year),subject+" "+stream) for year in range(1,7)
                   for subject in ("Matematik","Sains")
                   for stream in ("SK","SJKC","SJKT","DLP")}
         for subject,years in {
             "Bahasa Melayu SK": range(1,7), "Bahasa Arab": range(1,7),
+            "Bahasa Melayu SJK": range(1,7), "Pendidikan Islam": range(1,7),
             "Bahasa Cina SK": range(1,7), "Bahasa Cina SJKC": range(1,7),
             "Bahasa Tamil SK": range(1,7), "Bahasa Tamil SJKT": (2,3,4,5,6),
             "Bahasa Iban": (3,4,5,6),
@@ -100,6 +101,12 @@ class WebSidebarTabsTests(unittest.TestCase):
         for name in ("Bahasa Melayu SK","Bahasa Melayu SJK","Matematik","Alam dan Manusia: Pembelajaran Bersepadu","Pendidikan Jasmani"):
             self.assertIn("DK "+name+" Tahun 1",kp_section)
         self.assertIn("Sumber penataran — edisi akhir belum disahkan",self.html)
+        ppd_section=self.html.split('<ul id="curriculum-kp2027-ppd-list">',1)[1].split("</ul>",1)[0]
+        self.assertEqual(ppd_section.count("<li>"),2)
+        self.assertIn("https://drive.google.com/file/d/1epPLRy2epJ40Wk68FXZIyilro5vBgl9s/view",ppd_section)
+        self.assertIn("https://drive.google.com/file/d/1bPu7O98BamtoSbKXBKVmCIfEIvNCE2b8/view",ppd_section)
+        self.assertIn("Dokumen penataran daripada PPD — edisi akhir belum disahkan",self.html)
+        self.assertIn("https://www.pendidik2u.my/dokumen-kurikulum-bahasa-melayu-tahun-1/",self.html)
         self.assertEqual(len(pk_rows),9)
         self.assertEqual(len({url for _,_,url in pk_rows}),9)
         self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
