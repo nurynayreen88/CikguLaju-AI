@@ -8,6 +8,8 @@ create table public.erph_teacher_records (
   start_time time not null,
   end_time time not null check (end_time > start_time),
   title text not null check (char_length(title) between 1 and 200),
+  standard_content text not null default '' check (char_length(standard_content) <= 4000),
+  standard_learning text not null default '' check (char_length(standard_learning) <= 4000),
   objectives text not null default '' check (char_length(objectives) <= 4000),
   activities text not null default '' check (char_length(activities) <= 12000),
   reflection text not null default '' check (char_length(reflection) <= 4000),
