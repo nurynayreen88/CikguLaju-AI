@@ -84,7 +84,7 @@ def pdf(rows):
                 count+=1
                 if count>200:raise ValueError('Eksport terlalu panjang; pilih rekod harian.')
                 more,filled=story.place(rect)
-                if filled.is_empty:raise ValueError('Kandungan PDF tidak muat.')
+                if fitz.Rect(filled).is_empty:raise ValueError('Kandungan PDF tidak muat.')
                 device=writer.begin_page(page)
                 story.draw(device)
                 writer.end_page()
