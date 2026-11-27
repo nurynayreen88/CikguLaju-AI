@@ -52,7 +52,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                       };
                     }""")
                     self.assertEqual(metrics["display"],"grid",metrics)
-                    self.assertEqual(len(metrics["tabs"]),7,metrics)
+                    self.assertEqual(len(metrics["tabs"]),8,metrics)
                     self.assertLessEqual(metrics["scroll"],metrics["client"]+1,metrics)
                     self.assertLessEqual(metrics["body"],width+1,metrics)
                     for tab in metrics["tabs"]:
@@ -109,6 +109,13 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     self.assertLessEqual(page.evaluate("document.body.scrollWidth"),width+1)
                     page.get_by_role("button",name="Rakan Pembangun").click()
                     expect(page.locator("#view-curriculum-docs")).to_be_hidden()
+                    page.get_by_role("button",name="Kalendar Akademik",exact=True).click()
+                    expect(page.locator("#calendar2027-heading")).to_be_focused()
+                    expect(page.locator("#view-calendar")).to_be_visible()
+                    expect(page.locator("#view-rpt")).to_be_hidden()
+                    expect(page.locator('[data-web-view="calendar"]')).to_have_attribute("aria-current","page")
+                    page.get_by_role("button",name="Rakan Pembangun").click()
+                    expect(page.locator("#view-calendar")).to_be_hidden()
                     more=page.locator("#sidebar-more")
                     self.assertFalse(more.evaluate("(node)=>node.open"))
                     expect(page.get_by_role("button",name="Rekod PBD")).to_be_hidden()
@@ -195,6 +202,46 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                         expect(guide).to_be_visible()
                 finally:
                     page.close()
+
+    def test_calendar_uses_independent_free_download(self):
+        page=self.browser.new_page(viewport={"width":390,"height":820},accept_downloads=True)
+        downloads=[]
+        ready=True
+        def mock(route):
+            path=urlsplit(route.request.url).path
+            if path=="/":
+                return route.fulfill(content_type="text/html",path=WEB/"index.html")
+            if path=="/api/auth/telegram/session":
+                return route.fulfill(json={"rph_access_mode":"trial","rph_trial_remaining":0})
+            if path=="/api/rpt/2027/calendar/status":
+                return route.fulfill(json={"ready":ready})
+            if path=="/api/rpt/2027/calendar.pdf":
+                downloads.append(path)
+                return route.fulfill(content_type="application/pdf",body=b"%PDF-1.4 test",headers={"Content-Disposition":"attachment; filename=CikguLaju_Kalendar_2027_A2_Kemas.pdf"})
+            if path.startswith("/assets/"):
+                asset=WEB/path.rsplit("/",1)[-1]
+                if asset.is_file():
+                    return route.fulfill(path=asset)
+            return route.fulfill(status=404,json={})
+        page.route("**/*",lambda route:route.abort())
+        page.route(HOST+"/**",mock)
+        try:
+            page.goto(HOST+"/",wait_until="load")
+            page.get_by_role("button",name="Kalendar Akademik",exact=True).click()
+            expect(page.locator("#calendar2027-download")).to_be_visible()
+            expect(page.locator("#calendar2027-status")).to_have_text("Muat turun terus tanpa menggunakan kuota RPH.")
+            with page.expect_download() as info:
+                page.locator("#calendar2027-download").click()
+            self.assertEqual(info.value.suggested_filename,"CikguLaju_Kalendar_2027_A2_Kemas.pdf")
+            self.assertEqual(downloads,["/api/rpt/2027/calendar.pdf"])
+            page.get_by_role("button",name="RPT 2027",exact=True).click()
+            expect(page.locator("#calendar2027-download")).to_be_hidden()
+            ready=False
+            page.get_by_role("button",name="Kalendar Akademik",exact=True).click()
+            expect(page.locator("#calendar2027-status")).to_have_text("Kalendar belum tersedia.")
+            expect(page.locator("#calendar2027-download")).to_be_hidden()
+        finally:
+            page.close()
 
     def test_year_one_book_references_appear_after_each_lesson_selection(self):
         page = self.browser.new_page(viewport={"width": 390, "height": 840})
