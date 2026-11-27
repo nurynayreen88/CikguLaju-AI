@@ -164,3 +164,14 @@ class ErphTests(unittest.TestCase):
         for _,v in phases:self.assertIn(v,fields['activities'])
         with self.assertRaises(ValueError):
             extract_docx(make(base+[('Medan tidak dikenali','Kandungan penting')]))
+
+    def test_editor_rejects_stale_import_and_save_callbacks(self):
+        # Static regression contract; browser interaction QA is still required.
+        with patch.object(m,'account',return_value=({},42,None)):
+            html=self.client.get('/erph').get_data(as_text=True)
+        self.assertIn('function edit(item){editorVersion++;',html)
+        self.assertIn("'cancel').onclick=()=>{editorVersion++;form.hidden=true}",html)
+        self.assertIn('if(version!==editorVersion||form.hidden)return;',html)
+        self.assertIn('const version=editorVersion,recordId=editing;',html)
+        self.assertIn("await api(recordId?'/'+encodeURIComponent(recordId):''",html)
+        self.assertIn('if(version===editorVersion&&!form.hidden){day.value=',html)
