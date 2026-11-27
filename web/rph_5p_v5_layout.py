@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from hashlib import sha256
 from io import BytesIO
 import re
+import json
 from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT, WD_TABLE_DIRECTION
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -55,6 +56,9 @@ def _element(name, **attrs):
 def validate(source, companion, *, source_bytes):
     if not isinstance(source_bytes, bytes) or not source_bytes:
         raise ValueError("Original source bytes required")
+    # The locked bytes are the normalized source record, not an arbitrary file.
+    if json.loads(source_bytes)!=source:
+        raise ValueError("Source fields do not match locked record")
     digest=sha256(source_bytes).hexdigest()
     if companion.get("source_sha256")!=digest or not DIGEST.fullmatch(digest):
         raise ValueError("5P source changed")
