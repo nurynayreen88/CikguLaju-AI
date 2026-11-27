@@ -1434,6 +1434,8 @@ def create_blueprint():
             if len(found) != 1:
                 raise ValueError("English Lesson identity mismatch")
             return year, sub, unit, lesson, found[0]["lesson"]
+        if sub == "BM" and year == 2 and re.fullmatch(r"b[a-f0-9]{24}", lesson):
+            return year, sub, unit, lesson, None
         if sub == "MUZIK" and year in range(2, 7):
             return year, sub, unit, lesson, None
         if sub == "ARAB" and year == 3 and (unit, lesson) in ARAB_YEAR3_MEDIA:
@@ -1467,6 +1469,15 @@ def create_blueprint():
         except (ValueError, TypeError):
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
+            if sub == "BM":
+                from urllib.parse import urlencode
+                from web.bm_worksheet_complete_pdf import complete_bm_pdf
+                if complete_bm_pdf(year, unit, token) is None:
+                    return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
+                params = urlencode({"year": year, "subject": sub, "unit": unit, "lesson": token})
+                return jsonify({"status": "SUMBER_DISAHKAN", "items": [{
+                    "type": "worksheet", "title": "Latihan PdP — 3 aras + panduan guru",
+                    "url": "/api/web/rph/worksheet-pdf?" + params, "action": "Download PDF"}]})
             if sub == "ARAB":
                 from web.native_telegram_other_draft_client import draft_available
 
@@ -1669,11 +1680,17 @@ def create_blueprint():
         if error is not None:
             return error
         try:
-            year, sub, unit, _, number = _extra_selection()
-            if sub != "ENGLISH":
+            year, sub, unit, token, number = _extra_selection()
+            if sub == "BM":
+                from web.bm_worksheet_complete_pdf import complete_bm_pdf
+                result = complete_bm_pdf(year, unit, token)
+                data, filename = result if result is not None else (None, "")
+            elif sub == "ENGLISH":
+                from web.worksheet_complete_pdf import complete_pdf
+                data = complete_pdf(year, number, unit)
+                filename = f"CIKGULAJU_LATIHAN_EN_Y{year}_L{number:03d}.pdf"
+            else:
                 raise ValueError("Wrong worksheet source")
-            from web.worksheet_complete_pdf import complete_pdf
-            data = complete_pdf(year, number, unit)
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan latihan tidak sah atau fail belum disahkan"}), 404
         except Exception:
@@ -1682,7 +1699,7 @@ def create_blueprint():
             return jsonify({"error": "Latihan belum tersedia untuk Lesson ini"}), 404
         return send_file(BytesIO(data), mimetype="application/pdf",
                          as_attachment=True, conditional=False,
-                         download_name=f"CIKGULAJU_LATIHAN_EN_Y{year}_L{number:03d}.pdf")
+                         download_name=filename)
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
