@@ -1,0 +1,821 @@
+{
+  "status": "DRAFT_SOURCE64_ONLY",
+  "source_catalog_sha": "b29683bffc0f5c72a9e1c69cf7d9a5dada22d8a9",
+  "source_archive_sha256": "b1ae8dcab0894bacc894d7fb310ff5ece27a1077e84846a64a86a61235d3a8ef",
+  "combined_pdf_drive_id": "1K-Jamc8pLD163y0rsg2O-P2YHoM-29SN",
+  "dk_drive_id": "1EMxszL78CiPDVRiD_LqUCIijAuHMEFx1",
+  "notes": "Individual source lessons 33–64 and matching DK SP notes inspected. Proposed objectives are not applied to complete originals. 29 separate supplement records still required for RPT93; no release.",
+  "records": [
+    {
+      "source_lesson": 33,
+      "source_catalog_codes": [
+        "4.1.1"
+      ],
+      "source_pdf_page": 33,
+      "source_word_sha256": "4bf03b3029719401fbfc4d5da1cbfa4d9c964d2133200e6e45b823034333dc3c",
+      "source_pdf_sha256": "74144c68b0b9cb89787b4918c15313d636b98762cbef3a1e317ee841ee2c271a",
+      "source_activity_titles": [
+        "Perhatikan Contoh",
+        "Kelaskan Lapan Kad",
+        "Terangkan Pilihan"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan tumbuhan dan meja; murid meramal yang hidup.",
+        "exploration": "Murid mengasingkan lapan kad manusia, haiwan, tumbuhan dan objek bukan hidup bersama Guru B.",
+        "explanation": "Guru A menerangkan ciri benda hidup dan bukan hidup berdasarkan pemerhatian.",
+        "elaboration": "Pasangan memilih contoh setiap kategori dan memberi sebab tanpa mengganggu hidupan.",
+        "evaluation": "Kedua-dua guru menyemak enam daripada lapan padanan dan sebab bagi setiap kategori."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 34,
+      "source_catalog_codes": [
+        "4.1.2",
+        "4.1.3"
+      ],
+      "source_pdf_page": 34,
+      "source_word_sha256": "844488fbe4d81a9e86cc82a3ca723099d69e84d2f453cfbc6184ffe601854863",
+      "source_pdf_sha256": "0496ef5ed814b08916dba7ceb517f9aa26e31dfe021860d07cc49e28a62fd450",
+      "source_activity_titles": [
+        "Perhati Ciri",
+        "Padankan Hidupan",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A mempamerkan pokok dan kipas; murid meramal perbezaan.",
+        "exploration": "Murid membandingkan kad ciri dan memadankan keperluan manusia, haiwan serta tumbuhan.",
+        "explanation": "Guru A menjelaskan ciri hidup; Guru B membezakan keperluan asas manusia/haiwan dan tumbuhan.",
+        "elaboration": "Murid membina carta dua lajur dan memadankan air, udara, makanan, tempat perlindungan atau cahaya mengikut hidupan.",
+        "evaluation": "Kedua-dua guru menilai dua perbezaan ciri dan tiga padanan keperluan asas."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 35,
+      "source_catalog_codes": [
+        "4.1.4"
+      ],
+      "source_pdf_page": 35,
+      "source_word_sha256": "795858a8d0d74b987e54572d8a725f5f9314179ff9bca6f098f3a4751e8fecaa",
+      "source_pdf_sha256": "3f7f32ec82d0373817e6540e57329d2f666c9ca27aa368ca7d0e741195c01884",
+      "source_activity_titles": [
+        "Latih Sebutan",
+        "Ajuk Pic",
+        "Nyanyi Mengikut Tempo"
+      ],
+      "phases": {
+        "engagement": "Guru A memperdengarkan melodi asli tentang hidupan.",
+        "exploration": "Murid menyebut vokal dan tiga frasa tentang manusia, tumbuhan dan haiwan.",
+        "explanation": "Guru A memodelkan sebutan dan tempo; Guru B membimbing ajukan pic.",
+        "elaboration": "Murid menyanyi rangkap pilihan mengikut ketukan sederhana dan menerima maklum balas.",
+        "evaluation": "Kedua-dua guru menilai tiga frasa jelas, pic dan tempo."
+      },
+      "proposed_objective": "Murid menyanyikan tiga frasa lagu berkaitan hidupan dengan sebutan dan pic betul mengikut tempo.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 36,
+      "source_catalog_codes": [
+        "4.1.5"
+      ],
+      "source_pdf_page": 36,
+      "source_word_sha256": "c62a29033dfd1ea08fbf0333428e2b3c705d5463c019abedc2c72c7aef7e30b5",
+      "source_pdf_sha256": "b6f3a0db63052b330fdb9722a2554262a3cdc3abc21c3e4d2c099c7b2a972016",
+      "source_activity_titles": [
+        "Padankan Fungsi",
+        "Keperluan Tumbuhan",
+        "Terangkan Sebab"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar pokok dan haiwan; murid meneka keperluannya.",
+        "exploration": "Murid memadankan kad udara, makanan, air dan perlindungan dengan fungsi serta meneliti kad tumbuhan.",
+        "explanation": "Guru A menerangkan fungsi keperluan manusia dan haiwan; Guru B menjelaskan air, udara dan cahaya bagi tumbuhan.",
+        "elaboration": "Murid memilih dua hidupan dan menerangkan hubungan keperluan dengan kepentingannya.",
+        "evaluation": "Kedua-dua guru menyemak empat padanan fungsi dan dua hubungan sebab."
+      },
+      "proposed_objective": "Murid memadankan empat keperluan asas dengan fungsi dan menerangkan dua hubungan sebab.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 37,
+      "source_catalog_codes": [
+        "4.1.6"
+      ],
+      "source_pdf_page": 37,
+      "source_word_sha256": "9c67a0d4b01c9cfc29af76fc1da755ed1d9aed37abe47c4a9dc73d1a7ba6ee13",
+      "source_pdf_sha256": "9c21ae3930b9827ae095c5be655eeb5c4fe964b809f8bd8a19dd4ebc5eb09906",
+      "source_activity_titles": [
+        "Kenali Ciri Bersih",
+        "Fahami Sebab-Akibat",
+        "Pilih Amalan Selamat"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar air bersih dan tercemar; murid meramal risiko.",
+        "exploration": "Murid memadankan gambar makanan bertutup, air minuman selamat dan udara bersih.",
+        "explanation": "Guru A menjelaskan sebab-akibat pencemaran; Guru B membimbing pilihan tanpa merasa sampel.",
+        "elaboration": "Murid menyusun kad tindakan mencuci tangan, menutup makanan dan menjauhi asap.",
+        "evaluation": "Kedua-dua guru menyemak tiga pilihan bersih dan dua sebab kepentingannya."
+      },
+      "proposed_objective": "Murid mengenal pasti tiga pilihan makanan, air dan udara bersih serta menerangkan dua sebab kepentingannya.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 38,
+      "source_catalog_codes": [
+        "4.1.7",
+        "4.1.8"
+      ],
+      "source_pdf_page": 38,
+      "source_word_sha256": "af46cffd54cf3fcdfe4fc69c6b4a69d9b975da175449b4098e1f561fbf902f67",
+      "source_pdf_sha256": "813d7518dcf7c5a378ec7220d13d41d9025582e8e2305f3441c76f8910cb74ef",
+      "source_activity_titles": [
+        "Kenali Kehendak",
+        "Asingkan Kad",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar makanan dan mainan; murid meneka yang diperlukan untuk hidup.",
+        "exploration": "Murid menyebut tiga kehendak dan mengasingkan lapan kad dengan Guru B.",
+        "explanation": "Guru A menerangkan keperluan asas untuk hidup; Guru B membimbing perbezaan daripada kehendak.",
+        "elaboration": "Murid memilih makanan atau mainan bagi watak rekaan dan memberikan dua sebab keutamaan.",
+        "evaluation": "Kedua-dua guru menyemak tiga kehendak, enam daripada lapan klasifikasi dan dua sebab."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 39,
+      "source_catalog_codes": [
+        "4.1.9"
+      ],
+      "source_pdf_page": 39,
+      "source_word_sha256": "7319d3aaf6191a66d08693c5b54ec6c6a1c2c35b1ea79673bf31e580f151b584",
+      "source_pdf_sha256": "59547265db0a95b8dd9562f8f8adbacc1506ea0a177cbf0a4c76d972445a6bbd",
+      "source_activity_titles": [
+        "Dengar dan Nama",
+        "Kenal Arah Bunyi",
+        "Terangkan Dapatan"
+      ],
+      "phases": {
+        "engagement": "Guru A memperdengarkan bunyi alam, manusia dan kenderaan pada aras selamat.",
+        "exploration": "Murid meneka sumber dan menunjukkan arah suara guru dari tempat duduk.",
+        "explanation": "Guru A menerangkan kepelbagaian sumber bunyi; Guru B membimbing pengecaman arah.",
+        "elaboration": "Pasangan memilih tiga bunyi dan menerangkan sumber serta arah yang didengar.",
+        "evaluation": "Kedua-dua guru menyemak tiga sumber dan dua arah bunyi."
+      },
+      "proposed_objective": "Murid mengenal pasti tiga sumber bunyi dan menunjukkan dua arah bunyi dengan tepat.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 40,
+      "source_catalog_codes": [
+        "4.1.10"
+      ],
+      "source_pdf_page": 40,
+      "source_word_sha256": "39b908cb778f0d9a43a9c9e8e246d6d5a7098f8c5a25cee780e7010a88a61fdf",
+      "source_pdf_sha256": "0f512a33eacb556168dd7916e8d7730920e406afc3f2ac981b4642bcabf1a99c",
+      "source_activity_titles": [
+        "Kenal Cara",
+        "Cuba Alat Mudah",
+        "Padankan Tindakan"
+      ],
+      "phases": {
+        "engagement": "Guru A mengetuk kotak dan menepuk tangan perlahan.",
+        "exploration": "Murid mencuba tiga cara menghasilkan bunyi menggunakan bahan selamat.",
+        "explanation": "Guru A menunjukkan tiupan, ketukan, petikan, gesekan dan tepukan; Guru B menyelia aras bunyi.",
+        "elaboration": "Murid memadankan gambar tindakan dengan bunyi dan menunjukkan tiga cara.",
+        "evaluation": "Kedua-dua guru menyemak tiga cara penghasilan bunyi yang dikenal pasti dan ditunjukkan."
+      },
+      "proposed_objective": "Murid mengenal pasti dan menunjukkan tiga cara menghasilkan bunyi menggunakan bahan selamat.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 41,
+      "source_catalog_codes": [
+        "4.1.11",
+        "4.1.12"
+      ],
+      "source_pdf_page": 41,
+      "source_word_sha256": "147fd1ad9a268ca52c00fd6db2fdd00653144d4769d10c44204e5984d11706a8",
+      "source_pdf_sha256": "411fc154a084f2ca14b4391b4308d6a3c046b8757db25db392d9972cd4c39225",
+      "source_activity_titles": [
+        "Dengar dan Ajuk",
+        "Bina Gabungan",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A mencontohkan bunyi hujan dan kenderaan dengan suara biasa.",
+        "exploration": "Murid mengajuk bunyi dan meneroka gabungan kotak, kertas serta bekas kosong.",
+        "explanation": "Guru A membimbing dua bunyi suara; Guru B memodelkan gabungan bunyi bahan bukan alat muzik.",
+        "elaboration": "Kumpulan mencipta persembahan dua gabungan bunyi asal pada aras selamat dan menerangkan perubahan bunyi.",
+        "evaluation": "Kedua-dua guru menyemak dua bunyi suara dan dua gabungan bunyi bahan."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 42,
+      "source_catalog_codes": [
+        "4.1.13"
+      ],
+      "source_pdf_page": 42,
+      "source_word_sha256": "844294be82a735ac959fa37648d26806f995ba5c42edcc9b235bc79c19691251",
+      "source_pdf_sha256": "d7f0f658b9cca99823bb7ae2fa07dc0a4372cea7f3081af0f1fc2b178e07bca2",
+      "source_activity_titles": [
+        "Kenal Kebaikan",
+        "Kenal Risiko",
+        "Pilih Tindakan"
+      ],
+      "phases": {
+        "engagement": "Guru A memainkan contoh loceng dan rakaman bunyi bising pada aras selamat.",
+        "exploration": "Murid memadankan siren dan loceng dengan tujuan serta mengelaskan situasi bunyi bising.",
+        "explanation": "Guru A menerangkan bunyi berfaedah; Guru B membimbing kesan bunyi kuat tanpa pendedahan sebenar.",
+        "elaboration": "Murid memilih tindakan menjauhi bunyi terlalu kuat dan mendengar arahan keselamatan.",
+        "evaluation": "Kedua-dua guru menyemak empat contoh bunyi dan dua kesan atau tujuan."
+      },
+      "proposed_objective": "Murid mengelaskan empat contoh bunyi dan menerangkan dua kesan atau tujuan bunyi.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 43,
+      "source_catalog_codes": [
+        "4.1.14"
+      ],
+      "source_pdf_page": 43,
+      "source_word_sha256": "ab11ff2dc6031009346a8c387f1382f21b80ecf7ddb33e9476e67f61cf866f21",
+      "source_pdf_sha256": "d95029e330b21335534028da7d783b2fbfbcbffd7014d877a5e45fa935b3e15c",
+      "source_activity_titles": [
+        "Nama Perasaan",
+        "Terangkan Petunjuk",
+        "Pilih Ayat Sesuai"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan enam kad wajah; murid memilih nama emosi.",
+        "exploration": "Murid mengenal gembira, sedih, malu, takut, cemas dan marah melalui ekspresi watak.",
+        "explanation": "Guru A membimbing kosa kata emosi; Guru B memodelkan ayat kendiri tanpa paksaan berkongsi pengalaman.",
+        "elaboration": "Murid melengkapkan dua ayat kendiri melalui kad pilihan atau situasi rekaan; pilihan berkongsi secara sukarela.",
+        "evaluation": "Kedua-dua guru menyemak empat daripada enam nama emosi dan dua ayat munasabah."
+      },
+      "proposed_objective": "Murid menamakan empat daripada enam emosi dan memerihalkan emosi kendiri melalui dua ayat pilihan; respons boleh menggunakan situasi rekaan.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 44,
+      "source_catalog_codes": [
+        "4.1.15"
+      ],
+      "source_pdf_page": 44,
+      "source_word_sha256": "cc251032d7ec41e9a7060ccbe0d3ccf1a73d0b77b42e946c9dac492765440f82",
+      "source_pdf_sha256": "40bfcad310cea9038a3ba13d6e2d8144d2ecc870f51890d041e46bb336c30dec",
+      "source_activity_titles": [
+        "Perhatikan Situasi",
+        "Banding Jawapan",
+        "Hormati Pilihan"
+      ],
+      "phases": {
+        "engagement": "Guru A membacakan cerita watak menerima hadiah; murid memilih emosi.",
+        "exploration": "Murid memadankan tiga cerita rekaan dengan kad emosi yang mungkin.",
+        "explanation": "Guru A menjelaskan bahawa respons emosi boleh berbeza; Guru B membimbing bahasa empati.",
+        "elaboration": "Murid membandingkan dua respons bagi satu situasi dan memilih ayat hormat.",
+        "evaluation": "Kedua-dua guru menyemak tiga padanan munasabah dan satu perbezaan respons."
+      },
+      "proposed_objective": "Murid memadankan tiga situasi dengan emosi munasabah dan mengakui satu perbezaan respons.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 45,
+      "source_catalog_codes": [
+        "4.1.16",
+        "4.1.17"
+      ],
+      "source_pdf_page": 45,
+      "source_word_sha256": "f7c723d12a75da808e9537467d1c6586f3b4e22b46951694f6c7d3d07db7dab0",
+      "source_pdf_sha256": "54c552695316079f0dec03bafd20962b2267c65e9f2bccb8b4d8e9d0d5019bdc",
+      "source_activity_titles": [
+        "Pilih Strategi",
+        "Lakar Pilihan",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan watak kehilangan bekal; murid mencadangkan bantuan.",
+        "exploration": "Murid memadankan kad emosi dengan tindakan selamat dan memilih emosi untuk dilakar.",
+        "explanation": "Guru A membimbing cara mengurus emosi; Guru B memodelkan lakaran bebas menggunakan bahan selamat.",
+        "elaboration": "Murid memilih dua tindakan mengurus emosi dan menghasilkan satu lakaran; boleh menggunakan watak rekaan.",
+        "evaluation": "Kedua-dua guru menyemak dua strategi dan satu lakaran tanpa memaksa pendedahan peribadi."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 46,
+      "source_catalog_codes": [
+        "4.1.18"
+      ],
+      "source_pdf_page": 46,
+      "source_word_sha256": "062cd7458c0a9aaa2d19acde0b9caf7aae3b8e8fb7f8a40b97e308855fbae19e",
+      "source_pdf_sha256": "35cc1e60d603b21341c126492f45eb20727531a1a68f6e2648af063e2daec9a6",
+      "source_activity_titles": [
+        "Sebut dan Fahami",
+        "Ajuk Pic Ringkas",
+        "Nyanyi Berirama"
+      ],
+      "phases": {
+        "engagement": "Guru A memperdengarkan melodi asli tentang gembira, sedih dan tenang.",
+        "exploration": "Murid menyebut vokal dan tiga kata emosi serta mengajuk dua baris melodi.",
+        "explanation": "Guru A memodelkan sebutan dan tempo; Guru B membimbing pic sesuai suara kanak-kanak.",
+        "elaboration": "Murid menyanyi satu rangkap dengan tepukan perlahan dan ikon emosi.",
+        "evaluation": "Kedua-dua guru menyemak tiga kata jelas, pic dan tempo."
+      },
+      "proposed_objective": "Murid menyanyikan satu rangkap lagu emosi dengan tiga kata jelas, pic dan tempo yang betul.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 47,
+      "source_catalog_codes": [
+        "5.1.1"
+      ],
+      "source_pdf_page": 47,
+      "source_word_sha256": "0f889c37f2e75f386cd0eb8d138ae0e87b02800219e9b0a76a8eb0aabff15359",
+      "source_pdf_sha256": "e9bb88b549b5326054901e9e517b1243d217d04bf6624c440687503a647c9df0",
+      "source_activity_titles": [
+        "Perhati Sumber",
+        "Kelaskan Kad",
+        "Terangkan Pilihan"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar matahari, lilin dan lampu suluh tanpa api sebenar.",
+        "exploration": "Murid memerhati dan mengasingkan enam kad sumber dan bukan sumber cahaya.",
+        "explanation": "Guru A menerangkan bahawa sumber menghasilkan cahaya; Guru B membimbing padanan gambar.",
+        "elaboration": "Murid memilih tiga sumber cahaya dan menyatakan kegunaan mudah.",
+        "evaluation": "Kedua-dua guru menyemak empat daripada enam klasifikasi dan tiga sumber."
+      },
+      "proposed_objective": "Murid mengelaskan empat daripada enam kad dan menamakan tiga sumber cahaya.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 48,
+      "source_catalog_codes": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "source_pdf_page": 48,
+      "source_word_sha256": "43992feeed9b4405a763050285fd8fee73e845eca0e87c10a895f549ba7483d9",
+      "source_pdf_sha256": "a6cd72ac972998af64e3d701da3af58c1fc8e3ce3e64025904bca0c044518de4",
+      "source_activity_titles": [
+        "Fahami Penglihatan",
+        "Pilih Keadaan Sesuai",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A memaparkan ilustrasi bilik terang dan gelap.",
+        "exploration": "Murid membandingkan gambar membaca dan berjalan dalam dua keadaan dengan Guru B.",
+        "explanation": "Guru A menerangkan cahaya membantu melihat; Guru B membimbing perbandingan keselamatan aktiviti.",
+        "elaboration": "Murid mengelaskan enam kad dan menerangkan dua perbezaan terang-gelap melalui gambar sahaja.",
+        "evaluation": "Kedua-dua guru menyemak dua kepentingan cahaya dan dua perbezaan aktiviti."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 49,
+      "source_catalog_codes": [
+        "5.1.4"
+      ],
+      "source_pdf_page": 49,
+      "source_word_sha256": "d50ad44abb991a7236b39c3a5e99bb917cd73d048a517c8e6170f30e65f50df6",
+      "source_pdf_sha256": "e050da73f337360d6af3b1363607e06b4fc04cc1e760e064de83150ace2786aa",
+      "source_activity_titles": [
+        "Kenali Kesan",
+        "Pilih Amalan Sihat",
+        "Bina Peringatan"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar tablet dalam pencahayaan berbeza.",
+        "exploration": "Murid memadankan kad mata letih, tidak selesa dan sakit kepala dengan situasi penggunaan skrin.",
+        "explanation": "Guru A membimbing kesan penggunaan skrin; Guru B menerangkan jarak, rehat dan pencahayaan sesuai.",
+        "elaboration": "Murid membina kad peringatan berehat daripada skrin dan meminta bantuan jika tidak selesa.",
+        "evaluation": "Kedua-dua guru menyemak tiga kesan dan dua amalan penjagaan mata."
+      },
+      "proposed_objective": "Murid menyatakan tiga kesan penggunaan skrin terhadap keselesaan mata dan memilih dua amalan penjagaan mata.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 50,
+      "source_catalog_codes": [
+        "5.1.5"
+      ],
+      "source_pdf_page": 50,
+      "source_word_sha256": "40143103fdd2ec44dbecfce638e15e984b6c18883e61b034659d938c67a72085",
+      "source_pdf_sha256": "ff4add8d070c64edf1a4ac47f11c35fee475efba2d509a0ceac2d9229ae94677",
+      "source_activity_titles": [
+        "Latih Vokal",
+        "Ajuk Melodi",
+        "Nyanyi Ikut Tempo"
+      ],
+      "phases": {
+        "engagement": "Guru A memperdengarkan melodi asli tentang cahaya.",
+        "exploration": "Murid berlatih vokal serta menyebut terang, lampu dan matahari.",
+        "explanation": "Guru A membimbing tempo dan sebutan; Guru B memodelkan corak pic.",
+        "elaboration": "Murid menyanyikan satu rangkap dengan ketukan yang ditetapkan.",
+        "evaluation": "Kedua-dua guru menyemak tiga perkataan jelas, satu corak pic dan tempo."
+      },
+      "proposed_objective": "Murid menyanyikan rangkap berkaitan cahaya dengan tiga perkataan jelas, pic dan tempo yang betul.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 51,
+      "source_catalog_codes": [
+        "5.1.6",
+        "5.1.7"
+      ],
+      "source_pdf_page": 51,
+      "source_word_sha256": "4cd7abc7140b2e4324ca3fe3136c372414d631145e03a4a1ebaee52789f953db",
+      "source_pdf_sha256": "a8c10d12dcd786f5cf35de06edf106e4f88b7b083063ddd99a4a74e2b7cc8bd9",
+      "source_activity_titles": [
+        "Kenal Kelajuan",
+        "Perhati Penggunaan Cahaya",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A memperdengarkan muzik asli perlahan dan sederhana.",
+        "exploration": "Murid mencuba dua gerakan selamat; Guru B menunjukkan gambar wayang kulit Malaysia dan tanglung dari luar negara.",
+        "explanation": "Guru A membimbing gerak berdasarkan muzik; Guru B menerangkan peranan cahaya pada kedua-dua kraf.",
+        "elaboration": "Murid bergerak mengikut ketukan dan memadankan dua kraf dengan kegunaan cahaya tanpa api atau kelipan.",
+        "evaluation": "Kedua-dua guru menyemak dua gerakan dan dua kraf Malaysia serta luar negara."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 52,
+      "source_catalog_codes": [
+        "5.1.8"
+      ],
+      "source_pdf_page": 52,
+      "source_word_sha256": "580fa0bbbbf653c10916bbcb60feb4b49e3871b87a36685d18145f483fec4266",
+      "source_pdf_sha256": "ecc220019b4f3c4390359e49a0c31aa92da235cfb470dc9b0eb16c101117a5aa",
+      "source_activity_titles": [
+        "Rancang Bentuk",
+        "Bina Kraf",
+        "Uji Cahaya"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan contoh tanglung LED atau figura wayang kulit.",
+        "exploration": "Murid memilih lakaran dan menyusun bahan kertas selamat.",
+        "explanation": "Guru A menunjukkan teknik binaan; Guru B mengurus gunting dan sumber LED.",
+        "elaboration": "Murid membina kraf dan memerhati kesan cahaya atau bayang-bayang dengan bimbingan.",
+        "evaluation": "Kedua-dua guru menyemak satu kraf dan satu penerangan hubungan cahaya dengan hasil."
+      },
+      "proposed_objective": "Murid menghasilkan satu kraf berkaitan sumber cahaya dan menerangkan satu kesan cahaya pada kraf.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 53,
+      "source_catalog_codes": [
+        "5.2.1"
+      ],
+      "source_pdf_page": 53,
+      "source_word_sha256": "94eaa7566166dbafe95619a368fee309a6dd7eadbad19462efe20a57a81329c7",
+      "source_pdf_sha256": "5c40e47c71097e4718b209c495b0a56fc03e5f528ea02bf22b0d4081c89723e9",
+      "source_activity_titles": [
+        "Kenal Konsep",
+        "Perhati Gambar",
+        "Pilih Contoh"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar menara jam, jambatan, tugu dan bentuk alam.",
+        "exploration": "Murid mengelaskan gambar mercu tanda setempat kepada alam atau binaan.",
+        "explanation": "Guru A menerangkan konsep mercu tanda; Guru B membimbing pilihan berasaskan lokaliti sekolah.",
+        "elaboration": "Murid memilih contoh setempat yang guru sahkan tanpa menyatakan alamat peribadi.",
+        "evaluation": "Kedua-dua guru menyemak tiga contoh mercu tanda dan satu sebab."
+      },
+      "proposed_objective": "Murid mengenal pasti tiga contoh mercu tanda setempat dan menyatakan satu sebab pemilihan.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 54,
+      "source_catalog_codes": [
+        "5.2.2",
+        "5.2.3"
+      ],
+      "source_pdf_page": 54,
+      "source_word_sha256": "eff2db12fb0c5a5599da1f4d56db84b72468600246ab479354be8763871f9601",
+      "source_pdf_sha256": "94efc5513574fcf44ae8483c0d1e7ce12595999e434db161b7d315adfe062afc",
+      "source_activity_titles": [
+        "Kenal Nama",
+        "Padankan Nama",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan gambar Menara Berkembar Petronas, Jambatan Pulau Pinang dan Gunung Kinabalu.",
+        "exploration": "Murid memadankan tiga mercu tanda Malaysia dan dua luar negara dengan kad nama.",
+        "explanation": "Guru A menerangkan contoh Malaysia; Guru B membimbing contoh Piramid Giza dan Menara Eiffel.",
+        "elaboration": "Murid mengasingkan gambar Malaysia dan luar negara serta membandingkan rupa satu pasangan.",
+        "evaluation": "Kedua-dua guru menyemak tiga mercu tanda Malaysia dan dua luar negara."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 55,
+      "source_catalog_codes": [
+        "5.2.4"
+      ],
+      "source_pdf_page": 55,
+      "source_word_sha256": "8f670eef0f644940511e9e11d81de4ec1230a32ea37459c9f85aea0bf37cf9bb",
+      "source_pdf_sha256": "41c96009a4688fc50e667299b423d6b9b16fb95af1708d796f302169c7d44252",
+      "source_activity_titles": [
+        "Sebut Nama",
+        "Ajuk Pic",
+        "Nyanyi Bersama"
+      ],
+      "phases": {
+        "engagement": "Guru A memperdengarkan melodi asli yang menyebut mercu tanda Malaysia.",
+        "exploration": "Murid melatih vokal, menyebut nama mercu tanda dan mengajuk melodi.",
+        "explanation": "Guru A membimbing sebutan dan tempo; Guru B menunjukkan pic yang sesuai.",
+        "elaboration": "Murid menyanyi lagu asli guru sambil menunjuk gambar mercu tanda disebut.",
+        "evaluation": "Kedua-dua guru menyemak dua nama jelas, pic dan tempo."
+      },
+      "proposed_objective": "Murid menyanyikan lagu mercu tanda Malaysia dengan dua nama jelas, pic dan tempo betul.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 56,
+      "source_catalog_codes": [
+        "5.2.5"
+      ],
+      "source_pdf_page": 56,
+      "source_word_sha256": "a7f46efc0e8b8e762b1ed1519bfe57cff8d857cb719acb32ed6ddbef377822da",
+      "source_pdf_sha256": "31fadfd42f8a0de49feda26cef235aba3c56864b81d7228ec1583871cc2f2f40",
+      "source_activity_titles": [
+        "Kenal Bentuk",
+        "Lakar Mengikut Teknik",
+        "Terangkan Lukisan"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan lakaran menara dan jambatan.",
+        "exploration": "Murid mengenal garis tegak, lengkung dan bentuk asas pada gambar pilihan.",
+        "explanation": "Guru A memodelkan teknik grid, menekap atau titik; Guru B membimbing penggunaan alat.",
+        "elaboration": "Murid menghasilkan lukisan mercu tanda Malaysia dan menerangkan dua ciri rupa.",
+        "evaluation": "Kedua-dua guru menyemak satu lukisan yang dikenal pasti dan dua ciri."
+      },
+      "proposed_objective": "Murid melukis satu mercu tanda Malaysia yang boleh dikenal pasti dan menerangkan dua ciri rupa.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 57,
+      "source_catalog_codes": [
+        "5.2.6",
+        "5.2.7"
+      ],
+      "source_pdf_page": 57,
+      "source_word_sha256": "ee27e06999ac684ba4eb5b7be1d757f7923119f6ecb8e17cf5da452602e844ab",
+      "source_pdf_sha256": "9f3934c19f0d5ecc7cb1ddbe1e4744a8bde00ed589a752fe4c916c73b1ca0c7b",
+      "source_activity_titles": [
+        "Rancang Model",
+        "Susun Langkah",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan model binaan daripada kotak kecil.",
+        "exploration": "Murid memilih satu mercu tanda, dua bahan dan menyusun kad urutan kerja.",
+        "explanation": "Guru A membimbing binaan model; Guru B memodelkan penerangan langkah dan keselamatan.",
+        "elaboration": "Kumpulan membina model dan menyusun kad langkah mengikut turutan sebenar kerja.",
+        "evaluation": "Kedua-dua guru menyemak satu model siap serta tiga langkah berurutan."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 58,
+      "source_catalog_codes": [
+        "5.2.8"
+      ],
+      "source_pdf_page": 58,
+      "source_word_sha256": "48a4726d3cb501c1536d0db10ae3406e176250396890d94109c2d884b6578703",
+      "source_pdf_sha256": "9e62a748d60d8df1b7523cc9b89abb1f36ddca0aaff1acafa02aaa1be90bd28d",
+      "source_activity_titles": [
+        "Sedia Pameran",
+        "Persembahkan Model",
+        "Hargai Karya"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan contoh penerangan dua ayat bagi model.",
+        "exploration": "Murid menyusun model terdahulu di meja stabil dan menyediakan kad nama dengan Guru B.",
+        "explanation": "Guru A memodelkan penerangan nama, ciri dan langkah binaan; Guru B mengurus giliran.",
+        "elaboration": "Murid mempamerkan model, menerangkan maklumat dan memberi komen membina kepada rakan.",
+        "evaluation": "Kedua-dua guru menyemak model dipamerkan dan dua maklumat dijelaskan."
+      },
+      "proposed_objective": "Murid mempamerkan model mercu tanda dan menerangkan sekurang-kurangnya dua maklumat mengenainya.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 59,
+      "source_catalog_codes": [
+        "6.1.1"
+      ],
+      "source_pdf_page": 59,
+      "source_word_sha256": "9c9ae6e60a2a19cf09502b5a65675a5578f3548595bc480897aeca25c2abb40a",
+      "source_pdf_sha256": "9c5fc56af07010cf580bf7d441884a98becddfe14d5bdc7edafa254435356f97",
+      "source_activity_titles": [
+        "Imbas Tema",
+        "Kenal Masalah",
+        "Pilih Isu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan situasi sampah di kelas dan tumbuhan tidak disiram.",
+        "exploration": "Murid mengimbas Tema 1–5 dan membezakan masalah dengan perkara biasa melalui empat kad.",
+        "explanation": "Guru A membimbing pengecaman masalah; Guru B membantu murid memberikan sebab isu perlu ditangani.",
+        "elaboration": "Murid memilih satu masalah yang boleh ditangani secara selamat melalui projek kecil.",
+        "evaluation": "Kedua-dua guru menyemak dua masalah dikenal pasti dan satu sebab."
+      },
+      "proposed_objective": "Murid mengenal pasti dua masalah daripada Tema 1–5 dan menyatakan satu sebab masalah perlu ditangani.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 60,
+      "source_catalog_codes": [
+        "6.1.2",
+        "6.1.3"
+      ],
+      "source_pdf_page": 60,
+      "source_word_sha256": "d413b2a92960866b3eaebaaff2621d566fa5916c821fd663339e62549b8f320c",
+      "source_pdf_sha256": "22b1ba632841bcc50cac7998c9e466c7613cdc5585880ac1e7cfdccd6bbce27a",
+      "source_activity_titles": [
+        "Beri Idea",
+        "Susun Langkah",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan masalah lantai kelas berselerak; murid mencadangkan tindakan.",
+        "exploration": "Murid menghasilkan dua idea bagi masalah terdahulu dan menilai bahan serta sumber bersama Guru B.",
+        "explanation": "Guru A membimbing pilihan idea; Guru B memodelkan pelan bahan, tugas dan urutan.",
+        "elaboration": "Kumpulan memilih satu penyelesaian dan menyediakan tiga langkah yang boleh dilaksanakan.",
+        "evaluation": "Kedua-dua guru menyemak dua idea dan tiga langkah perancangan."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 61,
+      "source_catalog_codes": [
+        "6.1.4"
+      ],
+      "source_pdf_page": 61,
+      "source_word_sha256": "334e7db48be553ff05b16c9b87d215474ea96f65184e902126c4dbed5babce5a",
+      "source_pdf_sha256": "2296500225247ed941c4dfe966509a91bbe929c8117ca8b7864d5f62d8272ef3",
+      "source_activity_titles": [
+        "Sedia Bahan",
+        "Bina Produk",
+        "Uji dan Baiki"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan bahan kitar semula bersih bagi projek yang telah dirancang.",
+        "exploration": "Murid menyemak pelan, memilih bahan selamat dan mengagih tugas bersama Guru B.",
+        "explanation": "Guru A menunjukkan teknik pembinaan sesuai; Guru B membimbing penggunaan alat.",
+        "elaboration": "Kumpulan menghasilkan produk, menguji kegunaan melalui situasi rekaan dan mencadangkan satu pembaikan.",
+        "evaluation": "Kedua-dua guru menyemak produk berfungsi mengikut tujuan dan satu pemerhatian ujian."
+      },
+      "proposed_objective": "Murid menghasilkan satu produk bagi masalah terpilih dan menjelaskan satu pemerhatian ujian.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 62,
+      "source_catalog_codes": [
+        "6.2.1"
+      ],
+      "source_pdf_page": 62,
+      "source_word_sha256": "3d02a7346b48c7a82fd73694398f60b127e4a91d193f0460915c7c3e478cc056",
+      "source_pdf_sha256": "ad8080141b73d049492aa87e49322681dd6f38f3c756c933f5403a4fa0ef616c",
+      "source_activity_titles": [
+        "Kenal Pilihan",
+        "Padankan Produk",
+        "Senarai Idea"
+      ],
+      "phases": {
+        "engagement": "Guru A mempamerkan gambar pameran, demonstrasi dan persembahan seni.",
+        "exploration": "Murid memadankan contoh produk dengan cara pembentangan yang sesuai.",
+        "explanation": "Guru A menerangkan ciri tiga bentuk pembentangan; Guru B membimbing pilihan mengikut produk.",
+        "elaboration": "Murid menyenaraikan dua pilihan pembentangan untuk produk kumpulan.",
+        "evaluation": "Kedua-dua guru menyemak tiga bentuk aktiviti dan dua pilihan."
+      },
+      "proposed_objective": "Murid mengenal pasti tiga bentuk pembentangan dan menyatakan dua pilihan untuk produk kumpulan.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    },
+    {
+      "source_lesson": 63,
+      "source_catalog_codes": [
+        "6.2.2",
+        "6.2.3"
+      ],
+      "source_pdf_page": 63,
+      "source_word_sha256": "f0b5c82ab1ab077810fdb525f999a8337217e129fec81a17ec4061a575c011ec",
+      "source_pdf_sha256": "6aee0e66ab9674216adebdf65733a1ef5d54a63369e50397e743add8eb65c343",
+      "source_activity_titles": [
+        "Semak Kekuatan",
+        "Sedia Bahan",
+        "Pengukuhan Bersepadu"
+      ],
+      "phases": {
+        "engagement": "Guru A menunjukkan produk dan dua cara mempersembahkannya.",
+        "exploration": "Murid meneliti minat, kekuatan dan sumber kumpulan dengan Guru B.",
+        "explanation": "Guru A membimbing pilihan berdasarkan kesesuaian; Guru B memodelkan agihan tugas dan latihan.",
+        "elaboration": "Kumpulan memilih satu cara, memberi alasan dan merancang bahan, penyampai serta latihan.",
+        "evaluation": "Kedua-dua guru menyemak satu pilihan bersebab dan tiga tugasan persediaan."
+      },
+      "proposed_objective": null,
+      "note": "Preserve exact source objective and criteria; verify full individual record, teacher roles and DK notes before render.",
+      "status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "source_lesson": 64,
+      "source_catalog_codes": [
+        "6.2.4"
+      ],
+      "source_pdf_page": 64,
+      "source_word_sha256": "f298b0aa7ea915946a8183ed270cc007f6995eaf96667635e7e80b9666f942c8",
+      "source_pdf_sha256": "0b584f4256c9c17c3cb5b3a36c739e884ef88e39880a475a18021be68ec32510",
+      "source_activity_titles": [
+        "Buka Pameran",
+        "Bentang Hasil",
+        "Terima Maklum Balas"
+      ],
+      "phases": {
+        "engagement": "Guru A mengingatkan giliran, susunan stesen dan keselamatan.",
+        "exploration": "Murid menyiapkan label, produk dan stesen mengikut pelan bersama Guru B.",
+        "explanation": "Guru A menyemak cara menerangkan masalah dan fungsi produk; Guru B membimbing giliran serta soalan.",
+        "elaboration": "Kumpulan membentangkan produk mengikut bentuk yang dipilih dan menjawab satu soalan rakan.",
+        "evaluation": "Kedua-dua guru menyemak masalah, produk, dua penerangan dan satu respons."
+      },
+      "proposed_objective": "Murid membentangkan masalah dan produk, memberikan dua penerangan serta menjawab satu soalan.",
+      "note": "Original objective generic; proposed measurable objective from original criteria and DK; reconcile before release.",
+      "status": "HOLD_SCOPE_ALIGNMENT",
+      "ready": false
+    }
+  ],
+  "release": false
+}
