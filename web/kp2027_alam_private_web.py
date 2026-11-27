@@ -138,6 +138,7 @@ b.addEventListener('click',async()=>{if(l.disabled||!l.value)return;b.disabled=t
 
 def create_blueprint():
     from flask import Blueprint,current_app,jsonify,make_response,request,send_file
+    from web import kp2027_alam_5p_templates as five_p
     from web.rph_delivery_quota import authorize_rendered_document,has_active_paid_access
     from web.kp2027_pilot_teacher_fields import EXTRA_FIELDS, TeacherFieldError, personalize_approved_rph
     from web.kp2027_pdp_catalog import alam_approved_items
@@ -205,6 +206,7 @@ def create_blueprint():
         except (PilotUnavailable,SupplementUnavailable,ValueError,KeyError):
             return denied('Senarai PdP belum tersedia. Cuba lagi.',503,'ALAM_INVENTORY_UNAVAILABLE')
         return jsonify({'lessons':lessons,'items':items,'catalog_mode':'rpt93' if rpt_ready else 'source64',
+            'five_p_templates':five_p.enabled(),
             'source':'verified-private-alam-rpt93-v4' if rpt_ready else 'verified-private-kp2027-alam-v10'})
 
     @bp.post('/api/kp2027/sk/tahun-1/alam-dan-manusia/download')
@@ -266,4 +268,60 @@ def create_blueprint():
                  else f'CIKGULAJU_KP2027_ALAM_T1_LESSON{lesson:03d}.{ext}'),conditional=False)
         if remaining is not None:resp.headers['X-RPH-Trial-Remaining']=str(remaining)
         return resp
+    @bp.get('/kp2027/tahun-1/alam-dan-manusia/5p')
+    def page_5p():
+        if not five_p.enabled():return denied('RPH 5P belum diaktifkan.',404,'ALAM_5P_DISABLED')
+        config,account,error=account_for_request()
+        if error is not None:return error
+        res=make_response(five_p.PAGE)
+        res.headers['Content-Type']='text/html; charset=utf-8'
+        res.headers['Content-Security-Policy']=("default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'")
+        return res
+
+    @bp.get('/api/kp2027/sk/tahun-1/alam-dan-manusia/5p/available')
+    def available_5p():
+        if not five_p.enabled():return denied('RPH 5P belum diaktifkan.',404,'ALAM_5P_DISABLED')
+        config,account,error=account_for_request()
+        if error is not None:return error
+        try:items=five_p.catalog(config)
+        except PilotUnavailable:return denied('Senarai PdP 5P belum tersedia.',503,'ALAM_5P_UNAVAILABLE')
+        return jsonify({'items':items,'catalog_mode':'rpt93','template_only':False})
+
+    @bp.post('/api/kp2027/sk/tahun-1/alam-dan-manusia/5p/download')
+    def download_5p():
+        if not five_p.enabled():return denied('RPH 5P belum diaktifkan.',404,'ALAM_5P_DISABLED')
+        if request.headers.get('Origin')!=ORIGIN:return denied('Permintaan mestilah daripada Web CikguLaju.',403,'ORIGIN_REQUIRED')
+        if not request.is_json or not 0<(request.content_length or 0)<=1024:return denied('Pilihan PdP tidak sah.',400,'INVALID_REQUEST')
+        payload=request.get_json(silent=True)
+        if not isinstance(payload,dict) or not {'pdp','format'}.issubset(payload) or set(payload)-{'pdp','format'}-EXTRA_FIELDS:
+            return denied('Pilihan 5P tidak sah.',400,'INVALID_SELECTION')
+        pdp,fmt=payload['pdp'],payload['format']
+        if type(pdp) is not int or not 1<=pdp<=93 or not isinstance(fmt,str) or fmt not in FORMATS:
+            return denied('PdP belum tersedia.',404,'LESSON_NOT_AVAILABLE')
+        config,account,error=account_for_request()
+        if error is not None:return error
+        paid=has_active_paid_access(account)
+        if not paid and (type(account.get('free_remaining')) is not int or not 0<=account['free_remaining']<=10):
+            return denied('Baki janaan tidak dapat disahkan.',503,'TRIAL_UNVERIFIED')
+        if not paid and account['free_remaining']==0:
+            return denied('10 janaan percuma telah habis. Aktifkan langganan.',403,'FREE_TRIAL_EXHAUSTED')
+        try:
+            from web.kp2027_alam_5p_personalize import LayoutError
+            fields={key:payload[key] for key in EXTRA_FIELDS if key in payload}
+            document=five_p.render(config,pdp,fmt,fields)
+        except (TeacherFieldError,LayoutError) as exc:return denied(str(exc),400,'INVALID_TEACHER_FIELDS')
+        except (PilotUnavailable,OSError,RuntimeError,ValueError,KeyError,TypeError):return denied('Fail 5P tidak dapat disahkan.',503,'ALAM_5P_UNAVAILABLE')
+        remaining=None
+        if not paid:
+            try:charged=authorize_rendered_document(account,account['telegram_user_id'],document,
+                        config['supabase_url'],config['supabase_key'],debit=debit_shared_trial)
+            except Exception:return denied('Status kuota belum dapat disahkan.',503,'TRIAL_CHARGE_UNCONFIRMED')
+            if not charged['allowed']:return denied('Kuota percuma telah habis.',403,'FREE_TRIAL_EXHAUSTED')
+            remaining=charged['remaining']
+        ext,mime=FORMATS[fmt]
+        resp=send_file(BytesIO(document),mimetype=mime,as_attachment=True,
+                       download_name=f'CIKGULAJU_KP2027_ALAM_T1_PDP{pdp:03d}_5P.{ext}',conditional=False)
+        if remaining is not None:resp.headers['X-RPH-Trial-Remaining']=str(remaining)
+        return resp
+
     return bp
