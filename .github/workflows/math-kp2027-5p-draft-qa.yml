@@ -6,6 +6,11 @@ on:
       - 'tools/build_math_kp2027_5p_draft_qa.py'
       - 'audits/rph_5p_math_kp2027*'
       - '.github/workflows/math-kp2027-5p-draft-qa.yml'
+  pull_request:
+    paths:
+      - 'tools/build_math_kp2027_5p_draft_qa.py'
+      - 'audits/rph_5p_math_kp2027*'
+      - '.github/workflows/math-kp2027-5p-draft-qa.yml'
   workflow_dispatch:
 permissions:
   contents: read
