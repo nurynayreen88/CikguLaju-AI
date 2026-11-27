@@ -7,8 +7,9 @@ from functools import lru_cache
 from hashlib import sha256
 from pathlib import Path
 import json
+import os
 import re
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, build_opener
 from web.native_telegram_rph_client import BlockRedirects
 
@@ -53,14 +54,37 @@ def resolve(year, lesson, unit):
 
 @lru_cache(maxsize=16)
 def _pdf(file_id, digest, size):
-    # Fixed allowlisted origin, never a caller-provided URL. Reject redirects.
-    url = "https://drive.usercontent.google.com/download?" + urlencode({
-        "id": file_id, "export": "download", "confirm": "t"})
-    request = Request(url, headers={"Accept": "application/pdf"}, method="GET")
+    # Only server-side credentials and a fixed table; the Drive ID is
+    # retained as provenance, never used as a public download address.
+    base = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    secret = (os.environ.get("SUPABASE_SECRET_KEY", "") or
+              os.environ.get("SUPABASE_SERVICE_ROLE_KEY", ""))
+    origin = urlsplit(base)
+    if (origin.scheme != "https" or not re.fullmatch(r"[a-z0-9]+\.supabase\.co", origin.netloc)
+            or origin.path or origin.query or origin.fragment or not secret):
+        raise ValueError("Private worksheet source unavailable")
+    if not re.fullmatch(r"[a-f0-9]{64}", digest) or type(size) is not int or not 450 <= size <= MAX_SIZE:
+        raise ValueError("Invalid worksheet identity")
+    url = base + "/rest/v1/cikgulaju_worksheet_pdf_assets?" + urlencode({
+        "asset_sha256": "eq." + digest, "select": "asset_sha256,size_bytes,pdf_bytes", "limit": 2})
+    headers = {"apikey": secret, "Accept": "application/json"}
+    if not secret.startswith("sb_secret_"):
+        headers["Authorization"] = "Bearer " + secret
+    request = Request(url, headers=headers, method="GET")
     with build_opener(BlockRedirects()).open(request, timeout=12) as response:
-        if response.status != 200 or response.headers.get_content_type() != "application/pdf":
+        if response.status != 200 or response.headers.get_content_type() != "application/json":
             raise ValueError("Worksheet PDF unavailable")
-        raw = response.read(size + 1)
+        body = response.read(size * 2 + 1024)
+    rows = json.loads(body)
+    if not isinstance(rows, list) or len(rows) != 1:
+        raise ValueError("Worksheet asset missing or ambiguous")
+    row = rows[0]
+    if row.get("asset_sha256") != digest or row.get("size_bytes") != size:
+        raise ValueError("Worksheet metadata mismatch")
+    hex_bytes = row.get("pdf_bytes")
+    if not isinstance(hex_bytes, str) or not hex_bytes.startswith("\\x") or len(hex_bytes) != 2 + 2 * size:
+        raise ValueError("Worksheet encoding mismatch")
+    raw = bytes.fromhex(hex_bytes[2:])
     if len(raw) != size or not raw.startswith(b"%PDF-") or sha256(raw).hexdigest() != digest:
         raise ValueError("Worksheet integrity mismatch")
     return raw
