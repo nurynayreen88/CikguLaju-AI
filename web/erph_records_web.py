@@ -132,3 +132,11 @@ def save(record_id=None):
         return jsonify(item=rows[0]), 201 if record_id is None else 200
     except Exception:
         return failure('Rekod tidak dapat disimpan. Semak jika slot sudah wujud.',503)
+
+@bp.get('/erph')
+def page():
+    c,uid,error=account()
+    if error is not None:return error
+    from pathlib import Path
+    html=(Path(__file__).resolve().parents[1]/'web_v1_static_preview'/'erph_records.html').read_text(encoding='utf-8')
+    return Response(html,mimetype='text/html')
