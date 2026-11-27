@@ -96,7 +96,7 @@ class WebSidebarTabsTests(unittest.TestCase):
         }.items():
             expected.update((str(year),subject) for year in years)
         self.assertEqual({(year,subject) for year,subject,_ in rows},expected)
-        pk_rows=re.findall(r'<li data-pk-year="([1-6])" data-pk-subject="([^"]+)"><a href="(https://[^"]+\.pdf)"',self.html)
+        pk_rows=re.findall(r'<li data-pk-year="([1-6])" data-pk-subject="([^"]+)"><a href="(https://(?:[^"]+\.pdf|anyflip\.com/[a-z0-9]+/[a-z0-9]+/basic))"',self.html)
         kp_section=self.html.split('<ul id="curriculum-kp2027-list">',1)[1].split("</ul>",1)[0]
         self.assertEqual(kp_section.count("<li>"),5)
         self.assertEqual(kp_section.count("PDF sumber luar"),3)
@@ -111,10 +111,26 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn("https://drive.google.com/file/d/1bPu7O98BamtoSbKXBKVmCIfEIvNCE2b8/view",ppd_section)
         self.assertIn("Dokumen penataran daripada PPD — edisi akhir belum disahkan",self.html)
         self.assertIn("https://www.pendidik2u.my/dokumen-kurikulum-bahasa-melayu-tahun-1/",self.html)
-        self.assertEqual(len(pk_rows),16)
-        self.assertEqual(len({url for _,_,url in pk_rows}),16)
+        self.assertEqual(len(pk_rows),32)
+        self.assertEqual(len({url for _,_,url in pk_rows}),32)
         self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
             ("1","Asas 3M"),("2","Pengurusan Kehidupan"),("3","Asas 3M"),
+            ("1","Pendidikan Islam"),
+            ("2","Pendidikan Islam"),
+            ("3","Pendidikan Islam"),
+            ("4","Pendidikan Islam"),
+            ("5","Pendidikan Islam"),
+            ("6","Pendidikan Islam"),
+            ("1","Pendidikan Moral"),
+            ("3","Pendidikan Moral"),
+            ("5","Pendidikan Moral"),
+            ("2","Pendidikan Jasmani"),
+            ("3","Pendidikan Jasmani"),
+            ("5","Pendidikan Jasmani dan Pendidikan Kesihatan"),
+            ("4","Matematik"),
+            ("5","Matematik"),
+            ("2","Pendidikan Seni Kreatif"),
+            ("4","Pendidikan Sains, Sosial dan Alam Sekitar"),
             ("1","Pendidikan Seni Kreatif"),("1","Pengurusan Kehidupan"),("2","Asas 3M"),
             ("4","Pengurusan Kehidupan"),("4","Bahasa Melayu"),("6","Pengurusan Kehidupan"),("6","Pendidikan Seni Visual"),
             ("3","Pengurusan Kehidupan"),("3","Pendidikan Seni Kreatif"),
