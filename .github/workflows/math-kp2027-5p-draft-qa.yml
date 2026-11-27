@@ -4,11 +4,19 @@ on:
     branches: ['qa/math-kp2027-rph-5p-20261127']
     paths:
       - 'tools/build_math_kp2027_5p_draft_qa.py'
+      - 'web/kp2027_math_5p.py'
+      - 'web/kp2027_math_canary_web.py'
+      - 'tests/test_math_kp2027_5p_delivery_20261127.py'
+      - 'web_v1_static_preview/index.html'
       - 'audits/rph_5p_math_kp2027*'
       - '.github/workflows/math-kp2027-5p-draft-qa.yml'
   pull_request:
     paths:
       - 'tools/build_math_kp2027_5p_draft_qa.py'
+      - 'web/kp2027_math_5p.py'
+      - 'web/kp2027_math_canary_web.py'
+      - 'tests/test_math_kp2027_5p_delivery_20261127.py'
+      - 'web_v1_static_preview/index.html'
       - 'audits/rph_5p_math_kp2027*'
       - '.github/workflows/math-kp2027-5p-draft-qa.yml'
   workflow_dispatch:
@@ -26,7 +34,7 @@ jobs:
       - run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
-          pip install python-docx pymupdf
+          pip install -r requirements.txt python-docx pymupdf
       - run: PYTHONPATH=. python tools/build_math_kp2027_5p_draft_qa.py
       - name: Convert and validate every document
         run: |
@@ -61,6 +69,10 @@ jobs:
           print("Documents passing:",249-len(issues))
           assert not issues, issues[:10]
           PY
+      - name: Verify route security and legacy Math downloads
+        run: |
+          PYTHONPATH=. python -m unittest discover -s tests -p test_math_kp2027_5p_delivery_20261127.py -v
+          PYTHONPATH=. python -m unittest discover -s tests -p test_kp2027_math_canary_web.py -v
       - uses: actions/upload-artifact@v4
         if: always()
         with:
