@@ -77,8 +77,18 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('id="view-curriculum-docs" class="app-view" aria-labelledby="curriculum-docs-heading" hidden',self.html)
         for category in ("kp2027","kssr","dpk","pk"):
             self.assertIn('id="curriculum-docs-'+category+'" hidden',self.html)
-        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf|gurubesar\.my/dskp-[a-z0-9-]+-tahun-[1-6]-kssr/|sites\.google\.com/(?:moe-dl\.edu\.my|moe\.gov\.my)/[^"]+|www\.teacherfiera\.com/wp-content/uploads/2020/04/[^"]+\.pdf))"',self.html)
+        rows=re.findall(r'<li data-doc-year="([1-6])" data-doc-subject="([^"]+)"><a href="(https://(?:drive\.usercontent\.google\.com/download\?id=[A-Za-z0-9_-]+&amp;export=download&amp;confirm=t|drive\.google\.com/file/d/[A-Za-z0-9_-]+/view(?:\?usp=sharing)?|asiemodel\.net/wp-content/uploads/2022/08/[^"]+\.pdf|gurubesar\.my/dskp-[a-z0-9-]+-tahun-[1-6]-kssr/|sites\.google\.com/(?:moe-dl\.edu\.my|moe\.gov\.my)/[^"]+|www\.teacherfiera\.com/wp-content/uploads/2020/04/[^"]+\.pdf))"',self.html)
         self.assertEqual(len(rows),156)
+        direct_pattern=r'<a href="https://drive\.usercontent\.google\.com/download\?id=([A-Za-z0-9_-]+)&amp;export=download&amp;confirm=t" class="curriculum-direct-download" download rel="noopener noreferrer" title="Muat turun PDF dari koleksi CikguLaju">'
+        direct_ids=re.findall(direct_pattern,self.html)
+        self.assertEqual(len(direct_ids),153)
+        self.assertEqual(len(set(direct_ids)),153)
+        self.assertEqual(sum("drive.usercontent.google.com" in url for _,_,url in rows),137)
+        self.assertEqual(self.html.count('class="curriculum-direct-download"'),153)
+        self.assertIn("18TRqIUfNPsnyV-G_hk2BRpfExgZhyhv-",direct_ids)
+        self.assertIn("1dMLgOsc-grs4fR2WSvLNDk45Dtqh_yY_",direct_ids)
+        self.assertIn("1NvtZL2ytCS_Ni878No0TJueAtwhp5o3W",direct_ids)
+
         self.assertEqual(len({url for _,_,url in rows}),156)
         expected={(str(year),subject+" "+stream) for year in range(1,7)
                   for subject in ("Matematik","Sains")
@@ -99,8 +109,8 @@ class WebSidebarTabsTests(unittest.TestCase):
         pk_rows=re.findall(r'<li data-pk-year="([1-6])" data-pk-subject="([^"]+)"><a href="(https://(?:[^"]+\.pdf|anyflip\.com/[a-z0-9]+/[a-z0-9]+/basic|id\.scribd\.com/document/[0-9]+/[A-Za-z0-9-]+))"',self.html)
         kp_section=self.html.split('<ul id="curriculum-kp2027-list">',1)[1].split("</ul>",1)[0]
         self.assertEqual(kp_section.count("<li>"),5)
-        self.assertEqual(kp_section.count("PDF sumber luar"),3)
-        self.assertEqual(kp_section.count("halaman sumber"),2)
+        self.assertEqual(kp_section.count("PDF koleksi CikguLaju"),5)
+        self.assertNotIn("halaman sumber",kp_section)
         self.assertIn('https://bpk.moe.gov.my/kurikulum/kp2027',self.html)
         for name in ("Bahasa Melayu SK","Bahasa Melayu SJK","Matematik","Alam dan Manusia: Pembelajaran Bersepadu","Pendidikan Jasmani"):
             self.assertIn("DK "+name+" Tahun 1",kp_section)
