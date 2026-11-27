@@ -1,0 +1,46 @@
+name: SK RPH 5P V5 source and one-page layout QA
+on:
+  pull_request:
+    paths:
+      - 'web/rph_5p_v5_layout.py'
+      - 'tests/test_rph_5p_v5_layout_20261127.py'
+      - '.github/workflows/sk-rph-5p-v5-qa-20261127.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  layout:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation fonts-dejavu-core fonts-hosny-amiri
+          pip install python-docx pymupdf
+      - run: python -m unittest discover -s tests -p test_rph_5p_v5_layout_20261127.py -v
+      - run: |
+          python -m tests.test_rph_5p_v5_layout_20261127 --sample || PYTHONPATH=. python tests/test_rph_5p_v5_layout_20261127.py --sample
+          libreoffice -env:UserInstallation=file:///tmp/lo-5p-qa --headless --convert-to pdf --outdir qa_rph5p qa_rph5p/*.docx
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          with fitz.open("qa_rph5p/RPH_5P_MATEMATIK_T3.pdf") as doc:
+              assert len(doc)==1
+              p=doc[0]
+              assert abs(p.rect.width-595.28)<2 and abs(p.rect.height-841.89)<2
+              text=p.get_text()
+              for label in ("Penglibatan","Penerokaan","Penerangan","Pengembangan","Penilaian","Refleksi","3.1.2"):
+                  assert label in text, label
+              p.get_pixmap(matrix=fitz.Matrix(1.5,1.5)).save("qa_rph5p/page.png")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sk-rph-5p-v5-qa
+          path: qa_rph5p/
+          if-no-files-found: warn
+          retention-days: 7

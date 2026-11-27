@@ -1,0 +1,1308 @@
+{
+  "status": "SOURCE_ADAPTATION_DRAFT",
+  "policy": "Prefer adapting current verified complete RPH; keep all standards, measurable objective, criteria, official source references, materials, duration, assessment and teacher metadata; supplement only missing phase purpose. Do not add textbook pages, resources or standards without verification. Check original activity semantics and retain relevant steps; keep original RPH unchanged. Fail closed on source change or missing academic/textbook/layout QA.",
+  "source": {
+    "path": "web/kp2027_bm_rph_rpt_aligned_20261122.json",
+    "git_blob": "da4baead5f0e2f95f62b9e65e931a6d7baefba22",
+    "previous_companions_blob": "7ed68a47e6a123df2e2a0d3114d356a2810714ca"
+  },
+  "records": [
+    {
+      "group": "A",
+      "lesson": 1,
+      "sp_code": "1.1.1",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru mainkan bunyi hujan dan loceng tanpa menunjukkan gambar; murid meneka sumber.",
+        "exploration": "Murid mendengar lima bunyi dan memilih kad gambar sumber secara berkumpulan.",
+        "explanation": "Murid menerangkan petunjuk bunyi; guru membetulkan padanan dan menyebut nama sumber.",
+        "elaboration": "Dalam permainan detektif, murid memadankan semula kad apabila susunan bunyi diubah. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid memadankan lima bunyi secara individu; sekurang-kurangnya empat padanan betul."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 2,
+      "sp_code": "2.1.1",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru mengajuk bunyi hujan dan loceng; murid meneka sumber.",
+        "exploration": "Murid memilih kad sumber dan mencuba bunyinya dalam kumpulan kecil.",
+        "explanation": "Guru menunjukkan kawalan suara yang selamat; murid membandingkan ajukan dengan rakaman.",
+        "elaboration": "Murid bergilir mengajuk bunyi daripada kad rahsia untuk diteka rakan. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi yang dapat dikenal pasti."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 3,
+      "sp_code": "3.1.1",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan simbol tandas dan huruf pada kad; murid menyatakan yang dikenali.",
+        "exploration": "Murid mencari padanan kad simbol dan abjad sambil menyanyikan lagu abjad.",
+        "explanation": "Murid menyebut nama kad; guru menjelaskan perbezaan simbol dan abjad.",
+        "elaboration": "Murid memilih kad yang diminta dalam permainan padanan visual.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 4,
+      "sp_code": "4.1.1",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan corak garisan lurus, lengkung dan bentuk mudah.",
+        "exploration": "Murid mencuba gerakan tangan di udara sebelum melakar di kertas.",
+        "explanation": "Guru menunjukkan arah lakaran; murid menerangkan cara menyambung garisan.",
+        "elaboration": "Murid melengkapkan corak pada lembaran dan menghasilkan satu corak pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 5,
+      "sp_code": "3.1.2",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan kad ba dan ju; murid cuba membaca kedua-duanya.",
+        "exploration": "Murid menyusun kad suku kata mengikut irama untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing murid menggabungkan bunyi ba-ju dan membaca perkataan baju.",
+        "elaboration": "Murid menukar pasangan kad untuk membina serta membaca perkataan seperti buku dan bola.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 6,
+      "sp_code": "2.1.2",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Murid menyebut beberapa huruf bersama-sama mengikut irama lagu abjad.",
+        "exploration": "Murid memilih kad huruf dan suku kata terbuka lalu mencuba sebutan secara berpasangan.",
+        "explanation": "Guru menunjukkan sebutan yang betul; murid mengulang sambil membezakan bunyi.",
+        "elaboration": "Murid menyebut kad rawak dalam permainan giliran berirama.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan betul."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 7,
+      "sp_code": "1.1.1",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Murid mendengar dua bunyi berturutan dan meneka bunyi pertama.",
+        "exploration": "Murid menyusun kad sumber mengikut urutan rakaman pendek tanpa melihat gambar dahulu.",
+        "explanation": "Guru membimbing murid menjelaskan perbezaan bunyi panjang, pendek dan berulang.",
+        "elaboration": "Murid bermain bingo bunyi menggunakan lima kad sumber dalam susunan baharu. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid memadankan sekurang-kurangnya empat daripada lima bunyi yang dimainkan secara individu."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 8,
+      "sp_code": "2.1.1",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Murid mendengar bunyi kenderaan dan burung lalu cuba mengajuknya.",
+        "exploration": "Murid memilih kad gambar dan mencipta ajukan berbeza bersama pasangan.",
+        "explanation": "Guru membimbing kelantangan dan kejelasan; murid membetulkan ajukan selepas maklum balas.",
+        "elaboration": "Murid menghasilkan urutan bunyi untuk permainan teka bunyi dalam kumpulan. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 9,
+      "sp_code": "3.1.1",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan kad huruf dan simbol secara terbalik sebelum membukanya.",
+        "exploration": "Murid mengasingkan kad simbol daripada kad abjad pada dua ruang permainan.",
+        "explanation": "Murid menyebut nama kad pilihan; guru menerangkan padanan yang keliru.",
+        "elaboration": "Murid bermain cari kad berdasarkan sebutan nama abjad atau simbol daripada guru.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima kad yang ditunjukkan."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 10,
+      "sp_code": "4.1.1",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru mempamerkan corak berulang bulatan dan segi tiga; murid meneka bentuk seterusnya.",
+        "exploration": "Murid mencuba lakaran bentuk asas dengan arah dan saiz berbeza pada kertas.",
+        "explanation": "Guru menunjukkan cara mengawal pensel dan menghubungkan bentuk dengan kemas.",
+        "elaboration": "Murid membina corak berulang sendiri menggunakan dua bentuk pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas secara individu."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 11,
+      "sp_code": "3.1.2",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru memaparkan kad suku kata ku dan da; murid meneka perkataan.",
+        "exploration": "Murid mencari pasangan kad untuk membina perkataan mudah dalam permainan berkumpulan.",
+        "explanation": "Guru membimbing bacaan gabungan suku kata dan membetulkan sebutan yang tidak tepat.",
+        "elaboration": "Murid bertukar kad dengan pasangan lalu membaca perkataan baharu seperti kuda dan mata.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 12,
+      "sp_code": "2.1.2",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Murid menyambung irama abjad apabila guru berhenti pada satu huruf.",
+        "exploration": "Murid memilih kad suku kata daripada timbunan dan mencuba sebutan dengan pasangan.",
+        "explanation": "Guru membimbing kedudukan bunyi melalui contoh sebutan, murid mengulang dengan jelas.",
+        "elaboration": "Murid menjalankan permainan giliran menyebut huruf atau suku kata tanpa mengikut susunan asal.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 1,
+      "sp_code": "1.1.1",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru mainkan bunyi hujan dan loceng tanpa menunjukkan gambar; murid meneka sumber.",
+        "exploration": "Murid mendengar lima bunyi dan memilih kad gambar sumber secara berkumpulan.",
+        "explanation": "Murid menerangkan petunjuk bunyi; guru membetulkan padanan dan menyebut nama sumber.",
+        "elaboration": "Dalam permainan detektif, murid memadankan semula kad apabila susunan bunyi diubah. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid memadankan lima bunyi secara individu; sekurang-kurangnya empat padanan betul."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 2,
+      "sp_code": "2.1.1",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru mengajuk bunyi hujan dan loceng; murid meneka sumber.",
+        "exploration": "Murid memilih kad sumber dan mencuba bunyinya dalam kumpulan kecil.",
+        "explanation": "Guru menunjukkan kawalan suara yang selamat; murid membandingkan ajukan dengan rakaman.",
+        "elaboration": "Murid bergilir mengajuk bunyi daripada kad rahsia untuk diteka rakan. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi yang dapat dikenal pasti."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 3,
+      "sp_code": "3.1.1",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan simbol tandas dan huruf pada kad; murid menyatakan yang dikenali.",
+        "exploration": "Murid mencari padanan kad simbol dan abjad sambil menyanyikan lagu abjad.",
+        "explanation": "Murid menyebut nama kad; guru menjelaskan perbezaan simbol dan abjad.",
+        "elaboration": "Murid memilih kad yang diminta dalam permainan padanan visual.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 4,
+      "sp_code": "4.1.1",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan corak garisan lurus, lengkung dan bentuk mudah.",
+        "exploration": "Murid mencuba gerakan tangan di udara sebelum melakar di kertas.",
+        "explanation": "Guru menunjukkan arah lakaran; murid menerangkan cara menyambung garisan.",
+        "elaboration": "Murid melengkapkan corak pada lembaran dan menghasilkan satu corak pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 5,
+      "sp_code": "1.1.1",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Murid mendengar dua bunyi berturutan dan meneka bunyi pertama.",
+        "exploration": "Murid menyusun kad sumber mengikut urutan rakaman pendek tanpa melihat gambar dahulu.",
+        "explanation": "Guru membimbing murid menjelaskan perbezaan bunyi panjang, pendek dan berulang.",
+        "elaboration": "Murid bermain bingo bunyi menggunakan lima kad sumber dalam susunan baharu. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid memadankan sekurang-kurangnya empat daripada lima bunyi yang dimainkan secara individu."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 6,
+      "sp_code": "2.1.1",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Murid mendengar bunyi kenderaan dan burung lalu cuba mengajuknya.",
+        "exploration": "Murid memilih kad gambar dan mencipta ajukan berbeza bersama pasangan.",
+        "explanation": "Guru membimbing kelantangan dan kejelasan; murid membetulkan ajukan selepas maklum balas.",
+        "elaboration": "Murid menghasilkan urutan bunyi untuk permainan teka bunyi dalam kumpulan. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 7,
+      "sp_code": "3.1.1",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan kad huruf dan simbol secara terbalik sebelum membukanya.",
+        "exploration": "Murid mengasingkan kad simbol daripada kad abjad pada dua ruang permainan.",
+        "explanation": "Murid menyebut nama kad pilihan; guru menerangkan padanan yang keliru.",
+        "elaboration": "Murid bermain cari kad berdasarkan sebutan nama abjad atau simbol daripada guru.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima kad yang ditunjukkan."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 8,
+      "sp_code": "4.1.1",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru mempamerkan corak berulang bulatan dan segi tiga; murid meneka bentuk seterusnya.",
+        "exploration": "Murid mencuba lakaran bentuk asas dengan arah dan saiz berbeza pada kertas.",
+        "explanation": "Guru menunjukkan cara mengawal pensel dan menghubungkan bentuk dengan kemas.",
+        "elaboration": "Murid membina corak berulang sendiri menggunakan dua bentuk pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas secara individu."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 9,
+      "sp_code": "3.1.2",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan kad ba dan ju; murid cuba membaca kedua-duanya.",
+        "exploration": "Murid menyusun kad suku kata mengikut irama untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing murid menggabungkan bunyi ba-ju dan membaca perkataan baju.",
+        "elaboration": "Murid menukar pasangan kad untuk membina serta membaca perkataan seperti buku dan bola.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 10,
+      "sp_code": "2.1.2",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Murid menyebut beberapa huruf bersama-sama mengikut irama lagu abjad.",
+        "exploration": "Murid memilih kad huruf dan suku kata terbuka lalu mencuba sebutan secara berpasangan.",
+        "explanation": "Guru menunjukkan sebutan yang betul; murid mengulang sambil membezakan bunyi.",
+        "elaboration": "Murid menyebut kad rawak dalam permainan giliran berirama.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan betul."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 11,
+      "sp_code": "1.1.2",
+      "original_activity_order": [
+        1,
+        2,
+        3
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[1]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[1]",
+          "activities[2]"
+        ],
+        "evaluation": [
+          "activities[2]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Guru memperdengarkan lagu abjad; murid mengangkat kad huruf yang didengar.",
+        "exploration": "Murid mendengar lagu berirama kanak-kanak yang memuatkan bunyi abjad dan suku kata; murid memilih kad padanan.",
+        "explanation": "Guru membimbing padanan bunyi dengan simbol; murid menjelaskan pilihan.",
+        "elaboration": "Murid bermain padanan bunyi rawak dengan kad huruf dan suku kata.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat bunyi huruf atau suku kata yang diperdengarkan."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 12,
+      "sp_code": "2.1.2",
+      "original_activity_order": [
+        1,
+        3,
+        2
+      ],
+      "source_mapping": {
+        "engagement": [
+          "induction"
+        ],
+        "exploration": [
+          "activities[2]"
+        ],
+        "explanation": [
+          "activities[0]"
+        ],
+        "elaboration": [
+          "activities[2]",
+          "activities[1]"
+        ],
+        "evaluation": [
+          "activities[1]",
+          "criteria",
+          "pbd"
+        ]
+      },
+      "phases": {
+        "engagement": "Murid menyambung irama abjad apabila guru berhenti pada satu huruf.",
+        "exploration": "Murid memilih kad suku kata daripada timbunan dan mencuba sebutan dengan pasangan.",
+        "explanation": "Guru membimbing kedudukan bunyi melalui contoh sebutan, murid mengulang dengan jelas.",
+        "elaboration": "Murid menjalankan permainan giliran menyebut huruf atau suku kata tanpa mengikut susunan asal.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul."
+      },
+      "preserve_fields": [
+        "sk_code",
+        "sk",
+        "sp_code",
+        "sp",
+        "objective",
+        "criteria",
+        "material",
+        "closure",
+        "remedial",
+        "extension",
+        "reflection",
+        "duration",
+        "source_page"
+      ],
+      "note": "Map by pedagogical purpose; source activity numbers are zero-based in mapping. Added or re-sequenced activities are draft adaptations, not new official content. Render uses resolved lesson() SK correction for 4.1; source_page is penataran reference, not textbook.",
+      "ready": false
+    }
+  ],
+  "release": false
+}

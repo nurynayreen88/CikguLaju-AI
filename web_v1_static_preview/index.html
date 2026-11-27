@@ -2593,7 +2593,7 @@ subject.addEventListener("change",async()=>{
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,178)||
        !kp2027ValidEntries(data.items.B,data.groups.B,175))
      throw Error("Padanan Unit dan PdP Bahasa Melayu belum dapat disahkan.");
-    inventory={groups:data.groups,items:data.items};
+    inventory={groups:data.groups,items:data.items,rphVariants:Array.isArray(data.rph_variants)?data.rph_variants:[]};
    }else if(code==="PJ_KP2027"){
     if(!data.groups||!kp2027ValidList(data.groups.A,64)||!kp2027ValidList(data.groups.B,63)||
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,64)||
@@ -2757,7 +2757,8 @@ function kp2027TeacherPayload(){
  return {teacher_class:className,teacher_date:teacherDate.value,teacher_start:start,
    teacher_end:end,teacher_students:students,reflection_mode:mode,reflection};
 }
-async function kp2027DownloadApproved(format){
+async function kp2027DownloadApproved(format){return kp2027DownloadVariant(format,"lengkap");}
+async function kp2027DownloadVariant(format,variant){
  const code=subject.value,route=kp2027PilotRoutes[code],value=Number(lesson.value);
  if(kp2027PilotBusy||curriculum.value!=="kp2027"||year.value!=="1"||!route||
     !["word","pdf"].includes(format)||!lesson.value||!kp2027CurrentLessons().includes(value)||
@@ -2767,6 +2768,10 @@ async function kp2027DownloadApproved(format){
  let teacherPayload;
  try{teacherPayload=kp2027TeacherPayload();}catch(error){status.textContent=error.message;return;}
  const payload=["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(code)?{group,lesson:value,format,...teacherPayload}:{lesson:value,format,...teacherPayload};
+ if(variant==="5p"){
+  if(code!=="BM_SK_KP2027"||!kp2027PilotInventory?.rphVariants?.includes("5p"))return;
+  payload.rph_variant="5p";
+ }
  if(code==="PJ_KP2027"&&aquaticV2Selected())payload.rph_variant="V2_DARAT";
  kp2027PilotBusy=true;
  for(const button of kp2027PilotButtons)button.disabled=true;
@@ -2784,7 +2789,7 @@ async function kp2027DownloadApproved(format){
   const documentBlob=await response.blob();
   const ext=format==="pdf"?"pdf":"docx";
   const stem=code==="MATH_KP2027"?"MATH_T1_"+group:code==="BM_SK_KP2027"?"BM_SK_T1_"+group:code==="PJ_KP2027"?"PJ_T1_"+group:"ALAM_T1";
-  const fileName="CIKGULAJU_KP2027_"+stem+"_PDP"+String(value).padStart(3,"0")+(payload.rph_variant?"_AKUATIK_V2":"")+"."+ext;
+  const fileName="CIKGULAJU_KP2027_"+stem+"_PDP"+String(value).padStart(3,"0")+(payload.rph_variant==="5p"?"_5P":payload.rph_variant==="V2_DARAT"?"_AKUATIK_V2":"")+"."+ext;
   const fileUrl=URL.createObjectURL(documentBlob),anchor=document.createElement("a");
   anchor.href=fileUrl;anchor.download=fileName;anchor.click();
   setTimeout(()=>URL.revokeObjectURL(fileUrl),30000);
@@ -2894,6 +2899,12 @@ function populateKp2027MaterialList(){
   materialRow("RPH PDF",{ready:true,onDownload:()=>{void kp2027DownloadApproved("pdf");}}),
   materialRow("RPH Word",{ready:true,onDownload:()=>{void kp2027DownloadApproved("word");}})
  );
+ if(subject.value==="BM_SK_KP2027"&&kp2027PilotInventory?.rphVariants?.includes("5p")){
+  list.append(
+   materialRow("RPH Ringkas 5P PDF",{ready:true,onDownload:()=>{void kp2027DownloadVariant("pdf","5p");}}),
+   materialRow("RPH Ringkas 5P Word",{ready:true,onDownload:()=>{void kp2027DownloadVariant("word","5p");}})
+  );
+ }
  status.textContent="Pilih format RPH untuk Download. Maklumat kelas, tarikh, masa dan murid yang diisi akan dicetak dalam fail.";
 }
 async function populateMaterialList(){

@@ -10,6 +10,10 @@ import os
 from flask import Blueprint, jsonify, request, send_file
 
 from web import kp2027_bm_rpt_aligned as bm
+
+
+def five_p_enabled():
+    return os.environ.get("CIKGULAJU_BM_KP2027_5P_ENABLED") == "1"
 from web.kp2027_math_canary_web import ORIGIN, debit_shared_trial
 from web.kp2027_pilot_teacher_fields import EXTRA_FIELDS, TeacherFieldError
 from web.rph_delivery_quota import authorize_rendered_document, has_active_paid_access
@@ -62,6 +66,7 @@ def create_blueprint():
             ] for g in ("A","B")},
             "source":"kp2027-bm-sk-rpt2027-353-verified",
             "academic_status":"SEMAKAN PELAKSANAAN",
+            "rph_variants":["lengkap","5p"] if five_p_enabled() else ["lengkap"],
         })
 
     @bp.post("/api/kp2027/sk/tahun-1/bahasa-melayu-sk/download")
@@ -72,9 +77,12 @@ def create_blueprint():
             return error("Maklumat RPH tidak sah.",400,"INVALID_REQUEST")
         payload=request.get_json(silent=True)
         if (not isinstance(payload,dict) or not {"group","lesson","format"}.issubset(payload)
-                or set(payload)-{"group","lesson","format"}-EXTRA_FIELDS):
+                or set(payload)-{"group","lesson","format","rph_variant"}-EXTRA_FIELDS):
             return error("Pilihan PdP atau maklumat RPH tidak lengkap.",400,"INVALID_SELECTION")
         group,number,fmt=payload["group"],payload["lesson"],payload["format"]
+        variant=payload.get("rph_variant","lengkap")
+        if variant not in ("lengkap","5p") or (variant=="5p" and not five_p_enabled()):
+            return error("Pilihan format RPH belum tersedia.",404,"RPH_VARIANT_UNAVAILABLE")
         try:
             if fmt not in bm.FMTS:raise bm.Unavailable("Format tidak sah")
             bm.lesson(group,number)
@@ -90,10 +98,15 @@ def create_blueprint():
             if remaining==0:
                 return error("10 janaan percuma telah habis. Aktifkan langganan.",403,"FREE_TRIAL_EXHAUSTED")
         try:
-            output=bm.render(group,number,fmt,{k:payload[k] for k in EXTRA_FIELDS if k in payload})
+            fields={k:payload[k] for k in EXTRA_FIELDS if k in payload}
+            if variant=="5p":
+                from web import kp2027_bm_5p
+                output=kp2027_bm_5p.render(group,number,fmt,fields)
+            else:
+                output=bm.render(group,number,fmt,fields)
         except TeacherFieldError as exc:
             return error(str(exc),400,"INVALID_TEACHER_FIELDS")
-        except (bm.Unavailable,RuntimeError,OSError,ValueError,TypeError):
+        except (bm.Unavailable,RuntimeError,OSError,ValueError,TypeError,KeyError,ImportError):
             return error("RPH belum berjaya disediakan. Kuota tidak ditolak.",503,"RPH_RENDER_UNAVAILABLE")
         trial_remaining=None
         if not paid:
@@ -108,10 +121,11 @@ def create_blueprint():
             trial_remaining=result["remaining"]
         ext,mime=bm.FMTS[fmt]
         resp=send_file(BytesIO(output),mimetype=mime,as_attachment=True,
-            download_name=f"CIKGULAJU_RPH_BM_SK_KP2027_T1_{group}_PDP{number:03d}_SEMAKAN.{ext}",
+            download_name=f"CIKGULAJU_RPH_BM_SK_KP2027_T1_{group}_PDP{number:03d}{'_5P' if variant=='5p' else ''}_SEMAKAN.{ext}",
             conditional=False)
         resp.headers["X-RPH-Curriculum"]="KP2027-Year1-BM-SK"
         resp.headers["X-RPH-QA-Status"]="SEMAKAN-PELAKSANAAN"
+        resp.headers["X-RPH-Variant"]=variant
         if trial_remaining is not None:
             resp.headers["X-RPH-Trial-Remaining"]=str(trial_remaining)
         return resp
