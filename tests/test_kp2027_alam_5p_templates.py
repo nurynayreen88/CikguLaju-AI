@@ -37,7 +37,7 @@ class FivePRouteTests(AlamFlaskContract):
         client,mocks=self.client(paid=False)
         with patch.dict(os.environ,{a.FLAG:"0"}):
             self.assertEqual(client.get(BASE+"/available").status_code,404)
-        with patch.dict(os.environ,{a.FLAG:"1"}),patch.object(a,"fetch",return_value=b"%PDF-1.7\n"+b"0"*1500) as fetch:
+        with patch.dict(os.environ,{a.FLAG:"1"}),patch.object(a,"render",return_value=b"%PDF-1.7\n"+b"0"*1500) as fetch:
             self.assertEqual(client.post(BASE+"/download",json={"pdp":93,"format":"pdf"}).status_code,403)
             self.assertEqual(client.post(BASE+"/download",json={"pdp":94,"format":"pdf"},headers={"Origin":"https://cikgulaju-web.onrender.com"}).status_code,404)
             self.assertEqual(mocks[4].call_count,0)
@@ -49,6 +49,10 @@ class FivePRouteTests(AlamFlaskContract):
             self.assertIn("PDP093_5P",r.headers["Content-Disposition"])
             fetch.side_effect=a.PilotUnavailable("bad")
             self.assertEqual(client.post(BASE+"/download",json={"pdp":93,"format":"pdf"},headers={"Origin":"https://cikgulaju-web.onrender.com"}).status_code,503)
+            self.assertEqual(mocks[4].call_count,1)
+            from web.kp2027_alam_5p_personalize import LayoutError
+            fetch.side_effect=LayoutError("Refleksi tidak muat")
+            self.assertEqual(client.post(BASE+"/download",json={"pdp":93,"format":"pdf","reflection_mode":"manual","reflection":"ujian"},headers={"Origin":"https://cikgulaju-web.onrender.com"}).status_code,400)
             self.assertEqual(mocks[4].call_count,1)
             mocks[2].return_value=None
             self.assertEqual(client.get(BASE+"/available").status_code,401)
