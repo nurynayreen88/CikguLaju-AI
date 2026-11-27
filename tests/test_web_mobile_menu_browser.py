@@ -73,6 +73,8 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     page.locator("#curriculum-docs-type").select_option("kp2027")
                     expect(page.locator("#curriculum-kp2027-list li:visible")).to_have_count(5)
                     expect(page.locator("#curriculum-kp2027-list li:visible small").filter(has_text="PDF sumber luar")).to_have_count(3)
+                    expect(page.locator("#curriculum-docs-kp2027")).not_to_contain_text("penataran",ignore_case=True)
+                    expect(page.locator("#curriculum-kp2027-ppd-list")).to_have_count(0)
                     page.locator("#curriculum-docs-type").select_option("kssr")
                     expect(page.locator("#curriculum-docs-kssr-list li:visible")).to_have_count(156)
                     page.locator("#curriculum-docs-year").select_option("6")
