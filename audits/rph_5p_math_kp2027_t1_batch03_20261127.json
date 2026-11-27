@@ -1,0 +1,3245 @@
+{
+  "status": "DRAFT",
+  "subject": "Matematik SK",
+  "year": 1,
+  "curriculum": "KP2027",
+  "source": {
+    "catalog_sha": "af8fb413c5d84eb9433abd6728b75d2db8056592",
+    "archive_sha": "07003ed9b0037359ff30a8956ba328d3d5eb76ad44417bf1be5be18d74fe50cf",
+    "combined_pdf_drive_id": "1x8eTja5wJNAdolORpkH9asShxbpnHELn",
+    "dk_drive_id": "1YStEYq-J1oyg7L_hjZtxL93EHJv5RrNl",
+    "total": {
+      "A": 125,
+      "B": 124
+    }
+  },
+  "notes": "No invented textbook pages. SP 5.1.2 time writing, 7.1.3 both keys, and 7.1.4 no addition/subtraction explicitly held for source objective and assessment reconciliation. Representative source activities reviewed; individual records and render pending.",
+  "records": [
+    {
+      "group": "A",
+      "lesson": 61,
+      "sp_code": "3.2.2",
+      "title": "Menukar Nilai Wang",
+      "dk_printed_page": 77,
+      "source_pdf_page": 61,
+      "source_word_sha256": "7e4b23cf8af5016d8ecffc930daf2d2099af3c1aa3c2c351472b7c04085260b0",
+      "source_pdf_sha256": "411c5db46f488858fb950197530521ed77c22ec261f97caae3f9f37b51bdbba7",
+      "source_activity_titles": [
+        "Tukar Wang Kertas",
+        "Ganti Duit Syiling",
+        "Padan Nilai Setara"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM5 dan lima RM1; murid meramal kesetaraan.",
+        "exploration": "Murid membina 50 sen dengan syiling contoh 20, 10 dan 5 sen.",
+        "explanation": "Guru memodelkan pertukaran RM5 kepada lima RM1 dan menerangkan nilai kekal.",
+        "elaboration": "Murid tukar RM10 kepada dua RM5.",
+        "evaluation": "Murid menyelesaikan empat penukaran dalam had DK; sekurang-kurangnya tiga setara nilainya."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 62,
+      "sp_code": "3.2.2",
+      "title": "Menukar Nilai Wang",
+      "dk_printed_page": 77,
+      "source_pdf_page": 62,
+      "source_word_sha256": "cc33e19f54da11e95628d6c8c483ae483f40659445304d6d6e3220bc904cf74a",
+      "source_pdf_sha256": "7872977073b224db8fb0c99be467ce5bab4456ae449e690dd18fe5d853f2bf3f",
+      "source_activity_titles": [
+        "Tukar Wang Kertas",
+        "Ganti Duit Syiling",
+        "Padan Nilai Setara"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM5 dan lima RM1; murid meramal kesetaraan.",
+        "exploration": "Murid membina 50 sen dengan syiling contoh 20, 10 dan 5 sen.",
+        "explanation": "Guru memodelkan pertukaran RM5 kepada lima RM1 dan menerangkan nilai kekal.",
+        "elaboration": "Murid tukar 50 sen kepada dua 20 sen dan satu 10 sen.",
+        "evaluation": "Murid menyelesaikan empat penukaran dalam had DK; sekurang-kurangnya tiga setara nilainya."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 63,
+      "sp_code": "3.2.2",
+      "title": "Menukar Nilai Wang",
+      "dk_printed_page": 77,
+      "source_pdf_page": 63,
+      "source_word_sha256": "5f2db289b550e5ed462e4f3c4a19b57b46da0643b4f0a333df97ca37cd681e60",
+      "source_pdf_sha256": "adfbecdc3d5e8e865ab5e9a7686d56713e43d7fe6dabf35bcec78e7da60a54ba",
+      "source_activity_titles": [
+        "Tukar Wang Kertas",
+        "Ganti Duit Syiling",
+        "Padan Nilai Setara"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM5 dan lima RM1; murid meramal kesetaraan.",
+        "exploration": "Murid membina 50 sen dengan syiling contoh 20, 10 dan 5 sen.",
+        "explanation": "Guru memodelkan pertukaran RM5 kepada lima RM1 dan menerangkan nilai kekal.",
+        "elaboration": "Murid tukar RM5 kepada lima RM1.",
+        "evaluation": "Murid menyelesaikan empat penukaran dalam had DK; sekurang-kurangnya tiga setara nilainya."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 64,
+      "sp_code": "3.2.2",
+      "title": "Menukar Nilai Wang",
+      "dk_printed_page": 77,
+      "source_pdf_page": 64,
+      "source_word_sha256": "b0d428c5435073b297eafcec3c483b4c6e77ed14d906d69c6cdc4a977a9e68c0",
+      "source_pdf_sha256": "b991dcfeeb060a596547e3e23fbf9a740ea9cf4410bcfb8b05bb767872a81c8f",
+      "source_activity_titles": [
+        "Tukar Wang Kertas",
+        "Ganti Duit Syiling",
+        "Padan Nilai Setara"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM5 dan lima RM1; murid meramal kesetaraan.",
+        "exploration": "Murid membina 50 sen dengan syiling contoh 20, 10 dan 5 sen.",
+        "explanation": "Guru memodelkan pertukaran RM5 kepada lima RM1 dan menerangkan nilai kekal.",
+        "elaboration": "Murid tukar RM1 kepada dua 50 sen.",
+        "evaluation": "Murid menyelesaikan empat penukaran dalam had DK; sekurang-kurangnya tiga setara nilainya."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 65,
+      "sp_code": "3.2.3",
+      "title": "Membandingkan Nilai Wang",
+      "dk_printed_page": 80,
+      "source_pdf_page": 65,
+      "source_word_sha256": "4b1c2cefde2c82797a369aa1f56912dc7a56114cfe7787ff3a2945f28d536fda",
+      "source_pdf_sha256": "ef1c70aeaaff5a25f016d103b25391853a23a5d1379e633c1031fcc3d936fca9",
+      "source_activity_titles": [
+        "Banding Wang Kertas",
+        "Banding Duit Syiling",
+        "Jelaskan Pilihan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru mempamerkan RM1 dan RM5; murid meramal nilai lebih tinggi.",
+        "exploration": "Murid menyusun wang kertas RM1, RM5 dan RM10 serta membandingkan dua kumpulan syiling secara berasingan.",
+        "explanation": "Guru membimbing istilah lebih daripada, kurang daripada dan sama nilai; murid memberikan alasan.",
+        "elaboration": "Murid bandingkan RM5 dengan tiga RM1.",
+        "evaluation": "Murid membuat sekurang-kurangnya empat daripada lima perbandingan wang sejenis dengan istilah tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 66,
+      "sp_code": "3.2.3",
+      "title": "Membandingkan Nilai Wang",
+      "dk_printed_page": 80,
+      "source_pdf_page": 66,
+      "source_word_sha256": "35da16e8de2a5dc7f26357c8777d529241a6761054f66d840a4682c708a12657",
+      "source_pdf_sha256": "824737593b4e3832903243dc4fe4c07642ce18a140a6851eedcb92a85148bebe",
+      "source_activity_titles": [
+        "Banding Wang Kertas",
+        "Banding Duit Syiling",
+        "Jelaskan Pilihan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru mempamerkan RM1 dan RM5; murid meramal nilai lebih tinggi.",
+        "exploration": "Murid menyusun wang kertas RM1, RM5 dan RM10 serta membandingkan dua kumpulan syiling secara berasingan.",
+        "explanation": "Guru membimbing istilah lebih daripada, kurang daripada dan sama nilai; murid memberikan alasan.",
+        "elaboration": "Murid bandingkan 50 sen dengan dua 20 sen.",
+        "evaluation": "Murid membuat sekurang-kurangnya empat daripada lima perbandingan wang sejenis dengan istilah tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 67,
+      "sp_code": "3.2.3",
+      "title": "Membandingkan Nilai Wang",
+      "dk_printed_page": 80,
+      "source_pdf_page": 67,
+      "source_word_sha256": "9c18e1efd873e777af176acce42a5fa6fbfa581580b6ba911f973733df295521",
+      "source_pdf_sha256": "155165e6ca968829a09b67111d780c3291b14740f90323f3bba1d450f092d2b1",
+      "source_activity_titles": [
+        "Banding Wang Kertas",
+        "Banding Duit Syiling",
+        "Jelaskan Pilihan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru mempamerkan RM1 dan RM5; murid meramal nilai lebih tinggi.",
+        "exploration": "Murid menyusun wang kertas RM1, RM5 dan RM10 serta membandingkan dua kumpulan syiling secara berasingan.",
+        "explanation": "Guru membimbing istilah lebih daripada, kurang daripada dan sama nilai; murid memberikan alasan.",
+        "elaboration": "Murid bandingkan dua RM5 dengan RM10.",
+        "evaluation": "Murid membuat sekurang-kurangnya empat daripada lima perbandingan wang sejenis dengan istilah tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 68,
+      "sp_code": "3.2.3",
+      "title": "Membandingkan Nilai Wang",
+      "dk_printed_page": 80,
+      "source_pdf_page": 68,
+      "source_word_sha256": "e991f03320164fe55e561f151f6486dd00898974f84a92a223878e200391cc27",
+      "source_pdf_sha256": "74fb4a4f4c73c84a2b75aae7dca696b8a5b925ca459ccad69d144c8142eb3076",
+      "source_activity_titles": [
+        "Banding Wang Kertas",
+        "Banding Duit Syiling",
+        "Jelaskan Pilihan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru mempamerkan RM1 dan RM5; murid meramal nilai lebih tinggi.",
+        "exploration": "Murid menyusun wang kertas RM1, RM5 dan RM10 serta membandingkan dua kumpulan syiling secara berasingan.",
+        "explanation": "Guru membimbing istilah lebih daripada, kurang daripada dan sama nilai; murid memberikan alasan.",
+        "elaboration": "Murid bandingkan 20 sen dengan dua 10 sen.",
+        "evaluation": "Murid membuat sekurang-kurangnya empat daripada lima perbandingan wang sejenis dengan istilah tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 69,
+      "sp_code": "4.1.1",
+      "title": "Mengenal Bentuk Dua Dimensi",
+      "dk_printed_page": 87,
+      "source_pdf_page": 69,
+      "source_word_sha256": "632def409582d56447692a0937594cec3f931d6ade6d62da7847bb2b485caf5e",
+      "source_pdf_sha256": "c66dc229697d29ec733883e02f61cc18cf1ceec9714a6541e31c30f0b26e5767",
+      "source_activity_titles": [
+        "Kenal Empat Bentuk",
+        "Kira Sisi dan Bucu",
+        "Cari Bentuk Sekeliling"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piring bulat dan buku segi empat; murid mengenal bentuk.",
+        "exploration": "Murid meneliti model empat bentuk dan mengira sisi lurus serta bucu.",
+        "explanation": "Guru membimbing nama dan ciri segi empat sama, segi empat tepat, segi tiga dan bulatan.",
+        "elaboration": "Murid cari objek yang menyerupai setiap bentuk di kelas.",
+        "evaluation": "Murid menamakan empat bentuk dan menyebut bilangan sisi atau bucu bagi tiga bentuk."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 70,
+      "sp_code": "4.1.1",
+      "title": "Mengenal Bentuk Dua Dimensi",
+      "dk_printed_page": 87,
+      "source_pdf_page": 70,
+      "source_word_sha256": "b6dc9e7157638490da374502c99013f0d502f103b5573c51f364f161df846eaf",
+      "source_pdf_sha256": "26dc3d20db69d39c0d66ef913c25bb9e01daed94821c0d804c888d3a09152607",
+      "source_activity_titles": [
+        "Kenal Empat Bentuk",
+        "Kira Sisi dan Bucu",
+        "Cari Bentuk Sekeliling"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piring bulat dan buku segi empat; murid mengenal bentuk.",
+        "exploration": "Murid meneliti model empat bentuk dan mengira sisi lurus serta bucu.",
+        "explanation": "Guru membimbing nama dan ciri segi empat sama, segi empat tepat, segi tiga dan bulatan.",
+        "elaboration": "Murid padankan empat kad bentuk dengan gambar objek.",
+        "evaluation": "Murid menamakan empat bentuk dan menyebut bilangan sisi atau bucu bagi tiga bentuk."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 71,
+      "sp_code": "4.1.1",
+      "title": "Mengenal Bentuk Dua Dimensi",
+      "dk_printed_page": 87,
+      "source_pdf_page": 71,
+      "source_word_sha256": "aac9e7fa3079a09ba0ea978718b006a668e6f5c3e2d1d1375faf92ffc4596846",
+      "source_pdf_sha256": "b054c21e11f2b33e39853e197167d8a7b6332783daf75a0fdc81bbf7e11a9e6e",
+      "source_activity_titles": [
+        "Kenal Empat Bentuk",
+        "Kira Sisi dan Bucu",
+        "Cari Bentuk Sekeliling"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piring bulat dan buku segi empat; murid mengenal bentuk.",
+        "exploration": "Murid meneliti model empat bentuk dan mengira sisi lurus serta bucu.",
+        "explanation": "Guru membimbing nama dan ciri segi empat sama, segi empat tepat, segi tiga dan bulatan.",
+        "elaboration": "Murid asingkan model mengikut bilangan bucu dan jelaskan padanan.",
+        "evaluation": "Murid menamakan empat bentuk dan menyebut bilangan sisi atau bucu bagi tiga bentuk."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 72,
+      "sp_code": "4.1.2",
+      "title": "Menyusun Pola Bentuk",
+      "dk_printed_page": 89,
+      "source_pdf_page": 72,
+      "source_word_sha256": "c5ae6ec3f67ea1b6e5fdba63ac4b35e59ea874bdd9d570a003c7d5c4f040cbe0",
+      "source_pdf_sha256": "c8c579369982d025d17c4e218b492d1e2622e9201b4e19fd13e9f7e7bf19d7e3",
+      "source_activity_titles": [
+        "Kenal Unit Ulangan",
+        "Lengkapkan Jalur Pola",
+        "Cipta dan Terangkan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan bulatan, segi tiga, bulatan, segi tiga; murid meramal sambungan.",
+        "exploration": "Murid mencari unit ulangan pada jalur dua atau tiga bentuk.",
+        "explanation": "Guru menunjukkan cara mengulang unit yang sama dan menerangkan kedudukan ruang kosong.",
+        "elaboration": "Murid lengkapkan pola bulatan–segi tiga pada jalur yang berlubang.",
+        "evaluation": "Murid melengkapkan sekurang-kurangnya empat daripada lima pola dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 73,
+      "sp_code": "4.1.2",
+      "title": "Menyusun Pola Bentuk",
+      "dk_printed_page": 89,
+      "source_pdf_page": 73,
+      "source_word_sha256": "705a8197323742e0dd6d216c6ff93e3e508b7fe75006cec9b0f189764a9c82d4",
+      "source_pdf_sha256": "0ea428194e15132e14ab9f9596d512edafdc30c5b906dffe78074b6758dcb770",
+      "source_activity_titles": [
+        "Kenal Unit Ulangan",
+        "Lengkapkan Jalur Pola",
+        "Cipta dan Terangkan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan bulatan, segi tiga, bulatan, segi tiga; murid meramal sambungan.",
+        "exploration": "Murid mencari unit ulangan pada jalur dua atau tiga bentuk.",
+        "explanation": "Guru menunjukkan cara mengulang unit yang sama dan menerangkan kedudukan ruang kosong.",
+        "elaboration": "Murid cipta pola segi empat sama–bulatan–segi tiga dan tukar dengan pasangan.",
+        "evaluation": "Murid melengkapkan sekurang-kurangnya empat daripada lima pola dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 74,
+      "sp_code": "4.1.2",
+      "title": "Menyusun Pola Bentuk",
+      "dk_printed_page": 89,
+      "source_pdf_page": 74,
+      "source_word_sha256": "e80b15edef66ae47ea16f0c9de62204641deae4c121851d9b4cfaa4f1741a2c3",
+      "source_pdf_sha256": "ed00fbc11341cd87b8c9c815d78c98272cec31da59ff8f5a447c8a6bd5a03429",
+      "source_activity_titles": [
+        "Kenal Unit Ulangan",
+        "Lengkapkan Jalur Pola",
+        "Cipta dan Terangkan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan bulatan, segi tiga, bulatan, segi tiga; murid meramal sambungan.",
+        "exploration": "Murid mencari unit ulangan pada jalur dua atau tiga bentuk.",
+        "explanation": "Guru menunjukkan cara mengulang unit yang sama dan menerangkan kedudukan ruang kosong.",
+        "elaboration": "Murid betulkan pola segi empat tepat–segi tiga–segi tiga yang tersalah susun.",
+        "evaluation": "Murid melengkapkan sekurang-kurangnya empat daripada lima pola dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 75,
+      "sp_code": "4.1.3",
+      "title": "Mengesan Bentuk dalam Gabungan",
+      "dk_printed_page": 90,
+      "source_pdf_page": 75,
+      "source_word_sha256": "6a72d8406643c4a4e9be79223d206a02dc10265f5372b1efa31fb8085db59f81",
+      "source_pdf_sha256": "35d2cf7655c41c90f27b9390f8bce8267e7e19f31b251a21e655cea01e55c84c",
+      "source_activity_titles": [
+        "Lihat Bentuk Tersembunyi",
+        "Bina Gambar Baharu",
+        "Pamer dan Namakan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar rumah gabungan bentuk; murid meneka bentuk asas.",
+        "exploration": "Murid menandakan bentuk asas pada kad gambar gabungan.",
+        "explanation": "Guru membimbing pengecaman empat bentuk walaupun orientasi atau saiz berbeza.",
+        "elaboration": "Murid bina gambar rumah dengan potongan bentuk dan namakan bentuknya.",
+        "evaluation": "Murid mengenal tiga bentuk asas dalam sekurang-kurangnya empat gambar gabungan."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 76,
+      "sp_code": "4.1.3",
+      "title": "Mengesan Bentuk dalam Gabungan",
+      "dk_printed_page": 90,
+      "source_pdf_page": 76,
+      "source_word_sha256": "717abf26cd84825addde82e2cac7d443d209d38110055eb6555be26fbec484e5",
+      "source_pdf_sha256": "8eab6b29e029b12b8bae8aeb70f3cee1b337979efb63ca8db711c6da87fde3d9",
+      "source_activity_titles": [
+        "Lihat Bentuk Tersembunyi",
+        "Bina Gambar Baharu",
+        "Pamer dan Namakan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar rumah gabungan bentuk; murid meneka bentuk asas.",
+        "exploration": "Murid menandakan bentuk asas pada kad gambar gabungan.",
+        "explanation": "Guru membimbing pengecaman empat bentuk walaupun orientasi atau saiz berbeza.",
+        "elaboration": "Murid bina gambar kapal dan kira setiap jenis bentuk yang digunakan.",
+        "evaluation": "Murid mengenal tiga bentuk asas dalam sekurang-kurangnya empat gambar gabungan."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 77,
+      "sp_code": "4.1.3",
+      "title": "Mengesan Bentuk dalam Gabungan",
+      "dk_printed_page": 90,
+      "source_pdf_page": 77,
+      "source_word_sha256": "8fdaa3f6d47902486d84e40a89b1f444d83505bf8f14ea66784dc0577b9bd0ae",
+      "source_pdf_sha256": "7f4c904f2d8400272accb697565b59852bcf40c12e57f3137c3b7c6c054e0a50",
+      "source_activity_titles": [
+        "Lihat Bentuk Tersembunyi",
+        "Bina Gambar Baharu",
+        "Pamer dan Namakan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar rumah gabungan bentuk; murid meneka bentuk asas.",
+        "exploration": "Murid menandakan bentuk asas pada kad gambar gabungan.",
+        "explanation": "Guru membimbing pengecaman empat bentuk walaupun orientasi atau saiz berbeza.",
+        "elaboration": "Murid bina gambar robot dan padankan komponennya dengan kad bentuk.",
+        "evaluation": "Murid mengenal tiga bentuk asas dalam sekurang-kurangnya empat gambar gabungan."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 78,
+      "sp_code": "5.1.1",
+      "title": "Menyatakan Masa dalam Jam",
+      "dk_printed_page": 95,
+      "source_pdf_page": 78,
+      "source_word_sha256": "cdfbb9e48177c8dee40f6ab91f3769ffa50902308c4bba6a3dbdbbb46c00c41f",
+      "source_pdf_sha256": "3974d3c3b2acd6b2bf9d303fabe8e7e6a5456d393bb9deb18759a2244c6f31c0",
+      "source_activity_titles": [
+        "Kenal Muka Jam",
+        "Baca Jam Tepat",
+        "Padan Masa dan Jam"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan jam pukul tujuh; murid menyebut waktu biasa mula sekolah.",
+        "exploration": "Murid meneliti nombor, senggatan serta jarum pada model jam.",
+        "explanation": "Guru membezakan fungsi jarum jam, minit dan saat, serta menerangkan kedudukan jarum minit pada waktu tepat.",
+        "elaboration": "Murid tetapkan model jam pada pukul 3 dan 8.",
+        "evaluation": "Murid membaca sekurang-kurangnya empat daripada lima waktu tepat pada jam analog."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 79,
+      "sp_code": "5.1.1",
+      "title": "Menyatakan Masa dalam Jam",
+      "dk_printed_page": 95,
+      "source_pdf_page": 79,
+      "source_word_sha256": "63554207c4fda9b0f8024fd8f5f94c71d5f0ba990b293fa399d8008326836f4d",
+      "source_pdf_sha256": "92ffe45b23c54f246e83dc717e60b0dae0dadf9a4605d9aa9ab78c8f68ad7197",
+      "source_activity_titles": [
+        "Kenal Muka Jam",
+        "Baca Jam Tepat",
+        "Padan Masa dan Jam"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan jam pukul tujuh; murid menyebut waktu biasa mula sekolah.",
+        "exploration": "Murid meneliti nombor, senggatan serta jarum pada model jam.",
+        "explanation": "Guru membezakan fungsi jarum jam, minit dan saat, serta menerangkan kedudukan jarum minit pada waktu tepat.",
+        "elaboration": "Murid padankan kad pukul 2 dan 10 dengan model jam.",
+        "evaluation": "Murid membaca sekurang-kurangnya empat daripada lima waktu tepat pada jam analog."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 80,
+      "sp_code": "5.1.1",
+      "title": "Menyatakan Masa dalam Jam",
+      "dk_printed_page": 95,
+      "source_pdf_page": 80,
+      "source_word_sha256": "f037ef66067e1a41734c4b0847c516f0b43b6904af5ab1db42151c683c7417dc",
+      "source_pdf_sha256": "092bc8f17db752a799a21576ee4e7c796227ffe099052c60cb4101d6cc578a03",
+      "source_activity_titles": [
+        "Kenal Muka Jam",
+        "Baca Jam Tepat",
+        "Padan Masa dan Jam"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan jam pukul tujuh; murid menyebut waktu biasa mula sekolah.",
+        "exploration": "Murid meneliti nombor, senggatan serta jarum pada model jam.",
+        "explanation": "Guru membezakan fungsi jarum jam, minit dan saat, serta menerangkan kedudukan jarum minit pada waktu tepat.",
+        "elaboration": "Murid bina waktu pukul 5 dan 11 pada model jam.",
+        "evaluation": "Murid membaca sekurang-kurangnya empat daripada lima waktu tepat pada jam analog."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 81,
+      "sp_code": "5.1.1",
+      "title": "Menyatakan Masa dalam Jam",
+      "dk_printed_page": 95,
+      "source_pdf_page": 81,
+      "source_word_sha256": "86353aef805f66b976ba2bf0614d59c23d99bece15ab51bacbe03b08f4f590c4",
+      "source_pdf_sha256": "245d3bde7e6003ca917ce2d2a5fc41d9e0283b839cb5cf3d968763465dcaabb4",
+      "source_activity_titles": [
+        "Kenal Muka Jam",
+        "Baca Jam Tepat",
+        "Padan Masa dan Jam"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan jam pukul tujuh; murid menyebut waktu biasa mula sekolah.",
+        "exploration": "Murid meneliti nombor, senggatan serta jarum pada model jam.",
+        "explanation": "Guru membezakan fungsi jarum jam, minit dan saat, serta menerangkan kedudukan jarum minit pada waktu tepat.",
+        "elaboration": "Murid tukar kad pukul 1 dan 9 dengan pasangan untuk membaca waktu.",
+        "evaluation": "Murid membaca sekurang-kurangnya empat daripada lima waktu tepat pada jam analog."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 82,
+      "sp_code": "5.1.2",
+      "title": "Urutan Masa dalam Sehari",
+      "dk_printed_page": 98,
+      "source_pdf_page": 82,
+      "source_word_sha256": "c952773c6ff1eed9f437d9949e0208db83bd4d6570f9d7a821dfa7c53193bc6d",
+      "source_pdf_sha256": "f0f370b32e5a67178b4c4d1efffcc37cc3804187d2c0abdd721b69cf0dc0af31",
+      "source_activity_titles": [
+        "Kenal Bahagian Hari",
+        "Susun Kad Aktiviti",
+        "Cerita Rutin Saya"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+        "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+        "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+        "elaboration": "Murid susun kad makan, belajar, bermain dan tidur; tulis masa berpandukan jam contoh.",
+        "evaluation": "Murid menyusun empat peristiwa mengikut urutan masa munasabah dan menyatakan waktu pada kad jam."
+      },
+      "academic_status": "HOLD_DK_TIME_WRITING_CRITERIA",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 83,
+      "sp_code": "5.1.2",
+      "title": "Urutan Masa dalam Sehari",
+      "dk_printed_page": 98,
+      "source_pdf_page": 83,
+      "source_word_sha256": "e374ba209766fb92975d5131d6c4c24b1aefe76e49bdee4eecdbf12c0f0934a9",
+      "source_pdf_sha256": "4c626c971e96488d3df180177bbcde0025799b941240212cab72ab49269a160d",
+      "source_activity_titles": [
+        "Kenal Bahagian Hari",
+        "Susun Kad Aktiviti",
+        "Cerita Rutin Saya"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+        "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+        "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+        "elaboration": "Murid padankan gambar sarapan dan makan tengah hari dengan jam contoh dan tulis masa.",
+        "evaluation": "Murid menyusun empat peristiwa mengikut urutan masa munasabah dan menyatakan waktu pada kad jam."
+      },
+      "academic_status": "HOLD_DK_TIME_WRITING_CRITERIA",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 84,
+      "sp_code": "5.1.2",
+      "title": "Urutan Masa dalam Sehari",
+      "dk_printed_page": 98,
+      "source_pdf_page": 84,
+      "source_word_sha256": "4c55e5ab9742e868cf001be4f036d41f8b316ecaa1208916eafe21e20530797b",
+      "source_pdf_sha256": "fb837b3fef857cdb9a72b2e103ca4c1956bac57d2172a4f48cf4bc779e0690e9",
+      "source_activity_titles": [
+        "Kenal Bahagian Hari",
+        "Susun Kad Aktiviti",
+        "Cerita Rutin Saya"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+        "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+        "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+        "elaboration": "Murid susun empat aktiviti daripada pagi hingga malam dan labelkan waktu pada kad jam.",
+        "evaluation": "Murid menyusun empat peristiwa mengikut urutan masa munasabah dan menyatakan waktu pada kad jam."
+      },
+      "academic_status": "HOLD_DK_TIME_WRITING_CRITERIA",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 85,
+      "sp_code": "5.1.2",
+      "title": "Urutan Masa dalam Sehari",
+      "dk_printed_page": 98,
+      "source_pdf_page": 85,
+      "source_word_sha256": "83b42e07d67e236eb5f3124f6e374aeb3600a9c07fe9901eed86e97ca1ec5c0d",
+      "source_pdf_sha256": "d6348fc715ba6428e8cf685152f8bf33f8f6888ca5a45eab532b74c750521bb2",
+      "source_activity_titles": [
+        "Kenal Bahagian Hari",
+        "Susun Kad Aktiviti",
+        "Cerita Rutin Saya"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+        "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+        "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+        "elaboration": "Murid tukar carta rutin dengan pasangan dan tulis masa bagi aktiviti yang ditunjukkan.",
+        "evaluation": "Murid menyusun empat peristiwa mengikut urutan masa munasabah dan menyatakan waktu pada kad jam."
+      },
+      "academic_status": "HOLD_DK_TIME_WRITING_CRITERIA",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 86,
+      "sp_code": "5.2.1",
+      "title": "Membaca Kalendar Masihi",
+      "dk_printed_page": 101,
+      "source_pdf_page": 86,
+      "source_word_sha256": "227824ad430d719512b8dd766064724c3fe5cd477dd81e009bd084fecb4c6781",
+      "source_pdf_sha256": "a0847112c913501876807978871c7212e0c78dbc6b786efb7ff6c299c416cd64",
+      "source_activity_titles": [
+        "Kenal Struktur Kalendar",
+        "Cari Tarikh Terpilih",
+        "Tanya Jawab Kalendar"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan kalendar bulan semasa dan meminta murid mencari tarikh hari ini.",
+        "exploration": "Murid mengenal nama hari, bulan dan tarikh serta meneliti minggu dan tahun pada kalendar.",
+        "explanation": "Guru menerangkan hubungan hari, tarikh, minggu, bulan dan tahun menggunakan kalendar.",
+        "elaboration": "Murid cari tarikh yang disebut guru dan nyatakan hari.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan kalendar."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 87,
+      "sp_code": "5.2.1",
+      "title": "Membaca Kalendar Masihi",
+      "dk_printed_page": 101,
+      "source_pdf_page": 87,
+      "source_word_sha256": "6255ef21cb9529a86e3ffc5b98299327ca22da2f0a3641b8c1c797f4f58614e3",
+      "source_pdf_sha256": "338a7da224a1ab73321d3a41c37618b3c60e5dd2531a7c64aa511fa9a48f3dc9",
+      "source_activity_titles": [
+        "Kenal Struktur Kalendar",
+        "Cari Tarikh Terpilih",
+        "Tanya Jawab Kalendar"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan kalendar bulan semasa dan meminta murid mencari tarikh hari ini.",
+        "exploration": "Murid mengenal nama hari, bulan dan tarikh serta meneliti minggu dan tahun pada kalendar.",
+        "explanation": "Guru menerangkan hubungan hari, tarikh, minggu, bulan dan tahun menggunakan kalendar.",
+        "elaboration": "Murid tandakan hari pertama dan terakhir bulan contoh.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan kalendar."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 88,
+      "sp_code": "5.2.1",
+      "title": "Membaca Kalendar Masihi",
+      "dk_printed_page": 101,
+      "source_pdf_page": 88,
+      "source_word_sha256": "3ed8a7eacaf4ff7d9c82a57024b327bb6f9407b68cc32a0121e607709b827ca2",
+      "source_pdf_sha256": "2160b127c11bdee8a92170ac833931dd02abe1fbd19a3b243394396c74074f08",
+      "source_activity_titles": [
+        "Kenal Struktur Kalendar",
+        "Cari Tarikh Terpilih",
+        "Tanya Jawab Kalendar"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan kalendar bulan semasa dan meminta murid mencari tarikh hari ini.",
+        "exploration": "Murid mengenal nama hari, bulan dan tarikh serta meneliti minggu dan tahun pada kalendar.",
+        "explanation": "Guru menerangkan hubungan hari, tarikh, minggu, bulan dan tahun menggunakan kalendar.",
+        "elaboration": "Murid cari hari sebelum dan selepas satu tarikh pilihan.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan kalendar."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 89,
+      "sp_code": "5.2.1",
+      "title": "Membaca Kalendar Masihi",
+      "dk_printed_page": 101,
+      "source_pdf_page": 89,
+      "source_word_sha256": "6685fb70a54b012bad187a15e924909b539d211bb6cf1c573f60f87322b8d3c6",
+      "source_pdf_sha256": "162e3457b31285599420e7391d3f4d30aebf28d98c551e8fe5dcb2cd9a318ad9",
+      "source_activity_titles": [
+        "Kenal Struktur Kalendar",
+        "Cari Tarikh Terpilih",
+        "Tanya Jawab Kalendar"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan kalendar bulan semasa dan meminta murid mencari tarikh hari ini.",
+        "exploration": "Murid mengenal nama hari, bulan dan tarikh serta meneliti minggu dan tahun pada kalendar.",
+        "explanation": "Guru menerangkan hubungan hari, tarikh, minggu, bulan dan tahun menggunakan kalendar.",
+        "elaboration": "Murid bandingkan dua bulan dan nyatakan bilangan hari masing-masing.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan kalendar."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 90,
+      "sp_code": "6.1.1",
+      "title": "Mengukur dengan Unit Bukan Piawai",
+      "dk_printed_page": 107,
+      "source_pdf_page": 90,
+      "source_word_sha256": "0cd73cefd08ebc7bd0136c9f623a6074628b097235e641ef650a5e7cf17604d2",
+      "source_pdf_sha256": "f26fcb8e188446d04217073d95891fe873ec22f298c8f66db64928a47936e601",
+      "source_activity_titles": [
+        "Kenal Unit Bukan Piawai",
+        "Ukur dari Hujung",
+        "Catat dan Semak"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan panjang pensel berbanding beberapa klip kertas.",
+        "exploration": "Murid mencuba jengkal, langkah dan objek seragam untuk mengukur.",
+        "explanation": "Guru menunjukkan ukuran hujung ke hujung tanpa ruang atau tindihan dan keperluan unit konsisten.",
+        "elaboration": "Murid ukur tiga objek kelas menggunakan klip seragam.",
+        "evaluation": "Murid mengukur sekurang-kurangnya tiga objek dan merekod bilangan unit dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 91,
+      "sp_code": "6.1.1",
+      "title": "Mengukur dengan Unit Bukan Piawai",
+      "dk_printed_page": 107,
+      "source_pdf_page": 91,
+      "source_word_sha256": "98b2422ccbabb3a8618944bbc1d5e69128f1fbfcaa84aba3deab7127dd2a9cf8",
+      "source_pdf_sha256": "4d287dcc68ae40611bdcec0857cc155a857c0cf9c8f9f86916859e8ccf874443",
+      "source_activity_titles": [
+        "Kenal Unit Bukan Piawai",
+        "Ukur dari Hujung",
+        "Catat dan Semak"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan panjang pensel berbanding beberapa klip kertas.",
+        "exploration": "Murid mencuba jengkal, langkah dan objek seragam untuk mengukur.",
+        "explanation": "Guru menunjukkan ukuran hujung ke hujung tanpa ruang atau tindihan dan keperluan unit konsisten.",
+        "elaboration": "Murid ukur tiga jalur kertas menggunakan blok seragam.",
+        "evaluation": "Murid mengukur sekurang-kurangnya tiga objek dan merekod bilangan unit dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 92,
+      "sp_code": "6.1.1",
+      "title": "Mengukur dengan Unit Bukan Piawai",
+      "dk_printed_page": 107,
+      "source_pdf_page": 92,
+      "source_word_sha256": "e894bb7e78f4ab662188e6213800a3a0b1dce54c412a237ab021d155126eba8a",
+      "source_pdf_sha256": "a88026c8a27d7197c912d0dba9d52598ac377ebf6b316e483fb0d20f292f8414",
+      "source_activity_titles": [
+        "Kenal Unit Bukan Piawai",
+        "Ukur dari Hujung",
+        "Catat dan Semak"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan panjang pensel berbanding beberapa klip kertas.",
+        "exploration": "Murid mencuba jengkal, langkah dan objek seragam untuk mengukur.",
+        "explanation": "Guru menunjukkan ukuran hujung ke hujung tanpa ruang atau tindihan dan keperluan unit konsisten.",
+        "elaboration": "Murid ukur tiga objek dengan jalur unit yang sama dan banding catatan pasangan.",
+        "evaluation": "Murid mengukur sekurang-kurangnya tiga objek dan merekod bilangan unit dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 93,
+      "sp_code": "6.1.1",
+      "title": "Mengukur dengan Unit Bukan Piawai",
+      "dk_printed_page": 107,
+      "source_pdf_page": 93,
+      "source_word_sha256": "eb0cf895ec58e25e90bdb4cccdca5949524a59421eed8783c7f795acc2e8284b",
+      "source_pdf_sha256": "2784f786be6c4fb58c44af8f4745088128eed7ca36d4aa24d2570df83015161a",
+      "source_activity_titles": [
+        "Kenal Unit Bukan Piawai",
+        "Ukur dari Hujung",
+        "Catat dan Semak"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan panjang pensel berbanding beberapa klip kertas.",
+        "exploration": "Murid mencuba jengkal, langkah dan objek seragam untuk mengukur.",
+        "explanation": "Guru menunjukkan ukuran hujung ke hujung tanpa ruang atau tindihan dan keperluan unit konsisten.",
+        "elaboration": "Murid ukur tiga jarak pendek dengan unit bukan piawai yang dipilih dan catat bilangan unit.",
+        "evaluation": "Murid mengukur sekurang-kurangnya tiga objek dan merekod bilangan unit dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 94,
+      "sp_code": "6.1.2",
+      "title": "Membanding Panjang Bukan Piawai",
+      "dk_printed_page": 110,
+      "source_pdf_page": 94,
+      "source_word_sha256": "4c8f686e65e9c96f6f8fb40e9dc0b21ec22d02fdf98bab2c2ae476a5cd075f3e",
+      "source_pdf_sha256": "74cd8873024b2a77db07697293afdc76e8658c87bf9b70bc52af49e3c6cb9e0f",
+      "source_activity_titles": [
+        "Ukur Dua Objek",
+        "Banding Bilangan Unit",
+        "Terangkan Keputusan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua pita berbeza panjang; murid meramal pita lebih panjang.",
+        "exploration": "Murid mengukur dua atau tiga objek menggunakan blok seragam yang sama.",
+        "explanation": "Guru membimbing perbandingan bilangan unit menggunakan lebih panjang, lebih pendek dan sama panjang.",
+        "elaboration": "Murid banding dua jalur kertas dengan unit klip seragam.",
+        "evaluation": "Murid menentukan objek lebih panjang atau lebih pendek dalam empat perbandingan menggunakan unit yang sama."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 95,
+      "sp_code": "6.1.2",
+      "title": "Membanding Panjang Bukan Piawai",
+      "dk_printed_page": 110,
+      "source_pdf_page": 95,
+      "source_word_sha256": "2c82ee1e16853ee3a0e1f6a50f3885afbb3ed838b5f8210ec259fe0d202b0d18",
+      "source_pdf_sha256": "40ebda0d0617400e2360550d2961c4b99c68be5ed04f51520fedf23d9f54c379",
+      "source_activity_titles": [
+        "Ukur Dua Objek",
+        "Banding Bilangan Unit",
+        "Terangkan Keputusan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua pita berbeza panjang; murid meramal pita lebih panjang.",
+        "exploration": "Murid mengukur dua atau tiga objek menggunakan blok seragam yang sama.",
+        "explanation": "Guru membimbing perbandingan bilangan unit menggunakan lebih panjang, lebih pendek dan sama panjang.",
+        "elaboration": "Murid banding tiga jalur dan susun daripada terpendek kepada terpanjang.",
+        "evaluation": "Murid menentukan objek lebih panjang atau lebih pendek dalam empat perbandingan menggunakan unit yang sama."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 96,
+      "sp_code": "6.1.2",
+      "title": "Membanding Panjang Bukan Piawai",
+      "dk_printed_page": 110,
+      "source_pdf_page": 96,
+      "source_word_sha256": "311c026203ca5fbeb3498a6e6e6f58c9e740a46ffdb03977bc463ef20619440d",
+      "source_pdf_sha256": "e3f9d924936099242cab8334eba94300b02fb7d5f429e65bb2f91b4d20276123",
+      "source_activity_titles": [
+        "Ukur Dua Objek",
+        "Banding Bilangan Unit",
+        "Terangkan Keputusan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua pita berbeza panjang; murid meramal pita lebih panjang.",
+        "exploration": "Murid mengukur dua atau tiga objek menggunakan blok seragam yang sama.",
+        "explanation": "Guru membimbing perbandingan bilangan unit menggunakan lebih panjang, lebih pendek dan sama panjang.",
+        "elaboration": "Murid cari dua objek sama panjang melalui bacaan unit blok.",
+        "evaluation": "Murid menentukan objek lebih panjang atau lebih pendek dalam empat perbandingan menggunakan unit yang sama."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 97,
+      "sp_code": "6.1.2",
+      "title": "Membanding Panjang Bukan Piawai",
+      "dk_printed_page": 110,
+      "source_pdf_page": 97,
+      "source_word_sha256": "e9ff0f7ff60d3b036b6d4cb62b158359e596f3e49b5f769923fb19d0374f92a7",
+      "source_pdf_sha256": "375d8ea628d450e90a6fd6c88696d77036d656b2dbe28ccdf6a8b8cedfa17a4a",
+      "source_activity_titles": [
+        "Ukur Dua Objek",
+        "Banding Bilangan Unit",
+        "Terangkan Keputusan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua pita berbeza panjang; murid meramal pita lebih panjang.",
+        "exploration": "Murid mengukur dua atau tiga objek menggunakan blok seragam yang sama.",
+        "explanation": "Guru membimbing perbandingan bilangan unit menggunakan lebih panjang, lebih pendek dan sama panjang.",
+        "elaboration": "Murid banding tiga objek tegak menggunakan unit seragam dan nyatakan paling tinggi.",
+        "evaluation": "Murid menentukan objek lebih panjang atau lebih pendek dalam empat perbandingan menggunakan unit yang sama."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 98,
+      "sp_code": "6.2.1",
+      "title": "Mengenal Sentimeter",
+      "dk_printed_page": 112,
+      "source_pdf_page": 98,
+      "source_word_sha256": "e659b842c8ae0e95d12ff554dfe0cf8aa1a162680e745553380dcdc4d98cd79b",
+      "source_pdf_sha256": "1644a0c8be5a82b2449e6b7a3265333a4068fccbec8c0434c65f221b1e6ba5d4",
+      "source_activity_titles": [
+        "Teroka Pembaris",
+        "Kenal Jarak Satu Sentimeter",
+        "Tunjuk Tanda Cm"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru memperlihatkan pembaris dan bertanya kegunaannya.",
+        "exploration": "Murid meneliti nombor dan senggatan sentimeter pada pembaris besar.",
+        "explanation": "Guru menunjukkan jarak antara tanda sentimeter berturutan ialah 1 cm dan membezakan tanda sifar.",
+        "elaboration": "Murid tunjuk tanda 0, 1 dan 5 cm pada pembaris.",
+        "evaluation": "Murid menunjukkan tanda 0, 1 cm dan 5 cm dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 99,
+      "sp_code": "6.2.1",
+      "title": "Mengenal Sentimeter",
+      "dk_printed_page": 112,
+      "source_pdf_page": 99,
+      "source_word_sha256": "a1ade7844044e90049d31298b2667576ff0411931f2659f3e54a5c6cdcf0b0d4",
+      "source_pdf_sha256": "8ebe271bdce0f99bcc0dce3b228eafde25c1474489433b79924270043a5693b8",
+      "source_activity_titles": [
+        "Teroka Pembaris",
+        "Kenal Jarak Satu Sentimeter",
+        "Tunjuk Tanda Cm"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru memperlihatkan pembaris dan bertanya kegunaannya.",
+        "exploration": "Murid meneliti nombor dan senggatan sentimeter pada pembaris besar.",
+        "explanation": "Guru menunjukkan jarak antara tanda sentimeter berturutan ialah 1 cm dan membezakan tanda sifar.",
+        "elaboration": "Murid padankan kad cm dengan senggatan 2 dan 4 cm.",
+        "evaluation": "Murid menunjukkan tanda 0, 1 cm dan 5 cm dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 100,
+      "sp_code": "6.2.1",
+      "title": "Mengenal Sentimeter",
+      "dk_printed_page": 112,
+      "source_pdf_page": 100,
+      "source_word_sha256": "8fc0b0ffa89c42e4cd3d9d554ce239b4d723798f77207ff968cd62ce23e073ef",
+      "source_pdf_sha256": "cbf062f2a28fc571fa0ef75576d89f621f2b89705446e4e099c5e060dba28af2",
+      "source_activity_titles": [
+        "Teroka Pembaris",
+        "Kenal Jarak Satu Sentimeter",
+        "Tunjuk Tanda Cm"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru memperlihatkan pembaris dan bertanya kegunaannya.",
+        "exploration": "Murid meneliti nombor dan senggatan sentimeter pada pembaris besar.",
+        "explanation": "Guru menunjukkan jarak antara tanda sentimeter berturutan ialah 1 cm dan membezakan tanda sifar.",
+        "elaboration": "Murid tunjuk jarak 1 cm antara tanda 3 dan 4.",
+        "evaluation": "Murid menunjukkan tanda 0, 1 cm dan 5 cm dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 101,
+      "sp_code": "6.2.1",
+      "title": "Mengenal Sentimeter",
+      "dk_printed_page": 112,
+      "source_pdf_page": 101,
+      "source_word_sha256": "326a1b0b1f628e58e416a7d2c6ae0e108714bd6c86b64425b0eb9a8a8398b1b6",
+      "source_pdf_sha256": "a660967db6532e70b1b25ebf3a9e572bd8932c3bb7e272fcc7bad5ed9efef79a",
+      "source_activity_titles": [
+        "Teroka Pembaris",
+        "Kenal Jarak Satu Sentimeter",
+        "Tunjuk Tanda Cm"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru memperlihatkan pembaris dan bertanya kegunaannya.",
+        "exploration": "Murid meneliti nombor dan senggatan sentimeter pada pembaris besar.",
+        "explanation": "Guru menunjukkan jarak antara tanda sentimeter berturutan ialah 1 cm dan membezakan tanda sifar.",
+        "elaboration": "Murid tandakan 0, 1 dan 5 cm pada gambar pembaris.",
+        "evaluation": "Murid menunjukkan tanda 0, 1 cm dan 5 cm dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 102,
+      "sp_code": "6.2.2",
+      "title": "Mengukur Panjang dalam Sentimeter",
+      "dk_printed_page": 114,
+      "source_pdf_page": 102,
+      "source_word_sha256": "a3d9647189057c855e9cb69bcab5a27f88c14e0172e78a72bbbbc0abd2bdecaf",
+      "source_pdf_sha256": "db540581cb36db156bc75a8798e8ad5ede66ff395c5a898c4c599b048134251e",
+      "source_activity_titles": [
+        "Kenal Kedudukan Sifar",
+        "Ukur Objek Kelas",
+        "Semak Bacaan Pasangan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua cara meletakkan pembaris; murid memilih cara betul.",
+        "exploration": "Murid mencuba menjajarkan hujung objek dengan tanda sifar dan membaca hujung satu lagi.",
+        "explanation": "Guru membimbing bacaan sentimeter dan membetulkan penjajaran yang salah.",
+        "elaboration": "Murid ukur pensel, pemadam dan jalur kertas serta catat cm.",
+        "evaluation": "Murid mencatat panjang sekurang-kurangnya tiga daripada empat objek dengan tepat dalam cm."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 103,
+      "sp_code": "6.2.2",
+      "title": "Mengukur Panjang dalam Sentimeter",
+      "dk_printed_page": 114,
+      "source_pdf_page": 103,
+      "source_word_sha256": "b3ff066f8e3c2a731cc71f0f70c1546d8f4a21bf67aad01d5b89a1948ac38703",
+      "source_pdf_sha256": "9e274dba1f5a51a49b996a79e75a1e45da6324f28ddb8521378264a2ac68b6be",
+      "source_activity_titles": [
+        "Kenal Kedudukan Sifar",
+        "Ukur Objek Kelas",
+        "Semak Bacaan Pasangan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua cara meletakkan pembaris; murid memilih cara betul.",
+        "exploration": "Murid mencuba menjajarkan hujung objek dengan tanda sifar dan membaca hujung satu lagi.",
+        "explanation": "Guru membimbing bacaan sentimeter dan membetulkan penjajaran yang salah.",
+        "elaboration": "Murid ukur tiga objek lurus yang muat pada pembaris dan tukar catatan.",
+        "evaluation": "Murid mencatat panjang sekurang-kurangnya tiga daripada empat objek dengan tepat dalam cm."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 104,
+      "sp_code": "6.2.2",
+      "title": "Mengukur Panjang dalam Sentimeter",
+      "dk_printed_page": 114,
+      "source_pdf_page": 104,
+      "source_word_sha256": "835fe176918a97301383c939e169d4becda7db08855c06a6a836b0f2e9608f2a",
+      "source_pdf_sha256": "e157cb7e1a10f6f5a5186da3f41d54a2cba9eee16392a1bf3cc1eedcc79ee399",
+      "source_activity_titles": [
+        "Kenal Kedudukan Sifar",
+        "Ukur Objek Kelas",
+        "Semak Bacaan Pasangan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua cara meletakkan pembaris; murid memilih cara betul.",
+        "exploration": "Murid mencuba menjajarkan hujung objek dengan tanda sifar dan membaca hujung satu lagi.",
+        "explanation": "Guru membimbing bacaan sentimeter dan membetulkan penjajaran yang salah.",
+        "elaboration": "Murid ukur jalur kertas berbeza panjang dan semak penjajaran pasangan.",
+        "evaluation": "Murid mencatat panjang sekurang-kurangnya tiga daripada empat objek dengan tepat dalam cm."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 105,
+      "sp_code": "6.2.2",
+      "title": "Mengukur Panjang dalam Sentimeter",
+      "dk_printed_page": 114,
+      "source_pdf_page": 105,
+      "source_word_sha256": "3ee9ef18f5f2d5a5fb94f44c99cbb649f0114ed6d2de4511b896210e9a84e76d",
+      "source_pdf_sha256": "06e01e4c9f36315666680755938c2cd1f31f2955c1494cd222189b60edb64a64",
+      "source_activity_titles": [
+        "Kenal Kedudukan Sifar",
+        "Ukur Objek Kelas",
+        "Semak Bacaan Pasangan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua cara meletakkan pembaris; murid memilih cara betul.",
+        "exploration": "Murid mencuba menjajarkan hujung objek dengan tanda sifar dan membaca hujung satu lagi.",
+        "explanation": "Guru membimbing bacaan sentimeter dan membetulkan penjajaran yang salah.",
+        "elaboration": "Murid ukur objek pilihan, kemudian betulkan contoh pembaris tersalah kedudukan.",
+        "evaluation": "Murid mencatat panjang sekurang-kurangnya tiga daripada empat objek dengan tepat dalam cm."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 106,
+      "sp_code": "6.2.3",
+      "title": "Membanding Ukuran Tiga Objek",
+      "dk_printed_page": 117,
+      "source_pdf_page": 106,
+      "source_word_sha256": "e46258c57a47de557ede88dcf3b59b0b6035858ecd1c12cf33f85e6aa57be1e3",
+      "source_pdf_sha256": "5e9d1bf6792589dbaa4365144ff36141dc671ed2a099e7f0e8f48217d88532d9",
+      "source_activity_titles": [
+        "Ukur Tiga Objek",
+        "Susun Ukuran",
+        "Jelaskan Perbezaan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan tiga pensel dan meminta murid meramal susunannya.",
+        "exploration": "Murid mengukur tiga objek dalam cm dan merekod bacaan.",
+        "explanation": "Guru menerangkan perbandingan berdasarkan nombor ukuran dan unit yang sama.",
+        "elaboration": "Murid susun tiga jalur kertas mengikut panjang.",
+        "evaluation": "Murid menyusun tiga ukuran dan menamakan objek terpendek serta terpanjang."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 107,
+      "sp_code": "6.2.3",
+      "title": "Membanding Ukuran Tiga Objek",
+      "dk_printed_page": 117,
+      "source_pdf_page": 107,
+      "source_word_sha256": "3ce0e1f20865111070218ceb11a69c91b4eb2d32f8887da72e11dfbb370e0852",
+      "source_pdf_sha256": "bc59d2412ecbb635c2897c2c9eea13e8e64d8146c650504bda8286a8d841d1ec",
+      "source_activity_titles": [
+        "Ukur Tiga Objek",
+        "Susun Ukuran",
+        "Jelaskan Perbezaan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan tiga pensel dan meminta murid meramal susunannya.",
+        "exploration": "Murid mengukur tiga objek dalam cm dan merekod bacaan.",
+        "explanation": "Guru menerangkan perbandingan berdasarkan nombor ukuran dan unit yang sama.",
+        "elaboration": "Murid susun bacaan tiga pensel dan kenal pasti terpendek serta terpanjang.",
+        "evaluation": "Murid menyusun tiga ukuran dan menamakan objek terpendek serta terpanjang."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 108,
+      "sp_code": "6.2.3",
+      "title": "Membanding Ukuran Tiga Objek",
+      "dk_printed_page": 117,
+      "source_pdf_page": 108,
+      "source_word_sha256": "92126276cfdabda7136c18fe2a76ccf059c21774235d35c512aab0271970d100",
+      "source_pdf_sha256": "5530a4a154d094c2bc3d6518696454c15c313ed5aaf3eddabd9d3e32e5c85058",
+      "source_activity_titles": [
+        "Ukur Tiga Objek",
+        "Susun Ukuran",
+        "Jelaskan Perbezaan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan tiga pensel dan meminta murid meramal susunannya.",
+        "exploration": "Murid mengukur tiga objek dalam cm dan merekod bacaan.",
+        "explanation": "Guru menerangkan perbandingan berdasarkan nombor ukuran dan unit yang sama.",
+        "elaboration": "Murid banding tiga objek, termasuk dua yang sama panjang.",
+        "evaluation": "Murid menyusun tiga ukuran dan menamakan objek terpendek serta terpanjang."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 109,
+      "sp_code": "6.2.3",
+      "title": "Membanding Ukuran Tiga Objek",
+      "dk_printed_page": 117,
+      "source_pdf_page": 109,
+      "source_word_sha256": "bfaee9f05a85bb50ea05f8a652b4ec53b32487d6a1488e0948bf603d85a4b2ea",
+      "source_pdf_sha256": "98ad0ef6b12ecd9629d37eaf39e9de2015f330d26fa0896fb91116e96d890d2f",
+      "source_activity_titles": [
+        "Ukur Tiga Objek",
+        "Susun Ukuran",
+        "Jelaskan Perbezaan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan tiga pensel dan meminta murid meramal susunannya.",
+        "exploration": "Murid mengukur tiga objek dalam cm dan merekod bacaan.",
+        "explanation": "Guru menerangkan perbandingan berdasarkan nombor ukuran dan unit yang sama.",
+        "elaboration": "Murid banding tiga jalur tegak dan jelaskan yang paling tinggi berdasarkan cm.",
+        "evaluation": "Murid menyusun tiga ukuran dan menamakan objek terpendek serta terpanjang."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 110,
+      "sp_code": "7.1.1",
+      "title": "Mengumpul Maklumat Harian",
+      "dk_printed_page": 123,
+      "source_pdf_page": 110,
+      "source_word_sha256": "4fba8240bae8ff96525b980a79061d15735e955239bf60904feaf26ff9faa0b9",
+      "source_pdf_sha256": "8698e17088a17cc3ef2e68f4681f8f1ba9a3ae1d270f231402a99f375ce341bc",
+      "source_activity_titles": [
+        "Tentukan Soalan",
+        "Kutip dan Tanda Data",
+        "Semak Jumlah"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru meminta murid memilih buah kegemaran daripada tiga gambar.",
+        "exploration": "Murid bertanya pilihan secara sukarela dan merekod gundal mengikut kategori tanpa nama.",
+        "explanation": "Guru menerangkan penggunaan satu tanda bagi satu respons serta cara menyemak jadual.",
+        "elaboration": "Murid kutip pilihan buah daripada lima rakan.",
+        "evaluation": "Murid merekod maklumat sekurang-kurangnya lima rakan dengan tepat tanpa data peribadi."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 111,
+      "sp_code": "7.1.1",
+      "title": "Mengumpul Maklumat Harian",
+      "dk_printed_page": 123,
+      "source_pdf_page": 111,
+      "source_word_sha256": "e328e3a0483d9fc680b43f510a8317364200b4890323cb01cc8e1c6098a9467e",
+      "source_pdf_sha256": "0794c155215bedd91b8e5272e8ef4a607c262dab065fdc433f0ec55912252d98",
+      "source_activity_titles": [
+        "Tentukan Soalan",
+        "Kutip dan Tanda Data",
+        "Semak Jumlah"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru meminta murid memilih buah kegemaran daripada tiga gambar.",
+        "exploration": "Murid bertanya pilihan secara sukarela dan merekod gundal mengikut kategori tanpa nama.",
+        "explanation": "Guru menerangkan penggunaan satu tanda bagi satu respons serta cara menyemak jadual.",
+        "elaboration": "Murid kutip pilihan warna daripada lima rakan secara sukarela.",
+        "evaluation": "Murid merekod maklumat sekurang-kurangnya lima rakan dengan tepat tanpa data peribadi."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 112,
+      "sp_code": "7.1.1",
+      "title": "Mengumpul Maklumat Harian",
+      "dk_printed_page": 123,
+      "source_pdf_page": 112,
+      "source_word_sha256": "261ca730058752dacc6a1c02b8cce75caa9832b377847aeaf06696d4ffe86279",
+      "source_pdf_sha256": "3568166b9fa20b3be0eaf79401daf76025efc98915e69ce932970f776f43b031",
+      "source_activity_titles": [
+        "Tentukan Soalan",
+        "Kutip dan Tanda Data",
+        "Semak Jumlah"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru meminta murid memilih buah kegemaran daripada tiga gambar.",
+        "exploration": "Murid bertanya pilihan secara sukarela dan merekod gundal mengikut kategori tanpa nama.",
+        "explanation": "Guru menerangkan penggunaan satu tanda bagi satu respons serta cara menyemak jadual.",
+        "elaboration": "Murid kutip pilihan gambar haiwan dan rekod jadual.",
+        "evaluation": "Murid merekod maklumat sekurang-kurangnya lima rakan dengan tepat tanpa data peribadi."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 113,
+      "sp_code": "7.1.1",
+      "title": "Mengumpul Maklumat Harian",
+      "dk_printed_page": 123,
+      "source_pdf_page": 113,
+      "source_word_sha256": "a603149e5c160bcbd7200fd2b7ecda33011ba726cad825d375bf138c64ff5011",
+      "source_pdf_sha256": "931608d3b2f0ec380c7a647ee623fd81df3887aa073738e731f0ff95f532f5d7",
+      "source_activity_titles": [
+        "Tentukan Soalan",
+        "Kutip dan Tanda Data",
+        "Semak Jumlah"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru meminta murid memilih buah kegemaran daripada tiga gambar.",
+        "exploration": "Murid bertanya pilihan secara sukarela dan merekod gundal mengikut kategori tanpa nama.",
+        "explanation": "Guru menerangkan penggunaan satu tanda bagi satu respons serta cara menyemak jadual.",
+        "elaboration": "Murid kutip pilihan aktiviti kelas daripada lima rakan dan semak gundal.",
+        "evaluation": "Murid merekod maklumat sekurang-kurangnya lima rakan dengan tepat tanpa data peribadi."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 114,
+      "sp_code": "7.1.2",
+      "title": "Memahami Piktograf",
+      "dk_printed_page": 123,
+      "source_pdf_page": 114,
+      "source_word_sha256": "ced02076944f0b73db3a24911331854e2023005fd79f7b42d2b268d8ce826f62",
+      "source_pdf_sha256": "55cafde02813a5521f8ee1a3beceef305cc91d8746eb8b71bbca0f539bbbc190",
+      "source_activity_titles": [
+        "Kenal Piktograf",
+        "Susun Kad Gambar",
+        "Semak Padanan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar buah tersusun; murid membilang setiap baris.",
+        "exploration": "Murid menyusun satu gambar bagi satu respons dalam grid kategori.",
+        "explanation": "Guru menerangkan tajuk, kategori, simbol dan petunjuk satu simbol mewakili satu unit.",
+        "elaboration": "Murid bina piktograf buah daripada jadual tiga kategori.",
+        "evaluation": "Murid melengkapkan piktograf tiga kategori berdasarkan jadual dengan bilangan simbol betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 115,
+      "sp_code": "7.1.2",
+      "title": "Memahami Piktograf",
+      "dk_printed_page": 123,
+      "source_pdf_page": 115,
+      "source_word_sha256": "937cf9e77b5f267120870473987815bbdc369f68a1860dc7b25f362ac6c9da7c",
+      "source_pdf_sha256": "619767371e1056daf298045424c393b7d814c32a1a82d00177dbe33e04a529b8",
+      "source_activity_titles": [
+        "Kenal Piktograf",
+        "Susun Kad Gambar",
+        "Semak Padanan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar buah tersusun; murid membilang setiap baris.",
+        "exploration": "Murid menyusun satu gambar bagi satu respons dalam grid kategori.",
+        "explanation": "Guru menerangkan tajuk, kategori, simbol dan petunjuk satu simbol mewakili satu unit.",
+        "elaboration": "Murid bina piktograf pilihan warna menggunakan satu simbol bagi satu respons.",
+        "evaluation": "Murid melengkapkan piktograf tiga kategori berdasarkan jadual dengan bilangan simbol betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 116,
+      "sp_code": "7.1.2",
+      "title": "Memahami Piktograf",
+      "dk_printed_page": 123,
+      "source_pdf_page": 116,
+      "source_word_sha256": "1fc7c9693751a90352a03b9ed979016f5a02009d623a92726f85279aba1656e1",
+      "source_pdf_sha256": "65e0c6901d00b2b287c7af590c5caf3895127a3e8dea5acc069c38402dd6e079",
+      "source_activity_titles": [
+        "Kenal Piktograf",
+        "Susun Kad Gambar",
+        "Semak Padanan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar buah tersusun; murid membilang setiap baris.",
+        "exploration": "Murid menyusun satu gambar bagi satu respons dalam grid kategori.",
+        "explanation": "Guru menerangkan tajuk, kategori, simbol dan petunjuk satu simbol mewakili satu unit.",
+        "elaboration": "Murid bina piktograf haiwan daripada jadual mudah.",
+        "evaluation": "Murid melengkapkan piktograf tiga kategori berdasarkan jadual dengan bilangan simbol betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 117,
+      "sp_code": "7.1.2",
+      "title": "Memahami Piktograf",
+      "dk_printed_page": 123,
+      "source_pdf_page": 117,
+      "source_word_sha256": "f90fe7c525ab0a72a2628b7b8c03ea3ba2eb963aa9d018f17dc4b4e2daee4476",
+      "source_pdf_sha256": "bca96430beb79d4727bd4761e4d61956239c1873f955f433e2accdf11a1a4dce",
+      "source_activity_titles": [
+        "Kenal Piktograf",
+        "Susun Kad Gambar",
+        "Semak Padanan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar buah tersusun; murid membilang setiap baris.",
+        "exploration": "Murid menyusun satu gambar bagi satu respons dalam grid kategori.",
+        "explanation": "Guru menerangkan tajuk, kategori, simbol dan petunjuk satu simbol mewakili satu unit.",
+        "elaboration": "Murid tukar piktograf tiga kategori dengan pasangan dan semak padanan jadual.",
+        "evaluation": "Murid melengkapkan piktograf tiga kategori berdasarkan jadual dengan bilangan simbol betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 118,
+      "sp_code": "7.1.3",
+      "title": "Membaca Maklumat Piktograf",
+      "dk_printed_page": 125,
+      "source_pdf_page": 118,
+      "source_word_sha256": "6f5d99558fcbae4b1d70ec004c8af7b6591a8d660f033d7aa06794c57a977fa6",
+      "source_pdf_sha256": "580d0ed137f36b6c94a3c0dd120a5c95039cfc5251cc4a646b976dc4b2b77067",
+      "source_activity_titles": [
+        "Kenal Kategori dan Simbol",
+        "Baca dan Banding",
+        "Jelaskan Jawapan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+        "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+        "explanation": "Guru memodelkan bacaan petunjuk satu simbol mewakili satu unit dan sepuluh unit melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+        "elaboration": "Murid baca piktograf haiwan dengan petunjuk satu simbol satu unit.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan piktograf berpandukan petunjuk."
+      },
+      "academic_status": "HOLD_DK_BOTH_KEYS_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 119,
+      "sp_code": "7.1.3",
+      "title": "Membaca Maklumat Piktograf",
+      "dk_printed_page": 125,
+      "source_pdf_page": 119,
+      "source_word_sha256": "6625565ee9695fc4e4230e2d7e38ef222b398390116e9ddb442d99ff7d74191a",
+      "source_pdf_sha256": "ec2dae711419f692d774bd42f04527d95b38385fb1bb2287834d99380898b576",
+      "source_activity_titles": [
+        "Kenal Kategori dan Simbol",
+        "Baca dan Banding",
+        "Jelaskan Jawapan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+        "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+        "explanation": "Guru memodelkan bacaan petunjuk satu simbol mewakili satu unit dan sepuluh unit melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+        "elaboration": "Murid baca piktograf buku dengan petunjuk satu simbol sepuluh unit.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan piktograf berpandukan petunjuk."
+      },
+      "academic_status": "HOLD_DK_BOTH_KEYS_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 120,
+      "sp_code": "7.1.3",
+      "title": "Membaca Maklumat Piktograf",
+      "dk_printed_page": 125,
+      "source_pdf_page": 120,
+      "source_word_sha256": "868407d01ce19f5b36b4ba255fde19e535fdd221a2e4c279a28b362b317758ef",
+      "source_pdf_sha256": "fc5313d1271a105543e378cb7b07f9c9798ff210c25e87738179c198f1b58fba",
+      "source_activity_titles": [
+        "Kenal Kategori dan Simbol",
+        "Baca dan Banding",
+        "Jelaskan Jawapan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+        "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+        "explanation": "Guru memodelkan bacaan petunjuk satu simbol mewakili satu unit dan sepuluh unit melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+        "elaboration": "Murid banding dua kategori dalam piktograf pilihan buah berpandukan petunjuk.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan piktograf berpandukan petunjuk."
+      },
+      "academic_status": "HOLD_DK_BOTH_KEYS_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 121,
+      "sp_code": "7.1.3",
+      "title": "Membaca Maklumat Piktograf",
+      "dk_printed_page": 125,
+      "source_pdf_page": 121,
+      "source_word_sha256": "9c456dae2d1b0e0f9fa3ac0998e6b4cdc64ff4decc3b5b3816fea193572aeff3",
+      "source_pdf_sha256": "47a9c1ece82e174da84f2d2bf8fec6233960e87dea193a1df964ebbcfe35d307",
+      "source_activity_titles": [
+        "Kenal Kategori dan Simbol",
+        "Baca dan Banding",
+        "Jelaskan Jawapan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+        "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+        "explanation": "Guru memodelkan bacaan petunjuk satu simbol mewakili satu unit dan sepuluh unit melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+        "elaboration": "Murid tukar kad soalan piktograf dengan pasangan dan terangkan nilai berdasarkan petunjuk.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan piktograf berpandukan petunjuk."
+      },
+      "academic_status": "HOLD_DK_BOTH_KEYS_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 122,
+      "sp_code": "7.1.4",
+      "title": "Menyelesaikan Masalah Data Harian",
+      "dk_printed_page": 129,
+      "source_pdf_page": 122,
+      "source_word_sha256": "0286d75b71990103997f35e1345372069a2e18e224c864fb0cc0b6e134742856",
+      "source_pdf_sha256": "470c7f56f980448d04e38039940f3f7c2de59019c7a1a14b04e7ae002105d3ad",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Selesaikan Masalah",
+        "Banding Strategi"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+        "exploration": "Murid mengenal kategori yang diperlukan dan membaca petunjuk satu simbol satu unit.",
+        "explanation": "Guru membimbing penghitungan simbol berkaitan secara terus tanpa menulis operasi tambah atau tolak.",
+        "elaboration": "Murid hitung semua simbol buku dalam baris Isnin dan Selasa secara terus.",
+        "evaluation": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah harian melalui penghitungan simbol mengikut petunjuk, tanpa operasi tambah atau tolak."
+      },
+      "academic_status": "HOLD_DK_NO_ARITHMETIC_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 123,
+      "sp_code": "7.1.4",
+      "title": "Menyelesaikan Masalah Data Harian",
+      "dk_printed_page": 129,
+      "source_pdf_page": 123,
+      "source_word_sha256": "65be5c7406e283aae6a850ca052aa1800dbecee9382b6b149035114d8c54d2ff",
+      "source_pdf_sha256": "e5b17294c03c37b480330dff0a34a31bc3451e9eaed4a0f0aff83a36c2da4da6",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Selesaikan Masalah",
+        "Banding Strategi"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+        "exploration": "Murid mengenal kategori yang diperlukan dan membaca petunjuk satu simbol satu unit.",
+        "explanation": "Guru membimbing penghitungan simbol berkaitan secara terus tanpa menulis operasi tambah atau tolak.",
+        "elaboration": "Murid hitung simbol pilihan makanan dalam dua kategori yang ditanya.",
+        "evaluation": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah harian melalui penghitungan simbol mengikut petunjuk, tanpa operasi tambah atau tolak."
+      },
+      "academic_status": "HOLD_DK_NO_ARITHMETIC_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 124,
+      "sp_code": "7.1.4",
+      "title": "Menyelesaikan Masalah Data Harian",
+      "dk_printed_page": 129,
+      "source_pdf_page": 124,
+      "source_word_sha256": "67bec795c01d8eaafa3cc85a33e0d7f5a10aacf3058150175a6d38cec90d1cd1",
+      "source_pdf_sha256": "4a59697e9fceb20760a6b1b8d6ecc53b49a4e1d926123eae4544d5ae5cbb08c4",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Selesaikan Masalah",
+        "Banding Strategi"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+        "exploration": "Murid mengenal kategori yang diperlukan dan membaca petunjuk satu simbol satu unit.",
+        "explanation": "Guru membimbing penghitungan simbol berkaitan secara terus tanpa menulis operasi tambah atau tolak.",
+        "elaboration": "Murid kenal pasti kategori yang memenuhi bilangan dalam soalan melalui kiraan simbol.",
+        "evaluation": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah harian melalui penghitungan simbol mengikut petunjuk, tanpa operasi tambah atau tolak."
+      },
+      "academic_status": "HOLD_DK_NO_ARITHMETIC_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 125,
+      "sp_code": "7.1.4",
+      "title": "Menyelesaikan Masalah Data Harian",
+      "dk_printed_page": 129,
+      "source_pdf_page": 125,
+      "source_word_sha256": "79a6aa4ef0ee6fa806a96e65da0dce3021ab42f58e25c82c86b9d857ea91c581",
+      "source_pdf_sha256": "5e32caf9d8d66fc17ca4971fd3d4ab067d167b20f738295051162529e74826e2",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Selesaikan Masalah",
+        "Banding Strategi"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+        "exploration": "Murid mengenal kategori yang diperlukan dan membaca petunjuk satu simbol satu unit.",
+        "explanation": "Guru membimbing penghitungan simbol berkaitan secara terus tanpa menulis operasi tambah atau tolak.",
+        "elaboration": "Murid hitung simbol pada baris yang ditetapkan dan terangkan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah harian melalui penghitungan simbol mengikut petunjuk, tanpa operasi tambah atau tolak."
+      },
+      "academic_status": "HOLD_DK_NO_ARITHMETIC_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 61,
+      "sp_code": "3.2.2",
+      "title": "Menukar Nilai Wang",
+      "dk_printed_page": 77,
+      "source_pdf_page": 186,
+      "source_word_sha256": "0dcddfc365a34df4452b354c403462aac2e8735fe0b5f2bf0afab684850709b4",
+      "source_pdf_sha256": "61ddbd3bf718d95f5b1c3f1a0dc73ac763ec38204a0384debe5036b3f5e6f807",
+      "source_activity_titles": [
+        "Tukar Wang Kertas",
+        "Ganti Duit Syiling",
+        "Padan Nilai Setara"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM5 dan lima RM1; murid meramal kesetaraan.",
+        "exploration": "Murid membina 50 sen dengan syiling contoh 20, 10 dan 5 sen.",
+        "explanation": "Guru memodelkan pertukaran RM5 kepada lima RM1 dan menerangkan nilai kekal.",
+        "elaboration": "Murid tukar RM10 kepada dua RM5.",
+        "evaluation": "Murid menyelesaikan empat penukaran dalam had DK; sekurang-kurangnya tiga setara nilainya."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 62,
+      "sp_code": "3.2.2",
+      "title": "Menukar Nilai Wang",
+      "dk_printed_page": 77,
+      "source_pdf_page": 187,
+      "source_word_sha256": "c8363e69f85e02713ee1331eec6a922f62406e348b74326c708329327137a4df",
+      "source_pdf_sha256": "5a9cfbc49aec7d7b16eaa0659ad75ddbd2cd3c3c1dfc9b0c9ed2d39a14d4589f",
+      "source_activity_titles": [
+        "Tukar Wang Kertas",
+        "Ganti Duit Syiling",
+        "Padan Nilai Setara"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM5 dan lima RM1; murid meramal kesetaraan.",
+        "exploration": "Murid membina 50 sen dengan syiling contoh 20, 10 dan 5 sen.",
+        "explanation": "Guru memodelkan pertukaran RM5 kepada lima RM1 dan menerangkan nilai kekal.",
+        "elaboration": "Murid tukar 50 sen kepada dua 20 sen dan satu 10 sen.",
+        "evaluation": "Murid menyelesaikan empat penukaran dalam had DK; sekurang-kurangnya tiga setara nilainya."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 63,
+      "sp_code": "3.2.2",
+      "title": "Menukar Nilai Wang",
+      "dk_printed_page": 77,
+      "source_pdf_page": 188,
+      "source_word_sha256": "29192eb67c42cc8747cfb4080540a1badc45ad8f9b95d80c332be6560b23055b",
+      "source_pdf_sha256": "547ea35a694e7e52ea3644a74070846b749330a52f621c9dfe2a8b0e8afb3430",
+      "source_activity_titles": [
+        "Tukar Wang Kertas",
+        "Ganti Duit Syiling",
+        "Padan Nilai Setara"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan RM5 dan lima RM1; murid meramal kesetaraan.",
+        "exploration": "Murid membina 50 sen dengan syiling contoh 20, 10 dan 5 sen.",
+        "explanation": "Guru memodelkan pertukaran RM5 kepada lima RM1 dan menerangkan nilai kekal.",
+        "elaboration": "Murid tukar RM5 kepada lima RM1.",
+        "evaluation": "Murid menyelesaikan empat penukaran dalam had DK; sekurang-kurangnya tiga setara nilainya."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 64,
+      "sp_code": "3.2.3",
+      "title": "Membandingkan Nilai Wang",
+      "dk_printed_page": 80,
+      "source_pdf_page": 189,
+      "source_word_sha256": "61eee3530049c13755b6f0f462e1c54bcd494cc2938f77d1aad59933c3d5655f",
+      "source_pdf_sha256": "10bbe43b4fa04ff9a3d763add636b10bc8aa20cb17308c9773beca596a58a999",
+      "source_activity_titles": [
+        "Banding Wang Kertas",
+        "Banding Duit Syiling",
+        "Jelaskan Pilihan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru mempamerkan RM1 dan RM5; murid meramal nilai lebih tinggi.",
+        "exploration": "Murid menyusun wang kertas RM1, RM5 dan RM10 serta membandingkan dua kumpulan syiling secara berasingan.",
+        "explanation": "Guru membimbing istilah lebih daripada, kurang daripada dan sama nilai; murid memberikan alasan.",
+        "elaboration": "Murid bandingkan RM5 dengan tiga RM1.",
+        "evaluation": "Murid membuat sekurang-kurangnya empat daripada lima perbandingan wang sejenis dengan istilah tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 65,
+      "sp_code": "3.2.3",
+      "title": "Membandingkan Nilai Wang",
+      "dk_printed_page": 80,
+      "source_pdf_page": 190,
+      "source_word_sha256": "6e54e75ec4f923589f640b89ed934cd773d4c12199c806ff5489c384ddf40418",
+      "source_pdf_sha256": "57603cc38a7bb365920497a038ea3732bc8b868aa383499ef6436abac5b0da6d",
+      "source_activity_titles": [
+        "Banding Wang Kertas",
+        "Banding Duit Syiling",
+        "Jelaskan Pilihan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru mempamerkan RM1 dan RM5; murid meramal nilai lebih tinggi.",
+        "exploration": "Murid menyusun wang kertas RM1, RM5 dan RM10 serta membandingkan dua kumpulan syiling secara berasingan.",
+        "explanation": "Guru membimbing istilah lebih daripada, kurang daripada dan sama nilai; murid memberikan alasan.",
+        "elaboration": "Murid bandingkan 50 sen dengan dua 20 sen.",
+        "evaluation": "Murid membuat sekurang-kurangnya empat daripada lima perbandingan wang sejenis dengan istilah tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 66,
+      "sp_code": "3.2.3",
+      "title": "Membandingkan Nilai Wang",
+      "dk_printed_page": 80,
+      "source_pdf_page": 191,
+      "source_word_sha256": "754548f5d09826dec1961408de10f4b94f01a2bd6197dbe1c1024fd75c641c8f",
+      "source_pdf_sha256": "555a3826e3bd3d9758cb32cf8c569479957c0c47487fa6bf7bc1bc2455b3ffdb",
+      "source_activity_titles": [
+        "Banding Wang Kertas",
+        "Banding Duit Syiling",
+        "Jelaskan Pilihan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru mempamerkan RM1 dan RM5; murid meramal nilai lebih tinggi.",
+        "exploration": "Murid menyusun wang kertas RM1, RM5 dan RM10 serta membandingkan dua kumpulan syiling secara berasingan.",
+        "explanation": "Guru membimbing istilah lebih daripada, kurang daripada dan sama nilai; murid memberikan alasan.",
+        "elaboration": "Murid bandingkan dua RM5 dengan RM10.",
+        "evaluation": "Murid membuat sekurang-kurangnya empat daripada lima perbandingan wang sejenis dengan istilah tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 67,
+      "sp_code": "3.2.3",
+      "title": "Membandingkan Nilai Wang",
+      "dk_printed_page": 80,
+      "source_pdf_page": 192,
+      "source_word_sha256": "d712272f1475e7cf608fb4c7797ed2cd6ecc4f703f2aeb8307ee23dc7325c7ad",
+      "source_pdf_sha256": "8ad8dc89c1eca49694b610b9f52c840d839a445bae426652e0130b8f35f69e19",
+      "source_activity_titles": [
+        "Banding Wang Kertas",
+        "Banding Duit Syiling",
+        "Jelaskan Pilihan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru mempamerkan RM1 dan RM5; murid meramal nilai lebih tinggi.",
+        "exploration": "Murid menyusun wang kertas RM1, RM5 dan RM10 serta membandingkan dua kumpulan syiling secara berasingan.",
+        "explanation": "Guru membimbing istilah lebih daripada, kurang daripada dan sama nilai; murid memberikan alasan.",
+        "elaboration": "Murid bandingkan 20 sen dengan dua 10 sen.",
+        "evaluation": "Murid membuat sekurang-kurangnya empat daripada lima perbandingan wang sejenis dengan istilah tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 68,
+      "sp_code": "4.1.1",
+      "title": "Mengenal Bentuk Dua Dimensi",
+      "dk_printed_page": 87,
+      "source_pdf_page": 193,
+      "source_word_sha256": "9bb9715ac9d6880b1294093e04dc8078c6b972856bfa70061cbdebf51b315b2d",
+      "source_pdf_sha256": "ea4795108a78195db4fd7a45c5484dd80fdf28932ef3974158ee4e2efadd20c2",
+      "source_activity_titles": [
+        "Kenal Empat Bentuk",
+        "Kira Sisi dan Bucu",
+        "Cari Bentuk Sekeliling"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piring bulat dan buku segi empat; murid mengenal bentuk.",
+        "exploration": "Murid meneliti model empat bentuk dan mengira sisi lurus serta bucu.",
+        "explanation": "Guru membimbing nama dan ciri segi empat sama, segi empat tepat, segi tiga dan bulatan.",
+        "elaboration": "Murid cari objek yang menyerupai setiap bentuk di kelas.",
+        "evaluation": "Murid menamakan empat bentuk dan menyebut bilangan sisi atau bucu bagi tiga bentuk."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 69,
+      "sp_code": "4.1.1",
+      "title": "Mengenal Bentuk Dua Dimensi",
+      "dk_printed_page": 87,
+      "source_pdf_page": 194,
+      "source_word_sha256": "5bb0522e24c616250b3ab510fa09239c6c364dd49a4b5dd8c74dc71d1070b3f8",
+      "source_pdf_sha256": "994cdfdd98e0b5cfeb52198f7dde9fa05ed2502759f007ccece369d5d99779db",
+      "source_activity_titles": [
+        "Kenal Empat Bentuk",
+        "Kira Sisi dan Bucu",
+        "Cari Bentuk Sekeliling"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piring bulat dan buku segi empat; murid mengenal bentuk.",
+        "exploration": "Murid meneliti model empat bentuk dan mengira sisi lurus serta bucu.",
+        "explanation": "Guru membimbing nama dan ciri segi empat sama, segi empat tepat, segi tiga dan bulatan.",
+        "elaboration": "Murid padankan empat kad bentuk dengan gambar objek.",
+        "evaluation": "Murid menamakan empat bentuk dan menyebut bilangan sisi atau bucu bagi tiga bentuk."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 70,
+      "sp_code": "4.1.1",
+      "title": "Mengenal Bentuk Dua Dimensi",
+      "dk_printed_page": 87,
+      "source_pdf_page": 195,
+      "source_word_sha256": "2470447070de714b50b796b08bee3b97a9218c298af3114b93463c5992fe6b4b",
+      "source_pdf_sha256": "6f1719a887be972df6434ddbfbcad779d91c310b270973570fe0ba6e1ce11ebf",
+      "source_activity_titles": [
+        "Kenal Empat Bentuk",
+        "Kira Sisi dan Bucu",
+        "Cari Bentuk Sekeliling"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piring bulat dan buku segi empat; murid mengenal bentuk.",
+        "exploration": "Murid meneliti model empat bentuk dan mengira sisi lurus serta bucu.",
+        "explanation": "Guru membimbing nama dan ciri segi empat sama, segi empat tepat, segi tiga dan bulatan.",
+        "elaboration": "Murid asingkan model mengikut bilangan bucu dan jelaskan padanan.",
+        "evaluation": "Murid menamakan empat bentuk dan menyebut bilangan sisi atau bucu bagi tiga bentuk."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 71,
+      "sp_code": "4.1.2",
+      "title": "Menyusun Pola Bentuk",
+      "dk_printed_page": 89,
+      "source_pdf_page": 196,
+      "source_word_sha256": "1854ae7230200462815dab5e28d3056446f11da3beb53c4bc8ac352b1f8415d8",
+      "source_pdf_sha256": "36146ec34408a4fc9506887d9931af9152fd33b8cb9b8a2486c553bf0d941dab",
+      "source_activity_titles": [
+        "Kenal Unit Ulangan",
+        "Lengkapkan Jalur Pola",
+        "Cipta dan Terangkan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan bulatan, segi tiga, bulatan, segi tiga; murid meramal sambungan.",
+        "exploration": "Murid mencari unit ulangan pada jalur dua atau tiga bentuk.",
+        "explanation": "Guru menunjukkan cara mengulang unit yang sama dan menerangkan kedudukan ruang kosong.",
+        "elaboration": "Murid lengkapkan pola bulatan–segi tiga pada jalur yang berlubang.",
+        "evaluation": "Murid melengkapkan sekurang-kurangnya empat daripada lima pola dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 72,
+      "sp_code": "4.1.2",
+      "title": "Menyusun Pola Bentuk",
+      "dk_printed_page": 89,
+      "source_pdf_page": 197,
+      "source_word_sha256": "b6cbbb1039aa271d163a692647e38d8f50ab4caaefc9910e7607a6727cbdc1a9",
+      "source_pdf_sha256": "fd4fd10d0983eadce44c7289ef7b51b442871aaf49b5b6462b961181169e71b3",
+      "source_activity_titles": [
+        "Kenal Unit Ulangan",
+        "Lengkapkan Jalur Pola",
+        "Cipta dan Terangkan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan bulatan, segi tiga, bulatan, segi tiga; murid meramal sambungan.",
+        "exploration": "Murid mencari unit ulangan pada jalur dua atau tiga bentuk.",
+        "explanation": "Guru menunjukkan cara mengulang unit yang sama dan menerangkan kedudukan ruang kosong.",
+        "elaboration": "Murid cipta pola segi empat sama–bulatan–segi tiga dan tukar dengan pasangan.",
+        "evaluation": "Murid melengkapkan sekurang-kurangnya empat daripada lima pola dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 73,
+      "sp_code": "4.1.2",
+      "title": "Menyusun Pola Bentuk",
+      "dk_printed_page": 89,
+      "source_pdf_page": 198,
+      "source_word_sha256": "d003ff8d8a48fc05ef2bd752769cf902cb604256a7eba27523c12d02d0c25e6d",
+      "source_pdf_sha256": "e8ae1fbb5cb563227e4f4303338d08702e407c4475512563b9b158da7f010241",
+      "source_activity_titles": [
+        "Kenal Unit Ulangan",
+        "Lengkapkan Jalur Pola",
+        "Cipta dan Terangkan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan bulatan, segi tiga, bulatan, segi tiga; murid meramal sambungan.",
+        "exploration": "Murid mencari unit ulangan pada jalur dua atau tiga bentuk.",
+        "explanation": "Guru menunjukkan cara mengulang unit yang sama dan menerangkan kedudukan ruang kosong.",
+        "elaboration": "Murid betulkan pola segi empat tepat–segi tiga–segi tiga yang tersalah susun.",
+        "evaluation": "Murid melengkapkan sekurang-kurangnya empat daripada lima pola dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 74,
+      "sp_code": "4.1.3",
+      "title": "Mengesan Bentuk dalam Gabungan",
+      "dk_printed_page": 90,
+      "source_pdf_page": 199,
+      "source_word_sha256": "7bafe74bec77321ddd809a2092d0fa39379ec98f7feb1edda151fde97dee83dd",
+      "source_pdf_sha256": "7e29c681cd6f9dbae814760a3d33f948ed9ac85912847b20ff4561ed3d0a082a",
+      "source_activity_titles": [
+        "Lihat Bentuk Tersembunyi",
+        "Bina Gambar Baharu",
+        "Pamer dan Namakan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar rumah gabungan bentuk; murid meneka bentuk asas.",
+        "exploration": "Murid menandakan bentuk asas pada kad gambar gabungan.",
+        "explanation": "Guru membimbing pengecaman empat bentuk walaupun orientasi atau saiz berbeza.",
+        "elaboration": "Murid bina gambar rumah dengan potongan bentuk dan namakan bentuknya.",
+        "evaluation": "Murid mengenal tiga bentuk asas dalam sekurang-kurangnya empat gambar gabungan."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 75,
+      "sp_code": "4.1.3",
+      "title": "Mengesan Bentuk dalam Gabungan",
+      "dk_printed_page": 90,
+      "source_pdf_page": 200,
+      "source_word_sha256": "b699016491a08cee2b5cab1a66c74995b7a7741261f91fb068bec083f88d451d",
+      "source_pdf_sha256": "d87ba36a5e527a29db3353632285c7c2096fc7a88c41df9fac76a7171d6384b1",
+      "source_activity_titles": [
+        "Lihat Bentuk Tersembunyi",
+        "Bina Gambar Baharu",
+        "Pamer dan Namakan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar rumah gabungan bentuk; murid meneka bentuk asas.",
+        "exploration": "Murid menandakan bentuk asas pada kad gambar gabungan.",
+        "explanation": "Guru membimbing pengecaman empat bentuk walaupun orientasi atau saiz berbeza.",
+        "elaboration": "Murid bina gambar kapal dan kira setiap jenis bentuk yang digunakan.",
+        "evaluation": "Murid mengenal tiga bentuk asas dalam sekurang-kurangnya empat gambar gabungan."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 76,
+      "sp_code": "4.1.3",
+      "title": "Mengesan Bentuk dalam Gabungan",
+      "dk_printed_page": 90,
+      "source_pdf_page": 201,
+      "source_word_sha256": "e983b910bd36d5e410fc3947fcb614507abf60d02feeb03d0a67b4030b1d2b72",
+      "source_pdf_sha256": "57bc1151a03f6b3448a008aa4f9425535e22342bd678a868c7d8dbd460a56aab",
+      "source_activity_titles": [
+        "Lihat Bentuk Tersembunyi",
+        "Bina Gambar Baharu",
+        "Pamer dan Namakan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar rumah gabungan bentuk; murid meneka bentuk asas.",
+        "exploration": "Murid menandakan bentuk asas pada kad gambar gabungan.",
+        "explanation": "Guru membimbing pengecaman empat bentuk walaupun orientasi atau saiz berbeza.",
+        "elaboration": "Murid bina gambar robot dan padankan komponennya dengan kad bentuk.",
+        "evaluation": "Murid mengenal tiga bentuk asas dalam sekurang-kurangnya empat gambar gabungan."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 77,
+      "sp_code": "5.1.1",
+      "title": "Menyatakan Masa dalam Jam",
+      "dk_printed_page": 95,
+      "source_pdf_page": 202,
+      "source_word_sha256": "52252ca87a4ac94a58e7d096ded6cce5b26ed45ad55bfcb7121b6776d6a68704",
+      "source_pdf_sha256": "7d490efb94aa9f45a77585dbf49aec5fdcf8032fc94f1b70c2f5e60d24b9829f",
+      "source_activity_titles": [
+        "Kenal Muka Jam",
+        "Baca Jam Tepat",
+        "Padan Masa dan Jam"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan jam pukul tujuh; murid menyebut waktu biasa mula sekolah.",
+        "exploration": "Murid meneliti nombor, senggatan serta jarum pada model jam.",
+        "explanation": "Guru membezakan fungsi jarum jam, minit dan saat, serta menerangkan kedudukan jarum minit pada waktu tepat.",
+        "elaboration": "Murid tetapkan model jam pada pukul 3 dan 8.",
+        "evaluation": "Murid membaca sekurang-kurangnya empat daripada lima waktu tepat pada jam analog."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 78,
+      "sp_code": "5.1.1",
+      "title": "Menyatakan Masa dalam Jam",
+      "dk_printed_page": 95,
+      "source_pdf_page": 203,
+      "source_word_sha256": "cbe7516536ed4e68c12686b27c1ecda46f81d7d6a3a6ef3874a39f2c587f49f2",
+      "source_pdf_sha256": "2b08466b9a0242e0be8807a4839c8800e21eb0f2331156c40acd382b50e22878",
+      "source_activity_titles": [
+        "Kenal Muka Jam",
+        "Baca Jam Tepat",
+        "Padan Masa dan Jam"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan jam pukul tujuh; murid menyebut waktu biasa mula sekolah.",
+        "exploration": "Murid meneliti nombor, senggatan serta jarum pada model jam.",
+        "explanation": "Guru membezakan fungsi jarum jam, minit dan saat, serta menerangkan kedudukan jarum minit pada waktu tepat.",
+        "elaboration": "Murid padankan kad pukul 2 dan 10 dengan model jam.",
+        "evaluation": "Murid membaca sekurang-kurangnya empat daripada lima waktu tepat pada jam analog."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 79,
+      "sp_code": "5.1.1",
+      "title": "Menyatakan Masa dalam Jam",
+      "dk_printed_page": 95,
+      "source_pdf_page": 204,
+      "source_word_sha256": "eb184fa8a25c9f11f6d90a17e33d5f05afac080c01f8dd91282dc4db4bf54a8c",
+      "source_pdf_sha256": "45f1f227306d76e9bbede96dd07d79ab74c6f905e9a9ea5cce45985788f45f63",
+      "source_activity_titles": [
+        "Kenal Muka Jam",
+        "Baca Jam Tepat",
+        "Padan Masa dan Jam"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan jam pukul tujuh; murid menyebut waktu biasa mula sekolah.",
+        "exploration": "Murid meneliti nombor, senggatan serta jarum pada model jam.",
+        "explanation": "Guru membezakan fungsi jarum jam, minit dan saat, serta menerangkan kedudukan jarum minit pada waktu tepat.",
+        "elaboration": "Murid bina waktu pukul 5 dan 11 pada model jam.",
+        "evaluation": "Murid membaca sekurang-kurangnya empat daripada lima waktu tepat pada jam analog."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 80,
+      "sp_code": "5.1.1",
+      "title": "Menyatakan Masa dalam Jam",
+      "dk_printed_page": 95,
+      "source_pdf_page": 205,
+      "source_word_sha256": "b834bbfca18ee4f4c891fc0272e3e9f138c5554e88c47098dcf34adc9ab613d7",
+      "source_pdf_sha256": "b088a680d044b8aca5d1869a880984b25fe94cd76b8a86b32301cd6e5e41940f",
+      "source_activity_titles": [
+        "Kenal Muka Jam",
+        "Baca Jam Tepat",
+        "Padan Masa dan Jam"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan jam pukul tujuh; murid menyebut waktu biasa mula sekolah.",
+        "exploration": "Murid meneliti nombor, senggatan serta jarum pada model jam.",
+        "explanation": "Guru membezakan fungsi jarum jam, minit dan saat, serta menerangkan kedudukan jarum minit pada waktu tepat.",
+        "elaboration": "Murid tukar kad pukul 1 dan 9 dengan pasangan untuk membaca waktu.",
+        "evaluation": "Murid membaca sekurang-kurangnya empat daripada lima waktu tepat pada jam analog."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 81,
+      "sp_code": "5.1.2",
+      "title": "Urutan Masa dalam Sehari",
+      "dk_printed_page": 98,
+      "source_pdf_page": 206,
+      "source_word_sha256": "80c63cee2981a1f0ab24060ebaecce66f074b8774edf966a1cf5d6cf441872b8",
+      "source_pdf_sha256": "564f349e66ae7573388692dd1f9e79984244da32b1a3dc44eb9d14e2e4d32a6e",
+      "source_activity_titles": [
+        "Kenal Bahagian Hari",
+        "Susun Kad Aktiviti",
+        "Cerita Rutin Saya"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+        "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+        "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+        "elaboration": "Murid susun kad makan, belajar, bermain dan tidur; tulis masa berpandukan jam contoh.",
+        "evaluation": "Murid menyusun empat peristiwa mengikut urutan masa munasabah dan menyatakan waktu pada kad jam."
+      },
+      "academic_status": "HOLD_DK_TIME_WRITING_CRITERIA",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 82,
+      "sp_code": "5.1.2",
+      "title": "Urutan Masa dalam Sehari",
+      "dk_printed_page": 98,
+      "source_pdf_page": 207,
+      "source_word_sha256": "d31eaede8317d76694ecfca893fc25a22dd6d7bb47fa8aa0644a51d60e54f864",
+      "source_pdf_sha256": "de61ba2224e2db5547209fcd0dc98d6bf0d4285d4ddfcf086bad5281f22a3177",
+      "source_activity_titles": [
+        "Kenal Bahagian Hari",
+        "Susun Kad Aktiviti",
+        "Cerita Rutin Saya"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+        "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+        "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+        "elaboration": "Murid padankan gambar sarapan dan makan tengah hari dengan jam contoh dan tulis masa.",
+        "evaluation": "Murid menyusun empat peristiwa mengikut urutan masa munasabah dan menyatakan waktu pada kad jam."
+      },
+      "academic_status": "HOLD_DK_TIME_WRITING_CRITERIA",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 83,
+      "sp_code": "5.1.2",
+      "title": "Urutan Masa dalam Sehari",
+      "dk_printed_page": 98,
+      "source_pdf_page": 208,
+      "source_word_sha256": "cb4add7bdf800a6cc757ad844a7e9cc551ee1b1841bc3a2762963453012f57c5",
+      "source_pdf_sha256": "bf2478a9f181055e9f49adb1b27bd9ba1ee70aa4750130e0cab2d8507f781735",
+      "source_activity_titles": [
+        "Kenal Bahagian Hari",
+        "Susun Kad Aktiviti",
+        "Cerita Rutin Saya"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+        "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+        "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+        "elaboration": "Murid susun empat aktiviti daripada pagi hingga malam dan labelkan waktu pada kad jam.",
+        "evaluation": "Murid menyusun empat peristiwa mengikut urutan masa munasabah dan menyatakan waktu pada kad jam."
+      },
+      "academic_status": "HOLD_DK_TIME_WRITING_CRITERIA",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 84,
+      "sp_code": "5.1.2",
+      "title": "Urutan Masa dalam Sehari",
+      "dk_printed_page": 98,
+      "source_pdf_page": 209,
+      "source_word_sha256": "834ab7dd7af4c1ef790978c4650d35e105c06bd40ff29ab53b65976a51835248",
+      "source_pdf_sha256": "2a109dd68f2083788e2cc54b13a15b02f35f535d2031f6c6f7a2ac2349ff9f8f",
+      "source_activity_titles": [
+        "Kenal Bahagian Hari",
+        "Susun Kad Aktiviti",
+        "Cerita Rutin Saya"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru bertanya aktiviti selepas bangun tidur dan sebelum tidur.",
+        "exploration": "Murid memadankan gambar rutin dengan pagi, tengah hari, petang dan malam.",
+        "explanation": "Guru membimbing bacaan jam tepat dan penulisan masa dengan istilah bahagian hari.",
+        "elaboration": "Murid tukar carta rutin dengan pasangan dan tulis masa bagi aktiviti yang ditunjukkan.",
+        "evaluation": "Murid menyusun empat peristiwa mengikut urutan masa munasabah dan menyatakan waktu pada kad jam."
+      },
+      "academic_status": "HOLD_DK_TIME_WRITING_CRITERIA",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 85,
+      "sp_code": "5.2.1",
+      "title": "Membaca Kalendar Masihi",
+      "dk_printed_page": 101,
+      "source_pdf_page": 210,
+      "source_word_sha256": "27e9b22c7cf0ecbded578d4f76450f7ea0ece97d23abd18d61ec4d9656122de8",
+      "source_pdf_sha256": "db1da357042f28cca1b385db1e8cbe75fc2bf4777264b07b050a0eb1d472bc03",
+      "source_activity_titles": [
+        "Kenal Struktur Kalendar",
+        "Cari Tarikh Terpilih",
+        "Tanya Jawab Kalendar"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan kalendar bulan semasa dan meminta murid mencari tarikh hari ini.",
+        "exploration": "Murid mengenal nama hari, bulan dan tarikh serta meneliti minggu dan tahun pada kalendar.",
+        "explanation": "Guru menerangkan hubungan hari, tarikh, minggu, bulan dan tahun menggunakan kalendar.",
+        "elaboration": "Murid cari tarikh yang disebut guru dan nyatakan hari.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan kalendar."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 86,
+      "sp_code": "5.2.1",
+      "title": "Membaca Kalendar Masihi",
+      "dk_printed_page": 101,
+      "source_pdf_page": 211,
+      "source_word_sha256": "4ddfea584f9c934dce2961d6a894653a453665bcc2a8a05e1e88198260b9c3cd",
+      "source_pdf_sha256": "ff5688cf3a95e0cfd9089d9d0e8cc9e8c44fe3b20f7c64e13c132a61eeb42ab4",
+      "source_activity_titles": [
+        "Kenal Struktur Kalendar",
+        "Cari Tarikh Terpilih",
+        "Tanya Jawab Kalendar"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan kalendar bulan semasa dan meminta murid mencari tarikh hari ini.",
+        "exploration": "Murid mengenal nama hari, bulan dan tarikh serta meneliti minggu dan tahun pada kalendar.",
+        "explanation": "Guru menerangkan hubungan hari, tarikh, minggu, bulan dan tahun menggunakan kalendar.",
+        "elaboration": "Murid tandakan hari pertama dan terakhir bulan contoh.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan kalendar."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 87,
+      "sp_code": "5.2.1",
+      "title": "Membaca Kalendar Masihi",
+      "dk_printed_page": 101,
+      "source_pdf_page": 212,
+      "source_word_sha256": "89ba76664f31536a2e9721c62abb1054bd6987a75c226ba9378d07945f2e2a17",
+      "source_pdf_sha256": "9a21082217fb9fe07f3f79954bcc42f0fa4119c64eac1da256622b3c067ca833",
+      "source_activity_titles": [
+        "Kenal Struktur Kalendar",
+        "Cari Tarikh Terpilih",
+        "Tanya Jawab Kalendar"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan kalendar bulan semasa dan meminta murid mencari tarikh hari ini.",
+        "exploration": "Murid mengenal nama hari, bulan dan tarikh serta meneliti minggu dan tahun pada kalendar.",
+        "explanation": "Guru menerangkan hubungan hari, tarikh, minggu, bulan dan tahun menggunakan kalendar.",
+        "elaboration": "Murid cari hari sebelum dan selepas satu tarikh pilihan.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan kalendar."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 88,
+      "sp_code": "5.2.1",
+      "title": "Membaca Kalendar Masihi",
+      "dk_printed_page": 101,
+      "source_pdf_page": 213,
+      "source_word_sha256": "b6ab252203d16d7d8656d862af339e9a7948313c6d5891066b0ab2692979b3ff",
+      "source_pdf_sha256": "45bb88d55348678edda79efb29596ebb38ed79154d067e2b0f396ca4c921aecf",
+      "source_activity_titles": [
+        "Kenal Struktur Kalendar",
+        "Cari Tarikh Terpilih",
+        "Tanya Jawab Kalendar"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan kalendar bulan semasa dan meminta murid mencari tarikh hari ini.",
+        "exploration": "Murid mengenal nama hari, bulan dan tarikh serta meneliti minggu dan tahun pada kalendar.",
+        "explanation": "Guru menerangkan hubungan hari, tarikh, minggu, bulan dan tahun menggunakan kalendar.",
+        "elaboration": "Murid bandingkan dua bulan dan nyatakan bilangan hari masing-masing.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan kalendar."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 89,
+      "sp_code": "6.1.1",
+      "title": "Mengukur dengan Unit Bukan Piawai",
+      "dk_printed_page": 107,
+      "source_pdf_page": 214,
+      "source_word_sha256": "a8d2ea464ebaed4ce825f3e1879d532083f8b4b5678b302e302879983da95d2d",
+      "source_pdf_sha256": "f891a077ff9412182f549a2447fde9e4ff43c6ed49a9d468f1acbfbb40471891",
+      "source_activity_titles": [
+        "Kenal Unit Bukan Piawai",
+        "Ukur dari Hujung",
+        "Catat dan Semak"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan panjang pensel berbanding beberapa klip kertas.",
+        "exploration": "Murid mencuba jengkal, langkah dan objek seragam untuk mengukur.",
+        "explanation": "Guru menunjukkan ukuran hujung ke hujung tanpa ruang atau tindihan dan keperluan unit konsisten.",
+        "elaboration": "Murid ukur tiga objek kelas menggunakan klip seragam.",
+        "evaluation": "Murid mengukur sekurang-kurangnya tiga objek dan merekod bilangan unit dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 90,
+      "sp_code": "6.1.1",
+      "title": "Mengukur dengan Unit Bukan Piawai",
+      "dk_printed_page": 107,
+      "source_pdf_page": 215,
+      "source_word_sha256": "bb245f4adc16258c5de9b924ff80c9ea0aa8acfa231062c625460c1db545bff2",
+      "source_pdf_sha256": "a30547bedbba6f2812584e07617c90dbcb8eff35a47cdabecf2de801b1e18771",
+      "source_activity_titles": [
+        "Kenal Unit Bukan Piawai",
+        "Ukur dari Hujung",
+        "Catat dan Semak"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan panjang pensel berbanding beberapa klip kertas.",
+        "exploration": "Murid mencuba jengkal, langkah dan objek seragam untuk mengukur.",
+        "explanation": "Guru menunjukkan ukuran hujung ke hujung tanpa ruang atau tindihan dan keperluan unit konsisten.",
+        "elaboration": "Murid ukur tiga jalur kertas menggunakan blok seragam.",
+        "evaluation": "Murid mengukur sekurang-kurangnya tiga objek dan merekod bilangan unit dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 91,
+      "sp_code": "6.1.1",
+      "title": "Mengukur dengan Unit Bukan Piawai",
+      "dk_printed_page": 107,
+      "source_pdf_page": 216,
+      "source_word_sha256": "7a4bd1da47e21a4d97408f4b91575f5e2c28f5ed85c2e499b9c1d5bec1c98bd3",
+      "source_pdf_sha256": "000029130951179a7201ec1523c01bdd7b802797e90b56dd0b853075ac6da41d",
+      "source_activity_titles": [
+        "Kenal Unit Bukan Piawai",
+        "Ukur dari Hujung",
+        "Catat dan Semak"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan panjang pensel berbanding beberapa klip kertas.",
+        "exploration": "Murid mencuba jengkal, langkah dan objek seragam untuk mengukur.",
+        "explanation": "Guru menunjukkan ukuran hujung ke hujung tanpa ruang atau tindihan dan keperluan unit konsisten.",
+        "elaboration": "Murid ukur tiga objek dengan jalur unit yang sama dan banding catatan pasangan.",
+        "evaluation": "Murid mengukur sekurang-kurangnya tiga objek dan merekod bilangan unit dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 92,
+      "sp_code": "6.1.1",
+      "title": "Mengukur dengan Unit Bukan Piawai",
+      "dk_printed_page": 107,
+      "source_pdf_page": 217,
+      "source_word_sha256": "93d3c7f4aa017a4aa3892e52e6e40cec2f870abe27c310afce12b27ebf4f884f",
+      "source_pdf_sha256": "39a7cd7ca4244e01ea4e3b8cf60a3d645bf9e6ae7a2bab0f1181e1069d336c45",
+      "source_activity_titles": [
+        "Kenal Unit Bukan Piawai",
+        "Ukur dari Hujung",
+        "Catat dan Semak"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan panjang pensel berbanding beberapa klip kertas.",
+        "exploration": "Murid mencuba jengkal, langkah dan objek seragam untuk mengukur.",
+        "explanation": "Guru menunjukkan ukuran hujung ke hujung tanpa ruang atau tindihan dan keperluan unit konsisten.",
+        "elaboration": "Murid ukur tiga jarak pendek dengan unit bukan piawai yang dipilih dan catat bilangan unit.",
+        "evaluation": "Murid mengukur sekurang-kurangnya tiga objek dan merekod bilangan unit dengan tepat."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 93,
+      "sp_code": "6.1.2",
+      "title": "Membanding Panjang Bukan Piawai",
+      "dk_printed_page": 110,
+      "source_pdf_page": 218,
+      "source_word_sha256": "3dab587425638419d1dbd537bf12b89a0cd6cf0f203728c94995b1067ebb5ed3",
+      "source_pdf_sha256": "5a4325c317fff7098c92ac7d2d51fa6aee5a3083fa7f515ab2592f5341ece863",
+      "source_activity_titles": [
+        "Ukur Dua Objek",
+        "Banding Bilangan Unit",
+        "Terangkan Keputusan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua pita berbeza panjang; murid meramal pita lebih panjang.",
+        "exploration": "Murid mengukur dua atau tiga objek menggunakan blok seragam yang sama.",
+        "explanation": "Guru membimbing perbandingan bilangan unit menggunakan lebih panjang, lebih pendek dan sama panjang.",
+        "elaboration": "Murid banding dua jalur kertas dengan unit klip seragam.",
+        "evaluation": "Murid menentukan objek lebih panjang atau lebih pendek dalam empat perbandingan menggunakan unit yang sama."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 94,
+      "sp_code": "6.1.2",
+      "title": "Membanding Panjang Bukan Piawai",
+      "dk_printed_page": 110,
+      "source_pdf_page": 219,
+      "source_word_sha256": "cfffee7e628543cae42f05c1e1dbff8b014a51ea71e57fa9891c79df810d64e4",
+      "source_pdf_sha256": "f9e490a8fcb9b8a63a7e3438e6c89cdc46c1199731624401cbc36e665ff4bdbb",
+      "source_activity_titles": [
+        "Ukur Dua Objek",
+        "Banding Bilangan Unit",
+        "Terangkan Keputusan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua pita berbeza panjang; murid meramal pita lebih panjang.",
+        "exploration": "Murid mengukur dua atau tiga objek menggunakan blok seragam yang sama.",
+        "explanation": "Guru membimbing perbandingan bilangan unit menggunakan lebih panjang, lebih pendek dan sama panjang.",
+        "elaboration": "Murid banding tiga jalur dan susun daripada terpendek kepada terpanjang.",
+        "evaluation": "Murid menentukan objek lebih panjang atau lebih pendek dalam empat perbandingan menggunakan unit yang sama."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 95,
+      "sp_code": "6.1.2",
+      "title": "Membanding Panjang Bukan Piawai",
+      "dk_printed_page": 110,
+      "source_pdf_page": 220,
+      "source_word_sha256": "09b3e02744f8efcedd75c13145a121d5aca1e97089f03df64b08a8e3022e0de3",
+      "source_pdf_sha256": "ea5a49e72686c24a1eebe9bbca5e3e75c83eeec2c909789cab51e1ad50522b35",
+      "source_activity_titles": [
+        "Ukur Dua Objek",
+        "Banding Bilangan Unit",
+        "Terangkan Keputusan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua pita berbeza panjang; murid meramal pita lebih panjang.",
+        "exploration": "Murid mengukur dua atau tiga objek menggunakan blok seragam yang sama.",
+        "explanation": "Guru membimbing perbandingan bilangan unit menggunakan lebih panjang, lebih pendek dan sama panjang.",
+        "elaboration": "Murid cari dua objek sama panjang melalui bacaan unit blok.",
+        "evaluation": "Murid menentukan objek lebih panjang atau lebih pendek dalam empat perbandingan menggunakan unit yang sama."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 96,
+      "sp_code": "6.1.2",
+      "title": "Membanding Panjang Bukan Piawai",
+      "dk_printed_page": 110,
+      "source_pdf_page": 221,
+      "source_word_sha256": "fe376cd3862f6c028e4c9bfdfcbbdd7a4492b2995964e64c67f9b5dcf3b5958d",
+      "source_pdf_sha256": "290dc90a8e97376e86c317174dfe8ec0ec4543c397b5d60e3afc4d85faf87ae4",
+      "source_activity_titles": [
+        "Ukur Dua Objek",
+        "Banding Bilangan Unit",
+        "Terangkan Keputusan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua pita berbeza panjang; murid meramal pita lebih panjang.",
+        "exploration": "Murid mengukur dua atau tiga objek menggunakan blok seragam yang sama.",
+        "explanation": "Guru membimbing perbandingan bilangan unit menggunakan lebih panjang, lebih pendek dan sama panjang.",
+        "elaboration": "Murid banding tiga objek tegak menggunakan unit seragam dan nyatakan paling tinggi.",
+        "evaluation": "Murid menentukan objek lebih panjang atau lebih pendek dalam empat perbandingan menggunakan unit yang sama."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 97,
+      "sp_code": "6.2.1",
+      "title": "Mengenal Sentimeter",
+      "dk_printed_page": 112,
+      "source_pdf_page": 222,
+      "source_word_sha256": "3b73d773270852bceb151fd8b534266932bc64280d154d69401dd539692be173",
+      "source_pdf_sha256": "807b6a2197a9c9591b2df292eb28d5bb883c99d54168455f719ac187ec709e06",
+      "source_activity_titles": [
+        "Teroka Pembaris",
+        "Kenal Jarak Satu Sentimeter",
+        "Tunjuk Tanda Cm"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru memperlihatkan pembaris dan bertanya kegunaannya.",
+        "exploration": "Murid meneliti nombor dan senggatan sentimeter pada pembaris besar.",
+        "explanation": "Guru menunjukkan jarak antara tanda sentimeter berturutan ialah 1 cm dan membezakan tanda sifar.",
+        "elaboration": "Murid tunjuk tanda 0, 1 dan 5 cm pada pembaris.",
+        "evaluation": "Murid menunjukkan tanda 0, 1 cm dan 5 cm dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 98,
+      "sp_code": "6.2.1",
+      "title": "Mengenal Sentimeter",
+      "dk_printed_page": 112,
+      "source_pdf_page": 223,
+      "source_word_sha256": "d07233d86b4cf1a78b720884717cb01c9b21d5db5a591a20385a819b21ddd809",
+      "source_pdf_sha256": "d306056cf479d0ded1337081714e14077a1c20d130cbe76dfe247c1ce3fa6826",
+      "source_activity_titles": [
+        "Teroka Pembaris",
+        "Kenal Jarak Satu Sentimeter",
+        "Tunjuk Tanda Cm"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru memperlihatkan pembaris dan bertanya kegunaannya.",
+        "exploration": "Murid meneliti nombor dan senggatan sentimeter pada pembaris besar.",
+        "explanation": "Guru menunjukkan jarak antara tanda sentimeter berturutan ialah 1 cm dan membezakan tanda sifar.",
+        "elaboration": "Murid padankan kad cm dengan senggatan 2 dan 4 cm.",
+        "evaluation": "Murid menunjukkan tanda 0, 1 cm dan 5 cm dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 99,
+      "sp_code": "6.2.1",
+      "title": "Mengenal Sentimeter",
+      "dk_printed_page": 112,
+      "source_pdf_page": 224,
+      "source_word_sha256": "8b18cdc1275d84c740f671a98a91fff8c34eaa30b33a5a20c4955359d06eb1b4",
+      "source_pdf_sha256": "befcdc54e154348d91acfae4189766054d2323b0a392279a49620a30c1233b00",
+      "source_activity_titles": [
+        "Teroka Pembaris",
+        "Kenal Jarak Satu Sentimeter",
+        "Tunjuk Tanda Cm"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru memperlihatkan pembaris dan bertanya kegunaannya.",
+        "exploration": "Murid meneliti nombor dan senggatan sentimeter pada pembaris besar.",
+        "explanation": "Guru menunjukkan jarak antara tanda sentimeter berturutan ialah 1 cm dan membezakan tanda sifar.",
+        "elaboration": "Murid tunjuk jarak 1 cm antara tanda 3 dan 4.",
+        "evaluation": "Murid menunjukkan tanda 0, 1 cm dan 5 cm dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 100,
+      "sp_code": "6.2.1",
+      "title": "Mengenal Sentimeter",
+      "dk_printed_page": 112,
+      "source_pdf_page": 225,
+      "source_word_sha256": "b64541a33c24aa2cbb71065926b8d29f4ad1f9239846c73b726ea32002c6c800",
+      "source_pdf_sha256": "70aa4a588a79a1b50b4f038951c45f16717701640b3b8943145620786f3057af",
+      "source_activity_titles": [
+        "Teroka Pembaris",
+        "Kenal Jarak Satu Sentimeter",
+        "Tunjuk Tanda Cm"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru memperlihatkan pembaris dan bertanya kegunaannya.",
+        "exploration": "Murid meneliti nombor dan senggatan sentimeter pada pembaris besar.",
+        "explanation": "Guru menunjukkan jarak antara tanda sentimeter berturutan ialah 1 cm dan membezakan tanda sifar.",
+        "elaboration": "Murid tandakan 0, 1 dan 5 cm pada gambar pembaris.",
+        "evaluation": "Murid menunjukkan tanda 0, 1 cm dan 5 cm dengan betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 101,
+      "sp_code": "6.2.2",
+      "title": "Mengukur Panjang dalam Sentimeter",
+      "dk_printed_page": 114,
+      "source_pdf_page": 226,
+      "source_word_sha256": "3ba28fbb7ea6bcc3b1d75f1bf2566a969b89435f86299ad42c8347c53cb3ba45",
+      "source_pdf_sha256": "de1ec83709cd21ff19a9af497b19f085dc2eaba09d574d94d2cd4c639a48dc90",
+      "source_activity_titles": [
+        "Kenal Kedudukan Sifar",
+        "Ukur Objek Kelas",
+        "Semak Bacaan Pasangan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua cara meletakkan pembaris; murid memilih cara betul.",
+        "exploration": "Murid mencuba menjajarkan hujung objek dengan tanda sifar dan membaca hujung satu lagi.",
+        "explanation": "Guru membimbing bacaan sentimeter dan membetulkan penjajaran yang salah.",
+        "elaboration": "Murid ukur pensel, pemadam dan jalur kertas serta catat cm.",
+        "evaluation": "Murid mencatat panjang sekurang-kurangnya tiga daripada empat objek dengan tepat dalam cm."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 102,
+      "sp_code": "6.2.2",
+      "title": "Mengukur Panjang dalam Sentimeter",
+      "dk_printed_page": 114,
+      "source_pdf_page": 227,
+      "source_word_sha256": "ea2fae99dfb205f8b9edc844f3a4cbc066c8c2d849363996c7370e5314aec8c8",
+      "source_pdf_sha256": "9df5fd8be89998476cf77c018df90ffc3df52f304f0e140a4240b6e4c28c4d90",
+      "source_activity_titles": [
+        "Kenal Kedudukan Sifar",
+        "Ukur Objek Kelas",
+        "Semak Bacaan Pasangan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua cara meletakkan pembaris; murid memilih cara betul.",
+        "exploration": "Murid mencuba menjajarkan hujung objek dengan tanda sifar dan membaca hujung satu lagi.",
+        "explanation": "Guru membimbing bacaan sentimeter dan membetulkan penjajaran yang salah.",
+        "elaboration": "Murid ukur tiga objek lurus yang muat pada pembaris dan tukar catatan.",
+        "evaluation": "Murid mencatat panjang sekurang-kurangnya tiga daripada empat objek dengan tepat dalam cm."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 103,
+      "sp_code": "6.2.2",
+      "title": "Mengukur Panjang dalam Sentimeter",
+      "dk_printed_page": 114,
+      "source_pdf_page": 228,
+      "source_word_sha256": "6f7389be5f8f9a8ea9cbf689bcbb08bea373ae45d5b59f1ab9d3162092104537",
+      "source_pdf_sha256": "40bf556e5f9509a89bc6319031df4a23c20451124ce1950e9132e6dc1b119f96",
+      "source_activity_titles": [
+        "Kenal Kedudukan Sifar",
+        "Ukur Objek Kelas",
+        "Semak Bacaan Pasangan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua cara meletakkan pembaris; murid memilih cara betul.",
+        "exploration": "Murid mencuba menjajarkan hujung objek dengan tanda sifar dan membaca hujung satu lagi.",
+        "explanation": "Guru membimbing bacaan sentimeter dan membetulkan penjajaran yang salah.",
+        "elaboration": "Murid ukur jalur kertas berbeza panjang dan semak penjajaran pasangan.",
+        "evaluation": "Murid mencatat panjang sekurang-kurangnya tiga daripada empat objek dengan tepat dalam cm."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 104,
+      "sp_code": "6.2.2",
+      "title": "Mengukur Panjang dalam Sentimeter",
+      "dk_printed_page": 114,
+      "source_pdf_page": 229,
+      "source_word_sha256": "1596941c2d33c935056d62b57c3050b340adbb7204adee3ed22aed18ed50b1c7",
+      "source_pdf_sha256": "2fc054691ffbed49445f8f835d97c8de3495f0b59091b10f9d921850ae3cc541",
+      "source_activity_titles": [
+        "Kenal Kedudukan Sifar",
+        "Ukur Objek Kelas",
+        "Semak Bacaan Pasangan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan dua cara meletakkan pembaris; murid memilih cara betul.",
+        "exploration": "Murid mencuba menjajarkan hujung objek dengan tanda sifar dan membaca hujung satu lagi.",
+        "explanation": "Guru membimbing bacaan sentimeter dan membetulkan penjajaran yang salah.",
+        "elaboration": "Murid ukur objek pilihan, kemudian betulkan contoh pembaris tersalah kedudukan.",
+        "evaluation": "Murid mencatat panjang sekurang-kurangnya tiga daripada empat objek dengan tepat dalam cm."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 105,
+      "sp_code": "6.2.3",
+      "title": "Membanding Ukuran Tiga Objek",
+      "dk_printed_page": 117,
+      "source_pdf_page": 230,
+      "source_word_sha256": "b6c02800f4d39713612fe487f2a98e42dfa0733133d467cdc5749e6fa926a60c",
+      "source_pdf_sha256": "57a33848b226514bb3122c9979f1eadc00da972e22b8185b24166fa336507519",
+      "source_activity_titles": [
+        "Ukur Tiga Objek",
+        "Susun Ukuran",
+        "Jelaskan Perbezaan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan tiga pensel dan meminta murid meramal susunannya.",
+        "exploration": "Murid mengukur tiga objek dalam cm dan merekod bacaan.",
+        "explanation": "Guru menerangkan perbandingan berdasarkan nombor ukuran dan unit yang sama.",
+        "elaboration": "Murid susun tiga jalur kertas mengikut panjang.",
+        "evaluation": "Murid menyusun tiga ukuran dan menamakan objek terpendek serta terpanjang."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 106,
+      "sp_code": "6.2.3",
+      "title": "Membanding Ukuran Tiga Objek",
+      "dk_printed_page": 117,
+      "source_pdf_page": 231,
+      "source_word_sha256": "4c1c646546f0261e8cdac410ea9bd05282053e67c7d3b55ea306318eaac215ad",
+      "source_pdf_sha256": "0ac2f5bc53d2178c7159f562a19318708dd6ffb19452c110e048492fc82ce728",
+      "source_activity_titles": [
+        "Ukur Tiga Objek",
+        "Susun Ukuran",
+        "Jelaskan Perbezaan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan tiga pensel dan meminta murid meramal susunannya.",
+        "exploration": "Murid mengukur tiga objek dalam cm dan merekod bacaan.",
+        "explanation": "Guru menerangkan perbandingan berdasarkan nombor ukuran dan unit yang sama.",
+        "elaboration": "Murid susun bacaan tiga pensel dan kenal pasti terpendek serta terpanjang.",
+        "evaluation": "Murid menyusun tiga ukuran dan menamakan objek terpendek serta terpanjang."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 107,
+      "sp_code": "6.2.3",
+      "title": "Membanding Ukuran Tiga Objek",
+      "dk_printed_page": 117,
+      "source_pdf_page": 232,
+      "source_word_sha256": "a2281ea1a9e20a23c89f60fc1e30f27e1d30f9bb7ecfc7fe380c63429312d271",
+      "source_pdf_sha256": "1b419b3b11aa49d5cbda7ef4c26bbd032a4bf8429df149a6ff10ae9a4165aa82",
+      "source_activity_titles": [
+        "Ukur Tiga Objek",
+        "Susun Ukuran",
+        "Jelaskan Perbezaan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan tiga pensel dan meminta murid meramal susunannya.",
+        "exploration": "Murid mengukur tiga objek dalam cm dan merekod bacaan.",
+        "explanation": "Guru menerangkan perbandingan berdasarkan nombor ukuran dan unit yang sama.",
+        "elaboration": "Murid banding tiga objek, termasuk dua yang sama panjang.",
+        "evaluation": "Murid menyusun tiga ukuran dan menamakan objek terpendek serta terpanjang."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 108,
+      "sp_code": "6.2.3",
+      "title": "Membanding Ukuran Tiga Objek",
+      "dk_printed_page": 117,
+      "source_pdf_page": 233,
+      "source_word_sha256": "94c44195015b2b62656e974e20e336cf408bd37e543f1cd837385f0be1249a86",
+      "source_pdf_sha256": "300086a2dc20fb651feb34cbf41edee8e50f53edbeb33b6b9a8e8e54cef96f54",
+      "source_activity_titles": [
+        "Ukur Tiga Objek",
+        "Susun Ukuran",
+        "Jelaskan Perbezaan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan tiga pensel dan meminta murid meramal susunannya.",
+        "exploration": "Murid mengukur tiga objek dalam cm dan merekod bacaan.",
+        "explanation": "Guru menerangkan perbandingan berdasarkan nombor ukuran dan unit yang sama.",
+        "elaboration": "Murid banding tiga jalur tegak dan jelaskan yang paling tinggi berdasarkan cm.",
+        "evaluation": "Murid menyusun tiga ukuran dan menamakan objek terpendek serta terpanjang."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 109,
+      "sp_code": "7.1.1",
+      "title": "Mengumpul Maklumat Harian",
+      "dk_printed_page": 123,
+      "source_pdf_page": 234,
+      "source_word_sha256": "e8e6a2f12b268a7d96a527e9b552eb691a9dbdb9984cb3021680267228f4dcf9",
+      "source_pdf_sha256": "68321e5f02372c865e36cd4b0719912052852979e4677251c772ec7ad1972b7d",
+      "source_activity_titles": [
+        "Tentukan Soalan",
+        "Kutip dan Tanda Data",
+        "Semak Jumlah"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru meminta murid memilih buah kegemaran daripada tiga gambar.",
+        "exploration": "Murid bertanya pilihan secara sukarela dan merekod gundal mengikut kategori tanpa nama.",
+        "explanation": "Guru menerangkan penggunaan satu tanda bagi satu respons serta cara menyemak jadual.",
+        "elaboration": "Murid kutip pilihan buah daripada lima rakan.",
+        "evaluation": "Murid merekod maklumat sekurang-kurangnya lima rakan dengan tepat tanpa data peribadi."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 110,
+      "sp_code": "7.1.1",
+      "title": "Mengumpul Maklumat Harian",
+      "dk_printed_page": 123,
+      "source_pdf_page": 235,
+      "source_word_sha256": "71aff1c5f926477bb81bd4b16d078c638314774fa088af1780b1c204fdf69a60",
+      "source_pdf_sha256": "efdef6d794777ff721211c1307edb1d4f3daaf4d8cc5590f7bf1880c2ccac253",
+      "source_activity_titles": [
+        "Tentukan Soalan",
+        "Kutip dan Tanda Data",
+        "Semak Jumlah"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru meminta murid memilih buah kegemaran daripada tiga gambar.",
+        "exploration": "Murid bertanya pilihan secara sukarela dan merekod gundal mengikut kategori tanpa nama.",
+        "explanation": "Guru menerangkan penggunaan satu tanda bagi satu respons serta cara menyemak jadual.",
+        "elaboration": "Murid kutip pilihan warna daripada lima rakan secara sukarela.",
+        "evaluation": "Murid merekod maklumat sekurang-kurangnya lima rakan dengan tepat tanpa data peribadi."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 111,
+      "sp_code": "7.1.1",
+      "title": "Mengumpul Maklumat Harian",
+      "dk_printed_page": 123,
+      "source_pdf_page": 236,
+      "source_word_sha256": "c7c3b120695ccda7b3662b92efbd34054251e342d7ec26f66d683dc0f73985f5",
+      "source_pdf_sha256": "0b243f37e5af168c5d722d27699fa5549aa7966ec723d2d51c5c807559406be9",
+      "source_activity_titles": [
+        "Tentukan Soalan",
+        "Kutip dan Tanda Data",
+        "Semak Jumlah"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru meminta murid memilih buah kegemaran daripada tiga gambar.",
+        "exploration": "Murid bertanya pilihan secara sukarela dan merekod gundal mengikut kategori tanpa nama.",
+        "explanation": "Guru menerangkan penggunaan satu tanda bagi satu respons serta cara menyemak jadual.",
+        "elaboration": "Murid kutip pilihan gambar haiwan dan rekod jadual.",
+        "evaluation": "Murid merekod maklumat sekurang-kurangnya lima rakan dengan tepat tanpa data peribadi."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 112,
+      "sp_code": "7.1.1",
+      "title": "Mengumpul Maklumat Harian",
+      "dk_printed_page": 123,
+      "source_pdf_page": 237,
+      "source_word_sha256": "c37890cc53be3021f8e9d6dc1f3c6c8f5793ed32bc1dc106bf23007e6feb8ee8",
+      "source_pdf_sha256": "9376efc9249fb3ad9140020bcddf2c3f8344f4dcc7015a80ceac7fa9e312e23d",
+      "source_activity_titles": [
+        "Tentukan Soalan",
+        "Kutip dan Tanda Data",
+        "Semak Jumlah"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru meminta murid memilih buah kegemaran daripada tiga gambar.",
+        "exploration": "Murid bertanya pilihan secara sukarela dan merekod gundal mengikut kategori tanpa nama.",
+        "explanation": "Guru menerangkan penggunaan satu tanda bagi satu respons serta cara menyemak jadual.",
+        "elaboration": "Murid kutip pilihan aktiviti kelas daripada lima rakan dan semak gundal.",
+        "evaluation": "Murid merekod maklumat sekurang-kurangnya lima rakan dengan tepat tanpa data peribadi."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 113,
+      "sp_code": "7.1.2",
+      "title": "Memahami Piktograf",
+      "dk_printed_page": 123,
+      "source_pdf_page": 238,
+      "source_word_sha256": "a487b2b53885a5b92c8e8a0bd8a2dd974150b27f0dde7e8a380dddbdab56aedc",
+      "source_pdf_sha256": "56980d5bdc6232c1161f7302608f97f23e1f971a49a59b91cfc555d74a96ea02",
+      "source_activity_titles": [
+        "Kenal Piktograf",
+        "Susun Kad Gambar",
+        "Semak Padanan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar buah tersusun; murid membilang setiap baris.",
+        "exploration": "Murid menyusun satu gambar bagi satu respons dalam grid kategori.",
+        "explanation": "Guru menerangkan tajuk, kategori, simbol dan petunjuk satu simbol mewakili satu unit.",
+        "elaboration": "Murid bina piktograf buah daripada jadual tiga kategori.",
+        "evaluation": "Murid melengkapkan piktograf tiga kategori berdasarkan jadual dengan bilangan simbol betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 114,
+      "sp_code": "7.1.2",
+      "title": "Memahami Piktograf",
+      "dk_printed_page": 123,
+      "source_pdf_page": 239,
+      "source_word_sha256": "f07d81833aa9d0c2ab8c197ba4bfa6cd2bb800c6377bca1690a3d4162cef92fd",
+      "source_pdf_sha256": "7b40d77bebbdf9241747f29842140c25cf3f492546512ef0651d41eac4e1400e",
+      "source_activity_titles": [
+        "Kenal Piktograf",
+        "Susun Kad Gambar",
+        "Semak Padanan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar buah tersusun; murid membilang setiap baris.",
+        "exploration": "Murid menyusun satu gambar bagi satu respons dalam grid kategori.",
+        "explanation": "Guru menerangkan tajuk, kategori, simbol dan petunjuk satu simbol mewakili satu unit.",
+        "elaboration": "Murid bina piktograf pilihan warna menggunakan satu simbol bagi satu respons.",
+        "evaluation": "Murid melengkapkan piktograf tiga kategori berdasarkan jadual dengan bilangan simbol betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 115,
+      "sp_code": "7.1.2",
+      "title": "Memahami Piktograf",
+      "dk_printed_page": 123,
+      "source_pdf_page": 240,
+      "source_word_sha256": "d37a347669070f7f3f03b2705ddd7da9bbaa136a142cdc36adc05c99ee82ef85",
+      "source_pdf_sha256": "69edea51743fa574d5ea2afe27d790ceb21476fdc36adb7c25ebdb5dbbdea45e",
+      "source_activity_titles": [
+        "Kenal Piktograf",
+        "Susun Kad Gambar",
+        "Semak Padanan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar buah tersusun; murid membilang setiap baris.",
+        "exploration": "Murid menyusun satu gambar bagi satu respons dalam grid kategori.",
+        "explanation": "Guru menerangkan tajuk, kategori, simbol dan petunjuk satu simbol mewakili satu unit.",
+        "elaboration": "Murid bina piktograf haiwan daripada jadual mudah.",
+        "evaluation": "Murid melengkapkan piktograf tiga kategori berdasarkan jadual dengan bilangan simbol betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 116,
+      "sp_code": "7.1.2",
+      "title": "Memahami Piktograf",
+      "dk_printed_page": 123,
+      "source_pdf_page": 241,
+      "source_word_sha256": "c1f1de535835953ef94f233a952bdce58cca103d3b27028c61595ae2f16c765c",
+      "source_pdf_sha256": "9efd4fd8bdb8b64905c8cba2932301dc061323c4d4384d9ba038b9751554f357",
+      "source_activity_titles": [
+        "Kenal Piktograf",
+        "Susun Kad Gambar",
+        "Semak Padanan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan gambar buah tersusun; murid membilang setiap baris.",
+        "exploration": "Murid menyusun satu gambar bagi satu respons dalam grid kategori.",
+        "explanation": "Guru menerangkan tajuk, kategori, simbol dan petunjuk satu simbol mewakili satu unit.",
+        "elaboration": "Murid tukar piktograf tiga kategori dengan pasangan dan semak padanan jadual.",
+        "evaluation": "Murid melengkapkan piktograf tiga kategori berdasarkan jadual dengan bilangan simbol betul."
+      },
+      "academic_status": "DRAFT_SOURCE_ADAPTED",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 117,
+      "sp_code": "7.1.3",
+      "title": "Membaca Maklumat Piktograf",
+      "dk_printed_page": 125,
+      "source_pdf_page": 242,
+      "source_word_sha256": "3b4fefba0778daf115c5d01d7a04757410e2478eb83b14d31bf95d2736631c6b",
+      "source_pdf_sha256": "bb035aa21aef16ba07fb0278a4df4baa521b79aab1f585c019b7415e1e313d2f",
+      "source_activity_titles": [
+        "Kenal Kategori dan Simbol",
+        "Baca dan Banding",
+        "Jelaskan Jawapan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+        "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+        "explanation": "Guru memodelkan bacaan petunjuk satu simbol mewakili satu unit dan sepuluh unit melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+        "elaboration": "Murid baca piktograf haiwan dengan petunjuk satu simbol satu unit.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan piktograf berpandukan petunjuk."
+      },
+      "academic_status": "HOLD_DK_BOTH_KEYS_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 118,
+      "sp_code": "7.1.3",
+      "title": "Membaca Maklumat Piktograf",
+      "dk_printed_page": 125,
+      "source_pdf_page": 243,
+      "source_word_sha256": "d747e935ab3fcde33875751a2fb91f0501d11b7a975a7442341b8ccf5df856c2",
+      "source_pdf_sha256": "b6bce3bdee7e02015dc1ce0095d83b6e89ef555823f342aa4b1af6dc3b2718b4",
+      "source_activity_titles": [
+        "Kenal Kategori dan Simbol",
+        "Baca dan Banding",
+        "Jelaskan Jawapan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+        "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+        "explanation": "Guru memodelkan bacaan petunjuk satu simbol mewakili satu unit dan sepuluh unit melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+        "elaboration": "Murid baca piktograf buku dengan petunjuk satu simbol sepuluh unit.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan piktograf berpandukan petunjuk."
+      },
+      "academic_status": "HOLD_DK_BOTH_KEYS_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 119,
+      "sp_code": "7.1.3",
+      "title": "Membaca Maklumat Piktograf",
+      "dk_printed_page": 125,
+      "source_pdf_page": 244,
+      "source_word_sha256": "1f033a2221ba3ccede8e3085420c80de95060a1fe6c661b3e4fe1382072de009",
+      "source_pdf_sha256": "bf84ec4823595373cd0f6edddb11a278152a84cc40288704b47074d37ac25e30",
+      "source_activity_titles": [
+        "Kenal Kategori dan Simbol",
+        "Baca dan Banding",
+        "Jelaskan Jawapan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+        "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+        "explanation": "Guru memodelkan bacaan petunjuk satu simbol mewakili satu unit dan sepuluh unit melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+        "elaboration": "Murid banding dua kategori dalam piktograf pilihan buah berpandukan petunjuk.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan piktograf berpandukan petunjuk."
+      },
+      "academic_status": "HOLD_DK_BOTH_KEYS_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 120,
+      "sp_code": "7.1.3",
+      "title": "Membaca Maklumat Piktograf",
+      "dk_printed_page": 125,
+      "source_pdf_page": 245,
+      "source_word_sha256": "b40e3dda08dec79a3353e60e55c38610de050ea5d79bc2c6b7c40d7a3459a119",
+      "source_pdf_sha256": "d7f49d00e38ecfe85d4c5babddf063f488d43197714df27519004bdfdaf9414c",
+      "source_activity_titles": [
+        "Kenal Kategori dan Simbol",
+        "Baca dan Banding",
+        "Jelaskan Jawapan"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf tiga haiwan; murid meramal kategori paling banyak.",
+        "exploration": "Murid mengenal tajuk, kategori dan petunjuk sebelum membilang simbol.",
+        "explanation": "Guru memodelkan bacaan petunjuk satu simbol mewakili satu unit dan sepuluh unit melalui pembilangan satu-satu atau sepuluh-sepuluh.",
+        "elaboration": "Murid tukar kad soalan piktograf dengan pasangan dan terangkan nilai berdasarkan petunjuk.",
+        "evaluation": "Murid menjawab sekurang-kurangnya empat daripada lima soalan bacaan piktograf berpandukan petunjuk."
+      },
+      "academic_status": "HOLD_DK_BOTH_KEYS_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 121,
+      "sp_code": "7.1.4",
+      "title": "Menyelesaikan Masalah Data Harian",
+      "dk_printed_page": 129,
+      "source_pdf_page": 246,
+      "source_word_sha256": "9e2bdb6c6dc60878672e96fcaeb711f217b24da5816522f472d7cbfe09b4621e",
+      "source_pdf_sha256": "33009cccd3ef0321d9da2120139c58e40dbd5ec2c5481cbd363156a37c5d1036",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Selesaikan Masalah",
+        "Banding Strategi"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+        "exploration": "Murid mengenal kategori yang diperlukan dan membaca petunjuk satu simbol satu unit.",
+        "explanation": "Guru membimbing penghitungan simbol berkaitan secara terus tanpa menulis operasi tambah atau tolak.",
+        "elaboration": "Murid hitung semua simbol buku dalam baris Isnin dan Selasa secara terus.",
+        "evaluation": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah harian melalui penghitungan simbol mengikut petunjuk, tanpa operasi tambah atau tolak."
+      },
+      "academic_status": "HOLD_DK_NO_ARITHMETIC_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 122,
+      "sp_code": "7.1.4",
+      "title": "Menyelesaikan Masalah Data Harian",
+      "dk_printed_page": 129,
+      "source_pdf_page": 247,
+      "source_word_sha256": "c8444324cabd5cfa5901acb01c3cc5b1a7a00ac1a970311cc896a08f5978dfb9",
+      "source_pdf_sha256": "14cc6c59048dd75d1c5b3c855027ba36f00034af362f85969eb22e2de2f3c183",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Selesaikan Masalah",
+        "Banding Strategi"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+        "exploration": "Murid mengenal kategori yang diperlukan dan membaca petunjuk satu simbol satu unit.",
+        "explanation": "Guru membimbing penghitungan simbol berkaitan secara terus tanpa menulis operasi tambah atau tolak.",
+        "elaboration": "Murid hitung simbol pilihan makanan dalam dua kategori yang ditanya.",
+        "evaluation": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah harian melalui penghitungan simbol mengikut petunjuk, tanpa operasi tambah atau tolak."
+      },
+      "academic_status": "HOLD_DK_NO_ARITHMETIC_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 123,
+      "sp_code": "7.1.4",
+      "title": "Menyelesaikan Masalah Data Harian",
+      "dk_printed_page": 129,
+      "source_pdf_page": 248,
+      "source_word_sha256": "7e501aacb0f4de7cf2b173a95fe8162b18bfa3e92b845427bd893c7e1c112a89",
+      "source_pdf_sha256": "31fba13586409abd308e6ed8aac309444d64ba195835fd3fae45cfcbf116ada3",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Selesaikan Masalah",
+        "Banding Strategi"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+        "exploration": "Murid mengenal kategori yang diperlukan dan membaca petunjuk satu simbol satu unit.",
+        "explanation": "Guru membimbing penghitungan simbol berkaitan secara terus tanpa menulis operasi tambah atau tolak.",
+        "elaboration": "Murid kenal pasti kategori yang memenuhi bilangan dalam soalan melalui kiraan simbol.",
+        "evaluation": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah harian melalui penghitungan simbol mengikut petunjuk, tanpa operasi tambah atau tolak."
+      },
+      "academic_status": "HOLD_DK_NO_ARITHMETIC_REVIEW",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 124,
+      "sp_code": "7.1.4",
+      "title": "Menyelesaikan Masalah Data Harian",
+      "dk_printed_page": 129,
+      "source_pdf_page": 249,
+      "source_word_sha256": "8c964d041b3f3099e5b4afe15cf4f82475ff443b669a1ebc5baa865a81691a50",
+      "source_pdf_sha256": "8b775a07d52449668df90247e1468ae39c72082333b7948fb58aee293c462c6c",
+      "source_activity_titles": [
+        "Kenal Maklumat Diberi",
+        "Selesaikan Masalah",
+        "Banding Strategi"
+      ],
+      "source_basis": "Adaptation from representative original RPH for each SP and official DK. Verify individual original records before release.",
+      "phases": {
+        "engagement": "Guru menunjukkan piktograf mudah dan bertanya nilai satu simbol.",
+        "exploration": "Murid mengenal kategori yang diperlukan dan membaca petunjuk satu simbol satu unit.",
+        "explanation": "Guru membimbing penghitungan simbol berkaitan secara terus tanpa menulis operasi tambah atau tolak.",
+        "elaboration": "Murid hitung simbol pada baris yang ditetapkan dan terangkan jawapan berunit.",
+        "evaluation": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat masalah harian melalui penghitungan simbol mengikut petunjuk, tanpa operasi tambah atau tolak."
+      },
+      "academic_status": "HOLD_DK_NO_ARITHMETIC_REVIEW",
+      "ready": false
+    }
+  ],
+  "release": false
+}
