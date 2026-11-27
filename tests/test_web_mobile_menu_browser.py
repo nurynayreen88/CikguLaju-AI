@@ -52,7 +52,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                       };
                     }""")
                     self.assertEqual(metrics["display"],"grid",metrics)
-                    self.assertEqual(len(metrics["tabs"]),7,metrics)
+                    self.assertEqual(len(metrics["tabs"]),8,metrics)
                     self.assertLessEqual(metrics["scroll"],metrics["client"]+1,metrics)
                     self.assertLessEqual(metrics["body"],width+1,metrics)
                     for tab in metrics["tabs"]:
@@ -109,6 +109,13 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     self.assertLessEqual(page.evaluate("document.body.scrollWidth"),width+1)
                     page.get_by_role("button",name="Rakan Pembangun").click()
                     expect(page.locator("#view-curriculum-docs")).to_be_hidden()
+                    page.get_by_role("button",name="Kalendar Akademik",exact=True).click()
+                    expect(page.locator("#calendar2027-heading")).to_be_focused()
+                    expect(page.locator("#view-calendar")).to_be_visible()
+                    expect(page.locator("#view-rpt")).to_be_hidden()
+                    expect(page.locator('[data-web-view="calendar"]')).to_have_attribute("aria-current","page")
+                    page.get_by_role("button",name="Rakan Pembangun").click()
+                    expect(page.locator("#view-calendar")).to_be_hidden()
                     more=page.locator("#sidebar-more")
                     self.assertFalse(more.evaluate("(node)=>node.open"))
                     expect(page.get_by_role("button",name="Rekod PBD")).to_be_hidden()
@@ -195,6 +202,76 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                         expect(guide).to_be_visible()
                 finally:
                     page.close()
+
+    def test_calendar_uses_independent_free_download(self):
+        import json
+        from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+        from threading import Thread
+
+        downloads=[]
+        state={"ready":True}
+        payload=b"%PDF-1.4\n% calendar download test\n%%EOF\n"
+        filename="CikguLaju_Kalendar_2027_A2_Kemas.pdf"
+
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self,*args):
+                pass
+
+            def send_body(self,status,body,content_type,attachment=None):
+                self.send_response(status)
+                self.send_header("Content-Type",content_type)
+                self.send_header("Content-Length",str(len(body)))
+                if attachment:
+                    self.send_header("Content-Disposition",'attachment; filename="'+attachment+'"')
+                self.end_headers()
+                self.wfile.write(body)
+
+            def do_GET(self):
+                path=urlsplit(self.path).path
+                if path=="/":
+                    return self.send_body(200,(WEB/"index.html").read_bytes(),"text/html; charset=utf-8")
+                if path=="/api/auth/telegram/session":
+                    return self.send_body(200,json.dumps({"rph_access_mode":"trial","rph_trial_remaining":0}).encode(),"application/json")
+                if path=="/api/rpt/2027/calendar/status":
+                    return self.send_body(200,json.dumps(state).encode(),"application/json")
+                if path=="/api/rpt/2027/calendar.pdf":
+                    downloads.append(path)
+                    return self.send_body(200,payload,"application/pdf",filename)
+                if path.startswith("/assets/"):
+                    asset=WEB/path.rsplit("/",1)[-1]
+                    if asset.is_file():
+                        import mimetypes
+                        return self.send_body(200,asset.read_bytes(),mimetypes.guess_type(asset.name)[0] or "application/octet-stream")
+                return self.send_body(404,b"{}","application/json")
+
+        server=ThreadingHTTPServer(("127.0.0.1",0),Handler)
+        thread=Thread(target=server.serve_forever,daemon=True)
+        thread.start()
+        origin="http://127.0.0.1:"+str(server.server_port)
+        page=self.browser.new_page(viewport={"width":390,"height":820},accept_downloads=True)
+        try:
+            page.goto(origin+"/",wait_until="domcontentloaded")
+            page.get_by_role("button",name="Kalendar Akademik",exact=True).click()
+            expect(page.locator("#calendar2027-download")).to_be_visible()
+            expect(page.locator("#calendar2027-status")).to_have_text("Muat turun terus tanpa menggunakan kuota RPH.")
+            with page.expect_download() as info:
+                page.locator("#calendar2027-download").click()
+            download=info.value
+            self.assertEqual(download.suggested_filename,filename)
+            self.assertEqual(download.url,origin+"/api/rpt/2027/calendar.pdf")
+            self.assertEqual(download.path().read_bytes(),payload)
+            self.assertEqual(downloads,["/api/rpt/2027/calendar.pdf"])
+            page.get_by_role("button",name="RPT 2027",exact=True).click()
+            expect(page.locator("#calendar2027-download")).to_be_hidden()
+            state["ready"]=False
+            page.get_by_role("button",name="Kalendar Akademik",exact=True).click()
+            expect(page.locator("#calendar2027-status")).to_have_text("Kalendar belum tersedia.")
+            expect(page.locator("#calendar2027-download")).to_be_hidden()
+        finally:
+            page.close()
+            server.shutdown()
+            server.server_close()
+            thread.join(timeout=5)
 
     def test_year_one_book_references_appear_after_each_lesson_selection(self):
         page = self.browser.new_page(viewport={"width": 390, "height": 840})
