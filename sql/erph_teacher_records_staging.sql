@@ -1,4 +1,5 @@
--- Staging migration; do not apply until reviewed and approved for production.
+-- Applied as erph_private_teacher_records; production table verified empty with RLS enabled and direct client grants revoked.
+-- Keep this as the schema reference. Do not re-run against an existing table.
 create table public.erph_teacher_records (
   id uuid primary key default gen_random_uuid(),
   owner_telegram_id bigint not null check (owner_telegram_id > 0),
