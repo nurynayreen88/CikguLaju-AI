@@ -1,0 +1,774 @@
+{
+  "status": "TWELVE_NEW_RPH_CONTENT_CANDIDATES_NOT_PUBLISHED",
+  "year": 4,
+  "subject": "Matematik SJKC",
+  "source": {
+    "rpt_path": "audits/rpt_2027_matematik_sjkc_t4_t6_layout_input_20261127.json",
+    "rpt_blob": "fb090b1d7c562ecb2b485ec2fe647aba265fd9ee",
+    "dskp_drive_id": "1PlpjBO35rc0C9eGj8IDMB74A5njPKhLm",
+    "dskp_printed_pages": [
+      33,
+      34
+    ],
+    "qualification": "Scope checked in DSKP; original lesson content. Textbook page candidates unverified; full SK/SP statements, rendering, and academic review pending."
+  },
+  "records": [
+    {
+      "draft_pdp": 11,
+      "unit": 1,
+      "week": "M04",
+      "dates": {
+        "A": {
+          "start": "2027-01-24",
+          "end": "2027-01-28"
+        },
+        "B": {
+          "start": "2027-01-25",
+          "end": "2027-01-29"
+        }
+      },
+      "minutes": 60,
+      "topic": "四个以内整数相加",
+      "sk_code": "1.6",
+      "sp_codes": [
+        "1.6.1"
+      ],
+      "scope": "四个以内数目的和不超过100 000",
+      "objective": "正确计算二至四个整数的和，并检验结果。",
+      "success_criteria": "8题至少答对7题。",
+      "set_induction": "展示四班筹款12 560、8 425、14 780、9 305令吉，估计总额。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "收款核算：学生将四笔数按数位对齐，以竖式相加，标记进位。"
+        },
+        {
+          "number": 2,
+          "text": "组合挑战：小组用四张金额卡构造总和不超过100 000的算式，比较先合并整千数与逐项相加的方法。"
+        },
+        {
+          "number": 3,
+          "text": "独立验算：完成8题（含连续进位），用近似值检查答案。"
+        }
+      ],
+      "closure": "说出对齐数位及进位的要点。",
+      "bbm": "金额卡、数位表",
+      "assessment": "检查8道竖式的答案及进位。",
+      "remedial": "先用两项无进位数，再加入第三项。",
+      "enrichment": "设计四项和为指定五位数的算式。",
+      "emk": "财务教育",
+      "pak21": "合作解题",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        18,
+        19
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 12,
+      "unit": 1,
+      "week": "M05",
+      "dates": {
+        "A": {
+          "start": "2027-01-31",
+          "end": "2027-02-04"
+        },
+        "B": {
+          "start": "2027-02-01",
+          "end": "2027-02-05"
+        }
+      },
+      "minutes": 60,
+      "topic": "两个整数相减",
+      "sk_code": "1.6",
+      "sp_codes": [
+        "1.6.2"
+      ],
+      "scope": "100 000以内两个整数相减",
+      "objective": "运用竖式计算两数之差，处理连续借位。",
+      "success_criteria": "8题至少答对7题。",
+      "set_induction": "仓库有60 000本书，运走18 746本，预测余量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "拆位演示：学生用数位筹码解释60 000减18 746中的连续借位。"
+        },
+        {
+          "number": 2,
+          "text": "库存核对：两人分别负责计算差及用加法反查，找出借位错误。"
+        },
+        {
+          "number": 3,
+          "text": "个人任务：完成8道不同借位类型的减法题，并验算其中两题。"
+        }
+      ],
+      "closure": "归纳用差加减数验证被减数。",
+      "bbm": "数位筹码、库存卡",
+      "assessment": "核对8题及逆运算。",
+      "remedial": "使用三位数数位表逐步演练借位。",
+      "enrichment": "找出两组差为25 000的不同五位数。",
+      "emk": "诚信、推理",
+      "pak21": "同伴互查",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        20,
+        21
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 13,
+      "unit": 1,
+      "week": "M05",
+      "dates": {
+        "A": {
+          "start": "2027-01-31",
+          "end": "2027-02-04"
+        },
+        "B": {
+          "start": "2027-02-01",
+          "end": "2027-02-05"
+        }
+      },
+      "minutes": 60,
+      "topic": "三个整数连续相减",
+      "sk_code": "1.6",
+      "sp_codes": [
+        "1.6.3"
+      ],
+      "scope": "100 000以内三个整数连减",
+      "objective": "依次计算三个整数的连减式并解释中间结果。",
+      "success_criteria": "6题至少答对5题。",
+      "set_induction": "印刷厂有75 500张纸，上午用掉12 350张，下午用掉18 640张。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "用条形图标记初始量、两次减少量和余量。"
+        },
+        {
+          "number": 2,
+          "text": "纸张管理站：小组分别用两次减法及先求总减少量的方法解决库存题，核对答案。"
+        },
+        {
+          "number": 3,
+          "text": "独立练习：完成6组连减式，标注每一步的余量及最后结果。"
+        }
+      ],
+      "closure": "讨论为什么不能颠倒被减数与减数。",
+      "bbm": "条形图、情境卡",
+      "assessment": "按6题的最终结果和步骤评估。",
+      "remedial": "用小数值实物两次取走，转换为算式。",
+      "enrichment": "根据给定余量和两笔支出逆推初始量。",
+      "emk": "资源节约",
+      "pak21": "小组推理",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "6题至少答对5题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        20,
+        21
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 14,
+      "unit": 1,
+      "week": "M07",
+      "dates": {
+        "A": {
+          "start": "2027-02-14",
+          "end": "2027-02-18"
+        },
+        "B": {
+          "start": "2027-02-15",
+          "end": "2027-02-19"
+        }
+      },
+      "minutes": 60,
+      "topic": "先后执行加减两种运算",
+      "sk_code": "1.7",
+      "sp_codes": [
+        "1.7.1"
+      ],
+      "scope": "100 000以内加减混合运算",
+      "objective": "按从左至右的顺序完成加减混合式。",
+      "success_criteria": "8题至少答对7题。",
+      "set_induction": "记录图书馆36 500本书、购入2 350本、借出4 600本。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "流水账：学生模拟购入与借出，依事件顺序列式，先做无进退位题。"
+        },
+        {
+          "number": 2,
+          "text": "算式侦探：比较加减及减加算式的中间结果，辨认错误的运算顺序。"
+        },
+        {
+          "number": 3,
+          "text": "个人核算：完成8题，逐渐加入进位及借位。"
+        }
+      ],
+      "closure": "口述同级加减运算顺序。",
+      "bbm": "流水账卡、数轴、小白板",
+      "assessment": "检查8题结果及计算顺序。",
+      "remedial": "借助数轴处理较小整数的加减。",
+      "enrichment": "为指定混合式设计合理生活情境。",
+      "emk": "财务教育",
+      "pak21": "角色扮演、纠错",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        22,
+        23
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 15,
+      "unit": 1,
+      "week": "M07",
+      "dates": {
+        "A": {
+          "start": "2027-02-14",
+          "end": "2027-02-18"
+        },
+        "B": {
+          "start": "2027-02-15",
+          "end": "2027-02-19"
+        }
+      },
+      "minutes": 60,
+      "topic": "五位以内整数乘法",
+      "sk_code": "1.6",
+      "sp_codes": [
+        "1.6.4"
+      ],
+      "scope": "至五位数乘至二位数、100或1 000，积不超过100 000",
+      "objective": "正确计算整数乘一、二位数及100、1 000。",
+      "success_criteria": "8题至少答对7题，涵盖各指定乘数。",
+      "set_induction": "每箱装24本练习册，计算35箱的数量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "阵列分拆：学生用24×(30+5)理解两位数乘法，再转为竖式。"
+        },
+        {
+          "number": 2,
+          "text": "位值工坊：用数位表比较34×100与34×1 000；小组选择积不超过100 000的数卡。"
+        },
+        {
+          "number": 3,
+          "text": "独立练习：完成8题，包括四至五位数乘一位数、两位数及整百整千乘数。"
+        }
+      ],
+      "closure": "检查数量级、数位及积的合理性。",
+      "bbm": "方格纸、数位表、乘数卡",
+      "assessment": "按8题及位值解释评估。",
+      "remedial": "先复习两位数乘一位数和部分积。",
+      "enrichment": "找出两个不同乘式使积为48 000。",
+      "emk": "推理",
+      "pak21": "操作探究",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，涵盖各指定乘数。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        24,
+        25
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 16,
+      "unit": 1,
+      "week": "M07",
+      "dates": {
+        "A": {
+          "start": "2027-02-14",
+          "end": "2027-02-18"
+        },
+        "B": {
+          "start": "2027-02-15",
+          "end": "2027-02-19"
+        }
+      },
+      "minutes": 60,
+      "topic": "用不同除数完成整数除法",
+      "sk_code": "1.6",
+      "sp_codes": [
+        "1.6.5"
+      ],
+      "scope": "100 000以内整数除以至二位数、100或1 000",
+      "objective": "用竖式及位值关系完成指定范围的除法，并以乘法验算。",
+      "success_criteria": "8题至少答对7题。",
+      "set_induction": "48 000张卡片平均装入24箱，计算每箱数量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "分组建模：以位值分解48 000，估计商，再示范两位数除数的竖式。"
+        },
+        {
+          "number": 2,
+          "text": "位值比较：学生用数位表解释36 000÷100及36 000÷1 000，比较商的数值。"
+        },
+        {
+          "number": 3,
+          "text": "独立练习：完成8题，含整除与余数题；选择两题以商乘除数加余数验算。"
+        }
+      ],
+      "closure": "说明余数应小于除数。",
+      "bbm": "分组图、数位表",
+      "assessment": "检查8题商、余数与验算。",
+      "remedial": "使用乘法表及一位数除数建立信心。",
+      "enrichment": "根据给定商和余数设计合理除法题。",
+      "emk": "科学与工艺",
+      "pak21": "同伴辅导",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        26,
+        27
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 17,
+      "unit": 1,
+      "week": "M08",
+      "dates": {
+        "A": {
+          "start": "2027-02-21",
+          "end": "2027-02-25"
+        },
+        "B": {
+          "start": "2027-02-22",
+          "end": "2027-02-26"
+        }
+      },
+      "minutes": 60,
+      "topic": "乘除混合式的运算顺序",
+      "sk_code": "1.7",
+      "sp_codes": [
+        "1.7.2"
+      ],
+      "scope": "100 000以内乘除混合运算",
+      "objective": "按从左至右的顺序计算乘除混合式。",
+      "success_criteria": "8题至少答对7题。",
+      "set_induction": "每箱240瓶水，6箱平均分给12组，求每组瓶数。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "分装图：先求6箱总量，再平均分配；学生将两个操作写成一个算式。"
+        },
+        {
+          "number": 2,
+          "text": "顺序实验：小组比较3 600÷12×5与240×6÷12，分别记录中间结果，纠正错误先后次序。"
+        },
+        {
+          "number": 3,
+          "text": "个人练习：完成8个乘除混合式，所有中间数值控制在100 000以内。"
+        }
+      ],
+      "closure": "归纳乘除同级运算按从左至右计算。",
+      "bbm": "分装图、算式卡",
+      "assessment": "核对8题计算顺序与结果。",
+      "remedial": "用小数值分组图演示两个连续操作。",
+      "enrichment": "设计结果相同但运算顺序不同的两个合法算式。",
+      "emk": "逻辑推理",
+      "pak21": "合作解题",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        28,
+        29
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 18,
+      "unit": 1,
+      "week": "M08",
+      "dates": {
+        "A": {
+          "start": "2027-02-21",
+          "end": "2027-02-25"
+        },
+        "B": {
+          "start": "2027-02-22",
+          "end": "2027-02-26"
+        }
+      },
+      "minutes": 60,
+      "topic": "以逆运算求加法中的未知量",
+      "sk_code": "1.8",
+      "sp_codes": [
+        "1.8.1"
+      ],
+      "scope": "两个至二位数的加法算式中的一个未知数",
+      "objective": "用字母表示未知数，借助逆运算求其值。",
+      "success_criteria": "8题至少答对7题并代入检验两题。",
+      "set_induction": "展示x+28=65，学生猜测缺少的数量。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "天平模型：以方块表示未知数，移去已知的28，解释等量关系。"
+        },
+        {
+          "number": 2,
+          "text": "缺数卡：两人交替求a+17=54及32+b=76等算式的未知数，用减法找值。"
+        },
+        {
+          "number": 3,
+          "text": "独立任务：求8道加法算式的单一未知数，选择两题代入核对。"
+        }
+      ],
+      "closure": "说明和减去已知加数即未知加数。",
+      "bbm": "天平示意图、字母卡",
+      "assessment": "核对8题及代入过程。",
+      "remedial": "先从个位数缺项入手，再引入字母。",
+      "enrichment": "构造两个未知数位置不同但解相同的加法式。",
+      "emk": "推理",
+      "pak21": "同伴解释",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题并代入检验两题。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        30,
+        31
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 19,
+      "unit": 1,
+      "week": "M08",
+      "dates": {
+        "A": {
+          "start": "2027-02-21",
+          "end": "2027-02-25"
+        },
+        "B": {
+          "start": "2027-02-22",
+          "end": "2027-02-26"
+        }
+      },
+      "minutes": 60,
+      "topic": "以逆运算求减法中的未知量",
+      "sk_code": "1.8",
+      "sp_codes": [
+        "1.8.2"
+      ],
+      "scope": "两个至二位数的减法算式中的一个未知数",
+      "objective": "辨别未知被减数或减数，选择正确逆运算求值。",
+      "success_criteria": "8题至少答对7题，涵盖两种位置。",
+      "set_induction": "展示a−24=35及72−b=19，讨论两式的不同。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "条形模型：标出整体与部分，辨别未知被减数和未知减数。"
+        },
+        {
+          "number": 2,
+          "text": "双栏任务：小组把题卡按未知量的位置分类，分别写出加法或减法求值步骤。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成8题，至少两题代入原式验证。"
+        }
+      ],
+      "closure": "总结未知被减数用加法，未知减数用被减数减差。",
+      "bbm": "条形图、分类卡",
+      "assessment": "核对两类各4题及验算。",
+      "remedial": "用实物取走小数目并标出整体与部分。",
+      "enrichment": "自编两道同解但未知数位置不同的减法式。",
+      "emk": "推理",
+      "pak21": "分类讨论",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "8题至少答对7题，涵盖两种位置。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        30,
+        31
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 20,
+      "unit": 1,
+      "week": "M09",
+      "dates": {
+        "A": {
+          "start": "2027-02-28",
+          "end": "2027-03-04"
+        },
+        "B": {
+          "start": "2027-03-01",
+          "end": "2027-03-05"
+        }
+      },
+      "minutes": 60,
+      "topic": "单步整数情境题",
+      "sk_code": "1.9",
+      "sp_codes": [
+        "1.9.1"
+      ],
+      "scope": "日常生活中100 000以内整数的应用题",
+      "objective": "识别生活题中的已知量与所求量，选择适当基本运算。",
+      "success_criteria": "5道单步应用题至少答对4道，写明单位。",
+      "set_induction": "展示校庆入场人数、票数与座位数据，提出一个实际问题。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "审题标注：学生圈出已知数据和所求量，用条形图表示关系。"
+        },
+        {
+          "number": 2,
+          "text": "情境轮换：小组解决书本总量、库存差、每箱数量及平均分配四类问题，解释运算选择。"
+        },
+        {
+          "number": 3,
+          "text": "个人解题：完成5道应用题，写出算式、答案及单位并进行合理性检查。"
+        }
+      ],
+      "closure": "归纳审题、拟定策略、计算、验算四步骤。",
+      "bbm": "情境卡、条形图、任务纸",
+      "assessment": "按5题的算式、答案及单位评分。",
+      "remedial": "提供已知量与所求量提示框。",
+      "enrichment": "为一个给定算式编写可解的生活题。",
+      "emk": "财务教育、语言",
+      "pak21": "问题导向学习",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "5道单步应用题至少答对4道，写明单位。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        34,
+        40
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 21,
+      "unit": 1,
+      "week": "M09",
+      "dates": {
+        "A": {
+          "start": "2027-02-28",
+          "end": "2027-03-04"
+        },
+        "B": {
+          "start": "2027-03-01",
+          "end": "2027-03-05"
+        }
+      },
+      "minutes": 60,
+      "topic": "加减或乘除的多步情境题",
+      "sk_code": "1.9",
+      "sp_codes": [
+        "1.9.1"
+      ],
+      "scope": "日常生活中100 000以内加减及乘除混合应用题",
+      "objective": "建立两步加减或乘除混合算式并检验答案。",
+      "success_criteria": "4道两步题至少答对3道，步骤与单位正确。",
+      "set_induction": "学校有18 600张纸，又购入4 200张，用去7 850张。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "事件排序：学生按购入和使用顺序摆放卡片，列出混合式并计算。"
+        },
+        {
+          "number": 2,
+          "text": "分配规划：小组处理多箱物品平均分配、先平均分再按组取用等乘除混合情境，用图解释。"
+        },
+        {
+          "number": 3,
+          "text": "独立检测：完成4道两步题（两道加减、两道乘除），用逆运算或估算检验。"
+        }
+      ],
+      "closure": "分享如何从问题关系判断第一步。",
+      "bbm": "事件卡、分组图",
+      "assessment": "检查4题的两步关系和结果。",
+      "remedial": "把两步题拆成两个小问题再合并算式。",
+      "enrichment": "为同一情境提出一个不同的两步问题。",
+      "emk": "资源管理",
+      "pak21": "小组问题解决",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "4道两步题至少答对3道，步骤与单位正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        34,
+        42
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    },
+    {
+      "draft_pdp": 22,
+      "unit": 1,
+      "week": "M09",
+      "dates": {
+        "A": {
+          "start": "2027-02-28",
+          "end": "2027-03-04"
+        },
+        "B": {
+          "start": "2027-03-01",
+          "end": "2027-03-05"
+        }
+      },
+      "minutes": 60,
+      "topic": "把生活情境转成含未知量的算式",
+      "sk_code": "1.9",
+      "sp_codes": [
+        "1.9.2"
+      ],
+      "scope": "日常生活中涉及一个未知数的加减应用题",
+      "objective": "将生活情境转化为含一个字母未知数的加减式并求值。",
+      "success_criteria": "5道情境题至少答对4道，列式及代入正确。",
+      "set_induction": "图书角原有若干书，新增24本后共有68本。",
+      "activities": [
+        {
+          "number": 1,
+          "text": "未知量标记：学生用字母表示原有书数，写出a+24=68并求值。"
+        },
+        {
+          "number": 2,
+          "text": "情境配对：小组将原有量、减少量及剩余量的故事卡配对至正确加减算式，解释未知量位置。"
+        },
+        {
+          "number": 3,
+          "text": "个人解题：完成5题，包含未知加数、被减数和减数；将解代回原式。"
+        }
+      ],
+      "closure": "说明字母代表题目中尚未知道的数量。",
+      "bbm": "故事卡、条形图、字母卡",
+      "assessment": "检查5题建模式、数值和代入。",
+      "remedial": "先用方框替代字母，再转换为字母。",
+      "enrichment": "自编一个只含一个未知数的减法故事题。",
+      "emk": "语言、推理",
+      "pak21": "同伴讲解",
+      "reflection": {
+        "mode": "web_only",
+        "basis": "5道情境题至少答对4道，列式及代入正确。",
+        "manual": ""
+      },
+      "profile_fields": {
+        "class": "",
+        "date": "",
+        "time": "",
+        "students": ""
+      },
+      "textbook_pages_candidate": [
+        34,
+        42
+      ],
+      "academic_review": "DRAFT",
+      "ready": false
+    }
+  ],
+  "release": false
+}
