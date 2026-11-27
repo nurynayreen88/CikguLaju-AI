@@ -120,7 +120,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     expect(page.locator("#curriculum-docs-dpk button.curriculum-direct-download")).to_have_count(11)
                     page.locator("#curriculum-docs-type").select_option("pk")
                     expect(page.locator("#curriculum-pk-list li:visible")).to_have_count(54)
-                    expect(page.locator("#curriculum-pk-list button.curriculum-direct-download")).to_have_count(12)
+                    expect(page.locator("#curriculum-pk-list button.curriculum-direct-download")).to_have_count(18)
                     page.locator("#curriculum-pk-year").select_option("3")
                     expect(page.locator("#curriculum-pk-list li:visible")).to_have_count(6)
                     page.locator("#curriculum-pk-subject").select_option("Pengurusan Kehidupan")
