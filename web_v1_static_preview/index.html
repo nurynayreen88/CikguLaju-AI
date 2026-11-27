@@ -3624,6 +3624,13 @@ document.addEventListener("visibilitychange",()=>{
 rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
+
+
+(()=>{const entry=document.getElementById('erph-private-entry');if(!entry)return;
+ entry.addEventListener('click',()=>location.assign('/erph'));
+ fetch('/api/erph/availability',{credentials:'same-origin',cache:'no-store'}).then(async r=>{if(r.ok&&(await r.json()).enabled===true)entry.hidden=false;}).catch(()=>{});
+})();
+
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=muat-turun-audio-english-20261120"></script>
@@ -3634,11 +3641,6 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/web-feedback.js?v=pusat-admin-alert-20261123"></script>
 <script src="/assets/web-admin-chat.js?v=pusat-admin-read-20261123"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
-<script>
-(()=>{const entry=document.getElementById('erph-private-entry');if(!entry)return;
- entry.addEventListener('click',()=>location.assign('/erph'));
- fetch('/api/erph/availability',{credentials:'same-origin',cache:'no-store'}).then(async r=>{if(r.ok&&(await r.json()).enabled===true)entry.hidden=false;}).catch(()=>{});
-})();
-</script>
+
 </body>
 </html>
