@@ -1,0 +1,71 @@
+name: RPT PI Arabic 10 native RTL layout private QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/build_rpt_rtl_native_word_20261126.py'
+      - '.github/workflows/rpt-rtl-native-word-20261126.yml'
+permissions:
+  contents: read
+jobs:
+  rtl:
+    strategy:
+      fail-fast: false
+      matrix:
+        subject: [pendidikan_islam,bahasa_arab]
+        year: [2,3,4,5,6]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-rph-word-bundle.txt 'flask==3.1.3'
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation fonts-hosny-amiri
+      - run: python -m tools.build_rpt_rtl_native_word_20261126 --subject ${{ matrix.subject }} --year ${{ matrix.year }} --out "$RUNNER_TEMP/rpt-private"
+      - name: Review first and middle teaching pages, original vs candidate
+        env:
+          RPT_SUBJECT: ${{ matrix.subject }}
+          RPT_YEAR: ${{ matrix.year }}
+        run: |
+          python - <<'PY'
+          import os,json,base64,io
+          from pathlib import Path
+          import fitz
+          from PIL import Image,ImageOps,ImageDraw
+          root=Path("rpt_2027/web_2027_pdfs")
+          subject=os.environ["RPT_SUBJECT"];year=int(os.environ["RPT_YEAR"])
+          entry=json.loads((root/"manifest.json").read_text())["files"][f"{subject}:{year}"]
+          candidate=Path(os.environ["RUNNER_TEMP"])/"rpt-private"/f"RPT_{subject}_tahun_{year}_2027.pdf"
+          with fitz.open(root/entry["path"]) as a,fitz.open(candidate) as b:
+              # Free, unpersonalized PDF samples only. Never emit Word bytes.
+              for page_index in (1,len(b)//2):
+                  p=b[page_index]
+                  import re
+                  marker=re.search(r"(?m)^(?:PdP|Lesson) (\d{3})\s*$",p.get_text())
+                  if marker is None:continue
+                  old=next((q for q in list(a)[1:] if re.search(r"(?m)^(?:PdP|Lesson) "+marker[1]+r"\s*$",q.get_text())),None)
+                  assert old is not None
+                  imgs=[]
+                  for q in (old,p):
+                      pix=q.get_pixmap(matrix=fitz.Matrix(1.15,1.15),alpha=False)
+                      img=Image.frombytes("RGB",(pix.width,pix.height),pix.samples)
+                      imgs.append(img)
+                  w=max(i.width for i in imgs)
+                  canvas=Image.new("RGB",(w,sum(i.height for i in imgs)+36),"white")
+                  y=0
+                  for label,img in zip(("ORIGINAL","CANDIDATE"),imgs):
+                      ImageDraw.Draw(canvas).text((8,y+2),label,fill="black")
+                      canvas.paste(img,(0,y+18));y+=img.height+18
+                  # Small lossless-ish review image, split log chunks to avoid truncation.
+                  buf=io.BytesIO();canvas.save(buf,format="JPEG",quality=76,optimize=True)
+                  data=base64.b64encode(buf.getvalue()).decode()
+                  print(f"RTL_SAMPLE_BEGIN {subject}:{year}:{marker[1]}",flush=True)
+                  for i in range(0,len(data),3000): print("RTL_SAMPLE_CHUNK "+data[i:i+3000],flush=True)
+                  print("RTL_SAMPLE_END",flush=True)
+          PY
+      - if: always()
+        run: rm -rf "$RUNNER_TEMP/rpt-private"
