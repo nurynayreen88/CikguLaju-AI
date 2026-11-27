@@ -42,7 +42,8 @@ def word(rows):
     sec.left_margin=sec.right_margin=Cm(1.6)
     normal=d.styles['Normal']
     normal.font.name='Arial';normal.font.size=Pt(10)
-    normal.paragraph_format.space_after=Pt(4)
+    normal.paragraph_format.space_after=Pt(2)
+    normal.paragraph_format.line_spacing=1.0
     normal.paragraph_format.widow_control=True
     for i,row in enumerate(rows):
         if i:d.add_page_break()
@@ -50,12 +51,14 @@ def word(rows):
         p.alignment=WD_ALIGN_PARAGRAPH.CENTER
         r=p.add_run('REKOD e-RPH');r.bold=True;r.font.size=Pt(15);r.font.color.rgb=RGBColor.from_string('24566B')
         d.add_heading(row['subject_name'],level=2)
-        for line in header(row):d.add_paragraph(line)
+        lines=header(row)
+        d.add_paragraph('  |  '.join(lines[:3]))
+        d.add_paragraph('  |  '.join(lines[3:]))
         for label,value in sections(row):
             p=d.add_paragraph()
             p.paragraph_format.keep_with_next=True
             p.add_run(label).bold=True
-            d.add_paragraph(value)
+            d.add_paragraph('\n'.join(line for line in value.splitlines() if line.strip()))
     out=BytesIO();d.save(out)
     return out.getvalue()
 
@@ -67,7 +70,7 @@ def pdf(rows):
         for value in (row['subject_name'],*header(row),*(v for _,v in sections(row))):
             if any('\u0590'<=ch<='\u08ff' or '\uFB1D'<=ch<='\uFEFF' for ch in value):
                 raise ValueError('Eksport PDF Jawi/Arab belum disahkan. Gunakan Word.')
-    def h(s):return escape(s).replace('\n','<br/>')
+    def h(s):return escape('\n'.join(line for line in s.splitlines() if line.strip())).replace('\n','<br/>')
     out=BytesIO()
     writer=fitz.DocumentWriter(out)
     page=fitz.paper_rect('a4')
@@ -76,9 +79,9 @@ def pdf(rows):
     try:
         for row in rows:
             html='<h1>REKOD e-RPH</h1><h2>'+h(row['subject_name'])+'</h2>'
-            html+='<p>'+ '<br/>'.join(h(s) for s in header(row))+'</p>'
+            html+='<p>'+h('  |  '.join(header(row)[:3]))+'<br/>'+h('  |  '.join(header(row)[3:]))+'</p>'
             html+=''.join('<h3>'+h(label)+'</h3><p>'+h(value)+'</p>' for label,value in sections(row))
-            story=fitz.Story(html=html,user_css='body{font-family:sans-serif;font-size:10pt;line-height:1.25}h1{font-size:15pt;color:#24566b;text-align:center}h2{font-size:13pt}h3{font-size:11pt;color:#24566b;margin-bottom:3pt}p{margin-top:0;margin-bottom:7pt;overflow-wrap:break-word}')
+            story=fitz.Story(html=html,user_css='body{font-family:sans-serif;font-size:10pt;line-height:1.1}h1{font-size:15pt;color:#24566b;text-align:center}h2{font-size:13pt}h3{font-size:11pt;color:#24566b;margin-bottom:2pt}p{margin-top:0;margin-bottom:4pt;overflow-wrap:break-word}')
             more=True
             while more:
                 count+=1
