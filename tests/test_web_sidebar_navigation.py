@@ -96,7 +96,7 @@ class WebSidebarTabsTests(unittest.TestCase):
         }.items():
             expected.update((str(year),subject) for year in years)
         self.assertEqual({(year,subject) for year,subject,_ in rows},expected)
-        pk_rows=re.findall(r'<li data-pk-year="([1-6])" data-pk-subject="([^"]+)"><a href="(https://(?:[^"]+\.pdf|anyflip\.com/[a-z0-9]+/[a-z0-9]+/basic))"',self.html)
+        pk_rows=re.findall(r'<li data-pk-year="([1-6])" data-pk-subject="([^"]+)"><a href="(https://(?:[^"]+\.pdf|anyflip\.com/[a-z0-9]+/[a-z0-9]+/basic|id\.scribd\.com/document/[0-9]+/[A-Za-z0-9-]+))"',self.html)
         kp_section=self.html.split('<ul id="curriculum-kp2027-list">',1)[1].split("</ul>",1)[0]
         self.assertEqual(kp_section.count("<li>"),5)
         self.assertEqual(kp_section.count("PDF sumber luar"),3)
@@ -108,8 +108,8 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertNotIn("penataran",kp_menu.lower())
         self.assertNotIn("curriculum-kp2027-ppd-list",kp_menu)
         self.assertIn("Hanya Dokumen Kurikulum (DK) disenaraikan.",kp_menu)
-        self.assertEqual(len(pk_rows),51)
-        self.assertEqual(len({url for _,_,url in pk_rows}),51)
+        self.assertEqual(len(pk_rows),54)
+        self.assertEqual(len({url for _,_,url in pk_rows}),54)
         self.assertEqual({(year,subject) for year,subject,_ in pk_rows},{
             ("1","Asas 3M"),("2","Pengurusan Kehidupan"),("3","Asas 3M"),
             ("1","Pendidikan Islam"),
@@ -127,6 +127,9 @@ class WebSidebarTabsTests(unittest.TestCase):
             ("4","Pendidikan Jasmani dan Pendidikan Kesihatan"),
             ("4","Pendidikan Muzik"),
             ("5","Pendidikan Muzik"),
+            ("6","Pendidikan Muzik"),
+            ("6","Pendidikan Jasmani dan Pendidikan Kesihatan"),
+            ("6","Matematik"),
             ("4","Pendidikan Seni Visual"),
             ("5","Pendidikan Seni Visual"),
             ("4","Teknologi Maklumat dan Komunikasi"),
@@ -154,12 +157,12 @@ class WebSidebarTabsTests(unittest.TestCase):
             ("5","Pendidikan Sains, Sosial dan Alam Sekitar"),
             ("6","Pendidikan Sains, Sosial dan Alam Sekitar"),
         })
-        stream_rows=re.findall(r'<li data-pk-stream="(pendengaran|penglihatan)" data-pk-stream-year="([1-6])" data-pk-stream-subject="([^"]+)"><a href="(https://[^"]+\.pdf)"',self.html)
-        self.assertEqual(len(stream_rows),15)
-        self.assertEqual(len({url for _,_,_,url in stream_rows}),15)
+        stream_rows=re.findall(r'<li data-pk-stream="(pendengaran|penglihatan)" data-pk-stream-year="([1-6])" data-pk-stream-subject="([^"]+)"><a href="(https://(?:[^"]+\.pdf|anyflip\.com/[a-z0-9]+/[a-z0-9]+/basic))"',self.html)
+        self.assertEqual(len(stream_rows),19)
+        self.assertEqual(len({url for _,_,_,url in stream_rows}),19)
         self.assertEqual({year for stream,year,subject,_ in stream_rows if stream=="pendengaran" and subject=="Bahasa Melayu (Suaian)"},set("123456"))
-        self.assertEqual(sum(stream=="pendengaran" for stream,_,_,_ in stream_rows),11)
-        self.assertEqual(sum(stream=="penglihatan" for stream,_,_,_ in stream_rows),4)
+        self.assertEqual(sum(stream=="pendengaran" for stream,_,_,_ in stream_rows),13)
+        self.assertEqual(sum(stream=="penglihatan" for stream,_,_,_ in stream_rows),6)
         self.assertIn('docsYear.addEventListener("change",filterCurriculumDocs)',self.html)
         self.assertIn('docsSubject.addEventListener("change",filterCurriculumDocs)',self.html)
         self.assertIn('#workspace #view-curriculum-docs{display:none!important}',self.html)
