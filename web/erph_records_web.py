@@ -98,11 +98,20 @@ def records():
     c,uid,error=account()
     if error is not None:return error
     try:
+        from datetime import timedelta
         day=date.fromisoformat(request.args.get('date',''))
-        if not 2000<=day.year<=2100:raise ValueError()
+        scope=request.args.get('scope','day')
+        if not 2000<=day.year<=2100 or scope not in ('day','week'):raise ValueError()
+        first=day-timedelta(days=(day.weekday()+1)%7) if scope=='week' else day
+        last=first+timedelta(days=6) if scope=='week' else first
     except ValueError:return failure('Tarikh tidak sah.',400)
     try:
-        return jsonify(items=store(c,uid,'GET',{'teaching_date':'eq.'+day.isoformat(),'order':'start_time.asc','limit':'100'}))
+        filters={'order':'teaching_date.asc,start_time.asc','limit':'701'}
+        if scope=='week':filters['and']='(teaching_date.gte.'+first.isoformat()+',teaching_date.lte.'+last.isoformat()+')'
+        else:filters['teaching_date']='eq.'+day.isoformat()
+        rows=store(c,uid,'GET',filters)
+        if len(rows)>700:return failure('Terlalu banyak rekod; pilih paparan harian.',400)
+        return jsonify(items=rows,start=first.isoformat(),end=last.isoformat())
     except Exception:return failure('Rekod belum dapat dibaca.',503)
 
 @bp.post('/api/erph/records')
@@ -159,3 +168,26 @@ def import_word():
         fields=extract_docx(request.stream.read(MAX_FILE+1))
     except ValueError as exc:return failure(str(exc),400)
     return jsonify(fields=fields,source_verified=False)
+
+@bp.post('/erph/import-preview')
+def import_preview():
+    c,uid,error=account()
+    if error is not None:return error
+    if request.headers.get('Origin')!=ORIGIN or not 0<(request.content_length or 0)<=200000:
+        return failure('Permintaan tidak sah.',403)
+    try:
+        draft=json.loads(request.form.get('draft',''))
+        if not isinstance(draft,dict) or set(draft)!=set(FIELDS):
+            raise ValueError()
+        for k,v in draft.items():
+            if not isinstance(v,str) or len(v)>LIMITS.get(k,80):
+                raise ValueError()
+        draft['status']='draft'
+    except (TypeError,ValueError):return failure('Draf tidak sah.',400)
+    from pathlib import Path
+    html=(Path(__file__).resolve().parents[1]/'web_v1_static_preview'/'erph_records.html').read_text(encoding='utf-8')
+    # JSON is encoded into a non-executable script element; escape all tag delimiters.
+    data=json.dumps(draft,ensure_ascii=True).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
+    marker='<script id="erph-initial-draft" type="application/json"></script>'
+    if marker not in html:return failure('Editor belum tersedia.',503)
+    return Response(html.replace(marker,'<script id="erph-initial-draft" type="application/json">'+data+'</script>',1),mimetype='text/html')
