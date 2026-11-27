@@ -42,3 +42,17 @@ class ErphTests(unittest.TestCase):
             m.store({},42,'PATCH',{'id':'eq.test','owner_telegram_id':'eq.99'},PAYLOAD)
             req=opener.return_value.open.call_args.args[0]
             self.assertEqual(parse_qs(urlsplit(req.full_url).query)['owner_telegram_id'],['eq.42'])
+
+    def test_menu_availability_requires_verified_account(self):
+        with patch.dict(os.environ,{m.FLAG:'0'}):
+            self.assertEqual(self.client.get('/api/erph/availability').status_code,404)
+        with patch.object(m,'account',return_value=({},42,None)):
+            self.assertEqual(self.client.get('/api/erph/availability').json,{'enabled':True})
+    def test_page_contains_existing_timetable_endpoint_and_safe_editor(self):
+        with patch.object(m,'account',return_value=({},42,None)):
+            r=self.client.get('/erph')
+            self.assertEqual(r.status_code,200)
+            self.assertIn(b'/api/web/rph/hari-ini?date=',r.data)
+            self.assertIn(b'if(j.closure)',r.data)
+            self.assertIn(b'name="standard_learning"',r.data)
+            self.assertIn(b'private, no-store',r.headers['Cache-Control'].encode())
