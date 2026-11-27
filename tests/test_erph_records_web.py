@@ -5,7 +5,7 @@ from flask import Flask
 from web import erph_records_web as m
 
 PAYLOAD=dict(teaching_date='2027-01-11',class_name='1 Bestari',subject_name='Matematik',
- start_time='08:00',end_time='09:00',title='Nombor',objectives='Menyebut nombor',
+ start_time='08:00',end_time='09:00',title='Nombor',standard_content='Nombor bulat',standard_learning='Menyebut nombor',objectives='Menyebut nombor',
  activities='Susun kad nombor',reflection='',rph_format='5p',status='saved')
 ORIGIN={'Origin':m.ORIGIN}
 class ErphTests(unittest.TestCase):
