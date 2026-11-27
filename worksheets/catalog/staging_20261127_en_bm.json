@@ -4,7 +4,7 @@
   "source": "Verified Google Drive folder listing",
   "packages": 29,
   "publication_enabled": false,
-  "notes": "Inventory only. Do not treat filename sequence candidates as verified production keys. The Majlis Pengikat Kemesraan package has no confirmed sequence key. No existing RPH/RPT files are modified.",
+  "notes": "Source mapping completed against RPH files and BM audit/draft reference. Page 1–3 are pupils, page 4 teacher. Actual authenticated production selections and delivery not tested. Publication stays disabled. No RPH/RPT altered.",
   "items": [
     {
       "subject": "Bahasa Melayu",
@@ -25,7 +25,30 @@
       "status": "STAGING",
       "sequence_candidate": null,
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Resolve actual BM token from _bm_verified_structured_rows / native BM bridge, require unique exact unit/title and matching corrected SK/SP. RPT ordinal is not a production token. Verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_VERIFIED_BM_AUDIT",
+        "curriculum": "KSSR SK",
+        "subject_code": "BM",
+        "year": 2,
+        "unit_title": "Hidup Berjiran",
+        "topic": "Majlis Pengikat Kemesraan",
+        "sk": "2.2",
+        "sp": "2.2.1",
+        "sp_parts": [],
+        "source": "audits/bm_t2_sp221_sk_source_correction_20261109.md"
+      }
     },
     {
       "subject": "Bahasa Melayu",
@@ -49,7 +72,33 @@
         "number": 3
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Resolve actual BM token from _bm_verified_structured_rows / native BM bridge, require unique exact unit/title and matching corrected SK/SP. RPT ordinal is not a production token. Verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_DRAFT_RPT_REFERENCE_ONLY",
+        "curriculum": "KSSR SK",
+        "subject_code": "BM",
+        "year": 2,
+        "unit_title": "Hari Minggu dengan Keluarga",
+        "topic": "Membeli Bahan Kek",
+        "sk": "2.1",
+        "sp": "2.1.1",
+        "sp_parts": [
+          "i",
+          "ii"
+        ],
+        "source": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_2_2027_Format_2026_DRAF.html"
+      }
     },
     {
       "subject": "Bahasa Melayu",
@@ -73,7 +122,33 @@
         "number": 4
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Resolve actual BM token from _bm_verified_structured_rows / native BM bridge, require unique exact unit/title and matching corrected SK/SP. RPT ordinal is not a production token. Verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_DRAFT_RPT_REFERENCE_ONLY",
+        "curriculum": "KSSR SK",
+        "subject_code": "BM",
+        "year": 2,
+        "unit_title": "Hari Minggu dengan Keluarga",
+        "topic": "Kek Hari Lahir",
+        "sk": "3.1",
+        "sp": "3.1.1",
+        "sp_parts": [
+          "i",
+          "ii"
+        ],
+        "source": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_2_2027_Format_2026_DRAF.html"
+      }
     },
     {
       "subject": "English",
@@ -97,7 +172,31 @@
         "number": 1
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 1,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Listening",
+        "main_sp": "1.3.1",
+        "complementary_sp": "2.1.5",
+        "rph_path": "rph_standalone/english/year3/lesson_001.md",
+        "rph_git_blob_sha": "d438c73dc843e602d6ffcb8d4dd25b586ba1fcd3"
+      }
     },
     {
       "subject": "English",
@@ -121,7 +220,31 @@
         "number": 2
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 2,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Speaking",
+        "main_sp": "2.1.5",
+        "complementary_sp": "1.2.2",
+        "rph_path": "rph_standalone/english/year3/lesson_002.md",
+        "rph_git_blob_sha": "eeeb7a18eea1c48c2bf1f72d41956f4c2f94225d"
+      }
     },
     {
       "subject": "English",
@@ -145,7 +268,31 @@
         "number": 3
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 3,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Reading",
+        "main_sp": "3.2.2",
+        "complementary_sp": "3.2.3",
+        "rph_path": "rph_standalone/english/year3/lesson_003.md",
+        "rph_git_blob_sha": "48157cc0f2ebd39b87e3613c162ad9b32dd39559"
+      }
     },
     {
       "subject": "English",
@@ -169,7 +316,31 @@
         "number": 4
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 4,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Writing",
+        "main_sp": "4.2.4",
+        "complementary_sp": "4.1.2",
+        "rph_path": "rph_standalone/english/year3/lesson_004.md",
+        "rph_git_blob_sha": "e876721be3ab65065571d0fdd2365892b2917f15"
+      }
     },
     {
       "subject": "English",
@@ -193,7 +364,31 @@
         "number": 5
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 5,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Language Arts",
+        "main_sp": "5.3.1",
+        "complementary_sp": "4.3.3",
+        "rph_path": "rph_standalone/english/year3/lesson_005.md",
+        "rph_git_blob_sha": "4ee66bb8120ad88ae47dba6e289fb4f2ccd93c74"
+      }
     },
     {
       "subject": "English",
@@ -217,7 +412,31 @@
         "number": 6
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 6,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Listening",
+        "main_sp": "1.2.2",
+        "complementary_sp": "4.3.1",
+        "rph_path": "rph_standalone/english/year3/lesson_006.md",
+        "rph_git_blob_sha": "a165ba2d592ae9b9e88fd80556c28379996111e4"
+      }
     },
     {
       "subject": "English",
@@ -241,7 +460,31 @@
         "number": 7
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 7,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Speaking",
+        "main_sp": "2.1.5",
+        "complementary_sp": "1.2.5",
+        "rph_path": "rph_standalone/english/year3/lesson_007.md",
+        "rph_git_blob_sha": "a85d1cc97dd2fd75515da8654d8b89fb4d7cc585"
+      }
     },
     {
       "subject": "English",
@@ -265,7 +508,31 @@
         "number": 8
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 8,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Reading",
+        "main_sp": "3.2.1",
+        "complementary_sp": "3.2.3",
+        "rph_path": "rph_standalone/english/year3/lesson_008.md",
+        "rph_git_blob_sha": "9331ac140ca553085d4a2bd8726ca1cb4b9d4ccb"
+      }
     },
     {
       "subject": "English",
@@ -289,7 +556,31 @@
         "number": 9
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 9,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Writing",
+        "main_sp": "4.3.2",
+        "complementary_sp": "1.2.1",
+        "rph_path": "rph_standalone/english/year3/lesson_009.md",
+        "rph_git_blob_sha": "641fce2ac675d5d791d7c85d69df0cc3df407b78"
+      }
     },
     {
       "subject": "English",
@@ -313,7 +604,31 @@
         "number": 10
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 10,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Language Arts",
+        "main_sp": "5.3.1",
+        "complementary_sp": "5.1.1",
+        "rph_path": "rph_standalone/english/year3/lesson_010.md",
+        "rph_git_blob_sha": "d5073f65db66e1df40adadbab46d427b7af8f996"
+      }
     },
     {
       "subject": "English",
@@ -337,7 +652,31 @@
         "number": 11
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 11,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Listening",
+        "main_sp": "1.2.5",
+        "complementary_sp": "2.2.2",
+        "rph_path": "rph_standalone/english/year3/lesson_011.md",
+        "rph_git_blob_sha": "2f8ebed4ffe460facb7aae5c764fd833366b49a9"
+      }
     },
     {
       "subject": "English",
@@ -361,7 +700,31 @@
         "number": 12
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 12,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Speaking",
+        "main_sp": "2.1.2",
+        "complementary_sp": "1.2.5",
+        "rph_path": "rph_standalone/english/year3/lesson_012.md",
+        "rph_git_blob_sha": "fbd40d074d0fb8a8183c1acab0335820ee745214"
+      }
     },
     {
       "subject": "English",
@@ -385,7 +748,31 @@
         "number": 13
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 13,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Reading",
+        "main_sp": "3.2.2",
+        "complementary_sp": "2.1.5",
+        "rph_path": "rph_standalone/english/year3/lesson_013.md",
+        "rph_git_blob_sha": "bbb87f1fd2f40ac82fcf3ff5f877f0d415438a1c"
+      }
     },
     {
       "subject": "English",
@@ -409,7 +796,31 @@
         "number": 14
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 14,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Writing",
+        "main_sp": "4.3.1",
+        "complementary_sp": "4.3.3",
+        "rph_path": "rph_standalone/english/year3/lesson_014.md",
+        "rph_git_blob_sha": "659c352b5df34f50b6c2defcd1fdc2c3ff6db7e0"
+      }
     },
     {
       "subject": "English",
@@ -433,7 +844,31 @@
         "number": 15
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 15,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Language Arts",
+        "main_sp": "5.2.1",
+        "complementary_sp": "2.3.1",
+        "rph_path": "rph_standalone/english/year3/lesson_015.md",
+        "rph_git_blob_sha": "97c540d511747f417aaf4d9719a4560f3be12b11"
+      }
     },
     {
       "subject": "English",
@@ -457,7 +892,31 @@
         "number": 16
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 16,
+        "source_unit_or_topic": "Welcome!",
+        "skill": "Language Awareness",
+        "main_sp": "3.2.2",
+        "complementary_sp": "4.3.1",
+        "rph_path": "rph_standalone/english/year3/lesson_016.md",
+        "rph_git_blob_sha": "bd41b70dc6be1578673e067fc47127d0d042f7ed"
+      }
     },
     {
       "subject": "English",
@@ -481,7 +940,31 @@
         "number": 17
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 17,
+        "source_unit_or_topic": "Every Day",
+        "skill": "Listening",
+        "main_sp": "1.2.2",
+        "complementary_sp": "1.3.1",
+        "rph_path": "rph_standalone/english/year3/lesson_017.md",
+        "rph_git_blob_sha": "d4b8d7e58cc2c5db1e93b2a04ac4978acd4bf8c4"
+      }
     },
     {
       "subject": "English",
@@ -505,7 +988,31 @@
         "number": 18
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 18,
+        "source_unit_or_topic": "Every Day",
+        "skill": "Speaking",
+        "main_sp": "2.1.2",
+        "complementary_sp": "4.3.2",
+        "rph_path": "rph_standalone/english/year3/lesson_018.md",
+        "rph_git_blob_sha": "7f25b59b017a946e075e95e74465e92fefcbcc43"
+      }
     },
     {
       "subject": "English",
@@ -529,7 +1036,31 @@
         "number": 31
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 31,
+        "source_unit_or_topic": "Every Day",
+        "skill": "Language Arts",
+        "main_sp": "5.2.1",
+        "complementary_sp": "2.1.5",
+        "rph_path": "rph_standalone/english/year3/lesson_031.md",
+        "rph_git_blob_sha": "e93339db070f78f3f92907960e93f82dab14796e"
+      }
     },
     {
       "subject": "English",
@@ -553,7 +1084,31 @@
         "number": 33
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 33,
+        "source_unit_or_topic": "Right Now",
+        "skill": "Listening",
+        "main_sp": "1.2.2",
+        "complementary_sp": "1.3.1",
+        "rph_path": "rph_standalone/english/year3/lesson_033.md",
+        "rph_git_blob_sha": "5da7ba3c0687568d8da849ac024318b609948ed0"
+      }
     },
     {
       "subject": "English",
@@ -577,7 +1132,31 @@
         "number": 34
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 34,
+        "source_unit_or_topic": "Right Now",
+        "skill": "Speaking",
+        "main_sp": "2.1.5",
+        "complementary_sp": "1.1.1",
+        "rph_path": "rph_standalone/english/year3/lesson_034.md",
+        "rph_git_blob_sha": "354d54ff41362b41dbe79fa0288f82e1a487c83a"
+      }
     },
     {
       "subject": "English",
@@ -601,7 +1180,31 @@
         "number": 36
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 3,
+        "lesson": 36,
+        "source_unit_or_topic": "Right Now",
+        "skill": "Writing",
+        "main_sp": "4.3.2",
+        "complementary_sp": "3.2.2",
+        "rph_path": "rph_standalone/english/year3/lesson_036.md",
+        "rph_git_blob_sha": "bf55da995a23365165742381465ae6257bdc6014"
+      }
     },
     {
       "subject": "English",
@@ -625,7 +1228,31 @@
         "number": 4
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 4,
+        "lesson": 4,
+        "source_unit_or_topic": "Where are you from?",
+        "skill": "Writing",
+        "main_sp": "4.2.4",
+        "complementary_sp": "4.3.2",
+        "rph_path": "rph_standalone/english/year4/lesson_004.md",
+        "rph_git_blob_sha": "dae4b2545f11d076a9f2bb75854426cf2c59e1e1"
+      }
     },
     {
       "subject": "English",
@@ -649,7 +1276,31 @@
         "number": 79
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 4,
+        "lesson": 79,
+        "source_unit_or_topic": "The King of Kites",
+        "skill": "Language Arts",
+        "main_sp": "5.3.1",
+        "complementary_sp": "2.1.1",
+        "rph_path": "rph_standalone/english/year4/lesson_079.md",
+        "rph_git_blob_sha": "cf8a708993c3306d3c84b8f97350fd23e68f00df"
+      }
     },
     {
       "subject": "English",
@@ -673,7 +1324,31 @@
         "number": 89
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 4,
+        "lesson": 89,
+        "source_unit_or_topic": "Getting around",
+        "skill": "Writing",
+        "main_sp": "4.3.3",
+        "complementary_sp": "4.2.4",
+        "rph_path": "rph_standalone/english/year4/lesson_089.md",
+        "rph_git_blob_sha": "017a6e5f688beadc7b8f2a317f1140d920e3f2c0"
+      }
     },
     {
       "subject": "English",
@@ -697,7 +1372,37 @@
         "number": 90
       },
       "production_mapping_verified": false,
-      "release_gate": "Confirm production lesson/PdP mapping, exact curriculum source, worksheet quality and download access before READY."
+      "release_gate": "Match the server-resolved English SK year, official Lesson number and exact ordered SP pair to current RPH source; verify worksheet content quality and authenticated download before READY.",
+      "pdf_pages": {
+        "level1": 1,
+        "level2": 2,
+        "level3": 3,
+        "teacher": 4,
+        "pupil_pack": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_mapping": {
+        "status": "MATCH_RPH_SOURCE_SP_PAIR",
+        "curriculum": "KSSR SK",
+        "subject_code": "ENGLISH",
+        "year": 4,
+        "lesson": 90,
+        "source_unit_or_topic": "The King of Kites",
+        "skill": "Language Arts",
+        "main_sp": "5.3.1",
+        "complementary_sp": "4.2.2",
+        "rph_path": "rph_standalone/english/year4/lesson_090.md",
+        "rph_git_blob_sha": "b65acaa07d04a516d84dba51e22660a1a0b6992f"
+      }
     }
-  ]
+  ],
+  "source_mapping_summary": {
+    "english_rph_source_sp_pair": 26,
+    "bm_verified_audit_reference": 1,
+    "bm_draft_rpt_reference": 2,
+    "production_verified": 0
+  }
 }
