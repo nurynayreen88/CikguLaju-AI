@@ -34,6 +34,7 @@ jobs:
           find qa_math_5p -maxdepth 1 -name '*.docx' -print0 | xargs -0 -r -n 40 libreoffice -env:UserInstallation=file:///tmp/lo-math-5p --headless --convert-to pdf --outdir qa_math_5p/pdf
           python - <<'PY'
           import json
+          import re
           from pathlib import Path
           import fitz
           from unicodedata import normalize
@@ -42,7 +43,7 @@ jobs:
           records=json.loads((p/"manifest.json").read_text())["records"]
           assert len(records)==249 and sum(r["dk_scope_correction"] for r in records)==40
           issues=[]
-          norm=lambda s:" ".join(normalize("NFKC",s).split())
+          norm=lambda s:" ".join(re.sub(r"(?<=\w)-[ \t]*\r?\n[ \t]*(?=\w)","-",normalize("NFKC",s)).split())
           for r in records:
               name=r["filename"]
               try:
