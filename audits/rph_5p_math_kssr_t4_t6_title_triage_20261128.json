@@ -1,0 +1,1034 @@
+{
+  "status": "DRAFT_TITLE_TRIAGE_ONLY",
+  "date": "2026-11-28",
+  "source_ref": "main (individual blobs pinned below; not live delivery verification)",
+  "source_files": [
+    {
+      "year": 4,
+      "minutes": 30,
+      "path": "staging/matematik/tahun4/slot_30_minit.tsv",
+      "sha": "619869a8b9799695995f2bf229b5714607226124",
+      "count": 42
+    },
+    {
+      "year": 4,
+      "minutes": 60,
+      "path": "staging/matematik/tahun4/slot_60_minit.tsv",
+      "sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5",
+      "count": 75
+    },
+    {
+      "year": 5,
+      "minutes": 30,
+      "path": "staging/matematik/tahun5/slot_30_minit.tsv",
+      "sha": "f047ff8c09ecbd8242fac32d2222519210a69a87",
+      "count": 42
+    },
+    {
+      "year": 5,
+      "minutes": 60,
+      "path": "staging/matematik/tahun5/slot_60_minit.tsv",
+      "sha": "b5e3ffd702287cf1ae54009a6ffb7d1c8e693943",
+      "count": 75
+    },
+    {
+      "year": 6,
+      "minutes": 30,
+      "path": "staging/matematik/tahun6/slot_30_minit.tsv",
+      "sha": "38be0c6d58229204431e28c710c18a985bff81e1",
+      "count": 42
+    },
+    {
+      "year": 6,
+      "minutes": 60,
+      "path": "staging/matematik/tahun6/slot_60_minit.tsv",
+      "sha": "36669d03392b0adc22583492a9d19b955c819c37",
+      "count": 75
+    }
+  ],
+  "candidate_count": 102,
+  "exact_title_or_objective_matches": 5,
+  "unmatched": 97,
+  "ready_count": 0,
+  "policy": "Title or objective exact equality is a triage hint only. Never bind by row number. Resolve native catalogue identity and exact SK/SP, source objectives, assessment and actual Word/PDF hashes before adapting. Years 2–3 ordinary KSSR require separate legacy source, not DPK3.",
+  "records": [
+    {
+      "year": 4,
+      "id": "T4-WORK-09",
+      "title": "Penganggaran kuantiti",
+      "sp": [
+        "1.3.1"
+      ],
+      "matches": [
+        {
+          "source": "staging/matematik/tahun4/slot_60_minit.tsv",
+          "blob_sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5",
+          "slot_row": "003",
+          "minutes": 60,
+          "pages": "13–14",
+          "source_title_or_objective": "Penganggaran kuantiti",
+          "source_sp": null
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "id": "T4-WORK-10",
+      "title": "Pola nombor",
+      "sp": [
+        "1.5.1",
+        "1.5.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 4,
+      "id": "T4-WORK-11A",
+      "title": "Penolakan pecahan",
+      "sp": [
+        "2.1.3"
+      ],
+      "matches": []
+    },
+    {
+      "year": 4,
+      "id": "T4-WORK-11B",
+      "title": "Operasi bergabung tambah dan tolak pecahan",
+      "sp": [
+        "2.1.4"
+      ],
+      "matches": [
+        {
+          "source": "staging/matematik/tahun4/slot_60_minit.tsv",
+          "blob_sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5",
+          "slot_row": "024",
+          "minutes": 60,
+          "pages": "80–82",
+          "source_title_or_objective": "Operasi bergabung tambah dan tolak pecahan",
+          "source_sp": null
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "id": "T4-WORK-11C",
+      "title": "Pecahan daripada kuantiti",
+      "sp": [
+        "2.1.5"
+      ],
+      "matches": []
+    },
+    {
+      "year": 4,
+      "id": "T4-WORK-12",
+      "title": "Masalah pecahan, perpuluhan dan peratus",
+      "sp": [
+        "2.4.1"
+      ],
+      "matches": [
+        {
+          "source": "staging/matematik/tahun4/slot_60_minit.tsv",
+          "blob_sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5",
+          "slot_row": "039",
+          "minutes": 60,
+          "pages": "97–102",
+          "source_title_or_objective": "Masalah pecahan, perpuluhan dan peratus",
+          "source_sp": null
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "id": "T4-WORK-13",
+      "title": "Keputusan kewangan bertanggungjawab",
+      "sp": [
+        "3.4.1",
+        "3.4.2",
+        "3.4.3"
+      ],
+      "matches": [
+        {
+          "source": "staging/matematik/tahun4/slot_60_minit.tsv",
+          "blob_sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5",
+          "slot_row": "054",
+          "minutes": 60,
+          "pages": "122–123",
+          "source_title_or_objective": "Keputusan kewangan bertanggungjawab",
+          "source_sp": null
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "id": "T4-WORK-14",
+      "title": "Masalah wang hingga RM100 000",
+      "sp": [
+        "3.7.1"
+      ],
+      "matches": [
+        {
+          "source": "staging/matematik/tahun4/slot_60_minit.tsv",
+          "blob_sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5",
+          "slot_row": "060",
+          "minutes": 60,
+          "pages": "128–132",
+          "source_title_or_objective": "Masalah wang hingga RM100 000",
+          "source_sp": null
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "id": "T4-WORK-15",
+      "title": "Anggaran masa",
+      "sp": [
+        "4.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-001A",
+      "title": "Menyatakan nombor hingga sejuta",
+      "sp": [
+        "1.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-001B",
+      "title": "Nilai tempat, nilai digit dan cerakin",
+      "sp": [
+        "1.1.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-001C",
+      "title": "Banding, susun dan lengkapkan rangkaian",
+      "sp": [
+        "1.1.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-002A",
+      "title": "Nombor perdana hingga 100",
+      "sp": [
+        "1.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-003A",
+      "title": "Anggaran kuantiti",
+      "sp": [
+        "1.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-004A",
+      "title": "Bundar nombor bulat",
+      "sp": [
+        "1.4.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-004B",
+      "title": "Nombor asal yang mungkin",
+      "sp": [
+        "1.4.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-005A",
+      "title": "Pola nombor",
+      "sp": [
+        "1.5.1",
+        "1.5.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-006A",
+      "title": "Tambah hingga lima nombor",
+      "sp": [
+        "1.6.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-006B",
+      "title": "Tolak hingga tiga nombor",
+      "sp": [
+        "1.6.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-006C",
+      "title": "Darab nombor bulat",
+      "sp": [
+        "1.6.3"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-006D",
+      "title": "Bahagi nombor bulat",
+      "sp": [
+        "1.6.4"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-007A",
+      "title": "Operasi bergabung tambah/tolak dengan darab",
+      "sp": [
+        "1.7.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-007B",
+      "title": "Operasi bergabung tambah/tolak dengan bahagi",
+      "sp": [
+        "1.7.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-008A",
+      "title": "Anu dalam ayat darab",
+      "sp": [
+        "1.8.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-008B",
+      "title": "Anu dalam ayat bahagi",
+      "sp": [
+        "1.8.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-009A",
+      "title": "Masalah harian nombor bulat",
+      "sp": [
+        "1.9.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-009B",
+      "title": "Masalah operasi asas dan bergabung",
+      "sp": [
+        "1.9.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-009C",
+      "title": "Masalah harian dengan anu",
+      "sp": [
+        "1.9.3"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-010A",
+      "title": "Darab nombor bulat dengan pecahan",
+      "sp": [
+        "2.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-010B",
+      "title": "Darab pecahan dan nombor bercampur",
+      "sp": [
+        "2.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-011A",
+      "title": "Pembundaran perpuluhan",
+      "sp": [
+        "2.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-011B",
+      "title": "Tambah dan tolak perpuluhan bergabung",
+      "sp": [
+        "2.2.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-011C",
+      "title": "Darab perpuluhan",
+      "sp": [
+        "2.2.3"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-011D",
+      "title": "Bahagi perpuluhan",
+      "sp": [
+        "2.2.4"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-012A",
+      "title": "Nombor bercampur dan peratus",
+      "sp": [
+        "2.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-012B",
+      "title": "Peratus melebihi 100 dan kuantiti",
+      "sp": [
+        "2.3.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-013A",
+      "title": "Masalah pecahan, perpuluhan dan peratus",
+      "sp": [
+        "2.4.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-014A",
+      "title": "Tambah wang",
+      "sp": [
+        "3.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-014B",
+      "title": "Tolak wang",
+      "sp": [
+        "3.1.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-014C",
+      "title": "Darab wang",
+      "sp": [
+        "3.1.3"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-014D",
+      "title": "Bahagi wang",
+      "sp": [
+        "3.1.4"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-015A",
+      "title": "Operasi wang tambah/tolak dan darab",
+      "sp": [
+        "3.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-015B",
+      "title": "Operasi wang tambah/tolak dan bahagi",
+      "sp": [
+        "3.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-016A",
+      "title": "Simpanan dan pelaburan",
+      "sp": [
+        "3.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-016B",
+      "title": "Faedah mudah dan kompaun",
+      "sp": [
+        "3.3.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-017A",
+      "title": "Kredit dan hutang",
+      "sp": [
+        "3.4.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-017B",
+      "title": "Banding harga tunai dan kredit",
+      "sp": [
+        "3.4.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-018A",
+      "title": "Masalah harian wang",
+      "sp": [
+        "3.5.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-019A",
+      "title": "Tempoh hari dan jam",
+      "sp": [
+        "4.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-019B",
+      "title": "Tempoh bulan dan tahun dalam hari",
+      "sp": [
+        "4.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-020A",
+      "title": "Penukaran unit masa pecahan",
+      "sp": [
+        "4.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-020B",
+      "title": "Penukaran unit masa perpuluhan",
+      "sp": [
+        "4.2.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-021A",
+      "title": "Tambah dan tolak masa pecahan",
+      "sp": [
+        "4.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-021B",
+      "title": "Tambah dan tolak masa perpuluhan",
+      "sp": [
+        "4.3.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-022A",
+      "title": "Masalah masa dan waktu",
+      "sp": [
+        "4.4.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-023A",
+      "title": "Penukaran panjang perpuluhan",
+      "sp": [
+        "5.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-023B",
+      "title": "Penukaran panjang pecahan",
+      "sp": [
+        "5.1.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-023C",
+      "title": "Tambah dan tolak panjang",
+      "sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-023D",
+      "title": "Darab dan bahagi panjang",
+      "sp": [
+        "5.1.5",
+        "5.1.6"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-024A",
+      "title": "Penukaran jisim",
+      "sp": [
+        "5.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-024B",
+      "title": "Tambah dan tolak jisim",
+      "sp": [
+        "5.2.2",
+        "5.2.3"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-024C",
+      "title": "Darab dan bahagi jisim",
+      "sp": [
+        "5.2.4",
+        "5.2.5"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-025A",
+      "title": "Penukaran isi padu cecair",
+      "sp": [
+        "5.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-025B",
+      "title": "Tambah dan tolak isi padu cecair",
+      "sp": [
+        "5.3.2",
+        "5.3.3"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-025C",
+      "title": "Darab dan bahagi isi padu cecair",
+      "sp": [
+        "5.3.4",
+        "5.3.5"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-026A",
+      "title": "Masalah ukuran dan sukatan",
+      "sp": [
+        "5.4.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-027A",
+      "title": "Ciri poligon sekata",
+      "sp": [
+        "6.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-028A",
+      "title": "Ukur sudut pedalaman",
+      "sp": [
+        "6.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-029A",
+      "title": "Perimeter gabungan bentuk",
+      "sp": [
+        "6.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-029B",
+      "title": "Luas gabungan bentuk",
+      "sp": [
+        "6.3.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-030A",
+      "title": "Isi padu gabungan pepejal",
+      "sp": [
+        "6.4.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-031A",
+      "title": "Masalah ruang",
+      "sp": [
+        "6.5.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-032A",
+      "title": "Jarak mengufuk dan mencancang",
+      "sp": [
+        "7.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-033A",
+      "title": "Tiga jenis nisbah",
+      "sp": [
+        "7.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-034A",
+      "title": "Kadaran dan nilai tidak diketahui",
+      "sp": [
+        "7.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-035A",
+      "title": "Masalah koordinat, nisbah dan kadaran",
+      "sp": [
+        "7.4.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-036A",
+      "title": "Tafsir carta pai",
+      "sp": [
+        "8.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-037A",
+      "title": "Mod dan median",
+      "sp": [
+        "8.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-037B",
+      "title": "Min dan julat",
+      "sp": [
+        "8.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 5,
+      "id": "T5-RPT-DRAFT-038A",
+      "title": "Masalah pengurusan data",
+      "sp": [
+        "8.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-01",
+      "title": "Bahagi pecahan",
+      "sp": [
+        "2.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-02",
+      "title": "Mengenal zon masa",
+      "sp": [
+        "4.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-03",
+      "title": "Perbezaan masa",
+      "sp": [
+        "4.1.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-04",
+      "title": "Membentuk sudut",
+      "sp": [
+        "6.1.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-05",
+      "title": "Pusat bulatan, jejari dan diameter",
+      "sp": [
+        "6.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-06",
+      "title": "Jarak mengufuk dan mencancang",
+      "sp": [
+        "7.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-07",
+      "title": "Carta pai",
+      "sp": [
+        "8.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-08",
+      "title": "Peristiwa mungkin dan tidak mungkin",
+      "sp": [
+        "8.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "DSKP6-09",
+      "title": "Skala kebolehjadian",
+      "sp": [
+        "8.2.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "FIN-T6-01",
+      "title": "Harga kos, harga jual, untung dan rugi",
+      "sp": [
+        "3.1.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "FIN-T6-02",
+      "title": "Insurans dan takaful",
+      "sp": [
+        "3.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "FIN-T6-03",
+      "title": "Masalah pengurusan kewangan",
+      "sp": [
+        "3.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-006",
+      "title": "Pola nombor",
+      "sp": [
+        "1.1.2"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-007",
+      "title": "Tambah dalam unit juta",
+      "sp": [
+        "1.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-008",
+      "title": "Tolak dalam unit juta",
+      "sp": [
+        "1.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-009",
+      "title": "Gabungan tambah dan tolak",
+      "sp": [
+        "1.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-010",
+      "title": "Darab nombor bulat dan unit juta",
+      "sp": [
+        "1.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-011",
+      "title": "Bahagi nombor bulat dan unit juta",
+      "sp": [
+        "1.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-012",
+      "title": "Darab dan bahagi berturutan",
+      "sp": [
+        "1.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-079",
+      "title": "Nisbah bentuk termudah",
+      "sp": [
+        "7.2.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-080",
+      "title": "Kadaran daripada nisbah",
+      "sp": [
+        "7.3.1"
+      ],
+      "matches": []
+    },
+    {
+      "year": 6,
+      "id": "MT6-PDP-081",
+      "title": "Masalah nisbah dan kadaran",
+      "sp": [
+        "7.4.1"
+      ],
+      "matches": []
+    }
+  ]
+}
