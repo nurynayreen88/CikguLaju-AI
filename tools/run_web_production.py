@@ -45,6 +45,11 @@ install_email_auth_ui(app)
 from web.kp2027_math_canary_web import create_blueprint as create_kp2027_math_pilot
 app.register_blueprint(create_kp2027_math_pilot())
 
+# Science 5P teaching route only. QA candidate URLs are never registered here.
+# Both explicit per-PdP approval and the environment flag are required.
+from web.science_5p_candidate_web import create_blueprint as create_science_5p
+app.register_blueprint(create_science_5p(published=True))
+
 # KP2027 Alam dan Manusia, verified source, private login/quota route; OFF by default.
 from web.kp2027_alam_private_web import create_blueprint as create_kp2027_alam_private
 app.register_blueprint(create_kp2027_alam_private())
