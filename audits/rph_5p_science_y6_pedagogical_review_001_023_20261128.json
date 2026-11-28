@@ -1,0 +1,341 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 6,
+  "source": {
+    "path": "audits/rph_5p_science_y6_native_001_023_20261128.json",
+    "blob": "7b01705660c0bca751381941207e7552c22b06a0"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y6_support_085_089_001_023_20261128.json",
+    "blob": "be1532c27e5250b93077f4ad93ec9cf226c84cae"
+  },
+  "count": 23,
+  "follow_up_required": 14,
+  "policy": "Review original SP, objectives, PBD, phases, materials, safety and support. No independent textbook page verification or teacher/panitia signoff. Flagged issues remain open; preserve locked sources and retest print adaptations.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-001",
+      "teaching_order": 6,
+      "sp": [
+        "2.1.1"
+      ],
+      "title": "Memerihalkan fungsi organ pembiakan lelaki dan perempuan.",
+      "minutes": 30,
+      "review_basis": "Enam label dan fungsi organ pembiakan melalui carta pendidikan menepati SP dan PBD asal.",
+      "implementation_note": "Gunakan carta KPM sesuai umur dengan fungsi saintifik yang tepat; tiada pemeriksaan fizikal atau soalan pengalaman peribadi.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-002",
+      "teaching_order": 7,
+      "sp": [
+        "2.1.2"
+      ],
+      "title": "Menjelaskan proses persenyawaan manusia sehingga bayi dilahirkan.",
+      "minutes": 30,
+      "review_basis": "Susunan kad persenyawaan, embrio, fetus dan kelahiran menyokong urutan empat peringkat.",
+      "implementation_note": "Pastikan kad membezakan persenyawaan di tiub Fallopio daripada perkembangan dalam uterus; istilah sesuai umur dan privasi terpelihara.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-003",
+      "teaching_order": 8,
+      "sp": [
+        "2.1.3"
+      ],
+      "title": "Menaakul kepentingan pembiakan kepada manusia.",
+      "minutes": 60,
+      "review_basis": "Dua kes populasi generasi rekaan dan kesimpulan menguji penaakulan kepentingan pembiakan.",
+      "implementation_note": "Aktiviti memerlukan gambar generasi rekaan yang belum jelas pada BBM; tambah kad gambar. Fokus kesinambungan spesies, bukan penilaian pilihan atau keluarga individu.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-004",
+      "teaching_order": 9,
+      "sp": [
+        "2.1.4"
+      ],
+      "title": "Menjelaskan pemerhatian tentang pembiakan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Peta alir, penerangan saintifik dan pembetulan label memenuhi komunikasi pemerhatian.",
+      "implementation_note": "Gunakan carta KPM dan templat peta alir; hasil individu dinilai tanpa meminta maklumat peribadi.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-005",
+      "teaching_order": 10,
+      "sp": [
+        "2.2.1"
+      ],
+      "title": "Mengenal pasti jenis sistem saraf manusia.",
+      "minutes": 30,
+      "review_basis": "Pengelasan dua jenis sistem saraf dengan komponen utama menepati SP.",
+      "implementation_note": "Tambah pensel warna atau dua set label warna yang digunakan dalam aktiviti; carta mesti membezakan sistem pusat dan periferi.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-006",
+      "teaching_order": 11,
+      "sp": [
+        "2.2.2"
+      ],
+      "title": "Sistem saraf pusat dan fungsinya",
+      "minutes": 30,
+      "review_basis": "Padanan fungsi otak dan saraf tunjang serta lakaran refleks menepati fungsi sistem pusat.",
+      "implementation_note": "Gunakan ilustrasi refleks sahaja; tiada rangsangan panas/menyakitkan atau ujian gejala murid.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-007",
+      "teaching_order": 12,
+      "sp": [
+        "2.2.3"
+      ],
+      "title": "Fungsi sistem saraf periferi",
+      "minutes": 60,
+      "review_basis": "Arah deria ke pusat dan motor dari pusat serta dua situasi bergambar menepati SP.",
+      "implementation_note": "Sediakan dua kad situasi bergambar selain rajah tangan seperti aktiviti pengembangan; tiada ujian haba sebenar.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-008",
+      "teaching_order": 13,
+      "sp": [
+        "2.2.4"
+      ],
+      "title": "Meramalkan keadaan yang berlaku jika sistem saraf periferi tidak berfungsi.",
+      "minutes": 30,
+      "review_basis": "Dua ramalan bersyarat mengenai kepekaan dan gerakan berpandukan fungsi saraf menepati SP.",
+      "implementation_note": "Kes watak rekaan, bukan diagnosis; kesan bergantung pada jenis saraf yang terganggu.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-009",
+      "teaching_order": 14,
+      "sp": [
+        "2.2.5"
+      ],
+      "title": "Menjana idea tentang cara menjaga sistem saraf.",
+      "minutes": 60,
+      "review_basis": "Pengelasan tabiat dan poster dua amalan berserta sebab menyokong penjanaan idea penjagaan saraf.",
+      "implementation_note": "Tambahkan kertas poster dan alat tulis pada BBM; elakkan dakwaan semua kecederaan boleh dicegah.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-010",
+      "teaching_order": 15,
+      "sp": [
+        "2.2.6"
+      ],
+      "title": "Menjelaskan pemerhatian tentang sistem saraf melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Lakaran laluan deria ke pusat dan anggota serta penerangan satu situasi memenuhi komunikasi.",
+      "implementation_note": "Gantikan istilah 'diagram' dengan 'rajah' pada cetakan agar konsisten; kekalkan arah isyarat dan label.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-011",
+      "teaching_order": 16,
+      "sp": [
+        "3.1.1"
+      ],
+      "title": "Menjelaskan dengan contoh jenis mikroorganisma.",
+      "minutes": 60,
+      "review_basis": "Lima kelompok kurikulum dan padanan contoh memenuhi PBD asal, termasuk nota virus bergantung pada perumah.",
+      "implementation_note": "Jelaskan virus bukan organisma bersel dan tidak membiak sendiri; istilah lima kelompok mengikut kurikulum. Gunakan imej sahaja.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-012",
+      "teaching_order": 17,
+      "sp": [
+        "3.1.2"
+      ],
+      "title": "Mengitlak maksud mikroorganisma.",
+      "minutes": 30,
+      "review_basis": "Perbandingan skala saiz dan contoh serangga menguji maksud mikroorganisma.",
+      "implementation_note": "Selaraskan takrif dengan sesi virus: organisma mikroskopik dan virus yang dibincangkan sebagai agen mikroskopik dalam kurikulum; bukan semua benda kecil ialah mikroorganisma.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-013",
+      "teaching_order": 18,
+      "sp": [
+        "3.1.3"
+      ],
+      "title": "Menyiasat proses hidup mikroorganisma.",
+      "minutes": 60,
+      "review_basis": "Rekod belon, rakaman protozoa dan foto kulapuk bertarikh membezakan bukti tiga proses hidup.",
+      "implementation_note": "BBM perlu menyatakan botol, belon, alat ukur lilitan serta air suam disediakan guru. Gas ialah bukti aktiviti metabolik yis, bukan ukuran bilangan sel; tiada kultur kulapuk.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-014",
+      "teaching_order": 19,
+      "sp": [
+        "3.1.4"
+      ],
+      "title": "Mengeksperimen faktor pertumbuhan mikroorganisma.",
+      "minutes": 30,
+      "review_basis": "Hipotesis, tiga pemboleh ubah dan kiraan awal dua sampel mengekalkan evidens sesi awal serta penangguhan rumusan.",
+      "implementation_note": "Pastikan objektif/kriteria cetakan hanya menuntut evidens awal untuk sesi ini, dengan rumusan penuh pada sesi susulan. Guru urus sampel yis makanan dan imej grid; tiada kultur tidak diketahui atau dakwaan pertumbuhan sebelum data.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-015",
+      "teaching_order": 20,
+      "sp": [
+        "3.1.5"
+      ],
+      "title": "Memerihalkan kesan mikroorganisma dalam kehidupan harian.",
+      "minutes": 60,
+      "review_basis": "Pengelasan dua manfaat dan dua kesan buruk melalui foto dan kad fakta menepati SP.",
+      "implementation_note": "Kes antibiotik ialah pendidikan umum: antibiotik bertindak terhadap bakteria tertentu, bukan virus; ikut nasihat profesional. Jangan beri arahan penggunaan ubat atau merasa sampel.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-016",
+      "teaching_order": 21,
+      "sp": [
+        "3.1.6"
+      ],
+      "title": "Menjelaskan pemerhatian tentang mikroorganisma melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Laporan menggabungkan bukti proses hidup dan perbandingan kiraan sel dengan rekod susulan.",
+      "implementation_note": "Nyatakan perbandingan perubahan daripada kiraan awal ke susulan bagi setiap sampel pada grid setara. Jika data tidak lengkap, nyatakan batas dan jangan mereka rumusan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-017",
+      "teaching_order": 22,
+      "sp": [
+        "4.1.1"
+      ],
+      "title": "Memerihalkan jenis interaksi antara hidupan.",
+      "minutes": 60,
+      "review_basis": "Tiga jenis interaksi dikelaskan melalui contoh dan sebab berdasarkan maklumat kad.",
+      "implementation_note": "Gambar semut pada pokok sahaja tidak menentukan jenis hubungan; gunakan keterangan kes yang menyatakan kesan pada kedua-dua hidupan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-018",
+      "teaching_order": 23,
+      "sp": [
+        "4.1.2"
+      ],
+      "title": "Menjelas dengan contoh faktor persaingan bagi haiwan intraspesies dan interspesies.",
+      "minutes": 30,
+      "review_basis": "Empat situasi persaingan dan tiga faktor membezakan intraspesies dengan interspesies.",
+      "implementation_note": "Persaingan mendapatkan pasangan dirujuk dalam spesies sama; makanan dan tempat tinggal mengikut konteks. Gunakan media sahaja.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-019",
+      "teaching_order": 24,
+      "sp": [
+        "4.1.3"
+      ],
+      "title": "Menjelaskan melalui contoh jenis interaksi simbiosis antara haiwan.",
+      "minutes": 60,
+      "review_basis": "Jadual kesan pada kedua-dua organisma dan pengelasan kes tambahan menepati tiga simbiosis.",
+      "implementation_note": "Gunakan keterangan sumber tentang manfaat, mudarat atau tiada kesan ketara; PBD 'bukti manfaat' perlu ditafsir bersama kesan kedua-dua pasangan, bukan manfaat sahaja.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-020",
+      "teaching_order": 25,
+      "sp": [
+        "4.1.4"
+      ],
+      "title": "Menjelaskan pemerhatian tentang interaksi antara haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Lakaran hubungan, dua dapatan dan satu ramalan bersyarat memenuhi komunikasi interaksi.",
+      "implementation_note": "Bezakan makna anak panah bagi hubungan interaksi daripada anak panah perpindahan tenaga; gunakan gambar sahaja.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-021",
+      "teaching_order": 26,
+      "sp": [
+        "4.2.1"
+      ],
+      "title": "Interaksi antara Hidupan — Memerihalkan faktor persaingan antara tumbuhan dengan menjalankan penyiasatan.",
+      "minutes": 30,
+      "review_basis": "Set anak pokok pratanam dan ukuran dua sampel setiap set menyokong penyiasatan kepadatan.",
+      "implementation_note": "Kepadatan tidak membuktikan satu faktor khusus (air/cahaya/ruang) secara berasingan; nyatakan jenis tanaman, umur, tempoh dan keadaan setara serta batas inferens persaingan. Tiada dakwaan pertumbuhan satu sesi.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-022",
+      "teaching_order": 27,
+      "sp": [
+        "4.2.2"
+      ],
+      "title": "Interaksi antara Hidupan — Menjelas dengan contoh jenis interaksi antara tumbuhan.",
+      "minutes": 60,
+      "review_basis": "Perbandingan orkid/benalu berdasarkan kesan pada perumah menepati dua simbiosis asal.",
+      "implementation_note": "Kekalkan dua contoh asal; semak skop buku teks bagi jenis simbiosis tumbuhan yang diperlukan, tanpa mendakwa liputan jenis lain. Gunakan foto sahaja.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-023",
+      "teaching_order": 28,
+      "sp": [
+        "4.2.3"
+      ],
+      "title": "Interaksi antara Hidupan — Menjelaskan pemerhatian tentang interaksi antara tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Peta tiga interaksi, penerangan dua pemerhatian dan ramalan sumber terhad menyokong komunikasi.",
+      "implementation_note": "Pastikan persaingan, komensalisme dan parasitisme dibezakan melalui maklumat kad; inferens tidak dianggap hasil eksperimen baharu.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}

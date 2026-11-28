@@ -1,0 +1,335 @@
+{
+  "status": "YEAR6_SOURCE_BASED_PEDAGOGICAL_REVIEW_COMPLETE_CORRECTIONS_PENDING",
+  "year": 6,
+  "expected": 89,
+  "reviewed": 89,
+  "unique": 89,
+  "follow_up_required": 49,
+  "follow_up_by_type": {
+    "BBM_ALIGNMENT_REQUIRED": 14,
+    "CLARITY_NOTE_REQUIRED": 25,
+    "SCOPE_CHECK_REQUIRED": 7,
+    "SOURCE_STATUS_CHECK_REQUIRED": 1,
+    "CONTENT_CORRECTION_REQUIRED": 2
+  },
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y6_pedagogical_review_085_089_20261128.json",
+      "blob": "90c4f752f132ba3938b2832c740ffc151a6008e3",
+      "count": 5
+    },
+    {
+      "path": "audits/rph_5p_science_y6_pedagogical_review_001_023_20261128.json",
+      "blob": "cd2960338c2c55bf866d8ff8e5ab0c8abbd3b54b",
+      "count": 23
+    },
+    {
+      "path": "audits/rph_5p_science_y6_pedagogical_review_024_047_20261128.json",
+      "blob": "a62dd3498883dc3da462e9e9b955beeb69e87c01",
+      "count": 24
+    },
+    {
+      "path": "audits/rph_5p_science_y6_pedagogical_review_048_084_20261128.json",
+      "blob": "5f4e29c34c55ff59d71517429a0d8e97c2ea2163",
+      "count": 37
+    }
+  ],
+  "issues": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-085",
+      "title": "Memerhati, mengelas dan mengukur kereta model",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Tambah pita penanda garisan mula pada BBM dan jelaskan titik ukuran akhir model secara konsisten. Gunakan model siap bina, pemberat ringan dan laluan selamat."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-087",
+      "title": "Mentafsir pergerakan model mengikut masa",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Jelaskan ukuran dari garisan mula pada masa ditetapkan bagi laluan lurus; bezakan ukuran ini daripada jumlah jarak bagi laluan berliku dan daripada kelajuan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-089",
+      "title": "Menguji kesan jisim pada jarak pergerakan",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Samakan kaedah pengukuran jarak dengan takrif operasi sesi terdahulu: jika mengukur hingga berhenti, nyatakan takrif khusus dan kawal kriteria berhenti. Guru selia model/pemberat, jangan halakan model kepada rakan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-003",
+      "title": "Menaakul kepentingan pembiakan kepada manusia.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Aktiviti memerlukan gambar generasi rekaan yang belum jelas pada BBM; tambah kad gambar. Fokus kesinambungan spesies, bukan penilaian pilihan atau keluarga individu."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-005",
+      "title": "Mengenal pasti jenis sistem saraf manusia.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Tambah pensel warna atau dua set label warna yang digunakan dalam aktiviti; carta mesti membezakan sistem pusat dan periferi."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-007",
+      "title": "Fungsi sistem saraf periferi",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Sediakan dua kad situasi bergambar selain rajah tangan seperti aktiviti pengembangan; tiada ujian haba sebenar."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-009",
+      "title": "Menjana idea tentang cara menjaga sistem saraf.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Tambahkan kertas poster dan alat tulis pada BBM; elakkan dakwaan semua kecederaan boleh dicegah."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-010",
+      "title": "Menjelaskan pemerhatian tentang sistem saraf melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Gantikan istilah 'diagram' dengan 'rajah' pada cetakan agar konsisten; kekalkan arah isyarat dan label."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-011",
+      "title": "Menjelaskan dengan contoh jenis mikroorganisma.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Jelaskan virus bukan organisma bersel dan tidak membiak sendiri; istilah lima kelompok mengikut kurikulum. Gunakan imej sahaja."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-012",
+      "title": "Mengitlak maksud mikroorganisma.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Selaraskan takrif dengan sesi virus: organisma mikroskopik dan virus yang dibincangkan sebagai agen mikroskopik dalam kurikulum; bukan semua benda kecil ialah mikroorganisma."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-013",
+      "title": "Menyiasat proses hidup mikroorganisma.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "BBM perlu menyatakan botol, belon, alat ukur lilitan serta air suam disediakan guru. Gas ialah bukti aktiviti metabolik yis, bukan ukuran bilangan sel; tiada kultur kulapuk."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-014",
+      "title": "Mengeksperimen faktor pertumbuhan mikroorganisma.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "Pastikan objektif/kriteria cetakan hanya menuntut evidens awal untuk sesi ini, dengan rumusan penuh pada sesi susulan. Guru urus sampel yis makanan dan imej grid; tiada kultur tidak diketahui atau dakwaan pertumbuhan sebelum data."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-015",
+      "title": "Memerihalkan kesan mikroorganisma dalam kehidupan harian.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Kes antibiotik ialah pendidikan umum: antibiotik bertindak terhadap bakteria tertentu, bukan virus; ikut nasihat profesional. Jangan beri arahan penggunaan ubat atau merasa sampel."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-017",
+      "title": "Memerihalkan jenis interaksi antara hidupan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Gambar semut pada pokok sahaja tidak menentukan jenis hubungan; gunakan keterangan kes yang menyatakan kesan pada kedua-dua hidupan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-019",
+      "title": "Menjelaskan melalui contoh jenis interaksi simbiosis antara haiwan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Gunakan keterangan sumber tentang manfaat, mudarat atau tiada kesan ketara; PBD 'bukti manfaat' perlu ditafsir bersama kesan kedua-dua pasangan, bukan manfaat sahaja."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-021",
+      "title": "Interaksi antara Hidupan — Memerihalkan faktor persaingan antara tumbuhan dengan menjalankan penyiasatan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Kepadatan tidak membuktikan satu faktor khusus (air/cahaya/ruang) secara berasingan; nyatakan jenis tanaman, umur, tempoh dan keadaan setara serta batas inferens persaingan. Tiada dakwaan pertumbuhan satu sesi."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-022",
+      "title": "Interaksi antara Hidupan — Menjelas dengan contoh jenis interaksi antara tumbuhan.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "Kekalkan dua contoh asal; semak skop buku teks bagi jenis simbiosis tumbuhan yang diperlukan, tanpa mendakwa liputan jenis lain. Gunakan foto sahaja."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-025",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjana idea cara pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Pastikan pelan merangkumi pemeliharaan dan pemuliharaan, bukan hanya dua langkah perlindungan; gunakan foto sumber."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-026",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan yang pupus.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "BBM hanya menyebut dodo dan mamot; tambah kad perbandingan terancam daripada edisi sumber yang disahkan, tanpa mengandaikan status terkini."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-027",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan dan tumbuhan yang diancam kepupusan.",
+      "status": "SOURCE_STATUS_CHECK_REQUIRED",
+      "implementation_note": "Sahkan spesies khusus dan status dalam edisi sumber; nama umum penyu atau periuk kera tidak membuktikan semua spesies terancam. Tiada dakwaan status semasa."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-028",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan melalui contoh faktor yang menyebabkan kepupusan haiwan dan tumbuhan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Bezakan faktor ancaman daripada kepupusan yang sudah berlaku; tajuk asal dikekalkan sebagai identiti, paparan perlu selaras dengan SP."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-029",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menaakul kepentingan pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Nyatakan data rekaan dan andaian; perbandingan sebelum/selepas sahaja tidak membuktikan sebab. Tambah kesan pemeliharaan dalam senario, bukan hanya pemuliharaan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-030",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan pemerhatian tentang pemeliharaan dan pemuliharaan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "PBD asal hanya menyebut tindakan pemeliharaan; pastikan aktiviti menunjukkan kedua-dua jenis tindakan tanpa mengubah evidens asal."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-031",
+      "title": "Menyatakan maksud daya dengan menjalankan aktiviti.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Tambah kad foto atau gambar tindakan pada BBM; gunakan objek ringan di ruang selamat."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-034",
+      "title": "Menyatakan maksud daya geseran.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Rumuskan daya geseran menentang gerakan relatif atau kecenderungan gerakan; elakkan generalisasi bahawa geseran sentiasa bertentangan arah gerak objek."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-036",
+      "title": "Eksperimen faktor yang mempengaruhi daya geseran",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Gunakan neraca spring sesuai julat, tarikan mendatar pada kelajuan sekata, pemberat ringan stabil dan bacaan ulangan; guru menyelia. Kekalkan override sumber, bukan jarak troli."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-038",
+      "title": "Menjelaskan pemerhatian tentang daya geseran melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Bezakan data jarak troli sebagai set data berasingan daripada eksperimen neraca spring terdahulu; jarak bukan ukuran langsung daya geseran."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-039",
+      "title": "Memerihalkan kewujudan tekanan udara di sekeliling dengan menjalankan aktiviti.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "SP meminta menjalankan aktiviti; video sahaja tidak menggantikan aktiviti pemerhatian langsung. Semak pilihan demonstrasi guru menggunakan bekas plastik dan dulang, tanpa vakum kuat; kekalkan evidens asal."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-040",
+      "title": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Label data rekaan serta unit altitud/tekanan pada jadual dan graf; jangan gambarkan anggaran sebagai bacaan sebenar."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-041",
+      "title": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Tambah foto cawan sedutan pada BBM jika digunakan; picagari tanpa jarum, jangan tutup atau tekan dengan kuat."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-044",
+      "title": "Eksperimen hubungan kelajuan, jarak dan masa",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Bezakan ukuran sesi sendiri daripada data yang diberi; untuk masa tetap, gunakan bukti jarak pada sela sama. Tambah jadual/graf pada BBM dan kawal unit."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-046",
+      "title": "Definisi secara operasi melalui aktiviti",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "Aktiviti semasa hanya menggunakan jadual rekaan walaupun SP meminta menjalankan aktiviti; sediakan pengukuran troli selamat di trek bertanda atau nyatakan penggunaan data sebagai pengukuhan, bukan amali lengkap."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-047",
+      "title": "Menjelaskan pemerhatian tentang kelajuan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Jelaskan graf ialah jarak terkumpul melawan masa; kecerunan mewakili kelajuan pada sela yang dibandingkan. Jangan kelirukan dengan graf kelajuan-masa."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-049",
+      "title": "Menyatakan bahawa kerosakan makanan disebabkan oleh tindakan mikroorganisma.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Foto menunjukkan tanda kerosakan, bukan pengenalpastian mikroorganisma tertentu; gunakan keterangan sumber dan jangan mengkultur sampel."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-052",
+      "title": "Menghubungkait kaedah pengawetan makanan dengan faktor yang mempengaruhi pertumbuhan mikroorganisma.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Bezakan penyejukbekuan yang memperlahankan pertumbuhan daripada pemanasan yang boleh mengurangkan mikroorganisma; jangan mendakwa semua kaedah mensteril makanan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-053",
+      "title": "Menjalankan projek pengawetan sejenis makanan dengan pelbagai kaedah.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "Nyatakan ketersediaan alat pengeringan dan ruang penyejukbekuan dengan seliaan guru. Asingkan evidens awal sesi daripada rekod rujukan dan dapatan susulan projek sebenar. Hasil tidak dimakan; guru urus sampel."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-055",
+      "title": "Mengitlak terdapat makanan boleh diawet dengan menggabungkan lebih daripada satu kaedah pengawetan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Gunakan contoh gabungan yang disahkan dalam sumber; pembungkusan sahaja tidak semestinya pengawetan berkesan. Aktiviti kad, bukan penghasilan makanan untuk dimakan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-058",
+      "title": "Mengenal pasti bahan buangan berdasarkan jenis bahan.",
+      "status": "CONTENT_CORRECTION_REQUIRED",
+      "implementation_note": "Kategori bahan berbahaya ialah kategori risiko, bukan satu jenis bahan yang setara dengan kaca atau logam; nyatakan bahan contoh khusus dan semak enam jenis mengikut edisi sumber."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-059",
+      "title": "Menyatakan maksud bahan buangan terbiodegradasi dan tidak terbiodegradasi.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Bezakan penguraian biologi daripada pecahan fizikal atau pengaratan; contoh bergantung pada jenis bahan dan keadaan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-065",
+      "title": "Memerihalkan fenomena gerhana Matahari berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Tambah lampu LED kecil dalam senarai BBM, seperti aktiviti penerokaan. Simulasi dalam bilik sahaja; jangan lihat Matahari secara langsung."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-066",
+      "title": "Menghubungkaitkan fenomena gerhana Bulan dan gerhana Matahari dengan sifat cahaya.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Tambah lampu LED kecil pada BBM; tiada cerapan Matahari atau gerhana sebenar."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-067",
+      "title": "Meramalkan keadaan di Bumi semasa kejadian gerhana Bulan dan gerhana Matahari.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Bezakan perubahan cahaya siang di kawasan gerhana Matahari dengan rupa Bulan dari kawasan malam; tambah model tiga bola dan LED yang digunakan kepada BBM."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-070",
+      "title": "Memerihalkan galaksi Bima Sakti.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Label pandangan luar Bima Sakti sebagai ilustrasi/model, bukan foto sebenar dari luar; tambah foto galaksi lain untuk perbandingan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-074",
+      "title": "Teknologi dan Kehidupan Lestari — Memerihalkan maksud kestabilan dan kekuatan dengan menjalankan aktiviti.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "SP meminta aktiviti; nyatakan dua ujian model mudah yang berbeza bagi kestabilan dan kekuatan, bukan sekadar pengelasan foto. Gunakan beban ringan sahaja."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-075",
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan dengan contoh struktur yang kuat dan stabil.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Ciri visual menunjukkan alasan munasabah, bukan bukti pengesahan kekuatan struktur sebenar; jangan jamin keselamatan binaan berdasarkan foto."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-076",
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kestabilan objek.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Tetapkan ukuran kestabilan yang boleh dibandingkan, gangguan ringan seragam dan model lain yang setara; rekod ulangan sebenar, bukan jangkaan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-077",
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kekuatan binaan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Takrifkan had sebagai bilangan beban ringan setara sebelum bengkok yang ditetapkan; kawal ukuran rasuk dan jarak sokongan, guru menyelia."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-079",
+      "title": "Mencipta model binaan yang kuat dan stabil dengan menggunakan bahan kitar semula yang sesuai.",
+      "status": "CONTENT_CORRECTION_REQUIRED",
+      "implementation_note": "Urutan penerangan merujuk hasil ujian sebelum ujian dicatat dalam pengembangan; alihkan ujian awal selepas pemasangan, kemudian penerangan dan cadangan pembaikan. Bahan siap dipotong guru, beban ringan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-084",
+      "title": "Menjelaskan pemerhatian tentang kebaikan dan keburukan teknologi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Tambah kad fakta kesan teknologi dan foto sisa elektronik seperti disebut dalam aktiviti; tiada pengendalian sisa elektronik sebenar."
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}

@@ -1,0 +1,367 @@
+{
+  "year": 5,
+  "status": "PROPOSED_PRINT_CORRECTIONS_QA_ONLY",
+  "review": {
+    "path": "audits/rph_5p_science_y5_pedagogical_review_complete_20261128.json",
+    "blob": "96bbdbd59be236ae337804c2198fd0b565596890"
+  },
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-004",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "changes": {
+        "safety": "Air sejuk/suhu bilik sahaja; guna termometer digital, prob tidak menyentuh dasar."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-012",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "changes": {
+        "safety": "Guna kad/rajah larutan berlabel; murid tidak mencampur bahan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-015",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "changes": {
+        "safety": "Larutan disediakan guru; jangan telan atau terkena mata. Bersihkan tumpahan dengan seliaan guru."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-017",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Model anak patung bersendi atau rajah gerakan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-019",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "changes": {
+        "safety": "Guna rajah/gambar sahaja; tiada pemeriksaan fizikal rakan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-020",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Helaian teka silang kepentingan rangka."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-022",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan jantung mengepam darah, salur darah sebagai laluan, peparu tempat pertukaran gas; darah mengangkut oksigen, nutrien dan bahan buangan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-032",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CONTENT_CORRECTION_REQUIRED",
+      "changes": {
+        "phase": {
+          "engagement": "Paparkan gambar penyu bertelur/menimbus telur dan burung menjaga telur atau anak; murid nyatakan tujuan tindakan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-052",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Kad kulit keras dan dua foto tumbuhan tambahan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-053",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "changes": {
+        "safety": "Guna gambar sahaja; jangan sentuh duri atau bulu tumbuhan yang merengsakan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-056",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Lapan gambar biji benih/buah termasuk pencaran letupan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-058",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Perhatikan bentuk dan saiz pada empat kad biji benih; rujuk maklumat berat yang dinyatakan pada kad dan rekod ramalan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-064",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan laluan lengkap: bersiri satu laluan; dua cabang pada contoh litar selari dua mentol."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-065",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Guru menyelia pemerhatian dua kit dengan bilangan mentol dan sel sama, mentol sejenis dan sel setara."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-068",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Perhatikan suis pada kit bersiri dan selari voltan rendah di bawah seliaan guru; catat nyalaan kedua-dua susunan.",
+          "elaboration": "Lengkapkan jadual empat keadaan suis merangkumi litar bersiri dan selari; semak ramalan pada rajah."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-070",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Pada rajah selari dua cabang, suis utama di laluan bersama memutuskan kedua-dua cabang; suis cabang memutuskan cabang itu sahaja."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-072",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "elaboration": "Bincang senario bau hangit: jauhi alat, jangan sentuh alat atau palam rosak dan maklumkan orang dewasa."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-077",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Ukur air suhu bilik dengan termometer sekolah selamat; rekod tiga bacaan °C.",
+          "explanation": "Guru tunjuk bacaan skala analog pada aras mata; bagi digital, baca paparan selepas stabil."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-078",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Plot graf suhu-masa; kenal pasti takat lebur/beku dan didih daripada bacaan sebenar. Air tulen sekitar 0°C dan 100°C pada tekanan atmosfera biasa."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-085",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Kad kayu dan gambar hasil pengaratan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-086",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Guru menyelia tiga set berpenutup mengikut protokol sumber; murid label pendedahan air/udara, faktor kawalan, keadaan awal dan hipotesis.",
+          "explanation": "Bandingkan set rujukan bertarikh; asingkan rekod awal kelas daripada hasil rujukan untuk merumus peranan air dan oksigen."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-087",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "changes": {
+        "safety": "Guru sahaja kendali set bertutup; murid jangan buka bekas.",
+        "phase": {
+          "elaboration": "Jika ujian kelas tiada, gunakan foto bertarikh set rujukan guru; label sebagai bukti rujukan, bukan hasil kelas."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-088",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Kad cat, minyak, gris dan salutan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-091",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan tiga keadaan jirim melalui bentuk dan ruang diisi; gas seperti udara tidak kelihatan, kabus ialah titisan halus."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-093",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan perbezaan isi padu cecair dan gas; kabus mengandungi titisan air halus dalam udara, bukan wap air gas."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-094",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Rajah udara mengisi ruang dalam dua bekas.",
+        "phase": {
+          "exploration": "Pindahkan blok dan air antara bekas; perhatikan udara dalam beg secara selamat dan teliti rajah gas mengisi dua bekas.",
+          "explanation": "Bina jadual bentuk dan isi padu; bezakan pemerhatian langsung daripada model visual gas mengisi ruang."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-095",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Perhatikan ais mencair dan titisan muncul di luar bekas sejuk yang awalnya kering.",
+          "explanation": "Air wujud sebagai pepejal, cecair dan gas; wap air tidak dilihat terus, titisan luar berasal daripada kondensasi, bukan kebocoran."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-102",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Lampu LED kecil sebagai sumber cahaya."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-103",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Putaran dan edaran lawan jam dilihat dari utara; kedua-duanya sekitar 27.3 hari relatif bintang, kitar fasa sekitar 29.5 hari."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-105",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Susun kesemua lapan kad fasa sumber mengikut kitar lengkap, termasuk fasa gelap, membesar, purnama dan mengecil."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-113",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Model kadbod pembuka tin atau rajah sepadan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-116",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CONTENT_CORRECTION_REQUIRED",
+      "changes": {
+        "phase": {
+          "engagement": "Paparkan foto gunting tertutup; murid cari pangsi dan mata gunting. Penyepit hanya contoh perbandingan tuas."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-034",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Foto beruang kutub dan penguin (Buku Teks m/s 58–59).",
+        "phase": {
+          "engagement": "Paparkan kerbau berkubang, haiwan berhibernasi dan beruang kutub berbulu tebal; murid kenal pasti cuaca.",
+          "exploration": "Padankan tingkah laku berkubang dan hibernasi dengan panas/sejuk; teliti bulu tebal beruang kutub dan bulu pelepah padat penguin.",
+          "explanation": "Jelaskan berkubang membantu penyejukan, hibernasi mengurangkan aktiviti; bulu tebal atau padat membantu mengurangkan kehilangan haba.",
+          "elaboration": "Lengkapkan jadual cuaca, tingkah laku, ciri fizikal dan faedah berdasarkan contoh buku teks."
+        }
+      },
+      "textbook_verification": {
+        "file_id": "1rkk0Ee4iP8-r8Xwi3bYTDhpYmqXdO8XF",
+        "title": "Buku Teks Sains Tahun 5 SK - Bahagian 2 (ms 36-130).pdf",
+        "printed_pages": "58–59",
+        "verified": "Buku teks menerangkan bulu tebal beruang kutub dan bulu pelepah pendek padat penguin sebagai ciri penebat haba; dua contoh tingkah laku asal dikekalkan."
+      },
+      "ready": false
+    }
+  ],
+  "held": [],
+  "academic_approved": false,
+  "release": false
+}

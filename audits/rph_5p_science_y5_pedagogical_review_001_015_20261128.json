@@ -1,0 +1,184 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 5,
+  "source": {
+    "path": "audits/rph_5p_science_y5_native_001_015_20261128.json",
+    "blob": "a5690fcf9bde587e7866adaac56ac914a7779669"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y5_support_001_031_20261128.json",
+    "blob": "b42842caefe44a1c1b6e48e6735d14526ed7602c"
+  },
+  "count": 15,
+  "print_safety_note_required": 3,
+  "policy": "Review specific lesson evidence, activities and support against the embedded verified SP and pinned source. No independent teacher/panitia signoff, textbook page-level check or release. Implementation notes must be incorporated and retested where indicated.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-001",
+      "sp": "1.1.1",
+      "title": "Pemerhatian kualitatif dengan deria",
+      "minutes": 30,
+      "review_basis": "Murid merekod ciri visual model, sesuai dengan pemerhatian kualitatif deria yang terlibat; pengayaan tidak menuntut inferens.",
+      "implementation_note": "Gunakan model yang selamat dipegang; fokus visual ini bukan pengesahan penguasaan semua deria.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-002",
+      "sp": "1.1.1",
+      "title": "Pengukuhan pemerhatian sebelum dan selepas",
+      "minutes": 30,
+      "review_basis": "Perbandingan gambar sebelum/selepas membezakan pemerhatian daripada andaian, dan PBD memerlukan perubahan terlihat.",
+      "implementation_note": "Tiada penerbangan sebenar diperlukan; semak dua catatan individu.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-003",
+      "sp": "1.1.2",
+      "title": "Pengelasan berdasarkan ciri sepunya",
+      "minutes": 30,
+      "review_basis": "Kriteria pengelasan eksplisit dan penggunaan kad baharu menguji pemindahan kemahiran.",
+      "implementation_note": "Betulkan pilihan ciri jika kad tidak menunjukkan lebar atau bentuk dengan jelas.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-004",
+      "sp": "1.1.3",
+      "title": "Pengukuran suhu dengan unit piawai",
+      "minutes": 30,
+      "review_basis": "Dua bacaan °C dan teknik prob memberikan evidens pengukuran langsung; ulangan menyokong ketelitian.",
+      "implementation_note": "Nyatakan gunakan air sejuk/suhu bilik sahaja, termometer digital; prob tidak menyentuh dasar bekas.",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-005",
+      "sp": "1.1.4",
+      "title": "Inferens daripada bacaan suhu",
+      "minutes": 30,
+      "review_basis": "Inferens kehilangan haba disandarkan dua bacaan, tidak dianggap pengamatan langsung.",
+      "implementation_note": "Kad data perlu mewakili air yang menyejuk; penerangan alternatif mesti munasabah.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-006",
+      "sp": "1.1.5",
+      "title": "Ramalan perubahan suhu",
+      "minutes": 30,
+      "review_basis": "Ramalan arah perubahan menggunakan tiga bacaan dan diuji dengan nilai tambahan.",
+      "implementation_note": "Jangan menyatakan ramalan suhu tepat sebagai kepastian.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-007",
+      "sp": "1.1.5",
+      "title": "Pengukuhan ramalan berdasarkan data baharu",
+      "minutes": 30,
+      "review_basis": "Set bacaan baharu dan had ramalan membezakan ramalan daripada jaminan.",
+      "implementation_note": "Pastikan data ulangan menggunakan keadaan setara; aktiviti kad sahaja.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-008",
+      "sp": "1.1.6",
+      "title": "Menyampaikan dapatan dalam jadual",
+      "minutes": 30,
+      "review_basis": "Jadual berjudul, berunit dan perbandingan bernombor memenuhi komunikasi sistematik.",
+      "implementation_note": "Semak hasil individu, bukan hanya hasil pasangan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-009",
+      "sp": "1.1.7",
+      "title": "Menyusun perubahan buih mengikut masa",
+      "minutes": 30,
+      "review_basis": "Empat keadaan buih dilabel saat memenuhi urutan masa, dengan rakaman sebagai bukti.",
+      "implementation_note": "Rakaman sedia ada; murid tidak perlu mengendalikan larutan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-010",
+      "sp": "1.1.8",
+      "title": "Mentafsir data tempoh buih",
+      "minutes": 30,
+      "review_basis": "Dua nilai carta menyokong tafsiran, berbeza daripada sekadar menyebut tertinggi.",
+      "implementation_note": "Pastikan carta mempunyai unit saat dan nilai terbaca.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-011",
+      "sp": "1.1.9",
+      "title": "Takrif operasi tempoh buih",
+      "minutes": 30,
+      "review_basis": "Takrif operasi memerihalkan peristiwa mula, tamat dan unit pengukuran; klip baharu menguji kebolehulangan.",
+      "implementation_note": "Jangan samakan tempoh rakaman penuh dengan tempoh sebenar buih.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-012",
+      "sp": "1.1.10",
+      "title": "Pemboleh ubah dalam ujian buih",
+      "minutes": 30,
+      "review_basis": "Larutan, tempoh buih, alat dan tempat dipadankan kepada tiga pemboleh ubah; pengayaan masih dalam skop.",
+      "implementation_note": "Gunakan kad atau rajah larutan berlabel; tiada pencampuran bahan oleh murid dalam sesi perancangan ini.",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-013",
+      "sp": "1.1.10",
+      "title": "Pengukuhan pemboleh ubah ujian adil",
+      "minutes": 30,
+      "review_basis": "Rancangan bercacat menunjukkan dua perubahan serentak, dan pembetulan mengawal dua faktor.",
+      "implementation_note": "Aktiviti perancangan sahaja, bukan menjalankan eksperimen.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-014",
+      "sp": "1.1.11",
+      "title": "Hipotesis dalam ujian buih",
+      "minutes": 30,
+      "review_basis": "Hipotesis berarah boleh diuji menggunakan tempoh buih; tidak menganggap ramalan sebagai keputusan.",
+      "implementation_note": "Gunakan kad situasi; hipotesis tidak boleh ditulis sebagai hasil eksperimen yang sudah disahkan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-015",
+      "sp": "1.1.12",
+      "title": "Eksperimen tempoh buih bertahan",
+      "minutes": 60,
+      "review_basis": "Empat bacaan daripada dua ulangan setiap larutan membolehkan perbandingan dan rumusan hipotesis; 60 minit sepadan dengan eksperimen.",
+      "implementation_note": "Nyatakan keselamatan pada cetakan: larutan disediakan guru, alat/lokasi sama, jangan telan larutan atau terkena mata; bersihkan tumpahan dengan seliaan guru.",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}

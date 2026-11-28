@@ -1,0 +1,382 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 5,
+  "source": {
+    "path": "audits/rph_5p_science_y5_native_084_116_20261128.json",
+    "blob": "d41b73977b113344f838d6680813dd4edb7970db"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y5_support_084_116_20261128.json",
+    "blob": "31238d84f66887e6750ae8de2e4d082d188ee9cd"
+  },
+  "count": 33,
+  "follow_up_required": 13,
+  "policy": "Review embedded verified SP, source PBD, activity phases, materials, safety and support. Flagged issues remain open; no independent textbook page verification or teacher/panitia signoff. Retain locked source and retest print adaptations.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-084",
+      "sp": "7.1.1",
+      "title": "Ciri objek yang berkarat",
+      "minutes": 30,
+      "review_basis": "Foto pembesaran dan perbandingan cat perang menyokong dua pemerhatian ciri karat.",
+      "implementation_note": "Warna sahaja bukan bukti muktamad; gunakan foto tekstur tanpa menyentuh besi tajam.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-085",
+      "sp": "7.1.2",
+      "title": "Bahan yang boleh berkarat",
+      "minutes": 30,
+      "review_basis": "Pengelasan empat bahan dan rumusan besi boleh berkarat apabila keadaan sesuai menepati SP.",
+      "implementation_note": "Aktiviti memerlukan kad kayu dan gambar hasil pengaratan yang tidak dinyatakan dengan jelas dalam BBM; tambah kedua-duanya.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-086",
+      "sp": "7.1.3",
+      "title": "Faktor yang menyebabkan pengaratan",
+      "minutes": 60,
+      "review_basis": "Tiga set, keadaan awal, pemboleh ubah dan set rujukan bertarikh menyokong eksperimen tanpa mendakwa hasil serta-merta.",
+      "implementation_note": "Nyatakan keadaan tiga set dan faktor yang dikawal berdasarkan protokol asal; rekod awal berasingan daripada hasil set rujukan. Guru sahaja mengendalikan bekas tertutup.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-087",
+      "sp": "7.1.3",
+      "title": "Pengukuhan tafsiran ujian pengaratan",
+      "minutes": 30,
+      "review_basis": "Perbandingan rekod awal/susulan dengan setiap kawalan menyokong rumusan peranan air dan oksigen.",
+      "implementation_note": "Kekalkan nota keselamatan pada cetakan: guru sahaja kendali set bertutup; jangan buka bekas. Label foto rujukan sebagai bukti rujukan, bukan hasil kelas.",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-088",
+      "sp": "7.1.4",
+      "title": "Cara mencegah pengaratan",
+      "minutes": 30,
+      "review_basis": "Padanan kaedah dengan objek dan dua sebab perlindungan menyokong SP.",
+      "implementation_note": "Sediakan kad keempat-empat kaedah yang disebut, bukan demonstrasi cat/minyak berbahaya.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-089",
+      "sp": "7.1.5",
+      "title": "Kepentingan mencegah pengaratan",
+      "minutes": 30,
+      "review_basis": "Kesan karat kepada keselamatan, kekuatan dan jangka hayat dinilai melalui dua sebab dan situasi penyelenggaraan.",
+      "implementation_note": "Foto sahaja; jangan menghampiri atau memegang struktur reput.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-090",
+      "sp": "7.1.6",
+      "title": "Penerangan pemerhatian pengaratan",
+      "minutes": 30,
+      "review_basis": "Jadual foto sebelum/selepas, rumusan dan kaedah pencegahan memenuhi komunikasi pemerhatian.",
+      "implementation_note": "Bezakan perbandingan kering/basah daripada kesimpulan faktor lengkap yang memerlukan kawalan udara juga.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-091",
+      "sp": "8.1.1",
+      "title": "Tiga keadaan jirim",
+      "minutes": 30,
+      "review_basis": "Enam contoh dalam tiga kategori dan semakan sifat menyokong SP.",
+      "implementation_note": "Kad gas perlu mewakili udara atau wap air tidak kelihatan, bukan gambar kabus/stim putih sebagai gas.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-092",
+      "sp": "8.1.2",
+      "title": "Pengelasan bahan mengikut keadaan jirim",
+      "minutes": 30,
+      "review_basis": "Sembilan kad dan tiga alasan berdasarkan bentuk/isi padu menguji pengelasan.",
+      "implementation_note": "Pastikan sembilan contoh jelas dan sesuai; jangan menghidu bahan tidak diketahui.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-093",
+      "sp": "8.1.2",
+      "title": "Pengukuhan pengelasan objek baharu",
+      "minutes": 30,
+      "review_basis": "Pembetulan salah faham tentang kabus membezakan titisan air daripada wap air.",
+      "implementation_note": "Nyatakan kabus mengandungi titisan air halus dalam udara, bukan keseluruhan kabus sebagai bahan cecair tulen.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-094",
+      "sp": "8.1.3",
+      "title": "Sifat pepejal, cecair dan gas",
+      "minutes": 60,
+      "review_basis": "Pemindahan blok/air dan pemerhatian beg menunjukkan perbezaan bentuk tiga keadaan jirim.",
+      "implementation_note": "Beg tertutup tunggal tidak cukup untuk membuktikan sifat isi padu gas yang mengisi ruang; tambah model visual atau pemerhatian selamat yang relevan dan nyatakan batas bukti. Jangan gunakan beg berhampiran muka.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-095",
+      "sp": "8.1.4",
+      "title": "Tiga keadaan air",
+      "minutes": 30,
+      "review_basis": "Ais mencair dan titisan luar bekas menyokong penerangan tiga keadaan air melalui bukti tidak langsung wap air.",
+      "implementation_note": "Gunakan bekas sejuk yang kering di luar pada awal aktiviti; jelaskan wap air tidak dilihat secara langsung dan titisan bukan kebocoran.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-096",
+      "sp": "8.1.5",
+      "title": "Penerangan pemerhatian keadaan jirim",
+      "minutes": 30,
+      "review_basis": "Peta konsep tiga keadaan dan penerangan bentuk/isi padu menepati komunikasi pemerhatian.",
+      "implementation_note": "Rujuk hasil aktiviti terdahulu, bukan menganggap semua sifat telah diperhatikan pada kad sahaja.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-097",
+      "sp": "8.2.1",
+      "title": "Proses perubahan keadaan air",
+      "minutes": 60,
+      "review_basis": "Dua pemerhatian langsung dan tiga proses melalui rakaman meliputi lima perubahan keadaan.",
+      "implementation_note": "Bezakan bukti langsung daripada rakaman guru dan gunakan istilah proses tepat; murid tidak memegang air mendidih.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-098",
+      "sp": "8.2.1",
+      "title": "Pengukuhan menamakan perubahan keadaan air",
+      "minutes": 30,
+      "review_basis": "Padanan lima proses dan arah perubahan mengukuhkan perbezaan penyejatan dan pendidihan.",
+      "implementation_note": "Ini pengukuhan visual, bukan eksperimen tambahan; kekalkan evidens asal.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-099",
+      "sp": "8.2.2",
+      "title": "Perubahan keadaan air dan pemindahan haba",
+      "minutes": 30,
+      "review_basis": "Pengelasan lima proses kepada menerima/kehilangan haba dan alasan daripada bukti menepati SP.",
+      "implementation_note": "Rekod guru dibezakan daripada pemerhatian sendiri; tiada pemanas terbuka untuk murid.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-100",
+      "sp": "8.2.3",
+      "title": "Pembentukan awan dan hujan",
+      "minutes": 30,
+      "review_basis": "Lakaran kitar air dan dua proses menghubungkan awan serta hujan dengan perubahan keadaan.",
+      "implementation_note": "Elakkan menyatakan semua awan terus menghasilkan hujan; tiada demonstrasi stim.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-101",
+      "sp": "8.2.4",
+      "title": "Lakaran dan penerangan perubahan keadaan air",
+      "minutes": 30,
+      "review_basis": "Lakaran empat proses memenuhi PBD asal; pendidihan sebagai pengayaan mengekalkan liputan sesi terdahulu.",
+      "implementation_note": "Jangan menukar syarat PBD asal empat proses kepada lima; tandakan pendidihan sebagai tambahan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-102",
+      "sp": "9.1.1",
+      "title": "Cahaya Bulan yang dipantulkan",
+      "minutes": 30,
+      "review_basis": "Jejak sinar model dan perbandingan sumber/pemantul menepati SP.",
+      "implementation_note": "Model sumber cahaya perlu dinyatakan, gunakan sumber tiruan selamat dan jangan lihat Matahari secara langsung.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-103",
+      "sp": "9.1.2",
+      "title": "Putaran dan peredaran Bulan",
+      "minutes": 30,
+      "review_basis": "Simulasi putaran segerak dan tempoh relatif bintang menyokong SP.",
+      "implementation_note": "Penerangan arah belum eksplisit; tambah arah dilihat dari utara, bezakan tempoh sekitar 27.3 hari daripada kitar fasa sekitar 29.5 hari berdasarkan nota sumber.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-104",
+      "sp": "9.1.2",
+      "title": "Pengukuhan arah dan tempoh gerakan Bulan",
+      "minutes": 30,
+      "review_basis": "Model bertanda, arah dari utara dan tempoh putaran/edaran mengukuhkan SP.",
+      "implementation_note": "Nyatakan sudut pandang dalam rajah; kekalkan beza tempoh relatif bintang dengan bulan Qamari.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-105",
+      "sp": "9.1.3",
+      "title": "Urutan fasa Bulan dan takwim Qamari",
+      "minutes": 30,
+      "review_basis": "Kad fasa dan kedudukan relatif menyokong urutan tetapi aktiviti hanya menyusun lima daripada lapan kad.",
+      "implementation_note": "Untuk satu kitar lengkap, susun kesemua fasa pada kad yang disahkan termasuk bahagian membesar/mengecil dan fasa gelap; tarikh Qamari anggaran, bukan tarikh pasti.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-106",
+      "sp": "9.1.4",
+      "title": "Pemerhatian dan lakaran fasa Bulan",
+      "minutes": 30,
+      "review_basis": "Garis masa empat fasa berlabel dan penerangan urutan menepati komunikasi.",
+      "implementation_note": "Gunakan kad sumber, bukan cerapan Matahari atau gerhana.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-107",
+      "sp": "9.2.1",
+      "title": "Pengenalpastian corak buruj",
+      "minutes": 30,
+      "review_basis": "Padanan corak daripada peta sah dan orientasi berbeza menepati pengenalpastian.",
+      "implementation_note": "Tiga corak ialah evidens asal, empat diperkenalkan; pastikan peta KPM tersedia.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-108",
+      "sp": "9.2.2",
+      "title": "Kegunaan buruj",
+      "minutes": 30,
+      "review_basis": "Dua kegunaan tradisional dan had lokasi/masa menyokong SP.",
+      "implementation_note": "Senario pelayaran/pertanian rekaan sahaja, bukan panduan navigasi sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-109",
+      "sp": "9.2.3",
+      "title": "Pemerhatian dan lakaran buruj",
+      "minutes": 30,
+      "review_basis": "Dua lakaran berpandukan peta sah dan satu kegunaan memenuhi komunikasi.",
+      "implementation_note": "Kekalkan kedudukan relatif titik berdasarkan sumber; jangan cipta corak.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-110",
+      "sp": "9.2.3",
+      "title": "Pengukuhan mengenal buruj daripada lakaran",
+      "minutes": 30,
+      "review_basis": "Lakaran satu corak dan petunjuk relatif mengukuhkan komunikasi pemerhatian.",
+      "implementation_note": "Tiga bintang sebaris ialah petunjuk Belantik, bukan satu-satunya bukti pengenalpastian; guna peta sah.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-111",
+      "sp": "10.1.1",
+      "title": "Kegunaan alat di sekeliling",
+      "minutes": 30,
+      "review_basis": "Tiga padanan alat dan alasan pemilihan sesuai dengan SP.",
+      "implementation_note": "Kad foto alat selamat; tiada pengendalian gunting tajam.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-112",
+      "sp": "10.1.2",
+      "title": "Gabungan mesin ringkas pada alat",
+      "minutes": 30,
+      "review_basis": "Pemerhatian alat sebenar, lakaran dan dua fungsi komponen menepati SP.",
+      "implementation_note": "Pastikan alat yang dipilih benar-benar menggabungkan dua mesin ringkas; gunting tertutup, di bawah seliaan guru.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-113",
+      "sp": "10.1.3",
+      "title": "Kepentingan gabungan mesin ringkas",
+      "minutes": 30,
+      "review_basis": "Senario kehilangan komponen dan dua penaakulan menyokong kepentingan gabungan mesin ringkas.",
+      "implementation_note": "Model pembuka tin disebut, BBM perlu menyatakan model kadbod pembuka tin atau rajah yang sepadan.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-114",
+      "sp": "10.1.4",
+      "title": "Ciri penciptaan alat lestari",
+      "minutes": 30,
+      "review_basis": "Perbandingan ketahanan, keselamatan, kebolehbaikan dan dua lakaran menguji idea lestari.",
+      "implementation_note": "Nilai manfaat tanpa menganggap semua bahan boleh dikitar semula; tiada bahan toksik.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-115",
+      "sp": "10.1.5",
+      "title": "Penerangan fungsi alat harian",
+      "minutes": 30,
+      "review_basis": "Lakaran dua komponen dan idea lestari menepati komunikasi penggunaan alat.",
+      "implementation_note": "Gunakan rajah alat yang menunjukkan dua mesin ringkas sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-116",
+      "sp": "10.1.5",
+      "title": "Pengukuhan lakaran fungsi alat baharu",
+      "minutes": 30,
+      "review_basis": "Lakaran tuas dan baji serta idea penyelenggaraan mengukuhkan fungsi alat.",
+      "implementation_note": "Pilihan penyepit tidak semestinya mempunyai baji; gunakan gunting tertutup sebagai contoh utama, penyepit hanya untuk perbandingan tuas.",
+      "status": "CONTENT_CORRECTION_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}

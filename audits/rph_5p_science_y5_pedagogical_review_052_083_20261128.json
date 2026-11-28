@@ -1,0 +1,371 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 5,
+  "source": {
+    "path": "audits/rph_5p_science_y5_native_052_083_20261128.json",
+    "blob": "16855aeabf788060f358ca89f0c3cb4c01053371"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y5_support_052_083_20261128.json",
+    "blob": "2e3f578e2e4510bd725ae7f88acdfff9965e845c"
+  },
+  "count": 32,
+  "follow_up_required": 11,
+  "policy": "Review embedded SP, source PBD, activity phases, materials, safety and support. Flagged issues remain open; no independent textbook page verification or teacher/panitia signoff. Retain locked source and retest print adaptations.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-052",
+      "sp": "4.1.1",
+      "title": "Ciri perlindungan tumbuhan",
+      "minutes": 30,
+      "review_basis": "Dua contoh ciri perlindungan dan pemilihan foto baharu menguji hubungan ciri dengan ancaman.",
+      "implementation_note": "Kad kulit keras dan dua foto tambahan perlu tersedia; gambar sahaja, tidak menyentuh duri/getah.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-053",
+      "sp": "4.1.1",
+      "title": "Pengukuhan ciri pertahanan tumbuhan",
+      "minutes": 30,
+      "review_basis": "Anotasi gambar dan dua alasan menilai fungsi duri dan bulu tertentu.",
+      "implementation_note": "Bulu halus tidak semestinya merengsakan; kekalkan perkataan tertentu, gunakan gambar sahaja.",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-054",
+      "sp": "4.1.2",
+      "title": "Penyesuaian tumbuhan terhadap iklim",
+      "minutes": 30,
+      "review_basis": "Padanan akar, daun dan batang dengan iklim/musim serta sebab menyokong SP.",
+      "implementation_note": "Pastikan contoh pada kad sepadan dengan foto tumbuhan sebenar dan keadaan musim.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-055",
+      "sp": "4.1.3",
+      "title": "Penerangan kemandirian tumbuhan",
+      "minutes": 30,
+      "review_basis": "Dua lakaran berlabel dan penerangan manfaat ciri menepati komunikasi kemandirian.",
+      "implementation_note": "Gunakan foto tumbuhan dan elakkan spesimen beracun.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-056",
+      "sp": "4.2.1",
+      "title": "Cara pencaran biji benih dan buah",
+      "minutes": 30,
+      "review_basis": "Pengelasan kepada empat cara pencaran dan carta contoh menepati SP.",
+      "implementation_note": "BBM perlu mempunyai lapan gambar seperti aktiviti, termasuk contoh mekanisme letupan; gunakan gambar/rakaman sahaja.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-057",
+      "sp": "4.2.2",
+      "title": "Ciri biji benih dan cara pencaran",
+      "minutes": 30,
+      "review_basis": "Padanan sayap, ciri terapung dan cangkuk dengan agen berasaskan ciri boleh diperhatikan.",
+      "implementation_note": "Pengajaran ini fokus tiga cara dalam kad; jangan mendakwa semua cara sudah diuji.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-058",
+      "sp": "4.2.3",
+      "title": "Meramal cara pencaran",
+      "minutes": 30,
+      "review_basis": "Empat ramalan dan sebab disokong kad ciri serta semakan gambar sebenar.",
+      "implementation_note": "Berat tidak dapat diketahui tepat hanya melalui gambar; nyatakan ciri berat pada kad, bukan anggaran daripada rupa.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-059",
+      "sp": "4.2.3",
+      "title": "Pengukuhan ramalan untuk biji benih baharu",
+      "minutes": 30,
+      "review_basis": "Ramalan angin/air/haiwan daripada ciri dan dua gambar baharu mengukuhkan SP.",
+      "implementation_note": "Terima ramalan bersebab dan elakkan dakwaan satu ciri sentiasa menentukan satu agen.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-060",
+      "sp": "4.2.4",
+      "title": "Komunikasi pemerhatian pencaran",
+      "minutes": 30,
+      "review_basis": "Dua lakaran dan dua sebab menepati komunikasi pencaran.",
+      "implementation_note": "Gambar sahaja bagi buah tajam/beracun; semak hasil individu.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-061",
+      "sp": "5.1.1",
+      "title": "Sumber tenaga elektrik",
+      "minutes": 30,
+      "review_basis": "Tiga sumber elektrik dan pilihan bagi situasi tanpa grid menepati SP.",
+      "implementation_note": "Bezakan sumber/penjana elektrik daripada alat pengguna; tiada sambungan soket.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-062",
+      "sp": "5.2.1",
+      "title": "Susunan mentol bersiri dan selari",
+      "minutes": 30,
+      "review_basis": "Jejak satu laluan dan cabang serta empat rajah berputar menguji sambungan bukan rupa.",
+      "implementation_note": "Gunakan kit sekolah voltan rendah, mentol sepadan dan elakkan litar pintas.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-063",
+      "sp": "5.2.2",
+      "title": "Lakaran litar dengan simbol",
+      "minutes": 30,
+      "review_basis": "Dua rajah bersimbol dan semakan cabang memenuhi lakaran litar.",
+      "implementation_note": "Kad simbol perlu menunjukkan sel, suis, mentol dan wayar; tiada palam/soket sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-064",
+      "sp": "5.2.2",
+      "title": "Pengukuhan membetulkan rajah litar",
+      "minutes": 30,
+      "review_basis": "Pembaikan sambungan dan simbol menyokong pengukuhan litar lengkap.",
+      "implementation_note": "Dua cabang ialah contoh khusus rajah dua mentol, bukan takrif semua litar selari.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-065",
+      "sp": "5.2.3",
+      "title": "Perbandingan kecerahan dua jenis litar",
+      "minutes": 60,
+      "review_basis": "Perbandingan dua kit dengan komponen setara dan jadual pemerhatian menyokong SP.",
+      "implementation_note": "Pastikan bilangan mentol dan sel sama, sumber setara serta mentol sejenis; jangan jamin kecerahan tanpa dapatan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-066",
+      "sp": "5.2.4",
+      "title": "Kesan bilangan mentol terhadap kecerahan",
+      "minutes": 60,
+      "review_basis": "Mengubah bilangan mentol dengan jenis dan bilangan sel tetap menyokong ujian adil.",
+      "implementation_note": "Rekod setiap susunan/bilangan mentol dan dapatan sebenar; putuskan suis sebelum ubah komponen.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-067",
+      "sp": "5.2.5",
+      "title": "Kesan bilangan sel kering terhadap kecerahan",
+      "minutes": 60,
+      "review_basis": "Ujian satu dan dua sel bagi dua susunan dengan mentol tetap menyokong perbandingan.",
+      "implementation_note": "Jangan tambah sel melebihi kadaran kit; guru menyelia, matikan selepas uji.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-068",
+      "sp": "5.2.6",
+      "title": "Kesan suis pada nyalaan mentol",
+      "minutes": 60,
+      "review_basis": "Empat keadaan suis dan ramalan nyalaan menyokong SP.",
+      "implementation_note": "Aktiviti menerangkan suis utama/cabang selari tetapi kurang nyata bagi litar bersiri. Pastikan kedua-dua susunan diperhatikan dan jadual merekod kedua-duanya.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-069",
+      "sp": "5.2.7",
+      "title": "Penerangan pemerhatian litar",
+      "minutes": 30,
+      "review_basis": "Dua lakaran dan pemerhatian disahkan melalui rekod ujian menepati komunikasi.",
+      "implementation_note": "Gunakan rekod sebenar dan label komponen; tiada penggunaan soket rumah.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-070",
+      "sp": "5.2.7",
+      "title": "Pengukuhan menerangkan keputusan ujian suis",
+      "minutes": 30,
+      "review_basis": "Jejak suis utama dan cabang mengukuhkan alasan keadaan nyalaan.",
+      "implementation_note": "Nyatakan khusus rajah selari dua cabang dengan suis utama pada laluan bersama.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-071",
+      "sp": "5.3.1",
+      "title": "Faktor penggunaan tenaga elektrik",
+      "minutes": 30,
+      "review_basis": "Perbandingan kuasa dan tempoh dalam senario rekaan menyokong faktor penggunaan tenaga.",
+      "implementation_note": "Label data rekaan dan penggunaan relatif; jangan nyatakan sebagai bacaan meter sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-072",
+      "sp": "5.3.2",
+      "title": "Kesan salah pengendalian peralatan elektrik",
+      "minutes": 30,
+      "review_basis": "Tiga situasi risiko dan tindakan selamat menepati kesan kecuaian.",
+      "implementation_note": "Frasa hentikan penggunaan perlu bermaksud menjauhi alat dan memaklumkan orang dewasa; murid jangan cuba menyentuh palam atau alat rosak.",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-073",
+      "sp": "5.3.3",
+      "title": "Langkah keselamatan peralatan elektrik",
+      "minutes": 30,
+      "review_basis": "Pengelasan tabiat dan urutan tindakan wayar rosak sesuai dengan SP.",
+      "implementation_note": "Tiada demonstrasi bahaya; jangan sentuh, jauhi dan maklumkan orang dewasa.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-074",
+      "sp": "5.3.4",
+      "title": "Komunikasi keselamatan dan penjimatan elektrik",
+      "minutes": 30,
+      "review_basis": "Poster dua penjimatan dan dua amalan keselamatan dengan sebab menepati SP.",
+      "implementation_note": "Gunakan situasi rekaan; murid tidak membaiki alat atau mencabut palam rosak.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-075",
+      "sp": "6.1.1",
+      "title": "Maksud haba dan suhu",
+      "minutes": 30,
+      "review_basis": "Dua takrif dan contoh arah pemindahan membezakan haba daripada suhu.",
+      "implementation_note": "Suhu ukuran darjah panas/sejuk; haba tenaga yang berpindah akibat beza suhu, bukan suhu yang mengalir.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-076",
+      "sp": "6.1.1",
+      "title": "Pengukuhan haba dan suhu dalam situasi harian",
+      "minutes": 30,
+      "review_basis": "Kad bacaan dan anak panah menguji perbezaan suhu dengan pemindahan haba.",
+      "implementation_note": "Gunakan gambar sahaja; arah bersih daripada suhu tinggi kepada rendah.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-077",
+      "sp": "6.1.2",
+      "title": "Teknik menyukat suhu",
+      "minutes": 30,
+      "review_basis": "Pengukuran °C, pembetulan paralaks dan tiga bacaan menepati teknik piawai.",
+      "implementation_note": "Nyatakan aras mata untuk skala analog bukan termometer digital; tentukan tiga bacaan sebenar atau kad bacaan secara jelas.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-078",
+      "sp": "6.1.3",
+      "title": "Perubahan suhu ais hingga air mendidih",
+      "minutes": 60,
+      "review_basis": "Graf suhu-masa dan takat lebur/beku serta didih menepati penyiasatan 60 minit.",
+      "implementation_note": "Guru sahaja mengendalikan pemanas/air mendidih; rekod nilai sebenar dan jelaskan takat air tulen sekitar 0°C dan 100°C pada tekanan atmosfera biasa, bukan memaksa data.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-079",
+      "sp": "6.1.4",
+      "title": "Penyejukan air ke suhu bilik",
+      "minutes": 60,
+      "review_basis": "Bacaan berkala suhu air dan suhu bilik serta graf menyokong trend penyejukan.",
+      "implementation_note": "Label rekod tambahan guru secara berasingan daripada bacaan sesi; jangan mengisi bacaan yang belum diambil.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-080",
+      "sp": "6.1.5",
+      "title": "Kesan penerimaan dan kehilangan haba",
+      "minutes": 30,
+      "review_basis": "Demonstrasi botol dan belon menilai pengembangan/pengecutan udara dalam susunan tersebut.",
+      "implementation_note": "Guru sediakan air suam selamat; kesimpulan khusus udara, bukan semua bahan tanpa pengecualian.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-081",
+      "sp": "6.1.5",
+      "title": "Pengukuhan pengembangan dan pengecutan",
+      "minutes": 30,
+      "review_basis": "Perbandingan rajah sebelum/selepas mengukuhkan sebab perubahan isipadu udara.",
+      "implementation_note": "Aktiviti pengukuhan menggunakan rajah; bukan menggantikan demonstrasi sebelumnya.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-082",
+      "sp": "6.1.6",
+      "title": "Aplikasi pengembangan dan pengecutan",
+      "minutes": 30,
+      "review_basis": "Foto sambungan dan ramalan tanpa ruang menyokong penaakulan aplikasi pengembangan.",
+      "implementation_note": "Gunakan contoh reka bentuk yang benar-benar mempunyai sambungan pengembangan, bukan dakwaan semua landasan berjarak.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-083",
+      "sp": "6.1.7",
+      "title": "Penerangan pemerhatian haba dan suhu",
+      "minutes": 30,
+      "review_basis": "Graf pemanasan/penyejukan dan dua pemerhatian menepati komunikasi berasaskan data.",
+      "implementation_note": "Label data simulasi sebagai simulasi, bukan data eksperimen murid.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}

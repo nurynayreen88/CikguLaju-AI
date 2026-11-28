@@ -1,0 +1,38 @@
+{
+  "status": "ALL_82_PRINT_CORRECTIONS_PINNED_CATALOGUE_PERSONALIZED_QA_PASS",
+  "tested_commit": "8ce54bb42097fa7258eefa4a59fed5c88ca55dd3",
+  "native_source_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+  "workflow_run": 46106662602,
+  "original_catalogue_job": 140860844334,
+  "isolated_web_job": 140860844704,
+  "document_workflow_run": 46106662604,
+  "years": [
+    {
+      "year": 5,
+      "lessons": 116,
+      "corrections": 33,
+      "auto_word": 116,
+      "auto_pdf": 116,
+      "manual_word": 116,
+      "manual_pdf": 116,
+      "personalized_word_single_page": 232,
+      "job": 140861153448
+    },
+    {
+      "year": 6,
+      "lessons": 89,
+      "corrections": 49,
+      "auto_word": 89,
+      "auto_pdf": 89,
+      "manual_word": 89,
+      "manual_pdf": 89,
+      "personalized_word_single_page": 178,
+      "job": 140861153486
+    }
+  ],
+  "issues": [],
+  "scope": "All 205 pinned original selections and 820 simulated paid-account downloads, including actual personalized Word to PDF single-page and full-text checks. Four textbook-dependent corrections resolved with recorded edition/pages. No production account or live backend test, no independent academic approval.",
+  "academic_approved": false,
+  "live_auth_verified": false,
+  "release": false
+}

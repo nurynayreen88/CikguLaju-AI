@@ -1,0 +1,213 @@
+{
+  "year": 5,
+  "status": "PROPOSED_ADDITIONS_NOT_SOURCE_FIELDS",
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y5_native_032_051_20261128.json",
+      "blob": "2c7b6fa9884df3890f216116f34f9409229e6550"
+    }
+  ],
+  "policy": "New pedagogical suggestions based on exact 5P draft activities; not verbatim original source or academic approval. No runtime integration or release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-032",
+      "title": "Maksud kemandirian spesies",
+      "pak21": "Think-Pair-Share",
+      "emk": "Nilai murni: menyayangi hidupan",
+      "pemulihan": "Padankan gambar induk menjaga anak dengan tujuan penjagaan.",
+      "pengayaan": "Terangkan akibat kehilangan tempat perlindungan terhadap kesinambungan spesies.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-033",
+      "title": "Perlindungan haiwan daripada musuh",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Sains dan teknologi: penyesuaian haiwan",
+      "pemulihan": "Padankan gambar landak dan serangga ranting dengan ciri pertahanan.",
+      "pengayaan": "Pilih ciri bagi dua kad ancaman pemangsa dan bandingkan sebabnya.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-034",
+      "title": "Cara haiwan menghadapi cuaca melampau",
+      "pak21": "Perbincangan pasangan",
+      "emk": "Kelestarian alam sekitar: penyesuaian iklim",
+      "pemulihan": "Padankan kerbau berkubang dengan panas dan hibernasi dengan sejuk.",
+      "pengayaan": "Terangkan mengapa satu tingkah laku tidak sesuai bagi semua keadaan cuaca.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-035",
+      "title": "Cara haiwan melindungi telur",
+      "pak21": "Padanan gambar berpasangan",
+      "emk": "Nilai murni: menghargai hidupan",
+      "pemulihan": "Beri kad penyu dan burung dengan dua pilihan cara melindungi telur.",
+      "pengayaan": "Bandingkan strategi penyu dan buaya serta ancaman yang dikurangkan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-036",
+      "title": "Pengukuhan perlindungan telur daripada ancaman",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: perlindungan telur",
+      "pemulihan": "Beri jadual ancaman sejuk dan pemangsa berserta kad tindakan.",
+      "pengayaan": "Terangkan perbezaan fungsi mengeram dan menutup sarang dalam dua contoh.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-037",
+      "title": "Cara haiwan menjaga anak",
+      "pak21": "Perbincangan kes kumpulan",
+      "emk": "Nilai murni: kasih sayang terhadap haiwan",
+      "pemulihan": "Padankan gambar kucing atau burung dengan cara memberi makanan kepada anak.",
+      "pengayaan": "Bandingkan dua cara penjagaan serta akibat jika penjagaan tidak berlaku.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-038",
+      "title": "Komunikasi tentang kemandirian haiwan",
+      "pak21": "Pembentangan galeri",
+      "emk": "Kreativiti dan inovasi: lakaran berlabel",
+      "pemulihan": "Beri dua gambar haiwan dan rangka label ciri khas.",
+      "pengayaan": "Lakar ciri tambahan dan jelaskan kaitannya dengan habitat yang sesuai.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-039",
+      "title": "Mereka cipta model haiwan imaginasi",
+      "pak21": "Pembelajaran berasaskan projek",
+      "emk": "Kreativiti dan inovasi: reka bentuk model",
+      "pemulihan": "Beri templat model dengan pilihan tiga ciri perlindungan.",
+      "pengayaan": "Ubah suai model selepas menerima kad ancaman baharu dan jelaskan penambahbaikan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-040",
+      "title": "Menaakul ciri model haiwan",
+      "pak21": "Perbincangan model berkumpulan",
+      "emk": "Kreativiti dan inovasi: penilaian reka bentuk",
+      "pemulihan": "Padankan dua ciri model dengan kad musuh atau cuaca.",
+      "pengayaan": "Cadangkan dua perubahan apabila keadaan habitat berubah dan justifikasikan pilihan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-041",
+      "title": "Pengukuhan reka bentuk mengikut ancaman",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Kreativiti dan inovasi: pengubahsuaian lakaran",
+      "pemulihan": "Beri satu kad ancaman cuaca serta satu kad pemangsa dengan pilihan ciri.",
+      "pengayaan": "Baiki dua label model bagi habitat panas dan jelaskan mengapa ciri asal kurang sesuai.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-042",
+      "title": "Ciri haiwan dan keseimbangan alam",
+      "pak21": "Pembentangan pasangan",
+      "emk": "Kelestarian alam sekitar: kepelbagaian haiwan",
+      "pemulihan": "Padankan satu haiwan sebenar dengan ciri model yang menyerupainya.",
+      "pengayaan": "Huraikan hubungan kepelbagaian ciri dengan kelangsungan spesies dan keseimbangan alam.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-043",
+      "title": "Lakaran dan penerangan model haiwan",
+      "pak21": "Pembentangan galeri",
+      "emk": "Kreativiti dan inovasi: komunikasi visual",
+      "pemulihan": "Beri lakaran model separa berlabel dengan pilihan fungsi.",
+      "pengayaan": "Perjelas label model selepas soal jawab dan tambah alasan pemilihan ciri.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-044",
+      "title": "Maksud rantai makanan",
+      "pak21": "Susun kad kolaboratif",
+      "emk": "Sains dan teknologi: pemindahan tenaga",
+      "pemulihan": "Beri kad empat organisma dengan anak panah permulaan.",
+      "pengayaan": "Betulkan rantai makanan baharu yang mengandungi anak panah songsang.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-045",
+      "title": "Pengeluar dan pengguna",
+      "pak21": "Pengelasan berpasangan",
+      "emk": "Sains dan teknologi: pengeluar dan pengguna",
+      "pemulihan": "Kelaskan dua kad tumbuhan dan tiga kad haiwan menggunakan label panduan.",
+      "pengayaan": "Tandakan pengeluar dan pengguna dalam dua rantai tambahan serta terangkan sebab.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-046",
+      "title": "Hubungan makanan dengan fotosintesis",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: fotosintesis",
+      "pemulihan": "Susun kad Matahari, tumbuhan dan ulat dengan arah anak panah berpandukan contoh.",
+      "pengayaan": "Betulkan rajah yang melangkau pengeluar dan jelaskan perpindahan tenaga.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-047",
+      "title": "Pengukuhan aliran tenaga daripada pengeluar",
+      "pak21": "Semakan pasangan",
+      "emk": "Sains dan teknologi: tenaga cahaya",
+      "pemulihan": "Beri rantai daun–ulat–burung dengan satu anak panah contoh.",
+      "pengayaan": "Lakar rantai baharu dan bezakan sumber tenaga cahaya daripada pengeluar.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-048",
+      "title": "Maksud siratan makanan",
+      "pak21": "Peta visual kolaboratif",
+      "emk": "Sains dan teknologi: hubungan makanan",
+      "pemulihan": "Gabungkan dua rantai yang berkongsi satu organisma menggunakan kad.",
+      "pengayaan": "Tambah satu rantai yang berkaitan dan semak arah anak panah.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-049",
+      "title": "Membina siratan makanan di habitat berbeza",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Kelestarian alam sekitar: habitat",
+      "pemulihan": "Sediakan dua set kad berasingan untuk sawah dan kolam dengan satu rantai contoh.",
+      "pengayaan": "Bina dua siratan yang lebih bercabang tanpa mencampurkan habitat dan jelaskan hubungan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-050",
+      "title": "Meramal kesan perubahan populasi",
+      "pak21": "Think-Pair-Share",
+      "emk": "Kelestarian alam sekitar: keseimbangan ekosistem",
+      "pemulihan": "Jejak satu anak panah daripada belalang kepada pemangsanya.",
+      "pengayaan": "Bandingkan ramalan dua perubahan populasi dan nyatakan andaian yang digunakan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-051",
+      "title": "Penerangan pemerhatian hubungan makanan",
+      "pak21": "Pembentangan peta siratan",
+      "emk": "Bahasa: penerangan berasaskan bukti",
+      "pemulihan": "Beri peta siratan separa lengkap dengan kad organisma sawah.",
+      "pengayaan": "Bentangkan ramalan kesan perubahan satu populasi dan pertahankan alasan berdasarkan peta.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    }
+  ]
+}

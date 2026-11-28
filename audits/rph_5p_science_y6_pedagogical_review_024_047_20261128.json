@@ -1,0 +1,355 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 6,
+  "source": {
+    "path": "audits/rph_5p_science_y6_native_024_047_20261128.json",
+    "blob": "3630b611bd805e3f9dc9b6ba3d8eaa73c65da1f4"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y6_support_024_047_20261128.json",
+    "blob": "f2f5470f4cce5004417f06a30e6784820cae1930"
+  },
+  "count": 24,
+  "follow_up_required": 16,
+  "policy": "Review embedded verified SP, original PBD, phases, materials, safety and support. Proposed refinements not source facts; original textbook page and species-status verification outstanding where flagged. No independent teacher/panitia signoff. Preserve locked source and retest print adaptations.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-024",
+      "teaching_order": 29,
+      "sp": [
+        "5.1.1"
+      ],
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menyatakan maksud pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "minutes": 60,
+      "review_basis": "Pengelasan empat tindakan dan dua takrif membezakan penjagaan hidupan daripada pemulihan habitat/populasi.",
+      "implementation_note": "Kekalkan pembetulan paparan unit/tajuk yang telah diuji; contoh tindakan mesti jelas dan berpandukan kad sumber.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-025",
+      "teaching_order": 30,
+      "sp": [
+        "5.1.2"
+      ],
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjana idea cara pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "minutes": 30,
+      "review_basis": "Cadangan bagi haiwan dan tumbuhan serta semakan kebolehlaksanaan menepati penjanaan idea.",
+      "implementation_note": "Pastikan pelan merangkumi pemeliharaan dan pemuliharaan, bukan hanya dua langkah perlindungan; gunakan foto sumber.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-026",
+      "teaching_order": 31,
+      "sp": [
+        "5.1.3"
+      ],
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan yang pupus.",
+      "minutes": 60,
+      "review_basis": "Dua contoh sejarah dan pembezaan pupus daripada terancam menepati SP.",
+      "implementation_note": "BBM hanya menyebut dodo dan mamot; tambah kad perbandingan terancam daripada edisi sumber yang disahkan, tanpa mengandaikan status terkini.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-027",
+      "teaching_order": 32,
+      "sp": [
+        "5.1.4"
+      ],
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan dan tumbuhan yang diancam kepupusan.",
+      "minutes": 30,
+      "review_basis": "Poster satu haiwan dan satu tumbuhan dengan ancaman serta edisi rujukan menyokong SP.",
+      "implementation_note": "Sahkan spesies khusus dan status dalam edisi sumber; nama umum penyu atau periuk kera tidak membuktikan semua spesies terancam. Tiada dakwaan status semasa.",
+      "status": "SOURCE_STATUS_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-028",
+      "teaching_order": 33,
+      "sp": [
+        "5.1.5"
+      ],
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan melalui contoh faktor yang menyebabkan kepupusan haiwan dan tumbuhan.",
+      "minutes": 60,
+      "review_basis": "Peta tiga rantaian penebangan, pemburuan dan pencemaran menguji faktor ancaman kepupusan.",
+      "implementation_note": "Bezakan faktor ancaman daripada kepupusan yang sudah berlaku; tajuk asal dikekalkan sebagai identiti, paparan perlu selaras dengan SP.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-029",
+      "teaching_order": 34,
+      "sp": [
+        "5.1.6"
+      ],
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menaakul kepentingan pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "minutes": 30,
+      "review_basis": "Graf populasi rekaan dan ramalan jika program dihentikan menyokong idea kesan pemuliharaan.",
+      "implementation_note": "Nyatakan data rekaan dan andaian; perbandingan sebelum/selepas sahaja tidak membuktikan sebab. Tambah kesan pemeliharaan dalam senario, bukan hanya pemuliharaan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-030",
+      "teaching_order": 35,
+      "sp": [
+        "5.1.7"
+      ],
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan pemerhatian tentang pemeliharaan dan pemuliharaan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 60,
+      "review_basis": "Peta masalah, punca, tindakan dan kesan serta penerangan memenuhi komunikasi kreatif.",
+      "implementation_note": "PBD asal hanya menyebut tindakan pemeliharaan; pastikan aktiviti menunjukkan kedua-dua jenis tindakan tanpa mengubah evidens asal.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-031",
+      "teaching_order": 36,
+      "sp": [
+        "6.1.1"
+      ],
+      "title": "Menyatakan maksud daya dengan menjalankan aktiviti.",
+      "minutes": 30,
+      "review_basis": "Demonstrasi tarikan/tolakan objek ringan dan dua lakaran arah menepati SP.",
+      "implementation_note": "Tambah kad foto atau gambar tindakan pada BBM; gunakan objek ringan di ruang selamat.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-032",
+      "teaching_order": 37,
+      "sp": [
+        "6.1.2"
+      ],
+      "title": "Menjelas dengan contoh kesan daya terhadap objek.",
+      "minutes": 30,
+      "review_basis": "Lima kesan daya dan dua contoh bersumber pemerhatian menepati SP.",
+      "implementation_note": "Pastikan demonstrasi benar-benar menunjukkan mula, henti, kelajuan, arah dan bentuk; bola lembut dan span sesuai, jangan halakan bola kepada rakan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-033",
+      "teaching_order": 38,
+      "sp": [
+        "6.1.3"
+      ],
+      "title": "Menjelaskan pemerhatian tentang daya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Susunan gambar dan lakaran anak panah dengan dua pemerhatian menyokong komunikasi kesan daya.",
+      "implementation_note": "Bezakan anak panah daya daripada arah pergerakan apabila tidak sama; gunakan gambar sumber.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-034",
+      "teaching_order": 39,
+      "sp": [
+        "6.2.1"
+      ],
+      "title": "Menyatakan maksud daya geseran.",
+      "minutes": 30,
+      "review_basis": "Perbandingan papan dan kain serta maksud geseran berasaskan permukaan bersentuhan sesuai dengan SP.",
+      "implementation_note": "Rumuskan daya geseran menentang gerakan relatif atau kecenderungan gerakan; elakkan generalisasi bahawa geseran sentiasa bertentangan arah gerak objek.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-035",
+      "teaching_order": 40,
+      "sp": [
+        "6.2.2"
+      ],
+      "title": "Kesan daya geseran",
+      "minutes": 60,
+      "review_basis": "Jadual manfaat dan kelemahan serta kesan cengkaman/haus menepati SP.",
+      "implementation_note": "Gunakan gambar dan contoh model selamat; jangan uji kasut/tayar di jalan raya atau permukaan licin.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-036",
+      "teaching_order": 41,
+      "sp": [
+        "6.2.3"
+      ],
+      "title": "Eksperimen faktor yang mempengaruhi daya geseran",
+      "minutes": 30,
+      "review_basis": "Dua stesen neraca spring mengasingkan jenis permukaan dan jisim; evidens dalam N sepadan sumber.",
+      "implementation_note": "Gunakan neraca spring sesuai julat, tarikan mendatar pada kelajuan sekata, pemberat ringan stabil dan bacaan ulangan; guru menyelia. Kekalkan override sumber, bukan jarak troli.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-037",
+      "teaching_order": 42,
+      "sp": [
+        "6.2.4"
+      ],
+      "title": "Menjana idea untuk meningkatkan atau mengurangkan daya geseran bagi menyelesaikan masalah dalam kehidupan harian.",
+      "minutes": 30,
+      "review_basis": "Dua penyelesaian harian bagi menambah/mengurangkan geseran dan alasan menepati SP.",
+      "implementation_note": "Aktiviti kad gambar sahaja; jangan sapu pelincir pada lantai atau jalankan ujian jalan raya.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-038",
+      "teaching_order": 43,
+      "sp": [
+        "6.2.5"
+      ],
+      "title": "Menjelaskan pemerhatian tentang daya geseran melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 60,
+      "review_basis": "Graf jarak troli dalam keadaan setara menyokong komunikasi pemerhatian geseran.",
+      "implementation_note": "Bezakan data jarak troli sebagai set data berasingan daripada eksperimen neraca spring terdahulu; jarak bukan ukuran langsung daya geseran.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-039",
+      "teaching_order": 44,
+      "sp": [
+        "6.3.1"
+      ],
+      "title": "Memerihalkan kewujudan tekanan udara di sekeliling dengan menjalankan aktiviti.",
+      "minutes": 30,
+      "review_basis": "Video cawan terbalik, dua pemerhatian dan rajah arah tekanan menyokong penerangan.",
+      "implementation_note": "SP meminta menjalankan aktiviti; video sahaja tidak menggantikan aktiviti pemerhatian langsung. Semak pilihan demonstrasi guru menggunakan bekas plastik dan dulang, tanpa vakum kuat; kekalkan evidens asal.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-040",
+      "teaching_order": 45,
+      "sp": [
+        "6.3.2"
+      ],
+      "title": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian.",
+      "minutes": 60,
+      "review_basis": "Graf tiga data altitud dan trend tekanan menepati hubungan antara pemboleh ubah.",
+      "implementation_note": "Label data rekaan serta unit altitud/tekanan pada jadual dan graf; jangan gambarkan anggaran sebagai bacaan sebenar.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-041",
+      "teaching_order": 46,
+      "sp": [
+        "6.3.3"
+      ],
+      "title": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian.",
+      "minutes": 30,
+      "review_basis": "Model picagari tanpa jarum dan dua aplikasi menjelaskan perbezaan tekanan.",
+      "implementation_note": "Tambah foto cawan sedutan pada BBM jika digunakan; picagari tanpa jarum, jangan tutup atau tekan dengan kuat.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-042",
+      "teaching_order": 47,
+      "sp": [
+        "6.3.4"
+      ],
+      "title": "Menjelaskan pemerhatian tentang tekanan udara melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 60,
+      "review_basis": "Lakaran dua susunan serta pembetulan ramalan berdasarkan bukti memenuhi komunikasi.",
+      "implementation_note": "Kad eksperimen botol perlu menyatakan keadaan dan pemerhatian yang sebenar; jangan menganggap tekanan sahaja menerangkan setiap susunan tanpa konteks.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-043",
+      "teaching_order": 48,
+      "sp": [
+        "7.1.1"
+      ],
+      "title": "Unit bagi kelajuan",
+      "minutes": 30,
+      "review_basis": "Padanan km/j, m/s dan cm/s menguji unit kelajuan berdasarkan skala.",
+      "implementation_note": "Nyatakan setiap unit ialah unit jarak per unit masa; unit lain yang setara tidak semestinya salah jika sesuai.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-044",
+      "teaching_order": 49,
+      "sp": [
+        "7.1.2"
+      ],
+      "title": "Eksperimen hubungan kelajuan, jarak dan masa",
+      "minutes": 60,
+      "review_basis": "Ulangan troli jarak tetap dan data perbandingan tambahan menyokong dua hubungan kelajuan.",
+      "implementation_note": "Bezakan ukuran sesi sendiri daripada data yang diberi; untuk masa tetap, gunakan bukti jarak pada sela sama. Tambah jadual/graf pada BBM dan kawal unit.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-045",
+      "teaching_order": 50,
+      "sp": [
+        "7.1.3"
+      ],
+      "title": "Menentukan kelajuan, jarak atau masa menggunakan formula.",
+      "minutes": 30,
+      "review_basis": "Tiga jenis pengiraan dengan langkah, penukaran rumus dan unit memenuhi penyelesaian masalah.",
+      "implementation_note": "Pastikan jarak dan masa dalam unit serasi, masa bukan sifar; kalkulator pilihan sahaja.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-046",
+      "teaching_order": 51,
+      "sp": [
+        "7.1.4"
+      ],
+      "title": "Definisi secara operasi melalui aktiviti",
+      "minutes": 60,
+      "review_basis": "Takrif melalui ukuran jarak dan masa serta dua kiraan memberi evidens operasi.",
+      "implementation_note": "Aktiviti semasa hanya menggunakan jadual rekaan walaupun SP meminta menjalankan aktiviti; sediakan pengukuran troli selamat di trek bertanda atau nyatakan penggunaan data sebagai pengukuhan, bukan amali lengkap.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-047",
+      "teaching_order": 52,
+      "sp": [
+        "7.1.5"
+      ],
+      "title": "Menjelaskan pemerhatian tentang kelajuan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Tiga titik graf jarak-masa dan dua tafsiran berasaskan paksi memenuhi komunikasi.",
+      "implementation_note": "Jelaskan graf ialah jarak terkumpul melawan masa; kecerunan mewakili kelajuan pada sela yang dibandingkan. Jangan kelirukan dengan graf kelajuan-masa.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}

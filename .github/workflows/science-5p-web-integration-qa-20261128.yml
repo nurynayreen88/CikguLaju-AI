@@ -1,0 +1,122 @@
+name: Science 5P isolated Web integration QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/science_5p_*_20261128.py'
+      - 'tools/audit_science_5p_personalized_downloads_20261128.py'
+      - 'tools/audit_science_5p_pinned_native_catalogue_20261128.py'
+      - 'tests/test_science_5p_web_integration_qa_20261128.py'
+      - 'tools/audit_science_native_5p_documents_20261128.py'
+      - 'tools/audit_science_5p_native_pdf_20261128.py'
+      - 'web/science_5p_candidate_web.py'
+      - 'web/science_5p_release.py'
+      - 'tests/test_science_5p_release_gate_20261128.py'
+      - 'audits/rph_5p_science_y5_y6_release_manifest_20261128.json'
+      - 'tests/test_science_5p_candidate_web.py'
+      - 'tests/test_science_5p_candidate_ui.cjs'
+      - 'web_v1_static_preview/index.html'
+      - 'web/rph_delivery_quota.py'
+      - 'web/rph_5p_v5_layout.py'
+      - 'audits/rph_5p_science_y*_native_*_20261128.json'
+      - 'audits/rph_5p_science_y*_support_*_20261128.json'
+      - 'audits/rph_5p_science_y*_print_corrections_20261128.json'
+      - 'audits/rph_5p_science_y*_pedagogical_review_complete_20261128.json'
+      - '.github/workflows/science-5p-web-integration-qa-20261128.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  original-catalogue:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: 207317c6d092561e2ffd07a6d2fb4ef604797030
+          path: native_source
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install flask python-docx pymupdf pypdf reportlab
+      - name: Verify original pinned Telegram endpoint catalogue without network
+        run: PYTHONPATH=. python tools/audit_science_5p_pinned_native_catalogue_20261128.py --native-root native_source --out qa_original_catalogue
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-5p-original-catalogue-qa
+          path: qa_original_catalogue/
+          retention-days: 7
+  personalized-205:
+    needs: original-catalogue
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [5, 6]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: science-5p-original-catalogue-qa
+          path: qa_original_catalogue
+      - run: python -m pip install flask python-docx pymupdf
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice-writer
+      - name: Test every draft download with original catalogue and personalized Word pagination
+        run: PYTHONPATH=. python tools/audit_science_5p_personalized_downloads_20261128.py --year ${{ matrix.year }} --out qa_personalized_${{ matrix.year }} --native-catalogue qa_original_catalogue/catalogue_y${{ matrix.year }}.json --check-word-pages
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-5p-personalized-y${{ matrix.year }}-report
+          path: qa_personalized_${{ matrix.year }}/report.json
+          retention-days: 7
+  published-205:
+    needs: original-catalogue
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [5, 6]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: science-5p-original-catalogue-qa
+          path: qa_original_catalogue
+      - run: python -m pip install flask python-docx pymupdf
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice-writer
+      - name: Test all reviewed-route downloads using simulated approvals and signed test session
+        run: PYTHONPATH=. python tools/audit_science_5p_personalized_downloads_20261128.py --year ${{ matrix.year }} --out qa_published_${{ matrix.year }} --native-catalogue qa_original_catalogue/catalogue_y${{ matrix.year }}.json --check-word-pages --published
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-5p-published-y${{ matrix.year }}-report
+          path: qa_published_${{ matrix.year }}/report.json
+          retention-days: 7
+  isolated-web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install flask python-docx pymupdf
+      - name: Mocked native catalogue and quota integration checks
+        run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_web_integration_qa_20261128.py -v
+      - name: Validate all 205 release records with default denial
+        run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_release_gate_20261128.py -v
+      - name: Signed-session candidate route and catalogue drift tests
+        run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_candidate_web.py -v
+      - name: Candidate browser selection and download regression
+        run: node tests/test_science_5p_candidate_ui.cjs

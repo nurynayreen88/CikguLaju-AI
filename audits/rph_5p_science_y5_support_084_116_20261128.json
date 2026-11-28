@@ -1,0 +1,343 @@
+{
+  "year": 5,
+  "status": "PROPOSED_ADDITIONS_NOT_SOURCE_FIELDS",
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y5_native_084_116_20261128.json",
+      "blob": "d41b73977b113344f838d6680813dd4edb7970db"
+    }
+  ],
+  "policy": "New pedagogical suggestions based on exact 5P draft activities, not original source fields or academic approval. No runtime integration or release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-084",
+      "title": "Ciri objek yang berkarat",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: pemerhatian bahan",
+      "pemulihan": "Beri dua foto karat dengan pilihan warna dan tekstur untuk dipadankan.",
+      "pengayaan": "Bandingkan foto karat dengan cat perang dan jelaskan batas bukti visual.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-085",
+      "title": "Bahan yang boleh berkarat",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Sains dan teknologi: sifat bahan",
+      "pemulihan": "Asingkan empat kad bahan kepada besi dan bukan besi.",
+      "pengayaan": "Ramalkan pengaratan dua objek tambahan berdasarkan bahan, bukan warna.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-086",
+      "title": "Faktor yang menyebabkan pengaratan",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Nilai murni: jujur merekod data",
+      "pemulihan": "Beri jadual keadaan awal dengan ruang pemboleh ubah dan hipotesis berpandu.",
+      "pengayaan": "Terangkan sebab setiap kawalan diperlukan serta rancang pemerhatian susulan tanpa mereka hasil.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-087",
+      "title": "Pengukuhan tafsiran ujian pengaratan",
+      "pak21": "Perbincangan berasaskan data",
+      "emk": "Sains dan teknologi: tafsiran penyiasatan",
+      "pemulihan": "Padankan foto bertarikh dengan baris set kawalan dalam jadual.",
+      "pengayaan": "Bandingkan dua pasangan set dan pertahankan kesimpulan tentang air serta oksigen menggunakan rekod.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-088",
+      "title": "Cara mencegah pengaratan",
+      "pak21": "Padanan kad berpasangan",
+      "emk": "Sains dan teknologi: perlindungan bahan",
+      "pemulihan": "Padankan gambar pagar bercat dan paku bersalut minyak dengan fungsi salutan.",
+      "pengayaan": "Pilih kaedah bagi dua objek dalam keadaan berlainan dan jelaskan sebab.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-089",
+      "title": "Kepentingan mencegah pengaratan",
+      "pak21": "Penyelesaian masalah kumpulan",
+      "emk": "Kelestarian alam sekitar: penyelenggaraan",
+      "pemulihan": "Padankan gambar kerosakan dengan kesan terhadap keselamatan atau jangka hayat.",
+      "pengayaan": "Bina cadangan keutamaan penyelenggaraan sekolah rekaan berdasarkan risiko kerosakan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-090",
+      "title": "Penerangan pemerhatian pengaratan",
+      "pak21": "Pembentangan jadual",
+      "emk": "Bahasa: rumusan berasaskan pemerhatian",
+      "pemulihan": "Lengkapkan jadual paku kering dan basah menggunakan foto yang disediakan.",
+      "pengayaan": "Terangkan satu dapatan serta kaedah pencegahan yang berkaitan dengan bukti.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-091",
+      "title": "Tiga keadaan jirim",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Sains dan teknologi: keadaan jirim",
+      "pemulihan": "Padankan kad batu, air dan udara dengan tiga kategori.",
+      "pengayaan": "Kelaskan enam contoh tambahan dan nyatakan sifat yang menyokong pilihan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-092",
+      "title": "Pengelasan bahan mengikut keadaan jirim",
+      "pak21": "Perbincangan pasangan",
+      "emk": "Sains dan teknologi: sifat jirim",
+      "pemulihan": "Beri jadual kategori dengan satu contoh bagi setiap keadaan.",
+      "pengayaan": "Jelaskan perubahan pengelasan air selepas pembekuan berdasarkan sifatnya.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-093",
+      "title": "Pengukuhan pengelasan objek baharu",
+      "pak21": "Think-Pair-Share",
+      "emk": "Bahasa: istilah keadaan jirim",
+      "pemulihan": "Padankan batu, minyak dan udara dengan label pepejal, cecair dan gas.",
+      "pengayaan": "Jelaskan perbezaan kabus bertitis halus daripada wap air yang tidak kelihatan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-094",
+      "title": "Sifat pepejal, cecair dan gas",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Sains dan teknologi: bentuk dan isi padu",
+      "pemulihan": "Beri jadual berpandu untuk mencatat perubahan bentuk blok dan air.",
+      "pengayaan": "Bandingkan tiga keadaan jirim berdasarkan bentuk serta isi padu daripada pemerhatian.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-095",
+      "title": "Tiga keadaan air",
+      "pak21": "Pembelajaran berpasangan",
+      "emk": "Sains dan teknologi: kondensasi",
+      "pemulihan": "Padankan gambar ais, air dan model wap air dengan label keadaan.",
+      "pengayaan": "Terangkan pembentukan titisan di luar bekas sejuk menggunakan bukti pemerhatian.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-096",
+      "title": "Penerangan pemerhatian keadaan jirim",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Kreativiti dan inovasi: peta konsep",
+      "pemulihan": "Lengkapkan peta tiga keadaan dengan kad contoh dan sifat.",
+      "pengayaan": "Bina peta konsep sendiri serta jelaskan dua perbezaan sifat.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-097",
+      "title": "Proses perubahan keadaan air",
+      "pak21": "Inkuiri stesen",
+      "emk": "Sains dan teknologi: perubahan keadaan air",
+      "pemulihan": "Padankan kad ais mencair dan titisan dengan nama proses berpandu.",
+      "pengayaan": "Lengkapkan lima proses dan bezakan bukti langsung daripada rakaman guru.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-098",
+      "title": "Pengukuhan menamakan perubahan keadaan air",
+      "pak21": "Susun kad berpasangan",
+      "emk": "Bahasa: istilah proses perubahan",
+      "pemulihan": "Beri rajah tiga keadaan air dengan pilihan nama proses.",
+      "pengayaan": "Terangkan perbezaan penyejatan dan pendidihan serta arah perubahan setiap proses.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-099",
+      "title": "Perubahan keadaan air dan pemindahan haba",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Sains dan teknologi: pemindahan haba",
+      "pemulihan": "Kelaskan peleburan dan pembekuan menggunakan dua anak panah haba.",
+      "pengayaan": "Kelaskan kelima-lima proses dan huraikan satu sebab berdasarkan pemerhatian.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-100",
+      "title": "Pembentukan awan dan hujan",
+      "pak21": "Peta visual kolaboratif",
+      "emk": "Kelestarian alam sekitar: kitar air",
+      "pemulihan": "Susun kad laut, awan dan hujan dengan anak panah panduan.",
+      "pengayaan": "Lakar kitar air lengkap dan jelaskan peranan haba dalam dua proses.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-101",
+      "title": "Lakaran dan penerangan perubahan keadaan air",
+      "pak21": "Pembentangan lakaran",
+      "emk": "Kreativiti dan inovasi: rajah perubahan air",
+      "pemulihan": "Beri rajah ais, air dan wap air dengan label proses pilihan.",
+      "pengayaan": "Jelaskan kaitan satu perubahan dengan kitar air dan tambah pendidihan pada rajah.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-102",
+      "title": "Cahaya Bulan yang dipantulkan",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: pantulan cahaya",
+      "pemulihan": "Padankan model Matahari dan Bulan dengan label sumber dan pemantul.",
+      "pengayaan": "Lakar arah cahaya yang dipantulkan serta bezakan Bulan daripada bintang.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-103",
+      "title": "Putaran dan peredaran Bulan",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: model astronomi",
+      "pemulihan": "Gunakan bola bertanda titik untuk menjejak putaran dan peredaran.",
+      "pengayaan": "Jelaskan hubungan tempoh dua gerakan dan sebab wajah Bulan hampir sama menghadap Bumi.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-104",
+      "title": "Pengukuhan arah dan tempoh gerakan Bulan",
+      "pak21": "Semakan pasangan",
+      "emk": "Sains dan teknologi: arah dan tempoh gerakan",
+      "pemulihan": "Beri dua lakaran dengan anak panah putaran dan peredaran berpandu.",
+      "pengayaan": "Bezakan tempoh sekitar 27 hari relatif bintang daripada tempoh bulan Qamari.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-105",
+      "title": "Urutan fasa Bulan dan takwim Qamari",
+      "pak21": "Susun kad kolaboratif",
+      "emk": "Sains dan teknologi: fasa Bulan",
+      "pemulihan": "Susun lima kad fasa utama menggunakan contoh urutan.",
+      "pengayaan": "Padankan fasa dengan anggaran hari Qamari dan jelaskan perubahan kedudukan relatif.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-106",
+      "title": "Pemerhatian dan lakaran fasa Bulan",
+      "pak21": "Pembentangan garis masa",
+      "emk": "Kreativiti dan inovasi: lakaran fasa",
+      "pemulihan": "Beri garis masa dengan empat ruang dan kad bentuk Bulan.",
+      "pengayaan": "Lakar urutan sendiri dan betulkan dua kedudukan fasa yang tertukar.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-107",
+      "title": "Pengenalpastian corak buruj",
+      "pak21": "Padanan peta berpasangan",
+      "emk": "Sains dan teknologi: corak buruj",
+      "pemulihan": "Padankan tiga corak titik pada peta sumber dengan kad nama.",
+      "pengayaan": "Kenal pasti buruj daripada peta yang diputar dan jelaskan petunjuk coraknya.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-108",
+      "title": "Kegunaan buruj",
+      "pak21": "Perbincangan kes pasangan",
+      "emk": "Sains dan teknologi: aplikasi astronomi",
+      "pemulihan": "Padankan kad buruj dengan contoh kegunaan dalam bahan sumber.",
+      "pengayaan": "Jelaskan kegunaan tradisional buruj bagi dua situasi serta had lokasi dan masa.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-109",
+      "title": "Pemerhatian dan lakaran buruj",
+      "pak21": "Pembentangan lakaran",
+      "emk": "Kreativiti dan inovasi: peta bintang",
+      "pemulihan": "Salin satu corak daripada peta sah berpandukan titik bernombor.",
+      "pengayaan": "Lakar dua buruj dengan kedudukan relatif tepat dan jelaskan satu kegunaan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-110",
+      "title": "Pengukuhan mengenal buruj daripada lakaran",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Nilai murni: ketelitian",
+      "pemulihan": "Sediakan peta Belantik dengan tiga bintang sebaris ditandakan.",
+      "pengayaan": "Kenal pasti corak daripada orientasi lain dan jelaskan ciri yang tidak berubah.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-111",
+      "title": "Kegunaan alat di sekeliling",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: fungsi alat",
+      "pemulihan": "Padankan tiga gambar alat dengan kad tugas harian.",
+      "pengayaan": "Bandingkan dua alat alternatif dan beri sebab pemilihan bagi satu tugasan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-112",
+      "title": "Gabungan mesin ringkas pada alat",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: mesin ringkas",
+      "pemulihan": "Padankan label tuas dan baji pada rajah alat yang selamat.",
+      "pengayaan": "Lakar gabungan dua mesin ringkas serta jelaskan fungsi setiap komponen.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-113",
+      "title": "Kepentingan gabungan mesin ringkas",
+      "pak21": "Penyelesaian masalah kumpulan",
+      "emk": "Kreativiti dan inovasi: fungsi komponen",
+      "pemulihan": "Beri kad komponen dan fungsi pada satu model alat.",
+      "pengayaan": "Cadangkan pembaikan model kertas apabila satu komponen tiada dan jelaskan sebab.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-114",
+      "title": "Ciri penciptaan alat lestari",
+      "pak21": "Perbincangan reka bentuk",
+      "emk": "Kelestarian alam sekitar: penggunaan sumber",
+      "pemulihan": "Bandingkan dua gambar produk melalui kad tahan lama dan mudah dibaiki.",
+      "pengayaan": "Lakar dua penambahbaikan reka bentuk dengan justifikasi pengurangan pembaziran.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-115",
+      "title": "Penerangan fungsi alat harian",
+      "pak21": "Pembentangan lakaran",
+      "emk": "Kreativiti dan inovasi: reka bentuk lestari",
+      "pemulihan": "Lengkapkan rajah alat dengan dua pilihan label mesin ringkas.",
+      "pengayaan": "Jelaskan kerjasama komponen dan cadangkan pengubahsuaian lestari.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-116",
+      "title": "Pengukuhan lakaran fungsi alat baharu",
+      "pak21": "Semakan pasangan",
+      "emk": "Sains dan teknologi: tuas dan baji",
+      "pemulihan": "Tandakan pangsi dan baji pada gambar gunting tertutup.",
+      "pengayaan": "Lakar fungsi kedua-dua komponen serta cadangkan satu ciri mesra penyelenggaraan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    }
+  ]
+}

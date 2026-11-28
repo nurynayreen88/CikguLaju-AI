@@ -1,0 +1,1000 @@
+{
+  "status": "DEPLOYED_SOURCE_ADAPTED_DRAFT_NOT_APPROVED",
+  "year": 6,
+  "source": {
+    "bot_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+    "agihan_blob": "58661f6b6b4fcb10ba7945d67d0b64e5d207d7d5",
+    "bank_part1_blob": "1fd967d9f99200781586351c522cb03d417c9345",
+    "bank_part2_blob": "a50e928e4018de62456e7107ab1eb1c82920ce40",
+    "export_blob": "9c0b74c4d82f12ca3fe7cbd943d33211e624593c",
+    "dskp_blob": "3b1b9d043acb1350c032c91dd36c3102f17051f6",
+    "risk_blob": "651e78194fbd0b28f336fd031d7cf091834d0e31"
+  },
+  "policy": "Preserve native sequence and effective source PBD. Proposed phases require academic and document review; no release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-024",
+      "teaching_order": 29,
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menyatakan maksud pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "minutes": 60,
+      "textbook_pages": "75-76",
+      "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+      "sp": [
+        {
+          "code": "5.1.1",
+          "text": "Menyatakan maksud pemeliharaan dan pemuliharaan haiwan dan tumbuhan."
+        }
+      ],
+      "original": {
+        "objective": "Dua takrif serta dua contoh tindakan pemeliharaan/pemuliharaan",
+        "materials": "Kad kawasan perlindungan dan pemulihan habitat",
+        "pbd": "Dua takrif serta dua contoh tindakan pemeliharaan/pemuliharaan",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "source_activity": {
+        "sp": "5.1.1",
+        "hook": "Kad gambar zoo perlindungan dan usaha pembiakan spesies terancam",
+        "teacher1": "membezakan pemeliharaan iaitu menjaga hidupan daripada pemuliharaan iaitu memulihkan populasi atau habitat",
+        "pupil1": "menyusun empat tindakan kepada dua kategori",
+        "teacher2": "memberi situasi hutan ditebang dan populasi haiwan berkurang",
+        "pupil2": "menulis takrif kedua-dua istilah dan satu contoh bagi setiap satu",
+        "pbd": "Dua takrif serta dua contoh tindakan pemeliharaan/pemuliharaan",
+        "materials": "Kad kawasan perlindungan dan pemulihan habitat",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "phases": {
+        "engagement": "Paparkan kad kawasan perlindungan dan pemulihan habitat; murid jangka tujuan tindakan.",
+        "exploration": "Kelaskan empat tindakan menjaga hidupan atau memulihkan habitat/populasi.",
+        "explanation": "Bezakan maksud pemeliharaan dengan pemuliharaan menggunakan contoh kad.",
+        "elaboration": "Pilih tindakan bagi situasi hutan ditebang dan populasi berkurang; berikan alasan.",
+        "evaluation": "Dua takrif serta dua contoh tindakan pemeliharaan/pemuliharaan"
+      },
+      "scope_note": "Label unit/tajuk asal mengandungi pemisahan teks dan pengulangan; dikekalkan sebagai identiti sumber, perlu semakan paparan. Status spesies ikut edisi sumber.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-025",
+      "teaching_order": 30,
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjana idea cara pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "minutes": 30,
+      "textbook_pages": "76-79",
+      "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+      "sp": [
+        {
+          "code": "5.1.2",
+          "text": "Menjana idea cara pemeliharaan dan pemuliharaan haiwan dan tumbuhan."
+        }
+      ],
+      "original": {
+        "objective": "Dua cadangan pemeliharaan dan pemuliharaan yang boleh dilaksanakan",
+        "materials": "Foto habitat dan templat pelan tindakan",
+        "pbd": "Dua cadangan pemeliharaan dan pemuliharaan yang boleh dilaksanakan",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "source_activity": {
+        "sp": "5.1.2",
+        "hook": "Gambar koridor hidupan liar, pusat benih dan taman negara",
+        "teacher1": "membimbing sumbang saran langkah perlindungan haiwan dan tumbuhan",
+        "pupil1": "mencipta dua cadangan berdasarkan masalah dalam gambar",
+        "teacher2": "menyoal kebolehlaksanaan langkah dan kesan terhadap biodiversiti",
+        "pupil2": "melukis pelan ringkas satu langkah bagi haiwan serta satu tumbuhan",
+        "pbd": "Dua cadangan pemeliharaan dan pemuliharaan yang boleh dilaksanakan",
+        "materials": "Foto habitat dan templat pelan tindakan",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "phases": {
+        "engagement": "Paparkan foto koridor hidupan liar, pusat benih dan taman negara; murid kenal pasti masalah.",
+        "exploration": "Sumbang saran satu langkah untuk haiwan dan satu untuk tumbuhan berdasarkan gambar.",
+        "explanation": "Jelaskan kaitan tindakan dengan perlindungan atau pemulihan biodiversiti.",
+        "elaboration": "Lakar pelan tindakan ringkas dan semak kebolehlaksanaannya bersama rakan.",
+        "evaluation": "Dua cadangan pemeliharaan dan pemuliharaan yang boleh dilaksanakan"
+      },
+      "scope_note": "Label unit/tajuk asal mengandungi pemisahan teks dan pengulangan; dikekalkan sebagai identiti sumber, perlu semakan paparan. Status spesies ikut edisi sumber.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-026",
+      "teaching_order": 31,
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan yang pupus.",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "minutes": 60,
+      "textbook_pages": "68-69",
+      "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+      "sp": [
+        {
+          "code": "5.1.3",
+          "text": "Menjelas dengan contoh haiwan yang pupus."
+        }
+      ],
+      "original": {
+        "objective": "Dua contoh haiwan pupus dibezakan daripada haiwan terancam",
+        "materials": "Kad sejarah dodo dan mamot",
+        "pbd": "Dua contoh haiwan pupus dibezakan daripada haiwan terancam",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "source_activity": {
+        "sp": "5.1.3",
+        "hook": "Kolaj dodo dan mamot dengan tarikh sejarah ilustrasi",
+        "teacher1": "menjelaskan maksud pupus tanpa menyamakan haiwan terancam dengan telah pupus",
+        "pupil1": "menamakan dua haiwan yang telah pupus berdasarkan sumber",
+        "teacher2": "meminta murid membezakan kata pupus daripada terancam menggunakan kad haiwan",
+        "pupil2": "menulis dua contoh haiwan pupus serta bukti bahawa ia tidak lagi wujud",
+        "pbd": "Dua contoh haiwan pupus dibezakan daripada haiwan terancam",
+        "materials": "Kad sejarah dodo dan mamot",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "phases": {
+        "engagement": "Paparkan kad sejarah dodo dan mamot; murid nyatakan persamaan kedua-duanya.",
+        "exploration": "Kelaskan kad spesies mengikut maklumat sejarah pupus atau terancam dalam bahan sumber.",
+        "explanation": "Jelaskan maksud pupus dan bezakan daripada ancaman kepupusan.",
+        "elaboration": "Semak dua contoh pupus dengan bukti sumber; betulkan pengelasan yang salah.",
+        "evaluation": "Dua contoh haiwan pupus dibezakan daripada haiwan terancam"
+      },
+      "scope_note": "Label unit/tajuk asal mengandungi pemisahan teks dan pengulangan; dikekalkan sebagai identiti sumber, perlu semakan paparan. Status spesies ikut edisi sumber.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-027",
+      "teaching_order": 32,
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan dan tumbuhan yang diancam kepupusan.",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "minutes": 30,
+      "textbook_pages": "70-71",
+      "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+      "sp": [
+        {
+          "code": "5.1.4",
+          "text": "Menjelaskan melalui contoh haiwan dan tumbuhan yang mengalami ancaman kepupusan."
+        }
+      ],
+      "original": {
+        "objective": "Poster dua spesies terancam mengikut sumber dan sebab",
+        "materials": "Kad gambar spesies terancam dan nota edisi sumber",
+        "pbd": "Poster dua spesies terancam mengikut sumber dan sebab",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "source_activity": {
+        "sp": "5.1.4",
+        "hook": "Foto penyu, orang utan dan tumbuhan periuk kera",
+        "teacher1": "menerangkan contoh haiwan dan tumbuhan yang diancam kepupusan tanpa mendakwa status semasa tidak diperiksa",
+        "pupil1": "menyusun kad kategori tumbuhan atau haiwan terancam dalam sumber DSKP",
+        "teacher2": "meminta murid membina poster spesies dan ancaman berdasarkan sumber tertera",
+        "pupil2": "menulis dua contoh berserta satu ancaman setiap satu",
+        "pbd": "Poster dua spesies terancam mengikut sumber dan sebab",
+        "materials": "Kad gambar spesies terancam dan nota edisi sumber",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar penyu, orang utan dan periuk kera dalam edisi sumber; murid kenal pasti ancaman.",
+        "exploration": "Pilih contoh haiwan dan tumbuhan berpandukan kad sumber yang menyatakan statusnya.",
+        "explanation": "Terangkan satu ancaman kepada setiap contoh tanpa membuat dakwaan status semasa yang belum disahkan.",
+        "elaboration": "Bina poster dua spesies dengan ancaman dan nyatakan edisi sumber.",
+        "evaluation": "Poster dua spesies terancam mengikut sumber dan sebab"
+      },
+      "scope_note": "Label unit/tajuk asal mengandungi pemisahan teks dan pengulangan; dikekalkan sebagai identiti sumber, perlu semakan paparan. Status spesies ikut edisi sumber.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-028",
+      "teaching_order": 33,
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan melalui contoh faktor yang menyebabkan kepupusan haiwan dan tumbuhan.",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "minutes": 60,
+      "textbook_pages": "72-74",
+      "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+      "sp": [
+        {
+          "code": "5.1.5",
+          "text": "Memerihalkan faktor yang menyebabkan haiwan dan tumbuhan diancam kepupusan."
+        }
+      ],
+      "original": {
+        "objective": "Rantaian tiga faktor ancaman kepada populasi hidupan",
+        "materials": "Foto perubahan habitat dan kad aktiviti manusia",
+        "pbd": "Rantaian tiga faktor ancaman kepada populasi hidupan",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "source_activity": {
+        "sp": "5.1.5",
+        "hook": "Dua foto habitat dibuka dan pemerdagangan hidupan liar",
+        "teacher1": "membimbing peta punca ancaman termasuk penebangan pemburuan dan pencemaran",
+        "pupil1": "menghubungkan tiga punca dengan haiwan atau tumbuhan yang terjejas",
+        "teacher2": "meminta murid menjelaskan rantaian sebab-akibat bagi satu punca",
+        "pupil2": "menulis tiga faktor ancaman kepupusan dengan satu contoh kesan",
+        "pbd": "Rantaian tiga faktor ancaman kepada populasi hidupan",
+        "materials": "Foto perubahan habitat dan kad aktiviti manusia",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar perubahan habitat dan pemerdagangan hidupan liar; murid cadang punca ancaman.",
+        "exploration": "Padankan tiga punca dengan kesan terhadap hidupan menggunakan kad aktiviti manusia.",
+        "explanation": "Jelaskan rantaian sebab-akibat penebangan, pemburuan atau pencemaran.",
+        "elaboration": "Bina peta punca dan kesan bagi tiga faktor serta contoh hidupan yang terjejas.",
+        "evaluation": "Rantaian tiga faktor ancaman kepada populasi hidupan"
+      },
+      "scope_note": "Label unit/tajuk asal mengandungi pemisahan teks dan pengulangan; dikekalkan sebagai identiti sumber, perlu semakan paparan. Status spesies ikut edisi sumber.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-029",
+      "teaching_order": 34,
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menaakul kepentingan pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "minutes": 30,
+      "textbook_pages": "80-81",
+      "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+      "sp": [
+        {
+          "code": "5.1.6",
+          "text": "Menjana idea tentang kesan pemeliharaan dan pemuliharaan terhadap haiwan dan tumbuhan yang mengalami ancaman kepupusan."
+        }
+      ],
+      "original": {
+        "objective": "Graf bertafsir dengan sebab kesan pemuliharaan kepada spesies",
+        "materials": "Graf populasi rekaan dan kad program pemuliharaan",
+        "pbd": "Graf bertafsir dengan sebab kesan pemuliharaan kepada spesies",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "source_activity": {
+        "sp": "5.1.6",
+        "hook": "Graf populasi spesies sebelum dan selepas program habitat pulih",
+        "teacher1": "membimbing analisis data angka rekaan bagi kesan langkah pemuliharaan",
+        "pupil1": "membanding trend graf populasi dan menamakan tindakan",
+        "teacher2": "meminta murid meramal kesan jika langkah itu dihentikan",
+        "pupil2": "mencatat satu kesimpulan tentang pemeliharaan disokong dua nilai data",
+        "pbd": "Graf bertafsir dengan sebab kesan pemuliharaan kepada spesies",
+        "materials": "Graf populasi rekaan dan kad program pemuliharaan",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "phases": {
+        "engagement": "Paparkan graf populasi rekaan sebelum dan selepas program habitat pulih; murid kenal pasti trend.",
+        "exploration": "Bandingkan dua nilai graf dan padankan perubahan dengan tindakan dalam senario.",
+        "explanation": "Jelaskan kepentingan melindungi habitat dan memulihkan populasi berdasarkan data rekaan.",
+        "elaboration": "Ramalkan kesan jika program dihentikan; bezakan ramalan daripada dapatan graf.",
+        "evaluation": "Graf bertafsir dengan sebab kesan pemuliharaan kepada spesies"
+      },
+      "scope_note": "Label unit/tajuk asal mengandungi pemisahan teks dan pengulangan; dikekalkan sebagai identiti sumber, perlu semakan paparan. Status spesies ikut edisi sumber.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-030",
+      "teaching_order": 35,
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan pemerhatian tentang pemeliharaan dan pemuliharaan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "minutes": 60,
+      "textbook_pages": "82-83",
+      "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+      "sp": [
+        {
+          "code": "5.1.7",
+          "text": "Menjelaskan pemerhatian tentang pemeliharaan dan pemuliharaan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran dan penjelasan dua tindakan pemeliharaan disokong sebab",
+        "materials": "Templat peta idea dan foto spesies",
+        "pbd": "Lakaran dan penjelasan dua tindakan pemeliharaan disokong sebab",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "source_activity": {
+        "sp": "5.1.7",
+        "hook": "Peta idea hidupan terancam dan langkah melindungi habitat",
+        "teacher1": "membimbing lakaran masalah, punca, tindakan dan kesan dalam empat petak",
+        "pupil1": "melengkapkan peta visual bagi satu hidupan haiwan atau tumbuhan",
+        "teacher2": "mengurus perkongsian lisan kumpulan secara berpandukan data sumber",
+        "pupil2": "menjelaskan pemerhatian dan dua cara menjaga kelestarian secara individu",
+        "pbd": "Lakaran dan penjelasan dua tindakan pemeliharaan disokong sebab",
+        "materials": "Templat peta idea dan foto spesies",
+        "safety": "Pemuliharaan: semak status kepupusan spesies pada edisi sumber tepat"
+      },
+      "phases": {
+        "engagement": "Paparkan peta idea hidupan terancam; murid pilih satu masalah daripada foto.",
+        "exploration": "Isi empat petak masalah, punca, tindakan dan kesan bagi satu hidupan.",
+        "explanation": "Bentangkan pemerhatian berasaskan foto dan maklumat sumber.",
+        "elaboration": "Baiki peta dan tambah dua tindakan kelestarian berserta sebab selepas soal jawab.",
+        "evaluation": "Lakaran dan penjelasan dua tindakan pemeliharaan disokong sebab"
+      },
+      "scope_note": "Label unit/tajuk asal mengandungi pemisahan teks dan pengulangan; dikekalkan sebagai identiti sumber, perlu semakan paparan. Status spesies ikut edisi sumber.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-031",
+      "teaching_order": 36,
+      "title": "Menyatakan maksud daya dengan menjalankan aktiviti.",
+      "unit": "Unit 6: Daya",
+      "minutes": 30,
+      "textbook_pages": "88-89",
+      "sk": "6.1 Daya dan Kesannya",
+      "sp": [
+        {
+          "code": "6.1.1",
+          "text": "Menyatakan maksud daya dengan menjalankan aktiviti."
+        }
+      ],
+      "original": {
+        "objective": "Dua contoh daya tarikan dan tolakan serta arah yang betul",
+        "materials": "Kotak kosong ringan dan tali kain",
+        "pbd": "Dua contoh daya tarikan dan tolakan serta arah yang betul",
+        "safety": "Daya: gunakan objek ringan dan selamat"
+      },
+      "source_activity": {
+        "sp": "6.1.1",
+        "hook": "Foto menolak kotak dan menarik tali permainan",
+        "teacher1": "menunjukkan daya tarikan dan tolakan pada objek ringan",
+        "pupil1": "membezakan dua tindakan daya melalui kad dan demonstrasi selamat",
+        "teacher2": "meminta murid melakar arah anak panah bagi dua keadaan",
+        "pupil2": "menerangkan daya sebagai tarikan atau tolakan berdasarkan model",
+        "pbd": "Dua contoh daya tarikan dan tolakan serta arah yang betul",
+        "materials": "Kotak kosong ringan dan tali kain",
+        "safety": "Daya: gunakan objek ringan dan selamat"
+      },
+      "phases": {
+        "engagement": "Paparkan foto kotak ditolak dan tali ditarik; murid nyatakan perbezaan tindakan.",
+        "exploration": "Demonstrasi tarikan dan tolakan pada kotak kosong ringan di bawah seliaan guru.",
+        "explanation": "Jelaskan maksud daya sebagai tarikan atau tolakan dengan anak panah arah daya.",
+        "elaboration": "Lakar dua contoh baharu dan semak arah daya bagi setiap tindakan.",
+        "evaluation": "Dua contoh daya tarikan dan tolakan serta arah yang betul"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-032",
+      "teaching_order": 37,
+      "title": "Menjelas dengan contoh kesan daya terhadap objek.",
+      "unit": "Unit 6: Daya",
+      "minutes": 30,
+      "textbook_pages": "90-92",
+      "sk": "6.1 Daya dan Kesannya",
+      "sp": [
+        {
+          "code": "6.1.2",
+          "text": "Menjelas dengan contoh kesan daya dengan menjalankan aktiviti."
+        }
+      ],
+      "original": {
+        "objective": "Lima kesan daya dengan dua contoh yang munasabah",
+        "materials": "Bola lembut, span dan troli mainan",
+        "pbd": "Lima kesan daya dengan dua contoh yang munasabah",
+        "safety": "Daya: gunakan objek ringan dan selamat"
+      },
+      "source_activity": {
+        "sp": "6.1.2",
+        "hook": "Lima foto bola pegun bergerak membelok dan span tertekan",
+        "teacher1": "memperagakan daya mengubah bentuk, arah, kelajuan, gerakan dan hentian pada bola lembut",
+        "pupil1": "merekod lima pemerhatian kesan daya daripada gambar",
+        "teacher2": "memberi situasi baharu mengenai menolak troli mainan atau memicit span",
+        "pupil2": "memilih dua perubahan akibat daya dan sebab pemerhatian",
+        "pbd": "Lima kesan daya dengan dua contoh yang munasabah",
+        "materials": "Bola lembut, span dan troli mainan",
+        "safety": "Daya: gunakan objek ringan dan selamat"
+      },
+      "phases": {
+        "engagement": "Paparkan foto bola pegun, bergerak dan span tertekan; murid ramal perubahan.",
+        "exploration": "Perhatikan demonstrasi bola lembut dan span untuk merekod perubahan bentuk, arah, kelajuan, mula dan henti.",
+        "explanation": "Jelaskan lima kesan daya menggunakan bukti pemerhatian.",
+        "elaboration": "Pilih dua situasi troli mainan atau span dan terangkan kesan daya yang berlaku.",
+        "evaluation": "Lima kesan daya dengan dua contoh yang munasabah"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-033",
+      "teaching_order": 38,
+      "title": "Menjelaskan pemerhatian tentang daya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 6: Daya",
+      "minutes": 30,
+      "textbook_pages": "92",
+      "sk": "6.1 Daya dan Kesannya",
+      "sp": [
+        {
+          "code": "6.1.3",
+          "text": "Menjelaskan pemerhatian tentang daya dan kesannya melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran kesan daya dengan dua pemerhatian yang disokong rajah",
+        "materials": "Kad foto gerakan dan anak panah kertas",
+        "pbd": "Lakaran kesan daya dengan dua pemerhatian yang disokong rajah",
+        "safety": "Daya: gunakan objek ringan dan selamat"
+      },
+      "source_activity": {
+        "sp": "6.1.3",
+        "hook": "Carta dua keadaan bola sebelum dan selepas menerima tolakan",
+        "teacher1": "meminta murid menyusun foto kesan daya mengikut urutan",
+        "pupil1": "melukis anak panah daya serta perubahan gerakan dalam rajah",
+        "teacher2": "membimbing penerangan lisan kesan daya bagi satu situasi lain",
+        "pupil2": "menyatakan dua dapatan pemerhatian dan satu rumusan bertulis",
+        "pbd": "Lakaran kesan daya dengan dua pemerhatian yang disokong rajah",
+        "materials": "Kad foto gerakan dan anak panah kertas",
+        "safety": "Daya: gunakan objek ringan dan selamat"
+      },
+      "phases": {
+        "engagement": "Paparkan foto bola sebelum dan selepas tolakan; murid jangka urutan.",
+        "exploration": "Susun foto dan lakar anak panah daya serta perubahan gerakan.",
+        "explanation": "Terangkan dua pemerhatian berdasarkan rajah.",
+        "elaboration": "Gunakan satu situasi lain untuk membuat rumusan kesan daya secara bertulis atau lisan.",
+        "evaluation": "Lakaran kesan daya dengan dua pemerhatian yang disokong rajah"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-034",
+      "teaching_order": 39,
+      "title": "Menyatakan maksud daya geseran.",
+      "unit": "Unit 6: Daya",
+      "minutes": 30,
+      "textbook_pages": "93-94",
+      "sk": "6.2 Daya Geseran",
+      "sp": [
+        {
+          "code": "6.2.1",
+          "text": "Menyatakan maksud daya geseran dengan menjalankan aktiviti."
+        }
+      ],
+      "original": {
+        "objective": "Maksud daya geseran dengan satu contoh bersumber pemerhatian",
+        "materials": "Kereta mainan, papan rata dan kain",
+        "pbd": "Maksud daya geseran dengan satu contoh bersumber pemerhatian",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "source_activity": {
+        "sp": "6.2.1",
+        "hook": "Kereta mainan bergerak lebih perlahan atas kain",
+        "teacher1": "menunjukkan pertemuan dua permukaan dan maksud geseran melalui demonstrasi meja",
+        "pupil1": "menandakan pasangan permukaan yang bersentuhan dan arah gerakan",
+        "teacher2": "membimbing perbandingan troli tanpa geseran khayalan dengan keadaan sebenar",
+        "pupil2": "menulis definisi geseran dan satu contoh tindakan rintangan",
+        "pbd": "Maksud daya geseran dengan satu contoh bersumber pemerhatian",
+        "materials": "Kereta mainan, papan rata dan kain",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "phases": {
+        "engagement": "Paparkan kereta mainan bergerak di atas kain; murid jangka sebab ia perlahan.",
+        "exploration": "Bandingkan gerakan di papan rata dan kain serta tandakan permukaan bersentuhan.",
+        "explanation": "Jelaskan daya geseran sebagai daya yang menentang gerakan relatif permukaan.",
+        "elaboration": "Lakar arah geseran dalam satu contoh dan bandingkan dengan gerakan khayalan tanpa geseran.",
+        "evaluation": "Maksud daya geseran dengan satu contoh bersumber pemerhatian"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-035",
+      "teaching_order": 40,
+      "title": "Kesan daya geseran",
+      "unit": "Unit 6: Daya",
+      "minutes": 60,
+      "textbook_pages": "95-96",
+      "sk": "6.2 Daya Geseran",
+      "sp": [
+        {
+          "code": "6.2.2",
+          "text": "Memerihalkan kesan daya geseran."
+        }
+      ],
+      "original": {
+        "objective": "Jadual manfaat dan kelemahan geseran dengan sebab",
+        "materials": "Kad kasut tayar dan permukaan getah",
+        "pbd": "Jadual manfaat dan kelemahan geseran dengan sebab",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "source_activity": {
+        "sp": "6.2.2",
+        "hook": "Gambar tapak kasut berpola dan tayar haus",
+        "teacher1": "memperagakan kesan geseran memperlahankan objek dan membantu cengkaman menggunakan model",
+        "pupil1": "merekod dua kesan baik dan satu kesan kurang baik daripada rajah",
+        "teacher2": "meminta murid menerangkan risiko permukaan licin",
+        "pupil2": "menyatakan dua kesan daya geseran dan bukti gambar",
+        "pbd": "Jadual manfaat dan kelemahan geseran dengan sebab",
+        "materials": "Kad kasut tayar dan permukaan getah",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "phases": {
+        "engagement": "Paparkan foto tapak kasut berpola dan tayar haus; murid nyatakan perbezaan.",
+        "exploration": "Kelaskan bukti gambar atau model kepada manfaat dan kelemahan geseran.",
+        "explanation": "Jelaskan geseran membantu cengkaman tetapi boleh memperlahankan gerakan atau menyebabkan haus.",
+        "elaboration": "Analisis kad permukaan licin dan cadangkan sebab cengkaman diperlukan.",
+        "evaluation": "Jadual manfaat dan kelemahan geseran dengan sebab"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-036",
+      "teaching_order": 41,
+      "title": "Eksperimen faktor yang mempengaruhi daya geseran",
+      "unit": "Unit 6: Daya",
+      "minutes": 30,
+      "textbook_pages": "97-98",
+      "sk": "6.2 Daya Geseran",
+      "sp": [
+        {
+          "code": "6.2.3",
+          "text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi daya geseran."
+        }
+      ],
+      "original": {
+        "objective": "Dua perbandingan daya dalam newton, pemboleh ubah dan rumusan berasaskan bacaan",
+        "materials": "Bongkah ringan, pemberat, neraca spring, kain, papan dan rekod bacaan",
+        "pbd": "Dua perbandingan daya dalam newton, pemboleh ubah dan rumusan berasaskan bacaan",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "source_activity": {
+        "sp": "6.2.3",
+        "hook": "Jadual jarak kereta mainan di atas permukaan berbeza",
+        "teacher1": "menunjukkan stesen tarik bongkah pada dua permukaan dengan jisim yang sama",
+        "pupil1": "merekod bacaan neraca spring semasa bongkah bergerak sekata",
+        "teacher2": "menunjukkan stesen kedua yang mengubah jisim dengan permukaan yang sama",
+        "pupil2": "membandingkan bacaan dalam setiap stesen dan menyatakan faktor yang dikekalkan",
+        "pbd": "Dua perbandingan daya dalam newton, pemboleh ubah dan rumusan berasaskan bacaan",
+        "materials": "Bongkah ringan, pemberat, neraca spring, kain, papan dan rekod bacaan",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "phases": {
+        "engagement": "Paparkan bongkah dan dua permukaan; murid ramal perbezaan daya tarikan.",
+        "exploration": "Pada stesen pertama, bandingkan bacaan neraca spring bagi jisim sama di atas kain dan papan; pada stesen kedua ubah jisim pada permukaan sama.",
+        "explanation": "Bandingkan bacaan semasa gerakan sekata dalam newton dan nyatakan faktor yang dikekalkan.",
+        "elaboration": "Rumuskan kesan setiap faktor daripada dua perbandingan tanpa mencampurkan pemboleh ubah.",
+        "evaluation": "Dua perbandingan daya dalam newton, pemboleh ubah dan rumusan berasaskan bacaan"
+      },
+      "scope_note": "Gunakan dua stesen neraca spring mengikut override penjana, bukan ujian jarak troli versi lama.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-037",
+      "teaching_order": 42,
+      "title": "Menjana idea untuk meningkatkan atau mengurangkan daya geseran bagi menyelesaikan masalah dalam kehidupan harian.",
+      "unit": "Unit 6: Daya",
+      "minutes": 30,
+      "textbook_pages": "99-100",
+      "sk": "6.2 Daya Geseran",
+      "sp": [
+        {
+          "code": "6.2.4",
+          "text": "Menjana idea untuk menambah dan mengurangkan daya geseran."
+        }
+      ],
+      "original": {
+        "objective": "Dua penyelesaian masalah harian melalui geseran dengan alasan",
+        "materials": "Kad situasi permukaan dan poster tindakan",
+        "pbd": "Dua penyelesaian masalah harian melalui geseran dengan alasan",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "source_activity": {
+        "sp": "6.2.4",
+        "hook": "Gambar tapak kasut licin dan engsel pintu berdecit",
+        "teacher1": "menyoal situasi yang memerlukan menambah atau mengurangkan geseran",
+        "pupil1": "mencadangkan dua penyelesaian seperti alas getah atau pelincir pada gambar",
+        "teacher2": "membimbing justifikasi pilihan berdasarkan kesan cengkaman",
+        "pupil2": "menulis dua masalah dan penyelesaian geseran yang sesuai",
+        "pbd": "Dua penyelesaian masalah harian melalui geseran dengan alasan",
+        "materials": "Kad situasi permukaan dan poster tindakan",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar kasut licin dan engsel berdecit; murid tentukan masalah cengkaman.",
+        "exploration": "Padankan kad masalah dengan cadangan menambah atau mengurangkan geseran.",
+        "explanation": "Terangkan sebab alas getah atau pelincir sesuai dalam contoh masing-masing.",
+        "elaboration": "Pilih dua penyelesaian daripada situasi harian dan berikan justifikasi menggunakan gambar sahaja.",
+        "evaluation": "Dua penyelesaian masalah harian melalui geseran dengan alasan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-038",
+      "teaching_order": 43,
+      "title": "Menjelaskan pemerhatian tentang daya geseran melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 6: Daya",
+      "minutes": 60,
+      "textbook_pages": "100",
+      "sk": "6.2 Daya Geseran",
+      "sp": [
+        {
+          "code": "6.2.5",
+          "text": "Menjelaskan pemerhatian tentang daya geseran melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Graf ringkas dan kesimpulan tentang perbezaan geseran",
+        "materials": "Graf troli dan kad permukaan",
+        "pbd": "Graf ringkas dan kesimpulan tentang perbezaan geseran",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "source_activity": {
+        "sp": "6.2.5",
+        "hook": "Lakaran graf pergerakan troli atas kain dan papan",
+        "teacher1": "menyediakan data jarak troli bagi dua permukaan tanpa jalan raya",
+        "pupil1": "mentafsir perbezaan jarak sebagai bukti kesan geseran",
+        "teacher2": "membimbing penerangan dengan rajah permukaan kasar atau licin",
+        "pupil2": "menulis rumusan pemerhatian serta satu aplikasi geseran",
+        "pbd": "Graf ringkas dan kesimpulan tentang perbezaan geseran",
+        "materials": "Graf troli dan kad permukaan",
+        "safety": "Geseran: guna permukaan rendah risiko tanpa ujian di jalan raya"
+      },
+      "phases": {
+        "engagement": "Paparkan graf jarak troli atas kain dan papan; murid jangka permukaan yang lebih menghalang gerakan.",
+        "exploration": "Tafsir dua bacaan jarak pada data troli yang mempunyai keadaan ujian setara.",
+        "explanation": "Jelaskan perbezaan jarak berdasarkan geseran dengan rajah permukaan.",
+        "elaboration": "Bentangkan graf ringkas dan kaitkan satu dapatan dengan aplikasi geseran harian.",
+        "evaluation": "Graf ringkas dan kesimpulan tentang perbezaan geseran"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-039",
+      "teaching_order": 44,
+      "title": "Memerihalkan kewujudan tekanan udara di sekeliling dengan menjalankan aktiviti.",
+      "unit": "Unit 6: Daya",
+      "minutes": 30,
+      "textbook_pages": "101-104",
+      "sk": "6.3 Tekanan Udara",
+      "sp": [
+        {
+          "code": "6.3.1",
+          "text": "Memerihalkan kewujudan tekanan udara di sekeliling dengan menjalankan aktiviti."
+        }
+      ],
+      "original": {
+        "objective": "Rajah kewujudan tekanan udara dan dua pemerhatian",
+        "materials": "Video tekanan udara dan carta anak panah",
+        "pbd": "Rajah kewujudan tekanan udara dan dua pemerhatian",
+        "safety": "Tekanan udara: elakkan vakum kuat atau kaca boleh pecah"
+      },
+      "source_activity": {
+        "sp": "6.3.1",
+        "hook": "Gambar cawan air berlapik kad tebal yang terbalik",
+        "teacher1": "menunjukkan video eksperimen tekanan udara yang dikawal guru",
+        "pupil1": "mencatat ramalan dan pemerhatian keadaan kad pada dua gambar",
+        "teacher2": "menerangkan tekanan udara menekan permukaan dari sekeliling",
+        "pupil2": "melakar arah tekanan pada kad dengan anak panah dan sebab",
+        "pbd": "Rajah kewujudan tekanan udara dan dua pemerhatian",
+        "materials": "Video tekanan udara dan carta anak panah",
+        "safety": "Tekanan udara: elakkan vakum kuat atau kaca boleh pecah"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar cawan air terbalik berlapik kad; murid ramal keadaan kad.",
+        "exploration": "Teliti video eksperimen terkawal guru dan catat dua pemerhatian.",
+        "explanation": "Jelaskan tekanan udara bertindak pada permukaan dari sekeliling menggunakan anak panah.",
+        "elaboration": "Lakar arah tekanan pada rajah dan kaitkan dengan keadaan kad dalam video.",
+        "evaluation": "Rajah kewujudan tekanan udara dan dua pemerhatian"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-040",
+      "teaching_order": 45,
+      "title": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian.",
+      "unit": "Unit 6: Daya",
+      "minutes": 60,
+      "textbook_pages": "105-106",
+      "sk": "6.3 Tekanan Udara",
+      "sp": [
+        {
+          "code": "6.3.2",
+          "text": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian."
+        }
+      ],
+      "original": {
+        "objective": "Graf tiga data altitud dengan hubungan berlawanan",
+        "materials": "Peta ketinggian dan jadual tekanan rekaan",
+        "pbd": "Graf tiga data altitud dengan hubungan berlawanan",
+        "safety": "Tekanan udara: elakkan vakum kuat atau kaca boleh pecah"
+      },
+      "source_activity": {
+        "sp": "6.3.2",
+        "hook": "Peta gunung dengan kaki dan puncak berketinggian berbeza",
+        "teacher1": "membentangkan jadual tekanan udara rekaan pada tiga altitud",
+        "pupil1": "menyusun nilai tekanan mengikut ketinggian dan melakar graf",
+        "teacher2": "meminta murid menerangkan mengapa tekanan berkurang apabila altitude meningkat",
+        "pupil2": "menulis kesimpulan arah hubungan ketinggian dan tekanan",
+        "pbd": "Graf tiga data altitud dengan hubungan berlawanan",
+        "materials": "Peta ketinggian dan jadual tekanan rekaan",
+        "safety": "Tekanan udara: elakkan vakum kuat atau kaca boleh pecah"
+      },
+      "phases": {
+        "engagement": "Paparkan peta gunung; murid jangka tekanan udara di kaki dan puncak.",
+        "exploration": "Susun tiga nilai tekanan rekaan mengikut ketinggian dan plot graf.",
+        "explanation": "Jelaskan tekanan udara lazimnya berkurang apabila aras ketinggian meningkat.",
+        "elaboration": "Tafsir graf pada satu altitud tambahan secara anggaran tanpa mendakwa data rekaan ialah ukuran sebenar.",
+        "evaluation": "Graf tiga data altitud dengan hubungan berlawanan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-041",
+      "teaching_order": 46,
+      "title": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian.",
+      "unit": "Unit 6: Daya",
+      "minutes": 30,
+      "textbook_pages": "107-108",
+      "sk": "6.3 Tekanan Udara",
+      "sp": [
+        {
+          "code": "6.3.3",
+          "text": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian."
+        }
+      ],
+      "original": {
+        "objective": "Dua contoh aplikasi tekanan udara dengan penjelasan sebab",
+        "materials": "Model picagari tanpa jarum dan foto penyedut",
+        "pbd": "Dua contoh aplikasi tekanan udara dengan penjelasan sebab",
+        "safety": "Tekanan udara: elakkan vakum kuat atau kaca boleh pecah"
+      },
+      "source_activity": {
+        "sp": "6.3.3",
+        "hook": "Foto picagari tanpa jarum, penyedut minuman dan cawan sedutan",
+        "teacher1": "menerangkan tiga aplikasi tekanan udara melalui model plastik selamat",
+        "pupil1": "melabel bahagian berbeza tekanan pada dua rajah",
+        "teacher2": "meminta murid memilih aplikasi bagi dua masalah mudah",
+        "pupil2": "menyatakan contoh kegunaan tekanan udara serta cara kerjanya",
+        "pbd": "Dua contoh aplikasi tekanan udara dengan penjelasan sebab",
+        "materials": "Model picagari tanpa jarum dan foto penyedut",
+        "safety": "Tekanan udara: elakkan vakum kuat atau kaca boleh pecah"
+      },
+      "phases": {
+        "engagement": "Paparkan foto picagari tanpa jarum, penyedut minuman dan cawan sedutan; murid cadang fungsi.",
+        "exploration": "Teliti model plastik selamat dan label kawasan tekanan berbeza pada rajah.",
+        "explanation": "Jelaskan bagaimana perbezaan tekanan membantu dua aplikasi.",
+        "elaboration": "Pilih aplikasi bagi dua situasi mudah dan beri alasan tanpa ujian vakum kuat.",
+        "evaluation": "Dua contoh aplikasi tekanan udara dengan penjelasan sebab"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-042",
+      "teaching_order": 47,
+      "title": "Menjelaskan pemerhatian tentang tekanan udara melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 6: Daya",
+      "minutes": 60,
+      "textbook_pages": "108",
+      "sk": "6.3 Tekanan Udara",
+      "sp": [
+        {
+          "code": "6.3.4",
+          "text": "Menjelaskan pemerhatian tentang tekanan udara melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran dan penerangan tekanan udara berdasarkan bukti",
+        "materials": "Kad eksperimen tekanan udara siap",
+        "pbd": "Lakaran dan penerangan tekanan udara berdasarkan bukti",
+        "safety": "Tekanan udara: elakkan vakum kuat atau kaca boleh pecah"
+      },
+      "source_activity": {
+        "sp": "6.3.4",
+        "hook": "Poster eksperimen cawan terbalik dan botol bertutup",
+        "teacher1": "membimbing lakaran dua keadaan udara menekan permukaan",
+        "pupil1": "melukis rajah dengan anak panah tekanan pada kedua-dua keadaan",
+        "teacher2": "meminta murid menulis penerangan terhadap satu ramalan yang tidak menjadi",
+        "pupil2": "merumus pemerhatian dua susunan dan sebab ilmiah",
+        "pbd": "Lakaran dan penerangan tekanan udara berdasarkan bukti",
+        "materials": "Kad eksperimen tekanan udara siap",
+        "safety": "Tekanan udara: elakkan vakum kuat atau kaca boleh pecah"
+      },
+      "phases": {
+        "engagement": "Paparkan poster cawan terbalik dan botol bertutup; murid jangka kesan tekanan.",
+        "exploration": "Lakar dua susunan dan tandakan arah tekanan berdasarkan kad eksperimen.",
+        "explanation": "Terangkan pemerhatian daripada dua susunan dengan sebab saintifik.",
+        "elaboration": "Bandingkan satu ramalan yang tidak menepati pemerhatian dan betulkan penerangan.",
+        "evaluation": "Lakaran dan penerangan tekanan udara berdasarkan bukti"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-043",
+      "teaching_order": 48,
+      "title": "Unit bagi kelajuan",
+      "unit": "Unit 7: Kelajuan",
+      "minutes": 30,
+      "textbook_pages": "114-115",
+      "sk": "7.1 Kelajuan Objek",
+      "sp": [
+        {
+          "code": "7.1.1",
+          "text": "Menyatakan unit bagi kelajuan."
+        }
+      ],
+      "original": {
+        "objective": "Tiga unit kelajuan disertai contoh yang munasabah",
+        "materials": "Kad unit kelajuan dan gambar kenderaan",
+        "pbd": "Tiga unit kelajuan disertai contoh yang munasabah",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "source_activity": {
+        "sp": "7.1.1",
+        "hook": "Papan tanda laju km/j dan meter per saat pada litar mainan",
+        "teacher1": "menerangkan unit km/j, m/s dan cm/s melalui contoh skala",
+        "pupil1": "memadankan tiga situasi gerakan dengan unit yang sesuai",
+        "teacher2": "memberi empat contoh basikal, kereta, kereta mainan dan larian",
+        "pupil2": "menulis tiga unit kelajuan dan satu contoh aplikasi setiap unit",
+        "pbd": "Tiga unit kelajuan disertai contoh yang munasabah",
+        "materials": "Kad unit kelajuan dan gambar kenderaan",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "phases": {
+        "engagement": "Paparkan papan tanda km/j serta contoh gerakan mainan; murid kenal pasti unit.",
+        "exploration": "Padankan kad kereta, larian dan mainan dengan km/j, m/s atau cm/s.",
+        "explanation": "Jelaskan unit kelajuan sebagai unit jarak bagi setiap unit masa.",
+        "elaboration": "Pilih unit sesuai bagi contoh gerakan tambahan dan berikan sebab berdasarkan skala.",
+        "evaluation": "Tiga unit kelajuan disertai contoh yang munasabah"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-044",
+      "teaching_order": 49,
+      "title": "Eksperimen hubungan kelajuan, jarak dan masa",
+      "unit": "Unit 7: Kelajuan",
+      "minutes": 60,
+      "textbook_pages": "116-118",
+      "sk": "7.1 Kelajuan Objek",
+      "sp": [
+        {
+          "code": "7.1.2",
+          "text": "Mengeksperimen untuk menentukan hubungan antara kelajuan, jarak dan masa."
+        }
+      ],
+      "original": {
+        "objective": "Jadual jarak masa serta kesimpulan dua hubungan kelajuan",
+        "materials": "Troli mainan, pita ukur, jam randik dan papan rata",
+        "pbd": "Jadual jarak masa serta kesimpulan dua hubungan kelajuan",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "source_activity": {
+        "sp": "7.1.2",
+        "hook": "Jadual jarak dan masa troli mainan di trek tertutup",
+        "teacher1": "membimbing ujian troli merentasi jarak sama dengan masa berbeza menggunakan stopwatch",
+        "pupil1": "mengukur jarak satu meter dan masa beberapa ulangan dalam kumpulan kecil",
+        "teacher2": "menyusun data untuk menentukan perubahan kelajuan apabila jarak atau masa berubah",
+        "pupil2": "menghasilkan jadual, graf dan hubungan kelajuan jarak masa",
+        "pbd": "Jadual jarak masa serta kesimpulan dua hubungan kelajuan",
+        "materials": "Troli mainan, pita ukur, jam randik dan papan rata",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "phases": {
+        "engagement": "Paparkan jadual jarak dan masa troli; murid jangka hubungan dengan kelajuan.",
+        "exploration": "Ukur masa beberapa ulangan bagi troli pada jarak satu meter di trek tertutup; gunakan data perbandingan jarak/masa yang diberi.",
+        "explanation": "Bandingkan kelajuan bagi jarak tetap atau masa tetap; jelaskan menggunakan jadual dan graf.",
+        "elaboration": "Rumuskan dua hubungan dengan menyatakan faktor yang dikekalkan dan unit yang konsisten.",
+        "evaluation": "Jadual jarak masa serta kesimpulan dua hubungan kelajuan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-045",
+      "teaching_order": 50,
+      "title": "Menentukan kelajuan, jarak atau masa menggunakan formula.",
+      "unit": "Unit 7: Kelajuan",
+      "minutes": 30,
+      "textbook_pages": "119-121",
+      "sk": "7.1 Kelajuan Objek",
+      "sp": [
+        {
+          "code": "7.1.3",
+          "text": "Menyelesaikan masalah berkaitan kelajuan dengan menggunakan rumus."
+        }
+      ],
+      "original": {
+        "objective": "Tiga pengiraan kelajuan jarak atau masa dengan langkah dan unit",
+        "materials": "Kad masalah pengiraan dan kalkulator pilihan",
+        "pbd": "Tiga pengiraan kelajuan jarak atau masa dengan langkah dan unit",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "source_activity": {
+        "sp": "7.1.3",
+        "hook": "Tiga situasi jarak, masa dan kelajuan berbeza",
+        "teacher1": "menunjukkan rumus kelajuan sama dengan jarak bahagi masa serta penukaran unit yang sesuai",
+        "pupil1": "mengira kelajuan dua objek daripada data jarak dan masa yang diberikan",
+        "teacher2": "memberi masalah mencari jarak dan masa menggunakan rumus susunan semula",
+        "pupil2": "menyelesaikan tiga soalan numerik lengkap dengan unit",
+        "pbd": "Tiga pengiraan kelajuan jarak atau masa dengan langkah dan unit",
+        "materials": "Kad masalah pengiraan dan kalkulator pilihan",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "phases": {
+        "engagement": "Paparkan tiga kad situasi jarak, masa dan kelajuan; murid kenal pasti nilai yang belum diketahui.",
+        "exploration": "Kira dua kelajuan menggunakan jarak bahagi masa dengan unit sepadan.",
+        "explanation": "Jelaskan penyusunan semula rumus bagi mencari jarak atau masa.",
+        "elaboration": "Selesaikan masalah baharu tiga jenis kuantiti dan semak langkah serta unit.",
+        "evaluation": "Tiga pengiraan kelajuan jarak atau masa dengan langkah dan unit"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-046",
+      "teaching_order": 51,
+      "title": "Definisi secara operasi melalui aktiviti",
+      "unit": "Unit 7: Kelajuan",
+      "minutes": 60,
+      "textbook_pages": "122",
+      "sk": "7.1 Kelajuan Objek",
+      "sp": [
+        {
+          "code": "7.1.4",
+          "text": "Mendefinisi secara operasi kelajuan dengan menjalankan aktiviti."
+        }
+      ],
+      "original": {
+        "objective": "Takrif operasi kelajuan dan kiraan dua bacaan dengan unit",
+        "materials": "Pita ukur jam randik dan jadual rekaan",
+        "pbd": "Takrif operasi kelajuan dan kiraan dua bacaan dengan unit",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "source_activity": {
+        "sp": "7.1.4",
+        "hook": "Dua rekod troli bergerak 1 meter dalam masa 2 saat dan 4 saat",
+        "teacher1": "membimbing takrif operasi kelajuan melalui ukuran jarak per masa",
+        "pupil1": "melengkapkan jadual m/s bagi dua bacaan",
+        "teacher2": "meminta murid menjelaskan ukuran yang perlu dicatat untuk menentukan kelajuan",
+        "pupil2": "menulis definisi operasi kelajuan berdasarkan alat dan kuantiti terukur",
+        "pbd": "Takrif operasi kelajuan dan kiraan dua bacaan dengan unit",
+        "materials": "Pita ukur jam randik dan jadual rekaan",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "phases": {
+        "engagement": "Paparkan dua rekod troli 1 meter dalam 2 saat dan 4 saat; murid jangka yang lebih laju.",
+        "exploration": "Lengkapkan jadual kelajuan dalam m/s berpandukan ukuran jarak dan masa.",
+        "explanation": "Bina takrif operasi kelajuan melalui kuantiti yang diukur dan cara mengiranya.",
+        "elaboration": "Terangkan cara menentukan kelajuan pada trek menggunakan pita ukur dan jam randik; bandingkan dua bacaan.",
+        "evaluation": "Takrif operasi kelajuan dan kiraan dua bacaan dengan unit"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-047",
+      "teaching_order": 52,
+      "title": "Menjelaskan pemerhatian tentang kelajuan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 7: Kelajuan",
+      "minutes": 30,
+      "textbook_pages": "122",
+      "sk": "7.1 Kelajuan Objek",
+      "sp": [
+        {
+          "code": "7.1.5",
+          "text": "Menjelaskan pemerhatian tentang kelajuan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Dua pemerhatian graf kelajuan dengan bukti paksi",
+        "materials": "Graf gerakan dan kad pembacaan paksi",
+        "pbd": "Dua pemerhatian graf kelajuan dengan bukti paksi",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "source_activity": {
+        "sp": "7.1.5",
+        "hook": "Graf garis jarak melawan masa dua objek pada trek sama",
+        "teacher1": "membimbing bacaan kecerunan secara kualitatif bagi gerakan pantas dan perlahan",
+        "pupil1": "menerangkan dua pemerhatian berdasarkan tiga titik graf",
+        "teacher2": "meminta murid memaparkan dapatan dalam lakaran atau penjelasan ringkas",
+        "pupil2": "menulis dua tafsiran pergerakan daripada graf dengan sebab",
+        "pbd": "Dua pemerhatian graf kelajuan dengan bukti paksi",
+        "materials": "Graf gerakan dan kad pembacaan paksi",
+        "safety": "Kelajuan: catat jarak dan masa di ruang tertutup, unit mesti konsisten"
+      },
+      "phases": {
+        "engagement": "Paparkan graf jarak melawan masa dua objek; murid ramal garis yang lebih curam.",
+        "exploration": "Baca tiga titik graf dan bandingkan perubahan jarak pada sela masa sama.",
+        "explanation": "Jelaskan kecerunan lebih besar menunjukkan kelajuan lebih tinggi pada graf jarak-masa.",
+        "elaboration": "Lakar atau bentangkan dua tafsiran dengan merujuk nilai dan paksi graf.",
+        "evaluation": "Dua pemerhatian graf kelajuan dengan bukti paksi"
+      },
+      "scope_note": null,
+      "ready": false
+    }
+  ]
+}

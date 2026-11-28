@@ -1,0 +1,38 @@
+{
+  "status": "PINNED_CATALOGUE_AND_PERSONALIZED_TEST_CLIENT_QA_PASS",
+  "tested_commit": "715286fdd1887766981857b52cfd329f9e25348d",
+  "native_source_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+  "workflow_run": 46098968844,
+  "original_catalogue_job": 140836809837,
+  "isolated_access_job": 140836809821,
+  "years": [
+    {
+      "year": 5,
+      "count": 116,
+      "mapped": 116,
+      "original_endpoint_availability_passed": 116,
+      "personalized_job": 140836809803,
+      "auto_word": 116,
+      "auto_pdf": 116,
+      "manual_word": 116,
+      "manual_pdf": 116
+    },
+    {
+      "year": 6,
+      "count": 89,
+      "mapped": 89,
+      "original_endpoint_availability_passed": 89,
+      "personalized_job": 140836809613,
+      "auto_word": 89,
+      "auto_pdf": 89,
+      "manual_word": 89,
+      "manual_pdf": 89
+    }
+  ],
+  "issues": [],
+  "scope": "Actual pinned original catalogue endpoint test client and all personalized draft Word/native PDF downloads through isolated simulated accounts. Word structural/text checks and native PDF single-page text checks. No live login or quota, no personalized Word pagination check, no academic approval.",
+  "live_backend_verified": false,
+  "live_auth_verified": false,
+  "academic_approved": false,
+  "release": false
+}

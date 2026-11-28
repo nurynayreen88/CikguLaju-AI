@@ -1,0 +1,325 @@
+{
+  "year": 6,
+  "status": "PROPOSED_ADDITIONS_NOT_SOURCE_FIELDS",
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y6_native_085_089_20261128.json",
+      "blob": "b841cc7bdc6798ed643764cd1ba1f49282b707d0"
+    },
+    {
+      "path": "audits/rph_5p_science_y6_native_001_023_20261128.json",
+      "blob": "7b01705660c0bca751381941207e7552c22b06a0"
+    }
+  ],
+  "policy": "Keep original remediation and enrichment verbatim where present (085–089); new support and proposed PAK21/EMK based on exact draft activities, not academic approval. No runtime integration or release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-085",
+      "title": "Memerhati, mengelas dan mengukur kereta model",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: ukuran model",
+      "pemulihan": "Tanda titik mula dengan pita.",
+      "pengayaan": "Murid lanjutan membandingkan dua ukuran ulangan.",
+      "support_basis": "PEMULIHAN_PENGAYAAN_ASAL_DIKekalkan",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-086",
+      "title": "Membentangkan sebab dan jangkaan pergerakan model",
+      "pak21": "Think-Pair-Share",
+      "emk": "Bahasa: komunikasi berasaskan data",
+      "pemulihan": "Beri rangka pembentangan.",
+      "pengayaan": "Murid lanjutan mencadangkan inferens alternatif.",
+      "support_basis": "PEMULIHAN_PENGAYAAN_ASAL_DIKekalkan",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-087",
+      "title": "Mentafsir pergerakan model mengikut masa",
+      "pak21": "Perbincangan berasaskan data",
+      "emk": "Sains dan teknologi: pola pergerakan",
+      "pemulihan": "Sediakan garis masa.",
+      "pengayaan": "Murid lanjutan membandingkan jarak dua model pada tempoh yang sama.",
+      "support_basis": "PEMULIHAN_PENGAYAAN_ASAL_DIKekalkan",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-088",
+      "title": "Mereka bentuk ujian jisim kereta model",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Sains dan teknologi: reka bentuk ujian adil",
+      "pemulihan": "Beri jadual perancangan.",
+      "pengayaan": "Murid lanjutan mencadangkan cara menyeragamkan saiz belon.",
+      "support_basis": "PEMULIHAN_PENGAYAAN_ASAL_DIKekalkan",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-089",
+      "title": "Menguji kesan jisim pada jarak pergerakan",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Nilai murni: ketelitian dan kejujuran data",
+      "pemulihan": "Beri rangka laporan.",
+      "pengayaan": "Murid lanjutan membandingkan jarak purata dua jisim.",
+      "support_basis": "PEMULIHAN_PENGAYAAN_ASAL_DIKekalkan",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-001",
+      "title": "Memerihalkan fungsi organ pembiakan lelaki dan perempuan.",
+      "pak21": "Padanan kad berpasangan",
+      "emk": "Bahasa: istilah anatomi saintifik",
+      "pemulihan": "Padankan label organ dengan carta anatomi separa berlabel tanpa soalan peribadi.",
+      "pengayaan": "Terangkan enam fungsi organ dan betulkan dua padanan salah berpandukan carta.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-002",
+      "title": "Menjelaskan proses persenyawaan manusia sehingga bayi dilahirkan.",
+      "pak21": "Susun kad kolaboratif",
+      "emk": "Sains dan teknologi: perkembangan manusia",
+      "pemulihan": "Beri empat kad urutan dengan gambar panduan dari persenyawaan hingga kelahiran.",
+      "pengayaan": "Bina urutan tanpa panduan dan bezakan persenyawaan daripada perkembangan dalam uterus.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-003",
+      "title": "Menaakul kepentingan pembiakan kepada manusia.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Nilai murni: menghormati kepelbagaian keluarga",
+      "pemulihan": "Beri kad situasi generasi rekaan dan rangka ayat sebab.",
+      "pengayaan": "Bandingkan dua situasi populasi rekaan dan rumuskan kepentingan kesinambungan spesies tanpa menilai individu.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-004",
+      "title": "Menjelaskan pemerhatian tentang pembiakan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan peta alir",
+      "emk": "Kreativiti dan inovasi: komunikasi saintifik",
+      "pemulihan": "Lengkapkan peta alir dengan pilihan label organ dan peringkat.",
+      "pengayaan": "Huraikan peta alir menggunakan istilah tepat dan semak pembetulan berdasarkan carta.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-005",
+      "title": "Mengenal pasti jenis sistem saraf manusia.",
+      "pak21": "Pengelasan berpasangan",
+      "emk": "Sains dan teknologi: sistem saraf",
+      "pemulihan": "Beri carta dua warna untuk membezakan otak, saraf tunjang dan saraf periferi.",
+      "pengayaan": "Kelaskan kad bahagian tambahan serta terangkan perbezaan komponen kedua-dua sistem.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-006",
+      "title": "Sistem saraf pusat dan fungsinya",
+      "pak21": "Padanan kad kolaboratif",
+      "emk": "Sains dan teknologi: fungsi organ",
+      "pemulihan": "Padankan otak dan saraf tunjang dengan dua kad fungsi.",
+      "pengayaan": "Lakar aliran isyarat dalam ilustrasi refleks dan jelaskan fungsi dua struktur.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-007",
+      "title": "Fungsi sistem saraf periferi",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: penghantaran isyarat",
+      "pemulihan": "Susun kad deria, pusat dan anggota badan dengan anak panah panduan.",
+      "pengayaan": "Terangkan arah isyarat deria dan motor dalam dua situasi bergambar tanpa ujian rangsangan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-008",
+      "title": "Meramalkan keadaan yang berlaku jika sistem saraf periferi tidak berfungsi.",
+      "pak21": "Perbincangan kes pasangan",
+      "emk": "Nilai murni: menghormati individu",
+      "pemulihan": "Beri carta laluan isyarat dengan pilihan kesan bagi watak rekaan.",
+      "pengayaan": "Bina dua ramalan bersyarat dan kaitkan kesannya dengan fungsi saraf tanpa diagnosis.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-009",
+      "title": "Menjana idea tentang cara menjaga sistem saraf.",
+      "pak21": "Pembentangan poster",
+      "emk": "Nilai murni: keselamatan dan penjagaan diri",
+      "pemulihan": "Padankan lima gambar tabiat dengan kad selamat atau berisiko.",
+      "pengayaan": "Cadangkan dua amalan penjagaan berserta sebab dan semak kesesuaian cadangan rakan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-010",
+      "title": "Menjelaskan pemerhatian tentang sistem saraf melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Kreativiti dan inovasi: rajah berlabel",
+      "pemulihan": "Lengkapkan rajah aliran isyarat dengan anak panah yang disediakan.",
+      "pengayaan": "Bandingkan dua situasi dan perbetulkan arah isyarat berdasarkan fungsi saraf.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-011",
+      "title": "Menjelaskan dengan contoh jenis mikroorganisma.",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Sains dan teknologi: pemerhatian mikroskopik",
+      "pemulihan": "Padankan lima imej sumber dengan pilihan nama jenis.",
+      "pengayaan": "Kelaskan kad contoh baharu berdasarkan keterangan ciri dan bukannya rupa sahaja; gunakan imej sahaja.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-012",
+      "title": "Mengitlak maksud mikroorganisma.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Bahasa: takrif saintifik",
+      "pemulihan": "Bandingkan dua gambar dengan skala saiz dan lengkapkan rangka takrif.",
+      "pengayaan": "Jelaskan mengapa serangga kecil tidak dikelaskan sebagai mikroorganisma berdasarkan saiz semata-mata.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-013",
+      "title": "Menyiasat proses hidup mikroorganisma.",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Nilai murni: kejujuran bukti",
+      "pemulihan": "Beri jadual lilitan belon dan ruang padanan bukti daripada rakaman atau foto.",
+      "pengayaan": "Bezakan bukti tiga proses hidup daripada pemerhatian langsung dan media, tanpa mengkultur kulapuk.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-014",
+      "title": "Mengeksperimen faktor pertumbuhan mikroorganisma.",
+      "pak21": "Inkuiri berpandukan guru",
+      "emk": "Sains dan teknologi: ujian adil",
+      "pemulihan": "Beri jadual hipotesis, pemboleh ubah dan kiraan awal berpandu.",
+      "pengayaan": "Jelaskan kepentingan grid sama saiz dan rancangan perbandingan susulan PdP 016 tanpa mereka data.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-015",
+      "title": "Memerihalkan kesan mikroorganisma dalam kehidupan harian.",
+      "pak21": "Perbincangan kes kumpulan",
+      "emk": "Nilai murni: kebersihan dan keselamatan",
+      "pemulihan": "Padankan kad gambar kegunaan dan kesan buruk mikroorganisma.",
+      "pengayaan": "Huraikan dua manfaat dan dua risiko berdasarkan kad fakta tanpa mengendalikan makanan rosak.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-016",
+      "title": "Menjelaskan pemerhatian tentang mikroorganisma melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan laporan",
+      "emk": "Bahasa: laporan berasaskan bukti",
+      "pemulihan": "Lengkapkan jadual kiraan yis dengan bantuan rekod PdP 014.",
+      "pengayaan": "Bandingkan perubahan dua sampel dan nyatakan batas dapatan jika data tidak lengkap.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-017",
+      "title": "Memerihalkan jenis interaksi antara hidupan.",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Kelestarian alam sekitar: hubungan ekosistem",
+      "pemulihan": "Padankan tiga pasangan haiwan dengan pilihan jenis interaksi.",
+      "pengayaan": "Kelaskan pasangan baharu dan jelaskan sebab berdasarkan maklumat kad.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-018",
+      "title": "Menjelas dengan contoh faktor persaingan bagi haiwan intraspesies dan interspesies.",
+      "pak21": "Perbincangan pasangan",
+      "emk": "Kelestarian alam sekitar: persaingan sumber",
+      "pemulihan": "Bezakan gambar haiwan spesies sama dan berlainan sebelum memilih faktor persaingan.",
+      "pengayaan": "Bandingkan dua situasi persaingan serta jelaskan faktor yang relevan bagi setiap situasi.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-019",
+      "title": "Menjelaskan melalui contoh jenis interaksi simbiosis antara haiwan.",
+      "pak21": "Padanan kad berpasangan",
+      "emk": "Sains dan teknologi: simbiosis",
+      "pemulihan": "Beri jadual manfaat, tiada kesan ketara dan mudarat untuk tiga pasangan contoh.",
+      "pengayaan": "Kelaskan pasangan tambahan dan pertahankan pilihan berdasarkan kesan kepada kedua-dua hidupan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-020",
+      "title": "Menjelaskan pemerhatian tentang interaksi antara haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan lakaran",
+      "emk": "Kreativiti dan inovasi: visualisasi interaksi",
+      "pemulihan": "Lengkapkan lakaran dua haiwan dengan label hubungan berpandu.",
+      "pengayaan": "Ramalkan kesan ketiadaan satu haiwan dalam habitat dan jelaskan andaian berdasarkan lakaran.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-021",
+      "title": "Interaksi antara Hidupan — Memerihalkan faktor persaingan antara tumbuhan dengan menjalankan penyiasatan.",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Sains dan teknologi: pengukuran dan kawalan",
+      "pemulihan": "Beri jadual tinggi anak pokok pratanam dan bimbing bacaan pembaris.",
+      "pengayaan": "Bandingkan ukuran dua set dan huraikan inferens persaingan dengan menyatakan faktor kawalan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-022",
+      "title": "Interaksi antara Hidupan — Menjelas dengan contoh jenis interaksi antara tumbuhan.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Kelestarian alam sekitar: hubungan tumbuhan",
+      "pemulihan": "Padankan gambar orkid dan benalu dengan kesan terhadap perumah.",
+      "pengayaan": "Betulkan pengelasan dua contoh simbiosis dan jelaskan sebab berdasarkan manfaat atau mudarat.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-023",
+      "title": "Interaksi antara Hidupan — Menjelaskan pemerhatian tentang interaksi antara tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Peta visual kolaboratif",
+      "emk": "Kelestarian alam sekitar: persaingan tumbuhan",
+      "pemulihan": "Beri peta tiga interaksi dengan pilihan label dan anak panah.",
+      "pengayaan": "Ramalkan kesan sumber terhad dalam satu situasi dan pertahankan alasan berdasarkan peta.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    }
+  ]
+}

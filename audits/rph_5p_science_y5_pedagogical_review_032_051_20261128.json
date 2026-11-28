@@ -1,0 +1,239 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 5,
+  "source": {
+    "path": "audits/rph_5p_science_y5_native_032_051_20261128.json",
+    "blob": "2c7b6fa9884df3890f216116f34f9409229e6550"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y5_support_032_051_20261128.json",
+    "blob": "9b1c9fe29a84cdb5c274328f13b2a2823077e84e"
+  },
+  "count": 20,
+  "follow_up_required": 2,
+  "policy": "Review embedded verified SP, original PBD, activity phases, materials, safety and support. No independent teacher/panitia signoff or textbook page-level verification. Flagged issues remain open; retain locked source and retest any print adaptations.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-032",
+      "sp": "3.1.1",
+      "title": "Maksud kemandirian spesies",
+      "minutes": 30,
+      "review_basis": "Takrif kesinambungan generasi dan kaitan pembiakan/perlindungan sepadan dengan SP.",
+      "implementation_note": "Frasa penyu dan burung menjaga telur atau anak boleh mengelirukan. Bezakan penyu bertelur/menimbus telur daripada contoh burung menjaga telur atau anak; kekalkan kad sumber.",
+      "status": "CONTENT_CORRECTION_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-033",
+      "sp": "3.1.2",
+      "title": "Perlindungan haiwan daripada musuh",
+      "minutes": 30,
+      "review_basis": "Pengelasan ciri fizikal dan tingkah laku serta dua padanan beralasan menepati perlindungan musuh.",
+      "implementation_note": "Gunakan foto yang menunjukkan ciri sebenar; jangan kendalikan haiwan berbahaya.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-034",
+      "sp": "3.1.3",
+      "title": "Cara haiwan menghadapi cuaca melampau",
+      "minutes": 30,
+      "review_basis": "Kedua-dua contoh asal ialah tingkah laku (berkubang dan hibernasi), sedangkan SP menyebut ciri dan tingkah laku khas.",
+      "implementation_note": "Kekalkan dua contoh asal; tambah contoh ciri fizikal daripada buku teks yang disahkan sebelum kelulusan skop penuh. Jangan mereka contoh sebagai sumber asal.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-035",
+      "sp": "3.1.4",
+      "title": "Cara haiwan melindungi telur",
+      "minutes": 30,
+      "review_basis": "Padanan tempat/cara melindungi telur dan perbandingan penyu/buaya memberi dua contoh konkrit.",
+      "implementation_note": "Foto sahaja; jelaskan mengeram berkait suhu dan penjagaan/menyembunyikan berkait ancaman.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-036",
+      "sp": "3.1.4",
+      "title": "Pengukuhan perlindungan telur daripada ancaman",
+      "minutes": 30,
+      "review_basis": "Jadual ancaman, tindakan dan alasan mengukuhkan dua strategi perlindungan telur.",
+      "implementation_note": "Gunakan contoh spesies penguin/buaya yang digambarkan dalam sumber; elakkan generalisasi semua spesies, tiada telur hidup.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-037",
+      "sp": "3.1.5",
+      "title": "Cara haiwan menjaga anak",
+      "minutes": 30,
+      "review_basis": "Kad kucing/burung menunjukkan penyediaan makanan dan perlindungan; sebab penjagaan menyokong kemandirian.",
+      "implementation_note": "Jangan mendekati, menyentuh atau memberi makan anak haiwan sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-038",
+      "sp": "3.1.6",
+      "title": "Komunikasi tentang kemandirian haiwan",
+      "minutes": 30,
+      "review_basis": "Dua lakaran berlabel dan penjelasan habitat menepati komunikasi tentang kemandirian.",
+      "implementation_note": "Gunakan galeri foto sedia ada; jangan mencari haiwan berbahaya untuk pameran.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-039",
+      "sp": "3.2.1",
+      "title": "Mereka cipta model haiwan imaginasi",
+      "minutes": 60,
+      "review_basis": "Model tiga ciri, simulasi kad ancaman dan justifikasi menepati tugasan mencipta; 60 minit.",
+      "implementation_note": "Pastikan tiga ciri merangkumi kedua-dua musuh dan cuaca; guna bahan selamat dan gunting hujung bulat.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-040",
+      "sp": "3.2.2",
+      "title": "Menaakul ciri model haiwan",
+      "minutes": 30,
+      "review_basis": "Padanan model dengan ancaman dan perubahan habitat menuntut dua justifikasi.",
+      "implementation_note": "Semakan berasaskan model/kad, bukan demonstrasi haiwan beracun.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-041",
+      "sp": "3.2.2",
+      "title": "Pengukuhan reka bentuk mengikut ancaman",
+      "minutes": 30,
+      "review_basis": "Satu ciri untuk musuh dan satu untuk cuaca serta pengubahsuaian label menguji pemindahan idea.",
+      "implementation_note": "Gunakan lakaran sahaja; kekalkan sebab setiap ciri.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-042",
+      "sp": "3.2.3",
+      "title": "Ciri haiwan dan keseimbangan alam",
+      "minutes": 30,
+      "review_basis": "Perbandingan model dengan haiwan sebenar dan sebab kepelbagaian menyokong komunikasi keseimbangan alam.",
+      "implementation_note": "Hormati pandangan murid; elakkan dakwaan bahawa semua ciri sentiasa menjamin kemandirian.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-043",
+      "sp": "3.2.4",
+      "title": "Lakaran dan penerangan model haiwan",
+      "minutes": 30,
+      "review_basis": "Lakaran dua ciri berlabel, pembentangan dan semakan maklum balas menepati SP.",
+      "implementation_note": "Tidak perlu haiwan sebenar; beri ruang penjelasan individu.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-044",
+      "sp": "3.3.1",
+      "title": "Maksud rantai makanan",
+      "minutes": 30,
+      "review_basis": "Susunan empat organisma dan arah makanan kepada pemakan menyokong takrif rantai makanan.",
+      "implementation_note": "Kad contoh daripada sumber; pastikan anak panah menunjukkan perpindahan tenaga.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-045",
+      "sp": "3.3.2",
+      "title": "Pengeluar dan pengguna",
+      "minutes": 30,
+      "review_basis": "Dua pengeluar dan tiga pengguna dikelaskan dengan sebab serta aplikasi dua rantai tambahan.",
+      "implementation_note": "Pastikan dua tumbuhan dan tiga haiwan tersedia pada kad; tiada haiwan hidup.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-046",
+      "sp": "3.3.3",
+      "title": "Hubungan makanan dengan fotosintesis",
+      "minutes": 30,
+      "review_basis": "Matahari, pengeluar dan pengguna menunjukkan cahaya digunakan dalam fotosintesis serta tenaga makanan berpindah.",
+      "implementation_note": "Bezakan anak panah cahaya kepada tumbuhan daripada anak panah hubungan makan; jangan melabel Matahari sebagai organisma.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-047",
+      "sp": "3.3.3",
+      "title": "Pengukuhan aliran tenaga daripada pengeluar",
+      "minutes": 30,
+      "review_basis": "Pengukuhan membezakan cahaya sebagai sumber tenaga daripada tumbuhan sebagai pengeluar.",
+      "implementation_note": "Jelaskan bahawa kad daun mewakili tumbuhan; Matahari bukan pengeluar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-048",
+      "sp": "3.3.4",
+      "title": "Maksud siratan makanan",
+      "minutes": 30,
+      "review_basis": "Gabungan dua rantai berkait dan tambahan hubungan menguji takrif siratan.",
+      "implementation_note": "Gunakan hubungan munasabah dalam habitat yang sama dan arah anak panah tepat.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-049",
+      "sp": "3.3.5",
+      "title": "Membina siratan makanan di habitat berbeza",
+      "minutes": 60,
+      "review_basis": "Dua siratan berlainan habitat dengan pengeluar/pengguna dan semakan individu memenuhi SP; 60 minit.",
+      "implementation_note": "Asingkan set sawah dan kolam; semak hubungan berdasarkan kad sumber.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-050",
+      "sp": "3.3.6",
+      "title": "Meramal kesan perubahan populasi",
+      "minutes": 30,
+      "review_basis": "Dua ramalan bersyarat daripada perubahan belalang/pemangsa menguji sebab-akibat.",
+      "implementation_note": "Nyatakan andaian bahawa hubungan lain dalam carta kekal; tidak menjamin hasil ekosistem sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-051",
+      "sp": "3.3.7",
+      "title": "Penerangan pemerhatian hubungan makanan",
+      "minutes": 30,
+      "review_basis": "Lakaran siratan dan ramalan beralasan merupakan komunikasi pemerhatian berdasarkan peta.",
+      "implementation_note": "Semak arah anak panah serta bukti dalam rajah; tiada haiwan sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}

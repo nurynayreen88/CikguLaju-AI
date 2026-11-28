@@ -1,0 +1,327 @@
+{
+  "year": 5,
+  "status": "PROPOSED_ADDITIONS_NOT_SOURCE_FIELDS",
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y5_native_001_015_20261128.json",
+      "blob": "a5690fcf9bde587e7866adaac56ac914a7779669"
+    },
+    {
+      "path": "audits/rph_5p_science_y5_native_016_031_20261128.json",
+      "blob": "ae891bb48d9081cb3ab4f33ac8fbc2cf785fb4f5"
+    }
+  ],
+  "policy": "New pedagogical suggestions based on actual 5P draft activities; not verbatim source, not approved. Keep original objective, PBD and materials. No runtime integration or release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-001",
+      "title": "Pemerhatian kualitatif dengan deria",
+      "pak21": "Think-Pair-Share",
+      "emk": "Bahasa: istilah bentuk dan saiz",
+      "pemulihan": "Beri kad ciri visual untuk dipadankan dengan bahagian pesawat.",
+      "pengayaan": "Bandingkan tiga ciri dua model tanpa membuat inferens.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-002",
+      "title": "Pengukuhan pemerhatian sebelum dan selepas",
+      "pak21": "Padanan kad berpasangan",
+      "emk": "Bahasa: pemerhatian dan inferens",
+      "pemulihan": "Pilih pernyataan yang dapat dilihat daripada dua gambar.",
+      "pengayaan": "Tukar dua inferens kepada pemerhatian yang disokong gambar.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-003",
+      "title": "Pengelasan berdasarkan ciri sepunya",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Sains dan teknologi: pengelasan sistematik",
+      "pemulihan": "Sediakan alas kategori muncung lebar dan sempit.",
+      "pengayaan": "Bina kaedah pengelasan kedua mengikut lipatan atau lebar sayap.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-004",
+      "title": "Pengukuran suhu dengan unit piawai",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: penggunaan termometer",
+      "pemulihan": "Bimbing kedudukan prob dan bacaan stabil menggunakan satu sampel.",
+      "pengayaan": "Bandingkan dua bacaan ulangan serta jelaskan kemungkinan perbezaannya.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-005",
+      "title": "Inferens daripada bacaan suhu",
+      "pak21": "Think-Pair-Share",
+      "emk": "Bahasa: ayat inferens berasaskan bukti",
+      "pemulihan": "Sediakan rangka ayat kerana dan dua nilai suhu.",
+      "pengayaan": "Pilih inferens alternatif dan nyatakan bukti tambahan yang diperlukan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-006",
+      "title": "Ramalan perubahan suhu",
+      "pak21": "Perbincangan pasangan",
+      "emk": "Sains dan teknologi: pola data",
+      "pemulihan": "Susun tiga bacaan menggunakan anak panah menurun.",
+      "pengayaan": "Bandingkan ramalan daripada dua pola dan nyatakan had data.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-007",
+      "title": "Pengukuhan ramalan berdasarkan data baharu",
+      "pak21": "Perbincangan berasaskan data",
+      "emk": "Nilai murni: jujur terhadap bukti",
+      "pemulihan": "Bulatkan bacaan yang menyokong ramalan pada kad.",
+      "pengayaan": "Nilai satu set bacaan bercanggah dan nyatakan batas ramalan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-008",
+      "title": "Menyampaikan dapatan dalam jadual",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Bahasa: komunikasi maklumat",
+      "pemulihan": "Beri jadual dengan tajuk dan unit tersedia.",
+      "pengayaan": "Bina jadual sendiri dan tulis dua perbandingan bernombor.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-009",
+      "title": "Menyusun perubahan buih mengikut masa",
+      "pak21": "Susun kad secara kumpulan",
+      "emk": "TMK: pemerhatian rakaman",
+      "pemulihan": "Padankan dua gambar awal dan akhir dengan label saat.",
+      "pengayaan": "Susun empat keadaan baharu dan terangkan perubahan antara sela masa.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-010",
+      "title": "Mentafsir data tempoh buih",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: tafsiran carta",
+      "pemulihan": "Tandakan bacaan tertinggi dan terendah pada carta.",
+      "pengayaan": "Bandingkan dua tafsiran dan kenal pasti tafsiran yang lebih disokong data.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-011",
+      "title": "Takrif operasi tempoh buih",
+      "pak21": "Pembelajaran berpasangan",
+      "emk": "Sains dan teknologi: pengukuran masa",
+      "pemulihan": "Jeda klip pada peristiwa mula dan tamat untuk bimbingan.",
+      "pengayaan": "Uji takrif operasi pada klip lain serta semak perbezaan bacaan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-012",
+      "title": "Pemboleh ubah dalam ujian buih",
+      "pak21": "Padanan kad berpasangan",
+      "emk": "Sains dan teknologi: ujian adil",
+      "pemulihan": "Beri jadual tiga kategori dengan contoh faktor ubah.",
+      "pengayaan": "Kenal pasti dua kawalan tambahan yang relevan dalam situasi ujian baharu.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-013",
+      "title": "Pengukuhan pemboleh ubah ujian adil",
+      "pak21": "Penyelesaian masalah kolaboratif",
+      "emk": "Nilai murni: ketelitian",
+      "pemulihan": "Tandakan dua faktor berubah dalam rancangan cacat.",
+      "pengayaan": "Reka pembetulan bagi rancangan lain yang mempunyai kawalan hilang.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-014",
+      "title": "Hipotesis dalam ujian buih",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Bahasa: pernyataan hipotesis",
+      "pemulihan": "Beri rangka ayat apabila larutan berubah, tempoh buih…",
+      "pengayaan": "Bina hipotesis alternatif yang boleh diuji dengan kaedah sama.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-015",
+      "title": "Eksperimen tempoh buih bertahan",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Nilai murni: jujur dan bekerjasama",
+      "pemulihan": "Beri jadual empat bacaan dan bimbing cara memulakan jam randik.",
+      "pengayaan": "Bandingkan ulangan dan cadangkan satu penambahbaikan ketekalan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-016",
+      "title": "Fungsi rangka utama manusia",
+      "pak21": "Padanan kad kolaboratif",
+      "emk": "Sains dan teknologi: struktur dan fungsi",
+      "pemulihan": "Padankan tiga gambar tulang dengan kad fungsi bergambar.",
+      "pengayaan": "Jelaskan dua fungsi rangka dengan contoh organ dilindungi.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-017",
+      "title": "Kedudukan tulang dan sendi",
+      "pak21": "Pembelajaran berpasangan",
+      "emk": "Bahasa: istilah anatomi",
+      "pemulihan": "Beri rajah separa berlabel dan kad nama tulang.",
+      "pengayaan": "Label rajah tanpa bantuan serta bezakan lokasi tulang dan sendi.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-018",
+      "title": "Fungsi sendi dalam pergerakan",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: pergerakan model",
+      "pemulihan": "Padankan gambar siku lurus dan bengkok dengan label sendi.",
+      "pengayaan": "Bandingkan fungsi sendi siku dan bahu menggunakan model sahaja.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-019",
+      "title": "Pengukuhan padanan sendi dan pergerakan",
+      "pak21": "Padanan gambar berpasangan",
+      "emk": "Bahasa: penerangan fungsi",
+      "pemulihan": "Sediakan dua gambar gerakan dengan pilihan sendi.",
+      "pengayaan": "Terangkan padanan bagi dua gambar baharu dan bezakan fungsi sendinya.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-020",
+      "title": "Kepentingan sistem rangka",
+      "pak21": "Penyelesaian masalah kumpulan",
+      "emk": "Nilai murni: menghargai kesihatan",
+      "pemulihan": "Beri kad situasi dan pilihan fungsi rangka.",
+      "pengayaan": "Huraikan kesan kehilangan sokongan dan perlindungan dalam dua situasi rekaan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-021",
+      "title": "Lakaran dan penerangan sistem rangka",
+      "pak21": "Pembentangan galeri",
+      "emk": "Kreativiti dan inovasi: lakaran berlabel",
+      "pemulihan": "Beri lakaran rangka dengan tiga label permulaan.",
+      "pengayaan": "Tambah dua penerangan fungsi dengan anak panah pada lakaran.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-022",
+      "title": "Bahagian utama sistem peredaran darah",
+      "pak21": "Padanan kad berpasangan",
+      "emk": "Sains dan teknologi: fungsi organ",
+      "pemulihan": "Padankan label jantung, peparu dan salur darah pada rajah.",
+      "pengayaan": "Terangkan kaitan empat bahagian dengan perjalanan darah.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-023",
+      "title": "Dua laluan peredaran darah",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: model aliran darah",
+      "pemulihan": "Beri rajah satu gelung dengan anak panah permulaan.",
+      "pengayaan": "Lakar kedua-dua gelung tanpa panduan dan jelaskan arah aliran balik.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-024",
+      "title": "Pengukuhan arah aliran darah",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Nilai murni: ketelitian",
+      "pemulihan": "Jejak laluan satu gelung menggunakan kad anak panah.",
+      "pengayaan": "Betulkan dua rajah yang mempunyai arah atau label aliran salah.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-025",
+      "title": "Kepentingan peredaran darah",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: fungsi sistem",
+      "pemulihan": "Padankan kad oksigen dan nutrien kepada organ.",
+      "pengayaan": "Terangkan kesan gangguan bekalan kepada dua organ dalam senario rekaan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-026",
+      "title": "Penerangan pemerhatian peredaran darah",
+      "pak21": "Pembentangan poster",
+      "emk": "Kreativiti dan inovasi: komunikasi visual",
+      "pemulihan": "Sediakan poster separa berlabel untuk dilengkapkan.",
+      "pengayaan": "Bentangkan dua fungsi peredaran dengan bukti daripada lakaran.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-027",
+      "title": "Perkaitan antara sistem tubuh",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: hubungan sistem",
+      "pemulihan": "Beri kad peparu, usus dan jantung dengan anak panah panduan.",
+      "pengayaan": "Bina peta hubungan oksigen serta nutrien dalam satu situasi rekaan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-028",
+      "title": "Kepentingan menjaga sistem tubuh",
+      "pak21": "Perbincangan kes berpasangan",
+      "emk": "Nilai murni: menjaga kesihatan",
+      "pemulihan": "Padankan satu fungsi sistem dengan kesan gangguan rekaan.",
+      "pengayaan": "Terangkan dua hubungan sebab akibat tanpa membuat diagnosis.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-029",
+      "title": "Cara memelihara sistem tubuh",
+      "pak21": "Penyelesaian masalah kumpulan",
+      "emk": "Nilai murni: amalan hidup sihat",
+      "pemulihan": "Beri kad tiga amalan dan pilihan sistem yang berkaitan.",
+      "pengayaan": "Reka jadual amalan watak dengan sebab yang melibatkan dua sistem.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-030",
+      "title": "Pengukuhan pilihan amalan penjagaan",
+      "pak21": "Think-Pair-Share",
+      "emk": "Nilai murni: tanggungjawab terhadap kesihatan",
+      "pemulihan": "Beri dua pilihan amalan bagi satu watak dan rangka alasan.",
+      "pengayaan": "Bandingkan dua amalan baharu dan jelaskan kaitannya dengan fungsi sistem.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-031",
+      "title": "Lakaran hubungan antara sistem tubuh",
+      "pak21": "Pembentangan peta alir",
+      "emk": "Kreativiti dan inovasi: visualisasi hubungan",
+      "pemulihan": "Lengkapkan peta dengan label tiga sistem dan anak panah panduan.",
+      "pengayaan": "Lakar peta sendiri serta jelaskan kesan satu aliran terganggu.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    }
+  ]
+}
