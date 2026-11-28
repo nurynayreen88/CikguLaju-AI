@@ -1,0 +1,40 @@
+name: SK Mathematics DPK Year 2 and 3 editable Word QA
+on:
+  pull_request:
+    paths:
+      - 'tools/build_rpt_math_dpk_native_word_20261127.py'
+      - 'web/rpt_math_dpk_word.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'tests/test_sk_dpk_word_download_20261127.py'
+      - '.github/workflows/sk-dpk-native-word-qa-20261127.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation fonts-dejavu-core
+          pip install python-docx pymupdf pillow requests flask reportlab pypdf docxcompose
+      - name: Generate and verify both DPK candidates
+        run: |
+          mkdir -p "$RUNNER_TEMP/dpk-qa"
+          for y in 2 3; do
+            python -m tools.build_rpt_math_dpk_native_word_20261127 --year "$y" --out "$RUNNER_TEMP/dpk-qa"
+          done
+      - name: Test actual paid Word and unchanged PDF routes
+        run: python -m unittest discover -s tests -p test_sk_dpk_word_download_20261127.py -v
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sk-dpk-t2-t3-word-private-qa
+          path: ${{ runner.temp }}/dpk-qa/
+          if-no-files-found: warn
+          retention-days: 7
