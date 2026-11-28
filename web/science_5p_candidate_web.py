@@ -16,6 +16,7 @@ from web_v1_sessions import verify_session_ticket
 from web import native_telegram_sequence_rph_client as native
 
 URL = "/api/kssr/sk/science/5p/candidate/download"
+AVAILABILITY_URL = "/api/kssr/sk/science/5p/candidate/available"
 # No production release decision has been recorded.
 RELEASE_APPROVED = False
 
@@ -69,6 +70,46 @@ def create_blueprint():
         resp.headers["X-Content-Type-Options"]="nosniff"
         resp.headers["Vary"]="Cookie"
         return resp
+    def account_for_request():
+        config=_config()
+        if not config or config.get("account_backend")!="supabase":
+            return None,None,None,error(503,"LOGIN_BACKEND_UNAVAILABLE")
+        uid=verify_session_ticket(request.cookies.get(COOKIE),config["CIKGULAJU_WEB_SESSION_SECRET"])
+        if type(uid) is not int or uid<=0:
+            return None,None,None,error(401,"AUTH_REQUIRED")
+        try:
+            account=_lookup(config,uid)
+        except Exception:
+            return None,None,None,error(503,"ACCOUNT_LOOKUP_FAILED")
+        if (not isinstance(account,dict) or account.get("authenticated") is not True
+                or account.get("telegram_user_id")!=uid):
+            return None,None,None,error(403,"ACCOUNT_NOT_VERIFIED")
+        return config,uid,account,None
+
+    @bp.get(AVAILABILITY_URL)
+    def availability():
+        if not enabled():
+            return error(404,"SCIENCE_5P_UNAVAILABLE")
+        config,uid,account,denied=account_for_request()
+        if denied is not None:
+            return denied
+        if set(request.args) != {"year","subject","unit","lesson"} or any(len(request.args.getlist(k))!=1 for k in request.args):
+            return error(400,"INVALID_SELECTION")
+        y=request.args.get("year")
+        if y not in ("5","6") or request.args.get("subject")!="SCIENCE":
+            return error(404,"UNSUPPORTED_SELECTION")
+        if not has_active_paid_access(account):
+            remaining=account.get("free_remaining")
+            if type(remaining) is not int or not 0<=remaining<=10:
+                return error(503,"TRIAL_UNVERIFIED")
+            if remaining==0:
+                return error(403,"FREE_TRIAL_EXHAUSTED")
+        try:
+            rows,_=_inventory(int(y))
+            verified_selection(int(y),request.args["unit"],request.args["lesson"],rows)
+        except Exception:
+            return error(503,"RPH_SOURCE_UNAVAILABLE")
+        return jsonify(available=True,formats=["word","pdf"],status="DRAFT-NOT-FOR-TEACHING")
     @bp.post(URL)
     def download():
         if not enabled():
@@ -87,19 +128,9 @@ def create_blueprint():
                 or payload["rph_variant"]!="5p" or fmt not in ("word","pdf")
                 or not isinstance(payload["unit"],str) or not isinstance(payload["lesson"],str)):
             return error(404,"UNSUPPORTED_SELECTION")
-        config=_config()
-        if not config or config.get("account_backend")!="supabase":
-            return error(503,"LOGIN_BACKEND_UNAVAILABLE")
-        uid=verify_session_ticket(request.cookies.get(COOKIE),config["CIKGULAJU_WEB_SESSION_SECRET"])
-        if type(uid) is not int or uid<=0:
-            return error(401,"AUTH_REQUIRED")
-        try:
-            account=_lookup(config,uid)
-        except Exception:
-            return error(503,"ACCOUNT_LOOKUP_FAILED")
-        if (not isinstance(account,dict) or account.get("authenticated") is not True
-                or account.get("telegram_user_id")!=uid):
-            return error(403,"ACCOUNT_NOT_VERIFIED")
+        config,uid,account,denied=account_for_request()
+        if denied is not None:
+            return denied
         if not has_active_paid_access(account):
             balance=account.get("free_remaining")
             if type(balance) is not int or not 0<=balance<=10:
