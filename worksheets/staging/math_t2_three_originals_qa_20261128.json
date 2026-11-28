@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "status": "ALL_THREE_ORIGINAL_AND_KEY_PDF_PAIRS_VISUALLY_VERIFIED_NATIVE_IDENTITY_PENDING",
+  "scope": "KSSR SK",
+  "year": 2,
+  "subject": "MATH",
+  "unit": "Nombor Hingga 1000",
+  "records": [
+    {
+      "title": "Cerakin Nombor",
+      "sk": "1.4",
+      "sp": "1.4.2",
+      "candidate_pdp": "MT2-PDP-008",
+      "source_file": "file_00000000658c8211a44165ef8ce4ae75",
+      "drive_file_id": "1-wuU6KER35lLJsxhxmz3xW5xpkJVcFlb",
+      "sha256": "6c266de4f7235c5c67d2a84d5bae7bfa6ef8a1b0f259bde5ef1bc9582d89565b",
+      "size_bytes": 42399,
+      "pages": 2,
+      "questions": 19,
+      "answer_key": [
+        [
+          "A",
+          [
+            "1. 3 ratus + 2 puluh + 6 sa",
+            "2. 5 ratus + 8 puluh + 1 sa",
+            "3. 7 ratus + 0 puluh + 4 sa",
+            "4. 9 ratus + 6 puluh + 0 sa"
+          ]
+        ],
+        [
+          "B",
+          [
+            "5. 400 + 10 + 3",
+            "6. 800 + 90 + 2",
+            "7. 500 + 0 + 7",
+            "8. 600 + 80 + 0"
+          ]
+        ],
+        [
+          "C",
+          [
+            "9. 285",
+            "10. 603",
+            "11. 940",
+            "12. 372",
+            "13. 806",
+            "14. 520"
+          ]
+        ],
+        [
+          "D",
+          [
+            "15. 7 ratus + 3 puluh + 8 sa",
+            "16. 4 ratus + 0 puluh + 6 sa",
+            "17. 800 + 50 + 2",
+            "18. 300 + 0 + 9",
+            "19. 600 + 70 + 0"
+          ]
+        ]
+      ],
+      "visual_reviewed": true,
+      "answer_key_pdf": {
+        "sha256": "d900706fad33fa91fdc86c93a590c22283a909f9a903de4a2d0dc36e141b3f60",
+        "size_bytes": 2519,
+        "pages": 1,
+        "build_run": 46139562511,
+        "artifact_id": 15261296853,
+        "source": "reviewed_answer_key_content",
+        "text_and_a4_verified": true,
+        "visual_review_pending": false,
+        "visual_review_passed": true,
+        "preview_run": 46140004022
+      },
+      "runtime_unit": null,
+      "runtime_lesson": null,
+      "release": false
+    },
+    {
+      "title": "Banding Nombor",
+      "sk": "1.1",
+      "sp": "1.1.2 (iii)",
+      "candidate_pdp": "MT2-PDP-009",
+      "source_file": "file_000000002c0c82079003cdfc78e64dd6",
+      "drive_file_id": "1oYcp5qQ5QuLzpNdg7xLUryKnTH7l8qJ2",
+      "sha256": "585b098a5c56727af28fc1d4a611d2f89baa048ac4bf57da0739028533313897",
+      "size_bytes": 60707,
+      "pages": 1,
+      "questions": 12,
+      "answer_key": [
+        [
+          "A",
+          [
+            "1. lebih kecil",
+            "2. lebih kecil",
+            "3. lebih besar",
+            "4. lebih besar",
+            "5. lebih kecil",
+            "6. lebih besar"
+          ]
+        ],
+        [
+          "B",
+          [
+            "7. Salah",
+            "8. Salah",
+            "9. Betul",
+            "10. Betul",
+            "11. Betul",
+            "12. Betul"
+          ]
+        ]
+      ],
+      "visual_reviewed": true,
+      "answer_key_pdf": {
+        "sha256": "d424fe43fa88d9bee7058eedd905d6c98344ee66e2c232fb09b510b205026dfa",
+        "size_bytes": 2342,
+        "pages": 1,
+        "build_run": 46139562511,
+        "artifact_id": 15261296853,
+        "source": "reviewed_answer_key_content",
+        "text_and_a4_verified": true,
+        "visual_review_pending": false,
+        "visual_review_passed": true,
+        "preview_run": 46140004022
+      },
+      "runtime_unit": null,
+      "runtime_lesson": null,
+      "release": false
+    },
+    {
+      "title": "Susun Nombor",
+      "sk": "1.1",
+      "sp": "1.1.2 (iv)",
+      "candidate_pdp": "MT2-PDP-010",
+      "source_file": "file_0000000086808211b9ef1021ffaaeeb9",
+      "drive_file_id": "1xbOFQQ0S8EK4bh5NUoQYIAzaEanaLT3S",
+      "sha256": "d60fc6700a5e0b0f00088e66e5323954914e56c167c9204f0dd3a7cefebfabaa",
+      "size_bytes": 64902,
+      "pages": 2,
+      "questions": 5,
+      "answer_key": [
+        [
+          "A",
+          [
+            "1a. 300; 1b. 100; 1c. 400; 1d. 200",
+            "Menaik: 100, 200, 300, 400",
+            "Menurun: 400, 300, 200, 100"
+          ]
+        ],
+        [
+          "B",
+          [
+            "2. 146, 166; menaik (+10)",
+            "3. 975, 965; menurun (-5)",
+            "4. 411, 413; menaik (+1)",
+            "5. 736, 727; menurun (-3)"
+          ]
+        ]
+      ],
+      "teacher_note": "Soalan 2–5 menggunakan pola sela tetap yang tersirat. Arahan tidak menyebut sela tetap; terima jawapan lain yang memenuhi tertib dan nombor yang diberi, atau jelaskan sela tetap secara lisan.",
+      "visual_reviewed": true,
+      "answer_key_pdf": {
+        "sha256": "1a8ec5db3df033a02830b58ac69aa299bdc49d0a67d051a2932c359e60d18748",
+        "size_bytes": 2564,
+        "pages": 1,
+        "build_run": 46140089397,
+        "source": "reviewed_answer_key_content",
+        "text_and_a4_verified": true,
+        "visual_review_pending": false,
+        "previous_private_asset": {
+          "sha256": "bef89154ead1b3b89b798b9fe1cd1300afef66f4353a03b08b7cfc70628a8361",
+          "size_bytes": 2589
+        },
+        "replacement_required": false,
+        "preview_run": 46140089397,
+        "visual_review_passed": true,
+        "storage_integrity_verified": true
+      },
+      "runtime_unit": null,
+      "runtime_lesson": null,
+      "release": false
+    }
+  ],
+  "note": "All three teacher keys passed visual review and private stored SHA/length checks. Susun copyedit complete. Exact live identity and academic source verification pending. No production edits."
+}
