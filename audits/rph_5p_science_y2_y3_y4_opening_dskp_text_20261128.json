@@ -1,0 +1,164 @@
+{
+  "status": "FULL_SP_TEXT_MATCHED_TO_PROJECT_DSKP_FILES",
+  "source_manifest_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+  "total_lessons": 22,
+  "total_standards": 34,
+  "normalization": "Whitespace only; exact statement matched against project Drive PDF extracted text.",
+  "years": {
+    "2": {
+      "drive_file": "1Kyzqbs4aK8c4IynMZ1DvOdf0pxRj68Pl",
+      "edition": 2016,
+      "standards": {
+        "1.1.1": {
+          "text": "Memerhati",
+          "page": 37
+        },
+        "1.1.2": {
+          "text": "Mengelas",
+          "page": 39
+        },
+        "1.1.3": {
+          "text": "Mengukur dan menggunakan nombor",
+          "page": 40
+        },
+        "1.1.4": {
+          "text": "Berkomunikasi",
+          "page": 41
+        },
+        "1.2.1": {
+          "text": "Menggunakan dan mengendalikan peralatan dan bahan sains dengan betul.",
+          "page": 42
+        },
+        "1.2.2": {
+          "text": "Mengendalikan spesimen dengan betul dan cermat.",
+          "page": 42
+        },
+        "1.2.3": {
+          "text": "Melakar spesimen, peralatan dan bahan sains dengan betul.",
+          "page": 42
+        },
+        "1.2.4": {
+          "text": "Membersihkan peralatan sains dengan cara yang betul.",
+          "page": 42
+        },
+        "1.2.5": {
+          "text": "Menyimpan peralatan dan bahan sains dengan betul dan selamat.",
+          "page": 42
+        },
+        "2.1.1": {
+          "text": "Mematuhi peraturan bilik sains",
+          "page": 44
+        }
+      }
+    },
+    "3": {
+      "drive_file": "17YPj3KbdceHXtQjnnJ6JnAbP09rA0x-O",
+      "edition": 2017,
+      "standards": {
+        "1.1.1": {
+          "text": "Memerhati",
+          "page": 38
+        },
+        "1.1.2": {
+          "text": "Mengelas",
+          "page": 40
+        },
+        "1.1.3": {
+          "text": "Mengukur dan menggunakan nombor",
+          "page": 42
+        },
+        "1.1.4": {
+          "text": "Membuat inferens",
+          "page": 44
+        },
+        "1.1.5": {
+          "text": "Meramal",
+          "page": 46
+        },
+        "1.1.6": {
+          "text": "Berkomunikasi",
+          "page": 48
+        },
+        "1.2.1": {
+          "text": "Menggunakan dan mengendalikan peralatan dan bahan sains dengan betul.",
+          "page": 50
+        },
+        "1.2.2": {
+          "text": "Mengendalikan spesimen dengan betul dan cermat.",
+          "page": 50
+        },
+        "1.2.3": {
+          "text": "Melakar spesimen, peralatan dan bahan sains dengan betul.",
+          "page": 50
+        },
+        "1.2.4": {
+          "text": "Membersihkan peralatan sains dengan cara yang betul.",
+          "page": 50
+        },
+        "1.2.5": {
+          "text": "Menyimpan peralatan dan bahan sains dengan betul dan selamat.",
+          "page": 50
+        },
+        "2.1.1": {
+          "text": "Mematuhi peraturan bilik sains.",
+          "page": 52
+        }
+      }
+    },
+    "4": {
+      "drive_file": "1OKcOhiGQPkvn9Beew8TukHmDSTcCuYQ0",
+      "edition": 2018,
+      "standards": {
+        "1.1.1": {
+          "text": "Memerhati dengan menggunakan semua deria yang terlibat dan alat jika perlu untuk membuat pemerhatian secara kualitatif bagi menerangkan fenomena atau perubahan yang berlaku.",
+          "page": 42
+        },
+        "1.1.2": {
+          "text": "Mengelas dengan membandingkan atau mengenal pasti persamaan dan perbezaan berdasarkan ciri sepunya.",
+          "page": 42
+        },
+        "1.1.3": {
+          "text": "Mengukur dan menggunakan nombor dengan menggunakan alat dan unit piawai dengan teknik yang betul.",
+          "page": 42
+        },
+        "1.1.4": {
+          "text": "Membuat inferens dengan menyatakan kesimpulan awal atau penerangan yang munasabah bagi sesuatu pemerhatian dengan menggunakan maklumat yang diperoleh.",
+          "page": 42
+        },
+        "1.1.5": {
+          "text": "Meramal dengan membuat jangkaan tentang sesuatu peristiwa atau fenomena berdasarkan pemerhatian, pengalaman lalu atau data.",
+          "page": 43
+        },
+        "1.1.6": {
+          "text": "Berkomunikasi dengan merekod maklumat atau idea dalam bentuk yang sesuai dan mempersembahkan maklumat atau idea tersebut secara sistematik.",
+          "page": 43
+        },
+        "1.1.7": {
+          "text": "Menggunakan perhubungan ruang dan masa dengan menyusun kejadian sesuatu fenomena atau peristiwa mengikut kronologi berdasarkan masa.",
+          "page": 43
+        },
+        "1.1.8": {
+          "text": "Mentafsir data dengan memilih idea yang relevan tentang objek, peristiwa atau pola yang terdapat pada data untuk membuat penerangan.",
+          "page": 43
+        },
+        "1.1.9": {
+          "text": "Mendefinisi secara operasi dengan memerihalkan satu tafsiran tentang perkara yang dilakukan dan diperhatikan bagi sesuatu situasi mengikut aspek yang ditentukan.",
+          "page": 44
+        },
+        "1.1.10": {
+          "text": "Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan setelah pemboleh ubah dimanipulasi ditentukan dalam sesuatu penyiasatan.",
+          "page": 44
+        },
+        "1.1.11": {
+          "text": "Membuat hipotesis dengan membuat pernyataan umum yang boleh diuji tentang hubungan antara pemboleh ubah dalam sesuatu penyiasatan.",
+          "page": 44
+        },
+        "1.1.12": {
+          "text": "Mengeksperimen dengan menggunakan kemahiran proses sains asas bagi mengumpul dan mentafsir data serta membuat rumusan untuk membuktikan hipotesis dan membuat laporan.",
+          "page": 44
+        }
+      }
+    }
+  },
+  "limitations": "Original Drive sources used; no official endorsement or duration/active catalogue confirmation. Drafts remain blocked."
+}
