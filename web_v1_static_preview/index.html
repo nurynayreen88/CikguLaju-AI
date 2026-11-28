@@ -2932,11 +2932,13 @@ async function downloadScience5pCandidate(format){
  const selected=science5pSelection(),p=currentRphParams(),key=currentRphLessonKey();
  if(!selected||!p||science5pBusy||rphDownloadBusy||!canGenerateRph()||!["word","pdf"].includes(format))return;
  const status=document.getElementById("materials-status");
- const mode=teacherReflectionMode.value;
+ const mode=teacherReflectionMode.value,reflection=teacherReflection.value;
+ const stillCurrent=()=>currentRphLessonKey()===key&&currentRphParams()?.toString()===p.toString()&&
+    teacherReflectionMode.value===mode&&teacherReflection.value===reflection;
  const payload={...selected,format,rph_variant:"5p",reflection_mode:mode};
  for(const name of ["teacher_class","teacher_date","teacher_start","teacher_end","teacher_students"])
   payload[name]=p.get(name)||"";
- if(mode==="manual")payload.reflection=teacherReflection.value;
+ if(mode==="manual")payload.reflection=reflection;
  science5pBusy=true;rphDownloadBusy=true;
  try{
   const resp=await fetch("/api/kssr/sk/science/5p/candidate/download",{
@@ -2950,12 +2952,12 @@ async function downloadScience5pCandidate(format){
   const remaining=resp.headers.get("X-RPH-Trial-Remaining");
   if(/^(?:[0-9]|10)$/.test(remaining||""))applyRphAccount({
    rph_access_mode:Number(remaining)>0?"trial":"exhausted",rph_trial_remaining:Number(remaining)});
-  if(currentRphLessonKey()!==key||currentRphParams()?.toString()!==p.toString())return;
+  if(!stillCurrent())return;
   if(resp.headers.get("X-RPH-QA-Status")!=="DRAFT-NOT-FOR-TEACHING"||
       !(resp.headers.get("content-type")||"").includes(format==="pdf"?"application/pdf":"wordprocessingml"))
    throw Error("Format RPH 5P QA tidak sah.");
   const blob=await resp.blob();
-  if(currentRphLessonKey()!==key||currentRphParams()?.toString()!==p.toString())return;
+  if(!stillCurrent())return;
   if(blob.size<1000||blob.size>15*1024*1024)throw Error("Saiz fail RPH 5P QA tidak sah.");
   const url=URL.createObjectURL(blob),link=document.createElement("a");
   link.href=url;link.download="CIKGULAJU_"+selected.lesson.replace(/[^a-zA-Z0-9_-]/g,"_")+"_5P_DRAF_QA."+(format==="pdf"?"pdf":"docx");
@@ -2963,7 +2965,7 @@ async function downloadScience5pCandidate(format){
   setTimeout(()=>URL.revokeObjectURL(url),30000);
   status.textContent="RPH 5P draf QA dimuat turun.";
  }catch(error){if(currentRphLessonKey()===key)status.textContent=error.message;}
- finally{science5pBusy=false;rphDownloadBusy=false;}
+ finally{science5pBusy=false;rphDownloadBusy=false;showRphAction();}
 }
 async function populateMaterialList(){
  const key=currentRphLessonKey();
