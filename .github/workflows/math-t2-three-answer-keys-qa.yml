@@ -1,0 +1,24 @@
+name: Math T2 three original answer keys QA
+on:
+  pull_request:
+    paths:
+      - 'tools/build_math_t2_three_answer_keys_20261128.py'
+      - 'worksheets/staging/math_t2_three_originals_qa_20261128.json'
+      - '.github/workflows/math-t2-three-answer-keys-qa.yml'
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install reportlab==4.4.5 PyMuPDF==1.26.5
+      - run: python tools/build_math_t2_three_answer_keys_20261128.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: math-t2-three-answer-keys-qa
+          path: math_t2_key_qa/
