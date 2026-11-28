@@ -16,7 +16,7 @@ class TestFiveP(unittest.TestCase):
         records=release.reviewed_records()
         approved={key:dict(row,ready=False,status='INITIAL_CONTENT_REVIEW_COMPLETE') for key,row in records.items()}
         approved['A',1].update(ready=True,status='APPROVED_FOR_RELEASE')
-        patcher=patch.object(release,'reviewed_records',return_value=approved)
+        patcher=patch.object(release,'publication_records',return_value=approved)
         patcher.start()
         self.addCleanup(patcher.stop)
     def test_complete_and_native_pdf(self):
