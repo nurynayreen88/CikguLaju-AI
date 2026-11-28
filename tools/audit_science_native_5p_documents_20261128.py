@@ -145,9 +145,9 @@ DISPLAY_REFS = {
 # field audit. The exact locked original records and PBD stay unchanged.
 PRINT_CORRECTIONS = {
     5: ("audits/rph_5p_science_y5_print_corrections_20261128.json",
-        "8571a492e59ec9ff46c74aa46b02fb1bc9be0380", 32),
+        "c801351641a937059f6c2920702bd2b4d974f6bf", 33),
     6: ("audits/rph_5p_science_y6_print_corrections_20261128.json",
-        "8695da61fc6229e2a14b9853749d19f8fc31600f", 46),
+        "cecd0404e609941409bc0096c1cae65dc6684707", 49),
 }
 
 def apply_print_corrections(s, c):
