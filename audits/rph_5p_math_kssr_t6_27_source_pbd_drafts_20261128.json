@@ -1,0 +1,1041 @@
+{
+  "status": "DRAFT_TSV_SOURCE_PBD_ALIGNED",
+  "year": 6,
+  "total": 27,
+  "source_triage_blob": "8b80db7bf5617cdd68204f17fb0456d55340465a",
+  "source_files": [
+    {
+      "minutes": 30,
+      "path": "staging/matematik/tahun6/slot_30_minit.tsv",
+      "sha": "38be0c6d58229204431e28c710c18a985bff81e1"
+    },
+    {
+      "minutes": 60,
+      "path": "staging/matematik/tahun6/slot_60_minit.tsv",
+      "sha": "36669d03392b0adc22583492a9d19b955c819c37"
+    }
+  ],
+  "scope": "First 27 of 54 distinct v60 candidate lesson options; actual staging TSV title, timing, task and evidence retained. Parent candidate IDs are related by SP only, not direct one-to-one matches; L49/50 extend beyond cost/profit candidate; L13/14 differ from simple operation candidates. No curriculum or RPT additions.",
+  "limitations": "Full SK/SP text and exact objective/criteria from native source still need verification; source PBD copied from TSV, support and 5P activities proposed. Actual native catalogue identity, original Word/PDF, academic sign-off and live download pending. No production edits.",
+  "records": [
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 3,
+      "related_candidate_ids": [
+        "MT6-PDP-006"
+      ],
+      "source_sp_codes": [
+        "1.1.2"
+      ],
+      "source_title": "Wakilkan nombor besar dan sambung pola menaik",
+      "source_pages": "4–8",
+      "source_minutes": 60,
+      "source_pbd_task": "Cerakinkan 6 409 050 dan isi dua nombor selepas 6 409 050, 6 509 050, 6 609 050. Nyatakan sela.",
+      "source_pbd_evidence": "6 000 000 + 400 000 + 9 000 + 50. Seterusnya 6 709 050 dan 6 809 050, sela 100 000.",
+      "phases": {
+        "engagement": "Guru tunjuk 5 200 030 dan minta murid ramal digit yang berubah apabila ditambah 100 000.",
+        "exploration": "Pasangan cerakinkan nombor menggunakan kad nilai tempat dan bina tiga langkah pola menaik.",
+        "explanation": "Guru model 4 309 020, 4 409 020, 4 509 020; jelaskan sela 100 000.",
+        "elaboration": "Murid wakilkan 7 103 040 dan sambung pola bersela 200 000.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, kad digit.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Warnakan tempat yang berubah.",
+        "pengayaan": "Bina pola melintasi sempadan juta."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 4,
+      "related_candidate_ids": [
+        "MT6-PDP-006"
+      ],
+      "source_sp_codes": [
+        "1.1.2"
+      ],
+      "source_title": "Wakilkan nombor dan lengkapkan pola menurun",
+      "source_pages": "4–8",
+      "source_minutes": 60,
+      "source_pbd_task": "Cerakinkan 8 760 040 dan lengkapkan 8 760 040, 8 740 040, __, 8 700 040. Jelaskan digit yang berubah.",
+      "source_pbd_evidence": "8 000 000 + 700 000 + 60 000 + 40. Nilai hilang 8 720 040. Sela −20 000 pada tempat puluh ribu.",
+      "phases": {
+        "engagement": "Guru tunjuk siri 5 384 001, 5 364 001, 5 344 001; murid kenal arah.",
+        "exploration": "Pasangan cerakinkan nombor dan banding digit puluh ribu.",
+        "explanation": "Guru model sela menurun 20 000 dan semak beza nombor berjiran.",
+        "elaboration": "Murid lengkapkan 6 570 030, 6 540 030, __, 6 480 030.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad digit, jalur pola.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Tulis beza pada anak panah.",
+        "pengayaan": "Bina pola menurun yang melintasi sempadan ratus ribu."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 11,
+      "related_candidate_ids": [
+        "MT6-PDP-007",
+        "MT6-PDP-008",
+        "MT6-PDP-009",
+        "MT6-PDP-010",
+        "MT6-PDP-011",
+        "MT6-PDP-012"
+      ],
+      "source_sp_codes": [
+        "1.2.1"
+      ],
+      "source_title": "Mengira operasi asas melibatkan juta",
+      "source_pages": "15–29",
+      "source_minutes": 60,
+      "source_pbd_task": "Tambah 1.45 juta dan 325 000. Bahagi 2 1/2 juta kepada 5 kumpulan sama. Beri jawapan dalam nombor bulat.",
+      "source_pbd_evidence": "1 775 000 dan 500 000. Gunakan bentuk nombor yang sepunya sebelum operasi.",
+      "phases": {
+        "engagement": "Guru paparkan 0.75 juta dan 750 000; murid padankan nilai.",
+        "exploration": "Pasangan gunakan jadual nilai tempat untuk menukar pecahan dan perpuluhan juta.",
+        "explanation": "Guru model 1.2 juta + 350 000 dan 1 1/2 juta ÷ 3 dalam nombor bulat.",
+        "elaboration": "Murid kira 2.05 juta + 175 000 dan 3 1/2 juta ÷ 7; semak anggaran.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, kad unit juta.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Tukar semua nombor kepada bentuk bulat.",
+        "pengayaan": "Tunjukkan satu hasil dalam dua bentuk."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 12,
+      "related_candidate_ids": [
+        "MT6-PDP-007",
+        "MT6-PDP-008",
+        "MT6-PDP-009",
+        "MT6-PDP-010",
+        "MT6-PDP-011",
+        "MT6-PDP-012"
+      ],
+      "source_sp_codes": [
+        "1.2.1"
+      ],
+      "source_title": "mengira gabungan tambah dan tolak dalam unit juta",
+      "source_pages": "15–18, 28–29",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 2.75 juta + 420 000 − 0.5 juta dan 3 600 000 − (1.2 juta + 400 000).",
+      "source_pbd_evidence": "2 670 000 dan 2 000 000, dengan hasil perantaraan yang betul.",
+      "phases": {
+        "engagement": "Guru tunjuk label stok 1.5 juta dan 250 000; murid pilih unit sepunya.",
+        "exploration": "Pasangan padankan kad unit juta dan nombor bulat.",
+        "explanation": "Guru model 1.5 juta + 250 000 − 0.2 juta dengan turutan kiri ke kanan.",
+        "elaboration": "Murid kira 2.1 juta − 300 000 + 0.4 juta; semak melalui bentuk bulat.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jadual nilai tempat, kad operasi.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Seragamkan unit sebelum mengira.",
+        "pengayaan": "Bina ayat tambah-tolak berjumlah 2 juta."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 13,
+      "related_candidate_ids": [
+        "MT6-PDP-007",
+        "MT6-PDP-008",
+        "MT6-PDP-009",
+        "MT6-PDP-010",
+        "MT6-PDP-011",
+        "MT6-PDP-012"
+      ],
+      "source_sp_codes": [
+        "1.2.1"
+      ],
+      "source_title": "Membandingkan turutan operasi dengan kurungan",
+      "source_pages": "28–35",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 2.7 juta − 3 × 0.4 juta dan (2.7 juta − 0.4 juta) × 3. Nyatakan operasi pertama.",
+      "source_pbd_evidence": "1.5 juta dan 6.9 juta. Darab dahulu pada ayat pertama, tolak dahulu pada ayat kedua.",
+      "phases": {
+        "engagement": "Guru papar dua ayat operasi dengan dan tanpa kurungan; murid ramal sama atau berbeza.",
+        "exploration": "Pasangan susun kad langkah bagi 1.8 juta − 2 × 0.3 juta dan (1.8 juta − 0.3 juta) × 2.",
+        "explanation": "Guru jelaskan darab didahulukan dan operasi dalam kurungan dibuat dahulu.",
+        "elaboration": "Murid banding 2.4 juta − 2 × 0.5 juta dengan (2.4 juta − 0.5 juta) × 2.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad operasi dan kurungan.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Bulatan operasi pertama sebelum mengira.",
+        "pengayaan": "Bina dua ayat dengan hasil berbeza menggunakan nombor sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 14,
+      "related_candidate_ids": [
+        "MT6-PDP-007",
+        "MT6-PDP-008",
+        "MT6-PDP-009",
+        "MT6-PDP-010",
+        "MT6-PDP-011",
+        "MT6-PDP-012"
+      ],
+      "source_sp_codes": [
+        "1.2.1"
+      ],
+      "source_title": "Mencari anu dalam operasi bergabung",
+      "source_pages": "35–38",
+      "source_minutes": 60,
+      "source_pbd_task": "Cari n dalam 4 × (n + 0.125 juta) = 1.8 juta. Semak dengan menggantikan nilai n.",
+      "source_pbd_evidence": "n = 0.325 juta. Semakan 4 × 0.45 juta = 1.8 juta.",
+      "phases": {
+        "engagement": "Guru tunjuk kotak kosong dalam 3 × (□ + 0.2 juta) = 1.5 juta.",
+        "exploration": "Pasangan guna rajah bar untuk bahagi jumlah kepada tiga bahagian.",
+        "explanation": "Guru model operasi songsang: 1.5 ÷ 3 − 0.2 = 0.3 juta, kemudian ganti semula.",
+        "elaboration": "Murid cari anu dalam 5 × (n + 0.1 juta) = 2 juta; semak.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad anu, rajah bar.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Songsangkan satu operasi pada satu masa.",
+        "pengayaan": "Bina persamaan anu dan tukar dengan rakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 21,
+      "related_candidate_ids": [
+        "DSKP6-01"
+      ],
+      "source_sp_codes": [
+        "2.1.1"
+      ],
+      "source_title": "Membahagi pecahan wajar dengan nombor bulat",
+      "source_pages": "61–62",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 7/8 ÷ 7 dan 3/5 ÷ 3. Lakarkan pembahagian sama rata bagi satu soalan. Semak satu jawapan dengan darab.",
+      "source_pbd_evidence": "1/8 dan 1/5. Contoh semakan 7 × 1/8 = 7/8.",
+      "phases": {
+        "engagement": "Guru tunjuk 3/4 kek dikongsi tiga orang; murid ramal bahagian seorang.",
+        "exploration": "Pasangan agih jalur 3/4 kepada tiga kumpulan sama banyak.",
+        "explanation": "Guru model 3/4 ÷ 3 = 1/4; semak dengan 3 × 1/4.",
+        "elaboration": "Murid model 4/5 ÷ 2 dan 6/7 ÷ 3; lakar pembahagian.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, grid.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Pilih pengangka yang boleh diagih sama rata.",
+        "pengayaan": "Terangkan mengapa hasil lebih kecil daripada pecahan asal."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 22,
+      "related_candidate_ids": [
+        "DSKP6-01"
+      ],
+      "source_sp_codes": [
+        "2.1.1"
+      ],
+      "source_title": "membahagi nombor bercampur dengan nombor bulat",
+      "source_pages": "63",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 1 1/2 ÷ 3 dan 3 3/5 ÷ 6. Tunjukkan langkah atau rajah pembahagian sama rata.",
+      "source_pbd_evidence": "1/2 dan 3/5. Contoh semakan 6 × 3/5 = 3 3/5.",
+      "phases": {
+        "engagement": "Guru tunjuk 2 1/4 jalur yang hendak dikongsi tiga.",
+        "exploration": "Murid tukar 2 1/4 kepada sembilan bahagian suku lalu agih.",
+        "explanation": "Guru model 9/4 ÷ 3 = 3/4; semak dengan darab.",
+        "elaboration": "Pasangan model 2 1/2 ÷ 5 dan 3 3/4 ÷ 5.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, grid.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Tukar nombor bercampur kepada pecahan tak wajar.",
+        "pengayaan": "Bina masalah pembahagian nombor bercampur."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 23,
+      "related_candidate_ids": [
+        "DSKP6-01"
+      ],
+      "source_sp_codes": [
+        "2.1.1"
+      ],
+      "source_title": "Membahagi dua pecahan",
+      "source_pages": "64–67",
+      "source_minutes": 60,
+      "source_pbd_task": "Hitung 5/6 ÷ 5/9 dan 2 2/3 ÷ 4/9. Tunjukkan pecahan songsang yang digunakan.",
+      "source_pbd_evidence": "1 1/2 dan 6. Pecahan songsang ialah 9/5 dan 9/4.",
+      "phases": {
+        "engagement": "Guru tanya berapa bahagian 1/4 terdapat dalam 3/4.",
+        "exploration": "Pasangan ukur jalur 3/4 menggunakan unit 1/4; bezakan daripada berkongsi kepada tiga orang.",
+        "explanation": "Guru model 3/4 ÷ 1/4 = 3 dan kaedah darab pecahan songsang.",
+        "elaboration": "Murid selesaikan 1 1/2 ÷ 1/4 dan 2/3 ÷ 1/6; semak dengan darab.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, kad operasi.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Gunakan penyebut sama dahulu.",
+        "pengayaan": "Bina contoh hasil bahagi melebihi satu."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 48,
+      "related_candidate_ids": [
+        "FIN-T6-01"
+      ],
+      "source_sp_codes": [
+        "3.1.1"
+      ],
+      "source_title": "Kenal harga kos, harga jual, untung dan rugi",
+      "source_pages": "103–107",
+      "source_minutes": 60,
+      "source_pbd_task": "Peniaga membeli A pada RM28 dan menjualnya RM35. Barang B berharga kos RM42 dan dijual RM39. Label harga kos dan harga jual, kemudian bezakan untung dengan rugi.",
+      "source_pbd_evidence": "A kos RM28, jual RM35 dan untung RM7. B kos RM42, jual RM39 dan rugi RM3.",
+      "phases": {
+        "engagement": "Guru tunjuk tanda harga kos RM30 dan jual RM39; murid ramal untung.",
+        "exploration": "Pasangan asingkan kad kos dan harga jual; banding keduanya.",
+        "explanation": "Guru model untung RM9 dan rugi apabila harga jual lebih rendah daripada kos.",
+        "elaboration": "Murid klasifikasikan kos/jual RM18/RM25, RM40/RM37 dan RM15/RM15.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad harga, jadual kos/jual.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Tolak nilai kecil daripada nilai besar dan label untung/rugi.",
+        "pengayaan": "Cipta situasi pulang modal."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 49,
+      "related_candidate_ids": [
+        "FIN-T6-01"
+      ],
+      "source_sp_codes": [
+        "3.1.1"
+      ],
+      "source_title": "membezakan diskaun, rebat dan baucar dalam urus niaga",
+      "source_pages": "107–111",
+      "source_minutes": 30,
+      "source_pbd_task": "Kelaskan tiga contoh: harga pada tag diturunkan 15%, pembeli layak menerima pulangan RM20 dan pembeli menunjukkan kupon RM8 untuk menebus nilainya.",
+      "source_pbd_evidence": "Diskaun 15%, rebat RM20 dan baucar RM8. Padanan disokong oleh cara setiap nilai digunakan.",
+      "phases": {
+        "engagement": "Guru paparkan tiga iklan rekaan: potongan harga, pulangan tunai dan kupon.",
+        "exploration": "Pasangan padankan kad promosi dengan cara nilai digunakan.",
+        "explanation": "Guru jelaskan diskaun, rebat dan baucar serta beza antara ketiga-tiganya.",
+        "elaboration": "Murid kelaskan contoh potongan terus RM12, pulangan RM7 dan kupon RM9.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad iklan dan baucar rekaan.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Gunakan tiga lajur dengan kata kunci.",
+        "pengayaan": "Banding dua promosi yang mempunyai nilai sama tetapi mekanisme berbeza."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 50,
+      "related_candidate_ids": [
+        "FIN-T6-01"
+      ],
+      "source_sp_codes": [
+        "3.1.1"
+      ],
+      "source_title": "Membezakan dokumen, aset dan liabiliti",
+      "source_pages": "112–114, 120",
+      "source_minutes": 60,
+      "source_pbd_task": "Dokumen A menyenaraikan buku yang dihantar pembekal dan amaun belum dibayar. B ialah penyata tunggakan elektrik. C mengesahkan bayaran diterima. Namakan A hingga C dan kelaskan simpanan tunai serta baki pinjaman.",
+      "source_pbd_evidence": "A invois, B bil dan C resit. Simpanan tunai aset dan baki pinjaman liabiliti.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga dokumen urus niaga tanpa tajuk; murid kenal tujuan.",
+        "exploration": "Pasangan asingkan dokumen tuntutan bayaran, invois penghantaran dan bukti bayaran.",
+        "explanation": "Guru jelaskan invois, bil, resit serta aset dan liabiliti menggunakan contoh mudah.",
+        "elaboration": "Murid kelaskan wang tunai, peralatan milik kelab dan baki hutang; padankan dokumen.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Dokumen rekaan, kad aset/liabiliti.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Tandakan frasa belum bayar atau sudah bayar.",
+        "pengayaan": "Terangkan beza resit dengan invois dalam satu urus niaga."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 53,
+      "related_candidate_ids": [
+        "FIN-T6-02"
+      ],
+      "source_sp_codes": [
+        "3.2.1"
+      ],
+      "source_title": "Kenal istilah asas insurans",
+      "source_pages": "121",
+      "source_minutes": 60,
+      "source_pbd_task": "Padankan premium, polisi dan pampasan dengan bayaran perlindungan, dokumen syarat dan bayaran tuntutan yang diluluskan. Terangkan satu fungsi polisi.",
+      "source_pbd_evidence": "Tiga padanan tepat. Polisi menerangkan terma seperti risiko, had dan pengecualian.",
+      "phases": {
+        "engagement": "Guru tunjuk kad rekaan perlindungan rumah dan tiga istilah.",
+        "exploration": "Pasangan padankan premium, polisi dan pampasan dengan fungsi.",
+        "explanation": "Guru jelaskan polisi menerangkan syarat, had dan pengecualian; tuntutan tertakluk terma.",
+        "elaboration": "Murid baca kad polisi simulasi dan kenal pasti risiko yang dilindungi dan tidak dilindungi.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad istilah dan polisi rekaan.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Padankan istilah dengan gambar fungsi.",
+        "pengayaan": "Terangkan mengapa tidak semua kerugian dibayar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 54,
+      "related_candidate_ids": [
+        "FIN-T6-02"
+      ],
+      "source_sp_codes": [
+        "3.2.1"
+      ],
+      "source_title": "Mengenal sumbangan dalam takaful",
+      "source_pages": "121",
+      "source_minutes": 60,
+      "source_pbd_task": "Baca penerangan skim peserta menyumbang ke dana bersama untuk melindungi peserta daripada risiko tertentu. Namakan skim dan terangkan peranan sumbangan.",
+      "source_pbd_evidence": "Takaful. Sumbangan peserta menyokong dana bersama bagi tuntutan yang menepati terma.",
+      "phases": {
+        "engagement": "Guru beri situasi peserta menyumbang kepada dana bersama; murid cadang tujuannya.",
+        "exploration": "Pasangan gunakan token untuk memodelkan sumbangan peserta kepada dana bersama.",
+        "explanation": "Guru jelaskan konsep takaful serta tuntutan yang memenuhi terma.",
+        "elaboration": "Murid susun kad sumbangan, dana bersama dan bantuan bagi risiko yang dilindungi.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token, rajah dana bersama.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Gunakan tiga kad proses berurutan.",
+        "pengayaan": "Terangkan kepentingan membaca terma skim."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 55,
+      "related_candidate_ids": [
+        "FIN-T6-02"
+      ],
+      "source_sp_codes": [
+        "3.2.1"
+      ],
+      "source_title": "mengenal insurans dan takaful dalam kad situasi",
+      "source_pages": "120–122",
+      "source_minutes": 30,
+      "source_pbd_task": "Kad A ialah polisi insurans yang melindungi rumah daripada kebakaran. Kad B ialah sijil takaful yang meliputi kos rawatan akibat kemalangan. Namakan skim dan risiko bagi setiap kad.",
+      "source_pbd_evidence": "A insurans dengan risiko kebakaran rumah. B takaful dengan risiko kecederaan akibat kemalangan yang memerlukan rawatan.",
+      "phases": {
+        "engagement": "Guru paparkan dua kad perlindungan rekaan dengan nama skim berlainan.",
+        "exploration": "Pasangan tandakan nama skim dan risiko yang tercatat pada setiap kad.",
+        "explanation": "Guru jelaskan bahawa jenis risiko sahaja tidak menentukan insurans atau takaful; baca nama dan syarat skim.",
+        "elaboration": "Murid padankan dua kad baharu berlabel insurans/takaful dengan risiko masing-masing.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad skim perlindungan rekaan.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Gariskan nama skim dan risiko.",
+        "pengayaan": "Banding dua kad yang melindungi risiko sama tetapi berlainan skim."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 59,
+      "related_candidate_ids": [
+        "FIN-T6-03"
+      ],
+      "source_sp_codes": [
+        "3.3.1"
+      ],
+      "source_title": "Mengira untung termasuk kos tambahan",
+      "source_pages": "126–132",
+      "source_minutes": 60,
+      "source_pbd_task": "Peniaga membeli 15 bekas pada RM12 setiap satu dan membayar kos angkut RM18. Semua bekas dijual pada RM16 seunit. Tentukan untung atau rugi.",
+      "source_pbd_evidence": "Kos keseluruhan RM198, jualan RM240 dan untung RM42.",
+      "phases": {
+        "engagement": "Guru tunjuk harga belian, kos angkut dan hasil jualan; murid kenal kos tambahan.",
+        "exploration": "Pasangan susun kad maklumat kepada jumlah kos dan hasil jualan.",
+        "explanation": "Guru model 10 bekas × RM8 + RM12 kos angkut, jual 10 × RM11; untung RM18.",
+        "elaboration": "Murid kira kos 12 barang RM5 seunit, pembungkusan RM9 dan jualan RM96.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad kos dan rekod jualan.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Jumlahkan semua kos sebelum mencari untung.",
+        "pengayaan": "Tentukan harga jual seunit untuk pulang modal."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 60,
+      "related_candidate_ids": [
+        "FIN-T6-03"
+      ],
+      "source_sp_codes": [
+        "3.3.1"
+      ],
+      "source_title": "menyelesaikan masalah untung dengan kos tambahan",
+      "source_pages": "123–126",
+      "source_minutes": 30,
+      "source_pbd_task": "Kelab beli bahan RM120, bayar pembungkusan RM18 dan menerima jualan RM165. Kira jumlah kos dan untung.",
+      "source_pbd_evidence": "Jumlah kos RM138 dan untung RM27.",
+      "phases": {
+        "engagement": "Guru beri rekod kos belian RM80, pembungkusan RM10 dan jualan RM110.",
+        "exploration": "Pasangan tandakan komponen kos yang perlu diambil kira.",
+        "explanation": "Guru model jumlah kos RM90 dan untung RM20.",
+        "elaboration": "Murid kira jumlah kos RM75 + RM15 dan untung daripada jualan RM105.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad kos, jadual jualan.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Gunakan dua baris jumlah kos dan hasil.",
+        "pengayaan": "Cari kos tambahan maksimum jika untung sasaran RM10."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 61,
+      "related_candidate_ids": [
+        "FIN-T6-03"
+      ],
+      "source_sp_codes": [
+        "3.3.1"
+      ],
+      "source_title": "Mengira jumlah dan baki bagi satu caj bercukai",
+      "source_pages": "126–132",
+      "source_minutes": 60,
+      "source_pbd_task": "Kelab ada RM420. Beli kelengkapan RM260 dan bayar perkhidmatan RM95 dengan cukai contoh 6% atas perkhidmatan sahaja. Kira jumlah dibayar dan baki.",
+      "source_pbd_evidence": "Cukai RM5.70. Jumlah RM360.70 dan baki RM59.30.",
+      "phases": {
+        "engagement": "Guru tunjuk invois barang dan perkhidmatan dengan kadar cukai latihan; murid pilih bahagian bercukai.",
+        "exploration": "Pasangan asingkan caj barang dan perkhidmatan pada jadual.",
+        "explanation": "Guru model RM100 barang + RM50 perkhidmatan + 6% cukai contoh atas RM50; jumlah RM153.",
+        "elaboration": "Murid kira jumlah dan baki bajet RM250 apabila barang RM120 dan perkhidmatan RM80 dikenakan cukai contoh 6%.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Invois rekaan, jadual caj.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Kira cukai perkhidmatan secara berasingan.",
+        "pengayaan": "Ubah kadar contoh dan bandingkan baki; bukan kadar cukai sebenar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 62,
+      "related_candidate_ids": [
+        "FIN-T6-03"
+      ],
+      "source_sp_codes": [
+        "3.3.1"
+      ],
+      "source_title": "menyelesaikan masalah pilihan tawaran dengan baucer atau diskaun",
+      "source_pages": "123–132",
+      "source_minutes": 30,
+      "source_pbd_task": "Kedai A menawarkan harga RM180 dengan baucer RM22. Kedai B menawarkan harga RM190 dengan diskaun 20%. Tentukan pilihan lebih murah dan beza.",
+      "source_pbd_evidence": "Kedai A RM158, kedai B RM152. Kedai B lebih murah RM6.",
+      "phases": {
+        "engagement": "Guru tunjuk tawaran baucar dan diskaun dalam dua iklan rekaan.",
+        "exploration": "Pasangan susun harga asal, nilai potongan dan harga akhir.",
+        "explanation": "Guru model RM100 − RM12 baucar dan RM110 − 20% diskaun; kedua-duanya RM88.",
+        "elaboration": "Murid banding RM140 dengan baucar RM15 dan RM150 dengan diskaun 20%.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Dua iklan rekaan, jadual perbandingan.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Kira harga akhir setiap tawaran dahulu.",
+        "pengayaan": "Cari nilai baucar yang menyamai tawaran diskaun."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 63,
+      "related_candidate_ids": [
+        "DSKP6-02"
+      ],
+      "source_sp_codes": [
+        "4.1.1"
+      ],
+      "source_title": "Mengenal beza waktu daripada UTC",
+      "source_pages": "141–143",
+      "source_minutes": 60,
+      "source_pbd_task": "Lakar garis dengan UTC+0 sebagai rujukan. Letakkan UTC+6 dan UTC−4 pada sisi yang betul. Terangkan beza waktu setiap zon daripada UTC.",
+      "source_pbd_evidence": "UTC+0 rujukan, UTC+6 enam jam mendahului dan UTC−4 empat jam ketinggalan.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga jam simulasi pada saat sama; murid perhatikan perbezaan.",
+        "exploration": "Pasangan letakkan label UTC+0, UTC+3 dan UTC−2 pada garis rujukan.",
+        "explanation": "Guru terangkan tanda positif waktu tempatan mendahului UTC dan tanda negatif ketinggalan.",
+        "elaboration": "Murid letak UTC+5 dan UTC−6 pada garis dan jelaskan perbezaan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Garis rujukan UTC, kad zon.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Gunakan sifar sebagai titik mula.",
+        "pengayaan": "Cipta dua zon berjarak sama dari UTC."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 64,
+      "related_candidate_ids": [
+        "DSKP6-02"
+      ],
+      "source_sp_codes": [
+        "4.1.1"
+      ],
+      "source_title": "mengenal zon masa melalui peta dan label UTC",
+      "source_pages": "141–143",
+      "source_minutes": 30,
+      "source_pbd_task": "Letak bandar A pada UTC+4, B pada UTC−3 serta C dan D pada UTC+8. Tandakan jalur UTC. Namakan bandar pada UTC−3 dan pasangan bandar dalam satu zon.",
+      "source_pbd_evidence": "B pada UTC−3. C dan D berkongsi UTC+8. A dan B berada pada sisi berbeza daripada rujukan UTC.",
+      "phases": {
+        "engagement": "Guru paparkan peta simulasi dengan jalur zon berlabel.",
+        "exploration": "Pasangan letak kad bandar rekaan pada UTC−4, UTC+0 dan UTC+6.",
+        "explanation": "Guru jelaskan kedudukan relatif terhadap rujukan UTC.",
+        "elaboration": "Murid letak bandar E UTC+2, F UTC−5 dan G UTC+2; kenal pasangan zon sama.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Peta simulasi dan kad bandar.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Padankan label yang sama pada jalur.",
+        "pengayaan": "Terangkan bagaimana dua bandar boleh berkongsi zon."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 65,
+      "related_candidate_ids": [
+        "DSKP6-02"
+      ],
+      "source_sp_codes": [
+        "4.1.1"
+      ],
+      "source_title": "Mentafsir tanda pada label zon masa",
+      "source_pages": "141–143",
+      "source_minutes": 60,
+      "source_pbd_task": "Pada UTC 10:00, baca jadual yang menunjukkan X 13:00, Y 07:00 dan Z 10:00 pada hari sama. Padankan tiga kad offset UTC+3, UTC−3 dan UTC+0.",
+      "source_pbd_evidence": "X UTC+3, Y UTC−3 dan Z UTC+0. Tanda sepadan dengan arah beza masa.",
+      "phases": {
+        "engagement": "Guru tunjuk UTC 12:00 dan jam bandar 15:00 serta 09:00.",
+        "exploration": "Pasangan padankan jam tempatan dengan kad ofset.",
+        "explanation": "Guru model UTC+3 dan UTC−3 berdasarkan beza waktu serentak.",
+        "elaboration": "Murid padankan UTC 14:00 dengan bandar 18:00,11:00,14:00.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad jam dan label UTC.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Banding setiap jam dengan UTC dahulu.",
+        "pengayaan": "Bina jadual waktu bagi tiga ofset berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 66,
+      "related_candidate_ids": [
+        "DSKP6-02"
+      ],
+      "source_sp_codes": [
+        "4.1.1"
+      ],
+      "source_title": "menerangkan hubungan zon masa dengan UTC",
+      "source_pages": "141–143",
+      "source_minutes": 30,
+      "source_pbd_task": "Negara rekaan X mempunyai Bandar A di UTC+7 dan Bandar B di UTC+8. Bandar C di negara Y juga di UTC+8. Nyatakan dua zon di X dan pasangan bandar yang sepadan zon.",
+      "source_pbd_evidence": "X mempunyai UTC+7 dan UTC+8. B dan C berada pada zon UTC+8 dalam jadual latihan.",
+      "phases": {
+        "engagement": "Guru tunjuk dua bandar sebuah negara rekaan pada dua jalur zon.",
+        "exploration": "Pasangan kelaskan label mengikut mendahului, sama atau ketinggalan UTC.",
+        "explanation": "Guru jelaskan satu negara boleh merangkumi beberapa zon dan bandar berlainan negara boleh berkongsi zon.",
+        "elaboration": "Murid banding bandar P UTC+2, Q UTC+3 dan R UTC+3 dalam jadual simulasi.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Peta simulasi, garis zon.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Gunakan warna bagi setiap label zon.",
+        "pengayaan": "Bina peta rekaan dengan dua negara dan tiga zon."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 67,
+      "related_candidate_ids": [
+        "DSKP6-03"
+      ],
+      "source_sp_codes": [
+        "4.1.2"
+      ],
+      "source_title": "Menentukan beza waktu dua zon di hadapan UTC",
+      "source_pages": "144–147",
+      "source_minutes": 60,
+      "source_pbd_task": "Bandar A UTC+9 dan B UTC+5:30. Cari beza dan waktu B apabila A menunjukkan 16:00.",
+      "source_pbd_evidence": "A mendahului 3 jam 30 minit. B 12:30 pada hari sama.",
+      "phases": {
+        "engagement": "Guru tunjuk dua zon UTC+8 dan UTC+5:30; murid ramal beza.",
+        "exploration": "Pasangan tandakan kedua-dua ofset dalam jam dan minit pada garis masa.",
+        "explanation": "Guru model beza 2 jam 30 minit; jika UTC+8 pada 15:00, UTC+5:30 pada 12:30.",
+        "elaboration": "Murid cari waktu UTC+6:30 apabila UTC+9 menunjukkan 14:00.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Garis masa, kad ofset.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Tukar beza kepada minit sebelum mengira.",
+        "pengayaan": "Bina contoh beza setengah jam."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 68,
+      "related_candidate_ids": [
+        "DSKP6-03"
+      ],
+      "source_sp_codes": [
+        "4.1.2"
+      ],
+      "source_title": "menentukan beza waktu menggunakan ofset UTC",
+      "source_pages": "143–146",
+      "source_minutes": 30,
+      "source_pbd_task": "Tentukan beza UTC+9 dengan UTC+4 serta beza UTC+3 dengan UTC−4. Bagi setiap pasangan, nyatakan waktu tempatan zon yang mendahului satu lagi pada saat yang sama.",
+      "source_pbd_evidence": "Beza 5 jam dan 7 jam. Waktu tempatan UTC+9 mendahului UTC+4, manakala UTC+3 mendahului UTC−4.",
+      "phases": {
+        "engagement": "Guru papar UTC+7 dan UTC−2; murid ramal zon yang mendahului.",
+        "exploration": "Pasangan letak label pada garis nombor dan kira jarak merentasi sifar.",
+        "explanation": "Guru model beza 9 jam dan arah waktu tempatan.",
+        "elaboration": "Murid banding UTC+6 dengan UTC+1 dan UTC+2 dengan UTC−5.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad zon, garis nombor.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Kira jarak setiap sisi dari sifar.",
+        "pengayaan": "Cari dua pasangan zon dengan beza sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 69,
+      "related_candidate_ids": [
+        "DSKP6-03"
+      ],
+      "source_sp_codes": [
+        "4.1.2"
+      ],
+      "source_title": "Menentukan beza dua zon di sisi berbeza UTC",
+      "source_pages": "144–147",
+      "source_minutes": 60,
+      "source_pbd_task": "Bandar A UTC−3 dan B UTC+4. Nyatakan beza serta waktu B ketika A menunjukkan 08:15.",
+      "source_pbd_evidence": "B mendahului 7 jam. Waktu B 15:15 pada hari sama.",
+      "phases": {
+        "engagement": "Guru beri jam 08:00 pada UTC−2; murid ramal waktu UTC+3.",
+        "exploration": "Pasangan bina anjakan lima jam pada garis 24 jam.",
+        "explanation": "Guru model waktu 13:00 dengan beza ofset +5 jam.",
+        "elaboration": "Murid cari waktu UTC+5 apabila UTC−4 pada 07:30; jelaskan arah.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jam model, garis 24 jam.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Tulis ofset sasaran tolak ofset asal.",
+        "pengayaan": "Cuba anjakan yang merentasi tengah malam."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 70,
+      "related_candidate_ids": [
+        "DSKP6-03"
+      ],
+      "source_sp_codes": [
+        "4.1.2"
+      ],
+      "source_title": "menentukan waktu tempatan menggunakan beza zon",
+      "source_pages": "143–146",
+      "source_minutes": 30,
+      "source_pbd_task": "Bandar A di UTC+8 menunjukkan 16:30. Tentukan waktu B di UTC+5 dan C di UTC+11 pada ketika yang sama.",
+      "source_pbd_evidence": "B 13:30 dan C 19:30 dengan anjakan tiga jam setiap arah.",
+      "phases": {
+        "engagement": "Guru tunjuk jam 10:00 UTC+8 dan dua kad sasaran.",
+        "exploration": "Pasangan gerakkan jarum mengikut perubahan ofset positif dan negatif.",
+        "explanation": "Guru model UTC+10 pada 12:00 dan UTC+6 pada 08:00 pada saat sama.",
+        "elaboration": "Murid tentukan waktu UTC+4 dan UTC+9 apabila UTC+7 pada 15:20.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jam model, kad UTC.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Penaakulan dan ketelitian.",
+        "pemulihan": "Tentukan tanda anjakan sebelum menukar waktu.",
+        "pengayaan": "Bina contoh waktu hari berikutnya."
+      },
+      "ready": false
+    }
+  ]
+}
