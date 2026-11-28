@@ -1,0 +1,277 @@
+{
+  "year": 6,
+  "status": "PROPOSED_ADDITIONS_NOT_SOURCE_FIELDS",
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y6_native_024_047_20261128.json",
+      "blob": "3630b611bd805e3f9dc9b6ba3d8eaa73c65da1f4"
+    }
+  ],
+  "policy": "New pedagogical suggestions based on exact source-adapted draft activities, not original source fields or academic approval. No runtime integration or release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-024",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menyatakan maksud pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "pak21": "Pengelasan kad kolaboratif",
+      "emk": "Kelestarian alam sekitar: perlindungan biodiversiti",
+      "pemulihan": "Padankan dua gambar tindakan menjaga hidupan atau memulihkan habitat dengan label berpandu.",
+      "pengayaan": "Bezakan dua tindakan bagi habitat terjejas dan huraikan sebab pemilihan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-025",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjana idea cara pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "pak21": "Penyelesaian masalah kumpulan",
+      "emk": "Kelestarian alam sekitar: pemulihan habitat",
+      "pemulihan": "Beri kad masalah haiwan dan tumbuhan bersama pilihan langkah perlindungan.",
+      "pengayaan": "Lakar pelan tindakan bagi satu habitat dan nilai kebolehlaksanaan dua langkah.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-026",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan yang pupus.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Kelestarian alam sekitar: kepupusan spesies",
+      "pemulihan": "Padankan dua contoh haiwan pupus dengan kad sejarah dalam bahan sumber.",
+      "pengayaan": "Bezakan haiwan pupus daripada terancam berdasarkan maklumat sumber yang diberikan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-027",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan dan tumbuhan yang diancam kepupusan.",
+      "pak21": "Pembentangan poster",
+      "emk": "Kelestarian alam sekitar: spesies terancam",
+      "pemulihan": "Pilih satu contoh haiwan dan satu tumbuhan daripada kad sumber berlabel.",
+      "pengayaan": "Huraikan ancaman bagi kedua-dua contoh serta nyatakan edisi sumber statusnya.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-028",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan melalui contoh faktor yang menyebabkan kepupusan haiwan dan tumbuhan.",
+      "pak21": "Peta sebab-akibat kolaboratif",
+      "emk": "Kelestarian alam sekitar: kesan aktiviti manusia",
+      "pemulihan": "Padankan tiga kad aktiviti manusia dengan kesan terhadap habitat.",
+      "pengayaan": "Bina rantaian sebab-akibat bagi tiga faktor dan jelaskan kesannya kepada populasi.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-029",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menaakul kepentingan pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "pak21": "Perbincangan berasaskan data",
+      "emk": "Sains dan teknologi: tafsiran graf populasi",
+      "pemulihan": "Tandakan nilai awal dan akhir pada graf rekaan yang disediakan.",
+      "pengayaan": "Bandingkan dua nilai dan ramalkan kesan jika usaha pemuliharaan dihentikan, dengan menyatakan andaian.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-030",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan pemerhatian tentang pemeliharaan dan pemuliharaan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan peta idea",
+      "emk": "Kreativiti dan inovasi: komunikasi visual",
+      "pemulihan": "Beri templat empat petak masalah, punca, tindakan dan kesan.",
+      "pengayaan": "Tambah dua tindakan kelestarian yang beralasan dan perjelas peta selepas soal jawab.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-031",
+      "title": "Menyatakan maksud daya dengan menjalankan aktiviti.",
+      "pak21": "Pembelajaran berpasangan",
+      "emk": "Sains dan teknologi: tarikan dan tolakan",
+      "pemulihan": "Padankan dua gambar tindakan dengan label tarik atau tolak.",
+      "pengayaan": "Lakar arah daya bagi dua situasi baharu dan terangkan pilihan anak panah.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-032",
+      "title": "Menjelas dengan contoh kesan daya terhadap objek.",
+      "pak21": "Pemerhatian koperatif",
+      "emk": "Sains dan teknologi: kesan daya",
+      "pemulihan": "Padankan foto bola dan span dengan pilihan perubahan gerakan atau bentuk.",
+      "pengayaan": "Huraikan lima kesan daya dan pilih dua contoh lain berdasarkan pemerhatian.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-033",
+      "title": "Menjelaskan pemerhatian tentang daya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan lakaran",
+      "emk": "Bahasa: penerangan pemerhatian",
+      "pemulihan": "Susun dua gambar sebelum dan selepas tolakan dengan anak panah panduan.",
+      "pengayaan": "Terangkan dua kesan daya dalam situasi baharu dengan bukti rajah.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-034",
+      "title": "Menyatakan maksud daya geseran.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: daya geseran",
+      "pemulihan": "Tandakan dua permukaan bersentuhan pada rajah kereta mainan.",
+      "pengayaan": "Lakar arah geseran dan bandingkan gerakan sebenar dengan situasi khayalan tanpa geseran.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-035",
+      "title": "Kesan daya geseran",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Nilai murni: keselamatan",
+      "pemulihan": "Padankan gambar tapak kasut dan tayar dengan fungsi cengkaman.",
+      "pengayaan": "Bandingkan manfaat dan kelemahan geseran serta jelaskan risiko permukaan licin melalui gambar.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-036",
+      "title": "Eksperimen faktor yang mempengaruhi daya geseran",
+      "pak21": "Inkuiri dua stesen",
+      "emk": "Sains dan teknologi: kawalan pemboleh ubah",
+      "pemulihan": "Beri jadual bacaan neraca spring dalam N dan bimbing pengenalpastian faktor tetap.",
+      "pengayaan": "Bandingkan dua ujian berasingan bagi permukaan dan jisim; rumuskan dapatan berdasarkan bacaan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-037",
+      "title": "Menjana idea untuk meningkatkan atau mengurangkan daya geseran bagi menyelesaikan masalah dalam kehidupan harian.",
+      "pak21": "Penyelesaian masalah pasangan",
+      "emk": "Kreativiti dan inovasi: aplikasi geseran",
+      "pemulihan": "Padankan gambar kasut licin dan engsel berdecit dengan pilihan penyelesaian.",
+      "pengayaan": "Pilih dua kaedah menambah atau mengurangkan geseran untuk situasi baharu dan beri sebab.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-038",
+      "title": "Menjelaskan pemerhatian tentang daya geseran melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan graf",
+      "emk": "Bahasa: komunikasi berasaskan data",
+      "pemulihan": "Beri graf berpandu dan tandakan dua bacaan jarak troli.",
+      "pengayaan": "Tafsir perbezaan jarak bagi keadaan ujian setara dan kaitkan dengan satu aplikasi geseran.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-039",
+      "title": "Memerihalkan kewujudan tekanan udara di sekeliling dengan menjalankan aktiviti.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: tekanan udara",
+      "pemulihan": "Beri dua gambar daripada video cawan terbalik dan label anak panah tekanan.",
+      "pengayaan": "Terangkan dua pemerhatian video serta kaitkan arah tekanan udara dengan keadaan kad.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-040",
+      "title": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian.",
+      "pak21": "Perbincangan berasaskan data",
+      "emk": "Sains dan teknologi: hubungan altitud dan tekanan",
+      "pemulihan": "Sediakan paksi graf berlabel dan tiga pasangan data rekaan.",
+      "pengayaan": "Anggarkan trend pada altitud tambahan dan bezakan anggaran daripada ukuran sebenar.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-041",
+      "title": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian.",
+      "pak21": "Padanan kad kolaboratif",
+      "emk": "Sains dan teknologi: aplikasi tekanan udara",
+      "pemulihan": "Padankan dua gambar alat dengan rajah kawasan tekanan berbeza.",
+      "pengayaan": "Pilih aplikasi bagi dua masalah mudah dan jelaskan sebab menggunakan model selamat.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-042",
+      "title": "Menjelaskan pemerhatian tentang tekanan udara melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Kreativiti dan inovasi: rajah saintifik",
+      "pemulihan": "Lengkapkan dua rajah tekanan udara dengan anak panah berpandu.",
+      "pengayaan": "Bandingkan ramalan dengan bukti eksperimen bergambar dan betulkan penerangan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-043",
+      "title": "Unit bagi kelajuan",
+      "pak21": "Padanan kad berpasangan",
+      "emk": "Sains dan teknologi: unit piawai",
+      "pemulihan": "Padankan kereta, pelari dan mainan dengan km/j, m/s dan cm/s.",
+      "pengayaan": "Pilih unit bagi tiga contoh tambahan dan jelaskan sebab berdasarkan skala gerakan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-044",
+      "title": "Eksperimen hubungan kelajuan, jarak dan masa",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Nilai murni: ketelitian merekod ukuran",
+      "pemulihan": "Beri jadual ulangan jarak dan masa serta panduan bacaan jam randik.",
+      "pengayaan": "Bandingkan dua keadaan jarak tetap dan masa tetap dengan unit konsisten serta nyatakan faktor kawalan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-045",
+      "title": "Menentukan kelajuan, jarak atau masa menggunakan formula.",
+      "pak21": "Semakan pasangan",
+      "emk": "Sains dan teknologi: pengiraan kelajuan",
+      "pemulihan": "Beri contoh pengiraan jarak bahagi masa dengan ruang unit berpandu.",
+      "pengayaan": "Selesaikan tiga masalah yang masing-masing mencari kelajuan, jarak atau masa dan semak unit.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-046",
+      "title": "Definisi secara operasi melalui aktiviti",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: takrif operasi",
+      "pemulihan": "Bimbing pemilihan pita ukur, jam randik dan catatan dua bacaan.",
+      "pengayaan": "Bina takrif operasi sendiri dan bandingkan dua kelajuan berdasarkan ukuran.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-047",
+      "title": "Menjelaskan pemerhatian tentang kelajuan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan graf",
+      "emk": "Bahasa: tafsiran bukti graf",
+      "pemulihan": "Beri graf dengan tiga titik dan label paksi yang ditandakan.",
+      "pengayaan": "Huraikan dua perbezaan kelajuan dengan merujuk perubahan jarak pada sela masa sama.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    }
+  ]
+}
