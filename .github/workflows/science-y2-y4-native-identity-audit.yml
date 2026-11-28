@@ -1,0 +1,24 @@
+name: Science Y2 Y3 Y4 native identity audit QA
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/science_y2_y4_native_identity_audit_20261128.py'
+      - 'tests/test_science_y2_y4_native_identity_audit_20261128.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/science-y2-y4-native-identity-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install flask python-docx pymupdf
+      - run: PYTHONPATH=. python -m unittest discover -s tests -p 'test_science_y2_y4_native_identity_audit_20261128.py' -v
+      - run: python -m py_compile tools/run_telegram_with_curriculum_api.py
