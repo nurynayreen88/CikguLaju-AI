@@ -1476,14 +1476,16 @@ def create_blueprint():
             if sub == "MATH":
                 from urllib.parse import urlencode
                 from web.math_worksheet_complete_pdf import resolve_math
-                if resolve_math(year, unit, token) is None:
+                record = resolve_math(year, unit, token)
+                if record is None:
                     return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
                 params = urlencode({"year": year, "subject": sub, "unit": unit, "lesson": token})
                 return jsonify({"status": "SUMBER_DISAHKAN", "items": [
                     {"type":"worksheet", "title":title,
                      "url":"/api/web/rph/math-worksheet-pdf/"+kind+"?"+params,
                      "action":"Download PDF"} for kind,title in (
-                         ("murid","Lembaran Latihan Murid"),("skema","Skema Jawapan Guru"))]})
+                         ("murid","Lembaran Latihan Murid" + (" — latihan bersama PdP 006–007" if record.get("shared_worksheet") else "")),
+                         ("skema","Skema Jawapan Guru"))]})
             if sub == "BM":
                 from urllib.parse import urlencode
                 from web.bm_worksheet_complete_pdf import complete_bm_pdf
