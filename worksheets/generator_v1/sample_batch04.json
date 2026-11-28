@@ -1,0 +1,188 @@
+{
+  "worksheets": [
+    {
+      "id": "CIKGULAJU_MATEMATIK_T4_TAMBAH_WANG",
+      "subject": "MATEMATIK SK • TAHUN 4",
+      "sp": "3.1.1",
+      "theme": "WANG",
+      "title": "Tambah Wang",
+      "source": "Buku Teks Matematik Tahun 4, hlm. 105–107; DSKP 3.1.1. Soalan asal dengan angka baharu.",
+      "pages": [
+        [
+          {
+            "label": "A",
+            "kind": "vertical",
+            "prompt": "Kira dalam bentuk lazim.",
+            "items": [
+              {
+                "id": "1",
+                "op": "+",
+                "terms": [
+                  "RM12 450.80",
+                  "RM8 729.65"
+                ]
+              },
+              {
+                "id": "2",
+                "op": "+",
+                "terms": [
+                  "RM26 300.00",
+                  "RM9 875.50",
+                  "RM4 620.75"
+                ]
+              },
+              {
+                "id": "3",
+                "op": "+",
+                "terms": [
+                  "RM8 650.40",
+                  "RM15 720.00",
+                  "RM3 945.80"
+                ]
+              },
+              {
+                "id": "4",
+                "op": "+",
+                "terms": [
+                  "RM4 387.25",
+                  "RM2 198.45"
+                ]
+              },
+              {
+                "id": "5",
+                "op": "+",
+                "terms": [
+                  "RM32 800.00",
+                  "RM6 775.50"
+                ]
+              },
+              {
+                "id": "6",
+                "op": "+",
+                "terms": [
+                  "RM6 210.70",
+                  "RM1 234.50",
+                  "RM9 030.15"
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "label": "B",
+            "kind": "short",
+            "prompt": "Lengkapkan ayat matematik.",
+            "items": [
+              {
+                "id": "7",
+                "text": "RM18 450 + ______ = RM35 000"
+              },
+              {
+                "id": "8",
+                "text": "______ + RM2 480.50 = RM9 320.75"
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "kind": "problem",
+            "prompt": "Selesaikan masalah.",
+            "items": [
+              {
+                "id": "9",
+                "text": "Koperasi menerima RM4 250.60, RM7 810.25 dan RM1 275.15. Berapakah jumlah wang yang diterima?"
+              },
+              {
+                "id": "10",
+                "text": "Bundarkan RM12 680 dan RM6 290 kepada ribu ringgit terdekat. Tambahkan nilai yang dibundarkan, kemudian kira jumlah sebenar."
+              }
+            ]
+          }
+        ]
+      ],
+      "answers": {
+        "1": "RM21 180.45",
+        "2": "RM40 796.25",
+        "3": "RM28 316.20",
+        "4": "RM6 585.70",
+        "5": "RM39 575.50",
+        "6": "RM16 475.35",
+        "7": "RM16 550.00",
+        "8": "RM6 840.25",
+        "9": "RM13 336.00",
+        "10": "Anggaran RM19 000; jumlah sebenar RM18 970.00."
+      }
+    },
+    {
+      "id": "CIKGULAJU_MATEMATIK_T4_TEMPOH_MASA",
+      "subject": "MATEMATIK SK • TAHUN 4",
+      "sp": "4.2.1",
+      "theme": "MASA DAN WAKTU",
+      "title": "Tempoh Masa",
+      "source": "Buku Teks Matematik Tahun 4, hlm. 143–144; DSKP 4.2.1. Soalan asal dengan waktu baharu.",
+      "pages": [
+        [
+          {
+            "label": "A",
+            "kind": "timeline",
+            "prompt": "Hitung tempoh pada garis masa.",
+            "items": [
+              {
+                "id": "1",
+                "start": "08:15",
+                "end": "09:05"
+              },
+              {
+                "id": "2",
+                "start": "10:35",
+                "end": "14:20"
+              },
+              {
+                "id": "3",
+                "start": "18:40",
+                "end": "21:10"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "label": "B",
+            "kind": "short",
+            "prompt": "Hitung tempoh masa.",
+            "items": [
+              {
+                "id": "4",
+                "text": "Jam 2315 hingga Jam 0045 pada hari berikutnya."
+              },
+              {
+                "id": "5",
+                "text": "Latihan bermula pada pukul 7:50 pagi dan tamat pada pukul 10:25 pagi."
+              }
+            ]
+          },
+          {
+            "label": "C",
+            "kind": "problem",
+            "prompt": "Selesaikan masalah.",
+            "items": [
+              {
+                "id": "6",
+                "text": "Acara A bermula Jam 0800 dan tamat Jam 0930. Acara B bermula Jam 1000 dan tamat Jam 1145. Acara manakah lebih lama? Berapakah beza tempohnya?"
+              }
+            ]
+          }
+        ]
+      ],
+      "answers": {
+        "1": "50 minit",
+        "2": "3 jam 45 minit",
+        "3": "2 jam 30 minit",
+        "4": "1 jam 30 minit",
+        "5": "2 jam 35 minit",
+        "6": "Acara B, 15 minit lebih lama."
+      }
+    }
+  ]
+}
