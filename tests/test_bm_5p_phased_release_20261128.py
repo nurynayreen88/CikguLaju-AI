@@ -13,9 +13,11 @@ class TestBMPhasedRelease(unittest.TestCase):
         with patch.dict(os.environ,{gate.FLAG:"0"}):
             self.assertEqual(gate.released_groups(),{"A":[],"B":[]})
         with patch.dict(os.environ,{gate.FLAG:"1"}):
-            self.assertEqual(gate.released_groups(),{"A":list(range(1,13)),"B":list(range(1,13))})
+            self.assertEqual(gate.released_groups(),{"A":list(range(1,179)),"B":list(range(1,176))})
             self.assertTrue(gate.is_released("A",1))
-            self.assertFalse(gate.is_released("B",13))
+            self.assertTrue(gate.is_released("B",13))
+            self.assertFalse(gate.is_released("B",176))
+            self.assertFalse(gate.is_released("A",179))
             self.assertFalse(gate.is_released("A",True))
             unapproved={k:dict(r,ready=False,status="INITIAL_CONTENT_REVIEW_COMPLETE") for k,r in rows.items()}
             with patch.object(gate,"publication_records",return_value=unapproved):
