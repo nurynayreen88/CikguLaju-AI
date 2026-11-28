@@ -5,6 +5,7 @@ on:
     paths:
       - 'tools/science_5p_*_20261128.py'
       - 'tools/audit_science_5p_personalized_downloads_20261128.py'
+      - 'tools/audit_science_5p_pinned_native_catalogue_20261128.py'
       - 'tests/test_science_5p_web_integration_qa_20261128.py'
       - 'tools/audit_science_native_5p_documents_20261128.py'
       - 'tools/audit_science_5p_native_pdf_20261128.py'
@@ -17,6 +18,28 @@ on:
 permissions:
   contents: read
 jobs:
+  original-catalogue:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: 207317c6d092561e2ffd07a6d2fb4ef604797030
+          path: native_source
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install flask python-docx pymupdf pypdf reportlab
+      - name: Verify original pinned Telegram endpoint catalogue without network
+        run: PYTHONPATH=. python tools/audit_science_5p_pinned_native_catalogue_20261128.py --native-root native_source --out qa_original_catalogue
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-5p-original-catalogue-qa
+          path: qa_original_catalogue/
+          retention-days: 7
   personalized-205:
     strategy:
       fail-fast: false
