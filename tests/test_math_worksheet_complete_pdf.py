@@ -48,6 +48,18 @@ class MathWorksheetTests(unittest.TestCase):
             with patch.object(m,"_read",return_value={**self.row,**invalid}):
                 self.assertIsNone(m.resolve_math(2,self.unit,self.token))
 
+    def test_both_verified_live_pdp_share_one_original_pair(self):
+        records=self.catalog["records"]
+        self.assertEqual(self.catalog["unique_worksheet_count"],1)
+        self.assertEqual({r["runtime_lesson"] for r in records},{"MT2-PDP-006","MT2-PDP-007"})
+        self.assertEqual(len({r["student"]["sha256"] for r in records}),1)
+        self.assertEqual(len({r["teacher_key"]["sha256"] for r in records}),1)
+        for record in records:
+            row={**self.row,"unit":record["runtime_unit"],"token":record["runtime_lesson"]}
+            with patch.object(m,"_read",return_value=row):
+                self.assertEqual(m.resolve_math(2,row["unit"],row["token"]),record)
+                self.assertIsNone(m.resolve_math(2,row["unit"],"MT2-PDP-008"))
+
     def test_web_routes_and_original_bytes(self):
         app=Flask(__name__)
         app.register_blueprint(create_blueprint())
