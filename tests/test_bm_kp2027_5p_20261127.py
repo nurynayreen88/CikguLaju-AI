@@ -62,4 +62,51 @@ class TestFiveP(unittest.TestCase):
                 self.assertEqual(c.post(url+"/download",json=payload,headers=origin).status_code,404)
                 self.assertNotIn("5p",c.get(url+"/available").get_json()["rph_variants"])
 
+
+    def test_free_trial_5p_render_boundary(self):
+        app=Flask(__name__);app.config["TESTING"]=True;app.register_blueprint(web.create_blueprint())
+        client=app.test_client()
+        url="/api/kp2027/sk/tahun-1/bahasa-melayu-sk"
+        payload={"group":"A","lesson":1,"format":"word","rph_variant":"5p"}
+        headers={"Origin":web.ORIGIN}
+        account={"telegram_user_id":42,"authenticated":True,"free_remaining":10,"rakan_pembangun":False}
+        config={"account_backend":"supabase","CIKGULAJU_WEB_SESSION_SECRET":"s"*40,
+                "supabase_url":"https://example.supabase.co","supabase_key":"unused"}
+        def post(data=None):
+            return client.post(url+"/download",json=payload if data is None else data,headers=headers)
+        with patch.dict(os.environ,{"CIKGULAJU_BM_KP2027_5P_ENABLED":"1"}), \
+             patch.object(web,"_config",return_value=config), \
+             patch.object(web,"verify_session_ticket",return_value=42) as verify, \
+             patch.object(web,"_lookup",return_value=account), \
+             patch.object(web,"debit_shared_trial",return_value={"ok":True,"remaining":9}) as debit:
+            verify.return_value=None
+            self.assertEqual(post().status_code,401)
+            verify.return_value=42
+            account["telegram_user_id"]=43
+            self.assertEqual(post().status_code,403)
+            account["telegram_user_id"]=42
+            self.assertEqual(post({**payload,"teacher_students":"999"}).status_code,400)
+            with patch.object(five,"render",side_effect=bm.Unavailable("render failed")):
+                self.assertEqual(post().status_code,503)
+            debit.assert_not_called()
+            self.assertIn("5p",client.get(url+"/available").get_json()["rph_variants"])
+            debit.assert_not_called()
+            out=post()
+            self.assertEqual(out.status_code,200)
+            self.assertEqual(out.headers["X-RPH-Trial-Remaining"],"9")
+            self.assertEqual(out.headers["X-RPH-Variant"],"5p")
+            self.assertEqual(len(Document(BytesIO(out.data)).tables),1)
+            debit.assert_called_once()
+            self.assertEqual(debit.call_args.args[2],42)
+            self.assertTrue(debit.call_args.args[3].startswith("web-rph:"))
+            account["free_remaining"]=0
+            self.assertEqual(post().status_code,403)
+            debit.assert_called_once()
+            account["free_remaining"]=1
+            debit.return_value={"ok":False,"remaining":0}
+            denied=post()
+            self.assertEqual(denied.status_code,403)
+            self.assertNotIn("Content-Disposition",denied.headers)
+            self.assertEqual(debit.call_count,2)
+
 if __name__=="__main__":unittest.main()
