@@ -1,0 +1,27 @@
+{
+  "status": "PINNED_NATIVE_SOURCE_AND_DOCUMENT_TECHNICAL_QA_PASS",
+  "source_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+  "tested_commit": "9f38856b08e3dc5d7fb140363a5672dbbb354098",
+  "workflow_run": 46097546779,
+  "source_job": 140832288762,
+  "years": [
+    {
+      "year": 5,
+      "records": 116,
+      "source_issues": 0,
+      "document_job": 140832288682,
+      "document_result": "success"
+    },
+    {
+      "year": 6,
+      "records": 89,
+      "source_issues": 0,
+      "document_job": 140832288394,
+      "document_result": "success"
+    }
+  ],
+  "scope": "Pinned native exporter field verification and one-page Word-to-PDF draft layout QA only. Draft support suggestions are not academic approval; native PDF delivery, lesson-specific academic review and authenticated download remain unverified.",
+  "academic_approved": false,
+  "native_pdf_delivery_verified": false,
+  "release": false
+}
