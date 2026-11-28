@@ -1,0 +1,636 @@
+{
+  "status": "INITIAL_CONTENT_REVIEW_ONLY",
+  "source_version": "92e709bbedf075c3504ce1a47cfdfc2d0bdbf78c",
+  "source_blob": "da4baead5f0e2f95f62b9e65e931a6d7baefba22",
+  "companion_blob": "923af477036ccb9c0e815ad1b563981a4356c87c",
+  "total": 24,
+  "corrected_proposals": 17,
+  "policy": "Do not activate global 353-lesson switch; release only after corrected render tests, exact DK reference verification and individual release gate. Preserve RPT, original RPH and entitlement.",
+  "limitations": "Source is penataran-based SEMAKAN PELAKSANAAN; no independent DK page review in this pass. Proposed phase changes not yet wired to renderer. No live authenticated test or academic final approval.",
+  "records": [
+    {
+      "group": "A",
+      "lesson": 1,
+      "sp_code": "1.1.1",
+      "source_sp": "Mendengar untuk mengecam nama pelbagai bunyi persekitaran melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid memadankan sekurang-kurangnya empat daripada lima bunyi dengan sumber yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan detektif bunyi persekitaran berpandukan standard pembelajaran 1.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman bunyi selamat, kad gambar, kad jawapan",
+      "original_phases": {
+        "engagement": "Guru mainkan bunyi hujan dan loceng tanpa menunjukkan gambar; murid meneka sumber.",
+        "exploration": "Murid mendengar lima bunyi dan memilih kad gambar sumber secara berkumpulan.",
+        "explanation": "Murid menerangkan petunjuk bunyi; guru membetulkan padanan dan menyebut nama sumber.",
+        "elaboration": "Dalam permainan detektif, murid memadankan semula kad apabila susunan bunyi diubah. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid memadankan lima bunyi secara individu; sekurang-kurangnya empat padanan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru mainkan bunyi hujan dan loceng tanpa menunjukkan gambar; murid meneka sumber.",
+        "exploration": "Murid mendengar lima bunyi dan memilih kad gambar sumber secara berkumpulan.",
+        "explanation": "Murid menerangkan petunjuk bunyi; guru membetulkan padanan dan menyebut nama sumber.",
+        "elaboration": "Murid menyanyi lagu pendek bunyi persekitaran, kemudian bermain detektif dengan memadankan lima bunyi dalam susunan baharu.",
+        "evaluation": "Murid memadankan lima bunyi secara individu; sekurang-kurangnya empat padanan betul."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 2,
+      "sp_code": "2.1.1",
+      "source_sp": "Mengajuk bunyi persekitaran melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ajuk bunyi persekitaran berpandukan standard pembelajaran 2.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad bunyi, gambar sumber, rakaman",
+      "original_phases": {
+        "engagement": "Guru mengajuk bunyi hujan dan loceng; murid meneka sumber.",
+        "exploration": "Murid memilih kad sumber dan mencuba bunyinya dalam kumpulan kecil.",
+        "explanation": "Guru menunjukkan kawalan suara yang selamat; murid membandingkan ajukan dengan rakaman.",
+        "elaboration": "Murid bergilir mengajuk bunyi daripada kad rahsia untuk diteka rakan. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi yang dapat dikenal pasti."
+      },
+      "proposed_phases": {
+        "engagement": "Guru mengajuk bunyi hujan dan loceng; murid meneka sumber.",
+        "exploration": "Murid memilih kad sumber dan mencuba bunyinya dalam kumpulan kecil.",
+        "explanation": "Guru menunjukkan kawalan suara yang selamat; murid membandingkan ajukan dengan rakaman.",
+        "elaboration": "Murid mengajuk tiga bunyi mengikut lagu pendek, kemudian bergilir mengajuk bunyi daripada kad rahsia untuk diteka rakan.",
+        "evaluation": "Secara individu, murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 3,
+      "sp_code": "3.1.1",
+      "source_sp": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal simbol dan abjad berpandukan standard pembelajaran 3.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad simbol, kad abjad, carta lagu",
+      "original_phases": {
+        "engagement": "Guru menunjukkan simbol tandas dan huruf pada kad; murid menyatakan yang dikenali.",
+        "exploration": "Murid mencari padanan kad simbol dan abjad sambil menyanyikan lagu abjad.",
+        "explanation": "Murid menyebut nama kad; guru menjelaskan perbezaan simbol dan abjad.",
+        "elaboration": "Murid memilih kad yang diminta dalam permainan padanan visual.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan simbol tandas dan huruf pada kad; murid menyatakan yang dikenali.",
+        "exploration": "Murid mencari padanan kad simbol dan abjad sambil menyanyikan lagu abjad.",
+        "explanation": "Murid menyebut nama kad; guru menjelaskan perbezaan simbol dan abjad.",
+        "elaboration": "Murid memilih kad yang diminta dalam permainan padanan visual.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 4,
+      "sp_code": "4.1.1",
+      "source_sp": "Melakar pelbagai bentuk atau corak yang sesuai.",
+      "source_criteria": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan melakar bentuk dan corak berpandukan standard pembelajaran 4.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kertas, pensel, papan contoh corak",
+      "original_phases": {
+        "engagement": "Guru menunjukkan corak garisan lurus, lengkung dan bentuk mudah.",
+        "exploration": "Murid mencuba gerakan tangan di udara sebelum melakar di kertas.",
+        "explanation": "Guru menunjukkan arah lakaran; murid menerangkan cara menyambung garisan.",
+        "elaboration": "Murid melengkapkan corak pada lembaran dan menghasilkan satu corak pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan corak garisan lurus, lengkung dan bentuk mudah.",
+        "exploration": "Murid mencuba gerakan tangan di udara sebelum melakar di kertas.",
+        "explanation": "Guru menunjukkan arah lakaran; murid menerangkan cara menyambung garisan.",
+        "elaboration": "Murid melengkapkan corak pada lembaran dan menghasilkan satu corak pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 5,
+      "sp_code": "3.1.2",
+      "source_sp": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid membaca tiga daripada empat suku kata atau perkataan dengan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca suku kata dan perkataan berpandukan standard pembelajaran 3.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, carta perkataan, lagu",
+      "original_phases": {
+        "engagement": "Guru menunjukkan kad ba dan ju; murid cuba membaca kedua-duanya.",
+        "exploration": "Murid menyusun kad suku kata mengikut irama untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing murid menggabungkan bunyi ba-ju dan membaca perkataan baju.",
+        "elaboration": "Murid menukar pasangan kad untuk membina serta membaca perkataan seperti buku dan bola.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan kad ba dan ju; murid cuba membaca kedua-duanya.",
+        "exploration": "Murid menyusun kad suku kata mengikut irama untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing murid menggabungkan bunyi ba-ju dan membaca perkataan baju.",
+        "elaboration": "Murid bertukar kad dalam permainan suku kata, membina buku dan bola, kemudian membaca perkataan mengikut irama lagu.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 6,
+      "sp_code": "2.1.2",
+      "source_sp": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut abjad dan suku kata berpandukan standard pembelajaran 2.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad huruf, kad suku kata, lagu abjad",
+      "original_phases": {
+        "engagement": "Murid menyebut beberapa huruf bersama-sama mengikut irama lagu abjad.",
+        "exploration": "Murid memilih kad huruf dan suku kata terbuka lalu mencuba sebutan secara berpasangan.",
+        "explanation": "Guru menunjukkan sebutan yang betul; murid mengulang sambil membezakan bunyi.",
+        "elaboration": "Murid menyebut kad rawak dalam permainan giliran berirama.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Murid menyebut beberapa huruf bersama-sama mengikut irama lagu abjad.",
+        "exploration": "Murid memilih kad huruf dan suku kata terbuka lalu mencuba sebutan secara berpasangan.",
+        "explanation": "Guru menunjukkan sebutan yang betul; murid mengulang sambil membezakan bunyi.",
+        "elaboration": "Murid menyebut kad rawak dalam permainan giliran berirama.",
+        "evaluation": "Secara individu, murid menyebut dua abjad dan dua bunyi suku kata; sekurang-kurangnya tiga daripada empat sebutan betul."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 7,
+      "sp_code": "1.1.1",
+      "source_sp": "Mendengar untuk mengecam nama pelbagai bunyi persekitaran melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid memadankan sekurang-kurangnya empat daripada lima bunyi dengan sumber yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan detektif bunyi persekitaran berpandukan standard pembelajaran 1.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman bunyi selamat, kad gambar, kad jawapan",
+      "original_phases": {
+        "engagement": "Murid mendengar dua bunyi berturutan dan meneka bunyi pertama.",
+        "exploration": "Murid menyusun kad sumber mengikut urutan rakaman pendek tanpa melihat gambar dahulu.",
+        "explanation": "Guru membimbing murid menjelaskan perbezaan bunyi panjang, pendek dan berulang.",
+        "elaboration": "Murid bermain bingo bunyi menggunakan lima kad sumber dalam susunan baharu. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid memadankan sekurang-kurangnya empat daripada lima bunyi yang dimainkan secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Murid mendengar dua bunyi berturutan dan meneka bunyi pertama.",
+        "exploration": "Murid menyusun kad sumber mengikut urutan rakaman pendek tanpa melihat gambar dahulu.",
+        "explanation": "Guru membimbing murid menjelaskan perbezaan bunyi panjang, pendek dan berulang.",
+        "elaboration": "Murid menyanyikan lagu pendek nama sumber bunyi, kemudian bermain bingo bunyi dengan lima kad dalam susunan baharu.",
+        "evaluation": "Murid memadankan lima bunyi kepada sumbernya secara individu; sekurang-kurangnya empat padanan tepat."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 8,
+      "sp_code": "2.1.1",
+      "source_sp": "Mengajuk bunyi persekitaran melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ajuk bunyi persekitaran berpandukan standard pembelajaran 2.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad bunyi, gambar sumber, rakaman",
+      "original_phases": {
+        "engagement": "Murid mendengar bunyi kenderaan dan burung lalu cuba mengajuknya.",
+        "exploration": "Murid memilih kad gambar dan mencipta ajukan berbeza bersama pasangan.",
+        "explanation": "Guru membimbing kelantangan dan kejelasan; murid membetulkan ajukan selepas maklum balas.",
+        "elaboration": "Murid menghasilkan urutan bunyi untuk permainan teka bunyi dalam kumpulan. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
+      },
+      "proposed_phases": {
+        "engagement": "Murid mendengar bunyi kenderaan dan burung lalu cuba mengajuknya.",
+        "exploration": "Murid memilih kad gambar dan mencipta ajukan berbeza bersama pasangan.",
+        "explanation": "Guru membimbing kelantangan dan kejelasan; murid membetulkan ajukan selepas maklum balas.",
+        "elaboration": "Murid mengajuk bunyi burung dan kenderaan mengikut lagu, kemudian mencipta urutan bunyi untuk permainan teka bunyi kumpulan.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 9,
+      "sp_code": "3.1.1",
+      "source_sp": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal simbol dan abjad berpandukan standard pembelajaran 3.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad simbol, kad abjad, carta lagu",
+      "original_phases": {
+        "engagement": "Guru menunjukkan kad huruf dan simbol secara terbalik sebelum membukanya.",
+        "exploration": "Murid mengasingkan kad simbol daripada kad abjad pada dua ruang permainan.",
+        "explanation": "Murid menyebut nama kad pilihan; guru menerangkan padanan yang keliru.",
+        "elaboration": "Murid bermain cari kad berdasarkan sebutan nama abjad atau simbol daripada guru.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima kad yang ditunjukkan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyanyikan lagu abjad bersama murid, kemudian membuka kad huruf dan simbol secara bergilir untuk dikenal pasti.",
+        "exploration": "Murid mengasingkan kad simbol daripada kad abjad pada dua ruang permainan.",
+        "explanation": "Murid menyebut nama kad pilihan; guru menerangkan padanan yang keliru.",
+        "elaboration": "Murid bermain cari kad berdasarkan sebutan nama abjad atau simbol daripada guru.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima kad yang ditunjukkan."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 10,
+      "sp_code": "4.1.1",
+      "source_sp": "Melakar pelbagai bentuk atau corak yang sesuai.",
+      "source_criteria": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan melakar bentuk dan corak berpandukan standard pembelajaran 4.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kertas, pensel, papan contoh corak",
+      "original_phases": {
+        "engagement": "Guru mempamerkan corak berulang bulatan dan segi tiga; murid meneka bentuk seterusnya.",
+        "exploration": "Murid mencuba lakaran bentuk asas dengan arah dan saiz berbeza pada kertas.",
+        "explanation": "Guru menunjukkan cara mengawal pensel dan menghubungkan bentuk dengan kemas.",
+        "elaboration": "Murid membina corak berulang sendiri menggunakan dua bentuk pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru mempamerkan corak berulang bulatan dan segi tiga; murid meneka bentuk seterusnya.",
+        "exploration": "Murid mencuba lakaran bentuk asas dengan arah dan saiz berbeza pada kertas.",
+        "explanation": "Guru menunjukkan cara mengawal pensel dan menghubungkan bentuk dengan kemas.",
+        "elaboration": "Murid membina corak berulang sendiri menggunakan dua bentuk pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas secara individu."
+      },
+      "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 11,
+      "sp_code": "3.1.2",
+      "source_sp": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid membaca tiga daripada empat suku kata atau perkataan dengan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca suku kata dan perkataan berpandukan standard pembelajaran 3.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, carta perkataan, lagu",
+      "original_phases": {
+        "engagement": "Guru memaparkan kad suku kata ku dan da; murid meneka perkataan.",
+        "exploration": "Murid mencari pasangan kad untuk membina perkataan mudah dalam permainan berkumpulan.",
+        "explanation": "Guru membimbing bacaan gabungan suku kata dan membetulkan sebutan yang tidak tepat.",
+        "elaboration": "Murid bertukar kad dengan pasangan lalu membaca perkataan baharu seperti kuda dan mata.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan kad suku kata ku dan da; murid meneka perkataan.",
+        "exploration": "Murid mencari pasangan kad untuk membina perkataan mudah dalam permainan berkumpulan.",
+        "explanation": "Guru membimbing bacaan gabungan suku kata dan membetulkan sebutan yang tidak tepat.",
+        "elaboration": "Murid bertukar kad untuk membina perkataan seperti kuda dan mata, kemudian membacanya mengikut irama lagu.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "A",
+      "lesson": 12,
+      "sp_code": "2.1.2",
+      "source_sp": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut abjad dan suku kata berpandukan standard pembelajaran 2.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad huruf, kad suku kata, lagu abjad",
+      "original_phases": {
+        "engagement": "Murid menyambung irama abjad apabila guru berhenti pada satu huruf.",
+        "exploration": "Murid memilih kad suku kata daripada timbunan dan mencuba sebutan dengan pasangan.",
+        "explanation": "Guru membimbing kedudukan bunyi melalui contoh sebutan, murid mengulang dengan jelas.",
+        "elaboration": "Murid menjalankan permainan giliran menyebut huruf atau suku kata tanpa mengikut susunan asal.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Murid menyambung irama abjad apabila guru berhenti pada satu huruf.",
+        "exploration": "Murid memilih kad suku kata daripada timbunan dan mencuba sebutan dengan pasangan.",
+        "explanation": "Guru membimbing kedudukan bunyi melalui contoh sebutan, murid mengulang dengan jelas.",
+        "elaboration": "Murid menjalankan permainan giliran menyebut huruf atau suku kata tanpa mengikut susunan asal.",
+        "evaluation": "Secara individu, murid menyebut dua abjad dan dua bunyi suku kata; sekurang-kurangnya tiga daripada empat sebutan betul."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 1,
+      "sp_code": "1.1.1",
+      "source_sp": "Mendengar untuk mengecam nama pelbagai bunyi persekitaran melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid memadankan sekurang-kurangnya empat daripada lima bunyi dengan sumber yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan detektif bunyi persekitaran berpandukan standard pembelajaran 1.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman bunyi selamat, kad gambar, kad jawapan",
+      "original_phases": {
+        "engagement": "Guru mainkan bunyi hujan dan loceng tanpa menunjukkan gambar; murid meneka sumber.",
+        "exploration": "Murid mendengar lima bunyi dan memilih kad gambar sumber secara berkumpulan.",
+        "explanation": "Murid menerangkan petunjuk bunyi; guru membetulkan padanan dan menyebut nama sumber.",
+        "elaboration": "Dalam permainan detektif, murid memadankan semula kad apabila susunan bunyi diubah. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid memadankan lima bunyi secara individu; sekurang-kurangnya empat padanan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru mainkan bunyi hujan dan loceng tanpa menunjukkan gambar; murid meneka sumber.",
+        "exploration": "Murid mendengar lima bunyi dan memilih kad gambar sumber secara berkumpulan.",
+        "explanation": "Murid menerangkan petunjuk bunyi; guru membetulkan padanan dan menyebut nama sumber.",
+        "elaboration": "Murid menyanyi lagu pendek bunyi persekitaran, kemudian bermain detektif dengan memadankan lima bunyi dalam susunan baharu.",
+        "evaluation": "Murid memadankan lima bunyi secara individu; sekurang-kurangnya empat padanan betul."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 2,
+      "sp_code": "2.1.1",
+      "source_sp": "Mengajuk bunyi persekitaran melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ajuk bunyi persekitaran berpandukan standard pembelajaran 2.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad bunyi, gambar sumber, rakaman",
+      "original_phases": {
+        "engagement": "Guru mengajuk bunyi hujan dan loceng; murid meneka sumber.",
+        "exploration": "Murid memilih kad sumber dan mencuba bunyinya dalam kumpulan kecil.",
+        "explanation": "Guru menunjukkan kawalan suara yang selamat; murid membandingkan ajukan dengan rakaman.",
+        "elaboration": "Murid bergilir mengajuk bunyi daripada kad rahsia untuk diteka rakan. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi yang dapat dikenal pasti."
+      },
+      "proposed_phases": {
+        "engagement": "Guru mengajuk bunyi hujan dan loceng; murid meneka sumber.",
+        "exploration": "Murid memilih kad sumber dan mencuba bunyinya dalam kumpulan kecil.",
+        "explanation": "Guru menunjukkan kawalan suara yang selamat; murid membandingkan ajukan dengan rakaman.",
+        "elaboration": "Murid mengajuk tiga bunyi mengikut lagu pendek, kemudian bergilir mengajuk bunyi daripada kad rahsia untuk diteka rakan.",
+        "evaluation": "Secara individu, murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 3,
+      "sp_code": "3.1.1",
+      "source_sp": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal simbol dan abjad berpandukan standard pembelajaran 3.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad simbol, kad abjad, carta lagu",
+      "original_phases": {
+        "engagement": "Guru menunjukkan simbol tandas dan huruf pada kad; murid menyatakan yang dikenali.",
+        "exploration": "Murid mencari padanan kad simbol dan abjad sambil menyanyikan lagu abjad.",
+        "explanation": "Murid menyebut nama kad; guru menjelaskan perbezaan simbol dan abjad.",
+        "elaboration": "Murid memilih kad yang diminta dalam permainan padanan visual.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan simbol tandas dan huruf pada kad; murid menyatakan yang dikenali.",
+        "exploration": "Murid mencari padanan kad simbol dan abjad sambil menyanyikan lagu abjad.",
+        "explanation": "Murid menyebut nama kad; guru menjelaskan perbezaan simbol dan abjad.",
+        "elaboration": "Murid memilih kad yang diminta dalam permainan padanan visual.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 4,
+      "sp_code": "4.1.1",
+      "source_sp": "Melakar pelbagai bentuk atau corak yang sesuai.",
+      "source_criteria": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan melakar bentuk dan corak berpandukan standard pembelajaran 4.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kertas, pensel, papan contoh corak",
+      "original_phases": {
+        "engagement": "Guru menunjukkan corak garisan lurus, lengkung dan bentuk mudah.",
+        "exploration": "Murid mencuba gerakan tangan di udara sebelum melakar di kertas.",
+        "explanation": "Guru menunjukkan arah lakaran; murid menerangkan cara menyambung garisan.",
+        "elaboration": "Murid melengkapkan corak pada lembaran dan menghasilkan satu corak pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan corak garisan lurus, lengkung dan bentuk mudah.",
+        "exploration": "Murid mencuba gerakan tangan di udara sebelum melakar di kertas.",
+        "explanation": "Guru menunjukkan arah lakaran; murid menerangkan cara menyambung garisan.",
+        "elaboration": "Murid melengkapkan corak pada lembaran dan menghasilkan satu corak pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 5,
+      "sp_code": "1.1.1",
+      "source_sp": "Mendengar untuk mengecam nama pelbagai bunyi persekitaran melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid memadankan sekurang-kurangnya empat daripada lima bunyi dengan sumber yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan detektif bunyi persekitaran berpandukan standard pembelajaran 1.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman bunyi selamat, kad gambar, kad jawapan",
+      "original_phases": {
+        "engagement": "Murid mendengar dua bunyi berturutan dan meneka bunyi pertama.",
+        "exploration": "Murid menyusun kad sumber mengikut urutan rakaman pendek tanpa melihat gambar dahulu.",
+        "explanation": "Guru membimbing murid menjelaskan perbezaan bunyi panjang, pendek dan berulang.",
+        "elaboration": "Murid bermain bingo bunyi menggunakan lima kad sumber dalam susunan baharu. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid memadankan sekurang-kurangnya empat daripada lima bunyi yang dimainkan secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Murid mendengar dua bunyi berturutan dan meneka bunyi pertama.",
+        "exploration": "Murid menyusun kad sumber mengikut urutan rakaman pendek tanpa melihat gambar dahulu.",
+        "explanation": "Guru membimbing murid menjelaskan perbezaan bunyi panjang, pendek dan berulang.",
+        "elaboration": "Murid menyanyikan lagu pendek nama sumber bunyi, kemudian bermain bingo bunyi dengan lima kad dalam susunan baharu.",
+        "evaluation": "Murid memadankan lima bunyi kepada sumbernya secara individu; sekurang-kurangnya empat padanan tepat."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 6,
+      "sp_code": "2.1.1",
+      "source_sp": "Mengajuk bunyi persekitaran melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ajuk bunyi persekitaran berpandukan standard pembelajaran 2.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad bunyi, gambar sumber, rakaman",
+      "original_phases": {
+        "engagement": "Murid mendengar bunyi kenderaan dan burung lalu cuba mengajuknya.",
+        "exploration": "Murid memilih kad gambar dan mencipta ajukan berbeza bersama pasangan.",
+        "explanation": "Guru membimbing kelantangan dan kejelasan; murid membetulkan ajukan selepas maklum balas.",
+        "elaboration": "Murid menghasilkan urutan bunyi untuk permainan teka bunyi dalam kumpulan. Murid menggunakan bunyi dalam permainan bahasa berirama.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
+      },
+      "proposed_phases": {
+        "engagement": "Murid mendengar bunyi kenderaan dan burung lalu cuba mengajuknya.",
+        "exploration": "Murid memilih kad gambar dan mencipta ajukan berbeza bersama pasangan.",
+        "explanation": "Guru membimbing kelantangan dan kejelasan; murid membetulkan ajukan selepas maklum balas.",
+        "elaboration": "Murid mengajuk bunyi burung dan kenderaan mengikut lagu, kemudian mencipta urutan bunyi untuk permainan teka bunyi kumpulan.",
+        "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 7,
+      "sp_code": "3.1.1",
+      "source_sp": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal simbol dan abjad berpandukan standard pembelajaran 3.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad simbol, kad abjad, carta lagu",
+      "original_phases": {
+        "engagement": "Guru menunjukkan kad huruf dan simbol secara terbalik sebelum membukanya.",
+        "exploration": "Murid mengasingkan kad simbol daripada kad abjad pada dua ruang permainan.",
+        "explanation": "Murid menyebut nama kad pilihan; guru menerangkan padanan yang keliru.",
+        "elaboration": "Murid bermain cari kad berdasarkan sebutan nama abjad atau simbol daripada guru.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima kad yang ditunjukkan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyanyikan lagu abjad bersama murid, kemudian membuka kad huruf dan simbol secara bergilir untuk dikenal pasti.",
+        "exploration": "Murid mengasingkan kad simbol daripada kad abjad pada dua ruang permainan.",
+        "explanation": "Murid menyebut nama kad pilihan; guru menerangkan padanan yang keliru.",
+        "elaboration": "Murid bermain cari kad berdasarkan sebutan nama abjad atau simbol daripada guru.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima kad yang ditunjukkan."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 8,
+      "sp_code": "4.1.1",
+      "source_sp": "Melakar pelbagai bentuk atau corak yang sesuai.",
+      "source_criteria": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan melakar bentuk dan corak berpandukan standard pembelajaran 4.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kertas, pensel, papan contoh corak",
+      "original_phases": {
+        "engagement": "Guru mempamerkan corak berulang bulatan dan segi tiga; murid meneka bentuk seterusnya.",
+        "exploration": "Murid mencuba lakaran bentuk asas dengan arah dan saiz berbeza pada kertas.",
+        "explanation": "Guru menunjukkan cara mengawal pensel dan menghubungkan bentuk dengan kemas.",
+        "elaboration": "Murid membina corak berulang sendiri menggunakan dua bentuk pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru mempamerkan corak berulang bulatan dan segi tiga; murid meneka bentuk seterusnya.",
+        "exploration": "Murid mencuba lakaran bentuk asas dengan arah dan saiz berbeza pada kertas.",
+        "explanation": "Guru menunjukkan cara mengawal pensel dan menghubungkan bentuk dengan kemas.",
+        "elaboration": "Murid membina corak berulang sendiri menggunakan dua bentuk pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas secara individu."
+      },
+      "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 9,
+      "sp_code": "3.1.2",
+      "source_sp": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid membaca tiga daripada empat suku kata atau perkataan dengan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca suku kata dan perkataan berpandukan standard pembelajaran 3.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, carta perkataan, lagu",
+      "original_phases": {
+        "engagement": "Guru menunjukkan kad ba dan ju; murid cuba membaca kedua-duanya.",
+        "exploration": "Murid menyusun kad suku kata mengikut irama untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing murid menggabungkan bunyi ba-ju dan membaca perkataan baju.",
+        "elaboration": "Murid menukar pasangan kad untuk membina serta membaca perkataan seperti buku dan bola.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan kad ba dan ju; murid cuba membaca kedua-duanya.",
+        "exploration": "Murid menyusun kad suku kata mengikut irama untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing murid menggabungkan bunyi ba-ju dan membaca perkataan baju.",
+        "elaboration": "Murid bertukar kad dalam permainan suku kata, membina buku dan bola, kemudian membaca perkataan mengikut irama lagu.",
+        "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 10,
+      "sp_code": "2.1.2",
+      "source_sp": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut abjad dan suku kata berpandukan standard pembelajaran 2.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad huruf, kad suku kata, lagu abjad",
+      "original_phases": {
+        "engagement": "Murid menyebut beberapa huruf bersama-sama mengikut irama lagu abjad.",
+        "exploration": "Murid memilih kad huruf dan suku kata terbuka lalu mencuba sebutan secara berpasangan.",
+        "explanation": "Guru menunjukkan sebutan yang betul; murid mengulang sambil membezakan bunyi.",
+        "elaboration": "Murid menyebut kad rawak dalam permainan giliran berirama.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Murid menyebut beberapa huruf bersama-sama mengikut irama lagu abjad.",
+        "exploration": "Murid memilih kad huruf dan suku kata terbuka lalu mencuba sebutan secara berpasangan.",
+        "explanation": "Guru menunjukkan sebutan yang betul; murid mengulang sambil membezakan bunyi.",
+        "elaboration": "Murid menyebut kad rawak dalam permainan giliran berirama.",
+        "evaluation": "Secara individu, murid menyebut dua abjad dan dua bunyi suku kata; sekurang-kurangnya tiga daripada empat sebutan betul."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 11,
+      "sp_code": "1.1.2",
+      "source_sp": "Mendengar untuk mengecam nama abjad dan bunyi suku kata melalui lagu yang berirama lagu kanak-kanak dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat bunyi huruf atau suku kata yang diperdengarkan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal bunyi abjad dan suku kata berpandukan standard pembelajaran 1.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman abjad, kad huruf, kad suku kata",
+      "original_phases": {
+        "engagement": "Guru memperdengarkan lagu abjad; murid mengangkat kad huruf yang didengar.",
+        "exploration": "Murid mendengar lagu berirama kanak-kanak yang memuatkan bunyi abjad dan suku kata; murid memilih kad padanan.",
+        "explanation": "Guru membimbing padanan bunyi dengan simbol; murid menjelaskan pilihan.",
+        "elaboration": "Murid bermain padanan bunyi rawak dengan kad huruf dan suku kata.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat bunyi huruf atau suku kata yang diperdengarkan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperdengarkan lagu abjad; murid mengangkat kad huruf yang didengar.",
+        "exploration": "Murid mendengar lagu berirama kanak-kanak yang memuatkan bunyi abjad dan suku kata; murid memilih kad padanan.",
+        "explanation": "Guru membimbing padanan bunyi dengan simbol; murid menjelaskan pilihan.",
+        "elaboration": "Murid bermain padanan bunyi rawak dengan kad huruf dan suku kata.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat bunyi huruf atau suku kata yang diperdengarkan."
+      },
+      "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    },
+    {
+      "group": "B",
+      "lesson": 12,
+      "sp_code": "2.1.2",
+      "source_sp": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut abjad dan suku kata berpandukan standard pembelajaran 2.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad huruf, kad suku kata, lagu abjad",
+      "original_phases": {
+        "engagement": "Murid menyambung irama abjad apabila guru berhenti pada satu huruf.",
+        "exploration": "Murid memilih kad suku kata daripada timbunan dan mencuba sebutan dengan pasangan.",
+        "explanation": "Guru membimbing kedudukan bunyi melalui contoh sebutan, murid mengulang dengan jelas.",
+        "elaboration": "Murid menjalankan permainan giliran menyebut huruf atau suku kata tanpa mengikut susunan asal.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Murid menyambung irama abjad apabila guru berhenti pada satu huruf.",
+        "exploration": "Murid memilih kad suku kata daripada timbunan dan mencuba sebutan dengan pasangan.",
+        "explanation": "Guru membimbing kedudukan bunyi melalui contoh sebutan, murid mengulang dengan jelas.",
+        "elaboration": "Murid menjalankan permainan giliran menyebut huruf atau suku kata tanpa mengikut susunan asal.",
+        "evaluation": "Secara individu, murid menyebut dua abjad dan dua bunyi suku kata; sekurang-kurangnya tiga daripada empat sebutan betul."
+      },
+      "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
+      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
+      "ready": false
+    }
+  ]
+}
