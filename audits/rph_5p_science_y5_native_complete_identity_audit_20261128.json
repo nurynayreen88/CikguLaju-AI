@@ -1,0 +1,37 @@
+{
+  "status": "DRAFT_SOURCE_IDENTITY_QA_ONLY",
+  "count": 116,
+  "unique": 116,
+  "minutes": 3840,
+  "source_blob": "5400828c95ca332d587a12be7e8c2a6f9521ebfd",
+  "blobs": [
+    {
+      "path": "audits/rph_5p_science_y5_native_001_015_20261128.json",
+      "sha": "a5690fcf9bde587e7866adaac56ac914a7779669",
+      "count": 15
+    },
+    {
+      "path": "audits/rph_5p_science_y5_native_016_031_20261128.json",
+      "sha": "ae891bb48d9081cb3ab4f33ac8fbc2cf785fb4f5",
+      "count": 16
+    },
+    {
+      "path": "audits/rph_5p_science_y5_native_032_051_20261128.json",
+      "sha": "2c7b6fa9884df3890f216116f34f9409229e6550",
+      "count": 20
+    },
+    {
+      "path": "audits/rph_5p_science_y5_native_052_083_20261128.json",
+      "sha": "16855aeabf788060f358ca89f0c3cb4c01053371",
+      "count": 32
+    },
+    {
+      "path": "audits/rph_5p_science_y5_native_084_116_20261128.json",
+      "sha": "d41b73977b113344f838d6680813dd4edb7970db",
+      "count": 33
+    }
+  ],
+  "missing": [],
+  "issues": [],
+  "release": false
+}
