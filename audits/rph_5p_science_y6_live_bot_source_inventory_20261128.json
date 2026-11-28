@@ -1,0 +1,2110 @@
+{
+  "status": "LIVE_BOT_COMMIT_SOURCE_INVENTORY_NOT_AUTHENTICATED_RUNTIME_SMOKE",
+  "source": {
+    "bot_deploy_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+    "path": "staging/sains/tahun6/agihan_2027.json",
+    "blob": "58661f6b6b4fcb10ba7945d67d0b64e5d207d7d5",
+    "source_rpt": {
+      "commit": "57aa5be4c9c0cc8511a545ee88dfb4423df50cb9",
+      "sha256_pdf": "b5a60790595f5e3da950a3342e1f9448d3808d7a963a04066840fdb1c6707150"
+    }
+  },
+  "candidate_source": {
+    "path": "audits/rph_5p_science_kssr_t6_dskp_candidates_20261128.json",
+    "blob": "ab65517e2cd8b1b368138672ca26fedf623b0c7e"
+  },
+  "year": 6,
+  "total": 89,
+  "total_minutes": 3840,
+  "missing_sp": [],
+  "exact_set_suggestions": 10,
+  "unmatched_sp_rows": 0,
+  "policy": "SP overlap is a review aid only, not a confirmed pedagogical mapping. Preserve original source duration, topic, pages and order. No readiness or production modification.",
+  "records": [
+    {
+      "teaching_order": 1,
+      "source_pdp_id": 85,
+      "lesson_id": "SK27-SCI-Y6-PDP-085",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Memerhati, mengelas dan mengukur kereta model",
+      "sp_codes": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "minutes": 30,
+      "textbook_pages": "2-5",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-001",
+          "shared_sp": [
+            "1.1.1",
+            "1.1.2"
+          ],
+          "exact_sp_set": false
+        },
+        {
+          "candidate_id": "SCI-T6-DRAFT-002",
+          "shared_sp": [
+            "1.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 2,
+      "source_pdp_id": 86,
+      "lesson_id": "SK27-SCI-Y6-PDP-086",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Membentangkan sebab dan jangkaan pergerakan model",
+      "sp_codes": [
+        "1.1.4",
+        "1.1.5",
+        "1.1.6"
+      ],
+      "minutes": 30,
+      "textbook_pages": "5-7",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-002",
+          "shared_sp": [
+            "1.1.4"
+          ],
+          "exact_sp_set": false
+        },
+        {
+          "candidate_id": "SCI-T6-DRAFT-003",
+          "shared_sp": [
+            "1.1.5",
+            "1.1.6"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 3,
+      "source_pdp_id": 87,
+      "lesson_id": "SK27-SCI-Y6-PDP-087",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Mentafsir pergerakan model mengikut masa",
+      "sp_codes": [
+        "1.1.7",
+        "1.1.8",
+        "1.1.9"
+      ],
+      "minutes": 60,
+      "textbook_pages": "6-7",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-004",
+          "shared_sp": [
+            "1.1.7",
+            "1.1.8"
+          ],
+          "exact_sp_set": false
+        },
+        {
+          "candidate_id": "SCI-T6-DRAFT-005",
+          "shared_sp": [
+            "1.1.9"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 4,
+      "source_pdp_id": 88,
+      "lesson_id": "SK27-SCI-Y6-PDP-088",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Mereka bentuk ujian jisim kereta model",
+      "sp_codes": [
+        "1.1.10",
+        "1.1.11"
+      ],
+      "minutes": 30,
+      "textbook_pages": "7-8",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-005",
+          "shared_sp": [
+            "1.1.10"
+          ],
+          "exact_sp_set": false
+        },
+        {
+          "candidate_id": "SCI-T6-DRAFT-006",
+          "shared_sp": [
+            "1.1.11"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 5,
+      "source_pdp_id": 89,
+      "lesson_id": "SK27-SCI-Y6-PDP-089",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Menguji kesan jisim pada jarak pergerakan",
+      "sp_codes": [
+        "1.1.12"
+      ],
+      "minutes": 60,
+      "textbook_pages": "7-8",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-006",
+          "shared_sp": [
+            "1.1.12"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 6,
+      "source_pdp_id": 1,
+      "lesson_id": "SK27-SCI-Y6-PDP-001",
+      "unit": "Unit 2: Manusia",
+      "title": "Memerihalkan fungsi organ pembiakan lelaki dan perempuan.",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "14-15",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-007",
+          "shared_sp": [
+            "2.1.1"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 7,
+      "source_pdp_id": 2,
+      "lesson_id": "SK27-SCI-Y6-PDP-002",
+      "unit": "Unit 2: Manusia",
+      "title": "Menjelaskan proses persenyawaan manusia sehingga bayi dilahirkan.",
+      "sp_codes": [
+        "2.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "16-17",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-008",
+          "shared_sp": [
+            "2.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 8,
+      "source_pdp_id": 3,
+      "lesson_id": "SK27-SCI-Y6-PDP-003",
+      "unit": "Unit 2: Manusia",
+      "title": "Menaakul kepentingan pembiakan kepada manusia.",
+      "sp_codes": [
+        "2.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "18",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-008",
+          "shared_sp": [
+            "2.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 9,
+      "source_pdp_id": 4,
+      "lesson_id": "SK27-SCI-Y6-PDP-004",
+      "unit": "Unit 2: Manusia",
+      "title": "Menjelaskan pemerhatian tentang pembiakan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "2.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "19",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-008",
+          "shared_sp": [
+            "2.1.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 10,
+      "source_pdp_id": 5,
+      "lesson_id": "SK27-SCI-Y6-PDP-005",
+      "unit": "Unit 2: Manusia",
+      "title": "Mengenal pasti jenis sistem saraf manusia.",
+      "sp_codes": [
+        "2.2.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "20-21",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-009",
+          "shared_sp": [
+            "2.2.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 11,
+      "source_pdp_id": 6,
+      "lesson_id": "SK27-SCI-Y6-PDP-006",
+      "unit": "Unit 2: Manusia",
+      "title": "Sistem saraf pusat dan fungsinya",
+      "sp_codes": [
+        "2.2.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "21-22",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-009",
+          "shared_sp": [
+            "2.2.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 12,
+      "source_pdp_id": 7,
+      "lesson_id": "SK27-SCI-Y6-PDP-007",
+      "unit": "Unit 2: Manusia",
+      "title": "Fungsi sistem saraf periferi",
+      "sp_codes": [
+        "2.2.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "25",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-009",
+          "shared_sp": [
+            "2.2.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 13,
+      "source_pdp_id": 8,
+      "lesson_id": "SK27-SCI-Y6-PDP-008",
+      "unit": "Unit 2: Manusia",
+      "title": "Meramalkan keadaan yang berlaku jika sistem saraf periferi tidak berfungsi.",
+      "sp_codes": [
+        "2.2.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "25",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-010",
+          "shared_sp": [
+            "2.2.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 14,
+      "source_pdp_id": 9,
+      "lesson_id": "SK27-SCI-Y6-PDP-009",
+      "unit": "Unit 2: Manusia",
+      "title": "Menjana idea tentang cara menjaga sistem saraf.",
+      "sp_codes": [
+        "2.2.5"
+      ],
+      "minutes": 60,
+      "textbook_pages": "26-27",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-010",
+          "shared_sp": [
+            "2.2.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 15,
+      "source_pdp_id": 10,
+      "lesson_id": "SK27-SCI-Y6-PDP-010",
+      "unit": "Unit 2: Manusia",
+      "title": "Menjelaskan pemerhatian tentang sistem saraf melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "2.2.6"
+      ],
+      "minutes": 30,
+      "textbook_pages": "28",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-010",
+          "shared_sp": [
+            "2.2.6"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 16,
+      "source_pdp_id": 11,
+      "lesson_id": "SK27-SCI-Y6-PDP-011",
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Menjelaskan dengan contoh jenis mikroorganisma.",
+      "sp_codes": [
+        "3.1.1"
+      ],
+      "minutes": 60,
+      "textbook_pages": "34-35",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-011",
+          "shared_sp": [
+            "3.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 17,
+      "source_pdp_id": 12,
+      "lesson_id": "SK27-SCI-Y6-PDP-012",
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Mengitlak maksud mikroorganisma.",
+      "sp_codes": [
+        "3.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "33-35",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-011",
+          "shared_sp": [
+            "3.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 18,
+      "source_pdp_id": 13,
+      "lesson_id": "SK27-SCI-Y6-PDP-013",
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Menyiasat proses hidup mikroorganisma.",
+      "sp_codes": [
+        "3.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "36-39",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-012",
+          "shared_sp": [
+            "3.1.3"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 19,
+      "source_pdp_id": 14,
+      "lesson_id": "SK27-SCI-Y6-PDP-014",
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Mengeksperimen faktor pertumbuhan mikroorganisma.",
+      "sp_codes": [
+        "3.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "40-43",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-013",
+          "shared_sp": [
+            "3.1.4"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 20,
+      "source_pdp_id": 15,
+      "lesson_id": "SK27-SCI-Y6-PDP-015",
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Memerihalkan kesan mikroorganisma dalam kehidupan harian.",
+      "sp_codes": [
+        "3.1.5"
+      ],
+      "minutes": 60,
+      "textbook_pages": "44-46",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-014",
+          "shared_sp": [
+            "3.1.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 21,
+      "source_pdp_id": 16,
+      "lesson_id": "SK27-SCI-Y6-PDP-016",
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Menjelaskan pemerhatian tentang mikroorganisma melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "3.1.6"
+      ],
+      "minutes": 30,
+      "textbook_pages": "47",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-014",
+          "shared_sp": [
+            "3.1.6"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 22,
+      "source_pdp_id": 17,
+      "lesson_id": "SK27-SCI-Y6-PDP-017",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Memerihalkan jenis interaksi antara hidupan.",
+      "sp_codes": [
+        "4.1.1"
+      ],
+      "minutes": 60,
+      "textbook_pages": "52-53",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-015",
+          "shared_sp": [
+            "4.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 23,
+      "source_pdp_id": 18,
+      "lesson_id": "SK27-SCI-Y6-PDP-018",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Menjelas dengan contoh faktor persaingan bagi haiwan intraspesies dan interspesies.",
+      "sp_codes": [
+        "4.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "54-55",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-015",
+          "shared_sp": [
+            "4.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 24,
+      "source_pdp_id": 19,
+      "lesson_id": "SK27-SCI-Y6-PDP-019",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Menjelaskan melalui contoh jenis interaksi simbiosis antara haiwan.",
+      "sp_codes": [
+        "4.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "56-58",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-016",
+          "shared_sp": [
+            "4.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 25,
+      "source_pdp_id": 20,
+      "lesson_id": "SK27-SCI-Y6-PDP-020",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Menjelaskan pemerhatian tentang interaksi antara haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "4.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "58",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-016",
+          "shared_sp": [
+            "4.1.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 26,
+      "source_pdp_id": 21,
+      "lesson_id": "SK27-SCI-Y6-PDP-021",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Interaksi antara Hidupan — Memerihalkan faktor persaingan antara tumbuhan dengan menjalankan penyiasatan.",
+      "sp_codes": [
+        "4.2.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "59-60",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-017",
+          "shared_sp": [
+            "4.2.1"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 27,
+      "source_pdp_id": 22,
+      "lesson_id": "SK27-SCI-Y6-PDP-022",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Interaksi antara Hidupan — Menjelas dengan contoh jenis interaksi antara tumbuhan.",
+      "sp_codes": [
+        "4.2.2"
+      ],
+      "minutes": 60,
+      "textbook_pages": "61-62",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-018",
+          "shared_sp": [
+            "4.2.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 28,
+      "source_pdp_id": 23,
+      "lesson_id": "SK27-SCI-Y6-PDP-023",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Interaksi antara Hidupan — Menjelaskan pemerhatian tentang interaksi antara tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "4.2.3"
+      ],
+      "minutes": 30,
+      "textbook_pages": "64",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-018",
+          "shared_sp": [
+            "4.2.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 29,
+      "source_pdp_id": 24,
+      "lesson_id": "SK27-SCI-Y6-PDP-024",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menyatakan maksud pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "sp_codes": [
+        "5.1.1"
+      ],
+      "minutes": 60,
+      "textbook_pages": "75-76",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-019",
+          "shared_sp": [
+            "5.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 30,
+      "source_pdp_id": 25,
+      "lesson_id": "SK27-SCI-Y6-PDP-025",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjana idea cara pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "sp_codes": [
+        "5.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "76-79",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-019",
+          "shared_sp": [
+            "5.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 31,
+      "source_pdp_id": 26,
+      "lesson_id": "SK27-SCI-Y6-PDP-026",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan yang pupus.",
+      "sp_codes": [
+        "5.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "68-69",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-020",
+          "shared_sp": [
+            "5.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 32,
+      "source_pdp_id": 27,
+      "lesson_id": "SK27-SCI-Y6-PDP-027",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan dan tumbuhan yang diancam kepupusan.",
+      "sp_codes": [
+        "5.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "70-71",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-020",
+          "shared_sp": [
+            "5.1.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 33,
+      "source_pdp_id": 28,
+      "lesson_id": "SK27-SCI-Y6-PDP-028",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan melalui contoh faktor yang menyebabkan kepupusan haiwan dan tumbuhan.",
+      "sp_codes": [
+        "5.1.5"
+      ],
+      "minutes": 60,
+      "textbook_pages": "72-74",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-021",
+          "shared_sp": [
+            "5.1.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 34,
+      "source_pdp_id": 29,
+      "lesson_id": "SK27-SCI-Y6-PDP-029",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menaakul kepentingan pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "sp_codes": [
+        "5.1.6"
+      ],
+      "minutes": 30,
+      "textbook_pages": "80-81",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-021",
+          "shared_sp": [
+            "5.1.6"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 35,
+      "source_pdp_id": 30,
+      "lesson_id": "SK27-SCI-Y6-PDP-030",
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan pemerhatian tentang pemeliharaan dan pemuliharaan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "5.1.7"
+      ],
+      "minutes": 60,
+      "textbook_pages": "82-83",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-021",
+          "shared_sp": [
+            "5.1.7"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 36,
+      "source_pdp_id": 31,
+      "lesson_id": "SK27-SCI-Y6-PDP-031",
+      "unit": "Unit 6: Daya",
+      "title": "Menyatakan maksud daya dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "6.1.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "88-89",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-022",
+          "shared_sp": [
+            "6.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 37,
+      "source_pdp_id": 32,
+      "lesson_id": "SK27-SCI-Y6-PDP-032",
+      "unit": "Unit 6: Daya",
+      "title": "Menjelas dengan contoh kesan daya terhadap objek.",
+      "sp_codes": [
+        "6.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "90-92",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-022",
+          "shared_sp": [
+            "6.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 38,
+      "source_pdp_id": 33,
+      "lesson_id": "SK27-SCI-Y6-PDP-033",
+      "unit": "Unit 6: Daya",
+      "title": "Menjelaskan pemerhatian tentang daya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "6.1.3"
+      ],
+      "minutes": 30,
+      "textbook_pages": "92",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-022",
+          "shared_sp": [
+            "6.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 39,
+      "source_pdp_id": 34,
+      "lesson_id": "SK27-SCI-Y6-PDP-034",
+      "unit": "Unit 6: Daya",
+      "title": "Menyatakan maksud daya geseran.",
+      "sp_codes": [
+        "6.2.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "93-94",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-023",
+          "shared_sp": [
+            "6.2.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 40,
+      "source_pdp_id": 35,
+      "lesson_id": "SK27-SCI-Y6-PDP-035",
+      "unit": "Unit 6: Daya",
+      "title": "Kesan daya geseran",
+      "sp_codes": [
+        "6.2.2"
+      ],
+      "minutes": 60,
+      "textbook_pages": "95-96",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-023",
+          "shared_sp": [
+            "6.2.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 41,
+      "source_pdp_id": 36,
+      "lesson_id": "SK27-SCI-Y6-PDP-036",
+      "unit": "Unit 6: Daya",
+      "title": "Eksperimen faktor yang mempengaruhi daya geseran",
+      "sp_codes": [
+        "6.2.3"
+      ],
+      "minutes": 30,
+      "textbook_pages": "97-98",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-024",
+          "shared_sp": [
+            "6.2.3"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 42,
+      "source_pdp_id": 37,
+      "lesson_id": "SK27-SCI-Y6-PDP-037",
+      "unit": "Unit 6: Daya",
+      "title": "Menjana idea untuk meningkatkan atau mengurangkan daya geseran bagi menyelesaikan masalah dalam kehidupan harian.",
+      "sp_codes": [
+        "6.2.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "99-100",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-025",
+          "shared_sp": [
+            "6.2.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 43,
+      "source_pdp_id": 38,
+      "lesson_id": "SK27-SCI-Y6-PDP-038",
+      "unit": "Unit 6: Daya",
+      "title": "Menjelaskan pemerhatian tentang daya geseran melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "6.2.5"
+      ],
+      "minutes": 60,
+      "textbook_pages": "100",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-025",
+          "shared_sp": [
+            "6.2.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 44,
+      "source_pdp_id": 39,
+      "lesson_id": "SK27-SCI-Y6-PDP-039",
+      "unit": "Unit 6: Daya",
+      "title": "Memerihalkan kewujudan tekanan udara di sekeliling dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "6.3.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "101-104",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-026",
+          "shared_sp": [
+            "6.3.1"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 45,
+      "source_pdp_id": 40,
+      "lesson_id": "SK27-SCI-Y6-PDP-040",
+      "unit": "Unit 6: Daya",
+      "title": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian.",
+      "sp_codes": [
+        "6.3.2"
+      ],
+      "minutes": 60,
+      "textbook_pages": "105-106",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-027",
+          "shared_sp": [
+            "6.3.2"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 46,
+      "source_pdp_id": 41,
+      "lesson_id": "SK27-SCI-Y6-PDP-041",
+      "unit": "Unit 6: Daya",
+      "title": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian.",
+      "sp_codes": [
+        "6.3.3"
+      ],
+      "minutes": 30,
+      "textbook_pages": "107-108",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-028",
+          "shared_sp": [
+            "6.3.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 47,
+      "source_pdp_id": 42,
+      "lesson_id": "SK27-SCI-Y6-PDP-042",
+      "unit": "Unit 6: Daya",
+      "title": "Menjelaskan pemerhatian tentang tekanan udara melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "6.3.4"
+      ],
+      "minutes": 60,
+      "textbook_pages": "108",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-028",
+          "shared_sp": [
+            "6.3.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 48,
+      "source_pdp_id": 43,
+      "lesson_id": "SK27-SCI-Y6-PDP-043",
+      "unit": "Unit 7: Kelajuan",
+      "title": "Unit bagi kelajuan",
+      "sp_codes": [
+        "7.1.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "114-115",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-029",
+          "shared_sp": [
+            "7.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 49,
+      "source_pdp_id": 44,
+      "lesson_id": "SK27-SCI-Y6-PDP-044",
+      "unit": "Unit 7: Kelajuan",
+      "title": "Eksperimen hubungan kelajuan, jarak dan masa",
+      "sp_codes": [
+        "7.1.2"
+      ],
+      "minutes": 60,
+      "textbook_pages": "116-118",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-030",
+          "shared_sp": [
+            "7.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 50,
+      "source_pdp_id": 45,
+      "lesson_id": "SK27-SCI-Y6-PDP-045",
+      "unit": "Unit 7: Kelajuan",
+      "title": "Menentukan kelajuan, jarak atau masa menggunakan formula.",
+      "sp_codes": [
+        "7.1.3"
+      ],
+      "minutes": 30,
+      "textbook_pages": "119-121",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-029",
+          "shared_sp": [
+            "7.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 51,
+      "source_pdp_id": 46,
+      "lesson_id": "SK27-SCI-Y6-PDP-046",
+      "unit": "Unit 7: Kelajuan",
+      "title": "Definisi secara operasi melalui aktiviti",
+      "sp_codes": [
+        "7.1.4"
+      ],
+      "minutes": 60,
+      "textbook_pages": "122",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-030",
+          "shared_sp": [
+            "7.1.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 52,
+      "source_pdp_id": 47,
+      "lesson_id": "SK27-SCI-Y6-PDP-047",
+      "unit": "Unit 7: Kelajuan",
+      "title": "Menjelaskan pemerhatian tentang kelajuan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "7.1.5"
+      ],
+      "minutes": 30,
+      "textbook_pages": "122",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-030",
+          "shared_sp": [
+            "7.1.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 53,
+      "source_pdp_id": 48,
+      "lesson_id": "SK27-SCI-Y6-PDP-048",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menjelaskan dengan contoh ciri makanan yang telah rosak.",
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "minutes": 60,
+      "textbook_pages": "128-129",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-031",
+          "shared_sp": [
+            "8.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 54,
+      "source_pdp_id": 49,
+      "lesson_id": "SK27-SCI-Y6-PDP-049",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menyatakan bahawa kerosakan makanan disebabkan oleh tindakan mikroorganisma.",
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "128-130",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-031",
+          "shared_sp": [
+            "8.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 55,
+      "source_pdp_id": 50,
+      "lesson_id": "SK27-SCI-Y6-PDP-050",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menjelaskan pemerhatian tentang kerosakan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "8.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "130",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-031",
+          "shared_sp": [
+            "8.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 56,
+      "source_pdp_id": 51,
+      "lesson_id": "SK27-SCI-Y6-PDP-051",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Memerihalkan tujuan pengawetan makanan.",
+      "sp_codes": [
+        "8.2.1"
+      ],
+      "minutes": 60,
+      "textbook_pages": "131",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-032",
+          "shared_sp": [
+            "8.2.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 57,
+      "source_pdp_id": 52,
+      "lesson_id": "SK27-SCI-Y6-PDP-052",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menghubungkait kaedah pengawetan makanan dengan faktor yang mempengaruhi pertumbuhan mikroorganisma.",
+      "sp_codes": [
+        "8.2.2"
+      ],
+      "minutes": 60,
+      "textbook_pages": "131-134",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-032",
+          "shared_sp": [
+            "8.2.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 58,
+      "source_pdp_id": 53,
+      "lesson_id": "SK27-SCI-Y6-PDP-053",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menjalankan projek pengawetan sejenis makanan dengan pelbagai kaedah.",
+      "sp_codes": [
+        "8.2.3"
+      ],
+      "minutes": 30,
+      "textbook_pages": "135-138",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-033",
+          "shared_sp": [
+            "8.2.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 59,
+      "source_pdp_id": 54,
+      "lesson_id": "SK27-SCI-Y6-PDP-054",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Merumuskan terdapat makanan yang boleh diawet lebih daripada satu kaedah pengawetan.",
+      "sp_codes": [
+        "8.2.4"
+      ],
+      "minutes": 60,
+      "textbook_pages": "135-138",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-033",
+          "shared_sp": [
+            "8.2.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 60,
+      "source_pdp_id": 55,
+      "lesson_id": "SK27-SCI-Y6-PDP-055",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Mengitlak terdapat makanan boleh diawet dengan menggabungkan lebih daripada satu kaedah pengawetan.",
+      "sp_codes": [
+        "8.2.5"
+      ],
+      "minutes": 30,
+      "textbook_pages": "139",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-033",
+          "shared_sp": [
+            "8.2.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 61,
+      "source_pdp_id": 56,
+      "lesson_id": "SK27-SCI-Y6-PDP-056",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Memerihalkan kepentingan teknologi pengawetan makanan bagi memenuhi keperluan bekalan makanan.",
+      "sp_codes": [
+        "8.2.6"
+      ],
+      "minutes": 60,
+      "textbook_pages": "140-141",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-034",
+          "shared_sp": [
+            "8.2.6"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 62,
+      "source_pdp_id": 57,
+      "lesson_id": "SK27-SCI-Y6-PDP-057",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menjelaskan pemerhatian tentang pengawetan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "8.2.7"
+      ],
+      "minutes": 30,
+      "textbook_pages": "143",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-034",
+          "shared_sp": [
+            "8.2.7"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 63,
+      "source_pdp_id": 58,
+      "lesson_id": "SK27-SCI-Y6-PDP-058",
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Mengenal pasti bahan buangan berdasarkan jenis bahan.",
+      "sp_codes": [
+        "9.1.1"
+      ],
+      "minutes": 60,
+      "textbook_pages": "148-149",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-035",
+          "shared_sp": [
+            "9.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 64,
+      "source_pdp_id": 59,
+      "lesson_id": "SK27-SCI-Y6-PDP-059",
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Menyatakan maksud bahan buangan terbiodegradasi dan tidak terbiodegradasi.",
+      "sp_codes": [
+        "9.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "150-151",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-035",
+          "shared_sp": [
+            "9.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 65,
+      "source_pdp_id": 60,
+      "lesson_id": "SK27-SCI-Y6-PDP-060",
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Mengelaskan bahan buangan kepada bahan terbiodegradasi dan tidak terbiodegradasi.",
+      "sp_codes": [
+        "9.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "150-151",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-035",
+          "shared_sp": [
+            "9.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 66,
+      "source_pdp_id": 61,
+      "lesson_id": "SK27-SCI-Y6-PDP-061",
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Menaakul penggunaan bahan terbiodegradasi dan tidak terbiodegradasi secara berhemah.",
+      "sp_codes": [
+        "9.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "152-155",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-036",
+          "shared_sp": [
+            "9.1.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 67,
+      "source_pdp_id": 62,
+      "lesson_id": "SK27-SCI-Y6-PDP-062",
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Memerihalkan pengurusan bahan buangan secara terancang untuk kehidupan lestari.",
+      "sp_codes": [
+        "9.1.5"
+      ],
+      "minutes": 60,
+      "textbook_pages": "156-161",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-036",
+          "shared_sp": [
+            "9.1.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 68,
+      "source_pdp_id": 63,
+      "lesson_id": "SK27-SCI-Y6-PDP-063",
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Menjelaskan pemerhatian tentang pengurusan bahan buangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "9.1.6"
+      ],
+      "minutes": 30,
+      "textbook_pages": "161",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-036",
+          "shared_sp": [
+            "9.1.6"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 69,
+      "source_pdp_id": 64,
+      "lesson_id": "SK27-SCI-Y6-PDP-064",
+      "unit": "Unit 10: Gerhana",
+      "title": "Memerihalkan fenomena gerhana Bulan berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "sp_codes": [
+        "10.1.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "166-167",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-037",
+          "shared_sp": [
+            "10.1.1"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 70,
+      "source_pdp_id": 65,
+      "lesson_id": "SK27-SCI-Y6-PDP-065",
+      "unit": "Unit 10: Gerhana",
+      "title": "Memerihalkan fenomena gerhana Matahari berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "sp_codes": [
+        "10.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "168-170",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-038",
+          "shared_sp": [
+            "10.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 71,
+      "source_pdp_id": 66,
+      "lesson_id": "SK27-SCI-Y6-PDP-066",
+      "unit": "Unit 10: Gerhana",
+      "title": "Menghubungkaitkan fenomena gerhana Bulan dan gerhana Matahari dengan sifat cahaya.",
+      "sp_codes": [
+        "10.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "171-173",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-038",
+          "shared_sp": [
+            "10.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 72,
+      "source_pdp_id": 67,
+      "lesson_id": "SK27-SCI-Y6-PDP-067",
+      "unit": "Unit 10: Gerhana",
+      "title": "Meramalkan keadaan di Bumi semasa kejadian gerhana Bulan dan gerhana Matahari.",
+      "sp_codes": [
+        "10.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "174-175",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-039",
+          "shared_sp": [
+            "10.1.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 73,
+      "source_pdp_id": 68,
+      "lesson_id": "SK27-SCI-Y6-PDP-068",
+      "unit": "Unit 10: Gerhana",
+      "title": "Menjelaskan pemerhatian tentang fenomena gerhana Bulan dan gerhana Matahari melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "10.1.5"
+      ],
+      "minutes": 60,
+      "textbook_pages": "170,173",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-039",
+          "shared_sp": [
+            "10.1.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 74,
+      "source_pdp_id": 69,
+      "lesson_id": "SK27-SCI-Y6-PDP-069",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Menyatakan maksud galaksi.",
+      "sp_codes": [
+        "11.1.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "180-182",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-040",
+          "shared_sp": [
+            "11.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 75,
+      "source_pdp_id": 70,
+      "lesson_id": "SK27-SCI-Y6-PDP-070",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Memerihalkan galaksi Bima Sakti.",
+      "sp_codes": [
+        "11.1.2"
+      ],
+      "minutes": 60,
+      "textbook_pages": "183-185",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-040",
+          "shared_sp": [
+            "11.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 76,
+      "source_pdp_id": 71,
+      "lesson_id": "SK27-SCI-Y6-PDP-071",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Merumuskan Sistem Suria berada dalam galaksi Bima Sakti.",
+      "sp_codes": [
+        "11.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "183-186",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-040",
+          "shared_sp": [
+            "11.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 77,
+      "source_pdp_id": 72,
+      "lesson_id": "SK27-SCI-Y6-PDP-072",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Menjalankan simulasi untuk menggambarkan saiz Sistem Suria dalam galaksi Bima Sakti dan mengagumi ciptaan Tuhan.",
+      "sp_codes": [
+        "11.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "187-188",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-041",
+          "shared_sp": [
+            "11.1.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 78,
+      "source_pdp_id": 73,
+      "lesson_id": "SK27-SCI-Y6-PDP-073",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Menjelaskan pemerhatian tentang galaksi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "11.1.5"
+      ],
+      "minutes": 30,
+      "textbook_pages": "188",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-041",
+          "shared_sp": [
+            "11.1.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 79,
+      "source_pdp_id": 74,
+      "lesson_id": "SK27-SCI-Y6-PDP-074",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Memerihalkan maksud kestabilan dan kekuatan dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "12.1.1"
+      ],
+      "minutes": 60,
+      "textbook_pages": "194,199,205",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-042",
+          "shared_sp": [
+            "12.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 80,
+      "source_pdp_id": 75,
+      "lesson_id": "SK27-SCI-Y6-PDP-075",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan dengan contoh struktur yang kuat dan stabil.",
+      "sp_codes": [
+        "12.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "194,199,205",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-042",
+          "shared_sp": [
+            "12.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 81,
+      "source_pdp_id": 76,
+      "lesson_id": "SK27-SCI-Y6-PDP-076",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kestabilan objek.",
+      "sp_codes": [
+        "12.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "195-198",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-043",
+          "shared_sp": [
+            "12.1.3"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 82,
+      "source_pdp_id": 77,
+      "lesson_id": "SK27-SCI-Y6-PDP-077",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kekuatan binaan.",
+      "sp_codes": [
+        "12.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "199-205",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-044",
+          "shared_sp": [
+            "12.1.4"
+          ],
+          "exact_sp_set": true
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 83,
+      "source_pdp_id": 78,
+      "lesson_id": "SK27-SCI-Y6-PDP-078",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Menjana idea kepentingan binaan yang kuat dan stabil bagi kehidupan lestari.",
+      "sp_codes": [
+        "12.1.5"
+      ],
+      "minutes": 60,
+      "textbook_pages": "206",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-045",
+          "shared_sp": [
+            "12.1.5"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 84,
+      "source_pdp_id": 79,
+      "lesson_id": "SK27-SCI-Y6-PDP-079",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Mencipta model binaan yang kuat dan stabil dengan menggunakan bahan kitar semula yang sesuai.",
+      "sp_codes": [
+        "12.1.6"
+      ],
+      "minutes": 30,
+      "textbook_pages": "207",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-045",
+          "shared_sp": [
+            "12.1.6"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 85,
+      "source_pdp_id": 80,
+      "lesson_id": "SK27-SCI-Y6-PDP-080",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan pemerhatian tentang kestabilan dan kekuatan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "12.1.7"
+      ],
+      "minutes": 60,
+      "textbook_pages": "205,207",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-045",
+          "shared_sp": [
+            "12.1.7"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 86,
+      "source_pdp_id": 81,
+      "lesson_id": "SK27-SCI-Y6-PDP-081",
+      "unit": "Unit 13: Teknologi",
+      "title": "Menyatakan maksud teknologi dan kepentingannya.",
+      "sp_codes": [
+        "13.1.1"
+      ],
+      "minutes": 30,
+      "textbook_pages": "212-213",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-046",
+          "shared_sp": [
+            "13.1.1"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 87,
+      "source_pdp_id": 82,
+      "lesson_id": "SK27-SCI-Y6-PDP-082",
+      "unit": "Unit 13: Teknologi",
+      "title": "Memerihalkan perkembangan teknologi dalam pelbagai bidang.",
+      "sp_codes": [
+        "13.1.2"
+      ],
+      "minutes": 30,
+      "textbook_pages": "214-217",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-046",
+          "shared_sp": [
+            "13.1.2"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 88,
+      "source_pdp_id": 83,
+      "lesson_id": "SK27-SCI-Y6-PDP-083",
+      "unit": "Unit 13: Teknologi",
+      "title": "Menjelaskan melalui contoh kebaikan dan keburukan teknologi dalam kehidupan harian.",
+      "sp_codes": [
+        "13.1.3"
+      ],
+      "minutes": 60,
+      "textbook_pages": "218-219",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-047",
+          "shared_sp": [
+            "13.1.3"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    },
+    {
+      "teaching_order": 89,
+      "source_pdp_id": 84,
+      "lesson_id": "SK27-SCI-Y6-PDP-084",
+      "unit": "Unit 13: Teknologi",
+      "title": "Menjelaskan pemerhatian tentang kebaikan dan keburukan teknologi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "13.1.4"
+      ],
+      "minutes": 30,
+      "textbook_pages": "219",
+      "possible_candidates_by_sp": [
+        {
+          "candidate_id": "SCI-T6-DRAFT-047",
+          "shared_sp": [
+            "13.1.4"
+          ],
+          "exact_sp_set": false
+        }
+      ],
+      "selected_candidate_id": null,
+      "ready": false
+    }
+  ]
+}
