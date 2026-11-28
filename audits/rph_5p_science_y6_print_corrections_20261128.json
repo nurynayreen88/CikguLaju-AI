@@ -1,0 +1,524 @@
+{
+  "year": 6,
+  "status": "PROPOSED_PRINT_CORRECTIONS_QA_ONLY",
+  "review": {
+    "path": "audits/rph_5p_science_y6_pedagogical_review_complete_20261128.json",
+    "blob": "11b29c08b55fd79865573b7dff49f67bc5f70545"
+  },
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-085",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Pita penanda garisan mula.",
+        "phase": {
+          "exploration": "Murid mengelas kad dengan satu ciri sepunya; tanda garisan mula dan ukur jarak ke titik rujukan sama pada model dalam cm."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-087",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan pola menggunakan dua nilai; takrifkan jarak pada laluan lurus dari garisan mula ke titik rujukan model pada masa ditetapkan, bukan kelajuan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-089",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Uji dua jisim, dua ulangan setiap jisim pada laluan lurus sama; ukur dari garisan mula ke titik rujukan model apabila berhenti dan catat empat bacaan."
+        },
+        "safety": "Guru selia model dan pemberat ringan; jangan halakan model kepada rakan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-003",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Kad gambar generasi keluarga rekaan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-005",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Pensel warna atau dua set label warna."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-007",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Dua kad situasi harian bergambar."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-009",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Kertas poster dan alat tulis."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-010",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Terangkan satu contoh aliran maklumat menggunakan rajah sendiri."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-011",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan contoh lima kelompok dalam kurikulum; virus bukan organisma bersel dan memerlukan sel perumah untuk membiak."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-012",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Rumusan mikroorganisma sebagai organisma sangat kecil, lazimnya memerlukan alat pembesar; virus ialah agen mikroskopik yang turut dibincangkan dalam kurikulum."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-013",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Botol, belon, pita ukur lilitan dan air suam disediakan guru.",
+        "phase": {
+          "explanation": "Jelaskan penghasilan gas sebagai bukti aktiviti metabolik yis, bukan ukuran bilangan sel; kaitkan pergerakan protozoa dan pertumbuhan dengan rekod/media."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-014",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "objective": "Nyatakan hipotesis dan tiga pemboleh ubah, serta rekod kiraan awal sel yis bagi dua sampel; rumusan dibuat dalam sesi susulan."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-015",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "elaboration": "Analisis kes makanan rosak dan kad fakta antibiotik: bertindak terhadap bakteria tertentu, bukan virus; ikut nasihat profesional. Jangan merasa sampel."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-017",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "engagement": "Paparkan gambar helang-tikus dan semut pada pokok bersama kad maklumat kesan kepada kedua-dua hidupan; murid cadang jenis hubungan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-019",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan mutualisme, komensalisme dan parasitisme berdasarkan manfaat, mudarat atau tiada kesan ketara pada setiap pasangan dalam kad sumber."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-021",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Bandingkan ukuran set pratanam: jenis, umur, tempoh, cahaya dan siraman setara; kepadatan ialah faktor diubah.",
+          "elaboration": "Rumuskan inferens persaingan sumber secara umum; kepadatan sahaja tidak mengasingkan kesan air, cahaya atau ruang."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-025",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "elaboration": "Lakar pelan meliputi satu tindakan pemeliharaan dan satu tindakan pemuliharaan bagi haiwan atau tumbuhan; semak kebolehlaksanaan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-026",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Kad perbandingan spesies terancam yang disahkan daripada edisi sumber."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-028",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "topic_title": "Faktor yang menyebabkan haiwan dan tumbuhan diancam kepupusan.",
+        "phase": {
+          "explanation": "Jelaskan bagaimana penebangan, pemburuan atau pencemaran meningkatkan ancaman kepupusan; bukan semua populasi telah pupus."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-029",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan kesan pemeliharaan habitat dan pemulihan populasi dalam senario rekaan; graf sebelum/selepas sahaja tidak membuktikan sebab.",
+          "elaboration": "Ramalkan kesan jika usaha dihentikan dengan menyatakan andaian; bezakan ramalan daripada data rekaan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-030",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "phase": {
+          "elaboration": "Baiki peta dan tambah contoh tindakan pemeliharaan serta pemuliharaan berserta sebab selepas soal jawab."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-031",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Kad foto tindakan tarik dan tolak."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-034",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan daya geseran menentang gerakan relatif atau kecenderungan gerakan antara permukaan bersentuhan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-036",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Bandingkan bacaan ulangan neraca spring dalam N semasa tarikan mendatar pada kelajuan sekata; nyatakan faktor tetap."
+        },
+        "safety": "Guru selia neraca sesuai julat dan pemberat ringan yang stabil."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-038",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Tafsir dua bacaan jarak troli daripada set data berasingan dalam keadaan ujian setara; jarak bukan ukuran langsung daya geseran."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-039",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Cawan plastik, kad tegar, air dan dulang demonstrasi guru.",
+        "phase": {
+          "exploration": "Guru menunjukkan demonstrasi cawan plastik berlapik kad di atas dulang; murid catat dua pemerhatian, kemudian semak video rujukan."
+        },
+        "safety": "Demonstrasi guru sahaja; tiada kaca atau vakum kuat."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-040",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Susun tiga nilai tekanan rekaan mengikut ketinggian; plot graf berlabel unit altitud dan tekanan seperti jadual sumber."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-041",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Foto cawan sedutan.",
+        "safety": "Picagari tanpa jarum; jangan tutup atau tekan dengan kuat."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-044",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "bbm": "Jadual dan graf perbandingan jarak-masa.",
+        "phase": {
+          "explanation": "Bandingkan kelajuan bagi jarak tetap atau masa tetap (jarak pada sela sama); bezakan ukuran sendiri daripada data diberi dan semak unit."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-046",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Troli mainan dan trek lurus bertanda.",
+        "phase": {
+          "exploration": "Ukur masa troli pada jarak bertanda di trek tertutup; catat dua bacaan sebenar dan kira kelajuan dalam m/s.",
+          "elaboration": "Bandingkan dua kelajuan sebenar dan semak takrif operasi menggunakan pita ukur dan jam randik."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-047",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan graf jarak terkumpul-masa: kecerunan pada sela dibandingkan menunjukkan kelajuan, bukan graf kelajuan-masa."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-049",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan peranan mikroorganisma menggunakan keterangan sumber; foto menunjukkan tanda kerosakan, bukan pengenalpastian mikroorganisma tertentu."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-052",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Kaitkan pengeringan dengan air, penjerukan dengan keasidan, penyejukbekuan dengan pertumbuhan lebih perlahan dan pemanasan dengan pengurangan mikroorganisma; bukan semua kaedah mensteril."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-053",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Alat pengeringan dan ruang penyejukbekuan diselia guru.",
+        "phase": {
+          "explanation": "Bandingkan gambar susulan bertarikh guru sebagai rujukan; asingkan daripada keadaan awal dan dapatan susulan sebenar projek.",
+          "elaboration": "Lengkapkan log awal dua kaedah dan rancang catatan susulan sebenar; guru urus sampel, hasil tidak dimakan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-055",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan faktor yang dikawal oleh dua kaedah gabungan berdasarkan contoh sumber; pembungkusan sahaja tidak semestinya mengawet makanan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-059",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan dua kategori berdasarkan penguraian oleh organisma dalam keadaan sesuai, bukan sekadar pecahan fizikal atau pengaratan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-065",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Lampu LED kecil untuk simulasi dalam bilik."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-066",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Lampu LED kecil untuk model bayang."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-067",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Model tiga bola dan lampu LED kecil."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-070",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Foto galaksi lain berlabel sumber."
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-074",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Model kertas ringan dan pemberat ringan.",
+        "phase": {
+          "exploration": "Uji model kertas dengan gangguan ringan terkawal untuk kestabilan dan beban ringan untuk kekuatan; guru menyelia kedua-dua ujian."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-075",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Jelaskan bagaimana tapak, bahan dan penyokong boleh menyumbang kepada kekuatan atau kestabilan; foto bukan pengesahan keselamatan binaan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-076",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Bandingkan model sama tinggi berlainan tapak dengan gangguan ringan seragam; ulang pada tapak tetap dan tinggi berbeza. Rekod sama ada model tumbang dalam setiap ulangan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-077",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CLARITY_NOTE_REQUIRED",
+      "changes": {
+        "phase": {
+          "explanation": "Bandingkan bilangan beban ringan setara sebelum rasuk mencapai keadaan bengkok ditetapkan; kawal saiz rasuk, jarak sokongan dan kedudukan beban."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-079",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CONTENT_CORRECTION_REQUIRED",
+      "changes": {
+        "phase": {
+          "exploration": "Pasang kadbod bersih siap dipotong guru dengan tapak dan penyokong; uji tolakan terkawal serta beban ringan, rekod hasil.",
+          "explanation": "Terangkan kaitan ciri model dengan hasil ujian kestabilan dan beban yang direkod.",
+          "elaboration": "Cadangkan satu penambahbaikan daripada dapatan; uji semula secara selamat jika masa mengizinkan."
+        }
+      },
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-084",
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "BBM_ALIGNMENT_REQUIRED",
+      "changes": {
+        "bbm": "Kad fakta kesan teknologi dan foto sisa elektronik."
+      },
+      "ready": false
+    }
+  ],
+  "held": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-022",
+      "reason": "Skop jenis simbiosis tumbuhan perlu disahkan dalam buku teks."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-027",
+      "reason": "Spesies khusus dan status dalam edisi sumber perlu disahkan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-058",
+      "reason": "Enam kategori bahan buangan perlu disahkan mengikut edisi sumber."
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}
