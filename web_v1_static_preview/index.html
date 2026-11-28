@@ -2956,7 +2956,7 @@ function populateKp2027MaterialList(){
  }
  status.textContent="Pilih format RPH untuk Download. Maklumat kelas, tarikh, masa dan murid yang diisi akan dicetak dalam fail.";
 }
-// Science 5P remains hidden unless the authenticated candidate endpoint
+// Science 5P remains hidden unless the authenticated publication endpoint
 // explicitly confirms the exact native lesson. The original RPH is independent.
 function science5pSelection(){
  const p=currentRphParams();
@@ -2967,7 +2967,7 @@ function science5pSelection(){
  return {year:Number(year.value),subject:"SCIENCE",unit:sourceUnit,lesson:lesson.value};
 }
 let science5pBusy=false;
-async function downloadScience5pCandidate(format){
+async function downloadScience5pReviewed(format){
  const selected=science5pSelection(),p=currentRphParams(),key=currentRphLessonKey();
  if(!selected||!p||science5pBusy||rphDownloadBusy||!canGenerateRph()||!["word","pdf"].includes(format))return;
  const status=document.getElementById("materials-status");
@@ -2980,29 +2980,29 @@ async function downloadScience5pCandidate(format){
  if(mode==="manual")payload.reflection=reflection;
  science5pBusy=true;rphDownloadBusy=true;
  try{
-  const resp=await fetch("/api/kssr/sk/science/5p/candidate/download",{
+  const resp=await fetch("/api/kssr/sk/science/5p/download",{
    method:"POST",credentials:"same-origin",cache:"no-store",redirect:"error",
    headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
   if(!resp.ok){
    const data=await resp.json().catch(()=>({}));
    updateRphTrialFromDenial(data);
-   throw Error(resp.status===401?"Sila log masuk semula.":"RPH 5P QA belum tersedia.");
+   throw Error(resp.status===401?"Sila log masuk semula.":"RPH 5P belum tersedia.");
   }
   const remaining=resp.headers.get("X-RPH-Trial-Remaining");
   if(/^(?:[0-9]|10)$/.test(remaining||""))applyRphAccount({
    rph_access_mode:Number(remaining)>0?"trial":"exhausted",rph_trial_remaining:Number(remaining)});
   if(!stillCurrent())return;
-  if(resp.headers.get("X-RPH-QA-Status")!=="DRAFT-NOT-FOR-TEACHING"||
+  if(resp.headers.get("X-RPH-QA-Status")!=="INTERNAL-REVIEWED"||
       !(resp.headers.get("content-type")||"").includes(format==="pdf"?"application/pdf":"wordprocessingml"))
-   throw Error("Format RPH 5P QA tidak sah.");
+   throw Error("Format RPH 5P tidak sah.");
   const blob=await resp.blob();
   if(!stillCurrent())return;
-  if(blob.size<1000||blob.size>15*1024*1024)throw Error("Saiz fail RPH 5P QA tidak sah.");
+  if(blob.size<1000||blob.size>15*1024*1024)throw Error("Saiz fail RPH 5P tidak sah.");
   const url=URL.createObjectURL(blob),link=document.createElement("a");
-  link.href=url;link.download="CIKGULAJU_"+selected.lesson.replace(/[^a-zA-Z0-9_-]/g,"_")+"_5P_DRAF_QA."+(format==="pdf"?"pdf":"docx");
+  link.href=url;link.download="CIKGULAJU_"+selected.lesson.replace(/[^a-zA-Z0-9_-]/g,"_")+"_5P."+(format==="pdf"?"pdf":"docx");
   document.body.append(link);link.click();link.remove();
   setTimeout(()=>URL.revokeObjectURL(url),30000);
-  status.textContent="RPH 5P draf QA dimuat turun.";
+  status.textContent="RPH 5P dimuat turun.";
  }catch(error){if(currentRphLessonKey()===key)status.textContent=error.message;}
  finally{science5pBusy=false;rphDownloadBusy=false;showRphAction();}
 }
@@ -3061,16 +3061,16 @@ async function populateMaterialList(){
  if(sourceConfirmed&&science5pSelection()){
   try{
    const candidate=science5pSelection();
-   const resp=await fetch("/api/kssr/sk/science/5p/candidate/available?"+new URLSearchParams(candidate),{
+   const resp=await fetch("/api/kssr/sk/science/5p/available?"+new URLSearchParams(candidate),{
     credentials:"same-origin",cache:"no-store",redirect:"error"});
    if(!isCurrent())return;
    const data=await resp.json().catch(()=>({}));
    if(!isCurrent())return;
-   if(resp.ok&&data.available===true&&data.status==="DRAFT-NOT-FOR-TEACHING"&&Array.isArray(data.formats)){
+   if(resp.ok&&data.available===true&&data.status==="INTERNAL-REVIEWED"&&Array.isArray(data.formats)){
     for(const fmt of ["pdf","word"])if(data.formats.includes(fmt)){
-     list.append(materialRow("RPH Ringkas 5P "+(fmt==="pdf"?"PDF":"Word")+" (Draf QA)",{
+     list.append(materialRow("RPH Ringkas 5P "+(fmt==="pdf"?"PDF":"Word"),{
       ready:!!currentRphParams()&&canGenerateRph(),statusLabel:"Lengkapkan maklumat RPH",
-      onDownload:()=>{void downloadScience5pCandidate(fmt);}}));
+      onDownload:()=>{void downloadScience5pReviewed(fmt);}}));
      found++;
     }
    }
