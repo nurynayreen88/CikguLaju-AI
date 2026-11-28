@@ -33,3 +33,29 @@ class ScienceNativeMappingTests(unittest.TestCase):
     def test_invalid_year(self):
         with self.assertRaises(ValueError):
             collect(1)
+
+    @patch("tools.export_science_native_5p_mapping_input.native.list_native_lessons")
+    @patch("tools.export_science_native_5p_mapping_input.native.list_native_units")
+    def test_2027_route_cannot_fall_back_to_legacy(self, units, lessons):
+        units.return_value=[{"value":"u"+"a"*24,"label":"Old unit"}]
+        for year in (5,6):
+            with self.subTest(year=year), self.assertRaisesRegex(ValueError,"catalogue version"):
+                collect(year)
+        lessons.assert_not_called()
+
+    @patch("tools.export_science_native_5p_mapping_input.native.list_native_lessons")
+    @patch("tools.export_science_native_5p_mapping_input.native.list_native_units")
+    def test_2027_catalogue_reports_count_mismatch_without_inventing_ids(self, units, lessons):
+        for year,prefix,count in ((5,"v",116),(6,"w",89)):
+            with self.subTest(year=year):
+                units.return_value=[{"value":prefix+"a"*24,"label":"Unit 1"}]
+                lessons.return_value=[{"value":"native-id","label":"PdP"}]
+                report=collect(year)
+                self.assertEqual(report["catalogue_prefix"],prefix)
+                self.assertEqual(report["declared_rpt_pdp_count"],count)
+                self.assertFalse(report["rpt_count_match"])
+                self.assertEqual(report["unique_lesson_ids"],1)
+                self.assertFalse(report["academic_approval"])
+                self.assertEqual(report["records"][0]["lesson_id"],"native-id")
+                self.assertIsNone(report["records"][0]["candidate_id"])
+                self.assertFalse(report["records"][0]["ready"])
