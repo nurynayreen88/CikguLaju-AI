@@ -295,8 +295,11 @@ def create_blueprint():
             items = math_approved_items(groups, _CATALOG)
         except (PilotUnavailable, ValueError, KeyError):
             return denied("Senarai PdP belum tersedia. Sila cuba lagi.", 503, "INVENTORY_UNAVAILABLE")
+        from web import kp2027_math_5p_release as release
+        five_p_groups = release.released_groups(groups)
         return jsonify({"groups": groups, "items": items, "source": "verified-private-kp2027-v11",
-                        "rph_variants": ["lengkap", "5p"] if os.environ.get(FIVE_P_FLAG) == "1" else ["lengkap"]})
+                        "five_p_groups": five_p_groups,
+                        "rph_variants": ["lengkap", "5p"] if any(five_p_groups.values()) else ["lengkap"]})
 
     @bp.post("/api/kp2027/sk/tahun-1/matematik/download")
     def download():
@@ -316,7 +319,8 @@ def create_blueprint():
         except ValueError:
             return denied("PdP yang dipilih belum tersedia.", 404, "LESSON_NOT_AVAILABLE")
         variant = payload.get("rph_variant", "lengkap")
-        if variant not in ("lengkap", "5p") or (variant == "5p" and os.environ.get(FIVE_P_FLAG) != "1"):
+        from web import kp2027_math_5p_release as release
+        if variant not in ("lengkap", "5p") or (variant == "5p" and not release.is_released(group, lesson)):
             return denied("Pilihan format RPH belum tersedia.", 404, "RPH_VARIANT_UNAVAILABLE")
         config, account, error = account_for_request()
         if error is not None:
