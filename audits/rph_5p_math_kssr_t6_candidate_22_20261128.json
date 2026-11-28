@@ -1,11 +1,11 @@
 {
-  "status": "DRAFT_SOURCE_ADAPTED_UNVERIFIED",
+  "status": "DRAFT_DSKP_TEXT_MATCHED_RPT_SOURCE_UNVERIFIED",
   "subject": "MATEMATIK SK",
   "year": 6,
   "curriculum": "KSSR",
   "source_drive_id": "1otDVCFmz1FvIBqPki_Cl_9cHRahTQVr4",
   "source_title": "CIKGULAJU_MATEMATIK_T6_22_RPH_A4_GABUNGAN_SEMAKAN_20261108.pdf",
-  "policy": "Source itself is staging; candidate SP and page references are not official verification. Do not bind to production PdP by ordinal. Preserve original RPH, verify actual DK/DSKP, RPT, textbook, source identity and all fields before rendering/release. Five phases are pedagogical drafts, not approved RPH.",
+  "policy": "DSKP codes and wording checked against extracted text; lesson scope may be partial. Original source is staging. Never bind by ordinal. No production mapping, no READY.",
   "records": [
     {
       "candidate_id": "DSKP6-01",
@@ -19,7 +19,14 @@
         "elaboration": "Pasangan selesaikan 1 1/2 ÷ 1/4 dan 2/3 ÷ 1/6; semak melalui darab.",
         "evaluation": "Empat item individu; sekurang-kurangnya tiga betul dan satu alasan penyongsangan pembahagi."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 36,
+        "sk": "2.1 Pecahan",
+        "sp": "Membahagi pecahan bagi dua nombor melibatkan pecahan wajar, nombor bulat dan nombor bercampur.",
+        "code_text_match": true,
+        "scope_review": "Kekalkan penyebut hingga 10 pada contoh yang diberi; semak item penilaian sebenar."
+      }
     },
     {
       "candidate_id": "DSKP6-02",
@@ -33,7 +40,14 @@
         "elaboration": "Padankan lima kad bandar kepada zon yang tercetak pada peta; bincang negara pelbagai zon.",
         "evaluation": "Empat daripada lima padanan tepat dan satu penjelasan tentang perbezaan waktu serentak."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 44,
+        "sk": "4.1 Zon masa",
+        "sp": "Mengenal zon masa.",
+        "code_text_match": true,
+        "scope_review": "Tajuk dan skop utama sejajar dengan teks SP; semak kandungan, RPT, BT dan BA sebelum lulus."
+      }
     },
     {
       "candidate_id": "DSKP6-03",
@@ -47,7 +61,14 @@
         "elaboration": "Selesaikan simulasi 23:30 UTC+8 ke UTC+9 serta 14:15 UTC+8 ke UTC+7.",
         "evaluation": "Empat situasi individu; sekurang-kurangnya tiga tepat termasuk label hari."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 44,
+        "sk": "4.1 Zon masa",
+        "sp": "Menentukan perbezaan masa antara dua bandar terletak dalam zon masa yang berbeza.",
+        "code_text_match": true,
+        "scope_review": "Tajuk dan skop utama sejajar dengan teks SP; semak kandungan, RPT, BT dan BA sebelum lulus."
+      }
     },
     {
       "candidate_id": "DSKP6-04",
@@ -61,7 +82,14 @@
         "elaboration": "Bina sudut 35°, 90°, 125° dan 170°; pasangan menyemak bacaan.",
         "evaluation": "Bina empat sudut baharu; tiga dalam toleransi 2° dengan label dan pemilihan skala tepat."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 52,
+        "sk": "6.1 Sudut",
+        "sp": "Membentuk sudut berdasarkan nilai sudut yang diberi.",
+        "code_text_match": true,
+        "scope_review": "Sudut maksimum 180°; gunakan protraktor dan pembaris."
+      }
     },
     {
       "candidate_id": "DSKP6-05",
@@ -75,7 +103,14 @@
         "elaboration": "Ukur jejari 3, 4, 5 cm dan padankan diameter 6, 8, 10 cm; kesan diameter palsu.",
         "evaluation": "Lima item pelabelan dan hubungan panjang; sekurang-kurangnya empat tepat."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 52,
+        "sk": "6.2 Bulatan",
+        "sp": "Mengenal pusat bulatan, diameter dan jejari.",
+        "code_text_match": true,
+        "scope_review": "Tajuk dan skop utama sejajar dengan teks SP; semak kandungan, RPT, BT dan BA sebelum lulus."
+      }
     },
     {
       "candidate_id": "DSKP6-06",
@@ -89,7 +124,14 @@
         "elaboration": "Cipta peta empat lokasi dan bandingkan jarak pada dua skala; bukan jarak pepenjuru.",
         "evaluation": "Empat masalah paksi dan skala; tiga tepat dengan unit km."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 56,
+        "sk": "7.1 Koordinat pada sukuan pertama",
+        "sp": "Menentukan jarak mengufuk dan mencancang antara dua lokasi berdasarkan skala yang diberi.",
+        "code_text_match": true,
+        "scope_review": "Semak perwakilan skala sebenar dan lokasi sukuan pertama."
+      }
     },
     {
       "candidate_id": "DSKP6-07",
@@ -103,7 +145,14 @@
         "elaboration": "Label carta, banding kategori dan bina soalan; ulang dengan jumlah 40.",
         "evaluation": "Lengkapkan carta empat sektor dan jawab sekurang-kurangnya tiga daripada empat tafsiran."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 60,
+        "sk": "8.1 Carta pai",
+        "sp": "Melengkapkan carta pai berdasarkan nilai sudut 45°, 90° dan 180° dengan kuantiti diberikan serta mentafsir data.",
+        "code_text_match": true,
+        "scope_review": "Tafsiran simbol sudut daripada teks PDF dinormalkan daripada 450, 900, 1800; visual cetakan belum disahkan."
+      }
     },
     {
       "candidate_id": "DSKP6-08",
@@ -117,7 +166,14 @@
         "elaboration": "Uji lima kad peristiwa dan lengkapkan jadual kategori serta sebab.",
         "evaluation": "Kelaskan lima peristiwa baharu; empat tepat dengan alasan bagi sekurang-kurangnya dua."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 60,
+        "sk": "8.2 Kebolehjadian",
+        "sp": "Menyatakan sama ada suatu peristiwa mungkin berlaku atau tidak mungkin berlaku, dan memberi sebab yang munasabah.",
+        "code_text_match": true,
+        "scope_review": "Tajuk dan skop utama sejajar dengan teks SP; semak kandungan, RPT, BT dan BA sebelum lulus."
+      }
     },
     {
       "candidate_id": "DSKP6-09",
@@ -131,7 +187,14 @@
         "elaboration": "Lakukan sepuluh cabutan dengan pemulangan; banding ramalan dan kekerapan.",
         "evaluation": "Kelaskan lima situasi; empat tepat dan sebab logik tanpa menganggap sampel kecil pasti."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 60,
+        "sk": "8.2 Kebolehjadian",
+        "sp": "Menyatakan kebolehjadian suatu peristiwa sebagai mustahil, kecil kemungkinan, sama kemungkinan, besar kemungkinan atau pasti, serta memberi sebab yang munasabah.",
+        "code_text_match": true,
+        "scope_review": "Tajuk dan skop utama sejajar dengan teks SP; semak kandungan, RPT, BT dan BA sebelum lulus."
+      }
     },
     {
       "candidate_id": "FIN-T6-01",
@@ -145,7 +208,14 @@
         "elaboration": "Analisis RM18/RM25, RM40/RM37, RM15/RM15; cipta satu contoh tambahan.",
         "evaluation": "Lima situasi individu; empat pengelasan dan alasan tepat. Skop hanya kos/jual/untung/rugi."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 40,
+        "sk": "3.1 Pengurusan kewangan",
+        "sp": "Mengenal harga kos, harga jual, untung, rugi, diskaun, rebat, baucer, bil, resit, invois, aset, liabiliti, faedah, dividen dan cukai perkhidmatan.",
+        "code_text_match": true,
+        "scope_review": "Fokus kos/jual/untung/rugi sahaja; pengiraan ialah kaitan kepada 3.1.2, jangan dakwa semua istilah 3.1.1 selesai."
+      }
     },
     {
       "candidate_id": "FIN-T6-02",
@@ -159,7 +229,14 @@
         "elaboration": "Analisis situasi motosikal, rumah, rawatan dan kemalangan tanpa memilih produk.",
         "evaluation": "Tiga daripada empat padanan dan satu alasan munasabah tentang fungsi perlindungan."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 40,
+        "sk": "3.2 Insurans dan Takaful",
+        "sp": "Mengenal insurans dan takaful.",
+        "code_text_match": true,
+        "scope_review": "Fokus pengenalan; tujuan dan kepentingan berkait SP 3.2.2, semak pemetaan RPT."
+      }
     },
     {
       "candidate_id": "FIN-T6-03",
@@ -173,7 +250,14 @@
         "elaboration": "Selesaikan rugi RM15, diskaun 25% daripada RM80 dan harga jual RM57 berdasarkan kad asal.",
         "evaluation": "Tiga masalah baharu; dua lengkap dengan strategi, kiraan, unit dan semakan."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 40,
+        "sk": "3.3 Penyelesaian masalah",
+        "sp": "Menyelesaikan masalah harian melibatkan harga kos, harga jual, untung, rugi, diskaun, rebat, baucer, bil, resit, invois, aset, liabiliti, faedah, dividen dan cukai perkhidmatan, pengurusan kewangan dan risiko dalam situasi harian.",
+        "code_text_match": true,
+        "scope_review": "Fokus masalah untung/rugi/diskaun sahaja, bukan seluruh skop kewangan."
+      }
     },
     {
       "candidate_id": "MT6-PDP-006",
@@ -187,7 +271,14 @@
         "elaboration": "Selesaikan empat pola termasuk 125 000, 250 000, 500 000; bina pola baharu dalam 10 juta.",
         "evaluation": "Empat item individu; tiga peraturan dan urutan tepat serta satu penerangan."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 32,
+        "sk": "1.1 Nombor bulat hingga 10 000 000",
+        "sp": "Mewakilkan nombor hingga 10 000 000 dan menentukan pola nombor.",
+        "code_text_match": true,
+        "scope_review": "Fokus pola; perwakilan nombor perlu disemak dalam PdP lain."
+      }
     },
     {
       "candidate_id": "MT6-PDP-007",
@@ -201,7 +292,14 @@
         "elaboration": "Pasangan selesaikan empat bentuk tambah dengan unit diseragamkan dan anggaran semakan.",
         "evaluation": "Empat item individu; tiga tepat termasuk perpuluhan juta."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 32,
+        "sk": "1.2 Operasi asas dan operasi bergabung",
+        "sp": "Menyelesaikan ayat matematik melibatkan nombor bulat, pecahan juta dan perpuluhan juta bagi operasi asas dan operasi bergabung tanpa dan dengan tanda kurung termasuk penggunaan anu.",
+        "code_text_match": true,
+        "scope_review": "Hanya operasi yang dinyatakan dalam tajuk; pecahan juta, anu dan operasi lain perlu disusun mengikut RPT, bukan dianggap selesai."
+      }
     },
     {
       "candidate_id": "MT6-PDP-008",
@@ -215,7 +313,14 @@
         "elaboration": "Latih empat situasi daripada mudah kepada campuran unit; semak dengan tambah.",
         "evaluation": "Tiga daripada empat tepat dan satu penerangan peminjaman nilai tempat."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 32,
+        "sk": "1.2 Operasi asas dan operasi bergabung",
+        "sp": "Menyelesaikan ayat matematik melibatkan nombor bulat, pecahan juta dan perpuluhan juta bagi operasi asas dan operasi bergabung tanpa dan dengan tanda kurung termasuk penggunaan anu.",
+        "code_text_match": true,
+        "scope_review": "Hanya operasi yang dinyatakan dalam tajuk; pecahan juta, anu dan operasi lain perlu disusun mengikut RPT, bukan dianggap selesai."
+      }
     },
     {
       "candidate_id": "MT6-PDP-009",
@@ -229,7 +334,14 @@
         "elaboration": "Selesaikan empat situasi stok; banding strategi unit juta dan nombor bulat.",
         "evaluation": "Tiga daripada empat tepat serta penerangan turutan dan unit."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 32,
+        "sk": "1.2 Operasi asas dan operasi bergabung",
+        "sp": "Menyelesaikan ayat matematik melibatkan nombor bulat, pecahan juta dan perpuluhan juta bagi operasi asas dan operasi bergabung tanpa dan dengan tanda kurung termasuk penggunaan anu.",
+        "code_text_match": true,
+        "scope_review": "Hanya operasi yang dinyatakan dalam tajuk; pecahan juta, anu dan operasi lain perlu disusun mengikut RPT, bukan dianggap selesai."
+      }
     },
     {
       "candidate_id": "MT6-PDP-010",
@@ -243,7 +355,14 @@
         "elaboration": "Selesaikan empat bentuk darab termasuk 12 × 250 000; semak anggaran.",
         "evaluation": "Tiga daripada empat tepat termasuk satu hasil dalam unit juta."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 32,
+        "sk": "1.2 Operasi asas dan operasi bergabung",
+        "sp": "Menyelesaikan ayat matematik melibatkan nombor bulat, pecahan juta dan perpuluhan juta bagi operasi asas dan operasi bergabung tanpa dan dengan tanda kurung termasuk penggunaan anu.",
+        "code_text_match": true,
+        "scope_review": "Hanya operasi yang dinyatakan dalam tajuk; pecahan juta, anu dan operasi lain perlu disusun mengikut RPT, bukan dianggap selesai."
+      }
     },
     {
       "candidate_id": "MT6-PDP-011",
@@ -257,7 +376,14 @@
         "elaboration": "Pasangan selesaikan empat situasi dan label unit mengikut arahan.",
         "evaluation": "Tiga daripada empat tepat, satu dalam dua bentuk dan satu semakan darab."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 32,
+        "sk": "1.2 Operasi asas dan operasi bergabung",
+        "sp": "Menyelesaikan ayat matematik melibatkan nombor bulat, pecahan juta dan perpuluhan juta bagi operasi asas dan operasi bergabung tanpa dan dengan tanda kurung termasuk penggunaan anu.",
+        "code_text_match": true,
+        "scope_review": "Hanya operasi yang dinyatakan dalam tajuk; pecahan juta, anu dan operasi lain perlu disusun mengikut RPT, bukan dianggap selesai."
+      }
     },
     {
       "candidate_id": "MT6-PDP-012",
@@ -271,7 +397,14 @@
         "elaboration": "Selesaikan empat ayat matematik termasuk 8.4 juta ÷ 7 × 2; banding kes bertanda kurung.",
         "evaluation": "Tiga daripada empat tepat dengan penerangan turutan dan unit juta."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 32,
+        "sk": "1.2 Operasi asas dan operasi bergabung",
+        "sp": "Menyelesaikan ayat matematik melibatkan nombor bulat, pecahan juta dan perpuluhan juta bagi operasi asas dan operasi bergabung tanpa dan dengan tanda kurung termasuk penggunaan anu.",
+        "code_text_match": true,
+        "scope_review": "Hanya operasi yang dinyatakan dalam tajuk; pecahan juta, anu dan operasi lain perlu disusun mengikut RPT, bukan dianggap selesai."
+      }
     },
     {
       "candidate_id": "MT6-PDP-079",
@@ -285,7 +418,14 @@
         "elaboration": "Mudahkan 12:18, 9:15, 8:20 dan 2 kg:500 g selepas seragam unit.",
         "evaluation": "Empat daripada lima nisbah tepat, termasuk satu penyeragaman unit."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 56,
+        "sk": "7.2 Nisbah",
+        "sp": "Mewakilkan nisbah dua kuantiti dalam bentuk termudah.",
+        "code_text_match": true,
+        "scope_review": "Nisbah nombor bulat; seragamkan unit dahulu."
+      }
     },
     {
       "candidate_id": "MT6-PDP-080",
@@ -299,7 +439,14 @@
         "elaboration": "Selesaikan situasi beras/air, murid, buku/pen dan benih/pasu menggunakan faktor sama.",
         "evaluation": "Tiga daripada empat tepat dengan model satu unit atau rajah bar."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 56,
+        "sk": "7.3 Kadaran",
+        "sp": "Menentukan kuantiti yang berkadaran dengan berdasarkan nisbah yang diberi.",
+        "code_text_match": true,
+        "scope_review": "Tajuk dan skop utama sejajar dengan teks SP; semak kandungan, RPT, BT dan BA sebelum lulus."
+      }
     },
     {
       "candidate_id": "MT6-PDP-081",
@@ -313,7 +460,19 @@
         "elaboration": "Selesaikan masalah buah, tiket dan pita berjumlah 35 m; bezakan jumlah daripada satu kuantiti.",
         "evaluation": "Dua daripada tiga masalah baharu lengkap dengan model, kiraan, unit dan semakan."
       },
-      "ready": false
+      "ready": false,
+      "dskp": {
+        "printed_page": 56,
+        "sk": "7.4 Penyelesaian masalah.",
+        "sp": "Menyelesaikan masalah harian melibatkan koordinat, nisbah dan kadaran.",
+        "code_text_match": true,
+        "scope_review": "Fokus nisbah/kadaran, tidak meliputi semua masalah koordinat."
+      }
     }
-  ]
+  ],
+  "dskp_reference": {
+    "drive_id": "1SpOv52MLDQjbdKKBw8LXECi03Etg4f4H",
+    "title": "DSKP KSSR Matematik Tahun 6, BPK, September 2021",
+    "verification": "Text extraction inspected; printed page references matched. No visual PDF inspection or RPT/BT/BA or actual Telegram identity verification in this pass."
+  }
 }
