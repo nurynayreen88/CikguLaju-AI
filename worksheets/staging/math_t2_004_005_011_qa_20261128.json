@@ -1,0 +1,93 @@
+{
+  "status": "PRIVATE_STAGED_SOURCE_IDENTITY_VERIFIED_BILANG_KEY_PENDING",
+  "year": 2,
+  "subject": "MATH",
+  "scope": "KSSR SK",
+  "runtime_commit": "6db5be461f7c8cd90f2e6471d929079a2b9b3cc3",
+  "records": [
+    {
+      "title": "Nilai Nombor",
+      "sk": "1.1",
+      "sp": "1.1.2(i),(ii)",
+      "student": {
+        "drive_file_id": "1IKIHPqywV0uUHLTASi9s3rUMyviO-IbN",
+        "sha256": "9e9b3eb559e04c241251075e3b8b089993709cf3aabe8549137e07336d75c337",
+        "size_bytes": 80871,
+        "pages": 2
+      },
+      "teacher_key": {
+        "drive_file_id": "17RmJATK0rSl-HGrkE_1ogyzcRpgPHhVy",
+        "sha256": "44182fe8839481752b3be9f1358f0db93e75f95e1416f198301281580e304874",
+        "size_bytes": 37415,
+        "pages": 1
+      },
+      "runtime": [
+        {
+          "token": "MT2-PDP-004",
+          "sp": "1.1.2(i)"
+        },
+        {
+          "token": "MT2-PDP-005",
+          "sp": "1.1.2(ii)"
+        }
+      ],
+      "runtime_unit": "ue1798c2b0c21f09b356cc4e6",
+      "runtime_log_id": "6c2fbfad-8cdc-4fd3-ae68-157bb3bcd890",
+      "visual_review_passed": true,
+      "answer_key_match": true,
+      "question_count": 6,
+      "release": false,
+      "notes": "V6 original pupil plus compatible V4 original key. Q1–2 cover quantity; Q3–6 cover reading representations. Shared resource, not two separate worksheets."
+    },
+    {
+      "title": "Bilang Nombor",
+      "sk": "1.3",
+      "sp": "1.3.1;1.3.2",
+      "student": {
+        "drive_file_id": "1ThTeNs2Y0VmLFsDD13XcLJUhU7VXb1kn",
+        "sha256": "ca5ba7c11d9bc4409d1c0e7e885e0f76ae288ebb7a351547894032e0f2482feb",
+        "size_bytes": 43534,
+        "pages": 2
+      },
+      "teacher_key": null,
+      "runtime": [
+        {
+          "token": "MT2-PDP-011",
+          "sp": "1.3.1;1.3.2"
+        }
+      ],
+      "runtime_unit": "ue1798c2b0c21f09b356cc4e6",
+      "runtime_log_id": "fc3ed8e2-ef90-4d8c-a829-0e248838527e",
+      "visual_review_passed": true,
+      "question_count": 10,
+      "release": false,
+      "answer_key": [
+        [
+          "A",
+          [
+            "1. 241, 243, 245",
+            "2. 590, 586, 582",
+            "3. 432, 437, 442",
+            "4. 930, 920, 910",
+            "5. 408, 508, 608",
+            "6. 890, 887, 884"
+          ]
+        ],
+        [
+          "B",
+          [
+            "7. 355, 358, 364",
+            "8. 735, 728, 714"
+          ]
+        ],
+        [
+          "C",
+          [
+            "9. Biru: 532, 540, 548, 556, 564",
+            "10. Merah: 684, 678, 672, 666, 660"
+          ]
+        ]
+      ]
+    }
+  ]
+}
