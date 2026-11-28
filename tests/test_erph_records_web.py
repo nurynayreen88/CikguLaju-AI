@@ -229,3 +229,14 @@ class ErphTests(unittest.TestCase):
         self.assertIn(row['reflection'],[p.text for p in d.paragraphs])
         with self.assertRaisesRegex(ValueError,'Jawi/Arab'):
             render([row],'pdf')
+
+    def test_single_record_word_roundtrip_is_text_only(self):
+        from web.erph_export import render
+        from web.erph_word_import import extract_docx
+        row=dict(PAYLOAD,activities='Aktiviti 1\n\nMurid menyusun kad.',reflection='سلام')
+        fields=extract_docx(render([row],'word'))
+        self.assertEqual(fields,{k:row[k] for k in ('title','standard_content','standard_learning','objectives','activities','reflection')})
+        self.assertNotIn('class_name',fields)
+        self.assertNotIn('rph_format',fields)
+        with self.assertRaisesRegex(ValueError,'satu rekod'):
+            extract_docx(render([row,row],'word'))
