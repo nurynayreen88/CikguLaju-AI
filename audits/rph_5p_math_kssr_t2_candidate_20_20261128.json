@@ -1,0 +1,486 @@
+{
+  "status": "DRAFT_DSKP_TEXT_MATCHED",
+  "subject": "MATEMATIK SK",
+  "year": 2,
+  "curriculum": "KSSR",
+  "dskp_reference": {
+    "drive_id": "1x9Oce4dz4BK46nZqtBvnsrUpl3JD8LeW",
+    "edition": "2016",
+    "verification": "Text extraction reviewed, not visual PDF QA"
+  },
+  "policy": "Working source PRA-READY; BA references transcribed from work source only; BT, RPT, runtime identity and render not verified. Candidate ordinal is not production lesson number. No release.",
+  "records": [
+    {
+      "candidate_id": "T2-WORK-001",
+      "source_work_record": 1,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Kenali nombor",
+      "dskp": [
+        {
+          "code": "1.1.1",
+          "printed_page": 34,
+          "sk": "1.1 Nilai Nombor.",
+          "sp": "Menamakan nombor hingga 1000: (i) Membaca sebarang nombor yang diberi dalam perkataan. (ii) Menyebut sebarang nombor yang diberi dalam bentuk angka. (iii) Memadan angka dengan namanya dalam perkataan."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjuk 364 dan 603; murid menyebut dan membandingkan kedudukan digit.",
+        "exploration": "Padankan kad angka dan kad perkataan dalam kumpulan kecil.",
+        "explanation": "Guru model sebutan tiga digit lengkap menggunakan carta nilai tempat.",
+        "elaboration": "Pasangan tukar kad dan baca nombor baharu; latihan BA hlm. 1–2 mengikut sumber draf.",
+        "evaluation": "Semak sepuluh padanan angka-perkataan dan sebutan; sekurang-kurangnya lapan tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-002",
+      "source_work_record": 2,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Tulis nombor",
+      "dskp": [
+        {
+          "code": "1.2.1",
+          "printed_page": 34,
+          "sk": "1.2 Menulis nombor.",
+          "sp": "Menulis nombor dalam angka dan perkataan."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Sebut 81 dan 156; murid pilih kad angka yang sepadan.",
+        "exploration": "Bina nombor daripada kad perkataan menggunakan carta nilai tempat.",
+        "explanation": "Guru model penulisan angka dan perkataan, termasuk susunan digit.",
+        "elaboration": "Murid menukar kad dua arah, semak pasangan dan latihan BA hlm. 3–4.",
+        "evaluation": "Sepuluh item penulisan angka/perkataan; lapan tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-003",
+      "source_work_record": 3,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Nilai nombor",
+      "dskp": [
+        {
+          "code": "1.1.2",
+          "printed_page": 34,
+          "sk": "1.1 Nilai Nombor.",
+          "sp": "Menentukan nilai nombor hingga 1000: (i) Menunjukkan kuantiti bagi nombor yang diberi. (ii) Memadankan kumpulan objek dengan nombor. (iii) Membandingkan nilai dua nombor. (iv) Menyusun kumpulan objek mengikut tertib menaik dan tertib menurun."
+        }
+      ],
+      "scope_note": "Fokus (i) dan (ii).",
+      "phases": {
+        "engagement": "Tunjukkan kad 50, 120 dan 437; anggar bilangan blok yang diperlukan.",
+        "exploration": "Bina kuantiti menggunakan blok asas sepuluh, kemudian padankan kad angka.",
+        "explanation": "Terangkan ratus, puluh dan sa melalui perwakilan dan abakus.",
+        "elaboration": "Padankan serta bina perwakilan baharu; latihan BA hlm. 5–6.",
+        "evaluation": "Lima perwakilan kuantiti; empat padanan tepat dan satu alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-004",
+      "source_work_record": 4,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Nilai tempat dan nilai digit",
+      "dskp": [
+        {
+          "code": "1.4.1",
+          "printed_page": 34,
+          "sk": "1.4 Nilai tempat.",
+          "sp": "Menyatakan nilai tempat dan nilai digit bagi sebarang nombor."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjuk 268; minta murid menamakan kedudukan digit.",
+        "exploration": "Letak kad digit pada carta ratus, puluh dan sa; tukar kedudukan digit.",
+        "explanation": "Bezakan nilai tempat puluh dengan nilai digit 60 dalam 361.",
+        "elaboration": "Tentukan nilai digit bergaris dalam 268, 317 dan 640; BA hlm. 7–9.",
+        "evaluation": "Lima digit diberi; empat nilai tempat dan nilai digit tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-005",
+      "source_work_record": 5,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Cerakin nombor",
+      "dskp": [
+        {
+          "code": "1.4.2",
+          "printed_page": 34,
+          "sk": "1.4 Nilai tempat.",
+          "sp": "Mencerakin sebarang nombor mengikut nilai tempat dan nilai digit."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Bina 603 dengan blok; bincangkan lajur yang kosong.",
+        "exploration": "Susun blok bagi 109 dan 237, kemudian tulis bentuk cerakin nilai tempat.",
+        "explanation": "Bandingkan 673 = 6 ratus + 7 puluh + 3 sa dengan 600 + 70 + 3.",
+        "elaboration": "Bina semula 261, 580 dan 603 daripada cerakin; latihan BA hlm. 10–11.",
+        "evaluation": "Cerakinkan lima nombor dalam dua bentuk; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-006",
+      "source_work_record": 6,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Banding nombor",
+      "dskp": [
+        {
+          "code": "1.1.2",
+          "printed_page": 34,
+          "sk": "1.1 Nilai Nombor.",
+          "sp": "Menentukan nilai nombor hingga 1000: (i) Menunjukkan kuantiti bagi nombor yang diberi. (ii) Memadankan kumpulan objek dengan nombor. (iii) Membandingkan nilai dua nombor. (iv) Menyusun kumpulan objek mengikut tertib menaik dan tertib menurun."
+        }
+      ],
+      "scope_note": "Fokus (iii).",
+      "phases": {
+        "engagement": "Banding 134 dan 234; nyatakan sebab.",
+        "exploration": "Bina 380 dan 250, kemudian 815 dan 851 menggunakan kad nilai tempat.",
+        "explanation": "Guru terangkan perbandingan bermula pada ratus, diikuti puluh dan sa.",
+        "elaboration": "Pasangan banding 467/647, 928/892, 912/921; latihan BA hlm. 12–13.",
+        "evaluation": "Lima pasangan baharu; empat perbandingan tepat dan alasan digit penentu."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-007",
+      "source_work_record": 7,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Susun nombor",
+      "dskp": [
+        {
+          "code": "1.1.2",
+          "printed_page": 34,
+          "sk": "1.1 Nilai Nombor.",
+          "sp": "Menentukan nilai nombor hingga 1000: (i) Menunjukkan kuantiti bagi nombor yang diberi. (ii) Memadankan kumpulan objek dengan nombor. (iii) Membandingkan nilai dua nombor. (iv) Menyusun kumpulan objek mengikut tertib menaik dan tertib menurun."
+        }
+      ],
+      "scope_note": "Fokus (iv); kumpulan objek, bukan kad angka semata-mata.",
+      "phases": {
+        "engagement": "Pamerkan tiga kumpulan objek yang mewakili 405, 415 dan 425; teka tertib.",
+        "exploration": "Bina kumpulan blok bagi 764, 769, 774 dan 779, kemudian susun kuantitinya.",
+        "explanation": "Terangkan tertib menaik/menurun dengan perbandingan kuantiti; kad angka sebagai sokongan.",
+        "elaboration": "Susun perwakilan abakus dan gambar dalam dua tertib; latihan BA hlm. 14–15.",
+        "evaluation": "Lima set kumpulan objek/perwakilan; empat susunan tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-008",
+      "source_work_record": 8,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Bilang nombor",
+      "dskp": [
+        {
+          "code": "1.3.1",
+          "printed_page": 34,
+          "sk": "1.3 Rangkaian nombor.",
+          "sp": "Membilang nombor."
+        },
+        {
+          "code": "1.3.2",
+          "printed_page": 34,
+          "sk": "1.3 Rangkaian nombor.",
+          "sp": "Melengkapkan sebarang rangkaian nombor."
+        }
+      ],
+      "scope_note": "Bezakan membilang dengan melengkapkan rangkaian.",
+      "phases": {
+        "engagement": "Lengkapkan 100, 102, kosong, kosong menggunakan lompatan.",
+        "exploration": "Murid membilang dengan objek dan garis nombor, menaik dan menurun pada selang 1–10 dan 100.",
+        "explanation": "Bezakan membilang daripada melengkapkan rangkaian; model selang 5 dan 4.",
+        "elaboration": "Kumpulan melengkapkan rangkaian dengan selang yang berbeza; latihan BA hlm. 16–17.",
+        "evaluation": "Semak lima rangkaian dan satu demonstrasi membilang; sekurang-kurangnya empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-009",
+      "source_work_record": 9,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Anggar bilangan objek",
+      "dskp": [
+        {
+          "code": "1.5.1",
+          "printed_page": 35,
+          "sk": "1.5 Menganggar.",
+          "sp": "Memberi anggaran bilangan objek yang munasabah."
+        }
+      ],
+      "scope_note": "Bilangan objek sahaja, bukan isi padu.",
+      "phases": {
+        "engagement": "Bandingkan dua bekas berisi guli tanpa mengira satu demi satu.",
+        "exploration": "Gunakan kumpulan objek rujukan untuk menganggar bilangan kumpulan sasaran.",
+        "explanation": "Terangkan lebih kurang, kurang daripada dan lebih daripada berdasarkan set rujukan.",
+        "elaboration": "Anggar buah, guli dan kepingan menggunakan set rujukan; latihan BA hlm. 19–20.",
+        "evaluation": "Empat situasi anggaran bilangan objek; tiga munasabah dengan alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-010",
+      "source_work_record": 10,
+      "source_drive_id": "1k01xoA4BQLzjz9bcs0BLCn48DxA1l8jH",
+      "title": "Bundar nombor kepada ratus terdekat",
+      "dskp": [
+        {
+          "code": "1.6.1",
+          "printed_page": 35,
+          "sk": "1.6 Membundarkan nombor.",
+          "sp": "Membundarkan nombor bulat hingga ratus terdekat."
+        }
+      ],
+      "scope_note": "Pentaksiran ratus terdekat; puluh hanya pengayaan.",
+      "phases": {
+        "engagement": "Letak 136 antara 100 dan 200; minta murid pilih ratus terdekat.",
+        "exploration": "Tandakan 136, 150, 159 dan 182 pada garis nombor ratus.",
+        "explanation": "Guru terangkan titik tengah dan kaedah membundar ke ratus terdekat; puluh sebagai pengayaan sahaja.",
+        "elaboration": "Pasangan membundar nombor tiga digit, termasuk kes titik tengah; pilih latihan ratus BA hlm. 21–23.",
+        "evaluation": "Lima item ratus terdekat; sekurang-kurangnya empat tepat serta alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-011",
+      "source_work_record": 11,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Pola nombor",
+      "dskp": [
+        {
+          "code": "1.7.1",
+          "printed_page": 35,
+          "sk": "1.7 Pola nombor.",
+          "sp": "Mengenal pasti pola bagi siri nombor yang diberi."
+        },
+        {
+          "code": "1.7.2",
+          "printed_page": 35,
+          "sk": "1.7 Pola nombor.",
+          "sp": "Melengkapkan pelbagai pola nombor yang mudah."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Lengkapkan 318, 321, 324, kosong; nyatakan aturan.",
+        "exploration": "Uji perbezaan antara nombor berturutan bagi pola tambah 4/9, tolak 2/100.",
+        "explanation": "Bezakan aturan menaik dan menurun serta cara menyemak dua langkah.",
+        "elaboration": "Pasangan lengkapkan dan bina siri sendiri; latihan BA hlm. 24–26.",
+        "evaluation": "Lima pola dengan aturan lisan dan nombor hilang; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-012",
+      "source_work_record": 12,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Masalah nombor",
+      "dskp": [
+        {
+          "code": "1.8.1",
+          "printed_page": 35,
+          "sk": "1.8 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah yang melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "Elakkan bergantung pada pembundaran puluh sebagai SP utama.",
+      "phases": {
+        "engagement": "Bina nombor terbesar daripada kad 5, 9, 2; terangkan pilihan.",
+        "exploration": "Kenal pasti maklumat dan soalan dalam situasi nombor rumah atau markah.",
+        "explanation": "Guru model faham, rancang, selesaikan dan semak menggunakan jadual nombor.",
+        "elaboration": "Selesaikan masalah nombor hilang dan kedudukan; latihan BA hlm. 27–28, pilih masalah dalam skop.",
+        "evaluation": "Empat masalah; tiga penyelesaian tepat dengan strategi dan alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-013",
+      "source_work_record": 13,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Tambah dua nombor",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 38,
+          "sk": "2.1 Tambah dalam lingkungan 1000.",
+          "sp": "Menambah dua nombor hasil tambah dalam lingkungan 1000."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Ramal hasil 100 + 5 dan 652 + 7.",
+        "exploration": "Bina 108 + 70 dan 293 + 600 menggunakan blok ratus-puluh-sa.",
+        "explanation": "Terangkan penjajaran digit dan kaitkan model dengan bentuk lazim.",
+        "elaboration": "Banding garis nombor bagi 200 + 32 dengan bentuk lazim 424 + 65; BA hlm. 31–34.",
+        "evaluation": "Lima item tambah dua nombor dengan jumlah tidak melebihi 1 000; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-014",
+      "source_work_record": 14,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Tambah dengan pengumpulan semula",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 38,
+          "sk": "2.1 Tambah dalam lingkungan 1000.",
+          "sp": "Menambah dua nombor hasil tambah dalam lingkungan 1000."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Ramal sama ada 167 + 9 memerlukan pertukaran.",
+        "exploration": "Tukar 10 sa kepada 1 puluh menggunakan blok, kemudian cuba 10 puluh kepada 1 ratus.",
+        "explanation": "Terangkan langkah pengumpulan semula dalam bentuk lazim dan sebab penjajaran digit.",
+        "elaboration": "Pasangan selesaikan 508 + 296 dan latihan BA hlm. 35–38; semak anggaran.",
+        "evaluation": "Lima item pengumpulan semula termasuk 362 + 179; empat tepat dengan langkah."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-015",
+      "source_work_record": 15,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Tambah tiga nombor",
+      "dskp": [
+        {
+          "code": "2.1.2",
+          "printed_page": 38,
+          "sk": "2.1 Tambah dalam lingkungan 1000.",
+          "sp": "Menambah tiga nombor hasil tambah dalam lingkungan 1000."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Pilih cara menjumlahkan 123, 45 dan 201.",
+        "exploration": "Susun tiga kad nombor pada carta nilai tempat dan cuba tambah berperingkat.",
+        "explanation": "Bandingkan bentuk lazim tiga nombor dengan jumlah berperingkat.",
+        "elaboration": "Pasangan kira 204 + 161 + 34; latihan BA hlm. 39–41 dengan jumlah hingga 1 000.",
+        "evaluation": "Lima item termasuk 301 + 153 + 87; empat tepat dengan semakan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-016",
+      "source_work_record": 16,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Tolak tanpa pengumpulan semula",
+      "dskp": [
+        {
+          "code": "2.2.1",
+          "printed_page": 38,
+          "sk": "2.2 Tolak dalam lingkungan 1000.",
+          "sp": "Menolak dua nombor dalam lingkungan 1000."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Kira 130 − 20 secara mengundur.",
+        "exploration": "Gerakkan penanda garis nombor bagi 250 − 40 dan 400 − 100.",
+        "explanation": "Tunjukkan model blok 237 − 16 dan rekod dalam bentuk lazim.",
+        "elaboration": "Latihan penolakan tanpa pengumpulan semula BA hlm. 42–43; semak dengan tambah.",
+        "evaluation": "Lima item termasuk 459 − 43; empat tepat serta semakan songsang."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-017",
+      "source_work_record": 17,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Tolak dengan pengumpulan semula",
+      "dskp": [
+        {
+          "code": "2.2.1",
+          "printed_page": 38,
+          "sk": "2.2 Tolak dalam lingkungan 1000.",
+          "sp": "Menolak dua nombor dalam lingkungan 1000."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjuk blok 346 − 8; murid jelaskan masalah pada lajur sa.",
+        "exploration": "Tukar satu puluh kepada sepuluh sa dan modelkan penolakan.",
+        "explanation": "Terangkan pertukaran antara lajur termasuk satu ratus kepada sepuluh puluh.",
+        "elaboration": "Pasangan banding strategi bagi 239 − 51 dan 427 − 348; BA hlm. 44–48.",
+        "evaluation": "Lima item termasuk 371 − 58; empat tepat dengan pertukaran dan semakan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-018",
+      "source_work_record": 18,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Tolak berturut-turut",
+      "dskp": [
+        {
+          "code": "2.2.2",
+          "printed_page": 38,
+          "sk": "2.2 Tolak dalam lingkungan 1000.",
+          "sp": "Menolak dua nombor dari satu nombor dalam lingkungan 1000."
+        }
+      ],
+      "scope_note": "Fokus tajuk ini sahaja; semak RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Paparkan 785 − 112 − 53; pilih operasi pertama.",
+        "exploration": "Gunakan dua langkah pada garis nombor atau jadual nilai tempat.",
+        "explanation": "Terangkan 785 − 112 = 673, diikuti 673 − 53 = 620; kiri ke kanan.",
+        "elaboration": "Pasangan kira 967 − 24 − 102 dan 894 − 130 − 241; BA hlm. 49–51.",
+        "evaluation": "Lima item termasuk 345 − 36 − 108; empat tepat dengan hasil perantaraan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-019",
+      "source_work_record": 19,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Reka cerita tambah dan tolak",
+      "dskp": [
+        {
+          "code": "2.5.1",
+          "printed_page": 39,
+          "sk": "2.5 Penyelesaian masalah.",
+          "sp": "Mereka cerita masalah tambah, tolak, darab dan bahagi dalam lingkungan 1000."
+        }
+      ],
+      "scope_note": "Fokus tambah/tolak sahaja.",
+      "phases": {
+        "engagement": "Cipta situasi butang bagi 204 + 75.",
+        "exploration": "Padankan kad ayat matematik dengan gambar situasi kuantiti awal dan perubahan.",
+        "explanation": "Guru jelaskan hubungan kehendak soalan, unit dan operasi tambah/tolak.",
+        "elaboration": "Pasangan cipta dan tukar cerita daripada ayat matematik; latihan BA hlm. 52–53.",
+        "evaluation": "Dua cerita munasabah dengan operasi, soalan dan unit yang sepadan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-020",
+      "source_work_record": 20,
+      "source_drive_id": "1HRWDjwPW-cAzHk934CiDAUcFKBGw7eCs",
+      "title": "Masalah harian tambah dan tolak",
+      "dskp": [
+        {
+          "code": "2.5.2",
+          "printed_page": 39,
+          "sk": "2.5 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah tambah, tolak, darab dan bahagi yang melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "Fokus tambah/tolak sahaja.",
+      "phases": {
+        "engagement": "Dengar situasi jualan pau; kenal pasti kehendak soalan.",
+        "exploration": "Gariskan maklumat penting dan pilih gambar rajah bagi situasi jualan atau setem.",
+        "explanation": "Guru tunjuk pemilihan tambah/tolak dan semakan menggunakan operasi songsang.",
+        "elaboration": "Selesaikan masalah topi, pokok dan setem; latihan BA hlm. 54–55.",
+        "evaluation": "Tiga masalah individu dengan ayat matematik, kiraan, unit dan semakan."
+      },
+      "ready": false
+    }
+  ]
+}
