@@ -1,0 +1,816 @@
+{
+  "status": "DRAFT_V60_SNAPSHOT_SPLIT_LESSONS",
+  "year": 3,
+  "subject": "MATEMATIK SK KSSR (candidate; verify edition)",
+  "source_pack_blob": "6de8c2dc0a9c4a7f4afe44758cd8430887d37057",
+  "parent_audit_blob": "c0cf4610effcfeaed1687aac5408fdd67b54b657",
+  "total": 23,
+  "policy": "Eight combined candidates expanded into 23 v60 snapshot lessons. Preserve source SP/objective and summarized PBD/BA references from decoded snapshot. 60 minutes is source suggestion, not verified live duration. Year 3 KSSR ordinary vs DPK3 must be resolved before mapping; no production ID invented. BA pages are source references, not independently inspected. Verify exact SK, original teacher support and criteria, current RPT/catalogue, Word/PDF and authenticated delivery. No release.",
+  "records": [
+    {
+      "source_snapshot_lesson": 40,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-01",
+      "source_v60_markdown_sha256_reported": "054bf7e776a1b890ff7ee3dc86e593b23ec5de74954199fbce9a184a59467cd3",
+      "source_title": "3.3 Peratus",
+      "source_sp": "3.3.1 — Menama dan menyebut peratus",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menama dan menyebut peratus dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menama dan menyebut peratus",
+      "source_ba_pages": "68",
+      "source_pbd_summary": "Sebut dan namakan empat lambang peratus; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk grid 100 petak dengan 25 berlorek; murid sebut nilai.",
+        "exploration": "Pasangan padankan grid 10, 50 dan 75 petak berlorek dengan kad nilai.",
+        "explanation": "Guru model sebutan 'dua puluh lima peratus'; murid membaca kad secara bergilir.",
+        "elaboration": "Murid bermain bingo sebutan 12%, 30%, 60% dan 99%.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 68 yang guru pilih mengikut SP. Sebut dan namakan empat lambang peratus; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid seratus, kad nilai.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Baca nombor dahulu sebelum menyebut peratus.",
+        "pengayaan": "Bina kad peratus untuk rakan menyebut."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 41,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-01",
+      "source_v60_markdown_sha256_reported": "d0a34530ccd7db4927b5fb4c2a5ef84c123393de8b5b3a487390eb858d079526",
+      "source_title": "3.3 Peratus",
+      "source_sp": "3.3.2 — Mengenal simbol peratus",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal simbol peratus dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengenal simbol peratus",
+      "source_ba_pages": "68",
+      "source_pbd_summary": "Kenal pasti dan sebut empat kad lambang peratus; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru paparkan label 20 dan 20%; murid cari perbezaan.",
+        "exploration": "Murid memburu simbol % pada carta dan resit simulasi; asingkan daripada tanda lain.",
+        "explanation": "Guru jelaskan simbol % dibaca peratus, bukan unit biasa.",
+        "elaboration": "Pasangan pilih label peratus daripada 15%, 15 kg, 35 dan 35%; terangkan pilihan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 68 yang guru pilih mengikut SP. Kenal pasti dan sebut empat kad lambang peratus; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad simbol, resit simulasi.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Jejak bentuk % pada kad besar.",
+        "pengayaan": "Cipta dua label yang berbeza hanya pada simbol %."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 42,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-01",
+      "source_v60_markdown_sha256_reported": "518666a3e5048a0490d8a9c1438478ba8a4a8d079e0c04e33693e214f1acf828",
+      "source_title": "3.3 Peratus",
+      "source_sp": "3.3.3 — Mewakilkan peratus dalam petak seratus dan sebaliknya",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mewakilkan peratus dalam petak seratus dan sebaliknya dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mewakilkan peratus pada petak seratus",
+      "source_ba_pages": "69",
+      "source_pbd_summary": "Empat representasi dua arah antara grid dan peratus; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri kad 40% dan grid kosong; murid ramal bilangan petak.",
+        "exploration": "Murid lorek 15%, 62% dan 90% pada grid berasingan.",
+        "explanation": "Guru model hubungan bilangan berlorek daripada 100 dengan simbol %; murid semak kiraan.",
+        "elaboration": "Pasangan tukar grid berlorek 28 dan 73 petak dengan kad peratus; bina grid 56%.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 69 yang guru pilih mengikut SP. Empat representasi dua arah antara grid dan peratus; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid seratus, pensel warna.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan baris lengkap sepuluh petak sebelum unit tunggal.",
+        "pengayaan": "Bina dua grid berlainan susunan yang mewakili peratus sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 43,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-01",
+      "source_v60_markdown_sha256_reported": "cc425189b3b6fb1d359c3db8122c1b8a4f09d76f032ab633c1a7215fef6d6b74",
+      "source_title": "3.3 Peratus",
+      "source_sp": "3.3.4 — Menulis satu peratus hingga seratus peratus",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menulis satu peratus hingga seratus peratus dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menulis peratus 1 hingga 100",
+      "source_ba_pages": "69",
+      "source_pbd_summary": "Tulis empat nilai antara 1% dan 100% daripada sebutan; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru sebut tiga puluh lima peratus; murid cadang cara menulis.",
+        "exploration": "Murid susun kad angka dan simbol untuk sebutan peratus.",
+        "explanation": "Guru model 35% dan kedudukan simbol selepas angka.",
+        "elaboration": "Murid tulis 1%, 45%, 78% dan 100% daripada kad perkataan; rakan semak.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 69 yang guru pilih mengikut SP. Tulis empat nilai antara 1% dan 100% daripada sebutan; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad perkataan, papan mini.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Salin angka dan tambah simbol % secara berpandu.",
+        "pengayaan": "Dikte peratus rawak kepada pasangan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 61,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-02",
+      "source_v60_markdown_sha256_reported": "1fd6cd7cc151bf22c5918f6fa9f4d3f1c0c21caa237b957eab3b63138d036c0b",
+      "source_title": "4.7 Simpanan dan pelaburan",
+      "source_sp": "4.7.1 — Menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Keperluan dan kehendak",
+      "source_ba_pages": "87",
+      "source_pbd_summary": "Empat keputusan keperluan/kehendak dengan alasan dan baki bukan negatif; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk gambar buku, makanan dan mainan; murid pilih yang diperlukan.",
+        "exploration": "Pasangan asingkan kad pembelian kepada keperluan dan kehendak.",
+        "explanation": "Guru kaitkan pilihan dengan simpanan dan had bajet.",
+        "elaboration": "Murid susun keutamaan dalam bajet RM30 dengan kad harga buku RM12, makanan RM8 dan mainan RM15; jelaskan baki.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 87 yang guru pilih mengikut SP. Empat keputusan keperluan/kehendak dengan alasan dan baki bukan negatif; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad pembelian, jadual bajet.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Guna dua bekas label keperluan dan kehendak.",
+        "pengayaan": "Cadangkan satu alternatif murah untuk keperluan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 62,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-02",
+      "source_v60_markdown_sha256_reported": "40cc471f930ddb4e9413279d3f4bba8c610cccc5d582be51b749deddc1f53dd9",
+      "source_title": "4.7 Simpanan dan pelaburan",
+      "source_sp": "4.7.1 — Menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Keputusan pembelian dan simpanan",
+      "source_ba_pages": "87",
+      "source_pbd_summary": "Empat keputusan dengan alasan serta baki bukan negatif; 3/4 tepat, betulkan satu kesilapan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri bajet RM30 dan dua senarai pembelian; murid pilih senarai.",
+        "exploration": "Murid bina jadual kendiri: buku RM9, makanan RM7, alat permainan RM18.",
+        "explanation": "Guru terangkan kesan memilih buku dan makanan terhadap baki RM14; murid banding pilihan lain.",
+        "elaboration": "Pasangan reka pelan yang mendahulukan keperluan dan masih menyimpan RM5 atau lebih.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 87 yang guru pilih mengikut SP. Empat keputusan dengan alasan serta baki bukan negatif; 3/4 tepat, betulkan satu kesilapan. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad harga, jadual wang.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Isi lajur harga, jumlah dan baki berpandu.",
+        "pengayaan": "Ubah bajet kepada RM25 dan jelaskan pelan baharu."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 63,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-02",
+      "source_v60_markdown_sha256_reported": "d0e03a80d8bb1132c4249074d6bdb59fb5c8cb3363a26872f2a15c228ce207c0",
+      "source_title": "4.7 Simpanan dan pelaburan",
+      "source_sp": "4.7.2 — Menjelaskan keperluan menyimpan dan melabur",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menjelaskan keperluan menyimpan dan melabur dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Kepentingan simpanan dan pelaburan",
+      "source_ba_pages": "87",
+      "source_pbd_summary": "Empat pernyataan kepentingan simpanan/pelaburan dan risiko; 3/4 munasabah.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk jadual simpan RM5 setiap minggu; murid ramal jumlah empat minggu.",
+        "exploration": "Pasangan banding jadual menyimpan RM20 dengan perbelanjaan habis.",
+        "explanation": "Guru jelaskan simpanan untuk keperluan masa depan dan pelaburan mempunyai risiko, pulangan tidak dijamin.",
+        "elaboration": "Murid padankan situasi kecemasan, matlamat simpanan dan kemungkinan rugi dengan alasan yang sesuai.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 87 yang guru pilih mengikut SP. Empat pernyataan kepentingan simpanan/pelaburan dan risiko; 3/4 munasabah. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jadual empat minggu, kad situasi.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Guna contoh tabung untuk tujuan tertentu.",
+        "pengayaan": "Terangkan mengapa pulangan tidak semestinya tetap."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 64,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-03",
+      "source_v60_markdown_sha256_reported": "99a4f8fa0c9b44009c098fcb7af154329133f095cc22f52a35b6f88ae0086b30",
+      "source_title": "4.8 Penyelesaian masalah",
+      "source_sp": "4.8.1 — Mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mereka cerita wang berdasarkan operasi",
+      "source_ba_pages": "88",
+      "source_pbd_summary": "Empat cerita wang sepadan dengan operasi asas; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar RM12.50 × 4 = RM50 tanpa cerita; murid cadang konteks.",
+        "exploration": "Pasangan padankan kad operasi dengan gambar pembelian, baki dan agihan.",
+        "explanation": "Guru model cerita empat buku RM12.50 seunit beserta soalan jumlah.",
+        "elaboration": "Murid reka cerita RM80 − RM23.40 = RM56.60 dan RM36 ÷ 6 = RM6; rakan semak maklumat.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 88 yang guru pilih mengikut SP. Empat cerita wang sepadan dengan operasi asas; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad ayat matematik, helaian cerita.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan rangka siapa, harga, bilangan dan soalan.",
+        "pengayaan": "Cipta cerita untuk RM18 + RM27 = RM45."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 65,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-03",
+      "source_v60_markdown_sha256_reported": "7682246600cee17210888ca465156971d349743d49d95a1ed53a6fd6462bf359",
+      "source_title": "4.8 Penyelesaian masalah",
+      "source_sp": "4.8.1 — Mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mereka cerita wang secara kendiri",
+      "source_ba_pages": "88",
+      "source_pbd_summary": "Empat cerita operasi asas; 3/4 tepat dan betulkan satu kesilapan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk tiga bekas RM8 seunit; murid bina soalan.",
+        "exploration": "Murid pilih kad tambah, tolak, darab dan bahagi; lukis konteks sendiri.",
+        "explanation": "Guru model semakan cerita dengan padanan nombor, unit, operasi dan kehendak soalan.",
+        "elaboration": "Pasangan bertukar cerita daripada RM45 ÷ 5, RM60 − RM14 dan 7 × RM9; bina satu contoh baharu.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 88 yang guru pilih mengikut SP. Empat cerita operasi asas; 3/4 tepat dan betulkan satu kesilapan. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad operasi, gambar barangan.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Lengkapkan cerita separa siap.",
+        "pengayaan": "Tulis dua cerita berlainan untuk ayat matematik yang sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 66,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-03",
+      "source_v60_markdown_sha256_reported": "8f0ce40b7fe30c1951231e13b2b97c49d18ac377005a7723c800513f08de56c9",
+      "source_title": "4.8 Penyelesaian masalah",
+      "source_sp": "4.8.2 — Menyelesaikan masalah wang dalam   lingkungan RM10 000 melibatkan operasi asas   dan operasi bergabung tambah dan tolak",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan masalah wang dalam lingkungan RM10 000 melibatkan operasi asas dan operasi bergabung tambah dan tolak dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menyelesaikan masalah wang",
+      "source_ba_pages": "89–90",
+      "source_pbd_summary": "Empat masalah wang hingga RM10 000 dengan unit; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk wang RM100 dan dua tanda harga; murid pilih operasi.",
+        "exploration": "Pasangan susun kad maklumat dan soalan dalam jadual belanja.",
+        "explanation": "Guru model RM100 − RM26.50 − RM18.20 = RM55.30.",
+        "elaboration": "Murid selesaikan bajet RM150 ditolak RM42.60 dan RM28.90 (RM78.50), serta satu masalah bahagi wang.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 89–90 yang guru pilih mengikut SP. Empat masalah wang hingga RM10 000 dengan unit; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Resit contoh, carta operasi.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan rajah jumlah dan baki.",
+        "pengayaan": "Bina masalah gabungan tambah dan tolak."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 67,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-03",
+      "source_v60_markdown_sha256_reported": "9d6410d644b424f49f4bb1e0b952694042daa201a20b8c243afc685a26792231",
+      "source_title": "4.8 Penyelesaian masalah",
+      "source_sp": "4.8.2 — Menyelesaikan masalah wang dalam   lingkungan RM10 000 melibatkan operasi asas   dan operasi bergabung tambah dan tolak",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan masalah wang dalam lingkungan RM10 000 melibatkan operasi asas dan operasi bergabung tambah dan tolak dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menyelesaikan masalah wang pelbagai langkah",
+      "source_ba_pages": "89–90",
+      "source_pbd_summary": "Empat masalah hingga RM10 000; 3/4 tepat, sertakan semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar dua resit dan baki; murid cari maklumat yang belum digunakan.",
+        "exploration": "Pasangan menyusun langkah pengiraan masalah kutipan dan perbelanjaan.",
+        "explanation": "Guru model RM600 + RM250 − RM125 = RM725; murid semak dengan operasi songsang.",
+        "elaboration": "Murid selesaikan RM1 200 − RM345 + RM180 (RM1 035), dan reka masalah setara.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 89–90 yang guru pilih mengikut SP. Empat masalah hingga RM10 000; 3/4 tepat, sertakan semakan. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Resit simulasi, rajah bar.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Kenal pasti jumlah awal sebelum operasi berikutnya.",
+        "pengayaan": "Cari nilai perbelanjaan yang hilang daripada baki akhir."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 81,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-04A",
+      "source_v60_markdown_sha256_reported": "35b838b01cc256cd7bc774a07858720dd62d75fb6a4331c467ced55c04a810ba",
+      "source_title": "6.1 Panjang",
+      "source_sp": "6.1.1 — Menukar unit ukuran panjang melibatkan meter dan sentimeter",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menukar unit ukuran panjang melibatkan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menukar meter dan sentimeter",
+      "source_ba_pages": "107",
+      "source_pbd_summary": "Empat penukaran m dan cm; 3/4 tepat dengan unit.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk pita 3 m; murid ramal panjang dalam cm.",
+        "exploration": "Murid mengukur jalur satu meter dan menanda 100 cm.",
+        "explanation": "Guru model 2 m 35 cm = 235 cm dan 450 cm = 4 m 50 cm.",
+        "elaboration": "Pasangan padankan 175 cm, 320 cm dan 5 m 8 cm dengan unit setara.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 107 yang guru pilih mengikut SP. Empat penukaran m dan cm; 3/4 tepat dengan unit. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pita ukur, pembaris, kad unit.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan carta 1 m = 100 cm.",
+        "pengayaan": "Cari dua cara menulis panjang 685 cm."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 82,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-04A",
+      "source_v60_markdown_sha256_reported": "e89c851c3988c98ace04b6374414454e195a1dff8b16796e6928e3d5bcdf1fd4",
+      "source_title": "6.1 Panjang",
+      "source_sp": "6.1.2 — Menyelesaikan ayat matematik tambah hingga tiga ukuran panjang melibatkan meter dan sentimeter",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik tambah hingga tiga ukuran panjang melibatkan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menambah ukuran panjang",
+      "source_ba_pages": "108",
+      "source_pbd_summary": "Empat tambah hingga tiga panjang; 3/4 tepat dengan penukaran unit.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua tali; murid ramal sama ada cm melebihi 100.",
+        "exploration": "Pasangan gabungkan jalur berlabel m dan cm dalam jadual dua lajur.",
+        "explanation": "Guru model 1 m 60 cm + 2 m 55 cm = 4 m 15 cm dengan pengumpulan semula.",
+        "elaboration": "Murid jumlahkan 2 m 20 cm, 1 m 45 cm dan 50 cm (4 m 15 cm).",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 108 yang guru pilih mengikut SP. Empat tambah hingga tiga panjang; 3/4 tepat dengan penukaran unit. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pita ukur, carta m/cm.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Jumlahkan cm dahulu dan kumpulkan 100 cm.",
+        "pengayaan": "Cari tiga panjang dengan jumlah 5 m."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 83,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-04A",
+      "source_v60_markdown_sha256_reported": "9f931a2e78da7dcfea943dfdb174b3627b5ebcb78782d8abe05b4498e61a9be5",
+      "source_title": "6.1 Panjang",
+      "source_sp": "6.1.3 — Menyelesaikan ayat matematik tolak ukuran panjang hingga dua nilai dari satu nilai melibatkan meter dan sentimeter",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik tolak ukuran panjang hingga dua nilai dari satu nilai melibatkan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menolak ukuran panjang",
+      "source_ba_pages": "109",
+      "source_pbd_summary": "Empat tolak hingga dua ukuran daripada satu panjang; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk reben 5 m yang dipotong 2 m 45 cm; murid ramal baki.",
+        "exploration": "Pasangan model pertukaran 1 m kepada 100 cm dengan jalur.",
+        "explanation": "Guru model 5 m − 2 m 45 cm = 2 m 55 cm.",
+        "elaboration": "Murid kira 6 m 20 cm − 1 m 75 cm − 45 cm (4 m); semak dengan tambah.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 109 yang guru pilih mengikut SP. Empat tolak hingga dua ukuran daripada satu panjang; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pita, jadual m/cm.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tukar semua ukuran kepada cm dahulu.",
+        "pengayaan": "Tentukan panjang asal daripada baki dan dua potongan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 84,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-04B",
+      "source_v60_markdown_sha256_reported": "721a6348a0294d2cbdb60c7d510da4c9e61bd496e9190bdbf75f138a11d09ca5",
+      "source_title": "6.1 Panjang",
+      "source_sp": "6.1.4 — Menyelesaikan ayat matematik darab melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik darab melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mendarab ukuran panjang",
+      "source_ba_pages": "110",
+      "source_pbd_summary": "Empat darab panjang dengan nombor satu digit; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk tiga reben sama panjang; murid pilih operasi.",
+        "exploration": "Pasangan susun tiga jalur 1 m 25 cm sebagai tambah berulang.",
+        "explanation": "Guru model 3 × 1 m 25 cm = 3 m 75 cm dan pertukaran lebihan cm.",
+        "elaboration": "Murid hitung 4 × 2 m 30 cm (9 m 20 cm) dan 6 × 75 cm (4 m 50 cm).",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 110 yang guru pilih mengikut SP. Empat darab panjang dengan nombor satu digit; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pita meter, kad darab.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan jalur berulang bagi satu digit kecil.",
+        "pengayaan": "Banding cara darab dalam cm dan m/cm."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 85,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-04B",
+      "source_v60_markdown_sha256_reported": "3decf205a837bd647cf0ba5595fb017416b39c30a63a4b277bee70e6c2a91b3f",
+      "source_title": "6.1 Panjang",
+      "source_sp": "6.1.5 — Menyelesaikan ayat matematik bahagi melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik bahagi melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Membahagi ukuran panjang",
+      "source_ba_pages": "111",
+      "source_pbd_summary": "Empat bahagi panjang dengan nombor satu digit; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk reben 6 m untuk tiga bahagian; murid ramal panjang sepotong.",
+        "exploration": "Pasangan lipat jalur model kepada bahagian sama panjang.",
+        "explanation": "Guru model 7 m 50 cm ÷ 5 = 1 m 50 cm dan semak darab.",
+        "elaboration": "Murid bahagikan 4 m 80 cm kepada 4 bahagian (1 m 20 cm), dan 9 m kepada 6 bahagian (1 m 50 cm).",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 111 yang guru pilih mengikut SP. Empat bahagi panjang dengan nombor satu digit; 3/4 betul. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Reben, pembaris, kad bahagi.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tukar panjang kepada cm sebelum bahagi.",
+        "pengayaan": "Cipta soalan pembahagian dengan baki sifar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 100,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-05",
+      "source_v60_markdown_sha256_reported": "883dbc524e67eb14390743236a36d1b4136fe0c58fed5a8e156cdc7589f68f32",
+      "source_title": "7.1 Prisma",
+      "source_sp": "7.1.1 — Mengenal prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengenal jenis prisma",
+      "source_ba_pages": "129",
+      "source_pbd_summary": "Tiga padanan jenis prisma dan satu alasan tapak; sasaran 3/4.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk tiga model prisma dengan tapak berbeza; murid teka nama.",
+        "exploration": "Murid asingkan model mengikut bentuk dua tapak yang sama.",
+        "explanation": "Guru namakan prisma segi empat sama, segi empat tepat dan segi tiga berdasarkan tapak.",
+        "elaboration": "Pasangan cari model prisma dalam koleksi bentuk dan jelaskan tapak yang digunakan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 129 yang guru pilih mengikut SP. Tiga padanan jenis prisma dan satu alasan tapak; sasaran 3/4. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Model prisma plastik atau kertas.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Padankan model dengan kad gambar tapak.",
+        "pengayaan": "Cari contoh objek harian dan jelaskan bentuk tapaknya."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 101,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-05",
+      "source_v60_markdown_sha256_reported": "e898cf44fd39b869822f5ba794fd996480a2318dc017e5771a9f880b180459ae",
+      "source_title": "7.1 Prisma",
+      "source_sp": "7.1.2 — Mencirikan prisma dan melabelkan prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga berdasarkan permukaan, tapak, bucu dan tepi.",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mencirikan prisma dan melabelkan prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga berdasarkan permukaan, tapak, bucu dan tepi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mencirikan dan melabel prisma",
+      "source_ba_pages": "130",
+      "source_pbd_summary": "Label bucu, tepi, tapak dan permukaan serta lengkapkan jadual ciri; sekurang-kurangnya tiga isian betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk prisma segi tiga; murid ramal bilangan bucu.",
+        "exploration": "Pasangan gunakan pelekat untuk menanda bucu, tepi, tapak dan permukaan.",
+        "explanation": "Guru model prisma segi tiga: 5 permukaan, 9 tepi, 6 bucu; banding prisma segi empat.",
+        "elaboration": "Murid bina jadual ciri tiga prisma dan semak kiraan pada model.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 130 yang guru pilih mengikut SP. Label bucu, tepi, tapak dan permukaan serta lengkapkan jadual ciri; sekurang-kurangnya tiga isian betul. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Model prisma, pelekat, carta ciri.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tandakan setiap bucu yang sudah dikira.",
+        "pengayaan": "Jelaskan mengapa prisma segi empat sama dan tepat mempunyai bilangan bucu sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 103,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-06",
+      "source_v60_markdown_sha256_reported": "415aa08a3a802b07b42c54cb0465f8bf6b169b71a51c193f1c014e062f3c522a",
+      "source_title": "7.3 Poligon sekata",
+      "source_sp": "7.3.1 — Mengenal pasti bentuk poligon sekata bagi pentagon, heksagon, heptagon dan oktagon",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti bentuk poligon sekata bagi pentagon, heksagon, heptagon dan oktagon dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengenal poligon sekata",
+      "source_ba_pages": "132–133",
+      "source_pbd_summary": "Empat padanan nama, sisi dan bucu; sasaran sumber empat betul, objektif asal sekurang-kurangnya 3/4.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar pentagon dan heksagon sekata; murid kira sisi.",
+        "exploration": "Pasangan banding kad poligon sekata dan tidak sekata menggunakan sisi dan sudut.",
+        "explanation": "Guru namakan pentagon, heksagon, heptagon dan oktagon; jelaskan sisi dan sudut sama.",
+        "elaboration": "Murid padankan empat nama dengan bentuk yang diputar; label sisi dan bucu.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 132–133 yang guru pilih mengikut SP. Empat padanan nama, sisi dan bucu; sasaran sumber empat betul, objektif asal sekurang-kurangnya 3/4. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad poligon 5–8 sisi, pembaris.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Kira sisi sambil menanda satu demi satu.",
+        "pengayaan": "Asingkan oktagon sekata daripada oktagon tidak sekata dan beri alasan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 104,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-06",
+      "source_v60_markdown_sha256_reported": "49e2cb9b606a334a617a6d6288339163c01e52632531b971f3fc57f73b532451",
+      "source_title": "7.3 Poligon sekata",
+      "source_sp": "7.3.2 — Menghasilkan corak berasaskan bentuk poligon sekata",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menghasilkan corak berasaskan bentuk poligon sekata dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menghasilkan corak poligon sekata",
+      "source_ba_pages": "134",
+      "source_pbd_summary": "Kenal poligon dalam corak, lengkapkan jadual bilangan dan reka susunan; nilai pola dan label bentuk.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua corak heksagon; murid kenal unit berulang.",
+        "exploration": "Murid susun potongan heksagon pada grid dan banding susunan.",
+        "explanation": "Guru model corak berulang dan jelaskan bentuk sekata yang digunakan.",
+        "elaboration": "Pasangan reka corak segi tiga sama sisi dan segi empat sama; kira bentuk dan jelaskan aturan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 134 yang guru pilih mengikut SP. Kenal poligon dalam corak, lengkapkan jadual bilangan dan reka susunan; nilai pola dan label bentuk. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Potongan poligon, grid, gam.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Sambung unit corak yang sudah diberi.",
+        "pengayaan": "Cipta corak dengan dua bentuk sekata dan jelaskan aturan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 108,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-07",
+      "source_v60_markdown_sha256_reported": "8e2f2f056c1f10d215363eb6d3c72d7819a770e45322564a3d88dac00041cc01",
+      "source_title": "8.1 Koordinat pada sukuan pertama",
+      "source_sp": "8.1.1 — Mengenal pasti kedudukan objek berdasarkan titik rujukan dengan menggunakan perbendaharaan kata yang sesuai",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti kedudukan objek berdasarkan titik rujukan dengan menggunakan perbendaharaan kata yang sesuai dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Kedudukan objek relatif titik rujukan",
+      "source_ba_pages": "139",
+      "source_pbd_summary": "Empat kedudukan relatif diperihal dengan titik rujukan yang betul; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru letak patung dua petak ke kanan dan satu ke atas daripada A; murid terangkan.",
+        "exploration": "Pasangan gerakkan objek pada grid lantai berasaskan penanda tertentu.",
+        "explanation": "Guru model perbendaharaan kata kiri, kanan, atas, bawah dan titik rujukan.",
+        "elaboration": "Murid tukar arahan kedudukan empat objek; ubah titik rujukan dan banding jawapan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 139 yang guru pilih mengikut SP. Empat kedudukan relatif diperihal dengan titik rujukan yang betul; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid lantai, objek kecil, kad arah.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Guna satu arah dahulu sebelum dua arah.",
+        "pengayaan": "Terangkan kedudukan objek sama daripada dua titik rujukan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 109,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-07",
+      "source_v60_markdown_sha256_reported": "b7e82b1be7c58f02bb6d1ad4eb55cddf0ae4db1b1ab8bf4bbf1322d339e123d9",
+      "source_title": "8.1 Koordinat pada sukuan pertama",
+      "source_sp": "8.1.2 — Menamakan objek berdasarkan kedudukan pada paksi mengufuk dan paksi mencancang",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menamakan objek berdasarkan kedudukan pada paksi mengufuk dan paksi mencancang dengan sekurang-kurangnya 3 daripada 4 jawapan tepat.",
+      "proposed_focus": "Menamakan objek pada koordinat",
+      "source_ba_pages": "140–141",
+      "source_pbd_summary": "Empat objek dinamakan berdasarkan kedudukan paksi; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk bendera pada grid mengufuk 3, mencancang 2; murid cari objek.",
+        "exploration": "Pasangan ikut kad koordinat dari asalan untuk mencari objek pada grid.",
+        "explanation": "Guru model bacaan mengufuk dahulu, mencancang kemudian; murid sebut nama objek.",
+        "elaboration": "Murid namakan objek yang diletakkan pada (1,4), (2,3) dan (4,1) dalam grid guru.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 140–141 yang guru pilih mengikut SP. Empat objek dinamakan berdasarkan kedudukan paksi; 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid sukuan pertama, kad objek.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Jejak dua anak panah dari asalan.",
+        "pengayaan": "Bina peta objek dan kuiz nama kepada rakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_lesson": 110,
+      "source_snapshot_year": 3,
+      "parent_candidate": "T3-WORK-07",
+      "source_v60_markdown_sha256_reported": "2caa047c0454e3fb40c90f4ffd98021a1eea84b204ba092b2b2796a3641b6908",
+      "source_title": "8.1 Koordinat pada sukuan pertama",
+      "source_sp": "8.1.3 — Menentukan kedudukan objek pada paksi mengufuk dan paksi mencancang",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menentukan kedudukan objek pada paksi mengufuk dan paksi mencancang dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menentukan kedudukan pada koordinat",
+      "source_ba_pages": "142",
+      "source_pbd_summary": "Empat koordinat ditentukan dan ditanda dengan susunan (x,y); 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri kad P(2,4); murid nyatakan paksi pertama.",
+        "exploration": "Pasangan letak penanda pada grid mengikut kad koordinat.",
+        "explanation": "Guru model kedudukan P dari asalan: dua mengufuk, empat mencancang.",
+        "elaboration": "Murid plot Q(4,2), R(1,1) dan S(3,5); semak pasangan terbalik.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 142 yang guru pilih mengikut SP. Empat koordinat ditentukan dan ditanda dengan susunan (x,y); 3/4 tepat. Guru rekod hasil individu dan murid terangkan satu strategi atau pembetulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid paksi, pen berwarna.; Buku Aktiviti Matematik Tahun 3.",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan warna berbeza bagi dua paksi.",
+        "pengayaan": "Bina tiga koordinat dan minta rakan plot serta semak."
+      },
+      "ready": false
+    }
+  ]
+}
