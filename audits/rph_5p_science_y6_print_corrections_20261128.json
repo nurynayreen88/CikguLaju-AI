@@ -503,22 +503,72 @@
         "bbm": "Kad fakta kesan teknologi dan foto sisa elektronik."
       },
       "ready": false
-    }
-  ],
-  "held": [
+    },
     {
       "lesson_id": "SK27-SCI-Y6-PDP-022",
-      "reason": "Skop jenis simbiosis tumbuhan perlu disahkan dalam buku teks."
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Foto bunga pakma dan pokok dedalu (Buku Teks m/s 62–63).",
+        "phase": {
+          "engagement": "Paparkan foto orkid menumpang pokok dan pokok dedalu; murid jangka kesan kepada perumah.",
+          "exploration": "Padankan manfaat atau mudarat pada kedua-dua pasangan; rujuk contoh bunga pakma dalam buku teks.",
+          "explanation": "Jelaskan komensalisme orkid dan parasitisme dedalu/pakma berdasarkan kesan terhadap perumah.",
+          "elaboration": "Betulkan kad yang menyamakan orkid dengan dedalu dan beri sebab bagi setiap pembetulan."
+        }
+      },
+      "textbook_verification": {
+        "file_id": "1lFQk2-zU3L6UprvxaHbS-IVQow5LhVIa",
+        "title": "Buku Teks Sains Tahun 6 SK - DBP 2021 - Bahagian 1.pdf",
+        "printed_pages": "62–63",
+        "verified": "Buku teks menyenaraikan dua simbiosis tumbuhan: komensalisme dan parasitisme. Orkid/langsuyar serta bunga pakma/dedalu merupakan contoh."
+      },
+      "ready": false
     },
     {
       "lesson_id": "SK27-SCI-Y6-PDP-027",
-      "reason": "Spesies khusus dan status dalam edisi sumber perlu disahkan."
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SOURCE_STATUS_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Kad harimau Malaya dan orkid selipar daripada Buku Teks DBP 2021 m/s 70–71.",
+        "phase": {
+          "engagement": "Paparkan harimau Malaya dan orkid selipar seperti contoh dalam buku teks DBP 2021; murid kenal pasti isu ancaman.",
+          "exploration": "Pilih satu contoh haiwan dan satu tumbuhan daripada senarai buku teks; rujuk kad maklumat ancaman.",
+          "explanation": "Terangkan ancaman berdasarkan kad sumber; contoh berlabel edisi 2021, bukan pengesahan status semasa semua spesies.",
+          "elaboration": "Bina poster dua contoh dengan ancaman daripada sumber dan nyatakan edisi 2021."
+        }
+      },
+      "textbook_verification": {
+        "file_id": "1lFQk2-zU3L6UprvxaHbS-IVQow5LhVIa",
+        "title": "Buku Teks Sains Tahun 6 SK - DBP 2021 - Bahagian 1.pdf",
+        "printed_pages": "70–71",
+        "verified": "Harimau Malaya dan orkid selipar disenaraikan dalam contoh buku teks; status semasa atau semua ahli kelompok orkid tidak didakwa."
+      },
+      "ready": false
     },
     {
       "lesson_id": "SK27-SCI-Y6-PDP-058",
-      "reason": "Enam kategori bahan buangan perlu disahkan mengikut edisi sumber."
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "CONTENT_CORRECTION_REQUIRED",
+      "changes": {
+        "bbm": "Tujuh kad kategori buku teks m/s 149–150 termasuk foto tinja dan sisa toksik.",
+        "phase": {
+          "engagement": "Paparkan foto tujuh jenis bahan buangan dalam buku teks: kaca, logam, kertas, tinja, plastik, sisa makanan dan sisa toksik.",
+          "exploration": "Kelaskan tujuh kad menggunakan kategori buku teks; tiada pengendalian sisa sebenar.",
+          "explanation": "Jelaskan contoh setiap kategori; sisa toksik ialah kategori buangan berbahaya, bukan satu jenis bahan kimia tunggal.",
+          "elaboration": "Semak tujuh kategori bersama pasangan; kenal pasti sekurang-kurangnya enam dengan tepat bagi evidens PBD asal."
+        }
+      },
+      "textbook_verification": {
+        "file_id": "1C015T5HDimjNHzAdFrFzZqA0LF0N0RVc",
+        "title": "Buku Teks Sains Tahun 6 SK - DBP 2021 - Bahagian 2.pdf",
+        "printed_pages": "149–150, 163",
+        "verified": "Tujuh kategori buku teks: kaca, logam, kertas, tinja, plastik, sisa makanan, sisa toksik. Evidens asal enam dikekalkan sebagai tahap minimum, aktiviti meliputi tujuh."
+      },
+      "ready": false
     }
   ],
+  "held": [],
   "academic_approved": false,
   "release": false
 }
