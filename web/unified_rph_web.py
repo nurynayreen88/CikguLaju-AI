@@ -1434,6 +1434,10 @@ def create_blueprint():
             if len(found) != 1:
                 raise ValueError("English Lesson identity mismatch")
             return year, sub, unit, lesson, found[0]["lesson"]
+        if sub == "MATH" and year == 2:
+            from web.native_telegram_sequence_rph_client import _selection as math_selection
+            math_selection(year, sub, unit, lesson)
+            return year, sub, unit, lesson, None
         if sub == "BM" and year == 2 and re.fullmatch(r"b[a-f0-9]{24}", lesson):
             return year, sub, unit, lesson, None
         if sub == "MUZIK" and year in range(2, 7):
@@ -1469,6 +1473,17 @@ def create_blueprint():
         except (ValueError, TypeError):
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
+            if sub == "MATH":
+                from urllib.parse import urlencode
+                from web.math_worksheet_complete_pdf import resolve_math
+                if resolve_math(year, unit, token) is None:
+                    return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
+                params = urlencode({"year": year, "subject": sub, "unit": unit, "lesson": token})
+                return jsonify({"status": "SUMBER_DISAHKAN", "items": [
+                    {"type":"worksheet", "title":title,
+                     "url":"/api/web/rph/math-worksheet-pdf/"+kind+"?"+params,
+                     "action":"Download PDF"} for kind,title in (
+                         ("murid","Lembaran Latihan Murid"),("skema","Skema Jawapan Guru"))]})
             if sub == "BM":
                 from urllib.parse import urlencode
                 from web.bm_worksheet_complete_pdf import complete_bm_pdf
@@ -1673,6 +1688,27 @@ def create_blueprint():
         name = f"CikguLaju_English_Y{year}_L{pair[0]:03d}-{pair[1]:03d}_{asset}.{extension}"
         return send_file(BytesIO(data), mimetype=mime, as_attachment=True,
                          conditional=False, download_name=name)
+
+    @bp.get("/api/web/rph/math-worksheet-pdf/<kind>")
+    def math_worksheet_pdf(kind):
+        error = materials_access_error()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, _ = _extra_selection()
+            if sub != "MATH" or kind not in ("murid", "skema"):
+                raise ValueError("Wrong worksheet source")
+            from web.math_worksheet_complete_pdf import complete_math_pdf
+            result = complete_math_pdf(year, unit, token, kind)
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan latihan tidak sah"}), 404
+        except Exception:
+            return jsonify({"error":"Fail latihan belum dapat dicapai"}), 503
+        if result is None:
+            return jsonify({"error":"Latihan belum tersedia"}), 404
+        data, filename = result
+        return send_file(BytesIO(data), mimetype="application/pdf",
+                         as_attachment=True, conditional=False, download_name=filename)
 
     @bp.get("/api/web/rph/worksheet-pdf")
     def worksheet_pdf():
