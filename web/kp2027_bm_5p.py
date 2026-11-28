@@ -108,7 +108,8 @@ def render_pdf(source,c,profile):
             row(html(labels[i],True),html(source[key]))
         ref=html(source["reference"]);height=measure(ref,x2-x0,8)+2
         if y+height>h-25:raise bm.Unavailable("Rujukan 5P tidak muat")
-        page.insert_htmlbox(fitz.Rect(x0+5,y+2,x2-5,y+height+2),ref,css=css(8),scale_low=1)
+        spare,scale=page.insert_htmlbox(fitz.Rect(x0+5,y+2,x2-5,y+height+2),ref,css=css(8),scale_low=1)
+        if spare<0 or scale!=1:raise bm.Unavailable("Rujukan 5P tidak dapat disahkan")
         return d.tobytes(garbage=4,deflate=True)
     finally:d.close()
 
