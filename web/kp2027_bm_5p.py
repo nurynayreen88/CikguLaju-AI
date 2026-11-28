@@ -32,7 +32,7 @@ def companions():
         raise bm.Unavailable("Inventori 5P belum lengkap")
     return result
 
-def prepare(g,n,payload):
+def prepare(g,n,payload,*,reviewed=False):
     r=bm.lesson(g,n)
     fields=parse_teacher_fields(payload)
     page=PAGES[r["sk_code"]]
@@ -49,8 +49,12 @@ def prepare(g,n,payload):
         "reference":f"Rujukan: DK BM SK Tahun 1 (BPK, 2026), hlm. {page}."
     }
     raw=json.dumps(source,ensure_ascii=False,sort_keys=True).encode()
+    phases=companions()[g,n]
+    if reviewed:
+        from web.kp2027_bm_5p_release import reviewed_phases
+        phases=reviewed_phases(g,n)
     c={**{k:source[k] for k in ("subject","year","lesson_id","curriculum")},
-       "source_sha256":sha256(raw).hexdigest(),"phases":companions()[g,n]}
+       "source_sha256":sha256(raw).hexdigest(),"phases":phases}
     validate(source,c,source_bytes=raw)
     profile=dict(zip(("class","date","time","students"),(fields[k] for k in ("Kelas:","Tarikh:","Masa:","Bil. Murid:"))))
     return source,c,raw,profile
@@ -113,8 +117,8 @@ def render_pdf(source,c,profile):
         return d.tobytes(garbage=4,deflate=True)
     finally:d.close()
 
-def render(g,n,fmt,fields):
-    source,c,raw,profile=prepare(g,n,fields)
+def render(g,n,fmt,fields,*,reviewed=False):
+    source,c,raw,profile=prepare(g,n,fields,reviewed=reviewed)
     if fmt=="word":
         return render_word(source,c,source_bytes=raw,palette=PALETTE,subject_heading="BAHASA MELAYU SK\nTAHUN 1",profile=profile)
     if fmt=="pdf":return render_pdf(source,c,profile)
