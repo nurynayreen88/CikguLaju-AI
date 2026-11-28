@@ -4,6 +4,7 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - 'audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json'
+      - 'audits/rph_5p_science_y2_y3_y4_opening_dskp_text_20261128.json'
       - 'tools/audit_science_opening_5p_y2_y4_20261128.py'
       - '.github/workflows/science-opening-22-draft-qa.yml'
   workflow_dispatch:
