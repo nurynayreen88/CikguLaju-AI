@@ -1,5 +1,11 @@
 name: Worksheet generator draft smoke QA
 on:
+  pull_request:
+    branches:
+      - 'production/cikgulaju-web-20261105'
+    paths:
+      - 'worksheets/generator_v1/**'
+      - '.github/workflows/worksheet-generator-draft-qa.yml'
   push:
     branches:
       - 'draft/worksheet-generator-batch03-v1'
@@ -10,6 +16,7 @@ permissions:
   contents: read
 jobs:
   smoke:
+    if: github.event_name == 'push' || github.head_ref == 'draft/worksheet-generator-batch03-v1'
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
