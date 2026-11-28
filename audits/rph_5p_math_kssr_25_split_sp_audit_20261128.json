@@ -1,0 +1,1248 @@
+{
+  "status": "DRAFT_SPLIT_SP_AUDIT_ONLY",
+  "date": "2026-11-28",
+  "previous_triage_blob": "8b80db7bf5617cdd68204f17fb0456d55340465a",
+  "manifest_blob": "3b635782267a41c32ff0cac12d278c052b594dd4",
+  "source_packs": [
+    {
+      "year": 2,
+      "sha": "00db06fe0cdb3f5d47815025eadee6f8633f6273",
+      "count": 117
+    },
+    {
+      "year": 3,
+      "sha": "6de8c2dc0a9c4a7f4afe44758cd8430887d37057",
+      "count": 117
+    },
+    {
+      "year": 5,
+      "sha": "7bc0065a9ee1ad445512c525ab4924f40662e9b4",
+      "count": 117
+    }
+  ],
+  "total": 25,
+  "counts_by_year": {
+    "2": {
+      "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS": 10
+    },
+    "3": {
+      "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS": 8
+    },
+    "5": {
+      "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS": 7
+    }
+  },
+  "records": [
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-008",
+      "title": "Bilang nombor",
+      "original_sp": [
+        "1.3.1",
+        "1.3.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "1.3.1",
+          "options": [
+            {
+              "lesson": 4,
+              "title": "1.3 Rangkaian nombor",
+              "sp": "1.3.1 — Membilang nombor",
+              "objective": "Pada akhir PdP, murid dapat membilang nombor dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "324f98cb382c17c416fbd468032a0ab03cc773abc2c1b545db3fb653d5218a67"
+            }
+          ]
+        },
+        {
+          "sp": "1.3.2",
+          "options": [
+            {
+              "lesson": 5,
+              "title": "1.3 Rangkaian nombor",
+              "sp": "1.3.2 — Melengkapkan sebarang rangkaian nombor",
+              "objective": "Pada akhir PdP, murid dapat melengkapkan sebarang rangkaian nombor dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "2ed6e4a7872efad9f56b8043c53343d6d5a37c49113693333a0400fe7db1fda0"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-011",
+      "title": "Pola nombor",
+      "original_sp": [
+        "1.7.1",
+        "1.7.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "1.7.1",
+          "options": [
+            {
+              "lesson": 10,
+              "title": "1.7 Pola nombor",
+              "sp": "1.7.1 — Mengenal pasti pola bagi siri nombor yang diberi",
+              "objective": "Pada akhir PdP, murid dapat mengenal pasti pola bagi siri nombor yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "bcf772946d8ee143c1aef2c13f7d2c0666e12fe825b82973d65b1d4e590380eb"
+            },
+            {
+              "lesson": 11,
+              "title": "1.7 Pola nombor",
+              "sp": "1.7.1 — Mengenal pasti pola bagi siri nombor yang diberi",
+              "objective": "Pada akhir PdP, murid dapat mengenal pasti pola bagi siri nombor yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "61791363bf1ae2691f3878f57e5f1780f4cb3c9fbbab5dbf400effce7f8a9dda"
+            }
+          ]
+        },
+        {
+          "sp": "1.7.2",
+          "options": [
+            {
+              "lesson": 12,
+              "title": "1.7 Pola nombor",
+              "sp": "1.7.2 — Melengkapkan pelbagai pola nombor yang mudah",
+              "objective": "Pada akhir PdP, murid dapat melengkapkan pelbagai pola nombor yang mudah dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "d5958c71270c490f119401cefc88a0703d2d7e0ae7f34927e31165dc910938aa"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-025",
+      "title": "Darab dengan 1, 0 dan 10",
+      "original_sp": [
+        "2.3.1",
+        "2.3.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "2.3.1",
+          "options": [
+            {
+              "lesson": 19,
+              "title": "2.3 Darab dalam lingkungan 1000",
+              "sp": "2.3.1 — Mendarab dalam lingkungan fakta asas",
+              "objective": "Pada akhir PdP, murid dapat mendarab dalam lingkungan fakta asas dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "b67cd2068f067fca8f78dc51ef7d282274729a6e6a11c14fcb3adf92eb730f38"
+            },
+            {
+              "lesson": 20,
+              "title": "2.3 Darab dalam lingkungan 1000",
+              "sp": "2.3.1 — Mendarab dalam lingkungan fakta asas",
+              "objective": "Pada akhir PdP, murid dapat mendarab dalam lingkungan fakta asas dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "a8ea90d42b30f317bda8274425c61534ea81800445581e90435de63dcb4d773f"
+            }
+          ]
+        },
+        {
+          "sp": "2.3.2",
+          "options": [
+            {
+              "lesson": 21,
+              "title": "2.3 Darab dalam lingkungan 1000",
+              "sp": "2.3.2 — Mendarab nombor satu digit dengan 10",
+              "objective": "Pada akhir PdP, murid dapat mendarab nombor satu digit dengan 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "e8c268c4dc877a4abfbf571f18ad89f1f8f471b33215d12c80db8ffda7e72cb9"
+            },
+            {
+              "lesson": 22,
+              "title": "2.3 Darab dalam lingkungan 1000",
+              "sp": "2.3.2 — Mendarab nombor satu digit dengan 10",
+              "objective": "Pada akhir PdP, murid dapat mendarab nombor satu digit dengan 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "972580421c2c495ba74847a91ca0c79c68f4dd841b9734c50706b10d09f1681d"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-029",
+      "title": "Bahagi dengan 1 dan 10; sifar sebagai nombor dibahagi",
+      "original_sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "2.4.1",
+          "options": [
+            {
+              "lesson": 23,
+              "title": "2.4 Bahagi dalam lingkungan 1000",
+              "sp": "2.4.1 — Membahagi dalam lingkungan fakta asas",
+              "objective": "Pada akhir PdP, murid dapat membahagi dalam lingkungan fakta asas dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "993bc4635b60d82c0cc412e145a07f158dc31804018a3f0eca6f1431f3693d5d"
+            },
+            {
+              "lesson": 24,
+              "title": "2.4 Bahagi dalam lingkungan 1000",
+              "sp": "2.4.1 — Membahagi dalam lingkungan fakta asas",
+              "objective": "Pada akhir PdP, murid dapat membahagi dalam lingkungan fakta asas dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "9fb47cdaad6f7f14dff7386385d2f261c6e41f071e9ac0555437299c22ad4ece"
+            }
+          ]
+        },
+        {
+          "sp": "2.4.2",
+          "options": [
+            {
+              "lesson": 25,
+              "title": "2.4 Bahagi dalam lingkungan 1000",
+              "sp": "2.4.2 — Membahagi sebarang nombor dua digit dengan 10",
+              "objective": "Pada akhir PdP, murid dapat membahagi sebarang nombor dua digit dengan 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "aea61ede1a3b802f3c7f260ecbdb79e3a53d9982728ebf7cd8e02bb9c69a5b6a"
+            },
+            {
+              "lesson": 26,
+              "title": "2.4 Bahagi dalam lingkungan 1000",
+              "sp": "2.4.2 — Membahagi sebarang nombor dua digit dengan 10",
+              "objective": "Pada akhir PdP, murid dapat membahagi sebarang nombor dua digit dengan 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "747bd4ea707d6962091348fe6a665c4b79adfe4b685f7eb50d8b6429b98a6912"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-033",
+      "title": "Kenali pecahan wajar",
+      "original_sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "3.1.1",
+          "options": [
+            {
+              "lesson": 31,
+              "title": "3.1 Pecahan wajar",
+              "sp": "3.1.1 — Mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10",
+              "objective": "Pada akhir PdP, murid dapat mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "17292fb8eb7e31db02b3a1d44ca1ec19a7579a6e8be882bd6dca9a136f95d98a"
+            },
+            {
+              "lesson": 32,
+              "title": "3.1 Pecahan wajar",
+              "sp": "3.1.1 — Mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10",
+              "objective": "Pada akhir PdP, murid dapat mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "414b717cac5bd27f0cb8a553d7769aef3e80c5cef565b81b4983c2b89292f767"
+            }
+          ]
+        },
+        {
+          "sp": "3.1.2",
+          "options": [
+            {
+              "lesson": 33,
+              "title": "3.1 Pecahan wajar",
+              "sp": "3.1.2 — Menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10",
+              "objective": "Pada akhir PdP, murid dapat menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "92d34b234bbe0a185e115c8ea1a33b4279dcdc6b863c48cc7d33827da02a49a2"
+            },
+            {
+              "lesson": 34,
+              "title": "3.1 Pecahan wajar",
+              "sp": "3.1.2 — Menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10",
+              "objective": "Pada akhir PdP, murid dapat menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "37f28277a02266cf96bebc1c6f3807b2bd5c2f3194f5e80536f90ed19d280517"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-034",
+      "title": "Wakil dan tulis pecahan",
+      "original_sp": [
+        "3.1.3",
+        "3.1.4"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "3.1.3",
+          "options": [
+            {
+              "lesson": 35,
+              "title": "3.1 Pecahan wajar",
+              "sp": "3.1.3 — Mewakilkan gambar rajah mengikut pecahan yang diberi",
+              "objective": "Pada akhir PdP, murid dapat mewakilkan gambar rajah mengikut pecahan yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "3d5994ec2da6e676b25f3332ab8afb343ceb61363c62be93bdf78f4c97411a8f"
+            },
+            {
+              "lesson": 36,
+              "title": "3.1 Pecahan wajar",
+              "sp": "3.1.3 — Mewakilkan gambar rajah mengikut pecahan yang diberi",
+              "objective": "Pada akhir PdP, murid dapat mewakilkan gambar rajah mengikut pecahan yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "b1f27b6679a17018fad1ac98cb1d8ad559b561f3f72271c7776a53bf1c72fded"
+            }
+          ]
+        },
+        {
+          "sp": "3.1.4",
+          "options": [
+            {
+              "lesson": 37,
+              "title": "3.1 Pecahan wajar",
+              "sp": "3.1.4 — Menulis pecahan wajar yang diberi",
+              "objective": "Pada akhir PdP, murid dapat menulis pecahan wajar yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "553594d563c6dd7d40a266ba1445231936f32b3a9247483ee05ba58eca832954"
+            },
+            {
+              "lesson": 38,
+              "title": "3.1 Pecahan wajar",
+              "sp": "3.1.4 — Menulis pecahan wajar yang diberi",
+              "objective": "Pada akhir PdP, murid dapat menulis pecahan wajar yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "27ec38a54d4f75655297453deea544ba4235389ba907ff39e234de1ce9bd7c94"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-036B",
+      "title": "Perwakilan perpuluhan",
+      "original_sp": [
+        "3.2.2",
+        "3.2.3",
+        "3.2.4",
+        "3.2.5"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "3.2.2",
+          "options": [
+            {
+              "lesson": 43,
+              "title": "3.2 Perpuluhan",
+              "sp": "3.2.2 — Menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan",
+              "objective": "Pada akhir PdP, murid dapat menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "ab7e5701713e8bd60e53f47944a5aad55e7fc11bf9d8b3d95b51021f848bcdcb"
+            },
+            {
+              "lesson": 44,
+              "title": "3.2 Perpuluhan",
+              "sp": "3.2.2 — Menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan",
+              "objective": "Pada akhir PdP, murid dapat menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "1cc00ad290259a3e0fa93cff79843528ef55a75fcda091161d1dee8bea526d69"
+            }
+          ]
+        },
+        {
+          "sp": "3.2.3",
+          "options": [
+            {
+              "lesson": 45,
+              "title": "3.2 Perpuluhan",
+              "sp": "3.2.3 — Menunjuk nombor perpuluhan 0.1 hingga 0.9",
+              "objective": "Pada akhir PdP, murid dapat menunjuk nombor perpuluhan 0.1 hingga 0.9 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "1f82c603479df44ac4ba06b47518eafa6651479cf7256e57f5d4de653be92cca"
+            },
+            {
+              "lesson": 46,
+              "title": "3.2 Perpuluhan",
+              "sp": "3.2.3 — Menunjuk nombor perpuluhan 0.1 hingga 0.9",
+              "objective": "Pada akhir PdP, murid dapat menunjuk nombor perpuluhan 0.1 hingga 0.9 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "37e316d7ed75fd21bb82e8bfbf90c84ba66e3a4f144f7030ee3499f845f20b53"
+            }
+          ]
+        },
+        {
+          "sp": "3.2.4",
+          "options": [
+            {
+              "lesson": 47,
+              "title": "3.2 Perpuluhan",
+              "sp": "3.2.4 — Mewakilkan gambar rajah mengikut perpuluhan diberi",
+              "objective": "Pada akhir PdP, murid dapat mewakilkan gambar rajah mengikut perpuluhan diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "a6dc076e41ca4b0e5537a9979043577dc1599a1b1bb31158b723086d583210ca"
+            },
+            {
+              "lesson": 48,
+              "title": "3.2 Perpuluhan",
+              "sp": "3.2.4 — Mewakilkan gambar rajah mengikut perpuluhan diberi",
+              "objective": "Pada akhir PdP, murid dapat mewakilkan gambar rajah mengikut perpuluhan diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "4ec7fcc77bada5d026926a85f77f9e93a178476a5174c00200a370acafdfc8d4"
+            }
+          ]
+        },
+        {
+          "sp": "3.2.5",
+          "options": [
+            {
+              "lesson": 49,
+              "title": "3.2 Perpuluhan",
+              "sp": "3.2.5 — Menulis perpuluhan yang diberi",
+              "objective": "Pada akhir PdP, murid dapat menulis perpuluhan yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "f9af2dbf766ac4be81752a9e6383ba81a98c0c336956af8d15c2cf2c85ccfe2d"
+            },
+            {
+              "lesson": 50,
+              "title": "3.2 Perpuluhan",
+              "sp": "3.2.5 — Menulis perpuluhan yang diberi",
+              "objective": "Pada akhir PdP, murid dapat menulis perpuluhan yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "c9690696fcc0469aec568066d1dabcc3d809ef4b66ed2dd1138a3411ff0646fa"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-042",
+      "title": "Tambah wang",
+      "original_sp": [
+        "4.2.1",
+        "4.2.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "4.2.1",
+          "options": [
+            {
+              "lesson": 61,
+              "title": "4.2 Tambah wang",
+              "sp": "4.2.1 — Menambah dua nilai wang hasil tambahnya hingga RM100",
+              "objective": "Pada akhir PdP, murid dapat menambah dua nilai wang hasil tambahnya hingga RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "2501b4becdaa3b97a885e44f6081dbe624db62fff0be13b00e5d4945be6741fa"
+            },
+            {
+              "lesson": 62,
+              "title": "4.2 Tambah wang",
+              "sp": "4.2.1 — Menambah dua nilai wang hasil tambahnya hingga RM100",
+              "objective": "Pada akhir PdP, murid dapat menambah dua nilai wang hasil tambahnya hingga RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "336f4c205f113f01694959285c531dcde9cbeb0cb3c28f81f72e203d250c448d"
+            }
+          ]
+        },
+        {
+          "sp": "4.2.2",
+          "options": [
+            {
+              "lesson": 63,
+              "title": "4.2 Tambah wang",
+              "sp": "4.2.2 — Menambah tiga nilai wang hasil tambahnya hingga RM100",
+              "objective": "Pada akhir PdP, murid dapat menambah tiga nilai wang hasil tambahnya hingga RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "461edc2d5d4aebd3425d4fd87ad11b4fcba60e1521a43f20dae7da11e22a35c0"
+            },
+            {
+              "lesson": 64,
+              "title": "4.2 Tambah wang",
+              "sp": "4.2.2 — Menambah tiga nilai wang hasil tambahnya hingga RM100",
+              "objective": "Pada akhir PdP, murid dapat menambah tiga nilai wang hasil tambahnya hingga RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "7f3b6f7003506cd285023f208e96ad3e07fa042f65b928192d50c4224e5e2eda"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-043",
+      "title": "Tolak wang",
+      "original_sp": [
+        "4.3.1",
+        "4.3.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "4.3.1",
+          "options": [
+            {
+              "lesson": 65,
+              "title": "4.3 Tolak wang",
+              "sp": "4.3.1 — Menolak dua nilai wang dalam lingkungan RM100",
+              "objective": "Pada akhir PdP, murid dapat menolak dua nilai wang dalam lingkungan RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "1a4c4b23cb41b70f9c579104823df026144d8cbeb0950902942d9588d7942b08"
+            },
+            {
+              "lesson": 66,
+              "title": "4.3 Tolak wang",
+              "sp": "4.3.1 — Menolak dua nilai wang dalam lingkungan RM100",
+              "objective": "Pada akhir PdP, murid dapat menolak dua nilai wang dalam lingkungan RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "3530c0626884e7c2231dff7ad15dc896d86d1121733d6549573796b10894b350"
+            }
+          ]
+        },
+        {
+          "sp": "4.3.2",
+          "options": [
+            {
+              "lesson": 67,
+              "title": "4.3 Tolak wang",
+              "sp": "4.3.2 — Menolak dua nilai wang dari satu nilai wang dalam lingkungan RM100",
+              "objective": "Pada akhir PdP, murid dapat menolak dua nilai wang dari satu nilai wang dalam lingkungan RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "e720b1f5ce0a13434043702759649f8beecb3f30a7de8ed103420da21d2460a2"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-049",
+      "title": "Sebut dan tulis waktu",
+      "original_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "5.1.2",
+          "options": [
+            {
+              "lesson": 78,
+              "title": "5.1 Waktu dalam jam dan minit",
+              "sp": "5.1.2 — Menyatakan dan menunjukkan waktu dalam jam dan minit",
+              "objective": "Pada akhir PdP, murid dapat menyatakan dan menunjukkan waktu dalam jam dan minit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "cbca74a4e988759a9fd7749536f4e8d717c3d0866859652975bb412a7ebc45e0"
+            },
+            {
+              "lesson": 79,
+              "title": "5.1 Waktu dalam jam dan minit",
+              "sp": "5.1.2 — Menyatakan dan menunjukkan waktu dalam jam dan minit",
+              "objective": "Pada akhir PdP, murid dapat menyatakan dan menunjukkan waktu dalam jam dan minit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "071632c28e05f6bdce602bebb0645adb8a59c4ad4c79099df099055df7296bee"
+            }
+          ]
+        },
+        {
+          "sp": "5.1.3",
+          "options": [
+            {
+              "lesson": 80,
+              "title": "5.1 Waktu dalam jam dan minit",
+              "sp": "5.1.3 — Menukar waktu dalam jam dan minit daripada perkataan kepada angka dan sebaliknya",
+              "objective": "Pada akhir PdP, murid dapat menukar waktu dalam jam dan minit daripada perkataan kepada angka dan sebaliknya dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "48a2f84118dc4ba76b075acb01f2a0f0fc95da93bc49a1a380bbbe3cb6c856b1"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-01",
+      "title": "Peratus",
+      "original_sp": [
+        "3.3.1",
+        "3.3.2",
+        "3.3.3",
+        "3.3.4"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "3.3.1",
+          "options": [
+            {
+              "lesson": 40,
+              "title": "3.3 Peratus",
+              "sp": "3.3.1 — Menama dan menyebut peratus",
+              "objective": "Pada akhir PdP, murid dapat menama dan menyebut peratus dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "054bf7e776a1b890ff7ee3dc86e593b23ec5de74954199fbce9a184a59467cd3"
+            }
+          ]
+        },
+        {
+          "sp": "3.3.2",
+          "options": [
+            {
+              "lesson": 41,
+              "title": "3.3 Peratus",
+              "sp": "3.3.2 — Mengenal simbol peratus",
+              "objective": "Pada akhir PdP, murid dapat mengenal simbol peratus dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "d0a34530ccd7db4927b5fb4c2a5ef84c123393de8b5b3a487390eb858d079526"
+            }
+          ]
+        },
+        {
+          "sp": "3.3.3",
+          "options": [
+            {
+              "lesson": 42,
+              "title": "3.3 Peratus",
+              "sp": "3.3.3 — Mewakilkan peratus dalam petak seratus dan sebaliknya",
+              "objective": "Pada akhir PdP, murid dapat mewakilkan peratus dalam petak seratus dan sebaliknya dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "518666a3e5048a0490d8a9c1438478ba8a4a8d079e0c04e33693e214f1acf828"
+            }
+          ]
+        },
+        {
+          "sp": "3.3.4",
+          "options": [
+            {
+              "lesson": 43,
+              "title": "3.3 Peratus",
+              "sp": "3.3.4 — Menulis satu peratus hingga seratus peratus",
+              "objective": "Pada akhir PdP, murid dapat menulis satu peratus hingga seratus peratus dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "cc425189b3b6fb1d359c3db8122c1b8a4f09d76f032ab633c1a7215fef6d6b74"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-02",
+      "title": "Simpanan dan pelaburan",
+      "original_sp": [
+        "4.7.1",
+        "4.7.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "4.7.1",
+          "options": [
+            {
+              "lesson": 61,
+              "title": "4.7 Simpanan dan pelaburan",
+              "sp": "4.7.1 — Menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan",
+              "objective": "Pada akhir PdP, murid dapat menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "1fd6cd7cc151bf22c5918f6fa9f4d3f1c0c21caa237b957eab3b63138d036c0b"
+            },
+            {
+              "lesson": 62,
+              "title": "4.7 Simpanan dan pelaburan",
+              "sp": "4.7.1 — Menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan",
+              "objective": "Pada akhir PdP, murid dapat menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "40cc471f930ddb4e9413279d3f4bba8c610cccc5d582be51b749deddc1f53dd9"
+            }
+          ]
+        },
+        {
+          "sp": "4.7.2",
+          "options": [
+            {
+              "lesson": 63,
+              "title": "4.7 Simpanan dan pelaburan",
+              "sp": "4.7.2 — Menjelaskan keperluan menyimpan dan melabur",
+              "objective": "Pada akhir PdP, murid dapat menjelaskan keperluan menyimpan dan melabur dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "d0e03a80d8bb1132c4249074d6bdb59fb5c8cb3363a26872f2a15c228ce207c0"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-03",
+      "title": "Masalah wang hingga RM10 000",
+      "original_sp": [
+        "4.8.1",
+        "4.8.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "4.8.1",
+          "options": [
+            {
+              "lesson": 64,
+              "title": "4.8 Penyelesaian masalah",
+              "sp": "4.8.1 — Mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang",
+              "objective": "Pada akhir PdP, murid dapat mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "99a4f8fa0c9b44009c098fcb7af154329133f095cc22f52a35b6f88ae0086b30"
+            },
+            {
+              "lesson": 65,
+              "title": "4.8 Penyelesaian masalah",
+              "sp": "4.8.1 — Mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang",
+              "objective": "Pada akhir PdP, murid dapat mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "7682246600cee17210888ca465156971d349743d49d95a1ed53a6fd6462bf359"
+            }
+          ]
+        },
+        {
+          "sp": "4.8.2",
+          "options": [
+            {
+              "lesson": 66,
+              "title": "4.8 Penyelesaian masalah",
+              "sp": "4.8.2 — Menyelesaikan masalah wang dalam   lingkungan RM10 000 melibatkan operasi asas   dan operasi bergabung tambah dan tolak",
+              "objective": "Pada akhir PdP, murid dapat menyelesaikan masalah wang dalam lingkungan RM10 000 melibatkan operasi asas dan operasi bergabung tambah dan tolak dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "8f0ce40b7fe30c1951231e13b2b97c49d18ac377005a7723c800513f08de56c9"
+            },
+            {
+              "lesson": 67,
+              "title": "4.8 Penyelesaian masalah",
+              "sp": "4.8.2 — Menyelesaikan masalah wang dalam   lingkungan RM10 000 melibatkan operasi asas   dan operasi bergabung tambah dan tolak",
+              "objective": "Pada akhir PdP, murid dapat menyelesaikan masalah wang dalam lingkungan RM10 000 melibatkan operasi asas dan operasi bergabung tambah dan tolak dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "9d6410d644b424f49f4bb1e0b952694042daa201a20b8c243afc685a26792231"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-04A",
+      "title": "Panjang: penukaran, tambah dan tolak",
+      "original_sp": [
+        "6.1.1",
+        "6.1.2",
+        "6.1.3"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "6.1.1",
+          "options": [
+            {
+              "lesson": 81,
+              "title": "6.1 Panjang",
+              "sp": "6.1.1 — Menukar unit ukuran panjang melibatkan meter dan sentimeter",
+              "objective": "Pada akhir PdP, murid dapat menukar unit ukuran panjang melibatkan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "35b838b01cc256cd7bc774a07858720dd62d75fb6a4331c467ced55c04a810ba"
+            }
+          ]
+        },
+        {
+          "sp": "6.1.2",
+          "options": [
+            {
+              "lesson": 82,
+              "title": "6.1 Panjang",
+              "sp": "6.1.2 — Menyelesaikan ayat matematik tambah hingga tiga ukuran panjang melibatkan meter dan sentimeter",
+              "objective": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik tambah hingga tiga ukuran panjang melibatkan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "e89c851c3988c98ace04b6374414454e195a1dff8b16796e6928e3d5bcdf1fd4"
+            }
+          ]
+        },
+        {
+          "sp": "6.1.3",
+          "options": [
+            {
+              "lesson": 83,
+              "title": "6.1 Panjang",
+              "sp": "6.1.3 — Menyelesaikan ayat matematik tolak ukuran panjang hingga dua nilai dari satu nilai melibatkan meter dan sentimeter",
+              "objective": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik tolak ukuran panjang hingga dua nilai dari satu nilai melibatkan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "9f931a2e78da7dcfea943dfdb174b3627b5ebcb78782d8abe05b4498e61a9be5"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-04B",
+      "title": "Panjang: darab dan bahagi",
+      "original_sp": [
+        "6.1.4",
+        "6.1.5"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "6.1.4",
+          "options": [
+            {
+              "lesson": 84,
+              "title": "6.1 Panjang",
+              "sp": "6.1.4 — Menyelesaikan ayat matematik darab melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter",
+              "objective": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik darab melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "721a6348a0294d2cbdb60c7d510da4c9e61bd496e9190bdbf75f138a11d09ca5"
+            }
+          ]
+        },
+        {
+          "sp": "6.1.5",
+          "options": [
+            {
+              "lesson": 85,
+              "title": "6.1 Panjang",
+              "sp": "6.1.5 — Menyelesaikan ayat matematik bahagi melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter",
+              "objective": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik bahagi melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "3decf205a837bd647cf0ba5595fb017416b39c30a63a4b277bee70e6c2a91b3f"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-05",
+      "title": "Prisma",
+      "original_sp": [
+        "7.1.1",
+        "7.1.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "7.1.1",
+          "options": [
+            {
+              "lesson": 100,
+              "title": "7.1 Prisma",
+              "sp": "7.1.1 — Mengenal prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga",
+              "objective": "Pada akhir PdP, murid dapat mengenal prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "883dbc524e67eb14390743236a36d1b4136fe0c58fed5a8e156cdc7589f68f32"
+            }
+          ]
+        },
+        {
+          "sp": "7.1.2",
+          "options": [
+            {
+              "lesson": 101,
+              "title": "7.1 Prisma",
+              "sp": "7.1.2 — Mencirikan prisma dan melabelkan prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga berdasarkan permukaan, tapak, bucu dan tepi.",
+              "objective": "Pada akhir PdP, murid dapat mencirikan prisma dan melabelkan prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga berdasarkan permukaan, tapak, bucu dan tepi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "e898cf44fd39b869822f5ba794fd996480a2318dc017e5771a9f880b180459ae"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-06",
+      "title": "Poligon sekata dan corak",
+      "original_sp": [
+        "7.3.1",
+        "7.3.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "7.3.1",
+          "options": [
+            {
+              "lesson": 103,
+              "title": "7.3 Poligon sekata",
+              "sp": "7.3.1 — Mengenal pasti bentuk poligon sekata bagi pentagon, heksagon, heptagon dan oktagon",
+              "objective": "Pada akhir PdP, murid dapat mengenal pasti bentuk poligon sekata bagi pentagon, heksagon, heptagon dan oktagon dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "415aa08a3a802b07b42c54cb0465f8bf6b169b71a51c193f1c014e062f3c522a"
+            }
+          ]
+        },
+        {
+          "sp": "7.3.2",
+          "options": [
+            {
+              "lesson": 104,
+              "title": "7.3 Poligon sekata",
+              "sp": "7.3.2 — Menghasilkan corak berasaskan bentuk poligon sekata",
+              "objective": "Pada akhir PdP, murid dapat menghasilkan corak berasaskan bentuk poligon sekata dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "49e2cb9b606a334a617a6d6288339163c01e52632531b971f3fc57f73b532451"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-07",
+      "title": "Koordinat sukuan pertama",
+      "original_sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "8.1.1",
+          "options": [
+            {
+              "lesson": 108,
+              "title": "8.1 Koordinat pada sukuan pertama",
+              "sp": "8.1.1 — Mengenal pasti kedudukan objek berdasarkan titik rujukan dengan menggunakan perbendaharaan kata yang sesuai",
+              "objective": "Pada akhir PdP, murid dapat mengenal pasti kedudukan objek berdasarkan titik rujukan dengan menggunakan perbendaharaan kata yang sesuai dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "8e2f2f056c1f10d215363eb6d3c72d7819a770e45322564a3d88dac00041cc01"
+            }
+          ]
+        },
+        {
+          "sp": "8.1.2",
+          "options": [
+            {
+              "lesson": 109,
+              "title": "8.1 Koordinat pada sukuan pertama",
+              "sp": "8.1.2 — Menamakan objek berdasarkan kedudukan pada paksi mengufuk dan paksi mencancang",
+              "objective": "Pada akhir PdP, murid dapat menamakan objek berdasarkan kedudukan pada paksi mengufuk dan paksi mencancang dengan sekurang-kurangnya 3 daripada 4 jawapan tepat.",
+              "source_reported_sha256": "b7e82b1be7c58f02bb6d1ad4eb55cddf0ae4db1b1ab8bf4bbf1322d339e123d9"
+            }
+          ]
+        },
+        {
+          "sp": "8.1.3",
+          "options": [
+            {
+              "lesson": 110,
+              "title": "8.1 Koordinat pada sukuan pertama",
+              "sp": "8.1.3 — Menentukan kedudukan objek pada paksi mengufuk dan paksi mencancang",
+              "objective": "Pada akhir PdP, murid dapat menentukan kedudukan objek pada paksi mengufuk dan paksi mencancang dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "2caa047c0454e3fb40c90f4ffd98021a1eea84b204ba092b2b2796a3641b6908"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-005A",
+      "title": "Pola nombor",
+      "original_sp": [
+        "1.5.1",
+        "1.5.2"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "1.5.1",
+          "options": [
+            {
+              "lesson": 7,
+              "title": "1.5 Pola nombor",
+              "sp": "1.5.1 — Mengenal pasti pola bagi siri nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus- seratus, seribu-seribu, sepuluh ribu-sepuluh ribu dan seratus ribu-seratus ribu.",
+              "objective": "Pada akhir PdP, murid dapat mengenal pasti pola bagi siri nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus- seratus, seribu-seribu, sepuluh ribu-sepuluh ribu dan seratus ribu-seratus ribu dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "9631c65d858c5a7133476e412854b47bf5f4bbdc71e7a71a847c78b6b1994559"
+            }
+          ]
+        },
+        {
+          "sp": "1.5.2",
+          "options": [
+            {
+              "lesson": 8,
+              "title": "1.5 Pola nombor",
+              "sp": "1.5.2 — Melengkapkan pelbagai pola nombor yang diberi secara tertib menaik dan menurun",
+              "objective": "Pada akhir PdP, murid dapat melengkapkan pelbagai pola nombor yang diberi secara tertib menaik dan menurun dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "1a59b53da6fe68b6a78bb1743c19f4d579213187864d84f11b82dcb71ddf4a41"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-023C",
+      "title": "Tambah dan tolak panjang",
+      "original_sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "5.1.3",
+          "options": [
+            {
+              "lesson": 72,
+              "title": "5.1 Panjang",
+              "sp": "5.1.3 — Menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "4c365e535d85b0dbbbe44cbedc810e7212e34472f778c4cc6c3ecc0d7a20d1f1"
+            },
+            {
+              "lesson": 73,
+              "title": "5.1 Panjang",
+              "sp": "5.1.3 — Menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "298133480aa942a9de1a54bd4565a89b8971475524bdf3d61463bce89d00f656"
+            }
+          ]
+        },
+        {
+          "sp": "5.1.4",
+          "options": [
+            {
+              "lesson": 74,
+              "title": "5.1 Panjang",
+              "sp": "5.1.4 — Menolak melibatkan hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "82f6ecf5ba188a86a2714406b58b95aeb58536de4485e986ae97e935d8f7f59c"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-023D",
+      "title": "Darab dan bahagi panjang",
+      "original_sp": [
+        "5.1.5",
+        "5.1.6"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "5.1.5",
+          "options": [
+            {
+              "lesson": 75,
+              "title": "5.1 Panjang",
+              "sp": "5.1.5 — Mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "a142f8f2d3e4371dd94269d38b1beb59604e32f8e6356b6ec821e3067d2b8e97"
+            },
+            {
+              "lesson": 76,
+              "title": "5.1 Panjang",
+              "sp": "5.1.5 — Mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "0d31abf9b63803779788c8a0564598b6b6be323543b1915b4cd8d3e8ea8240ac"
+            }
+          ]
+        },
+        {
+          "sp": "5.1.6",
+          "options": [
+            {
+              "lesson": 77,
+              "title": "5.1 Panjang",
+              "sp": "5.1.6 — Membahagi ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat membahagi ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "2e148ed54da23d19ce6236a9f2a4708b7692e603ce9f1165d023072892a18a8b"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-024B",
+      "title": "Tambah dan tolak jisim",
+      "original_sp": [
+        "5.2.2",
+        "5.2.3"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "5.2.2",
+          "options": [
+            {
+              "lesson": 80,
+              "title": "5.2 Jisim",
+              "sp": "5.2.2 — Menambah hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menambah hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "1cabf7064536a6b1de60d05c0a27be8f3acc476ea0bf96b24679db3c15d19c59"
+            }
+          ]
+        },
+        {
+          "sp": "5.2.3",
+          "options": [
+            {
+              "lesson": 81,
+              "title": "5.2 Jisim",
+              "sp": "5.2.3 — Menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "579270a53d1cef19270bcbdffb033dc80f444a104d0e3665611dd898087c09af"
+            },
+            {
+              "lesson": 82,
+              "title": "5.2 Jisim",
+              "sp": "5.2.3 — Menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "0e5432512a86fd79ff3645555f0b274196c0c44f2048aaae25cd10b865fe5afe"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-024C",
+      "title": "Darab dan bahagi jisim",
+      "original_sp": [
+        "5.2.4",
+        "5.2.5"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "5.2.4",
+          "options": [
+            {
+              "lesson": 83,
+              "title": "5.2 Jisim",
+              "sp": "5.2.4 — Mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan.",
+              "objective": "Pada akhir PdP, murid dapat mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "49ca55689f370a4611d502d348219002391c926843ce01048f3ec3f840c30ffa"
+            },
+            {
+              "lesson": 84,
+              "title": "5.2 Jisim",
+              "sp": "5.2.4 — Mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan.",
+              "objective": "Pada akhir PdP, murid dapat mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "9945012c9e338ec1312229848d6620975ff549a35f6c0fcfccab4fc577c5eeff"
+            }
+          ]
+        },
+        {
+          "sp": "5.2.5",
+          "options": [
+            {
+              "lesson": 85,
+              "title": "5.2 Jisim",
+              "sp": "5.2.5 — Membahagi jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat membahagi jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "411e36ed97fb1e27a75992a0ac6c3c8f1dabebba5cf26a3fb61e77fed63a4cd2"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-025B",
+      "title": "Tambah dan tolak isi padu cecair",
+      "original_sp": [
+        "5.3.2",
+        "5.3.3"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "5.3.2",
+          "options": [
+            {
+              "lesson": 88,
+              "title": "5.3 Isi padu cecair",
+              "sp": "5.3.2 — Menambah hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menambah hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "d5ccf17a6b92d25316488ef10b0559aa59bb499957ada615b8ac16b5654532db"
+            }
+          ]
+        },
+        {
+          "sp": "5.3.3",
+          "options": [
+            {
+              "lesson": 89,
+              "title": "5.3 Isi padu cecair",
+              "sp": "5.3.3 — Menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "ab99f1aff9d899d09193bcc2feef89b115c47612ee69c33f6f236a5b6fc82313"
+            },
+            {
+              "lesson": 90,
+              "title": "5.3 Isi padu cecair",
+              "sp": "5.3.3 — Menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "7f680c32177db50d8fa199c8c812730408543abdd10603a882765d325189e1dd"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-025C",
+      "title": "Darab dan bahagi isi padu cecair",
+      "original_sp": [
+        "5.3.4",
+        "5.3.5"
+      ],
+      "status": "ALL_SP_PRESENT_ACROSS_MULTIPLE_LESSONS",
+      "missing": [],
+      "coverage": [
+        {
+          "sp": "5.3.4",
+          "options": [
+            {
+              "lesson": 91,
+              "title": "5.3 Isi padu cecair",
+              "sp": "5.3.4 — Mendarab isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat mendarab isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "9067deafba87d41f66107fef2f43085bb34cbf0593b515c10cc9e5bfad523fd7"
+            }
+          ]
+        },
+        {
+          "sp": "5.3.5",
+          "options": [
+            {
+              "lesson": 92,
+              "title": "5.3 Isi padu cecair",
+              "sp": "5.3.5 — Membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "7f4ab3f250248316eff06f31843acc32b5bbcf080ab3c0b4310a3291149e7e00"
+            },
+            {
+              "lesson": 93,
+              "title": "5.3 Isi padu cecair",
+              "sp": "5.3.5 — Membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+              "objective": "Pada akhir PdP, murid dapat membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+              "source_reported_sha256": "68324a6f33e2d6ddb031d4074a18aecfdc63d702447a57ce44b2dfe5d9f66e5e"
+            }
+          ]
+        }
+      ],
+      "ready": false
+    }
+  ],
+  "policy": "All-SP coverage across distinct source lessons is not a one-to-one mapping. Split and rewrite 5P phases only after confirming exact original lesson objectives, scope and actual delivery catalogue. Never modify source RPT, invent SP or merge lessons. Missing codes require correct curriculum edition/source verification. Source pack size and Adler32 verified; SHA256 reported, not recomputed. No publication."
+}
