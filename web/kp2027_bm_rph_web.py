@@ -10,10 +10,11 @@ import os
 from flask import Blueprint, jsonify, request, send_file
 
 from web import kp2027_bm_rpt_aligned as bm
+from web import kp2027_bm_5p_release as release
 
 
 def five_p_enabled():
-    return os.environ.get("CIKGULAJU_BM_KP2027_5P_ENABLED") == "1"
+    return any(release.released_groups().values())
 from web.kp2027_math_canary_web import ORIGIN, debit_shared_trial
 from web.kp2027_pilot_teacher_fields import EXTRA_FIELDS, TeacherFieldError
 from web.rph_delivery_quota import authorize_rendered_document, has_active_paid_access
@@ -56,6 +57,7 @@ def create_blueprint():
         if not bm.ready():
             return error("Sumber RPH Bahasa Melayu SK masih dalam semakan.",503,"BM_SOURCE_UNAVAILABLE")
         records=bm.approved_source()
+        five_p_groups=release.released_groups()
         return jsonify({
             "groups":{g:list(range(1,bm.COUNTS[g]+1)) for g in ("A","B")},
             "items":{g:[
@@ -66,7 +68,8 @@ def create_blueprint():
             ] for g in ("A","B")},
             "source":"kp2027-bm-sk-rpt2027-353-verified",
             "academic_status":"SEMAKAN PELAKSANAAN",
-            "rph_variants":["lengkap","5p"] if five_p_enabled() else ["lengkap"],
+            "rph_variants":["lengkap","5p"] if any(five_p_groups.values()) else ["lengkap"],
+            "five_p_groups":five_p_groups,
         })
 
     @bp.post("/api/kp2027/sk/tahun-1/bahasa-melayu-sk/download")
@@ -81,7 +84,7 @@ def create_blueprint():
             return error("Pilihan PdP atau maklumat RPH tidak lengkap.",400,"INVALID_SELECTION")
         group,number,fmt=payload["group"],payload["lesson"],payload["format"]
         variant=payload.get("rph_variant","lengkap")
-        if variant not in ("lengkap","5p") or (variant=="5p" and not five_p_enabled()):
+        if variant not in ("lengkap","5p") or (variant=="5p" and not release.is_released(group,number)):
             return error("Pilihan format RPH belum tersedia.",404,"RPH_VARIANT_UNAVAILABLE")
         try:
             if fmt not in bm.FMTS:raise bm.Unavailable("Format tidak sah")
@@ -101,7 +104,7 @@ def create_blueprint():
             fields={k:payload[k] for k in EXTRA_FIELDS if k in payload}
             if variant=="5p":
                 from web import kp2027_bm_5p
-                output=kp2027_bm_5p.render(group,number,fmt,fields)
+                output=kp2027_bm_5p.render(group,number,fmt,fields,reviewed=True)
             else:
                 output=bm.render(group,number,fmt,fields)
         except TeacherFieldError as exc:
