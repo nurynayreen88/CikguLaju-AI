@@ -8,7 +8,17 @@ from docx import Document
 import fitz
 from web import kp2027_bm_rpt_aligned as bm, kp2027_bm_5p as five, kp2027_bm_rph_web as web
 
+from web import kp2027_bm_5p_release as release
+
 class TestFiveP(unittest.TestCase):
+    def setUp(self):
+        # Simulate a single approved release without changing the real review bank.
+        records=release.reviewed_records()
+        approved={key:dict(row) for key,row in records.items()}
+        approved['A',1].update(ready=True,status='APPROVED_FOR_RELEASE')
+        patcher=patch.object(release,'reviewed_records',return_value=approved)
+        patcher.start()
+        self.addCleanup(patcher.stop)
     def test_complete_and_native_pdf(self):
         self.assertEqual(len(five.companions()),353)
         for g,count in bm.COUNTS.items():
@@ -46,7 +56,12 @@ class TestFiveP(unittest.TestCase):
         payload={"group":"A","lesson":1,"format":"word","rph_variant":"5p"}
         origin={"Origin":web.ORIGIN}
         with patch.dict(os.environ,{"CIKGULAJU_BM_KP2027_5P_ENABLED":"1"}),patch.object(web,"_config",return_value={"account_backend":"supabase","CIKGULAJU_WEB_SESSION_SECRET":"s"*40,"supabase_url":"https://example.supabase.co","supabase_key":"unused"}),patch.object(web,"verify_session_ticket",return_value=42),patch.object(web,"_lookup",return_value={"telegram_user_id":42,"authenticated":True,"free_remaining":10,"rakan_pembangun":True}),patch.object(web,"debit_shared_trial") as debit:
-            self.assertIn("5p",c.get(url+"/available").get_json()["rph_variants"])
+            catalog=c.get(url+"/available").get_json()
+            self.assertIn("5p",catalog["rph_variants"])
+            self.assertEqual(catalog["five_p_groups"],{"A":[1],"B":[]})
+            self.assertEqual(c.post(url+"/download",json={**payload,"lesson":2},headers=origin).status_code,404)
+            self.assertEqual(c.post(url+"/download",json={**payload,"group":"B"},headers=origin).status_code,404)
+            self.assertFalse(debit.called)
             self.assertEqual(c.post(url+"/download",json=payload).status_code,403)
             out=c.post(url+"/download",json=payload,headers=origin)
             self.assertEqual(out.status_code,200)
