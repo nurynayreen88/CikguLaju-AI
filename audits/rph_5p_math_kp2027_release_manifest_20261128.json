@@ -1,5 +1,5 @@
 {
-  "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+  "status": "APPROVED_FOR_PHASED_RELEASE_SEMAKAN_PELAKSANAAN",
   "total": 249,
   "source_blobs": {
     "audits/rph_5p_math_kp2027_t1_individual_source_audit_20261127.json": "ad1906d6f6392bc9f94e8dd57b08393e10e74fc4",
@@ -9,7 +9,7 @@
     "audits/rph_5p_math_kp2027_source_fields_20261127.json": "83cd08a87ce923b326301ea3032130b9e35cdb6b",
     "web/kp2027_math_v11_catalog.json": "af8fb413c5d84eb9433abd6728b75d2db8056592"
   },
-  "limitations": "Source identity and existing audit evidence only. Actual final print, visual and pedagogical approval pending. No release permission granted.",
+  "limitations": "Internal publication review only; not official academic endorsement. Sampled visual inspection; actual authenticated production delivery unverified. Availability must intersect original approved private pairs.",
   "records": [
     {
       "group": "A",
@@ -19,8 +19,8 @@
       "source_pdf_sha256": "290ee8564aff5f89df7aa7c09c4a34e4e55a1d13b5db8aa2ca7d7051bcf8edde",
       "dk_printed_page": 22,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membilang, menyebut dan menulis nombor 1–9 berdasarkan sembilan kad kuantiti rawak; guru semak angka dan padanan."
     },
     {
@@ -31,8 +31,8 @@
       "source_pdf_sha256": "554c6a0ef1f1bd082a346c816180594749670a027ca24ef5fa3fc2b5a7411c40",
       "dk_printed_page": 22,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membilang, menyebut dan menulis nombor 1–9 berdasarkan sembilan kad kuantiti rawak; guru semak angka dan padanan."
     },
     {
@@ -43,8 +43,8 @@
       "source_pdf_sha256": "adbe0b79de195b090517a7c20a2d75789358cc1dc58808f5cff4e606717f97e1",
       "dk_printed_page": 22,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membilang, menyebut dan menulis nombor 1–9 berdasarkan sembilan kad kuantiti rawak; guru semak angka dan padanan."
     },
     {
@@ -55,8 +55,8 @@
       "source_pdf_sha256": "8947b18f3d5e3f1a0fd75d8c12e20dba4f3abca5b9f6252b03e28f95719fcafc",
       "dk_printed_page": 22,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membilang, menyebut dan menulis nombor 1–9 berdasarkan sembilan kad kuantiti rawak; guru semak angka dan padanan."
     },
     {
@@ -67,8 +67,8 @@
       "source_pdf_sha256": "3656828726aa2599240666ca576281252517bb2bf267fbe93c9e89cec983c6da",
       "dk_printed_page": 26,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membandingkan kumpulan 6 dan 6, 4 dan 7, serta 9 dan 5 menggunakan pembilang; sebut sama banyak, kurang daripada atau lebih daripada dengan tepat."
     },
     {
@@ -79,8 +79,8 @@
       "source_pdf_sha256": "b38bb81aae40a91021d67553411821f1a181c4b378157e1cdba4cbddfe4eafa5",
       "dk_printed_page": 26,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membandingkan kumpulan 6 dan 6, 4 dan 7, serta 9 dan 5 menggunakan pembilang; sebut sama banyak, kurang daripada atau lebih daripada dengan tepat."
     },
     {
@@ -91,8 +91,8 @@
       "source_pdf_sha256": "aa94a2c12eaa588bfcd3b7a96d26f4e2a27ffdc404a47aab44a40addbf1f864f",
       "dk_printed_page": 26,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membandingkan kumpulan 6 dan 6, 4 dan 7, serta 9 dan 5 menggunakan pembilang; sebut sama banyak, kurang daripada atau lebih daripada dengan tepat."
     },
     {
@@ -103,8 +103,8 @@
       "source_pdf_sha256": "cfc74869936c9b7b6a2a5f9b0ba20d26f78063e51176c2f24beb22377d57e881",
       "dk_printed_page": 26,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membandingkan kumpulan 6 dan 6, 4 dan 7, serta 9 dan 5 menggunakan pembilang; sebut sama banyak, kurang daripada atau lebih daripada dengan tepat."
     },
     {
@@ -115,8 +115,8 @@
       "source_pdf_sha256": "71392889de9372a6a17b9890496561d6ae6e1d34d49db5f0ad5f3aff9c32e160",
       "dk_printed_page": 28,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyusun lima kad nombor 23, 21, 25, 22, 24 dalam tertib menaik dan menurun pada garis nombor."
     },
     {
@@ -127,8 +127,8 @@
       "source_pdf_sha256": "a6e00582b5088cab3dc9f1d3d8166f29551580eb81f03cdc59c896ef99126cf4",
       "dk_printed_page": 28,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyusun lima kad nombor 23, 21, 25, 22, 24 dalam tertib menaik dan menurun pada garis nombor."
     },
     {
@@ -139,8 +139,8 @@
       "source_pdf_sha256": "742f8c872ffd8af785d0991d51cb7263d9b05d56d20eeeeb7a4661d6f6711102",
       "dk_printed_page": 28,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyusun lima kad nombor 23, 21, 25, 22, 24 dalam tertib menaik dan menurun pada garis nombor."
     },
     {
@@ -151,8 +151,8 @@
       "source_pdf_sha256": "ca09032d8c8a5b4f6436393cb060947bfc68a7a34f7e38621dc1e6edb9a876b3",
       "dk_printed_page": 28,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyusun lima kad nombor 23, 21, 25, 22, 24 dalam tertib menaik dan menurun pada garis nombor."
     },
     {
@@ -163,8 +163,8 @@
       "source_pdf_sha256": "c0829773578125943a9e65455d44ceb87ceaa0ecae536fbeb28343a061c33180",
       "dk_printed_page": 31,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyatakan kedudukan ke-1, ke-3, ke-4, ke-6, ke-8 dan ke-10 pada barisan; sekurang-kurangnya lima tepat."
     },
     {
@@ -175,8 +175,8 @@
       "source_pdf_sha256": "f45d9a43069f60227ea9b18470c97adf84f00b6c329584eebede6a80e705522c",
       "dk_printed_page": 31,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyatakan kedudukan ke-1, ke-3, ke-4, ke-6, ke-8 dan ke-10 pada barisan; sekurang-kurangnya lima tepat."
     },
     {
@@ -187,8 +187,8 @@
       "source_pdf_sha256": "670ef8382d48f3b6e55f57731501c1dcbfbda7ee3ba7eb6ccad46f13f92184de",
       "dk_printed_page": 31,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyatakan kedudukan ke-1, ke-3, ke-4, ke-6, ke-8 dan ke-10 pada barisan; sekurang-kurangnya lima tepat."
     },
     {
@@ -199,8 +199,8 @@
       "source_pdf_sha256": "e18d2380f3f5a2ef8733730877f9443c4170c520cdf6f9453966d48d92bed9fe",
       "dk_printed_page": 31,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyatakan kedudukan ke-1, ke-3, ke-4, ke-6, ke-8 dan ke-10 pada barisan; sekurang-kurangnya lima tepat."
     },
     {
@@ -211,8 +211,8 @@
       "source_pdf_sha256": "0a3aa6ca098aeb770fcb5a19a140eef0733661d7eee972c7192c184a9f0b6fa0",
       "dk_printed_page": 33,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membina dan menerangkan tiga ikatan bagi nombor 7 menggunakan pembilang; guru menyemak jumlah kedua-dua bahagian."
     },
     {
@@ -223,8 +223,8 @@
       "source_pdf_sha256": "6a31acd6e3356a460c69a890d24b2b6acb11cdab99a4bba6f5a4230e84099aac",
       "dk_printed_page": 33,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membina dan menerangkan tiga ikatan bagi nombor 7 menggunakan pembilang; guru menyemak jumlah kedua-dua bahagian."
     },
     {
@@ -235,8 +235,8 @@
       "source_pdf_sha256": "b63ed9e7cf8ce78343e982c6f70b6c8e85ec0ab64da1be15e3ec5045d683c390",
       "dk_printed_page": 33,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membina dan menerangkan tiga ikatan bagi nombor 7 menggunakan pembilang; guru menyemak jumlah kedua-dua bahagian."
     },
     {
@@ -247,8 +247,8 @@
       "source_pdf_sha256": "9fd0bbc9dbc694ff2d316e7fa1b9df265cc5e0cc8b0933c6a766d60d91e6fdcb",
       "dk_printed_page": 33,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membina dan menerangkan tiga ikatan bagi nombor 7 menggunakan pembilang; guru menyemak jumlah kedua-dua bahagian."
     },
     {
@@ -259,8 +259,8 @@
       "source_pdf_sha256": "327f50c3c17c3afa94475f3d3ebb35de550c30b06d4e22c0ad9ceee6e21c81e5",
       "dk_printed_page": 22,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membilang, menyebut dan menulis nombor 1–9 berdasarkan sembilan kad kuantiti rawak; guru semak angka dan padanan."
     },
     {
@@ -271,8 +271,8 @@
       "source_pdf_sha256": "12f8a5dfc0393a55ddc0e10cffe5e0af709846b8aa0091f9b7a03b92c86ec982",
       "dk_printed_page": 22,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membilang, menyebut dan menulis nombor 1–9 berdasarkan sembilan kad kuantiti rawak; guru semak angka dan padanan."
     },
     {
@@ -283,8 +283,8 @@
       "source_pdf_sha256": "6f9fbaea88867112fea899b82bbb80637c2c31f9afb3a8196273ad922ca230cb",
       "dk_printed_page": 22,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membilang, menyebut dan menulis nombor 1–9 berdasarkan sembilan kad kuantiti rawak; guru semak angka dan padanan."
     },
     {
@@ -295,8 +295,8 @@
       "source_pdf_sha256": "071173ff5beae98609d7e39cf46bc8952fbbd0e2e1db05ea76b88a3ea6c307b9",
       "dk_printed_page": 22,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membilang, menyebut dan menulis nombor 1–9 berdasarkan sembilan kad kuantiti rawak; guru semak angka dan padanan."
     },
     {
@@ -307,8 +307,8 @@
       "source_pdf_sha256": "38c782596338b35fb0153915869a6578142532a58bd97dbe6adce725a6d413c9",
       "dk_printed_page": 26,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membandingkan kumpulan 6 dan 6, 4 dan 7, serta 9 dan 5 menggunakan pembilang; sebut sama banyak, kurang daripada atau lebih daripada dengan tepat."
     },
     {
@@ -319,8 +319,8 @@
       "source_pdf_sha256": "d9f34e0204df1efe6ac9c21cb8f9ab67eb04bde1e5e42d57d7bda088e1d0d6ee",
       "dk_printed_page": 26,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membandingkan kumpulan 6 dan 6, 4 dan 7, serta 9 dan 5 menggunakan pembilang; sebut sama banyak, kurang daripada atau lebih daripada dengan tepat."
     },
     {
@@ -331,8 +331,8 @@
       "source_pdf_sha256": "7e86fceb7108bdbd72f00ec7104e598b71818505c98a1981943fe2ada4916875",
       "dk_printed_page": 26,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membandingkan kumpulan 6 dan 6, 4 dan 7, serta 9 dan 5 menggunakan pembilang; sebut sama banyak, kurang daripada atau lebih daripada dengan tepat."
     },
     {
@@ -343,8 +343,8 @@
       "source_pdf_sha256": "67042b4cd98c9003d9a07932b16c4510e600c8979a15fc5c83a5e1da5f7f7c9a",
       "dk_printed_page": 26,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membandingkan kumpulan 6 dan 6, 4 dan 7, serta 9 dan 5 menggunakan pembilang; sebut sama banyak, kurang daripada atau lebih daripada dengan tepat."
     },
     {
@@ -355,8 +355,8 @@
       "source_pdf_sha256": "f66912a487361bdb9080cef068458f7015134e7fc57d3a267de22552722c8cf8",
       "dk_printed_page": 28,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyusun lima kad nombor 23, 21, 25, 22, 24 dalam tertib menaik dan menurun pada garis nombor."
     },
     {
@@ -367,8 +367,8 @@
       "source_pdf_sha256": "7efa2f68e74eb3e7f148306d3ba1018503ad36f19b5123e7695afa860cd276ec",
       "dk_printed_page": 28,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyusun lima kad nombor 23, 21, 25, 22, 24 dalam tertib menaik dan menurun pada garis nombor."
     },
     {
@@ -379,8 +379,8 @@
       "source_pdf_sha256": "1a70f23ec1a91086c125153ce87782a77e7b3a059d27d1b374bbdc00d90ce43f",
       "dk_printed_page": 28,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyusun lima kad nombor 23, 21, 25, 22, 24 dalam tertib menaik dan menurun pada garis nombor."
     },
     {
@@ -391,8 +391,8 @@
       "source_pdf_sha256": "1df1eb0bb056cf06dac3a95cb0d0bf2a69932c82fa53e417f6577e920550858a",
       "dk_printed_page": 28,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyusun lima kad nombor 23, 21, 25, 22, 24 dalam tertib menaik dan menurun pada garis nombor."
     },
     {
@@ -403,8 +403,8 @@
       "source_pdf_sha256": "7a16c2f21a7bdc0c43ff753f4e0bf314455c22118a43ba29cdfdc9a56f18ee15",
       "dk_printed_page": 31,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyatakan kedudukan ke-1, ke-3, ke-4, ke-6, ke-8 dan ke-10 pada barisan; sekurang-kurangnya lima tepat."
     },
     {
@@ -415,8 +415,8 @@
       "source_pdf_sha256": "a090c0700563e138d3fcc119d6eb47d78a5492d071c58dd4524a21c1416bf91e",
       "dk_printed_page": 31,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyatakan kedudukan ke-1, ke-3, ke-4, ke-6, ke-8 dan ke-10 pada barisan; sekurang-kurangnya lima tepat."
     },
     {
@@ -427,8 +427,8 @@
       "source_pdf_sha256": "699fa7066535854245ec002e922225ea449f3d0d50a136931610eb1845976dc6",
       "dk_printed_page": 31,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyatakan kedudukan ke-1, ke-3, ke-4, ke-6, ke-8 dan ke-10 pada barisan; sekurang-kurangnya lima tepat."
     },
     {
@@ -439,8 +439,8 @@
       "source_pdf_sha256": "8a8114a6c48db545293c7418e37e3811241541e48a7749a9ebe8e52a55d6f071",
       "dk_printed_page": 31,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menyatakan kedudukan ke-1, ke-3, ke-4, ke-6, ke-8 dan ke-10 pada barisan; sekurang-kurangnya lima tepat."
     },
     {
@@ -451,8 +451,8 @@
       "source_pdf_sha256": "6f0f0c940d3c99745a67e7aaaa89d78ad52cff4f5149f205cf70f8dc138da250",
       "dk_printed_page": 33,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membina dan menerangkan tiga ikatan bagi nombor 7 menggunakan pembilang; guru menyemak jumlah kedua-dua bahagian."
     },
     {
@@ -463,8 +463,8 @@
       "source_pdf_sha256": "a3a158897cc8464b40e3349ef5a69958764d19a1a1c4024bb64b33fd8512aa3c",
       "dk_printed_page": 33,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membina dan menerangkan tiga ikatan bagi nombor 7 menggunakan pembilang; guru menyemak jumlah kedua-dua bahagian."
     },
     {
@@ -475,8 +475,8 @@
       "source_pdf_sha256": "af159dc1c75ae97b7a9cd8a4b568887e157214df98b63b1a65ce14b028a62653",
       "dk_printed_page": 33,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membina dan menerangkan tiga ikatan bagi nombor 7 menggunakan pembilang; guru menyemak jumlah kedua-dua bahagian."
     },
     {
@@ -487,8 +487,8 @@
       "source_pdf_sha256": "b0db1720eeb45c3fbed4d458fb6189ffe58513e4b10ca00c306922430d7d2167",
       "dk_printed_page": 33,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid membina dan menerangkan tiga ikatan bagi nombor 7 menggunakan pembilang; guru menyemak jumlah kedua-dua bahagian."
     },
     {
@@ -499,8 +499,8 @@
       "source_pdf_sha256": "b78325bd9b2be080d0eb4170c6a820392d5b90d89a6af1c583787b61516043ab",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -511,8 +511,8 @@
       "source_pdf_sha256": "9a748a6c703f9dcd96ac0686d414e0ba6dbf390ebfb771c8e4c60443aba6f843",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -523,8 +523,8 @@
       "source_pdf_sha256": "246db2136d798e356a1bd54b192587b5feccd8f491e6ae67c8587879933c1d0d",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -535,8 +535,8 @@
       "source_pdf_sha256": "c8ab608037838e2d891e9727fe956b37636e3e3a47148d7e0e49cebb9834725c",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -547,8 +547,8 @@
       "source_pdf_sha256": "2906142a42f76cf949e3b46c65d2c99a6fc24c7522ff3b5121892d8ff0f675b9",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -559,8 +559,8 @@
       "source_pdf_sha256": "9151de5817291c001bb7331c70a12e30d879a0d245517be9c867f076be62b4ec",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -571,8 +571,8 @@
       "source_pdf_sha256": "6644b4f3078e93fcc82f2b0cc536457e031788d4a92e797b85fdfe81df44fcfd",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -583,8 +583,8 @@
       "source_pdf_sha256": "1183d84aae2036b2a2f68f9c814f02b648fa80ecb8064581e0706c2bd78588fd",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -595,8 +595,8 @@
       "source_pdf_sha256": "405aeb1b92eafff84a3582ea8d2bad6c10c42b2c8360d933c9418f3c5b210e5f",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -607,8 +607,8 @@
       "source_pdf_sha256": "6fb36147cec8ac38b2fa9f46e49734111b309d790b3392ca0fea372d356e5e00",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -619,8 +619,8 @@
       "source_pdf_sha256": "06656904e2cb6ff40d11788efc0f72ae56994592fc7a254126c36570f3bd6133",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -631,8 +631,8 @@
       "source_pdf_sha256": "84c47473e08f1698e2099919c706b92b55def868855bee83e0767d4d6f2501bf",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -643,8 +643,8 @@
       "source_pdf_sha256": "ae79f0f9ff22afc46fc92e0d8ee56b3a2b183008f8a8918200d8c5d9137aaafb",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -655,8 +655,8 @@
       "source_pdf_sha256": "913c6e56ee566f0e342638c497430fa63f165af92b22f0fd9564f12f97f4f537",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -667,8 +667,8 @@
       "source_pdf_sha256": "603bcfd0ddd16c056a921904ec865e77801e8139ff261e25352b632cee58980f",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -679,8 +679,8 @@
       "source_pdf_sha256": "c25aa0dca207fc2fd8993daa55a1e83aef6549fb0d85febdc062d84d5ed8067c",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -691,8 +691,8 @@
       "source_pdf_sha256": "016b2f29e6c70b051ebed97408993ed8aae18b43455e219c0aae8fda0a148753",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -703,8 +703,8 @@
       "source_pdf_sha256": "66774c6006b315f07d03a216b4319f94b5ed195b2a198f2f8646c5b6a198e146",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -715,8 +715,8 @@
       "source_pdf_sha256": "431934259889f642746dab6633c83db80458f160cf75c231bdcd918b0a547341",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -727,8 +727,8 @@
       "source_pdf_sha256": "1588c61b4a2da08b793f20ffe0b67f49ef63b60961a47d30471f12272758fc31",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -739,8 +739,8 @@
       "source_pdf_sha256": "50b041ce488886e8b2b3625dbde99d0b44a6983a88846fb2a143fccf5fced4d4",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -751,8 +751,8 @@
       "source_pdf_sha256": "98522948ea18caec30c24a7f16778a24f184c936213af39c6d5baa846674da72",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -763,8 +763,8 @@
       "source_pdf_sha256": "6cd46a31ee7969feb6f7a79768d0cfab3ec840aa7f0dad37018159fd4dc5d7af",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -775,8 +775,8 @@
       "source_pdf_sha256": "946668368e43c11d50926c0a039108877dbc137b9b89b04f348894a76656e5b7",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -787,8 +787,8 @@
       "source_pdf_sha256": "a51c2b673b79c5a7b24cd3cb114a4bf2af5d61e7a315f77065a0442c399b76d0",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -799,8 +799,8 @@
       "source_pdf_sha256": "7c4dc2761f1ab8ad35922c80727449cfc32a9af4da3028aa523893541e914381",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -811,8 +811,8 @@
       "source_pdf_sha256": "b7e0da22f3a8f27ea7dda473a250322aab30d5b26110e7ccb35718a81550b3d0",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -823,8 +823,8 @@
       "source_pdf_sha256": "7285bb97c041bb44d6c15c340fbe9cd3bb69bda8a60870186da2dc57f27c0ef9",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -835,8 +835,8 @@
       "source_pdf_sha256": "ff7f2df42b73545ef3308ccd1d7a03f3f8cb0e222279152b23eb51942e5e047b",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -847,8 +847,8 @@
       "source_pdf_sha256": "a9d3a8d26230821e91d21618dca938c0e46675e71c7f0b23ca853544baa394cc",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -859,8 +859,8 @@
       "source_pdf_sha256": "afd39065c984a2d50e71222187042eb6e06dcce8d5ac547f71cbf0f5ca10699e",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -871,8 +871,8 @@
       "source_pdf_sha256": "7d518a69f22e5a8c20d9249ab30c483cc3f8836f28f9397fd290df46127e77fa",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -883,8 +883,8 @@
       "source_pdf_sha256": "38ed49e89487b1cb6128d3492fb3cbd0d6d7ed0c386ccedeac73f9e86ed72fbd",
       "dk_printed_page": 67,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru tunjuk RM1, RM5, RM10 dan syiling 5, 10, 20, 50 sen secara rawak; murid namakan sekurang-kurangnya enam dengan betul."
     },
     {
@@ -895,8 +895,8 @@
       "source_pdf_sha256": "2eb67c151f49810fc7d72b517747b5ece359ce7cab79aca0db0b13be63a3e295",
       "dk_printed_page": 67,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru tunjuk RM1, RM5, RM10 dan syiling 5, 10, 20, 50 sen secara rawak; murid namakan sekurang-kurangnya enam dengan betul."
     },
     {
@@ -907,8 +907,8 @@
       "source_pdf_sha256": "3041fbf0f8f23c5c5296966e603b64f23c9145edcfb689139bd87d8a170f086d",
       "dk_printed_page": 67,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru tunjuk RM1, RM5, RM10 dan syiling 5, 10, 20, 50 sen secara rawak; murid namakan sekurang-kurangnya enam dengan betul."
     },
     {
@@ -919,8 +919,8 @@
       "source_pdf_sha256": "e0493f5ab47fc56b80080afe23db5bf132de034e0555ded859475e0a017592fe",
       "dk_printed_page": 67,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru tunjuk RM1, RM5, RM10 dan syiling 5, 10, 20, 50 sen secara rawak; murid namakan sekurang-kurangnya enam dengan betul."
     },
     {
@@ -931,8 +931,8 @@
       "source_pdf_sha256": "3dedfb5089567a1f6af6234ca9414041c2bb93a26f274254eb28b83f2c1b237d",
       "dk_printed_page": 70,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bilang, sebut dan tulis nilai set RM1+RM1, RM5+RM1, RM5+RM5; 10+20, 20+20, 50+10, 50+50 sen. Sekurang-kurangnya 6/7 tepat."
     },
     {
@@ -943,8 +943,8 @@
       "source_pdf_sha256": "ff23c98eba1b82fdf015c2a3e50c19fa42e9295712e05f2859402f21577caab2",
       "dk_printed_page": 70,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bilang, sebut dan tulis nilai set RM1+RM1, RM5+RM1, RM5+RM5; 10+20, 20+20, 50+10, 50+50 sen. Sekurang-kurangnya 6/7 tepat."
     },
     {
@@ -955,8 +955,8 @@
       "source_pdf_sha256": "f4b8e80da878b88ee91acf7e306662a467409061d439d1b5762fbad83515ceb0",
       "dk_printed_page": 70,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bilang, sebut dan tulis nilai set RM1+RM1, RM5+RM1, RM5+RM5; 10+20, 20+20, 50+10, 50+50 sen. Sekurang-kurangnya 6/7 tepat."
     },
     {
@@ -967,8 +967,8 @@
       "source_pdf_sha256": "b731920ab2d15b983923b13d6f19c3d864017ca777c354c7b8d523354d10a35c",
       "dk_printed_page": 70,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bilang, sebut dan tulis nilai set RM1+RM1, RM5+RM1, RM5+RM5; 10+20, 20+20, 50+10, 50+50 sen. Sekurang-kurangnya 6/7 tepat."
     },
     {
@@ -979,8 +979,8 @@
       "source_pdf_sha256": "56362715bb85147f48021bcb89fd68ab2037df6d931084d680d3222da33257b0",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -991,8 +991,8 @@
       "source_pdf_sha256": "b50171f72d48f3e5051e155030306dc91f4405fddd4a8a078891f0389c6b2e56",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -1003,8 +1003,8 @@
       "source_pdf_sha256": "e0c94b9c2416aff34adf5c4ee37845da64d11244e10b3c2ca3428ff91b76be8a",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -1015,8 +1015,8 @@
       "source_pdf_sha256": "15b7ee9a8b541e9ad0831a8911bfee5312cf19cae87e3b932b6c797cb9353b9e",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -1027,8 +1027,8 @@
       "source_pdf_sha256": "9342f7c9eca82a4aa697c8365d773f1cdee3b0f976ac5612c5018fb4905655b4",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -1039,8 +1039,8 @@
       "source_pdf_sha256": "bd6695dbf5749cfd30827fc3db61fb98b108a8527ca92c4d87938a76ed26f729",
       "dk_printed_page": 41,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid menggabungkan 4 dan 5 pembilang, menulis 4 + 5 = 9 serta menerangkan hubungan dua kumpulan dengan jumlah."
     },
     {
@@ -1051,8 +1051,8 @@
       "source_pdf_sha256": "9619100ec2b321417e0b7db618fec07966849a189efbf92891f4197f8475545a",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -1063,8 +1063,8 @@
       "source_pdf_sha256": "9a00cb7108a39cc6ece3cc58681f4924221fbfd601e75eb4f49fb37f2b6632c2",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -1075,8 +1075,8 @@
       "source_pdf_sha256": "200bf2c598cd96c953de256d152f1879e25ee83ab775567c80aff4b43c091340",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -1087,8 +1087,8 @@
       "source_pdf_sha256": "05d32679777b3fa5dd02655b25c3db66b6009195d7f39ad5316504031c3d1019",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -1099,8 +1099,8 @@
       "source_pdf_sha256": "e465fdd3ffb1ab3031c86dcdcee2951a24b5f69318603b4a8f82a89862e4eaa7",
       "dk_printed_page": 43,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 4 + 3, 6 + 5, 13 + 4, 8 + 7 dan 15 + 8; sekurang-kurangnya 4 tepat dan terangkan satu strategi."
     },
     {
@@ -1111,8 +1111,8 @@
       "source_pdf_sha256": "574fae8f8ff0f9dc82d2f2ba11e3dac4a6d42744b255ce2562edd4ebd923f6fd",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -1123,8 +1123,8 @@
       "source_pdf_sha256": "3416f3aaf9b3038142a9958f46ba2a06af71279918fe11dc18cd02da1dcc90c0",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -1135,8 +1135,8 @@
       "source_pdf_sha256": "85327770f8957bad105003980dc754aa2c154889ee38539a927a7f207ffcda56",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -1147,8 +1147,8 @@
       "source_pdf_sha256": "c14b6369c61e153629f1ae32488caeaf5cbd93b0762952e61f57b36256845f14",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -1159,8 +1159,8 @@
       "source_pdf_sha256": "32f10d45e58c7e64d32208546b618dc42b0df17e24f8b8278fbc6ebf91a45214",
       "dk_printed_page": 49,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tambah satu langkah: buku 8+5, pensel 12+6, bola 9+7, pelekat 14+9. Murid tulis ayat matematik dan jawapan berunit; 3/4 tepat."
     },
     {
@@ -1171,8 +1171,8 @@
       "source_pdf_sha256": "9c1ce2d2917252fdbee74426402be9cc7944825068c60b607123a0c295f72783",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -1183,8 +1183,8 @@
       "source_pdf_sha256": "ed83a5aa84990e48f064c8685450ed4db54bdfc460ad4155dfc0b5f5407d64cd",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -1195,8 +1195,8 @@
       "source_pdf_sha256": "9907caab26173e37f8eaa0de00335b3683767be080e7c4c947acfa28dba70cc7",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -1207,8 +1207,8 @@
       "source_pdf_sha256": "ca42501604ecd3d8355dd5d6014136a25289901c7feccb1d5b449f293eb12c92",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -1219,8 +1219,8 @@
       "source_pdf_sha256": "ba6c49528fea8d0cfc0d416eb72d856e949f668e442e9cfc8bbd96a28beb5cac",
       "dk_printed_page": 52,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid model dan tulis empat situasi tolak: 7−3, 8−2, 9−5, 10−4; sekurang-kurangnya tiga tepat."
     },
     {
@@ -1231,8 +1231,8 @@
       "source_pdf_sha256": "ccece41a15b89ae93ccdc6deec1fd938846d7dd743e3408655ed805181b5e95e",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -1243,8 +1243,8 @@
       "source_pdf_sha256": "ecfa2bd0b94ba47cd95811ef9eaaf86517d63ead5636d4ae4faa0b2ae96b3545",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -1255,8 +1255,8 @@
       "source_pdf_sha256": "3f4f7f967f15d1575910bf1f464f5ee5ca0b57f36253e68e8fdd06284782ff50",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -1267,8 +1267,8 @@
       "source_pdf_sha256": "701958de353f838a9c1b9a963253015791d5cbeedfa6e0f3f619dc8587db8b9f",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -1279,8 +1279,8 @@
       "source_pdf_sha256": "e9a0828c99cff0d7242d63208d60b95d087f19f3b3e92517c972d83f5baee622",
       "dk_printed_page": 55,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid jawab 7−2, 10−4, 17−6, 23−8 dan 28−9; sekurang-kurangnya 4 tepat dan tunjuk satu proses mencari baki."
     },
     {
@@ -1291,8 +1291,8 @@
       "source_pdf_sha256": "0d7f474a539f7b8409c9c380977e4ba72ebe8106e142090be41634836a6ad3c4",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -1303,8 +1303,8 @@
       "source_pdf_sha256": "07e6302f823a5f932bf2376994ba3d96abe08b980b33047c6c00fcc9f5f6f265",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -1315,8 +1315,8 @@
       "source_pdf_sha256": "e21328eb1cffe287c5b3a677ba056c35c5e6559d1c307c637c8390ee55bb4af8",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -1327,8 +1327,8 @@
       "source_pdf_sha256": "d9afefa5c7a0db1edb709c168bdc388940cee23b7d83a583abf0805e7737ebec",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -1339,8 +1339,8 @@
       "source_pdf_sha256": "14d28b786e7a86330ee75064e22f6d774cebaa0669996df6612d51721ccd5385",
       "dk_printed_page": 61,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah tolak satu langkah: 15 buku beri 4, 18 belon pecah 6, 23 pensel beri 8, 27 pelekat guna 9. Murid tulis model atau ayat dan jawapan; 3/4 tepat."
     },
     {
@@ -1351,8 +1351,8 @@
       "source_pdf_sha256": "c9c1c60be7beee1cbd410e5dbf2695f122e3cb7350dfc0a69001c952089cadc5",
       "dk_printed_page": 67,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru tunjuk RM1, RM5, RM10 dan syiling 5, 10, 20, 50 sen secara rawak; murid namakan sekurang-kurangnya enam dengan betul."
     },
     {
@@ -1363,8 +1363,8 @@
       "source_pdf_sha256": "bbf52cf1bc7c1eee568a85abf60b29d89cfdcf41d78a7ee4e1ace7fc71f72c83",
       "dk_printed_page": 67,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru tunjuk RM1, RM5, RM10 dan syiling 5, 10, 20, 50 sen secara rawak; murid namakan sekurang-kurangnya enam dengan betul."
     },
     {
@@ -1375,8 +1375,8 @@
       "source_pdf_sha256": "1bb78c7728fa5398034b15cd231f074ef57bddda0e871fcb99b67e19fd177e6d",
       "dk_printed_page": 67,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru tunjuk RM1, RM5, RM10 dan syiling 5, 10, 20, 50 sen secara rawak; murid namakan sekurang-kurangnya enam dengan betul."
     },
     {
@@ -1387,8 +1387,8 @@
       "source_pdf_sha256": "9bc688544045db2262433b83ab3f5845cf6a817c41fec36f7a10507f7b5cad3a",
       "dk_printed_page": 67,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru tunjuk RM1, RM5, RM10 dan syiling 5, 10, 20, 50 sen secara rawak; murid namakan sekurang-kurangnya enam dengan betul."
     },
     {
@@ -1399,8 +1399,8 @@
       "source_pdf_sha256": "e984130770e3bec286e6148b8e56222d519c7f545b57ee314403324344699ce8",
       "dk_printed_page": 70,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bilang, sebut dan tulis nilai set RM1+RM1, RM5+RM1, RM5+RM5; 10+20, 20+20, 50+10, 50+50 sen. Sekurang-kurangnya 6/7 tepat."
     },
     {
@@ -1411,8 +1411,8 @@
       "source_pdf_sha256": "d2a15359636682d3b2b3b1d36ac140f7a05369d3bbeabc32a479f0e382ee6472",
       "dk_printed_page": 70,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bilang, sebut dan tulis nilai set RM1+RM1, RM5+RM1, RM5+RM5; 10+20, 20+20, 50+10, 50+50 sen. Sekurang-kurangnya 6/7 tepat."
     },
     {
@@ -1423,8 +1423,8 @@
       "source_pdf_sha256": "b1bd31329c59b1e0f7b8a079e58d78ff1126a769e49a2d6c5118ed7c4ac2f250",
       "dk_printed_page": 70,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bilang, sebut dan tulis nilai set RM1+RM1, RM5+RM1, RM5+RM5; 10+20, 20+20, 50+10, 50+50 sen. Sekurang-kurangnya 6/7 tepat."
     },
     {
@@ -1435,8 +1435,8 @@
       "source_pdf_sha256": "513f3e4508de2701c466d11058a5c512ab7a967d45b7cc4c14c760c44af44f66",
       "dk_printed_page": 70,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bilang, sebut dan tulis nilai set RM1+RM1, RM5+RM1, RM5+RM5; 10+20, 20+20, 50+10, 50+50 sen. Sekurang-kurangnya 6/7 tepat."
     },
     {
@@ -1447,8 +1447,8 @@
       "source_pdf_sha256": "36657b66d844f800444bcb4f79553c9057e4acc789aff53b8600603f681f26dc",
       "dk_printed_page": 77,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk pertukaran setara RM5, RM10, 20 sen dan 50 sen menggunakan wang sejenis; sekurang-kurangnya tiga daripada empat betul."
     },
     {
@@ -1459,8 +1459,8 @@
       "source_pdf_sha256": "411c5db46f488858fb950197530521ed77c22ec261f97caae3f9f37b51bdbba7",
       "dk_printed_page": 77,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk pertukaran setara RM5, RM10, 20 sen dan 50 sen menggunakan wang sejenis; sekurang-kurangnya tiga daripada empat betul."
     },
     {
@@ -1471,8 +1471,8 @@
       "source_pdf_sha256": "7872977073b224db8fb0c99be467ce5bab4456ae449e690dd18fe5d853f2bf3f",
       "dk_printed_page": 77,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk pertukaran setara RM5, RM10, 20 sen dan 50 sen menggunakan wang sejenis; sekurang-kurangnya tiga daripada empat betul."
     },
     {
@@ -1483,8 +1483,8 @@
       "source_pdf_sha256": "adfbecdc3d5e8e865ab5e9a7686d56713e43d7fe6dabf35bcec78e7da60a54ba",
       "dk_printed_page": 77,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk pertukaran setara RM5, RM10, 20 sen dan 50 sen menggunakan wang sejenis; sekurang-kurangnya tiga daripada empat betul."
     },
     {
@@ -1495,8 +1495,8 @@
       "source_pdf_sha256": "b991dcfeeb060a596547e3e23fbf9a740ea9cf4410bcfb8b05bb767872a81c8f",
       "dk_printed_page": 77,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk pertukaran setara RM5, RM10, 20 sen dan 50 sen menggunakan wang sejenis; sekurang-kurangnya tiga daripada empat betul."
     },
     {
@@ -1507,8 +1507,8 @@
       "source_pdf_sha256": "ef1c70aeaaff5a25f016d103b25391853a23a5d1379e633c1031fcc3d936fca9",
       "dk_printed_page": 80,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid banding RM1/RM5, RM5/RM5, RM10/RM5, 20/50 sen dan 50/50 sen; gunakan istilah tepat bagi sekurang-kurangnya 4/5."
     },
     {
@@ -1519,8 +1519,8 @@
       "source_pdf_sha256": "824737593b4e3832903243dc4fe4c07642ce18a140a6851eedcb92a85148bebe",
       "dk_printed_page": 80,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid banding RM1/RM5, RM5/RM5, RM10/RM5, 20/50 sen dan 50/50 sen; gunakan istilah tepat bagi sekurang-kurangnya 4/5."
     },
     {
@@ -1531,8 +1531,8 @@
       "source_pdf_sha256": "155165e6ca968829a09b67111d780c3291b14740f90323f3bba1d450f092d2b1",
       "dk_printed_page": 80,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid banding RM1/RM5, RM5/RM5, RM10/RM5, 20/50 sen dan 50/50 sen; gunakan istilah tepat bagi sekurang-kurangnya 4/5."
     },
     {
@@ -1543,8 +1543,8 @@
       "source_pdf_sha256": "74fb4a4f4c73c84a2b75aae7dca696b8a5b925ca459ccad69d144c8142eb3076",
       "dk_printed_page": 80,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid banding RM1/RM5, RM5/RM5, RM10/RM5, 20/50 sen dan 50/50 sen; gunakan istilah tepat bagi sekurang-kurangnya 4/5."
     },
     {
@@ -1555,8 +1555,8 @@
       "source_pdf_sha256": "c66dc229697d29ec733883e02f61cc18cf1ceec9714a6541e31c30f0b26e5767",
       "dk_printed_page": 87,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid namakan empat bentuk 2D pada kad dan nyatakan bilangan sisi lurus atau bucu bagi tiga bentuk; guru semak secara individu."
     },
     {
@@ -1567,8 +1567,8 @@
       "source_pdf_sha256": "26dc3d20db69d39c0d66ef913c25bb9e01daed94821c0d804c888d3a09152607",
       "dk_printed_page": 87,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid namakan empat bentuk 2D pada kad dan nyatakan bilangan sisi lurus atau bucu bagi tiga bentuk; guru semak secara individu."
     },
     {
@@ -1579,8 +1579,8 @@
       "source_pdf_sha256": "b054c21e11f2b33e39853e197167d8a7b6332783daf75a0fdc81bbf7e11a9e6e",
       "dk_printed_page": 87,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid namakan empat bentuk 2D pada kad dan nyatakan bilangan sisi lurus atau bucu bagi tiga bentuk; guru semak secara individu."
     },
     {
@@ -1591,8 +1591,8 @@
       "source_pdf_sha256": "c8c579369982d025d17c4e218b492d1e2622e9201b4e19fd13e9f7e7bf19d7e3",
       "dk_printed_page": 89,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri lima jalur pola bentuk (AB, AAB, ABB, ABC, AABB); murid sambung pola dengan potongan bentuk, sekurang-kurangnya 4/5 tepat."
     },
     {
@@ -1603,8 +1603,8 @@
       "source_pdf_sha256": "0ea428194e15132e14ab9f9596d512edafdc30c5b906dffe78074b6758dcb770",
       "dk_printed_page": 89,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri lima jalur pola bentuk (AB, AAB, ABB, ABC, AABB); murid sambung pola dengan potongan bentuk, sekurang-kurangnya 4/5 tepat."
     },
     {
@@ -1615,8 +1615,8 @@
       "source_pdf_sha256": "ed00fbc11341cd87b8c9c815d78c98272cec31da59ff8f5a447c8a6bd5a03429",
       "dk_printed_page": 89,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri lima jalur pola bentuk (AB, AAB, ABB, ABC, AABB); murid sambung pola dengan potongan bentuk, sekurang-kurangnya 4/5 tepat."
     },
     {
@@ -1627,8 +1627,8 @@
       "source_pdf_sha256": "35d2cf7655c41c90f27b9390f8bce8267e7e19f31b251a21e655cea01e55c84c",
       "dk_printed_page": 90,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kenal pasti tiga bentuk asas dalam setiap empat gambar gabungan (rumah, bot, robot, kereta); guru semak padanan bentuk."
     },
     {
@@ -1639,8 +1639,8 @@
       "source_pdf_sha256": "8eab6b29e029b12b8bae8aeb70f3cee1b337979efb63ca8db711c6da87fde3d9",
       "dk_printed_page": 90,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kenal pasti tiga bentuk asas dalam setiap empat gambar gabungan (rumah, bot, robot, kereta); guru semak padanan bentuk."
     },
     {
@@ -1651,8 +1651,8 @@
       "source_pdf_sha256": "7f4c904f2d8400272accb697565b59852bcf40c12e57f3137c3b7c6c054e0a50",
       "dk_printed_page": 90,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kenal pasti tiga bentuk asas dalam setiap empat gambar gabungan (rumah, bot, robot, kereta); guru semak padanan bentuk."
     },
     {
@@ -1663,8 +1663,8 @@
       "source_pdf_sha256": "3974d3c3b2acd6b2bf9d303fabe8e7e6a5456d393bb9deb18759a2244c6f31c0",
       "dk_printed_page": 95,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid baca lima jam analog yang menunjukkan pukul 2, 4, 6, 9 dan 11; sekurang-kurangnya empat bacaan tepat."
     },
     {
@@ -1675,8 +1675,8 @@
       "source_pdf_sha256": "92ffe45b23c54f246e83dc717e60b0dae0dadf9a4605d9aa9ab78c8f68ad7197",
       "dk_printed_page": 95,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid baca lima jam analog yang menunjukkan pukul 2, 4, 6, 9 dan 11; sekurang-kurangnya empat bacaan tepat."
     },
     {
@@ -1687,8 +1687,8 @@
       "source_pdf_sha256": "092bc8f17db752a799a21576ee4e7c796227ffe099052c60cb4101d6cc578a03",
       "dk_printed_page": 95,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid baca lima jam analog yang menunjukkan pukul 2, 4, 6, 9 dan 11; sekurang-kurangnya empat bacaan tepat."
     },
     {
@@ -1699,8 +1699,8 @@
       "source_pdf_sha256": "245d3bde7e6003ca917ce2d2a5fc41d9e0283b839cb5cf3d968763465dcaabb4",
       "dk_printed_page": 95,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid baca lima jam analog yang menunjukkan pukul 2, 4, 6, 9 dan 11; sekurang-kurangnya empat bacaan tepat."
     },
     {
@@ -1711,8 +1711,8 @@
       "source_pdf_sha256": "f0f370b32e5a67178b4c4d1efffcc37cc3804187d2c0abdd721b69cf0dc0af31",
       "dk_printed_page": 98,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid susun empat kad rutin pagi hingga malam dan tulis masa daripada jam pada setiap kad; sekurang-kurangnya tiga masa betul."
     },
     {
@@ -1723,8 +1723,8 @@
       "source_pdf_sha256": "4c626c971e96488d3df180177bbcde0025799b941240212cab72ab49269a160d",
       "dk_printed_page": 98,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid susun empat kad rutin pagi hingga malam dan tulis masa daripada jam pada setiap kad; sekurang-kurangnya tiga masa betul."
     },
     {
@@ -1735,8 +1735,8 @@
       "source_pdf_sha256": "fb837b3fef857cdb9a72b2e103ca4c1956bac57d2172a4f48cf4bc779e0690e9",
       "dk_printed_page": 98,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid susun empat kad rutin pagi hingga malam dan tulis masa daripada jam pada setiap kad; sekurang-kurangnya tiga masa betul."
     },
     {
@@ -1747,8 +1747,8 @@
       "source_pdf_sha256": "d6348fc715ba6428e8cf685152f8bf33f8f6888ca5a45eab532b74c750521bb2",
       "dk_printed_page": 98,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid susun empat kad rutin pagi hingga malam dan tulis masa daripada jam pada setiap kad; sekurang-kurangnya tiga masa betul."
     },
     {
@@ -1759,8 +1759,8 @@
       "source_pdf_sha256": "a0847112c913501876807978871c7212e0c78dbc6b786efb7ff6c299c416cd64",
       "dk_printed_page": 101,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri kalendar satu bulan; murid jawab lima soalan tentang hari, tarikh, minggu, bulan dan tahun; sekurang-kurangnya empat tepat."
     },
     {
@@ -1771,8 +1771,8 @@
       "source_pdf_sha256": "338a7da224a1ab73321d3a41c37618b3c60e5dd2531a7c64aa511fa9a48f3dc9",
       "dk_printed_page": 101,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri kalendar satu bulan; murid jawab lima soalan tentang hari, tarikh, minggu, bulan dan tahun; sekurang-kurangnya empat tepat."
     },
     {
@@ -1783,8 +1783,8 @@
       "source_pdf_sha256": "2160b127c11bdee8a92170ac833931dd02abe1fbd19a3b243394396c74074f08",
       "dk_printed_page": 101,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri kalendar satu bulan; murid jawab lima soalan tentang hari, tarikh, minggu, bulan dan tahun; sekurang-kurangnya empat tepat."
     },
     {
@@ -1795,8 +1795,8 @@
       "source_pdf_sha256": "162e3457b31285599420e7391d3f4d30aebf28d98c551e8fe5dcb2cd9a318ad9",
       "dk_printed_page": 101,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri kalendar satu bulan; murid jawab lima soalan tentang hari, tarikh, minggu, bulan dan tahun; sekurang-kurangnya empat tepat."
     },
     {
@@ -1807,8 +1807,8 @@
       "source_pdf_sha256": "f26fcb8e188446d04217073d95891fe873ec22f298c8f66db64928a47936e601",
       "dk_printed_page": 107,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga objek dengan klip seragam tanpa ruang atau tindihan; catat bilangan klip bagi setiap objek."
     },
     {
@@ -1819,8 +1819,8 @@
       "source_pdf_sha256": "4d287dcc68ae40611bdcec0857cc155a857c0cf9c8f9f86916859e8ccf874443",
       "dk_printed_page": 107,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga objek dengan klip seragam tanpa ruang atau tindihan; catat bilangan klip bagi setiap objek."
     },
     {
@@ -1831,8 +1831,8 @@
       "source_pdf_sha256": "a88026c8a27d7197c912d0dba9d52598ac377ebf6b316e483fb0d20f292f8414",
       "dk_printed_page": 107,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga objek dengan klip seragam tanpa ruang atau tindihan; catat bilangan klip bagi setiap objek."
     },
     {
@@ -1843,8 +1843,8 @@
       "source_pdf_sha256": "2784f786be6c4fb58c44af8f4745088128eed7ca36d4aa24d2570df83015161a",
       "dk_printed_page": 107,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga objek dengan klip seragam tanpa ruang atau tindihan; catat bilangan klip bagi setiap objek."
     },
     {
@@ -1855,8 +1855,8 @@
       "source_pdf_sha256": "74cd8873024b2a77db07697293afdc76e8658c87bf9b70bc52af49e3c6cb9e0f",
       "dk_printed_page": 110,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat pasangan jalur dengan blok seragam; tentukan lebih panjang atau lebih pendek bagi empat perbandingan."
     },
     {
@@ -1867,8 +1867,8 @@
       "source_pdf_sha256": "40ebda0d0617400e2360550d2961c4b99c68be5ed04f51520fedf23d9f54c379",
       "dk_printed_page": 110,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat pasangan jalur dengan blok seragam; tentukan lebih panjang atau lebih pendek bagi empat perbandingan."
     },
     {
@@ -1879,8 +1879,8 @@
       "source_pdf_sha256": "e3f9d924936099242cab8334eba94300b02fb7d5f429e65bb2f91b4d20276123",
       "dk_printed_page": 110,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat pasangan jalur dengan blok seragam; tentukan lebih panjang atau lebih pendek bagi empat perbandingan."
     },
     {
@@ -1891,8 +1891,8 @@
       "source_pdf_sha256": "375d8ea628d450e90a6fd6c88696d77036d656b2dbe28ccdf6a8b8cedfa17a4a",
       "dk_printed_page": 110,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat pasangan jalur dengan blok seragam; tentukan lebih panjang atau lebih pendek bagi empat perbandingan."
     },
     {
@@ -1903,8 +1903,8 @@
       "source_pdf_sha256": "1644a0c8be5a82b2449e6b7a3265333a4068fccbec8c0434c65f221b1e6ba5d4",
       "dk_printed_page": 112,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk tanda 0, 1 cm dan 5 cm pada pembaris sebenar; guru semak ketiga-tiga tanda."
     },
     {
@@ -1915,8 +1915,8 @@
       "source_pdf_sha256": "8ebe271bdce0f99bcc0dce3b228eafde25c1474489433b79924270043a5693b8",
       "dk_printed_page": 112,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk tanda 0, 1 cm dan 5 cm pada pembaris sebenar; guru semak ketiga-tiga tanda."
     },
     {
@@ -1927,8 +1927,8 @@
       "source_pdf_sha256": "cbf062f2a28fc571fa0ef75576d89f621f2b89705446e4e099c5e060dba28af2",
       "dk_printed_page": 112,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk tanda 0, 1 cm dan 5 cm pada pembaris sebenar; guru semak ketiga-tiga tanda."
     },
     {
@@ -1939,8 +1939,8 @@
       "source_pdf_sha256": "a660967db6532e70b1b25ebf3a9e572bd8932c3bb7e272fcc7bad5ed9efef79a",
       "dk_printed_page": 112,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk tanda 0, 1 cm dan 5 cm pada pembaris sebenar; guru semak ketiga-tiga tanda."
     },
     {
@@ -1951,8 +1951,8 @@
       "source_pdf_sha256": "db540581cb36db156bc75a8798e8ad5ede66ff395c5a898c4c599b048134251e",
       "dk_printed_page": 114,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat jalur kertas dari tanda sifar dan catat panjang dalam cm; sekurang-kurangnya tiga ukuran tepat."
     },
     {
@@ -1963,8 +1963,8 @@
       "source_pdf_sha256": "9e274dba1f5a51a49b996a79e75a1e45da6324f28ddb8521378264a2ac68b6be",
       "dk_printed_page": 114,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat jalur kertas dari tanda sifar dan catat panjang dalam cm; sekurang-kurangnya tiga ukuran tepat."
     },
     {
@@ -1975,8 +1975,8 @@
       "source_pdf_sha256": "e157cb7e1a10f6f5a5186da3f41d54a2cba9eee16392a1bf3cc1eedcc79ee399",
       "dk_printed_page": 114,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat jalur kertas dari tanda sifar dan catat panjang dalam cm; sekurang-kurangnya tiga ukuran tepat."
     },
     {
@@ -1987,8 +1987,8 @@
       "source_pdf_sha256": "06e01e4c9f36315666680755938c2cd1f31f2955c1494cd222189b60edb64a64",
       "dk_printed_page": 114,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat jalur kertas dari tanda sifar dan catat panjang dalam cm; sekurang-kurangnya tiga ukuran tepat."
     },
     {
@@ -1999,8 +1999,8 @@
       "source_pdf_sha256": "5e9d1bf6792589dbaa4365144ff36141dc671ed2a099e7f0e8f48217d88532d9",
       "dk_printed_page": 117,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga jalur dalam cm, susun ukuran menaik dan namakan jalur terpendek serta terpanjang."
     },
     {
@@ -2011,8 +2011,8 @@
       "source_pdf_sha256": "bc59d2412ecbb635c2897c2c9eea13e8e64d8146c650504bda8286a8d841d1ec",
       "dk_printed_page": 117,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga jalur dalam cm, susun ukuran menaik dan namakan jalur terpendek serta terpanjang."
     },
     {
@@ -2023,8 +2023,8 @@
       "source_pdf_sha256": "5530a4a154d094c2bc3d6518696454c15c313ed5aaf3eddabd9d3e32e5c85058",
       "dk_printed_page": 117,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga jalur dalam cm, susun ukuran menaik dan namakan jalur terpendek serta terpanjang."
     },
     {
@@ -2035,8 +2035,8 @@
       "source_pdf_sha256": "98ad0ef6b12ecd9629d37eaf39e9de2015f330d26fa0896fb91116e96d890d2f",
       "dk_printed_page": 117,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga jalur dalam cm, susun ukuran menaik dan namakan jalur terpendek serta terpanjang."
     },
     {
@@ -2047,8 +2047,8 @@
       "source_pdf_sha256": "8698e17088a17cc3ef2e68f4681f8f1ba9a3ae1d270f231402a99f375ce341bc",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kumpul pilihan buah daripada sekurang-kurangnya lima rakan secara sukarela, rekod gundal tanpa nama dan semak jumlah."
     },
     {
@@ -2059,8 +2059,8 @@
       "source_pdf_sha256": "0794c155215bedd91b8e5272e8ef4a607c262dab065fdc433f0ec55912252d98",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kumpul pilihan buah daripada sekurang-kurangnya lima rakan secara sukarela, rekod gundal tanpa nama dan semak jumlah."
     },
     {
@@ -2071,8 +2071,8 @@
       "source_pdf_sha256": "3568166b9fa20b3be0eaf79401daf76025efc98915e69ce932970f776f43b031",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kumpul pilihan buah daripada sekurang-kurangnya lima rakan secara sukarela, rekod gundal tanpa nama dan semak jumlah."
     },
     {
@@ -2083,8 +2083,8 @@
       "source_pdf_sha256": "931608d3b2f0ec380c7a647ee623fd81df3887aa073738e731f0ff95f532f5d7",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kumpul pilihan buah daripada sekurang-kurangnya lima rakan secara sukarela, rekod gundal tanpa nama dan semak jumlah."
     },
     {
@@ -2095,8 +2095,8 @@
       "source_pdf_sha256": "55cafde02813a5521f8ee1a3beceef305cc91d8746eb8b71bbca0f539bbbc190",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bina piktograf tiga kategori daripada jadual 2, 4 dan 3 pilihan; satu simbol satu unit; semak tajuk, label, petunjuk dan bilangan."
     },
     {
@@ -2107,8 +2107,8 @@
       "source_pdf_sha256": "619767371e1056daf298045424c393b7d814c32a1a82d00177dbe33e04a529b8",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bina piktograf tiga kategori daripada jadual 2, 4 dan 3 pilihan; satu simbol satu unit; semak tajuk, label, petunjuk dan bilangan."
     },
     {
@@ -2119,8 +2119,8 @@
       "source_pdf_sha256": "65e0c6901d00b2b287c7af590c5caf3895127a3e8dea5acc069c38402dd6e079",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bina piktograf tiga kategori daripada jadual 2, 4 dan 3 pilihan; satu simbol satu unit; semak tajuk, label, petunjuk dan bilangan."
     },
     {
@@ -2131,8 +2131,8 @@
       "source_pdf_sha256": "bca96430beb79d4727bd4761e4d61956239c1873f955f433e2accdf11a1a4dce",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bina piktograf tiga kategori daripada jadual 2, 4 dan 3 pilihan; satu simbol satu unit; semak tajuk, label, petunjuk dan bilangan."
     },
     {
@@ -2143,8 +2143,8 @@
       "source_pdf_sha256": "580d0ed137f36b6c94a3c0dd120a5c95039cfc5251cc4a646b976dc4b2b77067",
       "dk_printed_page": 125,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru sediakan dua piktograf dengan petunjuk 1 dan 10 unit; murid jawab lima soalan nilai, kategori terbanyak/tersedikit dan perbandingan; 4/5 tepat."
     },
     {
@@ -2155,8 +2155,8 @@
       "source_pdf_sha256": "ec2dae711419f692d774bd42f04527d95b38385fb1bb2287834d99380898b576",
       "dk_printed_page": 125,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru sediakan dua piktograf dengan petunjuk 1 dan 10 unit; murid jawab lima soalan nilai, kategori terbanyak/tersedikit dan perbandingan; 4/5 tepat."
     },
     {
@@ -2167,8 +2167,8 @@
       "source_pdf_sha256": "fc5313d1271a105543e378cb7b07f9c9798ff210c25e87738179c198f1b58fba",
       "dk_printed_page": 125,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru sediakan dua piktograf dengan petunjuk 1 dan 10 unit; murid jawab lima soalan nilai, kategori terbanyak/tersedikit dan perbandingan; 4/5 tepat."
     },
     {
@@ -2179,8 +2179,8 @@
       "source_pdf_sha256": "47a9c1ece82e174da84f2d2bf8fec6233960e87dea193a1df964ebbcfe35d307",
       "dk_printed_page": 125,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru sediakan dua piktograf dengan petunjuk 1 dan 10 unit; murid jawab lima soalan nilai, kategori terbanyak/tersedikit dan perbandingan; 4/5 tepat."
     },
     {
@@ -2191,8 +2191,8 @@
       "source_pdf_sha256": "470c7f56f980448d04e38039940f3f7c2de59019c7a1a14b04e7ae002105d3ad",
       "dk_printed_page": 129,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah piktograf petunjuk 1 dan 10 unit; murid membilang semua simbol atau simbol tidak berpasangan secara langsung, tanpa operasi tambah/tolak; 3/4 tepat."
     },
     {
@@ -2203,8 +2203,8 @@
       "source_pdf_sha256": "e5b17294c03c37b480330dff0a34a31bc3451e9eaed4a0f0aff83a36c2da4da6",
       "dk_printed_page": 129,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah piktograf petunjuk 1 dan 10 unit; murid membilang semua simbol atau simbol tidak berpasangan secara langsung, tanpa operasi tambah/tolak; 3/4 tepat."
     },
     {
@@ -2215,8 +2215,8 @@
       "source_pdf_sha256": "4a59697e9fceb20760a6b1b8d6ecc53b49a4e1d926123eae4544d5ae5cbb08c4",
       "dk_printed_page": 129,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah piktograf petunjuk 1 dan 10 unit; murid membilang semua simbol atau simbol tidak berpasangan secara langsung, tanpa operasi tambah/tolak; 3/4 tepat."
     },
     {
@@ -2227,8 +2227,8 @@
       "source_pdf_sha256": "5e32caf9d8d66fc17ca4971fd3d4ab067d167b20f738295051162529e74826e2",
       "dk_printed_page": 129,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah piktograf petunjuk 1 dan 10 unit; murid membilang semua simbol atau simbol tidak berpasangan secara langsung, tanpa operasi tambah/tolak; 3/4 tepat."
     },
     {
@@ -2239,8 +2239,8 @@
       "source_pdf_sha256": "61ddbd3bf718d95f5b1c3f1a0dc73ac763ec38204a0384debe5036b3f5e6f807",
       "dk_printed_page": 77,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk pertukaran setara RM5, RM10, 20 sen dan 50 sen menggunakan wang sejenis; sekurang-kurangnya tiga daripada empat betul."
     },
     {
@@ -2251,8 +2251,8 @@
       "source_pdf_sha256": "5a9cfbc49aec7d7b16eaa0659ad75ddbd2cd3c3c1dfc9b0c9ed2d39a14d4589f",
       "dk_printed_page": 77,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk pertukaran setara RM5, RM10, 20 sen dan 50 sen menggunakan wang sejenis; sekurang-kurangnya tiga daripada empat betul."
     },
     {
@@ -2263,8 +2263,8 @@
       "source_pdf_sha256": "547ea35a694e7e52ea3644a74070846b749330a52f621c9dfe2a8b0e8afb3430",
       "dk_printed_page": 77,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk pertukaran setara RM5, RM10, 20 sen dan 50 sen menggunakan wang sejenis; sekurang-kurangnya tiga daripada empat betul."
     },
     {
@@ -2275,8 +2275,8 @@
       "source_pdf_sha256": "10bbe43b4fa04ff9a3d763add636b10bc8aa20cb17308c9773beca596a58a999",
       "dk_printed_page": 80,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid banding RM1/RM5, RM5/RM5, RM10/RM5, 20/50 sen dan 50/50 sen; gunakan istilah tepat bagi sekurang-kurangnya 4/5."
     },
     {
@@ -2287,8 +2287,8 @@
       "source_pdf_sha256": "57603cc38a7bb365920497a038ea3732bc8b868aa383499ef6436abac5b0da6d",
       "dk_printed_page": 80,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid banding RM1/RM5, RM5/RM5, RM10/RM5, 20/50 sen dan 50/50 sen; gunakan istilah tepat bagi sekurang-kurangnya 4/5."
     },
     {
@@ -2299,8 +2299,8 @@
       "source_pdf_sha256": "555a3826e3bd3d9758cb32cf8c569479957c0c47487fa6bf7bc1bc2455b3ffdb",
       "dk_printed_page": 80,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid banding RM1/RM5, RM5/RM5, RM10/RM5, 20/50 sen dan 50/50 sen; gunakan istilah tepat bagi sekurang-kurangnya 4/5."
     },
     {
@@ -2311,8 +2311,8 @@
       "source_pdf_sha256": "8ad8dc89c1eca49694b610b9f52c840d839a445bae426652e0130b8f35f69e19",
       "dk_printed_page": 80,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid banding RM1/RM5, RM5/RM5, RM10/RM5, 20/50 sen dan 50/50 sen; gunakan istilah tepat bagi sekurang-kurangnya 4/5."
     },
     {
@@ -2323,8 +2323,8 @@
       "source_pdf_sha256": "ea4795108a78195db4fd7a45c5484dd80fdf28932ef3974158ee4e2efadd20c2",
       "dk_printed_page": 87,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid namakan empat bentuk 2D pada kad dan nyatakan bilangan sisi lurus atau bucu bagi tiga bentuk; guru semak secara individu."
     },
     {
@@ -2335,8 +2335,8 @@
       "source_pdf_sha256": "994cdfdd98e0b5cfeb52198f7dde9fa05ed2502759f007ccece369d5d99779db",
       "dk_printed_page": 87,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid namakan empat bentuk 2D pada kad dan nyatakan bilangan sisi lurus atau bucu bagi tiga bentuk; guru semak secara individu."
     },
     {
@@ -2347,8 +2347,8 @@
       "source_pdf_sha256": "6f1719a887be972df6434ddbfbcad779d91c310b270973570fe0ba6e1ce11ebf",
       "dk_printed_page": 87,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid namakan empat bentuk 2D pada kad dan nyatakan bilangan sisi lurus atau bucu bagi tiga bentuk; guru semak secara individu."
     },
     {
@@ -2359,8 +2359,8 @@
       "source_pdf_sha256": "36146ec34408a4fc9506887d9931af9152fd33b8cb9b8a2486c553bf0d941dab",
       "dk_printed_page": 89,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri lima jalur pola bentuk (AB, AAB, ABB, ABC, AABB); murid sambung pola dengan potongan bentuk, sekurang-kurangnya 4/5 tepat."
     },
     {
@@ -2371,8 +2371,8 @@
       "source_pdf_sha256": "fd4fd10d0983eadce44c7289ef7b51b442871aaf49b5b6462b961181169e71b3",
       "dk_printed_page": 89,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri lima jalur pola bentuk (AB, AAB, ABB, ABC, AABB); murid sambung pola dengan potongan bentuk, sekurang-kurangnya 4/5 tepat."
     },
     {
@@ -2383,8 +2383,8 @@
       "source_pdf_sha256": "e8ae1fbb5cb563227e4f4303338d08702e407c4475512563b9b158da7f010241",
       "dk_printed_page": 89,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri lima jalur pola bentuk (AB, AAB, ABB, ABC, AABB); murid sambung pola dengan potongan bentuk, sekurang-kurangnya 4/5 tepat."
     },
     {
@@ -2395,8 +2395,8 @@
       "source_pdf_sha256": "7e29c681cd6f9dbae814760a3d33f948ed9ac85912847b20ff4561ed3d0a082a",
       "dk_printed_page": 90,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kenal pasti tiga bentuk asas dalam setiap empat gambar gabungan (rumah, bot, robot, kereta); guru semak padanan bentuk."
     },
     {
@@ -2407,8 +2407,8 @@
       "source_pdf_sha256": "d87ba36a5e527a29db3353632285c7c2096fc7a88c41df9fac76a7171d6384b1",
       "dk_printed_page": 90,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kenal pasti tiga bentuk asas dalam setiap empat gambar gabungan (rumah, bot, robot, kereta); guru semak padanan bentuk."
     },
     {
@@ -2419,8 +2419,8 @@
       "source_pdf_sha256": "57bc1151a03f6b3448a008aa4f9425535e22342bd678a868c7d8dbd460a56aab",
       "dk_printed_page": 90,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kenal pasti tiga bentuk asas dalam setiap empat gambar gabungan (rumah, bot, robot, kereta); guru semak padanan bentuk."
     },
     {
@@ -2431,8 +2431,8 @@
       "source_pdf_sha256": "7d490efb94aa9f45a77585dbf49aec5fdcf8032fc94f1b70c2f5e60d24b9829f",
       "dk_printed_page": 95,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid baca lima jam analog yang menunjukkan pukul 2, 4, 6, 9 dan 11; sekurang-kurangnya empat bacaan tepat."
     },
     {
@@ -2443,8 +2443,8 @@
       "source_pdf_sha256": "2b08466b9a0242e0be8807a4839c8800e21eb0f2331156c40acd382b50e22878",
       "dk_printed_page": 95,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid baca lima jam analog yang menunjukkan pukul 2, 4, 6, 9 dan 11; sekurang-kurangnya empat bacaan tepat."
     },
     {
@@ -2455,8 +2455,8 @@
       "source_pdf_sha256": "45f1f227306d76e9bbede96dd07d79ab74c6f905e9a9ea5cce45985788f45f63",
       "dk_printed_page": 95,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid baca lima jam analog yang menunjukkan pukul 2, 4, 6, 9 dan 11; sekurang-kurangnya empat bacaan tepat."
     },
     {
@@ -2467,8 +2467,8 @@
       "source_pdf_sha256": "b088a680d044b8aca5d1869a880984b25fe94cd76b8a86b32301cd6e5e41940f",
       "dk_printed_page": 95,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid baca lima jam analog yang menunjukkan pukul 2, 4, 6, 9 dan 11; sekurang-kurangnya empat bacaan tepat."
     },
     {
@@ -2479,8 +2479,8 @@
       "source_pdf_sha256": "564f349e66ae7573388692dd1f9e79984244da32b1a3dc44eb9d14e2e4d32a6e",
       "dk_printed_page": 98,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid susun empat kad rutin pagi hingga malam dan tulis masa daripada jam pada setiap kad; sekurang-kurangnya tiga masa betul."
     },
     {
@@ -2491,8 +2491,8 @@
       "source_pdf_sha256": "de61ba2224e2db5547209fcd0dc98d6bf0d4285d4ddfcf086bad5281f22a3177",
       "dk_printed_page": 98,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid susun empat kad rutin pagi hingga malam dan tulis masa daripada jam pada setiap kad; sekurang-kurangnya tiga masa betul."
     },
     {
@@ -2503,8 +2503,8 @@
       "source_pdf_sha256": "bf2478a9f181055e9f49adb1b27bd9ba1ee70aa4750130e0cab2d8507f781735",
       "dk_printed_page": 98,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid susun empat kad rutin pagi hingga malam dan tulis masa daripada jam pada setiap kad; sekurang-kurangnya tiga masa betul."
     },
     {
@@ -2515,8 +2515,8 @@
       "source_pdf_sha256": "2a109dd68f2083788e2cc54b13a15b02f35f535d2031f6c6f7a2ac2349ff9f8f",
       "dk_printed_page": 98,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid susun empat kad rutin pagi hingga malam dan tulis masa daripada jam pada setiap kad; sekurang-kurangnya tiga masa betul."
     },
     {
@@ -2527,8 +2527,8 @@
       "source_pdf_sha256": "db1da357042f28cca1b385db1e8cbe75fc2bf4777264b07b050a0eb1d472bc03",
       "dk_printed_page": 101,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri kalendar satu bulan; murid jawab lima soalan tentang hari, tarikh, minggu, bulan dan tahun; sekurang-kurangnya empat tepat."
     },
     {
@@ -2539,8 +2539,8 @@
       "source_pdf_sha256": "ff5688cf3a95e0cfd9089d9d0e8cc9e8c44fe3b20f7c64e13c132a61eeb42ab4",
       "dk_printed_page": 101,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri kalendar satu bulan; murid jawab lima soalan tentang hari, tarikh, minggu, bulan dan tahun; sekurang-kurangnya empat tepat."
     },
     {
@@ -2551,8 +2551,8 @@
       "source_pdf_sha256": "9a21082217fb9fe07f3f79954bcc42f0fa4119c64eac1da256622b3c067ca833",
       "dk_printed_page": 101,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri kalendar satu bulan; murid jawab lima soalan tentang hari, tarikh, minggu, bulan dan tahun; sekurang-kurangnya empat tepat."
     },
     {
@@ -2563,8 +2563,8 @@
       "source_pdf_sha256": "45bb88d55348678edda79efb29596ebb38ed79154d067e2b0f396ca4c921aecf",
       "dk_printed_page": 101,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru beri kalendar satu bulan; murid jawab lima soalan tentang hari, tarikh, minggu, bulan dan tahun; sekurang-kurangnya empat tepat."
     },
     {
@@ -2575,8 +2575,8 @@
       "source_pdf_sha256": "f891a077ff9412182f549a2447fde9e4ff43c6ed49a9d468f1acbfbb40471891",
       "dk_printed_page": 107,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga objek dengan klip seragam tanpa ruang atau tindihan; catat bilangan klip bagi setiap objek."
     },
     {
@@ -2587,8 +2587,8 @@
       "source_pdf_sha256": "a30547bedbba6f2812584e07617c90dbcb8eff35a47cdabecf2de801b1e18771",
       "dk_printed_page": 107,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga objek dengan klip seragam tanpa ruang atau tindihan; catat bilangan klip bagi setiap objek."
     },
     {
@@ -2599,8 +2599,8 @@
       "source_pdf_sha256": "000029130951179a7201ec1523c01bdd7b802797e90b56dd0b853075ac6da41d",
       "dk_printed_page": 107,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga objek dengan klip seragam tanpa ruang atau tindihan; catat bilangan klip bagi setiap objek."
     },
     {
@@ -2611,8 +2611,8 @@
       "source_pdf_sha256": "39a7cd7ca4244e01ea4e3b8cf60a3d645bf9e6ae7a2bab0f1181e1069d336c45",
       "dk_printed_page": 107,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga objek dengan klip seragam tanpa ruang atau tindihan; catat bilangan klip bagi setiap objek."
     },
     {
@@ -2623,8 +2623,8 @@
       "source_pdf_sha256": "5a4325c317fff7098c92ac7d2d51fa6aee5a3083fa7f515ab2592f5341ece863",
       "dk_printed_page": 110,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat pasangan jalur dengan blok seragam; tentukan lebih panjang atau lebih pendek bagi empat perbandingan."
     },
     {
@@ -2635,8 +2635,8 @@
       "source_pdf_sha256": "f9e490a8fcb9b8a63a7e3438e6c89cdc46c1199731624401cbc36e665ff4bdbb",
       "dk_printed_page": 110,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat pasangan jalur dengan blok seragam; tentukan lebih panjang atau lebih pendek bagi empat perbandingan."
     },
     {
@@ -2647,8 +2647,8 @@
       "source_pdf_sha256": "ea5a49e72686c24a1eebe9bbca5e3e75c83eeec2c909789cab51e1ad50522b35",
       "dk_printed_page": 110,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat pasangan jalur dengan blok seragam; tentukan lebih panjang atau lebih pendek bagi empat perbandingan."
     },
     {
@@ -2659,8 +2659,8 @@
       "source_pdf_sha256": "290dc90a8e97376e86c317174dfe8ec0ec4543c397b5d60e3afc4d85faf87ae4",
       "dk_printed_page": 110,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat pasangan jalur dengan blok seragam; tentukan lebih panjang atau lebih pendek bagi empat perbandingan."
     },
     {
@@ -2671,8 +2671,8 @@
       "source_pdf_sha256": "807b6a2197a9c9591b2df292eb28d5bb883c99d54168455f719ac187ec709e06",
       "dk_printed_page": 112,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk tanda 0, 1 cm dan 5 cm pada pembaris sebenar; guru semak ketiga-tiga tanda."
     },
     {
@@ -2683,8 +2683,8 @@
       "source_pdf_sha256": "d306056cf479d0ded1337081714e14077a1c20d130cbe76dfe247c1ce3fa6826",
       "dk_printed_page": 112,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk tanda 0, 1 cm dan 5 cm pada pembaris sebenar; guru semak ketiga-tiga tanda."
     },
     {
@@ -2695,8 +2695,8 @@
       "source_pdf_sha256": "befcdc54e154348d91acfae4189766054d2323b0a392279a49620a30c1233b00",
       "dk_printed_page": 112,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk tanda 0, 1 cm dan 5 cm pada pembaris sebenar; guru semak ketiga-tiga tanda."
     },
     {
@@ -2707,8 +2707,8 @@
       "source_pdf_sha256": "70aa4a588a79a1b50b4f038951c45f16717701640b3b8943145620786f3057af",
       "dk_printed_page": 112,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid tunjuk tanda 0, 1 cm dan 5 cm pada pembaris sebenar; guru semak ketiga-tiga tanda."
     },
     {
@@ -2719,8 +2719,8 @@
       "source_pdf_sha256": "de1ec83709cd21ff19a9af497b19f085dc2eaba09d574d94d2cd4c639a48dc90",
       "dk_printed_page": 114,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat jalur kertas dari tanda sifar dan catat panjang dalam cm; sekurang-kurangnya tiga ukuran tepat."
     },
     {
@@ -2731,8 +2731,8 @@
       "source_pdf_sha256": "9df5fd8be89998476cf77c018df90ffc3df52f304f0e140a4240b6e4c28c4d90",
       "dk_printed_page": 114,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat jalur kertas dari tanda sifar dan catat panjang dalam cm; sekurang-kurangnya tiga ukuran tepat."
     },
     {
@@ -2743,8 +2743,8 @@
       "source_pdf_sha256": "40bf556e5f9509a89bc6319031df4a23c20451124ce1950e9132e6dc1b119f96",
       "dk_printed_page": 114,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat jalur kertas dari tanda sifar dan catat panjang dalam cm; sekurang-kurangnya tiga ukuran tepat."
     },
     {
@@ -2755,8 +2755,8 @@
       "source_pdf_sha256": "2fc054691ffbed49445f8f835d97c8de3495f0b59091b10f9d921850ae3cc541",
       "dk_printed_page": 114,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur empat jalur kertas dari tanda sifar dan catat panjang dalam cm; sekurang-kurangnya tiga ukuran tepat."
     },
     {
@@ -2767,8 +2767,8 @@
       "source_pdf_sha256": "57a33848b226514bb3122c9979f1eadc00da972e22b8185b24166fa336507519",
       "dk_printed_page": 117,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga jalur dalam cm, susun ukuran menaik dan namakan jalur terpendek serta terpanjang."
     },
     {
@@ -2779,8 +2779,8 @@
       "source_pdf_sha256": "0ac2f5bc53d2178c7159f562a19318708dd6ffb19452c110e048492fc82ce728",
       "dk_printed_page": 117,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga jalur dalam cm, susun ukuran menaik dan namakan jalur terpendek serta terpanjang."
     },
     {
@@ -2791,8 +2791,8 @@
       "source_pdf_sha256": "1b419b3b11aa49d5cbda7ef4c26bbd032a4bf8429df149a6ff10ae9a4165aa82",
       "dk_printed_page": 117,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga jalur dalam cm, susun ukuran menaik dan namakan jalur terpendek serta terpanjang."
     },
     {
@@ -2803,8 +2803,8 @@
       "source_pdf_sha256": "300086a2dc20fb651feb34cbf41edee8e50f53edbeb33b6b9a8e8e54cef96f54",
       "dk_printed_page": 117,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid ukur tiga jalur dalam cm, susun ukuran menaik dan namakan jalur terpendek serta terpanjang."
     },
     {
@@ -2815,8 +2815,8 @@
       "source_pdf_sha256": "68321e5f02372c865e36cd4b0719912052852979e4677251c772ec7ad1972b7d",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kumpul pilihan buah daripada sekurang-kurangnya lima rakan secara sukarela, rekod gundal tanpa nama dan semak jumlah."
     },
     {
@@ -2827,8 +2827,8 @@
       "source_pdf_sha256": "efdef6d794777ff721211c1307edb1d4f3daaf4d8cc5590f7bf1880c2ccac253",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kumpul pilihan buah daripada sekurang-kurangnya lima rakan secara sukarela, rekod gundal tanpa nama dan semak jumlah."
     },
     {
@@ -2839,8 +2839,8 @@
       "source_pdf_sha256": "0b243f37e5af168c5d722d27699fa5549aa7966ec723d2d51c5c807559406be9",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kumpul pilihan buah daripada sekurang-kurangnya lima rakan secara sukarela, rekod gundal tanpa nama dan semak jumlah."
     },
     {
@@ -2851,8 +2851,8 @@
       "source_pdf_sha256": "9376efc9249fb3ad9140020bcddf2c3f8344f4dcc7015a80ceac7fa9e312e23d",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid kumpul pilihan buah daripada sekurang-kurangnya lima rakan secara sukarela, rekod gundal tanpa nama dan semak jumlah."
     },
     {
@@ -2863,8 +2863,8 @@
       "source_pdf_sha256": "56980d5bdc6232c1161f7302608f97f23e1f971a49a59b91cfc555d74a96ea02",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bina piktograf tiga kategori daripada jadual 2, 4 dan 3 pilihan; satu simbol satu unit; semak tajuk, label, petunjuk dan bilangan."
     },
     {
@@ -2875,8 +2875,8 @@
       "source_pdf_sha256": "7b40d77bebbdf9241747f29842140c25cf3f492546512ef0651d41eac4e1400e",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bina piktograf tiga kategori daripada jadual 2, 4 dan 3 pilihan; satu simbol satu unit; semak tajuk, label, petunjuk dan bilangan."
     },
     {
@@ -2887,8 +2887,8 @@
       "source_pdf_sha256": "69edea51743fa574d5ea2afe27d790ceb21476fdc36adb7c25ebdb5dbbdea45e",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bina piktograf tiga kategori daripada jadual 2, 4 dan 3 pilihan; satu simbol satu unit; semak tajuk, label, petunjuk dan bilangan."
     },
     {
@@ -2899,8 +2899,8 @@
       "source_pdf_sha256": "9efd4fd8bdb8b64905c8cba2932301dc061323c4d4384d9ba038b9751554f357",
       "dk_printed_page": 123,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Murid bina piktograf tiga kategori daripada jadual 2, 4 dan 3 pilihan; satu simbol satu unit; semak tajuk, label, petunjuk dan bilangan."
     },
     {
@@ -2911,8 +2911,8 @@
       "source_pdf_sha256": "bb035aa21aef16ba07fb0278a4df4baa521b79aab1f585c019b7415e1e313d2f",
       "dk_printed_page": 125,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru sediakan dua piktograf dengan petunjuk 1 dan 10 unit; murid jawab lima soalan nilai, kategori terbanyak/tersedikit dan perbandingan; 4/5 tepat."
     },
     {
@@ -2923,8 +2923,8 @@
       "source_pdf_sha256": "b6bce3bdee7e02015dc1ce0095d83b6e89ef555823f342aa4b1af6dc3b2718b4",
       "dk_printed_page": 125,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru sediakan dua piktograf dengan petunjuk 1 dan 10 unit; murid jawab lima soalan nilai, kategori terbanyak/tersedikit dan perbandingan; 4/5 tepat."
     },
     {
@@ -2935,8 +2935,8 @@
       "source_pdf_sha256": "bf84ec4823595373cd0f6edddb11a278152a84cc40288704b47074d37ac25e30",
       "dk_printed_page": 125,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru sediakan dua piktograf dengan petunjuk 1 dan 10 unit; murid jawab lima soalan nilai, kategori terbanyak/tersedikit dan perbandingan; 4/5 tepat."
     },
     {
@@ -2947,8 +2947,8 @@
       "source_pdf_sha256": "d7f49d00e38ecfe85d4c5babddf063f488d43197714df27519004bdfdaf9414c",
       "dk_printed_page": 125,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Guru sediakan dua piktograf dengan petunjuk 1 dan 10 unit; murid jawab lima soalan nilai, kategori terbanyak/tersedikit dan perbandingan; 4/5 tepat."
     },
     {
@@ -2959,8 +2959,8 @@
       "source_pdf_sha256": "33009cccd3ef0321d9da2120139c58e40dbd5ec2c5481cbd363156a37c5d1036",
       "dk_printed_page": 129,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah piktograf petunjuk 1 dan 10 unit; murid membilang semua simbol atau simbol tidak berpasangan secara langsung, tanpa operasi tambah/tolak; 3/4 tepat."
     },
     {
@@ -2971,8 +2971,8 @@
       "source_pdf_sha256": "14cc6c59048dd75d1c5b3c855027ba36f00034af362f85969eb22e2de2f3c183",
       "dk_printed_page": 129,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah piktograf petunjuk 1 dan 10 unit; murid membilang semua simbol atau simbol tidak berpasangan secara langsung, tanpa operasi tambah/tolak; 3/4 tepat."
     },
     {
@@ -2983,8 +2983,8 @@
       "source_pdf_sha256": "31fba13586409abd308e6ed8aac309444d64ba195835fd3fae45cfcbf116ada3",
       "dk_printed_page": 129,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah piktograf petunjuk 1 dan 10 unit; murid membilang semua simbol atau simbol tidak berpasangan secara langsung, tanpa operasi tambah/tolak; 3/4 tepat."
     },
     {
@@ -2995,13 +2995,24 @@
       "source_pdf_sha256": "8b775a07d52449668df90247e1468ae39c72082333b7948fb58aee293c462c6c",
       "dk_printed_page": 129,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_REVIEWED_PENDING_FINAL_QA",
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE",
       "reviewed_evaluation": "Empat masalah piktograf petunjuk 1 dan 10 unit; murid membilang semua simbol atau simbol tidak berpasangan secara langsung, tanpa operasi tambah/tolak; 3/4 tepat."
     }
   ],
   "content_review": {
     "scope": "All 30 SP groups, 249 source-verified records; explicit assessment task aligned to original or corrected criteria. Equivalent A/B slots intentionally share criteria. Existing five-phase activities and 40 DK scope corrections retained.",
     "limitations": "These are new teacher-prepared assessment examples, not claims of textbook provenance. Individual visual and updated print checks remain pending. Original ordinary RPH untouched."
+  },
+  "evidence": {
+    "head": "040f0e7c26b78155a5bcd3ed1f473892552205a9",
+    "print_run": 46119747339,
+    "print_outputs_passed": 996,
+    "print_failures": 0,
+    "native_delivery_run": 46119747541,
+    "visual_artifact": 15253176711,
+    "visual_sample_pages": 24,
+    "source": "30 SP group content review; exact 249 source IDs; 40 existing scope corrections",
+    "live_authenticated": false
   }
 }
