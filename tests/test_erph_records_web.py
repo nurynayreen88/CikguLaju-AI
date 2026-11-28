@@ -273,3 +273,16 @@ class ErphTests(unittest.TestCase):
         self.assertIn("edit(draft);baseline=''",html)
         self.assertIn("Masa bertindih dengan rekod lain.",html)
         self.assertIn("if(overlap.length)",html)
+
+    def test_actual_bm_ordinary_and_5p_download_import(self):
+        from web import kp2027_bm_rpt_aligned as bm, kp2027_bm_5p as five
+        from web.erph_word_import import extract_docx
+        for g,n in [('A',1),('B',175)]:
+            r=bm.lesson(g,n)
+            for renderer in (bm,five):
+                fields=extract_docx(renderer.render(g,n,'word',{}))
+                self.assertIn(r['sk_code'],fields['standard_content'])
+                self.assertIn(r['sp_code'],fields['standard_learning'])
+                self.assertEqual(r['objective'],fields['objectives'])
+                self.assertTrue(fields['activities'])
+                self.assertTrue(fields['title'])
