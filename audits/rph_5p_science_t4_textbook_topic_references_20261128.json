@@ -1,0 +1,672 @@
+{
+  "status": "TEXTBOOK_TOC_TOPIC_REFERENCES_NOT_RUNTIME_MAPPED",
+  "subject": "SAINS SK",
+  "year": 4,
+  "source_candidate_path": "audits/rph_5p_science_kssr_t4_dskp_candidates_20261128.json",
+  "source_candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+  "textbook": {
+    "drive_id": "1Y2Uf44WX5bFhAaaEx55Is7cZpJfrn7Ms",
+    "title": "GuruBesar_BukuTeks_Sains_T4_SK.pdf",
+    "page_basis": "Contents printed iii–iv, PDF pages 3–4, visually inspected. Topic ranges extend to page before next listed heading. Broad ranges when specific subtopic not listed. Not activity-level page validation."
+  },
+  "records": [
+    {
+      "candidate_id": "SCI-T4-DRAFT-001",
+      "title": "Pemerhatian dan pengelasan bahan",
+      "sp_codes": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "suggested_printed_pages": [
+        2,
+        5
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-002",
+      "title": "Ukuran dan inferens bayang",
+      "sp_codes": [
+        "1.1.3",
+        "1.1.4"
+      ],
+      "suggested_printed_pages": [
+        2,
+        5
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-003",
+      "title": "Ramalan dan komunikasi",
+      "sp_codes": [
+        "1.1.5",
+        "1.1.6"
+      ],
+      "suggested_printed_pages": [
+        2,
+        5
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-004",
+      "title": "Ruang, masa dan tafsiran data",
+      "sp_codes": [
+        "1.1.7",
+        "1.1.8"
+      ],
+      "suggested_printed_pages": [
+        6,
+        9
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-005",
+      "title": "Definisi operasi dan pemboleh ubah",
+      "sp_codes": [
+        "1.1.9",
+        "1.1.10"
+      ],
+      "suggested_printed_pages": [
+        10,
+        14
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-006",
+      "title": "Hipotesis dan eksperimen bayang",
+      "sp_codes": [
+        "1.1.11",
+        "1.1.12"
+      ],
+      "suggested_printed_pages": [
+        15,
+        20
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-007",
+      "title": "Organ dan laluan udara",
+      "sp_codes": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "suggested_printed_pages": [
+        24,
+        28
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-008",
+      "title": "Kandungan udara pernafasan",
+      "sp_codes": [
+        "2.1.3"
+      ],
+      "suggested_printed_pages": [
+        29,
+        30
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-009",
+      "title": "Gerakan dada dan kadar pernafasan",
+      "sp_codes": [
+        "2.1.4",
+        "2.1.5",
+        "2.1.6"
+      ],
+      "suggested_printed_pages": [
+        31,
+        36
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-010",
+      "title": "Perkumuhan dan penyahtinjaan",
+      "sp_codes": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "suggested_printed_pages": [
+        37,
+        40
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-011",
+      "title": "Kepentingan penyingkiran bahan buangan",
+      "sp_codes": [
+        "2.2.3",
+        "2.2.4"
+      ],
+      "suggested_printed_pages": [
+        41,
+        42
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-012",
+      "title": "Rangsangan dan gerak balas",
+      "sp_codes": [
+        "2.3.1",
+        "2.3.2"
+      ],
+      "suggested_printed_pages": [
+        43,
+        45
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-013",
+      "title": "Kepentingan gerak balas",
+      "sp_codes": [
+        "2.3.3",
+        "2.3.4",
+        "2.3.5"
+      ],
+      "suggested_printed_pages": [
+        46,
+        48
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-014",
+      "title": "Organ pernafasan haiwan",
+      "sp_codes": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "suggested_printed_pages": [
+        54,
+        56
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-015",
+      "title": "Haiwan dengan lebih daripada satu organ pernafasan",
+      "sp_codes": [
+        "3.1.3",
+        "3.1.4"
+      ],
+      "suggested_printed_pages": [
+        57,
+        57
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-016",
+      "title": "Vertebrata dan invertebrata",
+      "sp_codes": [
+        "3.2.1",
+        "3.2.2"
+      ],
+      "suggested_printed_pages": [
+        58,
+        59
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-017",
+      "title": "Lima kelas vertebrata",
+      "sp_codes": [
+        "3.2.3",
+        "3.2.4"
+      ],
+      "suggested_printed_pages": [
+        60,
+        63
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-018",
+      "title": "Bahagian tumbuhan dan rangsangan",
+      "sp_codes": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "suggested_printed_pages": [
+        70,
+        75
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-019",
+      "title": "Penyiasatan gerak balas pucuk",
+      "sp_codes": [
+        "4.1.3",
+        "4.1.4"
+      ],
+      "suggested_printed_pages": [
+        70,
+        75
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-020",
+      "title": "Fotosintesis: keperluan dan hasil",
+      "sp_codes": [
+        "4.2.1",
+        "4.2.2",
+        "4.2.3"
+      ],
+      "suggested_printed_pages": [
+        76,
+        79
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-021",
+      "title": "Kepentingan fotosintesis",
+      "sp_codes": [
+        "4.2.4",
+        "4.2.5"
+      ],
+      "suggested_printed_pages": [
+        80,
+        82
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-022",
+      "title": "Cahaya bergerak lurus",
+      "sp_codes": [
+        "5.1.1"
+      ],
+      "suggested_printed_pages": [
+        88,
+        89
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-023",
+      "title": "Bayang objek lutsinar, lut cahaya dan legap",
+      "sp_codes": [
+        "5.1.2"
+      ],
+      "suggested_printed_pages": [
+        90,
+        91
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-024",
+      "title": "Faktor saiz dan bentuk bayang",
+      "sp_codes": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "suggested_printed_pages": [
+        92,
+        93
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-025",
+      "title": "Pantulan dan rajah sinar",
+      "sp_codes": [
+        "5.2.1",
+        "5.2.3"
+      ],
+      "suggested_printed_pages": [
+        94,
+        99
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-026",
+      "title": "Aplikasi pantulan cahaya",
+      "sp_codes": [
+        "5.2.2",
+        "5.2.4"
+      ],
+      "suggested_printed_pages": [
+        96,
+        99
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-027",
+      "title": "Pembiasan cahaya",
+      "sp_codes": [
+        "5.3.1",
+        "5.3.2"
+      ],
+      "suggested_printed_pages": [
+        100,
+        101
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-028",
+      "title": "Pembentukan pelangi",
+      "sp_codes": [
+        "5.3.3",
+        "5.3.4"
+      ],
+      "suggested_printed_pages": [
+        102,
+        105
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-029",
+      "title": "Getaran dan arah bunyi",
+      "sp_codes": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "suggested_printed_pages": [
+        112,
+        114
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-030",
+      "title": "Pantulan bunyi",
+      "sp_codes": [
+        "6.1.3"
+      ],
+      "suggested_printed_pages": [
+        115,
+        117
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-031",
+      "title": "Bunyi berfaedah dan pencemaran bunyi",
+      "sp_codes": [
+        "6.1.4",
+        "6.1.5"
+      ],
+      "suggested_printed_pages": [
+        118,
+        120
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-032",
+      "title": "Sumber dan bentuk tenaga",
+      "sp_codes": [
+        "7.1.1",
+        "7.1.2",
+        "7.1.3"
+      ],
+      "suggested_printed_pages": [
+        124,
+        127
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-033",
+      "title": "Perubahan bentuk tenaga",
+      "sp_codes": [
+        "7.1.4",
+        "7.1.5",
+        "7.1.6"
+      ],
+      "suggested_printed_pages": [
+        128,
+        133
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-034",
+      "title": "Sumber boleh dan tidak boleh dibaharui",
+      "sp_codes": [
+        "7.2.1"
+      ],
+      "suggested_printed_pages": [
+        134,
+        135
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-035",
+      "title": "Penggunaan tenaga berhemah",
+      "sp_codes": [
+        "7.2.2",
+        "7.2.3"
+      ],
+      "suggested_printed_pages": [
+        136,
+        137
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-036",
+      "title": "Sumber asas bahan",
+      "sp_codes": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "suggested_printed_pages": [
+        142,
+        144
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-037",
+      "title": "Sifat bahan: air dan cahaya",
+      "sp_codes": [
+        "8.2.1"
+      ],
+      "suggested_printed_pages": [
+        145,
+        150
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-038",
+      "title": "Sifat bahan: arus elektrik, haba dan kekenyalan",
+      "sp_codes": [
+        "8.2.1"
+      ],
+      "suggested_printed_pages": [
+        145,
+        150
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-039",
+      "title": "Sifat bahan: terapung dan tenggelam",
+      "sp_codes": [
+        "8.2.1"
+      ],
+      "suggested_printed_pages": [
+        145,
+        150
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-040",
+      "title": "Reka cipta objek berdasarkan sifat bahan",
+      "sp_codes": [
+        "8.2.2",
+        "8.2.3",
+        "8.2.4"
+      ],
+      "suggested_printed_pages": [
+        151,
+        152
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-041",
+      "title": "Graviti Bumi",
+      "sp_codes": [
+        "9.1.1",
+        "9.1.2",
+        "9.1.3"
+      ],
+      "suggested_printed_pages": [
+        156,
+        159
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-042",
+      "title": "Putaran dan peredaran Bumi",
+      "sp_codes": [
+        "9.2.1",
+        "9.2.2"
+      ],
+      "suggested_printed_pages": [
+        160,
+        162
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-043",
+      "title": "Kesan putaran Bumi",
+      "sp_codes": [
+        "9.2.3",
+        "9.2.4"
+      ],
+      "suggested_printed_pages": [
+        163,
+        165
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-044",
+      "title": "Beban, fulkrum dan daya",
+      "sp_codes": [
+        "10.1.1"
+      ],
+      "suggested_printed_pages": [
+        170,
+        171
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-045",
+      "title": "Jarak beban dan daya tuas",
+      "sp_codes": [
+        "10.1.2",
+        "10.1.3"
+      ],
+      "suggested_printed_pages": [
+        172,
+        173
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-046",
+      "title": "Jenis mesin ringkas",
+      "sp_codes": [
+        "10.2.1"
+      ],
+      "suggested_printed_pages": [
+        174,
+        176
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-047",
+      "title": "Mesin kompleks",
+      "sp_codes": [
+        "10.2.2",
+        "10.2.3",
+        "10.2.4"
+      ],
+      "suggested_printed_pages": [
+        177,
+        182
+      ],
+      "reference_level": "TOPIC_RANGE_FROM_TOC",
+      "ready": false
+    }
+  ],
+  "policy": "Topic reference index only; not a production mapping or approval. No existing RPT or ordinary RPH changes."
+}
