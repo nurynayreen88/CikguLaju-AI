@@ -1,0 +1,20 @@
+name: RPT2027 science v26 schema inspection read-only
+on:
+  pull_request:
+    paths:
+      - 'scripts/probe_readonly_science_v26_00_schema_staging.py'
+      - '.github/workflows/rpt2027-sains-db-source-inspect.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check split source hash and inventory curriculum table names only
+        run: python -m scripts.probe_readonly_science_v26_00_schema_staging

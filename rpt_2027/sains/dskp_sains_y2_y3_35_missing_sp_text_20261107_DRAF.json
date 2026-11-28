@@ -1,0 +1,374 @@
+{
+  "document_type": "Science 2027 Year2/3 missing SP text crosswalk from KPM DSKP",
+  "date": "2026-11-07",
+  "status": "STAGING_SOURCE_TEXT_ONLY_NOT_RELEASE_APPROVAL",
+  "source_documents": {
+    "2": {
+      "title": "GuruBesar_DSKP_Sains_Tahun_2.pdf",
+      "year": 2016,
+      "url": "https://drive.google.com/file/d/1rr4CjNvhtI13ioiVSTZi65cvap7j1U6Z/view",
+      "sha256": "55af6dad33970f6e32aea17d1bb750ce59af24872a97661374a5ecd3bee94985"
+    },
+    "3": {
+      "title": "GuruBesar_DSKP_Sains_Tahun_3.pdf",
+      "year": 2017,
+      "url": "https://drive.google.com/file/d/1n4OM7x2e1_LIaBQDIxyeHmXglImtu5Yb/view",
+      "sha256": "83711fabd4ddb70423f51a24dac62b1754c50719613a1bfd0cfb9127e0893ce1"
+    }
+  },
+  "page_label": "pdf_page is 1-indexed PDF page, not printed page",
+  "source_procedure": "Extracted only within actual official DSKP SP column bounded by table vector lines; codes tested to appear exactly once; stray Tahap Penguasaan number columns excluded. Spotcheck example pages PDF 60/73 Y2 and 66/75 Y3. Preserve exact source spelling, including potential original typographical errors.",
+  "release_policy": "This adds only the missing SK/SP display text for existing source PdP IDs. It does NOT fill missing RPH, certify teaching sequence, or modify v26.00. Readiness remains DRAF/HOLD.",
+  "records": [
+    {
+      "year": 2,
+      "sp_code": "4.1.4",
+      "pdf_page": 60,
+      "sp_text": "Menjelaskan dengan contoh haiwan melahirkan anak yang banyak dan anak yang sedikit.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "4.1.5",
+      "pdf_page": 60,
+      "sp_text": "Merekod perubahan tumbesaran haiwan dengan memerhati kitar hidup haiwan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "4.1.6",
+      "pdf_page": 61,
+      "sp_text": "Menjelas dengan contoh anak haiwan yang menyerupai induknya dan yang tidak menyerupai induknya.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "4.1.7",
+      "pdf_page": 61,
+      "sp_text": "Menjelaskan pemerhatian tentang pembiakan dan tumbesaran melalui lakaran, TMK, penulisan atau lisan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "5.1.4",
+      "pdf_page": 62,
+      "sp_text": "Menyusun mengikut urutan peringkat tumbesaran tumbuhan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "5.1.5",
+      "pdf_page": 62,
+      "sp_text": "Membuat kesimpulan keperluan asas untuk tumbesaran tumbuhan dengan menjalankan penyiasatan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "5.1.6",
+      "pdf_page": 63,
+      "sp_text": "Menjelaskan pemerhatian tentang proses hidup tumbuhan melalui lakaran, TMK, penulisan atau lisan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "6.1.4",
+      "pdf_page": 64,
+      "sp_text": "Membanding dan membezakan kejelasan bayang-bayang apabila cahaya dihalang oleh objek yang berlainan dengan menjalankan penyiasatan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "6.1.5",
+      "pdf_page": 64,
+      "sp_text": "Mencipta permainan bayang-bayang",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "6.1.6",
+      "pdf_page": 65,
+      "sp_text": "Menjelaskan pemerhatian tentang terang dan gelap melalui lakaran, TMK, penulisan atau lisan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "7.1.5",
+      "pdf_page": 66,
+      "sp_text": "Merekod nyalaan mentol dengan mengantikan suis dengan objek atau bahan dengan menjalankan penyiasatan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "7.1.6",
+      "pdf_page": 67,
+      "sp_text": "Mengitlak objek yang boleh menyalakan mentol dalam litar adalah konduktor dan yang tidak menyalakan mentol adalah penebat.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "7.1.7",
+      "pdf_page": 67,
+      "sp_text": "Menjelaskan pemerhatian tentang litar elektrik melalui lakaran, TMK, penulisan atau lisan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "8.1.4",
+      "pdf_page": 68,
+      "sp_text": "Merumuskan cara bahan boleh dilarutkan dengan lebih cepat dengan menjalankan penyiasatan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "8.1.5",
+      "pdf_page": 69,
+      "sp_text": "Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "9.1.4",
+      "pdf_page": 70,
+      "sp_text": "Membuat urutan kitar air semulajadi.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "9.1.5",
+      "pdf_page": 70,
+      "sp_text": "Menjelaskan pemerhatian tentang kitaran air melalui lakaran, TMK, penulisan atau lisan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "9.2.5",
+      "pdf_page": 71,
+      "sp_text": "Mencipta alat atau model dengan mengaplikasikan pengetahuan yang menunjukkan kegunaan udara yang bergerak.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "9.2.6",
+      "pdf_page": 71,
+      "sp_text": "Menjelaskan pemerhatian tentang udara melalui lakaran, TMK, penulisan atau lisan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "sp_code": "10.1.6",
+      "pdf_page": 73,
+      "sp_text": "Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "3.1.4",
+      "pdf_page": 66,
+      "sp_text": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "3.1.5",
+      "pdf_page": 66,
+      "sp_text": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "4.1.5",
+      "pdf_page": 70,
+      "sp_text": "Menjelaskan pemerhatian tentang tabiat pemakanan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "5.1.4",
+      "pdf_page": 71,
+      "sp_text": "Menjelaskan pemerhatian tentang pembiakan tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "6.1.5",
+      "pdf_page": 74,
+      "sp_text": "Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "6.1.6",
+      "pdf_page": 74,
+      "sp_text": "Menyelesaikan masalah untuk menentukan isi padu pepejal tidak sekata melalui kaedah sesaran air.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "6.1.7",
+      "pdf_page": 75,
+      "sp_text": "Menjelaskan pemerhatian tentang pengukuran luas dan isi padu melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "7.1.3",
+      "pdf_page": 76,
+      "sp_text": "Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "7.1.4",
+      "pdf_page": 76,
+      "sp_text": "Menjelaskan pemerhatian tentang objek atau bahan yang lebih tumpat dan kurang tumpat daripada air melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "8.1.3",
+      "pdf_page": 78,
+      "sp_text": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "8.1.4",
+      "pdf_page": 78,
+      "sp_text": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "9.1.4",
+      "pdf_page": 80,
+      "sp_text": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "9.1.5",
+      "pdf_page": 80,
+      "sp_text": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "10.1.4",
+      "pdf_page": 82,
+      "sp_text": "Mereka cipta model takal yang berfungsi.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "sp_code": "10.1.5",
+      "pdf_page": 82,
+      "sp_text": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source": "KPM_DSKP_SAINS_OFFICIAL_PDF_TEXT_SP_COLUMN",
+      "teacher_approval": false,
+      "visual_audit_status": "TABLE_SP_COLUMN_EXTRACTED_AND_SAMPLE_PAGES_INSPECTED",
+      "ready": false
+    }
+  ]
+}

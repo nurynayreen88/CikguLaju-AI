@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "date": "2026-11-07",
+  "status": "STAGING_TEACHER_REVIEW_10_CANDIDATE_PDP_NOT_APPROVED_RPH",
+  "scope": "Only five truly absent original v25.82 Sains SK units; 21 missing topic SP; 10 candidate teaching sessions. Other 8 content SP must integrate existing PdP and 51 crosscutting skills need actual lesson observations.",
+  "source_basis": "Year4-6 verified DSKP SP, checked against source coverage gap JSON; activity wording is original CikguLaju draft proposal, not quoted from KPM textbooks.",
+  "units": [
+    {
+      "year": 4,
+      "sk": "3.3",
+      "title": "Gerak balas manusia terhadap rangsangan",
+      "blocks": [
+        {
+          "sp": [
+            "3.3.1",
+            "3.3.2"
+          ],
+          "goal": "Membezakan rangsangan dan gerak balas melalui contoh organ deria dalam situasi harian.",
+          "teacher": "Guru menunjukkan kad situasi cahaya, bunyi dan sentuhan tanpa mengejutkan murid; memodelkan hubungan rangsangan-organ deria-gerak balas.",
+          "students": "Murid mengelaskan enam kad situasi kepada rangsangan, organ deria dan gerak balas; berpasangan membentang contoh sendiri dan membetulkan rantaian sebab-akibat.",
+          "assessment": "Jadual tiga lajur dengan sekurang-kurangnya empat padanan tepat, disemak secara lisan.",
+          "proposal_id": "S27-Y4-SK3.3-B1",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        },
+        {
+          "sp": [
+            "3.3.3",
+            "3.3.4",
+            "3.3.5"
+          ],
+          "goal": "Menaakul kepentingan gerak balas, mengenal pasti tabiat yang mengganggu dan melaporkan pemerhatian.",
+          "teacher": "Guru memandu perbandingan situasi keselamatan seperti amaran bunyi dan penggunaan telefon ketika berjalan, serta menetapkan pemerhatian tanpa sentuhan berisiko.",
+          "students": "Kumpulan membina carta sebab-akibat berdasarkan situasi, merumus dua tabiat yang mengganggu kepekaan, lalu membentangkan dapatan melalui lakaran atau penerangan lisan.",
+          "assessment": "Carta sebab-akibat, alasan keselamatan dan pembentangan pemerhatian.",
+          "proposal_id": "S27-Y4-SK3.3-B2",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "sk": "3.4",
+      "title": "Pewarisan",
+      "blocks": [
+        {
+          "sp": [
+            "3.4.1",
+            "3.4.2"
+          ],
+          "goal": "Menyatakan maksud pewarisan dan mengenal pasti ciri yang boleh diwarisi daripada keturunan.",
+          "teacher": "Guru menerangkan pewarisan menggunakan gambar haiwan induk-anak atau tumbuhan, tanpa meminta data genetik atau foto keluarga peribadi murid.",
+          "students": "Murid memadankan foto induk dan anak, mengenal pasti persamaan ciri yang boleh diperhatikan, dan menulis definisi pewarisan sendiri.",
+          "assessment": "Lembaran padanan induk-anak dan definisi bertulis menggunakan istilah tepat.",
+          "proposal_id": "S27-Y4-SK3.4-B1",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        },
+        {
+          "sp": [
+            "3.4.3",
+            "3.4.4"
+          ],
+          "goal": "Memberi contoh ciri diwarisi dan mempersembahkan pemerhatian secara lakaran atau penerangan.",
+          "teacher": "Guru menunjukkan contoh ciri keturunan daripada bahan visual yang tidak mendedahkan identiti sebenar, lalu membezakan ciri diwarisi dan kebiasaan yang dipelajari.",
+          "students": "Murid menghasilkan peta ciri bagi pasangan ilustrasi fiksyen, menjelaskan alasan dan menyiapkan rumusan pemerhatian dalam bentuk poster ringkas.",
+          "assessment": "Poster/peta ciri dengan sekurang-kurangnya tiga contoh dan alasan tepat.",
+          "proposal_id": "S27-Y4-SK3.4-B2",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        }
+      ]
+    },
+    {
+      "year": 5,
+      "sk": "6.2",
+      "title": "Pengembangan dan pengecutan bahan",
+      "blocks": [
+        {
+          "sp": [
+            "6.2.1",
+            "6.2.2"
+          ],
+          "goal": "Mengaitkan pengembangan dan pengecutan bahan apabila menerima atau kehilangan haba dengan kegunaan harian.",
+          "teacher": "Guru menyediakan demonstrasi selamat botol-belon dalam air suam yang dikendalikan guru serta air suhu bilik, membimbing murid membuat ramalan dan mencatat data kualitatif.",
+          "students": "Murid memerhati perubahan belon, melakar model zarah ringkas sebagai penjelasan, dan membincangkan sebab sambungan jambatan atau wayar elektrik mempunyai ruang/perubahan panjang.",
+          "assessment": "Jadual ramalan-pemerhatian-kesimpulan dan satu aplikasi harian dengan sebab; tidak menggunakan air mendidih.",
+          "proposal_id": "S27-Y5-SK6.2-B1",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        }
+      ]
+    },
+    {
+      "year": 5,
+      "sk": "10.2",
+      "title": "Mesin kompleks dan reka bentuk lestari",
+      "blocks": [
+        {
+          "sp": [
+            "10.2.1",
+            "10.2.2"
+          ],
+          "goal": "Mengenal pasti mesin ringkas dalam mesin kompleks dan menerangkan gabungannya.",
+          "teacher": "Guru menunjukkan gambar atau model basikal, kereta sorong dan stapler; membimbing murid mengenal pasti roda dan gandar, tuas, satah condong atau skru mengikut contoh.",
+          "students": "Murid melabel komponen pada dua mesin kompleks dan membandingkan cara gabungan mesin ringkas memudahkan kerja.",
+          "assessment": "Rajah berlabel serta penerangan fungsi sekurang-kurangnya dua komponen.",
+          "proposal_id": "S27-Y5-SK10.2-B1",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        },
+        {
+          "sp": [
+            "10.2.3",
+            "10.2.4"
+          ],
+          "goal": "Mencadangkan kepentingan mesin lestari dan mereka bentuk serta mempersembahkan model mesin kompleks.",
+          "teacher": "Guru menetapkan cabaran membina model pengangkat bahan ringan daripada kadbod terpakai, straw dan tali; menekankan keselamatan gunting dan kestabilan struktur.",
+          "students": "Kumpulan melakar dua idea, memilih satu reka bentuk lestari, membina model dengan komponen mesin ringkas, menguji beban ringan dan membentangkan penambahbaikan.",
+          "assessment": "Lakaran, model berfungsi, sebab pemilihan bahan dan rubrik kerja kumpulan.",
+          "proposal_id": "S27-Y5-SK10.2-B2",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        },
+        {
+          "sp": [
+            "10.2.5"
+          ],
+          "goal": "Menjelaskan pemerhatian tentang mesin kompleks melalui lakaran, penulisan atau persembahan.",
+          "teacher": "Guru membimbing perbandingan sebelum-selepas pengujian model dan membincangkan bukti keberkesanan serta had reka bentuk.",
+          "students": "Murid mendokumentasikan langkah uji, masalah dan penambahbaikan menggunakan gambar/lakaran, kemudian membuat rumusan fungsi mesin kompleks.",
+          "assessment": "Laporan ringkas dengan pemerhatian, bukti dan cadangan penambahbaikan.",
+          "proposal_id": "S27-Y5-SK10.2-B3",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        }
+      ]
+    },
+    {
+      "year": 6,
+      "sk": "3.2",
+      "title": "Sistem saraf manusia",
+      "blocks": [
+        {
+          "sp": [
+            "3.2.1",
+            "3.2.2"
+          ],
+          "goal": "Mengenal pasti sistem saraf pusat dan periferi serta menghuraikan fungsi masing-masing.",
+          "teacher": "Guru menggunakan diagram berlabel otak, saraf tunjang dan saraf periferi untuk menunjukkan laluan isyarat deria dan tindakan, tanpa menyamakan reaksi semua individu.",
+          "students": "Murid membina peta alir rangsangan-organ deria-saraf periferi-sistem pusat-tindak balas dan menerangkan perbezaan fungsi melalui kad peranan.",
+          "assessment": "Lakaran berlabel dan penerangan laluan isyarat secara lisan.",
+          "proposal_id": "S27-Y6-SK3.2-B1",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        },
+        {
+          "sp": [
+            "3.2.3",
+            "3.2.4",
+            "3.2.5"
+          ],
+          "goal": "Meramalkan kesan gangguan sistem saraf periferi, mencadangkan langkah penjagaan dan melaporkan pemerhatian.",
+          "teacher": "Guru menyediakan kes rekaan seperti hilang sensasi pada tangan untuk perbincangan konsep dan menekankan ia bukan ujian diagnosis atau nasihat rawatan; jelaskan keselamatan postur, rehat dan topi keledar.",
+          "students": "Kumpulan membina peta sebab-akibat senario, menyenaraikan amalan perlindungan sistem saraf dan menghasilkan poster rumusan dengan sumber DSKP.",
+          "assessment": "Poster dan jawapan senario yang membezakan sistem pusat/periferi serta dua amalan penjagaan.",
+          "proposal_id": "S27-Y6-SK3.2-B2",
+          "pdp_week_2027": null,
+          "printed_textbook_page": null,
+          "teacher_signoff": false
+        }
+      ]
+    }
+  ],
+  "proposed_pdp_count": 10,
+  "required_sp_count": 21,
+  "official_new_lesson_ids_assigned": false,
+  "ready_for_web_telegram": false,
+  "production_changes": 0
+}

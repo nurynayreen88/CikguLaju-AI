@@ -36,3 +36,15 @@ Semak data: `python scripts/check_rbt_t4_t6_2027.py`.
 - 96/96 langkah RPH telah dikhususkan kepada tugasan reka bentuk, penghasilan produk, kemahiran dan penilaian projek mengikut bidang; bukan ayat generik yang sama untuk semua subjek.
 - Semua bahan kekal DRAF; 0 kelulusan guru, 0 pengujian penjana natif Word/PDF, 0 pengaktifan pengguna.
 - Sumber awam rujukan edisi Tahun 6: https://fliphtml5.com/rjdzf/cwso/basic (cetakan pertama 2021, ISBN 978-983-49-3283-1). RPT 2026 sumber silang: https://sites.google.com/moe-dl.edu.my/teduristopcenter/kurikulum/pengurusan-panitia/panitia-reka-bentuk-teknologi ; rujukan belum disahkan secara baris demi baris.
+
+
+## Audit minggu/tarikh selepas pembetulan RPT 2027 (7 November 2026)
+
+- PDF RBT Tahun 4, 5 dan 6 kini menggunakan format lima lajur dengan kod dan pernyataan penuh SK/SP dan muka depan minimum (logo sekolah, nama sekolah, nama guru), tetapi **96/96 PdP masih tiada alokasi minggu dan tarikh Kumpulan A/B dalam sumber CSV**.
+- Kalendar induk 2027 CikguLaju mempunyai 44 minggu berjadual bagi setiap kumpulan. **Peruntukan 32 jam setahun RBT bukan bukti bahawa PdP 001 mesti diletakkan pada M01 atau satu PdP/minggu**; pengagihan mengikut jadual sekolah/guru dan masa projek.
+- Sumber perbandingan RPT 2026 telah dikenal pasti pada laman sekolah (rujukan **sejarah susunan SK/SP, bukan salinan tarikh atau minggu 2027**):
+  - https://sites.google.com/moe-dl.edu.my/teduristopcenter/kurikulum/pengurusan-panitia/panitia-reka-bentuk-teknologi — RPT Tahun 4, 5 dan 6 2026 (.docx)
+  - https://sites.google.com/moe-dl.edu.my/sjkcminsin/kurikulum/panitia-reka-bentuk-teknologi — RPT Tahun 4–6 2026 (.pdf)
+  - https://sites.google.com/moe-dl.edu.my/panitia-tmk-rbt-skepa/dskprpt — dokumen RPT Tahun 4–6 (tahun/cetakan perlu disahkan)
+- Langkah pengesahan: padan urutan setiap PdP dengan DSKP dan RPT 2026, kemudian masukkan minggu 2027 **hanya apabila** ada jadual kelas sebenar atau agihan sekolah yang boleh dijejak; validasi hari PdP sebenar menggunakan indeks negeri KPM/BKPP. Kumpulan A/B boleh berbeza dan tidak boleh disamakan tanpa bukti.
+- Penjana staging tidak mengubah rekod pengguna atau menampal tarikh anggaran, dan status terus **DRAF / BLOCKED**.

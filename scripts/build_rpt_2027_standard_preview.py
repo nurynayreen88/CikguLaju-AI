@@ -10,6 +10,11 @@ import re
 from pathlib import Path
 
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
+from rpt_2027.common.standard_text_enrichment import enrich_moral, enrich_psv, enrich_rbt
+from rpt_2027.common.calendar_week_mapping_staging import reconcile_psv_weeks
+from rpt_2027.common.rbt_truncated_title_guard_staging import expand_rbt_display_titles
+from rpt_2027.common.rbt_2026_week_source_annotation_staging import annotate_rbt_2026_week_reference
+from rpt_2027.common.week1_owner_plan_20261110 import allocate_rbt_weeks
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging" / "rpt_2027_seragam_2026" / "pdf"
@@ -57,6 +62,8 @@ def psv_records(year):
                     (". Buku teks: "+book if book else "")+
                     ". Tarikh dan halaman BT: cadangan, perlu disemak."
         })
+    enrich_psv(year,output)
+    reconcile_psv_weeks(output)
     validate_rows("psv",year,output)
     return output
 
@@ -82,6 +89,9 @@ def rbt_records(year):
                     (r.get("Rujukan Buku Teks m/s") or "belum disahkan")+
                     ". Tarikh A/B belum dinyatakan dalam sumber; tidak diandaikan.")
         })
+    enrich_rbt(year,output)
+    expand_rbt_display_titles(year,rows,output)
+    annotate_rbt_2026_week_reference(year,output)
     validate_rows("rbt",year,output)
     return output
 
@@ -112,6 +122,7 @@ def moral_records(year):
                     " Aktiviti murid: "+left["Aktiviti_Murid"]+
                     " PBD: "+left["Evidens_PBD"].strip().rstrip(" .")+".")
         })
+    enrich_moral(year,output)
     validate_rows("moral",year,output)
     return output
 
@@ -126,6 +137,12 @@ def build_all(destination=OUT):
     ):
         for year in years:
             rows=loader(year)
+            if subject=="rbt":
+                # Keep rbt_records() source-faithful for teacher override paths.
+                # Only staging PDF uses the owner-requested provisional plan.
+                rows=allocate_rbt_weeks(rows, year=year)
+            if any(not row.get("sk_display") or not row.get("sp_display") for row in rows):
+                raise ValueError("All staged RPT rows must have full sourced SK/SP statements")
             target=destination / f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_FORMAT_SERAGAM_DRAF.pdf"
             build_preview(subject,year,rows,target)
             built.append((subject,year,len(rows),target))
