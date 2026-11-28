@@ -1,0 +1,1245 @@
+{
+  "status": "DRAFT_TSV_SOURCE_PBD_ALIGNED",
+  "year": 4,
+  "total": 36,
+  "prior_batch_blobs": [
+    "2162264fd25c2a2493b6a4dce789bd8e194a8169",
+    "0e6dfa4c090d1b93d627ef36e862ed8c958e9ec2",
+    "9a1c0874dd46966f61561ca36883a716505769b1"
+  ],
+  "source_files": [
+    {
+      "minutes": 30,
+      "path": "staging/matematik/tahun4/slot_30_minit.tsv",
+      "sha": "619869a8b9799695995f2bf229b5714607226124"
+    },
+    {
+      "minutes": 60,
+      "path": "staging/matematik/tahun4/slot_60_minit.tsv",
+      "sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5"
+    }
+  ],
+  "scope": "36 previously uncovered source slots 041–080; combined drafts cover all 001–080. Retains source PBD/evidence; 60-minute TSV lacks SP field. For currency tasks use BNM dated reference at teaching time, no rates invented.",
+  "limitations": "Native full SK/SP, objectives, criteria, academic approval, actual catalogue identity, Word/PDF generation and authenticated Web delivery still pending. No RPT or production changes.",
+  "records": [
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 41,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penambahan hingga tiga nilai wang",
+      "source_pages": "105–107",
+      "source_minutes": 60,
+      "source_pbd_task": "Jumlahkan RM12 476.80, RM3 628.75 dan RM942.60. Anggar sendiri dahulu kepada ratus terdekat dan bandingkan dengan hasil sebenar.",
+      "source_pbd_evidence": "RM17 048.15. Contoh anggaran RM17 000 daripada RM12 500 + RM3 600 + RM900.",
+      "phases": {
+        "engagement": "Guru papar tiga resit dengan amaun hingga sen; murid anggar jumlah.",
+        "exploration": "Pasangan bundarkan amaun kepada ratus dan susun nilai sebenar dalam lajur.",
+        "explanation": "Guru model penjajaran ringgit dan sen serta pertukaran 100 sen kepada RM1.",
+        "elaboration": "Murid jumlahkan RM8 425.70, RM2 318.85 dan RM1 207.60; banding anggaran.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Resit rekaan, jadual ringgit/sen",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Tambah dua amaun sebelum ketiga",
+        "pengayaan": "Cari tiga amaun berjumlah tepat RM10 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 42,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penolakan hingga dua nilai wang daripada satu nilai wang",
+      "source_pages": "108–109",
+      "source_minutes": 60,
+      "source_pbd_task": "Daripada RM41 200.80, bayar RM16 780.45 dan RM8 309.25. Rekod baki pertengahan dan akhir.",
+      "source_pbd_evidence": "RM24 420.35 dan RM16 111.10. Semak bahawa jumlah bayaran dan baki sama dengan amaun asal.",
+      "phases": {
+        "engagement": "Guru beri peruntukan dan dua invois; murid ramal baki.",
+        "exploration": "Pasangan bina rajah bar untuk baki pertama dan kedua.",
+        "explanation": "Guru model penolakan wang dengan pengumpulan semula; semak tambah kos dan baki.",
+        "elaboration": "Murid kira baki RM32 500.40 selepas bayar RM8 740.65 dan RM6 125.80.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad invois, rajah bar",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Catat baki pertama dahulu",
+        "pengayaan": "Cari satu kos jika baki akhir dan kos lain diberi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 43,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Darab nilai wang dengan nombor hingga dua digit",
+      "source_pages": "112–113",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 18 × RM85.75 dan 24 × RM106.35. Tunjuk hasil separa untuk satu item.",
+      "source_pbd_evidence": "RM1 543.50 dan RM2 552.40. Hasil separa dikumpul dengan nilai ringgit dan sen sejajar.",
+      "phases": {
+        "engagement": "Guru tunjuk pesanan 16 barang pada RM48.75 seunit.",
+        "exploration": "Pasangan cerakinkan 16 kepada 10 dan 6 serta bina hasil separa.",
+        "explanation": "Guru model darab harga dengan dua digit dan format dua tempat perpuluhan.",
+        "elaboration": "Murid kira 26 × RM37.45 dan 14 × RM128.60; tunjuk hasil separa satu.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad pesanan, carta nilai tempat",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Tukar harga kepada sen jika perlu",
+        "pengayaan": "Banding hasil tepat dengan anggaran."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 44,
+      "source_sp_codes": [
+        "3.1.3"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mendarab nilai wang dengan nombor dua digit",
+      "source_pages": "112–113",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira kos 36 set pada RM225 dan 18 set pada RM148. Sertakan unit wang.",
+      "source_pbd_evidence": "RM8 100 dan RM2 664.",
+      "phases": {
+        "engagement": "Guru papar harga seunit RM135 untuk 24 set.",
+        "exploration": "Pasangan padankan bilangan set dengan hasil darab separa.",
+        "explanation": "Guru model 24 × RM135 serta unit wang.",
+        "elaboration": "Murid kira 28 set RM175 dan 16 set RM208.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad harga, jadual darab",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Cerakinkan pengganda dua digit",
+        "pengayaan": "Bina pesanan berlainan dengan jumlah kos sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 45,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Bahagi nilai wang dengan nombor hingga dua digit",
+      "source_pages": "114–115",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira RM2 916.00 ÷ 18 dan RM1 287.00 ÷ 12. Sahkan satu hasil dengan operasi darab.",
+      "source_pbd_evidence": "RM162.00 dan RM107.25. Satu semakan darab tepat.",
+      "phases": {
+        "engagement": "Guru beri dana RM1 680 untuk 14 kumpulan sama.",
+        "exploration": "Pasangan susun langkah bahagi dan uji melalui darab.",
+        "explanation": "Guru model RM1 680 ÷ 14 = RM120 dan cara mengekalkan unit sen.",
+        "elaboration": "Murid kira RM1 980 ÷ 15 dan RM2 574 ÷ 12; semak satu.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad dana, jadual agihan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Gunakan jadual gandaan pembahagi",
+        "pengayaan": "Cipta agihan dengan hasil hingga sen."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 46,
+      "source_sp_codes": [
+        "3.1.4"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "membahagi jumlah wang dengan nombor dua digit",
+      "source_pages": "114–115",
+      "source_minutes": 30,
+      "source_pbd_task": "Cari nilai seunit bagi RM9 240 untuk 22 barang dan RM5 400 untuk 15 barang.",
+      "source_pbd_evidence": "RM420 dan RM360.",
+      "phases": {
+        "engagement": "Guru beri jumlah kos 20 barang dan minta cari harga seunit.",
+        "exploration": "Pasangan gunakan rajah kumpulan untuk membina ayat bahagi.",
+        "explanation": "Guru model RM7 200 ÷ 24 = RM300; semak darab.",
+        "elaboration": "Murid cari harga seunit bagi RM6 480 untuk 18 barang dan RM8 400 untuk 21 barang.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad kos, rajah kumpulan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Tulis jumlah ÷ bilangan barang",
+        "pengayaan": "Cari bilangan barang apabila harga seunit dan jumlah diberi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 47,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung tambah dan tolak wang",
+      "source_pages": "110–111",
+      "source_minutes": 60,
+      "source_pbd_task": "Mulakan dengan RM5 280.40. Bayar RM1 245.80 dan terima RM890.35. Catat ayat bergabung dan baki selepas dua perubahan.",
+      "source_pbd_evidence": "RM5 280.40 − RM1 245.80 + RM890.35 = RM4 924.95. Baki pertengahan RM4 034.60.",
+      "phases": {
+        "engagement": "Guru tunjuk buku tunai dengan baki, belanja dan terimaan.",
+        "exploration": "Pasangan bina urutan operasi daripada transaksi.",
+        "explanation": "Guru model RM4 600.50 − RM850.25 + RM325.70 serta rekod baki perantaraan.",
+        "elaboration": "Murid kira RM3 250.80 − RM485.40 + RM620.75 dan semak perubahan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Buku tunai rekaan, kad transaksi",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Gunakan lajur masuk dan keluar",
+        "pengayaan": "Bina cerita yang hasilnya baki tepat RM5 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 48,
+      "source_sp_codes": [
+        "3.2.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menjumlah dan menolak daripada baki wang",
+      "source_pages": "110–111",
+      "source_minutes": 30,
+      "source_pbd_task": "Selesaikan RM24 800 + RM3 250 − RM7 580 dan RM10 500 − RM2 500 + RM985.",
+      "source_pbd_evidence": "RM20 470 dan RM8 985.",
+      "phases": {
+        "engagement": "Guru paparkan dua ayat tambah-tolak wang; murid pilih operasi pertama.",
+        "exploration": "Pasangan susun kad perubahan positif dan negatif.",
+        "explanation": "Guru model kiri ke kanan serta semakan tanda operasi.",
+        "elaboration": "Murid kira RM18 450 + RM2 650 − RM4 800 dan RM12 600 − RM3 250 + RM1 450.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad transaksi, papan mini",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Catat hasil perantaraan",
+        "pengayaan": "Betulkan ayat matematik yang menukar tambah kepada tolak."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 49,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung darab dan bahagi wang",
+      "source_pages": "116–117",
+      "source_minutes": 60,
+      "source_pbd_task": "Cari nilai 24 × RM38.75 ÷ 15, kemudian nilai RM2 304.00 ÷ 12 × 5. Nyatakan hasil perantaraan masing-masing.",
+      "source_pbd_evidence": "RM930.00 kemudian RM62.00; RM192.00 kemudian RM960.00.",
+      "phases": {
+        "engagement": "Guru tunjuk belian beberapa set yang diagih kepada kumpulan.",
+        "exploration": "Pasangan padankan darab untuk jumlah kos dan bahagi untuk kos setiap kumpulan.",
+        "explanation": "Guru model 18 × RM25.50 ÷ 9 serta RM1 440 ÷ 12 × 4 dari kiri ke kanan.",
+        "elaboration": "Murid kira 16 × RM42.75 ÷ 12 dan RM2 100 ÷ 15 × 3.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad operasi, jadual wang",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Catat hasil pertama dengan unit",
+        "pengayaan": "Cipta ayat operasi bergabung yang hasilnya RM100."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 50,
+      "source_sp_codes": [
+        "3.2.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengira gabungan darab dan bahagi wang",
+      "source_pages": "116–117",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira RM9 600 ÷ 16 × 7 dan RM145 × 24 ÷ 6. Tulis hasil perantaraan bagi satu item.",
+      "source_pbd_evidence": "RM4 200 dan RM580.",
+      "phases": {
+        "engagement": "Guru papar RM6 300 ÷ 14 × 3 dan RM125 × 16 ÷ 8.",
+        "exploration": "Pasangan pilih urutan dan anggar hasil.",
+        "explanation": "Guru model keutamaan sama bagi darab dan bahagi, kira kiri ke kanan.",
+        "elaboration": "Murid kira RM7 200 ÷ 12 × 5 dan RM180 × 18 ÷ 9.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad turutan, papan mini",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Lakukan satu operasi setiap baris",
+        "pengayaan": "Terangkan kesilapan apabila darab dibuat dahulu tanpa sebab."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 51,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Merancang bajet untuk matlamat kewangan",
+      "source_pages": "118–119, 121",
+      "source_minutes": 60,
+      "source_pbd_task": "Sediakan bajet mingguan RM65 untuk makanan RM30, pengangkutan RM12 dan simpanan. Cari tempoh untuk mencapai sekurang-kurangnya RM80 dengan simpanan yang sama.",
+      "source_pbd_evidence": "Simpanan RM23 seminggu. Empat minggu, kerana tiga minggu RM69 manakala empat minggu RM92.",
+      "phases": {
+        "engagement": "Guru beri elaun mingguan RM50 dan matlamat simpanan RM60.",
+        "exploration": "Pasangan agihkan wang kepada keperluan dan simpanan menggunakan jadual bajet.",
+        "explanation": "Guru model cara mencari simpanan mingguan dan bilangan minggu penuh untuk mencapai sasaran.",
+        "elaboration": "Murid rancang RM70 seminggu dengan makanan RM32 dan pengangkutan RM15; cari tempoh mencapai RM100.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad bajet, jadual simpanan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Asingkan keperluan dan simpanan",
+        "pengayaan": "Banding dua pelan yang mencapai sasaran pada tempoh berbeza."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 52,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Merekodkan simpanan dan perbelanjaan",
+      "source_pages": "119–120",
+      "source_minutes": 60,
+      "source_pbd_task": "Bina rekod bertarikh dengan baki awal RM20. Simpan RM12 pada Isnin, belanja RM8.50 pada Selasa dan simpan RM5 pada Rabu. Kira baki setiap hari.",
+      "source_pbd_evidence": "Isnin RM32.00, Selasa RM23.50, Rabu RM28.50. Terimaan dan belanja dikelaskan betul.",
+      "phases": {
+        "engagement": "Guru tunjuk catatan baki awal dan tiga transaksi.",
+        "exploration": "Pasangan asingkan simpanan daripada perbelanjaan serta susun mengikut tarikh.",
+        "explanation": "Guru model baki awal RM15, tambah RM8 dan tolak RM4.50 pada hari berikutnya.",
+        "elaboration": "Murid bina rekod tiga hari daripada baki RM25, simpan RM10, belanja RM6.75 dan simpan RM4.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Buku rekod contoh, kad transaksi",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Gunakan lajur tarikh, terimaan, belanja dan baki",
+        "pengayaan": "Semak satu rekod yang mempunyai transaksi tersalah tanda."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 53,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Kepentingan rekod simpanan dan perbelanjaan",
+      "source_pages": "120–121",
+      "source_minutes": 60,
+      "source_pbd_task": "Dua catatan sama-sama menunjukkan baki RM27, tetapi satu tiada tarikh dan tiada butiran belanja. Beri dua sebab catatan lengkap membantu dan cadangkan satu tindakan.",
+      "source_pbd_evidence": "Dua sebab munasabah seperti menjejak belanja dan mengesan kesilapan. Satu tindakan boleh diaudit seperti merekod tarikh serta amaun transaksi.",
+      "phases": {
+        "engagement": "Guru paparkan dua rekod kewangan, satu tanpa tarikh dan butiran.",
+        "exploration": "Pasangan cari maklumat hilang dan kesannya terhadap semakan.",
+        "explanation": "Guru jelaskan rekod lengkap membantu menjejak belanja, mengesan kesilapan dan merancang simpanan.",
+        "elaboration": "Murid baiki rekod contoh dengan tarikh, butiran dan amaun; berikan alasan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Rekod rekaan, kad senarai semak",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Gunakan contoh catatan lengkap",
+        "pengayaan": "Cadang kaedah menyemak baki setiap minggu."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 55,
+      "source_sp_codes": [
+        "3.5.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "memadankan mata wang negara utama dunia",
+      "source_pages": "124",
+      "source_minutes": 30,
+      "source_pbd_task": "Padankan Jepun, United Kingdom dan Amerika Syarikat dengan mata wang pada tiga kad. Sebut satu nama lengkap.",
+      "source_pbd_evidence": "Yen, paun sterling dan dolar Amerika Syarikat.",
+      "phases": {
+        "engagement": "Guru papar kad negara dan simbol mata wang tanpa pasangan.",
+        "exploration": "Pasangan padankan Jepun, UK dan AS dengan nama mata wang menggunakan kad rujukan.",
+        "explanation": "Guru jelaskan nama yen, paun sterling dan dolar Amerika Syarikat serta beza nama dan simbol.",
+        "elaboration": "Murid padankan kad negara tambahan Malaysia dan Singapura dengan ringgit dan dolar Singapura; ulang tiga negara sasaran.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad negara, kad mata wang",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Gunakan pasangan gambar negara dan nama penuh",
+        "pengayaan": "Bina kuiz mata wang tanpa menggunakan kadar pertukaran."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 56,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Menyatakan nilai RM1 dalam mata wang asing",
+      "source_pages": "125",
+      "source_minutes": 60,
+      "source_pbd_task": "Pada jadual BNM bertarikh, baca nombor dalam kurungan siku bagi JPY, SGD, USD dan GBP pada lajur Middle Rate. Catat nilai setara RM1, unit mata wang dan tarikh dagangan.",
+      "source_pbd_evidence": "Sekurang-kurangnya tiga daripada empat nilai, unit dan tarikh sepadan dengan kadar pertengahan setara RM1. Sumber jadual https://www.bnm.gov.my/latest-rates.",
+      "phases": {
+        "engagement": "Guru tunjuk jadual kadar BNM bertarikh yang disediakan sebelum kelas.",
+        "exploration": "Pasangan cari lajur Middle Rate dan nilai setara RM1 dalam kurungan siku; semak unit.",
+        "explanation": "Guru model cara menyalin nilai daripada satu baris contoh tanpa mengubah kadar atau tarikh.",
+        "elaboration": "Murid cari dan catat dua mata wang lain daripada jadual sama, kemudian banding catatan rakan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jadual BNM bertarikh, kad unit mata wang",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Sorot baris dan lajur sasaran",
+        "pengayaan": "Terangkan mengapa tarikh jadual penting dan kadar boleh berubah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 57,
+      "source_sp_codes": [
+        "3.5.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "membaca nilai RM1 dalam jadual kadar mata wang",
+      "source_pages": "125",
+      "source_minutes": 30,
+      "source_pbd_task": "Salin dua nilai setara RM1 daripada jadual, dengan unit dan tarikh dagangan.",
+      "source_pbd_evidence": "Dua nilai dan unit sepadan dengan angka dalam kurungan siku pada kadar pertengahan, bersama tarikh dagangan yang betul.",
+      "phases": {
+        "engagement": "Guru tunjuk dua baris kadar pertukaran dalam jadual bertarikh.",
+        "exploration": "Pasangan kesan unit mata wang dan angka dalam kurungan siku.",
+        "explanation": "Guru model bacaan setara RM1 daripada jadual sebenar yang guru sediakan, bukan angka rekaan.",
+        "elaboration": "Murid salin dua nilai contoh latihan daripada baris berlainan dengan tarikh dagangan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jadual kadar BNM bertarikh, lembar catatan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Gunakan penanda warna bagi unit dan tarikh",
+        "pengayaan": "Banding dua jadual berlainan tarikh tanpa menganggap kadar kekal."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 58,
+      "source_sp_codes": [
+        "3.6.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengenal instrumen pembayaran dalam situasi",
+      "source_pages": "126–127",
+      "source_minutes": 30,
+      "source_pbd_task": "Padankan empat kad gambar dengan nama instrumen dan beri satu situasi yang sesuai.",
+      "source_pbd_evidence": "Sekurang-kurangnya tiga daripada empat padanan tepat, termasuk e-dompet. Situasi sesuai dengan instrumen yang dipilih.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar wang tunai, kad dan skrin e-dompet.",
+        "exploration": "Pasangan padankan empat kad instrumen yang disediakan guru dengan nama.",
+        "explanation": "Guru jelaskan cara mengenal tunai, kad debit, kad kredit dan e-dompet serta kegunaan contoh.",
+        "elaboration": "Murid pilih instrumen bagi kedai tunai sahaja, pembayaran kad debit dan kedai yang menerima e-dompet.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad gambar instrumen pembayaran rekaan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Guna label nama di bawah gambar",
+        "pengayaan": "Bincang mengapa penerimaan kaedah berbeza mengikut penjual."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 59,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Menjelaskan penggunaan instrumen pembayaran",
+      "source_pages": "126–127",
+      "source_minutes": 60,
+      "source_pbd_task": "Terangkan bagaimana tunai, kad debit dan e-dompet digunakan untuk pembelian. Pilih satu kaedah yang boleh digunakan apabila penjual hanya menerima bayaran tunai.",
+      "source_pbd_evidence": "Tunai menyerahkan wang, kad debit membuat potongan daripada akaun, e-dompet daripada baki atau sumber dipautkan. Pilihan akhir tunai.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga kaunter dengan kaedah bayaran yang diterima berlainan.",
+        "exploration": "Pasangan simulasi memilih tunai, kad debit atau e-dompet tanpa transaksi sebenar.",
+        "explanation": "Guru jelaskan sumber bayaran bagi setiap instrumen dan keperluan kaedah diterima penjual.",
+        "elaboration": "Murid jelaskan pilihan bagi kedai tunai sahaja dan kedai yang menerima kad debit; berikan sebab.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad kaunter, wang mainan, kad rekaan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian dan kerjasama.",
+        "pemulihan": "Padankan simbol penerimaan dengan instrumen",
+        "pengayaan": "Cadang langkah semak jumlah sebelum membayar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 62,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Hubungan sistem 12 jam dan 24 jam",
+      "source_pages": "139–142",
+      "source_minutes": 60,
+      "source_pbd_task": "Tukar 7:45 pagi, 12:25 tengah hari, 8:10 malam dan 12:05 tengah malam kepada sistem 24 jam.",
+      "source_pbd_evidence": "07:45, 12:25, 20:10 dan 00:05. Sasaran 3/4 termasuk padanan tengah malam.",
+      "phases": {
+        "engagement": "Guru papar jam analog pada pagi, petang dan malam.",
+        "exploration": "Pasangan padankan kad sistem 12 jam dan 24 jam termasuk tengah hari dan tengah malam.",
+        "explanation": "Guru model 6:30 petang = 18:30 serta 12:40 tengah malam = 00:40.",
+        "elaboration": "Murid tukar 9:15 pagi, 12:30 tengah hari, 7:50 malam dan 12:10 tengah malam.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jam model, kad waktu",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan garis masa 00:00 hingga 23:59",
+        "pengayaan": "Tukar jadual perjalanan 24 jam kepada sistem 12 jam."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 63,
+      "source_sp_codes": [
+        "4.2.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menentukan tempoh antara dua waktu pada hari sama",
+      "source_pages": "143–144",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira tempoh 09:35 hingga 11:10 dan 13:20 hingga 16:05. Tunjukkan satu lompatan.",
+      "source_pbd_evidence": "1 jam 35 minit dan 2 jam 45 minit.",
+      "phases": {
+        "engagement": "Guru tunjuk jadual aktiviti dari 10:25 hingga 12:00.",
+        "exploration": "Pasangan lukis lompatan ke jam penuh dan minit baki.",
+        "explanation": "Guru model jumlah lompatan pada garis masa untuk tempoh hari sama.",
+        "elaboration": "Murid kira 08:45 hingga 10:20 dan 14:15 hingga 16:40.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Garis masa, kad jadual",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Lompat ke jam penuh dahulu",
+        "pengayaan": "Cari waktu tamat apabila waktu mula dan tempoh diberi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 64,
+      "source_sp_codes": [
+        "4.2.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menentukan tempoh program dalam 24 jam",
+      "source_pages": "143–144",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira tempoh 06:55–08:15 dan 16:40–19:25 pada hari yang sama.",
+      "source_pbd_evidence": "1 jam 20 minit dan 2 jam 45 minit.",
+      "phases": {
+        "engagement": "Guru tunjuk jadual program dalam format 24 jam.",
+        "exploration": "Pasangan tandakan waktu mula dan tamat pada garis masa.",
+        "explanation": "Guru model tempoh 15:50 hingga 18:10 dengan lompatan jam dan minit.",
+        "elaboration": "Murid kira 07:35–09:05 dan 17:25–20:10.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jadual 24 jam, garis masa",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar jam kepada minit jika perlu",
+        "pengayaan": "Banding dua tempoh yang bermula pada waktu berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 66,
+      "source_sp_codes": [
+        "4.4.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengaitkan dekad, abad dan tahun",
+      "source_pages": "146",
+      "source_minutes": 30,
+      "source_pbd_task": "Isi 6 dekad = __ tahun, 3 abad = __ tahun dan 2 abad = __ dekad.",
+      "source_pbd_evidence": "60 tahun, 300 tahun dan 20 dekad.",
+      "phases": {
+        "engagement": "Guru tunjuk garis masa 10 tahun dan 100 tahun.",
+        "exploration": "Pasangan susun kad tahun, dekad dan abad mengikut hubungan.",
+        "explanation": "Guru model 1 dekad = 10 tahun dan 1 abad = 100 tahun = 10 dekad.",
+        "elaboration": "Murid lengkapkan 8 dekad dalam tahun, 4 abad dalam tahun dan 5 abad dalam dekad.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Garis masa, kad faktor",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tulis faktor pada anak panah",
+        "pengayaan": "Cari dua bentuk setara bagi 200 tahun."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 67,
+      "source_sp_codes": [
+        "4.4.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengaitkan alaf dengan abad dan tahun",
+      "source_pages": "146",
+      "source_minutes": 30,
+      "source_pbd_task": "Isi 3 alaf = __ abad, 4 alaf = __ tahun dan 2 abad = __ dekad.",
+      "source_pbd_evidence": "30 abad, 4 000 tahun dan 20 dekad.",
+      "phases": {
+        "engagement": "Guru papar kad 1 alaf dan minta murid ramal bilangan abad.",
+        "exploration": "Pasangan susun unit tahun, dekad, abad dan alaf pada tangga unit.",
+        "explanation": "Guru model 1 alaf = 1 000 tahun = 10 abad.",
+        "elaboration": "Murid tukar 2 alaf kepada abad, 5 alaf kepada tahun dan 4 abad kepada dekad.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Tangga unit, kad masa",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan faktor 10 atau 1000 secara berperingkat",
+        "pengayaan": "Nyatakan 3 alaf dalam dekad."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 68,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Menukar unit masa jam, hari, minggu, bulan dan tahun",
+      "source_pages": "147–151",
+      "source_minutes": 60,
+      "source_pbd_task": "Tukar 3 hari 5 jam kepada jam, 24 hari kepada minggu dan hari, 50 bulan kepada tahun dan bulan serta 3 dekad 5 tahun kepada tahun.",
+      "source_pbd_evidence": "77 jam, 3 minggu 3 hari, 4 tahun 2 bulan dan 35 tahun. Sasaran 3/4.",
+      "phases": {
+        "engagement": "Guru beri kad tempoh 2 hari 6 jam dan 30 bulan.",
+        "exploration": "Pasangan padankan unit masa dengan faktor tepat, termasuk 7 hari seminggu dan 12 bulan setahun.",
+        "explanation": "Guru model tukar kepada unit kecil dan bahagi dengan baki bagi unit gabungan.",
+        "elaboration": "Murid tukar 4 hari 8 jam, 31 hari, 38 bulan dan 2 dekad 7 tahun kepada unit sasaran.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta unit masa, kad tempoh",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan satu faktor setiap langkah",
+        "pengayaan": "Terangkan mengapa bulan tidak sentiasa mempunyai jumlah hari sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 69,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Tambah dan tolak nilai masa",
+      "source_pages": "152–157",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 2 hari 18 jam + 1 hari 9 jam, kemudian 5 minggu 3 hari − 2 minggu 5 hari. Tunjukkan pertukaran unit pada kedua-duanya.",
+      "source_pbd_evidence": "4 hari 3 jam dan 2 minggu 5 hari. Guna 24 jam sehari serta 7 hari seminggu.",
+      "phases": {
+        "engagement": "Guru tunjuk dua tempoh hari dan jam dengan jumlah jam melebihi 24.",
+        "exploration": "Pasangan model pengumpulan semula dan penukaran minggu kepada hari.",
+        "explanation": "Guru model tambah 1 hari 20 jam + 2 hari 8 jam dan tolak 4 minggu 2 hari − 1 minggu 5 hari.",
+        "elaboration": "Murid kira 3 hari 17 jam + 1 hari 10 jam dan 6 minggu 1 hari − 2 minggu 4 hari.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad unit, carta masa",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar kepada unit terkecil dahulu jika perlu",
+        "pengayaan": "Semak penolakan melalui tambah songsang."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 70,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Darab dan bahagi nilai masa",
+      "source_pages": "158–163",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 6 × 2 hari 5 jam, 4 × 3 tahun 8 bulan dan 15 minggu 3 hari ÷ 9. Beri hasil yang menggunakan unit sepadan.",
+      "source_pbd_evidence": "13 hari 6 jam, 14 tahun 8 bulan dan 12 hari atau 1 minggu 5 hari.",
+      "phases": {
+        "engagement": "Guru tunjuk tempoh 2 hari 3 jam yang berulang empat kali.",
+        "exploration": "Pasangan tukar tempoh gabungan kepada satu unit sebelum darab atau bahagi.",
+        "explanation": "Guru model 4 × 2 hari 3 jam serta bahagi tempoh hari yang boleh dikumpul semula.",
+        "elaboration": "Murid kira 5 × 1 hari 8 jam, 3 × 2 tahun 5 bulan dan 12 minggu ÷ 6.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad tempoh, jadual penukaran",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Catat faktor unit sebelum operasi",
+        "pengayaan": "Cipta soalan bahagi yang menghasilkan minggu dan hari."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 71,
+      "source_sp_codes": [
+        "4.5.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mendarab dan membahagi nilai masa berkaitan hari dan minggu",
+      "source_pages": "158–163",
+      "source_minutes": 30,
+      "source_pbd_task": "Hitung 4 × 2 minggu 2 hari dan 84 hari ÷ 6. Paparkan keputusan dalam unit yang jelas.",
+      "source_pbd_evidence": "64 hari atau 9 minggu 1 hari; 14 hari atau 2 minggu.",
+      "phases": {
+        "engagement": "Guru beri tempoh latihan mingguan dan bilangan ulangan.",
+        "exploration": "Pasangan tukar 1 minggu 3 hari kepada 10 hari dan model tiga ulangan.",
+        "explanation": "Guru model darab dalam hari dan bahagi hari kepada kumpulan sama.",
+        "elaboration": "Murid kira 5 × 1 minggu 2 hari dan 63 hari ÷ 3 dalam minggu dan hari.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad jadual, carta minggu",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan 7 hari = 1 minggu",
+        "pengayaan": "Semak hasil bahagi melalui darab."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 72,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penyelesaian masalah masa dan waktu",
+      "source_pages": "164–167",
+      "source_minutes": 60,
+      "source_pbd_task": "Sebuah bas bertolak 07:45, bergerak 1 jam 35 minit, berhenti 20 minit dan bergerak 55 minit lagi. Cari waktu tiba serta tempoh perjalanan tanpa rehat.",
+      "source_pbd_evidence": "10:35 dan 2 jam 30 minit. Garis masa menunjukkan tempoh keseluruhan 2 jam 50 minit.",
+      "phases": {
+        "engagement": "Guru tunjuk jadual bas dengan dua segmen perjalanan dan rehat.",
+        "exploration": "Pasangan bina garis masa yang membezakan masa bergerak dan berhenti.",
+        "explanation": "Guru model tambah setiap segmen kepada waktu berlepas dan jumlahkan hanya tempoh bergerak.",
+        "elaboration": "Murid kira waktu tiba dari 09:15 selepas bergerak 50 minit, berhenti 15 minit dan bergerak 1 jam 20 minit.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jadual bas rekaan, garis masa",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Catat waktu selepas setiap segmen",
+        "pengayaan": "Cari waktu mula jika waktu tiba dan semua tempoh diketahui."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 73,
+      "source_sp_codes": [
+        "4.6.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menyelesaikan masalah tempoh perjalanan harian",
+      "source_pages": "143–144,164–166",
+      "source_minutes": 30,
+      "source_pbd_task": "Perjalanan pertama 08:20–11:05 dan perjalanan kedua 13:50–16:15. Kira dua tempoh dan bandingkan.",
+      "source_pbd_evidence": "2 jam 45 minit dan 2 jam 25 minit; perjalanan pertama 20 minit lebih lama.",
+      "phases": {
+        "engagement": "Guru papar dua jadual perjalanan harian.",
+        "exploration": "Pasangan bina garis masa berasingan untuk setiap perjalanan.",
+        "explanation": "Guru model cara membandingkan tempoh selepas menukar kedua-duanya kepada minit.",
+        "elaboration": "Murid banding perjalanan 09:10–11:40 dan 14:25–16:35; nyatakan beza.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad jadual, garis masa",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Kira tempoh setiap perjalanan dahulu",
+        "pengayaan": "Bina perjalanan ketiga dengan tempoh di antara kedua-duanya."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 74,
+      "source_sp_codes": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengaitkan unit milimeter, sentimeter, meter dan kilometer",
+      "source_pages": "171–175",
+      "source_minutes": 30,
+      "source_pbd_task": "Pilih unit bagi tebal kad dan jarak antara bandar. Tukar 5 cm kepada mm dan 2 km kepada m.",
+      "source_pbd_evidence": "Simbol mm untuk tebal kad dan km untuk jarak bandar. 5 cm = 50 mm dan 2 km = 2 000 m. Kedua-dua perkaitan unit ditunjukkan.",
+      "phases": {
+        "engagement": "Guru tunjuk pembaris, pita meter dan peta bandar.",
+        "exploration": "Pasangan padankan objek dan jarak dengan mm, cm, m atau km yang munasabah.",
+        "explanation": "Guru model hubungan 10 mm = 1 cm, 100 cm = 1 m dan 1 000 m = 1 km.",
+        "elaboration": "Murid pilih unit bagi lebar buku dan panjang bilik; tukar 8 cm kepada mm serta 3 km kepada m.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Pembaris, pita ukur, kad unit",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Susun unit daripada kecil ke besar",
+        "pengayaan": "Terangkan mengapa unit yang terlalu kecil tidak praktikal untuk jarak bandar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 75,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penukaran unit panjang",
+      "source_pages": "174–175",
+      "source_minutes": 60,
+      "source_pbd_task": "Tukar 13 cm 4 mm kepada mm, 176 mm kepada cm dan mm, 4 km 35 m kepada m dan 7 250 m kepada km dan m.",
+      "source_pbd_evidence": "134 mm, 17 cm 6 mm, 4 035 m dan 7 km 250 m. Sasaran 3/4.",
+      "phases": {
+        "engagement": "Guru tunjuk ukuran 9 cm 6 mm pada pembaris.",
+        "exploration": "Pasangan tukar ukuran gabungan kepada satu unit dan sebaliknya.",
+        "explanation": "Guru model 96 mm = 9 cm 6 mm dan 2 km 125 m = 2 125 m.",
+        "elaboration": "Murid tukar 18 cm 7 mm, 243 mm, 3 km 80 m dan 5 620 m.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pembaris, carta unit",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan faktor 10 atau 1000",
+        "pengayaan": "Bina dua ukuran dalam bentuk gabungan yang setara."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 76,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Mengukur objek dalam milimeter",
+      "source_pages": "173",
+      "source_minutes": 60,
+      "source_pbd_task": "Ukur panjang klip, lebar pemadam, lebar kad dan panjang pensel dalam mm. Gunakan pembaris dengan tanda sifar.",
+      "source_pbd_evidence": "Sekurang-kurangnya 3/4 bacaan dalam toleransi 1 mm daripada ukuran rujukan guru. Mata tegak di atas senggatan.",
+      "phases": {
+        "engagement": "Guru tunjuk cara pembaris boleh tersalah baca jika tidak bermula dari sifar.",
+        "exploration": "Pasangan ukur objek kecil dan semak kedudukan mata tegak di atas tanda.",
+        "explanation": "Guru model ukuran dalam mm, termasuk cara menolak bacaan awal jika tidak bermula sifar.",
+        "elaboration": "Murid ukur empat objek latihan yang guru telah sediakan dengan ukuran rujukan berasingan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pembaris mm, klip, kad dan pemadam",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Mulakan dengan objek bertepi lurus",
+        "pengayaan": "Banding bacaan dua murid dan bincang toleransi 1 mm."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 77,
+      "source_sp_codes": [
+        "5.1.4"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengukur objek hingga satu milimeter",
+      "source_pages": "173",
+      "source_minutes": 30,
+      "source_pbd_task": "Sediakan dua jalur dipotong tepat 47 mm dan 63 mm. Murid ukur kedua-duanya dan label unit.",
+      "source_pbd_evidence": "47 mm dan 63 mm; ukur dari tanda sifar.",
+      "phases": {
+        "engagement": "Guru beri dua jalur latihan dan pembaris dengan senggatan mm.",
+        "exploration": "Pasangan ukur jalur berlainan daripada bahan PBD, semak dari tanda sifar.",
+        "explanation": "Guru model bacaan panjang 52 mm dengan kedudukan mata yang betul.",
+        "elaboration": "Murid ukur dua jalur latihan panjang 35 mm dan 68 mm sebelum tugasan individu.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Pembaris mm, jalur kertas",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Sejajarkan hujung dengan sifar",
+        "pengayaan": "Lukis jalur panjang yang diberi dalam mm."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 78,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Menganggar jarak dalam kilometer",
+      "source_pages": "176",
+      "source_minutes": 60,
+      "source_pbd_task": "Pada peta latihan, guru sediakan laluan rujukan 20 km sepanjang 4 cm. Anggarkan jarak bagi laluan sepanjang kira-kira 3 cm, 6 cm dan 9 cm pada skala yang sama.",
+      "source_pbd_evidence": "Kira-kira 15 km, 30 km dan 45 km. Alasan banding panjang dengan laluan 20 km.",
+      "phases": {
+        "engagement": "Guru tunjuk peta rekaan dengan laluan rujukan 10 km sepanjang 2 cm.",
+        "exploration": "Pasangan banding panjang laluan lain menggunakan pembaris dan jalur rujukan.",
+        "explanation": "Guru model 1 cm mewakili kira-kira 5 km pada skala latihan.",
+        "elaboration": "Murid anggar laluan 2.5 cm, 5 cm dan 7 cm serta jelaskan perkaitan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Peta berskala rekaan, pembaris",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan gandaan laluan rujukan",
+        "pengayaan": "Banding anggaran bagi laluan melengkung menggunakan benang."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 79,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Tambah hingga tiga ukuran panjang",
+      "source_pages": "177–178",
+      "source_minutes": 60,
+      "source_pbd_task": "Jumlahkan 2 km 450 m, 850 m dan 1 km 125 m. Jumlahkan juga 15 cm 4 mm dengan 8 cm 9 mm. Nyatakan kedua-dua hasil dalam unit gabungan.",
+      "source_pbd_evidence": "4 km 425 m dan 24 cm 3 mm. Satu penukaran unit ditunjukkan bagi setiap item.",
+      "phases": {
+        "engagement": "Guru beri tiga panjang laluan dalam km dan m serta dua jalur cm dan mm.",
+        "exploration": "Pasangan samakan unit kecil sebelum menjumlahkan ukuran.",
+        "explanation": "Guru model pengumpulan 1 000 m kepada 1 km dan 10 mm kepada 1 cm.",
+        "elaboration": "Murid jumlahkan 1 km 650 m, 780 m dan 2 km 420 m; jumlahkan juga 9 cm 8 mm dan 7 cm 5 mm.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad ukuran, carta unit",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tambah unit kecil dahulu",
+        "pengayaan": "Cari tiga panjang berjumlah 5 km tepat."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 80,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Tolak hingga dua ukuran panjang daripada satu ukuran",
+      "source_pages": "179–180",
+      "source_minutes": 60,
+      "source_pbd_task": "Daripada 8 km 350 m, tolak 2 km 875 m dan 760 m. Catat baki pertengahan serta akhir dalam km dan m.",
+      "source_pbd_evidence": "5 km 475 m dan 4 km 715 m. Kedua-dua penukaran kepada unit yang sama betul.",
+      "phases": {
+        "engagement": "Guru tunjuk panjang awal dan dua bahagian yang dikeluarkan.",
+        "exploration": "Pasangan bina rajah bar dan tukar semua ukuran kepada meter.",
+        "explanation": "Guru model penolakan berturutan dan tukar baki kepada km dan m.",
+        "elaboration": "Murid kira baki 7 km 200 m selepas tolak 1 km 850 m dan 650 m; rekod baki pertama.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu. Guru menyemak berdasarkan evidens asal dan merekod pencapaian; murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad ukuran, rajah bar",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tolak satu ukuran setiap langkah",
+        "pengayaan": "Cari satu potongan hilang daripada panjang awal dan baki akhir."
+      },
+      "ready": false
+    }
+  ]
+}
