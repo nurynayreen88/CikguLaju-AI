@@ -1,0 +1,195 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 5,
+  "source": {
+    "path": "audits/rph_5p_science_y5_native_016_031_20261128.json",
+    "blob": "ae891bb48d9081cb3ab4f33ac8fbc2cf785fb4f5"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y5_support_001_031_20261128.json",
+    "blob": "b42842caefe44a1c1b6e48e6735d14526ed7602c"
+  },
+  "count": 16,
+  "follow_up_required": 4,
+  "policy": "Review embedded verified SP, original PBD, activity phases, materials, safety and support. No independent teacher/panitia signoff or textbook page-level verification. Flagged issues remain open; retain locked source and retest any print adaptations.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-016",
+      "sp": "2.1.1",
+      "title": "Fungsi rangka utama manusia",
+      "minutes": 30,
+      "review_basis": "Padanan struktur dan fungsi, jadual tiga tulang serta alasan perlindungan menepati SP.",
+      "implementation_note": "Pastikan carta menunjukkan fungsi sokongan dan perlindungan secara tepat; tidak menyentuh tulang belakang rakan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-017",
+      "sp": "2.1.2",
+      "title": "Kedudukan tulang dan sendi",
+      "minutes": 30,
+      "review_basis": "Label empat tulang dan tiga sendi serta pembetulan padanan menguji lokasi, bukan sekadar nama.",
+      "implementation_note": "Aktiviti membanding gerakan pada anak patung bersendi; BBM belum menyebutnya. Tambah model bersendi atau rajah gerakan yang setara.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-018",
+      "sp": "2.1.3",
+      "title": "Fungsi sendi dalam pergerakan",
+      "minutes": 30,
+      "review_basis": "Model sendi, padanan gerakan dan dua justifikasi membezakan lokasi daripada fungsi sendi.",
+      "implementation_note": "Gerakan pada model sahaja; jangan paksa sendi murid.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-019",
+      "sp": "2.1.3",
+      "title": "Pengukuhan padanan sendi dan pergerakan",
+      "minutes": 30,
+      "review_basis": "Kad melangkah, menoleh dan membaling menyokong pengukuhan dua padanan dan satu alasan.",
+      "implementation_note": "Gunakan rajah/gambar; tidak perlu demonstrasi fizikal atau pemeriksaan rakan.",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-020",
+      "sp": "2.1.4",
+      "title": "Kepentingan sistem rangka",
+      "minutes": 30,
+      "review_basis": "Senario rekaan menuntut penaakulan sokongan dan perlindungan, bukan hafalan fungsi sahaja.",
+      "implementation_note": "Teka silang disebut dalam pengembangan tetapi tidak disenaraikan dalam BBM; sediakan helaian ringkas atau kad teka silang.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-021",
+      "sp": "2.1.5",
+      "title": "Lakaran dan penerangan sistem rangka",
+      "minutes": 30,
+      "review_basis": "Lakaran lima label, pembentangan dua fungsi dan semakan rakan menepati komunikasi pemerhatian.",
+      "implementation_note": "Gunakan carta anatomi yang sesuai umur; semak hasil individu.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-022",
+      "sp": "2.2.1",
+      "title": "Bahagian utama sistem peredaran darah",
+      "minutes": 30,
+      "review_basis": "Empat padanan fungsi menguji jantung, salur darah, peparu dan darah; model menyokong penerangan.",
+      "implementation_note": "Penerangan menyebut fungsi darah tanpa perincian; guru perlu nyatakan pengangkutan oksigen/nutrien dan bahan buangan berpandukan carta sumber.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-023",
+      "sp": "2.2.2",
+      "title": "Dua laluan peredaran darah",
+      "minutes": 30,
+      "review_basis": "Dua gelung bermula dan kembali ke jantung dengan arah betul; label oksigen/karbon dioksida bukan warna sahaja.",
+      "implementation_note": "Pastikan rajah memperlihatkan kedua-dua arah aliran dan pertukaran gas; warna simbolik.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-024",
+      "sp": "2.2.2",
+      "title": "Pengukuhan arah aliran darah",
+      "minutes": 30,
+      "review_basis": "Pembetulan anak panah dan label mengukuhkan dua gelung serta aliran balik ke jantung.",
+      "implementation_note": "Warna bukan warna darah sebenar; semak anak panah dan label individu.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-025",
+      "sp": "2.2.3",
+      "title": "Kepentingan peredaran darah",
+      "minutes": 30,
+      "review_basis": "Laluan oksigen/nutrien dan dua alasan fungsi organ menyokong rumusan peredaran.",
+      "implementation_note": "Gunakan keadaan hipotesis tanpa diagnosis atau maklumat kesihatan murid.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-026",
+      "sp": "2.2.4",
+      "title": "Penerangan pemerhatian peredaran darah",
+      "minutes": 30,
+      "review_basis": "Poster dua laluan dan rumusan bersumber rajah menepati komunikasi pemerhatian.",
+      "implementation_note": "Tiada ujian fizikal atau sampel darah; semak poster individu.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-027",
+      "sp": "2.3.1",
+      "title": "Perkaitan antara sistem tubuh",
+      "minutes": 30,
+      "review_basis": "Jejak oksigen dari peparu dan nutrien dari usus melalui darah menunjukkan dua hubungan sistem.",
+      "implementation_note": "Situasi larian rekaan sahaja; elakkan senaman berat.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-028",
+      "sp": "2.3.2",
+      "title": "Kepentingan menjaga sistem tubuh",
+      "minutes": 30,
+      "review_basis": "Pemetaan empat fungsi dan dua hubungan sebab-akibat sesuai dengan penaakulan penjagaan semua sistem.",
+      "implementation_note": "Kekal pada watak rekaan; tiada diagnosis atau pendedahan sejarah kesihatan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-029",
+      "sp": "2.3.3",
+      "title": "Cara memelihara sistem tubuh",
+      "minutes": 30,
+      "review_basis": "Pelan tiga amalan dengan sebab bagi dua sistem menepati penjanaan idea penjagaan tubuh.",
+      "implementation_note": "Amalan umum sesuai umur; tiada diet atau senaman khusus keadaan perubatan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-030",
+      "sp": "2.3.3",
+      "title": "Pengukuhan pilihan amalan penjagaan",
+      "minutes": 30,
+      "review_basis": "Dua pilihan amalan dan alasan fungsi sistem mengukuhkan SP melalui situasi baharu.",
+      "implementation_note": "Gunakan kad watak rekaan sahaja; jangan menilai berat beg atau postur murid secara fizikal.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-031",
+      "sp": "2.3.4",
+      "title": "Lakaran hubungan antara sistem tubuh",
+      "minutes": 30,
+      "review_basis": "Peta tiga sistem, dua hubungan berasaskan anak panah dan pembentangan memenuhi komunikasi pemerhatian.",
+      "implementation_note": "Pastikan aliran oksigen dan nutrien tidak ditunjukkan sebagai aliran udara/makanan terus ke organ.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}
