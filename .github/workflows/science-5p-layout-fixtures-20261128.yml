@@ -1,0 +1,35 @@
+name: Science KSSR 232 5P layout fixture QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/audit_science_5p_layout_fixtures_20261128.py'
+      - 'audits/rph_5p_science_*'
+      - 'web/rph_5p_v5_layout.py'
+      - 'web/rph_login_canonical_layout_20261121.json'
+      - '.github/workflows/science-5p-layout-fixtures-20261128.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  layout-only:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document QA tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+          python -m pip install python-docx pymupdf
+      - name: Render and inspect all candidate layout fixtures
+        run: PYTHONPATH=. python tools/audit_science_5p_layout_fixtures_20261128.py --out qa_science_5p_fixtures
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-5p-layout-fixtures-NOT-FOR-TEACHING
+          path: qa_science_5p_fixtures/
+          retention-days: 7
