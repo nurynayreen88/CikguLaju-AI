@@ -14,7 +14,7 @@ class TestFiveP(unittest.TestCase):
     def setUp(self):
         # Simulate a single approved release without changing the real review bank.
         records=release.reviewed_records()
-        approved={key:dict(row) for key,row in records.items()}
+        approved={key:dict(row,ready=False,status='INITIAL_CONTENT_REVIEW_COMPLETE') for key,row in records.items()}
         approved['A',1].update(ready=True,status='APPROVED_FOR_RELEASE')
         patcher=patch.object(release,'reviewed_records',return_value=approved)
         patcher.start()
