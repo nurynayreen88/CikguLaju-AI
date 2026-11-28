@@ -1,0 +1,301 @@
+{
+  "status": "DRAFT_DSKP_TEXT_MATCHED",
+  "subject": "MATEMATIK SK",
+  "year": 3,
+  "curriculum": "KSSR",
+  "dskp_reference": {
+    "drive_id": "1VZKsJ4xYezTeXV51ylJiQ_VD8xeJKt6_",
+    "verification": "Text extraction inspected; visual QA pending."
+  },
+  "policy": "Eight selected work records v49/v53, nine candidate sessions. These are NOT sequential production lessons. No RPT change or READY; BT/BA and Word/PDF verification pending.",
+  "records": [
+    {
+      "candidate_id": "T3-WORK-01",
+      "source_work_record": 1,
+      "source_session": null,
+      "source_drive_id": "12uQGhn9qCSCRqhrXyKQd2pIgF01gi0pq",
+      "title": "Peratus",
+      "dskp": [
+        {
+          "code": "3.3.1",
+          "printed_page": 43,
+          "sk": "3.3 Peratus.",
+          "sp": "Menama dan menyebut peratus."
+        },
+        {
+          "code": "3.3.2",
+          "printed_page": 43,
+          "sk": "3.3 Peratus.",
+          "sp": "Mengenal simbol peratus."
+        },
+        {
+          "code": "3.3.3",
+          "printed_page": 43,
+          "sk": "3.3 Peratus.",
+          "sp": "Mewakilkan peratus dalam petak seratus dan sebaliknya."
+        },
+        {
+          "code": "3.3.4",
+          "printed_page": 43,
+          "sk": "3.3 Peratus.",
+          "sp": "Menulis satu peratus hingga seratus peratus."
+        }
+      ],
+      "scope_note": "Fokus sumber kerja; semak identiti PdP produksi dan BT/BA.",
+      "phases": {
+        "engagement": "Paparkan grid 100 petak dengan 25 berlorek; murid teka maksud 25%.",
+        "exploration": "Warnakan grid bagi 1%, 10%, 50% dan 100%; banding bahagian berlorek.",
+        "explanation": "Guru menerangkan simbol %, sebutan peratus dan hubungan dengan petak seratus.",
+        "elaboration": "Pasangan tukar kad peratus dengan grid berlorek; tulis nilai daripada 1% hingga 100%.",
+        "evaluation": "Empat item perwakilan dua arah; tiga tepat serta sebut dan tulis simbol %."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T3-WORK-02",
+      "source_work_record": 2,
+      "source_session": null,
+      "source_drive_id": "1Mob7IY8lzoTIQec9lih4o5uZVy5mgRka",
+      "title": "Simpanan dan pelaburan",
+      "dskp": [
+        {
+          "code": "4.7.1",
+          "printed_page": 49,
+          "sk": "4.7 Simpanan dan pelaburan.",
+          "sp": "Menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan."
+        },
+        {
+          "code": "4.7.2",
+          "printed_page": 49,
+          "sk": "4.7 Simpanan dan pelaburan.",
+          "sp": "Menjelaskan keperluan menyimpan dan melabur."
+        }
+      ],
+      "scope_note": "Fokus sumber kerja; semak identiti PdP produksi dan BT/BA.",
+      "phases": {
+        "engagement": "Banding pilihan membeli makanan atau mainan menggunakan wang saku.",
+        "exploration": "Kelaskan lima kad keperluan dan kehendak; bincang alasan.",
+        "explanation": "Terangkan peranan simpanan untuk keperluan masa depan dan konsep pelaburan yang mempunyai risiko.",
+        "elaboration": "Rancang agihan wang saku antara keperluan, kehendak dan simpanan; bincang sebab menyimpan dan melabur.",
+        "evaluation": "Empat daripada lima pengelasan tepat dan satu alasan bagi simpanan serta pelaburan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T3-WORK-03",
+      "source_work_record": 3,
+      "source_session": null,
+      "source_drive_id": "1127r0wocorNHA0JHfZbnCb9Od-Kzr_QlcW7UnTAjMOg",
+      "title": "Masalah wang hingga RM10 000",
+      "dskp": [
+        {
+          "code": "4.8.1",
+          "printed_page": 49,
+          "sk": "4.8 Penyelesaian masalah.",
+          "sp": "Mereka cerita berdasarkan ayat matematik tambah, tolak, darab dan bahagi melibatkan wang."
+        },
+        {
+          "code": "4.8.2",
+          "printed_page": 49,
+          "sk": "4.8 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah wang dalam lingkungan RM10 000 melibatkan operasi asas dan operasi bergabung tambah dan tolak dalam situasi harian."
+        }
+      ],
+      "scope_note": "v53 menggantikan cadangan SP v49; operasi bergabung mesti dinilai.",
+      "phases": {
+        "engagement": "Teliti resit contoh dan tentukan operasi bagi jumlah dan baki.",
+        "exploration": "Padankan kad tambah, tolak, darab dan bahagi dengan situasi wang.",
+        "explanation": "Model faham, rancang, kira dan semak, termasuk contoh tambah-tolak bergabung.",
+        "elaboration": "Pasangan bina cerita daripada satu kad dan selesaikan situasi belian, baki, harga unit dan agihan kos.",
+        "evaluation": "Satu cerita sepadan dan sekurang-kurangnya tiga daripada empat masalah tepat; sertakan item operasi bergabung."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T3-WORK-04A",
+      "source_work_record": 4,
+      "source_session": "A",
+      "source_drive_id": "1127r0wocorNHA0JHfZbnCb9Od-Kzr_QlcW7UnTAjMOg",
+      "title": "Panjang: penukaran, tambah dan tolak",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 58,
+          "sk": "6.1 Panjang.",
+          "sp": "Menukar unit ukuran panjang melibatkan meter dan sentimeter."
+        },
+        {
+          "code": "6.1.2",
+          "printed_page": 58,
+          "sk": "6.1 Panjang.",
+          "sp": "Menyelesaikan ayat matematik tambah hingga tiga ukuran panjang melibatkan meter dan sentimeter."
+        },
+        {
+          "code": "6.1.3",
+          "printed_page": 58,
+          "sk": "6.1 Panjang.",
+          "sp": "Menyelesaikan ayat matematik tolak ukuran panjang hingga dua nilai dari satu nilai melibatkan meter dan sentimeter."
+        }
+      ],
+      "scope_note": "Cadangan pecahan sesi v53; sempadan RPT belum disahkan.",
+      "phases": {
+        "engagement": "Banding pita ukur 1 m dengan pembaris sentimeter.",
+        "exploration": "Ukur dua objek dan tukar ukuran m kepada cm atau sebaliknya.",
+        "explanation": "Model 1 m = 100 cm dan penyamaan unit sebelum tambah atau tolak.",
+        "elaboration": "Selesaikan contoh tambah tiga panjang dan tolak dua panjang daripada satu panjang menggunakan reben.",
+        "evaluation": "Empat daripada lima penukaran dan tiga daripada empat operasi tepat dengan unit."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T3-WORK-04B",
+      "source_work_record": 4,
+      "source_session": "B",
+      "source_drive_id": "1127r0wocorNHA0JHfZbnCb9Od-Kzr_QlcW7UnTAjMOg",
+      "title": "Panjang: darab dan bahagi",
+      "dskp": [
+        {
+          "code": "6.1.4",
+          "printed_page": 58,
+          "sk": "6.1 Panjang.",
+          "sp": "Menyelesaikan ayat matematik darab melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter."
+        },
+        {
+          "code": "6.1.5",
+          "printed_page": 58,
+          "sk": "6.1 Panjang.",
+          "sp": "Menyelesaikan ayat matematik bahagi melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter."
+        }
+      ],
+      "scope_note": "Cadangan pecahan sesi v53; sempadan RPT belum disahkan.",
+      "phases": {
+        "engagement": "Ramal jumlah panjang tiga reben sama panjang.",
+        "exploration": "Susun reben untuk model darab; bahagikan tali kepada bahagian sama panjang.",
+        "explanation": "Jelaskan darab dan bahagi ukuran m/cm dengan nombor satu digit serta semakan songsang.",
+        "elaboration": "Pasangan kira 3 × 45 cm dan 240 cm ÷ 4; bina situasi ukuran baharu.",
+        "evaluation": "Empat item darab/bahagi panjang; tiga tepat dengan unit."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T3-WORK-05",
+      "source_work_record": 5,
+      "source_session": null,
+      "source_drive_id": "1DQtWmbZtT5g3sKZTUTYeasbPfJVxBG65",
+      "title": "Prisma",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 62,
+          "sk": "7.1 Prisma.",
+          "sp": "Mengenal prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga."
+        },
+        {
+          "code": "7.1.2",
+          "printed_page": 62,
+          "sk": "7.1 Prisma.",
+          "sp": "Mencirikan prisma dan melabelkan prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga berdasarkan permukaan, tapak, bucu dan tepi."
+        }
+      ],
+      "scope_note": "Fokus sumber kerja; semak identiti PdP produksi dan BT/BA.",
+      "phases": {
+        "engagement": "Banding kotak dan model prisma segi tiga; cari tapak yang sepadan.",
+        "exploration": "Putar model prisma segi empat sama, segi empat tepat dan segi tiga; kenal dua tapak seiras.",
+        "explanation": "Terangkan penamaan berdasarkan bentuk tapak dan beza permukaan, bucu serta tepi.",
+        "elaboration": "Label model dan lengkapkan jadual ciri; pasangan semak padanan jenis prisma.",
+        "evaluation": "Empat model/rajah; tiga dikenal pasti dan ciri utama dilabel."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T3-WORK-06",
+      "source_work_record": 6,
+      "source_session": null,
+      "source_drive_id": "1lNKFVvUuxHCY7UBEmOITsg0VEesFlXYB",
+      "title": "Poligon sekata dan corak",
+      "dskp": [
+        {
+          "code": "7.3.1",
+          "printed_page": 62,
+          "sk": "7.3 Poligon sekata.",
+          "sp": "Mengenal pasti bentuk poligon sekata bagi pentagon, heksagon, heptagon dan oktagon."
+        },
+        {
+          "code": "7.3.2",
+          "printed_page": 62,
+          "sk": "7.3 Poligon sekata.",
+          "sp": "Menghasilkan corak berasaskan bentuk poligon sekata."
+        }
+      ],
+      "scope_note": "Fokus sumber kerja; semak identiti PdP produksi dan BT/BA.",
+      "phases": {
+        "engagement": "Banding dua pentagon dengan panjang sisi yang berlainan.",
+        "exploration": "Susun kad pentagon, heksagon, heptagon dan oktagon; semak sisi dan sudut sepadan.",
+        "explanation": "Terangkan ciri poligon sekata dan cara mengenal nama berdasarkan bilangan sisi.",
+        "elaboration": "Bina corak berulang menggunakan potongan poligon sekata, sama atau berlainan.",
+        "evaluation": "Empat daripada lima kad dikelaskan tepat dan satu corak poligon dihasilkan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T3-WORK-07",
+      "source_work_record": 7,
+      "source_session": null,
+      "source_drive_id": "1x9rhzjfOWbRbYqtQPUiRsLSWdscBOKnn",
+      "title": "Koordinat sukuan pertama",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 66,
+          "sk": "8.1 Koordinat pada sukuan pertama.",
+          "sp": "Mengenal pasti kedudukan objek berdasarkan titik rujukan dengan menggunakan perbendaharaan kata yang sesuai."
+        },
+        {
+          "code": "8.1.2",
+          "printed_page": 66,
+          "sk": "8.1 Koordinat pada sukuan pertama.",
+          "sp": "Menamakan objek berdasarkan kedudukan pada paksi mengufuk dan paksi mencancang."
+        },
+        {
+          "code": "8.1.3",
+          "printed_page": 66,
+          "sk": "8.1 Koordinat pada sukuan pertama.",
+          "sp": "Menentukan kedudukan objek pada paksi mengufuk dan paksi mencancang."
+        }
+      ],
+      "scope_note": "Fokus sumber kerja; semak identiti PdP produksi dan BT/BA.",
+      "phases": {
+        "engagement": "Letak objek pada grid lantai; murid nyatakan arah dari titik rujukan.",
+        "exploration": "Bergerak ke kanan dan ke atas pada grid; namakan objek mengikut kedudukan.",
+        "explanation": "Terangkan paksi mengufuk dahulu, kemudian mencancang, serta urutan pasangan koordinat.",
+        "elaboration": "Pasangan beri arahan lokasi, menanda dan membaca koordinat objek pada grid.",
+        "evaluation": "Lima lokasi; empat tepat termasuk satu huraian arah dari titik rujukan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T3-WORK-08",
+      "source_work_record": 8,
+      "source_session": null,
+      "source_drive_id": "175lSOW0H1Lm272qdzGnCi8e7WbrfXX6r",
+      "title": "Masalah koordinat",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 66,
+          "sk": "8.2 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah melibatkan koordinat."
+        }
+      ],
+      "scope_note": "Fokus sumber kerja; semak identiti PdP produksi dan BT/BA.",
+      "phases": {
+        "engagement": "Paparkan peta grid taman; tanya kedudukan tempat permainan.",
+        "exploration": "Kenal pasti maklumat dan lokasi yang dikehendaki pada peta.",
+        "explanation": "Model mencari koordinat melalui paksi mengufuk dan mencancang serta semak titik akhir.",
+        "elaboration": "Selesaikan masalah mencari lokasi dan membanding arahan pada grid; pasangan semak laluan.",
+        "evaluation": "Tiga masalah lokasi; dua tepat dengan langkah atau rajah."
+      },
+      "ready": false
+    }
+  ]
+}
