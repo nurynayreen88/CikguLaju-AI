@@ -8,6 +8,7 @@ import argparse
 import json
 from pathlib import Path
 from web import native_telegram_sequence_rph_client as native
+from rpt_2027.sains.sk_documents import PDP_COUNTS
 
 def collect(year):
     if type(year) is not int or year not in range(2, 7):
@@ -15,11 +16,16 @@ def collect(year):
     units = native.list_native_units(year, "SCIENCE")
     if not units:
         raise ValueError("Empty native catalogue")
+    # list_native_units may fall back to the legacy sequence when the 2027
+    # route is temporarily unavailable. Never map new 5P to that fallback.
+    prefix = native.SCIENCE_2027_ROUTES.get(year, ("u", None))[0]
     seen_units = set()
     identities = set()
     rows = []
     for unit in units:
         token = unit["value"]
+        if not isinstance(token, str) or len(token)!=25 or token[0]!=prefix or any(ch not in "0123456789abcdef" for ch in token[1:]):
+            raise ValueError("Unexpected Science catalogue version or unit token")
         if token in seen_units:
             raise ValueError("Duplicate unit token")
         seen_units.add(token)
@@ -42,10 +48,15 @@ def collect(year):
             rows.append(row)
     if not rows:
         raise ValueError("Empty native lesson list")
+    unique_lessons=len({r["lesson_id"] for r in rows})
+    expected=PDP_COUNTS.get(year)
+    # Report both counts; never infer replacement IDs or silently reconcile.
     return dict(schema="science_native_5p_mapping_input_v1",
+                catalogue_prefix=prefix, declared_rpt_pdp_count=expected,
+                rpt_count_match=(unique_lessons==expected if expected is not None else None),
                 source="telegram-native-pdp-sequence", year=year,
                 unit_count=len(seen_units), native_selection_count=len(rows),
-                unique_lesson_ids=len({r["lesson_id"] for r in rows}),
+                unique_lesson_ids=unique_lessons,
                 academic_approval=False, records=rows)
 
 def main():
