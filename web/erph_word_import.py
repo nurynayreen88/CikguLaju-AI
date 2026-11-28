@@ -10,9 +10,9 @@ NS = {'w':'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
 W = '{'+NS['w']+'}'
 LABELS = {
     'tajuk':'title','tema / tajuk':'title','tema/tajuk':'title',
-    'bidang / tajuk':'title','bidang/tajuk':'title','unit / tajuk':'title',
-    'standard kandungan':'standard_content','kandungan pembelajaran':'standard_content',
-    'content standard':'standard_content','standard pembelajaran':'standard_learning',
+    'bidang / tajuk':'title','bidang/tajuk':'title','unit / tajuk':'title','kandungan / tajuk':'title','kandungan/tajuk':'title',
+    'standard kandungan':'standard_content','standard kandungan (sk)':'standard_content','kandungan pembelajaran':'standard_content',
+    'content standard':'standard_content','standard pembelajaran':'standard_learning','standard pembelajaran (sp)':'standard_learning',
     'learning standard':'standard_learning','objektif':'objectives',
     'objektif pembelajaran':'objectives','learning objectives':'objectives','learning objective':'objectives',
     'theme / topic':'title','theme/topic':'title','topic':'title',
@@ -81,7 +81,7 @@ def extract_docx(raw):
                 value=re.sub(r'(?im)^(?:tajuk|topic)\s*:\s*','',value)
                 # Never treat internal scheduling labels or a QA marker as the title.
                 value='\n'.join(line for line in value.splitlines() if not re.match(r'(?i)^\s*(?:RPT Kumpulan|Kumpulan [AB]\b|Lesson\s+\d|PdP\s+\d|Draf QA\b)',line)).strip()
-            fields[target]=(fields[target]+'\n'+value).strip()
+            fields[target]=value if target=='title' and label in ('kandungan / tajuk','kandungan/tajuk') else (fields[target]+'\n'+value).strip()
             phase=False
         elif any(x in label for x in ('aktiviti','activity','activities','set induksi','penutup','kriteria kejayaan','success criteria','bbm','pak21','emk','pemulihan','pengayaan','penilaian','pentaksiran','pengukuhan','pbd','bahan','teaching aids','closure','remedial','enrichment','assessment','values','induction','evaluation')):
             other.append((cells[0]+'\n'+value).strip())
