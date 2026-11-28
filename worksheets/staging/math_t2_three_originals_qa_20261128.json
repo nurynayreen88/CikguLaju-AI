@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "ORIGINALS_AND_KEY_PDFS_PRIVATE_STAGED_NATIVE_IDENTITY_PENDING",
+  "status": "TWO_KEYS_VISUALLY_PASSED_THIRD_KEY_COPYEDIT_PENDING_NATIVE_IDENTITY_PENDING",
   "scope": "KSSR SK",
   "year": 2,
   "subject": "MATH",
@@ -67,7 +67,9 @@
         "artifact_id": 15261296853,
         "source": "reviewed_answer_key_content",
         "text_and_a4_verified": true,
-        "visual_review_pending": true
+        "visual_review_pending": false,
+        "visual_review_passed": true,
+        "preview_run": 46140004022
       },
       "runtime_unit": null,
       "runtime_lesson": null,
@@ -117,7 +119,9 @@
         "artifact_id": 15261296853,
         "source": "reviewed_answer_key_content",
         "text_and_a4_verified": true,
-        "visual_review_pending": true
+        "visual_review_pending": false,
+        "visual_review_passed": true,
+        "preview_run": 46140004022
       },
       "runtime_unit": null,
       "runtime_lesson": null,
@@ -153,7 +157,7 @@
           ]
         ]
       ],
-      "teacher_note": "Soalan 2–5 menggunakan pola sela tetap yang tersirat. Arahan tidak menyebut sela tetap; terima jawapan lain yang memenuhi tertib dan nombor yang diberi, atau jelaskan sela tetap secara lisan. Jangan ubah PDF murid asal.",
+      "teacher_note": "Soalan 2–5 menggunakan pola sela tetap yang tersirat. Arahan tidak menyebut sela tetap; terima jawapan lain yang memenuhi tertib dan nombor yang diberi, atau jelaskan sela tetap secara lisan.",
       "visual_reviewed": true,
       "answer_key_pdf": {
         "sha256": "bef89154ead1b3b89b798b9fe1cd1300afef66f4353a03b08b7cfc70628a8361",
@@ -163,12 +167,18 @@
         "artifact_id": 15261296853,
         "source": "reviewed_answer_key_content",
         "text_and_a4_verified": true,
-        "visual_review_pending": true
+        "visual_review_pending": true,
+        "previous_private_asset": {
+          "sha256": "bef89154ead1b3b89b798b9fe1cd1300afef66f4353a03b08b7cfc70628a8361",
+          "size_bytes": 2589
+        },
+        "replacement_required": true,
+        "visual_issue": "Internal production instruction appeared in teacher note; removed from source, rebuild required."
       },
       "runtime_unit": null,
       "runtime_lesson": null,
       "release": false
     }
   ],
-  "note": "Key PDFs built and text/A4 verified by CI; rendered visual review pending. Candidate PdP codes from prior draft audit, not production identity. No production changes."
+  "note": "Two rendered keys passed visual QA, same hashes as stored assets. Susun key needs one teacher-note copyedit and regenerated PDF; old asset remains private. Production runtime identity pending. No production code changes."
 }
