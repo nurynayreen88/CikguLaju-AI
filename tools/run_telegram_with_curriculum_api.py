@@ -496,8 +496,8 @@ except Exception as _native_sequence_exc:
           type(_native_sequence_exc).__name__, flush=True)
 
 
-# Narrow read-only worksheet source audit. No user data, credentials,
-# RPH generation or writes; only curriculum identities for SP 1.4.1.
+# Read-only Year 2 worksheet curriculum catalogue audit. No user data,
+# credentials, rendering, database writes or changes to RPH.
 try:
     from web.telegram_verified_sequence_rph_bridge import (
         _source as _ws_source, _unit_catalog as _ws_units,
@@ -508,9 +508,6 @@ try:
     _ws_matches = []
     for _ws_unit in _ws_units(_ws_known):
         for _ws_token, _ws_group in _ws_groups(_ws_rows, _ws_unit, 2, "MATH").items():
-            if not any(str(_ws_row.get("sp_code") or "").strip() == "1.4.1"
-                       for _ws_row in _ws_group):
-                continue
             _, _ws_selected, _ws_mapped = _ws_resolve(
                 telegram_runtime, 2, "MATH", _ws_unit["value"], _ws_token)
             _ws_matches.append({
@@ -522,9 +519,11 @@ try:
                 "complete": all(str(x.get("sk_code") or "").strip() and
                                 str(x.get("sp_code") or "").strip() for x in _ws_selected),
             })
-    print("CIKGULAJU_MATH_T2_WORKSHEET_IDENTITY " + _ws_json.dumps(
-        {"year": 2, "subject": "MATH", "matches": _ws_matches},
-        ensure_ascii=False, sort_keys=True), flush=True)
+    for _ws_start in range(0, len(_ws_matches), 10):
+        print("CIKGULAJU_MATH_T2_WORKSHEET_CATALOGUE " + _ws_json.dumps(
+            {"year": 2, "subject": "MATH", "total": len(_ws_matches),
+             "start": _ws_start, "matches": _ws_matches[_ws_start:_ws_start+10]},
+            ensure_ascii=False, sort_keys=True), flush=True)
 except Exception as _ws_audit_exc:
     print("CIKGULAJU_MATH_T2_WORKSHEET_IDENTITY_UNAVAILABLE",
           type(_ws_audit_exc).__name__, flush=True)
