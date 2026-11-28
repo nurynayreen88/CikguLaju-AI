@@ -1,10 +1,11 @@
-name: Science native 205 5P document draft QA
+name: Science native 205 5P complete-support document QA
 on:
   pull_request:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - 'tools/audit_science_native_5p_documents_20261128.py'
       - 'audits/rph_5p_science_y*_native_*_20261128.json'
+      - 'audits/rph_5p_science_y*_support_*_20261128.json'
       - '.github/workflows/science-native-5p-documents-20261128.yml'
       - 'web/rph_5p_v5_layout.py'
   workflow_dispatch:
@@ -33,6 +34,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: science-native-y${{ matrix.year }}-5p-DRAFT-NOT-FOR-TEACHING
+          name: science-native-y${{ matrix.year }}-5p-COMPLETE-SUPPORT-DRAFT-NOT-FOR-TEACHING
           path: qa_science_native_${{ matrix.year }}/
           retention-days: 7
