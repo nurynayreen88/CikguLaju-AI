@@ -10,6 +10,9 @@ on:
       - 'tools/audit_science_native_5p_documents_20261128.py'
       - 'tools/audit_science_5p_native_pdf_20261128.py'
       - 'web/science_5p_candidate_web.py'
+      - 'web/science_5p_release.py'
+      - 'tests/test_science_5p_release_gate_20261128.py'
+      - 'audits/rph_5p_science_y5_y6_release_manifest_20261128.json'
       - 'tests/test_science_5p_candidate_web.py'
       - 'tests/test_science_5p_candidate_ui.cjs'
       - 'web_v1_static_preview/index.html'
@@ -84,6 +87,8 @@ jobs:
       - run: python -m pip install flask python-docx pymupdf
       - name: Mocked native catalogue and quota integration checks
         run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_web_integration_qa_20261128.py -v
+      - name: Validate all 205 release records with default denial
+        run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_release_gate_20261128.py -v
       - name: Signed-session candidate route and catalogue drift tests
         run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_candidate_web.py -v
       - name: Candidate browser selection and download regression
