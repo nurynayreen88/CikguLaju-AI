@@ -31,7 +31,8 @@ def render_selected(year, row, support, fmt, teacher):
     if parsed["_reflection_mode"] == "manual":
         s["reflection"] = parsed["_reflection"]
     else:
-        s["reflection"] = "Bil. murid menguasai:    Belum menguasai:\nKriteria: "+s["criteria"]
+        s["reflection"] = ("Bil. murid menguasai:    Belum menguasai:\nKriteria: "+s["criteria"]
+                           +"\nTindakan: Pemulihan seperti di atas dan pentaksiran semula.")
     raw=json.dumps(s,ensure_ascii=False,sort_keys=True).encode("utf-8")
     c["source_sha256"]=sha256(raw).hexdigest()
     colors=[r for r in read(ROOT/"web/rph_login_canonical_layout_20261121.json")["subjects"] if r["subject_code"]=="SCIENCE"]
