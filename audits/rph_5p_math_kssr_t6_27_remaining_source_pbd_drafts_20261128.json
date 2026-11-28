@@ -1,0 +1,1022 @@
+{
+  "status": "DRAFT_TSV_SOURCE_PBD_ALIGNED",
+  "year": 6,
+  "total": 27,
+  "source_triage_blob": "8b80db7bf5617cdd68204f17fb0456d55340465a",
+  "prior_batch_blob": "8adb9c6ed98f165a2f3f4478275a581918d6e99c",
+  "source_files": [
+    {
+      "minutes": 30,
+      "path": "staging/matematik/tahun6/slot_30_minit.tsv",
+      "sha": "38be0c6d58229204431e28c710c18a985bff81e1"
+    },
+    {
+      "minutes": 60,
+      "path": "staging/matematik/tahun6/slot_60_minit.tsv",
+      "sha": "36669d03392b0adc22583492a9d19b955c819c37"
+    }
+  ],
+  "scope": "Remaining 27 of 54 distinct candidate lesson options. Actual staging TSV titles, duration, PBD tasks and evidence retained. Parent IDs are related by SP only. Not the complete Year 6 catalogue (117 snapshot lessons).",
+  "limitations": "Full SK/SP text, objective/criteria, actual native source catalogue, academic sign-off, Word/PDF generation and authenticated download pending. No production changes.",
+  "records": [
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 81,
+      "related_candidate_ids": [
+        "DSKP6-04"
+      ],
+      "source_sp_codes": [
+        "6.1.2"
+      ],
+      "source_title": "Membentuk sudut tirus, tegak dan cakah",
+      "source_pages": "165–167",
+      "source_minutes": 60,
+      "source_pbd_task": "Bina sudut 35°, 90° dan 125° dengan pembaris dan protraktor. Label bucu dan jenis bagi setiap sudut.",
+      "source_pbd_evidence": "Ketiga-tiga ukuran dalam toleransi ±2°. Sudut tirus, tegak dan cakah dilabel mengikut urutan.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga bukaan kipas dan minta murid mengelaskan sudut.",
+        "exploration": "Pasangan bina sudut menggunakan dua jalur kad berengsel; banding dengan penjuru kertas.",
+        "explanation": "Guru model bina 60°, 90° dan 150° menggunakan pusat protraktor pada bucu serta garis sifar sejajar sinar awal.",
+        "elaboration": "Murid bina 25°, 90° dan 110°; pasangan ukur semula dan label jenis.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pembaris, protraktor, jalur kad.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan sudut tegak sebagai rujukan dan tandakan pusat protraktor.",
+        "pengayaan": "Bina dua sudut cakah yang berbeza dan banding ukurannya."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 82,
+      "related_candidate_ids": [
+        "DSKP6-04"
+      ],
+      "source_sp_codes": [
+        "6.1.2"
+      ],
+      "source_title": "Membentuk sudut apabila sinar awal menghala ke kiri atau kanan",
+      "source_pages": "165–167",
+      "source_minutes": 60,
+      "source_pbd_task": "Bina 70° dengan sinar awal menghala ke kiri dan 140° dengan sinar awal menghala ke kanan. Letakkan kedua-dua bukaan di atas garis mendatar dan label ukurannya.",
+      "source_pbd_evidence": "70° dan 140° dalam toleransi ±2°. Bacaan bermula pada sifar yang sejajar dengan setiap sinar awal.",
+      "phases": {
+        "engagement": "Guru tunjuk dua sinar awal mendatar yang menghala arah bertentangan.",
+        "exploration": "Pasangan letakkan protraktor pada sinar ke kiri dan kanan, kemudian cari sifar yang betul.",
+        "explanation": "Guru demonstrasi 40° dari sinar kiri dan 130° dari sinar kanan; jelaskan pemilihan skala.",
+        "elaboration": "Murid bina 55° dengan sinar kiri dan 145° dengan sinar kanan; rakan semak bukaan di atas garis.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Protraktor, pembaris, kad sinar.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Warnakan sifar yang sejajar sinar awal.",
+        "pengayaan": "Bina dua sudut sama ukuran dengan sinar awal berlainan arah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 83,
+      "related_candidate_ids": [
+        "DSKP6-04"
+      ],
+      "source_sp_codes": [
+        "6.1.2"
+      ],
+      "source_title": "membentuk sudut mengikut skala protraktor",
+      "source_pages": "165–167",
+      "source_minutes": 30,
+      "source_pbd_task": "Bina sudut 45°, 115° dan 180°. Label bucu serta ukurannya. Semak bahawa sinar bagi 180° berada pada garis lurus yang sama.",
+      "source_pbd_evidence": "45° dan 115° dalam toleransi ±2°. Dua sinar sudut 180° bertentangan dan segaris.",
+      "phases": {
+        "engagement": "Guru buka jalur kad daripada sudut kecil kepada garis lurus.",
+        "exploration": "Murid padankan bukaan 50° dan 180° pada dua model sinar.",
+        "explanation": "Guru model kedudukan protraktor dan tunjuk dua sinar bertentangan membentuk 180°.",
+        "elaboration": "Murid bina 60° dan 135° serta semak dengan protraktor.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Pembaris, protraktor.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tandakan bucu dan sinar awal sebelum mengukur.",
+        "pengayaan": "Terangkan cara mengesahkan sudut lurus tanpa membaca skala."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 84,
+      "related_candidate_ids": [
+        "DSKP6-05"
+      ],
+      "source_sp_codes": [
+        "6.2.1"
+      ],
+      "source_title": "mengenal pusat, jejari dan diameter bulatan",
+      "source_pages": "178–179",
+      "source_minutes": 30,
+      "source_pbd_task": "Lukis rajah berpusat O. Letak A dan B bertentangan pada lilitan supaya AB melalui O. Label O, OA dan AB mengikut nama bahagiannya.",
+      "source_pbd_evidence": "O ialah pusat, OA jejari dan AB diameter. A serta B berada pada lilitan dan AB melalui O.",
+      "phases": {
+        "engagement": "Guru tunjuk bulatan kertas dan minta murid teka pusatnya.",
+        "exploration": "Pasangan lipat bulatan dua arah untuk mencari titik persilangan.",
+        "explanation": "Guru label pusat P, jejari PQ dan diameter QR yang melalui P.",
+        "elaboration": "Murid label bahagian bulatan pada rajah baharu menggunakan pembaris.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Bulatan kertas, kad rajah, pembaris.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan titik pusat yang telah ditanda.",
+        "pengayaan": "Lukis satu diameter dalam arah berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 85,
+      "related_candidate_ids": [
+        "DSKP6-05"
+      ],
+      "source_sp_codes": [
+        "6.2.1"
+      ],
+      "source_title": "Menerangkan hubungan jejari dengan diameter bulatan",
+      "source_pages": "178–179",
+      "source_minutes": 60,
+      "source_pbd_task": "Lukis lakaran bulatan berpusat O dengan diameter AB sepanjang 18 cm dan titik C pada lilitan. Label OA, OB dan OC dan nyatakan panjangnya.",
+      "source_pbd_evidence": "OA, OB dan OC ialah jejari sepanjang 9 cm. A, O dan B segaris dan AB melalui pusat.",
+      "phases": {
+        "engagement": "Guru tunjuk bulatan dengan jejari 4 cm; murid ramal diameter.",
+        "exploration": "Pasangan ukur dua jejari segaris pada model bulatan.",
+        "explanation": "Guru jelaskan diameter ialah dua kali jejari dan kedua-dua hujungnya pada lilitan.",
+        "elaboration": "Murid lakar bulatan berdiameter 14 cm, label tiga jejari dan nyatakan panjang setiap satu.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jangka lukis, pembaris, kad bulatan.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gabungkan dua jejari sama panjang.",
+        "pengayaan": "Cari jejari apabila diameter 25 cm."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 86,
+      "related_candidate_ids": [
+        "DSKP6-05"
+      ],
+      "source_sp_codes": [
+        "6.2.1"
+      ],
+      "source_title": "membezakan diameter daripada segmen lain pada bulatan",
+      "source_pages": "178–179",
+      "source_minutes": 30,
+      "source_pbd_task": "Pada rajah, kedua-dua hujung AB dan CD terletak pada lilitan. Hanya AB melalui pusat O. Tentukan diameter, namakan dua jejari dan jelaskan pilihan.",
+      "source_pbd_evidence": "AB ialah diameter. OA dan OB ialah jejari. CD tidak melalui pusat.",
+      "phases": {
+        "engagement": "Guru paparkan dua segmen yang menghubungkan titik pada lilitan.",
+        "exploration": "Pasangan uji sama ada segmen melalui pusat menggunakan pembaris.",
+        "explanation": "Guru jelaskan setiap diameter melalui pusat, tetapi bukan semua perentas ialah diameter.",
+        "elaboration": "Murid kenal diameter dan dua jejari pada rajah berlainan orientasi.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad rajah bulatan, pembaris.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tandakan pusat dahulu.",
+        "pengayaan": "Lukis dua perentas yang bukan diameter."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 93,
+      "related_candidate_ids": [
+        "DSKP6-06"
+      ],
+      "source_sp_codes": [
+        "7.1.1"
+      ],
+      "source_title": "Menentukan jarak mencancang menggunakan skala pada grid",
+      "source_pages": "187–190",
+      "source_minutes": 60,
+      "source_pbd_task": "Setiap petak grid mempunyai sisi 1 cm. Skala peta ialah 1 cm mewakili 250 m. Dari A(2, 1) ke B(2, 6), cari jarak mengufuk dan mencancang serta nyatakan arah.",
+      "source_pbd_evidence": "Mengufuk 0 m. Mencancang lima sela ke atas, 1 250 m bersamaan 1.25 km.",
+      "phases": {
+        "engagement": "Guru tunjuk dua lokasi pada lajur grid yang sama.",
+        "exploration": "Pasangan plot (3,2) dan (3,6), kira sela serta arah.",
+        "explanation": "Guru model empat sela pada skala 1 cm mewakili 200 m, jarak 800 m dan mengufuk sifar.",
+        "elaboration": "Murid tentukan jarak bagi (4,7) ke (4,3) menggunakan skala 300 m bagi setiap sela.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid berskala, pembaris.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bezakan perubahan x dan y dengan dua warna.",
+        "pengayaan": "Banding jarak mencancang pada dua skala."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 94,
+      "related_candidate_ids": [
+        "DSKP6-06"
+      ],
+      "source_sp_codes": [
+        "7.1.1"
+      ],
+      "source_title": "menentukan jarak mengufuk dan mencancang mengikut skala",
+      "source_pages": "187–190",
+      "source_minutes": 30,
+      "source_pbd_task": "Pada skala satu sela mewakili 3 km, cari jarak mengufuk dan mencancang dari C(1, 2) ke D(5, 4). Lakar dua segmen dan label jarak sebenar.",
+      "source_pbd_evidence": "Empat sela mengufuk bersamaan 12 km dan dua sela mencancang bersamaan 6 km.",
+      "phases": {
+        "engagement": "Guru plot dua titik dan minta murid bezakan pergerakan mendatar daripada menegak.",
+        "exploration": "Pasangan bina laluan berbentuk L antara (2,1) dan (5,4).",
+        "explanation": "Guru model beza koordinat didarab skala; jarak mengufuk dan mencancang dikira berasingan.",
+        "elaboration": "Murid kira jarak dari (2,3) ke (6,5) pada skala 2 km setiap sela.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Satah Cartes, kad skala.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Kira sela pada satu paksi dahulu.",
+        "pengayaan": "Bina dua pasangan titik dengan jarak mengufuk sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 95,
+      "related_candidate_ids": [
+        "DSKP6-06"
+      ],
+      "source_sp_codes": [
+        "7.1.1"
+      ],
+      "source_title": "Menentukan jarak mengufuk menggunakan skala nisbah",
+      "source_pages": "187–190",
+      "source_minutes": 60,
+      "source_pbd_task": "Setiap petak mempunyai sisi 1 cm pada grid berskala 1 : 4 000. Cari jarak mengufuk dan mencancang dari C(2, 4) ke D(8, 4), dalam meter.",
+      "source_pbd_evidence": "Enam sela mengufuk. Setiap 1 cm mewakili 4 000 cm atau 40 m, maka jarak 240 m. Jarak mencancang 0 m.",
+      "phases": {
+        "engagement": "Guru papar skala 1 : 2 000; murid cadang makna 1 cm.",
+        "exploration": "Pasangan tukar 2 000 cm kepada 20 m dan ukur sela grid.",
+        "explanation": "Guru model jarak mengufuk lima sela pada skala tersebut ialah 100 m.",
+        "elaboration": "Murid hitung jarak dari (1,5) ke (7,5) pada skala 1 : 3 000.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid berskala, pembaris, carta unit.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar skala kepada meter bagi satu sela terlebih dahulu.",
+        "pengayaan": "Cari skala nisbah apabila empat sela 1 cm mewakili 200 m."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 96,
+      "related_candidate_ids": [
+        "DSKP6-06"
+      ],
+      "source_sp_codes": [
+        "7.1.1"
+      ],
+      "source_title": "membandingkan jarak sebenar apabila skala berubah",
+      "source_pages": "187–190",
+      "source_minutes": 30,
+      "source_pbd_task": "Dari P(2, 6) ke Q(5, 2), cari jarak mengufuk dan mencancang pada skala 2 km bagi satu sela, kemudian ulang pada 5 km bagi satu sela.",
+      "source_pbd_evidence": "Tiga sela mengufuk dan empat mencancang. Pada skala pertama 6 km dan 8 km. Pada skala kedua 15 km dan 20 km.",
+      "phases": {
+        "engagement": "Guru tunjuk dua grid serupa dengan skala berlainan.",
+        "exploration": "Pasangan kira sela mengufuk dan mencancang bagi titik sama pada kedua-dua grid.",
+        "explanation": "Guru jelaskan bilangan sela kekal, tetapi jarak sebenar berubah mengikut skala.",
+        "elaboration": "Murid banding (1,5) ke (4,3) pada skala 3 km dan 4 km setiap sela.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Dua grid, garis skala, pembaris.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bina jadual bilangan sela dan skala.",
+        "pengayaan": "Terangkan bagaimana jarak berubah apabila skala digandakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 97,
+      "related_candidate_ids": [
+        "MT6-PDP-079"
+      ],
+      "source_sp_codes": [
+        "7.2.1"
+      ],
+      "source_title": "Permudah nisbah menggunakan faktor sepunya",
+      "source_pages": "192–196",
+      "source_minutes": 60,
+      "source_pbd_task": "Permudah nisbah 28 : 42 dan 54 : 36. Nyatakan faktor sepunya yang digunakan dan semak urutan.",
+      "source_pbd_evidence": "2 : 3 dan 3 : 2, menggunakan faktor 14 dan 18.",
+      "phases": {
+        "engagement": "Guru tunjuk 12 token merah dan 18 biru; murid cari kumpulan sepunya.",
+        "exploration": "Pasangan kelompokkan token mengikut faktor sepunya dan catat nisbah.",
+        "explanation": "Guru model 12 : 18 = 2 : 3 dengan bahagi 6; tertib warna dikekalkan.",
+        "elaboration": "Murid permudah 20 : 30 dan 35 : 25 serta semak faktor.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token warna, jadual faktor.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bahagi dengan faktor kecil secara berperingkat.",
+        "pengayaan": "Banding nisbah dengan tertib terbalik."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 98,
+      "related_candidate_ids": [
+        "MT6-PDP-079"
+      ],
+      "source_sp_codes": [
+        "7.2.1"
+      ],
+      "source_title": "mempermudah nisbah dua kuantiti nombor bulat",
+      "source_pages": "191–195",
+      "source_minutes": 30,
+      "source_pbd_task": "Permudah 18:24 dan 21:14. Tunjukkan pembahagi bagi setiap nisbah.",
+      "source_pbd_evidence": "3:4 menggunakan 6 dan 3:2 menggunakan 7.",
+      "phases": {
+        "engagement": "Guru paparkan kad nisbah 8 : 12 dan 2 : 3.",
+        "exploration": "Pasangan susun token untuk menunjukkan empat kumpulan yang sama.",
+        "explanation": "Guru jelaskan bentuk termudah apabila tiada faktor sepunya selain 1.",
+        "elaboration": "Murid permudah 16 : 20 dan 30 : 18 serta tunjuk pembahagi.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad warna, jadual faktor.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Senaraikan faktor bagi kedua-dua nombor.",
+        "pengayaan": "Semak nisbah yang sudah termudah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 99,
+      "related_candidate_ids": [
+        "MT6-PDP-079"
+      ],
+      "source_sp_codes": [
+        "7.2.1"
+      ],
+      "source_title": "Tentukan sama ada nisbah yang berbeza adalah setara",
+      "source_pages": "192–196",
+      "source_minutes": 60,
+      "source_pbd_task": "Bandingkan 24 : 36, 18 : 27 dan 21 : 32 selepas dipermudah. Nyatakan pasangan nisbah setara.",
+      "source_pbd_evidence": "24 : 36 dan 18 : 27 masing-masing 2 : 3. 21 : 32 dalam bentuk termudah yang berbeza.",
+      "phases": {
+        "engagement": "Guru tunjuk dua bekas dengan nisbah warna 6 : 9 dan 10 : 15.",
+        "exploration": "Pasangan permudah kedua-dua nisbah lalu bandingkan bentuk termudah.",
+        "explanation": "Guru model bahawa nisbah setara mengekalkan tertib dan nilai relatif.",
+        "elaboration": "Murid banding 12 : 16, 21 : 28 dan 15 : 24; kenal pasangan setara.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token warna, kad nisbah.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Permudah setiap nisbah dahulu.",
+        "pengayaan": "Cipta dua nisbah setara dengan 4 : 7."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 100,
+      "related_candidate_ids": [
+        "MT6-PDP-080"
+      ],
+      "source_sp_codes": [
+        "7.3.1"
+      ],
+      "source_title": "Gunakan kadar seunit untuk kuantiti berkadaran",
+      "source_pages": "197–200",
+      "source_minutes": 60,
+      "source_pbd_task": "Lima buku berharga RM40 pada kadar tetap. Cari harga tiga dan 12 buku serta bilangan buku untuk RM64.",
+      "source_pbd_evidence": "RM24, RM96 dan lapan buku. Kadar seunit RM8.",
+      "phases": {
+        "engagement": "Guru papar harga empat buku RM28 pada kadar tetap.",
+        "exploration": "Pasangan bina jadual bilangan buku dan harga; cari kadar seunit.",
+        "explanation": "Guru model RM28 ÷ 4 = RM7; cari harga enam buku dengan darab.",
+        "elaboration": "Murid cari harga tiga dan sembilan buku serta bilangan buku untuk RM56.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad harga, jadual kadaran.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Cari harga seunit dahulu.",
+        "pengayaan": "Bina masalah songsang yang melibatkan bajet."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 101,
+      "related_candidate_ids": [
+        "MT6-PDP-080"
+      ],
+      "source_sp_codes": [
+        "7.3.1"
+      ],
+      "source_title": "menentukan kuantiti berkadaran menggunakan faktor skala",
+      "source_pages": "197–200",
+      "source_minutes": 30,
+      "source_pbd_task": "Dengan nisbah 3 cawan untuk 4 kek, cari cawan bagi 12 kek dan bilangan kek bagi 15 cawan.",
+      "source_pbd_evidence": "9 cawan dan 20 kek.",
+      "phases": {
+        "engagement": "Guru tunjuk resipi dua cawan tepung untuk tiga kek.",
+        "exploration": "Pasangan gandakan kedua-dua kuantiti menggunakan kad resipi.",
+        "explanation": "Guru model faktor skala sama pada kedua-dua lajur jadual.",
+        "elaboration": "Murid cari tepung untuk 15 kek dan bilangan kek bagi lapan cawan pada kadar 2 : 3.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad resipi, jadual kadaran.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan anak panah faktor pada setiap lajur.",
+        "pengayaan": "Cari kuantiti apabila faktor skala ialah pecahan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 102,
+      "related_candidate_ids": [
+        "MT6-PDP-080"
+      ],
+      "source_sp_codes": [
+        "7.3.1"
+      ],
+      "source_title": "Gunakan faktor skala untuk mencari kuantiti berkadaran",
+      "source_pages": "197–200",
+      "source_minutes": 60,
+      "source_pbd_task": "3 L cat meliputi 21 m² pada kadar sekata. Tentukan luas bagi 7 L dan jumlah cat bagi 84 m².",
+      "source_pbd_evidence": "49 m² dan 12 L. Kadar 7 m² seliter.",
+      "phases": {
+        "engagement": "Guru beri situasi dua liter cat meliputi 16 m².",
+        "exploration": "Pasangan bina jadual cat dan keluasan pada kadar tetap.",
+        "explanation": "Guru model kadar 8 m² seliter untuk mencari kuantiti dan luas secara songsang.",
+        "elaboration": "Murid cari luas bagi 5 L dan cat bagi 72 m² pada kadar sama.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad situasi cat, jadual kadaran.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bahagi kepada kadar satu liter.",
+        "pengayaan": "Terangkan mengapa dua kali cat meliputi dua kali keluasan pada kadar tetap."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 103,
+      "related_candidate_ids": [
+        "MT6-PDP-080"
+      ],
+      "source_sp_codes": [
+        "7.3.1"
+      ],
+      "source_title": "menentukan kuantiti berkadaran dengan kaedah unitari",
+      "source_pages": "197–200",
+      "source_minutes": 30,
+      "source_pbd_task": "Jika 6 bekas berharga RM21, tentukan harga 10 bekas dan bilangan bekas yang boleh dibeli dengan RM28.",
+      "source_pbd_evidence": "RM35 dan 8 bekas pada harga RM3.50 sebekas.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga botol berharga RM12; murid teka harga satu botol.",
+        "exploration": "Pasangan bina jadual unitari untuk harga dan bilangan.",
+        "explanation": "Guru model RM12 ÷ 3 = RM4, kemudian darab atau bahagi mengikut soalan.",
+        "elaboration": "Murid tentukan harga tujuh botol dan bilangan botol untuk RM36.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad harga, jadual kadaran.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tuliskan harga seunit pada baris pertama.",
+        "pengayaan": "Banding dua pakej selepas mencari kadar seunit."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 104,
+      "related_candidate_ids": [
+        "MT6-PDP-081"
+      ],
+      "source_sp_codes": [
+        "7.4.1"
+      ],
+      "source_title": "Menyelesaikan masalah perjalanan dua segmen pada grid berskala",
+      "source_pages": "201–204",
+      "source_minutes": 60,
+      "source_pbd_task": "Laluan dari A(1, 2) ke B(5, 7) bergerak mengufuk dahulu kemudian mencancang. Setiap dua sela mewakili 60 m. Lakar laluan dan cari panjang dua segmen serta jumlahnya.",
+      "source_pbd_evidence": "Empat sela mengufuk bersamaan 120 m, lima sela mencancang bersamaan 150 m, jumlah 270 m.",
+      "phases": {
+        "engagement": "Guru tunjuk pelan grid dengan laluan berbentuk L.",
+        "exploration": "Pasangan plot (2,1) ke (5,5), kira tiga sela mendatar dan empat mencancang.",
+        "explanation": "Guru model skala dua sela = 40 m, maka satu sela = 20 m; jumlah laluan 140 m.",
+        "elaboration": "Murid lakar laluan dari (1,3) ke (6,6) pada skala dua sela = 50 m dan kira jumlah.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pelan grid, pembaris, kad skala.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Hitung panjang setiap segmen sebelum jumlah.",
+        "pengayaan": "Bina laluan lain dengan jarak keseluruhan sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 105,
+      "related_candidate_ids": [
+        "MT6-PDP-081"
+      ],
+      "source_sp_codes": [
+        "7.4.1"
+      ],
+      "source_title": "Menyelesaikan masalah nisbah bahagian daripada jumlah",
+      "source_pages": "201–204",
+      "source_minutes": 60,
+      "source_pbd_task": "Nisbah pelekat merah kepada putih ialah 4 : 5. Terdapat 63 pelekat. Lakar model bahagian, cari bilangan setiap warna dan nyatakan beza.",
+      "source_pbd_evidence": "Sembilan bahagian, setiap bahagian tujuh pelekat. 28 merah dan 35 putih, dengan beza 7. Jumlahnya 63.",
+      "phases": {
+        "engagement": "Guru tunjuk 35 pelekat dengan nisbah merah kepada biru 2 : 3.",
+        "exploration": "Pasangan bina lima bahagian sama pada rajah bar.",
+        "explanation": "Guru model 35 ÷ 5 = 7, kemudian 14 merah dan 21 biru; semak jumlah.",
+        "elaboration": "Murid selesaikan nisbah 3 : 5 bagi 48 objek, cari kedua-dua bilangan dan beza.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token pelekat, rajah bar.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Jumlahkan bahagian nisbah dahulu.",
+        "pengayaan": "Bina masalah yang memberi beza dua kuantiti, bukan jumlah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 106,
+      "related_candidate_ids": [
+        "MT6-PDP-081"
+      ],
+      "source_sp_codes": [
+        "7.4.1"
+      ],
+      "source_title": "Selesaikan masalah kadaran dan semak kecukupan bekalan",
+      "source_pages": "201–204",
+      "source_minutes": 60,
+      "source_pbd_task": "Enam pek alat tulis memerlukan 42 pensel pada kadar tetap. Kedai perlu menyediakan 15 pek dan mempunyai 96 pensel. Nyatakan kecukupan dan beza.",
+      "source_pbd_evidence": "Perlu 105 pensel. Stok kurang 9 pensel. Kadar 7 pensel sepeket.",
+      "phases": {
+        "engagement": "Guru tunjuk empat pek memerlukan 24 pensel, stok 65 pensel.",
+        "exploration": "Pasangan tentukan kadar satu pek melalui kad kumpulan.",
+        "explanation": "Guru model 6 pensel sepek; 12 pek perlu 72, maka kurang 7.",
+        "elaboration": "Murid semak kecukupan stok 82 pensel untuk 13 pek pada kadar enam pensel sepek.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad pek, jadual stok.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Cari keperluan satu pek dahulu.",
+        "pengayaan": "Tentukan bilangan pek lengkap maksimum daripada stok."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 107,
+      "related_candidate_ids": [
+        "MT6-PDP-081"
+      ],
+      "source_sp_codes": [
+        "7.4.1"
+      ],
+      "source_title": "membandingkan dua laluan pada grid dengan had jarak",
+      "source_pages": "201–205",
+      "source_minutes": 30,
+      "source_pbd_task": "Skala 2 km bagi satu sela. Bandingkan laluan A(1, 1)–B(4, 1)–C(4, 3) dengan A–D(1, 4)–E(4, 4)–C. Pilih laluan dalam had 12 km dan beri sebab.",
+      "source_pbd_evidence": "A–B–C ialah 6 + 4 = 10 km dan berbaki 2 km. A–D–E–C ialah 6 + 6 + 2 = 14 km dan melebihi had.",
+      "phases": {
+        "engagement": "Guru tunjuk dua laluan bersegi antara dua titik pada peta.",
+        "exploration": "Pasangan warnakan segmen kedua-dua laluan dan kira sela.",
+        "explanation": "Guru model jumlah sela didarab skala, kemudian bandingkan dengan had jarak.",
+        "elaboration": "Murid banding laluan (1,1)–(3,1)–(3,3) dengan laluan (1,1)–(1,4)–(3,4)–(3,3) pada skala 2 km setiap sela dan had 10 km.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Pelan grid, pembaris.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Catat jarak setiap segmen dalam jadual.",
+        "pengayaan": "Cadang laluan lain dalam had yang ditetapkan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 108,
+      "related_candidate_ids": [
+        "DSKP6-07"
+      ],
+      "source_sp_codes": [
+        "8.1.1"
+      ],
+      "source_title": "Melengkapkan dan mentafsir carta pai dengan sektor 90° dan 180°",
+      "source_pages": "207–212",
+      "source_minutes": 60,
+      "source_pbd_task": "Daripada 32 murid, 16 memilih Sains, lapan Seni dan lapan sukan. Lengkapkan dan label carta pada bulatan berpusat. Nyatakan pilihan yang paling ramai dan bezanya dengan Seni.",
+      "source_pbd_evidence": "180°, 90° dan 90°. Sains paling ramai, lapan murid lebih daripada Seni. Jumlah sudut 360°.",
+      "phases": {
+        "engagement": "Guru gabungkan separuh bulatan dan dua suku bulatan.",
+        "exploration": "Pasangan padankan 12,6,6 daripada 24 pilihan dengan sektor.",
+        "explanation": "Guru model sudut 180°, 90° dan 90°, label dan semak jumlah 360°.",
+        "elaboration": "Murid bina carta bagi 20,10,10 daripada 40 respons dan banding kategori.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Potongan sektor, protraktor, kad data.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan bulatan yang sudah dibahagi empat.",
+        "pengayaan": "Tulis dua soalan tafsiran berdasarkan carta sendiri."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 109,
+      "related_candidate_ids": [
+        "DSKP6-07"
+      ],
+      "source_sp_codes": [
+        "8.1.1"
+      ],
+      "source_title": "Melengkapkan dan mentafsir carta pai dengan sektor 45°, 90° dan 180°",
+      "source_pages": "209–212",
+      "source_minutes": 60,
+      "source_pbd_task": "Daripada 40 peserta, 20 pilih A, 10 pilih B, lima pilih C dan lima pilih D. Lengkapkan dan label carta pada bulatan berpusat. Cari beza bilangan pemilih A dan C.",
+      "source_pbd_evidence": "180°, 90°, 45° dan 45°. A melebihi C sebanyak 15 orang. Keempat-empat sektor berlabel.",
+      "phases": {
+        "engagement": "Guru tunjuk sektor 180°, 90° dan dua sektor 45°.",
+        "exploration": "Pasangan agihkan 48 token kepada sektor mengikut bahagian bulatan.",
+        "explanation": "Guru model nilai 24,12,6,6 serta label kategori dan jumlah sudut.",
+        "elaboration": "Murid lengkapkan carta bagi 16,8,4,4 daripada 32 murid; cari beza terbesar dan terkecil.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Potongan sektor, protraktor, kad data.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Padankan sektor dengan pecahan separuh, suku dan perlapan.",
+        "pengayaan": "Tukar jumlah data tanpa mengubah nisbah sektor."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 110,
+      "related_candidate_ids": [
+        "DSKP6-08"
+      ],
+      "source_sp_codes": [
+        "8.2.1"
+      ],
+      "source_title": "membezakan peristiwa mungkin berlaku dengan peristiwa tidak mungkin",
+      "source_pages": "213–215",
+      "source_minutes": 30,
+      "source_pbd_task": "Beg mengandungi empat token hijau dan dua kuning. Satu token dicabut secara rawak. Tentukan sama ada mendapat kuning, merah atau hijau mungkin berlaku dan beri sebab.",
+      "source_pbd_evidence": "Kuning dan hijau mungkin kerana ada dalam beg. Merah tidak mungkin kerana tiada token merah.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga token merah dan dua biru sebelum dimasukkan dalam beg.",
+        "exploration": "Pasangan ramal warna yang mungkin atau tidak mungkin muncul.",
+        "explanation": "Guru jelaskan bahawa tidak muncul dalam satu cabutan tidak bermaksud mustahil.",
+        "elaboration": "Murid kelaskan peristiwa mendapat biru, hijau dan merah daripada beg latihan serta beri sebab.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Beg legap, token warna sama saiz.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Periksa kandungan beg sebelum membuat ramalan.",
+        "pengayaan": "Cipta beg yang menjadikan satu warna mustahil."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 111,
+      "related_candidate_ids": [
+        "DSKP6-08"
+      ],
+      "source_sp_codes": [
+        "8.2.1"
+      ],
+      "source_title": "Menentukan peristiwa yang mungkin berlaku berdasarkan kandungan kotak",
+      "source_pages": "214–215",
+      "source_minutes": 60,
+      "source_pbd_task": "Kotak mengandungi lima kad nombor genap dan tiga kad nombor ganjil. Satu kad diambil secara rawak. Tentukan sama ada kad ganjil, genap atau berhuruf boleh diperoleh dan beri sebab.",
+      "source_pbd_evidence": "Kad ganjil dan genap mungkin kerana kedua-duanya ada. Kad berhuruf tidak mungkin kerana semua kad bertulis nombor.",
+      "phases": {
+        "engagement": "Guru tunjuk kad bernombor 1 hingga 6 dalam kotak.",
+        "exploration": "Pasangan asingkan kad genap dan ganjil; ramal peristiwa yang mungkin.",
+        "explanation": "Guru jelaskan kad genap atau ganjil mungkin, kad huruf tidak mungkin kerana tiada dalam kotak.",
+        "elaboration": "Murid kelaskan peristiwa mengambil kad nombor, kad ganjil dan kad huruf daripada set baharu.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad nombor, kotak.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Senaraikan hasil yang tersedia dahulu.",
+        "pengayaan": "Bina set kad yang menjadikan satu peristiwa tidak mungkin."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 112,
+      "related_candidate_ids": [
+        "DSKP6-09"
+      ],
+      "source_sp_codes": [
+        "8.2.2"
+      ],
+      "source_title": "Mengelaskan kebolehjadian cabutan berdasarkan bilangan token",
+      "source_pages": "216–218",
+      "source_minutes": 60,
+      "source_pbd_task": "Beg A ada satu token merah dan lima biru, B tiga merah dan tiga biru, C lima merah dan satu biru. Satu token sama saiz dicabut secara rawak daripada setiap beg. Kelaskan kebolehjadian mendapat merah dan beri sebab.",
+      "source_pbd_evidence": "A kecil kemungkinan kerana 1 kurang daripada 5. B sama kemungkinan kerana 3 sama dengan 3. C besar kemungkinan kerana 5 melebihi 1.",
+      "phases": {
+        "engagement": "Guru papar tiga beg dengan bilangan token merah dan biru yang berbeza.",
+        "exploration": "Pasangan susun model 2 merah/4 biru, 3/3 dan 4/2 pada skala kebolehjadian.",
+        "explanation": "Guru terangkan kecil, sama dan besar kemungkinan berdasarkan bilangan hasil yang menyokong, dengan token sama saiz.",
+        "elaboration": "Murid kelaskan cabutan daripada beg 1/7, 4/4 dan 7/1; beri sebab tanpa bergantung pada satu cabutan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Beg legap, token sama saiz, kad skala.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Banding bilangan warna sasaran dengan warna lain.",
+        "pengayaan": "Cipta komposisi beg untuk kategori pasti dan mustahil."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 6,
+      "source_snapshot_lesson": 113,
+      "related_candidate_ids": [
+        "DSKP6-09"
+      ],
+      "source_sp_codes": [
+        "8.2.2"
+      ],
+      "source_title": "Mengelaskan kebolehjadian peristiwa bagi satu lontaran dadu",
+      "source_pages": "216–218",
+      "source_minutes": 60,
+      "source_pbd_task": "Dadu adil bernombor 1 hingga 6 dilontar sekali. Kelaskan peristiwa mendapat 7, mendapat 1, mendapat nombor genap, mendapat nombor melebihi 2 dan mendapat nombor kurang daripada 7. Beri sebab.",
+      "source_pbd_evidence": "Mustahil, kecil kemungkinan, sama kemungkinan, besar kemungkinan dan pasti. Bilangan hasil yang menyokongnya ialah 0, 1, 3, 4 dan 6 daripada enam.",
+      "phases": {
+        "engagement": "Guru tunjuk dadu adil enam muka dan minta murid senaraikan semua hasil.",
+        "exploration": "Pasangan padankan kad peristiwa dengan hasil yang menyokongnya.",
+        "explanation": "Guru model lima kategori: mustahil, kecil, sama, besar kemungkinan dan pasti berdasarkan 0 hingga 6 hasil.",
+        "elaboration": "Murid kelaskan mendapat 8, mendapat 6, mendapat nombor ganjil, mendapat nombor kurang daripada 5 dan mendapat nombor 1 hingga 6.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru semak mengikut evidens sumber. Murid jelaskan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Dadu adil, kad peristiwa, garis skala.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Senaraikan enam hasil dan bulatkan yang memenuhi peristiwa.",
+        "pengayaan": "Cipta lima peristiwa berlainan yang meliputi semua kategori."
+      },
+      "ready": false
+    }
+  ]
+}
