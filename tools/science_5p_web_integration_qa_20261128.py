@@ -21,7 +21,11 @@ URL = "/qa/science-5p/download"
 FMTS = {"word":("docx","application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
         "pdf":("pdf","application/pdf")}
 
-def render_selected(year, row, support, fmt, teacher):
+def render_selected(year, row, support, fmt, teacher, *, published=False):
+    if published:
+        from web.science_5p_release import is_released
+        if not is_released(year,row['lesson_id']):
+            raise ValueError('Science lesson not approved for publication')
     parsed = parse_teacher_fields(teacher)
     profile = dict(zip(("class","date","time","students"),
                        (parsed[k] for k in ("Kelas:","Tarikh:","Masa:","Bil. Murid:"))))
@@ -40,7 +44,7 @@ def render_selected(year, row, support, fmt, teacher):
         raise ValueError("Science palette unavailable")
     color=colors[0]
     palette=Palette(color["strong"].lstrip("#"),color["tone"].lstrip("#"),color["tone"].lstrip("#"),"9AB2B7")
-    heading=f"SAINS SK\nTAHUN {year}\n{DRAFT}"
+    heading=f"SAINS SK\nTAHUN {year}" if published else f"SAINS SK\nTAHUN {year}\n{DRAFT}"
     if fmt=="word":
         return render_word(s,c,source_bytes=raw,palette=palette,subject_heading=heading,profile=profile)
     if fmt=="pdf":
