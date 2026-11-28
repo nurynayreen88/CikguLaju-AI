@@ -1010,3 +1010,14 @@ try:
 except Exception as _pi_bulk_exc:
     PI_EDITORIAL_BULK_ACTIVE = False
     print('PI bulk editorial unavailable:',type(_pi_bulk_exc).__name__,flush=True)
+
+
+# Optional, curriculum-only audit for the remaining Science 5P source mapping.
+# Explicit flag required. No rendering, entitlement, database write, or user data.
+try:
+    import os as _science_audit_os
+    if _science_audit_os.environ.get("CIKGULAJU_SCIENCE_5P_IDENTITY_AUDIT")=="1":
+        from tools.science_y2_y4_native_identity_audit_20261128 import log_read_only
+        log_read_only(telegram_runtime)
+except Exception as _science_identity_error:
+    print("CIKGULAJU_SCIENCE_5P_NATIVE_AUDIT_UNAVAILABLE",type(_science_identity_error).__name__,flush=True)
