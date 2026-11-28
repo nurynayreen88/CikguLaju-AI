@@ -83,6 +83,28 @@ class CandidateTest(unittest.TestCase):
             self.account["free_remaining"]=0
             self.assertEqual(self.post().status_code,403)
             self.assertEqual(self.debit.call_count,2)
+    def test_availability_never_debits(self):
+        selection={k:self.payload[k] for k in ("year","subject","unit","lesson")}
+        def get(**updates):
+            return self.client.get(candidate.AVAILABILITY_URL,query_string={**selection,**updates})
+        self.assertEqual(get().status_code,404)
+        with patch.object(candidate,"RELEASE_APPROVED",True):
+            self.assertEqual(get().status_code,401)
+            self.login()
+            out=get()
+            self.assertEqual(out.status_code,200)
+            self.assertEqual(out.get_json(),{"available":True,"formats":["word","pdf"],"status":"DRAFT-NOT-FOR-TEACHING"})
+            self.assertEqual(out.headers["Cache-Control"],"no-store, private")
+            self.assertEqual(get(extra="wrong").status_code,400)
+            self.assertEqual(get(year=4).status_code,404)
+            self.available.return_value=False
+            self.assertEqual(get().status_code,503)
+            self.account["free_remaining"]=0
+            out=get()
+            self.assertEqual(out.status_code,403)
+            self.assertEqual(out.get_json()["code"],"FREE_TRIAL_EXHAUSTED")
+        self.debit.assert_not_called()
+
     def test_paid_pdf_no_charge(self):
         self.login()
         self.account.update(rakan_pembangun=True,free_remaining=0)
