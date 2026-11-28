@@ -1,0 +1,3764 @@
+{
+  "status": "CONSOLIDATED_IDENTITY_QA_NOT_RELEASED",
+  "parent": "896a782eb8425894f39e370705aecb98099cf2ae",
+  "identity_source_blob": "591f0d2739a673c3119937ad7b9225cbdecd46bb",
+  "identity_source_commit": "495d0b24d5ded8026f5e85cf4b39d45cbe2debb7",
+  "reference_source": {
+    "path": "web/telegram_verified_sequence_rph_bridge.py",
+    "ref": "495d0b24d5ded8026f5e85cf4b39d45cbe2debb7",
+    "note": "Page reference lookup only for single SP legacy non-opening IDs. A mapping is not a new textbook inspection; opening pages copied from previous pinned draft."
+  },
+  "source_files": {
+    "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+    "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+    "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+    "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+    "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+    "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+    "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+    "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json": "eee7c40b4f07440b712135cd142597e76f5c7984",
+    "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb"
+  },
+  "counts": [
+    {
+      "year": 2,
+      "total": 58,
+      "draft": 55,
+      "held": 3,
+      "with_page_reference": 14
+    },
+    {
+      "year": 3,
+      "total": 54,
+      "draft": 45,
+      "held": 9,
+      "with_page_reference": 14
+    },
+    {
+      "year": 4,
+      "total": 85,
+      "draft": 84,
+      "held": 1,
+      "with_page_reference": 6
+    }
+  ],
+  "limitations": "Legacy native source count is not the 2027 RPT sequence. Identity and distinct phase structural checks only; ordinary RPH fields, academic review, duration, document print QA and current release authorization remain pending. No automatic SP correction or production mutation.",
+  "records": [
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-001",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Menyatakan cara haiwan membiak.",
+      "sp_codes": [
+        "4.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": "36–37",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-002",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Mengelaskan haiwan berdasarkan cara pembiakan.",
+      "sp_codes": [
+        "4.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": "38",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-003",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Menjelaskan dengan contoh haiwan bertelur banyak dan bertelur sedikit.",
+      "sp_codes": [
+        "4.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": "39–40",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-004",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Menjelaskan dengan contoh haiwan melahirkan anak yang banyak dan anak yang sedikit.",
+      "sp_codes": [
+        "4.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": "41–42",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-005",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Merekod perubahan tumbesaran haiwan dengan memerhati kitar hidup haiwan.",
+      "sp_codes": [
+        "4.1.5"
+      ],
+      "opening": false,
+      "textbook_pages_reference": "45–46",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Two cycle contexts; verify original activity; textbook 45–46 known."
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-006",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Menjelas dengan contoh anak haiwan yang menyerupai induknya dan yang tidak menyerupai induknya.",
+      "sp_codes": [
+        "4.1.6"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": "43–44",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-007",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Menjelaskan pemerhatian tentang pembiakan dan tumbesaran melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "4.1.7"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": "46",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-008",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menyatakan kepentingan tumbuhan kepada manusia dan haiwan.",
+      "sp_codes": [
+        "5.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-009",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menyatakan keperluan asas untuk biji benih bercambah.",
+      "sp_codes": [
+        "5.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-010",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Merekod perubahan tumbesaran tumbuhan bermula daripada percambahan biji benih dengan memerhati biji benih sebenar.",
+      "sp_codes": [
+        "5.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-011",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menyusun mengikut urutan peringkat tumbesaran tumbuhan.",
+      "sp_codes": [
+        "5.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-012",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Membuat kesimpulan keperluan asas untuk tumbesaran tumbuhan dengan menjalankan penyiasatan.",
+      "sp_codes": [
+        "5.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-013",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menjelaskan pemerhatian tentang proses hidup tumbuhan melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "5.1.6"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-014",
+      "unit": "u800d92350d2b199dd2254807",
+      "title": "Terang dan Gelap — Menyatakan sumber cahaya.",
+      "sp_codes": [
+        "6.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-015",
+      "unit": "u800d92350d2b199dd2254807",
+      "title": "Terang dan Gelap — Membanding beza aktiviti yang dijalankan dalam keadaan terang dan gelap.",
+      "sp_codes": [
+        "6.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-016",
+      "unit": "u800d92350d2b199dd2254807",
+      "title": "Terang dan Gelap — Menerangkan bagaimana bayang-bayang dihasilkan melalui aktiviti.",
+      "sp_codes": [
+        "6.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-017",
+      "unit": "u800d92350d2b199dd2254807",
+      "title": "Terang dan Gelap — Membanding dan membezakan kejelasan bayang-bayang apabila cahaya dihalang oleh objek yang berlainan dengan menjalankan penyiasatan.",
+      "sp_codes": [
+        "6.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-018",
+      "unit": "u800d92350d2b199dd2254807",
+      "title": "Terang dan Gelap — Mencipta permainan bayang-bayang.",
+      "sp_codes": [
+        "6.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-019",
+      "unit": "u800d92350d2b199dd2254807",
+      "title": "Terang dan Gelap — Menjelaskan pemerhatian tentang terang dan gelap melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "6.1.6"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-020",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "title": "Elektrik — Mengenal pasti komponen dalam litar elektrik iaitu sel kering, mentol dan suis.",
+      "sp_codes": [
+        "7.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-021",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "title": "Elektrik — Menerangkan fungsi komponen dalam litar elektrik lengkap.",
+      "sp_codes": [
+        "7.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-022",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "title": "Elektrik — Membina litar elektrik lengkap dengan menggunakan sel kering, mentol, suis dan wayar penyambung.",
+      "sp_codes": [
+        "7.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-023",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "title": "Elektrik — Meramal sebab mentol tidak menyala dalam litar yang dibina.",
+      "sp_codes": [
+        "7.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-024",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "title": "Elektrik — Merekod nyalaan mentol dengan menggantikan suis dengan objek atau bahan dengan menjalankan penyiasatan.",
+      "sp_codes": [
+        "7.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-025",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "title": "Elektrik — Mengitlak objek yang boleh menyalakan mentol dalam litar adalah konduktor dan yang tidak menyalakan mentol adalah penebat.",
+      "sp_codes": [
+        "7.1.6"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-026",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "title": "Elektrik — Menjelaskan pemerhatian tentang litar elektrik melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "7.1.7"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-027",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "title": "Campuran — Memerihalkan kaedah untuk mengasingkan campuran pelbagai bahan atau objek.",
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-028",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "title": "Campuran — Menaakul cara yang digunakan untuk mengasingkan campuran pelbagai bahan atau objek.",
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-029",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "title": "Campuran — Mengenal pasti bahan yang boleh larut dan tidak boleh larut di dalam air dengan menjalankan penyiasatan.",
+      "sp_codes": [
+        "8.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-030",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "title": "Campuran — Merumuskan cara bahan boleh dilarutkan dengan lebih cepat dengan menjalankan penyiasatan.",
+      "sp_codes": [
+        "8.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-031",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "title": "Campuran — Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "8.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-032",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "title": "Bumi — Menyatakan sumber air semulajadi seperti hujan, sungai, tasik, laut dan mata air.",
+      "sp_codes": [
+        "9.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-033",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "title": "Bumi — Menyatakan arah aliran air dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "9.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-034",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "title": "Bumi — Mengitlak arah aliran air secara semulajadi seperti aliran air sungai, air terjun melalui pemerhatian menerusi pelbagai media.",
+      "sp_codes": [
+        "9.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-035",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "title": "Bumi — Membuat urutan kitar air semulajadi.",
+      "sp_codes": [
+        "9.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-036",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "title": "Bumi — Menjelaskan pemerhatian tentang kitaran air melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "9.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-037",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Menyatakan udara berada di sekeliling kita.",
+      "sp_codes": [
+        "9.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-038",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Menyatakan udara terdiri daripada beberapa jenis gas seperti oksigen dan karbon dioksida.",
+      "sp_codes": [
+        "9.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-039",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Memerihalkan udara yang bergerak adalah angin.",
+      "sp_codes": [
+        "9.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-040",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Menjana idea kesan udara yang bergerak dalam kehidupan manusia.",
+      "sp_codes": [
+        "9.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-041",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Mencipta alat atau model dengan mengaplikasikan pengetahuan yang menunjukkan kegunaan udara yang bergerak.",
+      "sp_codes": [
+        "9.2.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-042",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Menjelaskan pemerhatian tentang udara melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "9.2.6"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-043",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "title": "Teknologi — Memilih binaan yang hendak dibina daripada set binaan.",
+      "sp_codes": [
+        "10.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-044",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "title": "Teknologi — Mengenal pasti komponen binaan berpandukan manual bergambar.",
+      "sp_codes": [
+        "10.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_26_split_sp_drafts_20261128.json",
+      "draft_blob": "8ac44fe108dc8f8ed8ac99a9878074f455ab9ce4",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-045",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "title": "Teknologi — Memasang komponen binaan berpandukan manual bergambar.",
+      "sp_codes": [
+        "10.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-046",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "title": "Teknologi — Mencipta satu binaan baru yang tidak terdapat dalam manual bergambar.",
+      "sp_codes": [
+        "10.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-047",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "title": "Teknologi — Membuka hasil binaan mengikut urutan dan menyimpan komponen yang telah dibuka ke dalam bekas penyimpanan.",
+      "sp_codes": [
+        "10.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-048",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "title": "Teknologi — Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "10.1.6"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "No candidate matches native 10.1.6; mixture title under Technology requires original DSKP/source review."
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-049",
+      "unit": "u48f9e1daaf4286750057f638",
+      "title": "Manusia — Menyatakan cara manusia membiak.",
+      "sp_codes": [
+        "3.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-050",
+      "unit": "u48f9e1daaf4286750057f638",
+      "title": "Manusia — Menerangkan perubahan yang berlaku pada diri sejak dilahirkan dari aspek saiz, tinggi dan berat.",
+      "sp_codes": [
+        "3.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-051",
+      "unit": "u48f9e1daaf4286750057f638",
+      "title": "Manusia — Menyatakan bahawa anak mewarisi ciri daripada ibu, bapa atau keturunan.",
+      "sp_codes": [
+        "3.1.3"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Inheritance title conflicts with mapped growth SP 3.1.3."
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-052",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Memerhati perubahan pada bahan",
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "2–4",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-053",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Mengelas objek mengikut bahan",
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "5–7",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-054",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Mengukur panjang dengan pembaris",
+      "sp_codes": [
+        "1.1.3"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "8–9",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-055",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Merekod dan menyampaikan dapatan",
+      "sp_codes": [
+        "1.1.4"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "10–11",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-056",
+      "unit": "ub5eefb53e81b2846bdc87ab5",
+      "title": "Mengendalikan dan melakar biji benih",
+      "sp_codes": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "12–14",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-057",
+      "unit": "ub5eefb53e81b2846bdc87ab5",
+      "title": "Menjaga peralatan selepas penyiasatan",
+      "sp_codes": [
+        "1.2.4",
+        "1.2.5"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "12–14",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-058",
+      "unit": "uaa0105dafb10f421d4751be7",
+      "title": "Mengamalkan peraturan bilik sains",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "18–20",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-001",
+      "unit": "ufa457f146af708b575c49eb9",
+      "title": "Menguji bahan yang berasid, beralkali dan neutral dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan.",
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-002",
+      "unit": "ufa457f146af708b575c49eb9",
+      "title": "Menerangkan bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan.",
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Original activity safety and exact scope pending; no tasting/touching test substances."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-003",
+      "unit": "ufa457f146af708b575c49eb9",
+      "title": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral.",
+      "sp_codes": [
+        "8.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-004",
+      "unit": "ufa457f146af708b575c49eb9",
+      "title": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "8.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-005",
+      "unit": "u144593f4237ade453f115b81",
+      "title": "Menyatakan jenis gigi dan fungsinya.",
+      "sp_codes": [
+        "3.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": "30–31",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-006",
+      "unit": "u144593f4237ade453f115b81",
+      "title": "Melabelkan struktur gigi.",
+      "sp_codes": [
+        "3.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": "32–33",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-007",
+      "unit": "u144593f4237ade453f115b81",
+      "title": "Membanding dan membezakan set gigi susu dan set gigi kekal.",
+      "sp_codes": [
+        "3.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": "34–36",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-008",
+      "unit": "u144593f4237ade453f115b81",
+      "title": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi.",
+      "sp_codes": [
+        "3.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": "37–38",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-009",
+      "unit": "u144593f4237ade453f115b81",
+      "title": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "3.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": "38",
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-010",
+      "unit": "u4e61060c43c0c24abab59450",
+      "title": "Memberi contoh makanan bagi setiap kelas makanan.",
+      "sp_codes": [
+        "3.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-011",
+      "unit": "u4e61060c43c0c24abab59450",
+      "title": "Menyatakan kepentingan makanan mengikut kelasnya kepada tubuh manusia.",
+      "sp_codes": [
+        "3.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-012",
+      "unit": "u4e61060c43c0c24abab59450",
+      "title": "Menjelas dengan contoh makanan seimbang berdasarkan piramid makanan.",
+      "sp_codes": [
+        "3.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-013",
+      "unit": "u4e61060c43c0c24abab59450",
+      "title": "Menaakul kesan pengambilan makanan yang tidak seimbang.",
+      "sp_codes": [
+        "3.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-014",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "title": "Menyatakan maksud dan kegunaan takal.",
+      "sp_codes": [
+        "10.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-015",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "title": "Memerihalkan cara takal tetap berfungsi dengan menggunakan model.",
+      "sp_codes": [
+        "10.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-016",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "title": "Memberi contoh aplikasi takal dalam kehidupan.",
+      "sp_codes": [
+        "10.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-017",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "title": "Mereka cipta model takal yang berfungsi.",
+      "sp_codes": [
+        "10.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-018",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "title": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "10.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_11_split_sp_drafts_20261128_1930.json",
+      "draft_blob": "d7842c1132336fcdf76b676b1cd3769f580aa116",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-019",
+      "unit": "u51bab31e7e96fab506c21361",
+      "title": "Menyenaraikan ahli dalam Sistem Suria melalui pemerhatian menerusi pelbagai media.",
+      "sp_codes": [
+        "9.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-020",
+      "unit": "u51bab31e7e96fab506c21361",
+      "title": "Menerangkan planet beredar mengelilingi Matahari mengikut orbit.",
+      "sp_codes": [
+        "9.1.2"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Orbit title conflicts with temperature SP 9.1.2."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-021",
+      "unit": "u51bab31e7e96fab506c21361",
+      "title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "sp_codes": [
+        "9.1.3"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Distance/time title conflicts with orbit SP 9.1.3."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-022",
+      "unit": "u51bab31e7e96fab506c21361",
+      "title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "sp_codes": [
+        "9.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-023",
+      "unit": "u51bab31e7e96fab506c21361",
+      "title": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "9.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-024",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Menjelaskan pemerhatian tentang tabiat pemakanan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "4.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-031",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Mengelas haiwan mengikut tabiat pemakanan.",
+      "sp_codes": [
+        "4.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-032",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Menjelaskan dengan contoh tabiat pemakanan haiwan herbivor, karnivor dan omnivor.",
+      "sp_codes": [
+        "4.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-033",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Membuat inferens tentang kumpulan haiwan berdasarkan tabiat pemakanan.",
+      "sp_codes": [
+        "4.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-034",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "title": "Haiwan — Membanding dan membezakan kegigian haiwan herbivor, karnivor dan omnivor.",
+      "sp_codes": [
+        "4.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-025",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menjelaskan pemerhatian tentang pembiakan tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "5.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-035",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Memberi contoh tumbuhan bagi setiap cara pembiakan.",
+      "sp_codes": [
+        "5.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-036",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menyatakan satu tumbuhan boleh membiak melalui pelbagai cara dengan menjalankan projek.",
+      "sp_codes": [
+        "5.1.2"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Project title conflicts with importance SP 5.1.2."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-037",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menaakul kepentingan pembiakan tumbuhan kepada hidupan.",
+      "sp_codes": [
+        "5.1.3"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Importance title conflicts with project SP 5.1.3."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-026",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "sp_codes": [
+        "6.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-027",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Menyelesaikan masalah untuk menentukan isi padu pepejal tidak sekata melalui kaedah sesaran air.",
+      "sp_codes": [
+        "6.1.6"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-028",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Menjelaskan pemerhatian tentang pengukuran luas dan isi padu melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "6.1.7"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-038",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Menyatakan unit yang digunakan untuk mengukur luas dan isi padu.",
+      "sp_codes": [
+        "6.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-039",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Mengukur luas permukaan sekata menggunakan petak yang berukuran 1 cm x 1 cm.",
+      "sp_codes": [
+        "6.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-040",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Mengukur isi padu kotak lohong dengan menggunakan kubus yang berukuran 1 cm x 1 cm x 1 cm.",
+      "sp_codes": [
+        "6.1.3"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Box volume title conflicts with irregular area SP 6.1.3."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-041",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "sp_codes": [
+        "6.1.4"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Liquid volume title conflicts with box volume SP 6.1.4."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-029",
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "title": "Ketumpatan — Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "sp_codes": [
+        "7.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-030",
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "title": "Ketumpatan — Menjelaskan pemerhatian tentang objek atau bahan yang lebih tumpat dan kurang tumpat daripada air melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "7.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-042",
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "title": "Ketumpatan — Membuat inferens tentang objek atau bahan yang timbul atau objek yang tenggelam dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "7.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y3_13_split_sp_drafts_20261128.json",
+      "draft_blob": "d6a3841aebf27c5bd6366820dc082426a3e9a211",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-043",
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "title": "Ketumpatan — Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "sp_codes": [
+        "7.1.2"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Water density modification title conflicts with relative density SP 7.1.2."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-044",
+      "unit": "u6009a8215e69d23ec75e07ca",
+      "title": "Manusia — Menerangkan proses pencernaan.",
+      "sp_codes": [
+        "3.3.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-045",
+      "unit": "u6009a8215e69d23ec75e07ca",
+      "title": "Manusia — Merumus tentang makanan tercerna yang tidak diperlukan oleh badan.",
+      "sp_codes": [
+        "3.3.2"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Waste title conflicts with food-flow SP 3.3.2."
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-046",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Memerhati menggunakan deria",
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "2–3",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-047",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Mengelas berdasarkan ciri sepunya",
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "4–5",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-048",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Mengukur panjang dalam sentimeter",
+      "sp_codes": [
+        "1.1.3"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "6–7",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-049",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Membuat inferens daripada pemerhatian",
+      "sp_codes": [
+        "1.1.4"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "9–10",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-050",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Meramal berdasarkan pola",
+      "sp_codes": [
+        "1.1.5"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "11–12",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-051",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Berkomunikasi menggunakan carta palang",
+      "sp_codes": [
+        "1.1.6"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "13–14",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-052",
+      "unit": "ub5eefb53e81b2846bdc87ab5",
+      "title": "Mengendali dan melakar spesimen",
+      "sp_codes": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "16–19",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-053",
+      "unit": "ub5eefb53e81b2846bdc87ab5",
+      "title": "Membersihkan dan menyimpan alatan sains",
+      "sp_codes": [
+        "1.2.4",
+        "1.2.5"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "20",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-054",
+      "unit": "uaa0105dafb10f421d4751be7",
+      "title": "Mematuhi peraturan bilik sains",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "24–27",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-001",
+      "unit": "u3ad6e37021e9f56ab1f76f55",
+      "title": "Mesin — Mengenal pasti beban, fulkrum dan daya pada tuas dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "10.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-002",
+      "unit": "u3ad6e37021e9f56ab1f76f55",
+      "title": "Mesin — Mengitlak hubung kait jarak beban dari fulkrum dengan daya yang diperlukan.",
+      "sp_codes": [
+        "10.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-003",
+      "unit": "u3ad6e37021e9f56ab1f76f55",
+      "title": "Mesin — Menjelaskan pemerhatian tentang tuas melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "10.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-004",
+      "unit": "u7cdf3e4f5877f205bc4da8e8",
+      "title": "Mesin — Menjelas dengan contoh jenis dan kegunaan mesin ringkas dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "10.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-005",
+      "unit": "u7cdf3e4f5877f205bc4da8e8",
+      "title": "Mesin — Menyelesaikan masalah dengan menggunakan dua atau lebih mesin ringkas.",
+      "sp_codes": [
+        "10.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-006",
+      "unit": "u7cdf3e4f5877f205bc4da8e8",
+      "title": "Mesin — Merumuskan maksud mesin kompleks.",
+      "sp_codes": [
+        "10.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-007",
+      "unit": "u7cdf3e4f5877f205bc4da8e8",
+      "title": "Mesin — Menjelaskan pemerhatian tentang mesin ringkas dan mesin kompleks melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "10.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-008",
+      "unit": "u0482f26b6e7a12a48d17b4ee",
+      "title": "Tumbuhan — Menyatakan tumbuhan bergerak balas terhadap rangsangan melalui pemerhatian menerusi pelbagai media.",
+      "sp_codes": [
+        "4.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-009",
+      "unit": "u0482f26b6e7a12a48d17b4ee",
+      "title": "Tumbuhan — Menghubungkait bahagian tumbuhan yang bergerak balas dengan jenis rangsangan.",
+      "sp_codes": [
+        "4.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-010",
+      "unit": "u0482f26b6e7a12a48d17b4ee",
+      "title": "Tumbuhan — Membuat kesimpulan bahagian tumbuhan yang bergerak balas terhadap rangsangan dengan menjalankan penyiasatan.",
+      "sp_codes": [
+        "4.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-011",
+      "unit": "u0482f26b6e7a12a48d17b4ee",
+      "title": "Tumbuhan — Menjelaskan pemerhatian tentang tumbuhan gerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "4.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-012",
+      "unit": "ue987f0aec323582df74cbe52",
+      "title": "Tumbuhan — Menyatakan maksud fotosintesis.",
+      "sp_codes": [
+        "4.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-013",
+      "unit": "ue987f0aec323582df74cbe52",
+      "title": "Tumbuhan — Menyenaraikan keperluan tumbuhan semasa proses fotosintesis.",
+      "sp_codes": [
+        "4.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-014",
+      "unit": "ue987f0aec323582df74cbe52",
+      "title": "Tumbuhan — Menyatakan hasil fotosintesis melalui pemerhatian menerusi pelbagai media.",
+      "sp_codes": [
+        "4.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-015",
+      "unit": "ue987f0aec323582df74cbe52",
+      "title": "Tumbuhan — Menaakul kepentingan fotosintesis terhadap hidupan.",
+      "sp_codes": [
+        "4.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-016",
+      "unit": "ue987f0aec323582df74cbe52",
+      "title": "Tumbuhan — Menjelaskan pemerhatian tentang fotosintesis melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "4.2.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-017",
+      "unit": "u2ae0ae6548b867b93a7e0b36",
+      "title": "Sifat Cahaya — Menyatakan cahaya bergerak lurus dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "5.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-018",
+      "unit": "u2ae0ae6548b867b93a7e0b36",
+      "title": "Sifat Cahaya — Membanding dan membezakan bayang-bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "5.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-019",
+      "unit": "u2ae0ae6548b867b93a7e0b36",
+      "title": "Sifat Cahaya — Mengeksperimen untuk menentukan faktor yang mempengaruhi saiz dan bentuk bayang-bayang.",
+      "sp_codes": [
+        "5.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-020",
+      "unit": "u2ae0ae6548b867b93a7e0b36",
+      "title": "Sifat Cahaya — Menjelaskan pemerhatian tentang cahaya bergerak lurus melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "5.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-021",
+      "unit": "uddf022ccb4f4db84ec90abbd",
+      "title": "Sifat Cahaya — Menyatakan cahaya boleh dipantulkan dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "5.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-022",
+      "unit": "uddf022ccb4f4db84ec90abbd",
+      "title": "Sifat Cahaya — Memerihalkan kegunaan pantulan cahaya dalam kehidupan harian.",
+      "sp_codes": [
+        "5.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-023",
+      "unit": "uddf022ccb4f4db84ec90abbd",
+      "title": "Sifat Cahaya — Melukis gambar rajah sinar yang menunjukkan pantulan cahaya pada cermin.",
+      "sp_codes": [
+        "5.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-024",
+      "unit": "uddf022ccb4f4db84ec90abbd",
+      "title": "Sifat Cahaya — Menjelaskan pemerhatian tentang pantulan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "5.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20_split_sp_drafts_20261128.json",
+      "draft_blob": "a56a1d2d39ce7ef844cad82a6e995dbe24b21011",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-025",
+      "unit": "uc1e6c936e20b1393ee00a36c",
+      "title": "Sifat Cahaya — Menyatakan cahaya boleh dibiaskan melalui pemerhatian menerusi pelbagai media.",
+      "sp_codes": [
+        "5.3.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-026",
+      "unit": "uc1e6c936e20b1393ee00a36c",
+      "title": "Sifat Cahaya — Menjelas melalui contoh cahaya boleh dibiaskan dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "5.3.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-078",
+      "unit": "uc1e6c936e20b1393ee00a36c",
+      "title": "Sifat Cahaya — Memerihalkan pembentukan pelangi dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "5.3.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-079",
+      "unit": "uc1e6c936e20b1393ee00a36c",
+      "title": "Sifat Cahaya — Menjelaskan pemerhatian tentang pembiasan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "5.3.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-027",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Menyatakan Bumi berputar pada paksinya dan pada masa yang sama beredar mengikut orbitnya mengelilingi Matahari.",
+      "sp_codes": [
+        "9.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-028",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Memerihalkan putaran dan peredaran Bumi dari aspek arah dan tempoh.",
+      "sp_codes": [
+        "9.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-029",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Memerihalkan kesan putaran Bumi pada paksinya dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "9.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-030",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "title": "Bumi — Menjelaskan pemerhatian tentang putaran dan peredaran Bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "9.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-031",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "title": "Bunyi — Menyatakan bunyi dihasilkan oleh getaran dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "6.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-032",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "title": "Bunyi — Memerihalkan bunyi bergerak ke semua arah.",
+      "sp_codes": [
+        "6.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-033",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "title": "Bunyi — Memberi contoh fenomena dalam kehidupan harian yang menunjukkan bunyi boleh dipantulkan.",
+      "sp_codes": [
+        "6.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-034",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "title": "Bunyi — Memerihalkan bunyi yang berfaedah dan bunyi yang memudaratkan dalam kehidupan harian.",
+      "sp_codes": [
+        "6.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-035",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "title": "Bunyi — Menjana idea untuk menyelesaikan masalah bagi mengurangkan pencemaran bunyi.",
+      "sp_codes": [
+        "6.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-036",
+      "unit": "u6a1031d240be65fc05053830",
+      "title": "Tenaga — Menyatakan maksud tenaga.",
+      "sp_codes": [
+        "7.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-037",
+      "unit": "u6a1031d240be65fc05053830",
+      "title": "Tenaga — Memerihalkan pelbagai sumber tenaga melalui pemerhatian menerusi pelbagai media.",
+      "sp_codes": [
+        "7.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-038",
+      "unit": "u6a1031d240be65fc05053830",
+      "title": "Tenaga — Menjelaskan dengan contoh pelbagai bentuk tenaga.",
+      "sp_codes": [
+        "7.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-039",
+      "unit": "u6a1031d240be65fc05053830",
+      "title": "Tenaga — Menjelaskan melalui contoh perubahan bentuk tenaga dalam kehidupan seharian.",
+      "sp_codes": [
+        "7.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-040",
+      "unit": "u6a1031d240be65fc05053830",
+      "title": "Tenaga — Mengitlak tenaga tidak boleh dicipta dan tidak boleh dimusnahkan tetapi boleh berubah bentuk.",
+      "sp_codes": [
+        "7.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-041",
+      "unit": "u6a1031d240be65fc05053830",
+      "title": "Tenaga — Menjelaskan pemerhatian tentang sumber tenaga dan bentuk tenaga melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "7.1.6"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-042",
+      "unit": "u9b4f1a90be3123725197ed8a",
+      "title": "Tenaga — Menjelaskan dengan contoh sumber tenaga boleh dibaharui dan tenaga tidak boleh dibaharui melalui pemerhatian menerusi pelbagai media.",
+      "sp_codes": [
+        "7.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-043",
+      "unit": "u9b4f1a90be3123725197ed8a",
+      "title": "Tenaga — Menjana idea kepentingan penggunaan sumber tenaga secara berhemah.",
+      "sp_codes": [
+        "7.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-044",
+      "unit": "u9b4f1a90be3123725197ed8a",
+      "title": "Tenaga — Menjelaskan pemerhatian tentang sumber tenaga boleh dibaharui dan sumber tenaga tidak boleh dibaharui melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "7.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20b_split_sp_drafts_20261128.json",
+      "draft_blob": "130191fe50e55e1f52085e6e7721cbf5f66120ca",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-045",
+      "unit": "u98c3ff16bdad337f9d163bd5",
+      "title": "Bahan — Menjelaskan melalui contoh sumber asas bagi bahan yang digunakan untuk membuat objek.",
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-046",
+      "unit": "u98c3ff16bdad337f9d163bd5",
+      "title": "Bahan — Mengelaskan objek berdasarkan sumber asasnya.",
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-047",
+      "unit": "u98c3ff16bdad337f9d163bd5",
+      "title": "Bahan — Menjelaskan pemerhatian tentang sumber asas bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "8.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-048",
+      "unit": "u84120b91c5a44737fdc6f01e",
+      "title": "Bahan — Memerihalkan sifat bahan dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "8.2.1"
+      ],
+      "opening": false,
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "HOLD",
+      "reason": "Three candidate material-property scopes; verify original activity."
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-049",
+      "unit": "u84120b91c5a44737fdc6f01e",
+      "title": "Bahan — Mereka cipta objek dengan mengaplikasikan pengetahuan tentang sifat bahan.",
+      "sp_codes": [
+        "8.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-050",
+      "unit": "u84120b91c5a44737fdc6f01e",
+      "title": "Bahan — Menaakul pemilihan jenis bahan yang digunakan dalam mereka cipta objek.",
+      "sp_codes": [
+        "8.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-051",
+      "unit": "u84120b91c5a44737fdc6f01e",
+      "title": "Bahan — Menjelaskan pemerhatian tentang sifat bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "8.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-052",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "title": "Bumi — Memerihalkan daya tarikan graviti bumi berdasarkan pemerhatian dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "9.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-053",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "title": "Bumi — Mengitlak bahawa semua objek di Bumi boleh berada pada kedudukannya dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "9.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-054",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "title": "Bumi — Menjelaskan pemerhatian tentang tarikan graviti bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "9.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-055",
+      "unit": "u4f152d78897006d55f31a040",
+      "title": "Manusia — Mengenal pasti organ yang terlibat dalam proses pernafasan.",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-056",
+      "unit": "u4f152d78897006d55f31a040",
+      "title": "Manusia — Memerihalkan proses pernafasan dari aspek laluan udara dan pertukaran gas yang berlaku di peparu melalui pemerhatian menerusi pelbagai media.",
+      "sp_codes": [
+        "2.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-057",
+      "unit": "u4f152d78897006d55f31a040",
+      "title": "Manusia — Membezakan kandungan oksigen dan karbon dioksida semasa menarik dan menghembus nafas.",
+      "sp_codes": [
+        "2.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_41_exact_scope_drafts_20261128.json",
+      "draft_blob": "1e4b6db48529f75162e96043500ec23fd13ce5ea",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-058",
+      "unit": "u4f152d78897006d55f31a040",
+      "title": "Manusia — Memerihalkan pergerakan dada semasa menarik dan menghembus nafas dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "2.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-059",
+      "unit": "u4f152d78897006d55f31a040",
+      "title": "Manusia — Mengitlak bahawa kadar pernafasan bergantung kepada jenis aktiviti yang dilakukan.",
+      "sp_codes": [
+        "2.1.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-060",
+      "unit": "u4f152d78897006d55f31a040",
+      "title": "Manusia — Menjelaskan pemerhatian tentang proses pernafasan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "2.1.6"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-061",
+      "unit": "uebaab7a1ad33766c70aa652b",
+      "title": "Manusia — Menyatakan maksud perkumuhan dan penyahtinjaan.",
+      "sp_codes": [
+        "2.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-062",
+      "unit": "uebaab7a1ad33766c70aa652b",
+      "title": "Manusia — Mengenal pasti organ dan hasil bagi perkumuhan.",
+      "sp_codes": [
+        "2.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-063",
+      "unit": "uebaab7a1ad33766c70aa652b",
+      "title": "Manusia — Membuat inferens kepentingan penyingkiran hasil perkumuhan dan hasil penyahtinjaan.",
+      "sp_codes": [
+        "2.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-064",
+      "unit": "uebaab7a1ad33766c70aa652b",
+      "title": "Manusia — Menjelaskan pemerhatian tentang perkumuhan dan penyahtinjaan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "2.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-065",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "title": "Manusia — Menyatakan manusia bergerak balas apabila organ deria menerima rangsangan.",
+      "sp_codes": [
+        "2.3.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-066",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "title": "Manusia — Menjelas dengan contoh gerak balas manusia terhadap rangsangan dalam kehidupan harian.",
+      "sp_codes": [
+        "2.3.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_20c_split_sp_drafts_20261128.json",
+      "draft_blob": "eee7c40b4f07440b712135cd142597e76f5c7984",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-067",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "title": "Manusia — Membuat inferens tentang kepentingan gerak balas manusia terhadap rangsangan.",
+      "sp_codes": [
+        "2.3.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-068",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "title": "Manusia — Memerihalkan tabiat yang mengganggu proses gerak balas manusia terhadap rangsangan.",
+      "sp_codes": [
+        "2.3.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-069",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "title": "Manusia — Menjelaskan pemerhatian tentang manusia bergerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "2.3.5"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-070",
+      "unit": "u1298bbda2eb96e2b85314209",
+      "title": "Haiwan — Mengenal pasti organ pernafasan haiwan.",
+      "sp_codes": [
+        "3.1.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-071",
+      "unit": "u1298bbda2eb96e2b85314209",
+      "title": "Haiwan — Mengelaskan haiwan berdasarkan organ pernafasan.",
+      "sp_codes": [
+        "3.1.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-072",
+      "unit": "u1298bbda2eb96e2b85314209",
+      "title": "Haiwan — Mengitlak terdapat haiwan yang mempunyai lebih daripada satu organ pernafasan.",
+      "sp_codes": [
+        "3.1.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-073",
+      "unit": "u1298bbda2eb96e2b85314209",
+      "title": "Haiwan — Menjelaskan pemerhatian tentang organ pernafasan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "3.1.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-074",
+      "unit": "uebff043f8e995a13a17ec0c9",
+      "title": "Haiwan — Menyatakan maksud haiwan vertebrata dan invertebrata.",
+      "sp_codes": [
+        "3.2.1"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-075",
+      "unit": "uebff043f8e995a13a17ec0c9",
+      "title": "Haiwan — Memberi contoh haiwan vertebrata dan invertebrata.",
+      "sp_codes": [
+        "3.2.2"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-076",
+      "unit": "uebff043f8e995a13a17ec0c9",
+      "title": "Haiwan — Mengelaskan haiwan vertebrata berdasarkan ciri khusus bagi mamalia, reptilia, amfibia, burung dan ikan.",
+      "sp_codes": [
+        "3.2.3"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-077",
+      "unit": "uebff043f8e995a13a17ec0c9",
+      "title": "Haiwan — Menjelaskan pemerhatian tentang haiwan vertebrata melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sp_codes": [
+        "3.2.4"
+      ],
+      "opening": false,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y4_11d_split_sp_drafts_20261128.json",
+      "draft_blob": "ea2c6e1bf10a8973b113291a12e460a19dbbdcfb",
+      "textbook_pages_reference": null,
+      "ordinary_source_fields_verified": false,
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-080",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Memerhati, mengelas dan menimbang bahan",
+      "sp_codes": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "2–4",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-081",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Membina inferens dan ramalan daripada pemerhatian",
+      "sp_codes": [
+        "1.1.4",
+        "1.1.5",
+        "1.1.6"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "3–5",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-082",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Menyusun perubahan dan mentafsir data",
+      "sp_codes": [
+        "1.1.7",
+        "1.1.8"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "6–9",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-083",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Menetapkan definisi secara operasi",
+      "sp_codes": [
+        "1.1.9"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "10–11",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-084",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Mengawal pemboleh ubah dan membina hipotesis",
+      "sp_codes": [
+        "1.1.10",
+        "1.1.11"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "12–15",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-085",
+      "unit": "u8f44fc48bea58f1f32e125fc",
+      "title": "Menjalankan eksperimen pelarutan gula",
+      "sp_codes": [
+        "1.1.12"
+      ],
+      "opening": true,
+      "identity_matched": true,
+      "five_phases_valid": true,
+      "draft_file": "audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json",
+      "draft_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+      "textbook_pages_reference": "16–19",
+      "ordinary_source_fields_verified": "prior pinned source audit; current runtime content not reverified",
+      "duration_minutes": null,
+      "ready": false,
+      "status": "DRAFT_MATCHED_NOT_RELEASED"
+    }
+  ]
+}

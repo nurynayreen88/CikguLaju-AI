@@ -1,0 +1,54 @@
+{
+  "status": "LIVE_SOURCE_COUNT_AND_OPENING_MODULE_IDENTITY_VERIFIED",
+  "telegram_deploy": "dep-dc59l7a9lscs73f78km0",
+  "telegram_commit": "068dc7a34c48ef4f4c6a601abd29bd58be9e5a75",
+  "log_timestamp": "2026-11-28T09:13:06.976249118Z",
+  "log_schema": "sains-native-runtime-20261108",
+  "primary_db_active": true,
+  "native_web_bridge_enabled": true,
+  "opening_source_blobs": {
+    "web/sains_unit_awal.py": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+    "web/sains_y3_unit_awal.py": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+    "web/sains_opening_pedagogy_20261121.py": "beb4c318405f960f5f744298a2f9edbfde1342bd"
+  },
+  "rows": [
+    {
+      "year": 2,
+      "source_pdp_count": 58,
+      "source_row_count": 61,
+      "opening_count": 7,
+      "opening_unit_counts": {
+        "Kemahiran Saintifik": 6,
+        "Peraturan Bilik Sains": 1
+      },
+      "remaining_nonopening": 51
+    },
+    {
+      "year": 3,
+      "source_pdp_count": 54,
+      "source_row_count": 57,
+      "opening_count": 9,
+      "opening_unit_counts": {
+        "Kemahiran Saintifik": 8,
+        "Peraturan Bilik Sains": 1
+      },
+      "remaining_nonopening": 45
+    },
+    {
+      "year": 4,
+      "source_pdp_count": 85,
+      "source_row_count": 91,
+      "opening_count": 6,
+      "opening_unit_counts": {
+        "Kemahiran Saintifik": 6
+      },
+      "remaining_nonopening": 79
+    }
+  ],
+  "totals": {
+    "legacy_native_pdp": 197,
+    "opening_drafts": 22,
+    "remaining_nonopening": 175
+  },
+  "limitations": "Read-only production startup counts from legacy sequence, not RPT 2027 replacement schedules. One existing RPH sampled per year by runtime. Opening source files byte-identical to pinned source, but exact current lesson IDs and duration not exported; no assertion of availability of each exact draft, academic approval, or live 5P. Y5 uses separate SK 2027 native sequence; do not substitute legacy count 88 for 116."
+}

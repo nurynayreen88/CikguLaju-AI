@@ -1,0 +1,997 @@
+{
+  "status": "26_NATIVE_SINGLE_SP_DRAFTS_ONLY",
+  "identity_blob": "591f0d2739a673c3119937ad7b9225cbdecd46bb",
+  "candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+  "total": 26,
+  "limitations": "DSKP statements inherited from source candidate. New phases individually scoped to native SP. Teacher duration, textbook pages, ordinary RPH source fields and print QA remain pending. No publication.",
+  "records": [
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-001",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menyatakan cara haiwan membiak.",
+      "topic": "Cara haiwan membiak",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menyatakan cara haiwan membiak."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-013",
+      "objective": "Nyatakan dua cara haiwan membiak dan satu contoh setiap cara.",
+      "criterion": "Murid nyatakan kedua-dua cara pembiakan serta satu contoh setiap cara.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar anak ayam menetas dan anak kucing bersama induk.",
+        "exploration": "Murid padankan gambar induk dengan telur atau anak.",
+        "explanation": "Guru jelaskan bertelur dan melahirkan anak menggunakan gambar.",
+        "elaboration": "Murid pilih contoh lain bagi kedua-dua cara dan terangkan kepada rakan.",
+        "evaluation": "Murid nyatakan kedua-dua cara pembiakan serta satu contoh setiap cara."
+      },
+      "support": {
+        "bbm": "Gambar ayam, anak ayam, kucing dan anak kucing",
+        "pemulihan": "Padankan dua gambar dengan kad bertelur/melahirkan anak.",
+        "pengayaan": "Berikan contoh haiwan lain tanpa membuat andaian daripada habitat.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-002",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Mengelaskan haiwan berdasarkan cara pembiakan.",
+      "topic": "Pengelasan haiwan mengikut pembiakan",
+      "dskp": [
+        {
+          "code": "4.1.2",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Mengelaskan haiwan berdasarkan cara pembiakan"
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-013",
+      "objective": "Kelaskan enam daripada lapan haiwan dengan betul mengikut cara membiak.",
+      "criterion": "Murid lengkapkan carta lapan haiwan; sekurang-kurangnya enam tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar itik dan kambing; murid sebut perbezaan cara membiak.",
+        "exploration": "Murid asingkan lapan kad secara berpasangan berdasarkan maklumat pembiakan.",
+        "explanation": "Guru semak kriteria bertelur atau melahirkan anak, bukan tempat hidup.",
+        "elaboration": "Murid tukar set kad dengan rakan dan jelaskan satu padanan.",
+        "evaluation": "Murid lengkapkan carta lapan haiwan; sekurang-kurangnya enam tepat."
+      },
+      "support": {
+        "bbm": "Lapan kad haiwan dan carta dua lajur",
+        "pemulihan": "Beri empat kad dengan petunjuk cara membiak.",
+        "pengayaan": "Kelaskan dua haiwan tambahan menggunakan kad fakta.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-006",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menjelas dengan contoh anak haiwan yang menyerupai induknya dan yang tidak menyerupai induknya.",
+      "topic": "Anak dan induk",
+      "dskp": [
+        {
+          "code": "4.1.6",
+          "printed_page": 49,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menjelas dengan contoh anak haiwan yang menyerupai induknya dan yang tidak menyerupai induknya."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-018",
+      "objective": "Bezakan dua anak menyerupai induk dan dua anak tidak menyerupai induk.",
+      "criterion": "Murid lengkapkan empat padanan dan nyatakan satu persamaan dan satu perbezaan.",
+      "phases": {
+        "engagement": "Guru banding gambar anak kucing dan berudu.",
+        "exploration": "Murid padankan empat pasang gambar serta perhatikan bentuk dan anggota.",
+        "explanation": "Guru jelaskan persamaan anak kucing dengan induk dan perbezaan berudu dengan katak dewasa.",
+        "elaboration": "Murid banding gambar anak ayam dan beluncas dengan induk masing-masing.",
+        "evaluation": "Murid lengkapkan empat padanan dan nyatakan satu persamaan dan satu perbezaan."
+      },
+      "support": {
+        "bbm": "Kad anak dan induk, carta perbandingan",
+        "pemulihan": "Gunakan dua pasang kad yang sudah dikelompokkan.",
+        "pengayaan": "Banding dua peringkat pertumbuhan haiwan menggunakan gambar.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-007",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menjelaskan pemerhatian tentang pembiakan dan tumbesaran melalui lakaran, TMK, penulisan atau lisan.",
+      "topic": "Komunikasi pembiakan dan tumbesaran haiwan",
+      "dskp": [
+        {
+          "code": "4.1.7",
+          "printed_page": 49,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menjelaskan pemerhatian tentang pembiakan dan tumbesaran melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-018",
+      "objective": "Sampaikan satu contoh pembiakan dan dua perubahan tumbesaran berdasarkan rekod.",
+      "criterion": "Murid terangkan satu cara membiak dan dua perubahan yang diperhatikan.",
+      "phases": {
+        "engagement": "Guru paparkan rekod kitar hidup rama-rama.",
+        "exploration": "Murid pilih gambar dan dua catatan perubahan daripada rekod.",
+        "explanation": "Guru model cara menyebut bukti perubahan secara kronologi.",
+        "elaboration": "Murid hasilkan carta bergambar dan bentang kepada pasangan.",
+        "evaluation": "Murid terangkan satu cara membiak dan dua perubahan yang diperhatikan."
+      },
+      "support": {
+        "bbm": "Kad kitar hidup, rekod pemerhatian, kertas carta",
+        "pemulihan": "Beri templat carta dengan kata kunci.",
+        "pengayaan": "Banding rekod dua kitar hidup haiwan.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-014",
+      "unit": "u800d92350d2b199dd2254807",
+      "unit_title": "Terang dan Gelap",
+      "native_title": "Terang dan Gelap — Menyatakan sumber cahaya.",
+      "topic": "Sumber cahaya",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Menyatakan sumber cahaya."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-025",
+      "objective": "Namakan sekurang-kurangnya empat daripada lima sumber cahaya.",
+      "criterion": "Murid namakan empat sumber cahaya daripada set gambar.",
+      "phases": {
+        "engagement": "Guru tunjuk lampu suluh yang menyala.",
+        "exploration": "Murid asing gambar objek mengeluarkan cahaya daripada objek yang hanya memantulkannya.",
+        "explanation": "Guru jelaskan sumber cahaya menghasilkan cahaya; bulan memantulkan cahaya.",
+        "elaboration": "Murid cari contoh pada kad suasana rumah dan luar rumah.",
+        "evaluation": "Murid namakan empat sumber cahaya daripada set gambar."
+      },
+      "support": {
+        "bbm": "Kad matahari, lampu, lilin bergambar, bulan dan objek harian",
+        "pemulihan": "Beri tiga kad sumber cahaya dengan label pilihan.",
+        "pengayaan": "Jelaskan mengapa cermin bukan sumber cahaya.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-015",
+      "unit": "u800d92350d2b199dd2254807",
+      "unit_title": "Terang dan Gelap",
+      "native_title": "Terang dan Gelap — Membanding beza aktiviti yang dijalankan dalam keadaan terang dan gelap.",
+      "topic": "Aktiviti dalam keadaan terang dan gelap",
+      "dskp": [
+        {
+          "code": "6.1.2",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Membanding beza aktiviti yang dijalankan dalam keadaan terang dan gelap."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-025",
+      "objective": "Nyatakan dua perbezaan menjalankan aktiviti dalam keadaan terang dan gelap.",
+      "criterion": "Murid huraikan dua perbezaan berdasarkan pemerhatian.",
+      "phases": {
+        "engagement": "Guru tunjuk objek dalam kotak gelap dan kotak diterangi.",
+        "exploration": "Murid cuba mengenal gambar di dalam kotak menggunakan lubang pandang selamat.",
+        "explanation": "Guru bincang mengapa cahaya diperlukan untuk melihat.",
+        "elaboration": "Murid banding dua aktiviti seperti membaca dan mencari objek berdasarkan gambar.",
+        "evaluation": "Murid huraikan dua perbezaan berdasarkan pemerhatian."
+      },
+      "support": {
+        "bbm": "Kotak pemerhatian, objek kecil, lampu suluh",
+        "pemulihan": "Beri carta terang/gelap dengan gambar.",
+        "pengayaan": "Cadangkan langkah selamat apabila bekalan elektrik terputus.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-018",
+      "unit": "u800d92350d2b199dd2254807",
+      "unit_title": "Terang dan Gelap",
+      "native_title": "Terang dan Gelap — Mencipta permainan bayang-bayang.",
+      "topic": "Permainan bayang-bayang",
+      "dskp": [
+        {
+          "code": "6.1.5",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Mencipta permainan bayang-bayang"
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-028",
+      "objective": "Cipta satu permainan bayang-bayang yang berfungsi dan terangkan cara menghasilkan bayang.",
+      "criterion": "Murid demonstrasi permainan serta jelaskan bagaimana bayang terbentuk.",
+      "phases": {
+        "engagement": "Guru tunjuk permainan teka bentuk bayang.",
+        "exploration": "Murid uji bentuk kadbod di antara lampu dan skrin.",
+        "explanation": "Guru bimbing penggunaan bayang legap dan cara mengubah kedudukan.",
+        "elaboration": "Murid bina permainan teka bayang dengan dua bentuk dan uji bersama rakan.",
+        "evaluation": "Murid demonstrasi permainan serta jelaskan bagaimana bayang terbentuk."
+      },
+      "support": {
+        "bbm": "Lampu suluh, skrin, kadbod prapotong, batang kraf",
+        "pemulihan": "Beri satu bentuk prapotong dan susunan lampu/skrin.",
+        "pengayaan": "Cipta bentuk tambahan dan uji kejelasan bayang.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-019",
+      "unit": "u800d92350d2b199dd2254807",
+      "unit_title": "Terang dan Gelap",
+      "native_title": "Terang dan Gelap — Menjelaskan pemerhatian tentang terang dan gelap melalui lakaran, TMK, penulisan atau lisan.",
+      "topic": "Komunikasi terang dan gelap",
+      "dskp": [
+        {
+          "code": "6.1.6",
+          "printed_page": 53,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Menjelaskan pemerhatian tentang terang dan gelap melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-028",
+      "objective": "Hasilkan satu lakaran berlabel dan terangkan dua dapatan daripada aktiviti cahaya.",
+      "criterion": "Murid terangkan dua dapatan berdasarkan rekod dengan lakaran berlabel.",
+      "phases": {
+        "engagement": "Guru imbas tiga gambar hasil bayang daripada penyiasatan.",
+        "exploration": "Murid pilih rekod cahaya dan bayang yang hendak diterangkan.",
+        "explanation": "Guru model label sumber cahaya, objek dan bayang.",
+        "elaboration": "Murid hasilkan lakaran serta bentang satu perbandingan terang dan gelap.",
+        "evaluation": "Murid terangkan dua dapatan berdasarkan rekod dengan lakaran berlabel."
+      },
+      "support": {
+        "bbm": "Rekod penyiasatan cahaya, kad objek, kertas carta",
+        "pemulihan": "Beri lakaran separa siap dan bank kata.",
+        "pengayaan": "Hasilkan penerangan alternatif dalam bentuk carta ringkas.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-020",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "unit_title": "Elektrik",
+      "native_title": "Elektrik — Mengenal pasti komponen dalam litar elektrik iaitu sel kering, mentol dan suis.",
+      "topic": "Komponen litar elektrik",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Mengenal pasti komponen dalam litar elektrik iaitu sel kering, mentol dan suis."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-029",
+      "objective": "Kenal pasti dan namakan sel kering, mentol dan suis dengan betul.",
+      "criterion": "Murid namakan tiga komponen dengan betul.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga komponen daripada kotak litar.",
+        "exploration": "Murid perhatikan bentuk komponen dan padankan kad nama.",
+        "explanation": "Guru sebut nama serta tunjuk setiap komponen pada rajah.",
+        "elaboration": "Murid label gambar litar yang disediakan dan cari komponen sebenar sepadan.",
+        "evaluation": "Murid namakan tiga komponen dengan betul."
+      },
+      "support": {
+        "bbm": "Set litar sel kering tidak bersambung, kad label",
+        "pemulihan": "Beri kad foto komponen dan nama pilihan.",
+        "pengayaan": "Kenal pasti wayar penyambung pada rajah litar.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-021",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "unit_title": "Elektrik",
+      "native_title": "Elektrik — Menerangkan fungsi komponen dalam litar elektrik lengkap.",
+      "topic": "Fungsi komponen litar",
+      "dskp": [
+        {
+          "code": "7.1.2",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Menerangkan fungsi komponen dalam litar elektrik lengkap."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-029",
+      "objective": "Terangkan fungsi sel kering, mentol dan suis dengan tepat.",
+      "criterion": "Murid lengkapkan tiga padanan fungsi yang tepat.",
+      "phases": {
+        "engagement": "Guru demonstrasi mentol menyala apabila suis ditutup.",
+        "exploration": "Murid perhatikan perubahan apabila guru membuka dan menutup suis.",
+        "explanation": "Guru jelaskan sel kering membekalkan tenaga, mentol menghasilkan cahaya dan suis membuka/menutup laluan.",
+        "elaboration": "Murid padankan tiga kad fungsi dan terangkan kepada rakan.",
+        "evaluation": "Murid lengkapkan tiga padanan fungsi yang tepat."
+      },
+      "support": {
+        "bbm": "Litar lengkap voltan rendah, kad fungsi",
+        "pemulihan": "Beri kad fungsi bergambar dengan pilihan jawapan.",
+        "pengayaan": "Jelaskan peranan wayar sebagai laluan sambungan.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-024",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "unit_title": "Elektrik",
+      "native_title": "Elektrik — Merekod nyalaan mentol dengan menggantikan suis dengan objek atau bahan dengan menjalankan penyiasatan.",
+      "topic": "Rekod nyalaan mentol",
+      "dskp": [
+        {
+          "code": "7.1.5",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Merekod nyalaan mentol dengan mengantikan suis dengan objek atau bahan dengan menjalankan penyiasatan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-032",
+      "objective": "Rekod hasil ujian lima bahan dalam litar voltan rendah dengan betul.",
+      "criterion": "Murid rekod sekurang-kurangnya empat daripada lima hasil berdasarkan ujian sebenar.",
+      "phases": {
+        "engagement": "Guru tunjuk litar ujian dengan ruang sampel; murid ramal nyalaan.",
+        "exploration": "Murid uji sampel kering satu demi satu dengan pengawasan guru.",
+        "explanation": "Guru tunjuk cara mencatat menyala/tidak menyala; elak pintas terminal bateri.",
+        "elaboration": "Murid ulang satu ujian dan semak jadual lima bahan.",
+        "evaluation": "Murid rekod sekurang-kurangnya empat daripada lima hasil berdasarkan ujian sebenar."
+      },
+      "support": {
+        "bbm": "Sel kering, mentol sepadan, wayar klip, sampel kering logam/plastik/kayu, jadual",
+        "pemulihan": "Beri jadual dua simbol nyalaan dan bimbing satu ujian.",
+        "pengayaan": "Ramal bahan tambahan yang diluluskan, kemudian uji.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-025",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "unit_title": "Elektrik",
+      "native_title": "Elektrik — Mengitlak objek yang boleh menyalakan mentol dalam litar adalah konduktor dan yang tidak menyalakan mentol adalah penebat.",
+      "topic": "Konduktor dan penebat",
+      "dskp": [
+        {
+          "code": "7.1.6",
+          "printed_page": 55,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Mengitlak objek yang boleh menyalakan mentol dalam litar adalah konduktor dan yang tidak menyalakan mentol adalah penebat."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-032",
+      "objective": "Kelaskan lima bahan berdasarkan rekod ujian dan rumuskan maksud konduktor dan penebat.",
+      "criterion": "Murid kelaskan sekurang-kurangnya empat bahan dan nyatakan rumusan kedua-dua kumpulan.",
+      "phases": {
+        "engagement": "Guru imbas dua hasil nyalaan daripada eksperimen terdahulu.",
+        "exploration": "Murid asingkan kad sampel mengikut rekod menyala atau tidak menyala.",
+        "explanation": "Guru hubungkan nyalaan dengan laluan arus dalam litar ujian serta istilah konduktor/penebat.",
+        "elaboration": "Murid pilih bahan untuk wayar dan salutan berdasarkan data.",
+        "evaluation": "Murid kelaskan sekurang-kurangnya empat bahan dan nyatakan rumusan kedua-dua kumpulan."
+      },
+      "support": {
+        "bbm": "Jadual nyalaan sebenar, kad bahan",
+        "pemulihan": "Beri carta pengelasan dengan simbol mentol.",
+        "pengayaan": "Terangkan pemilihan bahan penebat pada pemegang wayar.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-027",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "unit_title": "Campuran",
+      "native_title": "Campuran — Memerihalkan kaedah untuk mengasingkan campuran pelbagai bahan atau objek.",
+      "topic": "Kaedah mengasingkan campuran",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 56,
+          "sk": "8.1 Campuran",
+          "sp": "Memerihalkan kaedah untuk mengasingkan campuran pelbagai bahan atau objek."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-034",
+      "objective": "Huraikan tiga kaedah pengasingan campuran yang sesuai.",
+      "criterion": "Murid huraikan tiga kaedah dengan contoh campuran.",
+      "phases": {
+        "engagement": "Guru tunjuk campuran beras dan klip kertas.",
+        "exploration": "Murid cuba mengasing sampel melalui pemilihan tangan, ayakan atau magnet dengan bimbingan.",
+        "explanation": "Guru jelaskan kaedah pengasingan berdasarkan perbezaan sifat bahan.",
+        "elaboration": "Murid padankan tiga campuran dengan kaedah yang telah diperhatikan.",
+        "evaluation": "Murid huraikan tiga kaedah dengan contoh campuran."
+      },
+      "support": {
+        "bbm": "Penapis, ayak, magnet berbalut, campuran kering selamat, kad gambar",
+        "pemulihan": "Beri dua campuran dan alat yang sesuai untuk dipadankan.",
+        "pengayaan": "Cadangkan kaedah penapisan bagi campuran pasir dan air.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-028",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "unit_title": "Campuran",
+      "native_title": "Campuran — Menaakul cara yang digunakan untuk mengasingkan campuran pelbagai bahan atau objek.",
+      "topic": "Menaakul kaedah pengasingan",
+      "dskp": [
+        {
+          "code": "8.1.2",
+          "printed_page": 56,
+          "sk": "8.1 Campuran",
+          "sp": "Menaakul cara yang digunakan untuk mengasingkan campuran pelbagai bahan atau objek."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-034",
+      "objective": "Pilih tiga kaedah pengasingan dan berikan alasan berdasarkan sifat bahan.",
+      "criterion": "Murid berikan tiga padanan kaedah serta sekurang-kurangnya dua alasan tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk campuran klip logam dan kertas.",
+        "exploration": "Murid bincang sama ada magnet atau ayak sesuai berdasarkan sifat bahan.",
+        "explanation": "Guru kaitkan saiz, sifat magnet dan keadaan bahan dengan pilihan kaedah.",
+        "elaboration": "Murid pilih kaedah bagi tiga situasi baharu dan pertahankan pilihan.",
+        "evaluation": "Murid berikan tiga padanan kaedah serta sekurang-kurangnya dua alasan tepat."
+      },
+      "support": {
+        "bbm": "Kad campuran, ayak, penapis, magnet, jadual sebab",
+        "pemulihan": "Beri pilihan alat dan sifat bahan yang berkaitan.",
+        "pengayaan": "Terangkan mengapa satu kaedah lain kurang sesuai.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-033",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menyatakan arah aliran air dengan menjalankan aktiviti.",
+      "topic": "Arah aliran air",
+      "dskp": [
+        {
+          "code": "9.1.2",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Menyatakan arah aliran air dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-039",
+      "objective": "Tunjukkan arah aliran air dari tempat tinggi ke rendah melalui aktiviti.",
+      "criterion": "Murid lukis dua anak panah tepat dan nyatakan arah aliran.",
+      "phases": {
+        "engagement": "Guru tuang sedikit air pada permukaan condong.",
+        "exploration": "Murid uji arah aliran pada dua kedudukan dulang dan tandakan anak panah.",
+        "explanation": "Guru kaitkan kedudukan tinggi dan rendah dengan arah aliran.",
+        "elaboration": "Murid lakar satu situasi model dan jelaskan kedudukan bekas tadahan.",
+        "evaluation": "Murid lukis dua anak panah tepat dan nyatakan arah aliran."
+      },
+      "support": {
+        "bbm": "Dulang condong, air sedikit, bekas tadahan, anak panah kertas",
+        "pemulihan": "Beri model condong dengan label tinggi/rendah.",
+        "pengayaan": "Ramal arah air apabila kecondongan diterbalikkan.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-034",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Mengitlak arah aliran air secara semulajadi seperti aliran air sungai, air terjun melalui pemerhatian menerusi pelbagai media.",
+      "topic": "Arah aliran air semula jadi",
+      "dskp": [
+        {
+          "code": "9.1.3",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Mengitlak arah aliran air secara semulajadi seperti aliran air sungai, air terjun melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-039",
+      "objective": "Buat rumusan arah aliran sungai dan air terjun daripada pemerhatian.",
+      "criterion": "Murid nyatakan arah aliran dan beri dua contoh semula jadi.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar air terjun dan sungai di cerun.",
+        "exploration": "Murid jejak arah air pada dua gambar dan tandakan kawasan tinggi/rendah.",
+        "explanation": "Guru bimbing rumusan air semula jadi mengalir dari tempat tinggi ke rendah.",
+        "elaboration": "Murid gunakan rumusan untuk gambar landskap lain.",
+        "evaluation": "Murid nyatakan arah aliran dan beri dua contoh semula jadi."
+      },
+      "support": {
+        "bbm": "Gambar sungai, air terjun, rajah cerun",
+        "pemulihan": "Beri anak panah pilihan pada gambar cerun.",
+        "pengayaan": "Terangkan arah air dalam model landskap baharu.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-035",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Membuat urutan kitar air semulajadi.",
+      "topic": "Urutan kitar air",
+      "dskp": [
+        {
+          "code": "9.1.4",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Membuat urutan kitar air semulajadi."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-040",
+      "objective": "Susun empat proses kitar air semula jadi dengan tepat.",
+      "criterion": "Murid susun empat proses dalam urutan kitaran yang betul.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar awan dan hujan.",
+        "exploration": "Murid susun kad bergambar untuk menjejaki air dari permukaan ke atmosfera dan kembali.",
+        "explanation": "Guru jelaskan penyejatan, kondensasi, hujan dan pengumpulan air sebagai kitaran.",
+        "elaboration": "Murid lengkapkan rajah anak panah kitaran.",
+        "evaluation": "Murid susun empat proses dalam urutan kitaran yang betul."
+      },
+      "support": {
+        "bbm": "Kad penyejatan, kondensasi, hujan, pengumpulan air",
+        "pemulihan": "Beri dua kad awal dengan anak panah panduan.",
+        "pengayaan": "Terangkan mengapa kitar air tidak mempunyai penghujung tetap.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-036",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menjelaskan pemerhatian tentang kitaran air melalui lakaran, TMK, penulisan atau lisan.",
+      "topic": "Komunikasi kitar air",
+      "dskp": [
+        {
+          "code": "9.1.5",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Menjelaskan pemerhatian tentang kitaran air melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-040",
+      "objective": "Terangkan dua hubungan proses dalam kitar air menggunakan rajah.",
+      "criterion": "Murid label empat proses serta terangkan sekurang-kurangnya dua hubungan.",
+      "phases": {
+        "engagement": "Guru paparkan rajah kitar air tanpa label.",
+        "exploration": "Murid pilih label dan kesan anak panah antara proses.",
+        "explanation": "Guru model penerangan air tersejat, membentuk titisan awan dan turun sebagai hujan.",
+        "elaboration": "Murid hasilkan carta dan bentangkan kepada pasangan.",
+        "evaluation": "Murid label empat proses serta terangkan sekurang-kurangnya dua hubungan."
+      },
+      "support": {
+        "bbm": "Rajah kitar air, kad proses, kertas carta",
+        "pemulihan": "Beri rajah separa lengkap dan bank kata.",
+        "pengayaan": "Terangkan peranan haba matahari dalam kitar air.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-037",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menyatakan udara berada di sekeliling kita.",
+      "topic": "Udara di sekeliling kita",
+      "dskp": [
+        {
+          "code": "9.2.1",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Menyatakan udara berada di sekeliling kita."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-041",
+      "objective": "Nyatakan udara berada di sekeliling berdasarkan dua pemerhatian.",
+      "criterion": "Murid nyatakan kesimpulan dan dua bukti pemerhatian.",
+      "phases": {
+        "engagement": "Guru tunjuk beg yang dikembangkan dengan udara tanpa menghampiri muka.",
+        "exploration": "Murid perhatikan belon dan gelembung daripada cawan terbalik yang dimiringkan di dalam air.",
+        "explanation": "Guru jelaskan udara memenuhi ruang walaupun tidak kelihatan.",
+        "elaboration": "Murid cari dua contoh kehadiran udara dalam persekitaran.",
+        "evaluation": "Murid nyatakan kesimpulan dan dua bukti pemerhatian."
+      },
+      "support": {
+        "bbm": "Beg plastik kecil digunakan guru, belon, cawan plastik, air",
+        "pemulihan": "Beri dua gambar sebelum/selepas aktiviti.",
+        "pengayaan": "Cadangkan cara lain menunjukkan udara memenuhi ruang.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-038",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menyatakan udara terdiri daripada beberapa jenis gas seperti oksigen dan karbon dioksida.",
+      "topic": "Jenis gas dalam udara",
+      "dskp": [
+        {
+          "code": "9.2.2",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Menyatakan udara terdiri daripada beberapa jenis gas seperti oksigen dan karbon dioksida."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-041",
+      "objective": "Namakan oksigen dan karbon dioksida sebagai antara gas dalam udara.",
+      "criterion": "Murid namakan oksigen serta karbon dioksida dan nyatakan udara terdiri daripada beberapa gas.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar manusia bernafas dan tumbuhan.",
+        "exploration": "Murid perhatikan carta udara dan pilih nama gas yang ditandakan.",
+        "explanation": "Guru jelaskan udara ialah campuran beberapa gas termasuk nitrogen, oksigen dan karbon dioksida.",
+        "elaboration": "Murid padankan kad nama gas kepada carta dan sebut dua contoh yang diminta.",
+        "evaluation": "Murid namakan oksigen serta karbon dioksida dan nyatakan udara terdiri daripada beberapa gas."
+      },
+      "support": {
+        "bbm": "Carta ringkas komposisi udara dan kad gas",
+        "pemulihan": "Beri kad nama gas dengan huruf awal.",
+        "pengayaan": "Namakan nitrogen sebagai gas paling banyak dalam udara.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-039",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Memerihalkan udara yang bergerak adalah angin.",
+      "topic": "Udara bergerak sebagai angin",
+      "dskp": [
+        {
+          "code": "9.2.3",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Memerihalkan udara yang bergerak adalah angin."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-042",
+      "objective": "Nyatakan angin ialah udara bergerak dan berikan satu bukti.",
+      "criterion": "Murid nyatakan maksud angin dan satu bukti daripada aktiviti.",
+      "phases": {
+        "engagement": "Guru gerakkan kipas tangan ke arah jalur kertas.",
+        "exploration": "Murid banding keadaan jalur kertas ketika kipas bergerak dan berhenti.",
+        "explanation": "Guru jelaskan udara bergerak dikenali sebagai angin.",
+        "elaboration": "Murid perhatikan pergerakan reben pada dua keadaan dan terangkan.",
+        "evaluation": "Murid nyatakan maksud angin dan satu bukti daripada aktiviti."
+      },
+      "support": {
+        "bbm": "Kipas tangan, jalur kertas, reben",
+        "pemulihan": "Beri dua gambar reben dengan pilihan bergerak/tidak bergerak.",
+        "pengayaan": "Banding pergerakan reben apabila kipas didekatkan secara selamat.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-040",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menjana idea kesan udara yang bergerak dalam kehidupan manusia.",
+      "topic": "Kesan udara bergerak",
+      "dskp": [
+        {
+          "code": "9.2.4",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Menjana idea kesan udara yang bergerak dalam kehidupan manusia."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-042",
+      "objective": "Berikan dua manfaat dan satu kesan buruk udara bergerak dalam kehidupan.",
+      "criterion": "Murid nyatakan dua manfaat dan satu kesan buruk yang munasabah.",
+      "phases": {
+        "engagement": "Guru pamer gambar kain dijemur dan pokok ditiup angin.",
+        "exploration": "Murid bincangkan perubahan pada setiap gambar berdasarkan udara bergerak.",
+        "explanation": "Guru bimbing beza manfaat seperti pengudaraan dengan risiko angin kuat.",
+        "elaboration": "Murid hasilkan carta manfaat/risiko serta cadangkan langkah selamat.",
+        "evaluation": "Murid nyatakan dua manfaat dan satu kesan buruk yang munasabah."
+      },
+      "support": {
+        "bbm": "Kad gambar pengeringan kain, kincir angin, ribut, kipas",
+        "pemulihan": "Beri gambar dan kata kunci manfaat/kesan buruk.",
+        "pengayaan": "Cadangkan satu kegunaan udara bergerak dalam rumah.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-041",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Mencipta alat atau model dengan mengaplikasikan pengetahuan yang menunjukkan kegunaan udara yang bergerak.",
+      "topic": "Model kegunaan udara bergerak",
+      "dskp": [
+        {
+          "code": "9.2.5",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Mencipta alat atau model dengan mengaplikasikan pengetahuan yang menunjukkan kegunaan udara yang bergerak."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-043",
+      "objective": "Cipta satu model kincir kertas yang bergerak apabila dikenakan angin.",
+      "criterion": "Murid demonstrasi model berfungsi serta jelaskan satu kegunaan udara bergerak.",
+      "phases": {
+        "engagement": "Guru tunjuk model kincir berputar apabila dikipas.",
+        "exploration": "Murid perhatikan arah angin dan bentuk bilah model.",
+        "explanation": "Guru bimbing pemasangan model dengan pengikat selamat; guru mengendalikan bahagian tajam.",
+        "elaboration": "Murid bina, uji dan ubah satu ciri model untuk melihat putaran.",
+        "evaluation": "Murid demonstrasi model berfungsi serta jelaskan satu kegunaan udara bergerak."
+      },
+      "support": {
+        "bbm": "Kertas prapotong, pemegang tumpul, pengikat dipasang guru, kipas tangan",
+        "pemulihan": "Beri templat kincir dan bantuan memasang.",
+        "pengayaan": "Banding dua susunan bilah dan cadangkan penambahbaikan.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-042",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menjelaskan pemerhatian tentang udara melalui lakaran, TMK, penulisan atau lisan.",
+      "topic": "Komunikasi pemerhatian udara",
+      "dskp": [
+        {
+          "code": "9.2.6",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Menjelaskan pemerhatian tentang udara melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-043",
+      "objective": "Terangkan dua dapatan tentang kehadiran dan pergerakan udara menggunakan lakaran.",
+      "criterion": "Murid terangkan dua dapatan dengan bukti atau lakaran jelas.",
+      "phases": {
+        "engagement": "Guru imbas gambar daripada aktiviti udara.",
+        "exploration": "Murid pilih dua rekod pemerhatian dan catat perubahan.",
+        "explanation": "Guru model penerangan udara memenuhi ruang dan angin menggerakkan objek.",
+        "elaboration": "Murid lukis dan label dua situasi serta bentang kepada rakan.",
+        "evaluation": "Murid terangkan dua dapatan dengan bukti atau lakaran jelas."
+      },
+      "support": {
+        "bbm": "Rekod belon, reben dan kincir, carta",
+        "pemulihan": "Beri templat dua gambar dan kata kunci.",
+        "pengayaan": "Terangkan hubungan udara bergerak dengan satu kegunaan model.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-043",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "unit_title": "Teknologi",
+      "native_title": "Teknologi — Memilih binaan yang hendak dibina daripada set binaan.",
+      "topic": "Memilih binaan daripada set",
+      "dskp": [
+        {
+          "code": "10.1.1",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Memilih binaan yang hendak dibina daripada set binaan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-044",
+      "objective": "Pilih satu binaan daripada manual dan nyatakan dua sebab pemilihan yang sesuai.",
+      "criterion": "Murid tunjuk model terpilih dan beri dua sebab berpandukan manual.",
+      "phases": {
+        "engagement": "Guru pamer tiga model dalam manual set.",
+        "exploration": "Murid teliti tujuan model serta komponen yang ada.",
+        "explanation": "Guru tunjuk cara memilih model berdasarkan kesesuaian komponen dan fungsi.",
+        "elaboration": "Murid pilih satu model berpasangan dan semak pilihan dengan manual.",
+        "evaluation": "Murid tunjuk model terpilih dan beri dua sebab berpandukan manual."
+      },
+      "support": {
+        "bbm": "Set binaan, manual bergambar, kad pilihan model",
+        "pemulihan": "Beri dua pilihan model dengan gambar jelas.",
+        "pengayaan": "Banding dua model dari segi tujuan dan komponen diperlukan.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-044",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "unit_title": "Teknologi",
+      "native_title": "Teknologi — Mengenal pasti komponen binaan berpandukan manual bergambar.",
+      "topic": "Komponen berpandukan manual",
+      "dskp": [
+        {
+          "code": "10.1.2",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Mengenal pasti komponen binaan berpandukan manual bergambar."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-044",
+      "objective": "Kenal pasti dan senaraikan komponen yang diperlukan bagi satu model dengan tepat.",
+      "criterion": "Murid lengkapkan senarai komponen dan kuantiti sepadan manual.",
+      "phases": {
+        "engagement": "Guru tunjuk satu halaman manual dengan senarai komponen.",
+        "exploration": "Murid cari dan kira komponen mengikut gambar manual.",
+        "explanation": "Guru tunjuk cara menyemak bentuk, saiz dan kuantiti tanpa memasang dahulu.",
+        "elaboration": "Murid sediakan dulang komponen untuk satu model dan semak silang dengan pasangan.",
+        "evaluation": "Murid lengkapkan senarai komponen dan kuantiti sepadan manual."
+      },
+      "support": {
+        "bbm": "Manual bergambar, komponen set, dulang, senarai semak",
+        "pemulihan": "Beri kad komponen bergambar serta senarai semak separa lengkap.",
+        "pengayaan": "Semak senarai model lain dan kenal pasti komponen yang berbeza.",
+        "pak21": "Perbincangan dan semakan rakan mengikut tugasan di atas",
+        "emk": "Nilai murni, ketelitian dan keselamatan mengikut aktiviti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    }
+  ]
+}

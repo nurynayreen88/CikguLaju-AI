@@ -1,0 +1,1577 @@
+{
+  "status": "41_SCOPE_MATCHED_DRAFTS_8_HELD",
+  "source_identity_blob": "591f0d2739a673c3119937ad7b9225cbdecd46bb",
+  "candidate_source_blobs": {
+    "audits/rph_5p_science_kssr_t2_dskp_candidates_20261128.json": "57257df0220e0d1a43738a25ba14197286bb679e",
+    "audits/rph_5p_science_kssr_t3_dskp_candidates_20261128.json": "49b86cc3db24578c1e16361219168e9e49154707",
+    "audits/rph_5p_science_kssr_t4_dskp_candidates_20261128.json": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55"
+  },
+  "total": 41,
+  "counts": {
+    "2": 22,
+    "3": 12,
+    "4": 7
+  },
+  "held": [
+    {
+      "lesson_id": "SCI-Y2-PDP-005",
+      "reason": "Dua calon kitar hidup (rama-rama/katak); perlukan konteks RPH asal.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y2-PDP-051",
+      "reason": "Tajuk pewarisan bercanggah dengan DSKP 3.1.3 (perbezaan tumbesaran); jangan tukar kod secara automatik.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-002",
+      "reason": "Kekalkan skop sifat rasa/sentuhan melalui contoh makanan biasa dan data; jangan uji dengan merasa bahan kimia. Perlu semak RPH asal.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-020",
+      "reason": "Tajuk orbit bercanggah dengan SP 9.1.2 suhu planet.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-036",
+      "reason": "Tajuk projek pelbagai cara pembiakan bercanggah dengan SP 5.1.2 kepentingan pembiakan.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-040",
+      "reason": "Tajuk isi padu kotak bercanggah dengan SP 6.1.3 anggaran luas.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-041",
+      "reason": "Tajuk isi padu cecair bercanggah dengan SP 6.1.4 isi padu kotak.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y4-PDP-048",
+      "reason": "Tiga calon sifat bahan bagi satu SP; perlukan skop sifat dalam RPH asal.",
+      "ready": false
+    }
+  ],
+  "limitations": "Draft candidates selected only after exact SP and title scope comparison. DSKP wording inherited from prior reviewed source candidates; check original RPH activity/objective, textbook pages and duration before final publication. No approval, no overwrite.",
+  "records": [
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-003",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menjelaskan dengan contoh haiwan bertelur banyak dan bertelur sedikit.",
+      "dskp": [
+        {
+          "code": "4.1.3",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menjelaskan dengan contoh haiwan bertelur banyak dan bertelur sedikit."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-014",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Banding gambar sarang merpati dan telur katak.",
+        "exploration": "Perhatikan kad data contoh bilangan telur.",
+        "explanation": "Terangkan sesetengah haiwan bertelur banyak, sesetengah sedikit; bilangan berubah mengikut spesies.",
+        "elaboration": "Bina jadual contoh katak, ikan, merpati dan penyu daripada kad data.",
+        "evaluation": "Berikan dua contoh bagi setiap kumpulan dengan alasan."
+      },
+      "proposed_objective_and_criterion": "Berikan dua contoh bagi setiap kumpulan dengan alasan.",
+      "suggested_support": {
+        "bbm": "Kad gambar haiwan, kad bilangan telur, jadual dua lajur",
+        "pak21": "Think-Pair-Share: banding bilangan telur",
+        "emk": "Ketelitian menggunakan data",
+        "pemulihan": "Padankan gambar dengan dua kumpulan menggunakan kad petunjuk.",
+        "pengayaan": "Banding bilangan telur dua spesies tambahan berdasarkan data."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-004",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menjelaskan dengan contoh haiwan melahirkan anak yang banyak dan anak yang sedikit.",
+      "dskp": [
+        {
+          "code": "4.1.4",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menjelaskan dengan contoh haiwan melahirkan anak yang banyak dan anak yang sedikit."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-015",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Banding gambar anak kucing dan anak lembu.",
+        "exploration": "Susun kad bilangan anak bagi satu kelahiran daripada contoh yang diberi.",
+        "explanation": "Jelaskan perbezaan bilangan anak dan bahawa bilangan boleh berubah.",
+        "elaboration": "Kelaskan contoh tikus, kucing, lembu dan gajah berdasarkan kad data.",
+        "evaluation": "Empat contoh dikelaskan dengan alasan berdasarkan data."
+      },
+      "proposed_objective_and_criterion": "Empat contoh dikelaskan dengan alasan berdasarkan data.",
+      "suggested_support": {
+        "bbm": "Kad gambar haiwan dan bilangan anak, jadual",
+        "pak21": "Perbincangan berpasangan berdasarkan data kelahiran",
+        "emk": "Menghargai kepelbagaian haiwan",
+        "pemulihan": "Beri dua kad contoh bilangan anak dengan petunjuk.",
+        "pengayaan": "Jelaskan mengapa bilangan anak bagi haiwan sama boleh berbeza."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-008",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menyatakan kepentingan tumbuhan kepada manusia dan haiwan.",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Menyatakan kepentingan tumbuhan kepada manusia dan haiwan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-019",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Pamer gambar burung di pokok dan manusia makan buah.",
+        "exploration": "Padankan tumbuhan dengan makanan, tempat perlindungan dan kegunaan.",
+        "explanation": "Jelaskan kepentingan tumbuhan kepada manusia serta haiwan.",
+        "elaboration": "Bina peta hubungan tumbuhan dengan empat kegunaan harian.",
+        "evaluation": "Berikan dua kepentingan kepada manusia dan dua kepada haiwan."
+      },
+      "proposed_objective_and_criterion": "Berikan dua kepentingan kepada manusia dan dua kepada haiwan.",
+      "suggested_support": {
+        "bbm": "Kad tumbuhan, haiwan, makanan dan tempat perlindungan",
+        "pak21": "Peta hubungan kumpulan",
+        "emk": "Kelestarian alam sekitar",
+        "pemulihan": "Padankan gambar tumbuhan dengan satu kegunaan.",
+        "pengayaan": "Terangkan kesan kehilangan tumbuhan kepada haiwan dan manusia."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-009",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menyatakan keperluan asas untuk biji benih bercambah.",
+      "dskp": [
+        {
+          "code": "5.1.2",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Menyatakan keperluan asas untuk biji benih bercambah."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-020",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Banding biji kacang kering dengan biji bercambah.",
+        "exploration": "Sediakan bekas biji benih lembap dan kering; guru sediakan data/rakaman bagi udara dan suhu.",
+        "explanation": "Jelaskan air, udara dan suhu sesuai; cahaya bukan syarat semua biji benih bercambah.",
+        "elaboration": "Ramal dan rekod pemerhatian susulan; banding dengan data contoh.",
+        "evaluation": "Nyatakan tiga keperluan dan alasan daripada bukti."
+      },
+      "proposed_objective_and_criterion": "Nyatakan tiga keperluan dan alasan daripada bukti.",
+      "suggested_support": {
+        "bbm": "Biji kacang, bekas, kapas, air, rekod suhu dan udara",
+        "pak21": "Ramalan dan pemerhatian berpasangan",
+        "emk": "Tanggungjawab menjaga bahan hidup",
+        "pemulihan": "Beri kad gambar air, udara dan suhu untuk dipadankan.",
+        "pengayaan": "Rancang satu perbandingan dengan hanya satu faktor diubah."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-010",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Merekod perubahan tumbesaran tumbuhan bermula daripada percambahan biji benih dengan memerhati biji benih sebenar.",
+      "dskp": [
+        {
+          "code": "5.1.3",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Merekod perubahan tumbesaran tumbuhan bermula daripada percambahan biji benih dengan memerhati biji benih sebenar."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-021",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Perhatikan biji benih bercambah yang disediakan lebih awal.",
+        "exploration": "Ukur panjang pucuk dan kira daun pada sampel sebenar.",
+        "explanation": "Model jadual tarikh, tinggi dan bilangan daun.",
+        "elaboration": "Rekod tumbesaran beberapa hari sebagai aktiviti susulan.",
+        "evaluation": "Catat dua pemerhatian bertarikh daripada tumbuhan sebenar."
+      },
+      "proposed_objective_and_criterion": "Catat dua pemerhatian bertarikh daripada tumbuhan sebenar.",
+      "suggested_support": {
+        "bbm": "Biji benih sebenar bercambah, pembaris, jadual bertarikh",
+        "pak21": "Stesen pemerhatian dan rekod",
+        "emk": "Ketelitian mengukur",
+        "pemulihan": "Sediakan jadual tarikh dan contoh satu rekod ukuran.",
+        "pengayaan": "Banding perubahan tinggi dua sampel dari tarikh berlainan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-011",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menyusun mengikut urutan peringkat tumbesaran tumbuhan.",
+      "dskp": [
+        {
+          "code": "5.1.4",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Menyusun mengikut urutan peringkat tumbesaran tumbuhan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-022",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Pamer gambar buah, biji benih dan pokok berbuah.",
+        "exploration": "Susun kad percambahan, anak pokok, pokok matang, bunga dan buah.",
+        "explanation": "Jelaskan urutan tumbesaran bagi contoh pokok yang dipilih.",
+        "elaboration": "Bina jalur urutan bergambar dan ceritakan kepada rakan.",
+        "evaluation": "Susun peringkat yang diberi dan terangkan dua perubahan."
+      },
+      "proposed_objective_and_criterion": "Susun peringkat yang diberi dan terangkan dua perubahan.",
+      "suggested_support": {
+        "bbm": "Kad peringkat tumbesaran pokok, jalur urutan",
+        "pak21": "Susun kad dan komunikasi rakan",
+        "emk": "Menghargai tumbuhan",
+        "pemulihan": "Beri kad mula dan akhir sebagai petunjuk.",
+        "pengayaan": "Bina urutan tumbesaran satu tumbuhan lain."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-012",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Membuat kesimpulan keperluan asas untuk tumbesaran tumbuhan dengan menjalankan penyiasatan.",
+      "dskp": [
+        {
+          "code": "5.1.5",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Membuat kesimpulan keperluan asas untuk tumbesaran tumbuhan dengan menjalankan penyiasatan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-023",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Banding gambar pokok sihat dan layu.",
+        "exploration": "Sediakan penyiasatan perbandingan air atau cahaya dengan faktor lain dikekalkan.",
+        "explanation": "Bincang data yang dikumpul beberapa hari; jelaskan air, udara, nutrien dan cahaya.",
+        "elaboration": "Banding tumbuhan dalam keadaan berlainan menggunakan bukti, bukan andaian.",
+        "evaluation": "Nyatakan kesimpulan berdasarkan data penyiasatan sebenar."
+      },
+      "proposed_objective_and_criterion": "Nyatakan kesimpulan berdasarkan data penyiasatan sebenar.",
+      "suggested_support": {
+        "bbm": "Sampel tumbuhan, air, bekas, rekod penyiasatan beberapa hari",
+        "pak21": "Perbincangan dapatan kumpulan",
+        "emk": "Tanggungjawab menjaga tumbuhan",
+        "pemulihan": "Gunakan jadual dua keadaan dengan gambar.",
+        "pengayaan": "Cadangkan ujian faktor lain dengan kawalan yang sesuai."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-013",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menjelaskan pemerhatian tentang proses hidup tumbuhan melalui lakaran, TMK, penulisan atau lisan.",
+      "dskp": [
+        {
+          "code": "5.1.6",
+          "printed_page": 51,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Menjelaskan pemerhatian tentang proses hidup tumbuhan melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-024",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Imbas rekod tumbesaran pokok yang telah dikumpul.",
+        "exploration": "Pilih gambar dan ukuran daripada rekod pemerhatian.",
+        "explanation": "Model cara menerangkan urutan serta keperluan tumbuhan menggunakan bukti.",
+        "elaboration": "Bentang carta atau lakaran tumbesaran dalam kumpulan.",
+        "evaluation": "Terangkan satu urutan dan satu dapatan berdasarkan rekod."
+      },
+      "proposed_objective_and_criterion": "Terangkan satu urutan dan satu dapatan berdasarkan rekod.",
+      "suggested_support": {
+        "bbm": "Rekod pertumbuhan sebenar, kertas carta, pensel warna",
+        "pak21": "Gallery Walk carta tumbesaran",
+        "emk": "Ketelitian menyampaikan bukti",
+        "pemulihan": "Beri rangka carta tiga gambar dan kata kunci.",
+        "pengayaan": "Terangkan perubahan berdasarkan dua rekod bertarikh."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-016",
+      "unit": "u800d92350d2b199dd2254807",
+      "unit_title": "Terang dan Gelap",
+      "native_title": "Terang dan Gelap — Menerangkan bagaimana bayang-bayang dihasilkan melalui aktiviti.",
+      "dskp": [
+        {
+          "code": "6.1.3",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Menerangkan bagaimana bayang-bayang dihasilkan melalui aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-026",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Pamer bayang tangan di hadapan lampu suluh.",
+        "exploration": "Ubah kedudukan objek legap antara lampu dan skrin.",
+        "explanation": "Terangkan bayang terbentuk apabila cahaya dihalang.",
+        "elaboration": "Uji bentuk objek berlainan dan lakar susunan lampu-objek-skrin.",
+        "evaluation": "Lakar susunan betul dan terangkan sebab bayang terbentuk."
+      },
+      "proposed_objective_and_criterion": "Lakar susunan betul dan terangkan sebab bayang terbentuk.",
+      "suggested_support": {
+        "bbm": "Lampu suluh, objek legap, skrin putih",
+        "pak21": "Demonstrasi dan penerangan berpasangan",
+        "emk": "Keselamatan penggunaan cahaya",
+        "pemulihan": "Beri rajah lampu-objek-skrin separa siap.",
+        "pengayaan": "Ramal perubahan bayang apabila bentuk objek berubah."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-017",
+      "unit": "u800d92350d2b199dd2254807",
+      "unit_title": "Terang dan Gelap",
+      "native_title": "Terang dan Gelap — Membanding dan membezakan kejelasan bayang-bayang apabila cahaya dihalang oleh objek yang berlainan dengan menjalankan penyiasatan.",
+      "dskp": [
+        {
+          "code": "6.1.4",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Membanding dan membezakan kejelasan bayang-bayang apabila cahaya dihalang oleh objek yang berlainan dengan menjalankan penyiasatan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-027",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Ramal bayang daripada kadbod, kertas surih dan plastik lutsinar.",
+        "exploration": "Uji setiap bahan menggunakan lampu dan jarak sama.",
+        "explanation": "Banding hasil jelas, kurang jelas atau tiada bayang yang ketara.",
+        "elaboration": "Rekod jadual bahan dan kejelasan bayang; ulang bacaan jika perlu.",
+        "evaluation": "Tiga pemerhatian dan satu kesimpulan berdasarkan data."
+      },
+      "proposed_objective_and_criterion": "Tiga pemerhatian dan satu kesimpulan berdasarkan data.",
+      "suggested_support": {
+        "bbm": "Lampu suluh, kadbod, kertas surih, plastik jernih, skrin",
+        "pak21": "Penyiasatan berkumpulan dan jadual",
+        "emk": "Ketelitian perbandingan",
+        "pemulihan": "Padankan tiga gambar hasil bayang dengan bahan.",
+        "pengayaan": "Uji satu bahan tambahan dengan jarak yang sama."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-022",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "unit_title": "Elektrik",
+      "native_title": "Elektrik — Membina litar elektrik lengkap dengan menggunakan sel kering, mentol, suis dan wayar penyambung.",
+      "dskp": [
+        {
+          "code": "7.1.3",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Membina litar elektrik lengkap dengan menggunakan sel kering, mentol, suis dan wayar penyambung."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-030",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Ramal sama ada mentol menyala apabila suis terbuka.",
+        "exploration": "Bina litar sel kering dan mentol yang sepadan di bawah pengawasan guru.",
+        "explanation": "Jelaskan laluan lengkap; jangan sambung terus terminal bateri tanpa beban.",
+        "elaboration": "Uji suis terbuka dan tertutup; lakar litar.",
+        "evaluation": "Bina litar berfungsi dan demonstrasi kedua-dua keadaan suis."
+      },
+      "proposed_objective_and_criterion": "Bina litar berfungsi dan demonstrasi kedua-dua keadaan suis.",
+      "suggested_support": {
+        "bbm": "Sel kering, mentol sepadan, suis, wayar berpenebat",
+        "pak21": "Kolaborasi membina dan menguji litar",
+        "emk": "Keselamatan elektrik voltan rendah",
+        "pemulihan": "Beri rajah sambungan lengkap dan bimbing setiap langkah.",
+        "pengayaan": "Lakar litar lain yang menyalakan mentol dengan suis tertutup."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-023",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "unit_title": "Elektrik",
+      "native_title": "Elektrik — Meramal sebab mentol tidak menyala dalam litar yang dibina.",
+      "dskp": [
+        {
+          "code": "7.1.4",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Meramal sebab mentol tidak menyala dalam litar yang dibina."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-031",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Pamer dua litar voltan rendah, satu dengan suis terbuka.",
+        "exploration": "Periksa sambungan, kedudukan sel kering dan mentol melalui kad rajah serta set selamat.",
+        "explanation": "Jelaskan sebab litar tidak lengkap atau komponen tidak berfungsi.",
+        "elaboration": "Baiki satu sambungan terputus pada set guru; elak litar pintas.",
+        "evaluation": "Kenal pasti tiga kemungkinan sebab dan satu pembetulan selamat."
+      },
+      "proposed_objective_and_criterion": "Kenal pasti tiga kemungkinan sebab dan satu pembetulan selamat.",
+      "suggested_support": {
+        "bbm": "Set litar voltan rendah, kad rajah kesalahan",
+        "pak21": "Penyelesaian masalah berpasangan",
+        "emk": "Keselamatan dan ketelitian",
+        "pemulihan": "Beri kad semak sambungan, suis dan mentol.",
+        "pengayaan": "Cadangkan cara menguji satu punca pada satu masa."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-026",
+      "unit": "u684ea80dbe0c87a8b04b8796",
+      "unit_title": "Elektrik",
+      "native_title": "Elektrik — Menjelaskan pemerhatian tentang litar elektrik melalui lakaran, TMK, penulisan atau lisan.",
+      "dskp": [
+        {
+          "code": "7.1.7",
+          "printed_page": 55,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Menjelaskan pemerhatian tentang litar elektrik melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-033",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Imbas jadual nyalaan mentol daripada penyiasatan.",
+        "exploration": "Pilih rajah litar dan catatan keputusan.",
+        "explanation": "Terangkan penggunaan simbol atau lakaran komponen yang jelas.",
+        "elaboration": "Bentang hasil pengujian dan cadangkan pembetulan bagi litar terbuka.",
+        "evaluation": "Lakaran berlabel serta penerangan dua dapatan."
+      },
+      "proposed_objective_and_criterion": "Lakaran berlabel serta penerangan dua dapatan.",
+      "suggested_support": {
+        "bbm": "Rajah litar, rekod nyalaan, kad label komponen",
+        "pak21": "Pembentangan dapatan berpasangan",
+        "emk": "Ketepatan merekod maklumat",
+        "pemulihan": "Sediakan rajah litar separa berlabel.",
+        "pengayaan": "Terangkan dua hasil daripada litar berlainan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-029",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "unit_title": "Campuran",
+      "native_title": "Campuran — Mengenal pasti bahan yang boleh larut dan tidak boleh larut di dalam air dengan menjalankan penyiasatan.",
+      "dskp": [
+        {
+          "code": "8.1.3",
+          "printed_page": 56,
+          "sk": "8.1 Campuran",
+          "sp": "Mengenal pasti bahan yang boleh larut dan tidak boleh larut di dalam air dengan menjalankan penyiasatan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-035",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Ramal perubahan gula dan pasir dalam air.",
+        "exploration": "Uji kuantiti kecil setiap bahan dalam cawan air sama banyak.",
+        "explanation": "Bezakan bahan larut daripada bahan yang masih kelihatan; jangan merasa.",
+        "elaboration": "Rekod hasil gula, garam dan pasir serta banding pemerhatian.",
+        "evaluation": "Tiga pengelasan dengan bukti pemerhatian."
+      },
+      "proposed_objective_and_criterion": "Tiga pengelasan dengan bukti pemerhatian.",
+      "suggested_support": {
+        "bbm": "Cawan, air, gula, garam, pasir, sudu, jadual",
+        "pak21": "Penyiasatan dan perbandingan hasil",
+        "emk": "Keselamatan: tidak merasa bahan ujian",
+        "pemulihan": "Gunakan gambar bahan sebelum dan selepas diaduk.",
+        "pengayaan": "Uji bahan tambahan yang diluluskan guru."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-030",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "unit_title": "Campuran",
+      "native_title": "Campuran — Merumuskan cara bahan boleh dilarutkan dengan lebih cepat dengan menjalankan penyiasatan.",
+      "dskp": [
+        {
+          "code": "8.1.4",
+          "printed_page": 56,
+          "sk": "8.1 Campuran",
+          "sp": "Merumuskan cara bahan boleh dilarutkan dengan lebih cepat dengan menjalankan penyiasatan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-036",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Banding gula kasar dan halus dalam gambar.",
+        "exploration": "Uji dua cawan air sama suhu dengan jumlah gula sama, satu dikacau dan satu tidak.",
+        "explanation": "Jelaskan pengacauan mempercepat pelarutan; saiz bahan diuji secara berasingan.",
+        "elaboration": "Banding data percubaan kedua dengan gula saiz berlainan, faktor lain sama.",
+        "evaluation": "Nyatakan dua cara dan satu bukti daripada penyiasatan."
+      },
+      "proposed_objective_and_criterion": "Nyatakan dua cara dan satu bukti daripada penyiasatan.",
+      "suggested_support": {
+        "bbm": "Gula, air sama suhu, cawan, sudu, pemasa",
+        "pak21": "Penyiasatan adil dalam kumpulan",
+        "emk": "Ketelitian kawalan pemboleh ubah",
+        "pemulihan": "Beri jadual masa dua cawan dan pilihan kesimpulan.",
+        "pengayaan": "Uji saiz butiran secara berasingan dengan kawalan sama."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-031",
+      "unit": "u6b6246f1fa0f7968d628797c",
+      "unit_title": "Campuran",
+      "native_title": "Campuran — Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+      "dskp": [
+        {
+          "code": "8.1.5",
+          "printed_page": 57,
+          "sk": "8.1 Campuran",
+          "sp": "Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-037",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Paparkan rekod pengasingan dan pelarutan.",
+        "exploration": "Pilih bukti bergambar daripada penyiasatan lepas.",
+        "explanation": "Bezakan pengasingan berdasarkan sifat fizikal dan pelarutan.",
+        "elaboration": "Hasilkan carta alir kaedah mengasing campuran dan rumusan larut.",
+        "evaluation": "Terangkan dua dapatan berdasarkan rekod."
+      },
+      "proposed_objective_and_criterion": "Terangkan dua dapatan berdasarkan rekod.",
+      "suggested_support": {
+        "bbm": "Rekod pengasingan dan pelarutan, kad gambar, carta",
+        "pak21": "Pembentangan carta alir",
+        "emk": "Ketelitian melaporkan hasil",
+        "pemulihan": "Beri rangka dua dapatan dengan gambar.",
+        "pengayaan": "Terangkan pemilihan satu kaedah pengasingan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-032",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menyatakan sumber air semulajadi seperti hujan, sungai, tasik, laut dan mata air.",
+      "dskp": [
+        {
+          "code": "9.1.1",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Menyatakan sumber air semulajadi seperti hujan, sungai, tasik, laut dan mata air."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-038",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Pamer gambar hujan, sungai dan laut.",
+        "exploration": "Padankan gambar sumber air dengan nama.",
+        "explanation": "Jelaskan sumber seperti hujan, sungai, tasik, laut dan mata air.",
+        "elaboration": "Bina peta gambar sumber air dan bincang penjagaan kebersihan.",
+        "evaluation": "Namakan empat daripada lima sumber air."
+      },
+      "proposed_objective_and_criterion": "Namakan empat daripada lima sumber air.",
+      "suggested_support": {
+        "bbm": "Kad gambar hujan, sungai, tasik, laut, mata air",
+        "pak21": "Padanan gambar dan perbincangan",
+        "emk": "Kelestarian sumber air",
+        "pemulihan": "Beri nama sumber sebagai pilihan jawapan.",
+        "pengayaan": "Cadangkan satu amalan menjaga setiap sumber air."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-045",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "unit_title": "Teknologi",
+      "native_title": "Teknologi — Memasang komponen binaan berpandukan manual bergambar.",
+      "dskp": [
+        {
+          "code": "10.1.3",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Memasang komponen binaan berpandukan manual bergambar."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-045",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Banding model siap dengan gambar langkah pertama.",
+        "exploration": "Pasang komponen secara berpasangan mengikut turutan manual.",
+        "explanation": "Jelaskan kepentingan memeriksa orientasi dan sambungan setiap langkah.",
+        "elaboration": "Semak hasil dengan gambar akhir dan baiki sambungan.",
+        "evaluation": "Binaan sepadan dengan manual dan urutan pemasangan dipatuhi."
+      },
+      "proposed_objective_and_criterion": "Binaan sepadan dengan manual dan urutan pemasangan dipatuhi.",
+      "suggested_support": {
+        "bbm": "Set binaan, manual bergambar, dulang komponen",
+        "pak21": "Kolaborasi memasang secara bergilir",
+        "emk": "Kesabaran dan keselamatan",
+        "pemulihan": "Beri manual langkah bergambar dan komponen terpilih.",
+        "pengayaan": "Semak orientasi dan baiki model tanpa bantuan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-046",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "unit_title": "Teknologi",
+      "native_title": "Teknologi — Mencipta satu binaan baru yang tidak terdapat dalam manual bergambar.",
+      "dskp": [
+        {
+          "code": "10.1.4",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Mencipta satu binaan baru yang tidak terdapat dalam manual bergambar."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-046",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Tunjuk komponen set yang boleh digunakan untuk pelbagai model.",
+        "exploration": "Lakar idea binaan dengan fungsi mudah seperti pemegang kad.",
+        "explanation": "Jelaskan hubungan kestabilan dan fungsi komponen.",
+        "elaboration": "Cipta model baharu yang tiada dalam manual dan uji fungsi.",
+        "evaluation": "Model berfungsi serta satu penerangan tujuan dan penambahbaikan."
+      },
+      "proposed_objective_and_criterion": "Model berfungsi serta satu penerangan tujuan dan penambahbaikan.",
+      "suggested_support": {
+        "bbm": "Set binaan, manual, kertas lakaran",
+        "pak21": "Reka cipta berpasangan",
+        "emk": "Kreativiti dan inovasi",
+        "pemulihan": "Beri contoh fungsi mudah dan pilihan komponen.",
+        "pengayaan": "Uji kestabilan dan tambah baik fungsi model."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-047",
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "unit_title": "Teknologi",
+      "native_title": "Teknologi — Membuka hasil binaan mengikut urutan dan menyimpan komponen yang telah dibuka ke dalam bekas penyimpanan.",
+      "dskp": [
+        {
+          "code": "10.1.5",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Membuka hasil binaan mengikut urutan dan menyimpan komponen yang telah dibuka ke dalam bekas penyimpanan."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-047",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Banding komponen tersusun dengan komponen bercampur.",
+        "exploration": "Rujuk manual dan kenal urutan membuka sambungan.",
+        "explanation": "Demonstrasi membuka dengan cermat tanpa memaksa komponen.",
+        "elaboration": "Buka binaan dan kira serta susun komponen dalam bekas.",
+        "evaluation": "Semua komponen dipulangkan mengikut urutan dan tempat yang betul."
+      },
+      "proposed_objective_and_criterion": "Semua komponen dipulangkan mengikut urutan dan tempat yang betul.",
+      "suggested_support": {
+        "bbm": "Set binaan, manual, bekas berpetak",
+        "pak21": "Kerja berpasangan dan semakan inventori",
+        "emk": "Tanggungjawab menjaga peralatan",
+        "pemulihan": "Beri gambar urutan membuka dan label bekas.",
+        "pengayaan": "Sediakan senarai semak komponen untuk rakan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-049",
+      "unit": "u48f9e1daaf4286750057f638",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menyatakan cara manusia membiak.",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 46,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Menyatakan cara manusia membiak."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-008",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Pamer ilustrasi bayi bersama penjaga.",
+        "exploration": "Susun gambar bayi dan manusia dewasa; bincang asal bayi secara sesuai usia.",
+        "explanation": "Terangkan manusia membiak dengan melahirkan anak.",
+        "elaboration": "Padankan gambar bayi dengan tahap pertumbuhan manusia.",
+        "evaluation": "Nyatakan cara manusia membiak dan kenal gambar bayi."
+      },
+      "proposed_objective_and_criterion": "Nyatakan cara manusia membiak dan kenal gambar bayi.",
+      "suggested_support": {
+        "bbm": "Kad gambar bayi dan dewasa",
+        "pak21": "Perbincangan gambar berpasangan",
+        "emk": "Menghormati keluarga dan individu",
+        "pemulihan": "Padankan gambar manusia dewasa dengan bayi.",
+        "pengayaan": "Terangkan perbezaan cara pembiakan manusia dan contoh haiwan bertelur."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-050",
+      "unit": "u48f9e1daaf4286750057f638",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menerangkan perubahan yang berlaku pada diri sejak dilahirkan dari aspek saiz, tinggi dan berat.",
+      "dskp": [
+        {
+          "code": "3.1.2",
+          "printed_page": 46,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Memerihalkan perubahan yang berlaku pada diri sejak dilahirkan dari aspek saiz, tinggi dan berat."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-009",
+      "source_candidate_blob": "57257df0220e0d1a43738a25ba14197286bb679e",
+      "phases": {
+        "engagement": "Banding ilustrasi bayi, kanak-kanak dan dewasa.",
+        "exploration": "Susun tiga gambar mengikut perubahan saiz dan tinggi.",
+        "explanation": "Jelaskan pertambahan saiz, tinggi dan berat semasa tumbesaran.",
+        "elaboration": "Padankan kad perubahan dengan tiga aspek; gunakan data rekaan.",
+        "evaluation": "Huraikan tiga aspek perubahan secara tepat."
+      },
+      "proposed_objective_and_criterion": "Huraikan tiga aspek perubahan secara tepat.",
+      "suggested_support": {
+        "bbm": "Gambar tahap umur dan data rekaan saiz, tinggi, berat",
+        "pak21": "Susun kad dan bincang data",
+        "emk": "Menghormati perbezaan individu",
+        "pemulihan": "Beri tiga kad aspek pertumbuhan dengan gambar.",
+        "pengayaan": "Huraikan perubahan berdasarkan carta data rekaan baharu."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-001",
+      "unit": "ufa457f146af708b575c49eb9",
+      "unit_title": "Asid dan Alkali / 8.1",
+      "native_title": "Menguji bahan yang berasid, beralkali dan neutral dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan.",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 66,
+          "sk": "8.1 Asid dan alkali",
+          "sp": "Menguji bahan yang berasid, beralkali dan neutral dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-032",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Pamer kertas litmus merah dan biru.",
+        "exploration": "Guru bimbing ujian larutan makanan selamat seperti air, cuka cair dan soda penaik cair menggunakan penitis.",
+        "explanation": "Terangkan perubahan litmus merah/biru bagi asid, alkali dan neutral.",
+        "elaboration": "Catat jadual warna bagi kedua-dua jenis litmus; tiada merasa atau menyentuh larutan.",
+        "evaluation": "Tiga pengelasan berdasarkan bukti warna."
+      },
+      "proposed_objective_and_criterion": "Tiga pengelasan berdasarkan bukti warna.",
+      "suggested_support": {
+        "bbm": "Litmus merah/biru, penitis, air, cuka cair, soda penaik cair, jadual",
+        "pak21": "Penyiasatan berkumpulan",
+        "emk": "Keselamatan bahan ujian: tiada merasa atau menyentuh",
+        "pemulihan": "Beri carta perubahan warna sebagai rujukan.",
+        "pengayaan": "Kelaskan sampel tambahan berdasarkan kedua-dua litmus."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-005",
+      "unit": "u144593f4237ade453f115b81",
+      "unit_title": "Manusia / 3.1 Gigi",
+      "native_title": "Menyatakan jenis gigi dan fungsinya.",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Memerihalkan jenis gigi dan fungsinya."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-010",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Pamer gambar gigi hadapan dan geraham.",
+        "exploration": "Perhatikan bentuk model gigi; padankan dengan tindakan memotong atau mengisar.",
+        "explanation": "Jelaskan gigi kacip memotong, taring mengoyak dan geraham mengisar.",
+        "elaboration": "Padankan jenis gigi dengan fungsi melalui model makanan kertas.",
+        "evaluation": "Tiga jenis gigi dan fungsi tepat."
+      },
+      "proposed_objective_and_criterion": "Tiga jenis gigi dan fungsi tepat.",
+      "suggested_support": {
+        "bbm": "Model gigi, kad jenis dan fungsi, model makanan kertas",
+        "pak21": "Padanan dan demonstrasi berpasangan",
+        "emk": "Penjagaan kesihatan gigi",
+        "pemulihan": "Beri kad bergambar gigi dan pilihan fungsi.",
+        "pengayaan": "Terangkan fungsi dua jenis gigi semasa mengunyah."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-006",
+      "unit": "u144593f4237ade453f115b81",
+      "unit_title": "Manusia / 3.1 Gigi",
+      "native_title": "Melabelkan struktur gigi.",
+      "dskp": [
+        {
+          "code": "3.1.2",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Melabelkan struktur gigi."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-011",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Tunjuk model keratan rentas gigi.",
+        "exploration": "Padankan kad enamel, dentin, saraf, salur darah dan gusi.",
+        "explanation": "Jelaskan kedudukan setiap struktur pada rajah.",
+        "elaboration": "Label rajah baharu dan semak menggunakan carta rujukan.",
+        "evaluation": "Sekurang-kurangnya empat daripada lima label tepat."
+      },
+      "proposed_objective_and_criterion": "Sekurang-kurangnya empat daripada lima label tepat.",
+      "suggested_support": {
+        "bbm": "Rajah keratan rentas gigi, kad label",
+        "pak21": "Semak silang label dengan rakan",
+        "emk": "Ketelitian dan kesihatan",
+        "pemulihan": "Beri rajah bernombor dan bank kata.",
+        "pengayaan": "Label rajah tanpa bank kata dan terangkan kedudukan enamel."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-007",
+      "unit": "u144593f4237ade453f115b81",
+      "unit_title": "Manusia / 3.1 Gigi",
+      "native_title": "Membanding dan membezakan set gigi susu dan set gigi kekal.",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Membanding dan membezakan set gigi susu dan set gigi kekal."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-012",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Banding dua carta set gigi.",
+        "exploration": "Kira bilangan gigi dalam set lengkap dan kenal jenis.",
+        "explanation": "Jelaskan 20 gigi susu dan lazimnya 32 gigi kekal termasuk gigi bongsu.",
+        "elaboration": "Lengkapkan jadual persamaan/perbezaan dan urutan penggantian gigi.",
+        "evaluation": "Dua perbezaan dan satu persamaan tepat."
+      },
+      "proposed_objective_and_criterion": "Dua perbezaan dan satu persamaan tepat.",
+      "suggested_support": {
+        "bbm": "Carta gigi susu dan kekal, jadual banding beza",
+        "pak21": "Think-Pair-Share perbandingan carta",
+        "emk": "Kesihatan dan menghormati perbezaan individu",
+        "pemulihan": "Beri jadual bilangan gigi separa siap.",
+        "pengayaan": "Terangkan penggantian gigi susu dengan gigi kekal."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-010",
+      "unit": "u4e61060c43c0c24abab59450",
+      "unit_title": "Manusia / 3.2 Kelas Makanan",
+      "native_title": "Memberi contoh makanan bagi setiap kelas makanan.",
+      "dskp": [
+        {
+          "code": "3.2.1",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Memberi contoh makanan bagi setiap kelas makanan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-014",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Pamer kad nasi, telur, buah dan air.",
+        "exploration": "Padankan contoh kepada tujuh kelas berdasarkan jadual rujukan; satu makanan boleh mengandungi beberapa kelas.",
+        "explanation": "Namakan karbohidrat, protein, lemak, vitamin, mineral, pelawas dan air.",
+        "elaboration": "Bina peta tujuh kelas dengan contoh makanan.",
+        "evaluation": "Enam daripada tujuh contoh sesuai."
+      },
+      "proposed_objective_and_criterion": "Enam daripada tujuh contoh sesuai.",
+      "suggested_support": {
+        "bbm": "Kad makanan, carta tujuh kelas",
+        "pak21": "Stesen padanan makanan",
+        "emk": "Kesihatan dan pemakanan seimbang",
+        "pemulihan": "Beri satu contoh setiap kelas sebagai panduan.",
+        "pengayaan": "Cadangkan contoh makanan lain yang mengandungi lebih satu kelas."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-011",
+      "unit": "u4e61060c43c0c24abab59450",
+      "unit_title": "Manusia / 3.2 Kelas Makanan",
+      "native_title": "Menyatakan kepentingan makanan mengikut kelasnya kepada tubuh manusia.",
+      "dskp": [
+        {
+          "code": "3.2.2",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Mengitlak kepentingan makanan mengikut kelasnya kepada tubuh manusia."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-015",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Tanya mengapa tubuh memerlukan makanan pelbagai jenis.",
+        "exploration": "Padankan kad fungsi dengan kelas makanan.",
+        "explanation": "Jelaskan tenaga, tumbesaran, kesihatan dan peranan air serta pelawas.",
+        "elaboration": "Lengkapkan jadual fungsi tujuh kelas dan bincang dua situasi.",
+        "evaluation": "Lima daripada tujuh fungsi tepat."
+      },
+      "proposed_objective_and_criterion": "Lima daripada tujuh fungsi tepat.",
+      "suggested_support": {
+        "bbm": "Kad kelas makanan dan fungsi, jadual",
+        "pak21": "Padanan dan penerangan rakan",
+        "emk": "Penjagaan kesihatan",
+        "pemulihan": "Padankan fungsi kepada kelas dengan bank kata.",
+        "pengayaan": "Huraikan kepentingan dua kelas dalam satu hidangan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-019",
+      "unit": "u51bab31e7e96fab506c21361",
+      "unit_title": "Sistem Suria / 9.1",
+      "native_title": "Menyenaraikan ahli dalam Sistem Suria melalui pemerhatian menerusi pelbagai media.",
+      "dskp": [
+        {
+          "code": "9.1.1",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Menyenaraikan ahli dalam Sistem Suria melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-035",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Tunjuk ilustrasi Matahari dan planet.",
+        "exploration": "Padankan kad planet, satelit semula jadi, asteroid, meteoroid dan komet.",
+        "explanation": "Jelaskan kategori ahli Sistem Suria serta kedudukan Matahari.",
+        "elaboration": "Susun lapan planet dari Matahari dan padankan kategori lain.",
+        "evaluation": "Namakan lima kategori dan susun sekurang-kurangnya enam planet tepat."
+      },
+      "proposed_objective_and_criterion": "Namakan lima kategori dan susun sekurang-kurangnya enam planet tepat.",
+      "suggested_support": {
+        "bbm": "Kad ahli Sistem Suria, carta, gambar",
+        "pak21": "Peta pengelasan kumpulan",
+        "emk": "Minat meneroka sains angkasa",
+        "pemulihan": "Beri kad kategori dan gambar sepadan.",
+        "pengayaan": "Jelaskan beza planet dengan satelit semula jadi."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-023",
+      "unit": "u51bab31e7e96fab506c21361",
+      "unit_title": "Sistem Suria / 9.1",
+      "native_title": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "9.1.5",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-038",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Imbas urutan planet melalui kad gambar.",
+        "exploration": "Pilih bahan model dan susun kedudukan relatif planet.",
+        "explanation": "Jelaskan model tidak menunjukkan saiz dan jarak sebenar jika tidak berskala.",
+        "elaboration": "Bina model berlabel serta bentangkan orbit dan urutan.",
+        "evaluation": "Lapan planet disusun tepat dan satu batasan model dinyatakan."
+      },
+      "proposed_objective_and_criterion": "Lapan planet disusun tepat dan satu batasan model dinyatakan.",
+      "suggested_support": {
+        "bbm": "Kad planet, bahan model, carta",
+        "pak21": "Pembentangan model kumpulan",
+        "emk": "Kreativiti dan ketepatan model",
+        "pemulihan": "Sediakan templat urutan planet.",
+        "pengayaan": "Jelaskan satu sebab model bukan berskala."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-033",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Membuat inferens tentang kumpulan haiwan berdasarkan tabiat pemakanan.",
+      "dskp": [
+        {
+          "code": "4.1.3",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Membuat inferens tentang kumpulan haiwan berdasarkan tabiat pemakanan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-020",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Tunjuk gambar haiwan tidak dinamakan bersama bahan makanan.",
+        "exploration": "Pilih bukti daripada gambar dan rekod makanan.",
+        "explanation": "Terangkan inferens kumpulan berdasarkan bukti, bukan rupa semata-mata.",
+        "elaboration": "Banding tiga kes dan nyatakan bukti tambahan yang diperlukan.",
+        "evaluation": "Dua inferens munasabah dengan alasan."
+      },
+      "proposed_objective_and_criterion": "Dua inferens munasabah dengan alasan.",
+      "suggested_support": {
+        "bbm": "Kad gambar haiwan dan bukti pemakanan",
+        "pak21": "Think-Pair-Share inferens berdasarkan bukti",
+        "emk": "Menghargai kepelbagaian haiwan",
+        "pemulihan": "Beri pilihan kumpulan dengan gambar makanan.",
+        "pengayaan": "Nyatakan bukti tambahan sebelum membuat inferens."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-035",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Memberi contoh tumbuhan bagi setiap cara pembiakan.",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 59,
+          "sk": "5.1 Pembiakan Tumbuhan",
+          "sp": "Memberi contoh tumbuhan bagi setiap cara pembiakan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-022",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Pamer biji benih, daun dan gambar paku pakis.",
+        "exploration": "Padankan contoh kepada spora, biji benih, keratan batang, daun, anak pokok dan batang bawah tanah.",
+        "explanation": "Jelaskan enam cara dengan contoh yang disahkan pada bahan rujukan.",
+        "elaboration": "Bina stesen padanan gambar dan bahagian tumbuhan.",
+        "evaluation": "Lima daripada enam padanan tepat."
+      },
+      "proposed_objective_and_criterion": "Lima daripada enam padanan tepat.",
+      "suggested_support": {
+        "bbm": "Kad tumbuhan, contoh biji benih dan daun, carta pembiakan",
+        "pak21": "Stesen padanan contoh",
+        "emk": "Kelestarian tumbuhan",
+        "pemulihan": "Beri pasangan contoh dan cara pembiakan separa lengkap.",
+        "pengayaan": "Padankan contoh baharu kepada kaedah pembiakan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-026",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "unit_title": "Pengukuran",
+      "native_title": "Pengukuran — Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "dskp": [
+        {
+          "code": "6.1.5",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Mengukur isi padu cecair menggunakan alat dan teknik yang betul."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-028",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Banding bacaan silinder penyukat dari atas dan aras mata.",
+        "exploration": "Sukat air dalam silinder plastik di atas permukaan rata.",
+        "explanation": "Model bacaan bawah meniskus air pada aras mata.",
+        "elaboration": "Ukur tiga isi padu yang disediakan dan semak rakan.",
+        "evaluation": "Tiga bacaan dengan unit mL dan teknik betul."
+      },
+      "proposed_objective_and_criterion": "Tiga bacaan dengan unit mL dan teknik betul.",
+      "suggested_support": {
+        "bbm": "Silinder penyukat plastik, air, jadual bacaan",
+        "pak21": "Demonstrasi bergilir dan semak bacaan rakan",
+        "emk": "Ketelitian ukuran",
+        "pemulihan": "Tanda aras mata dan beri contoh bacaan meniskus.",
+        "pengayaan": "Banding dua bacaan yang dibuat dari sudut berlainan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-044",
+      "unit": "u6009a8215e69d23ec75e07ca",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menerangkan proses pencernaan.",
+      "dskp": [
+        {
+          "code": "3.3.1",
+          "printed_page": 56,
+          "sk": "3.3 Pencernaan",
+          "sp": "Memerihalkan proses pencernaan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-017",
+      "source_candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+      "phases": {
+        "engagement": "Perhatikan gambar makanan sebelum dan selepas dikunyah.",
+        "exploration": "Gunakan simulasi menghancurkan makanan dalam beg tertutup.",
+        "explanation": "Jelaskan makanan dipecahkan dan nutrien diserap; model hanya mewakili sebahagian proses.",
+        "elaboration": "Padankan tindakan gigi, lidah dan air liur dengan peringkat mulut.",
+        "evaluation": "Terangkan maksud pencernaan dan dua fungsi di mulut."
+      },
+      "proposed_objective_and_criterion": "Terangkan maksud pencernaan dan dua fungsi di mulut.",
+      "suggested_support": {
+        "bbm": "Gambar makanan, model beg tertutup, kad tindakan mulut",
+        "pak21": "Simulasi dan penerangan rakan",
+        "emk": "Kesihatan sistem pencernaan",
+        "pemulihan": "Susun gambar makanan sebelum dan selepas dikunyah.",
+        "pengayaan": "Terangkan batasan simulasi terhadap proses pencernaan sebenar."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-001",
+      "unit": "u3ad6e37021e9f56ab1f76f55",
+      "unit_title": "Mesin",
+      "native_title": "Mesin — Mengenal pasti beban, fulkrum dan daya pada tuas dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "10.1.1",
+          "printed_page": 72,
+          "sk": "10.1 Tuas",
+          "sp": "Mengenal pasti beban, fulkrum dan daya pada tuas dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-044",
+      "source_candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+      "phases": {
+        "engagement": "Pamer model pembaris di atas penyokong.",
+        "exploration": "Gerakkan pembaris dengan beban ringan dan kenal tiga bahagian.",
+        "explanation": "Jelaskan fulkrum sebagai titik putaran, beban dan daya yang dikenakan.",
+        "elaboration": "Label tiga contoh tuas bergambar.",
+        "evaluation": "Tiga label tepat pada sekurang-kurangnya dua model."
+      },
+      "proposed_objective_and_criterion": "Tiga label tepat pada sekurang-kurangnya dua model.",
+      "suggested_support": {
+        "bbm": "Pembaris, penyokong, beban ringan, kad tuas",
+        "pak21": "Demonstrasi dan label model berpasangan",
+        "emk": "Keselamatan dan ketelitian",
+        "pemulihan": "Beri rajah tuas dengan tiga anak panah.",
+        "pengayaan": "Label kedudukan fulkrum, beban dan daya pada model lain."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-004",
+      "unit": "u7cdf3e4f5877f205bc4da8e8",
+      "unit_title": "Mesin",
+      "native_title": "Mesin — Menjelas dengan contoh jenis dan kegunaan mesin ringkas dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "10.2.1",
+          "printed_page": 73,
+          "sk": "10.2 Mesin Ringkas dan Mesin Kompleks",
+          "sp": "Menjelas dengan contoh jenis dan kegunaan mesin ringkas dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-046",
+      "source_candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+      "phases": {
+        "engagement": "Pamer gambar tanjakan, takal, gear, skru dan alat lain.",
+        "exploration": "Padankan tujuh jenis mesin ringkas dengan contoh selamat.",
+        "explanation": "Jelaskan fungsi tuas, gear, takal, baji, skru, satah condong serta roda dan gandar.",
+        "elaboration": "Kelaskan tujuh contoh dan terangkan cara membantu kerja.",
+        "evaluation": "Enam padanan tepat dan dua fungsi."
+      },
+      "proposed_objective_and_criterion": "Enam padanan tepat dan dua fungsi.",
+      "suggested_support": {
+        "bbm": "Kad tujuh mesin ringkas, contoh model selamat",
+        "pak21": "Stesen klasifikasi mesin",
+        "emk": "Aplikasi teknologi dalam kehidupan",
+        "pemulihan": "Beri padanan jenis mesin dan gambar dengan petunjuk.",
+        "pengayaan": "Terangkan bagaimana dua mesin memudahkan kerja."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-017",
+      "unit": "u2ae0ae6548b867b93a7e0b36",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Menyatakan cahaya bergerak lurus dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 56,
+          "sk": "5.1 Cahaya Bergerak Lurus",
+          "sp": "Menyatakan cahaya bergerak lurus dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-022",
+      "source_candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+      "phases": {
+        "engagement": "Tunjuk lampu suluh dan tiga kad berlubang.",
+        "exploration": "Jajarkan lubang dan alihkan satu kad; perhatikan cahaya pada skrin.",
+        "explanation": "Jelaskan cahaya bergerak lurus dalam medium seragam.",
+        "elaboration": "Ulang dengan kedudukan lubang lain dan lakar laluan cahaya.",
+        "evaluation": "Dua pemerhatian dan satu kesimpulan tepat."
+      },
+      "proposed_objective_and_criterion": "Dua pemerhatian dan satu kesimpulan tepat.",
+      "suggested_support": {
+        "bbm": "Lampu suluh, tiga kad berlubang, skrin",
+        "pak21": "Penyiasatan berkumpulan",
+        "emk": "Keselamatan: elak suluh mata",
+        "pemulihan": "Beri susunan kad sejajar sebagai model.",
+        "pengayaan": "Ramal hasil apabila satu lubang dialihkan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-018",
+      "unit": "u2ae0ae6548b867b93a7e0b36",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Membanding dan membezakan bayang-bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "5.1.2",
+          "printed_page": 56,
+          "sk": "5.1 Cahaya Bergerak Lurus",
+          "sp": "Membanding dan membezakan bayang-bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-023",
+      "source_candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+      "phases": {
+        "engagement": "Ramal bayang plastik jernih, kertas surih dan kadbod.",
+        "exploration": "Uji bahan dengan jarak lampu, objek dan skrin sama.",
+        "explanation": "Jelaskan perbezaan penembusan cahaya dan kejelasan bayang.",
+        "elaboration": "Lengkapkan jadual hasil tiga bahan dan banding ramalan.",
+        "evaluation": "Tiga pengelasan berdasarkan bukti."
+      },
+      "proposed_objective_and_criterion": "Tiga pengelasan berdasarkan bukti.",
+      "suggested_support": {
+        "bbm": "Lampu suluh, kadbod, kertas surih, plastik jernih, skrin",
+        "pak21": "Penyiasatan dan perbandingan bukti",
+        "emk": "Ketelitian kawalan jarak",
+        "pemulihan": "Beri jadual tiga bahan dan gambar hasil.",
+        "pengayaan": "Ramal serta uji satu bahan baharu dengan jarak sama."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-033",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "unit_title": "Bunyi",
+      "native_title": "Bunyi — Memberi contoh fenomena dalam kehidupan harian yang menunjukkan bunyi boleh dipantulkan.",
+      "dskp": [
+        {
+          "code": "6.1.3",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Memberi contoh fenomena dalam kehidupan harian yang menunjukkan bunyi boleh dipantulkan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-030",
+      "source_candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+      "phases": {
+        "engagement": "Mainkan rakaman gema pada aras bunyi rendah.",
+        "exploration": "Banding bunyi asal dan gema melalui rakaman atau simulasi.",
+        "explanation": "Jelaskan bunyi boleh dipantulkan oleh permukaan; kaitkan dengan sonar.",
+        "elaboration": "Padankan gema, sonar dan ultrabunyi dengan contoh penggunaan.",
+        "evaluation": "Dua contoh fenomena pantulan dan satu penerangan."
+      },
+      "proposed_objective_and_criterion": "Dua contoh fenomena pantulan dan satu penerangan.",
+      "suggested_support": {
+        "bbm": "Rakaman gema pada aras rendah, gambar sonar",
+        "pak21": "Perbincangan fenomena dan padanan",
+        "emk": "Keselamatan pendengaran",
+        "pemulihan": "Beri gambar fenomena dengan kata kunci pantulan.",
+        "pengayaan": "Terangkan cara gema membantu mengenal kedudukan objek."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-042",
+      "unit": "u9b4f1a90be3123725197ed8a",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Menjelaskan dengan contoh sumber tenaga boleh dibaharui dan tenaga tidak boleh dibaharui melalui pemerhatian menerusi pelbagai media.",
+      "dskp": [
+        {
+          "code": "7.2.1",
+          "printed_page": 62,
+          "sk": "7.2 Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+          "sp": "Menjelaskan dengan contoh sumber tenaga boleh dibaharui dan tenaga tidak boleh dibaharui melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-034",
+      "source_candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+      "phases": {
+        "engagement": "Pamer gambar panel suria, turbin angin, arang batu dan petroleum.",
+        "exploration": "Asingkan kad sumber berdasarkan kebolehan pulih dalam skala masa manusia.",
+        "explanation": "Jelaskan perbezaan sumber boleh dibaharui dan terhad.",
+        "elaboration": "Banding enam sumber dengan contoh penggunaan.",
+        "evaluation": "Lima daripada enam pengelasan tepat."
+      },
+      "proposed_objective_and_criterion": "Lima daripada enam pengelasan tepat.",
+      "suggested_support": {
+        "bbm": "Kad gambar sumber tenaga, carta dua kategori",
+        "pak21": "Pengelasan dan penerangan berpasangan",
+        "emk": "Kelestarian tenaga",
+        "pemulihan": "Beri dua contoh bagi setiap kategori.",
+        "pengayaan": "Banding kegunaan dua sumber dan kesan penggunaan."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-057",
+      "unit": "u4f152d78897006d55f31a040",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Membezakan kandungan oksigen dan karbon dioksida semasa menarik dan menghembus nafas.",
+      "dskp": [
+        {
+          "code": "2.1.3",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Membezakan kandungan oksigen dan karbon dioksida semasa menarik dan menghembus nafas."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-008",
+      "source_candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+      "phases": {
+        "engagement": "Banding dua jadual komposisi udara sedutan dan hembusan.",
+        "exploration": "Cari perbezaan oksigen serta karbon dioksida pada data rujukan.",
+        "explanation": "Jelaskan udara hembusan masih mengandungi oksigen tetapi kurang daripada udara sedutan.",
+        "elaboration": "Lengkapkan carta perbandingan dua gas dan bentang.",
+        "evaluation": "Dua perbandingan kandungan gas tepat."
+      },
+      "proposed_objective_and_criterion": "Dua perbandingan kandungan gas tepat.",
+      "suggested_support": {
+        "bbm": "Jadual komposisi udara, carta dua gas",
+        "pak21": "Analisis data berpasangan",
+        "emk": "Penjagaan kesihatan pernafasan",
+        "pemulihan": "Beri anak panah naik/turun pada jadual separa lengkap.",
+        "pengayaan": "Jelaskan mengapa udara hembusan masih mengandungi oksigen."
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "NATIVE_ID_AND_DSKP_SCOPE_MATCHED_DRAFT"
+    }
+  ]
+}

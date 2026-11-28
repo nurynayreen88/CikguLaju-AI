@@ -1,0 +1,750 @@
+{
+  "status": "20_NATIVE_SINGLE_SP_DRAFTS_ONLY",
+  "parent_audit_head": "f3b1bc8e7ab53a5db70e070130d49b208fc60225",
+  "identity_head": "352fbfcc3e32d5854ffe14bd9145119cef0b5bfe",
+  "candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+  "total": 20,
+  "limitations": "Inherited DSKP text from prior source candidates. Ordinary RPH fields, duration, textbook pages, academic review and print QA remain pending. No release.",
+  "records": [
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-045",
+      "unit": "u98c3ff16bdad337f9d163bd5",
+      "unit_title": "Bahan",
+      "native_title": "Bahan — Menjelaskan melalui contoh sumber asas bagi bahan yang digunakan untuk membuat objek.",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 64,
+          "sk": "8.1 Sumber Asas Bahan",
+          "sp": "Menjelaskan melalui contoh sumber asas bagi bahan yang digunakan untuk membuat objek."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-036",
+      "objective": "Jelaskan empat contoh sumber asas bahan yang digunakan untuk membuat objek.",
+      "criterion": "Empat padanan objek, bahan dan sumber asas tepat.",
+      "phases": {
+        "engagement": "Guru pamer kertas, kain kapas, sudu logam dan bekas plastik.",
+        "exploration": "Murid teliti label bahan dan kad asal bahan daripada tumbuhan, haiwan, batuan atau petroleum.",
+        "explanation": "Guru bimbing hubungan sumber asas, bahan yang diproses dan objek siap.",
+        "elaboration": "Murid bina empat rantai sumber-bahan-objek menggunakan kad fakta.",
+        "evaluation": "Guru semak empat rantai dan alasan bagi satu padanan."
+      },
+      "support": {
+        "bbm": "Objek harian selamat, kad sumber dan bahan",
+        "pemulihan": "Gunakan dua rantai bergambar.",
+        "pengayaan": "Cari contoh objek yang mengandungi bahan daripada lebih satu sumber.",
+        "pak21": "Padanan kumpulan",
+        "emk": "Kelestarian dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-046",
+      "unit": "u98c3ff16bdad337f9d163bd5",
+      "unit_title": "Bahan",
+      "native_title": "Bahan — Mengelaskan objek berdasarkan sumber asasnya.",
+      "dskp": [
+        {
+          "code": "8.1.2",
+          "printed_page": 64,
+          "sk": "8.1 Sumber Asas Bahan",
+          "sp": "Mengelaskan objek berdasarkan sumber asasnya."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-036",
+      "objective": "Kelaskan sekurang-kurangnya enam daripada lapan objek mengikut sumber asas bahan yang dinyatakan.",
+      "criterion": "Enam pengelasan tepat berdasarkan maklumat bahan pada kad.",
+      "phases": {
+        "engagement": "Guru tunjuk dua objek serupa yang diperbuat daripada bahan berlainan.",
+        "exploration": "Murid asing lapan kad objek dengan maklumat bahan yang jelas kepada kumpulan sumber asas.",
+        "explanation": "Guru jelaskan bahawa pengelasan bergantung pada bahan sebenar, bukan rupa objek sahaja.",
+        "elaboration": "Murid tukar kad dengan rakan dan semak satu contoh objek komposit.",
+        "evaluation": "Guru nilai enam padanan tepat daripada lapan dan satu alasan."
+      },
+      "support": {
+        "bbm": "Kad objek dan maklumat bahan, carta empat kumpulan",
+        "pemulihan": "Beri empat kad dengan petunjuk sumber.",
+        "pengayaan": "Asingkan komponen objek campuran mengikut sumber masing-masing.",
+        "pak21": "Card sorting",
+        "emk": "Ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-047",
+      "unit": "u98c3ff16bdad337f9d163bd5",
+      "unit_title": "Bahan",
+      "native_title": "Bahan — Menjelaskan pemerhatian tentang sumber asas bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "8.1.3",
+          "printed_page": 64,
+          "sk": "8.1 Sumber Asas Bahan",
+          "sp": "Menjelaskan pemerhatian tentang sumber asas bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-036",
+      "objective": "Komunikasikan tiga pemerhatian tentang sumber asas bahan melalui satu medium.",
+      "criterion": "Tiga rantai sumber-bahan-objek yang tepat dalam hasil bergambar atau lisan.",
+      "phases": {
+        "engagement": "Guru paparkan carta asal bahan yang belum lengkap.",
+        "exploration": "Murid teliti tiga objek dan kad fakta bahan untuk memperoleh maklumat sumbernya.",
+        "explanation": "Guru bimbing penggunaan anak panah dari sumber kepada bahan dan objek.",
+        "elaboration": "Murid hasilkan carta kreatif yang membezakan maklumat diperhatikan daripada maklumat rujukan.",
+        "evaluation": "Guru semak tiga rantai dan label sumber pada hasil."
+      },
+      "support": {
+        "bbm": "Kad fakta, objek harian, kertas carta",
+        "pemulihan": "Gunakan rajah separa lengkap.",
+        "pengayaan": "Banding dua bahan yang boleh digunakan untuk objek sama.",
+        "pak21": "Galeri carta",
+        "emk": "Komunikasi dan kelestarian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-049",
+      "unit": "u84120b91c5a44737fdc6f01e",
+      "unit_title": "Bahan",
+      "native_title": "Bahan — Mereka cipta objek dengan mengaplikasikan pengetahuan tentang sifat bahan.",
+      "dskp": [
+        {
+          "code": "8.2.2",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Mereka cipta objek dengan mengaplikasikan pengetahuan tentang sifat bahan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-040",
+      "objective": "Reka cipta satu objek ringkas dengan memilih bahan berdasarkan sifat yang diperlukan.",
+      "criterion": "Model bekas pelindung kertas memenuhi ujian percikan air ringan dan murid menerangkan dua pilihan bahan.",
+      "phases": {
+        "engagement": "Guru beri cabaran melindungi sekeping kertas daripada percikan air.",
+        "exploration": "Murid teliti sampel bahan, lakar reka bentuk dan pilih bahan berdasarkan sifat yang sesuai.",
+        "explanation": "Guru bimbing pembinaan model selamat tanpa alat tajam yang dikendalikan murid.",
+        "elaboration": "Murid uji model dengan sedikit air di atas dulang, perbaik sambungan atau pemilihan bahan.",
+        "evaluation": "Guru semak hasil ujian dan dua alasan pemilihan bahan."
+      },
+      "support": {
+        "bbm": "Kertas, plastik guna semula bersih, pita, dulang, air",
+        "pemulihan": "Sediakan pola dan dua pilihan bahan.",
+        "pengayaan": "Uji reka bentuk alternatif dengan jumlah air yang sama.",
+        "pak21": "Reka cipta berkumpulan",
+        "emk": "Kreativiti dan guna semula"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-050",
+      "unit": "u84120b91c5a44737fdc6f01e",
+      "unit_title": "Bahan",
+      "native_title": "Bahan — Menaakul pemilihan jenis bahan yang digunakan dalam mereka cipta objek.",
+      "dskp": [
+        {
+          "code": "8.2.3",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Menaakul pemilihan jenis bahan yang digunakan dalam mereka cipta objek."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-040",
+      "objective": "Menaakul pemilihan dua bahan dalam mereka cipta objek mengikut fungsi.",
+      "criterion": "Murid mengaitkan dua sifat bahan dengan keperluan objek dan memberi alasan berasaskan ujian atau kad fakta.",
+      "phases": {
+        "engagement": "Guru tunjuk dua model bekas dengan bahan yang berbeza.",
+        "exploration": "Murid banding rekod ujian atau kad data kekuatan, kelenturan dan kebolehtelapan air bagi bahan yang tersedia.",
+        "explanation": "Guru bimbing pemilihan bahan berdasarkan fungsi, bukan rupa semata-mata.",
+        "elaboration": "Murid pilih bahan untuk satu objek baharu dan pertahankan dua pilihan kepada rakan.",
+        "evaluation": "Guru semak dua alasan yang menghubungkan sifat bahan dengan fungsi objek."
+      },
+      "support": {
+        "bbm": "Model atau gambar, kad sifat bahan",
+        "pemulihan": "Gunakan jadual sifat-fungsi dengan contoh.",
+        "pengayaan": "Bincang pertukaran antara kekuatan, berat dan kebolehan guna semula.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Pemikiran kritis dan kelestarian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-051",
+      "unit": "u84120b91c5a44737fdc6f01e",
+      "unit_title": "Bahan",
+      "native_title": "Bahan — Menjelaskan pemerhatian tentang sifat bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "8.2.4",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Menjelaskan pemerhatian tentang sifat bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-040",
+      "objective": "Sampaikan tiga pemerhatian tentang sifat bahan berdasarkan data aktiviti.",
+      "criterion": "Hasil murid mengandungi tiga catatan sifat, contoh bahan dan bukti ujian yang sepadan.",
+      "phases": {
+        "engagement": "Guru paparkan hasil ujian dua sampel bahan.",
+        "exploration": "Murid pilih tiga catatan daripada rekod ujian kelas atau data contoh berlabel.",
+        "explanation": "Guru jelaskan cara menyatakan sifat berdasarkan keputusan ujian, bukan andaian.",
+        "elaboration": "Murid hasilkan jadual bergambar atau laporan lisan dengan tiga contoh bahan.",
+        "evaluation": "Guru semak ketepatan tiga sifat serta bukti yang dinyatakan."
+      },
+      "support": {
+        "bbm": "Rekod ujian, sampel bahan, kertas",
+        "pemulihan": "Beri jadual separa lengkap.",
+        "pengayaan": "Cadangkan kegunaan sesuai bagi satu bahan berdasarkan dua sifat.",
+        "pak21": "Galeri hasil",
+        "emk": "Kejujuran data"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-052",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Memerihalkan daya tarikan graviti bumi berdasarkan pemerhatian dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "9.1.1",
+          "printed_page": 68,
+          "sk": "9.1 Graviti Bumi",
+          "sp": "Memerihalkan daya tarikan graviti bumi berdasarkan pemerhatian dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-041",
+      "objective": "Perihalkan tarikan graviti Bumi berdasarkan dua pemerhatian objek dilepaskan.",
+      "criterion": "Murid merekod arah jatuhan dua objek dan menyatakan tarikan graviti ke arah Bumi.",
+      "phases": {
+        "engagement": "Guru lepaskan bola span dari aras rendah ke atas dulang.",
+        "exploration": "Murid lepaskan dua objek ringan dari ketinggian selamat dan catat arah gerakan.",
+        "explanation": "Guru kaitkan jatuhan dengan daya tarikan graviti ke arah pusat Bumi; elak menyimpulkan semua objek jatuh pada kadar sama daripada ujian ini.",
+        "elaboration": "Murid perhatikan objek yang disokong meja kemudian dilepaskan secara selamat.",
+        "evaluation": "Guru semak dua pemerhatian arah serta penerangan graviti."
+      },
+      "support": {
+        "bbm": "Bola span, pemadam ringan, dulang",
+        "pemulihan": "Gunakan rajah anak panah arah jatuhan.",
+        "pengayaan": "Bezakan graviti daripada kesan rintangan udara secara kualitatif.",
+        "pak21": "Inkuiri pasangan",
+        "emk": "Keselamatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-053",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Mengitlak bahawa semua objek di Bumi boleh berada pada kedudukannya dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "9.1.2",
+          "printed_page": 68,
+          "sk": "9.1 Graviti Bumi",
+          "sp": "Mengitlak bahawa semua objek di Bumi boleh berada pada kedudukannya dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-041",
+      "objective": "Rumuskan peranan graviti dalam mengekalkan objek berhampiran permukaan Bumi.",
+      "criterion": "Murid memberi dua contoh objek kekal pada kedudukan dan menerangkan graviti bersama sokongan apabila sesuai.",
+      "phases": {
+        "engagement": "Guru tunjuk buku di atas meja dan gambar manusia di permukaan glob.",
+        "exploration": "Murid banding objek yang disokong dengan objek ringan yang dilepaskan dan teliti anak panah pada rajah glob.",
+        "explanation": "Guru jelaskan graviti menarik objek ke Bumi; objek yang pegun di atas permukaan turut menerima daya sokongan.",
+        "elaboration": "Murid letakkan anak panah arah graviti pada beberapa lokasi permukaan glob.",
+        "evaluation": "Guru semak dua contoh dan rumusan bahawa graviti membantu objek kekal berhampiran Bumi."
+      },
+      "support": {
+        "bbm": "Glob, kad objek, bola span, meja",
+        "pemulihan": "Gunakan rajah anak panah separa lengkap.",
+        "pengayaan": "Terangkan mengapa objek boleh bergerak walaupun graviti masih bertindak.",
+        "pak21": "Demonstrasi kumpulan",
+        "emk": "Ketelitian konsep"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-054",
+      "unit": "u22ff6928803c69c31f833ec1",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menjelaskan pemerhatian tentang tarikan graviti bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "9.1.3",
+          "printed_page": 68,
+          "sk": "9.1 Graviti Bumi",
+          "sp": "Menjelaskan pemerhatian tentang tarikan graviti bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-041",
+      "objective": "Komunikasikan tiga pemerhatian mengenai tarikan graviti Bumi.",
+      "criterion": "Hasil mengandungi tiga catatan berasaskan demonstrasi dan satu rajah arah tarikan yang tepat.",
+      "phases": {
+        "engagement": "Guru paparkan gambar bola dilepaskan dan objek di atas meja.",
+        "exploration": "Murid teliti rekod aktiviti graviti atau ulang demonstrasi dengan objek ringan.",
+        "explanation": "Guru bimbing beza perkara yang dilihat dengan penjelasan daya tarikan.",
+        "elaboration": "Murid hasilkan lakaran beranak panah atau penerangan lisan berdasarkan bukti.",
+        "evaluation": "Guru semak tiga catatan dan arah tarikan dalam rajah."
+      },
+      "support": {
+        "bbm": "Rekod demonstrasi, glob, bola span, kertas",
+        "pemulihan": "Beri bingkai ayat pemerhatian.",
+        "pengayaan": "Banding arah graviti pada dua lokasi di permukaan glob.",
+        "pak21": "Galeri rajah",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-055",
+      "unit": "u4f152d78897006d55f31a040",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Mengenal pasti organ yang terlibat dalam proses pernafasan.",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Mengenal pasti organ yang terlibat dalam proses pernafasan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-007",
+      "objective": "Kenal pasti tiga organ utama yang terlibat dalam pernafasan manusia.",
+      "criterion": "Murid melabel hidung, trakea dan peparu pada rajah dengan tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk rajah badan manusia dan tanya bahagian yang terlibat semasa bernafas.",
+        "exploration": "Murid perhatikan rajah sistem pernafasan dan padankan tiga kad organ.",
+        "explanation": "Guru terangkan kedudukan hidung, trakea dan peparu serta peranan ringkas setiap organ.",
+        "elaboration": "Murid lengkapkan rajah kosong dan semak label dengan pasangan.",
+        "evaluation": "Guru semak tiga label secara individu."
+      },
+      "support": {
+        "bbm": "Rajah sistem pernafasan, kad label",
+        "pemulihan": "Beri rajah dengan garis penunjuk dan pilihan label.",
+        "pengayaan": "Kenal pasti cabang saluran udara ke peparu pada rajah tambahan.",
+        "pak21": "Padanan pasangan",
+        "emk": "Kesihatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-056",
+      "unit": "u4f152d78897006d55f31a040",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Memerihalkan proses pernafasan dari aspek laluan udara dan pertukaran gas yang berlaku di peparu melalui pemerhatian menerusi pelbagai media.",
+      "dskp": [
+        {
+          "code": "2.1.2",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Memerihalkan proses pernafasan dari aspek laluan udara dan pertukaran gas yang berlaku di peparu melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-007",
+      "objective": "Perihalkan laluan udara dan pertukaran gas di peparu.",
+      "criterion": "Murid menyusun laluan udara melalui hidung, trakea dan peparu serta menyatakan oksigen masuk ke darah dan karbon dioksida berpindah dari darah ke peparu.",
+      "phases": {
+        "engagement": "Guru paparkan animasi atau rajah udara masuk ketika bernafas.",
+        "exploration": "Murid susun kad organ dan teliti rajah pertukaran gas berlabel.",
+        "explanation": "Guru jelaskan laluan udara serta arah pertukaran oksigen dan karbon dioksida di peparu.",
+        "elaboration": "Murid lengkapkan dua jenis anak panah pada rajah dan terangkan aliran kepada rakan.",
+        "evaluation": "Guru semak urutan organ dan kedua-dua arah pertukaran gas."
+      },
+      "support": {
+        "bbm": "Rajah sistem pernafasan dan pertukaran gas, kad organ",
+        "pemulihan": "Gunakan rajah dengan anak panah separa lengkap.",
+        "pengayaan": "Bezakan laluan udara daripada perjalanan gas dalam darah.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Literasi kesihatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-058",
+      "unit": "u4f152d78897006d55f31a040",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Memerihalkan pergerakan dada semasa menarik dan menghembus nafas dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "2.1.4",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Memerihalkan pergerakan dada semasa menarik dan menghembus nafas dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-009",
+      "objective": "Perihalkan perubahan pergerakan dada ketika menarik dan menghembus nafas.",
+      "criterion": "Murid merekod dada mengembang ketika menarik nafas dan mengempis ketika menghembus nafas berdasarkan pemerhatian biasa.",
+      "phases": {
+        "engagement": "Guru tunjuk dua rajah kedudukan dada semasa pernafasan.",
+        "exploration": "Murid perhatikan pergerakan dada sendiri semasa bernafas secara biasa tanpa menahan nafas atau memaksa pernafasan.",
+        "explanation": "Guru bimbing perbandingan perubahan ruang dada dan arah udara.",
+        "elaboration": "Murid padankan dua lakaran dengan fasa pernafasan dan terangkan kepada pasangan.",
+        "evaluation": "Guru semak dua catatan serta padanan arah udara."
+      },
+      "support": {
+        "bbm": "Rajah dada, jadual pemerhatian",
+        "pemulihan": "Gunakan dua gambar berlabel.",
+        "pengayaan": "Terangkan bagaimana perubahan ruang dada membantu udara masuk atau keluar.",
+        "pak21": "Pemerhatian pasangan",
+        "emk": "Kesihatan dan keselamatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-059",
+      "unit": "u4f152d78897006d55f31a040",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Mengitlak bahawa kadar pernafasan bergantung kepada jenis aktiviti yang dilakukan.",
+      "dskp": [
+        {
+          "code": "2.1.5",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Mengitlak bahawa kadar pernafasan bergantung kepada jenis aktiviti yang dilakukan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-009",
+      "objective": "Bandingkan kadar pernafasan semasa rehat dan selepas aktiviti ringan yang sesuai.",
+      "criterion": "Murid merekod dua kadar daripada pemerhatian atau data contoh dan merumuskan kaitan aktiviti dengan kadar pernafasan.",
+      "phases": {
+        "engagement": "Guru tanya mengapa seseorang bernafas lebih cepat selepas bergerak.",
+        "exploration": "Murid yang sesuai dan rela mengira pernafasan semasa rehat dan selepas berjalan ringan; murid lain gunakan data contoh berlabel.",
+        "explanation": "Guru bimbing perbandingan pada tempoh kiraan sama tanpa menilai kesihatan individu.",
+        "elaboration": "Murid plot atau susun dua bacaan dan banding dengan satu set data contoh tambahan.",
+        "evaluation": "Guru semak dua bacaan serta rumusan kadar lazimnya meningkat ketika aktiviti lebih aktif."
+      },
+      "support": {
+        "bbm": "Jam randik, jadual, data contoh",
+        "pemulihan": "Gunakan data bergambar dan panduan kiraan.",
+        "pengayaan": "Cadang cara memastikan tempoh dan keadaan pengukuran setara.",
+        "pak21": "Inkuiri berpandu",
+        "emk": "Keselamatan dan menghormati perbezaan individu"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-060",
+      "unit": "u4f152d78897006d55f31a040",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menjelaskan pemerhatian tentang proses pernafasan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "2.1.6",
+          "printed_page": 47,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Menjelaskan pemerhatian tentang proses pernafasan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-009",
+      "objective": "Komunikasikan tiga pemerhatian atau maklumat berasaskan sumber tentang proses pernafasan.",
+      "criterion": "Hasil murid menunjukkan laluan udara, pergerakan dada dan satu dapatan kadar pernafasan dengan label tepat.",
+      "phases": {
+        "engagement": "Guru paparkan carta pernafasan yang belum lengkap.",
+        "exploration": "Murid pilih maklumat daripada rajah organ dan rekod aktiviti pernafasan terdahulu atau data contoh berlabel.",
+        "explanation": "Guru bimbing pemisahan data pemerhatian daripada maklumat rujukan.",
+        "elaboration": "Murid bina poster mini atau penerangan lisan dengan tiga bahagian maklumat.",
+        "evaluation": "Guru semak tiga bahagian dan ketepatan istilah serta label data."
+      },
+      "support": {
+        "bbm": "Rajah organ, rekod aktiviti, kertas",
+        "pemulihan": "Beri poster separa lengkap.",
+        "pengayaan": "Terangkan hubungan aktiviti fizikal ringan dengan keperluan oksigen secara ringkas.",
+        "pak21": "Galeri hasil",
+        "emk": "Komunikasi dan kesihatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-061",
+      "unit": "uebaab7a1ad33766c70aa652b",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menyatakan maksud perkumuhan dan penyahtinjaan.",
+      "dskp": [
+        {
+          "code": "2.2.1",
+          "printed_page": 48,
+          "sk": "2.2 Perkumuhan dan Penyahtinjaan",
+          "sp": "Menyatakan maksud perkumuhan dan penyahtinjaan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-010",
+      "objective": "Bezakan maksud perkumuhan dan penyahtinjaan dengan tepat.",
+      "criterion": "Murid menyatakan kedua-dua definisi dan mengelaskan tiga contoh sisa dengan betul.",
+      "phases": {
+        "engagement": "Guru tunjuk kad air kencing, peluh dan tinja tanpa bahan sebenar.",
+        "exploration": "Murid teliti kad asal sisa daripada proses badan atau makanan tidak tercerna.",
+        "explanation": "Guru jelaskan perkumuhan menyingkirkan hasil buangan metabolisme manakala penyahtinjaan menyingkirkan tinja daripada sistem pencernaan.",
+        "elaboration": "Murid padankan contoh dengan proses dan jelaskan perbezaannya.",
+        "evaluation": "Guru semak dua definisi serta tiga pengelasan."
+      },
+      "support": {
+        "bbm": "Kad gambar dan definisi",
+        "pemulihan": "Gunakan carta dua lajur dengan satu contoh.",
+        "pengayaan": "Jelaskan mengapa karbon dioksida juga hasil perkumuhan.",
+        "pak21": "Card sorting",
+        "emk": "Kebersihan dan literasi kesihatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-062",
+      "unit": "uebaab7a1ad33766c70aa652b",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Mengenal pasti organ dan hasil bagi perkumuhan.",
+      "dskp": [
+        {
+          "code": "2.2.2",
+          "printed_page": 48,
+          "sk": "2.2 Perkumuhan dan Penyahtinjaan",
+          "sp": "Mengenal pasti organ dan hasil bagi perkumuhan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-010",
+      "objective": "Kenal pasti tiga organ perkumuhan dan hasilnya.",
+      "criterion": "Murid memadankan ginjal dengan air kencing, kulit dengan peluh dan peparu dengan karbon dioksida serta wap air.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga rajah organ tanpa label.",
+        "exploration": "Murid padankan kad organ dengan kad hasil perkumuhan berdasarkan rajah rujukan.",
+        "explanation": "Guru jelaskan peranan ringkas setiap organ tanpa menyamakan usus dengan organ perkumuhan utama.",
+        "elaboration": "Murid lengkapkan carta organ-hasil dan semak dengan pasangan.",
+        "evaluation": "Guru semak tiga padanan termasuk hasil perkumuhan peparu yang sesuai."
+      },
+      "support": {
+        "bbm": "Rajah ginjal, kulit, peparu, kad hasil",
+        "pemulihan": "Beri kad bergambar dengan pilihan jawapan.",
+        "pengayaan": "Bezakan organ menghasilkan atau menyingkirkan hasil buangan daripada laluan keluarnya.",
+        "pak21": "Padanan pasangan",
+        "emk": "Kesihatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-063",
+      "unit": "uebaab7a1ad33766c70aa652b",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Membuat inferens kepentingan penyingkiran hasil perkumuhan dan hasil penyahtinjaan.",
+      "dskp": [
+        {
+          "code": "2.2.3",
+          "printed_page": 48,
+          "sk": "2.2 Perkumuhan dan Penyahtinjaan",
+          "sp": "Membuat inferens kepentingan penyingkiran hasil perkumuhan dan hasil penyahtinjaan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-011",
+      "objective": "Buat inferens dua kepentingan menyingkirkan hasil perkumuhan dan tinja.",
+      "criterion": "Murid menghubungkait dua situasi dengan kepentingan penyingkiran sisa secara munasabah.",
+      "phases": {
+        "engagement": "Guru paparkan rajah badan yang menyingkirkan hasil buangan.",
+        "exploration": "Murid teliti kad situasi sisa metabolisme terkumpul dan kebiasaan membuang air besar terganggu.",
+        "explanation": "Guru bimbing inferens bahawa penyingkiran sisa membantu fungsi badan dan keselesaan, tanpa meminta murid berkongsi maklumat peribadi.",
+        "elaboration": "Murid susun kad sebab-kesan dan cadang amalan kebersihan umum.",
+        "evaluation": "Guru semak dua inferens berasaskan situasi yang diberi."
+      },
+      "support": {
+        "bbm": "Kad situasi fiksyen, rajah ringkas",
+        "pemulihan": "Beri dua pilihan sebab bagi setiap situasi.",
+        "pengayaan": "Bezakan kepentingan penyingkiran sisa metabolisme dengan penyahtinjaan.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Kesihatan dan privasi"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-064",
+      "unit": "uebaab7a1ad33766c70aa652b",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menjelaskan pemerhatian tentang perkumuhan dan penyahtinjaan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "2.2.4",
+          "printed_page": 48,
+          "sk": "2.2 Perkumuhan dan Penyahtinjaan",
+          "sp": "Menjelaskan pemerhatian tentang perkumuhan dan penyahtinjaan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-011",
+      "objective": "Komunikasikan perkumuhan dan penyahtinjaan melalui carta atau penerangan kreatif.",
+      "criterion": "Hasil murid menunjukkan tiga padanan organ-hasil dan satu penerangan penyahtinjaan yang tepat.",
+      "phases": {
+        "engagement": "Guru paparkan dua carta proses tanpa tajuk.",
+        "exploration": "Murid teliti rajah organ dan kad sisa untuk mengumpulkan maklumat yang sesuai.",
+        "explanation": "Guru bimbing pengasingan sisa metabolisme daripada tinja dalam carta.",
+        "elaboration": "Murid hasilkan peta dua lajur atau penerangan lisan berlabel.",
+        "evaluation": "Guru semak tiga padanan dan perbezaan kedua-dua proses."
+      },
+      "support": {
+        "bbm": "Rajah organ, kad hasil, kertas",
+        "pemulihan": "Gunakan carta separa lengkap.",
+        "pengayaan": "Tambah satu sebab penting menyingkirkan sisa bagi setiap proses.",
+        "pak21": "Galeri hasil",
+        "emk": "Komunikasi dan kebersihan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-065",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menyatakan manusia bergerak balas apabila organ deria menerima rangsangan.",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menyatakan manusia bergerak balas apabila organ deria menerima rangsangan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-012",
+      "objective": "Nyatakan manusia bergerak balas apabila organ deria menerima rangsangan.",
+      "criterion": "Murid menyatakan hubungan rangsangan, organ deria dan gerak balas serta memberi dua contoh.",
+      "phases": {
+        "engagement": "Guru tunjuk kad isyarat visual yang mudah dilihat.",
+        "exploration": "Murid perhatikan demonstrasi isyarat warna dan bunyi lembut serta respons sukarela.",
+        "explanation": "Guru bimbing hubungan rangsangan yang diterima oleh organ deria dengan gerak balas badan.",
+        "elaboration": "Murid susun dua rantai rangsangan-organ-gerak balas daripada situasi bergambar.",
+        "evaluation": "Guru semak pernyataan umum dan dua rantai tepat."
+      },
+      "support": {
+        "bbm": "Kad warna, bunyi lembut, kad situasi",
+        "pemulihan": "Gunakan satu contoh berpandu dahulu.",
+        "pengayaan": "Kenal pasti lebih satu rangsangan dalam satu situasi.",
+        "pak21": "Simulasi pasangan",
+        "emk": "Keselamatan deria"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-066",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menjelas dengan contoh gerak balas manusia terhadap rangsangan dalam kehidupan harian.",
+      "dskp": [
+        {
+          "code": "2.3.2",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menjelas dengan contoh gerak balas manusia terhadap rangsangan dalam kehidupan harian."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-012",
+      "objective": "Jelaskan tiga contoh gerak balas manusia terhadap rangsangan dalam kehidupan harian.",
+      "criterion": "Tiga contoh dengan rangsangan, organ deria dan gerak balas yang munasabah.",
+      "phases": {
+        "engagement": "Guru paparkan gambar lampu isyarat dan seseorang mendengar panggilan.",
+        "exploration": "Murid teliti kad situasi penglihatan, pendengaran dan sentuhan yang selamat.",
+        "explanation": "Guru bimbing penerangan setiap contoh menggunakan urutan rangsangan dan gerak balas.",
+        "elaboration": "Murid lakonkan situasi selamat atau huraikan contoh tanpa rangsangan menyakitkan.",
+        "evaluation": "Guru semak tiga contoh dan hubungan sebab-akibat."
+      },
+      "support": {
+        "bbm": "Kad situasi harian, carta urutan",
+        "pemulihan": "Beri pilihan organ deria dan respons.",
+        "pengayaan": "Banding dua gerak balas yang berbeza terhadap rangsangan sama.",
+        "pak21": "Main peranan berpandu",
+        "emk": "Keselamatan dan komunikasi"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    }
+  ]
+}
