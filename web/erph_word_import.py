@@ -40,6 +40,26 @@ def extract_docx(raw):
     except (BadZipFile,ET.ParseError,RuntimeError,KeyError,OSError) as exc:
         raise ValueError('Fail Word tidak dapat dibaca.') from exc
     fields={key:'' for key in ('title','standard_content','standard_learning','objectives','activities','reflection')}
+    # The module's own single-record Word export is paragraph based. Import
+    # its six content sections only, never infer slot or entitlement.
+    body=root.find('w:body',NS)
+    if body is None:
+        raise ValueError('Struktur Word tidak disokong.')
+    paragraphs=[text_of(p) if p.tag!=W+'p' else ''.join(
+        n.text or '' if n.tag==W+'t' else '\n' if n.tag==W+'br' else '\t' if n.tag==W+'tab' else ''
+        for n in p.iter()) for p in body.findall('w:p',NS)]
+    if paragraphs and paragraphs[0]=='REKOD e-RPH':
+        if body.findall('w:tbl',NS) or paragraphs.count('REKOD e-RPH')!=1:
+            raise ValueError('Import satu rekod e-RPH sahaja pada satu masa.')
+        labels=('Tajuk','Standard Kandungan / Kandungan Pembelajaran',
+                'Standard Pembelajaran','Objektif Pembelajaran','Aktiviti PdP','Refleksi')
+        keys=('title','standard_content','standard_learning','objectives','activities','reflection')
+        # Export contract: title, subject, slot metadata, status metadata,
+        # followed by exactly six label/value pairs. No heuristic splitting.
+        if len(paragraphs)!=16 or tuple(paragraphs[4::2])!=labels:
+            raise ValueError('Susun atur eksport e-RPH telah berubah. Isi secara manual.')
+        fields.update(zip(keys,paragraphs[5::2]))
+        return checked_fields(fields)
     other=[]
     phase=False
     for row in root.findall('.//w:tbl/w:tr',NS):
@@ -73,6 +93,9 @@ def extract_docx(raw):
             # Fail closed on unknown populated rows. Do not silently drop content.
             raise ValueError('Susun atur Word belum disokong sepenuhnya. Isi secara manual.')
     fields['activities']='\n\n'.join(other)
+    return checked_fields(fields)
+
+def checked_fields(fields):
     if not all(fields[k] for k in ('title','standard_learning','objectives','activities')):
         raise ValueError('Susun atur Word belum disokong. Isi secara manual.')
     limits=dict(title=200,standard_content=4000,standard_learning=4000,objectives=4000,activities=12000,reflection=4000)
