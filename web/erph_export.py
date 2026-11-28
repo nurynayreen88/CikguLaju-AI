@@ -3,6 +3,7 @@ from datetime import date
 from html import escape
 from io import BytesIO
 from unicodedata import normalize
+from textwrap import wrap
 
 MAX_RECORDS=80
 MAX_CHARS=300000
@@ -91,19 +92,33 @@ def pdf(rows):
     try:
         for row in rows:
             first=count
-            html='<h1>REKOD e-RPH</h1><h2>'+h(row['subject_name'])+'</h2>'
-            html+='<p>'+h('  |  '.join(header(row)[:3]))+'<br/>'+h('  |  '.join(header(row)[3:]))+'</p>'
-            html+=''.join('<h3>'+h(label)+'</h3><p>'+h(value)+'</p>' for label,value in sections(row))
-            story=fitz.Story(html=html,user_css='body{font-family:sans-serif;font-size:10pt;line-height:1.1}h1{font-size:15pt;color:#24566b;text-align:center}h2{font-size:13pt}h3{font-size:11pt;color:#24566b;margin-bottom:2pt}p{margin-top:0;margin-bottom:4pt;overflow-wrap:break-word}')
-            more=True
-            while more:
+            # Lay out independent, bounded pages: MuPDF Story continuation can
+            # omit text for long paragraphs. The final exact-text check stays on.
+            nodes=['<h1>REKOD e-RPH</h1>','<h2>'+h(row['subject_name'])+'</h2>',
+                   '<p>'+h('  |  '.join(header(row)[:3]))+'<br/>'+h('  |  '.join(header(row)[3:]))+'</p>']
+            for label,value in sections(row):
+                nodes.append('<h3>'+h(label)+'</h3>')
+                for line in value.replace('\r\n','\n').replace('\r','\n').split('\n'):
+                    parts=wrap(line,width=80,break_long_words=False,break_on_hyphens=False,replace_whitespace=False) or ['']
+                    nodes.extend('<p class="line">'+(h(part) if part else '&nbsp;')+'</p>' for part in parts)
+            css='body{font-family:sans-serif;font-size:10pt;line-height:1.1}h1{font-size:15pt;color:#24566b;text-align:center}h2{font-size:13pt}h3{font-size:11pt;color:#24566b;margin-bottom:2pt}p{margin-top:0;margin-bottom:4pt;overflow-wrap:break-word}p.line{margin:0}'
+            while nodes:
+                size=min(30,len(nodes))
+                while size:
+                    if size<len(nodes) and nodes[size-1].startswith('<h'):
+                        size-=1
+                        continue
+                    story=fitz.Story(html=''.join(nodes[:size]),user_css=css)
+                    more,filled=story.place(rect+(0,4,0,-4))
+                    if not more and not fitz.Rect(filled).is_empty:break
+                    size-=1
+                if not size:raise ValueError('Kandungan PDF tidak muat. Gunakan Word.')
                 count+=1
                 if count>200:raise ValueError('Eksport terlalu panjang; pilih rekod harian.')
-                more,filled=story.place(rect)
-                if fitz.Rect(filled).is_empty:raise ValueError('Kandungan PDF tidak muat.')
                 device=writer.begin_page(page)
                 story.draw(device)
                 writer.end_page()
+                del nodes[:size]
             ranges.append((first,count,row))
     finally:
         writer.close()
@@ -112,7 +127,7 @@ def pdf(rows):
         for first,last,row in ranges:
             expected=['REKOD e-RPH',row['subject_name'],'  |  '.join(header(row)[:3]),'  |  '.join(header(row)[3:])]
             for label,value in sections(row):expected.extend((label,value))
-            actual=''.join(doc[i].get_text() for i in range(first,last))
+            actual=''.join(doc[i].get_text(flags=fitz.TEXTFLAGS_TEXT & ~fitz.TEXT_PRESERVE_LIGATURES) for i in range(first,last))
             if _compact(actual)!=_compact(''.join(expected)):
                 raise ValueError('Kandungan PDF tidak sepadan sepenuhnya. Gunakan Word.')
             for i in range(first,last):
