@@ -1,0 +1,4796 @@
+{
+  "status": "DRAFT_V60_SOURCE_MATCH_TRIAGE_ONLY",
+  "date": "2026-11-28",
+  "source_manifest_blob": "3b635782267a41c32ff0cac12d278c052b594dd4",
+  "source_packs": [
+    {
+      "year": 2,
+      "path": "rph_standalone/matematik/v60_source/Tahun_2.json.zlib.b64.txt",
+      "sha": "00db06fe0cdb3f5d47815025eadee6f8633f6273",
+      "count": 117,
+      "integrity_check": "zlib header, raw length, Adler32, year and 117 consecutive record identities; SHA256 values not independently recomputed"
+    },
+    {
+      "year": 3,
+      "path": "rph_standalone/matematik/v60_source/Tahun_3.json.zlib.b64.txt",
+      "sha": "6de8c2dc0a9c4a7f4afe44758cd8430887d37057",
+      "count": 117,
+      "integrity_check": "zlib header, raw length, Adler32, year and 117 consecutive record identities; SHA256 values not independently recomputed"
+    },
+    {
+      "year": 4,
+      "path": "rph_standalone/matematik/v60_source/Tahun_4.json.zlib.b64.txt",
+      "sha": "5cb2b9b2d22d5b7cd5191b8343295a8fc2cfd749",
+      "count": 117,
+      "integrity_check": "zlib header, raw length, Adler32, year and 117 consecutive record identities; SHA256 values not independently recomputed"
+    },
+    {
+      "year": 5,
+      "path": "rph_standalone/matematik/v60_source/Tahun_5.json.zlib.b64.txt",
+      "sha": "7bc0065a9ee1ad445512c525ab4924f40662e9b4",
+      "count": 117,
+      "integrity_check": "zlib header, raw length, Adler32, year and 117 consecutive record identities; SHA256 values not independently recomputed"
+    },
+    {
+      "year": 6,
+      "path": "rph_standalone/matematik/v60_source/Tahun_6.json.zlib.b64.txt",
+      "sha": "daf67c4a071220051f7a050084ef1780f5ac41e2",
+      "count": 117,
+      "integrity_check": "zlib header, raw length, Adler32, year and 117 consecutive record identities; SHA256 values not independently recomputed"
+    }
+  ],
+  "candidate_files": [
+    {
+      "path": "audits/rph_5p_math_kssr_t2_candidate_20_20261128.json",
+      "sha": "cb732c4c74a47c255373daf598feae3406c0fded",
+      "year": 2,
+      "count": 20
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t2_candidate_21_40_20261128.json",
+      "sha": "8bb47111f1a187745ef962058957b5151baf482c",
+      "year": 2,
+      "count": 21
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t2_candidate_41_71_20261128.json",
+      "sha": "7d2158616e85a4a0e10134b8950af299cf05dbb0",
+      "year": 2,
+      "count": 31
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t3_candidate_01_08_20261128.json",
+      "sha": "f58d17512a0bb607d422c73333d0e763c26e0fa6",
+      "year": 3,
+      "count": 9
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t4_candidate_09_15_20261128.json",
+      "sha": "51187ab3e94d3c250bab4897e1598f0d0cd60e72",
+      "year": 4,
+      "count": 9
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t5_rpt_blocks_01_13_20261128.json",
+      "sha": "6fc9a688ef04b5cdae562f2d29504f043748ef91",
+      "year": 5,
+      "count": 28
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t5_rpt_blocks_14_38_20261128.json",
+      "sha": "684cffdba18d1bee5adea2edb896696ca0ed9219",
+      "year": 5,
+      "count": 43
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t6_candidate_22_20261128.json",
+      "sha": "3d29975587cfc41b12732212bfbb87e2a1f8bb0b",
+      "year": 6,
+      "count": 22
+    }
+  ],
+  "counts_by_year": {
+    "2": {
+      "SP_ONLY_UNIQUE": 22,
+      "NO_EXACT_OR_SUPERSET": 10,
+      "SP_ONLY_AMBIGUOUS": 40
+    },
+    "3": {
+      "NO_EXACT_OR_SUPERSET": 8,
+      "SP_ONLY_AMBIGUOUS": 1
+    },
+    "4": {
+      "EXACT_TITLE_AND_SP_UNIQUE": 3,
+      "SP_ONLY_UNIQUE": 2,
+      "SP_ONLY_AMBIGUOUS": 2,
+      "AMBIGUOUS_TITLE_AND_SP": 2
+    },
+    "5": {
+      "SP_ONLY_UNIQUE": 21,
+      "NO_EXACT_OR_SUPERSET": 7,
+      "SP_ONLY_AMBIGUOUS": 43
+    },
+    "6": {
+      "SP_ONLY_AMBIGUOUS": 22
+    }
+  },
+  "missing_source_fields": [],
+  "total_candidates": 183,
+  "source_lessons": 585,
+  "records": [
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-001",
+      "title": "Kenali nombor",
+      "sp": [
+        "1.1.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 1,
+          "title": "1.1 Nilai Nombor",
+          "sp": [
+            "1.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-002",
+      "title": "Tulis nombor",
+      "sp": [
+        "1.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 3,
+          "title": "1.2 Menulis nombor",
+          "sp": [
+            "1.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-003",
+      "title": "Nilai nombor",
+      "sp": [
+        "1.1.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 2,
+          "title": "1.1 Nilai Nombor",
+          "sp": [
+            "1.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-004",
+      "title": "Nilai tempat dan nilai digit",
+      "sp": [
+        "1.4.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 6,
+          "title": "1.4 Nilai tempat",
+          "sp": [
+            "1.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-005",
+      "title": "Cerakin nombor",
+      "sp": [
+        "1.4.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 7,
+          "title": "1.4 Nilai tempat",
+          "sp": [
+            "1.4.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-006",
+      "title": "Banding nombor",
+      "sp": [
+        "1.1.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 2,
+          "title": "1.1 Nilai Nombor",
+          "sp": [
+            "1.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-007",
+      "title": "Susun nombor",
+      "sp": [
+        "1.1.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 2,
+          "title": "1.1 Nilai Nombor",
+          "sp": [
+            "1.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-008",
+      "title": "Bilang nombor",
+      "sp": [
+        "1.3.1",
+        "1.3.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-009",
+      "title": "Anggar bilangan objek",
+      "sp": [
+        "1.5.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 8,
+          "title": "1.5 Menganggar",
+          "sp": [
+            "1.5.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-010",
+      "title": "Bundar nombor kepada ratus terdekat",
+      "sp": [
+        "1.6.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 9,
+          "title": "1.6 Membundarkan nombor",
+          "sp": [
+            "1.6.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-011",
+      "title": "Pola nombor",
+      "sp": [
+        "1.7.1",
+        "1.7.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-012",
+      "title": "Masalah nombor",
+      "sp": [
+        "1.8.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 13,
+          "title": "1.8 Penyelesaian masalah",
+          "sp": [
+            "1.8.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.8 Penyelesaian masalah",
+          "sp": [
+            "1.8.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-013",
+      "title": "Tambah dua nombor",
+      "sp": [
+        "2.1.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 15,
+          "title": "2.1 Tambah dalam lingkungan 1000",
+          "sp": [
+            "2.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-014",
+      "title": "Tambah dengan pengumpulan semula",
+      "sp": [
+        "2.1.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 15,
+          "title": "2.1 Tambah dalam lingkungan 1000",
+          "sp": [
+            "2.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-015",
+      "title": "Tambah tiga nombor",
+      "sp": [
+        "2.1.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 16,
+          "title": "2.1 Tambah dalam lingkungan 1000",
+          "sp": [
+            "2.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-016",
+      "title": "Tolak tanpa pengumpulan semula",
+      "sp": [
+        "2.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 17,
+          "title": "2.2 Tolak dalam lingkungan 1000",
+          "sp": [
+            "2.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-017",
+      "title": "Tolak dengan pengumpulan semula",
+      "sp": [
+        "2.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 17,
+          "title": "2.2 Tolak dalam lingkungan 1000",
+          "sp": [
+            "2.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-018",
+      "title": "Tolak berturut-turut",
+      "sp": [
+        "2.2.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 18,
+          "title": "2.2 Tolak dalam lingkungan 1000",
+          "sp": [
+            "2.2.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-019",
+      "title": "Reka cerita tambah dan tolak",
+      "sp": [
+        "2.5.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 27,
+          "title": "2.5 Penyelesaian masalah",
+          "sp": [
+            "2.5.1"
+          ]
+        },
+        {
+          "lesson": 28,
+          "title": "2.5 Penyelesaian masalah",
+          "sp": [
+            "2.5.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-020",
+      "title": "Masalah harian tambah dan tolak",
+      "sp": [
+        "2.5.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 29,
+          "title": "2.5 Penyelesaian masalah",
+          "sp": [
+            "2.5.2"
+          ]
+        },
+        {
+          "lesson": 30,
+          "title": "2.5 Penyelesaian masalah",
+          "sp": [
+            "2.5.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-021",
+      "title": "Pengenalan darab",
+      "sp": [
+        "2.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 19,
+          "title": "2.3 Darab dalam lingkungan 1000",
+          "sp": [
+            "2.3.1"
+          ]
+        },
+        {
+          "lesson": 20,
+          "title": "2.3 Darab dalam lingkungan 1000",
+          "sp": [
+            "2.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-022",
+      "title": "Sifir 2, 3, 4 dan 5",
+      "sp": [
+        "2.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 19,
+          "title": "2.3 Darab dalam lingkungan 1000",
+          "sp": [
+            "2.3.1"
+          ]
+        },
+        {
+          "lesson": 20,
+          "title": "2.3 Darab dalam lingkungan 1000",
+          "sp": [
+            "2.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-023",
+      "title": "Sifir 6, 7, 8 dan 9",
+      "sp": [
+        "2.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 19,
+          "title": "2.3 Darab dalam lingkungan 1000",
+          "sp": [
+            "2.3.1"
+          ]
+        },
+        {
+          "lesson": 20,
+          "title": "2.3 Darab dalam lingkungan 1000",
+          "sp": [
+            "2.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-024",
+      "title": "Pengukuhan fakta darab",
+      "sp": [
+        "2.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 19,
+          "title": "2.3 Darab dalam lingkungan 1000",
+          "sp": [
+            "2.3.1"
+          ]
+        },
+        {
+          "lesson": 20,
+          "title": "2.3 Darab dalam lingkungan 1000",
+          "sp": [
+            "2.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-025",
+      "title": "Darab dengan 1, 0 dan 10",
+      "sp": [
+        "2.3.1",
+        "2.3.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-026",
+      "title": "Bahagi kepada kumpulan sama banyak",
+      "sp": [
+        "2.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 23,
+          "title": "2.4 Bahagi dalam lingkungan 1000",
+          "sp": [
+            "2.4.1"
+          ]
+        },
+        {
+          "lesson": 24,
+          "title": "2.4 Bahagi dalam lingkungan 1000",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-027",
+      "title": "Bina fakta bahagi",
+      "sp": [
+        "2.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 23,
+          "title": "2.4 Bahagi dalam lingkungan 1000",
+          "sp": [
+            "2.4.1"
+          ]
+        },
+        {
+          "lesson": 24,
+          "title": "2.4 Bahagi dalam lingkungan 1000",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-028",
+      "title": "Pengukuhan fakta bahagi",
+      "sp": [
+        "2.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 23,
+          "title": "2.4 Bahagi dalam lingkungan 1000",
+          "sp": [
+            "2.4.1"
+          ]
+        },
+        {
+          "lesson": 24,
+          "title": "2.4 Bahagi dalam lingkungan 1000",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-029",
+      "title": "Bahagi dengan 1 dan 10; sifar sebagai nombor dibahagi",
+      "sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-030",
+      "title": "Bahagi dengan baki",
+      "sp": [
+        "2.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 23,
+          "title": "2.4 Bahagi dalam lingkungan 1000",
+          "sp": [
+            "2.4.1"
+          ]
+        },
+        {
+          "lesson": 24,
+          "title": "2.4 Bahagi dalam lingkungan 1000",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-031",
+      "title": "Reka cerita darab dan bahagi",
+      "sp": [
+        "2.5.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 27,
+          "title": "2.5 Penyelesaian masalah",
+          "sp": [
+            "2.5.1"
+          ]
+        },
+        {
+          "lesson": 28,
+          "title": "2.5 Penyelesaian masalah",
+          "sp": [
+            "2.5.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-032",
+      "title": "Masalah harian darab dan bahagi",
+      "sp": [
+        "2.5.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 29,
+          "title": "2.5 Penyelesaian masalah",
+          "sp": [
+            "2.5.2"
+          ]
+        },
+        {
+          "lesson": 30,
+          "title": "2.5 Penyelesaian masalah",
+          "sp": [
+            "2.5.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-033",
+      "title": "Kenali pecahan wajar",
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-034",
+      "title": "Wakil dan tulis pecahan",
+      "sp": [
+        "3.1.3",
+        "3.1.4"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-035",
+      "title": "Banding pecahan wajar",
+      "sp": [
+        "3.1.5"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 39,
+          "title": "3.1 Pecahan wajar",
+          "sp": [
+            "3.1.5"
+          ]
+        },
+        {
+          "lesson": 40,
+          "title": "3.1 Pecahan wajar",
+          "sp": [
+            "3.1.5"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-036A",
+      "title": "Tukar pecahan persepuluh kepada perpuluhan",
+      "sp": [
+        "3.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 41,
+          "title": "3.2 Perpuluhan",
+          "sp": [
+            "3.2.1"
+          ]
+        },
+        {
+          "lesson": 42,
+          "title": "3.2 Perpuluhan",
+          "sp": [
+            "3.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-036B",
+      "title": "Perwakilan perpuluhan",
+      "sp": [
+        "3.2.2",
+        "3.2.3",
+        "3.2.4",
+        "3.2.5"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-037",
+      "title": "Banding perpuluhan",
+      "sp": [
+        "3.2.6"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 51,
+          "title": "3.2 Perpuluhan",
+          "sp": [
+            "3.2.6"
+          ]
+        },
+        {
+          "lesson": 52,
+          "title": "3.2 Perpuluhan",
+          "sp": [
+            "3.2.6"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-038",
+      "title": "Banding pecahan dan perpuluhan",
+      "sp": [
+        "3.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 53,
+          "title": "3.3 Pecahan dan Perpuluhan",
+          "sp": [
+            "3.3.1"
+          ]
+        },
+        {
+          "lesson": 54,
+          "title": "3.3 Pecahan dan Perpuluhan",
+          "sp": [
+            "3.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-039",
+      "title": "Masalah pecahan dan perpuluhan",
+      "sp": [
+        "3.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 55,
+          "title": "3.4 Penyelesaian masalah",
+          "sp": [
+            "3.4.1"
+          ]
+        },
+        {
+          "lesson": 56,
+          "title": "3.4 Penyelesaian masalah",
+          "sp": [
+            "3.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-040",
+      "title": "Kenali mata wang",
+      "sp": [
+        "4.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 57,
+          "title": "4.1 Wang kertas dan duit syiling",
+          "sp": [
+            "4.1.1"
+          ]
+        },
+        {
+          "lesson": 58,
+          "title": "4.1 Wang kertas dan duit syiling",
+          "sp": [
+            "4.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-041",
+      "title": "Nilai wang",
+      "sp": [
+        "4.1.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 59,
+          "title": "4.1 Wang kertas dan duit syiling",
+          "sp": [
+            "4.1.2"
+          ]
+        },
+        {
+          "lesson": 60,
+          "title": "4.1 Wang kertas dan duit syiling",
+          "sp": [
+            "4.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-042",
+      "title": "Tambah wang",
+      "sp": [
+        "4.2.1",
+        "4.2.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-043",
+      "title": "Tolak wang",
+      "sp": [
+        "4.3.1",
+        "4.3.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-044",
+      "title": "Darab wang",
+      "sp": [
+        "4.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 68,
+          "title": "4.4 Darab wang",
+          "sp": [
+            "4.4.1"
+          ]
+        },
+        {
+          "lesson": 69,
+          "title": "4.4 Darab wang",
+          "sp": [
+            "4.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-045",
+      "title": "Bahagi wang",
+      "sp": [
+        "4.5.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 70,
+          "title": "4.5 Bahagi wang",
+          "sp": [
+            "4.5.1"
+          ]
+        },
+        {
+          "lesson": 71,
+          "title": "4.5 Bahagi wang",
+          "sp": [
+            "4.5.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-046",
+      "title": "Celik wang",
+      "sp": [
+        "4.6.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 72,
+          "title": "4.6 Simpanan dan pelaburan",
+          "sp": [
+            "4.6.1"
+          ]
+        },
+        {
+          "lesson": 73,
+          "title": "4.6 Simpanan dan pelaburan",
+          "sp": [
+            "4.6.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-047",
+      "title": "Masalah harian wang",
+      "sp": [
+        "4.7.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 74,
+          "title": "4.7 Penyelesaian masalah",
+          "sp": [
+            "4.7.1"
+          ]
+        },
+        {
+          "lesson": 75,
+          "title": "4.7 Penyelesaian masalah",
+          "sp": [
+            "4.7.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-048",
+      "title": "Kenali senggatan minit",
+      "sp": [
+        "5.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 76,
+          "title": "5.1 Waktu dalam jam dan minit",
+          "sp": [
+            "5.1.1"
+          ]
+        },
+        {
+          "lesson": 77,
+          "title": "5.1 Waktu dalam jam dan minit",
+          "sp": [
+            "5.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-049",
+      "title": "Sebut dan tulis waktu",
+      "sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-050",
+      "title": "Rekod waktu",
+      "sp": [
+        "5.1.4"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 81,
+          "title": "5.1 Waktu dalam jam dan minit",
+          "sp": [
+            "5.1.4"
+          ]
+        },
+        {
+          "lesson": 82,
+          "title": "5.1 Waktu dalam jam dan minit",
+          "sp": [
+            "5.1.4"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-051",
+      "title": "Perkaitan hari, jam dan minit",
+      "sp": [
+        "5.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 83,
+          "title": "5.2 Perkaitan dalam waktu",
+          "sp": [
+            "5.2.1"
+          ]
+        },
+        {
+          "lesson": 84,
+          "title": "5.2 Perkaitan dalam waktu",
+          "sp": [
+            "5.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-052",
+      "title": "Masalah masa dan waktu",
+      "sp": [
+        "5.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 85,
+          "title": "5.3 Penyelesaian masalah",
+          "sp": [
+            "5.3.1"
+          ]
+        },
+        {
+          "lesson": 86,
+          "title": "5.3 Penyelesaian masalah",
+          "sp": [
+            "5.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-053",
+      "title": "Kenali sentimeter dan meter",
+      "sp": [
+        "6.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 87,
+          "title": "6.1 Panjang",
+          "sp": [
+            "6.1.1"
+          ]
+        },
+        {
+          "lesson": 88,
+          "title": "6.1 Panjang",
+          "sp": [
+            "6.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-054",
+      "title": "Ukur panjang dan lukis garis",
+      "sp": [
+        "6.1.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 89,
+          "title": "6.1 Panjang",
+          "sp": [
+            "6.1.2"
+          ]
+        },
+        {
+          "lesson": 90,
+          "title": "6.1 Panjang",
+          "sp": [
+            "6.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-055",
+      "title": "Anggar panjang",
+      "sp": [
+        "6.1.3"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 91,
+          "title": "6.1 Panjang",
+          "sp": [
+            "6.1.3"
+          ]
+        },
+        {
+          "lesson": 92,
+          "title": "6.1 Panjang",
+          "sp": [
+            "6.1.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-056",
+      "title": "Kenali gram dan kilogram",
+      "sp": [
+        "6.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 93,
+          "title": "6.2 Jisim",
+          "sp": [
+            "6.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-057",
+      "title": "Timbang jisim objek",
+      "sp": [
+        "6.2.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 94,
+          "title": "6.2 Jisim",
+          "sp": [
+            "6.2.2"
+          ]
+        },
+        {
+          "lesson": 95,
+          "title": "6.2 Jisim",
+          "sp": [
+            "6.2.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-058",
+      "title": "Anggar jisim",
+      "sp": [
+        "6.2.3"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 96,
+          "title": "6.2 Jisim",
+          "sp": [
+            "6.2.3"
+          ]
+        },
+        {
+          "lesson": 97,
+          "title": "6.2 Jisim",
+          "sp": [
+            "6.2.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-059",
+      "title": "Kenali mililiter dan liter",
+      "sp": [
+        "6.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 98,
+          "title": "6.3 Isi padu cecair",
+          "sp": [
+            "6.3.1"
+          ]
+        },
+        {
+          "lesson": 99,
+          "title": "6.3 Isi padu cecair",
+          "sp": [
+            "6.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-060",
+      "title": "Sukat isi padu cecair",
+      "sp": [
+        "6.3.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 100,
+          "title": "6.3 Isi padu cecair",
+          "sp": [
+            "6.3.2"
+          ]
+        },
+        {
+          "lesson": 101,
+          "title": "6.3 Isi padu cecair",
+          "sp": [
+            "6.3.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-061",
+      "title": "Anggar isi padu cecair",
+      "sp": [
+        "6.3.3"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 102,
+          "title": "6.3 Isi padu cecair",
+          "sp": [
+            "6.3.3"
+          ]
+        },
+        {
+          "lesson": 103,
+          "title": "6.3 Isi padu cecair",
+          "sp": [
+            "6.3.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-062",
+      "title": "Masalah ukuran dan sukatan",
+      "sp": [
+        "6.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 104,
+          "title": "6.4 Penyelesaian masalah",
+          "sp": [
+            "6.4.1"
+          ]
+        },
+        {
+          "lesson": 105,
+          "title": "6.4 Penyelesaian masalah",
+          "sp": [
+            "6.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-063",
+      "title": "Kenal bentuk tiga dimensi",
+      "sp": [
+        "7.1.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 106,
+          "title": "7.1 Bentuk tiga dimensi",
+          "sp": [
+            "7.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-064",
+      "title": "Bentuk asas bagi bentuk tiga dimensi",
+      "sp": [
+        "7.1.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 107,
+          "title": "7.1 Bentuk tiga dimensi",
+          "sp": [
+            "7.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-065",
+      "title": "Bentangan bentuk tiga dimensi",
+      "sp": [
+        "7.1.3"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 108,
+          "title": "7.1 Bentuk tiga dimensi",
+          "sp": [
+            "7.1.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-066",
+      "title": "Kenal bentuk dua dimensi",
+      "sp": [
+        "7.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 109,
+          "title": "7.2 Bentuk dua dimensi",
+          "sp": [
+            "7.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-067",
+      "title": "Lukis bentuk dua dimensi",
+      "sp": [
+        "7.2.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 110,
+          "title": "7.2 Bentuk dua dimensi",
+          "sp": [
+            "7.2.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-068",
+      "title": "Masalah bentuk dalam kehidupan harian",
+      "sp": [
+        "7.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 111,
+          "title": "7.3 Penyelesaian masalah",
+          "sp": [
+            "7.3.1"
+          ]
+        },
+        {
+          "lesson": 112,
+          "title": "7.3 Penyelesaian masalah",
+          "sp": [
+            "7.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-069",
+      "title": "Kumpul dan susun data",
+      "sp": [
+        "8.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 113,
+          "title": "8.1 Mengumpul, mengelas dan menyusun data",
+          "sp": [
+            "8.1.1"
+          ]
+        },
+        {
+          "lesson": 114,
+          "title": "8.1 Mengumpul, mengelas dan menyusun data",
+          "sp": [
+            "8.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-070",
+      "title": "Baca carta palang",
+      "sp": [
+        "8.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 115,
+          "title": "8.2 Carta palang",
+          "sp": [
+            "8.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 2,
+      "candidate_id": "T2-WORK-071",
+      "title": "Masalah pengurusan data",
+      "sp": [
+        "8.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 116,
+          "title": "8.3 Penyelesaian masalah",
+          "sp": [
+            "8.3.1"
+          ]
+        },
+        {
+          "lesson": 117,
+          "title": "8.3 Penyelesaian masalah",
+          "sp": [
+            "8.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-01",
+      "title": "Peratus",
+      "sp": [
+        "3.3.1",
+        "3.3.2",
+        "3.3.3",
+        "3.3.4"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-02",
+      "title": "Simpanan dan pelaburan",
+      "sp": [
+        "4.7.1",
+        "4.7.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-03",
+      "title": "Masalah wang hingga RM10 000",
+      "sp": [
+        "4.8.1",
+        "4.8.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-04A",
+      "title": "Panjang: penukaran, tambah dan tolak",
+      "sp": [
+        "6.1.1",
+        "6.1.2",
+        "6.1.3"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-04B",
+      "title": "Panjang: darab dan bahagi",
+      "sp": [
+        "6.1.4",
+        "6.1.5"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-05",
+      "title": "Prisma",
+      "sp": [
+        "7.1.1",
+        "7.1.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-06",
+      "title": "Poligon sekata dan corak",
+      "sp": [
+        "7.3.1",
+        "7.3.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-07",
+      "title": "Koordinat sukuan pertama",
+      "sp": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 3,
+      "candidate_id": "T3-WORK-08",
+      "title": "Masalah koordinat",
+      "sp": [
+        "8.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 111,
+          "title": "8.2 Penyelesaian masalah",
+          "sp": [
+            "8.2.1"
+          ]
+        },
+        {
+          "lesson": 112,
+          "title": "8.2 Penyelesaian masalah",
+          "sp": [
+            "8.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-09",
+      "title": "Penganggaran kuantiti",
+      "sp": [
+        "1.3.1"
+      ],
+      "status": "EXACT_TITLE_AND_SP_UNIQUE",
+      "exact_title_and_sp": [
+        3
+      ],
+      "exact_sp_options": [
+        {
+          "lesson": 3,
+          "title": "Penganggaran kuantiti",
+          "sp": [
+            "1.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-10",
+      "title": "Pola nombor",
+      "sp": [
+        "1.5.1",
+        "1.5.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 5,
+          "title": "Pola nombor menaik dan menurun",
+          "sp": [
+            "1.5.1",
+            "1.5.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-11A",
+      "title": "Penolakan pecahan",
+      "sp": [
+        "2.1.3"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 22,
+          "title": "Penolakan melibatkan nombor bulat, pecahan wajar dan nombor bercampur",
+          "sp": [
+            "2.1.3"
+          ]
+        },
+        {
+          "lesson": 23,
+          "title": "Penolakan melibatkan nombor bulat, pecahan wajar dan nombor bercampur",
+          "sp": [
+            "2.1.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-11B",
+      "title": "Operasi bergabung tambah dan tolak pecahan",
+      "sp": [
+        "2.1.4"
+      ],
+      "status": "EXACT_TITLE_AND_SP_UNIQUE",
+      "exact_title_and_sp": [
+        24
+      ],
+      "exact_sp_options": [
+        {
+          "lesson": 24,
+          "title": "Operasi bergabung tambah dan tolak pecahan",
+          "sp": [
+            "2.1.4"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-11C",
+      "title": "Pecahan daripada kuantiti",
+      "sp": [
+        "2.1.5"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 25,
+          "title": "Menentukan nilai pecahan daripada kuantiti",
+          "sp": [
+            "2.1.5"
+          ]
+        },
+        {
+          "lesson": 26,
+          "title": "Menentukan nilai pecahan daripada kuantiti",
+          "sp": [
+            "2.1.5"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-12",
+      "title": "Masalah pecahan, perpuluhan dan peratus",
+      "sp": [
+        "2.4.1"
+      ],
+      "status": "AMBIGUOUS_TITLE_AND_SP",
+      "exact_title_and_sp": [
+        39,
+        40
+      ],
+      "exact_sp_options": [
+        {
+          "lesson": 39,
+          "title": "Masalah pecahan, perpuluhan dan peratus",
+          "sp": [
+            "2.4.1"
+          ]
+        },
+        {
+          "lesson": 40,
+          "title": "Masalah pecahan, perpuluhan dan peratus",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-13",
+      "title": "Keputusan kewangan bertanggungjawab",
+      "sp": [
+        "3.4.1",
+        "3.4.2",
+        "3.4.3"
+      ],
+      "status": "EXACT_TITLE_AND_SP_UNIQUE",
+      "exact_title_and_sp": [
+        54
+      ],
+      "exact_sp_options": [
+        {
+          "lesson": 54,
+          "title": "Keputusan kewangan bertanggungjawab",
+          "sp": [
+            "3.4.1",
+            "3.4.2",
+            "3.4.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-14",
+      "title": "Masalah wang hingga RM100 000",
+      "sp": [
+        "3.7.1"
+      ],
+      "status": "AMBIGUOUS_TITLE_AND_SP",
+      "exact_title_and_sp": [
+        60,
+        61
+      ],
+      "exact_sp_options": [
+        {
+          "lesson": 60,
+          "title": "Masalah wang hingga RM100 000",
+          "sp": [
+            "3.7.1"
+          ]
+        },
+        {
+          "lesson": 61,
+          "title": "Masalah wang hingga RM100 000",
+          "sp": [
+            "3.7.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 4,
+      "candidate_id": "T4-WORK-15",
+      "title": "Anggaran masa",
+      "sp": [
+        "4.3.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 65,
+          "title": "Anggaran tempoh masa",
+          "sp": [
+            "4.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-001A",
+      "title": "Menyatakan nombor hingga sejuta",
+      "sp": [
+        "1.1.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 1,
+          "title": "1.1 Nilai nombor",
+          "sp": [
+            "1.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-001B",
+      "title": "Nilai tempat, nilai digit dan cerakin",
+      "sp": [
+        "1.1.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 2,
+          "title": "1.1 Nilai nombor",
+          "sp": [
+            "1.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-001C",
+      "title": "Banding, susun dan lengkapkan rangkaian",
+      "sp": [
+        "1.1.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 2,
+          "title": "1.1 Nilai nombor",
+          "sp": [
+            "1.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-002A",
+      "title": "Nombor perdana hingga 100",
+      "sp": [
+        "1.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 3,
+          "title": "1.2 Nombor perdana",
+          "sp": [
+            "1.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-003A",
+      "title": "Anggaran kuantiti",
+      "sp": [
+        "1.3.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 4,
+          "title": "1.3 Penganggaran",
+          "sp": [
+            "1.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-004A",
+      "title": "Bundar nombor bulat",
+      "sp": [
+        "1.4.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 5,
+          "title": "1.4 Pembundaran",
+          "sp": [
+            "1.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-004B",
+      "title": "Nombor asal yang mungkin",
+      "sp": [
+        "1.4.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 6,
+          "title": "1.4 Pembundaran",
+          "sp": [
+            "1.4.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-005A",
+      "title": "Pola nombor",
+      "sp": [
+        "1.5.1",
+        "1.5.2"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-006A",
+      "title": "Tambah hingga lima nombor",
+      "sp": [
+        "1.6.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 9,
+          "title": "1.6 Operasi asas",
+          "sp": [
+            "1.6.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-006B",
+      "title": "Tolak hingga tiga nombor",
+      "sp": [
+        "1.6.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 10,
+          "title": "1.6 Operasi asas",
+          "sp": [
+            "1.6.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-006C",
+      "title": "Darab nombor bulat",
+      "sp": [
+        "1.6.3"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 11,
+          "title": "1.6 Operasi asas",
+          "sp": [
+            "1.6.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-006D",
+      "title": "Bahagi nombor bulat",
+      "sp": [
+        "1.6.4"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 12,
+          "title": "1.6 Operasi asas",
+          "sp": [
+            "1.6.4"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-007A",
+      "title": "Operasi bergabung tambah/tolak dengan darab",
+      "sp": [
+        "1.7.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 13,
+          "title": "1.7 Operasi bergabung",
+          "sp": [
+            "1.7.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.7 Operasi bergabung",
+          "sp": [
+            "1.7.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-007B",
+      "title": "Operasi bergabung tambah/tolak dengan bahagi",
+      "sp": [
+        "1.7.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 13,
+          "title": "1.7 Operasi bergabung",
+          "sp": [
+            "1.7.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.7 Operasi bergabung",
+          "sp": [
+            "1.7.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-008A",
+      "title": "Anu dalam ayat darab",
+      "sp": [
+        "1.8.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 15,
+          "title": "1.8 Penggunaan anu",
+          "sp": [
+            "1.8.1"
+          ]
+        },
+        {
+          "lesson": 16,
+          "title": "1.8 Penggunaan anu",
+          "sp": [
+            "1.8.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-008B",
+      "title": "Anu dalam ayat bahagi",
+      "sp": [
+        "1.8.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 17,
+          "title": "1.8 Penggunaan anu",
+          "sp": [
+            "1.8.2"
+          ]
+        },
+        {
+          "lesson": 18,
+          "title": "1.8 Penggunaan anu",
+          "sp": [
+            "1.8.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-009A",
+      "title": "Masalah harian nombor bulat",
+      "sp": [
+        "1.9.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 19,
+          "title": "1.9 Penyelesaian masalah",
+          "sp": [
+            "1.9.1"
+          ]
+        },
+        {
+          "lesson": 20,
+          "title": "1.9 Penyelesaian masalah",
+          "sp": [
+            "1.9.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-009B",
+      "title": "Masalah operasi asas dan bergabung",
+      "sp": [
+        "1.9.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 21,
+          "title": "1.9 Penyelesaian masalah",
+          "sp": [
+            "1.9.2"
+          ]
+        },
+        {
+          "lesson": 22,
+          "title": "1.9 Penyelesaian masalah",
+          "sp": [
+            "1.9.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-009C",
+      "title": "Masalah harian dengan anu",
+      "sp": [
+        "1.9.3"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 23,
+          "title": "1.9 Penyelesaian masalah",
+          "sp": [
+            "1.9.3"
+          ]
+        },
+        {
+          "lesson": 24,
+          "title": "1.9 Penyelesaian masalah",
+          "sp": [
+            "1.9.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-010A",
+      "title": "Darab nombor bulat dengan pecahan",
+      "sp": [
+        "2.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 25,
+          "title": "2.1 Pecahan",
+          "sp": [
+            "2.1.1"
+          ]
+        },
+        {
+          "lesson": 26,
+          "title": "2.1 Pecahan",
+          "sp": [
+            "2.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-010B",
+      "title": "Darab pecahan dan nombor bercampur",
+      "sp": [
+        "2.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 25,
+          "title": "2.1 Pecahan",
+          "sp": [
+            "2.1.1"
+          ]
+        },
+        {
+          "lesson": 26,
+          "title": "2.1 Pecahan",
+          "sp": [
+            "2.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-011A",
+      "title": "Pembundaran perpuluhan",
+      "sp": [
+        "2.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 27,
+          "title": "2.2 Perpuluhan",
+          "sp": [
+            "2.2.1"
+          ]
+        },
+        {
+          "lesson": 28,
+          "title": "2.2 Perpuluhan",
+          "sp": [
+            "2.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-011B",
+      "title": "Tambah dan tolak perpuluhan bergabung",
+      "sp": [
+        "2.2.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 29,
+          "title": "2.2 Perpuluhan",
+          "sp": [
+            "2.2.2"
+          ]
+        },
+        {
+          "lesson": 30,
+          "title": "2.2 Perpuluhan",
+          "sp": [
+            "2.2.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-011C",
+      "title": "Darab perpuluhan",
+      "sp": [
+        "2.2.3"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 31,
+          "title": "2.2 Perpuluhan",
+          "sp": [
+            "2.2.3"
+          ]
+        },
+        {
+          "lesson": 32,
+          "title": "2.2 Perpuluhan",
+          "sp": [
+            "2.2.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-011D",
+      "title": "Bahagi perpuluhan",
+      "sp": [
+        "2.2.4"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 33,
+          "title": "2.2 Perpuluhan",
+          "sp": [
+            "2.2.4"
+          ]
+        },
+        {
+          "lesson": 34,
+          "title": "2.2 Perpuluhan",
+          "sp": [
+            "2.2.4"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-012A",
+      "title": "Nombor bercampur dan peratus",
+      "sp": [
+        "2.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 35,
+          "title": "2.3 Peratus",
+          "sp": [
+            "2.3.1"
+          ]
+        },
+        {
+          "lesson": 36,
+          "title": "2.3 Peratus",
+          "sp": [
+            "2.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-012B",
+      "title": "Peratus melebihi 100 dan kuantiti",
+      "sp": [
+        "2.3.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 37,
+          "title": "2.3 Peratus",
+          "sp": [
+            "2.3.2"
+          ]
+        },
+        {
+          "lesson": 38,
+          "title": "2.3 Peratus",
+          "sp": [
+            "2.3.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-013A",
+      "title": "Masalah pecahan, perpuluhan dan peratus",
+      "sp": [
+        "2.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 39,
+          "title": "2.4 Penyelesaian masalah",
+          "sp": [
+            "2.4.1"
+          ]
+        },
+        {
+          "lesson": 40,
+          "title": "2.4 Penyelesaian masalah",
+          "sp": [
+            "2.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-014A",
+      "title": "Tambah wang",
+      "sp": [
+        "3.1.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 41,
+          "title": "3.1 Operasi asas melibatkan wang",
+          "sp": [
+            "3.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-014B",
+      "title": "Tolak wang",
+      "sp": [
+        "3.1.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 42,
+          "title": "3.1 Operasi asas melibatkan wang",
+          "sp": [
+            "3.1.2"
+          ]
+        },
+        {
+          "lesson": 43,
+          "title": "3.1 Operasi asas melibatkan wang",
+          "sp": [
+            "3.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-014C",
+      "title": "Darab wang",
+      "sp": [
+        "3.1.3"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 44,
+          "title": "3.1 Operasi asas melibatkan wang",
+          "sp": [
+            "3.1.3"
+          ]
+        },
+        {
+          "lesson": 45,
+          "title": "3.1 Operasi asas melibatkan wang",
+          "sp": [
+            "3.1.3"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-014D",
+      "title": "Bahagi wang",
+      "sp": [
+        "3.1.4"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 46,
+          "title": "3.1 Operasi asas melibatkan wang",
+          "sp": [
+            "3.1.4"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-015A",
+      "title": "Operasi wang tambah/tolak dan darab",
+      "sp": [
+        "3.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 47,
+          "title": "3.2 Operasi bergabung melibatkan wang",
+          "sp": [
+            "3.2.1"
+          ]
+        },
+        {
+          "lesson": 48,
+          "title": "3.2 Operasi bergabung melibatkan wang",
+          "sp": [
+            "3.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-015B",
+      "title": "Operasi wang tambah/tolak dan bahagi",
+      "sp": [
+        "3.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 47,
+          "title": "3.2 Operasi bergabung melibatkan wang",
+          "sp": [
+            "3.2.1"
+          ]
+        },
+        {
+          "lesson": 48,
+          "title": "3.2 Operasi bergabung melibatkan wang",
+          "sp": [
+            "3.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-016A",
+      "title": "Simpanan dan pelaburan",
+      "sp": [
+        "3.3.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 49,
+          "title": "3.3 Simpanan dan pelaburan",
+          "sp": [
+            "3.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-016B",
+      "title": "Faedah mudah dan kompaun",
+      "sp": [
+        "3.3.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 50,
+          "title": "3.3 Simpanan dan pelaburan",
+          "sp": [
+            "3.3.2"
+          ]
+        },
+        {
+          "lesson": 51,
+          "title": "3.3 Simpanan dan pelaburan",
+          "sp": [
+            "3.3.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-017A",
+      "title": "Kredit dan hutang",
+      "sp": [
+        "3.4.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 52,
+          "title": "3.4 Kredit dan pengurusan hutang",
+          "sp": [
+            "3.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-017B",
+      "title": "Banding harga tunai dan kredit",
+      "sp": [
+        "3.4.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 53,
+          "title": "3.4 Kredit dan pengurusan hutang",
+          "sp": [
+            "3.4.2"
+          ]
+        },
+        {
+          "lesson": 54,
+          "title": "3.4 Kredit dan pengurusan hutang",
+          "sp": [
+            "3.4.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-018A",
+      "title": "Masalah harian wang",
+      "sp": [
+        "3.5.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 55,
+          "title": "3.5 Penyelesaian masalah",
+          "sp": [
+            "3.5.1"
+          ]
+        },
+        {
+          "lesson": 56,
+          "title": "3.5 Penyelesaian masalah",
+          "sp": [
+            "3.5.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-019A",
+      "title": "Tempoh hari dan jam",
+      "sp": [
+        "4.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 57,
+          "title": "4.1 Tempoh masa",
+          "sp": [
+            "4.1.1"
+          ]
+        },
+        {
+          "lesson": 58,
+          "title": "4.1 Tempoh masa",
+          "sp": [
+            "4.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-019B",
+      "title": "Tempoh bulan dan tahun dalam hari",
+      "sp": [
+        "4.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 57,
+          "title": "4.1 Tempoh masa",
+          "sp": [
+            "4.1.1"
+          ]
+        },
+        {
+          "lesson": 58,
+          "title": "4.1 Tempoh masa",
+          "sp": [
+            "4.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-020A",
+      "title": "Penukaran unit masa pecahan",
+      "sp": [
+        "4.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 59,
+          "title": "4.2 Perkaitan dalam masa",
+          "sp": [
+            "4.2.1"
+          ]
+        },
+        {
+          "lesson": 60,
+          "title": "4.2 Perkaitan dalam masa",
+          "sp": [
+            "4.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-020B",
+      "title": "Penukaran unit masa perpuluhan",
+      "sp": [
+        "4.2.2"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 61,
+          "title": "4.2 Perkaitan dalam masa",
+          "sp": [
+            "4.2.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-021A",
+      "title": "Tambah dan tolak masa pecahan",
+      "sp": [
+        "4.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 62,
+          "title": "4.3 Operasi asas melibatkan masa",
+          "sp": [
+            "4.3.1"
+          ]
+        },
+        {
+          "lesson": 63,
+          "title": "4.3 Operasi asas melibatkan masa",
+          "sp": [
+            "4.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-021B",
+      "title": "Tambah dan tolak masa perpuluhan",
+      "sp": [
+        "4.3.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 64,
+          "title": "4.3 Operasi asas melibatkan masa",
+          "sp": [
+            "4.3.2"
+          ]
+        },
+        {
+          "lesson": 65,
+          "title": "4.3 Operasi asas melibatkan masa",
+          "sp": [
+            "4.3.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-022A",
+      "title": "Masalah masa dan waktu",
+      "sp": [
+        "4.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 66,
+          "title": "4.4 Penyelesaian masalah",
+          "sp": [
+            "4.4.1"
+          ]
+        },
+        {
+          "lesson": 67,
+          "title": "4.4 Penyelesaian masalah",
+          "sp": [
+            "4.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-023A",
+      "title": "Penukaran panjang perpuluhan",
+      "sp": [
+        "5.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 68,
+          "title": "5.1 Panjang",
+          "sp": [
+            "5.1.1"
+          ]
+        },
+        {
+          "lesson": 69,
+          "title": "5.1 Panjang",
+          "sp": [
+            "5.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-023B",
+      "title": "Penukaran panjang pecahan",
+      "sp": [
+        "5.1.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 70,
+          "title": "5.1 Panjang",
+          "sp": [
+            "5.1.2"
+          ]
+        },
+        {
+          "lesson": 71,
+          "title": "5.1 Panjang",
+          "sp": [
+            "5.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-023C",
+      "title": "Tambah dan tolak panjang",
+      "sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-023D",
+      "title": "Darab dan bahagi panjang",
+      "sp": [
+        "5.1.5",
+        "5.1.6"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-024A",
+      "title": "Penukaran jisim",
+      "sp": [
+        "5.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 78,
+          "title": "5.2 Jisim",
+          "sp": [
+            "5.2.1"
+          ]
+        },
+        {
+          "lesson": 79,
+          "title": "5.2 Jisim",
+          "sp": [
+            "5.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-024B",
+      "title": "Tambah dan tolak jisim",
+      "sp": [
+        "5.2.2",
+        "5.2.3"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-024C",
+      "title": "Darab dan bahagi jisim",
+      "sp": [
+        "5.2.4",
+        "5.2.5"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-025A",
+      "title": "Penukaran isi padu cecair",
+      "sp": [
+        "5.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 86,
+          "title": "5.3 Isi padu cecair",
+          "sp": [
+            "5.3.1"
+          ]
+        },
+        {
+          "lesson": 87,
+          "title": "5.3 Isi padu cecair",
+          "sp": [
+            "5.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-025B",
+      "title": "Tambah dan tolak isi padu cecair",
+      "sp": [
+        "5.3.2",
+        "5.3.3"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-025C",
+      "title": "Darab dan bahagi isi padu cecair",
+      "sp": [
+        "5.3.4",
+        "5.3.5"
+      ],
+      "status": "NO_EXACT_OR_SUPERSET",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-026A",
+      "title": "Masalah ukuran dan sukatan",
+      "sp": [
+        "5.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 94,
+          "title": "5.4 Penyelesaian masalah",
+          "sp": [
+            "5.4.1"
+          ]
+        },
+        {
+          "lesson": 95,
+          "title": "5.4 Penyelesaian masalah",
+          "sp": [
+            "5.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-027A",
+      "title": "Ciri poligon sekata",
+      "sp": [
+        "6.1.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 96,
+          "title": "6.1 Poligon sekata",
+          "sp": [
+            "6.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-028A",
+      "title": "Ukur sudut pedalaman",
+      "sp": [
+        "6.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 97,
+          "title": "6.2 Sudut",
+          "sp": [
+            "6.2.1"
+          ]
+        },
+        {
+          "lesson": 98,
+          "title": "6.2 Sudut",
+          "sp": [
+            "6.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-029A",
+      "title": "Perimeter gabungan bentuk",
+      "sp": [
+        "6.3.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 99,
+          "title": "6.3 Perimeter dan luas",
+          "sp": [
+            "6.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-029B",
+      "title": "Luas gabungan bentuk",
+      "sp": [
+        "6.3.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 100,
+          "title": "6.3 Perimeter dan luas",
+          "sp": [
+            "6.3.2"
+          ]
+        },
+        {
+          "lesson": 101,
+          "title": "6.3 Perimeter dan luas",
+          "sp": [
+            "6.3.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-030A",
+      "title": "Isi padu gabungan pepejal",
+      "sp": [
+        "6.4.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 102,
+          "title": "6.4 Isi padu pepejal",
+          "sp": [
+            "6.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-031A",
+      "title": "Masalah ruang",
+      "sp": [
+        "6.5.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 103,
+          "title": "6.5 Penyelesaian masalah",
+          "sp": [
+            "6.5.1"
+          ]
+        },
+        {
+          "lesson": 104,
+          "title": "6.5 Penyelesaian masalah",
+          "sp": [
+            "6.5.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-032A",
+      "title": "Jarak mengufuk dan mencancang",
+      "sp": [
+        "7.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 105,
+          "title": "7.1 Koordinat pada sukuan pertama",
+          "sp": [
+            "7.1.1"
+          ]
+        },
+        {
+          "lesson": 106,
+          "title": "7.1 Koordinat pada sukuan pertama",
+          "sp": [
+            "7.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-033A",
+      "title": "Tiga jenis nisbah",
+      "sp": [
+        "7.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 107,
+          "title": "7.2 Nisbah",
+          "sp": [
+            "7.2.1"
+          ]
+        },
+        {
+          "lesson": 108,
+          "title": "7.2 Nisbah",
+          "sp": [
+            "7.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-034A",
+      "title": "Kadaran dan nilai tidak diketahui",
+      "sp": [
+        "7.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 109,
+          "title": "7.3 Kadaran",
+          "sp": [
+            "7.3.1"
+          ]
+        },
+        {
+          "lesson": 110,
+          "title": "7.3 Kadaran",
+          "sp": [
+            "7.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-035A",
+      "title": "Masalah koordinat, nisbah dan kadaran",
+      "sp": [
+        "7.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 111,
+          "title": "7.4 Penyelesaian masalah",
+          "sp": [
+            "7.4.1"
+          ]
+        },
+        {
+          "lesson": 112,
+          "title": "7.4 Penyelesaian masalah",
+          "sp": [
+            "7.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-036A",
+      "title": "Tafsir carta pai",
+      "sp": [
+        "8.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 113,
+          "title": "8.1 Carta pai",
+          "sp": [
+            "8.1.1"
+          ]
+        },
+        {
+          "lesson": 114,
+          "title": "8.1 Carta pai",
+          "sp": [
+            "8.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-037A",
+      "title": "Mod dan median",
+      "sp": [
+        "8.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 115,
+          "title": "8.2 Mod, median, min dan julat",
+          "sp": [
+            "8.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-037B",
+      "title": "Min dan julat",
+      "sp": [
+        "8.2.1"
+      ],
+      "status": "SP_ONLY_UNIQUE",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 115,
+          "title": "8.2 Mod, median, min dan julat",
+          "sp": [
+            "8.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 5,
+      "candidate_id": "T5-RPT-DRAFT-038A",
+      "title": "Masalah pengurusan data",
+      "sp": [
+        "8.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 116,
+          "title": "8.3 Penyelesaian masalah",
+          "sp": [
+            "8.3.1"
+          ]
+        },
+        {
+          "lesson": 117,
+          "title": "8.3 Penyelesaian masalah",
+          "sp": [
+            "8.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-01",
+      "title": "Bahagi pecahan",
+      "sp": [
+        "2.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 21,
+          "title": "2.1 Pecahan",
+          "sp": [
+            "2.1.1"
+          ]
+        },
+        {
+          "lesson": 22,
+          "title": "2.1 Pecahan",
+          "sp": [
+            "2.1.1"
+          ]
+        },
+        {
+          "lesson": 23,
+          "title": "2.1 Pecahan",
+          "sp": [
+            "2.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-02",
+      "title": "Mengenal zon masa",
+      "sp": [
+        "4.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 63,
+          "title": "4.1 Zon masa",
+          "sp": [
+            "4.1.1"
+          ]
+        },
+        {
+          "lesson": 64,
+          "title": "4.1 Zon masa",
+          "sp": [
+            "4.1.1"
+          ]
+        },
+        {
+          "lesson": 65,
+          "title": "4.1 Zon masa",
+          "sp": [
+            "4.1.1"
+          ]
+        },
+        {
+          "lesson": 66,
+          "title": "4.1 Zon masa",
+          "sp": [
+            "4.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-03",
+      "title": "Perbezaan masa",
+      "sp": [
+        "4.1.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 67,
+          "title": "4.1 Zon masa",
+          "sp": [
+            "4.1.2"
+          ]
+        },
+        {
+          "lesson": 68,
+          "title": "4.1 Zon masa",
+          "sp": [
+            "4.1.2"
+          ]
+        },
+        {
+          "lesson": 69,
+          "title": "4.1 Zon masa",
+          "sp": [
+            "4.1.2"
+          ]
+        },
+        {
+          "lesson": 70,
+          "title": "4.1 Zon masa",
+          "sp": [
+            "4.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-04",
+      "title": "Membentuk sudut",
+      "sp": [
+        "6.1.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 81,
+          "title": "6.1 Sudut",
+          "sp": [
+            "6.1.2"
+          ]
+        },
+        {
+          "lesson": 82,
+          "title": "6.1 Sudut",
+          "sp": [
+            "6.1.2"
+          ]
+        },
+        {
+          "lesson": 83,
+          "title": "6.1 Sudut",
+          "sp": [
+            "6.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-05",
+      "title": "Pusat bulatan, jejari dan diameter",
+      "sp": [
+        "6.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 84,
+          "title": "6.2 Bulatan",
+          "sp": [
+            "6.2.1"
+          ]
+        },
+        {
+          "lesson": 85,
+          "title": "6.2 Bulatan",
+          "sp": [
+            "6.2.1"
+          ]
+        },
+        {
+          "lesson": 86,
+          "title": "6.2 Bulatan",
+          "sp": [
+            "6.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-06",
+      "title": "Jarak mengufuk dan mencancang",
+      "sp": [
+        "7.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 93,
+          "title": "7.1 Koordinat pada sukuan pertama",
+          "sp": [
+            "7.1.1"
+          ]
+        },
+        {
+          "lesson": 94,
+          "title": "7.1 Koordinat pada sukuan pertama",
+          "sp": [
+            "7.1.1"
+          ]
+        },
+        {
+          "lesson": 95,
+          "title": "7.1 Koordinat pada sukuan pertama",
+          "sp": [
+            "7.1.1"
+          ]
+        },
+        {
+          "lesson": 96,
+          "title": "7.1 Koordinat pada sukuan pertama",
+          "sp": [
+            "7.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-07",
+      "title": "Carta pai",
+      "sp": [
+        "8.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 108,
+          "title": "8.1 Carta pai",
+          "sp": [
+            "8.1.1"
+          ]
+        },
+        {
+          "lesson": 109,
+          "title": "8.1 Carta pai",
+          "sp": [
+            "8.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-08",
+      "title": "Peristiwa mungkin dan tidak mungkin",
+      "sp": [
+        "8.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 110,
+          "title": "8.2 Kebolehjadian",
+          "sp": [
+            "8.2.1"
+          ]
+        },
+        {
+          "lesson": 111,
+          "title": "8.2 Kebolehjadian",
+          "sp": [
+            "8.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-09",
+      "title": "Skala kebolehjadian",
+      "sp": [
+        "8.2.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 112,
+          "title": "8.2 Kebolehjadian",
+          "sp": [
+            "8.2.2"
+          ]
+        },
+        {
+          "lesson": 113,
+          "title": "8.2 Kebolehjadian",
+          "sp": [
+            "8.2.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "FIN-T6-01",
+      "title": "Harga kos, harga jual, untung dan rugi",
+      "sp": [
+        "3.1.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 48,
+          "title": "3.1 Pengurusan kewangan",
+          "sp": [
+            "3.1.1"
+          ]
+        },
+        {
+          "lesson": 49,
+          "title": "3.1 Pengurusan kewangan",
+          "sp": [
+            "3.1.1"
+          ]
+        },
+        {
+          "lesson": 50,
+          "title": "3.1 Pengurusan kewangan",
+          "sp": [
+            "3.1.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "FIN-T6-02",
+      "title": "Insurans dan takaful",
+      "sp": [
+        "3.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 53,
+          "title": "3.2 Insurans dan Takaful",
+          "sp": [
+            "3.2.1"
+          ]
+        },
+        {
+          "lesson": 54,
+          "title": "3.2 Insurans dan Takaful",
+          "sp": [
+            "3.2.1"
+          ]
+        },
+        {
+          "lesson": 55,
+          "title": "3.2 Insurans dan Takaful",
+          "sp": [
+            "3.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "FIN-T6-03",
+      "title": "Masalah pengurusan kewangan",
+      "sp": [
+        "3.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 59,
+          "title": "3.3 Penyelesaian masalah",
+          "sp": [
+            "3.3.1"
+          ]
+        },
+        {
+          "lesson": 60,
+          "title": "3.3 Penyelesaian masalah",
+          "sp": [
+            "3.3.1"
+          ]
+        },
+        {
+          "lesson": 61,
+          "title": "3.3 Penyelesaian masalah",
+          "sp": [
+            "3.3.1"
+          ]
+        },
+        {
+          "lesson": 62,
+          "title": "3.3 Penyelesaian masalah",
+          "sp": [
+            "3.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-006",
+      "title": "Pola nombor",
+      "sp": [
+        "1.1.2"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 3,
+          "title": "1.1 Nombor bulat hingga 10 000 000",
+          "sp": [
+            "1.1.2"
+          ]
+        },
+        {
+          "lesson": 4,
+          "title": "1.1 Nombor bulat hingga 10 000 000",
+          "sp": [
+            "1.1.2"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-007",
+      "title": "Tambah dalam unit juta",
+      "sp": [
+        "1.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 11,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 12,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 13,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-008",
+      "title": "Tolak dalam unit juta",
+      "sp": [
+        "1.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 11,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 12,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 13,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-009",
+      "title": "Gabungan tambah dan tolak",
+      "sp": [
+        "1.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 11,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 12,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 13,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-010",
+      "title": "Darab nombor bulat dan unit juta",
+      "sp": [
+        "1.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 11,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 12,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 13,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-011",
+      "title": "Bahagi nombor bulat dan unit juta",
+      "sp": [
+        "1.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 11,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 12,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 13,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-012",
+      "title": "Darab dan bahagi berturutan",
+      "sp": [
+        "1.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 11,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 12,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 13,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        },
+        {
+          "lesson": 14,
+          "title": "1.2 Operasi asas dan operasi bergabung",
+          "sp": [
+            "1.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-079",
+      "title": "Nisbah bentuk termudah",
+      "sp": [
+        "7.2.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 97,
+          "title": "7.2 Nisbah",
+          "sp": [
+            "7.2.1"
+          ]
+        },
+        {
+          "lesson": 98,
+          "title": "7.2 Nisbah",
+          "sp": [
+            "7.2.1"
+          ]
+        },
+        {
+          "lesson": 99,
+          "title": "7.2 Nisbah",
+          "sp": [
+            "7.2.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-080",
+      "title": "Kadaran daripada nisbah",
+      "sp": [
+        "7.3.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 100,
+          "title": "7.3 Kadaran",
+          "sp": [
+            "7.3.1"
+          ]
+        },
+        {
+          "lesson": 101,
+          "title": "7.3 Kadaran",
+          "sp": [
+            "7.3.1"
+          ]
+        },
+        {
+          "lesson": 102,
+          "title": "7.3 Kadaran",
+          "sp": [
+            "7.3.1"
+          ]
+        },
+        {
+          "lesson": 103,
+          "title": "7.3 Kadaran",
+          "sp": [
+            "7.3.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    },
+    {
+      "year": 6,
+      "candidate_id": "MT6-PDP-081",
+      "title": "Masalah nisbah dan kadaran",
+      "sp": [
+        "7.4.1"
+      ],
+      "status": "SP_ONLY_AMBIGUOUS",
+      "exact_title_and_sp": [],
+      "exact_sp_options": [
+        {
+          "lesson": 104,
+          "title": "7.4 Penyelesaian masalah",
+          "sp": [
+            "7.4.1"
+          ]
+        },
+        {
+          "lesson": 105,
+          "title": "7.4 Penyelesaian masalah",
+          "sp": [
+            "7.4.1"
+          ]
+        },
+        {
+          "lesson": 106,
+          "title": "7.4 Penyelesaian masalah",
+          "sp": [
+            "7.4.1"
+          ]
+        },
+        {
+          "lesson": 107,
+          "title": "7.4 Penyelesaian masalah",
+          "sp": [
+            "7.4.1"
+          ]
+        }
+      ],
+      "superset_sp_options": [],
+      "ready": false
+    }
+  ],
+  "release_ready": 0,
+  "policy": "Exact SP set plus normalized title is triage evidence, not production identity or academic approval. SP-only, multiple, subset/superset and absent matches must not be auto-bound. v60 is staging source; Year 2–3 ordinary KSSR vs DPK and all live catalogue IDs must be separately verified. Preserve original objectives, PBD, source RPT and actual document bytes. No production changes."
+}
