@@ -3,7 +3,7 @@ import json
 import os
 from functools import lru_cache
 from pathlib import Path
-from web.kp2027_math_canary_web import expected_entry, FIVE_P_FLAG
+from web.kp2027_math_canary_web import expected_entry, FIVE_P_FLAG, PilotUnavailable
 
 MANIFEST=Path(__file__).resolve().parents[1]/"audits/rph_5p_math_kp2027_release_manifest_20261128.json"
 
@@ -26,7 +26,9 @@ def records():
             or r["source_word_sha256"]!=c["word"] or r["source_pdf_sha256"]!=c["pdf"]
             or r["dk_printed_page"]!=a["dk_printed_page"]
             or not a["source_catalog_verified"] or not a["sp_text_matched_in_combined_source"]
-            or r["correction_present"] is not bool(a.get("correction"))):
+            or r["correction_present"] is not bool(a.get("correction"))
+            or not isinstance(r.get("reviewed_evaluation"),str)
+            or not r["reviewed_evaluation"].strip()):
             raise ValueError("Source mismatch")
         result[key]=r
     if doc["total"]!=249 or len(rows)!=249 or set(result)!=expected:
@@ -43,7 +45,7 @@ def released_groups(ordinary_groups=None):
                 if ordinary_groups is None or n in ordinary_groups.get(g,[]):
                     out[g].append(n)
         return {g:sorted(ns) for g,ns in out.items()}
-    except (OSError,ValueError,TypeError,KeyError,RuntimeError,ImportError,AttributeError):
+    except (OSError,ValueError,TypeError,KeyError,RuntimeError,ImportError,AttributeError,PilotUnavailable):
         return {"A":[],"B":[]}
 
 def is_released(g,n):
