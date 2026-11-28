@@ -1,0 +1,1295 @@
+{
+  "status": "NEW_PEDAGOGICAL_DRAFT_DSKP_TEXT_ONLY",
+  "subject": "SAINS SK",
+  "year": 6,
+  "curriculum": "KSSR",
+  "source": {
+    "drive_id": "1YI2il9wHplhizlv7bfooFhCvQKpsFDZy",
+    "title": "DSKP Sains SK Tahun 6.pdf",
+    "verification": "All SP strings matched normalized extracted DSKP text; retain source typos; visual QA pending."
+  },
+  "policy": "New candidates, not 96 production PdP; no RPT/source RPH binding or textbook page claims. No release. Safety holds for microbiology and preservation project; no culturing unknown microbes.",
+  "records": [
+    {
+      "candidate_id": "SCI-T6-DRAFT-001",
+      "title": "Pemerhatian dan pengelasan sisa",
+      "dskp": [
+        {
+          "code": "1.1.1",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Memerhati dengan menggunakan semua deria yang terlibat dan alat jika perlu untuk membuat pemerhatian secara kualitatif bagi menerangkan fenomena atau perubahan yang berlaku."
+        },
+        {
+          "code": "1.1.2",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengelas dengan membandingkan atau mengenal pasti persamaan dan perbezaan berdasarkan ciri sepunya."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar sisa sekolah.",
+        "exploration": "Perhatikan ciri bahan dan asingkan kad mengikut jenis.",
+        "explanation": "Jelaskan pemerhatian berbeza daripada pengelasan.",
+        "elaboration": "Kelaskan lapan gambar menggunakan dua kriteria.",
+        "evaluation": "Empat pemerhatian dan pengelasan beralasan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-002",
+      "title": "Ukuran dan inferens gerakan",
+      "dskp": [
+        {
+          "code": "1.1.3",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengukur dan menggunakan nombor dengan menggunakan alat dan unit piawai dengan teknik yang betul."
+        },
+        {
+          "code": "1.1.4",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Membuat inferens dengan menyatakan kesimpulan awal atau penerangan yang munasabah bagi sesuatu pemerhatian dengan menggunakan maklumat yang diperoleh."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal troli yang bergerak lebih jauh.",
+        "exploration": "Ukur jarak dua troli dengan pembaris.",
+        "explanation": "Bezakan ukuran sebenar daripada inferens tentang geseran.",
+        "elaboration": "Banding data ulangan dan cadangkan penerangan.",
+        "evaluation": "Tiga bacaan dan satu inferens berasas."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-003",
+      "title": "Ramalan dan komunikasi data",
+      "dskp": [
+        {
+          "code": "1.1.5",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Meramal dengan membuat jangkaan tentang sesuatu peristiwa atau fenomena berdasarkan pemerhatian, pengalaman lalu atau data."
+        },
+        {
+          "code": "1.1.6",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Berkomunikasi dengan merekod maklumat atau idea dalam bentuk yang sesuai dan mempersembahkan maklumat atau idea tersebut secara sistematik."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk jadual jarak troli bagi beberapa masa.",
+        "exploration": "Kenal pola dan ramal bacaan seterusnya.",
+        "explanation": "Jelaskan ramalan berdasarkan data dan ketidakpastian.",
+        "elaboration": "Bina jadual dan bentang alasan.",
+        "evaluation": "Satu ramalan beralasan serta jadual berlabel."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-004",
+      "title": "Kronologi dan tafsiran graf",
+      "dskp": [
+        {
+          "code": "1.1.7",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Menggunakan perhubungan ruang dan masa dengan menyusun kejadian sesuatu fenomena atau peristiwa mengikut kronologi berdasarkan masa."
+        },
+        {
+          "code": "1.1.8",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mentafsir data dengan memilih idea yang relevan tentang objek, peristiwa atau pola yang terdapat pada data untuk membuat penerangan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer siri foto kereta mainan bergerak.",
+        "exploration": "Padankan foto dengan masa dan jarak.",
+        "explanation": "Jelaskan urutan kronologi dan pola graf jarak-masa.",
+        "elaboration": "Tafsir dua bahagian graf pergerakan.",
+        "evaluation": "Urutan betul serta dua tafsiran tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-005",
+      "title": "Definisi operasi dan pemboleh ubah geseran",
+      "dskp": [
+        {
+          "code": "1.1.9",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mendefinisi secara operasi dengan memerihalkan satu tafsiran tentang perkara yang dilakukan dan diperhatikan bagi sesuatu situasi mengikut aspek yang ditentukan."
+        },
+        {
+          "code": "1.1.10",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan setelah pemboleh ubah dimanipulasi ditentukan dalam sesuatu penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya cara mengukur kesan geseran.",
+        "exploration": "Banding daya menarik blok ringan atas permukaan berlainan.",
+        "explanation": "Takrif operasi berdasarkan bacaan neraca spring pada keadaan ujian sama.",
+        "elaboration": "Rancang ujian jenis permukaan dengan jisim dan kaedah tarikan tetap.",
+        "evaluation": "Definisi operasi dan tiga pemboleh ubah tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-006",
+      "title": "Hipotesis dan eksperimen kestabilan",
+      "dskp": [
+        {
+          "code": "1.1.11",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Membuat hipotesis dengan membuat pernyataan umum yang boleh diuji tentang hubungan antara pemboleh ubah dalam sesuatu penyiasatan."
+        },
+        {
+          "code": "1.1.12",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengeksperimen dengan menggunakan kemahiran proses sains asas bagi mengumpul dan mentafsir data serta membuat rumusan untuk membuktikan hipotesis dan membuat laporan."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal model tapak luas atau sempit lebih stabil.",
+        "exploration": "Uji model ringan dengan tinggi sama pada papan condong terkawal.",
+        "explanation": "Jelaskan hipotesis boleh diuji dan keperluan mengulang bacaan.",
+        "elaboration": "Rekod sudut mula tumbang dan rumus berdasarkan data.",
+        "evaluation": "Hipotesis, jadual dan rumusan berasaskan bukti."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-007",
+      "title": "Organ pembiakan manusia",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 46,
+          "sk": "2.1 Pembiakan Manusia",
+          "sp": "Memerihalkan fungsi organ pembiakan lelaki dan perempuan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk carta anatomi pendidikan yang sesuai umur.",
+        "exploration": "Padankan label testis, zakar, faraj, ovari, tiub Fallopio dan uterus.",
+        "explanation": "Terangkan fungsi asas setiap organ menggunakan istilah saintifik.",
+        "elaboration": "Lengkapkan rajah berlabel tanpa meminta maklumat peribadi murid.",
+        "evaluation": "Sekurang-kurangnya lima padanan fungsi tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-008",
+      "title": "Persenyawaan dan perkembangan bayi",
+      "dskp": [
+        {
+          "code": "2.1.2",
+          "printed_page": 46,
+          "sk": "2.1 Pembiakan Manusia",
+          "sp": "Menjelaskan proses persenyawaan manusia sehingga bayi dilahirkan."
+        },
+        {
+          "code": "2.1.3",
+          "printed_page": 46,
+          "sk": "2.1 Pembiakan Manusia",
+          "sp": "Menaakul kepentingan pembiakan kepada manusia."
+        },
+        {
+          "code": "2.1.4",
+          "printed_page": 46,
+          "sk": "2.1 Pembiakan Manusia",
+          "sp": "Menjelaskan pemerhatian tentang pembiakan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk urutan ilustrasi perkembangan janin.",
+        "exploration": "Susun kad persenyawaan, perkembangan dalam uterus dan kelahiran.",
+        "explanation": "Jelaskan persenyawaan berlaku apabila sperma bersatu dengan ovum; perkembangan berlaku dalam uterus.",
+        "elaboration": "Lakar urutan dan bincang kepentingan pembiakan untuk kesinambungan manusia.",
+        "evaluation": "Urutan tepat dan satu penerangan kepentingan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-009",
+      "title": "Sistem saraf pusat dan periferi",
+      "dskp": [
+        {
+          "code": "2.2.1",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Saraf",
+          "sp": "Mengenal pasti jenis sistem saraf manusia."
+        },
+        {
+          "code": "2.2.2",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Saraf",
+          "sp": "Memerihalkan sistem saraf pusat dan fungsinya."
+        },
+        {
+          "code": "2.2.3",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Saraf",
+          "sp": "Menyatakan fungsi sistem saraf periferi."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer rajah otak, saraf tunjang dan rangkaian saraf.",
+        "exploration": "Padankan kad bahagian serta fungsi.",
+        "explanation": "Jelaskan sistem pusat memproses maklumat dan periferi membawa isyarat antara pusat dan tubuh.",
+        "elaboration": "Lakar aliran isyarat bagi gerak balas harian yang selamat.",
+        "evaluation": "Tiga bahagian dan fungsi dikenal pasti."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-010",
+      "title": "Penjagaan sistem saraf",
+      "dskp": [
+        {
+          "code": "2.2.4",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Saraf",
+          "sp": "Meramalkan keadaan yang berlaku jika sistem saraf periferi tidak berfungsi."
+        },
+        {
+          "code": "2.2.5",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Saraf",
+          "sp": "Menjana idea tentang cara menjaga sistem saraf."
+        },
+        {
+          "code": "2.2.6",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Saraf",
+          "sp": "Menjelaskan pemerhatian tentang sistem saraf melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ilustrasi pemakaian topi keledar.",
+        "exploration": "Bincang kad situasi gangguan isyarat dan langkah keselamatan.",
+        "explanation": "Jelaskan kesan gangguan saraf periferi berbeza mengikut saraf terlibat.",
+        "elaboration": "Bina poster keselamatan, postur dan amalan mendapatkan bantuan apabila cedera.",
+        "evaluation": "Dua kesan yang munasabah dan tiga langkah penjagaan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-011",
+      "title": "Jenis mikroorganisma",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 48,
+          "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+          "sp": "Menjelas dengan contoh jenis mikroorganisma."
+        },
+        {
+          "code": "3.1.2",
+          "printed_page": 48,
+          "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+          "sp": "Mengitlak maksud mikroorganisma."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer mikrograf dan ilustrasi berskala.",
+        "exploration": "Padankan fungi mikroskopik, protozoa, alga mikroskopik, bakteria dan virus dengan contoh rujukan.",
+        "explanation": "Jelaskan mikroorganisma amat kecil; virus dibincang bersama tetapi bukan organisma bersel dan memerlukan hos.",
+        "elaboration": "Bina peta kategori daripada kad gambar.",
+        "evaluation": "Lima padanan dan penerangan maksud tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-012",
+      "title": "Proses hidup mikroorganisma",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 48,
+          "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+          "sp": "Memerihalkan proses hidup mikroorganisma dengan menjalankan penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk rakaman mikroskop dan contoh yis roti.",
+        "exploration": "Perhatikan demonstrasi yis gred makanan yang disediakan guru dalam bekas sesuai, serta video pergerakan protozoa.",
+        "explanation": "Jelaskan penghasilan gas oleh yis dan bahawa tidak semua mikroorganisma bergerak atau menjalani proses sama.",
+        "elaboration": "Catat pemerhatian melalui jadual; tiada pengkulturan sampel persekitaran atau makanan rosak.",
+        "evaluation": "Dua pemerhatian dan penerangan proses berdasarkan bukti."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-013",
+      "title": "Faktor pertumbuhan mikroorganisma",
+      "dskp": [
+        {
+          "code": "3.1.4",
+          "printed_page": 48,
+          "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+          "sp": "Mengeksperimen untuk menentukan faktor yang mempengaruhi pertumbuhan mikrooganisma."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer data rujukan pertumbuhan yis makanan.",
+        "exploration": "Banding data terkawal suhu, nutrien, air, keasidan dan udara.",
+        "explanation": "Jelaskan faktor berbeza mengikut jenis mikroorganisma; reka ujian adil secara kertas.",
+        "elaboration": "Guru hanya gunakan protokol sekolah yang diluluskan bagi yis gred makanan; jika tiada, tafsir data eksperimen sedia ada dan tandakan amali belum dilaksana.",
+        "evaluation": "Kenal pemboleh ubah dan rumus data; pengesahan SP eksperimen menunggu amali selamat."
+      },
+      "scope_note": "HOLD AMALI: perlu protokol sekolah diluluskan dan pengawasan guru. Analisis data sahaja tidak mengesahkan SP eksperimen.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-014",
+      "title": "Kesan mikroorganisma",
+      "dskp": [
+        {
+          "code": "3.1.5",
+          "printed_page": 49,
+          "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+          "sp": "Memerihalkan kesan tindakan mikroorganisma dalam kehidupan harian."
+        },
+        {
+          "code": "3.1.6",
+          "printed_page": 49,
+          "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+          "sp": "Menjelaskan pemerhatian tentang mikroorganisma melalui melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad roti, yogurt dan gambar makanan rosak.",
+        "exploration": "Kelaskan contoh manfaat dan mudarat menggunakan media.",
+        "explanation": "Jelaskan kegunaan dalam makanan dan penguraian serta risiko penyakit atau kerosakan.",
+        "elaboration": "Hasilkan carta amalan kebersihan dan manfaat mikroorganisma.",
+        "evaluation": "Dua manfaat dan dua mudarat tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-015",
+      "title": "Interaksi dan persaingan haiwan",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 50,
+          "sk": "4.1 Interaksi antara Haiwan",
+          "sp": "Memerihalkan jenis interaksi antara hidupan."
+        },
+        {
+          "code": "4.1.2",
+          "printed_page": 50,
+          "sk": "4.1 Interaksi antara Haiwan",
+          "sp": "Menjelas dengan contoh faktor persaingan bagi haiwan intraspesies dan interspesies."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ilustrasi dua haiwan mencari makanan.",
+        "exploration": "Asing kad mangsa-pemangsa, persaingan dan simbiosis.",
+        "explanation": "Jelaskan persaingan dalam spesies dan antara spesies bagi sumber terhad.",
+        "elaboration": "Banding situasi makanan, air, ruang dan pasangan.",
+        "evaluation": "Tiga jenis interaksi dan dua faktor persaingan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-016",
+      "title": "Simbiosis haiwan",
+      "dskp": [
+        {
+          "code": "4.1.3",
+          "printed_page": 50,
+          "sk": "4.1 Interaksi antara Haiwan",
+          "sp": "Menjelaskan melalui contoh jenis interaksi simbiosis antara haiwan."
+        },
+        {
+          "code": "4.1.4",
+          "printed_page": 50,
+          "sk": "4.1 Interaksi antara Haiwan",
+          "sp": "Menjelaskan pemerhatian tentang interaksi antara haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad ikan badut, remora dan kutu.",
+        "exploration": "Banding kesan kepada kedua-dua organisma daripada contoh bersumber.",
+        "explanation": "Jelaskan mutualisme, komensalisme dan parasitisme.",
+        "elaboration": "Bina jadual manfaat, tiada kesan ketara dan mudarat.",
+        "evaluation": "Tiga pengelasan dengan alasan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-017",
+      "title": "Persaingan tumbuhan",
+      "dskp": [
+        {
+          "code": "4.2.1",
+          "printed_page": 51,
+          "sk": "4.2 Interaksi antara Tumbuhan",
+          "sp": "Memerihalkan faktor persaingan antara tumbuhan dengan menjalankan penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding foto anak pokok jarang dan padat.",
+        "exploration": "Sediakan dua bekas dengan kepadatan anak pokok berlainan dan faktor lain sama.",
+        "explanation": "Jelaskan persaingan cahaya, ruang, air dan nutrien; ukur perubahan beberapa hari.",
+        "elaboration": "Rekod data sebenar dan banding pertumbuhan tanpa mereka dapatan.",
+        "evaluation": "Jadual dan rumusan selepas pemerhatian susulan."
+      },
+      "scope_note": "Pemerhatian susulan sebenar diperlukan.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-018",
+      "title": "Simbiosis tumbuhan",
+      "dskp": [
+        {
+          "code": "4.2.2",
+          "printed_page": 51,
+          "sk": "4.2 Interaksi antara Tumbuhan",
+          "sp": "Menjelaskan melalui contoh jenis interaksi simbiosis antara tumbuhan."
+        },
+        {
+          "code": "4.2.3",
+          "printed_page": 51,
+          "sk": "4.2 Interaksi antara Tumbuhan",
+          "sp": "Menjelaskan pemerhatian tentang interaksi antara tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar orkid epifit dan tumbuhan parasit.",
+        "exploration": "Banding hubungan dengan tumbuhan perumah menggunakan carta.",
+        "explanation": "Jelaskan komensalisme dan parasitisme; epifit bukan semestinya parasit.",
+        "elaboration": "Lakar dua hubungan dan bentangkan kesannya.",
+        "evaluation": "Dua contoh dan kesan terhadap perumah tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-019",
+      "title": "Pemeliharaan dan pemuliharaan",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 52,
+          "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+          "sp": "Menyatakan maksud pemeliharaan dan pemuliharaan haiwan dan tumbuhan."
+        },
+        {
+          "code": "5.1.2",
+          "printed_page": 52,
+          "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+          "sp": "Menjana idea cara pemeliharaan dan pemuliharaan haiwan dan tumbuhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding ilustrasi habitat terpelihara dan habitat dipulihkan.",
+        "exploration": "Padankan tindakan perlindungan habitat, penanaman semula dan pemulihan populasi.",
+        "explanation": "Jelaskan maksud kedua-dua konsep serta hubungan antara tindakan.",
+        "elaboration": "Cadangkan tindakan di sekolah untuk menjaga hidupan setempat.",
+        "evaluation": "Dua maksud dan tiga tindakan munasabah."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-020",
+      "title": "Pupus dan ancaman kepupusan",
+      "dskp": [
+        {
+          "code": "5.1.3",
+          "printed_page": 52,
+          "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+          "sp": "Menjelas dengan contoh haiwan yang pupus."
+        },
+        {
+          "code": "5.1.4",
+          "printed_page": 52,
+          "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+          "sp": "Menjelaskan melalui contoh haiwan dan tumbuhan yang mengalami ancaman kepupusan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar dodo dan haiwan yang statusnya ditunjukkan pada kad sumber.",
+        "exploration": "Bezakan spesies pupus dengan spesies masih wujud tetapi terancam.",
+        "explanation": "Jelaskan perbezaan kategori; guru semak status konservasi semasa melalui sumber berautoriti.",
+        "elaboration": "Bina jadual contoh haiwan dan tumbuhan daripada bahan terkini.",
+        "evaluation": "Dua contoh pupus dan dua contoh terancam yang disahkan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-021",
+      "title": "Punca ancaman dan kesan pemuliharaan",
+      "dskp": [
+        {
+          "code": "5.1.5",
+          "printed_page": 52,
+          "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+          "sp": "Memerihalkan faktor yang menyebabkan haiwan dan tumbuhan diancam kepupusan."
+        },
+        {
+          "code": "5.1.6",
+          "printed_page": 53,
+          "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+          "sp": "Menjana idea tentang kesan pemeliharaan dan pemuliharaan terhadap haiwan dan tumbuhan yang mengalami ancaman kepupusan."
+        },
+        {
+          "code": "5.1.7",
+          "printed_page": 53,
+          "sk": "5.1 Pemeliharaan dan Pemuliharaan untuk Keseimbangan Alam",
+          "sp": "Menjelaskan pemerhatian tentang pemeliharaan dan pemuliharaan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer rajah perubahan habitat hutan.",
+        "exploration": "Susun kad punca, kesan dan tindakan mitigasi.",
+        "explanation": "Jelaskan kehilangan habitat, pencemaran dan eksploitasi boleh menjejaskan populasi.",
+        "elaboration": "Bentangkan peta tindakan bagi satu habitat dan kesan dijangka.",
+        "evaluation": "Tiga faktor, dua tindakan serta satu kesan beralasan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-022",
+      "title": "Daya dan kesannya",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 56,
+          "sk": "6.1 Daya dan Kesannya",
+          "sp": "Menyatakan maksud daya dengan menjalankan aktiviti."
+        },
+        {
+          "code": "6.1.2",
+          "printed_page": 56,
+          "sk": "6.1 Daya dan Kesannya",
+          "sp": "Menjelas dengan contoh kesan daya dengan menjalankan aktiviti."
+        },
+        {
+          "code": "6.1.3",
+          "printed_page": 56,
+          "sk": "6.1 Daya dan Kesannya",
+          "sp": "Menjelaskan pemerhatian tentang daya dan kesannya melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tolak kereta mainan dan tarik blok ringan.",
+        "exploration": "Uji kesan daya pada arah, kelajuan, bentuk dan keadaan gerakan model.",
+        "explanation": "Jelaskan daya ialah tarikan atau tolakan.",
+        "elaboration": "Lakar lima contoh kesan daya dan padankan pemerhatian.",
+        "evaluation": "Maksud daya dan empat daripada lima kesan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-023",
+      "title": "Daya geseran",
+      "dskp": [
+        {
+          "code": "6.2.1",
+          "printed_page": 57,
+          "sk": "6.2 Daya Geseran",
+          "sp": "Menyatakan maksud daya geseran dengan menjalankan aktiviti."
+        },
+        {
+          "code": "6.2.2",
+          "printed_page": 57,
+          "sk": "6.2 Daya Geseran",
+          "sp": "Memerihalkan kesan daya geseran."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk blok bergerak atas meja.",
+        "exploration": "Tarik blok ringan di atas kain dan permukaan licin.",
+        "explanation": "Jelaskan geseran menentang gerakan relatif; boleh menghasilkan haba atau haus.",
+        "elaboration": "Banding situasi tapak kasut, brek dan permukaan model.",
+        "evaluation": "Maksud geseran dan dua kesan dengan contoh."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-024",
+      "title": "Faktor geseran",
+      "dskp": [
+        {
+          "code": "6.2.3",
+          "printed_page": 57,
+          "sk": "6.2 Daya Geseran",
+          "sp": "Mengeksperimen untuk menentukan faktor yang mempengaruhi daya geseran."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal bacaan neraca spring bagi blok ringan dan lebih berat.",
+        "exploration": "Jalankan ujian jisim pada permukaan sama, kemudian jenis permukaan pada jisim sama.",
+        "explanation": "Jelaskan pemboleh ubah setiap ujian dan kaedah bacaan konsisten.",
+        "elaboration": "Ulang dan rekod daya tarikan semasa gerakan perlahan seragam.",
+        "evaluation": "Dua rumusan berasaskan data ujian berasingan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-025",
+      "title": "Aplikasi geseran",
+      "dskp": [
+        {
+          "code": "6.2.4",
+          "printed_page": 57,
+          "sk": "6.2 Daya Geseran",
+          "sp": "Menjana idea untuk menyelesaikan masalah tentang daya geseran dalam kehidupan harian."
+        },
+        {
+          "code": "6.2.5",
+          "printed_page": 57,
+          "sk": "6.2 Daya Geseran",
+          "sp": "Menjelaskan pemerhatian tentang daya geseran melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar tayar dan roda troli.",
+        "exploration": "Padankan masalah memerlukan lebih atau kurang geseran.",
+        "explanation": "Jelaskan pemilihan permukaan kasar, roda atau pelinciran berdasarkan fungsi.",
+        "elaboration": "Lakar penyelesaian dua situasi harian tanpa ujian berbahaya.",
+        "evaluation": "Dua cadangan dengan alasan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-026",
+      "title": "Kewujudan tekanan udara",
+      "dskp": [
+        {
+          "code": "6.3.1",
+          "printed_page": 58,
+          "sk": "6.3 Tekanan Udara",
+          "sp": "Memerihalkan kewujudan tekanan udara di sekeliling dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer picagari plastik tanpa jarum.",
+        "exploration": "Tekan omboh perlahan apabila muncung ditutup menggunakan alat guru.",
+        "explanation": "Jelaskan udara mengenakan tekanan akibat pelanggaran zarah pada permukaan.",
+        "elaboration": "Banding demonstrasi dengan muncung terbuka dan tertutup.",
+        "evaluation": "Dua pemerhatian dan penerangan tekanan udara."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-027",
+      "title": "Tekanan udara dan ketinggian",
+      "dskp": [
+        {
+          "code": "6.3.2",
+          "printed_page": 58,
+          "sk": "6.3 Tekanan Udara",
+          "sp": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer jadual tekanan pada aras laut dan gunung.",
+        "exploration": "Susun bacaan mengikut ketinggian.",
+        "explanation": "Jelaskan tekanan atmosfera lazimnya menurun apabila ketinggian meningkat.",
+        "elaboration": "Lukis graf ringkas dan tafsir pola.",
+        "evaluation": "Satu rumusan dan dua bacaan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-028",
+      "title": "Aplikasi tekanan udara",
+      "dskp": [
+        {
+          "code": "6.3.3",
+          "printed_page": 58,
+          "sk": "6.3 Tekanan Udara",
+          "sp": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian."
+        },
+        {
+          "code": "6.3.4",
+          "printed_page": 58,
+          "sk": "6.3 Tekanan Udara",
+          "sp": "Menjelaskan pemerhatian tentang tekanan udara melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer model penyedut minuman dan cawan sedut.",
+        "exploration": "Perhatikan demonstrasi guru menggunakan air tanpa perkongsian penyedut.",
+        "explanation": "Jelaskan perbezaan tekanan membolehkan cecair bergerak atau cawan melekap.",
+        "elaboration": "Lakar arah kesan tekanan bagi dua alat.",
+        "evaluation": "Dua aplikasi dengan penerangan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-029",
+      "title": "Unit dan pengiraan kelajuan",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 60,
+          "sk": "7.1 Kelajuan Objek",
+          "sp": "Menyatakan unit bagi kelajuan."
+        },
+        {
+          "code": "7.1.3",
+          "printed_page": 60,
+          "sk": "7.1 Kelajuan Objek",
+          "sp": "Menyelesaikan masalah berkaitan kelajuan menggunakan rumus."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua kad jarak dan masa.",
+        "exploration": "Padankan km/j, m/s dan cm/s dengan situasi sesuai.",
+        "explanation": "Model kelajuan = jarak ÷ masa dan susunan semula rumus.",
+        "elaboration": "Kira kelajuan, jarak atau masa dengan unit konsisten.",
+        "evaluation": "Empat daripada lima pengiraan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-030",
+      "title": "Eksperimen kelajuan troli",
+      "dskp": [
+        {
+          "code": "7.1.2",
+          "printed_page": 60,
+          "sk": "7.1 Kelajuan Objek",
+          "sp": "Mengeksperimen untuk menentukan hubungan antara kelajuan, jarak dan masa."
+        },
+        {
+          "code": "7.1.4",
+          "printed_page": 60,
+          "sk": "7.1 Kelajuan Objek",
+          "sp": "Mendefinisi secara operasi kelajuan dengan menjalankan aktiviti."
+        },
+        {
+          "code": "7.1.5",
+          "printed_page": 60,
+          "sk": "7.1 Kelajuan Objek",
+          "sp": "Menjelaskan pemerhatian tentang kelajuan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal troli yang lebih laju pada laluan sama.",
+        "exploration": "Ukur masa bagi jarak tetap, kemudian jarak bagi masa tetap menggunakan model guru.",
+        "explanation": "Takrif operasi kelajuan melalui jarak per unit masa dan banding data.",
+        "elaboration": "Ulang percubaan, kira kelajuan purata dan bentangkan jadual.",
+        "evaluation": "Dua perbandingan berasaskan data serta definisi operasi."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-031",
+      "title": "Kerosakan makanan",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 62,
+          "sk": "8.1 Kerosakan Makanan",
+          "sp": "Menjelas dengan contoh ciri makanan yang telah rosak."
+        },
+        {
+          "code": "8.1.2",
+          "printed_page": 62,
+          "sk": "8.1 Kerosakan Makanan",
+          "sp": "Menyatakan bahawa kerosakan makanan disebabkan oleh tindakan mikroorganisma."
+        },
+        {
+          "code": "8.1.3",
+          "printed_page": 62,
+          "sk": "8.1 Kerosakan Makanan",
+          "sp": "Menjelaskan pemerhatian tentang kerosakan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar makanan segar dan rosak.",
+        "exploration": "Kenal ciri visual melalui media; tiada merasa, menghidu atau menyentuh makanan rosak.",
+        "explanation": "Jelaskan mikroorganisma boleh menyebabkan kerosakan, selain faktor lain.",
+        "elaboration": "Bina carta tanda kerosakan dan amalan membuang dengan selamat.",
+        "evaluation": "Tiga ciri dan penerangan peranan mikroorganisma."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-032",
+      "title": "Tujuan dan kaedah pengawetan",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 63,
+          "sk": "8.2 Pengawetan Makanan",
+          "sp": "Memerihalkan tujuan pengawetan makanan."
+        },
+        {
+          "code": "8.2.2",
+          "printed_page": 63,
+          "sk": "8.2 Pengawetan Makanan",
+          "sp": "Menghubungkait kaedah pengawetan makanan dengan faktor yang mempengaruhi pertumbuhan mikroorganisma."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer label makanan kering, sejuk beku dan dipasteur.",
+        "exploration": "Padankan kaedah dengan faktor air, suhu atau keadaan persekitaran.",
+        "explanation": "Jelaskan pengawetan melambatkan atau menghalang proses hidup mikroorganisma.",
+        "elaboration": "Banding kaedah menggunakan kad rujukan makanan.",
+        "evaluation": "Lima padanan dan satu tujuan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-033",
+      "title": "Projek pelbagai kaedah pengawetan",
+      "dskp": [
+        {
+          "code": "8.2.3",
+          "printed_page": 63,
+          "sk": "8.2 Pengawetan Makanan",
+          "sp": "Menjalankan projek pengawetan sejenis makanan dengan pelbagai kaedah."
+        },
+        {
+          "code": "8.2.4",
+          "printed_page": 63,
+          "sk": "8.2 Pengawetan Makanan",
+          "sp": "Merumuskan terdapat makanan yang boleh diawet lebih daripada satu kaedah pengawetan."
+        },
+        {
+          "code": "8.2.5",
+          "printed_page": 63,
+          "sk": "8.2 Pengawetan Makanan",
+          "sp": "Mengitlak terdapat makanan boleh diawet dengan menggabungkan lebih daripada satu kaedah pengawetan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar buah segar, dikeringkan dan disejukbekukan.",
+        "exploration": "Guru sediakan projek sekolah selamat menggunakan makanan biasa dengan pengeringan terkawal dan penyejukbekuan; jangan biakkan makanan rosak.",
+        "explanation": "Jelaskan satu makanan boleh diproses melalui beberapa kaedah, termasuk gabungan industri yang dikawal.",
+        "elaboration": "Rekod perubahan fizikal dan masa; tiada makanan projek dimakan; banding data rujukan.",
+        "evaluation": "Rekod dua kaedah dan rumusan; pengesahan amali memerlukan prosedur sekolah."
+      },
+      "scope_note": "HOLD AMALI: prosedur pengawetan selamat dan penilaian projek sebenar perlu disahkan.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-034",
+      "title": "Kepentingan teknologi pengawetan",
+      "dskp": [
+        {
+          "code": "8.2.6",
+          "printed_page": 64,
+          "sk": "8.2 Pengawetan Makanan",
+          "sp": "Memerihalkan kepentingan teknologi pengawetan makanan bagi memenuhi keperluan bekalan makanan."
+        },
+        {
+          "code": "8.2.7",
+          "printed_page": 64,
+          "sk": "8.2 Pengawetan Makanan",
+          "sp": "Menjelaskan pemerhatian tentang pengawetan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk ilustrasi lebihan hasil pertanian bermusim.",
+        "exploration": "Bincang kad simpanan, pengangkutan dan pengurangan pembaziran.",
+        "explanation": "Jelaskan bagaimana pengawetan menyokong bekalan makanan apabila dikendalikan dengan betul.",
+        "elaboration": "Bina poster rantaian bekalan makanan dan bentangkan.",
+        "evaluation": "Tiga kepentingan dengan contoh."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-035",
+      "title": "Jenis bahan buangan",
+      "dskp": [
+        {
+          "code": "9.1.1",
+          "printed_page": 65,
+          "sk": "9.1 Pengurusan Bahan Buangan",
+          "sp": "Mengenal pasti bahan buangan berdasarkan jenis bahan."
+        },
+        {
+          "code": "9.1.2",
+          "printed_page": 65,
+          "sk": "9.1 Pengurusan Bahan Buangan",
+          "sp": "Menyatakan maksud bahan buangan terbiodegradasi dan tidak terbiodegradasi."
+        },
+        {
+          "code": "9.1.3",
+          "printed_page": 65,
+          "sk": "9.1 Pengurusan Bahan Buangan",
+          "sp": "Mengelaskan bahan buangan kepada bahan terbiodegradasi dan tidak terbiodegradasi."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad sisa makanan, kertas, plastik, logam dan e-sisa.",
+        "exploration": "Kelaskan gambar berdasarkan jenis serta kebolehuraian.",
+        "explanation": "Jelaskan biodegradasi oleh organisma dan pengaruh keadaan persekitaran.",
+        "elaboration": "Padankan contoh dan asing sisa berbahaya melalui kad sahaja.",
+        "evaluation": "Enam pengelasan tepat dan dua maksud."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-036",
+      "title": "Pengurusan bahan buangan 5R",
+      "dskp": [
+        {
+          "code": "9.1.4",
+          "printed_page": 65,
+          "sk": "9.1 Pengurusan Bahan Buangan",
+          "sp": "Menaakul penggunaan bahan terbiodegradasi dan tidak terbiodegradasi secara berhemah."
+        },
+        {
+          "code": "9.1.5",
+          "printed_page": 66,
+          "sk": "9.1 Pengurusan Bahan Buangan",
+          "sp": "Memerihalkan pengurusan bahan buangan secara terancang untuk kehidupan lestari."
+        },
+        {
+          "code": "9.1.6",
+          "printed_page": 66,
+          "sk": "9.1 Pengurusan Bahan Buangan",
+          "sp": "Menjelaskan pemerhatian tentang pengurusan bahan buangan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar tong sampah bercampur.",
+        "exploration": "Audit sisa bersih melalui gambar atau rekod kelas.",
+        "explanation": "Jelaskan refuse, reduce, reuse, repair dan recycle.",
+        "elaboration": "Rancang tindakan mingguan untuk mengurangkan sisa dan rekod hasil.",
+        "evaluation": "Tiga tindakan dengan alasan kelestarian dan satu rekod."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-037",
+      "title": "Gerhana Bulan",
+      "dskp": [
+        {
+          "code": "10.1.1",
+          "printed_page": 68,
+          "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+          "sp": "Memerihalkan fenomena gerhana Bulan berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer tiga bola model Matahari, Bumi dan Bulan.",
+        "exploration": "Susun Bumi antara lampu model dan Bulan.",
+        "explanation": "Jelaskan Bulan memasuki bayang Bumi apabila kedudukan sesuai.",
+        "elaboration": "Lakar susunan dan arah cahaya.",
+        "evaluation": "Rajah kedudukan dan penerangan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-038",
+      "title": "Gerhana Matahari dan sifat cahaya",
+      "dskp": [
+        {
+          "code": "10.1.2",
+          "printed_page": 68,
+          "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+          "sp": "Memerihalkan fenomena gerhana Matahari berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi."
+        },
+        {
+          "code": "10.1.3",
+          "printed_page": 68,
+          "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+          "sp": "Menghubungkaitkan fenomena gerhana Bulan dan gerhana Matahari dengan sifat cahaya."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer lampu meja serta model Bumi dan Bulan.",
+        "exploration": "Letak Bulan antara lampu dan Bumi; amati bayang pada skrin.",
+        "explanation": "Jelaskan cahaya bergerak lurus dan dihalang; jangan melihat Matahari secara langsung.",
+        "elaboration": "Banding rajah dua gerhana menggunakan simulasi dalam kelas.",
+        "evaluation": "Dua susunan tepat dan satu kaitan sifat cahaya."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-039",
+      "title": "Ramalan keadaan semasa gerhana",
+      "dskp": [
+        {
+          "code": "10.1.4",
+          "printed_page": 68,
+          "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+          "sp": "Meramalkan keadaan di Bumi semasa kejadian gerhana Bulan dan gerhana Matahari."
+        },
+        {
+          "code": "10.1.5",
+          "printed_page": 68,
+          "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+          "sp": "Menjelaskan pemerhatian tentang fenomena gerhana Bulan dan gerhana Matahari melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding ilustrasi gerhana penuh dan separa.",
+        "exploration": "Teliti lokasi bayang model dan kedudukan pemerhati.",
+        "explanation": "Jelaskan keadaan bergantung jenis gerhana dan lokasi; gerhana Bulan boleh kelihatan kemerahan.",
+        "elaboration": "Bentangkan ramalan dua situasi daripada rajah.",
+        "evaluation": "Dua ramalan dengan alasan kedudukan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-040",
+      "title": "Galaksi Bima Sakti",
+      "dskp": [
+        {
+          "code": "11.1.1",
+          "printed_page": 69,
+          "sk": "11.1 Galaksi Bima Sakti",
+          "sp": "Menyatakan maksud galaksi."
+        },
+        {
+          "code": "11.1.2",
+          "printed_page": 69,
+          "sk": "11.1 Galaksi Bima Sakti",
+          "sp": "Memerihalkan galaksi Bima Sakti."
+        },
+        {
+          "code": "11.1.3",
+          "printed_page": 69,
+          "sk": "11.1 Galaksi Bima Sakti",
+          "sp": "Merumuskan Sistem Suria berada dalam galaksi Bima Sakti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer imej dan ilustrasi galaksi bersumber.",
+        "exploration": "Banding objek bintang, gas dan debu pada media.",
+        "explanation": "Jelaskan galaksi ialah himpunan besar bintang, gas dan debu yang terikat graviti; Sistem Suria di Bima Sakti.",
+        "elaboration": "Susun kad Bumi, Sistem Suria, Bima Sakti dan alam semesta.",
+        "evaluation": "Urutan skala dan maksud galaksi tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-041",
+      "title": "Skala Sistem Suria dan galaksi",
+      "dskp": [
+        {
+          "code": "11.1.4",
+          "printed_page": 69,
+          "sk": "11.1 Galaksi Bima Sakti",
+          "sp": "Menjalankan simulasi untuk menggambarkan saiz Sistem Suria dalam galaksi Bima Sakti dan mengagumi ciptaan Tuhan."
+        },
+        {
+          "code": "11.1.5",
+          "printed_page": 70,
+          "sk": "11.1 Galaksi Bima Sakti",
+          "sp": "Menjelaskan pemerhatian tentang galaksi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer carta skala galaksi.",
+        "exploration": "Gunakan model titik pada carta besar untuk menggambarkan perbandingan.",
+        "explanation": "Jelaskan batas model yang tidak berskala tepat dan nilai menghargai ciptaan Tuhan.",
+        "elaboration": "Lakar kedudukan Sistem Suria secara relatif dan bentang.",
+        "evaluation": "Satu rumusan skala dan satu batasan model."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-042",
+      "title": "Kestabilan dan kekuatan",
+      "dskp": [
+        {
+          "code": "12.1.1",
+          "printed_page": 72,
+          "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+          "sp": "Memerihalkan maksud kestabilan dan kekuatan dengan menjalankan aktiviti."
+        },
+        {
+          "code": "12.1.2",
+          "printed_page": 72,
+          "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+          "sp": "Menjelaskan dengan contoh struktur yang kuat dan stabil."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding model menara mudah tumbang dan model yang menahan beban.",
+        "exploration": "Uji model kertas ringan di atas meja dengan beban kecil.",
+        "explanation": "Bezakan kestabilan terhadap tumbang dan kekuatan menahan beban.",
+        "elaboration": "Padankan contoh binaan dengan ciri yang menyokong kedua-dua sifat.",
+        "evaluation": "Dua maksud dan dua contoh beralasan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-043",
+      "title": "Faktor kestabilan",
+      "dskp": [
+        {
+          "code": "12.1.3",
+          "printed_page": 72,
+          "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+          "sp": "Mengeksperimen untuk menentukan faktor yang mempengaruhi kestabilan objek."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal model tapak luas dan sempit.",
+        "exploration": "Uji luas tapak pada tinggi sama; kemudian tinggi pada tapak sama.",
+        "explanation": "Jelaskan peranan tapak dan kedudukan pusat graviti.",
+        "elaboration": "Catat sudut papan ketika model ringan mula tumbang.",
+        "evaluation": "Dua kesimpulan berdasarkan ujian berasingan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-044",
+      "title": "Faktor kekuatan binaan",
+      "dskp": [
+        {
+          "code": "12.1.4",
+          "printed_page": 73,
+          "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+          "sp": "Mengeksperimen untuk menentukan faktor yang mempengaruhi kekuatan binaan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kertas rata dan kertas dilipat.",
+        "exploration": "Uji bentuk struktur dengan jenis bahan sama menggunakan beban ringan; banding bahan secara berasingan.",
+        "explanation": "Jelaskan bentuk dan jenis bahan mempengaruhi kemampuan menahan beban.",
+        "elaboration": "Rekod bilangan pemberat ringan yang ditampung.",
+        "evaluation": "Dua rumusan berdasarkan data."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-045",
+      "title": "Model binaan lestari",
+      "dskp": [
+        {
+          "code": "12.1.5",
+          "printed_page": 73,
+          "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+          "sp": "Menjana idea kepentingan binaan yang kuat dan stabil bagi kehidupan lestari."
+        },
+        {
+          "code": "12.1.6",
+          "printed_page": 73,
+          "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+          "sp": "Mencipta model binaan yang kuat dan stabil dengan menggunakan bahan kitar semula yang sesuai."
+        },
+        {
+          "code": "12.1.7",
+          "printed_page": 73,
+          "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+          "sp": "Menjelaskan pemerhatian tentang kestabilan dan kekuatan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Beri cabaran membina jambatan kertas daripada bahan kitar semula bersih.",
+        "exploration": "Lakar tapak dan struktur; pilih bahan selamat.",
+        "explanation": "Jelaskan keseimbangan kestabilan, kekuatan dan penggunaan bahan.",
+        "elaboration": "Bina, uji beban ringan dan tambah baik prototaip.",
+        "evaluation": "Model berfungsi dan dua alasan penambahbaikan."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-046",
+      "title": "Maksud dan perkembangan teknologi",
+      "dskp": [
+        {
+          "code": "13.1.1",
+          "printed_page": 74,
+          "sk": "13.1 Kebaikan dan Keburukan Teknologi",
+          "sp": "Menyatakan maksud teknologi dan kepentingannya."
+        },
+        {
+          "code": "13.1.2",
+          "printed_page": 74,
+          "sk": "13.1 Kebaikan dan Keburukan Teknologi",
+          "sp": "Memerihalkan perkembangan teknologi dalam pelbagai bidang."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar alat komunikasi dahulu dan kini.",
+        "exploration": "Susun perubahan teknologi dalam pertanian, perubatan, pengangkutan, pembinaan dan komunikasi.",
+        "explanation": "Jelaskan teknologi mengaplikasi pengetahuan untuk mengatasi had keupayaan manusia.",
+        "elaboration": "Bina garis masa contoh satu bidang dan huraikan manfaat.",
+        "evaluation": "Maksud dan tiga contoh perkembangan tepat."
+      },
+      "scope_note": "Calon agihan sesi; belum diselaraskan dengan RPT dan RPH sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T6-DRAFT-047",
+      "title": "Kebaikan dan keburukan teknologi",
+      "dskp": [
+        {
+          "code": "13.1.3",
+          "printed_page": 74,
+          "sk": "13.1 Kebaikan dan Keburukan Teknologi",
+          "sp": "Menjelaskan melalui contoh kebaikan dan keburukan teknologi dalam kehidupan harian."
+        },
+        {
+          "code": "13.1.4",
+          "printed_page": 74,
+          "sk": "13.1 Kebaikan dan Keburukan Teknologi",
+          "sp": "Menjelaskan pemerhatian tentang kebaikan dan keburukan teknologi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad penggunaan telefon, kenderaan dan mesin.",
+        "exploration": "Banding kesan baik dan buruk berdasarkan situasi.",
+        "explanation": "Jelaskan kesan bergantung cara penggunaan, keselamatan dan kelestarian.",
+        "elaboration": "Bentangkan cadangan penggunaan bertanggungjawab bagi satu teknologi.",
+        "evaluation": "Dua kebaikan, dua keburukan dan satu tindakan beralasan."
+      },
+      "scope_note": "HOLD AMALI: perlu protokol sekolah diluluskan dan pengawasan guru. Analisis data sahaja tidak mengesahkan SP eksperimen.",
+      "ready": false
+    }
+  ]
+}
