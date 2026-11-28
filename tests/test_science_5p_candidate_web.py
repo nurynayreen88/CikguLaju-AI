@@ -31,6 +31,7 @@ class CandidateTest(unittest.TestCase):
     def setUp(self):
         self.app=Flask(__name__); self.app.testing=True
         self.app.register_blueprint(candidate.create_blueprint())
+        self.app.register_blueprint(candidate.create_blueprint(published=True))
         self.client=self.app.test_client()
         self.account={"telegram_user_id":42,"authenticated":True,"free_remaining":10,"rakan_pembangun":False}
         self.stack=ExitStack(); self.addCleanup(self.stack.close)
@@ -113,6 +114,38 @@ class CandidateTest(unittest.TestCase):
         self.assertEqual(out.status_code,200)
         self.assertTrue(out.data.startswith(b"%PDF-"))
         self.debit.assert_not_called()
+    def test_published_requires_exact_approval_and_preserves_quota(self):
+        from web import science_5p_release as gate
+        self.login()
+        purl="/api/kssr/sk/science/5p/download"
+        aurl="/api/kssr/sk/science/5p/available"
+        selection={k:self.payload[k] for k in ("year","subject","unit","lesson")}
+        def post(**changes):
+            return self.client.post(purl,json={**self.payload,**changes},headers={"Origin":candidate.ORIGIN})
+        self.assertEqual(post().status_code,404)
+        self.assertEqual(self.client.get(aurl,query_string=selection).status_code,404)
+        self.debit.assert_not_called()
+        self.available.assert_not_called()
+        rows={k:dict(v,ready=False) for k,v in gate.records().items()}
+        rows[5,self.payload["lesson"]].update(ready=True,status="APPROVED_FOR_RELEASE")
+        with patch.object(gate,"records",return_value=rows):
+            out=self.client.get(aurl,query_string=selection)
+            self.assertEqual(out.get_json(),{"available":True,"formats":["word","pdf"],"status":"INTERNAL-REVIEWED"})
+            self.assertEqual(post(lesson="SK27-SCI-Y5-PDP-002").status_code,404)
+            self.debit.assert_not_called()
+            out=post(teacher_class="5 Bestari")
+            self.assertEqual(out.status_code,200)
+            self.assertEqual(out.headers["X-RPH-QA-Status"],"INTERNAL-REVIEWED")
+            self.assertNotIn("DRAF_QA",out.headers["Content-Disposition"])
+            self.assertEqual(Document(BytesIO(out.data)).tables[0].cell(1,1).text,"SAINS SK\nTAHUN 5")
+            self.debit.assert_called_once()
+            self.account.update(rakan_pembangun=True,free_remaining=0)
+            out=post(format="pdf")
+            self.assertEqual(out.status_code,200)
+            self.assertTrue(out.data.startswith(b"%PDF-"))
+            self.debit.assert_called_once()
+        self.assertEqual(self.post().status_code,404)
+
     def test_all_original_selection_contracts_and_drift(self):
         for y,rows in self.rows.items():
             for row in rows:
