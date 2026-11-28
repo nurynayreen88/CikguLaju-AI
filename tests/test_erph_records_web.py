@@ -252,3 +252,13 @@ class ErphTests(unittest.TestCase):
         self.assertNotIn('...j.fields',handoff)
         self.assertIn('target.action="/erph/import-preview"',handoff)
         self.assertNotIn('/api/erph/records',handoff)
+
+    def test_schedule_matches_existing_records_before_new_entry(self):
+        from pathlib import Path
+        html=(Path(__file__).resolve().parents[1]/'web_v1_static_preview'/'erph_records.html').read_text(encoding='utf-8')
+        self.assertIn('function slotMatches(item,selected,records)',html)
+        self.assertIn('r.teaching_date===selected',html)
+        self.assertIn('void loadSchedule(n,selected,j.items)',html)
+        self.assertIn("button.textContent='Sunting rekod'",html)
+        self.assertIn('Semak perbezaan dengan jadual waktu.',html)
+        self.assertIn('Rekod belum dapat disemak. Cuba papar rekod semula.',html)
