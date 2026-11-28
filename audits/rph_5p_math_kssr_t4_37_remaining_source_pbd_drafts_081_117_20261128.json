@@ -1,0 +1,1278 @@
+{
+  "status": "DRAFT_TSV_SOURCE_PBD_ALIGNED",
+  "year": 4,
+  "total": 37,
+  "prior_batch_blobs": [
+    "2162264fd25c2a2493b6a4dce789bd8e194a8169",
+    "0e6dfa4c090d1b93d627ef36e862ed8c958e9ec2",
+    "9a1c0874dd46966f61561ca36883a716505769b1",
+    "68c509fe759d663f6cf1cf17f9d581490c2c7c35"
+  ],
+  "source_files": [
+    {
+      "minutes": 30,
+      "path": "staging/matematik/tahun4/slot_30_minit.tsv",
+      "sha": "619869a8b9799695995f2bf229b5714607226124"
+    },
+    {
+      "minutes": 60,
+      "path": "staging/matematik/tahun4/slot_60_minit.tsv",
+      "sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5"
+    }
+  ],
+  "scope": "37 remaining slots 081–117; five batches cover 117 distinct staging Year 4 lessons. Source PBD tasks/evidence retained. 60-minute TSV does not include SP field.",
+  "limitations": "Native full SK/SP, objectives, criteria, academic approval, catalogue identity, Word/PDF generation and authenticated Web delivery pending. Lesson 117 source PBD key requires confirmation. No production or RPT changes.",
+  "records": [
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 81,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Darab dan bahagi ukuran panjang",
+      "source_pages": "181–183",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 7 × 12 cm 8 mm dan 5 km 250 m ÷ 5. Nyatakan hasil dalam unit gabungan.",
+      "source_pbd_evidence": "89 cm 6 mm dan 1 km 50 m. Pembahagian atau darab boleh disemak dalam unit tunggal.",
+      "phases": {
+        "engagement": "Guru tunjuk lima jalur sama panjang dan tali untuk diagih.",
+        "exploration": "Pasangan seragamkan cm dan mm, serta km dan m pada kad ukuran.",
+        "explanation": "Guru model 4 × 15 cm 5 mm = 62 cm dan 3 km 600 m ÷ 4 = 900 m.",
+        "elaboration": "Murid kira 6 × 14 cm 7 mm dan 7 km 200 m ÷ 6; nyatakan dalam unit gabungan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur ukuran, carta unit",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar kepada unit kecil sebelum operasi",
+        "pengayaan": "Semak hasil bahagi dengan darab."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 82,
+      "source_sp_codes": [
+        "5.1.8",
+        "5.1.9"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mendarab dan membahagi ukuran panjang",
+      "source_pages": "181–183",
+      "source_minutes": 30,
+      "source_pbd_task": "Selesaikan 85 cm × 4 dan 560 mm ÷ 7 dalam dua situasi ringkas. Kekalkan unit.",
+      "source_pbd_evidence": "340 cm dan 80 mm.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga jalur 65 cm dan satu jalur 420 mm untuk dipotong sama.",
+        "exploration": "Pasangan pilih darab bagi jumlah panjang dan bahagi bagi panjang sepotong.",
+        "explanation": "Guru model 65 cm × 3 dan 420 mm ÷ 6 dengan unit kekal.",
+        "elaboration": "Murid hitung 75 cm × 6 dan 480 mm ÷ 8 dalam dua cerita ringkas.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jalur kertas, kad operasi",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan tambah berulang atau kumpulan sama",
+        "pengayaan": "Cipta dua situasi operasi songsang."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 83,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung tambah dan tolak jisim",
+      "source_pages": "184–185",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 5 kg 640 g + 2 kg 870 g − 1 kg 955 g. Kira juga 10 kg 120 g − 2 kg 450 g + 780 g.",
+      "source_pbd_evidence": "6 kg 555 g dan 8 kg 450 g. Penukaran kepada gram atau bentuk lazim dengan pertukaran betul.",
+      "phases": {
+        "engagement": "Guru tunjuk stok beras dengan dua perubahan jisim.",
+        "exploration": "Pasangan bina jadual masuk, keluar dan baki dalam gram.",
+        "explanation": "Guru model pengumpulan 1 000 g kepada 1 kg selepas operasi tambah-tolak berturutan.",
+        "elaboration": "Murid kira 4 kg 750 g + 2 kg 650 g − 1 kg 850 g dan 8 kg 200 g − 3 kg 450 g + 600 g.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad jisim, jadual stok",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar semua jisim kepada gram",
+        "pengayaan": "Semak baki melalui operasi songsang."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 84,
+      "source_sp_codes": [
+        "5.2.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengira operasi bergabung tambah dan tolak jisim",
+      "source_pages": "184–185",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira baki 2 500 g + 1 250 g − 950 g dan 6 kg − 2 kg + 1 kg.",
+      "source_pbd_evidence": "2 800 g dan 5 kg.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga label jisim dengan tanda tambah dan tolak.",
+        "exploration": "Pasangan susun kad operasi mengikut perubahan stok.",
+        "explanation": "Guru model 3 200 g + 800 g − 650 g dan 7 kg − 3 kg + 2 kg.",
+        "elaboration": "Murid kira 1 800 g + 950 g − 450 g serta 9 kg − 4 kg + 2 kg.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad jisim, papan mini",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Catat hasil operasi pertama",
+        "pengayaan": "Bina ayat jisim berjumlah 4 kg."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 85,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung darab dan bahagi jisim",
+      "source_pages": "186–187",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 5 × 3 kg 300 g ÷ 6 dan 8 kg 400 g ÷ 7 × 3. Nyatakan hasil dalam kg dan g.",
+      "source_pbd_evidence": "2 kg 750 g dan 3 kg 600 g. Kedua-dua urutan operasi ditunjukkan.",
+      "phases": {
+        "engagement": "Guru beri empat paket berjisim sama untuk diagih kepada beberapa kumpulan.",
+        "exploration": "Pasangan tukar kg dan g kepada gram serta susun operasi darab-bahagi.",
+        "explanation": "Guru model 4 × 2 kg 400 g ÷ 6 = 1 kg 600 g dari kiri ke kanan.",
+        "elaboration": "Murid kira 6 × 1 kg 800 g ÷ 4 dan 9 kg 600 g ÷ 8 × 3.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Model paket, kad unit",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar kepada gram dahulu",
+        "pengayaan": "Banding dua ayat operasi berurutan dengan hasil sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 86,
+      "source_sp_codes": [
+        "5.2.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengira gabungan darab dan bahagi jisim",
+      "source_pages": "186–187",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 4 800 g ÷ 8 × 5 dan 250 g × 6 ÷ 3. Nyatakan unit dan langkah pertama.",
+      "source_pbd_evidence": "3 000 g dan 500 g.",
+      "phases": {
+        "engagement": "Guru tunjuk 3 600 g dibahagi enam dan setiap bahagian didarab empat.",
+        "exploration": "Pasangan susun kad langkah dan catat hasil perantaraan.",
+        "explanation": "Guru model 3 600 ÷ 6 × 4 = 2 400 g serta 180 g × 8 ÷ 4.",
+        "elaboration": "Murid kira 6 300 g ÷ 9 × 4 dan 320 g × 5 ÷ 2.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad jisim, jadual operasi",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Lakukan satu operasi setiap baris",
+        "pengayaan": "Terangkan bagaimana menyemak hasil dengan operasi songsang."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 87,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung tambah dan tolak isi padu cecair",
+      "source_pages": "188–189",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 3 L 275 mL + 1 L 850 mL − 950 mL serta 6 L 200 mL − 2 L 480 mL + 725 mL.",
+      "source_pbd_evidence": "4 L 175 mL dan 4 L 445 mL. Tanda operasi dan penukaran unit betul.",
+      "phases": {
+        "engagement": "Guru beri label dua jag dan satu sukatan yang dikeluarkan.",
+        "exploration": "Pasangan samakan L dan mL serta rekod baki pada jadual.",
+        "explanation": "Guru model penukaran 1 000 mL kepada 1 L selepas tambah dan tolak.",
+        "elaboration": "Murid kira 2 L 650 mL + 1 L 875 mL − 800 mL dan 7 L 150 mL − 2 L 600 mL + 450 mL.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jag berskala, kad sukatan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar semua kepada mL",
+        "pengayaan": "Semak dengan menambah semula sukatan keluar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 88,
+      "source_sp_codes": [
+        "5.3.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengira gabungan tambah dan tolak isi padu",
+      "source_pages": "188–189",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 3 250 mL + 750 mL − 1 200 mL dan 5 L − 2 L + 1 L.",
+      "source_pbd_evidence": "2 800 mL dan 4 L.",
+      "phases": {
+        "engagement": "Guru tunjuk bekas berisi 2 L dan kad dua perubahan isi padu.",
+        "exploration": "Pasangan padankan tambah untuk masuk dan tolak untuk keluar.",
+        "explanation": "Guru model 2 400 mL + 800 mL − 500 mL dengan hasil perantaraan.",
+        "elaboration": "Murid kira 4 500 mL − 1 250 mL + 750 mL dan 8 L + 1 L − 3 L.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad isi padu, papan mini",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Susun operasi mengikut cerita",
+        "pengayaan": "Cipta dua perubahan dengan baki sama seperti isi awal."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 89,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung darab dan bahagi isi padu cecair",
+      "source_pages": "190–191",
+      "source_minutes": 60,
+      "source_pbd_task": "Empat botol 1 L 250 mL dituangkan sama rata ke 8 jag. Cari isi padu setiap jag dan semak jumlahnya.",
+      "source_pbd_evidence": "625 mL setiap jag. 8 × 625 mL = 5 000 mL.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga botol 1 L 200 mL yang hendak diagih sama rata.",
+        "exploration": "Pasangan guna jadual bilangan botol, jumlah dan bilangan jag.",
+        "explanation": "Guru model 3 × 1 200 mL ÷ 6 = 600 mL sebekas dan semak jumlah.",
+        "elaboration": "Murid kira isi setiap jag apabila lima botol 800 mL diagih kepada lapan jag.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Botol model, jag, jadual agihan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Cari jumlah isi dahulu",
+        "pengayaan": "Tentukan bilangan jag jika isi sebekas ditetapkan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 90,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung darab dan bahagi isi padu cecair",
+      "source_pages": "190–191",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 4 L 800 mL ÷ 6 × 5 dan 7 × 2 L 100 mL ÷ 3. Nyatakan dalam L dan mL.",
+      "source_pbd_evidence": "4 L dan 4 L 900 mL. Hasil perantaraan 800 mL dan 14 700 mL.",
+      "phases": {
+        "engagement": "Guru tunjuk kad 3 L 600 mL ÷ 6 × 4.",
+        "exploration": "Pasangan seragamkan unit dan pilih urutan kiri ke kanan.",
+        "explanation": "Guru model 3 600 ÷ 6 × 4 = 2 400 mL serta darab sebelum bahagi apabila berada di kiri.",
+        "elaboration": "Murid kira 6 L 400 mL ÷ 8 × 5 dan 5 × 1 L 800 mL ÷ 3.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad operasi, carta L/mL",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar semua kepada mL",
+        "pengayaan": "Nyatakan hasil akhir dalam dua bentuk unit."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 91,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penyelesaian masalah ukuran dan sukatan",
+      "source_pages": "192–195",
+      "source_minutes": 60,
+      "source_pbd_task": "Dua bekas mengandungi 1 L 650 mL dan 2 L 430 mL. Gunakan 780 mL, kemudian bahagi baki sama rata kepada lima botol. Beri isi padu sebotol.",
+      "source_pbd_evidence": "660 mL. Jumlah 4 080 mL, baki 3 300 mL, kemudian bahagi lima.",
+      "phases": {
+        "engagement": "Guru tunjuk dua bekas minuman, satu penggunaan dan agihan baki.",
+        "exploration": "Pasangan bina rajah bar bagi jumlah awal, penggunaan dan baki.",
+        "explanation": "Guru model jumlah 1 400 + 2 100 mL, tolak 500 mL, kemudian bahagi enam.",
+        "elaboration": "Murid kira isi setiap botol daripada 2 L 250 mL + 1 L 350 mL selepas guna 400 mL dan bahagi lapan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad bekas, rajah bar",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Catat baki sebelum agihan",
+        "pengayaan": "Cari jumlah awal jika isi sebotol dan penggunaan diketahui."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 92,
+      "source_sp_codes": [
+        "5.4.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menyelesaikan masalah ukuran dan sukatan",
+      "source_pages": "192–194",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira panjang seutas daripada 840 cm yang dibahagi tujuh, dan baki minuman 2 L selepas 600 mL digunakan.",
+      "source_pbd_evidence": "120 cm dan 1 400 mL atau 1 L 400 mL.",
+      "phases": {
+        "engagement": "Guru tunjuk tali untuk dipotong dan jag yang sebahagiannya digunakan.",
+        "exploration": "Pasangan pilih operasi bahagi panjang dan tolak isi padu.",
+        "explanation": "Guru model 600 cm ÷ 5 dan 3 L − 750 mL selepas menyamakan unit.",
+        "elaboration": "Murid hitung panjang sepotong daripada 960 cm dibahagi lapan dan baki 2 L 500 mL selepas guna 800 mL.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jalur tali, jag model",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gariskan unit jawapan",
+        "pengayaan": "Cipta cerita ukuran dengan dua operasi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 93,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Mengenal sudut tegak, tirus dan cakah",
+      "source_pages": "199–200",
+      "source_minutes": 60,
+      "source_pbd_task": "Guru sediakan kad sudut 35°, 90°, 125° dan 65° tanpa label ukuran. Kelaskan setiap kad dengan membandingkan sudut bucu kertas.",
+      "source_pbd_evidence": "Tirus, tegak, cakah dan tirus. Sasaran 3/4 dan tunjuk satu perbandingan dengan bucu kertas.",
+      "phases": {
+        "engagement": "Guru tunjuk penjuru kertas dan tiga bukaan kad berengsel.",
+        "exploration": "Pasangan banding bukaan dengan sudut tegak tanpa perlu mengukur darjah.",
+        "explanation": "Guru jelaskan tirus lebih kecil, tegak sama dan cakah lebih besar daripada sudut tegak tetapi kurang sudut lurus.",
+        "elaboration": "Murid kelaskan kad sudut yang disediakan guru pada orientasi berlainan dan beri alasan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad sudut, bucu kertas",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Letakkan bucu kertas pada bucu sudut",
+        "pengayaan": "Cari dua sudut tirus dan cakah pada objek kelas."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 94,
+      "source_sp_codes": [
+        "6.2.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengenal dan menamakan garis selari serta serenjang",
+      "source_pages": "201–203",
+      "source_minutes": 30,
+      "source_pbd_task": "Namakan pasangan selari dan serenjang pada grid contoh. Lukis satu lagi garisan selari dengan salah satu yang diberi.",
+      "source_pbd_evidence": "Dua garisan mendatar selari dan garisan tegak serenjang dengan kedua-duanya. Garisan tambahan mengekalkan jarak daripada garisan selari yang dipilih.",
+      "phases": {
+        "engagement": "Guru tunjuk grid dengan dua garis mendatar dan satu garis tegak.",
+        "exploration": "Pasangan jejaki garis yang jaraknya kekal dan garis yang bersilang tegak.",
+        "explanation": "Guru model nama garis selari dan serenjang dengan tanda sudut tegak.",
+        "elaboration": "Murid label pasangan garis pada grid baharu dan tambah satu garis selari.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Grid, pembaris, kad label",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan warna berbeza bagi dua jenis garis",
+        "pengayaan": "Cari pasangan garis pada pelan bilik."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 95,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Melukis garis selari dan serenjang",
+      "source_pages": "202–203",
+      "source_minutes": 60,
+      "source_pbd_task": "Pada grid, lukis garis selari dengan satu garis mengufuk diberi dan garis serenjang yang bertemu dengannya. Tanda sudut tegak.",
+      "source_pbd_evidence": "Garis selari mengekalkan jarak. Garis bersilang membentuk sudut tegak yang ditanda dengan betul.",
+      "phases": {
+        "engagement": "Guru papar satu garis mengufuk dan satu titik di luar garis.",
+        "exploration": "Pasangan gunakan pembaris serta sesiku untuk menguji jarak dan sudut tegak.",
+        "explanation": "Guru demonstrasi melukis garis selari dan garis serenjang, kemudian tanda sudut tegak.",
+        "elaboration": "Murid lukis garis selari pada grid tiga petak di atas garis asal dan garis serenjang melaluinya.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid, pembaris, sesiku",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan garisan grid sebagai panduan",
+        "pengayaan": "Lukis dua pasangan garis pada orientasi serong menggunakan sesiku."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 96,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Perimeter poligon hingga lapan sisi",
+      "source_pages": "204–205",
+      "source_minutes": 60,
+      "source_pbd_task": "Cari perimeter segi tiga sisi 8, 9 dan 11 cm, heksagon sekata sisi 5 cm serta oktagon sekata sisi 7 cm. Tulis operasi lengkap.",
+      "source_pbd_evidence": "28 cm, 30 cm dan 56 cm. Panjang semua sisi diambil kira.",
+      "phases": {
+        "engagement": "Guru tunjuk poligon kertas dengan sisi berlabel.",
+        "exploration": "Pasangan jejak perimeter luar dengan benang dan jumlahkan panjang sisi.",
+        "explanation": "Guru model perimeter segi tiga tidak sekata serta darab bilangan sisi bagi poligon sekata.",
+        "elaboration": "Murid kira perimeter segi tiga sisi 6, 8, 10 cm, pentagon sekata sisi 7 cm dan oktagon sisi 4 cm.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Potongan poligon, benang, pembaris",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tandakan setiap sisi yang telah dikira",
+        "pengayaan": "Cari panjang sisi poligon sekata daripada perimeter."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 97,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Luas segi empat dan segi tiga",
+      "source_pages": "206–208",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira luas segi empat sama sisi 7 cm, segi empat tepat 9 cm × 5 cm serta segi tiga tapak 12 cm dan tinggi serenjang 7 cm.",
+      "source_pbd_evidence": "49 cm², 45 cm² dan 42 cm². Rumus segi tiga menggunakan separuh hasil darab tapak dan tinggi.",
+      "phases": {
+        "engagement": "Guru tunjuk petak unit dan dua segi tiga yang membentuk segi empat tepat.",
+        "exploration": "Pasangan kira petak bagi segi empat sama dan tepat serta banding separuh luas bagi segi tiga.",
+        "explanation": "Guru model rumus luas, termasuk tapak × tinggi serenjang ÷ 2.",
+        "elaboration": "Murid kira luas persegi sisi 8 cm, segi empat tepat 12 × 4 cm dan segi tiga tapak 10 cm tinggi 6 cm.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid unit, potongan bentuk",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Label tapak dan tinggi sebelum mengira",
+        "pengayaan": "Bina dua bentuk berbeza dengan luas 36 cm²."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 98,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Isi padu kubus dan kuboid",
+      "source_pages": "209–210",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira isi padu kubus sisi 5 cm, kuboid 8 cm × 3 cm × 4 cm dan kuboid dengan luas tapak 18 cm² serta tinggi 7 cm.",
+      "source_pbd_evidence": "125 cm³, 96 cm³ dan 126 cm³. Unit padu pada ketiga-tiga respons.",
+      "phases": {
+        "engagement": "Guru susun blok unit membentuk kubus dan kuboid.",
+        "exploration": "Pasangan kira bilangan blok satu lapisan dan bilangan lapisan.",
+        "explanation": "Guru model isi padu panjang × lebar × tinggi serta luas tapak × tinggi.",
+        "elaboration": "Murid kira kubus sisi 4 cm, kuboid 7 × 2 × 5 cm dan pepejal luas tapak 20 cm² tinggi 4 cm.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Blok unit, model kuboid",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Label tiga dimensi dan unit cm³",
+        "pengayaan": "Cari tinggi apabila isi padu dan luas tapak diketahui."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 99,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Menyelesaikan masalah luas lantai dan panjang kemasan tepi",
+      "source_pages": "211–213",
+      "source_minutes": 60,
+      "source_pbd_task": "Lantai ruang simpanan 8 m × 6 m. Cari luas lantai dan panjang kemasan tepi jika ada bukaan 2 m yang tidak dipasang kemasan.",
+      "source_pbd_evidence": "48 m² dan 26 m. Pilih luas untuk lantai dan perimeter 28 m tolak bukaan.",
+      "phases": {
+        "engagement": "Guru tunjuk pelan lantai dengan bukaan pintu.",
+        "exploration": "Pasangan warnakan permukaan lantai dan jejak tepi yang memerlukan kemasan.",
+        "explanation": "Guru bezakan luas dalam m² daripada perimeter dalam m serta tolak bukaan.",
+        "elaboration": "Murid kira luas lantai 9 × 5 m dan panjang kemasan jika bukaan 1 m.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pelan lantai, pembaris",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tandakan bahagian tepi yang dikecualikan",
+        "pengayaan": "Banding kos kemasan bagi dua pelan berkeluasan sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 100,
+      "source_sp_codes": [
+        "6.5.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "memilih perimeter atau luas bagi situasi ruang",
+      "source_pages": "204–208,211–213",
+      "source_minutes": 30,
+      "source_pbd_task": "Untuk segi empat tepat 8 m × 5 m, kira pita keliling dan luas permukaan. Catat dua unit berbeza.",
+      "source_pbd_evidence": "26 m dan 40 m².",
+      "phases": {
+        "engagement": "Guru tunjuk gambar taman dan pita keliling; murid pilih ukuran sesuai.",
+        "exploration": "Pasangan banding kiraan petak permukaan dengan panjang sempadan.",
+        "explanation": "Guru model bagi segi empat tepat 6 × 4 m, perimeter 20 m dan luas 24 m².",
+        "elaboration": "Murid kira pita keliling dan luas bagi ruang 10 × 3 m, label unit.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Grid, kad situasi",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan dua warna bagi sempadan dan permukaan",
+        "pengayaan": "Cipta dua segi empat tepat dengan perimeter sama tetapi luas berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 101,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Paksi-x, paksi-y dan asalan",
+      "source_pages": "215–216",
+      "source_minutes": 60,
+      "source_pbd_task": "Pada grid kosong, tanda asalan, paksi-x dan paksi-y. Tunjukkan kedudukan yang dicapai dengan tiga langkah mengufuk dari asalan dan namakan paksinya.",
+      "source_pbd_evidence": "Asalan pada persilangan, x mengufuk, y mencancang. Titik (3, 0) berada pada paksi-x.",
+      "phases": {
+        "engagement": "Guru tunjuk grid kosong dengan dua garis bersilang.",
+        "exploration": "Pasangan kenal arah mengufuk dan mencancang serta titik persilangan.",
+        "explanation": "Guru label paksi-x, paksi-y dan asalan (0,0), kemudian model langkah pada paksi.",
+        "elaboration": "Murid tandakan empat langkah mengufuk dan dua langkah mencancang dari asalan sebagai dua titik berasingan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid, kad paksi",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Warnakan setiap paksi",
+        "pengayaan": "Terangkan mengapa titik (0,5) terletak pada paksi-y."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 102,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Menentukan dan menanda koordinat sukuan pertama",
+      "source_pages": "215–217",
+      "source_minutes": 60,
+      "source_pbd_task": "Guru sediakan grid dengan P pada (4, 6) dan Q pada (0, 3) tanpa label koordinat. Baca kedua-duanya dan tandakan R pada (5, 2).",
+      "source_pbd_evidence": "P (4, 6), Q (0, 3) dan R berada pada silang x = 5 dengan y = 2.",
+      "phases": {
+        "engagement": "Guru tunjuk titik pada grid tanpa koordinat.",
+        "exploration": "Pasangan baca nilai x dahulu dan y kemudian, termasuk titik pada paksi.",
+        "explanation": "Guru model bacaan (3,5) dan (0,4), serta cara menanda (6,2).",
+        "elaboration": "Murid baca dua titik latihan yang guru plot pada (2,7) dan (0,5), lalu plot (4,3).",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid sukuan pertama, kad koordinat",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Jejak anak panah dari asalan",
+        "pengayaan": "Bina kuiz koordinat yang mengandungi satu titik pada paksi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 103,
+      "source_sp_codes": [
+        "7.1.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menentukan koordinat pada sukuan pertama",
+      "source_pages": "215–217",
+      "source_minutes": 30,
+      "source_pbd_task": "Plot (3,4) dan (6,1). Baca kedudukan satu titik yang diletakkan guru di (2,6).",
+      "source_pbd_evidence": "Dua titik tepat dan pasangan (2,6).",
+      "phases": {
+        "engagement": "Guru beri kad (2,5) dan minta murid memilih paksi pertama.",
+        "exploration": "Pasangan plot dua titik dan bertukar grid untuk membaca satu titik.",
+        "explanation": "Guru model susunan x dahulu y kemudian dan semak silang garis.",
+        "elaboration": "Murid plot (4,2) dan (1,6), kemudian baca titik latihan pada (5,3).",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Grid, papan mini",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan anak panah dua warna",
+        "pengayaan": "Cipta titik yang koordinatnya terbalik daripada titik rakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 104,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Mewakilkan nisbah dua kuantiti",
+      "source_pages": "218–221",
+      "source_minutes": 60,
+      "source_pbd_task": "Daripada koleksi 6 pensel merah dan 9 biru, tulis nisbah merah kepada biru serta biru kepada merah. Terangkan maksud perbezaan urutan.",
+      "source_pbd_evidence": "6 : 9 dan 9 : 6. Bentuk setara diterima. Urutan pertama merujuk merah dahulu.",
+      "phases": {
+        "engagement": "Guru tunjuk empat pensel hijau dan tujuh kuning.",
+        "exploration": "Pasangan susun dua kuantiti dan baca nisbah mengikut tertib warna.",
+        "explanation": "Guru model 4 : 7 dan 7 : 4, jelaskan makna urutan.",
+        "elaboration": "Murid tulis dua nisbah bagi lapan token merah dan lima biru, serta beri alasan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token warna, kad nisbah",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Label kuantiti pertama dan kedua",
+        "pengayaan": "Banding dua model nisbah setara."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 105,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Kadaran menggunakan kaedah unitari",
+      "source_pages": "222–225",
+      "source_minutes": 60,
+      "source_pbd_task": "Lima fail berharga RM17.50 pada harga seunit yang sama. Cari harga seunit, kos 12 fail dan bilangan fail yang boleh dibeli dengan RM28.",
+      "source_pbd_evidence": "RM3.50, RM42.00 dan 8 fail. Langkah unitari ditunjukkan.",
+      "phases": {
+        "engagement": "Guru tunjuk empat fail berharga RM12 pada harga seunit tetap.",
+        "exploration": "Pasangan bina jadual kuantiti dan harga seunit.",
+        "explanation": "Guru model RM12 ÷ 4 = RM3, kemudian darab untuk kos dan bahagi untuk kuantiti.",
+        "elaboration": "Murid cari harga seunit, harga sembilan fail dan bilangan fail untuk RM36 bagi enam fail berharga RM24.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad harga, jadual unitari",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Cari nilai satu unit dahulu",
+        "pengayaan": "Bina jadual kadaran dengan nilai hilang pada dua lajur."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 106,
+      "source_sp_codes": [
+        "7.3.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mencari nilai menggunakan kaedah unitari",
+      "source_pages": "222–225",
+      "source_minutes": 30,
+      "source_pbd_task": "Jika enam bekas berisi 48 guli sama banyak, berapa jumlah guli dalam sembilan bekas? Jika empat kotak berharga RM36, kira harga tujuh kotak.",
+      "source_pbd_evidence": "72 guli dan RM63.",
+      "phases": {
+        "engagement": "Guru tunjuk lima bekas yang mengandungi 35 guli sama banyak.",
+        "exploration": "Pasangan bina jadual nilai seunit dan kuantiti baharu.",
+        "explanation": "Guru model 35 ÷ 5 = 7 guli sebekas, kemudian darab bilangan bekas.",
+        "elaboration": "Murid kira jumlah lapan bekas jika empat berisi 28 guli dan harga enam kotak jika tiga berharga RM21.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Model bekas, kad harga",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Catat kadar seunit pada baris pertama",
+        "pengayaan": "Cipta masalah yang memerlukan mencari bilangan bekas."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 107,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penyelesaian masalah koordinat, nisbah dan kadaran",
+      "source_pages": "226–230",
+      "source_minutes": 60,
+      "source_pbd_task": "Pada pelan, guru letak kedai A di (3, 5) dan B di (5, 3). Kenal pasti A daripada pelan. Di A, 6 pen berharga RM15. Nyatakan koordinat A, kos 10 pen dan nisbah kuantiti asal kepada kuantiti baharu.",
+      "source_pbd_evidence": "(3, 5), RM25 dan 6 : 10 atau 3 : 5. Kos menggunakan RM2.50 sebatang.",
+      "phases": {
+        "engagement": "Guru papar pelan kedai pada grid serta dua kad tawaran kuantiti.",
+        "exploration": "Pasangan baca koordinat kedai dan cari harga seunit melalui jadual.",
+        "explanation": "Guru model kedai P(2,4), empat pen RM12, enam pen RM18 dan nisbah 4 : 6.",
+        "elaboration": "Murid baca kedai Q pada (5,2) dalam pelan latihan; jika lima pen RM20, kira harga lapan dan nisbah kuantiti.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pelan grid, kad harga",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Pisahkan soalan koordinat, harga dan nisbah",
+        "pengayaan": "Bina pelan kedai dengan satu soalan kadaran."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 108,
+      "source_sp_codes": [
+        "7.4.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menyelesaikan masalah kadaran harian",
+      "source_pages": "226–228",
+      "source_minutes": 30,
+      "source_pbd_task": "Tiga pek mempunyai 24 kad sama banyak. Kira isi tujuh pek. Kemudian cari harga lima buku jika dua berharga RM18.",
+      "source_pbd_evidence": "56 kad dan RM45.",
+      "phases": {
+        "engagement": "Guru beri kad isi dua pek sama banyak dan harga dua buku.",
+        "exploration": "Pasangan cari kuantiti satu pek dan harga sebuah buku.",
+        "explanation": "Guru model empat pek 28 kad menghasilkan tujuh kad sepek serta dua buku RM16 memberi RM8 sebuah.",
+        "elaboration": "Murid cari isi enam pek jika tiga ada 30 kad dan kos tujuh buku jika empat berharga RM24.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad pek, jadual unitari",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Cari satu unit sebelum menggandakan",
+        "pengayaan": "Cipta masalah dua kuantiti berkadaran."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 109,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Mengumpul dan menyusun data tak terkumpul",
+      "source_pages": "233–235",
+      "source_minutes": 60,
+      "source_pbd_task": "Gunakan rekod pilihan empat murid untuk setiap kumpulan. Catat pilihan dalam jadual gundalan, semak jumlah respons dan bina satu representasi data pilihan.",
+      "source_pbd_evidence": "Jumlah gundalan sama dengan bilangan respons, kategori dan frekuensi tepat, dan tajuk serta skala atau kunci dinyatakan.",
+      "phases": {
+        "engagement": "Guru ajukan satu soalan pilihan buah kepada murid.",
+        "exploration": "Pasangan rekod satu respons setiap murid menggunakan gundalan dan asingkan kategori.",
+        "explanation": "Guru model kumpulan lima gundalan, frekuensi dan semakan jumlah respons.",
+        "elaboration": "Murid kumpul set data pilihan baharu dalam kumpulan kecil dan bina jadual serta satu carta pilihan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad respons, jadual gundalan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tanda satu respons pada satu masa",
+        "pengayaan": "Banding dua representasi data yang sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 110,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Membina piktograf satu simbol satu unit",
+      "source_pages": "233–235",
+      "source_minutes": 60,
+      "source_pbd_task": "Bina piktograf satu simbol bagi satu buku untuk data Isnin 4, Selasa 3, Rabu 6 dan Khamis 2. Nyatakan jumlah buku.",
+      "source_pbd_evidence": "Tajuk, kunci dan label lengkap; 4, 3, 6, 2 simbol. Jumlah 15 buku.",
+      "phases": {
+        "engagement": "Guru tunjuk satu gambar buku sebagai simbol satu buku.",
+        "exploration": "Pasangan susun simbol mengikut data latihan tiga hari.",
+        "explanation": "Guru model tajuk, label kategori, kunci satu simbol satu unit dan jumlah.",
+        "elaboration": "Murid bina piktograf bagi Isnin 5, Selasa 2, Rabu 4 dan Khamis 3; cari jumlah.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad simbol, kertas grid",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Sediakan satu simbol untuk setiap unit",
+        "pengayaan": "Tulis dua soalan berdasarkan piktograf sendiri."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 111,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Membina piktograf dengan skala dua unit",
+      "source_pages": "233–235",
+      "source_minutes": 60,
+      "source_pbd_task": "Bina piktograf satu simbol bagi dua buku untuk data Isnin 8, Selasa 10, Rabu 14 dan Khamis 6. Tunjukkan kategori paling tinggi.",
+      "source_pbd_evidence": "4, 5, 7, 3 simbol dengan kunci yang betul. Rabu paling tinggi.",
+      "phases": {
+        "engagement": "Guru tunjuk enam buku yang diwakili tiga simbol.",
+        "exploration": "Pasangan tukar nilai kategori genap kepada bilangan simbol menggunakan kunci dua unit.",
+        "explanation": "Guru model piktograf satu simbol dua buku dan semak bacaan songsang.",
+        "elaboration": "Murid bina piktograf bagi 10, 12, 4 dan 8 buku serta kenal hari tertinggi.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad simbol, grid piktograf",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bahagi frekuensi dengan dua",
+        "pengayaan": "Banding piktograf data sama menggunakan kunci satu dan dua."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 112,
+      "source_sp_codes": [
+        "8.1.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "membina piktograf dengan satu nilai simbol",
+      "source_pages": "233–235",
+      "source_minutes": 30,
+      "source_pbd_task": "Bina piktograf bagi merah 6, biru 10 dan hijau 4, dengan satu simbol mewakili dua item.",
+      "source_pbd_evidence": "3, 5 dan 2 simbol mengikut turutan; tajuk dan petunjuk jelas.",
+      "phases": {
+        "engagement": "Guru tunjuk lapan token yang diwakili empat simbol.",
+        "exploration": "Pasangan padankan data warna dengan bilangan simbol pada kad.",
+        "explanation": "Guru model cara menulis kunci, tajuk dan label setiap warna.",
+        "elaboration": "Murid bina piktograf latihan kuning 8, ungu 12 dan jingga 6 menggunakan satu simbol dua item.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad warna, simbol, grid",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Padankan setiap dua token dengan satu simbol",
+        "pengayaan": "Cipta data genap untuk rakan bina piktograf."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 113,
+      "source_sp_codes": [
+        "8.1.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "membina carta palang daripada data tak terkumpul",
+      "source_pages": "233–235",
+      "source_minutes": 30,
+      "source_pbd_task": "Bina carta palang bagi tiga kumpulan yang masing-masing mengutip 6, 12 dan 8 item. Label paksi dan tajuk.",
+      "source_pbd_evidence": "Ketinggian palang 6, 12 dan 8 pada skala yang sama. Tajuk dan kedua-dua paksi dilabel.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga susunan blok dengan ketinggian berlainan.",
+        "exploration": "Pasangan pindahkan data ke grid carta palang dengan skala tetap.",
+        "explanation": "Guru model label paksi kategori, paksi bilangan dan tajuk serta palang seragam.",
+        "elaboration": "Murid bina carta bagi kumpulan A 4, B 10 dan C 14 pada skala dua unit.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kertas grid, pembaris, blok",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tanda skala dahulu sebelum melukis palang",
+        "pengayaan": "Banding carta data sama dengan dua skala yang sah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 114,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Mentafsir piktograf dan carta palang",
+      "source_pages": "236–238",
+      "source_minutes": 60,
+      "source_pbd_task": "Guru paparkan data lawatan 6, 10, 8 dan 4 dalam piktograf berkunci dua unit serta carta palang berskala dua. Nyatakan bacaan kedua, kategori tertinggi, jumlah dan beza bacaan pertama dengan keempat.",
+      "source_pbd_evidence": "10, kategori kedua, 28 dan beza 2. Sasaran 3/4; sekurang-kurangnya satu alasan merujuk kunci atau skala.",
+      "phases": {
+        "engagement": "Guru papar satu piktograf dan satu carta palang yang menunjukkan data sama.",
+        "exploration": "Pasangan baca kunci piktograf dan skala carta sebelum membandingkan nilai.",
+        "explanation": "Guru model tafsiran kategori tertinggi, jumlah dan beza daripada data latihan 4,8,12,6.",
+        "elaboration": "Murid tafsir data latihan 10,6,14,8 daripada kedua-dua representasi dan beri satu alasan berdasarkan skala.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Piktograf dan carta palang latihan",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tanda kunci dan skala sebelum membaca",
+        "pengayaan": "Terangkan mengapa dua carta berbeza rupa boleh mempunyai data sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 115,
+      "source_sp_codes": [
+        "8.1.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mentafsir perbezaan dalam carta palang",
+      "source_pages": "236–238",
+      "source_minutes": 30,
+      "source_pbd_task": "Kenal pasti kumpulan tertinggi, beza antara 24 dan 12, dan jumlah daripada 12 dengan 18.",
+      "source_pbd_evidence": "Kumpulan dengan 24; beza 12; jumlah 30.",
+      "phases": {
+        "engagement": "Guru tunjuk carta palang tiga kumpulan dengan skala dua unit.",
+        "exploration": "Pasangan baca ketinggian palang dan cari kategori terbesar.",
+        "explanation": "Guru model operasi beza dan jumlah berdasarkan nilai dibaca, bukan bilangan senggatan sahaja.",
+        "elaboration": "Murid tafsir carta latihan bernilai 10,20 dan 16; cari tertinggi, beza 20 dan 10 serta jumlah 10 dan 16.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Carta palang latihan, pembaris",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Baca nilai paksi sebelum mengira",
+        "pengayaan": "Cipta satu soalan beza dan satu soalan jumlah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 116,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Menyelesaikan masalah harian pengurusan data",
+      "source_pages": "239–241",
+      "source_minutes": 60,
+      "source_pbd_task": "Carta kutipan guru menunjukkan A 18, B 24, C 16 dan D 22. Sasaran ialah 25 setiap kelas. Hitung jumlah kutipan dan tambahan diperlukan untuk semua kelas mencapai sasaran.",
+      "source_pbd_evidence": "Jumlah 80. Tambahan 7, 1, 9 dan 3, berjumlah 20. Kiraan menyemak 80 + 20 = 100.",
+      "phases": {
+        "engagement": "Guru tunjuk carta kutipan empat kelas dan sasaran bagi setiap kelas.",
+        "exploration": "Pasangan baca data, jumlahkan kutipan dan kira kekurangan setiap kelas.",
+        "explanation": "Guru model jumlah sasaran = bilangan kelas × sasaran; semak jumlah kekurangan.",
+        "elaboration": "Murid kira tambahan bagi kelas dengan kutipan 15,18,20,17 untuk mencapai 22 setiap kelas.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta palang latihan, jadual sasaran",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Kira kekurangan setiap kelas secara berasingan",
+        "pengayaan": "Banding sasaran setiap kelas dengan sasaran jumlah keseluruhan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 117,
+      "source_sp_codes": [
+        "8.2.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menyelesaikan masalah harian daripada piktograf",
+      "source_pages": "239–242",
+      "source_minutes": 30,
+      "source_pbd_task": "Tentukan jumlah jualan bagi 3, 5 dan 4 simbol serta beza hari tertinggi dengan terendah.",
+      "source_pbd_evidence": "60 item secara keseluruhan; perbezaan 10 item.",
+      "phases": {
+        "engagement": "Guru tunjuk piktograf jualan dengan satu simbol mewakili lima item.",
+        "exploration": "Pasangan baca kunci dan tukar bilangan simbol kepada jualan sebenar.",
+        "explanation": "Guru model jumlah dan beza hari tertinggi serta terendah menggunakan kunci lima.",
+        "elaboration": "Murid tafsir piktograf latihan 2,6,4 simbol pada tiga hari, cari jumlah dan beza tertinggi-terendah.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Piktograf latihan berkunci lima, kad simbol",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Darab setiap bilangan simbol dengan lima dahulu",
+        "pengayaan": "Bina piktograf baharu dengan jumlah jualan sama."
+      },
+      "ready": false,
+      "qa_note": "Source PBD task omits explicit key; evidence implies five items per symbol. Confirm key against native document before approval."
+    }
+  ]
+}
