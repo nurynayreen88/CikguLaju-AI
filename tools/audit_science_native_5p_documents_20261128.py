@@ -141,6 +141,58 @@ DISPLAY_REFS = {
                            "PdP 014": "ujian pertumbuhan terdahulu"},
 }
 
+# Corrections are deliberately applied only to print fields, after the source
+# field audit. The exact locked original records and PBD stay unchanged.
+PRINT_CORRECTIONS = {
+    5: ("audits/rph_5p_science_y5_print_corrections_20261128.json",
+        "8571a492e59ec9ff46c74aa46b02fb1bc9be0380", 32),
+}
+
+def apply_print_corrections(s, c):
+    if s["year"] not in PRINT_CORRECTIONS:
+        return s, c
+    path, expected, count = PRINT_CORRECTIONS[s["year"]]
+    data = (ROOT / path).read_bytes()
+    if git_blob(data) != expected:
+        raise ValueError("Print correction blob changed")
+    manifest = json.loads(data)
+    review_ref = manifest["review"]
+    review_data = (ROOT / review_ref["path"]).read_bytes()
+    if git_blob(review_data) != review_ref["blob"]:
+        raise ValueError("Pedagogical review changed")
+    review = json.loads(review_data)
+    reviewed = {r["lesson_id"]:r["status"] for r in review["issues"]}
+    edits = {r["lesson_id"]:r for r in manifest["records"]}
+    held = {r["lesson_id"] for r in manifest["held"]}
+    if (manifest["year"] != s["year"] or manifest["academic_approved"] is not False
+            or manifest["release"] is not False or len(edits) != count
+            or len(manifest["records"]) != count or set(edits) & held
+            or set(edits) | held != set(reviewed)):
+        raise ValueError("Incomplete or unverified print corrections")
+    item = edits.get(s["lesson_id"])
+    if item is None:
+        return s, c
+    if item["ready"] is not False or item["review_status"] != reviewed[s["lesson_id"]]:
+        raise ValueError("Unverified correction identity")
+    changes = item["changes"]
+    if not changes or set(changes) - {"bbm","safety","phase"}:
+        raise ValueError("Unexpected correction field")
+    s = dict(s)
+    phases = dict(c["phases"])
+    if "bbm" in changes:
+        first, sep, rest = s["aids_pak21_emk"].partition("\n")
+        if not first.startswith("BBM: ") or not sep:
+            raise ValueError("Missing BBM field")
+        s["aids_pak21_emk"] = first + "; " + changes["bbm"] + sep + rest
+    if "safety" in changes:
+        prefix = "; " if "\nKeselamatan: " in s["aids_pak21_emk"] else "\nKeselamatan: "
+        s["aids_pak21_emk"] += prefix + changes["safety"]
+    if "phase" in changes:
+        if not changes["phase"] or set(changes["phase"]) - (set(PHASE_KEYS)-{"evaluation"}):
+            raise ValueError("Cannot change original evaluation evidence")
+        phases.update(changes["phase"])
+    return s, dict(c, phases=phases)
+
 def display_fields(source, companion, raw):
     """Return a print-only record, preserving the raw source hash for audit."""
     validate_source = json.loads(raw)
@@ -157,6 +209,10 @@ def display_fields(source, companion, raw):
     for key in (*FIELDS, "reference"):
         s[key] = display(s[key])
     c = dict(companion, phases={k:display(v) for k,v in companion["phases"].items()})
+    s, c = apply_print_corrections(s, c)
+    for value in [*s.values(), *c["phases"].values()]:
+        if isinstance(value,str) and re.search(r"\bPdP\s*\d{1,3}\b", value, re.IGNORECASE):
+            raise ValueError("Unapproved printed lesson reference in correction")
     display_raw = json.dumps(s, ensure_ascii=False, sort_keys=True).encode("utf-8")
     c["source_sha256"] = sha256(display_raw).hexdigest()
     return s, c, display_raw
