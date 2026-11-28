@@ -1,0 +1,1066 @@
+{
+  "status": "DRAFT_TSV_SOURCE_PBD_ALIGNED",
+  "year": 4,
+  "total": 31,
+  "prior_batch_blobs": [
+    "2162264fd25c2a2493b6a4dce789bd8e194a8169",
+    "0e6dfa4c090d1b93d627ef36e862ed8c958e9ec2"
+  ],
+  "source_files": [
+    {
+      "minutes": 30,
+      "path": "staging/matematik/tahun4/slot_30_minit.tsv",
+      "sha": "619869a8b9799695995f2bf229b5714607226124"
+    },
+    {
+      "minutes": 60,
+      "path": "staging/matematik/tahun4/slot_60_minit.tsv",
+      "sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5"
+    }
+  ],
+  "scope": "31 previously uncovered source slots in 001–040. Combined existing drafts cover 44 distinct staging Year 4 lessons including all 001–040. Original PBD/evidence retained; full SP not present in 60-minute TSV.",
+  "limitations": "Verify native full SK/SP, objective, criteria, catalogue identity, academic approval, Word/PDF generation and authenticated Web delivery. No production changes.",
+  "records": [
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 1,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Nilai nombor hingga 100 000",
+      "source_pages": "1–8",
+      "source_minutes": 60,
+      "source_pbd_task": "Tulis 70 508 dalam perkataan, nyatakan nilai digit 5, cerakinkan nombor itu dan bandingkannya dengan 70 580.",
+      "source_pbd_evidence": "Tujuh puluh ribu lima ratus lapan; 500; 70 000 + 500 + 8; 70 508 lebih kecil. Sasaran 3/4.",
+      "phases": {
+        "engagement": "Guru papar 40 306 pada kad; murid cuba membaca.",
+        "exploration": "Pasangan susun digit pada carta puluh ribu hingga sa dan cerakinkan nombor.",
+        "explanation": "Guru model beza nilai tempat dan nilai digit, serta banding digit pertama yang berlainan.",
+        "elaboration": "Murid tulis 58 204 dalam perkataan, cerakinkan, nyatakan nilai digit 8 dan banding dengan 58 240.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad digit, carta nilai tempat",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Isi carta berwarna sebelum membaca",
+        "pengayaan": "Bina dua nombor dengan digit sama tetapi susunan berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 2,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Nombor genap dan nombor ganjil",
+      "source_pages": "9–10",
+      "source_minutes": 60,
+      "source_pbd_task": "Kelaskan 28 406, 37 219, 42 310 dan 99 995. Jelaskan peraturan menggunakan digit sa.",
+      "source_pbd_evidence": "Genap, ganjil, genap, ganjil. Alasan menggunakan digit sa; sekurang-kurangnya 3/4 padanan tepat.",
+      "phases": {
+        "engagement": "Guru beri 11 dan 12 token untuk dipasangkan dua-dua.",
+        "exploration": "Pasangan uji nombor besar dengan meneliti digit sa dan menghubungkannya kepada pasangan token.",
+        "explanation": "Guru jelaskan digit sa 0,2,4,6,8 menunjukkan genap; digit lain ganjil.",
+        "elaboration": "Murid kelaskan 14 708, 32 561, 80 020 dan 56 893 serta beri alasan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token, kad nombor",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Asingkan digit sa daripada nombor lain",
+        "pengayaan": "Bina nombor genap terbesar dan ganjil terkecil daripada kad digit diberi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 4,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Pembundaran hingga puluh ribu terdekat",
+      "source_pages": "15–17",
+      "source_minutes": 60,
+      "source_pbd_task": "Bundarkan 63 482 kepada puluh, ratus, ribu dan puluh ribu terdekat. Lukis satu garis nombor bagi pilihan puluh ribu.",
+      "source_pbd_evidence": "63 480, 63 500, 63 000, 60 000. Sasaran 3/4 berserta satu titik tengah yang betul.",
+      "phases": {
+        "engagement": "Guru tunjuk 47 650 pada garis antara 40 000 dan 50 000.",
+        "exploration": "Pasangan tanda dua gandaan berturutan dan titik tengah untuk beberapa tempat pembundaran.",
+        "explanation": "Guru model bundar 47 650 kepada puluh, ratus, ribu dan puluh ribu; jelaskan titik tengah.",
+        "elaboration": "Murid bundarkan 72 386 kepada empat tempat dan lakar satu garis nombor.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Garis nombor, kad digit",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Warnakan digit tempat sasaran dan digit selepasnya",
+        "pengayaan": "Cari dua nombor yang membundar kepada 70 000 pada puluh ribu terdekat."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 6,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Tambah hingga empat nombor",
+      "source_pages": "18–21",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 12 674 + 5 826 + 8 120 dan 4 875 + 19 254 + 12 079 + 6 480. Tunjuk pengumpulan semula pada satu item.",
+      "source_pbd_evidence": "26 620 dan 42 688. Semua kuantiti dan satu pertukaran nilai tempat ditunjukkan.",
+      "phases": {
+        "engagement": "Guru tunjuk empat rekod kutipan kelas; murid anggar jumlah.",
+        "exploration": "Pasangan susun empat nombor mengikut tempat dan lakukan pengumpulan semula.",
+        "explanation": "Guru model penambahan berperingkat dan menyemak melalui anggaran.",
+        "elaboration": "Murid kira 15 430 + 7 895 + 4 675 serta 8 242 + 9 158 + 6 320 + 3 280.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, kad kutipan",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tambah dua sebutan dahulu",
+        "pengayaan": "Bina empat nombor yang berjumlah tepat 30 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 7,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Tolak dua nombor",
+      "source_pages": "23–25",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 53 207 − 18 946 serta 80 000 − 43 729. Sahkan satu beza dengan tambah semula penolak.",
+      "source_pbd_evidence": "34 261 dan 36 271. Satu semakan songsang konsisten dengan nombor asal.",
+      "phases": {
+        "engagement": "Guru beri stok 60 000 dan pengeluaran 18 475.",
+        "exploration": "Pasangan gunakan kad nilai tempat untuk meneroka pengumpulan semula merentasi sifar.",
+        "explanation": "Guru model 40 000 − 12 685 serta semakan dengan penambahan songsang.",
+        "elaboration": "Murid kira 62 104 − 27 835 dan 90 000 − 58 467; semak satu.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, rajah bar",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Model tukaran satu tempat demi satu",
+        "pengayaan": "Cipta penolakan dengan pengumpulan semula merentasi tiga sifar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 8,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Tolak dua nombor daripada satu nombor",
+      "source_pages": "26",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 71 650 − 8 365 − 17 285 serta 62 000 − 12 450 − 5 550. Tunjukkan baki perantaraan.",
+      "source_pbd_evidence": "63 285 dan 46 000; 49 550 dan 44 000. Kedua-dua urutan lengkap.",
+      "phases": {
+        "engagement": "Guru tunjuk stok 50 000 dengan dua penghantaran.",
+        "exploration": "Pasangan bina rajah bar stok dan dua pengeluaran; label baki perantaraan.",
+        "explanation": "Guru model 50 000 − 12 350 − 8 650 dari kiri ke kanan.",
+        "elaboration": "Murid kira 74 300 − 16 825 − 7 475 serta 81 000 − 25 700 − 6 300.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad stok, rajah bar",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tulis baki pertama sebelum menolak lagi",
+        "pengayaan": "Semak dengan menambah kedua-dua pengeluaran dan baki."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 9,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Darab nombor hingga lima digit",
+      "source_pages": "30–36",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 726 × 24, 361 × 100 dan 59 × 1 000. Nyatakan nilai digit yang berubah bagi satu item.",
+      "source_pbd_evidence": "17 424, 36 100 dan 59 000. Satu penerangan nilai tempat betul.",
+      "phases": {
+        "engagement": "Guru tunjuk 18 kotak dengan 325 objek sekotak.",
+        "exploration": "Pasangan cerakinkan pengganda kepada puluh dan sa serta bina hasil separa.",
+        "explanation": "Guru model 325 × 18, kemudian terangkan peralihan nilai tempat untuk ×100 dan ×1 000.",
+        "elaboration": "Murid kira 846 × 32, 528 × 100 dan 73 × 1 000.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, kad darab",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan grid hasil separa",
+        "pengayaan": "Bina contoh dua kaedah pendaraban dengan hasil sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 10,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Bahagi dalam lingkungan 100 000",
+      "source_pages": "37–43",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 15 744 ÷ 24, 72 000 ÷ 100 dan 68 000 ÷ 1 000. Sahkan keputusan pertama melalui darab.",
+      "source_pbd_evidence": "656, 720 dan 68. Semakan 656 × 24 = 15 744.",
+      "phases": {
+        "engagement": "Guru beri 12 600 buku untuk 21 pusat; murid anggar agihan.",
+        "exploration": "Pasangan susun langkah bahagi panjang dan semak hasil darab.",
+        "explanation": "Guru model 14 400 ÷ 24 serta beza pembahagian dengan 100 dan 1 000.",
+        "elaboration": "Murid kira 18 360 ÷ 24, 45 000 ÷ 100 dan 93 000 ÷ 1 000.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad agihan, carta nilai tempat",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan jadual gandaan pembahagi",
+        "pengayaan": "Bina soalan bahagi tanpa baki dan semak."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 11,
+      "source_sp_codes": [
+        "1.6.5"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "membahagi nombor hingga 100 000",
+      "source_pages": "37–43",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 9 360 ÷ 12 dan 54 000 ÷ 1 000. Tunjuk satu semakan songsang.",
+      "source_pbd_evidence": "780 dan 54.",
+      "phases": {
+        "engagement": "Guru tunjuk 4 800 objek untuk 12 kumpulan.",
+        "exploration": "Pasangan padankan hasil bahagi dengan kad ayat darab songsang.",
+        "explanation": "Guru model 4 800 ÷ 12 dan peralihan tempat bagi 36 000 ÷ 1 000.",
+        "elaboration": "Murid kira 7 560 ÷ 12 dan 85 000 ÷ 1 000; semak satu.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad operasi, carta nilai tempat",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan gandaan 12 sebagai panduan",
+        "pengayaan": "Cari pembahagi jika hasil dan nombor asal diberi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 12,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung tambah dan tolak",
+      "source_pages": "28–29",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 24 670 + 7 830 − 9 125 dan 56 190 − 8 475 + 6 285. Tulis hasil langkah pertama.",
+      "source_pbd_evidence": "32 500 kemudian 23 375; 47 715 kemudian 54 000.",
+      "phases": {
+        "engagement": "Guru papar stok 28 500, tambahan 6 700, pengeluaran 4 250.",
+        "exploration": "Pasangan susun kad operasi mengikut urutan cerita.",
+        "explanation": "Guru model tambah dan tolak setara keutamaan, kira dari kiri ke kanan.",
+        "elaboration": "Murid kira 32 450 + 8 550 − 6 375 dan 62 000 − 9 450 + 7 200; catat langkah pertama.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad stok, carta operasi",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bulatkan dua sebutan pertama",
+        "pengayaan": "Bina cerita operasi gabungan dengan hasil tepat 40 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 13,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung tambah dan tolak",
+      "source_pages": "28–29",
+      "source_minutes": 60,
+      "source_pbd_task": "Bandingkan dua kaedah untuk 48 350 − 12 790 + 4 210. Kenal pasti kesilapan jika murid menjumlahkan 12 790 dengan 4 210 dahulu dan menolak jumlah itu.",
+      "source_pbd_evidence": "39 770. Nilai 4 210 ialah penambahan selepas penolakan. Penyelesaian menunjukkan 35 560 sebelum tambah.",
+      "phases": {
+        "engagement": "Guru tunjuk dua jawapan berbeza bagi 40 000 − 8 000 + 3 000.",
+        "exploration": "Pasangan uji strategi kiri ke kanan dan strategi salah menggabung penolakan serta penambahan.",
+        "explanation": "Guru jelaskan cara memeriksa tanda operasi dan nilai perantaraan.",
+        "elaboration": "Murid betulkan dakwaan 55 000 − 12 500 + 2 500 = 40 000; semak melalui rajah stok.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad kesilapan, rajah bar",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Label perubahan positif dan negatif",
+        "pengayaan": "Bina dua jawapan salah yang boleh dijelaskan oleh rakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 14,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Operasi bergabung darab dan bahagi",
+      "source_pages": "44–47",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 6 480 ÷ 18 × 9 dan 24 × 765 ÷ 15. Tunjukkan hasil perantaraan.",
+      "source_pbd_evidence": "360 kemudian 3 240; 18 360 kemudian 1 224.",
+      "phases": {
+        "engagement": "Guru papar 3 600 ÷ 12 × 8; murid pilih operasi awal.",
+        "exploration": "Pasangan susun kad langkah dan banding hasil anggaran.",
+        "explanation": "Guru model darab dan bahagi dari kiri ke kanan jika tiada kurungan.",
+        "elaboration": "Murid kira 8 400 ÷ 21 × 6 dan 18 × 640 ÷ 12; tunjuk hasil perantaraan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad operasi, papan mini",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Catat hasil pertama dalam kotak",
+        "pengayaan": "Bina ayat darab-bahagi yang hasil akhirnya 900."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 15,
+      "source_sp_codes": [
+        "1.7.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mengira gabungan darab dan bahagi",
+      "source_pages": "44–47",
+      "source_minutes": 30,
+      "source_pbd_task": "Selesaikan 7 200 ÷ 8 × 5 dan 360 × 4 ÷ 6. Catat hasil operasi pertama bagi setiap satu.",
+      "source_pbd_evidence": "900 kemudian 4 500; 1 440 kemudian 240.",
+      "phases": {
+        "engagement": "Guru tunjuk 240 × 6 ÷ 8 dan 4 800 ÷ 12 × 7.",
+        "exploration": "Pasangan label urutan pada setiap ayat sebelum mengira.",
+        "explanation": "Guru model semakan hasil perantaraan menggunakan darab atau bahagi songsang.",
+        "elaboration": "Murid kira 6 400 ÷ 8 × 3 dan 420 × 6 ÷ 7.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad langkah, jadual sifir",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Laksanakan satu operasi setiap baris",
+        "pengayaan": "Jelaskan mengapa tidak memilih operasi darab secara automatik."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 16,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penggunaan anu dalam ayat tambah",
+      "source_pages": "22",
+      "source_minutes": 60,
+      "source_pbd_task": "Cari a jika 38 + a = 91 dan b jika b + 27 = 69. Masukkan semula setiap nilai untuk menyemak.",
+      "source_pbd_evidence": "a = 53 dan b = 42. Dua persamaan semakan tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk 35 + □ = 80.",
+        "exploration": "Pasangan bina rajah bar jumlah dan bahagian diketahui.",
+        "explanation": "Guru model mencari anu dengan penolakan dan semak penggantian.",
+        "elaboration": "Murid cari a jika 46 + a = 93 dan b jika b + 18 = 76.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad anu, rajah bar",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan jumlah tolak bahagian diketahui",
+        "pengayaan": "Bina dua persamaan tambah dengan anu di kedudukan berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 17,
+      "source_sp_codes": [
+        "1.8.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menentukan anu dalam ayat tolak dua digit",
+      "source_pages": "27",
+      "source_minutes": 30,
+      "source_pbd_task": "Cari anu bagi 63 − □ = 27 dan □ − 32 = 44. Semak satu ayat.",
+      "source_pbd_evidence": "36 dan 76; ayat asal benar selepas penggantian.",
+      "phases": {
+        "engagement": "Guru tunjuk 75 − □ = 43 dan □ − 25 = 47.",
+        "exploration": "Pasangan padankan kedudukan anu dengan rajah bar yang sesuai.",
+        "explanation": "Guru model beza strategi mencari penolak dan nombor asal.",
+        "elaboration": "Murid cari anu bagi 86 − □ = 39 dan □ − 24 = 58; semak.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad anu, rajah bar",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Label nombor asal, penolak dan baki",
+        "pengayaan": "Bina pasangan persamaan tolak dengan anu sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 18,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penyelesaian masalah operasi bergabung",
+      "source_pages": "50–57",
+      "source_minutes": 60,
+      "source_pbd_task": "Gudang menerima 18 kotak yang mengandungi 120 buku setiap satu. Semua buku dihantar sama rata ke 12 pusat. Cari jumlah buku dan bilangan yang diterima setiap pusat.",
+      "source_pbd_evidence": "18 × 120 = 2 160; 2 160 ÷ 12 = 180 buku setiap pusat.",
+      "phases": {
+        "engagement": "Guru tunjuk kotak buku dan bilangan pusat penerima.",
+        "exploration": "Pasangan wakilkan bilangan kotak × isi sekotak, kemudian agihan sama rata.",
+        "explanation": "Guru model 15 kotak × 96 buku ÷ 12 pusat dan label unit setiap hasil.",
+        "elaboration": "Murid kira jumlah 24 kotak berisi 85 buku dan agihan kepada 15 pusat.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad kotak, rajah bar",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Kira jumlah buku sebelum bahagi",
+        "pengayaan": "Cari bilangan pusat jika setiap pusat menerima jumlah diketahui."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 19,
+      "source_sp_codes": [
+        "1.9.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menyelesaikan masalah stok menggunakan tambah dan tolak",
+      "source_pages": "48–54",
+      "source_minutes": 30,
+      "source_pbd_task": "Hitung baki daripada 36 800 selepas masuk 5 250 dan keluar 7 930. Selesaikan juga 54 000 − 8 200 + 3 500.",
+      "source_pbd_evidence": "34 120 dan 49 300.",
+      "phases": {
+        "engagement": "Guru paparkan stok awal 25 000, masuk dan keluar.",
+        "exploration": "Pasangan label transaksi sebagai tambah atau tolak.",
+        "explanation": "Guru model baki berperingkat dan semakan kewajaran.",
+        "elaboration": "Murid kira baki 42 500 selepas masuk 6 200 dan keluar 8 450; bina satu ayat setara.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad rekod stok, jadual",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bezakan masuk dan keluar dengan warna",
+        "pengayaan": "Cari stok awal daripada baki dan transaksi diketahui."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 20,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penyelesaian masalah melibatkan anu",
+      "source_pages": "58–59",
+      "source_minutes": 60,
+      "source_pbd_task": "Sebuah kelas mempunyai n kad. Selepas menambah 26 kad, bilangannya 73. Kelas lain mempunyai 88 kad, memberi beberapa kad dan berbaki 59. Bina ayat beranu dan cari dua nilai.",
+      "source_pbd_evidence": "n + 26 = 73, n = 47. 88 − m = 59, m = 29. Dua ayat dan penyelesaian sepadan.",
+      "phases": {
+        "engagement": "Guru beri cerita bilangan kad yang bertambah dan berkurang.",
+        "exploration": "Pasangan kenal pasti anu dan bina dua rajah bar.",
+        "explanation": "Guru model n + 18 = 62 serta 95 − m = 58; semak penggantian.",
+        "elaboration": "Murid bina ayat dan cari bilangan awal jika tambah 24 menjadi 81 serta bilangan diberikan daripada 72 sehingga baki 46.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad cerita, rajah bar",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gariskan perkara yang tidak diketahui",
+        "pengayaan": "Bina cerita dengan anu pada kedudukan berbeza."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 21,
+      "source_sp_codes": [
+        "1.9.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menyelesaikan masalah harian dengan satu anu",
+      "source_pages": "58–59",
+      "source_minutes": 30,
+      "source_pbd_task": "Kelas mempunyai 65 buku dan baki 37 selepas dipinjam. Kelas lain memerlukan tambahan untuk menukar jumlah 28 kepada 73. Cari anu bagi kedua-duanya.",
+      "source_pbd_evidence": "28 buku dipinjam dan 45 buku tambahan.",
+      "phases": {
+        "engagement": "Guru tunjuk situasi buku dipinjam dan sumbangan tambahan.",
+        "exploration": "Pasangan asingkan maklumat diketahui daripada anu.",
+        "explanation": "Guru model 80 − n = 54 dan 35 + m = 90 serta semakan.",
+        "elaboration": "Murid cari bilangan dipinjam jika 92 menjadi 67 dan tambahan jika 41 menjadi 85.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad cerita buku, papan mini",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tulis persamaan sebelum mengira",
+        "pengayaan": "Cipta dua situasi yang mempunyai jawapan anu sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 27,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Pecahan tak wajar dan nombor bercampur",
+      "source_pages": "67–70",
+      "source_minutes": 60,
+      "source_pbd_task": "Tukar 19/6 dan 22/7 kepada nombor bercampur. Tukar 2 3/5 dan 4 1/3 kepada pecahan tak wajar.",
+      "source_pbd_evidence": "3 1/6, 3 1/7, 13/5 dan 13/3. Sasaran 3/4; bina model bagi satu item.",
+      "phases": {
+        "engagement": "Guru tunjuk lima suku pada jalur; murid kenal satu keseluruhan dan baki.",
+        "exploration": "Pasangan kelompokkan pecahan tak wajar menjadi unit penuh dan baki.",
+        "explanation": "Guru model 14/5 = 2 4/5 serta 3 2/7 = 23/7.",
+        "elaboration": "Murid tukar 17/4 dan 25/6 kepada nombor bercampur serta 2 5/8 dan 3 1/5 kepada pecahan tak wajar.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, kad nombor",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bahagi pengangka dengan penyebut",
+        "pengayaan": "Buktikan penukaran songsang melalui model."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 28,
+      "source_sp_codes": [
+        "2.1.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menukar pecahan tak wajar dan nombor bercampur",
+      "source_pages": "67–70",
+      "source_minutes": 30,
+      "source_pbd_task": "Tukar 17/5 kepada nombor bercampur dan 2 3/7 kepada pecahan tak wajar.",
+      "source_pbd_evidence": "3 2/5 dan 17/7.",
+      "phases": {
+        "engagement": "Guru tunjuk 11/4 dan model 2 3/4.",
+        "exploration": "Pasangan padankan pecahan tak wajar dengan jalur nombor bercampur.",
+        "explanation": "Guru model hasil bahagi sebagai bahagian bulat, baki sebagai pengangka.",
+        "elaboration": "Murid tukar 23/6 dan 3 2/5 kepada bentuk sebaliknya.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, kad padanan",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Label hasil bahagi dan baki",
+        "pengayaan": "Cipta kad dua bentuk setara untuk rakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 29,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Penambahan pecahan dan nombor bercampur",
+      "source_pages": "71–74",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 2 1/3 + 1/6 + 2 serta 1 3/4 + 2 1/2 + 3/8. Tunjukkan penyebut sepunya.",
+      "source_pbd_evidence": "4 1/2 dan 4 5/8. Penambahan bahagian pecahan dan keseluruhan boleh disemak.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga jalur pecahan dengan penyebut berlainan.",
+        "exploration": "Pasangan cari penyebut sepunya dan gabungkan bahagian keseluruhan serta pecahan.",
+        "explanation": "Guru model 1 1/2 + 2/3 + 1 = 3 1/6.",
+        "elaboration": "Murid kira 2 1/4 + 1/8 + 1 dan 1 2/3 + 2 1/6 + 1/2.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, grid",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Samakan penyebut dahulu",
+        "pengayaan": "Banding kaedah cerakin dengan pecahan tak wajar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 30,
+      "source_sp_codes": [
+        "2.1.2"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menambah hingga tiga nombor melibatkan pecahan",
+      "source_pages": "71–74",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 1 + 3/8 + 2 1/4 dan 2 1/3 + 1 + 1/6. Catat penyebut yang digunakan.",
+      "source_pbd_evidence": "3 5/8 dan 3 1/2.",
+      "phases": {
+        "engagement": "Guru papar 2 + 1/4 + 1 1/2.",
+        "exploration": "Pasangan susun pecahan pada jalur sepenyebut.",
+        "explanation": "Guru model 2 + 1/4 + 1 1/2 = 3 3/4 dan pengumpulan apabila pecahan melebihi satu.",
+        "elaboration": "Murid kira 1 + 5/6 + 1 2/3 dan 3 1/4 + 1 + 3/8.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, kad nombor bercampur",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tambah bahagian bulat dahulu",
+        "pengayaan": "Bina tiga sebutan yang hasilnya nombor bulat."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 31,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Tambah perpuluhan hingga tiga tempat perpuluhan",
+      "source_pages": "86–87",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 12.307 + 4.65 + 0.838 dan 2.456 + 7.889. Tunjukkan penjajaran titik perpuluhan.",
+      "source_pbd_evidence": "17.795 dan 10.345. Kedudukan digit dijajarkan pada kedua-dua item.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga bacaan ukuran perpuluhan berlainan tempat.",
+        "exploration": "Pasangan susun kad digit mengikut lajur dan isi sifar pemegang tempat.",
+        "explanation": "Guru model 6.405 + 2.7 + 0.895 dengan titik sejajar.",
+        "elaboration": "Murid kira 8.236 + 3.42 + 1.154 serta 4.785 + 6.215.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, kad perpuluhan",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Sejajarkan titik sebelum menambah",
+        "pengayaan": "Cari tiga perpuluhan berjumlah 12 tepat."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 32,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Tolak perpuluhan hingga tiga tempat perpuluhan",
+      "source_pages": "88–89",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 24.5 − 7.638 dan 18.007 − 2.68 − 0.327. Tulis hasil langkah pertama bagi item kedua.",
+      "source_pbd_evidence": "16.862; 15.327 kemudian 15.000 atau 15.",
+      "phases": {
+        "engagement": "Guru beri nilai 15.4 dan pengurangan 2.685.",
+        "exploration": "Pasangan model pengumpulan semula daripada satu tempat ke tempat lain.",
+        "explanation": "Guru model penolakan hingga tiga tempat perpuluhan dan baki berturutan.",
+        "elaboration": "Murid kira 32.6 − 8.475 dan 20.005 − 3.48 − 0.525; catat langkah pertama.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, papan mini",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Isi sifar di hujung untuk sejajar",
+        "pengayaan": "Semak dengan menambah semula semua penolak."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 33,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Darab perpuluhan",
+      "source_pages": "90–91",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 2.314 × 4, 0.763 × 10, 0.412 × 100 dan 0.218 × 1 000. Tunjuk carta nilai tempat bagi satu item.",
+      "source_pbd_evidence": "9.256, 7.63, 41.2 dan 218. Sasaran 3/4 berserta satu penerangan nilai tempat.",
+      "phases": {
+        "engagement": "Guru papar 0.425 × 10 dan 0.425 × 100; murid banding.",
+        "exploration": "Pasangan alih digit pada carta nilai tempat bagi ×10, ×100 dan ×1 000.",
+        "explanation": "Guru model 1.235 × 4 dan peralihan nilai tempat untuk kuasa sepuluh.",
+        "elaboration": "Murid kira 3.125 × 3, 0.486 × 10, 0.237 × 100 dan 0.164 × 1 000.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, kad operasi",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Anggar hasil sebelum letak titik",
+        "pengayaan": "Terangkan mengapa menambah sifar sahaja tidak mencukupi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 34,
+      "source_sp_codes": [
+        "2.2.3"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "mendarab perpuluhan dengan nombor satu digit dan kuasa sepuluh",
+      "source_pages": "90–91",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 0.125 × 6, 0.247 × 10 dan 1.024 × 1000. Rekod tempat perpuluhan dengan tepat.",
+      "source_pbd_evidence": "0.750 atau 0.75; 2.47; 1 024.",
+      "phases": {
+        "engagement": "Guru tunjuk enam bekas dengan isi 0.25 L; murid anggar jumlah.",
+        "exploration": "Pasangan model tambah berulang dan darab satu digit.",
+        "explanation": "Guru model 0.375 × 4 serta kesan ×10 dan ×1 000 pada nilai digit.",
+        "elaboration": "Murid kira 0.245 × 8, 0.356 × 10 dan 1.035 × 1 000.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad bekas, carta nilai tempat",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan hasil darab nombor bulat sebagai panduan",
+        "pengayaan": "Semak hasil dengan anggaran munasabah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 35,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Bahagi perpuluhan",
+      "source_pages": "92–93",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 6.468 ÷ 6, 12.6 ÷ 10, 24.7 ÷ 100 dan 418 ÷ 1 000. Sahkan satu hasil melalui darab.",
+      "source_pbd_evidence": "1.078, 1.26, 0.247 dan 0.418. Sasaran 3/4 serta satu semakan betul.",
+      "phases": {
+        "engagement": "Guru tunjuk 4.8 L dibahagi enam bahagian.",
+        "exploration": "Pasangan bina model agihan dan padankan ayat darab songsang.",
+        "explanation": "Guru model bahagi perpuluhan dengan satu digit dan peralihan tempat bagi ÷10, ÷100, ÷1 000.",
+        "elaboration": "Murid kira 7.248 ÷ 8, 15.4 ÷ 10, 37.2 ÷ 100 dan 625 ÷ 1 000.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Carta nilai tempat, kad agihan",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Letakkan titik perpuluhan hasil secara sejajar",
+        "pengayaan": "Bina soalan dengan hasil 0.125."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 36,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Menukar pecahan kepada peratus dan sebaliknya",
+      "source_pages": "94–95",
+      "source_minutes": 60,
+      "source_pbd_task": "Tukar 7/10 dan 9/20 kepada peratus. Tulis 15% dan 64% sebagai pecahan bentuk termudah.",
+      "source_pbd_evidence": "70%, 45%, 3/20 dan 16/25. Sasaran 3/4.",
+      "phases": {
+        "engagement": "Guru tunjuk 1/2 pada grid seratus; murid sebut peratus.",
+        "exploration": "Pasangan padankan pecahan berpenyebut 10,20 dan 25 dengan grid.",
+        "explanation": "Guru model 3/5 = 60% dan 35% = 7/20 melalui per seratus.",
+        "elaboration": "Murid tukar 3/10 dan 7/20 kepada peratus serta 24% dan 55% kepada pecahan termudah.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid seratus, kad pecahan",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar kepada penyebut 100 dahulu",
+        "pengayaan": "Cari tiga pecahan setara dengan 40%."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 37,
+      "source_sp_codes": [
+        "2.3.1"
+      ],
+      "source_sp_status": "TSV_CODE",
+      "source_title": "menukar pecahan kepada peratus dan sebaliknya",
+      "source_pages": "94–95",
+      "source_minutes": 30,
+      "source_pbd_task": "Tukar 7/20 kepada peratus dan 45% kepada pecahan termudah. Lakarkan satu model.",
+      "source_pbd_evidence": "35% dan 9/20.",
+      "phases": {
+        "engagement": "Guru beri kad 40% dan grid kosong.",
+        "exploration": "Pasangan lorek peratus dan tulis pecahan daripada 100.",
+        "explanation": "Guru model 9/20 = 45% dan 60% = 3/5.",
+        "elaboration": "Murid tukar 3/20 kepada peratus dan 75% kepada pecahan termudah; lakar satu.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Grid seratus, pensel warna",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan kad faktor sepunya",
+        "pengayaan": "Cipta dua kad padanan pecahan-peratus."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 38,
+      "source_sp_codes": null,
+      "source_sp_status": "VERIFY_NATIVE_FULL_SP",
+      "source_title": "Mengira peratusan daripada kuantiti objek",
+      "source_pages": "96",
+      "source_minutes": 60,
+      "source_pbd_task": "Cari peratus bagi 18 daripada 30 buku dan 21 daripada 60 pen. Jelaskan pembilang serta penyebut bagi satu item.",
+      "source_pbd_evidence": "60% dan 35%. Pembilang ialah bilangan dipilih, penyebut ialah jumlah.",
+      "phases": {
+        "engagement": "Guru tunjuk 12 daripada 40 token dipilih.",
+        "exploration": "Pasangan label bilangan dipilih sebagai pengangka dan jumlah sebagai penyebut.",
+        "explanation": "Guru model 12/40 × 100% = 30% serta semak kewajaran.",
+        "elaboration": "Murid cari peratus 24 daripada 80 buku dan 15 daripada 50 pensel.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens asal dan merekod pencapaian. Murid menerangkan strategi atau membetulkan satu kesilapan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token, jadual peratus",
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tulis pecahan sebelum darab 100",
+        "pengayaan": "Bina dua set bilangan berbeza yang mempunyai peratus sama."
+      },
+      "ready": false
+    }
+  ]
+}
