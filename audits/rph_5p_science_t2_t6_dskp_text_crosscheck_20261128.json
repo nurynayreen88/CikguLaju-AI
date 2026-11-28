@@ -1,0 +1,46 @@
+{
+  "status": "DSKP_TEXT_CROSSCHECK_PASSED_NOT_RELEASED",
+  "method": "All unique SP text strings matched respective Drive DSKP extracted text after normalizing whitespace and U+0002 as hyphen; no visual page review, no runtime or RPT matching.",
+  "years": [
+    {
+      "year": 2,
+      "sessions": 47,
+      "sp": 63,
+      "source": "1Kyzqbs4aK8c4IynMZ1DvOdf0pxRj68Pl"
+    },
+    {
+      "year": 3,
+      "sessions": 40,
+      "sp": 60,
+      "source": "17YPj3KbdceHXtQjnnJ6JnAbP09rA0x-O"
+    },
+    {
+      "year": 4,
+      "sessions": 47,
+      "sp": 91,
+      "source": "1OKcOhiGQPkvn9Beew8TukHmDSTcCuYQ0"
+    },
+    {
+      "year": 5,
+      "sessions": 51,
+      "sp": 95,
+      "source": "17duOzgdPl4s3KOg4o5dPBn5XLV48GncK"
+    },
+    {
+      "year": 6,
+      "sessions": 47,
+      "sp": 96,
+      "source": "1YI2il9wHplhizlv7bfooFhCvQKpsFDZy"
+    }
+  ],
+  "total_candidates": 232,
+  "total_year_specific_sp": 405,
+  "unmatched_sp": 0,
+  "hold": [
+    "Year 2 SP 10.1.6 source wording",
+    "Year 6 supervised practical safety",
+    "Native catalogue unavailable in current execution context",
+    "RPT and source Word/PDF alignment not established"
+  ],
+  "ready": false
+}
