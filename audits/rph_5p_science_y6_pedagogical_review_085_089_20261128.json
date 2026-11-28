@@ -1,0 +1,96 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 6,
+  "source": {
+    "path": "audits/rph_5p_science_y6_native_085_089_20261128.json",
+    "blob": "b841cc7bdc6798ed643764cd1ba1f49282b707d0"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y6_support_085_089_001_023_20261128.json",
+    "blob": "be1532c27e5250b93077f4ad93ec9cf226c84cae"
+  },
+  "count": 5,
+  "follow_up_required": 3,
+  "policy": "Review original SP, objectives, PBD, phases, materials, safety and support. No independent textbook page verification or teacher/panitia signoff. Flagged issues remain open; preserve locked sources and retest print adaptations.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-085",
+      "teaching_order": 1,
+      "sp": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "title": "Memerhati, mengelas dan mengukur kereta model",
+      "minutes": 30,
+      "review_basis": "Tiga tugasan bersepadu menguji pemerhatian, pengelasan dan ukuran cm; PBD mengekalkan ketiga-tiga evidens asal.",
+      "implementation_note": "Tambah pita penanda garisan mula pada BBM dan jelaskan titik ukuran akhir model secara konsisten. Gunakan model siap bina, pemberat ringan dan laluan selamat.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-086",
+      "teaching_order": 2,
+      "sp": [
+        "1.1.4",
+        "1.1.5",
+        "1.1.6"
+      ],
+      "title": "Membentangkan sebab dan jangkaan pergerakan model",
+      "minutes": 30,
+      "review_basis": "Jadual berlabel, inferens munasabah dan ramalan berasaskan bacaan menguji tiga SP tanpa menyamakan sebab dengan jangkaan.",
+      "implementation_note": "Gunakan data yang disediakan; murid nyatakan bukti dan batas inferens, bukan menganggap sebab sudah terbukti.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-087",
+      "teaching_order": 3,
+      "sp": [
+        "1.1.7",
+        "1.1.8",
+        "1.1.9"
+      ],
+      "title": "Mentafsir pergerakan model mengikut masa",
+      "minutes": 60,
+      "review_basis": "Urutan kad masa, dua nilai dan takrif operasi yang boleh diulang memenuhi tiga SP.",
+      "implementation_note": "Jelaskan ukuran dari garisan mula pada masa ditetapkan bagi laluan lurus; bezakan ukuran ini daripada jumlah jarak bagi laluan berliku dan daripada kelajuan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-088",
+      "teaching_order": 4,
+      "sp": [
+        "1.1.10",
+        "1.1.11"
+      ],
+      "title": "Mereka bentuk ujian jisim kereta model",
+      "minutes": 30,
+      "review_basis": "Jisim dimanipulasi, jarak bergerak balas, kawalan laluan dan belon serta hipotesis boleh diuji menyokong dua SP.",
+      "implementation_note": "Nyatakan saiz/isi udara belon dan cara pelepasan yang seragam; aktiviti perancangan, bukan keputusan eksperimen. Guru kendalikan pemberat ringan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-089",
+      "teaching_order": 5,
+      "sp": [
+        "1.1.12"
+      ],
+      "title": "Menguji kesan jisim pada jarak pergerakan",
+      "minutes": 60,
+      "review_basis": "Dua jisim dengan dua ulangan setiap satu, empat ukuran dan rumusan berasaskan data memenuhi eksperimen.",
+      "implementation_note": "Samakan kaedah pengukuran jarak dengan takrif operasi sesi terdahulu: jika mengukur hingga berhenti, nyatakan takrif khusus dan kawal kriteria berhenti. Guru selia model/pemberat, jangan halakan model kepada rakan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}
