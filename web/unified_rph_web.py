@@ -1484,7 +1484,7 @@ def create_blueprint():
                     {"type":"worksheet", "title":title,
                      "url":"/api/web/rph/math-worksheet-pdf/"+kind+"?"+params,
                      "action":"Download PDF"} for kind,title in (
-                         ("murid","Lembaran Latihan Murid" + (" — latihan bersama PdP 006–007" if record.get("shared_worksheet") else "")),
+                         ("murid","Lembaran Latihan Murid" + (" — latihan bersama PdP " + "–".join(p.rsplit("-", 1)[-1] for p in record["shared_pdp"]) if record.get("shared_worksheet") else "")),
                          ("skema","Skema Jawapan Guru"))]})
             if sub == "BM":
                 from urllib.parse import urlencode
