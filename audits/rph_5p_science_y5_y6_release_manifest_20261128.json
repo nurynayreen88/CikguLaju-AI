@@ -1,5 +1,5 @@
 {
-  "status": "PENDING_INTERNAL_PUBLICATION_APPROVAL",
+  "status": "APPROVED_FOR_PHASED_RELEASE_INTERNAL_REVIEW",
   "total": 205,
   "source_blobs": {
     "audits/rph_5p_science_y5_native_complete_identity_audit_20261128.json": "bab5c8d829a1346fbf48c916172c1942a47bdb09",
@@ -16,9 +16,19 @@
     "documents_run": 46120048104,
     "integration_run": 46120047977,
     "visual_sample_pages": 24,
-    "corrections": 82
+    "corrections": 82,
+    "final_tested_head": "a158ea1045d344b3166c0ce7b3f9b6f4afd1056c",
+    "published_route_run": 46128041102,
+    "published_route_artifacts": [
+      15256573549,
+      15256583423
+    ],
+    "published_route_simulated_downloads_passed": 820,
+    "personalized_word_one_page_passed": 410,
+    "original_catalogue_ids_passed": 205,
+    "live_auth_verified": false
   },
-  "limitations": "Source-locked inventory and existing QA evidence only. All candidates remain disabled; no real authenticated production delivery, no official academic endorsement.",
+  "limitations": "Internal content and print review for existing source-aligned plans, not official academic endorsement. Original source field comparison and 82 targeted corrections retained. Visual inspection sampled. Published-route simulation uses signed test accounts and pinned original catalogue; real authenticated production delivery unverified. Deployment and explicit feature flag required.",
   "records": [
     {
       "year": 5,
@@ -31,8 +41,8 @@
       "textbook_pages": "2-3",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -45,8 +55,8 @@
       "textbook_pages": "5-7",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -59,8 +69,8 @@
       "textbook_pages": "2-5",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -73,8 +83,8 @@
       "textbook_pages": "5-7,146-149",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -87,8 +97,8 @@
       "textbook_pages": "5-7,152-153",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -101,8 +111,8 @@
       "textbook_pages": "5-7,15",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -115,8 +125,8 @@
       "textbook_pages": "11-12,15",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -129,8 +139,8 @@
       "textbook_pages": "5-7,10-12",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -143,8 +153,8 @@
       "textbook_pages": "8-13",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -157,8 +167,8 @@
       "textbook_pages": "8-13",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -171,8 +181,8 @@
       "textbook_pages": "8-13",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -185,8 +195,8 @@
       "textbook_pages": "8-13,18",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -199,8 +209,8 @@
       "textbook_pages": "8-13,18",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -213,8 +223,8 @@
       "textbook_pages": "8-13,18",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -227,8 +237,8 @@
       "textbook_pages": "10-13",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -241,8 +251,8 @@
       "textbook_pages": "20,27",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -255,8 +265,8 @@
       "textbook_pages": "22,27",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -269,8 +279,8 @@
       "textbook_pages": "23,27",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -283,8 +293,8 @@
       "textbook_pages": "22-24",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -297,8 +307,8 @@
       "textbook_pages": "25",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -311,8 +321,8 @@
       "textbook_pages": "27",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -325,8 +335,8 @@
       "textbook_pages": "28-29",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -339,8 +349,8 @@
       "textbook_pages": "30-32",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -353,8 +363,8 @@
       "textbook_pages": "30-32",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -367,8 +377,8 @@
       "textbook_pages": "33",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -381,8 +391,8 @@
       "textbook_pages": "32",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -395,8 +405,8 @@
       "textbook_pages": "34,42",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -409,8 +419,8 @@
       "textbook_pages": "38",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -423,8 +433,8 @@
       "textbook_pages": "40",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -437,8 +447,8 @@
       "textbook_pages": "38-42",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -451,8 +461,8 @@
       "textbook_pages": "42",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -465,8 +475,8 @@
       "textbook_pages": "50",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -479,8 +489,8 @@
       "textbook_pages": "51,54,57",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -493,8 +503,8 @@
       "textbook_pages": "63",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -507,8 +517,8 @@
       "textbook_pages": "64,66",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -521,8 +531,8 @@
       "textbook_pages": "64-66",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -535,8 +545,8 @@
       "textbook_pages": "67,69",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -549,8 +559,8 @@
       "textbook_pages": "57,63,66,69",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -563,8 +573,8 @@
       "textbook_pages": "70-73",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -577,8 +587,8 @@
       "textbook_pages": "70,73",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -591,8 +601,8 @@
       "textbook_pages": "70-73",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -605,8 +615,8 @@
       "textbook_pages": "70,73",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -619,8 +629,8 @@
       "textbook_pages": "73",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -633,8 +643,8 @@
       "textbook_pages": "74,76",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -647,8 +657,8 @@
       "textbook_pages": "77,78",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -661,8 +671,8 @@
       "textbook_pages": "79",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -675,8 +685,8 @@
       "textbook_pages": "79-81",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -689,8 +699,8 @@
       "textbook_pages": "82,85",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -703,8 +713,8 @@
       "textbook_pages": "82-85",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -717,8 +727,8 @@
       "textbook_pages": "87",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -731,8 +741,8 @@
       "textbook_pages": "85",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -745,8 +755,8 @@
       "textbook_pages": "94,97",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -759,8 +769,8 @@
       "textbook_pages": "94-97",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -773,8 +783,8 @@
       "textbook_pages": "98,103",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -787,8 +797,8 @@
       "textbook_pages": "103",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -801,8 +811,8 @@
       "textbook_pages": "104,109,111",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -815,8 +825,8 @@
       "textbook_pages": "104,109,110,111",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -829,8 +839,8 @@
       "textbook_pages": "104,109,111",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -843,8 +853,8 @@
       "textbook_pages": "104-108",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -857,8 +867,8 @@
       "textbook_pages": "104,109,110,111",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -871,8 +881,8 @@
       "textbook_pages": "116",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -885,8 +895,8 @@
       "textbook_pages": "118",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -899,8 +909,8 @@
       "textbook_pages": "120,122",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -913,8 +923,8 @@
       "textbook_pages": "118-122",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -927,8 +937,8 @@
       "textbook_pages": "123-124",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -941,8 +951,8 @@
       "textbook_pages": "125-126,128",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -955,8 +965,8 @@
       "textbook_pages": "125-127",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -969,8 +979,8 @@
       "textbook_pages": "129-131",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -983,8 +993,8 @@
       "textbook_pages": "122,124,131",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -997,8 +1007,8 @@
       "textbook_pages": "129-131",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1011,8 +1021,8 @@
       "textbook_pages": "132,134",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1025,8 +1035,8 @@
       "textbook_pages": "135",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1039,8 +1049,8 @@
       "textbook_pages": "137,139",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1053,8 +1063,8 @@
       "textbook_pages": "134,139",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1067,8 +1077,8 @@
       "textbook_pages": "146",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1081,8 +1091,8 @@
       "textbook_pages": "146-149",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1095,8 +1105,8 @@
       "textbook_pages": "147,149",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1109,8 +1119,8 @@
       "textbook_pages": "150-151",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1123,8 +1133,8 @@
       "textbook_pages": "152-153",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1137,8 +1147,8 @@
       "textbook_pages": "154-157",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1151,8 +1161,8 @@
       "textbook_pages": "154-159",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1165,8 +1175,8 @@
       "textbook_pages": "158,159",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1179,8 +1189,8 @@
       "textbook_pages": "151,153,155,156,157,159",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1193,8 +1203,8 @@
       "textbook_pages": "164,165",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1207,8 +1217,8 @@
       "textbook_pages": "166,167",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1221,8 +1231,8 @@
       "textbook_pages": "168-169",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1235,8 +1245,8 @@
       "textbook_pages": "168-169",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1249,8 +1259,8 @@
       "textbook_pages": "170,173",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1263,8 +1273,8 @@
       "textbook_pages": "171,173",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1277,8 +1287,8 @@
       "textbook_pages": "165,167",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1291,8 +1301,8 @@
       "textbook_pages": "178",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1305,8 +1315,8 @@
       "textbook_pages": "179",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1319,8 +1329,8 @@
       "textbook_pages": "178-183",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1333,8 +1343,8 @@
       "textbook_pages": "180-183",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1347,8 +1357,8 @@
       "textbook_pages": "184,185",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1361,8 +1371,8 @@
       "textbook_pages": "179,180,181,182,184,185",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1375,8 +1385,8 @@
       "textbook_pages": "186-190",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1389,8 +1399,8 @@
       "textbook_pages": "186-191",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1403,8 +1413,8 @@
       "textbook_pages": "186-191",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1417,8 +1427,8 @@
       "textbook_pages": "192,194",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1431,8 +1441,8 @@
       "textbook_pages": "188,189,190,191,194",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1445,8 +1455,8 @@
       "textbook_pages": "200",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1459,8 +1469,8 @@
       "textbook_pages": "201,203",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1473,8 +1483,8 @@
       "textbook_pages": "201-203",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1487,8 +1497,8 @@
       "textbook_pages": "204,206",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1501,8 +1511,8 @@
       "textbook_pages": "206",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1515,8 +1525,8 @@
       "textbook_pages": "208,213",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1529,8 +1539,8 @@
       "textbook_pages": "211,213",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1543,8 +1553,8 @@
       "textbook_pages": "213",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1557,8 +1567,8 @@
       "textbook_pages": "208-213",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1571,8 +1581,8 @@
       "textbook_pages": "218,219",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1585,8 +1595,8 @@
       "textbook_pages": "220",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1599,8 +1609,8 @@
       "textbook_pages": "222",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1613,8 +1623,8 @@
       "textbook_pages": "223,226",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1627,8 +1637,8 @@
       "textbook_pages": "219,226",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 5,
@@ -1641,8 +1651,8 @@
       "textbook_pages": "218-226",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1657,8 +1667,8 @@
       "textbook_pages": "2-5",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1673,8 +1683,8 @@
       "textbook_pages": "5-7",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1689,8 +1699,8 @@
       "textbook_pages": "6-7",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1704,8 +1714,8 @@
       "textbook_pages": "7-8",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1718,8 +1728,8 @@
       "textbook_pages": "7-8",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1732,8 +1742,8 @@
       "textbook_pages": "14-15",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1746,8 +1756,8 @@
       "textbook_pages": "16-17",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1760,8 +1770,8 @@
       "textbook_pages": "18",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1774,8 +1784,8 @@
       "textbook_pages": "19",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1788,8 +1798,8 @@
       "textbook_pages": "20-21",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1802,8 +1812,8 @@
       "textbook_pages": "21-22",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1816,8 +1826,8 @@
       "textbook_pages": "25",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1830,8 +1840,8 @@
       "textbook_pages": "25",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1844,8 +1854,8 @@
       "textbook_pages": "26-27",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1858,8 +1868,8 @@
       "textbook_pages": "28",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1872,8 +1882,8 @@
       "textbook_pages": "34-35",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1886,8 +1896,8 @@
       "textbook_pages": "33-35",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1900,8 +1910,8 @@
       "textbook_pages": "36-39",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1914,8 +1924,8 @@
       "textbook_pages": "40-43",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1928,8 +1938,8 @@
       "textbook_pages": "44-46",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1942,8 +1952,8 @@
       "textbook_pages": "47",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1956,8 +1966,8 @@
       "textbook_pages": "52-53",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1970,8 +1980,8 @@
       "textbook_pages": "54-55",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1984,8 +1994,8 @@
       "textbook_pages": "56-58",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -1998,8 +2008,8 @@
       "textbook_pages": "58",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2012,8 +2022,8 @@
       "textbook_pages": "59-60",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2026,8 +2036,8 @@
       "textbook_pages": "61-62",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2040,8 +2050,8 @@
       "textbook_pages": "64",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2054,8 +2064,8 @@
       "textbook_pages": "75-76",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2068,8 +2078,8 @@
       "textbook_pages": "76-79",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2082,8 +2092,8 @@
       "textbook_pages": "68-69",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2096,8 +2106,8 @@
       "textbook_pages": "70-71",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2110,8 +2120,8 @@
       "textbook_pages": "72-74",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2124,8 +2134,8 @@
       "textbook_pages": "80-81",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2138,8 +2148,8 @@
       "textbook_pages": "82-83",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2152,8 +2162,8 @@
       "textbook_pages": "88-89",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2166,8 +2176,8 @@
       "textbook_pages": "90-92",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2180,8 +2190,8 @@
       "textbook_pages": "92",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2194,8 +2204,8 @@
       "textbook_pages": "93-94",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2208,8 +2218,8 @@
       "textbook_pages": "95-96",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2222,8 +2232,8 @@
       "textbook_pages": "97-98",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2236,8 +2246,8 @@
       "textbook_pages": "99-100",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2250,8 +2260,8 @@
       "textbook_pages": "100",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2264,8 +2274,8 @@
       "textbook_pages": "101-104",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2278,8 +2288,8 @@
       "textbook_pages": "105-106",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2292,8 +2302,8 @@
       "textbook_pages": "107-108",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2306,8 +2316,8 @@
       "textbook_pages": "108",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2320,8 +2330,8 @@
       "textbook_pages": "114-115",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2334,8 +2344,8 @@
       "textbook_pages": "116-118",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2348,8 +2358,8 @@
       "textbook_pages": "119-121",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2362,8 +2372,8 @@
       "textbook_pages": "122",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2376,8 +2386,8 @@
       "textbook_pages": "122",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2390,8 +2400,8 @@
       "textbook_pages": "128-129",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2404,8 +2414,8 @@
       "textbook_pages": "128-130",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2418,8 +2428,8 @@
       "textbook_pages": "130",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2432,8 +2442,8 @@
       "textbook_pages": "131",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2446,8 +2456,8 @@
       "textbook_pages": "131-134",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2460,8 +2470,8 @@
       "textbook_pages": "135-138",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2474,8 +2484,8 @@
       "textbook_pages": "135-138",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2488,8 +2498,8 @@
       "textbook_pages": "139",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2502,8 +2512,8 @@
       "textbook_pages": "140-141",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2516,8 +2526,8 @@
       "textbook_pages": "143",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2530,8 +2540,8 @@
       "textbook_pages": "148-149",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2544,8 +2554,8 @@
       "textbook_pages": "150-151",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2558,8 +2568,8 @@
       "textbook_pages": "150-151",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2572,8 +2582,8 @@
       "textbook_pages": "152-155",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2586,8 +2596,8 @@
       "textbook_pages": "156-161",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2600,8 +2610,8 @@
       "textbook_pages": "161",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2614,8 +2624,8 @@
       "textbook_pages": "166-167",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2628,8 +2638,8 @@
       "textbook_pages": "168-170",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2642,8 +2652,8 @@
       "textbook_pages": "171-173",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2656,8 +2666,8 @@
       "textbook_pages": "174-175",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2670,8 +2680,8 @@
       "textbook_pages": "170,173",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2684,8 +2694,8 @@
       "textbook_pages": "180-182",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2698,8 +2708,8 @@
       "textbook_pages": "183-185",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2712,8 +2722,8 @@
       "textbook_pages": "183-186",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2726,8 +2736,8 @@
       "textbook_pages": "187-188",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2740,8 +2750,8 @@
       "textbook_pages": "188",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2754,8 +2764,8 @@
       "textbook_pages": "194,199,205",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2768,8 +2778,8 @@
       "textbook_pages": "194,199,205",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2782,8 +2792,8 @@
       "textbook_pages": "195-198",
       "minutes": 60,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2796,8 +2806,8 @@
       "textbook_pages": "199-205",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2810,8 +2820,8 @@
       "textbook_pages": "206",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2824,8 +2834,8 @@
       "textbook_pages": "207",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2838,8 +2848,8 @@
       "textbook_pages": "205,207",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2852,8 +2862,8 @@
       "textbook_pages": "212-213",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2866,8 +2876,8 @@
       "textbook_pages": "214-217",
       "minutes": 30,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2880,8 +2890,8 @@
       "textbook_pages": "218-219",
       "minutes": 60,
       "correction_present": false,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     },
     {
       "year": 6,
@@ -2894,8 +2904,8 @@
       "textbook_pages": "219",
       "minutes": 30,
       "correction_present": true,
-      "ready": false,
-      "status": "CONTENT_AND_PRINT_REVIEW_PENDING_PUBLICATION"
+      "ready": true,
+      "status": "APPROVED_FOR_RELEASE"
     }
   ]
 }
