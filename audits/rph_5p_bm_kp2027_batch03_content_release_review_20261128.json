@@ -1,12 +1,12 @@
 {
-  "status": "INITIAL_CONTENT_REVIEW_ONLY",
+  "status": "APPROVED_FOR_PHASED_RELEASE_SEMAKAN_PELAKSANAAN",
   "total": 64,
   "corrected_proposals": 64,
   "source_blob": "da4baead5f0e2f95f62b9e65e931a6d7baefba22",
   "companion_blob": "0c6cd1364227dc1a5436f0d8b2055237b32c547a",
   "previous_review_blob": "8a40d04f234b358e18410e1f4734fcb3e9b7eb47",
   "scope": "A29–60 and B29–60. Retain source SK/SP, objective, criterion and material. Review only; no runtime or production changes.",
-  "limitations": "Checked against pinned penataran lesson source, not independent DK pages or academic final approval. Text examples are authored practice, not textbook excerpts. Corrected candidate rendering and actual authenticated download unverified.",
+  "limitations": "SP-level source review and targeted individual phase corrections, automated print checks all records, visual sampling only; actual authenticated production delivery not yet verified.",
   "records": [
     {
       "group": "A",
@@ -32,8 +32,8 @@
         "evaluation": "Guru memberi satu situasi baharu di rumah atau sekolah; setiap murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dalam dialog ringkas."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -59,8 +59,8 @@
         "evaluation": "Murid membaca tiga ayat baharu secara individu dengan sebutan betul dan intonasi sesuai; nyatakan konteks sekurang-kurangnya satu ayat."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -86,8 +86,8 @@
         "evaluation": "Secara individu, murid menggabungkan kad suku kata menjadi sekurang-kurangnya tiga perkataan, menulisnya dan membentuk satu frasa mudah daripada perkataan tersebut."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -113,8 +113,8 @@
         "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -140,8 +140,8 @@
         "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -167,8 +167,8 @@
         "evaluation": "Guru memperdengarkan tiga ujaran sopan secara berasingan; setiap murid memberikan sekurang-kurangnya dua respons lisan atau bukan lisan yang sesuai dan sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -194,8 +194,8 @@
         "evaluation": "Guru memberi satu situasi baharu di rumah atau sekolah; setiap murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dalam dialog ringkas."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -221,8 +221,8 @@
         "evaluation": "Murid membaca tiga ayat baharu secara individu dengan sebutan betul dan intonasi sesuai; nyatakan konteks sekurang-kurangnya satu ayat."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -248,8 +248,8 @@
         "evaluation": "Secara individu, murid menggabungkan kad suku kata menjadi sekurang-kurangnya tiga perkataan, menulisnya dan membentuk satu frasa mudah daripada perkataan tersebut."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -275,8 +275,8 @@
         "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -302,8 +302,8 @@
         "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -329,8 +329,8 @@
         "evaluation": "Guru menyampaikan satu ucapan selamat, satu penghargaan dan satu permohonan maaf; setiap murid memberi sekurang-kurangnya dua respons tepat dan sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -356,8 +356,8 @@
         "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -383,8 +383,8 @@
         "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -410,8 +410,8 @@
         "evaluation": "Murid membina dan menulis dua ayat mudah secara individu daripada dua gambar baharu; guru menyemak binaan ayat, ejaan dan tanda baca."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -437,8 +437,8 @@
         "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -464,8 +464,8 @@
         "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -491,8 +491,8 @@
         "evaluation": "Guru menyampaikan satu ucapan selamat, satu penghargaan dan satu permohonan maaf; setiap murid memberi sekurang-kurangnya dua respons tepat dan sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -518,8 +518,8 @@
         "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -545,8 +545,8 @@
         "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -572,8 +572,8 @@
         "evaluation": "Murid membina dan menulis dua ayat mudah secara individu daripada dua gambar baharu; guru menyemak binaan ayat, ejaan dan tanda baca."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -599,8 +599,8 @@
         "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -626,8 +626,8 @@
         "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -653,8 +653,8 @@
         "evaluation": "Guru menyampaikan tiga arahan selamat secara lisan, tanpa menunjukkan jawapan; murid melaksanakan sekurang-kurangnya dua mengikut urutan betul dan secara sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -680,8 +680,8 @@
         "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -707,8 +707,8 @@
         "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -734,8 +734,8 @@
         "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak secara individu pada kertas; guru menyemak kejelasan lakaran."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -761,8 +761,8 @@
         "evaluation": "Secara individu, murid mengenal pasti tiga abjad dan dua simbol pada kad rawak; sekurang-kurangnya empat daripada lima padanan tepat."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -788,8 +788,8 @@
         "evaluation": "Murid bercerita semula berdasarkan gambar secara individu, menyebut tiga peristiwa mengikut urutan dan satu nilai murni yang berkaitan dengan tindakan watak."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -815,8 +815,8 @@
         "evaluation": "Guru menyampaikan tiga arahan selamat secara lisan, tanpa menunjukkan jawapan; murid melaksanakan sekurang-kurangnya dua mengikut urutan betul dan secara sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -842,8 +842,8 @@
         "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -869,8 +869,8 @@
         "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -896,8 +896,8 @@
         "evaluation": "Guru memberi satu situasi baharu di rumah atau sekolah; setiap murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dalam dialog ringkas."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -923,8 +923,8 @@
         "evaluation": "Murid membaca tiga ayat baharu secara individu dengan sebutan betul dan intonasi sesuai; nyatakan konteks sekurang-kurangnya satu ayat."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -950,8 +950,8 @@
         "evaluation": "Secara individu, murid menggabungkan kad suku kata menjadi sekurang-kurangnya tiga perkataan, menulisnya dan membentuk satu frasa mudah daripada perkataan tersebut."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -977,8 +977,8 @@
         "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1004,8 +1004,8 @@
         "evaluation": "Guru memperdengarkan tiga ujaran sopan secara berasingan; setiap murid memberikan sekurang-kurangnya dua respons lisan atau bukan lisan yang sesuai dan sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1031,8 +1031,8 @@
         "evaluation": "Guru memberi satu situasi baharu di rumah atau sekolah; setiap murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dalam dialog ringkas."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1058,8 +1058,8 @@
         "evaluation": "Murid membaca tiga ayat baharu secara individu dengan sebutan betul dan intonasi sesuai; nyatakan konteks sekurang-kurangnya satu ayat."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1085,8 +1085,8 @@
         "evaluation": "Secara individu, murid menggabungkan kad suku kata menjadi sekurang-kurangnya tiga perkataan, menulisnya dan membentuk satu frasa mudah daripada perkataan tersebut."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1112,8 +1112,8 @@
         "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1139,8 +1139,8 @@
         "evaluation": "Guru menyampaikan satu ucapan selamat, satu penghargaan dan satu permohonan maaf; setiap murid memberi sekurang-kurangnya dua respons tepat dan sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1166,8 +1166,8 @@
         "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1193,8 +1193,8 @@
         "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1220,8 +1220,8 @@
         "evaluation": "Murid membina dan menulis dua ayat mudah secara individu daripada dua gambar baharu; guru menyemak binaan ayat, ejaan dan tanda baca."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1247,8 +1247,8 @@
         "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1274,8 +1274,8 @@
         "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1301,8 +1301,8 @@
         "evaluation": "Guru menyampaikan satu ucapan selamat, satu penghargaan dan satu permohonan maaf; setiap murid memberi sekurang-kurangnya dua respons tepat dan sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1328,8 +1328,8 @@
         "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1355,8 +1355,8 @@
         "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1382,8 +1382,8 @@
         "evaluation": "Murid membina dan menulis dua ayat mudah secara individu daripada dua gambar baharu; guru menyemak binaan ayat, ejaan dan tanda baca."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1409,8 +1409,8 @@
         "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1436,8 +1436,8 @@
         "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1463,8 +1463,8 @@
         "evaluation": "Guru menyampaikan tiga arahan selamat secara lisan, tanpa menunjukkan jawapan; murid melaksanakan sekurang-kurangnya dua mengikut urutan betul dan secara sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1490,8 +1490,8 @@
         "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1517,8 +1517,8 @@
         "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1544,8 +1544,8 @@
         "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak secara individu pada kertas; guru menyemak kejelasan lakaran."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1571,8 +1571,8 @@
         "evaluation": "Secara individu, murid mengenal pasti tiga abjad dan dua simbol pada kad rawak; sekurang-kurangnya empat daripada lima padanan tepat."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1598,8 +1598,8 @@
         "evaluation": "Murid bercerita semula berdasarkan gambar secara individu, menyebut tiga peristiwa mengikut urutan dan satu nilai murni yang berkaitan dengan tindakan watak."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1625,8 +1625,8 @@
         "evaluation": "Guru menyampaikan tiga arahan selamat secara lisan, tanpa menunjukkan jawapan; murid melaksanakan sekurang-kurangnya dua mengikut urutan betul dan secara sopan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1652,8 +1652,8 @@
         "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1679,8 +1679,8 @@
         "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1706,8 +1706,8 @@
         "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak secara individu pada kertas; guru menyemak kejelasan lakaran."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -1733,8 +1733,20 @@
         "evaluation": "Secara individu, murid mengenal pasti tiga abjad dan dua simbol pada kad rawak; sekurang-kurangnya empat daripada lima padanan tepat."
       },
       "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     }
-  ]
+  ],
+  "approval_scope": "Internal CikguLaju publication under SEMAKAN PELAKSANAAN only. Not official KPM endorsement.",
+  "evidence": {
+    "tested_head": "3a18ad328c4530c8928b6442b339fcd0ab4bcebd",
+    "print_run": 46116320668,
+    "print_job": 140890857246,
+    "print_artifact": 15252115857,
+    "print_passed": 256,
+    "print_failures": 0,
+    "visual_review": "Six actual rendered sample pages (three Group A lessons, native PDF and converted Word); complete table, no visible clipping in samples; native PDF more compact.",
+    "source_review": "26 SP and 9 resolved SK checked against DK BM SK Tahun 1 (BPK KPM 2026), printed pp.22–24,30–32,38–39,44; recorded in PR 1578.",
+    "live_authenticated": false
+  }
 }
