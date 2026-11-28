@@ -49,8 +49,9 @@ class MathWorksheetTests(unittest.TestCase):
                 self.assertIsNone(m.resolve_math(2,self.unit,self.token))
 
     def test_both_verified_live_pdp_share_one_original_pair(self):
-        records=self.catalog["records"]
-        self.assertEqual(self.catalog["unique_worksheet_count"],1)
+        records=[r for r in self.catalog["records"] if r.get("shared_worksheet")]
+        self.assertEqual(self.catalog["unique_worksheet_count"],4)
+        self.assertEqual(self.catalog["mapped_pdp_count"],5)
         self.assertEqual({r["runtime_lesson"] for r in records},{"MT2-PDP-006","MT2-PDP-007"})
         self.assertEqual(len({r["student"]["sha256"] for r in records}),1)
         self.assertEqual(len({r["teacher_key"]["sha256"] for r in records}),1)
@@ -59,6 +60,33 @@ class MathWorksheetTests(unittest.TestCase):
             with patch.object(m,"_read",return_value=row):
                 self.assertEqual(m.resolve_math(2,row["unit"],row["token"]),record)
                 self.assertIsNone(m.resolve_math(2,row["unit"],"MT2-PDP-008"))
+
+    def test_three_new_exact_pairs_and_filenames(self):
+        expected = {
+            "MT2-PDP-008": ("CERAKIN_NOMBOR", "1.4.2"),
+            "MT2-PDP-009": ("BANDING_NOMBOR", "1.1.2(iii)"),
+            "MT2-PDP-010": ("SUSUN_NOMBOR", "1.1.2(iv)"),
+        }
+        records = [r for r in self.catalog["records"] if not r.get("shared_worksheet")]
+        self.assertEqual({r["runtime_lesson"] for r in records}, set(expected))
+        for rec in records:
+            token,unit = rec["runtime_lesson"],rec["runtime_unit"]
+            slug,sp = expected[token]
+            row = {**self.row,"unit":unit,"token":token,"topic":rec["title"],
+                   "standards":[{"sk":rec["sk"],"sp":sp.replace("("," (")}]}
+            with patch.object(m,"_read",return_value=row):
+                self.assertEqual(m.resolve_math(2,unit,token),rec)
+                with patch.object(m,"_pdf",return_value=b"%PDF-1.7") as pdf:
+                    for kind,key in (("murid","student"),("skema","teacher_key")):
+                        raw,name=m.complete_math_pdf(2,unit,token,kind)
+                        self.assertEqual(name,"CIKGULAJU_LATIHAN_MATH_T2_"+slug+"_"+kind.upper()+".pdf")
+                        asset=rec[key]
+                        pdf.assert_called_with(asset["drive_file_id"],asset["sha256"],asset["size_bytes"])
+                self.assertIsNone(m.resolve_math(2,unit,"MT2-PDP-011"))
+            for invalid in ({"topic":"Other"},{"standards":[{"sk":rec["sk"],"sp":"1.1.2"}]},
+                            {"standards":[{"sk":rec["sk"],"sp":"1.1.2(ii)"}]}):
+                with patch.object(m,"_read",return_value={**row,**invalid}):
+                    self.assertIsNone(m.resolve_math(2,unit,token))
 
     def test_web_routes_and_original_bytes(self):
         app=Flask(__name__)
