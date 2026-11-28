@@ -1,0 +1,247 @@
+{
+  "status": "DRAFT_DSKP_TEXT_MATCHED",
+  "subject": "MATEMATIK SK",
+  "year": 4,
+  "curriculum": "KSSR",
+  "dskp_reference": {
+    "drive_id": "1hjqCVZE8sQuQfZx3kRlWyZacOgON64tn",
+    "verification": "Text extraction reviewed, visual QA pending."
+  },
+  "policy": "Seven selected work records, nine candidate sessions; not production lesson numbers. No release or RPT change.",
+  "records": [
+    {
+      "candidate_id": "T4-WORK-09",
+      "source_work_record": 9,
+      "source_session": null,
+      "source_drive_id": "1owf03wgKXV9p1gmgse5Azwaw7tnYLPtN",
+      "title": "Penganggaran kuantiti",
+      "dskp": [
+        {
+          "code": "1.3.1",
+          "printed_page": 34,
+          "sk": "1.3 Penganggaran",
+          "sp": "Memberi anggaran kuantiti berdasarkan set rujukan yang diberi dan menentukan kewajaran jawapan."
+        }
+      ],
+      "scope_note": "Padanan skop sumber kerja; RPT, BT/BA dan identiti produksi belum disahkan.",
+      "phases": {
+        "engagement": "Tunjuk bekas rujukan 100 manik dan bekas sasaran; murid ramal kuantiti.",
+        "exploration": "Susun beberapa kumpulan objek berdasarkan saiz set rujukan dan catat anggaran.",
+        "explanation": "Guru terangkan cara membandingkan gandaan set rujukan dan menilai kewajaran.",
+        "elaboration": "Murid menganggar empat set objek/gambar, kemudian banding dengan bilangan sebenar.",
+        "evaluation": "Tiga daripada empat anggaran munasabah dengan alasan berdasarkan set rujukan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T4-WORK-10",
+      "source_work_record": 10,
+      "source_session": null,
+      "source_drive_id": "1twxpaClru-f12onLdNS5_looeZxdfg0H",
+      "title": "Pola nombor",
+      "dskp": [
+        {
+          "code": "1.5.1",
+          "printed_page": 35,
+          "sk": "1.5 Pola nombor",
+          "sp": "Mengenal pasti pola bagi siri nombor yang diberi secara tertib menaik dan tertib menurun satu-satu hingga sepuluh-sepuluh, seratus-seratus, seribu-seribu dan sepuluh ribu-sepuluh ribu."
+        },
+        {
+          "code": "1.5.2",
+          "printed_page": 35,
+          "sk": "1.5 Pola nombor",
+          "sp": "Melengkapkan pelbagai pola nombor yang diberi secara tertib menaik dan tertib menurun satu-satu hingga sepuluh-sepuluh, seratus-seratus, seribu-seribu dan sepuluh ribu-sepuluh ribu."
+        }
+      ],
+      "scope_note": "Padanan skop sumber kerja; RPT, BT/BA dan identiti produksi belum disahkan.",
+      "phases": {
+        "engagement": "Lengkapkan 24 300, 24 400, 24 500, kosong dan nyatakan selang.",
+        "exploration": "Banding siri menaik/menurun dengan selang 1–10, 100, 1 000 dan 10 000.",
+        "explanation": "Terangkan cara menentukan aturan daripada beza dua nombor berturutan.",
+        "elaboration": "Pasangan melengkapkan siri hingga enam nombor dan membina pola untuk rakan.",
+        "evaluation": "Empat daripada lima pola tepat dengan aturan diterangkan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T4-WORK-11A",
+      "source_work_record": 11,
+      "source_session": "A",
+      "source_drive_id": "1127r0wocorNHA0JHfZbnCb9Od-Kzr_QlcW7UnTAjMOg",
+      "title": "Penolakan pecahan",
+      "dskp": [
+        {
+          "code": "2.1.3",
+          "printed_page": 40,
+          "sk": "2.1 Pecahan",
+          "sp": "Penolakan pecahan: (i) Menolak sebarang dua nombor melibatkan nombor bulat, pecahan wajar dan nombor bercampur. (ii) Menolak sebarang dua nombor daripada satu nombor melibatkan nombor bulat, pecahan wajar dan nombor bercampur."
+        }
+      ],
+      "scope_note": "Calon pecahan sesi v53, bukan bilangan PdP rasmi.",
+      "phases": {
+        "engagement": "Paparkan kek dibahagi kepada lapan bahagian; keluarkan dua daripada lima bahagian.",
+        "exploration": "Gunakan jalur pecahan untuk memodel penolakan dua nombor dan dua nilai daripada satu nilai.",
+        "explanation": "Terangkan penyamaan penyebut, pengumpulan semula nombor bercampur dan cara menyemak.",
+        "elaboration": "Selesaikan empat item melibatkan nombor bulat, pecahan wajar dan nombor bercampur.",
+        "evaluation": "Tiga daripada empat penolakan tepat dengan langkah dan model jika diperlukan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T4-WORK-11B",
+      "source_work_record": 11,
+      "source_session": "B",
+      "source_drive_id": "1127r0wocorNHA0JHfZbnCb9Od-Kzr_QlcW7UnTAjMOg",
+      "title": "Operasi bergabung tambah dan tolak pecahan",
+      "dskp": [
+        {
+          "code": "2.1.4",
+          "printed_page": 40,
+          "sk": "2.1 Pecahan",
+          "sp": "Operasi bergabung tambah dan tolak melibatkan nombor bulat, pecahan wajar dan nombor bercampur."
+        }
+      ],
+      "scope_note": "Calon pecahan sesi v53, bukan bilangan PdP rasmi.",
+      "phases": {
+        "engagement": "Banding dua ayat tambah-tolak pecahan dan ramal hasil.",
+        "exploration": "Susun kad langkah bagi 1 1/2 + 3/4 − 1/4 menggunakan jalur pecahan.",
+        "explanation": "Guru jelaskan turutan kiri ke kanan dan penyamaan penyebut.",
+        "elaboration": "Pasangan selesaikan empat ayat bergabung dengan nombor bulat, pecahan wajar dan nombor bercampur.",
+        "evaluation": "Tiga daripada empat item tepat dengan turutan dan semakan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T4-WORK-11C",
+      "source_work_record": 11,
+      "source_session": "C",
+      "source_drive_id": "1127r0wocorNHA0JHfZbnCb9Od-Kzr_QlcW7UnTAjMOg",
+      "title": "Pecahan daripada kuantiti",
+      "dskp": [
+        {
+          "code": "2.1.5",
+          "printed_page": 40,
+          "sk": "2.1 Pecahan",
+          "sp": "Menentukan nilai bagi pecahan wajar dan nombor bercampur daripada sesuatu kuantiti."
+        }
+      ],
+      "scope_note": "Calon pecahan sesi v53, bukan bilangan PdP rasmi.",
+      "phases": {
+        "engagement": "Tunjuk 12 objek; cari satu pertiga daripadanya.",
+        "exploration": "Bina kumpulan sama banyak dan pilih dua daripada tiga bahagian.",
+        "explanation": "Terangkan konsep daripada: 2/3 × 12 = 8; model 1 1/2 daripada 8 sebagai 8 + 4.",
+        "elaboration": "Selesaikan empat situasi pecahan wajar dan nombor bercampur daripada kuantiti melalui rajah.",
+        "evaluation": "Tiga daripada empat nilai tepat dengan model atau pengiraan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T4-WORK-12",
+      "source_work_record": 12,
+      "source_session": null,
+      "source_drive_id": "1QHAjcx49ejkf6CTTUcBti3A5hzNZLaPJ",
+      "title": "Masalah pecahan, perpuluhan dan peratus",
+      "dskp": [
+        {
+          "code": "2.4.1",
+          "printed_page": 41,
+          "sk": "2.4 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah pecahan, perpuluhan dan peratus."
+        }
+      ],
+      "scope_note": "Padanan skop sumber kerja; RPT, BT/BA dan identiti produksi belum disahkan.",
+      "phases": {
+        "engagement": "Paparkan botol air 1.25 liter dan situasi penggunaan sebahagian kuantiti.",
+        "exploration": "Kenal pasti maklumat dalam tiga kad masalah pecahan, perpuluhan dan peratus.",
+        "explanation": "Model empat langkah penyelesaian menggunakan rajah bar atau ayat matematik.",
+        "elaboration": "Pasangan selesaikan masalah panjang reben pecahan, jumlah isi padu perpuluhan dan 25% daripada 80 objek.",
+        "evaluation": "Tiga masalah individu merangkumi ketiga-tiga bentuk; dua tepat dengan semakan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T4-WORK-13",
+      "source_work_record": 13,
+      "source_session": null,
+      "source_drive_id": "1jy9jcItfgBPrggeVgOAWY-JiR7BPxZh-",
+      "title": "Keputusan kewangan bertanggungjawab",
+      "dskp": [
+        {
+          "code": "3.4.1",
+          "printed_page": 45,
+          "sk": "3.4 Tanggungjawab dalam membuat keputusan berkaitan kewangan",
+          "sp": "Menjelaskan kesan sesuatu keputusan kewangan yang dibuat."
+        },
+        {
+          "code": "3.4.2",
+          "printed_page": 45,
+          "sk": "3.4 Tanggungjawab dalam membuat keputusan berkaitan kewangan",
+          "sp": "Membuat keputusan kewangan berdasarkan keutamaan keperluan dan kehendak."
+        },
+        {
+          "code": "3.4.3",
+          "printed_page": 45,
+          "sk": "3.4 Tanggungjawab dalam membuat keputusan berkaitan kewangan",
+          "sp": "Membuat keputusan kewangan dengan menganalisis maklumat kewangan yang diperolehi daripada pelbagai sumber."
+        }
+      ],
+      "scope_note": "Padanan skop sumber kerja; RPT, BT/BA dan identiti produksi belum disahkan.",
+      "phases": {
+        "engagement": "Beri situasi bajet RM30 dengan beberapa pilihan pembelian.",
+        "exploration": "Banding kad harga daripada dua kedai dan asingkan keperluan daripada kehendak.",
+        "explanation": "Terangkan kesan keputusan terhadap baki, simpanan dan keperluan masa depan.",
+        "elaboration": "Kumpulan analisis maklumat harga serta bajet dan bentangkan pilihan dengan alasan.",
+        "evaluation": "Dua daripada tiga senario dinilai munasabah menggunakan maklumat yang diberi."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T4-WORK-14",
+      "source_work_record": 14,
+      "source_session": null,
+      "source_drive_id": "1RP7Msr-Ry2UbVQkOU-ZfYQG-Gq35YUvg",
+      "title": "Masalah wang hingga RM100 000",
+      "dskp": [
+        {
+          "code": "3.7.1",
+          "printed_page": 45,
+          "sk": "3.7 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah wang dalam lingkungan RM100 000 melibatkan operasi asas dan operasi bergabung dalam situasi harian."
+        }
+      ],
+      "scope_note": "Padanan skop sumber kerja; RPT, BT/BA dan identiti produksi belum disahkan.",
+      "phases": {
+        "engagement": "Tunjukkan invois contoh bagi pembelian peralatan sekolah dan minta murid anggar jumlah.",
+        "exploration": "Asingkan maklumat penting bagi kad jumlah, baki, harga beberapa unit dan agihan kos.",
+        "explanation": "Model pemilihan operasi, termasuk tambah-tolak bergabung, dan semakan dalam RM.",
+        "elaboration": "Selesaikan empat masalah urus niaga dalam lingkungan RM100 000 dengan rajah atau jadual.",
+        "evaluation": "Tiga daripada empat masalah tepat dengan operasi, pengiraan, unit dan semakan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T4-WORK-15",
+      "source_work_record": 15,
+      "source_session": null,
+      "source_drive_id": "10SS4zo7x-Ch2QgqLS3BUwxIVn-uBCtO3",
+      "title": "Anggaran masa",
+      "dskp": [
+        {
+          "code": "4.3.1",
+          "printed_page": 50,
+          "sk": "4.3 Anggaran masa",
+          "sp": "Memberi anggaran masa melibatkan jam dan minit berdasarkan set rujukan yang diberi dalam situasi harian."
+        }
+      ],
+      "scope_note": "Padanan skop sumber kerja; RPT, BT/BA dan identiti produksi belum disahkan.",
+      "phases": {
+        "engagement": "Ramal masa menyalin satu perenggan menggunakan pengalaman sebelumnya.",
+        "exploration": "Gunakan set rujukan aktiviti lima minit untuk menganggar tempoh aktiviti lain.",
+        "explanation": "Terangkan anggaran dalam jam dan minit dan bezakan anggaran daripada masa sebenar.",
+        "elaboration": "Murid menganggar empat situasi, ukur aktiviti pendek dengan jam dan banding tempoh sebenar yang disediakan bagi aktiviti panjang.",
+        "evaluation": "Tiga daripada empat anggaran munasabah dengan bukti masa sebenar."
+      },
+      "ready": false
+    }
+  ]
+}

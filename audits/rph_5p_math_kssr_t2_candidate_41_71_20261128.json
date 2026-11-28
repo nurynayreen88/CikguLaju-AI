@@ -1,0 +1,745 @@
+{
+  "status": "DRAFT_DSKP_TEXT_MATCHED",
+  "subject": "MATEMATIK SK",
+  "year": 2,
+  "curriculum": "KSSR",
+  "dskp_reference": {
+    "drive_id": "1x9Oce4dz4BK46nZqtBvnsrUpl3JD8LeW",
+    "edition": "2016",
+    "verification": "Text extraction reviewed; visual QA pending."
+  },
+  "policy": "31 working records, not production lesson IDs. BA references from work source; RPT, BT, runtime identity and document QA pending. No release.",
+  "records": [
+    {
+      "candidate_id": "T2-WORK-041",
+      "source_work_record": 41,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Nilai wang",
+      "dskp": [
+        {
+          "code": "4.1.2",
+          "printed_page": 46,
+          "sk": "4.1 Wang kertas dan duit syiling.",
+          "sp": "Menentukan nilai wang hingga RM100."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjuk RM20; murid nyatakan nilainya.",
+        "exploration": "Susun gabungan wang kertas dan syiling hingga RM100.",
+        "explanation": "Model penulisan ringgit dan sen serta perwakilan abakus.",
+        "elaboration": "Padankan wang dengan nilai bercetak dan abakus; BA 104.",
+        "evaluation": "Lima gabungan wang; empat nilai dan unit tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-042",
+      "source_work_record": 42,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Tambah wang",
+      "dskp": [
+        {
+          "code": "4.2.1",
+          "printed_page": 46,
+          "sk": "4.2 Tambah wang.",
+          "sp": "Menambah dua nilai wang hasil tambahnya hingga RM100."
+        },
+        {
+          "code": "4.2.2",
+          "printed_page": 46,
+          "sk": "4.2 Tambah wang.",
+          "sp": "Menambah tiga nilai wang hasil tambahnya hingga RM100."
+        }
+      ],
+      "scope_note": "Jumlah hingga RM100.",
+      "phases": {
+        "engagement": "Anggar jumlah dua kad harga.",
+        "exploration": "Susun RM27.45 dan RM19.00 pada jadual ringgit dan sen.",
+        "explanation": "Terangkan penjajaran titik perpuluhan dan pengumpulan semula.",
+        "elaboration": "Kira gabungan dua dan tiga harga, semuanya berjumlah tidak lebih RM100; BA 105–106.",
+        "evaluation": "Lima item tambah dua dan tiga nilai; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-043",
+      "source_work_record": 43,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Tolak wang",
+      "dskp": [
+        {
+          "code": "4.3.1",
+          "printed_page": 46,
+          "sk": "4.3 Tolak wang",
+          "sp": "Menolak dua nilai wang dalam lingkungan RM100."
+        },
+        {
+          "code": "4.3.2",
+          "printed_page": 46,
+          "sk": "4.3 Tolak wang",
+          "sp": "Menolak dua nilai wang dari satu nilai wang dalam lingkungan RM100."
+        }
+      ],
+      "scope_note": "Termasuk dua penolakan.",
+      "phases": {
+        "engagement": "Ramal baki RM50 selepas membeli barang RM47.",
+        "exploration": "Model baki menggunakan wang contoh; banding ringgit dan sen.",
+        "explanation": "Tunjukkan penolakan dengan penjajaran titik perpuluhan.",
+        "elaboration": "Kira baki RM50 selepas pembelian RM12.50 dan RM8.20; BA 107–108.",
+        "evaluation": "Lima item termasuk tolak dua nilai daripada satu nilai; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-044",
+      "source_work_record": 44,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Darab wang",
+      "dskp": [
+        {
+          "code": "4.4.1",
+          "printed_page": 46,
+          "sk": "4.4 Darab wang",
+          "sp": "Mendarab nilai wang dan hasil darabnya hingga RM100."
+        }
+      ],
+      "scope_note": "Pengganda satu digit atau 10.",
+      "phases": {
+        "engagement": "Cari harga tiga barang berharga RM5 setiap satu.",
+        "exploration": "Susun kad harga dalam kumpulan sama banyak.",
+        "explanation": "Hubungkan penambahan berulang dengan darab nilai wang.",
+        "elaboration": "Cuba pengganda satu digit dan 10, hasil hingga RM100; BA 109.",
+        "evaluation": "Lima item darab wang; empat tepat dengan unit."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-045",
+      "source_work_record": 45,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Bahagi wang",
+      "dskp": [
+        {
+          "code": "4.5.1",
+          "printed_page": 46,
+          "sk": "4.5 Bahagi wang",
+          "sp": "Membahagi nilai wang dalam lingkungan RM100."
+        }
+      ],
+      "scope_note": "Pembahagi satu digit atau 10; sen dibenarkan.",
+      "phases": {
+        "engagement": "Agihkan RM20 kepada lima kumpulan.",
+        "exploration": "Gunakan wang contoh untuk perkongsian sama rata, termasuk syiling.",
+        "explanation": "Tunjuk RM7.50 ÷ 3 = RM2.50 dan semakan darab.",
+        "elaboration": "Selesaikan pembahagian nilai hingga RM100 dengan satu digit dan 10; BA 110.",
+        "evaluation": "Lima item; empat tepat termasuk jawapan ringgit dan sen."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-046",
+      "source_work_record": 46,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Celik wang",
+      "dskp": [
+        {
+          "code": "4.6.1",
+          "printed_page": 47,
+          "sk": "4.6 Simpanan dan pelaburan.",
+          "sp": "Menguruskan kewangan secara efektif sebagai asas kepada simpanan dan perbelanjaan."
+        }
+      ],
+      "scope_note": "Pengurusan kewangan dalam RM1000, bukan had operasi RM100.",
+      "phases": {
+        "engagement": "Bincang pilihan apabila menerima hadiah wang.",
+        "exploration": "Asingkan kad keperluan, kehendak, simpanan dan derma.",
+        "explanation": "Terangkan keutamaan keperluan serta kepentingan simpanan.",
+        "elaboration": "Rancang agihan RM500 dalam jadual BA 111 dan bandingkan pilihan.",
+        "evaluation": "Satu pelan berjumlah RM500 dengan alasan bagi sekurang-kurangnya satu pilihan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-047",
+      "source_work_record": 47,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Masalah harian wang",
+      "dskp": [
+        {
+          "code": "4.7.1",
+          "printed_page": 47,
+          "sk": "4.7 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah harian yang melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Bayar buku RM45.90 dengan RM50; ramal baki.",
+        "exploration": "Pilih maklumat dan operasi pada kad pembelian.",
+        "explanation": "Model empat langkah dan semak baki RM4.10.",
+        "elaboration": "Selesaikan situasi bunga dan RM40 dalam lima sampul; BA 112.",
+        "evaluation": "Tiga masalah individu; dua tepat dengan langkah serta unit RM."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-048",
+      "source_work_record": 48,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Kenali senggatan minit",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 50,
+          "sk": "5.1 Waktu dalam jam dan minit.",
+          "sp": "Mengenal tanda senggatan minit pada muka jam."
+        }
+      ],
+      "scope_note": "Senggatan minit, bukan tempoh.",
+      "phases": {
+        "engagement": "Tunjuk muka jam dan tanya makna tanda antara angka.",
+        "exploration": "Kira tanda satu minit serta gandaan lima minit pada jam model.",
+        "explanation": "Terangkan 12 angka, 60 senggatan dan satu pusingan jarum minit.",
+        "elaboration": "Label senggatan minit dan padankan kedudukan jarum; BA 115–116.",
+        "evaluation": "Lima item mengenal tanda senggatan; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-049",
+      "source_work_record": 49,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Sebut dan tulis waktu",
+      "dskp": [
+        {
+          "code": "5.1.2",
+          "printed_page": 50,
+          "sk": "5.1 Waktu dalam jam dan minit.",
+          "sp": "Menyatakan dan menunjukkan waktu dalam jam dan minit."
+        },
+        {
+          "code": "5.1.3",
+          "printed_page": 50,
+          "sk": "5.1 Waktu dalam jam dan minit.",
+          "sp": "Menukar waktu dalam jam dan minit daripada perkataan kepada angka dan sebaliknya."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Banding jam analog dan digital menunjukkan waktu sama.",
+        "exploration": "Gerakkan jarum jam dan minit mengikut kad waktu.",
+        "explanation": "Model sebutan waktu dalam jam dan minit serta bentuk angka.",
+        "elaboration": "Padankan gambar aktiviti dan tukar perkataan kepada angka serta sebaliknya; BA 117–118.",
+        "evaluation": "Lima item sebut, tunjuk dan tulis waktu; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-050",
+      "source_work_record": 50,
+      "source_drive_id": "1iBRRCMav979YhqEkTBv-OTiUvm2AjSZG",
+      "title": "Rekod waktu",
+      "dskp": [
+        {
+          "code": "5.1.4",
+          "printed_page": 50,
+          "sk": "5.1 Waktu dalam jam dan minit.",
+          "sp": "Merekod waktu dalam jam dan minit."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Kongsi waktu bangun tidur dan sarapan.",
+        "exploration": "Baca muka jam bagi beberapa aktiviti dan catat waktu.",
+        "explanation": "Terangkan cara merekod jam dan minit dalam jadual.",
+        "elaboration": "Lengkapkan jadual BA 119–120 dan bina jadual tiga aktiviti sendiri.",
+        "evaluation": "Lima rekod waktu jam dan minit; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-051",
+      "source_work_record": 51,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Perkaitan hari, jam dan minit",
+      "dskp": [
+        {
+          "code": "5.2.1",
+          "printed_page": 50,
+          "sk": "5.2 Perkaitan dalam waktu.",
+          "sp": "Menyatakan perkaitan hari dengan jam dan jam dengan minit."
+        }
+      ],
+      "scope_note": "Dua hubungan unit utama.",
+      "phases": {
+        "engagement": "Perhatikan satu pusingan jarum minit.",
+        "exploration": "Susun kad 60 minit, 1 jam, 24 jam dan 1 hari dengan jam model.",
+        "explanation": "Terangkan 1 jam = 60 minit dan 1 hari = 24 jam.",
+        "elaboration": "Padankan situasi harian dengan hubungan unit; BA 121; suku jam sebagai sokongan.",
+        "evaluation": "Lima padanan hubungan hari-jam dan jam-minit; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-052",
+      "source_work_record": 52,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Masalah masa dan waktu",
+      "dskp": [
+        {
+          "code": "5.3.1",
+          "printed_page": 50,
+          "sk": "5.3 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah yang melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Nyatakan waktu mula dan tamat aktiviti kelas.",
+        "exploration": "Gunakan garis masa untuk menjejak pergerakan minit.",
+        "explanation": "Model 35 minit selepas 9:00 pagi ialah 9:35 pagi.",
+        "elaboration": "Pasangan selesaikan situasi waktu mula, tamat dan tempoh; BA 122.",
+        "evaluation": "Empat masalah harian; tiga tepat dengan kaedah."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-053",
+      "source_work_record": 53,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Kenali sentimeter dan meter",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 54,
+          "sk": "6.1 Panjang",
+          "sp": "Mengenal unit panjang."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Banding pemadam dengan pintu; pilih unit munasabah.",
+        "exploration": "Perhatikan senggatan pembaris dan pita ukuran.",
+        "explanation": "Terangkan simbol cm dan m serta cara mengenali tanda unit.",
+        "elaboration": "Padankan unit dengan pensel, meja dan bilik; BA 125.",
+        "evaluation": "Lima pilihan unit dan senggatan; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-054",
+      "source_work_record": 54,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Ukur panjang dan lukis garis",
+      "dskp": [
+        {
+          "code": "6.1.2",
+          "printed_page": 54,
+          "sk": "6.1 Panjang",
+          "sp": "Mengukur panjang."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjuk ukuran tersalah mula pada hujung pembaris.",
+        "exploration": "Ukur objek kelas bermula pada tanda sifar dan rekod nilai.",
+        "explanation": "Guru model membaca senggatan serta menulis cm atau m.",
+        "elaboration": "Lukis garis 5, 8 dan 12 cm; latihan BA 126–127.",
+        "evaluation": "Ukur tiga objek dan lukis sekurang-kurangnya dua garis mengikut ukuran diberi."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-055",
+      "source_work_record": 55,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Anggar panjang",
+      "dskp": [
+        {
+          "code": "6.1.3",
+          "printed_page": 54,
+          "sk": "6.1 Panjang",
+          "sp": "Menganggar panjang."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Teka panjang buku tanpa pembaris.",
+        "exploration": "Banding panjang objek dengan rujukan yang diketahui.",
+        "explanation": "Terangkan beza anggaran dan ukuran sebenar serta unit sesuai.",
+        "elaboration": "Anggar stapler, meja dan bangku dahulu, kemudian ukur; BA 128.",
+        "evaluation": "Tiga rekod anggaran, ukuran sebenar dan perbandingan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-056",
+      "source_work_record": 56,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Kenali gram dan kilogram",
+      "dskp": [
+        {
+          "code": "6.2.1",
+          "printed_page": 54,
+          "sk": "6.2 Jisim",
+          "sp": "Mengenal unit jisim."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Banding paket gula dengan pemadam.",
+        "exploration": "Perhatikan label g/kg dan senggatan pada penimbang.",
+        "explanation": "Terangkan gram dan kilogram serta simbol yang sesuai.",
+        "elaboration": "Padankan objek dengan unit dan bacaan asas; BA 129.",
+        "evaluation": "Lima pilihan unit; empat tepat serta kenal satu senggatan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-057",
+      "source_work_record": 57,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Timbang jisim objek",
+      "dskp": [
+        {
+          "code": "6.2.2",
+          "printed_page": 54,
+          "sk": "6.2 Jisim",
+          "sp": "Menimbang objek."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Ramal bacaan penimbang sebelum objek diletakkan.",
+        "exploration": "Semak tanda sifar dan cuba menimbang objek kelas.",
+        "explanation": "Terangkan cara membaca senggatan dan merekod g atau kg.",
+        "elaboration": "Kumpulan timbang objek dan baca penimbang bergambar BA 130.",
+        "evaluation": "Lima bacaan jisim; empat tepat dengan unit."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-058",
+      "source_work_record": 58,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Anggar jisim",
+      "dskp": [
+        {
+          "code": "6.2.3",
+          "printed_page": 54,
+          "sk": "6.2 Jisim",
+          "sp": "Menganggar jisim."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Banding dua objek tanpa menimbang.",
+        "exploration": "Pilih anggaran munasabah berasaskan objek rujukan.",
+        "explanation": "Terangkan mengapa anggaran perlu diuji dengan penimbang.",
+        "elaboration": "Anggar empat objek dahulu, kemudian timbang dan rekod; BA 131.",
+        "evaluation": "Tiga daripada empat anggaran munasabah dengan perbandingan bacaan sebenar."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-059",
+      "source_work_record": 59,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Kenali mililiter dan liter",
+      "dskp": [
+        {
+          "code": "6.3.1",
+          "printed_page": 55,
+          "sk": "6.3 Isi padu cecair.",
+          "sp": "Mengenal unit isi padu cecair."
+        }
+      ],
+      "scope_note": "Simbol mℓ dan ℓ perlu disahkan dalam eksport.",
+      "phases": {
+        "engagement": "Banding botol kecil dengan baldi.",
+        "exploration": "Perhatikan label dan senggatan silinder penyukat.",
+        "explanation": "Terangkan unit mililiter (mℓ) dan liter (ℓ).",
+        "elaboration": "Asingkan bekas mengikut unit munasabah dan padankan simbol; BA 132.",
+        "evaluation": "Lima pilihan unit; empat tepat serta kenal senggatan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-060",
+      "source_work_record": 60,
+      "source_drive_id": "1MwrnOj9FF-e-yiHhE61nJ_KtfmAMDUqC",
+      "title": "Sukat isi padu cecair",
+      "dskp": [
+        {
+          "code": "6.3.2",
+          "printed_page": 55,
+          "sk": "6.3 Isi padu cecair.",
+          "sp": "Menyukat isi padu cecair."
+        }
+      ],
+      "scope_note": "Baca pada aras mata.",
+      "phases": {
+        "engagement": "Banding paras air dalam bekas penyukat sama bentuk.",
+        "exploration": "Cuba tuang air ke jag bersenggat di atas permukaan rata.",
+        "explanation": "Guru tunjuk bacaan pada aras mata dan rekod mℓ atau ℓ.",
+        "elaboration": "Sukat jumlah diberi dan semak rakan; BA 133.",
+        "evaluation": "Empat bacaan atau sukatan; tiga tepat dengan unit."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-061",
+      "source_work_record": 61,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Anggar isi padu cecair",
+      "dskp": [
+        {
+          "code": "6.3.3",
+          "printed_page": 55,
+          "sk": "6.3 Isi padu cecair.",
+          "sp": "Menganggar isi padu cecair."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Ramal bekas yang menampung lebih banyak air.",
+        "exploration": "Pilih anggaran bagi beberapa bekas berdasarkan rujukan cawan atau botol.",
+        "explanation": "Terangkan anggaran munasabah dalam mℓ dan ℓ.",
+        "elaboration": "Catat anggaran sebelum menyukat dengan jag; BA 134.",
+        "evaluation": "Lima anggaran; empat munasabah dengan perbandingan sukatan sebenar."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-062",
+      "source_work_record": 62,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Masalah ukuran dan sukatan",
+      "dskp": [
+        {
+          "code": "6.4.1",
+          "printed_page": 55,
+          "sk": "6.4 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah yang melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjuk reben, paket makanan dan botol air; pilih unit.",
+        "exploration": "Kenal pasti maklumat dan lakar masalah panjang reben.",
+        "explanation": "Terangkan pemilihan unit serta cara membaca alat ukur.",
+        "elaboration": "Selesaikan situasi panjang, jisim dan isi padu BA 135–136.",
+        "evaluation": "Empat masalah harian; tiga tepat dengan unit serta kaedah."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-063",
+      "source_work_record": 63,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Kenal bentuk tiga dimensi",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 58,
+          "sk": "7.1 Bentuk tiga dimensi.",
+          "sp": "Mengenal pasti bentuk tiga dimensi berdasarkan huraian ciri-cirinya."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Teka bentuk objek harian melalui sentuhan.",
+        "exploration": "Periksa model kubus, kuboid, piramid tapak segi empat sama, silinder dan kon.",
+        "explanation": "Huraikan permukaan rata/melengkung, bucu dan ciri pembeza.",
+        "elaboration": "Padankan kad huraian dengan model; BA 139.",
+        "evaluation": "Lima huraian ciri; empat bentuk dikenal pasti."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-064",
+      "source_work_record": 64,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Bentuk asas bagi bentuk tiga dimensi",
+      "dskp": [
+        {
+          "code": "7.1.2",
+          "printed_page": 58,
+          "sk": "7.1 Bentuk tiga dimensi.",
+          "sp": "Mengenal pasti bentuk asas bagi bentuk tiga dimensi."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tekap permukaan kotak pada kertas; namakan bentuk.",
+        "exploration": "Periksa permukaan rata lima model dan hasilkan tekapan.",
+        "explanation": "Terangkan perbezaan bentuk 3D dan bentuk asas 2D pada permukaan.",
+        "elaboration": "Padankan model dengan bentuk asas; BA 140.",
+        "evaluation": "Lima padanan bentuk asas; empat tepat dengan satu penerangan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-065",
+      "source_work_record": 65,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Bentangan bentuk tiga dimensi",
+      "dskp": [
+        {
+          "code": "7.1.3",
+          "printed_page": 58,
+          "sk": "7.1 Bentuk tiga dimensi.",
+          "sp": "Mengenal pasti pelbagai bentangan bentuk tiga dimensi."
+        }
+      ],
+      "scope_note": "Bentangan fizikal sah.",
+      "phases": {
+        "engagement": "Buka kotak kertas; ramal bentuk apabila dilipat semula.",
+        "exploration": "Periksa bentangan sah kubus, kuboid, piramid, silinder dan kon.",
+        "explanation": "Terangkan padanan permukaan termasuk sektor dan bulatan bagi kon.",
+        "elaboration": "Uji lipatan bentangan yang tersedia; padankan model dengan BA 141–142.",
+        "evaluation": "Lima bentangan; empat padanan tepat dan satu alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-066",
+      "source_work_record": 66,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Kenal bentuk dua dimensi",
+      "dskp": [
+        {
+          "code": "7.2.1",
+          "printed_page": 58,
+          "sk": "7.2 Bentuk dua dimensi.",
+          "sp": "Mengenal pasti bentuk dua dimensi berdasarkan huraian ciri-cirinya."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Namakan kad bentuk yang ditunjukkan.",
+        "exploration": "Bina poligon dengan batang dan bandingkan bulatan dengan model lengkung.",
+        "explanation": "Huraikan sisi serta bucu segi empat sama, segi empat tepat dan segi tiga; bulatan tiada bucu.",
+        "elaboration": "Padankan huraian dengan kad bentuk; BA 143.",
+        "evaluation": "Kenal pasti empat bentuk daripada ciri dan nyatakan ciri yang sepadan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-067",
+      "source_work_record": 67,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Lukis bentuk dua dimensi",
+      "dskp": [
+        {
+          "code": "7.2.2",
+          "printed_page": 58,
+          "sk": "7.2 Bentuk dua dimensi.",
+          "sp": "Melukis bentuk asas bagi bentuk dua dimensi."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Kenal bentuk pada permukaan objek kelas.",
+        "exploration": "Cuba sambung titik pada grid dan surih permukaan bulat.",
+        "explanation": "Guru model penggunaan pembaris dan surihan untuk ketepatan bentuk.",
+        "elaboration": "Lukis segi tiga, segi empat sama, segi empat tepat dan bulatan; BA 144.",
+        "evaluation": "Sekurang-kurangnya tiga lukisan menepati ciri bentuk."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-068",
+      "source_work_record": 68,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Masalah bentuk dalam kehidupan harian",
+      "dskp": [
+        {
+          "code": "7.3.1",
+          "printed_page": 58,
+          "sk": "7.3 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah yang melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjukkan kotak terbuka; murid ramal bentuk asal.",
+        "exploration": "Uji bentangan enam segi empat sama dan bandingkan dengan kotak sebenar.",
+        "explanation": "Terangkan strategi menggunakan bentuk asas dan bilangan permukaan sebagai bukti.",
+        "elaboration": "Selesaikan masalah pemilihan bentuk atau bentangan bagi objek harian; BA 145–146.",
+        "evaluation": "Empat masalah berkonteks; tiga tepat dengan alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-069",
+      "source_work_record": 69,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Kumpul dan susun data",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 62,
+          "sk": "8.1 Mengumpul, mengelas dan menyusun data.",
+          "sp": "Mengumpul data berdasarkan situasi harian."
+        }
+      ],
+      "scope_note": "Semak pemetaan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjuk gambar buah; cadangkan cara mengira setiap jenis.",
+        "exploration": "Kumpul pilihan buah murid dan asingkan mengikut kategori.",
+        "explanation": "Guru model empat garis tegak dan satu serong untuk gundal lima.",
+        "elaboration": "Rekod dua set data pilihan buah dan bentuk 3D; BA 149–150.",
+        "evaluation": "Dua jadual data dengan kategori, gundal dan jumlah yang sepadan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-070",
+      "source_work_record": 70,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Baca carta palang",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 62,
+          "sk": "8.2 Carta palang.",
+          "sp": "Membaca dan mendapatkan maklumat dari carta palang."
+        }
+      ],
+      "scope_note": "Satu senggatan satu unit.",
+      "phases": {
+        "engagement": "Perhatikan carta makanan pilihan; ramal maksud palang.",
+        "exploration": "Cari tajuk, kategori, paksi dan skala satu unit.",
+        "explanation": "Terangkan cara mendapatkan nilai melalui panjang atau tinggi palang.",
+        "elaboration": "Tafsir carta kuih dan carta mengufuk gred ujian; BA 151–152.",
+        "evaluation": "Baca nilai kategori, paling banyak dan paling sedikit berdasarkan carta."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-071",
+      "source_work_record": 71,
+      "source_drive_id": "1CLSBw5gebThiyLt3u-239RRYh8u_pGL6",
+      "title": "Masalah pengurusan data",
+      "dskp": [
+        {
+          "code": "8.3.1",
+          "printed_page": 62,
+          "sk": "8.3 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "BA 155–156 susulan sahaja.",
+      "phases": {
+        "engagement": "Tunjuk gambar ternakan; tanya bagaimana menentukan kategori terbanyak.",
+        "exploration": "Kelaskan haiwan dan lengkapkan jadual gundal.",
+        "explanation": "Terangkan penggunaan jadual atau carta sebagai bukti jawapan.",
+        "elaboration": "Tafsir kategori sama banyak dan pilihan mata pelajaran pada BA 153–154.",
+        "evaluation": "Selesaikan sekurang-kurangnya tiga masalah bilangan kategori dengan bukti."
+      },
+      "ready": false
+    }
+  ]
+}

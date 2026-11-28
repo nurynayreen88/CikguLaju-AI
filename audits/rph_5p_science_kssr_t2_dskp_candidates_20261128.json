@@ -1,0 +1,1064 @@
+{
+  "status": "NEW_PEDAGOGICAL_DRAFT_DSKP_TEXT_ONLY",
+  "subject": "SAINS SK",
+  "year": 2,
+  "curriculum": "KSSR",
+  "source": {
+    "drive_id": "1Kyzqbs4aK8c4IynMZ1DvOdf0pxRj68Pl",
+    "title": "GuruBesar_DSKP_Sains_Tahun_2.pdf",
+    "verification": "DSKP extracted text reviewed; visual QA pending"
+  },
+  "hold": [
+    {
+      "code": "10.1.6",
+      "printed_page": 61,
+      "sp": "Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+      "reason": "Text says campuran in set binaan; verify official visual/source edition before any correction or release."
+    }
+  ],
+  "policy": "New candidates based on DSKP, not the 92 production PdP; no RPT/source RPH binding, no textbook page claims, no release. Activities involving longitudinal observation require actual elapsed days and RPT mapping.",
+  "records": [
+    {
+      "candidate_id": "SCI-T2-DRAFT-001",
+      "title": "Pemerhatian perubahan bahan",
+      "dskp": [
+        {
+          "code": "1.1.1",
+          "printed_page": 37,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Memerhati"
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk dua cawan air dan gula.",
+        "exploration": "Murid perhatikan bahan sebelum dan selepas dikacau tanpa merasa.",
+        "explanation": "Bezakan pemerhatian daripada tekaan menggunakan warna dan bentuk.",
+        "elaboration": "Banding pemerhatian gula dan pasir; catat dalam jadual.",
+        "evaluation": "Nyatakan tiga pemerhatian berdasarkan bukti."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-002",
+      "title": "Mengelas objek",
+      "dskp": [
+        {
+          "code": "1.1.2",
+          "printed_page": 39,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengelas"
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer klip, butang dan blok pelbagai bentuk.",
+        "exploration": "Asing objek mengikut warna, kemudian bentuk.",
+        "explanation": "Jelaskan ciri sepunya dan perbezaan yang digunakan.",
+        "elaboration": "Tukar kriteria pengelasan dan jelaskan kepada rakan.",
+        "evaluation": "Kelaskan enam objek dengan satu kriteria yang dinyatakan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-003",
+      "title": "Mengukur menggunakan nombor",
+      "dskp": [
+        {
+          "code": "1.1.3",
+          "printed_page": 40,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengukur dan menggunakan nombor"
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua anak pokok yang berlainan tinggi.",
+        "exploration": "Ukur tinggi dari pangkal ke pucuk dengan pembaris.",
+        "explanation": "Model bacaan bermula sifar serta unit cm.",
+        "elaboration": "Ukur tiga model pokok dan rekod jadual.",
+        "evaluation": "Tiga ukuran dengan alat, unit dan teknik betul."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-004",
+      "title": "Komunikasi saintifik",
+      "dskp": [
+        {
+          "code": "1.1.4",
+          "printed_page": 41,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Berkomunikasi"
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjukkan rekod bilangan daun dua pokok.",
+        "exploration": "Bincang cara menyusun maklumat dalam jadual atau gambar.",
+        "explanation": "Terangkan tajuk, label dan maklumat yang mudah dibaca.",
+        "elaboration": "Hasilkan jadual dan bentangkan dapatan kepada pasangan.",
+        "evaluation": "Persembahkan satu rekod yang tepat serta dua dapatan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-005",
+      "title": "Mengendalikan dan melakar spesimen",
+      "dskp": [
+        {
+          "code": "1.2.1",
+          "printed_page": 42,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Menggunakan dan mengendalikan peralatan dan bahan sains dengan betul."
+        },
+        {
+          "code": "1.2.2",
+          "printed_page": 42,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Mengendalikan spesimen dengan betul dan cermat."
+        },
+        {
+          "code": "1.2.3",
+          "printed_page": 42,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Melakar spesimen, peralatan dan bahan sains dengan betul."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjukkan biji kacang dan kanta pembesar.",
+        "exploration": "Perhatikan biji dengan kanta dan pegang secara cermat.",
+        "explanation": "Demonstrasi penggunaan kanta, lakaran garis besar dan label.",
+        "elaboration": "Murid lakar dua biji berbeza dan semak rakan.",
+        "evaluation": "Senarai semak teknik kendalian dan lakaran berlabel."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-006",
+      "title": "Membersih dan menyimpan peralatan",
+      "dskp": [
+        {
+          "code": "1.2.4",
+          "printed_page": 42,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Membersihkan peralatan sains dengan cara yang betul."
+        },
+        {
+          "code": "1.2.5",
+          "printed_page": 42,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Menyimpan peralatan dan bahan sains dengan betul dan selamat."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer dulang peralatan selepas aktiviti air.",
+        "exploration": "Asing alat yang perlu dikeringkan dan bahan yang perlu dibuang.",
+        "explanation": "Guru model pembersihan serta penyimpanan selamat.",
+        "elaboration": "Kumpulan laksanakan rutin menggunakan alat plastik selamat.",
+        "evaluation": "Demonstrasi pembersihan dan pemulangan setiap alat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-007",
+      "title": "Peraturan bilik sains",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 44,
+          "sk": "2.1 Peraturan Bilik Sains",
+          "sp": "Mematuhi peraturan bilik sains"
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar murid berlari dan berjalan dalam bilik sains.",
+        "exploration": "Kelaskan kad tindakan selamat atau tidak selamat.",
+        "explanation": "Jelaskan sebab setiap peraturan dan bila perlu melapor kepada guru.",
+        "elaboration": "Lakonkan rutin masuk, menggunakan alat dan keluar bilik.",
+        "evaluation": "Pilih empat tindakan betul dan tunjuk cara mematuhi satu peraturan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-008",
+      "title": "Pembiakan manusia",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 46,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Menyatakan cara manusia membiak."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ilustrasi bayi bersama penjaga.",
+        "exploration": "Susun gambar bayi dan manusia dewasa; bincang asal bayi secara sesuai usia.",
+        "explanation": "Terangkan manusia membiak dengan melahirkan anak.",
+        "elaboration": "Padankan gambar bayi dengan tahap pertumbuhan manusia.",
+        "evaluation": "Nyatakan cara manusia membiak dan kenal gambar bayi."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-009",
+      "title": "Perubahan sejak dilahirkan",
+      "dskp": [
+        {
+          "code": "3.1.2",
+          "printed_page": 46,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Memerihalkan perubahan yang berlaku pada diri sejak dilahirkan dari aspek saiz, tinggi dan berat."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding ilustrasi bayi, kanak-kanak dan dewasa.",
+        "exploration": "Susun tiga gambar mengikut perubahan saiz dan tinggi.",
+        "explanation": "Jelaskan pertambahan saiz, tinggi dan berat semasa tumbesaran.",
+        "elaboration": "Padankan kad perubahan dengan tiga aspek; gunakan data rekaan.",
+        "evaluation": "Huraikan tiga aspek perubahan secara tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-010",
+      "title": "Perbezaan tumbesaran",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 46,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Mengitlak tumbesaran adalah berbeza antara individu dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua carta tinggi rekaan bagi kanak-kanak sebaya.",
+        "exploration": "Ukur panjang tapak tangan sendiri secara sukarela atau guna model kertas.",
+        "explanation": "Terangkan individu sebaya boleh mempunyai ukuran berbeza tanpa menilai tubuh.",
+        "elaboration": "Banding data anonim dan bina rumusan kumpulan.",
+        "evaluation": "Nyatakan kesimpulan berdasarkan dua rekod ukuran."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-011",
+      "title": "Pewarisan ciri",
+      "dskp": [
+        {
+          "code": "3.1.4",
+          "printed_page": 46,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Memerihalkan bahawa anak mewarisi ciri daripada ibu, bapa atau keturunan."
+        },
+        {
+          "code": "3.1.5",
+          "printed_page": 46,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Memberi contoh ciri yang diwarisi oleh anak daripada ibu bapa atau keturunan seperti warna kulit, warna mata dan jenis rambut."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ilustrasi keluarga rekaan dengan jenis rambut berbeza.",
+        "exploration": "Padankan kad ciri anak dan ibu bapa dalam contoh rekaan.",
+        "explanation": "Jelaskan ciri boleh diwarisi daripada keturunan, bukan semua ciri pasti sama.",
+        "elaboration": "Bina salasilah rekaan dan tandakan ciri yang mungkin diwarisi.",
+        "evaluation": "Berikan dua contoh ciri diwarisi tanpa membuat andaian keluarga murid."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-012",
+      "title": "Komunikasi tumbesaran dan pewarisan",
+      "dskp": [
+        {
+          "code": "3.1.6",
+          "printed_page": 47,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Menjelaskan pemerhatian tentang tumbesaran dan pewarisan melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "phases": {
+        "engagement": "Imbas gambar perkembangan manusia dan salasilah rekaan.",
+        "exploration": "Pilih bukti perubahan atau persamaan ciri daripada kad.",
+        "explanation": "Model penerangan ringkas yang membezakan tumbesaran dan pewarisan.",
+        "elaboration": "Hasilkan poster dua bahagian dengan lakaran dan penerangan.",
+        "evaluation": "Sampaikan satu perubahan tumbesaran dan satu contoh pewarisan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-013",
+      "title": "Cara haiwan membiak",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menyatakan cara haiwan membiak."
+        },
+        {
+          "code": "4.1.2",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Mengelaskan haiwan berdasarkan cara pembiakan"
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar ayam bersama telur dan kucing bersama anak.",
+        "exploration": "Asing kad haiwan kepada bertelur dan melahirkan anak.",
+        "explanation": "Terangkan kedua-dua cara dengan contoh yang tepat.",
+        "elaboration": "Kelaskan lapan haiwan termasuk ikan, katak, lembu dan kambing.",
+        "evaluation": "Enam daripada lapan pengelasan tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-014",
+      "title": "Bilangan telur",
+      "dskp": [
+        {
+          "code": "4.1.3",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menjelaskan dengan contoh haiwan bertelur banyak dan bertelur sedikit."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar sarang merpati dan telur katak.",
+        "exploration": "Perhatikan kad data contoh bilangan telur.",
+        "explanation": "Terangkan sesetengah haiwan bertelur banyak, sesetengah sedikit; bilangan berubah mengikut spesies.",
+        "elaboration": "Bina jadual contoh katak, ikan, merpati dan penyu daripada kad data.",
+        "evaluation": "Berikan dua contoh bagi setiap kumpulan dengan alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-015",
+      "title": "Bilangan anak",
+      "dskp": [
+        {
+          "code": "4.1.4",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menjelaskan dengan contoh haiwan melahirkan anak yang banyak dan anak yang sedikit."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar anak kucing dan anak lembu.",
+        "exploration": "Susun kad bilangan anak bagi satu kelahiran daripada contoh yang diberi.",
+        "explanation": "Jelaskan perbezaan bilangan anak dan bahawa bilangan boleh berubah.",
+        "elaboration": "Kelaskan contoh tikus, kucing, lembu dan gajah berdasarkan kad data.",
+        "evaluation": "Empat contoh dikelaskan dengan alasan berdasarkan data."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-016",
+      "title": "Kitar hidup rama-rama",
+      "dskp": [
+        {
+          "code": "4.1.5",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Merekod perubahan tumbesaran haiwan dengan memerhati kitar hidup haiwan."
+        }
+      ],
+      "phases": {
+        "engagement": "Teka haiwan daripada gambar beluncas.",
+        "exploration": "Susun gambar telur, beluncas, pupa dan rama-rama dewasa.",
+        "explanation": "Jelaskan perubahan bentuk pada setiap peringkat.",
+        "elaboration": "Bina roda kitar hidup menggunakan gambar bersumber atau pemerhatian rakaman.",
+        "evaluation": "Susun empat peringkat dengan tepat dan rekod dua perubahan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-017",
+      "title": "Kitar hidup katak",
+      "dskp": [
+        {
+          "code": "4.1.5",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Merekod perubahan tumbesaran haiwan dengan memerhati kitar hidup haiwan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar berudu dengan katak dewasa.",
+        "exploration": "Susun siri gambar telur, berudu, katak muda dan dewasa.",
+        "explanation": "Jelaskan perubahan kaki dan ekor berdasarkan pemerhatian.",
+        "elaboration": "Lengkapkan rekod bergambar dan banding dengan kitar rama-rama.",
+        "evaluation": "Susun peringkat dan nyatakan dua perubahan berdasarkan bukti."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-018",
+      "title": "Anak haiwan dan induknya",
+      "dskp": [
+        {
+          "code": "4.1.6",
+          "printed_page": 49,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menjelas dengan contoh anak haiwan yang menyerupai induknya dan yang tidak menyerupai induknya."
+        },
+        {
+          "code": "4.1.7",
+          "printed_page": 49,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Menjelaskan pemerhatian tentang pembiakan dan tumbesaran melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "phases": {
+        "engagement": "Padankan gambar anak ayam dan ibu ayam, berudu dan katak.",
+        "exploration": "Kelaskan anak yang menyerupai induk dan yang tidak.",
+        "explanation": "Jelaskan persamaan dan perbezaan yang dapat dilihat.",
+        "elaboration": "Hasilkan jadual bergambar bagi empat pasangan haiwan.",
+        "evaluation": "Empat padanan dan dua huraian pemerhatian."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-019",
+      "title": "Kepentingan tumbuhan",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Menyatakan kepentingan tumbuhan kepada manusia dan haiwan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar burung di pokok dan manusia makan buah.",
+        "exploration": "Padankan tumbuhan dengan makanan, tempat perlindungan dan kegunaan.",
+        "explanation": "Jelaskan kepentingan tumbuhan kepada manusia serta haiwan.",
+        "elaboration": "Bina peta hubungan tumbuhan dengan empat kegunaan harian.",
+        "evaluation": "Berikan dua kepentingan kepada manusia dan dua kepada haiwan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-020",
+      "title": "Keperluan percambahan",
+      "dskp": [
+        {
+          "code": "5.1.2",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Menyatakan keperluan asas untuk biji benih bercambah."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding biji kacang kering dengan biji bercambah.",
+        "exploration": "Sediakan bekas biji benih lembap dan kering; guru sediakan data/rakaman bagi udara dan suhu.",
+        "explanation": "Jelaskan air, udara dan suhu sesuai; cahaya bukan syarat semua biji benih bercambah.",
+        "elaboration": "Ramal dan rekod pemerhatian susulan; banding dengan data contoh.",
+        "evaluation": "Nyatakan tiga keperluan dan alasan daripada bukti."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-021",
+      "title": "Rekod tumbesaran sebenar",
+      "dskp": [
+        {
+          "code": "5.1.3",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Merekod perubahan tumbesaran tumbuhan bermula daripada percambahan biji benih dengan memerhati biji benih sebenar."
+        }
+      ],
+      "phases": {
+        "engagement": "Perhatikan biji benih bercambah yang disediakan lebih awal.",
+        "exploration": "Ukur panjang pucuk dan kira daun pada sampel sebenar.",
+        "explanation": "Model jadual tarikh, tinggi dan bilangan daun.",
+        "elaboration": "Rekod tumbesaran beberapa hari sebagai aktiviti susulan.",
+        "evaluation": "Catat dua pemerhatian bertarikh daripada tumbuhan sebenar."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-022",
+      "title": "Urutan tumbesaran tumbuhan",
+      "dskp": [
+        {
+          "code": "5.1.4",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Menyusun mengikut urutan peringkat tumbesaran tumbuhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar buah, biji benih dan pokok berbuah.",
+        "exploration": "Susun kad percambahan, anak pokok, pokok matang, bunga dan buah.",
+        "explanation": "Jelaskan urutan tumbesaran bagi contoh pokok yang dipilih.",
+        "elaboration": "Bina jalur urutan bergambar dan ceritakan kepada rakan.",
+        "evaluation": "Susun peringkat yang diberi dan terangkan dua perubahan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-023",
+      "title": "Keperluan tumbesaran tumbuhan",
+      "dskp": [
+        {
+          "code": "5.1.5",
+          "printed_page": 50,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Membuat kesimpulan keperluan asas untuk tumbesaran tumbuhan dengan menjalankan penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar pokok sihat dan layu.",
+        "exploration": "Sediakan penyiasatan perbandingan air atau cahaya dengan faktor lain dikekalkan.",
+        "explanation": "Bincang data yang dikumpul beberapa hari; jelaskan air, udara, nutrien dan cahaya.",
+        "elaboration": "Banding tumbuhan dalam keadaan berlainan menggunakan bukti, bukan andaian.",
+        "evaluation": "Nyatakan kesimpulan berdasarkan data penyiasatan sebenar."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-024",
+      "title": "Komunikasi proses hidup tumbuhan",
+      "dskp": [
+        {
+          "code": "5.1.6",
+          "printed_page": 51,
+          "sk": "5.1 Tumbesaran Tumbuhan",
+          "sp": "Menjelaskan pemerhatian tentang proses hidup tumbuhan melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "phases": {
+        "engagement": "Imbas rekod tumbesaran pokok yang telah dikumpul.",
+        "exploration": "Pilih gambar dan ukuran daripada rekod pemerhatian.",
+        "explanation": "Model cara menerangkan urutan serta keperluan tumbuhan menggunakan bukti.",
+        "elaboration": "Bentang carta atau lakaran tumbesaran dalam kumpulan.",
+        "evaluation": "Terangkan satu urutan dan satu dapatan berdasarkan rekod."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-025",
+      "title": "Sumber cahaya dan keadaan terang/gelap",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Menyatakan sumber cahaya."
+        },
+        {
+          "code": "6.1.2",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Membanding beza aktiviti yang dijalankan dalam keadaan terang dan gelap."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk kotak pandang dengan lampu suluh dimatikan.",
+        "exploration": "Cari objek di dalam kotak apabila lampu dipadam dan dinyalakan.",
+        "explanation": "Bezakan sumber cahaya daripada objek yang memantul cahaya.",
+        "elaboration": "Banding aktiviti membaca atau mencari objek dalam dua keadaan selamat.",
+        "evaluation": "Namakan tiga sumber cahaya dan dua perbezaan keadaan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-026",
+      "title": "Pembentukan bayang-bayang",
+      "dskp": [
+        {
+          "code": "6.1.3",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Menerangkan bagaimana bayang-bayang dihasilkan melalui aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer bayang tangan di hadapan lampu suluh.",
+        "exploration": "Ubah kedudukan objek legap antara lampu dan skrin.",
+        "explanation": "Terangkan bayang terbentuk apabila cahaya dihalang.",
+        "elaboration": "Uji bentuk objek berlainan dan lakar susunan lampu-objek-skrin.",
+        "evaluation": "Lakar susunan betul dan terangkan sebab bayang terbentuk."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-027",
+      "title": "Kejelasan bayang-bayang",
+      "dskp": [
+        {
+          "code": "6.1.4",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Membanding dan membezakan kejelasan bayang-bayang apabila cahaya dihalang oleh objek yang berlainan dengan menjalankan penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal bayang daripada kadbod, kertas surih dan plastik lutsinar.",
+        "exploration": "Uji setiap bahan menggunakan lampu dan jarak sama.",
+        "explanation": "Banding hasil jelas, kurang jelas atau tiada bayang yang ketara.",
+        "elaboration": "Rekod jadual bahan dan kejelasan bayang; ulang bacaan jika perlu.",
+        "evaluation": "Tiga pemerhatian dan satu kesimpulan berdasarkan data."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-028",
+      "title": "Permainan bayang-bayang",
+      "dskp": [
+        {
+          "code": "6.1.5",
+          "printed_page": 52,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Mencipta permainan bayang-bayang"
+        },
+        {
+          "code": "6.1.6",
+          "printed_page": 53,
+          "sk": "6.1 Terang dan gelap",
+          "sp": "Menjelaskan pemerhatian tentang terang dan gelap melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tonton demonstrasi watak bayang tangan.",
+        "exploration": "Cuba model watak kadbod dan kedudukan skrin.",
+        "explanation": "Terangkan bagaimana cahaya dihalang untuk menghasilkan bentuk.",
+        "elaboration": "Cipta persembahan ringkas menggunakan lampu suluh; terangkan pembentukan bayang.",
+        "evaluation": "Persembahkan permainan berfungsi dan satu penerangan saintifik."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-029",
+      "title": "Komponen dan fungsi litar",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Mengenal pasti komponen dalam litar elektrik iaitu sel kering, mentol dan suis."
+        },
+        {
+          "code": "7.1.2",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Menerangkan fungsi komponen dalam litar elektrik lengkap."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer sel kering, mentol kecil, suis dan wayar.",
+        "exploration": "Padankan komponen dengan gambar litar voltan rendah.",
+        "explanation": "Jelaskan fungsi sel kering, mentol, suis dan wayar.",
+        "elaboration": "Label litar lengkap dan tunjuk fungsi suis.",
+        "evaluation": "Empat padanan komponen/fungsi dengan betul."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-030",
+      "title": "Membina litar lengkap",
+      "dskp": [
+        {
+          "code": "7.1.3",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Membina litar elektrik lengkap dengan menggunakan sel kering, mentol, suis dan wayar penyambung."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal sama ada mentol menyala apabila suis terbuka.",
+        "exploration": "Bina litar sel kering dan mentol yang sepadan di bawah pengawasan guru.",
+        "explanation": "Jelaskan laluan lengkap; jangan sambung terus terminal bateri tanpa beban.",
+        "elaboration": "Uji suis terbuka dan tertutup; lakar litar.",
+        "evaluation": "Bina litar berfungsi dan demonstrasi kedua-dua keadaan suis."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-031",
+      "title": "Mentol tidak menyala",
+      "dskp": [
+        {
+          "code": "7.1.4",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Meramal sebab mentol tidak menyala dalam litar yang dibina."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer dua litar voltan rendah, satu dengan suis terbuka.",
+        "exploration": "Periksa sambungan, kedudukan sel kering dan mentol melalui kad rajah serta set selamat.",
+        "explanation": "Jelaskan sebab litar tidak lengkap atau komponen tidak berfungsi.",
+        "elaboration": "Baiki satu sambungan terputus pada set guru; elak litar pintas.",
+        "evaluation": "Kenal pasti tiga kemungkinan sebab dan satu pembetulan selamat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-032",
+      "title": "Konduktor dan penebat",
+      "dskp": [
+        {
+          "code": "7.1.5",
+          "printed_page": 54,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Merekod nyalaan mentol dengan mengantikan suis dengan objek atau bahan dengan menjalankan penyiasatan."
+        },
+        {
+          "code": "7.1.6",
+          "printed_page": 55,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Mengitlak objek yang boleh menyalakan mentol dalam litar adalah konduktor dan yang tidak menyalakan mentol adalah penebat."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal nyalaan mentol apabila klip logam atau pemadam mengisi ruang suis.",
+        "exploration": "Uji bahan kering menggunakan litar sel kering bermentol yang dibimbing guru.",
+        "explanation": "Jelaskan bahan yang membenarkan arus mengalir dalam ujian sebagai konduktor.",
+        "elaboration": "Rekod hasil bagi klip, duit syiling, plastik, kayu kering dan pemadam.",
+        "evaluation": "Kelaskan lima bahan berdasarkan hasil ujian dan rumuskan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-033",
+      "title": "Komunikasi litar elektrik",
+      "dskp": [
+        {
+          "code": "7.1.7",
+          "printed_page": 55,
+          "sk": "7.1 Litar elektrik",
+          "sp": "Menjelaskan pemerhatian tentang litar elektrik melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "phases": {
+        "engagement": "Imbas jadual nyalaan mentol daripada penyiasatan.",
+        "exploration": "Pilih rajah litar dan catatan keputusan.",
+        "explanation": "Terangkan penggunaan simbol atau lakaran komponen yang jelas.",
+        "elaboration": "Bentang hasil pengujian dan cadangkan pembetulan bagi litar terbuka.",
+        "evaluation": "Lakaran berlabel serta penerangan dua dapatan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-034",
+      "title": "Mengasingkan campuran",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 56,
+          "sk": "8.1 Campuran",
+          "sp": "Memerihalkan kaedah untuk mengasingkan campuran pelbagai bahan atau objek."
+        },
+        {
+          "code": "8.1.2",
+          "printed_page": 56,
+          "sk": "8.1 Campuran",
+          "sp": "Menaakul cara yang digunakan untuk mengasingkan campuran pelbagai bahan atau objek."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer campuran batu kecil dan pasir serta klip besi dan beras.",
+        "exploration": "Cuba ayak campuran saiz berbeza dan gunakan magnet bagi klip besi.",
+        "explanation": "Jelaskan pemilihan kaedah berdasarkan saiz atau sifat magnet.",
+        "elaboration": "Padankan tiga campuran dengan kaedah sesuai dan uji satu.",
+        "evaluation": "Tiga padanan kaedah dengan alasan berdasarkan sifat bahan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-035",
+      "title": "Bahan larut dan tidak larut",
+      "dskp": [
+        {
+          "code": "8.1.3",
+          "printed_page": 56,
+          "sk": "8.1 Campuran",
+          "sp": "Mengenal pasti bahan yang boleh larut dan tidak boleh larut di dalam air dengan menjalankan penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal perubahan gula dan pasir dalam air.",
+        "exploration": "Uji kuantiti kecil setiap bahan dalam cawan air sama banyak.",
+        "explanation": "Bezakan bahan larut daripada bahan yang masih kelihatan; jangan merasa.",
+        "elaboration": "Rekod hasil gula, garam dan pasir serta banding pemerhatian.",
+        "evaluation": "Tiga pengelasan dengan bukti pemerhatian."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-036",
+      "title": "Mempercepat pelarutan",
+      "dskp": [
+        {
+          "code": "8.1.4",
+          "printed_page": 56,
+          "sk": "8.1 Campuran",
+          "sp": "Merumuskan cara bahan boleh dilarutkan dengan lebih cepat dengan menjalankan penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gula kasar dan halus dalam gambar.",
+        "exploration": "Uji dua cawan air sama suhu dengan jumlah gula sama, satu dikacau dan satu tidak.",
+        "explanation": "Jelaskan pengacauan mempercepat pelarutan; saiz bahan diuji secara berasingan.",
+        "elaboration": "Banding data percubaan kedua dengan gula saiz berlainan, faktor lain sama.",
+        "evaluation": "Nyatakan dua cara dan satu bukti daripada penyiasatan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-037",
+      "title": "Komunikasi campuran",
+      "dskp": [
+        {
+          "code": "8.1.5",
+          "printed_page": 57,
+          "sk": "8.1 Campuran",
+          "sp": "Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "phases": {
+        "engagement": "Paparkan rekod pengasingan dan pelarutan.",
+        "exploration": "Pilih bukti bergambar daripada penyiasatan lepas.",
+        "explanation": "Bezakan pengasingan berdasarkan sifat fizikal dan pelarutan.",
+        "elaboration": "Hasilkan carta alir kaedah mengasing campuran dan rumusan larut.",
+        "evaluation": "Terangkan dua dapatan berdasarkan rekod."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-038",
+      "title": "Sumber air semula jadi",
+      "dskp": [
+        {
+          "code": "9.1.1",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Menyatakan sumber air semulajadi seperti hujan, sungai, tasik, laut dan mata air."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar hujan, sungai dan laut.",
+        "exploration": "Padankan gambar sumber air dengan nama.",
+        "explanation": "Jelaskan sumber seperti hujan, sungai, tasik, laut dan mata air.",
+        "elaboration": "Bina peta gambar sumber air dan bincang penjagaan kebersihan.",
+        "evaluation": "Namakan empat daripada lima sumber air."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-039",
+      "title": "Arah aliran air",
+      "dskp": [
+        {
+          "code": "9.1.2",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Menyatakan arah aliran air dengan menjalankan aktiviti."
+        },
+        {
+          "code": "9.1.3",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Mengitlak arah aliran air secara semulajadi seperti aliran air sungai, air terjun melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal arah air apabila dulang dimiringkan.",
+        "exploration": "Tuang sedikit air ke dulang dan tinggikan satu hujung.",
+        "explanation": "Jelaskan aliran semula jadi dari tempat tinggi ke rendah.",
+        "elaboration": "Banding model dengan gambar sungai dan air terjun; lakar anak panah.",
+        "evaluation": "Tiga anak panah aliran betul dan satu kesimpulan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-040",
+      "title": "Kitar air",
+      "dskp": [
+        {
+          "code": "9.1.4",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Membuat urutan kitar air semulajadi."
+        },
+        {
+          "code": "9.1.5",
+          "printed_page": 58,
+          "sk": "9.1 Air",
+          "sp": "Menjelaskan pemerhatian tentang kitaran air melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar awan, hujan dan laut.",
+        "exploration": "Susun kad perubahan air kepada wap, pembentukan awan dan hujan.",
+        "explanation": "Jelaskan wap air naik dan menyejuk membentuk titisan air dalam awan.",
+        "elaboration": "Bina rajah kitar air dengan anak panah kembali ke sungai atau laut.",
+        "evaluation": "Susun dan label empat peringkat serta terangkan satu hubungan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-041",
+      "title": "Udara di sekeliling kita",
+      "dskp": [
+        {
+          "code": "9.2.1",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Menyatakan udara berada di sekeliling kita."
+        },
+        {
+          "code": "9.2.2",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Menyatakan udara terdiri daripada beberapa jenis gas seperti oksigen dan karbon dioksida."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer beg plastik kosong yang dikembungkan tanpa meniup dengan mulut.",
+        "exploration": "Perhatikan udara terperangkap dalam beg atau gelembung dari cawan terbalik dalam air.",
+        "explanation": "Jelaskan udara memenuhi ruang dan terdiri daripada beberapa gas termasuk oksigen dan karbon dioksida.",
+        "elaboration": "Padankan contoh udara di persekitaran dengan bukti aktiviti.",
+        "evaluation": "Nyatakan bahawa udara berada di sekeliling dan namakan dua gas."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-042",
+      "title": "Angin dan kesannya",
+      "dskp": [
+        {
+          "code": "9.2.3",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Memerihalkan udara yang bergerak adalah angin."
+        },
+        {
+          "code": "9.2.4",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Menjana idea kesan udara yang bergerak dalam kehidupan manusia."
+        }
+      ],
+      "phases": {
+        "engagement": "Gerakkan kipas tangan berhampiran jalur kertas.",
+        "exploration": "Banding jalur kertas ketika udara tidak digerakkan dan ketika dikipas.",
+        "explanation": "Jelaskan udara bergerak ialah angin; bincang kesan baik dan buruk.",
+        "elaboration": "Kelaskan kad mengering pakaian, menggerakkan layar dan merosakkan pokok.",
+        "evaluation": "Nyatakan maksud angin dan dua kesannya."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-043",
+      "title": "Model menggunakan angin",
+      "dskp": [
+        {
+          "code": "9.2.5",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Mencipta alat atau model dengan mengaplikasikan pengetahuan yang menunjukkan kegunaan udara yang bergerak."
+        },
+        {
+          "code": "9.2.6",
+          "printed_page": 59,
+          "sk": "9.2 Udara",
+          "sp": "Menjelaskan pemerhatian tentang udara melalui lakaran, TMK, penulisan atau lisan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk kincir kertas siap yang berputar apabila dikipas.",
+        "exploration": "Cuba dua bentuk bilah kertas yang disediakan guru tanpa alat tajam.",
+        "explanation": "Terangkan udara bergerak menghasilkan putaran atau gerakan.",
+        "elaboration": "Cipta kincir atau kapal layar model dan uji menggunakan kipas tangan.",
+        "evaluation": "Model berfungsi, lakaran dan satu penerangan kegunaan udara bergerak."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-044",
+      "title": "Pilih binaan dan komponen",
+      "dskp": [
+        {
+          "code": "10.1.1",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Memilih binaan yang hendak dibina daripada set binaan."
+        },
+        {
+          "code": "10.1.2",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Mengenal pasti komponen binaan berpandukan manual bergambar."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer manual set binaan dan gambar dua model.",
+        "exploration": "Pilih satu model dan cari komponen yang ditunjukkan dalam manual.",
+        "explanation": "Jelaskan cara membaca urutan gambar dan memadankan komponen.",
+        "elaboration": "Susun komponen mengikut langkah pemasangan.",
+        "evaluation": "Pilih model dan senaraikan komponen mengikut manual dengan tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-045",
+      "title": "Memasang binaan mengikut manual",
+      "dskp": [
+        {
+          "code": "10.1.3",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Memasang komponen binaan berpandukan manual bergambar."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding model siap dengan gambar langkah pertama.",
+        "exploration": "Pasang komponen secara berpasangan mengikut turutan manual.",
+        "explanation": "Jelaskan kepentingan memeriksa orientasi dan sambungan setiap langkah.",
+        "elaboration": "Semak hasil dengan gambar akhir dan baiki sambungan.",
+        "evaluation": "Binaan sepadan dengan manual dan urutan pemasangan dipatuhi."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-046",
+      "title": "Cipta binaan baharu",
+      "dskp": [
+        {
+          "code": "10.1.4",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Mencipta satu binaan baru yang tidak terdapat dalam manual bergambar."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk komponen set yang boleh digunakan untuk pelbagai model.",
+        "exploration": "Lakar idea binaan dengan fungsi mudah seperti pemegang kad.",
+        "explanation": "Jelaskan hubungan kestabilan dan fungsi komponen.",
+        "elaboration": "Cipta model baharu yang tiada dalam manual dan uji fungsi.",
+        "evaluation": "Model berfungsi serta satu penerangan tujuan dan penambahbaikan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T2-DRAFT-047",
+      "title": "Membuka dan menyimpan binaan",
+      "dskp": [
+        {
+          "code": "10.1.5",
+          "printed_page": 60,
+          "sk": "10.1 Set binaan",
+          "sp": "Membuka hasil binaan mengikut urutan dan menyimpan komponen yang telah dibuka ke dalam bekas penyimpanan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding komponen tersusun dengan komponen bercampur.",
+        "exploration": "Rujuk manual dan kenal urutan membuka sambungan.",
+        "explanation": "Demonstrasi membuka dengan cermat tanpa memaksa komponen.",
+        "elaboration": "Buka binaan dan kira serta susun komponen dalam bekas.",
+        "evaluation": "Semua komponen dipulangkan mengikut urutan dan tempat yang betul."
+      },
+      "ready": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+name: RPH ordinary BM and 602 BM Math 5P batch QA
+on:
+  pull_request:
+    paths:
+      - 'web/kp2027_bm_rpt_aligned.py'
+      - 'web/kp2027_math_5p.py'
+      - 'web/kp2027_bm_5p.py'
+      - 'tests/test_rph_bm_math_batch_20261128.py'
+      - 'tools/audit_bm_ordinary_batch_20261128.py'
+      - '.github/workflows/rph-bm-math-batch-20261128.yml'
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt python-docx pymupdf
+      - run: PYTHONPATH=. python -m unittest discover -s tests -p test_rph_bm_math_batch_20261128.py -v
+      - run: PYTHONPATH=. python tools/audit_bm_ordinary_batch_20261128.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bm-ordinary-353-report
+          path: qa_bm_ordinary_report.json
+          if-no-files-found: ignore
+          retention-days: 7

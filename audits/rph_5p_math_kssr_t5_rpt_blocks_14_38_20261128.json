@@ -1,0 +1,1046 @@
+{
+  "status": "NEW_PEDAGOGICAL_DRAFT_RPT_AND_DSKP_TEXT",
+  "subject": "MATEMATIK SK",
+  "year": 5,
+  "curriculum": "KSSR",
+  "rpt_reference": {
+    "drive_id": "1_1AAb7rEWewgiNI_mhoMlBl53V1R55gWWasAoLqH3Wk",
+    "version": "v20 draft A",
+    "blocks": [
+      14,
+      38
+    ]
+  },
+  "dskp_reference": {
+    "drive_id": "13oIweG_EEnUKO2SPLfvCPre9L0q3RrbO",
+    "verification": "Text extraction inspected and standards extracted; visual QA pending."
+  },
+  "policy": "New pedagogical draft for 25 RPT content blocks. Not verified ordinary RPH adaptations. No runtime IDs, no textbook pages invented, no release or RPT modification.",
+  "records": [
+    {
+      "candidate_id": "T5-RPT-DRAFT-014A",
+      "source_block": 14,
+      "proposed_session": "A",
+      "title": "Tambah wang",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 42,
+          "sk": "3.1 Operasi asas melibatkan wang",
+          "sp": "Menyelesaikan ayat matematik tambah hingga tiga nilai wang dan hasil tambahnya hingga RM1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Anggar jumlah tiga invois peralatan.",
+        "exploration": "Susun kad harga mengikut ringgit dan sen.",
+        "explanation": "Model penjajaran titik perpuluhan serta pengumpulan semula.",
+        "elaboration": "Kira tiga invois RM12 450.50, RM8 700 dan RM6 049.50; semak anggaran.",
+        "evaluation": "Lima item jumlah hingga RM1 juta; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-014B",
+      "source_block": 14,
+      "proposed_session": "B",
+      "title": "Tolak wang",
+      "dskp": [
+        {
+          "code": "3.1.2",
+          "printed_page": 42,
+          "sk": "3.1 Operasi asas melibatkan wang",
+          "sp": "Menyelesaikan ayat matematik tolak melibatkan dua nilai wang daripada satu nilai wang dalam lingkungan RM1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal baki bajet RM80 000 selepas dua pembelian.",
+        "exploration": "Gunakan jadual bajet dan tolak satu perbelanjaan pada satu masa.",
+        "explanation": "Terangkan RM80 000 − RM25 450 − RM12 300 = RM42 250.",
+        "elaboration": "Simulasi pembelian dua barang dan semak melalui penambahan.",
+        "evaluation": "Lima item dua penolakan; empat tepat dengan unit."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-014C",
+      "source_block": 14,
+      "proposed_session": "C",
+      "title": "Darab wang",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 42,
+          "sk": "3.1 Operasi asas melibatkan wang",
+          "sp": "Menyelesaikan ayat matematik darab melibatkan nilai wang dengan nombor hingga dua digit, 100, 1000 dan hasil darabnya hingga RM1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Anggar kos 24 kerusi berharga RM125.50 seunit.",
+        "exploration": "Bina hasil separa bagi 20 dan 4 kerusi.",
+        "explanation": "Model darab harga dengan dua digit, 100 dan 1000.",
+        "elaboration": "Kira kos beberapa pesanan dengan hasil hingga RM1 juta.",
+        "evaluation": "Lima item; empat tepat dengan semakan nilai tempat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-014D",
+      "source_block": 14,
+      "proposed_session": "D",
+      "title": "Bahagi wang",
+      "dskp": [
+        {
+          "code": "3.1.4",
+          "printed_page": 42,
+          "sk": "3.1 Operasi asas melibatkan wang",
+          "sp": "Menyelesaikan ayat matematik bahagi melibatkan nilai wang dalam lingkungan RM1 000 000 dengan nombor hingga dua digit, 100 dan 1000."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal agihan RM24 000 kepada 12 kumpulan.",
+        "exploration": "Bahagikan nilai wang contoh mengikut kumpulan; banding kaedah.",
+        "explanation": "Model bentuk lazim dan semakan melalui darab.",
+        "elaboration": "Cuba RM4500 ÷ 100, RM125000 ÷ 1000 dan contoh pembahagi dua digit.",
+        "evaluation": "Lima item; empat tepat dengan unit RM."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-015A",
+      "source_block": 15,
+      "proposed_session": "A",
+      "title": "Operasi wang tambah/tolak dan darab",
+      "dskp": [
+        {
+          "code": "3.2.1",
+          "printed_page": 42,
+          "sk": "3.2 Operasi bergabung melibatkan wang",
+          "sp": "Menyelesaikan ayat matematik bagi operasi bergabung melibatkan wang, dalam lingkungan RM1 000 000, tanpa dan dengan tanda kurung: (i) Tambah dan darab (ii) Tolak dan darab (iii) Tambah dan bahagi (iv) Tolak dan bahagi"
+        }
+      ],
+      "phases": {
+        "engagement": "Banding RM500 + 3 × RM80 dengan (RM500 + RM80) × 3.",
+        "exploration": "Susun kad operasi bagi dua ayat harga.",
+        "explanation": "Jelaskan tanda kurung dahulu dan darab sebelum tambah atau tolak.",
+        "elaboration": "Bina ayat kos pesanan, caj dan potongan dengan serta tanpa kurung.",
+        "evaluation": "Empat item dalam lingkungan RM1 juta; tiga tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-015B",
+      "source_block": 15,
+      "proposed_session": "B",
+      "title": "Operasi wang tambah/tolak dan bahagi",
+      "dskp": [
+        {
+          "code": "3.2.1",
+          "printed_page": 42,
+          "sk": "3.2 Operasi bergabung melibatkan wang",
+          "sp": "Menyelesaikan ayat matematik bagi operasi bergabung melibatkan wang, dalam lingkungan RM1 000 000, tanpa dan dengan tanda kurung: (i) Tambah dan darab (ii) Tolak dan darab (iii) Tambah dan bahagi (iv) Tolak dan bahagi"
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal RM900 − RM240 ÷ 4.",
+        "exploration": "Lukis rajah agihan bagi ayat bertanda kurung dan tanpa kurung.",
+        "explanation": "Terangkan bahagi sebelum tambah/tolak kecuali tanda kurung menentukan sebaliknya.",
+        "elaboration": "Selesaikan agihan kos dan baki menggunakan empat ayat matematik.",
+        "evaluation": "Tiga daripada empat item tepat dengan urutan operasi."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-016A",
+      "source_block": 16,
+      "proposed_session": "A",
+      "title": "Simpanan dan pelaburan",
+      "dskp": [
+        {
+          "code": "3.3.1",
+          "printed_page": 43,
+          "sk": "3.3 Simpanan dan pelaburan",
+          "sp": "Menerangkan maksud simpanan dan pelaburan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding menyimpan RM100 untuk kecemasan dan membeli aset pelaburan rekaan.",
+        "exploration": "Kelaskan kad situasi simpanan, pelaburan dan perbelanjaan.",
+        "explanation": "Jelaskan maksud simpanan, pelaburan, dividen dan bonus; nilai pelaburan boleh turun.",
+        "elaboration": "Banding dua rekod rekaan yang menunjukkan perubahan nilai; bincang sebab.",
+        "evaluation": "Empat daripada lima pengelasan tepat dan satu penerangan risiko."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-016B",
+      "source_block": 16,
+      "proposed_session": "B",
+      "title": "Faedah mudah dan kompaun",
+      "dskp": [
+        {
+          "code": "3.3.2",
+          "printed_page": 43,
+          "sk": "3.3 Simpanan dan pelaburan",
+          "sp": "Menerangkan maksud faedah mudah dan faedah kompaun dalam simpanan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua jadual baki rekaan selepas dua tahun.",
+        "exploration": "Gunakan modal RM100 dan kadar contoh 10% setahun untuk membina jadual.",
+        "explanation": "Terangkan faedah mudah berdasarkan modal asal, kompaun berdasarkan baki; RM120 berbanding RM121 selepas dua tahun.",
+        "elaboration": "Padankan jadual dan jenis faedah tanpa memilih produk kewangan.",
+        "evaluation": "Empat item pengenalpastian; tiga tepat dengan penerangan beza."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-017A",
+      "source_block": 17,
+      "proposed_session": "A",
+      "title": "Kredit dan hutang",
+      "dskp": [
+        {
+          "code": "3.4.1",
+          "printed_page": 43,
+          "sk": "3.4 Kredit dan pengurusan hutang",
+          "sp": "Menerangkan maksud kredit dan hutang."
+        }
+      ],
+      "phases": {
+        "engagement": "Bincang situasi mendapat barang dahulu dan membayar kemudian.",
+        "exploration": "Padankan kad pemberi pinjaman, peminjam dan bayaran balik.",
+        "explanation": "Terangkan kredit sebagai kemudahan, hutang sebagai tanggungan, dan peranan faedah.",
+        "elaboration": "Analisis situasi kad kredit rekaan dan akibat tidak membayar.",
+        "evaluation": "Tiga daripada empat situasi dikelaskan tepat dengan sebab."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-017B",
+      "source_block": 17,
+      "proposed_session": "B",
+      "title": "Banding harga tunai dan kredit",
+      "dskp": [
+        {
+          "code": "3.4.2",
+          "printed_page": 43,
+          "sk": "3.4 Kredit dan pengurusan hutang",
+          "sp": "Menerangkan perbezaan harga barangan sekiranya pembelian secara kredit dan tunai."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding harga tunai RM480 dengan 12 ansuran RM45.",
+        "exploration": "Bina jadual jumlah ansuran dan harga tunai.",
+        "explanation": "Terangkan jumlah kredit RM540 dan beza RM60; syarat sebenar mungkin berbeza.",
+        "elaboration": "Banding empat tawaran rekaan berdasarkan jumlah bayaran, bukan ansuran sahaja.",
+        "evaluation": "Tiga daripada empat perbandingan tepat dengan alasan."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-018A",
+      "source_block": 18,
+      "proposed_session": "A",
+      "title": "Masalah harian wang",
+      "dskp": [
+        {
+          "code": "3.5.1",
+          "printed_page": 43,
+          "sk": "3.5 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah melibatkan wang dalam lingkungan RM1 000 000 dalam situasi harian."
+        }
+      ],
+      "phases": {
+        "engagement": "Paparkan bajet rekaan program sekolah dan senarai kos.",
+        "exploration": "Kenal pasti kuantiti diketahui dan dikehendaki pada kad masalah.",
+        "explanation": "Model Polya melalui jadual kos, operasi dan semakan anggaran.",
+        "elaboration": "Selesaikan empat situasi belian, jualan, agihan dan baki hingga RM1 juta.",
+        "evaluation": "Tiga penyelesaian tepat dengan unit dan semakan."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-019A",
+      "source_block": 19,
+      "proposed_session": "A",
+      "title": "Tempoh hari dan jam",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 46,
+          "sk": "4.1 Tempoh masa",
+          "sp": "Menentukan tempoh masa melibatkan: (i) Hari dan jam (ii) Bulan dan hari (iii) Tahun, bulan dan hari"
+        }
+      ],
+      "phases": {
+        "engagement": "Banding perjalanan bermula Isnin 8 pagi dan tamat Selasa 11 pagi.",
+        "exploration": "Gerakkan kad hari dan jam pada garis masa.",
+        "explanation": "Terangkan tempoh 1 hari 3 jam dan hubungan 24 jam sehari.",
+        "elaboration": "Selesaikan empat perjalanan atau aktiviti merentas hari.",
+        "evaluation": "Tiga daripada empat tempoh tepat dalam hari dan jam."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-019B",
+      "source_block": 19,
+      "proposed_session": "B",
+      "title": "Tempoh bulan dan tahun dalam hari",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 46,
+          "sk": "4.1 Tempoh masa",
+          "sp": "Menentukan tempoh masa melibatkan: (i) Hari dan jam (ii) Bulan dan hari (iii) Tahun, bulan dan hari"
+        }
+      ],
+      "phases": {
+        "engagement": "Banding Februari 2024 dan Februari 2025 pada kalendar.",
+        "exploration": "Kira bilangan hari di antara dua tarikh dengan konvensyen mula/tamat jelas.",
+        "explanation": "Terangkan tahun lompat dan bilangan hari sebenar setiap bulan.",
+        "elaboration": "Selesaikan contoh merentas bulan dan tahun menggunakan kalendar; elak anggap semua bulan 30 hari.",
+        "evaluation": "Empat item tempoh dalam hari; tiga tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-020A",
+      "source_block": 20,
+      "proposed_session": "A",
+      "title": "Penukaran unit masa pecahan",
+      "dskp": [
+        {
+          "code": "4.2.1",
+          "printed_page": 46,
+          "sk": "4.2 Perkaitan dalam masa",
+          "sp": "Menukar unit masa melibatkan pecahan: (i) Jam ke minit (ii) Hari ke jam (iii) Tahun ke bulan (iv) Dekad ke tahun (v) Abad ke dekad (vi) Abad ke tahun"
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal 3/4 jam dalam minit.",
+        "exploration": "Gunakan jam model dan jadual 24 jam, 12 bulan, 10 tahun, 100 tahun.",
+        "explanation": "Model 3/4 × 60 = 45 minit dan 1/2 hari = 12 jam.",
+        "elaboration": "Padankan enam jenis penukaran termasuk abad kepada dekad/tahun, dengan jawapan bulat.",
+        "evaluation": "Lima item penukaran; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-020B",
+      "source_block": 20,
+      "proposed_session": "B",
+      "title": "Penukaran unit masa perpuluhan",
+      "dskp": [
+        {
+          "code": "4.2.2",
+          "printed_page": 46,
+          "sk": "4.2 Perkaitan dalam masa",
+          "sp": "Menukar unit masa melibatkan perpuluhan: (i) Jam ke minit (ii) Hari ke jam (iii) Tahun ke bulan (iv) Dekad ke tahun (v) Abad ke dekad (vi) Abad ke tahun"
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya 1.5 jam bersamaan berapa minit.",
+        "exploration": "Bina jadual faktor penukaran unit besar kepada kecil.",
+        "explanation": "Terangkan 1.5 × 60 = 90 minit dan 0.5 dekad = 5 tahun.",
+        "elaboration": "Cuba 0.25 hari, 1.5 tahun dan 0.2 abad; semua jawapan bulat.",
+        "evaluation": "Lima item meliputi unit harian dan jangka panjang; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-021A",
+      "source_block": 21,
+      "proposed_session": "A",
+      "title": "Tambah dan tolak masa pecahan",
+      "dskp": [
+        {
+          "code": "4.3.1",
+          "printed_page": 46,
+          "sk": "4.3 Operasi asas melibatkan masa",
+          "sp": "Menyelesaikan ayat matematik tambah dan tolak masa melibatkan pecahan; (i) jam dan minit, (ii) hari dan jam, (iii) tahun dan bulan, (iv) dekad dan tahun, (v) abad dan dekad, (vi) abad dan tahun, tanpa dan dengan melibatkan penukaran unit."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal jumlah 1/2 jam dan 45 minit.",
+        "exploration": "Gunakan jalur masa dan kad faktor penukaran.",
+        "explanation": "Model penukaran sebelum tambah atau tolak, contohnya 30 + 45 = 75 minit.",
+        "elaboration": "Selesaikan contoh jam/minit, hari/jam dan tahun/bulan serta dekad/abad.",
+        "evaluation": "Empat item pecahan dengan atau tanpa penukaran; tiga tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-021B",
+      "source_block": 21,
+      "proposed_session": "B",
+      "title": "Tambah dan tolak masa perpuluhan",
+      "dskp": [
+        {
+          "code": "4.3.2",
+          "printed_page": 47,
+          "sk": "4.3 Operasi asas melibatkan masa",
+          "sp": "Menyelesaikan ayat matematik tambah dan tolak masa melibatkan perpuluhan; (i) jam dan minit, (ii) hari dan jam, (iii) tahun dan bulan, (iv) dekad dan tahun, (v) abad dan dekad, (vi) abad dan tahun, tanpa dan dengan melibatkan penukaran unit."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding 1.5 jam − 20 minit dengan 1.5 − 0.2 jam.",
+        "exploration": "Tukar nilai kepada unit sepunya menggunakan jadual.",
+        "explanation": "Jelaskan 90 − 20 = 70 minit, bukan menolak 20 sebagai digit perpuluhan.",
+        "elaboration": "Pasangan selesaikan contoh hari/jam, tahun/bulan dan dekad/abad.",
+        "evaluation": "Empat item perpuluhan; tiga tepat dengan unit."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-022A",
+      "source_block": 22,
+      "proposed_session": "A",
+      "title": "Masalah masa dan waktu",
+      "dskp": [
+        {
+          "code": "4.4.1",
+          "printed_page": 47,
+          "sk": "4.4 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah berkaitan masa dan waktu dalam situasi harian."
+        }
+      ],
+      "phases": {
+        "engagement": "Paparkan jadual perjalanan dua hari dan waktu rehat.",
+        "exploration": "Kenal pasti waktu mula, tamat atau tempoh yang dikehendaki.",
+        "explanation": "Model garis masa dan semakan menggunakan hubungan unit.",
+        "elaboration": "Selesaikan empat masalah jadual, tempoh dan penukaran masa dalam konteks.",
+        "evaluation": "Tiga daripada empat masalah tepat dengan langkah."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-023A",
+      "source_block": 23,
+      "proposed_session": "A",
+      "title": "Penukaran panjang perpuluhan",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 50,
+          "sk": "5.1 Panjang",
+          "sp": "Menukar unit ukuran panjang melibatkan; (i) milimeter dan sentimeter, (ii) sentimeter dan meter, (iii) meter dan kilometer, dalam perpuluhan hingga tiga tempat perpuluhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding 35 mm dengan 3.5 cm menggunakan pembaris.",
+        "exploration": "Bina jadual mm/cm/m/km dengan faktor 10, 100 dan 1000.",
+        "explanation": "Model penukaran dua arah hingga tiga tempat perpuluhan.",
+        "elaboration": "Ukur objek dan tukar unit; cuba 0.125 km kepada m.",
+        "evaluation": "Lima penukaran; empat tepat dengan unit."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-023B",
+      "source_block": 23,
+      "proposed_session": "B",
+      "title": "Penukaran panjang pecahan",
+      "dskp": [
+        {
+          "code": "5.1.2",
+          "printed_page": 50,
+          "sk": "5.1 Panjang",
+          "sp": "Menukar unit ukuran panjang melibatkan; (i) milimeter dan sentimeter, (ii) sentimeter dan meter, (iii) meter dan kilometer, dalam pecahan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk 1/2 m pada pita ukur.",
+        "exploration": "Padankan pecahan unit besar dengan ukuran sebenar.",
+        "explanation": "Terangkan 3/4 m = 75 cm dan 250 m = 1/4 km.",
+        "elaboration": "Cuba pasangan mm/cm, cm/m, m/km dalam bentuk pecahan.",
+        "evaluation": "Lima item; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-023C",
+      "source_block": 23,
+      "proposed_session": "C",
+      "title": "Tambah dan tolak panjang",
+      "dskp": [
+        {
+          "code": "5.1.3",
+          "printed_page": 50,
+          "sk": "5.1 Panjang",
+          "sp": "Menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit."
+        },
+        {
+          "code": "5.1.4",
+          "printed_page": 50,
+          "sk": "5.1 Panjang",
+          "sp": "Menolak melibatkan hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal baki reben 2.5 m selepas 75 cm dipotong.",
+        "exploration": "Seragamkan unit pada kad ukuran pecahan dan perpuluhan.",
+        "explanation": "Model tambah tiga panjang dan tolak hingga tiga panjang dengan unit sama.",
+        "elaboration": "Selesaikan situasi gabungan tali dan potongan dalam pecahan/perpuluhan.",
+        "evaluation": "Empat item tambah/tolak; tiga tepat dengan penukaran jika perlu."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-023D",
+      "source_block": 23,
+      "proposed_session": "D",
+      "title": "Darab dan bahagi panjang",
+      "dskp": [
+        {
+          "code": "5.1.5",
+          "printed_page": 50,
+          "sk": "5.1 Panjang",
+          "sp": "Mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit."
+        },
+        {
+          "code": "5.1.6",
+          "printed_page": 50,
+          "sk": "5.1 Panjang",
+          "sp": "Membahagi ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit."
+        }
+      ],
+      "phases": {
+        "engagement": "Anggar panjang 12 reben 0.75 m setiap satu.",
+        "exploration": "Susun model reben sama panjang dan bahagikan tali kepada bahagian sama.",
+        "explanation": "Terangkan darab dan bahagi dengan dua digit, 100 dan 1000 serta penukaran unit.",
+        "elaboration": "Cuba item pecahan dan perpuluhan, termasuk penukaran m/cm.",
+        "evaluation": "Empat item darab/bahagi; tiga tepat dengan unit."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-024A",
+      "source_block": 24,
+      "proposed_session": "A",
+      "title": "Penukaran jisim",
+      "dskp": [
+        {
+          "code": "5.2.1",
+          "printed_page": 51,
+          "sk": "5.2 Jisim",
+          "sp": "Menukar unit jisim melibatkan gram dan kilogram dalam bentuk pecahan dan perpuluhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding paket 750 g dengan 0.75 kg.",
+        "exploration": "Gunakan penimbang dan kad pecahan untuk memadankan g/kg.",
+        "explanation": "Model 3/4 kg = 750 g dan 125 g = 0.125 kg.",
+        "elaboration": "Pasangan menukar label jisim dalam pecahan dan perpuluhan dua arah.",
+        "evaluation": "Lima item; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-024B",
+      "source_block": 24,
+      "proposed_session": "B",
+      "title": "Tambah dan tolak jisim",
+      "dskp": [
+        {
+          "code": "5.2.2",
+          "printed_page": 51,
+          "sk": "5.2 Jisim",
+          "sp": "Menambah hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit."
+        },
+        {
+          "code": "5.2.3",
+          "printed_page": 51,
+          "sk": "5.2 Jisim",
+          "sp": "Menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal baki 2.5 kg tepung selepas 750 g digunakan.",
+        "exploration": "Susun kad jisim hingga tiga kuantiti dengan unit diseragamkan.",
+        "explanation": "Model pengiraan pecahan dan perpuluhan, termasuk 2500 − 750 g.",
+        "elaboration": "Selesaikan situasi campuran bahan serta baki jisim tanpa/dengan penukaran.",
+        "evaluation": "Empat item; tiga tepat dengan unit."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-024C",
+      "source_block": 24,
+      "proposed_session": "C",
+      "title": "Darab dan bahagi jisim",
+      "dskp": [
+        {
+          "code": "5.2.4",
+          "printed_page": 51,
+          "sk": "5.2 Jisim",
+          "sp": "Mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan."
+        },
+        {
+          "code": "5.2.5",
+          "printed_page": 51,
+          "sk": "5.2 Jisim",
+          "sp": "Membahagi jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal jisim 12 paket 0.125 kg.",
+        "exploration": "Gunakan model paket dan pengagihan jisim sama rata.",
+        "explanation": "Terangkan darab/bahagi pecahan dan perpuluhan dengan dua digit, 100 dan 1000.",
+        "elaboration": "Cuba contoh pesanan dan pembungkusan dengan penukaran kg/g.",
+        "evaluation": "Empat item darab/bahagi; tiga tepat dengan langkah."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-025A",
+      "source_block": 25,
+      "proposed_session": "A",
+      "title": "Penukaran isi padu cecair",
+      "dskp": [
+        {
+          "code": "5.3.1",
+          "printed_page": 51,
+          "sk": "5.3 Isi padu cecair",
+          "sp": "Menukar unit isi padu melibatkan mililiter dan liter dalam bentuk pecahan dan perpuluhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding botol 500 mℓ dengan 1/2 ℓ.",
+        "exploration": "Gunakan jag bersenggat untuk memadankan kapasiti dalam dua unit.",
+        "explanation": "Model 0.375 ℓ = 375 mℓ dan 250 mℓ = 1/4 ℓ.",
+        "elaboration": "Tukar label kapasiti dalam pecahan dan perpuluhan dua arah.",
+        "evaluation": "Lima item; empat tepat dengan unit."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-025B",
+      "source_block": 25,
+      "proposed_session": "B",
+      "title": "Tambah dan tolak isi padu cecair",
+      "dskp": [
+        {
+          "code": "5.3.2",
+          "printed_page": 51,
+          "sk": "5.3 Isi padu cecair",
+          "sp": "Menambah hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit."
+        },
+        {
+          "code": "5.3.3",
+          "printed_page": 51,
+          "sk": "5.3 Isi padu cecair",
+          "sp": "Menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal baki 2 ℓ air selepas 0.5 ℓ dan 250 mℓ digunakan.",
+        "exploration": "Gunakan rajah jag dan seragamkan unit.",
+        "explanation": "Model tambah tiga sukatan dan tolak dua daripada satu menggunakan pecahan/perpuluhan.",
+        "elaboration": "Selesaikan situasi campuran minuman dan baki cecair.",
+        "evaluation": "Empat item tambah/tolak; tiga tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-025C",
+      "source_block": 25,
+      "proposed_session": "C",
+      "title": "Darab dan bahagi isi padu cecair",
+      "dskp": [
+        {
+          "code": "5.3.4",
+          "printed_page": 51,
+          "sk": "5.3 Isi padu cecair",
+          "sp": "Mendarab isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit."
+        },
+        {
+          "code": "5.3.5",
+          "printed_page": 51,
+          "sk": "5.3 Isi padu cecair",
+          "sp": "Membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal jumlah 12 botol 0.25 ℓ.",
+        "exploration": "Model botol sama kapasiti dan agihan daripada jag.",
+        "explanation": "Terangkan darab/bahagi dengan dua digit, 100 dan 1000 serta penukaran unit.",
+        "elaboration": "Cuba situasi isi botol dan pengagihan cecair dalam pecahan/perpuluhan.",
+        "evaluation": "Empat item; tiga tepat dengan unit dan semakan."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-026A",
+      "source_block": 26,
+      "proposed_session": "A",
+      "title": "Masalah ukuran dan sukatan",
+      "dskp": [
+        {
+          "code": "5.4.1",
+          "printed_page": 52,
+          "sk": "5.4 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah berkaitan ukuran dan sukatan dalam situasi harian."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk pelan penyediaan bahan untuk jualan rekaan.",
+        "exploration": "Kenal pasti maklumat panjang, jisim dan isi padu pada tiga kad masalah.",
+        "explanation": "Model Polya dan seragamkan unit sebelum operasi.",
+        "elaboration": "Selesaikan masalah reben, tepung dan air; semak kewajaran hasil.",
+        "evaluation": "Empat masalah; tiga tepat dengan unit."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-027A",
+      "source_block": 27,
+      "proposed_session": "A",
+      "title": "Ciri poligon sekata",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 56,
+          "sk": "6.1 Poligon sekata",
+          "sp": "Menyatakan ciri-ciri poligon sekata dengan merujuk kepada sisi, penjuru, paksi simetri, sudut dan pepenjuru."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua pentagon, satu sekata dan satu tidak sekata.",
+        "exploration": "Lipat model dan lukis pepenjuru bagi poligon hingga lapan sisi.",
+        "explanation": "Terangkan sisi, penjuru, paksi simetri, sudut pedalaman dan pepenjuru.",
+        "elaboration": "Lengkapkan jadual ciri bagi empat model poligon sekata.",
+        "evaluation": "Empat daripada lima huraian ciri tepat dengan bukti model."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-028A",
+      "source_block": 28,
+      "proposed_session": "A",
+      "title": "Ukur sudut pedalaman",
+      "dskp": [
+        {
+          "code": "6.2.1",
+          "printed_page": 56,
+          "sk": "6.2 Sudut",
+          "sp": "Mengukur sudut pada poligon sekata hingga lapan sisi."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal sudut pada segi empat sama dan heksagon sekata.",
+        "exploration": "Letak pusat protraktor pada penjuru dan sejajarkan garis asas.",
+        "explanation": "Terangkan pemilihan skala dari sifar dan bacaan sudut pedalaman.",
+        "elaboration": "Ukur sudut poligon sekata hingga lapan sisi dan banding bacaan rakan.",
+        "evaluation": "Empat daripada lima ukuran dalam toleransi 2°."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-029A",
+      "source_block": 29,
+      "proposed_session": "A",
+      "title": "Perimeter gabungan bentuk",
+      "dskp": [
+        {
+          "code": "6.3.1",
+          "printed_page": 56,
+          "sk": "6.3 Perimeter dan luas",
+          "sp": "Menentukan perimeter gabungan dua bentuk poligon sekata hingga lapan sisi termasuk segi tiga bersudut tegak, segi tiga sama kaki dan segi empat tepat."
+        }
+      ],
+      "phases": {
+        "engagement": "Jejak sempadan dua bentuk yang bercantum.",
+        "exploration": "Tandakan sisi luar dan sisi kongsi pada model.",
+        "explanation": "Terangkan perimeter ialah panjang sempadan luar; sisi kongsi tidak dikira.",
+        "elaboration": "Kira perimeter gabungan dua bentuk termasuk segi tiga atau segi empat tepat.",
+        "evaluation": "Tiga daripada empat perimeter tepat dengan unit panjang."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-029B",
+      "source_block": 29,
+      "proposed_session": "B",
+      "title": "Luas gabungan bentuk",
+      "dskp": [
+        {
+          "code": "6.3.2",
+          "printed_page": 56,
+          "sk": "6.3 Perimeter dan luas",
+          "sp": "Menentukan luas gabungan dua bentuk melibatkan segi empat tepat, segi empat sama, segi tiga sama sisi, segi tiga sama kaki dan segi tiga bersudut tegak."
+        }
+      ],
+      "phases": {
+        "engagement": "Bahagikan rajah gabungan segi empat dan segi tiga kepada dua bahagian.",
+        "exploration": "Gunakan grid untuk menganggar luas setiap bahagian.",
+        "explanation": "Model luas segi empat dan 1/2 × tapak × tinggi tegak bagi segi tiga.",
+        "elaboration": "Selesaikan empat rajah gabungan dua bentuk dengan ukuran diberi.",
+        "evaluation": "Tiga daripada empat luas tepat dalam unit persegi."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-030A",
+      "source_block": 30,
+      "proposed_session": "A",
+      "title": "Isi padu gabungan pepejal",
+      "dskp": [
+        {
+          "code": "6.4.1",
+          "printed_page": 56,
+          "sk": "6.4 Isi padu pepejal",
+          "sp": "Menentukan isi padu gabungan dua bentuk melibatkan kubus dan kuboid."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding model dua kuboid disambung tanpa bertindih.",
+        "exploration": "Pisahkan model kepada dua pepejal dan kira kubus unit.",
+        "explanation": "Terangkan panjang × lebar × tinggi serta jumlah isi padu kedua-dua bahagian.",
+        "elaboration": "Kira isi padu gabungan kubus dan kuboid bagi empat rajah berdimensi.",
+        "evaluation": "Tiga daripada empat jawapan tepat dalam unit padu."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-031A",
+      "source_block": 31,
+      "proposed_session": "A",
+      "title": "Masalah ruang",
+      "dskp": [
+        {
+          "code": "6.5.1",
+          "printed_page": 56,
+          "sk": "6.5 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah melibatkan ruang."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk pelan taman dan bekas simpanan rekaan.",
+        "exploration": "Pilih sama ada situasi memerlukan perimeter, luas atau isi padu.",
+        "explanation": "Model pemecahan bentuk gabungan dan pemilihan unit.",
+        "elaboration": "Selesaikan masalah pagar, jubin dan kapasiti kotak dengan rajah.",
+        "evaluation": "Tiga daripada empat masalah tepat dengan langkah dan unit."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-032A",
+      "source_block": 32,
+      "proposed_session": "A",
+      "title": "Jarak mengufuk dan mencancang",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 60,
+          "sk": "7.1 Koordinat pada sukuan pertama",
+          "sp": "Menentukan jarak mengufuk dan jarak mencancang antara dua koordinat."
+        }
+      ],
+      "phases": {
+        "engagement": "Tandakan P(2,3) dan Q(7,6) pada grid.",
+        "exploration": "Jejak perubahan mengufuk dan mencancang secara berasingan.",
+        "explanation": "Terangkan beza koordinat x ialah 5 unit dan y ialah 3 unit, bukan jarak pepenjuru.",
+        "elaboration": "Pasangan bina empat pasangan koordinat pada sukuan pertama.",
+        "evaluation": "Empat daripada lima jarak tepat dengan arah yang betul."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-033A",
+      "source_block": 33,
+      "proposed_session": "A",
+      "title": "Tiga jenis nisbah",
+      "dskp": [
+        {
+          "code": "7.2.1",
+          "printed_page": 60,
+          "sk": "7.2 Nisbah",
+          "sp": "Mewakilkan nisbah dua kuantiti dalam bentuk a : b yang melibatkan nisbah: (i) Bahagian kepada bahagian (ii) Bahagian kepada keseluruhan (iii) Keseluruhan kepada bahagian"
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjukkan 4 kad merah dan 6 kad biru.",
+        "exploration": "Bina perbandingan merah:biru, merah:jumlah dan jumlah:biru.",
+        "explanation": "Terangkan tertib bahagian kepada bahagian, bahagian kepada keseluruhan dan sebaliknya; unit sama.",
+        "elaboration": "Cuba situasi objek dan ukuran yang diseragamkan unitnya dahulu.",
+        "evaluation": "Lima item meliputi tiga jenis nisbah; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-034A",
+      "source_block": 34,
+      "proposed_session": "A",
+      "title": "Kadaran dan nilai tidak diketahui",
+      "dskp": [
+        {
+          "code": "7.3.1",
+          "printed_page": 60,
+          "sk": "7.3 Kadaran",
+          "sp": "Menentukan suatu nilai yang tidak diketahui menggunakan kadaran."
+        }
+      ],
+      "phases": {
+        "engagement": "Jika 3 buku berharga RM12, ramal harga 5 buku.",
+        "exploration": "Bina jadual kuantiti dan harga seunit.",
+        "explanation": "Model kaedah unitari 12 ÷ 3 × 5 = RM20.",
+        "elaboration": "Selesaikan empat situasi kadaran menggunakan jadual atau rajah bar.",
+        "evaluation": "Tiga daripada empat nilai tepat dengan kaedah."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-035A",
+      "source_block": 35,
+      "proposed_session": "A",
+      "title": "Masalah koordinat, nisbah dan kadaran",
+      "dskp": [
+        {
+          "code": "7.4.1",
+          "printed_page": 60,
+          "sk": "7.4 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah melibatkan koordinat, nisbah dan kadaran dalam situasi harian."
+        }
+      ],
+      "phases": {
+        "engagement": "Paparkan peta grid dan kad agihan bekalan.",
+        "exploration": "Kenal pasti maklumat yang melibatkan lokasi, nisbah atau kadaran.",
+        "explanation": "Model strategi rajah grid, rajah bar atau kaedah unitari mengikut masalah.",
+        "elaboration": "Selesaikan empat situasi harian meliputi ketiga-tiga kemahiran.",
+        "evaluation": "Tiga daripada empat jawapan tepat dengan alasan."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-036A",
+      "source_block": 36,
+      "proposed_session": "A",
+      "title": "Tafsir carta pai",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 64,
+          "sk": "8.1 Carta pai",
+          "sp": "Mentafsir carta pai."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding sektor terbesar dan terkecil pada carta pilihan buah.",
+        "exploration": "Baca tajuk, petunjuk dan nilai sektor carta pai yang diberi.",
+        "explanation": "Terangkan sektor mewakili bahagian daripada keseluruhan dan hubungan jumlah.",
+        "elaboration": "Tafsir dua carta berlabel, banding kategori dan cari kuantiti apabila jumlah diberi.",
+        "evaluation": "Empat daripada lima tafsiran tepat berdasarkan carta."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-037A",
+      "source_block": 37,
+      "proposed_session": "A",
+      "title": "Mod dan median",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 64,
+          "sk": "8.2 Mod, median, min dan julat",
+          "sp": "Mengenal dan menentukan mod, median, min, dan julat daripada data tak terkumpul."
+        }
+      ],
+      "phases": {
+        "engagement": "Susun kad data 2, 4, 4, 6, 9.",
+        "exploration": "Cari nilai paling kerap dan nilai tengah selepas menyusun data.",
+        "explanation": "Terangkan mod, median dan median bagi bilangan data genap.",
+        "elaboration": "Tentukan mod/median daripada senarai serta data yang dibaca daripada carta.",
+        "evaluation": "Empat daripada lima item tepat, termasuk data genap."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-037B",
+      "source_block": 37,
+      "proposed_session": "B",
+      "title": "Min dan julat",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 64,
+          "sk": "8.2 Mod, median, min dan julat",
+          "sp": "Mengenal dan menentukan mod, median, min, dan julat daripada data tak terkumpul."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding lima timbunan pembilang yang berlainan bilangan.",
+        "exploration": "Agih semula pembilang secara sama banyak untuk membina konsep min.",
+        "explanation": "Terangkan min = jumlah ÷ bilangan data dan julat = maksimum − minimum.",
+        "elaboration": "Kira min/julat daripada data tak terkumpul yang diperoleh melalui piktograf, carta palang atau carta pai berlabel kuantiti.",
+        "evaluation": "Empat daripada lima item tepat dengan langkah."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-038A",
+      "source_block": 38,
+      "proposed_session": "A",
+      "title": "Masalah pengurusan data",
+      "dskp": [
+        {
+          "code": "8.3.1",
+          "printed_page": 64,
+          "sk": "8.3 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah melibatkan pengurusan data dalam situasi harian."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk data bacaan buku satu kelas rekaan.",
+        "exploration": "Susun maklumat daripada carta atau jadual dan kenal pasti kehendak.",
+        "explanation": "Model Polya, pilih ukuran statistik yang relevan dan semak data asal.",
+        "elaboration": "Selesaikan masalah perbandingan kategori, min dan julat bagi dua set data.",
+        "evaluation": "Tiga daripada empat masalah tepat dengan bukti daripada data."
+      },
+      "scope_note": "Fokus tajuk ini; agihan sesi cadangan, belum dipadankan dengan RPH produksi.",
+      "ready": false
+    }
+  ]
+}

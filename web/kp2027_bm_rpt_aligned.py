@@ -135,10 +135,10 @@ def _docx(r,fields):
         tc.append(bd)
     head=d.add_table(rows=1,cols=2);head.autofit=False;head.alignment=WD_TABLE_ALIGNMENT.CENTER
     # Use the exact same total twip width as the main grid.
-    left=Cm(12.6).twips;right=Cm(4.2).twips+Cm(14.3).twips-left
+    right=Cm(12.6).twips;left=Cm(4.2).twips+Cm(14.3).twips-right
     for col,w in zip(head.columns,[left,right]):col.width=Twips(w)
-    hero,info=head.rows[0].cells
-    hero.width=Twips(left);info.width=Twips(right)
+    info,hero=head.rows[0].cells
+    info.width=Twips(left);hero.width=Twips(right)
     sh(hero,'DBE8F5');sh(info,'F4F7FA');grid(hero);grid(info)
     for j,(value,bold,size) in enumerate((
         ('BAHASA MELAYU SK',True,11),
@@ -231,7 +231,7 @@ def _pdf(r,fields):
             place(page,fitz.Rect(x+7,y+inset,x+w-7,y+inset+text_h),value,css)
             x+=w
         return y+h
-    y=draw_row(page,y,[identity,info],[355,166],[hero_css,hero_css],[strong,(244/255,247/255,250/255)])
+    y=draw_row(page,y,[info,identity],[166,355],[hero_css,hero_css],[(244/255,247/255,250/255),strong])
     steps='<br/>'.join('<b>'+raw(heading)+'</b><br/>'+raw(body)
         for heading,body in zip(_activity_titles(r),r['activities']))
     steps+='<br/>'+raw(r['hint'])

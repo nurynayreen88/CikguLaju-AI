@@ -1,0 +1,1349 @@
+{
+  "status": "NEW_PEDAGOGICAL_DRAFT_DSKP_TEXT_ONLY",
+  "subject": "SAINS SK",
+  "year": 5,
+  "curriculum": "KSSR",
+  "source": {
+    "drive_id": "17duOzgdPl4s3KOg4o5dPBn5XLV48GncK",
+    "title": "GuruBesar_DSKP_Sains_Tahun_5.pdf",
+    "verification": "All SP strings matched normalized extracted DSKP text; visual QA pending."
+  },
+  "policy": "New candidate sessions, not the 116 original production PdP; no textbook page claims or release. Practical activities require teacher supervision and elapsed observation where needed.",
+  "records": [
+    {
+      "candidate_id": "SCI-T5-DRAFT-001",
+      "title": "Pemerhatian dan pengelasan pengaratan",
+      "dskp": [
+        {
+          "code": "1.1.1",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Memerhati dengan menggunakan semua deria yang terlibat dan alat jika perlu untuk membuat pemerhatian secara kualitatif bagi menerangkan fenomena atau perubahan yang berlaku."
+        },
+        {
+          "code": "1.1.2",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengelas dengan membandingkan atau mengenal pasti persamaan dan perbezaan berdasarkan ciri sepunya."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding foto besi baharu dan berkarat.",
+        "exploration": "Perhatikan warna dan tekstur daripada sampel tertutup; asing kad objek mengikut keadaan.",
+        "explanation": "Bezakan pemerhatian daripada kesimpulan tentang jenis bahan.",
+        "elaboration": "Kelaskan enam gambar menggunakan ciri yang diperhatikan.",
+        "evaluation": "Empat pemerhatian dan pengelasan dengan kriteria jelas."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-002",
+      "title": "Suhu dan inferens",
+      "dskp": [
+        {
+          "code": "1.1.3",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengukur dan menggunakan nombor dengan menggunakan alat dan unit piawai dengan teknik yang betul."
+        },
+        {
+          "code": "1.1.4",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Membuat inferens dengan menyatakan kesimpulan awal atau penerangan yang munasabah bagi sesuatu pemerhatian dengan menggunakan maklumat yang diperoleh."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua bekas air suam dan suhu bilik.",
+        "exploration": "Ukur suhu dengan termometer digital tanpa menyentuh air.",
+        "explanation": "Terangkan unit °C dan inferens tentang perubahan suhu berdasarkan bacaan.",
+        "elaboration": "Ulang ukuran pada sela masa sama dan bincang sebab perbezaan.",
+        "evaluation": "Tiga bacaan betul dan satu inferens munasabah."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-003",
+      "title": "Ramalan kecerahan mentol",
+      "dskp": [
+        {
+          "code": "1.1.5",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Meramal dengan membuat jangkaan tentang sesuatu peristiwa atau fenomena berdasarkan pemerhatian, pengalaman lalu atau data."
+        },
+        {
+          "code": "1.1.6",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Berkomunikasi dengan merekod maklumat atau idea dalam bentuk yang sesuai dan mempersembahkan maklumat atau idea tersebut secara sistematik."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk dua rajah litar bateri rendah voltan.",
+        "exploration": "Teliti data kecerahan bagi bilangan mentol berlainan.",
+        "explanation": "Jelaskan ramalan berdasarkan pola bagi litar dan komponen yang sama.",
+        "elaboration": "Bina jadual ramalan dan banding dengan demonstrasi guru.",
+        "evaluation": "Satu ramalan beralasan dan jadual keputusan lengkap."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-004",
+      "title": "Kronologi dan tafsiran perubahan jirim",
+      "dskp": [
+        {
+          "code": "1.1.7",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Menggunakan perhubungan ruang dan masa dengan menyusun kejadian sesuatu fenomena atau peristiwa mengikut kronologi berdasarkan masa."
+        },
+        {
+          "code": "1.1.8",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mentafsir data dengan memilih idea yang relevan tentang objek, peristiwa atau pola yang terdapat pada data untuk membuat penerangan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer foto ais mencair pada beberapa masa.",
+        "exploration": "Susun foto bertarikh dan banding jadual suhu.",
+        "explanation": "Terangkan hubungan masa dengan perubahan yang diperhatikan.",
+        "elaboration": "Lukis graf daripada data guru dan huraikan dua bahagian.",
+        "evaluation": "Urutan tepat dan dua tafsiran berasaskan data."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-005",
+      "title": "Definisi operasi dan pemboleh ubah pengaratan",
+      "dskp": [
+        {
+          "code": "1.1.9",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mendefinisi secara operasi dengan memerihalkan satu tafsiran tentang perkara yang dilakukan dan diperhatikan bagi sesuatu situasi mengikut aspek yang ditentukan."
+        },
+        {
+          "code": "1.1.10",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan setelah pemboleh ubah dimanipulasi ditentukan dalam sesuatu penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding foto paku dalam keadaan kering dan lembap.",
+        "exploration": "Perhatikan contoh rekod selepas beberapa hari.",
+        "explanation": "Takrif operasi pengaratan melalui lapisan perang kemerahan; kenal faktor diubah, diukur dan dimalarkan.",
+        "elaboration": "Rancang ujian kehadiran air dengan bahan besi dan tempoh sama.",
+        "evaluation": "Definisi operasi dan tiga pemboleh ubah tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-006",
+      "title": "Hipotesis eksperimen litar",
+      "dskp": [
+        {
+          "code": "1.1.11",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Membuat hipotesis dengan membuat pernyataan umum yang boleh diuji tentang hubungan antara pemboleh ubah dalam sesuatu penyiasatan."
+        },
+        {
+          "code": "1.1.12",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengeksperimen dengan menggunakan kemahiran proses sains asas bagi mengumpul dan mentafsir data serta membuat rumusan untuk membuktikan hipotesis dan membuat laporan."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal perubahan kecerahan apabila mentol ditambah dalam litar bersiri.",
+        "exploration": "Bina hipotesis dan uji set sel kering berhad voltan yang dibimbing guru.",
+        "explanation": "Jelaskan ujian adil serta rekod kecerahan relatif.",
+        "elaboration": "Ulang percubaan dengan mentol sepadan dan tulis laporan.",
+        "evaluation": "Hipotesis boleh diuji, data sebenar dan rumusan menyokong atau menolak hipotesis."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-007",
+      "title": "Rangka utama manusia",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 46,
+          "sk": "2.1 Sistem Rangka Manusia",
+          "sp": "Memerihalkan fungsi rangka utama manusia."
+        },
+        {
+          "code": "2.1.2",
+          "printed_page": 46,
+          "sk": "2.1 Sistem Rangka Manusia",
+          "sp": "Mengenal pasti tulang dan kedudukan sendi dalam sistem rangka manusia."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk model rangka.",
+        "exploration": "Padankan tengkorak, rusuk, tulang belakang, tangan dan kaki pada rajah.",
+        "explanation": "Terangkan perlindungan, sokongan dan pergerakan.",
+        "elaboration": "Label rangka dan kedudukan sendi utama menggunakan carta.",
+        "evaluation": "Empat padanan rangka dengan fungsi serta dua lokasi sendi tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-008",
+      "title": "Sendi dan kepentingan rangka",
+      "dskp": [
+        {
+          "code": "2.1.3",
+          "printed_page": 46,
+          "sk": "2.1 Sistem Rangka Manusia",
+          "sp": "Menyatakan fungsi sendi dalam sistem rangka manusia."
+        },
+        {
+          "code": "2.1.4",
+          "printed_page": 46,
+          "sk": "2.1 Sistem Rangka Manusia",
+          "sp": "Menaakul kepentingan sistem rangka kepada tubuh manusia."
+        },
+        {
+          "code": "2.1.5",
+          "printed_page": 46,
+          "sk": "2.1 Sistem Rangka Manusia",
+          "sp": "Menjelaskan pemerhatian tentang sistem rangka manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Gerakkan siku sendiri secara biasa.",
+        "exploration": "Banding model sendi bergerak dengan model yang tidak boleh dibengkokkan.",
+        "explanation": "Jelaskan sendi menghubungkan tulang dan membolehkan pergerakan tertentu.",
+        "elaboration": "Lakar model siku dan bincang kepentingan rangka tanpa memaksa sendi.",
+        "evaluation": "Dua fungsi rangka dan satu fungsi sendi dijelaskan melalui lakaran."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-009",
+      "title": "Bahagian utama peredaran darah",
+      "dskp": [
+        {
+          "code": "2.2.1",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Peredaran Darah Manusia",
+          "sp": "Memerihalkan fungsi bahagian utama yang terlibat dalam sistem peredaran darah manusia."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer carta jantung, peparu dan salur darah.",
+        "exploration": "Padankan organ dengan kad fungsi.",
+        "explanation": "Jelaskan jantung mengepam, peparu tempat pertukaran gas dan salur darah membawa darah.",
+        "elaboration": "Bina model laluan menggunakan kad dan anak panah.",
+        "evaluation": "Tiga padanan organ dengan fungsi tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-010",
+      "title": "Laluan darah",
+      "dskp": [
+        {
+          "code": "2.2.2",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Peredaran Darah Manusia",
+          "sp": "Melakar laluan peredaran darah yang lebih oksigen dan laluan peredaran darah yang lebih karbon dioksida dalam tubuh manusia."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk carta peredaran tanpa anak panah.",
+        "exploration": "Susun jantung, peparu dan tubuh; jejak dua laluan.",
+        "explanation": "Jelaskan darah lebih oksigen dan lebih karbon dioksida; kedua-duanya mengandungi kedua-dua gas.",
+        "elaboration": "Lakar aliran dengan dua warna simbolik dan petunjuk.",
+        "evaluation": "Laluan jantung–peparu–jantung–tubuh–jantung betul dengan label."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-011",
+      "title": "Kepentingan peredaran darah",
+      "dskp": [
+        {
+          "code": "2.2.3",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Peredaran Darah Manusia",
+          "sp": "Merumuskan kepentingan sistem peredaran darah kepada tubuh manusia."
+        },
+        {
+          "code": "2.2.4",
+          "printed_page": 47,
+          "sk": "2.2 Sistem Peredaran Darah Manusia",
+          "sp": "Menjelaskan pemerhatian tentang sistem peredaran darah manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya bagaimana oksigen sampai ke otot.",
+        "exploration": "Gunakan model penghantaran kad oksigen, nutrien dan bahan buangan.",
+        "explanation": "Jelaskan pengangkutan bahan oleh darah.",
+        "elaboration": "Bina carta fungsi dan bentang satu situasi harian.",
+        "evaluation": "Dua kepentingan dan satu penerangan melalui carta."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-012",
+      "title": "Perkaitan sistem tubuh",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 48,
+          "sk": "2.3 Perkaitan antara Sistem dalam Tubuh Manusia",
+          "sp": "Menjelaskan melalui contoh perkaitan antara sistem dalam tubuh manusia."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer empat carta sistem tubuh.",
+        "exploration": "Padankan situasi pencernaan makanan, pernafasan, peredaran dan pergerakan.",
+        "explanation": "Jelaskan sistem saling menyokong; gunakan ilustrasi situasi gangguan sahaja.",
+        "elaboration": "Bina peta hubungan nutrien, oksigen, darah dan pergerakan.",
+        "evaluation": "Dua perkaitan sistem dijelaskan dengan contoh."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-013",
+      "title": "Penjagaan sistem tubuh",
+      "dskp": [
+        {
+          "code": "2.3.2",
+          "printed_page": 48,
+          "sk": "2.3 Perkaitan antara Sistem dalam Tubuh Manusia",
+          "sp": "Menaakul kepentingan penjagaan semua sistem dalam tubuh manusia supaya berfungsi dengan sempurna."
+        },
+        {
+          "code": "2.3.3",
+          "printed_page": 48,
+          "sk": "2.3 Perkaitan antara Sistem dalam Tubuh Manusia",
+          "sp": "Menjana idea cara memelihara sistem dalam tubuh manusia bagi menjamin kehidupan yang sihat."
+        },
+        {
+          "code": "2.3.4",
+          "printed_page": 48,
+          "sk": "2.3 Perkaitan antara Sistem dalam Tubuh Manusia",
+          "sp": "Menjelaskan pemerhatian tentang perkaitan antara sistem dalam tubuh manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk kad aktiviti tidur, makan dan bergerak.",
+        "exploration": "Bincang bagaimana amalan umum menyokong beberapa sistem.",
+        "explanation": "Jelaskan kepentingan pemakanan seimbang, aktiviti sesuai dan rehat.",
+        "elaboration": "Bina poster rutin sihat tanpa menilai tubuh murid.",
+        "evaluation": "Tiga amalan dan alasan berkaitan sistem tubuh."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-014",
+      "title": "Kemandirian dan perlindungan daripada musuh",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 49,
+          "sk": "3.1 Kemandirian Spesies Haiwan",
+          "sp": "Menyatakan maksud kemandirian spesies."
+        },
+        {
+          "code": "3.1.2",
+          "printed_page": 49,
+          "sk": "3.1 Kemandirian Spesies Haiwan",
+          "sp": "Menjelas dengan contoh ciri dan tingkah laku khas haiwan untuk melindungi diri daripada musuh."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar sotong dan serangga bermata palsu.",
+        "exploration": "Padankan ciri serta tingkah laku dengan fungsi perlindungan.",
+        "explanation": "Jelaskan maksud kemandirian spesies dan perbezaan ciri fizikal dengan tingkah laku.",
+        "elaboration": "Banding empat haiwan menggunakan media, bukan mengganggu haiwan hidup.",
+        "evaluation": "Maksud kemandirian dan tiga contoh perlindungan tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-015",
+      "title": "Perlindungan cuaca melampau",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 49,
+          "sk": "3.1 Kemandirian Spesies Haiwan",
+          "sp": "Menjelas dengan contoh ciri dan tingkah laku khas haiwan untuk melindungi diri daripada cuaca melampau."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer foto kerbau berlumpur dan burung berhijrah.",
+        "exploration": "Padankan ciri atau tingkah laku dengan keadaan cuaca.",
+        "explanation": "Jelaskan migrasi, hibernasi dan penyesuaian terhadap haba berdasarkan contoh.",
+        "elaboration": "Bina jadual haiwan, keadaan dan cara perlindungan.",
+        "evaluation": "Tiga padanan tepat dengan sebab."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-016",
+      "title": "Perlindungan telur dan anak",
+      "dskp": [
+        {
+          "code": "3.1.4",
+          "printed_page": 49,
+          "sk": "3.1 Kemandirian Spesies Haiwan",
+          "sp": "Mengenal pasti cara haiwan melindungi telurnya."
+        },
+        {
+          "code": "3.1.5",
+          "printed_page": 49,
+          "sk": "3.1 Kemandirian Spesies Haiwan",
+          "sp": "Mengenal pasti cara haiwan memastikan anaknya terus hidup."
+        },
+        {
+          "code": "3.1.6",
+          "printed_page": 50,
+          "sk": "3.1 Kemandirian Spesies Haiwan",
+          "sp": "Menjelaskan pemerhatian tentang kemandirian spesies haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ilustrasi penguin mengeram dan kanggaru berkantung.",
+        "exploration": "Asing kad perlindungan telur daripada penjagaan anak.",
+        "explanation": "Jelaskan bagaimana cara berbeza meningkatkan peluang anak hidup.",
+        "elaboration": "Hasilkan peta grafik enam contoh dan bentangkan.",
+        "evaluation": "Dua cara menjaga telur dan dua cara menjaga anak."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-017",
+      "title": "Model haiwan imaginasi",
+      "dskp": [
+        {
+          "code": "3.2.1",
+          "printed_page": 50,
+          "sk": "3.2 Mereka Cipta Model Haiwan",
+          "sp": "Mencipta model haiwan imaginasi yang boleh melindungi diri daripada musuh dan cuaca melampau."
+        },
+        {
+          "code": "3.2.2",
+          "printed_page": 50,
+          "sk": "3.2 Mereka Cipta Model Haiwan",
+          "sp": "Menaakul ciri khas pada model haiwan imaginasi bagi melindungi diri daripada musuh dan cuaca melampau."
+        }
+      ],
+      "phases": {
+        "engagement": "Beri situasi habitat panas dengan pemangsa rekaan.",
+        "exploration": "Lakar dua ciri pelindung berdasarkan haiwan sebenar.",
+        "explanation": "Jelaskan kaitan setiap ciri dengan cabaran habitat.",
+        "elaboration": "Bina model kertas atau bahan guna semula dan semak fungsi ciri.",
+        "evaluation": "Model mempunyai sekurang-kurangnya dua ciri dengan alasan."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-018",
+      "title": "Pembentangan model haiwan",
+      "dskp": [
+        {
+          "code": "3.2.3",
+          "printed_page": 50,
+          "sk": "3.2 Mereka Cipta Model Haiwan",
+          "sp": "Berkomunikasi tentang ciri khas haiwan bagi mengagumi ciptaan Tuhan dalam memastikan keseimbangan alam semula jadi."
+        },
+        {
+          "code": "3.2.4",
+          "printed_page": 50,
+          "sk": "3.2 Mereka Cipta Model Haiwan",
+          "sp": "Menjelaskan pemerhatian tentang model haiwan imaginasi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer model yang telah dibina.",
+        "exploration": "Rakan meneliti ciri dan memberi maklum balas.",
+        "explanation": "Bincang kepelbagaian penyesuaian dan nilai menghargai ciptaan Tuhan serta alam.",
+        "elaboration": "Perbaik model dan terangkan ciri melalui lakaran.",
+        "evaluation": "Penerangan dua ciri dan satu kaitan keseimbangan alam."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-019",
+      "title": "Rantai makanan",
+      "dskp": [
+        {
+          "code": "3.3.1",
+          "printed_page": 51,
+          "sk": "3.3 Hubungan Makanan antara Hidupan",
+          "sp": "Menyatakan maksud rantai makanan."
+        },
+        {
+          "code": "3.3.2",
+          "printed_page": 51,
+          "sk": "3.3 Hubungan Makanan antara Hidupan",
+          "sp": "Mengenal pasti pengeluar dan pengguna dalam rantai makanan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer rumput, belalang dan katak.",
+        "exploration": "Susun kad mengikut hubungan makanan.",
+        "explanation": "Jelaskan pengeluar, pengguna dan anak panah arah perpindahan tenaga.",
+        "elaboration": "Bina dua rantai daripada habitat yang diberikan.",
+        "evaluation": "Dua rantai dengan pengeluar, pengguna dan arah tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-020",
+      "title": "Fotosintesis dan perpindahan tenaga",
+      "dskp": [
+        {
+          "code": "3.3.3",
+          "printed_page": 51,
+          "sk": "3.3 Hubungan Makanan antara Hidupan",
+          "sp": "Merumus tentang hubungan makanan antara hidupan dengan proses fotosintesis dari aspek perpindahan tenaga berdasarkan rantai makanan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk kad Matahari di sebelah tumbuhan.",
+        "exploration": "Jejak tenaga cahaya yang disimpan dalam makanan tumbuhan dan dipindah kepada pengguna.",
+        "explanation": "Jelaskan fotosintesis sebagai asas kebanyakan rantai makanan.",
+        "elaboration": "Lakar aliran tenaga bagi satu rantai daratan dan satu akuatik.",
+        "evaluation": "Dua lakaran dan satu rumusan hubungan fotosintesis."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-021",
+      "title": "Siratan makanan",
+      "dskp": [
+        {
+          "code": "3.3.4",
+          "printed_page": 51,
+          "sk": "3.3 Hubungan Makanan antara Hidupan",
+          "sp": "Menyatakan maksud siratan makanan."
+        },
+        {
+          "code": "3.3.5",
+          "printed_page": 51,
+          "sk": "3.3 Hubungan Makanan antara Hidupan",
+          "sp": "Membina siratan makanan di pelbagai habitat."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer beberapa rantai makanan habitat sawah.",
+        "exploration": "Gabungkan rantai yang berkongsi organisma menggunakan kad dan tali di atas meja.",
+        "explanation": "Jelaskan siratan ialah hubungan beberapa rantai makanan.",
+        "elaboration": "Bina siratan habitat sawah dan kolam berdasarkan data makanan.",
+        "evaluation": "Dua siratan dengan arah anak panah tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-022",
+      "title": "Perubahan populasi",
+      "dskp": [
+        {
+          "code": "3.3.6",
+          "printed_page": 52,
+          "sk": "3.3 Hubungan Makanan antara Hidupan",
+          "sp": "Meramalkan kesan terhadap hidupan lain jika berlaku perubahan populasi dalam siratan makanan suatu habitat."
+        },
+        {
+          "code": "3.3.7",
+          "printed_page": 52,
+          "sk": "3.3 Hubungan Makanan antara Hidupan",
+          "sp": "Menjelaskan pemerhatian tentang hubungan makanan antara hidupan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk siratan makanan dengan satu pengguna berkurang.",
+        "exploration": "Jejak hubungan langsung dan tidak langsung pada model.",
+        "explanation": "Jelaskan ramalan bersyarat; populasi sebenar dipengaruhi banyak faktor.",
+        "elaboration": "Banding dua senario perubahan dan bentangkan alasan.",
+        "evaluation": "Dua ramalan munasabah dengan bukti hubungan makanan."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-023",
+      "title": "Perlindungan tumbuhan daripada musuh",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 53,
+          "sk": "4.1 Kemandirian Spesies Tumbuhan",
+          "sp": "Menjelas dengan contoh ciri khas tumbuhan untuk melindungi diri daripada musuh."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer foto duri, getah dan daun berbau.",
+        "exploration": "Padankan ciri dengan kemungkinan fungsi perlindungan tanpa menyentuh spesimen berbahaya.",
+        "explanation": "Jelaskan ciri pertahanan tumbuhan melalui contoh rujukan.",
+        "elaboration": "Bina carta ciri dan fungsi empat tumbuhan.",
+        "evaluation": "Tiga contoh tepat dengan alasan."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-024",
+      "title": "Penyesuaian tumbuhan terhadap iklim",
+      "dskp": [
+        {
+          "code": "4.1.2",
+          "printed_page": 53,
+          "sk": "4.1 Kemandirian Spesies Tumbuhan",
+          "sp": "Menjelas dengan contoh ciri khas tumbuhan untuk menyesuaikan diri dengan iklim dan perubahan musim."
+        },
+        {
+          "code": "4.1.3",
+          "printed_page": 53,
+          "sk": "4.1 Kemandirian Spesies Tumbuhan",
+          "sp": "Menjelaskan pemerhatian tentang kemandirian spesies tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding foto kaktus dan pokok luruh daun.",
+        "exploration": "Teliti ciri tumbuhan daripada habitat berbeza.",
+        "explanation": "Jelaskan penyimpanan air, pengurangan kehilangan air dan luruhan daun mengikut contoh.",
+        "elaboration": "Hasilkan jadual ciri, cabaran dan manfaat.",
+        "evaluation": "Dua penyesuaian diterangkan dengan lakaran."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-025",
+      "title": "Cara pencaran biji benih",
+      "dskp": [
+        {
+          "code": "4.2.1",
+          "printed_page": 54,
+          "sk": "4.2 Pencaran Biji Benih",
+          "sp": "Menyatakan cara tumbuhan memencarkan biji benih atau buah."
+        },
+        {
+          "code": "4.2.2",
+          "printed_page": 54,
+          "sk": "4.2 Pencaran Biji Benih",
+          "sp": "Menghubungkait cara pencaran dengan ciri biji benih atau buah."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer model buah kelapa, biji bersayap dan buah berduri halus.",
+        "exploration": "Uji model ringan dengan kipas tangan dan model terapung dalam air; gunakan foto bagi letupan.",
+        "explanation": "Jelaskan empat cara pencaran dan kaitan ciri buah atau biji.",
+        "elaboration": "Padankan lapan contoh menggunakan bukti ciri.",
+        "evaluation": "Enam padanan tepat dengan sekurang-kurangnya dua alasan."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-026",
+      "title": "Ramalan pencaran",
+      "dskp": [
+        {
+          "code": "4.2.3",
+          "printed_page": 54,
+          "sk": "4.2 Pencaran Biji Benih",
+          "sp": "Meramal cara pencaran bagi suatu biji benih berdasarkan ciri biji benih tersebut."
+        },
+        {
+          "code": "4.2.4",
+          "printed_page": 54,
+          "sk": "4.2 Pencaran Biji Benih",
+          "sp": "Menjelaskan pemerhatian tentang pencaran biji benih melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk gambar biji benih yang belum dinamakan.",
+        "exploration": "Perhatikan ciri seperti ringan, bersayap, berkait atau boleh terapung.",
+        "explanation": "Jelaskan ramalan berdasarkan ciri, bukan kepastian.",
+        "elaboration": "Lakar dan huraikan cara pencaran bagi empat gambar baharu.",
+        "evaluation": "Tiga ramalan munasabah dengan alasan ciri."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-027",
+      "title": "Sumber tenaga elektrik",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 56,
+          "sk": "5.1 Sumber Tenaga Elektrik",
+          "sp": "Menjelas dengan contoh sumber yang menghasilkan tenaga elektrik."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar sel kering, panel suria dan penjana.",
+        "exploration": "Padankan sumber atau alat penjanaan dengan contoh penggunaan.",
+        "explanation": "Jelaskan perubahan tenaga kepada tenaga elektrik.",
+        "elaboration": "Bina carta sumber elektrik tanpa mengendalikan sesalur.",
+        "evaluation": "Empat contoh sumber dan satu penerangan."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-028",
+      "title": "Litar bersiri dan selari",
+      "dskp": [
+        {
+          "code": "5.2.1",
+          "printed_page": 56,
+          "sk": "5.2 Litar Bersiri dan Litar Selari",
+          "sp": "Mengenal pasti susunan mentol secara bersiri dan selari dalam litar elektrik lengkap."
+        },
+        {
+          "code": "5.2.2",
+          "printed_page": 56,
+          "sk": "5.2 Litar Bersiri dan Litar Selari",
+          "sp": "Melakar rajah litar bersiri dan litar selari menggunakan simbol."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer dua rajah litar mentol.",
+        "exploration": "Bina model sel kering dengan set sekolah berpandukan guru.",
+        "explanation": "Bezakan satu laluan bersiri dengan cabang selari.",
+        "elaboration": "Lakar kedua-dua litar menggunakan simbol komponen.",
+        "evaluation": "Dua rajah lengkap dengan susunan dan simbol betul."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-029",
+      "title": "Banding kecerahan mentol",
+      "dskp": [
+        {
+          "code": "5.2.3",
+          "printed_page": 56,
+          "sk": "5.2 Litar Bersiri dan Litar Selari",
+          "sp": "Membanding dan membezakan kecerahan mentol dalam litar bersiri dan litar selari."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal kecerahan dua mentol sepadan dalam litar bersiri dan selari.",
+        "exploration": "Guru bimbing perbandingan menggunakan bateri sepadan dan mentol berkadar sesuai.",
+        "explanation": "Jelaskan perbandingan bagi keadaan ujian yang sama.",
+        "elaboration": "Rekod kecerahan relatif dan banding ramalan.",
+        "evaluation": "Satu jadual dan rumusan berdasarkan pemerhatian."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-030",
+      "title": "Bilangan mentol dan kecerahan",
+      "dskp": [
+        {
+          "code": "5.2.4",
+          "printed_page": 57,
+          "sk": "5.2 Litar Bersiri dan Litar Selari",
+          "sp": "Mengeksperimen untuk membezakan kecerahan mentol dalam litar bersiri atau selari dengan mengubah bilangan mentol."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya kesan menambah mentol dalam litar bersiri.",
+        "exploration": "Uji bilangan mentol dengan sel kering dan jenis mentol sama; guru mengawasi had arus.",
+        "explanation": "Kenal pemboleh ubah dan bezakan dapatan bersiri daripada selari.",
+        "elaboration": "Rekod perbandingan secara berasingan bagi kedua-dua susunan.",
+        "evaluation": "Dua rumusan berdasarkan data ujian, bukan andaian."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-031",
+      "title": "Bilangan sel kering dan kecerahan",
+      "dskp": [
+        {
+          "code": "5.2.5",
+          "printed_page": 57,
+          "sk": "5.2 Litar Bersiri dan Litar Selari",
+          "sp": "Mengeksperimen untuk membezakan kecerahan mentol dalam litar bersiri atau selari dengan mengubah bilangan sel kering."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding set litar yang dibenarkan guru.",
+        "exploration": "Guru demonstrasi perubahan bilangan sel dalam had voltan komponen.",
+        "explanation": "Jelaskan hanya bilangan sel diubah, susunan dan jenis mentol dikekalkan.",
+        "elaboration": "Murid rekod dan banding kecerahan; tidak melebihi kadar komponen.",
+        "evaluation": "Jadual pemboleh ubah dan rumusan data sebenar."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-032",
+      "title": "Suis dalam litar bersiri dan selari",
+      "dskp": [
+        {
+          "code": "5.2.6",
+          "printed_page": 57,
+          "sk": "5.2 Litar Bersiri dan Litar Selari",
+          "sp": "Menyatakan keadaan mentol apabila beberapa suis ditutup atau dibuka dalam litar bersiri dan litar selari dengan menjalankan aktiviti."
+        },
+        {
+          "code": "5.2.7",
+          "printed_page": 57,
+          "sk": "5.2 Litar Bersiri dan Litar Selari",
+          "sp": "Menjelaskan pemerhatian tentang litar bersiri dan litar selari melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal mentol yang padam apabila satu suis dibuka.",
+        "exploration": "Uji set litar rendah voltan dengan suis pada laluan atau cabang.",
+        "explanation": "Jelaskan kesan laluan terputus mengikut lokasi suis.",
+        "elaboration": "Lakar rajah dan catat keadaan mentol untuk setiap suis.",
+        "evaluation": "Empat ramalan atau pemerhatian tepat beserta rajah."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-033",
+      "title": "Faktor penggunaan elektrik",
+      "dskp": [
+        {
+          "code": "5.3.1",
+          "printed_page": 58,
+          "sk": "5.3 Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+          "sp": "Menjana idea faktor yang mempengaruhi penggunaan tenaga elektrik dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer bil elektrik rekaan dan kad kuasa alat.",
+        "exploration": "Banding penggunaan bagi tempoh yang berbeza menggunakan jadual.",
+        "explanation": "Jelaskan penggunaan tenaga dipengaruhi kuasa dan tempoh.",
+        "elaboration": "Cadangkan cara mengurangkan pembaziran berdasarkan data rekaan.",
+        "evaluation": "Dua faktor dan dua tindakan penjimatan beralasan."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-034",
+      "title": "Keselamatan elektrik",
+      "dskp": [
+        {
+          "code": "5.3.2",
+          "printed_page": 58,
+          "sk": "5.3 Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+          "sp": "Menjelas dengan contoh kesan kecuaian pengendalian peralatan elektrik."
+        },
+        {
+          "code": "5.3.3",
+          "printed_page": 58,
+          "sk": "5.3 Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+          "sp": "Memerihalkan langkah keselamatan ketika mengendalikan peralatan elektrik."
+        },
+        {
+          "code": "5.3.4",
+          "printed_page": 58,
+          "sk": "5.3 Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+          "sp": "Menjelaskan pemerhatian tentang keselamatan pengendalian peralatan dan penjimatan elektrik melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ilustrasi kabel rosak dan tangan basah berhampiran soket.",
+        "exploration": "Kelaskan situasi selamat dan berbahaya menggunakan kad sahaja.",
+        "explanation": "Jelaskan risiko renjatan dan kebakaran; lapor kerosakan kepada orang dewasa.",
+        "elaboration": "Bina poster keselamatan dan penjimatan; tiada latihan dengan sesalur sebenar.",
+        "evaluation": "Empat tindakan selamat dan dua kesan kecuaian."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-035",
+      "title": "Haba dan suhu",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 59,
+          "sk": "6.1 Haba dan Suhu",
+          "sp": "Menyatakan maksud haba dan suhu."
+        },
+        {
+          "code": "6.1.2",
+          "printed_page": 59,
+          "sk": "6.1 Haba dan Suhu",
+          "sp": "Menyukat suhu dengan menggunakan alat dan unit piawai dengan teknik yang betul."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding bekas air suhu bilik dan air suam yang disediakan guru.",
+        "exploration": "Ukur suhu menggunakan termometer digital pada kedudukan sesuai.",
+        "explanation": "Jelaskan haba ialah tenaga dipindahkan kerana beza suhu; suhu ukuran kepanasan.",
+        "elaboration": "Catat tiga suhu dengan unit °C.",
+        "evaluation": "Bezakan haba dan suhu serta tiga bacaan betul."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-036",
+      "title": "Suhu ais hingga takat didih",
+      "dskp": [
+        {
+          "code": "6.1.3",
+          "printed_page": 59,
+          "sk": "6.1 Haba dan Suhu",
+          "sp": "Menggunakan perhubungan ruang dan masa untuk melihat perubahan suhu apabila ais dipanaskan dan menentukan takat beku dan takat didih air dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ais dan jadual kosong masa-suhu.",
+        "exploration": "Guru menjalankan demonstrasi pemanasan terkawal; murid merekod dari jarak selamat.",
+        "explanation": "Jelaskan takat beku kira-kira 0°C dan didih 100°C pada tekanan atmosfera biasa.",
+        "elaboration": "Plot graf data sebenar dan tandakan perubahan keadaan.",
+        "evaluation": "Graf berlabel dan dua takat dikenal pasti mengikut keadaan ujian."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-037",
+      "title": "Penyejukan air",
+      "dskp": [
+        {
+          "code": "6.1.4",
+          "printed_page": 59,
+          "sk": "6.1 Haba dan Suhu",
+          "sp": "Memerihalkan perubahan suhu air apabila air panas disejukkan ke suhu bilik."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal suhu air suam selepas beberapa minit.",
+        "exploration": "Ukur suhu pada sela masa sama dengan termometer, bekas selamat disediakan guru.",
+        "explanation": "Jelaskan kehilangan haba menyebabkan suhu menghampiri suhu persekitaran.",
+        "elaboration": "Plot graf penyejukan dan banding dengan suhu bilik.",
+        "evaluation": "Tiga bacaan dan satu rumusan berdasarkan data."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-038",
+      "title": "Pengembangan dan pengecutan",
+      "dskp": [
+        {
+          "code": "6.1.5",
+          "printed_page": 59,
+          "sk": "6.1 Haba dan Suhu",
+          "sp": "Membuat kesimpulan tentang kesan ke atas bahan apabila menerima haba dan apabila kehilangan haba dengan menjalankan aktiviti."
+        },
+        {
+          "code": "6.1.6",
+          "printed_page": 60,
+          "sk": "6.1 Haba dan Suhu",
+          "sp": "Menaakul kepentingan aplikasi prinsip pengembangan dan pengecutan bahan dalam kehidupan harian."
+        },
+        {
+          "code": "6.1.7",
+          "printed_page": 60,
+          "sk": "6.1 Haba dan Suhu",
+          "sp": "Menjelaskan pemerhatian tentang haba dan suhu air melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer model sambungan jambatan dan botol berbelon.",
+        "exploration": "Guru bimbing model botol dalam air suam dan sejuk; teliti rakaman pengembangan pepejal.",
+        "explanation": "Jelaskan bahan lazimnya mengembang apabila dipanaskan dan mengecut apabila disejukkan; terdapat pengecualian.",
+        "elaboration": "Padankan aplikasi ruang pengembangan pada jambatan dan kabel; lakar model.",
+        "evaluation": "Dua kesan haba dan dua aplikasi dengan alasan."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-039",
+      "title": "Ciri pengaratan besi",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 62,
+          "sk": "7.1 Pengaratan Bahan",
+          "sp": "Menyatakan ciri objek yang berkarat."
+        },
+        {
+          "code": "7.1.2",
+          "printed_page": 62,
+          "sk": "7.1 Pengaratan Bahan",
+          "sp": "Mengitlak bahawa objek yang diperbuat daripada besi boleh berkarat."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar paku baharu dan paku berkarat.",
+        "exploration": "Kelaskan foto besi, plastik dan aluminium serta keadaan permukaan.",
+        "explanation": "Jelaskan karat ialah hasil kakisan besi; logam lain boleh mengalami kakisan lain.",
+        "elaboration": "Bina jadual ciri karat dan jenis objek.",
+        "evaluation": "Tiga ciri karat dan dua contoh objek besi."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-040",
+      "title": "Faktor pengaratan",
+      "dskp": [
+        {
+          "code": "7.1.3",
+          "printed_page": 62,
+          "sk": "7.1 Pengaratan Bahan",
+          "sp": "Mengeksperimen untuk menentukan faktor yang menyebabkan pengaratan."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal paku besi dalam keadaan air dan udara berbeza.",
+        "exploration": "Guru sediakan set terkawal yang membezakan kehadiran air atau oksigen; rekod keadaan awal.",
+        "explanation": "Jelaskan perlunya air dan oksigen untuk pengaratan biasa.",
+        "elaboration": "Rekod perubahan sebenar selepas beberapa hari dan banding pemboleh ubah.",
+        "evaluation": "Rumusan berdasarkan data susulan dan pemboleh ubah tepat."
+      },
+      "scope_note": "Perlu beberapa hari pemerhatian sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-041",
+      "title": "Mencegah pengaratan",
+      "dskp": [
+        {
+          "code": "7.1.4",
+          "printed_page": 62,
+          "sk": "7.1 Pengaratan Bahan",
+          "sp": "Memerihalkan cara mencegah pengaratan."
+        },
+        {
+          "code": "7.1.5",
+          "printed_page": 62,
+          "sk": "7.1 Pengaratan Bahan",
+          "sp": "Menaakul kepentingan mencegah pengaratan."
+        },
+        {
+          "code": "7.1.6",
+          "printed_page": 62,
+          "sk": "7.1 Pengaratan Bahan",
+          "sp": "Menjelaskan pemerhatian tentang pengaratan bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer foto pagar bercat dan alatan bersalut minyak.",
+        "exploration": "Banding data paku bersalut dan tidak bersalut daripada ujian guru.",
+        "explanation": "Jelaskan salutan menghalang sentuhan air dan oksigen serta memanjangkan hayat alat.",
+        "elaboration": "Cadangkan kaedah sesuai untuk tiga objek; hasilkan poster.",
+        "evaluation": "Tiga kaedah atau pilihan dan dua alasan."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-042",
+      "title": "Keadaan jirim",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 63,
+          "sk": "8.1 Keadaan Jirim",
+          "sp": "Menyatakan jirim wujud dalam keadaan pepejal, cecair dan gas."
+        },
+        {
+          "code": "8.1.2",
+          "printed_page": 63,
+          "sk": "8.1 Keadaan Jirim",
+          "sp": "Mengelas bahan atau objek berdasarkan keadaan jirim."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer batu, air dan udara dalam picagari tanpa jarum.",
+        "exploration": "Kelaskan contoh berdasarkan sifat yang diperhatikan.",
+        "explanation": "Jelaskan pepejal, cecair dan gas ialah keadaan jirim.",
+        "elaboration": "Padankan sembilan contoh dan bincang bahan campuran yang sukar dikelaskan.",
+        "evaluation": "Tujuh daripada sembilan pengelasan tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-043",
+      "title": "Sifat pepejal, cecair dan gas",
+      "dskp": [
+        {
+          "code": "8.1.3",
+          "printed_page": 63,
+          "sk": "8.1 Keadaan Jirim",
+          "sp": "Mencirikan sifat pepejal, cecair dan gas dengan menjalankan aktiviti."
+        },
+        {
+          "code": "8.1.5",
+          "printed_page": 63,
+          "sk": "8.1 Keadaan Jirim",
+          "sp": "Menjelaskan pemerhatian tentang keadaan jirim melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding blok, air dalam bekas dan udara dalam beg.",
+        "exploration": "Uji bentuk, isi padu dan ruang yang dipenuhi menggunakan model selamat.",
+        "explanation": "Jelaskan semua mempunyai jisim dan memenuhi ruang; bentuk serta isi padu berbeza.",
+        "elaboration": "Lakar analogi susunan zarah dan nyatakan batasan model.",
+        "evaluation": "Jadual tiga keadaan dengan sifat utama tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-044",
+      "title": "Perubahan keadaan air",
+      "dskp": [
+        {
+          "code": "8.1.4",
+          "printed_page": 63,
+          "sk": "8.1 Keadaan Jirim",
+          "sp": "Mengitlak bahawa air boleh wujud dalam tiga keadaan jirim dengan menjalankan aktiviti."
+        },
+        {
+          "code": "8.2.1",
+          "printed_page": 64,
+          "sk": "8.2 Perubahan Keadaan Jirim Bagi Air",
+          "sp": "Memerihalkan perubahan keadaan jirim bagi air dengan menjalankan aktiviti."
+        },
+        {
+          "code": "8.2.2",
+          "printed_page": 64,
+          "sk": "8.2 Perubahan Keadaan Jirim Bagi Air",
+          "sp": "Menjelas dengan contoh perubahan keadaan jirim berlaku apabila jirim menerima atau kehilangan haba dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ais, air dan ilustrasi wap air.",
+        "exploration": "Perhatikan ais mencair dan titisan pada bekas sejuk; guru demonstrasi pendidihan dan sediakan rekod pembekuan.",
+        "explanation": "Jelaskan peleburan, pembekuan, pendidihan, penyejatan dan kondensasi dari aspek haba.",
+        "elaboration": "Padankan proses dengan anak panah keadaan jirim; bezakan wap tidak kelihatan daripada titisan kabus.",
+        "evaluation": "Lima proses dengan arah penerimaan atau kehilangan haba tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-045",
+      "title": "Awan dan hujan",
+      "dskp": [
+        {
+          "code": "8.2.3",
+          "printed_page": 64,
+          "sk": "8.2 Perubahan Keadaan Jirim Bagi Air",
+          "sp": "Menghubung kait perubahan keadaan jirim bagi air dengan pembentukan awan dan hujan."
+        },
+        {
+          "code": "8.2.4",
+          "printed_page": 64,
+          "sk": "8.2 Perubahan Keadaan Jirim Bagi Air",
+          "sp": "Menjelaskan pemerhatian tentang perubahan keadaan jirim bagi air melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjukkan titisan air pada luar bekas sejuk.",
+        "exploration": "Perhatikan kondensasi dan banding rajah kitar air.",
+        "explanation": "Jelaskan penyejatan, kondensasi wap menjadi titisan awan dan hujan.",
+        "elaboration": "Bina rajah berlabel dengan arah perpindahan air dan haba.",
+        "evaluation": "Tiga proses dijelaskan dalam rajah kitar air."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-046",
+      "title": "Cahaya Bulan",
+      "dskp": [
+        {
+          "code": "9.1.1",
+          "printed_page": 66,
+          "sk": "9.1 Fasa Bulan",
+          "sp": "Menyatakan Bulan tidak mengeluarkan cahaya tetapi memantulkan cahaya Matahari."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer bola putih tanpa sumber cahaya sendiri.",
+        "exploration": "Terangi bola dengan lampu suluh dan perhatikan dari sisi.",
+        "explanation": "Jelaskan Bulan memantulkan cahaya Matahari.",
+        "elaboration": "Lakar sumber cahaya, Bulan dan pemerhati.",
+        "evaluation": "Satu penerangan tepat dan rajah dengan anak panah cahaya."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-047",
+      "title": "Putaran dan edaran Bulan",
+      "dskp": [
+        {
+          "code": "9.1.2",
+          "printed_page": 66,
+          "sk": "9.1 Fasa Bulan",
+          "sp": "Memerihalkan Bulan berputar pada paksinya dan pada masa yang sama beredar mengelilingi Bumi dari aspek arah dan tempoh dengan menjalankan simulasi."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer model Bumi dan Bulan bertanda satu muka.",
+        "exploration": "Gerakkan Bulan mengelilingi Bumi sambil memutarnya sekali.",
+        "explanation": "Jelaskan arah dan tempoh putaran/edaran sekitar 27.3 hari relatif kepada bintang.",
+        "elaboration": "Banding model dengan perubahan kedudukan Bulan berdasarkan media.",
+        "evaluation": "Dua pergerakan dan tempoh dinyatakan tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-048",
+      "title": "Fasa Bulan dan takwim Qamari",
+      "dskp": [
+        {
+          "code": "9.1.3",
+          "printed_page": 66,
+          "sk": "9.1 Fasa Bulan",
+          "sp": "Menggunakan perhubungan ruang dan masa untuk menggambarkan fasa Bulan dalam satu edaran lengkap mengikut takwim Qamari."
+        },
+        {
+          "code": "9.1.4",
+          "printed_page": 66,
+          "sk": "9.1 Fasa Bulan",
+          "sp": "Menjelaskan pemerhatian tentang fasa bulan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer siri foto Bulan pada tarikh berlainan.",
+        "exploration": "Susun kedudukan model Matahari-Bumi-Bulan dan padankan bentuk yang kelihatan.",
+        "explanation": "Jelaskan fasa bergantung bahagian bercahaya yang kelihatan; kitar fasa kira-kira 29.5 hari.",
+        "elaboration": "Bina carta urutan fasa dan kaitkan dengan takwim Qamari.",
+        "evaluation": "Urutan fasa tepat dan beza tempoh fasa daripada edaran relatif bintang."
+      },
+      "scope_note": "Bezakan bulan sinodik dengan sideris.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-049",
+      "title": "Buruj dan kegunaannya",
+      "dskp": [
+        {
+          "code": "9.2.1",
+          "printed_page": 66,
+          "sk": "9.2 Buruj",
+          "sp": "Mengenal pasti buruj dan corak buruj."
+        },
+        {
+          "code": "9.2.2",
+          "printed_page": 66,
+          "sk": "9.2 Buruj",
+          "sp": "Menyatakan kegunaan buruj."
+        },
+        {
+          "code": "9.2.3",
+          "printed_page": 66,
+          "sk": "9.2 Buruj",
+          "sp": "Menjelaskan pemerhatian tentang buruj melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer peta bintang Belantik, Biduk, Pari dan Skorpio.",
+        "exploration": "Padankan corak titik dengan nama pada carta rujukan.",
+        "explanation": "Jelaskan buruj membantu orientasi dan penanda musim mengikut lokasi serta masa.",
+        "elaboration": "Lakar corak dan terangkan satu kegunaan; elak tafsiran astrologi.",
+        "evaluation": "Tiga corak dikenal pasti dan satu kegunaan tepat."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-050",
+      "title": "Gabungan mesin ringkas pada alat",
+      "dskp": [
+        {
+          "code": "10.1.1",
+          "printed_page": 68,
+          "sk": "10.1 Penggunaan Alat dalam Kehidupan",
+          "sp": "Menyatakan kegunaan suatu alat yang terdapat di persekitaran murid."
+        },
+        {
+          "code": "10.1.2",
+          "printed_page": 68,
+          "sk": "10.1 Penggunaan Alat dalam Kehidupan",
+          "sp": "Menerangkan kombinasi fungsi mesin ringkas pada suatu alat yang membolehkan alat tersebut berfungsi melalui pemerhatian alat sebenar."
+        },
+        {
+          "code": "10.1.3",
+          "printed_page": 68,
+          "sk": "10.1 Penggunaan Alat dalam Kehidupan",
+          "sp": "Menaakul kepentingan kombinasi mesin ringkas untuk memastikan alat itu berfungsi dengan sempurna."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kereta mainan mekanikal dan pengasah mekanikal tertutup.",
+        "exploration": "Perhatikan alat sebenar atau model leraian selamat disediakan guru.",
+        "explanation": "Jelaskan bagaimana gear, roda dan gandar atau mesin ringkas lain bekerja bersama.",
+        "elaboration": "Lakar bahagian yang boleh dikenal pasti dan terangkan fungsi gabungan.",
+        "evaluation": "Satu alat dengan dua mesin ringkas yang benar-benar dikenal pasti dan penerangan fungsi."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T5-DRAFT-051",
+      "title": "Reka bentuk alat lestari",
+      "dskp": [
+        {
+          "code": "10.1.4",
+          "printed_page": 68,
+          "sk": "10.1 Penggunaan Alat dalam Kehidupan",
+          "sp": "Menjana idea tentang kepentingan ciri penciptaan alat yang lestari."
+        },
+        {
+          "code": "10.1.5",
+          "printed_page": 68,
+          "sk": "10.1 Penggunaan Alat dalam Kehidupan",
+          "sp": "Menjelaskan pemerhatian tentang penggunaan alat dalam kehidupan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua reka bentuk alat rekaan dengan bahan berlainan.",
+        "exploration": "Nilai kad kos, jangka hayat, penyelenggaraan, keselamatan dan kesan alam sekitar.",
+        "explanation": "Jelaskan pertukaran antara ketahanan, kos dan kebolehbaikan.",
+        "elaboration": "Lakar penambahbaikan alat yang mudah diselenggara dan selamat.",
+        "evaluation": "Cadangan dengan tiga alasan berdasarkan ciri lestari."
+      },
+      "scope_note": "Agihan sesi calon; perlu pemetaan RPT dan skop pentaksiran.",
+      "ready": false
+    }
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "status": "DRAFT_DSKP_TEXT_MATCHED",
+  "subject": "MATEMATIK SK",
+  "year": 2,
+  "curriculum": "KSSR",
+  "dskp_reference": {
+    "drive_id": "1x9Oce4dz4BK46nZqtBvnsrUpl3JD8LeW",
+    "edition": "2016",
+    "verification": "Text extraction reviewed; not visual QA"
+  },
+  "policy": "20 working source records; 21 draft session candidates because record 36 contains two proposed sessions. No production lesson numbering or change to RPT. BA references are from work source, not independently verified. No release.",
+  "records": [
+    {
+      "candidate_id": "T2-WORK-021",
+      "source_work_record": 21,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Pengenalan darab",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 38,
+          "sk": "2.3 Darab dalam lingkungan 1000.",
+          "sp": "Mendarab dalam lingkungan fakta asas."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Perhatikan empat kumpulan dua pembilang; cari jumlah tanpa membilang satu-satu.",
+        "exploration": "Bina empat situasi kumpulan sama banyak dan catat penambahan berulang.",
+        "explanation": "Guru hubungkan bilangan kumpulan, bilangan setiap kumpulan dan ayat darab.",
+        "elaboration": "Padankan gambar, garis nombor dan ayat darab; banding dua susunan yang sama hasilnya.",
+        "evaluation": "Empat situasi individu: bina padanan kumpulan, penambahan berulang dan ayat darab."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-022",
+      "source_work_record": 22,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Sifir 2, 3, 4 dan 5",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 38,
+          "sk": "2.3 Darab dalam lingkungan 1000.",
+          "sp": "Mendarab dalam lingkungan fakta asas."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Tunjukkan tiga kumpulan empat pembilang; nyatakan jumlah.",
+        "exploration": "Bina sifir 2 dan 3 pada garis nombor; bina kumpulan bagi sifir 4 dan 5.",
+        "explanation": "Terangkan penambahan berulang bagi 4 × 3 dan 5 × 4 serta cara menyemak.",
+        "elaboration": "Pasangan memadankan model dan fakta darab keempat-empat sifir; latihan terpilih BA 59–62.",
+        "evaluation": "Lima soalan meliputi empat sifir; empat tepat serta perwakilan satu fakta."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-023",
+      "source_work_record": 23,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Sifir 6, 7, 8 dan 9",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 38,
+          "sk": "2.3 Darab dalam lingkungan 1000.",
+          "sp": "Mendarab dalam lingkungan fakta asas."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Cari jumlah enam kumpulan dua objek dan jelaskan strategi.",
+        "exploration": "Bina model sifir 6 dan 7 menggunakan pembilang serta lompatan.",
+        "explanation": "Banding pola jadual 8 dan 9; tunjuk hubungan kumpulan dengan hasil darab.",
+        "elaboration": "Lengkapkan jadual empat sifir, banding 4 × 9 dan 9 × 4; BA 63–65.",
+        "evaluation": "Lima ayat darab meliputi 6–9; empat tepat dengan penerangan satu pola."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-024",
+      "source_work_record": 24,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Pengukuhan fakta darab",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 38,
+          "sk": "2.3 Darab dalam lingkungan 1000.",
+          "sp": "Mendarab dalam lingkungan fakta asas."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Padankan 3 × 4 dengan 12 melalui permainan kad.",
+        "exploration": "Kumpulan padankan fakta darab dengan hasil dan bina model bagi padanan sukar.",
+        "explanation": "Guru tunjuk cara mencari faktor hilang dalam 3 × ? = 21 dengan lompatan.",
+        "elaboration": "Selesaikan kad faktor hilang dan latihan perwakilan abakus BA 66–67.",
+        "evaluation": "Sepuluh item individu; lapan tepat, termasuk semakan faktor hilang."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-025",
+      "source_work_record": 25,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Darab dengan 1, 0 dan 10",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 38,
+          "sk": "2.3 Darab dalam lingkungan 1000.",
+          "sp": "Mendarab dalam lingkungan fakta asas."
+        },
+        {
+          "code": "2.3.2",
+          "printed_page": 38,
+          "sk": "2.3 Darab dalam lingkungan 1000.",
+          "sp": "Mendarab nombor satu digit dengan 10."
+        }
+      ],
+      "scope_note": "2.3.2 khusus satu digit × 10.",
+      "phases": {
+        "engagement": "Banding satu kumpulan lima objek dengan sifar kumpulan.",
+        "exploration": "Bina model n × 1 dan n × 0, kemudian empat kumpulan sepuluh.",
+        "explanation": "Jelaskan hasil darab dengan 1 dan 0; 4 × 10 = 40 melalui penambahan berulang.",
+        "elaboration": "Padankan model darab nombor satu digit dengan 10 dan latihan BA 68–70.",
+        "evaluation": "Sepuluh item darab 1, 0, 10; lapan tepat serta satu penerangan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-026",
+      "source_work_record": 26,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Bahagi kepada kumpulan sama banyak",
+      "dskp": [
+        {
+          "code": "2.4.1",
+          "printed_page": 39,
+          "sk": "2.4 Bahagi dalam lingkungan 1000.",
+          "sp": "Membahagi dalam lingkungan fakta asas."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Agihkan 12 pembilang sama banyak kepada tiga pinggan.",
+        "exploration": "Banding perkongsian kepada tiga kumpulan dengan pengumpulan tiga objek setiap kumpulan.",
+        "explanation": "Terangkan pembahagi dan hasil bahagi; bina ayat 12 ÷ 3 = 4 dengan model yang sesuai.",
+        "elaboration": "Gunakan lompatan sama jarak pada garis nombor dan latihan BA 71–74.",
+        "evaluation": "Lima situasi perwakilan dan ayat bahagi; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-027",
+      "source_work_record": 27,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Bina fakta bahagi",
+      "dskp": [
+        {
+          "code": "2.4.1",
+          "printed_page": 39,
+          "sk": "2.4 Bahagi dalam lingkungan 1000.",
+          "sp": "Membahagi dalam lingkungan fakta asas."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Agihkan enam objek kepada tiga kumpulan; nyatakan hasil.",
+        "exploration": "Bina keluarga fakta menggunakan pembilang dan kad nombor.",
+        "explanation": "Hubungkan 4 × 5 = 20 dengan 20 ÷ 5 = 4 dan 20 ÷ 4 = 5.",
+        "elaboration": "Lengkapkan petak nombor hilang dan latihan BA 75–76; semak melalui darab.",
+        "evaluation": "Lima fakta bahagi; empat tepat serta satu semakan darab."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-028",
+      "source_work_record": 28,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Pengukuhan fakta bahagi",
+      "dskp": [
+        {
+          "code": "2.4.1",
+          "printed_page": 39,
+          "sk": "2.4 Bahagi dalam lingkungan 1000.",
+          "sp": "Membahagi dalam lingkungan fakta asas."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Agihkan 12 objek kepada tiga kumpulan dan cari fakta darab berkaitan.",
+        "exploration": "Pilih gambar kumpulan yang sepadan dengan kad bahagi.",
+        "explanation": "Terangkan strategi mendapatkan hasil bahagi daripada fakta darab.",
+        "elaboration": "Pasangan selesaikan padanan dan ayat matematik BA 77–79; tukar cara semakan.",
+        "evaluation": "Lima ayat bahagi mudah; empat tepat dengan satu penerangan hubungan darab."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-029",
+      "source_work_record": 29,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Bahagi dengan 1 dan 10; sifar sebagai nombor dibahagi",
+      "dskp": [
+        {
+          "code": "2.4.1",
+          "printed_page": 39,
+          "sk": "2.4 Bahagi dalam lingkungan 1000.",
+          "sp": "Membahagi dalam lingkungan fakta asas."
+        },
+        {
+          "code": "2.4.2",
+          "printed_page": 39,
+          "sk": "2.4 Bahagi dalam lingkungan 1000.",
+          "sp": "Membahagi sebarang nombor dua digit dengan 10."
+        }
+      ],
+      "scope_note": "2.4.2 khusus nombor dua digit ÷ 10; bukan bahagi dengan sifar.",
+      "phases": {
+        "engagement": "Banding 10 pembilang dalam satu kumpulan dan sepuluh kumpulan.",
+        "exploration": "Model 10 ÷ 1, 10 ÷ 10 dan 0 ÷ 3 menggunakan pembilang serta set kosong.",
+        "explanation": "Bezakan 0 ÷ n untuk n bukan sifar daripada n ÷ 0 yang tidak ditakrifkan.",
+        "elaboration": "Cuba nombor dua digit dibahagi 10, termasuk berbaki jika sesuai; latihan BA 80.",
+        "evaluation": "Lima soalan meliputi 1, 10 dan sifar sebagai nombor dibahagi; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-030",
+      "source_work_record": 30,
+      "source_session": null,
+      "source_drive_id": "1TxOQDKdpdxqE0mKt1zstggF8uDbweKjy",
+      "title": "Bahagi dengan baki",
+      "dskp": [
+        {
+          "code": "2.4.1",
+          "printed_page": 39,
+          "sk": "2.4 Bahagi dalam lingkungan 1000.",
+          "sp": "Membahagi dalam lingkungan fakta asas."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Kumpulkan 17 objek secara dua-dua dan kenal pasti baki.",
+        "exploration": "Teroka 14 ÷ 5 dan 35 ÷ 6 dengan kumpulan pembilang.",
+        "explanation": "Guru terangkan hasil bahagi, baki kurang daripada pembahagi dan semakan darab tambah baki.",
+        "elaboration": "Selesaikan situasi baharu dengan gambar dan latihan BA 81–82 jika skopnya sepadan.",
+        "evaluation": "Lima operasi bahagi; empat tepat serta alasan bagi satu baki."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-031",
+      "source_work_record": 31,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Reka cerita darab dan bahagi",
+      "dskp": [
+        {
+          "code": "2.5.1",
+          "printed_page": 39,
+          "sk": "2.5 Penyelesaian masalah.",
+          "sp": "Mereka cerita masalah tambah, tolak, darab dan bahagi dalam lingkungan 1000."
+        }
+      ],
+      "scope_note": "Fokus darab dan bahagi sahaja.",
+      "phases": {
+        "engagement": "Perhatikan gambar tiga meja dengan empat kerusi setiap meja; bina soalan.",
+        "exploration": "Kenal pasti bilangan kumpulan dan objek setiap kumpulan dalam cerita bergambar.",
+        "explanation": "Guru tunjuk bagaimana situasi perkongsian atau kumpulan menentukan operasi.",
+        "elaboration": "Pasangan reka cerita untuk 6 × 4 = 24 dan 27 ÷ 3 = 9; latihan BA 83–84.",
+        "evaluation": "Dua cerita lengkap dengan kuantiti, soalan dan ayat matematik sepadan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-032",
+      "source_work_record": 32,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Masalah harian darab dan bahagi",
+      "dskp": [
+        {
+          "code": "2.5.2",
+          "printed_page": 39,
+          "sk": "2.5 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah tambah, tolak, darab dan bahagi yang melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "Fokus darab dan bahagi sahaja.",
+      "phases": {
+        "engagement": "Ramal jumlah penumpang bagi sembilan van, lapan setiap van.",
+        "exploration": "Kenal pasti maklumat dan kehendak soalan pada kad situasi.",
+        "explanation": "Model faham, rancang, kira dan semak; jelaskan maksud baki mengikut konteks.",
+        "elaboration": "Selesaikan masalah perkongsian dan pengumpulan daripada BA 85–86; semak unit.",
+        "evaluation": "Empat masalah individu; tiga tepat dengan operasi, langkah dan unit."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-033",
+      "source_work_record": 33,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Kenali pecahan wajar",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 42,
+          "sk": "3.1 Pecahan wajar.",
+          "sp": "Mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10."
+        },
+        {
+          "code": "3.1.2",
+          "printed_page": 42,
+          "sk": "3.1 Pecahan wajar.",
+          "sp": "Menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Lipat satu bentuk kepada dua bahagian sama besar; lorek satu bahagian.",
+        "exploration": "Teroka satu perdua, satu perempat, satu perlima dan satu perlapan; kemudian lorek lebih daripada satu bahagian.",
+        "explanation": "Bezakan pengangka dan penyebut; namakan pecahan pengangka 1 serta pengangka hingga 9.",
+        "elaboration": "Padankan nama pecahan dengan model satu objek; latihan BA 89–90.",
+        "evaluation": "Lima item, meliputi pengangka 1 dan lebih daripada 1; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-034",
+      "source_work_record": 34,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Wakil dan tulis pecahan",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 42,
+          "sk": "3.1 Pecahan wajar.",
+          "sp": "Mewakilkan gambar rajah mengikut pecahan yang diberi."
+        },
+        {
+          "code": "3.1.4",
+          "printed_page": 42,
+          "sk": "3.1 Pecahan wajar.",
+          "sp": "Menulis pecahan wajar yang diberi."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Pamer tiga daripada empat bahagian berlorek; murid sebut pecahan.",
+        "exploration": "Murid melukis dan melorek rajah berdasarkan kad pecahan diberi.",
+        "explanation": "Guru terangkan kedudukan pengangka dan penyebut serta nama pecahan.",
+        "elaboration": "Tukar kad rajah dengan pasangan dan tulis pecahan dalam angka/perkataan; BA 91–92.",
+        "evaluation": "Lima item mewakil dan menulis pecahan; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-035",
+      "source_work_record": 35,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Banding pecahan wajar",
+      "dskp": [
+        {
+          "code": "3.1.5",
+          "printed_page": 42,
+          "sk": "3.1 Pecahan wajar.",
+          "sp": "Membanding nilai dua pecahan wajar yang diberi."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Banding dua jalur sama panjang dengan bahagian berlorek berlainan.",
+        "exploration": "Teroka pasangan pecahan menggunakan lipatan kertas atau jalur sama saiz.",
+        "explanation": "Terangkan mengapa keseluruhan mesti sama saiz sebelum membanding kawasan berlorek.",
+        "elaboration": "Susun kad pasangan mengikut nilai lebih besar atau kecil; BA 93.",
+        "evaluation": "Lima perbandingan visual; empat tepat dengan alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-036A",
+      "source_work_record": 36,
+      "source_session": "A",
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Tukar pecahan persepuluh kepada perpuluhan",
+      "dskp": [
+        {
+          "code": "3.2.1",
+          "printed_page": 42,
+          "sk": "3.2 Perpuluhan.",
+          "sp": "Menukar pecahan persepuluh kepada perpuluhan."
+        }
+      ],
+      "scope_note": "Calon sesi A dalam rekod kerja 36; sempadan belum sah.",
+      "phases": {
+        "engagement": "Kira tiga petak berlorek daripada jalur sepuluh petak.",
+        "exploration": "Padankan beberapa jalur persepuluh dengan pecahan sepadan.",
+        "explanation": "Guru jelaskan 3/10 = 0.3 dan hubungan persepuluh dengan satu tempat perpuluhan.",
+        "elaboration": "Padankan kad pecahan, model dan perpuluhan; latihan BA 94–95.",
+        "evaluation": "Lima padanan pecahan-perpuluhan; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-036B",
+      "source_work_record": 36,
+      "source_session": "B",
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Perwakilan perpuluhan",
+      "dskp": [
+        {
+          "code": "3.2.2",
+          "printed_page": 42,
+          "sk": "3.2 Perpuluhan.",
+          "sp": "Menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan."
+        },
+        {
+          "code": "3.2.3",
+          "printed_page": 42,
+          "sk": "3.2 Perpuluhan.",
+          "sp": "Menunjuk nombor perpuluhan 0.1 hingga 0.9."
+        },
+        {
+          "code": "3.2.4",
+          "printed_page": 42,
+          "sk": "3.2 Perpuluhan.",
+          "sp": "Mewakilkan gambar rajah mengikut perpuluhan diberi."
+        },
+        {
+          "code": "3.2.5",
+          "printed_page": 42,
+          "sk": "3.2 Perpuluhan.",
+          "sp": "Menulis perpuluhan yang diberi."
+        }
+      ],
+      "scope_note": "Calon sesi B dalam rekod kerja 36; bukan tambahan PdP rasmi.",
+      "phases": {
+        "engagement": "Tunjukkan tiga daripada sepuluh petak; sebut sifar perpuluhan tiga.",
+        "exploration": "Bina model 0.2 dan 0.8; tunjuk nilai pada garis nombor.",
+        "explanation": "Guru jelaskan sebutan, kedudukan titik perpuluhan dan perwakilan bahagian sama besar.",
+        "elaboration": "Pilih dan lorek grid bagi 0.3, 0.4, 0.5, 0.6, 0.7 dan 0.9; BA 96.",
+        "evaluation": "Lima item sebut, tunjuk, wakil dan tulis perpuluhan; empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-037",
+      "source_work_record": 37,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Banding perpuluhan",
+      "dskp": [
+        {
+          "code": "3.2.6",
+          "printed_page": 42,
+          "sk": "3.2 Perpuluhan.",
+          "sp": "Membanding nilai dua perpuluhan yang diberi."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Banding 0.3 dan 0.2 menggunakan dua grid sama saiz.",
+        "exploration": "Susun kad 0.1 hingga 0.9 pada garis nombor.",
+        "explanation": "Terangkan bahawa nilai lebih besar berada lebih jauh ke kanan pada garis nombor.",
+        "elaboration": "Banding pasangan 0.1/0.4, 0.5/0.7 dan 0.6/0.8; BA 97.",
+        "evaluation": "Lima pasangan baharu; empat tepat dengan satu alasan visual."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-038",
+      "source_work_record": 38,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Banding pecahan dan perpuluhan",
+      "dskp": [
+        {
+          "code": "3.3.1",
+          "printed_page": 43,
+          "sk": "3.3 Pecahan dan Perpuluhan.",
+          "sp": "Membanding nilai pecahan dan nilai perpuluhan yang diberi."
+        }
+      ],
+      "scope_note": "Fokus tajuk sahaja; sahkan RPT dan sumber runtime.",
+      "phases": {
+        "engagement": "Banding 5/10 dengan 0.5 menggunakan model sama.",
+        "exploration": "Padankan kad pecahan persepuluh dengan perpuluhan setaranya.",
+        "explanation": "Tunjukkan kedua-dua bentuk pada garis nombor dan jelaskan nilai sama.",
+        "elaboration": "Banding 5/10 dengan 0.2 dan 4/10 dengan 0.6; BA 98.",
+        "evaluation": "Lima pasangan pecahan-perpuluhan; empat tepat serta alasan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-039",
+      "source_work_record": 39,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Masalah pecahan dan perpuluhan",
+      "dskp": [
+        {
+          "code": "3.4.1",
+          "printed_page": 43,
+          "sk": "3.4 Penyelesaian masalah.",
+          "sp": "Menyelesaikan masalah yang melibatkan situasi harian."
+        }
+      ],
+      "scope_note": "BA 101–102 susulan, bukan PdP tambahan.",
+      "phases": {
+        "engagement": "Lipat kertas kepada empat bahagian dan lorek tiga.",
+        "exploration": "Model masalah bahagian pai dimakan dan bahagian berlorek dengan rajah.",
+        "explanation": "Guru jelaskan pemilihan pecahan atau perpuluhan dan cara menyemak nilai.",
+        "elaboration": "Selesaikan masalah kertas lipat, pai dan perbandingan pada BA 99–100.",
+        "evaluation": "Empat masalah kontekstual; tiga tepat dengan model atau penerangan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "T2-WORK-040",
+      "source_work_record": 40,
+      "source_session": null,
+      "source_drive_id": "1peS1S8APQqkzaDCnrYLlEkQ9ttxGdg7c",
+      "title": "Kenali mata wang",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 46,
+          "sk": "4.1 Wang kertas dan duit syiling.",
+          "sp": "Mengenal pasti mata wang Malaysia hingga RM100."
+        }
+      ],
+      "scope_note": "Fokus pengenalan denominasi, bukan nilai gabungan wang.",
+      "phases": {
+        "engagement": "Teka nilai wang kertas RM20, RM50 dan RM100 daripada gambar.",
+        "exploration": "Banding nilai bercetak dan ciri visual pada gambar muka hadapan dan belakang.",
+        "explanation": "Guru jelaskan cara mengenal pasti denominasi melalui nilai tercetak, bukan warna semata-mata.",
+        "elaboration": "Padankan muka hadapan dan belakang serta sebut nilai; BA 103.",
+        "evaluation": "Tiga padanan tepat dan dua ciri visual dinyatakan."
+      },
+      "ready": false
+    }
+  ]
+}
