@@ -11,6 +11,8 @@ on:
       - 'tools/audit_science_5p_native_pdf_20261128.py'
       - 'web/science_5p_candidate_web.py'
       - 'tests/test_science_5p_candidate_web.py'
+      - 'tests/test_science_5p_candidate_ui.cjs'
+      - 'web_v1_static_preview/index.html'
       - 'web/rph_delivery_quota.py'
       - 'web/rph_5p_v5_layout.py'
       - 'audits/rph_5p_science_y*_native_*_20261128.json'
@@ -84,3 +86,5 @@ jobs:
         run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_web_integration_qa_20261128.py -v
       - name: Signed-session candidate route and catalogue drift tests
         run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_candidate_web.py -v
+      - name: Candidate browser selection and download regression
+        run: node tests/test_science_5p_candidate_ui.cjs
