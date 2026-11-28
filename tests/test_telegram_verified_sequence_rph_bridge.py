@@ -122,5 +122,32 @@ class NativeMathScienceTests(unittest.TestCase):
             self.assertNotIn("textbook_ref", lessons.json["items"][1])
 
 
+    def test_worksheet_identity_is_read_only_and_exact(self):
+        app=Flask(__name__)
+        app.register_blueprint(create_native_sequence_rph_blueprint(self.runtime))
+        client=app.test_client()
+        url="/internal/rph/v1/sequence/worksheet-identity"
+        args={"year":"2","subject":"MATH","unit":self.unit,"lesson":"M2-PDP-007"}
+        with patch.dict(os.environ,{"CIKGULAJU_WEB_NATIVE_RPH_ENABLED":"1",
+                                   "CIKGULAJU_AUTHORITATIVE_API_TOKEN":"x"*40}):
+            headers={"Authorization":"Bearer "+"x"*40}
+            self.assertEqual(client.get(url,query_string=args).status_code,401)
+            response=client.get(url,query_string=args,headers=headers)
+            self.assertEqual(response.status_code,200)
+            self.assertEqual(response.json["token"],args["lesson"])
+            self.assertEqual(response.json["topic"],"Tambah dengan mengumpul semula")
+            self.assertEqual(response.json["standards"],[
+                {"sk":"2.1","sp":"2.1.1"},{"sk":"2.1","sp":"2.1.2"}])
+            for bad in ({"lesson":"M2-PDP-999"},{"unit":"u"+"0"*24},{"year":"3"},{"subject":"SCIENCE"}):
+                self.assertEqual(client.get(url,query_string={**args,**bad},headers=headers).status_code,404)
+            invalid=rows()
+            invalid[1]["pdp_title"]="Other topic"
+            self.runtime._sm2542_rows.return_value=invalid
+            self.assertEqual(client.get(url,query_string=args,headers=headers).status_code,404)
+            self.runtime._local_rph_text.assert_not_called()
+            self.runtime.create_pdf_file.assert_not_called()
+            self.runtime.create_word_file.assert_not_called()
+
+
 if __name__=="__main__":
     unittest.main()
