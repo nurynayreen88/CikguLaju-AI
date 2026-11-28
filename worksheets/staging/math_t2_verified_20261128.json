@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "scope": "KSSR SK",
+  "subject": "MATH",
+  "year": 2,
+  "status": "PDF_QA_PASSED_ASSETS_VERIFIED_RUNTIME_IDENTITY_PENDING",
+  "records": [
+    {
+      "title": "Nilai Tempat dan Nilai Digit",
+      "theme": "Nombor hingga 1 000",
+      "sk": "1.4",
+      "sp": "1.4.1",
+      "dskp": {
+        "drive_id": "1x9Oce4dz4BK46nZqtBvnsrUpl3JD8LeW",
+        "printed_page": 34,
+        "text": "Menyatakan nilai tempat dan nilai digit bagi sebarang nombor."
+      },
+      "book_reference": "Buku Aktiviti Matematik Tahun 2, hlm. 7–9; Buku Teks Jilid 1, hlm. 13–15 (seperti skema asal; semakan halaman sumber belum disahkan)",
+      "runtime_unit": null,
+      "runtime_lesson": null,
+      "student": {
+        "drive_file_id": "1fV1YwihTLL9s4lGwcEGrkDYf9lb4oq6y",
+        "sha256": "c6ee5ae2c840cb3158ac150b669810d7f4092ad9ddd5300c856d65ea78e48146",
+        "size_bytes": 75960,
+        "pages": 2
+      },
+      "teacher_key": {
+        "drive_file_id": "1X5fLwbqXBP9wq6m3r6n4_NkUsReejjvK",
+        "sha256": "0514ac1be9e752637a1ebb2d0749af92949b23962e4a193f8bb5991e6f92595d",
+        "size_bytes": 37230,
+        "pages": 1
+      },
+      "qa": {
+        "visual_pages_reviewed": 3,
+        "questions_checked": 11,
+        "answer_key_match": true,
+        "storage_integrity_verified": true,
+        "web_download_verified": false
+      },
+      "release_gate": "Require authoritative native runtime unit/token and title/SP match, protected Web download route with separate murid and skema links, then live download verification. Do not infer runtime token from RPT ordinal or publish on SP alone."
+    }
+  ]
+}
