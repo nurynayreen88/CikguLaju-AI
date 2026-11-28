@@ -17,7 +17,7 @@ import fitz
 from fontTools.ttLib import TTFont
 import fontTools
 
-VERSION = "1.0.0-draft"
+VERSION = "1.0.1-draft"
 EXPECTED_REF = "Tukar Pecahan dan Nombor Bercampur"
 WHITE = (1, 1, 1)
 NAVY = (0.13, 0.21, 0.32)
@@ -138,9 +138,7 @@ class Template:
         }
         if expected and expected != snapshot:
             fail("Design lock mismatch. Do not silently change PDF, fonts, code, dimensions or library versions.")
-        if init_lock:
-            lockfile.parent.mkdir(parents=True, exist_ok=True)
-            lockfile.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+        self.pending_lock = (lockfile, snapshot) if init_lock else None
         self.names = {n: f"CLFont{i}" for i,n in enumerate(sorted(self.paths))}
         self.fonts = {n: fitz.Font(fontfile=str(p)) for n,p in self.paths.items()}
         self.templates = {}
@@ -235,7 +233,21 @@ class Template:
                 x, align = r.x0, "left"
                 maxw = self.w*(.64 if k=="theme" else .87)
             self.text(page,x,s["baseline"],values[k],s,align=align,maxwidth=maxw)
+        if key:
+            # The reference footer names the student worksheet, not the answer key.
+            footer = fitz.Rect(0, self.h*.977, self.w*.7, self.h)
+            page.draw_rect(footer, color=None, fill=WHITE, overlay=True)
+            self.text(page,self.w*.064,self.h*.989,"CIKGULAJU / SKEMA JAWAPAN",
+                      style="body",size=8,color=BROWN,maxwidth=self.w*.60)
         return page
+
+    def save_pending_lock(self):
+        if self.pending_lock:
+            path, snapshot = self.pending_lock
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with path.open("x", encoding="utf-8") as f:
+                json.dump(snapshot, f, ensure_ascii=False, indent=2)
+                f.write("\n")
 
 
 def require_keys(obj, required, allowed, where):
@@ -290,7 +302,7 @@ def validate(data):
                 for it in b["items"]:
                     require_keys(it,["id"],ITEM_KEYS,"question")
                     k = it["id"]
-                    if not isinstance(k,str) or not k or k in ids:
+                    if not isinstance(k,str) or not re.fullmatch(r"[1-9][0-9]{0,2}[a-z]?",k) or k in ids:
                         fail("Question IDs must be unique per worksheet.")
                     ids.add(k)
                     sig = json.dumps({a:v for a,v in it.items() if a!="id"},sort_keys=True,ensure_ascii=False)
@@ -300,8 +312,12 @@ def validate(data):
                     if kind=="vertical":
                         if it.get("op") not in ("+","−","×") or not isinstance(it.get("terms"),list) or not 2<=len(it["terms"])<=3:
                             fail("Vertical requires 2–3 terms and +, − or ×.")
+                        if any(not isinstance(v,str) or not re.fullmatch(r"(?:RM)?[0-9][0-9 ]*(?:\.[0-9]{1,3})?",v) for v in it["terms"]):
+                            fail("Vertical terms must be numeric strings, optional RM, up to 3 decimal places.")
+                        if it["op"]=="×" and len(it["terms"])!=2:
+                            fail("Vertical multiplication requires exactly two terms.")
                     elif kind=="division":
-                        if not isinstance(it.get("divisor"),int) or not 1<=it["divisor"]<=99 or not it.get("dividend"):
+                        if type(it.get("divisor")) is not int or not 1<=it["divisor"]<=99 or not isinstance(it.get("dividend"),str) or not re.fullmatch(r"(?:RM)?[0-9][0-9 ]*(?:\.[0-9]{1,3})?",it["dividend"]):
                             fail("Invalid long division.")
                     elif kind=="clock":
                         if type(it.get("hour")) is not int or not 1<=it["hour"]<=12 or type(it.get("minute")) is not int or not 0<=it["minute"]<=59:
@@ -321,7 +337,7 @@ def validate(data):
                     else:
                         if not isinstance(it.get("text"),str) or not it["text"].strip():
                             fail("Question text is required.")
-                        if kind=="choice" and (not isinstance(it.get("options"),list) or not 2<=len(it["options"])<=4):
+                        if kind=="choice" and (not isinstance(it.get("options"),list) or not 2<=len(it["options"])<=4 or any(not isinstance(v,str) or not v.strip() for v in it["options"]) or len(set(it["options"]))!=len(it["options"])):
                             fail("Choice needs 2–4 options.")
         if len(kinds)<2:
             fail("Use at least two genuinely different question layouts per worksheet.")
@@ -394,9 +410,15 @@ class Worksheet:
                 self.text(x+12,y+22,it["id"]+".",style="section",color=BROWN,maxwidth=40)
                 if kind=="vertical":
                     terms=it["terms"]
+                    style = self.t.styles["bold"]
+                    # Align all decimal points for addition/subtraction; not the
+                    # final glyph when the number of fractional digits differs.
+                    suffix_widths = [self.t.width("."+v.split(".",1)[1],style,17) if "." in v else 0 for v in terms]
+                    anchor = x+cw-24-max(suffix_widths)
                     for k,v in enumerate(terms):
                         yy=y+44+k*23
-                        self.text(x+cw-24,yy,v,style="bold",size=17,align="right",maxwidth=cw-55)
+                        right = x+cw-24 if it["op"]=="×" else anchor+suffix_widths[k]
+                        self.text(right,yy,v,style="bold",size=17,align="right",maxwidth=right-x-44)
                         if k:
                             self.text(x+22,yy,it["op"],style="bold",size=16)
                     self.line(x+22,y+44+(len(terms)-1)*23+9,x+cw-22)
@@ -407,6 +429,8 @@ class Worksheet:
                     self.p.draw_line((x+42,y+35),(x+42,y+61),color=NAVY,width=.9)
                 elif kind=="work":
                     end=self.t.wrap(self.p,x+40,y+22,it["text"],cw-54,max_lines=4)
+                    if end+38 > y+height-16:
+                        fail("Work box leaves insufficient calculation space.")
                     self.text(x+12,end+10,"Kira:",style="body",size=10,color=BROWN)
                     self.line(x+14,y+height-16,x+cw-14)
                 else:
@@ -450,9 +474,10 @@ class Worksheet:
         y=self.reserve(self.h*.063*len(items))
         for i,it in enumerate(items):
             yy=y+i*self.h*.063
-            self.text(self.x,yy+20,it["id"]+". "+it["left"],maxwidth=self.width*.44)
-            self.line(self.x+self.width*.45,yy+23,self.x+self.width*.54)
-            self.text(self.x+self.width*.60,yy+20,it["right"],maxwidth=self.width*.39)
+            self.text(self.x,yy+20,it["id"]+". "+it["left"],maxwidth=self.width*.43)
+            self.p.draw_circle((self.x+self.width*.45,yy+16),2,color=NAVY,fill=NAVY)
+            self.p.draw_circle((self.x+self.width*.57,yy+16),2,color=NAVY,fill=NAVY)
+            self.text(self.x+self.width*.60,yy+20,f"{chr(65+i)}. {it['right']}",maxwidth=self.width*.39)
 
     def single(self,kind,it):
         if kind=="timeline":
@@ -463,11 +488,16 @@ class Worksheet:
             a,b=self.x+55,self.right-55
             yy=y+48
             self.line(a,yy,b)
-            for fraction in (0, .25, .5, .75, 1):
-                xx=a+(b-a)*fraction
+            # Label real hourly boundaries; do not suggest unequal time gaps
+            # with equally spaced arbitrary ticks.
+            ticks = [(start, it["start"]), (start+dur, it["end"])]
+            for absolute in range(((start//60)+1)*60,start+dur,60):
+                if min(absolute-start,start+dur-absolute)>=20 and dur<=360:
+                    ticks.append((absolute,f"{(absolute//60)%24:02d}:00"))
+            for absolute,label in sorted(ticks):
+                xx=a+(b-a)*(absolute-start)/dur
                 self.p.draw_line((xx,yy-5),(xx,yy+5),color=NAVY,width=.8)
-            self.text(a,yy-12,it["start"],align="center",size=11)
-            self.text(b,yy-12,it["end"],align="center",size=11)
+                self.text(xx,yy-12,label,align="center",size=10)
             self.text(a,yy+28,"Tempoh:",size=11)
             self.line(a+65,yy+30,b)
             return
@@ -476,8 +506,12 @@ class Worksheet:
         end=self.t.wrap(self.p,self.x,y+16,it["id"]+". "+it["text"],self.width,max_lines=3)
         if kind=="choice":
             options="     ".join(f"{chr(65+j)}. {v}" for j,v in enumerate(it["options"]))
-            self.t.wrap(self.p,self.x+18,end+8,options,self.width-18,max_lines=2,size=11)
+            bottom=self.t.wrap(self.p,self.x+18,end+8,options,self.width-18,max_lines=2,size=11)
+            if bottom>y+height:
+                fail("Choice options exceed reserved space.")
         elif kind=="problem":
+            if end+38>y+height-15:
+                fail("Problem leaves insufficient calculation space.")
             self.text(self.x+12,end+11,"Kira:",size=10,color=BROWN)
             self.line(self.x+10,y+height-15,self.right-10)
         elif "____" not in it["text"]:
@@ -560,6 +594,7 @@ def main():
     try:
         t=Template(a.reference,dirs,a.lock,a.init_lock)
         render(t,json.loads(a.input.read_text(encoding="utf-8")),a.output)
+        t.save_pending_lock()
     except Exception as exc:
         print(f"ERROR: {exc}",file=sys.stderr)
         return 1
