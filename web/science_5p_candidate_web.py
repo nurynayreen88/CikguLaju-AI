@@ -63,7 +63,7 @@ def verified_selection(year, unit, lesson, rows):
 def create_blueprint():
     bp = Blueprint("science_5p_candidate",__name__)
     def error(status,code):
-        return jsonify(error=code),status
+        return jsonify(error=code,code=code),status
     @bp.after_request
     def private(resp):
         resp.headers["Cache-Control"]="no-store, private"
