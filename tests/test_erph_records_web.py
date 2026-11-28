@@ -240,3 +240,15 @@ class ErphTests(unittest.TestCase):
         self.assertNotIn('rph_format',fields)
         with self.assertRaisesRegex(ValueError,'satu rekod'):
             extract_docx(render([row,row],'word'))
+
+    def test_download_handoff_uses_current_offer_and_allowlisted_fields(self):
+        from pathlib import Path
+        html=(Path(__file__).resolve().parents[1]/'web_v1_static_preview'/'index.html').read_text(encoding='utf-8')
+        handoff=html.split('function offerErphDownloadedWord(',1)[1].split('function resetMaterials()',1)[0]
+        self.assertIn('btn.isConnected',handoff)
+        self.assertIn('if(!active())return;',handoff)
+        self.assertIn('if(btn.disabled||!active())return;',handoff)
+        self.assertIn('JSON.stringify({...snapshot,...content,status:"draft"})',handoff)
+        self.assertNotIn('...j.fields',handoff)
+        self.assertIn('target.action="/erph/import-preview"',handoff)
+        self.assertNotIn('/api/erph/records',handoff)
