@@ -1,12 +1,12 @@
 {
-  "status": "INITIAL_CONTENT_REVIEW_ONLY",
+  "status": "APPROVED_FOR_PHASED_RELEASE_SEMAKAN_PELAKSANAAN",
   "source_version": "92e709bbedf075c3504ce1a47cfdfc2d0bdbf78c",
   "source_blob": "da4baead5f0e2f95f62b9e65e931a6d7baefba22",
   "companion_blob": "923af477036ccb9c0e815ad1b563981a4356c87c",
   "total": 24,
   "corrected_proposals": 17,
-  "policy": "Do not activate global 353-lesson switch; release only after corrected render tests, exact DK reference verification and individual release gate. Preserve RPT, original RPH and entitlement.",
-  "limitations": "Source is penataran-based SEMAKAN PELAKSANAAN; no independent DK page review in this pass. Proposed phase changes not yet wired to renderer. No live authenticated test or academic final approval.",
+  "policy": "Release only these 24 approved records after deployment; global flag and per-lesson gate both required. Preserve existing RPH, RPT, and entitlements.",
+  "limitations": "Internal publication under SEMAKAN PELAKSANAAN, no final KPM endorsement, actual logged-in production download not yet verified.",
   "records": [
     {
       "group": "A",
@@ -31,8 +31,8 @@
         "evaluation": "Murid memadankan lima bunyi secara individu; sekurang-kurangnya empat padanan betul."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -57,8 +57,8 @@
         "evaluation": "Secara individu, murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -83,8 +83,8 @@
         "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
       },
       "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -109,8 +109,8 @@
         "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
       },
       "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -135,8 +135,8 @@
         "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -161,8 +161,8 @@
         "evaluation": "Secara individu, murid menyebut dua abjad dan dua bunyi suku kata; sekurang-kurangnya tiga daripada empat sebutan betul."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -187,8 +187,8 @@
         "evaluation": "Murid memadankan lima bunyi kepada sumbernya secara individu; sekurang-kurangnya empat padanan tepat."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -213,8 +213,8 @@
         "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -239,8 +239,8 @@
         "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima kad yang ditunjukkan."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -265,8 +265,8 @@
         "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas secara individu."
       },
       "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -291,8 +291,8 @@
         "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -317,8 +317,8 @@
         "evaluation": "Secara individu, murid menyebut dua abjad dan dua bunyi suku kata; sekurang-kurangnya tiga daripada empat sebutan betul."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -343,8 +343,8 @@
         "evaluation": "Murid memadankan lima bunyi secara individu; sekurang-kurangnya empat padanan betul."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -369,8 +369,8 @@
         "evaluation": "Secara individu, murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -395,8 +395,8 @@
         "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
       },
       "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -421,8 +421,8 @@
         "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
       },
       "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -447,8 +447,8 @@
         "evaluation": "Murid memadankan lima bunyi kepada sumbernya secara individu; sekurang-kurangnya empat padanan tepat."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -473,8 +473,8 @@
         "evaluation": "Murid mengajuk sekurang-kurangnya tiga bunyi persekitaran yang dapat dikenal pasti."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -499,8 +499,8 @@
         "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima kad yang ditunjukkan."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -525,8 +525,8 @@
         "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas secara individu."
       },
       "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -551,8 +551,8 @@
         "evaluation": "Murid membaca sekurang-kurangnya tiga daripada empat suku kata atau perkataan dengan tepat."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -577,8 +577,8 @@
         "evaluation": "Secara individu, murid menyebut dua abjad dan dua bunyi suku kata; sekurang-kurangnya tiga daripada empat sebutan betul."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -603,8 +603,8 @@
         "evaluation": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat bunyi huruf atau suku kata yang diperdengarkan."
       },
       "review_findings": "Phases and criterion consistent with pinned source in initial content review.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -629,8 +629,26 @@
         "evaluation": "Secara individu, murid menyebut dua abjad dan dua bunyi suku kata; sekurang-kurangnya tiga daripada empat sebutan betul."
       },
       "review_findings": "Clarify song/game modality or individual assessment scope while retaining source criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     }
-  ]
+  ],
+  "approval_scope": "Internal CikguLaju content and layout approval for A/B PdP 1–12 only; not official KPM endorsement. Deployment and authenticated production delivery still pending.",
+  "evidence": {
+    "tested_head": "bccdb76cdcc6568eb5ee8fc9200f42492d612567",
+    "print_run": 46114856086,
+    "print_artifact": 15250468832,
+    "print_passed": 96,
+    "print_failures": 0,
+    "source_review": "DK BPK 2026 pp.22,30,38,44; see PR 1577 recorded cross-check",
+    "visual_review": "18 actual rendered sample pages across native PDF and Word conversion; complete tables, no visible clipping, native PDF is more compact. Visual sampling, not all 96 pages manually inspected.",
+    "technical_runs": [
+      46114486393,
+      46114486314,
+      46114486329,
+      46114486372,
+      46114486394
+    ],
+    "live_authenticated": false
+  }
 }
