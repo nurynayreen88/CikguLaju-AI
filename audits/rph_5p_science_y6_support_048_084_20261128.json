@@ -1,0 +1,420 @@
+{
+  "year": 6,
+  "status": "PROPOSED_ADDITIONS_NOT_SOURCE_FIELDS",
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y6_native_048_084_20261128.json",
+      "blob": "ec186f9e30d8b494b9202867517d32aae223c0ee"
+    }
+  ],
+  "policy": "New pedagogical suggestions based on exact source-adapted draft activities, not original source fields or academic approval. No runtime integration or release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-048",
+      "title": "Menjelaskan dengan contoh ciri makanan yang telah rosak.",
+      "pak21": "Pengelasan kad berpasangan",
+      "emk": "Nilai murni: kebersihan makanan",
+      "pemulihan": "Padankan foto makanan rosak dengan pilihan tanda perubahan warna, tekstur dan kulat.",
+      "pengayaan": "Terangkan empat tanda kerosakan dan sebab rupa sahaja tidak menjamin keselamatan makanan; gunakan foto sahaja.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-049",
+      "title": "Menyatakan bahawa kerosakan makanan disebabkan oleh tindakan mikroorganisma.",
+      "pak21": "Susun kad kolaboratif",
+      "emk": "Sains dan teknologi: pertumbuhan mikroorganisma",
+      "pemulihan": "Susun dua foto makanan mengikut tarikh dengan bantuan label masa.",
+      "pengayaan": "Bandingkan dua siri foto dan jelaskan kaitan perubahan dengan mikroorganisma berdasarkan bukti yang diberi.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-050",
+      "title": "Menjelaskan pemerhatian tentang kerosakan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan poster",
+      "emk": "Kreativiti dan inovasi: lakaran pemerhatian",
+      "pemulihan": "Beri lakaran dua tahap makanan dengan ruang label perubahan.",
+      "pengayaan": "Terangkan tiga perubahan dan cadangkan penyimpanan sesuai berpandukan maklumat guru.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-051",
+      "title": "Memerihalkan tujuan pengawetan makanan.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: pengawetan makanan",
+      "pemulihan": "Padankan dua kad kaedah dengan tujuan melambatkan kerosakan.",
+      "pengayaan": "Bandingkan dua contoh pengawetan dan terangkan kaitannya dengan mikroorganisma serta jangka hayat.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-052",
+      "title": "Menghubungkait kaedah pengawetan makanan dengan faktor yang mempengaruhi pertumbuhan mikroorganisma.",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Sains dan teknologi: faktor pertumbuhan mikroorganisma",
+      "pemulihan": "Beri jadual padanan kaedah dengan pilihan faktor air, suhu dan keasidan.",
+      "pengayaan": "Jelaskan empat padanan kaedah-faktor dan bezakan bagaimana faktor tersebut dikawal.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-053",
+      "title": "Menjalankan projek pengawetan sejenis makanan dengan pelbagai kaedah.",
+      "pak21": "Pembelajaran berasaskan projek",
+      "emk": "Nilai murni: ketelitian dan keselamatan",
+      "pemulihan": "Beri log berlabel bagi dua sampel buah dengan ruang catatan awal dan tarikh.",
+      "pengayaan": "Rancang perbandingan rekod susulan sebenar bagi dua kaedah; nyatakan batas dapatan dan jangan makan sampel.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-054",
+      "title": "Merumuskan terdapat makanan yang boleh diawet lebih daripada satu kaedah pengawetan.",
+      "pak21": "Perbincangan pasangan",
+      "emk": "Sains dan teknologi: kepelbagaian kaedah pengawetan",
+      "pemulihan": "Padankan tiga gambar makanan dengan pilihan kaedah daripada kad sumber.",
+      "pengayaan": "Bandingkan dua kaedah bagi setiap makanan berdasarkan rekod sumber tanpa membuat jaminan keselamatan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-055",
+      "title": "Mengitlak terdapat makanan boleh diawet dengan menggabungkan lebih daripada satu kaedah pengawetan.",
+      "pak21": "Susun kad berpasangan",
+      "emk": "Sains dan teknologi: gabungan kaedah pengawetan",
+      "pemulihan": "Susun dua kad kaedah bagi satu contoh pengawetan yang disediakan.",
+      "pengayaan": "Huraikan bagaimana dua kaedah saling melengkapi dalam mengawal faktor pertumbuhan mikroorganisma.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-056",
+      "title": "Memerihalkan kepentingan teknologi pengawetan makanan bagi memenuhi keperluan bekalan makanan.",
+      "pak21": "Penyelesaian masalah kumpulan",
+      "emk": "Kelestarian alam sekitar: pengurangan pembaziran makanan",
+      "pemulihan": "Padankan tiga kad masalah bekalan dengan pilihan manfaat pengawetan.",
+      "pengayaan": "Cadangkan strategi bekalan pedalaman berdasarkan data kad dan pertahankan pilihan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-057",
+      "title": "Menjelaskan pemerhatian tentang pengawetan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan carta alir",
+      "emk": "Kreativiti dan inovasi: komunikasi proses",
+      "pemulihan": "Lengkapkan carta enam kotak menggunakan foto serta label faktor pilihan.",
+      "pengayaan": "Terangkan dua kesan pengawetan terhadap kerosakan dan pembaziran dengan bukti carta.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-058",
+      "title": "Mengenal pasti bahan buangan berdasarkan jenis bahan.",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Kelestarian alam sekitar: jenis bahan buangan",
+      "pemulihan": "Padankan enam foto buangan dengan label jenis bahan berpandu.",
+      "pengayaan": "Kenal pasti bahan dominan dalam kad bahan komposit dan jelaskan batas pengelasan tanpa menyentuh sisa.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-059",
+      "title": "Menyatakan maksud bahan buangan terbiodegradasi dan tidak terbiodegradasi.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Bahasa: istilah terbiodegradasi",
+      "pemulihan": "Padankan kad empat bahan dengan ilustrasi penguraian.",
+      "pengayaan": "Bina dua takrif sendiri serta huraikan contoh setiap kategori berdasarkan proses penguraian.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-060",
+      "title": "Mengelaskan bahan buangan kepada bahan terbiodegradasi dan tidak terbiodegradasi.",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Kelestarian alam sekitar: pengelasan sisa",
+      "pemulihan": "Beri jadual dua lajur dan satu contoh bagi setiap kategori.",
+      "pengayaan": "Kelaskan lapan kad dan jelaskan dua pilihan berdasarkan sifat bahan, bukan kekotorannya.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-061",
+      "title": "Menaakul penggunaan bahan terbiodegradasi dan tidak terbiodegradasi secara berhemah.",
+      "pak21": "Perbincangan kes pasangan",
+      "emk": "Kelestarian alam sekitar: penggunaan sumber berhemah",
+      "pemulihan": "Pilih antara bekas guna semula dan bekas sekali guna menggunakan kad situasi.",
+      "pengayaan": "Bandingkan dua keputusan pembelian dan huraikan kesan pengurangan sisa berdasarkan 5R.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-062",
+      "title": "Memerihalkan pengurusan bahan buangan secara terancang untuk kehidupan lestari.",
+      "pak21": "Peta alir kolaboratif",
+      "emk": "Kelestarian alam sekitar: pengurusan sisa",
+      "pemulihan": "Susun empat kad langkah pengurusan bahan buangan sekolah.",
+      "pengayaan": "Lakar pelan pengurusan sekolah dan nyatakan cara mendapatkan bantuan dewasa bagi sisa berbahaya.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-063",
+      "title": "Menjelaskan pemerhatian tentang pengurusan bahan buangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan poster",
+      "emk": "Kreativiti dan inovasi: amalan 5R",
+      "pemulihan": "Padankan lima ikon dengan label tindakan 5R.",
+      "pengayaan": "Cadangkan satu perubahan amalan kelas serta petunjuk pemerhatian untuk menilai kesannya.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-064",
+      "title": "Memerihalkan fenomena gerhana Bulan berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: simulasi bayang",
+      "pemulihan": "Susun tiga bola berdasarkan rajah Matahari–Bumi–Bulan dengan panduan guru.",
+      "pengayaan": "Lakar kedudukan dan arah cahaya serta jelaskan bayang Bumi pada Bulan menggunakan model.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-065",
+      "title": "Memerihalkan fenomena gerhana Matahari berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: simulasi gerhana",
+      "pemulihan": "Padankan tiga label pada model Matahari–Bulan–Bumi.",
+      "pengayaan": "Bandingkan dua kedudukan gerhana dan jelaskan perbezaan bayang melalui simulasi sahaja.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-066",
+      "title": "Menghubungkaitkan fenomena gerhana Bulan dan gerhana Matahari dengan sifat cahaya.",
+      "pak21": "Peta perbandingan kolaboratif",
+      "emk": "Sains dan teknologi: sifat cahaya",
+      "pemulihan": "Tandakan arah cahaya dan bayang pada dua rajah model berpandu.",
+      "pengayaan": "Bina carta persamaan dan perbezaan gerhana berdasarkan cahaya bergerak lurus dan halangan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-067",
+      "title": "Meramalkan keadaan di Bumi semasa kejadian gerhana Bulan dan gerhana Matahari.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: ramalan fenomena",
+      "pemulihan": "Padankan dua gambar susunan jasad dengan kawasan bayang yang ditandakan.",
+      "pengayaan": "Beri dua ramalan bersyarat keadaan yang dapat dilihat dari kawasan berlainan berdasarkan model.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-068",
+      "title": "Menjelaskan pemerhatian tentang fenomena gerhana Bulan dan gerhana Matahari melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan galeri",
+      "emk": "Kreativiti dan inovasi: rajah gerhana",
+      "pemulihan": "Lengkapkan dua rajah separa berlabel dengan arah cahaya berpandu.",
+      "pengayaan": "Bentangkan perbandingan dua gerhana dan betulkan arah bayang pada lakaran rakan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-069",
+      "title": "Menyatakan maksud galaksi.",
+      "pak21": "Pengelasan kad berpasangan",
+      "emk": "Sains dan teknologi: objek astronomi",
+      "pemulihan": "Padankan gambar satu bintang, Sistem Suria dan galaksi dengan tiga label.",
+      "pengayaan": "Jelaskan mengapa Sistem Suria bukan galaksi dengan membandingkan kandungan dan skala.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-070",
+      "title": "Memerihalkan galaksi Bima Sakti.",
+      "pak21": "Semakan pasangan",
+      "emk": "Sains dan teknologi: ciri galaksi",
+      "pemulihan": "Lengkapkan carta ilustrasi Bima Sakti dengan pilihan label cakera dan lengan spiral.",
+      "pengayaan": "Bandingkan ilustrasi Bima Sakti dengan foto galaksi lain serta nyatakan dua ciri.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-071",
+      "title": "Merumuskan Sistem Suria berada dalam galaksi Bima Sakti.",
+      "pak21": "Peta hierarki kolaboratif",
+      "emk": "Sains dan teknologi: hubungan objek astronomi",
+      "pemulihan": "Susun kad Bumi, Sistem Suria dan Bima Sakti menggunakan templat bersarang.",
+      "pengayaan": "Tambah kedudukan Matahari dalam peta dan jelaskan hubungan planet, bintang dan galaksi.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-072",
+      "title": "Menjalankan simulasi untuk menggambarkan saiz Sistem Suria dalam galaksi Bima Sakti dan mengagumi ciptaan Tuhan.",
+      "pak21": "Pembentangan model",
+      "emk": "Nilai murni: menghargai alam ciptaan Tuhan",
+      "pemulihan": "Bimbing penempatan pelekat Sistem Suria pada cakera model.",
+      "pengayaan": "Terangkan dua perbandingan saiz dan had model yang bukan berskala tepat.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-073",
+      "title": "Menjelaskan pemerhatian tentang galaksi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan lakaran",
+      "emk": "Kreativiti dan inovasi: komunikasi visual astronomi",
+      "pemulihan": "Padankan tiga gambar galaksi dengan label bentuk berpandu.",
+      "pengayaan": "Lakar perbandingan ciri visual tiga galaksi dan jelaskan dua pemerhatian berasaskan ilustrasi.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-074",
+      "title": "Teknologi dan Kehidupan Lestari — Memerihalkan maksud kestabilan dan kekuatan dengan menjalankan aktiviti.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: kekuatan dan kestabilan",
+      "pemulihan": "Padankan gambar model sukar tumbang atau sukar rosak dengan dua istilah.",
+      "pengayaan": "Jelaskan contoh objek stabil tetapi kurang kuat berdasarkan model ringan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-075",
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan dengan contoh struktur yang kuat dan stabil.",
+      "pak21": "Perbincangan reka bentuk",
+      "emk": "Kreativiti dan inovasi: ciri struktur",
+      "pemulihan": "Tandakan tapak dan penyokong pada dua gambar struktur.",
+      "pengayaan": "Lakar penambahbaikan struktur kurang stabil dan terangkan peranan tapak atau penyokong.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-076",
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kestabilan objek.",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Sains dan teknologi: eksperimen terkawal",
+      "pemulihan": "Beri jadual dua ujian model dengan ruang faktor ubah dan faktor tetap.",
+      "pengayaan": "Bandingkan kesan luas tapak dan tinggi secara berasingan dan jelaskan sebab kawalan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-077",
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kekuatan binaan.",
+      "pak21": "Inkuiri dua stesen",
+      "emk": "Nilai murni: ketelitian dan kerjasama",
+      "pemulihan": "Beri jadual bentuk, bahan dan bilangan beban ringan dengan panduan guru.",
+      "pengayaan": "Bandingkan dua ujian berasingan untuk merumuskan faktor kekuatan berdasarkan bilangan beban.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-078",
+      "title": "Teknologi dan Kehidupan Lestari — Menjana idea kepentingan binaan yang kuat dan stabil bagi kehidupan lestari.",
+      "pak21": "Penyelesaian masalah kumpulan",
+      "emk": "Kelestarian alam sekitar: binaan lestari",
+      "pemulihan": "Padankan kad keselamatan, ketahanan dan sumber dengan foto struktur.",
+      "pengayaan": "Lakar cadangan binaan lestari serta huraikan dua ciri keselamatan secara konsep.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-079",
+      "title": "Mencipta model binaan yang kuat dan stabil dengan menggunakan bahan kitar semula yang sesuai.",
+      "pak21": "Pembelajaran berasaskan projek",
+      "emk": "Kreativiti dan inovasi: model bahan kitar semula",
+      "pemulihan": "Beri bahagian kadbod siap dipotong dengan panduan pemasangan tapak dan penyokong.",
+      "pengayaan": "Cadangkan satu penambahbaikan selepas ujian beban ringan dan tolakan terkawal berdasarkan rekod.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-080",
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan pemerhatian tentang kestabilan dan kekuatan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan reka bentuk",
+      "emk": "Bahasa: justifikasi berasaskan data",
+      "pemulihan": "Lengkapkan dua lakaran model menggunakan jadual keputusan ujian.",
+      "pengayaan": "Terangkan perbezaan hasil ujian sebelum dan selepas pengukuhan serta justifikasikan cadangan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-081",
+      "title": "Menyatakan maksud teknologi dan kepentingannya.",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: fungsi teknologi",
+      "pemulihan": "Padankan dua alat dengan tugas dan pilihan manfaat.",
+      "pengayaan": "Bandingkan masa atau usaha dalam dua situasi serta jelaskan kepentingan teknologi.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-082",
+      "title": "Memerihalkan perkembangan teknologi dalam pelbagai bidang.",
+      "pak21": "Susun kad kolaboratif",
+      "emk": "Sains dan teknologi: perkembangan teknologi",
+      "pemulihan": "Padankan empat pasangan alat lama dan baharu dengan bidang yang berkaitan.",
+      "pengayaan": "Bina garis masa empat bidang dan bandingkan manfaat serta batas perubahan dalam satu bidang.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-083",
+      "title": "Menjelaskan melalui contoh kebaikan dan keburukan teknologi dalam kehidupan harian.",
+      "pak21": "Perbincangan kes kumpulan",
+      "emk": "Nilai murni: penggunaan teknologi bertanggungjawab",
+      "pemulihan": "Lengkapkan jadual manfaat dan risiko berdasarkan dua kad fakta.",
+      "pengayaan": "Cadangkan amalan bertanggungjawab bagi satu kes dan pertahankan pilihan berdasarkan bukti.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-084",
+      "title": "Menjelaskan pemerhatian tentang kebaikan dan keburukan teknologi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "pak21": "Pembentangan poster",
+      "emk": "Kreativiti dan inovasi: teknologi lestari",
+      "pemulihan": "Lengkapkan lakaran dua teknologi dengan pilihan kesan positif dan negatif.",
+      "pengayaan": "Cadangkan satu inovasi atau tindakan lestari dan jelaskan bagaimana kesan buruk dapat dikurangkan.",
+      "support_basis": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "status": "DRAFT",
+      "ready": false
+    }
+  ]
+}
