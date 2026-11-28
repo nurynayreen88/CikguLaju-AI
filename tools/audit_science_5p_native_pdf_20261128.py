@@ -8,7 +8,7 @@ import json
 from html import escape
 from pathlib import Path
 from web.rph_5p_v5_layout import MS_LABELS, PHASE_KEYS, FIELDS, Palette, validate
-from tools.audit_science_native_5p_documents_20261128 import ROOT, DRAFT, COUNTS, inventory, support_inventory, fields, read
+from tools.audit_science_native_5p_documents_20261128 import ROOT, DRAFT, COUNTS, inventory, support_inventory, fields, display_fields, read
 from tools.audit_science_5p_layout_fixtures_20261128 import inspect_pdf
 
 def render_pdf(source,c,raw,profile,palette,subject_heading):
@@ -91,6 +91,7 @@ def main():
         cid=r["lesson_id"]
         try:
             s,companion,raw=fields(year,r,additions[cid])
+            s,companion,raw=display_fields(s,companion,raw)
             path=a.out/(cid+".pdf")
             path.write_bytes(render_pdf(s,companion,raw,profile,palette,heading))
             inspect_pdf(path,[DRAFT,*MS_LABELS[5:],*[s[k] for k in FIELDS],*[companion["phases"][k] for k in PHASE_KEYS],s["reference"]])
