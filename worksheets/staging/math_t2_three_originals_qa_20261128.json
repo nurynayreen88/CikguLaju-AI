@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "TWO_KEYS_VISUALLY_PASSED_THIRD_KEY_COPYEDIT_PENDING_NATIVE_IDENTITY_PENDING",
+  "status": "ALL_THREE_ORIGINAL_AND_KEY_PDF_PAIRS_VISUALLY_VERIFIED_NATIVE_IDENTITY_PENDING",
   "scope": "KSSR SK",
   "year": 2,
   "subject": "MATH",
@@ -160,25 +160,26 @@
       "teacher_note": "Soalan 2–5 menggunakan pola sela tetap yang tersirat. Arahan tidak menyebut sela tetap; terima jawapan lain yang memenuhi tertib dan nombor yang diberi, atau jelaskan sela tetap secara lisan.",
       "visual_reviewed": true,
       "answer_key_pdf": {
-        "sha256": "bef89154ead1b3b89b798b9fe1cd1300afef66f4353a03b08b7cfc70628a8361",
-        "size_bytes": 2589,
+        "sha256": "1a8ec5db3df033a02830b58ac69aa299bdc49d0a67d051a2932c359e60d18748",
+        "size_bytes": 2564,
         "pages": 1,
-        "build_run": 46139562511,
-        "artifact_id": 15261296853,
+        "build_run": 46140089397,
         "source": "reviewed_answer_key_content",
         "text_and_a4_verified": true,
-        "visual_review_pending": true,
+        "visual_review_pending": false,
         "previous_private_asset": {
           "sha256": "bef89154ead1b3b89b798b9fe1cd1300afef66f4353a03b08b7cfc70628a8361",
           "size_bytes": 2589
         },
-        "replacement_required": true,
-        "visual_issue": "Internal production instruction appeared in teacher note; removed from source, rebuild required."
+        "replacement_required": false,
+        "preview_run": 46140089397,
+        "visual_review_passed": true,
+        "storage_integrity_verified": true
       },
       "runtime_unit": null,
       "runtime_lesson": null,
       "release": false
     }
   ],
-  "note": "Two rendered keys passed visual QA, same hashes as stored assets. Susun key needs one teacher-note copyedit and regenerated PDF; old asset remains private. Production runtime identity pending. No production code changes."
+  "note": "All three teacher keys passed visual review and private stored SHA/length checks. Susun copyedit complete. Exact live identity and academic source verification pending. No production edits."
 }
