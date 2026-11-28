@@ -1,0 +1,60 @@
+name: Science Y2 Y3 Y4 opening 22 draft document QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'audits/rph_5p_science_y2_y3_y4_opening_22_drafts_20261128.json'
+      - 'tools/audit_science_opening_5p_y2_y4_20261128.py'
+      - '.github/workflows/science-opening-22-draft-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  print:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: 207317c6d092561e2ffd07a6d2fb4ef604797030
+          path: native_source
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install python-docx pymupdf
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice-writer
+      - name: Stage pinned original modules in CI only
+        run: |
+          for file in sains_unit_awal.py sains_y3_unit_awal.py sains_opening_pedagogy_20261121.py; do
+            test ! -e "web/$file"
+            cp "native_source/web/$file" "web/$file"
+          done
+          test "$(git hash-object web/sains_opening_pedagogy_20261121.py)" = beb4c318405f960f5f744298a2f9edbfde1342bd
+      - run: PYTHONPATH=. python tools/audit_science_opening_5p_y2_y4_20261128.py
+      - name: Convert all draft Word and verify actual PDF
+        run: |
+          mkdir qa_science_opening_5p/pdf
+          libreoffice --headless --convert-to pdf --outdir qa_science_opening_5p/pdf qa_science_opening_5p/*.docx
+          PYTHONPATH=. python - <<'PY'
+          import json
+          from pathlib import Path
+          from tools.audit_science_5p_layout_fixtures_20261128 import inspect_pdf
+          root=Path("qa_science_opening_5p")
+          rows=json.loads((root/"manifest.json").read_text())
+          issues=[]
+          for r in rows:
+              try: inspect_pdf(root/"pdf"/(r["id"]+".pdf"),r["expected"])
+              except Exception as e: issues.append({"id":r["id"],"error":str(e)})
+          report={"total":22,"passed":22-len(issues),"issues":issues,"release":False}
+          (root/"report.json").write_text(json.dumps(report,indent=2))
+          print(report)
+          assert len(rows)==22 and not issues
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-opening-22-draft-word-pdf
+          path: qa_science_opening_5p/
+          retention-days: 7
