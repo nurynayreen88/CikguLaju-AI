@@ -1,0 +1,79 @@
+{
+  "status": "DRAFT_STRUCTURAL_AUDIT_ONLY",
+  "date": "2026-11-28",
+  "source_commit": "92e709bbedf075c3504ce1a47cfdfc2d0bdbf78c",
+  "scope": "MATEMATIK SK KSSR Tahun 2–6, existing draft companion inventory",
+  "sources": [
+    {
+      "path": "audits/rph_5p_math_kssr_t2_candidate_20_20261128.json",
+      "blob_sha": "cb732c4c74a47c255373daf598feae3406c0fded",
+      "count": 20
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t2_candidate_21_40_20261128.json",
+      "blob_sha": "8bb47111f1a187745ef962058957b5151baf482c",
+      "count": 21
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t2_candidate_41_71_20261128.json",
+      "blob_sha": "7d2158616e85a4a0e10134b8950af299cf05dbb0",
+      "count": 31
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t3_candidate_01_08_20261128.json",
+      "blob_sha": "f58d17512a0bb607d422c73333d0e763c26e0fa6",
+      "count": 9
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t4_candidate_09_15_20261128.json",
+      "blob_sha": "51187ab3e94d3c250bab4897e1598f0d0cd60e72",
+      "count": 9
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t5_rpt_blocks_01_13_20261128.json",
+      "blob_sha": "6fc9a688ef04b5cdae562f2d29504f043748ef91",
+      "count": 28
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t5_rpt_blocks_14_38_20261128.json",
+      "blob_sha": "684cffdba18d1bee5adea2edb896696ca0ed9219",
+      "count": 43
+    },
+    {
+      "path": "audits/rph_5p_math_kssr_t6_candidate_22_20261128.json",
+      "blob_sha": "3d29975587cfc41b12732212bfbb87e2a1f8bb0b",
+      "count": 22
+    }
+  ],
+  "counts_by_year": {
+    "2": 72,
+    "3": 9,
+    "4": 9,
+    "5": 71,
+    "6": 22
+  },
+  "total": 183,
+  "observed_checks": {
+    "duplicate_year_candidate_ids": 0,
+    "blank_ids": 0,
+    "missing_required_phases": 0,
+    "non_distinct_phases_within_record": 0,
+    "missing_standard_text": 0,
+    "ready_not_false": 0
+  },
+  "release_ready": 0,
+  "limitations": [
+    "Structural check of existing JSON only; does not establish academic correctness or lesson coverage.",
+    "Year 5 records are proposed sessions from RPT blocks, not live identities.",
+    "Match original RPH using exact identity, SK/SP and source document evidence, not ordinal or SP alone.",
+    "Check actual RPT, textbook/workbook, objective, criteria and reflection; then render and inspect Word/PDF and verify authenticated downloads."
+  ],
+  "next_review": [
+    {
+      "year": 6,
+      "candidate_id": "DSKP6-01",
+      "note": "Explicitly distinguish partitive 3/4 ÷ 3 = 1/4 from measurement 3/4 ÷ 1/4 = 3; ensure source objective covers both before approving."
+    }
+  ],
+  "production_changes": false
+}
