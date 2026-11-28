@@ -146,6 +146,8 @@ DISPLAY_REFS = {
 PRINT_CORRECTIONS = {
     5: ("audits/rph_5p_science_y5_print_corrections_20261128.json",
         "8571a492e59ec9ff46c74aa46b02fb1bc9be0380", 32),
+    6: ("audits/rph_5p_science_y6_print_corrections_20261128.json",
+        "8695da61fc6229e2a14b9853749d19f8fc31600f", 46),
 }
 
 def apply_print_corrections(s, c):
@@ -175,10 +177,24 @@ def apply_print_corrections(s, c):
     if item["ready"] is not False or item["review_status"] != reviewed[s["lesson_id"]]:
         raise ValueError("Unverified correction identity")
     changes = item["changes"]
-    if not changes or set(changes) - {"bbm","safety","phase"}:
+    allowed = {"bbm","safety","phase"}
+    if s["lesson_id"] == "SK27-SCI-Y6-PDP-014":
+        allowed.add("objective")
+    if s["lesson_id"] == "SK27-SCI-Y6-PDP-028":
+        allowed.add("topic_title")
+    if not changes or set(changes) - allowed:
         raise ValueError("Unexpected correction field")
     s = dict(s)
     phases = dict(c["phases"])
+    if "objective" in changes:
+        # The source objective covers two sessions; the print objective
+        # describes the current session only, matching deferred PBD.
+        s["objective"] = changes["objective"]
+    if "topic_title" in changes:
+        unit, sep, title = s["topic"].partition("\n")
+        if not sep or not title:
+            raise ValueError("Missing original topic")
+        s["topic"] = unit + sep + changes["topic_title"]
     if "bbm" in changes:
         first, sep, rest = s["aids_pak21_emk"].partition("\n")
         if not first.startswith("BBM: ") or not sep:
