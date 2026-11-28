@@ -317,3 +317,19 @@ class ErphTests(unittest.TestCase):
                 self.assertEqual(fields['standard_learning'],'1.1.1 SP')
                 self.assertEqual(fields['objectives'],'Sebut bunyi')
                 self.assertIn('Murid menyebut bunyi',fields['activities'])
+
+    def test_pdf_single_multi_and_long_paragraph_preserve_text(self):
+        import fitz
+        from web.erph_export import render
+        long_row=dict(PAYLOAD,activities=' '.join('Murid membaca dan menyemak item%03d.' % i for i in range(280)),reflection='SELESAI')
+        for rows in ([PAYLOAD],[PAYLOAD,PAYLOAD],[long_row]):
+            with fitz.open(stream=render(rows,'pdf'),filetype='pdf') as d:
+                flags=fitz.TEXTFLAGS_TEXT & ~fitz.TEXT_PRESERVE_LIGATURES
+                content=''.join(p.get_text(flags=flags) for p in d)
+                self.assertEqual(content.count('REKOD e-RPH'),len(rows))
+                self.assertEqual(content.count('Refleksi'),len(rows))
+                for i,p in enumerate(d):
+                    self.assertIn('Halaman '+str(i+1)+' / '+str(len(d)),p.get_text())
+                if rows[0] is long_row:
+                    for i in range(280):self.assertIn('item%03d' % i,content)
+                    self.assertIn('SELESAI',content)
