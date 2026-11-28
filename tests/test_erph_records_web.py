@@ -286,3 +286,34 @@ class ErphTests(unittest.TestCase):
                 self.assertEqual(r['objective'],fields['objectives'])
                 self.assertTrue(fields['activities'])
                 self.assertTrue(fields['title'])
+
+    def test_premium_word_header_both_orientations(self):
+        from io import BytesIO
+        from docx import Document
+        from web.erph_word_import import extract_docx
+        for swapped in (False, True):
+            with self.subTest(swapped=swapped):
+                d=Document()
+                t=d.add_table(rows=1,cols=2)
+                a,b=t.rows[0].cells
+                a.text='Maklumat PdP\nKelas:\nTarikh:\nMasa:\nBil. Murid:'
+                b.text='BAHASA MELAYU SK\nTahun 1\nTajuk: Bunyi'
+                if swapped:
+                    a.text,b.text=b.text,a.text
+                for label,value in (
+                    ('Kandungan / Tajuk','Unit • Bunyi'),
+                    ('Standard Kandungan (SK)','1.1 SK'),
+                    ('Standard Pembelajaran (SP)','1.1.1 SP'),
+                    ('Objektif Pembelajaran','Sebut bunyi'),
+                    ('Aktiviti Utama','Murid menyebut bunyi'),
+                    ('Refleksi',''),
+                ):
+                    a,b=t.add_row().cells
+                    a.text,b.text=label,value
+                out=BytesIO();d.save(out)
+                fields=extract_docx(out.getvalue())
+                self.assertEqual(fields['title'],'Unit • Bunyi')
+                self.assertEqual(fields['standard_content'],'1.1 SK')
+                self.assertEqual(fields['standard_learning'],'1.1.1 SP')
+                self.assertEqual(fields['objectives'],'Sebut bunyi')
+                self.assertIn('Murid menyebut bunyi',fields['activities'])
