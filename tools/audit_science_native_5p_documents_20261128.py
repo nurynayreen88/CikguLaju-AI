@@ -49,7 +49,42 @@ def inventory(year):
         raise ValueError("Invalid duration or release status")
     return rows
 
-def fields(year, r):
+def support_inventory(year, native_rows):
+    """Fail closed if the approved-for-QA support inventory changes."""
+    audit = read(ROOT / f"audits/rph_5p_science_y{year}_support_complete_audit_20261128.json")
+    if (audit["count"] != COUNTS[year] or audit["unique"] != COUNTS[year]
+            or audit["issues"] or audit["academic_approved"] is not False
+            or audit["release"] is not False):
+        raise ValueError("Unverified draft support audit")
+    support_rows = []
+    for entry in audit["blobs"]:
+        path = ROOT / entry["path"]
+        data = path.read_bytes()
+        if git_blob(data) != entry["sha"]:
+            raise ValueError(f"Support blob changed: {path}")
+        d = json.loads(data)
+        if d["year"] != year or len(d["records"]) != entry["count"]:
+            raise ValueError("Support inventory mismatch")
+        for src in d["sources"]:
+            if git_blob((ROOT / src["path"]).read_bytes()) != src["blob"]:
+                raise ValueError("Support source draft changed")
+        support_rows.extend(d["records"])
+    if len(support_rows) != len(native_rows):
+        raise ValueError("Incomplete support inventory")
+    result = {}
+    for r, s in zip(native_rows, support_rows, strict=True):
+        if s["lesson_id"] != r["lesson_id"] or s["title"] != r["title"] or s["ready"] is not False:
+            raise ValueError("Support lesson identity mismatch")
+        if s["lesson_id"] in result or any(not isinstance(s[k], str) or not s[k].strip()
+                for k in ("pak21", "emk", "pemulihan", "pengayaan")):
+            raise ValueError("Missing or duplicate support fields")
+        original = r.get("original", {}).get("support")
+        if original and s["pemulihan"] + " " + s["pengayaan"] != original:
+            raise ValueError("Original support field changed")
+        result[s["lesson_id"]] = s
+    return result
+
+def fields(year, r, additions):
     if year == 5:
         objective = criteria = r["original_pbd"]
         materials = r["original_materials"]
@@ -81,7 +116,8 @@ def fields(year, r):
             raise ValueError("Unexpected conservation display title")
         unit = "Unit 5: Pemeliharaan dan Pemuliharaan"
         title = title[len(prefix):]
-    aids = "BBM: " + materials + "\nPAK21 / EMK: " + PENDING
+    aids = "BBM: " + materials + "\nPAK21: " + additions["pak21"] + "\nEMK: " + additions["emk"]
+    support = "Pemulihan: " + additions["pemulihan"] + "\nPengayaan: " + additions["pengayaan"]
     if safety:
         aids += "\nKeselamatan: " + safety
     source = dict(subject="SAINS SK", year=year, lesson_id=r["lesson_id"], curriculum="KSSR",
@@ -104,12 +140,13 @@ def run(out, year):
     c=color[0]
     palette=Palette(c["strong"].lstrip("#"),c["tone"].lstrip("#"),c["tone"].lstrip("#"),"9AB2B7")
     rows=inventory(year)
+    additions=support_inventory(year, rows)
     manifest=[]; issues=[]
     heading=f"SAINS SK\nTAHUN {year}\n{DRAFT}"
     for r in rows:
         cid=r["lesson_id"]
         try:
-            source, companion, raw=fields(year,r)
+            source, companion, raw=fields(year,r,additions[cid])
             path=words/(cid+".docx")
             path.write_bytes(render_word(source,companion,source_bytes=raw,palette=palette,subject_heading=heading))
             doc=Document(path)
@@ -124,6 +161,11 @@ def run(out, year):
             for i,key in enumerate(PHASE_KEYS):
                 if t.cell(8+2*i,1).text!=r["phases"][key]:
                     raise ValueError("Word phase mismatch: "+key)
+            for i,key in enumerate(FIELDS[5:-1],17):
+                if t.cell(i,1).text!=source[key]:
+                    raise ValueError("Word support/closure mismatch: "+key)
+            if PENDING in source["aids_pak21_emk"] or PENDING in source["remedial_enrichment"]:
+                raise ValueError("Placeholder in completed support")
             if t.cell(20,0).text!="Refleksi":
                 raise ValueError("Reflection label")
             manifest.append({"id":cid,"source_title":r["title"],"source_digest":companion["source_sha256"],
@@ -149,6 +191,7 @@ def run(out, year):
             issues.append({"id":r["id"],"stage":"pdf","error":str(exc)})
     report={"status":"NATIVE_SOURCE_ADAPTED_DRAFT_LAYOUT_QA_ONLY","year":year,
             "total":COUNTS[year],"word_generated":len(manifest),"word_pdf_passed":passed,
+            "support_fields_verified":len(additions),"support_included":True,
             "academic_approved":False,"native_pdf_delivery_verified":False,"release":False,"issues":issues}
     (out/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding="utf-8")
     (out/"report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
