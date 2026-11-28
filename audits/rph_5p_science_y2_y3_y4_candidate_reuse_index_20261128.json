@@ -1,0 +1,2532 @@
+{
+  "status": "EXISTING_CANDIDATE_REUSE_INDEX_ONLY",
+  "source_blobs": {
+    "audits/rph_5p_science_kssr_t2_dskp_candidates_20261128.json": "57257df0220e0d1a43738a25ba14197286bb679e",
+    "audits/rph_5p_science_kssr_t3_dskp_candidates_20261128.json": "49b86cc3db24578c1e16361219168e9e49154707",
+    "audits/rph_5p_science_kssr_t4_dskp_candidates_20261128.json": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55"
+  },
+  "total": 134,
+  "opening_scope": 22,
+  "nonopening_scope": 112,
+  "years": {
+    "2": {
+      "total": 47,
+      "opening_scope": 7,
+      "nonopening_scope": 40,
+      "unique_sp_codes": 63,
+      "by_sp": {
+        "1.1.1": [
+          "SCI-T2-DRAFT-001"
+        ],
+        "1.1.2": [
+          "SCI-T2-DRAFT-002"
+        ],
+        "1.1.3": [
+          "SCI-T2-DRAFT-003"
+        ],
+        "1.1.4": [
+          "SCI-T2-DRAFT-004"
+        ],
+        "1.2.1": [
+          "SCI-T2-DRAFT-005"
+        ],
+        "1.2.2": [
+          "SCI-T2-DRAFT-005"
+        ],
+        "1.2.3": [
+          "SCI-T2-DRAFT-005"
+        ],
+        "1.2.4": [
+          "SCI-T2-DRAFT-006"
+        ],
+        "1.2.5": [
+          "SCI-T2-DRAFT-006"
+        ],
+        "2.1.1": [
+          "SCI-T2-DRAFT-007"
+        ],
+        "3.1.1": [
+          "SCI-T2-DRAFT-008"
+        ],
+        "3.1.2": [
+          "SCI-T2-DRAFT-009"
+        ],
+        "3.1.3": [
+          "SCI-T2-DRAFT-010"
+        ],
+        "3.1.4": [
+          "SCI-T2-DRAFT-011"
+        ],
+        "3.1.5": [
+          "SCI-T2-DRAFT-011"
+        ],
+        "3.1.6": [
+          "SCI-T2-DRAFT-012"
+        ],
+        "4.1.1": [
+          "SCI-T2-DRAFT-013"
+        ],
+        "4.1.2": [
+          "SCI-T2-DRAFT-013"
+        ],
+        "4.1.3": [
+          "SCI-T2-DRAFT-014"
+        ],
+        "4.1.4": [
+          "SCI-T2-DRAFT-015"
+        ],
+        "4.1.5": [
+          "SCI-T2-DRAFT-016",
+          "SCI-T2-DRAFT-017"
+        ],
+        "4.1.6": [
+          "SCI-T2-DRAFT-018"
+        ],
+        "4.1.7": [
+          "SCI-T2-DRAFT-018"
+        ],
+        "5.1.1": [
+          "SCI-T2-DRAFT-019"
+        ],
+        "5.1.2": [
+          "SCI-T2-DRAFT-020"
+        ],
+        "5.1.3": [
+          "SCI-T2-DRAFT-021"
+        ],
+        "5.1.4": [
+          "SCI-T2-DRAFT-022"
+        ],
+        "5.1.5": [
+          "SCI-T2-DRAFT-023"
+        ],
+        "5.1.6": [
+          "SCI-T2-DRAFT-024"
+        ],
+        "6.1.1": [
+          "SCI-T2-DRAFT-025"
+        ],
+        "6.1.2": [
+          "SCI-T2-DRAFT-025"
+        ],
+        "6.1.3": [
+          "SCI-T2-DRAFT-026"
+        ],
+        "6.1.4": [
+          "SCI-T2-DRAFT-027"
+        ],
+        "6.1.5": [
+          "SCI-T2-DRAFT-028"
+        ],
+        "6.1.6": [
+          "SCI-T2-DRAFT-028"
+        ],
+        "7.1.1": [
+          "SCI-T2-DRAFT-029"
+        ],
+        "7.1.2": [
+          "SCI-T2-DRAFT-029"
+        ],
+        "7.1.3": [
+          "SCI-T2-DRAFT-030"
+        ],
+        "7.1.4": [
+          "SCI-T2-DRAFT-031"
+        ],
+        "7.1.5": [
+          "SCI-T2-DRAFT-032"
+        ],
+        "7.1.6": [
+          "SCI-T2-DRAFT-032"
+        ],
+        "7.1.7": [
+          "SCI-T2-DRAFT-033"
+        ],
+        "8.1.1": [
+          "SCI-T2-DRAFT-034"
+        ],
+        "8.1.2": [
+          "SCI-T2-DRAFT-034"
+        ],
+        "8.1.3": [
+          "SCI-T2-DRAFT-035"
+        ],
+        "8.1.4": [
+          "SCI-T2-DRAFT-036"
+        ],
+        "8.1.5": [
+          "SCI-T2-DRAFT-037"
+        ],
+        "9.1.1": [
+          "SCI-T2-DRAFT-038"
+        ],
+        "9.1.2": [
+          "SCI-T2-DRAFT-039"
+        ],
+        "9.1.3": [
+          "SCI-T2-DRAFT-039"
+        ],
+        "9.1.4": [
+          "SCI-T2-DRAFT-040"
+        ],
+        "9.1.5": [
+          "SCI-T2-DRAFT-040"
+        ],
+        "9.2.1": [
+          "SCI-T2-DRAFT-041"
+        ],
+        "9.2.2": [
+          "SCI-T2-DRAFT-041"
+        ],
+        "9.2.3": [
+          "SCI-T2-DRAFT-042"
+        ],
+        "9.2.4": [
+          "SCI-T2-DRAFT-042"
+        ],
+        "9.2.5": [
+          "SCI-T2-DRAFT-043"
+        ],
+        "9.2.6": [
+          "SCI-T2-DRAFT-043"
+        ],
+        "10.1.1": [
+          "SCI-T2-DRAFT-044"
+        ],
+        "10.1.2": [
+          "SCI-T2-DRAFT-044"
+        ],
+        "10.1.3": [
+          "SCI-T2-DRAFT-045"
+        ],
+        "10.1.4": [
+          "SCI-T2-DRAFT-046"
+        ],
+        "10.1.5": [
+          "SCI-T2-DRAFT-047"
+        ]
+      },
+      "by_exact_sp_set": {
+        "1.1.1": [
+          "SCI-T2-DRAFT-001"
+        ],
+        "1.1.2": [
+          "SCI-T2-DRAFT-002"
+        ],
+        "1.1.3": [
+          "SCI-T2-DRAFT-003"
+        ],
+        "1.1.4": [
+          "SCI-T2-DRAFT-004"
+        ],
+        "1.2.1|1.2.2|1.2.3": [
+          "SCI-T2-DRAFT-005"
+        ],
+        "1.2.4|1.2.5": [
+          "SCI-T2-DRAFT-006"
+        ],
+        "2.1.1": [
+          "SCI-T2-DRAFT-007"
+        ],
+        "3.1.1": [
+          "SCI-T2-DRAFT-008"
+        ],
+        "3.1.2": [
+          "SCI-T2-DRAFT-009"
+        ],
+        "3.1.3": [
+          "SCI-T2-DRAFT-010"
+        ],
+        "3.1.4|3.1.5": [
+          "SCI-T2-DRAFT-011"
+        ],
+        "3.1.6": [
+          "SCI-T2-DRAFT-012"
+        ],
+        "4.1.1|4.1.2": [
+          "SCI-T2-DRAFT-013"
+        ],
+        "4.1.3": [
+          "SCI-T2-DRAFT-014"
+        ],
+        "4.1.4": [
+          "SCI-T2-DRAFT-015"
+        ],
+        "4.1.5": [
+          "SCI-T2-DRAFT-016",
+          "SCI-T2-DRAFT-017"
+        ],
+        "4.1.6|4.1.7": [
+          "SCI-T2-DRAFT-018"
+        ],
+        "5.1.1": [
+          "SCI-T2-DRAFT-019"
+        ],
+        "5.1.2": [
+          "SCI-T2-DRAFT-020"
+        ],
+        "5.1.3": [
+          "SCI-T2-DRAFT-021"
+        ],
+        "5.1.4": [
+          "SCI-T2-DRAFT-022"
+        ],
+        "5.1.5": [
+          "SCI-T2-DRAFT-023"
+        ],
+        "5.1.6": [
+          "SCI-T2-DRAFT-024"
+        ],
+        "6.1.1|6.1.2": [
+          "SCI-T2-DRAFT-025"
+        ],
+        "6.1.3": [
+          "SCI-T2-DRAFT-026"
+        ],
+        "6.1.4": [
+          "SCI-T2-DRAFT-027"
+        ],
+        "6.1.5|6.1.6": [
+          "SCI-T2-DRAFT-028"
+        ],
+        "7.1.1|7.1.2": [
+          "SCI-T2-DRAFT-029"
+        ],
+        "7.1.3": [
+          "SCI-T2-DRAFT-030"
+        ],
+        "7.1.4": [
+          "SCI-T2-DRAFT-031"
+        ],
+        "7.1.5|7.1.6": [
+          "SCI-T2-DRAFT-032"
+        ],
+        "7.1.7": [
+          "SCI-T2-DRAFT-033"
+        ],
+        "8.1.1|8.1.2": [
+          "SCI-T2-DRAFT-034"
+        ],
+        "8.1.3": [
+          "SCI-T2-DRAFT-035"
+        ],
+        "8.1.4": [
+          "SCI-T2-DRAFT-036"
+        ],
+        "8.1.5": [
+          "SCI-T2-DRAFT-037"
+        ],
+        "9.1.1": [
+          "SCI-T2-DRAFT-038"
+        ],
+        "9.1.2|9.1.3": [
+          "SCI-T2-DRAFT-039"
+        ],
+        "9.1.4|9.1.5": [
+          "SCI-T2-DRAFT-040"
+        ],
+        "9.2.1|9.2.2": [
+          "SCI-T2-DRAFT-041"
+        ],
+        "9.2.3|9.2.4": [
+          "SCI-T2-DRAFT-042"
+        ],
+        "9.2.5|9.2.6": [
+          "SCI-T2-DRAFT-043"
+        ],
+        "10.1.1|10.1.2": [
+          "SCI-T2-DRAFT-044"
+        ],
+        "10.1.3": [
+          "SCI-T2-DRAFT-045"
+        ],
+        "10.1.4": [
+          "SCI-T2-DRAFT-046"
+        ],
+        "10.1.5": [
+          "SCI-T2-DRAFT-047"
+        ]
+      },
+      "records": [
+        {
+          "candidate_id": "SCI-T2-DRAFT-001",
+          "title": "Pemerhatian perubahan bahan",
+          "sp_codes": [
+            "1.1.1"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-002",
+          "title": "Mengelas objek",
+          "sp_codes": [
+            "1.1.2"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-003",
+          "title": "Mengukur menggunakan nombor",
+          "sp_codes": [
+            "1.1.3"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-004",
+          "title": "Komunikasi saintifik",
+          "sp_codes": [
+            "1.1.4"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-005",
+          "title": "Mengendalikan dan melakar spesimen",
+          "sp_codes": [
+            "1.2.1",
+            "1.2.2",
+            "1.2.3"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-006",
+          "title": "Membersih dan menyimpan peralatan",
+          "sp_codes": [
+            "1.2.4",
+            "1.2.5"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-007",
+          "title": "Peraturan bilik sains",
+          "sp_codes": [
+            "2.1.1"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-008",
+          "title": "Pembiakan manusia",
+          "sp_codes": [
+            "3.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-009",
+          "title": "Perubahan sejak dilahirkan",
+          "sp_codes": [
+            "3.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-010",
+          "title": "Perbezaan tumbesaran",
+          "sp_codes": [
+            "3.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-011",
+          "title": "Pewarisan ciri",
+          "sp_codes": [
+            "3.1.4",
+            "3.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-012",
+          "title": "Komunikasi tumbesaran dan pewarisan",
+          "sp_codes": [
+            "3.1.6"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-013",
+          "title": "Cara haiwan membiak",
+          "sp_codes": [
+            "4.1.1",
+            "4.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-014",
+          "title": "Bilangan telur",
+          "sp_codes": [
+            "4.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-015",
+          "title": "Bilangan anak",
+          "sp_codes": [
+            "4.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-016",
+          "title": "Kitar hidup rama-rama",
+          "sp_codes": [
+            "4.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-017",
+          "title": "Kitar hidup katak",
+          "sp_codes": [
+            "4.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-018",
+          "title": "Anak haiwan dan induknya",
+          "sp_codes": [
+            "4.1.6",
+            "4.1.7"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-019",
+          "title": "Kepentingan tumbuhan",
+          "sp_codes": [
+            "5.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-020",
+          "title": "Keperluan percambahan",
+          "sp_codes": [
+            "5.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-021",
+          "title": "Rekod tumbesaran sebenar",
+          "sp_codes": [
+            "5.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-022",
+          "title": "Urutan tumbesaran tumbuhan",
+          "sp_codes": [
+            "5.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-023",
+          "title": "Keperluan tumbesaran tumbuhan",
+          "sp_codes": [
+            "5.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-024",
+          "title": "Komunikasi proses hidup tumbuhan",
+          "sp_codes": [
+            "5.1.6"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-025",
+          "title": "Sumber cahaya dan keadaan terang/gelap",
+          "sp_codes": [
+            "6.1.1",
+            "6.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-026",
+          "title": "Pembentukan bayang-bayang",
+          "sp_codes": [
+            "6.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-027",
+          "title": "Kejelasan bayang-bayang",
+          "sp_codes": [
+            "6.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-028",
+          "title": "Permainan bayang-bayang",
+          "sp_codes": [
+            "6.1.5",
+            "6.1.6"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-029",
+          "title": "Komponen dan fungsi litar",
+          "sp_codes": [
+            "7.1.1",
+            "7.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-030",
+          "title": "Membina litar lengkap",
+          "sp_codes": [
+            "7.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-031",
+          "title": "Mentol tidak menyala",
+          "sp_codes": [
+            "7.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-032",
+          "title": "Konduktor dan penebat",
+          "sp_codes": [
+            "7.1.5",
+            "7.1.6"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-033",
+          "title": "Komunikasi litar elektrik",
+          "sp_codes": [
+            "7.1.7"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-034",
+          "title": "Mengasingkan campuran",
+          "sp_codes": [
+            "8.1.1",
+            "8.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-035",
+          "title": "Bahan larut dan tidak larut",
+          "sp_codes": [
+            "8.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-036",
+          "title": "Mempercepat pelarutan",
+          "sp_codes": [
+            "8.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-037",
+          "title": "Komunikasi campuran",
+          "sp_codes": [
+            "8.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-038",
+          "title": "Sumber air semula jadi",
+          "sp_codes": [
+            "9.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-039",
+          "title": "Arah aliran air",
+          "sp_codes": [
+            "9.1.2",
+            "9.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-040",
+          "title": "Kitar air",
+          "sp_codes": [
+            "9.1.4",
+            "9.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-041",
+          "title": "Udara di sekeliling kita",
+          "sp_codes": [
+            "9.2.1",
+            "9.2.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-042",
+          "title": "Angin dan kesannya",
+          "sp_codes": [
+            "9.2.3",
+            "9.2.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-043",
+          "title": "Model menggunakan angin",
+          "sp_codes": [
+            "9.2.5",
+            "9.2.6"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-044",
+          "title": "Pilih binaan dan komponen",
+          "sp_codes": [
+            "10.1.1",
+            "10.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-045",
+          "title": "Memasang binaan mengikut manual",
+          "sp_codes": [
+            "10.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-046",
+          "title": "Cipta binaan baharu",
+          "sp_codes": [
+            "10.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T2-DRAFT-047",
+          "title": "Membuka dan menyimpan binaan",
+          "sp_codes": [
+            "10.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        }
+      ]
+    },
+    "3": {
+      "total": 40,
+      "opening_scope": 9,
+      "nonopening_scope": 31,
+      "unique_sp_codes": 60,
+      "by_sp": {
+        "1.1.1": [
+          "SCI-T3-DRAFT-001"
+        ],
+        "1.1.2": [
+          "SCI-T3-DRAFT-002"
+        ],
+        "1.1.3": [
+          "SCI-T3-DRAFT-003"
+        ],
+        "1.1.4": [
+          "SCI-T3-DRAFT-004"
+        ],
+        "1.1.5": [
+          "SCI-T3-DRAFT-005"
+        ],
+        "1.1.6": [
+          "SCI-T3-DRAFT-006"
+        ],
+        "1.2.1": [
+          "SCI-T3-DRAFT-007"
+        ],
+        "1.2.2": [
+          "SCI-T3-DRAFT-007"
+        ],
+        "1.2.3": [
+          "SCI-T3-DRAFT-007"
+        ],
+        "1.2.4": [
+          "SCI-T3-DRAFT-008"
+        ],
+        "1.2.5": [
+          "SCI-T3-DRAFT-008"
+        ],
+        "2.1.1": [
+          "SCI-T3-DRAFT-009"
+        ],
+        "3.1.1": [
+          "SCI-T3-DRAFT-010"
+        ],
+        "3.1.2": [
+          "SCI-T3-DRAFT-011"
+        ],
+        "3.1.3": [
+          "SCI-T3-DRAFT-012"
+        ],
+        "3.1.4": [
+          "SCI-T3-DRAFT-013"
+        ],
+        "3.1.5": [
+          "SCI-T3-DRAFT-013"
+        ],
+        "3.2.1": [
+          "SCI-T3-DRAFT-014"
+        ],
+        "3.2.2": [
+          "SCI-T3-DRAFT-015"
+        ],
+        "3.2.3": [
+          "SCI-T3-DRAFT-016"
+        ],
+        "3.2.4": [
+          "SCI-T3-DRAFT-016"
+        ],
+        "3.2.5": [
+          "SCI-T3-DRAFT-016"
+        ],
+        "3.3.1": [
+          "SCI-T3-DRAFT-017"
+        ],
+        "3.3.2": [
+          "SCI-T3-DRAFT-018"
+        ],
+        "3.3.3": [
+          "SCI-T3-DRAFT-018"
+        ],
+        "3.3.4": [
+          "SCI-T3-DRAFT-018"
+        ],
+        "4.1.1": [
+          "SCI-T3-DRAFT-019"
+        ],
+        "4.1.2": [
+          "SCI-T3-DRAFT-019"
+        ],
+        "4.1.3": [
+          "SCI-T3-DRAFT-020"
+        ],
+        "4.1.4": [
+          "SCI-T3-DRAFT-021"
+        ],
+        "4.1.5": [
+          "SCI-T3-DRAFT-021"
+        ],
+        "5.1.1": [
+          "SCI-T3-DRAFT-022"
+        ],
+        "5.1.2": [
+          "SCI-T3-DRAFT-023"
+        ],
+        "5.1.3": [
+          "SCI-T3-DRAFT-024"
+        ],
+        "5.1.4": [
+          "SCI-T3-DRAFT-024"
+        ],
+        "6.1.1": [
+          "SCI-T3-DRAFT-025"
+        ],
+        "6.1.2": [
+          "SCI-T3-DRAFT-025"
+        ],
+        "6.1.3": [
+          "SCI-T3-DRAFT-026"
+        ],
+        "6.1.4": [
+          "SCI-T3-DRAFT-027"
+        ],
+        "6.1.5": [
+          "SCI-T3-DRAFT-028"
+        ],
+        "6.1.6": [
+          "SCI-T3-DRAFT-029"
+        ],
+        "6.1.7": [
+          "SCI-T3-DRAFT-029"
+        ],
+        "7.1.1": [
+          "SCI-T3-DRAFT-030"
+        ],
+        "7.1.2": [
+          "SCI-T3-DRAFT-030"
+        ],
+        "7.1.3": [
+          "SCI-T3-DRAFT-031"
+        ],
+        "7.1.4": [
+          "SCI-T3-DRAFT-031"
+        ],
+        "8.1.1": [
+          "SCI-T3-DRAFT-032"
+        ],
+        "8.1.2": [
+          "SCI-T3-DRAFT-033"
+        ],
+        "8.1.3": [
+          "SCI-T3-DRAFT-034"
+        ],
+        "8.1.4": [
+          "SCI-T3-DRAFT-034"
+        ],
+        "9.1.1": [
+          "SCI-T3-DRAFT-035"
+        ],
+        "9.1.2": [
+          "SCI-T3-DRAFT-036"
+        ],
+        "9.1.3": [
+          "SCI-T3-DRAFT-037"
+        ],
+        "9.1.4": [
+          "SCI-T3-DRAFT-037"
+        ],
+        "9.1.5": [
+          "SCI-T3-DRAFT-038"
+        ],
+        "10.1.1": [
+          "SCI-T3-DRAFT-039"
+        ],
+        "10.1.2": [
+          "SCI-T3-DRAFT-039"
+        ],
+        "10.1.3": [
+          "SCI-T3-DRAFT-039"
+        ],
+        "10.1.4": [
+          "SCI-T3-DRAFT-040"
+        ],
+        "10.1.5": [
+          "SCI-T3-DRAFT-040"
+        ]
+      },
+      "by_exact_sp_set": {
+        "1.1.1": [
+          "SCI-T3-DRAFT-001"
+        ],
+        "1.1.2": [
+          "SCI-T3-DRAFT-002"
+        ],
+        "1.1.3": [
+          "SCI-T3-DRAFT-003"
+        ],
+        "1.1.4": [
+          "SCI-T3-DRAFT-004"
+        ],
+        "1.1.5": [
+          "SCI-T3-DRAFT-005"
+        ],
+        "1.1.6": [
+          "SCI-T3-DRAFT-006"
+        ],
+        "1.2.1|1.2.2|1.2.3": [
+          "SCI-T3-DRAFT-007"
+        ],
+        "1.2.4|1.2.5": [
+          "SCI-T3-DRAFT-008"
+        ],
+        "2.1.1": [
+          "SCI-T3-DRAFT-009"
+        ],
+        "3.1.1": [
+          "SCI-T3-DRAFT-010"
+        ],
+        "3.1.2": [
+          "SCI-T3-DRAFT-011"
+        ],
+        "3.1.3": [
+          "SCI-T3-DRAFT-012"
+        ],
+        "3.1.4|3.1.5": [
+          "SCI-T3-DRAFT-013"
+        ],
+        "3.2.1": [
+          "SCI-T3-DRAFT-014"
+        ],
+        "3.2.2": [
+          "SCI-T3-DRAFT-015"
+        ],
+        "3.2.3|3.2.4|3.2.5": [
+          "SCI-T3-DRAFT-016"
+        ],
+        "3.3.1": [
+          "SCI-T3-DRAFT-017"
+        ],
+        "3.3.2|3.3.3|3.3.4": [
+          "SCI-T3-DRAFT-018"
+        ],
+        "4.1.1|4.1.2": [
+          "SCI-T3-DRAFT-019"
+        ],
+        "4.1.3": [
+          "SCI-T3-DRAFT-020"
+        ],
+        "4.1.4|4.1.5": [
+          "SCI-T3-DRAFT-021"
+        ],
+        "5.1.1": [
+          "SCI-T3-DRAFT-022"
+        ],
+        "5.1.2": [
+          "SCI-T3-DRAFT-023"
+        ],
+        "5.1.3|5.1.4": [
+          "SCI-T3-DRAFT-024"
+        ],
+        "6.1.1|6.1.2": [
+          "SCI-T3-DRAFT-025"
+        ],
+        "6.1.3": [
+          "SCI-T3-DRAFT-026"
+        ],
+        "6.1.4": [
+          "SCI-T3-DRAFT-027"
+        ],
+        "6.1.5": [
+          "SCI-T3-DRAFT-028"
+        ],
+        "6.1.6|6.1.7": [
+          "SCI-T3-DRAFT-029"
+        ],
+        "7.1.1|7.1.2": [
+          "SCI-T3-DRAFT-030"
+        ],
+        "7.1.3|7.1.4": [
+          "SCI-T3-DRAFT-031"
+        ],
+        "8.1.1": [
+          "SCI-T3-DRAFT-032"
+        ],
+        "8.1.2": [
+          "SCI-T3-DRAFT-033"
+        ],
+        "8.1.3|8.1.4": [
+          "SCI-T3-DRAFT-034"
+        ],
+        "9.1.1": [
+          "SCI-T3-DRAFT-035"
+        ],
+        "9.1.2": [
+          "SCI-T3-DRAFT-036"
+        ],
+        "9.1.3|9.1.4": [
+          "SCI-T3-DRAFT-037"
+        ],
+        "9.1.5": [
+          "SCI-T3-DRAFT-038"
+        ],
+        "10.1.1|10.1.2|10.1.3": [
+          "SCI-T3-DRAFT-039"
+        ],
+        "10.1.4|10.1.5": [
+          "SCI-T3-DRAFT-040"
+        ]
+      },
+      "records": [
+        {
+          "candidate_id": "SCI-T3-DRAFT-001",
+          "title": "Pemerhatian timbul dan tenggelam",
+          "sp_codes": [
+            "1.1.1"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-002",
+          "title": "Mengelas haiwan",
+          "sp_codes": [
+            "1.1.2"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-003",
+          "title": "Mengukur masa dan panjang",
+          "sp_codes": [
+            "1.1.3"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-004",
+          "title": "Membuat inferens",
+          "sp_codes": [
+            "1.1.4"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-005",
+          "title": "Meramal berdasarkan data",
+          "sp_codes": [
+            "1.1.5"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-006",
+          "title": "Komunikasi melalui rajah",
+          "sp_codes": [
+            "1.1.6"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-007",
+          "title": "Kendali dan lakar tumbuhan",
+          "sp_codes": [
+            "1.2.1",
+            "1.2.2",
+            "1.2.3"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-008",
+          "title": "Pembersihan dan penyimpanan",
+          "sp_codes": [
+            "1.2.4",
+            "1.2.5"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-009",
+          "title": "Peraturan bilik sains",
+          "sp_codes": [
+            "2.1.1"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-010",
+          "title": "Jenis dan fungsi gigi",
+          "sp_codes": [
+            "3.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-011",
+          "title": "Struktur gigi",
+          "sp_codes": [
+            "3.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-012",
+          "title": "Gigi susu dan gigi kekal",
+          "sp_codes": [
+            "3.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-013",
+          "title": "Penjagaan gigi",
+          "sp_codes": [
+            "3.1.4",
+            "3.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-014",
+          "title": "Kelas makanan",
+          "sp_codes": [
+            "3.2.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-015",
+          "title": "Kepentingan kelas makanan",
+          "sp_codes": [
+            "3.2.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-016",
+          "title": "Hidangan seimbang",
+          "sp_codes": [
+            "3.2.3",
+            "3.2.4",
+            "3.2.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-017",
+          "title": "Proses pencernaan",
+          "sp_codes": [
+            "3.3.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-018",
+          "title": "Aliran makanan",
+          "sp_codes": [
+            "3.3.2",
+            "3.3.3",
+            "3.3.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-019",
+          "title": "Herbivor, karnivor dan omnivor",
+          "sp_codes": [
+            "4.1.1",
+            "4.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-020",
+          "title": "Inferens tabiat pemakanan",
+          "sp_codes": [
+            "4.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-021",
+          "title": "Kegigian haiwan",
+          "sp_codes": [
+            "4.1.4",
+            "4.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-022",
+          "title": "Cara pembiakan tumbuhan",
+          "sp_codes": [
+            "5.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-023",
+          "title": "Kepentingan pembiakan tumbuhan",
+          "sp_codes": [
+            "5.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-024",
+          "title": "Projek pembiakan pelbagai cara",
+          "sp_codes": [
+            "5.1.3",
+            "5.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-025",
+          "title": "Unit luas dan luas sekata",
+          "sp_codes": [
+            "6.1.1",
+            "6.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-026",
+          "title": "Anggar luas tidak sekata",
+          "sp_codes": [
+            "6.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-027",
+          "title": "Isi padu kotak lohong",
+          "sp_codes": [
+            "6.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-028",
+          "title": "Isi padu cecair",
+          "sp_codes": [
+            "6.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-029",
+          "title": "Sesaran air",
+          "sp_codes": [
+            "6.1.6",
+            "6.1.7"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-030",
+          "title": "Ketumpatan dan kedudukan objek",
+          "sp_codes": [
+            "7.1.1",
+            "7.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-031",
+          "title": "Menjadikan air lebih tumpat",
+          "sp_codes": [
+            "7.1.3",
+            "7.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-032",
+          "title": "Ujian litmus",
+          "sp_codes": [
+            "8.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-033",
+          "title": "Rasa dan sentuhan bukan ujian saintifik",
+          "sp_codes": [
+            "8.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-034",
+          "title": "Penunjuk alternatif",
+          "sp_codes": [
+            "8.1.3",
+            "8.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-035",
+          "title": "Ahli Sistem Suria",
+          "sp_codes": [
+            "9.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-036",
+          "title": "Suhu planet",
+          "sp_codes": [
+            "9.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-037",
+          "title": "Orbit dan tempoh edaran planet",
+          "sp_codes": [
+            "9.1.3",
+            "9.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-038",
+          "title": "Model Sistem Suria",
+          "sp_codes": [
+            "9.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-039",
+          "title": "Takal tetap dan kegunaan",
+          "sp_codes": [
+            "10.1.1",
+            "10.1.2",
+            "10.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T3-DRAFT-040",
+          "title": "Model takal berfungsi",
+          "sp_codes": [
+            "10.1.4",
+            "10.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        }
+      ]
+    },
+    "4": {
+      "total": 47,
+      "opening_scope": 6,
+      "nonopening_scope": 41,
+      "unique_sp_codes": 91,
+      "by_sp": {
+        "1.1.1": [
+          "SCI-T4-DRAFT-001"
+        ],
+        "1.1.2": [
+          "SCI-T4-DRAFT-001"
+        ],
+        "1.1.3": [
+          "SCI-T4-DRAFT-002"
+        ],
+        "1.1.4": [
+          "SCI-T4-DRAFT-002"
+        ],
+        "1.1.5": [
+          "SCI-T4-DRAFT-003"
+        ],
+        "1.1.6": [
+          "SCI-T4-DRAFT-003"
+        ],
+        "1.1.7": [
+          "SCI-T4-DRAFT-004"
+        ],
+        "1.1.8": [
+          "SCI-T4-DRAFT-004"
+        ],
+        "1.1.10": [
+          "SCI-T4-DRAFT-005"
+        ],
+        "1.1.9": [
+          "SCI-T4-DRAFT-005"
+        ],
+        "1.1.11": [
+          "SCI-T4-DRAFT-006"
+        ],
+        "1.1.12": [
+          "SCI-T4-DRAFT-006"
+        ],
+        "2.1.1": [
+          "SCI-T4-DRAFT-007"
+        ],
+        "2.1.2": [
+          "SCI-T4-DRAFT-007"
+        ],
+        "2.1.3": [
+          "SCI-T4-DRAFT-008"
+        ],
+        "2.1.4": [
+          "SCI-T4-DRAFT-009"
+        ],
+        "2.1.5": [
+          "SCI-T4-DRAFT-009"
+        ],
+        "2.1.6": [
+          "SCI-T4-DRAFT-009"
+        ],
+        "2.2.1": [
+          "SCI-T4-DRAFT-010"
+        ],
+        "2.2.2": [
+          "SCI-T4-DRAFT-010"
+        ],
+        "2.2.3": [
+          "SCI-T4-DRAFT-011"
+        ],
+        "2.2.4": [
+          "SCI-T4-DRAFT-011"
+        ],
+        "2.3.1": [
+          "SCI-T4-DRAFT-012"
+        ],
+        "2.3.2": [
+          "SCI-T4-DRAFT-012"
+        ],
+        "2.3.3": [
+          "SCI-T4-DRAFT-013"
+        ],
+        "2.3.4": [
+          "SCI-T4-DRAFT-013"
+        ],
+        "2.3.5": [
+          "SCI-T4-DRAFT-013"
+        ],
+        "3.1.1": [
+          "SCI-T4-DRAFT-014"
+        ],
+        "3.1.2": [
+          "SCI-T4-DRAFT-014"
+        ],
+        "3.1.3": [
+          "SCI-T4-DRAFT-015"
+        ],
+        "3.1.4": [
+          "SCI-T4-DRAFT-015"
+        ],
+        "3.2.1": [
+          "SCI-T4-DRAFT-016"
+        ],
+        "3.2.2": [
+          "SCI-T4-DRAFT-016"
+        ],
+        "3.2.3": [
+          "SCI-T4-DRAFT-017"
+        ],
+        "3.2.4": [
+          "SCI-T4-DRAFT-017"
+        ],
+        "4.1.1": [
+          "SCI-T4-DRAFT-018"
+        ],
+        "4.1.2": [
+          "SCI-T4-DRAFT-018"
+        ],
+        "4.1.3": [
+          "SCI-T4-DRAFT-019"
+        ],
+        "4.1.4": [
+          "SCI-T4-DRAFT-019"
+        ],
+        "4.2.1": [
+          "SCI-T4-DRAFT-020"
+        ],
+        "4.2.2": [
+          "SCI-T4-DRAFT-020"
+        ],
+        "4.2.3": [
+          "SCI-T4-DRAFT-020"
+        ],
+        "4.2.4": [
+          "SCI-T4-DRAFT-021"
+        ],
+        "4.2.5": [
+          "SCI-T4-DRAFT-021"
+        ],
+        "5.1.1": [
+          "SCI-T4-DRAFT-022"
+        ],
+        "5.1.2": [
+          "SCI-T4-DRAFT-023"
+        ],
+        "5.1.3": [
+          "SCI-T4-DRAFT-024"
+        ],
+        "5.1.4": [
+          "SCI-T4-DRAFT-024"
+        ],
+        "5.2.1": [
+          "SCI-T4-DRAFT-025"
+        ],
+        "5.2.3": [
+          "SCI-T4-DRAFT-025"
+        ],
+        "5.2.2": [
+          "SCI-T4-DRAFT-026"
+        ],
+        "5.2.4": [
+          "SCI-T4-DRAFT-026"
+        ],
+        "5.3.1": [
+          "SCI-T4-DRAFT-027"
+        ],
+        "5.3.2": [
+          "SCI-T4-DRAFT-027"
+        ],
+        "5.3.3": [
+          "SCI-T4-DRAFT-028"
+        ],
+        "5.3.4": [
+          "SCI-T4-DRAFT-028"
+        ],
+        "6.1.1": [
+          "SCI-T4-DRAFT-029"
+        ],
+        "6.1.2": [
+          "SCI-T4-DRAFT-029"
+        ],
+        "6.1.3": [
+          "SCI-T4-DRAFT-030"
+        ],
+        "6.1.4": [
+          "SCI-T4-DRAFT-031"
+        ],
+        "6.1.5": [
+          "SCI-T4-DRAFT-031"
+        ],
+        "7.1.1": [
+          "SCI-T4-DRAFT-032"
+        ],
+        "7.1.2": [
+          "SCI-T4-DRAFT-032"
+        ],
+        "7.1.3": [
+          "SCI-T4-DRAFT-032"
+        ],
+        "7.1.4": [
+          "SCI-T4-DRAFT-033"
+        ],
+        "7.1.5": [
+          "SCI-T4-DRAFT-033"
+        ],
+        "7.1.6": [
+          "SCI-T4-DRAFT-033"
+        ],
+        "7.2.1": [
+          "SCI-T4-DRAFT-034"
+        ],
+        "7.2.2": [
+          "SCI-T4-DRAFT-035"
+        ],
+        "7.2.3": [
+          "SCI-T4-DRAFT-035"
+        ],
+        "8.1.1": [
+          "SCI-T4-DRAFT-036"
+        ],
+        "8.1.2": [
+          "SCI-T4-DRAFT-036"
+        ],
+        "8.1.3": [
+          "SCI-T4-DRAFT-036"
+        ],
+        "8.2.1": [
+          "SCI-T4-DRAFT-037",
+          "SCI-T4-DRAFT-038",
+          "SCI-T4-DRAFT-039"
+        ],
+        "8.2.2": [
+          "SCI-T4-DRAFT-040"
+        ],
+        "8.2.3": [
+          "SCI-T4-DRAFT-040"
+        ],
+        "8.2.4": [
+          "SCI-T4-DRAFT-040"
+        ],
+        "9.1.1": [
+          "SCI-T4-DRAFT-041"
+        ],
+        "9.1.2": [
+          "SCI-T4-DRAFT-041"
+        ],
+        "9.1.3": [
+          "SCI-T4-DRAFT-041"
+        ],
+        "9.2.1": [
+          "SCI-T4-DRAFT-042"
+        ],
+        "9.2.2": [
+          "SCI-T4-DRAFT-042"
+        ],
+        "9.2.3": [
+          "SCI-T4-DRAFT-043"
+        ],
+        "9.2.4": [
+          "SCI-T4-DRAFT-043"
+        ],
+        "10.1.1": [
+          "SCI-T4-DRAFT-044"
+        ],
+        "10.1.2": [
+          "SCI-T4-DRAFT-045"
+        ],
+        "10.1.3": [
+          "SCI-T4-DRAFT-045"
+        ],
+        "10.2.1": [
+          "SCI-T4-DRAFT-046"
+        ],
+        "10.2.2": [
+          "SCI-T4-DRAFT-047"
+        ],
+        "10.2.3": [
+          "SCI-T4-DRAFT-047"
+        ],
+        "10.2.4": [
+          "SCI-T4-DRAFT-047"
+        ]
+      },
+      "by_exact_sp_set": {
+        "1.1.1|1.1.2": [
+          "SCI-T4-DRAFT-001"
+        ],
+        "1.1.3|1.1.4": [
+          "SCI-T4-DRAFT-002"
+        ],
+        "1.1.5|1.1.6": [
+          "SCI-T4-DRAFT-003"
+        ],
+        "1.1.7|1.1.8": [
+          "SCI-T4-DRAFT-004"
+        ],
+        "1.1.10|1.1.9": [
+          "SCI-T4-DRAFT-005"
+        ],
+        "1.1.11|1.1.12": [
+          "SCI-T4-DRAFT-006"
+        ],
+        "2.1.1|2.1.2": [
+          "SCI-T4-DRAFT-007"
+        ],
+        "2.1.3": [
+          "SCI-T4-DRAFT-008"
+        ],
+        "2.1.4|2.1.5|2.1.6": [
+          "SCI-T4-DRAFT-009"
+        ],
+        "2.2.1|2.2.2": [
+          "SCI-T4-DRAFT-010"
+        ],
+        "2.2.3|2.2.4": [
+          "SCI-T4-DRAFT-011"
+        ],
+        "2.3.1|2.3.2": [
+          "SCI-T4-DRAFT-012"
+        ],
+        "2.3.3|2.3.4|2.3.5": [
+          "SCI-T4-DRAFT-013"
+        ],
+        "3.1.1|3.1.2": [
+          "SCI-T4-DRAFT-014"
+        ],
+        "3.1.3|3.1.4": [
+          "SCI-T4-DRAFT-015"
+        ],
+        "3.2.1|3.2.2": [
+          "SCI-T4-DRAFT-016"
+        ],
+        "3.2.3|3.2.4": [
+          "SCI-T4-DRAFT-017"
+        ],
+        "4.1.1|4.1.2": [
+          "SCI-T4-DRAFT-018"
+        ],
+        "4.1.3|4.1.4": [
+          "SCI-T4-DRAFT-019"
+        ],
+        "4.2.1|4.2.2|4.2.3": [
+          "SCI-T4-DRAFT-020"
+        ],
+        "4.2.4|4.2.5": [
+          "SCI-T4-DRAFT-021"
+        ],
+        "5.1.1": [
+          "SCI-T4-DRAFT-022"
+        ],
+        "5.1.2": [
+          "SCI-T4-DRAFT-023"
+        ],
+        "5.1.3|5.1.4": [
+          "SCI-T4-DRAFT-024"
+        ],
+        "5.2.1|5.2.3": [
+          "SCI-T4-DRAFT-025"
+        ],
+        "5.2.2|5.2.4": [
+          "SCI-T4-DRAFT-026"
+        ],
+        "5.3.1|5.3.2": [
+          "SCI-T4-DRAFT-027"
+        ],
+        "5.3.3|5.3.4": [
+          "SCI-T4-DRAFT-028"
+        ],
+        "6.1.1|6.1.2": [
+          "SCI-T4-DRAFT-029"
+        ],
+        "6.1.3": [
+          "SCI-T4-DRAFT-030"
+        ],
+        "6.1.4|6.1.5": [
+          "SCI-T4-DRAFT-031"
+        ],
+        "7.1.1|7.1.2|7.1.3": [
+          "SCI-T4-DRAFT-032"
+        ],
+        "7.1.4|7.1.5|7.1.6": [
+          "SCI-T4-DRAFT-033"
+        ],
+        "7.2.1": [
+          "SCI-T4-DRAFT-034"
+        ],
+        "7.2.2|7.2.3": [
+          "SCI-T4-DRAFT-035"
+        ],
+        "8.1.1|8.1.2|8.1.3": [
+          "SCI-T4-DRAFT-036"
+        ],
+        "8.2.1": [
+          "SCI-T4-DRAFT-037",
+          "SCI-T4-DRAFT-038",
+          "SCI-T4-DRAFT-039"
+        ],
+        "8.2.2|8.2.3|8.2.4": [
+          "SCI-T4-DRAFT-040"
+        ],
+        "9.1.1|9.1.2|9.1.3": [
+          "SCI-T4-DRAFT-041"
+        ],
+        "9.2.1|9.2.2": [
+          "SCI-T4-DRAFT-042"
+        ],
+        "9.2.3|9.2.4": [
+          "SCI-T4-DRAFT-043"
+        ],
+        "10.1.1": [
+          "SCI-T4-DRAFT-044"
+        ],
+        "10.1.2|10.1.3": [
+          "SCI-T4-DRAFT-045"
+        ],
+        "10.2.1": [
+          "SCI-T4-DRAFT-046"
+        ],
+        "10.2.2|10.2.3|10.2.4": [
+          "SCI-T4-DRAFT-047"
+        ]
+      },
+      "records": [
+        {
+          "candidate_id": "SCI-T4-DRAFT-001",
+          "title": "Pemerhatian dan pengelasan bahan",
+          "sp_codes": [
+            "1.1.1",
+            "1.1.2"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-002",
+          "title": "Ukuran dan inferens bayang",
+          "sp_codes": [
+            "1.1.3",
+            "1.1.4"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-003",
+          "title": "Ramalan dan komunikasi",
+          "sp_codes": [
+            "1.1.5",
+            "1.1.6"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-004",
+          "title": "Ruang, masa dan tafsiran data",
+          "sp_codes": [
+            "1.1.7",
+            "1.1.8"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-005",
+          "title": "Definisi operasi dan pemboleh ubah",
+          "sp_codes": [
+            "1.1.10",
+            "1.1.9"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-006",
+          "title": "Hipotesis dan eksperimen bayang",
+          "sp_codes": [
+            "1.1.11",
+            "1.1.12"
+          ],
+          "opening_scope": true,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-007",
+          "title": "Organ dan laluan udara",
+          "sp_codes": [
+            "2.1.1",
+            "2.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-008",
+          "title": "Kandungan udara pernafasan",
+          "sp_codes": [
+            "2.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-009",
+          "title": "Gerakan dada dan kadar pernafasan",
+          "sp_codes": [
+            "2.1.4",
+            "2.1.5",
+            "2.1.6"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-010",
+          "title": "Perkumuhan dan penyahtinjaan",
+          "sp_codes": [
+            "2.2.1",
+            "2.2.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-011",
+          "title": "Kepentingan penyingkiran bahan buangan",
+          "sp_codes": [
+            "2.2.3",
+            "2.2.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-012",
+          "title": "Rangsangan dan gerak balas",
+          "sp_codes": [
+            "2.3.1",
+            "2.3.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-013",
+          "title": "Kepentingan gerak balas",
+          "sp_codes": [
+            "2.3.3",
+            "2.3.4",
+            "2.3.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-014",
+          "title": "Organ pernafasan haiwan",
+          "sp_codes": [
+            "3.1.1",
+            "3.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-015",
+          "title": "Haiwan dengan lebih daripada satu organ pernafasan",
+          "sp_codes": [
+            "3.1.3",
+            "3.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-016",
+          "title": "Vertebrata dan invertebrata",
+          "sp_codes": [
+            "3.2.1",
+            "3.2.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-017",
+          "title": "Lima kelas vertebrata",
+          "sp_codes": [
+            "3.2.3",
+            "3.2.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-018",
+          "title": "Bahagian tumbuhan dan rangsangan",
+          "sp_codes": [
+            "4.1.1",
+            "4.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-019",
+          "title": "Penyiasatan gerak balas pucuk",
+          "sp_codes": [
+            "4.1.3",
+            "4.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-020",
+          "title": "Fotosintesis: keperluan dan hasil",
+          "sp_codes": [
+            "4.2.1",
+            "4.2.2",
+            "4.2.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-021",
+          "title": "Kepentingan fotosintesis",
+          "sp_codes": [
+            "4.2.4",
+            "4.2.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-022",
+          "title": "Cahaya bergerak lurus",
+          "sp_codes": [
+            "5.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-023",
+          "title": "Bayang objek lutsinar, lut cahaya dan legap",
+          "sp_codes": [
+            "5.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-024",
+          "title": "Faktor saiz dan bentuk bayang",
+          "sp_codes": [
+            "5.1.3",
+            "5.1.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-025",
+          "title": "Pantulan dan rajah sinar",
+          "sp_codes": [
+            "5.2.1",
+            "5.2.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-026",
+          "title": "Aplikasi pantulan cahaya",
+          "sp_codes": [
+            "5.2.2",
+            "5.2.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-027",
+          "title": "Pembiasan cahaya",
+          "sp_codes": [
+            "5.3.1",
+            "5.3.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-028",
+          "title": "Pembentukan pelangi",
+          "sp_codes": [
+            "5.3.3",
+            "5.3.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-029",
+          "title": "Getaran dan arah bunyi",
+          "sp_codes": [
+            "6.1.1",
+            "6.1.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-030",
+          "title": "Pantulan bunyi",
+          "sp_codes": [
+            "6.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-031",
+          "title": "Bunyi berfaedah dan pencemaran bunyi",
+          "sp_codes": [
+            "6.1.4",
+            "6.1.5"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-032",
+          "title": "Sumber dan bentuk tenaga",
+          "sp_codes": [
+            "7.1.1",
+            "7.1.2",
+            "7.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-033",
+          "title": "Perubahan bentuk tenaga",
+          "sp_codes": [
+            "7.1.4",
+            "7.1.5",
+            "7.1.6"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-034",
+          "title": "Sumber boleh dan tidak boleh dibaharui",
+          "sp_codes": [
+            "7.2.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-035",
+          "title": "Penggunaan tenaga berhemah",
+          "sp_codes": [
+            "7.2.2",
+            "7.2.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-036",
+          "title": "Sumber asas bahan",
+          "sp_codes": [
+            "8.1.1",
+            "8.1.2",
+            "8.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-037",
+          "title": "Sifat bahan: air dan cahaya",
+          "sp_codes": [
+            "8.2.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-038",
+          "title": "Sifat bahan: arus elektrik, haba dan kekenyalan",
+          "sp_codes": [
+            "8.2.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-039",
+          "title": "Sifat bahan: terapung dan tenggelam",
+          "sp_codes": [
+            "8.2.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-040",
+          "title": "Reka cipta objek berdasarkan sifat bahan",
+          "sp_codes": [
+            "8.2.2",
+            "8.2.3",
+            "8.2.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-041",
+          "title": "Graviti Bumi",
+          "sp_codes": [
+            "9.1.1",
+            "9.1.2",
+            "9.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-042",
+          "title": "Putaran dan peredaran Bumi",
+          "sp_codes": [
+            "9.2.1",
+            "9.2.2"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-043",
+          "title": "Kesan putaran Bumi",
+          "sp_codes": [
+            "9.2.3",
+            "9.2.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-044",
+          "title": "Beban, fulkrum dan daya",
+          "sp_codes": [
+            "10.1.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-045",
+          "title": "Jarak beban dan daya tuas",
+          "sp_codes": [
+            "10.1.2",
+            "10.1.3"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-046",
+          "title": "Jenis mesin ringkas",
+          "sp_codes": [
+            "10.2.1"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        },
+        {
+          "candidate_id": "SCI-T4-DRAFT-047",
+          "title": "Mesin kompleks",
+          "sp_codes": [
+            "10.2.2",
+            "10.2.3",
+            "10.2.4"
+          ],
+          "opening_scope": false,
+          "ready": false,
+          "matched_native_id": null
+        }
+      ]
+    }
+  },
+  "policy": "Exact SP set is only a shortlist, not proof of lesson match. Require native identity, source title, textbook and duration, ordinary RPH activity and assessment before writing a reviewed 5P companion. Never collapse repeated SP across multiple native PdP or replace existing RPH. Opening candidates overlap 22 new source-adapted plans; do not add them to totals. Remaining 175 exact PdP cannot be inferred from 112 nonopening candidates.",
+  "review_attention": [
+    {
+      "candidate": "SCI-T3-DRAFT-033",
+      "reason": "Teach taste/feel properties via safe reference examples only; no tasting or touching unknown test materials. Verify actual 8.1.2 scope."
+    },
+    {
+      "candidate": "SCI-T4-DRAFT-007",
+      "reason": "Include gas exchange in lungs if native lesson covers full 2.1.2, not just the air pathway."
+    },
+    {
+      "candidate": "SCI-T4-DRAFT-010",
+      "reason": "Keep excretion and egestion distinct; map organ and excretory product explicitly."
+    },
+    {
+      "candidate": "SCI-T4-DRAFT-035",
+      "reason": "Separate renewable resources, responsible use and communication when native SP scope differs."
+    }
+  ]
+}

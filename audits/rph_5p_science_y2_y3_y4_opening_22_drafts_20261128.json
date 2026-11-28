@@ -1,0 +1,707 @@
+{
+  "status": "SOURCE_ADAPTED_DRAFT_ONLY",
+  "source_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+  "total": 22,
+  "counts": {
+    "2": 7,
+    "3": 9,
+    "4": 6
+  },
+  "limitations": "Pinned original opening plans, which are conditionally inserted when native opening SK is missing. Not all native catalogues, not proof of current selection availability. Duration and full DSKP wording not inferred; actual RPT mapping, complete source inventory and document checks pending. Existing RPH unchanged.",
+  "records": [
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-052",
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "title": "Memerhati perubahan pada bahan",
+      "textbook_pages": "2–4",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Merekod dua perubahan yang boleh dilihat atau disentuh selepas bahan dibasahkan.",
+        "materials": "Span, kertas, penitis, air dan jadual sebelum dan selepas.",
+        "induction": "Guru menunjukkan kertas kering dan lembap. Murid menyebut perbezaan yang dapat dilihat.",
+        "guided": "Guru memodelkan catatan sebelum dan selepas. Murid menitiskan air pada span dan kertas serta memerhatikan perubahan.",
+        "independent": "Murid merekod dua perubahan individu. Guru meminta murid menunjuk pemerhatian yang menyokong setiap catatan.",
+        "assessment": "Guru menyemak dua catatan perubahan dan deria yang sesuai.",
+        "closure": "Murid membandingkan perubahan yang berlaku pada kedua-dua bahan.",
+        "follow_up": "Beri pilihan kata ciri. Murid yang sudah menguasai kemahiran menambah catatan apabila bahan kering."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan kertas kering dan lembap. Murid menyebut perbezaan yang dapat dilihat.",
+        "exploration": "Murid perhatikan span dan kertas kering, kemudian titiskan air dengan penitis pada kedua-duanya dan rekod ciri selepas dibasahkan.",
+        "explanation": "Banding catatan sebelum/selepas; guru membezakan perubahan yang benar-benar diperhatikan daripada andaian.",
+        "elaboration": "Murid merekod dua perubahan individu. Guru meminta murid menunjuk pemerhatian yang menyokong setiap catatan.",
+        "evaluation": "Guru menyemak dua catatan perubahan dan deria yang sesuai."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-053",
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "title": "Mengelas objek mengikut bahan",
+      "textbook_pages": "5–7",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Mengelaskan enam objek kepada dua kumpulan dan menyatakan ciri sepunya bagi setiap kumpulan.",
+        "materials": "Objek plastik dan kertas yang bersih, alas kumpulan dan kad label.",
+        "induction": "Guru menunjukkan pembaris plastik dan kad. Murid menyebut satu perbezaan bahan.",
+        "guided": "Guru meminta murid memilih ciri pengelasan. Murid mengasingkan enam objek secara berpasangan dan melabel kumpulan.",
+        "independent": "Murid mengelaskan set kad baharu sendiri. Guru meminta mereka menjelaskan penempatan satu objek.",
+        "assessment": "Guru menyemak enam kedudukan dan dua label kumpulan serta satu alasan.",
+        "closure": "Murid menjelaskan bagaimana set objek yang sama boleh dikelaskan mengikut saiz.",
+        "follow_up": "Sediakan satu contoh pada setiap alas. Murid yang sudah menguasai kemahiran mengelaskan mengikut dua ciri."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan pembaris plastik dan kad. Murid menyebut satu perbezaan bahan.",
+        "exploration": "Murid teliti enam objek bersih, pilih ciri bahan dan asingkan pada dua alas.",
+        "explanation": "Murid nyatakan ciri sepunya setiap kumpulan; guru semak padanan label plastik/kertas.",
+        "elaboration": "Murid mengelaskan set kad baharu sendiri. Guru meminta mereka menjelaskan penempatan satu objek.",
+        "evaluation": "Guru menyemak enam kedudukan dan dua label kumpulan serta satu alasan."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-054",
+      "sp_codes": [
+        "1.1.3"
+      ],
+      "title": "Mengukur panjang dengan pembaris",
+      "textbook_pages": "8–9",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Mengukur tiga jalur kad dan merekod setiap bacaan dalam sentimeter.",
+        "materials": "Pembaris, tiga jalur kad dan jadual ukuran.",
+        "induction": "Guru menunjukkan dua jalur. Murid menganggar jalur yang lebih panjang.",
+        "guided": "Guru menunjukkan kedudukan tanda sifar dan mata di atas skala. Murid mencuba satu ukuran secara berpasangan.",
+        "independent": "Murid mengukur tiga jalur sendiri dan merekod bacaan. Guru membimbing murid membetulkan kedudukan pembaris.",
+        "assessment": "Guru menyemak titik mula, tiga bacaan dan unit cm.",
+        "closure": "Murid menjelaskan perbezaan antara anggaran dan ukuran.",
+        "follow_up": "Tandakan sifar pada pembaris. Murid yang sudah menguasai kemahiran membandingkan beza dua ukuran."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan dua jalur. Murid menganggar jalur yang lebih panjang.",
+        "exploration": "Murid cuba mengukur satu jalur dengan pembaris bermula pada tanda sifar.",
+        "explanation": "Guru tunjuk kedudukan mata pada skala; murid terangkan cara membaca nombor bersama unit cm.",
+        "elaboration": "Murid mengukur tiga jalur sendiri dan merekod bacaan. Guru membimbing murid membetulkan kedudukan pembaris.",
+        "evaluation": "Guru menyemak titik mula, tiga bacaan dan unit cm."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-055",
+      "sp_codes": [
+        "1.1.4"
+      ],
+      "title": "Merekod dan menyampaikan dapatan",
+      "textbook_pages": "10–11",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Melengkapkan jadual dengan tiga catatan dan menerangkan satu dapatan kepada rakan.",
+        "materials": "Kad objek, jadual mudah dan pensel.",
+        "induction": "Guru menunjukkan satu rekod tanpa label. Murid mencadangkan label yang sesuai.",
+        "guided": "Guru menunjukkan cara merekod kategori dan bilangan. Murid mengira kad daripada tiga kategori bersama pasangan.",
+        "independent": "Murid mengisi jadual sendiri dan menyampaikan satu perbandingan. Guru meminta murid menunjuk nilai yang dirujuk.",
+        "assessment": "Guru menyemak tiga nilai, label jadual dan kesesuaian dapatan lisan.",
+        "closure": "Murid menerangkan cara jadual membantu rakan memahami maklumat.",
+        "follow_up": "Beri jadual berlabel. Murid yang sudah menguasai kemahiran menukar jadual kepada carta gambar."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan satu rekod tanpa label. Murid mencadangkan label yang sesuai.",
+        "exploration": "Murid kira kad tiga kategori dan susun rekod pada jadual berlabel.",
+        "explanation": "Guru semak tiga bilangan; murid menerangkan satu dapatan dengan menunjuk nilai jadual.",
+        "elaboration": "Murid mengisi jadual sendiri dan menyampaikan satu perbandingan. Guru meminta murid menunjuk nilai yang dirujuk.",
+        "evaluation": "Guru menyemak tiga nilai, label jadual dan kesesuaian dapatan lisan."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-056",
+      "sp_codes": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "title": "Mengendalikan dan melakar biji benih",
+      "textbook_pages": "12–14",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Mengendalikan biji benih dengan cermat, menggunakan kanta dan melakar dua ciri yang dilihat.",
+        "materials": "Biji benih kering, dulang, kanta tangan dan kertas.",
+        "induction": "Guru menunjukkan biji benih. Murid menyatakan alat yang membantu melihat permukaannya.",
+        "guided": "Guru menunjukkan cara memindahkan biji benih ke dulang dan melaraskan kanta. Murid berlatih mengikut giliran.",
+        "independent": "Murid melakar bentuk dan satu ciri permukaan. Guru membantu murid menyemak lakaran dengan spesimen.",
+        "assessment": "Guru menyemak cara mengendalikan biji benih, teknik penggunaan kanta dan dua ciri lakaran.",
+        "closure": "Murid menjelaskan cara mengelakkan biji benih daripada terjatuh.",
+        "follow_up": "Sediakan gambar pembesaran. Murid yang sudah menguasai kemahiran membandingkan dua jenis biji benih."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan biji benih. Murid menyatakan alat yang membantu melihat permukaannya.",
+        "exploration": "Murid gunakan dulang dan kanta untuk meneliti biji benih kering tanpa merosakkannya.",
+        "explanation": "Guru tunjuk teknik melaras kanta; murid bezakan bentuk biji dan ciri permukaan yang terlihat.",
+        "elaboration": "Murid melakar bentuk dan satu ciri permukaan. Guru membantu murid menyemak lakaran dengan spesimen.",
+        "evaluation": "Guru menyemak cara mengendalikan biji benih, teknik penggunaan kanta dan dua ciri lakaran."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-057",
+      "sp_codes": [
+        "1.2.4",
+        "1.2.5"
+      ],
+      "title": "Menjaga peralatan selepas penyiasatan",
+      "textbook_pages": "12–14",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Membersihkan dan menyimpan dua peralatan mengikut arahan penjagaan yang sesuai.",
+        "materials": "Dulang plastik, kanta tangan, kain lembut dan label rak.",
+        "induction": "Guru menunjukkan dua peralatan yang telah digunakan. Murid menerangkan cara menjaganya.",
+        "guided": "Guru membezakan cara mengelap dulang dan kanta. Murid berlatih dengan kain yang disediakan.",
+        "independent": "Murid mengeringkan dulang dan menyimpan kedua-dua alatan pada tempat berlabel. Guru menyemak proses setiap murid.",
+        "assessment": "Guru menanda kaedah membersihkan dan tempat simpan bagi setiap alatan.",
+        "closure": "Murid menerangkan mengapa kanta memerlukan kain lembut.",
+        "follow_up": "Paparkan kad panduan alatan. Murid yang sudah menguasai kemahiran menyemak keadaan rak."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan dua peralatan yang telah digunakan. Murid menerangkan cara menjaganya.",
+        "exploration": "Murid perhatikan keadaan dulang dan kanta selepas aktiviti, kemudian cuba kaedah membersih yang sesuai.",
+        "explanation": "Guru banding cara mengelap plastik dan kanta; murid jelaskan sebab menggunakan kain lembut.",
+        "elaboration": "Murid mengeringkan dulang dan menyimpan kedua-dua alatan pada tempat berlabel. Guru menyemak proses setiap murid.",
+        "evaluation": "Guru menanda kaedah membersihkan dan tempat simpan bagi setiap alatan."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-058",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "title": "Mengamalkan peraturan bilik sains",
+      "textbook_pages": "18–20",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Mematuhi satu peraturan sebelum, satu semasa dan satu selepas aktiviti.",
+        "materials": "Kad situasi, dulang plastik dan senarai semak guru.",
+        "induction": "Guru menunjukkan gambar laluan yang terhalang. Murid mencadangkan cara memastikan laluan selamat.",
+        "guided": "Guru membimbing simulasi masuk, mengambil alatan dengan izin dan melaporkan tumpahan. Murid bergilir melakonkan situasi.",
+        "independent": "Murid menjalankan tugasan ringkas dan mengemas ruang mengikut arahan. Guru memerhati tiga peringkat.",
+        "assessment": "Guru menanda amalan individu pada ketiga-tiga peringkat dan merekod tindakan yang perlu dibimbing.",
+        "closure": "Murid menerangkan akibat jika satu peraturan diabaikan.",
+        "follow_up": "Sediakan kad bergambar. Murid yang sudah menguasai kemahiran menerangkan cara melapor alatan rosak."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan gambar laluan yang terhalang. Murid mencadangkan cara memastikan laluan selamat.",
+        "exploration": "Murid lakonkan masuk dengan tertib, mengambil alat dengan izin dan melaporkan tumpahan.",
+        "explanation": "Guru bincang risiko bagi setiap situasi; murid padankan tindakan dengan peringkat sebelum, semasa dan selepas.",
+        "elaboration": "Murid menjalankan tugasan ringkas dan mengemas ruang mengikut arahan. Guru memerhati tiga peringkat.",
+        "evaluation": "Guru menanda amalan individu pada ketiga-tiga peringkat dan merekod tindakan yang perlu dibimbing."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-080",
+      "sp_codes": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "title": "Memerhati, mengelas dan menimbang bahan",
+      "textbook_pages": "2–4",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Merekod dua ciri bahan, membentuk dua kumpulan dan menimbang satu sampel dalam gram.",
+        "materials": "Sampel bersih kertas dan plastik, penimbang dan jadual.",
+        "induction": "Guru menunjukkan dua bahan kitar semula. Murid membandingkan ciri yang dapat diperhatikan.",
+        "guided": "Guru menunjukkan cara melaras penimbang ke sifar. Murid mengelas bahan dan menimbang satu kumpulan sampel.",
+        "independent": "Murid merekod ciri dan jisim dalam jadual individu. Guru menyemak unit serta asas pengelasan.",
+        "assessment": "Guru menyemak dua ciri, dua kumpulan dan satu bacaan dengan unit g.",
+        "closure": "Murid menyatakan ciri yang digunakan untuk mengelas sampel.",
+        "follow_up": "Sediakan jadual separa lengkap. Murid yang sudah menguasai kemahiran menimbang kumpulan kedua."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan dua bahan kitar semula. Murid membandingkan ciri yang dapat diperhatikan.",
+        "exploration": "Murid perhatikan sampel kertas dan plastik, kelaskan mengikut bahan dan timbang satu sampel pada penimbang disifar.",
+        "explanation": "Guru semak asas pengelasan dan bacaan gram; murid bezakan ciri kualitatif dengan ukuran.",
+        "elaboration": "Murid merekod ciri dan jisim dalam jadual individu. Guru menyemak unit serta asas pengelasan.",
+        "evaluation": "Guru menyemak dua ciri, dua kumpulan dan satu bacaan dengan unit g."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-081",
+      "sp_codes": [
+        "1.1.4",
+        "1.1.5",
+        "1.1.6"
+      ],
+      "title": "Membina inferens dan ramalan daripada pemerhatian",
+      "textbook_pages": "3–5",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Menyampaikan satu inferens dan satu ramalan dengan merujuk pemerhatian pada kad situasi.",
+        "materials": "Kad gambar kertas basah dan kering pada sela masa berbeza.",
+        "induction": "Guru menunjukkan dua gambar kertas. Murid menyebut perubahan yang dapat dilihat.",
+        "guided": "Guru membezakan pemerhatian, kemungkinan sebab dan jangkaan. Murid menyusun bukti pada carta tiga lajur.",
+        "independent": "Murid menjelaskan inferens dan ramalan bagi gambar baharu kepada pasangan. Guru meminta bukti bagi setiap pernyataan.",
+        "assessment": "Guru menyemak satu inferens, satu ramalan dan rujukan kepada bukti pada carta individu.",
+        "closure": "Murid menerangkan mengapa inferens ialah penjelasan awal.",
+        "follow_up": "Sediakan pemula ayat. Murid yang sudah menguasai kemahiran menyatakan inferens alternatif."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan dua gambar kertas. Murid menyebut perubahan yang dapat dilihat.",
+        "exploration": "Murid susun gambar kertas basah/kering mengikut sela masa dan catat perubahan pada carta tiga lajur.",
+        "explanation": "Guru bezakan pemerhatian, kemungkinan sebab dan jangkaan; murid beri bukti bagi inferens serta ramalan.",
+        "elaboration": "Murid menjelaskan inferens dan ramalan bagi gambar baharu kepada pasangan. Guru meminta bukti bagi setiap pernyataan.",
+        "evaluation": "Guru menyemak satu inferens, satu ramalan dan rujukan kepada bukti pada carta individu."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-082",
+      "sp_codes": [
+        "1.1.7",
+        "1.1.8"
+      ],
+      "title": "Menyusun perubahan dan mentafsir data",
+      "textbook_pages": "6–9",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Menyusun empat pemerhatian mengikut masa dan menerangkan satu pola dengan dua nilai.",
+        "materials": "Kad masa dan jarak, jalur kertas dan jadual.",
+        "induction": "Guru menunjukkan dua kedudukan objek. Murid mencadangkan maklumat untuk menentukan urutan.",
+        "guided": "Guru membimbing murid menyusun kad mengikut masa. Murid memindahkan bacaan jarak ke jadual.",
+        "independent": "Murid menerangkan perubahan jarak dengan dua nilai daripada jadual sendiri. Guru menyemak hubungan yang dinyatakan.",
+        "assessment": "Guru menyemak urutan empat kad dan dua nilai yang menyokong tafsiran.",
+        "closure": "Murid menyatakan perubahan kedudukan objek apabila masa bertambah.",
+        "follow_up": "Beri garis masa berlabel. Murid yang sudah menguasai kemahiran membandingkan dua set data."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan dua kedudukan objek. Murid mencadangkan maklumat untuk menentukan urutan.",
+        "exploration": "Murid susun empat kad masa dan jarak mengikut turutan; pindahkan nilai ke jadual.",
+        "explanation": "Murid nyatakan pola dengan dua bacaan; guru semak hubungan ruang dan masa berdasarkan data.",
+        "elaboration": "Murid menerangkan perubahan jarak dengan dua nilai daripada jadual sendiri. Guru menyemak hubungan yang dinyatakan.",
+        "evaluation": "Guru menyemak urutan empat kad dan dua nilai yang menyokong tafsiran."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-083",
+      "sp_codes": [
+        "1.1.9"
+      ],
+      "title": "Menetapkan definisi secara operasi",
+      "textbook_pages": "10–11",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Menerangkan cara menguji daya serap kertas dan menyatakan pemerhatian yang digunakan.",
+        "materials": "Dua jenis kertas, penitis, air dan dulang.",
+        "induction": "Guru bertanya cara mengetahui kertas yang lebih menyerap. Murid mencadangkan apa yang perlu dilihat.",
+        "guided": "Guru menunjukkan cara menitiskan isipadu air yang sama. Murid memerhatikan sama ada air masih kelihatan selepas 10 saat.",
+        "independent": "Murid menulis definisi bagi kertas yang menyerap air dalam ujian ini. Guru menyemak tindakan dan petunjuk yang ditulis.",
+        "assessment": "Guru menyemak definisi yang menyebut titisan air, masa dan air yang masih kelihatan.",
+        "closure": "Murid membandingkan definisi mereka dan memilih ayat yang boleh diuji semula.",
+        "follow_up": "Beri rangka 'apabila ... saya perhatikan ...'. Murid lanjutan mencadangkan petunjuk ukuran lain."
+      },
+      "phases": {
+        "engagement": "Guru bertanya cara mengetahui kertas yang lebih menyerap. Murid mencadangkan apa yang perlu dilihat.",
+        "exploration": "Murid banding dua kertas menggunakan titisan air bersukatan sama dan perhatikan selepas 10 saat.",
+        "explanation": "Guru bincang tindakan ujian dan petunjuk air yang masih kelihatan; murid bina takrif operasi khusus ujian.",
+        "elaboration": "Murid menulis definisi bagi kertas yang menyerap air dalam ujian ini. Guru menyemak tindakan dan petunjuk yang ditulis.",
+        "evaluation": "Guru menyemak definisi yang menyebut titisan air, masa dan air yang masih kelihatan."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-084",
+      "sp_codes": [
+        "1.1.10",
+        "1.1.11"
+      ],
+      "title": "Mengawal pemboleh ubah dan membina hipotesis",
+      "textbook_pages": "12–15",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Menetapkan pemboleh ubah bergerak balas dan dimalarkan serta membina satu hipotesis.",
+        "materials": "Kad rancangan ujian adukan gula dan jadual pemboleh ubah.",
+        "induction": "Guru bertanya bagaimana bilangan adukan mungkin mempengaruhi masa gula larut. Murid memberikan jangkaan.",
+        "guided": "Guru menetapkan bilangan adukan awal sebagai pemboleh ubah dimanipulasi. Murid memilih masa pelarutan, suhu dan isi padu air dalam jadual.",
+        "independent": "Murid menulis satu hipotesis dan menjelaskan cara menyeragamkan saiz gula. Guru menyemak hubungan yang boleh diuji.",
+        "assessment": "Guru menyemak dua jenis pemboleh ubah dan hipotesis yang menghubungkannya dengan bilangan adukan.",
+        "closure": "Murid menjelaskan mengapa suhu air perlu sama.",
+        "follow_up": "Sediakan kad jenis pemboleh ubah. Murid lanjutan membandingkan dua reka bentuk ujian."
+      },
+      "phases": {
+        "engagement": "Guru bertanya bagaimana bilangan adukan mungkin mempengaruhi masa gula larut. Murid memberikan jangkaan.",
+        "exploration": "Murid teliti kad rancangan adukan gula, pilih masa pelarutan sebagai respons dan suhu/isipadu sebagai kawalan.",
+        "explanation": "Guru tetapkan bilangan adukan awal sebagai faktor diubah; murid bina hipotesis yang boleh diuji dan nyatakan saiz gula dikawal.",
+        "elaboration": "Murid menulis satu hipotesis dan menjelaskan cara menyeragamkan saiz gula. Guru menyemak hubungan yang boleh diuji.",
+        "evaluation": "Guru menyemak dua jenis pemboleh ubah dan hipotesis yang menghubungkannya dengan bilangan adukan."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-085",
+      "sp_codes": [
+        "1.1.12"
+      ],
+      "title": "Menjalankan eksperimen pelarutan gula",
+      "textbook_pages": "16–19",
+      "source_blob": "05081dbefe80ef00d006da6d315d649e4d41bfe6",
+      "source_path": "web/sains_unit_awal.py",
+      "original": {
+        "objective": "Merekod masa pelarutan untuk dua bilangan adukan awal dan melaporkan kesimpulan berdasarkan data.",
+        "materials": "Gula, air suhu bilik, cawan jernih, sudu, jam randik dan jadual.",
+        "induction": "Guru meminta murid menyemak semula pemboleh ubah dan cara mengenal pasti gula telah larut.",
+        "guided": "Guru membimbing murid menyeragamkan sukatan dan suhu air. Murid membandingkan 5 dan 15 adukan awal, kemudian mencatat masa hingga gula larut.",
+        "independent": "Murid membandingkan dua bacaan dan menulis rumusan ringkas. Guru meminta mereka menyatakan jika data menyokong hipotesis.",
+        "assessment": "Guru menyemak jadual masa, kawalan ujian dan rumusan yang menggunakan bacaan sebenar.",
+        "closure": "Murid menerangkan cara membuat perbandingan yang lebih konsisten.",
+        "follow_up": "Sediakan rangka laporan. Murid lanjutan mengulang ujian dan membandingkan bacaan."
+      },
+      "phases": {
+        "engagement": "Guru meminta murid menyemak semula pemboleh ubah dan cara mengenal pasti gula telah larut.",
+        "exploration": "Murid sediakan dua ujian gula dengan sukatan dan suhu air sama, 5 dan 15 adukan awal; catat masa hingga larut.",
+        "explanation": "Guru semak pemboleh ubah serta takrif larut; murid banding dua bacaan sebenar tanpa memaksa kesimpulan.",
+        "elaboration": "Murid membandingkan dua bacaan dan menulis rumusan ringkas. Guru meminta mereka menyatakan jika data menyokong hipotesis.",
+        "evaluation": "Guru menyemak jadual masa, kawalan ujian dan rumusan yang menggunakan bacaan sebenar."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-046",
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "title": "Memerhati menggunakan deria",
+      "textbook_pages": "2–3",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Merekod tiga ciri dua objek dan menyatakan deria bagi setiap pemerhatian.",
+        "materials": "Kapas, span kering, bekas legap, kad rekod.",
+        "induction": "Guru menunjukkan dua objek. Murid menyatakan perkara yang boleh diperhatikan dengan mata.",
+        "guided": "Guru menunjukkan cara memerhati kapas dengan mata dan sentuhan. Murid merekod warna dan tekstur pada kad.",
+        "independent": "Murid memerhati span secara individu dan menambah satu ciri. Guru meminta murid menyemak padanan ciri dengan deria.",
+        "assessment": "Semak tiga catatan individu dan padanan deria pada kad. Minta murid menunjukkan cara mereka mendapat satu pemerhatian.",
+        "closure": "Murid menerangkan bagaimana dua deria memberikan maklumat yang berbeza tentang span.",
+        "follow_up": "Sediakan kad pilihan deria. Murid yang sudah menguasai kemahiran membandingkan dua objek berdasarkan satu ciri."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan dua objek. Murid menyatakan perkara yang boleh diperhatikan dengan mata.",
+        "exploration": "Murid teliti kapas dan span menggunakan mata dan sentuhan lalu catat warna serta tekstur.",
+        "explanation": "Murid padankan catatan kepada deria; guru bezakan pemerhatian daripada tekaan.",
+        "elaboration": "Murid memerhati span secara individu dan menambah satu ciri. Guru meminta murid menyemak padanan ciri dengan deria.",
+        "evaluation": "Semak tiga catatan individu dan padanan deria pada kad. Minta murid menunjukkan cara mereka mendapat satu pemerhatian."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-047",
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "title": "Mengelas berdasarkan ciri sepunya",
+      "textbook_pages": "4–5",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Mengelaskan enam kad objek mengikut satu ciri yang boleh dilihat dan melabel kedua-dua kumpulan.",
+        "materials": "Kad bentuk pelbagai warna, alas kumpulan, sampul kad individu.",
+        "induction": "Guru menunjukkan kad dengan warna sama tetapi bentuk berlainan. Murid menyebut satu persamaan dan satu perbezaan.",
+        "guided": "Guru meminta murid memilih satu ciri untuk pengelasan. Murid mengasingkan kad mengikut ciri pilihan dan menerangkan sebab.",
+        "independent": "Murid mengelaskan enam kad baharu secara individu dan melabel kedua-dua kumpulan. Guru menyemak kad yang tersalah kumpulan.",
+        "assessment": "Semak enam kad dan dua label. Minta murid menjelaskan ciri sepunya yang digunakan.",
+        "closure": "Murid menunjukkan bagaimana kad yang sama boleh dikelaskan semula menggunakan ciri lain.",
+        "follow_up": "Sediakan dua label ciri untuk dipilih. Murid yang sudah menguasai kemahiran mengelaskan semula kad mengikut bentuk."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan kad dengan warna sama tetapi bentuk berlainan. Murid menyebut satu persamaan dan satu perbezaan.",
+        "exploration": "Murid pilih satu ciri pada kad pelbagai warna/bentuk, asingkan kad dan label dua kumpulan.",
+        "explanation": "Murid menerangkan persamaan dalam kumpulan; guru menyemak sama ada satu ciri digunakan secara konsisten.",
+        "elaboration": "Murid mengelaskan enam kad baharu secara individu dan melabel kedua-dua kumpulan. Guru menyemak kad yang tersalah kumpulan.",
+        "evaluation": "Semak enam kad dan dua label. Minta murid menjelaskan ciri sepunya yang digunakan."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-048",
+      "sp_codes": [
+        "1.1.3"
+      ],
+      "title": "Mengukur panjang dalam sentimeter",
+      "textbook_pages": "6–7",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Mengukur panjang tiga jalur dengan pembaris dan merekod bacaan dalam sentimeter.",
+        "materials": "Pembaris, jalur kad yang panjangnya dalam sentimeter bulat, jadual rekod.",
+        "induction": "Guru menunjukkan dua jalur. Murid menganggar jalur yang lebih panjang.",
+        "guided": "Guru menunjukkan cara menjajarkan hujung jalur dengan tanda sifar dan melihat skala dari atas. Murid mencuba teknik itu secara berpasangan.",
+        "independent": "Murid mengukur tiga jalur sendiri dan merekod nombor bersama unit. Guru memberi maklum balas tentang kedudukan sifar dan mata.",
+        "assessment": "Perhatikan cara memegang pembaris dan semak ketiga-tiga ukuran dengan nilai yang telah guru ukur.",
+        "closure": "Murid menerangkan mengapa ukuran perlu bermula pada tanda sifar.",
+        "follow_up": "Gunakan pembaris bertanda sifar berwarna. Murid yang sudah menguasai kemahiran membandingkan beza panjang dua jalur."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan dua jalur. Murid menganggar jalur yang lebih panjang.",
+        "exploration": "Murid ukur satu jalur kad yang panjangnya dalam cm bulat dengan tanda sifar sejajar.",
+        "explanation": "Guru betulkan paralaks; murid tunjuk hujung jalur pada skala dan sebut unit bacaan.",
+        "elaboration": "Murid mengukur tiga jalur sendiri dan merekod nombor bersama unit. Guru memberi maklum balas tentang kedudukan sifar dan mata.",
+        "evaluation": "Perhatikan cara memegang pembaris dan semak ketiga-tiga ukuran dengan nilai yang telah guru ukur."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-049",
+      "sp_codes": [
+        "1.1.4"
+      ],
+      "title": "Membuat inferens daripada pemerhatian",
+      "textbook_pages": "9–10",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Menulis satu pemerhatian dan dua inferens munasabah tentang situasi yang sama.",
+        "materials": "Gambar lopak di bawah paip, kad pemerhatian dan inferens.",
+        "induction": "Guru menunjukkan gambar lopak di bawah paip. Murid menyatakan perkara yang dapat dilihat dalam gambar.",
+        "guided": "Guru menulis pemerhatian murid. Murid mencadangkan beberapa punca lopak dan menunjuk petunjuk yang menyokong setiap cadangan.",
+        "independent": "Murid meneliti gambar kedua dan menulis satu pemerhatian serta dua kemungkinan punca. Guru meminta alasan bagi satu inferens.",
+        "assessment": "Semak kad individu. Pemerhatian mestilah dapat dilihat dan kedua-dua inferens mesti menerangkan pemerhatian yang sama.",
+        "closure": "Murid mencadangkan maklumat tambahan yang boleh membantu mereka membezakan dua kemungkinan punca.",
+        "follow_up": "Beri pemula ayat 'Saya lihat…' dan 'Mungkin…'. Murid yang sudah menguasai kemahiran mencadangkan satu cara menyemak inferens."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan gambar lopak di bawah paip. Murid menyatakan perkara yang dapat dilihat dalam gambar.",
+        "exploration": "Murid perhatikan gambar lopak, senaraikan ciri yang terlihat dan cadangkan kemungkinan punca.",
+        "explanation": "Guru membezakan pemerhatian dan inferens; murid rujuk petunjuk gambar bagi setiap kemungkinan.",
+        "elaboration": "Murid meneliti gambar kedua dan menulis satu pemerhatian serta dua kemungkinan punca. Guru meminta alasan bagi satu inferens.",
+        "evaluation": "Semak kad individu. Pemerhatian mestilah dapat dilihat dan kedua-dua inferens mesti menerangkan pemerhatian yang sama."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-050",
+      "sp_codes": [
+        "1.1.5"
+      ],
+      "title": "Meramal berdasarkan pola",
+      "textbook_pages": "11–12",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Meramal dua kedudukan seterusnya dalam pola dan menerangkan asas ramalan.",
+        "materials": "Kad pola warna dan bentuk, kad penutup, kad jawapan.",
+        "induction": "Guru menunjukkan pola warna dengan dua ruang terakhir ditutup. Murid menyebut turutan yang telah diperhatikan.",
+        "guided": "Guru meminta murid mencari bahagian pola yang berulang. Murid menyatakan ramalan berserta alasan sebelum guru membuka kad penutup.",
+        "independent": "Murid membuat ramalan individu untuk pola bentuk yang baharu. Guru membuka sambungan pola selepas murid merekod jawapan.",
+        "assessment": "Semak dua bentuk yang diramal dan alasan yang merujuk turutan berulang.",
+        "closure": "Murid menyebut petunjuk yang digunakan untuk membuat ramalan dan membandingkannya dengan sambungan sebenar.",
+        "follow_up": "Tandakan sempadan bahagian yang berulang. Murid yang sudah menguasai kemahiran mencipta pola untuk diuji oleh rakan."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan pola warna dengan dua ruang terakhir ditutup. Murid menyebut turutan yang telah diperhatikan.",
+        "exploration": "Murid kenal pasti unit ulangan dalam jalur warna dengan dua kad ditutup dan ramal sambungan.",
+        "explanation": "Murid beri alasan berasaskan unit ulangan; guru buka kad untuk menyemak ramalan, bukan meneka rawak.",
+        "elaboration": "Murid membuat ramalan individu untuk pola bentuk yang baharu. Guru membuka sambungan pola selepas murid merekod jawapan.",
+        "evaluation": "Semak dua bentuk yang diramal dan alasan yang merujuk turutan berulang."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-051",
+      "sp_codes": [
+        "1.1.6"
+      ],
+      "title": "Berkomunikasi menggunakan carta palang",
+      "textbook_pages": "13–14",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Memindahkan tiga nilai daripada jadual ke carta palang dan menyampaikan satu dapatan.",
+        "materials": "Jadual undian buah, grid carta, pensel dan pembaris.",
+        "induction": "Guru menunjukkan jadual undian dan bertanya cara memaparkan buah yang paling digemari.",
+        "guided": "Guru memodelkan satu palang. Murid membaca kategori, memilih skala satu petak bagi satu undian dan melabel paksi.",
+        "independent": "Murid melengkapkan tiga palang pada grid sendiri dan menyatakan satu dapatan kepada pasangan. Guru menyemak nilai palang dan kategori.",
+        "assessment": "Semak label, tiga nilai palang dan satu dapatan yang selaras dengan carta setiap murid.",
+        "closure": "Murid menerangkan bagaimana carta menunjukkan kategori dengan undian tertinggi.",
+        "follow_up": "Sediakan paksi berlabel. Murid yang sudah menguasai kemahiran menyatakan beza bilangan undian antara dua buah."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan jadual undian dan bertanya cara memaparkan buah yang paling digemari.",
+        "exploration": "Murid pindahkan satu nilai jadual undian buah kepada grid menggunakan satu petak bagi satu undian.",
+        "explanation": "Guru membimbing label paksi dan tinggi palang; murid menerangkan hubungan nilai jadual dengan palang.",
+        "elaboration": "Murid melengkapkan tiga palang pada grid sendiri dan menyatakan satu dapatan kepada pasangan. Guru menyemak nilai palang dan kategori.",
+        "evaluation": "Semak label, tiga nilai palang dan satu dapatan yang selaras dengan carta setiap murid."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-052",
+      "sp_codes": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "title": "Mengendali dan melakar spesimen",
+      "textbook_pages": "16–19",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Menggunakan kanta tangan dan mengendalikan daun secara cermat serta menghasilkan lakaran dengan dua label tepat.",
+        "materials": "Kanta tangan, dulang, daun gugur yang bersih, kertas dan pensel.",
+        "induction": "Guru menunjukkan daun dengan urat yang halus. Murid mencadangkan alat yang membantu melihat perinciannya.",
+        "guided": "Guru menunjukkan cara meletakkan daun di atas dulang dan melaraskan kanta. Murid bergilir menggunakan kanta tanpa merosakkan daun.",
+        "independent": "Murid melakar bentuk daun dan urat yang dapat dilihat, kemudian melabel bahagian. Guru meminta murid menyemak lakaran dengan spesimen.",
+        "assessment": "Guna senarai semak individu untuk penggunaan kanta, pengendalian daun dan dua label lakaran yang tepat.",
+        "closure": "Murid menerangkan satu langkah yang membantu mereka menjaga spesimen semasa pemerhatian.",
+        "follow_up": "Sediakan contoh garisan label. Murid yang sudah menguasai kemahiran membandingkan urat dua daun."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan daun dengan urat yang halus. Murid mencadangkan alat yang membantu melihat perinciannya.",
+        "exploration": "Murid bergilir mengendalikan daun gugur bersih pada dulang dan melaras kanta.",
+        "explanation": "Guru tunjuk cara melihat urat daun tanpa merosakkan spesimen; murid kenal pasti dua bahagian untuk dilabel.",
+        "elaboration": "Murid melakar bentuk daun dan urat yang dapat dilihat, kemudian melabel bahagian. Guru meminta murid menyemak lakaran dengan spesimen.",
+        "evaluation": "Guna senarai semak individu untuk penggunaan kanta, pengendalian daun dan dua label lakaran yang tepat."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-053",
+      "sp_codes": [
+        "1.2.4",
+        "1.2.5"
+      ],
+      "title": "Membersihkan dan menyimpan alatan sains",
+      "textbook_pages": "20",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Membersihkan dan mengeringkan alatan yang digunakan serta menyimpannya di tempat berlabel.",
+        "materials": "Bekas plastik, air bersih, kain, dulang dan rak berlabel.",
+        "induction": "Guru menunjukkan bekas dengan baki air. Murid menyatakan perkara yang perlu dilakukan sebelum menyimpannya.",
+        "guided": "Guru menunjukkan cara mengosongkan bekas, membilas dan mengeringkannya. Murid melakukan langkah ini mengikut giliran.",
+        "independent": "Murid menyusun alatan kering pada rak berlabel. Guru menyemak tempat simpan dan mengingatkan murid supaya mengelap tumpahan segera.",
+        "assessment": "Perhatikan setiap murid membilas, mengeringkan dan menyimpan alatan pada tempat yang betul.",
+        "closure": "Murid menyusun kad urutan dan menerangkan mengapa alatan dikeringkan sebelum disimpan.",
+        "follow_up": "Berikan kad urutan bergambar. Murid yang sudah menguasai kemahiran membimbing rakan menyemak rak selepas aktiviti."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan bekas dengan baki air. Murid menyatakan perkara yang perlu dilakukan sebelum menyimpannya.",
+        "exploration": "Murid cuba mengosongkan, membilas dan mengeringkan bekas plastik di bawah bimbingan.",
+        "explanation": "Guru tunjuk urutan penyimpanan; murid menerangkan risiko alatan basah dan tumpahan.",
+        "elaboration": "Murid menyusun alatan kering pada rak berlabel. Guru menyemak tempat simpan dan mengingatkan murid supaya mengelap tumpahan segera.",
+        "evaluation": "Perhatikan setiap murid membilas, mengeringkan dan menyimpan alatan pada tempat yang betul."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-054",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "title": "Mematuhi peraturan bilik sains",
+      "textbook_pages": "24–27",
+      "source_blob": "9d394244f173ccc4c9d6eceb84babc693c5cb0be",
+      "source_path": "web/sains_y3_unit_awal.py",
+      "original": {
+        "objective": "Mengamalkan sekurang-kurangnya satu peraturan pada setiap peringkat sebelum, semasa dan selepas aktiviti.",
+        "materials": "Kad situasi, dulang, peralatan plastik dan senarai semak guru.",
+        "induction": "Guru menunjukkan gambar murid berebut mengambil peralatan. Murid mencadangkan tindakan yang lebih selamat.",
+        "guided": "Guru memodelkan cara masuk dengan tertib dan mengambil alatan selepas arahan. Murid melaksanakan simulasi mengikut giliran.",
+        "independent": "Murid menjalankan tugasan ringkas, memulangkan peralatan dan mengemas ruang. Guru memberi maklum balas pada setiap peringkat.",
+        "assessment": "Tandakan amalan individu pada ketiga-tiga peringkat. Catat peraturan yang masih memerlukan bimbingan.",
+        "closure": "Murid memilih satu peraturan dan menjelaskan risiko jika peraturan itu diabaikan.",
+        "follow_up": "Guna kad peringatan bergambar. Murid yang sudah menguasai kemahiran mencadangkan tindakan apabila terlihat alatan rosak."
+      },
+      "phases": {
+        "engagement": "Guru menunjukkan gambar murid berebut mengambil peralatan. Murid mencadangkan tindakan yang lebih selamat.",
+        "exploration": "Murid jalankan simulasi masuk bilik sains dan mengambil alatan selepas mendapat arahan.",
+        "explanation": "Murid padankan peraturan kepada tiga peringkat; guru bincang sebab laluan tidak boleh dihalang.",
+        "elaboration": "Murid menjalankan tugasan ringkas, memulangkan peralatan dan mengemas ruang. Guru memberi maklum balas pada setiap peringkat.",
+        "evaluation": "Tandakan amalan individu pada ketiga-tiga peringkat. Catat peraturan yang masih memerlukan bimbingan."
+      },
+      "duration": null,
+      "ready": false,
+      "status": "SOURCE_OPENING_PLAN_ADAPTED_DRAFT"
+    }
+  ]
+}
