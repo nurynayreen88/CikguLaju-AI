@@ -1,0 +1,319 @@
+{
+  "status": "DRAFT_SOURCE_ADAPTED_UNVERIFIED",
+  "subject": "MATEMATIK SK",
+  "year": 6,
+  "curriculum": "KSSR",
+  "source_drive_id": "1otDVCFmz1FvIBqPki_Cl_9cHRahTQVr4",
+  "source_title": "CIKGULAJU_MATEMATIK_T6_22_RPH_A4_GABUNGAN_SEMAKAN_20261108.pdf",
+  "policy": "Source itself is staging; candidate SP and page references are not official verification. Do not bind to production PdP by ordinal. Preserve original RPH, verify actual DK/DSKP, RPT, textbook, source identity and all fields before rendering/release. Five phases are pedagogical drafts, not approved RPH.",
+  "records": [
+    {
+      "candidate_id": "DSKP6-01",
+      "candidate_sp": "2.1.1",
+      "source_page": 1,
+      "title": "Bahagi pecahan",
+      "phases": {
+        "engagement": "Teka bahagian setiap orang apabila 3/4 kek dikongsi oleh tiga orang.",
+        "exploration": "Bina jalur 3/4 dan kumpulkan bahagian 1/4; bandingkan dua makna bahagi.",
+        "explanation": "Terangkan mengapa 3/4 ÷ 1/4 = 3; semak hubungan dengan darab.",
+        "elaboration": "Pasangan selesaikan 1 1/2 ÷ 1/4 dan 2/3 ÷ 1/6; semak melalui darab.",
+        "evaluation": "Empat item individu; sekurang-kurangnya tiga betul dan satu alasan penyongsangan pembahagi."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "DSKP6-02",
+      "candidate_sp": "4.1.1",
+      "source_page": 2,
+      "title": "Mengenal zon masa",
+      "phases": {
+        "engagement": "Bandingkan dua jam bandar yang menunjukkan waktu berbeza pada saat sama.",
+        "exploration": "Cari Malaysia UTC+8 dan bandar timur/barat pada peta zon masa rujukan.",
+        "explanation": "Terangkan waktu tempatan menggunakan legenda; bezakan zon masa dan garis tarikh.",
+        "elaboration": "Padankan lima kad bandar kepada zon yang tercetak pada peta; bincang negara pelbagai zon.",
+        "evaluation": "Empat daripada lima padanan tepat dan satu penjelasan tentang perbezaan waktu serentak."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "DSKP6-03",
+      "candidate_sp": "4.1.2",
+      "source_page": 3,
+      "title": "Perbezaan masa",
+      "phases": {
+        "engagement": "Ramal waktu UTC+9 apabila UTC+8 menunjukkan jam 9 malam.",
+        "exploration": "Gerakkan penanda satu jam pada garis masa 24 jam dan cuba lintasan tengah malam.",
+        "explanation": "Terangkan tanda beza UTC dan hari berikutnya; bezakan masa serentak dan tempoh.",
+        "elaboration": "Selesaikan simulasi 23:30 UTC+8 ke UTC+9 serta 14:15 UTC+8 ke UTC+7.",
+        "evaluation": "Empat situasi individu; sekurang-kurangnya tiga tepat termasuk label hari."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "DSKP6-04",
+      "candidate_sp": "6.1.2",
+      "source_page": 4,
+      "title": "Membentuk sudut",
+      "phases": {
+        "engagement": "Bandingkan sudut tirus, tegak dan cakah pada model jejari.",
+        "exploration": "Uji kedudukan pusat dan garis asas protraktor pada beberapa jejari.",
+        "explanation": "Guru demonstrasi sudut 50°; murid jelaskan skala yang bermula dari 0°.",
+        "elaboration": "Bina sudut 35°, 90°, 125° dan 170°; pasangan menyemak bacaan.",
+        "evaluation": "Bina empat sudut baharu; tiga dalam toleransi 2° dengan label dan pemilihan skala tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "DSKP6-05",
+      "candidate_sp": "6.2.1",
+      "source_page": 5,
+      "title": "Pusat bulatan, jejari dan diameter",
+      "phases": {
+        "engagement": "Anggar pusat dua objek berbentuk bulatan.",
+        "exploration": "Lipat bulatan kertas dua arah; tandakan pusat serta segmen ke lilitan.",
+        "explanation": "Bezakan jejari dan diameter; terangkan diameter melalui pusat dan hubungan dua kali jejari.",
+        "elaboration": "Ukur jejari 3, 4, 5 cm dan padankan diameter 6, 8, 10 cm; kesan diameter palsu.",
+        "evaluation": "Lima item pelabelan dan hubungan panjang; sekurang-kurangnya empat tepat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "DSKP6-06",
+      "candidate_sp": "7.1.1",
+      "source_page": 6,
+      "title": "Jarak mengufuk dan mencancang",
+      "phases": {
+        "engagement": "Bezakan perjalanan ke kanan dan ke atas pada peta grid.",
+        "exploration": "Bina P(2,3), Q(5,3), R(2,7); kira petak setiap arah.",
+        "explanation": "Terangkan skala 1 petak = 2 km: P–Q 6 km dan P–R 8 km.",
+        "elaboration": "Cipta peta empat lokasi dan bandingkan jarak pada dua skala; bukan jarak pepenjuru.",
+        "evaluation": "Empat masalah paksi dan skala; tiga tepat dengan unit km."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "DSKP6-07",
+      "candidate_sp": "8.1.1",
+      "source_page": 7,
+      "title": "Carta pai",
+      "phases": {
+        "engagement": "Gabungkan sektor 1/2, 1/4, 1/8 dan 1/8 menjadi satu bulatan.",
+        "exploration": "Agihkan 64 kad kepada sektor 180°, 90°, 45°, 45°.",
+        "explanation": "Terangkan nilai 32, 16, 8, 8 dan jumlah sudut 360°.",
+        "elaboration": "Label carta, banding kategori dan bina soalan; ulang dengan jumlah 40.",
+        "evaluation": "Lengkapkan carta empat sektor dan jawab sekurang-kurangnya tiga daripada empat tafsiran."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "DSKP6-08",
+      "candidate_sp": "8.2.1",
+      "source_page": 8,
+      "title": "Peristiwa mungkin dan tidak mungkin",
+      "phases": {
+        "engagement": "Ramal kemungkinan mengeluarkan kad merah daripada beg 3 merah, 2 biru.",
+        "exploration": "Bandingkan cabutan kad merah dan kad hijau berdasarkan isi sebenar beg.",
+        "explanation": "Bezakan tidak berlaku dalam satu cubaan dengan tidak mungkin berlaku.",
+        "elaboration": "Uji lima kad peristiwa dan lengkapkan jadual kategori serta sebab.",
+        "evaluation": "Kelaskan lima peristiwa baharu; empat tepat dengan alasan bagi sekurang-kurangnya dua."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "DSKP6-09",
+      "candidate_sp": "8.2.2",
+      "source_page": 9,
+      "title": "Skala kebolehjadian",
+      "phases": {
+        "engagement": "Bandingkan peristiwa pasti dan mustahil bagi beg berisi kad merah sahaja.",
+        "exploration": "Susun beg 1:4, 4:1 dan 3:3 pada skala lima kategori.",
+        "explanation": "Terangkan kategori kecil, besar dan sama kemungkinan berasaskan bilangan kad.",
+        "elaboration": "Lakukan sepuluh cabutan dengan pemulangan; banding ramalan dan kekerapan.",
+        "evaluation": "Kelaskan lima situasi; empat tepat dan sebab logik tanpa menganggap sampel kecil pasti."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "FIN-T6-01",
+      "candidate_sp": "3.1.1",
+      "source_page": 10,
+      "title": "Harga kos, harga jual, untung dan rugi",
+      "phases": {
+        "engagement": "Teka hasil jualan beg kos RM30, jual RM39.",
+        "exploration": "Susun pasangan kad kos/jual dan kelaskan lebih tinggi, rendah atau sama.",
+        "explanation": "Terangkan untung = jual − kos, rugi = kos − jual, serta pulang modal.",
+        "elaboration": "Analisis RM18/RM25, RM40/RM37, RM15/RM15; cipta satu contoh tambahan.",
+        "evaluation": "Lima situasi individu; empat pengelasan dan alasan tepat. Skop hanya kos/jual/untung/rugi."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "FIN-T6-02",
+      "candidate_sp": "3.2.1",
+      "source_page": 11,
+      "title": "Insurans dan takaful",
+      "phases": {
+        "engagement": "Bincang kesan basikal rosak atau rumah dilanda banjir.",
+        "exploration": "Padankan risiko, aset dan perlindungan pada kad situasi.",
+        "explanation": "Rujuk konsep insurans dan takaful dalam buku teks; jelaskan syarat perlindungan berbeza.",
+        "elaboration": "Analisis situasi motosikal, rumah, rawatan dan kemalangan tanpa memilih produk.",
+        "evaluation": "Tiga daripada empat padanan dan satu alasan munasabah tentang fungsi perlindungan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "FIN-T6-03",
+      "candidate_sp": "3.3.1",
+      "source_page": 12,
+      "title": "Masalah pengurusan kewangan",
+      "phases": {
+        "engagement": "Anggar untung bagi kos RM75 dan jual RM90.",
+        "exploration": "Kenal pasti maklumat diberi, kehendak dan operasi pada kad masalah.",
+        "explanation": "Model empat langkah penyelesaian; semak RM15 untung melalui beza harga.",
+        "elaboration": "Selesaikan rugi RM15, diskaun 25% daripada RM80 dan harga jual RM57 berdasarkan kad asal.",
+        "evaluation": "Tiga masalah baharu; dua lengkap dengan strategi, kiraan, unit dan semakan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-006",
+      "candidate_sp": "1.1.2",
+      "source_page": 13,
+      "title": "Pola nombor",
+      "phases": {
+        "engagement": "Lengkapkan pola menaik dan menurun dalam juta; nyatakan andaian.",
+        "exploration": "Susun kad bagi pola tambah 100 000, tolak 250 000 dan darab 2.",
+        "explanation": "Terangkan hubungan nombor berturutan dan uji peraturan pada dua langkah.",
+        "elaboration": "Selesaikan empat pola termasuk 125 000, 250 000, 500 000; bina pola baharu dalam 10 juta.",
+        "evaluation": "Empat item individu; tiga peraturan dan urutan tepat serta satu penerangan."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-007",
+      "candidate_sp": "1.2.1",
+      "source_page": 14,
+      "title": "Tambah dalam unit juta",
+      "phases": {
+        "engagement": "Anggar jumlah pengunjung 2 456 700 dan 1 208 900.",
+        "exploration": "Susun digit pada jadual nilai tempat; uji pengumpulan semula.",
+        "explanation": "Bandingkan bentuk lazim 3 665 600 dengan penambahan 1.25 + 0.4 juta.",
+        "elaboration": "Pasangan selesaikan empat bentuk tambah dengan unit diseragamkan dan anggaran semakan.",
+        "evaluation": "Empat item individu; tiga tepat termasuk perpuluhan juta."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-008",
+      "candidate_sp": "1.2.1",
+      "source_page": 15,
+      "title": "Tolak dalam unit juta",
+      "phases": {
+        "engagement": "Anggar baki stok 5 200 000 selepas agihan 1 375 000.",
+        "exploration": "Gunakan jadual digit untuk meneroka pengumpulan semula melalui sifar.",
+        "explanation": "Terangkan 3 825 000 dan 2.8 − 0.65 juta = 2.15 juta dengan unit konsisten.",
+        "elaboration": "Latih empat situasi daripada mudah kepada campuran unit; semak dengan tambah.",
+        "evaluation": "Tiga daripada empat tepat dan satu penerangan peminjaman nilai tempat."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-009",
+      "candidate_sp": "1.2.1",
+      "source_page": 16,
+      "title": "Gabungan tambah dan tolak",
+      "phases": {
+        "engagement": "Anggar 2.4 juta + 1 350 000 − 0.75 juta.",
+        "exploration": "Padankan kad nombor bulat dengan bentuk perpuluhan juta.",
+        "explanation": "Tunjuk turutan kiri ke kanan setelah unit seragam; hasil 3 000 000.",
+        "elaboration": "Selesaikan empat situasi stok; banding strategi unit juta dan nombor bulat.",
+        "evaluation": "Tiga daripada empat tepat serta penerangan turutan dan unit."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-010",
+      "candidate_sp": "1.2.1",
+      "source_page": 17,
+      "title": "Darab nombor bulat dan unit juta",
+      "phases": {
+        "engagement": "Anggar jumlah lapan pek dengan 750 000 unit setiap pek.",
+        "exploration": "Bina model penambahan berulang dan tukarkan 750 000 kepada 0.75 juta.",
+        "explanation": "Terangkan kesetaraan 8 × 750 000 = 8 × 0.75 juta = 6 juta.",
+        "elaboration": "Selesaikan empat bentuk darab termasuk 12 × 250 000; semak anggaran.",
+        "evaluation": "Tiga daripada empat tepat termasuk satu hasil dalam unit juta."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-011",
+      "candidate_sp": "1.2.1",
+      "source_page": 18,
+      "title": "Bahagi nombor bulat dan unit juta",
+      "phases": {
+        "engagement": "Ramal agihan 2 400 000 objek kepada lapan kumpulan.",
+        "exploration": "Gunakan jadual nilai tempat untuk membina hasil bahagi; cuba 3.6 juta ÷ 6.",
+        "explanation": "Terangkan 300 000 dan 0.6 juta serta semakan menggunakan darab.",
+        "elaboration": "Pasangan selesaikan empat situasi dan label unit mengikut arahan.",
+        "evaluation": "Tiga daripada empat tepat, satu dalam dua bentuk dan satu semakan darab."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-012",
+      "candidate_sp": "1.2.1",
+      "source_page": 19,
+      "title": "Darab dan bahagi berturutan",
+      "phases": {
+        "engagement": "Ramal hasil 1.2 juta × 3 ÷ 6.",
+        "exploration": "Bandingkan turutan pada kad operasi dan uji perbezaan tanda kurung.",
+        "explanation": "Terangkan keutamaan setara darab dan bahagi; kira dari kiri ke kanan.",
+        "elaboration": "Selesaikan empat ayat matematik termasuk 8.4 juta ÷ 7 × 2; banding kes bertanda kurung.",
+        "evaluation": "Tiga daripada empat tepat dengan penerangan turutan dan unit juta."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-079",
+      "candidate_sp": "7.2.1",
+      "source_page": 20,
+      "title": "Nisbah bentuk termudah",
+      "phases": {
+        "engagement": "Banding nisbah 6 kad biru kepada 9 merah dengan nisbah songsang.",
+        "exploration": "Kumpulkan kad kepada tiga set setara dan bina nisbah 2:3.",
+        "explanation": "Terangkan membahagi kedua-dua kuantiti dengan faktor sama dan mengekalkan tertib.",
+        "elaboration": "Mudahkan 12:18, 9:15, 8:20 dan 2 kg:500 g selepas seragam unit.",
+        "evaluation": "Empat daripada lima nisbah tepat, termasuk satu penyeragaman unit."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-080",
+      "candidate_sp": "7.3.1",
+      "source_page": 21,
+      "title": "Kadaran daripada nisbah",
+      "phases": {
+        "engagement": "Ramal bilangan epal jika oren:epal = 3:2 dan oren 15.",
+        "exploration": "Bina rajah bar tiga bahagian untuk mencari nilai satu bahagian.",
+        "explanation": "Terangkan 15 ÷ 3 = 5 dan 2 × 5 = 10; semak faktor skala.",
+        "elaboration": "Selesaikan situasi beras/air, murid, buku/pen dan benih/pasu menggunakan faktor sama.",
+        "evaluation": "Tiga daripada empat tepat dengan model satu unit atau rajah bar."
+      },
+      "ready": false
+    },
+    {
+      "candidate_id": "MT6-PDP-081",
+      "candidate_sp": "7.4.1",
+      "source_page": 22,
+      "title": "Masalah nisbah dan kadaran",
+      "phases": {
+        "engagement": "Ringkaskan nisbah 18 kerusi biru dan 12 merah; nyatakan maklumat yang diperlukan.",
+        "exploration": "Lukis rajah bar bagi nisbah lelaki:perempuan 2:3 apabila lelaki 12.",
+        "explanation": "Terangkan empat langkah masalah dan semak 12:18 = 2:3.",
+        "elaboration": "Selesaikan masalah buah, tiket dan pita berjumlah 35 m; bezakan jumlah daripada satu kuantiti.",
+        "evaluation": "Dua daripada tiga masalah baharu lengkap dengan model, kiraan, unit dan semakan."
+      },
+      "ready": false
+    }
+  ]
+}
