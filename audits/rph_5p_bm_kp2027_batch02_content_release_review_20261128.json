@@ -1,12 +1,12 @@
 {
-  "status": "INITIAL_CONTENT_REVIEW_ONLY",
+  "status": "APPROVED_FOR_PHASED_RELEASE_SEMAKAN_PELAKSANAAN",
   "total": 32,
   "corrected_proposals": 32,
   "source_version": "e6fd4333ee25cf3a7d0cdac96531a0f618fd4609",
   "source_blob": "da4baead5f0e2f95f62b9e65e931a6d7baefba22",
   "companion_blob": "048f0bd0e855a914f8e7a689ff497f86f65016f4",
   "policy": "Separate from first release PR; do not merge until exact source identity, full DK review, Word/PDF QA, per-PdP gate and authenticated release checks pass.",
-  "limitations": "Review against pinned existing penataran source only, not independent DK page validation. Proposed changes not connected to runtime. No release approval or production changes.",
+  "limitations": "SP-level source review and targeted individual phase corrections, automated print checks all records, visual sampling only; actual authenticated production delivery not yet verified.",
   "records": [
     {
       "group": "A",
@@ -32,8 +32,8 @@
         "evaluation": "Guru memperdengarkan dua nama abjad dan dua bunyi suku kata secara individu; murid memilih sekurang-kurangnya tiga kad yang tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -59,8 +59,8 @@
         "evaluation": "Murid menyebut dua nama abjad dan dua bunyi suku kata secara individu; sekurang-kurangnya tiga sebutan betul."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -86,8 +86,8 @@
         "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -113,8 +113,8 @@
         "evaluation": "Secara individu, murid membentuk tiga huruf pilihan dengan plastisin dan menekap tiga huruf yang sama pada lembar; guru menyemak bentuk serta arah."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -140,8 +140,8 @@
         "evaluation": "Murid membaca dua perkataan, satu frasa dan dua ayat mudah secara individu; guru merekod sebutan dan memastikan kedua-dua ayat dibaca dengan tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -167,8 +167,8 @@
         "evaluation": "Guru memperdengarkan dua nama abjad dan dua bunyi suku kata; murid memilih sekurang-kurangnya tiga kad tepat secara individu."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -194,8 +194,8 @@
         "evaluation": "Murid menyebut dua nama abjad dan dua bunyi suku kata daripada kad rawak secara individu; sekurang-kurangnya tiga sebutan tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -221,8 +221,8 @@
         "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -248,8 +248,8 @@
         "evaluation": "Murid membentuk dan menekap tiga huruf pilihan secara individu; guru menyemak ketepatan kedua-dua hasil bagi setiap huruf."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -275,8 +275,8 @@
         "evaluation": "Murid membaca dua perkataan, satu frasa dan dua ayat mudah daripada carta baharu; guru menyemak sebutan dan memastikan kedua-dua ayat tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -302,8 +302,8 @@
         "evaluation": "Guru memperdengarkan empat contoh merangkumi perkataan, frasa dan ujaran; murid mengenal pasti sekurang-kurangnya tiga sebutan atau intonasi yang tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -329,8 +329,8 @@
         "evaluation": "Guru memperdengarkan satu perkataan, satu frasa dan satu ujaran; murid mengulang ketiga-tiganya dengan sebutan dan intonasi sesuai secara individu."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -356,8 +356,8 @@
         "evaluation": "Murid membaca kad dua perkataan, satu frasa dan dua ayat mudah secara individu; guru menyemak sebutan, termasuk kedua-dua ayat yang mesti tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -383,8 +383,8 @@
         "evaluation": "Guru menyemak tiga item salinan individu yang merangkumi satu perkataan, satu frasa dan satu ayat; bentuk huruf, ejaan dan jarak mesti boleh dibaca."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -410,8 +410,8 @@
         "evaluation": "Murid membaca tiga ayat mudah secara individu dengan sebutan betul dan intonasi sesuai, kemudian menyatakan konteks satu ayat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "A",
@@ -437,8 +437,8 @@
         "evaluation": "Guru memperdengarkan tiga ujaran secara berasingan; murid memberikan sekurang-kurangnya dua respons lisan atau bukan lisan yang sesuai dan sopan secara individu."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -464,8 +464,8 @@
         "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -491,8 +491,8 @@
         "evaluation": "Secara individu, murid membentuk tiga huruf pilihan dengan plastisin dan menekap tiga huruf yang sama pada lembar; guru menyemak bentuk serta arah."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -518,8 +518,8 @@
         "evaluation": "Murid membaca dua perkataan, satu frasa dan dua ayat mudah secara individu; guru merekod sebutan dan memastikan kedua-dua ayat dibaca dengan tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -545,8 +545,8 @@
         "evaluation": "Guru memperdengarkan dua nama abjad dan dua bunyi suku kata secara individu; murid memilih sekurang-kurangnya tiga kad yang tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -572,8 +572,8 @@
         "evaluation": "Murid menyebut dua nama abjad dan dua bunyi suku kata secara individu; sekurang-kurangnya tiga sebutan betul."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -599,8 +599,8 @@
         "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -626,8 +626,8 @@
         "evaluation": "Murid membentuk dan menekap tiga huruf pilihan secara individu; guru menyemak ketepatan kedua-dua hasil bagi setiap huruf."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -653,8 +653,8 @@
         "evaluation": "Murid membaca dua perkataan, satu frasa dan dua ayat mudah daripada carta baharu; guru menyemak sebutan dan memastikan kedua-dua ayat tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -680,8 +680,8 @@
         "evaluation": "Guru memperdengarkan satu perkataan, satu frasa dan satu ujaran; murid mengulang ketiga-tiganya dengan sebutan dan intonasi sesuai secara individu."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -707,8 +707,8 @@
         "evaluation": "Guru memperdengarkan empat contoh merangkumi perkataan, frasa dan ujaran; murid mengenal pasti sekurang-kurangnya tiga sebutan atau intonasi yang tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -734,8 +734,8 @@
         "evaluation": "Guru memperdengarkan satu perkataan, satu frasa dan satu ujaran; murid mengulang ketiga-tiganya dengan sebutan dan intonasi sesuai secara individu."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -761,8 +761,8 @@
         "evaluation": "Murid membaca kad dua perkataan, satu frasa dan dua ayat mudah secara individu; guru menyemak sebutan, termasuk kedua-dua ayat yang mesti tepat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -788,8 +788,8 @@
         "evaluation": "Guru menyemak tiga item salinan individu yang merangkumi satu perkataan, satu frasa dan satu ayat; bentuk huruf, ejaan dan jarak mesti boleh dibaca."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -815,8 +815,8 @@
         "evaluation": "Murid membaca tiga ayat mudah secara individu dengan sebutan betul dan intonasi sesuai, kemudian menyatakan konteks satu ayat."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -842,8 +842,8 @@
         "evaluation": "Secara individu dalam dialog pendek, murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dengan situasi rumah atau sekolah."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     },
     {
       "group": "B",
@@ -869,8 +869,20 @@
         "evaluation": "Guru memperdengarkan tiga ujaran secara berasingan; murid memberikan sekurang-kurangnya dua respons lisan atau bukan lisan yang sesuai dan sopan secara individu."
       },
       "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
-      "status": "INITIAL_CONTENT_REVIEW_COMPLETE",
-      "ready": false
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
     }
-  ]
+  ],
+  "approval_scope": "Internal CikguLaju publication under SEMAKAN PELAKSANAAN only. Not official KPM endorsement.",
+  "evidence": {
+    "tested_head": "3a18ad328c4530c8928b6442b339fcd0ab4bcebd",
+    "print_run": 46116320668,
+    "print_job": 140890857433,
+    "print_artifact": 15251976907,
+    "print_passed": 128,
+    "print_failures": 0,
+    "visual_review": "Six actual rendered sample pages (three Group A lessons, native PDF and converted Word); complete table, no visible clipping in samples; native PDF more compact.",
+    "source_review": "26 SP and 9 resolved SK checked against DK BM SK Tahun 1 (BPK KPM 2026), printed pp.22–24,30–32,38–39,44; recorded in PR 1578.",
+    "live_authenticated": false
+  }
 }
