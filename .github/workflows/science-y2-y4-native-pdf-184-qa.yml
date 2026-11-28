@@ -1,0 +1,45 @@
+name: Science 184 independent PDF draft QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/audit_science_y2_y4_native_pdf_20261128.py'
+      - '.github/workflows/science-y2-y4-native-pdf-184-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-pdf:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [2, 3, 4]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: 207317c6d092561e2ffd07a6d2fb4ef604797030
+          path: native_source
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install python-docx pymupdf
+      - name: Stage pinned opening modules only
+        run: |
+          for file in sains_unit_awal.py sains_y3_unit_awal.py sains_opening_pedagogy_20261121.py; do
+            test ! -e "web/$file"
+            cp "native_source/web/$file" "web/$file"
+          done
+          test "$(git hash-object web/sains_opening_pedagogy_20261121.py)" = beb4c318405f960f5f744298a2f9edbfde1342bd
+      - run: PYTHONPATH=. python tools/audit_science_y2_y4_native_pdf_20261128.py --year ${{ matrix.year }} --out qa_science_independent_pdf_y${{ matrix.year }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-y${{ matrix.year }}-independent-pdf-draft
+          path: qa_science_independent_pdf_y${{ matrix.year }}/
+          retention-days: 7

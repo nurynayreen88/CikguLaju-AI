@@ -1,0 +1,750 @@
+{
+  "status": "20_NATIVE_SINGLE_SP_DRAFTS_ONLY",
+  "parent_audit_head": "95954c80ec2acf181a6a98ec5b6c799a68fe2673",
+  "identity_head": "352fbfcc3e32d5854ffe14bd9145119cef0b5bfe",
+  "candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+  "total": 20,
+  "limitations": "Inherited DSKP text from prior source candidates. Ordinary RPH fields, duration, textbook pages, academic review and print QA remain pending. No release.",
+  "records": [
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-025",
+      "unit": "uc1e6c936e20b1393ee00a36c",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Menyatakan cahaya boleh dibiaskan melalui pemerhatian menerusi pelbagai media.",
+      "dskp": [
+        {
+          "code": "5.3.1",
+          "printed_page": 58,
+          "sk": "5.3 Pembiasan Cahaya",
+          "sp": "Menyatakan cahaya boleh dibiaskan melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-027",
+      "objective": "Nyatakan bahawa cahaya boleh dibiaskan berdasarkan dua contoh media.",
+      "criterion": "Nyatakan pembiasan dan dua perubahan rupa objek yang diperhatikan.",
+      "phases": {
+        "engagement": "Guru paparkan foto penyedut minuman dalam air.",
+        "exploration": "Murid teliti dua foto bersiri objek dalam air dan di udara serta catat perbezaan rupa.",
+        "explanation": "Guru jelaskan cahaya berubah arah apabila melalui sempadan medium pada sudut yang sesuai.",
+        "elaboration": "Murid banding gambar kolam cetek dan kedudukan sebenar objek dalam rajah rujukan.",
+        "evaluation": "Murid nyatakan pembiasan dan terangkan dua pemerhatian daripada media."
+      },
+      "support": {
+        "bbm": "Foto, rajah kolam dan kad catatan",
+        "pemulihan": "Padankan foto sebelum dan selepas.",
+        "pengayaan": "Lakar perbezaan kedudukan nyata dan tampak tanpa pengiraan.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-026",
+      "unit": "uc1e6c936e20b1393ee00a36c",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Menjelas melalui contoh cahaya boleh dibiaskan dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "5.3.2",
+          "printed_page": 58,
+          "sk": "5.3 Pembiasan Cahaya",
+          "sp": "Menjelas melalui contoh cahaya boleh dibiaskan dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-027",
+      "objective": "Tunjukkan pembiasan cahaya melalui dua aktiviti mudah.",
+      "criterion": "Dua catatan perubahan rupa objek dan penerangan pembiasan yang tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk pensel dalam cawan kosong dan minta ramalan apabila air ditambah.",
+        "exploration": "Murid perhatikan pensel dari sisi sebelum dan selepas air ditambah; kemudian uji syiling dalam bekas dari kedudukan mata tetap.",
+        "explanation": "Guru kaitkan perubahan rupa atau kedudukan tampak dengan pembiasan cahaya pada sempadan air dan udara.",
+        "elaboration": "Murid ubah sudut pemerhatian pensel dan banding kesan yang kelihatan.",
+        "evaluation": "Guru semak dua lakaran sebelum dan selepas serta penerangan pembiasan."
+      },
+      "support": {
+        "bbm": "Cawan plastik lutsinar, pensel, syiling, air",
+        "pemulihan": "Gunakan tanda kedudukan mata dan rajah berpandu.",
+        "pengayaan": "Banding rupa objek pada sudut pemerhatian lain.",
+        "pak21": "Inkuiri pasangan",
+        "emk": "Keselamatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-078",
+      "unit": "uc1e6c936e20b1393ee00a36c",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Memerihalkan pembentukan pelangi dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "5.3.3",
+          "printed_page": 58,
+          "sk": "5.3 Pembiasan Cahaya",
+          "sp": "Memerihalkan pembentukan pelangi dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-028",
+      "objective": "Perihalkan pembentukan pelangi berdasarkan pemerhatian pemisahan cahaya putih.",
+      "criterion": "Nyatakan cahaya putih terurai kepada spektrum warna dan kaitkan dengan titisan air.",
+      "phases": {
+        "engagement": "Guru tunjuk foto pelangi dan tanya bila pelangi boleh dilihat.",
+        "exploration": "Guru sediakan prisma dan sumber cahaya putih yang selamat; murid perhatikan warna pada skrin tanpa melihat terus sumber cahaya.",
+        "explanation": "Guru jelaskan pembiasan, penguraian cahaya dan pantulan dalaman dalam titisan air menyumbang kepada pembentukan pelangi.",
+        "elaboration": "Murid susun kad warna mengikut spektrum yang diperhatikan dan banding dengan rajah titisan air.",
+        "evaluation": "Guru semak susunan warna yang dapat diperhatikan serta penerangan peranan cahaya dan titisan air."
+      },
+      "support": {
+        "bbm": "Prisma, lampu putih, skrin, rajah titisan air",
+        "pemulihan": "Beri jalur spektrum berlabel.",
+        "pengayaan": "Banding pelangi dengan spektrum prisma menggunakan rajah.",
+        "pak21": "Pemerhatian kumpulan",
+        "emk": "Keselamatan mata"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-079",
+      "unit": "uc1e6c936e20b1393ee00a36c",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Menjelaskan pemerhatian tentang pembiasan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "5.3.4",
+          "printed_page": 58,
+          "sk": "5.3 Pembiasan Cahaya",
+          "sp": "Menjelaskan pemerhatian tentang pembiasan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-028",
+      "objective": "Komunikasikan tiga pemerhatian tentang pembiasan cahaya.",
+      "criterion": "Hasil murid mengandungi tiga catatan berasaskan bukti dan satu lakaran yang sesuai.",
+      "phases": {
+        "engagement": "Guru paparkan lakaran pensel yang kelihatan bengkok dalam air.",
+        "exploration": "Murid pilih tiga catatan daripada demonstrasi atau rekod media yang berlabel.",
+        "explanation": "Guru bimbing pemisahan rupa tampak objek daripada perubahan fizikal sebenar.",
+        "elaboration": "Murid hasilkan infografik ringkas atau penerangan lisan dengan contoh pensel, syiling atau prisma.",
+        "evaluation": "Guru semak tiga catatan serta satu lakaran dengan label medium."
+      },
+      "support": {
+        "bbm": "Rekod demonstrasi, gambar, kertas",
+        "pemulihan": "Beri bingkai ayat pemerhatian.",
+        "pengayaan": "Terangkan perubahan rupa apabila sudut pemerhatian berubah.",
+        "pak21": "Galeri hasil",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-027",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menyatakan Bumi berputar pada paksinya dan pada masa yang sama beredar mengikut orbitnya mengelilingi Matahari.",
+      "dskp": [
+        {
+          "code": "9.2.1",
+          "printed_page": 69,
+          "sk": "9.2 Putaran dan Peredaran Bumi",
+          "sp": "Menyatakan Bumi berputar pada paksinya dan pada masa yang sama beredar mengikut orbitnya mengelilingi Matahari."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-042",
+      "objective": "Bezakan putaran Bumi dengan peredaran Bumi melalui demonstrasi model.",
+      "criterion": "Murid menunjukkan kedua-dua gerakan serentak dan menamakan paksi serta orbit.",
+      "phases": {
+        "engagement": "Guru tunjuk glob dan lampu sebagai model Matahari.",
+        "exploration": "Murid perhatikan glob berputar pada paksi, kemudian glob digerakkan sepanjang laluan mengelilingi lampu sambil berputar.",
+        "explanation": "Guru jelaskan perbezaan paksi dengan orbit menggunakan anak panah.",
+        "elaboration": "Murid demonstrasikan kedua-dua gerakan dengan model dan rakan menyemak istilah.",
+        "evaluation": "Guru menilai demonstrasi serentak dan dua label yang betul."
+      },
+      "support": {
+        "bbm": "Glob, lampu, kad paksi dan orbit",
+        "pemulihan": "Gunakan dua anak panah berwarna.",
+        "pengayaan": "Lakar kedua-dua gerakan pada satu rajah.",
+        "pak21": "Demonstrasi pasangan",
+        "emk": "Ketelitian model"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-028",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Memerihalkan putaran dan peredaran Bumi dari aspek arah dan tempoh.",
+      "dskp": [
+        {
+          "code": "9.2.2",
+          "printed_page": 69,
+          "sk": "9.2 Putaran dan Peredaran Bumi",
+          "sp": "Memerihalkan putaran dan peredaran Bumi dari aspek arah dan tempoh."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-042",
+      "objective": "Perihalkan arah dan tempoh putaran serta peredaran Bumi.",
+      "criterion": "Nyatakan putaran dari barat ke timur kira-kira 24 jam dan peredaran kira-kira 365¼ hari; kedua-duanya lawan jam dilihat dari atas kutub utara.",
+      "phases": {
+        "engagement": "Guru paparkan rajah Bumi dengan kutub utara sebagai titik pandangan.",
+        "exploration": "Murid gerakkan glob mengikut anak panah rujukan dan padankan kad tempoh bagi setiap gerakan.",
+        "explanation": "Guru bezakan arah berdasarkan titik pandangan dan tempoh satu putaran serta satu peredaran.",
+        "elaboration": "Murid lengkapkan jadual dua gerakan dan semak rajah anak panah pasangan.",
+        "evaluation": "Guru semak dua tempoh dan dua arah gerakan mengikut pandangan yang dinyatakan."
+      },
+      "support": {
+        "bbm": "Glob, rajah pandangan kutub utara, kad tempoh",
+        "pemulihan": "Beri jadual dengan pilihan jawapan.",
+        "pengayaan": "Terangkan sebab titik pandangan mesti dinyatakan bagi arah putaran.",
+        "pak21": "Padanan rajah",
+        "emk": "Ketepatan istilah"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-029",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Memerihalkan kesan putaran Bumi pada paksinya dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "9.2.3",
+          "printed_page": 69,
+          "sk": "9.2 Putaran dan Peredaran Bumi",
+          "sp": "Memerihalkan kesan putaran Bumi pada paksinya dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-043",
+      "objective": "Perihalkan kejadian siang dan malam serta perubahan kedudukan bayang sebagai kesan putaran Bumi.",
+      "criterion": "Murid menunjukkan kawasan siang dan malam pada model serta menjelaskan perubahan arah atau panjang bayang berdasarkan demonstrasi.",
+      "phases": {
+        "engagement": "Guru paparkan dua gambar tempat yang sama pada waktu berlainan.",
+        "exploration": "Murid putar glob di hadapan lampu tetap, perhatikan kawasan terang dan gelap serta gunakan model tiang kecil untuk membanding bayang.",
+        "explanation": "Guru kaitkan perubahan pencahayaan dengan putaran Bumi dan pergerakan tampak Matahari.",
+        "elaboration": "Murid tandakan satu lokasi pada glob dan perihalkan peralihan siang kepada malam.",
+        "evaluation": "Guru semak rajah terang-gelap dan penerangan perubahan bayang yang disokong demonstrasi."
+      },
+      "support": {
+        "bbm": "Glob, lampu, penanda lokasi, model tiang",
+        "pemulihan": "Gunakan tanda lokasi dan dua kedudukan glob.",
+        "pengayaan": "Ramal keadaan lokasi bertentangan pada glob.",
+        "pak21": "Simulasi kumpulan",
+        "emk": "Keselamatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-030",
+      "unit": "ue6d7b6cd56f1025d00b44638",
+      "unit_title": "Bumi",
+      "native_title": "Bumi — Menjelaskan pemerhatian tentang putaran dan peredaran Bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "9.2.4",
+          "printed_page": 69,
+          "sk": "9.2 Putaran dan Peredaran Bumi",
+          "sp": "Menjelaskan pemerhatian tentang putaran dan peredaran Bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-043",
+      "objective": "Komunikasikan putaran dan peredaran Bumi menggunakan model atau lakaran.",
+      "criterion": "Hasil mempunyai dua gerakan, arah dengan titik pandangan, tempoh dan satu kesan putaran yang betul.",
+      "phases": {
+        "engagement": "Guru tunjuk rajah orbit yang mengandungi anak panah dan label tidak lengkap.",
+        "exploration": "Murid semak rajah dengan glob serta kad tempoh rujukan.",
+        "explanation": "Guru bimbing murid membezakan gerakan sendiri Bumi daripada gerakan mengelilingi Matahari.",
+        "elaboration": "Murid bina poster mini berlabel atau persembahan model dengan penerangan sendiri.",
+        "evaluation": "Guru semak dua gerakan, dua tempoh dan satu kesan putaran."
+      },
+      "support": {
+        "bbm": "Glob, kad tempoh, kertas",
+        "pemulihan": "Gunakan rajah separa berlabel.",
+        "pengayaan": "Banding dua rajah dari titik pandangan berlainan.",
+        "pak21": "Galeri model",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-031",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "unit_title": "Bunyi",
+      "native_title": "Bunyi — Menyatakan bunyi dihasilkan oleh getaran dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Menyatakan bunyi dihasilkan oleh getaran dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-029",
+      "objective": "Nyatakan bunyi dihasilkan oleh getaran berdasarkan dua aktiviti.",
+      "criterion": "Dua pemerhatian getaran dan satu rumusan hubungan getaran dengan bunyi.",
+      "phases": {
+        "engagement": "Guru petik gelang getah yang dipasang pada kotak pada aras bunyi sederhana.",
+        "exploration": "Murid perhatikan getaran gelang getah dan pembaris plastik yang dijentik perlahan di tepi meja.",
+        "explanation": "Guru kaitkan getaran sumber dengan penghasilan bunyi serta perubahan apabila getaran berhenti.",
+        "elaboration": "Murid hentikan getaran pembaris secara lembut dan banding keadaan bunyi.",
+        "evaluation": "Guru semak dua catatan dan rumusan bunyi dihasilkan oleh getaran."
+      },
+      "support": {
+        "bbm": "Gelang getah, kotak, pembaris plastik",
+        "pemulihan": "Gunakan demonstrasi guru dan jadual gambar.",
+        "pengayaan": "Banding bunyi daripada dua panjang pembaris tanpa bunyi kuat.",
+        "pak21": "Inkuiri pasangan",
+        "emk": "Penjagaan pendengaran"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-032",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "unit_title": "Bunyi",
+      "native_title": "Bunyi — Memerihalkan bunyi bergerak ke semua arah.",
+      "dskp": [
+        {
+          "code": "6.1.2",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Memerihalkan bunyi bergerak ke semua arah."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-029",
+      "objective": "Perihalkan bunyi bergerak ke semua arah melalui pemerhatian terkawal.",
+      "criterion": "Murid merekod pendengaran dari sekurang-kurangnya empat arah dan membuat rumusan.",
+      "phases": {
+        "engagement": "Guru letakkan sumber bunyi lembut di tengah kelas.",
+        "exploration": "Murid berdiri pada jarak setara di empat arah sumber dan catat sama ada bunyi didengar.",
+        "explanation": "Guru jelaskan bunyi boleh merambat ke pelbagai arah dalam medium; kekuatan tidak semestinya sama.",
+        "elaboration": "Murid ulang pemerhatian dengan sumber menghadap arah berbeza pada aras bunyi selamat.",
+        "evaluation": "Guru semak empat catatan dan rumusan berdasarkan hasil sebenar."
+      },
+      "support": {
+        "bbm": "Loceng lembut atau pembesar suara rendah, kad arah",
+        "pemulihan": "Gunakan empat tempat bertanda.",
+        "pengayaan": "Bincang bagaimana halangan mempengaruhi bunyi tanpa menafikan perambatan pelbagai arah.",
+        "pak21": "Eksperimen kumpulan",
+        "emk": "Keselamatan pendengaran"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-034",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "unit_title": "Bunyi",
+      "native_title": "Bunyi — Memerihalkan bunyi yang berfaedah dan bunyi yang memudaratkan dalam kehidupan harian.",
+      "dskp": [
+        {
+          "code": "6.1.4",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Memerihalkan bunyi yang berfaedah dan bunyi yang memudaratkan dalam kehidupan harian."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-031",
+      "objective": "Bezakan bunyi berfaedah dan bunyi yang boleh memudaratkan dengan contoh.",
+      "criterion": "Murid kelaskan enam situasi dan jelaskan dua alasan berdasarkan fungsi, kelantangan atau tempoh.",
+      "phases": {
+        "engagement": "Guru paparkan gambar penggera kebakaran dan trafik sibuk tanpa memainkan bunyi kuat.",
+        "exploration": "Murid teliti enam kad situasi serta tujuan dan keadaan bunyi.",
+        "explanation": "Guru jelaskan bunyi membantu komunikasi dan amaran, manakala bunyi berlebihan boleh mengganggu atau merosakkan pendengaran.",
+        "elaboration": "Murid bincang situasi bunyi yang sama tetapi berbeza kelantangan atau tempoh.",
+        "evaluation": "Guru semak enam pengelasan dan dua alasan yang mengambil kira konteks."
+      },
+      "support": {
+        "bbm": "Kad situasi bunyi, jadual pengelasan",
+        "pemulihan": "Beri tiga contoh dengan petunjuk.",
+        "pengayaan": "Huraikan keadaan bunyi amaran boleh menjadi gangguan.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Kesihatan dan empati"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-035",
+      "unit": "uaa5925ca025fe6582b1c6189",
+      "unit_title": "Bunyi",
+      "native_title": "Bunyi — Menjana idea untuk menyelesaikan masalah bagi mengurangkan pencemaran bunyi.",
+      "dskp": [
+        {
+          "code": "6.1.5",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Menjana idea untuk menyelesaikan masalah bagi mengurangkan pencemaran bunyi."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-031",
+      "objective": "Cadangkan tiga cara mengurangkan pencemaran bunyi dalam situasi sekolah.",
+      "criterion": "Tiga cadangan praktikal dengan satu sebab bagi setiap cadangan.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar ruang pembelajaran dengan sumber bunyi mengganggu.",
+        "exploration": "Murid kenal pasti sumber, penerima dan laluan bunyi daripada kad situasi sekolah.",
+        "explanation": "Guru bimbing strategi mengurangkan bunyi pada sumber, melalui penghalang sesuai atau mengurangkan pendedahan.",
+        "elaboration": "Murid bina pelan tindakan kelas seperti alas kaki kerusi, aras suara sesuai dan menjauhkan sumber bising.",
+        "evaluation": "Guru semak tiga tindakan, sebab dan kesesuaian keselamatan."
+      },
+      "support": {
+        "bbm": "Kad situasi, pelan kelas, contoh alas lembut",
+        "pemulihan": "Pilih tindakan daripada kad bergambar.",
+        "pengayaan": "Nilai cadangan mengikut kos dan keberkesanan yang dijangka.",
+        "pak21": "Penyelesaian masalah kumpulan",
+        "emk": "Tanggungjawab sosial"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-036",
+      "unit": "u6a1031d240be65fc05053830",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Menyatakan maksud tenaga.",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Menyatakan maksud tenaga."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-032",
+      "objective": "Nyatakan maksud tenaga serta dua contoh kesannya.",
+      "criterion": "Murid menyatakan tenaga ialah keupayaan melakukan kerja dan mengenal pasti dua contoh.",
+      "phases": {
+        "engagement": "Guru tunjuk kipas bateri dan troli mainan yang bergerak.",
+        "exploration": "Murid perhatikan perubahan gerakan, cahaya atau bunyi pada dua alat selamat.",
+        "explanation": "Guru bimbing definisi tenaga sebagai keupayaan melakukan kerja.",
+        "elaboration": "Murid pilih contoh penggunaan tenaga daripada gambar dan jelaskan kerja atau perubahan yang berlaku.",
+        "evaluation": "Guru semak definisi dan dua contoh tepat."
+      },
+      "support": {
+        "bbm": "Kipas bateri, troli, kad gambar",
+        "pemulihan": "Beri bingkai ayat definisi.",
+        "pengayaan": "Banding dua alat yang menghasilkan kesan berlainan.",
+        "pak21": "Perbincangan pasangan",
+        "emk": "Literasi sains"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-037",
+      "unit": "u6a1031d240be65fc05053830",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Memerihalkan pelbagai sumber tenaga melalui pemerhatian menerusi pelbagai media.",
+      "dskp": [
+        {
+          "code": "7.1.2",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Memerihalkan pelbagai sumber tenaga melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-032",
+      "objective": "Perihalkan empat sumber tenaga daripada media rujukan.",
+      "criterion": "Empat padanan sumber dengan contoh penggunaan yang tepat.",
+      "phases": {
+        "engagement": "Guru paparkan foto Matahari, angin dan makanan.",
+        "exploration": "Murid teliti kad sumber tenaga seperti Matahari, air mengalir, angin, bahan api dan makanan.",
+        "explanation": "Guru bezakan sumber tenaga daripada bentuk tenaga yang terhasil.",
+        "elaboration": "Murid pilih empat sumber dan padankan dengan contoh penggunaan berasaskan media.",
+        "evaluation": "Guru semak empat padanan dan penerangan satu penggunaan."
+      },
+      "support": {
+        "bbm": "Kad foto sumber, rajah penggunaan",
+        "pemulihan": "Gunakan gambar dan label pilihan.",
+        "pengayaan": "Bincang satu sumber yang digunakan secara berbeza dalam dua keadaan.",
+        "pak21": "Padanan kumpulan",
+        "emk": "Kelestarian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-038",
+      "unit": "u6a1031d240be65fc05053830",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Menjelaskan dengan contoh pelbagai bentuk tenaga.",
+      "dskp": [
+        {
+          "code": "7.1.3",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Menjelaskan dengan contoh pelbagai bentuk tenaga."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-032",
+      "objective": "Jelaskan lima bentuk tenaga dengan contoh harian.",
+      "criterion": "Murid padankan sekurang-kurangnya lima bentuk tenaga dengan contoh yang sesuai.",
+      "phases": {
+        "engagement": "Guru paparkan lampu, alat muzik, makanan dan objek bergerak.",
+        "exploration": "Murid teliti kad contoh haba, cahaya, bunyi, kinetik, kimia, elektrik dan keupayaan.",
+        "explanation": "Guru bimbing perbezaan bentuk tenaga dengan objek atau sumbernya.",
+        "elaboration": "Murid padankan contoh baharu dengan bentuk tenaga dan jelaskan pilihan kepada pasangan.",
+        "evaluation": "Guru semak lima padanan tepat serta satu sebab."
+      },
+      "support": {
+        "bbm": "Kad bentuk tenaga dan gambar alat",
+        "pemulihan": "Gunakan lima kad berwarna dengan contoh.",
+        "pengayaan": "Kenal pasti lebih daripada satu bentuk tenaga pada satu alat.",
+        "pak21": "Card sorting",
+        "emk": "Ketelitian konsep"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-039",
+      "unit": "u6a1031d240be65fc05053830",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Menjelaskan melalui contoh perubahan bentuk tenaga dalam kehidupan seharian.",
+      "dskp": [
+        {
+          "code": "7.1.4",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Menjelaskan melalui contoh perubahan bentuk tenaga dalam kehidupan seharian."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-033",
+      "objective": "Terangkan tiga contoh perubahan bentuk tenaga dalam kehidupan.",
+      "criterion": "Tiga rantai perubahan dengan bentuk awal dan akhir yang tepat.",
+      "phases": {
+        "engagement": "Guru hidupkan lampu suluh bateri dan minta murid kenal pasti hasilnya.",
+        "exploration": "Murid teliti lampu suluh, kipas bateri dan alat bunyi kecil atau kad rajah; catat input dan output.",
+        "explanation": "Guru modelkan rantai tenaga dengan anak panah termasuk haba atau bunyi sampingan apabila sesuai.",
+        "elaboration": "Murid susun kad bagi tiga alat lain tanpa membuka peralatan elektrik.",
+        "evaluation": "Guru semak tiga rantai tenaga dan label awal serta akhir."
+      },
+      "support": {
+        "bbm": "Lampu suluh, kipas bateri, kad rantai tenaga",
+        "pemulihan": "Beri rantai dua langkah separa lengkap.",
+        "pengayaan": "Kenal pasti output tenaga sampingan bagi satu alat.",
+        "pak21": "Padanan pasangan",
+        "emk": "Keselamatan elektrik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-040",
+      "unit": "u6a1031d240be65fc05053830",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Mengitlak tenaga tidak boleh dicipta dan tidak boleh dimusnahkan tetapi boleh berubah bentuk.",
+      "dskp": [
+        {
+          "code": "7.1.5",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Mengitlak tenaga tidak boleh dicipta dan tidak boleh dimusnahkan tetapi boleh berubah bentuk."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-033",
+      "objective": "Rumuskan prinsip tenaga tidak dicipta atau dimusnahkan tetapi berubah bentuk atau dipindahkan.",
+      "criterion": "Murid beri satu rumusan tepat dan dua contoh perubahan tanpa menyatakan tenaga hilang begitu sahaja.",
+      "phases": {
+        "engagement": "Guru tunjuk bola bergolek yang akhirnya berhenti.",
+        "exploration": "Murid banding pergerakan bola pada permukaan berlainan dan teliti rajah tenaga bagi alat bateri.",
+        "explanation": "Guru jelaskan tenaga boleh berubah bentuk atau dipindahkan ke persekitaran, termasuk sebagai haba; pemerhatian kelas ialah ilustrasi, bukan ukuran lengkap tenaga.",
+        "elaboration": "Murid susun dua rantai perubahan dan betulkan ayat tenaga telah hilang.",
+        "evaluation": "Guru semak rumusan dan dua rantai tenaga yang konsisten."
+      },
+      "support": {
+        "bbm": "Bola, permukaan, kad tenaga",
+        "pemulihan": "Gunakan anak panah dan pilihan istilah.",
+        "pengayaan": "Bincang mengapa haba tidak mudah diperhatikan dalam aktiviti bola.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Ketelitian konsep"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-041",
+      "unit": "u6a1031d240be65fc05053830",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Menjelaskan pemerhatian tentang sumber tenaga dan bentuk tenaga melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "7.1.6",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Menjelaskan pemerhatian tentang sumber tenaga dan bentuk tenaga melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-033",
+      "objective": "Komunikasikan tiga pemerhatian tentang sumber dan bentuk tenaga.",
+      "criterion": "Hasil murid membezakan sumber dan bentuk serta memaparkan tiga contoh atau rantai tenaga tepat.",
+      "phases": {
+        "engagement": "Guru paparkan carta tenaga dengan label sumber dan bentuk bercampur.",
+        "exploration": "Murid teliti rekod demonstrasi atau kad fakta dan asingkan maklumat sumber serta bentuk.",
+        "explanation": "Guru bimbing penggunaan jadual atau anak panah yang menunjukkan hubungan dengan jelas.",
+        "elaboration": "Murid hasilkan peta tenaga atau penerangan lisan berdasarkan tiga contoh.",
+        "evaluation": "Guru semak tiga contoh, label dan hubungan yang ditunjukkan."
+      },
+      "support": {
+        "bbm": "Kad sumber, rekod aktiviti, kertas",
+        "pemulihan": "Gunakan jadual dua lajur separa lengkap.",
+        "pengayaan": "Tambahkan satu rantai dengan lebih daripada satu hasil tenaga.",
+        "pak21": "Galeri hasil",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-043",
+      "unit": "u9b4f1a90be3123725197ed8a",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Menjana idea kepentingan penggunaan sumber tenaga secara berhemah.",
+      "dskp": [
+        {
+          "code": "7.2.2",
+          "printed_page": 62,
+          "sk": "7.2 Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+          "sp": "Menjana idea kepentingan penggunaan sumber tenaga secara berhemah."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-035",
+      "objective": "Cadangkan tiga amalan penggunaan sumber tenaga secara berhemah dan huraikan kepentingannya.",
+      "criterion": "Murid menyatakan tiga tindakan sesuai dan satu sebab setiap tindakan.",
+      "phases": {
+        "engagement": "Guru paparkan gambar lampu bilik kosong dan ruang dengan pencahayaan semula jadi.",
+        "exploration": "Murid teliti kad situasi rumah dan sekolah untuk mengenal pasti penggunaan yang boleh dielakkan.",
+        "explanation": "Guru bimbing perbezaan penjimatan tenaga dengan tindakan yang menjejaskan keselamatan atau pembelajaran.",
+        "elaboration": "Murid hasilkan pelan tiga tindakan seperti mematikan alat apabila tidak digunakan dan menggunakan cahaya semula jadi jika sesuai.",
+        "evaluation": "Guru semak tiga tindakan dan alasan berkaitan pembaziran, kos atau sumber."
+      },
+      "support": {
+        "bbm": "Kad situasi, lembar pelan tindakan",
+        "pemulihan": "Pilih tindakan sesuai daripada dua pilihan.",
+        "pengayaan": "Cadangkan cara merekod amalan penjimatan kelas secara ringkas.",
+        "pak21": "Penyelesaian masalah kumpulan",
+        "emk": "Kelestarian dan tanggungjawab"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-044",
+      "unit": "u9b4f1a90be3123725197ed8a",
+      "unit_title": "Tenaga",
+      "native_title": "Tenaga — Menjelaskan pemerhatian tentang sumber tenaga boleh dibaharui dan sumber tenaga tidak boleh dibaharui melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "7.2.3",
+          "printed_page": 62,
+          "sk": "7.2 Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+          "sp": "Menjelaskan pemerhatian tentang sumber tenaga boleh dibaharui dan sumber tenaga tidak boleh dibaharui melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-035",
+      "objective": "Komunikasikan perbezaan sumber tenaga boleh dibaharui dan tidak boleh dibaharui.",
+      "criterion": "Hasil murid memaparkan sekurang-kurangnya tiga contoh setiap kategori serta satu perbezaan tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk foto panel suria dan bahan api fosil.",
+        "exploration": "Murid teliti kad fakta sumber dan kadar pembaharuan secara semula jadi.",
+        "explanation": "Guru jelaskan sumber boleh dibaharui dapat diperbaharui pada skala masa manusia, manakala bahan api fosil terbentuk sangat lama.",
+        "elaboration": "Murid hasilkan carta bergambar atau penerangan lisan dengan contoh suria, angin, air, arang batu, petroleum dan gas asli.",
+        "evaluation": "Guru semak enam pengelasan serta satu perbezaan berasaskan kadar pembaharuan."
+      },
+      "support": {
+        "bbm": "Kad fakta sumber, kertas carta",
+        "pemulihan": "Beri carta dengan dua contoh berpandu.",
+        "pengayaan": "Bincang mengapa sumber boleh dibaharui juga perlu digunakan secara berhemah.",
+        "pak21": "Galeri carta",
+        "emk": "Kelestarian alam"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    }
+  ]
+}

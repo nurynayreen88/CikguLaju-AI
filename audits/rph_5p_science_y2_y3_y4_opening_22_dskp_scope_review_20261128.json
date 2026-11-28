@@ -1,0 +1,352 @@
+{
+  "status": "DSKP_CODE_SCOPE_REVIEW_COMPLETE_WORDING_AND_CURRENT_CATALOGUE_PENDING",
+  "source_manifest_blob": "b19678359f7e4b67f8bddd327e6a9c98be8d3de4",
+  "print_evidence": {
+    "commit": "ac3119a4ad3c548589dcd61304e052a1e99993cf",
+    "run": 46128853543,
+    "artifact": 15256433147,
+    "passed": 22
+  },
+  "sources": {
+    "2": {
+      "url": "https://padlet-uploads.storage.googleapis.com/1277119434/73dc709bb86bb242d6cdd470aaa228ff/DSKP_KSSR_SAINS_TAHUN_2__SEMAKAN_2017_.pdf",
+      "edition": "BPK April 2016",
+      "method": "PDF page images printed 37,39–42,44"
+    },
+    "3": {
+      "url": "https://fliphtml5.com/ubcth/ydzr/DSKP_KSSR_Semakan_2017_Sains_Tahun_3/",
+      "edition": "KSSR Semakan 2017",
+      "method": "Text transcription printed 38,40,42,44,46,48,50,52; original PDF unavailable"
+    },
+    "4": {
+      "url": "https://skpktaiping.home.blog/wp-content/uploads/2019/02/dskp-kssr-semakan-2017-sains-tahun-4.pdf",
+      "edition": "KSSR Semakan 2017",
+      "method": "PDF page images printed 42–44"
+    }
+  },
+  "total": 22,
+  "records": [
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-052",
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "printed_dskp_pages": [
+        37
+      ],
+      "code_scope_checked": true,
+      "review_note": "Two materials and before/after observations address the selected process skill. No claim of mastery across all senses.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-053",
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "printed_dskp_pages": [
+        39
+      ],
+      "code_scope_checked": true,
+      "review_note": "Classification by material and shared traits, with independent evidence.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-054",
+      "sp_codes": [
+        "1.1.3"
+      ],
+      "printed_dskp_pages": [
+        40
+      ],
+      "code_scope_checked": true,
+      "review_note": "Ruler technique, three readings and cm.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-055",
+      "sp_codes": [
+        "1.1.4"
+      ],
+      "printed_dskp_pages": [
+        41
+      ],
+      "code_scope_checked": true,
+      "review_note": "Record categories and communicate evidence from table.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-056",
+      "sp_codes": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "printed_dskp_pages": [
+        42
+      ],
+      "code_scope_checked": true,
+      "review_note": "Handling specimens, lens and two observed features in sketch; reinforce safe handling, no tasting seeds.",
+      "wording_status": "MANIPULATIVE_FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-057",
+      "sp_codes": [
+        "1.2.4",
+        "1.2.5"
+      ],
+      "printed_dskp_pages": [
+        42
+      ],
+      "code_scope_checked": true,
+      "review_note": "Correct cleaning and storage of equipment.",
+      "wording_status": "MANIPULATIVE_FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 2,
+      "lesson_id": "ST2-PDP-058",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "printed_dskp_pages": [
+        44
+      ],
+      "code_scope_checked": true,
+      "review_note": "Observe individual conduct before, during and after activity.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-080",
+      "sp_codes": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "printed_dskp_pages": [
+        42
+      ],
+      "code_scope_checked": true,
+      "review_note": "Observation, classification and mass measurement; original SP summaries omit details of technique and relevant senses. Full standard source needed before final print.",
+      "wording_status": "FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-081",
+      "sp_codes": [
+        "1.1.4",
+        "1.1.5",
+        "1.1.6"
+      ],
+      "printed_dskp_pages": [
+        42,
+        43
+      ],
+      "code_scope_checked": true,
+      "review_note": "Inference and prediction with evidence plus organized chart; ensure communication of findings remains explicit.",
+      "wording_status": "FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-082",
+      "sp_codes": [
+        "1.1.7",
+        "1.1.8"
+      ],
+      "printed_dskp_pages": [
+        43
+      ],
+      "code_scope_checked": true,
+      "review_note": "Order observations chronologically and interpret two values; avoid inferring causality.",
+      "wording_status": "FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-083",
+      "sp_codes": [
+        "1.1.9"
+      ],
+      "printed_dskp_pages": [
+        44
+      ],
+      "code_scope_checked": true,
+      "review_note": "Operational definition tied to fixed test and observed indicator.",
+      "wording_status": "FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-084",
+      "sp_codes": [
+        "1.1.10",
+        "1.1.11"
+      ],
+      "printed_dskp_pages": [
+        44
+      ],
+      "code_scope_checked": true,
+      "review_note": "Identify response and controls after manipulated variable given; testable hypothesis.",
+      "wording_status": "FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 4,
+      "lesson_id": "ST4-PDP-085",
+      "sp_codes": [
+        "1.1.12"
+      ],
+      "printed_dskp_pages": [
+        44
+      ],
+      "code_scope_checked": true,
+      "review_note": "Experiment, data and conclusion tied to hypothesis; clarify endpoint for dissolution, keep water quantity/temperature, sugar quantity/grain size and stirring timing consistent, repeat if time allows.",
+      "wording_status": "FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-046",
+      "sp_codes": [
+        "1.1.1"
+      ],
+      "printed_dskp_pages": [
+        38
+      ],
+      "code_scope_checked": true,
+      "review_note": "Visual and tactile observations recorded independently.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-047",
+      "sp_codes": [
+        "1.1.2"
+      ],
+      "printed_dskp_pages": [
+        40
+      ],
+      "code_scope_checked": true,
+      "review_note": "Classify cards by a consistent observable feature.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-048",
+      "sp_codes": [
+        "1.1.3"
+      ],
+      "printed_dskp_pages": [
+        42
+      ],
+      "code_scope_checked": true,
+      "review_note": "Correct measuring technique and three independent readings.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-049",
+      "sp_codes": [
+        "1.1.4"
+      ],
+      "printed_dskp_pages": [
+        44
+      ],
+      "code_scope_checked": true,
+      "review_note": "Distinguish observation from plausible interpretations; avoid treating inferred cause as established fact.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-050",
+      "sp_codes": [
+        "1.1.5"
+      ],
+      "printed_dskp_pages": [
+        46
+      ],
+      "code_scope_checked": true,
+      "review_note": "Predict missing sequence from repeating pattern; not a claim of all prediction contexts.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-051",
+      "sp_codes": [
+        "1.1.6"
+      ],
+      "printed_dskp_pages": [
+        48
+      ],
+      "code_scope_checked": true,
+      "review_note": "Transfer data to chart and communicate a finding.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-052",
+      "sp_codes": [
+        "1.2.1",
+        "1.2.2",
+        "1.2.3"
+      ],
+      "printed_dskp_pages": [
+        50
+      ],
+      "code_scope_checked": true,
+      "review_note": "Careful leaf handling, magnifier and labelled sketch.",
+      "wording_status": "MANIPULATIVE_FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-053",
+      "sp_codes": [
+        "1.2.4",
+        "1.2.5"
+      ],
+      "printed_dskp_pages": [
+        50
+      ],
+      "code_scope_checked": true,
+      "review_note": "Cleaning, drying and storing equipment; card sequence.",
+      "wording_status": "MANIPULATIVE_FULL_TEXT_REQUIRED",
+      "ready": false
+    },
+    {
+      "year": 3,
+      "lesson_id": "ST3-PDP-054",
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "printed_dskp_pages": [
+        52
+      ],
+      "code_scope_checked": true,
+      "review_note": "Individual rule compliance in three stages.",
+      "wording_status": "SHORT_STANDARD_LABEL_CONFIRMED",
+      "ready": false
+    }
+  ],
+  "limitations": "Review covers DSKP code and teaching scope, not reproduction of full SP statements or official approval. Year 3 consulted text mirror; PDF inaccessible. Exact full wording for manipulative skills and Year 4 pending approved source extraction. Duration and live native catalogue mapping pending. Do not release."
+}
