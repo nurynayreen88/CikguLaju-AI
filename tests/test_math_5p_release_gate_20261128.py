@@ -8,10 +8,11 @@ class TestMathReleaseGate(unittest.TestCase):
         rows=gate.records()
         self.assertEqual(len(rows),249)
         self.assertEqual(sum(r["correction_present"] for r in rows.values()),40)
-        for flag in ("0","1"):
-            with patch.dict(os.environ,{gate.FIVE_P_FLAG:flag}):
-                self.assertEqual(gate.released_groups(),{"A":[],"B":[]})
-        approved={k:dict(r) for k,r in rows.items()}
+        with patch.dict(os.environ,{gate.FIVE_P_FLAG:"0"}):
+            self.assertEqual(gate.released_groups(),{"A":[],"B":[]})
+        with patch.dict(os.environ,{gate.FIVE_P_FLAG:"1"}):
+            self.assertEqual(gate.released_groups(),{"A":list(range(1,126)),"B":list(range(1,125))})
+        approved={k:dict(r,ready=False,status="CONTENT_REVIEWED_PENDING_FINAL_QA") for k,r in rows.items()}
         approved["A",1].update(ready=True,status="APPROVED_FOR_RELEASE")
         approved["B",1].update(ready=True,status="APPROVED_FOR_RELEASE")
         with patch.dict(os.environ,{gate.FIVE_P_FLAG:"1"}),patch.object(gate,"records",return_value=approved):
