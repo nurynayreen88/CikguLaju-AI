@@ -61,13 +61,18 @@ def verified_selection(year, unit, lesson, rows):
     return row
 
 def create_blueprint(*, published=False):
-    from web import science_5p_release as release
     bp = Blueprint("science_5p_release" if published else "science_5p_candidate",__name__)
     status="INTERNAL-REVIEWED" if published else "DRAFT-NOT-FOR-TEACHING"
     def route_enabled():
-        return os.getenv(release.FLAG)=="1" if published else enabled()
+        return os.getenv("CIKGULAJU_SCIENCE_5P_ENABLED")=="1" if published else enabled()
     def lesson_enabled(y,cid):
-        return release.is_released(y,cid) if published else enabled()
+        if not published:
+            return enabled()
+        try:
+            from web.science_5p_release import is_released
+            return is_released(y,cid)
+        except ImportError:
+            return False
     def error(status,code):
         return jsonify(error=code,code=code),status
     @bp.after_request
