@@ -1,0 +1,974 @@
+{
+  "status": "NEW_PEDAGOGICAL_DRAFT_DSKP_TEXT_ONLY",
+  "subject": "SAINS SK",
+  "year": 3,
+  "curriculum": "KSSR",
+  "source": {
+    "drive_id": "17YPj3KbdceHXtQjnnJ6JnAbP09rA0x-O",
+    "title": "GuruBesar_DSKP_Sains_Tahun_3.pdf",
+    "verification": "Extracted DSKP text reviewed; visual source QA pending."
+  },
+  "policy": "New candidates, not 103 production PdP. No RPT/source RPH binding or textbook page claims. No release. Teacher supervision and actual elapsed time for practical activities required. Check all compound SP scope and assessment before release.",
+  "records": [
+    {
+      "candidate_id": "SCI-T3-DRAFT-001",
+      "title": "Pemerhatian timbul dan tenggelam",
+      "dskp": [
+        {
+          "code": "1.1.1",
+          "printed_page": 38,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Memerhati"
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk gabus dan batu.",
+        "exploration": "Uji kedua-dua objek dalam bekas air.",
+        "explanation": "Bezakan catatan pemerhatian daripada sebab yang disangka.",
+        "elaboration": "Uji tiga objek lain dan rekod kedudukan objek.",
+        "evaluation": "Catat empat pemerhatian tepat tanpa mencampurkan inferens."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-002",
+      "title": "Mengelas haiwan",
+      "dskp": [
+        {
+          "code": "1.1.2",
+          "printed_page": 40,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengelas"
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad lembu, harimau dan ayam.",
+        "exploration": "Asing berdasarkan makanan yang ditunjukkan pada kad bukti.",
+        "explanation": "Nyatakan ciri sepunya setiap kumpulan.",
+        "elaboration": "Kelaskan enam haiwan baharu menggunakan maklumat pemakanan.",
+        "evaluation": "Lima daripada enam padanan tepat dengan kriteria jelas."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-003",
+      "title": "Mengukur masa dan panjang",
+      "dskp": [
+        {
+          "code": "1.1.3",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengukur dan menggunakan nombor"
+        }
+      ],
+      "phases": {
+        "engagement": "Pilih alat untuk mengukur pensel dan masa menyusun kad.",
+        "exploration": "Ukur tiga pensel dan masa menyusun sepuluh kad.",
+        "explanation": "Model bacaan sifar pembaris dan penggunaan jam randik.",
+        "elaboration": "Rekod ukuran dengan unit cm dan saat dalam jadual.",
+        "evaluation": "Empat ukuran dengan teknik dan unit sesuai."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-004",
+      "title": "Membuat inferens",
+      "dskp": [
+        {
+          "code": "1.1.4",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Membuat inferens"
+        }
+      ],
+      "phases": {
+        "engagement": "Perhatikan dua objek yang terapung dan tenggelam.",
+        "exploration": "Uji objek berbeza saiz dan bahan; rekod kedudukan.",
+        "explanation": "Bezakan pemerhatian dengan penerangan munasabah; saiz sahaja tidak menentukan keadaan.",
+        "elaboration": "Bincang dua inferens dan pilih yang disokong bukti.",
+        "evaluation": "Nyatakan satu pemerhatian dan inferens munasabah."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-005",
+      "title": "Meramal berdasarkan data",
+      "dskp": [
+        {
+          "code": "1.1.5",
+          "printed_page": 46,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Meramal"
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjukkan jadual suhu air daripada demonstrasi guru.",
+        "exploration": "Perhatikan pola suhu pada sela masa yang sama.",
+        "explanation": "Terangkan ramalan berdasarkan pola, bukan kepastian.",
+        "elaboration": "Ramal bacaan berikut dan banding dengan data sebenar yang disediakan.",
+        "evaluation": "Dua ramalan munasabah dengan alasan data."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-006",
+      "title": "Komunikasi melalui rajah",
+      "dskp": [
+        {
+          "code": "1.1.6",
+          "printed_page": 48,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Berkomunikasi"
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk rajah gigi tanpa label.",
+        "exploration": "Kenal struktur daripada carta rujukan dan pilih label.",
+        "explanation": "Model penggunaan garis label, tajuk dan penerangan ringkas.",
+        "elaboration": "Lukis rajah berlabel dan terangkan kepada pasangan.",
+        "evaluation": "Rajah jelas dengan sekurang-kurangnya tiga label tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-007",
+      "title": "Kendali dan lakar tumbuhan",
+      "dskp": [
+        {
+          "code": "1.2.1",
+          "printed_page": 50,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Menggunakan dan mengendalikan peralatan dan bahan sains dengan betul."
+        },
+        {
+          "code": "1.2.2",
+          "printed_page": 50,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Mengendalikan spesimen dengan betul dan cermat."
+        },
+        {
+          "code": "1.2.3",
+          "printed_page": 50,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Melakar spesimen, peralatan dan bahan sains dengan betul."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer anak pokok dan kanta pembesar.",
+        "exploration": "Perhatikan daun serta batang tanpa merosakkan spesimen.",
+        "explanation": "Model kendalian cermat dan lakaran pemerhatian.",
+        "elaboration": "Lakar dua spesimen yang disediakan guru dan label ciri.",
+        "evaluation": "Senarai semak kendalian, penggunaan alat dan lakaran."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-008",
+      "title": "Pembersihan dan penyimpanan",
+      "dskp": [
+        {
+          "code": "1.2.4",
+          "printed_page": 50,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Membersihkan peralatan sains dengan cara yang betul."
+        },
+        {
+          "code": "1.2.5",
+          "printed_page": 50,
+          "sk": "1.2 Kemahiran Manipulatif",
+          "sp": "Menyimpan peralatan dan bahan sains dengan betul dan selamat."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk meja selepas projek tanaman.",
+        "exploration": "Asingkan alat, tanah dan bahan buangan mengikut arahan guru.",
+        "explanation": "Demonstrasi membersih alat, mengeringkan dan menyimpan.",
+        "elaboration": "Laksanakan rutin dalam kumpulan serta semak inventori.",
+        "evaluation": "Alat bersih dan disimpan di tempat betul."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-009",
+      "title": "Peraturan bilik sains",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 52,
+          "sk": "2.1 Peraturan Bilik Sains",
+          "sp": "Mematuhi peraturan bilik sains."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua gambar situasi bilik sains.",
+        "exploration": "Kenal tindakan berisiko dan tindakan yang selamat.",
+        "explanation": "Jelaskan sebab peraturan dan kepentingan melapor tumpahan kepada guru.",
+        "elaboration": "Lakonkan rutin sebelum, semasa dan selepas aktiviti.",
+        "evaluation": "Empat pilihan tindakan betul dan demonstrasi satu rutin."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-010",
+      "title": "Jenis dan fungsi gigi",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Memerihalkan jenis gigi dan fungsinya."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar gigi hadapan dan geraham.",
+        "exploration": "Perhatikan bentuk model gigi; padankan dengan tindakan memotong atau mengisar.",
+        "explanation": "Jelaskan gigi kacip memotong, taring mengoyak dan geraham mengisar.",
+        "elaboration": "Padankan jenis gigi dengan fungsi melalui model makanan kertas.",
+        "evaluation": "Tiga jenis gigi dan fungsi tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-011",
+      "title": "Struktur gigi",
+      "dskp": [
+        {
+          "code": "3.1.2",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Melabelkan struktur gigi."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk model keratan rentas gigi.",
+        "exploration": "Padankan kad enamel, dentin, saraf, salur darah dan gusi.",
+        "explanation": "Jelaskan kedudukan setiap struktur pada rajah.",
+        "elaboration": "Label rajah baharu dan semak menggunakan carta rujukan.",
+        "evaluation": "Sekurang-kurangnya empat daripada lima label tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-012",
+      "title": "Gigi susu dan gigi kekal",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Membanding dan membezakan set gigi susu dan set gigi kekal."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua carta set gigi.",
+        "exploration": "Kira bilangan gigi dalam set lengkap dan kenal jenis.",
+        "explanation": "Jelaskan 20 gigi susu dan lazimnya 32 gigi kekal termasuk gigi bongsu.",
+        "elaboration": "Lengkapkan jadual persamaan/perbezaan dan urutan penggantian gigi.",
+        "evaluation": "Dua perbezaan dan satu persamaan tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-013",
+      "title": "Penjagaan gigi",
+      "dskp": [
+        {
+          "code": "3.1.4",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi."
+        },
+        {
+          "code": "3.1.5",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ilustrasi enamel sihat dan gigi berlubang.",
+        "exploration": "Banding kad amalan memberus, minuman manis kerap dan pemeriksaan gigi.",
+        "explanation": "Terangkan kaitan asid daripada bakteria dengan kerosakan enamel.",
+        "elaboration": "Bina poster penjagaan gigi dan terangkan fungsi satu rawatan contoh.",
+        "evaluation": "Tiga amalan dan satu kaitan dengan struktur gigi."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-014",
+      "title": "Kelas makanan",
+      "dskp": [
+        {
+          "code": "3.2.1",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Memberi contoh makanan bagi setiap kelas makanan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad nasi, telur, buah dan air.",
+        "exploration": "Padankan contoh kepada tujuh kelas berdasarkan jadual rujukan; satu makanan boleh mengandungi beberapa kelas.",
+        "explanation": "Namakan karbohidrat, protein, lemak, vitamin, mineral, pelawas dan air.",
+        "elaboration": "Bina peta tujuh kelas dengan contoh makanan.",
+        "evaluation": "Enam daripada tujuh contoh sesuai."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-015",
+      "title": "Kepentingan kelas makanan",
+      "dskp": [
+        {
+          "code": "3.2.2",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Mengitlak kepentingan makanan mengikut kelasnya kepada tubuh manusia."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya mengapa tubuh memerlukan makanan pelbagai jenis.",
+        "exploration": "Padankan kad fungsi dengan kelas makanan.",
+        "explanation": "Jelaskan tenaga, tumbesaran, kesihatan dan peranan air serta pelawas.",
+        "elaboration": "Lengkapkan jadual fungsi tujuh kelas dan bincang dua situasi.",
+        "evaluation": "Lima daripada tujuh fungsi tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-016",
+      "title": "Hidangan seimbang",
+      "dskp": [
+        {
+          "code": "3.2.3",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Menjelas dengan contoh makanan seimbang berdasarkan piramid makanan."
+        },
+        {
+          "code": "3.2.4",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Menaakul kesan pengambilan makanan yang tidak seimbang."
+        },
+        {
+          "code": "3.2.5",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Menjelaskan pemerhatian tentang kelas makanan menerusi lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua gambar hidangan tanpa menghakimi pilihan individu.",
+        "exploration": "Gunakan piramid makanan Malaysia yang dibekalkan guru untuk menilai kepelbagaian hidangan.",
+        "explanation": "Terangkan keseimbangan dan kesan pengambilan tidak seimbang secara umum.",
+        "elaboration": "Bina hidangan contoh melalui kad makanan dan bentang alasan.",
+        "evaluation": "Satu hidangan munasabah berpandukan piramid dan dua alasan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-017",
+      "title": "Proses pencernaan",
+      "dskp": [
+        {
+          "code": "3.3.1",
+          "printed_page": 56,
+          "sk": "3.3 Pencernaan",
+          "sp": "Memerihalkan proses pencernaan."
+        }
+      ],
+      "phases": {
+        "engagement": "Perhatikan gambar makanan sebelum dan selepas dikunyah.",
+        "exploration": "Gunakan simulasi menghancurkan makanan dalam beg tertutup.",
+        "explanation": "Jelaskan makanan dipecahkan dan nutrien diserap; model hanya mewakili sebahagian proses.",
+        "elaboration": "Padankan tindakan gigi, lidah dan air liur dengan peringkat mulut.",
+        "evaluation": "Terangkan maksud pencernaan dan dua fungsi di mulut."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-018",
+      "title": "Aliran makanan",
+      "dskp": [
+        {
+          "code": "3.3.2",
+          "printed_page": 56,
+          "sk": "3.3 Pencernaan",
+          "sp": "Membuat urutan aliran makanan semasa pencernaan."
+        },
+        {
+          "code": "3.3.3",
+          "printed_page": 56,
+          "sk": "3.3 Pencernaan",
+          "sp": "Merumus tentang makanan tercerna yang tidak diperlukan oleh badan."
+        },
+        {
+          "code": "3.3.4",
+          "printed_page": 56,
+          "sk": "3.3 Pencernaan",
+          "sp": "Menjelaskan pemerhatian tentang pencernaan menerusi lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjukkan carta tubuh tanpa anak panah.",
+        "exploration": "Susun kad mulut, esofagus, perut, usus dan dubur.",
+        "explanation": "Jelaskan penyerapan nutrien dan penyingkiran sisa tidak tercerna.",
+        "elaboration": "Lakar aliran makanan dengan label dan terangkan nasib sisa.",
+        "evaluation": "Urutan tepat dan satu rumusan tentang sisa makanan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-019",
+      "title": "Herbivor, karnivor dan omnivor",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Mengelas haiwan mengikut tabiat pemakanan."
+        },
+        {
+          "code": "4.1.2",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Menjelaskan dengan contoh tabiat pemakanan haiwan herbivor, karnivor dan omnivor."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer ilustrasi arnab, harimau dan ayam bersama makanan.",
+        "exploration": "Asing kad haiwan berdasarkan tabiat pemakanan biasa.",
+        "explanation": "Jelaskan maksud tiga kumpulan dengan contoh.",
+        "elaboration": "Kelaskan sembilan kad berdasarkan bukti pemakanan.",
+        "evaluation": "Tujuh daripada sembilan padanan tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-020",
+      "title": "Inferens tabiat pemakanan",
+      "dskp": [
+        {
+          "code": "4.1.3",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Membuat inferens tentang kumpulan haiwan berdasarkan tabiat pemakanan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk gambar haiwan tidak dinamakan bersama bahan makanan.",
+        "exploration": "Pilih bukti daripada gambar dan rekod makanan.",
+        "explanation": "Terangkan inferens kumpulan berdasarkan bukti, bukan rupa semata-mata.",
+        "elaboration": "Banding tiga kes dan nyatakan bukti tambahan yang diperlukan.",
+        "evaluation": "Dua inferens munasabah dengan alasan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-021",
+      "title": "Kegigian haiwan",
+      "dskp": [
+        {
+          "code": "4.1.4",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Membanding dan membezakan kegigian haiwan herbivor, karnivor, dan omnivor."
+        },
+        {
+          "code": "4.1.5",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Menjelaskan pemerhatian tentang tabiat pemakanan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding rajah gigi kuda, harimau dan manusia.",
+        "exploration": "Perhatikan bentuk serta kedudukan jenis gigi pada carta.",
+        "explanation": "Jelaskan hubungan bentuk gigi dengan tabiat pemakanan.",
+        "elaboration": "Bina jadual perbandingan tiga contoh dan bentang.",
+        "evaluation": "Tiga padanan serta dua huraian fungsi."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-022",
+      "title": "Cara pembiakan tumbuhan",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 59,
+          "sk": "5.1 Pembiakan Tumbuhan",
+          "sp": "Memberi contoh tumbuhan bagi setiap cara pembiakan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer biji benih, daun dan gambar paku pakis.",
+        "exploration": "Padankan contoh kepada spora, biji benih, keratan batang, daun, anak pokok dan batang bawah tanah.",
+        "explanation": "Jelaskan enam cara dengan contoh yang disahkan pada bahan rujukan.",
+        "elaboration": "Bina stesen padanan gambar dan bahagian tumbuhan.",
+        "evaluation": "Lima daripada enam padanan tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-023",
+      "title": "Kepentingan pembiakan tumbuhan",
+      "dskp": [
+        {
+          "code": "5.1.2",
+          "printed_page": 59,
+          "sk": "5.1 Pembiakan Tumbuhan",
+          "sp": "Menaakul kepentingan pembiakan tumbuhan kepada hidupan."
+        }
+      ],
+      "phases": {
+        "engagement": "Bayangkan kebun yang tidak menghasilkan anak pokok baharu.",
+        "exploration": "Susun kad tumbuhan, makanan, haiwan dan manusia.",
+        "explanation": "Jelaskan pembiakan membantu kesinambungan tumbuhan dan sumber makanan.",
+        "elaboration": "Bina peta kesan sekiranya pembiakan terganggu.",
+        "evaluation": "Dua kepentingan kepada hidupan dengan alasan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-024",
+      "title": "Projek pembiakan pelbagai cara",
+      "dskp": [
+        {
+          "code": "5.1.3",
+          "printed_page": 59,
+          "sk": "5.1 Pembiakan Tumbuhan",
+          "sp": "Mengitlak satu tumbuhan boleh membiak melalui pelbagai cara dengan menjalankan projek."
+        },
+        {
+          "code": "5.1.4",
+          "printed_page": 59,
+          "sk": "5.1 Pembiakan Tumbuhan",
+          "sp": "Menjelaskan pemerhatian tentang pembiakan tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer biji benih dan keratan batang kangkung.",
+        "exploration": "Tanam kedua-dua bahan dalam bekas berlabel menggunakan kaedah selamat.",
+        "explanation": "Terangkan bahawa hasil perlu diperhatikan selama beberapa hari atau minggu.",
+        "elaboration": "Rekod tarikh, perubahan dan gambar sebenar; bentangkan setelah data mencukupi.",
+        "evaluation": "Dua rekod sebenar dan rumusan berdasarkan hasil, bukan andaian."
+      },
+      "scope_note": "Projek memerlukan pemerhatian susulan sebenar, bukan satu sesi sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-025",
+      "title": "Unit luas dan luas sekata",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Menyatakan unit yang digunakan untuk mengukur luas dan isi padu."
+        },
+        {
+          "code": "6.1.2",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Mengukur luas permukaan sekata menggunakan petak yang berukuran 1cm x 1cm."
+        }
+      ],
+      "phases": {
+        "engagement": "Tutup permukaan kad dengan petak 1 cm × 1 cm.",
+        "exploration": "Kira petak tanpa ruang atau pertindihan.",
+        "explanation": "Jelaskan sentimeter persegi serta unit luas lain; bezakan daripada unit isi padu.",
+        "elaboration": "Ukur luas tiga permukaan sekata dengan grid.",
+        "evaluation": "Tiga bacaan luas dan unit tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-026",
+      "title": "Anggar luas tidak sekata",
+      "dskp": [
+        {
+          "code": "6.1.3",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Menyelesaikan masalah untuk menganggar luas permukaan yang tidak sekata."
+        }
+      ],
+      "phases": {
+        "engagement": "Letak bentuk daun pada kertas graf.",
+        "exploration": "Kira petak penuh dan gabungkan petak separa secara anggaran.",
+        "explanation": "Terangkan mengapa jawapan ialah anggaran, bukan ukuran tepat.",
+        "elaboration": "Anggar luas dua bentuk berlainan dan banding kaedah.",
+        "evaluation": "Dua anggaran munasabah dengan langkah dinyatakan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-027",
+      "title": "Isi padu kotak lohong",
+      "dskp": [
+        {
+          "code": "6.1.4",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Mengukur isi padu kotak lohong dengan menggunakan kubus yang berukuran 1cm x 1cm x 1cm."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjukkan kotak kecil dan kubus 1 cm³.",
+        "exploration": "Isi kotak dengan kubus unit tanpa ruang kosong.",
+        "explanation": "Terangkan bilangan kubus mewakili isi padu dalam cm³.",
+        "elaboration": "Banding dua kotak dan catat bilangan kubus.",
+        "evaluation": "Dua ukuran isi padu dengan unit betul."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-028",
+      "title": "Isi padu cecair",
+      "dskp": [
+        {
+          "code": "6.1.5",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Mengukur isi padu cecair menggunakan alat dan teknik yang betul."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding bacaan silinder penyukat dari atas dan aras mata.",
+        "exploration": "Sukat air dalam silinder plastik di atas permukaan rata.",
+        "explanation": "Model bacaan bawah meniskus air pada aras mata.",
+        "elaboration": "Ukur tiga isi padu yang disediakan dan semak rakan.",
+        "evaluation": "Tiga bacaan dengan unit mL dan teknik betul."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-029",
+      "title": "Sesaran air",
+      "dskp": [
+        {
+          "code": "6.1.6",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Menyelesaikan masalah untuk menentukan isi padu pepejal tidak sekata melalui kaedah sesaran air."
+        },
+        {
+          "code": "6.1.7",
+          "printed_page": 63,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Menjelaskan pemerhatian tentang pengukuran luas dan isi padu melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal perubahan paras air apabila batu dimasukkan.",
+        "exploration": "Catat bacaan awal dan akhir selepas batu tenggelam sepenuhnya.",
+        "explanation": "Jelaskan beza bacaan ialah isi padu batu; 1 mL bersamaan 1 cm³.",
+        "elaboration": "Ulang dengan objek tidak menyerap air dan lakar bacaan.",
+        "evaluation": "Dua pengiraan sesaran serta satu rajah berlabel."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-030",
+      "title": "Ketumpatan dan kedudukan objek",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 64,
+          "sk": "7.1 Objek atau bahan yang lebih tumpat atau kurang tumpat daripada air.",
+          "sp": "Membuat inferens tentang objek atau bahan yang timbul dan objek atau bahan yang tenggelam dengan menjalankan aktiviti."
+        },
+        {
+          "code": "7.1.2",
+          "printed_page": 64,
+          "sk": "7.1 Objek atau bahan yang lebih tumpat atau kurang tumpat daripada air.",
+          "sp": "Menghubung kait objek atau bahan yang timbul dan objek atau bahan yang tenggelam dengan ketumpatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk gabus besar dan batu kecil.",
+        "exploration": "Uji pelbagai objek dalam air dengan pengawasan.",
+        "explanation": "Jelaskan objek kurang tumpat daripada air timbul dan lebih tumpat tenggelam; bentuk boleh mempengaruhi ketumpatan purata.",
+        "elaboration": "Banding dua model bentuk tanah liat daripada jumlah bahan sama.",
+        "evaluation": "Empat pemerhatian dan satu inferens berdasarkan ketumpatan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-031",
+      "title": "Menjadikan air lebih tumpat",
+      "dskp": [
+        {
+          "code": "7.1.3",
+          "printed_page": 64,
+          "sk": "7.1 Objek atau bahan yang lebih tumpat atau kurang tumpat daripada air.",
+          "sp": "Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat."
+        },
+        {
+          "code": "7.1.4",
+          "printed_page": 64,
+          "sk": "7.1 Objek atau bahan yang lebih tumpat atau kurang tumpat daripada air.",
+          "sp": "Menjelaskan pemerhatian tentang objek atau bahan yang lebih tumpat dan kurang tumpat daripada air melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk telur dalam air biasa dan larutan garam guru.",
+        "exploration": "Tambah garam sedikit demi sedikit dalam bekas uji dengan jumlah air sama.",
+        "explanation": "Terangkan pelarutan garam boleh meningkatkan ketumpatan air.",
+        "elaboration": "Rekod perubahan kedudukan telur dan bentang bukti; jangan makan bahan uji.",
+        "evaluation": "Satu kaedah tepat serta kesimpulan berdasarkan pemerhatian."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-032",
+      "title": "Ujian litmus",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 66,
+          "sk": "8.1 Asid dan alkali",
+          "sp": "Menguji bahan yang berasid, beralkali dan neutral dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kertas litmus merah dan biru.",
+        "exploration": "Guru bimbing ujian larutan makanan selamat seperti air, cuka cair dan soda penaik cair menggunakan penitis.",
+        "explanation": "Terangkan perubahan litmus merah/biru bagi asid, alkali dan neutral.",
+        "elaboration": "Catat jadual warna bagi kedua-dua jenis litmus; tiada merasa atau menyentuh larutan.",
+        "evaluation": "Tiga pengelasan berdasarkan bukti warna."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-033",
+      "title": "Rasa dan sentuhan bukan ujian saintifik",
+      "dskp": [
+        {
+          "code": "8.1.2",
+          "printed_page": 66,
+          "sk": "8.1 Asid dan alkali",
+          "sp": "Mengitlak bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding kad deskripsi rasa makanan biasa tanpa mencuba bahan uji.",
+        "exploration": "Padankan data deskripsi sumber dengan keputusan litmus yang disediakan.",
+        "explanation": "Jelaskan rasa dan sentuhan tidak boleh dijadikan ujian selamat atau muktamad.",
+        "elaboration": "Kenal contoh deskripsi yang tidak cukup untuk mengelaskan bahan.",
+        "evaluation": "Terangkan dua sebab menggunakan penunjuk saintifik; jangan rasa atau sentuh bahan ujian."
+      },
+      "scope_note": "Penyesuaian keselamatan: tiada aktiviti merasa/menyentuh bahan uji; semak kaedah dengan guru sebelum penggunaan.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-034",
+      "title": "Penunjuk alternatif",
+      "dskp": [
+        {
+          "code": "8.1.3",
+          "printed_page": 66,
+          "sk": "8.1 Asid dan alkali",
+          "sp": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral."
+        },
+        {
+          "code": "8.1.4",
+          "printed_page": 66,
+          "sk": "8.1 Asid dan alkali",
+          "sp": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer warna ekstrak kubis ungu yang disediakan guru.",
+        "exploration": "Uji tiga larutan selamat dengan penitis berasingan dan pengawasan.",
+        "explanation": "Banding warna penunjuk dengan keputusan litmus rujukan.",
+        "elaboration": "Hasilkan carta warna daripada pemerhatian; jangan merasa atau mencampur bahan tidak diketahui.",
+        "evaluation": "Tiga rekod warna dan penerangan penggunaan penunjuk."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-035",
+      "title": "Ahli Sistem Suria",
+      "dskp": [
+        {
+          "code": "9.1.1",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Menyenaraikan ahli dalam Sistem Suria melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk ilustrasi Matahari dan planet.",
+        "exploration": "Padankan kad planet, satelit semula jadi, asteroid, meteoroid dan komet.",
+        "explanation": "Jelaskan kategori ahli Sistem Suria serta kedudukan Matahari.",
+        "elaboration": "Susun lapan planet dari Matahari dan padankan kategori lain.",
+        "evaluation": "Namakan lima kategori dan susun sekurang-kurangnya enam planet tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-036",
+      "title": "Suhu planet",
+      "dskp": [
+        {
+          "code": "9.1.2",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Mengitlak suhu planet berdasarkan urutan dalam Sistem Suria."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding kedudukan Utarid dan Zuhrah pada rajah.",
+        "exploration": "Teliti jadual suhu planet yang dibekalkan guru.",
+        "explanation": "Jelaskan kecenderungan suhu berkurang dengan jarak, tetapi atmosfera menyebabkan pengecualian seperti Zuhrah.",
+        "elaboration": "Banding empat planet dan nyatakan bukti pengecualian.",
+        "evaluation": "Satu rumusan umum dan satu pengecualian berdasarkan data."
+      },
+      "scope_note": "Sertakan pengecualian atmosfera Zuhrah.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-037",
+      "title": "Orbit dan tempoh edaran planet",
+      "dskp": [
+        {
+          "code": "9.1.3",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Memerihalkan planet beredar mengelilingi Matahari mengikut orbit."
+        },
+        {
+          "code": "9.1.4",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer dua laluan orbit model.",
+        "exploration": "Gerakkan model planet mengelilingi Matahari dan banding jadual tempoh orbit.",
+        "explanation": "Jelaskan planet mempunyai orbit sendiri dan planet lebih jauh lazimnya mengambil masa lebih panjang.",
+        "elaboration": "Susun kad planet mengikut jarak dan tempoh edaran.",
+        "evaluation": "Empat padanan tepat dan satu rumusan hubungan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-038",
+      "title": "Model Sistem Suria",
+      "dskp": [
+        {
+          "code": "9.1.5",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Imbas urutan planet melalui kad gambar.",
+        "exploration": "Pilih bahan model dan susun kedudukan relatif planet.",
+        "explanation": "Jelaskan model tidak menunjukkan saiz dan jarak sebenar jika tidak berskala.",
+        "elaboration": "Bina model berlabel serta bentangkan orbit dan urutan.",
+        "evaluation": "Lapan planet disusun tepat dan satu batasan model dinyatakan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-039",
+      "title": "Takal tetap dan kegunaan",
+      "dskp": [
+        {
+          "code": "10.1.1",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Menyatakan maksud dan kegunaan takal."
+        },
+        {
+          "code": "10.1.2",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Memerihalkan cara takal tetap berfungsi dengan menggunakan model."
+        },
+        {
+          "code": "10.1.3",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Memberi contoh aplikasi takal dalam kehidupan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar tiang bendera dan perigi.",
+        "exploration": "Gunakan model takal tetap dengan beban ringan yang dibimbing guru.",
+        "explanation": "Terangkan roda beralur dan tali; takal tetap ideal menukar arah daya, bukan mengurangkan magnitud daya.",
+        "elaboration": "Padankan aplikasi dengan fungsi dan demonstrasi model.",
+        "evaluation": "Dua aplikasi dan satu penerangan arah tarikan."
+      },
+      "scope_note": "Takal tetap ideal mengubah arah daya, bukan magnitud daya.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T3-DRAFT-040",
+      "title": "Model takal berfungsi",
+      "dskp": [
+        {
+          "code": "10.1.4",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Mereka cipta model takal yang berfungsi."
+        },
+        {
+          "code": "10.1.5",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya cara menaikkan cawan kertas ringan dari aras meja.",
+        "exploration": "Lakar reka bentuk menggunakan set takal selamat yang disediakan guru.",
+        "explanation": "Jelaskan laluan tali, kestabilan sokongan dan fungsi roda.",
+        "elaboration": "Pasang model di bawah pengawasan, uji beban ringan dan bentang penambahbaikan.",
+        "evaluation": "Model berfungsi, lakaran dan penerangan; tiada beban berat atau tali pada badan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan sahaja.",
+      "ready": false
+    }
+  ]
+}
