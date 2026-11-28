@@ -1,0 +1,671 @@
+{
+  "status": "NEW_PEDAGOGICAL_DRAFT_RPT_AND_DSKP_TEXT",
+  "subject": "MATEMATIK SK",
+  "year": 5,
+  "curriculum": "KSSR",
+  "rpt_reference": {
+    "drive_id": "1_1AAb7rEWewgiNI_mhoMlBl53V1R55gWWasAoLqH3Wk",
+    "version": "v20 draft A",
+    "blocks": [
+      1,
+      13
+    ]
+  },
+  "dskp_reference": {
+    "drive_id": "13oIweG_EEnUKO2SPLfvCPre9L0q3RrbO",
+    "verification": "Text extraction inspected; visual QA pending."
+  },
+  "policy": "28 proposed sessions for 13 RPT draft content blocks. New content drafts, not adaptations of verified ordinary RPH. No runtime IDs, no invented textbook pages, no release or RPT modification. Verify actual ordinary RPH identity, scope, time, books and rendered Word/PDF first.",
+  "records": [
+    {
+      "candidate_id": "T5-RPT-DRAFT-001A",
+      "source_block": 1,
+      "proposed_session": "A",
+      "title": "Menyatakan nombor hingga sejuta",
+      "dskp": [
+        {
+          "code": "1.1.1",
+          "printed_page": 32,
+          "sk": "1.1 Nilai nombor",
+          "sp": "Menyatakan nombor hingga 1 000 000: (i) Membaca sebarang nombor dalam perkataan. (ii) Menyebut sebarang nombor dalam bentuk angka. (iii) Menulis nombor dalam angka dan perkataan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer angka 382 425 pada kad jumlah penduduk.",
+        "exploration": "Susun kad angka dan perkataan bagi nombor enam digit, termasuk sifar di tengah.",
+        "explanation": "Model sebutan lengkap tiga ratus lapan puluh dua ribu empat ratus dua puluh lima.",
+        "elaboration": "Dikte nombor dan tukar kad angka-perkataan bersama pasangan.",
+        "evaluation": "Lima item baca, sebut dan tulis nombor; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-001B",
+      "source_block": 1,
+      "proposed_session": "B",
+      "title": "Nilai tempat, nilai digit dan cerakin",
+      "dskp": [
+        {
+          "code": "1.1.2",
+          "printed_page": 32,
+          "sk": "1.1 Nilai nombor",
+          "sp": "Menentukan nilai nombor hingga 1 000 000: (i) Menyatakan nilai tempat dan nilai digit bagi sebarang nombor. (ii) Mencerakinkan sebarang nombor mengikut nilai tempat dan nilai digit. (iii) Membandingkan nilai dua nombor. (iv) Menyusun nombor mengikut tertib menaik dan tertib menurun. (v) Melengkapkan sebarang rangkaian nombor secara tertib menaik dan menurun."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding nilai digit 5 dalam 352 104 dan 523 104.",
+        "exploration": "Letak digit pada carta nilai tempat hingga juta.",
+        "explanation": "Terangkan nilai tempat, nilai digit serta dua bentuk cerakin.",
+        "elaboration": "Bina nombor daripada cerakin, termasuk lajur sifar; rakan semak.",
+        "evaluation": "Lima item nilai tempat/digit dan cerakin; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-001C",
+      "source_block": 1,
+      "proposed_session": "C",
+      "title": "Banding, susun dan lengkapkan rangkaian",
+      "dskp": [
+        {
+          "code": "1.1.2",
+          "printed_page": 32,
+          "sk": "1.1 Nilai nombor",
+          "sp": "Menentukan nilai nombor hingga 1 000 000: (i) Menyatakan nilai tempat dan nilai digit bagi sebarang nombor. (ii) Mencerakinkan sebarang nombor mengikut nilai tempat dan nilai digit. (iii) Membandingkan nilai dua nombor. (iv) Menyusun nombor mengikut tertib menaik dan tertib menurun. (v) Melengkapkan sebarang rangkaian nombor secara tertib menaik dan menurun."
+        }
+      ],
+      "phases": {
+        "engagement": "Pilih bilangan terbesar antara 591 200 dan 519 200.",
+        "exploration": "Susun kad enam digit menggunakan carta nilai tempat.",
+        "explanation": "Jelaskan perbandingan bermula dari digit paling kiri.",
+        "elaboration": "Susun set nombor menaik/menurun dan lengkapkan rangkaian menggunakan garis nombor.",
+        "evaluation": "Lima item banding, susun dan rangkaian; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-002A",
+      "source_block": 2,
+      "proposed_session": "A",
+      "title": "Nombor perdana hingga 100",
+      "dskp": [
+        {
+          "code": "1.2.1",
+          "printed_page": 32,
+          "sk": "1.2 Nombor perdana",
+          "sp": "Mengenal pasti nombor perdana dalam lingkungan 100."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya mengapa 7 hanya boleh disusun dalam satu baris atau tujuh baris satu.",
+        "exploration": "Bina susunan segi empat bagi 1, 2, 7, 12 dan 17.",
+        "explanation": "Jelaskan nombor perdana mempunyai tepat dua faktor positif berbeza; 1 bukan perdana.",
+        "elaboration": "Gunakan petak 1–100 untuk menapis gandaan 2, 3, 5 dan 7 selain nombor itu sendiri.",
+        "evaluation": "Kenal pasti nombor perdana daripada lima pilihan; empat tepat dengan alasan faktor."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-003A",
+      "source_block": 3,
+      "proposed_session": "A",
+      "title": "Anggaran kuantiti",
+      "dskp": [
+        {
+          "code": "1.3.1",
+          "printed_page": 33,
+          "sk": "1.3 Penganggaran",
+          "sp": "Menganggar suatu kuantiti berdasarkan set rujukan yang diberi dan menentukan kewajaran jawapan."
+        }
+      ],
+      "phases": {
+        "engagement": "Lihat gambar timbunan objek dan satu set rujukan 100.",
+        "exploration": "Anggar bilangan dalam beberapa timbunan dengan membandingkan saiz kelompok.",
+        "explanation": "Terangkan gandaan set rujukan dan ketidakpastian anggaran.",
+        "elaboration": "Banding anggaran dengan kiraan atau jumlah sebenar daripada kad bukti.",
+        "evaluation": "Empat situasi anggaran; tiga munasabah dengan alasan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-004A",
+      "source_block": 4,
+      "proposed_session": "A",
+      "title": "Bundar nombor bulat",
+      "dskp": [
+        {
+          "code": "1.4.1",
+          "printed_page": 33,
+          "sk": "1.4 Pembundaran",
+          "sp": "Membundarkan nombor bulat hingga ratus ribu terdekat."
+        }
+      ],
+      "phases": {
+        "engagement": "Letak 647 200 antara 600 000 dan 700 000.",
+        "exploration": "Tandakan nombor pada garis nombor dan kenal titik tengah.",
+        "explanation": "Model bundar kepada puluh ribu dan ratus ribu terdekat, termasuk titik tengah.",
+        "elaboration": "Pasangan pilih gandaan terdekat bagi nombor berlainan kedudukan.",
+        "evaluation": "Lima item pembundaran; empat tepat termasuk ratus ribu."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-004B",
+      "source_block": 4,
+      "proposed_session": "B",
+      "title": "Nombor asal yang mungkin",
+      "dskp": [
+        {
+          "code": "1.4.2",
+          "printed_page": 33,
+          "sk": "1.4 Pembundaran",
+          "sp": "Mengenal pasti nombor yang mungkin diwakili oleh suatu nombor yang telah dibundarkan hingga ratus ribu terdekat."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya nombor apakah yang boleh dibundar menjadi 700 000 kepada ratus ribu.",
+        "exploration": "Uji kad 649 999, 650 000, 749 999 dan 750 000 pada garis nombor.",
+        "explanation": "Terangkan julat 650 000 hingga 749 999 untuk pembundaran tersebut.",
+        "elaboration": "Bina julat dan pilih nombor asal yang mungkin bagi hasil bundar lain.",
+        "evaluation": "Lima item julat/padanan; empat tepat dengan alasan sempadan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-005A",
+      "source_block": 5,
+      "proposed_session": "A",
+      "title": "Pola nombor",
+      "dskp": [
+        {
+          "code": "1.5.1",
+          "printed_page": 33,
+          "sk": "1.5 Pola nombor",
+          "sp": "Mengenal pasti pola bagi siri nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus-seratus, seribu-seribu, sepuluh ribu-sepuluh ribu dan seratus ribu-seratus ribu."
+        },
+        {
+          "code": "1.5.2",
+          "printed_page": 33,
+          "sk": "1.5 Pola nombor",
+          "sp": "Melengkapkan pelbagai pola nombor yang diberi secara tertib menaik dan menurun."
+        }
+      ],
+      "phases": {
+        "engagement": "Lengkapkan 210 000, 310 000, 410 000, kosong.",
+        "exploration": "Banding siri menaik dan menurun dengan selang kecil dan besar hingga 100 000.",
+        "explanation": "Jelaskan aturan melalui beza nombor berturutan.",
+        "elaboration": "Cipta siri hingga enam nombor, termasuk satu nombor hilang di tengah.",
+        "evaluation": "Lima siri; empat lengkap dengan aturan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-006A",
+      "source_block": 6,
+      "proposed_session": "A",
+      "title": "Tambah hingga lima nombor",
+      "dskp": [
+        {
+          "code": "1.6.1",
+          "printed_page": 34,
+          "sk": "1.6 Operasi asas",
+          "sp": "Menyelesaikan ayat matematik tambah hingga lima nombor melibatkan nombor hingga enam digit dan hasil tambahnya dalam lingkungan 1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Anggar jumlah lima kutipan sekolah rekaan.",
+        "exploration": "Susun kad sehingga enam digit mengikut nilai tempat.",
+        "explanation": "Model pengumpulan semula antara lajur dan anggaran semakan.",
+        "elaboration": "Banding kaedah tambah berperingkat dan bentuk lazim hingga lima nombor.",
+        "evaluation": "Lima item hasil hingga sejuta; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-006B",
+      "source_block": 6,
+      "proposed_session": "B",
+      "title": "Tolak hingga tiga nombor",
+      "dskp": [
+        {
+          "code": "1.6.2",
+          "printed_page": 34,
+          "sk": "1.6 Operasi asas",
+          "sp": "Menyelesaikan ayat matematik tolak melibatkan hingga tiga nombor dalam lingkungan 1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal baki 700 000 unit selepas dua agihan.",
+        "exploration": "Teroka penukaran nilai tempat dengan nombor bersifar.",
+        "explanation": "Model penolakan dua nombor, kemudian penolakan berturut-turut tiga nombor.",
+        "elaboration": "Pasangan kira 800 000 − 125 500 − 74 500 dan semak melalui tambah.",
+        "evaluation": "Lima item tolak dalam lingkungan sejuta; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-006C",
+      "source_block": 6,
+      "proposed_session": "C",
+      "title": "Darab nombor bulat",
+      "dskp": [
+        {
+          "code": "1.6.3",
+          "printed_page": 34,
+          "sk": "1.6 Operasi asas",
+          "sp": "Menyelesaikan ayat matematik darab bagi sebarang nombor hingga enam digit dengan nombor hingga dua digit, 100 dan 1000, hasil darabnya hingga 1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Anggar 24 kotak dengan 125 unit setiap kotak.",
+        "exploration": "Bina model luas 125 × 24 menggunakan cerakin 20 + 4.",
+        "explanation": "Terangkan hasil separa dan nilai tempat bagi ×100 dan ×1000.",
+        "elaboration": "Selesaikan item pengganda dua digit, 100 dan 1000, hasil tidak melebihi sejuta.",
+        "evaluation": "Lima item darab; empat tepat dengan anggaran semakan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-006D",
+      "source_block": 6,
+      "proposed_session": "D",
+      "title": "Bahagi nombor bulat",
+      "dskp": [
+        {
+          "code": "1.6.4",
+          "printed_page": 34,
+          "sk": "1.6 Operasi asas",
+          "sp": "Menyelesaikan ayat matematik bahagi melibatkan sebarang nombor dalam lingkungan 1 000 000 dengan nombor hingga dua digit, 100 dan 1000."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal 48 000 objek dibahagi kepada 24 kumpulan.",
+        "exploration": "Gunakan kaedah hasil bahagi separa dan fakta darab.",
+        "explanation": "Model bentuk lazim serta semakan pembahagi × hasil bahagi + baki.",
+        "elaboration": "Cuba pembahagi dua digit, 100 dan 1000 dalam lingkungan sejuta.",
+        "evaluation": "Lima item bahagi; empat tepat dengan semakan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-007A",
+      "source_block": 7,
+      "proposed_session": "A",
+      "title": "Operasi bergabung tambah/tolak dengan darab",
+      "dskp": [
+        {
+          "code": "1.7.1",
+          "printed_page": 34,
+          "sk": "1.7 Operasi bergabung",
+          "sp": "Mengira operasi bergabung, dalam lingkungan 1 000 000, tanpa dan dengan tanda kurung: (i) Tambah dan darab (ii) Tolak dan darab (iii) Tambah dan bahagi (iv) Tolak dan bahagi"
+        }
+      ],
+      "phases": {
+        "engagement": "Banding 120 + 30 × 4 dengan (120 + 30) × 4.",
+        "exploration": "Gunakan kad operasi untuk menguji susunan langkah kedua-dua ayat.",
+        "explanation": "Jelaskan tanda kurung dahulu, kemudian darab sebelum tambah/tolak.",
+        "elaboration": "Pasangan bina dan kira empat ayat tambah-darab atau tolak-darab.",
+        "evaluation": "Empat item bertanda kurung dan tanpa kurung; tiga tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-007B",
+      "source_block": 7,
+      "proposed_session": "B",
+      "title": "Operasi bergabung tambah/tolak dengan bahagi",
+      "dskp": [
+        {
+          "code": "1.7.1",
+          "printed_page": 34,
+          "sk": "1.7 Operasi bergabung",
+          "sp": "Mengira operasi bergabung, dalam lingkungan 1 000 000, tanpa dan dengan tanda kurung: (i) Tambah dan darab (ii) Tolak dan darab (iii) Tambah dan bahagi (iv) Tolak dan bahagi"
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal 500 − 120 ÷ 6.",
+        "exploration": "Susun kad langkah untuk 500 − 120 ÷ 6 dan (500 − 120) ÷ 5.",
+        "explanation": "Jelaskan keutamaan bahagi dan kesan tanda kurung.",
+        "elaboration": "Selesaikan contoh tambah-bahagi serta tolak-bahagi dengan hasil dalam skop.",
+        "evaluation": "Empat item; tiga tepat dengan langkah."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-008A",
+      "source_block": 8,
+      "proposed_session": "A",
+      "title": "Anu dalam ayat darab",
+      "dskp": [
+        {
+          "code": "1.8.1",
+          "printed_page": 35,
+          "sk": "1.8 Penggunaan anu",
+          "sp": "Menentukan nilai satu anu bagi ayat matematik darab melibatkan satu kali pendaraban dengan hasil darabnya hingga 1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Cari nilai a dalam a × 23 = 46.",
+        "exploration": "Gunakan kad faktor dan hasil untuk meletakkan anu pada tiga kedudukan.",
+        "explanation": "Terangkan penggunaan operasi songsang apabila faktor tidak diketahui.",
+        "elaboration": "Pasangan selesaikan a × 12 = 144, 114 × b = 342 dan 20 × 3 = c.",
+        "evaluation": "Lima ayat darab beranu; empat tepat dengan penggantian semakan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-008B",
+      "source_block": 8,
+      "proposed_session": "B",
+      "title": "Anu dalam ayat bahagi",
+      "dskp": [
+        {
+          "code": "1.8.2",
+          "printed_page": 35,
+          "sk": "1.8 Penggunaan anu",
+          "sp": "Menentukan nilai satu anu bagi ayat matematik bahagi melibatkan sebarang nombor dengan nombor hingga dua digit, 100 dan 1000 dalam lingkungan 1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Teka x dalam x ÷ 8 = 12.",
+        "exploration": "Bina keluarga fakta darab-bahagi dengan kad anu.",
+        "explanation": "Bezakan cara mencari nombor dibahagi, pembahagi atau hasil bahagi.",
+        "elaboration": "Selesaikan 480 ÷ y = 24, z ÷ 100 = 25 dan 36 000 ÷ 1000 = q.",
+        "evaluation": "Lima ayat bahagi beranu; empat tepat dengan semakan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-009A",
+      "source_block": 9,
+      "proposed_session": "A",
+      "title": "Masalah harian nombor bulat",
+      "dskp": [
+        {
+          "code": "1.9.1",
+          "printed_page": 35,
+          "sk": "1.9 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah melibatkan nombor bulat hingga 1 000 000 dalam situasi harian."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding rekod jumlah pengunjung dua tempat rekaan.",
+        "exploration": "Kenal maklumat serta kehendak pada kad nilai, susunan dan pembundaran.",
+        "explanation": "Model faham, rancang, selesaikan dan semak menggunakan jadual.",
+        "elaboration": "Kumpulan selesaikan situasi jumlah pengunjung dan susunan rekod dalam lingkungan sejuta.",
+        "evaluation": "Empat masalah nombor; tiga tepat dengan alasan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-009B",
+      "source_block": 9,
+      "proposed_session": "B",
+      "title": "Masalah operasi asas dan bergabung",
+      "dskp": [
+        {
+          "code": "1.9.2",
+          "printed_page": 35,
+          "sk": "1.9 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah harian bagi operasi asas dan operasi bergabung, hasilnya dalam lingkungan 1 000 000."
+        }
+      ],
+      "phases": {
+        "engagement": "Paparkan stok awal dan bilangan kotak yang diagih.",
+        "exploration": "Pilih operasi berdasarkan kehendak dan lukis rajah bar.",
+        "explanation": "Model ayat matematik operasi bergabung dan semak anggaran.",
+        "elaboration": "Selesaikan empat masalah pengeluaran, stok dan agihan; hasil dalam lingkungan sejuta.",
+        "evaluation": "Tiga daripada empat masalah tepat dengan langkah dan unit."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-009C",
+      "source_block": 9,
+      "proposed_session": "C",
+      "title": "Masalah harian dengan anu",
+      "dskp": [
+        {
+          "code": "1.9.3",
+          "printed_page": 35,
+          "sk": "1.9 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah operasi darab dan bahagi dalam situasi harian melibatkan satu anu."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya bilangan kotak jika 240 buku diagih 12 setiap kotak.",
+        "exploration": "Kenal kuantiti tidak diketahui dan wakil dengan huruf.",
+        "explanation": "Model 12 × n = 240 serta semakan menggunakan bahagi.",
+        "elaboration": "Bina ayat darab atau bahagi beranu bagi masalah bungkusan dan agihan.",
+        "evaluation": "Empat masalah; tiga tepat dengan ayat beranu dan semakan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-010A",
+      "source_block": 10,
+      "proposed_session": "A",
+      "title": "Darab nombor bulat dengan pecahan",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 38,
+          "sk": "2.1 Pecahan",
+          "sp": "Mendarab pecahan bagi dua nombor melibatkan nombor bulat, pecahan wajar dan nombor bercampur."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal tiga kumpulan separuh roti.",
+        "exploration": "Bina model 3 × 1/2 menggunakan jalur pecahan.",
+        "explanation": "Jelaskan hasil 3/2 = 1 1/2 dan kesetaraan model.",
+        "elaboration": "Cuba darab nombor bulat dan pecahan wajar dengan penyebut hingga 10.",
+        "evaluation": "Empat item; tiga tepat dengan model atau pengiraan."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-010B",
+      "source_block": 10,
+      "proposed_session": "B",
+      "title": "Darab pecahan dan nombor bercampur",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 38,
+          "sk": "2.1 Pecahan",
+          "sp": "Mendarab pecahan bagi dua nombor melibatkan nombor bulat, pecahan wajar dan nombor bercampur."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya nilai separuh daripada tiga perempat keping kertas.",
+        "exploration": "Lorek 1/2 daripada 3/4 pada grid dan kira pertindihan.",
+        "explanation": "Model darab pembilang dan penyebut serta tukar nombor bercampur sebelum darab.",
+        "elaboration": "Selesaikan 2/3 × 3/5 dan 1 1/2 × 2/3 menggunakan penyebut asal hingga 10.",
+        "evaluation": "Empat item termasuk nombor bercampur; tiga tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-011A",
+      "source_block": 11,
+      "proposed_session": "A",
+      "title": "Pembundaran perpuluhan",
+      "dskp": [
+        {
+          "code": "2.2.1",
+          "printed_page": 38,
+          "sk": "2.2 Perpuluhan",
+          "sp": "Pembundaran perpuluhan hingga tiga tempat perpuluhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Letakkan 4.376 pada garis nombor antara 4.37 dan 4.38.",
+        "exploration": "Tandakan nilai tempat perpuluhan dan titik tengah.",
+        "explanation": "Terangkan pembundaran kepada satu, dua dan tiga tempat perpuluhan menggunakan nombor yang sesuai.",
+        "elaboration": "Banding contoh ukuran 5.2478 dan 2.3645 pada ketepatan berlainan.",
+        "evaluation": "Lima item pembundaran hingga tiga tempat; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-011B",
+      "source_block": 11,
+      "proposed_session": "B",
+      "title": "Tambah dan tolak perpuluhan bergabung",
+      "dskp": [
+        {
+          "code": "2.2.2",
+          "printed_page": 38,
+          "sk": "2.2 Perpuluhan",
+          "sp": "Menyelesaikan ayat matematik operasi bergabung tambah dan tolak perpuluhan hingga tiga tempat perpuluhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal baki 5.250 + 1.375 − 2.125 liter.",
+        "exploration": "Susun digit pada carta hingga perseribu dan seragamkan lajur.",
+        "explanation": "Model tambah-tolak mengikut turutan dan sejajarkan titik perpuluhan.",
+        "elaboration": "Pasangan selesaikan empat ayat dengan hingga tiga tempat perpuluhan.",
+        "evaluation": "Empat item; tiga tepat dengan langkah."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-011C",
+      "source_block": 11,
+      "proposed_session": "C",
+      "title": "Darab perpuluhan",
+      "dskp": [
+        {
+          "code": "2.2.3",
+          "printed_page": 38,
+          "sk": "2.2 Perpuluhan",
+          "sp": "Mendarab perpuluhan hingga tiga tempat perpuluhan dengan nombor hingga dua digit, 100 dan 1000."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal jumlah panjang 12 reben, setiap satu 0.125 m.",
+        "exploration": "Teroka 0.125 × 12 menggunakan hasil separa.",
+        "explanation": "Terangkan nilai tempat apabila mendarab dengan dua digit, 100 dan 1000.",
+        "elaboration": "Selesaikan pelbagai contoh darab, termasuk 0.375 × 1000.",
+        "evaluation": "Lima item; empat tepat dengan nilai tempat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-011D",
+      "source_block": 11,
+      "proposed_session": "D",
+      "title": "Bahagi perpuluhan",
+      "dskp": [
+        {
+          "code": "2.2.4",
+          "printed_page": 38,
+          "sk": "2.2 Perpuluhan",
+          "sp": "Membahagi perpuluhan dengan nombor hingga dua digit,100, 1000, hasil bahaginya hingga tiga tempat perpuluhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal agihan 3.6 liter kepada 12 bekas.",
+        "exploration": "Gunakan rajah dan kaedah nilai tempat untuk mencari 0.3 liter.",
+        "explanation": "Model bahagi dengan dua digit, 100 dan 1000 serta semakan darab.",
+        "elaboration": "Cuba 7.5 ÷ 25, 12.5 ÷ 100 dan 240 ÷ 1000.",
+        "evaluation": "Lima item hasil hingga tiga tempat perpuluhan; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-012A",
+      "source_block": 12,
+      "proposed_session": "A",
+      "title": "Nombor bercampur dan peratus",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 38,
+          "sk": "2.3 Peratus",
+          "sp": "Menukar nombor bercampur kepada peratus dan sebaliknya."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk satu grid penuh dan separuh grid; murid ramal peratus.",
+        "exploration": "Padankan 1 1/2 dengan 150 petak daripada unit 100 petak.",
+        "explanation": "Terangkan penukaran nombor bercampur kepada peratus dan sebaliknya.",
+        "elaboration": "Pasangan tukar 1 1/4, 2 1/2, 175% dan 220% dua arah.",
+        "evaluation": "Lima penukaran; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-012B",
+      "source_block": 12,
+      "proposed_session": "B",
+      "title": "Peratus melebihi 100 dan kuantiti",
+      "dskp": [
+        {
+          "code": "2.3.2",
+          "printed_page": 38,
+          "sk": "2.3 Peratus",
+          "sp": "Mengira suatu kuantiti daripada peratus hingga melebihi 100% dan sebaliknya."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya jumlah 150% daripada 40 objek.",
+        "exploration": "Bina model 100% = 40 dan 50% = 20 menggunakan rajah bar.",
+        "explanation": "Terangkan 150% daripada 40 = 60 dan peratus daripada kuantiti asal.",
+        "elaboration": "Selesaikan contoh 125% daripada 80 dan 90 sebagai peratus daripada 60.",
+        "evaluation": "Lima item dua arah termasuk lebih 100%; empat tepat."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "T5-RPT-DRAFT-013A",
+      "source_block": 13,
+      "proposed_session": "A",
+      "title": "Masalah pecahan, perpuluhan dan peratus",
+      "dskp": [
+        {
+          "code": "2.4.1",
+          "printed_page": 39,
+          "sk": "2.4 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah harian melibatkan pecahan, perpuluhan dan peratus."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding tiga kad situasi resipi, panjang dan sasaran pengumpulan.",
+        "exploration": "Kenal bentuk nombor serta maklumat diberi dalam setiap masalah.",
+        "explanation": "Model Polya menggunakan rajah atau jadual dan semak unit.",
+        "elaboration": "Selesaikan masalah 2/3 daripada 3/4 kg, 2.5 × 12 m dan 125% daripada 80 unit.",
+        "evaluation": "Tiga masalah individu merangkumi tiga bentuk nombor; dua tepat dengan langkah."
+      },
+      "scope_note": "Fokus tajuk ini; bukan pengesahan semua SP atau bilangan PdP rasmi.",
+      "ready": false
+    }
+  ]
+}
