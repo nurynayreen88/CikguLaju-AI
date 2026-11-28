@@ -60,8 +60,14 @@ def verified_selection(year, unit, lesson, rows):
         raise ValueError("Native RPH unavailable")
     return row
 
-def create_blueprint():
-    bp = Blueprint("science_5p_candidate",__name__)
+def create_blueprint(*, published=False):
+    from web import science_5p_release as release
+    bp = Blueprint("science_5p_release" if published else "science_5p_candidate",__name__)
+    status="INTERNAL-REVIEWED" if published else "DRAFT-NOT-FOR-TEACHING"
+    def route_enabled():
+        return os.getenv(release.FLAG)=="1" if published else enabled()
+    def lesson_enabled(y,cid):
+        return release.is_released(y,cid) if published else enabled()
     def error(status,code):
         return jsonify(error=code,code=code),status
     @bp.after_request
@@ -86,9 +92,9 @@ def create_blueprint():
             return None,None,None,error(403,"ACCOUNT_NOT_VERIFIED")
         return config,uid,account,None
 
-    @bp.get(AVAILABILITY_URL)
+    @bp.get("/api/kssr/sk/science/5p/available" if published else AVAILABILITY_URL)
     def availability():
-        if not enabled():
+        if not route_enabled():
             return error(404,"SCIENCE_5P_UNAVAILABLE")
         config,uid,account,denied=account_for_request()
         if denied is not None:
@@ -104,15 +110,17 @@ def create_blueprint():
                 return error(503,"TRIAL_UNVERIFIED")
             if remaining==0:
                 return error(403,"FREE_TRIAL_EXHAUSTED")
+        if not lesson_enabled(int(y),request.args["lesson"]):
+            return error(404,"SCIENCE_5P_UNAVAILABLE")
         try:
             rows,_=_inventory(int(y))
             verified_selection(int(y),request.args["unit"],request.args["lesson"],rows)
         except Exception:
             return error(503,"RPH_SOURCE_UNAVAILABLE")
-        return jsonify(available=True,formats=["word","pdf"],status="DRAFT-NOT-FOR-TEACHING")
-    @bp.post(URL)
+        return jsonify(available=True,formats=["word","pdf"],status=status)
+    @bp.post("/api/kssr/sk/science/5p/download" if published else URL)
     def download():
-        if not enabled():
+        if not route_enabled():
             return error(404,"SCIENCE_5P_UNAVAILABLE")
         if request.headers.get("Origin")!=ORIGIN:
             return error(403,"ORIGIN_REQUIRED")
@@ -137,13 +145,15 @@ def create_blueprint():
                 return error(503,"TRIAL_UNVERIFIED")
             if balance==0:
                 return error(403,"FREE_TRIAL_EXHAUSTED")
+        if not lesson_enabled(year,payload["lesson"]):
+            return error(404,"SCIENCE_5P_UNAVAILABLE")
         try:
             rows,support=_inventory(year)
             row=verified_selection(year,payload["unit"],payload["lesson"],rows)
             # Keep exact audited renderer and QA watermark in the candidate.
             from tools.science_5p_web_integration_qa_20261128 import render_selected
             output=render_selected(year,row,support[row["lesson_id"]],fmt,
-                                   {k:payload[k] for k in EXTRA_FIELDS if k in payload})
+                                   {k:payload[k] for k in EXTRA_FIELDS if k in payload},published=published)
             if not isinstance(output,bytes) or not output:
                 raise ValueError("Empty document")
         except TeacherFieldError:
@@ -159,8 +169,8 @@ def create_blueprint():
             return error(403,"FREE_TRIAL_EXHAUSTED")
         ext,mime=("docx","application/vnd.openxmlformats-officedocument.wordprocessingml.document") if fmt=="word" else ("pdf","application/pdf")
         resp=send_file(BytesIO(output),mimetype=mime,as_attachment=True,
-                       download_name=f"CIKGULAJU_{row['lesson_id']}_5P_DRAF_QA.{ext}",conditional=False)
-        resp.headers["X-RPH-QA-Status"]="DRAFT-NOT-FOR-TEACHING"
+                       download_name=f"CIKGULAJU_{row['lesson_id']}_5P{'' if published else '_DRAF_QA'}.{ext}",conditional=False)
+        resp.headers["X-RPH-QA-Status"]=status
         if result["remaining"] is not None:
             resp.headers["X-RPH-Trial-Remaining"]=str(result["remaining"])
         return resp
