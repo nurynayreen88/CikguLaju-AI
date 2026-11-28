@@ -1,0 +1,416 @@
+{
+  "status": "11_NATIVE_SINGLE_SP_DRAFTS_ONLY",
+  "parent_audit_head": "352fbfcc3e32d5854ffe14bd9145119cef0b5bfe",
+  "candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+  "total": 11,
+  "limitations": "Inherited DSKP wording from prior source candidates; ordinary RPH fields, lesson duration, textbook pages, academic and print QA pending. Not approved or deployed. Separate branch to avoid parallel overwrites.",
+  "records": [
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-003",
+      "unit": "ufa457f146af708b575c49eb9",
+      "unit_title": "Asid dan Alkali / 8.1",
+      "native_title": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral.",
+      "dskp": [
+        {
+          "code": "8.1.3",
+          "printed_page": 66,
+          "sk": "8.1 Asid dan alkali",
+          "sp": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-034",
+      "objective": "Kenal pasti sekurang-kurangnya dua bahan penunjuk alternatif melalui ujian terkawal.",
+      "criterion": "Rekod perubahan warna penunjuk bagi tiga sampel berlabel dan nyatakan dua bahan penunjuk alternatif berdasarkan keputusan.",
+      "phases": {
+        "engagement": "Guru tunjuk ekstrak kubis ungu dan bunga telang; murid ramal perubahan warna.",
+        "exploration": "Murid menguji penunjuk yang disediakan guru pada larutan cuka cair, soda bikarbonat cair dan air; guna penitis berasingan, tanpa merasa atau menyentuh larutan.",
+        "explanation": "Guru membandingkan carta warna setiap penunjuk dan menjelaskan bahawa hasil perlu dibandingkan dengan sampel rujukan.",
+        "elaboration": "Murid pilih satu penunjuk untuk mengenal pasti sampel berlabel berdasarkan carta rujukan.",
+        "evaluation": "Murid melengkapkan jadual tiga sampel dan menyatakan dua penunjuk alternatif daripada hasil ujian."
+      },
+      "support": {
+        "bbm": "Ekstrak kubis ungu, bunga telang, penitis, cawan berlabel, pelindung mata",
+        "pemulihan": "Padankan kad warna dengan sampel rujukan.",
+        "pengayaan": "Bandingkan kebolehbacaan dua penunjuk menggunakan hasil ujian.",
+        "pak21": "Inkuiri kumpulan kecil",
+        "emk": "Keselamatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-004",
+      "unit": "ufa457f146af708b575c49eb9",
+      "unit_title": "Asid dan Alkali / 8.1",
+      "native_title": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "8.1.4",
+          "printed_page": 66,
+          "sk": "8.1 Asid dan alkali",
+          "sp": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-034",
+      "objective": "Sampaikan tiga pemerhatian asid dan alkali menggunakan satu medium kreatif.",
+      "criterion": "Hasil murid mengandungi tiga pemerhatian berasaskan data dengan label sampel dan perubahan yang tepat.",
+      "phases": {
+        "engagement": "Guru paparkan dua jadual ujian penunjuk; murid pilih pemerhatian yang disokong data.",
+        "exploration": "Murid meneliti rekod ujian sebenar atau data contoh yang jelas dilabel.",
+        "explanation": "Guru menunjukkan cara membezakan pemerhatian warna daripada kesimpulan sifat bahan.",
+        "elaboration": "Murid menghasilkan lakaran berlabel, catatan atau persembahan lisan daripada data.",
+        "evaluation": "Rakan menyemak tiga pemerhatian menggunakan senarai semak; guru menilai ketepatan label dan perubahan warna."
+      },
+      "support": {
+        "bbm": "Jadual data ujian, kertas, pen warna",
+        "pemulihan": "Gunakan bingkai ayat dan satu jadual contoh.",
+        "pengayaan": "Bandingkan dua set data penunjuk dalam pembentangan.",
+        "pak21": "Galeri hasil kerja",
+        "emk": "Komunikasi berasaskan bukti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-008",
+      "unit": "u144593f4237ade453f115b81",
+      "unit_title": "Manusia / 3.1 Gigi",
+      "native_title": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi.",
+      "dskp": [
+        {
+          "code": "3.1.4",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-013",
+      "objective": "Hubung kait sekurang-kurangnya dua amalan penjagaan gigi dengan bahagian gigi yang perlu dilindungi.",
+      "criterion": "Murid melabel enamel dan gusi pada rajah serta menerangkan dua amalan penjagaan dengan alasan.",
+      "phases": {
+        "engagement": "Guru tunjuk rajah gigi sihat dan gigi berlubang; murid kenal pasti perbezaan.",
+        "exploration": "Murid meneliti rajah struktur gigi dan memadankan kad amalan dengan bahagian yang dilindungi.",
+        "explanation": "Guru terangkan enamel melindungi gigi dan kepentingan memberus permukaan gigi serta kawasan berhampiran gusi.",
+        "elaboration": "Murid gunakan model gigi untuk menunjukkan memberus dengan lembut dan memilih minuman kurang gula.",
+        "evaluation": "Murid melabel rajah dan memberi dua alasan penjagaan gigi berdasarkan struktur."
+      },
+      "support": {
+        "bbm": "Rajah keratan gigi, model gigi, berus demonstrasi",
+        "pemulihan": "Padankan dua kad amalan dengan rajah berlabel.",
+        "pengayaan": "Jelaskan sebab pemeriksaan pergigian berkala membantu penjagaan gigi.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Kesihatan dan tanggungjawab"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-009",
+      "unit": "u144593f4237ade453f115b81",
+      "unit_title": "Manusia / 3.1 Gigi",
+      "native_title": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "3.1.5",
+          "printed_page": 54,
+          "sk": "3.1 Gigi",
+          "sp": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-013",
+      "objective": "Komunikasikan tiga pemerhatian tentang jenis, fungsi atau struktur gigi melalui satu medium.",
+      "criterion": "Hasil kerja mengandungi tiga pemerhatian tepat dan label yang bersesuaian dengan rajah rujukan.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga gambar jenis gigi; murid menyebut ciri bentuk yang dapat dilihat.",
+        "exploration": "Murid memerhatikan rajah atau model gigi dan mengumpulkan tiga catatan ciri.",
+        "explanation": "Guru membimbing murid menggunakan label dan perkataan pemerhatian yang tepat.",
+        "elaboration": "Murid membina peta visual, catatan atau penerangan lisan menggunakan tiga catatan.",
+        "evaluation": "Guru menilai tiga catatan dan label melalui persembahan ringkas."
+      },
+      "support": {
+        "bbm": "Model gigi, kad label, kertas",
+        "pemulihan": "Beri rajah separa berlabel dan pilihan perkataan.",
+        "pengayaan": "Terangkan bagaimana bentuk satu jenis gigi berkait dengan fungsinya.",
+        "pak21": "Pembentangan pasangan",
+        "emk": "Komunikasi dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-012",
+      "unit": "u4e61060c43c0c24abab59450",
+      "unit_title": "Manusia / 3.2 Kelas Makanan",
+      "native_title": "Menjelas dengan contoh makanan seimbang berdasarkan piramid makanan.",
+      "dskp": [
+        {
+          "code": "3.2.3",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Menjelas dengan contoh makanan seimbang berdasarkan piramid makanan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-016",
+      "objective": "Bina satu contoh hidangan seimbang berpandukan piramid makanan dalam buku teks.",
+      "criterion": "Murid memilih sekurang-kurangnya empat jenis makanan yang mewakili kumpulan sesuai dan memberikan dua alasan berpandukan piramid.",
+      "phases": {
+        "engagement": "Guru paparkan dua contoh hidangan; murid banding kepelbagaian makanan.",
+        "exploration": "Murid susun kad makanan mengikut kumpulan pada piramid rujukan.",
+        "explanation": "Guru jelaskan kepelbagaian dan kuantiti relatif berdasarkan piramid yang digunakan dalam kurikulum.",
+        "elaboration": "Murid mereka satu hidangan menggunakan kad makanan dan jelaskan pilihan kepada rakan.",
+        "evaluation": "Guru semak empat pilihan makanan dan dua alasan berpandukan piramid."
+      },
+      "support": {
+        "bbm": "Piramid makanan buku teks, kad makanan",
+        "pemulihan": "Gunakan kad berwarna mengikut kumpulan makanan.",
+        "pengayaan": "Cadangkan pertukaran satu makanan sambil mengekalkan keseimbangan.",
+        "pak21": "Reka hidangan secara berpasangan",
+        "emk": "Amalan pemakanan sihat"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-013",
+      "unit": "u4e61060c43c0c24abab59450",
+      "unit_title": "Manusia / 3.2 Kelas Makanan",
+      "native_title": "Menaakul kesan pengambilan makanan yang tidak seimbang.",
+      "dskp": [
+        {
+          "code": "3.2.4",
+          "printed_page": 55,
+          "sk": "3.2 Kelas Makanan",
+          "sp": "Menaakul kesan pengambilan makanan yang tidak seimbang."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-016",
+      "objective": "Menaakul dua kesan pengambilan makanan tidak seimbang daripada situasi harian.",
+      "criterion": "Murid memadankan dua situasi dengan kesan munasabah dan menjelaskan satu sebab bagi setiap padanan.",
+      "phases": {
+        "engagement": "Guru paparkan contoh tabiat makan yang kurang pelbagai tanpa menilai bentuk badan seseorang.",
+        "exploration": "Murid meneliti kad situasi kekurangan kepelbagaian, pengambilan gula berlebihan atau kurang serat.",
+        "explanation": "Guru membimbing murid mengaitkan tabiat pemakanan dengan risiko kesihatan tanpa menyimpulkan diagnosis individu.",
+        "elaboration": "Murid mencadangkan satu perubahan praktikal bagi setiap situasi.",
+        "evaluation": "Murid menjawab dua situasi dengan kesan dan alasan masing-masing."
+      },
+      "support": {
+        "bbm": "Kad situasi, rajah piramid makanan",
+        "pemulihan": "Padankan kad sebab dan kesan berpandukan petunjuk.",
+        "pengayaan": "Bandingkan dua cadangan perubahan menu berdasarkan kepelbagaian.",
+        "pak21": "Perbincangan kumpulan",
+        "emk": "Kesihatan dan sikap menghormati"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-014",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "unit_title": "Mesin / 10.1 Takal",
+      "native_title": "Menyatakan maksud dan kegunaan takal.",
+      "dskp": [
+        {
+          "code": "10.1.1",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Menyatakan maksud dan kegunaan takal."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-039",
+      "objective": "Nyatakan maksud takal dan dua kegunaannya.",
+      "criterion": "Murid mengenal pasti roda beralur dan tali pada model serta menyatakan dua kegunaan takal.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar tiang bendera dan bertanya bagaimana bendera dinaikkan.",
+        "exploration": "Murid memerhatikan model takal ringan dan mengenal pasti roda serta tali.",
+        "explanation": "Guru menerangkan takal sebagai roda beralur yang digunakan bersama tali untuk membantu pergerakan beban.",
+        "elaboration": "Murid memadankan gambar aplikasi dengan kegunaan menaikkan atau menggerakkan objek.",
+        "evaluation": "Murid melabel roda dan tali serta menyatakan dua kegunaan."
+      },
+      "support": {
+        "bbm": "Model takal meja, kad gambar",
+        "pemulihan": "Gunakan gambar berlabel dan satu contoh berpandu.",
+        "pengayaan": "Terangkan mengapa tali perlu berada dalam alur roda.",
+        "pak21": "Pemerhatian berpasangan",
+        "emk": "Keselamatan penggunaan alat"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-015",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "unit_title": "Mesin / 10.1 Takal",
+      "native_title": "Memerihalkan cara takal tetap berfungsi dengan menggunakan model.",
+      "dskp": [
+        {
+          "code": "10.1.2",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Memerihalkan cara takal tetap berfungsi dengan menggunakan model."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-039",
+      "objective": "Perihalkan cara takal tetap mengubah arah tarikan menggunakan model.",
+      "criterion": "Murid menunjukkan satu demonstrasi yang betul dan menerangkan hubungan arah tarikan dengan arah gerakan beban.",
+      "phases": {
+        "engagement": "Guru tunjuk model takal tetap dan minta murid ramal arah beban apabila tali ditarik ke bawah.",
+        "exploration": "Murid menarik tali pada model meja dengan beban ringan dan merekod arah gerakan.",
+        "explanation": "Guru jelaskan takal tetap menukar arah daya; jangan dakwa ia sentiasa mengurangkan daya yang diperlukan.",
+        "elaboration": "Murid melukis anak panah arah tarikan dan gerakan beban pada model kedua.",
+        "evaluation": "Murid menunjukkan demonstrasi dan menjelaskan kedua-dua arah dengan tepat."
+      },
+      "support": {
+        "bbm": "Model takal tetap yang dipasang kukuh, tali, beban ringan",
+        "pemulihan": "Gunakan dua anak panah berwarna pada rajah.",
+        "pengayaan": "Bandingkan cara mengangkat beban secara langsung dengan arah tarikan takal tetap.",
+        "pak21": "Eksperimen pasangan",
+        "emk": "Keselamatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-016",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "unit_title": "Mesin / 10.1 Takal",
+      "native_title": "Memberi contoh aplikasi takal dalam kehidupan.",
+      "dskp": [
+        {
+          "code": "10.1.3",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Memberi contoh aplikasi takal dalam kehidupan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-039",
+      "objective": "Kenal pasti tiga aplikasi takal dalam kehidupan dan kegunaan setiap satu.",
+      "criterion": "Murid memadankan tiga contoh yang benar-benar menggunakan takal dengan fungsi masing-masing.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar tiang bendera dan kren bertakal.",
+        "exploration": "Murid memerhatikan gambar atau video pendek dan mengenal pasti roda serta laluan tali.",
+        "explanation": "Guru menjelaskan kegunaan takal pada contoh yang jelas kelihatan; bezakan roda biasa daripada takal.",
+        "elaboration": "Murid memilih satu lagi contoh daripada kad gambar dan menerangkan bagaimana tali menggerakkan beban.",
+        "evaluation": "Guru menyemak tiga padanan aplikasi dengan fungsi yang tepat."
+      },
+      "support": {
+        "bbm": "Kad gambar tiang bendera, kren dan sistem angkat bertakal",
+        "pemulihan": "Beri dua contoh berlabel untuk padanan.",
+        "pengayaan": "Bandingkan fungsi dua aplikasi menggunakan rajah tali.",
+        "pak21": "Perbincangan kumpulan kecil",
+        "emk": "Teknologi dalam kehidupan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-017",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "unit_title": "Mesin / 10.1 Takal",
+      "native_title": "Mereka cipta model takal yang berfungsi.",
+      "dskp": [
+        {
+          "code": "10.1.4",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Mereka cipta model takal yang berfungsi."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-040",
+      "objective": "Bina model takal tetap ringkas yang mampu menaikkan beban ringan.",
+      "criterion": "Model menaikkan beban ringan sekurang-kurangnya sekali dengan tali kekal pada alur dan murid menerangkan satu pembaikan.",
+      "phases": {
+        "engagement": "Guru menunjukkan prototaip kecil yang dipasang kukuh.",
+        "exploration": "Murid meneliti bahan dan melakar kedudukan roda, tali dan beban.",
+        "explanation": "Guru membimbing pemasangan model meja; guru mengurus bahagian tajam dan murid tidak mengangkat beban berat.",
+        "elaboration": "Murid menguji model dengan beban ringan, membaiki kedudukan tali atau sokongan jika perlu.",
+        "evaluation": "Guru menilai ujian fungsi dan penerangan satu pembaikan berdasarkan rubrik ringkas."
+      },
+      "support": {
+        "bbm": "Roda beralur, tali, rangka meja stabil, beban ringan",
+        "pemulihan": "Sediakan rangka siap pasang dan rajah langkah.",
+        "pengayaan": "Uji dua kedudukan pemegang tali dengan beban ringan yang sama.",
+        "pak21": "Reka cipta berkumpulan",
+        "emk": "Kreativiti dan keselamatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-018",
+      "unit": "u49de9932b492cd8fdedb9f52",
+      "unit_title": "Mesin / 10.1 Takal",
+      "native_title": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "10.1.5",
+          "printed_page": 70,
+          "sk": "10.1 Takal",
+          "sp": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-040",
+      "objective": "Sampaikan tiga pemerhatian tentang operasi takal berdasarkan model atau demonstrasi.",
+      "criterion": "Murid menyampaikan tiga pemerhatian dengan rajah atau penerangan lisan yang menyatakan arah tarikan dan gerakan beban.",
+      "phases": {
+        "engagement": "Guru paparkan model takal daripada sesi sebelumnya dan minta murid mengingat hasil ujian.",
+        "exploration": "Murid memerhatikan demonstrasi dan mencatat pergerakan tali, roda dan beban.",
+        "explanation": "Guru membantu murid melabel rajah dan membezakan pemerhatian daripada penerangan sebab.",
+        "elaboration": "Murid menghasilkan lakaran beranak panah atau penerangan lisan berasaskan catatan.",
+        "evaluation": "Guru menyemak tiga pemerhatian, arah gerakan serta label model."
+      },
+      "support": {
+        "bbm": "Model takal, jadual pemerhatian, kertas",
+        "pemulihan": "Gunakan rajah separa lengkap dan kata arah.",
+        "pengayaan": "Bandingkan catatan dua demonstrasi dengan arah tarikan berlainan.",
+        "pak21": "Galeri rajah",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    }
+  ]
+}

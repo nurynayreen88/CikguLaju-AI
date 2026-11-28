@@ -1,0 +1,750 @@
+{
+  "status": "20_NATIVE_SINGLE_SP_DRAFTS_ONLY",
+  "parent_audit_head": "c59e0603e5c3d35615be08e18636cd1fc7abec8f",
+  "identity_head": "352fbfcc3e32d5854ffe14bd9145119cef0b5bfe",
+  "candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+  "total": 20,
+  "limitations": "Inherited DSKP text from prior source candidates. Ordinary RPH fields, duration, textbook pages, academic review and print QA remain pending. No release.",
+  "records": [
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-002",
+      "unit": "u3ad6e37021e9f56ab1f76f55",
+      "unit_title": "Mesin",
+      "native_title": "Mesin — Mengitlak hubung kait jarak beban dari fulkrum dengan daya yang diperlukan.",
+      "dskp": [
+        {
+          "code": "10.1.2",
+          "printed_page": 72,
+          "sk": "10.1 Tuas",
+          "sp": "Mengitlak hubung kait jarak beban dari fulkrum dengan daya yang diperlukan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-045",
+      "objective": "Rumuskan hubungan jarak beban daripada fulkrum dengan daya apabila kedudukan daya dikekalkan.",
+      "criterion": "Tiga bacaan perbandingan dan satu rumusan yang selaras dengan data.",
+      "phases": {
+        "engagement": "Guru tunjuk pembaris bertumpu dengan pemberat dekat dan jauh daripada fulkrum.",
+        "exploration": "Murid ubah jarak beban yang sama pada model tuas, kekalkan kedudukan daya dan ukur daya pengimbang menggunakan alat sesuai.",
+        "explanation": "Guru bimbing perbandingan bacaan dan hubungan jarak beban dengan daya.",
+        "elaboration": "Murid ramal bacaan bagi kedudukan baharu dan uji ramalan dengan model stabil.",
+        "evaluation": "Guru semak tiga bacaan dan rumusan: lebih jauh beban daripada fulkrum, lebih besar daya pada kedudukan tetap."
+      },
+      "support": {
+        "bbm": "Pembaris kukuh, fulkrum stabil, pemberat ringan, neraca spring",
+        "pemulihan": "Gunakan dua kedudukan bertanda.",
+        "pengayaan": "Banding ramalan apabila kedudukan daya pula diubah, dengan pemboleh ubah lain tetap.",
+        "pak21": "Eksperimen kumpulan",
+        "emk": "Keselamatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-003",
+      "unit": "u3ad6e37021e9f56ab1f76f55",
+      "unit_title": "Mesin",
+      "native_title": "Mesin — Menjelaskan pemerhatian tentang tuas melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "10.1.3",
+          "printed_page": 72,
+          "sk": "10.1 Tuas",
+          "sp": "Menjelaskan pemerhatian tentang tuas melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-045",
+      "objective": "Komunikasikan tiga pemerhatian tentang tuas daripada model atau rekod aktiviti.",
+      "criterion": "Rajah berlabel fulkrum, beban dan daya serta tiga pemerhatian tepat.",
+      "phases": {
+        "engagement": "Guru paparkan model tuas tanpa label dan murid kenal pasti komponennya.",
+        "exploration": "Murid teliti model dan rekod data ujian tuas terdahulu atau demonstrasi guru.",
+        "explanation": "Guru bimbing penggunaan anak panah dan label, serta beza pemerhatian dengan rumusan.",
+        "elaboration": "Murid bina lakaran berlabel atau persembahan lisan menggunakan data.",
+        "evaluation": "Guru semak tiga pemerhatian dan tiga label pada hasil murid."
+      },
+      "support": {
+        "bbm": "Model tuas, rekod ujian, kertas",
+        "pemulihan": "Beri rajah separa berlabel.",
+        "pengayaan": "Banding dua susunan tuas menggunakan rajah.",
+        "pak21": "Galeri hasil",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-005",
+      "unit": "u7cdf3e4f5877f205bc4da8e8",
+      "unit_title": "Mesin",
+      "native_title": "Mesin — Menyelesaikan masalah dengan menggunakan dua atau lebih mesin ringkas.",
+      "dskp": [
+        {
+          "code": "10.2.2",
+          "printed_page": 73,
+          "sk": "10.2 Mesin Ringkas dan Mesin Kompleks",
+          "sp": "Menyelesaikan masalah dengan menggunakan dua atau lebih mesin ringkas."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-047",
+      "objective": "Cadangkan dan uji penyelesaian masalah menggunakan sekurang-kurangnya dua mesin ringkas.",
+      "criterion": "Model atau demonstrasi menggabungkan dua mesin ringkas yang berfungsi dan murid jelaskan peranan setiap satu.",
+      "phases": {
+        "engagement": "Guru beri cabaran memindahkan beban ringan ke tempat lebih tinggi.",
+        "exploration": "Murid lakar dan bina model menggunakan satah condong dan sistem roda dan gandar daripada bahan selamat.",
+        "explanation": "Guru bimbing pengenalpastian kedua-dua mesin ringkas dan peranan masing-masing.",
+        "elaboration": "Murid uji model dengan beban ringan, kemudian perbaik kestabilan atau laluan.",
+        "evaluation": "Guru semak fungsi model dan penerangan dua mesin ringkas."
+      },
+      "support": {
+        "bbm": "Papan landai, troli kecil, beban ringan, kad lakaran",
+        "pemulihan": "Sediakan model separa siap.",
+        "pengayaan": "Cadangkan alternatif menggunakan gabungan mesin ringkas lain.",
+        "pak21": "Reka cipta berkumpulan",
+        "emk": "Kreativiti dan keselamatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-006",
+      "unit": "u7cdf3e4f5877f205bc4da8e8",
+      "unit_title": "Mesin",
+      "native_title": "Mesin — Merumuskan maksud mesin kompleks.",
+      "dskp": [
+        {
+          "code": "10.2.3",
+          "printed_page": 73,
+          "sk": "10.2 Mesin Ringkas dan Mesin Kompleks",
+          "sp": "Merumuskan maksud mesin kompleks."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-047",
+      "objective": "Rumuskan maksud mesin kompleks dengan dua contoh.",
+      "criterion": "Murid menyatakan mesin kompleks menggabungkan dua atau lebih mesin ringkas serta mengenal pasti dua komponen pada satu contoh.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar basikal dan gunting sebagai bahan perbandingan.",
+        "exploration": "Murid teliti rajah alat dan padankan komponen dengan jenis mesin ringkas.",
+        "explanation": "Guru bimbing rumusan berdasarkan gabungan mesin ringkas, bukan saiz atau penggunaan elektrik.",
+        "elaboration": "Murid kenal pasti gabungan mesin ringkas pada contoh lain daripada rajah.",
+        "evaluation": "Guru semak definisi, dua contoh dan dua komponen pada satu contoh."
+      },
+      "support": {
+        "bbm": "Rajah basikal, gunting, kad mesin ringkas",
+        "pemulihan": "Gunakan rajah dengan komponen ditanda.",
+        "pengayaan": "Huraikan peranan dua komponen mesin kompleks dalam satu tugas.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Teknologi dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-007",
+      "unit": "u7cdf3e4f5877f205bc4da8e8",
+      "unit_title": "Mesin",
+      "native_title": "Mesin — Menjelaskan pemerhatian tentang mesin ringkas dan mesin kompleks melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "10.2.4",
+          "printed_page": 73,
+          "sk": "10.2 Mesin Ringkas dan Mesin Kompleks",
+          "sp": "Menjelaskan pemerhatian tentang mesin ringkas dan mesin kompleks melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-047",
+      "objective": "Sampaikan tiga pemerhatian mengenai mesin ringkas dan mesin kompleks.",
+      "criterion": "Hasil kerja membezakan kedua-dua kategori serta melabel sekurang-kurangnya tiga komponen atau fungsi dengan tepat.",
+      "phases": {
+        "engagement": "Guru paparkan dua alat harian dan murid perhatikan bahagian yang bergerak.",
+        "exploration": "Murid pilih rajah mesin ringkas dan mesin kompleks lalu catat komponen serta fungsinya.",
+        "explanation": "Guru bimbing penggunaan istilah dan label tanpa membuka peralatan sebenar.",
+        "elaboration": "Murid hasilkan carta perbandingan atau penerangan lisan berasaskan rajah.",
+        "evaluation": "Guru semak tiga pemerhatian serta perbezaan kategori yang dinyatakan."
+      },
+      "support": {
+        "bbm": "Kad rajah alat, kertas carta",
+        "pemulihan": "Beri carta perbandingan separa lengkap.",
+        "pengayaan": "Huraikan bagaimana dua komponen bekerjasama.",
+        "pak21": "Galeri carta",
+        "emk": "Komunikasi dan keselamatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-008",
+      "unit": "u0482f26b6e7a12a48d17b4ee",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menyatakan tumbuhan bergerak balas terhadap rangsangan melalui pemerhatian menerusi pelbagai media.",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 53,
+          "sk": "4.1 Tumbuhan Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menyatakan tumbuhan bergerak balas terhadap rangsangan melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-018",
+      "objective": "Nyatakan tumbuhan bergerak balas terhadap rangsangan berdasarkan dua pemerhatian media.",
+      "criterion": "Murid menyatakan dua perubahan yang diperhatikan dan bahawa tumbuhan bergerak balas terhadap rangsangan.",
+      "phases": {
+        "engagement": "Guru tunjuk siri foto daun semalu sebelum dan selepas sentuhan.",
+        "exploration": "Murid teliti video selang masa pucuk menuju cahaya dan foto semalu; catat perubahan yang kelihatan.",
+        "explanation": "Guru jelaskan perubahan ialah gerak balas terhadap rangsangan, bukan pergerakan berpindah seperti haiwan.",
+        "elaboration": "Murid pilih satu siri foto lain dan nyatakan perubahan berasaskan bukti.",
+        "evaluation": "Guru semak dua pemerhatian dan pernyataan gerak balas tumbuhan."
+      },
+      "support": {
+        "bbm": "Foto bersiri, video selang masa, kad catatan",
+        "pemulihan": "Gunakan foto sebelum dan selepas bersebelahan.",
+        "pengayaan": "Banding gerak balas cepat dan perlahan daripada media.",
+        "pak21": "Pemerhatian pasangan",
+        "emk": "Menghargai hidupan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-009",
+      "unit": "u0482f26b6e7a12a48d17b4ee",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menghubungkait bahagian tumbuhan yang bergerak balas dengan jenis rangsangan.",
+      "dskp": [
+        {
+          "code": "4.1.2",
+          "printed_page": 53,
+          "sk": "4.1 Tumbuhan Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menghubungkait bahagian tumbuhan yang bergerak balas dengan jenis rangsangan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-018",
+      "objective": "Padankan bahagian tumbuhan dengan rangsangan bagi empat contoh.",
+      "criterion": "Empat padanan bahagian tumbuhan dan rangsangan tepat berdasarkan sumber.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar akar, pucuk, sulur paut dan daun semalu.",
+        "exploration": "Murid padankan kad bahagian dengan contoh gerak balas kepada air, graviti, cahaya atau sentuhan berpandukan rajah.",
+        "explanation": "Guru bincang bahawa satu bahagian boleh bergerak balas kepada lebih daripada satu rangsangan.",
+        "elaboration": "Murid susun empat situasi contoh dan beri alasan padanan.",
+        "evaluation": "Guru semak empat padanan dan satu alasan berdasarkan contoh."
+      },
+      "support": {
+        "bbm": "Kad situasi, gambar bahagian tumbuhan",
+        "pemulihan": "Gunakan dua padanan berpandu.",
+        "pengayaan": "Kenal pasti dua rangsangan yang boleh mempengaruhi akar.",
+        "pak21": "Padanan kad",
+        "emk": "Ketelitian dan alam sekitar"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-010",
+      "unit": "u0482f26b6e7a12a48d17b4ee",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Membuat kesimpulan bahagian tumbuhan yang bergerak balas terhadap rangsangan dengan menjalankan penyiasatan.",
+      "dskp": [
+        {
+          "code": "4.1.3",
+          "printed_page": 53,
+          "sk": "4.1 Tumbuhan Bergerak Balas Terhadap Rangsangan",
+          "sp": "Membuat kesimpulan bahagian tumbuhan yang bergerak balas terhadap rangsangan dengan menjalankan penyiasatan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-019",
+      "objective": "Buat kesimpulan gerak balas pucuk kepada cahaya berdasarkan penyiasatan terkawal.",
+      "criterion": "Murid menyatakan pemboleh ubah yang diubah dan satu kesimpulan berdasarkan rekod pemerhatian sebenar.",
+      "phases": {
+        "engagement": "Guru tunjuk dua anak pokok dan tanya kesan arah cahaya.",
+        "exploration": "Murid sediakan dua bekas berlubang cahaya pada arah berbeza dengan tumbuhan serupa, air dan keadaan lain setara; catat kedudukan awal.",
+        "explanation": "Guru bimbing rancangan pemerhatian beberapa hari dan perbandingan berdasarkan data sebenar.",
+        "elaboration": "Murid teliti rekod penyiasatan yang telah lengkap daripada persediaan awal guru atau sambung pemerhatian pada hari berikutnya.",
+        "evaluation": "Guru nilai kesimpulan hanya apabila data tersedia; murid tanpa data lengkap merekod ramalan sebagai ramalan."
+      },
+      "support": {
+        "bbm": "Anak pokok, bekas berlubang, air, jadual bertarikh",
+        "pemulihan": "Beri rajah susunan dan jadual berpandu.",
+        "pengayaan": "Cadangkan kawalan tambahan untuk perbandingan yang lebih adil.",
+        "pak21": "Inkuiri kumpulan",
+        "emk": "Kejujuran data"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-011",
+      "unit": "u0482f26b6e7a12a48d17b4ee",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menjelaskan pemerhatian tentang tumbuhan gerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "4.1.4",
+          "printed_page": 53,
+          "sk": "4.1 Tumbuhan Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menjelaskan pemerhatian tentang tumbuhan gerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-019",
+      "objective": "Komunikasikan tiga pemerhatian tentang gerak balas tumbuhan terhadap rangsangan.",
+      "criterion": "Hasil murid mengandungi tiga catatan perubahan, bahagian dan rangsangan yang berkaitan.",
+      "phases": {
+        "engagement": "Guru paparkan foto sebelum dan selepas bagi satu tumbuhan.",
+        "exploration": "Murid teliti rekod kelas atau media berlabel dan pilih tiga pemerhatian.",
+        "explanation": "Guru bimbing penggunaan label bahagian, rangsangan dan anak panah perubahan.",
+        "elaboration": "Murid hasilkan lakaran bersiri atau penerangan lisan berasaskan bukti.",
+        "evaluation": "Guru semak tiga catatan dan ketepatan label tanpa mendakwa hasil yang belum diperhatikan."
+      },
+      "support": {
+        "bbm": "Rekod pemerhatian, foto bersiri, kertas",
+        "pemulihan": "Beri bingkai ayat sebelum dan selepas.",
+        "pengayaan": "Banding gerak balas dua bahagian terhadap rangsangan berbeza.",
+        "pak21": "Galeri hasil",
+        "emk": "Komunikasi berasaskan bukti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-012",
+      "unit": "ue987f0aec323582df74cbe52",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menyatakan maksud fotosintesis.",
+      "dskp": [
+        {
+          "code": "4.2.1",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menyatakan maksud fotosintesis."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-020",
+      "objective": "Nyatakan maksud fotosintesis dengan tepat.",
+      "criterion": "Murid menyatakan tumbuhan hijau membuat makanannya sendiri melalui proses fotosintesis.",
+      "phases": {
+        "engagement": "Guru tunjuk anak pokok dan tanya bagaimana tumbuhan memperoleh makanan.",
+        "exploration": "Murid perhatikan rajah tumbuhan hijau serta kad makanan dan sumber persekitaran.",
+        "explanation": "Guru jelaskan fotosintesis ialah proses tumbuhan hijau menghasilkan makanan sendiri.",
+        "elaboration": "Murid pilih pernyataan betul daripada kad dan betulkan tanggapan bahawa akar menyerap makanan siap daripada tanah.",
+        "evaluation": "Guru semak satu definisi lisan atau bertulis dan satu pembetulan salah faham."
+      },
+      "support": {
+        "bbm": "Rajah tumbuhan, kad pernyataan",
+        "pemulihan": "Gunakan bingkai ayat definisi.",
+        "pengayaan": "Terangkan perbezaan cara tumbuhan dan haiwan memperoleh makanan.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Menghargai tumbuhan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-013",
+      "unit": "ue987f0aec323582df74cbe52",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menyenaraikan keperluan tumbuhan semasa proses fotosintesis.",
+      "dskp": [
+        {
+          "code": "4.2.2",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menyenaraikan keperluan tumbuhan semasa proses fotosintesis."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-020",
+      "objective": "Senaraikan empat keperluan fotosintesis.",
+      "criterion": "Murid mengenal pasti cahaya, air, karbon dioksida dan klorofil dalam rajah.",
+      "phases": {
+        "engagement": "Guru paparkan rajah daun hijau dan persekitarannya.",
+        "exploration": "Murid pilih kad keperluan daripada set yang turut mengandungi kad pengganggu.",
+        "explanation": "Guru bimbing peranan cahaya sebagai tenaga serta klorofil, air dan karbon dioksida dalam proses.",
+        "elaboration": "Murid label rajah aliran keperluan fotosintesis dan semak dengan pasangan.",
+        "evaluation": "Guru semak empat label yang tepat."
+      },
+      "support": {
+        "bbm": "Rajah daun, kad keperluan, anak panah",
+        "pemulihan": "Gunakan pilihan empat kad dengan gambar petunjuk.",
+        "pengayaan": "Bezakan bahan yang digunakan dengan sumber tenaga dan klorofil.",
+        "pak21": "Padanan rajah",
+        "emk": "Ketelitian konsep"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-014",
+      "unit": "ue987f0aec323582df74cbe52",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menyatakan hasil fotosintesis melalui pemerhatian menerusi pelbagai media.",
+      "dskp": [
+        {
+          "code": "4.2.3",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menyatakan hasil fotosintesis melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-020",
+      "objective": "Nyatakan dua hasil fotosintesis melalui pemerhatian media berlabel.",
+      "criterion": "Murid menyatakan makanan berupa gula dan oksigen sebagai hasil proses.",
+      "phases": {
+        "engagement": "Guru tunjuk rajah input dan output yang belum lengkap.",
+        "exploration": "Murid teliti animasi atau rajah rujukan tentang pembentukan makanan dan pembebasan oksigen.",
+        "explanation": "Guru jelaskan gula dihasilkan dan sebahagiannya boleh disimpan sebagai kanji; oksigen dibebaskan.",
+        "elaboration": "Murid lengkapkan dua anak panah hasil dan bezakan daripada keperluan fotosintesis.",
+        "evaluation": "Guru semak dua hasil yang tepat melalui kad keluar kelas."
+      },
+      "support": {
+        "bbm": "Rajah rujukan, kad hasil, animasi jika tersedia",
+        "pemulihan": "Beri dua label pilihan.",
+        "pengayaan": "Terangkan mengapa kanji boleh terdapat pada daun tanpa menyamakan kanji dengan oksigen.",
+        "pak21": "Perbincangan pasangan",
+        "emk": "Literasi sains"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-015",
+      "unit": "ue987f0aec323582df74cbe52",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menaakul kepentingan fotosintesis terhadap hidupan.",
+      "dskp": [
+        {
+          "code": "4.2.4",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menaakul kepentingan fotosintesis terhadap hidupan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-021",
+      "objective": "Menaakul dua kepentingan fotosintesis kepada hidupan.",
+      "criterion": "Murid memberikan dua kepentingan dengan alasan berkaitan makanan dan oksigen.",
+      "phases": {
+        "engagement": "Guru paparkan gambar tumbuhan, haiwan dan manusia dalam satu habitat.",
+        "exploration": "Murid bina hubungan sumber makanan menggunakan kad hidupan dan kad oksigen.",
+        "explanation": "Guru bimbing kaitan fotosintesis dengan penghasilan makanan serta pembekalan oksigen.",
+        "elaboration": "Murid bincang kesan jika penghasilan makanan oleh tumbuhan berkurang dalam satu habitat.",
+        "evaluation": "Guru semak dua kepentingan dengan alasan yang munasabah."
+      },
+      "support": {
+        "bbm": "Kad hidupan, rajah hubungan makanan",
+        "pemulihan": "Gunakan peta hubungan separa lengkap.",
+        "pengayaan": "Huraikan kesan kepada dua peringkat pengguna dalam rantai makanan.",
+        "pak21": "Peta pemikiran kumpulan",
+        "emk": "Kelestarian alam"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-016",
+      "unit": "ue987f0aec323582df74cbe52",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menjelaskan pemerhatian tentang fotosintesis melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "4.2.5",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menjelaskan pemerhatian tentang fotosintesis melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-021",
+      "objective": "Komunikasikan proses fotosintesis melalui rajah atau penerangan kreatif.",
+      "criterion": "Hasil murid mempunyai empat keperluan, dua hasil dan satu pernyataan fungsi fotosintesis yang betul.",
+      "phases": {
+        "engagement": "Guru paparkan rajah fotosintesis yang mengandungi beberapa label salah.",
+        "exploration": "Murid teliti sumber rujukan dan kenal pasti label yang perlu dibetulkan.",
+        "explanation": "Guru bimbing susunan anak panah keperluan dan hasil tanpa mengelirukan pernafasan tumbuhan.",
+        "elaboration": "Murid hasilkan rajah berlabel atau penerangan lisan menggunakan istilah tepat.",
+        "evaluation": "Guru semak empat keperluan, dua hasil dan satu pernyataan fungsi."
+      },
+      "support": {
+        "bbm": "Rajah fotosintesis, kad label, kertas",
+        "pemulihan": "Gunakan rajah separa lengkap.",
+        "pengayaan": "Terangkan satu perbezaan fotosintesis dan pernafasan tanpa memperluas skop berlebihan.",
+        "pak21": "Galeri rajah",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-019",
+      "unit": "u2ae0ae6548b867b93a7e0b36",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Mengeksperimen untuk menentukan faktor yang mempengaruhi saiz dan bentuk bayang-bayang.",
+      "dskp": [
+        {
+          "code": "5.1.3",
+          "printed_page": 56,
+          "sk": "5.1 Cahaya Bergerak Lurus",
+          "sp": "Mengeksperimen untuk menentukan faktor yang mempengaruhi saiz dan bentuk bayang-bayang."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-024",
+      "objective": "Tentukan faktor saiz dan bentuk bayang-bayang melalui dua ujian terkawal.",
+      "criterion": "Murid merekod sekurang-kurangnya dua perbandingan saiz dan dua bentuk bayang-bayang serta membuat rumusan berdasarkan bukti.",
+      "phases": {
+        "engagement": "Guru tunjuk bayang objek pada skrin dan ubah satu kedudukan.",
+        "exploration": "Murid uji jarak lampu dengan objek sambil kekalkan skrin; dalam ujian lain putar objek pada jarak tetap dan catat bentuk.",
+        "explanation": "Guru bimbing pengasingan faktor dan perbandingan rekod tanpa mengubah semua pemboleh ubah serentak.",
+        "elaboration": "Murid ramal dan uji satu kedudukan atau orientasi tambahan dengan lampu suluh biasa.",
+        "evaluation": "Guru semak dua perbandingan setiap ujian dan rumusan tentang faktor yang diuji."
+      },
+      "support": {
+        "bbm": "Lampu suluh, objek legap, skrin, pembaris",
+        "pemulihan": "Gunakan kedudukan bertanda pada meja.",
+        "pengayaan": "Cadangkan ujian jarak objek dengan skrin secara terkawal.",
+        "pak21": "Eksperimen kumpulan",
+        "emk": "Keselamatan mata"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-020",
+      "unit": "u2ae0ae6548b867b93a7e0b36",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Menjelaskan pemerhatian tentang cahaya bergerak lurus melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "5.1.4",
+          "printed_page": 56,
+          "sk": "5.1 Cahaya Bergerak Lurus",
+          "sp": "Menjelaskan pemerhatian tentang cahaya bergerak lurus melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-024",
+      "objective": "Sampaikan tiga pemerhatian tentang cahaya bergerak lurus berdasarkan demonstrasi.",
+      "criterion": "Murid menghasilkan rajah laluan cahaya serta tiga catatan yang konsisten dengan bukti.",
+      "phases": {
+        "engagement": "Guru tunjuk cahaya lampu suluh melalui kad berlubang yang sejajar.",
+        "exploration": "Murid sejajarkan kad berlubang dan ubah satu kad untuk melihat sama ada cahaya sampai ke skrin.",
+        "explanation": "Guru bimbing lukisan garis lurus yang mewakili laluan cahaya.",
+        "elaboration": "Murid hasilkan lakaran dua susunan kad dan penerangan berasaskan pemerhatian.",
+        "evaluation": "Guru semak rajah dan tiga catatan: sejajar, tidak sejajar dan perubahan pada skrin."
+      },
+      "support": {
+        "bbm": "Lampu suluh, kad berlubang, skrin",
+        "pemulihan": "Beri rajah laluan separa lengkap.",
+        "pengayaan": "Cadangkan demonstrasi tambahan cahaya bergerak lurus menggunakan objek legap.",
+        "pak21": "Galeri rajah",
+        "emk": "Keselamatan mata"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-021",
+      "unit": "uddf022ccb4f4db84ec90abbd",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Menyatakan cahaya boleh dipantulkan dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "5.2.1",
+          "printed_page": 57,
+          "sk": "5.2 Pantulan Cahaya",
+          "sp": "Menyatakan cahaya boleh dipantulkan dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-025",
+      "objective": "Nyatakan cahaya boleh dipantulkan berdasarkan satu demonstrasi dan dua pemerhatian.",
+      "criterion": "Murid menyatakan cahaya dipantulkan oleh cermin dan merekod dua kedudukan tompok cahaya.",
+      "phases": {
+        "engagement": "Guru pancarkan lampu suluh ke cermin yang menghala ke skrin, bukan mata.",
+        "exploration": "Murid ubah orientasi cermin sedikit pada model meja dan catat kedudukan tompok cahaya pada skrin.",
+        "explanation": "Guru bimbing rumusan bahawa cahaya berubah arah apabila dipantulkan oleh cermin.",
+        "elaboration": "Murid pilih satu orientasi untuk menghalakan tompok ke tanda pada skrin.",
+        "evaluation": "Guru semak dua pemerhatian dan pernyataan pantulan."
+      },
+      "support": {
+        "bbm": "Lampu suluh, cermin bertepi selamat, skrin",
+        "pemulihan": "Gunakan dua kedudukan cermin bertanda.",
+        "pengayaan": "Ramal arah tompok selepas perubahan orientasi kecil.",
+        "pak21": "Inkuiri pasangan",
+        "emk": "Keselamatan mata"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-022",
+      "unit": "uddf022ccb4f4db84ec90abbd",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Memerihalkan kegunaan pantulan cahaya dalam kehidupan harian.",
+      "dskp": [
+        {
+          "code": "5.2.2",
+          "printed_page": 57,
+          "sk": "5.2 Pantulan Cahaya",
+          "sp": "Memerihalkan kegunaan pantulan cahaya dalam kehidupan harian."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-026",
+      "objective": "Perihalkan tiga kegunaan pantulan cahaya dalam kehidupan harian.",
+      "criterion": "Murid padankan tiga alat dengan fungsi pantulan dan terangkan bagaimana pantulan membantu pengguna.",
+      "phases": {
+        "engagement": "Guru tunjuk cermin pandang belakang dan gambar periskop.",
+        "exploration": "Murid teliti rajah cermin, periskop dan cermin pemeriksaan serta laluan cahaya yang ditunjukkan.",
+        "explanation": "Guru jelaskan bagaimana pantulan membolehkan objek dilihat dari arah berlainan.",
+        "elaboration": "Murid pilih alat yang sesuai untuk tiga situasi dan beri alasan kepada pasangan.",
+        "evaluation": "Guru semak tiga padanan dan huraian fungsi pantulan."
+      },
+      "support": {
+        "bbm": "Kad alat, rajah laluan cahaya",
+        "pemulihan": "Gunakan kad alat dengan fungsi pilihan.",
+        "pengayaan": "Lakar laluan cahaya mudah dalam periskop.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Teknologi dan keselamatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-023",
+      "unit": "uddf022ccb4f4db84ec90abbd",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Melukis gambar rajah sinar yang menunjukkan pantulan cahaya pada cermin.",
+      "dskp": [
+        {
+          "code": "5.2.3",
+          "printed_page": 57,
+          "sk": "5.2 Pantulan Cahaya",
+          "sp": "Melukis gambar rajah sinar yang menunjukkan pantulan cahaya pada cermin."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-025",
+      "objective": "Lukis dua rajah sinar pantulan pada cermin satah.",
+      "criterion": "Murid melukis sinar tuju dan sinar pantulan dengan anak panah, titik pantulan dan arah yang munasabah pada dua rajah.",
+      "phases": {
+        "engagement": "Guru tunjuk demonstrasi lampu suluh dan cermin pada meja beralas kertas.",
+        "exploration": "Murid perhatikan arah cahaya sebelum dan selepas mengenai cermin menggunakan demonstrasi terkawal.",
+        "explanation": "Guru modelkan garis sinar, anak panah arah dan titik pantulan pada cermin.",
+        "elaboration": "Murid lengkapkan dua rajah cermin dengan arah sinar tuju berbeza berpandukan pemerhatian.",
+        "evaluation": "Guru semak dua rajah dan label sinar serta titik pantulan."
+      },
+      "support": {
+        "bbm": "Cermin selamat, lampu suluh, kertas, pembaris",
+        "pemulihan": "Beri rajah dengan sinar tuju sedia dilukis.",
+        "pengayaan": "Tambah garis normal sebagai bantuan menyemak simetri arah sinar.",
+        "pak21": "Lakaran pasangan",
+        "emk": "Ketelitian dan keselamatan mata"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-024",
+      "unit": "uddf022ccb4f4db84ec90abbd",
+      "unit_title": "Sifat Cahaya",
+      "native_title": "Sifat Cahaya — Menjelaskan pemerhatian tentang pantulan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "5.2.4",
+          "printed_page": 57,
+          "sk": "5.2 Pantulan Cahaya",
+          "sp": "Menjelaskan pemerhatian tentang pantulan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-026",
+      "objective": "Komunikasikan tiga pemerhatian berkaitan pantulan cahaya melalui rajah atau penerangan.",
+      "criterion": "Hasil murid mengandungi tiga pemerhatian dan satu lakaran laluan sinar yang tepat.",
+      "phases": {
+        "engagement": "Guru paparkan dua susunan cermin dengan tompok cahaya pada kedudukan berbeza.",
+        "exploration": "Murid teliti rekod demonstrasi atau jalankan semula ujian cermin dengan lampu suluh biasa.",
+        "explanation": "Guru bimbing pemisahan catatan kedudukan tompok daripada penerangan tentang pantulan.",
+        "elaboration": "Murid hasilkan lakaran beranak panah atau penerangan lisan dengan bukti ujian.",
+        "evaluation": "Guru semak tiga catatan serta arah sinar tuju dan pantulan."
+      },
+      "support": {
+        "bbm": "Rekod demonstrasi, cermin selamat, lampu suluh, kertas",
+        "pemulihan": "Gunakan rajah separa berlabel.",
+        "pengayaan": "Banding dua aplikasi pantulan berdasarkan rajah sinar.",
+        "pak21": "Galeri lakaran",
+        "emk": "Komunikasi dan keselamatan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    }
+  ]
+}
