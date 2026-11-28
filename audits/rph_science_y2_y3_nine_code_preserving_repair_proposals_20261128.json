@@ -1,0 +1,628 @@
+{
+  "status": "NINE_CODE_PRESERVING_REPAIR_PROPOSALS_ONE_DSKP_TEXT_HOLD",
+  "source_commit": "495d0b24d5ded8026f5e85cf4b39d45cbe2debb7",
+  "source_run": 46142299288,
+  "source_artifacts": [
+    15262705504,
+    15262271819,
+    15262127146
+  ],
+  "policy": "Keep native code and ID; proposed titles/ordinary and 5P activities are not installed. No RPT modification or sequence allocation; verify official DSKP visuals, 2027 calendar, and coverage before change. Nine repairs are not counted as matched current catalogue. Existing 187 drafts untouched.",
+  "records": [
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-051",
+      "unit": "u48f9e1daaf4286750057f638",
+      "original_title": "Manusia — Menyatakan bahawa anak mewarisi ciri daripada ibu, bapa atau keturunan.",
+      "original_sp_codes": [
+        "3.1.3"
+      ],
+      "original_source_text_sha256": "7160fd726d7334b7121535987a30d7e9c6514e5069bb5029a14a03d21bd0477f",
+      "proposed_title": "Perbezaan tumbesaran antara individu",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 46,
+          "sk": "3.1 Pembiakan dan tumbesaran manusia",
+          "sp": "Mengitlak tumbesaran adalah berbeza antara individu dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T2-DRAFT-010",
+      "original_title_corresponds_to_sp": "3.1.4",
+      "coverage_note": "Inheritance is a distinct SP not represented by this code; retain as separate coverage gap, not silently delete.",
+      "objective": "Mengitlak tumbesaran berbeza antara individu berdasarkan perbandingan data.",
+      "criterion": "Murid membandingkan dua pasangan data tinggi atau berat pada usia yang sama dan membuat satu rumusan tepat.",
+      "phases": {
+        "engagement": "Guru paparkan kad dua watak fiksyen yang sebaya tetapi berbeza tinggi.",
+        "exploration": "Murid banding jadual ukuran fiksyen mengikut usia, susun kad dan catat dua perbezaan tanpa mengukur atau mendedahkan data tubuh rakan.",
+        "explanation": "Guru jelaskan pertumbuhan individu boleh berbeza walaupun sebaya dan perbezaan bukan ukuran nilai seseorang.",
+        "elaboration": "Murid tafsir satu jadual baharu dan kenal pasti dua perubahan atau perbezaan yang disokong angka.",
+        "evaluation": "Murid nyatakan dua perbandingan tepat serta rumusan tumbesaran antara individu berbeza."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru paparkan kad dua watak fiksyen yang sebaya tetapi berbeza tinggi.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid banding jadual ukuran fiksyen mengikut usia, susun kad dan catat dua perbezaan tanpa mengukur atau mendedahkan data tubuh rakan."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru jelaskan pertumbuhan individu boleh berbeza walaupun sebaya dan perbezaan bukan ukuran nilai seseorang."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid tafsir satu jadual baharu dan kenal pasti dua perubahan atau perbezaan yang disokong angka."
+          }
+        ],
+        "penilaian": "Murid nyatakan dua perbandingan tepat serta rumusan tumbesaran antara individu berbeza.",
+        "penutup": "Murid nyatakan rumusan tanpa membuat perbandingan peribadi; guru semak dua bukti."
+      },
+      "support": {
+        "bbm": "Kad watak fiksyen, jadual tinggi dan berat, pembaris untuk membaca graf",
+        "pemulihan": "Beri jadual dua baris dengan petunjuk lebih tinggi/rendah.",
+        "pengayaan": "Tafsir data perubahan dua watak merentas dua usia.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Hormat perbezaan dan privasi"
+      },
+      "closure": "Murid nyatakan rumusan tanpa membuat perbandingan peribadi; guru semak dua bukti.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-020",
+      "unit": "u51bab31e7e96fab506c21361",
+      "original_title": "Menerangkan planet beredar mengelilingi Matahari mengikut orbit.",
+      "original_sp_codes": [
+        "9.1.2"
+      ],
+      "original_source_text_sha256": "2e46ff92f2b5bc3e9d5811f8bd7f13a095fefbd086f4759b542963cd91700e5f",
+      "proposed_title": "Suhu planet dalam Sistem Suria",
+      "dskp": [
+        {
+          "code": "9.1.2",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Mengitlak suhu planet berdasarkan urutan dalam Sistem Suria."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-036",
+      "original_title_corresponds_to_sp": "9.1.3",
+      "coverage_note": "Orbit wording is covered by proposed 021.",
+      "objective": "Mengitlak pola suhu planet berdasarkan data dan urutan planet dari Matahari.",
+      "criterion": "Murid menyusun kad lapan planet, mengenal pasti kecenderungan umum suhu dan menerangkan bahawa Zuhrah ialah pengecualian penting berdasarkan data.",
+      "phases": {
+        "engagement": "Guru paparkan kad Utarid dan Zuhrah serta minta ramalan planet yang lebih panas.",
+        "exploration": "Murid susun kad lapan planet mengikut jarak dan teliti carta suhu purata yang disediakan, dengan perbandingan khusus Utarid dan Zuhrah.",
+        "explanation": "Guru bimbing rumusan bahawa planet yang lebih jauh lazimnya lebih sejuk, tetapi atmosfera boleh mempengaruhi suhu; Zuhrah lebih panas daripada Utarid.",
+        "elaboration": "Murid tandakan pola umum dan pengecualian pada carta serta jelaskan satu perbandingan dua planet.",
+        "evaluation": "Guru semak urutan, rumusan pola dan contoh pengecualian daripada data."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru paparkan kad Utarid dan Zuhrah serta minta ramalan planet yang lebih panas.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid susun kad lapan planet mengikut jarak dan teliti carta suhu purata yang disediakan, dengan perbandingan khusus Utarid dan Zuhrah."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru bimbing rumusan bahawa planet yang lebih jauh lazimnya lebih sejuk, tetapi atmosfera boleh mempengaruhi suhu; Zuhrah lebih panas daripada Utarid."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid tandakan pola umum dan pengecualian pada carta serta jelaskan satu perbandingan dua planet."
+          }
+        ],
+        "penilaian": "Guru semak urutan, rumusan pola dan contoh pengecualian daripada data.",
+        "penutup": "Murid rumus pola serta satu pengecualian; guru semak jawapan."
+      },
+      "support": {
+        "bbm": "Kad planet, carta suhu berlabel sumber, jalur urutan",
+        "pemulihan": "Beri empat planet dengan carta berpandu.",
+        "pengayaan": "Banding dua faktor yang mempengaruhi suhu planet secara kualitatif.",
+        "pak21": "Analisis data pasangan",
+        "emk": "Ketelitian dan kejujuran data"
+      },
+      "closure": "Murid rumus pola serta satu pengecualian; guru semak jawapan.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-021",
+      "unit": "u51bab31e7e96fab506c21361",
+      "original_title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "original_sp_codes": [
+        "9.1.3"
+      ],
+      "original_source_text_sha256": "7ab088653e4c96fcc37225328e15defd6d515d2a6f1d0662b6b7f296767ea553",
+      "proposed_title": "Planet beredar mengelilingi Matahari mengikut orbit",
+      "dskp": [
+        {
+          "code": "9.1.3",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Memerihalkan planet beredar mengelilingi Matahari mengikut orbit."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-037",
+      "original_title_corresponds_to_sp": "9.1.4",
+      "coverage_note": "Distance and period already covered by native 022.",
+      "objective": "Memerihalkan peredaran planet mengelilingi Matahari mengikut orbit.",
+      "criterion": "Murid melakar Matahari dan sekurang-kurangnya tiga laluan orbit serta menerangkan bahawa planet beredar mengelilinginya.",
+      "phases": {
+        "engagement": "Guru tunjuk model Matahari dan satu laluan orbit pada tikar.",
+        "exploration": "Murid gerakkan model tiga planet pada laluan orbit masing-masing dan perhatikan kedudukan relatif Matahari.",
+        "explanation": "Guru bezakan peredaran mengelilingi Matahari daripada putaran pada paksi; model bukan skala sebenar.",
+        "elaboration": "Murid bina lakaran berlabel dan jelaskan pergerakan satu planet kepada pasangan.",
+        "evaluation": "Guru semak tiga orbit, kedudukan Matahari dan penerangan peredaran."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru tunjuk model Matahari dan satu laluan orbit pada tikar.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid gerakkan model tiga planet pada laluan orbit masing-masing dan perhatikan kedudukan relatif Matahari."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru bezakan peredaran mengelilingi Matahari daripada putaran pada paksi; model bukan skala sebenar."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid bina lakaran berlabel dan jelaskan pergerakan satu planet kepada pasangan."
+          }
+        ],
+        "penilaian": "Guru semak tiga orbit, kedudukan Matahari dan penerangan peredaran.",
+        "penutup": "Murid rumus peredaran planet mengikut orbit; guru semak lakaran."
+      },
+      "support": {
+        "bbm": "Model planet, tikar orbit, kad anak panah, kertas",
+        "pemulihan": "Gunakan laluan orbit siap dan satu model planet.",
+        "pengayaan": "Lakar orbit tambahan dan terangkan had model.",
+        "pak21": "Simulasi pasangan",
+        "emk": "Ketelitian model"
+      },
+      "closure": "Murid rumus peredaran planet mengikut orbit; guru semak lakaran.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-036",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "original_title": "Tumbuhan — Menyatakan satu tumbuhan boleh membiak melalui pelbagai cara dengan menjalankan projek.",
+      "original_sp_codes": [
+        "5.1.2"
+      ],
+      "original_source_text_sha256": "38567f399e171cd8dc5d47027a88b21aa44f346a1c7873389a828f95390f2c96",
+      "proposed_title": "Kepentingan pembiakan tumbuhan kepada hidupan",
+      "dskp": [
+        {
+          "code": "5.1.2",
+          "printed_page": 59,
+          "sk": "5.1 Pembiakan Tumbuhan",
+          "sp": "Menaakul kepentingan pembiakan tumbuhan kepada hidupan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-023",
+      "original_title_corresponds_to_sp": "5.1.3",
+      "coverage_note": "Project wording is covered by proposed 037.",
+      "objective": "Menaakul tiga kepentingan pembiakan tumbuhan kepada hidupan.",
+      "criterion": "Murid memberi tiga kepentingan dengan alasan atau contoh hubungan tumbuhan dengan hidupan.",
+      "phases": {
+        "engagement": "Guru tunjuk foto kawasan yang mempunyai tumbuhan dan kawasan kurang tumbuhan.",
+        "exploration": "Murid teliti kad situasi makanan, habitat dan kelangsungan spesies tumbuhan lalu bina hubungan sebab-akibat.",
+        "explanation": "Guru bimbing alasan bahawa pembiakan membantu kesinambungan tumbuhan dan mengekalkan sumber yang diperlukan hidupan.",
+        "elaboration": "Murid bincang situasi fiksyen apabila satu jenis tumbuhan tidak lagi membiak dan nyatakan kesan kepada dua hidupan.",
+        "evaluation": "Guru semak tiga alasan yang berkait dengan pembiakan tumbuhan."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru tunjuk foto kawasan yang mempunyai tumbuhan dan kawasan kurang tumbuhan.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid teliti kad situasi makanan, habitat dan kelangsungan spesies tumbuhan lalu bina hubungan sebab-akibat."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru bimbing alasan bahawa pembiakan membantu kesinambungan tumbuhan dan mengekalkan sumber yang diperlukan hidupan."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid bincang situasi fiksyen apabila satu jenis tumbuhan tidak lagi membiak dan nyatakan kesan kepada dua hidupan."
+          }
+        ],
+        "penilaian": "Guru semak tiga alasan yang berkait dengan pembiakan tumbuhan.",
+        "penutup": "Murid nyatakan satu kepentingan beserta alasan; guru semak rumusan."
+      },
+      "support": {
+        "bbm": "Kad situasi, foto tumbuhan dan hidupan, carta sebab-akibat",
+        "pemulihan": "Padankan dua situasi dengan kesan berpandu.",
+        "pengayaan": "Bina rantaian kesan kepada lebih daripada satu hidupan.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Kelestarian dan menghargai hidupan"
+      },
+      "closure": "Murid nyatakan satu kepentingan beserta alasan; guru semak rumusan.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-037",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "original_title": "Tumbuhan — Menaakul kepentingan pembiakan tumbuhan kepada hidupan.",
+      "original_sp_codes": [
+        "5.1.3"
+      ],
+      "original_source_text_sha256": "a44de831585e9d088ad5a2c3fe407345edef1eede2c0914eee499eaa0d08b45c",
+      "proposed_title": "Projek pembiakan tumbuhan melalui pelbagai cara",
+      "dskp": [
+        {
+          "code": "5.1.3",
+          "printed_page": 59,
+          "sk": "5.1 Pembiakan Tumbuhan",
+          "sp": "Mengitlak satu tumbuhan boleh membiak melalui pelbagai cara dengan menjalankan projek."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-024",
+      "original_title_corresponds_to_sp": "5.1.2",
+      "coverage_note": "Importance wording covered by proposed 036; longitudinal project requires calendar mapping.",
+      "objective": "Mengitlak bahawa satu jenis tumbuhan boleh membiak melalui lebih daripada satu cara berdasarkan projek.",
+      "criterion": "Murid menyediakan dua kaedah pembiakan tumbuhan yang sama, merekod pemerhatian bertarikh dan membuat rumusan selepas bukti pertumbuhan diperoleh.",
+      "phases": {
+        "engagement": "Guru tunjuk pokok kacang panjang atau tomato dan foto bahan pembiakan bagi tumbuhan yang sama; pilih spesies yang sesuai untuk biji benih dan keratan batang, contohnya tomato.",
+        "exploration": "Murid sediakan biji benih tomato dan keratan batang tomato yang sesuai dengan bantuan guru, label bekas dan rekod keadaan awal.",
+        "explanation": "Guru jelaskan syarat penjagaan, perbezaan kaedah dan pentingnya rekod sebenar; hasil pertumbuhan tidak dijangka berlaku dalam satu sesi.",
+        "elaboration": "Murid jadualkan pemerhatian beberapa hari atau minggu mengikut pertumbuhan; banding bukti sebenar kedua-dua kaedah apabila tersedia.",
+        "evaluation": "Guru semak penyediaan dan rekod awal; rumusan akhir hanya dinilai apabila kedua-dua kaedah memberikan bukti yang sesuai."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru tunjuk pokok kacang panjang atau tomato dan foto bahan pembiakan bagi tumbuhan yang sama; pilih spesies yang sesuai untuk biji benih dan keratan batang, contohnya tomato.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid sediakan biji benih tomato dan keratan batang tomato yang sesuai dengan bantuan guru, label bekas dan rekod keadaan awal."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru jelaskan syarat penjagaan, perbezaan kaedah dan pentingnya rekod sebenar; hasil pertumbuhan tidak dijangka berlaku dalam satu sesi."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid jadualkan pemerhatian beberapa hari atau minggu mengikut pertumbuhan; banding bukti sebenar kedua-dua kaedah apabila tersedia."
+          }
+        ],
+        "penilaian": "Guru semak penyediaan dan rekod awal; rumusan akhir hanya dinilai apabila kedua-dua kaedah memberikan bukti yang sesuai.",
+        "penutup": "Murid nyatakan langkah penjagaan seterusnya; guru rekod PBD awal dan tangguhkan rumusan akhir sehingga bukti tersedia."
+      },
+      "support": {
+        "bbm": "Biji benih dan keratan tomato yang sesuai, medium tanaman, bekas, label, jurnal",
+        "pemulihan": "Sediakan bahan siap dan jadual pemerhatian bergambar.",
+        "pengayaan": "Banding kadar pertumbuhan secara deskriptif tanpa mendakwa ujian terkawal jika keadaan berbeza.",
+        "pak21": "Projek kumpulan",
+        "emk": "Kelestarian, keselamatan dan kejujuran data"
+      },
+      "closure": "Murid nyatakan langkah penjagaan seterusnya; guru rekod PBD awal dan tangguhkan rumusan akhir sehingga bukti tersedia.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-040",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "original_title": "Pengukuran — Mengukur isi padu kotak lohong dengan menggunakan kubus yang berukuran 1 cm x 1 cm x 1 cm.",
+      "original_sp_codes": [
+        "6.1.3"
+      ],
+      "original_source_text_sha256": "87bcf459e1afae0d5764e0710b97d0885439b9d7e3c6b26961750c21859fb3fb",
+      "proposed_title": "Anggaran luas permukaan tidak sekata",
+      "dskp": [
+        {
+          "code": "6.1.3",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Menyelesaikan masalah untuk menganggar luas permukaan yang tidak sekata."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-026",
+      "original_title_corresponds_to_sp": "6.1.4",
+      "coverage_note": "Box volume wording covered by proposed 041.",
+      "objective": "Menganggar luas dua permukaan tidak sekata menggunakan petak 1 cm × 1 cm.",
+      "criterion": "Murid menunjukkan kaedah kiraan petak penuh dan bahagian petak bagi dua bentuk serta mencatat anggaran dalam cm².",
+      "phases": {
+        "engagement": "Guru tunjuk bentuk daun dan bentuk segi empat lalu tanya cara mengukur luas bentuk tidak sekata.",
+        "exploration": "Murid surih dua bentuk pada grid 1 cm, kira petak penuh dan gabungkan bahagian petak secara munasabah.",
+        "explanation": "Guru bimbing cara anggaran berdasarkan kiraan petak dan bezakan anggaran daripada ukuran tepat.",
+        "elaboration": "Murid banding anggaran dua pasangan dan jelaskan sebab perbezaan kecil, kemudian anggar bentuk baharu.",
+        "evaluation": "Guru semak dua anggaran, cara kiraan dan unit cm²; terima julat yang munasabah berdasarkan grid."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru tunjuk bentuk daun dan bentuk segi empat lalu tanya cara mengukur luas bentuk tidak sekata.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid surih dua bentuk pada grid 1 cm, kira petak penuh dan gabungkan bahagian petak secara munasabah."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru bimbing cara anggaran berdasarkan kiraan petak dan bezakan anggaran daripada ukuran tepat."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid banding anggaran dua pasangan dan jelaskan sebab perbezaan kecil, kemudian anggar bentuk baharu."
+          }
+        ],
+        "penilaian": "Guru semak dua anggaran, cara kiraan dan unit cm²; terima julat yang munasabah berdasarkan grid.",
+        "penutup": "Murid nyatakan mengapa luas tidak sekata ialah anggaran; guru semak unit."
+      },
+      "support": {
+        "bbm": "Grid 1 cm, bentuk daun kertas, pensel, pembaris",
+        "pemulihan": "Gunakan bentuk dengan sedikit petak separa.",
+        "pengayaan": "Banding ketelitian anggaran pada grid lebih kecil.",
+        "pak21": "Inkuiri pasangan",
+        "emk": "Ketelitian pengukuran"
+      },
+      "closure": "Murid nyatakan mengapa luas tidak sekata ialah anggaran; guru semak unit.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-041",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "original_title": "Pengukuran — Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "original_sp_codes": [
+        "6.1.4"
+      ],
+      "original_source_text_sha256": "1adc3c8122152b7d352617509ca89a7981153a1ba84abd40ea2584d8c498e135",
+      "proposed_title": "Isi padu kotak lohong menggunakan kubus unit",
+      "dskp": [
+        {
+          "code": "6.1.4",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Mengukur isi padu kotak lohong dengan menggunakan kubus yang berukuran 1cm x 1cm x 1cm."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-027",
+      "original_title_corresponds_to_sp": "6.1.5",
+      "coverage_note": "Liquid volume already covered by native 026.",
+      "objective": "Mengukur isi padu dua kotak lohong menggunakan kubus 1 cm × 1 cm × 1 cm.",
+      "criterion": "Murid mengisi dua kotak berdimensi integer sentimeter tanpa ruang kosong, mengira kubus dan mencatat isi padu dalam cm³.",
+      "phases": {
+        "engagement": "Guru tunjuk kotak kecil dan satu kubus unit lalu minta ramalan bilangan kubus yang muat.",
+        "exploration": "Murid isi dua kotak dengan kubus 1 cm³ dalam lapisan tanpa celah dan rekod bilangan sebenar.",
+        "explanation": "Guru bimbing hubungan jumlah kubus unit dengan isi padu serta bezakan cm³ daripada cm².",
+        "elaboration": "Murid susun lapisan kotak baharu, ramal jumlah kubus dan semak dengan pengisian sebenar.",
+        "evaluation": "Guru semak dua kiraan, unit cm³ dan satu penerangan cara pengukuran."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru tunjuk kotak kecil dan satu kubus unit lalu minta ramalan bilangan kubus yang muat.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid isi dua kotak dengan kubus 1 cm³ dalam lapisan tanpa celah dan rekod bilangan sebenar."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru bimbing hubungan jumlah kubus unit dengan isi padu serta bezakan cm³ daripada cm²."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid susun lapisan kotak baharu, ramal jumlah kubus dan semak dengan pengisian sebenar."
+          }
+        ],
+        "penilaian": "Guru semak dua kiraan, unit cm³ dan satu penerangan cara pengukuran.",
+        "penutup": "Murid nyatakan hubungan satu kubus unit dengan 1 cm³."
+      },
+      "support": {
+        "bbm": "Kotak lohong berdimensi integer, kubus unit, jadual rekod",
+        "pemulihan": "Mulakan dengan kotak satu lapisan.",
+        "pengayaan": "Terangkan cara menggunakan bilangan kubus setiap lapisan dan jumlah lapisan.",
+        "pak21": "Pembelajaran konkrit pasangan",
+        "emk": "Ketelitian dan penaakulan"
+      },
+      "closure": "Murid nyatakan hubungan satu kubus unit dengan 1 cm³.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-043",
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "original_title": "Ketumpatan — Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "original_sp_codes": [
+        "7.1.2"
+      ],
+      "original_source_text_sha256": "1e7c76fc812335bae2c51383af3b889b0be0bccd81c99a89a9bb5a986e38b8f4",
+      "proposed_title": "Hubungan timbul dan tenggelam dengan ketumpatan",
+      "dskp": [
+        {
+          "code": "7.1.2",
+          "printed_page": 64,
+          "sk": "7.1 Objek atau bahan yang lebih tumpat atau kurang tumpat daripada air.",
+          "sp": "Menghubung kait objek atau bahan yang timbul dan objek atau bahan yang tenggelam dengan ketumpatan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-030",
+      "original_title_corresponds_to_sp": "7.1.3",
+      "coverage_note": "Water density modification already covered by native 029.",
+      "objective": "Menghubung kait kedudukan objek yang timbul atau tenggelam dalam air dengan ketumpatan purata objek.",
+      "criterion": "Murid merekod empat pemerhatian dan membuat sekurang-kurangnya tiga padanan tepat antara kedudukan objek dengan ketumpatan relatif kepada air.",
+      "phases": {
+        "engagement": "Guru tunjuk gabus dan guli kaca lalu minta ramalan kedudukan dalam air.",
+        "exploration": "Murid uji empat objek selamat yang tidak menyerap air dengan ketara, seperti gabus, plastik tertentu, guli dan batu, serta rekod hasil sebenar.",
+        "explanation": "Guru jelaskan objek yang timbul mempunyai ketumpatan purata kurang daripada air dan objek yang tenggelam lebih tumpat dalam konteks ujian biasa.",
+        "elaboration": "Murid pilih satu objek baharu dan beri ramalan berdasarkan data bahan yang disediakan, kemudian semak dengan pemerhatian.",
+        "evaluation": "Guru semak empat rekod dan tiga padanan ketumpatan relatif berdasarkan bukti."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru tunjuk gabus dan guli kaca lalu minta ramalan kedudukan dalam air.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid uji empat objek selamat yang tidak menyerap air dengan ketara, seperti gabus, plastik tertentu, guli dan batu, serta rekod hasil sebenar."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru jelaskan objek yang timbul mempunyai ketumpatan purata kurang daripada air dan objek yang tenggelam lebih tumpat dalam konteks ujian biasa."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid pilih satu objek baharu dan beri ramalan berdasarkan data bahan yang disediakan, kemudian semak dengan pemerhatian."
+          }
+        ],
+        "penilaian": "Guru semak empat rekod dan tiga padanan ketumpatan relatif berdasarkan bukti.",
+        "penutup": "Murid rumus hubungan kedudukan dan ketumpatan, bukan berat semata-mata."
+      },
+      "support": {
+        "bbm": "Bekas air, objek selamat, dulang, jadual ramalan dan pemerhatian",
+        "pemulihan": "Gunakan dua contoh berbeza yang jelas.",
+        "pengayaan": "Banding bentuk objek daripada bahan sama dan bincang ketumpatan purata secara kualitatif.",
+        "pak21": "Inkuiri kumpulan",
+        "emk": "Keselamatan dan ketelitian"
+      },
+      "closure": "Murid rumus hubungan kedudukan dan ketumpatan, bukan berat semata-mata.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-045",
+      "unit": "u6009a8215e69d23ec75e07ca",
+      "original_title": "Manusia — Merumus tentang makanan tercerna yang tidak diperlukan oleh badan.",
+      "original_sp_codes": [
+        "3.3.2"
+      ],
+      "original_source_text_sha256": "ba8a97445dc42b6ce369a0c743dd78ff9f0726326a47d2f946158f75c232c3ff",
+      "proposed_title": "Urutan aliran makanan semasa pencernaan",
+      "dskp": [
+        {
+          "code": "3.3.2",
+          "printed_page": 56,
+          "sk": "3.3 Pencernaan",
+          "sp": "Membuat urutan aliran makanan semasa pencernaan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-018",
+      "original_title_corresponds_to_sp": "3.3.3",
+      "coverage_note": "Waste-related SP is not represented by this code; separate coverage gap.",
+      "objective": "Membuat urutan aliran makanan melalui saluran pencernaan manusia.",
+      "criterion": "Murid menyusun lima bahagian utama laluan makanan daripada mulut hingga dubur dengan betul dan menerangkan arah aliran.",
+      "phases": {
+        "engagement": "Guru tunjuk rajah saluran pencernaan dan tanya ke mana makanan pergi selepas ditelan.",
+        "exploration": "Murid susun kad mulut, esofagus, perut, usus dan dubur; gunakan rajah tambahan untuk membezakan usus kecil dan usus besar.",
+        "explanation": "Guru jelaskan laluan makanan mengikut urutan mulut, esofagus, perut, usus kecil, usus besar dan dubur secara ringkas.",
+        "elaboration": "Murid jejak laluan menggunakan anak panah pada rajah baharu dan terangkan urutan kepada pasangan.",
+        "evaluation": "Guru semak urutan lima kad utama serta arah aliran; terima enam bahagian apabila usus diasingkan."
+      },
+      "ordinary_rph_proposal": {
+        "set_induksi": "Guru tunjuk rajah saluran pencernaan dan tanya ke mana makanan pergi selepas ditelan.",
+        "aktiviti_utama": [
+          {
+            "title": "Aktiviti 1 — Penerokaan",
+            "text": "Murid susun kad mulut, esofagus, perut, usus dan dubur; gunakan rajah tambahan untuk membezakan usus kecil dan usus besar."
+          },
+          {
+            "title": "Aktiviti 2 — Pembinaan konsep",
+            "text": "Guru jelaskan laluan makanan mengikut urutan mulut, esofagus, perut, usus kecil, usus besar dan dubur secara ringkas."
+          },
+          {
+            "title": "Aktiviti 3 — Aplikasi",
+            "text": "Murid jejak laluan menggunakan anak panah pada rajah baharu dan terangkan urutan kepada pasangan."
+          }
+        ],
+        "penilaian": "Guru semak urutan lima kad utama serta arah aliran; terima enam bahagian apabila usus diasingkan.",
+        "penutup": "Murid sebut urutan utama; guru semak laluan pada rajah."
+      },
+      "support": {
+        "bbm": "Rajah pencernaan, kad organ, anak panah",
+        "pemulihan": "Beri rajah dengan sebahagian label.",
+        "pengayaan": "Susun enam bahagian termasuk usus kecil dan usus besar.",
+        "pak21": "Padanan pasangan",
+        "emk": "Kesihatan dan ketepatan istilah"
+      },
+      "closure": "Murid sebut urutan utama; guru semak laluan pada rajah.",
+      "reflection": "",
+      "minutes": null,
+      "textbook_pages": null,
+      "rpt_mapping": null,
+      "requires_source_title_change": true,
+      "requires_review": true,
+      "ready": false,
+      "status": "CODE_PRESERVING_REPAIR_PROPOSAL_ONLY"
+    }
+  ],
+  "hold": [
+    {
+      "lesson_id": "SCI-Y2-PDP-048",
+      "year": 2,
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "title": "Teknologi — Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "10.1.6"
+      ],
+      "reason": "No candidate matches native 10.1.6; mixture title under Technology requires original DSKP/source review.",
+      "ready": false,
+      "dskp_text_hold": {
+        "code": "10.1.6",
+        "printed_page": 61,
+        "sp": "Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+        "reason": "Text says campuran in set binaan; verify official visual/source edition before any correction or release."
+      },
+      "other_native_same_wording": "SCI-Y2-PDP-031",
+      "next": "Verify official edition/errata; do not infer intended wording or reassign SP."
+    }
+  ]
+}
