@@ -130,6 +130,37 @@ def fields(year, r, additions):
     companion.update(source_sha256=sha256(raw).hexdigest(), phases=r["phases"])
     return source, companion, raw
 
+# Exact, lesson-specific print substitutions. The locked source and original
+# PBD stay unchanged; no blanket removal of numbers or curriculum codes.
+DISPLAY_REFS = {
+    "SK27-SCI-Y5-PDP-086": {"PdP 087": "berikutnya"},
+    "SK27-SCI-Y5-PDP-087": {"PdP 086": "penyiasatan terdahulu"},
+    "SK27-SCI-Y6-PDP-014": {"pada PdP 016": "dalam sesi rumusan susulan",
+                           "susulan PdP 016": "susulan dalam sesi rumusan"},
+    "SK27-SCI-Y6-PDP-016": {"PdP 013 dan 014": "pemerhatian proses hidup dan ujian pertumbuhan terdahulu",
+                           "PdP 014": "ujian pertumbuhan terdahulu"},
+}
+
+def display_fields(source, companion, raw):
+    """Return a print-only record, preserving the raw source hash for audit."""
+    validate_source = json.loads(raw)
+    if validate_source != source or sha256(raw).hexdigest() != companion["source_sha256"]:
+        raise ValueError("Unverified original render fields")
+    rules = DISPLAY_REFS.get(source["lesson_id"], {})
+    def display(value):
+        for old, new in rules.items():
+            value = value.replace(old, new)
+        if re.search(r"\bPdP\s*\d{1,3}\b", value, re.IGNORECASE):
+            raise ValueError("Unapproved printed lesson reference")
+        return value
+    s = dict(source)
+    for key in (*FIELDS, "reference"):
+        s[key] = display(s[key])
+    c = dict(companion, phases={k:display(v) for k,v in companion["phases"].items()})
+    display_raw = json.dumps(s, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    c["source_sha256"] = sha256(display_raw).hexdigest()
+    return s, c, display_raw
+
 def run(out, year):
     out.mkdir(parents=True, exist_ok=False)
     words=out/"word"; words.mkdir()
@@ -147,6 +178,8 @@ def run(out, year):
         cid=r["lesson_id"]
         try:
             source, companion, raw=fields(year,r,additions[cid])
+            original_digest=companion["source_sha256"]
+            source, companion, raw=display_fields(source,companion,raw)
             path=words/(cid+".docx")
             path.write_bytes(render_word(source,companion,source_bytes=raw,palette=palette,subject_heading=heading))
             doc=Document(path)
@@ -159,7 +192,7 @@ def run(out, year):
                 if t.cell(i,1).text!=source[key]:
                     raise ValueError("Word source mismatch: "+key)
             for i,key in enumerate(PHASE_KEYS):
-                if t.cell(8+2*i,1).text!=r["phases"][key]:
+                if t.cell(8+2*i,1).text!=companion["phases"][key]:
                     raise ValueError("Word phase mismatch: "+key)
             for i,key in enumerate(FIELDS[5:-1],17):
                 if t.cell(i,1).text!=source[key]:
@@ -168,8 +201,8 @@ def run(out, year):
                 raise ValueError("Placeholder in completed support")
             if t.cell(20,0).text!="Refleksi":
                 raise ValueError("Reflection label")
-            manifest.append({"id":cid,"source_title":r["title"],"source_digest":companion["source_sha256"],
-                "expected":[DRAFT,*MS_LABELS[5:],*[source[k] for k in FIELDS],*[r["phases"][k] for k in PHASE_KEYS],source["reference"]],
+            manifest.append({"id":cid,"source_title":r["title"],"source_digest":original_digest,"display_digest":companion["source_sha256"],
+                "expected":[DRAFT,*MS_LABELS[5:],*[source[k] for k in FIELDS],*[companion["phases"][k] for k in PHASE_KEYS],source["reference"]],
                 "ready":False})
         except Exception as exc:
             issues.append({"id":cid,"stage":"word","error":str(exc)})
