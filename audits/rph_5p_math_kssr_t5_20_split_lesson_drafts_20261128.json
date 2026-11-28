@@ -1,0 +1,706 @@
+{
+  "status": "DRAFT_SPLIT_LESSON_SOURCE_PBD_ALIGNED",
+  "year": 5,
+  "subject": "MATEMATIK SK",
+  "parent_audit_blob": "c0cf4610effcfeaed1687aac5408fdd67b54b657",
+  "source_files": [
+    {
+      "minutes": 30,
+      "path": "staging/matematik/tahun5/slot_30_minit.tsv",
+      "sha": "f047ff8c09ecbd8242fac32d2222519210a69a87"
+    },
+    {
+      "minutes": 60,
+      "path": "staging/matematik/tahun5/slot_60_minit.tsv",
+      "sha": "b5e3ffd702287cf1ae54009a6ffb7d1c8e693943"
+    }
+  ],
+  "total": 20,
+  "minutes": {
+    "30": 7,
+    "60": 13
+  },
+  "policy": "Seven grouped candidates expanded into 20 existing source lesson slots, not new RPT lessons. Original v60 SP/objective references and actual TSV source PBD/evidence retained; 5P phases and support newly proposed. The final success criteria and source closure, BBM, and reflection must match the native exporter, not automatically replace them. Source IDs are proposed until real catalogue and document verification; no production change, no release.",
+  "records": [
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L007",
+      "parent_candidate": "T5-RPT-DRAFT-005A",
+      "source_v60_markdown_sha256_reported": "9631c65d858c5a7133476e412854b47bf5f4bbdc71e7a71a847c78b6b1994559",
+      "source_sp": "1.5.1 — Mengenal pasti pola bagi siri nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus- seratus, seribu-seribu, sepuluh ribu-sepuluh ribu dan seratus ribu-seratus ribu.",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti pola bagi siri nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus- seratus, seribu-seribu, sepuluh ribu-sepuluh ribu dan seratus ribu-seratus ribu dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Kenal peraturan pola menaik dan menurun",
+      "source_pages": "12–13",
+      "source_minutes": 60,
+      "source_pbd_task": "Nyatakan peraturan bagi 701 600, 701 700, 701 800 dan 870 000, 860 000, 850 000. Sambung satu nombor bagi setiap pola.",
+      "source_pbd_evidence": "Tambah 100, seterusnya 701 900. Tolak 10 000, seterusnya 840 000.",
+      "phases": {
+        "engagement": "Guru paparkan papan skor 125 000, 225 000, 325 000; murid teka aturan.",
+        "exploration": "Pasangan susun kad siri menaik dan menurun; catat beza berturutan termasuk sela kecil dan besar.",
+        "explanation": "Guru model beza bertanda daripada dua nombor bersebelahan; murid terangkan arah dan sela tetap.",
+        "elaboration": "Murid bina dua siri dengan sela 7 dan 100 000; rakan kenal aturan serta sambung satu nombor.",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad nombor dan garis nombor.",
+        "pak21": "Semak rakan sebaya melalui kad pola.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Garis nombor dengan anak panah dan sela berlabel.",
+        "pengayaan": "Bina siri menurun bersela 100 000 tanpa melangkaui sifar."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L008",
+      "parent_candidate": "T5-RPT-DRAFT-005A",
+      "source_v60_markdown_sha256_reported": "1a59b53da6fe68b6a78bb1743c19f4d579213187864d84f11b82dcb71ddf4a41",
+      "source_sp": "1.5.2 — Melengkapkan pelbagai pola nombor yang diberi secara tertib menaik dan menurun",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat melengkapkan pelbagai pola nombor yang diberi secara tertib menaik dan menurun dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Lengkapkan pola menaik dan menurun",
+      "source_pages": "12–13",
+      "source_minutes": 60,
+      "source_pbd_task": "Isi 415 008, 415 016, __, 415 032 dan 905 000, __, 903 000, 902 000. Nyatakan sela setiap pola.",
+      "source_pbd_evidence": "415 024 dengan tambah 8. 904 000 dengan tolak 1 000.",
+      "phases": {
+        "engagement": "Guru papar siri 420 010, 420 020, kosong, 420 040; murid cadang nombor.",
+        "exploration": "Murid isi ruang kosong di tengah dan awal siri kad menaik/menurun; semak beza kiri dan kanan.",
+        "explanation": "Guru tunjuk kaedah mendapatkan nilai hilang daripada sela tetap; murid jelaskan cara semak kedua-dua jiran.",
+        "elaboration": "Pasangan tukar teka-teki pola bersela 6, 100 dan 10 000; semak setiap jawapan.",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad ruang kosong, jalur pola.",
+        "pak21": "Semak rakan sebaya melalui kad pola.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Isi ruang hujung dahulu menggunakan sela yang diberi.",
+        "pengayaan": "Bina siri dengan dua ruang hilang yang tidak bersebelahan."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L072",
+      "parent_candidate": "T5-RPT-DRAFT-023C",
+      "source_v60_markdown_sha256_reported": "4c365e535d85b0dbbbe44cbedc810e7212e34472f778c4cc6c3ecc0d7a20d1f1",
+      "source_sp": "5.1.3 — Menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Menambah tiga ukuran panjang dalam unit sepunya",
+      "source_pages": "181–182",
+      "source_minutes": 60,
+      "source_pbd_task": "Hitung 1/2 m + 35 cm + 0.2 m dalam cm. Hitung 1 1/4 km + 0.35 km + 125 m dalam km.",
+      "source_pbd_evidence": "105 cm dan 1.725 km. Ketiga-tiga sebutan ditukar kepada unit sama.",
+      "phases": {
+        "engagement": "Guru beri tiga label panjang 0.4 m, 20 cm dan 1/4 m; murid ramal jumlah kurang atau lebih 1 m.",
+        "exploration": "Pasangan susun ketiga-tiga ukuran pada pita dalam cm; catat faktor penukaran.",
+        "explanation": "Guru model tambah tiga sebutan dalam unit sepunya, murid semak hasil dengan unit alternatif.",
+        "elaboration": "Murid hitung 1.2 m + 45 cm + 3/4 m dalam m dan cm (2.4 m; 240 cm).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Pita ukur dan kad tiga ukuran.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Tukar setiap kad kepada cm dahulu menggunakan jadual.",
+        "pengayaan": "Cipta tiga ukuran campuran yang berjumlah 2.5 m."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L073",
+      "parent_candidate": "T5-RPT-DRAFT-023C",
+      "source_v60_markdown_sha256_reported": "298133480aa942a9de1a54bd4565a89b8971475524bdf3d61463bce89d00f656",
+      "source_sp": "5.1.3 — Menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menambah hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "menambah ukuran panjang selepas menyamakan unit",
+      "source_pages": "181–182",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 1.8 m + 65 cm dan 2 1/4 m + 85 cm. Beri jawapan dalam m.",
+      "source_pbd_evidence": "2.45 m dan 3.10 m.",
+      "phases": {
+        "engagement": "Guru letak kad 1 m dan 40 cm; murid ramal jumlah dalam meter.",
+        "exploration": "Pasangan padankan 25 cm, 50 cm dan 75 cm dengan pecahan/perpuluhan meter.",
+        "explanation": "Guru model 2 3/4 m + 74 cm dengan menukar 74 cm kepada 0.74 m.",
+        "elaboration": "Murid tambah 1.5 m + 35 cm dan 1 1/4 m + 40 cm (1.85 m; 1.65 m).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Pita ukur dan kad panjang.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Gunakan jadual 100 cm = 1 m.",
+        "pengayaan": "Nyatakan jumlah sama dalam cm dan m."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L074",
+      "parent_candidate": "T5-RPT-DRAFT-023C",
+      "source_v60_markdown_sha256_reported": "82f6ecf5ba188a86a2714406b58b95aeb58536de4485e986ae97e935d8f7f59c",
+      "source_sp": "5.1.4 — Menolak melibatkan hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga ukuran panjang melibatkan perpuluhan dan pecahan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Tolak ukuran panjang pecahan dan perpuluhan",
+      "source_pages": "183–184",
+      "source_minutes": 60,
+      "source_pbd_task": "Tolak 125 cm dan 3/4 m daripada 4.6 m. Hitung pula 0.75 km − 180 m dalam meter.",
+      "source_pbd_evidence": "2.6 m dan 570 m. Pengiraan pertama 4.6 − 1.25 − 0.75.",
+      "phases": {
+        "engagement": "Guru tunjuk reben 3 m yang dipotong dua kali; murid ramal baki.",
+        "exploration": "Pasangan tandakan 0.5 m dan 75 cm yang dikeluarkan pada garis panjang 3 m.",
+        "explanation": "Guru model 3 − 0.5 − 0.75 = 1.75 m; murid semak dengan menambah semula kedua-dua potongan.",
+        "elaboration": "Murid hitung baki 2.4 m selepas dipotong 35 cm dan 1/2 m (1.55 m), serta semak jumlah.",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur reben, kad panjang dan garis nombor.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Samakan unit sebelum satu penolakan dahulu.",
+        "pengayaan": "Cari panjang asal jika baki dan dua potongan diberi."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L075",
+      "parent_candidate": "T5-RPT-DRAFT-023D",
+      "source_v60_markdown_sha256_reported": "a142f8f2d3e4371dd94269d38b1beb59604e32f8e6356b6ec821e3067d2b8e97",
+      "source_sp": "5.1.5 — Mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Mendarab panjang dengan bilangan dua digit",
+      "source_pages": "185–186",
+      "source_minutes": 60,
+      "source_pbd_task": "Hitung 24 × 1 1/4 m dalam m dan 18 × 2.35 cm dalam mm. Tunjukkan satu cara menukar unit selepas darab.",
+      "source_pbd_evidence": "30 m dan 423 mm. 18 × 2.35 cm = 42.3 cm.",
+      "phases": {
+        "engagement": "Guru tunjuk 12 jalur panjang sama; murid cadang operasi bagi jumlah.",
+        "exploration": "Pasangan model 14 jalur 1.9 cm menggunakan jadual kumpulan; banding cara tambah berulang.",
+        "explanation": "Guru tunjuk darab sebelum/selepas penukaran cm kepada mm; murid terangkan unit.",
+        "elaboration": "Murid hitung 16 jalur 1 1/2 m dan 12 jalur 2.8 cm (24 m; 33.6 cm).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur ukuran dan jadual pesanan.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Darab satu ukuran dengan nombor satu digit dahulu.",
+        "pengayaan": "Banding dua kaedah untuk 32 × 1.25 m dalam cm."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L076",
+      "parent_candidate": "T5-RPT-DRAFT-023D",
+      "source_v60_markdown_sha256_reported": "0d31abf9b63803779788c8a0564598b6b6be323543b1915b4cd8d3e8ea8240ac",
+      "source_sp": "5.1.5 — Mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "mendarab panjang dengan 100 dan 1 000",
+      "source_pages": "185–186",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira panjang 100 jalur yang setiap satunya 1 1/4 m. Kira juga panjang 1 000 jalur 2.4 cm sejalur. Beri kedua-dua jawapan dalam meter.",
+      "source_pbd_evidence": "125 m dan 24 m. Hasil kedua 2 400 cm sebelum ditukar kepada meter.",
+      "phases": {
+        "engagement": "Guru papar pesanan 100 jalur 1/2 m; murid jangka panjang keseluruhan.",
+        "exploration": "Pasangan banding 10, 100 dan 1 000 kumpulan pada carta nilai tempat.",
+        "explanation": "Guru model 100 × 3/4 m dan 1 000 × 0.45 m; murid semak unit asal.",
+        "elaboration": "Murid hitung 100 × 0.6 m dan 1 000 × 1.5 cm dalam m (60 m; 15 m).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Pita ukuran dan jadual pesanan.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Gunakan pecahan setara perpuluhan sebelum darab.",
+        "pengayaan": "Terangkan mengapa penukaran unit dan darab boleh dibuat dalam urutan berbeza."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L077",
+      "parent_candidate": "T5-RPT-DRAFT-023D",
+      "source_v60_markdown_sha256_reported": "2e148ed54da23d19ce6236a9f2a4708b7692e603ce9f1165d023072892a18a8b",
+      "source_sp": "5.1.6 — Membahagi ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membahagi ukuran panjang melibatkan perpuluhan dan pecahan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Membahagi panjang dan menukar unit",
+      "source_pages": "187–188",
+      "source_minutes": 60,
+      "source_pbd_task": "Bahagikan 3 3/4 m kepada 15 potongan sama. Bahagikan 52.8 km kepada 100 segmen. Nyatakan setiap potongan dalam cm dan segmen dalam m.",
+      "source_pbd_evidence": "25 cm dan 528 m. Semak pendaraban songsang untuk satu jawapan.",
+      "phases": {
+        "engagement": "Guru tunjuk tali yang akan dipotong sama rata; murid bezakan jumlah dan panjang sepotong.",
+        "exploration": "Pasangan model 2.5 m dibahagi lima bahagian menggunakan jalur; nyatakan panjang setiap bahagian.",
+        "explanation": "Guru model 2 1/2 m ÷ 5 = 0.5 m = 50 cm; murid semak dengan darab.",
+        "elaboration": "Murid bahagikan 7.25 km kepada 1 000 segmen dan 3 m kepada 12 potongan (7.25 m; 25 cm).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur tali dan kad pembahagi.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Tukar m kepada cm sebelum bahagi.",
+        "pengayaan": "Banding kaedah bahagi dalam m dan cm."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L080",
+      "parent_candidate": "T5-RPT-DRAFT-024B",
+      "source_v60_markdown_sha256_reported": "1cabf7064536a6b1de60d05c0a27be8f3acc476ea0bf96b24679db3c15d19c59",
+      "source_sp": "5.2.2 — Menambah hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menambah hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Menambah jisim pecahan dan perpuluhan",
+      "source_pages": "191–192",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 1.625 kg + 850 g + 2 1/4 kg dan nyatakan hasil dalam kg. Ulang dalam g untuk menyemak.",
+      "source_pbd_evidence": "4.725 kg atau 4 725 g. Penukaran 850 g = 0.85 kg.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga label barangan 0.5 kg, 350 g dan 1/4 kg; murid anggar jisim.",
+        "exploration": "Pasangan susun kad jisim pada jadual kg/g; tukar setiap ukuran kepada kg.",
+        "explanation": "Guru model 1.2 kg + 750 g + 1/2 kg = 2.45 kg; murid semak dalam g.",
+        "elaboration": "Murid tambah 1 1/4 kg + 480 g + 0.625 kg (2.355 kg) dan semak 2 355 g.",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad jisim dan carta kg/g.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Gunakan 1 000 g = 1 kg pada jadual.",
+        "pengayaan": "Cipta tiga label yang jumlahnya tepat 3 kg."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L081",
+      "parent_candidate": "T5-RPT-DRAFT-024B",
+      "source_v60_markdown_sha256_reported": "579270a53d1cef19270bcbdffb033dc80f444a104d0e3665611dd898087c09af",
+      "source_sp": "5.2.3 — Menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Menolak jisim dalam bentuk pecahan dan perpuluhan",
+      "source_pages": "193–194",
+      "source_minutes": 60,
+      "source_pbd_task": "Tolak 0.375 kg dan 3/4 kg daripada 2.5 kg. Nyatakan baki dalam g dan semak jumlah jisim.",
+      "source_pbd_evidence": "1.375 kg atau 1 375 g. Baki dan dua jisim yang dikeluarkan berjumlah 2.5 kg.",
+      "phases": {
+        "engagement": "Guru beri kad stok dan dua kad penggunaan bahan; murid pilih operasi.",
+        "exploration": "Pasangan bina rajah bar jisim asal, dua penggunaan dan baki.",
+        "explanation": "Guru model 3.75 kg − 1/2 kg − 0.875 kg = 2.375 kg; murid semak tambah semula.",
+        "elaboration": "Murid hitung baki 2.8 kg selepas 1/4 kg dan 0.35 kg digunakan (2.2 kg).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad stok dan rajah bar.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Tunjuk satu penolakan pada satu masa.",
+        "pengayaan": "Cari satu penggunaan yang tidak diketahui berdasarkan stok dan baki."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L082",
+      "parent_candidate": "T5-RPT-DRAFT-024B",
+      "source_v60_markdown_sha256_reported": "0e5432512a86fd79ff3645555f0b274196c0c44f2048aaae25cd10b865fe5afe",
+      "source_sp": "5.2.3 — Menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga jisim dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "menolak jisim selepas menyamakan unit",
+      "source_pages": "193–194",
+      "source_minutes": 30,
+      "source_pbd_task": "Daripada 7.2 kg tepung, gunakan 850 g dan 1.35 kg. Tunjuk baki selepas kedua-dua penggunaan.",
+      "source_pbd_evidence": "6.35 kg dan 5.00 kg. 850 g ditukar kepada 0.85 kg.",
+      "phases": {
+        "engagement": "Guru paparkan label stok 5 kg dan penggunaan 650 g; murid nyatakan langkah pertama.",
+        "exploration": "Pasangan padankan kad gram dengan perpuluhan kg sebelum mengisi jadual penggunaan.",
+        "explanation": "Guru model baki 5 kg − 1.2 kg − 0.8 kg = 3 kg; bincang penukaran jika penggunaan dalam g.",
+        "elaboration": "Murid kira baki 6 kg selepas 450 g dan 1.1 kg (5.55 kg; 4.45 kg).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad jisim, jadual penggunaan.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Gunakan jadual gram-ke-kilogram sebelum menolak.",
+        "pengayaan": "Semak baki dengan jumlah penggunaan dan stok awal."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L083",
+      "parent_candidate": "T5-RPT-DRAFT-024C",
+      "source_v60_markdown_sha256_reported": "49ca55689f370a4611d502d348219002391c926843ce01048f3ec3f840c30ffa",
+      "source_sp": "5.2.4 — Mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan.",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "mendarab jisim perpuluhan dengan nombor bulat",
+      "source_pages": "195–196",
+      "source_minutes": 30,
+      "source_pbd_task": "Cari jisim 8 pek 0.375 kg sepek dan 15 pek 0.6 kg sepek.",
+      "source_pbd_evidence": "3 kg dan 9 kg, dengan ayat darab yang sepadan.",
+      "phases": {
+        "engagement": "Guru tunjuk tujuh pek 0.25 kg; murid ramal jumlah jisim.",
+        "exploration": "Pasangan susun pek simulasi; tulis tambah berulang dan ayat darab setara.",
+        "explanation": "Guru model 7 × 0.25 kg = 1.75 kg; murid semak kedudukan perpuluhan.",
+        "elaboration": "Murid kira 6 pek 0.45 kg dan 12 pek 0.125 kg (2.7 kg; 1.5 kg).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Model pek dan penimbang.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Gunakan kad kumpulan 0.25 kg.",
+        "pengayaan": "Bandingkan dua jenis pek yang jumlah jisimnya sama."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L084",
+      "parent_candidate": "T5-RPT-DRAFT-024C",
+      "source_v60_markdown_sha256_reported": "9945012c9e338ec1312229848d6620975ff549a35f6c0fcfccab4fc577c5eeff",
+      "source_sp": "5.2.4 — Mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan.",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit hingga tiga tempat perpuluhan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "mendarab jisim pecahan dengan 100 dan 1 000",
+      "source_pages": "195–196",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira jisim 100 pek 1 1/4 kg sepek. Kemudian kira jisim 1 000 biji yang setiap satunya 2 3/5 g. Beri kedua-dua hasil dalam kg.",
+      "source_pbd_evidence": "125 kg dan 2.6 kg. Hasil kedua 2 600 g sebelum ditukar kepada kg.",
+      "phases": {
+        "engagement": "Guru beri label 2 3/5 kg dan pesanan 100 pek; murid jangka skala pertambahan.",
+        "exploration": "Pasangan cerakinkan nombor bercampur kepada bahagian bulat dan pecahan.",
+        "explanation": "Guru model 100 × 2 3/5 kg = 260 kg; murid semak menggunakan 2.6 kg.",
+        "elaboration": "Murid kira 100 × 3/4 kg dan 1 000 × 1 1/2 g dalam kg (75 kg; 1.5 kg).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad pecahan dan label jisim.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Tukar pecahan mudah kepada perpuluhan.",
+        "pengayaan": "Semak hasil dalam gram dan kilogram."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L085",
+      "parent_candidate": "T5-RPT-DRAFT-024C",
+      "source_v60_markdown_sha256_reported": "411e36ed97fb1e27a75992a0ac6c3c8f1dabebba5cf26a3fb61e77fed63a4cd2",
+      "source_sp": "5.2.5 — Membahagi jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membahagi jisim dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Membahagi jisim dan menyemak dalam gram",
+      "source_pages": "197–198",
+      "source_minutes": 60,
+      "source_pbd_task": "Bahagi 15 3/4 kg kepada 25 paket. Bahagi 23.5 kg kepada 100 paket. Tulis jisim sepeket dalam g.",
+      "source_pbd_evidence": "630 g dan 235 g. Pengiraan menggunakan 15 750 g dan 23 500 g.",
+      "phases": {
+        "engagement": "Guru tunjuk bekas bahan besar dan paket kecil sama saiz; murid ramal jisim sepeket.",
+        "exploration": "Pasangan bahagi model 350 g kepada tujuh bahagian sama dan catat ayat bahagi.",
+        "explanation": "Guru model 0.35 kg ÷ 7 = 50 g; murid semak melalui darab.",
+        "elaboration": "Murid bahagi 1.8 kg kepada 1 000 bahagian dan 4 1/2 kg kepada sembilan bahagian (1.8 g; 500 g).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Model paket dan kad jisim.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Gunakan gram sebelum membahagi.",
+        "pengayaan": "Reka dua saiz paket berbeza daripada stok sama."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L088",
+      "parent_candidate": "T5-RPT-DRAFT-025B",
+      "source_v60_markdown_sha256_reported": "d5ccf17a6b92d25316488ef10b0559aa59bb499957ada615b8ac16b5654532db",
+      "source_sp": "5.3.2 — Menambah hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menambah hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Menambah tiga isi padu cecair",
+      "source_pages": "201–202",
+      "source_minutes": 60,
+      "source_pbd_task": "Jumlahkan 1 3/4 L, 825 mL dan 0.95 L. Tulis jumlah dalam L dan mL.",
+      "source_pbd_evidence": "3.525 L atau 3 525 mL. 825 mL ditukar kepada 0.825 L.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga bekas bertanda 0.5 L, 250 mL dan 1/4 L; murid ramal jumlah.",
+        "exploration": "Pasangan padankan label mL dan L, susun tiga ukuran dalam unit sepunya.",
+        "explanation": "Guru model 1.2 L + 0.75 L + 250 mL = 2.2 L; murid semak dalam mL.",
+        "elaboration": "Murid tambah 1/2 L, 625 mL dan 1.375 L (2.5 L; 2 500 mL).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jag berskala dan kad isi padu.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Gunakan carta 1 L = 1 000 mL.",
+        "pengayaan": "Bina tiga sukatan berjumlah 4 L."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L089",
+      "parent_candidate": "T5-RPT-DRAFT-025B",
+      "source_v60_markdown_sha256_reported": "ab99f1aff9d899d09193bcc2feef89b115c47612ee69c33f6f236a5b6fc82313",
+      "source_sp": "5.3.3 — Menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Menolak dua isi padu daripada jumlah asal",
+      "source_pages": "203–204",
+      "source_minutes": 60,
+      "source_pbd_task": "Daripada 5.125 L, tolak 1 1/2 L dan 875 mL. Semak baki dengan penambahan.",
+      "source_pbd_evidence": "2.75 L. 2.75 + 1.5 + 0.875 = 5.125 L.",
+      "phases": {
+        "engagement": "Guru papar label tangki 6 L dan dua sukatan keluar; murid jangka baki.",
+        "exploration": "Pasangan lakar rajah bar jumlah asal, dua sukatan keluar dan baki.",
+        "explanation": "Guru model 6 L − 1.25 L − 750 mL = 4 L; murid jelaskan penukaran.",
+        "elaboration": "Murid kira baki 4.8 L selepas 1/2 L dan 625 mL (3.675 L); semak tambah semula.",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad tangki dan rajah bar.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Tukar mL kepada L sebelum menolak.",
+        "pengayaan": "Cari sukatan keluar kedua daripada baki yang diberi."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L090",
+      "parent_candidate": "T5-RPT-DRAFT-025B",
+      "source_v60_markdown_sha256_reported": "7f680c32177db50d8fa199c8c812730408543abdd10603a882765d325189e1dd",
+      "source_sp": "5.3.3 — Menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menolak melibatkan hingga tiga isi padu cecair dalam pecahan dan perpuluhan tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "menolak isi padu cecair dalam unit yang sama",
+      "source_pages": "203–204",
+      "source_minutes": 30,
+      "source_pbd_task": "Tangki berisi 9.5 L. Gunakan 1.75 L dan 680 mL. Hitung baki selepas setiap penggunaan.",
+      "source_pbd_evidence": "7.75 L dan 7.07 L.",
+      "phases": {
+        "engagement": "Guru beri situasi jag 8.4 L digunakan dua kali; murid susun urutan rekod.",
+        "exploration": "Pasangan padankan label 400 mL dengan 0.4 L, kemudian isi dua baris jadual baki.",
+        "explanation": "Guru model baki 8.4 L selepas 1.2 L dan 500 mL (7.2 L; 6.7 L).",
+        "elaboration": "Murid kira baki 7.5 L selepas 1.25 L dan 300 mL (6.25 L; 5.95 L).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Kad jag dan jadual penggunaan.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Rekod baki pertama sebelum penolakan kedua.",
+        "pengayaan": "Semak jadual dengan menambah kedua-dua penggunaan dan baki akhir."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L091",
+      "parent_candidate": "T5-RPT-DRAFT-025C",
+      "source_v60_markdown_sha256_reported": "9067deafba87d41f66107fef2f43085bb34cbf0593b515c10cc9e5bfad523fd7",
+      "source_sp": "5.3.4 — Mendarab isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Mendarab isi padu dalam liter dan mililiter",
+      "source_pages": "205–206",
+      "source_minutes": 60,
+      "source_pbd_task": "Hitung 36 × 0.275 L dalam mL, 100 × 3/4 L dalam L dan 1 000 × 0.125 L dalam L.",
+      "source_pbd_evidence": "9 900 mL, 75 L dan 125 L. Catat 9.9 L sebelum penukaran pertama.",
+      "phases": {
+        "engagement": "Guru tunjuk botol 0.25 L dan kad bilangan botol; murid ramal jumlah.",
+        "exploration": "Pasangan model kumpulan botol dengan carta 10, 100 dan 1 000; pilih unit sesuai.",
+        "explanation": "Guru model 28 × 0.25 L = 7 L dan 100 × 3/5 L = 60 L.",
+        "elaboration": "Murid kira 1 000 botol 0.045 L sebotol dan 12 botol 0.3 L (45 L; 3.6 L).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Model botol dan jadual kuantiti.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Guna kumpulan 10 sebelum darab 100.",
+        "pengayaan": "Banding jumlah dalam L dengan mL untuk pesanan besar."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L092",
+      "parent_candidate": "T5-RPT-DRAFT-025C",
+      "source_v60_markdown_sha256_reported": "7f4ab3f250248316eff06f31843acc32b5bbcf080ab3c0b4310a3291149e7e00",
+      "source_sp": "5.3.5 — Membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "Membahagi isi padu antara bekas sama saiz",
+      "source_pages": "207–208",
+      "source_minutes": 60,
+      "source_pbd_task": "Bahagi 5 1/4 L antara 14 bekas. Bahagi 18.9 L antara 21 botol. Nyatakan isi setiap bekas dalam mL.",
+      "source_pbd_evidence": "375 mL dan 900 mL. Semak satu hasil dengan darab bilangan bekas.",
+      "phases": {
+        "engagement": "Guru tunjuk satu bekas besar dan beberapa botol sama; murid bezakan jumlah dengan isi sebotol.",
+        "exploration": "Pasangan susun label 3.75 L sebagai 3 750 mL dan kad 15 botol; bina ayat bahagi.",
+        "explanation": "Guru model 3 750 ÷ 15 = 250 mL; murid semak melalui darab.",
+        "elaboration": "Murid bahagi 6.6 L kepada 12 botol dan 2 1/2 L kepada 10 botol (550 mL; 250 mL).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Model botol dan kad bahagi.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Tukar jumlah kepada mL dahulu.",
+        "pengayaan": "Bina masalah pembahagian dengan jawapan 125 mL sebotol."
+      },
+      "ready": false
+    },
+    {
+      "proposed_source_id": "SK27-MATH-Y5-L093",
+      "parent_candidate": "T5-RPT-DRAFT-025C",
+      "source_v60_markdown_sha256_reported": "68324a6f33e2d6ddb031d4074a18aecfdc63d702447a57ce44b2dfe5d9f66e5e",
+      "source_sp": "5.3.5 — Membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membahagi isi padu cecair dalam pecahan dan perpuluhan dengan nombor hingga dua digit, 100 dan 1000 tanpa dan dengan penukaran unit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_title": "membahagi isi padu dengan 100 dan 1 000",
+      "source_pages": "207–208",
+      "source_minutes": 30,
+      "source_pbd_task": "Bahagikan 4.5 L kepada 100 bekas dan 8.25 L kepada 1 000 bekas. Beri isi padu setiap bekas dalam mL.",
+      "source_pbd_evidence": "45 mL dan 8.25 mL. Pengiraan bermula daripada 4 500 mL dan 8 250 mL.",
+      "phases": {
+        "engagement": "Guru tunjuk pesanan 100 atau 1 000 bekas kecil; murid ramal perbezaan isi setiap bekas.",
+        "exploration": "Pasangan guna carta nilai tempat untuk membahagi 2 500 mL kepada 100 dan 1 000 bahagian.",
+        "explanation": "Guru model 2.5 L ÷ 100 = 25 mL; 7.5 L ÷ 1 000 = 7.5 mL.",
+        "elaboration": "Murid bahagi 6 L kepada 100 bekas dan 3.2 L kepada 1 000 bekas (60 mL; 3.2 mL).",
+        "evaluation": "Murid menyelesaikan tugasan PBD asal secara individu; guru semak menggunakan evidens sumber. Murid nyatakan satu strategi dan betulkan kesilapan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jag dan kad bilangan bekas.",
+        "pak21": "Perbincangan pasangan dan semakan strategi.",
+        "emk": "Ketelitian, penaakulan matematik dan nilai kerjasama.",
+        "pemulihan": "Gunakan 1 L = 1 000 mL dan carta nilai tempat.",
+        "pengayaan": "Semak hasil pembahagian dengan mendarab bilangan bekas."
+      },
+      "ready": false
+    }
+  ]
+}
