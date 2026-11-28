@@ -1,0 +1,320 @@
+{
+  "status": "DRAFT_TSV_SOURCE_PBD_ALIGNED",
+  "year": 4,
+  "total": 8,
+  "source_triage_blob": "8b80db7bf5617cdd68204f17fb0456d55340465a",
+  "prior_batch_blob": "2162264fd25c2a2493b6a4dce789bd8e194a8169",
+  "source_files": [
+    {
+      "minutes": 30,
+      "path": "staging/matematik/tahun4/slot_30_minit.tsv",
+      "sha": "619869a8b9799695995f2bf229b5714607226124"
+    },
+    {
+      "minutes": 60,
+      "path": "staging/matematik/tahun4/slot_60_minit.tsv",
+      "sha": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5"
+    }
+  ],
+  "scope": "Remaining 8 of 13 distinct source lesson options from nine initial candidates. Original staging title, duration, PBD task/evidence retained; new phases are differentiated by source session. Not full Year 4 curriculum (117 source snapshot lessons).",
+  "limitations": "Full native SK/SP text, objectives/criteria, catalogue identity, academic approval, Word/PDF render and authenticated Web delivery pending. No RPT or ordinary RPH modifications.",
+  "records": [
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 5,
+      "related_candidate_ids": [
+        "T4-WORK-10"
+      ],
+      "source_sp_codes": [
+        "1.5.1",
+        "1.5.2"
+      ],
+      "source_title": "melengkapkan pola nombor dalam dua arah",
+      "source_pages": "11–12",
+      "source_minutes": 30,
+      "source_pbd_task": "Cari sela dan isi ruang bagi 20 450, 20 550, __, 20 750 serta 94 000, 84 000, __, 64 000.",
+      "source_pbd_evidence": "Sela +100 dan 20 650; sela −10 000 dan 74 000.",
+      "phases": {
+        "engagement": "Guru tunjuk siri 48 000, 47 000, 46 000 dan murid ramal arah.",
+        "exploration": "Pasangan catat beza bagi kad pola menaik dan menurun, kemudian susun kad yang hilang.",
+        "explanation": "Guru tunjuk penggunaan sela tetap dan anak panah bagi siri 36 500, 35 500, 34 500.",
+        "elaboration": "Murid isi ruang dalam 15 200, 15 400, □, 15 800 dan 82 000, 77 000, □, 67 000; jelaskan sela.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens sumber. Murid menerangkan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pola, garis nombor, kad beza.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tulis sela pada setiap anak panah.",
+        "pengayaan": "Bina pola yang melintasi sempadan puluh ribu."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 22,
+      "related_candidate_ids": [
+        "T4-WORK-11A"
+      ],
+      "source_sp_codes": [
+        "2.1.3"
+      ],
+      "source_title": "Menolak dua nombor dan menolak dua nombor daripada satu nombor",
+      "source_pages": "75–79",
+      "source_minutes": 60,
+      "source_pbd_task": "Kira 3 − 5/8 serta 4 1/3 − 1 2/3 − 1/3. Tunjukkan penukaran satu nombor bercampur.",
+      "source_pbd_evidence": "2 3/8 dan 2 1/3. Langkah menyamakan penyebut atau mengumpul semula betul.",
+      "phases": {
+        "engagement": "Guru tunjuk jalur empat unit dan tanya cara menolak pecahan apabila bahagian pecahan tidak mencukupi.",
+        "exploration": "Pasangan gunakan jalur pecahan bagi 2 − 3/4 dan 3 1/5 − 1 3/5.",
+        "explanation": "Guru model pengumpulan semula satu keseluruhan, penyebut sepunya dan penolakan berturutan dari kiri ke kanan.",
+        "elaboration": "Murid selesaikan 5 − 7/8 serta 5 1/4 − 2 3/4 − 1/4; semak satu jawapan dengan tambah semula.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens sumber. Murid menerangkan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, grid, kad nombor bercampur.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar satu keseluruhan kepada pecahan sepenyebut dahulu.",
+        "pengayaan": "Cipta ayat penolakan dua pecahan daripada nombor bercampur."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 23,
+      "related_candidate_ids": [
+        "T4-WORK-11A"
+      ],
+      "source_sp_codes": [
+        "2.1.3"
+      ],
+      "source_title": "menolak pecahan daripada nombor bulat atau nombor bercampur",
+      "source_pages": "75–79",
+      "source_minutes": 30,
+      "source_pbd_task": "Kira 4 − 5/8 dan 3 1/2 − 1 3/4 − 1/4. Tunjuk satu langkah penukaran pada model.",
+      "source_pbd_evidence": "3 3/8 dan 1 1/2. Satu penukaran disokong dengan betul.",
+      "phases": {
+        "engagement": "Guru tunjuk tiga unit jalur pecahan dan minta murid keluarkan 3/4.",
+        "exploration": "Pasangan tukar satu unit kepada empat bahagian suku dan laksanakan penolakan.",
+        "explanation": "Guru model 3 − 3/4 = 2 1/4 serta tunjuk pengumpulan semula pada jalur.",
+        "elaboration": "Murid gunakan model bagi 5 − 3/8 dan 4 1/2 − 2 3/4 − 1/4; terangkan satu langkah.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens sumber. Murid menerangkan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, grid.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Mulakan dengan nombor bulat dan satu pecahan.",
+        "pengayaan": "Semak penolakan berturutan menggunakan penambahan songsang."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 25,
+      "related_candidate_ids": [
+        "T4-WORK-11C"
+      ],
+      "source_sp_codes": [
+        "2.1.5"
+      ],
+      "source_title": "Menentukan nilai pecahan daripada kuantiti",
+      "source_pages": "83–85",
+      "source_minutes": 60,
+      "source_pbd_task": "Cari 2/5 daripada 45, 3/8 daripada 56 dan 5/6 daripada 48. Gunakan model bar bagi satu item.",
+      "source_pbd_evidence": "18, 21 dan 40. Satu model membahagi kuantiti kepada bahagian sama.",
+      "phases": {
+        "engagement": "Guru tunjuk 30 token dan kad 2/3; murid ramal kuantiti.",
+        "exploration": "Pasangan bahagi token kepada tiga kumpulan sama, ambil dua kumpulan dan kira jumlah.",
+        "explanation": "Guru model kaedah bahagi kuantiti dengan penyebut dahulu, kemudian darab pengangka menggunakan rajah bar.",
+        "elaboration": "Murid tentukan 3/5 daripada 35, 2/7 daripada 42 dan 4/9 daripada 54; banding strategi.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens sumber. Murid menerangkan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token, kad pecahan, rajah bar.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan kuantiti kecil yang habis dibahagi penyebut.",
+        "pengayaan": "Cari kuantiti asal apabila 3/4 daripadanya ialah 24."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 26,
+      "related_candidate_ids": [
+        "T4-WORK-11C"
+      ],
+      "source_sp_codes": [
+        "2.1.5"
+      ],
+      "source_title": "Menentukan nilai pecahan daripada kuantiti",
+      "source_pages": "83–85",
+      "source_minutes": 60,
+      "source_pbd_task": "Cari 1 1/4 daripada 32 dan 2 2/3 daripada 27. Huraikan satu kuantiti sebagai keseluruhan dan bahagian.",
+      "source_pbd_evidence": "40 dan 72. Contohnya 32 + 8 atau 54 + 18.",
+      "phases": {
+        "engagement": "Guru tanya sama ada 1 1/2 daripada 20 lebih besar atau kecil daripada 20.",
+        "exploration": "Pasangan model satu keseluruhan dan satu bahagian menggunakan dua jalur sama skala.",
+        "explanation": "Guru model 1 1/2 × 20 = 20 + 10 dan terangkan cara menyemak kewajaran hasil.",
+        "elaboration": "Murid kira 1 3/4 daripada 24 dan 2 1/3 daripada 18 dengan kaedah cerakin.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens sumber. Murid menerangkan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Rajah bar, kad nombor bercampur.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Kira bahagian nombor bulat dan pecahan secara berasingan.",
+        "pengayaan": "Banding kaedah cerakin dengan menukar kepada pecahan tak wajar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 40,
+      "related_candidate_ids": [
+        "T4-WORK-12"
+      ],
+      "source_sp_codes": [
+        "2.4.1"
+      ],
+      "source_title": "menyelesaikan masalah peratus dan perpuluhan",
+      "source_pages": "96–102",
+      "source_minutes": 30,
+      "source_pbd_task": "Cari 30% daripada 90 buku dan bilangan liter dalam 0.75 L + 1.25 L. Catat unit.",
+      "source_pbd_evidence": "27 buku dan 2 L.",
+      "phases": {
+        "engagement": "Guru tunjuk 25% pada grid dan dua bekas berlabel 0.5 L serta 1.2 L.",
+        "exploration": "Pasangan padankan 25% dengan 1/4 dan jumlahkan isi padu model.",
+        "explanation": "Guru model 25% daripada 80 murid serta cara menyusun titik perpuluhan dalam penambahan liter.",
+        "elaboration": "Murid cari 20% daripada 60 buku dan jumlah 0.6 L + 1.45 L; nyatakan unit.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens sumber. Murid menerangkan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Grid 100 petak, kad masalah, rajah bekas.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar peratus mudah kepada pecahan dan guna jadual nilai tempat.",
+        "pengayaan": "Bina dua masalah yang menggunakan unit jawapan berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 61,
+      "related_candidate_ids": [
+        "T4-WORK-14"
+      ],
+      "source_sp_codes": [
+        "3.7.1"
+      ],
+      "source_title": "memilih operasi bagi masalah wang harian",
+      "source_pages": "110–117,128–132",
+      "source_minutes": 30,
+      "source_pbd_task": "Hitung jumlah lapan barangan RM325 dan baki RM6 500 selepas membayar RM2 480 serta RM975.",
+      "source_pbd_evidence": "RM2 600 dan RM3 045.",
+      "phases": {
+        "engagement": "Guru tunjuk resit empat barang pada harga seunit yang sama.",
+        "exploration": "Pasangan asingkan harga seunit, kuantiti, jumlah kos dan wang tersedia.",
+        "explanation": "Guru model empat set RM750 dan potongan RM350; bezakan darab daripada penolakan.",
+        "elaboration": "Murid kira jumlah enam barang RM420 seunit serta baki RM5 000 selepas bayaran tersebut dan RM680.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens sumber. Murid menerangkan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        3,
+        7,
+        5,
+        6,
+        9
+      ],
+      "suggested_support": {
+        "bbm": "Resit rekaan, kad wang, carta operasi.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Pendidikan kewangan, ketelitian.",
+        "pemulihan": "Gunakan jadual harga seunit × kuantiti.",
+        "pengayaan": "Bina masalah yang memerlukan dua penolakan selepas satu darab."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 4,
+      "source_snapshot_lesson": 65,
+      "related_candidate_ids": [
+        "T4-WORK-15"
+      ],
+      "source_sp_codes": [
+        "4.3.1"
+      ],
+      "source_title": "Anggaran tempoh masa",
+      "source_pages": "145",
+      "source_minutes": 60,
+      "source_pbd_task": "Rujukan perjalanan 80 km mengambil 1 jam pada laju tetap. Anggarkan masa bagi 40 km, 120 km dan 200 km. Jelaskan satu menggunakan nisbah jarak kepada rujukan.",
+      "source_pbd_evidence": "30 minit, 1 jam 30 minit dan 2 jam 30 minit. Satu perkaitan jarak dan tempoh ditunjukkan.",
+      "phases": {
+        "engagement": "Guru beri rujukan perjalanan 60 km mengambil 1 jam pada laju tetap.",
+        "exploration": "Pasangan gunakan kad jarak 30, 60 dan 90 km dan banding dengan jarak rujukan.",
+        "explanation": "Guru model separuh jarak mengambil separuh tempoh dan satu setengah kali jarak mengambil 1 jam 30 minit, pada laju tetap.",
+        "elaboration": "Murid anggar masa bagi 45, 90 dan 150 km menggunakan rujukan 90 km dalam 1 jam 30 minit; jelaskan satu anggaran.",
+        "evaluation": "Murid menyelesaikan tugasan PBD sumber secara individu; guru menyemak berdasarkan evidens sumber. Murid menerangkan satu strategi atau pembetulan selepas semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Garis masa, kad jarak, jadual nisbah.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Padankan separuh dan dua kali jarak dengan tempoh.",
+        "pengayaan": "Bincangkan mengapa anggaran berubah apabila laju tidak tetap."
+      },
+      "ready": false
+    }
+  ]
+}
