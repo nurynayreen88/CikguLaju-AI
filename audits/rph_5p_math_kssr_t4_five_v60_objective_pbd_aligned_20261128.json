@@ -1,0 +1,286 @@
+{
+  "status": "DRAFT_V60_TEXT_AND_PBD_ALIGNED",
+  "year": 4,
+  "source_manifest_blob": "3b635782267a41c32ff0cac12d278c052b594dd4",
+  "source_pack_blob": "5cb2b9b2d22d5b7cd5191b8343295a8fc2cfd749",
+  "source_pack_check": "Decoded zlib pack, raw byte length 224997, Adler-32 verified, 117 records. SHA-256 strings are reported by source manifest, not independently recomputed in this audit.",
+  "previous_draft_blob": "ba05c4e1937f4824849ec1c957970a260b518c2d",
+  "source_slot_blob": "c62e61abae572cbf3ad0a203cd539e94fedd4ef5",
+  "checks": {
+    "source_title_matches": 5,
+    "source_sp_code_sets_match": 5,
+    "objective_preserved_as_reference": 5,
+    "source_pbd_retained": 5,
+    "ready": 0
+  },
+  "limitations": "Draft only. v60 archive and 60-minute TSV are source snapshots, not real live Telegram document bytes. Source objective is preserved verbatim as reference; operational criteria bridge original targets and revised source PBD. The native exporter may trim source objective wording. Confirm source exporter output, complete DSKP/TB/BA, layout, exact live identity, Word/PDF and authenticated download before release. No original edits.",
+  "records": [
+    {
+      "candidate_id": "T4-WORK-09",
+      "proposed_source_id": "SK27-MATH-Y4-L003",
+      "source_title": "Penganggaran kuantiti",
+      "minutes": 60,
+      "source_textbook_pages": "13–14",
+      "candidate_dskp": [
+        {
+          "code": "1.3.1",
+          "printed_page": 34,
+          "sk": "1.3 Penganggaran",
+          "sp": "Memberi anggaran kuantiti berdasarkan set rujukan yang diberi dan menentukan kewajaran jawapan."
+        }
+      ],
+      "source_pbd_task": "Gunakan rajah tiga balang sama besar dengan kepadatan seragam. A mengandungi 10 000 manik dan diisi separuh. B berisi suku dan C penuh. Anggarkan B dan C serta beri alasan.",
+      "source_pbd_evidence": "Kira-kira 5 000 dan 20 000. Alasan merujuk separuh atau dua kali kuantiti A.",
+      "phases": {
+        "engagement": "Guru paparkan balang separuh berisi 200 pembilang dan dua balang sama besar pada aras lain. Murid ramal bilangannya tanpa mengira.",
+        "exploration": "Pasangan membandingkan balang suku, separuh dan penuh dengan kepadatan seragam. Murid catat hubungan aras isi dengan bilangan anggaran.",
+        "explanation": "Guru hubungkan suku dengan separuh daripada set rujukan dan penuh dengan dua kali set rujukan. Murid jelaskan sebab anggaran munasabah.",
+        "elaboration": "Murid gunakan set rujukan 8 000 pada aras separuh untuk menganggar aras suku dan penuh (4 000 dan 16 000), kemudian bandingkan dengan kiraan sebenar dalam contoh yang sesuai.",
+        "evaluation": "Murid jawab tugasan PBD asal secara individu tanpa jawapan dipaparkan. Guru semak dua anggaran dan dua alasan, sasaran sekurang-kurangnya 3/4."
+      },
+      "suggested_phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Gambar tiga balang, kad aras isi.",
+        "pak21": "Perbincangan pasangan dan perkongsian alasan.",
+        "emk": "Ketepatan dan penaakulan.",
+        "pemulihan": "Bimbing murid melipat jalur aras isi kepada empat bahagian.",
+        "pengayaan": "Tentukan anggaran apabila balang berisi tiga suku daripada rujukan separuh."
+      },
+      "ready": false,
+      "source_v60_markdown_sha256_reported": "f74290ec6886a709ccb6fca4137d33f720cd5537391b605cf0c0da72ddb7ed4e",
+      "source_sk": "1.3 Penganggaran",
+      "source_sp": "1.3.1 — Memberi anggaran kuantiti berdasarkan set rujukan yang diberi dan menentukan kewajaran jawapan",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat memberi anggaran kuantiti berdasarkan set rujukan yang diberi dan menentukan kewajaran jawapan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Set rujukan 10–20 objek, bekas anggaran dan jadual bilangan sebenar.",
+      "proposed_criteria_operationalization": "Sekurang-kurangnya 3/4 bukti tepat: anggaran B 5 000, anggaran C 20 000, alasan B separuh kuantiti A dan alasan C dua kali kuantiti A.",
+      "evaluation_minutes_detail": {
+        "individual_pbd": 10,
+        "closure": 5
+      },
+      "closure": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "reflection": "Refleksi: bilangan murid mencapai objektif diisi oleh guru berdasarkan kriteria sebenar; tindakan susulan mengikut kelemahan yang dikenal pasti."
+    },
+    {
+      "candidate_id": "T4-WORK-11B",
+      "proposed_source_id": "SK27-MATH-Y4-L024",
+      "source_title": "Operasi bergabung tambah dan tolak pecahan",
+      "minutes": 60,
+      "source_textbook_pages": "80–82",
+      "candidate_dskp": [
+        {
+          "code": "2.1.4",
+          "printed_page": 40,
+          "sk": "2.1 Pecahan",
+          "sp": "Operasi bergabung tambah dan tolak melibatkan nombor bulat, pecahan wajar dan nombor bercampur."
+        }
+      ],
+      "source_pbd_task": "Kira 1 3/4 + 2/3 − 1/6 dan 4 1/2 − 1 3/4 + 1/8. Tunjukkan urutan serta penyebut sepunya.",
+      "source_pbd_evidence": "2 1/4 dan 2 7/8. Satu penyebut sepunya yang sesuai ditunjukkan bagi setiap item.",
+      "phases": {
+        "engagement": "Guru papar 1/2 + 1/4 − 1/8 tanpa jawapan. Murid ramal sama ada hasil melebihi 1/2.",
+        "exploration": "Pasangan guna jalur pecahan untuk menyamakan penyebut 2, 4 dan 8 kepada 8, kemudian susun kad langkah.",
+        "explanation": "Guru model pengiraan dari kiri ke kanan untuk operasi tambah dan tolak setara; murid terangkan penukaran nombor bercampur dan penyebut sepunya.",
+        "elaboration": "Murid selesaikan 2 1/2 + 3/4 − 1/8 (3 1/8) dan 3 − 1/3 + 1/6 (2 5/6); pasangan semak langkah dan kewajaran.",
+        "evaluation": "Murid selesaikan dua item PBD asal dan dua item tambahan individu: 2 + 2/3 − 1/3; 3 1/2 − 3/4 + 1/8. Guru semak 4 item; jawapan tambahan 2 1/3 dan 2 7/8. Sasaran 3/4."
+      },
+      "suggested_phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur pecahan, kad operasi.",
+        "pak21": "Semak rakan sebaya.",
+        "emk": "Ketelitian dan penaakulan.",
+        "pemulihan": "Gunakan petak pecahan dengan penyebut 4 dan 8 dahulu.",
+        "pengayaan": "Bina satu ayat tambah-tolak pecahan yang menghasilkan nombor bulat."
+      },
+      "ready": false,
+      "source_v60_markdown_sha256_reported": "d3c2116323ce6c6dc72bd3507dc1ccf07f1bd1378d08b21b78df347a72fd6397",
+      "source_sk": "2.1 Pecahan",
+      "source_sp": "2.1.4 — Operasi bergabung tambah dan tolak melibatkan nombor bulat, pecahan wajar dan nombor bercampur",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan operasi bergabung tambah dan tolak melibatkan nombor bulat, pecahan wajar dan nombor bercampur serta menjawab sekurang-kurangnya 3 daripada 4 soalan dengan langkah yang betul.",
+      "source_bbm_verbatim": "Jalur pecahan, grid pecahan dan kad nombor bercampur.",
+      "proposed_criteria_operationalization": "Sekurang-kurangnya 3/4 item individu betul dengan langkah tambah dan tolak serta penyebut sepunya.",
+      "evaluation_minutes_detail": {
+        "individual_pbd": 10,
+        "closure": 5
+      },
+      "closure": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "reflection": "Refleksi: bilangan murid mencapai objektif diisi oleh guru berdasarkan kriteria sebenar; tindakan susulan mengikut kelemahan yang dikenal pasti."
+    },
+    {
+      "candidate_id": "T4-WORK-12",
+      "proposed_source_id": "SK27-MATH-Y4-L039",
+      "source_title": "Masalah pecahan, perpuluhan dan peratus",
+      "minutes": 60,
+      "source_textbook_pages": "97–102",
+      "candidate_dskp": [
+        {
+          "code": "2.4.1",
+          "printed_page": 41,
+          "sk": "2.4 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah pecahan, perpuluhan dan peratus."
+        }
+      ],
+      "source_pbd_task": "Pusat sumber menerima 80 buku. 35% ialah buku sains dan 1/4 ialah sejarah tanpa kategori bertindih. Cari bilangan untuk kedua-dua kategori dan baki.",
+      "source_pbd_evidence": "28 buku sains, 20 sejarah dan baki 32. Tunjukkan cara mendapat kedua-dua bilangan.",
+      "phases": {
+        "engagement": "Guru papar kad 1/4, 0.25 dan 25%. Murid padankan nilai setara sebelum melihat situasi masalah.",
+        "exploration": "Pasangan lorek rajah bar bagi 40 objek dengan 25% kategori pertama dan 1/5 kategori kedua tanpa pertindihan. Murid banding perwakilan pecahan, perpuluhan dan peratus.",
+        "explanation": "Guru model 25/100 × 40 dan 1/5 × 40, kemudian tolak kedua-dua bilangan daripada jumlah. Murid jelaskan hubungan nilai perpuluhan, pecahan dan peratus.",
+        "elaboration": "Murid selesaikan konteks 40 buku, 0.3 fiksyen dan 1/4 rujukan tanpa pertindihan: 12, 10 dan baki 18; semak jumlah.",
+        "evaluation": "Murid selesaikan masalah PBD 80 buku asal secara individu. Guru nilai dua langkah: bilangan kategori (28 dan 20) serta baki 32 dengan semakan jumlah."
+      },
+      "suggested_phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad buku, rajah bar.",
+        "pak21": "Fikir-pasang-kongsi.",
+        "emk": "Literasi numerasi.",
+        "pemulihan": "Bimbing penukaran 25% kepada 1/4 menggunakan grid seratus.",
+        "pengayaan": "Bina taburan tiga kategori tidak bertindih dan semak jumlah peratus 100%."
+      },
+      "ready": false,
+      "source_v60_markdown_sha256_reported": "05aed93d9b3511c5351b54e58a3f2710df8aaf6ce94a62ba1e653ab7c67217ff",
+      "source_sk": "2.4 Penyelesaian masalah",
+      "source_sp": "2.4.1 — Menyelesaikan masalah pecahan, perpuluhan dan peratus",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan masalah pecahan, perpuluhan dan peratus dan memberikan sekurang-kurangnya 2 daripada 2 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad masalah pecahan/perpuluhan/peratus dan grid 100 petak.",
+      "proposed_criteria_operationalization": "2/2 langkah penyelesaian tepat: kedua-dua kategori asal dihitung dengan betul, kemudian baki diperoleh dan disemak. Tambahan latihan perpuluhan mengekalkan skop SP.",
+      "evaluation_minutes_detail": {
+        "individual_pbd": 10,
+        "closure": 5
+      },
+      "closure": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "reflection": "Refleksi: bilangan murid mencapai objektif diisi oleh guru berdasarkan kriteria sebenar; tindakan susulan mengikut kelemahan yang dikenal pasti."
+    },
+    {
+      "candidate_id": "T4-WORK-13",
+      "proposed_source_id": "SK27-MATH-Y4-L054",
+      "source_title": "Keputusan kewangan bertanggungjawab",
+      "minutes": 60,
+      "source_textbook_pages": "122–123",
+      "candidate_dskp": [
+        {
+          "code": "3.4.1",
+          "printed_page": 45,
+          "sk": "3.4 Tanggungjawab dalam membuat keputusan berkaitan kewangan",
+          "sp": "Menjelaskan kesan sesuatu keputusan kewangan yang dibuat."
+        },
+        {
+          "code": "3.4.2",
+          "printed_page": 45,
+          "sk": "3.4 Tanggungjawab dalam membuat keputusan berkaitan kewangan",
+          "sp": "Membuat keputusan kewangan berdasarkan keutamaan keperluan dan kehendak."
+        },
+        {
+          "code": "3.4.3",
+          "printed_page": 45,
+          "sk": "3.4 Tanggungjawab dalam membuat keputusan berkaitan kewangan",
+          "sp": "Membuat keputusan kewangan dengan menganalisis maklumat kewangan yang diperolehi daripada pelbagai sumber."
+        }
+      ],
+      "source_pbd_task": "Bajet RM45. Buku kerja diperlukan dan berharga RM28 termasuk penghantaran daripada pembekal A atau RM25 + RM6 penghantaran daripada B. Pen hiasan RM18 ialah kehendak. Bandingkan tawaran dan nyatakan pilihan serta baki.",
+      "source_pbd_evidence": "A RM28, B RM31. Pilih A untuk keperluan, baki RM17. Pen hiasan ditangguh kerana melebihi baki.",
+      "phases": {
+        "engagement": "Guru papar jadual wang saku RM20 dengan senarai keperluan, kehendak dan simpanan. Murid nyatakan keutamaan.",
+        "exploration": "Pasangan banding iklan buku RM19 termasuk penghantaran dengan RM16 + RM5 penghantaran. Murid kira jumlah sebenar.",
+        "explanation": "Guru terangkan beza harga iklan dan jumlah dibayar serta kesan pilihan terhadap baki. Murid jelaskan mengapa keperluan didahulukan.",
+        "elaboration": "Kumpulan uji bajet RM50 dengan tawaran buku RM30 termasuk penghantaran atau RM26 + RM8; kehendak RM22. Bentang pilihan dan baki.",
+        "evaluation": "Murid jawab tugasan bajet RM45 asal secara individu. Guru semak empat bukti mengikut kriteria, tanpa memberi jawapan sebelum pentaksiran."
+      },
+      "suggested_phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad iklan, jadual bajet.",
+        "pak21": "Perbincangan dan pembentangan ringkas.",
+        "emk": "Pendidikan kewangan.",
+        "pemulihan": "Bimbing murid isi jadual harga, penghantaran, jumlah dan baki.",
+        "pengayaan": "Ubah kos penghantaran B supaya tawaran B lebih murah daripada A dan jelaskan."
+      },
+      "ready": false,
+      "source_v60_markdown_sha256_reported": "1b92500d460d6831ea25ca825dd30380ab22052d35695e00bcd9a2aa51083142",
+      "source_sk": "3.4 Tanggungjawab dalam membuat keputusan berkaitan kewangan",
+      "source_sp": "3.4.1 — Menjelaskan kesan sesuatu keputusan kewangan yang dibuat; 3.4.2 — Membuat keputusan kewangan berdasarkan keutamaan keperluan dan kehendak; 3.4.3 — Membuat keputusan kewangan dengan menganalisis maklumat kewangan yang diperolehi daripada pelbagai sumber",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menjelaskan kesan sesuatu keputusan kewangan yang dibuat dan membuat keputusan kewangan berdasarkan keutamaan keperluan dan kehendak dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad simpanan/perbelanjaan dan carta belanjawan.",
+      "proposed_criteria_operationalization": "Sekurang-kurangnya 3/4 bukti: kos kedua-dua tawaran tepat, pilihan memenuhi keperluan, baki tepat, alasan menangguhkan kehendak munasabah.",
+      "evaluation_minutes_detail": {
+        "individual_pbd": 10,
+        "closure": 5
+      },
+      "closure": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "reflection": "Refleksi: bilangan murid mencapai objektif diisi oleh guru berdasarkan kriteria sebenar; tindakan susulan mengikut kelemahan yang dikenal pasti."
+    },
+    {
+      "candidate_id": "T4-WORK-14",
+      "proposed_source_id": "SK27-MATH-Y4-L060",
+      "source_title": "Masalah wang hingga RM100 000",
+      "minutes": 60,
+      "source_textbook_pages": "128–132",
+      "candidate_dskp": [
+        {
+          "code": "3.7.1",
+          "printed_page": 45,
+          "sk": "3.7 Penyelesaian masalah",
+          "sp": "Menyelesaikan masalah wang dalam lingkungan RM100 000 melibatkan operasi asas dan operasi bergabung dalam situasi harian."
+        }
+      ],
+      "source_pbd_task": "Koperasi membeli 16 bakul pada RM75.50 setiap satu dan 12 rak pada RM156.25 setiap satu. Penghantaran RM225.00. Kira jumlah perbelanjaan serta baki bajet RM4 000.",
+      "source_pbd_evidence": "RM1 208.00 + RM1 875.00 + RM225.00 = RM3 308.00. Baki RM692.00.",
+      "phases": {
+        "engagement": "Guru paparkan invois contoh pembelian peralatan berharga RM60 seunit, caj RM25 dan bajet RM500. Murid ramal operasi untuk jumlah dan baki.",
+        "exploration": "Pasangan asingkan kuantiti, harga seunit dan caj penghantaran daripada invois contoh berbeza daripada PBD asal. Murid bina jadual kos bagi dua baris barang.",
+        "explanation": "Guru model darab harga seunit dengan kuantiti, tambah caj sekali sahaja dan tolak daripada bajet. Murid semak kedudukan perpuluhan.",
+        "elaboration": "Murid kira kos 8 bekas RM42.50 dan 6 rak RM110 dengan caj RM80 serta baki RM1 200 (jumlah RM1 080, baki RM120). Pasangan semak.",
+        "evaluation": "Murid lengkapkan invois PBD asal secara individu. Guru semak jumlah perbelanjaan dan baki serta operasi yang digunakan, sasaran 2/2."
+      },
+      "suggested_phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Invois contoh, jadual kos.",
+        "pak21": "Penyelesaian masalah berpasangan.",
+        "emk": "Pendidikan kewangan dan ketelitian.",
+        "pemulihan": "Bimbing darab harga seunit dengan kuantiti kecil sebelum menjumlah.",
+        "pengayaan": "Tentukan bilangan bakul tambahan yang mampu dibeli menggunakan baki asal tanpa caj tambahan."
+      },
+      "ready": false,
+      "source_v60_markdown_sha256_reported": "0391d167039c8a90d0e9594b5c600cbad8f9eb49e7dbbf96afef52cd9e2fb287",
+      "source_sk": "3.7 Penyelesaian masalah",
+      "source_sp": "3.7.1 — Menyelesaikan masalah wang dalam lingkungan RM100 000 melibatkan operasi asas dan operasi bergabung dalam situasi harian",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan masalah wang dalam lingkungan RM100 000 melibatkan operasi asas dan operasi bergabung dalam situasi harian dan memberikan sekurang-kurangnya 2 daripada 2 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad cerita wang, resit rekaan dan carta operasi.",
+      "proposed_criteria_operationalization": "2/2 jawapan tepat: jumlah perbelanjaan RM3 308.00 dan baki RM692.00, dengan operasi dan unit yang betul.",
+      "evaluation_minutes_detail": {
+        "individual_pbd": 10,
+        "closure": 5
+      },
+      "closure": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "reflection": "Refleksi: bilangan murid mencapai objektif diisi oleh guru berdasarkan kriteria sebenar; tindakan susulan mengikut kelemahan yang dikenal pasti."
+    }
+  ]
+}
