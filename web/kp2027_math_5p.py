@@ -34,8 +34,8 @@ def inventory():
     drafts={key(x):x for x in companions}
     reviews={key(x):x for x in audit["records"]}
     expected={(g,n) for g,count in (("A",125),("B",124)) for n in range(1,count+1)}
-    assert len(companions)==len(reviews)==249 and set(drafts)==set(reviews)==expected
-    assert len(source)==30
+    if len(companions)!=249 or len(audit['records'])!=249 or len(reviews)!=249 or set(drafts)!=expected or set(reviews)!=expected or len(source)!=30:
+        raise PilotUnavailable('Inventori sumber 5P tidak lengkap')
     return source,original,drafts,reviews
 
 def prepare(g,n,payload):
@@ -44,7 +44,8 @@ def prepare(g,n,payload):
     row,review=drafts[g,n],reviews[g,n]
     code=row["sp_code"]
     cat=original[g][str(n)]
-    assert cat["sp"]==code==review["sp_code"] and cat["word"]==row["source_word_sha256"] and cat["pdf"]==row["source_pdf_sha256"]
+    if not (cat['sp']==code==review['sp_code'] and cat['word']==row['source_word_sha256'] and cat['pdf']==row['source_pdf_sha256']):
+        raise PilotUnavailable('Identiti sumber 5P tidak sepadan')
     fields=dict(source[code])
     # Normalize only the two known PDF extraction artifacts. Do not change math.
     if code=="2.2.1":
