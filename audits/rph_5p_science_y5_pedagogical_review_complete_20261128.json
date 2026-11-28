@@ -1,0 +1,244 @@
+{
+  "status": "YEAR5_SOURCE_BASED_PEDAGOGICAL_REVIEW_COMPLETE_CORRECTIONS_PENDING",
+  "year": 5,
+  "expected": 116,
+  "reviewed": 116,
+  "unique": 116,
+  "follow_up_required": 33,
+  "follow_up_by_type": {
+    "PRINT_SAFETY_NOTE_REQUIRED": 7,
+    "BBM_ALIGNMENT_REQUIRED": 8,
+    "CLARITY_NOTE_REQUIRED": 12,
+    "CONTENT_CORRECTION_REQUIRED": 2,
+    "SCOPE_CHECK_REQUIRED": 4
+  },
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y5_pedagogical_review_001_015_20261128.json",
+      "blob": "6f19281b78a63037590d5c4ba8c7f6004b66817b",
+      "count": 15
+    },
+    {
+      "path": "audits/rph_5p_science_y5_pedagogical_review_016_031_20261128.json",
+      "blob": "6f775c11c9d87fdd259a649a5e73996db56ebf9c",
+      "count": 16
+    },
+    {
+      "path": "audits/rph_5p_science_y5_pedagogical_review_032_051_20261128.json",
+      "blob": "e5b262f769dd6f62698b2b93082da93b8f4b9196",
+      "count": 20
+    },
+    {
+      "path": "audits/rph_5p_science_y5_pedagogical_review_052_083_20261128.json",
+      "blob": "7d0e9e102058a6f4ec3c4f54aab4259d0f3c0c7b",
+      "count": 32
+    },
+    {
+      "path": "audits/rph_5p_science_y5_pedagogical_review_084_116_20261128.json",
+      "blob": "e38d531bb9a01e313e93a28c744fbb8ead66491a",
+      "count": 33
+    }
+  ],
+  "issues": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-004",
+      "title": "Pengukuran suhu dengan unit piawai",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "implementation_note": "Nyatakan gunakan air sejuk/suhu bilik sahaja, termometer digital; prob tidak menyentuh dasar bekas."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-012",
+      "title": "Pemboleh ubah dalam ujian buih",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "implementation_note": "Gunakan kad atau rajah larutan berlabel; tiada pencampuran bahan oleh murid dalam sesi perancangan ini."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-015",
+      "title": "Eksperimen tempoh buih bertahan",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "implementation_note": "Nyatakan keselamatan pada cetakan: larutan disediakan guru, alat/lokasi sama, jangan telan larutan atau terkena mata; bersihkan tumpahan dengan seliaan guru."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-017",
+      "title": "Kedudukan tulang dan sendi",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Aktiviti membanding gerakan pada anak patung bersendi; BBM belum menyebutnya. Tambah model bersendi atau rajah gerakan yang setara."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-019",
+      "title": "Pengukuhan padanan sendi dan pergerakan",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "implementation_note": "Gunakan rajah/gambar; tidak perlu demonstrasi fizikal atau pemeriksaan rakan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-020",
+      "title": "Kepentingan sistem rangka",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Teka silang disebut dalam pengembangan tetapi tidak disenaraikan dalam BBM; sediakan helaian ringkas atau kad teka silang."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-022",
+      "title": "Bahagian utama sistem peredaran darah",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Penerangan menyebut fungsi darah tanpa perincian; guru perlu nyatakan pengangkutan oksigen/nutrien dan bahan buangan berpandukan carta sumber."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-032",
+      "title": "Maksud kemandirian spesies",
+      "status": "CONTENT_CORRECTION_REQUIRED",
+      "implementation_note": "Frasa penyu dan burung menjaga telur atau anak boleh mengelirukan. Bezakan penyu bertelur/menimbus telur daripada contoh burung menjaga telur atau anak; kekalkan kad sumber."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-034",
+      "title": "Cara haiwan menghadapi cuaca melampau",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "Kekalkan dua contoh asal; tambah contoh ciri fizikal daripada buku teks yang disahkan sebelum kelulusan skop penuh. Jangan mereka contoh sebagai sumber asal."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-052",
+      "title": "Ciri perlindungan tumbuhan",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Kad kulit keras dan dua foto tambahan perlu tersedia; gambar sahaja, tidak menyentuh duri/getah."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-053",
+      "title": "Pengukuhan ciri pertahanan tumbuhan",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "implementation_note": "Bulu halus tidak semestinya merengsakan; kekalkan perkataan tertentu, gunakan gambar sahaja."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-056",
+      "title": "Cara pencaran biji benih dan buah",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "BBM perlu mempunyai lapan gambar seperti aktiviti, termasuk contoh mekanisme letupan; gunakan gambar/rakaman sahaja."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-058",
+      "title": "Meramal cara pencaran",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Berat tidak dapat diketahui tepat hanya melalui gambar; nyatakan ciri berat pada kad, bukan anggaran daripada rupa."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-064",
+      "title": "Pengukuhan membetulkan rajah litar",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Dua cabang ialah contoh khusus rajah dua mentol, bukan takrif semua litar selari."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-065",
+      "title": "Perbandingan kecerahan dua jenis litar",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Pastikan bilangan mentol dan sel sama, sumber setara serta mentol sejenis; jangan jamin kecerahan tanpa dapatan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-068",
+      "title": "Kesan suis pada nyalaan mentol",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "Aktiviti menerangkan suis utama/cabang selari tetapi kurang nyata bagi litar bersiri. Pastikan kedua-dua susunan diperhatikan dan jadual merekod kedua-duanya."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-070",
+      "title": "Pengukuhan menerangkan keputusan ujian suis",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Nyatakan khusus rajah selari dua cabang dengan suis utama pada laluan bersama."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-072",
+      "title": "Kesan salah pengendalian peralatan elektrik",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "implementation_note": "Frasa hentikan penggunaan perlu bermaksud menjauhi alat dan memaklumkan orang dewasa; murid jangan cuba menyentuh palam atau alat rosak."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-077",
+      "title": "Teknik menyukat suhu",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Nyatakan aras mata untuk skala analog bukan termometer digital; tentukan tiga bacaan sebenar atau kad bacaan secara jelas."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-078",
+      "title": "Perubahan suhu ais hingga air mendidih",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Guru sahaja mengendalikan pemanas/air mendidih; rekod nilai sebenar dan jelaskan takat air tulen sekitar 0°C dan 100°C pada tekanan atmosfera biasa, bukan memaksa data."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-085",
+      "title": "Bahan yang boleh berkarat",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Aktiviti memerlukan kad kayu dan gambar hasil pengaratan yang tidak dinyatakan dengan jelas dalam BBM; tambah kedua-duanya."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-086",
+      "title": "Faktor yang menyebabkan pengaratan",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Nyatakan keadaan tiga set dan faktor yang dikawal berdasarkan protokol asal; rekod awal berasingan daripada hasil set rujukan. Guru sahaja mengendalikan bekas tertutup."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-087",
+      "title": "Pengukuhan tafsiran ujian pengaratan",
+      "status": "PRINT_SAFETY_NOTE_REQUIRED",
+      "implementation_note": "Kekalkan nota keselamatan pada cetakan: guru sahaja kendali set bertutup; jangan buka bekas. Label foto rujukan sebagai bukti rujukan, bukan hasil kelas."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-088",
+      "title": "Cara mencegah pengaratan",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Sediakan kad keempat-empat kaedah yang disebut, bukan demonstrasi cat/minyak berbahaya."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-091",
+      "title": "Tiga keadaan jirim",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Kad gas perlu mewakili udara atau wap air tidak kelihatan, bukan gambar kabus/stim putih sebagai gas."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-093",
+      "title": "Pengukuhan pengelasan objek baharu",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Nyatakan kabus mengandungi titisan air halus dalam udara, bukan keseluruhan kabus sebagai bahan cecair tulen."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-094",
+      "title": "Sifat pepejal, cecair dan gas",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "Beg tertutup tunggal tidak cukup untuk membuktikan sifat isi padu gas yang mengisi ruang; tambah model visual atau pemerhatian selamat yang relevan dan nyatakan batas bukti. Jangan gunakan beg berhampiran muka."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-095",
+      "title": "Tiga keadaan air",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Gunakan bekas sejuk yang kering di luar pada awal aktiviti; jelaskan wap air tidak dilihat secara langsung dan titisan bukan kebocoran."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-102",
+      "title": "Cahaya Bulan yang dipantulkan",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Model sumber cahaya perlu dinyatakan, gunakan sumber tiruan selamat dan jangan lihat Matahari secara langsung."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-103",
+      "title": "Putaran dan peredaran Bulan",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "implementation_note": "Penerangan arah belum eksplisit; tambah arah dilihat dari utara, bezakan tempoh sekitar 27.3 hari daripada kitar fasa sekitar 29.5 hari berdasarkan nota sumber."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-105",
+      "title": "Urutan fasa Bulan dan takwim Qamari",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "implementation_note": "Untuk satu kitar lengkap, susun kesemua fasa pada kad yang disahkan termasuk bahagian membesar/mengecil dan fasa gelap; tarikh Qamari anggaran, bukan tarikh pasti."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-113",
+      "title": "Kepentingan gabungan mesin ringkas",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "implementation_note": "Model pembuka tin disebut, BBM perlu menyatakan model kadbod pembuka tin atau rajah yang sepadan."
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-116",
+      "title": "Pengukuhan lakaran fungsi alat baharu",
+      "status": "CONTENT_CORRECTION_REQUIRED",
+      "implementation_note": "Pilihan penyepit tidak semestinya mempunyai baji; gunakan gunting tertutup sebagai contoh utama, penyepit hanya untuk perbandingan tuas."
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}
