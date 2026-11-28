@@ -1,0 +1,31 @@
+{
+  "status": "PINNED_SOURCE_WORD_AND_NATIVE_PDF_TECHNICAL_PASS",
+  "tested_commit": "2abbd8ce90a41e479317dfbb9fcbdfc36d05213e",
+  "native_source_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+  "workflow_run": 46097994813,
+  "source_job": 140833710111,
+  "years": [
+    {
+      "year": 5,
+      "count": 116,
+      "source_issues": 0,
+      "word_pdf_job": 140833710300,
+      "native_pdf_job": 140833710358,
+      "word_pdf_passed": 116,
+      "native_pdf_passed": 116
+    },
+    {
+      "year": 6,
+      "count": 89,
+      "source_issues": 0,
+      "word_pdf_job": 140833710269,
+      "native_pdf_job": 140833710276,
+      "word_pdf_passed": 89,
+      "native_pdf_passed": 89
+    }
+  ],
+  "display_only_substitutions_verified": true,
+  "academic_approved": false,
+  "authenticated_web_download_verified": false,
+  "release": false
+}
