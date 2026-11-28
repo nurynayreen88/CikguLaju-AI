@@ -1,0 +1,1416 @@
+{
+  "status": "DRAFT_V60_SNAPSHOT_SOURCE_FIELDS_ALIGNED",
+  "year": 3,
+  "total": 39,
+  "source_pack_blob": "6de8c2dc0a9c4a7f4afe44758cd8430887d37057",
+  "prior_batch_blob": "19ede2986ba6f87962c8d9ae53d6759e98bb74be",
+  "source_integrity": "Source blob pinned; decompressed size and Adler32 validated. Per-lesson SHA values preserved as reported by source, not independently recalculated.",
+  "scope": "New draft phases for snapshot Lessons 001–039; exact source SK/SP, objective, BBM, references, PBD and closure preserved. Source evaluation text included directly in evaluation; 55 minutes for phases plus original 5-minute closure.",
+  "limitations": "Source edition/live catalogue and duration not verified. BA pages referenced by snapshot but not independently inspected. Academic review, Word/PDF and authenticated delivery remain pending. No production changes.",
+  "records": [
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 1,
+      "source_v60_markdown_sha256_reported": "8f57c2d0b7b2c2c79b054ec03c795f4e53bdebfaf1aa66a18c3adb398ec2e643",
+      "source_title": "1.1 Nilai nombor",
+      "source_sk": "1.1 Nilai nombor",
+      "source_sp": "1.1.1 — Menamakan nombor hingga 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menamakan nombor hingga 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Carta nilai tempat dan kad empat digit. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 1–2 (topik “Kenal dan Tulis Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal dan Tulis Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 1–2; guru memilih item berpandukan SP 1.1.1 dan menyemak jawapan. Empat nombor hingga 10 000 dibaca serta disebut dengan betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk kad 6 205 tanpa sebutan; murid cuba membaca.",
+        "exploration": "Pasangan susun kad ribu, ratus, puluh dan sa untuk membina nombor yang guru tunjuk.",
+        "explanation": "Guru model bacaan 6 205 dan fungsi sifar pada tempat puluh.",
+        "elaboration": "Murid baca 4 080, 9 307 dan 10 000 kepada rakan; rakan semak.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal dan Tulis Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 1–2; guru memilih item berpandukan SP 1.1.1 dan menyemak jawapan. Empat nombor hingga 10 000 dibaca serta disebut dengan betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan carta ribu hingga sa.",
+        "pengayaan": "Bina kad nombor mengandungi dua sifar untuk rakan sebut."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 2,
+      "source_v60_markdown_sha256_reported": "03ae7198c7f56636cf89be36820b040feac3a5ff9b2794cc5e26207de48c09d9",
+      "source_title": "1.1 Nilai nombor",
+      "source_sk": "1.1 Nilai nombor",
+      "source_sp": "1.1.2 — Menentukan nilai nombor hingga 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menentukan nilai nombor hingga 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Blok nilai tempat ribu–ratus dan kad digit. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 3 (topik “Teroka Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Teroka Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 3; guru memilih item berpandukan SP 1.1.2 dan menyemak jawapan. Empat model nombor hingga 10 000 dipadankan dengan digit dan nilai tempat, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk model 3 ribu, 5 ratus dan 2 sa.",
+        "exploration": "Pasangan padankan blok nilai tempat dengan kad angka.",
+        "explanation": "Guru model membina 3 502 dan menjelaskan nilai setiap digit.",
+        "elaboration": "Murid wakilkan 4 070 dan 9 315 menggunakan kad dan blok; tukar peranan.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Teroka Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 3; guru memilih item berpandukan SP 1.1.2 dan menyemak jawapan. Empat model nombor hingga 10 000 dipadankan dengan digit dan nilai tempat, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan lajur berwarna untuk setiap tempat.",
+        "pengayaan": "Bina dua model dengan digit sama tetapi nilai berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 3,
+      "source_v60_markdown_sha256_reported": "a250281fba9cff50d3bd6d0ee8982e11732c579c86f8033e80734c2d4c429f01",
+      "source_title": "1.2 Menulis nombor",
+      "source_sk": "1.2 Menulis nombor",
+      "source_sp": "1.2.1 — Menulis nombor dalam angka dan perkataan",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menulis nombor dalam angka dan perkataan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad angka empat digit dan kad perkataan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 2 (topik “Kenal dan Tulis Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal dan Tulis Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 2; guru memilih item berpandukan SP 1.2.1 dan menyemak jawapan. Empat padanan angka/ perkataan nombor hingga 10 000, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk kad perkataan dan angka yang bercampur.",
+        "exploration": "Pasangan padankan nombor dengan sebutannya sebelum menulis.",
+        "explanation": "Guru model 5 016 sebagai lima ribu enam belas dan cara menulis sifar dalam angka.",
+        "elaboration": "Murid tukar 7 024 kepada perkataan serta tiga ribu seratus sembilan kepada angka; cipta dua kad baharu.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal dan Tulis Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 2; guru memilih item berpandukan SP 1.2.1 dan menyemak jawapan. Empat padanan angka/ perkataan nombor hingga 10 000, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Pisahkan perkataan ribu dan ratus dahulu.",
+        "pengayaan": "Dikte nombor empat digit yang mempunyai sifar di tengah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 4,
+      "source_v60_markdown_sha256_reported": "3bd65f224d2f7e92882baf5febea5ac3dee2681923a2c11f98ac43e40b1c2807",
+      "source_title": "1.3 Rangkaian nombor",
+      "source_sk": "1.3 Rangkaian nombor",
+      "source_sp": "1.3.1 — Membilang satu-satu hingga sepuluh-sepuluh, seratus-seratus dan seribu-seribu secara tertib menaik dan menurun",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat membilang satu-satu hingga sepuluh-sepuluh, seratus-seratus dan seribu-seribu secara tertib menaik dan menurun dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Jalur garis nombor dan kad sela bilangan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 7–8 (topik “Susun dan Bilang Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Susun dan Bilang Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 7–8; guru memilih item berpandukan SP 1.3.1 dan menyemak jawapan. Empat siri mengikut sela 1, 10, 100 atau 1000 disebut dengan betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar 3 200,3 300 dan 3 400; murid ramal sambungan.",
+        "exploration": "Murid bergerak pada garis nombor mengikut kad sela 1,10,100,1000.",
+        "explanation": "Guru model membilang menaik dan menurun dengan sela tetap.",
+        "elaboration": "Pasangan membilang dari 6 050 menaik sepuluh dan 9 000 menurun seribu.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Susun dan Bilang Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 7–8; guru memilih item berpandukan SP 1.3.1 dan menyemak jawapan. Empat siri mengikut sela 1, 10, 100 atau 1000 disebut dengan betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tulis sela pada setiap lompatan.",
+        "pengayaan": "Bilang melintasi sempadan ribu."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 5,
+      "source_v60_markdown_sha256_reported": "0660254f63d40eff25a7f034c9231c30812b7f4b6312f1e7a945fb7aa93c0802",
+      "source_title": "1.3 Rangkaian nombor",
+      "source_sk": "1.3 Rangkaian nombor",
+      "source_sp": "1.3.2 — Melengkapkan sebarang rangkaian nombor secara tertib menaik dan menurun",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat melengkapkan sebarang rangkaian nombor secara tertib menaik dan menurun dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Lembaran siri dan kad pola. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 8 (topik “Susun dan Bilang Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Susun dan Bilang Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 8; guru memilih item berpandukan SP 1.3.2 dan menyemak jawapan. Empat siri menaik atau menurun dilengkapkan berdasarkan sela yang diberikan, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 8 900,8 800,□,8 600.",
+        "exploration": "Pasangan susun jalur nombor dengan ruang kosong pada awal, tengah dan akhir.",
+        "explanation": "Guru model mendapatkan nombor hilang menggunakan arah dan sela tetap.",
+        "elaboration": "Murid lengkapkan 4 000,5 000,□,7 000 dan 2 410,2 420,□,2 440.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Susun dan Bilang Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 8; guru memilih item berpandukan SP 1.3.2 dan menyemak jawapan. Empat siri menaik atau menurun dilengkapkan berdasarkan sela yang diberikan, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan anak panah dan sela bertulis.",
+        "pengayaan": "Bina rangkaian dengan dua ruang kosong."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 6,
+      "source_v60_markdown_sha256_reported": "d7532ca069594439b02ce0ea82f690b00ffff09260e3b3d6858f7b5683904cfc",
+      "source_title": "1.4 Nilai tempat",
+      "source_sk": "1.4 Nilai tempat",
+      "source_sp": "1.4.1 — Menyatakan nilai tempat dan nilai digit bagi sebarang nombor",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyatakan nilai tempat dan nilai digit bagi sebarang nombor dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Carta ribu–ratus–puluh–sa. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 4 (topik “Teroka Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Teroka Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 4; guru memilih item berpandukan SP 1.4.1 dan menyemak jawapan. Empat item nilai digit/tempat nombor empat digit, termasuk sifar, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar 4 709 dan 4 790; murid banding digit 9.",
+        "exploration": "Pasangan bina kedua-dua nilai pada carta dan padankan kad nilai digit.",
+        "explanation": "Guru bezakan tempat puluh dengan nilai digit seperti 90.",
+        "elaboration": "Murid nyatakan tempat dan nilai digit terpilih dalam 2 530 dan 8 046, termasuk sifar.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Teroka Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 4; guru memilih item berpandukan SP 1.4.1 dan menyemak jawapan. Empat item nilai digit/tempat nombor empat digit, termasuk sifar, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Warnakan digit sasaran pada carta.",
+        "pengayaan": "Bina dua nombor dengan digit sama pada tempat berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 7,
+      "source_v60_markdown_sha256_reported": "ed702320340ce243d864291b1da879a5f2fa7cb8bc787988f6146171cc2c0dc1",
+      "source_title": "1.4 Nilai tempat",
+      "source_sk": "1.4 Nilai tempat",
+      "source_sp": "1.4.2 — Mencerakin sebarang nombor mengikut nilai tempat dan nilai digit",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mencerakin sebarang nombor mengikut nilai tempat dan nilai digit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad cerakinan dan carta nilai tempat. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 5 (topik “Teroka Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Teroka Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 5; guru memilih item berpandukan SP 1.4.2 dan menyemak jawapan. Empat cerakinan nombor empat digit dilakukan dengan betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 5 060 dalam blok nilai tempat.",
+        "exploration": "Pasangan asingkan blok ribu, ratus, puluh dan sa.",
+        "explanation": "Guru model cerakinan 5 060 = 5 000 + 60 tanpa mengubah nilai.",
+        "elaboration": "Murid cerakinkan 3 205,8 070 dan 6 421 serta bina semula nombor daripada cerakinan.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Teroka Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 5; guru memilih item berpandukan SP 1.4.2 dan menyemak jawapan. Empat cerakinan nombor empat digit dilakukan dengan betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan kad nilai tempat secara fizikal.",
+        "pengayaan": "Cipta dua bentuk cerakinan yang setara."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 8,
+      "source_v60_markdown_sha256_reported": "4c9fd15fdfff096e46c5f8c6e38048e35743bd21825ada0f06b3173357b91593",
+      "source_title": "1.5 Menganggar",
+      "source_sk": "1.5 Menganggar",
+      "source_sp": "1.5.1 — Memberi anggaran kuantiti yang munasabah dengan menggunakan perkataan ‘lebih kurang’, ‘kurang daripada’ dan ‘lebih daripada’ berdasarkan set rujukan.",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat memberi anggaran kuantiti yang munasabah dengan menggunakan perkataan ‘lebih kurang’, ‘kurang daripada’ dan ‘lebih daripada’ berdasarkan set rujukan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Bekas berisi objek, set rujukan dan kad istilah anggaran. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 9 (topik “Anggar Lebih atau Kurang”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Anggar Lebih atau Kurang” dalam Buku Aktiviti Matematik Tahun 3, hlm. 9; guru memilih item berpandukan SP 1.5.1 dan menyemak jawapan. Empat anggaran dengan rujukan jelas dan istilah kuantiti yang sesuai, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk satu bekas 20 token dan satu bekas hampir dua kali penuh.",
+        "exploration": "Pasangan banding beberapa set tanpa mengira dahulu dan beri anggaran.",
+        "explanation": "Guru jelaskan penggunaan rujukan serta istilah lebih kurang, kurang daripada dan lebih daripada.",
+        "elaboration": "Murid anggar empat set berdasarkan bekas rujukan, kemudian semak kiraan sebenar.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Anggar Lebih atau Kurang” dalam Buku Aktiviti Matematik Tahun 3, hlm. 9; guru memilih item berpandukan SP 1.5.1 dan menyemak jawapan. Empat anggaran dengan rujukan jelas dan istilah kuantiti yang sesuai, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Mulakan dengan set rujukan sama saiz.",
+        "pengayaan": "Banding anggaran menggunakan dua rujukan berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 9,
+      "source_v60_markdown_sha256_reported": "9127cef9a4174ab85177025b93c4f2bc2e89c257983623de621edc7548131074",
+      "source_title": "1.6 Membundarkan nombor",
+      "source_sk": "1.6 Membundarkan nombor",
+      "source_sp": "1.6.1 — Membundarkan nombor bulat hingga ribu terdekat",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat membundarkan nombor bulat hingga ribu terdekat dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Garis nombor ribu dan kad nombor. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 10–11 (topik “Bundar Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Bundar Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 10–11; guru memilih item berpandukan SP 1.6.1 dan menyemak jawapan. Empat pembundaran hingga ribu terdekat dengan alasan titik tengah, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 8 420 pada garis antara 8 000 dan 9 000.",
+        "exploration": "Pasangan tandakan titik tengah 8 500 dan kedudukan nombor.",
+        "explanation": "Guru model pembundaran kepada ribu terdekat, termasuk kes tepat di tengah.",
+        "elaboration": "Murid bundarkan 3 480,6 550 dan 9 590 kepada ribu serta jelaskan satu pilihan.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Bundar Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 10–11; guru memilih item berpandukan SP 1.6.1 dan menyemak jawapan. Empat pembundaran hingga ribu terdekat dengan alasan titik tengah, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tandakan dua ribu bersebelahan.",
+        "pengayaan": "Cari nombor yang membundar kepada 10 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 10,
+      "source_v60_markdown_sha256_reported": "52674c98c289f419fb8c24d87ba70410cce9f709dce60ccbde1b92cce1744d80",
+      "source_title": "1.7 Pola nombor",
+      "source_sk": "1.7 Pola nombor",
+      "source_sp": "1.7.1 — Mengenal pasti pola bagi siri nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus-seratus dan seribu-seribu.",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti pola bagi siri nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus-seratus dan seribu-seribu dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad pola dan garis nombor. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 12 (topik “Pola Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Pola Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 12; guru memilih item berpandukan SP 1.7.1 dan menyemak jawapan. Empat aturan pola satu, sepuluh, seratus atau seribu dikenal dan diterangkan, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar 8 900,7 900,6 900 tanpa aturan.",
+        "exploration": "Pasangan kira beza antara kad nombor berjiran.",
+        "explanation": "Guru model mengenal sela dan arah pola.",
+        "elaboration": "Murid kenal aturan 125,135,145 serta 4 800,4 700,4 600 dan bina satu pola sendiri.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Pola Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 12; guru memilih item berpandukan SP 1.7.1 dan menyemak jawapan. Empat aturan pola satu, sepuluh, seratus atau seribu dikenal dan diterangkan, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tulis beza antara nombor berjiran.",
+        "pengayaan": "Kesan satu nombor yang merosakkan pola."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 11,
+      "source_v60_markdown_sha256_reported": "32b088c523159f06e42a7015b6aa7620e067a19e572f05e5641a7e278aac331a",
+      "source_title": "1.7 Pola nombor",
+      "source_sk": "1.7 Pola nombor",
+      "source_sp": "1.7.2 — Melengkapkan pelbagai pola nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus-seratus dan seribu-seribu.",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat melengkapkan pelbagai pola nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus-seratus dan seribu-seribu dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Jalur nombor dan kad selang. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 12 (topik “Pola Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Pola Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 12; guru memilih item berpandukan SP 1.7.2 dan menyemak jawapan. Empat rangkaian naik/turun dilengkapkan dengan alasan sela, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 8 000,7 000,□,5 000.",
+        "exploration": "Pasangan susun kad nombor bagi pola menaik dan menurun.",
+        "explanation": "Guru model mencari ruang kosong dengan menyemak kedua-dua jiran.",
+        "elaboration": "Murid lengkapkan 3 420,3 430,□,3 450 dan □,6 800,6 600,6 400.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Pola Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 12; guru memilih item berpandukan SP 1.7.2 dan menyemak jawapan. Empat rangkaian naik/turun dilengkapkan dengan alasan sela, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan jalur bernombor dan anak panah.",
+        "pengayaan": "Bina pola dengan ruang kosong pada permulaan dan akhir."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 12,
+      "source_v60_markdown_sha256_reported": "f86571480d6c7683be3f44234e18ca0c7adbe2016168a02c0928a80ebbd4a57d",
+      "source_title": "1.8 Penyelesaian masalah",
+      "source_sk": "1.8 Penyelesaian masalah",
+      "source_sp": "1.8.1 — Menyelesaikan masalah melibatkan nombor bulat hingga 10 000 dalam situasi harian",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan masalah melibatkan nombor bulat hingga 10 000 dalam situasi harian dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad cerita, carta diberi–ditanya dan kalkulator semakan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 13–14 (topik “Selesaikan Masalah”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Selesaikan Masalah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 13–14; guru memilih item berpandukan SP 1.8.1 dan menyemak jawapan. Empat masalah nombor bulat hingga 10 000 lengkap langkah dan unit, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk cerita stok 6 000 buku dan pengeluaran 2 450.",
+        "exploration": "Pasangan gariskan kuantiti diberi, kehendak dan pilih rajah bar.",
+        "explanation": "Guru model penolakan 6 000 − 2 450 dan semak kewajaran baki.",
+        "elaboration": "Murid selesaikan cerita 4 250 buku ditambah 1 350 serta stok 8 000 dikurangkan 2 780.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Selesaikan Masalah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 13–14; guru memilih item berpandukan SP 1.8.1 dan menyemak jawapan. Empat masalah nombor bulat hingga 10 000 lengkap langkah dan unit, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan rajah jumlah dan bahagian.",
+        "pengayaan": "Cipta cerita dengan operasi berbeza dalam lingkungan 10 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 13,
+      "source_v60_markdown_sha256_reported": "be12f30c4242820b850e7ac1a480ba4718d70a7abd944a8312fb79fa8e1db8cb",
+      "source_title": "1.8 Penyelesaian masalah",
+      "source_sk": "1.8 Penyelesaian masalah",
+      "source_sp": "1.8.1 — Menyelesaikan masalah melibatkan nombor bulat hingga 10 000 dalam situasi harian",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan masalah melibatkan nombor bulat hingga 10 000 dalam situasi harian dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad cerita, carta diberi–ditanya dan kalkulator semakan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 13–14 (topik “Selesaikan Masalah”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Selesaikan Masalah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 13–14; guru memilih item berpandukan SP 1.8.1 dan menyemak jawapan. Empat masalah nombor bulat hingga 10 000 lengkap langkah dan unit, 3/4 tepat. Murid membetulkan satu kesilapan atau menjelaskan satu semakan. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri dua kad cerita dengan maklumat yang hampir sama tetapi soalan berlainan.",
+        "exploration": "Pasangan padankan soalan dengan operasi yang sesuai dan jelaskan alasan.",
+        "explanation": "Guru model semakan unit serta operasi songsang pada contoh stok.",
+        "elaboration": "Murid selesaikan masalah 7 600 − 3 250 dan 2 450 + 3 125, kemudian semak hasil rakan.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Selesaikan Masalah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 13–14; guru memilih item berpandukan SP 1.8.1 dan menyemak jawapan. Empat masalah nombor bulat hingga 10 000 lengkap langkah dan unit, 3/4 tepat. Murid membetulkan satu kesilapan atau menjelaskan satu semakan. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gariskan kehendak sebelum memilih operasi.",
+        "pengayaan": "Bina cerita dan satu jawapan salah untuk dikesan rakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 14,
+      "source_v60_markdown_sha256_reported": "4fc6364979ed1f79217e6fb4e19b58372daa7bc4f9275c0957d9471a844021cc",
+      "source_title": "2.1 Tambah dalam lingkungan 10 000",
+      "source_sk": "2.1 Tambah dalam lingkungan 10 000",
+      "source_sp": "2.1.1 — Menyelesaikan ayat matematik tambah melibatkan dua nombor hasil tambah dalam lingkungan 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik tambah melibatkan dua nombor hasil tambah dalam lingkungan 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Carta nilai tempat dan kad tambah. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 17–18 (topik “Tambah”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 17–18; guru memilih item berpandukan SP 2.1.1 dan menyemak jawapan. Empat tambah dua nombor hasil tidak melebihi 10 000, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar dua rekod kutipan kelas.",
+        "exploration": "Pasangan susun nombor pada carta nilai tempat dan tukar sepuluh unit apabila perlu.",
+        "explanation": "Guru model 4 708 + 1 195 dengan pengumpulan semula.",
+        "elaboration": "Murid kira 3 685 + 2 247 dan 5 906 + 1 378; semak anggaran.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 17–18; guru memilih item berpandukan SP 2.1.1 dan menyemak jawapan. Empat tambah dua nombor hasil tidak melebihi 10 000, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Selaraskan digit sa dahulu.",
+        "pengayaan": "Cari dua nombor yang jumlahnya tepat 10 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 15,
+      "source_v60_markdown_sha256_reported": "962dc30a487c96962113765ce0869f04dcc73c68c31d70e86182f06ca02f359f",
+      "source_title": "2.1 Tambah dalam lingkungan 10 000",
+      "source_sk": "2.1 Tambah dalam lingkungan 10 000",
+      "source_sp": "2.1.2 — Menyelesaikan ayat matematik tambah melibatkan tiga nombor, hasil tambah dalam lingkungan 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik tambah melibatkan tiga nombor, hasil tambah dalam lingkungan 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad tiga bilangan dan carta lajur tambah. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 22–23 (topik “Tambah Tiga Nombor”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah Tiga Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 22–23; guru memilih item berpandukan SP 2.1.2 dan menyemak jawapan. Empat tambah tiga nombor dalam lingkungan 10 000, 3/4 betul. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk tiga kotak dengan kuantiti berbeza.",
+        "exploration": "Pasangan pilih dua jumlah dahulu dan bina lajur untuk tiga sebutan.",
+        "explanation": "Guru model penambahan tiga nombor serta pengumpulan semula.",
+        "elaboration": "Murid kira 2 135 + 1 780 + 605 dan 4 210 + 980 + 1 560.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah Tiga Nombor” dalam Buku Aktiviti Matematik Tahun 3, hlm. 22–23; guru memilih item berpandukan SP 2.1.2 dan menyemak jawapan. Empat tambah tiga nombor dalam lingkungan 10 000, 3/4 betul. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tambah dua sebutan dahulu.",
+        "pengayaan": "Banding hasil apabila susunan tiga sebutan ditukar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 16,
+      "source_v60_markdown_sha256_reported": "5d41d0c32e3291b2deaf4df9f102ee739a2820ab7434c078a12b4663285a46e3",
+      "source_title": "2.2 Tolak dalam lingkungan 10 000",
+      "source_sk": "2.2 Tolak dalam lingkungan 10 000",
+      "source_sp": "2.2.1 — Menyelesaikan ayat matematik tolak melibatkan dua nombor dalam lingkungan 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik tolak melibatkan dua nombor dalam lingkungan 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad nilai tempat dan papan operasi tolak. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 24–25 (topik “Tolak”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tolak” dalam Buku Aktiviti Matematik Tahun 3, hlm. 24–25; guru memilih item berpandukan SP 2.2.1 dan menyemak jawapan. Empat tolak dua nombor dalam 10 000, 3/4 betul. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk stok 6 305 dan pengeluaran 2 117.",
+        "exploration": "Pasangan guna blok nilai tempat untuk menunjukkan pertukaran merentasi sifar.",
+        "explanation": "Guru model penolakan dan semak melalui tambah semula.",
+        "elaboration": "Murid kira 7 004 − 2 687 dan 9 120 − 3 456; semak satu.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tolak” dalam Buku Aktiviti Matematik Tahun 3, hlm. 24–25; guru memilih item berpandukan SP 2.2.1 dan menyemak jawapan. Empat tolak dua nombor dalam 10 000, 3/4 betul. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tukar satu ribu kepada sepuluh ratus secara berperingkat.",
+        "pengayaan": "Cari penolak jika baki dan nombor asal diberi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 17,
+      "source_v60_markdown_sha256_reported": "63bc2233b7194c7e7b9e20a7a5fd083b2e9f3681f4e2f2e5b850b9e1a62bd564",
+      "source_title": "2.2 Tolak dalam lingkungan 10 000",
+      "source_sk": "2.2 Tolak dalam lingkungan 10 000",
+      "source_sp": "2.2.2 — Menyelesaikan ayat matematik tolak melibatkan dua nombor dari satu nombor dalam lingkungan 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik tolak melibatkan dua nombor dari satu nombor dalam lingkungan 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Papan nilai tempat dan kad tiga bilangan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 29–30 (topik “Tolak Berturut-turut”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tolak Berturut-turut” dalam Buku Aktiviti Matematik Tahun 3, hlm. 29–30; guru memilih item berpandukan SP 2.2.2 dan menyemak jawapan. Empat tolak dua nombor daripada satu nombor hingga 10 000, 3/4 betul. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri stok 7 800 dan dua transaksi keluar.",
+        "exploration": "Pasangan susun rajah bar dengan baki perantaraan.",
+        "explanation": "Guru model penolakan dua nombor daripada satu nombor secara berturutan.",
+        "elaboration": "Murid kira 8 600 − 2 850 − 725 dan 9 200 − 3 400 − 1 650.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tolak Berturut-turut” dalam Buku Aktiviti Matematik Tahun 3, hlm. 29–30; guru memilih item berpandukan SP 2.2.2 dan menyemak jawapan. Empat tolak dua nombor daripada satu nombor hingga 10 000, 3/4 betul. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Catat baki pertama sebelum menolak lagi.",
+        "pengayaan": "Semak dengan menambah kedua-dua pengeluaran dan baki."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 18,
+      "source_v60_markdown_sha256_reported": "d41df0c2c773633d8ae6f3a248676e7e30a83dd248ccd4da688ad01df17365ec",
+      "source_title": "2.3 Darab dalam lingkungan 10 000",
+      "source_sk": "2.3 Darab dalam lingkungan 10 000",
+      "source_sp": "2.3.1 — Menyelesaikan ayat matematik darab bagi sebarang nombor hingga empat digit",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik darab bagi sebarang nombor hingga empat digit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad sifir dan carta darab lajur. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 39 (topik “Darab”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Darab” dalam Buku Aktiviti Matematik Tahun 3, hlm. 39; guru memilih item berpandukan SP 2.3.1 dan menyemak jawapan. Empat darab nombor hingga empat digit dengan hasil wajar, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar lima kotak dengan 406 objek sekotak.",
+        "exploration": "Pasangan cerakinkan 406 kepada ratus dan sa untuk darab.",
+        "explanation": "Guru model 406 × 5 serta pengumpulan semula.",
+        "elaboration": "Murid kira 308 × 6 dan 1 204 × 7; semak dengan anggaran.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Darab” dalam Buku Aktiviti Matematik Tahun 3, hlm. 39; guru memilih item berpandukan SP 2.3.1 dan menyemak jawapan. Empat darab nombor hingga empat digit dengan hasil wajar, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan grid hasil darab separa.",
+        "pengayaan": "Cipta soalan darab satu digit dengan hasil hampir 9 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 19,
+      "source_v60_markdown_sha256_reported": "584a7e64978d5a3a5a93b3490c5dc7d62362d1bb4d27e592870e0010cfc38417",
+      "source_title": "2.3 Darab dalam lingkungan 10 000",
+      "source_sk": "2.3 Darab dalam lingkungan 10 000",
+      "source_sp": "2.3.1 — Menyelesaikan ayat matematik darab bagi sebarang nombor hingga empat digit",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik darab bagi sebarang nombor hingga empat digit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad sifir dan carta darab lajur. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 40 (topik “Darab Lagi”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Darab Lagi” dalam Buku Aktiviti Matematik Tahun 3, hlm. 40; guru memilih item berpandukan SP 2.3.1 dan menyemak jawapan. Empat darab nombor hingga empat digit dengan hasil wajar, 3/4 tepat. Murid membetulkan satu kesilapan atau menjelaskan satu semakan. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk empat kotak dengan 2 103 objek sekotak.",
+        "exploration": "Pasangan banding darab bentuk lazim dan cerakinan.",
+        "explanation": "Guru model hasil 2 103 × 4 dan cara mengesan kesalahan nilai tempat.",
+        "elaboration": "Murid kira 2 025 × 3 dan 1 406 × 5; bertukar semakan.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Darab Lagi” dalam Buku Aktiviti Matematik Tahun 3, hlm. 40; guru memilih item berpandukan SP 2.3.1 dan menyemak jawapan. Empat darab nombor hingga empat digit dengan hasil wajar, 3/4 tepat. Murid membetulkan satu kesilapan atau menjelaskan satu semakan. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Warnakan digit yang mengalami pengumpulan semula.",
+        "pengayaan": "Terangkan dua cara mengira hasil yang sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 20,
+      "source_v60_markdown_sha256_reported": "f39587cb937ca08aea14aa8afda57db4f2ff0f2ae4f654922571651c7e5e88bd",
+      "source_title": "2.4 Bahagi dalam lingkungan 10 000",
+      "source_sk": "2.4 Bahagi dalam lingkungan 10 000",
+      "source_sp": "2.4.1 — Menyelesaikan ayat matematik bahagi bagi sebarang nombor dalam lingkungan 10 000 dengan nombor satu digit, 10, 100 dan 1000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik bahagi bagi sebarang nombor dalam lingkungan 10 000 dengan nombor satu digit, 10, 100 dan 1000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad bahagi, jadual nilai tempat dan token kumpulan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 41–42 (topik “Bahagi”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Bahagi” dalam Buku Aktiviti Matematik Tahun 3, hlm. 41–42; guru memilih item berpandukan SP 2.4.1 dan menyemak jawapan. Empat bahagi nombor hingga 10 000 dengan satu digit, 10, 100 atau 1000, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 8 000 objek hendak diagih kepada 10 kumpulan.",
+        "exploration": "Pasangan padankan ayat bahagi dengan carta nilai tempat.",
+        "explanation": "Guru model bahagi satu digit, 10,100 dan 1000 serta semakan darab.",
+        "elaboration": "Murid kira 6 300 ÷ 7, 4 800 ÷ 10, 7 200 ÷ 100 dan 9 000 ÷ 1 000.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Bahagi” dalam Buku Aktiviti Matematik Tahun 3, hlm. 41–42; guru memilih item berpandukan SP 2.4.1 dan menyemak jawapan. Empat bahagi nombor hingga 10 000 dengan satu digit, 10, 100 atau 1000, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan jadual gandaan pembahagi.",
+        "pengayaan": "Cipta empat pembahagian dengan hasil yang sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 21,
+      "source_v60_markdown_sha256_reported": "522b65424931afdc57e4c0b62d422995deae2436d47716d0c867bbf6aefbfc57",
+      "source_title": "2.5 Operasi bergabung tambah dan tolak",
+      "source_sk": "2.5 Operasi bergabung tambah dan tolak",
+      "source_sp": "2.5.1 — Menyelesaikan ayat matematik operasi bergabung tambah dan tolak dalam lingkungan 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan ayat matematik operasi bergabung tambah dan tolak dalam lingkungan 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad operasi dua langkah dan papan nilai tempat. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 31–32 (topik “Tambah dan Tolak”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah dan Tolak” dalam Buku Aktiviti Matematik Tahun 3, hlm. 31–32; guru memilih item berpandukan SP 2.5.1 dan menyemak jawapan. Empat operasi bergabung tambah dan tolak sehingga 10 000, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar stok 3 600, tambahan 900 dan pengeluaran 1 250.",
+        "exploration": "Pasangan susun kad transaksi mengikut cerita.",
+        "explanation": "Guru model tambah-tolak dari kiri ke kanan dengan baki perantaraan.",
+        "elaboration": "Murid kira 4 200 + 650 − 1 180 dan 8 500 − 2 400 + 750.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah dan Tolak” dalam Buku Aktiviti Matematik Tahun 3, hlm. 31–32; guru memilih item berpandukan SP 2.5.1 dan menyemak jawapan. Empat operasi bergabung tambah dan tolak sehingga 10 000, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Bulatkan operasi pertama.",
+        "pengayaan": "Bina cerita dua langkah dengan hasil 5 000."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 22,
+      "source_v60_markdown_sha256_reported": "b785d14df761afebf5d474059165f41dae41c22f27a7f50027d9eabfee7c65c5",
+      "source_title": "2.6 Penggunaan anu",
+      "source_sk": "2.6 Penggunaan anu",
+      "source_sp": "2.6.1 — Mengenal pasti anu yang melibatkan operasi asas dalam ayat matematik",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti anu yang melibatkan operasi asas dalam ayat matematik dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad petak anu dan jadual operasi songsang. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 38 (topik “Kenal Anu”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Anu” dalam Buku Aktiviti Matematik Tahun 3, hlm. 38; guru memilih item berpandukan SP 2.6.1 dan menyemak jawapan. Empat ayat matematik dengan satu anu dan semakan songsang yang betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 7 × □ = 56 dan □ − 240 = 130.",
+        "exploration": "Pasangan padankan anu dengan model kumpulan atau rajah bar.",
+        "explanation": "Guru model mencari anu melalui operasi songsang dan penggantian.",
+        "elaboration": "Murid cari anu dalam 8 × a = 72, b − 350 = 480, 125 + c = 600 dan 96 ÷ d = 12.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Anu” dalam Buku Aktiviti Matematik Tahun 3, hlm. 38; guru memilih item berpandukan SP 2.6.1 dan menyemak jawapan. Empat ayat matematik dengan satu anu dan semakan songsang yang betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Label kuantiti diketahui dan tidak diketahui.",
+        "pengayaan": "Bina persamaan dengan anu di kedudukan berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 23,
+      "source_v60_markdown_sha256_reported": "31135ef620b76e8c24aee1b0ea32eb14af7f225b918d73cf45784b3246373ddf",
+      "source_title": "2.6 Penggunaan anu",
+      "source_sk": "2.6 Penggunaan anu",
+      "source_sp": "2.6.2 — Mewakilkan situasi harian melibatkan operasi asas dan satu anu kepada ayat matematik",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mewakilkan situasi harian melibatkan operasi asas dan satu anu kepada ayat matematik dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad cerita, kad petak anu dan carta diberi–ditanya. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 50 (topik “Kenal Anu Lagi”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Anu Lagi” dalam Buku Aktiviti Matematik Tahun 3, hlm. 50; guru memilih item berpandukan SP 2.6.2 dan menyemak jawapan. Empat cerita harian diwakili ayat matematik dengan satu anu dan operasi betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk enam pek sama banyak berisi 48 pensel.",
+        "exploration": "Pasangan bina rajah kumpulan dan label isi satu pek sebagai x.",
+        "explanation": "Guru model ayat 6 × x = 48 yang sepadan dengan cerita.",
+        "elaboration": "Murid wakilkan cerita lima kotak berisi 75 buku dan stok n ditambah 38 menjadi 120 dengan ayat beranu.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Anu Lagi” dalam Buku Aktiviti Matematik Tahun 3, hlm. 50; guru memilih item berpandukan SP 2.6.2 dan menyemak jawapan. Empat cerita harian diwakili ayat matematik dengan satu anu dan operasi betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gariskan perkara yang tidak diketahui.",
+        "pengayaan": "Cipta cerita untuk persamaan 84 ÷ n = 7."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 24,
+      "source_v60_markdown_sha256_reported": "60c2080c371f1bdb7c42c091f19f5857a8ad44e86d0a1fb923a7f2cf81450a0f",
+      "source_title": "2.7 Penyelesaian masalah",
+      "source_sk": "2.7 Penyelesaian masalah",
+      "source_sp": "2.7.1 — Mereka cerita berdasarkan ayat matematik melibatkan dua nombor bagi operasi asas dalam lingkungan 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mereka cerita berdasarkan ayat matematik melibatkan dua nombor bagi operasi asas dalam lingkungan 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad ayat dan rangka cerita. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 33–34 (topik “Reka Cerita”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Reka Cerita” dalam Buku Aktiviti Matematik Tahun 3, hlm. 33–34; guru memilih item berpandukan SP 2.7.1 dan menyemak jawapan. Empat cerita untuk ayat matematik operasi asas mempunyai watak, kuantiti, soalan, jawapan betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar 2 400 ÷ 6 = 400 tanpa konteks.",
+        "exploration": "Pasangan pilih kad situasi agihan, pembelian dan kutipan yang sepadan dengan operasi.",
+        "explanation": "Guru model cerita dengan watak, kuantiti, soalan dan jawapan yang konsisten.",
+        "elaboration": "Murid reka cerita 180 × 3 = 540 dan 1 250 + 650 = 1 900; rakan semak empat unsur.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Reka Cerita” dalam Buku Aktiviti Matematik Tahun 3, hlm. 33–34; guru memilih item berpandukan SP 2.7.1 dan menyemak jawapan. Empat cerita untuk ayat matematik operasi asas mempunyai watak, kuantiti, soalan, jawapan betul, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan rangka siapa, kuantiti, soalan dan jawapan.",
+        "pengayaan": "Reka dua cerita berlainan bagi ayat yang sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 25,
+      "source_v60_markdown_sha256_reported": "d30d110e71c8073f7f026ebb31480737112d05bdf0ba6ad67a355bb4410c7251",
+      "source_title": "2.7 Penyelesaian masalah",
+      "source_sk": "2.7 Penyelesaian masalah",
+      "source_sp": "2.7.2 — Mereka cerita berdasarkan ayat matematik   melibatkan operasi bergabung tambah dan tolak   dalam lingkungan 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mereka cerita berdasarkan ayat matematik melibatkan operasi bergabung tambah dan tolak dalam lingkungan 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad operasi bergabung dan lembaran menulis cerita. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 33–34 (topik “Reka Cerita”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Reka Cerita” dalam Buku Aktiviti Matematik Tahun 3, hlm. 33–34; guru memilih item berpandukan SP 2.7.2 dan menyemak jawapan. Dua cerita dua langkah perlu menyatakan angka, kejadian dan jawapan konsisten, sekurang-kurangnya 3/4 kriteria. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar 2 500 + 350 − 900 = 1 950.",
+        "exploration": "Pasangan susun kad kejadian mula, tambah dan tolak.",
+        "explanation": "Guru model satu cerita stok yang mengikuti turutan operasi dan unit.",
+        "elaboration": "Murid reka cerita bagi 4 000 − 1 200 + 350 dan 1 800 + 600 − 450.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Reka Cerita” dalam Buku Aktiviti Matematik Tahun 3, hlm. 33–34; guru memilih item berpandukan SP 2.7.2 dan menyemak jawapan. Dua cerita dua langkah perlu menyatakan angka, kejadian dan jawapan konsisten, sekurang-kurangnya 3/4 kriteria. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan rangka tiga kejadian.",
+        "pengayaan": "Reka cerita kedua menggunakan konteks selain stok."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 26,
+      "source_v60_markdown_sha256_reported": "416dd38f960025f0809407e31b39e1bbb0d229378e5255614f5df255f352f242",
+      "source_title": "2.7 Penyelesaian masalah",
+      "source_sk": "2.7 Penyelesaian masalah",
+      "source_sp": "2.7.2 — Mereka cerita berdasarkan ayat matematik   melibatkan operasi bergabung tambah dan tolak   dalam lingkungan 10 000",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mereka cerita berdasarkan ayat matematik melibatkan operasi bergabung tambah dan tolak dalam lingkungan 10 000 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad operasi bergabung dan lembaran menulis cerita. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 33–34 (topik “Reka Cerita”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Reka Cerita” dalam Buku Aktiviti Matematik Tahun 3, hlm. 33–34; guru memilih item berpandukan SP 2.7.2 dan menyemak jawapan. Dua cerita dua langkah perlu menyatakan angka, kejadian dan jawapan konsisten, sekurang-kurangnya 3/4 kriteria. Murid membetulkan satu kesilapan atau menjelaskan satu semakan. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri cerita dua langkah yang sengaja tidak menyebut pengeluaran kedua.",
+        "exploration": "Pasangan kesan maklumat yang hilang dan padankan ayat matematik.",
+        "explanation": "Guru model semakan keselarasan nombor, kejadian, soalan dan jawapan.",
+        "elaboration": "Murid reka dua cerita bagi 3 500 + 800 − 1 250 dan 6 200 − 900 + 400; bertukar semakan.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Reka Cerita” dalam Buku Aktiviti Matematik Tahun 3, hlm. 33–34; guru memilih item berpandukan SP 2.7.2 dan menyemak jawapan. Dua cerita dua langkah perlu menyatakan angka, kejadian dan jawapan konsisten, sekurang-kurangnya 3/4 kriteria. Murid membetulkan satu kesilapan atau menjelaskan satu semakan. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan jadual angka dan kejadian.",
+        "pengayaan": "Tukar satu kejadian dan kemas kini seluruh cerita."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 27,
+      "source_v60_markdown_sha256_reported": "2e1e12c5a933e3cb4821b07fd016296a62b42de8a2d357458edb306130acb9d5",
+      "source_title": "2.7 Penyelesaian masalah",
+      "source_sk": "2.7 Penyelesaian masalah",
+      "source_sp": "2.7.3 — Menyelesaikan masalah operasi asas dan   operasi bergabung tambah dan tolak dalam lingkungan 10 000 melibatkan situasi harian",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyelesaikan masalah operasi asas dan operasi bergabung tambah dan tolak dalam lingkungan 10 000 melibatkan situasi harian dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad cerita dan jadual langkah penyelesaian. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 35–37 (topik “Selesaikan Masalah”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Selesaikan Masalah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 35–37; guru memilih item berpandukan SP 2.7.3 dan menyemak jawapan. Empat masalah asas atau dua langkah hingga 10 000 lengkap strategi dan unit, 3/4 betul. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk cerita stok 6 400 dengan dua pengeluaran.",
+        "exploration": "Pasangan gariskan kehendak, bina rajah dan pilih operasi.",
+        "explanation": "Guru model penyelesaian dua langkah serta semakan melalui tambah.",
+        "elaboration": "Murid selesaikan masalah 8 400 − 1 650 − 750 serta 24 kotak × 125 buku; label unit.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Selesaikan Masalah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 35–37; guru memilih item berpandukan SP 2.7.3 dan menyemak jawapan. Empat masalah asas atau dua langkah hingga 10 000 lengkap strategi dan unit, 3/4 betul. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Pecahkan masalah kepada langkah kecil.",
+        "pengayaan": "Bina masalah dua langkah dengan maklumat yang tidak diperlukan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 28,
+      "source_v60_markdown_sha256_reported": "705e0f42819c67c282587c7bcdd93bc8b3548f34831580f6c7ff5398174f1566",
+      "source_title": "3.1 Pecahan",
+      "source_sk": "3.1 Pecahan",
+      "source_sp": "3.1.1 — Mengenal pasti pecahan wajar sebagai sebahagian daripada satu kumpulan",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti pecahan wajar sebagai sebahagian daripada satu kumpulan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Token kiraan, kad pecahan dan bekas kumpulan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 53–54 (topik “Pecahan Wajar”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Pecahan Wajar” dalam Buku Aktiviti Matematik Tahun 3, hlm. 53–54; guru memilih item berpandukan SP 3.1.1 dan menyemak jawapan. Empat tugasan pecahan sebagai bahagian daripada kumpulan, 3/4 model serta bilangan betul. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk sepuluh token dan kad 2/5.",
+        "exploration": "Pasangan bahagi token kepada lima kumpulan sama dan pilih dua.",
+        "explanation": "Guru model 2/5 daripada 10 = 4 dan peranan penyebut serta pengangka.",
+        "elaboration": "Murid model 3/4 daripada 12 dan 2/3 daripada 15.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Pecahan Wajar” dalam Buku Aktiviti Matematik Tahun 3, hlm. 53–54; guru memilih item berpandukan SP 3.1.1 dan menyemak jawapan. Empat tugasan pecahan sebagai bahagian daripada kumpulan, 3/4 model serta bilangan betul. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan token dengan kuantiti kecil.",
+        "pengayaan": "Cari dua kumpulan berbeza yang menghasilkan bahagian sebanyak enam."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 29,
+      "source_v60_markdown_sha256_reported": "fd1066f3c6e385daee96003ecc915b44228c53eac82288c723754b98fc500713",
+      "source_title": "3.1 Pecahan",
+      "source_sk": "3.1 Pecahan",
+      "source_sp": "3.1.2 — Menyatakan pecahan setara bagi pecahan wajar yang penyebutnya hingga 10",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyatakan pecahan setara bagi pecahan wajar yang penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Jalur pecahan dan kertas grid. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 55 (topik “Pecahan Setara”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Pecahan Setara” dalam Buku Aktiviti Matematik Tahun 3, hlm. 55; guru memilih item berpandukan SP 3.1.2 dan menyemak jawapan. Empat pasangan pecahan setara dengan penyebut tidak melebihi 10, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk jalur 1/3 dan 2/6.",
+        "exploration": "Pasangan lapiskan jalur sama panjang untuk mengenal bahagian setara.",
+        "explanation": "Guru model darab pengangka dan penyebut dengan nombor sama.",
+        "elaboration": "Murid cari pecahan setara bagi 1/2, 2/3 dan 2/5 dengan penyebut hingga 10.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Pecahan Setara” dalam Buku Aktiviti Matematik Tahun 3, hlm. 55; guru memilih item berpandukan SP 3.1.2 dan menyemak jawapan. Empat pasangan pecahan setara dengan penyebut tidak melebihi 10, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan jalur prabahagi.",
+        "pengayaan": "Jelaskan mengapa 1/3 tidak sama dengan 2/5."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 30,
+      "source_v60_markdown_sha256_reported": "7c3a1552fb35878053c8de48f88c5f19a8bf6213f69ad5ea6bc1ea3381ec95d3",
+      "source_title": "3.1 Pecahan",
+      "source_sk": "3.1 Pecahan",
+      "source_sp": "3.1.3 — Menukar pecahan wajar kepada bentuk termudah, penyebutnya hingga 10",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menukar pecahan wajar kepada bentuk termudah, penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Kad pecahan, jalur lipat dan papan faktor. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 56 (topik “Pecahan Bentuk Termudah”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Pecahan Bentuk Termudah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 56; guru memilih item berpandukan SP 3.1.3 dan menyemak jawapan. Empat pecahan wajar ditulis dalam bentuk termudah, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk jalur 6/9 dan 2/3 yang sama panjang.",
+        "exploration": "Pasangan kumpulkan bahagian dan cari faktor sepunya.",
+        "explanation": "Guru model mempermudah 6/9 kepada 2/3 dengan membahagi kedua-dua nombor dengan tiga.",
+        "elaboration": "Murid permudah 4/8, 6/10 dan 8/10; tunjuk satu model.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Pecahan Bentuk Termudah” dalam Buku Aktiviti Matematik Tahun 3, hlm. 56; guru memilih item berpandukan SP 3.1.3 dan menyemak jawapan. Empat pecahan wajar ditulis dalam bentuk termudah, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Mulakan dengan faktor dua.",
+        "pengayaan": "Semak sama ada pecahan 3/7 sudah termudah."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 31,
+      "source_v60_markdown_sha256_reported": "97e67bd486e7b631248d699e18584491863d59d5fd3eb7afb15ffdbd8ca73085",
+      "source_title": "3.1 Pecahan",
+      "source_sk": "3.1 Pecahan",
+      "source_sp": "3.1.4 — Menyatakan pecahan perseratus",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyatakan pecahan perseratus dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Grid 100 petak dan pensel warna. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 63 (topik “Kenal Pecahan Perseratus dan Perpuluhan”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Pecahan Perseratus dan Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 63; guru memilih item berpandukan SP 3.1.4 dan menyemak jawapan. Empat rajah atau nilai pecahan perseratus dipadankan dengan tepat, 3/4. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk grid 100 petak dengan 12 petak berlorek.",
+        "exploration": "Pasangan kira petak berlorek dan padankan dengan pecahan perseratus.",
+        "explanation": "Guru model 12/100 serta hubungan satu petak dengan 1/100.",
+        "elaboration": "Murid lorek 7/100,43/100 dan 82/100 pada grid berasingan.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Pecahan Perseratus dan Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 63; guru memilih item berpandukan SP 3.1.4 dan menyemak jawapan. Empat rajah atau nilai pecahan perseratus dipadankan dengan tepat, 3/4. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Kira baris penuh sepuluh petak dahulu.",
+        "pengayaan": "Bina dua susunan lorekan yang mewakili pecahan sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 32,
+      "source_v60_markdown_sha256_reported": "2481713c48aa4407006b1aba5ca9a6e8ee72646b9246ea8aa892106adc9c44ea",
+      "source_title": "3.1 Pecahan",
+      "source_sk": "3.1 Pecahan",
+      "source_sp": "3.1.5 — Menambah dua pecahan wajar berpenyebut sama atau pasangan penyebut 2 dengan 4/6/8/10, 3 dengan 6/9, 5 dengan 10, dan 4 dengan 8; hasil tambah ialah pecahan wajar.",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menambah dua pecahan wajar bagi penyebut yang sama dengan sekurang-kurangnya 3 daripada 4 jawapan yang tepat.",
+      "source_bbm_verbatim": "Jalur pecahan, kertas lipat dan kad pecahan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 59–60 (topik “Tambah Pecahan”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah Pecahan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 59–60; guru memilih item berpandukan SP 3.1.5 dan menyemak jawapan. Empat item tambah dua pecahan wajar dengan rajah; 3/4 tepat. Guru merekod murid yang memerlukan bimbingan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua jalur perlima dengan bahagian berlorek.",
+        "exploration": "Pasangan gabungkan bahagian berlorek yang tidak bertindih pada model sepenyebut.",
+        "explanation": "Guru model 2/5 + 1/5 = 3/5 dan jelaskan penyebut kekal.",
+        "elaboration": "Murid kira 1/6 + 3/6 dan 2/8 + 5/8; lakar satu.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah Pecahan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 59–60; guru memilih item berpandukan SP 3.1.5 dan menyemak jawapan. Empat item tambah dua pecahan wajar dengan rajah; 3/4 tepat. Guru merekod murid yang memerlukan bimbingan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan jalur sepenyebut.",
+        "pengayaan": "Bina dua pecahan yang jumlahnya 1."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 33,
+      "source_v60_markdown_sha256_reported": "a2b37f5b2e155803cda7ed8ea143db99e1fbf9fa891110e4b18d403b5a812358",
+      "source_title": "3.1 Pecahan",
+      "source_sk": "3.1 Pecahan",
+      "source_sp": "3.1.6 — Menolak dua pecahan wajar berpenyebut sama atau pasangan penyebut 2 dengan 4/6/8/10, 3 dengan 6/9, 5 dengan 10, dan 4 dengan 8.",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menolak dua pecahan wajar bagi penyebut yang sama dengan sekurang-kurangnya 3 daripada 4 jawapan yang tepat.",
+      "source_bbm_verbatim": "Jalur pecahan, kertas lipat dan kad penyebut. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 61–62 (topik “Tolak Pecahan”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tolak Pecahan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 61–62; guru memilih item berpandukan SP 3.1.6 dan menyemak jawapan. Empat item tolak dua pecahan wajar dengan rajah; 3/4 tepat. Guru merekod murid yang memerlukan bimbingan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk jalur 3/4 dan keluarkan 1/4.",
+        "exploration": "Pasangan model baki melalui jalur sepenyebut.",
+        "explanation": "Guru model 3/4 − 1/4 = 2/4 = 1/2.",
+        "elaboration": "Murid kira 5/6 − 2/6 dan 7/10 − 3/10; wakilkan satu.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tolak Pecahan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 61–62; guru memilih item berpandukan SP 3.1.6 dan menyemak jawapan. Empat item tolak dua pecahan wajar dengan rajah; 3/4 tepat. Guru merekod murid yang memerlukan bimbingan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Potong bahagian yang ditolak secara fizikal.",
+        "pengayaan": "Semak baki dengan tambah pecahan asal yang ditolak."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 34,
+      "source_v60_markdown_sha256_reported": "e2a6eaa05a9f6fa5642b4d64efb5cd2a4d0fc57f0bc7befa8a3f43a68fb85121",
+      "source_title": "3.1 Pecahan",
+      "source_sk": "3.1 Pecahan",
+      "source_sp": "3.1.7 — Mengenal pasti pecahan tak wajar dan nombor bercampur melibatkan penyebutnya hingga 10",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti pecahan tak wajar dan nombor bercampur melibatkan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Jalur pecahan dan kad jenis nombor. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 57–58 (topik “Pecahan Tak Wajar dan Nombor Bercampur”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Pecahan Tak Wajar dan Nombor Bercampur” dalam Buku Aktiviti Matematik Tahun 3, hlm. 57–58; guru memilih item berpandukan SP 3.1.7 dan menyemak jawapan. Empat contoh penyebut hingga 10 dikenal pasti jenis pecahannya, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua unit penuh dan satu pertiga.",
+        "exploration": "Pasangan asingkan model pecahan wajar, tak wajar dan nombor bercampur.",
+        "explanation": "Guru model pengecaman 7/5, 9/4 dan 2 1/3 mengikut jenis.",
+        "elaboration": "Murid kelaskan 8/3, 5/7, 1 2/5 dan 11/6; padankan satu rajah.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Pecahan Tak Wajar dan Nombor Bercampur” dalam Buku Aktiviti Matematik Tahun 3, hlm. 57–58; guru memilih item berpandukan SP 3.1.7 dan menyemak jawapan. Empat contoh penyebut hingga 10 dikenal pasti jenis pecahannya, 3/4 tepat. Guru merekod kemajuan individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Banding pengangka dengan penyebut.",
+        "pengayaan": "Bina contoh pecahan tak wajar yang bersamaan nombor bulat."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 35,
+      "source_v60_markdown_sha256_reported": "f505404c0177a8dc79f3d2c76ac228737d5797a7633fe9d59abe7373e33a4253",
+      "source_title": "3.2 Perpuluhan",
+      "source_sk": "3.2 Perpuluhan",
+      "source_sp": "3.2.1 — Menyatakan sifar perpuluhan sifar satu hingga sifar perpuluhan sembilan sembilan dalam angka dan perkataan",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menyatakan sifar perpuluhan sifar satu hingga sifar perpuluhan sembilan sembilan dalam angka dan perkataan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Grid 100 petak, kad digit dan kad perkataan perpuluhan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 63 (topik “Kenal Pecahan Perseratus dan Perpuluhan”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Pecahan Perseratus dan Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 63; guru memilih item berpandukan SP 3.2.1 dan menyemak jawapan. Empat nombor perpuluhan hingga dua tempat dinyatakan dalam angka dan perkataan (3/4). Guru merekod pencapaian individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk kad 0.04; murid sebut setiap digit selepas titik.",
+        "exploration": "Pasangan padankan kad angka dan perkataan bagi perpuluhan hingga dua tempat.",
+        "explanation": "Guru model sebut sifar perpuluhan sifar empat dan beza 0.4 dengan 0.04.",
+        "elaboration": "Murid baca 0.07,0.35,0.90 dan tulis sifar perpuluhan enam dua.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Pecahan Perseratus dan Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 63; guru memilih item berpandukan SP 3.2.1 dan menyemak jawapan. Empat nombor perpuluhan hingga dua tempat dinyatakan dalam angka dan perkataan (3/4). Guru merekod pencapaian individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan carta persepuluh dan perseratus.",
+        "pengayaan": "Dikte dua nilai hampir sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 36,
+      "source_v60_markdown_sha256_reported": "69a380993229ad0acb438e7a6106c79b0dd1313a010ae3dd89bc8de669c4e4b2",
+      "source_title": "3.2 Perpuluhan",
+      "source_sk": "3.2 Perpuluhan",
+      "source_sp": "3.2.2 — Mewakilkan perpuluhan dengan petak seratus dan sebaliknya",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat mewakilkan perpuluhan dengan petak seratus dan sebaliknya dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Grid 100 petak, pensel warna dan kad perpuluhan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 63–64 (topik “Kenal Pecahan Perseratus dan Perpuluhan”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Pecahan Perseratus dan Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 63–64; guru memilih item berpandukan SP 3.2.2 dan menyemak jawapan. Empat padanan petak seratus↔perpuluhan, sekurang-kurangnya 3 tepat. Guru merekod pencapaian individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk grid 100 petak dengan 23 berlorek.",
+        "exploration": "Pasangan padankan grid dengan perpuluhan dan bina model daripada kad.",
+        "explanation": "Guru model 23/100 = 0.23 dan 5/100 = 0.05.",
+        "elaboration": "Murid lorek 0.16,0.48 dan 0.71 serta baca satu grid tanpa label.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Kenal Pecahan Perseratus dan Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 63–64; guru memilih item berpandukan SP 3.2.2 dan menyemak jawapan. Empat padanan petak seratus↔perpuluhan, sekurang-kurangnya 3 tepat. Guru merekod pencapaian individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tandakan baris sepuluh petak dahulu.",
+        "pengayaan": "Bina dua model berbeza bagi 0.35."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 37,
+      "source_v60_markdown_sha256_reported": "7232adf01f6f6b583766403f2a3184d3a71554fa28f1f2c016232f51dfef2e4c",
+      "source_title": "3.2 Perpuluhan",
+      "source_sk": "3.2 Perpuluhan",
+      "source_sp": "3.2.3 — Membanding nilai dua perpuluhan melibatkan hingga dua tempat perpuluhan berpandukan petak seratus dan garis nombor",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat membanding nilai dua perpuluhan melibatkan hingga dua tempat perpuluhan berpandukan petak seratus dan garis nombor dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Grid 100 petak dan kad simbol perbandingan. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 65 (topik “Banding Perpuluhan”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Banding Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 65; guru memilih item berpandukan SP 3.2.3 dan menyemak jawapan. Empat pasangan perpuluhan dua tempat dibanding berdasarkan grid (3/4 tepat). Guru merekod pencapaian individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar dua grid bagi 0.3 dan 0.30.",
+        "exploration": "Pasangan banding lorekan dan nilai tempat.",
+        "explanation": "Guru model 0.3 = 0.30, kemudian banding persepuluh sebelum perseratus.",
+        "elaboration": "Murid banding 0.45 dan 0.54, 0.08 dan 0.10 serta 0.7 dan 0.70.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Banding Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 65; guru memilih item berpandukan SP 3.2.3 dan menyemak jawapan. Empat pasangan perpuluhan dua tempat dibanding berdasarkan grid (3/4 tepat). Guru merekod pencapaian individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Tulis kedua-dua nombor hingga dua tempat perpuluhan.",
+        "pengayaan": "Susun empat perpuluhan dari kecil ke besar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 38,
+      "source_v60_markdown_sha256_reported": "b15fb798569009783fd340f617f82360ab7a4ed1b7cc4896a7c284258ac8b571",
+      "source_title": "3.2 Perpuluhan",
+      "source_sk": "3.2 Perpuluhan",
+      "source_sp": "3.2.4 — Menambah dua perpuluhan melibatkan hingga dua tempat perpuluhan, hasil tambahnya sehingga sifar perpuluhan sembilan sembilan",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menambah dua perpuluhan melibatkan hingga dua tempat perpuluhan, hasil tambahnya sehingga sifar perpuluhan sembilan sembilan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Grid 100 petak, papan nilai tempat dan kad tambah. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 66 (topik “Tambah Perpuluhan”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 66; guru memilih item berpandukan SP 3.2.4 dan menyemak jawapan. Empat soalan tambah perpuluhan sehingga dua tempat dengan hasil tidak melebihi 1 (3/4). Guru merekod pencapaian individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk grid 0.27 dan 0.35.",
+        "exploration": "Pasangan gabung lorekan tanpa pertindihan dan kira jumlah.",
+        "explanation": "Guru model penjajaran titik perpuluhan serta pengumpulan semula perseratus.",
+        "elaboration": "Murid kira 0.38 + 0.24 dan 0.15 + 0.65; semak melalui grid.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tambah Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 66; guru memilih item berpandukan SP 3.2.4 dan menyemak jawapan. Empat soalan tambah perpuluhan sehingga dua tempat dengan hasil tidak melebihi 1 (3/4). Guru merekod pencapaian individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan grid seratus dan carta nilai tempat.",
+        "pengayaan": "Bina dua perpuluhan yang jumlahnya tepat 1."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 3,
+      "source_snapshot_lesson": 39,
+      "source_v60_markdown_sha256_reported": "5bb5f3b1941d6ca3c7ba99bed03c5fc965660c75dc07c5c31e791cc53dbe9a2f",
+      "source_title": "3.2 Perpuluhan",
+      "source_sk": "3.2 Perpuluhan",
+      "source_sp": "3.2.5 — Menolak dua perpuluhan melibatkan hingga dua tempat perpuluhan, dalam lingkungan sifar perpuluhan sembilan sembilan",
+      "source_objective_verbatim": "Pada akhir PdP, murid dapat menolak dua perpuluhan melibatkan hingga dua tempat perpuluhan, dalam lingkungan sifar perpuluhan sembilan sembilan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "source_bbm_verbatim": "Grid 100 petak, kad nombor dan jadual nilai tempat. Buku Aktiviti Matematik Tahun 3.",
+      "source_references_verbatim": "DSKP Matematik Tahun 3; Buku Teks Matematik Tahun 3 (unit/tajuk berkaitan). Buku Aktiviti Matematik Tahun 3, hlm. 67 (topik “Tolak Perpuluhan”; julat berdasarkan kandungan buku).",
+      "source_pbd_verbatim": "Murid menyelesaikan satu latihan terpilih bagi topik “Tolak Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 67; guru memilih item berpandukan SP 3.2.5 dan menyemak jawapan. Empat soalan tolak dua perpuluhan dalam 0 hingga 1, 3/4 tepat. Guru merekod pencapaian individu untuk tindakan susulan.",
+      "source_closure_verbatim": "Murid menerangkan satu strategi atau hasil pembelajaran; guru menyemak satu contoh akhir dan mencatat murid yang memerlukan bimbingan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk grid 0.76 dan keluarkan 0.24.",
+        "exploration": "Pasangan model penolakan perseratus dengan lorekan yang dipadam.",
+        "explanation": "Guru model penolakan sejajar titik dan pengumpulan semula jika perlu.",
+        "elaboration": "Murid kira 0.83 − 0.29 dan 0.65 − 0.17; semak melalui tambah.",
+        "evaluation": "Murid menyelesaikan satu latihan terpilih bagi topik “Tolak Perpuluhan” dalam Buku Aktiviti Matematik Tahun 3, hlm. 67; guru memilih item berpandukan SP 3.2.5 dan menyemak jawapan. Empat soalan tolak dua perpuluhan dalam 0 hingga 1, 3/4 tepat. Guru merekod pencapaian individu untuk tindakan susulan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        10
+      ],
+      "closure_minutes": 5,
+      "suggested_support": {
+        "pak21": "Perbincangan pasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan matematik.",
+        "pemulihan": "Gunakan grid seratus untuk pertukaran satu persepuluh.",
+        "pengayaan": "Bina dua ayat tolak dengan baki 0.25."
+      },
+      "ready": false
+    }
+  ]
+}
