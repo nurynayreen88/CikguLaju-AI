@@ -1,0 +1,333 @@
+{
+  "year": 5,
+  "status": "PROPOSED_ADDITIONS_NOT_SOURCE_FIELDS",
+  "sources": [
+    {
+      "path": "audits/rph_5p_science_y5_native_052_083_20261128.json",
+      "blob": "16855aeabf788060f358ca89f0c3cb4c01053371"
+    }
+  ],
+  "policy": "New pedagogical suggestions based on exact 5P draft activities, not original source fields or academic approval. No runtime integration or release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-052",
+      "title": "Ciri perlindungan tumbuhan",
+      "pak21": "Padanan kad kolaboratif",
+      "emk": "Kelestarian alam sekitar: perlindungan tumbuhan",
+      "pemulihan": "Padankan foto kaktus dan pokok getah dengan ciri perlindungan masing-masing.",
+      "pengayaan": "Terangkan dua ciri tumbuhan lain yang mengurangkan ancaman haiwan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-053",
+      "title": "Pengukuhan ciri pertahanan tumbuhan",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: struktur dan fungsi",
+      "pemulihan": "Beri dua gambar dengan label duri dan bulu halus untuk dipilih.",
+      "pengayaan": "Padankan ciri pertahanan dengan ancaman baharu serta beri alasan berdasarkan foto.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-054",
+      "title": "Penyesuaian tumbuhan terhadap iklim",
+      "pak21": "Perbincangan pasangan",
+      "emk": "Kelestarian alam sekitar: penyesuaian iklim",
+      "pemulihan": "Beri kad habitat kering dan bermusim serta pilihan ciri tumbuhan.",
+      "pengayaan": "Cadangkan ciri yang membantu tumbuhan menghadapi perubahan daripada lembap kepada kering.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-055",
+      "title": "Penerangan kemandirian tumbuhan",
+      "pak21": "Pembentangan galeri",
+      "emk": "Kreativiti dan inovasi: lakaran tumbuhan",
+      "pemulihan": "Beri lakaran separa lengkap dengan pilihan label ciri dan habitat.",
+      "pengayaan": "Bandingkan dua lakaran dan jelaskan perbezaan fungsi ciri perlindungan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-056",
+      "title": "Cara pencaran biji benih dan buah",
+      "pak21": "Pengelasan kolaboratif",
+      "emk": "Sains dan teknologi: pencaran biji benih",
+      "pemulihan": "Padankan empat kad contoh dengan empat kategori pencaran.",
+      "pengayaan": "Kelaskan empat contoh tambahan berdasarkan ciri buah atau biji benih.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-057",
+      "title": "Ciri biji benih dan cara pencaran",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: struktur biji benih",
+      "pemulihan": "Beri gambar biji bersayap dan buah bercangkuk bersama dua pilihan agen.",
+      "pengayaan": "Terangkan agen pencaran bagi foto buah baharu menggunakan bukti ciri.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-058",
+      "title": "Meramal cara pencaran",
+      "pak21": "Perbincangan berpasangan",
+      "emk": "Nilai murni: jujur terhadap bukti",
+      "pemulihan": "Gunakan dua kad berciri jelas dan rangka ayat ramalan.",
+      "pengayaan": "Nilai empat ramalan dan jelaskan mengapa satu ramalan perlu diubah.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-059",
+      "title": "Pengukuhan ramalan untuk biji benih baharu",
+      "pak21": "Padanan kad berpasangan",
+      "emk": "Bahasa: penerangan sebab pencaran",
+      "pemulihan": "Padankan gambar buah berkait atau biji bersayap dengan agen yang sesuai.",
+      "pengayaan": "Bandingkan dua gambar belum dinamakan dan pertahankan ramalan masing-masing.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-060",
+      "title": "Komunikasi pemerhatian pencaran",
+      "pak21": "Pembentangan lakaran",
+      "emk": "Kreativiti dan inovasi: komunikasi visual",
+      "pemulihan": "Lengkapkan satu lakaran dengan label ciri pencaran yang disediakan.",
+      "pengayaan": "Hasilkan dua lakaran sendiri dan terangkan hubungan ciri dengan agen.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-061",
+      "title": "Sumber tenaga elektrik",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: sumber tenaga",
+      "pemulihan": "Padankan gambar sel kering, panel suria dan penjana dengan kegunaannya.",
+      "pengayaan": "Pilih sumber elektrik bagi situasi tanpa grid dan jelaskan kesesuaiannya.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-062",
+      "title": "Susunan mentol bersiri dan selari",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: susunan litar",
+      "pemulihan": "Jejak satu laluan bersiri dan dua cabang selari pada rajah berwarna.",
+      "pengayaan": "Kelaskan rajah yang berbeza bentuk tetapi mempunyai sambungan setara.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-063",
+      "title": "Lakaran litar dengan simbol",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Sains dan teknologi: simbol litar",
+      "pemulihan": "Padankan empat simbol dengan komponen sebelum melengkapkan rajah.",
+      "pengayaan": "Lakar kedua-dua litar tanpa panduan dan semak laluan serta simbol.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-064",
+      "title": "Pengukuhan membetulkan rajah litar",
+      "pak21": "Penyelesaian masalah pasangan",
+      "emk": "Nilai murni: ketelitian",
+      "pemulihan": "Tandakan sambungan yang hilang pada satu rajah litar.",
+      "pengayaan": "Baiki dua rajah bersimbol yang salah serta jelaskan pembetulan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-065",
+      "title": "Perbandingan kecerahan dua jenis litar",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Nilai murni: kerjasama dan rekod jujur",
+      "pemulihan": "Beri jadual dua litar untuk merekod kecerahan yang diperhatikan.",
+      "pengayaan": "Bandingkan dapatan dengan ramalan dan nyatakan kemungkinan perbezaan kit.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-066",
+      "title": "Kesan bilangan mentol terhadap kecerahan",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Sains dan teknologi: ujian adil",
+      "pemulihan": "Beri jadual bilangan mentol dan kecerahan serta nyatakan faktor tetap.",
+      "pengayaan": "Terangkan mengapa jenis mentol dan bilangan sel mesti dikekalkan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-067",
+      "title": "Kesan bilangan sel kering terhadap kecerahan",
+      "pak21": "Inkuiri berkumpulan",
+      "emk": "Sains dan teknologi: kawalan pemboleh ubah",
+      "pemulihan": "Lengkapkan jadual satu dan dua sel daripada pemerhatian guru.",
+      "pengayaan": "Bandingkan kesan bilangan sel bagi dua susunan berdasarkan rekod tanpa menambah voltan kit.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-068",
+      "title": "Kesan suis pada nyalaan mentol",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: kawalan litar",
+      "pemulihan": "Padankan dua keadaan suis dengan gambar mentol menyala atau padam.",
+      "pengayaan": "Ramalkan nyalaan bagi rajah baharu dengan suis utama dan suis cabang.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-069",
+      "title": "Penerangan pemerhatian litar",
+      "pak21": "Pembentangan pasangan",
+      "emk": "Bahasa: penerangan pemerhatian",
+      "pemulihan": "Beri dua rajah litar separa lengkap dan pilihan simbol.",
+      "pengayaan": "Terangkan dua dapatan ujian dengan merujuk jadual pemerhatian sebenar.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-070",
+      "title": "Pengukuhan menerangkan keputusan ujian suis",
+      "pak21": "Think-Pair-Share",
+      "emk": "Sains dan teknologi: laluan arus",
+      "pemulihan": "Jejak cabang yang terputus pada rajah dengan anak panah panduan.",
+      "pengayaan": "Bandingkan kesan membuka suis utama dan suis cabang pada dua rajah.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-071",
+      "title": "Faktor penggunaan tenaga elektrik",
+      "pak21": "Perbincangan berasaskan data",
+      "emk": "Kelestarian alam sekitar: penjimatan tenaga",
+      "pemulihan": "Bandingkan dua peralatan sama kuasa dengan tempoh penggunaan berbeza.",
+      "pengayaan": "Bandingkan dua situasi apabila hanya kuasa atau tempoh berubah.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-072",
+      "title": "Kesan salah pengendalian peralatan elektrik",
+      "pak21": "Perbincangan kes kumpulan",
+      "emk": "Nilai murni: keselamatan diri",
+      "pemulihan": "Padankan gambar kecuaian elektrik dengan tindakan menjauhi bahaya dan memaklumkan orang dewasa.",
+      "pengayaan": "Huraikan tindakan selamat bagi dua senario bergambar yang berbeza tanpa demonstrasi bahaya.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-073",
+      "title": "Langkah keselamatan peralatan elektrik",
+      "pak21": "Pengelasan kad kolaboratif",
+      "emk": "Nilai murni: tanggungjawab keselamatan",
+      "pemulihan": "Asingkan kad amalan selamat dan berbahaya dengan bimbingan.",
+      "pengayaan": "Susun langkah menjauhi wayar rosak dan memaklumkan orang dewasa serta berikan sebab.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-074",
+      "title": "Komunikasi keselamatan dan penjimatan elektrik",
+      "pak21": "Pembentangan poster",
+      "emk": "Kelestarian alam sekitar: penggunaan elektrik berhemah",
+      "pemulihan": "Beri empat ikon amalan untuk dilabel sebagai penjimatan atau keselamatan.",
+      "pengayaan": "Reka poster empat amalan dan jelaskan manfaat atau alasan keselamatan setiap amalan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-075",
+      "title": "Maksud haba dan suhu",
+      "pak21": "Think-Pair-Share",
+      "emk": "Bahasa: istilah haba dan suhu",
+      "pemulihan": "Padankan istilah suhu dengan bacaan termometer dan haba dengan anak panah tenaga.",
+      "pengayaan": "Betulkan dua pernyataan yang menyamakan haba dengan suhu serta beri contoh.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-076",
+      "title": "Pengukuhan haba dan suhu dalam situasi harian",
+      "pak21": "Padanan kad pasangan",
+      "emk": "Sains dan teknologi: pemindahan haba",
+      "pemulihan": "Letakkan anak panah daripada cawan lebih panas kepada keadaan lebih sejuk.",
+      "pengayaan": "Label bacaan serta arah pemindahan haba pada dua situasi baharu.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-077",
+      "title": "Teknik menyukat suhu",
+      "pak21": "Pembelajaran koperatif",
+      "emk": "Sains dan teknologi: penggunaan termometer",
+      "pemulihan": "Bimbing bacaan pada aras mata menggunakan carta skala selamat.",
+      "pengayaan": "Betulkan tiga contoh ralat paralaks dan terangkan sebab teknik bacaan tepat.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-078",
+      "title": "Perubahan suhu ais hingga air mendidih",
+      "pak21": "Inkuiri berpandukan demonstrasi",
+      "emk": "Sains dan teknologi: graf suhu dan masa",
+      "pemulihan": "Beri paksi graf berlabel dan bimbing plot bacaan demonstrasi guru.",
+      "pengayaan": "Kenal pasti bahagian graf perubahan keadaan serta jelaskan maksud takat lebur dan didih berdasarkan rekod.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-079",
+      "title": "Penyejukan air ke suhu bilik",
+      "pak21": "Perbincangan berasaskan data",
+      "emk": "Sains dan teknologi: tafsiran trend",
+      "pemulihan": "Beri jadual suhu air suam dan suhu bilik dengan paksi graf disediakan.",
+      "pengayaan": "Tafsir rekod tambahan apabila suhu menghampiri suhu bilik dan jelaskan had ramalan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-080",
+      "title": "Kesan penerimaan dan kehilangan haba",
+      "pak21": "Inkuiri berpandukan demonstrasi",
+      "emk": "Sains dan teknologi: perubahan isipadu udara",
+      "pemulihan": "Padankan dua gambar belon dengan penerimaan atau kehilangan haba.",
+      "pengayaan": "Lakar dua keadaan dan jelaskan kaitan pengembangan atau pengecutan dengan pemindahan haba.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-081",
+      "title": "Pengukuhan pengembangan dan pengecutan",
+      "pak21": "Semakan rakan sebaya",
+      "emk": "Bahasa: istilah pengembangan dan pengecutan",
+      "pemulihan": "Label perubahan saiz belon pada dua gambar sebelum dan selepas.",
+      "pengayaan": "Terangkan arah perubahan isipadu pada rajah baharu dengan alasan.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-082",
+      "title": "Aplikasi pengembangan dan pengecutan",
+      "pak21": "Penyelesaian masalah kumpulan",
+      "emk": "Sains dan teknologi: aplikasi reka bentuk",
+      "pemulihan": "Tandakan ruang sambungan dalam foto jambatan dan landasan.",
+      "pengayaan": "Ramalkan kesan jika ruang pengembangan tiada dan jelaskan sebab bagi dua aplikasi.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-083",
+      "title": "Penerangan pemerhatian haba dan suhu",
+      "pak21": "Pembentangan graf",
+      "emk": "Bahasa: penerangan berasaskan data",
+      "pemulihan": "Beri graf separa lengkap dengan label suhu dan masa.",
+      "pengayaan": "Bandingkan graf pemanasan dan penyejukan serta huraikan dua pemerhatian berdasarkan data.",
+      "status": "CADANGAN_PELENGKAP_BERASASKAN_AKTIVITI",
+      "ready": false
+    }
+  ]
+}
