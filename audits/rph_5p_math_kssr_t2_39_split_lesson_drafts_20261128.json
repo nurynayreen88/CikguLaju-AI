@@ -1,0 +1,1376 @@
+{
+  "status": "DRAFT_V60_SNAPSHOT_SPLIT_LESSONS",
+  "year": 2,
+  "subject": "MATEMATIK SK KSSR (candidate; verify edition)",
+  "source_pack_blob": "00db06fe0cdb3f5d47815025eadee6f8633f6273",
+  "parent_audit_blob": "c0cf4610effcfeaed1687aac5408fdd67b54b657",
+  "total": 39,
+  "policy": "Ten grouped candidates expanded into 39 distinct v60 snapshot lessons. SP/objective verbatim; PBD and BA pages summarized from decoded source. 60 minutes is source suggestion. KSSR ordinary versus DPK3 and exact current RPT, SK, support, document rendering and download must be verified before release. BA references not independently inspected. No production changes.",
+  "records": [
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 4,
+      "parent_candidate": "T2-WORK-008",
+      "source_v60_markdown_sha256_reported": "324f98cb382c17c416fbd468032a0ab03cc773abc2c1b545db3fb653d5218a67",
+      "source_title": "1.3 Rangkaian nombor",
+      "source_sp": "1.3.1 — Membilang nombor",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membilang nombor dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Membilang mengikut sela",
+      "source_ba_pages": "16–18",
+      "source_pbd_summary": "Empat siri dalam lingkungan 1000 disebut mengikut sela; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk kad 140; murid ramal nombor selepasnya.",
+        "exploration": "Murid melompat pada garis nombor mengikut sela 1, 10 dan 100.",
+        "explanation": "Guru model cara mengekalkan sela ketika membilang menaik atau menurun.",
+        "elaboration": "Pasangan membilang 140 hingga 190 dan 300 hingga 800; tukar titik mula.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 16–18 yang dipilih guru mengikut SP. Empat siri dalam lingkungan 1000 disebut mengikut sela; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Garis nombor, kad sela; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tanda setiap lompatan.",
+        "pengayaan": "Bilang menurun dari 950 dengan sela 100."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 5,
+      "parent_candidate": "T2-WORK-008",
+      "source_v60_markdown_sha256_reported": "2ed6e4a7872efad9f56b8043c53343d6d5a37c49113693333a0400fe7db1fda0",
+      "source_title": "1.3 Rangkaian nombor",
+      "source_sp": "1.3.2 — Melengkapkan sebarang rangkaian nombor",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat melengkapkan sebarang rangkaian nombor dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Melengkapkan rangkaian nombor",
+      "source_ba_pages": "16–18",
+      "source_pbd_summary": "Empat siri dilengkapkan bersama aturan; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar 650,600,□,500; murid teka ruang kosong.",
+        "exploration": "Pasangan susun kad nombor untuk rangkaian menaik dan menurun.",
+        "explanation": "Guru tunjuk cara mendapatkan nilai kosong daripada beza antara nombor.",
+        "elaboration": "Murid lengkapkan 100,200,□,400 dan 720,710,□,690; jelaskan aturan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 16–18 yang dipilih guru mengikut SP. Empat siri dilengkapkan bersama aturan; 3/4 betul. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur siri, kad nombor; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan anak panah arah dan sela.",
+        "pengayaan": "Bina siri dengan dua ruang kosong."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 10,
+      "parent_candidate": "T2-WORK-011",
+      "source_v60_markdown_sha256_reported": "bcf772946d8ee143c1aef2c13f7d2c0666e12fe825b82973d65b1d4e590380eb",
+      "source_title": "1.7 Pola nombor",
+      "source_sp": "1.7.1 — Mengenal pasti pola bagi siri nombor yang diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti pola bagi siri nombor yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengenal aturan pola nombor",
+      "source_ba_pages": "24–25",
+      "source_pbd_summary": "Empat pola dan arah dikenal pasti; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 105,110,115; murid sebut perubahan.",
+        "exploration": "Pasangan gunakan token untuk menandakan beza antara nombor.",
+        "explanation": "Guru jelaskan sela tetap serta pola menaik dan menurun.",
+        "elaboration": "Murid kenal aturan bagi 800,700,600 dan 210,220,230.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 24–25 yang dipilih guru mengikut SP. Empat pola dan arah dikenal pasti; 3/4 betul. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad siri, token; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Kira beza dua nombor berjiran.",
+        "pengayaan": "Banding dua pola yang bermula dengan nombor sama."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 11,
+      "parent_candidate": "T2-WORK-011",
+      "source_v60_markdown_sha256_reported": "61791363bf1ae2691f3878f57e5f1780f4cb3c9fbbab5dbf400effce7f8a9dda",
+      "source_title": "1.7 Pola nombor",
+      "source_sp": "1.7.1 — Mengenal pasti pola bagi siri nombor yang diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti pola bagi siri nombor yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengenal pola daripada pelbagai siri",
+      "source_ba_pages": "24–25",
+      "source_pbd_summary": "Empat pola serta arah dikenal pasti; 3/4 tepat dan satu semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar dua siri bermula 40 dengan sela berlainan.",
+        "exploration": "Kumpulan kecil asingkan kad siri mengikut aturan +2,+5,-10.",
+        "explanation": "Guru semak aturan melalui setiap pasangan nombor berjiran.",
+        "elaboration": "Murid reka siri dalam lingkungan 1000; rakan kenal aturan dan arah.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 24–25 yang dipilih guru mengikut SP. Empat pola serta arah dikenal pasti; 3/4 tepat dan satu semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad siri, jalur nombor; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tanda sela pada setiap pasangan.",
+        "pengayaan": "Cari siri yang tidak mematuhi aturan tetap."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 12,
+      "parent_candidate": "T2-WORK-011",
+      "source_v60_markdown_sha256_reported": "d5958c71270c490f119401cefc88a0703d2d7e0ae7f34927e31165dc910938aa",
+      "source_title": "1.7 Pola nombor",
+      "source_sp": "1.7.2 — Melengkapkan pelbagai pola nombor yang mudah",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat melengkapkan pelbagai pola nombor yang mudah dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Melengkapkan pola mudah",
+      "source_ba_pages": "26",
+      "source_pbd_summary": "Empat pola dilengkapkan mengikut aturan; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 90,80,□,60; murid ramal.",
+        "exploration": "Murid susun jubin nombor mengisi ruang awal, tengah dan akhir.",
+        "explanation": "Guru model cara menggunakan sela tetap dalam kedua-dua arah.",
+        "elaboration": "Pasangan isi 120,140,□,180 dan □,55,50,45; semak.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 26 yang dipilih guru mengikut SP. Empat pola dilengkapkan mengikut aturan; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jubin nombor, jalur kosong; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Mulakan dengan ruang di hujung siri.",
+        "pengayaan": "Reka pola dengan dua ruang kosong."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 19,
+      "parent_candidate": "T2-WORK-025",
+      "source_v60_markdown_sha256_reported": "b67cd2068f067fca8f78dc51ef7d282274729a6e6a11c14fcb3adf92eb730f38",
+      "source_title": "2.3 Darab dalam lingkungan 1000",
+      "source_sp": "2.3.1 — Mendarab dalam lingkungan fakta asas",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab dalam lingkungan fakta asas dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Darab sebagai kumpulan sama banyak",
+      "source_ba_pages": "56–58",
+      "source_pbd_summary": "Empat fakta darab bersama model kumpulan; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk tiga pinggan dengan empat token setiap satu.",
+        "exploration": "Murid bina lima kumpulan enam token dan tulis tambah berulang.",
+        "explanation": "Guru hubungkan bilangan kumpulan dengan ayat 5 × 6 = 30.",
+        "elaboration": "Pasangan model 2 × 7 dan 4 × 5 menggunakan token.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 56–58 yang dipilih guru mengikut SP. Empat fakta darab bersama model kumpulan; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Token, pinggan kertas, kad sifir; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Bina dua kumpulan dahulu.",
+        "pengayaan": "Cipta model berlainan yang hasilnya 24."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 20,
+      "parent_candidate": "T2-WORK-025",
+      "source_v60_markdown_sha256_reported": "a8ea90d42b30f317bda8274425c61534ea81800445581e90435de63dcb4d773f",
+      "source_title": "2.3 Darab dalam lingkungan 1000",
+      "source_sp": "2.3.1 — Mendarab dalam lingkungan fakta asas",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab dalam lingkungan fakta asas dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Membina sifir darab",
+      "source_ba_pages": "59–67",
+      "source_pbd_summary": "Empat fakta asas dengan model; 3/4 tepat serta strategi semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk susunan empat baris tiga titik.",
+        "exploration": "Pasangan bina tatasusunan titik bagi 3 × 4 dan 6 × 4.",
+        "explanation": "Guru terangkan strategi tambah kumpulan dan semakan melalui susunan.",
+        "elaboration": "Murid lengkapkan jadual sifir terpilih dan terangkan satu hasil kepada rakan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 59–67 yang dipilih guru mengikut SP. Empat fakta asas dengan model; 3/4 tepat serta strategi semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad sifir, kertas grid; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan sifir dua sebagai sokongan.",
+        "pengayaan": "Bina dua tatasusunan berbeza yang hasilnya 18."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 21,
+      "parent_candidate": "T2-WORK-025",
+      "source_v60_markdown_sha256_reported": "e8c268c4dc877a4abfbf571f18ad89f1f8f471b33215d12c80db8ffda7e72cb9",
+      "source_title": "2.3 Darab dalam lingkungan 1000",
+      "source_sp": "2.3.2 — Mendarab nombor satu digit dengan 10",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab nombor satu digit dengan 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Darab satu digit dengan 10",
+      "source_ba_pages": "68–70",
+      "source_pbd_summary": "Empat ayat darab dengan 10 berserta model puluh; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru angkat tiga ikatan sepuluh lidi; murid teka jumlah.",
+        "exploration": "Murid bina 2,4,6 dan 9 ikatan puluh.",
+        "explanation": "Guru jelaskan setiap kumpulan bernilai sepuluh; 4 × 10 = 40.",
+        "elaboration": "Pasangan model 1 × 10, 5 × 10, 7 × 10 dan 8 × 10.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 68–70 yang dipilih guru mengikut SP. Empat ayat darab dengan 10 berserta model puluh; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Ikatan lidi, carta nilai tempat; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Kira ikatan satu demi satu.",
+        "pengayaan": "Bina dua cerita darab sepuluh."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 22,
+      "parent_candidate": "T2-WORK-025",
+      "source_v60_markdown_sha256_reported": "972580421c2c495ba74847a91ca0c79c68f4dd841b9734c50706b10d09f1681d",
+      "source_title": "2.3 Darab dalam lingkungan 1000",
+      "source_sp": "2.3.2 — Mendarab nombor satu digit dengan 10",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mendarab nombor satu digit dengan 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengukuhkan sifir sepuluh",
+      "source_ba_pages": "68–70",
+      "source_pbd_summary": "Empat ayat darab 10 dengan model; 3/4 tepat dan satu semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar kad 70; murid teka bilangan ikatan puluh.",
+        "exploration": "Murid padankan kad satu digit dengan hasil darab 10 pada carta.",
+        "explanation": "Guru model hubungan 8 puluh dengan 8 × 10 = 80.",
+        "elaboration": "Pasangan bermain padanan kad 3 × 10, 6 × 10, 9 × 10 dan hasil.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 68–70 yang dipilih guru mengikut SP. Empat ayat darab 10 dengan model; 3/4 tepat dan satu semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad operasi, ikatan lidi; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan carta puluh sebelum menulis ayat.",
+        "pengayaan": "Cari faktor satu digit yang menghasilkan 90."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 23,
+      "parent_candidate": "T2-WORK-029",
+      "source_v60_markdown_sha256_reported": "993bc4635b60d82c0cc412e145a07f158dc31804018a3f0eca6f1431f3693d5d",
+      "source_title": "2.4 Bahagi dalam lingkungan 1000",
+      "source_sp": "2.4.1 — Membahagi dalam lingkungan fakta asas",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membahagi dalam lingkungan fakta asas dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Bahagi kepada kumpulan sama banyak",
+      "source_ba_pages": "71–74",
+      "source_pbd_summary": "Empat pembahagian fakta asas dengan model; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri 12 token dan tiga cawan; murid ramal setiap cawan.",
+        "exploration": "Murid agih 18 butang kepada tiga kumpulan sama.",
+        "explanation": "Guru model 18 ÷ 3 = 6 serta semakan 3 × 6 = 18.",
+        "elaboration": "Pasangan agih 20 token kepada empat cawan dan 15 kepada lima.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 71–74 yang dipilih guru mengikut SP. Empat pembahagian fakta asas dengan model; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Butang, cawan, kad bahagi; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Agih satu token setiap cawan bergilir.",
+        "pengayaan": "Cipta masalah agihan yang jawapannya empat."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 24,
+      "parent_candidate": "T2-WORK-029",
+      "source_v60_markdown_sha256_reported": "9fb47cdaad6f7f14dff7386385d2f261c6e41f071e9ac0555437299c22ad4ece",
+      "source_title": "2.4 Bahagi dalam lingkungan 1000",
+      "source_sp": "2.4.1 — Membahagi dalam lingkungan fakta asas",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membahagi dalam lingkungan fakta asas dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Bina sifir bahagi",
+      "source_ba_pages": "75–79",
+      "source_pbd_summary": "Empat fakta bahagi dengan model; 3/4 tepat dan semakan darab.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 24 penutup botol tersusun enam setiap kumpulan.",
+        "exploration": "Pasangan bina kumpulan empat daripada 16 token dan enam daripada 30.",
+        "explanation": "Guru terangkan hubungan fakta darab dan bahagi.",
+        "elaboration": "Murid lengkapkan keluarga fakta 4 × 6 = 24 dan 3 × 7 = 21.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 75–79 yang dipilih guru mengikut SP. Empat fakta bahagi dengan model; 3/4 tepat dan semakan darab. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Penutup botol, kad fakta; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan susunan titik untuk mengira kumpulan.",
+        "pengayaan": "Tulis dua ayat bahagi daripada satu ayat darab."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 25,
+      "parent_candidate": "T2-WORK-029",
+      "source_v60_markdown_sha256_reported": "aea61ede1a3b802f3c7f260ecbdb79e3a53d9982728ebf7cd8e02bb9c69a5b6a",
+      "source_title": "2.4 Bahagi dalam lingkungan 1000",
+      "source_sp": "2.4.2 — Membahagi sebarang nombor dua digit dengan 10",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membahagi sebarang nombor dua digit dengan 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Bahagi nombor puluh dengan 10",
+      "source_ba_pages": "80",
+      "source_pbd_summary": "Empat nombor puluh dibahagi 10 dengan ayat songsang; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk 40 lidi dan tanya bilangan ikatan sepuluh.",
+        "exploration": "Murid kumpulkan 20,40,60 dan 90 lidi dalam ikatan puluh.",
+        "explanation": "Guru tunjuk 40 ÷ 10 = 4 dan 4 × 10 = 40.",
+        "elaboration": "Pasangan model 30 ÷ 10 dan 80 ÷ 10.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 80 yang dipilih guru mengikut SP. Empat nombor puluh dibahagi 10 dengan ayat songsang; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Ikatan lidi, kad nombor; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Bilang ikatan puluh dahulu.",
+        "pengayaan": "Cipta dua soalan bahagi sepuluh dengan hasil berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 26,
+      "parent_candidate": "T2-WORK-029",
+      "source_v60_markdown_sha256_reported": "747bd4ea707d6962091348fe6a665c4b79adfe4b685f7eb50d8b6429b98a6912",
+      "source_title": "2.4 Bahagi dalam lingkungan 1000",
+      "source_sp": "2.4.2 — Membahagi sebarang nombor dua digit dengan 10",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat membahagi sebarang nombor dua digit dengan 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Semakan bahagi dengan 10",
+      "source_ba_pages": "80",
+      "source_pbd_summary": "Empat bahagi puluh dengan 10; 3/4 betul serta strategi semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar kad 50 ÷ 10 dan dua jawapan calon.",
+        "exploration": "Pasangan pilih kad model ikatan yang sepadan dengan 70,90 dan 20.",
+        "explanation": "Guru model semakan 70 ÷ 10 = 7 menggunakan darab.",
+        "elaboration": "Murid padankan 10 ÷ 10, 50 ÷ 10 dan 80 ÷ 10 dengan ayat songsang.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 80 yang dipilih guru mengikut SP. Empat bahagi puluh dengan 10; 3/4 betul serta strategi semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad bahagi, carta puluh; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Padankan nombor kepada ikatan sebenar.",
+        "pengayaan": "Terangkan mengapa 90 ÷ 10 bukan 90."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 31,
+      "parent_candidate": "T2-WORK-033",
+      "source_v60_markdown_sha256_reported": "17292fb8eb7e31db02b3a1d44ca1ec19a7579a6e8be882bd6dca9a136f95d98a",
+      "source_title": "3.1 Pecahan wajar",
+      "source_sp": "3.1.1 — Mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengenal pecahan unit",
+      "source_ba_pages": "89–90",
+      "source_pbd_summary": "Empat gambar pecahan unit dikenal dan disebut; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru lipat bulatan kertas kepada dua bahagian sama.",
+        "exploration": "Murid lipat atau susun jalur 1/2,1/3,1/5 dan 1/8.",
+        "explanation": "Guru jelaskan pengangka satu dan bilangan bahagian sama sebagai penyebut.",
+        "elaboration": "Pasangan padankan model 1/4,1/6 dan 1/10 dengan sebutan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 89–90 yang dipilih guru mengikut SP. Empat gambar pecahan unit dikenal dan disebut; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Bulatan kertas, jalur pecahan; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Mulakan dengan dua bahagian sama.",
+        "pengayaan": "Pilih gambar yang bukan model pecahan unit."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 32,
+      "parent_candidate": "T2-WORK-033",
+      "source_v60_markdown_sha256_reported": "414b717cac5bd27f0cb8a553d7769aef3e80c5cef565b81b4983c2b89292f767",
+      "source_title": "3.1 Pecahan wajar",
+      "source_sp": "3.1.1 — Mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mengenal pasti dan menyebut pecahan wajar yang pengangkanya 1 dan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menyebut pecahan unit melalui pelbagai model",
+      "source_ba_pages": "89–90",
+      "source_pbd_summary": "Empat gambar pecahan unit dikenal dan disebut; 3/4 tepat, semak satu.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru papar dua rajah satu bahagian berlorek, satu tidak sama besar.",
+        "exploration": "Pasangan pilih model sah dan sebut 1/3,1/7,1/9.",
+        "explanation": "Guru tekankan keseluruhan mesti dibahagi sama besar.",
+        "elaboration": "Murid cipta kad pecahan unit dengan jalur prabahagi dan kuiz sebutan rakan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 89–90 yang dipilih guru mengikut SP. Empat gambar pecahan unit dikenal dan disebut; 3/4 tepat, semak satu. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jalur prabahagi, kad gambar; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Kira bahagian sama dengan penanda.",
+        "pengayaan": "Jelaskan kesilapan model bahagian tidak sama besar."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 33,
+      "parent_candidate": "T2-WORK-033",
+      "source_v60_markdown_sha256_reported": "92d34b234bbe0a185e115c8ea1a33b4279dcdc6b863c48cc7d33827da02a49a2",
+      "source_title": "3.1 Pecahan wajar",
+      "source_sp": "3.1.2 — Menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menamakan pecahan wajar",
+      "source_ba_pages": "90",
+      "source_pbd_summary": "Empat pecahan wajar disebut tepat; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk tiga daripada lima petak berlorek.",
+        "exploration": "Murid kira bahagian berlorek dan keseluruhan pada beberapa grid.",
+        "explanation": "Guru model 3/5 dan sebut tiga perlima; jelaskan pengangka dan penyebut.",
+        "elaboration": "Pasangan namakan 2/4,4/7 dan 7/10 daripada rajah.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 90 yang dipilih guru mengikut SP. Empat pecahan wajar disebut tepat; 3/4 betul. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid pecahan, kad pecahan; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tanda jumlah bahagian sebelum bahagian berlorek.",
+        "pengayaan": "Cipta rajah 8/9 untuk rakan namakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 34,
+      "parent_candidate": "T2-WORK-033",
+      "source_v60_markdown_sha256_reported": "37f28277a02266cf96bebc1c6f3807b2bd5c2f3194f5e80536f90ed19d280517",
+      "source_title": "3.1 Pecahan wajar",
+      "source_sp": "3.1.2 — Menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menamakan pecahan wajar yang pengangkanya hingga 9 dan penyebutnya hingga 10 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengecam pecahan wajar dalam rajah berbeza",
+      "source_ba_pages": "90",
+      "source_pbd_summary": "Empat pecahan wajar disebut tepat; 3/4 serta satu semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua jalur dengan tiga bahagian berlorek tetapi jumlah bahagian berlainan.",
+        "exploration": "Murid banding 3/5 dan 3/8 dengan mengira keseluruhan.",
+        "explanation": "Guru jelaskan mengapa pengangka sama tidak bermakna pecahan sama.",
+        "elaboration": "Pasangan padankan rajah 2/6,5/9 dan 6/10 dengan nama.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 90 yang dipilih guru mengikut SP. Empat pecahan wajar disebut tepat; 3/4 serta satu semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad rajah, grid pecahan; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Kira keseluruhan dengan jari.",
+        "pengayaan": "Bina dua pecahan berlainan dengan penyebut 7."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 35,
+      "parent_candidate": "T2-WORK-034",
+      "source_v60_markdown_sha256_reported": "3d5994ec2da6e676b25f3332ab8afb343ceb61363c62be93bdf78f4c97411a8f",
+      "source_title": "3.1 Pecahan wajar",
+      "source_sp": "3.1.3 — Mewakilkan gambar rajah mengikut pecahan yang diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mewakilkan gambar rajah mengikut pecahan yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mewakilkan pecahan pada grid",
+      "source_ba_pages": "92",
+      "source_pbd_summary": "Empat rajah mewakili pecahan diberi; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk kad 3/4 dan grid kosong.",
+        "exploration": "Murid pilih grid empat bahagian sama dan lorek tiga.",
+        "explanation": "Guru model cara penyebut menentukan bilangan bahagian dan pengangka menentukan lorekan.",
+        "elaboration": "Pasangan wakilkan 1/3,3/4 dan 5/8 pada grid.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 92 yang dipilih guru mengikut SP. Empat rajah mewakili pecahan diberi; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kertas grid, pensel warna; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Sediakan grid prabahagi.",
+        "pengayaan": "Wakilkan 2/5 dengan dua orientasi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 36,
+      "parent_candidate": "T2-WORK-034",
+      "source_v60_markdown_sha256_reported": "b1f27b6679a17018fad1ac98cb1d8ad559b561f3f72271c7776a53bf1c72fded",
+      "source_title": "3.1 Pecahan wajar",
+      "source_sp": "3.1.3 — Mewakilkan gambar rajah mengikut pecahan yang diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mewakilkan gambar rajah mengikut pecahan yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Membina rajah pecahan secara kendiri",
+      "source_ba_pages": "92",
+      "source_pbd_summary": "Empat rajah dilukis mengikut pecahan; 3/4 tepat dan semak satu.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri kad 4/6; murid pilih grid yang sesuai.",
+        "exploration": "Pasangan uji susunan lorekan berbeza bagi pecahan yang sama.",
+        "explanation": "Guru tunjuk bahawa kedudukan lorekan boleh berbeza jika bilangannya tepat.",
+        "elaboration": "Murid bina rajah 2/5,5/7 dan 8/10; rakan semak bahagian sama.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 92 yang dipilih guru mengikut SP. Empat rajah dilukis mengikut pecahan; 3/4 tepat dan semak satu. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid prabahagi, pensel warna; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan kad penyebut untuk memilih grid.",
+        "pengayaan": "Bina dua rajah 3/8 dengan susunan lorekan berlainan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 37,
+      "parent_candidate": "T2-WORK-034",
+      "source_v60_markdown_sha256_reported": "553594d563c6dd7d40a266ba1445231936f32b3a9247483ee05ba58eca832954",
+      "source_title": "3.1 Pecahan wajar",
+      "source_sp": "3.1.4 — Menulis pecahan wajar yang diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menulis pecahan wajar yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menulis pecahan wajar daripada gambar",
+      "source_ba_pages": "91",
+      "source_pbd_summary": "Empat gambar ditulis sebagai a/b; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua daripada tujuh petak berlorek.",
+        "exploration": "Murid kira lorekan dan jumlah petak pada kad.",
+        "explanation": "Guru model penulisan 2/7 dengan kedudukan pengangka dan penyebut.",
+        "elaboration": "Murid tulis pecahan bagi gambar 4/9,5/10 dan 3/8.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 91 yang dipilih guru mengikut SP. Empat gambar ditulis sebagai a/b; 3/4 betul. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad rajah, papan mini; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Isi dua kotak pengangka dan penyebut.",
+        "pengayaan": "Cipta gambar untuk rakan tulis pecahan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 38,
+      "parent_candidate": "T2-WORK-034",
+      "source_v60_markdown_sha256_reported": "27ec38a54d4f75655297453deea544ba4235389ba907ff39e234de1ce9bd7c94",
+      "source_title": "3.1 Pecahan wajar",
+      "source_sp": "3.1.4 — Menulis pecahan wajar yang diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menulis pecahan wajar yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menyemak notasi pecahan",
+      "source_ba_pages": "91",
+      "source_pbd_summary": "Empat gambar ditulis sebagai a/b; 3/4 tepat serta satu pembetulan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk gambar 4/7 bersama jawapan 7/4 dan 4/7.",
+        "exploration": "Pasangan kesan kesilapan pada kad notasi dan kira semula bahagian.",
+        "explanation": "Guru jelaskan pengangka mesti lebih kecil daripada penyebut bagi pecahan wajar.",
+        "elaboration": "Murid tulis 3/5,6/9 dan 1/10 daripada rajah tanpa label.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 91 yang dipilih guru mengikut SP. Empat gambar ditulis sebagai a/b; 3/4 tepat serta satu pembetulan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad rajah, kad jawapan; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan warna berbeza bagi pengangka dan penyebut.",
+        "pengayaan": "Bina soalan mengesan notasi pecahan terbalik."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 43,
+      "parent_candidate": "T2-WORK-036B",
+      "source_v60_markdown_sha256_reported": "ab7e5701713e8bd60e53f47944a5aad55e7fc11bf9d8b3d95b51021f848bcdcb",
+      "source_title": "3.2 Perpuluhan",
+      "source_sp": "3.2.2 — Menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menyebut perpuluhan satu tempat",
+      "source_ba_pages": "94",
+      "source_pbd_summary": "Empat perpuluhan satu tempat disebut; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk kad 0.3 dan minta murid menyebutnya.",
+        "exploration": "Murid padankan kad angka dengan kad sebutan 0.1 hingga 0.9.",
+        "explanation": "Guru model sebutan sifar perpuluhan tiga tanpa mengabaikan titik.",
+        "elaboration": "Pasangan baca 0.1,0.5,0.7 dan 0.9 bergilir.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 94 yang dipilih guru mengikut SP. Empat perpuluhan satu tempat disebut; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad perpuluhan, carta sebutan; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Baca sifar, titik dan digit secara berpandu.",
+        "pengayaan": "Kuiz sebutan kad rawak."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 44,
+      "parent_candidate": "T2-WORK-036B",
+      "source_v60_markdown_sha256_reported": "1cc00ad290259a3e0fa93cff79843528ef55a75fcda091161d1dee8bea526d69",
+      "source_title": "3.2 Perpuluhan",
+      "source_sp": "3.2.2 — Menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyebut perpuluhan sifar perpuluhan satu hingga sifar perpuluhan sembilan dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mengukuhkan sebutan perpuluhan",
+      "source_ba_pages": "94",
+      "source_pbd_summary": "Empat perpuluhan disebut tepat; 3/4 dan satu semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru sebut dua nilai perpuluhan; murid angkat kad sepadan.",
+        "exploration": "Pasangan bermain bingo sebutan menggunakan 0.2,0.4,0.6,0.8.",
+        "explanation": "Guru model beza sebutan nombor bulat 6 dengan 0.6.",
+        "elaboration": "Murid pilih kad rawak dan sebut kepada rakan tanpa melihat carta.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 94 yang dipilih guru mengikut SP. Empat perpuluhan disebut tepat; 3/4 dan satu semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad bingo, kad angka; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Sebut mengikut tiga komponen.",
+        "pengayaan": "Murid menjadi pembaca kad untuk kumpulan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 45,
+      "parent_candidate": "T2-WORK-036B",
+      "source_v60_markdown_sha256_reported": "1f82c603479df44ac4ba06b47518eafa6651479cf7256e57f5d4de653be92cca",
+      "source_title": "3.2 Perpuluhan",
+      "source_sp": "3.2.3 — Menunjuk nombor perpuluhan 0.1 hingga 0.9",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menunjuk nombor perpuluhan 0.1 hingga 0.9 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menunjukkan perpuluhan menggunakan model",
+      "source_ba_pages": "95",
+      "source_pbd_summary": "Empat model 0.1–0.9 dibina serta dilabel; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk satu jalur sepuluh petak dan kad 0.4.",
+        "exploration": "Murid letak empat penanda pada sepuluh petak.",
+        "explanation": "Guru kaitkan satu persepuluh dengan 0.1 dan empat persepuluh dengan 0.4.",
+        "elaboration": "Pasangan bina model 0.3,0.6 dan 0.8.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 95 yang dipilih guru mengikut SP. Empat model 0.1–0.9 dibina serta dilabel; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid sepuluh, token; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Kira petak dengan penanda.",
+        "pengayaan": "Tunjukkan 0.7 dalam dua susunan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 46,
+      "parent_candidate": "T2-WORK-036B",
+      "source_v60_markdown_sha256_reported": "37e316d7ed75fd21bb82e8bfbf90c84ba66e3a4f144f7030ee3499f845f20b53",
+      "source_title": "3.2 Perpuluhan",
+      "source_sp": "3.2.3 — Menunjuk nombor perpuluhan 0.1 hingga 0.9",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menunjuk nombor perpuluhan 0.1 hingga 0.9 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Memadankan model perpuluhan",
+      "source_ba_pages": "95",
+      "source_pbd_summary": "Empat model dibina dan dilabel; 3/4 tepat serta semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua model sepuluh petak berlainan lorekan.",
+        "exploration": "Murid pilih model yang sepadan dengan kad 0.2,0.5 dan 0.9.",
+        "explanation": "Guru model cara semak bilangan ditanda daripada sepuluh.",
+        "elaboration": "Pasangan bina model token bagi 0.1,0.6 dan 0.7 dan tukar hasil.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 95 yang dipilih guru mengikut SP. Empat model dibina dan dilabel; 3/4 tepat serta semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Blok persepuluh, kad perpuluhan; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan grid dengan petak bernombor.",
+        "pengayaan": "Cari dan betulkan satu model yang tidak sepadan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 47,
+      "parent_candidate": "T2-WORK-036B",
+      "source_v60_markdown_sha256_reported": "a6dc076e41ca4b0e5537a9979043577dc1599a1b1bb31158b723086d583210ca",
+      "source_title": "3.2 Perpuluhan",
+      "source_sp": "3.2.4 — Mewakilkan gambar rajah mengikut perpuluhan diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mewakilkan gambar rajah mengikut perpuluhan diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Melorek rajah mengikut perpuluhan",
+      "source_ba_pages": "96",
+      "source_pbd_summary": "Empat grid dilorek mengikut nilai; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk kad 0.5 dan grid sepuluh petak kosong.",
+        "exploration": "Murid pilih bilangan petak untuk dilorek berdasarkan kad.",
+        "explanation": "Guru model 0.5 dengan lima petak sama besar daripada sepuluh.",
+        "elaboration": "Murid lukis atau lorek grid 0.2,0.5 dan 0.9.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 96 yang dipilih guru mengikut SP. Empat grid dilorek mengikut nilai; 3/4 betul. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid persepuluh, pensel warna; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan grid prabahagi.",
+        "pengayaan": "Wakilkan 0.6 dengan dua pola lorekan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 48,
+      "parent_candidate": "T2-WORK-036B",
+      "source_v60_markdown_sha256_reported": "4ec7fcc77bada5d026926a85f77f9e93a178476a5174c00200a370acafdfc8d4",
+      "source_title": "3.2 Perpuluhan",
+      "source_sp": "3.2.4 — Mewakilkan gambar rajah mengikut perpuluhan diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat mewakilkan gambar rajah mengikut perpuluhan diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Mewakilkan perpuluhan melalui rajah pelbagai bentuk",
+      "source_ba_pages": "96",
+      "source_pbd_summary": "Empat grid dilorek tepat; 3/4 dan strategi semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua grid dengan empat petak berlorek.",
+        "exploration": "Pasangan banding jalur mendatar dan grid 2 × 5.",
+        "explanation": "Guru jelaskan jumlah petak berlorek menentukan nilai, bukan kedudukannya.",
+        "elaboration": "Murid lorek 0.3,0.7 dan 0.8 pada grid berlainan bentuk; rakan semak.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 96 yang dipilih guru mengikut SP. Empat grid dilorek tepat; 3/4 dan strategi semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Grid 1 × 10 dan 2 × 5, pensel warna; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Kira jumlah petak dahulu.",
+        "pengayaan": "Bina dua model 0.9 yang berlainan susunan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 49,
+      "parent_candidate": "T2-WORK-036B",
+      "source_v60_markdown_sha256_reported": "f9af2dbf766ac4be81752a9e6383ba81a98c0c336956af8d15c2cf2c85ccfe2d",
+      "source_title": "3.2 Perpuluhan",
+      "source_sp": "3.2.5 — Menulis perpuluhan yang diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menulis perpuluhan yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menulis perpuluhan daripada model",
+      "source_ba_pages": "95",
+      "source_pbd_summary": "Empat gambar persepuluh ditukar kepada notasi; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua daripada sepuluh petak berlorek.",
+        "exploration": "Murid padankan model 2/10,4/10,8/10 dengan kad digit.",
+        "explanation": "Guru model penulisan 0.2 menggunakan sifar dan titik perpuluhan.",
+        "elaboration": "Murid tulis nilai bagi model 0.3,0.6 dan 0.9.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 95 yang dipilih guru mengikut SP. Empat gambar persepuluh ditukar kepada notasi; 3/4 betul. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad gambar, papan mini; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Sediakan kotak 0 . □.",
+        "pengayaan": "Cipta kad model untuk rakan tulis nilai."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 50,
+      "parent_candidate": "T2-WORK-036B",
+      "source_v60_markdown_sha256_reported": "c9690696fcc0469aec568066d1dabcc3d809ef4b66ed2dd1138a3411ff0646fa",
+      "source_title": "3.2 Perpuluhan",
+      "source_sp": "3.2.5 — Menulis perpuluhan yang diberi",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menulis perpuluhan yang diberi dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menyemak penulisan perpuluhan",
+      "source_ba_pages": "95",
+      "source_pbd_summary": "Empat model ditulis sebagai perpuluhan; 3/4 dan satu semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk enam petak berlorek dengan pilihan 6,0.6 dan 0.9.",
+        "exploration": "Pasangan mengesan kesalahan notasi pada kad gambar.",
+        "explanation": "Guru tunjuk cara mengira lorekan dan menulis satu tempat perpuluhan.",
+        "elaboration": "Murid tulis nilai daripada model 1,5,7 dan 8 petak berlorek daripada sepuluh.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 95 yang dipilih guru mengikut SP. Empat model ditulis sebagai perpuluhan; 3/4 dan satu semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad persepuluh, papan mini; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan jalur nilai tempat.",
+        "pengayaan": "Cipta soalan pilihan jawapan dengan satu kesilapan notasi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 61,
+      "parent_candidate": "T2-WORK-042",
+      "source_v60_markdown_sha256_reported": "2501b4becdaa3b97a885e44f6081dbe624db62fff0be13b00e5d4945be6741fa",
+      "source_title": "4.2 Tambah wang",
+      "source_sp": "4.2.1 — Menambah dua nilai wang hasil tambahnya hingga RM100",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menambah dua nilai wang hasil tambahnya hingga RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Tambah dua nilai wang",
+      "source_ba_pages": "105",
+      "source_pbd_summary": "Empat tambah dua nilai hingga RM100; 3/4 betul dengan unit RM.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk dua tanda harga RM24.30 dan RM16.50.",
+        "exploration": "Murid bina kedua-dua nilai dengan wang mainan.",
+        "explanation": "Guru model tambah ringgit dan sen hingga RM40.80.",
+        "elaboration": "Pasangan kira RM12.20 + RM25.40 dan RM31.10 + RM18.50.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 105 yang dipilih guru mengikut SP. Empat tambah dua nilai hingga RM100; 3/4 betul dengan unit RM. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Wang mainan, kad harga; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Asingkan ringgit dan sen.",
+        "pengayaan": "Pilih dua harga berjumlah RM50."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 62,
+      "parent_candidate": "T2-WORK-042",
+      "source_v60_markdown_sha256_reported": "336f4c205f113f01694959285c531dcde9cbeb0cb3c28f81f72e203d250c448d",
+      "source_title": "4.2 Tambah wang",
+      "source_sp": "4.2.1 — Menambah dua nilai wang hasil tambahnya hingga RM100",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menambah dua nilai wang hasil tambahnya hingga RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Tambah wang dengan pengumpulan semula",
+      "source_ba_pages": "105",
+      "source_pbd_summary": "Empat tambah dua nilai hingga RM100; 3/4 betul dan satu semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk RM15.80 dan RM12.50; murid ramal jumlah.",
+        "exploration": "Pasangan gabung sen dan tukar 100 sen kepada RM1.",
+        "explanation": "Guru model RM15.80 + RM12.50 = RM28.30 dalam lajur.",
+        "elaboration": "Murid kira RM36.75 + RM21.50 dan RM18.60 + RM9.90; semak.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 105 yang dipilih guru mengikut SP. Empat tambah dua nilai hingga RM100; 3/4 betul dan satu semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Wang mainan, jadual ringgit/sen; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tukar 100 sen kepada RM1 secara konkrit.",
+        "pengayaan": "Cari satu harga jika jumlah dan harga pertama diketahui."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 63,
+      "parent_candidate": "T2-WORK-042",
+      "source_v60_markdown_sha256_reported": "461edc2d5d4aebd3425d4fd87ad11b4fcba60e1521a43f20dae7da11e22a35c0",
+      "source_title": "4.2 Tambah wang",
+      "source_sp": "4.2.2 — Menambah tiga nilai wang hasil tambahnya hingga RM100",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menambah tiga nilai wang hasil tambahnya hingga RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Tambah tiga nilai wang",
+      "source_ba_pages": "106",
+      "source_pbd_summary": "Empat jumlah tiga nilai hingga RM100 dengan pengiraan lajur; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk tiga barangan berharga RM12,RM8.50,RM15.20.",
+        "exploration": "Murid kumpulkan wang bagi setiap barang pada resit.",
+        "explanation": "Guru model jumlah tiga nilai RM35.70 dengan lajur sejajar.",
+        "elaboration": "Pasangan kira RM10.20 + RM13.40 + RM22.50.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 106 yang dipilih guru mengikut SP. Empat jumlah tiga nilai hingga RM100 dengan pengiraan lajur; 3/4 betul. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Resit, wang mainan; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tambah dua harga dahulu.",
+        "pengayaan": "Susun tiga harga berlainan yang jumlahnya RM60."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 64,
+      "parent_candidate": "T2-WORK-042",
+      "source_v60_markdown_sha256_reported": "7f3b6f7003506cd285023f208e96ad3e07fa042f65b928192d50c4224e5e2eda",
+      "source_title": "4.2 Tambah wang",
+      "source_sp": "4.2.2 — Menambah tiga nilai wang hasil tambahnya hingga RM100",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menambah tiga nilai wang hasil tambahnya hingga RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Tambah tiga nilai wang dalam simulasi kedai",
+      "source_ba_pages": "106",
+      "source_pbd_summary": "Empat jumlah tiga nilai hingga RM100; 3/4 dan satu semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri bakul tiga barang dan had RM100.",
+        "exploration": "Pasangan pilih tiga kad harga RM18.80,RM24.50,RM9.70.",
+        "explanation": "Guru model semakan jumlah RM53 dengan pengumpulan semula sen.",
+        "elaboration": "Murid bertukar resit tiga harga dan semak jumlah menggunakan lajur.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 106 yang dipilih guru mengikut SP. Empat jumlah tiga nilai hingga RM100; 3/4 dan satu semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad harga, resit kosong; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan jadual tiga baris.",
+        "pengayaan": "Cari dua kombinasi tiga barang dalam bajet RM75."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 65,
+      "parent_candidate": "T2-WORK-043",
+      "source_v60_markdown_sha256_reported": "1a4c4b23cb41b70f9c579104823df026144d8cbeb0950902942d9588d7942b08",
+      "source_title": "4.3 Tolak wang",
+      "source_sp": "4.3.1 — Menolak dua nilai wang dalam lingkungan RM100",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menolak dua nilai wang dalam lingkungan RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Tolak dua nilai wang",
+      "source_ba_pages": "107",
+      "source_pbd_summary": "Empat tolak dua nilai dalam RM100; 3/4 dengan langkah meminjam sah.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk RM80 dan harga RM27.50.",
+        "exploration": "Murid keluarkan wang mainan bagi harga barang.",
+        "explanation": "Guru model RM80 − RM27.50 = RM52.50 menggunakan pertukaran RM1 kepada 100 sen.",
+        "elaboration": "Pasangan kira RM50 − RM16.80 dan RM76.20 − RM31.10.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 107 yang dipilih guru mengikut SP. Empat tolak dua nilai dalam RM100; 3/4 dengan langkah meminjam sah. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Wang mainan, carta ringgit/sen; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Model tukaran RM1 secara fizikal.",
+        "pengayaan": "Semak baki dengan menambah semula harga."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 66,
+      "parent_candidate": "T2-WORK-043",
+      "source_v60_markdown_sha256_reported": "3530c0626884e7c2231dff7ad15dc896d86d1121733d6549573796b10894b350",
+      "source_title": "4.3 Tolak wang",
+      "source_sp": "4.3.1 — Menolak dua nilai wang dalam lingkungan RM100",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menolak dua nilai wang dalam lingkungan RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Semak penolakan wang",
+      "source_ba_pages": "107",
+      "source_pbd_summary": "Empat tolak dua nilai dalam RM100; 3/4 dan satu strategi semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri resit RM19.75 dan wang RM40.",
+        "exploration": "Pasangan gunakan jadual ringgit/sen untuk mencari baki.",
+        "explanation": "Guru model RM40 − RM19.75 = RM20.25 serta operasi songsang.",
+        "elaboration": "Murid kira RM65.20 − RM28.90 dan RM93.10 − RM46.80; semak rakan.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 107 yang dipilih guru mengikut SP. Empat tolak dua nilai dalam RM100; 3/4 dan satu strategi semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Resit, jadual nilai wang; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Pisahkan pengumpulan semula daripada pengiraan.",
+        "pengayaan": "Cipta situasi baki RM10.50."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 67,
+      "parent_candidate": "T2-WORK-043",
+      "source_v60_markdown_sha256_reported": "e720b1f5ce0a13434043702759649f8beecb3f30a7de8ed103420da21d2460a2",
+      "source_title": "4.3 Tolak wang",
+      "source_sp": "4.3.2 — Menolak dua nilai wang dari satu nilai wang dalam lingkungan RM100",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menolak dua nilai wang dari satu nilai wang dalam lingkungan RM100 dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Tolak dua nilai daripada satu nilai wang",
+      "source_ba_pages": "108",
+      "source_pbd_summary": "Empat item tolak dua nilai daripada satu nilai wang; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru beri wang RM100 dan dua tanda harga RM38.40,RM21.60.",
+        "exploration": "Murid susun dua resit dan catat baki selepas setiap pembelian.",
+        "explanation": "Guru model RM100 − RM38.40 − RM21.60 = RM40.",
+        "elaboration": "Pasangan kira RM90 − RM25.50 − RM17.30; semak jumlah belanja.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 108 yang dipilih guru mengikut SP. Empat item tolak dua nilai daripada satu nilai wang; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Wang mainan, kad harga; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Tolak harga pertama sebelum kedua.",
+        "pengayaan": "Cari harga kedua apabila baki diberi."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 78,
+      "parent_candidate": "T2-WORK-049",
+      "source_v60_markdown_sha256_reported": "cbca74a4e988759a9fd7749536f4e8d717c3d0866859652975bb412a7ebc45e0",
+      "source_title": "5.1 Waktu dalam jam dan minit",
+      "source_sp": "5.1.2 — Menyatakan dan menunjukkan waktu dalam jam dan minit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyatakan dan menunjukkan waktu dalam jam dan minit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menyatakan dan menunjukkan waktu",
+      "source_ba_pages": "117",
+      "source_pbd_summary": "Empat waktu disebut dan ditunjukkan; 3/4 tepat.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk jam model pada 7:15.",
+        "exploration": "Murid gerakkan jarum minit dan jam untuk beberapa waktu.",
+        "explanation": "Guru model bacaan jarum pendek dan panjang serta kedudukan jarum jam antara nombor.",
+        "elaboration": "Pasangan tunjuk 10:40,12:05 dan 3:25 lalu sebut waktu.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 117 yang dipilih guru mengikut SP. Empat waktu disebut dan ditunjukkan; 3/4 tepat. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jam analog model, kad waktu; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Bilang minit lima-lima pada muka jam.",
+        "pengayaan": "Tunjukkan waktu dengan minit bukan gandaan lima."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 79,
+      "parent_candidate": "T2-WORK-049",
+      "source_v60_markdown_sha256_reported": "071632c28e05f6bdce602bebb0645adb8a59c4ad4c79099df099055df7296bee",
+      "source_title": "5.1 Waktu dalam jam dan minit",
+      "source_sp": "5.1.2 — Menyatakan dan menunjukkan waktu dalam jam dan minit",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menyatakan dan menunjukkan waktu dalam jam dan minit dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Membaca waktu melalui situasi harian",
+      "source_ba_pages": "117",
+      "source_pbd_summary": "Empat waktu disebut dan ditunjukkan; 3/4 dan satu semakan.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru tunjuk gambar aktiviti sekolah dan jam 8:35.",
+        "exploration": "Pasangan padankan kad rutin dengan jam model yang diberi.",
+        "explanation": "Guru model 8:35 dengan jarum jam melepasi 8 dan jarum minit pada 7.",
+        "elaboration": "Murid bina waktu 6:50,9:10 dan 11:45 pada jam kertas; rakan semak.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 117 yang dipilih guru mengikut SP. Empat waktu disebut dan ditunjukkan; 3/4 dan satu semakan. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Jam kertas, kad rutin; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan muka jam dengan label minit.",
+        "pengayaan": "Bina kad waktu 4:17 untuk rakan."
+      },
+      "ready": false
+    },
+    {
+      "source_snapshot_year": 2,
+      "source_snapshot_lesson": 80,
+      "parent_candidate": "T2-WORK-049",
+      "source_v60_markdown_sha256_reported": "48a2f84118dc4ba76b075acb01f2a0f0fc95da93bc49a1a380bbbe3cb6c856b1",
+      "source_title": "5.1 Waktu dalam jam dan minit",
+      "source_sp": "5.1.3 — Menukar waktu dalam jam dan minit daripada perkataan kepada angka dan sebaliknya",
+      "source_v60_objective_verbatim": "Pada akhir PdP, murid dapat menukar waktu dalam jam dan minit daripada perkataan kepada angka dan sebaliknya dan memberikan sekurang-kurangnya 3 daripada 4 jawapan/tunjuk cara yang tepat.",
+      "proposed_focus": "Menukar waktu perkataan dan angka",
+      "source_ba_pages": "118",
+      "source_pbd_summary": "Empat padanan perkataan dengan angka dan minit tepat; 3/4 betul.",
+      "source_minutes": 60,
+      "phases": {
+        "engagement": "Guru baca pukul sembilan suku; murid pilih kad 9:15.",
+        "exploration": "Murid padankan kad perkataan dengan angka pada papan.",
+        "explanation": "Guru model 2:45 sebagai pukul dua empat puluh lima minit.",
+        "elaboration": "Pasangan tukar pukul tujuh dua puluh minit, 10:05 dan 4:30 dua arah.",
+        "evaluation": "Murid buat latihan Buku Aktiviti hlm. 118 yang dipilih guru mengikut SP. Empat padanan perkataan dengan angka dan minit tepat; 3/4 betul. Guru rekod pencapaian dan murid sebut satu cara semakan."
+      },
+      "phase_minutes": [
+        5,
+        15,
+        10,
+        15,
+        15
+      ],
+      "suggested_support": {
+        "bbm": "Kad perkataan waktu, jam model; Buku Aktiviti Matematik Tahun 2.",
+        "pak21": "Pembelajaran berpasangan dan semakan rakan.",
+        "emk": "Ketelitian, kerjasama dan penaakulan.",
+        "pemulihan": "Gunakan rangka pukul __ __ minit.",
+        "pengayaan": "Tulis dua cara menyebut 6:30."
+      },
+      "ready": false
+    }
+  ]
+}
