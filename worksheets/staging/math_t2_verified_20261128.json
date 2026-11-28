@@ -235,8 +235,149 @@
         "log_id": "6c2fbfad-8cdc-4fd3-ae68-157bb3bcd890"
       },
       "source_qa": "bee135a4418422d3dcc441941aab6f03975cfec2"
+    },
+    {
+      "title": "Nilai Nombor",
+      "theme": "Nombor hingga 1 000",
+      "sk": "1.1",
+      "sp": "1.1.2(i)",
+      "dskp": {
+        "drive_id": "1auksIUrmyBghiyXAB__j_zC56JehddeN",
+        "printed_page": 34,
+        "text": "Menunjukkan kuantiti bagi nombor yang diberi."
+      },
+      "book_reference": "BT Jilid 1 hlm. 8–12 (disemak); BA hlm. 5–6 (rujukan BT, belum diperiksa terus).",
+      "runtime_unit": "ue1798c2b0c21f09b356cc4e6",
+      "runtime_unit_title": "Nombor Hingga 1000",
+      "runtime_lesson": "MT2-PDP-004",
+      "student": {
+        "drive_file_id": "1IKIHPqywV0uUHLTASi9s3rUMyviO-IbN",
+        "sha256": "9e9b3eb559e04c241251075e3b8b089993709cf3aabe8549137e07336d75c337",
+        "size_bytes": 80871,
+        "pages": 2
+      },
+      "teacher_key": {
+        "drive_file_id": "17RmJATK0rSl-HGrkE_1ogyzcRpgPHhVy",
+        "sha256": "44182fe8839481752b3be9f1358f0db93e75f95e1416f198301281580e304874",
+        "size_bytes": 37415,
+        "pages": 1
+      },
+      "qa": {
+        "visual_pages_reviewed": 3,
+        "questions_checked": 6,
+        "answer_key_match": true,
+        "storage_integrity_verified": true,
+        "web_download_verified": false,
+        "textbook_pages_verified": true,
+        "runtime_identity_verified": true
+      },
+      "shared_worksheet": true,
+      "shared_pdp": [
+        "MT2-PDP-004",
+        "MT2-PDP-005"
+      ],
+      "worksheet_coverage": "1.1.2(i),(ii)",
+      "runtime_evidence": {
+        "deploy_id": "dep-dc5bn2a9lscs73f96fm0",
+        "commit": "6db5be461f7c8cd90f2e6471d929079a2b9b3cc3",
+        "log_id": "6c2fbfad-8cdc-4fd3-ae68-157bb3bcd890"
+      },
+      "source_qa": "779dac405d973bdbdb76ae6185d3387fa58e3e72"
+    },
+    {
+      "title": "Nilai Nombor",
+      "theme": "Nombor hingga 1 000",
+      "sk": "1.1",
+      "sp": "1.1.2(ii)",
+      "dskp": {
+        "drive_id": "1auksIUrmyBghiyXAB__j_zC56JehddeN",
+        "printed_page": 34,
+        "text": "Memadankan kumpulan objek dengan nombor."
+      },
+      "book_reference": "BT Jilid 1 hlm. 8–12 (disemak); BA hlm. 5–6 (rujukan BT, belum diperiksa terus).",
+      "runtime_unit": "ue1798c2b0c21f09b356cc4e6",
+      "runtime_unit_title": "Nombor Hingga 1000",
+      "runtime_lesson": "MT2-PDP-005",
+      "student": {
+        "drive_file_id": "1IKIHPqywV0uUHLTASi9s3rUMyviO-IbN",
+        "sha256": "9e9b3eb559e04c241251075e3b8b089993709cf3aabe8549137e07336d75c337",
+        "size_bytes": 80871,
+        "pages": 2
+      },
+      "teacher_key": {
+        "drive_file_id": "17RmJATK0rSl-HGrkE_1ogyzcRpgPHhVy",
+        "sha256": "44182fe8839481752b3be9f1358f0db93e75f95e1416f198301281580e304874",
+        "size_bytes": 37415,
+        "pages": 1
+      },
+      "qa": {
+        "visual_pages_reviewed": 3,
+        "questions_checked": 6,
+        "answer_key_match": true,
+        "storage_integrity_verified": true,
+        "web_download_verified": false,
+        "textbook_pages_verified": true,
+        "runtime_identity_verified": true
+      },
+      "shared_worksheet": true,
+      "shared_pdp": [
+        "MT2-PDP-004",
+        "MT2-PDP-005"
+      ],
+      "worksheet_coverage": "1.1.2(i),(ii)",
+      "runtime_evidence": {
+        "deploy_id": "dep-dc5bn2a9lscs73f96fm0",
+        "commit": "6db5be461f7c8cd90f2e6471d929079a2b9b3cc3",
+        "log_id": "6c2fbfad-8cdc-4fd3-ae68-157bb3bcd890"
+      },
+      "source_qa": "779dac405d973bdbdb76ae6185d3387fa58e3e72"
+    },
+    {
+      "title": "Bilang Nombor",
+      "theme": "Nombor hingga 1 000",
+      "sk": "1.3",
+      "sp": "1.3.1;1.3.2",
+      "dskp": {
+        "drive_id": "1auksIUrmyBghiyXAB__j_zC56JehddeN",
+        "printed_page": 34,
+        "text": "Membilang nombor; melengkapkan sebarang rangkaian nombor."
+      },
+      "book_reference": "BT Jilid 1 hlm. 24–27 (disemak); BA hlm. 16–18 (rujukan BT, belum diperiksa terus).",
+      "runtime_unit": "ue1798c2b0c21f09b356cc4e6",
+      "runtime_unit_title": "Nombor Hingga 1000",
+      "runtime_lesson": "MT2-PDP-011",
+      "student": {
+        "drive_file_id": "1ThTeNs2Y0VmLFsDD13XcLJUhU7VXb1kn",
+        "sha256": "ca5ba7c11d9bc4409d1c0e7e885e0f76ae288ebb7a351547894032e0f2482feb",
+        "size_bytes": 43534,
+        "pages": 2
+      },
+      "teacher_key": {
+        "drive_file_id": null,
+        "sha256": "ff341b7b512707ffb050e7fb01fea8b65e1bc2fa4eaa5febdc1d2d08c1acc2c6",
+        "size_bytes": 2423,
+        "pages": 1,
+        "source": "github-reviewed-key",
+        "build_run": 46141459347
+      },
+      "qa": {
+        "visual_pages_reviewed": 3,
+        "questions_checked": 10,
+        "answer_key_match": true,
+        "storage_integrity_verified": true,
+        "web_download_verified": false,
+        "textbook_pages_verified": true,
+        "runtime_identity_verified": true
+      },
+      "shared_worksheet": false,
+      "runtime_evidence": {
+        "deploy_id": "dep-dc5bn2a9lscs73f96fm0",
+        "commit": "6db5be461f7c8cd90f2e6471d929079a2b9b3cc3",
+        "log_id": "fc3ed8e2-ef90-4d8c-a829-0e248838527e"
+      },
+      "source_qa": "779dac405d973bdbdb76ae6185d3387fa58e3e72"
     }
   ],
-  "unique_worksheet_count": 4,
-  "mapped_pdp_count": 5
+  "unique_worksheet_count": 6,
+  "mapped_pdp_count": 8
 }

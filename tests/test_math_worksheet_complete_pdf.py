@@ -49,9 +49,9 @@ class MathWorksheetTests(unittest.TestCase):
                 self.assertIsNone(m.resolve_math(2,self.unit,self.token))
 
     def test_both_verified_live_pdp_share_one_original_pair(self):
-        records=[r for r in self.catalog["records"] if r.get("shared_worksheet")]
-        self.assertEqual(self.catalog["unique_worksheet_count"],4)
-        self.assertEqual(self.catalog["mapped_pdp_count"],5)
+        records=[r for r in self.catalog["records"] if r["title"]=="Nilai Tempat dan Nilai Digit"]
+        self.assertEqual(self.catalog["unique_worksheet_count"],6)
+        self.assertEqual(self.catalog["mapped_pdp_count"],8)
         self.assertEqual({r["runtime_lesson"] for r in records},{"MT2-PDP-006","MT2-PDP-007"})
         self.assertEqual(len({r["student"]["sha256"] for r in records}),1)
         self.assertEqual(len({r["teacher_key"]["sha256"] for r in records}),1)
@@ -67,7 +67,7 @@ class MathWorksheetTests(unittest.TestCase):
             "MT2-PDP-009": ("BANDING_NOMBOR", "1.1.2(iii)"),
             "MT2-PDP-010": ("SUSUN_NOMBOR", "1.1.2(iv)"),
         }
-        records = [r for r in self.catalog["records"] if not r.get("shared_worksheet")]
+        records = [r for r in self.catalog["records"] if r["runtime_lesson"] in expected]
         self.assertEqual({r["runtime_lesson"] for r in records}, set(expected))
         for rec in records:
             token,unit = rec["runtime_lesson"],rec["runtime_unit"]
@@ -82,11 +82,46 @@ class MathWorksheetTests(unittest.TestCase):
                         self.assertEqual(name,"CIKGULAJU_LATIHAN_MATH_T2_"+slug+"_"+kind.upper()+".pdf")
                         asset=rec[key]
                         pdf.assert_called_with(asset["drive_file_id"],asset["sha256"],asset["size_bytes"])
-                self.assertIsNone(m.resolve_math(2,unit,"MT2-PDP-011"))
+                self.assertIsNone(m.resolve_math(2,unit,"MT2-PDP-012"))
             for invalid in ({"topic":"Other"},{"standards":[{"sk":rec["sk"],"sp":"1.1.2"}]},
                             {"standards":[{"sk":rec["sk"],"sp":"1.1.2(ii)"}]}):
                 with patch.object(m,"_read",return_value={**row,**invalid}):
                     self.assertIsNone(m.resolve_math(2,unit,token))
+
+    def test_new_shared_and_composite_pdp_keep_exact_standards(self):
+        expected = {
+            "MT2-PDP-004": ("Nilai Nombor","1.1","1.1.2(i)"),
+            "MT2-PDP-005": ("Nilai Nombor","1.1","1.1.2(ii)"),
+            "MT2-PDP-011": ("Bilang Nombor","1.3","1.3.1;1.3.2"),
+        }
+        app=Flask(__name__)
+        app.register_blueprint(create_blueprint())
+        client=app.test_client()
+        account={"telegram_user_id":1,"authenticated":True,"free_remaining":1}
+        records=[r for r in self.catalog["records"] if r["runtime_lesson"] in expected]
+        self.assertEqual(len(records),3)
+        for rec in records:
+            token,unit=rec["runtime_lesson"],rec["runtime_unit"]
+            title,sk,sp=expected[token]
+            row={**self.row,"unit":unit,"token":token,"topic":title,
+                 "standards":[{"sk":sk,"sp":sp}]}
+            with patch.object(m,"_read",return_value=row):
+                self.assertEqual(m.resolve_math(2,unit,token),rec)
+                with patch("web.unified_rph_web._account",return_value=(account,None)):
+                    items=client.get("/api/web/rph/extra-materials",
+                        query_string={"year":2,"subject":"MATH","unit":unit,"lesson":token}).json["items"]
+                    self.assertEqual(len(items),2)
+                    self.assertEqual(items[0]["title"],"Lembaran Latihan Murid"+
+                        (" — latihan bersama PdP 004–005" if token!="MT2-PDP-011" else ""))
+                with patch.object(m,"_pdf",return_value=b"%PDF-1.7") as pdf:
+                    for kind,key in (("murid","student"),("skema","teacher_key")):
+                        raw,name=m.complete_math_pdf(2,unit,token,kind)
+                        self.assertEqual(name,"CIKGULAJU_LATIHAN_MATH_T2_"+title.upper().replace(" ","_")+"_"+kind.upper()+".pdf")
+                        asset=rec[key]
+                        pdf.assert_called_with(asset["drive_file_id"],asset["sha256"],asset["size_bytes"])
+            wrong_sp={"MT2-PDP-004":"1.1.2(ii)","MT2-PDP-005":"1.1.2(i)","MT2-PDP-011":"1.3.1"}[token]
+            with patch.object(m,"_read",return_value={**row,"standards":[{"sk":sk,"sp":wrong_sp}]}):
+                self.assertIsNone(m.resolve_math(2,unit,token))
 
     def test_web_routes_and_original_bytes(self):
         app=Flask(__name__)
