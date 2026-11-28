@@ -122,8 +122,9 @@ class CandidateTest(unittest.TestCase):
         selection={k:self.payload[k] for k in ("year","subject","unit","lesson")}
         def post(**changes):
             return self.client.post(purl,json={**self.payload,**changes},headers={"Origin":candidate.ORIGIN})
-        self.assertEqual(post().status_code,404)
-        self.assertEqual(self.client.get(aurl,query_string=selection).status_code,404)
+        with patch.dict(os.environ,{gate.FLAG:"0"}):
+            self.assertEqual(post().status_code,404)
+            self.assertEqual(self.client.get(aurl,query_string=selection).status_code,404)
         self.debit.assert_not_called()
         self.available.assert_not_called()
         rows={k:dict(v,ready=False) for k,v in gate.records().items()}
