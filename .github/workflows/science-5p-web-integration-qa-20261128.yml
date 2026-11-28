@@ -1,0 +1,29 @@
+name: Science 5P isolated Web integration QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/science_5p_*_20261128.py'
+      - 'tests/test_science_5p_web_integration_qa_20261128.py'
+      - 'tools/audit_science_native_5p_documents_20261128.py'
+      - 'tools/audit_science_5p_native_pdf_20261128.py'
+      - 'web/rph_delivery_quota.py'
+      - 'web/rph_5p_v5_layout.py'
+      - 'audits/rph_5p_science_y*_native_*_20261128.json'
+      - 'audits/rph_5p_science_y*_support_*_20261128.json'
+      - '.github/workflows/science-5p-web-integration-qa-20261128.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  isolated-web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install flask python-docx pymupdf
+      - name: Mocked native catalogue and quota integration checks
+        run: PYTHONPATH=. python -m unittest discover -s tests -p test_science_5p_web_integration_qa_20261128.py -v
