@@ -20,7 +20,7 @@ const ctx=vm.createContext({
 });
 vm.runInContext(html.slice(start,end),ctx);
 const select=()=>vm.runInContext("science5pSelection()",ctx);
-const download=()=>vm.runInContext('downloadScience5pCandidate("word")',ctx);
+const download=()=>vm.runInContext('downloadScience5pReviewed("word")',ctx);
 const token="v"+"a".repeat(24);
 params=new URLSearchParams({unit:token,teacher_class:"5 Bestari"});
 assert.equal(select().unit,token);
@@ -31,11 +31,11 @@ ctx.subject.value="SCIENCE";
 params.set("unit","u"+"a".repeat(24));assert.equal(select(),null);
 params.set("unit",token);
 function response(remaining="0"){
- return {ok:true,headers:{get(k){return {"X-RPH-Trial-Remaining":remaining,"X-RPH-QA-Status":"DRAFT-NOT-FOR-TEACHING","content-type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"}[k]}},blob:async()=>({size:2000})};
+ return {ok:true,headers:{get(k){return {"X-RPH-Trial-Remaining":remaining,"X-RPH-QA-Status":"INTERNAL-REVIEWED","content-type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"}[k]}},blob:async()=>({size:2000})};
 }
 (async()=>{
  fetchImpl=async(url,opts)=>{
-  assert.equal(url,"/api/kssr/sk/science/5p/candidate/download");
+  assert.equal(url,"/api/kssr/sk/science/5p/download");
   const p=JSON.parse(opts.body);assert.equal(p.unit,token);assert.equal(p.rph_variant,"5p");
   return response();
  };
@@ -44,6 +44,6 @@ function response(remaining="0"){
  fetchImpl=async()=>{ctx.teacherReflection.value="changed";return response("8")};
  await download();assert.equal(clicks,1);assert.equal(balance,8);
  assert.equal(requests,2);
- assert(html.includes('data.status==="DRAFT-NOT-FOR-TEACHING"'));
+ assert(html.includes('data.status==="INTERNAL-REVIEWED"'));
  console.log("Science 5P isolated UI selection, last-credit delivery and stale reflection checks passed");
 })().catch(e=>{console.error(e);process.exitCode=1});
