@@ -496,6 +496,40 @@ except Exception as _native_sequence_exc:
           type(_native_sequence_exc).__name__, flush=True)
 
 
+# Narrow read-only worksheet source audit. No user data, credentials,
+# RPH generation or writes; only curriculum identities for SP 1.4.1.
+try:
+    from web.telegram_verified_sequence_rph_bridge import (
+        _source as _ws_source, _unit_catalog as _ws_units,
+        _available_groups as _ws_groups, _resolve as _ws_resolve,
+    )
+    import json as _ws_json
+    _ws_rows, _ws_known = _ws_source(telegram_runtime, 2, "MATH")
+    _ws_matches = []
+    for _ws_unit in _ws_units(_ws_known):
+        for _ws_token, _ws_group in _ws_groups(_ws_rows, _ws_unit, 2, "MATH").items():
+            if not any(str(_ws_row.get("sp_code") or "").strip() == "1.4.1"
+                       for _ws_row in _ws_group):
+                continue
+            _, _ws_selected, _ws_mapped = _ws_resolve(
+                telegram_runtime, 2, "MATH", _ws_unit["value"], _ws_token)
+            _ws_matches.append({
+                "unit": _ws_unit["value"],
+                "unit_title": _ws_unit["_unit_title"],
+                "token": _ws_token,
+                "titles": sorted({str(x.get("pdp_title") or "").strip() for x in _ws_selected}),
+                "standards": [{"sk": x["sk_code"], "sp": x["sp_code"]} for x in _ws_mapped],
+                "complete": all(str(x.get("sk_code") or "").strip() and
+                                str(x.get("sp_code") or "").strip() for x in _ws_selected),
+            })
+    print("CIKGULAJU_MATH_T2_WORKSHEET_IDENTITY " + _ws_json.dumps(
+        {"year": 2, "subject": "MATH", "matches": _ws_matches},
+        ensure_ascii=False, sort_keys=True), flush=True)
+except Exception as _ws_audit_exc:
+    print("CIKGULAJU_MATH_T2_WORKSHEET_IDENTITY_UNAVAILABLE",
+          type(_ws_audit_exc).__name__, flush=True)
+
+
 # Sains SK Tahun 5 2027 has its own private sequence. Legacy Science and
 # Mathematics remain available through the existing sequence above.
 try:
