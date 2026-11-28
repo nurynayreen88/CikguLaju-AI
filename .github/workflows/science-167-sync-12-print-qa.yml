@@ -1,0 +1,41 @@
+name: Science 167 ordinary alignment and 12 new draft print QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'audits/rph_science_y2_y4_167_ordinary_5p_sync_proposals_20261128.json'
+      - 'tools/audit_science_167_sync_12_print_20261128.py'
+      - '.github/workflows/science-167-sync-12-print-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: 495d0b24d5ded8026f5e85cf4b39d45cbe2debb7
+          path: native_source
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install flask requests python-docx reportlab pypdf pillow pymupdf fonttools
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice-writer
+      - name: Re-extract ordinary curriculum only
+        run: |
+          for year in 2 3 4; do
+            python tools/audit_science_y2_y4_ordinary_source_20261128.py --native-root native_source --index audits/rph_5p_science_y2_y3_y4_consolidated_197_20261128.json --year "$year" --out "qa_original_science_y$year"
+          done
+      - run: PYTHONPATH=. python tools/audit_science_167_sync_12_print_20261128.py qa_science_sync_print .
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-167-sync-12-new-draft-print
+          path: qa_science_sync_print/
+          retention-days: 7
