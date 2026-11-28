@@ -8,6 +8,7 @@ from docx import Document
 import fitz
 from web import kp2027_math_canary_web as c, kp2027_math_5p as five
 from web import rph_delivery_quota as quota
+from web import kp2027_math_5p_release as release
 import web_v1_telegram_auth_routes as auth
 import web_v1_sessions as sessions
 
@@ -16,6 +17,8 @@ class TestMath5PDelivery(unittest.TestCase):
         self.account={"authenticated":True,"telegram_user_id":123,"rakan_pembangun":False,"free_remaining":10}
         self.config={"account_backend":"supabase","supabase_url":"https://"+c.HOST,"supabase_key":"unused-test-key","CIKGULAJU_WEB_SESSION_SECRET":"s"*48}
         self.asset=b"original-approved-asset"
+        rows={k:dict(r,ready=False,status="SOURCE_VERIFIED_PENDING_FINAL_QA") for k,r in release.records().items()}
+        rows["A",1].update(ready=True,status="APPROVED_FOR_RELEASE")
         self.stack=[
             patch.dict(os.environ,{c.FEATURE_FLAG:"1",c.FIVE_P_FLAG:"1"}),
             patch.object(auth,"_config",return_value=self.config),
@@ -24,7 +27,8 @@ class TestMath5PDelivery(unittest.TestCase):
             patch.object(c,"fetch_private_document",return_value=self.asset),
             patch.object(c,"fetch_approved_catalog",return_value={"A":[1],"B":[1]}),
             patch.object(c,"debit_shared_trial",return_value={"ok":True,"remaining":9}),
-            patch("web.kp2027_pilot_teacher_fields.personalize_approved_rph",side_effect=lambda data,fmt,fields:data)]
+            patch("web.kp2027_pilot_teacher_fields.personalize_approved_rph",side_effect=lambda data,fmt,fields:data),
+            patch.object(release,"records",return_value=rows)]
         self.mocks=[p.start() for p in self.stack]
         self.addCleanup(lambda:[p.stop() for p in reversed(self.stack)])
         app=Flask(__name__);app.testing=True;app.register_blueprint(c.create_blueprint())
@@ -34,7 +38,12 @@ class TestMath5PDelivery(unittest.TestCase):
     def post(self,payload=None):
         return self.client.post(self.url+"/download",json=payload or self.payload,headers={"Origin":c.ORIGIN})
     def test_access_and_quota(self):
-        self.assertIn("5p",self.client.get(self.url+"/available").get_json()["rph_variants"])
+        catalog=self.client.get(self.url+"/available").get_json()
+        self.assertIn("5p",catalog["rph_variants"])
+        self.assertEqual(catalog["five_p_groups"],{"A":[1],"B":[]})
+        self.assertEqual(self.post({**self.payload,"group":"B"}).status_code,404)
+        self.assertEqual(self.post({**self.payload,"lesson":2}).status_code,404)
+        self.mocks[4].assert_not_called()
         self.mocks[6].assert_not_called()
         with patch.dict(os.environ,{c.FIVE_P_FLAG:"0"}):
             self.assertEqual(self.post().status_code,404)

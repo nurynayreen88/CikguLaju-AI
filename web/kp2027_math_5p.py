@@ -59,7 +59,9 @@ def prepare(g,n,payload):
             fields[k]=correction[k]
     # Preserve quantitative criteria and source PBD. The correction's proposed
     # assessment may repeat the criteria; keep the shorter explicit PBD instead.
-    phases["evaluation"]=fields["pbd"]
+    from web.kp2027_math_5p_release import records
+    approved_review=records()[g,n]
+    phases["evaluation"]=approved_review["reviewed_evaluation"]
     sk_code=code.rsplit(".",1)[0]
     data={
         "subject":"MATEMATIK_SK","year":1,"lesson_id":f"{g}-{n:03d}","curriculum":"KP2027",

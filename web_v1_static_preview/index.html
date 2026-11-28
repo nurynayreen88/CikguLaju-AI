@@ -2609,7 +2609,11 @@ subject.addEventListener("change",async()=>{
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,125)||
        !kp2027ValidEntries(data.items.B,data.groups.B,125))
      throw Error("Padanan Unit dan PdP Matematik belum dapat disahkan.");
-    inventory={groups:data.groups,items:data.items,rphVariants:Array.isArray(data.rph_variants)?data.rph_variants:[]};
+    const fiveP={A:[],B:[]};
+    for(const g of ["A","B"]){
+     if(Array.isArray(data.five_p_groups?.[g]))fiveP[g]=data.five_p_groups[g].filter(n=>Number.isInteger(n)&&data.groups[g].includes(n));
+    }
+    inventory={groups:data.groups,items:data.items,rphVariants:Array.isArray(data.rph_variants)?data.rph_variants:[],fivePGroups:fiveP};
    }else if(code==="BM_SK_KP2027"){
     if(!data.groups||!kp2027ValidList(data.groups.A,178)||!kp2027ValidList(data.groups.B,175)||
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,178)||
@@ -2785,8 +2789,7 @@ function kp2027TeacherPayload(){
 }
 function kp2027FivePAllowed(code,group,value){
  if(!kp2027PilotInventory?.rphVariants?.includes("5p"))return false;
- if(code==="BM_SK_KP2027")return kp2027PilotInventory?.fivePGroups?.[group]?.includes(value)===true;
- return code==="MATH_KP2027";
+ return ["BM_SK_KP2027","MATH_KP2027"].includes(code)&&kp2027PilotInventory?.fivePGroups?.[group]?.includes(value)===true;
 }
 async function kp2027DownloadApproved(format){return kp2027DownloadVariant(format,"lengkap");}
 async function kp2027DownloadVariant(format,variant){
