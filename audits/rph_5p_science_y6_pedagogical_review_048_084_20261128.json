@@ -1,0 +1,537 @@
+{
+  "status": "ASSISTANT_SOURCE_BASED_PEDAGOGICAL_REVIEW_NOT_PANITIA_APPROVAL",
+  "year": 6,
+  "source": {
+    "path": "audits/rph_5p_science_y6_native_048_084_20261128.json",
+    "blob": "ec186f9e30d8b494b9202867517d32aae223c0ee"
+  },
+  "support": {
+    "path": "audits/rph_5p_science_y6_support_048_084_20261128.json",
+    "blob": "09237d00473b7bc5c2029cffe89f20855079ba7c"
+  },
+  "count": 37,
+  "follow_up_required": 16,
+  "policy": "Review source SP, PBD, activity phases, materials, safety and support. Proposed refinements are not source facts. No independent textbook page verification or teacher/panitia signoff. Preserve locked source, apply corrections only in reviewed 5P adaptation and retest.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-048",
+      "teaching_order": 53,
+      "sp": [
+        "8.1.1"
+      ],
+      "title": "Menjelaskan dengan contoh ciri makanan yang telah rosak.",
+      "minutes": 60,
+      "review_basis": "Empat tanda kerosakan dan dua contoh melalui foto serta kad keterangan menepati SP.",
+      "implementation_note": "Jangan menghidu, merasa atau menyentuh makanan rosak; label bau sebagai maklumat kad, bukan pemerhatian langsung. Rupa sahaja tidak menjamin keselamatan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-049",
+      "teaching_order": 54,
+      "sp": [
+        "8.1.2"
+      ],
+      "title": "Menyatakan bahawa kerosakan makanan disebabkan oleh tindakan mikroorganisma.",
+      "minutes": 30,
+      "review_basis": "Urutan foto bertarikh dan penerangan tindakan mikroorganisma menyokong SP.",
+      "implementation_note": "Foto menunjukkan tanda kerosakan, bukan pengenalpastian mikroorganisma tertentu; gunakan keterangan sumber dan jangan mengkultur sampel.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-050",
+      "teaching_order": 55,
+      "sp": [
+        "8.1.3"
+      ],
+      "title": "Menjelaskan pemerhatian tentang kerosakan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 60,
+      "review_basis": "Lakaran dua tahap, label perubahan dan penerangan berdasarkan foto memenuhi komunikasi.",
+      "implementation_note": "Cadangan penyimpanan berpandukan maklumat guru; jangan mengendalikan makanan rosak sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-051",
+      "teaching_order": 56,
+      "sp": [
+        "8.2.1"
+      ],
+      "title": "Memerihalkan tujuan pengawetan makanan.",
+      "minutes": 60,
+      "review_basis": "Dua contoh pengawetan dan perbandingan jangka hayat menyokong tujuan pengawetan.",
+      "implementation_note": "Nyatakan pengawetan tidak semestinya membunuh semua mikroorganisma; tempoh simpan ikut maklumat sumber dan keadaan penyimpanan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-052",
+      "teaching_order": 57,
+      "sp": [
+        "8.2.2"
+      ],
+      "title": "Menghubungkait kaedah pengawetan makanan dengan faktor yang mempengaruhi pertumbuhan mikroorganisma.",
+      "minutes": 60,
+      "review_basis": "Empat kaedah dikaitkan dengan air, suhu atau keasidan, memenuhi padanan faktor.",
+      "implementation_note": "Bezakan penyejukbekuan yang memperlahankan pertumbuhan daripada pemanasan yang boleh mengurangkan mikroorganisma; jangan mendakwa semua kaedah mensteril makanan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-053",
+      "teaching_order": 58,
+      "sp": [
+        "8.2.3"
+      ],
+      "title": "Menjalankan projek pengawetan sejenis makanan dengan pelbagai kaedah.",
+      "minutes": 30,
+      "review_basis": "Dua kaedah bagi buah sama, log awal dan rekod susulan bertarikh menepati projek merentasi masa.",
+      "implementation_note": "Nyatakan ketersediaan alat pengeringan dan ruang penyejukbekuan dengan seliaan guru. Asingkan evidens awal sesi daripada rekod rujukan dan dapatan susulan projek sebenar. Hasil tidak dimakan; guru urus sampel.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-054",
+      "teaching_order": 59,
+      "sp": [
+        "8.2.4"
+      ],
+      "title": "Merumuskan terdapat makanan yang boleh diawet lebih daripada satu kaedah pengawetan.",
+      "minutes": 60,
+      "review_basis": "Jadual tiga makanan dan kaedah berlainan menyokong rumusan bahawa makanan sama boleh diawet dengan lebih daripada satu cara.",
+      "implementation_note": "Pastikan setiap kad menyediakan dua kaedah yang benar-benar sesuai bagi makanan itu; tiada jaminan tempoh selamat tanpa syarat penyimpanan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-055",
+      "teaching_order": 60,
+      "sp": [
+        "8.2.5"
+      ],
+      "title": "Mengitlak terdapat makanan boleh diawet dengan menggabungkan lebih daripada satu kaedah pengawetan.",
+      "minutes": 30,
+      "review_basis": "Susun dua kaedah gabungan dan penerangan faktor menunjukkan perbezaan daripada kaedah alternatif.",
+      "implementation_note": "Gunakan contoh gabungan yang disahkan dalam sumber; pembungkusan sahaja tidak semestinya pengawetan berkesan. Aktiviti kad, bukan penghasilan makanan untuk dimakan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-056",
+      "teaching_order": 61,
+      "sp": [
+        "8.2.6"
+      ],
+      "title": "Memerihalkan kepentingan teknologi pengawetan makanan bagi memenuhi keperluan bekalan makanan.",
+      "minutes": 60,
+      "review_basis": "Tiga masalah bekalan dan cadangan strategi berasaskan kad menyokong kepentingan teknologi pengawetan.",
+      "implementation_note": "Gunakan senario logistik rekaan; jangan menyatakan tempoh atau keselamatan makanan yang tidak disokong sumber.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-057",
+      "teaching_order": 62,
+      "sp": [
+        "8.2.7"
+      ],
+      "title": "Menjelaskan pemerhatian tentang pengawetan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Carta alir dan dua kesan dengan bukti foto memenuhi komunikasi pemerhatian.",
+      "implementation_note": "Enam kotak ialah format kerja, bukan semua proses semestinya mempunyai enam langkah; label mengikut foto proses sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-058",
+      "teaching_order": 63,
+      "sp": [
+        "9.1.1"
+      ],
+      "title": "Mengenal pasti bahan buangan berdasarkan jenis bahan.",
+      "minutes": 60,
+      "review_basis": "Pengelasan gambar memenuhi aktiviti mengenal pasti jenis bahan.",
+      "implementation_note": "Kategori bahan berbahaya ialah kategori risiko, bukan satu jenis bahan yang setara dengan kaca atau logam; nyatakan bahan contoh khusus dan semak enam jenis mengikut edisi sumber.",
+      "status": "CONTENT_CORRECTION_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-059",
+      "teaching_order": 64,
+      "sp": [
+        "9.1.2"
+      ],
+      "title": "Menyatakan maksud bahan buangan terbiodegradasi dan tidak terbiodegradasi.",
+      "minutes": 30,
+      "review_basis": "Dua takrif dan empat contoh berdasarkan penguraian biologi menepati SP.",
+      "implementation_note": "Bezakan penguraian biologi daripada pecahan fizikal atau pengaratan; contoh bergantung pada jenis bahan dan keadaan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-060",
+      "teaching_order": 65,
+      "sp": [
+        "9.1.3"
+      ],
+      "title": "Mengelaskan bahan buangan kepada bahan terbiodegradasi dan tidak terbiodegradasi.",
+      "minutes": 60,
+      "review_basis": "Lapan kad dalam dua lajur dan alasan berdasarkan sifat bahan menepati pengelasan.",
+      "implementation_note": "Gunakan jenis tisu/kertas dan plastik biasa yang dinyatakan dalam kad; jangan menganggap semua produk komposit sama.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-061",
+      "teaching_order": 66,
+      "sp": [
+        "9.1.4"
+      ],
+      "title": "Menaakul penggunaan bahan terbiodegradasi dan tidak terbiodegradasi secara berhemah.",
+      "minutes": 30,
+      "review_basis": "Dua pilihan pembelian dan amalan pengurangan sisa dengan sebab menyokong penggunaan berhemah.",
+      "implementation_note": "Jangan anggap bahan boleh urai sentiasa lebih lestari; guna semula apabila sesuai dan nilai situasi kad.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-062",
+      "teaching_order": 67,
+      "sp": [
+        "9.1.5"
+      ],
+      "title": "Memerihalkan pengurusan bahan buangan secara terancang untuk kehidupan lestari.",
+      "minutes": 60,
+      "review_basis": "Empat langkah pengurusan sisa dan kes sisa berbahaya memenuhi pengurusan terancang.",
+      "implementation_note": "Gunakan foto/tong berlabel; jangan murid kendalikan minyak terpakai, kaca tajam atau sisa berbahaya.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-063",
+      "teaching_order": 68,
+      "sp": [
+        "9.1.6"
+      ],
+      "title": "Menjelaskan pemerhatian tentang pengurusan bahan buangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Poster 5R, dua kesan dan cadangan tindakan kelas memenuhi komunikasi.",
+      "implementation_note": "Semak istilah dan susunan 5R dengan sumber kurikulum yang digunakan; kekalkan contoh sumber, bukan dakwaan satu susunan universal.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-064",
+      "teaching_order": 69,
+      "sp": [
+        "10.1.1"
+      ],
+      "title": "Memerihalkan fenomena gerhana Bulan berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "minutes": 30,
+      "review_basis": "Model Matahari–Bumi–Bulan dan arah bayang menyokong simulasi gerhana Bulan.",
+      "implementation_note": "Gunakan LED kecil dan model dalam bilik sahaja; kedudukan sejajar ialah keadaan khusus, bukan setiap bulan purnama.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-065",
+      "teaching_order": 70,
+      "sp": [
+        "10.1.2"
+      ],
+      "title": "Memerihalkan fenomena gerhana Matahari berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "minutes": 30,
+      "review_basis": "Model Matahari–Bulan–Bumi dan bayang pada Bumi memenuhi simulasi gerhana Matahari.",
+      "implementation_note": "Tambah lampu LED kecil dalam senarai BBM, seperti aktiviti penerokaan. Simulasi dalam bilik sahaja; jangan lihat Matahari secara langsung.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-066",
+      "teaching_order": 71,
+      "sp": [
+        "10.1.3"
+      ],
+      "title": "Menghubungkaitkan fenomena gerhana Bulan dan gerhana Matahari dengan sifat cahaya.",
+      "minutes": 60,
+      "review_basis": "Dua model bayang dan carta perbandingan menjelaskan cahaya bergerak lurus dan halangan.",
+      "implementation_note": "Tambah lampu LED kecil pada BBM; tiada cerapan Matahari atau gerhana sebenar.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-067",
+      "teaching_order": 72,
+      "sp": [
+        "10.1.4"
+      ],
+      "title": "Meramalkan keadaan di Bumi semasa kejadian gerhana Bulan dan gerhana Matahari.",
+      "minutes": 30,
+      "review_basis": "Ramalan keadaan di kawasan bayang dan bahagian malam Bumi menyokong SP.",
+      "implementation_note": "Bezakan perubahan cahaya siang di kawasan gerhana Matahari dengan rupa Bulan dari kawasan malam; tambah model tiga bola dan LED yang digunakan kepada BBM.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-068",
+      "teaching_order": 73,
+      "sp": [
+        "10.1.5"
+      ],
+      "title": "Menjelaskan pemerhatian tentang fenomena gerhana Bulan dan gerhana Matahari melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 60,
+      "review_basis": "Dua lakaran susunan, arah cahaya dan perbandingan memenuhi komunikasi.",
+      "implementation_note": "Rujuk rekod simulasi terdahulu; tiada aktiviti melihat Matahari secara langsung.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-069",
+      "teaching_order": 74,
+      "sp": [
+        "11.1.1"
+      ],
+      "title": "Menyatakan maksud galaksi.",
+      "minutes": 30,
+      "review_basis": "Takrif galaksi serta perbandingan bintang, Sistem Suria dan galaksi memenuhi SP.",
+      "implementation_note": "Gunakan imej berlesen dan jelaskan foto berlainan bukan perbandingan skala sebenar.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-070",
+      "teaching_order": 75,
+      "sp": [
+        "11.1.2"
+      ],
+      "title": "Memerihalkan galaksi Bima Sakti.",
+      "minutes": 60,
+      "review_basis": "Dua ciri Bima Sakti dan lokasi anggaran Sistem Suria pada ilustrasi menyokong SP.",
+      "implementation_note": "Label pandangan luar Bima Sakti sebagai ilustrasi/model, bukan foto sebenar dari luar; tambah foto galaksi lain untuk perbandingan.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-071",
+      "teaching_order": 76,
+      "sp": [
+        "11.1.3"
+      ],
+      "title": "Merumuskan Sistem Suria berada dalam galaksi Bima Sakti.",
+      "minutes": 60,
+      "review_basis": "Hierarki planet, bintang, Sistem Suria dan Bima Sakti memenuhi hubungan bahagian-keseluruhan.",
+      "implementation_note": "Peta bersarang menunjukkan Sistem Suria sebagai sebahagian galaksi; elakkan menyamakan Matahari dengan planet.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-072",
+      "teaching_order": 77,
+      "sp": [
+        "11.1.4"
+      ],
+      "title": "Menjalankan simulasi untuk menggambarkan saiz Sistem Suria dalam galaksi Bima Sakti dan mengagumi ciptaan Tuhan.",
+      "minutes": 30,
+      "review_basis": "Model cakera dan pelekat memberikan perbandingan kualitatif saiz serta had model.",
+      "implementation_note": "Nyatakan dengan jelas pelekat bukan saiz berskala; hargai ciptaan Tuhan dengan menghormati pandangan murid.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-073",
+      "teaching_order": 78,
+      "sp": [
+        "11.1.5"
+      ],
+      "title": "Menjelaskan pemerhatian tentang galaksi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Perbandingan tiga bentuk galaksi dan lakaran dua ciri memenuhi komunikasi pemerhatian.",
+      "implementation_note": "Bezakan foto galaksi lain daripada ilustrasi Bima Sakti; label imej mengikut sumber.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-074",
+      "teaching_order": 79,
+      "sp": [
+        "12.1.1"
+      ],
+      "title": "Teknologi dan Kehidupan Lestari — Memerihalkan maksud kestabilan dan kekuatan dengan menjalankan aktiviti.",
+      "minutes": 60,
+      "review_basis": "Pembezaan sukar tumbang dan sukar rosak melalui model menyokong dua takrif.",
+      "implementation_note": "SP meminta aktiviti; nyatakan dua ujian model mudah yang berbeza bagi kestabilan dan kekuatan, bukan sekadar pengelasan foto. Gunakan beban ringan sahaja.",
+      "status": "SCOPE_CHECK_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-075",
+      "teaching_order": 80,
+      "sp": [
+        "12.1.2"
+      ],
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan dengan contoh struktur yang kuat dan stabil.",
+      "minutes": 30,
+      "review_basis": "Pemerhatian tapak, bahan dan penyokong serta dua contoh memenuhi SP.",
+      "implementation_note": "Ciri visual menunjukkan alasan munasabah, bukan bukti pengesahan kekuatan struktur sebenar; jangan jamin keselamatan binaan berdasarkan foto.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-076",
+      "teaching_order": 81,
+      "sp": [
+        "12.1.3"
+      ],
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kestabilan objek.",
+      "minutes": 60,
+      "review_basis": "Dua ujian berasingan luas tapak dan tinggi menyokong kawalan pemboleh ubah.",
+      "implementation_note": "Tetapkan ukuran kestabilan yang boleh dibandingkan, gangguan ringan seragam dan model lain yang setara; rekod ulangan sebenar, bukan jangkaan.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-077",
+      "teaching_order": 82,
+      "sp": [
+        "12.1.4"
+      ],
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kekuatan binaan.",
+      "minutes": 30,
+      "review_basis": "Perbandingan bentuk dan bahan secara berasingan dengan kedudukan beban tetap memenuhi eksperimen.",
+      "implementation_note": "Takrifkan had sebagai bilangan beban ringan setara sebelum bengkok yang ditetapkan; kawal ukuran rasuk dan jarak sokongan, guru menyelia.",
+      "status": "CLARITY_NOTE_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-078",
+      "teaching_order": 83,
+      "sp": [
+        "12.1.5"
+      ],
+      "title": "Teknologi dan Kehidupan Lestari — Menjana idea kepentingan binaan yang kuat dan stabil bagi kehidupan lestari.",
+      "minutes": 60,
+      "review_basis": "Padanan keselamatan, ketahanan dan sumber serta lakaran cadangan memenuhi kepentingan binaan lestari.",
+      "implementation_note": "PBD asal menyebut kestabilan; aktiviti merangkumi kekuatan dan kestabilan, jelaskan kedua-duanya tanpa mengubah evidens asal.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-079",
+      "teaching_order": 84,
+      "sp": [
+        "12.1.6"
+      ],
+      "title": "Mencipta model binaan yang kuat dan stabil dengan menggunakan bahan kitar semula yang sesuai.",
+      "minutes": 30,
+      "review_basis": "Pemasangan kadbod terpakai, ujian beban dan kestabilan serta rekod menepati projek.",
+      "implementation_note": "Urutan penerangan merujuk hasil ujian sebelum ujian dicatat dalam pengembangan; alihkan ujian awal selepas pemasangan, kemudian penerangan dan cadangan pembaikan. Bahan siap dipotong guru, beban ringan.",
+      "status": "CONTENT_CORRECTION_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-080",
+      "teaching_order": 85,
+      "sp": [
+        "12.1.7"
+      ],
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan pemerhatian tentang kestabilan dan kekuatan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 60,
+      "review_basis": "Perbandingan rekod ujian, lakaran dan cadangan beralasan memenuhi komunikasi.",
+      "implementation_note": "Bezakan data kestabilan daripada data kekuatan dan label rekod sebenar atau contoh guru dengan jelas.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-081",
+      "teaching_order": 86,
+      "sp": [
+        "13.1.1"
+      ],
+      "title": "Menyatakan maksud teknologi dan kepentingannya.",
+      "minutes": 30,
+      "review_basis": "Padanan alat dengan tugas, masa/usaha serta dua manfaat memenuhi maksud dan kepentingan teknologi.",
+      "implementation_note": "Nyatakan maklumat perbandingan bersumber kad; teknologi tidak terhad kepada peralatan elektronik.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-082",
+      "teaching_order": 87,
+      "sp": [
+        "13.1.2"
+      ],
+      "title": "Memerihalkan perkembangan teknologi dalam pelbagai bidang.",
+      "minutes": 30,
+      "review_basis": "Empat bidang dan garis masa perubahan teknologi menyokong SP.",
+      "implementation_note": "Pastikan kad urutan sejarah mempunyai sumber yang tepat; elakkan dakwaan tarikh atau manfaat yang tidak disahkan.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-083",
+      "teaching_order": 88,
+      "sp": [
+        "13.1.3"
+      ],
+      "title": "Menjelaskan melalui contoh kebaikan dan keburukan teknologi dalam kehidupan harian.",
+      "minutes": 60,
+      "review_basis": "Matriks dua manfaat dan dua risiko serta amalan bertanggungjawab menepati SP.",
+      "implementation_note": "Gunakan kad fakta yang telah disahkan; tiada demonstrasi dron atau penggunaan peranti berisiko.",
+      "status": "CONTENT_REVIEWED_DRAFT",
+      "academic_approved": false,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-084",
+      "teaching_order": 89,
+      "sp": [
+        "13.1.4"
+      ],
+      "title": "Menjelaskan pemerhatian tentang kebaikan dan keburukan teknologi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "minutes": 30,
+      "review_basis": "Lakaran dua teknologi dengan kesan positif/negatif dan cadangan lestari memenuhi komunikasi.",
+      "implementation_note": "Tambah kad fakta kesan teknologi dan foto sisa elektronik seperti disebut dalam aktiviti; tiada pengendalian sisa elektronik sebenar.",
+      "status": "BBM_ALIGNMENT_REQUIRED",
+      "academic_approved": false,
+      "ready": false
+    }
+  ],
+  "academic_approved": false,
+  "release": false
+}
