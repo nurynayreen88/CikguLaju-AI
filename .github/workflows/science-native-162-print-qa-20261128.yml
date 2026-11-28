@@ -1,0 +1,35 @@
+name: Science 162 native nonopening draft print QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'audits/rph_5p_science_y2_y3_y4_consolidated_197_20261128.json'
+      - 'tools/audit_science_5p_native_162_print_20261128.py'
+      - '.github/workflows/science-native-162-print-qa-20261128.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  print:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [2, 3, 4]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install python-docx pymupdf
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice-writer
+      - run: PYTHONPATH=. python tools/audit_science_5p_native_162_print_20261128.py --year ${{ matrix.year }} --out qa_native_science_y${{ matrix.year }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-native-draft-y${{ matrix.year }}-word-pdf
+          path: qa_native_science_y${{ matrix.year }}/
+          retention-days: 7
