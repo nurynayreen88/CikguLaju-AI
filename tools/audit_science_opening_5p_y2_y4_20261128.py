@@ -1,6 +1,6 @@
 """Source-locked opening Science 5P draft QA, no production registration.
-The original opening plans use summarized SP; no claim of full DSKP wording
-or current catalogue coverage. Never overwrite ordinary RPH or RPT.
+Full SP wording is checked against the project DSKP file manifest;
+current catalogue coverage and duration remain pending. Never overwrite ordinary RPH or RPT.
 """
 import json
 from pathlib import Path
@@ -44,7 +44,10 @@ def records():
         raise ValueError("Incomplete opening identities")
 
 def prepare(r,p):
-    descriptions=y3.SP if p.year==3 else opening.STANDARDS[p.year]
+    standards=json.loads((ROOT/'audits/rph_5p_science_y2_y3_y4_opening_dskp_text_20261128.json').read_text(encoding='utf-8'))
+    if standards['source_manifest_blob']!=git_blob(MANIFEST.read_bytes()) or standards['total_lessons']!=22:
+        raise ValueError('DSKP source mapping changed')
+    descriptions={code:item['text'] for code,item in standards['years'][str(p.year)]['standards'].items()}
     teaching=pedagogy_for_plan(p)
     data=dict(subject="SAINS SK",year=p.year,lesson_id=p.code,curriculum="KSSR",
         topic=p.unit+" / "+p.title,sk=p.sk+" "+y3.SK[p.sk],
@@ -52,7 +55,7 @@ def prepare(r,p):
         objective=p.objective,criteria=p.objective,closure=p.closure,
         aids_pak21_emk="BBM: "+p.materials+"\n"+teaching["KBAT / PAK21"]+"\nEMK: "+teaching["EMK / NILAI"],
         remedial_enrichment=p.follow_up,reflection="",
-        reference=f"Buku Teks Sains Tahun {p.year} SK, m/s {p.pages}. Draf: semak SP penuh dan tempoh.")
+        reference=f"Buku Teks Sains Tahun {p.year} SK, m/s {p.pages}. Draf: semak tempoh dan katalog aktif.")
     raw=json.dumps(data,sort_keys=True,ensure_ascii=False).encode("utf-8")
     c={k:data[k] for k in ("subject","year","lesson_id","curriculum")}
     c.update(source_sha256=sha256(raw).hexdigest(),phases=r["phases"])
