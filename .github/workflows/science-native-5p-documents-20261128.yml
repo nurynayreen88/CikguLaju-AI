@@ -1,0 +1,38 @@
+name: Science native 205 5P document draft QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/audit_science_native_5p_documents_20261128.py'
+      - 'audits/rph_5p_science_y*_native_*_20261128.json'
+      - '.github/workflows/science-native-5p-documents-20261128.yml'
+      - 'web/rph_5p_v5_layout.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  document-qa:
+    strategy:
+      fail-fast: false
+      matrix:
+        year: [5, 6]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+          python -m pip install python-docx pymupdf
+      - name: Render and inspect source-locked drafts
+        run: PYTHONPATH=. python tools/audit_science_native_5p_documents_20261128.py --year ${{ matrix.year }} --out qa_science_native_${{ matrix.year }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: science-native-y${{ matrix.year }}-5p-DRAFT-NOT-FOR-TEACHING
+          path: qa_science_native_${{ matrix.year }}/
+          retention-days: 7
