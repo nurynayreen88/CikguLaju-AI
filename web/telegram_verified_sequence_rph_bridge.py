@@ -334,6 +334,29 @@ def create_native_sequence_rph_blueprint(runtime, *, url_prefix="/internal/rph/v
             return jsonify({"error": "Native PdP choices unavailable"}), 503
         return jsonify({"source": "telegram-runtime-v1", "items": items})
 
+    @bp.get("/worksheet-identity")
+    def worksheet_identity():
+        # Read-only source identity. Never generate RPH or debit credits.
+        try:
+            year, sub = _query({"year", "subject", "unit", "lesson"})
+            if sub != "MATH" or year != 2:
+                raise ValueError("Worksheet scope not approved")
+            token = request.args["lesson"]
+            unit, rows, mapped = _resolve(runtime, year, sub, request.args["unit"], token)
+            titles = {str(row.get("pdp_title") or "").strip() for row in rows}
+            if len(titles) != 1 or not next(iter(titles)):
+                raise SourceUnavailable("Ambiguous PdP title")
+            if any(not str(row.get("sk_code") or "").strip() or
+                   not str(row.get("sp_code") or "").strip() for row in rows):
+                raise SourceUnavailable("Incomplete standards")
+            return jsonify({"available": True, "year": year, "subject": sub,
+                            "unit": unit["value"], "unit_title": unit["_unit_title"],
+                            "token": token, "topic": next(iter(titles)),
+                            "standards": [{"sk": item["sk_code"], "sp": item["sp_code"]}
+                                          for item in mapped]})
+        except (ValueError, SourceUnavailable):
+            return jsonify({"available": False}), 404
+
     @bp.get("/availability")
     def availability():
         try:
