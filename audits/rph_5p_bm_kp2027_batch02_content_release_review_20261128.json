@@ -1,0 +1,888 @@
+{
+  "status": "APPROVED_FOR_PHASED_RELEASE_SEMAKAN_PELAKSANAAN",
+  "total": 32,
+  "corrected_proposals": 32,
+  "source_version": "e6fd4333ee25cf3a7d0cdac96531a0f618fd4609",
+  "source_blob": "da4baead5f0e2f95f62b9e65e931a6d7baefba22",
+  "companion_blob": "048f0bd0e855a914f8e7a689ff497f86f65016f4",
+  "policy": "Separate from first release PR; do not merge until exact source identity, full DK review, Word/PDF QA, per-PdP gate and authenticated release checks pass.",
+  "limitations": "SP-level source review and targeted individual phase corrections, automated print checks all records, visual sampling only; actual authenticated production delivery not yet verified.",
+  "records": [
+    {
+      "group": "A",
+      "lesson": 13,
+      "sp_code": "1.1.2",
+      "source_sp": "Mendengar untuk mengecam nama abjad dan bunyi suku kata melalui lagu yang berirama lagu kanak-kanak dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat bunyi huruf atau suku kata yang diperdengarkan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal bunyi abjad dan suku kata berpandukan standard pembelajaran 1.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman abjad, kad huruf, kad suku kata",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Murid mendengar lagu abjad dan memilih kad bunyi yang sepadan.",
+        "exploration": "Murid memadankan bunyi huruf dan suku kata daripada rakaman dengan kad bersama pasangan.",
+        "explanation": "Guru menyebut semula bunyi yang mengelirukan; murid membetulkan padanan berdasarkan bunyi didengar.",
+        "elaboration": "Murid bermain angkat kad apabila mendengar bunyi dalam lagu berirama.",
+        "evaluation": "Guru memperdengarkan empat bunyi secara individu; murid mengenal pasti sekurang-kurangnya tiga bunyi dengan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Murid mendengar lagu abjad dan memilih kad bunyi yang sepadan.",
+        "exploration": "Murid memadankan bunyi huruf dan suku kata daripada rakaman dengan kad bersama pasangan.",
+        "explanation": "Guru menyebut semula bunyi yang mengelirukan; murid membetulkan padanan berdasarkan bunyi didengar.",
+        "elaboration": "Murid bermain angkat kad apabila mendengar bunyi dalam lagu berirama.",
+        "evaluation": "Guru memperdengarkan dua nama abjad dan dua bunyi suku kata secara individu; murid memilih sekurang-kurangnya tiga kad yang tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 14,
+      "sp_code": "2.1.2",
+      "source_sp": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut abjad dan suku kata berpandukan standard pembelajaran 2.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad huruf, kad suku kata, lagu abjad",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memulakan irama abjad; murid menyebut huruf bersama.",
+        "exploration": "Murid mencuba sebutan kad huruf dan suku kata secara bergilir dengan pasangan.",
+        "explanation": "Guru memperdengarkan sebutan yang betul dan murid membetulkan sebutan sendiri.",
+        "elaboration": "Murid bermain sambung sebutan suku kata apabila irama lagu dihentikan.",
+        "evaluation": "Murid menyebut empat contoh secara individu; sekurang-kurangnya tiga dengan sebutan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memulakan irama abjad; murid menyebut huruf bersama.",
+        "exploration": "Murid mencuba sebutan kad huruf dan suku kata secara bergilir dengan pasangan.",
+        "explanation": "Guru memperdengarkan sebutan yang betul dan murid membetulkan sebutan sendiri.",
+        "elaboration": "Murid bermain sambung sebutan suku kata apabila irama lagu dihentikan.",
+        "evaluation": "Murid menyebut dua nama abjad dan dua bunyi suku kata secara individu; sekurang-kurangnya tiga sebutan betul."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 15,
+      "sp_code": "3.1.2",
+      "source_sp": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid membaca tiga daripada empat suku kata atau perkataan dengan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca suku kata dan perkataan berpandukan standard pembelajaran 3.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, carta perkataan, lagu",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua kad suku kata dan murid cuba membacanya.",
+        "exploration": "Murid menyusun kad suku kata untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing bacaan melalui nyanyian; murid menggabungkan bunyi dan membetulkan bacaan.",
+        "elaboration": "Murid mencantum kad ku-da dan ma-ta lalu membaca hasil padanan.",
+        "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua kad suku kata dan murid cuba membacanya.",
+        "exploration": "Murid menyusun kad suku kata untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing bacaan melalui nyanyian; murid menggabungkan bunyi dan membetulkan bacaan.",
+        "elaboration": "Murid bermain cantum kad ku-da dan ma-ta secara bergilir, kemudian membaca hasil padanan mengikut irama lagu.",
+        "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 16,
+      "sp_code": "4.1.2",
+      "source_sp": "Membentuk dan menekap abjad dengan betulnya.",
+      "source_criteria": "Murid membentuk dan menekap sekurang-kurangnya tiga huruf dengan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membentuk dan menekap abjad berpandukan standard pembelajaran 4.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad abjad timbul, plastisin, lembar menekap",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membentuk satu huruf dan meminta murid mengenal bentuknya.",
+        "exploration": "Murid merasai bentuk huruf pada kad bertekstur dan mencuba membentuknya dengan plastisin.",
+        "explanation": "Guru menunjukkan titik mula, arah dan orientasi huruf; murid membandingkan bentuk sendiri.",
+        "elaboration": "Murid membentuk dan menekap tiga huruf pilihan seperti a, i dan u.",
+        "evaluation": "Guru memeriksa sekurang-kurangnya tiga huruf yang dibentuk dan ditekap dengan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membentuk satu huruf dan meminta murid mengenal bentuknya.",
+        "exploration": "Murid merasai bentuk huruf pada kad bertekstur dan mencuba membentuknya dengan plastisin.",
+        "explanation": "Guru menunjukkan titik mula, arah dan orientasi huruf; murid membandingkan bentuk sendiri.",
+        "elaboration": "Murid membentuk dan menekap tiga huruf pilihan seperti a, i dan u.",
+        "evaluation": "Secara individu, murid membentuk tiga huruf pilihan dengan plastisin dan menekap tiga huruf yang sama pada lembar; guru menyemak bentuk serta arah."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 17,
+      "sp_code": "3.1.3",
+      "source_sp": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul.",
+      "source_criteria": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bacaan perkataan, frasa dan ayat berpandukan standard pembelajaran 3.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perkataan, ayat mudah bergambar, carta bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid menyusun kad menjadi ayat mudah dan membacanya kepada pasangan.",
+        "evaluation": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid menyusun kad menjadi ayat mudah dan membacanya kepada pasangan.",
+        "evaluation": "Murid membaca dua perkataan, satu frasa dan dua ayat mudah secara individu; guru merekod sebutan dan memastikan kedua-dua ayat dibaca dengan tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 18,
+      "sp_code": "1.1.2",
+      "source_sp": "Mendengar untuk mengecam nama abjad dan bunyi suku kata melalui lagu yang berirama lagu kanak-kanak dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat bunyi huruf atau suku kata yang diperdengarkan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal bunyi abjad dan suku kata berpandukan standard pembelajaran 1.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman abjad, kad huruf, kad suku kata",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Murid mendengar lagu abjad dan memilih kad bunyi yang sepadan.",
+        "exploration": "Murid memadankan bunyi huruf dan suku kata daripada rakaman dengan kad bersama pasangan.",
+        "explanation": "Guru menyebut semula bunyi yang mengelirukan; murid membetulkan padanan berdasarkan bunyi didengar.",
+        "elaboration": "Murid bermain susun kad mengikut urutan bunyi yang diperdengarkan.",
+        "evaluation": "Guru memperdengarkan empat bunyi secara individu; murid mengenal pasti sekurang-kurangnya tiga bunyi dengan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Murid mendengar lagu abjad dan memilih kad bunyi yang sepadan.",
+        "exploration": "Murid memadankan bunyi huruf dan suku kata daripada rakaman dengan kad bersama pasangan.",
+        "explanation": "Guru menyebut semula bunyi yang mengelirukan; murid membetulkan padanan berdasarkan bunyi didengar.",
+        "elaboration": "Murid mendengar lagu berirama kanak-kanak yang menyelitkan nama abjad dan suku kata, kemudian bermain susun kad mengikut urutan bunyi.",
+        "evaluation": "Guru memperdengarkan dua nama abjad dan dua bunyi suku kata; murid memilih sekurang-kurangnya tiga kad tepat secara individu."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 19,
+      "sp_code": "2.1.2",
+      "source_sp": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut abjad dan suku kata berpandukan standard pembelajaran 2.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad huruf, kad suku kata, lagu abjad",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memulakan irama abjad; murid menyebut huruf bersama.",
+        "exploration": "Murid mencuba sebutan kad huruf dan suku kata secara bergilir dengan pasangan.",
+        "explanation": "Guru memperdengarkan sebutan yang betul dan murid membetulkan sebutan sendiri.",
+        "elaboration": "Murid mencabut kad dan menyebut bunyi mengikut giliran dalam permainan berirama.",
+        "evaluation": "Murid menyebut empat contoh secara individu; sekurang-kurangnya tiga dengan sebutan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memulakan irama abjad; murid menyebut huruf bersama.",
+        "exploration": "Murid mencuba sebutan kad huruf dan suku kata secara bergilir dengan pasangan.",
+        "explanation": "Guru memperdengarkan sebutan yang betul dan murid membetulkan sebutan sendiri.",
+        "elaboration": "Murid mencabut kad dan menyebut bunyi mengikut giliran dalam permainan berirama.",
+        "evaluation": "Murid menyebut dua nama abjad dan dua bunyi suku kata daripada kad rawak secara individu; sekurang-kurangnya tiga sebutan tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 20,
+      "sp_code": "3.1.2",
+      "source_sp": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid membaca tiga daripada empat suku kata atau perkataan dengan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca suku kata dan perkataan berpandukan standard pembelajaran 3.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, carta perkataan, lagu",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua kad suku kata dan murid cuba membacanya.",
+        "exploration": "Murid menyusun kad suku kata untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing bacaan melalui nyanyian; murid menggabungkan bunyi dan membetulkan bacaan.",
+        "elaboration": "Murid mencari pasangan kad bu-ku dan bo-la serta membaca perkataan yang terbentuk.",
+        "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua kad suku kata dan murid cuba membacanya.",
+        "exploration": "Murid menyusun kad suku kata untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing bacaan melalui nyanyian; murid menggabungkan bunyi dan membetulkan bacaan.",
+        "elaboration": "Murid mencari pasangan bu-ku dan bo-la dalam permainan kad, kemudian membaca perkataan mengikut irama lagu pendek.",
+        "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 21,
+      "sp_code": "4.1.2",
+      "source_sp": "Membentuk dan menekap abjad dengan betulnya.",
+      "source_criteria": "Murid membentuk dan menekap sekurang-kurangnya tiga huruf dengan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membentuk dan menekap abjad berpandukan standard pembelajaran 4.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad abjad timbul, plastisin, lembar menekap",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membentuk satu huruf dan meminta murid mengenal bentuknya.",
+        "exploration": "Murid merasai bentuk huruf pada kad bertekstur dan mencuba membentuknya dengan plastisin.",
+        "explanation": "Guru menunjukkan titik mula, arah dan orientasi huruf; murid membandingkan bentuk sendiri.",
+        "elaboration": "Murid menekap huruf lain seperti m, n dan s, kemudian membandingkan hasil dengan kad contoh.",
+        "evaluation": "Guru memeriksa sekurang-kurangnya tiga huruf yang dibentuk dan ditekap dengan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membentuk satu huruf dan meminta murid mengenal bentuknya.",
+        "exploration": "Murid merasai bentuk huruf pada kad bertekstur dan mencuba membentuknya dengan plastisin.",
+        "explanation": "Guru menunjukkan titik mula, arah dan orientasi huruf; murid membandingkan bentuk sendiri.",
+        "elaboration": "Murid membentuk huruf m, n dan s dengan plastisin, menekapnya dan membandingkan hasil dengan kad contoh.",
+        "evaluation": "Murid membentuk dan menekap tiga huruf pilihan secara individu; guru menyemak ketepatan kedua-dua hasil bagi setiap huruf."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 22,
+      "sp_code": "3.1.3",
+      "source_sp": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul.",
+      "source_criteria": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bacaan perkataan, frasa dan ayat berpandukan standard pembelajaran 3.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perkataan, ayat mudah bergambar, carta bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid membaca ayat baharu daripada carta bacaan, kemudian menyatakan maksud satu perkataan.",
+        "evaluation": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid membaca ayat baharu daripada carta bacaan, kemudian menyatakan maksud satu perkataan.",
+        "evaluation": "Murid membaca dua perkataan, satu frasa dan dua ayat mudah daripada carta baharu; guru menyemak sebutan dan memastikan kedua-dua ayat tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 23,
+      "sp_code": "1.1.3",
+      "source_sp": "Mendengar untuk mengecam sebutan perkataan, frasa dan ujaran dengan intonasi yang sesuai.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya tiga sebutan atau intonasi daripada empat contoh.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan dengar sebutan dan intonasi berpandukan standard pembelajaran 1.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman ujaran, kad frasa, kad emotikon",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperdengarkan dua ujaran dengan intonasi berbeza; murid mengenal bunyi yang didengar.",
+        "exploration": "Murid mendengar frasa dan memilih kad ungkapan yang sepadan.",
+        "explanation": "Guru memperdengarkan semula sebutan dan intonasi, murid membandingkan padanan.",
+        "elaboration": "Murid mendengar ujaran baharu dan memadankan kad pertanyaan, arahan atau makluman.",
+        "evaluation": "Guru memperdengarkan empat contoh; murid mengenal pasti sekurang-kurangnya tiga sebutan atau intonasi."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperdengarkan dua ujaran dengan intonasi berbeza; murid mengenal bunyi yang didengar.",
+        "exploration": "Murid mendengar perkataan, frasa dan ujaran pendek daripada rakaman lalu memilih kad frasa atau emotikon yang sepadan.",
+        "explanation": "Guru memperdengarkan semula sebutan dan intonasi, murid membandingkan padanan.",
+        "elaboration": "Murid mendengar ujaran baharu dan memadankan kad pertanyaan, arahan atau makluman.",
+        "evaluation": "Guru memperdengarkan empat contoh merangkumi perkataan, frasa dan ujaran; murid mengenal pasti sekurang-kurangnya tiga sebutan atau intonasi yang tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 24,
+      "sp_code": "2.1.3",
+      "source_sp": "Menyebut perkataan, frasa, dan ujaran yang didengar dengan sebutan yang betul dan intonasi yang sesuai.",
+      "source_criteria": "Murid menyebut tiga contoh dengan sebutan dan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut perkataan, frasa dan ujaran berpandukan standard pembelajaran 2.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad frasa, gambar situasi, audio ujaran",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menyebut dua frasa mudah dengan intonasi berlainan.",
+        "exploration": "Murid mencuba mengulang perkataan dan frasa yang didengar bersama pasangan.",
+        "explanation": "Guru mencontohkan sebutan dan intonasi sesuai; murid membaiki ujaran.",
+        "elaboration": "Murid menggunakan kad gambar situasi untuk menyebut ujaran yang baru didengar.",
+        "evaluation": "Murid menyebut tiga contoh yang didengar dengan sebutan dan intonasi sesuai."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyebut dua frasa mudah dengan intonasi berlainan.",
+        "exploration": "Murid mencuba mengulang perkataan dan frasa yang didengar bersama pasangan.",
+        "explanation": "Guru mencontohkan sebutan dan intonasi sesuai; murid membaiki ujaran.",
+        "elaboration": "Murid menggunakan kad gambar situasi untuk menyebut ujaran yang baru didengar.",
+        "evaluation": "Guru memperdengarkan satu perkataan, satu frasa dan satu ujaran; murid mengulang ketiga-tiganya dengan sebutan dan intonasi sesuai secara individu."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 25,
+      "sp_code": "3.1.3",
+      "source_sp": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul.",
+      "source_criteria": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bacaan perkataan, frasa dan ayat berpandukan standard pembelajaran 3.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perkataan, ayat mudah bergambar, carta bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid bertukar kad ayat bergambar dan membaca kepada rakan dengan sebutan jelas.",
+        "evaluation": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid bertukar kad ayat bergambar dan membaca kepada rakan dengan sebutan jelas.",
+        "evaluation": "Murid membaca kad dua perkataan, satu frasa dan dua ayat mudah secara individu; guru menyemak sebutan, termasuk kedua-dua ayat yang mesti tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 26,
+      "sp_code": "4.1.3",
+      "source_sp": "Menyalin abjad, suku kata, perkataan, frasa dan ayat.",
+      "source_criteria": "Murid menyalin tiga item dengan bentuk huruf, ejaan dan jarak yang boleh dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan menyalin huruf, suku kata dan ayat berpandukan standard pembelajaran 4.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad abjad, buku tulis, carta ayat",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru mempamerkan ayat pendek; murid mengenal pasti huruf awal.",
+        "exploration": "Murid meneliti kad abjad dan carta ayat, mencuba menyalin huruf serta suku kata.",
+        "explanation": "Guru menunjukkan bentuk huruf, jarak dan ejaan semasa menyalin.",
+        "elaboration": "Murid menyalin perkataan, frasa dan ayat pendek ke buku tulis serta menyemak hasil.",
+        "evaluation": "Guru memeriksa tiga item salinan berdasarkan bentuk huruf, ejaan dan jarak yang boleh dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru mempamerkan ayat pendek; murid mengenal pasti huruf awal.",
+        "exploration": "Murid meneliti bentuk abjad dan carta ayat, lalu mencuba menyalin abjad, suku kata dan perkataan pada buku tulis.",
+        "explanation": "Guru menunjukkan bentuk huruf, jarak dan ejaan semasa menyalin.",
+        "elaboration": "Murid menyalin frasa serta ayat pendek; menyemak bentuk huruf, ejaan dan jarak.",
+        "evaluation": "Guru menyemak tiga item salinan individu yang merangkumi satu perkataan, satu frasa dan satu ayat; bentuk huruf, ejaan dan jarak mesti boleh dibaca."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 27,
+      "sp_code": "3.2.1",
+      "source_sp": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks.",
+      "source_criteria": "Murid membaca tiga ayat dengan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan intonasi bacaan mengikut situasi berpandukan standard pembelajaran 3.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad ayat, dialog, audio bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat tanya dan penyata; murid mengesan perbezaan.",
+        "exploration": "Murid membaca kad ayat secara berpasangan dan membandingkan intonasi.",
+        "explanation": "Guru menunjukkan sebutan dan intonasi mengikut tanda baca serta konteks.",
+        "elaboration": "Murid membaca dialog baharu dan menyatakan sama ada konteksnya pertanyaan atau makluman.",
+        "evaluation": "Murid membaca tiga ayat dengan intonasi sesuai dan menyatakan konteks ujaran."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat tanya dan penyata; murid mengesan perbezaan.",
+        "exploration": "Murid membaca kad ayat secara berpasangan dan membandingkan intonasi.",
+        "explanation": "Guru menunjukkan sebutan dan intonasi mengikut tanda baca serta konteks.",
+        "elaboration": "Murid membaca dialog baharu dan menyatakan sama ada konteksnya pertanyaan atau makluman.",
+        "evaluation": "Murid membaca tiga ayat mudah secara individu dengan sebutan betul dan intonasi sesuai, kemudian menyatakan konteks satu ayat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 28,
+      "sp_code": "1.2.1",
+      "source_sp": "Mendengar untuk memberikan respons terhadap ujaran yang disampaikan secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons yang sesuai dan sopan berdasarkan tiga ujaran.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan terhadap ujaran berpandukan standard pembelajaran 1.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad situasi, rakaman ujaran, kad respons",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memberi ujaran ringkas; murid memilih respons sopan.",
+        "exploration": "Murid mendengar ujaran dalam pasangan dan mencuba memilih kad balasan.",
+        "explanation": "Guru membimbing pemilihan respons berhemah mengikut ujaran yang didengar.",
+        "elaboration": "Murid bergilir melakonkan respons lisan atau bukan lisan berdasarkan kad situasi.",
+        "evaluation": "Guru menyampaikan tiga ujaran; murid memberikan sekurang-kurangnya dua respons yang sesuai dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memberi ujaran ringkas; murid memilih respons sopan.",
+        "exploration": "Murid mendengar ujaran dalam pasangan dan mencuba memilih kad balasan.",
+        "explanation": "Guru membimbing pemilihan respons berhemah mengikut ujaran yang didengar.",
+        "elaboration": "Murid bergilir melakonkan respons lisan atau bukan lisan berdasarkan kad situasi.",
+        "evaluation": "Guru memperdengarkan tiga ujaran secara berasingan; murid memberikan sekurang-kurangnya dua respons lisan atau bukan lisan yang sesuai dan sopan secara individu."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 13,
+      "sp_code": "3.1.2",
+      "source_sp": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid membaca tiga daripada empat suku kata atau perkataan dengan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca suku kata dan perkataan berpandukan standard pembelajaran 3.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, carta perkataan, lagu",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua kad suku kata dan murid cuba membacanya.",
+        "exploration": "Murid menyusun kad suku kata untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing bacaan melalui nyanyian; murid menggabungkan bunyi dan membetulkan bacaan.",
+        "elaboration": "Murid mencantum kad ku-da dan ma-ta lalu membaca hasil padanan.",
+        "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua kad suku kata dan murid cuba membacanya.",
+        "exploration": "Murid menyusun kad suku kata untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing bacaan melalui nyanyian; murid menggabungkan bunyi dan membetulkan bacaan.",
+        "elaboration": "Murid bermain cantum kad ku-da dan ma-ta secara bergilir, kemudian membaca hasil padanan mengikut irama lagu.",
+        "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 14,
+      "sp_code": "4.1.2",
+      "source_sp": "Membentuk dan menekap abjad dengan betulnya.",
+      "source_criteria": "Murid membentuk dan menekap sekurang-kurangnya tiga huruf dengan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membentuk dan menekap abjad berpandukan standard pembelajaran 4.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad abjad timbul, plastisin, lembar menekap",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membentuk satu huruf dan meminta murid mengenal bentuknya.",
+        "exploration": "Murid merasai bentuk huruf pada kad bertekstur dan mencuba membentuknya dengan plastisin.",
+        "explanation": "Guru menunjukkan titik mula, arah dan orientasi huruf; murid membandingkan bentuk sendiri.",
+        "elaboration": "Murid membentuk dan menekap tiga huruf pilihan seperti a, i dan u.",
+        "evaluation": "Guru memeriksa sekurang-kurangnya tiga huruf yang dibentuk dan ditekap dengan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membentuk satu huruf dan meminta murid mengenal bentuknya.",
+        "exploration": "Murid merasai bentuk huruf pada kad bertekstur dan mencuba membentuknya dengan plastisin.",
+        "explanation": "Guru menunjukkan titik mula, arah dan orientasi huruf; murid membandingkan bentuk sendiri.",
+        "elaboration": "Murid membentuk dan menekap tiga huruf pilihan seperti a, i dan u.",
+        "evaluation": "Secara individu, murid membentuk tiga huruf pilihan dengan plastisin dan menekap tiga huruf yang sama pada lembar; guru menyemak bentuk serta arah."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 15,
+      "sp_code": "3.1.3",
+      "source_sp": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul.",
+      "source_criteria": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bacaan perkataan, frasa dan ayat berpandukan standard pembelajaran 3.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perkataan, ayat mudah bergambar, carta bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid menyusun kad menjadi ayat mudah dan membacanya kepada pasangan.",
+        "evaluation": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid menyusun kad menjadi ayat mudah dan membacanya kepada pasangan.",
+        "evaluation": "Murid membaca dua perkataan, satu frasa dan dua ayat mudah secara individu; guru merekod sebutan dan memastikan kedua-dua ayat dibaca dengan tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 16,
+      "sp_code": "1.1.2",
+      "source_sp": "Mendengar untuk mengecam nama abjad dan bunyi suku kata melalui lagu yang berirama lagu kanak-kanak dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat bunyi huruf atau suku kata yang diperdengarkan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal bunyi abjad dan suku kata berpandukan standard pembelajaran 1.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman abjad, kad huruf, kad suku kata",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Murid mendengar lagu abjad dan memilih kad bunyi yang sepadan.",
+        "exploration": "Murid memadankan bunyi huruf dan suku kata daripada rakaman dengan kad bersama pasangan.",
+        "explanation": "Guru menyebut semula bunyi yang mengelirukan; murid membetulkan padanan berdasarkan bunyi didengar.",
+        "elaboration": "Murid bermain angkat kad apabila mendengar bunyi dalam lagu berirama.",
+        "evaluation": "Guru memperdengarkan empat bunyi secara individu; murid mengenal pasti sekurang-kurangnya tiga bunyi dengan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Murid mendengar lagu abjad dan memilih kad bunyi yang sepadan.",
+        "exploration": "Murid memadankan bunyi huruf dan suku kata daripada rakaman dengan kad bersama pasangan.",
+        "explanation": "Guru menyebut semula bunyi yang mengelirukan; murid membetulkan padanan berdasarkan bunyi didengar.",
+        "elaboration": "Murid bermain angkat kad apabila mendengar bunyi dalam lagu berirama.",
+        "evaluation": "Guru memperdengarkan dua nama abjad dan dua bunyi suku kata secara individu; murid memilih sekurang-kurangnya tiga kad yang tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 17,
+      "sp_code": "2.1.2",
+      "source_sp": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga daripada empat contoh dengan sebutan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut abjad dan suku kata berpandukan standard pembelajaran 2.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad huruf, kad suku kata, lagu abjad",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memulakan irama abjad; murid menyebut huruf bersama.",
+        "exploration": "Murid mencuba sebutan kad huruf dan suku kata secara bergilir dengan pasangan.",
+        "explanation": "Guru memperdengarkan sebutan yang betul dan murid membetulkan sebutan sendiri.",
+        "elaboration": "Murid bermain sambung sebutan suku kata apabila irama lagu dihentikan.",
+        "evaluation": "Murid menyebut empat contoh secara individu; sekurang-kurangnya tiga dengan sebutan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memulakan irama abjad; murid menyebut huruf bersama.",
+        "exploration": "Murid mencuba sebutan kad huruf dan suku kata secara bergilir dengan pasangan.",
+        "explanation": "Guru memperdengarkan sebutan yang betul dan murid membetulkan sebutan sendiri.",
+        "elaboration": "Murid bermain sambung sebutan suku kata apabila irama lagu dihentikan.",
+        "evaluation": "Murid menyebut dua nama abjad dan dua bunyi suku kata secara individu; sekurang-kurangnya tiga sebutan betul."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 18,
+      "sp_code": "3.1.2",
+      "source_sp": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid membaca tiga daripada empat suku kata atau perkataan dengan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca suku kata dan perkataan berpandukan standard pembelajaran 3.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, carta perkataan, lagu",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua kad suku kata dan murid cuba membacanya.",
+        "exploration": "Murid menyusun kad suku kata untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing bacaan melalui nyanyian; murid menggabungkan bunyi dan membetulkan bacaan.",
+        "elaboration": "Murid mencari pasangan kad bu-ku dan bo-la serta membaca perkataan yang terbentuk.",
+        "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua kad suku kata dan murid cuba membacanya.",
+        "exploration": "Murid menyusun kad suku kata untuk membina perkataan mudah.",
+        "explanation": "Guru membimbing bacaan melalui nyanyian; murid menggabungkan bunyi dan membetulkan bacaan.",
+        "elaboration": "Murid mencari pasangan bu-ku dan bo-la dalam permainan kad, kemudian membaca perkataan mengikut irama lagu pendek.",
+        "evaluation": "Murid membaca empat suku kata atau perkataan secara individu; tiga bacaan tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 19,
+      "sp_code": "4.1.2",
+      "source_sp": "Membentuk dan menekap abjad dengan betulnya.",
+      "source_criteria": "Murid membentuk dan menekap sekurang-kurangnya tiga huruf dengan betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membentuk dan menekap abjad berpandukan standard pembelajaran 4.1.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad abjad timbul, plastisin, lembar menekap",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membentuk satu huruf dan meminta murid mengenal bentuknya.",
+        "exploration": "Murid merasai bentuk huruf pada kad bertekstur dan mencuba membentuknya dengan plastisin.",
+        "explanation": "Guru menunjukkan titik mula, arah dan orientasi huruf; murid membandingkan bentuk sendiri.",
+        "elaboration": "Murid menekap huruf lain seperti m, n dan s, kemudian membandingkan hasil dengan kad contoh.",
+        "evaluation": "Guru memeriksa sekurang-kurangnya tiga huruf yang dibentuk dan ditekap dengan betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membentuk satu huruf dan meminta murid mengenal bentuknya.",
+        "exploration": "Murid merasai bentuk huruf pada kad bertekstur dan mencuba membentuknya dengan plastisin.",
+        "explanation": "Guru menunjukkan titik mula, arah dan orientasi huruf; murid membandingkan bentuk sendiri.",
+        "elaboration": "Murid membentuk huruf m, n dan s dengan plastisin, menekapnya dan membandingkan hasil dengan kad contoh.",
+        "evaluation": "Murid membentuk dan menekap tiga huruf pilihan secara individu; guru menyemak ketepatan kedua-dua hasil bagi setiap huruf."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 20,
+      "sp_code": "3.1.3",
+      "source_sp": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul.",
+      "source_criteria": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bacaan perkataan, frasa dan ayat berpandukan standard pembelajaran 3.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perkataan, ayat mudah bergambar, carta bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid membaca ayat baharu daripada carta bacaan, kemudian menyatakan maksud satu perkataan.",
+        "evaluation": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid membaca ayat baharu daripada carta bacaan, kemudian menyatakan maksud satu perkataan.",
+        "evaluation": "Murid membaca dua perkataan, satu frasa dan dua ayat mudah daripada carta baharu; guru menyemak sebutan dan memastikan kedua-dua ayat tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 21,
+      "sp_code": "2.1.3",
+      "source_sp": "Menyebut perkataan, frasa, dan ujaran yang didengar dengan sebutan yang betul dan intonasi yang sesuai.",
+      "source_criteria": "Murid menyebut tiga contoh dengan sebutan dan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut perkataan, frasa dan ujaran berpandukan standard pembelajaran 2.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad frasa, gambar situasi, audio ujaran",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menyebut dua frasa mudah dengan intonasi berlainan.",
+        "exploration": "Murid mencuba mengulang perkataan dan frasa yang didengar bersama pasangan.",
+        "explanation": "Guru mencontohkan sebutan dan intonasi sesuai; murid membaiki ujaran.",
+        "elaboration": "Murid menggunakan kad gambar situasi untuk menyebut ujaran yang baru didengar.",
+        "evaluation": "Murid menyebut tiga contoh yang didengar dengan sebutan dan intonasi sesuai."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyebut dua frasa mudah dengan intonasi berlainan.",
+        "exploration": "Murid mencuba mengulang perkataan dan frasa yang didengar bersama pasangan.",
+        "explanation": "Guru mencontohkan sebutan dan intonasi sesuai; murid membaiki ujaran.",
+        "elaboration": "Murid menggunakan kad gambar situasi untuk menyebut ujaran yang baru didengar.",
+        "evaluation": "Guru memperdengarkan satu perkataan, satu frasa dan satu ujaran; murid mengulang ketiga-tiganya dengan sebutan dan intonasi sesuai secara individu."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 22,
+      "sp_code": "1.1.3",
+      "source_sp": "Mendengar untuk mengecam sebutan perkataan, frasa dan ujaran dengan intonasi yang sesuai.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya tiga sebutan atau intonasi daripada empat contoh.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan dengar sebutan dan intonasi berpandukan standard pembelajaran 1.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Rakaman ujaran, kad frasa, kad emotikon",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperdengarkan dua ujaran dengan intonasi berbeza; murid mengenal bunyi yang didengar.",
+        "exploration": "Murid mendengar frasa dan memilih kad ungkapan yang sepadan.",
+        "explanation": "Guru memperdengarkan semula sebutan dan intonasi, murid membandingkan padanan.",
+        "elaboration": "Murid mendengar ujaran baharu dan memadankan kad pertanyaan, arahan atau makluman.",
+        "evaluation": "Guru memperdengarkan empat contoh; murid mengenal pasti sekurang-kurangnya tiga sebutan atau intonasi."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperdengarkan dua ujaran dengan intonasi berbeza; murid mengenal bunyi yang didengar.",
+        "exploration": "Murid mendengar perkataan, frasa dan ujaran pendek daripada rakaman lalu memilih kad frasa atau emotikon yang sepadan.",
+        "explanation": "Guru memperdengarkan semula sebutan dan intonasi, murid membandingkan padanan.",
+        "elaboration": "Murid mendengar ujaran baharu dan memadankan kad pertanyaan, arahan atau makluman.",
+        "evaluation": "Guru memperdengarkan empat contoh merangkumi perkataan, frasa dan ujaran; murid mengenal pasti sekurang-kurangnya tiga sebutan atau intonasi yang tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 23,
+      "sp_code": "2.1.3",
+      "source_sp": "Menyebut perkataan, frasa, dan ujaran yang didengar dengan sebutan yang betul dan intonasi yang sesuai.",
+      "source_criteria": "Murid menyebut tiga contoh dengan sebutan dan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan sebut perkataan, frasa dan ujaran berpandukan standard pembelajaran 2.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad frasa, gambar situasi, audio ujaran",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menyebut dua frasa mudah dengan intonasi berlainan.",
+        "exploration": "Murid mencuba mengulang perkataan dan frasa yang didengar bersama pasangan.",
+        "explanation": "Guru mencontohkan sebutan dan intonasi sesuai; murid membaiki ujaran.",
+        "elaboration": "Murid memilih kad frasa dan mengulang ujaran mengikut intonasi contoh audio.",
+        "evaluation": "Murid menyebut tiga contoh yang didengar dengan sebutan dan intonasi sesuai."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyebut dua frasa mudah dengan intonasi berlainan.",
+        "exploration": "Murid mencuba mengulang perkataan dan frasa yang didengar bersama pasangan.",
+        "explanation": "Guru mencontohkan sebutan dan intonasi sesuai; murid membaiki ujaran.",
+        "elaboration": "Murid memilih kad frasa dan mengulang ujaran mengikut intonasi contoh audio.",
+        "evaluation": "Guru memperdengarkan satu perkataan, satu frasa dan satu ujaran; murid mengulang ketiga-tiganya dengan sebutan dan intonasi sesuai secara individu."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 24,
+      "sp_code": "3.1.3",
+      "source_sp": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul.",
+      "source_criteria": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bacaan perkataan, frasa dan ayat berpandukan standard pembelajaran 3.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perkataan, ayat mudah bergambar, carta bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid bertukar kad ayat bergambar dan membaca kepada rakan dengan sebutan jelas.",
+        "evaluation": "Murid membaca sekurang-kurangnya dua ayat mudah dengan sebutan tepat."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat mudah bergambar; murid mengesan perkataan utama.",
+        "exploration": "Murid membaca kad perkataan dan frasa berpasangan berdasarkan gambar.",
+        "explanation": "Guru memodelkan sebutan perkataan, frasa dan ayat; murid membetulkan bacaan.",
+        "elaboration": "Murid bertukar kad ayat bergambar dan membaca kepada rakan dengan sebutan jelas.",
+        "evaluation": "Murid membaca kad dua perkataan, satu frasa dan dua ayat mudah secara individu; guru menyemak sebutan, termasuk kedua-dua ayat yang mesti tepat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 25,
+      "sp_code": "4.1.3",
+      "source_sp": "Menyalin abjad, suku kata, perkataan, frasa dan ayat.",
+      "source_criteria": "Murid menyalin tiga item dengan bentuk huruf, ejaan dan jarak yang boleh dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan menyalin huruf, suku kata dan ayat berpandukan standard pembelajaran 4.1.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad abjad, buku tulis, carta ayat",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru mempamerkan ayat pendek; murid mengenal pasti huruf awal.",
+        "exploration": "Murid meneliti kad abjad dan carta ayat, mencuba menyalin huruf serta suku kata.",
+        "explanation": "Guru menunjukkan bentuk huruf, jarak dan ejaan semasa menyalin.",
+        "elaboration": "Murid menyalin perkataan, frasa dan ayat pendek ke buku tulis serta menyemak hasil.",
+        "evaluation": "Guru memeriksa tiga item salinan berdasarkan bentuk huruf, ejaan dan jarak yang boleh dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru mempamerkan ayat pendek; murid mengenal pasti huruf awal.",
+        "exploration": "Murid meneliti bentuk abjad dan carta ayat, lalu mencuba menyalin abjad, suku kata dan perkataan pada buku tulis.",
+        "explanation": "Guru menunjukkan bentuk huruf, jarak dan ejaan semasa menyalin.",
+        "elaboration": "Murid menyalin frasa serta ayat pendek; menyemak bentuk huruf, ejaan dan jarak.",
+        "evaluation": "Guru menyemak tiga item salinan individu yang merangkumi satu perkataan, satu frasa dan satu ayat; bentuk huruf, ejaan dan jarak mesti boleh dibaca."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 26,
+      "sp_code": "3.2.1",
+      "source_sp": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks.",
+      "source_criteria": "Murid membaca tiga ayat dengan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan intonasi bacaan mengikut situasi berpandukan standard pembelajaran 3.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad ayat, dialog, audio bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat tanya dan penyata; murid mengesan perbezaan.",
+        "exploration": "Murid membaca kad ayat secara berpasangan dan membandingkan intonasi.",
+        "explanation": "Guru menunjukkan sebutan dan intonasi mengikut tanda baca serta konteks.",
+        "elaboration": "Murid membaca dialog baharu dan menyatakan sama ada konteksnya pertanyaan atau makluman.",
+        "evaluation": "Murid membaca tiga ayat dengan intonasi sesuai dan menyatakan konteks ujaran."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat tanya dan penyata; murid mengesan perbezaan.",
+        "exploration": "Murid membaca kad ayat secara berpasangan dan membandingkan intonasi.",
+        "explanation": "Guru menunjukkan sebutan dan intonasi mengikut tanda baca serta konteks.",
+        "elaboration": "Murid membaca dialog baharu dan menyatakan sama ada konteksnya pertanyaan atau makluman.",
+        "evaluation": "Murid membaca tiga ayat mudah secara individu dengan sebutan betul dan intonasi sesuai, kemudian menyatakan konteks satu ayat."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 27,
+      "sp_code": "2.2.1",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid menggunakan sekurang-kurangnya dua ungkapan sopan dalam dialog konteks yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan dalam kehidupan harian berpandukan standard pembelajaran 2.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad dialog rumah dan sekolah, boneka, gambar",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin; murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah dan sekolah bersama pasangan.",
+        "explanation": "Guru membimbing penggunaan ungkapan permintaan, pertolongan dan penghargaan mengikut konteks.",
+        "elaboration": "Murid melakonkan dialog rumah atau sekolah dengan boneka atau gambar situasi.",
+        "evaluation": "Murid menggunakan sekurang-kurangnya dua ungkapan sopan dalam dialog konteks yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin; murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah dan sekolah bersama pasangan.",
+        "explanation": "Guru membimbing penggunaan ungkapan permintaan, pertolongan dan penghargaan mengikut konteks.",
+        "elaboration": "Murid melakonkan dialog rumah atau sekolah dengan boneka atau gambar situasi.",
+        "evaluation": "Secara individu dalam dialog pendek, murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dengan situasi rumah atau sekolah."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 28,
+      "sp_code": "1.2.1",
+      "source_sp": "Mendengar untuk memberikan respons terhadap ujaran yang disampaikan secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons yang sesuai dan sopan berdasarkan tiga ujaran.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan terhadap ujaran berpandukan standard pembelajaran 1.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad situasi, rakaman ujaran, kad respons",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memberi ujaran ringkas; murid memilih respons sopan.",
+        "exploration": "Murid mendengar ujaran dalam pasangan dan mencuba memilih kad balasan.",
+        "explanation": "Guru membimbing pemilihan respons berhemah mengikut ujaran yang didengar.",
+        "elaboration": "Murid bergilir melakonkan respons lisan atau bukan lisan berdasarkan kad situasi.",
+        "evaluation": "Guru menyampaikan tiga ujaran; murid memberikan sekurang-kurangnya dua respons yang sesuai dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memberi ujaran ringkas; murid memilih respons sopan.",
+        "exploration": "Murid mendengar ujaran dalam pasangan dan mencuba memilih kad balasan.",
+        "explanation": "Guru membimbing pemilihan respons berhemah mengikut ujaran yang didengar.",
+        "elaboration": "Murid bergilir melakonkan respons lisan atau bukan lisan berdasarkan kad situasi.",
+        "evaluation": "Guru memperdengarkan tiga ujaran secara berasingan; murid memberikan sekurang-kurangnya dua respons lisan atau bukan lisan yang sesuai dan sopan secara individu."
+      },
+      "review_findings": "Clarify curriculum skill coverage, individual assessment, or song/game modality while retaining the original success criterion.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    }
+  ],
+  "approval_scope": "Internal CikguLaju publication under SEMAKAN PELAKSANAAN only. Not official KPM endorsement.",
+  "evidence": {
+    "tested_head": "3a18ad328c4530c8928b6442b339fcd0ab4bcebd",
+    "print_run": 46116320668,
+    "print_job": 140890857433,
+    "print_artifact": 15251976907,
+    "print_passed": 128,
+    "print_failures": 0,
+    "visual_review": "Six actual rendered sample pages (three Group A lessons, native PDF and converted Word); complete table, no visible clipping in samples; native PDF more compact.",
+    "source_review": "26 SP and 9 resolved SK checked against DK BM SK Tahun 1 (BPK KPM 2026), printed pp.22–24,30–32,38–39,44; recorded in PR 1578.",
+    "live_authenticated": false
+  }
+}

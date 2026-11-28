@@ -28,6 +28,7 @@ jobs:
           root=Path("qa_print")
           fields={"teacher_class":"1 Bestari","teacher_date":"2027-03-02","teacher_start":"08:00","teacher_end":"09:00","teacher_students":"30","reflection_mode":"manual","reflection":"Murid memerlukan latihan susulan."}
           for g,n in gate.reviewed_records():
+              if n>12: continue
               for mode,payload in (("blank",{}),("manual",fields)):
                   stem=f"{g}-{n:03d}-{mode}"
                   (root/"word"/(stem+".docx")).write_bytes(five.render(g,n,"word",payload,reviewed=True))
@@ -46,6 +47,7 @@ jobs:
           failures=[]
           report=[]
           for g,n in gate.reviewed_records():
+              if n>12: continue
               for mode in ("blank","manual"):
                   stem=f"{g}-{n:03d}-{mode}"
                   for kind in ("native","converted"):

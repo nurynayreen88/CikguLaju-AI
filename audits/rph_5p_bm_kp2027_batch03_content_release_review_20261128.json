@@ -1,0 +1,1752 @@
+{
+  "status": "APPROVED_FOR_PHASED_RELEASE_SEMAKAN_PELAKSANAAN",
+  "total": 64,
+  "corrected_proposals": 64,
+  "source_blob": "da4baead5f0e2f95f62b9e65e931a6d7baefba22",
+  "companion_blob": "0c6cd1364227dc1a5436f0d8b2055237b32c547a",
+  "previous_review_blob": "8a40d04f234b358e18410e1f4734fcb3e9b7eb47",
+  "scope": "A29–60 and B29–60. Retain source SK/SP, objective, criterion and material. Review only; no runtime or production changes.",
+  "limitations": "SP-level source review and targeted individual phase corrections, automated print checks all records, visual sampling only; actual authenticated production delivery not yet verified.",
+  "records": [
+    {
+      "group": "A",
+      "lesson": 29,
+      "sp_code": "2.2.1",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid menggunakan sekurang-kurangnya dua ungkapan sopan dalam dialog konteks yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan dalam kehidupan harian berpandukan standard pembelajaran 2.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad dialog rumah dan sekolah, boneka, gambar",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin dan meminta murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah atau sekolah dengan pasangan.",
+        "explanation": "Guru membimbing pilihan ungkapan permintaan, pertolongan dan penghargaan.",
+        "elaboration": "Murid melakonkan situasi meminta izin di sekolah.",
+        "evaluation": "Guru menyemak penggunaan sekurang-kurangnya dua ungkapan sopan dalam konteks yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin dan meminta murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah atau sekolah dengan pasangan.",
+        "explanation": "Guru membimbing pilihan ungkapan permintaan, pertolongan dan penghargaan.",
+        "elaboration": "Murid melakonkan dialog meminta izin meminjam pembaris di sekolah; gunakan kata tolong, bolehkah atau terima kasih mengikut konteks.",
+        "evaluation": "Guru memberi satu situasi baharu di rumah atau sekolah; setiap murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dalam dialog ringkas."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 30,
+      "sp_code": "3.2.1",
+      "source_sp": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks.",
+      "source_criteria": "Murid membaca tiga ayat dengan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan intonasi bacaan mengikut situasi berpandukan standard pembelajaran 3.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad ayat, dialog, audio bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat tanya dan ayat penyata; murid mengecam perbezaan.",
+        "exploration": "Murid membaca kad ayat tanya dan penyata secara berpasangan.",
+        "explanation": "Guru menunjukkan intonasi mengikut tanda baca dan konteks.",
+        "elaboration": "Murid membaca dialog pertanyaan dan makluman.",
+        "evaluation": "Murid membaca tiga ayat dengan intonasi sesuai serta menyatakan konteksnya."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat tanya dan ayat penyata; murid mengecam perbezaan.",
+        "exploration": "Murid membaca kad ayat tanya dan penyata secara berpasangan.",
+        "explanation": "Guru menunjukkan intonasi mengikut tanda baca dan konteks.",
+        "elaboration": "Murid membaca kad ayat bagi pertanyaan tentang lokasi buku dan makluman tentang kelas; padankan dengan tanda baca dan maksud.",
+        "evaluation": "Murid membaca tiga ayat baharu secara individu dengan sebutan betul dan intonasi sesuai; nyatakan konteks sekurang-kurangnya satu ayat."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 31,
+      "sp_code": "4.2.1",
+      "source_sp": "Menggabungkan dan membentuk suku kata, perkataan dan frasa.",
+      "source_criteria": "Murid membentuk sekurang-kurangnya tiga perkataan daripada kad suku kata.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan gabung suku kata membina perkataan berpandukan standard pembelajaran 4.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, kad gambar, papan gabung",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membina satu perkataan daripada dua kad suku kata.",
+        "exploration": "Murid menyusun kad suku kata dan memadankan perkataan dengan gambar.",
+        "explanation": "Guru membimbing gabungan suku kata dan menunjukkan cara membentuk perkataan serta frasa.",
+        "elaboration": "Murid menulis perkataan daripada kad dan membina frasa mudah.",
+        "evaluation": "Murid membentuk sekurang-kurangnya tiga perkataan; guru menyemak hasil tulisan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membina satu perkataan daripada dua kad suku kata.",
+        "exploration": "Murid menyusun kad suku kata dan memadankan perkataan dengan gambar.",
+        "explanation": "Guru membimbing gabungan suku kata dan menunjukkan cara membentuk perkataan serta frasa.",
+        "elaboration": "Murid gabungkan kad ba-ju, bu-ku, bo-la; frasa baju biru; tulis perkataan dan frasa yang terbentuk.",
+        "evaluation": "Secara individu, murid menggabungkan kad suku kata menjadi sekurang-kurangnya tiga perkataan, menulisnya dan membentuk satu frasa mudah daripada perkataan tersebut."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 32,
+      "sp_code": "3.2.2",
+      "source_sp": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+      "source_criteria": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca dan memahami maklumat berpandukan standard pembelajaran 3.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Petikan pendek bergambar, kad soalan, pen penanda",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Murid menjawab soalan siapa dan apa berpandukan petikan.",
+        "evaluation": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Guru sediakan petikan latihan: Ali membawa buku ke kelas. Dia membaca di sudut bacaan. Murid membaca dan menunjukkan bukti jawapan kepada pasangan.",
+        "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 33,
+      "sp_code": "2.2.2",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut dua ungkapan relevan bagi konteks yang diberi.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan mengikut konteks berpandukan standard pembelajaran 2.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad konteks, dialog, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid memilih ungkapan untuk meminta izin.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan bagi konteks yang diberi."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid bergilir melakonkan situasi meminta izin menggunakan pensel rakan; rakan menyemak kesesuaian ujaran.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 34,
+      "sp_code": "1.2.1",
+      "source_sp": "Mendengar untuk memberikan respons terhadap ujaran yang disampaikan secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons yang sesuai dan sopan berdasarkan tiga ujaran.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan terhadap ujaran berpandukan standard pembelajaran 1.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad situasi, rakaman ujaran, kad respons",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memberi satu ujaran ringkas; murid memilih respons yang sesuai dan sopan.",
+        "exploration": "Murid mendengar ujaran pasangan dan memilih kad balasan.",
+        "explanation": "Guru membandingkan respons sesuai dan kurang sesuai berdasarkan ujaran.",
+        "elaboration": "Murid melakonkan respons lisan dan bukan lisan berpandukan kad situasi.",
+        "evaluation": "Guru memberikan tiga ujaran; murid memberikan sekurang-kurangnya dua respons yang sesuai dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memberi satu ujaran ringkas; murid memilih respons yang sesuai dan sopan.",
+        "exploration": "Murid mendengar ujaran pasangan dan memilih kad balasan.",
+        "explanation": "Guru membandingkan respons sesuai dan kurang sesuai berdasarkan ujaran.",
+        "elaboration": "Murid melakonkan respons lisan dan bukan lisan berpandukan kad situasi.",
+        "evaluation": "Guru memperdengarkan tiga ujaran sopan secara berasingan; setiap murid memberikan sekurang-kurangnya dua respons lisan atau bukan lisan yang sesuai dan sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 35,
+      "sp_code": "2.2.1",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid menggunakan sekurang-kurangnya dua ungkapan sopan dalam dialog konteks yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan dalam kehidupan harian berpandukan standard pembelajaran 2.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad dialog rumah dan sekolah, boneka, gambar",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin dan meminta murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah atau sekolah dengan pasangan.",
+        "explanation": "Guru membimbing pilihan ungkapan permintaan, pertolongan dan penghargaan.",
+        "elaboration": "Murid melakonkan situasi meminta pertolongan di rumah.",
+        "evaluation": "Guru menyemak penggunaan sekurang-kurangnya dua ungkapan sopan dalam konteks yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin dan meminta murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah atau sekolah dengan pasangan.",
+        "explanation": "Guru membimbing pilihan ungkapan permintaan, pertolongan dan penghargaan.",
+        "elaboration": "Murid melakonkan dialog meminta pertolongan mengemas meja di rumah; gunakan kata tolong, bolehkah atau terima kasih mengikut konteks.",
+        "evaluation": "Guru memberi satu situasi baharu di rumah atau sekolah; setiap murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dalam dialog ringkas."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 36,
+      "sp_code": "3.2.1",
+      "source_sp": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks.",
+      "source_criteria": "Murid membaca tiga ayat dengan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan intonasi bacaan mengikut situasi berpandukan standard pembelajaran 3.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad ayat, dialog, audio bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat tanya dan ayat penyata; murid mengecam perbezaan.",
+        "exploration": "Murid membaca kad ayat tanya dan penyata secara berpasangan.",
+        "explanation": "Guru menunjukkan intonasi mengikut tanda baca dan konteks.",
+        "elaboration": "Murid menukar giliran membaca kad ayat baharu dan menyatakan konteks.",
+        "evaluation": "Murid membaca tiga ayat dengan intonasi sesuai serta menyatakan konteksnya."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat tanya dan ayat penyata; murid mengecam perbezaan.",
+        "exploration": "Murid membaca kad ayat tanya dan penyata secara berpasangan.",
+        "explanation": "Guru menunjukkan intonasi mengikut tanda baca dan konteks.",
+        "elaboration": "Murid membaca kad ayat bagi pertanyaan waktu rehat dan makluman tentang aktiviti; padankan dengan tanda baca dan maksud.",
+        "evaluation": "Murid membaca tiga ayat baharu secara individu dengan sebutan betul dan intonasi sesuai; nyatakan konteks sekurang-kurangnya satu ayat."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 37,
+      "sp_code": "4.2.1",
+      "source_sp": "Menggabungkan dan membentuk suku kata, perkataan dan frasa.",
+      "source_criteria": "Murid membentuk sekurang-kurangnya tiga perkataan daripada kad suku kata.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan gabung suku kata membina perkataan berpandukan standard pembelajaran 4.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, kad gambar, papan gabung",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membina satu perkataan daripada dua kad suku kata.",
+        "exploration": "Murid menyusun kad suku kata dan memadankan perkataan dengan gambar.",
+        "explanation": "Guru membimbing gabungan suku kata dan menunjukkan cara membentuk perkataan serta frasa.",
+        "elaboration": "Murid menukar kad gambar, membina perkataan baharu dan menulis frasa yang sepadan.",
+        "evaluation": "Murid membentuk sekurang-kurangnya tiga perkataan; guru menyemak hasil tulisan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membina satu perkataan daripada dua kad suku kata.",
+        "exploration": "Murid menyusun kad suku kata dan memadankan perkataan dengan gambar.",
+        "explanation": "Guru membimbing gabungan suku kata dan menunjukkan cara membentuk perkataan serta frasa.",
+        "elaboration": "Murid gabungkan kad ku-da, ma-ta, me-ja; frasa meja kecil; tulis perkataan dan frasa yang terbentuk.",
+        "evaluation": "Secara individu, murid menggabungkan kad suku kata menjadi sekurang-kurangnya tiga perkataan, menulisnya dan membentuk satu frasa mudah daripada perkataan tersebut."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 38,
+      "sp_code": "3.2.2",
+      "source_sp": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+      "source_criteria": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca dan memahami maklumat berpandukan standard pembelajaran 3.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Petikan pendek bergambar, kad soalan, pen penanda",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Murid memadankan dua maklumat petikan dengan gambar.",
+        "evaluation": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Guru sediakan petikan latihan: Siti menyiram pokok di halaman. Dia menggunakan penyiram hijau. Murid membaca dan menunjukkan bukti jawapan kepada pasangan.",
+        "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 39,
+      "sp_code": "2.2.2",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut dua ungkapan relevan bagi konteks yang diberi.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan mengikut konteks berpandukan standard pembelajaran 2.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad konteks, dialog, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid memilih ungkapan sopan semasa meminta bantuan.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan bagi konteks yang diberi."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid bergilir melakonkan situasi meminta bantuan membuka bekas; rakan menyemak kesesuaian ujaran.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 40,
+      "sp_code": "1.2.2",
+      "source_sp": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi; i. ucapan selamat ii. ucapan penghargaan iii. permohonan maaf",
+      "source_criteria": "Murid memberikan respons betul kepada sekurang-kurangnya dua daripada tiga situasi ucapan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ucapan selamat, terima kasih dan maaf berpandukan standard pembelajaran 1.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad situasi, kad ucapan, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menyebut tiga ungkapan; murid menerangkan bila ungkapan tersebut digunakan.",
+        "exploration": "Murid mendengar tiga jenis ucapan dan memilih kad situasi yang sepadan.",
+        "explanation": "Guru membimbing respons sopan bagi ucapan selamat, penghargaan dan permohonan maaf.",
+        "elaboration": "Murid menggunakan boneka untuk melakonkan respons kepada tiga jenis ucapan.",
+        "evaluation": "Murid memberikan respons betul dan sopan kepada sekurang-kurangnya dua daripada tiga situasi ucapan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyebut tiga ungkapan; murid menerangkan bila ungkapan tersebut digunakan.",
+        "exploration": "Murid mendengar tiga jenis ucapan dan memilih kad situasi yang sepadan.",
+        "explanation": "Guru membimbing respons sopan bagi ucapan selamat, penghargaan dan permohonan maaf.",
+        "elaboration": "Murid menggunakan boneka untuk melakonkan respons kepada tiga jenis ucapan.",
+        "evaluation": "Guru menyampaikan satu ucapan selamat, satu penghargaan dan satu permohonan maaf; setiap murid memberi sekurang-kurangnya dua respons tepat dan sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 41,
+      "sp_code": "2.2.2",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut dua ungkapan relevan bagi konteks yang diberi.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan mengikut konteks berpandukan standard pembelajaran 2.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad konteks, dialog, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid menggunakan boneka untuk dialog penghargaan.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan bagi konteks yang diberi."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid bergilir melakonkan situasi mengucapkan terima kasih selepas menerima bantuan; rakan menyemak kesesuaian ujaran.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 42,
+      "sp_code": "3.2.2",
+      "source_sp": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+      "source_criteria": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca dan memahami maklumat berpandukan standard pembelajaran 3.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Petikan pendek bergambar, kad soalan, pen penanda",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Murid menjawab kad soalan dan menunjukkan bukti pada teks.",
+        "evaluation": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Guru sediakan petikan latihan: Ravi membawa bekal nasi. Dia makan di kantin. Murid membaca dan menunjukkan bukti jawapan kepada pasangan.",
+        "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 43,
+      "sp_code": "4.2.2",
+      "source_sp": "Membina dan menulis ayat dengan binaan ayat yang betul.",
+      "source_criteria": "Murid menulis sekurang-kurangnya dua ayat mudah dengan binaan yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bina dan tulis ayat mudah berpandukan standard pembelajaran 4.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad gambar, kad frasa, lembar ayat",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan gambar dan menyebut satu ayat mudah mengenainya.",
+        "exploration": "Murid menyusun kad perkataan untuk membina ayat berdasarkan gambar.",
+        "explanation": "Guru menunjukkan susunan ayat mudah dan membimbing pembetulan tanda baca.",
+        "elaboration": "Murid menulis ayat berdasarkan dua gambar pilihan.",
+        "evaluation": "Murid menulis sekurang-kurangnya dua ayat mudah dengan binaan yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan gambar dan menyebut satu ayat mudah mengenainya.",
+        "exploration": "Murid menyusun kad perkataan untuk membina ayat berdasarkan gambar.",
+        "explanation": "Guru menunjukkan susunan ayat mudah dan membimbing pembetulan tanda baca.",
+        "elaboration": "Murid menulis ayat berdasarkan dua gambar pilihan.",
+        "evaluation": "Murid membina dan menulis dua ayat mudah secara individu daripada dua gambar baharu; guru menyemak binaan ayat, ejaan dan tanda baca."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 44,
+      "sp_code": "3.2.3",
+      "source_sp": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan berdasarkan bacaan berpandukan standard pembelajaran 3.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Teks dialog, kad respons, gambar konteks",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca pesanan dan memilih respons sesuai.",
+        "evaluation": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan yang dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca teks ringkas tentang pesanan menjaga kebersihan meja dan memilih respons sopan; jelaskan sebab kepada pasangan.",
+        "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 45,
+      "sp_code": "2.3.1",
+      "source_sp": "Bertutur tentang perihal diri dan keluarga dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bercerita tentang diri dan keluarga berpandukan standard pembelajaran 2.3.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad biodata, gambar keluarga, kad frasa",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur spontan tentang minat sendiri kepada pasangan.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur tentang minat, makanan kegemaran dan aktiviti pilihan menggunakan ayat mudah; boleh memilih butiran umum atau rekaan tanpa mendedahkan maklumat sensitif.",
+        "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 46,
+      "sp_code": "1.2.2",
+      "source_sp": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi; i. ucapan selamat ii. ucapan penghargaan iii. permohonan maaf",
+      "source_criteria": "Murid memberikan respons betul kepada sekurang-kurangnya dua daripada tiga situasi ucapan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ucapan selamat, terima kasih dan maaf berpandukan standard pembelajaran 1.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad situasi, kad ucapan, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menyebut tiga ungkapan; murid menerangkan bila ungkapan tersebut digunakan.",
+        "exploration": "Murid mendengar tiga jenis ucapan dan memilih kad situasi yang sepadan.",
+        "explanation": "Guru membimbing respons sopan bagi ucapan selamat, penghargaan dan permohonan maaf.",
+        "elaboration": "Murid bertukar peranan dalam situasi rumah dan sekolah menggunakan kad ucapan.",
+        "evaluation": "Murid memberikan respons betul dan sopan kepada sekurang-kurangnya dua daripada tiga situasi ucapan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyebut tiga ungkapan; murid menerangkan bila ungkapan tersebut digunakan.",
+        "exploration": "Murid mendengar tiga jenis ucapan dan memilih kad situasi yang sepadan.",
+        "explanation": "Guru membimbing respons sopan bagi ucapan selamat, penghargaan dan permohonan maaf.",
+        "elaboration": "Murid bertukar peranan dalam situasi rumah dan sekolah menggunakan kad ucapan.",
+        "evaluation": "Guru menyampaikan satu ucapan selamat, satu penghargaan dan satu permohonan maaf; setiap murid memberi sekurang-kurangnya dua respons tepat dan sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 47,
+      "sp_code": "2.2.2",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut dua ungkapan relevan bagi konteks yang diberi.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan mengikut konteks berpandukan standard pembelajaran 2.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad konteks, dialog, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid bertukar watak dan memilih ungkapan mengikut konteks.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan bagi konteks yang diberi."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid bergilir melakonkan situasi meminta izin dan meminta bantuan apabila bertukar watak; rakan menyemak kesesuaian ujaran.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 48,
+      "sp_code": "3.2.2",
+      "source_sp": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+      "source_criteria": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca dan memahami maklumat berpandukan standard pembelajaran 3.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Petikan pendek bergambar, kad soalan, pen penanda",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Murid bertukar soalan berpandukan petikan dengan pasangan.",
+        "evaluation": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Guru sediakan petikan latihan: Mei menolong guru menyusun kad. Kad disimpan di dalam kotak. Murid membaca dan menunjukkan bukti jawapan kepada pasangan.",
+        "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 49,
+      "sp_code": "4.2.2",
+      "source_sp": "Membina dan menulis ayat dengan binaan ayat yang betul.",
+      "source_criteria": "Murid menulis sekurang-kurangnya dua ayat mudah dengan binaan yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bina dan tulis ayat mudah berpandukan standard pembelajaran 4.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad gambar, kad frasa, lembar ayat",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan gambar dan menyebut satu ayat mudah mengenainya.",
+        "exploration": "Murid menyusun kad perkataan untuk membina ayat berdasarkan gambar.",
+        "explanation": "Guru menunjukkan susunan ayat mudah dan membimbing pembetulan tanda baca.",
+        "elaboration": "Murid menukar gambar dengan pasangan dan menulis ayat baharu pada lembar ayat.",
+        "evaluation": "Murid menulis sekurang-kurangnya dua ayat mudah dengan binaan yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan gambar dan menyebut satu ayat mudah mengenainya.",
+        "exploration": "Murid menyusun kad perkataan untuk membina ayat berdasarkan gambar.",
+        "explanation": "Guru menunjukkan susunan ayat mudah dan membimbing pembetulan tanda baca.",
+        "elaboration": "Murid menukar gambar dengan pasangan dan menulis ayat baharu pada lembar ayat.",
+        "evaluation": "Murid membina dan menulis dua ayat mudah secara individu daripada dua gambar baharu; guru menyemak binaan ayat, ejaan dan tanda baca."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 50,
+      "sp_code": "3.2.3",
+      "source_sp": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan berdasarkan bacaan berpandukan standard pembelajaran 3.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Teks dialog, kad respons, gambar konteks",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca dialog dan menyampaikan respons sopan secara lisan.",
+        "evaluation": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan yang dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca teks ringkas tentang dialog rakan meminta bantuan mengambil buku dan memilih respons sopan; jelaskan sebab kepada pasangan.",
+        "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 51,
+      "sp_code": "2.3.1",
+      "source_sp": "Bertutur tentang perihal diri dan keluarga dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bercerita tentang diri dan keluarga berpandukan standard pembelajaran 2.3.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad biodata, gambar keluarga, kad frasa",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid menerangkan gambar keluarga contoh menggunakan frasa sesuai.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur tentang gambar keluarga rekaan dan aktiviti bersama menggunakan ayat mudah; boleh memilih butiran umum atau rekaan tanpa mendedahkan maklumat sensitif.",
+        "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 52,
+      "sp_code": "1.2.3",
+      "source_sp": "Mendengar untuk memberikan respons terhadap arahan secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid melaksanakan sekurang-kurangnya dua daripada tiga arahan mengikut urutan yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan memahami arahan di rumah dan sekolah berpandukan standard pembelajaran 1.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perintah selamat, objek kelas, gambar rumah",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memberi arahan mudah untuk murid menyusun dua objek di meja.",
+        "exploration": "Murid mendengar arahan mudah dan mencuba tindakan menggunakan objek kelas.",
+        "explanation": "Guru membimbing pengecaman kata tindakan dan urutan arahan yang selamat.",
+        "elaboration": "Murid melaksanakan arahan menyusun objek mengikut urutan.",
+        "evaluation": "Murid melaksanakan sekurang-kurangnya dua daripada tiga arahan mengikut urutan yang betul dan secara sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memberi arahan mudah untuk murid menyusun dua objek di meja.",
+        "exploration": "Murid mendengar arahan mudah dan mencuba tindakan menggunakan objek kelas.",
+        "explanation": "Guru membimbing pengecaman kata tindakan dan urutan arahan yang selamat.",
+        "elaboration": "Murid melaksanakan arahan menyusun objek mengikut urutan.",
+        "evaluation": "Guru menyampaikan tiga arahan selamat secara lisan, tanpa menunjukkan jawapan; murid melaksanakan sekurang-kurangnya dua mengikut urutan betul dan secara sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 53,
+      "sp_code": "2.3.1",
+      "source_sp": "Bertutur tentang perihal diri dan keluarga dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bercerita tentang diri dan keluarga berpandukan standard pembelajaran 2.3.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad biodata, gambar keluarga, kad frasa",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertukar giliran memperkenalkan diri berpandukan kad frasa.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur tentang hobi, permainan dan perkara yang disukai menggunakan ayat mudah; boleh memilih butiran umum atau rekaan tanpa mendedahkan maklumat sensitif.",
+        "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 54,
+      "sp_code": "3.2.3",
+      "source_sp": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan berdasarkan bacaan berpandukan standard pembelajaran 3.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Teks dialog, kad respons, gambar konteks",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid memadankan kad respons dengan gambar konteks.",
+        "evaluation": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan yang dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca teks ringkas tentang pesanan menyusun kasut pada rak dan memilih respons sopan; jelaskan sebab kepada pasangan.",
+        "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 55,
+      "sp_code": "4.1.1",
+      "source_sp": "Melakar pelbagai bentuk atau corak yang sesuai.",
+      "source_criteria": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan melakar bentuk dan corak berpandukan standard pembelajaran 4.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kertas, pensel, papan contoh corak",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan corak mudah dan meminta murid menamakan bentuk yang dikenal pasti.",
+        "exploration": "Murid mencuba melakar bentuk daripada papan contoh corak.",
+        "explanation": "Guru menunjukkan teknik melakar garisan lurus, lengkung dan bentuk asas.",
+        "elaboration": "Murid melengkapkan corak dan menghasilkan lakaran pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan corak mudah dan meminta murid menamakan bentuk yang dikenal pasti.",
+        "exploration": "Murid mencuba melakar bentuk daripada papan contoh corak.",
+        "explanation": "Guru menunjukkan teknik melakar garisan lurus, lengkung dan bentuk asas.",
+        "elaboration": "Murid melengkapkan corak dan menghasilkan lakaran pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak secara individu pada kertas; guru menyemak kejelasan lakaran."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 56,
+      "sp_code": "3.1.1",
+      "source_sp": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal simbol dan abjad berpandukan standard pembelajaran 3.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad simbol, kad abjad, carta lagu",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan tanda yang biasa dilihat dan meminta murid mengenali simbolnya.",
+        "exploration": "Murid memadankan simbol dan abjad dengan nama yang dibaca melalui permainan bahasa.",
+        "explanation": "Guru menggunakan carta lagu untuk membimbing murid menyebut dan membezakan simbol serta abjad.",
+        "elaboration": "Murid bermain mencari kad simbol dan abjad yang disebut.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan tanda yang biasa dilihat dan meminta murid mengenali simbolnya.",
+        "exploration": "Murid memadankan simbol dan abjad dengan nama yang dibaca melalui permainan bahasa.",
+        "explanation": "Guru menggunakan carta lagu untuk membimbing murid menyebut dan membezakan simbol serta abjad.",
+        "elaboration": "Murid bermain mencari kad simbol dan abjad yang disebut.",
+        "evaluation": "Secara individu, murid mengenal pasti tiga abjad dan dua simbol pada kad rawak; sekurang-kurangnya empat daripada lima padanan tepat."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 57,
+      "sp_code": "2.3.2",
+      "source_sp": "Bercerita tentang cerita yang mengandungi nilai-nilai murni berdasarkan bahan.",
+      "source_criteria": "Murid menceritakan tiga peristiwa mengikut turutan dan menyatakan satu nilai murni.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan cerita bermesej nilai murni berpandukan standard pembelajaran 2.3.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Buku cerita bergambar, kad watak, kad nilai",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan gambar cerita dan meminta murid membuat ramalan ringkas.",
+        "exploration": "Murid menyusun gambar mengikut urutan cerita dan menyebut peristiwa penting.",
+        "explanation": "Guru membimbing murid mengenal pasti nilai murni melalui tindakan watak.",
+        "elaboration": "Murid bercerita semula berpandukan kad watak dan gambar dengan ayat sendiri.",
+        "evaluation": "Murid menceritakan tiga peristiwa mengikut turutan dan menyatakan satu nilai murni."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan gambar cerita dan meminta murid membuat ramalan ringkas.",
+        "exploration": "Murid menyusun gambar mengikut urutan cerita dan menyebut peristiwa penting.",
+        "explanation": "Guru membimbing murid mengenal pasti nilai murni melalui tindakan watak.",
+        "elaboration": "Murid bercerita semula berpandukan kad watak dan gambar dengan ayat sendiri.",
+        "evaluation": "Murid bercerita semula berdasarkan gambar secara individu, menyebut tiga peristiwa mengikut urutan dan satu nilai murni yang berkaitan dengan tindakan watak."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 58,
+      "sp_code": "1.2.3",
+      "source_sp": "Mendengar untuk memberikan respons terhadap arahan secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid melaksanakan sekurang-kurangnya dua daripada tiga arahan mengikut urutan yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan memahami arahan di rumah dan sekolah berpandukan standard pembelajaran 1.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perintah selamat, objek kelas, gambar rumah",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memberi arahan mudah untuk murid menyusun dua objek di meja.",
+        "exploration": "Murid mendengar arahan mudah dan mencuba tindakan menggunakan objek kelas.",
+        "explanation": "Guru membimbing pengecaman kata tindakan dan urutan arahan yang selamat.",
+        "elaboration": "Murid bergilir mendengar dan melaksanakan arahan situasi rumah atau sekolah.",
+        "evaluation": "Murid melaksanakan sekurang-kurangnya dua daripada tiga arahan mengikut urutan yang betul dan secara sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memberi arahan mudah untuk murid menyusun dua objek di meja.",
+        "exploration": "Murid mendengar arahan mudah dan mencuba tindakan menggunakan objek kelas.",
+        "explanation": "Guru membimbing pengecaman kata tindakan dan urutan arahan yang selamat.",
+        "elaboration": "Murid bergilir mendengar dan melaksanakan arahan situasi rumah atau sekolah.",
+        "evaluation": "Guru menyampaikan tiga arahan selamat secara lisan, tanpa menunjukkan jawapan; murid melaksanakan sekurang-kurangnya dua mengikut urutan betul dan secara sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 59,
+      "sp_code": "2.3.1",
+      "source_sp": "Bertutur tentang perihal diri dan keluarga dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bercerita tentang diri dan keluarga berpandukan standard pembelajaran 2.3.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad biodata, gambar keluarga, kad frasa",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid menyampaikan maklumat tambahan secara spontan dalam pasangan.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur tentang aktiviti hujung minggu, minat dan makanan pilihan menggunakan ayat mudah; boleh memilih butiran umum atau rekaan tanpa mendedahkan maklumat sensitif.",
+        "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "A",
+      "lesson": 60,
+      "sp_code": "3.2.3",
+      "source_sp": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan berdasarkan bacaan berpandukan standard pembelajaran 3.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Teks dialog, kad respons, gambar konteks",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid menerangkan sebab pilihan respons kepada pasangan.",
+        "evaluation": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan yang dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca teks ringkas tentang dialog ucapan terima kasih selepas meminjam barang dan memilih respons sopan; jelaskan sebab kepada pasangan.",
+        "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 29,
+      "sp_code": "2.2.1",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid menggunakan sekurang-kurangnya dua ungkapan sopan dalam dialog konteks yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan dalam kehidupan harian berpandukan standard pembelajaran 2.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad dialog rumah dan sekolah, boneka, gambar",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin dan meminta murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah atau sekolah dengan pasangan.",
+        "explanation": "Guru membimbing pilihan ungkapan permintaan, pertolongan dan penghargaan.",
+        "elaboration": "Murid melakonkan situasi meminta izin di sekolah.",
+        "evaluation": "Guru menyemak penggunaan sekurang-kurangnya dua ungkapan sopan dalam konteks yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin dan meminta murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah atau sekolah dengan pasangan.",
+        "explanation": "Guru membimbing pilihan ungkapan permintaan, pertolongan dan penghargaan.",
+        "elaboration": "Murid melakonkan dialog meminta izin meminjam pembaris di sekolah; gunakan kata tolong, bolehkah atau terima kasih mengikut konteks.",
+        "evaluation": "Guru memberi satu situasi baharu di rumah atau sekolah; setiap murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dalam dialog ringkas."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 30,
+      "sp_code": "3.2.1",
+      "source_sp": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks.",
+      "source_criteria": "Murid membaca tiga ayat dengan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan intonasi bacaan mengikut situasi berpandukan standard pembelajaran 3.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad ayat, dialog, audio bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat tanya dan ayat penyata; murid mengecam perbezaan.",
+        "exploration": "Murid membaca kad ayat tanya dan penyata secara berpasangan.",
+        "explanation": "Guru menunjukkan intonasi mengikut tanda baca dan konteks.",
+        "elaboration": "Murid membaca dialog pertanyaan dan makluman.",
+        "evaluation": "Murid membaca tiga ayat dengan intonasi sesuai serta menyatakan konteksnya."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat tanya dan ayat penyata; murid mengecam perbezaan.",
+        "exploration": "Murid membaca kad ayat tanya dan penyata secara berpasangan.",
+        "explanation": "Guru menunjukkan intonasi mengikut tanda baca dan konteks.",
+        "elaboration": "Murid membaca kad ayat bagi pertanyaan tentang lokasi buku dan makluman tentang kelas; padankan dengan tanda baca dan maksud.",
+        "evaluation": "Murid membaca tiga ayat baharu secara individu dengan sebutan betul dan intonasi sesuai; nyatakan konteks sekurang-kurangnya satu ayat."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 31,
+      "sp_code": "4.2.1",
+      "source_sp": "Menggabungkan dan membentuk suku kata, perkataan dan frasa.",
+      "source_criteria": "Murid membentuk sekurang-kurangnya tiga perkataan daripada kad suku kata.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan gabung suku kata membina perkataan berpandukan standard pembelajaran 4.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, kad gambar, papan gabung",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membina satu perkataan daripada dua kad suku kata.",
+        "exploration": "Murid menyusun kad suku kata dan memadankan perkataan dengan gambar.",
+        "explanation": "Guru membimbing gabungan suku kata dan menunjukkan cara membentuk perkataan serta frasa.",
+        "elaboration": "Murid menulis perkataan daripada kad dan membina frasa mudah.",
+        "evaluation": "Murid membentuk sekurang-kurangnya tiga perkataan; guru menyemak hasil tulisan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membina satu perkataan daripada dua kad suku kata.",
+        "exploration": "Murid menyusun kad suku kata dan memadankan perkataan dengan gambar.",
+        "explanation": "Guru membimbing gabungan suku kata dan menunjukkan cara membentuk perkataan serta frasa.",
+        "elaboration": "Murid gabungkan kad ba-ju, bu-ku, bo-la; frasa baju biru; tulis perkataan dan frasa yang terbentuk.",
+        "evaluation": "Secara individu, murid menggabungkan kad suku kata menjadi sekurang-kurangnya tiga perkataan, menulisnya dan membentuk satu frasa mudah daripada perkataan tersebut."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 32,
+      "sp_code": "3.2.2",
+      "source_sp": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+      "source_criteria": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca dan memahami maklumat berpandukan standard pembelajaran 3.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Petikan pendek bergambar, kad soalan, pen penanda",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Murid menjawab soalan siapa dan apa berpandukan petikan.",
+        "evaluation": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Guru sediakan petikan latihan: Ali membawa buku ke kelas. Dia membaca di sudut bacaan. Murid membaca dan menunjukkan bukti jawapan kepada pasangan.",
+        "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 33,
+      "sp_code": "1.2.1",
+      "source_sp": "Mendengar untuk memberikan respons terhadap ujaran yang disampaikan secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons yang sesuai dan sopan berdasarkan tiga ujaran.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan terhadap ujaran berpandukan standard pembelajaran 1.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad situasi, rakaman ujaran, kad respons",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memberi satu ujaran ringkas; murid memilih respons yang sesuai dan sopan.",
+        "exploration": "Murid mendengar ujaran pasangan dan memilih kad balasan.",
+        "explanation": "Guru membandingkan respons sesuai dan kurang sesuai berdasarkan ujaran.",
+        "elaboration": "Murid melakonkan respons lisan dan bukan lisan berpandukan kad situasi.",
+        "evaluation": "Guru memberikan tiga ujaran; murid memberikan sekurang-kurangnya dua respons yang sesuai dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memberi satu ujaran ringkas; murid memilih respons yang sesuai dan sopan.",
+        "exploration": "Murid mendengar ujaran pasangan dan memilih kad balasan.",
+        "explanation": "Guru membandingkan respons sesuai dan kurang sesuai berdasarkan ujaran.",
+        "elaboration": "Murid melakonkan respons lisan dan bukan lisan berpandukan kad situasi.",
+        "evaluation": "Guru memperdengarkan tiga ujaran sopan secara berasingan; setiap murid memberikan sekurang-kurangnya dua respons lisan atau bukan lisan yang sesuai dan sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 34,
+      "sp_code": "2.2.1",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid menggunakan sekurang-kurangnya dua ungkapan sopan dalam dialog konteks yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan dalam kehidupan harian berpandukan standard pembelajaran 2.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad dialog rumah dan sekolah, boneka, gambar",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin dan meminta murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah atau sekolah dengan pasangan.",
+        "explanation": "Guru membimbing pilihan ungkapan permintaan, pertolongan dan penghargaan.",
+        "elaboration": "Murid melakonkan situasi meminta pertolongan di rumah.",
+        "evaluation": "Guru menyemak penggunaan sekurang-kurangnya dua ungkapan sopan dalam konteks yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan dua cara meminta izin dan meminta murid memilih ungkapan sopan.",
+        "exploration": "Murid mencuba melengkapkan dialog rumah atau sekolah dengan pasangan.",
+        "explanation": "Guru membimbing pilihan ungkapan permintaan, pertolongan dan penghargaan.",
+        "elaboration": "Murid melakonkan dialog meminta pertolongan mengemas meja di rumah; gunakan kata tolong, bolehkah atau terima kasih mengikut konteks.",
+        "evaluation": "Guru memberi satu situasi baharu di rumah atau sekolah; setiap murid menggunakan sekurang-kurangnya dua ungkapan sopan yang sesuai dalam dialog ringkas."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 35,
+      "sp_code": "3.2.1",
+      "source_sp": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks.",
+      "source_criteria": "Murid membaca tiga ayat dengan intonasi yang sesuai.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan intonasi bacaan mengikut situasi berpandukan standard pembelajaran 3.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad ayat, dialog, audio bacaan",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca ayat tanya dan ayat penyata; murid mengecam perbezaan.",
+        "exploration": "Murid membaca kad ayat tanya dan penyata secara berpasangan.",
+        "explanation": "Guru menunjukkan intonasi mengikut tanda baca dan konteks.",
+        "elaboration": "Murid menukar giliran membaca kad ayat baharu dan menyatakan konteks.",
+        "evaluation": "Murid membaca tiga ayat dengan intonasi sesuai serta menyatakan konteksnya."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca ayat tanya dan ayat penyata; murid mengecam perbezaan.",
+        "exploration": "Murid membaca kad ayat tanya dan penyata secara berpasangan.",
+        "explanation": "Guru menunjukkan intonasi mengikut tanda baca dan konteks.",
+        "elaboration": "Murid membaca kad ayat bagi pertanyaan waktu rehat dan makluman tentang aktiviti; padankan dengan tanda baca dan maksud.",
+        "evaluation": "Murid membaca tiga ayat baharu secara individu dengan sebutan betul dan intonasi sesuai; nyatakan konteks sekurang-kurangnya satu ayat."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 36,
+      "sp_code": "4.2.1",
+      "source_sp": "Menggabungkan dan membentuk suku kata, perkataan dan frasa.",
+      "source_criteria": "Murid membentuk sekurang-kurangnya tiga perkataan daripada kad suku kata.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan gabung suku kata membina perkataan berpandukan standard pembelajaran 4.2.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad suku kata, kad gambar, papan gabung",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membina satu perkataan daripada dua kad suku kata.",
+        "exploration": "Murid menyusun kad suku kata dan memadankan perkataan dengan gambar.",
+        "explanation": "Guru membimbing gabungan suku kata dan menunjukkan cara membentuk perkataan serta frasa.",
+        "elaboration": "Murid menukar kad gambar, membina perkataan baharu dan menulis frasa yang sepadan.",
+        "evaluation": "Murid membentuk sekurang-kurangnya tiga perkataan; guru menyemak hasil tulisan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membina satu perkataan daripada dua kad suku kata.",
+        "exploration": "Murid menyusun kad suku kata dan memadankan perkataan dengan gambar.",
+        "explanation": "Guru membimbing gabungan suku kata dan menunjukkan cara membentuk perkataan serta frasa.",
+        "elaboration": "Murid gabungkan kad ku-da, ma-ta, me-ja; frasa meja kecil; tulis perkataan dan frasa yang terbentuk.",
+        "evaluation": "Secara individu, murid menggabungkan kad suku kata menjadi sekurang-kurangnya tiga perkataan, menulisnya dan membentuk satu frasa mudah daripada perkataan tersebut."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 37,
+      "sp_code": "3.2.2",
+      "source_sp": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+      "source_criteria": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca dan memahami maklumat berpandukan standard pembelajaran 3.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Petikan pendek bergambar, kad soalan, pen penanda",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Murid memadankan dua maklumat petikan dengan gambar.",
+        "evaluation": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Guru sediakan petikan latihan: Siti menyiram pokok di halaman. Dia menggunakan penyiram hijau. Murid membaca dan menunjukkan bukti jawapan kepada pasangan.",
+        "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 38,
+      "sp_code": "1.2.2",
+      "source_sp": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi; i. ucapan selamat ii. ucapan penghargaan iii. permohonan maaf",
+      "source_criteria": "Murid memberikan respons betul kepada sekurang-kurangnya dua daripada tiga situasi ucapan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ucapan selamat, terima kasih dan maaf berpandukan standard pembelajaran 1.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad situasi, kad ucapan, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menyebut tiga ungkapan; murid menerangkan bila ungkapan tersebut digunakan.",
+        "exploration": "Murid mendengar tiga jenis ucapan dan memilih kad situasi yang sepadan.",
+        "explanation": "Guru membimbing respons sopan bagi ucapan selamat, penghargaan dan permohonan maaf.",
+        "elaboration": "Murid menggunakan boneka untuk melakonkan respons kepada tiga jenis ucapan.",
+        "evaluation": "Murid memberikan respons betul dan sopan kepada sekurang-kurangnya dua daripada tiga situasi ucapan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyebut tiga ungkapan; murid menerangkan bila ungkapan tersebut digunakan.",
+        "exploration": "Murid mendengar tiga jenis ucapan dan memilih kad situasi yang sepadan.",
+        "explanation": "Guru membimbing respons sopan bagi ucapan selamat, penghargaan dan permohonan maaf.",
+        "elaboration": "Murid menggunakan boneka untuk melakonkan respons kepada tiga jenis ucapan.",
+        "evaluation": "Guru menyampaikan satu ucapan selamat, satu penghargaan dan satu permohonan maaf; setiap murid memberi sekurang-kurangnya dua respons tepat dan sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 39,
+      "sp_code": "2.2.2",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut dua ungkapan relevan bagi konteks yang diberi.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan mengikut konteks berpandukan standard pembelajaran 2.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad konteks, dialog, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid memilih ungkapan untuk meminta izin.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan bagi konteks yang diberi."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid bergilir melakonkan situasi meminta izin menggunakan pensel rakan; rakan menyemak kesesuaian ujaran.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 40,
+      "sp_code": "3.2.2",
+      "source_sp": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+      "source_criteria": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca dan memahami maklumat berpandukan standard pembelajaran 3.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Petikan pendek bergambar, kad soalan, pen penanda",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Murid menjawab kad soalan dan menunjukkan bukti pada teks.",
+        "evaluation": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Guru sediakan petikan latihan: Ravi membawa bekal nasi. Dia makan di kantin. Murid membaca dan menunjukkan bukti jawapan kepada pasangan.",
+        "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 41,
+      "sp_code": "4.2.2",
+      "source_sp": "Membina dan menulis ayat dengan binaan ayat yang betul.",
+      "source_criteria": "Murid menulis sekurang-kurangnya dua ayat mudah dengan binaan yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bina dan tulis ayat mudah berpandukan standard pembelajaran 4.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad gambar, kad frasa, lembar ayat",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan gambar dan menyebut satu ayat mudah mengenainya.",
+        "exploration": "Murid menyusun kad perkataan untuk membina ayat berdasarkan gambar.",
+        "explanation": "Guru menunjukkan susunan ayat mudah dan membimbing pembetulan tanda baca.",
+        "elaboration": "Murid menulis ayat berdasarkan dua gambar pilihan.",
+        "evaluation": "Murid menulis sekurang-kurangnya dua ayat mudah dengan binaan yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan gambar dan menyebut satu ayat mudah mengenainya.",
+        "exploration": "Murid menyusun kad perkataan untuk membina ayat berdasarkan gambar.",
+        "explanation": "Guru menunjukkan susunan ayat mudah dan membimbing pembetulan tanda baca.",
+        "elaboration": "Murid menulis ayat berdasarkan dua gambar pilihan.",
+        "evaluation": "Murid membina dan menulis dua ayat mudah secara individu daripada dua gambar baharu; guru menyemak binaan ayat, ejaan dan tanda baca."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 42,
+      "sp_code": "3.2.3",
+      "source_sp": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan berdasarkan bacaan berpandukan standard pembelajaran 3.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Teks dialog, kad respons, gambar konteks",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca pesanan dan memilih respons sesuai.",
+        "evaluation": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan yang dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca teks ringkas tentang pesanan menjaga kebersihan meja dan memilih respons sopan; jelaskan sebab kepada pasangan.",
+        "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 43,
+      "sp_code": "2.3.1",
+      "source_sp": "Bertutur tentang perihal diri dan keluarga dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bercerita tentang diri dan keluarga berpandukan standard pembelajaran 2.3.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad biodata, gambar keluarga, kad frasa",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur spontan tentang minat sendiri kepada pasangan.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur tentang minat, makanan kegemaran dan aktiviti pilihan menggunakan ayat mudah; boleh memilih butiran umum atau rekaan tanpa mendedahkan maklumat sensitif.",
+        "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 44,
+      "sp_code": "1.2.2",
+      "source_sp": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi; i. ucapan selamat ii. ucapan penghargaan iii. permohonan maaf",
+      "source_criteria": "Murid memberikan respons betul kepada sekurang-kurangnya dua daripada tiga situasi ucapan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ucapan selamat, terima kasih dan maaf berpandukan standard pembelajaran 1.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad situasi, kad ucapan, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menyebut tiga ungkapan; murid menerangkan bila ungkapan tersebut digunakan.",
+        "exploration": "Murid mendengar tiga jenis ucapan dan memilih kad situasi yang sepadan.",
+        "explanation": "Guru membimbing respons sopan bagi ucapan selamat, penghargaan dan permohonan maaf.",
+        "elaboration": "Murid bertukar peranan dalam situasi rumah dan sekolah menggunakan kad ucapan.",
+        "evaluation": "Murid memberikan respons betul dan sopan kepada sekurang-kurangnya dua daripada tiga situasi ucapan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menyebut tiga ungkapan; murid menerangkan bila ungkapan tersebut digunakan.",
+        "exploration": "Murid mendengar tiga jenis ucapan dan memilih kad situasi yang sepadan.",
+        "explanation": "Guru membimbing respons sopan bagi ucapan selamat, penghargaan dan permohonan maaf.",
+        "elaboration": "Murid bertukar peranan dalam situasi rumah dan sekolah menggunakan kad ucapan.",
+        "evaluation": "Guru menyampaikan satu ucapan selamat, satu penghargaan dan satu permohonan maaf; setiap murid memberi sekurang-kurangnya dua respons tepat dan sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 45,
+      "sp_code": "2.2.2",
+      "source_sp": "Menyebut dan menggunakan ujaran secara sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut dua ungkapan relevan bagi konteks yang diberi.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan ujaran sopan mengikut konteks berpandukan standard pembelajaran 2.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad konteks, dialog, boneka",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid memilih ungkapan sopan semasa meminta bantuan.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan bagi konteks yang diberi."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan situasi meminta izin dan meminta murid menyebut ujaran yang sesuai.",
+        "exploration": "Murid mencuba dialog mengikut kad konteks dan pendengar.",
+        "explanation": "Guru membandingkan kesesuaian ujaran dan membimbing murid membetulkan pilihan.",
+        "elaboration": "Murid bergilir melakonkan situasi meminta bantuan membuka bekas; rakan menyemak kesesuaian ujaran.",
+        "evaluation": "Murid menyebut dua ungkapan relevan dan sopan dalam situasi baharu secara individu; guru menyemak konteks dan kesantunan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 46,
+      "sp_code": "3.2.2",
+      "source_sp": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+      "source_criteria": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan membaca dan memahami maklumat berpandukan standard pembelajaran 3.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Petikan pendek bergambar, kad soalan, pen penanda",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Murid bertukar soalan berpandukan petikan dengan pasangan.",
+        "evaluation": "Murid mengenal pasti dua maklumat tepat daripada bahan dibaca secara individu."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan petikan dan meminta murid meneka isi berdasarkan gambar.",
+        "exploration": "Murid membaca petikan bergambar dan menggaris kata kunci.",
+        "explanation": "Guru membimbing pemilihan maklumat utama berdasarkan konteks.",
+        "elaboration": "Guru sediakan petikan latihan: Mei menolong guru menyusun kad. Kad disimpan di dalam kotak. Murid membaca dan menunjukkan bukti jawapan kepada pasangan.",
+        "evaluation": "Murid membaca petikan bergambar baharu yang setara secara individu dan mengenal pasti dua maklumat tepat; guru menyemak jawapan berdasarkan teks."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 47,
+      "sp_code": "4.2.2",
+      "source_sp": "Membina dan menulis ayat dengan binaan ayat yang betul.",
+      "source_criteria": "Murid menulis sekurang-kurangnya dua ayat mudah dengan binaan yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bina dan tulis ayat mudah berpandukan standard pembelajaran 4.2.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad gambar, kad frasa, lembar ayat",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan gambar dan menyebut satu ayat mudah mengenainya.",
+        "exploration": "Murid menyusun kad perkataan untuk membina ayat berdasarkan gambar.",
+        "explanation": "Guru menunjukkan susunan ayat mudah dan membimbing pembetulan tanda baca.",
+        "elaboration": "Murid menukar gambar dengan pasangan dan menulis ayat baharu pada lembar ayat.",
+        "evaluation": "Murid menulis sekurang-kurangnya dua ayat mudah dengan binaan yang betul."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan gambar dan menyebut satu ayat mudah mengenainya.",
+        "exploration": "Murid menyusun kad perkataan untuk membina ayat berdasarkan gambar.",
+        "explanation": "Guru menunjukkan susunan ayat mudah dan membimbing pembetulan tanda baca.",
+        "elaboration": "Murid menukar gambar dengan pasangan dan menulis ayat baharu pada lembar ayat.",
+        "evaluation": "Murid membina dan menulis dua ayat mudah secara individu daripada dua gambar baharu; guru menyemak binaan ayat, ejaan dan tanda baca."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 48,
+      "sp_code": "3.2.3",
+      "source_sp": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan berdasarkan bacaan berpandukan standard pembelajaran 3.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Teks dialog, kad respons, gambar konteks",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca dialog dan menyampaikan respons sopan secara lisan.",
+        "evaluation": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan yang dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca teks ringkas tentang dialog rakan meminta bantuan mengambil buku dan memilih respons sopan; jelaskan sebab kepada pasangan.",
+        "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 49,
+      "sp_code": "2.3.1",
+      "source_sp": "Bertutur tentang perihal diri dan keluarga dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bercerita tentang diri dan keluarga berpandukan standard pembelajaran 2.3.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad biodata, gambar keluarga, kad frasa",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid menerangkan gambar keluarga contoh menggunakan frasa sesuai.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur tentang gambar keluarga rekaan dan aktiviti bersama menggunakan ayat mudah; boleh memilih butiran umum atau rekaan tanpa mendedahkan maklumat sensitif.",
+        "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 50,
+      "sp_code": "1.2.3",
+      "source_sp": "Mendengar untuk memberikan respons terhadap arahan secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid melaksanakan sekurang-kurangnya dua daripada tiga arahan mengikut urutan yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan memahami arahan di rumah dan sekolah berpandukan standard pembelajaran 1.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perintah selamat, objek kelas, gambar rumah",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memberi arahan mudah untuk murid menyusun dua objek di meja.",
+        "exploration": "Murid mendengar arahan mudah dan mencuba tindakan menggunakan objek kelas.",
+        "explanation": "Guru membimbing pengecaman kata tindakan dan urutan arahan yang selamat.",
+        "elaboration": "Murid melaksanakan arahan menyusun objek mengikut urutan.",
+        "evaluation": "Murid melaksanakan sekurang-kurangnya dua daripada tiga arahan mengikut urutan yang betul dan secara sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memberi arahan mudah untuk murid menyusun dua objek di meja.",
+        "exploration": "Murid mendengar arahan mudah dan mencuba tindakan menggunakan objek kelas.",
+        "explanation": "Guru membimbing pengecaman kata tindakan dan urutan arahan yang selamat.",
+        "elaboration": "Murid melaksanakan arahan menyusun objek mengikut urutan.",
+        "evaluation": "Guru menyampaikan tiga arahan selamat secara lisan, tanpa menunjukkan jawapan; murid melaksanakan sekurang-kurangnya dua mengikut urutan betul dan secara sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 51,
+      "sp_code": "2.3.1",
+      "source_sp": "Bertutur tentang perihal diri dan keluarga dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bercerita tentang diri dan keluarga berpandukan standard pembelajaran 2.3.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad biodata, gambar keluarga, kad frasa",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertukar giliran memperkenalkan diri berpandukan kad frasa.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur tentang hobi, permainan dan perkara yang disukai menggunakan ayat mudah; boleh memilih butiran umum atau rekaan tanpa mendedahkan maklumat sensitif.",
+        "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 52,
+      "sp_code": "3.2.3",
+      "source_sp": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan berdasarkan bacaan berpandukan standard pembelajaran 3.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Teks dialog, kad respons, gambar konteks",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid memadankan kad respons dengan gambar konteks.",
+        "evaluation": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan yang dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca teks ringkas tentang pesanan menyusun kasut pada rak dan memilih respons sopan; jelaskan sebab kepada pasangan.",
+        "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 53,
+      "sp_code": "4.1.1",
+      "source_sp": "Melakar pelbagai bentuk atau corak yang sesuai.",
+      "source_criteria": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan melakar bentuk dan corak berpandukan standard pembelajaran 4.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kertas, pensel, papan contoh corak",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan corak mudah dan meminta murid menamakan bentuk yang dikenal pasti.",
+        "exploration": "Murid mencuba melakar bentuk daripada papan contoh corak.",
+        "explanation": "Guru menunjukkan teknik melakar garisan lurus, lengkung dan bentuk asas.",
+        "elaboration": "Murid melengkapkan corak dan menghasilkan lakaran pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan corak mudah dan meminta murid menamakan bentuk yang dikenal pasti.",
+        "exploration": "Murid mencuba melakar bentuk daripada papan contoh corak.",
+        "explanation": "Guru menunjukkan teknik melakar garisan lurus, lengkung dan bentuk asas.",
+        "elaboration": "Murid melengkapkan corak dan menghasilkan lakaran pilihan.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak secara individu pada kertas; guru menyemak kejelasan lakaran."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 54,
+      "sp_code": "3.1.1",
+      "source_sp": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal simbol dan abjad berpandukan standard pembelajaran 3.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad simbol, kad abjad, carta lagu",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan tanda yang biasa dilihat dan meminta murid mengenali simbolnya.",
+        "exploration": "Murid memadankan simbol dan abjad dengan nama yang dibaca melalui permainan bahasa.",
+        "explanation": "Guru menggunakan carta lagu untuk membimbing murid menyebut dan membezakan simbol serta abjad.",
+        "elaboration": "Murid bermain mencari kad simbol dan abjad yang disebut.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan tanda yang biasa dilihat dan meminta murid mengenali simbolnya.",
+        "exploration": "Murid memadankan simbol dan abjad dengan nama yang dibaca melalui permainan bahasa.",
+        "explanation": "Guru menggunakan carta lagu untuk membimbing murid menyebut dan membezakan simbol serta abjad.",
+        "elaboration": "Murid bermain mencari kad simbol dan abjad yang disebut.",
+        "evaluation": "Secara individu, murid mengenal pasti tiga abjad dan dua simbol pada kad rawak; sekurang-kurangnya empat daripada lima padanan tepat."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 55,
+      "sp_code": "2.3.2",
+      "source_sp": "Bercerita tentang cerita yang mengandungi nilai-nilai murni berdasarkan bahan.",
+      "source_criteria": "Murid menceritakan tiga peristiwa mengikut turutan dan menyatakan satu nilai murni.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan cerita bermesej nilai murni berpandukan standard pembelajaran 2.3.2 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Buku cerita bergambar, kad watak, kad nilai",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan gambar cerita dan meminta murid membuat ramalan ringkas.",
+        "exploration": "Murid menyusun gambar mengikut urutan cerita dan menyebut peristiwa penting.",
+        "explanation": "Guru membimbing murid mengenal pasti nilai murni melalui tindakan watak.",
+        "elaboration": "Murid bercerita semula berpandukan kad watak dan gambar dengan ayat sendiri.",
+        "evaluation": "Murid menceritakan tiga peristiwa mengikut turutan dan menyatakan satu nilai murni."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan gambar cerita dan meminta murid membuat ramalan ringkas.",
+        "exploration": "Murid menyusun gambar mengikut urutan cerita dan menyebut peristiwa penting.",
+        "explanation": "Guru membimbing murid mengenal pasti nilai murni melalui tindakan watak.",
+        "elaboration": "Murid bercerita semula berpandukan kad watak dan gambar dengan ayat sendiri.",
+        "evaluation": "Murid bercerita semula berdasarkan gambar secara individu, menyebut tiga peristiwa mengikut urutan dan satu nilai murni yang berkaitan dengan tindakan watak."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 56,
+      "sp_code": "1.2.3",
+      "source_sp": "Mendengar untuk memberikan respons terhadap arahan secara sopan mengikut situasi di rumah dan di sekolah.",
+      "source_criteria": "Murid melaksanakan sekurang-kurangnya dua daripada tiga arahan mengikut urutan yang betul.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan memahami arahan di rumah dan sekolah berpandukan standard pembelajaran 1.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad perintah selamat, objek kelas, gambar rumah",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memberi arahan mudah untuk murid menyusun dua objek di meja.",
+        "exploration": "Murid mendengar arahan mudah dan mencuba tindakan menggunakan objek kelas.",
+        "explanation": "Guru membimbing pengecaman kata tindakan dan urutan arahan yang selamat.",
+        "elaboration": "Murid bergilir mendengar dan melaksanakan arahan situasi rumah atau sekolah.",
+        "evaluation": "Murid melaksanakan sekurang-kurangnya dua daripada tiga arahan mengikut urutan yang betul dan secara sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memberi arahan mudah untuk murid menyusun dua objek di meja.",
+        "exploration": "Murid mendengar arahan mudah dan mencuba tindakan menggunakan objek kelas.",
+        "explanation": "Guru membimbing pengecaman kata tindakan dan urutan arahan yang selamat.",
+        "elaboration": "Murid bergilir mendengar dan melaksanakan arahan situasi rumah atau sekolah.",
+        "evaluation": "Guru menyampaikan tiga arahan selamat secara lisan, tanpa menunjukkan jawapan; murid melaksanakan sekurang-kurangnya dua mengikut urutan betul dan secara sopan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 57,
+      "sp_code": "2.3.1",
+      "source_sp": "Bertutur tentang perihal diri dan keluarga dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks.",
+      "source_criteria": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan bercerita tentang diri dan keluarga berpandukan standard pembelajaran 2.3.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad biodata, gambar keluarga, kad frasa",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid menyampaikan maklumat tambahan secara spontan dalam pasangan.",
+        "evaluation": "Murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah dan sopan."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memperkenalkan diri dengan dua ayat mudah.",
+        "exploration": "Murid memilih kata dan frasa pada kad biodata untuk bertutur tentang diri atau keluarga.",
+        "explanation": "Guru membimbing pembinaan ayat mudah dan penggunaan bahasa sopan tanpa memaksa perkongsian maklumat peribadi.",
+        "elaboration": "Murid bertutur tentang aktiviti hujung minggu, minat dan makanan pilihan menggunakan ayat mudah; boleh memilih butiran umum atau rekaan tanpa mendedahkan maklumat sensitif.",
+        "evaluation": "Guru memberi kad konteks baharu; murid menyebut sekurang-kurangnya tiga maklumat diri atau keluarga dalam ayat mudah, secara spontan dan sopan; butiran rekaan dibenarkan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 58,
+      "sp_code": "3.2.3",
+      "source_sp": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+      "source_criteria": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan respons sopan berdasarkan bacaan berpandukan standard pembelajaran 3.2.3 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Teks dialog, kad respons, gambar konteks",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid menerangkan sebab pilihan respons kepada pasangan.",
+        "evaluation": "Murid memberikan sekurang-kurangnya dua respons relevan berdasarkan bahan yang dibaca."
+      },
+      "proposed_phases": {
+        "engagement": "Guru membaca satu pesanan dan meminta murid menyatakan tindakan sesuai.",
+        "exploration": "Murid membaca teks ringkas dan memilih kad respons berpandukan maklumat.",
+        "explanation": "Guru membimbing pengenalpastian konteks serta sebab sesuatu respons dianggap sopan.",
+        "elaboration": "Murid membaca teks ringkas tentang dialog ucapan terima kasih selepas meminjam barang dan memilih respons sopan; jelaskan sebab kepada pasangan.",
+        "evaluation": "Murid membaca dua pesanan atau dialog ringkas baharu secara individu dan memberikan dua respons yang relevan serta sopan berdasarkan bahan."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 59,
+      "sp_code": "4.1.1",
+      "source_sp": "Melakar pelbagai bentuk atau corak yang sesuai.",
+      "source_criteria": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan melakar bentuk dan corak berpandukan standard pembelajaran 4.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kertas, pensel, papan contoh corak",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru memaparkan corak mudah dan meminta murid menamakan bentuk yang dikenal pasti.",
+        "exploration": "Murid mencuba melakar bentuk daripada papan contoh corak.",
+        "explanation": "Guru menunjukkan teknik melakar garisan lurus, lengkung dan bentuk asas.",
+        "elaboration": "Murid menghasilkan corak berulang dengan dua bentuk pada kertas.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak yang jelas."
+      },
+      "proposed_phases": {
+        "engagement": "Guru memaparkan corak mudah dan meminta murid menamakan bentuk yang dikenal pasti.",
+        "exploration": "Murid mencuba melakar bentuk daripada papan contoh corak.",
+        "explanation": "Guru menunjukkan teknik melakar garisan lurus, lengkung dan bentuk asas.",
+        "elaboration": "Murid menghasilkan corak berulang dengan dua bentuk pada kertas.",
+        "evaluation": "Murid melakar sekurang-kurangnya dua bentuk atau corak secara individu pada kertas; guru menyemak kejelasan lakaran."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    },
+    {
+      "group": "B",
+      "lesson": 60,
+      "sp_code": "3.1.1",
+      "source_sp": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa.",
+      "source_criteria": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad.",
+      "source_objective": "Pada akhir PdP, murid dapat melaksanakan tugasan kenal simbol dan abjad berpandukan standard pembelajaran 3.1.1 dan menunjukkan evidens pencapaian secara individu.",
+      "source_material": "Kad simbol, kad abjad, carta lagu",
+      "source_duration": 60,
+      "original_phases": {
+        "engagement": "Guru menunjukkan tanda yang biasa dilihat dan meminta murid mengenali simbolnya.",
+        "exploration": "Murid memadankan simbol dan abjad dengan nama yang dibaca melalui permainan bahasa.",
+        "explanation": "Guru menggunakan carta lagu untuk membimbing murid menyebut dan membezakan simbol serta abjad.",
+        "elaboration": "Murid mengasingkan kad mengikut jenis dan menyebut namanya dalam permainan berirama.",
+        "evaluation": "Murid mengenal pasti sekurang-kurangnya empat daripada lima simbol atau abjad."
+      },
+      "proposed_phases": {
+        "engagement": "Guru menunjukkan tanda yang biasa dilihat dan meminta murid mengenali simbolnya.",
+        "exploration": "Murid memadankan simbol dan abjad dengan nama yang dibaca melalui permainan bahasa.",
+        "explanation": "Guru menggunakan carta lagu untuk membimbing murid menyebut dan membezakan simbol serta abjad.",
+        "elaboration": "Murid mengasingkan kad mengikut jenis dan menyebut namanya dalam permainan berirama.",
+        "evaluation": "Secara individu, murid mengenal pasti tiga abjad dan dua simbol pada kad rawak; sekurang-kurangnya empat daripada lima padanan tepat."
+      },
+      "review_findings": "Checked source skill and criterion; clarified individual evidence and where appropriate distinct contextual practice. Parallel A/B lesson activities may intentionally match.",
+      "status": "APPROVED_FOR_RELEASE",
+      "ready": true
+    }
+  ],
+  "approval_scope": "Internal CikguLaju publication under SEMAKAN PELAKSANAAN only. Not official KPM endorsement.",
+  "evidence": {
+    "tested_head": "3a18ad328c4530c8928b6442b339fcd0ab4bcebd",
+    "print_run": 46116320668,
+    "print_job": 140890857246,
+    "print_artifact": 15252115857,
+    "print_passed": 256,
+    "print_failures": 0,
+    "visual_review": "Six actual rendered sample pages (three Group A lessons, native PDF and converted Word); complete table, no visible clipping in samples; native PDF more compact.",
+    "source_review": "26 SP and 9 resolved SK checked against DK BM SK Tahun 1 (BPK KPM 2026), printed pp.22–24,30–32,38–39,44; recorded in PR 1578.",
+    "live_authenticated": false
+  }
+}

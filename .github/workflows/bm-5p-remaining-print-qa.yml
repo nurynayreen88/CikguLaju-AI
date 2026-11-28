@@ -1,0 +1,106 @@
+name: BM 5P remaining 329 print QA
+on:
+  pull_request:
+    paths:
+      - 'web/kp2027_bm_5p_release.py'
+      - 'audits/rph_5p_bm_kp2027_batch*_content_release_review_20261128.json'
+      - '.github/workflows/bm-5p-remaining-print-qa.yml'
+permissions:
+  contents: read
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        batch: [2,3,4,5]
+    env:
+      QA_BATCH: ${{ matrix.batch }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y libreoffice-writer fonts-liberation
+          pip install -r requirements.txt python-docx pymupdf
+      - name: Generate exact reviewed documents
+        run: |
+          mkdir -p qa_print/word qa_print/native qa_print/converted qa_print/samples
+          PYTHONPATH=. python - <<'PY'
+          import os
+          from pathlib import Path
+          from web import kp2027_bm_5p as five, kp2027_bm_5p_release as gate
+          root=Path("qa_print")
+          fields={"teacher_class":"1 Bestari","teacher_date":"2027-03-02","teacher_start":"08:00","teacher_end":"09:00","teacher_students":"30","reflection_mode":"manual","reflection":"Murid memerlukan latihan susulan."}
+          start,end_a,end_b=gate.BATCH_RANGES[int(os.environ['QA_BATCH'])-1]
+          ids=[(g,n) for g,end in (('A',end_a),('B',end_b)) for n in range(start,end+1)]
+          assert all((g,n) in gate.reviewed_records() for g,n in ids)
+          for g,n in ids:
+              for mode,payload in (("blank",{}),("manual",fields)):
+                  stem=f"{g}-{n:03d}-{mode}"
+                  (root/"word"/(stem+".docx")).write_bytes(five.render(g,n,"word",payload,reviewed=True))
+                  (root/"native"/(stem+".pdf")).write_bytes(five.render(g,n,"pdf",payload,reviewed=True))
+          PY
+      - name: Convert original Word documents
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          files=sorted(Path("qa_print/word").glob("*.docx"))
+          out=Path("qa_print/converted")
+          for offset in range(0,len(files),24):
+              chunk=files[offset:offset+24]
+              subprocess.run(["libreoffice",f"-env:UserInstallation=file:///tmp/bm5p-lo-{offset}","--headless","--convert-to","pdf","--outdir",str(out),*map(str,chunk)],check=True,timeout=180)
+              for i,f in enumerate(chunk):
+                  dest=out/(f.stem+".pdf")
+                  if not dest.is_file() or dest.stat().st_size==0:
+                      subprocess.run(["libreoffice",f"-env:UserInstallation=file:///tmp/bm5p-retry-{offset}-{i}","--headless","--convert-to","pdf","--outdir",str(out),str(f)],check=True,timeout=60)
+                  if not dest.is_file() or dest.stat().st_size==0:
+                      raise RuntimeError("Missing converted PDF: "+f.name)
+          assert len(list(out.glob("*.pdf")))==len(files)
+          PY
+      - name: Verify all batch PDFs and create actual page previews
+        run: |
+          PYTHONPATH=. python - <<'PY'
+          import fitz,json
+          import os
+          from pathlib import Path
+          from unicodedata import normalize
+          root=Path("qa_print")
+          from web import kp2027_bm_5p_release as gate
+          failures=[]
+          report=[]
+          start,end_a,end_b=gate.BATCH_RANGES[int(os.environ['QA_BATCH'])-1]
+          ids=[(g,n) for g,end in (('A',end_a),('B',end_b)) for n in range(start,end+1)]
+          assert all((g,n) in gate.reviewed_records() for g,n in ids)
+          for g,n in ids:
+              for mode in ("blank","manual"):
+                  stem=f"{g}-{n:03d}-{mode}"
+                  for kind in ("native","converted"):
+                      path=root/kind/(stem+".pdf")
+                      try:
+                          with fitz.open(path) as d:
+                              if len(d)!=1: raise ValueError(f"page count {len(d)}")
+                              p=d[0]
+                              if abs(p.rect.width-595.28)>3 or abs(p.rect.height-841.89)>3: raise ValueError("not A4")
+                              text=" ".join(normalize("NFKC",p.get_text()).split())
+                              for label in ("Penglibatan","Penerokaan","Penerangan","Pengembangan","Penilaian","Refleksi"):
+                                  if label not in text: raise ValueError("missing "+label)
+                              if mode=="manual" and not all(v in text for v in ("1 Bestari","Murid memerlukan latihan susulan.")): raise ValueError("teacher fields missing")
+                              if g=="A" and n in (start,start+1,end_a) and mode=="manual":
+                                  p.get_pixmap(matrix=fitz.Matrix(1.5,1.5)).save(root/"samples"/f"{stem}-{kind}.png")
+                              report.append({"lesson":stem,"kind":kind,"pages":len(d),"passed":True})
+                      except Exception as e: failures.append({"lesson":stem,"kind":kind,"error":str(e)})
+          (root/"report.json").write_text(json.dumps({"tested":len(report)+len(failures),"passed":len(report),"failures":failures,"release":False},indent=2))
+          print((root/"report.json").read_text())
+          assert len(report)==4*len(ids) and not failures
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bm5p-batch-${{ matrix.batch }}-actual-print-samples
+          path: qa_print/
+          if-no-files-found: error
+          retention-days: 7
