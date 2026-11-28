@@ -7,14 +7,21 @@ from docx import Document
 from web import kp2027_bm_5p_release as gate, kp2027_bm_5p as five
 
 class TestBMPhasedRelease(unittest.TestCase):
-    def test_default_and_initial_review_never_release(self):
-        self.assertEqual(len(gate.reviewed_records()),24)
-        for flag in ("0","1"):
-            with patch.dict(os.environ,{gate.FLAG:flag}):
-                self.assertEqual(gate.released_groups(),{"A":[],"B":[]})
-                self.assertFalse(gate.is_released("A",1))
-        with patch.dict(os.environ,{gate.FLAG:"1"}),patch.object(gate,"reviewed_records",side_effect=ValueError("drift")):
+    def test_release_gate_and_unapproved_denial(self):
+        rows=gate.reviewed_records()
+        self.assertEqual(len(rows),24)
+        with patch.dict(os.environ,{gate.FLAG:"0"}):
             self.assertEqual(gate.released_groups(),{"A":[],"B":[]})
+        with patch.dict(os.environ,{gate.FLAG:"1"}):
+            self.assertEqual(gate.released_groups(),{"A":list(range(1,13)),"B":list(range(1,13))})
+            self.assertTrue(gate.is_released("A",1))
+            self.assertFalse(gate.is_released("B",13))
+            self.assertFalse(gate.is_released("A",True))
+            unapproved={k:dict(r,ready=False,status="INITIAL_CONTENT_REVIEW_COMPLETE") for k,r in rows.items()}
+            with patch.object(gate,"reviewed_records",return_value=unapproved):
+                self.assertEqual(gate.released_groups(),{"A":[],"B":[]})
+            with patch.object(gate,"reviewed_records",side_effect=ValueError("drift")):
+                self.assertEqual(gate.released_groups(),{"A":[],"B":[]})
 
     def test_all_corrected_candidates_render(self):
         for (g,n),row in gate.reviewed_records().items():
