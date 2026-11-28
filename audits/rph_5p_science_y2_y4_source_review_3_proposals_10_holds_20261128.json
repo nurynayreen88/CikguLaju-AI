@@ -1,0 +1,282 @@
+{
+  "status": "SOURCE_REVIEW_3_SCOPE_PROPOSALS_10_MAPPING_HOLDS",
+  "source_commit": "495d0b24d5ded8026f5e85cf4b39d45cbe2debb7",
+  "source_run": 46142299288,
+  "source_artifacts": [
+    15262705504,
+    15262271819,
+    15262127146
+  ],
+  "ordinary_extracted": 197,
+  "source_counts": [
+    {
+      "year": 2,
+      "total": 58,
+      "generic_activity_phrase": 51,
+      "source_duration": 0,
+      "full_sk_sp": 7,
+      "page_ref": 14
+    },
+    {
+      "year": 3,
+      "total": 54,
+      "generic_activity_phrase": 40,
+      "source_duration": 0,
+      "full_sk_sp": 9,
+      "page_ref": 14
+    },
+    {
+      "year": 4,
+      "total": 85,
+      "generic_activity_phrase": 75,
+      "source_duration": 0,
+      "full_sk_sp": 6,
+      "page_ref": 6
+    }
+  ],
+  "generic_activity_marker": "Murid memerhati bahan, fenomena atau data",
+  "notes": "166 ordinary RPH contain the exact generic marker; not a claim that every other activity is identical. Three new scope proposals, not ready or print tested. Other ten mappings remain held; no change to native title/SP, existing 184 drafts, RPT or release. Source explicit duration unavailable; default activity schedule not RPT duration.",
+  "records": [
+    {
+      "year": 2,
+      "lesson_id": "SCI-Y2-PDP-005",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "native_title": "Haiwan — Merekod perubahan tumbesaran haiwan dengan memerhati kitar hidup haiwan.",
+      "dskp": [
+        {
+          "code": "4.1.5",
+          "printed_page": 48,
+          "sk": "4.1 Pembiakan dan tumbesaran haiwan",
+          "sp": "Merekod perubahan tumbesaran haiwan dengan memerhati kitar hidup haiwan."
+        }
+      ],
+      "candidate_ids": [
+        "SCI-T2-DRAFT-016",
+        "SCI-T2-DRAFT-017"
+      ],
+      "ordinary_source_text_sha256": "4aac8f6991d1933b39452cd21edc9cabf44cb7cea574fc63a425cce3ba3bb81a",
+      "objective": "Merekod perubahan tumbesaran haiwan berdasarkan pemerhatian siri gambar kitar hidup.",
+      "criterion": "Murid menyusun empat peringkat kitar hidup rama-rama dan merekod perubahan rupa pada sekurang-kurangnya tiga peringkat dengan tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk foto ulat beluncas dan rama-rama dewasa; murid ramal hubungan antara kedua-duanya.",
+        "exploration": "Murid meneliti empat foto bertarikh atau video selang masa kitar hidup rama-rama dan mencatat ciri yang benar-benar dilihat pada setiap peringkat.",
+        "explanation": "Guru bimbing urutan telur, larva, pupa dan rama-rama dewasa serta perbezaan bentuk yang direkodkan.",
+        "elaboration": "Murid bina jalur rekod bergambar; sebagai perbandingan, teliti siri kitar hidup katak dan nyatakan satu perbezaan.",
+        "evaluation": "Murid menyusun empat peringkat secara individu dan merekod sekurang-kurangnya tiga perubahan yang disokong gambar."
+      },
+      "support": {
+        "bbm": "Foto atau video bersiri kitar hidup, kad peringkat, jadual rekod",
+        "pemulihan": "Susun kad bergambar berpandukan anak panah.",
+        "pengayaan": "Banding urutan kitar hidup rama-rama dan katak menggunakan sumber bergambar.",
+        "pak21": "Pemerhatian pasangan dan galeri rekod",
+        "emk": "Menghargai hidupan dan kejujuran data"
+      },
+      "closure": "Murid menyatakan satu perubahan yang diperhatikan; guru semak rekod terhadap kriteria kejayaan.",
+      "textbook_pages": "45–46",
+      "minutes": null,
+      "ordinary_source_fields_extracted": true,
+      "original_activity_exact_match": false,
+      "ready": false,
+      "status": "SOURCE_REVIEWED_SCOPE_PROPOSAL",
+      "review_note": "Original source is generic, so the butterfly context is a deliberate proposal; both candidate contexts share exact SP. No claim that this context was used by ordinary RPH."
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-002",
+      "unit": "ufa457f146af708b575c49eb9",
+      "native_title": "Menerangkan bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan.",
+      "dskp": [
+        {
+          "code": "8.1.2",
+          "printed_page": 66,
+          "sk": "8.1 Asid dan alkali",
+          "sp": "Mengitlak bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan."
+        }
+      ],
+      "candidate_ids": [
+        "SCI-T3-DRAFT-033"
+      ],
+      "ordinary_source_text_sha256": "4c702cd855562038a9b49d1eba51d17dec449055fe9f2b8ec5ed1538b3b0c7c3",
+      "objective": "Memerihalkan deskripsi rasa dan sentuhan daripada data rujukan bagi contoh bahan berasid, beralkali dan neutral, serta mengenal pasti batas kaedah tersebut.",
+      "criterion": "Murid melengkapkan sekurang-kurangnya empat daripada lima padanan berdasarkan data rujukan dan keputusan penunjuk, serta menyatakan dua langkah keselamatan.",
+      "phases": {
+        "engagement": "Guru tunjuk kad deskripsi makanan biasa dan bahan rumah; murid bincang sama ada rupa atau deskripsi sahaja mencukupi untuk pengelasan.",
+        "exploration": "Murid banding lima kad data deskripsi yang disediakan dengan keputusan kertas litmus yang ditunjukkan oleh guru; tiada murid merasa atau menyentuh bahan ujian.",
+        "explanation": "Guru jelaskan contoh rasa dan sentuhan dalam data rujukan tidak boleh dianggap ciri universal atau ujian pengesahan; gunakan penunjuk yang sesuai.",
+        "elaboration": "Murid asingkan situasi dengan deskripsi yang tidak mencukupi, kemudian pilih keputusan penunjuk yang menyokong pengelasan.",
+        "evaluation": "Murid melengkapkan empat daripada lima padanan berdasarkan data dan menyatakan larangan merasa serta menyentuh bahan ujian."
+      },
+      "support": {
+        "bbm": "Kad data berlabel, keputusan litmus, carta pengelasan, bahan demonstrasi guru yang sesuai",
+        "pemulihan": "Padankan tiga kad dengan carta warna penunjuk.",
+        "pengayaan": "Jelaskan mengapa satu deskripsi sahaja tidak membuktikan sifat bahan.",
+        "pak21": "Think-Pair-Share berdasarkan bukti",
+        "emk": "Keselamatan makmal dan ketelitian"
+      },
+      "closure": "Guru semak dua peraturan keselamatan dan tegaskan penunjuk ialah kaedah pengelasan, bukan rasa atau sentuhan.",
+      "textbook_pages": null,
+      "minutes": null,
+      "ordinary_source_fields_extracted": true,
+      "original_activity_exact_match": false,
+      "ready": false,
+      "status": "SOURCE_REVIEWED_SCOPE_PROPOSAL",
+      "review_note": "Safety adaptation deliberately uses existing data and teacher-supervised indicator demonstration only. Exact DSKP wording retained; academic safety approval still required."
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-048",
+      "unit": "u84120b91c5a44737fdc6f01e",
+      "native_title": "Bahan — Memerihalkan sifat bahan dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Memerihalkan sifat bahan dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_ids": [
+        "SCI-T4-DRAFT-037",
+        "SCI-T4-DRAFT-038",
+        "SCI-T4-DRAFT-039"
+      ],
+      "ordinary_source_text_sha256": "5e7cb3117003e21c7d27619ca1dd5c502eaeb080b3598425aa47a8e95362208e",
+      "objective": "Memerihalkan sifat bahan berdasarkan ujian serapan air, penembusan cahaya dan kekenyalan yang selamat.",
+      "criterion": "Murid merekod sekurang-kurangnya empat daripada lima pemerhatian dengan tepat dan memadankan dua sifat dengan kegunaan objek.",
+      "phases": {
+        "engagement": "Guru tunjuk kain, plastik lutsinar, kertas dan gelang getah; murid ramal sifat yang menjadikannya sesuai untuk kegunaan tertentu.",
+        "exploration": "Murid uji sampel menggunakan titisan air pada dulang, lampu suluh biasa dan regangan lembut gelang getah di stesen berasingan; rekod lima pemerhatian, tanpa menghala lampu atau getah kepada orang.",
+        "explanation": "Guru bimbing penerangan menyerap atau tidak menyerap air, membenarkan atau menghalang cahaya, serta kekenyalan berdasarkan keputusan ujian.",
+        "elaboration": "Murid pilih bahan untuk pelindung percikan dan tingkap model, serta jelaskan pilihan daripada bukti; guru bincang sifat lain menggunakan kad data jika masa mencukupi.",
+        "evaluation": "Guru semak sekurang-kurangnya empat rekod tepat daripada lima dan dua padanan sifat-kegunaan yang beralasan."
+      },
+      "support": {
+        "bbm": "Sampel kain, plastik, kertas, gelang getah, air, dulang, lampu suluh, jadual ujian",
+        "pemulihan": "Uji dua sampel dengan jadual berpandu.",
+        "pengayaan": "Cadangkan bahan alternatif berdasarkan dua sifat dan data rujukan.",
+        "pak21": "Stesen inkuiri kumpulan",
+        "emk": "Keselamatan dan kelestarian"
+      },
+      "closure": "Murid menyatakan satu sifat dan bukti ujian; guru semak kriteria kejayaan.",
+      "textbook_pages": null,
+      "minutes": null,
+      "ordinary_source_fields_extracted": true,
+      "original_activity_exact_match": false,
+      "ready": false,
+      "status": "SOURCE_REVIEWED_SCOPE_PROPOSAL",
+      "review_note": "Original ordinary source references generic mixture/separation equipment. Three property tests chosen as an explicit DSKP-scope proposal, not an exact activity copy; remaining material properties require duration and curriculum review."
+    }
+  ],
+  "holds": [
+    {
+      "lesson_id": "SCI-Y2-PDP-048",
+      "year": 2,
+      "unit": "ua1c0fa011a93a40f94a4fa4d",
+      "title": "Teknologi — Menjelaskan pemerhatian tentang campuran melalui lakaran, TMK, penulisan atau lisan.",
+      "sp_codes": [
+        "10.1.6"
+      ],
+      "reason": "No candidate matches native 10.1.6; mixture title under Technology requires original DSKP/source review.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y2-PDP-051",
+      "year": 2,
+      "unit": "u48f9e1daaf4286750057f638",
+      "title": "Manusia — Menyatakan bahawa anak mewarisi ciri daripada ibu, bapa atau keturunan.",
+      "sp_codes": [
+        "3.1.3"
+      ],
+      "reason": "Inheritance title conflicts with mapped growth SP 3.1.3.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-020",
+      "year": 3,
+      "unit": "u51bab31e7e96fab506c21361",
+      "title": "Menerangkan planet beredar mengelilingi Matahari mengikut orbit.",
+      "sp_codes": [
+        "9.1.2"
+      ],
+      "reason": "Orbit title conflicts with temperature SP 9.1.2.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-021",
+      "year": 3,
+      "unit": "u51bab31e7e96fab506c21361",
+      "title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "sp_codes": [
+        "9.1.3"
+      ],
+      "reason": "Distance/time title conflicts with orbit SP 9.1.3.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-036",
+      "year": 3,
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menyatakan satu tumbuhan boleh membiak melalui pelbagai cara dengan menjalankan projek.",
+      "sp_codes": [
+        "5.1.2"
+      ],
+      "reason": "Project title conflicts with importance SP 5.1.2.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-037",
+      "year": 3,
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "title": "Tumbuhan — Menaakul kepentingan pembiakan tumbuhan kepada hidupan.",
+      "sp_codes": [
+        "5.1.3"
+      ],
+      "reason": "Importance title conflicts with project SP 5.1.3.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-040",
+      "year": 3,
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Mengukur isi padu kotak lohong dengan menggunakan kubus yang berukuran 1 cm x 1 cm x 1 cm.",
+      "sp_codes": [
+        "6.1.3"
+      ],
+      "reason": "Box volume title conflicts with irregular area SP 6.1.3.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-041",
+      "year": 3,
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "title": "Pengukuran — Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "sp_codes": [
+        "6.1.4"
+      ],
+      "reason": "Liquid volume title conflicts with box volume SP 6.1.4.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-043",
+      "year": 3,
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "title": "Ketumpatan — Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "sp_codes": [
+        "7.1.2"
+      ],
+      "reason": "Water density modification title conflicts with relative density SP 7.1.2.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-045",
+      "year": 3,
+      "unit": "u6009a8215e69d23ec75e07ca",
+      "title": "Manusia — Merumus tentang makanan tercerna yang tidak diperlukan oleh badan.",
+      "sp_codes": [
+        "3.3.2"
+      ],
+      "reason": "Waste title conflicts with food-flow SP 3.3.2.",
+      "ready": false
+    }
+  ]
+}
