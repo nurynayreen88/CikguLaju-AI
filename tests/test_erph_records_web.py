@@ -114,7 +114,9 @@ class ErphTests(unittest.TestCase):
                 else:
                     with fitz.open(stream=r.data,filetype='pdf') as doc:
                         self.assertEqual(len(doc),2)
-                        text=' '.join(p.get_text() for p in doc)
+                        # PDF extraction can retain typographic ligatures (e.g. Reﬂeksi).
+                        flags=fitz.TEXTFLAGS_TEXT & ~fitz.TEXT_PRESERVE_LIGATURES
+                        text=' '.join(p.get_text(flags=flags) for p in doc)
                 self.assertIn('Susun kad',text)
                 self.assertIn('Refleksi',text)
                 self.assertNotIn('Kumpulan A',text)
