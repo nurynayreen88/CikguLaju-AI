@@ -196,3 +196,36 @@ class ErphTests(unittest.TestCase):
             self.assertEqual(store.call_args.args[3],{'id':'eq.'+rid,'updated_at':'eq.'+current})
             self.assertEqual(r.json['item']['updated_at'],current)
             self.assertNotIn('owner_telegram_id',store.call_args.args[4])
+
+    def test_export_long_record_keeps_every_activity_and_reflection(self):
+        from io import BytesIO
+        from docx import Document
+        from web.erph_export import render, _compact
+        import fitz
+        activity='\n'.join('Aktiviti%03d: Murid menyusun kad <nombor> & berbincang.' % i for i in range(180))
+        row=dict(PAYLOAD,activities=activity,reflection='REFLEKSI AKHIR 123')
+        with fitz.open(stream=render([row],'pdf'),filetype='pdf') as doc:
+            self.assertGreater(len(doc),1)
+            content=''.join(p.get_text() for p in doc)
+            for i in range(180):
+                self.assertIn('Aktiviti%03d:' % i,content)
+            self.assertIn('REFLEKSI AKHIR 123',content)
+            for i,p in enumerate(doc):
+                self.assertIn('Halaman '+str(i+1)+' / '+str(len(doc)),p.get_text())
+        word=Document(BytesIO(render([row,row],'word')))
+        body='\n'.join(p.text for p in word.paragraphs)
+        self.assertEqual(body.count(activity),2)
+        self.assertEqual(body.count('REFLEKSI AKHIR 123'),2)
+        self.assertEqual(sum(p.paragraph_format.page_break_before is True for p in word.paragraphs),1)
+        self.assertIn('PAGE',word.sections[0].footer._element.xml)
+
+    def test_export_preserves_word_blank_lines_and_refuses_unverified_rtl_pdf(self):
+        from io import BytesIO
+        from docx import Document
+        from web.erph_export import render
+        row=dict(PAYLOAD,activities='Baris pertama\n\nBaris ketiga',reflection='سلام')
+        d=Document(BytesIO(render([row],'word')))
+        self.assertIn(row['activities'],[p.text for p in d.paragraphs])
+        self.assertIn(row['reflection'],[p.text for p in d.paragraphs])
+        with self.assertRaisesRegex(ValueError,'Jawi/Arab'):
+            render([row],'pdf')
