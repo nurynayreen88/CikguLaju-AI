@@ -1,0 +1,574 @@
+{
+  "status": "13_NATIVE_SINGLE_SP_DRAFTS_9_HELD",
+  "parent_audit_head": "4d8452959e2275fc7b8b2181875ede3ed50e014d",
+  "identity_head": "352fbfcc3e32d5854ffe14bd9145119cef0b5bfe",
+  "candidate_blob": "49b86cc3db24578c1e16361219168e9e49154707",
+  "total": 13,
+  "held": [
+    {
+      "lesson_id": "SCI-Y3-PDP-002",
+      "native_title": "Menerangkan bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan.",
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "reason": "Safety and exact ordinary source activity need review; no tasting or touching test substances.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-020",
+      "native_title": "Menerangkan planet beredar mengelilingi Matahari mengikut orbit.",
+      "sp_codes": [
+        "9.1.2"
+      ],
+      "reason": "Title orbit vs SP 9.1.2 temperature.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-021",
+      "native_title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "sp_codes": [
+        "9.1.3"
+      ],
+      "reason": "Title distance/time vs SP 9.1.3 orbit.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-036",
+      "native_title": "Tumbuhan — Menyatakan satu tumbuhan boleh membiak melalui pelbagai cara dengan menjalankan projek.",
+      "sp_codes": [
+        "5.1.2"
+      ],
+      "reason": "Title multi-method project vs SP 5.1.2 importance.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-037",
+      "native_title": "Tumbuhan — Menaakul kepentingan pembiakan tumbuhan kepada hidupan.",
+      "sp_codes": [
+        "5.1.3"
+      ],
+      "reason": "Title importance vs SP 5.1.3 multi-method project.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-040",
+      "native_title": "Pengukuran — Mengukur isi padu kotak lohong dengan menggunakan kubus yang berukuran 1 cm x 1 cm x 1 cm.",
+      "sp_codes": [
+        "6.1.3"
+      ],
+      "reason": "Title box volume vs SP 6.1.3 irregular area.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-041",
+      "native_title": "Pengukuran — Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "sp_codes": [
+        "6.1.4"
+      ],
+      "reason": "Title liquid volume vs SP 6.1.4 box volume.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-043",
+      "native_title": "Ketumpatan — Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "sp_codes": [
+        "7.1.2"
+      ],
+      "reason": "Title increasing water density vs SP 7.1.2 relative density.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SCI-Y3-PDP-045",
+      "native_title": "Manusia — Merumus tentang makanan tercerna yang tidak diperlukan oleh badan.",
+      "sp_codes": [
+        "3.3.2"
+      ],
+      "reason": "Title digestion waste vs SP 3.3.2 food flow sequence.",
+      "ready": false
+    }
+  ],
+  "limitations": "DSKP wording inherited from earlier source candidates. Ordinary RPH fields, duration, textbook pages, independent academic review and print QA remain pending; no release.",
+  "records": [
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-022",
+      "unit": "u51bab31e7e96fab506c21361",
+      "unit_title": "Sistem Suria / 9.1",
+      "native_title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "dskp": [
+        {
+          "code": "9.1.4",
+          "printed_page": 68,
+          "sk": "9.1 Sistem Suria",
+          "sp": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-037",
+      "objective": "Hubung kait jarak planet dengan tempoh edaran berdasarkan data empat planet.",
+      "criterion": "Susun empat planet mengikut jarak, padankan tempoh edaran dan rumuskan hubungan dengan betul.",
+      "phases": {
+        "engagement": "Guru tunjuk dua kad planet dengan tempoh edaran berbeza; murid ramal planet yang lebih jauh.",
+        "exploration": "Murid susun kad jarak dan tempoh edaran empat planet menggunakan jadual data guru.",
+        "explanation": "Guru jelaskan planet yang lebih jauh daripada Matahari mengambil masa lebih panjang untuk satu edaran.",
+        "elaboration": "Murid banding dua pasangan planet lain dan terangkan hubungan berdasarkan jadual.",
+        "evaluation": "Murid lengkapkan empat padanan dan tulis satu rumusan jarak dengan tempoh edaran."
+      },
+      "support": {
+        "bbm": "Jadual jarak dan tempoh edaran planet, kad planet",
+        "pemulihan": "Gunakan dua planet dahulu dengan anak panah jarak.",
+        "pengayaan": "Banding tempoh edaran planet tambahan menggunakan data.",
+        "pak21": "Susun kad berpasangan",
+        "emk": "Ketelitian data"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-024",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menjelaskan pemerhatian tentang tabiat pemakanan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "4.1.5",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Menjelaskan pemerhatian tentang tabiat pemakanan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-021",
+      "objective": "Komunikasikan tiga pemerhatian tentang tabiat pemakanan haiwan daripada sumber bergambar.",
+      "criterion": "Hasil murid menunjukkan tiga haiwan, jenis makanan serta kumpulan yang tepat.",
+      "phases": {
+        "engagement": "Guru paparkan gambar tiga haiwan sedang makan; murid menyebut makanan yang kelihatan.",
+        "exploration": "Murid teliti kad fakta pemakanan dan rekod tiga pemerhatian dalam jadual.",
+        "explanation": "Guru membimbing pemilihan label herbivor, karnivor dan omnivor berdasarkan bukti makanan.",
+        "elaboration": "Murid hasilkan carta bergambar atau penerangan lisan dengan tiga contoh dan bukti.",
+        "evaluation": "Guru semak tiga contoh, makanan dan pengelasan pada hasil murid."
+      },
+      "support": {
+        "bbm": "Kad fakta haiwan, kertas carta",
+        "pemulihan": "Gunakan carta separa lengkap dengan pilihan label.",
+        "pengayaan": "Terangkan batasan pengelasan jika maklumat makanan tidak lengkap.",
+        "pak21": "Galeri carta",
+        "emk": "Komunikasi berasaskan bukti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-031",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Mengelas haiwan mengikut tabiat pemakanan.",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Mengelas haiwan mengikut tabiat pemakanan."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-019",
+      "objective": "Kelaskan sekurang-kurangnya tujuh daripada sembilan haiwan mengikut tabiat pemakanan.",
+      "criterion": "Tujuh daripada sembilan kad haiwan diletakkan dalam kumpulan yang tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk kad arnab, harimau dan ayam bersama makanan lazimnya.",
+        "exploration": "Murid asing sembilan kad haiwan berpandukan maklumat makanan pada kad.",
+        "explanation": "Guru rumuskan tiga kumpulan berdasarkan makanan tumbuhan, haiwan atau kedua-duanya.",
+        "elaboration": "Murid bertukar set kad dan membetulkan pengelasan berdasarkan bukti, bukan saiz haiwan.",
+        "evaluation": "Murid lengkapkan pengelasan sembilan kad secara individu; guru semak ketepatan."
+      },
+      "support": {
+        "bbm": "Kad haiwan dan makanan, tiga ruang pengelasan",
+        "pemulihan": "Mulakan dengan tiga kad yang jelas makanannya.",
+        "pengayaan": "Kelaskan haiwan tambahan daripada kad fakta baharu.",
+        "pak21": "Card sorting",
+        "emk": "Menghargai kepelbagaian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-032",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menjelaskan dengan contoh tabiat pemakanan haiwan herbivor, karnivor dan omnivor.",
+      "dskp": [
+        {
+          "code": "4.1.2",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Menjelaskan dengan contoh tabiat pemakanan haiwan herbivor, karnivor dan omnivor."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-019",
+      "objective": "Jelaskan tabiat pemakanan herbivor, karnivor dan omnivor dengan satu contoh bagi setiap kumpulan.",
+      "criterion": "Murid beri tiga contoh haiwan dan huraikan jenis makanan setiap satu.",
+      "phases": {
+        "engagement": "Guru bacakan tiga petunjuk makanan dan murid teka kumpulan haiwan.",
+        "exploration": "Murid teliti kad arnab, harimau dan ayam serta sumber makanan lazim.",
+        "explanation": "Guru bimbing murid membina penerangan lengkap bagi setiap kumpulan.",
+        "elaboration": "Murid pilih contoh haiwan lain daripada kad fakta dan menerangkan sebab pengelasan kepada pasangan.",
+        "evaluation": "Murid beri tiga contoh berserta huraian jenis makanan; guru semak alasan."
+      },
+      "support": {
+        "bbm": "Kad fakta pemakanan, bingkai ayat",
+        "pemulihan": "Padankan gambar haiwan dengan makanan sebelum menyebut kumpulan.",
+        "pengayaan": "Banding dua omnivor dengan makanan lazim yang berlainan.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-034",
+      "unit": "u70f0dd69d7bdaca2c755ac69",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Membanding dan membezakan kegigian haiwan herbivor, karnivor dan omnivor.",
+      "dskp": [
+        {
+          "code": "4.1.4",
+          "printed_page": 58,
+          "sk": "4.1 Tabiat Pemakanan",
+          "sp": "Membanding dan membezakan kegigian haiwan herbivor, karnivor, dan omnivor."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-021",
+      "objective": "Bandingkan kegigian tiga contoh haiwan mengikut tabiat pemakanan.",
+      "criterion": "Murid merekod ciri gigi bagi tiga contoh dan menyatakan dua hubungan bentuk gigi dengan fungsi.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar gigi kuda dan harimau; murid perhatikan bentuknya.",
+        "exploration": "Murid banding rajah kegigian kuda, harimau dan manusia serta tandakan ciri yang dapat dilihat.",
+        "explanation": "Guru jelaskan hubungan gigi pemotong, pengoyak dan pengisar dengan makanan bagi contoh yang dikaji.",
+        "elaboration": "Murid bina jadual persamaan dan perbezaan tiga contoh tanpa membuat generalisasi mutlak semua spesies.",
+        "evaluation": "Guru nilai tiga catatan ciri dan dua huraian fungsi gigi."
+      },
+      "support": {
+        "bbm": "Rajah kegigian berlabel, jadual perbandingan",
+        "pemulihan": "Gunakan dua rajah dengan bahagian gigi ditanda.",
+        "pengayaan": "Banding kegigian satu contoh tambahan melalui sumber bergambar.",
+        "pak21": "Perbandingan berpasangan",
+        "emk": "Ketelitian pemerhatian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-025",
+      "unit": "u0d888f0a71bfec0f95d7c5b3",
+      "unit_title": "Tumbuhan",
+      "native_title": "Tumbuhan — Menjelaskan pemerhatian tentang pembiakan tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "5.1.4",
+          "printed_page": 59,
+          "sk": "5.1 Pembiakan Tumbuhan",
+          "sp": "Menjelaskan pemerhatian tentang pembiakan tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-024",
+      "objective": "Sampaikan dua pemerhatian sebenar tentang pembiakan tumbuhan menggunakan rekod projek atau sumber yang jelas dilabel.",
+      "criterion": "Murid hasilkan dua rekod bertarikh atau berlabel sumber dan satu rumusan yang disokong bukti.",
+      "phases": {
+        "engagement": "Guru paparkan gambar tumbuhan pada dua peringkat pertumbuhan daripada rekod yang tersedia.",
+        "exploration": "Murid teliti rekod projek kelas yang sudah dijalankan atau siri foto rujukan berlabel; catat perubahan yang kelihatan.",
+        "explanation": "Guru bimbing pemisahan pemerhatian daripada ramalan dan label kaedah pembiakan.",
+        "elaboration": "Murid hasilkan lakaran atau carta garis masa berdasarkan rekod yang benar-benar ada.",
+        "evaluation": "Guru menyemak dua catatan serta rumusan yang tidak mendakwa hasil belum diperhatikan."
+      },
+      "support": {
+        "bbm": "Rekod projek atau foto bersumber, kertas carta",
+        "pemulihan": "Sediakan bingkai catatan sebelum dan selepas.",
+        "pengayaan": "Banding dua rekod kaedah pembiakan daripada sumber berbeza.",
+        "pak21": "Pembentangan galeri",
+        "emk": "Kejujuran merekod data"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-027",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "unit_title": "Pengukuran",
+      "native_title": "Pengukuran — Menyelesaikan masalah untuk menentukan isi padu pepejal tidak sekata melalui kaedah sesaran air.",
+      "dskp": [
+        {
+          "code": "6.1.6",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Menyelesaikan masalah untuk menentukan isi padu pepejal tidak sekata melalui kaedah sesaran air."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-029",
+      "objective": "Tentukan isi padu dua pepejal tidak sekata menggunakan kaedah sesaran air.",
+      "criterion": "Murid catat bacaan awal dan akhir serta hitung dua isi padu dengan unit yang betul.",
+      "phases": {
+        "engagement": "Guru tunjuk batu tidak sekata dan tanya cara mengukur isi padunya.",
+        "exploration": "Murid catat paras awal silinder penyukat plastik, masukkan objek tidak menyerap air hingga tenggelam sepenuhnya dan catat paras akhir.",
+        "explanation": "Guru modelkan isi padu objek sebagai beza bacaan akhir dan awal serta hubungan 1 mL dengan 1 cm³.",
+        "elaboration": "Murid ulang untuk objek kedua menggunakan teknik bacaan aras mata dan banding jawapan dengan pasangan.",
+        "evaluation": "Guru semak dua set bacaan dan pengiraan isi padu."
+      },
+      "support": {
+        "bbm": "Silinder penyukat plastik, air, batu kecil, dulang",
+        "pemulihan": "Gunakan rajah skala dengan bacaan ditanda dahulu.",
+        "pengayaan": "Selesaikan satu soalan sesaran dengan bacaan awal berlainan.",
+        "pak21": "Eksperimen pasangan",
+        "emk": "Keselamatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-028",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "unit_title": "Pengukuran",
+      "native_title": "Pengukuran — Menjelaskan pemerhatian tentang pengukuran luas dan isi padu melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "6.1.7",
+          "printed_page": 63,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Menjelaskan pemerhatian tentang pengukuran luas dan isi padu melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-029",
+      "objective": "Komunikasikan tiga pemerhatian pengukuran luas atau isi padu menggunakan data yang diberi.",
+      "criterion": "Hasil murid mempunyai tiga catatan ukuran berlabel dengan unit tepat dan satu penerangan kaedah.",
+      "phases": {
+        "engagement": "Guru paparkan gambar petak luas dan silinder penyukat; murid kenal pasti unitnya.",
+        "exploration": "Murid meneliti hasil pengukuran kelas atau data contoh berlabel dan memilih tiga bacaan.",
+        "explanation": "Guru menerangkan penggunaan label, unit serta perbezaan ukuran tepat dan anggaran.",
+        "elaboration": "Murid hasilkan poster mini atau penerangan lisan dengan rajah dan langkah satu kaedah pengukuran.",
+        "evaluation": "Guru semak tiga bacaan, unit serta penerangan kaedah."
+      },
+      "support": {
+        "bbm": "Rekod ukuran, rajah grid dan silinder, kertas",
+        "pemulihan": "Beri jadual separa lengkap dengan pilihan unit.",
+        "pengayaan": "Banding dua kaedah pengukuran dan nyatakan batasannya.",
+        "pak21": "Galeri hasil kerja",
+        "emk": "Komunikasi dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-038",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "unit_title": "Pengukuran",
+      "native_title": "Pengukuran — Menyatakan unit yang digunakan untuk mengukur luas dan isi padu.",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Menyatakan unit yang digunakan untuk mengukur luas dan isi padu."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-025",
+      "objective": "Nyatakan unit yang sesuai bagi ukuran luas dan isi padu.",
+      "criterion": "Murid pilih unit yang betul bagi sekurang-kurangnya empat daripada lima situasi ukuran.",
+      "phases": {
+        "engagement": "Guru tunjuk sekeping kad rata, kubus unit dan bekas air; murid banding perkara yang diukur.",
+        "exploration": "Murid padankan kad cm², cm³ dan mL dengan objek serta jenis ukuran yang sesuai.",
+        "explanation": "Guru jelaskan luas menggunakan unit persegi manakala isi padu menggunakan unit padu atau unit kapasiti bersesuaian.",
+        "elaboration": "Murid pilih unit bagi lima gambar situasi harian dan beri alasan kepada pasangan.",
+        "evaluation": "Guru semak lima pilihan unit secara individu."
+      },
+      "support": {
+        "bbm": "Kad unit, kad rata, kubus unit, bekas air",
+        "pemulihan": "Gunakan dua pilihan unit dengan gambar petunjuk.",
+        "pengayaan": "Beri contoh situasi lain yang sesuai bagi setiap unit.",
+        "pak21": "Padanan kad",
+        "emk": "Ketepatan penggunaan unit"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-039",
+      "unit": "ud8301ba62bdbfba8f7e3b8f4",
+      "unit_title": "Pengukuran",
+      "native_title": "Pengukuran — Mengukur luas permukaan sekata menggunakan petak yang berukuran 1 cm x 1 cm.",
+      "dskp": [
+        {
+          "code": "6.1.2",
+          "printed_page": 62,
+          "sk": "6.1 Pengukuran luas dan isi padu.",
+          "sp": "Mengukur luas permukaan sekata menggunakan petak yang berukuran 1cm x 1cm."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-025",
+      "objective": "Ukur luas tiga permukaan sekata dengan petak 1 cm × 1 cm.",
+      "criterion": "Murid memperoleh tiga ukuran luas dalam cm² dengan kiraan petak tanpa pertindihan.",
+      "phases": {
+        "engagement": "Guru tunjuk kad segi empat dan satu petak unit; murid ramal bilangan petak yang diperlukan.",
+        "exploration": "Murid tutup permukaan kad dengan petak unit tanpa celah atau pertindihan lalu mengira petak.",
+        "explanation": "Guru jelaskan setiap petak mewakili 1 cm² dan jumlah petak ialah luas permukaan.",
+        "elaboration": "Murid ukur dua lagi bentuk sekata menggunakan grid unit serta menyemak kiraan pasangan.",
+        "evaluation": "Guru semak tiga ukuran dan unit pada jadual individu."
+      },
+      "support": {
+        "bbm": "Petak unit 1 cm, grid, tiga kad permukaan sekata",
+        "pemulihan": "Gunakan kad kecil dengan sempadan petak tersedia.",
+        "pengayaan": "Bina dua bentuk sekata berbeza dengan luas sama.",
+        "pak21": "Aktiviti manipulatif pasangan",
+        "emk": "Ketelitian pengukuran"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-029",
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "unit_title": "Ketumpatan",
+      "native_title": "Ketumpatan — Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "dskp": [
+        {
+          "code": "7.1.3",
+          "printed_page": 64,
+          "sk": "7.1 Objek atau bahan yang lebih tumpat atau kurang tumpat daripada air.",
+          "sp": "Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-031",
+      "objective": "Kenal pasti kaedah menjadikan air lebih tumpat melalui ujian terkawal.",
+      "criterion": "Murid menerangkan penambahan garam terlarut sebagai satu kaedah dan menyokongnya dengan perubahan kedudukan objek dalam ujian.",
+      "phases": {
+        "engagement": "Guru tunjuk telur dalam air biasa dan minta ramalan apabila garam dilarutkan.",
+        "exploration": "Murid banding bekas air sama banyak, larutkan garam sedikit demi sedikit pada satu bekas dan perhatikan telur dengan pengawasan.",
+        "explanation": "Guru terangkan garam terlarut boleh meningkatkan ketumpatan air; murid banding bukti antara dua bekas.",
+        "elaboration": "Murid rekod perubahan kedudukan telur pada beberapa penambahan garam dan bentang satu cadangan kaedah.",
+        "evaluation": "Guru nilai kaedah yang dinyatakan dan satu bukti sebenar daripada ujian."
+      },
+      "support": {
+        "bbm": "Bekas plastik, air, garam, telur, sudu; bahan uji tidak dimakan",
+        "pemulihan": "Sediakan jadual kedudukan telur bergambar.",
+        "pengayaan": "Cadang cara membandingkan jumlah garam secara lebih terkawal.",
+        "pak21": "Inkuiri kumpulan kecil",
+        "emk": "Keselamatan dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-030",
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "unit_title": "Ketumpatan",
+      "native_title": "Ketumpatan — Menjelaskan pemerhatian tentang objek atau bahan yang lebih tumpat dan kurang tumpat daripada air melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "7.1.4",
+          "printed_page": 64,
+          "sk": "7.1 Objek atau bahan yang lebih tumpat atau kurang tumpat daripada air.",
+          "sp": "Menjelaskan pemerhatian tentang objek atau bahan yang lebih tumpat dan kurang tumpat daripada air melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-031",
+      "objective": "Sampaikan tiga pemerhatian tentang objek yang timbul atau tenggelam melalui satu medium.",
+      "criterion": "Hasil murid mengandungi tiga pemerhatian, label keadaan objek dan satu penerangan berdasarkan ketumpatan relatif.",
+      "phases": {
+        "engagement": "Guru tunjuk foto gabus dan batu dalam air; murid nyatakan kedudukannya.",
+        "exploration": "Murid teliti hasil ujian atau jalankan demonstrasi ringkas tiga objek dengan pengawasan lalu catat kedudukan.",
+        "explanation": "Guru bimbing penggunaan istilah lebih tumpat dan kurang tumpat bagi objek pepejal yang sesuai dengan contoh.",
+        "elaboration": "Murid hasilkan lakaran berlabel atau penerangan lisan berpandukan catatan, bukan andaian.",
+        "evaluation": "Guru menyemak tiga pemerhatian, label dan satu penerangan ketumpatan."
+      },
+      "support": {
+        "bbm": "Bekas air, gabus, batu, objek pepejal sesuai, kertas",
+        "pemulihan": "Gunakan gambar timbul dan tenggelam dengan pilihan kata.",
+        "pengayaan": "Banding dua objek yang sama saiz tetapi berlainan kedudukan dalam air.",
+        "pak21": "Galeri lakaran",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 3,
+      "lesson_id": "SCI-Y3-PDP-042",
+      "unit": "ufbda539e1af2ccc4a66947b6",
+      "unit_title": "Ketumpatan",
+      "native_title": "Ketumpatan — Membuat inferens tentang objek atau bahan yang timbul atau objek yang tenggelam dengan menjalankan aktiviti.",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 64,
+          "sk": "7.1 Objek atau bahan yang lebih tumpat atau kurang tumpat daripada air.",
+          "sp": "Membuat inferens tentang objek atau bahan yang timbul dan objek atau bahan yang tenggelam dengan menjalankan aktiviti."
+        }
+      ],
+      "candidate_id": "SCI-T3-DRAFT-030",
+      "objective": "Buat satu inferens munasabah berdasarkan pemerhatian empat objek yang timbul atau tenggelam.",
+      "criterion": "Murid merekod empat pemerhatian sebenar dan satu inferens yang disokong hasil ujian.",
+      "phases": {
+        "engagement": "Guru tunjuk gabus besar dan batu kecil; murid ramal kedudukan setiap objek dalam air.",
+        "exploration": "Murid uji empat objek pepejal sesuai dalam bekas air dan catat kedudukan setiap objek.",
+        "explanation": "Guru bezakan pemerhatian daripada inferens dan bincangkan ketumpatan relatif sebagai penerangan bagi contoh yang diuji.",
+        "elaboration": "Murid pilih satu pasangan objek untuk membanding hasil dan menyatakan sebab munasabah tanpa menganggap semua objek besar tenggelam.",
+        "evaluation": "Guru semak empat pemerhatian dan satu inferens berasaskan bukti."
+      },
+      "support": {
+        "bbm": "Bekas air, gabus, batu, objek pepejal sesuai, jadual",
+        "pemulihan": "Beri bingkai ayat pemerhatian dan inferens secara berasingan.",
+        "pengayaan": "Cadangkan satu ujian tambahan untuk menilai inferens.",
+        "pak21": "Inkuiri berpasangan",
+        "emk": "Kejujuran dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    }
+  ]
+}
