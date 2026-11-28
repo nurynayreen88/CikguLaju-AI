@@ -71,7 +71,9 @@ for record in records:
         text=page.get_text()
         for line in expected:
             assert line in text, line
-        page.get_pixmap(matrix=fitz.Matrix(1.5,1.5)).save(str(path.with_suffix(".png")))
+        pix = page.get_pixmap(matrix=fitz.Matrix(1.2,1.2), alpha=False)
+        pix.save(str(path.with_suffix(".png")))
+        print("KEY_PREVIEW_JPEG",slug,base64.b64encode(pix.tobytes("jpeg", jpg_quality=75)).decode("ascii"))
     print("KEY_QA",slug,hashlib.sha256(data).hexdigest(),len(data))
     # Small generated, nonpersonal teacher answer keys only, for private asset handoff.
     print("KEY_B64",slug,base64.b64encode(data).decode("ascii"))
