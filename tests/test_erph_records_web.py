@@ -171,8 +171,8 @@ class ErphTests(unittest.TestCase):
         # Static regression contract; browser interaction QA is still required.
         with patch.object(m,'account',return_value=({},42,None)):
             html=self.client.get('/erph').get_data(as_text=True)
-        self.assertIn('function edit(item){editorVersion++;',html)
-        self.assertIn("'cancel').onclick=()=>{editorVersion++;form.hidden=true}",html)
+        self.assertIn('function edit(item){if(!mayDiscard())return false;editorVersion++;',html)
+        self.assertIn("'cancel').onclick=()=>{if(!mayDiscard())return;editorVersion++;form.hidden=true}",html)
         self.assertIn('if(version!==editorVersion||form.hidden)return;',html)
         self.assertIn('const version=editorVersion,recordId=editing,stamp=recordStamp;',html)
         self.assertIn("await api(recordId?'/'+encodeURIComponent(recordId):''",html)
@@ -262,3 +262,14 @@ class ErphTests(unittest.TestCase):
         self.assertIn("button.textContent='Sunting rekod'",html)
         self.assertIn('Semak perbezaan dengan jadual waktu.',html)
         self.assertIn('Rekod belum dapat disemak. Cuba papar rekod semula.',html)
+
+    def test_unsaved_edits_and_overlapping_slot_contract(self):
+        from pathlib import Path
+        html=(Path(__file__).resolve().parents[1]/'web_v1_static_preview'/'erph_records.html').read_text(encoding='utf-8')
+        self.assertIn("function dirty(){return !form.hidden&&snapshot()!==baseline}",html)
+        self.assertIn("window.addEventListener('beforeunload'",html)
+        self.assertIn("if(!mayDiscard())return false;",html)
+        self.assertIn("baseline=JSON.stringify(fields.map(k=>data[k]))",html)
+        self.assertIn("edit(draft);baseline=''",html)
+        self.assertIn("Masa bertindih dengan rekod lain.",html)
+        self.assertIn("if(overlap.length)",html)
