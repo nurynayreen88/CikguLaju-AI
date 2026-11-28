@@ -794,6 +794,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab is-active" data-web-view="guide" aria-controls="view-guide" aria-current="page"><span aria-hidden="true">📖</span> Panduan</button>
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
     <button type="button" class="sidebar-tab" data-web-view="today" aria-controls="view-today"><span aria-hidden="true">⚡</span><span class="sidebar-tab-label">RPH Pantas <small>Hari Ini &amp; Minggu Ini</small></span></button>
+    <button type="button" class="sidebar-tab" id="erph-private-entry" hidden><span aria-hidden="true">🗂️</span> e-RPH Saya</button>
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
@@ -2109,6 +2110,7 @@ function currentRphParams(){
  return params;
 }
 function resetRphPreview(){
+ clearErphDownloadOffer();
  const nextReflectionSelection=JSON.stringify([currentRphLessonKey(),chosenTeacherClass(),
   teacherDate.value,teacherTimeStart.value,teacherTimeEnd.value]);
  if(reflectionSelection!==nextReflectionSelection){
@@ -2339,7 +2341,27 @@ function showStep(el,visible){
  document.getElementById(el.id+"-label").hidden=!visible;
  if(el===subject)document.getElementById("rph-subject-search").hidden=!visible;
 }
+function clearErphDownloadOffer(){document.getElementById("erph-after-download")?.remove();}
+function offerErphDownloadedWord(documentBlob,meta,status){
+ clearErphDownloadOffer();
+ const entry=document.getElementById("erph-private-entry");
+ if(!entry||entry.hidden||!documentBlob||!documentBlob.size||documentBlob.size>2000000)return;
+ const snapshot=Object.fromEntries(["teaching_date","class_name","subject_name","start_time","end_time","rph_format"].map(k=>[k,typeof meta?.[k]==="string"?meta[k]:""]));
+ const active=()=>btn.isConnected&&document.getElementById("erph-after-download")===btn&&!entry.hidden;
+ const btn=document.createElement("button");btn.id="erph-after-download";btn.type="button";btn.className="material-download-action";btn.textContent="Simpan ke e-RPH";
+   btn.onclick=async()=>{if(btn.disabled||!active())return;btn.disabled=true;try{
+    const r=await fetch("/api/erph/import-word",{method:"POST",credentials:"same-origin",cache:"no-store",headers:{"Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},body:documentBlob});
+    const j=await r.json();if(!active())return;if(!r.ok||!j.fields)throw Error(j.error||"Import gagal");
+    const content=Object.fromEntries(["title","standard_content","standard_learning","objectives","activities","reflection"].map(k=>[k,typeof j.fields[k]==="string"?j.fields[k]:""]));
+    // Transfer only into a same-tab, in-memory editor via a user-initiated POST form.
+    const target=document.createElement("form");target.method="POST";target.action="/erph/import-preview";
+    const input=document.createElement("input");input.type="hidden";input.name="draft";input.value=JSON.stringify({...snapshot,...content,status:"draft"});target.append(input);document.body.append(target);target.submit();
+   }catch(e){if(active()){status.textContent="Word sudah dimuat turun. "+e.message;btn.disabled=false;}}};
+
+ status.insertAdjacentElement("afterend",btn);
+}
 function resetMaterials(){
+ clearErphDownloadOffer();
  document.getElementById("show-materials").hidden=true;
  document.getElementById("show-materials").disabled=true;
  document.getElementById("materials-access-status").hidden=true;
@@ -2593,7 +2615,11 @@ subject.addEventListener("change",async()=>{
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,178)||
        !kp2027ValidEntries(data.items.B,data.groups.B,175))
      throw Error("Padanan Unit dan PdP Bahasa Melayu belum dapat disahkan.");
-    inventory={groups:data.groups,items:data.items,rphVariants:Array.isArray(data.rph_variants)?data.rph_variants:[]};
+    const fiveP={A:[],B:[]};
+    for(const g of ["A","B"]){
+     if(Array.isArray(data.five_p_groups?.[g]))fiveP[g]=data.five_p_groups[g].filter(n=>Number.isInteger(n)&&data.groups[g].includes(n));
+    }
+    inventory={groups:data.groups,items:data.items,rphVariants:Array.isArray(data.rph_variants)?data.rph_variants:[],fivePGroups:fiveP};
    }else if(code==="PJ_KP2027"){
     if(!data.groups||!kp2027ValidList(data.groups.A,64)||!kp2027ValidList(data.groups.B,63)||
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,64)||
@@ -2757,6 +2783,11 @@ function kp2027TeacherPayload(){
  return {teacher_class:className,teacher_date:teacherDate.value,teacher_start:start,
    teacher_end:end,teacher_students:students,reflection_mode:mode,reflection};
 }
+function kp2027FivePAllowed(code,group,value){
+ if(!kp2027PilotInventory?.rphVariants?.includes("5p"))return false;
+ if(code==="BM_SK_KP2027")return kp2027PilotInventory?.fivePGroups?.[group]?.includes(value)===true;
+ return code==="MATH_KP2027";
+}
 async function kp2027DownloadApproved(format){return kp2027DownloadVariant(format,"lengkap");}
 async function kp2027DownloadVariant(format,variant){
  const code=subject.value,route=kp2027PilotRoutes[code],value=Number(lesson.value);
@@ -2773,10 +2804,11 @@ async function kp2027DownloadVariant(format,variant){
   if(!kp2027PilotInventory?.fivePTemplates||kp2027PilotInventory?.catalogMode!=="rpt93")return;
   payload.pdp=value;delete payload.lesson;
  }else if(variant==="5p"){
-  if(!["BM_SK_KP2027","MATH_KP2027"].includes(code)||!kp2027PilotInventory?.rphVariants?.includes("5p"))return;
+  if(!kp2027FivePAllowed(code,group,value))return;
   payload.rph_variant="5p";
  }
  if(code==="PJ_KP2027"&&aquaticV2Selected())payload.rph_variant="V2_DARAT";
+ clearErphDownloadOffer();
  kp2027PilotBusy=true;
  for(const button of kp2027PilotButtons)button.disabled=true;
  status.textContent="Menyediakan fail RPH...";
@@ -2791,6 +2823,10 @@ async function kp2027DownloadVariant(format,variant){
    throw Error(data.error||"RPH belum dapat dimuat turun (HTTP "+response.status+").");
   }
   const documentBlob=await response.blob();
+  if(format==="word"&&revision===kp2027PilotEpoch){
+   const labels={MATH_KP2027:"Matematik SK",BM_SK_KP2027:"Bahasa Melayu SK",PJ_KP2027:"Pendidikan Jasmani",ALAM_KP2027:"Alam dan Manusia"};
+   offerErphDownloadedWord(documentBlob,{teaching_date:teacherPayload.teacher_date,class_name:teacherPayload.teacher_class,subject_name:labels[code],start_time:teacherPayload.teacher_start,end_time:teacherPayload.teacher_end,rph_format:variant==="5p"?"5p":"biasa"},status);
+  }
   const ext=format==="pdf"?"pdf":"docx";
   const stem=code==="MATH_KP2027"?"MATH_T1_"+group:code==="BM_SK_KP2027"?"BM_SK_T1_"+group:code==="PJ_KP2027"?"PJ_T1_"+group:"ALAM_T1";
   const fileName="CIKGULAJU_KP2027_"+stem+"_PDP"+String(value).padStart(3,"0")+(alam5p||payload.rph_variant==="5p"?"_5P":payload.rph_variant==="V2_DARAT"?"_AKUATIK_V2":"")+"."+ext;
@@ -2903,7 +2939,7 @@ function populateKp2027MaterialList(){
   materialRow("RPH PDF",{ready:true,onDownload:()=>{void kp2027DownloadApproved("pdf");}}),
   materialRow("RPH Word",{ready:true,onDownload:()=>{void kp2027DownloadApproved("word");}})
  );
- if(["BM_SK_KP2027","MATH_KP2027"].includes(subject.value)&&kp2027PilotInventory?.rphVariants?.includes("5p")){
+ if(kp2027FivePAllowed(subject.value,kp2027PilotGroup.value,Number(lesson.value))){
   list.append(
    materialRow("RPH Ringkas 5P PDF",{ready:true,onDownload:()=>{void kp2027DownloadVariant("pdf","5p");}}),
    materialRow("RPH Ringkas 5P Word",{ready:true,onDownload:()=>{void kp2027DownloadVariant("word","5p");}})
@@ -3596,6 +3632,7 @@ async function generateRphFile(format){
  const params=currentRphParams();
  if(!params||rphDownloadBusy||verifiedRphKey!==currentRphLessonKey()||
     !verifiedRphFormats.includes(format))return;
+ clearErphDownloadOffer();
  const key=params.toString();
  const isPdf=format==="pdf";
  rphDownloadBusy=true;
@@ -3622,6 +3659,10 @@ async function generateRphFile(format){
   const blob=await response.blob();
   if(blob.size<1000||blob.size>15*1024*1024)
     throw Error("Saiz fail RPH tidak sah.");
+  if(!isPdf&&currentRphParams()?.toString()===key){
+   const subjectLabel=subject.selectedOptions[0]?.textContent?.trim()||params.get("subject");
+   offerErphDownloadedWord(blob,{teaching_date:params.get("teacher_date")||"",class_name:params.get("teacher_class")||"",subject_name:subjectLabel,start_time:params.get("teacher_start")||"",end_time:params.get("teacher_end")||"",rph_format:"biasa"},downloadStatus);
+  }
   const url=URL.createObjectURL(blob),link=document.createElement("a");
   link.href=url;
   link.download="CIKGULAJU_RPH_"+subject.value+"_TAHUN_"+year.value+"_"+
@@ -3665,6 +3706,13 @@ document.addEventListener("visibilitychange",()=>{
 rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
+
+
+(()=>{const entry=document.getElementById('erph-private-entry');if(!entry)return;
+ entry.addEventListener('click',()=>location.assign('/erph'));
+ fetch('/api/erph/availability',{credentials:'same-origin',cache:'no-store'}).then(async r=>{if(r.ok&&(await r.json()).enabled===true)entry.hidden=false;}).catch(()=>{});
+})();
+
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=muat-turun-audio-english-20261120"></script>
@@ -3675,5 +3723,6 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/web-feedback.js?v=pusat-admin-alert-20261123"></script>
 <script src="/assets/web-admin-chat.js?v=pusat-admin-read-20261123"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
+
 </body>
 </html>
