@@ -2345,15 +2345,18 @@ function clearErphDownloadOffer(){document.getElementById("erph-after-download")
 function offerErphDownloadedWord(documentBlob,meta,status){
  clearErphDownloadOffer();
  const entry=document.getElementById("erph-private-entry");
- if(!entry||entry.hidden||!documentBlob||documentBlob.size>2000000)return;
+ if(!entry||entry.hidden||!documentBlob||!documentBlob.size||documentBlob.size>2000000)return;
+ const snapshot=Object.fromEntries(["teaching_date","class_name","subject_name","start_time","end_time","rph_format"].map(k=>[k,typeof meta?.[k]==="string"?meta[k]:""]));
+ const active=()=>btn.isConnected&&document.getElementById("erph-after-download")===btn&&!entry.hidden;
  const btn=document.createElement("button");btn.id="erph-after-download";btn.type="button";btn.className="material-download-action";btn.textContent="Simpan ke e-RPH";
-   btn.onclick=async()=>{btn.disabled=true;try{
+   btn.onclick=async()=>{if(btn.disabled||!active())return;btn.disabled=true;try{
     const r=await fetch("/api/erph/import-word",{method:"POST",credentials:"same-origin",cache:"no-store",headers:{"Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},body:documentBlob});
-    const j=await r.json();if(!r.ok||!j.fields)throw Error(j.error||"Import gagal");
+    const j=await r.json();if(!active())return;if(!r.ok||!j.fields)throw Error(j.error||"Import gagal");
+    const content=Object.fromEntries(["title","standard_content","standard_learning","objectives","activities","reflection"].map(k=>[k,typeof j.fields[k]==="string"?j.fields[k]:""]));
     // Transfer only into a same-tab, in-memory editor via a user-initiated POST form.
     const target=document.createElement("form");target.method="POST";target.action="/erph/import-preview";
-    const input=document.createElement("input");input.type="hidden";input.name="draft";input.value=JSON.stringify({...meta,...j.fields,status:"draft"});target.append(input);document.body.append(target);target.submit();
-   }catch(e){status.textContent="Word sudah dimuat turun. "+e.message;btn.disabled=false;}};
+    const input=document.createElement("input");input.type="hidden";input.name="draft";input.value=JSON.stringify({...snapshot,...content,status:"draft"});target.append(input);document.body.append(target);target.submit();
+   }catch(e){if(active()){status.textContent="Word sudah dimuat turun. "+e.message;btn.disabled=false;}}};
 
  status.insertAdjacentElement("afterend",btn);
 }
@@ -2796,6 +2799,7 @@ async function kp2027DownloadVariant(format,variant){
   payload.rph_variant="5p";
  }
  if(code==="PJ_KP2027"&&aquaticV2Selected())payload.rph_variant="V2_DARAT";
+ clearErphDownloadOffer();
  kp2027PilotBusy=true;
  for(const button of kp2027PilotButtons)button.disabled=true;
  status.textContent="Menyediakan fail RPH...";
@@ -3551,6 +3555,7 @@ async function generateRphFile(format){
  const params=currentRphParams();
  if(!params||rphDownloadBusy||verifiedRphKey!==currentRphLessonKey()||
     !verifiedRphFormats.includes(format))return;
+ clearErphDownloadOffer();
  const key=params.toString();
  const isPdf=format==="pdf";
  rphDownloadBusy=true;
