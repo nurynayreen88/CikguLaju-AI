@@ -44,7 +44,23 @@ jobs:
                   (root/"native"/(stem+".pdf")).write_bytes(five.render(g,n,"pdf",payload,reviewed=True))
           PY
       - name: Convert original Word documents
-        run: libreoffice -env:UserInstallation=file:///tmp/bm5p-lo --headless --convert-to pdf --outdir qa_print/converted qa_print/word/*.docx
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          files=sorted(Path("qa_print/word").glob("*.docx"))
+          out=Path("qa_print/converted")
+          for offset in range(0,len(files),24):
+              chunk=files[offset:offset+24]
+              subprocess.run(["libreoffice",f"-env:UserInstallation=file:///tmp/bm5p-lo-{offset}","--headless","--convert-to","pdf","--outdir",str(out),*map(str,chunk)],check=True,timeout=180)
+              for i,f in enumerate(chunk):
+                  dest=out/(f.stem+".pdf")
+                  if not dest.is_file() or dest.stat().st_size==0:
+                      subprocess.run(["libreoffice",f"-env:UserInstallation=file:///tmp/bm5p-retry-{offset}-{i}","--headless","--convert-to","pdf","--outdir",str(out),str(f)],check=True,timeout=60)
+                  if not dest.is_file() or dest.stat().st_size==0:
+                      raise RuntimeError("Missing converted PDF: "+f.name)
+          assert len(list(out.glob("*.pdf")))==len(files)
+          PY
       - name: Verify all batch PDFs and create actual page previews
         run: |
           PYTHONPATH=. python - <<'PY'
