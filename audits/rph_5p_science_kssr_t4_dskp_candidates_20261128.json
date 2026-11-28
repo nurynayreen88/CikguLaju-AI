@@ -1,0 +1,1277 @@
+{
+  "status": "NEW_PEDAGOGICAL_DRAFT_DSKP_TEXT_ONLY",
+  "subject": "SAINS SK",
+  "year": 4,
+  "curriculum": "KSSR",
+  "source": {
+    "drive_id": "1OKcOhiGQPkvn9Beew8TukHmDSTcCuYQ0",
+    "title": "GuruBesar_DSKP_Sains_Tahun_4.pdf",
+    "verification": "Extracted text reviewed; visual QA pending."
+  },
+  "policy": "New candidates, not 88 production PdP. No RPT/source RPH binding or textbook page claims; no release. Practical work requires teacher supervision and actual elapsed observation time. Review compound standards, experiments and assessment before release.",
+  "records": [
+    {
+      "candidate_id": "SCI-T4-DRAFT-001",
+      "title": "Pemerhatian dan pengelasan bahan",
+      "dskp": [
+        {
+          "code": "1.1.1",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Memerhati dengan menggunakan semua deria yang terlibat dan alat jika perlu untuk membuat pemerhatian secara kualitatif bagi menerangkan fenomena atau perubahan yang berlaku."
+        },
+        {
+          "code": "1.1.2",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengelas dengan membandingkan atau mengenal pasti persamaan dan perbezaan berdasarkan ciri sepunya."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer sampel kain, plastik dan kertas.",
+        "exploration": "Perhatikan tekstur dan rupa; asingkan berdasarkan ciri sepunya.",
+        "explanation": "Bezakan catatan deria daripada pengelasan dan nyatakan kriteria.",
+        "elaboration": "Kelaskan enam sampel dengan dua kriteria berlainan.",
+        "evaluation": "Empat pemerhatian dan dua pengelasan dengan alasan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-002",
+      "title": "Ukuran dan inferens bayang",
+      "dskp": [
+        {
+          "code": "1.1.3",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengukur dan menggunakan nombor dengan menggunakan alat dan unit piawai dengan teknik yang betul."
+        },
+        {
+          "code": "1.1.4",
+          "printed_page": 42,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Membuat inferens dengan menyatakan kesimpulan awal atau penerangan yang munasabah bagi sesuatu pemerhatian dengan menggunakan maklumat yang diperoleh."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding bayang dua objek.",
+        "exploration": "Ukur panjang bayang menggunakan pembaris; rekod cm.",
+        "explanation": "Bezakan bacaan sebenar daripada inferens tentang kedudukan lampu.",
+        "elaboration": "Uji kedudukan lampu berlainan dan bina penerangan berdasarkan bacaan.",
+        "evaluation": "Tiga bacaan tepat dan satu inferens munasabah."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-003",
+      "title": "Ramalan dan komunikasi",
+      "dskp": [
+        {
+          "code": "1.1.5",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Meramal dengan membuat jangkaan tentang sesuatu peristiwa atau fenomena berdasarkan pemerhatian, pengalaman lalu atau data."
+        },
+        {
+          "code": "1.1.6",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Berkomunikasi dengan merekod maklumat atau idea dalam bentuk yang sesuai dan mempersembahkan maklumat atau idea tersebut secara sistematik."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer jadual perubahan tinggi anak pokok.",
+        "exploration": "Teliti pola bacaan dan ramal ukuran seterusnya.",
+        "explanation": "Terangkan ramalan berasaskan data dan cara melabel jadual.",
+        "elaboration": "Bentangkan ramalan dengan bukti, semak dengan rekod susulan.",
+        "evaluation": "Satu ramalan beralasan dan jadual berlabel."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-004",
+      "title": "Ruang, masa dan tafsiran data",
+      "dskp": [
+        {
+          "code": "1.1.7",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Menggunakan perhubungan ruang dan masa dengan menyusun kejadian sesuatu fenomena atau peristiwa mengikut kronologi berdasarkan masa."
+        },
+        {
+          "code": "1.1.8",
+          "printed_page": 43,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mentafsir data dengan memilih idea yang relevan tentang objek, peristiwa atau pola yang terdapat pada data untuk membuat penerangan."
+        }
+      ],
+      "phases": {
+        "engagement": "Susun foto pokok pada tarikh berlainan.",
+        "exploration": "Padankan foto dan catatan tinggi; susun mengikut masa.",
+        "explanation": "Terangkan kronologi dan pola perubahan berdasarkan data.",
+        "elaboration": "Bina graf ringkas tinggi mengikut hari dan tafsir dua selang.",
+        "evaluation": "Urutan betul dan dua tafsiran disokong data."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-005",
+      "title": "Definisi operasi dan pemboleh ubah",
+      "dskp": [
+        {
+          "code": "1.1.9",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mendefinisi secara operasi dengan memerihalkan satu tafsiran tentang perkara yang dilakukan dan diperhatikan bagi sesuatu situasi mengikut aspek yang ditentukan."
+        },
+        {
+          "code": "1.1.10",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan setelah pemboleh ubah dimanipulasi ditentukan dalam sesuatu penyiasatan."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya bagaimana menentukan bahan yang menyerap lebih banyak air.",
+        "exploration": "Banding sampel sama saiz menggunakan sukatan air sama.",
+        "explanation": "Takrif operasi daya serap berdasarkan isipadu air yang diserap; kenal pemboleh ubah.",
+        "elaboration": "Rancang ujian jenis bahan dengan masa dan saiz dimalarkan.",
+        "evaluation": "Nyatakan satu definisi operasi dan tiga pemboleh ubah."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-006",
+      "title": "Hipotesis dan eksperimen bayang",
+      "dskp": [
+        {
+          "code": "1.1.11",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Membuat hipotesis dengan membuat pernyataan umum yang boleh diuji tentang hubungan antara pemboleh ubah dalam sesuatu penyiasatan."
+        },
+        {
+          "code": "1.1.12",
+          "printed_page": 44,
+          "sk": "1.1 Kemahiran Proses Sains",
+          "sp": "Mengeksperimen dengan menggunakan kemahiran proses sains asas bagi mengumpul dan mentafsir data serta membuat rumusan untuk membuktikan hipotesis dan membuat laporan."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal kesan jarak lampu kepada saiz bayang.",
+        "exploration": "Uji tiga jarak lampu suluh daripada objek dengan skrin tetap.",
+        "explanation": "Bina hipotesis hubungan jarak dan saiz; terangkan ujian adil.",
+        "elaboration": "Rekod ukuran, ulang percubaan dan tulis rumusan berdasarkan hasil.",
+        "evaluation": "Hipotesis boleh diuji, jadual dan rumusan bersandarkan data."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-007",
+      "title": "Organ dan laluan udara",
+      "dskp": [
+        {
+          "code": "2.1.1",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Mengenal pasti organ yang terlibat dalam proses pernafasan."
+        },
+        {
+          "code": "2.1.2",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Memerihalkan proses pernafasan dari aspek laluan udara dan pertukaran gas yang berlaku di peparu melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer carta sistem pernafasan.",
+        "exploration": "Susun kad hidung, trakea dan peparu pada carta.",
+        "explanation": "Jelaskan laluan udara serta pertukaran oksigen dan karbon dioksida di peparu.",
+        "elaboration": "Lakar anak panah masuk dan keluar udara; terangkan kepada pasangan.",
+        "evaluation": "Label organ dan urutan laluan udara tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-008",
+      "title": "Kandungan udara pernafasan",
+      "dskp": [
+        {
+          "code": "2.1.3",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Membezakan kandungan oksigen dan karbon dioksida semasa menarik dan menghembus nafas."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding dua jadual komposisi udara sedutan dan hembusan.",
+        "exploration": "Cari perbezaan oksigen serta karbon dioksida pada data rujukan.",
+        "explanation": "Jelaskan udara hembusan masih mengandungi oksigen tetapi kurang daripada udara sedutan.",
+        "elaboration": "Lengkapkan carta perbandingan dua gas dan bentang.",
+        "evaluation": "Dua perbandingan kandungan gas tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-009",
+      "title": "Gerakan dada dan kadar pernafasan",
+      "dskp": [
+        {
+          "code": "2.1.4",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Memerihalkan pergerakan dada semasa menarik dan menghembus nafas dengan menjalankan aktiviti."
+        },
+        {
+          "code": "2.1.5",
+          "printed_page": 46,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Mengitlak bahawa kadar pernafasan bergantung kepada jenis aktiviti yang dilakukan."
+        },
+        {
+          "code": "2.1.6",
+          "printed_page": 47,
+          "sk": "2.1 Pernafasan Manusia",
+          "sp": "Menjelaskan pemerhatian tentang proses pernafasan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Perhatikan gerak dada sendiri ketika bernafas biasa.",
+        "exploration": "Kira nafas seminit ketika rehat dan selepas berjalan ringan secara sukarela; sediakan data alternatif.",
+        "explanation": "Jelaskan dada mengembang ketika menarik nafas dan kadar boleh meningkat selepas aktiviti.",
+        "elaboration": "Banding catatan sebelum dan selepas, tanpa menilai tahap kecergasan rakan.",
+        "evaluation": "Dua pemerhatian dan satu rumusan berasaskan data."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-010",
+      "title": "Perkumuhan dan penyahtinjaan",
+      "dskp": [
+        {
+          "code": "2.2.1",
+          "printed_page": 48,
+          "sk": "2.2 Perkumuhan dan Penyahtinjaan",
+          "sp": "Menyatakan maksud perkumuhan dan penyahtinjaan."
+        },
+        {
+          "code": "2.2.2",
+          "printed_page": 48,
+          "sk": "2.2 Perkumuhan dan Penyahtinjaan",
+          "sp": "Mengenal pasti organ dan hasil bagi perkumuhan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad peluh, air kencing dan tinja.",
+        "exploration": "Padankan kad organ dan hasil serta asingkan tinja.",
+        "explanation": "Jelaskan perkumuhan menyingkir bahan buangan metabolisme, penyahtinjaan menyingkir sisa makanan tidak tercerna.",
+        "elaboration": "Bina carta ginjal, kulit dan peparu bersama hasil masing-masing.",
+        "evaluation": "Tiga padanan organ dan dua maksud tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-011",
+      "title": "Kepentingan penyingkiran bahan buangan",
+      "dskp": [
+        {
+          "code": "2.2.3",
+          "printed_page": 48,
+          "sk": "2.2 Perkumuhan dan Penyahtinjaan",
+          "sp": "Membuat inferens kepentingan penyingkiran hasil perkumuhan dan hasil penyahtinjaan."
+        },
+        {
+          "code": "2.2.4",
+          "printed_page": 48,
+          "sk": "2.2 Perkumuhan dan Penyahtinjaan",
+          "sp": "Menjelaskan pemerhatian tentang perkumuhan dan penyahtinjaan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk ilustrasi sistem tubuh.",
+        "exploration": "Susun kad sebab dan akibat penyingkiran bahan buangan.",
+        "explanation": "Jelaskan kepentingan keseimbangan tubuh dan penyingkiran sisa.",
+        "elaboration": "Hasilkan peta amalan umum seperti minum air secukupnya dan tidak menahan ke tandas.",
+        "evaluation": "Dua penerangan kepentingan dan satu amalan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-012",
+      "title": "Rangsangan dan gerak balas",
+      "dskp": [
+        {
+          "code": "2.3.1",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menyatakan manusia bergerak balas apabila organ deria menerima rangsangan."
+        },
+        {
+          "code": "2.3.2",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menjelas dengan contoh gerak balas manusia terhadap rangsangan dalam kehidupan harian."
+        }
+      ],
+      "phases": {
+        "engagement": "Bunyikan loceng perlahan dan tanya apa yang didengar.",
+        "exploration": "Padankan rangsangan biasa dengan organ deria serta gerak balas.",
+        "explanation": "Jelaskan organ deria menerima rangsangan dan badan bertindak balas.",
+        "elaboration": "Gunakan kad situasi cahaya biasa, bunyi dan sentuhan objek selamat.",
+        "evaluation": "Empat padanan rangsangan dan gerak balas tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-013",
+      "title": "Kepentingan gerak balas",
+      "dskp": [
+        {
+          "code": "2.3.3",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Membuat inferens tentang kepentingan gerak balas manusia terhadap rangsangan."
+        },
+        {
+          "code": "2.3.4",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Memerihalkan tabiat yang mengganggu proses gerak balas manusia terhadap rangsangan."
+        },
+        {
+          "code": "2.3.5",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menjelaskan pemerhatian tentang manusia bergerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar pejalan kaki mendengar hon.",
+        "exploration": "Bincang kad gangguan seperti bunyi terlalu kuat atau kurang perhatian.",
+        "explanation": "Terangkan gerak balas membantu keselamatan; gunakan ilustrasi sahaja bagi rangsangan bahaya.",
+        "elaboration": "Bina poster penjagaan organ deria dan huraikan situasi.",
+        "evaluation": "Dua kepentingan dan dua tabiat yang perlu dielakkan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-014",
+      "title": "Organ pernafasan haiwan",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 51,
+          "sk": "3.1 Organ Pernafasan Haiwan",
+          "sp": "Mengenal pasti organ pernafasan haiwan."
+        },
+        {
+          "code": "3.1.2",
+          "printed_page": 51,
+          "sk": "3.1 Organ Pernafasan Haiwan",
+          "sp": "Mengelaskan haiwan berdasarkan organ pernafasan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar ikan, kucing, cacing dan belalang.",
+        "exploration": "Padankan rajah organ peparu, insang, kulit lembap dan spirakel.",
+        "explanation": "Jelaskan cara mengelaskan haiwan berdasarkan organ pernafasan.",
+        "elaboration": "Kelaskan lapan contoh menggunakan carta rujukan.",
+        "evaluation": "Enam daripada lapan padanan tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-015",
+      "title": "Haiwan dengan lebih daripada satu organ pernafasan",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 51,
+          "sk": "3.1 Organ Pernafasan Haiwan",
+          "sp": "Mengitlak terdapat haiwan yang mempunyai lebih daripada satu organ pernafasan."
+        },
+        {
+          "code": "3.1.4",
+          "printed_page": 51,
+          "sk": "3.1 Organ Pernafasan Haiwan",
+          "sp": "Menjelaskan pemerhatian tentang organ pernafasan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar katak dewasa dan berudu.",
+        "exploration": "Teliti carta pernafasan katak melalui peparu dan kulit lembap.",
+        "explanation": "Jelaskan perubahan organ mengikut peringkat hidup dan pelbagai organ pada katak dewasa.",
+        "elaboration": "Bina rajah berlabel serta banding dengan ikan.",
+        "evaluation": "Satu contoh haiwan dan dua organ pernafasan yang tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-016",
+      "title": "Vertebrata dan invertebrata",
+      "dskp": [
+        {
+          "code": "3.2.1",
+          "printed_page": 52,
+          "sk": "3.2 Haiwan Vertebrata",
+          "sp": "Menyatakan maksud haiwan vertebrata dan invertebrata."
+        },
+        {
+          "code": "3.2.2",
+          "printed_page": 52,
+          "sk": "3.2 Haiwan Vertebrata",
+          "sp": "Memberi contoh haiwan vertebrata dan invertebrata."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding rajah rangka ikan dengan gambar siput.",
+        "exploration": "Asing kad haiwan berdasarkan kewujudan tulang belakang.",
+        "explanation": "Jelaskan definisi vertebrata dan invertebrata.",
+        "elaboration": "Kelaskan lapan haiwan termasuk udang, paus dan kupu-kupu.",
+        "evaluation": "Enam padanan tepat dengan alasan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-017",
+      "title": "Lima kelas vertebrata",
+      "dskp": [
+        {
+          "code": "3.2.3",
+          "printed_page": 52,
+          "sk": "3.2 Haiwan Vertebrata",
+          "sp": "Mengelaskan haiwan vertebrata berdasarkan ciri khusus bagi mamalia, reptilia, amfibia, burung dan ikan."
+        },
+        {
+          "code": "3.2.4",
+          "printed_page": 52,
+          "sk": "3.2 Haiwan Vertebrata",
+          "sp": "Menjelaskan pemerhatian tentang haiwan vertebrata melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad ciri penutup badan dan cara pembiakan.",
+        "exploration": "Banding mamalia, reptilia, amfibia, burung dan ikan berdasarkan carta.",
+        "explanation": "Jelaskan ciri khusus kelas tanpa menganggap semua ciri sama pada setiap spesies.",
+        "elaboration": "Bina jadual ciri serta bentangkan pengelasan haiwan baharu.",
+        "evaluation": "Empat daripada lima kelas tepat dengan ciri sokongan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-018",
+      "title": "Bahagian tumbuhan dan rangsangan",
+      "dskp": [
+        {
+          "code": "4.1.1",
+          "printed_page": 53,
+          "sk": "4.1 Tumbuhan Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menyatakan tumbuhan bergerak balas terhadap rangsangan melalui pemerhatian menerusi pelbagai media."
+        },
+        {
+          "code": "4.1.2",
+          "printed_page": 53,
+          "sk": "4.1 Tumbuhan Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menghubungkait bahagian tumbuhan yang bergerak balas dengan jenis rangsangan."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer rakaman daun semalu menguncup.",
+        "exploration": "Padankan foto akar, pucuk dan daun dengan rangsangan.",
+        "explanation": "Jelaskan akar terhadap air dan graviti, pucuk terhadap cahaya, daun tertentu terhadap sentuhan.",
+        "elaboration": "Bina jadual bahagian, rangsangan dan gerak balas daripada contoh.",
+        "evaluation": "Empat padanan tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-019",
+      "title": "Penyiasatan gerak balas pucuk",
+      "dskp": [
+        {
+          "code": "4.1.3",
+          "printed_page": 53,
+          "sk": "4.1 Tumbuhan Bergerak Balas Terhadap Rangsangan",
+          "sp": "Membuat kesimpulan bahagian tumbuhan yang bergerak balas terhadap rangsangan dengan menjalankan penyiasatan."
+        },
+        {
+          "code": "4.1.4",
+          "printed_page": 53,
+          "sk": "4.1 Tumbuhan Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menjelaskan pemerhatian tentang tumbuhan gerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding gambar anak pokok condong ke arah cahaya.",
+        "exploration": "Sediakan dua bekas tanaman dengan arah cahaya berbeza dan faktor lain sama.",
+        "explanation": "Bina hipotesis, rekod kedudukan awal dan jelaskan pemerhatian susulan beberapa hari.",
+        "elaboration": "Lakar perubahan sebenar dan bentangkan selepas data dikumpulkan.",
+        "evaluation": "Rekod awal dan akhir sebenar serta rumusan berdasarkan bukti."
+      },
+      "scope_note": "Pemerhatian sebenar beberapa hari diperlukan.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-020",
+      "title": "Fotosintesis: keperluan dan hasil",
+      "dskp": [
+        {
+          "code": "4.2.1",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menyatakan maksud fotosintesis."
+        },
+        {
+          "code": "4.2.2",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menyenaraikan keperluan tumbuhan semasa proses fotosintesis."
+        },
+        {
+          "code": "4.2.3",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menyatakan hasil fotosintesis melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "phases": {
+        "engagement": "Tanya bagaimana tumbuhan membuat makanan tanpa makan seperti haiwan.",
+        "exploration": "Susun kad cahaya, air, karbon dioksida dan klorofil pada rajah daun.",
+        "explanation": "Jelaskan tumbuhan menghasilkan gula yang boleh disimpan sebagai kanji serta membebaskan oksigen.",
+        "elaboration": "Lengkapkan model input dan hasil berdasarkan media rujukan.",
+        "evaluation": "Maksud fotosintesis, empat keperluan dan hasil dinyatakan tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-021",
+      "title": "Kepentingan fotosintesis",
+      "dskp": [
+        {
+          "code": "4.2.4",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menaakul kepentingan fotosintesis terhadap hidupan."
+        },
+        {
+          "code": "4.2.5",
+          "printed_page": 54,
+          "sk": "4.2 Fotosintesis",
+          "sp": "Menjelaskan pemerhatian tentang fotosintesis melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar pokok, haiwan dan manusia.",
+        "exploration": "Susun hubungan makanan dan oksigen dalam peta konsep.",
+        "explanation": "Jelaskan fotosintesis menyokong sumber makanan dan oksigen.",
+        "elaboration": "Bina poster kesan jika fotosintesis terganggu.",
+        "evaluation": "Dua kepentingan dengan satu penerangan berasas."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-022",
+      "title": "Cahaya bergerak lurus",
+      "dskp": [
+        {
+          "code": "5.1.1",
+          "printed_page": 56,
+          "sk": "5.1 Cahaya Bergerak Lurus",
+          "sp": "Menyatakan cahaya bergerak lurus dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk lampu suluh dan tiga kad berlubang.",
+        "exploration": "Jajarkan lubang dan alihkan satu kad; perhatikan cahaya pada skrin.",
+        "explanation": "Jelaskan cahaya bergerak lurus dalam medium seragam.",
+        "elaboration": "Ulang dengan kedudukan lubang lain dan lakar laluan cahaya.",
+        "evaluation": "Dua pemerhatian dan satu kesimpulan tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-023",
+      "title": "Bayang objek lutsinar, lut cahaya dan legap",
+      "dskp": [
+        {
+          "code": "5.1.2",
+          "printed_page": 56,
+          "sk": "5.1 Cahaya Bergerak Lurus",
+          "sp": "Membanding dan membezakan bayang-bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal bayang plastik jernih, kertas surih dan kadbod.",
+        "exploration": "Uji bahan dengan jarak lampu, objek dan skrin sama.",
+        "explanation": "Jelaskan perbezaan penembusan cahaya dan kejelasan bayang.",
+        "elaboration": "Lengkapkan jadual hasil tiga bahan dan banding ramalan.",
+        "evaluation": "Tiga pengelasan berdasarkan bukti."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-024",
+      "title": "Faktor saiz dan bentuk bayang",
+      "dskp": [
+        {
+          "code": "5.1.3",
+          "printed_page": 56,
+          "sk": "5.1 Cahaya Bergerak Lurus",
+          "sp": "Mengeksperimen untuk menentukan faktor yang mempengaruhi saiz dan bentuk bayang-bayang."
+        },
+        {
+          "code": "5.1.4",
+          "printed_page": 56,
+          "sk": "5.1 Cahaya Bergerak Lurus",
+          "sp": "Menjelaskan pemerhatian tentang cahaya bergerak lurus melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer bayang objek yang berubah apabila diputar.",
+        "exploration": "Uji jarak lampu dalam satu eksperimen dan orientasi objek dalam eksperimen lain.",
+        "explanation": "Jelaskan faktor yang diubah dan faktor yang dimalarkan bagi setiap ujian.",
+        "elaboration": "Rekod ukuran serta lakaran bentuk; banding hasil.",
+        "evaluation": "Dua rumusan berdasarkan data ujian berasingan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-025",
+      "title": "Pantulan dan rajah sinar",
+      "dskp": [
+        {
+          "code": "5.2.1",
+          "printed_page": 57,
+          "sk": "5.2 Pantulan Cahaya",
+          "sp": "Menyatakan cahaya boleh dipantulkan dengan menjalankan aktiviti."
+        },
+        {
+          "code": "5.2.3",
+          "printed_page": 57,
+          "sk": "5.2 Pantulan Cahaya",
+          "sp": "Melukis gambar rajah sinar yang menunjukkan pantulan cahaya pada cermin."
+        }
+      ],
+      "phases": {
+        "engagement": "Arah lampu suluh ke cermin akrilik menuju skrin, bukan mata.",
+        "exploration": "Ubah sudut cermin dan jejak laluan cahaya.",
+        "explanation": "Jelaskan sinar tuju dan sinar pantulan menggunakan anak panah.",
+        "elaboration": "Lukis dua rajah sinar berdasarkan pemerhatian.",
+        "evaluation": "Dua rajah dengan arah anak panah betul."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-026",
+      "title": "Aplikasi pantulan cahaya",
+      "dskp": [
+        {
+          "code": "5.2.2",
+          "printed_page": 57,
+          "sk": "5.2 Pantulan Cahaya",
+          "sp": "Memerihalkan kegunaan pantulan cahaya dalam kehidupan harian."
+        },
+        {
+          "code": "5.2.4",
+          "printed_page": 57,
+          "sk": "5.2 Pantulan Cahaya",
+          "sp": "Menjelaskan pemerhatian tentang pantulan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar cermin muka dan periskop.",
+        "exploration": "Teroka model periskop dua cermin akrilik yang disediakan guru.",
+        "explanation": "Jelaskan bagaimana pantulan membolehkan objek dilihat dari kedudukan berlainan.",
+        "elaboration": "Lakar laluan cahaya dan bentangkan satu kegunaan.",
+        "evaluation": "Dua aplikasi dan satu rajah berlabel."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-027",
+      "title": "Pembiasan cahaya",
+      "dskp": [
+        {
+          "code": "5.3.1",
+          "printed_page": 58,
+          "sk": "5.3 Pembiasan Cahaya",
+          "sp": "Menyatakan cahaya boleh dibiaskan melalui pemerhatian menerusi pelbagai media."
+        },
+        {
+          "code": "5.3.2",
+          "printed_page": 58,
+          "sk": "5.3 Pembiasan Cahaya",
+          "sp": "Menjelas melalui contoh cahaya boleh dibiaskan dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer pensel dalam gelas kosong.",
+        "exploration": "Masukkan air dan banding rupa pensel; lihat syiling dalam bekas dari sisi.",
+        "explanation": "Jelaskan cahaya berubah arah apabila melalui medium berlainan.",
+        "elaboration": "Lakar pemerhatian sebelum dan selepas menambah air.",
+        "evaluation": "Dua contoh pembiasan dan penerangan ringkas."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-028",
+      "title": "Pembentukan pelangi",
+      "dskp": [
+        {
+          "code": "5.3.3",
+          "printed_page": 58,
+          "sk": "5.3 Pembiasan Cahaya",
+          "sp": "Memerihalkan pembentukan pelangi dengan menjalankan aktiviti."
+        },
+        {
+          "code": "5.3.4",
+          "printed_page": 58,
+          "sk": "5.3 Pembiasan Cahaya",
+          "sp": "Menjelaskan pemerhatian tentang pembiasan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer foto pelangi.",
+        "exploration": "Gunakan prisma dan sumber cahaya putih yang dibimbing guru; perhatikan spektrum.",
+        "explanation": "Jelaskan pembiasan, pemisahan warna dan pantulan dalaman titisan air membentuk pelangi.",
+        "elaboration": "Bina lakaran titisan air dan susunan warna berdasarkan media.",
+        "evaluation": "Nyatakan proses utama dan bentangkan lakaran."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-029",
+      "title": "Getaran dan arah bunyi",
+      "dskp": [
+        {
+          "code": "6.1.1",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Menyatakan bunyi dihasilkan oleh getaran dengan menjalankan aktiviti."
+        },
+        {
+          "code": "6.1.2",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Memerihalkan bunyi bergerak ke semua arah."
+        }
+      ],
+      "phases": {
+        "engagement": "Petik gelang getah yang dipasang selamat pada kotak.",
+        "exploration": "Perhatikan getaran dan dengar bunyi perlahan dari beberapa arah.",
+        "explanation": "Jelaskan bunyi dihasilkan oleh getaran dan merambat ke pelbagai arah.",
+        "elaboration": "Banding ketukan, petikan dan tiupan melalui model guru.",
+        "evaluation": "Dua bukti getaran dan satu rumusan arah bunyi."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-030",
+      "title": "Pantulan bunyi",
+      "dskp": [
+        {
+          "code": "6.1.3",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Memberi contoh fenomena dalam kehidupan harian yang menunjukkan bunyi boleh dipantulkan."
+        }
+      ],
+      "phases": {
+        "engagement": "Mainkan rakaman gema pada aras bunyi rendah.",
+        "exploration": "Banding bunyi asal dan gema melalui rakaman atau simulasi.",
+        "explanation": "Jelaskan bunyi boleh dipantulkan oleh permukaan; kaitkan dengan sonar.",
+        "elaboration": "Padankan gema, sonar dan ultrabunyi dengan contoh penggunaan.",
+        "evaluation": "Dua contoh fenomena pantulan dan satu penerangan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-031",
+      "title": "Bunyi berfaedah dan pencemaran bunyi",
+      "dskp": [
+        {
+          "code": "6.1.4",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Memerihalkan bunyi yang berfaedah dan bunyi yang memudaratkan dalam kehidupan harian."
+        },
+        {
+          "code": "6.1.5",
+          "printed_page": 59,
+          "sk": "6.1 Bunyi",
+          "sp": "Menjana idea untuk menyelesaikan masalah bagi mengurangkan pencemaran bunyi."
+        }
+      ],
+      "phases": {
+        "engagement": "Banding kad loceng amaran dan bunyi pembinaan.",
+        "exploration": "Kelaskan situasi mengikut fungsi, kelantangan dan tempoh.",
+        "explanation": "Jelaskan bunyi yang berguna juga boleh memudaratkan jika terlalu kuat.",
+        "elaboration": "Reka pelan kelas lebih senyap dengan tindakan praktikal.",
+        "evaluation": "Dua manfaat, dua kesan buruk dan dua cadangan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-032",
+      "title": "Sumber dan bentuk tenaga",
+      "dskp": [
+        {
+          "code": "7.1.1",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Menyatakan maksud tenaga."
+        },
+        {
+          "code": "7.1.2",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Memerihalkan pelbagai sumber tenaga melalui pemerhatian menerusi pelbagai media."
+        },
+        {
+          "code": "7.1.3",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Menjelaskan dengan contoh pelbagai bentuk tenaga."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar Matahari, angin, makanan dan bateri.",
+        "exploration": "Padankan sumber dengan peralatan atau proses yang menggunakan tenaga.",
+        "explanation": "Jelaskan tenaga membolehkan kerja dilakukan dan bezakan sumber daripada bentuk.",
+        "elaboration": "Bina jadual contoh tenaga kimia, haba, cahaya, elektrik, kinetik, bunyi dan keupayaan serta contoh lain daripada carta.",
+        "evaluation": "Lima padanan bentuk/sumber tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-033",
+      "title": "Perubahan bentuk tenaga",
+      "dskp": [
+        {
+          "code": "7.1.4",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Menjelaskan melalui contoh perubahan bentuk tenaga dalam kehidupan seharian."
+        },
+        {
+          "code": "7.1.5",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Mengitlak tenaga tidak boleh dicipta dan tidak boleh dimusnahkan tetapi boleh berubah bentuk."
+        },
+        {
+          "code": "7.1.6",
+          "printed_page": 61,
+          "sk": "7.1 Sumber dan Bentuk Tenaga",
+          "sp": "Menjelaskan pemerhatian tentang sumber tenaga dan bentuk tenaga melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Hidupkan lampu suluh bateri.",
+        "exploration": "Perhatikan model lampu, kipas bateri dan objek bergerak.",
+        "explanation": "Jelaskan tenaga berubah bentuk dan tidak dicipta atau dimusnahkan; sebahagian tersebar sebagai haba.",
+        "elaboration": "Lakar rantai perubahan tenaga bagi tiga peralatan.",
+        "evaluation": "Tiga rantai tepat dan satu rumusan keabadian tenaga."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-034",
+      "title": "Sumber boleh dan tidak boleh dibaharui",
+      "dskp": [
+        {
+          "code": "7.2.1",
+          "printed_page": 62,
+          "sk": "7.2 Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+          "sp": "Menjelaskan dengan contoh sumber tenaga boleh dibaharui dan tenaga tidak boleh dibaharui melalui pemerhatian menerusi pelbagai media."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar panel suria, turbin angin, arang batu dan petroleum.",
+        "exploration": "Asingkan kad sumber berdasarkan kebolehan pulih dalam skala masa manusia.",
+        "explanation": "Jelaskan perbezaan sumber boleh dibaharui dan terhad.",
+        "elaboration": "Banding enam sumber dengan contoh penggunaan.",
+        "evaluation": "Lima daripada enam pengelasan tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-035",
+      "title": "Penggunaan tenaga berhemah",
+      "dskp": [
+        {
+          "code": "7.2.2",
+          "printed_page": 62,
+          "sk": "7.2 Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+          "sp": "Menjana idea kepentingan penggunaan sumber tenaga secara berhemah."
+        },
+        {
+          "code": "7.2.3",
+          "printed_page": 62,
+          "sk": "7.2 Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+          "sp": "Menjelaskan pemerhatian tentang sumber tenaga boleh dibaharui dan sumber tenaga tidak boleh dibaharui melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjuk ilustrasi bilik kosong dengan lampu menyala.",
+        "exploration": "Kenal pembaziran pada kad situasi sekolah.",
+        "explanation": "Jelaskan penjimatan mengurangkan penggunaan sumber dan kesan alam sekitar.",
+        "elaboration": "Rancang tiga tindakan penjimatan kelas serta bentang alasan.",
+        "evaluation": "Tiga tindakan yang boleh dilaksanakan dengan dua alasan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-036",
+      "title": "Sumber asas bahan",
+      "dskp": [
+        {
+          "code": "8.1.1",
+          "printed_page": 64,
+          "sk": "8.1 Sumber Asas Bahan",
+          "sp": "Menjelaskan melalui contoh sumber asas bagi bahan yang digunakan untuk membuat objek."
+        },
+        {
+          "code": "8.1.2",
+          "printed_page": 64,
+          "sk": "8.1 Sumber Asas Bahan",
+          "sp": "Mengelaskan objek berdasarkan sumber asasnya."
+        },
+        {
+          "code": "8.1.3",
+          "printed_page": 64,
+          "sk": "8.1 Sumber Asas Bahan",
+          "sp": "Menjelaskan pemerhatian tentang sumber asas bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer meja kayu, kain kapas, paku dan bekas plastik.",
+        "exploration": "Padankan objek, bahan dan sumber asal melalui kad rujukan.",
+        "explanation": "Jelaskan sumber tumbuhan, haiwan, batuan dan petroleum; objek boleh mengandungi beberapa bahan.",
+        "elaboration": "Bina jadual untuk lapan objek harian.",
+        "evaluation": "Enam padanan objek-bahan-sumber tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-037",
+      "title": "Sifat bahan: air dan cahaya",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Memerihalkan sifat bahan dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal kain, plastik dan kertas menyerap air atau membenarkan cahaya lalu.",
+        "exploration": "Uji air dalam jumlah kecil dan lampu suluh secara berasingan.",
+        "explanation": "Jelaskan perbezaan serapan, kalis air serta penembusan cahaya.",
+        "elaboration": "Rekod hasil dan cadangkan bahan untuk payung atau tingkap.",
+        "evaluation": "Empat pemerhatian dan dua pilihan beralasan."
+      },
+      "scope_note": "Satu bahagian skop sifat bahan; semak gabungan tiga calon sesi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-038",
+      "title": "Sifat bahan: arus elektrik, haba dan kekenyalan",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Memerihalkan sifat bahan dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer kad pemegang periuk dan gelang getah.",
+        "exploration": "Uji bahan kering pada litar sel kering bermentol; banding kekenyalan secara selamat.",
+        "explanation": "Jelaskan pengaliran arus, kekenyalan dan pengaliran haba menggunakan data demonstrasi guru.",
+        "elaboration": "Padankan bahan dengan kegunaan berdasarkan bukti; tiada sumber elektrik sesalur atau permukaan panas disentuh.",
+        "evaluation": "Tiga penerangan sifat dan tiga padanan sesuai."
+      },
+      "scope_note": "Satu bahagian skop sifat bahan; semak gabungan tiga calon sesi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-039",
+      "title": "Sifat bahan: terapung dan tenggelam",
+      "dskp": [
+        {
+          "code": "8.2.1",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Memerihalkan sifat bahan dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer penutup plastik, gabus dan batu.",
+        "exploration": "Uji sampel dalam bekas air dan rekod kedudukan.",
+        "explanation": "Jelaskan kedudukan objek bergantung ketumpatan purata dan bentuk.",
+        "elaboration": "Banding dua bentuk model daripada bahan sama; pilih bahan pelampung model.",
+        "evaluation": "Empat rekod dan satu pilihan berasaskan bukti."
+      },
+      "scope_note": "Satu bahagian skop sifat bahan; semak gabungan tiga calon sesi.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-040",
+      "title": "Reka cipta objek berdasarkan sifat bahan",
+      "dskp": [
+        {
+          "code": "8.2.2",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Mereka cipta objek dengan mengaplikasikan pengetahuan tentang sifat bahan."
+        },
+        {
+          "code": "8.2.3",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Menaakul pemilihan jenis bahan yang digunakan dalam mereka cipta objek."
+        },
+        {
+          "code": "8.2.4",
+          "printed_page": 65,
+          "sk": "8.2 Sifat Bahan",
+          "sp": "Menjelaskan pemerhatian tentang sifat bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Berikan cabaran melindungi kad kertas daripada titisan air.",
+        "exploration": "Uji sampel pembalut untuk kalis air dan kekuatan.",
+        "explanation": "Jelaskan pemilihan bahan menurut sifat, bukan rupa sahaja.",
+        "elaboration": "Bina prototaip pelindung kad dan uji menggunakan titisan air.",
+        "evaluation": "Prototaip berfungsi serta dua alasan pemilihan bahan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-041",
+      "title": "Graviti Bumi",
+      "dskp": [
+        {
+          "code": "9.1.1",
+          "printed_page": 68,
+          "sk": "9.1 Graviti Bumi",
+          "sp": "Memerihalkan daya tarikan graviti bumi berdasarkan pemerhatian dengan menjalankan aktiviti."
+        },
+        {
+          "code": "9.1.2",
+          "printed_page": 68,
+          "sk": "9.1 Graviti Bumi",
+          "sp": "Mengitlak bahawa semua objek di Bumi boleh berada pada kedudukannya dengan menjalankan aktiviti."
+        },
+        {
+          "code": "9.1.3",
+          "printed_page": 68,
+          "sk": "9.1 Graviti Bumi",
+          "sp": "Menjelaskan pemerhatian tentang tarikan graviti bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Lepaskan bola lembut dari aras meja ke dulang.",
+        "exploration": "Perhatikan arah jatuhan beberapa objek ringan; gunakan glob untuk membincangkan arah ke pusat Bumi.",
+        "explanation": "Jelaskan graviti menarik objek ke arah Bumi; permukaan menyokong objek yang pegun.",
+        "elaboration": "Lakar anak panah graviti pada beberapa kedudukan di glob.",
+        "evaluation": "Tiga anak panah ke pusat Bumi dan satu penerangan."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-042",
+      "title": "Putaran dan peredaran Bumi",
+      "dskp": [
+        {
+          "code": "9.2.1",
+          "printed_page": 69,
+          "sk": "9.2 Putaran dan Peredaran Bumi",
+          "sp": "Menyatakan Bumi berputar pada paksinya dan pada masa yang sama beredar mengikut orbitnya mengelilingi Matahari."
+        },
+        {
+          "code": "9.2.2",
+          "printed_page": 69,
+          "sk": "9.2 Putaran dan Peredaran Bumi",
+          "sp": "Memerihalkan putaran dan peredaran Bumi dari aspek arah dan tempoh."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer glob dan lampu sebagai model Matahari.",
+        "exploration": "Putar glob dan gerakkan mengelilingi lampu secara berasingan.",
+        "explanation": "Jelaskan arah barat ke timur, putaran kira-kira 24 jam dan edaran kira-kira 365¼ hari.",
+        "elaboration": "Label paksi, orbit, arah dan tempoh pada rajah.",
+        "evaluation": "Empat daripada lima label tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-043",
+      "title": "Kesan putaran Bumi",
+      "dskp": [
+        {
+          "code": "9.2.3",
+          "printed_page": 69,
+          "sk": "9.2 Putaran dan Peredaran Bumi",
+          "sp": "Memerihalkan kesan putaran Bumi pada paksinya dengan menjalankan aktiviti."
+        },
+        {
+          "code": "9.2.4",
+          "printed_page": 69,
+          "sk": "9.2 Putaran dan Peredaran Bumi",
+          "sp": "Menjelaskan pemerhatian tentang putaran dan peredaran Bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Tunjukkan bahagian glob yang diterangi lampu.",
+        "exploration": "Putar glob untuk memerhati siang dan malam; banding gambar bayang pada masa berlainan.",
+        "explanation": "Jelaskan Matahari kelihatan bergerak akibat putaran Bumi.",
+        "elaboration": "Lakar kejadian siang malam dan tafsir data arah serta panjang bayang.",
+        "evaluation": "Dua kesan putaran dan satu rajah tepat."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-044",
+      "title": "Beban, fulkrum dan daya",
+      "dskp": [
+        {
+          "code": "10.1.1",
+          "printed_page": 72,
+          "sk": "10.1 Tuas",
+          "sp": "Mengenal pasti beban, fulkrum dan daya pada tuas dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer model pembaris di atas penyokong.",
+        "exploration": "Gerakkan pembaris dengan beban ringan dan kenal tiga bahagian.",
+        "explanation": "Jelaskan fulkrum sebagai titik putaran, beban dan daya yang dikenakan.",
+        "elaboration": "Label tiga contoh tuas bergambar.",
+        "evaluation": "Tiga label tepat pada sekurang-kurangnya dua model."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-045",
+      "title": "Jarak beban dan daya tuas",
+      "dskp": [
+        {
+          "code": "10.1.2",
+          "printed_page": 72,
+          "sk": "10.1 Tuas",
+          "sp": "Mengitlak hubung kait jarak beban dari fulkrum dengan daya yang diperlukan."
+        },
+        {
+          "code": "10.1.3",
+          "printed_page": 72,
+          "sk": "10.1 Tuas",
+          "sp": "Menjelaskan pemerhatian tentang tuas melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Ramal daya apabila beban ringan didekatkan kepada fulkrum.",
+        "exploration": "Uji tiga jarak beban dengan jarak daya dan berat beban dikekalkan.",
+        "explanation": "Jelaskan beban lebih dekat kepada fulkrum memerlukan daya lebih kecil bagi keadaan ujian sama.",
+        "elaboration": "Rekod bacaan neraca spring jika tersedia dan lakar susunan.",
+        "evaluation": "Satu jadual dan rumusan berdasarkan data."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-046",
+      "title": "Jenis mesin ringkas",
+      "dskp": [
+        {
+          "code": "10.2.1",
+          "printed_page": 73,
+          "sk": "10.2 Mesin Ringkas dan Mesin Kompleks",
+          "sp": "Menjelas dengan contoh jenis dan kegunaan mesin ringkas dengan menjalankan aktiviti."
+        }
+      ],
+      "phases": {
+        "engagement": "Pamer gambar tanjakan, takal, gear, skru dan alat lain.",
+        "exploration": "Padankan tujuh jenis mesin ringkas dengan contoh selamat.",
+        "explanation": "Jelaskan fungsi tuas, gear, takal, baji, skru, satah condong serta roda dan gandar.",
+        "elaboration": "Kelaskan tujuh contoh dan terangkan cara membantu kerja.",
+        "evaluation": "Enam padanan tepat dan dua fungsi."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    },
+    {
+      "candidate_id": "SCI-T4-DRAFT-047",
+      "title": "Mesin kompleks",
+      "dskp": [
+        {
+          "code": "10.2.2",
+          "printed_page": 73,
+          "sk": "10.2 Mesin Ringkas dan Mesin Kompleks",
+          "sp": "Menyelesaikan masalah dengan menggunakan dua atau lebih mesin ringkas."
+        },
+        {
+          "code": "10.2.3",
+          "printed_page": 73,
+          "sk": "10.2 Mesin Ringkas dan Mesin Kompleks",
+          "sp": "Merumuskan maksud mesin kompleks."
+        },
+        {
+          "code": "10.2.4",
+          "printed_page": 73,
+          "sk": "10.2 Mesin Ringkas dan Mesin Kompleks",
+          "sp": "Menjelaskan pemerhatian tentang mesin ringkas dan mesin kompleks melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "phases": {
+        "engagement": "Beri cabaran memindahkan muatan ringan model ke aras meja.",
+        "exploration": "Lakar pilihan tanjakan dan kereta model beroda; kenal mesin ringkas yang digabung.",
+        "explanation": "Jelaskan mesin kompleks menggabungkan lebih daripada satu mesin ringkas.",
+        "elaboration": "Bina model menggunakan bahan selamat dan uji fungsi; bentangkan lakaran.",
+        "evaluation": "Model berfungsi dan dua jenis mesin ringkas dikenal pasti."
+      },
+      "scope_note": "Agihan dan skop sesi cadangan; belum dipadankan kepada PdP sebenar.",
+      "ready": false
+    }
+  ]
+}
