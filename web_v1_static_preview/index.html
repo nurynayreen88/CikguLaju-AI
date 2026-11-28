@@ -3077,7 +3077,7 @@ async function populateMaterialList(){
   }catch(_error){/* No 5P offer; ordinary RPH and other materials remain. */}
  }
  const arabYear3=subject.value==="ARAB"&&year.value==="3";
- if((subject.value==="BM"&&year.value==="2")||(subject.value==="ENGLISH"&&[2,3,4,5,6].includes(Number(year.value)))||arabYear3||
+ if((subject.value==="MATH"&&year.value==="2")||(subject.value==="BM"&&year.value==="2")||(subject.value==="ENGLISH"&&[2,3,4,5,6].includes(Number(year.value)))||arabYear3||
     subject.value==="MUZIK"||(subject.value===ppkiSubject&&["2","3","4","5","6"].includes(year.value))||
     (subject.value==="SCIENCE"&&[1,2,3,5,6].includes(Number(year.value)))){
   try{
@@ -3101,8 +3101,9 @@ async function populateMaterialList(){
      continue;
     }
     if(!item||typeof item.url!=="string"||typeof item.title!=="string")continue;
-    const ownWorksheet=["ENGLISH","BM"].includes(subject.value)&&item.type==="worksheet"&&
-        item.url.startsWith("/api/web/rph/worksheet-pdf?");
+    const ownWorksheet=item.type==="worksheet"&&(
+        (["ENGLISH","BM"].includes(subject.value)&&item.url.startsWith("/api/web/rph/worksheet-pdf?"))||
+        (subject.value==="MATH"&&/^\/api\/web\/rph\/math-worksheet-pdf\/(murid|skema)\?/.test(item.url)));
     const ownWorkbook=item.type==="workbook"&&
         item.url.startsWith("/api/web/rph/english-workbook?");
     const ownStudentBook=item.type==="textbook"&&
