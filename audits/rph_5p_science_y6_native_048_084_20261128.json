@@ -1,0 +1,1533 @@
+{
+  "status": "DEPLOYED_SOURCE_ADAPTED_DRAFT_NOT_APPROVED",
+  "year": 6,
+  "source": {
+    "bot_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+    "agihan_blob": "58661f6b6b4fcb10ba7945d67d0b64e5d207d7d5",
+    "bank_part2_blob": "a50e928e4018de62456e7107ab1eb1c82920ce40",
+    "bank_part3_blob": "a880569e2c449510bfe35516bf03c7563d573b71",
+    "export_blob": "9c0b74c4d82f12ca3fe7cbd943d33211e624593c",
+    "dskp_blob": "3b1b9d043acb1350c032c91dd36c3102f17051f6",
+    "risk_blob": "651e78194fbd0b28f336fd031d7cf091834d0e31"
+  },
+  "policy": "Preserve native sequence and effective source PBD. Proposed phases require academic and document review; no release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-048",
+      "teaching_order": 53,
+      "title": "Menjelaskan dengan contoh ciri makanan yang telah rosak.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 60,
+      "textbook_pages": "128-129",
+      "sk": "8.1 Kerosakan Makanan",
+      "sp": [
+        {
+          "code": "8.1.1",
+          "text": "Menjelas dengan contoh ciri makanan yang telah rosak."
+        }
+      ],
+      "original": {
+        "objective": "Empat tanda makanan rosak dan dua contoh tepat",
+        "materials": "Foto makanan rosak dan selamat berlabel",
+        "pbd": "Empat tanda makanan rosak dan dua contoh tepat",
+        "safety": "Makanan rosak: guna gambar, bukan sampel berkulat beracun"
+      },
+      "source_activity": {
+        "sp": "8.1.1",
+        "hook": "Foto buah berkulat, susu basi dan sayur berlendir",
+        "teacher1": "menerangkan tanda makanan rosak menggunakan gambar sahaja",
+        "pupil1": "mengelaskan ciri perubahan warna, bau, tekstur dan tompok kulat",
+        "teacher2": "menyediakan dua gambar makanan tidak rosak untuk dibandingkan",
+        "pupil2": "menulis empat ciri makanan rosak dengan contoh bergambar",
+        "pbd": "Empat tanda makanan rosak dan dua contoh tepat",
+        "materials": "Foto makanan rosak dan selamat berlabel",
+        "safety": "Makanan rosak: guna gambar, bukan sampel berkulat beracun"
+      },
+      "phases": {
+        "engagement": "Bandingkan foto buah segar dengan buah berkulat; murid senaraikan perubahan yang terlihat.",
+        "exploration": "Kelaskan kad tanda perubahan warna, tekstur, bau yang diterangkan dalam kad dan tompok kulat.",
+        "explanation": "Jelaskan empat ciri kerosakan dengan contoh gambar, tanpa menghidu atau merasa makanan.",
+        "elaboration": "Padankan dua foto baharu dengan tanda kerosakan dan bincang mengapa rupa sahaja tidak menjamin keselamatan.",
+        "evaluation": "Empat tanda makanan rosak dan dua contoh tepat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-049",
+      "teaching_order": 54,
+      "title": "Menyatakan bahawa kerosakan makanan disebabkan oleh tindakan mikroorganisma.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 30,
+      "textbook_pages": "128-130",
+      "sk": "8.1 Kerosakan Makanan",
+      "sp": [
+        {
+          "code": "8.1.2",
+          "text": "Menyatakan bahawa kerosakan makanan disebabkan oleh tindakan mikroorganisma."
+        }
+      ],
+      "original": {
+        "objective": "Dua alasan saintifik kesan mikroorganisma pada makanan",
+        "materials": "Gambar siri makanan rosak dan carta mikroorganisma",
+        "pbd": "Dua alasan saintifik kesan mikroorganisma pada makanan",
+        "safety": "Makanan rosak: guna gambar, bukan sampel berkulat beracun"
+      },
+      "source_activity": {
+        "sp": "8.1.2",
+        "hook": "Dua siri gambar roti tersimpan dengan tempoh berbeza",
+        "teacher1": "membimbing tafsiran pertumbuhan mikroorganisma daripada foto sedia ada",
+        "pupil1": "menghubungkan perubahan kerosakan dengan tindakan mikroorganisma",
+        "teacher2": "meminta murid membezakan punca mikroorganisma daripada perubahan fizikal biasa",
+        "pupil2": "menjelaskan dua bukti kerosakan berkaitan mikroorganisma",
+        "pbd": "Dua alasan saintifik kesan mikroorganisma pada makanan",
+        "materials": "Gambar siri makanan rosak dan carta mikroorganisma",
+        "safety": "Makanan rosak: guna gambar, bukan sampel berkulat beracun"
+      },
+      "phases": {
+        "engagement": "Paparkan siri foto roti pada tarikh berlainan; murid jangka punca perubahan.",
+        "exploration": "Susun foto mengikut masa dan kenal pasti tanda pertumbuhan mikroorganisma.",
+        "explanation": "Jelaskan peranan mikroorganisma dalam kerosakan; bezakan perubahan fizikal biasa.",
+        "elaboration": "Bandingkan dua siri foto dan beri alasan berdasarkan bukti, tanpa kultur atau sampel hidup.",
+        "evaluation": "Dua alasan saintifik kesan mikroorganisma pada makanan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-050",
+      "teaching_order": 55,
+      "title": "Menjelaskan pemerhatian tentang kerosakan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 60,
+      "textbook_pages": "130",
+      "sk": "8.1 Kerosakan Makanan",
+      "sp": [
+        {
+          "code": "8.1.3",
+          "text": "Menjelaskan pemerhatian tentang kerosakan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran dua tahap makanan dan penerangan punca kerosakan",
+        "materials": "Templat poster kerosakan dan data gambar",
+        "pbd": "Lakaran dua tahap makanan dan penerangan punca kerosakan",
+        "safety": "Makanan rosak: guna gambar, bukan sampel berkulat beracun"
+      },
+      "source_activity": {
+        "sp": "8.1.3",
+        "hook": "Lakaran makanan segar dan makanan rosak bersama urutan masa",
+        "teacher1": "membimbing poster perbandingan makanan berubah melalui tindakan mikroorganisma",
+        "pupil1": "melakar dua keadaan dan label tiga perubahan",
+        "teacher2": "meminta murid menjelaskan kepentingan menyimpan makanan dengan betul",
+        "pupil2": "membuat rumusan berdasarkan gambar dan dua bukti khusus",
+        "pbd": "Lakaran dua tahap makanan dan penerangan punca kerosakan",
+        "materials": "Templat poster kerosakan dan data gambar",
+        "safety": "Makanan rosak: guna gambar, bukan sampel berkulat beracun"
+      },
+      "phases": {
+        "engagement": "Paparkan dua gambar makanan pada masa berlainan; murid nyatakan perubahan.",
+        "exploration": "Lakar dua tahap makanan dan label tiga perubahan yang ditunjukkan.",
+        "explanation": "Terangkan tindakan mikroorganisma berdasarkan bukti foto.",
+        "elaboration": "Bentangkan poster dan cadangkan penyimpanan yang sesuai berdasarkan maklumat guru.",
+        "evaluation": "Lakaran dua tahap makanan dan penerangan punca kerosakan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-051",
+      "teaching_order": 56,
+      "title": "Memerihalkan tujuan pengawetan makanan.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 60,
+      "textbook_pages": "131",
+      "sk": "8.2 Pengawetan Makanan",
+      "sp": [
+        {
+          "code": "8.2.1",
+          "text": "Memerihalkan tujuan pengawetan makanan."
+        }
+      ],
+      "original": {
+        "objective": "Dua tujuan pengawetan berdasarkan mikroorganisma dan jangka hayat",
+        "materials": "Foto makanan diawet dan kad kaedah",
+        "pbd": "Dua tujuan pengawetan berdasarkan mikroorganisma dan jangka hayat",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "source_activity": {
+        "sp": "8.2.1",
+        "hook": "Foto ikan dikeringkan dan susu dipasteur",
+        "teacher1": "menerangkan bahawa pengawetan menghalang atau melambatkan pertumbuhan mikroorganisma",
+        "pupil1": "menamakan dua tujuan pengawetan daripada gambar",
+        "teacher2": "meminta murid memadankan kaedah dengan tempoh simpan contoh",
+        "pupil2": "menulis takrif tujuan pengawetan dan dua manfaat",
+        "pbd": "Dua tujuan pengawetan berdasarkan mikroorganisma dan jangka hayat",
+        "materials": "Foto makanan diawet dan kad kaedah",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "phases": {
+        "engagement": "Paparkan ikan kering dan susu dipasteur; murid jangka sebab makanan diawet.",
+        "exploration": "Padankan kad kaedah dengan contoh tempoh penyimpanan dalam bahan sumber.",
+        "explanation": "Jelaskan pengawetan menghalang atau melambatkan pertumbuhan mikroorganisma dan memanjangkan jangka hayat.",
+        "elaboration": "Bandingkan dua contoh pengawetan dan nyatakan manfaatnya.",
+        "evaluation": "Dua tujuan pengawetan berdasarkan mikroorganisma dan jangka hayat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-052",
+      "teaching_order": 57,
+      "title": "Menghubungkait kaedah pengawetan makanan dengan faktor yang mempengaruhi pertumbuhan mikroorganisma.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 60,
+      "textbook_pages": "131-134",
+      "sk": "8.2 Pengawetan Makanan",
+      "sp": [
+        {
+          "code": "8.2.2",
+          "text": "Menghubungkait kaedah pengawetan makanan dengan faktor yang mempengaruhi pertumbuhan mikroorganisma."
+        }
+      ],
+      "original": {
+        "objective": "Jadual empat kaitan kaedah dengan faktor pertumbuhan",
+        "materials": "Kad pengeringan penyejukbekuan penjerukan dan pemanasan",
+        "pbd": "Jadual empat kaitan kaedah dengan faktor pertumbuhan",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "source_activity": {
+        "sp": "8.2.2",
+        "hook": "Jadual makanan dikering, dibeku, dipanas dan dijeruk",
+        "teacher1": "menjelaskan kaitan empat kaedah dengan air, suhu dan keasidan",
+        "pupil1": "mengelaskan kaedah menurut faktor pertumbuhan mikroorganisma yang dikurangkan",
+        "teacher2": "membimbing pembinaan jadual silang lima kaedah dan faktor",
+        "pupil2": "menulis empat pasangan kaedah-faktor disokong sebab",
+        "pbd": "Jadual empat kaitan kaedah dengan faktor pertumbuhan",
+        "materials": "Kad pengeringan penyejukbekuan penjerukan dan pemanasan",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar makanan dikering, dibeku, dipanas dan dijeruk; murid cari perbezaan kaedah.",
+        "exploration": "Kelaskan kad kaedah mengikut faktor air, suhu atau keasidan yang dikawal.",
+        "explanation": "Terangkan hubungan empat kaedah dengan keadaan pertumbuhan mikroorganisma.",
+        "elaboration": "Bina jadual silang kaedah dan faktor; jelaskan sebab bagi setiap padanan tanpa menguji makanan berisiko.",
+        "evaluation": "Jadual empat kaitan kaedah dengan faktor pertumbuhan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-053",
+      "teaching_order": 58,
+      "title": "Menjalankan projek pengawetan sejenis makanan dengan pelbagai kaedah.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 30,
+      "textbook_pages": "135-138",
+      "sk": "8.2 Pengawetan Makanan",
+      "sp": [
+        {
+          "code": "8.2.3",
+          "text": "Menjalankan projek pengawetan sejenis makanan dengan pelbagai kaedah."
+        }
+      ],
+      "original": {
+        "objective": "Log dua kaedah bagi buah yang sama dengan keadaan awal dan satu dapatan daripada rekod susulan",
+        "materials": "Buah dipotong guru, bekas berlabel, gambar bertarikh dan jadual",
+        "pbd": "Log dua kaedah bagi buah yang sama dengan keadaan awal dan satu dapatan daripada rekod susulan",
+        "safety": "Gunakan sampel untuk pemerhatian di bawah seliaan guru."
+      },
+      "source_activity": {
+        "sp": "8.2.3",
+        "hook": "Projek pengawetan hirisan buah melalui pengeringan terkawal",
+        "teacher1": "menunjukkan dua bahagian buah yang sama yang disediakan untuk pengeringan dan penyejukbekuan",
+        "pupil1": "melabel kedua-dua sampel, mencatat keadaan awal dan memulakan projek di bawah seliaan guru",
+        "teacher2": "menunjukkan rekod susulan bertarikh bagi dua kaedah",
+        "pupil2": "membandingkan satu ciri yang dapat dilihat dan merancang catatan susulan projek",
+        "pbd": "Log dua kaedah bagi buah yang sama dengan keadaan awal dan satu dapatan daripada rekod susulan",
+        "materials": "Buah dipotong guru, bekas berlabel, gambar bertarikh dan jadual",
+        "safety": "Gunakan sampel untuk pemerhatian di bawah seliaan guru."
+      },
+      "phases": {
+        "engagement": "Paparkan dua bahagian buah sama untuk pengeringan dan penyejukbekuan; murid jangka perubahan.",
+        "exploration": "Guru menyelia pelabelan sampel, merekod keadaan awal dan memulakan kedua-dua kaedah.",
+        "explanation": "Bandingkan gambar susulan bertarikh yang disediakan guru; bezakan rekod sebenar dengan jangkaan.",
+        "elaboration": "Rancang catatan susulan dan lengkapkan log awal dua kaedah; hasil projek bukan untuk dimakan.",
+        "evaluation": "Log dua kaedah bagi buah yang sama dengan keadaan awal dan satu dapatan daripada rekod susulan"
+      },
+      "scope_note": "Projek merentasi masa; gunakan rekod susulan bertarikh sebenar dan jangan makan sampel.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-054",
+      "teaching_order": 59,
+      "title": "Merumuskan terdapat makanan yang boleh diawet lebih daripada satu kaedah pengawetan.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 60,
+      "textbook_pages": "135-138",
+      "sk": "8.2 Pengawetan Makanan",
+      "sp": [
+        {
+          "code": "8.2.4",
+          "text": "Merumuskan terdapat makanan yang boleh diawet lebih daripada satu kaedah pengawetan."
+        }
+      ],
+      "original": {
+        "objective": "Jadual tiga makanan dengan lebih daripada satu kaedah",
+        "materials": "Kad ikan masin buah dan susu diawet",
+        "pbd": "Jadual tiga makanan dengan lebih daripada satu kaedah",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "source_activity": {
+        "sp": "8.2.4",
+        "hook": "Foto ikan asin yang turut dikeringkan dan susu dalam suhu sejuk",
+        "teacher1": "membimbing perbandingan satu makanan diawet dua cara berlainan",
+        "pupil1": "mengisi jadual dua kaedah bagi tiga makanan",
+        "teacher2": "meminta murid menjelaskan mengapa dua kaedah memberi tempoh simpan berbeza",
+        "pupil2": "menulis tiga contoh makanan dan dua kaedah setiap satu",
+        "pbd": "Jadual tiga makanan dengan lebih daripada satu kaedah",
+        "materials": "Kad ikan masin buah dan susu diawet",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar ikan masin kering dan susu sejuk; murid namakan kaedah.",
+        "exploration": "Isi jadual tiga makanan dan dua kaedah pengawetan yang sesuai bagi setiap satu.",
+        "explanation": "Jelaskan bahawa satu jenis makanan boleh diawet dengan kaedah berlainan.",
+        "elaboration": "Bandingkan contoh tempoh simpan daripada kad sumber dan terangkan sebab perbezaan tanpa menjamin keselamatan makanan.",
+        "evaluation": "Jadual tiga makanan dengan lebih daripada satu kaedah"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-055",
+      "teaching_order": 60,
+      "title": "Mengitlak terdapat makanan boleh diawet dengan menggabungkan lebih daripada satu kaedah pengawetan.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 30,
+      "textbook_pages": "139",
+      "sk": "8.2 Pengawetan Makanan",
+      "sp": [
+        {
+          "code": "8.2.5",
+          "text": "Mengitlak terdapat makanan boleh diawet dengan menggabungkan lebih daripada satu kaedah pengawetan."
+        }
+      ],
+      "original": {
+        "objective": "Satu kesimpulan gabungan dua kaedah pengawetan dengan alasan",
+        "materials": "Kad langkah gabungan kaedah dan carta pertumbuhan",
+        "pbd": "Satu kesimpulan gabungan dua kaedah pengawetan dengan alasan",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "source_activity": {
+        "sp": "8.2.5",
+        "hook": "Lakaran gabungan pemasinan, pengeringan dan vakum",
+        "teacher1": "memodelkan urutan tiga proses yang boleh digabung untuk memanjangkan simpanan",
+        "pupil1": "menyusun kad dua kaedah yang saling melengkapi",
+        "teacher2": "menyoal faktor mikroorganisma yang dikawal oleh setiap gabungan",
+        "pupil2": "mengitlak satu prinsip gabungan beserta contoh dan sebab",
+        "pbd": "Satu kesimpulan gabungan dua kaedah pengawetan dengan alasan",
+        "materials": "Kad langkah gabungan kaedah dan carta pertumbuhan",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "phases": {
+        "engagement": "Paparkan kad pemasinan, pengeringan dan pembungkusan; murid jangka fungsi setiap proses.",
+        "exploration": "Susun kad gabungan dua kaedah dalam contoh yang disediakan guru.",
+        "explanation": "Jelaskan faktor pertumbuhan yang dikawal oleh setiap kaedah dan mengapa ia boleh saling melengkapi.",
+        "elaboration": "Pilih satu gabungan contoh dan nyatakan prinsipnya, tanpa menyediakan makanan untuk dimakan.",
+        "evaluation": "Satu kesimpulan gabungan dua kaedah pengawetan dengan alasan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-056",
+      "teaching_order": 61,
+      "title": "Memerihalkan kepentingan teknologi pengawetan makanan bagi memenuhi keperluan bekalan makanan.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 60,
+      "textbook_pages": "140-141",
+      "sk": "8.2 Pengawetan Makanan",
+      "sp": [
+        {
+          "code": "8.2.6",
+          "text": "Memerihalkan kepentingan teknologi pengawetan makanan bagi memenuhi keperluan bekalan makanan."
+        }
+      ],
+      "original": {
+        "objective": "Tiga kepentingan teknologi pengawetan serta penyelesaian masalah",
+        "materials": "Carta bekalan dan kad situasi logistik",
+        "pbd": "Tiga kepentingan teknologi pengawetan serta penyelesaian masalah",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "source_activity": {
+        "sp": "8.2.6",
+        "hook": "Carta bekalan buah luar musim dan stok yang dibazir",
+        "teacher1": "memimpin soal jawab faedah pengawetan bagi bekalan makanan jarak jauh",
+        "pupil1": "menulis tiga kepentingan bekalan luar musim tahan lama dan kurang pembaziran",
+        "teacher2": "meminta murid memilih strategi menyimpan untuk kawasan pedalaman",
+        "pupil2": "menghasilkan satu cadangan dan sebab yang berdasarkan data bekalan",
+        "pbd": "Tiga kepentingan teknologi pengawetan serta penyelesaian masalah",
+        "materials": "Carta bekalan dan kad situasi logistik",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "phases": {
+        "engagement": "Paparkan carta buah luar musim dan lebihan stok; murid kenal pasti masalah bekalan.",
+        "exploration": "Analisis kad bekalan jarak jauh, musim dan pembaziran.",
+        "explanation": "Jelaskan tiga kepentingan teknologi pengawetan untuk memenuhi keperluan bekalan.",
+        "elaboration": "Cadangkan strategi dalam senario pedalaman berdasarkan data kad dan jelaskan alasan.",
+        "evaluation": "Tiga kepentingan teknologi pengawetan serta penyelesaian masalah"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-057",
+      "teaching_order": 62,
+      "title": "Menjelaskan pemerhatian tentang pengawetan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 8: Pengawetan Makanan",
+      "minutes": 30,
+      "textbook_pages": "143",
+      "sk": "8.2 Pengawetan Makanan",
+      "sp": [
+        {
+          "code": "8.2.7",
+          "text": "Menjelaskan pemerhatian tentang pengawetan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Carta alir pengawetan dan hujah dua kesan dengan bukti",
+        "materials": "Foto proses pengawetan dan templat alir",
+        "pbd": "Carta alir pengawetan dan hujah dua kesan dengan bukti",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "source_activity": {
+        "sp": "8.2.7",
+        "hook": "Infografik pengawetan sejenis makanan yang selamat",
+        "teacher1": "membimbing murid melakar aliran kaedah dan faktor yang dikawal",
+        "pupil1": "menghasilkan diagram enam kotak daripada bahan mentah ke pembungkusan",
+        "teacher2": "meminta murid menerangkan kesan pada kerosakan dan pembaziran",
+        "pupil2": "membentangkan dua pemerhatian serta sebab pemilihan kaedah",
+        "pbd": "Carta alir pengawetan dan hujah dua kesan dengan bukti",
+        "materials": "Foto proses pengawetan dan templat alir",
+        "safety": "Pengawetan: tiada pemprosesan makanan berisiko atau produk untuk dimakan tanpa kawalan; hasil projek bukan untuk dimakan dan penyediaan makanan diawasi guru"
+      },
+      "phases": {
+        "engagement": "Paparkan infografik satu proses pengawetan; murid kenal pasti langkah utama.",
+        "exploration": "Lakar carta alir enam kotak berpandukan foto dan label faktor yang dikawal.",
+        "explanation": "Terangkan dua pemerhatian berkaitan kerosakan dan pembaziran.",
+        "elaboration": "Bentangkan pilihan kaedah dalam carta alir dan jawab soalan rakan menggunakan bukti.",
+        "evaluation": "Carta alir pengawetan dan hujah dua kesan dengan bukti"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-058",
+      "teaching_order": 63,
+      "title": "Mengenal pasti bahan buangan berdasarkan jenis bahan.",
+      "unit": "Unit 9: Bahan Buangan",
+      "minutes": 60,
+      "textbook_pages": "148-149",
+      "sk": "9.1 Pengurusan Bahan Buangan",
+      "sp": [
+        {
+          "code": "9.1.1",
+          "text": "Mengenal pasti bahan buangan berdasarkan jenis bahan."
+        }
+      ],
+      "original": {
+        "objective": "Enam jenis bahan buangan dikelaskan menggunakan gambar",
+        "materials": "Kad bahan dan foto bahan buangan",
+        "pbd": "Enam jenis bahan buangan dikelaskan menggunakan gambar",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "source_activity": {
+        "sp": "9.1.1",
+        "hook": "Gambar kertas plastik kaca aluminium sisa sayur dan bahan berbahaya",
+        "teacher1": "memperkenalkan jenis bahan buangan melalui foto dan label selamat",
+        "pupil1": "mengelaskan enam gambar mengikut bahan tanpa memegang sisa sebenar",
+        "teacher2": "memberikan kad bahan komposit untuk menilai jenis dominan",
+        "pupil2": "menamakan enam jenis bahan buangan dan satu contoh setiap jenis",
+        "pbd": "Enam jenis bahan buangan dikelaskan menggunakan gambar",
+        "materials": "Kad bahan dan foto bahan buangan",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "phases": {
+        "engagement": "Paparkan foto kertas, plastik, kaca, aluminium, sisa sayur dan bahan berbahaya; murid cari kategori.",
+        "exploration": "Kelaskan enam kad mengikut jenis bahan tanpa mengendalikan sisa sebenar.",
+        "explanation": "Jelaskan ciri setiap jenis bahan dan contoh pada gambar.",
+        "elaboration": "Tentukan jenis dominan kad bahan komposit dan jelaskan batas pengelasan.",
+        "evaluation": "Enam jenis bahan buangan dikelaskan menggunakan gambar"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-059",
+      "teaching_order": 64,
+      "title": "Menyatakan maksud bahan buangan terbiodegradasi dan tidak terbiodegradasi.",
+      "unit": "Unit 9: Bahan Buangan",
+      "minutes": 30,
+      "textbook_pages": "150-151",
+      "sk": "9.1 Pengurusan Bahan Buangan",
+      "sp": [
+        {
+          "code": "9.1.2",
+          "text": "Menyatakan maksud bahan buangan terbiodegradasi dan tidak terbiodegradasi."
+        }
+      ],
+      "original": {
+        "objective": "Takrif dua kategori dan empat contoh bahan buangan",
+        "materials": "Kad kulit buah kertas plastik dan logam",
+        "pbd": "Takrif dua kategori dan empat contoh bahan buangan",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "source_activity": {
+        "sp": "9.1.2",
+        "hook": "Dua contoh kulit buah dan plastik pembungkus",
+        "teacher1": "menerangkan maksud terbiodegradasi dan tidak terbiodegradasi",
+        "pupil1": "menghuraikan penguraian oleh hidupan seperti mikroorganisma pada ilustrasi",
+        "teacher2": "meminta murid memadankan empat bahan dengan dua takrif",
+        "pupil2": "menulis dua takrif yang tepat serta dua contoh setiap kumpulan",
+        "pbd": "Takrif dua kategori dan empat contoh bahan buangan",
+        "materials": "Kad kulit buah kertas plastik dan logam",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "phases": {
+        "engagement": "Paparkan kulit buah dan plastik pembungkus; murid jangka bahan yang boleh terurai secara biologi.",
+        "exploration": "Padankan kad empat bahan dengan ilustrasi penguraian mikroorganisma.",
+        "explanation": "Jelaskan maksud terbiodegradasi dan tidak terbiodegradasi berdasarkan proses penguraian.",
+        "elaboration": "Bina dua takrif serta contoh dan semak semula padanan menggunakan kad sumber.",
+        "evaluation": "Takrif dua kategori dan empat contoh bahan buangan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-060",
+      "teaching_order": 65,
+      "title": "Mengelaskan bahan buangan kepada bahan terbiodegradasi dan tidak terbiodegradasi.",
+      "unit": "Unit 9: Bahan Buangan",
+      "minutes": 60,
+      "textbook_pages": "150-151",
+      "sk": "9.1 Pengurusan Bahan Buangan",
+      "sp": [
+        {
+          "code": "9.1.3",
+          "text": "Mengelaskan bahan buangan kepada bahan terbiodegradasi dan tidak terbiodegradasi."
+        }
+      ],
+      "original": {
+        "objective": "Dua lajur pengelasan lapan bahan beserta alasan",
+        "materials": "Kad gambar sisa sekolah dan carta penguraian",
+        "pbd": "Dua lajur pengelasan lapan bahan beserta alasan",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "source_activity": {
+        "sp": "9.1.3",
+        "hook": "Jadual lapan contoh buangan daripada aktiviti sekolah",
+        "teacher1": "membimbing pengelasan kepada boleh urai secara biologi dan tidak boleh urai",
+        "pupil1": "mengisi dua lajur bagi lapan kad bahan",
+        "teacher2": "meminta murid menjelaskan dua pilihan sukar seperti tisu kotor dan plastik",
+        "pupil2": "menghantar jadual lapan bahan dan satu alasan saintifik",
+        "pbd": "Dua lajur pengelasan lapan bahan beserta alasan",
+        "materials": "Kad gambar sisa sekolah dan carta penguraian",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "phases": {
+        "engagement": "Paparkan lapan kad buangan sekolah; murid ramal kategori.",
+        "exploration": "Isi dua lajur terbiodegradasi dan tidak terbiodegradasi menggunakan kad gambar.",
+        "explanation": "Terangkan sebab pengelasan, termasuk tisu dan plastik biasa.",
+        "elaboration": "Semak pilihan pasangan berdasarkan sifat bahan, bukan keadaan kotor atau bersih.",
+        "evaluation": "Dua lajur pengelasan lapan bahan beserta alasan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-061",
+      "teaching_order": 66,
+      "title": "Menaakul penggunaan bahan terbiodegradasi dan tidak terbiodegradasi secara berhemah.",
+      "unit": "Unit 9: Bahan Buangan",
+      "minutes": 30,
+      "textbook_pages": "152-155",
+      "sk": "9.1 Pengurusan Bahan Buangan",
+      "sp": [
+        {
+          "code": "9.1.4",
+          "text": "Menaakul penggunaan bahan terbiodegradasi dan tidak terbiodegradasi secara berhemah."
+        }
+      ],
+      "original": {
+        "objective": "Dua pilihan penggunaan bahan buangan secara bijak",
+        "materials": "Kad situasi pembelian dan carta 5R",
+        "pbd": "Dua pilihan penggunaan bahan buangan secara bijak",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "source_activity": {
+        "sp": "9.1.4",
+        "hook": "Perbandingan botol guna semula dan bekas sekali guna",
+        "teacher1": "menerangkan amalan berhemah memilih bahan tahan lama dan boleh urai",
+        "pupil1": "mencatat keputusan dua pembelian untuk mengurangkan buangan",
+        "teacher2": "membimbing analisis kesan jika semua plastik digunakan sekali",
+        "pupil2": "menulis dua amalan berhemah dan sebab terhadap alam",
+        "pbd": "Dua pilihan penggunaan bahan buangan secara bijak",
+        "materials": "Kad situasi pembelian dan carta 5R",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "phases": {
+        "engagement": "Paparkan botol guna semula dan bekas sekali guna; murid pilih amalan berhemah.",
+        "exploration": "Bandingkan dua keputusan pembelian menggunakan kad situasi.",
+        "explanation": "Jelaskan kesan pilihan tahan lama atau boleh urai terhadap jumlah buangan.",
+        "elaboration": "Cadangkan dua amalan pengurangan sisa dan beri alasan berdasarkan carta 5R.",
+        "evaluation": "Dua pilihan penggunaan bahan buangan secara bijak"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-062",
+      "teaching_order": 67,
+      "title": "Memerihalkan pengurusan bahan buangan secara terancang untuk kehidupan lestari.",
+      "unit": "Unit 9: Bahan Buangan",
+      "minutes": 60,
+      "textbook_pages": "156-161",
+      "sk": "9.1 Pengurusan Bahan Buangan",
+      "sp": [
+        {
+          "code": "9.1.5",
+          "text": "Memerihalkan pengurusan bahan buangan secara terancang untuk kehidupan lestari."
+        }
+      ],
+      "original": {
+        "objective": "Pelan pengurusan bahan buangan sekolah empat langkah",
+        "materials": "Foto tong berlabel dan templat aliran",
+        "pbd": "Pelan pengurusan bahan buangan sekolah empat langkah",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "source_activity": {
+        "sp": "9.1.5",
+        "hook": "Foto tong pengasingan berlabel dan aliran kitar semula",
+        "teacher1": "membentangkan sistem pengurusan bahan buangan sekolah secara terancang",
+        "pupil1": "melakar empat langkah mengasing kutip proses guna semula",
+        "teacher2": "mencabar murid menyelesaikan situasi pembuangan minyak atau sisa bahaya",
+        "pupil2": "menerangkan empat langkah pengurusan dan satu sebab kelestarian",
+        "pbd": "Pelan pengurusan bahan buangan sekolah empat langkah",
+        "materials": "Foto tong berlabel dan templat aliran",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "phases": {
+        "engagement": "Paparkan foto tong pengasingan dan aliran kitar semula; murid cari langkah yang hilang.",
+        "exploration": "Lakar empat langkah pengurusan sisa sekolah berdasarkan aliran pada kad.",
+        "explanation": "Jelaskan peranan pengasingan, kutipan, pemprosesan dan guna semula.",
+        "elaboration": "Bincang kes minyak atau sisa berbahaya: rujuk orang dewasa dan saluran pelupusan sesuai, bukan mengendalikan sendiri.",
+        "evaluation": "Pelan pengurusan bahan buangan sekolah empat langkah"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-063",
+      "teaching_order": 68,
+      "title": "Menjelaskan pemerhatian tentang pengurusan bahan buangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 9: Bahan Buangan",
+      "minutes": 30,
+      "textbook_pages": "161",
+      "sk": "9.1 Pengurusan Bahan Buangan",
+      "sp": [
+        {
+          "code": "9.1.6",
+          "text": "Menjelaskan pemerhatian tentang pengurusan bahan buangan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Poster 5R dan penerangan kesan pengurusan buangan",
+        "materials": "Kad 5R dan carta pengurangan sisa",
+        "pbd": "Poster 5R dan penerangan kesan pengurusan buangan",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "source_activity": {
+        "sp": "9.1.6",
+        "hook": "Poster operasi 5R di kelas dan masalah sampah bertaburan",
+        "teacher1": "membimbing murid menyusun keputusan menolak mengurang guna semula baiki dan kitar semula",
+        "pupil1": "membina poster lima tindakan dengan ikon",
+        "teacher2": "meminta murid membuat rumusan kesan tindakan pilihan kepada alam",
+        "pupil2": "menulis dua pemerhatian pengurusan buangan dan satu cadangan",
+        "pbd": "Poster 5R dan penerangan kesan pengurusan buangan",
+        "materials": "Kad 5R dan carta pengurangan sisa",
+        "safety": "Bahan buangan: guna bahan contoh bersih, tiada sampah tajam/biologi"
+      },
+      "phases": {
+        "engagement": "Paparkan poster 5R dan situasi sampah bertaburan; murid pilih satu tindakan.",
+        "exploration": "Susun lima tindakan menolak, mengurang, guna semula, baiki dan kitar semula pada poster.",
+        "explanation": "Terangkan dua kesan tindakan terhadap jumlah sisa dan alam sekitar.",
+        "elaboration": "Cadangkan satu perubahan amalan kelas dengan alasan yang boleh diperhatikan.",
+        "evaluation": "Poster 5R dan penerangan kesan pengurusan buangan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-064",
+      "teaching_order": 69,
+      "title": "Memerihalkan fenomena gerhana Bulan berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "unit": "Unit 10: Gerhana",
+      "minutes": 30,
+      "textbook_pages": "166-167",
+      "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+      "sp": [
+        {
+          "code": "10.1.1",
+          "text": "Memerihalkan fenomena gerhana Bulan berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi."
+        }
+      ],
+      "original": {
+        "objective": "Rajah susunan gerhana Bulan serta kesan bayang yang benar",
+        "materials": "Tiga bola plastik lampu LED dan rajah bayang",
+        "pbd": "Rajah susunan gerhana Bulan serta kesan bayang yang benar",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "source_activity": {
+        "sp": "10.1.1",
+        "hook": "Model tiga bola Matahari Bumi dan Bulan pada latar hitam",
+        "teacher1": "membimbing simulasi susunan Matahari Bumi Bulan bagi gerhana Bulan dalam kelas",
+        "pupil1": "menyusun tiga bola dan melukis bayang Bumi jatuh pada Bulan",
+        "teacher2": "meminta murid menjelaskan mengapa gerhana Bulan terjadi ketika Bumi di tengah",
+        "pupil2": "melabel satu rajah gerhana Bulan dan dua langkah simulasi",
+        "pbd": "Rajah susunan gerhana Bulan serta kesan bayang yang benar",
+        "materials": "Tiga bola plastik lampu LED dan rajah bayang",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "phases": {
+        "engagement": "Paparkan tiga bola model; murid jangka susunan gerhana Bulan.",
+        "exploration": "Susun model Matahari–Bumi–Bulan dengan lampu LED kecil; perhatikan bayang Bumi pada Bulan.",
+        "explanation": "Jelaskan kedudukan Bumi di tengah dan bagaimana bayang terbentuk dalam simulasi.",
+        "elaboration": "Lakar susunan serta arah cahaya dan bezakan model daripada cerapan sebenar.",
+        "evaluation": "Rajah susunan gerhana Bulan serta kesan bayang yang benar"
+      },
+      "scope_note": "Simulasi dalam bilik sahaja; tiada cerapan Matahari langsung.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-065",
+      "teaching_order": 70,
+      "title": "Memerihalkan fenomena gerhana Matahari berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "unit": "Unit 10: Gerhana",
+      "minutes": 30,
+      "textbook_pages": "168-170",
+      "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+      "sp": [
+        {
+          "code": "10.1.2",
+          "text": "Memerihalkan fenomena gerhana Matahari berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi."
+        }
+      ],
+      "original": {
+        "objective": "Rajah susunan gerhana Matahari dengan dua fakta tepat",
+        "materials": "Bola model dan rajah cahaya tanpa pemerhatian Matahari langsung",
+        "pbd": "Rajah susunan gerhana Matahari dengan dua fakta tepat",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "source_activity": {
+        "sp": "10.1.2",
+        "hook": "Model Matahari Bulan dan Bumi dengan Bulan di tengah",
+        "teacher1": "membimbing simulasi gerhana Matahari menggunakan bola dan lampu kecil di ruang tertutup",
+        "pupil1": "mencatat susunan Matahari Bulan Bumi dan arah bayang",
+        "teacher2": "membimbing perbandingan bayang Bulan pada Bumi dan bayang Bumi pada Bulan",
+        "pupil2": "melukis kedudukan gerhana Matahari dengan penerangan sebab",
+        "pbd": "Rajah susunan gerhana Matahari dengan dua fakta tepat",
+        "materials": "Bola model dan rajah cahaya tanpa pemerhatian Matahari langsung",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "phases": {
+        "engagement": "Paparkan model tiga jasad; murid jangka kedudukan Bulan semasa gerhana Matahari.",
+        "exploration": "Susun Matahari–Bulan–Bumi menggunakan lampu kecil dan bola; catat arah bayang Bulan pada Bumi.",
+        "explanation": "Jelaskan bagaimana Bulan menghalang cahaya dalam kawasan bayang.",
+        "elaboration": "Bandingkan kedudukan dengan gerhana Bulan dan lakar perbezaan; simulasi sahaja.",
+        "evaluation": "Rajah susunan gerhana Matahari dengan dua fakta tepat"
+      },
+      "scope_note": "Simulasi dalam bilik sahaja; tiada cerapan Matahari langsung.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-066",
+      "teaching_order": 71,
+      "title": "Menghubungkaitkan fenomena gerhana Bulan dan gerhana Matahari dengan sifat cahaya.",
+      "unit": "Unit 10: Gerhana",
+      "minutes": 60,
+      "textbook_pages": "171-173",
+      "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+      "sp": [
+        {
+          "code": "10.1.3",
+          "text": "Menghubungkaitkan fenomena gerhana Bulan dan gerhana Matahari dengan sifat cahaya."
+        }
+      ],
+      "original": {
+        "objective": "Dua rajah gerhana dengan hubungan cahaya lurus dan halangan",
+        "materials": "Kad sumber cahaya dan model bayang",
+        "pbd": "Dua rajah gerhana dengan hubungan cahaya lurus dan halangan",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "source_activity": {
+        "sp": "10.1.3",
+        "hook": "Dua rajah bayang dalam gerhana Bulan dan Matahari",
+        "teacher1": "menerangkan cahaya bergerak lurus dan dihalang oleh jasad legap melalui simulasi",
+        "pupil1": "menunjukkan arah cahaya dan kawasan bayang pada kedua-dua model",
+        "teacher2": "membimbing carta perbandingan dua gerhana",
+        "pupil2": "menerangkan satu persamaan prinsip cahaya dan satu perbezaan kedudukan",
+        "pbd": "Dua rajah gerhana dengan hubungan cahaya lurus dan halangan",
+        "materials": "Kad sumber cahaya dan model bayang",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "phases": {
+        "engagement": "Paparkan dua rajah gerhana; murid cari persamaan bayang.",
+        "exploration": "Gunakan model legap dan lampu LED untuk menanda arah cahaya dan kawasan bayang.",
+        "explanation": "Jelaskan cahaya bergerak lurus serta pembentukan bayang apabila dihalang.",
+        "elaboration": "Bina carta perbandingan dua gerhana dengan persamaan prinsip cahaya dan perbezaan susunan.",
+        "evaluation": "Dua rajah gerhana dengan hubungan cahaya lurus dan halangan"
+      },
+      "scope_note": "Simulasi dalam bilik sahaja; tiada cerapan Matahari langsung.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-067",
+      "teaching_order": 72,
+      "title": "Meramalkan keadaan di Bumi semasa kejadian gerhana Bulan dan gerhana Matahari.",
+      "unit": "Unit 10: Gerhana",
+      "minutes": 30,
+      "textbook_pages": "174-175",
+      "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+      "sp": [
+        {
+          "code": "10.1.4",
+          "text": "Meramalkan keadaan di Bumi semasa kejadian gerhana Bulan dan gerhana Matahari."
+        }
+      ],
+      "original": {
+        "objective": "Dua ramalan keadaan Bumi dengan bukti kedudukan jasad",
+        "materials": "Kad simulasi gerhana dan skrin ilustrasi",
+        "pbd": "Dua ramalan keadaan Bumi dengan bukti kedudukan jasad",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "source_activity": {
+        "sp": "10.1.4",
+        "hook": "Empat ilustrasi keadaan siang dan malam semasa gerhana",
+        "teacher1": "membimbing ramalan kawasan gelap di Bumi ketika gerhana Matahari",
+        "pupil1": "meramal keadaan langit berdasarkan kedudukan model tiga bola",
+        "teacher2": "meminta murid membanding tempoh dan kawasan perubahan cahaya pada gambar",
+        "pupil2": "menulis dua ramalan gerhana dan alasan berdasarkan bayang",
+        "pbd": "Dua ramalan keadaan Bumi dengan bukti kedudukan jasad",
+        "materials": "Kad simulasi gerhana dan skrin ilustrasi",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "phases": {
+        "engagement": "Paparkan ilustrasi siang dan malam semasa gerhana; murid jangka kawasan yang mengalami perubahan.",
+        "exploration": "Teliti kedudukan tiga bola dan jejak kawasan bayang dalam simulasi.",
+        "explanation": "Jelaskan gerhana Matahari hanya mempengaruhi kawasan tertentu di Bumi, manakala gerhana Bulan mengubah rupa Bulan yang terlihat dari bahagian malam.",
+        "elaboration": "Buat dua ramalan keadaan berdasarkan model tanpa meramal tempoh tepat atau melihat Matahari.",
+        "evaluation": "Dua ramalan keadaan Bumi dengan bukti kedudukan jasad"
+      },
+      "scope_note": "Simulasi dalam bilik sahaja; tiada cerapan Matahari langsung.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-068",
+      "teaching_order": 73,
+      "title": "Menjelaskan pemerhatian tentang fenomena gerhana Bulan dan gerhana Matahari melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 10: Gerhana",
+      "minutes": 60,
+      "textbook_pages": "170,173",
+      "sk": "10.1 Fenomena Gerhana Bulan dan Gerhana Matahari",
+      "sp": [
+        {
+          "code": "10.1.5",
+          "text": "Menjelaskan pemerhatian tentang fenomena gerhana Bulan dan gerhana Matahari melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Poster dua gerhana dengan perbandingan dan sebab",
+        "materials": "Carta dua gerhana dan templat lakaran",
+        "pbd": "Poster dua gerhana dengan perbandingan dan sebab",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "source_activity": {
+        "sp": "10.1.5",
+        "hook": "Poster bersebelahan gerhana Bulan dan gerhana Matahari",
+        "teacher1": "membimbing peta visual kedudukan tiga jasad untuk kedua-dua gerhana",
+        "pupil1": "melakar dan melabel dua kedudukan serta arah cahaya",
+        "teacher2": "meminta penerangan lisan satu perbezaan dan satu persamaan",
+        "pupil2": "menulis rumusan pemerhatian yang disokong gambar dan simulasi",
+        "pbd": "Poster dua gerhana dengan perbandingan dan sebab",
+        "materials": "Carta dua gerhana dan templat lakaran",
+        "safety": "Gerhana: jangan melihat Matahari atau melakukan pemerhatian tanpa alat pelindung khusus; JANGAN melihat Matahari secara terus atau cuba pemerhatian gerhana sebenar tanpa perlindungan bertauliah"
+      },
+      "phases": {
+        "engagement": "Paparkan poster dua gerhana; murid kenal pasti susunan yang berbeza.",
+        "exploration": "Lakar dan label dua kedudukan tiga jasad serta arah cahaya.",
+        "explanation": "Terangkan satu persamaan dan satu perbezaan menggunakan rajah.",
+        "elaboration": "Bentangkan rumusan pemerhatian simulasi; betulkan arah bayang pada lakaran pasangan.",
+        "evaluation": "Poster dua gerhana dengan perbandingan dan sebab"
+      },
+      "scope_note": "Simulasi dalam bilik sahaja; tiada cerapan Matahari langsung.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-069",
+      "teaching_order": 74,
+      "title": "Menyatakan maksud galaksi.",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "minutes": 30,
+      "textbook_pages": "180-182",
+      "sk": "11.1 Galaksi Bima Sakti",
+      "sp": [
+        {
+          "code": "11.1.1",
+          "text": "Menyatakan maksud galaksi."
+        }
+      ],
+      "original": {
+        "objective": "Takrif galaksi dan satu perbezaan skala objek astronomi",
+        "materials": "Imej galaksi yang berlesen dan kad objek langit",
+        "pbd": "Takrif galaksi dan satu perbezaan skala objek astronomi",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "source_activity": {
+        "sp": "11.1.1",
+        "hook": "Foto galaksi penuh bintang serta debu kosmik",
+        "teacher1": "menunjukkan perbezaan galaksi dan satu bintang melalui gambar",
+        "pupil1": "merangka takrif galaksi merangkumi banyak bintang gas dan debu",
+        "teacher2": "memberi kad objek Sistem Suria dan galaksi untuk dipadankan",
+        "pupil2": "menyatakan maksud galaksi serta satu sebab Sistem Suria bukan galaksi",
+        "pbd": "Takrif galaksi dan satu perbezaan skala objek astronomi",
+        "materials": "Imej galaksi yang berlesen dan kad objek langit",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "phases": {
+        "engagement": "Paparkan foto galaksi dan satu bintang; murid bandingkan skala.",
+        "exploration": "Kelaskan kad bintang, objek Sistem Suria dan galaksi berdasarkan gambar.",
+        "explanation": "Jelaskan galaksi mengandungi banyak bintang, gas dan debu yang terikat graviti.",
+        "elaboration": "Bandingkan Sistem Suria dengan galaksi dan tulis sebab ia bukan galaksi.",
+        "evaluation": "Takrif galaksi dan satu perbezaan skala objek astronomi"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-070",
+      "teaching_order": 75,
+      "title": "Memerihalkan galaksi Bima Sakti.",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "minutes": 60,
+      "textbook_pages": "183-185",
+      "sk": "11.1 Galaksi Bima Sakti",
+      "sp": [
+        {
+          "code": "11.1.2",
+          "text": "Memerihalkan galaksi Bima Sakti."
+        }
+      ],
+      "original": {
+        "objective": "Dua ciri galaksi Bima Sakti dengan gambar berlabel",
+        "materials": "Carta galaksi spiral dan peta bintang",
+        "pbd": "Dua ciri galaksi Bima Sakti dengan gambar berlabel",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "source_activity": {
+        "sp": "11.1.2",
+        "hook": "Imej galaksi Bima Sakti dengan label lengan spiral",
+        "teacher1": "memperkenalkan ciri Bima Sakti melalui ilustrasi pandangan luar dan sisi",
+        "pupil1": "melabel bahagian galaksi dan menyatakan bentuk spiral",
+        "teacher2": "membimbing perbandingan Bima Sakti dengan foto galaksi lain",
+        "pupil2": "menulis dua ciri Bima Sakti dan satu penerangan lokasi Sistem Suria",
+        "pbd": "Dua ciri galaksi Bima Sakti dengan gambar berlabel",
+        "materials": "Carta galaksi spiral dan peta bintang",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "phases": {
+        "engagement": "Paparkan ilustrasi Bima Sakti dari atas dan sisi; murid nyatakan bentuk.",
+        "exploration": "Label cakera, lengan spiral dan lokasi anggaran Sistem Suria pada carta.",
+        "explanation": "Jelaskan ciri Bima Sakti menggunakan ilustrasi, bukan foto pandangan luar sebenar.",
+        "elaboration": "Bandingkan bentuknya dengan foto galaksi lain dan nyatakan dua ciri.",
+        "evaluation": "Dua ciri galaksi Bima Sakti dengan gambar berlabel"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-071",
+      "teaching_order": 76,
+      "title": "Merumuskan Sistem Suria berada dalam galaksi Bima Sakti.",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "minutes": 60,
+      "textbook_pages": "183-186",
+      "sk": "11.1 Galaksi Bima Sakti",
+      "sp": [
+        {
+          "code": "11.1.3",
+          "text": "Merumuskan Sistem Suria berada dalam galaksi Bima Sakti."
+        }
+      ],
+      "original": {
+        "objective": "Peta hierarki yang menunjukkan Sistem Suria sebahagian Bima Sakti",
+        "materials": "Kad hierarki skala dan gambar galaksi",
+        "pbd": "Peta hierarki yang menunjukkan Sistem Suria sebahagian Bima Sakti",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "source_activity": {
+        "sp": "11.1.3",
+        "hook": "Rajah susunan Bumi Sistem Suria dan Bima Sakti bersarang",
+        "teacher1": "menerangkan hierarki planet bintang Sistem Suria dan galaksi",
+        "pupil1": "menyusun kad empat aras saiz dalam turutan tepat",
+        "teacher2": "meminta murid membina peta konsep lokasi Sistem Suria dalam Bima Sakti",
+        "pupil2": "menulis satu kesimpulan bersebab tentang kedudukan Sistem Suria",
+        "pbd": "Peta hierarki yang menunjukkan Sistem Suria sebahagian Bima Sakti",
+        "materials": "Kad hierarki skala dan gambar galaksi",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "phases": {
+        "engagement": "Paparkan kad Bumi, Matahari, Sistem Suria dan Bima Sakti; murid jangka susunan hubungan.",
+        "exploration": "Susun hierarki: Bumi ialah planet, Matahari ialah bintang pusat Sistem Suria, dan Sistem Suria sebahagian Bima Sakti.",
+        "explanation": "Jelaskan hubungan objek dengan sistem yang merangkuminya.",
+        "elaboration": "Bina peta konsep bersarang dan terangkan kedudukan Sistem Suria tanpa menyamakan bintang dengan planet.",
+        "evaluation": "Peta hierarki yang menunjukkan Sistem Suria sebahagian Bima Sakti"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-072",
+      "teaching_order": 77,
+      "title": "Menjalankan simulasi untuk menggambarkan saiz Sistem Suria dalam galaksi Bima Sakti dan mengagumi ciptaan Tuhan.",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "minutes": 30,
+      "textbook_pages": "187-188",
+      "sk": "11.1 Galaksi Bima Sakti",
+      "sp": [
+        {
+          "code": "11.1.4",
+          "text": "Menjalankan simulasi untuk menggambarkan saiz Sistem Suria dalam galaksi Bima Sakti dan mengagumi ciptaan Tuhan."
+        }
+      ],
+      "original": {
+        "objective": "Simulasi perbandingan skala dan penerangan had model",
+        "materials": "Cakera kertas besar pelekat dan gambar galaksi",
+        "pbd": "Simulasi perbandingan skala dan penerangan had model",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "source_activity": {
+        "sp": "11.1.4",
+        "hook": "Model titik kecil Sistem Suria pada cakera galaksi besar",
+        "teacher1": "membimbing simulasi skala kualitatif menggunakan kertas cakera dan satu pelekat kecil",
+        "pupil1": "mewakilkan Sistem Suria sebagai titik pada model Bima Sakti",
+        "teacher2": "membimbing pembentangan mengapa skala relatif besar itu sesuai dan had model",
+        "pupil2": "menulis dua pemerhatian perbandingan saiz Sistem Suria dan galaksi",
+        "pbd": "Simulasi perbandingan skala dan penerangan had model",
+        "materials": "Cakera kertas besar pelekat dan gambar galaksi",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "phases": {
+        "engagement": "Paparkan cakera kertas besar dan pelekat kecil; murid jangka objek yang diwakili.",
+        "exploration": "Letakkan pelekat sebagai simbol Sistem Suria dalam model Bima Sakti.",
+        "explanation": "Jelaskan galaksi jauh lebih besar; model menggambarkan perbandingan kualitatif dan bukan skala tepat.",
+        "elaboration": "Bentangkan dua pemerhatian dan had model serta hargai ciptaan Tuhan dengan menghormati pandangan rakan.",
+        "evaluation": "Simulasi perbandingan skala dan penerangan had model"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-073",
+      "teaching_order": 78,
+      "title": "Menjelaskan pemerhatian tentang galaksi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "minutes": 30,
+      "textbook_pages": "188",
+      "sk": "11.1 Galaksi Bima Sakti",
+      "sp": [
+        {
+          "code": "11.1.5",
+          "text": "Menjelaskan pemerhatian tentang galaksi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran dan penerangan dua ciri galaksi yang diperhatikan",
+        "materials": "Imej tiga jenis galaksi dan jadual perbandingan",
+        "pbd": "Lakaran dan penerangan dua ciri galaksi yang diperhatikan",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "source_activity": {
+        "sp": "11.1.5",
+        "hook": "Kolaj sistem galaksi spiral elips dan tidak sekata",
+        "teacher1": "membimbing penjelasan visual jenis galaksi menggunakan imej pilihan guru",
+        "pupil1": "membanding bentuk tiga galaksi dalam peta carta",
+        "teacher2": "meminta murid menerangkan kedudukan Bima Sakti dan satu ciri utama",
+        "pupil2": "menulis dua pemerhatian dengan bukti ilustrasi jenis galaksi",
+        "pbd": "Lakaran dan penerangan dua ciri galaksi yang diperhatikan",
+        "materials": "Imej tiga jenis galaksi dan jadual perbandingan",
+        "safety": "Galaksi: bezakan skala Sistem Suria dengan skala Bima Sakti"
+      },
+      "phases": {
+        "engagement": "Paparkan kolaj galaksi spiral, elips dan tidak sekata; murid kenal pasti bentuk.",
+        "exploration": "Bandingkan tiga gambar dan lakar ciri visual dalam carta.",
+        "explanation": "Terangkan bentuk Bima Sakti serta perbezaan dengan jenis galaksi lain.",
+        "elaboration": "Bentangkan dua pemerhatian yang disokong ilustrasi dan semak label.",
+        "evaluation": "Lakaran dan penerangan dua ciri galaksi yang diperhatikan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-074",
+      "teaching_order": 79,
+      "title": "Teknologi dan Kehidupan Lestari — Memerihalkan maksud kestabilan dan kekuatan dengan menjalankan aktiviti.",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "minutes": 60,
+      "textbook_pages": "194,199,205",
+      "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+      "sp": [
+        {
+          "code": "12.1.1",
+          "text": "Memerihalkan maksud kestabilan dan kekuatan dengan menjalankan aktiviti."
+        }
+      ],
+      "original": {
+        "objective": "Takrif kestabilan dan kekuatan dengan contoh binaan",
+        "materials": "Foto struktur dan model kertas",
+        "pbd": "Takrif kestabilan dan kekuatan dengan contoh binaan",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "source_activity": {
+        "sp": "12.1.1",
+        "hook": "Gambar kerusi berkaki lebar dan jambatan model kertas",
+        "teacher1": "membezakan kestabilan sukar tumbang dan kekuatan sukar rosak dengan contoh objek ringan",
+        "pupil1": "mengelaskan empat binaan dalam dua ciri kestabilan dan kekuatan",
+        "teacher2": "membimbing penerangan mengapa objek boleh stabil tetapi kurang kuat",
+        "pupil2": "menulis dua takrif serta satu contoh setiap ciri",
+        "pbd": "Takrif kestabilan dan kekuatan dengan contoh binaan",
+        "materials": "Foto struktur dan model kertas",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar kerusi bertapak lebar dan jambatan kertas; murid jangka ciri yang berbeza.",
+        "exploration": "Perhatikan model ringan dan kelaskan contoh sukar tumbang atau sukar rosak.",
+        "explanation": "Bezakan maksud kestabilan dengan kekuatan berdasarkan contoh.",
+        "elaboration": "Bincang bagaimana objek boleh stabil tetapi kurang kuat dan beri satu contoh bagi setiap ciri.",
+        "evaluation": "Takrif kestabilan dan kekuatan dengan contoh binaan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-075",
+      "teaching_order": 80,
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan dengan contoh struktur yang kuat dan stabil.",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "minutes": 30,
+      "textbook_pages": "194,199,205",
+      "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+      "sp": [
+        {
+          "code": "12.1.2",
+          "text": "Menjelaskan dengan contoh struktur yang kuat dan stabil."
+        }
+      ],
+      "original": {
+        "objective": "Dua struktur dengan bukti kekuatan dan kestabilan",
+        "materials": "Kad bangunan menara dan model kaki lebar",
+        "pbd": "Dua struktur dengan bukti kekuatan dan kestabilan",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "source_activity": {
+        "sp": "12.1.2",
+        "hook": "Gambar binaan berkaki lebar dan dua bentuk palang penyangga",
+        "teacher1": "menerangkan struktur kukuh dan stabil menggunakan carta pilihan",
+        "pupil1": "mencari tiga ciri binaan kuat dan stabil pada gambar",
+        "teacher2": "meminta murid melakar reka bentuk untuk membaiki struktur tidak stabil",
+        "pupil2": "memberi dua contoh struktur serta alasan berkait asas dan bahan",
+        "pbd": "Dua struktur dengan bukti kekuatan dan kestabilan",
+        "materials": "Kad bangunan menara dan model kaki lebar",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar binaan berkaki lebar dan palang penyangga; murid kenal pasti ciri.",
+        "exploration": "Cari ciri tapak, bahan dan penyokong pada gambar model.",
+        "explanation": "Jelaskan bagaimana ciri menyumbang kepada kekuatan atau kestabilan.",
+        "elaboration": "Lakar satu penambahbaikan struktur tidak stabil dan berikan alasan berdasarkan gambar.",
+        "evaluation": "Dua struktur dengan bukti kekuatan dan kestabilan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-076",
+      "teaching_order": 81,
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kestabilan objek.",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "minutes": 60,
+      "textbook_pages": "195-198",
+      "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+      "sp": [
+        {
+          "code": "12.1.3",
+          "text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi kestabilan objek."
+        }
+      ],
+      "original": {
+        "objective": "Jadual eksperimen kesan luas tapak dan tinggi pada kestabilan",
+        "materials": "Model menara kertas pembaris dan alas meja",
+        "pbd": "Jadual eksperimen kesan luas tapak dan tinggi pada kestabilan",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "source_activity": {
+        "sp": "12.1.3",
+        "hook": "Dua model menara kertas bertapak berbeza",
+        "teacher1": "membimbing eksperimen ketinggian sama dengan luas tapak berlainan dan tolakan amat ringan",
+        "pupil1": "meramal dan merekod bilangan gangguan ringan sebelum model terguling",
+        "teacher2": "membimbing penyiasatan kedua dengan luas tapak tetap dan ketinggian diubah",
+        "pupil2": "membuat jadual dua faktor luas tapak dan tinggi dengan pemboleh ubah",
+        "pbd": "Jadual eksperimen kesan luas tapak dan tinggi pada kestabilan",
+        "materials": "Model menara kertas pembaris dan alas meja",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "phases": {
+        "engagement": "Paparkan dua menara kertas bertapak berbeza; murid bina ramalan.",
+        "exploration": "Bandingkan model sama tinggi berlainan tapak menggunakan gangguan ringan yang seragam; ulang dengan tapak tetap dan tinggi berbeza.",
+        "explanation": "Jelaskan kesan luas tapak dan tinggi daripada dua ujian berasingan.",
+        "elaboration": "Rekod pemboleh ubah dan rumuskan faktor kestabilan tanpa menggunakan beban berat atau menolak model sebenar.",
+        "evaluation": "Jadual eksperimen kesan luas tapak dan tinggi pada kestabilan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-077",
+      "teaching_order": 82,
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kekuatan binaan.",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "minutes": 30,
+      "textbook_pages": "199-205",
+      "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+      "sp": [
+        {
+          "code": "12.1.4",
+          "text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi kekuatan binaan."
+        }
+      ],
+      "original": {
+        "objective": "Dua perbandingan yang memisahkan kesan bentuk dan bahan serta satu rumusan berpandukan bilangan beban",
+        "materials": "Rasuk siap dibentuk, dua penyokong, pemberat ringan dan jadual",
+        "pbd": "Dua perbandingan yang memisahkan kesan bentuk dan bahan serta satu rumusan berpandukan bilangan beban",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "source_activity": {
+        "sp": "12.1.4",
+        "hook": "Dua jejambat model kertas rata dan lipatan beralun",
+        "teacher1": "menunjukkan dua rasuk kertas sama jenis dengan bentuk rata dan berlipat",
+        "pupil1": "menambah beban ringan pada tengah rasuk dan mencatat had sebelum bengkok",
+        "teacher2": "memberi dua rasuk sama bentuk daripada bahan berbeza dan menyemak jarak sokongan",
+        "pupil2": "mengulang ujian dengan jarak dan kedudukan beban dimalarkan",
+        "pbd": "Dua perbandingan yang memisahkan kesan bentuk dan bahan serta satu rumusan berpandukan bilangan beban",
+        "materials": "Rasuk siap dibentuk, dua penyokong, pemberat ringan dan jadual",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "phases": {
+        "engagement": "Paparkan dua rasuk kertas rata dan berlipat; murid ramal had beban.",
+        "exploration": "Uji rasuk bahan sama tetapi bentuk berbeza dengan beban ringan di tengah; kemudian bandingkan bahan berbeza pada bentuk sama.",
+        "explanation": "Jelaskan kesan bentuk dan bahan secara berasingan dengan jarak sokongan serta kedudukan beban tetap.",
+        "elaboration": "Bandingkan bilangan beban sebelum bengkok dan rumuskan dua faktor kekuatan.",
+        "evaluation": "Dua perbandingan yang memisahkan kesan bentuk dan bahan serta satu rumusan berpandukan bilangan beban"
+      },
+      "scope_note": "Gunakan model dan pemberat ringan; kekalkan override penjana asal.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-078",
+      "teaching_order": 83,
+      "title": "Teknologi dan Kehidupan Lestari — Menjana idea kepentingan binaan yang kuat dan stabil bagi kehidupan lestari.",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "minutes": 60,
+      "textbook_pages": "206",
+      "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+      "sp": [
+        {
+          "code": "12.1.5",
+          "text": "Menjana idea kepentingan binaan yang kuat dan stabil bagi kehidupan lestari."
+        }
+      ],
+      "original": {
+        "objective": "Tiga sebab kepentingan kestabilan dan satu cadangan binaan lestari",
+        "materials": "Foto infrastruktur dan kad reka bentuk",
+        "pbd": "Tiga sebab kepentingan kestabilan dan satu cadangan binaan lestari",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "source_activity": {
+        "sp": "12.1.5",
+        "hook": "Foto jambatan yang selamat dan tempat perlindungan bencana",
+        "teacher1": "memimpin perbincangan kepentingan binaan tahan beban dan tidak mudah tumbang",
+        "pupil1": "menulis tiga sebab binaan kukuh penting kepada keselamatan dan sumber",
+        "teacher2": "membimbing cadangan reka bentuk bangunan lestari dengan bahan guna semula",
+        "pupil2": "mencipta satu cadangan yang memenuhi dua keperluan keselamatan",
+        "pbd": "Tiga sebab kepentingan kestabilan dan satu cadangan binaan lestari",
+        "materials": "Foto infrastruktur dan kad reka bentuk",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "phases": {
+        "engagement": "Paparkan foto jambatan dan tempat perlindungan; murid nyatakan keperluan binaan.",
+        "exploration": "Padankan kad keselamatan, ketahanan dan penggunaan sumber dengan contoh struktur.",
+        "explanation": "Jelaskan tiga sebab binaan kuat dan stabil penting untuk kehidupan lestari.",
+        "elaboration": "Lakar cadangan binaan daripada bahan guna semula yang memenuhi dua keperluan keselamatan secara konsep.",
+        "evaluation": "Tiga sebab kepentingan kestabilan dan satu cadangan binaan lestari"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-079",
+      "teaching_order": 84,
+      "title": "Mencipta model binaan yang kuat dan stabil dengan menggunakan bahan kitar semula yang sesuai.",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "minutes": 30,
+      "textbook_pages": "207",
+      "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+      "sp": [
+        {
+          "code": "12.1.6",
+          "text": "Mencipta model binaan yang kuat dan stabil dengan menggunakan bahan kitar semula yang sesuai."
+        }
+      ],
+      "original": {
+        "objective": "Model daripada bahan kitar semula dengan rekod ujian kestabilan dan beban",
+        "materials": "Kadbod terpakai yang siap dipotong, pita pelekat, pemberat ringan dan jadual",
+        "pbd": "Model daripada bahan kitar semula dengan rekod ujian kestabilan dan beban",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "source_activity": {
+        "sp": "12.1.6",
+        "hook": "Contoh binaan jambatan kertas daripada kotak terpakai",
+        "teacher1": "menunjukkan cara menyambung bahagian kadbod bersih yang siap dipotong",
+        "pupil1": "memasang model bertapak luas dan mengukuhkan penyokong",
+        "teacher2": "menunjukkan cara merekod ujian tolakan ringan dan ujian beban pada model",
+        "pupil2": "menguji model lalu mengenal pasti satu penambahbaikan",
+        "pbd": "Model daripada bahan kitar semula dengan rekod ujian kestabilan dan beban",
+        "materials": "Kadbod terpakai yang siap dipotong, pita pelekat, pemberat ringan dan jadual",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "phases": {
+        "engagement": "Paparkan model jambatan atau binaan kadbod; murid cadang ciri tapak dan penyokong.",
+        "exploration": "Pasang bahagian kadbod bersih siap dipotong guru dengan tapak luas serta penyokong kukuh.",
+        "explanation": "Terangkan kaitan ciri model dengan hasil ujian tolakan dan beban ringan.",
+        "elaboration": "Uji model secara selamat, rekod hasil dan cadangkan satu penambahbaikan berpandukan dapatan.",
+        "evaluation": "Model daripada bahan kitar semula dengan rekod ujian kestabilan dan beban"
+      },
+      "scope_note": "Gunakan model dan pemberat ringan; kekalkan override penjana asal.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-080",
+      "teaching_order": 85,
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan pemerhatian tentang kestabilan dan kekuatan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "minutes": 60,
+      "textbook_pages": "205,207",
+      "sk": "12.1 Kestabilan dan Kekuatan Objek dan Binaan",
+      "sp": [
+        {
+          "code": "12.1.7",
+          "text": "Menjelaskan pemerhatian tentang kestabilan dan kekuatan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran dan alasan penambahbaikan model berdasarkan data",
+        "materials": "Jadual uji model dan gambar struktur",
+        "pbd": "Lakaran dan alasan penambahbaikan model berdasarkan data",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "source_activity": {
+        "sp": "12.1.7",
+        "hook": "Graf ujian model semasa beban ringan bertambah",
+        "teacher1": "membimbing murid membanding rekod kestabilan dan kekuatan sebelum dan selepas pengukuhan",
+        "pupil1": "melakar dua keadaan model serta menandakan bukti perubahan",
+        "teacher2": "meminta pembentangan lisan penambahbaikan kepada pasangan",
+        "pupil2": "menulis dua dapatan dan satu hujah cadangan reka bentuk",
+        "pbd": "Lakaran dan alasan penambahbaikan model berdasarkan data",
+        "materials": "Jadual uji model dan gambar struktur",
+        "safety": "Kekuatan/kestabilan: model beban ringan, uji satu faktor pada satu masa"
+      },
+      "phases": {
+        "engagement": "Paparkan rekod ujian model sebelum dan selepas pengukuhan; murid jangka perbezaan.",
+        "exploration": "Bandingkan data kestabilan dan kekuatan lalu lakar dua keadaan model.",
+        "explanation": "Terangkan dua dapatan yang disokong rekod ujian.",
+        "elaboration": "Bentangkan satu cadangan penambahbaikan dan jelaskan hubungannya dengan data.",
+        "evaluation": "Lakaran dan alasan penambahbaikan model berdasarkan data"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-081",
+      "teaching_order": 86,
+      "title": "Menyatakan maksud teknologi dan kepentingannya.",
+      "unit": "Unit 13: Teknologi",
+      "minutes": 30,
+      "textbook_pages": "212-213",
+      "sk": "13.1 Kebaikan dan Keburukan Teknologi",
+      "sp": [
+        {
+          "code": "13.1.1",
+          "text": "Menyatakan maksud teknologi dan kepentingannya."
+        }
+      ],
+      "original": {
+        "objective": "Takrif teknologi dan dua sebab kepentingan kepada manusia",
+        "materials": "Kad peralatan lama dan moden",
+        "pbd": "Takrif teknologi dan dua sebab kepentingan kepada manusia",
+        "safety": "Teknologi: nilaikan manfaat dan risiko dengan sumber sebenar"
+      },
+      "source_activity": {
+        "sp": "13.1.1",
+        "hook": "Gambar alat tangan lama dan peranti berteknologi terkini",
+        "teacher1": "menerangkan teknologi sebagai aplikasi ilmu untuk mengatasi had kebolehan manusia",
+        "pupil1": "menulis takrif teknologi dan satu sebab peralatan penting",
+        "teacher2": "meminta murid membanding masa menyelesaikan tugas dengan dua alat",
+        "pupil2": "memberi dua contoh kepentingan teknologi dalam rutin harian",
+        "pbd": "Takrif teknologi dan dua sebab kepentingan kepada manusia",
+        "materials": "Kad peralatan lama dan moden",
+        "safety": "Teknologi: nilaikan manfaat dan risiko dengan sumber sebenar"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar alat tangan lama dan alat moden; murid kenal pasti kerja yang dipermudah.",
+        "exploration": "Padankan dua jenis alat dengan tugas dan bandingkan masa atau usaha berdasarkan kad.",
+        "explanation": "Jelaskan teknologi sebagai aplikasi ilmu untuk membantu mengatasi had kebolehan manusia.",
+        "elaboration": "Beri dua contoh kepentingan teknologi dalam rutin harian berserta alasan.",
+        "evaluation": "Takrif teknologi dan dua sebab kepentingan kepada manusia"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-082",
+      "teaching_order": 87,
+      "title": "Memerihalkan perkembangan teknologi dalam pelbagai bidang.",
+      "unit": "Unit 13: Teknologi",
+      "minutes": 30,
+      "textbook_pages": "214-217",
+      "sk": "13.1 Kebaikan dan Keburukan Teknologi",
+      "sp": [
+        {
+          "code": "13.1.2",
+          "text": "Memerihalkan perkembangan teknologi dalam pelbagai bidang."
+        }
+      ],
+      "original": {
+        "objective": "Jadual empat bidang dengan perubahan teknologi dan manfaat",
+        "materials": "Kad garis masa bidang dan gambar perubahan alat",
+        "pbd": "Jadual empat bidang dengan perubahan teknologi dan manfaat",
+        "safety": "Teknologi: nilaikan manfaat dan risiko dengan sumber sebenar"
+      },
+      "source_activity": {
+        "sp": "13.1.2",
+        "hook": "Garis masa teknologi perubatan pertanian pengangkutan dan komunikasi",
+        "teacher1": "membimbing pembacaan empat pasangan teknologi lama dan baharu",
+        "pupil1": "membina garis masa dan menyatakan satu perkembangan setiap bidang",
+        "teacher2": "meminta murid menyimpulkan perubahan kecekapan antara dua era",
+        "pupil2": "menulis empat perkembangan teknologi dengan sebab manfaatnya",
+        "pbd": "Jadual empat bidang dengan perubahan teknologi dan manfaat",
+        "materials": "Kad garis masa bidang dan gambar perubahan alat",
+        "safety": "Teknologi: nilaikan manfaat dan risiko dengan sumber sebenar"
+      },
+      "phases": {
+        "engagement": "Paparkan garis masa alat lama dan moden; murid kenal pasti empat bidang.",
+        "exploration": "Susun pasangan teknologi perubatan, pertanian, pengangkutan dan komunikasi mengikut masa.",
+        "explanation": "Terangkan perkembangan dan manfaat dalam setiap bidang berpandukan kad.",
+        "elaboration": "Bandingkan kecekapan dua era dalam satu bidang tanpa menganggap semua perubahan sentiasa bermanfaat.",
+        "evaluation": "Jadual empat bidang dengan perubahan teknologi dan manfaat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-083",
+      "teaching_order": 88,
+      "title": "Menjelaskan melalui contoh kebaikan dan keburukan teknologi dalam kehidupan harian.",
+      "unit": "Unit 13: Teknologi",
+      "minutes": 60,
+      "textbook_pages": "218-219",
+      "sk": "13.1 Kebaikan dan Keburukan Teknologi",
+      "sp": [
+        {
+          "code": "13.1.3",
+          "text": "Menjelaskan melalui contoh kebaikan dan keburukan teknologi dalam kehidupan harian."
+        }
+      ],
+      "original": {
+        "objective": "Dua kebaikan dan dua keburukan teknologi serta solusi beralasan",
+        "materials": "Kad kes dron telefon pintar dan carta risiko",
+        "pbd": "Dua kebaikan dan dua keburukan teknologi serta solusi beralasan",
+        "safety": "Teknologi: nilaikan manfaat dan risiko dengan sumber sebenar"
+      },
+      "source_activity": {
+        "sp": "13.1.3",
+        "hook": "Dua foto dron pertanian dan penggunaan peranti komunikasi",
+        "teacher1": "membimbing matriks manfaat dan keburukan teknologi kepada manusia serta alam",
+        "pupil1": "menulis dua manfaat dan dua risiko berdasarkan kes sebenar",
+        "teacher2": "membimbing pemilihan satu amalan menggunakan teknologi secara bertanggungjawab",
+        "pupil2": "menjelaskan trade-off melalui satu jadual perbandingan",
+        "pbd": "Dua kebaikan dan dua keburukan teknologi serta solusi beralasan",
+        "materials": "Kad kes dron telefon pintar dan carta risiko",
+        "safety": "Teknologi: nilaikan manfaat dan risiko dengan sumber sebenar"
+      },
+      "phases": {
+        "engagement": "Paparkan kad kes dron pertanian dan peranti komunikasi; murid jangka manfaat dan risiko.",
+        "exploration": "Bina matriks dua manfaat serta dua risiko menggunakan fakta dalam kad kes yang disediakan.",
+        "explanation": "Jelaskan pertimbangan antara kelebihan teknologi dan kesan buruk kepada manusia atau alam.",
+        "elaboration": "Cadangkan amalan bertanggungjawab untuk satu kes dan pertahankan pilihan berdasarkan bukti.",
+        "evaluation": "Dua kebaikan dan dua keburukan teknologi serta solusi beralasan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-084",
+      "teaching_order": 89,
+      "title": "Menjelaskan pemerhatian tentang kebaikan dan keburukan teknologi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 13: Teknologi",
+      "minutes": 30,
+      "textbook_pages": "219",
+      "sk": "13.1 Kebaikan dan Keburukan Teknologi",
+      "sp": [
+        {
+          "code": "13.1.4",
+          "text": "Menjelaskan pemerhatian tentang kebaikan dan keburukan teknologi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Poster pemerhatian manfaat risiko dan cadangan penambahbaikan",
+        "materials": "Gambar bandar dan templat kesan teknologi",
+        "pbd": "Poster pemerhatian manfaat risiko dan cadangan penambahbaikan",
+        "safety": "Teknologi: nilaikan manfaat dan risiko dengan sumber sebenar"
+      },
+      "source_activity": {
+        "sp": "13.1.4",
+        "hook": "Poster bandar teknologi moden dan sisa elektronik",
+        "teacher1": "membimbing rumusan pemerhatian perubahan teknologi dalam kehidupan harian",
+        "pupil1": "melakar dua teknologi dengan anak panah kesan positif dan negatif",
+        "teacher2": "meminta murid memberikan cadangan inovasi yang mengurangkan kesan buruk",
+        "pupil2": "menulis penerangan bergambar dan alasan pilihan tindakan lestari",
+        "pbd": "Poster pemerhatian manfaat risiko dan cadangan penambahbaikan",
+        "materials": "Gambar bandar dan templat kesan teknologi",
+        "safety": "Teknologi: nilaikan manfaat dan risiko dengan sumber sebenar"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar bandar moden dan sisa elektronik; murid kenal pasti kesan teknologi.",
+        "exploration": "Lakar dua teknologi dengan anak panah kesan positif dan negatif.",
+        "explanation": "Terangkan pemerhatian dan sebab setiap kesan berdasarkan gambar atau kad fakta.",
+        "elaboration": "Cadangkan satu inovasi atau tindakan lestari dan jelaskan bagaimana ia mengurangkan kesan buruk.",
+        "evaluation": "Poster pemerhatian manfaat risiko dan cadangan penambahbaikan"
+      },
+      "scope_note": null,
+      "ready": false
+    }
+  ]
+}

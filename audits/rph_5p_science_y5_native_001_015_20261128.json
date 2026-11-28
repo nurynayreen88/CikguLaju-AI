@@ -1,0 +1,313 @@
+{
+  "status": "DEPLOYED_SOURCE_ADAPTED_DRAFT_NOT_APPROVED",
+  "year": 5,
+  "source": {
+    "bot_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+    "agihan_blob": "5400828c95ca332d587a12be7e8c2a6f9521ebfd",
+    "specific_activities_blob": "88a451a4ab6bdec72c256c1fcc75a6bad65be775",
+    "process_standards_blob": "ba2d4a8495986a877ae35ef4946c0b2b73b3cf50"
+  },
+  "policy": "Preserve original title, SP, duration, materials, textbook references and PBD. New phases are proposed adaptations; source document and academic review pending. No release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-001",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pemerhatian kualitatif dengan deria",
+      "minutes": 30,
+      "sp_code": "1.1.1",
+      "sp_text": "Memerhati dengan menggunakan semua deria yang terlibat dan alat jika perlu untuk membuat pemerhatian secara kualitatif bagi menerangkan fenomena atau perubahan yang berlaku.",
+      "textbook_pages": "2-3",
+      "original_materials": "Dua model pesawat kertas, kad ciri dan jadual",
+      "original_pbd": "Tulis dua pemerhatian untuk satu model dengan rujukan pada bahagian yang dilihat.",
+      "phases": {
+        "engagement": "Tunjukkan dua pesawat; murid menyebut ciri yang dapat dilihat.",
+        "exploration": "Bandingkan bentuk muncung, lebar sayap dan lipatan; catat tiga ciri.",
+        "explanation": "Murid berkongsi catatan; guru bezakan ciri diperhatikan daripada andaian.",
+        "elaboration": "Pilih satu model, nyatakan ciri pada bahagian berlainan tanpa membuat andaian.",
+        "evaluation": "Tulis dua pemerhatian untuk satu model dengan rujukan pada bahagian yang dilihat."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-002",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengukuhan pemerhatian sebelum dan selepas",
+      "minutes": 30,
+      "sp_code": "1.1.1",
+      "sp_text": "Memerhati dengan menggunakan semua deria yang terlibat dan alat jika perlu untuk membuat pemerhatian secara kualitatif bagi menerangkan fenomena atau perubahan yang berlaku.",
+      "textbook_pages": "5-7",
+      "original_materials": "Gambar pesawat kertas semasa dan selepas mendarat, kad pernyataan",
+      "original_pbd": "Dua pernyataan yang hanya menyebut perubahan atau ciri yang terlihat, contohnya muncung menyentuh lantai selepas mendarat.",
+      "phases": {
+        "engagement": "Paparkan gambar sebelum dan selepas mendarat; kenal pasti perubahan kedudukan.",
+        "exploration": "Asingkan kad pemerhatian dan inferens berdasarkan dua gambar.",
+        "explanation": "Murid menjelaskan pilihan kad; guru menegaskan pernyataan yang benar-benar terlihat.",
+        "elaboration": "Baiki kad inferens menjadi catatan visual yang disokong gambar.",
+        "evaluation": "Dua pernyataan yang hanya menyebut perubahan atau ciri yang terlihat, contohnya muncung menyentuh lantai selepas mendarat."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-003",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengelasan berdasarkan ciri sepunya",
+      "minutes": 30,
+      "sp_code": "1.1.2",
+      "sp_text": "Mengelas dengan membandingkan atau mengenal pasti persamaan dan perbezaan berdasarkan ciri sepunya.",
+      "textbook_pages": "2-5",
+      "original_materials": "Kad pesawat kertas, alas pengelasan, pembaris",
+      "original_pbd": "Dua kad baharu dikelaskan dengan betul menggunakan satu ciri yang dinyatakan.",
+      "phases": {
+        "engagement": "Tunjuk dua pesawat berlainan muncung; sebut persamaan dan perbezaan.",
+        "exploration": "Asingkan empat gambar menggunakan lebar sayap atau bentuk muncung.",
+        "explanation": "Nyatakan peraturan kumpulan dan jelaskan mengapa setiap gambar memenuhi ciri itu.",
+        "elaboration": "Susun semula kad mengikut ciri sepunya yang lain dan semak konsistensi.",
+        "evaluation": "Dua kad baharu dikelaskan dengan betul menggunakan satu ciri yang dinyatakan."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-004",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengukuran suhu dengan unit piawai",
+      "minutes": 30,
+      "sp_code": "1.1.3",
+      "sp_text": "Mengukur dan menggunakan nombor dengan menggunakan alat dan unit piawai dengan teknik yang betul.",
+      "textbook_pages": "5-7,146-149",
+      "original_materials": "Termometer digital, cawan air, jadual bacaan",
+      "original_pbd": "Dua bacaan suhu menggunakan °C dan prob diletakkan tanpa menyentuh dasar bekas.",
+      "phases": {
+        "engagement": "Bandingkan air sejuk dan suhu bilik; murid menjangka sampel lebih sejuk.",
+        "exploration": "Gunakan termometer digital, tunggu bacaan stabil dan catat suhu kedua-dua sampel.",
+        "explanation": "Bandingkan bacaan; guru semak prob di tengah bekas dan penggunaan °C.",
+        "elaboration": "Ulang teknik pada satu sampel dan semak sama ada bacaan stabil sebelum mencatat.",
+        "evaluation": "Dua bacaan suhu menggunakan °C dan prob diletakkan tanpa menyentuh dasar bekas."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-005",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Inferens daripada bacaan suhu",
+      "minutes": 30,
+      "sp_code": "1.1.4",
+      "sp_text": "Membuat inferens dengan menyatakan kesimpulan awal atau penerangan yang munasabah bagi sesuatu pemerhatian dengan menggunakan maklumat yang diperoleh.",
+      "textbook_pages": "5-7,152-153",
+      "original_materials": "Kad data suhu air yang menyejuk, kad pemerhatian dan inferens",
+      "original_pbd": "Satu inferens yang munasabah, seperti air kehilangan haba kepada persekitaran, dengan dua bacaan suhu sebagai bukti.",
+      "phases": {
+        "engagement": "Paparkan carta suhu dua waktu; murid nyatakan perubahan bacaan.",
+        "exploration": "Padankan dua bacaan dengan kad penerangan yang munasabah.",
+        "explanation": "Bezakan apa yang dibaca daripada inferens tentang kehilangan haba.",
+        "elaboration": "Pilih antara dua inferens dan pertahankan pilihan menggunakan dua nilai carta.",
+        "evaluation": "Satu inferens yang munasabah, seperti air kehilangan haba kepada persekitaran, dengan dua bacaan suhu sebagai bukti."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-006",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Ramalan perubahan suhu",
+      "minutes": 30,
+      "sp_code": "1.1.5",
+      "sp_text": "Meramal dengan membuat jangkaan tentang sesuatu peristiwa atau fenomena berdasarkan pemerhatian, pengalaman lalu atau data.",
+      "textbook_pages": "5-7,15",
+      "original_materials": "Jadual tiga bacaan suhu mengikut masa, anak panah pola",
+      "original_pbd": "Ramalan suhu seterusnya menyatakan arah perubahan serta nilai terdahulu yang menyokongnya.",
+      "phases": {
+        "engagement": "Tunjuk dua bacaan suhu; murid jangka arah perubahan seterusnya.",
+        "exploration": "Susun tiga bacaan mengikut masa dan kenal pasti pola.",
+        "explanation": "Terangkan ramalan menggunakan pola; elakkan meneka suhu tepat tanpa bukti.",
+        "elaboration": "Bandingkan ramalan dengan bacaan baharu dan ubah jangkaan jika diperlukan.",
+        "evaluation": "Ramalan suhu seterusnya menyatakan arah perubahan serta nilai terdahulu yang menyokongnya."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-007",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengukuhan ramalan berdasarkan data baharu",
+      "minutes": 30,
+      "sp_code": "1.1.5",
+      "sp_text": "Meramal dengan membuat jangkaan tentang sesuatu peristiwa atau fenomena berdasarkan pemerhatian, pengalaman lalu atau data.",
+      "textbook_pages": "11-12,15",
+      "original_materials": "Kad bacaan jarak percubaan, slip ramalan",
+      "original_pbd": "Ramalan merujuk data set baharu dan menerangkan satu batas, contohnya jarak tepat boleh berbeza.",
+      "phases": {
+        "engagement": "Paparkan jarak dua percubaan pesawat; sebut trend yang kelihatan.",
+        "exploration": "Bandingkan siri bacaan dua pesawat dalam keadaan yang sama.",
+        "explanation": "Murid mempertahankan jangkaan pesawat lebih jauh menggunakan data ulangan.",
+        "elaboration": "Gunakan tiga bacaan baharu untuk menilai sama ada ramalan awal masih munasabah.",
+        "evaluation": "Ramalan merujuk data set baharu dan menerangkan satu batas, contohnya jarak tepat boleh berbeza."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-008",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Menyampaikan dapatan dalam jadual",
+      "minutes": 30,
+      "sp_code": "1.1.6",
+      "sp_text": "Berkomunikasi dengan merekod maklumat atau idea dalam bentuk yang sesuai dan mempersembahkan maklumat atau idea tersebut secara sistematik.",
+      "textbook_pages": "5-7,10-12",
+      "original_materials": "Kad bacaan, jadual kosong, kertas",
+      "original_pbd": "Jadual tiga bacaan dengan tajuk, unit dan satu perbandingan berasaskan nombor.",
+      "phases": {
+        "engagement": "Tunjuk rekod tanpa label; murid cadangkan tajuk dan unit.",
+        "exploration": "Isi jadual tiga baris menggunakan kad bacaan.",
+        "explanation": "Bentangkan satu perbandingan bernombor kepada pasangan; semak label.",
+        "elaboration": "Tukar jadual dengan pasangan dan baiki tajuk, unit atau pernyataan yang tidak jelas.",
+        "evaluation": "Jadual tiga bacaan dengan tajuk, unit dan satu perbandingan berasaskan nombor."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-009",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Menyusun perubahan buih mengikut masa",
+      "minutes": 30,
+      "sp_code": "1.1.7",
+      "sp_text": "Menggunakan perhubungan ruang dan masa dengan menyusun kejadian sesuatu fenomena atau peristiwa mengikut kronologi berdasarkan masa.",
+      "textbook_pages": "8-13",
+      "original_materials": "Rakaman buih, empat kad masa, jam randik",
+      "original_pbd": "Empat kedudukan atau keadaan buih disusun mengikut masa dan dikaitkan dengan label saat.",
+      "phases": {
+        "engagement": "Jeda rakaman buih pada dua masa; murid pilih gambar yang terdahulu.",
+        "exploration": "Padankan empat kad dengan masa sejak buih terlepas.",
+        "explanation": "Terangkan hubungan keadaan buih dengan masa dalam saat.",
+        "elaboration": "Susun urutan bercampur lain dan jelaskan perubahan antara dua masa.",
+        "evaluation": "Empat kedudukan atau keadaan buih disusun mengikut masa dan dikaitkan dengan label saat."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-010",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Mentafsir data tempoh buih",
+      "minutes": 30,
+      "sp_code": "1.1.8",
+      "sp_text": "Mentafsir data dengan memilih idea yang relevan tentang objek, peristiwa atau pola yang terdapat pada data untuk membuat penerangan.",
+      "textbook_pages": "8-13",
+      "original_materials": "Carta tempoh dua larutan buih, kad bacaan",
+      "original_pbd": "Satu tafsiran pada carta yang menggunakan sekurang-kurangnya dua bacaan dalam saat.",
+      "phases": {
+        "engagement": "Paparkan carta tempoh dua larutan; kenal pasti bacaan tertinggi.",
+        "exploration": "Pilih dua nilai dalam saat dan bandingkan pola yang ditunjukkan.",
+        "explanation": "Murid menjelaskan tafsiran dengan dua bacaan; guru semak bukti.",
+        "elaboration": "Baiki pernyataan tanpa bukti dengan memasukkan nilai carta yang relevan.",
+        "evaluation": "Satu tafsiran pada carta yang menggunakan sekurang-kurangnya dua bacaan dalam saat."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-011",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Takrif operasi tempoh buih",
+      "minutes": 30,
+      "sp_code": "1.1.9",
+      "sp_text": "Mendefinisi secara operasi dengan memerihalkan satu tafsiran tentang perkara yang dilakukan dan diperhatikan bagi sesuatu situasi mengikut aspek yang ditentukan.",
+      "textbook_pages": "8-13",
+      "original_materials": "Dua klip pendek buih sabun, kertas, jam randik",
+      "original_pbd": "Takrif tempoh bermula apabila buih terlepas dari alat dan berakhir apabila buih pecah, dengan tempoh dalam saat.",
+      "phases": {
+        "engagement": "Mainkan klip buih terlepas dan pecah; pilih titik mula dan tamat.",
+        "exploration": "Ukur tempoh klip menggunakan jam randik mengikut takrif pilihan.",
+        "explanation": "Bandingkan bacaan rakan; bincang takrif yang boleh diulang dengan jelas.",
+        "elaboration": "Gunakan takrif pada klip baharu dan semak peristiwa mula serta tamat.",
+        "evaluation": "Takrif tempoh bermula apabila buih terlepas dari alat dan berakhir apabila buih pecah, dengan tempoh dalam saat."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-012",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pemboleh ubah dalam ujian buih",
+      "minutes": 30,
+      "sp_code": "1.1.10",
+      "sp_text": "Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan setelah pemboleh ubah dimanipulasi ditentukan dalam sesuatu penyiasatan.",
+      "textbook_pages": "8-13,18",
+      "original_materials": "Jadual ujian dua larutan, kad alat dan pemboleh ubah",
+      "original_pbd": "Larutan diubah, tempoh buih diukur dan alat serta tempat ujian dimalarkan.",
+      "phases": {
+        "engagement": "Tunjukkan dua larutan berlabel; murid cadangkan faktor yang berubah.",
+        "exploration": "Lengkapkan jadual faktor ubah, tempoh buih dan keadaan yang dimalarkan.",
+        "explanation": "Terangkan sebab alat dan tempat perlu sama serta tempoh diukur dalam saat.",
+        "elaboration": "Semak kad situasi lain dan tandakan tiga jenis pemboleh ubah.",
+        "evaluation": "Larutan diubah, tempoh buih diukur dan alat serta tempat ujian dimalarkan."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-013",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengukuhan pemboleh ubah ujian adil",
+      "minutes": 30,
+      "sp_code": "1.1.10",
+      "sp_text": "Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan setelah pemboleh ubah dimanipulasi ditentukan dalam sesuatu penyiasatan.",
+      "textbook_pages": "8-13,18",
+      "original_materials": "Dua rancangan ujian bercacat, kad pembetulan",
+      "original_pbd": "Rancangan pembetulan yang menyatakan satu faktor ubah, tempoh dalam saat dan sekurang-kurangnya dua kawalan.",
+      "phases": {
+        "engagement": "Paparkan ujian yang menukar larutan serta alat; murid kesan kedua-dua perubahan.",
+        "exploration": "Bandingkan dua rancangan bercacat dan kenal pasti kawalan yang hilang.",
+        "explanation": "Jelaskan mengapa dua perubahan serentak menyukarkan rumusan.",
+        "elaboration": "Baiki rancangan ujian supaya hanya larutan berubah dan tempoh diukur secara setara.",
+        "evaluation": "Rancangan pembetulan yang menyatakan satu faktor ubah, tempoh dalam saat dan sekurang-kurangnya dua kawalan."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-014",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Hipotesis dalam ujian buih",
+      "minutes": 30,
+      "sp_code": "1.1.11",
+      "sp_text": "Membuat hipotesis dengan membuat pernyataan umum yang boleh diuji tentang hubungan antara pemboleh ubah dalam sesuatu penyiasatan.",
+      "textbook_pages": "8-13,18",
+      "original_materials": "Kad situasi dan rangka hipotesis",
+      "original_pbd": "Satu hipotesis berarah tentang larutan dan tempoh buih yang dapat diperiksa dengan ukuran.",
+      "phases": {
+        "engagement": "Tunjuk dua keadaan larutan; murid nyatakan ukuran yang diperlukan.",
+        "exploration": "Bandingkan cadangan hubungan larutan dengan tempoh menggunakan kad situasi.",
+        "explanation": "Bincangkan hipotesis berarah yang boleh diuji; bezakan daripada keputusan sebenar.",
+        "elaboration": "Semak hipotesis rakan dan perjelas pemboleh ubah tanpa mengubah soalan ujian.",
+        "evaluation": "Satu hipotesis berarah tentang larutan dan tempoh buih yang dapat diperiksa dengan ukuran."
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y5-PDP-015",
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Eksperimen tempoh buih bertahan",
+      "minutes": 60,
+      "sp_code": "1.1.12",
+      "sp_text": "Mengeksperimen dengan menggunakan kemahiran proses sains asas bagi mengumpul dan mentafsir data serta membuat rumusan untuk membuktikan hipotesis dan membuat laporan.",
+      "textbook_pages": "10-13",
+      "original_materials": "Dua larutan buih disediakan guru, alat buih serupa, dulang dan jam randik",
+      "original_pbd": "Laporan individu dengan empat bacaan, pemboleh ubah, perbandingan dan rumusan sama ada hipotesis disokong.",
+      "phases": {
+        "engagement": "Semak soalan ujian, hipotesis, pemboleh ubah dan peranan kumpulan.",
+        "exploration": "Dengan seliaan guru, jalankan dua ulangan setiap larutan; catat empat tempoh dalam saat.",
+        "explanation": "Bandingkan bacaan dan jelaskan sama ada bukti menyokong hipotesis.",
+        "elaboration": "Bincang perbezaan ulangan dan cadangkan satu cara menambah baik ketekalan tanpa mereka data.",
+        "evaluation": "Laporan individu dengan empat bacaan, pemboleh ubah, perbandingan dan rumusan sama ada hipotesis disokong."
+      },
+      "scope_note": "Gunakan larutan disediakan guru, alat dan lokasi sama; elakkan menelan larutan atau terkena mata.",
+      "ready": false
+    }
+  ]
+}

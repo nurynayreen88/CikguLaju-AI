@@ -1,0 +1,958 @@
+{
+  "status": "DEPLOYED_SOURCE_ADAPTED_DRAFT_NOT_APPROVED",
+  "year": 6,
+  "source": {
+    "bot_commit": "207317c6d092561e2ffd07a6d2fb4ef604797030",
+    "agihan_blob": "58661f6b6b4fcb10ba7945d67d0b64e5d207d7d5",
+    "bank_blob": "1fd967d9f99200781586351c522cb03d417c9345",
+    "export_blob": "9c0b74c4d82f12ca3fe7cbd943d33211e624593c",
+    "dskp_blob": "3b1b9d043acb1350c032c91dd36c3102f17051f6",
+    "risk_blob": "651e78194fbd0b28f336fd031d7cf091834d0e31"
+  },
+  "policy": "Preserve native order, full SP, actual duration, source materials and effective PBD including exporter overrides. New phases require academic and document review; no release.",
+  "records": [
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-001",
+      "teaching_order": 6,
+      "title": "Memerihalkan fungsi organ pembiakan lelaki dan perempuan.",
+      "unit": "Unit 2: Manusia",
+      "minutes": 30,
+      "textbook_pages": "14-15",
+      "sk": "2.1 Pembiakan Manusia",
+      "sp": [
+        {
+          "code": "2.1.1",
+          "text": "Memerihalkan fungsi organ pembiakan lelaki dan perempuan."
+        }
+      ],
+      "original": {
+        "objective": "Rajah enam organ dengan fungsi masing-masing yang benar",
+        "materials": "Carta anatomi pendidikan berlabel dan kad fungsi",
+        "pbd": "Rajah enam organ dengan fungsi masing-masing yang benar",
+        "safety": "Biologi pembiakan manusia: gunakan rajah KPM sesuai umur dan hormati privasi murid; guna istilah saintifik sesuai umur tanpa mendedahkan kisah peribadi murid"
+      },
+      "source_activity": {
+        "sp": "2.1.1",
+        "hook": "Rajah sistem pembiakan lelaki dan perempuan tanpa label",
+        "teacher1": "menerangkan kedudukan serta fungsi testis, zakar, ovari, tiub Fallopio, uterus dan faraj melalui carta sesuai umur",
+        "pupil1": "melabel enam organ secara tepat tanpa melibatkan sejarah peribadi",
+        "teacher2": "mengedar kad organ dan fungsi untuk aktiviti padanan berpasangan",
+        "pupil2": "menyusun enam kad fungsi dan membetulkan dua padanan tidak tepat",
+        "pbd": "Rajah enam organ dengan fungsi masing-masing yang benar",
+        "materials": "Carta anatomi pendidikan berlabel dan kad fungsi",
+        "safety": "Biologi pembiakan manusia: gunakan rajah KPM sesuai umur dan hormati privasi murid; guna istilah saintifik sesuai umur tanpa mendedahkan kisah peribadi murid"
+      },
+      "phases": {
+        "engagement": "Paparkan carta anatomi pendidikan tanpa label; murid kenal pasti organ melalui istilah saintifik.",
+        "exploration": "Padankan enam label organ dengan kedudukan pada carta lelaki dan perempuan.",
+        "explanation": "Terangkan fungsi testis, zakar, ovari, tiub Fallopio, uterus dan faraj berdasarkan carta.",
+        "elaboration": "Susun kad fungsi secara berpasangan dan betulkan dua padanan salah; hormati privasi semua murid.",
+        "evaluation": "Rajah enam organ dengan fungsi masing-masing yang benar"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-002",
+      "teaching_order": 7,
+      "title": "Menjelaskan proses persenyawaan manusia sehingga bayi dilahirkan.",
+      "unit": "Unit 2: Manusia",
+      "minutes": 30,
+      "textbook_pages": "16-17",
+      "sk": "2.1 Pembiakan Manusia",
+      "sp": [
+        {
+          "code": "2.1.2",
+          "text": "Menjelaskan proses persenyawaan manusia sehingga bayi dilahirkan."
+        }
+      ],
+      "original": {
+        "objective": "Urutan proses persenyawaan sehingga kelahiran dengan empat peringkat tepat",
+        "materials": "Kad gambar berperingkat dan carta perkembangan fetus",
+        "pbd": "Urutan proses persenyawaan sehingga kelahiran dengan empat peringkat tepat",
+        "safety": "Biologi pembiakan manusia: gunakan rajah KPM sesuai umur dan hormati privasi murid; guna istilah saintifik sesuai umur tanpa mendedahkan kisah peribadi murid"
+      },
+      "source_activity": {
+        "sp": "2.1.2",
+        "hook": "Enam kad proses persenyawaan hingga kelahiran bayi",
+        "teacher1": "menghuraikan secara saintifik pertemuan sperma dan ovum, persenyawaan, perkembangan embrio serta fetus dan kelahiran",
+        "pupil1": "menyusun kad urutan peristiwa daripada gamet sehingga bayi dilahirkan",
+        "teacher2": "membimbing murid membezakan persenyawaan daripada pertumbuhan dalam uterus",
+        "pupil2": "menulis urutan empat peristiwa dan menerangkan satu perubahan dalam kandungan",
+        "pbd": "Urutan proses persenyawaan sehingga kelahiran dengan empat peringkat tepat",
+        "materials": "Kad gambar berperingkat dan carta perkembangan fetus",
+        "safety": "Biologi pembiakan manusia: gunakan rajah KPM sesuai umur dan hormati privasi murid; guna istilah saintifik sesuai umur tanpa mendedahkan kisah peribadi murid"
+      },
+      "phases": {
+        "engagement": "Paparkan kad perkembangan manusia secara tidak tersusun; murid jangka urutannya.",
+        "exploration": "Susun enam kad daripada sperma dan ovum hingga kelahiran.",
+        "explanation": "Jelaskan persenyawaan, perkembangan embrio dan fetus dalam uterus serta kelahiran dengan istilah sesuai umur.",
+        "elaboration": "Bina urutan empat peringkat dan bezakan persenyawaan daripada pertumbuhan dalam uterus.",
+        "evaluation": "Urutan proses persenyawaan sehingga kelahiran dengan empat peringkat tepat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-003",
+      "teaching_order": 8,
+      "title": "Menaakul kepentingan pembiakan kepada manusia.",
+      "unit": "Unit 2: Manusia",
+      "minutes": 60,
+      "textbook_pages": "18",
+      "sk": "2.1 Pembiakan Manusia",
+      "sp": [
+        {
+          "code": "2.1.3",
+          "text": "Menaakul kepentingan pembiakan kepada manusia."
+        }
+      ],
+      "original": {
+        "objective": "Dua alasan saintifik kepentingan pembiakan dan satu kesimpulan",
+        "materials": "Kad kes rekaan dan graf populasi mudah",
+        "pbd": "Dua alasan saintifik kepentingan pembiakan dan satu kesimpulan",
+        "safety": "Biologi pembiakan manusia: gunakan rajah KPM sesuai umur dan hormati privasi murid; guna istilah saintifik sesuai umur tanpa mendedahkan kisah peribadi murid"
+      },
+      "source_activity": {
+        "sp": "2.1.3",
+        "hook": "Foto populasi manusia berbilang generasi dalam keluarga rekaan",
+        "teacher1": "menyoal apa berlaku kepada kesinambungan spesies jika tiada pembiakan",
+        "pupil1": "menyatakan dua sebab pembiakan penting untuk manusia dan kemandirian spesies",
+        "teacher2": "memberi dua situasi perubahan populasi untuk penaakulan",
+        "pupil2": "mencatat satu kesimpulan dan sebab yang disokong dua contoh",
+        "pbd": "Dua alasan saintifik kepentingan pembiakan dan satu kesimpulan",
+        "materials": "Kad kes rekaan dan graf populasi mudah",
+        "safety": "Biologi pembiakan manusia: gunakan rajah KPM sesuai umur dan hormati privasi murid; guna istilah saintifik sesuai umur tanpa mendedahkan kisah peribadi murid"
+      },
+      "phases": {
+        "engagement": "Paparkan foto beberapa generasi keluarga rekaan; murid bincang kesinambungan populasi.",
+        "exploration": "Teliti dua situasi populasi rekaan dan kenal pasti perubahan generasi.",
+        "explanation": "Jelaskan dua sebab pembiakan penting kepada kesinambungan spesies manusia.",
+        "elaboration": "Bandingkan situasi dan tulis kesimpulan berasaskan dua contoh tanpa menilai pilihan peribadi individu.",
+        "evaluation": "Dua alasan saintifik kepentingan pembiakan dan satu kesimpulan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-004",
+      "teaching_order": 9,
+      "title": "Menjelaskan pemerhatian tentang pembiakan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 2: Manusia",
+      "minutes": 30,
+      "textbook_pages": "19",
+      "sk": "2.1 Pembiakan Manusia",
+      "sp": [
+        {
+          "code": "2.1.4",
+          "text": "Menjelaskan pemerhatian tentang pembiakan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran dan penerangan individu tentang pembiakan manusia dengan istilah tepat",
+        "materials": "Carta KPM dan templat peta alir",
+        "pbd": "Lakaran dan penerangan individu tentang pembiakan manusia dengan istilah tepat",
+        "safety": "Biologi pembiakan manusia: gunakan rajah KPM sesuai umur dan hormati privasi murid; guna istilah saintifik sesuai umur tanpa mendedahkan kisah peribadi murid"
+      },
+      "source_activity": {
+        "sp": "2.1.4",
+        "hook": "Kolaj berlabel organ dan urutan persenyawaan",
+        "teacher1": "menunjukkan format poster penjelasan berasaskan fakta sistem pembiakan tanpa maklumat peribadi",
+        "pupil1": "melakar peta alir proses dengan label organ yang relevan",
+        "teacher2": "meminta murid menerangkan proses kepada pasangan menggunakan istilah biologi tepat",
+        "pupil2": "menulis penerangan ringkas atau merakam lisan dengan bukti gambar",
+        "pbd": "Lakaran dan penerangan individu tentang pembiakan manusia dengan istilah tepat",
+        "materials": "Carta KPM dan templat peta alir",
+        "safety": "Biologi pembiakan manusia: gunakan rajah KPM sesuai umur dan hormati privasi murid; guna istilah saintifik sesuai umur tanpa mendedahkan kisah peribadi murid"
+      },
+      "phases": {
+        "engagement": "Paparkan kolaj organ dan urutan perkembangan; murid kenal pasti fakta yang berkaitan.",
+        "exploration": "Bina peta alir proses pembiakan menggunakan label organ relevan pada carta.",
+        "explanation": "Terangkan urutan kepada pasangan dengan istilah biologi yang tepat.",
+        "elaboration": "Sediakan penerangan bertulis atau lisan berpandukan lakaran dan baiki label selepas maklum balas.",
+        "evaluation": "Lakaran dan penerangan individu tentang pembiakan manusia dengan istilah tepat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-005",
+      "teaching_order": 10,
+      "title": "Mengenal pasti jenis sistem saraf manusia.",
+      "unit": "Unit 2: Manusia",
+      "minutes": 30,
+      "textbook_pages": "20-21",
+      "sk": "2.2 Sistem Saraf",
+      "sp": [
+        {
+          "code": "2.2.1",
+          "text": "Mengenal pasti jenis sistem saraf manusia."
+        }
+      ],
+      "original": {
+        "objective": "Dua jenis sistem saraf dikenal pasti beserta komponen utama",
+        "materials": "Carta sistem saraf manusia dan kad label",
+        "pbd": "Dua jenis sistem saraf dikenal pasti beserta komponen utama",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "source_activity": {
+        "sp": "2.2.1",
+        "hook": "Rajah otak, saraf tunjang dan rangkaian saraf periferi",
+        "teacher1": "memperkenalkan dua jenis sistem saraf pada rajah badan manusia",
+        "pupil1": "membezakan sistem saraf pusat daripada sistem saraf periferi pada dua warna",
+        "teacher2": "memberi kad bahagian sistem saraf untuk dikelaskan",
+        "pupil2": "melabel bahagian pusat dan periferi serta menyatakan satu perbezaan",
+        "pbd": "Dua jenis sistem saraf dikenal pasti beserta komponen utama",
+        "materials": "Carta sistem saraf manusia dan kad label",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "phases": {
+        "engagement": "Paparkan rajah otak, saraf tunjang dan rangkaian saraf; murid jangka pembahagiannya.",
+        "exploration": "Gunakan dua warna untuk membezakan sistem saraf pusat dengan periferi.",
+        "explanation": "Jelaskan komponen utama setiap jenis sistem saraf berdasarkan carta.",
+        "elaboration": "Kelaskan kad bahagian baharu dan nyatakan satu perbezaan antara dua sistem.",
+        "evaluation": "Dua jenis sistem saraf dikenal pasti beserta komponen utama"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-006",
+      "teaching_order": 11,
+      "title": "Sistem saraf pusat dan fungsinya",
+      "unit": "Unit 2: Manusia",
+      "minutes": 30,
+      "textbook_pages": "21-22",
+      "sk": "2.2 Sistem Saraf",
+      "sp": [
+        {
+          "code": "2.2.2",
+          "text": "Memerihalkan sistem saraf pusat dan fungsinya."
+        }
+      ],
+      "original": {
+        "objective": "Rajah sistem saraf pusat dengan dua fungsi organ yang tepat",
+        "materials": "Rajah otak saraf tunjang dan kad refleks",
+        "pbd": "Rajah sistem saraf pusat dengan dua fungsi organ yang tepat",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "source_activity": {
+        "sp": "2.2.2",
+        "hook": "Carta otak dan saraf tunjang dengan sambungan saraf",
+        "teacher1": "menerangkan fungsi otak memproses maklumat dan saraf tunjang menyambung isyarat",
+        "pupil1": "memadankan dua struktur pusat dengan fungsi masing-masing",
+        "teacher2": "membentangkan situasi refleks menggunakan ilustrasi tanpa menguji murid",
+        "pupil2": "melakar aliran isyarat dan menjelaskan satu fungsi pusat",
+        "pbd": "Rajah sistem saraf pusat dengan dua fungsi organ yang tepat",
+        "materials": "Rajah otak saraf tunjang dan kad refleks",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "phases": {
+        "engagement": "Paparkan carta otak dan saraf tunjang; murid kenal pasti struktur pusat.",
+        "exploration": "Padankan kedua-dua struktur dengan kad fungsi; teliti ilustrasi refleks.",
+        "explanation": "Jelaskan fungsi otak memproses maklumat dan saraf tunjang membawa isyarat serta terlibat dalam refleks.",
+        "elaboration": "Lakar aliran isyarat daripada ilustrasi tanpa menguji rangsangan menyakitkan.",
+        "evaluation": "Rajah sistem saraf pusat dengan dua fungsi organ yang tepat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-007",
+      "teaching_order": 12,
+      "title": "Fungsi sistem saraf periferi",
+      "unit": "Unit 2: Manusia",
+      "minutes": 60,
+      "textbook_pages": "25",
+      "sk": "2.2 Sistem Saraf",
+      "sp": [
+        {
+          "code": "2.2.3",
+          "text": "Menyatakan fungsi sistem saraf periferi."
+        }
+      ],
+      "original": {
+        "objective": "Dua contoh fungsi saraf periferi dengan arah isyarat benar",
+        "materials": "Kad isyarat deria dan motor serta rajah tangan",
+        "pbd": "Dua contoh fungsi saraf periferi dengan arah isyarat benar",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "source_activity": {
+        "sp": "2.2.3",
+        "hook": "Gambar tangan menyentuh objek panas dengan anak panah isyarat",
+        "teacher1": "menerangkan peranan saraf periferi membawa maklumat deria dan arahan motor",
+        "pupil1": "menandakan arah isyarat pada gambar dengan anak panah",
+        "teacher2": "membimbing perbandingan isyarat masuk dan isyarat keluar menggunakan kad",
+        "pupil2": "menyatakan fungsi saraf periferi dan dua contoh kegiatan harian",
+        "pbd": "Dua contoh fungsi saraf periferi dengan arah isyarat benar",
+        "materials": "Kad isyarat deria dan motor serta rajah tangan",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "phases": {
+        "engagement": "Paparkan ilustrasi tangan menghampiri objek panas; murid jangka laluan maklumat.",
+        "exploration": "Susun kad isyarat deria dan motor serta anak panah pada rajah.",
+        "explanation": "Terangkan saraf periferi membawa maklumat ke sistem saraf pusat dan arahan daripada pusat.",
+        "elaboration": "Gunakan dua situasi harian bergambar untuk menerangkan arah isyarat tanpa ujian haba sebenar.",
+        "evaluation": "Dua contoh fungsi saraf periferi dengan arah isyarat benar"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-008",
+      "teaching_order": 13,
+      "title": "Meramalkan keadaan yang berlaku jika sistem saraf periferi tidak berfungsi.",
+      "unit": "Unit 2: Manusia",
+      "minutes": 30,
+      "textbook_pages": "25",
+      "sk": "2.2 Sistem Saraf",
+      "sp": [
+        {
+          "code": "2.2.4",
+          "text": "Meramalkan keadaan yang berlaku jika sistem saraf periferi tidak berfungsi."
+        }
+      ],
+      "original": {
+        "objective": "Dua ramalan akibat gangguan saraf periferi dan alasannya",
+        "materials": "Kad situasi watak rekaan dan carta laluan saraf",
+        "pbd": "Dua ramalan akibat gangguan saraf periferi dan alasannya",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "source_activity": {
+        "sp": "2.2.4",
+        "hook": "Dua situasi rekaan saraf periferi berfungsi dan tidak berfungsi",
+        "teacher1": "menunjukkan melalui cerita bergambar akibat jika isyarat rasa dan gerakan terganggu",
+        "pupil1": "meramal kesan terhadap kepekaan dan tindak balas individu rekaan",
+        "teacher2": "meminta murid menghubungkan ramalan dengan fungsi deria dan arahan motor",
+        "pupil2": "menulis dua ramalan bersama alasan saintifik tanpa diagnosis penyakit",
+        "pbd": "Dua ramalan akibat gangguan saraf periferi dan alasannya",
+        "materials": "Kad situasi watak rekaan dan carta laluan saraf",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "phases": {
+        "engagement": "Paparkan dua situasi watak rekaan dengan fungsi saraf periferi berbeza; murid jangka kesan.",
+        "exploration": "Bandingkan laluan deria dan motor dalam cerita bergambar.",
+        "explanation": "Jelaskan mengapa gangguan isyarat boleh menjejaskan kepekaan atau gerakan.",
+        "elaboration": "Tulis dua ramalan bersyarat dan alasan berdasarkan fungsi saraf, tanpa mendiagnosis murid.",
+        "evaluation": "Dua ramalan akibat gangguan saraf periferi dan alasannya"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-009",
+      "teaching_order": 14,
+      "title": "Menjana idea tentang cara menjaga sistem saraf.",
+      "unit": "Unit 2: Manusia",
+      "minutes": 60,
+      "textbook_pages": "26-27",
+      "sk": "2.2 Sistem Saraf",
+      "sp": [
+        {
+          "code": "2.2.5",
+          "text": "Menjana idea tentang cara menjaga sistem saraf."
+        }
+      ],
+      "original": {
+        "objective": "Poster dua cara penjagaan sistem saraf dengan sebab",
+        "materials": "Kad tabiat harian dan carta penjagaan saraf",
+        "pbd": "Poster dua cara penjagaan sistem saraf dengan sebab",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "source_activity": {
+        "sp": "2.2.5",
+        "hook": "Foto topi keledar, postur duduk dan aktiviti berehat",
+        "teacher1": "menerangkan bagaimana amalan keselamatan melindungi sistem saraf",
+        "pupil1": "mengelaskan lima tabiat sebagai baik atau berisiko terhadap sistem saraf",
+        "teacher2": "membimbing reka bentuk poster dua langkah penjagaan saraf",
+        "pupil2": "menulis dua langkah dan sebab setiap langkah mencegah kecederaan",
+        "pbd": "Poster dua cara penjagaan sistem saraf dengan sebab",
+        "materials": "Kad tabiat harian dan carta penjagaan saraf",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar topi keledar, postur duduk dan rehat; murid pilih amalan penjagaan.",
+        "exploration": "Kelaskan lima tabiat pada kad mengikut risiko terhadap sistem saraf.",
+        "explanation": "Jelaskan bagaimana langkah keselamatan membantu mengelakkan kecederaan.",
+        "elaboration": "Reka poster dua langkah penjagaan serta sebab, kemudian semak cadangan rakan.",
+        "evaluation": "Poster dua cara penjagaan sistem saraf dengan sebab"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-010",
+      "teaching_order": 15,
+      "title": "Menjelaskan pemerhatian tentang sistem saraf melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 2: Manusia",
+      "minutes": 30,
+      "textbook_pages": "28",
+      "sk": "2.2 Sistem Saraf",
+      "sp": [
+        {
+          "code": "2.2.6",
+          "text": "Menjelaskan pemerhatian tentang sistem saraf melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran berlabel dan penerangan sistem saraf menggunakan satu situasi",
+        "materials": "Carta anatomi dan templat anak panah",
+        "pbd": "Lakaran berlabel dan penerangan sistem saraf menggunakan satu situasi",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "source_activity": {
+        "sp": "2.2.6",
+        "hook": "Rajah sistem saraf lengkap dan tiga situasi rangsangan",
+        "teacher1": "memodelkan carta perjalanan rangsangan kepada sistem saraf pusat dan tindak balas",
+        "pupil1": "melukis anak panah dari organ deria ke pusat dan ke anggota badan",
+        "teacher2": "meminta penjelasan lisan individu menggunakan satu contoh",
+        "pupil2": "menyatakan pemerhatian berkaitan aliran maklumat melalui diagram",
+        "pbd": "Lakaran berlabel dan penerangan sistem saraf menggunakan satu situasi",
+        "materials": "Carta anatomi dan templat anak panah",
+        "safety": "Sistem saraf: jangan uji rangsangan menyakitkan atau gejala murid"
+      },
+      "phases": {
+        "engagement": "Paparkan rajah rangsangan dan tindak balas tanpa anak panah; murid jangka urutan.",
+        "exploration": "Lakar laluan daripada organ deria ke pusat dan seterusnya ke anggota badan.",
+        "explanation": "Terangkan satu contoh aliran maklumat menggunakan diagram sendiri.",
+        "elaboration": "Bandingkan lakaran dua situasi dan baiki arah anak panah berdasarkan fungsi saraf.",
+        "evaluation": "Lakaran berlabel dan penerangan sistem saraf menggunakan satu situasi"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-011",
+      "teaching_order": 16,
+      "title": "Menjelaskan dengan contoh jenis mikroorganisma.",
+      "unit": "Unit 3: Mikroorganisma",
+      "minutes": 60,
+      "textbook_pages": "34-35",
+      "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+      "sp": [
+        {
+          "code": "3.1.1",
+          "text": "Menjelas dengan contoh jenis mikroorganisma."
+        }
+      ],
+      "original": {
+        "objective": "Lima jenis mikroorganisma bersama contoh padanan yang tepat",
+        "materials": "Carta imej mikroskop dan kad jenis mikroorganisma",
+        "pbd": "Lima jenis mikroorganisma bersama contoh padanan yang tepat",
+        "safety": "Mikroorganisma: tiada kultur mikroorganisma tidak diketahui atau makanan berkulat hidup; hanya yis pembakar makanan bungkusan atau data/gambar sedia ada"
+      },
+      "source_activity": {
+        "sp": "3.1.1",
+        "hook": "Imej mikroskop bakteria, fungi, protozoa, alga dan virus",
+        "teacher1": "menerangkan lima kelompok mikroorganisma menggunakan imej berpengesahan sumber",
+        "pupil1": "mengelaskan lima gambar berdasarkan ciri yang jelas dan contoh",
+        "teacher2": "memberikan kad mikroorganisma baharu untuk diuji",
+        "pupil2": "menulis lima contoh dan dua sebab mengelaskan kumpulannya",
+        "pbd": "Lima jenis mikroorganisma bersama contoh padanan yang tepat",
+        "materials": "Carta imej mikroskop dan kad jenis mikroorganisma",
+        "safety": "Mikroorganisma: tiada kultur mikroorganisma tidak diketahui atau makanan berkulat hidup; hanya yis pembakar makanan bungkusan atau data/gambar sedia ada"
+      },
+      "phases": {
+        "engagement": "Paparkan imej mikroskop lima kelompok dalam carta kurikulum; murid bandingkan ciri.",
+        "exploration": "Kelaskan gambar bakteria, fungi, protozoa, alga dan virus mengikut maklumat kad.",
+        "explanation": "Jelaskan contoh setiap kelompok; nyatakan virus memerlukan sel perumah untuk membiak.",
+        "elaboration": "Padankan kad contoh baharu menggunakan bukti gambar dan keterangan; tiada kultur hidup.",
+        "evaluation": "Lima jenis mikroorganisma bersama contoh padanan yang tepat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-012",
+      "teaching_order": 17,
+      "title": "Mengitlak maksud mikroorganisma.",
+      "unit": "Unit 3: Mikroorganisma",
+      "minutes": 30,
+      "textbook_pages": "33-35",
+      "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+      "sp": [
+        {
+          "code": "3.1.2",
+          "text": "Mengitlak maksud mikroorganisma."
+        }
+      ],
+      "original": {
+        "objective": "Takrif mikroorganisma dan satu contoh bukan mikroorganisma dengan alasan",
+        "materials": "Gambar mikroskop dan skala saiz",
+        "pbd": "Takrif mikroorganisma dan satu contoh bukan mikroorganisma dengan alasan",
+        "safety": "Mikroorganisma: tiada kultur mikroorganisma tidak diketahui atau makanan berkulat hidup; hanya yis pembakar makanan bungkusan atau data/gambar sedia ada"
+      },
+      "source_activity": {
+        "sp": "3.1.2",
+        "hook": "Gambar bakteria diperbesar dan perbandingan saiz dengan rambut",
+        "teacher1": "membimbing definisi mikroorganisma berdasarkan saiz dan pemerhatian bantuan alat",
+        "pupil1": "merangka maksud mikroorganisma dalam satu ayat saintifik",
+        "teacher2": "mencabar murid menilai sama ada serangga kecil dikira mikroorganisma",
+        "pupil2": "membaiki definisi dengan bukti bahawa kebanyakannya terlalu kecil untuk dilihat mata kasar",
+        "pbd": "Takrif mikroorganisma dan satu contoh bukan mikroorganisma dengan alasan",
+        "materials": "Gambar mikroskop dan skala saiz",
+        "safety": "Mikroorganisma: tiada kultur mikroorganisma tidak diketahui atau makanan berkulat hidup; hanya yis pembakar makanan bungkusan atau data/gambar sedia ada"
+      },
+      "phases": {
+        "engagement": "Paparkan imej mikroskop dan skala perbandingan rambut; murid jangka mengapa alat diperlukan.",
+        "exploration": "Bandingkan saiz beberapa contoh dengan objek yang dapat dilihat mata kasar.",
+        "explanation": "Rumusan maksud mikroorganisma sebagai organisma yang sangat kecil, lazimnya memerlukan alat pembesar.",
+        "elaboration": "Nilai contoh serangga kecil dan jelaskan mengapa saiz kecil sahaja tidak mencukupi untuk pengelasan.",
+        "evaluation": "Takrif mikroorganisma dan satu contoh bukan mikroorganisma dengan alasan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-013",
+      "teaching_order": 18,
+      "title": "Menyiasat proses hidup mikroorganisma.",
+      "unit": "Unit 3: Mikroorganisma",
+      "minutes": 60,
+      "textbook_pages": "36-39",
+      "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+      "sp": [
+        {
+          "code": "3.1.3",
+          "text": "Memerihalkan proses hidup mikroorganisma dengan menjalankan penyiasatan."
+        }
+      ],
+      "original": {
+        "objective": "Huraikan pernafasan, pergerakan dan pertumbuhan dengan satu bukti pemerhatian bagi setiap proses",
+        "materials": "Kit yis pembakar makanan, jadual masa, rakaman protozoa dan foto kulapuk",
+        "pbd": "Huraikan pernafasan, pergerakan dan pertumbuhan dengan satu bukti pemerhatian bagi setiap proses",
+        "safety": "Guru menyelia penggunaan air suam dan yis pembakar makanan."
+      },
+      "source_activity": {
+        "sp": "3.1.3",
+        "hook": "Belon pada botol dan imej protozoa",
+        "teacher1": "menyelia ujian yis pembakar makanan mengikut Aktiviti 1 buku teks dan menanda masa mula",
+        "pupil1": "memasang belon pada botol dan mengukur lilitannya pada minit 0 dan 10",
+        "teacher2": "menyediakan rakaman protozoa dan foto kulapuk bertarikh untuk pemerhatian semasa menunggu bacaan",
+        "pupil2": "melakar perubahan kedudukan dan membandingkan keluasan tompok pada foto. Lengkapkan ukuran belon pada minit 20 dan 30",
+        "pbd": "Huraikan pernafasan, pergerakan dan pertumbuhan dengan satu bukti pemerhatian bagi setiap proses",
+        "materials": "Kit yis pembakar makanan, jadual masa, rakaman protozoa dan foto kulapuk",
+        "safety": "Guru menyelia penggunaan air suam dan yis pembakar makanan."
+      },
+      "phases": {
+        "engagement": "Paparkan belon pada botol yis pembakar makanan dan imej protozoa; murid jangka perubahan.",
+        "exploration": "Guru menyelia yis makanan dan air suam; murid rekod lilitan belon pada minit 0, 10, 20 dan 30 serta teliti rakaman protozoa dan foto kulapuk bertarikh.",
+        "explanation": "Jelaskan bukti penghasilan gas, pergerakan protozoa dan pertumbuhan berdasarkan media dan rekod sebenar.",
+        "elaboration": "Bandingkan tiga jenis bukti serta bezakan pemerhatian langsung daripada rakaman; tiada kultur kulapuk.",
+        "evaluation": "Huraikan pernafasan, pergerakan dan pertumbuhan dengan satu bukti pemerhatian bagi setiap proses"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-014",
+      "teaching_order": 19,
+      "title": "Mengeksperimen faktor pertumbuhan mikroorganisma.",
+      "unit": "Unit 3: Mikroorganisma",
+      "minutes": 30,
+      "textbook_pages": "40-43",
+      "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+      "sp": [
+        {
+          "code": "3.1.4",
+          "text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi pertumbuhan mikroorganisma."
+        }
+      ],
+      "original": {
+        "objective": "Catat hipotesis dan tiga pemboleh ubah, kemudian rumuskan perubahan kiraan sel yis bagi kedua-dua sampel",
+        "materials": "Yis pembakar makanan, dua sampel berlabel, imej mikroskop bergrid dan jadual kiraan",
+        "pbd": "Catat hipotesis dan tiga pemboleh ubah, kemudian rumuskan perubahan kiraan sel yis bagi kedua-dua sampel",
+        "safety": "Guru menyediakan slaid dan mengendalikan sampel yis pembakar makanan."
+      },
+      "source_activity": {
+        "sp": "3.1.4",
+        "hook": "Dua sampel yis pembakar dan kad ramalan",
+        "teacher1": "membimbing ujian dua sampel yis, satu dengan gula dan satu tanpa gula. Jisim yis awal, suhu, isipadu dan tempoh dipadankan",
+        "pupil1": "menulis hipotesis, melabel kedua-dua sampel dan memulakan eksperimen di bawah seliaan guru",
+        "teacher2": "memaparkan imej mikroskop kedua-dua sampel pada masa mula dan menetapkan masa bacaan susulan",
+        "pupil2": "merekod kiraan awal sel yis pada grid yang sama saiz. Ulang kiraan pada masa susulan dan bandingkan perubahan",
+        "pbd": "Catat hipotesis dan tiga pemboleh ubah, kemudian rumuskan perubahan kiraan sel yis bagi kedua-dua sampel",
+        "materials": "Yis pembakar makanan, dua sampel berlabel, imej mikroskop bergrid dan jadual kiraan",
+        "safety": "Guru menyediakan slaid dan mengendalikan sampel yis pembakar makanan."
+      },
+      "phases": {
+        "engagement": "Paparkan dua sampel yis pembakar makanan dan kad ramalan; murid jangka kesan kehadiran gula.",
+        "exploration": "Di bawah seliaan guru, label sampel bergula dan tanpa gula, nyatakan kawalan dan rekod kiraan awal imej mikroskop bergrid.",
+        "explanation": "Jelaskan hubungan hipotesis, pemboleh ubah dan kaedah kiraan yang setara; jangan anggap gas sebagai ukuran bilangan sel.",
+        "elaboration": "Simpan kiraan awal untuk bacaan susulan PdP 016; bandingkan hanya apabila data sebenar tersedia.",
+        "evaluation": "Serahkan hipotesis, pemboleh ubah dan kiraan awal. Lengkapkan rumusan pada PdP 016."
+      },
+      "scope_note": "PBD asal penuh dikekalkan; pentaksiran sesi ini hanya hipotesis, pemboleh ubah dan kiraan awal, seperti penjana sumber.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-015",
+      "teaching_order": 20,
+      "title": "Memerihalkan kesan mikroorganisma dalam kehidupan harian.",
+      "unit": "Unit 3: Mikroorganisma",
+      "minutes": 60,
+      "textbook_pages": "44-46",
+      "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+      "sp": [
+        {
+          "code": "3.1.5",
+          "text": "Memerihalkan kesan tindakan mikroorganisma dalam kehidupan harian."
+        }
+      ],
+      "original": {
+        "objective": "Jadual dua kegunaan dan dua kesan buruk mikroorganisma",
+        "materials": "Foto selamat proses penapaian dan kerosakan makanan",
+        "pbd": "Jadual dua kegunaan dan dua kesan buruk mikroorganisma",
+        "safety": "Mikroorganisma: tiada kultur mikroorganisma tidak diketahui atau makanan berkulat hidup; hanya yis pembakar makanan bungkusan atau data/gambar sedia ada"
+      },
+      "source_activity": {
+        "sp": "3.1.5",
+        "hook": "Foto roti berkulat, pembuatan yogurt dan kompos siap",
+        "teacher1": "membanding kesan bermanfaat dan memudaratkan mikroorganisma melalui gambar",
+        "pupil1": "mengisi jadual dua manfaat dan dua kesan buruk tanpa menyentuh bahan",
+        "teacher2": "memberi kes penggunaan antibiotik serta makanan rosak untuk dianalisis",
+        "pupil2": "menilai satu manfaat dan satu risiko berdasarkan fakta bergambar",
+        "pbd": "Jadual dua kegunaan dan dua kesan buruk mikroorganisma",
+        "materials": "Foto selamat proses penapaian dan kerosakan makanan",
+        "safety": "Mikroorganisma: tiada kultur mikroorganisma tidak diketahui atau makanan berkulat hidup; hanya yis pembakar makanan bungkusan atau data/gambar sedia ada"
+      },
+      "phases": {
+        "engagement": "Paparkan foto penapaian makanan dan makanan rosak; murid kenal pasti kesan yang berbeza.",
+        "exploration": "Kelaskan contoh mikroorganisma bermanfaat atau memudaratkan menggunakan kad gambar.",
+        "explanation": "Terangkan dua manfaat dan dua kesan buruk berasaskan fakta pada kad.",
+        "elaboration": "Analisis kes rekaan makanan rosak dan penggunaan antibiotik mengikut maklumat guru; tidak menyentuh atau merasa sampel.",
+        "evaluation": "Jadual dua kegunaan dan dua kesan buruk mikroorganisma"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-016",
+      "teaching_order": 21,
+      "title": "Menjelaskan pemerhatian tentang mikroorganisma melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 3: Mikroorganisma",
+      "minutes": 30,
+      "textbook_pages": "47",
+      "sk": "3.1 Proses Hidup dan Kesan Tindakan Mikroorganisma",
+      "sp": [
+        {
+          "code": "3.1.6",
+          "text": "Menjelaskan pemerhatian tentang mikroorganisma melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Satu lakaran atau laporan individu dengan satu pemerhatian proses hidup dan satu perbandingan kiraan sel yis",
+        "materials": "Log PdP 013 dan 014, imej mikroskop susulan bergrid dan kertas laporan",
+        "pbd": "Satu lakaran atau laporan individu dengan satu pemerhatian proses hidup dan satu perbandingan kiraan sel yis",
+        "safety": "Pemerhatian menggunakan imej mikroskop yang disediakan guru."
+      },
+      "source_activity": {
+        "sp": "3.1.6",
+        "hook": "Jadual penyiasatan PdP 013 dan eksperimen PdP 014",
+        "teacher1": "memaparkan imej mikroskop susulan bagi kedua-dua sampel yis dengan grid yang sama saiz",
+        "pupil1": "melengkapkan kiraan susulan dan mengira perubahan bersama kumpulan",
+        "teacher2": "membimbing murid menghubungkan satu dapatan proses hidup dan satu dapatan faktor pertumbuhan dengan bukti",
+        "pupil2": "menyediakan lakaran berlabel atau laporan ringkas dan berkongsi dapatan dengan rakan",
+        "pbd": "Satu lakaran atau laporan individu dengan satu pemerhatian proses hidup dan satu perbandingan kiraan sel yis",
+        "materials": "Log PdP 013 dan 014, imej mikroskop susulan bergrid dan kertas laporan",
+        "safety": "Pemerhatian menggunakan imej mikroskop yang disediakan guru."
+      },
+      "phases": {
+        "engagement": "Paparkan log PdP 013 dan 014 serta imej susulan yis; murid ingat semula soalan penyiasatan.",
+        "exploration": "Lengkapkan kiraan sel yis pada grid sama saiz dan bandingkan perubahan bagi dua sampel.",
+        "explanation": "Hubungkan satu bukti proses hidup dan satu dapatan pertumbuhan dengan rekod pemerhatian.",
+        "elaboration": "Bina lakaran atau laporan berlabel; jelaskan batas dapatan jika rekod tidak lengkap.",
+        "evaluation": "Satu lakaran atau laporan individu dengan satu pemerhatian proses hidup dan satu perbandingan kiraan sel yis"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-017",
+      "teaching_order": 22,
+      "title": "Memerihalkan jenis interaksi antara hidupan.",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "minutes": 60,
+      "textbook_pages": "52-53",
+      "sk": "4.1 Interaksi antara Haiwan",
+      "sp": [
+        {
+          "code": "4.1.1",
+          "text": "Memerihalkan jenis interaksi antara hidupan."
+        }
+      ],
+      "original": {
+        "objective": "Tiga interaksi haiwan dengan sebab dan contoh yang tepat",
+        "materials": "Kad ekosistem dan ilustrasi hidupan",
+        "pbd": "Tiga interaksi haiwan dengan sebab dan contoh yang tepat",
+        "safety": "Interaksi haiwan: gunakan media bukannya haiwan berbahaya"
+      },
+      "source_activity": {
+        "sp": "4.1.1",
+        "hook": "Gambar helang dengan tikus dan semut pada pokok",
+        "teacher1": "menjelaskan persaingan, mangsa-pemangsa dan simbiosis daripada rajah",
+        "pupil1": "mengelaskan tiga pasangan hidupan mengikut jenis interaksi",
+        "teacher2": "menyoal perbezaan interaksi memperoleh makanan dan kerjasama",
+        "pupil2": "membina jadual tiga jenis interaksi dengan satu contoh setiap jenis",
+        "pbd": "Tiga interaksi haiwan dengan sebab dan contoh yang tepat",
+        "materials": "Kad ekosistem dan ilustrasi hidupan",
+        "safety": "Interaksi haiwan: gunakan media bukannya haiwan berbahaya"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar helang dan tikus serta semut pada pokok; murid cadang jenis hubungan.",
+        "exploration": "Kelaskan tiga pasangan hidupan mengikut persaingan, mangsa-pemangsa atau simbiosis berdasarkan kad maklumat.",
+        "explanation": "Terangkan perbezaan ketiga-tiga interaksi dengan contoh.",
+        "elaboration": "Bina jadual contoh dan sebab; gunakan pasangan baharu untuk menyemak kefahaman.",
+        "evaluation": "Tiga interaksi haiwan dengan sebab dan contoh yang tepat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-018",
+      "teaching_order": 23,
+      "title": "Menjelas dengan contoh faktor persaingan bagi haiwan intraspesies dan interspesies.",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "minutes": 30,
+      "textbook_pages": "54-55",
+      "sk": "4.1 Interaksi antara Haiwan",
+      "sp": [
+        {
+          "code": "4.1.2",
+          "text": "Menjelas dengan contoh faktor persaingan bagi haiwan intraspesies dan interspesies."
+        }
+      ],
+      "original": {
+        "objective": "Jadual dua jenis persaingan haiwan dan tiga faktor",
+        "materials": "Kad haiwan dan peta habitat",
+        "pbd": "Jadual dua jenis persaingan haiwan dan tiga faktor",
+        "safety": "Interaksi haiwan: gunakan media bukannya haiwan berbahaya"
+      },
+      "source_activity": {
+        "sp": "4.1.2",
+        "hook": "Dua kolaj harimau bersaing sesama spesies dan dua spesies berlainan",
+        "teacher1": "membimbing definisi intraspesies dan interspesies dalam persaingan makanan dan ruang",
+        "pupil1": "mengenal jenis persaingan pada empat gambar",
+        "teacher2": "meminta murid membanding tiga faktor persaingan haiwan seperti makanan pasangan dan tempat tinggal",
+        "pupil2": "menjelaskan dua contoh faktor persaingan dan jenis spesies yang bersaing",
+        "pbd": "Jadual dua jenis persaingan haiwan dan tiga faktor",
+        "materials": "Kad haiwan dan peta habitat",
+        "safety": "Interaksi haiwan: gunakan media bukannya haiwan berbahaya"
+      },
+      "phases": {
+        "engagement": "Paparkan dua kolaj haiwan bersaing; murid kenal pasti sama ada spesies sama atau berlainan.",
+        "exploration": "Kelaskan empat situasi persaingan sebagai intraspesies atau interspesies.",
+        "explanation": "Terangkan faktor seperti makanan, tempat tinggal dan persaingan pasangan dalam spesies yang sama.",
+        "elaboration": "Bandingkan dua situasi dan jelaskan faktor yang relevan tanpa menyamakan semua faktor antara spesies.",
+        "evaluation": "Jadual dua jenis persaingan haiwan dan tiga faktor"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-019",
+      "teaching_order": 24,
+      "title": "Menjelaskan melalui contoh jenis interaksi simbiosis antara haiwan.",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "minutes": 60,
+      "textbook_pages": "56-58",
+      "sk": "4.1 Interaksi antara Haiwan",
+      "sp": [
+        {
+          "code": "4.1.3",
+          "text": "Menjelaskan melalui contoh jenis interaksi simbiosis antara haiwan."
+        }
+      ],
+      "original": {
+        "objective": "Tiga jenis simbiosis haiwan dibezakan dengan bukti manfaat",
+        "materials": "Kad simbiosis dan gambar contoh",
+        "pbd": "Tiga jenis simbiosis haiwan dibezakan dengan bukti manfaat",
+        "safety": "Interaksi haiwan: gunakan media bukannya haiwan berbahaya"
+      },
+      "source_activity": {
+        "sp": "4.1.3",
+        "hook": "Foto ikan badut-anemon, ikan remora-jerung dan kutu pada mamalia",
+        "teacher1": "memperkenalkan mutualisme, komensalisme dan parasitisme melalui untung atau rugi setiap hidupan",
+        "pupil1": "menandakan tanda manfaat atau mudarat dalam tiga pasangan",
+        "teacher2": "membimbing kad kes tambahan untuk membezakan satu hala dan dua hala",
+        "pupil2": "memberi definisi serta satu contoh tepat setiap jenis simbiosis",
+        "pbd": "Tiga jenis simbiosis haiwan dibezakan dengan bukti manfaat",
+        "materials": "Kad simbiosis dan gambar contoh",
+        "safety": "Interaksi haiwan: gunakan media bukannya haiwan berbahaya"
+      },
+      "phases": {
+        "engagement": "Paparkan foto ikan badut-anemon, remora-jerung dan kutu-mamalia; murid jangka kesan kepada pasangan.",
+        "exploration": "Tandakan manfaat, tiada kesan ketara atau mudarat pada tiga kad pasangan.",
+        "explanation": "Jelaskan mutualisme, komensalisme dan parasitisme mengikut kesan yang digambarkan.",
+        "elaboration": "Kelaskan kad kes tambahan dan pertahankan pilihan berdasarkan kesan kepada kedua-dua hidupan.",
+        "evaluation": "Tiga jenis simbiosis haiwan dibezakan dengan bukti manfaat"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-020",
+      "teaching_order": 25,
+      "title": "Menjelaskan pemerhatian tentang interaksi antara haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "minutes": 30,
+      "textbook_pages": "58",
+      "sk": "4.1 Interaksi antara Haiwan",
+      "sp": [
+        {
+          "code": "4.1.4",
+          "text": "Menjelaskan pemerhatian tentang interaksi antara haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Lakaran satu interaksi haiwan dengan dua dapatan dan ramalan",
+        "materials": "Foto habitat dan lembaran skema interaksi",
+        "pbd": "Lakaran satu interaksi haiwan dengan dua dapatan dan ramalan",
+        "safety": "Interaksi haiwan: gunakan media bukannya haiwan berbahaya"
+      },
+      "source_activity": {
+        "sp": "4.1.4",
+        "hook": "Poster contoh mangsa, persaingan dan simbiosis haiwan",
+        "teacher1": "memodelkan lakaran hubungan dua spesies dengan anak panah makna yang betul",
+        "pupil1": "melakar satu jaringan interaksi dan label kesannya",
+        "teacher2": "meminta murid menerangkan kesan jika satu haiwan dikeluarkan daripada habitat",
+        "pupil2": "membina kesimpulan dua pemerhatian dan satu ramalan yang munasabah",
+        "pbd": "Lakaran satu interaksi haiwan dengan dua dapatan dan ramalan",
+        "materials": "Foto habitat dan lembaran skema interaksi",
+        "safety": "Interaksi haiwan: gunakan media bukannya haiwan berbahaya"
+      },
+      "phases": {
+        "engagement": "Paparkan poster tiga jenis interaksi; murid pilih satu hubungan untuk dilakar.",
+        "exploration": "Bina lakaran hubungan dengan anak panah dan label makna interaksi.",
+        "explanation": "Terangkan dua pemerhatian berdasarkan lakaran dan kesan kepada hidupan.",
+        "elaboration": "Ramalkan kemungkinan perubahan jika satu haiwan tiada dalam habitat dan jelaskan alasan bersyarat.",
+        "evaluation": "Lakaran satu interaksi haiwan dengan dua dapatan dan ramalan"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-021",
+      "teaching_order": 26,
+      "title": "Interaksi antara Hidupan — Memerihalkan faktor persaingan antara tumbuhan dengan menjalankan penyiasatan.",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "minutes": 30,
+      "textbook_pages": "59-60",
+      "sk": "4.2 Interaksi antara Tumbuhan",
+      "sp": [
+        {
+          "code": "4.2.1",
+          "text": "Memerihalkan faktor persaingan antara tumbuhan dengan menjalankan penyiasatan."
+        }
+      ],
+      "original": {
+        "objective": "Jadual dua set, satu pemboleh ubah dimalarkan dan satu inferens berasaskan ukuran",
+        "materials": "Dua set anak pokok pratanam, pembaris dan jadual",
+        "pbd": "Jadual dua set, satu pemboleh ubah dimalarkan dan satu inferens berasaskan ukuran",
+        "safety": "Persaingan tumbuhan: kawal pemboleh ubah dan elak tanaman beracun"
+      },
+      "source_activity": {
+        "sp": "4.2.1",
+        "hook": "Dua pasu anak pokok menerima cahaya atau air yang berbeza",
+        "teacher1": "menunjukkan dua set anak pokok sama spesies yang sudah disediakan pada kepadatan berbeza",
+        "pupil1": "mengukur tinggi dari aras tanah dan merekod keadaan daun bagi dua sampel setiap set",
+        "teacher2": "membimbing murid mengenal pasti kepadatan sebagai faktor ubah dan cahaya serta siraman sebagai kawalan",
+        "pupil2": "membandingkan dua set dan mengaitkan dapatan dengan persaingan untuk ruang, air atau cahaya",
+        "pbd": "Jadual dua set, satu pemboleh ubah dimalarkan dan satu inferens berasaskan ukuran",
+        "materials": "Dua set anak pokok pratanam, pembaris dan jadual",
+        "safety": "Persaingan tumbuhan: kawal pemboleh ubah dan elak tanaman beracun"
+      },
+      "phases": {
+        "engagement": "Paparkan dua set anak pokok pratanam dengan kepadatan berlainan; murid jangka perbezaan pertumbuhan.",
+        "exploration": "Ukur tinggi dari aras tanah dan rekod keadaan daun bagi dua sampel setiap set.",
+        "explanation": "Kenal pasti kepadatan sebagai faktor diubah serta cahaya dan siraman sebagai kawalan; bandingkan ukuran.",
+        "elaboration": "Rumuskan inferens persaingan ruang, air atau cahaya berpandukan set yang telah tumbuh, bukan perubahan dalam satu sesi.",
+        "evaluation": "Jadual dua set, satu pemboleh ubah dimalarkan dan satu inferens berasaskan ukuran"
+      },
+      "scope_note": "Set pratanam; inferens menggunakan data sedia ada.",
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-022",
+      "teaching_order": 27,
+      "title": "Interaksi antara Hidupan — Menjelas dengan contoh jenis interaksi antara tumbuhan.",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "minutes": 60,
+      "textbook_pages": "61-62",
+      "sk": "4.2 Interaksi antara Tumbuhan",
+      "sp": [
+        {
+          "code": "4.2.2",
+          "text": "Menjelaskan melalui contoh jenis interaksi simbiosis antara tumbuhan."
+        }
+      ],
+      "original": {
+        "objective": "Perbandingan dua simbiosis tumbuhan berdasarkan kesan perumah",
+        "materials": "Foto orkid dan benalu serta kad manfaat",
+        "pbd": "Perbandingan dua simbiosis tumbuhan berdasarkan kesan perumah",
+        "safety": "Persaingan tumbuhan: kawal pemboleh ubah dan elak tanaman beracun"
+      },
+      "source_activity": {
+        "sp": "4.2.2",
+        "hook": "Foto orkid menumpang pokok dan benalu menyerap nutrien",
+        "teacher1": "menjelaskan komensalisme orkid dan parasitisme benalu melalui kesan kepada perumah",
+        "pupil1": "menulis tanda untung atau rugi bagi setiap pasangan tumbuhan",
+        "teacher2": "memberi kad keliru orkid dan benalu untuk murid menyelesaikan",
+        "pupil2": "menjelaskan dua jenis simbiosis dengan satu sebab tiap jenis",
+        "pbd": "Perbandingan dua simbiosis tumbuhan berdasarkan kesan perumah",
+        "materials": "Foto orkid dan benalu serta kad manfaat",
+        "safety": "Persaingan tumbuhan: kawal pemboleh ubah dan elak tanaman beracun"
+      },
+      "phases": {
+        "engagement": "Paparkan foto orkid menumpang pokok dan benalu; murid jangka kesan terhadap perumah.",
+        "exploration": "Padankan tanda manfaat atau mudarat pada kedua-dua pasangan tumbuhan.",
+        "explanation": "Jelaskan komensalisme dan parasitisme berdasarkan kesan kepada perumah.",
+        "elaboration": "Betulkan kad yang menyamakan orkid dengan benalu dan beri sebab untuk setiap pembetulan.",
+        "evaluation": "Perbandingan dua simbiosis tumbuhan berdasarkan kesan perumah"
+      },
+      "scope_note": null,
+      "ready": false
+    },
+    {
+      "lesson_id": "SK27-SCI-Y6-PDP-023",
+      "teaching_order": 28,
+      "title": "Interaksi antara Hidupan — Menjelaskan pemerhatian tentang interaksi antara tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "minutes": 30,
+      "textbook_pages": "64",
+      "sk": "4.2 Interaksi antara Tumbuhan",
+      "sp": [
+        {
+          "code": "4.2.3",
+          "text": "Menjelaskan pemerhatian tentang interaksi antara tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "original": {
+        "objective": "Peta interaksi tumbuhan berlabel dengan sebab perubahan",
+        "materials": "Kad tumbuhan dan jadual interaksi",
+        "pbd": "Peta interaksi tumbuhan berlabel dengan sebab perubahan",
+        "safety": "Persaingan tumbuhan: kawal pemboleh ubah dan elak tanaman beracun"
+      },
+      "source_activity": {
+        "sp": "4.2.3",
+        "hook": "Gambar habitat tumbuhan bersaing dan tumbuhan menumpang",
+        "teacher1": "membimbing peta interaksi persaingan, komensalisme dan parasitisme tumbuhan",
+        "pupil1": "melukis perhubungan dan label bahan yang digunakan oleh tumbuhan",
+        "teacher2": "meminta murid menerangkan bagaimana interaksi mempengaruhi pertumbuhan",
+        "pupil2": "menulis dua pemerhatian dan satu ramalan jika sumber terhad",
+        "pbd": "Peta interaksi tumbuhan berlabel dengan sebab perubahan",
+        "materials": "Kad tumbuhan dan jadual interaksi",
+        "safety": "Persaingan tumbuhan: kawal pemboleh ubah dan elak tanaman beracun"
+      },
+      "phases": {
+        "engagement": "Paparkan gambar tumbuhan bersaing dan tumbuhan menumpang; murid kenal pasti sumber terlibat.",
+        "exploration": "Bina peta persaingan, komensalisme dan parasitisme dengan label hubungan.",
+        "explanation": "Terangkan dua pemerhatian tentang kesan interaksi terhadap tumbuhan.",
+        "elaboration": "Ramalkan kesan sumber terhad dalam satu situasi berdasarkan peta dan alasan yang munasabah.",
+        "evaluation": "Peta interaksi tumbuhan berlabel dengan sebab perubahan"
+      },
+      "scope_note": null,
+      "ready": false
+    }
+  ]
+}
