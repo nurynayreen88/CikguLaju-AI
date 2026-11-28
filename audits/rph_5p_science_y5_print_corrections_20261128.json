@@ -338,14 +338,30 @@
         }
       },
       "ready": false
-    }
-  ],
-  "held": [
+    },
     {
       "lesson_id": "SK27-SCI-Y5-PDP-034",
-      "reason": "Physical weather adaptation example needs exact textbook verification."
+      "status": "PROPOSED_PRINT_CORRECTION_QA_ONLY",
+      "review_status": "SCOPE_CHECK_REQUIRED",
+      "changes": {
+        "bbm": "Foto beruang kutub dan penguin (Buku Teks m/s 58–59).",
+        "phase": {
+          "engagement": "Paparkan kerbau berkubang, haiwan berhibernasi dan beruang kutub berbulu tebal; murid kenal pasti cuaca.",
+          "exploration": "Padankan tingkah laku berkubang dan hibernasi dengan panas/sejuk; teliti bulu tebal beruang kutub dan bulu pelepah padat penguin.",
+          "explanation": "Jelaskan berkubang membantu penyejukan, hibernasi mengurangkan aktiviti; bulu tebal atau padat membantu mengurangkan kehilangan haba.",
+          "elaboration": "Lengkapkan jadual cuaca, tingkah laku, ciri fizikal dan faedah berdasarkan contoh buku teks."
+        }
+      },
+      "textbook_verification": {
+        "file_id": "1rkk0Ee4iP8-r8Xwi3bYTDhpYmqXdO8XF",
+        "title": "Buku Teks Sains Tahun 5 SK - Bahagian 2 (ms 36-130).pdf",
+        "printed_pages": "58–59",
+        "verified": "Buku teks menerangkan bulu tebal beruang kutub dan bulu pelepah pendek padat penguin sebagai ciri penebat haba; dua contoh tingkah laku asal dikekalkan."
+      },
+      "ready": false
     }
   ],
+  "held": [],
   "academic_approved": false,
   "release": false
 }
