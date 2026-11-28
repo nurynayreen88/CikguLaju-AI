@@ -1,0 +1,23 @@
+name: e-RPH private records QA
+on:
+  pull_request:
+    paths:
+      - 'web/erph_records_web.py'
+      - 'web/erph_word_import.py'
+      - 'web/erph_export.py'
+      - 'web_v1_static_preview/erph_records.html'
+      - 'tests/test_erph_records_web.py'
+      - 'sql/erph_teacher_records_staging.sql'
+      - 'tools/run_web_production.py'
+      - '.github/workflows/erph-private-qa.yml'
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python -m py_compile web/erph_records_web.py web/erph_word_import.py web/erph_export.py
+      - run: PYTHONPATH=. python -m unittest discover -s tests -p 'test_erph_records_web.py' -v
