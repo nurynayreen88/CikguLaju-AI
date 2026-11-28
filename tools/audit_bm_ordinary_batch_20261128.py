@@ -32,9 +32,10 @@ def main():
                     teacher=d[0].search_for("Kelas:")
                     subject=d[0].search_for("BAHASA MELAYU SK")
                     assert teacher and subject and teacher[0].x0<subject[0].x0
-                    pdf=norm(" ".join(p.get_text() for p in d))
+                    flags=fitz.TEXTFLAGS_TEXT & ~fitz.TEXT_PRESERVE_LIGATURES
+                    pdf=norm(" ".join(p.get_text(flags=flags) for p in d))
                 for fmt,txt in (("word",word),("pdf",pdf)):
-                    for value in (r["sk_code"]+" "+r["sk"],r["sp_code"]+" "+r["sp"],r["objective"],r["criteria"],r["induction"],*r["activities"],r["pbd"],r["closure"],r["remedial"],r["extension"],"Refleksi"):
+                    for value in (r["sk_code"]+" "+r["sk"],r["sp_code"]+" "+r["sp"],r["unit"],r["title"],r["objective"],r["criteria"],r["material"],r["induction"],*bm._activity_titles(r),*r["activities"],r["hint"],r["pbd"],r["closure"],r["remedial"],r["extension"],"Refleksi","Bilangan murid menguasai:","Bilangan murid belum menguasai:","Tindakan susulan:"):
                         assert norm(value) in txt, fmt+": missing "+value
                     assert not re.search(r"\b(?:Kumpulan [AB]|(?:Lesson|PdP)\s*[:#]?\s*\d+)\b",txt,re.I),fmt+": printed internal ID"
                     assert "Refleksi (Auto" not in txt
