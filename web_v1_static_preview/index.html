@@ -2615,7 +2615,11 @@ subject.addEventListener("change",async()=>{
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,178)||
        !kp2027ValidEntries(data.items.B,data.groups.B,175))
      throw Error("Padanan Unit dan PdP Bahasa Melayu belum dapat disahkan.");
-    inventory={groups:data.groups,items:data.items,rphVariants:Array.isArray(data.rph_variants)?data.rph_variants:[]};
+    const fiveP={A:[],B:[]};
+    for(const g of ["A","B"]){
+     if(Array.isArray(data.five_p_groups?.[g]))fiveP[g]=data.five_p_groups[g].filter(n=>Number.isInteger(n)&&data.groups[g].includes(n));
+    }
+    inventory={groups:data.groups,items:data.items,rphVariants:Array.isArray(data.rph_variants)?data.rph_variants:[],fivePGroups:fiveP};
    }else if(code==="PJ_KP2027"){
     if(!data.groups||!kp2027ValidList(data.groups.A,64)||!kp2027ValidList(data.groups.B,63)||
        !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,64)||
@@ -2779,6 +2783,11 @@ function kp2027TeacherPayload(){
  return {teacher_class:className,teacher_date:teacherDate.value,teacher_start:start,
    teacher_end:end,teacher_students:students,reflection_mode:mode,reflection};
 }
+function kp2027FivePAllowed(code,group,value){
+ if(!kp2027PilotInventory?.rphVariants?.includes("5p"))return false;
+ if(code==="BM_SK_KP2027")return kp2027PilotInventory?.fivePGroups?.[group]?.includes(value)===true;
+ return code==="MATH_KP2027";
+}
 async function kp2027DownloadApproved(format){return kp2027DownloadVariant(format,"lengkap");}
 async function kp2027DownloadVariant(format,variant){
  const code=subject.value,route=kp2027PilotRoutes[code],value=Number(lesson.value);
@@ -2795,7 +2804,7 @@ async function kp2027DownloadVariant(format,variant){
   if(!kp2027PilotInventory?.fivePTemplates||kp2027PilotInventory?.catalogMode!=="rpt93")return;
   payload.pdp=value;delete payload.lesson;
  }else if(variant==="5p"){
-  if(!["BM_SK_KP2027","MATH_KP2027"].includes(code)||!kp2027PilotInventory?.rphVariants?.includes("5p"))return;
+  if(!kp2027FivePAllowed(code,group,value))return;
   payload.rph_variant="5p";
  }
  if(code==="PJ_KP2027"&&aquaticV2Selected())payload.rph_variant="V2_DARAT";
@@ -2930,7 +2939,7 @@ function populateKp2027MaterialList(){
   materialRow("RPH PDF",{ready:true,onDownload:()=>{void kp2027DownloadApproved("pdf");}}),
   materialRow("RPH Word",{ready:true,onDownload:()=>{void kp2027DownloadApproved("word");}})
  );
- if(["BM_SK_KP2027","MATH_KP2027"].includes(subject.value)&&kp2027PilotInventory?.rphVariants?.includes("5p")){
+ if(kp2027FivePAllowed(subject.value,kp2027PilotGroup.value,Number(lesson.value))){
   list.append(
    materialRow("RPH Ringkas 5P PDF",{ready:true,onDownload:()=>{void kp2027DownloadVariant("pdf","5p");}}),
    materialRow("RPH Ringkas 5P Word",{ready:true,onDownload:()=>{void kp2027DownloadVariant("word","5p");}})

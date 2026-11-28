@@ -1,0 +1,76 @@
+name: BM 5P first batch print and visual samples
+on:
+  push:
+    branches: [qa/bm-5p-first-release-review-20261128]
+    paths: ['.github/workflows/bm-5p-first-batch-print-qa.yml']
+  pull_request:
+    paths: ['.github/workflows/bm-5p-first-batch-print-qa.yml']
+permissions:
+  contents: read
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y libreoffice-writer fonts-liberation
+          pip install -r requirements.txt python-docx pymupdf
+      - name: Generate exact reviewed documents
+        run: |
+          mkdir -p qa_print/word qa_print/native qa_print/converted qa_print/samples
+          PYTHONPATH=. python - <<'PY'
+          from pathlib import Path
+          from web import kp2027_bm_5p as five, kp2027_bm_5p_release as gate
+          root=Path("qa_print")
+          fields={"teacher_class":"1 Bestari","teacher_date":"2027-03-02","teacher_start":"08:00","teacher_end":"09:00","teacher_students":"30","reflection_mode":"manual","reflection":"Murid memerlukan latihan susulan."}
+          for g,n in gate.reviewed_records():
+              for mode,payload in (("blank",{}),("manual",fields)):
+                  stem=f"{g}-{n:03d}-{mode}"
+                  (root/"word"/(stem+".docx")).write_bytes(five.render(g,n,"word",payload,reviewed=True))
+                  (root/"native"/(stem+".pdf")).write_bytes(five.render(g,n,"pdf",payload,reviewed=True))
+          PY
+      - name: Convert original Word documents
+        run: libreoffice -env:UserInstallation=file:///tmp/bm5p-lo --headless --convert-to pdf --outdir qa_print/converted qa_print/word/*.docx
+      - name: Verify all 96 PDFs and create actual page previews
+        run: |
+          PYTHONPATH=. python - <<'PY'
+          import fitz,json
+          from pathlib import Path
+          from unicodedata import normalize
+          root=Path("qa_print")
+          from web import kp2027_bm_5p_release as gate
+          failures=[]
+          report=[]
+          for g,n in gate.reviewed_records():
+              for mode in ("blank","manual"):
+                  stem=f"{g}-{n:03d}-{mode}"
+                  for kind in ("native","converted"):
+                      path=root/kind/(stem+".pdf")
+                      try:
+                          with fitz.open(path) as d:
+                              if len(d)!=1: raise ValueError(f"page count {len(d)}")
+                              p=d[0]
+                              if abs(p.rect.width-595.28)>3 or abs(p.rect.height-841.89)>3: raise ValueError("not A4")
+                              text=" ".join(normalize("NFKC",p.get_text()).split())
+                              for label in ("Penglibatan","Penerokaan","Penerangan","Pengembangan","Penilaian","Refleksi"):
+                                  if label not in text: raise ValueError("missing "+label)
+                              if mode=="manual" and not all(v in text for v in ("1 Bestari","Murid memerlukan latihan susulan.")): raise ValueError("teacher fields missing")
+                              if g=="A" and n in (1,2,3,4,5,6,7,12) and mode=="manual":
+                                  p.get_pixmap(matrix=fitz.Matrix(1.5,1.5)).save(root/"samples"/f"{stem}-{kind}.png")
+                              report.append({"lesson":stem,"kind":kind,"pages":len(d),"passed":True})
+                      except Exception as e: failures.append({"lesson":stem,"kind":kind,"error":str(e)})
+          (root/"report.json").write_text(json.dumps({"tested":len(report)+len(failures),"passed":len(report),"failures":failures,"release":False},indent=2))
+          print((root/"report.json").read_text())
+          assert len(report)==96 and not failures
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bm5p-24-actual-print-samples
+          path: qa_print/
+          if-no-files-found: error
+          retention-days: 7
