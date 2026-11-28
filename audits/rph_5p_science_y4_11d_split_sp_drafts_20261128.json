@@ -1,0 +1,433 @@
+{
+  "status": "11_NATIVE_SINGLE_SP_DRAFTS_1_HELD",
+  "parent_audit_head": "3a793a41a0aab57cc137a330d53e76b97caaa2c2",
+  "identity_head": "352fbfcc3e32d5854ffe14bd9145119cef0b5bfe",
+  "candidate_blob": "e2a7553c8af8f8b84e52ed3dbe9df22de29b8b55",
+  "total": 11,
+  "limitations": "Inherited DSKP text from prior source candidates. Ordinary RPH fields, duration, textbook pages, academic review and print QA remain pending. No release.",
+  "held": [
+    {
+      "lesson_id": "SCI-Y4-PDP-048",
+      "title": "Bahan — Memerihalkan sifat bahan dengan menjalankan aktiviti.",
+      "sp_codes": [
+        "8.2.1"
+      ],
+      "candidate_ids": [
+        "SCI-T4-DRAFT-037",
+        "SCI-T4-DRAFT-038",
+        "SCI-T4-DRAFT-039"
+      ],
+      "reason": "Multiple source candidate scopes; verify ordinary RPH before selection.",
+      "ready": false
+    }
+  ],
+  "records": [
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-067",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Membuat inferens tentang kepentingan gerak balas manusia terhadap rangsangan.",
+      "dskp": [
+        {
+          "code": "2.3.3",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Membuat inferens tentang kepentingan gerak balas manusia terhadap rangsangan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-013",
+      "objective": "Buat inferens tentang dua kepentingan gerak balas terhadap rangsangan.",
+      "criterion": "Murid mengaitkan dua gerak balas dengan perlindungan atau penyesuaian kepada persekitaran serta memberi alasan.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar seseorang mengelak halangan yang dilihat.",
+        "exploration": "Murid teliti kad situasi fiksyen seperti menoleh apabila dipanggil dan mengelak objek yang bergerak.",
+        "explanation": "Guru bimbing perbezaan antara pemerhatian gerak balas dengan inferens tentang kepentingannya.",
+        "elaboration": "Murid bina rantai rangsangan-gerak balas-kepentingan untuk dua situasi baharu.",
+        "evaluation": "Guru semak dua inferens yang selaras dengan situasi dan alasan yang diberikan."
+      },
+      "support": {
+        "bbm": "Kad situasi bergambar, carta tiga lajur",
+        "pemulihan": "Beri pilihan alasan untuk satu situasi.",
+        "pengayaan": "Banding kepentingan dua gerak balas dalam situasi sama.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Keselamatan dan pemikiran kritis"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-068",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Memerihalkan tabiat yang mengganggu proses gerak balas manusia terhadap rangsangan.",
+      "dskp": [
+        {
+          "code": "2.3.4",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Memerihalkan tabiat yang mengganggu proses gerak balas manusia terhadap rangsangan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-013",
+      "objective": "Perihalkan tiga tabiat yang boleh mengganggu proses gerak balas terhadap rangsangan.",
+      "criterion": "Murid menyatakan tiga tabiat dan menerangkan kesan setiap tabiat terhadap perhatian, deria atau gerak balas.",
+      "phases": {
+        "engagement": "Guru paparkan gambar pejalan kaki yang terlalu fokus pada skrin.",
+        "exploration": "Murid teliti kad situasi fiksyen tentang kurang tidur, gangguan perhatian dan pendedahan bunyi terlalu kuat; tiada simulasi berbahaya.",
+        "explanation": "Guru terangkan kaitan tabiat dengan keupayaan menerima atau bertindak terhadap rangsangan tanpa membuat diagnosis individu.",
+        "elaboration": "Murid cadangkan amalan lebih selamat bagi tiga situasi dan beri alasan.",
+        "evaluation": "Guru semak tiga tabiat, kesan munasabah dan cadangan yang sepadan."
+      },
+      "support": {
+        "bbm": "Kad situasi, carta sebab-kesan",
+        "pemulihan": "Padankan tabiat dengan satu kesan daripada pilihan.",
+        "pengayaan": "Nilai situasi yang melibatkan lebih daripada satu gangguan.",
+        "pak21": "Perbincangan kumpulan",
+        "emk": "Kesihatan dan tanggungjawab"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-069",
+      "unit": "uea268474f6bf087ef291b1c9",
+      "unit_title": "Manusia",
+      "native_title": "Manusia — Menjelaskan pemerhatian tentang manusia bergerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "2.3.5",
+          "printed_page": 49,
+          "sk": "2.3 Manusia Bergerak Balas Terhadap Rangsangan",
+          "sp": "Menjelaskan pemerhatian tentang manusia bergerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-013",
+      "objective": "Komunikasikan tiga pemerhatian tentang gerak balas manusia terhadap rangsangan.",
+      "criterion": "Hasil murid memaparkan tiga urutan rangsangan, organ deria dan gerak balas berdasarkan pemerhatian atau media berlabel.",
+      "phases": {
+        "engagement": "Guru paparkan carta respons kepada isyarat visual yang belum lengkap.",
+        "exploration": "Murid pilih tiga pemerhatian daripada demonstrasi selamat atau kad situasi berlabel.",
+        "explanation": "Guru bimbing penggunaan anak panah dan pemisahan perkara yang diperhatikan daripada inferens.",
+        "elaboration": "Murid hasilkan lakaran, peta alir atau penerangan lisan berasaskan tiga contoh.",
+        "evaluation": "Guru semak ketepatan tiga urutan dan satu penerangan kepentingan gerak balas."
+      },
+      "support": {
+        "bbm": "Rekod demonstrasi, kad situasi, kertas",
+        "pemulihan": "Beri carta separa lengkap.",
+        "pengayaan": "Banding dua respons terhadap rangsangan yang sama.",
+        "pak21": "Galeri hasil",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-070",
+      "unit": "u1298bbda2eb96e2b85314209",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Mengenal pasti organ pernafasan haiwan.",
+      "dskp": [
+        {
+          "code": "3.1.1",
+          "printed_page": 51,
+          "sk": "3.1 Organ Pernafasan Haiwan",
+          "sp": "Mengenal pasti organ pernafasan haiwan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-014",
+      "objective": "Kenal pasti empat jenis organ atau struktur pernafasan haiwan melalui contoh.",
+      "criterion": "Murid memadankan peparu, insang, kulit lembap dan spirakel dengan contoh haiwan yang tepat.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar ikan, belalang, cacing tanah dan kucing.",
+        "exploration": "Murid teliti rajah pernafasan setiap haiwan daripada sumber rujukan bergambar tanpa mengganggu haiwan hidup.",
+        "explanation": "Guru jelaskan organ atau struktur pernafasan yang sesuai bagi setiap contoh; spirakel ialah bukaan sistem trakea serangga.",
+        "elaboration": "Murid lengkapkan empat label pada kad haiwan dan jelaskan satu padanan kepada rakan.",
+        "evaluation": "Guru semak empat padanan berdasarkan rajah rujukan."
+      },
+      "support": {
+        "bbm": "Rajah pernafasan haiwan, kad label",
+        "pemulihan": "Gunakan dua contoh berpandu.",
+        "pengayaan": "Kenal pasti struktur pernafasan pada satu contoh haiwan tambahan.",
+        "pak21": "Padanan pasangan",
+        "emk": "Menghargai hidupan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-071",
+      "unit": "u1298bbda2eb96e2b85314209",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Mengelaskan haiwan berdasarkan organ pernafasan.",
+      "dskp": [
+        {
+          "code": "3.1.2",
+          "printed_page": 51,
+          "sk": "3.1 Organ Pernafasan Haiwan",
+          "sp": "Mengelaskan haiwan berdasarkan organ pernafasan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-014",
+      "objective": "Kelaskan sekurang-kurangnya enam daripada lapan haiwan berdasarkan organ pernafasan.",
+      "criterion": "Murid mengelaskan enam contoh yang jelas dengan betul berdasarkan kad fakta.",
+      "phases": {
+        "engagement": "Guru paparkan gambar ikan dan kucing lalu murid banding organ pernafasannya.",
+        "exploration": "Murid asing lapan kad haiwan berpandukan maklumat pernafasan kepada kategori yang sesuai.",
+        "explanation": "Guru bimbing penggunaan bukti pada kad, bukan habitat semata-mata.",
+        "elaboration": "Murid tukar set kad dan semak pengelasan; asingkan contoh yang mempunyai lebih satu organ untuk perbincangan.",
+        "evaluation": "Guru nilai sekurang-kurangnya enam pengelasan yang tepat."
+      },
+      "support": {
+        "bbm": "Kad fakta haiwan, carta kategori organ",
+        "pemulihan": "Mulakan dengan empat kad bergambar dan berlabel.",
+        "pengayaan": "Terangkan mengapa haiwan dalam habitat sama boleh mempunyai organ pernafasan berbeza.",
+        "pak21": "Card sorting",
+        "emk": "Ketelitian dan biodiversiti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-072",
+      "unit": "u1298bbda2eb96e2b85314209",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Mengitlak terdapat haiwan yang mempunyai lebih daripada satu organ pernafasan.",
+      "dskp": [
+        {
+          "code": "3.1.3",
+          "printed_page": 51,
+          "sk": "3.1 Organ Pernafasan Haiwan",
+          "sp": "Mengitlak terdapat haiwan yang mempunyai lebih daripada satu organ pernafasan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-015",
+      "objective": "Rumuskan bahawa sesetengah haiwan menggunakan lebih daripada satu organ atau struktur pernafasan.",
+      "criterion": "Murid menyatakan dua cara pernafasan katak dewasa, melalui peparu dan kulit lembap, serta membuat rumusan.",
+      "phases": {
+        "engagement": "Guru paparkan gambar katak dewasa di darat dan di air.",
+        "exploration": "Murid teliti dua rajah pernafasan katak dewasa dan banding dengan rajah berudu pada peringkat yang sesuai.",
+        "explanation": "Guru jelaskan katak dewasa boleh bernafas melalui peparu dan kulit lembap; jangan menyamaratakan semua peringkat hidup.",
+        "elaboration": "Murid lengkapkan carta dua cara pernafasan bagi katak dewasa berdasarkan rajah.",
+        "evaluation": "Guru semak dua cara dan rumusan bahawa sesetengah haiwan mempunyai lebih daripada satu organ pernafasan."
+      },
+      "support": {
+        "bbm": "Rajah katak dewasa dan berudu, kad label",
+        "pemulihan": "Beri rajah katak dewasa dengan dua label pilihan.",
+        "pengayaan": "Banding struktur pernafasan katak dewasa dan berudu berdasarkan sumber.",
+        "pak21": "Think-Pair-Share",
+        "emk": "Menghargai hidupan"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-073",
+      "unit": "u1298bbda2eb96e2b85314209",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menjelaskan pemerhatian tentang organ pernafasan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "3.1.4",
+          "printed_page": 51,
+          "sk": "3.1 Organ Pernafasan Haiwan",
+          "sp": "Menjelaskan pemerhatian tentang organ pernafasan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-015",
+      "objective": "Komunikasikan tiga pemerhatian tentang organ pernafasan haiwan.",
+      "criterion": "Hasil murid mengandungi tiga contoh haiwan dengan organ atau struktur pernafasan yang tepat dan satu penerangan berdasarkan sumber.",
+      "phases": {
+        "engagement": "Guru paparkan rajah haiwan yang mempunyai label pernafasan bercampur.",
+        "exploration": "Murid teliti rajah rujukan dan catat tiga padanan yang disokong maklumat.",
+        "explanation": "Guru bimbing pemilihan label dan cara menyatakan maklumat rujukan dengan tepat.",
+        "elaboration": "Murid hasilkan carta bergambar atau penerangan lisan tentang tiga haiwan yang dipilih.",
+        "evaluation": "Guru semak tiga padanan dan satu penerangan fungsi."
+      },
+      "support": {
+        "bbm": "Rajah rujukan, kad haiwan, kertas",
+        "pemulihan": "Gunakan carta separa lengkap.",
+        "pengayaan": "Masukkan contoh haiwan yang menggunakan lebih satu struktur pernafasan.",
+        "pak21": "Galeri carta",
+        "emk": "Komunikasi saintifik"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-074",
+      "unit": "uebff043f8e995a13a17ec0c9",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menyatakan maksud haiwan vertebrata dan invertebrata.",
+      "dskp": [
+        {
+          "code": "3.2.1",
+          "printed_page": 52,
+          "sk": "3.2 Haiwan Vertebrata",
+          "sp": "Menyatakan maksud haiwan vertebrata dan invertebrata."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-016",
+      "objective": "Nyatakan maksud haiwan vertebrata dan invertebrata.",
+      "criterion": "Murid menyatakan vertebrata mempunyai tulang belakang manakala invertebrata tidak mempunyai tulang belakang serta memadankan dua rajah.",
+      "phases": {
+        "engagement": "Guru tunjuk rajah rangka ikan dan gambar rama-rama.",
+        "exploration": "Murid banding rajah struktur badan dua contoh yang jelas dan kenal pasti tulang belakang pada vertebrata.",
+        "explanation": "Guru jelaskan definisi berdasarkan tulang belakang, bukan bilangan kaki atau saiz.",
+        "elaboration": "Murid betulkan kad pernyataan yang menggunakan ciri pengelasan tidak tepat.",
+        "evaluation": "Guru semak dua definisi dan dua padanan rajah secara individu."
+      },
+      "support": {
+        "bbm": "Rajah rangka, kad pernyataan",
+        "pemulihan": "Beri pilihan dua definisi dengan gambar.",
+        "pengayaan": "Jelaskan mengapa haiwan yang mempunyai rangka luar masih boleh merupakan invertebrata.",
+        "pak21": "Perbincangan pasangan",
+        "emk": "Ketepatan konsep"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-075",
+      "unit": "uebff043f8e995a13a17ec0c9",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Memberi contoh haiwan vertebrata dan invertebrata.",
+      "dskp": [
+        {
+          "code": "3.2.2",
+          "printed_page": 52,
+          "sk": "3.2 Haiwan Vertebrata",
+          "sp": "Memberi contoh haiwan vertebrata dan invertebrata."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-016",
+      "objective": "Berikan sekurang-kurangnya tiga contoh vertebrata dan tiga contoh invertebrata.",
+      "criterion": "Murid menyenaraikan enam contoh yang tepat dan menyatakan ciri pembeza utama.",
+      "phases": {
+        "engagement": "Guru tunjuk gambar siput, ikan, burung dan udang.",
+        "exploration": "Murid pilih kad haiwan berdasarkan bukti kewujudan tulang belakang daripada rajah atau kad fakta.",
+        "explanation": "Guru semak contoh yang mudah mengelirukan seperti ular dan udang.",
+        "elaboration": "Murid hasilkan dua senarai contoh menggunakan kad baharu dan semak bersama rakan.",
+        "evaluation": "Guru nilai tiga contoh setiap kumpulan serta ciri pembeza utama."
+      },
+      "support": {
+        "bbm": "Kad fakta haiwan, carta dua lajur",
+        "pemulihan": "Gunakan dua contoh setiap kumpulan dahulu.",
+        "pengayaan": "Cari satu contoh tambahan daripada sumber rujukan yang diberikan.",
+        "pak21": "Padanan kumpulan",
+        "emk": "Biodiversiti dan ketelitian"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-076",
+      "unit": "uebff043f8e995a13a17ec0c9",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Mengelaskan haiwan vertebrata berdasarkan ciri khusus bagi mamalia, reptilia, amfibia, burung dan ikan.",
+      "dskp": [
+        {
+          "code": "3.2.3",
+          "printed_page": 52,
+          "sk": "3.2 Haiwan Vertebrata",
+          "sp": "Mengelaskan haiwan vertebrata berdasarkan ciri khusus bagi mamalia, reptilia, amfibia, burung dan ikan."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-017",
+      "objective": "Kelaskan haiwan vertebrata kepada lima kumpulan berdasarkan ciri khusus.",
+      "criterion": "Murid memadankan sekurang-kurangnya lapan daripada sepuluh contoh kepada mamalia, reptilia, amfibia, burung dan ikan serta menyatakan satu ciri bagi setiap kumpulan.",
+      "phases": {
+        "engagement": "Guru paparkan lima gambar vertebrata daripada kumpulan berbeza.",
+        "exploration": "Murid teliti kad fakta ciri badan dan pembiakan bagi sepuluh contoh yang jelas.",
+        "explanation": "Guru bimbing pengelasan berdasarkan gabungan ciri khusus; elakkan menganggap habitat atau kebolehan terbang sebagai satu-satunya penentu.",
+        "elaboration": "Murid susun kad mengikut lima kumpulan dan pertahankan satu padanan yang kurang jelas menggunakan fakta.",
+        "evaluation": "Guru semak sekurang-kurangnya lapan padanan dan satu ciri sesuai setiap kumpulan."
+      },
+      "support": {
+        "bbm": "Kad fakta, carta lima kumpulan",
+        "pemulihan": "Beri satu contoh dan ciri berpandu bagi setiap kumpulan.",
+        "pengayaan": "Terangkan pengelasan kelawar atau paus menggunakan ciri mamalia.",
+        "pak21": "Card sorting",
+        "emk": "Pemikiran kritis dan biodiversiti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    },
+    {
+      "year": 4,
+      "lesson_id": "SCI-Y4-PDP-077",
+      "unit": "uebff043f8e995a13a17ec0c9",
+      "unit_title": "Haiwan",
+      "native_title": "Haiwan — Menjelaskan pemerhatian tentang haiwan vertebrata melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp": [
+        {
+          "code": "3.2.4",
+          "printed_page": 52,
+          "sk": "3.2 Haiwan Vertebrata",
+          "sp": "Menjelaskan pemerhatian tentang haiwan vertebrata melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+        }
+      ],
+      "candidate_id": "SCI-T4-DRAFT-017",
+      "objective": "Komunikasikan pemerhatian mengenai lima kumpulan vertebrata melalui satu medium kreatif.",
+      "criterion": "Hasil murid mengandungi lima kumpulan, satu contoh dan satu ciri yang tepat bagi setiap kumpulan.",
+      "phases": {
+        "engagement": "Guru paparkan carta vertebrata dengan gambar yang belum dikelaskan.",
+        "exploration": "Murid teliti kad fakta dan pilih contoh yang mewakili setiap kumpulan.",
+        "explanation": "Guru bimbing penggunaan ciri khusus dan label pengelasan yang konsisten.",
+        "elaboration": "Murid hasilkan peta pokok, lakaran berlabel atau penerangan lisan lima kumpulan.",
+        "evaluation": "Guru semak lima contoh, lima ciri dan ketepatan pengelasan."
+      },
+      "support": {
+        "bbm": "Kad fakta, rajah haiwan, kertas",
+        "pemulihan": "Gunakan peta pokok separa lengkap.",
+        "pengayaan": "Banding dua kumpulan vertebrata dengan satu persamaan dan satu perbezaan.",
+        "pak21": "Galeri hasil",
+        "emk": "Komunikasi dan biodiversiti"
+      },
+      "minutes": null,
+      "textbook_pages": null,
+      "source_ordinary_rph_fields_verified": false,
+      "ready": false,
+      "status": "SINGLE_NATIVE_SP_SCOPE_ADAPTED_DRAFT"
+    }
+  ]
+}
