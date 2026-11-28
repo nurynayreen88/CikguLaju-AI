@@ -1,6 +1,7 @@
 """Original reviewed Mathematics PDF assets; native source matching only."""
 from pathlib import Path
 import json
+import re
 from web.native_telegram_sequence_rph_client import _selection, _read
 from web.worksheet_complete_pdf import _pdf
 
@@ -8,6 +9,10 @@ CATALOG = Path(__file__).resolve().parents[1] / "worksheets/staging/math_t2_veri
 
 def _norm(value):
     return " ".join(str(value or "").split()).casefold()
+
+def _code(value):
+    # Normalize only the optional whitespace before an explicit subpart.
+    return re.sub(r"\s+\(", "(", value.strip())
 
 def resolve_math(year, unit, token):
     if type(year) is not int or year != 2:
@@ -23,14 +28,14 @@ def resolve_math(year, unit, token):
             isinstance(s, dict) and isinstance(s.get("sk"), str)
             and isinstance(s.get("sp"), str) for s in standards):
         return None
-    pairs = {(s["sk"], s["sp"]) for s in standards}
+    pairs = {(_code(s["sk"]), _code(s["sp"])) for s in standards}
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     if (catalog.get("scope"), catalog.get("subject"), catalog.get("year")) != ("KSSR SK", "MATH", year):
         return None
     matches = [r for r in catalog["records"]
                if r.get("runtime_unit") == unit and r.get("runtime_lesson") == token
                and _norm(r["title"]) == _norm(row.get("topic"))
-               and pairs == {(r["sk"], r["sp"])}
+               and pairs == {(_code(r["sk"]), _code(r["sp"]))}
                and r["qa"].get("storage_integrity_verified") is True
                and r["qa"].get("answer_key_match") is True]
     return matches[0] if len(matches) == 1 else None
@@ -42,5 +47,8 @@ def complete_math_pdf(year, unit, token, kind):
     if record is None:
         return None
     asset = record["student" if kind == "murid" else "teacher_key"]
-    filename = "CIKGULAJU_LATIHAN_MATH_T2_NILAI_TEMPAT_DAN_NILAI_DIGIT_" + kind.upper() + ".pdf"
+    slug = re.sub(r"[^A-Z0-9]+", "_", record["title"].upper()).strip("_")
+    if not slug:
+        return None
+    filename = "CIKGULAJU_LATIHAN_MATH_T2_" + slug + "_" + kind.upper() + ".pdf"
     return _pdf(asset["drive_file_id"], asset["sha256"], asset["size_bytes"]), filename
